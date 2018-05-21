@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Upgrade your format by adopting of new base version of that format for electronic reporting (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration. This procedure explains how a custom version of a format can be created based on the format received from a configuration provider (CP). It also explains how to adopt a new, base version of that format.
 

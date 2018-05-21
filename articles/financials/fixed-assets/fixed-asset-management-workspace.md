@@ -31,7 +31,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Fixed asset management workspace
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The **Fixed asset management** workspace shows information that is related to fixed assets that are entered in the system. This workspace includes a summary view and an analytics view. The **My work** tab shows summary tiles, fixed asset details, and related information about fixed assets in the current company. You can also add analytics to the Power BI analytics section directly in the workspace. The **Analytics – all companies** tab uses capabilities of Microsoft Power BI to show visuals that are related to fixed assets in all companies.
 

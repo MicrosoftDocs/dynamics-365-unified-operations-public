@@ -31,8 +31,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 # Batch balancing
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes how the batch balancing process is supported. 
 
@@ -112,13 +111,13 @@ batches.
 
 **Example**
 
-Ingredient B has base attribute X and a target level of 30, and it's included in
-a formula that requires 30 liters of ingredient B for every 100 liters of the
+Ingredient B has base attribute X and a target level of 30, and it's included in
+a formula that requires 30 liters of ingredient B for every 100 liters of the
 product. A batch order is created that has a batch size of 100 liters. The batch
 order is started, and during the batch balancing process, the user selects a
-batch of ingredient B that has a potency level of 35. Because the potency level
+batch of ingredient B that has a potency level of 35. Because the potency level
 of 35 is higher than the target level of 30, the balanced quantity of
-ingredient B is reduced by using the ratio of the potency value to the target
+ingredient B is reduced by using the ratio of the potency value to the target
 level of the batch, which is multiplied by the estimated quantity. The
 calculation of the balanced quantity looks like this:
 
@@ -140,9 +139,9 @@ order are the same.
 **Example**
 
 Ingredient A is assigned to an ingredient of the **None** type and added to a
-formula for a finished product. The formula requires 10 liters of ingredient A
+formula for a finished product. The formula requires 10 liters of ingredient A
 for every 100 liters of the finished product. When a batch order requires 200
-liters, both the estimated quantity and the balanced quantity of ingredient A
+liters, both the estimated quantity and the balanced quantity of ingredient A
 are calculated as 20 liters.
 
 ### Compensating
@@ -176,9 +175,9 @@ Follow these steps to set up relations between ingredients.
 
 **Example**
 
-Ingredient B is an active ingredient that has base attribute X and a target
-level of 30. It's included in a formula that requires 30 liters of ingredient B
-for every 100 liters of the product. Ingredient C is a compensating ingredient,
+Ingredient B is an active ingredient that has base attribute X and a target
+level of 30. It's included in a formula that requires 30 liters of ingredient B
+for every 100 liters of the product. Ingredient C is a compensating ingredient,
 and a quantity of 10 is included in the same formula. A compensating factor of
 1.10 is set up for the compensating principle. Therefore, the balanced quantity
 of the compensating ingredient will be reduced by the difference between the
@@ -217,11 +216,11 @@ ingredient compared to the standard quantity.
 
 **Example**
 
-You've formulated a product that includes ingredients A, B, C, and D for a
+You've formulated a product that includes ingredients A, B, C, and D for a
 formula size of 100 liters. You've calculated the balanced quantity of all the
 ingredient types except the **Filler** ingredient type that is used on one line.
 The balanced quantity of the filler ingredient is calculated as the difference
-between the batch size of 100 liters and the sum of ingredients A, B, and C:
+between the batch size of 100 liters and the sum of ingredients A, B, and C:
 
 100 – (20 + 25.71 + 14.72) = 39.57
 
@@ -269,7 +268,7 @@ products are enabled for the warehouse management processes:
     that match the balanced quantities, and it's released for the specific
     batches that are selected for the active ingredients.
 
->   [!NOTE]
+> [!NOTE]
 >   Formula lines can be released to warehouse only as part of the batch
 >   balancing process. Although there are other options for releasing materials
 >   for production to warehouse, those options can't be used for formula lines.

@@ -31,15 +31,15 @@ ms.dyn365.ops.version: Platform update 12
 ---
 # Apply updates to an on-premises deployment
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to apply supported updates to an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations. All updates to on-premises environments are done through Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Search for and download updates
 For more information about how to find the updates that you can apply to your on-premises environment, see [Issue search](../lifecycle-services/issue-search-lcs.md). For information about how to download updates from the tiles in the **Updates** section of the **Environment details** page in LCS, see [Download updates](../migration-upgrade/download-hotfix-lcs.md).
    
-   >[!NOTE]
-    > When you are updating an on-premises environment, always select updates from the update tiles on the **Environment** details page. If you select updates from another location, the updates might not work. 
+> [!NOTE]
+> When you are updating an on-premises environment, always select updates from the update tiles on the **Environment** details page. If you select updates from another location, the updates might not work. 
 
 ## Update an on-premises deployment
 You can apply updates to an on-premises environment either during deployment or after the deployment is completed.

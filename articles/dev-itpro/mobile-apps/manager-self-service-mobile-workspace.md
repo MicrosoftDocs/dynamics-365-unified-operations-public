@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # My team mobile workspace
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the **My team** mobile workspace. This workspace lets managers view their direct reports and extended staff. They can also send praise to individuals in their reporting chain.
 
@@ -62,7 +62,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </ul>
 </td>
 <td>System administrator</td>
-<td>If you don't already have Finance and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don't already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent webpage</a>.
+<td>If you don&#39;t already have Finance and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don&#39;t already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent webpage</a>.
 </td>
 </tr>
 <tr class="even">

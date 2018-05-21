@@ -31,8 +31,7 @@ ms.search.validFrom: 2016-11-30
 
 # Half-year depreciation on additional acquisitions for Austria
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information for users in legal entities in Austria about the depreciation of additional acquisitions when the Half year convention is used for fixed asset depreciation.
 
@@ -42,6 +41,7 @@ In legal entities in Austria depreciation for additional acquisitions and acquis
 -   Amount of additional acquisitions posted in the year later than year of initial acquisition is depreciated according to half year convention rule starting from the January 1st or the July 1st of the year where the additional acquisitions is posted.
 
 ## Prerequisites
+
 |                                       |                                                                                                                                                                                                                                                                                                                                                               |
 |---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Prerequisite**                      | **Information**                                                                                                                                                                                                                                                                                                                                              |

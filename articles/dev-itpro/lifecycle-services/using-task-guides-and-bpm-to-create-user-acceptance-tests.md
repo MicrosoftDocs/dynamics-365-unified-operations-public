@@ -121,7 +121,7 @@ Next, you will need to create a test suite in VSTS. This will allow you to run a
 
 ![Test case details](./media/test_case_details.png.PNG "Test case details")
 
- >![NOTE]
+ >[!NOTE]
  > This example shows how to create a comprehensive acceptance test suite with all test cases added. You can create various test suites and use custom queries to add specific test cases. 
 
 ### Run manual test cases

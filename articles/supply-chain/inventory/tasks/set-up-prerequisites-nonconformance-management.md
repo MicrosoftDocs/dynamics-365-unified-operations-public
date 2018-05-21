@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up prerequisites for management
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Use this procedure to enable nonconformance management processes. A nonconformance describes a procedure or item that has a quality problem, where the descriptive information includes the source and type of problem. This procedure uses the USMF demo data company. This procedure is typically performed by a quality manager.
 

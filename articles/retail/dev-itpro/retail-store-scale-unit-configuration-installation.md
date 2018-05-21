@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Retail Store Scale Unit configuration and installation
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud point of sale (POS) components. A Microsoft Dynamics 365 for Retail environment already provides these components. However, you can now configure them so that they work locally in a store, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
 
@@ -130,15 +130,15 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 
 1. On the first page of the installer, select the components to install. You can install the following components:
 
-    - Retail channel database together with Async Client
-    - Retail Server
-    - Retail Cloud POS
+   - Retail channel database together with Async Client
+   - Retail Server
+   - Retail Cloud POS
 
-    > [!NOTE]
-    > - To install Retail Cloud POS, you must also select and install Retail Server. If you will use only Retail Modern POS in the store, clear the **Retail Cloud POS** check box, and continue with installation process as it's described here.
-    > - By default, the installer installs all components on one computer. To install the components across multiple computers, you must complete additional manual steps. For more information, see the "Multiple-computer installation" section.
+     > [!NOTE]
+     > - To install Retail Cloud POS, you must also select and install Retail Server. If you will use only Retail Modern POS in the store, clear the **Retail Cloud POS** check box, and continue with installation process as it's described here.
+     > - By default, the installer installs all components on one computer. To install the components across multiple computers, you must complete additional manual steps. For more information, see the "Multiple-computer installation" section.
 
-    After you've selected all the components to install, select **Next** to continue.
+     After you've selected all the components to install, select **Next** to continue.
 
 2. The installer validates that all prerequisites are met. If a valid version of Microsoft SQL Server isn't found, the installer downloads and installs Microsoft SQL Server 2014 Express with Service Pack 2.
 

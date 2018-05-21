@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Application Explorer
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article reviews Application Explorer, and the various views and filtering methods in it. The article also describes how to work with elements in Application Explorer.
 
 Application Explorer
 --------------------
 
-Application Explorer is the tool that you use to find the elements that you want to add to a project so that you can work with them. To access Application Explorer, on the **View** menu, click **Application Explorer**. An important difference between Application Explorer and the Application Object Tree (AOT) in the MorphX environment of Microsoft Dynamics AX 2012 is that you don't use Application Explorer to add or edit model elements. Instead, you use it to view elements, view code, find references to a selected element, and add elements to a project. To create, design, edit, and build model elements, you must use a **Microsoft Dynamics 365 for Finance and Operations** project.
+Application Explorer is the tool that you use to find the elements that you want to add to a project so that you can work with them. To access Application Explorer, on the **View** menu, click **Application Explorer**. An important difference between Application Explorer and the Application Object Tree (AOT) in the MorphX environment of Microsoft Dynamics AX 2012 is that you don't use Application Explorer to add or edit model elements. Instead, you use it to view elements, view code, find references to a selected element, and add elements to a project. To create, design, edit, and build model elements, you must use a **Microsoft Dynamics 365 for Finance and Operations** project.
 
 ### Application Explorer views
 
@@ -58,7 +57,7 @@ To switch to the model view, right-click the **AOT** node, and then click **Mode
 
 ### Working with elements
 
-To work with elements, you must select them in the Application Explorer:
+To work with elements, you must select them in the Application Explorer:
 
 -   To select one element, click it.
 -   To select a contiguous group of elements, hold down the Shift key while you click through the group of elements.
@@ -68,10 +67,10 @@ After you select the elements, right-click the selection to view the actions tha
 
 [![9\_DevoToolsConcept](./media/9_devotoolsconcept.png)](./media/9_devotoolsconcept.png) 
 
-The actions that are available depend on the elements that you've selected. The following are some of the common actions that you can perform for elements in Application Explorer. **Note:** When the selected node is an element that exists in more than one model (in the case of overlayering customizations), the selected element will depend on the view that Application Explorer is currently in:
+The actions that are available depend on the elements that you've selected. The following are some of the common actions that you can perform for elements in Application Explorer. **Note:** When the selected node is an element that exists in more than one model (in the case of overlayering customizations), the selected element will depend on the view that Application Explorer is currently in:
 
--   If Application Explorer is in **model view**, the selected element is the element that belongs to the Application Explorer model that it appears under.
--   If Application Explorer is in **classic view**, the selected element depends on the current context and the selected project in Solution Explorer. For example, if **Add to project** is the selected action, the selected element will be the element that belongs to the model of the current project, when applicable.
+-   If Application Explorer is in **model view**, the selected element is the element that belongs to the Application Explorer model that it appears under.
+-   If Application Explorer is in **classic view**, the selected element depends on the current context and the selected project in Solution Explorer. For example, if **Add to project** is the selected action, the selected element will be the element that belongs to the model of the current project, when applicable.
 
 | Action                          | Description                                                                                         
 |---------------------------------|-------------------|
@@ -83,21 +82,21 @@ The actions that are available depend on the elements that you've selected. The 
 | Create extension in new project | Create an extension for the element as part of a new project. You define the new project when the **New Project** dialog box opens.                                                                        |
 | Find References                 | Find all of the X++ code and other elements that reference the selected element.|
 | View references                 | Create a diagram that shows the other elements that reference the selected element.|
-| Open designer                   | Open the element designer for the element of that type, so that you can view the element. Although you can modify the element, this is typically done when the element is part of a project.                            |
+| Open designer                   | Open the element designer for the element of that type, so that you can view the element. Although you can modify the element, this is typically done when the element is part of a project.                            |
 | View code                       | Open the code editor, where you can view and edit the X++ code for the element.  |
 | Refresh                         | Update the metadata for the element.                                            |
 | Compare                         | Compare the element with the XML representation of the element that you select. Typically, you will compare an element with a different version of the element from a source code control repository.                   |
 | Properties                      | Open the **Properties** dialog box in Visual Studio, so that you can see the property settings for the element.                                                                                                        |
 
-Some elements have unique commands that let you perform actions for that type of element. For example, table elements have two commands that provide additional information about the table. The first is the **View hierarchy** command. When you right-click a table element and click this command, you will see a graphical representation of the table hierarchy that the table is part of. For example, the following illustration shows the table hierarchy for the FMVehicle table. [![10\_DevoToolsConcept](./media/10_devotoolsconcept.png)](./media/10_devotoolsconcept.png) A similar hierarchy tool is available for classes. The second command is **Open table browser**. When you click this command, the data from the table is displayed as a list in the program.  
+Some elements have unique commands that let you perform actions for that type of element. For example, table elements have two commands that provide additional information about the table. The first is the **View hierarchy** command. When you right-click a table element and click this command, you will see a graphical representation of the table hierarchy that the table is part of. For example, the following illustration shows the table hierarchy for the FMVehicle table. [![10\_DevoToolsConcept](./media/10_devotoolsconcept.png)](./media/10_devotoolsconcept.png) A similar hierarchy tool is available for classes. The second command is **Open table browser**. When you click this command, the data from the table is displayed as a list in the program.  
 
 ### Filtering Application Explorer
 
-Application Explorer can contain a very large number of elements. This can make it difficult to find the specific element or elements that you want to work with. However, Application Explorer can filter the elements, based on a query that you supply. To filter the elements that are displayed, you can enter a query in the search bar at the top of Application Explorer. 
+Application Explorer can contain a very large number of elements. This can make it difficult to find the specific element or elements that you want to work with. However, Application Explorer can filter the elements, based on a query that you supply. To filter the elements that are displayed, you can enter a query in the search bar at the top of Application Explorer. 
 
 [![12\_DevoToolsConcept](./media/12_devotoolsconcept.png)](./media/12_devotoolsconcept.png) 
 
-To apply a simple filter, just type the text that you want to filter by, and then click the **Filter** button at the end of the search bar. For example, if you want to find all of the elements that have a name that contains the word “rental,” enter **rental** as the search term. 
+To apply a simple filter, just type the text that you want to filter by, and then click the **Filter** button at the end of the search bar. For example, if you want to find all of the elements that have a name that contains the word “rental,” enter **rental** as the search term. 
 
 [![13\_DevoToolsConcept](./media/13_devotoolsconcept.png)](./media/13_devotoolsconcept.png) 
 
@@ -122,7 +121,7 @@ Previously used filters are listed in the drop-down list at the end of the searc
 
 These actions can be used only when the filter results are limited to a single model. Your query must contain the **model:** "*Model Name*” criterion to limit the filter to a specific model.
 
-See also
+Additional resources
 --------
 
 [Technical concepts guide](developer-home-page.md)

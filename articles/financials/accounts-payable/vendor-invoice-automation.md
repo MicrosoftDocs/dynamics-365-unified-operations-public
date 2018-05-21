@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Vendor invoice automation
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
 

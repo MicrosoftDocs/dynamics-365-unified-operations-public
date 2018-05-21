@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create Standard Audit File for France (FEC)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This procedure walks you through generating the Standard Audit File (FEC) for France in the electronic file format. French tax authorities require audit files that are generated in the FEC format.
 

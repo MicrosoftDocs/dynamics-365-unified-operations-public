@@ -4,8 +4,8 @@
 ## [What's new or changed](get-started/whats-new.md)
 ## [Before you buy Dynamics 365 for Retail](get-started/before-you-buy.md)
 ## [Sign up for a preview subscription](../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json)
-## [Deploy a demo environment](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json)
-## [Deployment options](dev-itpro/choose-deployment.md)
+## [Deploy a demo environment](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json) 
+## [Deployment options](dev-itpro/choose-deployment.md)  
 
 
 # Payments
@@ -24,16 +24,17 @@
 # Sales tax
 ## [Sales tax overview](../financials/general-ledger/indirect-taxes-overview.md)
 ## [Sales tax calculation methods in the Origin field](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
+## #### [Sales tax assignment and overrides](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
 ## [Whole amount and Interval calculation options for sales tax codes](../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md)
 
 # Call center
 ## [Call center overview](call-center-functionality.md)
 ## [Call center catalogs](call-center-catalogs.md)
-## [Create a call center catalog](create-call-center-catalogs.md)
+## [Configure delivery modes and charges](configure-call-center-delivery.md) 
 ## [Set up fraud alerts](set-up-fraud-alerts.md)
 ## [Set up a call center](set-up-order-processing-options.md)
 ## [Set up a continuity program for a call center](set-up-continuity-program.md)
-## [Order holds](work-with-order-holds.md)
+## [Call center order holds](work-with-order-holds.md)
 ## [Payment options](work-with-payments.md)
 
 # Channel setup and management
@@ -141,12 +142,15 @@
 ## [Setting up the components of a job](../talent/create-job.md)
 
 # Localization and regulatory features
+## France
+### [Cash registers for France](localizations/emea-fra-cash-registers.md)
+### [Deployment guidelines for cash registers in France](localizations/emea-fra-deployment.md)
 ## India
-### [GST integration for cash registers for India](localizations/apac-ind-cash-registers.md)
-### [Deployment guidelines for cash registers for India](localizations/apac-ind-loc-deployment-guidelines.md)
+### [GST integration for cash registers](localizations/apac-ind-cash-registers.md)
+### [Deployment guidelines for cash registers in India](localizations/apac-ind-loc-deployment-guidelines.md)
 ## Norway
 ### [Cash registers for Norway](localizations/emea-nor-cash-registers.md)
-### [Deployment guidelines for cash registers for Norway](localizations/emea-nor-loc-deployment-guidelines.md)
+### [Deployment guidelines for cash registers in Norway](localizations/emea-nor-loc-deployment-guidelines.md)
 ## Sweden
 ### [Cash registers for Sweden](localizations/emea-swe-cash-registers.md)
 ### [Sample for Retail POS integration with control units](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
@@ -164,6 +168,7 @@
 ## [Create and associate a hardware station](tasks/create-associate-hardware-station.md)
 ## [Create and associate registers](tasks/create-associate-registers.md)
 ## [Create, calculate, and post a statement for a retail store](tasks/create-calculate-post-statement-retail-store.md)
+## [Improvements to statement posting](statement-posting-EOD.md)
 ## [Create call center orders](tasks/create-call-center-orders.md)
 ## [Create financial dimensions for POS registers and configure dimension values on registers](tasks/create-financial-dimensions-pos.md)
 ## [Create financial dimensions for Retail channels and configure dimension values on stores](tasks/create-financial-dimensions-retail-channels.md)
@@ -286,7 +291,6 @@
 ### [Call a POS API or operation from a POS extension](dev-itpro/pos-api-extension.md)
 ### [Retail Modern POS triggers and printing](dev-itpro/pos-trigger-printing.md)
 ### [Add a custom control to a Retail Modern POS non-screen designer-based view](dev-itpro/pos-control-non-screen.md)
-### [Generate the Retail proxy for POS and e-Commerce](dev-itpro/pos-generate-retail-proxy.md)
 ### [Configuration steps for Retail developers working on cloud-hosted development boxes](dev-itpro/cloud-dev-box.md)
 
 ## Commerce runtime

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Cloud and on-premises feature comparison
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic shows whether each feature is available in these products:
 
@@ -132,7 +132,7 @@ The following tables list the product areas. Cloud and on-premises support is li
 |---|---|---|---|
 | All Talent areas | All Talent features | Yes | No |
 
-## See also
+## Additional resources
 
 - [Features not implemented in on-premises deployments](features-not-implemented-on-prem.md)
 

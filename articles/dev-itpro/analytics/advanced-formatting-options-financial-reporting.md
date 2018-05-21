@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Advanced formatting options in financial reporting
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 When you create a report in financial reporting, additional formatting functions are available, including filters for dimensions, restrictions for columns and reporting units, non-printing rows, and IF/THEN/ELSE statements in calculations. 
 
@@ -70,12 +69,13 @@ The following examples show how to format the row definition and column definiti
 
 The following table shows an example of a row definition that uses basic forcing.
 
-| Row Code | Description                      | Format Code | Related Formulas/Rows/Units | Row Modifier | Link to Financial Dimensions |
-|----------|----------------------------------|-------------|-----------------------------|----------------|----|
-| 100      | Cash at Beginning of Period (NP) |             |                             | Account Modifier = \[/BB\] | +Segment2 = \[1100\]         |
-| 130      | Cash at Beginning of Period      | CAL         | C=C.100,F=D.100             |               |     |   |
-| 160      |                                  |             |                             |              |     |   |
-| 190      |                                  |             |                             |                 |     |   |
+
+| Row Code |           Description            | Format Code | Related Formulas/Rows/Units |        Row Modifier        | Link to Financial Dimensions |
+|----------|----------------------------------|-------------|-----------------------------|----------------------------|------------------------------|
+|   100    | Cash at Beginning of Period (NP) |             |                             | Account Modifier = \[/BB\] |     +Segment2 = \[1100\]     |
+|   130    |   Cash at Beginning of Period    |     CAL     |       C=C.100,F=D.100       |                            |                              |
+|   160    |                                  |             |                             |                            |                              |
+|   190    |                                  |             |                             |                            |                              |
 
 > [!NOTE] 
 > Empty columns were removed from the previous table for presentation purposes: Format Override, Normal Balance, Print Control, Column Restriction columns are not displayed.
@@ -184,11 +184,11 @@ The **Column Restriction** cell in a row definition has multiple purposes. Depen
 -   The cell can specify the column of amounts to sort.
 
 ## Using a calculation formula in a row definition
-A calculation formula in a row definition can include the **+**, **-**, **\***, and **/** operators, and also **IF/THEN/ELSE** statements. Additionally, a calculation can involve individual cells and absolute amounts (actual numbers that are included in the formula). The formula can contain up to 1,024 characters. Calculations can't be applied to rows that contain cells of the **Link to Financial Dimensions** (FD) type. However, you can include calculations on consecutive rows, suppress the printing of those rows, and then total the calculation rows.
+A calculation formula in a row definition can include the <strong>+</strong>, <strong>-</strong>, <strong>\\</strong>, and **/** operators, and also <strong>IF/THEN/ELSE</strong> statements. Additionally, a calculation can involve individual cells and absolute amounts (actual numbers that are included in the formula). The formula can contain up to 1,024 characters. Calculations can't be applied to rows that contain cells of the <strong>Link to Financial Dimensions</strong> (FD) type. However, you can include calculations on consecutive rows, suppress the printing of those rows, and then total the calculation rows.
 
 ### Operators in a calculation formula
 
-A calculation formula uses more complex operators than a row total formula. However, can you use the **\*** and **/** operators together with the additional operators to multiply (\*) and divide (/) amounts. To use a range or sum in a calculation formula, you must use an at sign (@) in front of any row code, unless you're using a column in the row definition. For example, to add the amount in row 100 to the amount in row 330, you can use the row total formula **100+330** or the calculation formula **@100+@330**. **Note:** You must use an at sign (@) before every row code that you use in a calculation formula. Otherwise, the number is read as an absolute amount. For example, the formula **@100+330** adds USD 330 to the amount in row 100. When you reference a column in a calculation formula, an at sign (@) isn't required.
+A calculation formula uses more complex operators than a row total formula. However, can you use the <strong>\\</strong>* and <strong>/</strong> operators together with the additional operators to multiply (\*) and divide (/) amounts. To use a range or sum in a calculation formula, you must use an at sign (@) in front of any row code, unless you're using a column in the row definition. For example, to add the amount in row 100 to the amount in row 330, you can use the row total formula <strong>100+330</strong> or the calculation formula <strong>@100+@330</strong>. <strong>Note:</strong> You must use an at sign (@) before every row code that you use in a calculation formula. Otherwise, the number is read as an absolute amount. For example, the formula <strong>@100+330</strong> adds USD 330 to the amount in row 100. When you reference a column in a calculation formula, an at sign (@) isn't required.
 
 ### Create a calculation formula
 
@@ -206,7 +206,7 @@ In this example, the calculation formula **@100+@330** means that the amount in 
 | 370      | Cash at Beginning of Year   | CAL         | @100+@330                  | NP            |              |                              |
 | 400      | Cash at Beginning of Period | TOT         | 340+370                    |               |              |                              |
 
-When the row in a row definition has a format code of **CAL**, and you enter a mathematical calculation in the **Related Formulas/Rows/Units** cell, you must also enter the letter of the associated column and row on the report. For example, enter **A.120** to represent column A, row 120. Alternatively, you can use an at sign (@) to indicate all columns. For example, enter **@120** to represent all columns in row 120. Any mathematical calculation that doesn't have a column letter or an at sign (@) is assumed to be a real number. **Note:** If you use a label row code to reference a row, you must use a period (.) as a separator between the column letter and the label (for example, **A.GROSS\_MARGIN/A.SALES**). If you use an at sign (@), a separator isn't required (for example, **@GROSS\_MARGIN/@SALES**).
+When the row in a row definition has a format code of <strong>CAL</strong>, and you enter a mathematical calculation in the <strong>Related Formulas/Rows/Units</strong> cell, you must also enter the letter of the associated column and row on the report. For example, enter <strong>A.120</strong> to represent column A, row 120. Alternatively, you can use an at sign (@) to indicate all columns. For example, enter <strong>@120</strong> to represent all columns in row 120. Any mathematical calculation that doesn't have a column letter or an at sign (@) is assumed to be a real number. <strong>Note:</strong> If you use a label row code to reference a row, you must use a period (.) as a separator between the column letter and the label (for example, <strong>A.GROSS\_MARGIN/A.SALES</strong>). If you use an at sign (@), a separator isn't required (for example, <strong>@GROSS\_MARGIN/@SALES</strong>).
 
 ### Example of a calculation formula for a specific column
 
@@ -259,17 +259,17 @@ The **THEN** and **ELSE** formulas can be any valid calculation, from very simpl
 
 ### Restricting a calculation to a reporting unit in a row definition
 
-To restrict a calculation to a single reporting unit in a reporting tree, so that the resulting amount isn't rolled up to a higher-level unit, you can use the **@Unit** code in the **Related Formulas/Rows/Units** cell in the row definition. The **@Unit** code is listed in column B of the reporting tree, **Unit Name**. When you use the **@Unit** code, the values aren't rolled up, but the calculation is evaluated at every level of the reporting tree. **Note:** To use this function, a reporting tree must be associated with the row definition. The calculation row can refer to a calculation row or a financial data row. The calculation is recorded in the **Related Formulas/Rows/Units** cell of the row definition and the financial data–type restriction. The calculation must use a conditional calculation that starts with an **IF @Unit** construction. Here is an example: IF @Unit(SALES) THEN @100 ELSE 0 This calculation includes the amount from row 100 in every column of the report, but only for the SALES unit. If multiple units are named SALES, the amount appears in each of those units. Additionally, row 100 can be a financial data row and can be defined as non-printing. In this case, the amount is prevented from appearing in all units in the tree. You can also limit the amount to a single column of the report, such as column H, by using a column restriction to print the value only in that column of the report. You can include **OR** combinations in an **IF** statement. Here is an example: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 You can specify a unit in a calculation-type restriction in one of the following ways:
+To restrict a calculation to a single reporting unit in a reporting tree, so that the resulting amount isn't rolled up to a higher-level unit, you can use the <strong>@Unit</strong> code in the <strong>Related Formulas/Rows/Units</strong> cell in the row definition. The <strong>@Unit</strong> code is listed in column B of the reporting tree, <strong>Unit Name</strong>. When you use the <strong>@Unit</strong> code, the values aren't rolled up, but the calculation is evaluated at every level of the reporting tree. <strong>Note:</strong> To use this function, a reporting tree must be associated with the row definition. The calculation row can refer to a calculation row or a financial data row. The calculation is recorded in the <strong>Related Formulas/Rows/Units</strong> cell of the row definition and the financial data–type restriction. The calculation must use a conditional calculation that starts with an <strong>IF @Unit</strong> construction. Here is an example: IF @Unit(SALES) THEN @100 ELSE 0 This calculation includes the amount from row 100 in every column of the report, but only for the SALES unit. If multiple units are named SALES, the amount appears in each of those units. Additionally, row 100 can be a financial data row and can be defined as non-printing. In this case, the amount is prevented from appearing in all units in the tree. You can also limit the amount to a single column of the report, such as column H, by using a column restriction to print the value only in that column of the report. You can include <strong>OR</strong> combinations in an <strong>IF</strong> statement. Here is an example: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 You can specify a unit in a calculation-type restriction in one of the following ways:
 
--   Enter a unit name to include units that match. For example, **IF @Unit(SALES)** enables the calculation for any unit that is named SALES, even if there are several SALES units in the reporting tree.
--   Enter the company and unit name to restrict the calculation to specific units in a specific company. For example, enter **IF @Unit(ACME:SALES**) to restrict the calculation to SALES units in the ACME company.
--   Enter the full hierarchy code from the reporting tree to restrict the calculation to a specific unit. For example, enter **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**. **Note:** To find the full hierarchy code, right-click in the reporting tree definition, and then select **Copy Reporting Unit Identifier (H-code)**.
+- Enter a unit name to include units that match. For example, <strong>IF @Unit(SALES)</strong> enables the calculation for any unit that is named SALES, even if there are several SALES units in the reporting tree.
+- Enter the company and unit name to restrict the calculation to specific units in a specific company. For example, enter <strong>IF @Unit(ACME:SALES</strong>) to restrict the calculation to SALES units in the ACME company.
+- Enter the full hierarchy code from the reporting tree to restrict the calculation to a specific unit. For example, enter <strong>IF @Unit(SUMMARY^ACME^WEST COAST^SALES)</strong>. <strong>Note:</strong> To find the full hierarchy code, right-click in the reporting tree definition, and then select <strong>Copy Reporting Unit Identifier (H-code)</strong>.
 
 #### Restrict a calculation to a reporting unit
 
-1.  In Report Designer, click **Row Definitions**, and then open the row definition to modify.
-2.  Double-click the **Format Code** cell, and then select **CAL**.
-3.  Click the **Related Formulas/Rows/Units** cell, and then enter a conditional calculation that starts with an **IF @Unit** construction.
+1. In Report Designer, click **Row Definitions**, and then open the row definition to modify.
+2. Double-click the **Format Code** cell, and then select **CAL**.
+3. Click the <strong>Related Formulas/Rows/Units</strong> cell, and then enter a conditional calculation that starts with an <strong>IF @Unit</strong> construction.
 
 ### IF/THEN/ELSE statements in a column definition
 

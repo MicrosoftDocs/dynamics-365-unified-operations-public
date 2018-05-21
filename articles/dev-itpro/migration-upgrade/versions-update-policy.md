@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Software lifecycle policy and cloud releases
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic outlines the lifecycle and support policies for the Microsoft Dynamics 365 for Finance and Operations online service.
 
@@ -75,7 +75,7 @@ For information about the new features included in each release, click the links
 
 | **Release**                                                                                                                                                  | **Build number**   | **Availability** | **Expiration date**        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|------------------|----------------------------|
-| [Platform update 15*](../../fin-and-ops/get-started/whats-new-platform-update-15.md)| 7.0.4839 | March 2018   | N/A (Continuously updated)   |
+| [Platform update 15*](../../fin-and-ops/get-started/whats-new-platform-update-15.md)| 7.0.4841 | March 2018   | N/A (Continuously updated)   |
 | [Platform update 12](../../fin-and-ops/get-started/whats-new-platform-update-12.md)                   | 7.0.4709           | November 2017    | November 2018              |
 | [Platform update 11](../../fin-and-ops/get-started/whats-new-platform-update-11.md)                   | 7.0.4679.35176     | October 2017     | October 2018               |
 | [Platform update 10](../../fin-and-ops/get-started/whats-new-platform-update-10.md)                   | 7.0.4641.16233     | August 2017      | August 2018                |
@@ -90,9 +90,7 @@ For information about the new features included in each release, click the links
 | [Platform update 1](../../fin-and-ops/get-started/whats-new-changed-platform-version-7-1-may-2016.md) | 7.0.4127.16103     | May 2016         | May 2017                   |
 | [Platform 7.0](../../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md)                  | 7.0.4030.16079     | February 2016    | January 2017               |
 
-\* Platform updates 13 and 14 have not been made generally available. These
-updates have been available for customers who joined the CAAP program. To learn
-more, see [Standard and targeted platform releases](../../fin-and-ops/get-started/public-preview-releases.md).
+\* Platform updates 13 and 14 have not been made generally available. 
 
 ### Table 3: Application updates
 

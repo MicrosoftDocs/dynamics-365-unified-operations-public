@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Fixed assets depreciation methods for China
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the depreciation method set up for legal entities in China.
 

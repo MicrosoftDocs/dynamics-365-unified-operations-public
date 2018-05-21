@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Postdated checks
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about support for postdated checks in Microsoft Dynamics 365 for Finance and Operations. Postdated checks are checks that are issued to make and receive payments on a future date. Therefore, the check can't be cashed until the specified date.
 
-Microsoft Dynamics 365 for Finance and Operations supports the full management cycle for postdated checks in both Accounts receivable and Accounts payable, as shown in the following table.
+Microsoft Dynamics 365 for Finance and Operations supports the full management cycle for postdated checks in both Accounts receivable and Accounts payable, as shown in the following table.
 <table>
 <colgroup>
 <col width="50%" />
@@ -78,17 +77,17 @@ If your original check to a vendor or from a customer is lost or damaged, you ca
 <tr class="odd">
 <td>Cancel a postdated check for a vendor</td>
 <td>You can cancel a posted postdated check in these situations:
- - The check is returned by the bank.
- - The check is applied to an incorrect invoice.
- - A cash payment is made against the check.
-</td>
-</tr>
-<tr class="even">
-<td>Stop payment for a postdated check</td>
-<td>You can stop payment on a postdated check that was issued to a vendor, for reasons such as not sufficient funds, changes in the terms of the agreement with the vendor, supply of defective goods by the vendor, or return of goods to the vendor. You can stop payment only on checks that haven’t cleared.</td>
-</tr>
-</tbody>
-</table>
+- The check is returned by the bank.
+- The check is applied to an incorrect invoice.
+- A cash payment is made against the check.
+  </td>
+  </tr>
+  <tr class="even">
+  <td>Stop payment for a postdated check</td>
+  <td>You can stop payment on a postdated check that was issued to a vendor, for reasons such as not sufficient funds, changes in the terms of the agreement with the vendor, supply of defective goods by the vendor, or return of goods to the vendor. You can stop payment only on checks that haven’t cleared.</td>
+  </tr>
+  </tbody>
+  </table>
 
 
 

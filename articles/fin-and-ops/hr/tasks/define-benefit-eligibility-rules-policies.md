@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Define benefit eligibility rules and policies
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This recording will show you how you can create benefit eligibility rules and policies and then assign rules to Benefits.  
 

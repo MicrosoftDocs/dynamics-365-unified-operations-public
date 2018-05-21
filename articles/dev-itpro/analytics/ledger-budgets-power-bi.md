@@ -29,8 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Actual vs budget Power BI content
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the **Actual vs budget** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content. 
 
@@ -44,23 +43,24 @@ Reports from the **Actual vs budget** Power BI content are shown in the **Ledger
 ## Reports that are included in the Power BI content
 The following table provides details about the metrics that are found on each report page in the **Actual vs budget** Power BI content.
 
-| Report                      | Metrics |
-|-----------------------------|---------|
-| Expenses - Actual vs budget | <ul><li>Total expenses this year</li><li>Budget total expenses this year</li></ul> |
-| Revenue - Actual vs budget  | <ul><li>Total revenue this year</li><li>Budget total revenue this year</li><ul> |
-| Expense                     | <ul><li>Total expenses this year</li><li>Goal for expenses based on budget </li><ul> |
-| Revenue                     | <ul><li>Total revenue this year</li><li>Goal for revenue based on budget </li><ul> |
-| Net income                  | <ul><li>Net income this year</li><li>Goal for net income based on budget </li><ul> |
 
+|           Report            |                                       Metrics                                        |
+|-----------------------------|--------------------------------------------------------------------------------------|
+| Expenses - Actual vs budget |  <ul><li>Total expenses this year</li><li>Budget total expenses this year</li></ul>  |
+| Revenue - Actual vs budget  |   <ul><li>Total revenue this year</li><li>Budget total revenue this year</li><ul>    |
+|           Expense           | <ul><li>Total expenses this year</li><li>Goal for expenses based on budget </li><ul> |
+|           Revenue           |  <ul><li>Total revenue this year</li><li>Goal for revenue based on budget </li><ul>  |
+|         Net income          |  <ul><li>Net income this year</li><li>Goal for net income based on budget </li><ul>  |
 
 ## Understanding the data model and entities
 
-| Entity                    | Contents |
-|---------------------------|----------|
-| General Ledger Activities | Transaction amounts for the general ledger |
-| Budget Activities         | Transaction amounts for the budget register |
-| Main Accounts             | Main accounts to filter reports by |
-| Fiscal Calendars          | Fiscal calendars to filter reports by |
-| Ledgers                   | Ledgers that can be used to filter the report to the current ledger |
-| Budget Codes              | Budget codes to filter reports by |
-| Legal Entities            | Legal entities that can be used to filter the report to the current legal entity |
+|          Entity           |                                     Contents                                     |
+|---------------------------|----------------------------------------------------------------------------------|
+| General Ledger Activities |                    Transaction amounts for the general ledger                    |
+|     Budget Activities     |                   Transaction amounts for the budget register                    |
+|       Main Accounts       |                        Main accounts to filter reports by                        |
+|     Fiscal Calendars      |                      Fiscal calendars to filter reports by                       |
+|          Ledgers          |       Ledgers that can be used to filter the report to the current ledger        |
+|       Budget Codes        |                        Budget codes to filter reports by                         |
+|      Legal Entities       | Legal entities that can be used to filter the report to the current legal entity |
+

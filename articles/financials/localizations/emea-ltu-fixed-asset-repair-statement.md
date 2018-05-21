@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Fixed asset repair statement for Lithuania
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to submit repair information for a fixed asset and generate a fixed asset repair report. Repair information must be stored for all fixed assets. 
 
@@ -49,7 +48,7 @@ You can enter repair information for the fixed asset on the **Repair fixed asset
 | **Amount spent for repair** | Cost of the repair. **Note:** To calculate the total amount, click the **Totals** button, and then specify the period of calculation. |
 | **Document number**         | Number that is assigned to the document that was generated for the repair.                                                            |
 
- 
+
 
 ## Generate the fixed asset repair report
 To generate the report, go to **Fixed assets** **&gt; Inquires and** **Reports** &gt; **Transaction reports** &gt; **Fixed assets repair**, and then specify the following values.
@@ -59,11 +58,11 @@ To generate the report, go to **Fixed assets** **&gt; Inquires and** **Reports**
 | **Field**                     | **Value**                                                                                                                                                                                                                                                                                                        |
 | **Book**                      | Select the book for which to generate the fixed asset report.                                                                                                                                                                                                                                                    |
 | **From date, To date**        | Enter the start and end dates for the reporting period.                                                                                                                                                                                                                                                          |
-| **Show report transactions**  | Select this field to include repair transactions on the report.                                                                                                                                                                                                                                                  |
+| **Show report transactions**  | Select this field to include repair transactions on the report.                                                                                                                                                                                                                                                  |
 | **Document number**           | Specify the number that is assigned to the document that was generated for the repair.                                                                                                                                                                                                                           |
-| **Print from repair percent** | Enter the percentage of the fixed asset’s acquisition value that can be spent on repairs before the fixed asset must be included on the report. The report includes only those fixed assets for which the ratio of repair costs to acquisition value is higher than the percentage that you enter in this field. |
+| **Print from repair percent** | Enter the percentage of the fixed asset’s acquisition value that can be spent on repairs before the fixed asset must be included on the report. The report includes only those fixed assets for which the ratio of repair costs to acquisition value is higher than the percentage that you enter in this field. |
 
- 
+
 
 
 

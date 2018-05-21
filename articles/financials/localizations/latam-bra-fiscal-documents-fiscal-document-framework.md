@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Fiscal documents and fiscal document framework for Brazil
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes fiscal documents for Brazil.
 
@@ -53,12 +52,12 @@ You can view and print all fiscal documents from the following pages:
 -   **Accounts payable** &gt; **Fiscal documents** &gt; **All fiscal documents**
 -   **General ledger** &gt; **Inquire and reports** &gt; **Fiscal documents** &gt; **All fiscal documents**
 -   **Inventory management** &gt; **Inbound orders** &gt; **All fiscal documents**
--   **Inventory management** &gt; **Outbound orders** &gt; **All fiscal documents**
+-   **Inventory management** &gt; **Outbound orders** &gt; **All fiscal documents**
 -   **Project management and accounting** &gt; **Fiscal document** &gt; **All fiscal documents**
 -   **Fiscal books** &gt; **Booking period**
 
 ## Actions
-After a fiscal document is posted, the user can see the following information.
+After a fiscal document is posted, the user can see the following information.
 
 | **Action button**                 | **Description**                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

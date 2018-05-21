@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
 
@@ -1568,9 +1568,11 @@ The following table lists additional changes that have been made for extensibili
 
 The following table lists changes that were requested for extensibility but were acknowledged as bugs and fixed in the standard application.
 
-| Change |
-| -------------|
-|class CaseUpdateStatus_Close, method changeStatus|
-|Incorrect relation on CustCollectionLetterJour|
-|Other: Bug fix on CompanyHelper.testCreateParameter|
-|Table CustCollectionLetterJour - class cancelCollectionLetterCodeCustTrans|
+
+|                                   Change                                   |
+|----------------------------------------------------------------------------|
+|             class CaseUpdateStatus_Close, method changeStatus              |
+|               Incorrect relation on CustCollectionLetterJour               |
+|            Other: Bug fix on CompanyHelper.testCreateParameter             |
+| Table CustCollectionLetterJour - class cancelCollectionLetterCodeCustTrans |
+

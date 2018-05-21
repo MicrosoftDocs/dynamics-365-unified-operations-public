@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up benefits
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits.
 
@@ -67,12 +66,12 @@ To set up benefits, you must first set up benefit types. On the **Benefit elemen
 <td>Select one of the following concurrent enrollment options:
 <ul>
 <li><strong>Multiple enrollments per type</strong> – You can enroll a worker in multiple plans that have the same benefit type, even if the enrollment is effective for the same period. For example, a worker can be enrolled in two term life insurance plans.</li>
-<li><strong>One enrollment per type</strong> – You can't enroll a worker in more than one plan that has the same benefit type for the same period. For example, if the worker already has health insurance for a specified period, you can't enroll the worker in another health insurance plan that covers the same period.</li>
+<li><strong>One enrollment per type</strong> – You can&#39;t enroll a worker in more than one plan that has the same benefit type for the same period. For example, if the worker already has health insurance for a specified period, you can&#39;t enroll the worker in another health insurance plan that covers the same period.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Payroll category</td>
-<td>Select a payroll category to use for benefits that have the new benefit type. The payroll category determines the settings that are available for a selected plan in the <strong>Plans</strong> area of this page. Settings that don't apply to the payroll category aren't available.</td>
+<td>Select a payroll category to use for benefits that have the new benefit type. The payroll category determines the settings that are available for a selected plan in the <strong>Plans</strong> area of this page. Settings that don&#39;t apply to the payroll category aren&#39;t available.</td>
 </tr>
 </tbody>
 </table>
@@ -101,10 +100,10 @@ You must also set up benefit plans. On the **Benefit elements** page, in the **P
 <td>Payroll impact</td>
 <td>Select one of these options:
 <ul>
-<li><strong>None</strong> – No amounts are contributed by the employer or deducted from the worker's pay. When you select this option, the FastTabs on this page aren't available. Note that when the payroll category for the benefit type is <strong>None</strong>, the payroll impact is also <strong>None</strong>.</li>
-<li><strong>Deduction only</strong> – An amount is deducted from the worker's pay for this benefit, but no employer contribution is made. When you select this option, controls that are related to payroll deductions are available on the other FastTabs, but controls that are related to employer contributions aren't available.</li>
-<li><strong>Contribution only</strong> – An employer contribution is made for this benefit, but no amount is deducted from the worker's pay. When you select this option, controls that are related to employer contributions are available on the other FastTabs, but controls that are related to payroll deductions aren't available.</li>
-<li><strong>Deduction and contribution</strong> – An employer contribution is made for this benefit, and an additional amount is deducted from the worker's pay. When you select this option, controls that are related to both employer contributions and payroll deductions are available on the other FastTabs.</li>
+<li><strong>None</strong> – No amounts are contributed by the employer or deducted from the worker&#39;s pay. When you select this option, the FastTabs on this page aren&#39;t available. Note that when the payroll category for the benefit type is <strong>None</strong>, the payroll impact is also <strong>None</strong>.</li>
+<li><strong>Deduction only</strong> – An amount is deducted from the worker&#39;s pay for this benefit, but no employer contribution is made. When you select this option, controls that are related to payroll deductions are available on the other FastTabs, but controls that are related to employer contributions aren&#39;t available.</li>
+<li><strong>Contribution only</strong> – An employer contribution is made for this benefit, but no amount is deducted from the worker&#39;s pay. When you select this option, controls that are related to employer contributions are available on the other FastTabs, but controls that are related to payroll deductions aren&#39;t available.</li>
+<li><strong>Deduction and contribution</strong> – An employer contribution is made for this benefit, and an additional amount is deducted from the worker&#39;s pay. When you select this option, controls that are related to both employer contributions and payroll deductions are available on the other FastTabs.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -131,7 +130,7 @@ Next, you must select the pretax basis for the plan on the **Tax rule** FastTab.
 <td>Select the value that the maximum contribution for this benefit plan is based on:
 <ul>
 <li><strong>None</strong> – There is no contribution limit.</li>
-<li><strong>Employee limit</strong> – The employer contribution stops when the employee's payroll deduction limit is reached. For the payment that the deduction limit is reached in, the employer contribution is proportionally limited. For example, if only half the expected employee deduction can be made before the limit is reached, only half the employer contribution is made.</li>
+<li><strong>Employee limit</strong> – The employer contribution stops when the employee&#39;s payroll deduction limit is reached. For the payment that the deduction limit is reached in, the employer contribution is proportionally limited. For example, if only half the expected employee deduction can be made before the limit is reached, only half the employer contribution is made.</li>
 <li><strong>Fixed</strong> – The employer contribution limit is a fixed amount per calendar year. The amount is set in the contribution limit field for the benefit plan.</li>
 <li><strong>Combination</strong> – Both the Employee limit method and the Fixed method are evaluated, and the employer contribution is limited by whichever method reaches the limit first.</li>
 </ul>
@@ -152,7 +151,7 @@ Enter the following information on the **Payroll details** FastTab.
 <tbody>
 <tr class="odd">
 <td>Lock pay statement</td>
-<td>Select this option to prevent pay statement lines that include the benefit plan from being changed. When you select this option, lines that include the benefit plan can be added to or deleted from the pay statement, but lines that include this benefit plan can't be changed.</td>
+<td>Select this option to prevent pay statement lines that include the benefit plan from being changed. When you select this option, lines that include the benefit plan can be added to or deleted from the pay statement, but lines that include this benefit plan can&#39;t be changed.</td>
 </tr>
 <tr class="even">
 <td>Recover arrear</td>
@@ -160,9 +159,9 @@ Enter the following information on the **Payroll details** FastTab.
 </tr>
 <tr class="odd">
 <td>Deduction method</td>
-<td>Select the method that is used to determine the deduction amount if the employee's pay isn't enough to cover the whole amount of the deduction for the selected benefit plan:
+<td>Select the method that is used to determine the deduction amount if the employee&#39;s pay isn&#39;t enough to cover the whole amount of the deduction for the selected benefit plan:
 <ul>
-<li><strong>All or nothing</strong> – If the whole amount of the deduction can't be made, no amount is deducted. The whole amount is placed in arrears.</li>
+<li><strong>All or nothing</strong> – If the whole amount of the deduction can&#39;t be made, no amount is deducted. The whole amount is placed in arrears.</li>
 <li><strong>Partial</strong> – As much of the deduction amount as possible is deducted. Any remaining amount is placed in arrears.</li>
 </ul></td>
 </tr>
@@ -213,26 +212,26 @@ For retirement benefits, the method that is used to determine the employee contr
 
 Your organization offers two retirement plans:
 
--   **Plan 1** – Your organization matches the worker's contributions to the plan at a rate of 50 percent up to the first 3 percent, and then at a rate of 100 percent up to 6 percent.
--   **Plan 2** – Your organization contributes 1 percent of the worker's pay to the 401(k) plan when the worker's contributions are between 1 percent and 3 percent of his or her pay. It contributes 2 percent when the worker's contributions are between 3 percent and 6 percent. Finally, it contributes 3 percent when the worker's contributions are 6 percent or more.
+-   **Plan 1** – Your organization matches the worker's contributions to the plan at a rate of 50 percent up to the first 3 percent, and then at a rate of 100 percent up to 6 percent.
+-   **Plan 2** – Your organization contributes 1 percent of the worker's pay to the 401(k) plan when the worker's contributions are between 1 percent and 3 percent of his or her pay. It contributes 2 percent when the worker's contributions are between 3 percent and 6 percent. Finally, it contributes 3 percent when the worker's contributions are 6 percent or more.
 
 For this example, the rate table looks like this.
 
 |Plan | Employee deduction rate |Employee contribution rate | Contribution method | 
 |---|---|---|---|
-| Plan 1 | 0.0000 | 0.5000 | Percent of employee |
-| Plan 1 | 0.0300 | 1.000 | Percent of employee |
-| Plan 1 | 0.0600 | 0 | Fixed percent |
-| Plan 2 | 0.0100 | 0.0100 | Fixed percent |
-| Plan 2 | 0.0300 | 0.0200 | Fixed percent |
-| Plan 2 | 0.0600 | 0.0300 | Fixed percent |
+| Plan 1 | 0.0000 | 0.5000 | Percent of employee |
+| Plan 1 | 0.0300 | 1.000 | Percent of employee |
+| Plan 1 | 0.0600 | 0 | Fixed percent |
+| Plan 2 | 0.0100 | 0.0100 | Fixed percent |
+| Plan 2 | 0.0300 | 0.0200 | Fixed percent |
+| Plan 2 | 0.0600 | 0.0300 | Fixed percent |
 
 Two tier types are available on the **Contribution calculation rates** page.
 
--   **Single line** – If you select this tier type, only one line from the rate table is used to calculate the amount of the employer's contribution. For example, if the worker's deduction rate is 10 percent of his or her $1,000.00 earnings, the employer's contribution for plan 1 is 0.00. For plan 2, the employer's contribution is 30.00 for the same worker.
--   **Cascading tier** – If you select this tier type, multiple lines from the rate table are used to calculate the amount of the employer's contribution. Only lines that have a deduction rate that is less than or equal to the actual worker deduction rate are used to calculate the employer contribution amount. For example, if the worker's deduction rate is 10 percent of his or her $1,000.00 earnings, the employer's contribution for plan 1 is 45.00. For plan 2, the employer's contribution is 60.00 for the same worker.
+-   **Single line** – If you select this tier type, only one line from the rate table is used to calculate the amount of the employer's contribution. For example, if the worker's deduction rate is 10 percent of his or her $1,000.00 earnings, the employer's contribution for plan 1 is 0.00. For plan 2, the employer's contribution is 30.00 for the same worker.
+-   **Cascading tier** – If you select this tier type, multiple lines from the rate table are used to calculate the amount of the employer's contribution. Only lines that have a deduction rate that is less than or equal to the actual worker deduction rate are used to calculate the employer contribution amount. For example, if the worker's deduction rate is 10 percent of his or her $1,000.00 earnings, the employer's contribution for plan 1 is 45.00. For plan 2, the employer's contribution is 60.00 for the same worker.
 
-The following table shows the formula that is used to calculate the amount of the employer's contribution amount for plans 1 and 2 for each tier type.
+The following table shows the formula that is used to calculate the amount of the employer's contribution amount for plans 1 and 2 for each tier type.
 
 | Plan | Tier type | Employee earnings | Employee deduction amount | Employer contribution amount | Formula for calculating the employer contribution amount |
 |---|---|---|---|---|---|
@@ -261,13 +260,13 @@ Use the data in your own table to set up the contribution calculation rate table
 </tr>
 <tr class="even">
 <td>Employer contribution</td>
-<td>The matching contribution to an employee’s retirement plan. The value is expressed either as a percentage of the employee’s pay or as a percentage of the employee’s own contribution to the plan. The <strong>Contribution method</strong> field determines how this rate is used to calculate the amount of the employer's contribution.</td>
+<td>The matching contribution to an employee’s retirement plan. The value is expressed either as a percentage of the employee’s pay or as a percentage of the employee’s own contribution to the plan. The <strong>Contribution method</strong> field determines how this rate is used to calculate the amount of the employer&#39;s contribution.</td>
 </tr>
 <tr class="odd">
 <td>Contribution method</td>
 <td><ul>
-<li><strong>Fixed percent</strong> – The employer's contribution is calculated by multiplying the employer contribution rate by the employee's earnings. For example, the rate for the worker's deduction is 0.03, and the rate for the employer's contribution is 0.02. In this case, the amount of the employer's contribution is 0.02, or 2 percent of the employee's earnings. For this option, the worker deduction amount and the employer contribution amount are calculated separately.</li>
-<li><strong>Percent of employee</strong> – The employer's contribution is calculated by multiplying the employer contribution rate by the worker deduction rate. For example, the worker deduction rate is 0.03, and the employer contribution rate is 0.5. In this case, the amount of the employer's contribution is 0.03 × 0.5 = 0.015, or 1.5 percent of the employee's earnings.</li>
+<li><strong>Fixed percent</strong> – The employer&#39;s contribution is calculated by multiplying the employer contribution rate by the employee&#39;s earnings. For example, the rate for the worker&#39;s deduction is 0.03, and the rate for the employer&#39;s contribution is 0.02. In this case, the amount of the employer&#39;s contribution is 0.02, or 2 percent of the employee&#39;s earnings. For this option, the worker deduction amount and the employer contribution amount are calculated separately.</li>
+<li><strong>Percent of employee</strong> – The employer&#39;s contribution is calculated by multiplying the employer contribution rate by the worker deduction rate. For example, the worker deduction rate is 0.03, and the employer contribution rate is 0.5. In this case, the amount of the employer&#39;s contribution is 0.03 × 0.5 = 0.015, or 1.5 percent of the employee&#39;s earnings.</li>
 </ul>
 <strong>Note:</strong> The worker deduction rate and employer contribution rate are determined by the rate table that you define on the <strong>Contribution calculation rates</strong> page and then assign to the benefit on the <strong>Benefits</strong> page.</td>
 </tr>
@@ -314,21 +313,21 @@ On the **Payroll** FastTab, you must enter the following information for the ben
 </tr>
 <tr class="even">
 <td>Basis</td>
-<td>The option to use together with the value of the <strong>Amount or rate</strong> field to determine the amount that should be deducted or contributed for the benefit. The amount is calculated only in the pay periods that are determined by the payroll calculation frequency. Earnings are included in the calculation only when the earning code for the earnings is listed on the <strong>Earnings basis</strong> FastTab, and when the required parameters are set on the <strong>Earning codes</strong> page.</td>
+<td>The option to use together with the value of the <strong>Amount or rate</strong> field to determine the amount that should be deducted or contributed for the benefit. The amount is calculated only in the pay periods that are determined by the payroll calculation frequency. Earnings are included in the calculation only when the earning code for the earnings is listed on the <strong>Earnings basis</strong> FastTab, and when the required parameters are set on the <strong>Earning codes</strong> page.</td>
 </tr>
 <tr class="odd">
 <td>Amount or rate</td>
 <td>The amount or rate to use together with the value of the <strong>Basis</strong> field to determine the amount that should be deducted or contributed for the benefit.
 <ul>
 <li>If the basis for deduction is <strong>Fixed amount</strong>, enter the amount to use as the payroll deduction or employer contribution for the selected benefit.</li>
-<li>If the basis for the deduction is <strong>Percentage of earnings</strong>, <strong>Regular portion of all pay</strong>, or <strong>Regular earnings</strong>, enter the percentage of the worker's included earnings or pay to use as the payroll deduction or employer contribution for the selected benefit.</li>
+<li>If the basis for the deduction is <strong>Percentage of earnings</strong>, <strong>Regular portion of all pay</strong>, or <strong>Regular earnings</strong>, enter the percentage of the worker&#39;s included earnings or pay to use as the payroll deduction or employer contribution for the selected benefit.</li>
 <li>If the basis for the deduction is <strong>Productive hours</strong>, <strong>Earning hours</strong>, or <strong>Total hours</strong>, enter the hourly rate for the payroll deduction or employer contribution.</li>
 </ul>
-This field isn't available if the <strong>Retirement</strong> payroll category is assigned to the benefit type on the <strong>Benefit elements</strong> page.</td>
+This field isn&#39;t available if the <strong>Retirement</strong> payroll category is assigned to the benefit type on the <strong>Benefit elements</strong> page.</td>
 </tr>
 <tr class="even">
 <td>Calculation rate</td>
-<td>The variable rate structure that is used to calculate employer contributions to a retirement plan. This field is available only when the <strong>Retirement</strong> payroll category is assigned to the benefit type on the <strong>Benefit elements</strong> page.</td>
+<td>The variable rate structure that is used to calculate employer contributions to a retirement plan. This field is available only when the <strong>Retirement</strong> payroll category is assigned to the benefit type on the <strong>Benefit elements</strong> page.</td>
 </tr>
 </tbody>
 </table>
@@ -352,7 +351,7 @@ On the **Worker's compensation** FastTab, specify the state that each benefit ap
 The next step is to set up payroll information for positions and workers. For more information, see [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md).
 
 
-See also
+Additional resources
 --------
 
 [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)

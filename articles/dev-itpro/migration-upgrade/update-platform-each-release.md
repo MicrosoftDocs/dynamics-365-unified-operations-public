@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Upgrade the Dynamics AX platform to the August 2016 release
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to upgrade your Microsoft Dynamics AX platform to the August 2016 release of Dynamics AX.
 
@@ -42,50 +41,50 @@ Overview
 
 **Important:** This topic applies only to Microsoft Dynamics AX releases prior to August 2016. For Microsoft Dynamics 365 for Finance and Operations updates, see the topic: [Upgrade Finance and Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md). The Microsoft Dynamics AX platform consists of the following components:
 
--   Dynamics AX platform binaries such as Application Object Server (AOS), the data management framework, the reporting and business intelligence (BI) framework, development tools, and analytics services
+-   Dynamics AX platform binaries such as Application Object Server (AOS), the data management framework, the reporting and business intelligence (BI) framework, development tools, and analytics services
 -   The following Application Object Tree (AOT) packages:
     -   Application Platform
     -   Application Foundation
     -   Directory
     -   TestEssentials
 
-**Important:** If you want to update the Dynamics AX platform to a new release, your Dynamics AX implementation should not have any customizations (overlayering) of any of the AOT packages that belong to the platform. If you **do** customize platform packages (that is, if your solution contains models that belong to one or more of the platform packages), complete the workaround that is described at the end of this topic, and the overall process that is illustrated and described for Dynamics AX implementations that have customized platform packages.
+**Important:** If you want to update the Dynamics AX platform to a new release, your Dynamics AX implementation should not have any customizations (overlayering) of any of the AOT packages that belong to the platform. If you **do** customize platform packages (that is, if your solution contains models that belong to one or more of the platform packages), complete the workaround that is described at the end of this topic, and the overall process that is illustrated and described for Dynamics AX implementations that have customized platform packages.
 
 ## Overall flow
-The following illustrations show the different overall process for two scenarios for upgrading the Dynamics AX platform to the latest update.
+The following illustrations show the different overall process for two scenarios for upgrading the Dynamics AX platform to the latest update.
 
-### Dynamics AX implementations that have no customization of the platform
+### Dynamics AX implementations that have no customization of the platform
 
 [![Upgrade process for implementations that have no customization of the platform](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)
 
-### Dynamics AX implementations that have customized platform packages
+### Dynamics AX implementations that have customized platform packages
 
 [![Upgrade process for implementations that have customized platform packages](./media/flowwithcustomisations.jpg)](./media/flowwithcustomisations.jpg)
 
-## Import the platform update package
-Platform update packages are released by Microsoft and can be imported from the Shared Asset Library in Microsoft Lifecycle Services (LCS). The package is named **Dynamics AX platform August 2016 release (Update 2).** If you haven't done so yet, import the **Dynamics AX platform August 2016 release (Update 2)** package to your project's asset library by following these steps:
+## Import the platform update package
+Platform update packages are released by Microsoft and can be imported from the Shared Asset Library in Microsoft Lifecycle Services (LCS). The package is named **Dynamics AX platform August 2016 release (Update 2).** If you haven't done so yet, import the **Dynamics AX platform August 2016 release (Update 2)** package to your project's asset library by following these steps:
 
-1.  Go to your LCS project's asset library.
-2.  Select the Software Deployable Package tab.
-3.  Click **Import **then select the **Dynamics AX platform August 2016 release (Update 2)** shared package.[![importupgradepackage](./media/importupgradepackage.png)](./media/importupgradepackage.png)
+1. Go to your LCS project's asset library.
+2. Select the Software Deployable Package tab.
+3. Click <strong>Import **then select the **Dynamics AX platform August 2016 release (Update 2)</strong> shared package.[![importupgradepackage](./media/importupgradepackage.png)](./media/importupgradepackage.png)
 
 ## How to apply the platform upgrade package
-From a process perspective, a platform upgrade package is similar to a binary hotfix deployable package.
+From a process perspective, a platform upgrade package is similar to a binary hotfix deployable package.
 
--   To apply the package to your development or build environment, follow the instructions in the sections below.
--   To apply the package to your demo, sandbox tier-2, or production environments, follow the instructions for a binary hotfix in the topic [Apply a Deployable package](..\deployment\apply-deployable-package-system.md).
+-   To apply the package to your development or build environment, follow the instructions in the sections below.
+-   To apply the package to your demo, sandbox tier-2, or production environments, follow the instructions for a binary hotfix in the topic [Apply a Deployable package](../deployment/apply-deployable-package-system.md).
 
 ## Apply the platform update package on your development environment
-### Delete any platform metadata hotfixes from your VSTS project
+### Delete any platform metadata hotfixes from your VSTS project
 
-Before you install the new platform update, you need to clean up your Visual Studio Team Services (VSTS) source control project. Remove any X++ or metadata hotfixes you have installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in your VSTS project for any of the following Microsoft models, delete them from your project using the Visual Studio Source Control Explorer.
+Before you install the new platform update, you need to clean up your Visual Studio Team Services (VSTS) source control project. Remove any X++ or metadata hotfixes you have installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in your VSTS project for any of the following Microsoft models, delete them from your project using the Visual Studio Source Control Explorer.
 
 -   Application Platform
 -   Application Foundation
 -   Directory
 -   TestEssentials
 
-You can find these hotfixes by browsing the check-in history of these models Microsoft models. For example, use Source Control Explorer to browse the check-in history of the folder *TrunkMainMetadataApplicationFoundationApplicationFoundation* and delete all XML files that have been checked in this Microsoft model. [![CheckInHistory](./media/checkinhistory.png)](./media/checkinhistory.png)
+You can find these hotfixes by browsing the check-in history of these models Microsoft models. For example, use Source Control Explorer to browse the check-in history of the folder *TrunkMainMetadataApplicationFoundationApplicationFoundation* and delete all XML files that have been checked in this Microsoft model. [![CheckInHistory](./media/checkinhistory.png)](./media/checkinhistory.png)
 
 ### Install the deployable package
 
@@ -147,24 +146,24 @@ Applying the platform upgrade package on a build environment requires the same p
 
 ### Prepare your build environment
 
-When the build machine has been used for one or more builds, you should restore the metadata packages folder from the metadata backup folder before upgrading the VM to a newer Dynamics AX platform. You should then delete the metadata backup. This will ensure that the platform update will be applied on a clean environment, and the next build process will detect that no metadata backup exists and automatically create a new one, which will include the updated platform. To find out if a complete metadata backup exists, please look for a BackupComplete.txt file in I:\Dynamics\BackupPackages" (or C:\Dynamics\BackupPackages on a downloadable VHD). The presence of this file indicates that a metadata backup exists and the file will contain a timestamp of when it was created. To restore the deployment's metadata packages folder from the metadata backup open an elevated PowerShell command prompt and run the below command. This will exercise the same script as used in the first step of the build process.
+When the build machine has been used for one or more builds, you should restore the metadata packages folder from the metadata backup folder before upgrading the VM to a newer Dynamics AX platform. You should then delete the metadata backup. This will ensure that the platform update will be applied on a clean environment, and the next build process will detect that no metadata backup exists and automatically create a new one, which will include the updated platform. To find out if a complete metadata backup exists, please look for a BackupComplete.txt file in I:\Dynamics\BackupPackages" (or C:\Dynamics\BackupPackages on a downloadable VHD). The presence of this file indicates that a metadata backup exists and the file will contain a timestamp of when it was created. To restore the deployment's metadata packages folder from the metadata backup open an elevated PowerShell command prompt and run the below command. This will exercise the same script as used in the first step of the build process.
 
     if (Test-Path -Path "I:\Dynamics\BackupPackages\BackupComplete.txt") { C:\Dynamics\SDK\PrepareForBuild.ps1 }
 
-Note: Execute the above command only if a complete metadata backup exists, as it will create a new backup if it does not. This command will stop the Dynamics AX deployment services and IIS before restoring the files from the metadata backup to the deployment's metadata packages folder. You should see output like this: *6:17:52 PM: Preparing build environment...* *6:17:53 PM: Updating Dynamics SDK registry key with specified values...* *6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...* *6:17:53 PM: Stopping Dynamics AX deployment...* *6:18:06 PM: **A backup already exists at: I:DynamicsBackupPackages. No new backup will be created**.* *6:18:06 PM: **Restoring metadata packages from backup...*** *6:22:56 PM: **Metadata packages successfully restored from backup**.* *6:22:57 PM: Preparing build environment complete.* *6:22:57 PM: Script completed with exit code: 0* Once the metadata backup has been restored, **delete (or rename) the metadata backup folder (*DynamicsBackupPackages*)** so it will no longer be found by the build process.
+Note: Execute the above command only if a complete metadata backup exists, as it will create a new backup if it does not. This command will stop the Dynamics AX deployment services and IIS before restoring the files from the metadata backup to the deployment's metadata packages folder. You should see output like this: <em>6:17:52 PM: Preparing build environment...</em> <em>6:17:53 PM: Updating Dynamics SDK registry key with specified values...</em> <em>6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...</em> <em>6:17:53 PM: Stopping Dynamics AX deployment...</em> <em>6:18:06 PM: **A backup already exists at: I:DynamicsBackupPackages. No new backup will be created</em><em>.</em> <em>6:18:06 PM: **Restoring metadata packages from backup...</em>** <em>6:22:56 PM: **Metadata packages successfully restored from backup</em><em>.</em> <em>6:22:57 PM: Preparing build environment complete.</em> <em>6:22:57 PM: Script completed with exit code: 0</em> Once the metadata backup has been restored, <strong>delete (or rename) the metadata backup folder (<em>DynamicsBackupPackages</em>)</strong> so it will no longer be found by the build process.
 
 ### Apply the platform update package
 
 Once you have prepared your build environment for this update, apply the platform update package the same way you apply it on a development environment as describe [above](#apply-the-platform-update-package-on-your-development-environment).
 
 ## Features that aren't supported
-**Dynamics AX platform August 2016 release (Update 2)** includes the following features:
+**Dynamics AX platform August 2016 release (Update 2)** includes the following features:
 
 -   The new Entity Store feature
 -   Microsoft Power BI with DirectQuery
 -   Microsoft Cortana Analytics for Retail
 
-However, an instance of Dynamics AX that was originally deployed by using the February 2016 release won't have these features if you update by using the process that is described in this topic. To enable these features, you original deployment must be an Update 1 (May 2016) deployment.
+However, an instance of Dynamics AX that was originally deployed by using the February 2016 release won't have these features if you update by using the process that is described in this topic. To enable these features, you original deployment must be an Update 1 (May 2016) deployment.
 
 ## Optional: If your application overlays platform models
 Before you apply the platform update package on your development instance, follow these steps if your solution contains models that belong to one of the following packages:
@@ -183,7 +182,7 @@ Before you apply the platform update package on your development instance, follo
 7.  Create a custom deployable package from your customized platform package. This package should be applied to your sandbox/pre-production environment for validation.
 
 
-See also
+Additional resources
 --------
 
 [Process for upgrading to the latest Dynamics AX update](../migration-upgrade/upgrade-latest-update.md)

@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 2017-06-30
 
 # Retail capabilities available in on-premises deployments
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic lists retail capabilities that are available in on-premises deployments.
 

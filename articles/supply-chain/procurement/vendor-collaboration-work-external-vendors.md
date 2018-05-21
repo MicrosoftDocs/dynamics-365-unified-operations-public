@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Vendor collaboration with external vendors
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The **Vendor collaboration** module is targeted at vendors who don't have electronic data interchange (EDI) integration with Microsoft Dynamics 365 for Finance and Operations. It lets vendors work with purchase orders (POs), invoices, consignment inventory information, and requests for quotation (RFQs), and also lets them access parts of their vendor master data. This topic explains how you can collaborate with external vendors who use the vendor collaboration interface to work with POs, RFQs, and consignment inventory. It also explains how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors see when they respond to a PO.
 
@@ -98,19 +98,19 @@ The following table shows the typical exchange of information, depending on the 
 <tbody>
 <tr class="even">
 <td>The vendor <strong>accepts</strong> the order, and Finance and Operations is configured to automatically confirm POs that the vendor accepts.</td>
-<td>The status of the order is updated to <strong>Confirmed</strong>. If the order can't be updated for some reason, the vendor response is still recorded as <strong>Accepted</strong>, but the status of the PO remains <strong>In External Review</strong>. 
+<td>The status of the order is updated to <strong>Confirmed</strong>. If the order can&#39;t be updated for some reason, the vendor response is still recorded as <strong>Accepted</strong>, but the status of the PO remains <strong>In External Review</strong>. 
 
 The PO that was sent to the vendor and that has a status of <strong>In External Review</strong> is updated with confirmed delivery dates on the lines. This update initiates a new version that is automatically set to <strong>Confirmed</strong> status. When the PO is confirmed, it appears in the vendor collaboration interface.</td>
 </tr>
 <tr class="odd">
-<td>The vendor <strong>accepts</strong> the order, but Finance and Operations isn't configured to automatically confirm POs that the vendor accepts.</td>
+<td>The vendor <strong>accepts</strong> the order, but Finance and Operations isn&#39;t configured to automatically confirm POs that the vendor accepts.</td>
 <td>The vendor response is recorded as <strong>Accepted</strong>, but the status of the PO remains <strong>In External Review</strong>.
 
 The PO that was sent to the vendor and that has a status of <strong>In External Review</strong> is updated with confirmed delivery dates on the lines. This update initiates a new version that is automatically set to <strong>In External Review</strong> status. You can then manually confirm the PO.</td>
 </tr>
 <tr class="even">
 <td>The vendor <strong>rejects</strong> the order.</td>
-<td>The vendor response is recorded as <strong>Rejected</strong>, and the status of the PO remains <strong>In External Review</strong>. The rejection is received together with the vendor's note.</td>
+<td>The vendor response is recorded as <strong>Rejected</strong>, and the status of the PO remains <strong>In External Review</strong>. The rejection is received together with the vendor&#39;s note.</td>
 </tr>
 <tr class="odd">
 <td>The vendor <strong>accepts</strong> the order <strong>with changes</strong>. Changes are suggested at the line level. The vendor can accept or reject individual lines. Here are some other changes that the vendor can suggest:
@@ -119,8 +119,8 @@ The PO that was sent to the vendor and that has a status of <strong>In External 
 <li>Split lines for different delivery dates or quantities.</li>
 <li>Substitute an item.</li>
 </ul>
-The vendor can't change price information and charges. However, the vendor can suggest these changes by using notes.</td>
-<td>The vendor response is recorded as <strong>Accepted with changes</strong>, and the status of the PO remains <strong>In External Review</strong>. The statuses show the types of changes that the vendor has suggested. For information about the automatic consumption of changes, see the "Update the PO when a vendor suggests changes" section later in this topic. </td>
+The vendor can&#39;t change price information and charges. However, the vendor can suggest these changes by using notes.</td>
+<td>The vendor response is recorded as <strong>Accepted with changes</strong>, and the status of the PO remains <strong>In External Review</strong>. The statuses show the types of changes that the vendor has suggested. For information about the automatic consumption of changes, see the &quot;Update the PO when a vendor suggests changes&quot; section later in this topic. </td>
 </tr>
 </tbody>
 </table>

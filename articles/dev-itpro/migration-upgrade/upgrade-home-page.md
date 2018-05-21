@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Upgrades, updates, and hotfixes
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Upgrades, updates, and hotfixes can include moving to new product versions, code migration and upgrade, moving to an update, or deploying a hotfix. 
 
@@ -72,7 +72,7 @@ If you are applying updates to a cloud version of Finance and Operations, review
 ## Hotfixes
 
 - [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md)
-- [Apply updates to a cloud environment](..\deployment\apply-deployable-package-system.md)
+- [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md)
 - [Install a metadata hotfix](install-metadata-hotfix-package.md)
 - [Patch Reporting Services in a one-box environment](patch-reporting-service-environment.md)
 - [Update Visual Studio development tools](../dev-tools/update-development-tools.md)

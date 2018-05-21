@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Retail Modern POS in offline mode
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article explains how to use Retail Modern POS devices in offline mode if the Retail Server is unavailable.
 
-A Retail Modern POS device will go offline if the Retail Server is unavailable. When the connection with the Retail Server is lost, the point of sale (POS) automatically switches to the offline database. If a data request doesn't succeed within the time-out interval that is configured in the offline profile, Retail Modern POS automatically switches to the offline database and continues the sales transaction. Retail Modern POS will try to reconnect to the Retail Server after the reconnect attempt interval that is configured in the offline profile. This reconnect attempt will occur only at the beginning of a transaction.
+A Retail Modern POS device will go offline if the Retail Server is unavailable. When the connection with the Retail Server is lost, the point of sale (POS) automatically switches to the offline database. If a data request doesn't succeed within the time-out interval that is configured in the offline profile, Retail Modern POS automatically switches to the offline database and continues the sales transaction. Retail Modern POS will try to reconnect to the Retail Server after the reconnect attempt interval that is configured in the offline profile. This reconnect attempt will occur only at the beginning of a transaction.
 
 ## Determine the connection mode of Retail Modern POS
 The status header of Retail Modern POS indicates the current connection status. 
@@ -52,7 +51,7 @@ The **Connection status** page in Retail Modern POS shows the status of the last
 You can add a button to Retail Modern POS to manually switch between online and offline modes. Create a button for **POS operation 917 – Database connection status**. Use the button as a toggle to connect or disconnect.
 
 ## Operations that can be completed when the channel database is offline
-You can complete the following operations when the channel database is offline. **Note:** If any functionality requires Commerce Data Exchange: Real-time Service, you receive an error message that states that the operation isn't supported. **Tip:** Reports and other operations will act only on the data that is available in the offline database.
+You can complete the following operations when the channel database is offline. **Note:** If any functionality requires Commerce Data Exchange: Real-time Service, you receive an error message that states that the operation isn't supported. **Tip:** Reports and other operations will act only on the data that is available in the offline database.
 
 | Operation ID | Description                         |
 |--------------|-------------------------------------|

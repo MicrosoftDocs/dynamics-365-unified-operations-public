@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost control overview 
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The **Cost control** workspace is a central point where managers who are responsible for controlling a cost object or a set of cost objects within a dimension or across dimensions (for example, cost centers and product groups) can access reports. The reports in the workspace are fully managed by cost accountants, so that the layout and data that are used for reporting can be consistent across the whole organization.
 
@@ -157,7 +157,7 @@ In the following example, the allocation base is of the **Formula allocation bas
 
 ![Calculations per cost object](./media/cost-entries-allocation-base.png)
 
-See also 
+Additional resources 
 
 [Define access rights for cost object controllers](access-rights-cost-object-controller.md)
 

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Recalculate replacement costs and insured values for fixed asset groups
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article explains the process to update the replacement costs and insured values for fixed assets.
 
@@ -74,7 +73,7 @@ You make the following changes:
 3.  For the **Computers** group, you type -10 in the **Replacement cost factor** field and -10 in the **Insured value factor** field.
 4.  In the **Update replacement costs and insured values** page, you click **OK** to perform the recalculation for all fixed assets.
 
-The next day, your manager informs you that computers decreased 8 percent instead of 10 percent, so that you have to correct the replacement costs and insured values. To fix the error, you can use either of two methods:
+The next day, your manager informs you that computers decreased 8 percent instead of 10 percent, so that you have to correct the replacement costs and insured values. To fix the error, you can use either of two methods:
 -   Manually change the **Insured value** and **Replacement cost** fields in the **Fixed assets** page for each fixed asset in the **Computers** fixed asset group. Calculate and manually enter the values as if you had decreased the original amount by 8 percent. By using this method, you do not use the **Update replacement costs and insured values** page.
 -   Enter replacement cost and insured value factors for the **Computers** group in the **Replacement cost factor** and **Insured value factor** fields in the **Fixed asset groups** page. This will both reset the assets back to their original value (before the 10 percent decrease) and apply the 8 percent decrease to the original value. Then use the **Update replacement costs and insured values** page to recalculate the values, depending on the factors that you entered.
 

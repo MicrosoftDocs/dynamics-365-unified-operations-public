@@ -31,8 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Petty cash for Eastern Europe
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the petty cash functionality that lets users in Estonia, Lithuania, Czech Republic, Hungary, Latvia, Poland, and Russia reflect cash operations in the system.
 
@@ -107,7 +106,7 @@ To set up cash balance control rules for a cash account, select the cash account
 <ul>
 <li><strong>Accept</strong> – The limit can be exceeded.</li>
 <li><strong>Warning</strong> – The limit can be exceeded, but the user receives a warning message. The cash document is confirmed or approved.</li>
-<li><strong>Error</strong> – The limit can't be exceeded. The user receives an error message, and the cash document isn't confirmed or approved.</li>
+<li><strong>Error</strong> – The limit can&#39;t be exceeded. The user receives an error message, and the cash document isn&#39;t confirmed or approved.</li>
 </ul>
 For more information about the approval process for cash documents, see the &quot;Cash transaction approval and posting&quot; section, later in this topic.</td>
 </tr>
@@ -197,7 +196,7 @@ To set up default values for Cash and bank management parameters for the petty c
 <ul>
 <li><strong>Accept</strong> – The limit can be exceeded.</li>
 <li><strong>Warning</strong> – The limit can be exceeded, but the user receives a warning message. The operation is posted.</li>
-<li><strong>Error</strong> – The limit can't be exceeded. The user receives an error message, and the operation isn't posted.</li>
+<li><strong>Error</strong> – The limit can&#39;t be exceeded. The user receives an error message, and the operation isn&#39;t posted.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -280,7 +279,7 @@ To create a cash document via a Slip journal, go to **Cash and bank management**
 </tr>
 <tr class="even">
 <td>Order number</td>
-<td>If no other number sequence is set up for the cash account, this field is filled in automatically, based on the number sequence that is specified in the parameters. You can manually enter an order number in this field as you require. To prevent inconsistence in cash document numbering, the following control is applied: the number of a cash document that has an earlier date of operation can't be higher than number of a cash document that has a later date of operation. If you don't require this control, select the <strong>Posting on earlier date</strong> check box in the Cash and bank management parameters.</td>
+<td>If no other number sequence is set up for the cash account, this field is filled in automatically, based on the number sequence that is specified in the parameters. You can manually enter an order number in this field as you require. To prevent inconsistence in cash document numbering, the following control is applied: the number of a cash document that has an earlier date of operation can&#39;t be higher than number of a cash document that has a later date of operation. If you don&#39;t require this control, select the <strong>Posting on earlier date</strong> check box in the Cash and bank management parameters.</td>
 </tr>
 <tr class="odd">
 <td>Approval status</td>
@@ -315,8 +314,8 @@ To create a cash document via a Slip journal, go to **Cash and bank management**
 <td>Representative type</td>
 <td>This field can have the following values:
 <ul>
-<li><strong>Worker</strong> – The <strong>Representative</strong> lookup contains a list of employees if the <strong>Offset account</strong> field is set to <strong>Ledger</strong> or <strong>Bank</strong>, or a list of the counteragent's contact persons if the <strong>Offset account</strong> field is set to <strong>Customer</strong> or <strong>Vendor</strong>. To set up representatives, go to <strong>Basic</strong> &gt; <strong>Setup</strong> &gt; <strong>Contacts</strong> &gt; <strong>Contact person</strong>.</li>
-<li><strong>Other</strong> – The <strong>Representative</strong> lookup contains a list of other clients. To set up receivers who don't appear in the <strong>Customers</strong> or <strong>Vendors</strong> table, go to <strong>General ledger</strong> &gt; <strong>Receivers</strong>. This type is available only for Latvia. (The <strong>CSELatvia</strong> configuration key should be enabled.)</li>
+<li><strong>Worker</strong> – The <strong>Representative</strong> lookup contains a list of employees if the <strong>Offset account</strong> field is set to <strong>Ledger</strong> or <strong>Bank</strong>, or a list of the counteragent&#39;s contact persons if the <strong>Offset account</strong> field is set to <strong>Customer</strong> or <strong>Vendor</strong>. To set up representatives, go to <strong>Basic</strong> &gt; <strong>Setup</strong> &gt; <strong>Contacts</strong> &gt; <strong>Contact person</strong>.</li>
+<li><strong>Other</strong> – The <strong>Representative</strong> lookup contains a list of other clients. To set up receivers who don&#39;t appear in the <strong>Customers</strong> or <strong>Vendors</strong> table, go to <strong>General ledger</strong> &gt; <strong>Receivers</strong>. This type is available only for Latvia. (The <strong>CSELatvia</strong> configuration key should be enabled.)</li>
 <li><strong>Vendor</strong> – The <strong>Representative</strong> lookup contains a list of vendors. To set up vendors, go to <strong>Accounts payable</strong> &gt; <strong>Vendors</strong>.</li>
 <li><strong>Customer</strong> – The <strong>Representative</strong> lookup contains a list of customers. To set up customers, go to <strong>Accounts receivable</strong> &gt; <strong>Customers</strong>.</li>
 </ul></td>
@@ -446,7 +445,7 @@ The following tasks can be performed at **Cash and bank management** &gt; **Peri
 <tbody>
 <tr class="odd">
 <td>Check balance limit</td>
-<td>Check the balance for the selected cash account on the specified date, and show the result in an information message. Only approved transactions can be counted in the balance calculation. Transactions that are marked as <strong>For payroll</strong> aren't considered.</td>
+<td>Check the balance for the selected cash account on the specified date, and show the result in an information message. Only approved transactions can be counted in the balance calculation. Transactions that are marked as <strong>For payroll</strong> aren&#39;t considered.</td>
 </tr>
 <tr class="even">
 <td>Cash balance recalculation</td>
@@ -473,6 +472,7 @@ The settled amount is reflected in the <strong>Settled currency</strong> field o
 </table>
 
 ## Inquiries and reports
+
 | Inquiry or report                             | Description                                                                                                                                                                                                                     |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cash transactions view                        | For a Slip journal line, use the **Inquiries** button on the Action Pane to view ledger transactions, the cash balance, and other information.                                                                                  |

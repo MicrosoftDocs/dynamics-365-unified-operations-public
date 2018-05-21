@@ -31,8 +31,7 @@ ms.author: omarc
 
 # Add a methodology to an LCS solution
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to create and modify methodologies. It also provides information about the requirements for methodologies.
 
@@ -45,7 +44,7 @@ The first two phases of your methodology must be the Learn and Consume phases fr
 -   **Get an overview** – Include content for your solution, such as information about features, architecture, and more.
 -   **How to get help** – Include numbers, contacts, or direct links to your company's website, for people who contribute to building and maintaining the solution.
 
-The Consume phase includes tasks that are required in order to complete Conference room pilot 1 (CRP1). After the Learn and Consume phases, add the steps that are required in order to implement your solution. You can either modify the phases and tasks so that they are aligned with your solution, or use your company’s implementation methodology.
+The Consume phase includes tasks that are required in order to complete Conference room pilot 1 (CRP1). After the Learn and Consume phases, add the steps that are required in order to implement your solution. You can either modify the phases and tasks so that they are aligned with your solution, or use your company’s implementation methodology.
 
 ## Create a new methodology
 1.  On the LCS home page, click the **Manage methodologies** tile.
@@ -68,12 +67,12 @@ Follow these steps to edit a methodology in a specific project only.
 
 ## Change a project’s methodology
 1.  On the project's home page, click the ellipsis (**...**) button above the project phases, and then click **Change methodology**.
-2.  In the dialog box that appears, set the **Do you want to keep the existing phases and tasks?** option. If you set this option to **Yes**, the phases and tasks from the methodology that you select in step 3 are added to the end of the current methodology. If you set the option to **No**, the current methodology is replaced with the methodology that you select in step 3.
+2.  In the dialog box that appears, set the **Do you want to keep the existing phases and tasks?** option. If you set this option to **Yes**, the phases and tasks from the methodology that you select in step 3 are added to the end of the current methodology. If you set the option to **No**, the current methodology is replaced with the methodology that you select in step 3.
 3.  Select a methodology to use with your project.
 4.  Click **Confirm**.
 
 
-See also
+Additional resources
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)

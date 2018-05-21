@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create online channels and define channel attributes
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through creating a new online channel and adding it to the organization hierarchy. You must create the organization hierarchy before you can create a new online channel. This procedure uses the USRT demo data company.
 

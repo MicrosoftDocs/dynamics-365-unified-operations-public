@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # T Classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter T.
 
@@ -956,7 +955,7 @@ A run-time error occurs if the file is accessed with a method that does not corr
 <tr class="odd">
 <td>0</td>
 <td>ANSI code page (ACP)</td>
-<td>The code page that supports only characters in the user's current language. The code page is unsuitable for anything that might contain multilingual data or for monolingual data that might be transferred between two systems by using different code pages.</td>
+<td>The code page that supports only characters in the user&#39;s current language. The code page is unsuitable for anything that might contain multilingual data or for monolingual data that might be transferred between two systems by using different code pages.</td>
 </tr>
 <tr class="even">
 <td>437</td>

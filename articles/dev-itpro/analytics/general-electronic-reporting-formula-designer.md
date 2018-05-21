@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Formula designer in Electronic reporting
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting. These formulas resemble formulas in Microsoft Excel. Various types of functions are supported in the formulas: text, date and time, mathematical, logical, information, data type conversion, and other (business domain–specific functions).
 
@@ -296,12 +296,12 @@ The following tables describe the data manipulation functions that you can use t
 </tr>
 <tr class="odd">
 <td>FIRST (list)</td>
-<td>Return the first record of the specified list, if that record isn't empty. Otherwise, throw an exception.</td>
+<td>Return the first record of the specified list, if that record isn&#39;t empty. Otherwise, throw an exception.</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>FIRSTORNULL (list)</td>
-<td>Return the first record of the specified list, if that record isn't empty. Otherwise, return a <strong>null</strong> record.</td>
+<td>Return the first record of the specified list, if that record isn&#39;t empty. Otherwise, return a <strong>null</strong> record.</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -317,12 +317,12 @@ The following tables describe the data manipulation functions that you can use t
 <tr class="odd">
 <td>ORDERBY (list [, expression 1, expression 2, …])</td>
 <td>Return the specified list after it has been sorted according to the specified arguments. These arguments can be defined as expressions.</td>
-<td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>ORDERBY (Vendors, Vendors.'name()')</strong> returns a list of vendors that is sorted by name in ascending order.</td>
+<td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> returns a list of vendors that is sorted by name in ascending order.</td>
 </tr>
 <tr class="even">
 <td>REVERSE (list)</td>
 <td>Return the specified list in reversed sort order.</td>
-<td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> returns a list of vendors that is sorted by name in descending order.</td>
+<td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> returns a list of vendors that is sorted by name in descending order.</td>
 </tr>
 <tr class="odd">
 <td>WHERE (list, condition)</td>
@@ -345,7 +345,7 @@ The following tables describe the data manipulation functions that you can use t
 </tr>
 <tr class="odd">
 <td>COUNT (list)</td>
-<td>Return the number of records in the specified list, if the list isn't empty. Otherwise, return <strong>0</strong> (zero).</td>
+<td>Return the number of records in the specified list, if the list isn&#39;t empty. Otherwise, return <strong>0</strong> (zero).</td>
 <td><strong>COUNT (SPLIT(&quot;abcd&quot; , 3))</strong> returns <strong>2</strong>, because the <strong>SPLIT</strong> function creates a list that consists of two records.</td>
 </tr>
 <tr class="even">
@@ -362,7 +362,7 @@ The following tables describe the data manipulation functions that you can use t
 <li>Label</li>
 <li>Description</li>
 </ul>
-At runtime, the <strong>Label</strong> and <strong>Description</strong> fields return values that are based on the format's language settings.</td>
+At runtime, the <strong>Label</strong> and <strong>Description</strong> fields return values that are based on the format&#39;s language settings.</td>
 <td>In the following illustration, an enumeration is introduced in a data model.
 <p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
 <p>The following illustration shows these details:</p>
@@ -388,22 +388,24 @@ Based on the language settings of the parent FILE and FOLDER format elements, tr
 <li>Description</li>
 <li>Is translated</li>
 </ul>
-<p>At runtime, the <strong>Label</strong> and <strong>Description</strong> fields return values that are based on the format's language settings and the specified language. The <strong>Is translated</strong> field indicates that the <strong>Label</strong> field has been translated into the specified language.</td>
+<p>At runtime, the <strong>Label</strong> and <strong>Description</strong> fields return values that are based on the format&#39;s language settings and the specified language. The <strong>Is translated</strong> field indicates that the <strong>Label</strong> field has been translated into the specified language.</td>
 <td>For example, you use the <strong>Calculated field</strong> data source type to configure the <strong>enumType_de</strong> and <strong>enumType_deCH</strong> data sources for the <strong>enumType</strong> data model enumeration:
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if this translation is available. If the Swiss German translation isn't available, the label is in German: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.</td>
+In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if this translation is available. If the Swiss German translation isn&#39;t available, the label is in German: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.</td>
 </tr>
 <tr class="even">
 <td>STRINGJOIN (list, field name, delimiter)</td>
 <td>Return a string that consists of concatenated values of the specified field from the specified list. The values are separated by the specified delimiter.</td>
+
 <td>If you enter <strong>SPLIT(&quot;abc&quot; , 1)</strong> as a data source (DS), the expression <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> returns <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong>.</td>
+
 </tr>
 <tr class="odd">
 <td>SPLITLISTBYLIMIT (list, limit value, limit source)</td>
-<td>Split the specified list into a new list of sub-lists, and return the result in record list content. The limit value parameter defines the value of the limit for splitting the original list. The limit source parameter defines the step that the total sum is increased on. The limit isn't applied to a single item of the original list if the limit source exceeds the defined limit.</td>
+<td>Split the specified list into a new list of sub-lists, and return the result in record list content. The limit value parameter defines the value of the limit for splitting the original list. The limit source parameter defines the step that the total sum is increased on. The limit isn&#39;t applied to a single item of the original list if the limit source exceeds the defined limit.</td>
 <td>The following illustrations show a format and the data sources that are used for it. 
 <p><a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="Format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a></p>
 <p><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="Data sources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a></p>
@@ -415,12 +417,12 @@ In this case, you can use the following expression to get the label of the enume
 <p>The following illustration shows the result when the adjusted format is run.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
 <blockquote>[!NOTE]<br>
-The limit isn't applied to the last item of the original list, because the value (11) of the limit source (weight) exceeds the defined limit (9). Use either the <strong>WHERE</strong> function or the <strong>Enabled</strong> expression of the corresponding format element to ignore (skip) sub-lists during report generation, as required.</blockquote></td>
+The limit isn&#39;t applied to the last item of the original list, because the value (11) of the limit source (weight) exceeds the defined limit (9). Use either the <strong>WHERE</strong> function or the <strong>Enabled</strong> expression of the corresponding format element to ignore (skip) sub-lists during report generation, as required.</blockquote></td>
 </tr>
 <tr class="even">
 <td>FILTER (list, condition)</td>
 <td>Return the specified list after the query has been modified to filter for the specified condition. This function differs from the <strong>WHERE</strong> function, because the specified condition is applied to any ER data source of the <strong>Table records</strong> type at the database level. The list and condition can be defined by using tables and relations.</td>
-  <td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40. If <strong>Vendor</strong> is configured as an ER data source that refers to the <strong>VendTable</strong> table and the <strong>parmVendorBankGroup</strong> that is configured as ER data source returns the value in the string data type, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> returns a list of just the vendor accounts that belong to a specific bank group.</td>
+  <td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40. If <strong>Vendor</strong> is configured as an ER data source that refers to the <strong>VendTable</strong> table and the <strong>parmVendorBankGroup</strong> that is configured as ER data source returns the value in the string data type, <strong>FILTER (Vendor.&#39;&lt;Relations&#39;.VendBankAccount, Vendor.&#39;&lt;Relations&#39;.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> returns a list of just the vendor accounts that belong to a specific bank group.</td>
 </tr>
 </tbody>
 </table>
@@ -544,7 +546,7 @@ The expression <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> also retur
 </tr>
 <tr class="even">
 <td>FORMAT (string 1, string 2[, string 3, …])</td>
-<td>Return the specified string after it has been formatted by substituting any occurrences of <strong>%N</strong> with the <em>n</em>th argument. The arguments are strings. If an argument isn't provided for a parameter, the parameter is returned as <strong>&quot;%N&quot;</strong> in the string. For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</td>
+<td>Return the specified string after it has been formatted by substituting any occurrences of <strong>%N</strong> with the <em>n</em>th argument. The arguments are strings. If an argument isn&#39;t provided for a parameter, the parameter is returned as <strong>&quot;%N&quot;</strong> in the string. For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</td>
 <td>In the following illustration, the <strong>PaymentModel</strong> data source returns the list of customer records via the <strong>Customer</strong> component and the processing date value via the <strong>ProcessingDate</strong> field.
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>In the ER format that is designed to generate an electronic file for selected customers, <strong>PaymentModel</strong> is selected as a data source and controls the process flow. An exception is thrown to inform the user when a selected customer is stopped for the date when the report is processed. The formula that is designed for this type of processing control can use the following resources:</p>
@@ -557,7 +559,7 @@ The expression <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> also retur
 <li>Finance and Operations label SYS18389, which has the following text:
 <ul>
 <li><strong>For the EN-US language:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>For the DE language:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
+<li><strong>For the DE language:</strong> &quot;Debitor &#39;%1&#39; wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Here is the formula that can be designed:</p>
@@ -565,7 +567,7 @@ The expression <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> also retur
 <p>If a report is processed for the <strong>Litware Retail</strong> customer on December 17, 2015, in the <strong>EN-US</strong> culture and the <strong>EN-US</strong> language, this formula returns the following text, which can be presented as an exception message for the user:</p>
 <p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>If the same report is processed for the <strong>Litware Retail</strong> customer on December 17, 2015, in the <strong>DE</strong> culture and the <strong>DE</strong> language, this formula returns the following text, which uses a different date format:</p>
-<p>&quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
+<p>&quot;Nichts zu drucken. Debitor &#39;Litware Retail&#39; wird für 17.12.2015 gesperrt.&quot;</p>
 <blockquote>[!NOTE]<br>
 The following syntax is applied in ER formulas for labels:
 <ul>
@@ -580,9 +582,9 @@ The following syntax is applied in ER formulas for labels:
 </tr>
 <tr class="even">
 <td>NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal points)</td>
-<td>Return the specified number after it has been spelled out (converted) to text strings in the specified language. The language code is optional. When it's defined as an empty string, the language code for the running context is used instead. (The running context language code is defined for a generating folder or file.) The currency code is also optional. When it's defined as an empty string, the company currency is used.
+<td>Return the specified number after it has been spelled out (converted) to text strings in the specified language. The language code is optional. When it&#39;s defined as an empty string, the language code for the running context is used instead. (The running context language code is defined for a generating folder or file.) The currency code is also optional. When it&#39;s defined as an empty string, the company currency is used.
 <blockquote>[!NOTE]<br>
-The print currency name flag and decimal points parameters are analyzed only for the following language codes: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>. Additionally, the print currency name flag parameter is analyzed only for Finance and Operations companies where the country's or region's context supports declension of currency names.</blockquote></td>
+The print currency name flag and decimal points parameters are analyzed only for the following language codes: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>. Additionally, the print currency name flag parameter is analyzed only for Finance and Operations companies where the country&#39;s or region&#39;s context supports declension of currency names.</blockquote></td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returns <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> returns <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> returns <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
 <tr class="odd">
@@ -649,7 +651,7 @@ The print currency name flag and decimal points parameters are analyzed only for
 
 ER lets you extend the list of functions that are used in ER expressions. Some engineering effort is required. For detailed information, see [Extending the list of Electronic reporting functions](general-electronic-reporting-formulas-list-extension.md).
 
-## See also
+## Additional resources
 
 [Electronic Reporting overview](general-electronic-reporting.md)
 

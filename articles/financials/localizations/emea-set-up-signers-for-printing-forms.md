@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up signers for print forms
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 For legal entities in Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, and Russia, you can set up signers and titles for customers and vendors that print documents such as invoices and cash orders.
 
@@ -65,19 +64,19 @@ To set up signers for the documents that a company prints, use the **Officials**
 <li>Advance report</li>
 <li>Page of cash book</li>
 <li>Count statement</li>
-<li>Deferrals*</li>
+<li>Deferrals<em></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Sales orders</td>
 <td>Add positions and related information for signers who can sign the following outgoing primary documents that are related to customers:
 <ul>
-<li>Invoice for payment*</li>
+<li>Invoice for payment</em></li>
 <li>Invoice</li>
-<li>Facture*</li>
+<li>Facture<em></li>
 <li>Invoice - credit-note</li>
-<li>Facture - credit-note*</li>
-<li>Tax transaction facture (client)*</li>
+<li>Facture - credit-note</em></li>
+<li>Tax transaction facture (client)<em></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -85,18 +84,18 @@ To set up signers for the documents that a company prints, use the **Officials**
 <td>Add positions and related information for signers who can sign the following incoming primary documents that are related to vendors:
 <ul>
 <li>Invoice</li>
-<li>Facture*</li>
+<li>Facture</em></li>
 <li>Invoice - credit-note</li>
-<li>Facture - credit-note*</li>
-<li>Invoice for payment*</li>
-<li>Tax transaction facture (vendor)*</li>
+<li>Facture - credit-note<em></li>
+<li>Invoice for payment</em></li>
+<li>Tax transaction facture (vendor)<em></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Inventory item management</td>
 <td>Add positions and related information for signers who can sign the following warehouse documents when tangible assets are issued to a customer or received from a vendor:
 <ul>
-<li>Issue slip for sales order (M-15)*</li>
+<li>Issue slip for sales order (M-15)</em></li>
 <li>Rmb. slip/Receipt order</li>
 <li>Issue slip for transfer order (M-15)*</li>
 </ul></td>
@@ -124,11 +123,11 @@ To set up signers for the documents that a company prints, use the **Officials**
 </tr>
 <tr class="even">
 <td>Name</td>
-<td>Select the signer’s name. The names in the list come from either the Contacts table or the Employees table, depending on the type of signer (that is, depending on whether the <strong>Our</strong> check box is selected). If the signer's name isn't in the list, manually enter the signer’s full name.</td>
+<td>Select the signer’s name. The names in the list come from either the Contacts table or the Employees table, depending on the type of signer (that is, depending on whether the <strong>Our</strong> check box is selected). If the signer&#39;s name isn&#39;t in the list, manually enter the signer’s full name.</td>
 </tr>
 <tr class="odd">
 <td>Job title</td>
-<td>Select the signer’s job title. If the signer’s title isn't in the list, manually enter the signer’s title.</td>
+<td>Select the signer’s job title. If the signer’s title isn&#39;t in the list, manually enter the signer’s title.</td>
 </tr>
 <tr class="even">
 <td>Account code</td>

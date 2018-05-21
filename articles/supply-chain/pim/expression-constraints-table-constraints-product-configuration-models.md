@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Expression constraints and table constraints in product configuration models
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the use of expression constraints and table constraints. Constraints control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order. You can use expression constraints or table constraints, depending on how you prefer to build the constraints. 
 
@@ -47,7 +46,7 @@ Table constraints list the combinations of values that are allowed for attribute
 
 ### Example of a table constraint
 
-This example shows how you can limit the configuration of a speaker to specific cabinet finishes and fronts. The first table shows the cabinet finishes and fronts that are generally available for configuration. The values are defined for the **Cabinet finish** and **Front grill** attribute types.
+This example shows how you can limit the configuration of a speaker to specific cabinet finishes and fronts. The first table shows the cabinet finishes and fronts that are generally available for configuration. The values are defined for the **Cabinet finish** and **Front grill** attribute types.
 
 | Attribute type | Values                      |
 |----------------|-----------------------------|
@@ -56,10 +55,10 @@ This example shows how you can limit the configuration of a speaker to specific 
 
 The next table shows the combinations that are defined by the **Color and finish** table constraint. By using this table constraint, you can configure a speaker that has an oak finish and a black grill, a Rosewood finish and a white grill, and so on.
 
-| Finish         | Grill                       |
+| Finish         | Grill                       |
 |----------------|-----------------------------|
 | Oak            | Black                       |
-| Rosewood       | White                       |
+| Rosewood       | White                       |
 | White          | Black                       |
 | White          | White                       |
 | Black          | Black                       |
@@ -174,7 +173,7 @@ The following tables list the operators and infix notation that you can use when
 </tr>
 <tr class="even">
 <td>Power</td>
-<td>This takes an exponential. It applies exponentiation from right to left. (In other words, it's right-associative.) Therefore, <strong>Power[a, b, c]</strong> is equivalent to <strong>Power[a, Power[b, c]]</strong>. <strong>Power</strong> can be used only if the exponent is a positive constant.</td>
+<td>This takes an exponential. It applies exponentiation from right to left. (In other words, it&#39;s right-associative.) Therefore, <strong>Power[a, b, c]</strong> is equivalent to <strong>Power[a, Power[b, c]]</strong>. <strong>Power</strong> can be used only if the exponent is a positive constant.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operator:</strong> Power[x, 2] == y</li>
@@ -207,23 +206,24 @@ The following tables list the operators and infix notation that you can use when
 
 The examples in the next table show how to write infix notation.
 
-| Infix notation    | Description                                                                                   |
+
+|  Infix notation   |                                          Description                                          |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| x + y + z         | Addition                                                                                      |
-| x \* y \* z       | Multiplication                                                                                |
-| x - y             | Binary subtraction is translated the same as binary addition where there is a negated second. |
-| x ^ y ^ z         | Exponentiation that has right associativity                                                   |
-| !x                | Boolean not                                                                                   |
-| x -: y            | Boolean implication                                                                           |
-| x | y | z         | Boolean or                                                                                    |
-| x & y & z         | Boolean and                                                                                   |
-| x == y == z       | Equality                                                                                      |
-| x != y != z       | Distinct                                                                                      |
-| x &lt; y &lt; z   | Less than                                                                                     |
-| x &gt; y &gt; z   | Greater than                                                                                  |
-| x &lt;= y &lt;= z | Less than or equal to                                                                         |
-| x &gt;= y &gt;= z | Greater than or equal to                                                                      |
-| (x)               | Parentheses override default precedence.                                                      |
+|     x + y + z     |                                           Addition                                            |
+|    x \* y \* z    |                                        Multiplication                                         |
+|       x - y       | Binary subtraction is translated the same as binary addition where there is a negated second. |
+|     x ^ y ^ z     |                          Exponentiation that has right associativity                          |
+|        !x         |                                          Boolean not                                          |
+|      x -: y       |                                      Boolean implication                                      |
+|         x         |                                               y                                               |
+|     x & y & z     |                                          Boolean and                                          |
+|    x == y == z    |                                           Equality                                            |
+|    x != y != z    |                                           Distinct                                            |
+|  x &lt; y &lt; z  |                                           Less than                                           |
+|  x &gt; y &gt; z  |                                         Greater than                                          |
+| x &lt;= y &lt;= z |                                     Less than or equal to                                     |
+| x &gt;= y &gt;= z |                                   Greater than or equal to                                    |
+|        (x)        |                           Parentheses override default precedence.                            |
 
 ## Why aren't my expression constraints validated correctly?
 You can't use reserved keywords as solver names for attributes, components, or subcomponents in a product configuration model. Here is a list of the reserved keywords that you can't use:
@@ -249,7 +249,7 @@ You can't use reserved keywords as solver names for attributes, components, or s
 -   Goal
 
 
-See also
+Additional resources
 --------
 
 [Create an expression constraint (Task guide)(tasks/add-expression-constraint-product-configuration-model.md)

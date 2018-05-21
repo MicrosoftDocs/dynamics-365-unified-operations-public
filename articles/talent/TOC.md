@@ -6,6 +6,7 @@
 ## [Remove a Talent environment](remove-talent-environment.md)
 ## [Provision Microsoft Dynamics 365 for Talent Modular Apps](modular-app-tech-faq.md)
 ## [Extend Talent functionality](extend-talent-functionality.md)
+## [Access preview features in Dynamics 365 for Talent](access-preview-feature.md)
 
 # [Develop a human resources strategy](departments-jobs-positions.md)
 ## [Set up job components](create-job.md)

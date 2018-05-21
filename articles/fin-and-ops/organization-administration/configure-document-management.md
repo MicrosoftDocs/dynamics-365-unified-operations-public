@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 08/11/2017
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,9 +29,13 @@ ms.dyn365.ops.version: July 2017 update
 
 # Configure document management
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
+
+To learn more about document management, watch the short [Document Management in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be) video.
+
+> [!Video https://www.youtube.com/embed/p4rl1CkiLN4]
 
 ## Configure document types
 Document types are used to categorize the documents that you attach to records or the templates that you create. Each document type can be stored in a unique location.

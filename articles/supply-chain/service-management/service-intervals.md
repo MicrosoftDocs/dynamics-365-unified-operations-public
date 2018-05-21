@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service intervals
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 The service agreement interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders automatically.
 

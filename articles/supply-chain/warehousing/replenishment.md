@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Replenishment
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management. The information in this topic doesn't apply to the warehousing solution that is available in Inventory management.
 
@@ -70,12 +70,14 @@ Load demand replenishment sums the demand for several loads and creates the repl
 Instead of having to sum demand at the end of an allocation process and do replenishment on the basis of the summed up quantity, you can apply the Immediate replenishment strategy. When you use this strategy, the inventory can be replenished immediately after a location directive line fails. Therefore, you can set up the replenishment so that it's restricted by specific units, and so that it uses quantities that are set for specific locations.
 
 ## Replenishment prerequisites
-| Prerequisite            | Description |
-|-------------------------|-------------|
-| Item                    | The item must be enabled for warehouse management processes. |
-| Warehouse               | The warehouse must be enabled for warehouse management processes. To enable a warehouse for warehouse management processes, on the **Warehouses** page, select the warehouse, and then select the **Use warehouse management processes** option. |
-| Replenishment templates | At least one replenishment template must be set up for Min/Max replenishment, Wave demand replenishment, or Load demand replenishment. |
-| Locations               | Locations must be created and connected to a location profile. |
-| Location profiles       | Location profiles are required in order to create locations. |
-| Location directives     | Location directives are required in order to guide work to the locations where replenishment is required and to the locations that inventory is sourced from. |
-| Work templates          | Work templates of the **Replenishment** type are required in order to create replenishment work so that inventory can be moved to the desired locations. |
+
+|      Prerequisite       |                                                                                                                                Description                                                                                                                                 |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|          Item           |                                                                                                        The item must be enabled for warehouse management processes.                                                                                                        |
+|        Warehouse        | The warehouse must be enabled for warehouse management processes. To enable a warehouse for warehouse management processes, on the <strong>Warehouses</strong> page, select the warehouse, and then select the <strong>Use warehouse management processes</strong> option. |
+| Replenishment templates |                                                                   At least one replenishment template must be set up for Min/Max replenishment, Wave demand replenishment, or Load demand replenishment.                                                                   |
+|        Locations        |                                                                                                       Locations must be created and connected to a location profile.                                                                                                       |
+|    Location profiles    |                                                                                                        Location profiles are required in order to create locations.                                                                                                        |
+|   Location directives   |                                                       Location directives are required in order to guide work to the locations where replenishment is required and to the locations that inventory is sourced from.                                                        |
+|     Work templates      |                                                   Work templates of the <strong>Replenishment</strong> type are required in order to create replenishment work so that inventory can be moved to the desired locations.                                                    |
+

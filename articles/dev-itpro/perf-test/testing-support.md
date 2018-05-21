@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Test projects in Visual Studio
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the options for testing in Visual Studio.
 
-A custom unit test adapter is available in Visual Studio. This adapter lets test authors use the standard **Test Explorer** window in Visual Studio to schedule X++ tests and analyze test results. Developers can author tests by using **SysTestAdaptor**. They can also generate test code from Task Recorder recordings. These test cases can then be added to build systems for validations. 
+A custom unit test adapter is available in Visual Studio. This adapter lets test authors use the standard **Test Explorer** window in Visual Studio to schedule X++ tests and analyze test results. Developers can author tests by using **SysTestAdaptor**. They can also generate test code from Task Recorder recordings. These test cases can then be added to build systems for validations. 
 
 [![1\_Support](./media/1_support.png)](./media/1_support.png)
 
@@ -60,7 +59,7 @@ In Test Explorer, you can run the tests, or you can debug the test case by right
 
 [![3\_Support](./media/3_support.png)](./media/3_support.png) 
 
-You can also discover existing tests for an object in your project. Discovery uses cross-reference data. Right-click an object in the project, and then select **Discover Related Tests**. This command queries the cross-reference data and returns any tests that reference the object. The list of test cases is displayed in Test Explorer. 
+You can also discover existing tests for an object in your project. Discovery uses cross-reference data. Right-click an object in the project, and then select **Discover Related Tests**. This command queries the cross-reference data and returns any tests that reference the object. The list of test cases is displayed in Test Explorer. 
 
 [![4\_Support](./media/4_support.png)](./media/4_support.png) 
 

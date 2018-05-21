@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ date run-time functions
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the date run-time functions.
 
 dayName
 -------
 
-Retrieves the name of the day of the week that is specified by a number.
+Retrieves the name of the day of the week that is specified by a number.
 
     str dayName(int number)
 

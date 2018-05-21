@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure an approval process in a workflow
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Use the following procedure to configure the properties of the approval process.
 
@@ -125,7 +124,7 @@ You can send notifications to people when a document has been approved, rejected
     <td>Specific Microsoft Dynamics 365 for Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong>: list includes all Microsoft Dynamics 365 for Finance and Operations users. Select the users to send notifications to, and then move these users to the <strong>Selected users</strong>: list.</li>
+    <li>The <strong>Available users</strong>: list includes all Microsoft Dynamics 365 for Finance and Operations users. Select the users to send notifications to, and then move these users to the <strong>Selected users</strong>: list.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -141,6 +140,7 @@ You may want to designate a final approver for scenarios where the approver is t
 
 ## Set a time limit
 Follow these steps if the approval process must be completed in a specific time.
+
 | **Note**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | The options that you select in these steps override the options that you selected in the **Assignment** and **Escalation** areas of each approval step. |

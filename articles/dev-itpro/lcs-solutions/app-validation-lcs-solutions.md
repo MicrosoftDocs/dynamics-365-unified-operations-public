@@ -31,8 +31,7 @@ ms.author: omarc
 
 # Validate an application for an LCS solution
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that an LCS solution package can be successfully deployed. 
 
@@ -42,7 +41,7 @@ Microsoft requires specific reviews in order to validate that the following requ
 -   A Microsoft Dynamics Lifecycle Services (LCS) solution package can be successfully deployed.
 -   Transactions can be completed.
 
-Currently, partners must demonstrate that these requirements have been met by doing test deployments and then sharing the results with Microsoft. No code will be deployed on a customer environment that Microsoft hasn't validated. Partners must complete the following curation artifacts and tests:
+Currently, partners must demonstrate that these requirements have been met by doing test deployments and then sharing the results with Microsoft. No code will be deployed on a customer environment that Microsoft hasn't validated. Partners must complete the following curation artifacts and tests:
 
 -   Code analysis report (CAR)
 -   Business process modeler (BPM)/test scripts
@@ -100,11 +99,11 @@ If you have a curated solution that is published on AppSource, you must keep the
 
 | Phase | Number | Activity                                            | Process steps                                                                | Success criteria                                                                                                                                                                                                                                                                                     |
 |-------|--------|-----------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1     | 1      | Validate Finance and Operations customer code. | Run all customer model files by using the CAR tool, and generate the report. | Successfully create a CAR without any localization, accessibility, performance, or security issues. All major issues that the CAR highlights should be addressed after you upgrade to the latest major release. The CAR must be submitted to Microsoft six weeks after the fall and spring releases. |
+| 1     | 1      | Validate Finance and Operations customer code. | Run all customer model files by using the CAR tool, and generate the report. | Successfully create a CAR without any localization, accessibility, performance, or security issues. All major issues that the CAR highlights should be addressed after you upgrade to the latest major release. The CAR must be submitted to Microsoft six weeks after the fall and spring releases. |
 
 
 
-See also
+Additional resources
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)

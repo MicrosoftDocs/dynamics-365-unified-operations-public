@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ syntax
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic contains the syntax reference for X++. 
 
@@ -92,8 +91,8 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 <td></td>
 </tr>
 <tr class="even">
-<td><strong>*</strong></td>
-<td>Multiply. The asterisk (<span class="code">*</span>) is also used in X++ SQL. One use is to signify all fields from the tables on a <code>select</code> statement. Another use is as a wildcard with the <code>like</code> operator, to signify 0 to many characters of any kind. The <code>like</code> operator also uses the <span class="code">?</span> character.</td>
+<td><strong><em></strong></td>
+<td>Multiply. The asterisk (<span class="code"></em></span>) is also used in X++ SQL. One use is to signify all fields from the tables on a <code>select</code> statement. Another use is as a wildcard with the <code>like</code> operator, to signify 0 to many characters of any kind. The <code>like</code> operator also uses the <span class="code">?</span> character.</td>
 <td>Arithmetic Operators</td>
 </tr>
 <tr class="odd">
@@ -162,13 +161,13 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 <td>Arithmetic Operators</td>
 </tr>
 <tr class="even">
-<td><strong>\</strong></td>
+<td><strong>&lt;/strong&gt;</td>
 <td>Escape in strings. Escapes extra quotation marks, and certain letters such as <span class="code">\t</span> for tab.</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><strong>@</strong></td>
-<td>Escape of keywords. For example, <span class="code">str @abstract;</span> would fail to compile without the <strong>@</strong> sign. Also affects literal strings, by negating the effect of the \ escape character, and by enabling the string to span more than one line in the source code. The new line is represented by one character of hexadecimal 0x0A, which is commonly called a line feed. No carriage return character of hexadecimal 0x0D is included, as in 0x0D0A.</td>
+<td>Escape of keywords. For example, <span class="code">str <xref href="abstract" data-throw-if-not-resolved="False" data-raw-source="@abstract"></xref>;</span> would fail to compile without the <strong>@</strong> sign. Also affects literal strings, by negating the effect of the \ escape character, and by enabling the string to span more than one line in the source code. The new line is represented by one character of hexadecimal 0x0A, which is commonly called a line feed. No carriage return character of hexadecimal 0x0D is included, as in 0x0D0A.</td>
 <td></td>
 </tr>
 <tr class="even">
@@ -228,7 +227,7 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 </tr>
 <tr class="odd">
 <td><strong>?</strong></td>
-<td>Ternary operator. The question mark (<span class="code">?</span>) character is also used by the <code>like</code> operator to signify exactly one character of any kind. The <code>like</code> operator also uses the <span class="code">*</span> character.</td>
+<td>Ternary operator. The question mark (<span class="code">?</span>) character is also used by the <code>like</code> operator to signify exactly one character of any kind. The <code>like</code> operator also uses the <span class="code"><em></span> character.</td>
 <td>Ternary Operator (?)</td>
 </tr>
 <tr class="even">
@@ -268,7 +267,7 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 </tr>
 <tr class="odd">
 <td><strong>asc</strong></td>
-<td>An option on the <code>order</code> <code>by</code> or <code>group</code> <code>by</code> clause in a <code>select</code> statement. The sorting is ascending.</td>
+<td>An option on the <code>order</code> <code>by</code> or <code>group</code> <code>by</code> clause in a <code>select</code> statement. The sorting is ascending.</td>
 <td>Select Statement Syntax</td>
 </tr>
 <tr class="even">
@@ -453,7 +452,7 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 </tr>
 <tr class="odd">
 <td><strong>flush</strong></td>
-<td>Clears an entire table cache. Here is the syntax for the <code>flush</code> statement: <code>YourTable ytBuffer;</code>  <code>flush ytBuffer;</code></td>
+<td>Clears an entire table cache. Here is the syntax for the <code>flush</code> statement: <code>YourTable ytBuffer;</code>  <code>flush ytBuffer;</code></td>
 <td>Set-based Caching</td>
 </tr>
 <tr class="even">
@@ -540,8 +539,8 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 <td><strong>like</strong></td>
 <td>Tests for matches by pattern, with wildcard symbols * and ?. The string on the right side of the <code>like</code> operator must use four backslash characters to represent one backslash. Examples follow:
 <ul>
-<li><span class="code">(&quot;\\&quot; like &quot;*\\*&quot; )</span> //Resolves to false.</li>
-<li><span class="code">(&quot;\\&quot; like &quot;*\\\\*&quot;)</span> //Resolves to true.</li>
+<li><span class="code">(&quot;&amp;quot; like &quot;</em>&lt;em&gt;&quot; )</span> //Resolves to false.</li>
+<li><span class="code">(&quot;&amp;quot; like &quot;</em>\*&quot;)</span> //Resolves to true.</li>
 </ul></td>
 <td>Relational Operators</td>
 </tr>
@@ -702,7 +701,7 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 </tr>
 <tr class="even">
 <td><strong>this</strong></td>
-<td>A reference to the current instance of the class. Used in X++ code inside a method of the class. Used to reference <em>method</em> members of the class, but not <em>field</em> members of the class.<code>public str getFullName()</code>  <span class="code">{</span>  <span class="code">    // Next statement fails to compile without 'this.'.</span>  <code>    return this.concatenateFirstAndLastNames();</code>  <span class="code">}</span></td>
+<td>A reference to the current instance of the class. Used in X++ code inside a method of the class. Used to reference <em>method</em> members of the class, but not <em>field</em> members of the class.<code>public str getFullName()</code>  <span class="code">{</span>  <span class="code">    // Next statement fails to compile without &#39;this.&#39;.</span>  <code>    return this.concatenateFirstAndLastNames();</code>  <span class="code">}</span></td>
 <td>Loosely similar to the system variable that is named <code>element</code>. You use <code>element</code> in form control methods to reference the containing form. For more information, see Using Variables with Forms.</td>
 </tr>
 <tr class="odd">
@@ -742,7 +741,7 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 </tr>
 <tr class="even">
 <td><strong>validTimeState</strong></td>
-<td>Filters rows that are retrieved from a valid time state table by an X++ SQL <code>select</code> statement. For example: <span class="code">select validTimeState(myDateEffective) * from xMyTable;</span> ...or...  <span class="code">select validTimeState(myDateFrom, myDateTo) * from xMyTable;</span></td>
+<td>Filters rows that are retrieved from a valid time state table by an X++ SQL <code>select</code> statement. For example: <span class="code">select validTimeState(myDateEffective) * from xMyTable;</span> ...or...  <span class="code">select validTimeState(myDateFrom, myDateTo) * from xMyTable;</span></td>
 <td>Effects of Valid Time State Tables on Read and Write Operations</td>
 </tr>
 <tr class="odd">
@@ -773,19 +772,19 @@ An expression in X++ is used in either a mathematical or logical way. Expression
 
 ### EBNF Description of Expressions in X++
 
-|                    |     |                                                                                  |
-|--------------------|-----|----------------------------------------------------------------------------------|
-| Expression         | =   | Simple-expression \[RelationalOperator Simple-expression \]                      |
-| RelationalOperator | =   | = | != | &lt; | &gt; | &lt;= | &gt;= | like                                      |
-| Simple-expression  | =   | Simple-expression \[ + | - | | \] Term | Term                                    |
-| Term               | =   | Compfactor { Mult-operator CompFactor }                                          |
-| Mult-operator      | =   | \* | / | div | mod | &lt;&lt; | &gt;&gt; | & | ^ | |                             |
-| CompFactor         | =   | \[ ! \] \[ - | ~ \] Factor                                                       |
-| Factor             | =   | Literal | Enum | Variable | FunctionCall | ( If-expression ) | Select-expression |
-| Enum               | =   | EnumName :: Literal                                                              |
-| Variable           | =   | Identifier \[ \[ Expression \] \] \[ . Expression \]                             |
-| FunctionCall       | =   | \[ Expression (. | ::) | this . \] FunctionName ( argumentlist )                 |
-| If-expression      | =   | Expression ? Expression : Expression                                             |
+|                    |   |                                                             |
+|--------------------|---|-------------------------------------------------------------|
+|     Expression     | = | Simple-expression \[RelationalOperator Simple-expression \] |
+| RelationalOperator | = |                              =                              |
+| Simple-expression  | = |                   Simple-expression \[ +                    |
+|        Term        | = |           Compfactor { Mult-operator CompFactor }           |
+|   Mult-operator    | = |                             \*                              |
+|     CompFactor     | = |                        \[ ! \] \[ -                         |
+|       Factor       | = |                           Literal                           |
+|        Enum        | = |                     EnumName :: Literal                     |
+|      Variable      | = |    Identifier \[ \[ Expression \] \] \[ . Expression \]     |
+|    FunctionCall    | = |                      \[ Expression (.                       |
+|   If-expression    | = |            Expression ? Expression : Expression             |
 
 Semantic restrictions apply on the preceding syntax. You cannot call any method using the :: operator. Similarly, you cannot use the **this** keyword without an active object; that is, if you are not within a method and so on.
 
@@ -809,11 +808,12 @@ Semantic restrictions apply on the preceding syntax. You cannot call any method 
 ## EBNF Overview
 Extended Backus Naur Form (EBNF) is a metalanguage and is used in this guide to describe the language syntax. An EBNF definition consists of production rules, nonterminals, and terminals. The key terms are shown in the following table.
 
-| Key terms        | Example                       | Description                                                                                                                                                                                                                                                                                                                                                                            |
-|------------------|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Terminals        | Work\_Team                    | A terminal is one character or a string of characters that never change.                                                                                                                                                                                                                                                                                                               |
-| Nonterminals     | `Employee`                    | A nonterminal is a description of part of a valid sentence in the language that is defined either by a production rule or a textual description. A nonterminal symbol can always be expanded to one or more terminal symbols.                                                                                                                                                          |
-| Production rules | Employee = Developer | Tester | A production rule is a description of a valid sentence. A production rule defines how a nonterminal symbol on the left side expands into a number of terminal and nonterminal symbols on the right side. If you continue to expand all nonterminal symbols on the right side of the production rules in a particular grammar, you will eventually have a sequence of terminal symbols. |
+
+|    Key terms     |       Example        |                                                                                                          Description                                                                                                          |
+|------------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    Terminals     |      Work\_Team      |                                                                           A terminal is one character or a string of characters that never change.                                                                            |
+|   Nonterminals   |      `Employee`      | A nonterminal is a description of part of a valid sentence in the language that is defined either by a production rule or a textual description. A nonterminal symbol can always be expanded to one or more terminal symbols. |
+| Production rules | Employee = Developer |                                                                                                            Tester                                                                                                             |
 
 ### Example
 
@@ -821,12 +821,12 @@ Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester This
 
 ### Special Symbols in EBNF
 
-| Symbol                        | Description                                                                                                                             |
-|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| (*Expression*)                | Parentheses hold the symbols (terminals and nonterminals) together. They can be placed anywhere on the right side of a production rule. |
-| *Expression1* | *Expression2* | Or: Specifies that all the items on one side of the | apply, or else all the items on the other side of the | apply.                    |
-| \[*Expression*\]              | Optional: The items between \[ and \] are optional. All or none of the items in the brackets are included.                              |
-| {Expression}                  | Repeat: The items between { and } are optional, but can be repeated as many times as necessary.                                         |
+|         Symbol          |                                                               Description                                                               |
+|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+|  (<em>Expression</em>)  | Parentheses hold the symbols (terminals and nonterminals) together. They can be placed anywhere on the right side of a production rule. |
+|  <em>Expression1</em>   |                                                          <em>Expression2</em>                                                           |
+| \[<em>Expression</em>\] |               Optional: The items between \[ and \] are optional. All or none of the items in the brackets are included.                |
+|      {Expression}       |                     Repeat: The items between { and } are optional, but can be repeated as many times as necessary.                     |
 
 For example, if the accessories you buy for your bicycle consist of a saddle, water-bottle holders, bells, and horns, and you could have either a bell or a horn, and zero, one, or more water bottle holders, and exactly one saddle, this could be expressed as: Bicycle\_Accessories = saddle \[bell | horn\] {water\_bottle\_holders} This grammar defines the following possibilities: `saddle`  `saddle bell`  `saddle horn`  saddle water\_bottle\_holder  saddle bell water\_bottle\_holder  saddle bell water\_bottle\_holder water\_bottle\_holder And so on.
 
@@ -1384,9 +1384,9 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 <tbody>
 <tr class="odd">
 <td>Escape</td>
-<td>The backslash character <span class="code">\</span> is rejected by the compiler for unrecognized escapes</td>
+<td>The backslash character <span class="code">&lt;/span&gt; is rejected by the compiler for unrecognized escapes</td>
 <td>The compiler used to accept &quot;31\12\2002&quot;, but during run time the literal string was interpreted as a different value.</td>
-<td>Now the following X++ statement is rejected by the compiler: <span class="code">str myDateString = &quot;31\12\2002&quot;;</span> The proper syntax is <span class="code">&quot;31\\12\\2002&quot;</span>.</td>
+<td>Now the following X++ statement is rejected by the compiler: <span class="code">str myDateString = &quot;31\12\2002&quot;;</span> The proper syntax is <span class="code">&quot;31\12\2002&quot;</span>.</td>
 </tr>
 <tr class="even">
 <td>Exceptions</td>
@@ -1493,7 +1493,7 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 
 
 
-See also
+Additional resources
 --------
 
 [X++ Language Reference](xpp-language-reference.md)

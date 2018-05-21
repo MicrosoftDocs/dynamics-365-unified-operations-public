@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Wizard form pattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Wizard form pattern. A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages.
 
@@ -92,9 +91,9 @@ The verification checklist shows the steps for manually verifying that the form 
 -   Each tab page should have a main instruction.
 -   Content should be subdivided into logical groups per page.
 -   A wizard should have **&lt;Next&gt;** and **&lt;Previous&gt;** buttons on the appropriate pages.
--   The user should also be able to cancel the wizard, and cancellation should return to the state that existed before the wizard was started.
+-   The user should also be able to cancel the wizard, and cancellation should return to the state that existed before the wizard was started.
 -   Only one question should be asked per wizard page (tab page).
--   When a set of choices is presented to the user, radio buttons should be used to make the alternatives clear, even if a check box or combo box is otherwise acceptable.
+-   When a set of choices is presented to the user, radio buttons should be used to make the alternatives clear, even if a check box or combo box is otherwise acceptable.
 -   Wizard forms must **not** have these elements:
     -   FactBoxes
     -   FastTabs

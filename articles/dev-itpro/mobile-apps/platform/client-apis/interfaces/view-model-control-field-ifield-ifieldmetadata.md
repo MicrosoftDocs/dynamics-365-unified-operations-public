@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # FieldMetadata Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Interface for field metadata.
 

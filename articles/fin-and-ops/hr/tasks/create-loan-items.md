@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create loan items
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Loan items are records that help you track physical items, such as phones or computers, that your company lends to workers. Each physical item must have a corresponding loan item. Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can be on loan. You can create multiple loan items, such as keys, access cards, or uniforms, at the same time. The demo data company used to create this procedure is USMF.
 

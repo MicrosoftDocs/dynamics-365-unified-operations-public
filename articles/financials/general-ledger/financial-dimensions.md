@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Financial dimensions
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains the various types of financial dimensions and how they are set up.
 

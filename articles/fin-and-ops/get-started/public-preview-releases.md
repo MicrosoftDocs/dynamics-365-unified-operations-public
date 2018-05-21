@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 11
 
 # Standard and targeted platform releases
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 With each platform release of Microsoft Dynamics 365 for Finance and Operations, you receive new platform updates and features as they become available. This release cycle makes it easy to stay up to date on the most current version, instead of completing a mass update every few years. You can manage how your organization receives these updates. For example, you can sign up for an early release so that your organization receives updates first, or you can remain on the default release schedule and receive the updates later. This topic provides information about the different release options.
 

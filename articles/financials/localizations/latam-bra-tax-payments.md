@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Tax payments in Brazil
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about tax payments in Brazil. In Brazil, users can register and post tax payments together with related fiscal information that must be reported to the tax authorities.
 
@@ -72,7 +71,7 @@ The difference between the tax amount that is collected on sales of goods and th
 <td>Payment type</td>
 <td>Select one of the following options:
 <ul>
-<li><strong>Periodic</strong> – Create a monthly periodic payment (regular). All tax transactions that are generated from fiscal documents, and all transaction adjustments (general or by fiscal document) where the special debit configuration of adjustment isn't marked, are summarized to generate the periodic payment.</li>
+<li><strong>Periodic</strong> – Create a monthly periodic payment (regular). All tax transactions that are generated from fiscal documents, and all transaction adjustments (general or by fiscal document) where the special debit configuration of adjustment isn&#39;t marked, are summarized to generate the periodic payment.</li>
 <li><strong>Other debits</strong> – Make a specific payment of ICMS outside the regular process, because the payment is required by law. Examples include differential of % ICMS and Import goods. All adjustment transactions that are marked as <strong>Other debit payment</strong> in the configuration are summarized to generate a payment.</li>
 </ul></td>
 </tr>
@@ -94,7 +93,7 @@ The difference between the tax amount that is collected on sales of goods and th
 </tr>
 <tr class="even">
 <td>Receita code</td>
-<td>The classification of the payment, as defined by the state tax authorities. The program must offer the latest receita code that is used in the previous transactions. Receita codes vary, depending on the payment type. If you select <strong>Other debits</strong> as the payment type, the receita code is entered automatically from the adjustment transactions, provided that the adjustment transactions have a default receita code.</td>
+<td>The classification of the payment, as defined by the state tax authorities. The program must offer the latest receita code that is used in the previous transactions. Receita codes vary, depending on the payment type. If you select <strong>Other debits</strong> as the payment type, the receita code is entered automatically from the adjustment transactions, provided that the adjustment transactions have a default receita code.</td>
 </tr>
 <tr class="odd">
 <td>Due date</td>

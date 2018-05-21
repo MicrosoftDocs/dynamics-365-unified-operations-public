@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 5
 
 # Data management package API 
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations, by using data packages. The REST API can be used with both cloud and on-premises deployments. For on-premises deployments this functionality is currently available for version 7.2, Platform update 12, build 7.0.4709.41184, and later.
 
@@ -140,7 +140,7 @@ HTTP/1.1 200 OK
 | string definitionGroupId | The name of the data project for import. |
 | string executionId       | The ID to use for the job. If an empty ID is assigned, a new execution ID will be created. |
 | bool execute             | Set this parameter to **True** to run the target step. Otherwise, set it to **False**. |
-| bool overwrite           | This must always be set to **True** when using a composite entity in a package. Otherwise, set it to **False** |
+| bool overwrite           | This must always be set to **False** when using a composite entity in a package. Otherwise, set it to **True** |
 | string legalEntityId     | The legal entity for the data import. |             
 
 **Output parameters**

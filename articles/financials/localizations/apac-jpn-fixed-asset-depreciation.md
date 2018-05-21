@@ -30,8 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed asset depreciation for Japan FAQ
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article answers some frequently asked questions about fixed asset depreciation for Japan.
 
@@ -40,7 +39,7 @@ A fixed asset depreciates over the course of its useful life. Therefore, the acq
 -   **Old straight line** – Depreciate assets that were put into service before April 1, 2007.
 -   **New straight line** – Depreciate assets that were put into service on or after April 1, 2007.
 -   **Old declining balance** – Depreciate assets that were put into service before April 1, 2007.
--   **250% new declining balance** – Depreciate assets that were put into service before April 1, 2012.
+-   **250% new declining balance** – Depreciate assets that were put into service before April 1, 2012.
 -   **200% new declining balance** – Depreciate assets that were put into service on or after to April 1, 2012.
 
 ## What are special depreciation and additional depreciation?
@@ -51,7 +50,7 @@ Special depreciation and additional depreciation are depreciation types that are
 -   Fixed assets that are used to help an employee who has a disability
 -   Fixed assets that are built to help people who are elderly or sick
 
-When you use special depreciation, the extra depreciation amount is calculated by multiplying the acquisition cost and the special depreciation rate. When you use additional depreciation, the extra depreciation amount is calculated by multiplying the ordinary depreciation and the additional depreciation rate. **Note:** If a fixed asset is eligible for both special depreciation and additional depreciation, you can apply only one of them to the asset for a given depreciation period.
+When you use special depreciation, the extra depreciation amount is calculated by multiplying the acquisition cost and the special depreciation rate. When you use additional depreciation, the extra depreciation amount is calculated by multiplying the ordinary depreciation and the additional depreciation rate. **Note:** If a fixed asset is eligible for both special depreciation and additional depreciation, you can apply only one of them to the asset for a given depreciation period.
 
 ## What is the allowable limit for depreciation?
 The allowable limit for depreciation is the maximum amount of the total depreciation expense that is permitted as a deductible expense per tax book per depreciation period. The allowable limit for depreciation for a fixed asset corresponds to the depreciation types that are used to depreciate your company’s fixed assets.
@@ -68,11 +67,11 @@ The allowable limit for depreciation per period for your company’s fixed asset
 ## What is the allowable limit for accumulated depreciation?
 The allowable limit for accumulated depreciation is the maximum amount of accumulated depreciation that can be deducted from the acquisition value of a fixed asset for its useful life. You can choose the value of the allowable limit for accumulated depreciation. Your choice depends on the depreciation method that you apply to the fixed asset, and whether the fixed asset is tangible or intangible. There are two kinds of allowable limit for accumulated depreciation:
 
--   **95% allowable limit for accumulated depreciation** – This limit is applied only to tangible assets that are depreciated by using the old straight line method or the old declining balance method. This limit is restricted to 95 percent of the acquisition cost of the fixed asset.
+-   **95% allowable limit for accumulated depreciation** – This limit is applied only to tangible assets that are depreciated by using the old straight line method or the old declining balance method. This limit is restricted to 95 percent of the acquisition cost of the fixed asset.
 -   **Maximum allowable limit for accumulated depreciation** – This limit is applied to both tangible assets and intangible assets that are depreciated by using a deprecation method other than the old straight line method or the old declining balance method. For a tangible asset, the maximum allowable limit for accumulated depreciation is the acquisition cost of the asset. The maximum allowable limit for accumulated depreciation of an intangible asset is the acquisition cost of the asset minus 1 Japanese yen (JPY).
 
 ## Can I calculate depreciation for a fixed asset for a fiscal year that has fewer than 12 months?
-Yes. Microsoft Dynamics 365 for Finance and Operations supports depreciation calculation if a fiscal year has fewer than 12 months. You can set up multiple depreciation calendars and change between them. If the current fiscal year has fewer than 12 months after you change depreciation calendars, the depreciation ration is proportionally adjusted, based on the number of months in the current fiscal year and a fiscal year that has 12 months. The following example shows how depreciation is calculated for a fiscal year that has fewer than 12 months. The original fiscal year is from April 1, 2010, to March 31, 2011, and the depreciation is calculated for the whole fiscal year. After you change the depreciation calendar, the fiscal year is from January 1, 2011, to December 31, 2011. In this scenario, the months of January, February, and March become part of the previous fiscal calendar, and the current fiscal year consists of only nine months. The depreciation for the remaining nine months (from April 1, 2011, to December 31, 2011) is calculated by using a prorated method that uses the depreciation rates from the previous fiscal year.
+Yes. Microsoft Dynamics 365 for Finance and Operations supports depreciation calculation if a fiscal year has fewer than 12 months. You can set up multiple depreciation calendars and change between them. If the current fiscal year has fewer than 12 months after you change depreciation calendars, the depreciation ration is proportionally adjusted, based on the number of months in the current fiscal year and a fiscal year that has 12 months. The following example shows how depreciation is calculated for a fiscal year that has fewer than 12 months. The original fiscal year is from April 1, 2010, to March 31, 2011, and the depreciation is calculated for the whole fiscal year. After you change the depreciation calendar, the fiscal year is from January 1, 2011, to December 31, 2011. In this scenario, the months of January, February, and March become part of the previous fiscal calendar, and the current fiscal year consists of only nine months. The depreciation for the remaining nine months (from April 1, 2011, to December 31, 2011) is calculated by using a prorated method that uses the depreciation rates from the previous fiscal year.
 
 ## What is the catchup rule for depreciation and how does it work?
 The catch-up rule for depreciation provides an effective way to allocate annual depreciation expenses to the depreciation expenses for each period. You can enable the catch-up rule by selecting the **Allow catch-up rule for depreciation** check box on the **Fixed assets parameters** page. You can also specify whether the catch-up is applied at the end of a fiscal period or at the end of a fiscal year.
@@ -133,7 +132,7 @@ Yes. You can change the depreciation profile of a fixed asset even after you've 
 </tbody>
 </table>
 
-You can track the history of the change and you can also automatically calculate the new useful life of the asset, based on undepreciated balance schedules and years passed schedules.
+You can track the history of the change and you can also automatically calculate the new useful life of the asset, based on undepreciated balance schedules and years passed schedules.
 
 ## What types of schedules can I import for depreciation purposes?
 You can import the following schedules to recalculate the depreciation and service life of a fixed asset:

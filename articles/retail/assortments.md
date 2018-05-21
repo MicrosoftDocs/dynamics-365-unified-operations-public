@@ -5,7 +5,7 @@ title: Assortment management
 description: This topic explains the basic concepts of assortment management in Microsoft Dynamics 365 for Retail and provides implementation considerations for your project.
 author: jblucher
 manager: AnnBe
-ms.date: 3/12/2018
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application user
 # ms.devlang: 
-# ms.reviewer: josaw
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Application update 5
 ---
 
 # Assortment management
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Overview
 Microsoft Dynamics 365 for Retail provides *assortments* that let you manage product availability across channels. Assortments determine which products are available at specific stores and during a specific period.
@@ -40,25 +40,25 @@ The overall product mix of a channel is determined by the published assortments 
 ### Basic assortment setup
 In the following example, a unique assortment is configured for each store. In this case, only product 1 is available at store 1, and only product 2 is available at store 2.
 
-![Each product is available at one store](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "Each product is available at one store")
+![Each product is available at one store](./media/Managing-assortments-figure1.png)
 
 To make product 2 available at store 1, you can add the product to assortment 1.
 
-![Product 2 added to assortment 1](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure2.png?raw=true "Product 2 added to assortment 1")
+![Product 2 added to assortment 1](./media/Managing-assortments-figure2.png)
 
 Alternatively, you can add store 1 to assortment 2.
 
-![Store 1 added to assortment 2](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure3.png?raw=true "Store 1 added to assortment 2")
+![Store 1 added to assortment 2](./media/Managing-assortments-figure3.png)
 
 ### Organization hierarchies
 In situations where multiple channels share the same product assortments, you can configure the assortments by using the Retail assortment organization hierarchy. When nodes from this hierarchy are added, all channels in that node and its child nodes will be included.
 
-![Organization hierarchy](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure4.png?raw=true "Organization hierarchy")
+![Organization hierarchy](./media/Managing-assortments-figure4.png)
 
 ### Product categories
 Similarly, on the product side, you can include groups of products by using product category hierarchies. You can configure assortments by including one or more category hierarchy nodes. In this case, the assortment will include all products in that category node and its child nodes.
 
-![Product categories](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure5.png?raw=true "Product categories")
+![Product categories](./media/Managing-assortments-figure5.png)
 
 ### Excluded products or categories
 In addition to including products and categories in assortments, you can use the Exclude option to define specific products or categories that should be excluded from assortments. In the following example, you want to include all the products in a specific category, except product 2. In this case, you don't have to define the assortment product by product or create additional category nodes. Instead, you can just include the category but exclude the product.
@@ -66,7 +66,7 @@ In addition to including products and categories in assortments, you can use the
 > [!NOTE]
 > If a product is both included and excluded in one or more assortments by definition, the product will always be considered excluded.
 
-![Excluded product](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure6.png?raw=true "Excluded product")
+![Excluded product](./media/Managing-assortments-figure6.png)
 
 ### Global and released products
 Assortments are defined at a global level and can contain channels from multiple legal entities. The products and categories that are included in assortments are also shared across legal entities. However, a product must be released before it can actually be sold, ordered, counted, or received in the channel (for example, in the point of sale \[POS\]). Therefore, although two stores in different legal entities can share an assortment that contains the same products, the products are available only if they have been released to those legal entities.

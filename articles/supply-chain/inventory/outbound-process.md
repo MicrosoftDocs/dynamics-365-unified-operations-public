@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-02-28
 
 # Outbound process
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the outbound process in Inventory management.
 

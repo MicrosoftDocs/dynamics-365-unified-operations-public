@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Add a certification type to a vendor in the public sector
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 You can create and assign to vendors any type of certification that they may hold. This procedure was created using the PSUS demo company data in the public sector partition.
 

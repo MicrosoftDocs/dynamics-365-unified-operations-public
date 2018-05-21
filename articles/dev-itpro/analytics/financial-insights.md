@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 7.3
 
 # Financial Insights
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **Financial Insights** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements. Power BI is embedded in Microsoft Dynamics 365 Finance and Operations.
 The focus of **Financial Insights** is analytical reporting. Personas across an organization can view, research, understand, and act. 
@@ -114,20 +114,20 @@ Although **Financial insights** contains financial statements, it isn’t a repl
 
 The following comparison chart will help differentiate the two options:
 
-|                                         | **Financial Reporting**                            | **Financial Insights**             |
-|-----------------------------------------|----------------------------------------------------|---------- -------------------------|
-| **Edit default reports**                | Yes                                                | No                                 |
-| **Create new reports**                  | Yes                                                | No                                 |
-| **Print reports**                       | Yes                                                | No                                 |
-| **Export to Excel**                     | Yes          | Limited Exports raw data to Excel, not a formatted report       |
-| **Support reporting hierarchy/Organization hierarchy**   | Yes                               | No                                 |
-| **Report on subledger data**       | Yes Limited to only vendor, customer    | Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc.  |
-| **Reporting Currency**      | Yes Accounting currency and translate to reporting currency       | No Accounting currency only      |
-| **Security**                | Yes Adheres to Finance and Operations and reporting tree security | Limited View reports for all companies (regardless of Finance and Operations security) or only active company |
-| **Support different Chart of accounts and fiscal years** | Yes                   | No                   |
-| **report on external data**                              | No                   | No                                   |
-| **Support consolidations**                               | Yes                          | Limited Can report on multiple companies but use accounting currency only                                     |
 
+|                                                                       |               <strong>Financial Reporting</strong>                |                                      <strong>Financial Insights</strong>                                      |
+|-----------------------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+|                 <strong>Edit default reports</strong>                 |                                Yes                                |                                                      No                                                       |
+|                  <strong>Create new reports</strong>                  |                                Yes                                |                                                      No                                                       |
+|                    <strong>Print reports</strong>                     |                                Yes                                |                                                      No                                                       |
+|                   <strong>Export to Excel</strong>                    |                                Yes                                |                           Limited Exports raw data to Excel, not a formatted report                           |
+|  <strong>Support reporting hierarchy/Organization hierarchy</strong>  |                                Yes                                |                                                      No                                                       |
+|               <strong>Report on subledger data</strong>               |               Yes Limited to only vendor, customer                |                 Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc.                 |
+|                  <strong>Reporting Currency</strong>                  |    Yes Accounting currency and translate to reporting currency    |                                          No Accounting currency only                                          |
+|                       <strong>Security</strong>                       | Yes Adheres to Finance and Operations and reporting tree security | Limited View reports for all companies (regardless of Finance and Operations security) or only active company |
+| <strong>Support different Chart of accounts and fiscal years</strong> |                                Yes                                |                                                      No                                                       |
+|               <strong>report on external data</strong>                |                                No                                 |                                                      No                                                       |
+|                <strong>Support consolidations</strong>                |                                Yes                                |                   Limited Can report on multiple companies but use accounting currency only                   |
 
 In addition to the user interface in the original **CFO overview** workspace, new KPIs, charts, and financial statements are now available. The following financial statements are available:
 

@@ -69,3 +69,11 @@ In Finance and Operations, the **Field Service product type** value on the **Sel
 - **Inventory:** Product type = Product and Item model group, Stocked product = True
 - **NonInventory:** Product type = Product and Item model group, Stocked product = False
 - **Service:** Product type = Service
+
+## Template mapping in Data integration
+
+The following illustrations show the template mapping in Data integration.
+
+### Field Service Products (Fin and Ops to Field Service): Products - Products
+
+[![Template mapping in Data integration](./media/FSProduct.png)](./media/FSProduct.png)

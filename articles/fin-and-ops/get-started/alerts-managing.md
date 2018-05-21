@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Platform update 15
 ---
 
 # Batch processing for alerts
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!include [banner](../includes/pre-release.md)]
 
 Alerts are processed by the batch processing functionality in Microsoft Dynamics 365 for Finance and Operations. You must set up batch processing before alerts can be delivered.
 
