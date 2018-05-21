@@ -305,6 +305,12 @@ DEALLOCATE retail_ftx;
 -- End Refresh Retail FullText Catalogs
 ```
 
+### Enable change tracking
+If change tracking was enabled in the source database, ensure to enable change tracking again in the newly provisioned database in the target environment using the ALTER DATABASE command.
+
+To ensure current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management. This can be done on any entity as this is needed to trigger the refresh of store procedure.
+
+
 ### Re-provision the target environment
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]

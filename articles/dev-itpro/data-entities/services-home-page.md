@@ -93,7 +93,8 @@ Before any clients can communicate with the services, they must be registered i
 4. Enter a name that identifies the external application that you're registering. For an application that will authenticate by using a shared secret, select **Web app / API**. In this context, the sign-on URL doesn't matter. Therefore, use **localhost**.
 5. Select the new application, and copy the application ID. You will require the application ID later to request an Azure AD authentication token. Select **Required permissions**.
 6. Select **Add**, and then select **Select an API**.
-7. Select **Microsoft Dynamics ERP**.
+7. Select **Microsoft Dynamics ERP (Microsoft.ERP)**. If you search **Microsoft Dynamics ERP** in the search field within **Select an API** it might appear to be greyed out. In that case, make sure you look for the full name as shown above.
+
 8. Under **Delegated permissions**, you must select, at a minimum, the following options:
 
     - Access Dynamics AX Custom Service
