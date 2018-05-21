@@ -852,6 +852,7 @@
 ##### [Split periods in periodic journals](../financials/localizations/emea-create-post-periodic-journals.md)
 ##### [Update how amounts are displayed on reports and documents](../financials/localizations/emea-amount-printing-forms.md)
 ##### [VAT statement](../financials/localizations/emea-cze-vat-statement-details.md)
+##### [Year-end close](../financials/localizations/emea-cze-hun-year-end.md)
 
 #### Denmark
 ##### [Assign a payment slip format to a customer account](../financials/localizations/tasks/assign-payment-slip-format-customer-account.md)
@@ -915,6 +916,7 @@
 ##### [Low-cost fixed assets](../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 ##### [Move a fixed asset to inventory](../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
 ##### [Tax reimbursement documents](../financials/localizations/emea-hun-tax-reimbursement-docs.md)
+##### [Year-end close](../financials/localizations/emea-cze-hun-year-end.md)
 
 #### Iceland
 ##### [Create a vendor account and attach the invoice declaration category](../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md)
