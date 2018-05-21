@@ -117,7 +117,7 @@ The vendor transactions for voucher **V-00001** are imported from the SharePoint
 ## Prepare an Excel file for import
 1. Open the Excel file that you previously used. In row 3, add information for a vendor that doesn't exist in the application.
 2. Upload the updated Excel file that contains vendors transactions to the **Files import source (main)** SharePoint folder.
-3. In Finance and Operations, open the ER configurations tree, and expand the list of components of the ER model that your ER format uses for data import.
+3. In Finance and Operations, open the ER configurations tree, and expand the list of ER model components.
 4. Select **Model mapping name** to update the model mapping so that the incorrect vendor code is considered an error during the data import process.
 5. Select **Designer**.
 6. On the **Validations** tab, you must change the post-validation action for the validation rule that was configured to evaluate whether the vendor account that is imported exists in the application. Update the value of the **Post-validation action** field to **Stop execution**, save your changes, and close the page.
