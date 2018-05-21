@@ -5,7 +5,7 @@ title: Configure data import from SharePoint
 description: This topic explains how to import data from Microsoft SharePoint.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/11/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,26 +33,25 @@ ms.dyn365.ops.version: Release 8.0
 
 [!include[banner](../includes/banner.md)]
 
-To import data by using the Electronic reporting (ER) framework, you must configure an ER format that supports the import and then run a model mapping destination that uses that format as a data source. To import data from Microsoft SharePoint, you must manually locate the file that you want to import. You can use ER configurations to set up data import from files that are stored in SharePoint folders. This topic explains how to complete the import from SharePoint to the application. The examples use vendor transactions as business data.
+To import data by using the Electronic reporting (ER) framework, you must configure an ER format that supports the import and then run a model mapping destination that uses that format as a data source. To import data from Microsoft SharePoint, you must navigate to the file that you want to import. You can use ER configurations to set up data import from files that are stored in SharePoint folders. This topic explains how to complete the import from SharePoint to Microsoft Dynamics 365 for Finance and Operations. The examples use vendor transactions as business data.
 
 ## Prerequisites
 To complete the examples in this topic, you must have the following access:
 
-- Access to Microsoft Dynamics 365 for Finance and Operations for one of the following roles:
+- Access to Finance and Operations for one of the following roles:
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
     - System administrator
 
 - Access to the instance of Microsoft SharePoint Server that is configured for use with Finance and Operations
+- An ER format and model configurations for 1099 payments
 
-## Create an ER configuration
+### Create an ER configuration
 Play the **ER Use formats to import data from an external Excel file** task guides, which are part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. These task guides walk you through the process of designing and using ER configurations to interactively import vendor transactions from external files in Microsoft Excel format. For more information, see [Parse incoming documents in Microsoft Excel](parse-incoming-documents-excel.md).
 
-When you've finished playing the task guides, you will have the prerequisites for this topic. Those prerequisites include the ER model and format configurations that use the 1099 Payments model and format. These prerequisites are used to import vendor transactions from an Excel file.
-
 > [!NOTE]
-> The format for importing vendor transactions is the model mapping default. Therefore, if you run a model mapping of the 1099 Payments model, and that model mapping is of the **To destination** type, the model mapping runs this format to import data from external files. It then uses that data to update application tables.
+> The format for importing vendor transactions is the default model mapping. Therefore, if you run a model mapping of the 1099 Payments model, and that model mapping is of the **To destination** type, the model mapping runs this format to import data from external files. It then uses that data to update application tables.
 
 ## Configure Document management parameters
 1. On the **Document management parameters** page, configure access to the SharePoint Server instance that will be used by the company that you're currently signed in to. In this example, the company is USMF.
@@ -92,8 +91,8 @@ You can also open the **File states for the sources** page by selecting **Organi
 2. In Finance and Operations, on the **File states for the sources** page, select **Refresh** to refresh the page.
 
 ## Import data from SharePoint files
-1. Open the ER configurations tree, and expand the list of components of the ER model that your ER format uses for data import.
-2. Select the link for the name of the model mapping.
+1. Open the ER configurations tree, and expand the list of ER model components.
+2. Select the name of the model mapping.
 3. Select **Run** to run the selected model mapping. Because you configured file sources for the ER format, you can change the setting of the **File source** option as you require. If you keep the setting of this option, the .xslx files are imported from the configured sources (the SharePoint folders, in this example).
 
     In this example, you're importing only one file. However, if there are multiple files, they are imported in the order in which they were added to the SharePoint folder.
