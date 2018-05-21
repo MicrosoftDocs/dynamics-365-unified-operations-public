@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Retail Store Scale Unit overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the Retail Store Scale Unit and when to use it.
 

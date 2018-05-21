@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reduce balance depreciation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article gives an overview of the Reducing balance method of depreciation.
 

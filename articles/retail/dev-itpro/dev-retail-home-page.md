@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Microsoft Dynamics 365 for Retail for IT pros and developers
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This page lists the resources that are available for IT pros and developers who support Retail.
 

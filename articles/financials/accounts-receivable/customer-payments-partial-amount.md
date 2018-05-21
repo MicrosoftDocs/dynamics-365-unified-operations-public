@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customer payments for a partial amount
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Sometimes, customers make a payment that is less than the amount of an invoice. This article describes the various options for handling this situation. The options that are available to you depend on your business requirements and configuration.
 

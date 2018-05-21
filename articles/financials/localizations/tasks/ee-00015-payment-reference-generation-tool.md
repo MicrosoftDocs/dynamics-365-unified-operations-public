@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Payment reference generation tool (Eastern Europe)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through generating the payment references. This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Estonia. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 

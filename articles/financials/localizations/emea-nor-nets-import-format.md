@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Nets import format
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about importing payment information in the Nets format.
 

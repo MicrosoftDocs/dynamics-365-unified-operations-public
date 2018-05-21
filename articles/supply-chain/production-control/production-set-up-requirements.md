@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Production setup requirements
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about setup requirements before you can work with Production control. 
 

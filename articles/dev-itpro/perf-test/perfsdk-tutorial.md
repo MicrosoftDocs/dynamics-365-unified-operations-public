@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Performance SDK and multiuser testing via Visual Studio Online
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the Performance software development kit (SDK) and shows how to do multiuser testing via Microsoft Visual Studio Online. It also describes how to convert a scenario that you recorded in Task recorder to a single-user test and then a multiuser test.
 
@@ -47,7 +47,7 @@ This topic describes the Performance software development kit (SDK) and shows ho
 
 ## Create a single-user C# test from an XML recording
 
-To view a video that shows how to create a single-user test, go to [https://mix.office.com/watch/qtdlasy2rcf3](https://mix.office.com/watch/qtdlasy2rcf3).
+<!--To view a video that shows how to create a single-user test, go to [https://mix.office.com/watch/qtdlasy2rcf3](https://mix.office.com/watch/qtdlasy2rcf3).-->
 
 1. Use Task recorder to create a recording of the scenario that you want to test.
 2. Start Microsoft Visual Studio as administrator, and build the **PerfSDKSample** project. This project is in the **PerfSDK** folder. If you've already built the project, skip this step.

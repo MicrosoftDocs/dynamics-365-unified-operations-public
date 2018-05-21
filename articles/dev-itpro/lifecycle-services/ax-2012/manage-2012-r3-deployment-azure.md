@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Manage your Dynamics AX 2012 R3 deployment on Azure
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ## How do I log on to a virtual machine?
 

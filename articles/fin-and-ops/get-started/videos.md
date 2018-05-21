@@ -5,7 +5,7 @@ title: Videos for Dynamics 365 for Finance and Operations
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Dynamics 365 for Finance and Operations that are available on YouTube and other sites.
 author: josaw1
 manager: AnnBe
-ms.date: 04/26/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
 # Videos for Dynamics 365 for Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This page lists Microsoft-created "how-to" and Tech talk videos relating to Dynamics 365 for Finance and Operations that are available on YouTube and other sites.
 
@@ -43,6 +43,7 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 
 #### Data integration
 - [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg) 
+- [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU&t=2s)
 
 #### Data management
 - [Use data entities and data packages in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
@@ -58,8 +59,8 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 - [Embed PowerApps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 
 #### Financial management
+- [Find the version of Report designer](https://www.youtube.com/embed/icfA5Q3kp4w)
 - [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
-- [Find the version of report designer](https://www.youtube.com/embed/icfA5Q3kp4w)
 - [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 - [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
 
@@ -85,6 +86,9 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 
 #### Office integration
 - [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
+
+#### Organization administration
+- [Document management](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
 
 #### Procurement and sourcing
 - [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
@@ -129,7 +133,7 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 - [Integration (VIR806PAL)](https://infopedia.eventbuilder.com/event?eventid=y0w0k9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Integration between Dynamics 365 for Sales and Dynamics 365 for Finance & Operations via CDS (DYN340PAL)](https://infopedia.eventbuilder.com/event?eventid=d8s3b6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Integration framework within Dynamics 365 for Finance & Operations (DYN385PAL)](https://infopedia.eventbuilder.com/event?eventid=y4y2v9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Task automation framework for Data management (DYN447PAL2)](https://infopedia.eventbuilder.com/event?eventid=e8y7t2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Task automation framework for Data management (DYN447PAL2)](https://youtu.be/KqnXjNpR4AY)
 
 #### Intelligence
 - [Analytics & reporting options, printing, and the Document Routing Agent (DYN442PAL)](https://infopedia.eventbuilder.com/event?eventid=r6d9a6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)

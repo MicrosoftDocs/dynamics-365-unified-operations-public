@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Budget planning integration with other modules
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Budget plans can be generated from several, different resources. The basic elements of the periodic process is the same for all resources. 
 

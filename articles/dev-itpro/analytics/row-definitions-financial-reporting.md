@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Row definitions in financial report designer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A row definition is a report component, or building block, that specifies the contents of each row on a financial report. A row definition can be combined with column definitions, reporting tree definitions, and report definitions to create a building block group that can be used by multiple companies.
 

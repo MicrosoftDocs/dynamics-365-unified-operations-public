@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Microsoft Dynamics 365 Translation Service - User interface file translation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about how to translate a user interface (UI) file for Microsoft Dynamics products or solutions.
 

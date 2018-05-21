@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 ---
 
 # Vendor request configurations
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 To complete a vendor request, a vendor contact person must complete the prospective vendor registration wizard.
 

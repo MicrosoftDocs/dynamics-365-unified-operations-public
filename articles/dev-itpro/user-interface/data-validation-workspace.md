@@ -29,7 +29,7 @@ ms.author: bking
 
 # Data validation workspace
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the **Data validation checklist workspace** and
 the associated configuration.

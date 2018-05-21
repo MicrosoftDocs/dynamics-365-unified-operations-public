@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Post online sales and payments
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions. This procedure uses the USRT company in demo data.
 

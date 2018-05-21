@@ -31,7 +31,7 @@ ms.dyn365.ops.version: July 2017 update
 # Reverse charge VAT
 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 This topic describes a generic approach for setting up reverse charge value-added tax (VAT) for Saudi Arabia and European countries.

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Choose between Modern POS and Cloud POS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic gives implementers additional background, tips, and guidance for factors that they should consider when they deploy Microsoft Dynamics 365 for Retail. By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.
 

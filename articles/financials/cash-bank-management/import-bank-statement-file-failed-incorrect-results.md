@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Bank statement file import troubleshooting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
 

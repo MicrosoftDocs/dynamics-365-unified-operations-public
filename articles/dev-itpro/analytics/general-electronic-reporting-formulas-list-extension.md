@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Extend the list of Electronic reporting functions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Various types of functions are supported in Electronic reporting expressions for data transformation -  text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions). In addition to built-in functions, Electronic reporting lets you extend the list of available functions. This article includes an overview of key tasks that you must complete to introduce a new function.
 

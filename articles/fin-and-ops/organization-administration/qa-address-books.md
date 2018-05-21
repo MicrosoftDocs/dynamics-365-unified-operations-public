@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Address books FAQ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 How do I check for duplicate records?
 -------------------------------------

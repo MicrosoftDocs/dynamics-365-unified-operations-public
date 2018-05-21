@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Generate a statistical baseline forecast
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the parameters and filters that are used in the calculation of demand forecasting. 
 

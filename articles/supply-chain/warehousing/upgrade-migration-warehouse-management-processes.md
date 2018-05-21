@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Upgrade warehouse management from Microsoft Dynamics AX 2012 to Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the process of upgrading from Microsoft Dynamics AX 2012 R3, running the WMSII module, to Microsoft Dynamics 365 for Finance and Operations.
 

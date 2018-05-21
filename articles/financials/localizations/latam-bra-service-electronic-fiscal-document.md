@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Electronic fiscal document for services
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the service electronic fiscal document.
 

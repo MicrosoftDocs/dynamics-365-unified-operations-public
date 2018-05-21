@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Sales complementary fiscal documents for Brazil
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes sales complementary invoice for the Brazilian localization.
 

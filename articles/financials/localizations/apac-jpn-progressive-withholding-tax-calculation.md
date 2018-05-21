@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Progressive withholding tax for Japan
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about progressive withholding tax in Japan. Per the legal requirement in Japan, the tax percentage changes, depending on the interval in proportion to the invoice amount. The tax ratio also changes, based on the payment amount.
 

@@ -32,7 +32,7 @@ ms.search.validFrom: 2017-12-31
 
 # Product lifecycle state 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A product lifecycle state documents the lifecycle state of a released product or product variant. Product lifecycle states are defined 
 by the user, typically a product manager or a product master data manager. Specific business processes, such as master planning, can be 

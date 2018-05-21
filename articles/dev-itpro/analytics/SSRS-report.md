@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # SQL Server Reporting Services reports
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available in Finance and Operations.
 

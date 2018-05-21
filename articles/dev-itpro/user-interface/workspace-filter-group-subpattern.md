@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Workspace Page Filter Group subpattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Workspace Page Filter Group subpattern. This subpattern is used as part of the Operational Workspace pattern when a workspace must expose a single workspace-wide filter on the form.
 

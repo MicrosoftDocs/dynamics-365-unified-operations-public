@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure a one-box development environment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes recommended configurations of your one-box developer environment.
 

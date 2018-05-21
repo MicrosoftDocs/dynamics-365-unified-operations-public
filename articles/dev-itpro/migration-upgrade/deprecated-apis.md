@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Deprecated APIs in Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This document provides the list of deprecated APIs and migration guidance for some of the deprecated APIs.
 

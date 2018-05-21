@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # HyperLinkMetadata Type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Hyperlink metadata type.
 

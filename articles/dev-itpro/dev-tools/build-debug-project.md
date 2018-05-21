@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build and debug a project
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In this tutorial, you’ll learn about using the tools in Visual Studio to analyze and debug code in the Fleet Management application. You’ll go through a simple developer scenario in which you will set breakpoints, modify some code, and build the result. 
 

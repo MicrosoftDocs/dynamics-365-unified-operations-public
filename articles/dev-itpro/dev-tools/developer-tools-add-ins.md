@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Tools add-ins for Visual Studio
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic reviews the Add-ins infrastructure that has been added to Microsoft Visual Studio, so that developers can more easily add tools for development.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Deploy a payment connector
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Overview
 --------
@@ -72,6 +72,7 @@ Before you start, you must have these items:
 A Retail deployable package is an asset that can be consumed by the LCS deployment service. When you package a payment connector and other extensions as a deployable package, you can either install the payment connector as a customization to an existing solution or slipstream it as part of a new deployment. The following types of packages can contain payment connectors:
 
 -   **AOSPaymentPackage** – This type of package deploys one or more payment connectors to AOS. (**The AOS payment package is obsolete and is no longer supported.**)
+
 -   **RetailDeployablePackage** – This type of package deploys one or more payment connectors to the following components:
 
     -  Retail Server, Commerce runtime, and database scripts

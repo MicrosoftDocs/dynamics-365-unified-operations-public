@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Accessibility in forms, products, and controls
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
 

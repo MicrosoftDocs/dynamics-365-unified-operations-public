@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Packing material fee calculation for Austria
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about packing material rates and fees in Austria.
 

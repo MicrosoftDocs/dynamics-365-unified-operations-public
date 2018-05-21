@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Regulatory watch and regulatory update communication
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must undertake their regulatory watch by taking advantage of localization tools in Microsoft Dynamics Lifecycle Services (LCS).
 

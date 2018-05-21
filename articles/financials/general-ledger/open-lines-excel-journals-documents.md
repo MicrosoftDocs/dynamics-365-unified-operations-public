@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Publish journal lines and documents from Excel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to enter and publish lines for general journals from Microsoft Excel. It includes information about the various templates that you can use, depending on the type of transactions that you're entering.
 

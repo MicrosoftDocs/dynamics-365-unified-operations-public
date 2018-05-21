@@ -32,11 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Develop an entity for data migration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.
 
-This tutorial is broken out into two sections and four exercises. In the first section, you will build a **Project Category** entity in Visual Studio. You will then use this entity to export data. In the second section, you will use **Customer Groups** and **Customers** entities to import multiple sets of files by using the new Data Import/Export Framework. **Note:** This tutorial is designed to be slightly more challenging than [Building and consuming data entities](build-consuming-data-entities.md). Instead of providing a step-by-step guide, it has scenario exercises and describes the expected outcomes. The assumption is that you've already familiarized yourself with entities and the Data Import/Export Framework through Microsoft Office Mix videos.
+This tutorial is broken out into two sections and four exercises. In the first section, you will build a **Project Category** entity in Visual Studio. You will then use this entity to export data. In the second section, you will use **Customer Groups** and **Customers** entities to import multiple sets of files by using the new Data Import/Export Framework. **Note:** This tutorial is designed to be slightly more challenging than [Building and consuming data entities](build-consuming-data-entities.md). Instead of providing a step-by-step guide, it has scenario exercises and describes the expected outcomes. The assumption is that you've already familiarized yourself with entities.
 
 ## Prerequisites
 This tutorial requires that you access the environment by using Remote Desktop. You must be provisioned as an administrator on the instance.

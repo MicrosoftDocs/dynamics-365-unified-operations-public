@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # User interface development home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic contains links to topics about developing user interface elements.
 
@@ -51,7 +51,7 @@ The form metamodel continues to be used to define controls and application logic
 
 ## Forms
 -   [Navigation concepts](page-navigation.md)
--   [The new user experience](https://mix.office.com/watch/1ohsrrpsd02e1)
+<!---   [The new user experience](https://mix.office.com/watch/1ohsrrpsd02e1)-->
 -   [Layout](page-layout.md)
 -   [Symbol font](symbol-font.md)
 -   [Testing forms with custom patterns](testing-forms-custom-patterns.md)

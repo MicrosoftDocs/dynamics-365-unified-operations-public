@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Budgeting in the public sector
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This overview introduces you to the budgeting functionality that is available for public sector. This includes budget analysis, preliminary budgets and apportionments, and posting definitions.
 

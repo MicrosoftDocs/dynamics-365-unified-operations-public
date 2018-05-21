@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Ledger allocation rules
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about ledger allocation rules. It describes the various components of these allocation rules and the allocation methods that can be used for them.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Embedded Power BI in workspaces
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Finance and Operations now delivers rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
 

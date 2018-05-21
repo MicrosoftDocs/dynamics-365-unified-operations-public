@@ -76,8 +76,6 @@ You can use the **Preview Features** setting in the Microsoft Dynamics 365 for T
     > Jobs that are posted are visible only to customers who subscribe to one or more LinkedIn job listing products. Otherwise, customers see a job only if they explicitly search for it. There is a delay when jobs are posted to LinkedIn. A job might take up to a few hours to appear after it's posted from Attract.
 
 - **Candidate apply** – Both internal and external candidates can now apply directly from the job page on the career site.
-- **Assessments** – As part of the configurable hiring process, either for a specific a job or when a job template is used, users now have access to a new **Assessment** activity type. They can then use the Project: "Gauge" app in Talent to build basic assessments that they can send to candidates. Project: "Gauge" is also in public preview. Additional providers will be added in the future.
-- **Project: "Gauge"** – Project: "Gauge" is an app in Talent that lets users create simple assessments or surveys.
 - **Offer management** – Users can now create offer letters from templates that include placeholders. As candidates advance to the Offer stage, recruiters and hiring managers can use the Offer tool to prepare a candidate's formal offer via templates, send the offer for internal approval, and finally send the offer to the candidate for signature. Many new capabilities will be added to the Offer tool over time, and the preview feature will be updated with these capabilities as we are ready to release them to preview.
 
 ### Core HR
@@ -94,7 +92,7 @@ Regardless of whether the feedback is positive or negative, we want to hear from
     - [Attract Ideas](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
     - [Core HR](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
 
-Don't include personal data (any information that could identify you) in your feedback or product review submissions. Information that is collected might be analyzed further, and it won't be used to answer requests under applicable privacy laws. Personal data that is collected separately under these programs is subject to the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement).
+Don't include personal data (any information that could identify you) in your feedback or product review submissions. Information that is collected might be analyzed further, and it won't be used to answer requests under applicable privacy laws. Personal data that is collected separately under these programs is subject to the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 > [!TIP]
 > Bookmark this topic, and check back often to stay up to date about new preview features as we release them.

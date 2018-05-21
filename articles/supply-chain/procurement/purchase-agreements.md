@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Purchase agreements
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about purchase agreements. A purchase agreement is a contract that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time. In exchange for this commitment, the buyer receives special prices and discounts. 
 

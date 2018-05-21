@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Resource capabilities
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about resource capabilities. A capability is the ability of an operations resource to perform a particular activity. The article explains how capabilities and related concepts, such as proficiency level and priority, are used to select appropriate resources for an activity.
 

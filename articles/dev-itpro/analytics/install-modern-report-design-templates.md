@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Install report design templates
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible branding in the header and footer.
 

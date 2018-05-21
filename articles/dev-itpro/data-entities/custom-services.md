@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Custom services for Microsoft Dynamics 365 for Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can develop custom services for Microsoft Dynamics 365 for Finance and Operations. When a developer writes a custom service under a service group, the service group is always deployed on two endpoints:
 -   SOAP endpoint 
@@ -56,7 +56,9 @@ The SOAP endpoint is at `https://host_uri/soap/services/service_group_name`.
 For more information, see:
 -   [Using Custom Services \[AX 2012\] (TechNet)](http://technet.microsoft.com/en-us/library/hh509052.aspx)
 -   [Walkthrough: Exposing an X++ Class as a Data Contract (TechNet)](http://technet.microsoft.com/en-us/library/gg844225.aspx)
--   [Custom services Office Mix presentation](https://mix.office.com/watch/12e4fejbgj429). 
+
+<!--
+-   [Custom services Office Mix presentation](https://mix.office.com/watch/12e4fejbgj429). -->
 
 
 ### JSON-based Custom Service

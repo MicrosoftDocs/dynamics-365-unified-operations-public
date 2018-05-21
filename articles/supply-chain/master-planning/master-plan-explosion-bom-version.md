@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Explosion of a BOM version
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.
 

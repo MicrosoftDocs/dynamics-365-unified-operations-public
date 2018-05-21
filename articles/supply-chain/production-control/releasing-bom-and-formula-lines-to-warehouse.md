@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 # Release BOM and formula lines to the warehouse
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the process for releasing raw material for bill of materials (BOM) lines and formula lines to the warehouse. When you release a BOM or formula line to the warehouse, the system first determines whether material is already available at the production input location on the shop floor where the material will be consumed for the production process.
 

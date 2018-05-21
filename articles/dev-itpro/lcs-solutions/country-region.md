@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Localization and regulatory features
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations includes functionality for the country/regions documented in the [International product availability guide](http://download.microsoft.com/documents/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. 
 
@@ -109,22 +109,9 @@ The following sections list resources by country/region.
 -   [Tax payments](../../financials/localizations/latam-bra-tax-payments.md)
 -   [Taxes](../../financials/localizations/latam-bra-calculate-taxes.md)
 
-### China
--   [Bill of materials comparison](../../financials/localizations/apac-chn-bom-comparison.md)
--   [Chinese vouchers](../../financials/localizations/apac-chn-vouchers.md)
--   [Configure tax integration](../../financials/localizations/apac-chn-tax-integration.md)
-    -   [VAT customer invoices FAQ](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
-    -   [Depreciation methods fixed assets ](../../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md)
--   [Import the Chinese Golden Tax data entity](../../financials/localizations/apac-chn-import-golden-tax-data-entity.md)
--   [Monthly average cost model](../../financials/localizations/apac-chn-monthly-average-cost-model.md)
--   [Post inventory main accounts by site](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
--   [Display debit and credit amounts for ledger accounts](../../financials/localizations/apac-chn-negative-debits-credits.md)
-
+### [China](../../financials/localizations/china.md)
 ### [The Czech Republic](../../financials/localizations/czech-republic.md)
-
-### Estonia
--   [VAT statement details for Estonia](../../financials/localizations/emea-est-vat-statement-details.md)
--   [Fixed assets disposal](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+### [Estonia](../../financials/localizations/estonia.md)
 
 ### Europe
 - [Advance holders](../../financials/localizations/emea-advance-holders.md)

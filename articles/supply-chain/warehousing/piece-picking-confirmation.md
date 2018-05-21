@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Piece picking confirmation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device. For picks, you can confirm the quantity of work to be processed up to the quantity that is specified on work to be picked. For counting work, you can scan the inventory that you are counting and track the total amount.
 

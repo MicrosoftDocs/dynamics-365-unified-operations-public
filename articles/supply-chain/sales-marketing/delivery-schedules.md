@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Delivery schedules
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Delivery schedules allow you to track order line quantity when you are using multiple deliveries for a single sales order, sales quotation, or purchase order.
 

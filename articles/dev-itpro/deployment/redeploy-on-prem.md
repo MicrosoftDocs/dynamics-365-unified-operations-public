@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 12
 ---
 # Redeploy an on-premises environment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 At some point, you might have to redeploy your on-premises environment. This could be to apply a new platform update or because of changes or issues in your implementation. Before you delete the environment you are currently working with, you should save your configuration setting information to use when you redeploy. This topic describes how to save configuration settings and how to redeploy your environment. 
 

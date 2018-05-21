@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Warehouse Mobile Devices Portal (WMDP) for Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to enable the Warehouse Mobile Devices Portal for Microsoft Dynamics 365 for Finance and Operations. It also explains how to service and upgrade your environment.
 

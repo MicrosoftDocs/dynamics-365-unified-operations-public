@@ -32,7 +32,7 @@ ms.search.validFrom: 2017-03-31
 
 # Finance and Operations cloud platform monthly updates FAQ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides important information about the monthly updates of the Microsoft Dynamics 365 for Finance and Operations cloud platform.
 

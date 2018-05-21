@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Budget planning templates for Excel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to create Microsoft Excel templates that can be used with budget plans.
 

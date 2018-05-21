@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build an extensible control
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.
 

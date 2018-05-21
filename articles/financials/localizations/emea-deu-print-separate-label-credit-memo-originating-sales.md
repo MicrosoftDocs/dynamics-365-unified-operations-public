@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Print a separate label for credit memos that originate from sales
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to specify the label that appears on credit memos that originate from sales.
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Acquire a fixed asset with asset retirement obligations (Japan)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 For Japan, the asset retirement obligation (ARO) is discounted to present value, and added to the acquisition cost of the fixed asset. 
 

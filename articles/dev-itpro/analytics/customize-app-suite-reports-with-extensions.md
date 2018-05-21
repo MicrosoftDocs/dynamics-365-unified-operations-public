@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Customize App Suite reports using extensions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic discusses a series of scenarios for customizing App Suite reports.
 

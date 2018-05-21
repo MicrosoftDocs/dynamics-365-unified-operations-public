@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Vendor collaboration invoicing workspace
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
 

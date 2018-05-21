@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Propose and post accelerated depreciation (Japan)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 For Japan, you can propose an accelerated depreciation based on the data on confirmed accelerated depreciation documents. Note: The accelerated depreciation proposal will not propose ordinary depreciation. This procedure must be completed after you post ordinary depreciation.
 

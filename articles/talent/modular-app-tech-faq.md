@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Talent March 2018 update
 ---
 # Provision Microsoft Dynamics 365 for Talent Modular Apps
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Dynamics 365 for Talent includes core human resources capabilities and functionality that provide additional experiences such as Attract and Onboard. Such functionality may also be available for purchase as a standalone modular application through web-direct (for example, Dynamics 365 for Talent: Attract or Dynamics 365 for Talent: Onboard SKUs). There are some experience differences when purchasing full Talent versus the modular applications.  
 

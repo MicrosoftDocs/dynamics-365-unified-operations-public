@@ -32,7 +32,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Peripheral simulator for Retail
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The peripheral simulator for Retail is a utility that Microsoft provides as part of Microsoft Dynamics 365 for Retail and as a standalone utility. The utility has two primary components, a *virtual peripheral simulator* and a *point of sale (POS) simulator*.
 
@@ -255,7 +255,7 @@ The POS simulator supports the following devices:
 - Payment terminal
 
     > [!NOTE]
-    > A payment terminal requires that a payment connector be present. For more information, see [Implementing a payment connector and payment device (white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx).
+    > A payment terminal requires that a payment connector be present. For more information, see [Payment integration with a payment terminal](end-to-end-payment-extension.md).
 
 Below the list of supported devices, there is a **Settings** tab. You can use the **Settings** tab to specify how the POS simulator should communicate with the devices that are being tested. If **Runtime** is selected, the method that the POS simulator uses to communicate with the device resembles the method that MPOS that has a built-in hardware station communicates. If **Win32** is selected, the POS simulator communicates directly with the device. This communication method resembles the method that a standalone hardware station communicates.
 

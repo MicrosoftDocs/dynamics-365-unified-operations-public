@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Preliminary budgets and apportionments in the public sector
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic covers creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget. 
 

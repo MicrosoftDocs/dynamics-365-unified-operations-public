@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service endpoints
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the service endpoints that are available in Microsoft Dynamics 365 for Finance and Operations. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012. 
 

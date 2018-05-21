@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Company directory mobile workspace
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the **Company directory** mobile workspace. This workspace lets users view and contact other employees in their organization.
 

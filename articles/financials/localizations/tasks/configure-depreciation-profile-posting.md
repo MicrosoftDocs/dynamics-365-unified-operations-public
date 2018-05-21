@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Configure depreciation profile and posting profile for additional depreciation (Japan)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Use this procedure to learn how to configure a depreciation profile and a posting profile for special depreciation.
 

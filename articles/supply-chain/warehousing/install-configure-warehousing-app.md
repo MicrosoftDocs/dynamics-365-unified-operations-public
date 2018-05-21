@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Install and configure Microsoft Dynamics 365 for Finance and Operations &#8211; Warehousing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > 

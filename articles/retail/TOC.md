@@ -4,8 +4,8 @@
 ## [What's new or changed](get-started/whats-new.md)
 ## [Before you buy Dynamics 365 for Retail](get-started/before-you-buy.md)
 ## [Sign up for a preview subscription](../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json)
-## [Deploy a demo environment](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json)
-## [Deployment options](dev-itpro/choose-deployment.md)
+## [Deploy a demo environment](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json) 
+## [Deployment options](dev-itpro/choose-deployment.md)  
 
 
 # Payments
@@ -30,11 +30,11 @@
 # Call center
 ## [Call center overview](call-center-functionality.md)
 ## [Call center catalogs](call-center-catalogs.md)
-## [Create a call center catalog](create-call-center-catalogs.md)
+## [Configure delivery modes and charges](configure-call-center-delivery.md) 
 ## [Set up fraud alerts](set-up-fraud-alerts.md)
 ## [Set up a call center](set-up-order-processing-options.md)
 ## [Set up a continuity program for a call center](set-up-continuity-program.md)
-## [Order holds](work-with-order-holds.md)
+## [Call center order holds](work-with-order-holds.md)
 ## [Payment options](work-with-payments.md)
 
 # Channel setup and management

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Set up and generate positive pay files
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to set up positive pay and generate positive pay files. 
 

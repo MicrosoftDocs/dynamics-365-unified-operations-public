@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Patch SQL Server Reporting Services in a one-box environment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The following procedure is for one-box development environments only.
 

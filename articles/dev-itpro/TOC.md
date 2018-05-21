@@ -12,6 +12,7 @@
 ## [Deploy and access a development environment](dev-tools/access-instances.md)
 ### [Configure developer VM](dev-tools/configure-developer-vm.md)
 ### [Create a new user on a development machine](dev-tools/enable-development-machine.md)
+### [Development and build VMs that don't allow administrator access FAQ](sysadmin/VMs-no-admin-access.md)
 ### [Rename a local environment to enable access to Visual Studio Team Services](migration-upgrade/vso-machine-renaming.md)
 ### [Development system requirements](dev-tools/development-system-requirements.md)
 ## [Version control, metadata search, and navigation](dev-tools/version-control-metadata-navigation.md)
@@ -125,6 +126,7 @@
 #### [Class extensions](extensibility/class-extensions.md)
 #### [Class extension: Method wrapping and Chain of Command](extensibility/method-wrapping-coc.md)
 #### [Naming guidelines](extensibility/naming-guidelines-extensions.md)
+#### [Relax model restrictions to enable the refactoring of over-layering into extensions](extensibility/refactoring-over-layering.md)
 ### How do I?
 #### [Add an enum value](extensibility/add-enum-value.md)
 #### [Modify an extended data type](extensibility/modify-edt.md) 
@@ -450,6 +452,7 @@
 ### [Manage access to sensitive data](gdpr/gdpr-auditing-sensitive-data.md)
 ### [Respond to a request for personal data using Talent](gdpr/respond-dsr-request-talent.md)
 ### [Respond to a request for personal data using Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
+### [GDPR data requests for LCS](gdpr/gdpr-lcs.md)
 
 ## [Data validation workspace](user-interface/data-validation-workspace.md)
 
@@ -589,7 +592,6 @@
 
 # [System administration](sysadmin/system-administration-home-page.md)
 ## [Platform monthly updates FAQ](sysadmin/faq-platform-monthly-updates.md)
-## [Development and build VMs that don't allow administrator access FAQ](sysadmin/VMs-no-admin-access.md)
 ## [Add links to your organization's legal terms and privacy statement](sysadmin/legal-terms-privacy-statement.md)
 ## [License codes and configuration keys report](sysadmin/license-codes-configuration-keys-report.md)
 ## [Cross-company data sharing](sysadmin/cross-company-data-sharing.md)

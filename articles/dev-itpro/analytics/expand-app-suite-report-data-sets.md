@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Expand Application Suite report data sets
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. 
 

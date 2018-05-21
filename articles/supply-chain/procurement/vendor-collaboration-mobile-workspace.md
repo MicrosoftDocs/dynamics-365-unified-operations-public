@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Vendor collaboration mobile workspace
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the **Vendor collaboration** mobile workspace. This workspace helps your vendors stay up to date about the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts.
 

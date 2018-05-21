@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Maintain employee injury and illness information
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 It is recommended to complete the 'Setup injury and illness' task guide first, as some of the setup information is used here. 
 

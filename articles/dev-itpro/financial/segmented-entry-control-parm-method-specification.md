@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Segmented entry control parm methods
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Describes the parm methods that can be set in code on an instance of a Segmented Entry control.
 

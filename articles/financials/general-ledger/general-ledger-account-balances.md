@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # General ledger account balances
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains two ways to view general ledger account balances -  the Trial balance list page and financial reports. It also discusses how to update dimension set balances.
 

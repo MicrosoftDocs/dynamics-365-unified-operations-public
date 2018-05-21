@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Petty cash for Eastern Europe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the petty cash functionality that lets users in Estonia, Lithuania, Czech Republic, Hungary, Latvia, Poland, and Russia reflect cash operations in the system.
 

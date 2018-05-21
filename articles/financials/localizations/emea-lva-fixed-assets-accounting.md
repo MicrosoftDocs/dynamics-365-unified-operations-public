@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Fixed assets accounting for tax purposes
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the tax depreciation functionality for Latvia, including the tax depreciation setup and calculation and printing the tax depreciation report. 
 > [!NOTE]

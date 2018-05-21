@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Close the general ledger at period end
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the tasks that are typically completed when performing a period closing for General ledger. 
 

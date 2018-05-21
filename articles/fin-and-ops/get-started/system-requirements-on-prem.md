@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # System requirements for on-premises deployments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for on-premises deployments. Before you install Finance and Operations, when this step is appropriate, verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 > [!IMPORTANT]
@@ -123,7 +123,7 @@ The following tables list the number of processors and the amount of random-acce
 |            | Orchestrator                  | 4                           | 16                      |
 |                 | SQL Server  | 8  | 32|
 
-<strong>Minimum sizing estimates for production and sandbox deployments\</strong>*
+**Minimum sizing estimates for production and sandbox deployments**
 
 | Topology                                        | Role                          | Number of instances |
 |-------------------------------------------------|-------------------------------|---------------------|

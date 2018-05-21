@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Debug X++ code
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio. 
 
