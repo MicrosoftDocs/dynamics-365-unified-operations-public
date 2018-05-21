@@ -51,7 +51,7 @@ To learn more about this feature, play the **ER Split XML files based on the fil
 - [ER format configuration - XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 
 ## Additional resources
-[Electronic reporting destinations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-destinations)
+[Electronic reporting destinations](electronic-reporting-destinations.md)
 
-[Formula designer in Electronic reporting](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-formula-designer)
+[Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
