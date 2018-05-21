@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Accounting distributions
-description: This topic provides information about accounting distributions and describes the options that are available for processing them. Accounting distributions are used to allocate monetary amounts for a source document to specific ledger accounts. 
+title: Specify the cross rate
+description: This topic provides information about cross rates in Microsoft Dynamics 365 for Finance and Operations. 
 author: abruer
 manager: AnnBe
 ms.date: 05/16/2018
