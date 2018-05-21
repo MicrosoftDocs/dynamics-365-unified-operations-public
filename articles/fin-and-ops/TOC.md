@@ -227,7 +227,7 @@
 ##### [Consolidation account groups and accounts](../financials/budgeting/consolidation-account-groups-consolidation-accounts.md)
 ##### [Consolidation and elimination overview](../financials/budgeting/consolidation-elimination-overview.md)
 ##### [Fiscal calendars, fiscal years, and periods](../financials/budgeting/fiscal-calendars-fiscal-years-periods.md)
-##### [Configure account structures](..financials/general-ledger/configure-account-structures.md)
+##### [Configure account structures](../financials/general-ledger/configure-account-structures.md)
 #### Journals and ledgers
 ##### [General journal processing](../financials/general-ledger/general-journal-processing.md)
 ##### [Intercompany accounting setup](../financials/general-ledger/intercompany-accounting-setup.md)
