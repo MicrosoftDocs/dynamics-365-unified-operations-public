@@ -331,6 +331,7 @@
 ##### [Take a cash discount outside the cash discount period](../financials/accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
 ##### [Take a discount that is more than the calculated discount for a vendor payment](../financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
 ##### [Vendor payments for a partial amount](../financials/accounts-payable/vendor-payments-partial-amount.md)
+#### [Specify a cross rate](../financials/accounts-payable/specify-cross-rate.md)
 
 ### [Accounts receivable](../financials/accounts-receivable/accounts-receivable.md)
 #### [Credit and collections in Accounts receivable](../financials/accounts-receivable/collections-credit-accounts-receivable.md)
