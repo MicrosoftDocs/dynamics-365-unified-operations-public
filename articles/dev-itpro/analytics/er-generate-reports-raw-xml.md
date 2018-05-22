@@ -43,4 +43,4 @@ You can use the new **RAW XML** format element to design Electronic reporting (E
 > [!NOTE]
 > Be aware that the framework doesn't control whether the XML content that is placed to the generated document by using the **RAW XML** format element is correct.
 
-To learn more about this feature, play the **ER Generate xml reports by adding content as raw xml (Part 1: Design data model)** and **ER Generate xml reports by adding content as raw xml (Part 2: Design and run report)** task guides, which are part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. These task guides walk you through the process of configuring an ER format to insert raw XML data into generated files.
+To learn more about this feature, play the **ER Use raw XML data to generate XML reports (Part 1: Design data model)** and **ER Use raw XML data to generate XML reports (Part 2: Design and run report)** task guides, which are part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. These task guides walk you through the process of configuring an ER format to insert raw XML data into generated files.
