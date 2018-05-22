@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 8.0
 
 ---
 
-# Split generated files based on file size and content quantity
+# Split generated XML files based on file size and content quantity
 
 [!include[banner](../includes/banner.md)]
 
