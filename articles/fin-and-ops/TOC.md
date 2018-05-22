@@ -241,7 +241,6 @@
 ##### [Accounting distributions](../financials/accounts-payable/accounting-distributions.md)
 ##### [Process allocations](../financials/general-ledger/process-allocations.md)
 ##### [Financial dimensions](../financials/general-ledger/financial-dimensions.md)
-##### [Convert accounting or reporting currencies](../financials/general-ledger/convert-accounting-reporting-currencies.md)
 ##### [Consolidation account groups and accounts](../financials/budgeting/consolidation-account-groups-consolidation-accounts.md)
 ##### [Consolidation and elimination overview](../financials/budgeting/consolidation-elimination-overview.md)
 ##### [Fiscal calendars, fiscal years, and periods](../financials/budgeting/fiscal-calendars-fiscal-years-periods.md)
