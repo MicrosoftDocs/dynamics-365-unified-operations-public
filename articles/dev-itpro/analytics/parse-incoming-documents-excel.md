@@ -39,7 +39,7 @@ You can design Electronic reporting (ER) formats to parse incoming Microsoft Exc
 -	Design a new model and format and want to test them at run-time. In this case, Excel will simulate the actual application data.
 -	Manage data beyond your application in Excel and want to import this data to submit a specific report.
 
-To learn more about this feature, play the task guides **Design formats to import data from an external Excel file** and **Import data from an external Excel file** (parts of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process). These task guides walk through how the incoming Excel file can be parsed by using the ER format to import information from incoming documents and update application data.
+To learn more about this feature, play the task guides **ER Import data from a Microsoft Excel file (Part 1: Design format)** and **ER Import data from a Microsoft Excel file (Part 2: Import data)** (parts of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process). These task guides walk through how the incoming Excel file can be parsed by using the ER format to import information from incoming documents and update application data.
 
 Download the following files to complete the task guides mentioned above.
 
@@ -48,7 +48,7 @@ Download the following files to complete the task guides mentioned above.
 | Incoming file in .XLSX format - template   | [1099import-template.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)  |
 | Incoming file in .XLSX format - sample data| [1099import-data.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)     |
 
-If you have not yet played the following task guide, [Create required configurations to import data from an external file](./tasks/er-required-configurations-import-data.md) in the current Dynamics 365 for Finance and Operation application, download the following file.
+If you have not yet played the following task guide, [ER Create required configurations to import data from an external file](./tasks/er-required-configurations-import-data.md) in the current Dynamics 365 for Finance and Operation application, download the following file.
 
 | Content description                        | File                                                                       |
 ---------------------------------------------|----------------------------------------------------------------------------|
