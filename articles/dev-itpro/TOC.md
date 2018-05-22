@@ -450,7 +450,6 @@
 ### [Use the Person search report](gdpr/gdpr-person-search-report.md)
 ### [Extend the Person search report](gdpr/gdpr-extend-person-search-report.md)
 ### [Manage access to sensitive data](gdpr/gdpr-auditing-sensitive-data.md)
-### [Respond to a request for personal data using Talent](gdpr/respond-dsr-request-talent.md)
 ### [Respond to a request for personal data using Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
 ### [GDPR data requests for LCS](gdpr/gdpr-lcs.md)
 
