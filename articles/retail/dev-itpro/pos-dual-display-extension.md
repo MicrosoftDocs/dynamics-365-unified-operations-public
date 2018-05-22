@@ -367,15 +367,15 @@ constructor(id: string, context: IDualDisplayCustomControlContext) {
                                                                                                                                     
 ]                                                                                                                                 
                                                                                                                                     
- };                                                                                                                                 
-                                                                                                                                    
+ };        
+ 
  this.cartLinesDataList = new DataList(cartLinesDataListOptions);                                                                                                                                                                                                
  // Logs the completion of constructing the DualDisplayCustomControl.                                                               
                                                                                                                                     
  this.context.logger.logInformational("DualDisplayCustomControl constructed", this.context.logger.getNewCorrelationId());                                                                                                                                           
- }                                                                                                                                  |
+ }                                           
 ```
-1.  Add the onReady method to bind the control to the specified html element.
+15.  Add the onReady method to bind the control to the specified html element.
 ```typescript
 /**                                                                             
                                                                                     
@@ -394,9 +394,9 @@ ko.applyBindingsToNode(element, {
                                                                                     
  });                                                                                
                                                                                     
- }                                                                                  |
+ }
 ```
-1.  Add the init method to initializer all the controls.
+16.  Add the init method to initializer all the controls.
 
 ```typescript
  /**                                                                                                          
@@ -411,7 +411,7 @@ ko.applyBindingsToNode(element, {
  this._loggedOn(state.loggedOn);                                                                                
  this._employee(state.employee)                                                                                 
                                                                                                                  
- }                                                                                                               |
+ }
 ```
 The overall class should look like below:
 ```typescript
@@ -615,11 +615,10 @@ The overall class should look like below:
  this._employee(state.employee)                                                                                                                   
  }                                                                                                                                           
  }                                                                                                                                        ``` 
- |
 
-15.  Create a new json file and under the DualDisplayExtension folder and name it as manifest.json.
+17.  Create a new json file and under the DualDisplayExtension folder and name it as manifest.json.
 
-16.  In the manifest.json file, copy and paste the below code, delete the default generated code before copying the below code:
+18.  In the manifest.json file, copy and paste the below code, delete the default generated code before copying the below code:
 ```typescript
 {                                                          
                                                              
@@ -645,9 +644,9 @@ The overall class should look like below:
  }                                                                                                                   
  }                                                                                                                   
  }                                                                                                                    
- }                                                           |
+ }
 ```
-17.  Open the extensions.json file under POS.Extensions project and update it with DualDisplayExtension samples, so that POS during runtime will include this extension.
+19.  Open the extensions.json file under POS.Extensions project and update it with DualDisplayExtension samples, so that POS during runtime will include this extension.
 ```typescript
  {
  "extensionPackages": [
@@ -663,7 +662,7 @@ The overall class should look like below:
  ]
 }
 ```
-18.  Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
+20. Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions list, if you want to include any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
 ```typescript
  "exclude": [
  "AuditEventExtensionSample",
@@ -681,7 +680,7 @@ The overall class should look like below:
  //"DualDisplayExtension"
 ],
 ```
-19.  Compile and rebuild the project.
+21. Compile and rebuild the project.
 
 **Validate the customization:**
 
