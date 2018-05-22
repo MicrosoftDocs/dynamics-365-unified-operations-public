@@ -321,7 +321,7 @@ The overall code should look like this.
     import EndOfDayOperationResponse from "./EndOfDayOperationResponse";
     import EndOfDayOperationRequest from "./EndOfDayOperationRequest";
     import { ExtensionOperationRequestFactoryFunctionType, IOperationContext } from "PosApi/Create/Operations";
-    import { ClientEntities } from "PosApi/Entities";|
+    import { ClientEntities } from "PosApi/Entities";
  ```
 
 3. Add a function to link the operation handler and the operation button.
@@ -347,7 +347,7 @@ The overall code should look like this.
             data: operationRequest
         });
     };
-    export default getOperationRequest;;|
+    export default getOperationRequest;
     ```
 
     The overall code should look like this.
@@ -385,7 +385,7 @@ The overall code should look like this.
             data: operationRequest
         });
     };
-    export default getOperationRequest;|
+    export default getOperationRequest;
 ```
 
 4. Open the **manifest.json** file, and paste in the following code.
