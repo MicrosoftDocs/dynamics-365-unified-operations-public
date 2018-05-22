@@ -245,6 +245,7 @@
 ##### [Consolidation account groups and accounts](../financials/budgeting/consolidation-account-groups-consolidation-accounts.md)
 ##### [Consolidation and elimination overview](../financials/budgeting/consolidation-elimination-overview.md)
 ##### [Fiscal calendars, fiscal years, and periods](../financials/budgeting/fiscal-calendars-fiscal-years-periods.md)
+##### [Configure account structures](../financials/general-ledger/configure-account-structures.md)
 #### Journals and ledgers
 ##### [General journal processing](../financials/general-ledger/general-journal-processing.md)
 ##### [Post periodic journals](../financials/general-ledger/tasks/post-periodic-journals.md)
@@ -330,6 +331,7 @@
 ##### [Take a cash discount outside the cash discount period](../financials/accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
 ##### [Take a discount that is more than the calculated discount for a vendor payment](../financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
 ##### [Vendor payments for a partial amount](../financials/accounts-payable/vendor-payments-partial-amount.md)
+#### [Specify a cross rate](../financials/accounts-payable/specify-cross-rate.md)
 
 ### [Accounts receivable](../financials/accounts-receivable/accounts-receivable.md)
 #### [Credit and collections in Accounts receivable](../financials/accounts-receivable/collections-credit-accounts-receivable.md)
@@ -348,6 +350,7 @@
 #### [Establish customer payment terms](../financials/general-ledger/tasks/establish-customer-payment-terms.md)
 #### [Set up bills of exchange](../financials/accounts-receivable/set-up-bills-exchange.md)
 #### [Close Accounts receivable](../financials/accounts-receivable/close-accounts-receivable.md)
+#### [Add new location roles](../financials/accounts-receivable/location-relationship.md)
 
 #### Accounts receivable tasks
 ##### [Assign a free text invoice template to a customer](../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md)
@@ -852,6 +855,7 @@
 ##### [Split periods in periodic journals](../financials/localizations/emea-create-post-periodic-journals.md)
 ##### [Update how amounts are displayed on reports and documents](../financials/localizations/emea-amount-printing-forms.md)
 ##### [VAT statement](../financials/localizations/emea-cze-vat-statement-details.md)
+##### [Year-end close](../financials/localizations/emea-cze-hun-year-end.md)
 
 #### Denmark
 ##### [Assign a payment slip format to a customer account](../financials/localizations/tasks/assign-payment-slip-format-customer-account.md)
@@ -915,6 +919,7 @@
 ##### [Low-cost fixed assets](../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 ##### [Move a fixed asset to inventory](../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
 ##### [Tax reimbursement documents](../financials/localizations/emea-hun-tax-reimbursement-docs.md)
+##### [Year-end close](../financials/localizations/emea-cze-hun-year-end.md)
 
 #### Iceland
 ##### [Create a vendor account and attach the invoice declaration category](../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md)
