@@ -5,7 +5,7 @@ title: Business Activity Statement (BAS)
 description: This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form submitted to the Australian Taxation Office by all businesses to report their taxation obligations.          
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/05/2017
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,7 +50,7 @@ The following list provides an overview of the process to calculate GST and prep
 3.  Post and settle Australian BAS to tax authorities for a particular GST settlement period.
 4.  Process payments to tax authorities.
 5.  Manually adjust journals to transfer non-GST transactions posted to the BAS reconciliation account to the correct ledger account.
-6.  Print and review GST reports.
+6.  [Print and review GST reports](apac-aus-business-activity-statement.md#generate-the-australian-bas).
 
 ## Prerequisites
 <table>
@@ -176,6 +176,53 @@ Based on a quarterly BAS format, the following reporting codes must be set up. T
 
 > [!NOTE] 
 > The reporting code numbers 5 and 6 are missing. This is because these two codes are used for calculated fields on the BAS report.
+
+## Generate the Australian BAS
+1.	Go to **Tax > Declarations > Sales tax > Australian BAS**.
+2.	In the **Settlement period** field, select the settlement period.
+3.	In the **From date** field, enter a date.
+4.	In the **Transaction date** field, enter a date.
+5.	Select or clear the **Post and settle GST check box**.
+7.	Click **OK**.
+8.	When Electronic Reporting is set up for Australian BAS, the **Print Australian BAS** page is available for you to generate the E-BAS statement.
+9. Set the **Generate E-BAS** option to be **Yes**.
+10. On the **Select a file** page, select the xml file to use and click **OK**.
+
+## Sample XML file
+
+Create an XML file with the following information.
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+                <field ID="fA1">BAS1</field>
+                <field ID="fF1"></field>
+                <field ID="fT2"></field>
+                <field ID="f7"></field>
+                <field ID="f7A"></field>
+                <field ID="fA3">1/4/2017</field>
+                <field ID="fA4">30/4/2017</field>
+                <field ID="fMANUAL_MODE">true</field>
+<FIELD_LIST>
+</FIELD_LIST> 
+</DATA>
+
+```
+Before using the XML file, be sure to change the values for each of the fields being used so that they are appropriate for your company. The value for each field is listed below: 
+            
+            case 'fA1' : // Document Identification Number
+            case 'fF1' : // FringeATO
+            case 'fT2' : // PaygCommRate
+            case 'f7'  : // Deferred Instalment
+            case 'f7A' : //deferred gst On Imported goods
+            case 'fA3' : //fromDate
+            case 'fA4' : //toDate
+            case 'fMANUAL_MODE' : //manualMode
+                
+> [!NOTE]
+> The dates must be in dd//mm//yyyy format.
+
+
 
 ## Additional resources
 [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
