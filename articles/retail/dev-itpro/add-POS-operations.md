@@ -5,7 +5,7 @@ title: Add a new POS operation to the POS layout by using Button grid designer
 description: This topic explains how to create a new POS operation and add it to the POS layout by using Button grid designer.
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/27/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -84,7 +84,7 @@ This section explains how to create a sample operation that does simplified end-
     ```
 
     > [!NOTE]
-    > In this example, the operation ID in the **super** method is initialized to **5001**. However, you can use any operation ID starting from 4001. Operation IDs 0 through 4000 are reserved for internal Retail POS operations, and no two operations should have the same operation ID. Additionally, the custom parameters field appears in Button grid designer properties only if the operation ID is 4001 or higher. (You can use custom parameters field to pass parameters to the POS operation from Retail headquarters.)
+    > In this example, the operation ID in the **super** method is initialized to **5001**. However, you can use any operation ID starting from 4001. Operation IDs 0 through 4000 are reserved for internal Retail POS operations, and no two operations should have the same operation ID. Additionally, the custom parameters field appears in Button grid designer properties only if the operation ID is 4001 or higher. (You can use custom parameters field to pass parameters to the POS operation from Retail headquarters).
     
 ### Create the operation response class
 
@@ -449,9 +449,9 @@ The overall code should look like this.
 
 ## Add a custom operation button to the POS layout in Retail headquarters
 
-1. In Retail go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Operations.
+1. In Retail go to **Retail and commerce &gt; Channel setup &gt; POS setup &gt; POS &gt; Operations**.
 2. Create an operation that is named **EOD** and that has an operation ID of **5001**.
-3. Go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Button grids**.
+3. Go to **Retail and commerce &gt; Channel setup &gt; POS setup &gt; POS &gt; Button grids**.
 4. Filter for **'F2W2'**.
 5. Select the **Designer** button, and then follow the instructions to install the designer. If you're prompted for credentials, enter the Retail user name and password.
 6. Right-click in the designer area, and then select **Add new row**.
