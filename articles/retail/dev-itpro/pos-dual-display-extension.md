@@ -2,46 +2,42 @@
 # required metadata
 
 title: POS Dual display extension
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This topic explains how to extend POS dual display with custom information. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/17/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: margoc
 ms.search.scope: Retail, Operations 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
-# ms.search.industry: retail
+ms.search.industry: retail
 ms.author: mumani
-ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
-ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+ms.search.validFrom: 2018-5-31
+ms.dyn365.ops.version: 8.0.1
 ---
 
 # POS Dual display extension
 
 [!include[banner](../includes/banner.md)]
 
-
-**How to extend POS Dual display:**
-
 This topic explains how to extend POS dual display with custom information. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail 7.2 with KB 4091080 and higher versions.
 
 POS Dual display can be extended by adding a custom control to the dual display view and within the custom control you can add any images, POS data list, labels etc. to show custom information.
 
-**Note:** Dual display can be extended only by adding custom control and it will override the standard content shown in the dual display.
+> [!NOTE]
+> Dual display can be extended only by adding custom control and it will override the standard content shown in the dual display.
 
-Steps required to customize POS dual display:
----------------------------------------------
+## Steps required to customize POS dual display:
 
 1.  Configure the hardware profile to enable dual display.
 
@@ -53,12 +49,11 @@ Steps required to customize POS dual display:
 
 5.  Deploy the changes and validate.
 
-Scenario or Business problem
--------------------------
+## Scenario or Business problem
 
-<span id="_Toc446093285" class="anchor"></span>Let’s add custom control column in POS dual display view to show the cart detail, customer and store employee information.
+Let’s add custom control column in POS dual display view to show the cart detail, customer and store employee information.
 
-**Configure Hardware profile to enable Dual display:**
+### Configure Hardware profile to enable Dual display
 
 1.  Login to Dynamics 365 for Retail or Finance and Operations.
 
@@ -72,9 +67,10 @@ Scenario or Business problem
 
 6.  Select the Registers (1090) job and click Run now.
 
-**Note:** You can find this same sample E2E in …\\RetailSDK\\POS\\Extensions\\DualDisplaySample
+> [!NOTE]
+> You can find this same sample E2E in …\\RetailSDK\\POS\\Extensions\\DualDisplaySample
 
-**Add new custom control for dual display extension:**
+## Add new custom control for dual display extension
 
 1.  Open visual studio 2015 in administrator mode.
 
@@ -237,6 +233,7 @@ private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Sample
 ```
 
 14.  Create a class constructor method to initialize all the variables:
+
 ```typescript
 
 constructor(id: string, context: IDualDisplayCustomControlContext) {                                                              
@@ -682,14 +679,14 @@ The overall class should look like below:
 ```
 21. Compile and rebuild the project.
 
-**Validate the customization:**
+## Validate the customization
 
 1.  Login to MPOS using 000160 as operator id and 123 as password.
 
-2.  Click the current transaction button on the welcome screen
+2.  Click the current transaction button on the welcome screen.
 
 3.  Add any item (0005) to transaction.
 
-4.  Add any customer to transaction (“*Karen Berg*”)
+4.  Add any customer to transaction ("Karen Berg").
 
 5.  The dual display should display the cart, total, employee and customer details.
