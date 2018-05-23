@@ -158,15 +158,15 @@ Printing Triggers
 | PostRecallTransactionTrigger       | Non-cancelable | Executed after the transaction or order is recalled.  |
 | PostCartCheckoutTrigger            | Non-cancelable | Executed after the checkout process is completed.    |
 
-## Business scenario:
+## Business scenario
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.
 
-**To implement this scenario, we need to perform the below steps:**
+To implement this scenario, you must complete these steps.
 
-1. **POS extension** – Implement the post suspend transaction trigger to get the receipt data from CRT and send it to printer for printing. 
-2.  **CRT extension** – Generate the receipt data for printing.
+1. **POS extension:** Implement the **PostSuspendTransactionTrigger** trigger to get the receipt data from CRT and send it to the printer for printing. 
+2. **CRT extension:** Generate the receipt data for printing.
 
-## How to implement a trigger
+## Implement a trigger
 
 1. Open Visual Studio 2015 in administrator mode.
 2. Open the **ModernPOS** solution from **…\RetailSDK\POS**.
@@ -355,415 +355,267 @@ In this example, a custom receipt is printed when the user suspends a transactio
 ```
 13. Compile and rebuild the project.
 
-**Override the CRT receipt request to generate the receipt data:**
+## Override the CRT receipt request to generate the receipt data
 
-This topic explains how to override the existing CRT request to print receipt for suspended transactions. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail with platform update 8.
+This section explains how to override the existing CRT request to print a receipt for suspended transactions. This section is applicable to Microsoft Dynamics 365 for Finance and Operations or Microsoft Dynamics 365 for Retail with platform update 8.
 
-**Steps:**
+1. Start Visual Studio 2015.
+2. On the **File** menu, select **Open \> Project/Solution**. Find the template project (**SampleCRTExtension.csproj**).
+3. Rename the template project **Runtime.Extensions.SuspendReceiptSample**.
+4. Optional: Change the default namespace.
+5. Rename the output assembly **Contoso.Commerce.Runtime.SuspendReceiptSample**.
+6. Inside the project, add a new request class file, and name it **GetCustomReceiptsRequestHandler.cs**.
+7. Copy the following code, and paste it inside the class. Before you copy it, delete the automatically generated code.
 
-1.  Open visual studio 2015.
+    ```C#
+    namespace Contoso
+    {
+        namespace Commerce.Runtime.ReceiptsSample
+        {
+            using System.Collections.Generic;
+            using System.Collections.ObjectModel;
+            using Microsoft.Dynamics.Commerce.Runtime;
+            using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+            using Microsoft.Dynamics.Commerce.Runtime.Messages;
+            using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+            using Microsoft.Dynamics.Commerce.Runtime.Workflow;
 
-2.  In the File menu, select Open > Project/Solution. Locate the template project (SampleCRTExtension.csproj)
+            /// <summary>
+            /// The request handler for GetCustomReceiptsRequestHandler class.
+            /// </summary>
 
-3.  Rename the template project as Runtime.Extensions.SuspendReceiptSample.
+            /// <remarks>
+            /// This is an example of how to print custom types of receipts. In this example the receipt is for a transaction as opposed to
+            /// a sales order. The implementation converts the transaction to a sales order so that existing receipt fields can be used.
+            /// </remarks>
 
-4.  Change the default namespace (Optional)
+            public class GetCustomReceiptsRequestHandler : SingleRequestHandler<GetCustomReceiptsRequest, GetReceiptResponse>
+            {
+            }
+        }
+    }
+    ```
 
-5.  Change the output assembly name as Contoso.Commerce.Runtime.SuspendReceiptSample.
+8. Inside the project, create a new service class, and name it **CrossLoyaltyCardService.cs**.
+9. Copy the following code, and paste it inside the class to add a new method to read the transaction from the cart table, because suspended transactions aren't yet created in the retail transaction table. You must then convert the cart transaction to sales transaction. This conversion is required because the receipt object can understand only sales transactions.
 
-6.  Inside the project add a new request class file and name it as GetCustomReceiptsRequestHandler.cs
+    > [!NOTE]
+    > If you're printing a custom receipt for a completed transaction, you have to get the cart transaction and convert it to a sales transaction. It has already been converted to a sales transaction, because the transaction is completed.
 
-7.  Inside the class copy paste the below code, before copying delete the auto generated code:
+    ```C#
+    private SalesOrder GetSalesOrderForTransactionWithId(RequestContext requestContext, string transactionId)
+    {
+        SalesOrder salesOrder = new SalesOrder();
+        var getCartRequest = new GetCartRequest(new CartSearchCriteria(transactionId), QueryResultSettings.SingleRecord);
+        var getCartResponse = requestContext.Execute<GetCartResponse>(getCartRequest);
+        SalesTransaction salesTransaction = getCartResponse.Transactions.SingleOrDefault(); ;
+        if (salesTransaction != null)
+        {
+            // The sales transaction is converted into a sales order so that existing receipt fields can be used.
+            salesOrder.CopyFrom<SalesTransaction>(salesTransaction);
+        }
+        else
+        {
+            throw new DataValidationException(
+                DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_ObjectNotFound,
+                string.Format("Unable to get the sales transaction. ID: {0}", transactionId));
+        }
+        return salesOrder;
+    }
+    ```
 
-8.  Inside the project create a new service class and name it as CrossLoyaltyCardService.cs
+10. Copy the following code, and paste it into the class to add a new method to construct the receipt format by using the sales transaction information, based on the custom receipt format that is defined in HQ.
 
-```C#
+    ```C#
+    | private Collection<Receipt> GetCustomReceipts(SalesOrder salesOrder, ReceiptRetrievalCriteria criteria)
+    {
+        Collection<Receipt> result = new Collection<Receipt>();
+        var getReceiptServiceRequest = new GetReceiptServiceRequest(
+            salesOrder,
+            new Collection<ReceiptType> { criteria.ReceiptType },
+            salesOrder.TenderLines,
+            criteria.IsCopy,
+            criteria.IsPreview,
+            criteria.HardwareProfileId);
+        ReadOnlyCollection<Receipt> customReceipts = this.Context.Execute<GetReceiptServiceResponse>(getReceiptServiceRequest).Receipts;
+        result.AddRange(customReceipts);
+        return result;
+    }
+    ```
 
-namespace Contoso                                                                                                               
-                                                                                                                                  
- {                                                                                                                                
-                                                                                                                                  
- namespace Commerce.Runtime.ReceiptsSample                                                                                        
-                                                                                                                                  
- {                                                                                                                                
-                                                                                                                                  
- using System.Collections.Generic;                                                                                                
-                                                                                                                                  
- using System.Collections.ObjectModel;                                                                                            
-                                                                                                                                  
- using Microsoft.Dynamics.Commerce.Runtime;                                                                                       
-                                                                                                                                  
- using Microsoft.Dynamics.Commerce.Runtime.DataModel;                                                                             
-                                                                                                                                  
- using Microsoft.Dynamics.Commerce.Runtime.Messages;                                                                              
-                                                                                                                                  
- using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;                                                                     
-                                                                                                                                  
- using Microsoft.Dynamics.Commerce.Runtime.Workflow;                                                                              
-                                                                                                                                  
- /// <summary>                                                                                                              
-                                                                                                                                  
- /// The request handler for GetCustomReceiptsRequestHandler class.                                                               
-                                                                                                                                  
- /// </summary>                                                                                                             
-                                                                                                                                  
- /// <remarks>                                                                                                              
-                                                                                                                                  
- /// This is an example of how to print custom types of receipts. In this example the receipt is for a transaction as opposed to  
-                                                                                                                                  
- /// a sales order. The implementation converts the transaction to a sales order so that existing receipt fields can be used.     
-                                                                                                                                  
- /// </remarks>                                                                                                             
-                                                                                                                                  
- public class GetCustomReceiptsRequestHandler : SingleRequestHandler<GetCustomReceiptsRequest, GetReceiptResponse>          
-                                                                                                                                  
- {                                                                                                                                
-                                                                                                                                  
- }                                                                                                                                
-                                                                                                                                  
- }                                                                                                                                
-                                                                                                                                  
- }  
-```
-9. Add a new method to read the transaction from the cart table because suspended transactions are not yet created in the retail transaction table and then we need to convert the cart transaction to sales transaction, we are doing this conversion because receipt object can understand only sales transactions. Copy and paste the below code to create the methods inside the class:
+11. Copy the following code, and paste it into the class to add a new method to override the get receipt response. This method processes the request and returns the response.
 
-**Note:** If you are printing custom receipt for completed transaction then you need to get the cart and convert to sales transaction, its already converted to sales transaction as the transactions is completed.
+    ```C#
+    protected override GetReceiptResponse Process(GetCustomReceiptsRequest request)
+    {
+        ThrowIf.Null(request, "request");
+        ThrowIf.Null(request.ReceiptRetrievalCriteria, "request.ReceiptRetrievalCriteria");
 
-```C#
-private SalesOrder GetSalesOrderForTransactionWithId(RequestContext requestContext, string transactionId)         
-                                                                                                                    
- {                                                                                                                  
-                                                                                                                    
- SalesOrder salesOrder = new SalesOrder();                                                                          
-                                                                                                                    
- var getCartRequest = new GetCartRequest(new CartSearchCriteria(transactionId), QueryResultSettings.SingleRecord);  
-                                                                                                                    
- var getCartResponse = requestContext.Execute<GetCartResponse>(getCartRequest);                               
-                                                                                                                    
- SalesTransaction salesTransaction = getCartResponse.Transactions.SingleOrDefault(); ;                              
-                                                                                                                    
- if (salesTransaction != null)                                                                                      
-                                                                                                                    
- {                                                                                                                  
-                                                                                                                    
- // The sales transaction is converted into a sales order so that existing receipt fields can be used.              
-                                                                                                                    
- salesOrder.CopyFrom<SalesTransaction>(salesTransaction);                                                     
-                                                                                                                    
- }                                                                                                                  
-                                                                                                                    
- else                                                                                                               
-                                                                                                                    
- {                                                                                                                  
-                                                                                                                    
- throw new DataValidationException(                                                                                 
-                                                                                                                    
- DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_ObjectNotFound,                                       
-                                                                                                                    
- string.Format("Unable to get the sales transaction. ID: {0}", transactionId));                                     
-                                                                                                                    
- }                                                                                                                  
-                                                                                                                    
- return salesOrder;                                                                                                 
-                                                                                                                    
- } 
-```
-10.  Add a new method to construct the receipt format based on the custom receipt format defined in HQ by using the sales transaction information:
+        // The sales order that we are printing receipts for is retrieved.
+        SalesOrder salesOrder = this.GetSalesOrderForTransactionWithId(request.RequestContext, request.TransactionId);
 
-Copy and paste the below code inside the class:
-```C#
+        // Custom receipts are printed.
+        Collection<Receipt> result = new Collection<Receipt>();
+        switch (request.ReceiptRetrievalCriteria.ReceiptType)
+        {
+            // An example of getting custom receipts.
+            case ReceiptType.CustomReceipt7:
+            {
+                IEnumerable<Receipt> customReceipts = this.GetCustomReceipts(salesOrder, request.ReceiptRetrievalCriteria);
+                result.AddRange(customReceipts);
+            }
+            break;
+            default:
 
-| private Collection<Receipt> GetCustomReceipts(SalesOrder salesOrder, ReceiptRetrievalCriteria criteria)                                
-                                                                                                                                               
- {                                                                                                                                             
-                                                                                                                                               
- Collection<Receipt> result = new Collection<Receipt>();                                                                           
-                                                                                                                                               
- var getReceiptServiceRequest = new GetReceiptServiceRequest(                                                                                  
-                                                                                                                                               
- salesOrder,                                                                                                                                   
-                                                                                                                                               
- new Collection<ReceiptType> { criteria.ReceiptType },                                                                                   
-                                                                                                                                               
- salesOrder.TenderLines,                                                                                                                       
-                                                                                                                                               
- criteria.IsCopy,                                                                                                                              
-                                                                                                                                               
- criteria.IsPreview,                                                                                                                           
-                                                                                                                                               
- criteria.HardwareProfileId);                                                                                                                  
-                                                                                                                                               
- ReadOnlyCollection<Receipt> customReceipts = this.Context.Execute<GetReceiptServiceResponse>(getReceiptServiceRequest).Receipts;  
-                                                                                                                                               
- result.AddRange(customReceipts);                                                                                                              
-                                                                                                                                               
- return result;                                                                                                                                
-                                                                                                                                               
- }   
-```
-11.  Add a new method to override the get receipt response, this method processes the request and return the response. Copy and paste the below code inside the class:
-```C#
- protected override GetReceiptResponse Process(GetCustomReceiptsRequest request)                                   
-                                                                                                                    
- {                                                                                                                  
-                                                                                                                    
- ThrowIf.Null(request, "request");                                                                                  
-                                                                                                                    
- ThrowIf.Null(request.ReceiptRetrievalCriteria, "request.ReceiptRetrievalCriteria");                                
-                                                                                                                    
- // The sales order that we are printing receipts for is retrieved.                                                 
-                                                                                                                    
- SalesOrder salesOrder = this.GetSalesOrderForTransactionWithId(request.RequestContext, request.TransactionId);     
-                                                                                                                    
- // Custom receipts are printed.                                                                                    
-                                                                                                                    
- Collection<Receipt> result = new Collection<Receipt>();                                                
-                                                                                                                    
- switch (request.ReceiptRetrievalCriteria.ReceiptType)                                                              
-                                                                                                                    
- {                                                                                                                  
-                                                                                                                    
- // An example of getting custom receipts.                                                                          
-                                                                                                                    
- case ReceiptType.CustomReceipt7:                                                                                   
-                                                                                                                    
- {                                                                                                                  
-                                                                                                                    
- IEnumerable<Receipt> customReceipts = this.GetCustomReceipts(salesOrder, request.ReceiptRetrievalCriteria);  
-                                                                                                                    
- result.AddRange(customReceipts);                                                                                   
-                                                                                                                    
- }                                                                                                                  
-                                                                                                                    
- break;                                                                                                             
-                                                                                                                    
- default:                                                                                                           
-                                                                                                                    
- // Add more logic to handle more types of custom receipt types.                                                    
-                                                                                                                    
- break;                                                                                                             
-                                                                                                                    
- }                                                                                                                  
-                                                                                                                    
- return new GetReceiptResponse(new ReadOnlyCollection<Receipt>(result));                                      
-                                                                                                                    
- } 
-```
-12.  The overall code should look I below:
-```C#
-/**                                                                                                                                                 
- * SAMPLE CODE NOTICE                                                                                                                                                                                                                                                                                 
- *                                                                                                                                                                                                                                                                                      
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,                                                                                                                                                                                              
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.                                                                                                                                                             
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.                                                                                                                                                                                                 
- * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.                                                                                                                                                 
- */                                                                                                                                                                                                                                                                                                 
- namespace Contoso                                                                                                                                                                                                                                                                                     
- {                                                                                                                                                                                                                                                                                                
- namespace Commerce.Runtime.ReceiptsSample                                                                                                           
-                                                                                                                                                     
- {                                                                                                                                                   
-                                                                                                                                                     
- using System.Collections.Generic;                                                                                                                   
-                                                                                                                                                     
- using System.Collections.ObjectModel;                                                                                                               
-                                                                                                                                                     
- using Microsoft.Dynamics.Commerce.Runtime;                                                                                                          
-                                                                                                                                                     
- using Microsoft.Dynamics.Commerce.Runtime.DataModel;                                                                                                
-                                                                                                                                                     
- using Microsoft.Dynamics.Commerce.Runtime.Messages;                                                                                                 
-                                                                                                                                                     
- using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;                                                                                        
-                                                                                                                                                     
- using Microsoft.Dynamics.Commerce.Runtime.Workflow;                                                                                                 
-                                                                                                                                                     
- /// <summary>                                                                                                                                 
-                                                                                                                                                     
- /// The request handler for GetCustomReceiptsRequestHandler class.                                                                                  
-                                                                                                                                                     
- /// </summary>                                                                                                                                
-                                                                                                                                                     
- /// <remarks>                                                                                                                                 
-                                                                                                                                                     
- /// This is an example of how to print custom types of receipts. In this example the receipt is for a transaction as opposed to                     
-                                                                                                                                                     
- /// a sales order. The implementation converts the transaction to a sales order so that existing receipt fields can be used.                        
-                                                                                                                                                     
- /// </remarks>                                                                                                                                
-                                                                                                                                                     
- public class GetCustomReceiptsRequestHandler : SingleRequestHandler<GetCustomReceiptsRequest, GetReceiptResponse>                             
-                                                                                                                                                     
- {                                                                                                                                                   
-                                                                                                                                                     
- /// <summary>                                                                                                                                 
-                                                                                                                                                     
- /// Processes the GetCustomReceiptsRequest to return the set of receipts. The request should not be null.                                           
-                                                                                                                                                     
- /// </summary>                                                                                                                                
-                                                                                                                                                     
- /// <param name="request">The request parameter.</param>                                                                                
-                                                                                                                                                     
- /// <returns>The GetReceiptResponse.</returns>                                                                                          
-                                                                                                                                                     
- protected override GetReceiptResponse Process(GetCustomReceiptsRequest request)                                                                     
-                                                                                                                                                     
- {                                                                                                                                                   
-                                                                                                                                                     
- ThrowIf.Null(request, "request");                                                                                                                   
-                                                                                                                                                     
- ThrowIf.Null(request.ReceiptRetrievalCriteria, "request.ReceiptRetrievalCriteria");                                                                 
-                                                                                                                                                     
- // The sales order that we are printing receipts for is retrieved.                                                                                  
-                                                                                                                                                     
- SalesOrder salesOrder = this.GetSalesOrderForTransactionWithId(request.RequestContext, request.TransactionId);                                      
-                                                                                                                                                     
- // Custom receipts are printed.                                                                                                                     
-                                                                                                                                                     
- Collection<Receipt> result = new Collection<Receipt>();                                                                                 
-                                                                                                                                                     
- switch (request.ReceiptRetrievalCriteria.ReceiptType)                                                                                               
-                                                                                                                                                     
- {                                                                                                                                                   
-                                                                                                                                                     
- // An example of getting custom receipts.                                                                                                           
-                                                                                                                                                     
- case ReceiptType.CustomReceipt7:                                                                                                                    
-                                                                                                                                                     
- {                                                                                                                                                   
-                                                                                                                                                     
- IEnumerable<Receipt> customReceipts = this.GetCustomReceipts(salesOrder, request.ReceiptRetrievalCriteria);                                   
-                                                                                                                                                     
- result.AddRange(customReceipts);                                                                                                                    
-                                                                                                                                                     
- }                                                                                                                                                   
-                                                                                                                                                     
- break;                                                                                                                                              
-                                                                                                                                                     
- default:                                                                                                                                            
-                                                                                                                                                     
- // Add more logic to handle more types of custom receipt types.                                                                                     
-                                                                                                                                                     
- break;                                                                                                                                              
-                                                                                                                                                     
- }                                                                                                                                                   
-                                                                                                                                                     
- return new GetReceiptResponse(new ReadOnlyCollection<Receipt>(result));                                                                       
-                                                                                                                                                     
- }                                                                                                                                                   
-                                                                                                                                                     
- /// <summary>                                                                                                                                 
-                                                                                                                                                     
- /// Gets a sales order for the transaction with the given identifier.                                                                               
-                                                                                                                                                     
- /// </summary>                                                                                                                                
-                                                                                                                                                     
- /// <param name="requestContext">The request context.</param>                                                                           
-                                                                                                                                                     
- /// <param name="transactionId">The transaction identifier.</param>                                                                     
-                                                                                                                                                     
- /// <returns>The sales order.</returns>                                                                                                 
-                                                                                                                                                     
- private SalesOrder GetSalesOrderForTransactionWithId(RequestContext requestContext, string transactionId)                                           
-                                                                                                                                                     
- {                                                                                                                                                   
-                                                                                                                                                     
- SalesOrder salesOrder = new SalesOrder();                                                                                                           
-                                                                                                                                                     
- var getCartRequest = new GetCartRequest(new CartSearchCriteria(transactionId), QueryResultSettings.SingleRecord);                                   
-                                                                                                                                                     
- var getCartResponse = requestContext.Execute<GetCartResponse>(getCartRequest);                                                                
-                                                                                                                                                     
- SalesTransaction salesTransaction = getCartResponse.Transactions.SingleOrDefault(); ;                                                               
-                                                                                                                                                     
- if (salesTransaction != null)                                                                                                                       
-                                                                                                                                                     
- {                                                                                                                                                   
-                                                                                                                                                     
- // The sales transaction is converted into a sales order so that existing receipt fields can be used.                                               
-                                                                                                                                                     
- salesOrder.CopyFrom<SalesTransaction>(salesTransaction);                                                                                      
-                                                                                                                                                     
- }                                                                                                                                                   
-                                                                                                                                                     
- else                                                                                                                                                
-                                                                                                                                                     
- {                                                                                                                                                   
-                                                                                                                                                     
- throw new DataValidationException(                                                                                                                  
-                                                                                                                                                     
- DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_ObjectNotFound,                                                                        
-                                                                                                                                                     
- string.Format("Unable to get the sales transaction. ID: {0}", transactionId));                                                                      
-                                                                                                                                                     
- }                                                                                                                                                   
-                                                                                                                                                     
- return salesOrder;                                                                                                                                  
-                                                                                                                                                     
- }                                                                                                                                                   
-                                                                                                                                                     
- /// <summary>                                                                                                                                 
-                                                                                                                                                     
- /// An example to get a custom receipt.                                                                                                             
-                                                                                                                                                     
- /// </summary>                                                                                                                                
-                                                                                                                                                     
- /// <param name="salesOrder">The sales order that we are printing receipts for.</param>                                                 
-                                                                                                                                                     
- /// <param name="criteria">The receipt retrieval criteria.</param>                                                                      
-                                                                                                                                                     
- /// <returns>A collection of receipts.</returns>                                                                                        
-                                                                                                                                                     
- private Collection<Receipt> GetCustomReceipts(SalesOrder salesOrder, ReceiptRetrievalCriteria criteria)                                       
-                                                                                                                                                     
- {                                                                                                                                                   
-                                                                                                                                                     
- Collection<Receipt> result = new Collection<Receipt>();                                                                                 
-                                                                                                                                                     
- var getReceiptServiceRequest = new GetReceiptServiceRequest(                                                                                        
-                                                                                                                                                     
- salesOrder,                                                                                                                                         
-                                                                                                                                                     
- new Collection<ReceiptType> { criteria.ReceiptType },                                                                                         
-                                                                                                                                                     
- salesOrder.TenderLines,                                                                                                                             
-                                                                                                                                                     
- criteria.IsCopy,                                                                                                                                    
-                                                                                                                                                     
- criteria.IsPreview,                                                                                                                                 
-                                                                                                                                                     
- criteria.HardwareProfileId);                                                                                                                        
-                                                                                                                                                     
- ReadOnlyCollection<Receipt> customReceipts = this.Context.Execute<GetReceiptServiceResponse>(getReceiptServiceRequest).Receipts;        
-                                                                                                                                                     
- result.AddRange(customReceipts);                                                                                                                    
-                                                                                                                                                     
- return result;                                                                                                                                      
-                                                                                                                                                     
- }                                                                                                                                                   
-                                                                                                                                                     
- }                                                                                                                                                   
-                                                                                                                                                     
- }                                                                                                                                                   
-                                                                                                                                                     
- }
-```
-13.  Compile and build the project.
+            // Add more logic to handle more types of custom receipt types.
 
-14.  Go to the output directory and copy the output assembly.
+            break;
+        }
+        return new GetReceiptResponse(new ReadOnlyCollection<Receipt>(result));
+    }
+    ```
 
-15.  Navigate to …\RetailServer\webroot\bin\ext folder and paste the assembly.
+    The overall code should look like this.
 
-16.  Also, paste the assembly in …\RetailSDK\References folder.
+    ```C#
+    /**
+     * SAMPLE CODE NOTICE
+     *
+     * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+     * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+     * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+     * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+     */
 
-17.  Open the commerceruntime.ext.config and add the custom assembly information under the <composition> section.
+    namespace Contoso
+    {
+        namespace Commerce.Runtime.ReceiptsSample
+        {
+            using System.Collections.Generic;
+            using System.Collections.ObjectModel;
+            using Microsoft.Dynamics.Commerce.Runtime;
+            using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+            using Microsoft.Dynamics.Commerce.Runtime.Messages;
+            using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+            using Microsoft.Dynamics.Commerce.Runtime.Workflow;
 
+            /// <summary>
+            /// The request handler for GetCustomReceiptsRequestHandler class.
+            /// </summary>
+
+            /// <remarks>
+            /// This is an example of how to print custom types of receipts. In this example the receipt is for a transaction as opposed to
+            /// a sales order. The implementation converts the transaction to a sales order so that existing receipt fields can be used.
+            /// </remarks>
+
+            public class GetCustomReceiptsRequestHandler : SingleRequestHandler<GetCustomReceiptsRequest, GetReceiptResponse>
+            {
+
+                /// <summary>
+                /// Processes the GetCustomReceiptsRequest to return the set of receipts. The request should not be null.
+                /// </summary>
+
+                /// <param name="request">The request parameter.</param>
+
+                /// <returns>The GetReceiptResponse.</returns>
+
+                protected override GetReceiptResponse Process(GetCustomReceiptsRequest request)
+                {
+                    ThrowIf.Null(request, "request");
+                    ThrowIf.Null(request.ReceiptRetrievalCriteria, "request.ReceiptRetrievalCriteria");
+
+                    // The sales order that we are printing receipts for is retrieved.
+                    SalesOrder salesOrder = this.GetSalesOrderForTransactionWithId(request.RequestContext, request.TransactionId);
+
+                    // Custom receipts are printed.
+                    Collection<Receipt> result = new Collection<Receipt>();
+                    switch (request.ReceiptRetrievalCriteria.ReceiptType)
+                    {
+                        // An example of getting custom receipts.
+                        case ReceiptType.CustomReceipt7:
+                        {
+                            IEnumerable<Receipt> customReceipts = this.GetCustomReceipts(salesOrder, request.ReceiptRetrievalCriteria);
+                            result.AddRange(customReceipts);
+                        }
+                        break;
+                        default:
+
+                        // Add more logic to handle more types of custom receipt types.
+
+                        break;
+                    }
+                    return new GetReceiptResponse(new ReadOnlyCollection<Receipt>(result));
+                }
+
+                /// <summary>
+                /// Gets a sales order for the transaction with the given identifier.
+                /// </summary>
+
+                /// <param name="requestContext">The request context.</param>
+                /// <param name="transactionId">The transaction identifier.</param>
+
+                /// <returns>The sales order.</returns>
+
+                private SalesOrder GetSalesOrderForTransactionWithId(RequestContext requestContext, string transactionId)
+                {
+                    SalesOrder salesOrder = new SalesOrder();
+                    var getCartRequest = new GetCartRequest(new CartSearchCriteria(transactionId), QueryResultSettings.SingleRecord);
+                    var getCartResponse = requestContext.Execute<GetCartResponse>(getCartRequest);
+                    SalesTransaction salesTransaction = getCartResponse.Transactions.SingleOrDefault(); ;
+                    if (salesTransaction != null)
+                    {
+                        // The sales transaction is converted into a sales order so that existing receipt fields can be used.
+                        salesOrder.CopyFrom<SalesTransaction>(salesTransaction);
+                    }
+                    else
+                    {
+                        throw new DataValidationException(
+                        DataValidationErrors.Microsoft_Dynamics_Commerce_Runtime_ObjectNotFound,
+                        string.Format("Unable to get the sales transaction. ID: {0}", transactionId));
+                    }
+                    return salesOrder;
+                }
+
+                /// <summary>
+                /// An example to get a custom receipt.
+                /// </summary>
+
+                /// <param name="salesOrder">The sales order that we are printing receipts for.</param>
+                /// <param name="criteria">The receipt retrieval criteria.</param>
+
+                /// <returns>A collection of receipts.</returns>
+
+                private Collection<Receipt> GetCustomReceipts(SalesOrder salesOrder, ReceiptRetrievalCriteria criteria)
+                {
+                    Collection<Receipt> result = new Collection<Receipt>();
+                    var getReceiptServiceRequest = new GetReceiptServiceRequest(
+                        salesOrder,
+                        new Collection<ReceiptType> { criteria.ReceiptType },
+                        salesOrder.TenderLines,
+                        criteria.IsCopy,
+                        criteria.IsPreview,
+                        criteria.HardwareProfileId);
+                    ReadOnlyCollection<Receipt> customReceipts = this.Context.Execute<GetReceiptServiceResponse>(getReceiptServiceRequest).Receipts;
+                    result.AddRange(customReceipts);
+                    return result;
+                }
+            }
+        }
+    }
+    ```
+
+13. Compile and build the project.
+14. Go to the output directory, and copy the output assembly.
+15. Navigate to the **…\\RetailServer\\webroot\\bin\\ext** folder, and paste the assembly.
+16. Also paste the assembly in the **…\\RetailSDK\\References** folder.
+17. Open the **commerceruntime.ext.config** file, and add the custom assembly information under the \<composition\> section.
+
+    ```
     <add source="assembly" value="Contoso.Commerce.Runtime.SuspendReceiptSample" />
+    ```
 
-18.  Save and close the file.
-
-19.  Restart the Retail server to load the new assembly.
+18. Save and close the file.
+19. Restart the Retail Server to load the new assembly.
 
 ## Add the custom receipt layout
 
