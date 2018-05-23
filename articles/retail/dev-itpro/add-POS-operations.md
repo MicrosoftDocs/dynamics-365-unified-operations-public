@@ -38,7 +38,7 @@ This topic explains how to create a new point of sale (POS) operation and add it
 
 If you want your business logic to be run in the POS when users click a button, you should create POS operations. POS operations can run multiple activities or workflows. For example, they can open a new view, ask for user input, or run business logic. All standard and custom POS operations support pre-triggers and post-triggers.
 
-> [NOTE]
+> [!NOTE]
 > If logic should be run as part of another workflow, or if no button click is required, create POS request/response application programming interfaces (APIs). POS operations aren't required in these scenarios.
 
 Every operation should implement the following elements:
@@ -460,7 +460,7 @@ The overall code should look like this.
 9. Go to **Retail and commerce** &gt; **Retail IT** &gt; **Distribution schedule**.
 10. Select **1090**, and then select **Run now**.
 
-> [NOTE]
+> [!NOTE]
 > The preceding steps assume that you're using demo data. If you aren't using demo data, create and add the button according to your custom configurations.
 
 ## Validate your extension
