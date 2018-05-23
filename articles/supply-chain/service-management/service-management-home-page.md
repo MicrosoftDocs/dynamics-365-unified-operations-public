@@ -5,7 +5,7 @@ title: Service management
 description: Use Service management to establish service agreements and service subscriptions, handle service orders and customer inquiries, and to manage and analyze the delivery of services to customers. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 05/07/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -71,12 +71,12 @@ The following diagram illustrates the high level business processes for **Servic
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="fulfill-service-agreements-overview.md">Fulfill service agreements overview</a></p></td>
+<td><p>Fulfill service agreements</a></p></td>
 <td><p><a href="https://technet.microsoft.com/en-us/library/aa617823(v=ax.60)">Service agreements (form)</a></p></td>
 <td><p><strong>Service order margin</strong></p></td>
 </tr>
 <tr class="even">
-<td><p>Handle customer inquiries overview</a></p></td>
+<td><p>Handle customer inquiries</a></p></td>
 <td><p><a href="https://technet.microsoft.com/en-us/library/aa554361(v=ax.60)">Service orders (form)</a></p></td>
 <td><p><strong>Work description</strong></p></td>
 </tr>

@@ -126,6 +126,7 @@
 #### [Class extensions](extensibility/class-extensions.md)
 #### [Class extension: Method wrapping and Chain of Command](extensibility/method-wrapping-coc.md)
 #### [Naming guidelines](extensibility/naming-guidelines-extensions.md)
+#### [Relax model restrictions to enable the refactoring of over-layering into extensions](extensibility/refactoring-over-layering.md)
 ### How do I?
 #### [Add an enum value](extensibility/add-enum-value.md)
 #### [Modify an extended data type](extensibility/modify-edt.md) 
@@ -449,8 +450,8 @@
 ### [Use the Person search report](gdpr/gdpr-person-search-report.md)
 ### [Extend the Person search report](gdpr/gdpr-extend-person-search-report.md)
 ### [Manage access to sensitive data](gdpr/gdpr-auditing-sensitive-data.md)
-### [Respond to a request for personal data using Talent](gdpr/respond-dsr-request-talent.md)
 ### [Respond to a request for personal data using Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
+### [GDPR data requests for LCS](gdpr/gdpr-lcs.md)
 
 ## [Data validation workspace](user-interface/data-validation-workspace.md)
 

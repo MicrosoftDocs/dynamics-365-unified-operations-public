@@ -6,7 +6,7 @@
 ## [Remove a Talent environment](remove-talent-environment.md)
 ## [Provision Microsoft Dynamics 365 for Talent Modular Apps](modular-app-tech-faq.md)
 ## [Extend Talent functionality](extend-talent-functionality.md)
-## [Access preview features in Dynamics 365 for Talent: Attract](access-preview-feature.md)
+## [Access preview features in Dynamics 365 for Talent](access-preview-feature.md)
 
 # [Develop a human resources strategy](departments-jobs-positions.md)
 ## [Set up job components](create-job.md)
@@ -42,6 +42,7 @@
 ## [Distribute and complete a questionnaire](distribute-questionnaires.md)
 ## [Evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
 
-# Workplace safety and compliance (United States)
-## [Form I-9 employment verification](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json)
-## [Comply with the ADA](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json)
+# Workplace safety and compliance
+## [Respond to a request for personal data using Talent](../dev-itpro/gdpr/respond-dsr-request-talent.md)
+## [Form I-9 employment verification (United States)](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json)
+## [Comply with the ADA (United States)](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json)

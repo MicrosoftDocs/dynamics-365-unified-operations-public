@@ -89,6 +89,12 @@ Use the **Bank constant symbols** page to set up a list of constant symbols. By 
 
 You can set up bank symbols on the **Bank constant symbols** page (**Cash and bank management** > **Setup** > **Constant symbols**). 
 
+## Year-end close
+There are unique considerations for the year-end closing process and opening transactions for the Czech Republic. You can set up the year-end closing process in the following ways: 
+- Posting to different accounts for closing and opening of balance accounts. 
+- Transfer of profit or loss year-end result into the newly opened year to a different account.
+For more information, see [Year-end close for Czech Republic and Hungary](emea-cze-hun-year-end.md).
+
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: Czech Republic report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/CzechRepublic.html)
 - [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)

@@ -185,10 +185,16 @@ Here is an explanation of the parameters:
 - **sf (source file)** – The path and name of the file to import from.
 - **tu (target user)** – The SQL user name for the target Azure SQL database instance. We recommend that you use the standard **sqladmin** user. You can retrieve the password for this user from your LCS project.
 - **tp (target password)** – The password for the target Azure SQL database user.
-- **DatabaseServiceObjective** – The pricing tier of the database. Default sandbox UAT environments for Finance and Operations use P2.
+- **DatabaseServiceObjective** - Specifies the performance level of the database such as S1, P2, or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. To query the service level objective of the current database, run the following query.
+  ```
+  SELECT  d.name,   
+     slo.*    
+  FROM sys.databases d   
+  JOIN sys.database_service_objectives slo    
+  ON d.database_id = slo.database_id;  
+  ```
 
 You will receive the following warning message. You can safely ignore it.
-
 > A project which specifies SQL Server 2016 as the target platform may experience compatibility issues with Microsoft Azure SQL Database v12.
 
 
@@ -276,7 +282,8 @@ BEGIN TRY
     END
 END TRY
 BEGIN CATCH
-    PRINT error_message()
+
+PRINT error_message()
 END CATCH
 
 CLOSE retail_ftx;  
@@ -321,6 +328,11 @@ DEALLOCATE retail_ftx;
     ```
     DROP DATABASE [axdb_123456789_original]
     ```
+
+### Enable change tracking
+If change tracking was enabled in the source database, ensure to enable change tracking again in the newly provisioned database in the target environment using the ALTER DATABASE command.
+
+To ensure current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management. This can be done on any entity as this is needed to trigger the refresh of store procedure.
 
 ### Re-provision the target environment
 

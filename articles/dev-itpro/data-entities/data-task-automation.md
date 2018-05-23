@@ -116,7 +116,7 @@ The **\<JobDefinition\>** element defines the data project definition. There can
 ```
 <JobDefinition ID='ImportJobDefinition_1'>
     <Operation>Import</Operation>
-    <SkipStaging></SkipStaging>
+    <ConfigurationOnly>No</ConfigurationOnly>
     <Truncate></Truncate>
     <Mode>Import async</Mode>
     <BatchFrequencyInMinutes>1</BatchFrequencyInMinutes>
@@ -134,7 +134,6 @@ The **\<JobDefinition\>** element defines the data project definition. There can
 |--------------------|----------------------------------|-------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \<SharedSetup\>    | \<JobDefinition\>                | 1..n                    | ID            | The job definition ID is used in the tasks to reference the definition to be used for the data project.                                                                                                                                                                                                 |
 | \<JobDefinition\>  | \<Operation\>                    | 1..1                    | \-            | The operation to be performed is specified by the following values.                                                                                                                                                                                                                                        |
-|                    | \<SkipStaging\>                  | 1..1                    | \-            | This is a Boolean field with possible values of Yes or No. This is applicable only when operation is set to *Export*.                                                                                                                                                                                  |
 |                    | \<Truncate\>                     | 1..1                    | \-            | This is a Boolean field with possible values of Yes or No. This is applicable only when operation is set to *Import*.                                                                                                                                                                                   |
 |                    | \<Mode\>                         | 1..1                    | \-            | The mode specifies the method using which the operation must be performed. The possible values are:                                                                                                                                                                                                        |
 |                    | \<ConfigurationOnly\>            | 1..1                    | \-            | This is a Boolean field with possible values of Yes or No. This must be set to Yes if the task is only to configure the data project but not to perform the specified operation.                                                                                                                     |
@@ -149,15 +148,7 @@ The **\<JobDefinition\>** element defines the data project definition. There can
 |                    | \<LegalEntity\>                  | 1..1                    |               | This is used to specify the legal entity in which the import/export job must be executed.                                                                                                                                                                                                                  |
 |                    | \<ConfigurationOnly\>            | 1..1                    |               | This is used to create data projects and recurring schedules to be configured. The operation of import or export will not be executed. However, it is required to specify the operation and mode for the data project to be configured correctly. This is a Boolean field which takes Yes or No.             |
 
--   Import
 
--   Export
-
--   Import async
-
--   Export async
-
--   Recurring batch – this uses the enqueue/dequeue API’s.
 
 ### Entity setup
 The **Entity setup** section defines the characteristics of an entity that a task in the manifest will use. There can be more than one definition, one for each entity that is used by the tasks in the manifest.
@@ -174,12 +165,14 @@ The **Entity setup** section defines the characteristics of an entity that a tas
         <SetBasedProcessing></SetBasedProcessing>
         <FailBatchOnErrorForExecutionUnit>No</FailBatchOnErrorForExecutionUnit>
         <FailBatchOnErrorForLevel>No</FailBatchOnErrorForLevel>
-        <FailBatchOnErrorForSequence>No</FailBatchOnErrorForSequence>
+        <DisableEntity>No</DisableEntity>
+        <SkipStaging>Yes</SkipStaging>
         <ParallelProcessing>
             <Threshold></Threshold>
             <TaskCount></TaskCount>
         </ParallelProcessing>
-    </Entity>
+        <MappingDetail StagingFieldName='RoundingRulePrices' AutoGenerate='Yes' AutoDefault='No' DefaultValue='' IgnoreBlankValues='No' TextQualifier='No' UseEnumLabel='No'/>
+        </Entity>
 </EntitySetup>
 ```
 | **Parent element**     | **Element**                          | **Element cardinality** | **Attribute**     | **Description**                                                                                                                                                                                                                                                                                  |
@@ -195,6 +188,8 @@ The **Entity setup** section defines the characteristics of an entity that a tas
 |                        | \<SetBasedProcessing\>               | 1..1                    | \-                | This is a Boolean field with possible values of Yes or No. It is used to enable or disable set based processing on an entity.                                                                                                                                                                 |
 |                        | \<FailBatchOnErrorForExecutionUnit\> | 1..1                    | \-                | This is a Boolean field with possible values of Yes or No. It is used to enable or disable failure at execution unit level on an entity.                                                                                                                                                      |
 |                        | \<FailBatchOnErrorForLevel\>         | 1..1                    | \-                | This is a Boolean field with possible values of Yes or No. It is used to enable or disable failure at execution level on an entity.                                                                                                                                                           |
+|                        | \<DisableEntity\>         | 1..1                    | \-                | This is a Boolean field with possible values of Yes or No. It is used to enable or disable an entity in a data project.                                                                                                                                                           |
+|                        | \<SkipStaging\>         | 1..1                    | \-                | This is a Boolean field with possible values of Yes or No. It is used to skip staging table for an entity during exports.                                                                                                                                                           |
 |                        | \<ParallelProcessing\>               | 1..1                    | \-                | This is used to define the parallel processing set up for an entity. The task will delete these settings if already exits at the beginning of the task and it will delete the created settings at the end of its execution.                                                                      |
 | \<ParallelProcessing\> | \<Threshold\>                        | 1..1                    | \-                | This specifies the threshold for the parallel processing rule.                                                                                                                                                                                                                                   |
 |                        | \<TaskCount\>                        | 1..1                    | \-                | This is used to specify the number of parallel tasks to be used for parallel processing.                                                                                                                                                                                                         |
@@ -304,7 +299,6 @@ This first example configures a data project that doesn't have a recurring sched
         <JobDefinition ID='ImportJobDefinition_1'>
             <ConfigurationOnly>Yes</ConfigurationOnly>
             <Operation>Import</Operation>
-            <SkipStaging>No</SkipStaging>
             <Truncate>No</Truncate>
             <Mode>Import async</Mode>
             <BatchFrequencyInMinutes>1</BatchFrequencyInMinutes>
@@ -386,7 +380,6 @@ The following manifest shows the setup of demo data for three legal entities whe
 
         <JobDefinition ID='ImportJobDefinition_1'>
                 <Operation>Import</Operation>
-                <SkipStaging></SkipStaging>
                 <Truncate></Truncate>
                 <Mode>Import async</Mode>
                 <BatchFrequencyInMinutes>1</BatchFrequencyInMinutes>

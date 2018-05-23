@@ -70,6 +70,11 @@ The Microsoft Service Engineering team will take your environment offline, compl
     -   Reschedule the request by clicking the ID, or by selecting the request and then clicking **Reschedule** on the toolbar. You can then change the downtime windows dates and times, and the point in time to restore to.
     -   Cancel the request by selecting the request and then clicking **Cancel** on the toolbar.
 
+## Enable change tracking
+If change tracking was enabled in the database, ensure to enable change tracking again in the newly restored database using the ALTER DATABASE command.
+
+To ensure current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management. This can be done on any entity as this is needed to trigger the refresh of store procedure.
+
 ## Conditions of a point-in-time restore
 Here is the list of requirements and conditions of operation for a point-in-time restore:
 

@@ -241,10 +241,10 @@
 ##### [Accounting distributions](../financials/accounts-payable/accounting-distributions.md)
 ##### [Process allocations](../financials/general-ledger/process-allocations.md)
 ##### [Financial dimensions](../financials/general-ledger/financial-dimensions.md)
-##### [Convert accounting or reporting currencies](../financials/general-ledger/convert-accounting-reporting-currencies.md)
 ##### [Consolidation account groups and accounts](../financials/budgeting/consolidation-account-groups-consolidation-accounts.md)
 ##### [Consolidation and elimination overview](../financials/budgeting/consolidation-elimination-overview.md)
 ##### [Fiscal calendars, fiscal years, and periods](../financials/budgeting/fiscal-calendars-fiscal-years-periods.md)
+##### [Configure account structures](../financials/general-ledger/configure-account-structures.md)
 #### Journals and ledgers
 ##### [General journal processing](../financials/general-ledger/general-journal-processing.md)
 ##### [Post periodic journals](../financials/general-ledger/tasks/post-periodic-journals.md)
@@ -286,7 +286,7 @@
 ##### [Set up sales tax groups and item sales tax groups](../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md)
 ##### [Set up sales tax reporting codes](../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md)
 ##### [Set up sales tax settlement periods](../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md)
-##### [Set up withholding tax](../financials/general-ledger/tasks/set-up-withholding-tax.md
+##### [Set up withholding tax](../financials/general-ledger/tasks/set-up-withholding-tax.md)
 ##### [View posted sales tax transactions](../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md)
 
 ### [Accounts payable](../financials/accounts-payable/accounts-payable.md)
@@ -330,6 +330,7 @@
 ##### [Take a cash discount outside the cash discount period](../financials/accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
 ##### [Take a discount that is more than the calculated discount for a vendor payment](../financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
 ##### [Vendor payments for a partial amount](../financials/accounts-payable/vendor-payments-partial-amount.md)
+#### [Specify a cross rate](../financials/accounts-payable/specify-cross-rate.md)
 
 ### [Accounts receivable](../financials/accounts-receivable/accounts-receivable.md)
 #### [Credit and collections in Accounts receivable](../financials/accounts-receivable/collections-credit-accounts-receivable.md)
@@ -348,6 +349,7 @@
 #### [Establish customer payment terms](../financials/general-ledger/tasks/establish-customer-payment-terms.md)
 #### [Set up bills of exchange](../financials/accounts-receivable/set-up-bills-exchange.md)
 #### [Close Accounts receivable](../financials/accounts-receivable/close-accounts-receivable.md)
+#### [Add new location roles](../financials/accounts-receivable/location-relationship.md)
 
 #### Accounts receivable tasks
 ##### [Assign a free text invoice template to a customer](../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md)
@@ -612,7 +614,7 @@
 ##### [Add report boxes and generate the BAS](../financials/localizations/tasks/add-bas-report-boxes.md)
 ##### [Low-value pool depreciation](../financials/localizations/apac-aus-low-value-pool-depreciation.md)
 ##### [Set up reason codes for the BAS](../financials/localizations/tasks/set-up-reason-codes-australia-bas.md)
-#### China
+#### [China](../financials/localizations/china.md)
 ##### [Bill of materials comparison](../financials/localizations/apac-chn-bom-comparison.md)
 ##### [Chinese hierarchy of chart of accounts](../financials/localizations/tasks/china-hierarchy-chart-accounts.md)
 ##### [Chinese voucher continuity check](../financials/localizations/tasks/chinese-voucher-continuity-check.md)
@@ -852,6 +854,7 @@
 ##### [Split periods in periodic journals](../financials/localizations/emea-create-post-periodic-journals.md)
 ##### [Update how amounts are displayed on reports and documents](../financials/localizations/emea-amount-printing-forms.md)
 ##### [VAT statement](../financials/localizations/emea-cze-vat-statement-details.md)
+##### [Year-end close](../financials/localizations/emea-cze-hun-year-end.md)
 
 #### Denmark
 ##### [Assign a payment slip format to a customer account](../financials/localizations/tasks/assign-payment-slip-format-customer-account.md)
@@ -866,7 +869,7 @@
 ##### [Set up OIOUBL electronic invoicing](../financials/localizations/tasks/set-up-oioubl-electronic-invoicing.md)
 ##### [Set up payment slip format](../financials/localizations/tasks/set-up-payment-slip-format.md)
 
-#### Estonia
+#### [Estonia](../financials/localizations/estonia.md)
 ##### [Personal information requests](../financials/localizations/emea-est-personal-info.md)
 ##### [VAT statement](../financials/localizations/emea-est-vat-statement-details.md)
 
@@ -915,6 +918,7 @@
 ##### [Low-cost fixed assets](../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 ##### [Move a fixed asset to inventory](../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
 ##### [Tax reimbursement documents](../financials/localizations/emea-hun-tax-reimbursement-docs.md)
+##### [Year-end close](../financials/localizations/emea-cze-hun-year-end.md)
 
 #### Iceland
 ##### [Create a vendor account and attach the invoice declaration category](../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md)
@@ -968,6 +972,7 @@
 ##### [Returnable packaging](../financials/localizations/emea-pol-returnable-packages.md)
 ##### [Sales tax reports](../financials/localizations/emea-pol-sales-tax-reports.md)
 ##### [Standard audit file](../financials/localizations/emea-pol-standard-audit-file-saf.md)
+##### [Tax interest and free-hand interest](../financials/localizations/emea-pol-interest-calculation.md)
 ##### [Turnover balances statement](../financials/localizations/emea-pol-turnover-balances-statement.md)
 #### Spain
 ##### [Apply cash discounts in the invoice](../financials/localizations/emea-esp-cash-discount-applied-invoice.md)
