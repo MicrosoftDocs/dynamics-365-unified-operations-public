@@ -5,7 +5,7 @@ title: Client internet connection
 description: This topic covers what will happen if a client machine cannot access the internet in on-premises deployments.
 author: jasongre
 manager: AnnBe
-ms.date: 03/08/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,7 +42,7 @@ The configuration of the local network for an on-premises deployment of Dynamics
 + Users will see their initials instead of a user image. 
 + Skype integration will not be available.  
 + The favorite icon shown in the browser tab will be the browser's default favorite icon instead of the Finance and Operations icon. 
-+ Open in Excel options are hidden since the Excel Add-in will not run.
++ The Open in Excel options are hidden because the Excel Add-in will not run.
 
 In addition to platform features that may not be accessible when the client can't access the internet, there may also be application features that rely on an internet connection that developers will need to hide or switch off. To facilitate this, developers can use the **clientHasRestrictedInternet()** method that has been added to the **Session** class. This method will return true if the client does not have access to the internet.
 
