@@ -43,9 +43,6 @@ By opening entity data in Excel, you can quickly and easily view and edit the da
 
 To learn more about using the Excel add-in, watch the short [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) video.
 
-> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
-
-
 ## Open entity data in Excel when you start from Finance and Operations
 1. On a page in Finance and Operations, select **Open in Microsoft Office**.
 
