@@ -36,11 +36,7 @@ ms.search.validFrom: 2017-07-8
 
 The Prospect to cash solution provides direct synchronization across Dynamics 365 for Finance and Operations, and Dynamics 365 for Sales. The Prospect to cash templates that are available with the Data Integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales. While data is flowing between Finance and Operations and Sales, you can perform sales and marketing activities in Sales, and you can handle order fulfillment by using inventory management in Finance and Operations. 
 
-For more information about the Prospect to cash integration, watch the short YouTube video:
-
-> [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
-
-[Prospect to cash integration (YouTube video)](https://youtu.be/AVV9x5x-XCg) 
+For more information about the Prospect to cash integration, watch the short YouTube video: [Prospect to cash integration](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).
 
 In the current version, the Prospect to cash solution provides the following types of direct synchronization:
 
