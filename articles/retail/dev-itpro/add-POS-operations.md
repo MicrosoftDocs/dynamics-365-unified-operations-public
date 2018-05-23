@@ -65,12 +65,13 @@ This section explains how to create a sample operation that does simplified end-
 1. In the **Operations** folder, create a typescript (.ts) file that is named **EndOfDayOperationRequest.ts**.
 2. Open the **EndOfDayOperationRequest.ts** file, and add the following **import** statements to import the relevant entities and context.
 
-```typescript
+    ```typescript
     import { ExtensionOperationRequestBase } from "PosApi/Create/Operations";
     import EndOfDayOperationResponse from "./EndOfDayOperationResponse";
-```
+    ```
 
 3. Add a class that is named **EndOfDayOperationRequest**, and extend it from the **ExtensionOperationRequestBase** class.
+    In this example, the operation ID in the **super** method is initialized to **5001**. However, you can use any operation ID starting from 4001. Operation IDs 0 through 4000 are reserved for internal Retail POS operations, and no two operations should have the same operation ID. Additionally, the custom parameters field appears in Button grid designer properties only if the operation ID is 4001 or higher. (You can use custom parameters field to pass parameters to the POS operation from Retail headquarters).
 
     ```typescript
     /**
@@ -82,9 +83,6 @@ This section explains how to create a sample operation that does simplified end-
         }
     }
     ```
-
-    > [!NOTE]
-    > In this example, the operation ID in the **super** method is initialized to **5001**. However, you can use any operation ID starting from 4001. Operation IDs 0 through 4000 are reserved for internal Retail POS operations, and no two operations should have the same operation ID. Additionally, the custom parameters field appears in Button grid designer properties only if the operation ID is 4001 or higher. (You can use custom parameters field to pass parameters to the POS operation from Retail headquarters).
     
 ### Create the operation response class
 
@@ -122,18 +120,18 @@ This section explains how to create a sample operation that does simplified end-
 
 3. Add a class that is named **EndOfDayOperationRequestHandler**, and extend it from the **ExtensionOperationRequestHandlerBase** class.
 
+    Each handler should implement two methods:
+
+   - supportedRequestType
+   - executeAsync
+   
     ```typescript
     export default class EndOfDayOperationRequestHandler<TResponse extends EndOfDayOperationResponse> extends ExtensionOperationRequestHandlerBase<TResponse> {}
     ```
 
-    Each handler should implement two methods:
-
-    - supportedRequestType
-    - executeAsync
-
 4. Add the supported request type in the class.
 
-```typescript
+    ```typescript
     /**
      * Gets the supported request type.
      * @return {RequestType<TResponse>} The supported request type.
@@ -141,11 +139,11 @@ This section explains how to create a sample operation that does simplified end-
     public supportedRequestType(): ExtensionOperationRequestType<TResponse> {
         return EndOfDayOperationRequest;
     }
-```
+    ```
 
 5. Implement the **executeAsync** method.
 
-```typescript
+    ```typescript
     /**
      * Executes the request handler asynchronously.
      * @param {EndOfDayOperationRequest<TResponse>} request The request.
@@ -212,11 +210,11 @@ This section explains how to create a sample operation that does simplified end-
             });
         }
     }
-```
+    ```
 
-The overall code should look like this.
+    The overall code should look like this.
 
-```typescript
+    ```typescript
     /**
      * SAMPLE CODE NOTICE
      *
@@ -310,19 +308,19 @@ The overall code should look like this.
             });
         }
     }
-```
+    ```
 
 ### Create the operation factory class
 
 1. In the **Operations** folder, create a typescript (.ts) file that is named **EndOfDayOperationRequestFactory.ts**.
 2. Open the **EndOfDayOperationRequestFactory.ts** file, and add the following **import** statements to import the relevant entities and context.
 
-```typescript
+    ```typescript
     import EndOfDayOperationResponse from "./EndOfDayOperationResponse";
     import EndOfDayOperationRequest from "./EndOfDayOperationRequest";
     import { ExtensionOperationRequestFactoryFunctionType, IOperationContext } from "PosApi/Create/Operations";
     import { ClientEntities } from "PosApi/Entities";
- ```
+    ```
 
 3. Add a function to link the operation handler and the operation button.
 
@@ -352,7 +350,7 @@ The overall code should look like this.
 
     The overall code should look like this.
 
-```typescript
+    ```typescript
     /**
      * SAMPLE CODE NOTICE
      *
@@ -386,11 +384,11 @@ The overall code should look like this.
         });
     };
     export default getOperationRequest;
-```
+    ```
 
 4. Open the **manifest.json** file, and paste in the following code.
 
-```typescript
+    ```typescript
     {
         "$schema": "../manifestSchema.json",
         "name": "Pos_Extensibility_EODSample",
@@ -409,11 +407,11 @@ The overall code should look like this.
             }
         }
     }
-```
+    ```
 
 5. Open the **extensions.json** file under the **POS.Extensions** project, and update it with **EODSample**, so that the POS will include the extension at runtime.
 
-```typescript
+    ```typescript
     {
         "extensionPackages": [
             {
@@ -424,11 +422,11 @@ The overall code should look like this.
             }
         ]
     }
-```
+    ```
 
 6. Open the **tsconfig.json** file, and comment out the extension package folders in the exclude list. The POS will use this file to include or exclude the extension. By default, the list contains the whole excluded extensions list. To include an extension as part of the POS, you must add the name of the extension folder and comment out the extension in the extension list, as shown here.
 
-```typescript
+    ```typescript
     "extends": "../tsconfigs/tsmodulesconfig",
     "exclude": [
         "AuditEventExtensionSample",
@@ -443,7 +441,7 @@ The overall code should look like this.
         "StoreHoursSample",
         "SuspendTransactionReceiptSample"
     ],
- ```
+     ```
 
 7. Compile and rebuild the project.
 
@@ -460,8 +458,8 @@ The overall code should look like this.
 9. Go to **Retail and commerce** &gt; **Retail IT** &gt; **Distribution schedule**.
 10. Select **1090**, and then select **Run now**.
 
-> [!NOTE]
-> The preceding steps assume that you're using demo data. If you aren't using demo data, create and add the button according to your custom configurations.
+    > [!NOTE]
+    > The preceding steps assume that you're using demo data. If you aren't using demo data, create and add the button according to your custom configurations.
 
 ## Validate your extension
 
