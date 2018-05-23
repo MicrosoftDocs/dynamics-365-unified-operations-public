@@ -150,6 +150,9 @@ During development it can be useful to attach a debugger to get more detailed in
 
 9. If more changes or validation is needed, repeat the process.
 
+## Change needed for ADFS to support Mobile Client
+If ADFS is in use on the domain, then **ADFS needs to be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA).  The Microsoft Dynamics Unified Operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA  for browser clients (use cases) as documented here: [configure intranet forms based authentication for devices that do not support wia](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)
+
 ## Additional resources
 ### What's new and in development
 Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
