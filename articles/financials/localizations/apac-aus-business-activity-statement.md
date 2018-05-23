@@ -185,6 +185,9 @@ Based on a quarterly BAS format, the following reporting codes must be set up. T
 5.	Select or clear the **Post and settle GST check box**.
 7.	Click **OK**.
 8.	When Electronic Reporting is set up for Australian BAS, the **Print Australian BAS** page is available for you to generate the E-BAS statement.
+
+![Print Australian BAS](media/apac-aus-print-bas.png)
+
 9. Set the **Generate E-BAS** option to be **Yes**.
 10. On the **Select a file** page, select the xml file to use and click **OK**.
 
