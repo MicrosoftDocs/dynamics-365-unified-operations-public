@@ -240,6 +240,7 @@
 ### [Configure MPOS for offline mode](dev-itpro/retail-modern-pos-offline.md)
 ### [MPOS and Cloud POS trigger extensibility](dev-itpro/modern-pos-trigger-extensibility.md)
 ### [Add a custom control to a POS view](dev-itpro/pos-custom-control.md)
+### [Add a new POS operation to the POS layout](dev-itpro/add-POS-operations.md)
 ### [POS payment extension](dev-itpro/pos-payment-extension.md)
 ### [External gift card support](dev-itpro/gift-card.md)
 ### [Create a Retail Experience app](dev-itpro/create-retail-experience-app.md)
