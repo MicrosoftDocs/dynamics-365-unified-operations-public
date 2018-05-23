@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: 
-description: 
+title: Commerce Runtime services
+description: This topic describes the Commerce runtime service (CRT), which is a collection of portable .NET libraries that contain the core business logic for the retail channel and pricing functionalities.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 05/17/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,11 +29,9 @@ ms.search.validFrom: 2018-18-05
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
 
 ---
-# 
+# Commerce Runtime services
 
 [!include [banner](../../includes/banner.md)]
-
-**Commerce Runtime services:**
 
 Commerce runtime (CRT) is a collection of portable .NET libraries that contain the core business logic for the retail channel and pricing functionalities, if you want to add or modify any business logic then you should customize CRT. The Retail POS call the CRT to perform any business logic, CRT process the request and then sends the response back to POS. POS is like a thin client, all the business logic should be done in CRT.
 
@@ -41,7 +39,7 @@ Each CRT service contains one or more Request/Response, CRT service is a group o
 
 In this topic we see some important request/response which you may customize for your business scenario.
 
-**There are three main layers in CRT:**
+There are three main layers in CRT:
 
 1.  Services
 
@@ -51,18 +49,17 @@ In this topic we see some important request/response which you may customize for
 
 Other core components which is required for CRT to function are runtime, authentication, data access managers and avoid any customization on these layers because all business logic customization can be done in services, data access or at workflow level.
 
-**Overall flow:**
+## Overall flow
 
 CRT Service Request < > Zero or more workflow Request < > Zero or more Data Access Request
 
-**Ex:** Create sales order service request will call multiple workflow and data access request to perform the request.
+**Example** Create sales order service request will call multiple workflow and data access request to perform the request.
 
-**CRT Services:**
+## CRT Services
 
 Each CRT service contains one or more Request/Response. Ex: **Customer service** in CRT contains all the customer related and each one is executed in different flow.
 
-Default CRT Services
---------------------
+### Default CRT Services
 
 There are many services in the commerce runtime that support the functionality of retail channel and store operations. You can add your own services or extend the existing services. The following table describes some of the services that you might customize for different business service.
 
@@ -102,7 +99,7 @@ For extension scenarios you can override any of the request inside the service c
 
 Note: You will not customize the Service class you will extend the request/response within the service class, service class by itself doesn’t have any logic it just routes the call to the right request.
 
-**Sample service class implementation:**
+## Sample service class implementation
 
 ```C#
 public class MyService : IRequestHandler
@@ -213,7 +210,8 @@ return myresponse;
 
 }
 ```
-**Extension pattern for CRT:**
+
+## Extension pattern for CRT
 
 1.  Create a new service class and implement one or more request/response – Follow this approach if you want to create new feature.
 
@@ -231,7 +229,8 @@ Note: It doesn’t matter whether you create a data request, workflow request or
 
 3.  **Handler class** – Contains the core logic for the request. Within the handler class you can call other request, do custom logic etc.
 
-**Request class:**
+### Request class
+
 ```C#
 public class MyRequest : Request
 
@@ -299,7 +298,8 @@ protected override MyResponse Process(MyRequest request)
 
 }
 ```
-**Address Service:**
+
+### AddressService
 
 Address service supports the below request/response for different extension scenarios:
 
@@ -313,7 +313,7 @@ Address service supports the below request/response for different extension scen
 | GetFromZipPostalCodeServiceRequest | Gets the list of postal codes supported.          |
 | GetAddressFormattingServiceRequest | Gets the address format for the specific country. |
 
-**BarcodeService:**
+### BarcodeService
 
 | Request                                  | Purpose                                                                    |
 |------------------------------------------|----------------------------------------------------------------------------|
@@ -321,7 +321,7 @@ Address service supports the below request/response for different extension scen
 | GetBarcodeTypeServiceRequest             | Gets the types of barcode supported.                                       |
 | CalculateQuantityFromPriceServiceRequest | Calculates the price and quantity based on the barcode scanned or entered. |
 
-**Cart Service:**
+### CartService
 
 | Request                                                     | Purpose                                                                                     |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------|
@@ -331,7 +331,7 @@ Address service supports the below request/response for different extension scen
 | CalculateEstimatedShippingAuthorizationAmountServiceRequest | The request to calculate estimated shipping authorization amount on the transaction         |
 | ConvertSalesTransactionToCartServiceRequest                 | Convert the sales transaction to cart based on transaction id passed.                       |
 
-**CouponService:**
+### CouponService
 
 | Request                               | Purpose                                                                                          |
 |---------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -339,7 +339,7 @@ Address service supports the below request/response for different extension scen
 | ValidateCouponCodesServiceRequest     | This request validated the coupon code entered in the transactions.                              |
 | UpdateCouponUsageServiceRequest       | The service request to update coupon usage for the transaction                                   |
 
-**Customer Service:**
+### CustomerService
 
 | Request                                      | Purpose                                                                      |
 |----------------------------------------------|------------------------------------------------------------------------------|
@@ -356,7 +356,7 @@ Address service supports the below request/response for different extension scen
 | CustomerSearchByFieldsServiceRequest         | This request is executed when you search by customer by fields (hint search) |
 | GetCustomerSearchFieldsServiceRequest        | This request gets the list of customer search fields (hint fields).          |
 
-**PricingService:**
+### PricingService
 
 | Request                                   | Purpose                                                                                           |
 |-------------------------------------------|---------------------------------------------------------------------------------------------------|
@@ -367,7 +367,7 @@ Address service supports the below request/response for different extension scen
 | GetAllPeriodicDiscountsServiceRequest     | Gets all the periodic discounts configured.                                                       |
 | GetDiscountCodesServiceRequest            | Gets all the discount codes configured.                                                           |
 
-**ProductService:**
+### ProductService
 
 | Request                     | Purpose                                                                                                                                       |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -375,14 +375,14 @@ Address service supports the below request/response for different extension scen
 | GetProductServiceRequest    | Gets the product based on the product id.                                                                                                     |
 | GetProductRefinersRequest   | Retrieves the product refiner values                                                                                                          |
 
-**ProductsService:**
+### ProductsService
 
 | Request                          | Purpose                                                        |
 |----------------------------------|----------------------------------------------------------------|
 | GetProductsServiceRequest        | Gets the products based on the products ids provided.          |
 | GetVariantProductsServiceRequest | The request to get specific variations of master type products |
 
-**ReasonCodeService:**
+### ReasonCodeService
 
 | Request                                                             | Purpose                                                                                        |
 |---------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
@@ -394,7 +394,7 @@ Address service supports the below request/response for different extension scen
 | GetReturnOrderReasonCodesServiceRequest                             | Gets the required reason code for the return transaction.                                      |
 | ValidateReasonCodeLineForUpdateServiceRequest                       | Validates the reason code lines added during the save cart request.                            |
 
-**ReceiptService:**
+### ReceiptService
 
 | Request                               | Purpose                                                                                            |
 |---------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -403,13 +403,13 @@ Address service supports the below request/response for different extension scen
 | GetEmailReceiptServiceRequest         | The service request to get the formatted receipts that will be used for print and email scenarios. |
 | PopulateTaxSummaryIndiaServiceRequest | The request to populate tax summary for India transaction                                          |
 
-**SearchProductsService:**
+### SearchProductsService
 
 | Request                      | Purpose                                                          |
 |------------------------------|------------------------------------------------------------------|
 | SearchProductsServiceRequest | This requested is executed when you search for product from POS. |
 
-**TaxService:**
+### TaxService
 
 | Request                      | Purpose                                                                                                                                                                               |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -417,7 +417,7 @@ Address service supports the below request/response for different extension scen
 | AssignTaxCodesServiceRequest | The request to assign tax codes on the transaction's taxable items prior the tax calculation. The default tax calculation handler of CalculateTaxServiceRequest is using this message |
 | PopulateTaxRatesRequest      | The request to populate tax rates for recalled transaction. There is no tax percentage information persisted for tax lines. This message handler restores it                          |
 
-### **Workflow**
+## Workflow layer
 
 On top of the services layer is the workflow layer. A workflow is a collection of services and business logic that together define business processes. For example, when a customer adds an item to the cart, you could use workflow to get the price, perform validation, check inventory quantity, calculate shipping, calculate tax, and calculate discounts. You can customize the existing workflows, or you can create new workflows. You can even use a workflow to connect to a third-party system as part of your business processes.
 
@@ -427,7 +427,8 @@ Ex: When you create a cash & carry transaction or customer order we perform lot 
 
 The Save cart workflow process will have the below three classes implemented:
 
-**Request class:**
+### Request class
+
 ```C#
 public class SaveCartRequest : Request
 
@@ -497,11 +498,9 @@ protected override SaveCartResponse Process(SaveCartRequest request)
 ```
 All our workflow classes will follow the same pattern.
 
-**Default Workflows and Handlers:**
+### Default Workflows and Handlers
 
 Below is the list of default workflow request which been called one more service based on the operation you perform in POS. You can customize any of these workflows according to your business scenario:
-
-**Orders:**
 
 | Request                           | Handler                                 | Purpose                                                                                        |
 |-----------------------------------|-----------------------------------------|------------------------------------------------------------------------------------------------|
@@ -537,4 +536,3 @@ Below is the list of default workflow request which been called one more service
 | UploadOrderRequest                | UploadOrderRequestHandler               | Request for uploading sales order                                                              |
 | ValidateCartForCheckoutRequest    | ValidateCartForCheckoutRequestHandler   | Validate cart for checkout request                                                             |
 
-All the other default services details will be updated soon.
