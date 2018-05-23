@@ -116,8 +116,8 @@ The following list provides an overview of the process to calculate GST and prep
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>Create and save the BAS XML file</td>
+    <td>This is the file that you'll use when you generate and print the Australian BAS. See the [sample XML](apac-aus-business-activity-statement.md#sample-xml-file) for more information.</td>
   </tr>
   <tr>
     <td></td>
