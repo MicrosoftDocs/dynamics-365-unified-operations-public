@@ -60,10 +60,9 @@ Here are the high-level steps in the upgrade process.
 
 This task involves the AX 2012 system administrator and the server administrators.
 
-You must stop all batch jobs that are running at the time of cutover. A long-running batch job that has already started to run will prevent the system from stopping. Plan ahead, so that you can stop your AOS instances at the desired moment. You might have to schedule batches so that they're completed some time before you turn off AX 2012.
+Before you turn off AOS instances, you must stop all batch jobs that are running. A long-running batch job that has already started to run will prevent the system from stopping. Plan ahead, so that you can stop your AOS instances when needed. You might have to schedule batches so that they're completed some time before you turn off AX 2012.
 
-You might have other systems that are integrated with the AX 2012 environment. You must factor these systems into your plan to turn off AX 2012. For example, you might have to turn off the integrated systems some time before you turn off AX 2012 itself, so that any remaining in-flight transactions can be completed. The requirements for integrated systems vary widely from business to business. Therefore, your team of experts must plan for this scenario independently.
-
+You might have other systems that are integrated with the AX 2012 environment. You must also factor these systems into your plan to turn off AX 2012. For example, you might have to turn off the integrated systems some time before you turn off AX 2012 itself, so that any remaining in-flight transactions can be completed. The requirements for integrated systems vary widely from business to business. Therefore, your team of experts must plan for this scenario independently.
 
 ## Create a copy of the AX 2012 database
 
