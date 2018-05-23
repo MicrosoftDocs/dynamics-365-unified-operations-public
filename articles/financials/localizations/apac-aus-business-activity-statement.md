@@ -117,7 +117,7 @@ The following list provides an overview of the process to calculate GST and prep
   </tr>
   <tr>
     <td>Create and save the BAS XML file</td>
-    <td>This is the file that you'll use when you generate and print the Australian BAS. See the [sample XML](apac-aus-business-activity-statement.md#sample-xml-file) for more information.</td>
+    <td>This is the file that you'll use when you generate and print the Australian BAS. See a <a href="apac-aus-business-activity-statement#sample-xml-file">sample XML file</a> for more information.</td>
   </tr>
   <tr>
     <td></td>
@@ -224,8 +224,6 @@ Before using the XML file, be sure to change the values for each of the fields b
                 
 > [!NOTE]
 > The dates must be in dd//mm//yyyy format.
-
-
 
 ## Additional resources
 [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
