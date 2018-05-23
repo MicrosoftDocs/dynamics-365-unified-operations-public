@@ -5,7 +5,7 @@ title: Create new POS Operation
 description: POS Operation allows to execute custom business logic based on user click. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 02/12/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.2.0, Retail September 2017 update
 
 ---
 
-**How to create new POS Operation:**
+## How to create a new POS Operation
 
 This topic explains how to create a new POS operation and add it to the POS layout using Button grid designer. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8 with retail App update 4 hotfix.
 
