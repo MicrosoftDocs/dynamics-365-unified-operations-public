@@ -33,15 +33,15 @@ ms.dyn365.ops.version: Platform update 4
 
 ## Sending emails
 
-The SysMailer framework is a new, extensible way to send email in Microsoft Dynamics AX7.  It is a replacement for all previous mail APIs such as CDO.Messaging (SysMailer), MAPI (SysINetMail), and Outlook COM (SmmOutlookEmail). The older mail APIs will not work correctly in Dynamics 365 Finance and Operations, Enterprise edition, because they all used client-side. SysMailer leverages the SysPlugin framework as well as several .NET technologies to provide a configurable experience for the user while allowing the application consumers to remain agnostic to the email option that the user chooses to send their email.
+The SysMailer framework is a new, extensible way to send email in Microsoft Dynamics 365 for Finance and Operations.  It is a replacement for all previous mail APIs such as CDO.Messaging (SysMailer), MAPI (SysINetMail), and Outlook COM (SmmOutlookEmail). The older mail APIs will not work correctly in Finance and Operations. SysMailer leverages the SysPlugin framework as well as several .NET technologies to provide a configurable experience for the user while allowing the application consumers to remain agnostic to the email option that the user chooses to send their email.
 
 The SysMailer framework consists of a factory class (used to retrieve an email provider), a set of email providers (that send messages), a message builder (that builds the messages), and the forms related to configuring and interacting with the email providers. An application developer consumes the SysMailer framework primarily by using the **SysMailerFactory** and **SysMailerMessageBuilder** classes. The email provider factory is used to retrieve interactive or non-interactive email providers to send multiple messages at a time, or to directly send a message. The email providers expect the messages they send to be encapsulated within .NET **System.Net.Mail.MailMessage** objects. The message builder class is used to build the .NET object to pass to the email provider.
 
 ### Scenarios
 
 Three scenarios are described:
-- Sending an interative message.
-- Sending a non-interactive (batch) message.
+- Sending an interative message
+- Sending a non-interactive (batch) message
 - Sending multiple non-interactive (batch) messages
 
 #### Sending an interactive message
@@ -197,6 +197,6 @@ Dynamics.AX.Application.File::SendFileToUser(emlStream, 'message.eml');
 
 The **System.Net.Mail.MailMessage** object contains a large amount of advanced functionality related to MIME messages. You can build a relatively complex message object and pass it to an email provider. If there are certain functionalities that an email provider does not support, it is expected that the email provider will handle it either actively by modifying the message, passively by calling to another email provider internally, or not at all by throwing an error.
 
-## Migration from AX2012 to Dynamics 365 for Finance and Operations, Enterprise edition
+## Migration from AX 2012 to Finance and Operations
 
-Migration involves using the **SysMailerMessageBuilder** object to build a message and then using the **SysMailerFactory** to send it, as outlined in the examples in this document. Where extensions were made to the old mail system functionality, those extensions should be evaluated to determine whether that functionality needs to be built into the new framework as well.
+Migration involves using the **SysMailerMessageBuilder** object to build a message and then using the **SysMailerFactory** to send it, as outlined in the examples in this document. Where extensions were made to the old mail system functionality.
