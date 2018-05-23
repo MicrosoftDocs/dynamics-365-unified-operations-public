@@ -326,8 +326,6 @@ To enable creation of header records and related lines, the header data source m
 
 To learn more about header records and related lines, watch the short [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) video.
 
-> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
-
 To design a workbook with header fields and a lines table that enables header creation:
 1. In the Excel Add-in, click **Design** to open the Designer. Select **Add fields** to add a header data source.
 2. Select the header fields that you want to use. Be sure to include all the key fields or the **New** button won't be enabled.
