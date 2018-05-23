@@ -63,7 +63,7 @@ The following list provides an overview of the process to calculate GST and prep
 <tbody>
 <tr>
 <td>Country/region</td>
-<td>The primary address for the legal entity must be in the following countries/regions: Australia</td>
+<td>The primary address for the legal entity must be in the following countries/regions: Australia.</td>
 </tr>
 <tr>
   <td>Download Electronic reporting configurations</td>
@@ -73,7 +73,7 @@ The following list provides an overview of the process to calculate GST and prep
 <td>General ledger parameters</td>
   <td><ul>
     <li>Set the <strong>Apply sales tax taxation rules</strong> option to <strong>No</strong> on the <strong>General ledger parameters </strong> page.</li>
-    <li>In the **Sales tax** area, select <strong>BAS(AU)</strong> for the **Australian BAS** **Format mapping** field.</li>
+    <li>In the <strong>Sales tax</strong> area, select <strong>BAS(AU)</strong> for the <strong>Australian BAS Format mapping</strong> field.</li>
     </ul>
 </td>
 </tr>
