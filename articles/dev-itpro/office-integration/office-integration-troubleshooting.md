@@ -94,9 +94,13 @@ If you have concerns about giving users access to the data via the Excel Add-in,
 - The entities should have all the validation and logic that the forms have. If they don't, it's a bug. 
 - The way that entities are secured resembles the way that forms are secured. Therefore, if a user should not have permission to update or write data by using a form that exposes that data, the user should not have permission to update or write data by using an entity that exposes that data. 
 
-## Why is the Publish button in the Excel Add-in unavailable? 
+### Why is the Publish button in the Excel Add-in unavailable? 
 
 All key and mandatory fields must be present to publish data back to the entity. Try to edit the design to add more fields to the binding. 
+
+### Why are the Excel Add-in, the Word Add-in, and the Open in Excel options only available when the Internet is available?
+
+For all environments, including on-premise, the Excel Add-in and the Word Add-in, and the libraries they use, are loaded from multiple Internet locations and therefore it will only run when the Internet is available. For on-premise environments, when the Internet is not available, then the Open in Excel options are hidden since the Excel Add-in will not run without access to the Content Delivery Network (CDN) that houses the Excel Addin. 
 
 ## Troubleshooting issues
 
