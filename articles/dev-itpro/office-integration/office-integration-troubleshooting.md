@@ -100,7 +100,7 @@ All key and mandatory fields must be present to publish data back to the entity.
 
 ### Why are the Excel Add-in, the Word Add-in, and the Open in Excel options only available when the Internet is available?
 
-For all environments, including on-premise, the Excel Add-in and the Word Add-in, and the libraries they use, are loaded from multiple Internet locations and therefore it will only run when the Internet is available. For on-premise environments, when the Internet is not available, then the Open in Excel options are hidden since the Excel Add-in will not run without access to the Content Delivery Network (CDN) that houses the Excel Addin. 
+For all environments, including on-premises, the Excel and Word Add-ins, and the libraries they use, are loaded from multiple Internet locations and therefore will only run when the Internet is available. For on-premises environments, when the Internet is not available, the Open in Excel options are hidden because the Excel Add-in will not run without access to the Content Delivery Network (CDN) that houses the Excel Add-in. 
 
 ## Troubleshooting issues
 
