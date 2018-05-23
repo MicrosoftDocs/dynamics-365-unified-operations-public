@@ -5,7 +5,7 @@ title: Mobile platform home page
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 03/07/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -149,6 +149,9 @@ During development it can be useful to attach a debugger to get more detailed in
 8. If a needed change is identified, make those changes in X++, and push those changes into the environment.
 
 9. If more changes or validation is needed, repeat the process.
+
+## Change needed for ADFS to support Mobile Client in on-premises environments 
+If ADFS is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The Microsoft Dynamics Unified Operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support wia](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)
 
 ## Additional resources
 ### What's new and in development
