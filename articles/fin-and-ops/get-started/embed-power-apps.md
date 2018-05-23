@@ -37,8 +37,6 @@ In Platform update 14, Microsoft Dynamics 365 for Finance and Operations support
 
 To learn more about embedding PowerApps, watch the short [How to embed PowerApps in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY) video.
 
-> [!Video https://www.youtube.com/embed/x3qyA1bH-NY]
-
 ## Adding an embedded PowerApp to a page
 ### Overview
 Before embedding a PowerApp into the Finance and Operations client, you first need to find or build a PowerApp with the desired visuals and/or functionality. We will not describe the detailed process for building a PowerApp here. The [Introduction to PowerApps](https://docs.microsoft.com/en-us/powerapps/getting-started) topic is a good starting point if you are new to PowerApps.
