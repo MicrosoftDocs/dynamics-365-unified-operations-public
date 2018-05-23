@@ -54,8 +54,6 @@ When you take action on some optimization opportunities, the system calculates t
 
 To learn more about Optimization advisor, watch the short [Optimization advisor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ) video.
 
-> [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
-
 ## Optimization rules
 
 To view the complete list of Optimization advisor rules and to see how often the rules are evaluated, go to **System administration** &gt; **Periodic tasks** &gt; **Maintain diagnostics validation rule**. Only rules that have a status of **Active** are evaluated. The evaluation frequency can be set to **Daily**, **Weekly**, **Monthly**, or **Unscheduled**.
