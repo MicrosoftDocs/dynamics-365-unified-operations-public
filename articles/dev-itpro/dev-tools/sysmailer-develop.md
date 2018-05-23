@@ -5,7 +5,7 @@ title: Develop email experiences
 description:
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/21/2017
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
