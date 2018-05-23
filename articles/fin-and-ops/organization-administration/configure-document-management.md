@@ -132,3 +132,6 @@ File types include Microsoft Word documents and images. A file type is denoted b
 ### Does document management integrate with Office 365?
 
 Yes. SharePoint storage is supported natively and can be selected as the storage location for a document type. In addition, any URL addressable file can be made an attachment via the **URL** document type.
+
+### How does the default storage location for Document Management change in on-premise environments?
+For on-premise, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premise instead of being stored in the cloud. The default storage location for attachments is therefore a file folder.
