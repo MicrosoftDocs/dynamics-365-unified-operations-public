@@ -223,7 +223,7 @@ Before using the XML file, be sure to change the values for each of the fields b
             case 'fMANUAL_MODE' : //manualMode
                 
 > [!NOTE]
-> The dates must be in dd//mm//yyyy format.
+> The dates must be in dd/mm/yyyy format.
 
 ## Additional resources
 [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
