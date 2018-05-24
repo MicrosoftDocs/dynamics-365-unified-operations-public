@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Event 
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 ## Index
 

@@ -5,7 +5,7 @@ title: Retail Modern POS installation and updates
 description: This topic describes how to configure, download, and install Retail Modern POS on various platforms. It then describes how to activate Retail Modern POS through device activation.
 author: jashanno
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Retail Modern POS configuration and installation
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to configure, download, and install Retail Modern POS on various platforms. It then describes how to activate Retail Modern POS through device activation.
 
@@ -53,7 +53,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 - Verify that you have Azure AD credentials that you can use to sign in to Retail headquarters.
 - Verify that you have administrative or root access to install Retail Modern POS on a device.
 - Verify that you can access the Retail Server from the device.
-- Verify that the Microsoft Dynamics 365 for Retail, Enterprise edition, environment contains the Retail permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
+- Verify that the Microsoft Dynamics 365 for Retail, environment contains the Retail permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
 
 ## <a id="Install"> </a>Download and install Retail Modern POS
 ### Verify that the device is correctly configured
@@ -105,10 +105,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 ### Run the installer on a Windows computer
 
 > [!NOTE]
-> Before you run the Retail Modern POS installer, make sure that the following requirements are met:
-> - The installer requires that the Microsoft .NET Framework version 4.5.1 or above be installed on the system.
-> - The installer installs Retail Modern POS only on the following operating systems:
->     - Windows 10 Pro, Enterprise, or Enterprise Long Term Servicing Branch (LTSB) edition with Anniversary Update (both x86 and x64 architectures).
+> Before you run the Retail Modern POS installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
 > - The installer will sideload a modern application. Therefore, a Group Policy entry must be set to allow for sideloaded applications. The installer will change the associated registry key as follows to allow for this installation:
 >     - **Path:** HKLM:SoftwarePoliciesMicrosoftWindowsAppx
 >     - **Property:** AllowAllTrustedApps
@@ -310,6 +307,6 @@ On a single-computer system, such as a developer topology or a demo environment,
 
 **Solution:** This issue occurs because Retail Modern POS can't make network calls to the same computer (that is, calls to itself). To mitigate this issue, you must enable an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Retail Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](https://msdn.microsoft.com/en-us/library/windows/apps/hh780593.aspx).
 
-## See also
+## Additional resources
 
 [Install the POS Layout designer](install-pos-layout-designer.md)

@@ -32,13 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Install report design templates
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible branding in the header and footer.
 
 ## Introduction
 
-A new set of developer tools is available that takes the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding appears in the header and footer of public-facing documents when transactions are generated in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The following illustration shows how an earlier design for a sales invoice differs from a modern sales invoice design.
+A new set of developer tools is available that takes the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding appears in the header and footer of public-facing documents when transactions are generated in Microsoft Dynamics 365 for Finance and Operations. The following illustration shows how an earlier design for a sales invoice differs from a modern sales invoice design.
 
 [![Examples of an earlier sales invoice design and a modern sales invoice design](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
 
@@ -78,7 +78,7 @@ Follow these steps to install the modern report designs for the application suit
     ModelUtil.exe -import -metadatastorepath=J:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
     ```
 
-    For more information about how to import model files, see [Distribution of models: How to export and import a model](..\dev-tools\models-export-import.md). After you've imported the model file, start Microsoft Visual Studio 2015. In Application Explorer, verify that the **Application Suite - Modern Designs** collection appears under the **AOT** node.
+    For more information about how to import model files, see [Distribution of models: How to export and import a model](../dev-tools/models-export-import.md). After you've imported the model file, start Microsoft Visual Studio 2015. In Application Explorer, verify that the **Application Suite - Modern Designs** collection appears under the **AOT** node.
 
 Now that you've successfully imported the Application Suite Modern Designs model, you must to rebuild the application suite to update the metadata elements.
 

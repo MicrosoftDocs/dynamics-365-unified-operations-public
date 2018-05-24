@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3
 
 # What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
 
@@ -74,7 +74,7 @@ Enhanced integration of Prospect to cash between Dynamics 365 for Sales and Dyna
 -------------------------------------------------------------------------------------------------------------------
 
 Enhancements to Prospect to cash integration between Dynamics 365 for Sales and
-Dynamics 365 for Finance and Operations, Enterprise edition enable direct
+Dynamics 365 for Finance and Operations, Enterprise edition 7.3 enable direct
 synchronization in the following processes:
 
 -   Maintain accounts in Sales and sync them to Finance and Operations as

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Track time off for FMLA
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to track Family and Medical Leave Act (FMLA) eligibility and hours that are worked to meet federal requirements.
 
@@ -41,7 +41,7 @@ This topic explains how to track Family and Medical Leave Act (FMLA) eligibility
 The following table shows the prerequisites must be in place before you start.
 
 > [!NOTE]
-> The cases and payroll features are available only in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+> The cases and payroll features are available only in Microsoft Dynamics 365 for Finance and Operations.
 
 | Category                  | Prerequisite |
 |---------------------------|--------------|

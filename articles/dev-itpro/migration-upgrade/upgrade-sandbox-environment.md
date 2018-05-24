@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process for upgrading a sandbox environment
-description: This topic describes the steps for deploying an upgrade to a non-production sandbox or standalone sandbox environment. 
+description: This topic describes the steps for performing a data upgrade to a non-production sandbox or standalone sandbox environment. 
 author: tariqbell
 manager: AnnBe
 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Process for upgrading a sandbox environment
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the steps for performing a data upgrade on a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher sandbox environment.
 
@@ -58,7 +58,7 @@ Export the database from the existing sandbox environment that you want to upgra
 Export your report definitions, or building block groups, from the Report designer. Then move the exported file to a secure location, so that you can use the file later to reimport the report definitions. For more information, see [Building block group](https://msdn.microsoft.com/en-us/library/dn464326.aspx#Exportabuildingblockgroup). By copying or uploading the exported file to a secure location, you can import it into a different environment later. For more information, see [Transfer data with the AzCopy on Windows](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/).
 
 > [!IMPORTANT]
-> Microsoft doesn't provide a storage account as part of your agreement for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. You must either purchase a storage account or use a storage account from a separate Microsoft Azure subscription.
+> Microsoft doesn't provide a storage account as part of your agreement for Microsoft Dynamics 365 for Finance and Operations. You must either purchase a storage account or use a storage account from a separate Microsoft Azure subscription.
 >
 > Be aware of the behavior of drive D on Azure virtual machines (VMs). Don't try to permanently store your exported building block groups on drive D, because you might lose them. For more information, see the [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) blog post.
 
@@ -80,6 +80,11 @@ Import the database from a bacpac file into the newly redeployed sandbox environ
 ## Run the data upgrade package
 
 Run the data upgrade by following the steps in [Upgrade data in development, demo or sandbox environments](upgrade-data-to-latest-update.md).
+
+
+## Deploy retail customizations 
+
+If your environment requires customizations for retail channel components, after you run the data upgrade package, follow the steps in [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md) to re-apply your retail combined deployable package.
 
 ## Update additional components
 

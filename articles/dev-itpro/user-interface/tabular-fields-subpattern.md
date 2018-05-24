@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Tabular Fields subpattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Tabular Fields subpattern. This subpattern is used to show information efficiently in a tabular format. 
 
@@ -51,7 +50,7 @@ This subpattern is used to show information efficiently in a tabular format. The
 [![TabularFields(2)](./media/tabularfields2.png)](./media/tabularfields2.png)
 
 ## Pattern changes
-In previous releases of Microsoft Dynamics AX, there was no formally accepted way to model this pattern. Therefore, this pattern was modeled in many inconsistent ways that must be modified to match the current pattern. The most common way to model this pattern was to use groups for columns. However, groups are now used for the rows. The primary reason for this change was to better match the HTML/CSS constructs, and it also helps keep the tab sequence and semantics of a table.
+In previous releases of Microsoft Dynamics AX, there was no formally accepted way to model this pattern. Therefore, this pattern was modeled in many inconsistent ways that must be modified to match the current pattern. The most common way to model this pattern was to use groups for columns. However, groups are now used for the rows. The primary reason for this change was to better match the HTML/CSS constructs, and it also helps keep the tab sequence and semantics of a table.
 
 ## Model
 ### High-level structure
@@ -77,7 +76,7 @@ In previous releases of Microsoft Dynamics AX, there was no formally accepted wa
         - *Column0Label (StaticText) \[Optional\]* – **Note:** This static text fills col0, footer with a blank.
         - *RowValues ($Field) \[0..N\]* – **Note:** All the footer fields are in view mode.
 
-Note that the four groups in the top-level tabular fields are mandatory structural elements. However, the contents of all those groups exception the Rows (Group) are optional. Additionally, note that Tabular Fields can also be used on a TabPage control. The structure is the same as the structure that is shown here.
+Note that the four groups in the top-level tabular fields are mandatory structural elements. However, the contents of all those groups exception the Rows (Group) are optional. Additionally, note that Tabular Fields can also be used on a TabPage control. The structure is the same as the structure that is shown here.
 
 ### Core components
 

@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # PageState Enumeration
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Represents the various high-level states the a page can be in.
 

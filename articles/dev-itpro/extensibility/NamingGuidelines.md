@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Naming Guidelines
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Naming model elements
 Any element in a model must be given a name, which is unique across all models at installation time. 

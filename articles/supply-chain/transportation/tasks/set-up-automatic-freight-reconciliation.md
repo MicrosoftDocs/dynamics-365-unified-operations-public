@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up automatic freight reconciliation
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to set up data for automatic freight reconciliation. This is typically done by a warehouse manager. You can use this procedure in demo data company USMF.
 

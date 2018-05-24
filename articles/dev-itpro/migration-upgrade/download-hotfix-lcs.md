@@ -2,7 +2,7 @@
 # required metadata
 
 title: Download updates from Lifecycle Services
-description: Use this tutorial to download hotfixes for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, from Lifecycle Services (LCS).
+description: Use this tutorial to download hotfixes for Microsoft Dynamics 365 for Finance and Operations, from Lifecycle Services (LCS).
 author: AngelMarshall
 manager: AnnBe
 ms.date: 02/27/2018
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Download updates from Lifecycle Services
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -48,12 +48,12 @@ Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services
     > - The **Platform binary updates** tile includes the latest platform only updates or hotfixes. 
     
 
-- **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment.  Dependent X++ updates are automatically selected and downloaded.  Any X++ updates are source code updates, before they can be applied to a non-development environment, they must be compiled in a developer environment and merged with any customizations. X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+- **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment.  Dependent X++ updates are automatically selected and downloaded.  Any X++ updates are source code updates, before they can be applied to a non-development environment, they must be compiled in a developer environment and merged with any customizations. X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations. 
 
     > [!NOTE]
-    >  In your production environment, you will see both the **All X++ updates** tile and the **Critical X++ updates** tile. Critical X++ updates are hotfixes that we recommend based on the telemetry data from your production environment. These updates are specific to your production environment, and can be downloaded only from your production environment. 
+    > For online environments, you will see both the **All X++ updates** tile and the **Critical X++ updates** tile. The Critical X++ updates are recommended KBs that are based on the telemetry data in **your production environment**.  
     >
-    > To test and apply critical X++ updates, you should first download the updates from the production environment, and then apply them in a development environment, to build a deployable package to deploy to your sandbox and then production environments. 
+    > To test and apply any X++ updates, after download the X++ updates, apply them in a development environment to build a deployable package, and then apply the deployable package to your sandbox and then production environments. 
     >
     > For more information about deploying updates, see [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md)  
 
@@ -75,17 +75,23 @@ To view available updates:
 
 2. On the **Binary Updates** page, select **Save Package**.
 
-   ![Save Binary Package](./media/BinarySavePackage.png)
+   ![Save Binary Package](./media/ReviewAndSaveBinaryPackage.jpg)
 
 3. On the **Review and Save Updates** page, select **Save package**.
 
-![Review and Save updates](./media/ReviewBinaryPackage.png)
+![Review and Save updates](./media/ReviewBinaryPackage.jpg)
 
 4. From the **Save package to asset library** slider, enter the **Name** and **Description**, and click **Save package**.
 
    ![Save package to asset library](./media/SaveBinaryPackage.jpg)
 
 5. Click **Done** to return to environment page.
+
+   ![DoneSavingBinaryPackage](./media/DoneSavingBinaryPackage.jpg)
+ 
+6. You'll see the saved binary package in the asset library. 
+
+   ![ViewSavedBinaryPackageInAssetLibrary](./media/ViewSavedBinaryPackageInAssetLibrary.jpg)
 
 ## Download X++ updates
 
@@ -95,18 +101,23 @@ To view available updates:
   
 2. On the **Add updates** page, select the applicable Knowledge Base (KB) numbers, and then click **Add** to add selected KBs to the **Download package**.
 
-    ![Add X++ updates](./media/Add%20X%2B%2B%20Updates.png)
+    ![Add X++ updates](./media/AddX++Updates.jpg)
 
     > [!NOTE]
     > For X++ updates, you can download all available updates at this point. Select **Select all**, and then click **Add** to add all KBs to  the **Download package**.
 
 3. Select **Download package**.
 
-    ![Download package](./media/X%2B%2B%20Download%20package.png)
+    ![Download X++ package](./media/DownloadX++UpdatePackage.jpg)
 
 4. On the **Review and download hotfixes** page, you can review the hotfixes that you selected, discard the package, return to the hotfix selections, or download the final hotfix package.
 
-    ![Review and download hotfixes](media/Review%20and%20download%20X%2B%2B%20updates.png)
+    ![Review and download X++ updates](media/ReviewAndDownloadX++Package.jpg)
+    
+5. Download the package, and click **Done**.
+    
+    ![downloaded](media/X++UpdatesDownloadBegin.jpg)
+
 
 ## Also see
 - [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md)

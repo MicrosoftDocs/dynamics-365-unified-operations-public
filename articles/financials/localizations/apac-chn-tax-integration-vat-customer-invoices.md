@@ -30,8 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Chinese tax integration modification for VAT customer invoices FAQ
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 You can generate value-added tax (VAT) customer invoices, and then export them as text files. You can then import reference numbers for the VAT customer invoices that can be linked to the original invoices.
 
@@ -61,29 +60,29 @@ Yes. You can customize VAT customer invoices by adding other fields, and then yo
 
 To customize VAT customer invoices to include other details, follow these steps:
 
-1. On the **Electronic reporting** page, select **Reporting configurations** to open **Configurations**.
+1. On the **Electronic reporting** page, select **Reporting configurations** to open **Configurations**.
 2. In the tree, select **Golden Tax(CN)**.
 3. Click **Designer**. Add other fields on the tree under **Exported Invoices** &gt; **Invoices**, and save the GER model.
 4. Click **Map model to data source** and select **Golden Tax** &gt; **Designer**.
 5. Click **Save** and return to **Configurations**.
 6. Map the added fields to a table. 
     1. Select **GoldenTax(CN)** in the tree.
-    2. Click **Change status** &gt; **Complete** to get a new version of the model.
+    2. Click **Change status** &gt; **Complete** to get a new version of the model.
     3. Expand **GoldenTax(CN)** in the tree.
     4. Select the **GoldenTax(CN)** format in the tree.
-    5. Click **Rebase**. Confirm that the target version is the new completed version.
-    6. Click **OK** to finish the rebase process.
+    5. Click **Rebase**. Confirm that the target version is the new completed version.
+    6. Click **OK** to finish the rebase process.
     7. Click **Designer** to open the format designer.
     8. In the format designer, add new fields in the tree that are present in text files.
-    9. Select the newly added field, and click the **Mapping** tab.
-    10. Expand the model in the tree.
+    9. Select the newly added field, and click the **Mapping** tab.
+    10. Expand the model in the tree.
     11. Select the newly added model field and then click **Bind**.
     12. Click **Save**.
     13. Click **Change status** &gt; **Complete** to get a new version.
 
 
 
-See also
+Additional resources
 --------
 
 [Configure tax integration for China](apac-chn-tax-integration.md)

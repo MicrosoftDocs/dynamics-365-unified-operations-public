@@ -32,7 +32,7 @@ ms.search.validFrom: 2017-12-31
 
 # Product identifiers 
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 
@@ -54,7 +54,9 @@ The item number is the product identifier that is used by a specific legal entit
 
 Additionally, a product variant can't be uniquely identified by an item number. It always requires the combination of an item number and all the product dimensions that are defined on the product master. This requirement can become cumbersome and can slow down the identification processes. For this reason too, we recommend that you use the unique product number instead the item number whenever you can.
 
-Many pages still have the item number and product dimensions as the primary identifiers. However, the product numbers can be used for searches. At **Sales and marketing** &gt; **Setup** &gt; **Search** &gt; **Search parameters**, you can change the search lookup so that it uses product numbers instead of item numbers as the primary search strategy. If you set the **Enable lookup for product search** option to **Yes**, the lookup will show not only product masters but product variants. Additionally, you will be able to search and filter on the product number, the product name and description, and the product dimension IDs of the product variant. When you select a variant, the related item number and all product dimension IDs will be selected. Therefore, you can more easily find and select the correct variant. This setting is highly recommended if you use product variants and the unique product number as the primary identifiers for products. The only exception might be the fashion industry, where the business processes often require that you select the master before you select a variant. You should carefully evaluate this option before you implement the numbering system.
+Many pages still have the item number and product dimensions as the primary identifiers. However, the product numbers can be used for searches. At **Sales and marketing** &gt; **Setup** &gt; **Search** &gt; **Search parameters**, you can change the search lookup so that it uses product numbers instead of item numbers as the primary search strategy. If you set the **Enable lookup for product search** option to **Yes**, the lookup will show not only product masters but product variants. For more information, see [Search for products and product variants during order entry](search-products-product-variants.md).
+
+Additionally, you will be able to search and filter on the product number, the product name and description, and the product dimension IDs of the product variant. When you select a variant, the related item number and all product dimension IDs will be selected. Therefore, you can more easily find and select the correct variant. This setting is highly recommended if you use product variants and the unique product number as the primary identifiers for products. The only exception might be the fashion industry, where the business processes often require that you select the master before you select a variant. You should carefully evaluate this option before you implement the numbering system.
 
 ## Product name and description
 
@@ -183,3 +185,7 @@ Follow these steps to configure the environment.
 4. When you've finished defining the product identifier code types, you can create the identifiers in the global table by starting the **Create product entity identifiers** job on the **Product entity identifier codes** page. You should run this job in a batch. This job should be set up as a periodic batch job so that the table is populated according to new entries.
 
 You can now use the **Product entity common data service identifier entity**, **Product entity identifier code**, and **Product entity identifier scope** data entities to export the identifiers for any target system.
+
+## Related topic
+
+[Search for products and product variants during order entry](search-products-product-variants.md)

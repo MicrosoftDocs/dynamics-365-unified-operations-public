@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Task Single form pattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Task Single form pattern. This pattern was previously used to present data that users would perceive as originating from a single data source that had multiple records.
 
@@ -97,7 +96,7 @@ The verification checklist shows you the steps for manually verifying that the f
 
 **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Task Single guidelines:**
 

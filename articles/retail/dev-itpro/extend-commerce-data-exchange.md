@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Extend Commerce Data Exchange - Real-time Service
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article explains how you can extend Commerce Data Exchange -  Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables retail clients to interact with retail functionality in real time.
 
@@ -51,21 +50,21 @@ To extend Commerce Data Exchange: Real-time Service, you create a new method in 
     -   Real
 
 ## Create and call a new extension method
-1.  Start Microsoft Visual Studio.
-2.  On the **Dynamics 365 **menu, click **Model management** &gt; **Create model**.
-3.  In the **Create model** dialog box, enter the following details.
-    -   **Model name**: Contoso
-    -   **Model publisher**: Contoso
-    -   **Layer**: USR (Select the relevant layer)
-    -   **Version**: 1.0.0.0
-    -   **Model display name**: Contoso
+1. Start Microsoft Visual Studio.
+2. On the <strong>Dynamics 365 **menu, click **Model management</strong> &gt; <strong>Create model</strong>.
+3. In the **Create model** dialog box, enter the following details.
+   -   **Model name**: Contoso
+   -   **Model publisher**: Contoso
+   -   **Layer**: USR (Select the relevant layer)
+   -   **Version**: 1.0.0.0
+   -   **Model display name**: Contoso
 
-4.  Click **Next**.
-5.  In the dialog, select **Select existing package**, and then select **Application Suite** in the list.
-6.  Click **Next**.
-7.  Click **Finish**.
-8.  In the **New project** dialog box, enter **ContosoRetailTransactionServiceEx** as the project name.
-9.  Click **OK**.
+4. Click **Next**.
+5. In the dialog, select **Select existing package**, and then select **Application Suite** in the list.
+6. Click **Next**.
+7. Click **Finish**.
+8. In the **New project** dialog box, enter **ContosoRetailTransactionServiceEx** as the project name.
+9. Click **OK**.
 10. In Application Explorer, expand the **Code** node, and select **Classes**.
 11. Right-click the **RetailTransactionServiceEx** class, and then click **Customize**.
 12. In the code editor, add the following code.

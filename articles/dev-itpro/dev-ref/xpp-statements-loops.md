@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ statements, loops, and exception handling
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes statements, loops, and exception handling in X++.
 
 Comments
 --------
 
-It's a good practice to add comments to your code. Comments make a program easier to read and understand. Comments are ignored when the program is compiled. Your comments can use either the **//** style or the **/\***…**\*/** style. However, a best practice is to use the **//** style for comments, and even for multiline comments.
+It's a good practice to add comments to your code. Comments make a program easier to read and understand. Comments are ignored when the program is compiled. Your comments can use either the <strong>//</strong> style or the <strong>/\</strong><em>…</em><em>\*/</em>* style. However, a best practice is to use the <strong>//</strong> style for comments, and even for multiline comments.
 
     // This is an example of a comment.
     /* Here is another example of a comment. */
@@ -175,7 +174,7 @@ In this syntax, *expression1* must return a value of **true** or **false**. If *
     // (meaning RecId != 0), found is assigned to result. 
     // Otherwise, the alternative not found is assigned to result.
     result = (custTable::find("1").RecId) ? "found" : "not found";
-     
+
     // An example of a nested ternary statement. 
     // If z is not greater than 1000, the expression is equal to the third 
     // expression and low is printed. If AccountNum is greater than 1000, the second 
@@ -210,7 +209,7 @@ The static methods on the **Global** class can be called without the **Global::*
 
 ### try, catch, finally, and retry statements
 
-When an exception is thrown, it's first processed through the **catch** list of the innermost **try** block. If a **catch** block is found that handles the kind of exception that is being thrown, program control jumps to that **catch** block. If the **catch** list has no block that specifies the exception, the system passes the exception to the **catch** list of the next-innermost **try** block. The **catch** statements are processed in the same sequence as they appear in the code. It's a common practice to have the first **catch** statement handle the **Exception::Error** enum value. One strategy is to have the last **catch** statement leave the exception type unspecified. In this case, the last **catch** statement handles all exceptions that aren't handled by any earlier **catch** statement. This strategy is appropriate for the outermost **try**...**catch** blocks. An optional ****finally**** clause can be included in **try**...**catch** statements. The semantics of a **finally** clause are the same as they are in C\#. The statements in the **finally** clause are executed when control leaves the **try** block, either normally or through an exception. The **retry** statement can be written only in a **catch** block. The **retry** statement causes control to jump up to the first line of code in the associated **try** block. The **retry** statement is used when the cause of the exception can be fixed by the code in the **catch** block. The **retry** statement gives the code in the **try** block another opportunity to succeed. The **retry** statement erases all messages that have been written to the Infolog since program control entered the **try** block. **Note:** You must make sure that your **retry** statements don't cause an infinite loop. As a best practice, the **try** block should include a variable that you can test to find out whether you're in a loop.
+When an exception is thrown, it's first processed through the <strong>catch</strong> list of the innermost <strong>try</strong> block. If a <strong>catch</strong> block is found that handles the kind of exception that is being thrown, program control jumps to that <strong>catch</strong> block. If the <strong>catch</strong> list has no block that specifies the exception, the system passes the exception to the <strong>catch</strong> list of the next-innermost <strong>try</strong> block. The <strong>catch</strong> statements are processed in the same sequence as they appear in the code. It's a common practice to have the first <strong>catch</strong> statement handle the <strong>Exception::Error</strong> enum value. One strategy is to have the last <strong>catch</strong> statement leave the exception type unspecified. In this case, the last <strong>catch</strong> statement handles all exceptions that aren't handled by any earlier <strong>catch</strong> statement. This strategy is appropriate for the outermost <strong>try</strong>...<strong>catch</strong> blocks. An optional *<strong><em>finally</em></strong>* clause can be included in <strong>try</strong>...<strong>catch</strong> statements. The semantics of a <strong>finally</strong> clause are the same as they are in C\#. The statements in the <strong>finally</strong> clause are executed when control leaves the <strong>try</strong> block, either normally or through an exception. The <strong>retry</strong> statement can be written only in a <strong>catch</strong> block. The <strong>retry</strong> statement causes control to jump up to the first line of code in the associated <strong>try</strong> block. The <strong>retry</strong> statement is used when the cause of the exception can be fixed by the code in the <strong>catch</strong> block. The <strong>retry</strong> statement gives the code in the <strong>try</strong> block another opportunity to succeed. The <strong>retry</strong> statement erases all messages that have been written to the Infolog since program control entered the <strong>try</strong> block. <strong>Note:</strong> You must make sure that your <strong>retry</strong> statements don't cause an infinite loop. As a best practice, the <strong>try</strong> block should include a variable that you can test to find out whether you're in a loop.
 
     try 
     { 
@@ -264,9 +263,9 @@ The following code shows how the **error** method is declared.
 
 The return type is the **Exception::Error** enum value. The **error** method doesn't throw an exception. It just provides an enum value that can be used in a **throw** statement. The **throw** statement throws the exception. Here are descriptions of the parameters for the **error** method. Only the first parameter is required.
 
--   **SysInfoLogStr** txt is a **str** of the message text. It can also be a label reference, such as **strFmt("@SYS12345", strThingName)**.
--   The **URL** helpUrl is a reference to the location of a Help topic in Application Explorer, such as **"KernDoc:\\\\\\\\Functions\\\\substr"**. The parameter value is ignored if \_sysInfoAction is supplied.
--   The **SysInfoAction** \_sysInfoAction is an instance of a class that extends the **SysInfoAction** class. The method overrides that we recommend for the child class are the **description** method, the **run** method, the **pack** method, and the **unpack** method.
+- <strong>SysInfoLogStr</strong> txt is a <strong>str</strong> of the message text. It can also be a label reference, such as <strong>strFmt("@SYS12345", strThingName)</strong>.
+- The **URL** helpUrl is a reference to the location of a Help topic in Application Explorer, such as **"KernDoc:\\\\\\\\Functions\\\\substr"**. The parameter value is ignored if \_sysInfoAction is supplied.
+- The **SysInfoAction** \_sysInfoAction is an instance of a class that extends the **SysInfoAction** class. The method overrides that we recommend for the child class are the **description** method, the **run** method, the **pack** method, and the **unpack** method.
 
 #### Global::info method
 
@@ -525,7 +524,7 @@ When your code throws an exception, it can write messages to the Infolog. You ca
         {
             print("This appears in the Print window.");
             print(m_sGreeting);
-        
+
             /*********** Actual Infolog output
             Message (03:19:28 pm)
             Click me to make the Print window display.
@@ -693,17 +692,17 @@ You use the **print** statement to show messages (text or selected results) in a
 ## TODO comments
 The compiler recognizes the string **TODO** when it occurs at the start of a comment. The **TODO** string prompts the compiler to report the rest of the comment text in the **Task List** window in Microsoft Visual Studio. To open the **Task List** window, select **View**, and then select **Task Window**. The **Task Window** reports the line number where the **TODO** comment can be found in the code. Here are the rules for using **TODO** in comments:
 
--   The **TODO** string can appear in a comment that uses either the **//** style or the **/\***...**\*/** style.
--   The **TODO** string must be the very first non–white space string in the comment. A carriage return, a line feed, a tab, and a space are all considered white space.
--   No white space is required between the start of the comment and the **TODO**.
--   The **TODO** string is case-insensitive. However, the convention is to type **TODO** in all uppercase letters, instead of **ToDo** or another variation.
--   The **TODO** string can have any characters appended to it. However, the convention is either to append a colon to the **TODO** string or to follow it with a white space.
--   The rest of the comment after the **TODO** string is reported as the task description. If the comment is longer than 200 characters, it might appear truncated on the **Tasks** tab.
--   The **TODO** task description can be spread over multiple lines when the **/\***...**\*/** comment style is used.
+- The <strong>TODO</strong> string can appear in a comment that uses either the <strong>//</strong> style or the <strong>/\</strong><em>...</em><em>\*/</em>* style.
+- The **TODO** string must be the very first non–white space string in the comment. A carriage return, a line feed, a tab, and a space are all considered white space.
+- No white space is required between the start of the comment and the **TODO**.
+- The **TODO** string is case-insensitive. However, the convention is to type **TODO** in all uppercase letters, instead of **ToDo** or another variation.
+- The **TODO** string can have any characters appended to it. However, the convention is either to append a colon to the **TODO** string or to follow it with a white space.
+- The rest of the comment after the **TODO** string is reported as the task description. If the comment is longer than 200 characters, it might appear truncated on the **Tasks** tab.
+- The <strong>TODO</strong> task description can be spread over multiple lines when the <strong>/\</strong><em>...</em><em>\*/</em>* comment style is used.
 
 ### Examples of TODO comments
 
-The following examples show **TODO** comments that use the **//** and **/\***...**\*/** styles.
+The following examples show <strong>TODO</strong> comments that use the <strong>//</strong> and <strong>/\</strong><em>...</em><em>\*/</em>* styles.
 
     // An example of using TODO in the // style of comment.
     public boolean isLate()

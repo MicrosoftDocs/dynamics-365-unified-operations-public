@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Register driver check-in and check-out for an appointment
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to register a driver check-in and a driver check-out. This is typically done by a transportation coordinator. You can use this procedure in the USMF demo data company. Before you start, there must be an appointment set up for a load. To create an appointment, you can run the “Set up an appointment for a load” procedure as a prerequisite.
 

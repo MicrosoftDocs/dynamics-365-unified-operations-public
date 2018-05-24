@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Golden tax integration export setup (China)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to configure the export format for golden tax integration. 
 Before you complete this procedure, you should have already completed the setup of the golden tax integration.

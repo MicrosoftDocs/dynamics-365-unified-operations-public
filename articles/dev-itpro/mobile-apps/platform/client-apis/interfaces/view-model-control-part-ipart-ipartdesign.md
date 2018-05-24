@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # PartDesign Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Part design object type.
 

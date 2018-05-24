@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # PageLinkDesign Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Pagelink design object type.
 

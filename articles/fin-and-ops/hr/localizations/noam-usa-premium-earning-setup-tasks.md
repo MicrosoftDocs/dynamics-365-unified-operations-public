@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up premium earnings
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic provides information about premium earnings and how to set them up. Premium earnings are extra earnings, such as bonuses or overtime premiums, that are paid to workers when specific conditions are met. Other types of premium earnings include a differential for hours that are worked on a second or third shift, and additional pay for workers who hold a certificate for advanced training or qualifications.
 
@@ -54,21 +53,21 @@ The following table shows the prerequisites that must be in place before you sta
 These premiums are used for shift differentials and similar premiums that should be paid any time that specified earning codes are included on an earnings statement. The following information must be set up before you can pay premiums that are based on earning codes:
 
 -   A premium earning policy. Most often, an organization has a single premium earning policy that is shared by all legal entities.
--   Policy rule types that define the document and query parameters that you use when you develop specific policy rules.
+-   Policy rule types that define the document and query parameters that you use when you develop specific policy rules.
 -   An earning code group that contains all earning codes that qualify for the premium.
 -   An earning code that uses a rate basis of **Percent of earnings** or **Hours of earnings** to calculate and pay the premium amount.
 -   Policy rules that specify the earning codes that must be present on the earnings statement for the premium earning to be generated.
--   Premium codes that link the policy rule type that specifies the rules for the premium with the earning code that specifies how the premium should be calculated.
+-   Premium codes that link the policy rule type that specifies the rules for the premium with the earning code that specifies how the premium should be calculated.
 
 ### Premiums that are based on characteristics of the worker or position
 
 These premiums are used to provide additional pay, based on characteristics of the worker or position. For example, premiums can be paid to workers who hold certificates for advanced training, or they can be paid for positions that are based in a specific location. The following information must be set up before you can pay premiums that are based on the characteristics of a worker of position:
 
 -   A premium earning policy. Most often, an organization has a single premium earning policy that is shared by all legal entities.
--   Policy rule types that define the document and query parameters that you use when you develop specific policy rules.
+-   Policy rule types that define the document and query parameters that you use when you develop specific policy rules.
 -   An earning code that uses a rate basis of **Flat amount** to pay the premium amount.
 -   Policy rules that specify the conditions that must be met for the premium earning to be generated.
--   Premium codes that link the policy rule type that specifies the rules for the premium with the earning code that specifies how the premium should be calculated.
+-   Premium codes that link the policy rule type that specifies the rules for the premium with the earning code that specifies how the premium should be calculated.
 
 **Tip:** A premium can be based on a combination of earning codes and the worker or position. In that case, follow the instructions for setting up a premium that is based on earning codes. In the policy rules, include all earning codes that must be present and all conditions that must be met for the premium earning to be generated.
 
@@ -135,7 +134,7 @@ The payroll calculation frequency should include the pay periods that this premi
 
 The policy rule type determines whether earnings statement lines are created for this premium code. 
 
-In the **Payout basis** field, select ****Earnings statement****. 
+In the <strong>Payout basis</strong> field, select *<strong><em>Earnings statement</em></strong>*. 
 
 **Caution:** The earning code that is used to pay the premium aggregates hours and earnings to determine the line total. If you select **Earning line** as the payout basis, the aggregate line is created one time for each earning code that is in the Basis earning code group. This setup causes earnings to be significantly overstated. Select the earning code that is used to pay the premium. This earning code appears on the premium lines that are added to earnings statements. You must also specify an active interval, or the first and last dates that the premium code can be used. 
 
@@ -198,7 +197,7 @@ Field values on the **General** FastTab of the **Premium codes** page define the
 </tr>
 <tr class="odd">
 <td>Active interval &gt; New</td>
-<td>Enter the first and last dates that a premium code can be used. <strong>Important:</strong> Active intervals can't overlap. Therefore, if an existing interval for the selected premium code is active on the date that a new interval takes effect, the existing interval is automatically expired on that date. Likewise, if you change the date when an existing interval starts or ends, any existing intervals that are active during the new interval are expired to prevent the intervals from overlapping.</td>
+<td>Enter the first and last dates that a premium code can be used. <strong>Important:</strong> Active intervals can&#39;t overlap. Therefore, if an existing interval for the selected premium code is active on the date that a new interval takes effect, the existing interval is automatically expired on that date. Likewise, if you change the date when an existing interval starts or ends, any existing intervals that are active during the new interval are expired to prevent the intervals from overlapping.</td>
 </tr>
 </tbody>
 </table>
@@ -212,9 +211,9 @@ You set up an earning code group for nondiscretionary earnings on the **Earning 
 
 **Caution:** If any earning codes for nondiscretionary earnings are omitted from this earning code group, the overtime premium won't be calculated correctly. 
 
-You must create an earning code to calculate and pay the premium amounts for each type of overtime earnings that you identified. These earning codes all use **Regular rate of pay** as the rate basis.    
+You must create an earning code to calculate and pay the premium amounts for each type of overtime earnings that you identified. These earning codes all use **Regular rate of pay** as the rate basis.    
 
-See also
+Additional resources
 --------
 
 [Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md)

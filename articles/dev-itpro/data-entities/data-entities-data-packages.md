@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data management
-description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations. 
 author: Sunil-Garg
 
 manager: AnnBe
@@ -35,14 +35,13 @@ ms.dyn365.ops.version: AX 7.0.0
 # Data management
 
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-
-This topic describes how you can use the data management framework to manage data entities and data entity packages in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+This topic describes how you can use the data management framework to manage data entities and data entity packages in Microsoft Dynamics 365 for Finance and Operations. 
 
 The data management framework consists of the following concepts: 
 
-- **Data entities**: A data entity is a conceptual abstraction and encapsulation of one of more underlying tables. A data entity represents a common data concept or functionality, for example, Customers or Vendors. Data entities are intended to be easily understand by users familiar with business concepts. After data entities are created, you can reuse them through the Excel Add-in, use them to define import/export packages, or use them for integrations. 
+- **Data entities**: A data entity is a conceptual abstraction and encapsulation of one of more underlying tables. A data entity represents a common data concept or functionality, for example, Customers or Vendors. Data entities are intended to be easily understand by users familiar with business concepts. After data entities are created, you can reuse them through the Excel Add-in, use them to define import/export packages, or use them for integrations. 
 - **Data project**: A project that contains configured data entities, which include mapping and default processing options.
 - **Data job**: A job that contains an execution instance of the data project, uploaded files, schedule (recurrence), and processing options.
 - **Job history**: Histories of source to staging and staging to target jobs.
@@ -57,7 +56,7 @@ The data management framework supports using data entities in the following core
 
 ## Data entities
 
-Data entities provide conceptual abstraction and encapsulation of underlying table schema that represent data concepts and functionalities. In Microsoft Dynamics AX 2012, most tables, like the Customer and Vendor tables, were de-normalized and split into multiple tables. This was beneficial from a database design point of view, but made it difficult for implementers and ISV’s to use without a thorough understanding of the physical schema. Data entities were introduced as part of data management to be used as a layer of abstraction to easily understand by using business concepts. In previous versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, there were multiple ways to manage data, such as Microsoft Excel Add-ins, AIF, and DIXF. The concept of data entities combines those different concepts into one. After data entities are created, you should be able to reuse them for an Excel Add-ins, import/export, or integration. The following table shows core data management scenarios.
+Data entities provide conceptual abstraction and encapsulation of underlying table schema that represent data concepts and functionalities. In Microsoft Dynamics AX 2012, most tables, like the Customer and Vendor tables, were de-normalized and split into multiple tables. This was beneficial from a database design point of view, but made it difficult for implementers and ISV’s to use without a thorough understanding of the physical schema. Data entities were introduced as part of data management to be used as a layer of abstraction to easily understand by using business concepts. In previous versions of Microsoft Dynamics 365 for Finance and Operations, there were multiple ways to manage data, such as Microsoft Excel Add-ins, AIF, and DIXF. The concept of data entities combines those different concepts into one. After data entities are created, you should be able to reuse them for an Excel Add-ins, import/export, or integration. The following table shows core data management scenarios.
 
 <table>
 <colgroup>
@@ -93,7 +92,7 @@ Data entities provide conceptual abstraction and encapsulation of underlying tab
 Using the data management framework, you can quickly migrate reference, master, and document data from legacy or external systems. The framework is intended to help you quickly migrate data by using the following features: 
 
 -   You can select only the entities you need to migrate. 
--   If an import error occurs, you can skip selected records and choose to proceed with the import using only the good data, opting to then fix and import the bad data later. You will be able to partially continue and use errors to quickly find bad data. 
+-   If an import error occurs, you can skip selected records and choose to proceed with the import using only the good data, opting to then fix and import the bad data later. You will be able to partially continue and use errors to quickly find bad data. 
 -   You can move data entities straight from one Finance and Operations system to another, without having to go through Excel, or XML. 
 -   Data imports can be easily scheduled using a batch, which offers flexibility when it is required to run. For example, you can migrate customer groups, customers, vendors, and other data entities in the system at any time.
 
@@ -104,7 +103,7 @@ Copying configurations is intended to make it easier to start a new implementati
 
 The data management framework allows you to:
 
--   Move data between two similar systems
+-   Move data between two similar systems
 -   Discover entities and dependencies between entities for a given business process or module
 -   Maintain a reusable library of data templates and datasets
 -   Use data packages to create incremental data entities. Data entities can be sequenced inside the packages. You can name data packages, which can be easily identifiable during import or export. When building data packages, data entities can be mapped to staging tables in grids or by using a visual mapping tool. You can also drag-and-drop columns manually. 
@@ -121,12 +120,12 @@ There are two types of sequencing that should be considered when working with da
 
 #### Sequence data entities within a data packages**
 
-1.  When a user adds data entities to a data project, by default, a sequence is set for the order in which the entities will load. The first entity added to the project will be set as the first entity to load, the next entity added will be second, the next entity will be third, and so on. 
-    For example, if a user added two entities in this order, **Sales tax codes** and **Sales Tax groups**, then **Sales tax codes** is assigned an entity sequence of **1.1.1**, and **Sales tax groups** is assigned an entity sequence of **1.1.2**. The sequence level indicates that the second entity will not start the import process until the first level is finished.
+1.  When a user adds data entities to a data project, by default, a sequence is set for the order in which the entities will load. The first entity added to the project will be set as the first entity to load, the next entity added will be second, the next entity will be third, and so on. 
+    For example, if a user added two entities in this order, **Sales tax codes** and **Sales Tax groups**, then **Sales tax codes** is assigned an entity sequence of **1.1.1**, and **Sales tax groups** is assigned an entity sequence of **1.1.2**. The sequence level indicates that the second entity will not start the import process until the first level is finished.
 2.  To view or edit a sequence, click the **Entity sequence** button on the Action Pane of the data project. 
-    
+
     ![Entity sequence](./media/dataentitiesdatapackages01.png)
-    
+
 4.  In the Definition group entity sequence, you can see the execution units and the sequence. You can change sequence by selecting the data entity in the list, setting a different Execution unit or Sequence in level, and then clicking **Update selected**. After clicking **Update selected**, the entity will move up or down in the entity list.
 
 **Example**
@@ -134,7 +133,7 @@ The following screenshot shows the entity sequence that is set for the Sales Tax
 
     ![Sales Tax CodeGroups data package sequence](./media/dataentitiesdatapackages02.png)
 
-In order to successfully import sales tax codes and groups, the sales tax codes and details have to be loaded first, before sales tax groups can be imported. Sales tax codes and groups are all in Execution unit = 1, but the sequences are in the order that they will be imported. Other related sales tax entities that are not dependent upon other data entities being loaded are included in the package. For example, sales tax exempt numbers is set in its own Execution unit = 2. This data entity will start loading immediately because there are no dependencies on other entities loading before it. 
+In order to successfully import sales tax codes and groups, the sales tax codes and details have to be loaded first, before sales tax groups can be imported. Sales tax codes and groups are all in Execution unit = 1, but the sequences are in the order that they will be imported. Other related sales tax entities that are not dependent upon other data entities being loaded are included in the package. For example, sales tax exempt numbers is set in its own Execution unit = 2. This data entity will start loading immediately because there are no dependencies on other entities loading before it. 
 
 #### Sequence data package imports
 In order to successfully load data, it's important to set the correct order for importing data packages, because of dependencies that exist within and across modules. The numbering format that has been created for the data packages within LCS are as follows:
@@ -157,17 +156,17 @@ The following tables provide more information about the default numbering format
 
 [![Sequence number](./media/dataentitiesdatapackages05.png)](./media/dataentitiesdatapackages05.png)
 
-Data packages follow the sequence number, followed by the module abbreviation, and then a description. The following example shows General ledger data packages. 
+Data packages follow the sequence number, followed by the module abbreviation, and then a description. The following example shows General ledger data packages. 
 
 [![Numbering example](./media/dataentitiesdatapackages06.png)](./media/dataentitiesdatapackages06.png)
 
 ## Mapping
-When working with data entities, mapping an entity to a source is automatic. The automatic mapping of fields can be overridden if needed. 
+When working with data entities, mapping an entity to a source is automatic. The automatic mapping of fields can be overridden if needed. 
 
 ### View mapping
-To view how an entity is mapped, locate the tile for the entity in the project, and then click **View map**. 
+To view how an entity is mapped, locate the tile for the entity in the project, and then click **View map**. 
 
-We provide mapping visualization view (default) and mapping details view. A red asterisk (\*) identifies any required fields in an entity. These fields must be mapped in order to work with the entity. Other fields can be unmapped as required when working with the entity. 
+We provide mapping visualization view (default) and mapping details view. A red asterisk (\*) identifies any required fields in an entity. These fields must be mapped in order to work with the entity. Other fields can be unmapped as required when working with the entity. 
 
 - To unmap a field, highlight the field in either column (**Entity** or **Source**), click **Delete selection**, and then click **Save**.   After saving, close the form to return to the project. 
 
@@ -178,7 +177,7 @@ The field mapping from source to staging can also be edited after import using t
 If you have extended an entity (added fields) or if the automatic mapping appears to be incorrect, the mapping of the entity can be regenerated in the **Mapping** form. 
 
 1. To do this, click **Generate source mapping**. 
-    A message will display asking, “Do you want to generate the mapping from scratch ?” 
+    A message will display asking, “Do you want to generate the mapping from scratch ?” 
 2. Click **Yes** to regenerate the mapping.
 
 ### Generate data
@@ -208,7 +207,7 @@ Export is the process of retrieving data from a system using data entities. The 
 After the project is created and saved you can export the project to create a job. During the export process, you can see a graphical view of the status of the job and the record count. This view shows multiple records so you can review the status of each record prior to downloading the actual files. 
 
 -   While importing the system users entity, you may receive an integrity violation error if there is a guest user in the exported package. The guest user must be deleted from the package in order for the entity to work.
--   If a record already exists in the **UserInfo** table (the Admin record would most likely always exist), the import will fail for those records but work for other records.
+-   If a record already exists in the **UserInfo** table (the Admin record would most likely always exist), the import will fail for those records but work for other records.
 
 
 [![Execution summary](./media/dataentitiesdatapackages10-1024x280.png)](./media/dataentitiesdatapackages10.png) 
@@ -222,8 +221,8 @@ Import is the process of pulling data into a system using data entities. The imp
 
 
 ### Import a data package: 
-1.  Log into the environment using a login with sufficient privileges (typically this is the Administrator role).
-2.  On the dashboard, click the **Data Management** workspace.
+1.  Log into the environment using a login with sufficient privileges (typically this is the Administrator role).
+2.  On the dashboard, click the **Data Management** workspace.
 3.  Click the **Import** tile.
 4.  On the next page, do the following:
     1.  Provide a name.
@@ -231,7 +230,7 @@ Import is the process of pulling data into a system using data entities. The imp
     3.  Click the **Upload** button and choose the appropriate package file from the location for the data being imported. This will import all the files from the package. 
     [![Choose package file](./media/dataentitiesdatapackages12-1024x555.png)](./media/dataentitiesdatapackages12.png)
     4.  Click **Save**, and then click **Import**.
- 
+
 ### Import multiple data packages:
 Use one of the following methods to import multiple data packages.
 -   Create a new job for each package, and then repeat steps 4(a) through 4(d) above, for each package. 
@@ -252,19 +251,19 @@ This section provides troubleshooting information for the different stages of da
 
 ### Import process troubleshooting
 When uploading data entity files:
--   If data entities do not display in **Selected files and entities** after you click **Upload** during the import process, wait a few minutes, and then check whether the OLEDB driver is still installed. If not, then reinstall the OLEDB driver. The driver is Microsoft Access Database Engine 2010 Redistributable – AccessDatabaseEngine\_x64.exe.
--   If data entities display in **Selected Files and Entities** with a warning after you click **Upload** during the import process, verify and fix the mapping of individual data entities by clicking **View map**. Update the mapping and click **Save** for each data entity.
-During data entity import:
--   If data entities fail (shown with a red X or yellow triangle icon on the data entity tile) after you click **Import**, click **View staging data** on each tile under the **Execution summary** page to review the errors. Sort and scroll through the records with Transfer status = Error to display the errors in the Message section. Download the staging table. Fix a record (or all records) directly in staging by clicking **Edit, Validate all, and Copy data to target**,  or fix the import file (not staging file) and reimport the data.
- -   If data entities fail (shown with a red x or yellow triangle icon on the data entity tile) after you click **Import**, and **View staging data** shows no data, go back to the **Execution summary** page. Go to **View execution log**, select the data entity, and review the **Log text, Staging log details, and Infolog** for more information. **Staging log details** will display **Error column** (field) details and **Log description** will describe errors in detail.
--   If data entities fail, you can check the import file to see if there’s an extra line in the file with text which displays, “This is a string that is inserted into Excel as a dummy cell to make the column to support more than 255 characters. By default, an Excel destination component will not support more than 255 characters. The default type of Excel will be set based on the first few rows”. This line is added during data export. If this line exists, delete this line, re-package the data entity, and try to import.
+- If data entities do not display in **Selected files and entities** after you click **Upload** during the import process, wait a few minutes, and then check whether the OLEDB driver is still installed. If not, then reinstall the OLEDB driver. The driver is Microsoft Access Database Engine 2010 Redistributable – AccessDatabaseEngine\_x64.exe.
+- If data entities display in **Selected Files and Entities** with a warning after you click **Upload** during the import process, verify and fix the mapping of individual data entities by clicking **View map**. Update the mapping and click **Save** for each data entity.
+  During data entity import:
+- If data entities fail (shown with a red X or yellow triangle icon on the data entity tile) after you click **Import**, click **View staging data** on each tile under the **Execution summary** page to review the errors. Sort and scroll through the records with Transfer status = Error to display the errors in the Message section. Download the staging table. Fix a record (or all records) directly in staging by clicking **Edit, Validate all, and Copy data to target**,  or fix the import file (not staging file) and reimport the data.
+  -   If data entities fail (shown with a red x or yellow triangle icon on the data entity tile) after you click **Import**, and **View staging data** shows no data, go back to the **Execution summary** page. Go to **View execution log**, select the data entity, and review the **Log text, Staging log details, and Infolog** for more information. **Staging log details** will display **Error column** (field) details and **Log description** will describe errors in detail.
+- If data entities fail, you can check the import file to see if there’s an extra line in the file with text which displays, “This is a string that is inserted into Excel as a dummy cell to make the column to support more than 255 characters. By default, an Excel destination component will not support more than 255 characters. The default type of Excel will be set based on the first few rows”. This line is added during data export. If this line exists, delete this line, re-package the data entity, and try to import.
 
 ### Troubleshooting the System users entity
 -   When you import the system users entity, you may receive a integrity violation error if there is a guest user in the exported package. The guest user must be deleted from the package in order for the entity to work.
--   If a record already exists in the **UserInfo** table (the Admin record will likely exist), the import will fail for those records but work for other records.
+-   If a record already exists in the **UserInfo** table (the Admin record will likely exist), the import will fail for those records but work for other records.
 
 
-## See also
+## Additional resources
 [Data entities](data-entities.md)
 
 

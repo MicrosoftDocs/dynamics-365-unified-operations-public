@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Process loyalty reward point adjustments
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to look up loyalty card information and adjust loyalty reward points. The demo data company used to create this task is USRT. This task is intended for the Retail operations manager role or a Customer service manager role.
 

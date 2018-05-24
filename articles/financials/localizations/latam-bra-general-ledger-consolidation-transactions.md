@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 ---
 # Export and import transactions for General ledger consolidation for Brazil
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can transfer general ledger transactions from the source company to the consolidated account in the consolidated company without consolidating the transactions.
 

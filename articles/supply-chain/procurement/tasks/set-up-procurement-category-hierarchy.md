@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up a procurement category hierarchy
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to create new nodes in a procurement category hierarchy and how to configure a procurement category to be used in a procurement process. These tasks would typically be carried out by a Purchasing manager. Before you can start this procedure, there must be a category hierarchy of type Procurement. If you're using a demo data company, you can run this procedure in the USMF company.
 

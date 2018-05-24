@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Price simulation
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about price simulation for quotations. Price simulation helps you to evaluate the effect of deductions on the future sales price during the quotation process, before you commit to a specific price.
 
@@ -41,7 +40,8 @@ A price simulation for a quotation shows a new total amount, based on a proposed
 
 A price simulation doesn't change the price in the quotation. If the price simulation is applied to a whole quotation, it’s treated as a special discount on the quotation header. If the price simulation is applied to specific items, it’s treated as a special discount on the quotation lines. The unit sales price on a quotation line that is created doesn't change when a price simulation is applied. Instead, a discount percentage that corresponds to the price reduction of the quotation line is applied. When a price simulation is applied, the unit sales price and the discount percentage are transferred to the quotation line or the quotation header.  
 
-**Note:** When you run a price simulation, only the current sales currency is used to create the simulation. However, when you view the quotation totals, you see a combination of the company currency and the sales currency.  
+>[Note!]
+>When you run a price simulation, only the current sales currency is used to create the simulation. However, when you view the quotation totals, you see a combination of the company currency and the sales currency.  
 
 Supplementary items that are added to quotation lines might trigger line discounts or multiline discounts. They might also trigger total discounts that change the contribution margins and contribution ratios of the quotation lines and the whole discount.  
 
@@ -57,7 +57,7 @@ To guarantee that discounts and prices are calculated correctly, be careful when
 
 ### Types of discounts in trade agreements
 
-Trade agreements in Microsoft Dynamics 365 for Finance and Operations can have four types of price discounts. These discounts can be set up for different items, customers, or price groups, and they can be limited by date. To avoid miscalculations, you must consider trade agreements when you run price simulations. Here are the four types of discounts in trade agreements:
+Trade agreements in Microsoft Dynamics 365 for Finance and Operations can have four types of price discounts. These discounts can be set up for different items, customers, or price groups, and they can be limited by date. To avoid miscalculations, you must consider trade agreements when you run price simulations. Here are the four types of discounts in trade agreements:
 
 -   **Sales price** – Separate sales prices can be specified for items. When quotation lines are created, the program searches for the correct sales price for an item and transfers it to the quotation lines. Therefore, a trade agreement that has this kind of discount doesn't affect the price simulation. The sales price that is used in the quotation line reflects the trade agreement.
 -   **Line discount** – Special discounts are specified for items, depending on the quantity that is ordered. Line amounts are typically reduced by the line discount before a price simulation is run. Therefore, a trade agreement that has this kind of discount affects the price simulation.

@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Task Double form pattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Task Double form pattern. This pattern was previously used to present a parent and child entity in the same form.
 
 Usage
 -----
 
-This type of form has previously been used when you wanted to present parent/child entities in the same form. This isn't a recommended pattern for new forms. No new forms should be created that use this pattern. This pattern will provide structure and stability for legacy forms, and will also provide a migration path to more modern form patterns.
+This type of form has previously been used when you wanted to present parent/child entities in the same form. This isn't a recommended pattern for new forms. No new forms should be created that use this pattern. This pattern will provide structure and stability for legacy forms, and will also provide a migration path to more modern form patterns.
 
 ## Wireframe
 
@@ -65,7 +64,7 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
     - *CustomFilter (Group) \[Optional\]*
     - ParentTab (Tab)
 
-        - ParentList (TabPage) – **Note:** The Toolbar and List subpattern is used.
+        - ParentList (TabPage) – **Note:** The Toolbar and List subpattern is used.
         - General (TabPage repeats 0..N)
 
     - *ParentFooterGroup (Group) \[Optional\]*
@@ -73,7 +72,7 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
     - *ChildToolbar (ActionPane) \[Optional\]*
     - ChildTab (Tab)
 
-        - ChildList (TabPage) – **Note:** The Toolbar and List subpattern is used.
+        - ChildList (TabPage) – **Note:** The Toolbar and List subpattern is used.
         - General (TabPage, repeats 0..N)
 
     - *ChildFooterGroup (Group) \[Optional\]*
@@ -104,7 +103,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Task Double guidelines:**
 

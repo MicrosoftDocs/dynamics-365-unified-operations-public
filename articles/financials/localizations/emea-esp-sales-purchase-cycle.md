@@ -30,8 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Sales and purchase cycles for Spain
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to set up sales order or purchase order cycles for a vendor or customer for legal entities in Spain.  
 

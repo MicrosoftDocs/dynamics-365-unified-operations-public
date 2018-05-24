@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Toolbar and List subpattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Toolbar and List form subpattern. This subpattern is used to show child collections for the parent entity as either a tabular grid or a tree. 
 
@@ -42,8 +41,8 @@ Usage
 
 This subpattern is used to show child collections for the parent entity as either a tabular grid or a tree. The toolbar contains fewer than 10 actions. If a grid is used, it contains fewer than 10 fields. This article describes two patterns:
 
--   **Toolbar and list** – This is the basic version of the pattern and should be used by default.
--   **Toolbar and list (double)** – This variant includes two lists and an optional toolbar above each list.
+-   **Toolbar and list** – This is the basic version of the pattern and should be used by default.
+-   **Toolbar and list (double)** – This variant includes two lists and an optional toolbar above each list.
 
 ## Wireframes
 ### Toolbar and list
@@ -55,7 +54,7 @@ This subpattern is used to show child collections for the parent entity as eithe
 [![ToolbarList(2)](./media/toolbarlist2.png)](./media/toolbarlist2.png)
 
 ## Model
-### Toolbar and list – High-level structure
+### Toolbar and list – High-level structure
 
 - \[Container\]
 
@@ -64,7 +63,7 @@ This subpattern is used to show child collections for the parent entity as eithe
     - Grid | Tree | ListView | Table
     - *Footer (Group) \[Optional\]*
 
-### Toolbar and list (double) – High-level structure
+### Toolbar and list (double) – High-level structure
 
 - \[Container\]
 
@@ -78,7 +77,7 @@ This subpattern is used to show child collections for the parent entity as eithe
 
 ### Core components
 
--   Apply the ToolbarList subpattern to a container control.
+-   Apply the ToolbarList subpattern to a container control.
 -   Address BP Warnings:
     -   **Grid.DataSource** must not be empty.
     -   No additional BP checks are required beyond the AX6.3 BP checks that were carried forward.
@@ -88,7 +87,7 @@ This subpattern is used to show child collections for the parent entity as eithe
 -   [Toolbar and Fields](toolbar-fields-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
 
 **Standard form guidelines:**
 
@@ -105,7 +104,7 @@ Form: **VendTable (TabCommunication)**
 
 [![ToolbarList(3)](./media/toolbarlist3.png)](./media/toolbarlist3.png)
 
-### Toolbar and list (double)
+### Toolbar and list (double)
 
 Form: **SalesQuickQuote (TabPageExistingItems)** 
 
@@ -126,10 +125,10 @@ This section will have answers to frequently asked questions that are related to
 
 ### Open issues
 
--   **Does CommandButton.Command contain Add and Remove actions that provide the default icon, label, and tooltip?**
-    -   Not yet. Deliverable 1052359 will look at setting these defaults for Add and Remove commands.
+-   **Does CommandButton.Command contain Add and Remove actions that provide the default icon, label, and tooltip?**
+    -   Not yet. Deliverable 1052359 will look at setting these defaults for Add and Remove commands.
 -   **Do we care about separators between groups of icons in a migration context?**
-    -   Currently, we don't show separators between button groups on toolbars.
+    -   Currently, we don't show separators between button groups on toolbars.
 
 ### Microsoft Dynamics AX 2012 content
 

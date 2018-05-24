@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 11
 
 # Table map extension
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition 7.3 and later.
 

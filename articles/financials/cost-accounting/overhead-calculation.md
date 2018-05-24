@@ -32,8 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Overhead calculation
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the typical processes for calculating and allocating overhead costs.
 
@@ -438,7 +437,7 @@ For detailed information about cost distribution and allocation bases, see Cost 
 
 ### Step 3: Process the overhead rate calculation
 
-The overhead rate is used to charge one or more specific cost objects. The charge is based on a predetermined cost rate and the magnitude from the assigned allocation base. 
+The overhead rate is used to charge one or more specific cost objects. The charge is based on a predetermined cost rate and the magnitude from the assigned allocation base. 
 
 #### Define the overhead rate
 

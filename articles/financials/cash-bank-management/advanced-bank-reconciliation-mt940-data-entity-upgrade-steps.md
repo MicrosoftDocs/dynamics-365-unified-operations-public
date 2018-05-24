@@ -32,12 +32,11 @@ ms.dyn365.ops.version: Version 1611
 
 # Advanced bank reconciliation MT940 Import – Composite data entity upgrade
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 A sequence number needs to be added to the bank statement import entity to support the MT940 format. 
 
-Use the following steps to add the bank statement import entity to support the MT940 format.
+Use the following steps to add the bank statement import entity to support the MT940 format.
 
 1.  Compile and synchronize the following:
     -   Composite Entity\\BankStatementImportEntity
@@ -51,10 +50,10 @@ Use the following steps to add the bank statement import entity to support the 
     1.  Load MT940 import project(s)
         1.  Change XSLT.
             -   Click **View map**.
-            -   Click **View map** on the bank statement document.
+            -   Click **View map** on the bank statement document.
             -   Click **Transformations**
             -   Delete the BankReconiliation-to-Composite.xslt file.
-            -   Add the new version of BankReconiliation-to-Composite.xsl.
+            -   Add the new version of BankReconiliation-to-Composite.xsl.
 
         2.  Expose the **Sequence Number** on **Source Data** layout.
             1.  Source data format = XML-Element.

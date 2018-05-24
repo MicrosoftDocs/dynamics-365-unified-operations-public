@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Calculate a BOM by using a single level structure (February 2016 only)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet. This is the sixth task in the BOM calculation series. The demo data company used to create this task is USMF.
 

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Analysis in the Intelligent Data Management Framework (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the functionality available from the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF) Analysis menu.
 
@@ -176,7 +175,7 @@ Analysis details (Archive database group)
 This command provides similar information for the archive database as the Analysis details command in the Production database group provides for the production database. For detailed information, see [Analysis functionality in the Microsoft Dynamics AX Intelligent Data Management Framework workspace (IDMF)](analysis-functionality-idmf-workspace.md).
 Show system health
 
-This command provides graphical views and details for key measures from the Microsoft Dynamics AX application, based on predetermined queries. You can also create your own queries by using the **Administer** &gt; **Application health check** command. A measure captures aggregated statistics for key business processes for each company in the Microsoft Dynamics AX application. This information is captured across calendar years, based on the ledger periods you set up in the application. For example, the measure **Number of inactive Sales Quotations** is calculated as "the total number of sales quotations which are canceled, confirmed, or lost." The total is grouped by company and by year. The application health check provides key measures for the **Inventory**, **Accounts receivable**, **Accounts payable**, **General ledger**, and **Administration** modules, as shown in the following screen shot. 
+This command provides graphical views and details for key measures from the Microsoft Dynamics AX application, based on predetermined queries. You can also create your own queries by using the **Administer** &gt; **Application health check** command. A measure captures aggregated statistics for key business processes for each company in the Microsoft Dynamics AX application. This information is captured across calendar years, based on the ledger periods you set up in the application. For example, the measure **Number of inactive Sales Quotations** is calculated as "the total number of sales quotations which are canceled, confirmed, or lost." The total is grouped by company and by year. The application health check provides key measures for the **Inventory**, **Accounts receivable**, **Accounts payable**, **General ledger**, and **Administration** modules, as shown in the following screen shot. 
 
 ![Show IDMF system health](./media/idmfshowsystemhealth.png) 
 
@@ -344,32 +343,33 @@ The following tables provide descriptions for the controls in this workspace.
 
 The **Select a snapshot** **time** list lets you select query plan statistics, query text, and a query plan for a specific analysis snapshot. By default, the list displays the most recent time. The data grid filters the information based on your selection. The following table describes the fields in the data grid.
 
-| Field                    | Description                                                                                                        |
-|--------------------------|--------------------------------------------------------------------------------------------------------------------|
-| **Usage count**          | The number of time the plan has been run since it was last compiled.                                               |
-| **Total elapsed time**   | The total elapsed time, in microseconds, for completed processing of this plan.                                    |
-| **Total worker time**    | The total amount of CPU time, in microseconds, that was consumed by processing of this plan since it was compiled. |
-| **Avg elapsed time**     | The average amount of CPU time, in microseconds, based on the **Usage count** and **Total worker time** values.    |
-| **Avg physical reads**   | The average number of physical reads performed by processing of this plan since it was compiled.                   |
-| **Avg logical reads**    | The average number of logical reads performed by processing of this plan since it was compiled.                    |
-| **Last elapsed time**    | The elapsed time, in microseconds, for the most recently completed processing of this plan**.**                    |
-| **Min elapsed time**     | The minimum elapsed time, in microseconds, for any completed processing of this plan.                              |
-| **Max elapsed time**     | The maximum elapsed time, in microseconds, for any completed processing of this plan.                              |
-| **Total physical reads** | The total number of physical reads performed by processing of this plan since it was compiled.                     |
-| **Last physical reads**  | The number of physical reads performed the last time the plan was processed.                                       |
-| **Min physical reads**   | The minimum number of physical reads that this plan has ever performed during a single processing.                 |
-| **Max physical reads**   | The maximum number of physical reads that this plan has ever performed during a single processing.                 |
-| **Total logical reads**  | The total number of logical reads performed by processing of this plan since it was compiled.                      |
-| **Last logical reads**   | The number of logical reads performed the last time the plan was processed.                                        |
-| **Min logical reads**    | The minimum number of logical reads that this plan has ever performed during a single processing.                  |
-| **Max logical reads**    | The maximum number of logical reads that this plan has ever performed during a single processing.                  |
-| **Total logical writes** | The total number of logical writes performed by processing of this plan since it was compiled.                     |
-| **Last logical writes**  | The number of logical writes performed the last time the plan was processed.                                       |
-| **Min logical writes**   | The minimum number of logical writes that this plan has ever performed during a single processing.                 |
-| **Max logical writes**   | The maximum number of logical writes that this plan has ever performed during a single processing.                 |
-| **Last worker time**     | The CPU time, in microseconds, that was consumed the last time the plan was processed.                             |
-| **Min worker time**      | The minimum CPU time, in microseconds, that this plan has ever consumed during a single processing.                |
-| **Max worker time**      | The maximum CPU time, in microseconds, that this plan has ever consumed during a single processing.                |
+
+|                 Field                 |                                                                Description                                                                |
+|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+|     <strong>Usage count</strong>      |                                   The number of time the plan has been run since it was last compiled.                                    |
+|  <strong>Total elapsed time</strong>  |                              The total elapsed time, in microseconds, for completed processing of this plan.                              |
+|  <strong>Total worker time</strong>   |            The total amount of CPU time, in microseconds, that was consumed by processing of this plan since it was compiled.             |
+|   <strong>Avg elapsed time</strong>   | The average amount of CPU time, in microseconds, based on the <strong>Usage count</strong> and <strong>Total worker time</strong> values. |
+|  <strong>Avg physical reads</strong>  |                     The average number of physical reads performed by processing of this plan since it was compiled.                      |
+|  <strong>Avg logical reads</strong>   |                      The average number of logical reads performed by processing of this plan since it was compiled.                      |
+|  <strong>Last elapsed time</strong>   |               The elapsed time, in microseconds, for the most recently completed processing of this plan<strong>.</strong>                |
+|   <strong>Min elapsed time</strong>   |                           The minimum elapsed time, in microseconds, for any completed processing of this plan.                           |
+|   <strong>Max elapsed time</strong>   |                           The maximum elapsed time, in microseconds, for any completed processing of this plan.                           |
+| <strong>Total physical reads</strong> |                      The total number of physical reads performed by processing of this plan since it was compiled.                       |
+| <strong>Last physical reads</strong>  |                               The number of physical reads performed the last time the plan was processed.                                |
+|  <strong>Min physical reads</strong>  |                    The minimum number of physical reads that this plan has ever performed during a single processing.                     |
+|  <strong>Max physical reads</strong>  |                    The maximum number of physical reads that this plan has ever performed during a single processing.                     |
+| <strong>Total logical reads</strong>  |                       The total number of logical reads performed by processing of this plan since it was compiled.                       |
+|  <strong>Last logical reads</strong>  |                                The number of logical reads performed the last time the plan was processed.                                |
+|  <strong>Min logical reads</strong>   |                     The minimum number of logical reads that this plan has ever performed during a single processing.                     |
+|  <strong>Max logical reads</strong>   |                     The maximum number of logical reads that this plan has ever performed during a single processing.                     |
+| <strong>Total logical writes</strong> |                      The total number of logical writes performed by processing of this plan since it was compiled.                       |
+| <strong>Last logical writes</strong>  |                               The number of logical writes performed the last time the plan was processed.                                |
+|  <strong>Min logical writes</strong>  |                    The minimum number of logical writes that this plan has ever performed during a single processing.                     |
+|  <strong>Max logical writes</strong>  |                    The maximum number of logical writes that this plan has ever performed during a single processing.                     |
+|   <strong>Last worker time</strong>   |                          The CPU time, in microseconds, that was consumed the last time the plan was processed.                           |
+|   <strong>Min worker time</strong>    |                    The minimum CPU time, in microseconds, that this plan has ever consumed during a single processing.                    |
+|   <strong>Max worker time</strong>    |                    The maximum CPU time, in microseconds, that this plan has ever consumed during a single processing.                    |
 
 ## Export to Excel
 This command lets you export selected rows from the data grid in all workspaces where this command is available.

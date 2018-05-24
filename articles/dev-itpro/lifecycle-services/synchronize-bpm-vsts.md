@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 # Synchronize a BPM library with Visual Studio Team Services
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You start the implementation stage of a project by synchronizing a Business process modeler (BPM) library with your project in Microsoft Visual Studio Team Services (VSTS). In this way, you can review processes and associate requirements with business processes. By synchronizing a BPM library with a VSTS project, you can also track the progress of your implementation project in VSTS, and can associate various work items with requirements and business processes. These work items include bugs, tasks, backlog items, tests, and documents.
 
@@ -92,6 +92,9 @@ To synchronize a BPM library with a VSTS project, on the **Business process libr
 You can also start VSTS synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **VSTS sync**.
 
 ![Starting VSTS synchronization from the toolbar in a library](./media/newbpm_BlogPost26.png)
+
+>[!NOTE]
+> BPM localization is not supported. If you edit in the new BPM client in any language other than EN-US, your changes will only display when you view the BPM in the language in which the changes were made. To view any changes made in EN-US, you must synchronize with Visual Studio Team Server before the changes will display.
 
 ## Turn off synchronization of BPM with VSTS
 

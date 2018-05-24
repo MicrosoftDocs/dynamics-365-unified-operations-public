@@ -2,7 +2,7 @@
 # required metadata
 
 title: Search for products and product variants during order entry
-description: Use the <strong>Item number </strong>field to search for products and product variants when you manually create a sales order line or a purchase order line.  This lets you quickly find product variants when you only have the configuration string or one of the product dimensions available.
+description: Use the **Item number** field to search for products and product variants when you manually create a sales order line or a purchase order line. This lets you quickly find product variants when you only have the configuration string or one of the product dimensions available.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
@@ -32,11 +32,11 @@ ms.dyn365.ops.version: Version 1611
 
 # Search for products and product variants during order entry
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
+[!include [Retail name](../includes/retail-name.md)]
 
-Use the <strong>Item number </strong>field to search for products and product variants when you manually create a sales order line or a purchase order line.  This lets you quickly find product variants when you only have the configuration string or one of the product dimensions available.
+Use the **Item number** field to search for products and product variants when you manually create a sales order line or a purchase order line.  This lets you quickly find product variants when you only have the configuration string or one of the product dimensions available.
 
 Sometimes, having too much of something is not the best situation to be in, and this is especially true if you sell a number of products that are similar, and you are trying to remember item numbers or product search names in order to find the right product to put on a sales order. You can use the **Item number** field on a sales order line or a purchase order line as a search field. You can enter any part of a product name, number, or dimension and get a lookup that displays all the items that match the search word.
 
@@ -50,7 +50,7 @@ When you search for products or product variants, it is important to understan
 
 ### Examples
 
-The following examples use products and product variants to illustrate how search is handled in various scenarios. **Prerequisite:** Under **Sales and marketing &gt; Setup &gt; Search &gt; Search parameters** &gt; **Search type**, select the **Full match** option.
+The following examples use products and product variants to illustrate how search is handled in various scenarios. **Prerequisite:** Under **Sales and marketing &gt; Setup &gt; Search &gt; Search parameters &gt; Search type**, select the **Full match** option.
 
 | Product type     | Product name    | Display product number | Item number | Configuration |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -75,7 +75,7 @@ Examples of product and product variant identifiers and dimensions that you can
 
 Go to **Sales and marketing &gt; Setup &gt; Search &gt; Search criteria** page. The **Search criteria** page allows you to define criteria for customer, prospect, and product search. Make sure you filter the page by using product search criteria. You can do this by switching to **Product** in the page's menu.  
 
-To add the display product number to the search criteria, click **New** in the page's menu. This will add a new record in the **Search criteria** grid. Open the **Field name** column lookup and chose **DisplayProductNumber**. To add the product's configuration to the search criteria, create a new record in the **Search criteria **grid and chose **configId** in the **Field name** column. In the same manner, create a record with **Field name** **InventColorId** for the color dimension, **InventSizeId** for the size dimension, and **InventStyleId** for the style dimension.
+To add the display product number to the search criteria, click **New** in the page's menu. This will add a new record in the **Search criteria** grid. Open the **Field name** column lookup and chose **DisplayProductNumber**. To add the product's configuration to the search criteria, create a new record in the **Search criteria** grid and chose **configId** in the **Field name** column. In the same manner, create a record with **Field name** **InventColorId** for the color dimension, **InventSizeId** for the size dimension, and **InventStyleId** for the style dimension.
 
 ### Step 2: Populate the database table that is used for product search
 

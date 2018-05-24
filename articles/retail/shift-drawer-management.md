@@ -34,8 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Shift and cash drawer management
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 This article explains how to set up and use the two types of retail point of sale (POS) shifts -  shared and stand-alone. Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.
 
@@ -54,7 +53,7 @@ A stand-alone shift is designated at the cash drawer level. This procedure expla
 4.  Click **Save**.
 5.  Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
 6.  Select the register that requires a stand-alone shift, and then click **Edit**.
-7.  In the **Hardware profile** field, select the hardware profile that you selected in step 2.
+7.  In the **Hardware profile** field, select the hardware profile that you selected in step 2.
 8.  Click **Save**.
 9.  Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 10. Select the **1090** distribution schedule, and then click **Run now** to synchronize changes to the POS.
@@ -82,12 +81,12 @@ A shared shift is used in an environment where multiple cashiers share a cash dr
 4.  Click **Save**.
 5.  Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
 6.  Select the register that requires a shared shift, and then click **Edit**.
-7.  In the **Hardware profile** field, select the hardware profile that you selected in step 2.
+7.  In the **Hardware profile** field, select the hardware profile that you selected in step 2.
 8.  Click **Save**.
 9.  Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 10. Select the **1090** distribution schedule, and then click **Run now** to synchronize changes to the POS.
 
-### Use a shared shift
+### Use a shared shift
 
 1.  Sign in to the POS.
 2.  If the POS isn’t yet connected to a hardware station, select **Non-drawer operation**, and then select the **Select hardware station** operation to make a hardware station active for the shared shift. This step is required only the first time that a register is added to a shared shift environment.

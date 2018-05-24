@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-12-01
 
 # CFDI layout version 3.3
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Electronic invoice parameters
 
@@ -53,7 +53,7 @@ The following changes are introduced in version 3.3 of the Comprobante Fiscal Di
 <thead>
 <tr>
 <th>SAT catalog</th>
-<th>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition mapping</th>
+<th>Microsoft Dynamics 365 for Finance and Operations mapping</th>
 </tr>
 </thead>
 <tbody>

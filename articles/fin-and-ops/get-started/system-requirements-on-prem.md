@@ -2,7 +2,7 @@
 # required metadata
 
 title: System requirements for on-premises deployments
-description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, for on-premises deployments.
+description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for on-premises deployments.
 author: kfend
 manager: AnnBe
 ms.date: 02/01/2018
@@ -32,14 +32,14 @@ ms.dyn365.ops.version: Platform update 8
 
 # System requirements for on-premises deployments
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, for on-premises deployments. Before you install Finance and Operations, when this step is appropriate, verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
+This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for on-premises deployments. Before you install Finance and Operations, when this step is appropriate, verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 > [!IMPORTANT]
-> On-premises deployments of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition are not supported on any public cloud infrastructure, including Azure. 
+> On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure. 
 
 ## Network requirements
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) can work on networks that use Internet Protocol Version 4 (IPv4) or Internet Protocol Version 6 (IPv6). Consider the network environment when you plan your system, and use the following guidelines.
+Microsoft Dynamics 365 for Finance and Operations (on-premises) can work on networks that use Internet Protocol Version 4 (IPv4) or Internet Protocol Version 6 (IPv6). Consider the network environment when you plan your system, and use the following guidelines.
 
 ### Network response time
 The following table lists the minimum network requirements for the connection between the web browser and Application Object Server (AOS), and for the connection between AOS and the database in an on-premises system.
@@ -123,7 +123,7 @@ The following tables list the number of processors and the amount of random-acce
 |            | Orchestrator                  | 4                           | 16                      |
 |                 | SQL Server  | 8  | 32|
 
-**Minimum sizing estimates for production and sandbox deployments\***
+**Minimum sizing estimates for production and sandbox deployments**
 
 | Topology                                        | Role                          | Number of instances |
 |-------------------------------------------------|-------------------------------|---------------------|

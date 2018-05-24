@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Create dimensions and import dimension members
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Cost accounting is an independent module that requires data from other modules. This data is categorized into the following:
 

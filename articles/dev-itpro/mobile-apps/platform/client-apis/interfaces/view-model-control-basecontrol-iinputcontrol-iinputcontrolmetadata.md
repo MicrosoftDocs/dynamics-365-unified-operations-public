@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # InputControlMetadata Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Metadata for input controls.
 

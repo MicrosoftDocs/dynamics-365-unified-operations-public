@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Approve and confirm purchase orders
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This article describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.
 
@@ -82,7 +82,7 @@ If part of the ordered quantity for a PO line has been delivered, you can’t ch
 
 After an order has been confirmed, you can no longer delete it. However, you can cancel the total quantity or any remaining quantity on an order, provided that the quantity hasn’t been received or invoiced.
 
-See also
+Additional resources
 --------
 
 [Purchase order overview](purchase-order-overview.md)
