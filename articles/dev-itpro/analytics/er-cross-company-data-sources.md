@@ -5,7 +5,7 @@ title: Cross-company data sources in Electronic reporting
 description: This topic explains how you can use cross-company data sources in Electronic reporting (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 05/15/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -78,5 +78,5 @@ To learn more about this feature, play the task guide, **ER Access records of co
 
 Download the following files to complete the task guide:
 
-- [ER model configuration - CrossCompanyDataAccessModel.xml]()
-- [ER format configuration - CrossCompanyDataAccessFormat.xml]()
+- [ER model configuration - CrossCompanyDataAccessModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+- [ER format configuration - CrossCompanyDataAccessFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
