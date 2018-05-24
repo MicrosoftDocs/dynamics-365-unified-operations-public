@@ -400,7 +400,7 @@ This section explains how to override the existing CRT request to print a receip
 9. Copy the following code, and paste it inside the class to add a new method to read the transaction from the cart table, because suspended transactions aren't yet created in the retail transaction table. You must then convert the cart transaction to sales transaction. This conversion is required because the receipt object can understand only sales transactions.
 
     > [!NOTE]
-    > If you're printing a custom receipt for a completed transaction, you have to get the cart transaction and convert it to a sales transaction. It has already been converted to a sales transaction, because the transaction is completed.
+    > If you're printing a custom receipt for a completed transaction, you have don't have to get the cart transaction and convert it to a sales transaction. It has already been converted to a sales transaction, because the transaction is completed.
 
     ```C#
     private SalesOrder GetSalesOrderForTransactionWithId(RequestContext requestContext, string transactionId)
@@ -427,7 +427,7 @@ This section explains how to override the existing CRT request to print a receip
 10. Copy the following code, and paste it into the class to add a new method to construct the receipt format by using the sales transaction information, based on the custom receipt format that is defined in HQ.
 
     ```C#
-    | private Collection<Receipt> GetCustomReceipts(SalesOrder salesOrder, ReceiptRetrievalCriteria criteria)
+    private Collection<Receipt> GetCustomReceipts(SalesOrder salesOrder, ReceiptRetrievalCriteria criteria)
     {
         Collection<Receipt> result = new Collection<Receipt>();
         var getReceiptServiceRequest = new GetReceiptServiceRequest(
