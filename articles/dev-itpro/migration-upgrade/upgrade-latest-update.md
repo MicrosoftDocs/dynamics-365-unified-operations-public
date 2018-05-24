@@ -3,7 +3,7 @@
 
 title: Process for moving to the latest update of Finance and Operations
 description: This topic explains the process for upgrading to the latest update for Microsoft Dynamics 365 for Finance and Operations.
-author: tariqbell
+author: robadawy
 manager: AnnBe
 
 ms.date: 11/20/2017
@@ -70,7 +70,7 @@ Use this scenario when one or more small hotfixes are required in order to addre
 
 This process is required before you can use scenario 3. A developer must complete this process before other activities can begin.
 
-Dynamics 365 for Finance and Operations 8.0 does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have have a plan to refactor your customizations into extensions. For more information, see the [Extensibility homepage](../extensibility/extensibility-home-page.md).
+Dynamics 365 for Finance and Operations 8.0 and newer does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have have a plan to refactor your customizations into extensions. For more information, see the [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
 
 ### Scenario 3: Upgrade to the latest application release
 
