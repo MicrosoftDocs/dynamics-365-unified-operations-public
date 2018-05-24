@@ -61,9 +61,6 @@ You must use IIS Express. See the next question for more information.
 ## What are the instructions for using IIS Express?
 When IIS Express is started, an icon appears in the notification area (near the clock). When you right-click on the IIS Express icon, all the running sites are listed. You can stop IIS Express from that menu. Some actions in Visual Studio cause IIS Express to be started, but you can also explicitly start IIS Express from Visual Studio by selecting **Restart IIS Express** on the **Dynamics 365** menu.
 
-## How can I apply a Visual Studio license that isn't linked to the Visual Studio sign-in account that is likely to be used in the customer Azure AD or domain?
-This functionality isn't supported. You can't apply a partner Visual Studio license unless it's linked to the Visual Studio sign-in account that is used in the customer Azure Active Directory (Azure AD) or domain. Linking a Visual Studio license to an account can be done by assigning an MSDN license to the user or by assigning a license to the user account using https://www.visualstudio.com/subscriptions-administration/ if the license is purchased through Volume Licensing.
-
 ## Can I install additional development tools (such as Fiddler and Pepper)?
 No, you can't install additional development tools.
 
@@ -93,7 +90,7 @@ You can put the system into maintenance mode to change the license configuration
 You should be able to use the **-devinstall** option to install license deployable packages. However, an issue was found with this scenario. We are working to resolve the issue.
 
 ## Is licensing Visual Studio by entering a product key supported?
-Entering a Visual Studio product key is not supported. We recommend using Visual Studio subscription licensing and signing into Visual Studio with the email address connected to the subscription that is supported.
+Entering a product key directly in Visual Studio is not supported. You should use Visual Studio subscription licensing and signin to Visual Studio with the email address (user account) associated with the license. Linking a Visual Studio license to a user account can be done by assigning an MSDN license to the user account or by assigning a license to the user account using https://www.visualstudio.com/subscriptions-administration.
 
 ## Can I upgrade my database to a new application release?
 As of the February 2018 release of Lifecyle Services (LCS), you can execute the data upgrade package from the LCS environment page of a development environment. Executing the data upgrade package from LCS does not require you to be an administrator on the VM.
