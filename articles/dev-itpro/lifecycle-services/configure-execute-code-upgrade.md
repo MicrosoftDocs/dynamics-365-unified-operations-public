@@ -41,7 +41,7 @@ Overview
 
 The code upgrade tool operates by connecting to Visual Studio Team Services (VSTS), locating your Trunk\\Main branch, branching to a new branch which will be named as Releases\\\<version number\>, and then performing the code upgrade there. After this process is complete you can synchronize your Finance and Operations developer environment to this new branch under Releases\\\<version number\> and resolve conflicts. When you have compiled and tested your upgraded code you can merge the new branch back into Trunk\\Main, using source control explorer in Visual Studio and the process is complete.
 
-Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow customization by using overlayering of Microsoft models. Before you upgrade, you must have have a plan to refactor your customizations into extensions. For more information, see the [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
+Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have have a plan to refactor your customizations into extensions. For more information, see the [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
 
 ## Process
 ### Create the Trunk\\Main folder structure
