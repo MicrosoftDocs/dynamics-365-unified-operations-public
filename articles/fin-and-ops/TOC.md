@@ -40,6 +40,7 @@
 #### [Platform update 1 (May 2016)](get-started/whats-new-changed-platform-version-7-1-may-2016.md)
 #### [Dynamics AX 7.0 (February 2016)](get-started/whats-new-changed-7-0-february-2016.md)
 #### Updated task guides
+##### [December 2017 task guides](get-started/new-task-guides-dec-2017.md)
 ##### [November 2016 task guides](get-started/new-task-guides-november-2016.md)
 ##### [August 2016 task guides](get-started/new-updated-task-guides-available-august-2016.md)
 ##### [May 2016 task guides](get-started/new-updated-task-guides-available-may-2016.md)
