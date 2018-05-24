@@ -90,7 +90,7 @@ You can put the system into maintenance mode to change the license configuration
 You should be able to use the **-devinstall** option to install license deployable packages. However, an issue was found with this scenario. We are working to resolve the issue.
 
 ## Is licensing Visual Studio by entering a product key supported?
-Entering a product key directly in Visual Studio is not supported. You should use Visual Studio subscription licensing and signin to Visual Studio with the email address (user account) associated with the license. Linking a Visual Studio license to a user account can be done by assigning an MSDN license to the user account or by assigning a license to the user account using https://www.visualstudio.com/subscriptions-administration.
+Entering a product key directly in Visual Studio is not supported. Instead, use Visual Studio subscription licensing and sign in to Visual Studio with the email address (user account) associated with the license. You can link a Visual Studio license to a user account by assigning an MSDN license to the user account or by assigning a license to the user account by using https://www.visualstudio.com/subscriptions-administration.
 
 ## Can I upgrade my database to a new application release?
 As of the February 2018 release of Lifecyle Services (LCS), you can execute the data upgrade package from the LCS environment page of a development environment. Executing the data upgrade package from LCS does not require you to be an administrator on the VM.
