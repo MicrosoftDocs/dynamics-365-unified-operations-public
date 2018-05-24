@@ -70,7 +70,7 @@ Use this scenario when one or more small hotfixes are required in order to addre
 
 This process is required before you can use scenario 3. A developer must complete this process before other activities can begin.
 
-Dynamics 365 for Finance and Operations 8.0 and newer does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have have a plan to refactor your customizations into extensions. For more information, see the [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
+Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have have a plan to refactor your customizations into extensions. For more information, see [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
 
 ### Scenario 3: Upgrade to the latest application release
 
