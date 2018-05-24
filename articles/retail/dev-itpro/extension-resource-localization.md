@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Retail Extension Resource localization
-description: This topic explains how to change or modify POS UI labels, POS messages, Receipt labels and Retail server or Commerce runtime error messages.
+title: Retail extension resource localization
+description: This topic explains how to modify POS UI labels, POS messages, receipt labels, and error message for Retail server or CRT. It also explains how you can add custom error messages for Retail server or CRT.
 author: mugunthanm
 manager: AnnBe
 ms.date: 05/23/2018
@@ -27,126 +27,117 @@ ms.dyn365.ops.version: 8.0.1
 
 ---
 
-# Retail Extension Resource localization
+# Retail extension resource localization
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how to change or modify POS UI labels, POS message, Receipt labels and Retail server or Commerce Runtime Services (CRT) error messages, you can also add custom error messages for Retail and CRT in the same way but for new POS extension labels you should use the localization framework in the POS extension. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail 7.2 with latest update and higher version.
+This topic explains how to modify labels in the point of sale (POS) user interface (UI), POS messages (error, warning, and information), receipt labels, and error messages for Retail server or Commerce Runtime Services (CRT). You can also add custom error messages for Retail server or CRT in the same way. However, for new POS extension labels, you should use the localization framework in the POS extension.
 
-## Retail POS labels and Messages (Error, warning and information)
+This topic is applicable to Microsoft Dynamics 365 for Finance and Operations 7.2 with the latest update, Microsoft Dynamics 365 for Retail 7.2 with the latest update, and to later versions.
 
-This topic explains how to change or modify POS UI labels, POS message, Receipt labels and Retail server or CRT error messages, you can also add custom error messages for Retail and CRT in the same way but for new POS extension labels you should use the localization framework in the POS extension. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail 7.2 with latest update and higher version.
+## Retail POS labels and messages (error, warning, and information)
+
+This section explains how to modify POS UI labels and POS messages by overriding the default strings.
 
 ### Override POS UI labels and messages
 
-You can override the default strings in the POS by using the language text entries in the language text form. Follow the below steps to change the POS strings:
+You can override the default strings in the POS by using the language text entries on the **Language text** page. Follow these steps to change POS strings.
 
-1.  Login to Dynamics 365 for Retail or Finance and Operations.
+1. Sign in to Retail or Finance and Operations.
+2. Go to **Retail &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Language text**.
+3. On the **Language text** page, on the **POS** tab, in the **POS language text** grid, select the **Add** button to add the language ID, text ID, and text for the string that you want to override.
 
-2.  Navigate to **Retail &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Language text**.
+    For example, you want to change the label of the **Operator ID** field on the POS sign-in page to **Employee ID** for US English (en-us). In this case, add the following entry in the **POS language text** grid.
 
-3.  Select the **POS** tab in the Language text form.
+    | Language ID | Text ID | Text        |
+    |-------------|---------|-------------|
+    | en-us       | 502     | Employee ID |
 
-4.  Under the **POS language text** grid, Click Add button to add the Language ID, Text ID and Text for string you want to override.
+    > [!NOTE]
+    > For information about how to get the text ID for POS strings, see the next section.
 
-    Ex: If you want to change the string shown in the POS LogOn form from Operator ID to Employee ID for en-us, you need to add the below entry in POS language text:
+4. On the Action Pane, select **Save**.
+5. Go to **Retail &gt; Retail IT &gt; Distribution schedule**.
+6. Select the **Registers** (**1090**) job, and then select **Run now**.
+7. Deactivate and reactivate the POS to show the updated labels or messages.
 
-    | **Language ID** | **Text ID** | **Text**    |
-    |-----------------|-------------|-------------|
-    | en-us           | 502         | Employee ID |
+### Get the text ID for POS strings
 
-1.  Click Save in the Action bar.
+To get the text ID for a POS string, you must run the POS by using the Retail software development kit (SDK) in Debug mode. In the POS, text IDs are referred to as string IDs.
 
-2.  Navigate to **Retail &gt; Retail IT &gt; Distribution schedule**.
+1. Start Microsoft Visual Studio 2015 in Administrator mode.
+2. Open **ModernPOS** solution from **…\\RetailSDK\\POS**.
+3. Set the **Solution configuration** property to **Debug**, the **Solution platforms** property to **x86**, and the **Deploy** property to **Local machine**.
+4. Compile and build the solution, and then select **Deploy \> Local Machine**.
+5. After the POS is deployed, sign in to it by using your operator ID and password.
+6. Select the **Settings** button in the upper right of the POS window.
+7. On the **Settings** page, under **Developer mode**, set the **Developer Mode** option to **On**.
+8. Set the **Show Strings IDs** option to **On**.
+9. Sign out of the POS, and then sign in again. The POS now shows the strings IDs in front of all the labels and messages. 
 
-3.  Select the Registers (1090) job and click Run now.
+### Troubleshooting
 
-4.  Deactivate and Activate POS again to show the updated labels or messages.
+If the **Developer Mode** option doesn't appear on the **Settings** page in the POS, verify that you're running in Debug mode. Open the **pos.js** file, and verify that **Config.isDebugMode** is set to **true**. If it's set to **false**, change the value to **true**, and then deploy the POS again.
 
+> [!IMPORTANT]
+> You should edit the pos.js file **only** to do quick testing and to get string IDs. In these cases, after you edit the file, you should revert your changes. Any changes that you make in Microsoft cores files will be overridden during deployment. Therefore, you will lose the changes. Additionally, future versions might not support editing the pos.js file.
 
-### How to get the Text ID for the POS strings
+## Retail server or CRT error messages, or receipt strings
 
-To get the text ID you have to run POS using the Retail SDK in debug mode.
+This section explains how to modify Retail server or CRT error messages, or receipt strings, by overriding the default strings. It also explains how you can add new, custom Retail server or CRT error messages, or receipt strings.
 
-1.  Open Visual Studio 2015 in Administrator mode.
+### Override Retail server or CRT error messages, or receipt strings
 
-2.  Open ModernPOS solution from …\RetailSDK\POS
+1. Sign in to Retail or Finance and Operations.
+2. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Language text**.
+3. On the **Language text** page, on the **Retail server** tab, in the **Retail server language text** grid, click the **Add** button to add the language ID, text ID, and text for the string that you want to override.
 
-3.  In VS Set the solution configuration to Debug, Solution platforms to x86 and Deploy to Local machine.
+    For example, when users enter an incorrect user name or password during sign-in, the POS shows the following error message: "We didn't recognize the user name or password. Please try again." For US English, you want to change the message to "Please enter valid user name or password." In this case, add the following entry in the **Retail server language text** grid.
 
-4.  Click the **Deploy > Local Machine** after compile and Build.
+    | Language ID | Text ID                                                              | Text                                     |
+    |-------------|----------------------------------------------------------------------|------------------------------------------|
+    | en-us       | Microsoft\_Dynamics\_Commerce\_Runtime\_InvalidAuthenticationCredentials | Please enter valid user name or password |
 
-5.  Once the POS is deployed, login to POS using the operator ID and Password.
+    > [!NOTE]
+    > For information about how to get the text ID for Retail server or CRT error messages, and receipt strings, see the next section.
 
-6.  Click the Settings button on the top right side of POS.
+4. On the Action Pane, select **Save**.
+5. Go to **Retail \> Retail IT \> Distribution schedule**.
+6. Select the **Registers** (**1090**) job, and then select **Run now**.
 
-7.  In the Settings page, under the Developer mode, Set Developer Mode = On
+### Get the text ID for Retail server or CRT messages, or receipt strings
 
-8.  Set the Show Strings IDs to On.
+1. Go to **…\\RetailSDK\\Documents\\Resources**.
+2. In Visual Studio, open one of the following resource files:
 
-9.  Log off and Log in again to POS, then POS will show the strings IDs before all the labels and messages.
+    - **To modify Retail server or CRT error messages:** RuntimeExceptionMessages.resx
+    - **To modify receipt strings:** RuntimeReceiptMessages.resx
 
-## Troubleshooting
+    For every message in the resource file, Visual Studio shows a name and a value.
 
-If POS is not showing the developer mode option in the settings page, check whether you are running in debug mode and check in pos.js file whether Config.isDebugMode = true; if its false, change the value to true and deploy the POS again.
+3. In the **Value** column, search for the text that you want to change.
+4. Copy the name that corresponds to that value. You enter this name as the text ID in the **Retail server language text** grid.
 
-> [!NOTE]
-> You should not edit pos.js file, just for quick testing and to get the string IDs you edit the file and revert because if you do any changes in Microsoft cores files it will be overridden during deployment and you will lose the changes. Also editing the pos.js file may not be supported in the future versions.
+### Add custom Retail server or CRT error messages, or receipt strings
 
-## Override Retail server or CRT messages or Receipt strings:
+You can also add new Retail server or CRT error messages, or new receipt strings, in the **Retail server language text** grid. In this way, you support localization instead of hard-coding everything in the code.
 
-1.  Login to Dynamics 365 for Retail or Finance and Operations.
+> [!IMPORTANT]
+> The text ID of all your new messages should start with **Microsoft\_Dynamics\_Commerce\_**.
 
-2.  Navigate to **Retail > Channel setup > POS setup > POS profiles > Language text**.
+For example, you want to add a new exception message in US English (en-us) and UK English (en-uk). In this case, add entries that resemble the follow entries in the **Retail server language text** grid.
 
-3.  Select the **Retail server tab** in the Language text form.
-
-4.  Under the **Retail server language text** grid, click the **Add** button to add the Language ID, Text ID and Text for string you want to override.
-
-    **Ex:** When you enter wrong user name or password during logon POS will show the error message as "We didn't recognize the user name or password. Please try again.", if you want to change the message "Please enter valid user name or password." for en-us then you will add the below language ID, text ID and Text to Retail server language text.
-
-| **Language ID** | **Text ID**                                                              | **Text**                                 |
-|-----------------|--------------------------------------------------------------------------|------------------------------------------|
-| en-us           | Microsoft_Dynamics_Commerce_Runtime_InvalidAuthenticationCredentials | Please enter valid user name or password |
-
-1.  Click **Save** in the Action bar.
-
-2.  Navigate to **Retail > Retail IT > Distribution schedule**.
-
-3.  Select the **Registers (1090)** job and click **Run now**.
-
-## How to get the Text ID for the Retail server or CRT messages or Receipt strings
-
-1.  Navigate to …\RetailSDK\Documents\Resources
-
-2.  Open the **RuntimeExceptionMessages.resx** using Visual studio if you want to modify the Retail server or CRT messages. To modify the Receipt strings, open the **RuntimeReceiptMessages.resx** file.
-
-3.  Visual Studio will open all the messages in the resources files as Name and Value.
-
-4.  Search for the text you are planning to change in the value column.
-
-5.  Copy the Name against that value. This name will be used as Text ID in **Retail server language text**.
-
-    You can also add your new CRT or RS error messages or Receipt strings to the Retail server language text form and support localization instead of hard coding everything in the code.
-
-> [!NOTE]
-> All your new message should start with the Text ID: **Microsoft_Dynamics_Commerce_**.
-
-Ex: Suppose you want to add a new exception messages in en-us and en-uk, you will do something like this in **Retail server language text**:
-
-| **Language ID** | **Text ID**                               | **Text**                |
-|-----------------|-------------------------------------------|-------------------------|
-| en-us           | Microsoft_Dynamics_Commerce_CustomId1  | My new message in en-us |
-| en-uk           | Microsoft_Dynamics_Commerce_ CustomId1 | My new message in en-uk |
-
+| Language ID | Text ID                                 | Text                    |
+|-------------|-----------------------------------------|-------------------------|
+| en-us       | Microsoft\_Dynamics_Commerce\_CustomId1 | My new message in US English |
+| en-uk       | Microsoft\_Dynamics_Commerce\_CustomId1 | My new message in UK English |
 
 > [!NOTE]
-> **CustomId1** is the ID used for the new messages, you can use any ID, but it should begin with **Microsoft_Dynamics_Commerce_**.
+> In this example, **CustomId1** is the text ID for the new message. You can use any text ID that you want, provided that it starts with **Microsoft\_Dynamics\_Commerce\_**.
 
-## How will you use this in your CRT Extension code
+The following example shows how to use this new message in your CRT extension code.
 
 ```C#
-throw new CommerceException("Microsoft_Dynamics_Commerce_ CustomId1", ExceptionSeverity.Warning, null, "Custom error"); |
+throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSeverity.Warning, null, "Custom error"); |
 ```
-
