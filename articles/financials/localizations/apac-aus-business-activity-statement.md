@@ -77,43 +77,30 @@ The following list provides an overview of the process to calculate GST and prep
     </ul>
 </td>
 </tr>
-<tr>
-  </tr>
   <tr>
-    <td>Create an additional BAS reconciliation account</td>
-    <td></td>
-  </tr>
-    <tr>
-    <td><a href="../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md">Create ledger posting groups.</a></td>
-    <td></td>
-  </tr>
-    <tr>
-    <td>Set up the GST sales tax authority</td>
-    <td></td>
-  </tr>
-    <tr>
-    <td>Create settlement periods</td>
-    <td></td>
-  </tr>
-    <tr>
-    <td><a href="#gst-reporting-codes">Set up sales tax reporting codes for GST</a></td>
-    <td></td>
-  </tr>
-    <tr>
-    <td><a href="../general-ledger/tasks/set-up-sales-tax-codes.md">Set up sales tax codes</a></td>
-    <td></td>
-  </tr>
-    <tr>
-    <td><a href="tasks/set-up-reason-codes-australia-bas.md">Set up reason codes for Australia BAS</a></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Set up BAS fringe benefit reason codes</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><a href="../general-ledger/tasks/set-up-withholding-tax.md">Set up withholding tax codes and groups</a></td>
-    <td></td>
+    <td> General setup
+    </td>
+    <td> <ul>
+      <li>Create an additional BAS reconciliation account
+      </li>
+      <li><a href="../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md">Create ledger posting groups.</a>
+      </li>
+      <li>Set up the GST sales tax authority
+      </li>
+      <li>Create settlement periods
+      </li>
+      <li><a href="#gst-reporting-codes">Set up sales tax reporting codes for GST</a>
+      </li>
+      <li><a href="../general-ledger/tasks/set-up-sales-tax-codes.md">Set up sales tax codes</a>
+      </li>
+      <li><a href="tasks/set-up-reason-codes-australia-bas.md">Set up reason codes for Australia BAS</a>
+      </li>
+      <li>Set up BAS fringe benefit reason codes
+      </li>
+      <li><a href="../general-ledger/tasks/set-up-withholding-tax.md">Set up withholding tax codes and groups</a>
+      </li>
+         </ul>
+    </td>
   </tr>
   <tr>
     <td>Create and save the BAS XML file</td>
