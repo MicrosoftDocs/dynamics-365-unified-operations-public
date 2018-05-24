@@ -61,8 +61,8 @@ You must use IIS Express. See the next question for more information.
 ## What are the instructions for using IIS Express?
 When IIS Express is started, an icon appears in the notification area (near the clock). When you right-click on the IIS Express icon, all the running sites are listed. You can stop IIS Express from that menu. Some actions in Visual Studio cause IIS Express to be started, but you can also explicitly start IIS Express from Visual Studio by selecting **Restart IIS Express** on the **Dynamics 365** menu.
 
-## How can I apply a partner Visual Studio license that isn't linked to the Visual Studio sign-in account that is likely to be used in the customer Azure AD or domain?
-This functionality isn't supported. You can't apply a partner Visual Studio license unless it's linked to the Visual Studio sign-in account that is used in the customer Azure Active Directory (Azure AD) or domain.
+## How can I apply a Visual Studio license that isn't linked to the Visual Studio sign-in account that is likely to be used in the customer Azure AD or domain?
+This functionality isn't supported. You can't apply a partner Visual Studio license unless it's linked to the Visual Studio sign-in account that is used in the customer Azure Active Directory (Azure AD) or domain. Linking a Visual Studio license to an account can be done by assigning an MSDN license to the user or by assigning a license to the user account using https://www.visualstudio.com/subscriptions-administration/ if the license is purchased through Volume Licensing.
 
 ## Can I install additional development tools (such as Fiddler and Pepper)?
 No, you can't install additional development tools.
