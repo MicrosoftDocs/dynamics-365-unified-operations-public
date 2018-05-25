@@ -5,7 +5,7 @@ title: Split generated files based on file size and content quantity
 description: This topic provides information about how to split generated files based on the file size and content item quantity.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 05/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,7 +45,7 @@ In addition to using the XML ELEMENT and XML SEQUENCE format elements to add XML
 
 If you configured file destinations for a FILE format element that has been configured to split the generated output whenever specific limits are exceeded, each piece of generated output is sent to the configured file destination as an individual file. To uniquely name the files that are created by splitting the output, you must configure an ER expression for the FILE format element. If you include an ER data source of the NUMBER SEQUENCE type, the number sequence will be incremented for each piece of the split output.
 
-To learn more about this feature, play the **ER Split XML files based on the file size or content item quantity** task guide, which is part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. This task guide walks you through the process of configuring an ER format to split generated files based on limits on the file size and content item quantity. To complete the task guide, you must download the following files:
+To learn more about this feature, play the **ER Split XML files based on the file size or content item quantity** task guide, which is part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process and can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). This task guide walks you through the process of configuring an ER format to split generated files based on limits on the file size and content item quantity. To complete the task guide, you must download the following files:
 
 - [ER model configuration -	XmlFilesSplittingModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [ER format configuration - XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
