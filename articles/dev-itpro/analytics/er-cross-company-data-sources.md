@@ -74,7 +74,7 @@ Note that when the **Use draft** option is turned off for the assigned to a sing
 
 The hierarchy can be assigned to a format in a specific page that can be accessed from the ER workspace or by using the **Organization administration -> Electronic reporting -> Legal entity filter for formats** menu item. To access the page, the **Maintain legal entity filters for format** privilege (ERMaintainFormatMappingLegalEntityFilters) must be granted to a user. The scope restriction of hierarchy-based legal entities for the format is applied in addition to the restriction that the user can manually specify in the system query dialog box. The intersection of these restrictions is used when the format is run.
 
-To learn more about this feature, play the task guide, **ER Access records of company dependent tables in cross-company mode**, which is part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process. This task guide walks you through the process of configuring an ER model mapping and ER format to access application tables in cross-company mode.
+To learn more about this feature, play the task guide, **ER Access records of company dependent tables in cross-company mode**, which is part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process, and can be downloaded from the [Microsoft download center](https://go.microsoft.com/fwlink/?linkid=874684). This task guide walks you through the process of configuring an ER model mapping and ER format to access application tables in cross-company mode.
 
 Download the following files to complete the task guide:
 
