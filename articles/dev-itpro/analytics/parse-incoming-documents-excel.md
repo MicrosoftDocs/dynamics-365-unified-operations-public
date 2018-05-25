@@ -5,7 +5,7 @@ title: Parse incoming documents in Microsoft Excel
 description:  This topic provides information about designing Electronic reporting (ER) formats to parse content contained in incoming Microsoft Excel files. 
 author: NickSelin
 manager: AnnBe
-ms.date: 04/04/2018
+ms.date: 05/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ You can design Electronic reporting (ER) formats to parse incoming Microsoft Exc
 -	Design a new model and format and want to test them at run-time. In this case, Excel will simulate the actual application data.
 -	Manage data beyond your application in Excel and want to import this data to submit a specific report.
 
-To learn more about this feature, play the task guides **ER Import data from a Microsoft Excel file (Part 1: Design format)** and **ER Import data from a Microsoft Excel file (Part 2: Import data)** (parts of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process). These task guides walk through how the incoming Excel file can be parsed by using the ER format to import information from incoming documents and update application data.
+To learn more about this feature, play the task guides **ER Import data from a Microsoft Excel file (Part 1: Design format)** and **ER Import data from a Microsoft Excel file (Part 2: Import data)** (parts of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process). These task guides walk through how the incoming Excel file can be parsed by using the ER format to import information from incoming documents and update application data. You can download the task guide files from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
 
 Download the following files to complete the task guides mentioned above.
 
