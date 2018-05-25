@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to package customizations for the following artifacts.
+This topic explains how to package customizations for the following artifacts and deploy it to your environment using LCS.
 
 -   Commerce runtime (CRT)
 -   Retail Server
@@ -42,18 +42,18 @@ This topic explains how to package customizations for the following artifacts.
 -   Cloud POS
 -   Hardware station
 -   Channel database scripts
--   AOS payment connector
+-   Payment connector
+-   Retail store scale unit(RSSU)
+-   Hybrid app (IOS and Andriod POS app)
 
-Customizations for the above artifacts are packaged as a single retail deployable package.
+## Retail deployable package
+Retail deployable package is one combined package which contain all your customizations packaged together with all the necessary metadata for deployment. You can use this retail deployable package to deploy your customization to different environment using LCS or manually using the scripts provided inside this package. In this document we will walkthrough how you can generate this package.
 
-Note: If your customizations were built and packaged using Retail SDK prior to application version 7.1.1541.3036 as individual retail component packages, these are no longer supported for deployment in LCS. You must uptake the following update and re-build and re-package your customizations for retail components.
+**Note:** All customizations for the retail components or packaged as a single retail deployable package, we don't support separate package for individual retail components like Modern POS, Cloud POS, RSSU, CRT, Retail server etc. You must package all extension as one retail deployable package, even if you have ISV extensions or different partner extensions all has to be packaged together for now becuase we don't support individual retail components deployment. If your customizations were built and packaged using Retail SDK prior to application version 7.1.1541.3036 as individual retail component packages, these are no longer supported for deployment in LCS. You must uptake the below hotfix and re-build and re-package your customizations for retail components.
 
 -   [KB 4015062](https://fix.lcs.dynamics.com/Home/Index/0/kb/4015062?permission=Download)
 
 For detailed information about the Retail software development kit (SDK), see [Retail SDK overview](retail-sdk-overview.md). 
-
-## Retail deployable package
-Retail deployable package is an asset that can be consumed by the LCS deployment service or it can be deployed manually to service or install a customization.
 
 
 ### Steps to create a Retail deployable package
@@ -61,7 +61,7 @@ Retail deployable package is an asset that can be consumed by the LCS deployme
 There are two ways to generate the Retail deployable package. One is using the Retail build automation or manually using the build tools in Retail SDK. In this topic we will focus on the manual way.
 1. Customize or add functionality to the Retail stack.
 2. Use the build tools to give an identity to the customized installation package, code-sign it, and specify the customized CRT, Retail Server, customized Hardware station assemblies, and customized database scripts.
-3. After all the settings have been specified on Customization.settings file under Retail SDK\BuildTools folder, run **msbuild /t:rebuild** on the root of the Retail SDK folder using the VS dev command prompt tool to generate the retail deployable packages. Before building the package, place all the customized assemblies to Retail SDK\References folder and also place the modified config files like commerceruntime.config, CommerceRuntime.MPOSOffline.config, dllhost.exe.config to the Retail SDK\Assets folder.
+3. After all the settings have been specified on Customization.settings file under ...\Retail SDK\BuildTools folder, run **msbuild /t:rebuild** on the root of the Retail SDK folder using the msbuild or VS dev command prompt tool to generate the retail deployable packages. Before building the package, place all the customized assemblies to ...\Retail SDK\References folder and also place the modified config files like CommerceRuntime.Ext.config, CommerceRuntime.MPOSOffline.Ext.config, HardwareStation.Extension.config and RetailProxy.MPOSOffline.ext.config to the ...\Retail SDK\Assets folder.
 
 ## Retail SDK build tools – Customization settings
 BuildTools\Customization.setting files is where most of the configuration values for the Retail SDK are set for build and packaging. These values control how binaries, components, and packages are named, versioned, and code-signed. After you define this metadata, The Retail SDK build system uses it to give an identity to the assets, and to package the customization assets for all the Retail components.
@@ -78,18 +78,25 @@ The following list of configurations is available in Customization.Settings file
 -   **DelaySign** – Specify **True** if you want to delay signing of the assets during the build.
 -   **AssemblyOriginatorKeyFile** – Specify the strong name key to use to sign the assembly.
 -   **ModernPOSPackageCertificateKeyFile** – Specify the PFX file to use to sign Modern POS and Hardware station.
--   **RetailServerLibraryPathForProxyGeneration** – Specify the customized Retail Server assembly to use for proxy generation (both TypeScript and C\# proxy).
+-   **RetailServerLibraryPathForProxyGeneration** – specify the customized Retail Server assembly to use for proxy generation (both TypeScript and C\# proxy - You have to specify the Retail Server assembly name here for 7.1 and previous versions, starting from 7.2 use the commerce generator tool for proxy generation but if you are using the proxy in the e-commerce client side then add the assembly name here).
 -   In the **ItemGroup** section:
-    -   **ISV\_CommerceRuntime\_CustomizableFile** – Specify all the customized CRT assembly. You can have multiple entries, one for each customized CRT assembly.
-    -   **ISV\_RetailServer\_CustomizableFile** – Specify all the customized Retail Server assembly. You can have multiple entries, one for each customized Retail Server assembly.
-    -   **ISV\_HardwareStation\_CustomizableFile** – Specify all the customized Hardware station assembly. You can have multiple entries, one for each customized Hardware station assembly.
-    -   **ISV\_CustomDatabaseFile\_Upgrade\_Custom** – Specify all the customized database scripts.
+    -   **ISV_CommerceRuntime_CustomizableFile** – Specify all the customized CRT assembly details here. You can have multiple entries, one for each  CRT assembly.
+        **Ex:** ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\MyCrtExtension.dll"
+    -   **ISV_RetailServer_CustomizableFile** – Specify all the customized Retail Server assembly details here. You can have multiple entries, one for each Retail Server assembly.
+        **Ex:** ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension.dll"
+           ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension2.dll"
+    -   **ISV_RetailProxy_CustomizableFile** - Specify all the customized Retail proxy assembly details here. You can have multiple entries, one for each Retail proxy assembly. 
+        **Ex:** ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\MyRetailProxyExtension.dll"
+    -   **ISV_HardwareStation_CustomizableFile** – Specify all the customized Hardware station assembly details here. You can have multiple entries, one for each customized Hardware station assembly.
+       **Ex:** ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareStationExtension.dll"
+    -   **ISV_CustomDatabaseFile_Upgrade_Custom** – Specify all the customized database scripts details here.
+       **Ex:** ISV_CustomDatabaseFile_Upgrade_Custom Include="$(SdkRootPath)\Database\Upgrade\Custom\SqlUpdatev1.sql"
 
+**Note: Please make sure you place all your extension assemblies in ...\Retail SDK\References and custom DB scripts in ...\RetailSDK\Database\Upgrade\Custom before starting the build process**
 
-#### Retail reployable package
 
 ### CRT extension assemblies
-By default, there is no separate package for individual retail components, because CRT isn't deployed individually, instead, CRT assets are packaged together with other application components, such as Modern POS, Retail Server, and Microsoft Dynamics 365 for Operations HQ. In order for the Retail SDK build tools to package CRT in all the components where it's used, you must make the following configuration entries:
+By default, there is no separate package for individual retail components, because CRT isn't deployed individually, instead, CRT assets are packaged together with other application components, such as Modern POS, Retail Server, and Microsoft Dynamics 365 for finance and Operations HQ. In order for the Retail SDK build tools to package CRT in all the components where it's used, you must make the following configuration entries:
 
 1.  **CRT extension assemblies** – These will be the new assemblies where you've written CRT extensions. Specify an entry for CRT extension assemblies in Retail SDK\\BuildTools\\Customization.settings. 
 
@@ -116,6 +123,9 @@ You must also update Retail SDK\\BuildTools\\Customization.settings to instruct 
 
 [![database upgrade customization setting](./media/database-upgrade-customization-setting-1024x311.png)](./media/database-upgrade-customization-setting.png)
 Database scripts are packaged together with the Retail Server and Modern POS Offline packages, and are run when Retail Server and Modern POS are installed. If there are multiple custom database scripts, they are run in alphabetical order. Therefore, if you want to run the scripts in a specific order, you must name them accordingly. The CRT.RETAILUPGRADEHISTORY table keeps track of which scripts are already applied to the database. Therefore, the next database upgrade will run only those upgrade scripts that don't have an entry in the CRT.RETAILUPGRADEHISTORY table.
+
+## Update the extension config files
+
 
 ## Generate a retail deployable package
 
