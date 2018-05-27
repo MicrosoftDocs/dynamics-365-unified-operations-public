@@ -72,6 +72,8 @@ features are in development.
 
 ### Blogs
 
+The basic and essential knowledge about ledger you can get from the [What you should know about ledger in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations) blog post.
+
 You can find opinions, news, and other information about Accounts payable and other solutions on the
 [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
