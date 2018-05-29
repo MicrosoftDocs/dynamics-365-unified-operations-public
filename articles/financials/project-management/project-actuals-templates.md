@@ -36,7 +36,9 @@ This topic describes the templates and underlying tasks that are used to synchro
 The template syncs transactions from Project Service Automation into a staging table in Finance and Operations. After synchronization is complete, you must import from the staging table to the integration journal.
 
 > [!NOTE]
-> Project actuals integration is available in Dynamics 365 for Finance and Operations version 8.01.
+> Project actuals integration is available in Dynamics 365 for Finance and Operations version 8.0.1.
+
+> If you are using Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, you will be able to use the templates to integrate project tasks, expense transaction categories, hour estimates, expense estimates, actuals and configure functionality locking after installing KB 4132657 and KB 4132660. It is recommended that you install KB 4131710 if you need to reset the accounting distributions.
 
 > [!NOTE]
 > If you are entering sales tax amounts on time or expense transactions in Project Service Automation, you must install the Project Service Automation Update 7. If this update is not installed, the tax actuals will not be linked to the associated time or expense actuals and will not be synced to Finance and Operations. Contact Support for more information.
