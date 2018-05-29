@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a free text invoice template
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../accounts-receivable/includes/banner.md)]
 
 For this walkthrough, use the USMF demo company. This procedure is intended for the user who is responsible for managing and processing A/R invoices.
 
