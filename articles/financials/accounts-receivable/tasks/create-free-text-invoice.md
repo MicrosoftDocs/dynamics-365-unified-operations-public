@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article demonstrates how to create a free text invoice. For this procedure, use the USMF demo company.
 
-## How to create a free text invoice
+## Create a free text invoice
 
 1. Go to Accounts receivable > Invoices > All free text invoices.
 2. Click New.
