@@ -99,3 +99,5 @@ For more information, see the following topics:
 ### Blogs
 
 To find out how the financial dimension values flow to the ledger, have a look at the blog post [Financial dimension values flow in D365FO. Materials and batch order example](https://financefunction.tech/2018/04/15/financial-dimension-values-flow-in-d365fo-materials-and-batch-order-example).
+
+The functionlity which allows to collect financial data by sites of the company can be found in the blog post [How to collect financial data by sites in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/21/how-to-collect-financial-data-by-sites-in-dynamics-365-for-finance-and-operations).
