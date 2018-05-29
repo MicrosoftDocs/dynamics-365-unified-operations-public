@@ -5,8 +5,8 @@ title: Create a free text invoice
 description: This task guide demonstrates creating a free text invoice. 
 author: mikefalkner
 manager: AnnBe 
-ms.date: 10/26/2017
-ms.topic: business-process 
+ms.date: 05/29/2018
+ms.topic: article 
 ms.prod:  
 ms.service: dynamics-ax-applications 
 ms.technology:  
@@ -26,6 +26,7 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a free text invoice
 
 [!include [banner](../includes/banner.md)]
