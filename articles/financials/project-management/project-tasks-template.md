@@ -1,4 +1,5 @@
 ---
+
 # required metadata
 
 title: Synchronize project tasks from Project Service Automation 
@@ -39,6 +40,7 @@ Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Oper
 > [!NOTE]
 > Project tasks integration, expense transaction categories, hour estimates, expense estimates, and functionality locking is available 
 in Dynamics 365 for Finance and Operations version 8.0.
+> If you are using Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, after you install KB 4132657 and KB 4132660, you will be able to use the templates to integrate project tasks, expense transaction categories, hour estimates, expense estimates, and actuals, and to configure functionality locking. If you must reset the accounting distributions, we recommended that you also install KB 4131710.
 
 > Actuals integration is available in Dynamics 365 for Finance and Operations version 8.0.1.
 
