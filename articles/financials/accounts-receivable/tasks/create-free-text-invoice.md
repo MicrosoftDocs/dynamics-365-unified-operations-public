@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a free text invoice
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This task guide demonstrates creating a free text invoice. For this walkthrough, use the USMF demo company.
 
