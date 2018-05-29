@@ -358,8 +358,6 @@
 ##### [Assign a free text invoice template to a customer](../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md)
 ##### [Create a collection letter sequence](../financials/accounts-receivable/tasks/create-collection-letter-sequence.md)
 ##### [Create a direct debit mandate for a customer](../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md)
-##### [Create a free text invoice](../financials/accounts-receivable/tasks/create-free-text-invoice.md)
-##### [Create a free text invoice template](../financials/accounts-receivable/tasks/create-free-text-invoice-template.md)
 ##### [Create an interest code with a range](../financials/accounts-receivable/tasks/create-interest-code-range.md)
 ##### [Create sales order invoices](../financials/accounts-receivable/tasks/create-sales-order-invoices.md)
 ##### [Create a write-off journal for a customer](../financials/accounts-receivable/tasks/create-write-off-journal-customer.md)
