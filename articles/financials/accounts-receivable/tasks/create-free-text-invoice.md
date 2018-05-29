@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This task guide demonstrates creating a free text invoice. This task uses the USMF demo company.
 
+## How to create a free text invoice
+
 1. Go to Accounts receivable > Invoices > All free text invoices.
 2. Click New.
 3. In the Customer account field, select a value.
@@ -71,7 +73,7 @@ This task guide demonstrates creating a free text invoice. This task uses the US
 ## Copy lines
 To copy lines on the free text invoice, select one or more lines and then click Copy selected lines. You can specify the number of copies that you want to make, and you can also copy notes and attachments. You can copy the distributions or allow them to be recreated when you post. Once you copy the lines, you can edit the information as needed. 
 
-## Create a free text imvoice from a template
+## Create a free text invoice from a template
 You can create a free text invoice from a template. You can select a template name and the customer account for the new free text invoice. You can also choose to default values such as the terms of payment and method of payment from the customer or use the values that were saved with the template. A new free text invoice will be created and you can edit the values in that invoice. 
 
 
