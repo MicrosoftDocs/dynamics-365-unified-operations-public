@@ -344,7 +344,7 @@
 #### [SEPA direct debit mandate](../financials/accounts-receivable/sepa-direct-debit-mandate.md)
 #### [Credit card setup, authorization, and capture](../financials/accounts-receivable/credit-card-authorizations.md)
 #### [Create a free text invoice](../financials/accounts-receivable/create-free-text-invoice-new.md)
-#### [Create a free text invoice from a template](../financials/accounts-receivable/create-free-text-invoice-template-new.md)
+#### [Create a free text invoice template](../financials/accounts-receivable/create-free-text-invoice-template-new.md)
 #### [Correct a free text invoice](../financials/accounts-receivable/correct-free-text-invoice.md)
 #### [Set up interest rates for an interest code](../financials/accounts-receivable/set-up-interest-rates-interest-code.md)
 #### [Waive, reinstate, or reverse interest fees](../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md)
