@@ -68,3 +68,7 @@ This task guide demonstrates creating a free text invoice. This task uses the US
     * If you want to post the invoice, select Yes. You can print the invoice without posting.  
 19. Click OK.
 
+## Copying lines
+To copy lines, select one or more free text invoice lines and then click Copy selected lines. You can specify the number of copies that you want to make, and you can also copy notes and attachments. You can copy the distributions or allow them to be recreated when you post. Once you copy the lines, you can edit the information as needed. 
+
+
