@@ -1,5 +1,4 @@
 ---
-
 # required metadata
 
 title: Synchronize project tasks from Project Service Automation 
