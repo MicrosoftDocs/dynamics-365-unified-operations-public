@@ -33,6 +33,8 @@ ms.dyn365.ops.version: AX 7.3.0
 
 This topic describes the templates and underlying tasks that are used to synchronize project actuals directly from Microsoft Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations.
 
+The template syncs transactions from Project Service Automation into a staging table in Finance and Operations. After synchronization is complete, you must import from the staging table to the integration journal.
+
 > [!NOTE]
 > Project actuals integration is available in Dynamics 365 for Finance and Operations version 8.01.
 
@@ -97,6 +99,10 @@ The following illustration shows an example of the template task mapping in Data
 [![Template mapping](./media/ActualsMapping.jpg)](./media/ActualsMapping.jpg)
 
 [![Template mapping](./media/TransactionConnections.jpg)](./media/TransactionConnections.jpg)
+
+## Import from staging table
+
+The Import from staging table perioidic process must be run after the sychronization of actuals from Project Service Automation to Finance and Operations. This process will import the project transactions from the staging table into the Project Service Automation integration journal, where the accounting is applied and the imported transactions can be posted. It is recommended that you run this process in batch mode and optionally can be set up to run as a recurring batch.
 
 ## Update Actuals
 
