@@ -91,7 +91,7 @@ You must use Microsoft Power Query in the project actuals template to:
 ### Contract Organizational Unit
 To update the inserted condition column in the template, click the **Map** arrow to open the mapping. Select to open the Advanced Query and Filtering.
 - If you are using the default Microsoft Project actuals (PSA to Fin and Ops) template, select the lasat **Inserted Condition** in the **Applied Steps** section. In the **Function** entry, replace **USSI** with the name of the **Legal entity** that should be used with the integration. Add additional conditions as needed to the **Function** entry and update the **else** condition from **USMF** to the correct **Legal entity**.
-- If you are creating a new template, you must add this column to support intercompany time and expenses. Select **Add Conditional Column** and give the column a name, such as LegalEntity. Enter the condition for the column where if msdyn_contractorganizationalunitid.msdyn_name is \<organizational unit\>, then \<enter the Legal entit\y>; else null.
+- If you are creating a new template, you must add this column to support intercompany time and expenses. Select **Add Conditional Column** and give the column a name, such as LegalEntity. Enter the condition for the column where if msdyn_contractorganizationalunitid.msdyn_name is \<organizational unit\>, then \<enter the Legal entity\>; else null.
 
 ## Template mapping in Data integration
 
