@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a free text invoice
 
-[!include [banner](../accounts-receivable/includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article demonstrates how to create a free text invoice. For this procedure, use the USMF demo company.
 
