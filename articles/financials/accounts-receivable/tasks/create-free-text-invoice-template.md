@@ -28,9 +28,11 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a free text invoice template
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This recording uses the USMF demo company. The recording is intended for the user who is responsible for managing and processing A/R invoices.
+For this walkthrough, use the USMF demo company. This procedure is intended for the user who is responsible for managing and processing A/R invoices.
+
+## How to create a free text invoice template
 
 1. Go to Accounts receivable > Invoices > Recurring invoices > Free text invoice templates.
     * Use this form to create free text invoice templates that can include invoice lines, charges, an accounting distribution template, and ledger account information.  
@@ -68,3 +70,5 @@ This recording uses the USMF demo company. The recording is intended for the use
 23. Update the accounting distributions for the selected invoice line.
 24. Click Close.
 
+## Save a free text invoice as a template
+You can save your free text invoice as a template. When you select Save to template from the Invoice tab, provide a name and a description for the template. If a template with the name already exists, you will see a notification that a template with that name already exists. You can still click on Ok to replace it. 
