@@ -42,7 +42,7 @@ in Dynamics 365 for Finance and Operations version 8.0.
 
 > Actuals integration is available in Dynamics 365 for Finance and Operations version 8.0.1.
 
-> If you are using Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, you will be able to use the templates to integrate project tasks, expense transaction categories, hour estimates, expense estimates actuals and configure functionality locking after installing KB 4132657 and KB 4132660. It is recommended that you install KB 4131710 if you need to reset the accounting distributions.
+> If you are using Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, you will be able to use the templates to integrate project tasks, expense transaction categories, hour estimates, expense estimates, actuals and configure functionality locking after installing KB 4132657 and KB 4132660. It is recommended that you install KB 4131710 if you need to reset the accounting distributions.
 
 ## Data flow for Project Service Automation to Finance and Operations
 
