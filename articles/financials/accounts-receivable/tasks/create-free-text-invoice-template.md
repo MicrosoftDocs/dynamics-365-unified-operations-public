@@ -2,11 +2,11 @@
 # required metadata 
  
 title: Create a free text invoice template
-description: This recording uses the USMF demo company. 
+description: This procedure demonstrates how to create a free text invoice from a template. 
 author: ShivamPandey-msft
 manager: AnnBe 
-ms.date: 11/11/2016
-ms.topic: business-process 
+ms.date: 05/29/2019
+ms.topic: article 
 ms.prod:  
 ms.service: dynamics-ax-applications 
 ms.technology:  
