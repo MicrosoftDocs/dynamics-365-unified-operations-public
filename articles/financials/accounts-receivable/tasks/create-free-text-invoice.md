@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This task guide demonstrates creating a free text invoice. For this walkthrough, use the USMF demo company.
+This article demonstrates how to create a free text invoice. For this procedure, use the USMF demo company.
 
 ## How to create a free text invoice
 
