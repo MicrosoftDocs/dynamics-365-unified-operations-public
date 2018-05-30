@@ -72,19 +72,24 @@ round(1.0149, 0.00) = 1.0149
 ### Normal round, and round precision is 0.01
 
 round(1.015, 0.01) = 1.02
-  calculation process:
+
+calculation process:
+  
   1.	round(1.015 / 0.01, 0) = round(101.5, 0) = 102
   2.	102 * 0.01 = 1.02
   
 round(1.014, 0.01) = 1.01
+
   1.	 round(1.014 / 0.01, 0) = round(101.4, 0) = 101
   2.	101 * 0.01 = 1.01
   
 round(1.011, 0.02) = 1.02
+
   1.	round(1.011 / 0.02, 0) = round(50.55, 0) = 51
   2.	51 * 0.02 = 1.02
   
 round(1.009, 0.02) = 1.00
+
   1.	round(1.009 / 0.02, 0) = round(50.45, 0) = 50
   2.	50 * 0.02 = 1.00
 
