@@ -363,7 +363,7 @@ within Dayforce.
 
 -   Person with disabilities
 
--   Nationality country region
+-   Nationality country region (only for Mexico)
 
 ### Address information
 
@@ -373,9 +373,9 @@ within Dayforce.
 
 -   Postal code (required)
 
--   Street Number (required)
+-   Street Number (required) (Only for Mexico)
 
--   Building Complement
+-   Building Complement (Only for Mexico)
 
 -   City (required)
 
@@ -454,12 +454,6 @@ Employee’s key dates are derived using the following:
 | Start date            | Adjusted start date, start date or employment start of current non-active employment history record |
 | Original hire date    | Employment start of earliest employment history record                                              |
 
-### Terms of employment
-
--   Terms of employment (required)
--   Effective (required)
--   Expiration
-
 ### Compensation
 
 Each employee must have a fixed compensation plan associated with their primary
@@ -499,21 +493,6 @@ Employees can declare multiple identification numbers with Identification Type
 equivalent to “SSN”. Only the record marked as Primary will be integrated into
 Dayforce, regardless of whether the number is active or expired.
 
-#### Passport number
-
-Employees may declare Passport information with identification type equivalent
-to “Passport”. This information will be integrated to Dayforce as part of an
-employee’s Mexico-specific information.
-
--   Identification Type = “Passport”
--   Issued Date
--   Expiration Date
-
-Employees can declare multiple identification numbers with Identification Type
-equivalent to “Passport”. In such case, only current active Passport will be
-integrated to Dayforce. In cases where all Passport entries are expired, the
-passport issued most recently will be integrated into Dayforce.
-
 ### Bank accounts and disbursements
 
 Employees choosing to be paid via bank account transfers need to have valid bank
@@ -543,6 +522,198 @@ their primary residence for tax purposes in Dayforce.
 -   City (required)
 -   State (required)
 -   County (required)
+
+Configure your data to generate payroll in United States and Canada
+=================================================
+
+If you’re generating a pay for employees in the United States and Canada, the following elements must
+be configured.
+
+-   Departments are required on positions
+-   Cost centers need to be set as financial dimensions and need to be the first
+    element in the Default Financial Dimension string
+
+Job types
+---------
+
+Job types are used to group similar jobs into categories. Job types are required
+for processing payroll in the United States and Canada. Examples of job types include full-time and
+part-time, or salary and hourly pay. Job types are mapped to Dayforce as Pay
+Types that determines and employee is Hourly or Salaried.
+
+The following job types and descriptions are required:
+
+| **Job Type\*** | **Description** |
+|----------------|-----------------|
+| Hourly         | Hourly       |
+| Salaried       | Salaried     |
+
+Position types 
+---------------
+
+You use position types to describe whether the position is full-time, part-time
+or something else. Position types are mapped to Dayforce as Pay Classes that
+indicate whether an employee is full-time or part-time.
+
+The following position types and descriptions are required:
+
+| **Position Type\*** | **Description**    |
+|---------------------|--------------------|
+| Full-time           | Full time employee |
+| Part-time           | Part time employee |
+
+Reason codes
+------------
+
+Reason codes provide information about the status of an employee. Reason codes
+are mapped to Dayforce as Status Reasons that indicate the reason for changes in
+an employee’s position or employment status.
+
+The following reason codes and descriptions are required:
+
+| **Reason Code\***      | **Description**                | **Applicable scenarios** |
+|------------------------|--------------------------------|--------------------------|
+| RESIGNATION            | Resignation                    | Terminate worker         |
+| TERMINATION            | Termination                    | Terminate worker         |
+| RETIREMENT             | Retirement                     | Terminate worker         |
+| OTHER                  | Other Reasons                  | Terminate worker         |
+| DEATH                  | Death                          | Terminate worker         |
+| LEAVEOFABSENCE         | Leave of Absence               | Terminate worker         |
+| CONTRACTEND            | End of Contract                | Terminate worker         |
+| SALARYCHANGE           | Change of Salary               | Compensation             |
+
+Marital status
+--------------
+
+Marital Status values are mapped to Dayforce and translated as appropriate to
+the accepted values upon integration.
+
+Marital status is mapped to Dayforce as follows:
+
+| **Talent**             | **Dayforce**              |
+|------------------------|---------------------------|
+| Married                | Married                   |
+| Single                 | Single                    |
+| Widowed                | Widowed                   |
+| Divorced               | Divorced                  |
+| Registered Partnership | Domestic Partnership      |
+| None                   | None |
+| Cohabiting             | Cohabiting |
+
+Gender
+------
+
+Gender values are mapped to Dayforce and translated as appropriate to the
+accepted values upon integration.
+
+Gender designation is mapped to Dayforce as follows:
+
+| **Talent**   | **Dayforce**              |
+|--------------|---------------------------|
+| Male         | Male                      |
+| Female       | Female                    |
+| Non-specific | *Not supported* |
+
+Earning codes
+-------------
+
+Earning codes uniquely identify every type of earnings that workers receive. The
+codes cover a number of parameters that relate to earnings, such as accounting
+rules, tax laws, reporting requirements, and gross-up capability. If a
+non-supported frequency is used, it will default to being calculated based on
+Every Pay.
+
+Supported frequencies
+
+-   All
+
+-   EVERYPAY
+
+-   EACHPAYPERIOD
+
+-   EVRYOTHRPAYODD
+
+-   EVRYOTHRPAYEVN
+
+-   1OFMTH
+
+-   LASTOFMTH
+
+-   2OFMTH
+
+-   3OFMTH
+
+-   4OFMTH
+
+-   5OFMTH
+
+-   1N2OFMTH
+
+-   3N4OFMTH
+
+-   1N3OFMTH
+
+-   1N4OFMTH
+
+-   2N3OFMTH
+
+-   2N4OFMTH
+
+-   1N2N3OFMTH
+
+-   1N2N4OFMTH
+
+-   1N3N4OFMTH
+
+-   2N3N4OFMTH
+
+-   1N2N3N4OFMTH - 1N2N3N4OFMTH
+
+-   2N3N4N5OFMth - 2N3N4N5OFMth
+
+-   1OFQTR - 1OFQTR
+
+-   LASTOFQTR – LASTOFQTR
+
+-   LASTMTHOFQTR – LASTMTHOFQTR
+
+-   1OFYEAR - 1OFYEAR
+
+-   LASTOFYEAR – LASTOFYEAR
+
+-   NOVNDECOFYEAR - NOVNDECOFYEAR
+
+Addresses
+---------
+
+Identifying specific country, state, and county (municipality) codes requires
+specific formats that Dayforce and in-country providers can recognize. While the
+format for cities is flexible, each city must be associated with a state.
+
+| **Talent**          | **Dayforce**          |
+|---------------------|-----------------------|
+| Country/Region      | Country Code          |
+| Zip/Postal Code     | Postal Code           |
+| State               | State Code            |
+| City                | City                  |
+| County              | County (Municipality) |
+| Street              | Address Line 1        |
+
+Tax regions
+-------------
+
+Tax regions are used to determine the appropriate tax to be applied during payroll generation. Tax regions are mapped to Dayforce as Location Addresses. The default tax region needs to be assoicated with the worker's active position. 
+
+
+-   Tax region (required)
+
+-   Country/Region (required)
+
+-   State (required)
+
+-   County 
+
+-   City (required)
 
 Configure your data to generate payroll in Mexico
 =================================================
@@ -772,3 +943,20 @@ format for cities is flexible, each city must be associated with a state.
 | Street              | Address Line 1        |
 | Street Number       | Address Line 2        |
 | Building Complement | Address Line 5        |
+
+
+Passport number
+---------
+
+Employees may declare Passport information with identification type equivalent
+to “Passport”. This information will be integrated to Dayforce as part of an
+employee’s Mexico-specific information.
+
+-   Identification Type = “Passport”
+-   Issued Date
+-   Expiration Date
+
+Employees can declare multiple identification numbers with Identification Type
+equivalent to “Passport”. In such case, only current active Passport will be
+integrated to Dayforce. In cases where all Passport entries are expired, the
+passport issued most recently will be integrated into Dayforce.
