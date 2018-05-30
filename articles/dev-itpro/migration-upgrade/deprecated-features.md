@@ -123,7 +123,6 @@ These taxes have been subsumed into Indian GST.
 |                                             |                                                                         |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Reason for removal or deprecation**       | Lack of customer usage                                                  |
-
 | **Replaced by another feature?**            | No                                                                      |
 | **Product areas affected**                  | Indian withholding tax                                                  |
 | **Deployment option**                       | All modules                                                                    |
