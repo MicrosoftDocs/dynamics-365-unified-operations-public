@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides the steps that you need to follow if you want to make a backing table usable as a Financial dimension.
 
-> [**!IMPORTANT**]
+> [!IMPORTANT]
 > Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. 
 - 	Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
 
