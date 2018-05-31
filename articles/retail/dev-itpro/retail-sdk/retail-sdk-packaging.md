@@ -46,9 +46,8 @@ This topic explains how to package customizations for the following artifacts.
 
 Customizations for the above artifacts are packaged as a single retail deployable package.
 
-Note: If your customizations were built and packaged using Retail SDK prior to application version 7.1.1541.3036 as individual retail component packages, these are no longer supported for deployment in LCS. You must uptake the following update and re-build and re-package your customizations for retail components.
-
--   [KB 4015062](https://fix.lcs.dynamics.com/Home/Index/0/kb/4015062?permission=Download)
+> [!IMPORTANT]
+> If your customizations were built and packaged using Retail SDK prior to application version 7.1.1541.3036 as individual retail component packages, these are no longer supported for deployment in LCS. You must uptake the following update and re-build and re-package your customizations for retail components. <br/> - [KB 4015062](https://fix.lcs.dynamics.com/Home/Index/0/kb/4015062?permission=Download)
 
 For detailed information about the Retail software development kit (SDK), see [Retail SDK overview](retail-sdk-overview.md). 
 
