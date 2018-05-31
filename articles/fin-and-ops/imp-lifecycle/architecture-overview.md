@@ -48,17 +48,21 @@ The Microsoft Dynamics 365 for Finance and Operations cloud architecture consist
   An organization can have multiple AAD tenants. If there are multiple tenants, ensure that the subscriptions for Finance and Operations are associated with the correct tenant.
   - **Microsoft Azure Active Directory** –  Microsoft Azure Active Directory (Azure AD) is Microsoft’s multi-tenant, cloud-based directory and identity management service that combines core directory services, application access management, and identity protection into a single solution. For more information see [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/). Finance and Operations is using Azure AD as the store for identity. Access to Azure AD comes as part of a subscription to Microsoft Dynamics 365 for Finance and Operations.
   - **Microsoft Office 365 admin center** – Office 365 admin center is the subscription management portal that Office 365 provides for administrators. The Office 365 admin center is used to provide management functions for users (Azure AD) and subscriptions, including information about service health. For more information, see [About the Office 365 admin center](https://support.office.com/en-us/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US). 
-  >[!NOTE]
-  > You do not need an Office 365 license to deploy Microsoft Dynamics 365 for Finance and Operations. However, you might need a license for specific Office integration scenarios. For more information, see [Office integration](dev-itpro/office-integration/office-integration?toc=/fin-and-ops/toc.json).
-  - **Lifecycle Services (LCS)** – Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your Finance and Operations implementations. For more information, see [Lifecycle Services for Finance and Operations](dev-itpro/lifecycle-services/lcs). After you've purchased and activated a subscription to Finance and Operations, an Implementation project workspace is provisioned in LCS when the tenant administrator signs in for the first time.
-  >[!NOTE]
-  > An Implementation project is an LCS project for the Microsoft-managed Dynamics 365 for Finance and Operations cloud service. As a Microsoft partner, you can also provision non-implementation LCS projects for your own purposes. For more information, see [Lifecycle Services for Finance and Operations partners](dev-itpro/lifecycle-services/getting-started-lcs). 
+  
+  > [!NOTE]
+  > You do not need an Office 365 license to deploy Microsoft Dynamics 365 for Finance and Operations. However, you might need a license for specific Office integration scenarios. For more information, see [Office integration](../../dev-itpro/office-integration/office-integration.md).
+  
+  - **Lifecycle Services (LCS)** – Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your Finance and Operations implementations. For more information, see [Lifecycle Services for Finance and Operations](../../dev-itpro/lifecycle-services/lcs.md). After you've purchased and activated a subscription to Finance and Operations, an Implementation project workspace is provisioned in LCS when the tenant administrator signs in for the first time.
+  
+  > [!NOTE]
+  > An Implementation project is an LCS project for the Microsoft-managed Dynamics 365 for Finance and Operations cloud service. As a Microsoft partner, you can also provision non-implementation LCS projects for your own purposes. For more information, see [Lifecycle Services for Finance and Operations partners](../../dev-itpro/lifecycle-services/getting-started-lcs.md). 
+  
   - **Microsoft Dynamics 365 for Finance and Operations** – Microsoft Dynamics 365 for Finance and Operations is deployed through Lifecycle Services LCS. Various topologies are available: development/test/build, acceptance test, performance test, and high-availability production. For more information about different topologies, download the [latest Microsoft Dynamics 365 Licensing Guide from Dynamics 365 pricing](https://dynamics.microsoft.com/en-us/pricing/).
   - **Visual Studio Team Services (VSTS)** – Visual Studio Team Services (VSTS) is primarily used for code version control and deploying a build environment. VSTS is also used to track support incidents, such as work items in VSTS submitted to Microsoft through Cloud Powered Support and integration of the Business Process Modeler (BPM) library hierarchy into your VSTS project as a hierarchy of work items. VSTS is also used during code upgrade.
 
 Under the hood many features of the Azure platform are used, such as Microsoft Azure Storage, networking, monitoring, and SQL Azure, to name a few. Shared services put into operation and orchestrate the application lifecycle of the environments for participants. Together, Azure functionality and Lifecycle Services (LCS) will offer a robust cloud service.
 
-  >[!NOTE]
+  > [!NOTE]
   > Although many features of Azure platform are used, you don’t need an Azure subscription to deploy Finance and Operations in Microsoft-Managed cloud. You only need an Azure subscription to deploy Finance and Operations cloud-hosted environments into your own Azure subscription.
 
 
