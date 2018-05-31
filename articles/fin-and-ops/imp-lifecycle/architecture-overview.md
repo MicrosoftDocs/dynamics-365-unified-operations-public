@@ -33,3 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Microsoft Dynamics 365 for Finance and Operations Architecture
 
 [!include [banner](../includes/banner.md)]
+
+The Microsoft Dynamics 365 for Finance and Operations cloud architecture includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management.
+
+![Go-live process](./media/go-live-process.PNG)
