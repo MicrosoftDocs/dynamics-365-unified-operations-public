@@ -189,6 +189,8 @@ UPDATE BatchJob
 SET STATUS = 0
 WHERE STATUS IN (1,2,5,7)
 GO
+-- Clear encrypted hardware profile merchand properties
+update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUREMERCHANTPROPERTIES is not null
 ```
 
 ## Export the database
