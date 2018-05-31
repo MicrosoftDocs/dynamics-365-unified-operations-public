@@ -3,9 +3,9 @@
 
 title: Generate demo data by using data packages
 description: This topic explains how to use demo data packages to generate data for your system. 
-author: mikefalkner
+author: ryansandness
 manager: AnnBe
-ms.date: 03/07/2018
+ms.date: 06/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.custom: 77523
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: ryansand
 ms.search.validFrom: 2017-11-30
 ms.dyn365.ops.version: Platform update 12
 
