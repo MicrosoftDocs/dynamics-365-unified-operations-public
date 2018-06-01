@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: [Enter topic title here]
-description: [write a simple description of the topic here]
+title: Preview the ledger transactions
+description: Tihs topic provides information about how to preview ledger transactions in Russia. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -28,10 +28,6 @@ ms.dyn365.ops.version: 8.1
 # (EEUR) Preview the ledger transactions 
 
 You can preview the ledger transactions before posting the ledger journal.
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
 
 
 
@@ -61,10 +57,3 @@ You can preview the ledger transactions before posting the ledger journal.
     > [!NOTE]
     > <P>You can include only journal lines, only transactions, or both journal lines and transactions in the report.</P>
 
-
-
-## See also
-
-[(LTU) Customer payment journal lines (modified form)](https://technet.microsoft.com/en-us/library/jj665039\(v=ax.60\))
-
-[(LTU) Vendor payment journal lines (modified form)](https://technet.microsoft.com/en-us/library/jj665107\(v=ax.60\))
