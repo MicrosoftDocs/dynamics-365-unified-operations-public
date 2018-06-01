@@ -46,12 +46,14 @@ This topic explains how to package customizations for the following artifacts an
 -   Retail store scale unit(RSSU)
 -   Hybrid app (IOS and Andriod POS app)
 
+
 ## Retail deployable package
 Retail deployable package is one combined package which contain all your customizations packaged together with all the necessary metadata for deployment. You can use this retail deployable package to deploy your customization to different environment using LCS or manually using the scripts provided inside this package. In this document we will walkthrough how you can generate this package.
 
 > [!IMPORTANT]
 > All customizations for the retail components are packaged as a single retail deployable package. Finance and Operations doesn't support separate packages for individual retail components such as Modern POS, Cloud POS, Retail Store Scale Unit, Commerce Runtime, or Retail Server. You must package all extension as a single retail deployable package, even if you have ISV extensions or different partner extensions. If your customizations were built and packaged as retail component packages, using a version of the Retail SDK older than application version 7.1.1541.3036, your packages are no longer supported for deployment in LCS. You must uptake the below hotfix and re-build and re-package your customizations.
 >  [KB 4015062](https://fix.lcs.dynamics.com/Home/Index/0/kb/4015062?permission=Download)
+
 
 For detailed information about the Retail software development kit (SDK), see [Retail SDK overview](retail-sdk-overview.md). 
 

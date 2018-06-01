@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create service subscriptions from a project    
 
-[!include [banner](../includes/banner.md)
+[!include [banner](../includes/banner.md)]
 
 
 You can create a service subscription from a project in **Project management and accounting**.
