@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Validate an application for AppSource for Dynamics 365 for Finance and Operations
+title: Validate an application for Dynamics 365 for Finance and Operations
 description: This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully deployed. 
 author: kfend
 manager: AnnBe
