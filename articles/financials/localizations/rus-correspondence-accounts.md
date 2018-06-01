@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: [Enter topic title here]
-description: [write a simple description of the topic here]
+title: About Correspondence 
+description: This topic provides information about correspondence in Russia. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -89,11 +89,8 @@ When the **Use corresponding mechanism** check box is selected, each new account
 
 If non-corresponding accounts already exist before the account correspondence mechanism is enabled, they are not linked automatically. You must define relationships for these transactions manually.
 
-## See also
 
-[(RUS) General ledger parameters (modified form)](https://technet.microsoft.com/en-us/library/jj923603\(v=ax.60\))
-
-# (RUS) Activate corresponding mechanism for accounting transactions 
+## (RUS) Activate corresponding mechanism for accounting transactions 
 
 The account correspondence mechanism allows you to create correspondence relations between transactions. When the account correspondence mechanism is turned on, each new accounting transaction created will consist of a set of two-way corresponding transactions. When posting the accounting transactions, the corresponding relation is defined automatically. If non-corresponded transactions existed before the account correspondence mechanism was turned on, they would not be linked automatically.
 
@@ -108,20 +105,9 @@ The account correspondence mechanism allows you to create correspondence relatio
 > <P>After the correspondence mechanism is activated, all new transactions will have correspondence relations. If you cannot establish a correspondence link for a transaction, a message with a warning is displayed. Click this message to go to the manual correspondence function to correspond the transactions manually.</P>
 
 
-
-## See also
-
-[(RUS) Manual correspondence (form)](https://technet.microsoft.com/en-us/library/jj733174\(v=ax.60\))
-
-[(RUS) Define corresponding relations for transactions manually](rus-define-corresponding-relations-for-transactions-manually.md)
-
-# (RUS) Define corresponding relations for transactions manually 
+## (RUS) Define corresponding relations for transactions manually 
 
 Use the manual transaction correspondence function to define a relationship between non-corresponding transactions. When the account correspondence mechanism is turned off in the ledger, all transactions are generated normally. No correspondence link is established between accounts. The function is not retroactive. When correspondence is turned back on, correspondence will not be established for transactions that were performed earlier.
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
 
 
 
@@ -166,10 +152,4 @@ Use the manual transaction correspondence function to define a relationship betw
 
     > [!NOTE]
     > <P>After refreshing the data, the voucher for which correspondence has been removed will appear in the list of non-corresponded vouchers.</P>
-
-
-
-## See also
-
-[(RUS) Manual correspondence (form)](https://technet.microsoft.com/en-us/library/jj733174\(v=ax.60\))
 
