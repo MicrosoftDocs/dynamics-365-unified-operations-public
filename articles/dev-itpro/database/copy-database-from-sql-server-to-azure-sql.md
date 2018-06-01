@@ -119,6 +119,7 @@ Run the following script against the AxDB\_CopyForExport database that you creat
 - Set the **SysGlobalConfiguration** flag to inform Finance and Operations that the database is Azure-based.
 - Remove a reference to tempDB in the XU\_DisableEnableNonClusteredIndexes procedure. References to tempDB aren't allowed in an Azure SQL database. The database synchronization process will re-create the reference later.
 - Drop users, because Microsoft Windows users are forbidden in Azure SQL databases. Other users must be re-created later, so that they're correctly linked to the appropriate sign-in on the target server.
+- Clear encrypted hardware profile merchand properties
 
 A successful export and import of the database requires all these changes.
 
@@ -140,6 +141,8 @@ drop user axmrruntimeuser
 drop user axretaildatasyncuser
 drop user axretailruntimeuser
 drop user axdeployextuser
+-- Clear encrypted hardware profile merchand properties
+update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUREMERCHANTPROPERTIES is not null
 ```
 
 ## Export the database from SQL Server
