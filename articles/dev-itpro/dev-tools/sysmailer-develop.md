@@ -127,7 +127,7 @@ for (i = 1; i <= conLen(_notifyCon); i++)
     - **EML provider:** The sender address is removed from the message before the message is opened in the user's email client. Therefore, the email client can set the sender address to the default account that is configured for sending mail.
     - **SMTP provider:** The Simple Mail Transfer Protocol (SMTP) server must be configured to allow messages to be sent by using the sender address. In other words, the SMTP server must allow the impersonation of emails that are sent from it. Otherwise, the SMTP server might prevent the messages from being sent, flag them as spam, and so on.
 
-- When messages are sent, the framework returns a Boolean value that indicates whether the operation to send the message was successful. However, it doesn't report any messages to the Infolog when the operation is successful. You decide whether messages are shown in the Infolog.
+- When messages are sent, the framework returns a Boolean value that indicates whether the operation to send the message was successful. However, it doesn't report any messages to the Action Center when the operation is successful. You decide whether messages are shown in the Action Center.
 - By default, the body of all messages that are sent is in rich-text (HTML) format. If an application scenario requires that plain text be used to maintain newline spacing, you can pass **false** to the optional **\_isHtml** parameter of the **setBody** method on the message builder.
 
 ## Adding a new email provider
@@ -188,9 +188,9 @@ public SysMailerDescription getDescription()
 The **SysIMailerInteractive** and **SysIMailerNonInteractive** interfaces are very simple. They implement the **sendInteractive** and **sendNonInteractive** methods, respectively. An email provider might implement one or both methods, depending on its capabilities. Each method that is implemented takes a .NET **System.Net.Mail.MailMessage** object that you use to construct and send the email.
 
 ```
-public boolean sendInteractive(System.Net.Mail.MailMessage \_message)
+public boolean sendInteractive(System.Net.Mail.MailMessage _message)
 {
-    using (var emlStream = this.generateEmlFile(\_message))
+    using (var emlStream = this.generateEmlFile(_message))
     {
         Dynamics.AX.Application.File::SendFileToUser(emlStream, 'message.eml');
     }
@@ -202,4 +202,4 @@ The **System.Net.Mail.MailMessage** object contains a large amount of advanced f
 
 ## Migration from Microsoft Dynamics AX 2012 to Finance and Operations
 
-Migration involves using the **SysMailerMessageBuilder** object to build a message and then using the **SysMailerFactory** to send it, as outlined in the examples in this topic. Where extensions were made to the old mail system functionality.
+Migration involves using the **SysMailerMessageBuilder** object to build a message and then using the **SysMailerFactory** to send it, as outlined in the examples in this topic.
