@@ -24,7 +24,7 @@ ms.custom: 23521
 ms.assetid: bb6c02fa-cd91-4ca8-a58c-020502b19074
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shiva.pandey
+ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Global address book
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The global address book is a centralized repository for master data that must be stored for all internal and external persons and organizations that the company interacts with. The data that is associated with party records includes the party's name, address, and contact information. Other details vary, depending on whether the party is a person or an organization. Each party record is assigned to a party, and each party can be associated with one or more party roles in a company. Party roles include customer, prospect, worker, user, vendor, competitor, applicant, and contact. For example, the organization party First Up Consultants, can be associated with customer, business relation, and vendor roles in the CEE company, and can also be associated with the vendor role in the CEU company. Here are some of the benefits of this shared data:
 

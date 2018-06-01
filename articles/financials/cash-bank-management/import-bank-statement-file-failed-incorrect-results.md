@@ -2,10 +2,10 @@
 # required metadata
 
 title: Bank statement file import troubleshooting
-description: It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
+description: It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: BankStatementFormat
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,10 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Bank statement file import troubleshooting
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-
-It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
+It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
 
 What is the error?
 ------------------
@@ -43,7 +42,7 @@ What is the error?
 After you try to import a bank statement file, go to the Data management job history and its execution details to find the error. The error can help by pointing to the statement, balance, or statement line. However, it's unlikely to provide enough information to help you identify the field or element that is causing the issue.
 
 ## What are the differences?
-Compare the bank file layout definition to the Finance and Operations import definition, and note any differences in the fields and elements. Compare the bank statement file to the related sample Finance and Operations file. In the ISO20022 files, any differences should be easy to see.
+Compare the bank file layout definition to the Finance and Operations import definition, and note any differences in the fields and elements. Compare the bank statement file to the related sample Finance and Operations file. In the ISO20022 files, any differences should be easy to see.
 
 ## Transformations
 Typically, the change must be made in one of three transformations. Each transformation is written for a specific standard.
@@ -81,7 +80,7 @@ For more information, see <https://msdn.microsoft.com/en-us/library/ms255605.asp
 
 ### Format the XSLT output
 
-When the transformation runs, it creates an output file that you can view in Visual Studio. Use Ctrl+A, Ctrl+K, and Ctrl+D to quickly format the output file.
+When the transformation runs, it creates an output file that you can view in Visual Studio. Use Ctrl+A, Ctrl+K, and Ctrl+D to quickly format the output file.
 
 ### Adjust the transformation
 

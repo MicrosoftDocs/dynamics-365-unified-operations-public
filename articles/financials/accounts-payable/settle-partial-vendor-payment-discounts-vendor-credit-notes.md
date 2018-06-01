@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settle a partial vendor payment that has discounts on vendor credit notes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article walks you through a scenario where a credit memo is settled against an invoice.
 
@@ -64,14 +63,14 @@ April clicks **Post**. She then reviews the completed settlement. April sees tha
 | Selected and highlighted | Normal            | Inv-10070 | 3050    | 6/29/2015 | 7/29/2015 | 10070    | -1,000.00                      | USD      | -200.00          |
 | Selected                 | Normal            | CR-10070  | 3050    | 7/2/2015  | 7/29/2015 | CR-10070 | 200.00                         | USD      | 198.00           |
 
-April can review the vendor transactions on the **Vendor transactions** page by selecting a vendor on the **All vendors** page and then, on the Action Pane, click **Transactions**. On this page, April sees that the invoice has a balance of -800.00. She also sees a credit note for 198.00 and a discount of 2.00.
+April can review the vendor transactions on the **Vendor transactions** page by selecting a vendor on the **All vendors** page and then, on the Action Pane, click **Transactions**. On this page, April sees that the invoice has a balance of -800.00. She also sees a credit note for 198.00 and a discount of 2.00.
 
 | Voucher    | Transaction type | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance | Currency |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
 | Inv-10070  | Invoice          | 6/29/2015 | 10070   |                                      | 1,000.00                              | -800.00 | USD      |
 | Inv-10071  |                  | 7/2/2015  | CR10071 | 200.00                               |                                       | 0.00    | USD      |
-| DISC-10071 |  Cash discount   | 7/2/2015  |         | 2.00                                 |                                       | 0.00    | USD      |
-| DISC-10071 |  Cash discount   | 7/2/2015  |         |                                      | 2.00                                  | 0.00    | USD      |
+| DISC-10071 |  Cash discount   | 7/2/2015  |         | 2.00                                 |                                       | 0.00    | USD      |
+| DISC-10071 |  Cash discount   | 7/2/2015  |         |                                      | 2.00                                  | 0.00    | USD      |
 
 
 

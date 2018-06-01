@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create dimension-based configurations
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to define a configuration for a dimension-based product. This is the last procedure in the series that explains how to build combinations for dimension-based configuration. The execution of this procedure is dependent on the data created in the previous seven recordings. The demo data company used to create this procedure is USMF.
 

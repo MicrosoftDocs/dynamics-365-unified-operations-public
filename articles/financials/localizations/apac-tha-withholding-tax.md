@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -23,7 +22,7 @@ ms.search.scope: Core, Operations
 ms.custom: 265904
 ms.search.region: Thailand
 # ms.search.industry: 
-ms.author: leguo
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -31,8 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Withholding tax in Thailand
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about withholding tax and how to set it up for Thailand. The withholding tax functionality has been enhanced for both vendor and customer transactions, so that withholding tax is calculated and withholding tax reports are generated.
 
@@ -45,7 +43,7 @@ You must complete the following tasks before you can calculate withholding tax f
 2.  Set up withholding settlement periods on the **Withholding tax settlement periods** page.
 3.  Set up withholding tax authorities on the **Withholding tax authorities** page.
 4.  Set up withholding tax codes on the **Withholding tax codes** page.
-5.  Set up withholding tax groups on the **Withholding tax groups** page.
+5.  Set up withholding tax groups on the **Withholding tax groups** page.
 6.  Set up withholding tax revenue types on the **Withholding tax revenue** **types** page.
 7.  Set up withholding tax groups on the **Item withholding tax groups** page for an item or service.
 8.  Select the **Calculate withholding tax** check box on the **Vendors** page.
@@ -53,15 +51,15 @@ You must complete the following tasks before you can calculate withholding tax f
 10. Select the **Calculate withholding tax** check box on the **Released products** page.
 
 ## Payments that include withholding taxes
-Any payment that is made to a vendor is taxable, and the legal entity pays tax on the withholding tax. The tax that the legal entity pays on the withholding tax is also taxable. This additional tax amount is paid by the vendor. You can use either the single iteration method or the perpetual gross-up method to gross up vendor payments. For example, for a purchase order amount of THB 4,000 and a withholding tax (WHT) rate of 15 percent, here is how the tax amount, the tax on the tax amount, and the total payment amount are calculated:
+Any payment that is made to a vendor is taxable, and the legal entity pays tax on the withholding tax. The tax that the legal entity pays on the withholding tax is also taxable. This additional tax amount is paid by the vendor. You can use either the single iteration method or the perpetual gross-up method to gross up vendor payments. For example, for a purchase order amount of THB 4,000 and a withholding tax (WHT) rate of 15 percent, here is how the tax amount, the tax on the tax amount, and the total payment amount are calculated:
 
 -   **Single iteration method** – In this method, part of the withholding tax is paid by the legal entity, and the other part is paid by the vendor.
-    -   Tax on tax amount = Tax amount × WHT rate = 600 × 0.15 = THB 90
-    -   Total payment amount = Purchase order amount + (Purchase order amount × WHT rate) – (Purchase order amount × WHT rate) – (Purchase order amount × WHT rate) × WHT rate = 4,000 + 600 – 600 – 90 = THB 3,910
-    -   Tax amount = Purchase order amount × WHT rate = 4,000 × 0.15 = THB 600
+    -   Tax on tax amount = Tax amount × WHT rate = 600 × 0.15 = THB 90
+    -   Total payment amount = Purchase order amount + (Purchase order amount × WHT rate) – (Purchase order amount × WHT rate) – (Purchase order amount × WHT rate) × WHT rate = 4,000 + 600 – 600 – 90 = THB 3,910
+    -   Tax amount = Purchase order amount × WHT rate = 4,000 × 0.15 = THB 600
 -   **Perpetual gross-up method** – If the number of iterations to calculate the tax on the tax amount increases, the amount that is grossed up (the purchase order amount) decreases in value. In the perpetual gross-up method, a perpetual gross-up rate percentage is calculated by using the WHT rate. The perpetual gross-up rate percentage is then rounded to two decimal places to calculate the grossed-up amount.
-    -   Total payment amount = Purchase order amount × Perpetual gross-up rate percentage = 4,000 × 117.65% = THB 4,706
-    -   The withholding tax at 15 percent is deducted from the total payment amount of THB 4,706. In other words, (4,706 – \[4,706 × 0.15\]) = THB 4,000. In this manner, the vendor receives the original payment amount after withholding tax is deducted.
+    -   Total payment amount = Purchase order amount × Perpetual gross-up rate percentage = 4,000 × 117.65% = THB 4,706
+    -   The withholding tax at 15 percent is deducted from the total payment amount of THB 4,706. In other words, (4,706 – \[4,706 × 0.15\]) = THB 4,000. In this manner, the vendor receives the original payment amount after withholding tax is deducted.
     -   Perpetual gross-up rate percentage = 100 ÷ (1 – WHT rate) = 100 ÷ (1 – 15%) = 100 ÷ 0.85 = 117.65%
 
 ### Withholding tax for item or service purchases

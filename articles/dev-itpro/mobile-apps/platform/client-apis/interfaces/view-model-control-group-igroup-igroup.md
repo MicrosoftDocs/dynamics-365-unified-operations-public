@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # Group Type
+
+[!include [banner](../../../../includes/banner.md)]
+
 Group container control type.
 A group control is a container control that has any number of controls as children.
 
@@ -63,7 +66,7 @@ container: boolean
 True if the control is a container.
 
 > Inherited from [ContainerControl](view-model-control-container-icontainercontrol-icontainercontrol.md).[container](view-model-control-container-icontainercontrol-icontainercontrol.md#container)
-
+> 
 > Overrides [Control](view-model-control-basecontrol-icontrol-icontrol.md).[container](view-model-control-basecontrol-icontrol-icontrol.md#container)
 
 

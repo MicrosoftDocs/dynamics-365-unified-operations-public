@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 09/28/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -16,12 +16,12 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks
-ms.search.scope: Retail, Operations 
+ms.reviewer: sericks
+ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: retail
+ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: Retail July 2017 update 
@@ -29,6 +29,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 # Before you buy Dynamics 365 for Retail
 
+[!include [banner](../../includes/banner.md)]
 
 New to Dynamics 365 for Retail? We've put together some guidance to help you, whether you’re still evaluating or ready to make a purchase.
 

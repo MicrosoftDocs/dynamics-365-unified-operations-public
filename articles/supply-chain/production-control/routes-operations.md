@@ -3,7 +3,7 @@
 
 title: Routes and operations
 description: This topic provides information about routes and operations. 
-author: YuyuScheller
+author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable
-ms.author: sorenva
+ms.author: sorenand
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -25,7 +25,6 @@ ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -33,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Routes and operations
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about routes and operations. A route defines the process for producing a product or product variant. It describes each step (operation) in the production process and the order that these steps must be performed in. For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.
 
@@ -46,7 +44,7 @@ A route describes the order of operations that is required in order to produce a
 -   **Route** – A route defines the structure of the production process. In other words, it defines the order of operations.
 -   **Operation** – An operation identifies a named step in a route, such as **Assembly**. The same operation can occur in multiple routes and can have different operation numbers.
 -   **Operation relation** – An operation relation defines the operational properties of an operation, such as the setup time and run time, cost categories, consumption parameters, and resource requirements. The operation relation enables the operational properties of an operation to vary, depending on the route that the operation is used in or the products that are being produced.
--   **Route version** – A route version defines the route that is used to produce a product or product variant. Route versions enable routes to be reused across products or changed over time. They also enable different routes to be used to produce the same product. In this case, the route that is used depends on factors such as the location or the quantity that must be produced.
+-   **Route version** – A route version defines the route that is used to produce a product or product variant. Route versions enable routes to be reused across products or changed over time. They also enable different routes to be used to produce the same product. In this case, the route that is used depends on factors such as the location or the quantity that must be produced.
 
 ## Routes
 A route describes the order of operations that is used to produce a product or product variant. Each operation is assigned an operation number and a successor operation. The order of operations forms a route network that can be represented by a directed chart that has one or more starting points and a single end point. In Finance and Operations, routes are distinguished based on the type of structure. The two types of routes are simple routes and route networks. In the Production control parameters, you can specify whether only simple routes can be used, or whether the more complex route networks can be used.
@@ -85,14 +83,14 @@ In the preceding example, the resource requirement for the primary operation (30
 
 ### Approval of routes
 
-A route must be approved before it can be used in the planning or manufacturing process. Approval indicates that the route design has been completed. The same released product or released product variant can have multiple approved routes. Typically, approval of a route occurs when the first relevant route version is approved. However, in some business scenarios, the approval of the route and the route version are separate activities that might involve different process owners.  
+A route must be approved before it can be used in the planning or manufacturing process. Approval indicates that the route design has been completed. The same released product or released product variant can have multiple approved routes. Typically, approval of a route occurs when the first relevant route version is approved. However, in some business scenarios, the approval of the route and the route version are separate activities that might involve different process owners.  
 
 Each route can be approved or unapproved separately. However, note that, when a route is unapproved, all related route versions are also unapproved. In the Production control parameters, you can specify whether routes can be unapproved, and whether approved routes can be changed.  
 
-If you must keep a log that records who approves each route, you can require electronic signatures for route approval. Users will then have to confirm their identity by using an [electronic signature](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+If you must keep a log that records who approves each route, you can require electronic signatures for route approval. Users will then have to confirm their identity by using an [electronic signature](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
 
 ## Operations
-An operation is a step in the production process. In Finance and Operations, each operation has an ID and a simple description. The following tables shows typical examples of operations from a machine shop.
+An operation is a step in the production process. In Finance and Operations, each operation has an ID and a simple description. The following tables shows typical examples of operations from a machine shop.
 
 | Operation  | Description        |
 |------------|--------------------|
@@ -117,18 +115,18 @@ You can define multiple operation relations for the same operation. However, eac
 
 | Item code | Item relation         | Route code | Route relation   | Scope of the operation relation                                                                                                                                                                                                                                                                              |
 |-----------|-----------------------|------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Table     | &lt;Item ID&gt;       | Route      | &lt;Route ID&gt; | The operational properties of an operation when it's used in the route where **Route number**=&lt;route ID&gt; to produce the released product where **Item number**=&lt;item ID&gt;.                                                                                                                        |
-| Table     | &lt;Item ID&gt;       | All        |                  | The default operational properties of an operation when it's used to produce the released product where **Item number**=&lt;item ID&gt;. In other words, these operational properties apply when there is no route-specific operation relation for the released product.                                     |
-| Group     | &lt;Item group ID&gt; | Route      | &lt;Route ID&gt; | The operational properties of an operation when it's used in the route where **Route number**=&lt;route ID&gt; to produce released products that are associated with item group &lt;item group ID&gt;, unless there is a route-specific operation relation for the released product.                         |
-| Group     | &lt;Item group ID&gt; | All        |                  | The default operational properties of an operation when it's used to produce released products that are associated with item group &lt;item group ID&gt;, unless a more specific operation relation exists.                                                                                                  |
-| All       |                       | Route      | &lt;Route ID&gt; | The default operational properties of the operation when it's used in the route where **Route number**=&lt;route ID&gt;. In other words, these operational properties apply when there is no operation relation for this route that is specific to either the released product or its associated item group. |
+| Table     | &lt;Item ID&gt;       | Route      | &lt;Route ID&gt; | The operational properties of an operation when it's used in the route where **Route number**=&lt;route ID&gt; to produce the released product where **Item number**=&lt;item ID&gt;.                                                                                                                        |
+| Table     | &lt;Item ID&gt;       | All        |                  | The default operational properties of an operation when it's used to produce the released product where **Item number**=&lt;item ID&gt;. In other words, these operational properties apply when there is no route-specific operation relation for the released product.                                     |
+| Group     | &lt;Item group ID&gt; | Route      | &lt;Route ID&gt; | The operational properties of an operation when it's used in the route where **Route number**=&lt;route ID&gt; to produce released products that are associated with item group &lt;item group ID&gt;, unless there is a route-specific operation relation for the released product.                         |
+| Group     | &lt;Item group ID&gt; | All        |                  | The default operational properties of an operation when it's used to produce released products that are associated with item group &lt;item group ID&gt;, unless a more specific operation relation exists.                                                                                                  |
+| All       |                       | Route      | &lt;Route ID&gt; | The default operational properties of the operation when it's used in the route where **Route number**=&lt;route ID&gt;. In other words, these operational properties apply when there is no operation relation for this route that is specific to either the released product or its associated item group. |
 | All       |                       | All        |                  | The default operational properties of an operation. These operational properties apply when a more specific operation relation doesn't exist.                                                                                                                                                                |
 
 You can also specify that an operation relation is specific to a site. In this way, the operational properties of an operation can vary, depending on the location (that is, the site) where the operation is performed. For configured products, you can also specify different operational properties for each product configuration.  
 
 Operation relations give you lots of flexibility when you define your routes. Additionally, the ability to define default properties helps reduce the amount of master data that you must maintain. However, this flexibility also means that you must be aware of the context that you modify an operation relation in.  
 
-**Note:** Because the operational properties are stored in operation relations per operation per route, all occurrences of the same operation (for example, Assembly) have the same setup time, run time, resource requirements, and so on. Therefore, if two occurrences of an operation must occur in the same route but have different run times, you must create two distinct operations, such as Assembly1 and Assembly2.
+**Note:** Because the operational properties are stored in operation relations per operation per route, all occurrences of the same operation (for example, Assembly) have the same setup time, run time, resource requirements, and so on. Therefore, if two occurrences of an operation must occur in the same route but have different run times, you must create two distinct operations, such as Assembly1 and Assembly2.
 
 ### Modifying product-specific routes
 
@@ -150,7 +148,7 @@ If you add a new operation relation on the **Route details** page, the **Route c
 
 From the **Operations** page, you can open the **Operation relations** page. On this page, you can modify all operation relations for a specific operation. You can even modify operation relations that contain default values.  
 
-If your business uses standard operations, and if the operational parameters are the same across all products and processes, the **Operation relations** page provides a convenient way to maintain the default operational properties of those operations.
+If your business uses standard operations, and if the operational parameters are the same across all products and processes, the **Operation relations** page provides a convenient way to maintain the default operational properties of those operations.
 
 ### Applying operation relations
 
@@ -158,14 +156,14 @@ In some cases, Finance and Operations must find the operational properties for a
 
 When Finance and Operations searches for the most relevant operation relation for a released product, an operation relation that matches the item ID of the released product is preferred over an operation relation that matches the item group ID. In turn, an operation relation that matches the item group ID is preferred over the default operation relation. The search is done in the following order:
 
-1.  **Item code**=**Table** and **Item relation**=&lt;item ID&gt;
-2.  **Item code**=**Group** and **Item relation**=&lt;item group ID&gt;
+1.  **Item code**=**Table** and **Item relation**=&lt;item ID&gt;
+2.  **Item code**=**Group** and **Item relation**=&lt;item group ID&gt;
 3.  **Item code**=**All**
-4.  **Route code**=**Route** and **Route relation**=&lt;route ID&gt;
+4.  **Route code**=**Route** and **Route relation**=&lt;route ID&gt;
 5.  **Route code**=**All**
-6.  **Configuration**=&lt;configuration ID&gt;
+6.  **Configuration**=&lt;configuration ID&gt;
 7.  **Configuration**=
-8.  **Site**=&lt;site ID&gt;
+8.  **Site**=&lt;site ID&gt;
 9.  **Site**=
 
 Therefore, an operation should be used only one time for each route. If the operation occurs multiple times in the same route, all occurrences of that operation will have the same operation relation, and you won't be able to have different properties (for example, run times) for each occurrence.
@@ -205,7 +203,7 @@ Depending on your business requirements, you might be able to reduce the effort 
 
 In many systems, the operations resource or resource group that should perform an operation must be specified in the route. However, in Finance and Operations, you can define a set of requirements that an operations resource must meet to be applicable for the operation. Therefore, the specific operations resource or resource group that should be used doesn't have to be determined until the operation is actually scheduled. This functionality is especially useful when you have many workers or machines that can perform the same operation.  
 
-For example, you specify that an operation requires an operations resource of the **Machine** type that has a **Stamping** capability of 20 tons. The scheduling engine will then resolve these requirements to a specific operations resource or resource group when the operation is scheduled. Because you can just specify these requirements instead of binding the operation to a specific machine, you have much more flexibility. Additionally, maintenance is easier when resources are moved or new resources are added.  
+For example, you specify that an operation requires an operations resource of the **Machine** type that has a **Stamping** capability of 20 tons. The scheduling engine will then resolve these requirements to a specific operations resource or resource group when the operation is scheduled. Because you can just specify these requirements instead of binding the operation to a specific machine, you have much more flexibility. Additionally, maintenance is easier when resources are moved or new resources are added.  
 
 For more information about the various types of resource requirements and how to use them, see Operations resource requirements and [Resource capabilities](resource-capabilities.md).
 
@@ -235,7 +233,7 @@ If you don't specify an operations resource or resource group as part of the res
 -   **Resource batch** – This option is basically the same as the **Batch** option. However, the calculation includes the **Batch capacity** field from the operations resource. Therefore, the time is resource-dependent.
 
 
-See also
+Additional resources
 --------
 
 [Bills of materials and formulas](bill-of-material-bom.md)

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Localize mobile workspaces
+
+[!include [banner](../../../includes/banner.md)]
+
 You can use workspace classes in several ways to provide localization support to workspaces.
 
 ## Use config objects to pass localized labels

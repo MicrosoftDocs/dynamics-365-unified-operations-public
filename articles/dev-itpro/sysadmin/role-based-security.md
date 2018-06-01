@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: SysSecRolesEditUsers, SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Role-based security
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides an overview of the elements of role-based security in Microsoft Dynamics 365 for Finance and Operations. 
 
@@ -63,7 +62,7 @@ By managing access through security roles, administrators save time because they
 
 Security roles can be organized into a hierarchy. The role hierarchy allows the administrator to define a role based on another role. For example, the sales manager role could be defined as a parent role of the manager role and the salesperson role. A parent role automatically inherits the duties, privileges, and conditions that are assigned to its child roles. Therefore, a user who is assigned to the parent role can perform all of the tasks that users in the child roles can perform. A role can have one or more child roles or one or more parent roles. 
 
-By default, sample security roles are provided. All functionality in Finance and Operations is associated with at least one of the sample security roles. The administrator can assign users to the sample security roles, modify the sample security roles to fit the needs of the business, or create new security roles. By default, the sample roles are not arranged in a hierarchy.
+By default, sample security roles are provided. All functionality in Finance and Operations is associated with at least one of the sample security roles. The administrator can assign users to the sample security roles, modify the sample security roles to fit the needs of the business, or create new security roles. By default, the sample roles are not arranged in a hierarchy.
 
 ## Duties
 Duties correspond to parts of a business process. The administrator assigns duties to security roles. A duty can be assigned to more than one role. 

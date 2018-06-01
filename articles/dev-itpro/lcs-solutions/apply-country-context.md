@@ -25,15 +25,14 @@ ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: Feb-16
+ms.search.validfrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Apply country/region context
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must implement all country-specific or region-specific functionality so that it can be controlled by country/region context. This article describes how to apply country/region context to meet these requirements. In this article you can find information how you should use country context property and what application objects control user interface elements.
 
@@ -71,7 +70,7 @@ You use country/region-specific functionality to help meet the legal, regulatory
 </tr>
 <tr class="even">
 <td>Controlling party</td>
-<td>The controlling party’s role is used to determine whether country/region-specific functionality or UI elements are enabled. The controlling party is defined by the Organization model in Finance and Operations. Examples include legal entity, customer, vendor, bank, or worker. By default, the legal entity is used as the controlling party. If the country/region context of the controlling party matches the country/region context of the controlled entity, the functionality or UI elements are enabled. You set the country/region context of the controlling party. Any controlled entities that have a matching country/region context are shown.</td>
+<td>The controlling party’s role is used to determine whether country/region-specific functionality or UI elements are enabled. The controlling party is defined by the Organization model in Finance and Operations. Examples include legal entity, customer, vendor, bank, or worker. By default, the legal entity is used as the controlling party. If the country/region context of the controlling party matches the country/region context of the controlled entity, the functionality or UI elements are enabled. You set the country/region context of the controlling party. Any controlled entities that have a matching country/region context are shown.</td>
 </tr>
 </tbody>
 </table>
@@ -88,7 +87,7 @@ You can use another party, such as a customer, bank, or vendor, as a controlling
 
 In this example, the customer becomes the controlling entity. The customer's address is compared with the value of the **CountryRegionCodes** field to determine whether the **GermanSpecifcSetting** field is displayed.
 
-See also
+Additional resources
 --------
 
 [ISO codes](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm)

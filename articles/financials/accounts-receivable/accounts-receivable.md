@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form:  CustomerInvoiceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounts receivable home page
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Use Accounts receivable to track customer invoices and incoming payments. 
 

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Write business logic using C# and X++ source code
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 The primary goal of this tutorial is to illustrate the interoperability between C# and X++ in Microsoft Dynamics AX. In this tutorial, you’ll write business logic in C# source code and in X++ source code. 
 
@@ -44,7 +43,7 @@ In this tutorial, you’ll write business logic in C\# source code and in X++ so
 -   The use of Language Integrated Query (LINQ) in C\# to fetch data.
 
 ## Prerequisite
-This tutorial requires that you access the Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the Dynamics AX instance. **Note**: Debugging support for the C\# project does not work if the **Load symbols only for items in the solution** check box is selected. Since this option is selected by default, it must be changed prior to running the lab. In Visual Studio, click **Dynamics AX** &gt; **Options**, and clear the **Load symbols only for items in the solution** check box.
+This tutorial requires that you access the Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the Dynamics AX instance. **Note**: Debugging support for the C\# project does not work if the **Load symbols only for items in the solution** check box is selected. Since this option is selected by default, it must be changed prior to running the lab. In Visual Studio, click **Dynamics AX** &gt; **Options**, and clear the **Load symbols only for items in the solution** check box.
 
 ## Scenario
 Too many cars have been rented to drivers who have a history of unsafe driving habits. The Fleet Management rental company needs to check driving records from external sources. Upper management has decided to subscribe to a service that is hosted by the Department of Transportation (DOT), which is the legal entity that manages drivers’ licenses and associated information. This service retrieves the number of citations for the given unique license number. It’s not easy to call external services directly from X++ source code. Visual Studio has tools for generating the “code-behind” (in C\#) that calls the services, and these tools make the development effort easy. The obvious choice would be to leverage Visual Studio to write the code. However, in this tutorial your code won’t actually call an external service, because the logistics are beyond the scope of the simple lab environment. Instead, we provide a mock implementation of a service call. The goal of this tutorial is to teach an understanding of the current state of C\# and of interoperability with X++.
@@ -54,7 +53,7 @@ Dynamics AX enables you to create a reference from a Dynamics AX project to the 
 
 1.  In Visual Studio, click **File** &gt; **Open project/solution**.
 2.  In the **Open Project** dialog box, in the **File name** text box, type the following path, and then press **Enter** - *C:\\users\\public\\desktop\\FleetManagement*.
-3.  Select the file named FleetManagement.sln, and then click **Open**. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).[![OpenProject\_LinqC](./media/openproject_linqc2.png)](./media/openproject_linqc2.png)
+3.  Select the file named FleetManagement.sln, and then click **Open**. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).[![OpenProject\_LinqC](./media/openproject_linqc2.png)](./media/openproject_linqc2.png)
 4.  Right-click the **FleetManagement** solution, and then click **Add** &gt; **New Project**. The **Add New Project** dialog is displayed.
 5.  In the left pane, click **Visual C\#**, and then in the middle pane, click **Class Library**.
 6.  At the bottom in the **Name** text box, type the name **DriversLicenseEvaluator**.
@@ -85,7 +84,7 @@ In this section, you add C\# code for a method named CheckDriversLicense. The me
 6.  Repeat the **Add Reference** process, except this time, add the following DLL file from the indicated path:
     -   Dynamics.Ax.FleetManagement.dll, in C:\\Packages\\FleetManagement\\bin
 
-7.  In **Solution Explorer**, select the reference Dynamics.Ax.FleetManagement.dll reference and set the property **Copy Local = False**.
+7.  In **Solution Explorer**, select the reference Dynamics.Ax.FleetManagement.dll reference and set the property **Copy Local = False**.
 8.  In **Solution Explorer**, right-click **DriversLicenseChecker.cs**, and then click **View Code**.
 9.  Add the following three using statements to the **DriversLicenseEvaluator** namespace, to reduce the verbosity of code that references external classes. using Dynamics.AX.Application; using Microsoft.Dynamics.AX.Framework.Linq.Data; using Microsoft.Dynamics.AX.Xpp; Your C\# code should now look something like the following example.
 
@@ -200,7 +199,7 @@ Create a reference from the X++ project named **FleetManagement Migrated** to th
 2.  Under the FleetManagement Migrated project, expand the **References** node, and there you see new reference to the **DriversLicenseEvaluator** project.
 
 [![SolutionExplorerReferences\_LinqC](./media/solutionexplorerreferences_linqc2.png)](./media/solutionexplorerreferences_linqc2.png) 
-    
+
 #### Build sequence
 
     Your C\# DriversLicenseEvaluator project will be built before the FleetManagement Migrated project is built. This is because the added reference makes the Fleet project dependent on your project. The build sequence is easy to see if you right-click the FleetManagement solution, click **Project Build Order**, and then click **Dependencies**.
@@ -247,8 +246,8 @@ In this section, you set breakpoints and run the Fleet application under the Vis
 For this test, we'll be debugging the C\# code that we've written. To do this, we need to inform Visual Studio to load the symbols for the assembly that contains the C\# code. Go to **Dynamics AX &gt; Options &gt; Debugging** and verify that the **Load symbols only for items in the solution** check box is not selected. [![Options\_LinqC](./media/options_linqc2.png)](./media/options_linqc2.png) **Tip**: If you're unable to get to the breakpoint in the C\# code, you may want to open the **Modules** window (**Debug &gt; Windows &gt; Modules**), find the C\# module and load it explicitly.
 
 1.  Click **Debug &gt; Start Debugging**. This starts the Fleet application, and a browser window with the **FMRental** form is displayed.
-2.  Click on any **Vehicle rental ID** to view details.
-3.  Click the **Edit** icon near the top left of the form. The icon looks like a pencil.
+2.  Click on any **Vehicle rental ID** to view details.
+3.  Click the **Edit** icon near the top left of the form. The icon looks like a pencil.
 4.  In the **To** field of the **Rental** section, increase the date by one day.[![FMRentalDetails](./media/fmrental.jpg)](./media/fmrental.jpg)
 5.  Click the **Save** button. This causes the focus to shift to Visual Studio at your highlighted breakpoint. This line shows that the OnValidatedWrite event was raised, and that your handler method was called.
 6.  Press **F5** to continue the run. Instantly, your other breakpoint becomes highlighted.

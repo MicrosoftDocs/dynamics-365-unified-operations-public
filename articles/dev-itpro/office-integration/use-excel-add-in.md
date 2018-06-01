@@ -5,7 +5,7 @@ title: Use the Excel add-in
 description: This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Office add-in for Excel. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/06/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,14 +32,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Use the Excel add-in
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Office add-in for Excel. To open the entity data, you can start from either Excel or Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Office add-in for Excel. To open the entity data, you can start from either Excel or Microsoft Dynamics 365 for Finance and Operations.
 
 By opening entity data in Excel, you can quickly and easily view and edit the data by using the Excel add-in. This add-in requires Microsoft Excel 2016.
 
 > [!NOTE]
 > If your Microsoft Azure Active Directory (Azure AD) tenant is configured to use Active Directory Federation Services (AD FS), you must make sure that the May 2016 update for Office has been applied, so that the Excel add-in can correctly sign you in.
+
+To learn more about using the Excel add-in, watch the short [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) video.
 
 ## Open entity data in Excel when you start from Finance and Operations
 1. On a page in Finance and Operations, select **Open in Microsoft Office**.
@@ -111,10 +113,11 @@ You can use the designer to adjust the columns that are automatically added to t
 5. If you added a field (column), select **Refresh** to pull in an updated set of data.
 
 ## Copy environment data
+
 The data that is read into the workbook from one environment can be copied to another environment. However, you can't just change the connection URL, because the data cache in the workbook will continue to treat the data as existing data. Instead, you must use the Copy Environment Data functionality to publish the data to a new environment as new data.
 
-1. Select the **Options** button (the gear symbol), and then, on the **Data Connector** FastTab, select **Copy Environment Data**.
-2. Enter the server URL for the new environment.
+1. Select the **Options** button (the gear symbol), and then, on the **Data Connector** FastTab, select **Copy Environment Data**. 
+2. Enter the server URL for the new environment. 
 3. Select **OK**, and then select **Yes** to confirm the action. The Excel add-in is restarted and connects to the new environment. Any existing data in the workbook is treated as new data.
 
     After the Excel add-in is restarted, a message box states that the workbook is in Environment copy mode.

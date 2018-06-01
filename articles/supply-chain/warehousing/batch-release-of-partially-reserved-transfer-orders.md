@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form: WHSLoadPlanningWorkbench 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Batch release of partially reserved transfer orders
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The functionality for batch release of partially reserved transfer orders lets
 you partially release transfer orders to a warehouse by using a batch job.

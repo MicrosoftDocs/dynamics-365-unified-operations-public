@@ -2,8 +2,8 @@
 # required metadata 
  
 title: Create routes (February 2016 only)
-description: This task focuses on creating the production routes for a finished product and and a semi-finished product. 
-author: BibiSp
+description: This task focuses on creating the production routes for a finished product and a semi-finished product. 
+author: YuyuScheller
 manager: AnnBe 
 ms.date: 02/07/2017
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create routes (February 2016 only)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This task focuses on creating the production routes for a finished product and a semi-finished product. It is the fifth task in the BOM calculation series. The demo data company used to create this task is USMF.
 

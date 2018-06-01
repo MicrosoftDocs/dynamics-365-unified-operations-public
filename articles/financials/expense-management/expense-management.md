@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: TrvExpenseWorkspace 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Expense management
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Use Expense management to create an integrated workflow where you can store payment method information, import credit card transactions, and track the money that employees are spending when they incur expenses for your business. You can also define expense policies and automate the reimbursement of travel expenses. 
 

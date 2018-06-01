@@ -5,7 +5,7 @@ title: Payroll overview
 description: Payroll provides full gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. Payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
 author: rschloma
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form: PayrollWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,15 +32,14 @@ ms.dyn365.ops.version: Version 1611
 
 # Payroll overview
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 Payroll provides gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. Payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
 
 Payroll setup
 -----------
 
-Basic setup for Payroll involves setting pay cycles and pay periods, calculation frequencies, and setting work schedules. The pay cycle frequency determines how often a pay cycle is run. Pay periods and pay dates are defined as part of the pay cycle. You use the payroll calculation frequency to select the specific pay periods when you want certain earnings or other payroll entities to be processed. 
+Basic setup for Payroll involves setting pay cycles and pay periods, calculation frequencies, and setting work schedules. The pay cycle frequency determines how often a pay cycle is run. Pay periods and pay dates are defined as part of the pay cycle. You use the payroll calculation frequency to select the specific pay periods when you want certain earnings or other payroll entities to be processed. 
 
 Configuring Payroll also includes setting up earning codes and creating earning code groups, and entering information for tax withholding, benefit accrual, and setting beginning balances.
 
@@ -53,10 +52,13 @@ Configuring Payroll also includes setting up earning codes and creating earning 
 -   [Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md)
 
 ## Taxes
-Payroll taxes are set up in two parts. One part covers the settings that are used throughout your organizations, such as the states where you have a connection or the rates for unemployment taxes. The second part additional tax information that is provided for each worker. 
+Payroll taxes are set up in two parts. One part covers the settings that are used throughout your organizations, such as the states where you have a connection or the rates for unemployment taxes. The second part includes additional tax information that is provided for each worker. 
 
 -   [Tax information tasks](noam-usa-tax-information-tasks.md)
 -   [Tax codes, tax groups, and posting definitions](noam-usa-tax-codes-tax-groups-definitions.md)
+
+### Find and install tax updates
+For information about tax updates, refer to the [Microsoft Dynamics 365 HCM](https://community.dynamics.com/ax/b/axhcmnewslearningshighlights) blog. The blog includes posts that announce the availability of tax updates for Dynamics 365 Human Resources, as well as tax updates for other versions. 
 
 ## Benefits
 Topics related to benefits describe how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits. 

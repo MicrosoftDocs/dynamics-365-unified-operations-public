@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Supported standards for electronic invoicing in Europe
-description: This topic explains the level of coverage that exists for electronic invoicing in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in the European region. 
+description: This topic explains the level of coverage that exists for electronic invoicing in Microsoft Dynamics 365 for Finance and Operations in the European region. 
 author: mrolecki
 manager: AnnBe
 ms.date: 07/11/2017
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10274
 ms.search.region: Austria, Denmark, Italy, Norway, Spain, France, Belgium, Netherlands
@@ -30,8 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Supported standards for electronic invoicing in Europe
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains the level of coverage that exists for electronic invoicing for Europe. 
 

@@ -17,7 +17,7 @@ ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQuali
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 94003
@@ -32,34 +32,33 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Quality management overview
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes how you can use quality management in Microsoft Dynamics 365 for Finance and Operations to help improve product quality within your supply chain.
 
-Quality management can help you manage turnaround times when you handle nonconforming products, regardless of their point of origin. Because diagnostic types are linked to correction reporting, Microsoft Dynamics 365 for Finance and Operations can schedule tasks to correct problems and prevent them from recurring.
+Quality management can help you manage turnaround times when you handle nonconforming products, regardless of their point of origin. Because diagnostic types are linked to correction reporting, Microsoft Dynamics 365 for Finance and Operations can schedule tasks to correct problems and prevent them from recurring.
 
-In addition to functionality for managing nonconformance, quality management includes functionality for tracking issues by problem type (even internal problems), and for identifying solutions as short-term or long-term. Statistics about key performance indicators (KPIs) provide insight into the history of previous nonconformance issues and the solutions that were used to correct them. You can use historical data to review the effectiveness of previous quality measures and determine appropriate measures to use in the future.
+In addition to functionality for managing nonconformance, quality management includes functionality for tracking issues by problem type (even internal problems), and for identifying solutions as short-term or long-term. Statistics about key performance indicators (KPIs) provide insight into the history of previous nonconformance issues and the solutions that were used to correct them. You can use historical data to review the effectiveness of previous quality measures and determine appropriate measures to use in the future.
 
-When you set up a quality association, Finance and Operations can generate quality orders for various business processes, events, and conditions. The quality association can cover a specific item, a specific group of items, or all items.
+When you set up a quality association, Finance and Operations can generate quality orders for various business processes, events, and conditions. The quality association can cover a specific item, a specific group of items, or all items.
 
 ## Examples of the use of quality management
-Quality management is flexible and can be implemented in various ways to meet the requirements of specific levels of supply chain operations. The following examples illustrate possible uses of these features:
+Quality management is flexible and can be implemented in various ways to meet the requirements of specific levels of supply chain operations. The following examples illustrate possible uses of these features:
 
 -   Automatically start a quality control process, based on predefined criteria (upon warehouse registration of a purchase order from a specific vendor).
--   Block inventory during inspection to prevent non-approved inventory from being used (full blocking of purchase order quantities).
+-   Block inventory during inspection to prevent non-approved inventory from being used (full blocking of purchase order quantities).
 -   Use item sampling as part of a quality association to define the amount of current physical inventory that must be inspected. Sampling can be based on fixed quantities or a percentage.
 -   Create quality orders for partial receipts. To create a quality order that is based on the quantity that is physically received with an order, you must select the **Per updated quantity** check box on the **Item sampling** form.
--   Create test types that include minimum, maximum, and target test values, and perform qualitative-versus-quantitative testing that has predefined validation results.
+-   Create test types that include minimum, maximum, and target test values, and perform qualitative-versus-quantitative testing that has predefined validation results.
 -   Specify an acceptable quality level (AQL) to control quality measure tolerances.
 -   Specify the resources that an inspection operation requires, such as a test area and test instruments.
 
 ## Working with quality associations
 The business process that uses a quality association can be related to various source documents, such as purchase orders, sales orders, or production orders.
 
-Each quality association record defines the set of tests, the AQL, and the sampling plan that applies to the quality orders that are generated. You must define a quality association record for each variation in a business process. For example, you can set up a quality association that generates a quality order when a purchase order product receipt is updated. Depending on the setup of the execution plan, the triggering process itself can be blocked while there is an open quality order, or the next processes, such as purchase order invoicing, can be blocked.
+Each quality association record defines the set of tests, the AQL, and the sampling plan that applies to the quality orders that are generated. You must define a quality association record for each variation in a business process. For example, you can set up a quality association that generates a quality order when a purchase order product receipt is updated. Depending on the setup of the execution plan, the triggering process itself can be blocked while there is an open quality order, or the next processes, such as purchase order invoicing, can be blocked.
 
-**Note:** While there are open quality orders, inventory quantities are automatically blocked from being issued. Depending on the **Full blocking** setting on the **Item samplings** page, the quantity is either the quantity on the quality order or the quantity on the source document line.
+**Note:** While there are open quality orders, inventory quantities are automatically blocked from being issued. Depending on the **Full blocking** setting on the **Item samplings** page, the quantity is either the quantity on the quality order or the quantity on the source document line.
 
 For a given business process, the quality association record identifies the event and the conditions that a quality order is generated for. The conditions can be specific to either a site or a legal entity. A quality order that involves destructive tests can be generated only when on-hand inventory exists for the event.
 
@@ -264,13 +263,13 @@ The following table provides more information about how quality orders can be ge
 <tr>
 <td>Quarantine order</td>
 <td>Before or after the quarantine order is reported as finished or ended</td>
-<td>Quality orders that require destructive tests can't be generated. It's assumed that the quarantine order functionality handles the disposition of the material that is destroyed.</td>
+<td>Quality orders that require destructive tests can&#39;t be generated. It&#39;s assumed that the quarantine order functionality handles the disposition of the material that is destroyed.</td>
 <td>The requirement for a quality order can reflect a particular site, item, or vendor, or a combination of these conditions.</td>
 <td>A manually generated quality order that refers to a quarantine order can use information in a quality association record, such as the test sampling plan.</td>
 </tr>
 <tr>
 <td>Sales order</td>
-<td>Before a scheduled picking process or packing slip update for the items that are being shipped</td>
+<td>Before a scheduled picking process or packing slip update for the items that are being shipped</td>
 <td>At any step</td>
 <td>The requirement for a quality order can reflect a particular site, item, or customer, or a combination of these conditions.</td>
 <td>A manually generated quality order that refers to a sales order can use information in a quality association record, such as the test sampling plan.</td>
@@ -294,7 +293,7 @@ The following table provides more information about how quality orders can be ge
 <td>A quality order cannot be automatically generated for a transaction in an inventory journal or for transfer order transactions.</td>
 <td></td>
 <td></td>
-<td>A quality order must be created manually for an item's inventory quantity. Physical on-hand inventory is required.</td>
+<td>A quality order must be created manually for an item&#39;s inventory quantity. Physical on-hand inventory is required.</td>
 </tr>
 </tbody>
 </table>
@@ -324,7 +323,7 @@ The following table provides more information about how quality orders can be ge
 <li>The AQL</li>
 <li>The sampling plan</li>
 </ul>
-You must define a quality association for each variation in a business process that requires automatic generation of quality orders. For example, a quality order can be generated in the business processes for purchase orders, quarantine orders, sales orders, and production orders.</td>
+You must define a quality association for each variation in a business process that requires automatic generation of quality orders. For example, a quality order can be generated in the business processes for purchase orders, quarantine orders, sales orders, and production orders.</td>
 </tr>
 <tr class="even">
 <td>Tests</td>
@@ -337,22 +336,22 @@ You must define a quality association for each variation in a business process t
 </tr>
 <tr class="odd">
 <td>Test groups</td>
-<td>Use this page to set up, edit, and view test groups and the individual tests that are assigned to a test group. The upper pane displays test groups, and the lower pane displays the tests that are assigned to a selected test group. You assign several policies to a test group, such as a sampling plan, an AQL, and the requirement for destructive testing. When you assign an individual test to a test group, you define additional information, such as the sequence, documents, and validity dates. For a quantitative test, the information that you define also includes the acceptable measurement values. For a qualitative test, the information includes the test variable and default outcome. The test group that is assigned to a quality order defines the default set of tests that must be performed on the specified item. However, you can add, delete, or change tests on the quality order. Test results are reported for each test on a quality order.</td>
+<td>Use this page to set up, edit, and view test groups and the individual tests that are assigned to a test group. The upper pane displays test groups, and the lower pane displays the tests that are assigned to a selected test group. You assign several policies to a test group, such as a sampling plan, an AQL, and the requirement for destructive testing. When you assign an individual test to a test group, you define additional information, such as the sequence, documents, and validity dates. For a quantitative test, the information that you define also includes the acceptable measurement values. For a qualitative test, the information includes the test variable and default outcome. The test group that is assigned to a quality order defines the default set of tests that must be performed on the specified item. However, you can add, delete, or change tests on the quality order. Test results are reported for each test on a quality order.</td>
 <td>A manufacturing company defines a test group for each variation of its quality guidelines. The various test groups reflect differences in the sampling plans, the sets of tests that must be performed together, the AQL, and other factors. For quantitative tests, there are also differences in the acceptable measurement values. To enforce its quality guidelines, the company assigns a test group to each rule for automatically generating quality orders on the <strong>Quality associations</strong> page, and also assigns a test group to quality orders that are manually created.</td>
 </tr>
 <tr class="even">
 <td>Item quality groups</td>
-<td>Use this page to set up, edit, and view the items that are assigned to a quality group or the quality groups that are assigned to an item. A quality group represents common testing requirements for items. After you define the test requirements on the <strong>Test groups</strong> page, you can define the rules for automatically generating quality orders. To simplify the process, you don't define rules for individual items. Instead, you define rules for a quality group, by using the <strong>Quality associations</strong> page. You can also use the <strong>Item quality groups</strong> page for a selected quality group to assign relevant items to that group. You can also use the <strong>Item quality groups</strong> page for a selected item to assign relevant quality groups to that item.</td>
+<td>Use this page to set up, edit, and view the items that are assigned to a quality group or the quality groups that are assigned to an item. A quality group represents common testing requirements for items. After you define the test requirements on the <strong>Test groups</strong> page, you can define the rules for automatically generating quality orders. To simplify the process, you don&#39;t define rules for individual items. Instead, you define rules for a quality group, by using the <strong>Quality associations</strong> page. You can also use the <strong>Item quality groups</strong> page for a selected quality group to assign relevant items to that group. You can also use the <strong>Item quality groups</strong> page for a selected item to assign relevant quality groups to that item.</td>
 <td>A manufacturing company purchases various raw materials that have the same testing requirements for incoming inspection. The company defines a quality group and then assigns the item numbers that are associated with the raw materials to that group. Later, the company purchases a new type of raw material that has the same testing requirements. Instead of setting up new testing requirements for the new material, the company adds the item number for the new material to the existing quality group. The same manufacturing company also produces items that have the same production testing requirements and ships items that have the same requirement for pre-shipment testing. The company defines two additional quality groups and then assigns the relevant item numbers to each group.</td>
 </tr>
 <tr class="odd">
 <td>Test variables</td>
-<td>Use this page to define and view the variables that are associated with a qualitative test. For each variable, you define enumerated outcomes that represent the possible options. You define tests on the <strong>Tests</strong> page. For qualitative tests, you must set the test type to <strong>Option</strong>. Use the <strong>Test groups</strong> page to assign a test variable to an individual test.</td>
-<td>A manufacturing company that produces cookies uses an inspection test for the finished product. This inspection test has several variables. One variable is taste, and the possible outcomes for this variable are good and bad. A second variable is color, and the possible outcomes are too dark, too light, and correct.</td>
+<td>Use this page to define and view the variables that are associated with a qualitative test. For each variable, you define enumerated outcomes that represent the possible options. You define tests on the <strong>Tests</strong> page. For qualitative tests, you must set the test type to <strong>Option</strong>. Use the <strong>Test groups</strong> page to assign a test variable to an individual test.</td>
+<td>A manufacturing company that produces cookies uses an inspection test for the finished product. This inspection test has several variables. One variable is taste, and the possible outcomes for this variable are good and bad. A second variable is color, and the possible outcomes are too dark, too light, and correct.</td>
 </tr>
 <tr class="even">
 <td>Test variable outcomes</td>
-<td>Use this page to set up, edit, and to view the possible test results for a test variable that is associated with a qualitative test. For each outcome, you assign a <strong>pass</strong> or <strong>fail</strong> status. You must define a variable and its outcomes for each qualitative test that is defined on the <strong>Tests</strong> page. (For qualitative tests, the test type is set to <strong>Option</strong> on the <strong>Tests</strong> page.) Use the <strong>Test groups</strong> page to assign a test variable and the default outcome to an individual qualitative test.</td>
+<td>Use this page to set up, edit, and to view the possible test results for a test variable that is associated with a qualitative test. For each outcome, you assign a <strong>pass</strong> or <strong>fail</strong> status. You must define a variable and its outcomes for each qualitative test that is defined on the <strong>Tests</strong> page. (For qualitative tests, the test type is set to <strong>Option</strong> on the <strong>Tests</strong> page.) Use the <strong>Test groups</strong> page to assign a test variable and the default outcome to an individual qualitative test.</td>
 <td>A manufacturing company that produces cookies uses an inspection test for the finished product. This inspection test has of several variables. One variable is taste, and the possible outcomes for this variable are good and bad. A second variable is color, and the possible outcomes are too dark, too light, and correct. A status of <strong>pass</strong> or <strong>fail</strong> is assigned to each outcome. During the inspection test for each variable, the inspector reports the test result by selecting one of the outcomes.</td>
 </tr>
 </tbody>
@@ -360,7 +359,7 @@ You must define a quality association for each variation in a business process t
 
 
 
-See also
+Additional resources
 --------
 
 [Quality management processes](quality-management-processes.md)

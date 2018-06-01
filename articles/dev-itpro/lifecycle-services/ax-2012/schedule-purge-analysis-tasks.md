@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
+title: Schedule Intelligent Data Management Framework purge and analysis tasks (AX 2012)
 description: This topic describes the options on the Microsoft Dynamics AX Intelligent Data Management Framework(IDMF) Schedule menu, and how to use them.
 author: kfend
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
+# Schedule Intelligent Data Management Framework purge and analysis tasks (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the options on the Microsoft Dynamics AX Intelligent Data Management Framework(IDMF) Schedule menu, and how to use them.
 
@@ -336,9 +335,8 @@ This command les you create a new task for the ledger periods that are required 
 ## System health check
 This command creates a snapshot of key measures from the **Inventory management**, **Accounts receivable**, **Accounts payable**, **General ledger**, and **Administration** modules in the Microsoft Dynamics AX application. These queries capture an aggregate for each measure by company and by year. The number of years this information is captured for depends on the information in your ledger periods table. A measure provides information about a specific business process. For example, the **Inventory management** module provides a measure called **Cancelled Inventory Settlement**. You must have at least one application health check analysis snapshot to work with the application health check measures. You can schedule recurring application health check snapshots to create the trend analysis of your application health. The trend analysis requires a minimum of two analysis snapshots and processes up to the latest 10 snapshots, ignoring earlier ones, if you have any. These application health check queries are extensive and adversely affect the response time for online users. Therefore, by default, these queries are run in a database called the production replica database. The accuracy of the application health check queries depends on the relevance of the application data in the production replica database. Develop a synchronization strategy to keep your production replica database as close to the production database as possible. On the toolbar, click **System health check** to create a scheduled task for the application health check snapshot. Enter the required information in the **Scheduled tasks** window, and then click **Save**. This information is used to provide the application health check measures in the **Analysis** &gt; **Show system health** command.
 
-| **Caution**                                                                                                                                                                                                                                                                                                                             |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| It is possible for you to configure the application to run the application health check queries against the production database. We recommend that you not run the application health check queries against the production database, because these queries adversely affect the response time of the Microsoft Dynamics AX application. |
+> [!WARNING]
+> It is possible for you to configure the application to run the application health check queries against the production database. We recommend that you not run the application health check queries against the production database, because these queries adversely affect the response time of the Microsoft Dynamics AX application.
 
 ## Metadata
 This command synchronizes the metadata from the production database with the archive database. The metadata synchronization task copies database objects, but not data, from the production database to the archive database. You must complete this task successfully before running the master data synchronization process. Run the metadata synchronization task during your system maintenance period or at a time when the least amount of activity is occurring on the Microsoft Dynamics AX application. The metadata synchronization task can fail while copying objects such as views, functions, and stored procedures. This failure may be caused by invalid code in these objects that prevents creation, or by cyclic dependencies. A successful task is completed with a **Pass** status. If the task fails to copy database objects such as tables, indexes, and primary keys, the job shows a **Fail** status. Click the **Status** menu, and check the **Subtasks** list in the **Trace** pane to determine the exact step that caused the error. IDMF creates trace files for these subtasks in the installation location. Each trace file maps to a specific subtask, such as **CreateColumn.txt**, **CreateIndex.txt**, and **DropTables.txt**. Review the trace file corresponding to the failed subtask to determine the cause of the error. You must troubleshoot and manually resolve the issues that cause the jobs to fail. You must complete the metadata synchronization task successfully to use the archive feature. Upon successful completion of the first metadata synchronization task, you must maintain the metadata synchronization between the production database and the archive database. After the first metadata synchronization task, if there are changes in the production database schema, you must run the metadata synchronization task to keep both the databases synchronized. On the toolbar, click **Metadata** to create a scheduled task for the metadata synchronization. Enter the required information in the **Scheduled tasks** window, and then click **Save**.

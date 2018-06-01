@@ -2,10 +2,10 @@
 # required metadata
 
 title: My team mobile workspace
-description: This topic provides information about the My team mobile workspace, which lets mmanagers view their direct reports and extended staff. Users can also send praise to individuals in their reporting chain.
+description: This topic provides information about the My team mobile workspace, which lets managers view their direct reports and extended staff. Users can also send praise to individuals in their reporting chain.
 author: ShielaSogge
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Talent, Operations
+ms.search.scope: Operations, Talent
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # My team mobile workspace
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the **My team** mobile workspace. This workspace lets managers view their direct reports and extended staff. They can also send praise to individuals in their reporting chain.
 
@@ -57,12 +57,12 @@ Before you can use this mobile workspace, the following prerequisites must be me
 <tbody>
 <tr class="odd">
 <td>One of the following products must be deployed in your organization:
-<ul><li>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)</li>
+<ul><li>Microsoft Dynamics 365 for Finance and Operations</li>
 <li>Microsoft Dynamics 365 for Talent</li>
 </ul>
 </td>
 <td>System administrator</td>
-<td>If you don't already have Finance and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don't already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent webpage</a>.
+<td>If you don&#39;t already have Finance and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don&#39;t already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent webpage</a>.
 </td>
 </tr>
 <tr class="even">

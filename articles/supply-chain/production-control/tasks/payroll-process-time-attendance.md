@@ -1,34 +1,34 @@
---- 
-# required metadata 
- 
+---
+# required metadata
+
 title: Enable the payroll process for time and attendance
-description: This procedure shows how to enable the payroll process for time and attendance. 
+description: This procedure shows how to enable the payroll process for time and attendance.
 author: johanhoffmann
-manager: AnnBe 
+manager: AnnBe
 ms.date: 02/12/2016
-ms.topic: business-process 
+ms.topic: business-process
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-ax-applications
 ms.technology:  
- 
-# optional metadata 
- 
+
+# optional metadata
+
 # ms.search.form:   
-audience: Application User 
+audience: Application User
 # ms.devlang:  
-ms.reviewer: bis
-ms.search.scope: Operations 
+ms.reviewer: yuyus
+ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Enable the payroll process for time and attendance
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to enable the payroll process for time and attendance. The demo data company used to create this procedure is USMF.
 
@@ -71,4 +71,3 @@ This procedure shows how to enable the payroll process for time and attendance. 
 6. Expand the Time registration section.
 7. Click Edit.
 8. In the Pay agreement field, enter or select a value.
-

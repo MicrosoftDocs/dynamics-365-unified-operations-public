@@ -3,9 +3,9 @@
 
 title: Financial reporting for Finance and Operations
 description: Financial reporting for Finance and Operations allows financial and business professionals to create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: FinanicalReportingSetup 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
@@ -32,17 +32,27 @@ ms.dyn365.ops.version: Version 1611
 
 # Financial reporting for Finance and Operations
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Financial reporting for Finance and Operations allows financial and business professionals to create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
 
 Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. No additional tools or configuration steps are required.
 
-## Financial reporting components
+## Financial reporting setup
+The **Financial reporting setup** page has a list of all financial dimensions in the system. **General ledger** > **Ledger setup** > **Financial reporting setup**. 
+
+The **Financial reporting setup** page has two sections that determine the data you report on in Financial reporting:
+
+•   **Dimensions tab** - Because different companies use different dimensions and account structures, there is no way to determine the order in which users want to view all financial dimensions on reports. This page allows you set the order in which you want financial dimensions to appear when you build and view a report in Financial reporting.
+
+•   **Attributes tab** is where you can select whether you want the ability to use **Vendors** and **Customers** as attributes for filtering and report design. Reporting on Vendor and Customer will only be valuable if you do not enter multiple vendors or customers in a single voucher when posting transactions. Choosing Vendor and/or Customer will add additional time to the integration.
+
+
+
+## Financial reporting components
 The following components of financial reporting make it easy to create, view, and schedule reports.
 
-| Component        | Functions                                                                                                                                                                                                                                                                           | Additional information                                                                          |
+| Component        | Functions                                                                                                                                                                                                                                                                           | Additional information                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Report Designer  | Create report building blocks that can be combined to define and generate a report. The report wizard guides less experienced users through the design process. Advanced users can create new report building blocks or modify existing building blocks to meet their requirements. |                                                                                                 |
 | Report schedules | Schedule a single report or a group of reports so that it is generated on a regular basis.                                                                                                                                                                                          | [Generate a financial report](generate-financial-report.md) |
@@ -80,8 +90,8 @@ The following components of financial reporting make it easy to create, view, an
 <td>Interactive report viewing</td>
 <td>Interactive features let you perform the following tasks:
 <ul>
-<li>Change the report date for the report that you're viewing.</li>
-<li>Change the currency of the report that you're viewing.</li>
+<li>Change the report date for the report that you&#39;re viewing.</li>
+<li>Change the currency of the report that you&#39;re viewing.</li>
 <li>View the report in either a summary view or a detailed view.</li>
 <li>Add dimension filters to limit the report content to a specific dimension or combination of dimensions.</li>
 <li>Add attribute filters to limit the report content to a specific attribute or combination of attributes.</li>
@@ -91,7 +101,7 @@ The following components of financial reporting make it easy to create, view, an
 </tbody>
 </table>
 
-#See also
+## Additional resources
 [Generate a financial report](generate-financial-report.md)
 
 

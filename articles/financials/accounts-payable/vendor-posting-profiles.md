@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Vendor posting profiles
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Vendor posting profiles control the posting of vendor transactions to the general ledger.
 
 Vendor posting profiles
 -----------------------
 
-Vendor posting profiles enable you to assign general ledger accounts and document settings to all vendors, a group of vendors or a single vendor. These settings will be used when you create purchase orders, vendor invoices and cash payments. For some transactions, you can select a posting profile that differs from and takes precedence over the posting profiles that are set up for transactions in this page. The default posting profile is defined in the Ledger and Sales Tax fasttab on the Accounts payable parameters page. The default posting profile is then included automatically on the header of new documents where you can change it to a different posting profile if needed.
+Vendor posting profiles enable you to assign general ledger accounts and document settings to all vendors, a group of vendors or a single vendor. These settings will be used when you create purchase orders, vendor invoices and cash payments. For some transactions, you can select a posting profile that differs from and takes precedence over the posting profiles that are set up for transactions in this page. The default posting profile is defined in the Ledger and Sales Tax fasttab on the Accounts payable parameters page. The default posting profile is then included automatically on the header of new documents where you can change it to a different posting profile if needed.
 
 You can also associate posting definitions with transaction posting types in the Transaction posting definitions page. Posting definitions control the posting of vendor transactions to the general ledger instead of posting profiles.
 
@@ -58,10 +57,6 @@ Specify the ledger accounts that are used in the posting of transactions that us
 If you want all vendor transactions to have the same posting profile, set up only one posting profile with All in the Account code field. Specify the following values to set up your posting profile:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -140,7 +135,7 @@ If you want all vendor transactions to have the same posting profile, set up onl
 </tr>
 </tbody>
 </table>
- 
+
 
 ### **Table restrictions**
 
@@ -150,8 +145,8 @@ Specify the following values to set up your posting profile:
 
 | Field          | Description                                                                                                                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Settlement** | Select this option to enable automatic settlement of transactions that have this posting profile. If this option is cleared, you must manually settle transactions by using the Settle open transactions page. |
-| **Cancel**     | Select this option if you want to be able to cancel transactions that have this posting profile.                                                                                                               |
+| **Settlement** | Select this option to enable automatic settlement of transactions that have this posting profile. If this option is cleared, you must manually settle transactions by using the Settle open transactions page. |
+| **Cancel**     | Select this option if you want to be able to cancel transactions that have this posting profile.                                                                                                               |
 | **Close**      | Select a posting profile to change to when transactions that have this posting profile are closed. A transaction is regarded as closed when it has been settled in full.                                       |
 
 

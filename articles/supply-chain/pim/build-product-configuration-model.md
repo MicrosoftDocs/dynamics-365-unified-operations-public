@@ -17,14 +17,14 @@ ms.search.form: PCProductConfigurationModelDetails
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 75083
 ms.assetid: f08072b8-cb0b-43aa-9509-f5ec32caecd9
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build a product configuration model
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 The need to configure products to meet special requirements is becoming the rule rather than the exception, in both business-to-business and business-to-consumer relationships.
 
@@ -41,21 +40,21 @@ A manufacturer that supports configure-to-order scenarios has an opportunity to 
 
 A successful move from a manufacture-to-stock setup to a configure-to-order setup requires careful analysis of the product structures, identification of product families, and componentization. To reduce the number of parts and minimize the number of goods that are in process, it's very important that you understand the product interfaces, and that you design for reusability.  
 
-There are several product configuration modeling principles, such as rule-based, dimension-based, and constraint-based modeling. Studies show that the constraint-based methodology can reduce the number of code lines in models by about 50 percent compared to other modeling principles. Therefore, this methodology can reduce the total cost of ownership (TCO). By moving from a rule-based model that is based on X++ code to a constraint-based model, you no longer require a developer license in order to maintain product models.
+There are several product configuration modeling principles, such as rule-based, dimension-based, and constraint-based modeling. Studies show that the constraint-based methodology can reduce the number of code lines in models by about 50 percent compared to other modeling principles. Therefore, this methodology can reduce the total cost of ownership (TCO). By moving from a rule-based model that is based on X++ code to a constraint-based model, you no longer require a developer license in order to maintain product models.
 
 ## Product configuration
 The industrialization period has led to great achievements in producing high-quality and feature-rich products at affordable prices. The economies of scale have made it possible for most people in the industrialized world to buy cars, TVs, household appliances, and other goods that most of us consider a necessary part of our everyday life.  
 
 As many products have become commodities, a need to differentiate them has arisen. The immediate response of manufacturers to this challenge has been to create variants of each product, so that customers have more alternatives. This strategy has led to increased forecast challenges, and also to an increase in inventory cost and unsold products that become obsolete.  
 
-By adopting a configure-to-order philosophy, manufactures have an opportunity to meet customer demand for unique products while reducing or eliminating obsolete inventory items. When a manufacture-to-stock philosophy is shifted to a configure-to-order philosophy, one immediate challenge that arises is that the need for short lead times must be balanced against low inventory levels.  
+By adopting a configure-to-order philosophy, manufactures have an opportunity to meet customer demand for unique products while reducing or eliminating obsolete inventory items. When a manufacture-to-stock philosophy is shifted to a configure-to-order philosophy, one immediate challenge that arises is that the need for short lead times must be balanced against low inventory levels.  
 
 The key to success here is to carefully analyze the product portfolio, and to look for patterns in both product features and processes. The goal is to identify generic components that can be manufactured by the same equipment and used in all variants.  
 
-The new Product configuration feature set includes a user interface (UI) that provides a visual overview of the product configuration model structure, and also a declarative constraint syntax that doesn't have to be compiled. Therefore, companies that want to support a configuration practice can get started more easily. As the following sections explain, a product designer no longer requires the support of a developer to build a product configuration model, test it, and release it to the sales organization.
+The new Product configuration feature set includes a user interface (UI) that provides a visual overview of the product configuration model structure, and also a declarative constraint syntax that doesn't have to be compiled. Therefore, companies that want to support a configuration practice can get started more easily. As the following sections explain, a product designer no longer requires the support of a developer to build a product configuration model, test it, and release it to the sales organization.
 
 ## Building a product configuration model
-There are several approaches that a user can take to build a product configuration model. One option is to follow a sequential flow by first creating all the reference data, such as product masters, distinct products, and operational resources, and then including them as components, bill of materials (BOM) lines, route operations, and other elements of the product configuration model. Alternatively, you can select a more iterative approach by first creating the model and then adding reference data as the need arises.
+There are several approaches that a user can take to build a product configuration model. One option is to follow a sequential flow by first creating all the reference data, such as product masters, distinct products, and operational resources, and then including them as components, bill of materials (BOM) lines, route operations, and other elements of the product configuration model. Alternatively, you can select a more iterative approach by first creating the model and then adding reference data as the need arises.
 
 ### Components
 
@@ -85,7 +84,7 @@ Calculations represent a mechanism for performing arithmetic operations in a con
 
 ### Subcomponents
 
-Subcomponents represent the nodes in the product configuration model structure. For each subcomponent relationship, a reference must be specified to a product master that has the variant configuration technology set to constraint-based configuration.
+Subcomponents represent the nodes in the product configuration model structure. For each subcomponent relationship, a reference must be specified to a product master that has the variant configuration technology set to constraint-based configuration.
 
 ### User requirements
 
@@ -110,7 +109,7 @@ Finally, validation can be done for a complete product configuration model to ve
 
 ### Testing
 
-Testing a model is similar to running an actual configuration session. The user can walk through the configuration pages and verify that the model structure supports the configuration process. The user can verify that the attribute values are correct, and that the attribute descriptions guide the user to select the correct values. Finally, after a test session is completed, the system tries to create the BOM and the route that corresponds to the selected attribute values, and presents an error message if anything goes wrong.
+Testing a model is similar to running an actual configuration session. The user can walk through the configuration pages and verify that the model structure supports the configuration process. The user can verify that the attribute values are correct, and that the attribute descriptions guide the user to select the correct values. Finally, after a test session is completed, the system tries to create the BOM and the route that corresponds to the selected attribute values, and presents an error message if anything goes wrong.
 
 ### The configuration page
 
@@ -129,7 +128,7 @@ One or more configuration templates can be created to speed up the configuration
 
 ### Translations
 
-If the product will be sold in different countries/regions, translations can be created for all text that appears in the configuration UI. This text includes not only name and description fields, but also attribute text values.
+If the product will be sold in different countries/regions, translations can be created for all text that appears in the configuration UI. This text includes not only name and description fields, but also attribute text values.
 
 ### Versions
 
@@ -140,9 +139,9 @@ A dedicated application programming interface (API) has been implemented, so tha
 
 ### PCAdaptor class
 
-The API is implemented by using a set of **PCAdaptor** classes that expose the data structure of the product configuration models. An instance of the **PCAdaptor** class must be created for each model that will be extended. After a configuration session is completed, the system checks for an instance of this class and runs it if it's found.  
+The API is implemented by using a set of **PCAdaptor** classes that expose the data structure of the product configuration models. An instance of the **PCAdaptor** class must be created for each model that will be extended. After a configuration session is completed, the system checks for an instance of this class and runs it if it's found.  
 
-The following flow diagram outlines the process.  
+The following flow diagram outlines the process.  
 
 [![Flow diagram](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 

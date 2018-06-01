@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ variables and data types
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes variables and data types in X++.
 
@@ -47,25 +46,25 @@ A *variable* is an identifier that points to a memory location where information
     // An example of two valid variable names.
     str variableName;
     CustInfo custNumber;
-            
+
     // An example of simultaneously declaring and initializing a variable.
     real pi = 3.14159265359; // Assigns value of pi to 12 significant digits.
-            
+
     // An example of initializing an object by using the new method on the class.
     Access accessObject = new Access(); // Simple call to the new method in the Access class.
-            
+
     // An example of multiple declarations using integers.
     int i,j; // Declares 2 integers, i and j.
-            
+
     // An example of multiple declarations using an array.
     int a[100,5], b=1; // Declares array with 100 integers with 5 in memory and b as an integer with value 1.
-     
+
     // An example of how variable scopes work.
     class ScopeExample
     {
         // The variable a is declared within the class.
         int a;
-        
+
         // Because the method below is declared within the class,
         // it can access all the variables defined within the class.
         void aNewMethod()
@@ -75,7 +74,7 @@ A *variable* is an identifier that points to a memory location where information
             int b;
         }
     }
-     
+
     // An example of an assignment of field members inline.
     public class FieldAssignmentExample
     {
@@ -86,7 +85,7 @@ A *variable* is an identifier that points to a memory location where information
             // ...
         }
     }
-     
+
     class ConstantExample
     {
         // An example of a constant being declared at the class level.
@@ -101,7 +100,7 @@ A *variable* is an identifier that points to a memory location where information
     str value = ConstantExample::MyContent;
     // If you're in the scope of the class where the const is defined, 
     // you can omit the type name prefix (ConstantExample in this example).
-     
+
     // An example of the using clause where the alias can denote
     // namespaces and classes.
     using System;
@@ -138,7 +137,7 @@ Don't use **var** when the type isn't clear from the initialization expression.
     var var1 = "This is clearly a string.";
     var var2 = 27; // This is an integer (not a real).
     var i = System.Convert::ToInt32(3.4);
-            
+
     // Don't use var when the type of the variable is not clear
     // from the context. Use an explicit type instead.
     int var4 = myObject.ResultSoFar();
@@ -219,7 +218,7 @@ The concept of macros is fully supported. However, constants have the following 
 -   Constant variables have scope, whereas macros don't have scope.
 -   You can see the value of a constant or a read-only variable in the debugger.
 
-Macros that are defined in class scopes (that is, in class declarations) are effectively available in all methods of all derived classes. This feature was originally a bug in the implementation of the legacy compiler macro. However, many application programmers often take advantage of it now. The X++ compiler still honors this feature, but no new code that uses it should be written. This feature also has a significant effect on the performance of the compiler. Constants can be declared at the class level, as shown in the following example.
+Macros that are defined in class scopes (that is, in class declarations) are effectively available in all methods of all derived classes. This feature was originally a bug in the implementation of the legacy compiler macro. However, many application programmers often take advantage of it now. The X++ compiler still honors this feature, but no new code that uses it should be written. This feature also has a significant effect on the performance of the compiler. Constants can be declared at the class level, as shown in the following example.
 
     private const str MyConstant = 'SomeValue';
 
@@ -265,7 +264,7 @@ The **anytype** data type is a placeholder for any data type. You should use var
 
 ### boolean
 
-The **boolean** data type contains a value that is evaluated as either **true** or **false**. You can use the reserved literal keywords **true** and **false** wherever a **boolean** expression is expected. The size of a **boolean** is 1 byte. The default value is **false**, and the internal representation is a short number. A **boolean** is automatically converted to an **int**, **date**, or **real**. It has no explicit conversion functions. The internal representation of a **boolean** is an integer. You can assign any integer value to a variable that is declared as the **boolean** type. The integer value **0** (zero) is evaluated as **false**, and all other integer values are evaluated as **true**. Because the internal representation of a **boolean** is an integer, **boolean** values are automatically converted to integers and reals.
+The **boolean** data type contains a value that is evaluated as either **true** or **false**. You can use the reserved literal keywords **true** and **false** wherever a **boolean** expression is expected. The size of a **boolean** is 1 byte. The default value is **false**, and the internal representation is a short number. A **boolean** is automatically converted to an **int**, **date**, or **real**. It has no explicit conversion functions. The internal representation of a **boolean** is an integer. You can assign any integer value to a variable that is declared as the **boolean** type. The integer value **0** (zero) is evaluated as **false**, and all other integer values are evaluated as **true**. Because the internal representation of a **boolean** is an integer, **boolean** values are automatically converted to integers and reals.
 
 #### boolean examples
 
@@ -273,26 +272,26 @@ The **boolean** data type contains a value that is evaluated as either **true** 
     {
         // Simple declaration of a boolean variable, b.
         boolean b;
-            
+
         // Multiple declarations of booleans.
         boolean b1, b2;
-          
+
         // Boolean variable is initialized to true.
         boolean b3 = true;
-            
+
         // Declares a dynamic array of booleans.
         boolean b4[];
-            
+
         // This example shows the most common usage of a boolean: a boolean in
         // a conditional statement and as a result of a logical expression.
         void main()
         {
             // Declares a boolean called exprValue.
             boolean exprValue;
-                
+
             // Assigns ExprValue the value of (7*6 == 42), which equates to true.
             exprValue = (7*6 == 42);
-                
+
             // If the conditional statement is true, print "OK".
             if (exprValue)
             {
@@ -311,16 +310,16 @@ The **date** data type contains the day, month, and year. Dates can be written a
     {
         // Simple declaration of a date variable, d.
        date d;
-            
+
         // Multiple declaration of two date variables.
         date d1, d2;
-            
+
         // A date variable, d3, is initialized to the 21st of November 1998.
         date d3 = 21\11\1998;
-            
+
         // Declaration of a dynamic array of dates.
         date d4[];
-            
+
         // Using arithmetic operators with integer variables and dates.
         void myMethod()
         {
@@ -333,7 +332,7 @@ The **date** data type contains the day, month, and year. Dates can be written a
             // Uses an integer value in the computation of dates.
             // This sets aDate to aDate + 30; that is the 31st of January 1998.
             aDate = aDate + anInteger;
-                
+
             // Create 2 variables, set bDate, and then subtract from that date.
             date bDate;
             int dateDifference;
@@ -361,7 +360,7 @@ An **enum** is a list of literals. Before you can use an **enum**, you must decl
     {
         // Declare the enum (a NoYes enum) in the Application Explorer.
         NoYes done;
-            
+
         // An array of Criteria enums.
         Criteria crit[100];
     }
@@ -387,7 +386,7 @@ The following set of examples shows how to use the **guid** functions. The code 
     {
         guid guid2;
         str string3;
-            
+
         // Convert a guid to a string, and back to a guid.
         guid2 = newGuid();
         info(strFmt("Info_a1:  guid2 == %1", guid2));
@@ -395,18 +394,18 @@ The following set of examples shows how to use the **guid** functions. The code 
         info(strFmt("Info_a2:  string3 == %1", string3));
         guid2 = str2guid(string3);
         info(strFmt("Info_a3:  guid2 == %1", guid2));
-            
+
         // Test string representations of a guid. Mixing upper and lower case letters does not affect the guid.
         guid2 = str2guid("BB345678-abcd-ABCD-0000-bbbbffff9012");
         string3 = guid2str(guid2);
         info(strFmt("Info_b1:  8-4-4-4-12 format for dashes works (%1)", string3));
         info(strFmt("Info_b2:  Mixed upper and lower case works."));
-            
+
         // Test invalid dash locations, see output is all zeros. Dash locations must be exact.
         guid2 = str2guid("CC2345678abcd-ABCD-0000-cccc9012");
         string3 = guid2str(guid2);
         info(strFmt("Info_c1:  These embedded dash locations are required.  %1", string3));
-            
+
         // Braces {} are optional.
         guid2 = str2guid("{DD345678-abcd-ABCD-0000-ddddaaaa9012}");
         string3 = guid2str(guid2);
@@ -438,23 +437,23 @@ The following example shows how to declare integers and use them in expressions.
     {
         // Declaration of an integer variable, i.
         int i;
-            
+
         // Declaration of two int64 variables.
         int64 i1, i2;
-            
+
         // An integer variable is initialized to the value 100.
         int i3 = 100;
-            
+
         // Declaration of a dynamic array of integers.
         int i4[];
         void element()
         {
             // Two integer variables are declared and initialized.
             int k = 1, j = 2;
-                
+
             // j is assigned the result of j + ((i + i) DIV 2).
             j +=(i + i) div 2;
-                
+
             // This results in: j=3.
 
             if (j > 2 )
@@ -470,7 +469,7 @@ The following example shows how to declare integers and use them in expressions.
 
 ### real
 
-A **real** variable can hold decimal values in addition to integers. You can use *decimal literals* anywhere that a **real** is expected. A decimal literal is the decimal as it's entered directly in the code, such as **2.123876**. Real literals can also be written by using exponential notation, such as **1.0e3**. Reals can be used in all expressions, and they can be used with both relational and arithmetic operators. A **real** has a precision of 16 significant digits. The default value for a **real** is **0.0**, and the internal representation is a binary-coded digital (BCD) number. The BCD encoding enables exact representations of values that are multiples of 0.1. The range of a **real** variable is -(10)¹²⁷ through (10)¹²⁷. All reals in this range can be used as literals in X++. A **real** variable is automatically converted to a **boolean**, **enum**, or **int**. If the result is an integer, or if the operator is an integer operator, the **real** is converted to an integer. If the result is a **boolean**, the **real** is converted to a **boolean**, and so on. Additionally, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **str2num** and **num2str**. Direct assignments between X++ **real** and Microsoft .NET Framework **System.Decimal** convert the value correctly. A call to a conversion function isn't required. A *decimal number* is a floating-point value that consists of a sign, a numeric value where each digit is in the range 0 through 9, and a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value. The binary representation of a **real** value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor. The scaling factor is used to divide the 96-bit integer and specify what part of it is a decimal fraction. The scaling factor is implicitly the number 10 raised to an exponent in the range 0 through 28. Therefore, the binary representation of a decimal value represents (\[-2⁹⁶ through 2⁹⁶\] ÷ 10(0\\ through\\ 28)), where -(2⁹⁶-1) is the minimum value that can be expressed and 2⁹⁶-1 is the maximum value. **Note:** The type that is used to represent **real** values in Microsoft Dynamics 365 for Finance and Operations has changed from the interpreted X++ of Microsoft Dynamics AX 2012. However, you don't have to rewrite any code, because the new type can express all the values that the old type could express. We provide this material in the interest of full disclosure only. All instances of the **real** type are now implemented as instances of the .NET decimal type (**System.Decimal**). Just as the **real** type in previous versions, the decimal type in a binary-coded decimal type is resilient to rounding errors. The range and resolution of the decimal type differ from previous versions. The original X++ **real** type supported 16 digits and an exponent that defined the position of the decimal point. However, the X++ **real** type for Microsoft Dynamics 365 for Finance and Operations and later can represent decimal numbers in the range 79,228,162,514,264,337,593,543,950,335 (2⁹⁶-1) through -79,228,162,514,264,337,593,543,950,335 (-\[2⁹⁶-1\]). Rounding is still required for the new **real** type. For example, the following code produces a result of 0.9999999999999999999999999999 instead of 1. No number of decimals will suffice to represent the value of 1/3 accurately. The discrepancy obtained here is due to the fact that only a finite number of decimals are provided. You should use the **round** function to round to the number of decimals required.
+A **real** variable can hold decimal values in addition to integers. You can use *decimal literals* anywhere that a **real** is expected. A decimal literal is the decimal as it's entered directly in the code, such as **2.123876**. Real literals can also be written by using exponential notation, such as **1.0e3**. Reals can be used in all expressions, and they can be used with both relational and arithmetic operators. A **real** has a precision of 16 significant digits. The default value for a **real** is **0.0**, and the internal representation is a binary-coded digital (BCD) number. The BCD encoding enables exact representations of values that are multiples of 0.1. The range of a **real** variable is -(10)¹²⁷ through (10)¹²⁷. All reals in this range can be used as literals in X++. A **real** variable is automatically converted to a **boolean**, **enum**, or **int**. If the result is an integer, or if the operator is an integer operator, the **real** is converted to an integer. If the result is a **boolean**, the **real** is converted to a **boolean**, and so on. Additionally, the following explicit [conversion functions](xpp-conversion-run-time-functions.md) can be used: **str2num** and **num2str**. Direct assignments between X++ **real** and Microsoft .NET Framework **System.Decimal** convert the value correctly. A call to a conversion function isn't required. A *decimal number* is a floating-point value that consists of a sign, a numeric value where each digit is in the range 0 through 9, and a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value. The binary representation of a **real** value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor. The scaling factor is used to divide the 96-bit integer and specify what part of it is a decimal fraction. The scaling factor is implicitly the number 10 raised to an exponent in the range 0 through 28. Therefore, the binary representation of a decimal value represents (\[-2⁹⁶ through 2⁹⁶\] ÷ 10(0\\ through\\ 28)), where -(2⁹⁶-1) is the minimum value that can be expressed and 2⁹⁶-1 is the maximum value. **Note:** The type that is used to represent **real** values in Microsoft Dynamics 365 for Finance and Operations has changed from the interpreted X++ of Microsoft Dynamics AX 2012. However, you don't have to rewrite any code, because the new type can express all the values that the old type could express. We provide this material in the interest of full disclosure only. All instances of the **real** type are now implemented as instances of the .NET decimal type (**System.Decimal**). Just as the **real** type in previous versions, the decimal type in a binary-coded decimal type is resilient to rounding errors. The range and resolution of the decimal type differ from previous versions. The original X++ **real** type supported 16 digits and an exponent that defined the position of the decimal point. However, the X++ **real** type for Microsoft Dynamics 365 for Finance and Operations and later can represent decimal numbers in the range 79,228,162,514,264,337,593,543,950,335 (2⁹⁶-1) through -79,228,162,514,264,337,593,543,950,335 (-\[2⁹⁶-1\]). Rounding is still required for the new **real** type. For example, the following code produces a result of 0.9999999999999999999999999999 instead of 1. No number of decimals will suffice to represent the value of 1/3 accurately. The discrepancy obtained here is due to the fact that only a finite number of decimals are provided. You should use the **round** function to round to the number of decimals required.
 
     // An example of using the debugger to show the value of the variables.
     public static void UseTheDebugger(Args a)
@@ -492,16 +491,16 @@ A **real** variable can hold decimal values in addition to integers. You can use
     {
         // Simple declaration of a real variable, r.
         real r;
-            
+
         // Multiple declaration of two real variables.
         real r1, r2;
-          
+
         // A real variable is initialized to the approximate value of pi.
         real r3 = 3.1415;
-            
+
         // Declaration of a dynamic array of reals.
         real r4[];
-            
+
         // An example of a real literal written using exponential notation.
         real r;
         r = 1.000e3;
@@ -510,46 +509,46 @@ A **real** variable can hold decimal values in addition to integers. You can use
         r = 1234.5e4;
         r = 1.0e1; // Means 1.0E1 
     }
-            
+
     // An example of automatic conversions.
     void main()
     {
         // Declares a variable of type integer with the name exprValue.
         int exprValue;
-            
+
         // Declares a real variable with the name area.
         real area = 3.141528;
         exprValue = Area/3;
-                
+
         // The expression Area/3 is a real expression because
         // division is a real operator, and the result is 1.047176. This result is
         // automatically converted (actually truncated) to an integer with the value 1,
         // because exprValue is an integer.
     }
-            
+
     // An example of a real being converted to .NET System.Decimal.
     void AnotherMain(Args _args)
     {
         real real9;
         System.Decimal sysdec1;
-                
+
         // Direct assignments supported between these types.
         sysdec1 = 2.3456;
         real9 = sysdec1;
         info(strFmt("strFmt says real9 == %1", real9));
     }
-            
+
     /***
     Message (05:48:43 pm)
     strFmt says real9 == 2.35
     ***/
-            
+
     // An example of using reals in expressions.
     void myMethod()
     {
         // Two real variables are declared and initialized.
         real i = 2.5, j = 2.5;
-            
+
         // j is assigned the result of j * i, so j=6.25.
         j = j * i;
         if (j > (i * 2)) // If j > 5 
@@ -572,20 +571,20 @@ A **str** variable (a *string*) is a sequence of characters that are used as tex
     {
         // Declare a dynamic string of unlimited length.
         str unlimitedString;
-            
+
         // Declare a string with a maximum of 64 characters
         // in order to force a truncation, initialized to "A".
         str 64 maxLengthString = "A";
-            
+
         // Declare an array of 100 strings.
        str 30 hundredStrings[100];
-            
+
         // Using strings in expressions.
         void myMethod()
         {
             // Two strings are declared and initialized.
             str a="Hello", b="World";
-                
+
             // The concatenation of a, " " and b is printed in a window.
             print a+" "+b;
         }
@@ -601,7 +600,7 @@ The **timeOfDay** (time) data type is an integer value that represents the numbe
     {
         // Declaration of a timeOfDay variable, time1.
         timeOfDay time1;
-            
+
         // Declaration and initialization of a timeOfDay variable to 00:21:35.
         timeOfDay time2 = 1295;
     }
@@ -616,10 +615,10 @@ The **utcdatetime** data type combines the **date** type and the **timeOfDay** t
     {
         // Declaring a utcdatetime literal.
         utcdatetime myUtc2 = 1988-07-20T13:34:45;
-            
+
         // Another example of declaring a utcdatetime literal.
         int iDay = DateTimeUtil::day(1988-07-20T13:34:45);
-            
+
         // utcdatetime using a quoted string parameter into the DateTimeUtil::parse method.
         utcdatetime myUtc4 = DateTimeUtil::parse("1988-07-20T13:34:45");
     }
@@ -644,16 +643,16 @@ X++ supports only one-dimensional arrays. However, you can mimic the behavior of
         int myArray[10]; // Fixed-length array with 10 integers.
         myArray[4] = 1; // Accessing the 4th element in the array.
         myArray[0] = 0; // Resets all elements in intArray. 
-     
+
         // Dynamic array of integers.
         int intArray[];
-            
+
         // Dynamic array of variables of type Datatype.
         //Datatype arrayVariable[];
-            
+
         // Fixed-length arrays.
         boolean boolArray[100]; // Fixed-length array of booleans with 100 items.
-            
+
         // Two examples of Partly On Disk Arrays.
         // Dynamic integer array with only 100 elements in memory.
         int arrayVariable [ ,100];
@@ -684,7 +683,7 @@ However, X++ doesn't support this declaration. Instead, you can define a one-dim
         // Step 1: define a one-dimensional array with the number
         // of elements that is the product of the elements in each dimension.
         real earnings[10*3];
-            
+
         // Step 2: to refer to a specific element, such as earnings[i,j], write the following:
         // declare i and j (maybe) and assign the value to something
         int i = 1;
@@ -733,37 +732,37 @@ The **container** type resembles other constructs, such as arrays and collection
         myContainer = [1];
         myContainer += [2];
         myContainer4 = myContainer5;
-            
+
         // Declare a container.
         container cr3;
-            
+
         // Assign a literal container to a container variable.
         cr3 = [22, "blue"];
-            
+
         // Declare and assign a container.
         container cr2 = [1, "blue", true];
-            
+
         // Mimic container modification (implicitly creates a copy).
         cr3 += [16, strMyColorString];
         cr3 = conIns(cr3, 1, 3.14);
         cr3 = conPoke(cr3, 2, "violet");
-            
+
         // Assignment of a container (implicitly creates a copy).
         cr2 = cr3;
-            
+
         // Read a value from the container.
         str  myStr = conPeek(cr2, 1);
-            
+
         // One statement that does multiple assignments from a container.
         str myStr;
         int myInt;
         container cr4 = ["Hello", 22, 20\07\1988];
         [myStr, myInt] = cr4; // "Hello", 22
-            
+
         // Example of applying the = operator to a container. The example
         // initializes myContainer2 and myContainer33.
         myContainer2 = [2, "apple"];
-            
+
         // Next, you make a copy of myContainer33 and assign the copy to myContainer2.
         myContainer33 = [33, "grape"];
         myContainer2 = myContainer33;  // The container that myContainer2 had been holding is no longer available and cannot be recovered.
@@ -808,13 +807,13 @@ The **container** type resembles other constructs, such as arrays and collection
     Message (10:36:22 am)
     int4==11==(11), str7==222==(222)
     ***/
-        
+
     static void UseQuery()
     {
         // An example of how the compiler diagnoses attempts to store object in containers
         container c = [new Query()];   // This statement will cause the error message shown below.
         /*** Instance of type 'Query' cannot be added to a container. ***/
-            
+
         // An example of a code that won't cause an error message, but will
         // cause an error message to be thrown at runtime.
         anytype a = new Query();
@@ -868,7 +867,7 @@ By default, member variables that aren’t adorned with an explicit modifier are
             return Singleton::instance;
         }
     }
-     
+
     // The singleton ensures that only one instance of the class
     // will be called, which is consumed by the following. 
     {
@@ -1051,7 +1050,7 @@ This feature isn't implemented as a language construct. To create an EDT, follow
         // Example of declaring EDT variables where
         // a UserGroupID (integer) variable is declared and initialized to 1.
         UserGroupID groupID = 1;
-            
+
         // An Amount (real) variable is declared.
         Amount currency;
     }

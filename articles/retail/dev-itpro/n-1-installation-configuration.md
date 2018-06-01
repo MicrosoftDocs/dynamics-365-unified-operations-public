@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Retail
+ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 44351
 ms.search.region: Global
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Retail July 2017 update
 ---
 
 # Install N-1 components for use with Microsoft Dynamics 365 for Retail
+
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how you can use self-service to configure Connector for Microsoft Dynamics AX (previously **N-1**) in Microsoft Dynamics 365 for Retail headquarters, download it, and install it on the domain computers of a Microsoft Dynamics AX 2012 R3 environment, so that it can be used by previously deployed and running stores. Connector for Microsoft Dynamics AX consists of two separate installers. One installer is for the Retail Async Server Connector service, and the other installer is for the Real-time service for AX 2012 R3. When the installation is completed, a Microsoft Dynamics 365 for Retail environment will be used as the back-end infrastructure for currently installed and working stores that contain Enterprise POS and Retail Modern POS from AX 2012 R3. This topic also explains how to uninstall and troubleshoot these installations.
 

@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 # Order attributes
 
+[!include [banner](../../includes/banner.md)]
+
 Previously, the attribute framework supported attributes only in online orders. However, the framework has been extended so that it now supports attributes in cash-and-carry transactions, customer orders, and call center orders. This enhancement lets you edit and set attribute values for orders directly in Retail headquarters, the point of sale (POS), and the Commerce runtime (CRT). Retail headquarters now includes pages for editing and updating attribute values. Therefore, you can set the values for call center orders in Retail headquarters. Although no out-of-box user interface (UI) for setting attribute values is available in the POS, you can extend the POS to add a new UI. If you don't require a UI and just want to add business logic, you can add the business logic directly in CRT. You can create new attributes by using the Retail headquarters configurations. No database changes are required. Previously, you had to create new tables in Retail headquarters and the channel database, and then modify those tables.
 
 ## Why and when you should customer attributes

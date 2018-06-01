@@ -25,12 +25,14 @@ ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---
 
 # Nomenclature of product variant numbers and names
+
+[!include [banner](../includes/banner.md)]
 
 This topic describes how you can set up a product number nomenclature to replace the fixed [Product master number - Configuration - Size - Color - Style] format. The new nomenclature has a targeted format that includes the product master number, active product dimensions, and text delimiters of your choice. You can also create a nomenclature for product names. Finally, you can build a nomenclature to identify configurations that are created by the constraint-based product configurator. These nomenclatures can contain attributes of your choice.
 
@@ -193,7 +195,7 @@ Depending on the nomenclature, the system might try to assign a non-unique produ
 
 During one step of the configuration process, the system suggests a configuration value according to the nomenclature. In this step, you can manually change the configuration value. When you save the configuration, the system verifies that the configuration value is unique. If the value that you entered isn't unique, you receive an error message. To save the configuration, you must enter a unique configuration value.
 
-See also
+Additional resources
 --------
 
 [Create a product number nomenclature for predefined product variants](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X Classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter X.
 
@@ -7527,7 +7526,7 @@ General use of this method is discouraged, because the output format might chang
 
 #### Parameters
 
-  
+
 
 #### Return Value
 

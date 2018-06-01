@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data upgrade from AX 2012 to Dynamics 365 for Finance and Operations – Pre-upgrade checklist in AX 2012
+title: Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
 description: This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Microsoft Dynamics 365 for Finance and Operations.
-author: tariqbell
+author: robadawy
 manager: AnnBe
-ms.date: 05/30/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,26 +24,25 @@ ms.custom: 106163
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: robadawy
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Data upgrade – Pre-upgrade checklist in AX 2012
+# Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[upgrade banner](../includes/upgrade-banner.md)]
+[!include [upgrade banner](../includes/upgrade-banner.md)]
 
 This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Microsoft Dynamics 365 for Finance and Operations.
 
-> [!NOTE]
-> This topic applies to Microsoft Dynamics AX 2012 R3.
-
 ## Installation
+Use the pre-upgrade checklist to enter data that will be required for the upgrade procedure. 
 
-For AX 2012 R3 customers, download the AX 2012 R3 hotfix KB 4035163. For earlier versions of AX 2012, upgrade is not supported yet.
+- If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255)
+- if upgrading from AX 2012 R2, install [KB 4048614](https://go.microsoft.com/fwlink/?linkid=869025)
 
 ## Prepare model metadata
 
@@ -67,27 +66,25 @@ Another goal during data upgrade is to preserve security role assignments. This 
 
 If the process is successful, the task is marked as completed.
 
-## Setup user mapping
+## Set up user mapping
 
 In AX 2012, users are authenticated against an on-premises Active Directory server. However, in Finance and Operations, users are authenticated against Azure Active Directory (Azure AD). This task provides a form where you can map existing AX 2012 users to equivalent Azure AD users. The AX 2012 users will then be able to access Finance and Operations.
 
-1. In the Finance and Operations data upgrade checklist, click **Setup user mapping**.
-1. The **User info email mapping** form appears. Follow one of these steps to fill in the grid:
+1. In the Finance and Operations data upgrade checklist, click **Set up user mapping**.
+2. The **User info email mapping** form appears. Follow one of these steps to fill in the grid:
+   - Import users from AX 2012, and then manually fill in the Azure AD email address:
+       1. Click **Import from AX**. The grid is filled with existing users.
+       1. For each user, enter the corresponding Azure AD email address, as shown in the following illustration.
 
-    - Import users from AX 2012, and then manually fill in the Azure AD email address:
+           ![Azure AD email addresses for AX 2012 users](media/userInfoEmailMapping.png)
 
-        1. Click **Import from AX**. The grid is filled with existing users.
-        1. For each user, enter the corresponding Azure AD email address, as shown in the following illustration.
+   - Import users from a file. This option is faster. We recommend that you use this option when many users must be updated.
 
-            ![Azure AD email addresses for AX 2012 users](media/userInfoEmailMapping.png)
+     1. In a comma-separated values (CSV) file, create the mapping between AX 2012 users and Azure AD email addresses. Your IT department can export a similar mapping from your on-premises Active Directory Domain Services.
 
-    - Import users from a file. This option is faster. We recommend that you use this option when many users must be updated.
+         ![CSV file with a mapping of AX 2012 users to Azure AD email addresses](media/userToAzureADEmailAddressMapping.png)
 
-        1. In a comma-separated values (CSV) file, create the mapping between AX 2012 users and Azure AD email addresses. Your IT department can export a similar mapping from your on-premises Active Directory Domain Services.
-
-            ![CSV file with a mapping of AX 2012 users to Azure AD email addresses](media/userToAzureADEmailAddressMapping.png)
-
-        1. After the file is ready, click **Import from file**, browse to the file, and import it.
+     2. After the file is ready, click **Import from file**, browse to the file, and import it.
 
         The grid should be filled with the mappings that you specified in the file.
 

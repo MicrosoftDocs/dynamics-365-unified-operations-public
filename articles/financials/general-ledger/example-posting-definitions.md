@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Posting definition examples
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides examples that show how posting definitions are used for purchase order encumbrances and budget appropriations.
 
@@ -46,7 +45,7 @@ Before you read this topic, you should be familiar with posting definitions and 
 
 When a match occurs between the accounts and dimension values in the **Match criteria** pane for the posting definition and the accounts and dimension values on the transaction, ledger entries are generated based on the **Generated entries** pane for the posting definition. 
 > [!NOTE]
-> To associate a posting definition with a specific transaction type, use the **Transaction posting definitions** page. After you associate a posting definition with a transaction type and select **Use posting definitions** on the **General ledger parameters** page, all transactions of the selected transaction type must use posting definitions.
+> To associate a posting definition with a specific transaction type, use the **Transaction posting definitions** page. After you associate a posting definition with a transaction type and select **Use posting definitions** on the **General ledger parameters** page, all transactions of the selected transaction type must use posting definitions.
 
 ## Example: Purchase order encumbrances
 When you enable encumbrance processing by selecting **Enable encumbrance process** on the **General ledger parameters** page, posting definitions must be used to record encumbrances to the general ledger for any accounts that should be reserved. In most cases, all expense accounts are reserved on the balance sheet. 
@@ -61,7 +60,7 @@ All voucher transactions for purchase order encumbrances must balance (that is, 
 |-------------------------|----------------------|----------|
 | Account Structure - P&L | \*                   | 1        |
 
-*A blank value in the **Match account number** field means that all matching accounts in the defined account structure are part of the matching rule.
+<em>A blank value in the **Match account number</em>* field means that all matching accounts in the defined account structure are part of the matching rule.
 
 ### Posting definition – Generated entries
 
@@ -102,7 +101,7 @@ When budget appropriations and posting definitions are enabled, the budget regis
 |-------------------------|----------------------|----------|
 | Account Structure - P&L | \*                   | 1        |
 
-*A blank value in the **Match account number** field means that all matching accounts in the defined account structure are part of the matching rule.
+<em>A blank value in the **Match account number</em>* field means that all matching accounts in the defined account structure are part of the matching rule.
 
 ### Posting definition – Generated entries
 

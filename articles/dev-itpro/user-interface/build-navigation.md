@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build navigation
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 In this tutorial, you will add navigational elements to a workspace and the navigation pane.
 
 Prerequisites
 -------------
 
-For this tutorial, you need to access the environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Instances](..\dev-tools\access-instances.md).
+For this tutorial, you need to access the environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Instances](../dev-tools/access-instances.md).
 
 ## Key concepts
 -   A *workspace* is an overview page that is specific to a particular subject area. Workspaces are common to all users. In this tutorial, you will add content into an existing workspace.
@@ -48,14 +47,14 @@ For this tutorial, you need to access the environment using Remote Desktop, and 
 -   *Tiles* are securable objects that can be shown on a workspace or the dashboard. They can be secured by using menu items.
 
 ## Setup
-If this is the first tutorial that you are working on, review [Access Instances](..\dev-tools\access-instances.md) and make sure that you provision your administrator user if you are working on a local VM.
+If this is the first tutorial that you are working on, review [Access Instances](../dev-tools/access-instances.md) and make sure that you provision your administrator user if you are working on a local VM.
 
 ### Import the tutorial project
 
 If you have already imported the Fleet management tutorial project, skip to the next section.
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:\\**, and unzip it.
-2.  In Visual Studio, on the **Finance and Operations** menu, click **Import Project**.
+2.  In Visual Studio, on the **Finance and Operations** menu, click **Import Project**.
 3.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
 4.  In the **Select the file to import** window, browse to **C:\FMLab**, click **FMTutorialDataModel.axpp,** and then click **Open**.
 5.  In the Project file location text box, enter **C:\FMLab.**
@@ -76,7 +75,7 @@ First, we will add a new tile to the form FMTClerkWorkspace.
 2.  In the designer, expand **PanoramaBody**.
 3.  Right-click **TileContainer**, and then click **New** &gt; **Tile Button.**
 4.  Specify the following properties for the new tile button.
-    
+
     | **Property** | **Value**           |
     |--------------|---------------------|
     | Text         | Test tile           |
@@ -87,7 +86,7 @@ First, we will add a new tile to the form FMTClerkWorkspace.
 6.  Right-click **FMTutorial**, and then click **Rebuild**.
 7.  Press **Ctrl+F5** to run the project.
 
-After you build and run the project, the Fleet management clerk workspace will launch. The new tile named, **Test tile**, that you created will be included in the first section of the workspace, at the end of the set of tiles. 
+After you build and run the project, the Fleet management clerk workspace will launch. The new tile named, **Test tile**, that you created will be included in the first section of the workspace, at the end of the set of tiles. 
 
 [![Nav1](./media/nav1.png)](./media/nav1.png) 
 
@@ -134,7 +133,7 @@ Next, we will add the FMTClerkWorkspace form to the navigation pane. We will do 
 7.  Press **Ctrl+F5** to run the project. After you build and run the project, the navigation pane will contain a link to the new workspace. Open the navigation pane by clicking the navigation pane button (three lines) at the top right of the application window. 
 
     [![Nav2](./media/nav2.png)](./media/nav2.png)
-    
+
 8.  When you open the navigation pane, select **All workspaces**, and scroll down in the list after it opens. You should see the following new Reservation management tutorial workspace in the list. 
 
     [![Nav3](./media/nav3.png)](./media/nav3.png)
@@ -182,11 +181,11 @@ Now you’ll add a new main menu section that contains a tile that points to the
 19. Go to the main menu section you just modified. Open the navigation pane and scroll down until you see the new top-level **Fleet management tutorial** menu. You may need to clear your browser cache by pressing **Ctrl+F5**. 
 
     [![Nav4](./media/nav4.png)](./media/nav4.png)
-    
+
 20. Click **Fleet management tutorial** &gt; **Workspaces** to expand that submenu. Your navigation pane should look like the following. 
 
     [![Nav5](./media/nav5.png)](./media/nav5.png) 
-    
+
     If you click on the **Common** submenu, you will see the menu item that you modeled there. You can click either of these links to check that you have set up the references correctly. If you have set up the references correctly, the tutorial workspace you’re working on should open when clicked on.
 
 

@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 9
 
 # Add an enum value
 
+[!include [banner](../includes/banner.md)]
+
 To add new values to an enum, you should extend the enum. Any enum that is marked as **Extensible** (**IsExtensible = true**) can be extended. You can find the extensibility information in the **Properties** window in Microsoft Visual Studio, as shown in the following illustration.
 
 ![Extensible enum](media/AddEnum01.png)
@@ -51,7 +53,7 @@ Usually, an extended enum must have its own implementation wherever it's used. L
 
 + If the enum has an associated class hierarchy that handles the enum, create a subclass for the extended enum–specific implementation, and uptake the construct on the base class as required. For more information, see [Register a subclass for factory methods](register-subclass-factory-methods.md).
 	
-# Extend an enum
+## Extend an enum
 
 There are two ways to extend an enum:
 

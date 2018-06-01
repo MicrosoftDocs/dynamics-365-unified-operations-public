@@ -5,7 +5,7 @@ title: Peripheral simulator for Retail
 description: This topic describes the peripheral simulator tool that is provided with Dynamics 365 for Retail.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Peripheral simulator for Retail
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The peripheral simulator for Retail is a utility that Microsoft provides as part of Microsoft Dynamics 365 for Retail and as a standalone utility. The utility has two primary components, a *virtual peripheral simulator* and a *point of sale (POS) simulator*.
 
@@ -95,26 +95,26 @@ You can use the peripheral simulator to test product bar codes, receipt formats,
 3. Enter values in the **Profile number** and **Description** fields.
 4. Use the following table to set up the virtual devices that must be tested. Here is an explanation of the columns in the table:
 
-    - **Device** – This column gives the name of the FastTab where you set up the device.
-    - **Device type** – This column gives the value that you select in the field that is labeled with the name of the device.
-    - **Device name** – This column gives the exact value that you enter for the device name.
+   - **Device** – This column gives the name of the FastTab where you set up the device.
+   - **Device type** – This column gives the value that you select in the field that is labeled with the name of the device.
+   - **Device name** – This column gives the exact value that you enter for the device name.
 
-    > [!IMPORTANT]
-    > The device names that are given here are required, because the hardware station uses these specific names to address the devices. If you don't use the following specific names, the device won't be usable.
+     > [!IMPORTANT]
+     > The device names that are given here are required, because the hardware station uses these specific names to address the devices. If you don't use the following specific names, the device won't be usable.
 
-    No specific setup in the hardware profile is required in order to simulate keyboard wedge events from the bar code scanner and MSR.
+     No specific setup in the hardware profile is required in order to simulate keyboard wedge events from the bar code scanner and MSR.
 
-    | Device            | Device type | Device name              |
-    |-------------------|-------------|--------------------------|
-    | Printer           | OPOS        | MockOPOSPrinter          |
-    | Line display      | OPOS        | MockOPOSLineDisplay      |
-    | MSR               | OPOS        | MockOPOSMSR              |
-    | Drawer            | OPOS        | MockOPOSDrawer1          |
-    | Drawer2           | OPOS        | MockOPOSDrawers          |
-    | Scanner           | OPOS        | MockOPOSScanner          |
-    | Scale             | OPOS        | MockOPOSScale            |
-    | PIN Pad           | OPOS        | MockOPOSPinPad           |
-    | Signature capture | OPOS        | MockOPOSSignatureCapture |
+     | Device            | Device type | Device name              |
+     |-------------------|-------------|--------------------------|
+     | Printer           | OPOS        | MockOPOSPrinter          |
+     | Line display      | OPOS        | MockOPOSLineDisplay      |
+     | MSR               | OPOS        | MockOPOSMSR              |
+     | Drawer            | OPOS        | MockOPOSDrawer1          |
+     | Drawer2           | OPOS        | MockOPOSDrawers          |
+     | Scanner           | OPOS        | MockOPOSScanner          |
+     | Scale             | OPOS        | MockOPOSScale            |
+     | PIN Pad           | OPOS        | MockOPOSPinPad           |
+     | Signature capture | OPOS        | MockOPOSSignatureCapture |
 
 #### Assign the hardware profile to a register
 
@@ -229,6 +229,8 @@ Changes to configured cash drawers aren't effective until a new shift is created
 
 Sometimes, if a manufacturer's driver is installed after the common control objects from Monroe Consulting Services, the driver can cause the common control objects to stop working correctly. In this case, you should reinstall the common control objects.
 
+At install time, it's possible that certain assemblies related to the virtual peripheral simulator were registered incorrectly. This issue is often associated with an 'OPOS_E_CLOSED' error when attempting to use a virtual device. This can be corrected by running the Windows Assembly Registration tool. To register the assembly (called Microsoft.Dynamics.Commerce.VirtualPeripherals.ServiceObjects.dll), open a command prompt as administrator and run 'regasm /codebase "C:\Program Files (x86)\Microsoft Dynamics 365\70\Peripheral simulator for Retail\Microsoft.Dynamics.Commerce.VirtualPeripherals.ServiceObjects.dll"'.
+
 ## POS simulator
 
 The POS simulator lets device manufacturers, independent software vendors (ISVs), and retailers test peripheral devices without having to deploy the POS. By using the same business logic for retail peripherals as MPOS and the standalone hardware station, the POS simulator can determine device driver compatibility with the POS as a standalone utility. Therefore, device selection can occur independently of POS setup and deployment.
@@ -253,7 +255,7 @@ The POS simulator supports the following devices:
 - Payment terminal
 
     > [!NOTE]
-    > A payment terminal requires that a payment connector be present. For more information, see [Implementing a payment connector and payment device (white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx).
+    > A payment terminal requires that a payment connector be present. For more information, see [Payment integration with a payment terminal](end-to-end-payment-extension.md).
 
 Below the list of supported devices, there is a **Settings** tab. You can use the **Settings** tab to specify how the POS simulator should communicate with the devices that are being tested. If **Runtime** is selected, the method that the POS simulator uses to communicate with the device resembles the method that MPOS that has a built-in hardware station communicates. If **Win32** is selected, the POS simulator communicates directly with the device. This communication method resembles the method that a standalone hardware station communicates.
 
@@ -533,6 +535,6 @@ Successful logs should be sent to drpc@microsoft.com. Include the manufacturer�
 
 For support if you're performing compatibility tests, and for other inquiries, send an email to drpc@microsoft.com.
 
-## See also
+## Additional resources
 
 [Retail peripherals overview](../retail-peripherals-overview.md)

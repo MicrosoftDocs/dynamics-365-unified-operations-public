@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Segmented entry control metadata
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Describes the design-time metadata properties for Segmented Entry controls.
 
@@ -41,23 +40,23 @@ The custom properties for the Segmented Entry control are found under the Contro
 
 [![SEC Property Sheet Example](./media/10.jpg)](./media/10.jpg) 
 
-Certain properties may be non-editable based on the Controller class that is selected. This is because only certain properties are relevant for each of the various controller classes.  See the table at the bottom of this article for more details.
+Certain properties may be non-editable based on the Controller class that is selected. This is because only certain properties are relevant for each of the various controller classes.  See the table at the bottom of this article for more details.
 
 ##### Property details
 
 |                                   |                                                                                   |                                                                                                                                                                                                              |
 |-----------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Property**                      | **Valid values**                                                                  | **Usage**                                                                                                                                                                                                    |
-| Account Type Field                | A field from the datasource.                                                      | Determines the type of account used. Typically use for journal entry from a multi-segment ledger account to single segment values from other backing tables, such as Cust, Vend, Bank, Project, and similar. |
+| Account Type Field                | A field from the datasource.                                                      | Determines the type of account used. Typically use for journal entry from a multi-segment ledger account to single segment values from other backing tables, such as Cust, Vend, Bank, Project, and similar. |
 | Controller Class                  | One of 7 Controller classes. For example LedgerDimensionDefaultAccountController. | Determines the pattern and behavior of the Segmented Entry control.                                                                                                                                          |
 | Include Financial Accounts        | NoYes                                                                             | Determines if Main accounts that are Financial accounts are valid for use.                                                                                                                                   |
 | Include Total Accounts            | NoYes                                                                             | Determines if Main accounts of type Total are valid for use.                                                                                                                                                 |
 | Is Default Account                | TrueFalse                                                                         | For a Dynamic account, determines if the account should be a default or full account.                                                                                                                        |
-| Lock Main Account Segment         | NoYes                                                                             | Controls whether the Main account segment is locked.  Typically used in journals and distributions based on configuration.                                                                                   |
+| Lock Main Account Segment         | NoYes                                                                             | Controls whether the Main account segment is locked.  Typically used in journals and distributions based on configuration.                                                                                   |
 | Posting Type                      | A value from the LedgerPostingType enumeration.                                   | The Main account is validated to see if the posting type is allowed to be used with that account.                                                                                                            |
 | Validate Blocked For Manual Entry | NoYes                                                                             | Determines if the 'Blocked for Manual Entry' status on the dimension should be respected.                                                                                                                    |
 
-  This table shows which properties are valid for each Controller type (marked with 'X' means valid).
+  This table shows which properties are valid for each Controller type (marked with 'X' means valid).
 
 ## Validate Blocked For Manual Entry 
 
@@ -83,7 +82,7 @@ DimensionDynamicAccount: Yes
 
 LedgerDimensionAccount: No
 
-LedgerDimensionDefaultAccount​: No
+LedgerDimensionDefaultAccount : No
 
 LedgerDimensionAccountAlias: No
 
@@ -97,7 +96,7 @@ DimensionDynamicAccount: Yes
 
 LedgerDimensionAccount: No
 
-LedgerDimensionDefaultAccount​: No
+LedgerDimensionDefaultAccount : No
 
 LedgerDimensionAccountAlias: No
 
@@ -125,7 +124,7 @@ DimensionDynamicAccount: Yes
 
 LedgerDimensionAccount: Yes
 
-LedgerDimensionDefaultAccount​: Yes 
+LedgerDimensionDefaultAccount : Yes 
 
 LedgerDimensionAccountAlias: Yes
 
@@ -139,7 +138,7 @@ DimensionDynamicAccount: Yes
 
 LedgerDimensionAccount: No
 
-LedgerDimensionDefaultAccount​: Yes
+LedgerDimensionDefaultAccount : Yes
 
 LedgerDimensionAccountAlias: No
 
@@ -153,12 +152,12 @@ DimensionDynamicAccount: Yes
 
 LedgerDimensionAccount: No
 
-LedgerDimensionDefaultAccount​: Yes
+LedgerDimensionDefaultAccount : Yes
 
 LedgerDimensionAccountAlias: No
- 
 
-See also
+
+Additional resources
 --------
 
 [Segmented Entry control dialog support](segmented-entry-control-dialog-support.md)

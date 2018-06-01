@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # Develop and deploy custom models to on-premises environments
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to develop customizations and extensions, and deploy them to an on-premises environment. On-premises environments are also referred to as local business data (LBD) environments. This topic focuses on the ways that this process differs from the process in a run-time cloud environment.
 
@@ -90,7 +90,7 @@ When your deployable package is ready, follow these steps to upload it to your L
 3. Click the plus sign (**+**) to upload the deployable package. 
 
 ## Configure an on-premises runtime environment that uses your code
-As of the July 2017 release of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), you can apply your customizations and extensions only during the deployment of a sandbox or production environment.
+As of the July 2017 release of Microsoft Dynamics 365 for Finance and Operations (on-premises), you can apply your customizations and extensions only during the deployment of a sandbox or production environment.
 
 1. In your LCS project, click **Configure** to deploy your environment.
 

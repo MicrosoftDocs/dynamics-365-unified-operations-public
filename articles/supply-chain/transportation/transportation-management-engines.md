@@ -3,7 +3,7 @@
 
 title: Transportation management engines
 description: Transportation management engines define the logic that is used to generate and process transportation rates in Transportation management. 
-author: YuyuScheller
+author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateE
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: bis
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Transportation management engines
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Transportation management engines define the logic that is used to generate and process transportation rates in Transportation management. 
 
@@ -51,7 +50,7 @@ The following table shows the transportation management engines that are availab
 | **Zone engine**                  | Calculates the zone based on the current address and calculates the number of zones that must be crossed in order to travel from address A to address B.                                                                                                                                                                    |
 | **Freight bill type**            | Standardizes the freight invoice and the freight bill lines and is used for automatic freight bill matching.                                                                                                                                                                                                                |
 
- 
+
 What engines must be configured to rate a shipment?
 ---------------------------------------------------
 
@@ -64,23 +63,24 @@ A transportation management engine requires that you set up initialization data 
 -   Simple configuration data.
 
 In most cases, you can click the **Parameters** button in the transportation management engine’s setup forms to configure the initialization data. **Example of the configuration of a rate engine that references a mileage engine** The following example shows the setup that is required for a rate engine that is based on the .NET engine type Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine and references a mileage engine.
-| Parameter             | Description                                                                                                                                                                                                                                                                                                                                                                      |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | The .NET type that interprets the rate base assignment data for a particular schema. The syntax of the parameter value consists of two segments delimited by a vertical bar (|). The first segment contains the assembly name that defines the assigner type. The second segment defines the fully-qualified name of the assigner type. This includes the namespace of the type. |
-| *MileageEngineCode*   | Mileage engine code that identifies the mileage engine record in the Microsoft Dynamics 365 for Finance and Operations database.                                                                                                                                                                                                                                                             |
-| *ApportionmentEngine* | Generic engine code that identifies the apportionment engine in the Microsoft Dynamics 365 for Finance and Operations database.                                                                                                                                                                                                                                                              |
 
- 
+|          Parameter           |                                                                                  Description                                                                                  |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <em>RateBaseAssigner</em>   | The .NET type that interprets the rate base assignment data for a particular schema. The syntax of the parameter value consists of two segments delimited by a vertical bar ( |
+|  <em>MileageEngineCode</em>  |                       Mileage engine code that identifies the mileage engine record in the Microsoft Dynamics 365 for Finance and Operations database.                        |
+| <em>ApportionmentEngine</em> |                        Generic engine code that identifies the apportionment engine in the Microsoft Dynamics 365 for Finance and Operations database.                        |
+
 How is metadata used in transportation management engines?
 ----------------------------------------------------------
 
-Transportation management engines that rely on data that is defined in Dynamics 365 for Finance and Operations may use different data schemas. The transportation management system enables different transportation management engines to use the same generic physical database tables. To make sure that run-time interpretation of engine data is correct, you can define metadata for the database tables. This reduces the cost of building new transportation management engines because additional table and form structures are not required in Operations.
+Transportation management engines that rely on data that is defined in Dynamics 365 for Finance and Operations may use different data schemas. The transportation management system enables different transportation management engines to use the same generic physical database tables. To make sure that run-time interpretation of engine data is correct, you can define metadata for the database tables. This reduces the cost of building new transportation management engines because additional table and form structures are not required in Operations.
 
 ## What can be used as search data in rate calculations?
 The data that you use when you calculate rates in Microsoft Dynamics 365 for Finance and Operations is controlled by the metadata configuration. For example, if you want to search for rates based on postal codes you must set up metadata based on the lookup type of a postal code.
 
 ## Do all engine configurations require metadata?
 No, transportation management engines that are used to retrieve the data that is required for rate calculation from external systems don’t need metadata. The rate data for these engines can be retrieved from external transportation carrier systems, usually through a web service. For example, can use a mileage engine that retrieves data directly from Bing maps so that you don’t need a metadata for this engine.
+
 | **Note**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | The transportation management engines that are delivered with Finance and Operations rely on data that is retrieved from the application. Engines that connect to external systems are not included with Operations. However, the engine-based extensibility model lets you build extensions using Microsoft Dynamics 365 for Finance and Operations Visual Studio Tools. |

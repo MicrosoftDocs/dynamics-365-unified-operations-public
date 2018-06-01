@@ -5,7 +5,7 @@ title: Planned maintenance window FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance windows.
 author: robadawy
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 # What is a planned maintenance window?
+
+[!include [banner](../includes/banner.md)]
+
 A planned maintenance window is the timeframe that Microsoft has scheduled to apply critical updates to your cloud service.
 
 ### How does a planned maintenance window work?
@@ -43,12 +46,12 @@ At this time, during operation system-level updates, LCS does not indicate that 
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
 - NAM: 2 AM to 10 AM
 - SAM: 12 AM to 8 AM
-- EMEA: 6 PM to 2 AM
+- EMEA: 10 PM to 6 AM
 - CAN: 2 AM to 10 AM
 - APAC: 12 PM to 9 PM
 
 ### What updates are applied in the planned maintenance window?
-During the planned maintenance window, operating system–level updates, and critical security and reliability platform updates are applied.
+During the planned maintenance window, operating system–level updates, and critical security and reliability platform updates are applied. For more information about the updates that will be applied, see [Microsoft Security Bulletins](https://technet.microsoft.com/en-us/security/bulletins.aspx).  
 
 ### How long is the maintenance window?
 Operating system–level updates are completed in approximately one hour.
@@ -87,10 +90,12 @@ Before the update is applied, Microsoft runs validations to make sure that there
 
 After the update is applied, Microsoft validates that it was successful, and that the environment is running as expected. As part of this validation, Microsoft runs some basic verification tests to make sure that Microsoft Dynamics 365 for Finance and Operations can be used to complete transactions.
 
-### How do I reschedule the planned maintenance?
-You can reschedule planned maintenance by filing a support ticket with Microsoft to request a change in the schedule.
+### Can I reschedule the planned maintenance?
+We do not offer an option to reschedule a planned maintenance. However, you can select to be excluded from the maintenance cycle for the current month. 
+We plan to add this option into LCS so that you can reschedule an update directly through LCS. 
 
-We plan to add this option into LCS so that you can reschedule an update directly through LCS.
+### How do I opt out of the the current maintenance cycle?
+To opt out of the current maintenance cycle, file a support ticket with Microsoft. Your environment will be excluded from the maintenance cycle for the current month. However, your environment will be updated the next month.
 
 ### How do I report an issue that is identified during validation of the updates that were applied to the environment?
 To report an issue that is identified during update validation, file a support ticket with Microsoft and append the title with ‘Planned Maintenance Window’.

@@ -5,7 +5,7 @@ title: Expand Application Suite report data sets
 description: This topic shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. 
 author: TJVass
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,14 +32,13 @@ ms.dyn365.ops.version: Platform update 3
 
 # Expand Application Suite report data sets
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. 
 
-Microsoft Dynamics 365 for Finance and Operations offers an expanded set of tools to support custom solutions. This topic focuses on the expansion of an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. You use custom delegate handlers and table extensions to include additional field data and/or calculations. You don't have to over-layer the Application Suite. You then create custom designs that replace the standard application solutions and present the data to users. The following illustration shows a typical application customization, as described in this topic.
+Microsoft Dynamics 365 for Finance and Operations offers an expanded set of tools to support custom solutions. This topic focuses on the expansion of an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. You use custom delegate handlers and table extensions to include additional field data and/or calculations. You don't have to over-layer the Application Suite. You then create custom designs that replace the standard application solutions and present the data to users. The following illustration shows a typical application customization, as described in this topic.
 
-[![extendingdatasets](./media/extendingdatasets.png)](./media/extendingdatasets.png)  
+[![extendingdatasets](./media/extendingdatasets.png)](./media/extendingdatasets.png)  
 
 ## What's important to know?
 There are a few basic assumptions that you should be aware of before you apply this solution.
@@ -61,9 +60,9 @@ The following walkthrough shows the process of expanding an existing application
 
 [![Custom solution (after customization)](./media/fleet-extension-rentals-list-after-1024x672.png)](./media/fleet-extension-rentals-list-after.png)
 
-1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](..\extensibility\customization-overlayering-extensions.md). For this example, add a custom report to the **Fleet Management Extensions** model.
+1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md). For this example, add a custom report to the **Fleet Management Extensions** model.
 2.  **Create a new project in Microsoft Visual Studio.** Make sure that the project is associated with your extension model. The following illustration shows the project settings. 
-    
+
     [![Project settings in Visual Studio](./media/fleet-extension-vs-project-settings.png)](./media/fleet-extension-vs-project-settings.png)
 
 3.  **Add a table extension to store the custom report data.** Find the temporary cache for the **TmpFMRentalsByCust** data set that is populated by the RDP class, and create an extension in your model. Define the fields that will be used to store the data for the report server, and then click **Save** to save your changes. The following illustration shows the table extension that is required for this example. 
@@ -76,7 +75,7 @@ The following walkthrough shows the process of expanding an existing application
 7.  **Customize the report design.** The designer offers a free-form design surface that you can use to create the custom solution. The following illustration shows the custom design that is used for this example. 
 
     [![Custom design for this example](./media/fleet-extension-custom-design.png)](./media/fleet-extension-custom-design.png)
-    
+
 8.  **Add a new report handler (X++) class to the project.** Give the class a name that appropriately describes that it's a handler for an existing application report. For this example, rename the class **FERentalsByCustomerHandler** to distinguish it from other report handlers.
 9.  **Add a PostHandler method to begin to use your custom report.** In this example, extend the controller class in the standard solution, **FMRentalsByCustController**, by using the following code.
 
@@ -97,18 +96,19 @@ The following walkthrough shows the process of expanding an existing application
 
             class FERentalsByCustomerHandler
             {
-                [PostHandlerFor(classStr(FMRentalsByCustDP), methodstr(FMRentalsByCustDP, getTmpFMRentalsByCust))]
+                [PostHandlerFor(classStr(FMRentalsByCustDP), methodstr(FMRentalsByCustDP, processReport))]
                 public static void TmpTablePostHandler(XppPrePostArgs arguments)
                 {
-                    TmpFMRentalsByCust tmpTable = arguments.getReturnValue();
+                    FMRentalsByCustDP dpInstance = arguments.getThis() as FMRentalsByCustDP;
+                    TmpFMRentalsByCust tmpTable = dpInstance.getTmpFMRentalsByCust();
                     FMRentalCharge chargeTable;
                     ttsbegin;
-                        while select forUpdate tmpTable
-                        {
-                            select * from chargeTable where chargeTable.RentalId == tmpTable.RentalId;
-                            tmpTable.ChargeDesc = chargeTable.Description;
-                            tmpTable.update();
-                        }
+                    while select forUpdate tmpTable
+                    {
+                        select * from chargeTable where chargeTable.RentalId == tmpTable.RentalId;
+                        tmpTable.ChargeDesc = chargeTable.Description;
+                        tmpTable.update();
+                    }
                     ttscommit;
                 }
             }

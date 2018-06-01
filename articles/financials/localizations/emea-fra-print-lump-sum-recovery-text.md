@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: CustFormletterParameters, CustInvoiceJournal
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -31,8 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Print lump sum recovery text on a customer invoice
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about how to print a lump sum recovery text that shows the penalty amount on customer invoices for France.
 

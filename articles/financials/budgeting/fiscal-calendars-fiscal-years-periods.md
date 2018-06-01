@@ -5,7 +5,7 @@ title: Fiscal calendars, fiscal years, and periods
 description: This article discusses fiscal calendars, fiscal years and periods and how to utilize them for legal entities, fixed assets and budgeting.
 author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: FiscalCalendars
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25851
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fiscal calendars, fiscal years, and periods
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article discusses fiscal calendars, fiscal years and periods and how to utilize them for legal entities, fixed assets and budgeting.
 
@@ -64,7 +63,7 @@ You can select a fiscal calendar for a value model or depreciation book, and tha
 Budget cycles are the length of time during which a budget is used. Budget cycles can include part of a fiscal year or multiple fiscal years, such as a biennial budget cycle of two years or a triennial budget cycle of three years. The budget cycle time span defines the number of periods that are included in the budget cycle. To specify the budget cycle time span, use the Budget cycle time spans page.
 
 ## Maintain periods for your organization
-You can use the Ledger calendar page to view the details of the fiscal calendar, fiscal years, and periods used by your organization. You can also change the status of the periods and select which users can post accounting transactions to periods. For example, at the start of a new period, you might want a group of users to finish posting financial transactions in the previous period, while other groups work only in the new period.
+You can use the Ledger calendar page to view the details of the fiscal calendar, fiscal years, and periods used by your organization. You can also change the status of the periods and select which users can post accounting transactions to periods. For example, at the start of a new period, you might want a group of users to finish posting financial transactions in the previous period, while other groups work only in the new period.
 
 
 

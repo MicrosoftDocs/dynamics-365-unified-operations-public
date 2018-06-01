@@ -14,7 +14,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: SystemParameters
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
@@ -33,15 +33,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Help system overview
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 
 > [!NOTE] 
-> The following products are closely related: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product.
+> The following products are closely related: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product.
 
 The Help system is shared by the following products:
-- Dynamics 365 for Finance and Operations, Enterprise edition
+- Dynamics 365 for Finance and Operations
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -65,7 +65,7 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations]
 
 -   **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps to ensure that you have access to the latest technical information.
 -   **Content that is written by experts** – The site provides a richer set of product documentation that can be enhanced by community members both inside and outside Microsoft.
--   **Access to different types of content** – The site lets you quickly access different types of content about Finance and Operations, such as Microsoft Office Mix presentations, task guides, videos, and topics.
+-   **Access to different types of content** – The site lets you quickly access different types of content about Finance and Operations, such as task guides, videos, and topics.
 -   **Content that supports your business processes** – The site includes business process–focused content that takes advantage of the Business Process Modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
 
 ### Searching on docs.microsoft.com
@@ -81,6 +81,11 @@ Finance and Operations, Retail, and Talent all share a single table of contents 
 
 ### Follow a topic
 To follow a topic, click the +Follow button below the comment box. You will need to log in to follow the topic. See [Leave us a comment](#leave-us-a-comment) for details.  
+
+### Use an RSS feed
+To subscribe to an RSS feed of all updates to the Unified Operations content, use the following link from a browser that supports RSS feeds, such as Internet Explorer, or an RSS feed manager: 
+
+[RSS feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### Give feedback 
 We really like customer feedback. You can either comment, or suggest changes to our content through GitHub.
@@ -116,7 +121,7 @@ For more information, please refer to our contributor's guide: https://github.co
 
 > [!NOTE]
 > We will only be accepting contributions to our English repositories at this time.  
-> We don't accept Issues reported through GitHub--be sure to use a pull request for content suggestions. Product and feature feedback is best handled through the Dynamics 365 Ideas Portal: https://ideas.dynamics.com/ideas/. 
+> We don't accept Issues reported through GitHub--be sure to use a pull request for content suggestions. Product and feature feedback is best handled through the Dynamics 365 Ideas Portal: https://experience.dynamics.com/ideas/. 
 
 
 ## Task guides
@@ -205,7 +210,7 @@ The following table lists our websites. Our content websites are organized to su
 
 
 
-See also
+Additional resources
 --------
 [Finance and Operations help system (downloadable fact sheet)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 

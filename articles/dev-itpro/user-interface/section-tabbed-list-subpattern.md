@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Section Tabbed List subpattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Section Tabbed List subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for a panorama section that contains a set of vertical tabs, each of which contains a filtered list of data.
 
@@ -58,7 +57,7 @@ This pattern didn't exist for Microsoft Dynamics AX 2012.
 
         - TargetForm (FormPart)
 
-Each Form Part points to a form that contains the content for the section. Each of these forms should use one of the Form Part Section List form patterns.
+Each Form Part points to a form that contains the content for the section. Each of these forms should use one of the Form Part Section List form patterns.
 
 ### Core components
 
@@ -70,7 +69,7 @@ Apply Section Tabbed List to the appropriate tab page in the workspace.
 -   [Form Part Section List](section-list-form-pattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 -   At least one list should be present in the tabbed list section.
 -   Each Form Part Control should point to a form that uses one of the [Form Part Section List](section-list-form-pattern.md) patterns.
@@ -83,7 +82,7 @@ Form: **PurchOrderMaintainWorkspace** (**All workspaces** &gt; **Purchase order 
 ## Appendix
 ### Frequently asked questions
 
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
+This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 ### Open issues
 

@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # AsyncService Type
+
+[!include [banner](../../../../includes/banner.md)]
+
 Provides ability to perform async operations from business logic code.
 
 ### Hierarchy

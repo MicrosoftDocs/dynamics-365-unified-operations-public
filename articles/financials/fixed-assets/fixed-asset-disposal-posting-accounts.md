@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed asset disposal posting accounts
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up general ledger posting accounts for disposing of assets.
 

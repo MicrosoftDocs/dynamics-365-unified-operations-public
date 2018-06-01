@@ -17,7 +17,7 @@ ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: bis
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2234
@@ -32,14 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Purchase requisition workflow
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 The workflow process moves purchase requisitions through the review process, from an initial status of Draft to a final status of Approved. When a purchase requisition is submitted for review, the workflow process is started. After a purchase requisition is approved, a purchase order can be generated for the purchase requisition lines and submitted to the vendor for order fulfillment.
 
 Before a purchase requisition can be submitted for review, you must configure a workflow. The workflow process can include one or more review steps, in any order. The workflow process can also be configured to skip the review tasks and automatically approve the purchase requisition. You can configure the workflow to route the purchase requisition as a single document, or you can route individual purchase requisition lines to the appropriate reviewers. You can also create a scenario where the purchase requisition is routed as a single document to some reviewers and selected purchase requisition lines are routed to other reviewers.  
 
-If purchase requisition lines are reviewed individually, the review process must be completed for all purchase requisition lines before the workflow process can move to the next step, and before the review process for the purchase requisition as a whole can be completed. When the review process has been completed for the purchase requisition and all its lines, the overall status of the purchase requisition is updated to **Approved**.  
+If purchase requisition lines are reviewed individually, the review process must be completed for all purchase requisition lines before the workflow process can move to the next step, and before the review process for the purchase requisition as a whole can be completed. When the review process has been completed for the purchase requisition and all its lines, the overall status of the purchase requisition is updated to **Approved**.  
 
 You can configure your workflow to represent the business process for purchase requisitions in your organization. When you configure your purchase requisition workflow process, consider the following questions:
 
@@ -55,7 +54,7 @@ The following illustration shows how a purchase requisition can flow through the
 
 -   **Requester** – The user who requests the items or services. The requester can prepare the purchase requisition, or another worker can prepare the purchase requisition on the requester’s behalf. This worker is the preparer. The preparer is responsible for managing the purchase requisition throughout the review process. Only the preparer of the purchase requisition can modify it.
 
-**Note:** A worker must be granted the appropriate permissions to create a purchase requisition on behalf of someone else. Use the **Purchase requisition permission** page to set up these permissions.
+**Note:** A worker must be granted the appropriate permissions to create a purchase requisition on behalf of someone else. Use the **Purchase requisition permission** page to set up these permissions.
 
 -   **Purchasing agent** – The user who performs a procurement review and can approve the document.
 -   **The requester's manager** – The user who performs a managerial review and can approve the document.
@@ -64,7 +63,7 @@ The following illustration shows how a purchase requisition can flow through the
 In this example, the workflow process for the purchase requisition includes the following steps:
 
 1.  The preparer submits a purchase requisition for review.
-2.  The purchasing agent receives a notification. The notification requests that the purchasing agent verify the information in the purchase requisition. If required information is missing, the purchasing agent can either add it or return the purchase requisition to the preparer to add it. When all the required information has been filled in, the purchase requisition can move to the next step in the review process.
+2.  The purchasing agent receives a notification. The notification requests that the purchasing agent verify the information in the purchase requisition. If required information is missing, the purchasing agent can either add it or return the purchase requisition to the preparer to add it. When all the required information has been filled in, the purchase requisition can move to the next step in the review process.
 3.  The requester's manager reviews the purchase requisition. The purchase requisition might be routed to the requester's manager if, for example, the amount of the purchase requisition exceeds the requester’s spending limit for purchase requisitions. The requester's manager can approve or reject the purchase requisition, or return it to the preparer for changes.
 
 ## Example 2: Route the individual purchase requisition lines for review
@@ -76,7 +75,7 @@ The following roles are included in the workflow process for this example:
 
 -   **Requester** – The user who requests the items or services. The requester can prepare the purchase requisition, or another worker can prepare the purchase requisition on the requester’s behalf. This worker is the preparer. The preparer is responsible for managing the purchase requisition throughout the review process. Only the preparer of the purchase requisition can modify it.
 
-**Note:** A worker must be granted the appropriate permissions to create a purchase requisition on behalf of someone else. Use the **Purchase requisition permission** page to set up these permissions.
+**Note:** A worker must be granted the appropriate permissions to create a purchase requisition on behalf of someone else. Use the **Purchase requisition permission** page to set up these permissions.
 
 -   **Purchasing agent** – The user who performs a procurement review and can approve the document.
 -   **The requester's manager** – The user who performs a managerial review and can approve the document.
@@ -92,12 +91,12 @@ In this example, the workflow process for the purchase requisition lines include
 4.  The department manager for the Marketing department reviews the purchase requisition lines for both the posters and the T-shirts. The Sales department manager reviews the purchase requisition line only for the posters, because that is the only cost that is being charged to the Sales department.
 5.  The group manager reviews and approves the purchase requisition line for the T-shirts only if group manager approval is required because, for example, the amount on the purchase requisition line exceeds the department manager’s approval limit. The group manager does not have to approve the purchase requisition line for the posters.
 
-## Configuring a workflow for purchase requisitions
-To route a purchase requisition for review, you must configure the purchase requisition workflow processes. The workflow process that you define controls the interaction between the user who requested the items (the requester) and the reviewer and approver in the workflow. The routing of the purchase requisition depends on the conditions that are specified in the workflow configuration. For example, these conditions determine when the purchase requisition should be routed, the user or role that it should be routed to, and the actions that users can take.  
+## Configuring a workflow for purchase requisitions
+To route a purchase requisition for review, you must configure the purchase requisition workflow processes. The workflow process that you define controls the interaction between the user who requested the items (the requester) and the reviewer and approver in the workflow. The routing of the purchase requisition depends on the conditions that are specified in the workflow configuration. For example, these conditions determine when the purchase requisition should be routed, the user or role that it should be routed to, and the actions that users can take.  
 
 The examples in this topic show how a purchase requisition can be routed through a workflow as a single document or as individual purchase requisition lines. You can also configure a workflow for purchase requisitions that reflects the internal control review of purchase requisitions that is defined for your organization.  
 
-The participants or the reviewers that a task is assigned to in a workflow can be members of a particular user group, users who have a particular security role, users who are associated with the submitter in a managerial hierarchy, or named users or users who have specific expenditure responsibilities.
+The participants or the reviewers that a task is assigned to in a workflow can be members of a particular user group, users who have a particular security role, users who are associated with the submitter in a managerial hierarchy, or named users or users who have specific expenditure responsibilities.
 
 ### Purchase requisition expenditure reviewers
 
@@ -107,11 +106,11 @@ You can define one or more expenditure reviewer configurations and then select a
 
 You don't have to define expenditure reviewer configurations. Instead, you can assign specific users or user groups as reviewers when you define your workflow. However, if you have a complex organization, expenditure reviewers can increase the efficiency of your approval process. In addition, if you set up expenditure reviewers, you don't have to update workflow reviewer assignments every time that a reviewer changes job roles.  
 
-You can set up the expenditure reviewers on the **Purchase requisition expenditure reviewers** page. Create an expenditure reviewer configuration, and enter values for each legal entity in your organization. For requisitions that are assigned to a project, you can specify the role that is responsible for reviewing the requisitions: Project manager, Project controller, or Project sales manager. Expenditures will be routed to the user who is assigned to the specified role. You can also route the expenditure to the financial dimension owner by selecting the appropriate financial dimension option on the **Organization distributions** tab.  
+You can set up the expenditure reviewers on the **Purchase requisition expenditure reviewers** page. Create an expenditure reviewer configuration, and enter values for each legal entity in your organization. For requisitions that are assigned to a project, you can specify the role that is responsible for reviewing the requisitions: Project manager, Project controller, or Project sales manager. Expenditures will be routed to the user who is assigned to the specified role. You can also route the expenditure to the financial dimension owner by selecting the appropriate financial dimension option on the **Organization distributions** tab.  
 
-To use one of the expenditure reviewers that you set up in a workflow, you must set the **Type of participant** option to **Expenditure participants** in the **Assignment** properties for the relevant workflow element.
+To use one of the expenditure reviewers that you set up in a workflow, you must set the **Type of participant** option to **Expenditure participants** in the **Assignment** properties for the relevant workflow element.
 
-See also
+Additional resources
 --------
 
 [Create a requisition for consumption (Task guide)](tasks/create-requisition-consumption.md)

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Vendor registration IDs (Mexico)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through creating the vendor for Mexico to support DIOT declaration and other legal reports. This procedure uses the MXMF demo company data.
 
