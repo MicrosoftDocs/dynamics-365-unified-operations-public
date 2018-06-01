@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: [Enter topic title here]
-description: [write a simple description of the topic here]
+title: Set up officials who generate a transportation invoice and a job ticket
+description: This topic provides information about setting up officials who generate transportation invoives and job tickets in Russia. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -31,7 +31,7 @@ This topic applies to features in the **Inventory management** module. It does n
 
 Use the **Officials** form to specify the officials who are involved in the transportation of cargo. You can select the officials who are responsible for intercompany and intracompany transactions.
 
-You must set up records for the officials who are responsible for transportation on both sides of the transactions, so you must set up records for the officials both on the customer or vendor side, and on the company side. This information is required when you generate and print a transportation invoice and a job ticket that are based on a bill of lading. For more information, see [(RUS) About transportation invoices and job tickets that are based on bills of lading](rus-about-transportation-invoices-and-job-tickets-that-are-based-on-bills-of-lading.md).
+You must set up records for the officials who are responsible for transportation on both sides of the transactions, so you must set up records for the officials both on the customer or vendor side, and on the company side. This information is required when you generate and print a transportation invoice and a job ticket that are based on a bill of lading.
 
 1.  Click **Organization administration** \> **Setup** \> **Contacts** \> **Officials**.
 
@@ -69,7 +69,7 @@ You must set up records for the officials who are responsible for transportation
         > [!NOTE]
         > <P>You can set up a record for a <STRONG>Transportation responsible</STRONG> official only if you selected <STRONG>Issue slip for transfer order (M-15)</STRONG>.</P>
 
-# (RUS) Set up officials for the counting list (INV-5) 
+## (RUS) Set up officials for the counting list (INV-5) 
 
 This topic applies to features in the **Inventory management** module. It does not apply to features in the [Warehouse management](warehouse-management.md) module.
 
@@ -93,7 +93,7 @@ Use the **Officials** form to set up officials that are involved with the item c
 
 6.  In the **Job title** field, select the alias for the job title of the official.
 
-# (RUS) Set up officials for the Counting act INV-6 report 
+## (RUS) Set up officials for the Counting act INV-6 report 
 
 This topic applies to features in the **Inventory management** module. It does not apply to features in the [Warehouse management](warehouse-management.md) module.
 
@@ -111,11 +111,7 @@ Use this form to set up officials for the **Counting act (INV-6)** report. You c
 
 6.  In the **Job title** field, select the job title of the official.
 
-## See also
-
-[(RUS) Set up officials for the counting list (INV-5)](rus-set-up-officials-for-the-counting-list-inv-5.md)
-
-# (RUS) Set up officials for the NVFA statement of writing-off (No. MB-8) 
+## (RUS) Set up officials for the NVFA statement of writing-off (No. MB-8) 
 
 Use this procedure to set up the members and chairman of the commission that is responsible for the NVFA Statement of writing off (No. MB-8).
 
@@ -129,7 +125,7 @@ Use this procedure to set up the members and chairman of the commission that is 
 
 5.  In the **Name** field, select the name of the employee.
 
-# (RUS) Set up officials for the Issue slip (M-15) 
+## (RUS) Set up officials for the Issue slip (M-15) 
 
 Use the **Shipment** form to set up officials for the Issue slip (M-15) report that is generated for bailment.
 
@@ -143,6 +139,4 @@ Use the **Shipment** form to set up officials for the Issue slip (M-15) report t
 
 5.  Click **OK** to post the transfer order shipments that includes information about officials.
 
-## See also
 
-[Transfer order shipment (form)](https://technet.microsoft.com/en-us/library/aa577094\(v=ax.60\))
