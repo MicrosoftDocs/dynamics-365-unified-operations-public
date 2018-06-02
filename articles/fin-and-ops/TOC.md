@@ -1481,7 +1481,10 @@
 ### [Add templates to the Open lines in Excel menu](../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/fin-and-ops/toc.json)
 ### [Customize the Open in Microsoft Office menu](../dev-itpro/office-integration/customize-open-office-menu.md?toc=/fin-and-ops/toc.json)
 ### [Configure and send email](organization-administration/configure-email.md)
-### [Troubleshoot the Office integration](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/fin-and-ops/toc.json)
+### [Develop email experiences](../dev-itpro/dev-tools/sysmailer-develop.md)
+### [Troubleshoot the Office integration](../dev-itpro/office-integration/office-integration-troubleshooting.md)
+
+
 
 ## [Procurement and sourcing](../supply-chain/procurement/procurement-sourcing-overview.md)
 ### [Procurement and sourcing workflow](../supply-chain/procurement/procurement-sourcing-workflows.md)
