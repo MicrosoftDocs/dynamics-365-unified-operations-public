@@ -52,15 +52,6 @@ Before logging the request, there are a few things to consider:
 
 Learn more about extensibility by reading the resources listed on the [Extensibility home page](extensibility-home-page.md) and related resources.
 
-Because we are essentially sharing deep roadmap information, we require that organizations be under NDA to be enrolled in our feedback community.
-
-Partners only need to join the feedback community once and not for each of their employees. To enroll in the feedback community:
-
-1. [Provide organization profile information.](http://aka.ms/feedbackcommunitynomination)
-2. [Sign the NDA, input agreement, code and data sharing policies.](http://aka.ms/feedbackcommunityagreement)
-
-As a partner, after you have signed the agreements, people from your organization will be able to access the feedback Yammer groups. We recommend that you join the Yammer group 'Operations extensibility' where a broad range of extensibility topics are discussed.
-
 Extensibility requests are logged using a specific project in LCS. Logged requests are collected under that same project. We recommend that you log related requests under the same LCS project as this helps maintain a holistic view on all requests for a specific solution or an implementation. Microsoft then further identifies logged requests by the organization name that is associated with the LCS account.
 
 In your LCS project, at the top of the page, select the hamburger icon and then click **Support** menu item.
