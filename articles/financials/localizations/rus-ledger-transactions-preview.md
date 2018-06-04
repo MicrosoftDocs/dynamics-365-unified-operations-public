@@ -1,4 +1,5 @@
 ---
+
 # required metadata
 title: Preview the ledger transactions
 description: Tihs topic provides information about how to preview ledger transactions in Russia. 
@@ -11,6 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 			
 # optional metadata
+
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
@@ -23,13 +25,12 @@ ms.search.region: Russia
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
+
 ---
 
-# (EEUR) Preview the ledger transactions 
+# Preview the ledger transactions 
 
 You can preview the ledger transactions before posting the ledger journal.
-
-
 
 1.  Click **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**.
     
@@ -55,5 +56,5 @@ You can preview the ledger transactions before posting the ledger journal.
     
 
     > [!NOTE]
-    > <P>You can include only journal lines, only transactions, or both journal lines and transactions in the report.</P>
+    > You can include only journal lines, only transactions, or both journal lines and transactions in the report.
 
