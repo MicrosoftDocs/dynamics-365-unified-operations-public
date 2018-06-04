@@ -1119,6 +1119,9 @@
 #### [Year-end 1099 reporting for the United States](../financials/localizations/noam-usa-year-end-1099-reporting.md)
 #### [Form 1099 for the public sector](../financials/localizations/noam-usa-form-1099-public-sector.md)
 
+### Russia 
+#### [Transactions settlement - on given date, dimension combination control](../financials/localizations/rus-transactions-settlement-date.md)
+
 ## [Human resources](hr/hr-landing-page.md)
 ### Develop a human resources strategy
 #### [Organize your workforce using departments, jobs, and positions](../talent/departments-jobs-positions.md)
