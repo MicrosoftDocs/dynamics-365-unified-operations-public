@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: [Enter topic title here]
-description: [write a simple description of the topic here]
+title: Set up exchange rates for a currency transaction
+description: This topic provides information about setting up exchange rates for currency transactions for Russia. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 8.1
 ---
 # (RUS) Set up exchange rates for a currency transaction 
 
-Use the **Currency revaluation accounts** form to set up the loss or gain calculation for currency exchange. For more information, see [(RUS) Currency revaluation accounts (modified form)](https://technet.microsoft.com/en-us/library/jj852149\(v=ax.60\)).
+Use the **Currency revaluation accounts** form to set up the loss or gain calculation for currency exchange.
 
 1.  Click **General ledger** \> **Setup** \> **Currency** \> **Currency parameters**.
 
@@ -52,11 +52,8 @@ Use the **Currency revaluation accounts** form to set up the loss or gain calcul
 
 12. In the **Revenue code** field, select the revenue code that corresponds to the transaction for an exchange rate adjustment that occurs when transactions are settled for an advance holder. You can settle the transaction when the exchange rate adjustment is a profit.
 
-## See also
 
-[(RUS) Set up a bank account for a currency transaction](rus-set-up-a-bank-account-for-a-currency-transaction.md)
-
-# (RUS) Set up amount difference parameters for exchange rates 
+## (RUS) Set up amount difference parameters for exchange rates 
 
 An original facture can be corrected if the currency values change during the shipment of goods. After the facture is corrected, the company verifies that the sum of the correction is equal to the sum of the amount difference. An amount difference facture is generated when a purchase or sales transaction is settled under the following conditions:
 
@@ -129,14 +126,7 @@ Use this procedure to set up parameters for amount difference for exchange rates
     > <P>This field is required if you select <STRONG>Deviation from the cost price</STRONG> in the <STRONG>Ledger posting</STRONG> field.</P>
 
 
-
-## See also
-
-[(RUS) Set up accounts payable parameters for amount differences](rus-set-up-accounts-payable-parameters-for-amount-differences.md)
-
-[(RUS) Currency revaluation accounts (modified form)](https://technet.microsoft.com/en-us/library/jj852149\(v=ax.60\))
-
-# (RUS) Set up accounts payable parameters for amount differences 
+## (RUS) Set up accounts payable parameters for amount differences 
 
 Use the **Accounts payable parameters** form to set up accounts payable parameters for amount differences. Facture amount differences are included in a separate list that is created in the purchase book for the specified period. This list contains the cancellation of the source facture and the new facture that is recalculated at payment.
 
@@ -152,7 +142,7 @@ Use the **Accounts payable parameters** form to set up accounts payable paramete
 
 3.  On the **Purchase book** FastTab, select the **Amount difference in additional list** check box to include the amount differences in an additional list in the purchase book.
 
-# (RUS) Set up general ledger parameters for exchange adjustment 
+## (RUS) Set up general ledger parameters for exchange adjustment 
 
 Use this procedure to set up the parameters for exchange adjustments of advance settlements by using the **General ledger parameters** form.
 
@@ -162,11 +152,7 @@ Use this procedure to set up the parameters for exchange adjustments of advance 
 
 3.  Select the **Advance revaluation cancelation** check box to cancel exchange adjustment during advance settlement.
 
-## See also
-
-[(RUS) Set up advance adjustment parameters for advance holders](rus-set-up-advance-adjustment-parameters-for-advance-holders.md)
-
-# (RUS) Amount difference factures for sales and purchase orders 
+## (RUS) Amount difference factures for sales and purchase orders 
 
 Before you can generate an amount difference facture, you must create and post a facture for a purchase order or sales order. After posting the facture, settle the facture transactions to generate the amount differences based on the exchange rates.
 
@@ -252,24 +238,20 @@ Similarly, for VAT at 10 percent, the value is:
 
 (48 / 110) \* 10 = 4.36 RUB
 
-## See also
 
-[(RUS) Set up accounts payable parameters for amount differences](rus-set-up-accounts-payable-parameters-for-amount-differences.md)
-
-# (RUS) Create and link an amount difference facture to an original sales invoice 
+## (RUS) Create and link an amount difference facture to an original sales invoice 
 
 Use the following procedures to create and link an amount difference facture to an original sales invoice.
 
-## Create an amount difference facture for a sales order
+### Create an amount difference facture for a sales order
 
 1.  Click **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders**.
 
-2.  To post a facture for a sales order, create the sales order, and then, on the **Setup** FastTab, select **Sales tax group** and **Item sales tax group**. For more information, see [(RUS) Create and update facture for a corrected sales order invoice or sales credit note](rus-create-and-update-facture-for-a-corrected-sales-order-invoice-or-sales-credit-note.md).
+2.  To post a facture for a sales order, create the sales order, and then, on the **Setup** FastTab, select **Sales tax group** and **Item sales tax group**. For more information, see [(RUS) Create and update facture for a corrected sales order invoice or sales credit note](rus-revised-corrective-invoice-facture.md).
 
 3.  Click **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**.
 
-4.  Create a journal, and then enter the required details. For more information, see [Journal header (form)](https://technet.microsoft.com/en-us/library/aa557917\(v=ax.60\)) and [Journal voucher - Customer payment journal (form)](https://technet.microsoft.com/en-us/library/aa556141\(v=ax.60\)).
-
+4.  Create a journal, and then enter the required details. 
 5.  Click **Lines** to open the **Journal voucher** form.
 
 6.  In the **Account** field, select the customer account that the sales invoice is posted for.
@@ -284,7 +266,7 @@ Use the following procedures to create and link an amount difference facture to 
 
 11. Click **Post** \> **Post** to post the journal.
 
-## Link an amount difference facture to an original sales invoice
+### Link an amount difference facture to an original sales invoice
 
 1.  Click **Accounts receivable** \> **Inquiries** \> **Journals** \> **Invoice journal**.
 
@@ -318,19 +300,8 @@ Use the following procedures to create and link an amount difference facture to 
 
 10. Select the **Included only** check box to print the original facture with only the selected amount difference factures. If you clear this check box, all amount difference factures are printed with the original facture.
 
-## See also
 
-[(RUS) Create and link an amount difference facture to an original purchase invoice](rus-create-and-link-an-amount-difference-facture-to-an-original-purchase-invoice.md)
-
-[(RUS) Journal voucher - Customer payment journal (modified form)](https://technet.microsoft.com/en-us/library/jj733240\(v=ax.60\))
-
-[(RUS) Customer invoice journal (modified form)](https://technet.microsoft.com/en-us/library/jj711658\(v=ax.60\))
-
-# (RUS) Calculate the exchange rate difference for a customer 
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
-
+## (RUS) Calculate the exchange rate difference for a customer 
 
 
 You can use the **Exchange adjustment** form to calculate the exchange rate difference for a customer. The exchange adjustment is calculated at the end of a period according to the rate specified at the period end date.
@@ -413,13 +384,13 @@ You can use the **Exchange adjustment** form to calculate the exchange rate diff
 
 25. Click **OK** to generate the **Exchange adjustment simulation** report.
 
-# (RUS) Settle partial payments for customers 
+## (RUS) Settle partial payments for customers 
 
 Use this procedure to settle partial payment transactions for a customer. You can settle a partial payment against a particular invoice line, and you can settle open transactions by using a periodic settlement for customers. Exchange adjustment factures are created for the invoice lines that are settled.
 
 1.  Click **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**.
 
-2.  Create or select a payment journal line, and then click **Lines** to open the **Journal voucher** form. For more information, see [Key tasks: Customer payments and settlements](key-tasks-customer-payments-and-settlements.md).
+2.  Create or select a payment journal line, and then click **Lines** to open the **Journal voucher** form. 
 
 3.  Click **Mark invoice lines** to open the **Mark invoice lines** form.
 
@@ -446,11 +417,3 @@ Use this procedure to settle partial payment transactions for a customer. You ca
 8.  Click **Accounts receivable** \> **Periodic** \> **Sales book** \> **Sales books journal**.
 
 9.  Create a new sales book that includes the settled facture amount and the exchange adjustment facture. You can verify that the invoice facture is included in the sales book for the settled amount.
-
-## See also
-
-[About partial customer payments](about-partial-customer-payments.md)
-
-[Key tasks: Customer payments and settlements](key-tasks-customer-payments-and-settlements.md)
-
-[Journal voucher - Customer payment journal (form)](https://technet.microsoft.com/en-us/library/aa556141\(v=ax.60\))
