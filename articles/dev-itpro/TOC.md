@@ -121,7 +121,7 @@
 #### [Extensibility changes July 2017](extensibility/changes-july-2017.md)
 #### [Extensibility changes version 7.3](extensibility/extensibility-changes-73.md)
 #### [Extensibility changes version 8.0](extensibility/changes-80.md)
-#### [Extensibility changes update version 8.0.1](extensibility/changes-801.md)
+#### [Extensibility changes update version 8.0.1](extensibility/extensibility-changes-801.md)
 ### Fundamentals
 #### [Intrusive customizations](extensibility/intrusive-customizations.md)
 #### [Class extensions](extensibility/class-extensions.md)
