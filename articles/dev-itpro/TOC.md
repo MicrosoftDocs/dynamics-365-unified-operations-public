@@ -1,5 +1,4 @@
-# [Development and admini
-stration for Dynamics 365 for Finance and Operations](index.md)
+# [Development and administration for Dynamics 365 for Finance and Operations](index.md)
 # [System requirements for cloud deployments](../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json)
 # [System requirements for on-premises deployments](../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json)
 # [Demo data](../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json)
@@ -512,6 +511,7 @@ stration for Dynamics 365 for Finance and Operations](index.md)
 ## Cloud deployment
 ### [Azure Resource Manager onboarding](deployment/arm-onboarding.md)
 ### [Azure ExpressRoute and Dynamics 365 for Finance and Operations](deployment/expressroute.md)
+### [Microsoft Dynamics 365 for Finance and Operations architecture](../fin-and-ops/imp-lifecycle/architecture-overview.md)
 
 ## [On-premises deployment](deployment/on-premises-deployment-landing-page.md)
 ### [On-premises overview](deployment/on-premises-overview.md)
