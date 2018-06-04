@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: [Enter topic title here]
-description: [write a simple description of the topic here]
+title: Set up the tax agent transactions
+description: This topic provides information about setting up the tax agent transactions for Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -30,12 +30,8 @@ ms.dyn365.ops.version: 8.1
 You must set up the parameters for tax agent transactions in the general ledger module before you can create the tax agent transactions.
 
 
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
 
-
-
-## Set up the VAT operation code for the tax declaration
+### Set up the VAT operation code for the tax declaration
 
 1.  Click **General ledger** \> **Setup** \> **Sales tax** \> **External** \> **VAT operation codes**.
 
@@ -45,7 +41,7 @@ You must set up the parameters for tax agent transactions in the general ledger 
 
 4.  Press CTRL+S or close the form.
 
-## Set up the sales tax code for tax agent transactions
+### Set up the sales tax code for tax agent transactions
 
 1.  Click **General ledger** \> **Setup** \> **Sales tax** \> **Sales tax codes**.
 
@@ -70,22 +66,10 @@ You must set up the parameters for tax agent transactions in the general ledger 
 9.  In the **Value** field, enter the VAT percentage.
 
 10. Press CTRL+S or close the form.
-    
-
-    > [!NOTE]
-    > <P>For more information, see <A href="https://technet.microsoft.com/en-us/library/aa553257(v=ax.60)">Sales tax codes (form)</A>.</P>
-
-
 
 11. Click **General ledger** \> **Setup** \> **Sales tax** \> **Sales tax groups**.
 
 12. Press CTRL+N to create a sales tax group, and enter the necessary information.
-    
-
-    > [!NOTE]
-    > <P>For more information, see <A href="https://technet.microsoft.com/en-us/library/aa498345(v=ax.60)">Sales tax groups (form)</A>.</P>
-
-
 
 13. On the **Setup** tab, in the **Sales tax code** field, select the sales tax code created in steps 1 through 10.
     
@@ -101,17 +85,11 @@ You must set up the parameters for tax agent transactions in the general ledger 
 
 16. Press CTRL+N to create an item sales tax group, and enter the necessary information.
     
-
-    > [!NOTE]
-    > <P>For more information, see <A href="https://technet.microsoft.com/en-us/library/aa615960(v=ax.60)">Item sales tax groups (form)</A>.</P>
-
-
-
 17. On the **Setup** tab, in the **Sales tax code** field, select the sales tax code created in steps 1 through 10.
 
 18. Press CTRL+S or close the form.
 
-## Set up a vendor tax authority
+### Set up a vendor tax authority
 
 1.  Click **General ledger** \> **Setup** \> **Sales tax** \> **Sales tax authorities**.
 
@@ -120,26 +98,10 @@ You must set up the parameters for tax agent transactions in the general ledger 
 3.  In the **Vendor account** field, select the vendor who operates as the tax authority.
 
 4.  Press CTRL+S or close the form.
-    
-
-    > [!NOTE]
-    > <P>For more information, see <A href="set-up-a-sales-tax-authority-as-a-vendor.md">Set up a sales tax authority as a vendor</A>.</P>
 
 
 
-## See also
-
-[(RUS) Sales tax codes (modified form)](https://technet.microsoft.com/en-us/library/jj923552\(v=ax.60\))
-
-[(RUS) VAT operation codes (form)](https://technet.microsoft.com/en-us/library/jj839695\(v=ax.60\))
-
-[(RUS) Create a payment proposal for a tax agent invoice](rus-create-a-payment-proposal-for-a-tax-agent-invoice.md)
-
-[(RUS) Create and print factures for VAT deductions](rus-create-and-print-factures-for-vat-deductions.md)
-
-[(RUS) Create vendor tax agent transactions](rus-create-vendor-tax-agent-transactions.md)
-
-# (RUS) Create a payment proposal for a tax agent invoice 
+## (RUS) Create a payment proposal for a tax agent invoice 
 
 You can use the **Vendor payment proposal** form to create payment proposals that you can use to generate payments to a vendor tax agent. You can also generate payments of value-added tax (VAT) to a tax authority.
 
@@ -153,7 +115,7 @@ You can use the **Vendor payment proposal** form to create payment proposals tha
 
 5.  Click **Payment proposal** \> **Create payment proposal** to open the **Vendor payment proposal** form.
 
-6.  In the **Proposal type** field, select the type of payment proposal to create. You can create the proposal by due date, cash discount date, or both due date and cash discount date. For more information, see [Vendor payment proposal (class form)](https://technet.microsoft.com/en-us/library/aa554537\(v=ax.60\)).
+6.  In the **Proposal type** field, select the type of payment proposal to create. You can create the proposal by due date, cash discount date, or both due date and cash discount date.
     
 
     > [!NOTE]
@@ -177,13 +139,13 @@ You can use the **Vendor payment proposal** form to create payment proposals tha
 
 11. Click **Functions** \> **Settlement** to open the **Settle open transactions** form.
 
-12. Select open vendor transactions, and mark them for settlement. For more information, see [Settle open transactions - vendor (form)](https://technet.microsoft.com/en-us/library/aa619609\(v=ax.60\)).
+12. Select open vendor transactions, and mark them for settlement. 
 
 13. Close the form.
 
 14. Click **Functions** \> **Generate payments** to open the **Generate payments** form.
 
-15. Select the payment method or the export format, depending on the method of payment on the journal line. Then select the bank account to draw the payment from, and enter the required information. For more information, see [Generate payments - vendor (class form)](https://technet.microsoft.com/en-us/library/aa586980\(v=ax.60\)).
+15. Select the payment method or the export format, depending on the method of payment on the journal line. Then select the bank account to draw the payment from, and enter the required information. 
 
 16. Click **OK**.
 
@@ -196,24 +158,9 @@ You can use the **Vendor payment proposal** form to create payment proposals tha
     > <P>After payments to the vendor tax agent are completed, you can view the settled transactions in the <STRONG>Transactions on settlement</STRONG> form. You can view the posted sales tax transactions in the <STRONG>Sales tax transactions</STRONG> form.</P>
 
 
-
-## See also
-
-[(RUS) Periodic reverse (form)](https://technet.microsoft.com/en-us/library/jj678637\(v=ax.60\))
-
-[(RUS) Transactions on settlement (form)](https://technet.microsoft.com/en-us/library/jj678413\(v=ax.60\))
-
-[(RUS) Temporary sales tax transactions (modified form)](https://technet.microsoft.com/en-us/library/jj853227\(v=ax.60\))
-
-[(RUS) Set up the tax agent transactions](rus-set-up-the-tax-agent-transactions.md)
-
-# (RUS) Create vendor tax agent transactions 
+## (RUS) Create vendor tax agent transactions 
 
 You can define a vendor as a tax agent in the **Vendors** form and perform transactions with this vendor.
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
 
 
 
@@ -247,13 +194,8 @@ You can define a vendor as a tax agent in the **Vendors** form and perform trans
 
 12. Click **OK** to post the invoice.
 
-## See also
 
-[(RUS) Purchase orders (modified form)](https://technet.microsoft.com/en-us/library/jj733294\(v=ax.60\))
-
-[(RUS) Create and print factures for VAT deductions](rus-create-and-print-factures-for-vat-deductions.md)
-
-# (RUS) Create and print factures for VAT deductions 
+## (RUS) Create and print factures for VAT deductions 
 
 You can use the **Update facture** form to create and print factures for journals that have been posted. You can then view the factures that you created or updated in the **Facture journal** form.
 
@@ -303,16 +245,4 @@ The facture report displays the number and date of the payment order, the base a
 
 
 
-8.  Click **Accounts payable** \> **Inquiries** \> **Journals** \> **Facture**. You can view the facture that you created or updated in the **Facture journal** form. These factures can be registered in the sales book. For more information, see [(RUS) Create a sales book](rus-create-a-sales-book.md).
-
-## See also
-
-[(RUS) Create vendor tax agent transactions](rus-create-vendor-tax-agent-transactions.md)
-
-[(RUS) Set up the tax agent transactions](rus-set-up-the-tax-agent-transactions.md)
-
-[(RUS) Create a payment proposal for a tax agent invoice](rus-create-a-payment-proposal-for-a-tax-agent-invoice.md)
-
-[(RUS) Update facture (form)](https://technet.microsoft.com/en-us/library/jj889412\(v=ax.60\))
-
-[(RUS) Facture journal (form)](https://technet.microsoft.com/en-us/library/jj923567\(v=ax.60\))
+8.  Click **Accounts payable** \> **Inquiries** \> **Journals** \> **Facture**. You can view the facture that you created or updated in the **Facture journal** form. These factures can be registered in the sales book. 
