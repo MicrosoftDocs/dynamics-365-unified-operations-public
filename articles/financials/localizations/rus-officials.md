@@ -1,5 +1,6 @@
 ---
 # required metadata
+
 title: Set up officials who generate a transportation invoice and a job ticket
 description: This topic provides information about setting up officials who generate transportation invoives and job tickets in Russia. 
 author: ShylaThompson
@@ -11,6 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 			
 # optional metadata
+
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
@@ -23,9 +25,10 @@ ms.search.region: Russia
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
+
 ---
 
-# (RUS) Set up officials who generate a transportation invoice and a job ticket 
+# Set up officials who generate a transportation invoice and a job ticket 
 
 This topic applies to features in the **Inventory management** module. It does not apply to features in the [Warehouse management](warehouse-management.md) module.
 
@@ -67,9 +70,9 @@ You must set up records for the officials who are responsible for transportation
         
 
         > [!NOTE]
-        > <P>You can set up a record for a <STRONG>Transportation responsible</STRONG> official only if you selected <STRONG>Issue slip for transfer order (M-15)</STRONG>.</P>
+        > You can set up a record for a <STRONG>Transportation responsible</STRONG> official only if you selected <STRONG>Issue slip for transfer order (M-15)</STRONG>.
 
-## (RUS) Set up officials for the counting list (INV-5) 
+## Set up officials for the counting list (INV-5) 
 
 This topic applies to features in the **Inventory management** module. It does not apply to features in the [Warehouse management](warehouse-management.md) module.
 
@@ -85,7 +88,7 @@ Use the **Officials** form to set up officials that are involved with the item c
     
 
     > [!NOTE]
-    > <P>You can set up a maximum of one chair and one person who is in charge.</P>
+    > You can set up a maximum of one chair and one person who is in charge.
 
 
 
@@ -93,7 +96,7 @@ Use the **Officials** form to set up officials that are involved with the item c
 
 6.  In the **Job title** field, select the alias for the job title of the official.
 
-## (RUS) Set up officials for the Counting act INV-6 report 
+## Set up officials for the Counting act INV-6 report 
 
 This topic applies to features in the **Inventory management** module. It does not apply to features in the [Warehouse management](warehouse-management.md) module.
 
@@ -111,7 +114,7 @@ Use this form to set up officials for the **Counting act (INV-6)** report. You c
 
 6.  In the **Job title** field, select the job title of the official.
 
-## (RUS) Set up officials for the NVFA statement of writing-off (No. MB-8) 
+## Set up officials for the NVFA statement of writing-off (No. MB-8) 
 
 Use this procedure to set up the members and chairman of the commission that is responsible for the NVFA Statement of writing off (No. MB-8).
 
@@ -125,7 +128,7 @@ Use this procedure to set up the members and chairman of the commission that is 
 
 5.  In the **Name** field, select the name of the employee.
 
-## (RUS) Set up officials for the Issue slip (M-15) 
+## Set up officials for the Issue slip (M-15) 
 
 Use the **Shipment** form to set up officials for the Issue slip (M-15) report that is generated for bailment.
 
