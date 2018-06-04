@@ -30,35 +30,35 @@ ms.dyn365.ops.version: AX 7.0
 # Subscriptions, LCS projects, and Azure Active Directory tenants
 [!include [banner](../includes/banner.md)]
 
-When a customer subscribes to Microsoft Dynamics 365 for Finance and Operations through a Volume Licensing (VL) or Cloud Service Provider (CSP) agreement, they usually have one Azure Active Directory (AAD) tenant, one LCS implementation project with any number of sandbox environments deployed to one data center of the customer’s choice, and one production instance of Microsoft Dynamics 365 for Finance and Operations. For more information about these core concepts, see Architecture Overview for a description of the core concepts. While this setup works well for most projects, sometimes more advanced scenarios are required and/or changes during the implementation lifecycle must be accommodated.  This article addresses frequent questions projects have around subscriptions and licenses, Azure Active Directory tenants, and Lifecycle Services (LCS) implementation projects. 
+When a customer subscribes to Microsoft Dynamics 365 for Finance and Operations through a Volume Licensing (VL) or Cloud Service Provider (CSP) agreement, they usually have one Azure Active Directory (AAD) tenant, one LCS implementation project with any number of sandbox environments deployed to one data center of the customer’s choice, and one production instance of Microsoft Dynamics 365 for Finance and Operations. For more information about these core concepts, see [Finance and operations architecture overview](../imp-lifecycle/architecture-over view.md). While this setup works well for most projects, sometimes more advanced scenarios are required or changes during the implementation lifecycle must be accommodated. This topic provides answers to the frequent questions around subscriptions and licenses, Azure Active Directory (AAD) tenants, and Lifecycle Services (LCS) implementation projects. 
 
 - [Move environments between data centers](move-environments-data-center.md)
 - [Move licenses between agreement types](move-licenses-between-agreement-types.md)
 - [Move an LCS Implementation project to another Azure Active Directory tenant](move-lcs-implementation-project-tenant.md)
-- Implement multiple LCS projects and production environments on the same Azure Active Directory tenant 
+- [Implement multiple LCS projects and production environments on the same Azure Active Directory tenant](implement-multiple-projects-aad-tenant.md)
 
 ## Frequently asked questions
-**Question:** Do I need to move AAD tenants when moving from CSP to VL?
+**Question:** Do I need to move AAD tenants when moving from a CSP to VL?
 
-**Answer:** No. You can keep the existing AAD tenant, but you must make sure the VL subscriptions are purchased against the same Azure Active Directory tenant as the CSP subscriptions.
+**Answer:** No. You can keep the existing AAD tenant, but you must make sure that the VL subscriptions are purchased against the same AAD tenant as the CSP subscriptions.
 
-**Question:** Do I get a new LCS Implementation Project when moving from CSP to VL?
+**Question:** Do I get a new LCS Implementation project when I move from a CSP to VL?
 
 **Answer:** No. The LCS project remains the same.
 
-**Question:** Can I keep the existing LCS Implementation Project when moving to different AAD tenant?
+**Question:** Can I keep the existing LCS Implementation project when moving to different AAD tenant?
 
 **Answer:** No. A new LCS project will be created. 
 
-**Question:** How long will it take to move from CSP to VL?
+**Question:** How long will it take to move from a CSP to VL?
 
-**Answer:** The VL purchase process can take a few days until the order is processed and the subscriptions are activated. Redeploying the add-on environments has an SLA of 2 business days. Deallocating and deleting the old add-on environments takes a few hours.
+**Answer:** The VL purchase process can take a few days until the order is processed and the subscriptions are activated. Redeploying the add-on environments has an SLA of 2 business days. De-allocating and deleting the old add-on environments takes a few hours.
 
 **Question:** What if I forget to delete the existing environments before suspending the existing subscription?
 
-**Answer:** If you do not deallocate and delete the existing environments before you suspend the subscriptions, the environments will remain in ‘Deployed’ state, but users will get an error message when they try to access ‘Full details’ on those environments 
+**Answer:** If you do not de-allocate and delete the existing environments before you suspend the subscriptions, the environments will remain in a **Deployed** state. However, if you try to access the **Full details** on these environments,  you will get an error message.
 
-**Question:** Can I have a CSP and an VL agreements in parallel?
+**Question:** Can I have a CSP and a VL agreement in parallel?
 
 **Answer:** Yes, you can. You must maintain the minimum required number of licenses under each program.  
 
