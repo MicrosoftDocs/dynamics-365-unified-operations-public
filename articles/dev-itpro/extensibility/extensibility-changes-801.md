@@ -26,7 +26,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: fdahl
-ms.search.validFrom: 2018-05-41
+ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: App 8.0.1
 
 ---
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: App 8.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations update 8.0.1. This version was released in May 2018 and has a build number of XXX. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
+This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations update 8.0.1. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
 
 ## Refactored methods to support extensibility
 
