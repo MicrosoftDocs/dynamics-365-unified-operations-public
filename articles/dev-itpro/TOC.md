@@ -121,6 +121,7 @@
 #### [Extensibility changes July 2017](extensibility/changes-july-2017.md)
 #### [Extensibility changes version 7.3](extensibility/extensibility-changes-73.md)
 #### [Extensibility changes version 8.0](extensibility/changes-80.md)
+#### [Extensibility changes update version 8.0.1](extensibility/changes-801.md)
 ### Fundamentals
 #### [Intrusive customizations](extensibility/intrusive-customizations.md)
 #### [Class extensions](extensibility/class-extensions.md)
@@ -511,6 +512,7 @@
 ## Cloud deployment
 ### [Azure Resource Manager onboarding](deployment/arm-onboarding.md)
 ### [Azure ExpressRoute and Dynamics 365 for Finance and Operations](deployment/expressroute.md)
+### [Microsoft Dynamics 365 for Finance and Operations architecture](../fin-and-ops/imp-lifecycle/architecture-overview.md)
 
 ## [On-premises deployment](deployment/on-premises-deployment-landing-page.md)
 ### [On-premises overview](deployment/on-premises-overview.md)
