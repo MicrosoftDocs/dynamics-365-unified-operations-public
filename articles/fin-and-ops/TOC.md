@@ -80,6 +80,7 @@
 ### [Videos for Dynamics 365 for Finance and Operations](get-started/videos.md) 
 
 ## [Understand the implementation lifecycle](imp-lifecycle/implementation-lifecycle.md)
+### [Microsoft Dynamics 365 for Finance and Operations architecture](imp-lifecycle/architecture-overview.md)
 ### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
 ### [Onboarding](imp-lifecycle/onboard.md) 
 ### [Preparing for go-live](imp-lifecycle/prepare-go-live.md)
