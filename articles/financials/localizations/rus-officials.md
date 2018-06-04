@@ -1,7 +1,7 @@
 ---
 # required metadata
-
-title: Set up officials who generate a transportation invoice and a job ticket
++
++title: Set up officials who generate a transportation invoice and a job ticket
 description: This topic provides information about setting up officials who generate transportation invoives and job tickets in Russia. 
 author: ShylaThompson
 manager: AnnBe
@@ -12,7 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 			
 # optional metadata
-
++
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
@@ -25,7 +25,7 @@ ms.search.region: Russia
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
++
 ---
 
 # Set up officials who generate a transportation invoice and a job ticket 
