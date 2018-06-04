@@ -511,6 +511,7 @@
 ## Cloud deployment
 ### [Azure Resource Manager onboarding](deployment/arm-onboarding.md)
 ### [Azure ExpressRoute and Dynamics 365 for Finance and Operations](deployment/expressroute.md)
+### [Microsoft Dynamics 365 for Finance and Operations architecture](../fin-and-ops/imp-lifecycle/architecture-overview.md)
 
 ## [On-premises deployment](deployment/on-premises-deployment-landing-page.md)
 ### [On-premises overview](deployment/on-premises-overview.md)
