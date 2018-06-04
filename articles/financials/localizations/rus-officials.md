@@ -5,7 +5,7 @@ title: Set up officials who generate a transportation invoice and a job ticket
 description: This topic provides information about setting up officials who generate transportation invoives and job tickets in Russia. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/28/2018
+ms.date: 6/4/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
