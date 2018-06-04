@@ -1,5 +1,6 @@
 ---
 # required metadata
+
 title: About Correspondence 
 description: This topic provides information about correspondence in Russia. 
 author: ShylaThompson
@@ -11,6 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 			
 # optional metadata
+
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
@@ -23,9 +25,10 @@ ms.search.region: Russia
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
+
 ---
 
-# (RUS) About Correspondence 
+# About Correspondence 
 
 Correspondence of accounts is an approach to continuous and interrelated registration of business transactions in corresponding general ledger accounts, based on the double-entry bookkeeping system. Ledger vouchers are represented by using the Russian accounting standards with corresponding accounts.
 
@@ -90,7 +93,7 @@ When the **Use corresponding mechanism** check box is selected, each new account
 If non-corresponding accounts already exist before the account correspondence mechanism is enabled, they are not linked automatically. You must define relationships for these transactions manually.
 
 
-## (RUS) Activate corresponding mechanism for accounting transactions 
+## Activate corresponding mechanism for accounting transactions 
 
 The account correspondence mechanism allows you to create correspondence relations between transactions. When the account correspondence mechanism is turned on, each new accounting transaction created will consist of a set of two-way corresponding transactions. When posting the accounting transactions, the corresponding relation is defined automatically. If non-corresponded transactions existed before the account correspondence mechanism was turned on, they would not be linked automatically.
 
@@ -102,7 +105,7 @@ The account correspondence mechanism allows you to create correspondence relatio
 
 
 > [!NOTE]
-> <P>After the correspondence mechanism is activated, all new transactions will have correspondence relations. If you cannot establish a correspondence link for a transaction, a message with a warning is displayed. Click this message to go to the manual correspondence function to correspond the transactions manually.</P>
+> After the correspondence mechanism is activated, all new transactions will have correspondence relations. If you cannot establish a correspondence link for a transaction, a message with a warning is displayed. Click this message to go to the manual correspondence function to correspond the transactions manually.
 
 
 ## (RUS) Define corresponding relations for transactions manually 
@@ -131,7 +134,7 @@ Use the manual transaction correspondence function to define a relationship betw
     
 
     > [!NOTE]
-    > <P>You can also drag one transaction over the other to move them to the lower pane as a corresponded transaction.</P>
+    > You can also drag one transaction over the other to move them to the lower pane as a corresponded transaction.
 
 
 
@@ -143,7 +146,7 @@ Use the manual transaction correspondence function to define a relationship betw
     
 
     > [!NOTE]
-    > <P>After refreshing the data, the voucher for which correspondence has been established will appear in the list of corresponded vouchers.</P>
+    > After refreshing the data, the voucher for which correspondence has been established will appear in the list of corresponded vouchers.
 
 
 
@@ -151,5 +154,5 @@ Use the manual transaction correspondence function to define a relationship betw
     
 
     > [!NOTE]
-    > <P>After refreshing the data, the voucher for which correspondence has been removed will appear in the list of non-corresponded vouchers.</P>
+    > After refreshing the data, the voucher for which correspondence has been removed will appear in the list of non-corresponded vouchers.
 
