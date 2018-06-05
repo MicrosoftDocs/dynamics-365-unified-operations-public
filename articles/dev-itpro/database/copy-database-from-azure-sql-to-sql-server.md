@@ -55,7 +55,7 @@ The following prerequisites must be met before you can move a database:
 - The source environment (that is, the environment that is connected to the source database) must run a version of the Finance and Operations platform that is earlier than or the same as the version of the platform that the destination environment runs.
 - Only a database that the customer has SQL access to can be copied. If you must copy the production environment, you must first copy that environment to the sandbox environment. Then work from the sandbox environment.
 
-    > [!NOTE]
+     > [!NOTE]
     > In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database.
 
 - The destination SQL Server environment must run SQL Server 2016 Release to Manufacturing (RTM) (13.00.1601.5) or later. The Community Technology Preview (CTP) versions of SQL Server 2016 might cause errors during the import process.
@@ -68,7 +68,7 @@ The following prerequisites must be met before you can move a database:
 
 ## Before you begin
 
-Encrypted and environment-specific values can't be imported into a new environment. After you've completed the import, you must re-enter some data from your source environment in your target environment.
+Encrypted and environment-specific values can't be imported into a new environment in this product. After you've completed the import, you must re-enter some data from your source environment in your target environment. 
 
 ### Document the values of encrypted fields
 
