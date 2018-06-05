@@ -56,7 +56,7 @@ Before you begin the move, you must save your data.
     - **Option 3:** If you have multiple Azure SQL database environments, redeploy one environment, leave the remaining environments in the old data center, and then request a database refresh between the environments.
     - **Option 4:** Save data as data packages, and then import the packages after the redeployment is completed.
 
-## Move the environments
+### Move the environments
 After you've saved your data, follow these steps.
 
 1. Verify that all code packages have been uploaded to the Asset library in LCS.
