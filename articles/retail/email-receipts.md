@@ -69,7 +69,7 @@ You must configure a SMTP server to send email receipts.
 2. Press **CTRL**+**N** to create a receipt profile.
 3. Provide a **Receipt profile ID** and **Description**
 4. On the **General** tab, click **Add** to add a new receipt type.
-5. Select receipt type *Receipt* and select a receipt format to be used for email receipts.
+5. Select receipt type **Receipt** and select a receipt format to be used for email receipts.
 
 ### Add an email receipt profile to the functionality profile
 
@@ -82,18 +82,18 @@ You must configure a SMTP server to send email receipts.
 1. Click **Organization Administration &gt; Setup &gt; E-mail Templates.**
 2. Press **CTRL**+**N** to create a new template.
 3. On the **Overview** tab, complete the following:
-   - **E-mail ID** - Enter *EmailRecpt*.
-   - **E-mail description **- Enter a description.
-   - **Default language code **- Select the  language.
-   - <strong>Sender name **- Specify a name to appear as the sender of the email. Customers will see this name on the email as the **From</strong> name.
-   - <strong>Sender e-mail **- Specify a valid email address. Customers will see this email address as the **From</strong> email address.
+   - In the **E-mail ID** field, enter **EmailRecpt**.
+   - In the **E-mail description** field, enter a description.
+   - In the **Default language code** field, select the  language.
+   - In the  **Sender name** field, specify a name to appear as the sender of the email. Customers will see this name on the email as the **From** name.
+   - In the **Sender e-mail** field, specify a valid email address. Customers will see this email address as the **From<* email address.
 
 4. In the lower grid, configure the following:
-   - <em>*E-mail ID **- This should already be populated as *EmailRecpt</em>.
-   - **Subject **- Enter a title for the email receipts.
-   - **Language **- Specify the language.
-   - <em>*Email **- Insert the following string: *&lt;pre&gt;%message%&lt;/pre&gt;.</em>
-   - If you want to have more than just the receipt in the message, click the **E-mail message** button to fill out the template for the body of the email messages to be sent. If you want the receipt to appear (in MPOS), insert the placeholder *%message%.*
+   - **E-mail ID** should already be populated as **EmailRecpt**.
+   - In the **Subject** field, enter a title for the email receipts.
+   - In the **Language** field, specify the language.
+   - In the **Email** field, enter the following string: **&lt;pre&gt;%message%&lt;/pre&gt;**.
+   - If you want to have more than just the receipt in the message, click the **E-mail message** button to fill out the template for the body of the email messages to be sent. If you want the receipt to appear (in MPOS), insert the placeholder **%message%.**
 
 This is the only placeholder that will be replaced when sending MPOS receipts. To get more placeholder options, you'll need to create customization on the MPOS side.
 
@@ -106,6 +106,3 @@ Depending on the settings that you configured, you'll need to run the respective
 
 ## MPOS transaction
 After synchronizing the changes to the store, MPOS will prompt the user for an email address for each transaction (if enabled). If the customer already has an email address on file, that address will appear in the email address prompt. If a customer hasn't been named, or the named customer doesn’t have an email address, enter an email address and then click **Send**. When the transaction is finalized, the real-time service will send the customer an email with the receipt in the body of the message as configured above.
-
-
-
