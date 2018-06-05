@@ -291,3 +291,6 @@ When you create a new record by using an OData client, as shown in example 1, pr
             context.SaveChanges(SaveChangesOptions.PostOnlySetProperties);
         }
 
+
+### Handling ensum name collision with entity names in metadata
+There are instances where some enums share the same names as some of the entities. This name collosion will result in OData client code generation errors. To recover from this error, the helper code in gitHub https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs can be used to identify such collision instances and must be removed. The resulting metadata doc must be used.
