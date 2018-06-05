@@ -1,5 +1,6 @@
 ---
 # required metadata
+
 title: Set up the tax agent transactions
 description: This topic provides information about setting up the tax agent transactions for Russia.
 author: ShylaThompson
@@ -11,6 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 			
 # optional metadata
+
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
@@ -23,9 +25,10 @@ ms.search.region: Russia
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
+
 ---
 
-# (RUS) Set up the tax agent transactions
+# Set up the tax agent transactions
 
 You must set up the parameters for tax agent transactions in the general ledger module before you can create the tax agent transactions.
 
@@ -75,8 +78,7 @@ You must set up the parameters for tax agent transactions in the general ledger 
     
 
     > [!NOTE]
-    > <P>If you select the sales tax code for the <STRONG>From own funds</STRONG> option, the <STRONG>Exempt</STRONG> check box is selected by default on the <STRONG>Setup</STRONG> tab.</P>
-
+    > If you select the sales tax code for the <STRONG>From own funds</STRONG> option, the <STRONG>Exempt</STRONG> check box is selected by default on the <STRONG>Setup</STRONG> tab.
 
 
 14. Press CTRL+S or close the form.
@@ -101,7 +103,7 @@ You must set up the parameters for tax agent transactions in the general ledger 
 
 
 
-## (RUS) Create a payment proposal for a tax agent invoice 
+## Create a payment proposal for a tax agent invoice 
 
 You can use the **Vendor payment proposal** form to create payment proposals that you can use to generate payments to a vendor tax agent. You can also generate payments of value-added tax (VAT) to a tax authority.
 
@@ -119,7 +121,7 @@ You can use the **Vendor payment proposal** form to create payment proposals tha
     
 
     > [!NOTE]
-    > <P>By using payment grouping, you can specify the invoices that must be paid to a specific vendor, and then combine the invoices into one payment. You can periodically settle open customer transactions that include the invoices that belong to different agreement numbers.</P>
+    > By using payment grouping, you can specify the invoices that must be paid to a specific vendor, and then combine the invoices into one payment. You can periodically settle open customer transactions that include the invoices that belong to different agreement numbers.
 
 
 
@@ -131,7 +133,7 @@ You can use the **Vendor payment proposal** form to create payment proposals tha
     
 
     > [!NOTE]
-    > <P>The vendor account of the tax agent is displayed in the <STRONG>Vendor account</STRONG> field on the <STRONG>Payment</STRONG> tab.</P>
+    > The vendor account of the tax agent is displayed in the <STRONG>Vendor account</STRONG> field on the <STRONG>Payment</STRONG> tab.
 
 
 
@@ -155,10 +157,10 @@ You can use the **Vendor payment proposal** form to create payment proposals tha
     
 
     > [!NOTE]
-    > <P>After payments to the vendor tax agent are completed, you can view the settled transactions in the <STRONG>Transactions on settlement</STRONG> form. You can view the posted sales tax transactions in the <STRONG>Sales tax transactions</STRONG> form.</P>
+    > After payments to the vendor tax agent are completed, you can view the settled transactions in the <STRONG>Transactions on settlement</STRONG> form. You can view the posted sales tax transactions in the <STRONG>Sales tax transactions</STRONG> form.
 
 
-## (RUS) Create vendor tax agent transactions 
+## Create vendor tax agent transactions 
 
 You can define a vendor as a tax agent in the **Vendors** form and perform transactions with this vendor.
 
@@ -195,7 +197,7 @@ You can define a vendor as a tax agent in the **Vendors** form and perform trans
 12. Click **OK** to post the invoice.
 
 
-## (RUS) Create and print factures for VAT deductions 
+## Create and print factures for VAT deductions 
 
 You can use the **Update facture** form to create and print factures for journals that have been posted. You can then view the factures that you created or updated in the **Facture journal** form.
 
@@ -213,7 +215,7 @@ The facture report displays the number and date of the payment order, the base a
 
 
 > [!NOTE]
-> <P>If the source of the facture is <STRONG>Tax correction</STRONG>, enter an explanatory note about the details of the invoice line in the <STRONG>Note</STRONG> field in the <STRONG>Facture journal</STRONG> form. This information is displayed on the facture report.</P>
+> If the source of the facture is <STRONG>Tax correction</STRONG>, enter an explanatory note about the details of the invoice line in the <STRONG>Note</STRONG> field in the <STRONG>Facture journal</STRONG> form. This information is displayed on the facture report.
 
 
 
@@ -229,7 +231,7 @@ The facture report displays the number and date of the payment order, the base a
     
 
     > [!NOTE]
-    > <P>You can select the facture date only if you clear the <STRONG>Same as</STRONG> check box. Otherwise, this field displays the same date that you select in the <STRONG>Date of the registration</STRONG> field.</P>
+    > You can select the facture date only if you clear the <STRONG>Same as</STRONG> check box. Otherwise, this field displays the same date that you select in the <STRONG>Date of the registration</STRONG> field.
 
 
 
