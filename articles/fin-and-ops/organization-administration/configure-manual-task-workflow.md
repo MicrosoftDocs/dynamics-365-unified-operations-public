@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure a manual task in a workflow
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure the properties for a manual task.
 
@@ -61,7 +60,7 @@ You must provide a subject line and instructions to users who are assigned to th
     2.  On the page that appears, click **Add**.
     3.  In the list that appears, select the language that you're entering the text in.
     4.  In the **Translated text** field, enter the text.
-    5.  To personalize the text, you can insert placeholders as described in step 3.
+    5.  To personalize the text, you can insert placeholders as described in step 3.
     6.  Click **Close**.
 
 5.  In the **Work item instructions** field, enter the instructions.
@@ -76,14 +75,14 @@ You must provide a subject line and instructions to users who are assigned to th
     2.  On the page that appears, click **Add**.
     3.  In the list that appears, select the language that you're entering the text in.
     4.  In the **Translated text** field, enter the text.
-    5.  To personalize the text, you can insert placeholders as described in step 6.
+    5.  To personalize the text, you can insert placeholders as described in step 6.
     6.  Click **Close**.
 
 ## Assign the task
 Follow these steps to specify who the manual task should be assigned to.
 
 1.  In the left pane, click **Assignment**.
-2.  On the **Assignment type** tab, select one of the options in the following table, and then follow the additional steps for that option before you go to step 3.
+2.  On the **Assignment type** tab, select one of the options in the following table, and then follow the additional steps for that option before you go to step 3.
     <table>
     <colgroup>
     <col width="33%" />
@@ -136,7 +135,7 @@ Follow these steps to specify who the manual task should be assigned to.
     <td>Specific Microsoft Dynamics 365 for Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to assign the task to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to assign the task to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -224,10 +223,10 @@ If a user doesn't complete the manual task in the allotted time, the task is ove
     </tr>
     <tr class="odd">
     <td>User</td>
-    <td>Specific Finance and Operations users</td>
+    <td>Specific Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to escalate the task to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to escalate the task to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -240,11 +239,11 @@ If a user doesn't complete the manual task in the allotted time, the task is ove
     -   **Months** – Select the day and week that the user must complete the task by. For example, you might want the user to complete the task by Friday of the third week of the month.
     -   **Years** – Select the day, week, and month that the user must complete the task by. For example, you might want the user to complete the task by Friday of the third week of December.
 
-5.  Repeat steps 3 through 4 for each user that should be added to the escalation path. You can change the order of the users.
+5.  Repeat steps 3 through 4 for each user that should be added to the escalation path. You can change the order of the users.
 6.  If the users in the escalation path don't complete the task in the allotted time, the system takes action on the task. To specify the action that the system takes, select the **Action** row, and then, on the **End action** tab, select an action.
 
 ## Specify when the system automatically acts on the task
-You can configure the system to take action on the manual task if specific conditions are met. For example, a task requires that a member of the Expense reports department review the receipts that are submitted together with an expense report. According to company policy, this task must be performed if the total amount of the expense report is more than USD 100. In this scenario, you can configure the system to automatically mark the task as **Complete** when the total amount is less than 100. Follow these steps to specify when the system takes action on the manual task.
+You can configure the system to take action on the manual task if specific conditions are met. For example, a task requires that a member of the Expense reports department review the receipts that are submitted together with an expense report. According to company policy, this task must be performed if the total amount of the expense report is more than USD 100. In this scenario, you can configure the system to automatically mark the task as **Complete** when the total amount is less than 100. Follow these steps to specify when the system takes action on the manual task.
 
 1.  In the left pane, click **Automatic actions**.
 2.  Select the **Enable automatic actions** check box.
@@ -283,10 +282,10 @@ You can send notifications to people when a manual task has been delegated, esca
     2.  On the page that appears, click **Add**.
     3.  In the list that appears, select the language that you're entering the text in.
     4.  In the **Translated text** field, enter the text.
-    5.  To personalize the text, you can insert placeholders as described in step 5.
+    5.  To personalize the text, you can insert placeholders as described in step 5.
     6.  Click **Close**.
 
-7.  On the **Recipient** tab, specify who the notifications are sent to. Select one of the options in the following table, and then follow the additional steps for that option before you go to step 8.
+7.  On the **Recipient** tab, specify who the notifications are sent to. Select one of the options in the following table, and then follow the additional steps for that option before you go to step 8.
     <table>
     <colgroup>
     <col width="33%" />
@@ -318,16 +317,16 @@ You can send notifications to people when a manual task has been delegated, esca
     </tr>
     <tr class="odd">
     <td>User</td>
-    <td>Specific Finance and Operations users</td>
+    <td>Specific Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
-8.  Repeat steps 3 through 7 for each event that you selected in step 2.
+8.  Repeat steps 3 through 7 for each event that you selected in step 2.
 
 ## Set a time limit
 Follow these steps if the manual task must be completed in a specific time. 

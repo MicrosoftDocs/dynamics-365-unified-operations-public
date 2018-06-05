@@ -5,7 +5,7 @@ title: X++ conversion run-time functions
 description: This topic describes the conversion run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ conversion run-time functions
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the conversion run-time functions.
 
@@ -354,11 +353,11 @@ Converts the specified date to a string.
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | date       | The date to convert.                                                                                                                                                                                        |
 | sequence   | A three-digit number that indicates the sequence for the components of the date: **1** for day, **2** for month, and **3** for year.                                                                        |
-| day        | A enumeration value that indicates the format for the day component of the date.                                                                                                                            |
-| separator1 | A enumeration value that indicates the separator to use between the first two components of the date.                                                                                                       |
-| month      | A enumeration value that indicates the format for the month component of the date.                                                                                                                          |
-| separator2 | A enumeration value that indicates the separator to use between the last two components of the date.                                                                                                        |
-| year       | A enumeration value that indicates the format for the year component of the date.                                                                                                                           |
+| day        | An enumeration value that indicates the format for the day component of the date.                                                                                                                            |
+| separator1 | An enumeration value that indicates the separator to use between the first two components of the date.                                                                                                       |
+| month      | An enumeration value that indicates the format for the month component of the date.                                                                                                                          |
+| separator2 | An enumeration value that indicates the separator to use between the last two components of the date.                                                                                                        |
+| year       | An enumeration value that indicates the format for the year component of the date.                                                                                                                           |
 | flags      | A **DateFlags** enumeration value that indicates whether the language settings on the local computer should be used to calculate the proper left-to-right or right-to-left sequence in the returned string. |
 
 ### Return value
@@ -566,7 +565,7 @@ Retrieves the date that corresponds to the specified number of days after Januar
 
 | Parameter | Description                                                                                                                                                                                                                |
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_days    | The number of days after January 1, 1900 to return the date for. **Note:** The first valid date is January 1, 1901. Therefore, the **num2Date** function doesn't return a valid date unless *\_days* is more than **365**. |
+| \_days    | The number of days after January 1, 1900 to return the date for. **Note:** The first valid date is January 1, 1901. Therefore, the **num2Date** function doesn't return a valid date unless *\_days* is more than **365**. |
 
 ### Return value
 
@@ -586,7 +585,7 @@ Converts a real number to a string.
 | Parameter  | Description                                                     |
 |------------|-----------------------------------------------------------------|
 | number     | The real number to convert to a string.                         |
-| character  | The minimum number of characters that are required in the text. |
+| character  | The minimum number of characters that are required in the text. |
 | decimals   | The required number of decimal places.                          |
 | separator1 | A **DecimalSeparator** enumeration value.                       |
 | separator2 | A **ThousandSeparator** enumeration value.                      |
@@ -599,15 +598,15 @@ A string that represents the number.
 
 For the *decimals* parameter, the maximum value is **16**. If a larger number is used, this method obtains a value for the *decimals* parameter from the local computer instead. In both cases, rounding occurs. Here are the possible enumeration values for the *separator1* parameter:
 
--   **1** – Point (.)
--   **2** – Comma (,)
+-   **1** – Point (.)
+-   **2** – Comma (,)
 
 Here are the possible values for the *separator2* parameter:
 
--   **0 **– No thousands separator
--   **1 **– Point (.)
--   **2 **– Comma (,)
--   **3 **– Space ( )
+-   **0 **– No thousands separator
+-   **1 **– Point (.)
+-   **2 **– Comma (,)
+-   **3 **– Space ( )
 
 ### Example
 
@@ -692,9 +691,9 @@ The syntax requirements for the date portion of the *text* parameter are flexibl
 
 Each component of the date time is represented by a digit in the *sequence* parameter:
 
--   **1** – Day
--   **2** – Month
--   **3** – Year
+-   **1** – Day
+-   **2** – Month
+-   **3** – Year
 
 For example, year, month, day order is **321**. All valid values contain each of these three digits exactly one time. If the value of the *sequence* parameter isn't valid, the regional settings are used to interpret the input *text* parameter. If the input parameters describe an invalid date and time, an empty string is returned.
 
@@ -727,7 +726,7 @@ An element of the target enum, which also represents an int.
 
 ### Remarks
 
-The related function **enum2str** returns the value of a **Label** property from one element in the enum. The value that is returned by **enum2str** function can be the input for the *\_type* parameter of the **str2enum** function. An appropriate value for the *\_text* parameter is **enum2Str(BankAccountType::SavingsAccount)**. Each element of an enum has a **Name** property and a **Label** property. In a fresh install, the **Name** values are almost always English words. In the English edition, the **Label** property value is almost always the same as the **Name** value. However, in non-English editions, the **Label** values are localized and therefore don't match the **Name** values.
+The related function **enum2str** returns the value of a **Label** property from one element in the enum. The value that is returned by **enum2str** function can be the input for the *\_type* parameter of the **str2enum** function. An appropriate value for the *\_text* parameter is **enum2Str(BankAccountType::SavingsAccount)**. Each element of an enum has a **Name** property and a **Label** property. In a fresh install, the **Name** values are almost always English words. In the English edition, the **Label** property value is almost always the same as the **Name** value. However, in non-English editions, the **Label** values are localized and therefore don't match the **Name** values.
 
 ### Example
 

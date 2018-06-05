@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Cash discount is applied in the invoice parameter
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the Cash discount is applied in the invoice parameter for Spain.
 

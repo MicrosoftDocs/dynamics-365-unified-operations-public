@@ -31,6 +31,9 @@ ms.dyn365.ops.version: July 2017 update
 ---
 
 # Configure the Electronic reporting framework
+
+[!include [banner](../includes/banner.md)]
+
 This topic explains how to set up the basic functionality for Electronic reporting (ER). It also describes the steps that you must complete before you can set up ER.
 
 ## Prerequisites for ER setup
@@ -59,7 +62,7 @@ Use the following procedure to set up the basic functionality of ER for all lega
 ## Optional setup for ER
 In addition to the basic functionality, ER has other functionality that you can set up.
 
-- On the **Electronic reporting destination** page, define the ER output destinations for each file output of each ER format configuration. Use the document types of the Document management framework that you set up earlier. You can also use this page to set up the optional functionality of ER for each legal entity. For more information, see the topic about ER destinations that is linked in the "See also" section of this topic.
+- On the **Electronic reporting destination** page, define the ER output destinations for each file output of each ER format configuration. Use the document types of the Document management framework that you set up earlier. You can also use this page to set up the optional functionality of ER for each legal entity. For more information, see the topic about ER destinations that is linked in the "Additional resources" section of this topic.
 - Whenever you add new Application Object Tree (AOT) artifacts or update existing AOT artifacts that are used as data sources (tables, views, or data entities) in ER, use the **Rebuild table references** menu item (**Organization administration** > **Electronic reporting** > **Rebuild table references**) to bring your AOT changes into the ER metadata.
 
 ## Frequently asked questions
@@ -75,7 +78,7 @@ In addition to the basic functionality, ER has other functionality that you can 
 
 **Answer:** The Microsoft provider is used to mark ER configurations that have been designed and maintained by Microsoft. We expect that Microsoft will release new versions of the configurations in the future. We recommend that you not mark the Microsoft provider as **Active**. Otherwise, you can update the configurations. (For example, you can change the content and register new versions.) These updates will cause issues in the future, when Microsoft provides new versions of the configurations, and those new versions must be imported and adopted. Instead, register a new ER provider for your company, and use it for your ER configurations maintenance. To reuse a Microsoft configuration, select it as the base for your derived copy. To incorporate changes that are provided by Microsoft, rebase your configuration to a new version of the Microsoft configuration when it becomes available.
 
-## See also
+## Additional resources
 
 - [Electronic reporting overview](general-electronic-reporting.md)
 - [Electronic reporting destinations](electronic-reporting-destinations.md)

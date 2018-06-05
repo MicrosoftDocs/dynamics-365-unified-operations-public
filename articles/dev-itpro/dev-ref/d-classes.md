@@ -5,7 +5,7 @@ title: D Classes
 description: System API classes that start with the letter D.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # D Classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter D.
 
@@ -580,6 +579,7 @@ obj
 
 | Method | Description |
 |--------|-------------|
+|        |             |
 
 ## Class DataImportExportManager
     class DataImportExportManager extends Object
@@ -2580,7 +2580,7 @@ Called
 
 <!-- -->
 
-  
+
 
 #### Return Value
 
@@ -2628,7 +2628,7 @@ methodName
 
 <!-- -->
 
-  
+
 
 #### Return Value
 
@@ -2818,7 +2818,7 @@ Creates an object.
 
 #### Parameters
 
-  
+
 
 #### Return Value
 
@@ -2973,7 +2973,7 @@ className
 
 <!-- -->
 
-  
+
 
 #### Return Value
 
@@ -2990,7 +2990,7 @@ A value of the classId system data type that indicates the system ID of a class.
 
 #### Remarks
 
-Class IDs are unsigned integers and are therefore always in the range 0 to 65535. The method does not fail if an invalid class ID is passed.You can pass a class name to the method instead of a class ID by using the classNum intrinsic function. For more information, see “Intrinsic Functions.”
+Class IDs are unsigned integers and are therefore always in the range 0 to 65535. The method does not fail if an invalid class ID is passed. You can pass a class name to the method instead of a class ID by using the classNum intrinsic function. For more information, see “Intrinsic Functions.”
 
 ## Class DictCompositeChildDataEntity
     class DictCompositeChildDataEntity extends Object
@@ -3577,13 +3577,14 @@ The DictEnum class obtains meta-information about the base enum enumerations in 
 
 For backward compatibility, a special naming convention for methods that convert to or from properties is used.
 
+
 |                 |                                |                          |
 |-----------------|--------------------------------|--------------------------|
-| Name            | ReqDate                        | Symbol (typed as string) |
-| Label           | @SYS18075 ("Requirement date") | Name or Label            |
-| FeatureKey      | ReqSchedAction                 | FeatureKey               |
-| EnumValue       | 0                              | Value                    |
-| Position in AOT | First (Index = 0)              | Index                    |
+|      Name       |            ReqDate             | Symbol (typed as string) |
+|      Label      | @SYS18075 ("Requirement date") |      Name or Label       |
+|   FeatureKey    |         ReqSchedAction         |        FeatureKey        |
+|    EnumValue    |               0                |          Value           |
+| Position in AOT |       First (Index = 0)        |          Index           |
 
 This example is from the ActionBasicDateType base enum. For general information about enumerations, see the Developer's Guide.
 
@@ -7259,7 +7260,7 @@ Called
 
 <!-- -->
 
-  
+
 
 #### Return Value
 
@@ -7309,7 +7310,7 @@ methodName
 
 <!-- -->
 
-  
+
 
 #### Return Value
 
@@ -9126,7 +9127,7 @@ Determines whether the table is visible.
 
 #### Return Value
 
-true if the table is is visible; otherwise, false.
+true if the table is visible; otherwise, false.
 
 ### Method construct
 
@@ -9911,7 +9912,7 @@ cnt
 
 #### Return Value
 
-The SQL name that is used in the view definition to identify the legal entity of the data source; a empty string if an error occurs.
+The SQL name that is used in the view definition to identify the legal entity of the data source; an empty string if an error occurs.
 
 ### Method datasourceID2TableId
 
@@ -10089,7 +10090,7 @@ The table ID to use to create the class instance.
 ## Class DLL
     class DLL extends Object
 
-The DLL class enables communication with a MicrosoftWindows dynamic-link library (DLL).
+The DLL class enables communication with a Microsoft Windows dynamic-link library (DLL).
 
 ### Remarks
 
@@ -10229,7 +10230,7 @@ Releases resources and performs clean-up before an instance of the DLL class is 
 
 #### Parameters
 
-  
+
 
 #### Return Value
 
@@ -10304,7 +10305,7 @@ functionname
 
 #### Parameters
 
-  
+
 
 ## Class DocNode
     class DocNode extends TreeNode

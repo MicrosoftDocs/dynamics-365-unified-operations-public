@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Modify format to generate documents with application data update for electronic reporting (ER)
+title: Modify format to generate documents with application data
 description: To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 3 - Modify model and mapping)". 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Modify format to generate documents with application data update for electronic reporting (ER)
+# Modify format to generate documents with application data
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 3: Modify model and mapping)".
 

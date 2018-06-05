@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Change the date for the session
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 By default, the current date is used when entering and posting journal entries or source documents. You can change the date that is used for your current session. Use this feature to back-date journal entries or source documents, as necessary.
 

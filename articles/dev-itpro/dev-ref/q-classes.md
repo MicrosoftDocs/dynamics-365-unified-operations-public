@@ -5,7 +5,7 @@ title: Q Classes
 description: System API classes that start with the letter Q.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Q Classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter Q.
 
@@ -211,7 +210,7 @@ The data source object that is created.
 
 #### Remarks
 
-A name value can be specified for documentation purposes. Yo can use the name to fetch the data source by using the dataSourceName method.
+A name value can be specified for documentation purposes. You can use the name to fetch the data source by using the dataSourceName method.
 
 ### Method addHavingFilter
 
@@ -1088,7 +1087,7 @@ A string that represents the current object.
 
 #### Remarks
 
-The default implementation returns the class name of the object. However, the method can be overridden in a derived class so that it returns values that are meaningful for that type.For example, an instance of the SysMethodInfo class returns the method name, and the type of method, such as Instance or Static.
+The default implementation returns the class name of the object. However, the method can be overridden in a derived class so that it returns values that are meaningful for that type. For example, an instance of the SysMethodInfo class returns the method name, and the type of method, such as Instance or Static.
 
 ### Method userUpdate
 

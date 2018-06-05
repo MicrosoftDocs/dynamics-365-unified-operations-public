@@ -32,6 +32,8 @@ ms.search.validFrom: 2016-11-30
 
 # Standard audit file (SAF) for Poland
 
+[!include [banner](../includes/banner.md)]
+
 Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
 
 Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This document provides information about the formats for Poland. This document refers to functionality that has not yet been released.

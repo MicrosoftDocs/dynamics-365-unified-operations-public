@@ -5,7 +5,7 @@ title: Extensibility changes in the Dynamics 365 for Finance and Operations, Ent
 description: This is a list of extensibility features that were implemented in the (July 2017).
 author: FrankDahl
 manager: AnnBe
-ms.date: 08/13/2017
+ms.date: 11/08/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Extensibility changes in the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This is a list of extensibility features that were implemented in the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
 
@@ -719,7 +719,7 @@ Foundation changes were made to improve support for extensible enumerations. The
 
 ## Data manipulation methods that do not raise DataEvents or missing insert, update, delete pre- and post-data events
 
-As a general practice, you use data methods on tables to raise events that can be used for extending the application. The code base has not alwaysed follow this practice. For example, the **doInsert**, **doUpdate**, and **doDelete** data methods and certain table implementations did not make a call to **super()** in the data method.
+As a general practice, you use data methods on tables to raise events that can be used for extending the application. The code base has not always followed this practice. For example, the **doInsert**, **doUpdate**, and **doDelete** data methods and certain table implementations did not make a call to **super()** in the data method.
 
 The **insert**, **update**, and **delete** methods on the type classes have been refactored. Changes were made so that **super()** is called more consistently in data methods. These changes enable extensions to be added to these methods, so that pre- and post-events are now available for extension. The tables where the **insert**, **update**, and **delete** events were enabled for extension are listed in the following table.
 
@@ -866,45 +866,47 @@ Inline delegates are now available. The most common way to use inline delegates 
 
 The following table lists additional changes that have been made for extensibility.
 
-| Change |
-| -------------|
-|Add indirection for existing product dimensions|
-|Class FormLetterParmDataOutputContract is not extensible|
-|Create an instantiation strategy for the SysExtensionFramework that supports one or more arguments|
-|Customization: TableField: Extension Model: Change EDT type of on a table field|
-|CustVendOpenTransBalances - initAccountNumCurrencies() switch statement|
-|CustVendOpenTransBalances - new() switch statement|
-|CustVendOutPaym (Class) needs extensibility improvement|
-|CustVendPaymReconciliationSetStatus (Class) needs extensibility improvement|
-|CustVendSumForPaym (Class) needs extensibility improvement|
-|Decouple AddressCountyId and AddressStateId EDTs from SysGroup|
-|Document Management event handling needs improved extensibility support|
-|Exchange rate provider framework requires custom built providers to be placed in the Currency Model|
-|Extending GS-128|
-|Extension model: Allow customizations on the CountryRegionCodes property.|
-|Form extension - Extension of "extended" form elements with new controls are not working|
-|InventDim: Condition with throw|
-|InventDimRenameDimValue|
-|Method overlayering - Class VendInvoiceTableToLineUpdate.convertPurchTableFieldToVendInvoice|
-|Method overlayering: class Markup - method delete|
-|Method overlayering: class McrPriceHistoryForm.insertPotentialTradeAgreements|
-|Method overlayering: Class OffsetVoucher - method markTransaction|
-|Method overlayering: Form LedgerJournalTransDimension.init|
-|Method overlayering: Form LedgerTransVoucher - method init|
-|Method overlayering: Table CustInvoiceTable - method validateWrite|
-|Method signature changed: RetailCreateLinesFromProductsToAdd.parmCallerCommon|
-|Method signature changed: WHSInvent.getCommonFromWorkTransType|
-|Method signature changed: WHSPoolProdBom.movementBuffer|
-|Missing construct method: class SMAServiceOrderTableButtonStateProvider|
-|Number sequence scope extensibility needed|
-|Runbase needs a way for class extensions to pack/unpack their members|
-|String EDT size extension issues|
-|Support opening Inventory on-hand form based on custom InventDim|
-|SysExtension framework: SysExtensionIInstantiationStrategy and SysExtensionIAttribute are not compatible|
-|Variations of EventHandlerResult are requested to ensure that delegates used in Request/response scenarios are more robust|
-|WHS Mobile Framework: passes|
-|WhsLocationDirectiveLine To/FromQty not extensible|
-|WHSMobileApp Extensibility|
-|WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions|
-|WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions|
-|WhsRFControlData.processControl must reference WhsControl.data instead of _data in the switch block|
+
+|                                                           Change                                                           |
+|----------------------------------------------------------------------------------------------------------------------------|
+|                                      Add indirection for existing product dimensions                                       |
+|                                  Class FormLetterParmDataOutputContract is not extensible                                  |
+|             Create an instantiation strategy for the SysExtensionFramework that supports one or more arguments             |
+|                      Customization: TableField: Extension Model: Change EDT type of on a table field                       |
+|                          CustVendOpenTransBalances - initAccountNumCurrencies() switch statement                           |
+|                                     CustVendOpenTransBalances - new() switch statement                                     |
+|                                  CustVendOutPaym (Class) needs extensibility improvement                                   |
+|                        CustVendPaymReconciliationSetStatus (Class) needs extensibility improvement                         |
+|                                 CustVendSumForPaym (Class) needs extensibility improvement                                 |
+|                               Decouple AddressCountyId and AddressStateId EDTs from SysGroup                               |
+|                          Document Management event handling needs improved extensibility support                           |
+|            Exchange rate provider framework requires custom built providers to be placed in the Currency Model             |
+|                                                      Extending GS-128                                                      |
+|                         Extension model: Allow customizations on the CountryRegionCodes property.                          |
+|                  Form extension - Extension of "extended" form elements with new controls are not working                  |
+|                                              InventDim: Condition with throw                                               |
+|                                                  InventDimRenameDimValue                                                   |
+|                Method overlayering - Class VendInvoiceTableToLineUpdate.convertPurchTableFieldToVendInvoice                |
+|                                     Method overlayering: class Markup - method delete                                      |
+|                       Method overlayering: class McrPriceHistoryForm.insertPotentialTradeAgreements                        |
+|                             Method overlayering: Class OffsetVoucher - method markTransaction                              |
+|                                 Method overlayering: Form LedgerJournalTransDimension.init                                 |
+|                                 Method overlayering: Form LedgerTransVoucher - method init                                 |
+|                             Method overlayering: Table CustInvoiceTable - method validateWrite                             |
+|                       Method signature changed: RetailCreateLinesFromProductsToAdd.parmCallerCommon                        |
+|                               Method signature changed: WHSInvent.getCommonFromWorkTransType                               |
+|                                  Method signature changed: WHSPoolProdBom.movementBuffer                                   |
+|                          Missing construct method: class SMAServiceOrderTableButtonStateProvider                           |
+|                                         Number sequence scope extensibility needed                                         |
+|                           Runbase needs a way for class extensions to pack/unpack their members                            |
+|                                              String EDT size extension issues                                              |
+|                              Support opening Inventory on-hand form based on custom InventDim                              |
+|          SysExtension framework: SysExtensionIInstantiationStrategy and SysExtensionIAttribute are not compatible          |
+| Variations of EventHandlerResult are requested to ensure that delegates used in Request/response scenarios are more robust |
+|                                                WHS Mobile Framework: passes                                                |
+|                                     WhsLocationDirectiveLine To/FromQty not extensible                                     |
+|                                                 WHSMobileApp Extensibility                                                 |
+|         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions          |
+|         WHSMobileAppAttachedImageDetails.removeLabelFromDimValue() is not generic enough about Product dimensions          |
+|            WhsRFControlData.processControl must reference WhsControl.data instead of _data in the switch block             |
+

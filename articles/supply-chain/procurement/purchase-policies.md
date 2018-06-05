@@ -17,7 +17,7 @@ ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: bis
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11614
@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Purchasing policies
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about purchasing policies. A purchasing policy is a collection of rules that control the requisition process. Purchasing policies help procurement administrators implement their procurement strategy by creating a policy structure that is aligned with the organization’s strategic purchasing requirements.
 
@@ -52,7 +51,7 @@ Depending on how you configure your purchasing policies, multiple rules can affe
 
 Organizations that are small and less complex can set up purchasing policies by legal entity, and can use only the Companies organization hierarchy.  
 
-For Fabrikam, a small business, purchasing requirements vary little across the organization. Purchasing rules vary only among the organization's legal entities. For example, employees of Fabrikam Canada and employees of Fabrikam U.S. purchase goods and services from different catalogs and different vendors. Therefore, Fabrikam sets up its purchasing policies at the legal-entity level.  
+For Fabrikam, a small business, purchasing requirements vary little across the organization. Purchasing rules vary only among the organization's legal entities. For example, employees of Fabrikam Canada and employees of Fabrikam U.S. purchase goods and services from different catalogs and different vendors. Therefore, Fabrikam sets up its purchasing policies at the legal-entity level.  
 
 Fabrikam creates two purchasing policies. Policy A applies to its U.S. legal entity, 1111. Policy B applies to its Canadian legal entity, 2222. When an employee in legal entity 1111 creates a purchase requisition, the policy rules are derived from policy A. For example, the product catalog that the employee sees is specified in the catalog policy rule for policy A.  
 
@@ -82,11 +81,11 @@ Therefore, policy 456 is applied to the purchase requisition that Sam creates, a
 ## Policy rules
 ### Catalog policy rule
 
-The catalog policy rule determines which procurement catalog users see when they create purchase requisitions. If a user has been granted permission to order products on behalf of another user, the requisition uses the catalog policy rule that is defined for the requester’s legal entity and operating unit to determine which catalog to display. Before you can define a catalog policy rule, you must create and publish a procurement catalog.
+The catalog policy rule determines which procurement catalog users see when they create purchase requisitions. If a user has been granted permission to order products on behalf of another user, the requisition uses the catalog policy rule that is defined for the requester’s legal entity and operating unit to determine which catalog to display. Before you can define a catalog policy rule, you must create and publish a procurement catalog.
 
 ### Category access policy rule
 
-The category access policy rule determines which categories users have access to when they create purchase requisitions. If no rule is specified, all the procurement categories can be added to the purchase requisition.
+The category access policy rule determines which categories users have access to when they create purchase requisitions. If no rule is specified, all the procurement categories can be added to the purchase requisition.
 
 1.  Select the **Include parent rule** option to apply the category access policy rule of the parent organization to the category.
 2.  In the **Available categories** pane, select the categories that the rule applies to. When you select a category, all categories that are higher in the hierarchy are also added to the **Selected categories** list.
@@ -94,35 +93,35 @@ The category access policy rule determines which categories users have access to
 
 ### Category policy rule
 
-The category policy rule defines how users can select vendors for each category. It also defines requirements for the receiving and invoicing processes.
+The category policy rule defines how users can select vendors for each category. It also defines requirements for the receiving and invoicing processes.
 
 ### Re-approval rule for purchase orders
 
-The re-approval rule is an optional rule that defines the criteria for requiring re-approval when a purchase order is changed. The selected fields are evaluated in the purchase order workflow when the "Requires purchase order re-approval" condition is set up in the workflow.
+The re-approval rule is an optional rule that defines the criteria for requiring re-approval when a purchase order is changed. The selected fields are evaluated in the purchase order workflow when the "Requires purchase order re-approval" condition is set up in the workflow.
 
 > [!NOTE]
 > Accounting distribution will always be reset when an approved purchase order with change management enabled is changed. So you should be aware that if you want to avoid a re-approval of a purchase order when certain fields are changed, the field Accounting distribution.changed should NOT be included as a selected field for re-approval. 
 
 ### Purchase requisition RFQ rule
 
-The purchase requisition RFQ rule defines criteria for requiring a request for quotation (RFQ) for a purchase requisition line. If a line meets the conditions, the "informal RFQ" or "formal RFQ" stamp appears on the requisition line.
+The purchase requisition RFQ rule defines criteria for requiring a request for quotation (RFQ) for a purchase requisition line. If a line meets the conditions, the "informal RFQ" or "formal RFQ" stamp appears on the requisition line.
 
 ### Purchase requisition control rule
 
-The purchase requisition control rule is an optional rule. When you create rules of this type, you can set options on various tabs:
+The purchase requisition control rule is an optional rule. When you create rules of this type, you can set options on various tabs:
 
--   On the **Workflow submission** tab, you can configure the fields that must be entered on the requisition line for the requisition to be submitted for approval when the requisition purpose is **Consumption**.
--   On the **Order quantities** tab, you can configure the fields that are required on the purchase requisition under certain conditions. You can also enforce order quantities.
--   On the **Dates** tab, you can configure whether the accounting date is the same as the requested date
+-   On the **Workflow submission** tab, you can configure the fields that must be entered on the requisition line for the requisition to be submitted for approval when the requisition purpose is **Consumption**.
+-   On the **Order quantities** tab, you can configure the fields that are required on the purchase requisition under certain conditions. You can also enforce order quantities.
+-   On the **Dates** tab, you can configure whether the accounting date is the same as the requested date
 -   On the **Address** tab, you can define whether the user is allowed to create new addresses in the system to apply to the purchase requisition.
 
 ### Requisition purpose rule
 
-The requisition purpose rule is an optional rule that determines the type of requisition purpose that is allowed for a specific legal entity. Unless another purpose is indicated in this rule, requisitions automatically have a purpose of **Consumption** when they are created.
+The requisition purpose rule is an optional rule that determines the type of requisition purpose that is allowed for a specific legal entity. Unless another purpose is indicated in this rule, requisitions automatically have a purpose of **Consumption** when they are created.
 
 ### Replenishment category access policy rule
 
-The replenishment category access policy rile is an optional rule that determines the products that are available to fulfill requisition demand for a specific legal entity when the requisition purpose is **Replenishment**.
+The replenishment category access policy rile is an optional rule that determines the products that are available to fulfill requisition demand for a specific legal entity when the requisition purpose is **Replenishment**.
 
 ### Replenishment control rule
 
@@ -130,7 +129,7 @@ The replenishment control rule is an optional rule that defines the fields that 
 
 ### Purchase order creation and demand consolidation rule
 
-The purchase order creation and demand consolidation rule defines the policy rules to use when a purchase order is generated from an approved purchase requisition. When you create rules of this type, you can set options on various tabs:
+The purchase order creation and demand consolidation rule defines the policy rules to use when a purchase order is generated from an approved purchase requisition. When you create rules of this type, you can set options on various tabs:
 
 -   On the **Purchase order split** tab, you can define criteria for splitting purchase requisition lines onto separate purchase orders.
 -   On the **Price/discount transfer** tab, you can define when to recalculate the price agreement when a purchase order is created:
@@ -143,14 +142,14 @@ The purchase order creation and demand consolidation rule defines the policy rul
 -   On the **Error processing** tab, you can configure the processing rule that is applied to a purchase requisition if it fails validation during purchase order creation because of a vendor error or a price tolerance error. Select one of the following options:
     -   **No action** – The purchase requisition lines remain on the **Release approved purchase requisitions** page. The status of the purchase requisition lines remains **Approved**. However, the errors must be resolved before a purchase order can be generated for the purchase requisition lines.
     -   **Cancel the purchase requisition line** – The purchase requisition lines are canceled. The requester can create a new purchase requisition for the canceled lines if he or she still wants to request the line items.
-    -   **Create a new purchase requisition line** – The purchase requisition lines are canceled. New purchase requisitions are then generated that contain only the purchase requisition lines that failed validation. The new purchase requisitions that are generated have a status of **Draft**. These purchase requisitions can be resubmitted for review after the validation errors have been resolved. The preparer of the purchase requisition lines is notified that the lines were canceled, and that new purchase requisitions were generated for the purchase requisition lines that failed.
--   On the **Manual purchase order creation** tab, you can define the parameters that determine whether a purchase requisition must be manually processed, or whether it can be automatically converted to a purchase order. The parameters can apply to internal catalog items, external catalog items, or non-catalog items. Select one of the following options:
+    -   **Create a new purchase requisition line** – The purchase requisition lines are canceled. New purchase requisitions are then generated that contain only the purchase requisition lines that failed validation. The new purchase requisitions that are generated have a status of **Draft**. These purchase requisitions can be resubmitted for review after the validation errors have been resolved. The preparer of the purchase requisition lines is notified that the lines were canceled, and that new purchase requisitions were generated for the purchase requisition lines that failed.
+-   On the **Manual purchase order creation** tab, you can define the parameters that determine whether a purchase requisition must be manually processed, or whether it can be automatically converted to a purchase order. The parameters can apply to internal catalog items, external catalog items, or non-catalog items. Select one of the following options:
     -   **Manually create purchase orders** – Manually create purchase orders for all purchase requisitions.
     -   **Automatically create purchase orders** – Automatically create purchase orders for all approved purchase requisitions. No purchase requisitions are held for manual purchase order creation.
     -   **Automatically create purchase orders except under these conditions** – Manually create purchase orders for purchase requisitions that match the criteria that you define. All other purchase requisitions that are approved are automatically converted to purchase orders. If you select **Automatically create purchase orders except under these conditions**, you can add procurement categories and vendors to specify which approved purchase requisition lines are held for manual processing. This option can apply to internal catalog items, external catalog items, and non-catalog items. When you select a procurement category, any subcategories for that procurement category are also selected. Select the **All** option for a specific type of purchase requisition line to hold all lines of that line type for manual processing.
 
     If you want purchase orders to be generated automatically from approved purchase requisitions when the batch job for purchase order generation runs, select the **Run automatic purchase order creation as a batch job** option. This option applies only to purchase requisitions that don't require manual processing. By running automatic purchase order generation as a batch job, you can schedule this activity at a time when resources are less constrained. If the **Prepayment required** option is selected on the purchase requisition lines, select the **When the requisition is set up for prepayment** option to hold approved purchase requisitions for manual processing. Purchase requisitions that are held for manual processing can be filtered so that you can view only those purchase requisition lines that require prepayment.
--   On the **Demand consolidation** tab, you can define the parameters that determine whether purchase requisitions that are manually processed can be considered for purchase requisition consolidation. The parameters can apply to internal catalog items, external catalog items, or non-catalog items. Select one of the following options:
+-   On the **Demand consolidation** tab, you can define the parameters that determine whether purchase requisitions that are manually processed can be considered for purchase requisition consolidation. The parameters can apply to internal catalog items, external catalog items, or non-catalog items. Select one of the following options:
     -   **Do not allow demand consolidation** – No approved purchase requisition lines are eligible for demand consolidation. This option is selected by default and applies only to purchase requisition lines that require manual processing for purchase order creation.
     -   **Always allow demand consolidation** – All approved purchase requisition lines are eligible for demand consolidation. **Note:** If you select the **Always allow demand consolidation** option on the **Demand consolidation** tab, but you select the **Automatically create purchase orders** option on the **Manual purchase order creation** tab, all purchase requisitions are held for manual processing.
     -   **Allow demand consolidation under these conditions** – Define the criteria that determine whether approved purchase requisition lines are eligible for demand consolidation. For each type of purchase requisition line, you can set the criteria by procurement category and vendor. If you select **Allow demand consolidation under these conditions**, you can set the criteria by procurement category and vendor for each type of purchase requisition line. When you select a procurement category, any subcategories for that procurement category are also selected. If you select the **All** option for a specific line type, all purchase requisition lines of that line type are eligible for demand consolidation.

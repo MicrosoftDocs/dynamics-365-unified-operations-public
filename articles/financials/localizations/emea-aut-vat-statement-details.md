@@ -31,8 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # VAT statement details for Austria
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up the VAT statement for legal entities in Austria.
 
@@ -60,25 +59,25 @@ Here is an example of sales tax reporting codes.
 
 | Sales tax reporting code | Description                                                                   | Corresponding box in the declaration |
 |--------------------------|-------------------------------------------------------------------------------|--------------------------------------|
-| 1022                     | Tax base amount by domestic sales that have a standard tax rate of 20 percent | 022                                  |
-| 1122                     | Tax amount by domestic sales that have a standard tax rate of 20 percent      | 022                                  |
-| 1029                     | Tax base amount by domestic sales that have a reduced tax rate of 10 percent  | 029                                  |
-| 1129                     | Tax amount by domestic sales that have a reduced tax rate of 10 percent       | 029                                  |
-| 1006                     | Tax base amount by domestic sales that have a reduced tax rate of 13 percent  | 006                                  |
-| 1106                     | Tax amount by domestic sales that have a reduced tax rate of 13 percent       | 006                                  |
-| 1072                     | Tax base amount by EU purchases that have a standard tax rate of 20 percent   | 072                                  |
-| 1172                     | Tax amount by EU purchases that have a standard tax rate of 20 percent        | 072                                  |
-| 1073                     | Tax base amount by EU purchases that have a reduced tax rate of 10 percent    | 073                                  |
-| 1173                     | Tax amount by EU purchases that have a reduced tax rate of 10 percent         | 073                                  |
-| 1008                     | Tax base amount by EU purchases that have a reduced tax rate of 13 percent    | 008                                  |
-| 1108                     | Tax amount by EU purchases that have a reduced tax rate of 13 percent         | 008                                  |
+| 1022                     | Tax base amount by domestic sales that have a standard tax rate of 20 percent | 022                                  |
+| 1122                     | Tax amount by domestic sales that have a standard tax rate of 20 percent      | 022                                  |
+| 1029                     | Tax base amount by domestic sales that have a reduced tax rate of 10 percent  | 029                                  |
+| 1129                     | Tax amount by domestic sales that have a reduced tax rate of 10 percent       | 029                                  |
+| 1006                     | Tax base amount by domestic sales that have a reduced tax rate of 13 percent  | 006                                  |
+| 1106                     | Tax amount by domestic sales that have a reduced tax rate of 13 percent       | 006                                  |
+| 1072                     | Tax base amount by EU purchases that have a standard tax rate of 20 percent   | 072                                  |
+| 1172                     | Tax amount by EU purchases that have a standard tax rate of 20 percent        | 072                                  |
+| 1073                     | Tax base amount by EU purchases that have a reduced tax rate of 10 percent    | 073                                  |
+| 1173                     | Tax amount by EU purchases that have a reduced tax rate of 10 percent         | 073                                  |
+| 1008                     | Tax base amount by EU purchases that have a reduced tax rate of 13 percent    | 008                                  |
+| 1108                     | Tax amount by EU purchases that have a reduced tax rate of 13 percent         | 008                                  |
 | 1161                     | Tax amount by import purchases                                                | 061                                  |
 | 1160                     | Tax amount by purchases                                                       | 060                                  |
 | 1165                     | Tax receivable by EU purchases                                                | 065                                  |
-| 1132                     | Tax liability pursuant to §19 1d payable                                      | 032                                  |
-| 1189                     | Tax liability pursuant to §19 1d receivable                                   | 089                                  |
+| 1132                     | Tax liability pursuant to §19 1d payable                                      | 032                                  |
+| 1189                     | Tax liability pursuant to §19 1d receivable                                   | 089                                  |
 
-To set up an assignment of sales tax reporting codes to sales tax codes, go to **Sales tax codes** &gt; ****Report setup****. Here is an example of an assignment of sales tax reporting codes to sales tax codes.
+To set up an assignment of sales tax reporting codes to sales tax codes, go to <strong>Sales tax codes</strong> &gt; *<strong><em>Report setup</em></strong>*. Here is an example of an assignment of sales tax reporting codes to sales tax codes.
 
 | Sales tax code | Taxable sales | Sales tax payable | Taxable purchases | Sales tax receivable | Taxable import | Use tax | Offset use tax |
 |----------------|---------------|-------------------|-------------------|----------------------|----------------|---------|----------------|
@@ -100,12 +99,14 @@ To review or change the VAT statement configuration for legal entities in Austri
 ## Generate a VAT statement
 At the end of the VAT reporting period, run **Settle and post** **sales tax** to calculate statement line amounts for the definition of sales tax reporting codes that you created. The following table describes the fields that you must set.
 
-|Field|Description|
-|-----|-----------|
-|Settlement period|Select the applicable reporting period.|
-|From date|Enter the first day of the sales tax settlement period to calculate sales tax for. This value corresponds to the date in the From field on the Sales tax settlement periods page.|
-|Transaction date|Enter the date when the sales tax report is calculated. The default value is the current date. The end date of the settlement period that is shown in the From field corresponds to the To field on the Sales tax settlement periods page. The sales tax payment is calculated for all transactions that were posted during the settlement period.|
-|Sales tax payment version|Select the type of transactions to include in the sales tax payment calculation: 
+
+|           Field           |                                                                                                                                                                    Description                                                                                                                                                                     |
+|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Settlement period     |                                                                                                                                                      Select the applicable reporting period.                                                                                                                                                       |
+|         From date         |                                                                                 Enter the first day of the sales tax settlement period to calculate sales tax for. This value corresponds to the date in the From field on the Sales tax settlement periods page.                                                                                  |
+|     Transaction date      | Enter the date when the sales tax report is calculated. The default value is the current date. The end date of the settlement period that is shown in the From field corresponds to the To field on the Sales tax settlement periods page. The sales tax payment is calculated for all transactions that were posted during the settlement period. |
+| Sales tax payment version |                                                                                                                                  Select the type of transactions to include in the sales tax payment calculation:                                                                                                                                  |
+
 **Original** – Include sales tax transactions of the first posted settlement calculation for the period.
 **Latest corrections** – Include sales tax transactions that are included in the most recent settlement calculation for the period.|
 |Format mapping|Specify U30.|

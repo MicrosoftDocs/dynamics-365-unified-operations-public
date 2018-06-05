@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Production setup requirements
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about setup requirements before you can work with Production control. 
 
-Production control is integrated with features in other modules. This interconnectivity lets you change production orders and make sure that they are automatically updated in all other related processes and calculations in the system. The following setup processes are listed in the order that you should complete them in.
+Production control is integrated with features in other modules. This interconnectivity lets you change production orders and make sure that they are automatically updated in all other related processes and calculations in the system. The following setup processes are listed in the order that you should complete them in.
 
 ## Required baseline setup in other modules
-Information in other modules must be set up before you can work with Production control. This setup includes the following tasks:
+Information in other modules must be set up before you can work with Production control. This setup includes the following tasks:
 
 -   Set up general company information.
 -   Set up the general ledger.
@@ -80,7 +79,7 @@ If you're working with routes, operations must be defined for every production r
 
 ## Optional advanced settings
 1.  **Production groups** – Set up production groups to establish relationships between the production order and ledger accounts. The ledger accounts are used to post or group orders for reporting.
-2.  **Production pools** – Create production pools to group production orders so that you can process urgent production orders, or delete and post groups of orders.
+2.  **Production pools** – Create production pools to group production orders so that you can process urgent production orders, or delete and post groups of orders.
 3.  **Properties** – Define properties to create special attributes that you can assign to your resources to control the order of productions. These attributes are connected to the working time template.
 
 

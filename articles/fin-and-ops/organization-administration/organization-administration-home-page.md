@@ -2,7 +2,7 @@
 # required metadata
 
 title: Organization administration home page
-description: This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in your organization.
+description: This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
@@ -32,10 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Organization administration home page
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-
-This topic points to content that will help power users and administrators configure Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This content will help them configure the system to work smoothly and effectively for your organization and business.
+This topic points to content that will help power users and administrators configure Microsoft Dynamics 365 for Finance and Operations. This content will help them configure the system to work smoothly and effectively for your organization and business.
 
 Much of the content listed here applies to features in the **Organizational administration** module. However, there are a couple of tasks, such as creating and using a record template, that can be performed in any module to help your organization run more efficiently. 
 
@@ -44,8 +43,8 @@ Number sequences
 Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. A master data record or transaction record that requires an identifier is referred to as a *reference*. Before you can create new records for a reference, you must set up a number sequence and associate it with the reference.
 
 -   [Number sequence overview](number-sequence-overview.md)
--   [Set up number sequences by using a wizard](tasks/set-up-number-sequences-wizard.md) (Task guide)
--   [Set up number sequences on an individual basis](tasks/set-up-number-sequences-individual-basis.md) (Task guide)
+-   [Set up number sequences by using a wizard](tasks/set-up-number-sequences-wizard.md) (Task guide)
+-   [Set up number sequences on an individual basis](tasks/set-up-number-sequences-individual-basis.md) (Task guide)
 
 ## Organizations
 An organization is a group of people who are working together to carry out a business process or achieve a goal. Organizational hierarchies represent the relationships between the organizations that make up your business.
@@ -54,9 +53,9 @@ Before you set up organizations and organization hierarchies in Finance and Oper
 
 -   [Organizations and organizational hierarchies](organizations-organizational-hierarchies.md)
 -   [Plan your organizational hierarchy](plan-organizational-hierarchy.md)
--   [Create an organization hierarchy](tasks/create-organization-hierarchy.md) (Task guide)
--   [Create a legal entity](tasks/create-legal-entity.md) (Task guide)
--   [Create an operating unit](tasks/create-operating-unit.md) (Task guide)
+-   [Create an organization hierarchy](tasks/create-organization-hierarchy.md) (Task guide)
+-   [Create a legal entity](tasks/create-legal-entity.md) (Task guide)
+-   [Create an operating unit](tasks/create-operating-unit.md) (Task guide)
 
 ## Address books
 The global address book is a centralized repository for master data that must be stored for all internal and external persons and organizations that the company interacts with. The data that is associated with party records includes the party's name, address, and contact information. 
@@ -83,7 +82,7 @@ An electronic signature confirms the identity of a person who is about to start 
 In Finance and Operations, you can use electronic signatures for critical business processes. Some processes have built-in electronic signature capabilities. You can also create custom signature requirements for any database table and field.
 
 -   [Electronic signature overview](electronic-signature-overview.md)
--   [Set up electronic signatures](tasks/set-up-electronic-signatures.md) (Task guide)
+-   [Set up electronic signatures](tasks/set-up-electronic-signatures.md) (Task guide)
 
 ## Case management
 By planning, tracking, and analyzing cases, you can develop efficient resolutions that can be used for similar issues. For example, when customer service representatives or Human Resources generalists create cases, they can find information in knowledge articles to help them work with or resolve a case more efficiently. 
@@ -99,7 +98,7 @@ Record templates can help you to create records more quickly. You can create a r
 - [Use a record template to create a new record](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (Task guide)
 
 ## General organization administration
--   [Change the banner or logo](../get-started/tasks/change-banner-or-logo.md) (Task guide)
+-   [Change the banner or logo](../get-started/tasks/change-banner-or-logo.md) (Task guide)
 - [Configure document management](configure-document-management.md)
 - [Configure and send email](configure-email.md)
 -   [Date/time data and time zones](date-time-zones.md)

@@ -5,7 +5,7 @@ title: S Classes
 description: System API classes that start with the letter S.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # S Classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter S.
 
@@ -488,7 +487,7 @@ The current value of the neededAccessLevel property.
 
 #### Remarks
 
-The possible values for the AccessType system enumuration value are as follows:
+The possible values for the AccessType system enumeration value are as follows:
 
 -   AccessType::NoAccess.
 -   AccessType::View.
@@ -2904,17 +2903,17 @@ Returns true if table is not empty; otherwise false.
 #### Parameters
 
 tableId  
-If true exludes records that belongs to the company from the query; optional. By default, false.
+If true excludes records that belongs to the company from the query; optional. By default, false.
 
 <!-- -->
 
 company  
-If true exludes records that belongs to the company from the query; optional. By default, false.
+If true excludes records that belongs to the company from the query; optional. By default, false.
 
 <!-- -->
 
 not\_this\_company  
-If true exludes records that belongs to the company from the query; optional. By default, false.
+If true excludes records that belongs to the company from the query; optional. By default, false.
 
 #### Return Value
 
@@ -2929,12 +2928,12 @@ Returns true if table exists; otherwise false.
 #### Parameters
 
 sqltablename  
-A boolean flag that determines whether transactions are to used; optional. By default, false.
+A boolean flag that determines whether transactions are to be used; optional. By default, false.
 
 <!-- -->
 
 use\_within\_transaction  
-A boolean flag that determines whether transactions are to used; optional. By default, false.
+A boolean flag that determines whether transactions are to be used; optional. By default, false.
 
 #### Return Value
 
@@ -3458,7 +3457,7 @@ Retrieves the value that indicates if Unicode is supported in the database.
 
 #### Return Value
 
-The value that indicates if Unicode is suported in the database.
+The value that indicates if Unicode is supported in the database.
 
 ### Method filenameDeadlocks
 
@@ -3662,27 +3661,27 @@ Formats the input AX datatype to correct SQL type.
 #### Parameters
 
 data  
-The length of the string.By default equals zero.
+The length of the string. By default equals zero.
 
 <!-- -->
 
 forWhereClause  
-The length of the string.By default equals zero.
+The length of the string. By default equals zero.
 
 <!-- -->
 
 likeOperand  
-The length of the string.By default equals zero.
+The length of the string. By default equals zero.
 
 <!-- -->
 
 rightJustify  
-The length of the string.By default equals zero.
+The length of the string. By default equals zero.
 
 <!-- -->
 
 stringLength  
-The length of the string.By default equals zero.
+The length of the string. By default equals zero.
 
 #### Return Value
 

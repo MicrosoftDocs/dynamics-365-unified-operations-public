@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Master plans
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Use various master plans to support your company's daily working operations, simulate different planning strategies that you want to monitor, and implement a company policy, such as a policy about internal performance or customer satisfaction. 
 
@@ -51,7 +50,7 @@ You can also set up the starting dynamic plan so that it is updated with the new
 
 
 
-See also
+Additional resources
 --------
 
 [Coverage settings](coverage-settings.md)

@@ -17,10 +17,10 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations 
+ms.search.scope: Operations, Talent 
 # ms.tgt_pltfrm:  
 # ms.custom:  
-ms.search.region: Global
+ms.search.region: USA
 # ms.search.industry: 
 ms.author: shielas
 ms.search.validFrom: 2016-06-30 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up I-9 document types
 
-[!include[task guide banner](../../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../../includes/task-guide-banner.md)]
 
 This procedure shows how to view and set up document types that are used for I-9 verification. Before you set up I-9 document types, you must also set up the issuing agencies and identification types. The demo data company used to create this procedure is USMF, which includes examples of the issue agencies and identification types that are needed to complete the procedure.
 

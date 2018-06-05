@@ -32,10 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Demo files for the Data import/export framework
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 The demo files can be used together with the Contoso demo data for Microsoft Dynamics AX 2012. Specifically, the files are intended to be used together with the CEU Contoso Entertainment Systems (West) company.
 
@@ -55,7 +52,7 @@ The following table lists the configuration settings that you should enter for t
 | **Dimension code**              | Select CostCenter, Department, or ExpensePurpose. |
 | **Chart of accounts delimiter** | -                                                 |
 
- 
+
 
 ## File list
 The following table lists the demo files that are associated with each entity.
@@ -76,79 +73,79 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         AifInboundPortEntity ·         AifLookupEntryEntity ·         AifOutboundPortEntity ·         AIfWebSitesEntity ·         CustVendAIFPaymTableEntity
+·         AifInboundPortEntity ·         AifLookupEntryEntity ·         AifOutboundPortEntity ·         AIfWebSitesEntity ·         CustVendAIFPaymTableEntity
 
 Asset
 
 Dynamics AX 2012
 
-·         AssetEntity\_Basic ·         AssetEntity\_TextQualifier
+·         AssetEntity\_Basic ·         AssetEntity\_TextQualifier
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         AssetEntity\_Basic ·         AssetEntity\_TextQualifier
+·         AssetEntity\_Basic ·         AssetEntity\_TextQualifier
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         AssetEntity\_BR ·         AssetEntity\_CN ·         AssetEntity\_CZ ·         AssetEntity\_IN ·         AssetEntity\_LV ·         AssetEntity\_PL
+·         AssetEntity\_BR ·         AssetEntity\_CN ·         AssetEntity\_CZ ·         AssetEntity\_IN ·         AssetEntity\_LV ·         AssetEntity\_PL
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         AssetEntity\_BR ·         AssetEntity\_CN ·         AssetEntity\_CZ ·         AssetEntity\_IN ·         AssetEntity\_LV ·         AssetEntity\_PL ·         AssetParametersEntity
+·         AssetEntity\_BR ·         AssetEntity\_CN ·         AssetEntity\_CZ ·         AssetEntity\_IN ·         AssetEntity\_LV ·         AssetEntity\_PL ·         AssetParametersEntity
 
 Attribute types
 
 Dynamics AX 2012
 
-·         AttributeTypesEntity\_Basic
+·         AttributeTypesEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         AttributeTypesEntity\_Basic
+·         AttributeTypesEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         AttributeTypesEntity\_Basic
+·         AttributeTypesEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         AttributeTypesEntity\_Basic
+·         AttributeTypesEntity\_Basic
 
 Attributes
 
 Dynamics AX 2012
 
-·         AttributeEntity\_Basic
+·         AttributeEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         AttributeEntity\_Basic
+·         AttributeEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         AttributeEntity\_Basic
+·         AttributeEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         AttributeEntity\_Basic
+·         AttributeEntity\_Basic
 
 Audit policy
 
 Dynamics AX 2012
 
-·         AuditPolicyEntity\_Basic
+·         AuditPolicyEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         AuditPolicyEntity\_Basic
+·         AuditPolicyEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         AuditPolicyEntity\_Basic
+·         AuditPolicyEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         AuditPolicyEntity\_Basic
+·         AuditPolicyEntity\_Basic
 
 Bank parameters
 
@@ -160,21 +157,21 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         BankParametersEnitty
+·         BankParametersEnitty
 
 BarcodeSetup
 
 Dynamics AX 2012
 
-·         BarCodeSetupEntity\_Basic
+·         BarCodeSetupEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         BarCodeSetupEntity ·         BarCodeSetupEntity\_Retail
+·         BarCodeSetupEntity ·         BarCodeSetupEntity\_Retail
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         BarCodeSetupEntity ·         BarCodeSetupEntity\_Retail
+·         BarCodeSetupEntity ·         BarCodeSetupEntity\_Retail
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
@@ -188,43 +185,43 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         BatchGroupEntity
+·         BatchGroupEntity
 
 BOM
 
 Dynamics AX 2012
 
-·         BOMEntity\_Basic ·         BOMEntity\_Enum
+·         BOMEntity\_Basic ·         BOMEntity\_Enum
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         BOMEntity\_Basic ·         BOMEntity\_Enum
+·         BOMEntity\_Basic ·         BOMEntity\_Enum
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         BOMEntity\_Basic
+·         BOMEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         BOMEntity ·         BOMEntity\_Basic
+·         BOMEntity ·         BOMEntity\_Basic
 
 BOMVersion
 
 Dynamics AX 2012
 
-·         BOMVersionEntity\_Default ·         BomVersionEntity\_Enum
+·         BOMVersionEntity\_Default ·         BomVersionEntity\_Enum
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         BOMVersionEntity\_Default ·         BomVersionEntity\_Enum
+·         BOMVersionEntity\_Default ·         BomVersionEntity\_Enum
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         BOMVersionEntity\_Basic
+·         BOMVersionEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         BOMVersionEntity ·         BOMVersionEntity\_Basic
+·         BOMVersionEntity ·         BOMVersionEntity\_Basic
 
 Budget
 
@@ -236,7 +233,7 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         BudgetParametersEntity ·         BudgetTransactionLineEntity
+·         BudgetParametersEntity ·         BudgetTransactionLineEntity
 
 Business intelligence
 
@@ -248,115 +245,115 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         BIConfigruationEntity ·         BITimePeriodsMDXEntity
+·         BIConfigruationEntity ·         BITimePeriodsMDXEntity
 
 Case workflow
 
 Dynamics AX 2012
 
-·         CaseWorkFlowEntity\_Basic
+·         CaseWorkFlowEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         CaseWorkFlowEntity\_Basic
+·         CaseWorkFlowEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         CaseWorkFlowEntity\_Basic
+·         CaseWorkFlowEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         CaseWorkFlowEntity\_Basic
+·         CaseWorkFlowEntity\_Basic
 
 Category hierarchies
 
 Dynamics AX 2012
 
-·         EcoResCategoryHierarchyEntity\_Basic ·         EcoResCategoryHierarchyRoleEntity\_Basic  
+·         EcoResCategoryHierarchyEntity\_Basic ·         EcoResCategoryHierarchyRoleEntity\_Basic  
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         EcoResCategoryHierarchyEntity\_Basic ·         EcoResCategoryHierarchyRoleEntity\_Basic
+·         EcoResCategoryHierarchyEntity\_Basic ·         EcoResCategoryHierarchyRoleEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         EcoResCategoryHierarchyEntity\_Basic ·         EcoResCategoryHierarchyRoleEntity\_Basic
+·         EcoResCategoryHierarchyEntity\_Basic ·         EcoResCategoryHierarchyRoleEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         EcoResAttributeEntity ·         EcoResAttributeTypeEntity ·         EcoResCategoryHierarchyEntity ·         EcoResCategoryHierarchyEntity\_Basic ·         EcoResCategoryHierarchyRoleEntity ·         EcoResCategoryHierarchyRoleEntity\_Basic
+·         EcoResAttributeEntity ·         EcoResAttributeTypeEntity ·         EcoResCategoryHierarchyEntity ·         EcoResCategoryHierarchyEntity\_Basic ·         EcoResCategoryHierarchyRoleEntity ·         EcoResCategoryHierarchyRoleEntity\_Basic
 
 Category table
 
 Dynamics AX 2012
 
-·         CategoryTableEntity\_Project
+·         CategoryTableEntity\_Project
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         CategoryTableEntity\_Project
+·         CategoryTableEntity\_Project
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         CategoryTableEntity\_Project ·         CategoryTableEntity\_Project\_BR ·         CategoryTableEntity\_Project\_TH
+·         CategoryTableEntity\_Project ·         CategoryTableEntity\_Project\_BR ·         CategoryTableEntity\_Project\_TH
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         CategoryTableEntity ·         CategoryTableEntity\_Project ·         CategoryTableEntity\_Project\_BR ·         CategoryTableEntity\_Project\_TH
+·         CategoryTableEntity ·         CategoryTableEntity\_Project ·         CategoryTableEntity\_Project\_BR ·         CategoryTableEntity\_Project\_TH
 
 Configure account structures
 
 Dynamics AX 2012
 
-·         DimensionHierarchyEntity\_Basic
+·         DimensionHierarchyEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         DimensionHierarchyEntity\_Basic
+·         DimensionHierarchyEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         DimensionHierarchyEntity\_Basic
+·         DimensionHierarchyEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         DimensionHierarchyEntity ·         DimensionHierarchyEntity\_Basic
+·         DimensionHierarchyEntity ·         DimensionHierarchyEntity\_Basic
 
-  ContactPerson
+  ContactPerson
 
 Dynamics AX 2012
 
-·         ContactPersonEntity\_Address ·         ContactPersonEntity\_Basic
+·         ContactPersonEntity\_Address ·         ContactPersonEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         ContactPersonEntity\_Address ·         ContactPersonEntity\_Basic
+·         ContactPersonEntity\_Address ·         ContactPersonEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         ContactPersonAddressEntity\_RU
+·         ContactPersonAddressEntity\_RU
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         ContactPersonAddressEntity ·         ContactPersonAddressEntity\_RU
+·         ContactPersonAddressEntity ·         ContactPersonAddressEntity\_RU
 
 ContactPersonAddress
 
 Dynamics AX 2012
 
-·         ContactPersonAddressEntity\_Basic ·         ContactPersonAddressEntity\_MultipleAddressValues
+·         ContactPersonAddressEntity\_Basic ·         ContactPersonAddressEntity\_MultipleAddressValues
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         ContactPersonAddressEntity\_Basic ·         ContactPersonAddressEntity\_MultipleAddressValues
+·         ContactPersonAddressEntity\_Basic ·         ContactPersonAddressEntity\_MultipleAddressValues
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         ContactPersonAddressEntity\_RU
+·         ContactPersonAddressEntity\_RU
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         ContactPersonAddressEntity ·         ContactPersonAddressEntity\_RU
+·         ContactPersonAddressEntity ·         ContactPersonAddressEntity\_RU
 
 Cost accounting parameters
 
@@ -368,99 +365,99 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         COSParametersEntity
+·         COSParametersEntity
 
-  Customer
+  Customer
 
 Dynamics AX 2012
 
-·         CustomerEntity\_Person ·         CustomerEntity\_ContactInfo ·         CustomerEntity\_Dimensions\_Enums
+·         CustomerEntity\_Person ·         CustomerEntity\_ContactInfo ·         CustomerEntity\_Dimensions\_Enums
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         CustomerEntity\_Person ·         CustomerEntity\_ContactInfo ·         CustomerEntity\_Dimensions\_Enums
+·         CustomerEntity\_Person ·         CustomerEntity\_ContactInfo ·         CustomerEntity\_Dimensions\_Enums
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         CustomerEntity\_Basic ·         CustomerEntity\_BR ·         CustonerEntity\_PL ·         CustomerEntity\_RU
+·         CustomerEntity\_Basic ·         CustomerEntity\_BR ·         CustonerEntity\_PL ·         CustomerEntity\_RU
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         CustomerEntity\_Basic ·         CustomerEntity\_BR ·         CustonerEntity\_PL ·         CustomerEntity\_RU
+·         CustomerEntity\_Basic ·         CustomerEntity\_BR ·         CustonerEntity\_PL ·         CustomerEntity\_RU
 
 Customer address
 
 Dynamics AX 2012
 
-·         CustomerAddressEntity\_Basic ·         CustomerAddressEntity\_MultipleAddressValues
+·         CustomerAddressEntity\_Basic ·         CustomerAddressEntity\_MultipleAddressValues
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         CustomerAddressEntity\_Basic ·         CustomerAddressEntity\_MultipleAddressValues
+·         CustomerAddressEntity\_Basic ·         CustomerAddressEntity\_MultipleAddressValues
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         CustomerAddressEntity\_Basic
+·         CustomerAddressEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         CustomerAddressEntity ·         CustomerAddressEntity\_Basic
+·         CustomerAddressEntity ·         CustomerAddressEntity\_Basic
 
 Departments
 
 Dynamics AX 2012
 
-·         DepartmentEntity\_Basic
+·         DepartmentEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         DepartmentEntity\_Basic
+·         DepartmentEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         DepartmentEntity\_Basic
+·         DepartmentEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         DepartmentEntity\_Basic
+·         DepartmentEntity\_Basic
 
-  Dimensions
+  Dimensions
 
 Dynamics AX 2012
 
-·         DimensionsEntity\_Basic ·         DimensionsEntity\_Enum
+·         DimensionsEntity\_Basic ·         DimensionsEntity\_Enum
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         DimensionsEntity\_Basic ·         DimensionsEntity\_Enum
+·         DimensionsEntity\_Basic ·         DimensionsEntity\_Enum
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         DimensionsEntity\_Basic
+·         DimensionsEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         DimensionAttributeValueEntity ·         DimensionsEntity\_Basic
+·         DimensionAttributeValueEntity ·         DimensionsEntity\_Basic
 
-  DocuType
+  DocuType
 
 Dynamics AX 2012
 
-·         DocuTypeEntity\_Basic
+·         DocuTypeEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         DocuTypeEntity\_Basic
+·         DocuTypeEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         DocuTypeEntity\_Basic
+·         DocuTypeEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         DocuTypeEntity ·         DocuTypeEntity\_Basic ·         DocuTableEnabledEntity
+·         DocuTypeEntity ·         DocuTypeEntity\_Basic ·         DocuTableEnabledEntity
 
-  Document management
+  Document management
 
 Dynamics AX 2012
 
@@ -470,7 +467,7 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         CollabSiteParametersEntity ·         ContentTypeEntity
+·         CollabSiteParametersEntity ·         ContentTypeEntity
 
 Electronic signatures
 
@@ -482,43 +479,43 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         SIGParametersEntity
+·         SIGParametersEntity
 
 Employee
 
 Dynamics AX 2012
 
-·         EmployeeEntity\_Address ·         EmployeeEntity\_Basic
+·         EmployeeEntity\_Address ·         EmployeeEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         EmployeeEntity\_Address ·         EmployeeEntityBasic
+·         EmployeeEntity\_Address ·         EmployeeEntityBasic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         EmployeeEntity\_Basic
+·         EmployeeEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         EmployeeEntity ·         EmployeeEntity\_Basic
+·         EmployeeEntity ·         EmployeeEntity\_Basic
 
 Employee address
 
 Dynamics AX 2012
 
-·         EmployeeAddressEntity\_Basic ·         EmployeeAddressEntity\_MultipleAddressValues
+·         EmployeeAddressEntity\_Basic ·         EmployeeAddressEntity\_MultipleAddressValues
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         EmployeeAddressEntity\_Basic ·         EmployeeAddressEntity\_MultipleAddressValues
+·         EmployeeAddressEntity\_Basic ·         EmployeeAddressEntity\_MultipleAddressValues
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         EmployeeAddressEntity\_Basic
+·         EmployeeAddressEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         EmployeeAddressEntity ·         EmployeeAddressEntity\_Basic
+·         EmployeeAddressEntity ·         EmployeeAddressEntity\_Basic
 
 Enterprise Portal
 
@@ -530,9 +527,9 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         EPDocuParametersEntity
+·         EPDocuParametersEntity
 
-  Environmental sustainability parameter
+  Environmental sustainability parameter
 
 Dynamics AX 2012
 
@@ -542,7 +539,7 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         EMSParameterEntity
+·         EMSParameterEntity
 
 Expense report parameters
 
@@ -554,133 +551,133 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TrvParametersEntity
+·         TrvParametersEntity
 
 Expense report delegation
 
 Dynamics AX 2012
 
-·         TrvAppEmplSubEntity\_Basic
+·         TrvAppEmplSubEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TrvAppEmplSubEntity\_Basic
+·         TrvAppEmplSubEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TrvApEmplSubEntity\_Basic
+·         TrvApEmplSubEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TrvAppEmplSubEntity\_Basic
+·         TrvAppEmplSubEntity\_Basic
 
 Expense report cost
 
 Dynamics AX 2012
 
-·         TrvCostTypeEntity\_Basic
+·         TrvCostTypeEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TrvCostTypeEntity\_Basic
+·         TrvCostTypeEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TrvCostTypeEntity\_Basic
+·         TrvCostTypeEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TrvCostTypeEntity\_Basic
+·         TrvCostTypeEntity\_Basic
 
 Expense report category
 
 Dynamics AX 2012
 
-·         TrvExpSubCateogoryEntity\_Basic
+·         TrvExpSubCateogoryEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TrvExpSubCategoryEntity\_Basic
+·         TrvExpSubCategoryEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TrvExpSubCategoryEntity\_Basic
+·         TrvExpSubCategoryEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TrvExpSubCategoryEntity\_Basic
+·         TrvExpSubCategoryEntity\_Basic
 
 Expense report payment method
 
 Dynamics AX 2012
 
-·         TrvPayMethodEntity\_Basic
+·         TrvPayMethodEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TrvPayMethodEntity\_Basic
+·         TrvPayMethodEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TrvPayMethodEntity\_Basic
+·         TrvPayMethodEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TrvPayMethodEntity\_Basic
+·         TrvPayMethodEntity\_Basic
 
 Expense report category code mapping
 
 Dynamics AX 2012
 
-·         TrvPBSCatCodesEntity\_Basic
+·         TrvPBSCatCodesEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TrvPBSCatCodesEntity\_Basic
+·         TrvPBSCatCodesEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TrvPBSCatCodeEntity\_Basic
+·         TrvPBSCatCodeEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TrvPBSCatCodesEntity\_Basic
+·         TrvPBSCatCodesEntity\_Basic
 
 Expense report policy
 
 Dynamics AX 2012
 
-·         TrvPolicyEntity\_Basic
+·         TrvPolicyEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TrvPolicyEntity\_Basic
+·         TrvPolicyEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TrvPolicyEntity\_Basic
+·         TrvPolicyEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TrvPolicyEntity\_Basic
+·         TrvPolicyEntity\_Basic
 
 Expense report validate payment
 
 Dynamics AX 2012
 
-·         TrvValidatePaymentEntity\_Basic
+·         TrvValidatePaymentEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TrvValidatePaymentEntity\_Basic
+·         TrvValidatePaymentEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TrvValidatePaymentEntity\_Basic
+·         TrvValidatePaymentEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TrvValidatePaymentEntity\_Basic
+·         TrvValidatePaymentEntity\_Basic
 
 Foreign trade
 
@@ -692,7 +689,7 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         InstrastatStatParametersEntity
+·         InstrastatStatParametersEntity
 
 Global address book parameters
 
@@ -704,7 +701,7 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         DirParametersEntity
+·         DirParametersEntity
 
 Human resources
 
@@ -716,115 +713,115 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         HRMParametersEntity
+·         HRMParametersEntity
 
 Inventory
 
 Dynamics AX 2012
 
-·         InventJournalEntity\_Item defaults ·         InventJournalEntity\_UpdateConfiguration
+·         InventJournalEntity\_Item defaults ·         InventJournalEntity\_UpdateConfiguration
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         InventJournalEntity\_Item defaults ·         InventJournalEntity\_UpdateConfiguration
+·         InventJournalEntity\_Item defaults ·         InventJournalEntity\_UpdateConfiguration
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         InventJournalEntity\_RU
+·         InventJournalEntity\_RU
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         InventJournalEntity ·         InventJournalEntity\_RU ·         InventParametersEntity ·         InventTableEntity
+·         InventJournalEntity ·         InventJournalEntity\_RU ·         InventParametersEntity ·         InventTableEntity
 
 Inventory Inventory unit of measure
 
 Dynamics AX 2012
 
-·         UnitOfMeasureEntity\_Basic ·         UnitOfMeasureEntity\_Enum
+·         UnitOfMeasureEntity\_Basic ·         UnitOfMeasureEntity\_Enum
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         UnitOfMeasureEntity\_Basic ·         UnitOfMeasureEntity\_Enum
+·         UnitOfMeasureEntity\_Basic ·         UnitOfMeasureEntity\_Enum
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         UnitOfMeasureEntity\_Basic
+·         UnitOfMeasureEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         UnitOfMeasureEntity ·         UnitOfMeasureEntity\_Basic
+·         UnitOfMeasureEntity ·         UnitOfMeasureEntity\_Basic
 
 Jobs
 
 Dynamics AX 2012
 
-·         HcmJobDetailsEntity\_Basic
+·         HcmJobDetailsEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         HcmJobDetailsEntity\_Basic
+·         HcmJobDetailsEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         HcmJobDetailsEntity\_Basic
+·         HcmJobDetailsEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         HcmJobDetailEntity ·         HcmJobDetailsEntity\_Basic ·         HcmPositionDetailEntity ·         HcmSharedParametersEntity
+·         HcmJobDetailEntity ·         HcmJobDetailsEntity\_Basic ·         HcmPositionDetailEntity ·         HcmSharedParametersEntity
 
-  Ledger
+  Ledger
 
 Dynamics AX 2012
 
-·         LedgerBalanceEntity\_APPaymentJournal ·         LedgerBalanceEntity\_ARPaymentJournal ·         LedgerBalanceEntity\_GeneralJournal
+·         LedgerBalanceEntity\_APPaymentJournal ·         LedgerBalanceEntity\_ARPaymentJournal ·         LedgerBalanceEntity\_GeneralJournal
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         LedgerBalanceEntity\_APPaymentJournal ·         LedgerBalanceEntity\_ARPaymentJournal ·         LedgerBalanceEntity\_GeneralJournal
+·         LedgerBalanceEntity\_APPaymentJournal ·         LedgerBalanceEntity\_ARPaymentJournal ·         LedgerBalanceEntity\_GeneralJournal
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         LedgerJounalEntity\_AU ·         LedgerJournalEntity\_CN ·         LedgerJournalEntity\_ES ·         LedgerJournalEntity\_IN ·         LedgerJournalEntity\_IS ·         LedgerJournalEntity\_LT ·         LedgerJournalEntity\_LV ·         LedgerJournal\_PL ·         LedgerJournalEntity\_RU
+·         LedgerJounalEntity\_AU ·         LedgerJournalEntity\_CN ·         LedgerJournalEntity\_ES ·         LedgerJournalEntity\_IN ·         LedgerJournalEntity\_IS ·         LedgerJournalEntity\_LT ·         LedgerJournalEntity\_LV ·         LedgerJournal\_PL ·         LedgerJournalEntity\_RU
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         LedgerJounalEntity\_AU ·         LedgerJournalEntity\_CN ·         LedgerJournalEntity\_ES ·         LedgerJournalEntity\_IN ·         LedgerJournalEntity\_IS ·         LedgerJournalEntity\_LT ·         LedgerJournalEntity\_LV ·         LedgerJournal\_PL ·         LedgerJournalEntity\_RU ·         LedgerParametersEntity
+·         LedgerJounalEntity\_AU ·         LedgerJournalEntity\_CN ·         LedgerJournalEntity\_ES ·         LedgerJournalEntity\_IN ·         LedgerJournalEntity\_IS ·         LedgerJournalEntity\_LT ·         LedgerJournalEntity\_LV ·         LedgerJournal\_PL ·         LedgerJournalEntity\_RU ·         LedgerParametersEntity
 
 Main account
 
 Dynamics AX 2012
 
-·         MAinAccountEntity\_Basic ·         MainAccountEntity\_Dimensions ·         MainAccountEntity\_FinancialStatements
+·         MAinAccountEntity\_Basic ·         MainAccountEntity\_Dimensions ·         MainAccountEntity\_FinancialStatements
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         MAinAccountEntity\_Basic ·         MainAccountEntity\_Dimensions ·         MainAccountEntity\_FinancialStatements
+·         MAinAccountEntity\_Basic ·         MainAccountEntity\_Dimensions ·         MainAccountEntity\_FinancialStatements
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         MainAccountEntity\_BR ·         MainAccountEntity\_ES
+·         MainAccountEntity\_BR ·         MainAccountEntity\_ES
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         MainAccountEntity ·         MainAccountEntity\_BR ·         MainAccountEntity\_ES
+·         MainAccountEntity ·         MainAccountEntity\_BR ·         MainAccountEntity\_ES
 
 Mileage rate tiers
 
 Dynamics AX 2012
 
-·         TrvCostTypeRatesEntity\_Basic
+·         TrvCostTypeRatesEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TrvCostTypeRatesEntity\_Basic
+·         TrvCostTypeRatesEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TrvCostTypeRatesEntity\_Basic
+·         TrvCostTypeRatesEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TrvCostTypeRatesEntity ·         TrvCostTypeRatesEntity\_Basic
+·         TrvCostTypeRatesEntity ·         TrvCostTypeRatesEntity\_Basic
 
 Number sequence
 
@@ -836,7 +833,7 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         NumberSequenceTableEntity
+·         NumberSequenceTableEntity
 
 Office Add-ins
 
@@ -848,7 +845,7 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         DocuDataSourceEntity
+·         DocuDataSourceEntity
 
 Operations resources
 
@@ -860,25 +857,25 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         WrkCtrParametersEntity
+·         WrkCtrParametersEntity
 
 Organization
 
 Dynamics AX 2012
 
-·         OrganizationHierarchyEntity\_Basic
+·         OrganizationHierarchyEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         OrganizationHierarchyEntity\_Basic
+·         OrganizationHierarchyEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         OrganizationHierarchyEntity\_Basic
+·         OrganizationHierarchyEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         OMHierarchyEntity ·         OMOperatingUnitEntity ·         OrganizationHierarchyEntity ·         OrganizationHierarchyEntity\_Basic
+·         OMHierarchyEntity ·         OMOperatingUnitEntity ·         OrganizationHierarchyEntity ·         OrganizationHierarchyEntity\_Basic
 
 Outlook
 
@@ -890,7 +887,7 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         SmmParametersTableEntity ·         SysEmailParametersEntity
+·         SmmParametersTableEntity ·         SysEmailParametersEntity
 
 Payroll
 
@@ -902,7 +899,7 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         PRLPayrollParametersEntity
+·         PRLPayrollParametersEntity
 
 Policies
 
@@ -914,205 +911,205 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         SysPolicySourceDocumentRuleEntity
+·         SysPolicySourceDocumentRuleEntity
 
 Positions
 
 Dynamics AX 2012
 
-·         PositionsEntity\_Basic
+·         PositionsEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         PostionsEntity\_Basic
+·         PostionsEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         PositionsEntity\_Basic
+·         PositionsEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         PositionsEntity\_Basic
+·         PositionsEntity\_Basic
 
 PriceDiscount
 
 Dynamics AX 2012
 
-·         PriceDiscEntity\_DiscountJournal ·         PriceDiscEntity\_Enum ·         PriceDiscEntity\_Price-And-DiscJournal
+·         PriceDiscEntity\_DiscountJournal ·         PriceDiscEntity\_Enum ·         PriceDiscEntity\_Price-And-DiscJournal
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         PriceDiscEntity\_DiscountJournal ·         PriceDiscEntity\_Enum ·         PriceDiscEntity\_Price-And-DiscJournal
+·         PriceDiscEntity\_DiscountJournal ·         PriceDiscEntity\_Enum ·         PriceDiscEntity\_Price-And-DiscJournal
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         PriceDiscountEntity\_RU
+·         PriceDiscountEntity\_RU
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         PriceDiscAdmTransEntity ·         PriceDiscountEntity\_RU
+·         PriceDiscAdmTransEntity ·         PriceDiscountEntity\_RU
 
 Product
 
 Dynamics AX 2012
 
-·         ProductEntity\_DimensionGroups ·         ProductEntity\_PurchaseSalesInvent
+·         ProductEntity\_DimensionGroups ·         ProductEntity\_PurchaseSalesInvent
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         ProductEntity\_DimensionGroups ·         ProductEntity\_PurchSalesInvent
+·         ProductEntity\_DimensionGroups ·         ProductEntity\_PurchSalesInvent
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         ProductEntityEntity\_Basic ·         ProductEntityEntity\_BR ·         ProductEntityEntity\_IN ·         ProductEntityEntity\_RU
+·         ProductEntityEntity\_Basic ·         ProductEntityEntity\_BR ·         ProductEntityEntity\_IN ·         ProductEntityEntity\_RU
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         ProdParametersEntity ·         ProductEntity ·         ProductEntityEntity\_Basic ·         ProductEntityEntity\_BR ·         ProductEntityEntity\_IN ·         ProductEntityEntity\_RU ·         ProductMasterEntity
+·         ProdParametersEntity ·         ProductEntity ·         ProductEntityEntity\_Basic ·         ProductEntityEntity\_BR ·         ProductEntityEntity\_IN ·         ProductEntityEntity\_RU ·         ProductMasterEntity
 
 Project
 
 Dynamics AX 2012
 
-·         ProjectEtnity\_Basic ·         ProjectEntity\_Enum
+·         ProjectEtnity\_Basic ·         ProjectEntity\_Enum
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         ProjectEntity\_Basic ·         ProjectEntity\_Enum
+·         ProjectEntity\_Basic ·         ProjectEntity\_Enum
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         ProjectEntity\_PSA
+·         ProjectEntity\_PSA
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         ProjectEntity\_PSA ·         ProjInvoiceTableEntity ·         ProjJournalTransEntity ·         ProjOnAccTransEntity ·         ProjServerSettingsEntity ·         ProjTableEntitySyncParametersEntity
+·         ProjectEntity\_PSA ·         ProjInvoiceTableEntity ·         ProjJournalTransEntity ·         ProjOnAccTransEntity ·         ProjServerSettingsEntity ·         ProjTableEntitySyncParametersEntity
 
 ProjectHourJournal
 
 Dynamics AX 2012
 
-·         ProjectHourJournalEntity\_Basic
+·         ProjectHourJournalEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         ProjectHourJournalEntity\_Basic
+·         ProjectHourJournalEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         ProjectHourEntity\_PSA
+·         ProjectHourEntity\_PSA
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         ProjectHourEntity\_PSA
+·         ProjectHourEntity\_PSA
 
 PurchLine
 
 Dynamics AX 2012
 
-·         PurchLineEntity\_Basic1 ·         PurchLineEntity\_Basic2
+·         PurchLineEntity\_Basic1 ·         PurchLineEntity\_Basic2
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         PurchLineEntity\_Basic1 ·         PurchLineEntity\_Basic2
+·         PurchLineEntity\_Basic1 ·         PurchLineEntity\_Basic2
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         PurchLineEntity\_Basic ·         PurchLineEntity\_BR ·         PurchLineEntity\_HU ·         PurchLineEntity\_LT
+·         PurchLineEntity\_Basic ·         PurchLineEntity\_BR ·         PurchLineEntity\_HU ·         PurchLineEntity\_LT
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         PurchLineEntity\_Basic ·         PurchLineEntity\_BR ·         PurchLineEntity\_HU ·         PurchLineEntity\_LT
+·         PurchLineEntity\_Basic ·         PurchLineEntity\_BR ·         PurchLineEntity\_HU ·         PurchLineEntity\_LT
 
 PurchTable
 
 Dynamics AX 2012
 
-·         PurchTableEntity\_Basic1 ·         PurchTableEntity\_Basic2
+·         PurchTableEntity\_Basic1 ·         PurchTableEntity\_Basic2
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         PurchTableEntity\_Basic1 ·         PurchTableEntity\_Basic2
+·         PurchTableEntity\_Basic1 ·         PurchTableEntity\_Basic2
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         PurchTableEntity\_Basic ·         PurchTableEntity\_HU ·         PurchTableEntity\_LT ·         PurchTableEntity\_LV ·         PurchTableEntity\_PL
+·         PurchTableEntity\_Basic ·         PurchTableEntity\_HU ·         PurchTableEntity\_LT ·         PurchTableEntity\_LV ·         PurchTableEntity\_PL
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         PurchTableEntity ·         PurchTableEntity\_Basic ·         PurchTableEntity\_HU ·         PurchTableEntity\_LT ·         PurchTableEntity\_LV ·         PurchTableEntity\_PL
+·         PurchTableEntity ·         PurchTableEntity\_Basic ·         PurchTableEntity\_HU ·         PurchTableEntity\_LT ·         PurchTableEntity\_LV ·         PurchTableEntity\_PL
 
 Route
 
 Dynamics AX 2012
 
-·         RouteEntity\_Basic
+·         RouteEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         RouteEntity\_Basic
+·         RouteEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         RouteEntity\_Basic
+·         RouteEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         RouteEntity ·         RouteEntity\_Basic
+·         RouteEntity ·         RouteEntity\_Basic
 
 Route operations
 
 Dynamics AX 2012
 
-·         RouteOperationsEntity\_Basic
+·         RouteOperationsEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         RouteOperationsEntity\_Basic
+·         RouteOperationsEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         RouteOperationsEntity\_Basic
+·         RouteOperationsEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         RouteOperationsEntity ·         RouteOperationsEntity\_Basic
+·         RouteOperationsEntity ·         RouteOperationsEntity\_Basic
 
 SalesLine
 
 Dynamics AX 2012
 
-·         SalesLineEntity\_Basic ·         SalesLineEntity\_Basic1 ·         SalesLineEntity\_DefaultsHeader
+·         SalesLineEntity\_Basic ·         SalesLineEntity\_Basic1 ·         SalesLineEntity\_DefaultsHeader
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         SalesLineEntity\_Basic ·         SalesLineEntity\_Basic1 ·         SalesLineEntity\_DefaultsHeader
+·         SalesLineEntity\_Basic ·         SalesLineEntity\_Basic1 ·         SalesLineEntity\_DefaultsHeader
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         SalesLineEntity\_HU ·         SalesLineEntity\_RU ·         SalesLineEntity\_LT
+·         SalesLineEntity\_HU ·         SalesLineEntity\_RU ·         SalesLineEntity\_LT
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         SalesLineEntity ·         SalesLineEntity\_HU ·         SalesLineEntity\_RU ·         SalesLineEntity\_LT
+·         SalesLineEntity ·         SalesLineEntity\_HU ·         SalesLineEntity\_RU ·         SalesLineEntity\_LT
 
 SalesTable
 
 Dynamics AX 2012
 
-·         SalesTableEntity\_Basic ·         SalesTableEntity\_Basic1
+·         SalesTableEntity\_Basic ·         SalesTableEntity\_Basic1
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         SalesTableEntity\_Basic ·         SalesTableEntity\_Basic1
+·         SalesTableEntity\_Basic ·         SalesTableEntity\_Basic1
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         SalesTableEntity\_HU ·         SalesTableEntity\_IN ·         SalesTableEntity\_LT ·         SalesTableEntity\_LV ·         SalesTableEntity\_PL
+·         SalesTableEntity\_HU ·         SalesTableEntity\_IN ·         SalesTableEntity\_LT ·         SalesTableEntity\_LV ·         SalesTableEntity\_PL
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         SalesTableEntity ·         SalesTableEntity\_HU ·         SalesTableEntity\_IN ·         SalesTableEntity\_LT ·         SalesTableEntity\_LV ·         SalesTableEntity\_PL
+·         SalesTableEntity ·         SalesTableEntity\_HU ·         SalesTableEntity\_IN ·         SalesTableEntity\_LT ·         SalesTableEntity\_LV ·         SalesTableEntity\_PL
 
 Service management
 
@@ -1124,7 +1121,7 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         SmaParametersEntity
+·         SmaParametersEntity
 
 Server configuration
 
@@ -1136,25 +1133,25 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         SysServerConfigEntity
+·         SysServerConfigEntity
 
 Shared categories
 
 Dynamics AX 2012
 
-·         SharedCategoryEntity\_Basic
+·         SharedCategoryEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         SharedCaegoryEntity\_Basic
+·         SharedCaegoryEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         SharedCategoryEntity\_Basic
+·         SharedCategoryEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         SharedCategoryEntity ·         SharedCategoryEntity\_Basic
+·         SharedCategoryEntity ·         SharedCategoryEntity\_Basic
 
 Server configuration SQL Server Reporting Services
 
@@ -1166,7 +1163,7 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         SRSReportDeploymentEntity ·         SRSServersEntity
+·         SRSReportDeploymentEntity ·         SRSServersEntity
 
 Subscription parameters
 
@@ -1178,7 +1175,7 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         SubscriptionParametersEntity
+·         SubscriptionParametersEntity
 
 System parameters
 
@@ -1190,277 +1187,277 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         SystemParametersEntity
+·         SystemParametersEntity
 
 TaxAuthorityAddress
 
 Dynamics AX 2012
 
-·         TaxAuthrorityAddressEntity\_Basic
+·         TaxAuthrorityAddressEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TaxAuthorityAddressEntity\_Basic
+·         TaxAuthorityAddressEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TaxAuthorityAddressEntity\_BR ·         TaxAuthorityAddressEntity\_RU
+·         TaxAuthorityAddressEntity\_BR ·         TaxAuthorityAddressEntity\_RU
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TaxAuthorityAddressEntity ·         TaxAuthroityAddressEntity\_RU
+·         TaxAuthorityAddressEntity ·         TaxAuthroityAddressEntity\_RU
 
 TaxData
 
 Dynamics AX 2012
 
-·         TaxDataEntity\_Basic
+·         TaxDataEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TaxDataEntity\_Basic
+·         TaxDataEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TaxDataEntity\_Basic
+·         TaxDataEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TaxDataEntity ·         TaxDataEntity\_Basic
+·         TaxDataEntity ·         TaxDataEntity\_Basic
 
 TaxGroupData
 
 Dynamics AX 2012
 
-·         TaxGroupDataEntity\_Basic
+·         TaxGroupDataEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TaxGroupDataEntity\_Basic
+·         TaxGroupDataEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TaxGroupDataEntity\_BR
+·         TaxGroupDataEntity\_BR
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TaxGroupDataEntity ·         TaxGroupDataEntity\_BR
+·         TaxGroupDataEntity ·         TaxGroupDataEntity\_BR
 
 TaxGroupHeading
 
 Dynamics AX 2012
 
-·         TaxGroupHeadingEntity\_Basic
+·         TaxGroupHeadingEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TaxGroupHeadingEntity\_\_Basic
+·         TaxGroupHeadingEntity\_\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TaxGroupHeadingEntity\_W
+·         TaxGroupHeadingEntity\_W
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TaxGroupHeadingEntity ·         TaxGroupHeadingEntity\_W
+·         TaxGroupHeadingEntity ·         TaxGroupHeadingEntity\_W
 
 TaxItemGroupHeading
 
 Dynamics AX 2012
 
-·         TaxItemGroupHeadingEntity\_Basic
+·         TaxItemGroupHeadingEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TaxItemGroupHeadingEntity\_Basic
+·         TaxItemGroupHeadingEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TaxItemGroupHeadingEntity\_HU ·         TaxItemGroupHeadingEntity\_IN
+·         TaxItemGroupHeadingEntity\_HU ·         TaxItemGroupHeadingEntity\_IN
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TaxItemGroupHeadingEntity ·         TaxItemGroupHeadingEntity\_HU ·         TaxItemGroupHeadingEntity\_IN
+·         TaxItemGroupHeadingEntity ·         TaxItemGroupHeadingEntity\_HU ·         TaxItemGroupHeadingEntity\_IN
 
-TaxLedgerAccountGroup  
+TaxLedgerAccountGroup  
 
 Dynamics AX 2012
 
-·         TaxLedgerAccountGroupEntity\_Basic
+·         TaxLedgerAccountGroupEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TaxLedgerAccountGroupEntity\_Basic
+·         TaxLedgerAccountGroupEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TaxLedgerAccountGroupEntity\_Basic ·         TaxLedgerAccountGroupEntity\_BR ·         TaxLedgerAccountGroupEntity\_HU ·         TaxLedgerAccountGroupEntity\_RU
+·         TaxLedgerAccountGroupEntity\_Basic ·         TaxLedgerAccountGroupEntity\_BR ·         TaxLedgerAccountGroupEntity\_HU ·         TaxLedgerAccountGroupEntity\_RU
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TaxLedgerAccountGroupEntity ·         TaxLedgerAccountGroupEntity\_Basic ·         TaxLedgerAccountGroupEntity\_BR ·         TaxLedgerAccountGroupEntity\_HU ·         TaxLedgerAccountGroupEntity\_RU
+·         TaxLedgerAccountGroupEntity ·         TaxLedgerAccountGroupEntity\_Basic ·         TaxLedgerAccountGroupEntity\_BR ·         TaxLedgerAccountGroupEntity\_HU ·         TaxLedgerAccountGroupEntity\_RU
 
 TaxOnItem
 
 Dynamics AX 2012
 
-·         TaxOnItemEntity\_Basic
+·         TaxOnItemEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TaxOnItemEntity\_Basic
+·         TaxOnItemEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TaxOnItemEntity\_BR ·         TaxOnItemEntity\_IN
+·         TaxOnItemEntity\_BR ·         TaxOnItemEntity\_IN
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TaxOnItemEntity ·         TaxOnItemEntity\_BR ·         TaxOnItemEntity\_IN
+·         TaxOnItemEntity ·         TaxOnItemEntity\_BR ·         TaxOnItemEntity\_IN
 
 TaxParameters
 
 Dynamics AX 2012
 
-·         TaxParametersEntity\_Basic
+·         TaxParametersEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TaxParametersEntity\_Basic
+·         TaxParametersEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TaxParametersEntity\_CZ ·         TaxParametersEntity\_IN ·         TaxParametersEntity\_RU
+·         TaxParametersEntity\_CZ ·         TaxParametersEntity\_IN ·         TaxParametersEntity\_RU
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TaxParametersEntity ·         TaxParametersEntity\_CZ ·         TaxParametersEntity\_IN ·         TaxParametersEntity\_RU
+·         TaxParametersEntity ·         TaxParametersEntity\_CZ ·         TaxParametersEntity\_IN ·         TaxParametersEntity\_RU
 
 TaxPeriodHead
 
 Dynamics AX 2012
 
-·         TaxPeriodHeadEntity\_Basic
+·         TaxPeriodHeadEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TaxPeriodHeadEntity\_Basic
+·         TaxPeriodHeadEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TaxPeriodHeadEntity\_HU
+·         TaxPeriodHeadEntity\_HU
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TaxPeriodHeadEntity ·         TaxPeriodHead\_HU
+·         TaxPeriodHeadEntity ·         TaxPeriodHead\_HU
 
-TaxTable  
+TaxTable  
 
 Dynamics AX 2012
 
-·         TaxTableEntity\_Basic
+·         TaxTableEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         TaxTableEntity\_Basic
+·         TaxTableEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         TaxTableEntity\_BR ·         TaxTableEntity\_IN ·         TaxTableEntity\_RU ·         TaxTableEntity\_TH
+·         TaxTableEntity\_BR ·         TaxTableEntity\_IN ·         TaxTableEntity\_RU ·         TaxTableEntity\_TH
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         TaxTableEntity ·         TaxTableEntity\_BR ·         TaxTableEntity\_IN ·         TaxTableEntity\_RU ·         TaxTableEntity\_TH
+·         TaxTableEntity ·         TaxTableEntity\_BR ·         TaxTableEntity\_IN ·         TaxTableEntity\_RU ·         TaxTableEntity\_TH
 
 Vendor group
 
 Dynamics AX 2012
 
-·         VendGroupEntity\_Basic
+·         VendGroupEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         VendGroupEntity\_Basic
+·         VendGroupEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         VendGroupEntity\_Basic ·         VendGroupEntity\_PL
+·         VendGroupEntity\_Basic ·         VendGroupEntity\_PL
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         VendGroupEntity ·         VendGroupEntity\_Basic ·         VendGroupEntity\_PL
+·         VendGroupEntity ·         VendGroupEntity\_Basic ·         VendGroupEntity\_PL
 
 Vendor
 
 Dynamics AX 2012
 
-·         VendorEntity\_Address ·         VendorEntity\_Basic
+·         VendorEntity\_Address ·         VendorEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         VendorEntity\_Address ·         VendorEntity\_Basic
+·         VendorEntity\_Address ·         VendorEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         VendorEntity\_Basic ·         VendorEntity\_BR ·         VendorEntity\_PL ·         VendorEntity\_RU
+·         VendorEntity\_Basic ·         VendorEntity\_BR ·         VendorEntity\_PL ·         VendorEntity\_RU
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         VendorEntity ·         VendorEntity\_Basic ·         VendorEntity\_BR ·         VendorEntity\_PL ·         VendorEntity\_RU
+·         VendorEntity ·         VendorEntity\_Basic ·         VendorEntity\_BR ·         VendorEntity\_PL ·         VendorEntity\_RU
 
 Vendor address
 
 Dynamics AX 2012
 
-·         VendorAddressEntity\_Basic ·         VendorAddressEntity\_MultipeAddressValues
+·         VendorAddressEntity\_Basic ·         VendorAddressEntity\_MultipeAddressValues
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         VendorAddressEntity\_Basic ·         VendorAddressEntity\_MulitipleAddressValues
+·         VendorAddressEntity\_Basic ·         VendorAddressEntity\_MulitipleAddressValues
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         VendorAddressEntity\_Basic
+·         VendorAddressEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         VendorAddressEntity ·         VendorAddressEntity\_Basic
+·         VendorAddressEntity ·         VendorAddressEntity\_Basic
 
-Vendor invoice header  
+Vendor invoice header  
 
 Dynamics AX 2012
 
-·         VendInvoiceInfoTableEntity\_Basic
+·         VendInvoiceInfoTableEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         VendInvoiceInfoTableEntity\_Basic
+·         VendInvoiceInfoTableEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         VendInvoiceInfoTableEntity\_Basic
+·         VendInvoiceInfoTableEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         VendInvoiceInfoTableEntity\_Basic
+·         VendInvoiceInfoTableEntity\_Basic
 
-Vendor invoice line    
+Vendor invoice line    
 
 Dynamics AX 2012
 
-·         VendInvoiceInfoLineEntity\_Basic
+·         VendInvoiceInfoLineEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         VendInvoiceInfoLineEntity\_Basic
+·         VendInvoiceInfoLineEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         VendInvoiceInfoLineEntity\_Basic
+·         VendInvoiceInfoLineEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         VendInvoiceInfoLineEntity\_Basci
+·         VendInvoiceInfoLineEntity\_Basci
 
 Vendor invoice table
 
@@ -1472,9 +1469,9 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         VendInvoiceInfoTableEntity ·         VendInvoiceInfoTableEntity\_Basic
+·         VendInvoiceInfoTableEntity ·         VendInvoiceInfoTableEntity\_Basic
 
-Vendor invoice parameters  
+Vendor invoice parameters  
 
 Dynamics AX 2012
 
@@ -1484,81 +1481,81 @@ Microsoft Dynamics AX 2012 (InformationSource)
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         VendParametersEntity
+·         VendParametersEntity
 
 Work Calendar
 
 Dynamics AX 2012
 
-·         WorkCalendarDateEntity\_Basic ·         WorkCalendarDateLineEntity\_Basic ·         WorkCalendarTableEntity\_Basic
+·         WorkCalendarDateEntity\_Basic ·         WorkCalendarDateLineEntity\_Basic ·         WorkCalendarTableEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         WorkCalendarDateEntity\_Basic ·         WorkCalendarDateLineEntity\_Basic ·         WorkCalendarTableEntity\_Basic
+·         WorkCalendarDateEntity\_Basic ·         WorkCalendarDateLineEntity\_Basic ·         WorkCalendarTableEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         WorkCalendarDateEntity\_Basic ·         WorkCalendarDateLineEntity\_Basic ·         WorkCalendarTableEntity\_Basic
+·         WorkCalendarDateEntity\_Basic ·         WorkCalendarDateLineEntity\_Basic ·         WorkCalendarTableEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         WorkCalendarDateEntity\_Basic ·         WorkCalendarDateLineEntity\_Basic ·         WorkCalendarTableEntity\_Basic
+·         WorkCalendarDateEntity\_Basic ·         WorkCalendarDateLineEntity\_Basic ·         WorkCalendarTableEntity\_Basic
 
-Workflow    
+Workflow    
 
 Dynamics AX 2012
 
-·         WorkflowWorkItemQueueEntity\_Basic
+·         WorkflowWorkItemQueueEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         WorkflowWorkItemQueueEntity\_Basic
+·         WorkflowWorkItemQueueEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         WorkflowWorkItemQueueEntity\_Basic
+·         WorkflowWorkItemQueueEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         WorkflowTableEntity ·         WorkflowWorkItemQueueEntity ·         WorkflowWorkItemQueueEntity\_basic
+·         WorkflowTableEntity ·         WorkflowWorkItemQueueEntity ·         WorkflowWorkItemQueueEntity\_basic
 
 WorkTimeLine
 
 Dynamics AX 2012
 
-·         WorkTimeLineEntity\_Basic
+·         WorkTimeLineEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         WorkTimeLineEntity\_Basic
+·         WorkTimeLineEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         WorkTimeLineEntity\_Basic
+·         WorkTimeLineEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         WorkTimeLineEntity\_Basic
+·         WorkTimeLineEntity\_Basic
 
-WorkTimeTable      
+WorkTimeTable      
 
 Dynamics AX 2012
 
-·         WorkTimeTableEntity\_Basic
+·         WorkTimeTableEntity\_Basic
 
 Microsoft Dynamics AX 2012 Feature Pack
 
-·         WorkTimeTableEntity\_Basic
+·         WorkTimeTableEntity\_Basic
 
 Microsoft Dynamics AX 2012 (InformationSource)
 
-·         WorkTimeTableEntity\_Basic
+·         WorkTimeTableEntity\_Basic
 
 cumulative update 7 for Microsoft Dynamics AX 2012 R2/Microsoft Dynamics AX 2012 R3
 
-·         WorkTimeTableEntity\_Basic
+·         WorkTimeTableEntity\_Basic
 
- 
+
 
 ## XML demo files
 The following files are available in the versions of Data Import/Export Framework that ship with cumulative update 7 for Microsoft Dynamics AX 2012 R2 and AX 2012 R3.

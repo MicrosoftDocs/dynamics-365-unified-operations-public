@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Assign users to security roles
-description: To access Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, users must be assigned to security roles. 
+description: To access Microsoft Dynamics 365 for Finance and Operations, users must be assigned to security roles. 
 author: maertenm
 manager: AnnBe 
 ms.date: 06/07/2016
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Assign users to security roles
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
-To access Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, users must be assigned to security roles. This procedure explains how system administrators can assign users to roles automatically, based on business data. The demo data company used to create this procedure is USMF.
+To access Microsoft Dynamics 365 for Finance and Operations, users must be assigned to security roles. This procedure explains how system administrators can assign users to roles automatically, based on business data. The demo data company used to create this procedure is USMF.
 
 
 ## Automatically assign users to roles

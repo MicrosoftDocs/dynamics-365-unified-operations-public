@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure an approval step in a workflow
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure the properties of an approval step.
 
@@ -61,7 +60,7 @@ You must provide a subject line and instructions to users who are assigned to th
     2.  On the page that appears, click **Add**.
     3.  In the list that appears, select the language that you're entering the text in.
     4.  In the **Translated text** field, enter the text.
-    5.  To personalize the text, you can insert placeholders as described in step 3.
+    5.  To personalize the text, you can insert placeholders as described in step 3.
     6.  Click **Close**.
 
 5.  In the **Work item instructions** field, enter the instructions.
@@ -76,14 +75,14 @@ You must provide a subject line and instructions to users who are assigned to th
     2.  On the page that appears, click **Add**.
     3.  In the list that appears, select the language that you're entering the text in.
     4.  In the **Translated text** field, enter the text.
-    5.  To personalize the text, you can insert placeholders as described in step 6.
+    5.  To personalize the text, you can insert placeholders as described in step 6.
     6.  Click **Close**.
 
 ## Assign the approval step
 Follow these steps to specify who the approval step should be assigned to.
 
 1.  In the left pane, click **Assignment**.
-2.  On the **Assignment type** tab, select one of the options in the following table, and then follow the additional steps for that option before you go to step 3.
+2.  On the **Assignment type** tab, select one of the options in the following table, and then follow the additional steps for that option before you go to step 3.
     <table>
     <colgroup>
     <col width="33%" />
@@ -133,10 +132,10 @@ Follow these steps to specify who the approval step should be assigned to.
     </tr>
     <tr class="even">
     <td>User</td>
-    <td>Specific Microsoft Dynamics 365 for Finance and Operations users</td>
+    <td>Specific Microsoft Dynamics 365 for Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to assign the step to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to assign the step to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -151,17 +150,17 @@ Follow these steps to specify who the approval step should be assigned to.
 
     If the user doesn't take action on the document in the allotted time, the document is overdue. A document that is overdue is escalated, based on the options that you select in the **Escalation** area of the page.
 4.  If you assigned the approval step to multiple users or a group of users, on the **Completion policy** tab, select one of the following options:
-    -   **Single approver** – The action that is applied to the document is determined by the first person who responds. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill. If Sue is the first person who responds to the document, the action that she takes is applied to the document. If Sue rejects the document, it's rejected and sent back to Sam. If Sue approves the document, it's sent to Ann for approval. 
-    
+    -   **Single approver** – The action that is applied to the document is determined by the first person who responds. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill. If Sue is the first person who responds to the document, the action that she takes is applied to the document. If Sue rejects the document, it's rejected and sent back to Sam. If Sue approves the document, it's sent to Ann for approval. 
+
     ![Workflow that has an approval process](./media/workflow_multipleusersinstep.gif)
-    
-    -   **Majority of approvers** – The action that is applied to the document is determined when most of the approvers respond. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill. If Sue and Jo are the first two approvers who respond, the action that they take is applied to the document.
+
+    -   **Majority of approvers** – The action that is applied to the document is determined when most of the approvers respond. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill. If Sue and Jo are the first two approvers who respond, the action that they take is applied to the document.
         -   If Sue approves the document, but Jo rejects it, the document is rejected and sent back to Sam.
         -   If both Sue and Jo approve the document, it's sent to Ann for approval.
-    -   **Percentage of approvers** – The action that is applied to the document is determined when a specific percentage of the approvers respond. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill, and you entered **50** as the percentage. If Sue and Jo are the first two approvers who respond, the action that they take is applied to the document, because they meet the requirement for 50 percent of approvers.
+    -   **Percentage of approvers** – The action that is applied to the document is determined when a specific percentage of the approvers respond. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill, and you entered **50** as the percentage. If Sue and Jo are the first two approvers who respond, the action that they take is applied to the document, because they meet the requirement for 50 percent of approvers.
         -   If Sue approves the document, but Jo rejects it, the document is rejected and sent back to Sam.
         -   If both Sue and Jo approve the document, it's sent to Ann for approval.
-    -   **All approvers** – All the approvers must approve the document. Otherwise, the workflow can't continue. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill. If Sue and Joe approve the document, but Bill rejects it, the document is rejected and sent back to Sam. If Sue, Jo, and Bill all approve the document, it's sent to Ann for approval.
+    -   **All approvers** – All the approvers must approve the document. Otherwise, the workflow can't continue. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill. If Sue and Joe approve the document, but Bill rejects it, the document is rejected and sent back to Sam. If Sue, Jo, and Bill all approve the document, it's sent to Ann for approval.
 
 ## Specify when the approval step is required
 You can specify when the approval step is required. The approval step can always be required, or it can be required only if specific conditions are met.
@@ -175,7 +174,7 @@ Follow these steps if the approval step is always required.
 
 ### The approval step is required in specific conditions
 
-The approval step that you're configuring might be required only if specific conditions are met. For example, if you're configuring an approval step for a purchase requisition workflow, you might want the approval step to occur only if the amount of the purchase requisition is more than USD 10,000. Follow these steps to specify when the approval step is required.
+The approval step that you're configuring might be required only if specific conditions are met. For example, if you're configuring an approval step for a purchase requisition workflow, you might want the approval step to occur only if the amount of the purchase requisition is more than USD 10,000. Follow these steps to specify when the approval step is required.
 
 1.  In the left pane, click **Condition**.
 2.  Select the **Run this step only when the following condition is met** option.
@@ -200,7 +199,7 @@ If a user doesn't take action on a document in the allotted time, the document i
     | 3        | Final action: Reject |
 
     In this example, the system assigns the overdue document to Donna. If Donna doesn't respond in the allotted time, the system assigns the document to Erin. If Erin doesn't respond in the allotted time, the system rejects the document.
-3.  To add a user to the escalation path, click **Add escalation**. On the **Assignment type** tab, select one of the options in the following table, and then follow the additional steps for that option before you go to step 4.
+3.  To add a user to the escalation path, click **Add escalation**. On the **Assignment type** tab, select one of the options in the following table, and then follow the additional steps for that option before you go to step 4.
     <table>
     <colgroup>
     <col width="33%" />
@@ -242,10 +241,10 @@ If a user doesn't take action on a document in the allotted time, the document i
     </tr>
     <tr class="odd">
     <td>User</td>
-    <td>Specific Finance and Operations users</td>
+    <td>Specific Finance and Operations users</td>
     <td><ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to escalate the document to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to escalate the document to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -258,8 +257,8 @@ If a user doesn't take action on a document in the allotted time, the document i
     -   **Months** – Select the day and week that the user must respond by. For example, you might want the user to respond by Friday of the third week of the month.
     -   **Years** – Select the day, week, and month that the user must respond by. For example, you might want the user to respond by Friday of the third week of December.
 
-5.  Repeat steps 3 through 4 for each user that should be added to the escalation path. You can change the order of the users.
-6.  If the users in the escalation path don't respond in the allotted time, the system automatically take action on the document. To specify the action that the system takes, select the **Action** row, and then, on the **End action** tab, select an action.
+5.  Repeat steps 3 through 4 for each user that should be added to the escalation path. You can change the order of the users.
+6.  If the users in the escalation path don't respond in the allotted time, the system automatically take action on the document. To specify the action that the system takes, select the **Action** row, and then, on the **End action** tab, select an action.
 
 
 

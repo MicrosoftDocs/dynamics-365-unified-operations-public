@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Derived financial hierarchies in the public sector
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes the derived financial hierarchies functionality that is available for the public sector. 
 
@@ -50,7 +49,7 @@ An organization has an employee wellness program and an employee education progr
 -   **Set up filter rules:** Use the **Derived financial hierarchies** page to create filter rules for the main accounts and financial dimension values associated with the “Employee wellness” and “Employee education” nodes in the “Employee programs” derived financial hierarchy. **Tip:** To enter more than one dimension value in a filter, use a comma without spaces as a separator. For example, enter 100,110 or Benefits,Insurance.
 -   **Analyze posted transaction data:** In the filter results, view account numbers and their account and financial dimension details.
 
- 
+
 
 
 

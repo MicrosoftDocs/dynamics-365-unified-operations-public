@@ -5,7 +5,7 @@ title: Create a requisition for consumption
 description: This procedure walks you through the process of creating a requisition. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a requisition for consumption
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through the process of creating a requisition. It shows you different ways to search for products in your procurement catalog and how to add a product that isn’t in your catalog. Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition. You can walk through this procedure in demo data company USMF, or using your own data. The procedure can only be carried out by a user profile that is set up as worker.  This task would normally be carried out by an employee. The Employee employ security role will allow you to carry out the tasks, or if you’re using USMF, you can log in as Alicia.
 
@@ -91,9 +91,9 @@ This procedure walks you through the process of creating a requisition. It shows
 2. Click Distribute amounts.
     * This process shows you how to distribute the cost for the first line between 2 accounts. This can also be done later when the requisition is in review.  
 3. Click Split to create a new distribution line.
-4. In the Ledger account field select the first cost centre that should take part of the cost.
+4. In the Ledger account field select the first cost center that should take part of the cost.
 5. Select the other distribution line.
-6. In the Ledger account field specify the other cost centre.
+6. In the Ledger account field specify the other cost center.
 7. Click Distribute equally.
 8. Close the page.
 

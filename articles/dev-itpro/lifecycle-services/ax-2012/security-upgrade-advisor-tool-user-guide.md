@@ -5,7 +5,7 @@ title: Security Upgrade Advisor Tool user guide (AX 2012)
 description: The Microsoft Dynamics AX Security Upgrade Advisor Tool is intended to help simplify the process of upgrading security settings from earlier versions of Microsoft Dynamics AX to Microsoft Dynamics AX 2012. 
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service:
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 2012 R3 CU8
 
 # Security Upgrade Advisor Tool user guide (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 The Microsoft Dynamics AX Security Upgrade Advisor Tool is intended to help simplify the process of upgrading security settings from earlier versions of Microsoft Dynamics AX to Microsoft Dynamics AX 2012. 
 
@@ -80,21 +79,21 @@ The following procedures describe the process you should follow when running the
 
 The outputs of the wizard are custom roles in the AOT, named with a prefix that you specify. No users are assigned to these roles automatically. After roles are generated, you must manually assign roles to each user. Clicking **Next** runs each step of the wizard. Clicking **Cancel** closes the wizard.
 
-1.  Drain the client connections that are connected to the instance of Application Object Server (AOS) that you are working with. For more information, see [Drain users from an AOS](http://technet.microsoft.com/library/d19bd816-cd9e-423a-94c7-aceb946baa30(AX.60).aspx).
-2.  In **Administrative Tools** &gt; **Services**, stop the **Microsoft Dynamics AX Object Server 6.0** service.
-3.  Use Windows PowerShell or AXUtil to import the model SecurityUpgradeAdvisorTool.axmodel into the Microsoft Dynamics AX 2012 AOT.
+1. Drain the client connections that are connected to the instance of Application Object Server (AOS) that you are working with. For more information, see [Drain users from an AOS](http://technet.microsoft.com/library/d19bd816-cd9e-423a-94c7-aceb946baa30(AX.60).aspx).
+2. In **Administrative Tools** &gt; **Services**, stop the **Microsoft Dynamics AX Object Server 6.0** service.
+3. Use Windows PowerShell or AXUtil to import the model SecurityUpgradeAdvisorTool.axmodel into the Microsoft Dynamics AX 2012 AOT.
 
-        Install-AXModel -File SecurityUpgradeAdvisorTool.axmodel -Details
+       Install-AXModel -File SecurityUpgradeAdvisorTool.axmodel -Details
 
-    For more information, see [How to: Export and Import a Model](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx).
+   For more information, see [How to: Export and Import a Model](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx).
 
-4.  Start the **Microsoft Dynamics AX Object Server 6.0** service.
-5.  Open the Security Upgrade Advisor project, and open the **Forms** &gt; **SecurityUpgradeWizard** form. **Important: **Compile the project and synchronize all tables in the object groups **UpgradeAdvisorTool** and **PrivelegeGenerationTool** in the AOT.
-6.  Click **Next** to open the **Step 1 Import Settings** page. This step imports the .xml file of security information exported from an earlier version of Microsoft Dynamics AX into temp tables in Microsoft Dynamics AX 2012. This step uses the file generated in the previous section.
-7.  Click **Next** to open the **Step 2 Find Privilege Matches** page. This step iterates through the existing security settings, and finds matching entry points and permissions in Microsoft Dynamics AX 2012.
-8.  Click **Next** to open the **Step 3 Map User Groups to Custom Roles** page. This step generates new custom role mappings for the privileges that were found.
-9.  Click **Next** to open the **Step 4 Export Security Upgrade Suggestions** page. This step exports all the mappings to a temporary table.
-10. Click **Next** to open the **Step 5 Security Upgrade Suggestions** page. This page of the wizard displays the suggested security mappings. **Important: ** We strongly recommend that you export the upgrade suggestions for additional analysis.You can copy and paste the data into Microsoft Excel for additional analysis by pressing Ctrl+T. For more information about how to analyze the suggested settings, see the next section.
+4. Start the **Microsoft Dynamics AX Object Server 6.0** service.
+5. Open the Security Upgrade Advisor project, and open the <strong>Forms</strong> &gt; <strong>SecurityUpgradeWizard</strong> form. <strong>Important: **Compile the project and synchronize all tables in the object groups **UpgradeAdvisorTool</strong> and <strong>PrivelegeGenerationTool</strong> in the AOT.
+6. Click **Next** to open the **Step 1 Import Settings** page. This step imports the .xml file of security information exported from an earlier version of Microsoft Dynamics AX into temp tables in Microsoft Dynamics AX 2012. This step uses the file generated in the previous section.
+7. Click **Next** to open the **Step 2 Find Privilege Matches** page. This step iterates through the existing security settings, and finds matching entry points and permissions in Microsoft Dynamics AX 2012.
+8. Click **Next** to open the **Step 3 Map User Groups to Custom Roles** page. This step generates new custom role mappings for the privileges that were found.
+9. Click **Next** to open the **Step 4 Export Security Upgrade Suggestions** page. This step exports all the mappings to a temporary table.
+10. Click **Next** to open the **Step 5 Security Upgrade Suggestions** page. This page of the wizard displays the suggested security mappings. **Important: ** We strongly recommend that you export the upgrade suggestions for additional analysis. You can copy and paste the data into Microsoft Excel for additional analysis by pressing Ctrl+T. For more information about how to analyze the suggested settings, see the next section.
 11. If, during your analysis of the security upgrade suggestions, you notice multiple items that have the **NoMatchingPrivilege** status, you may want to run the Privilege Generation Tool. Click **Generate Privileges**.
 12. Click **Next** to open the **Step 6 Specify Custom Role Generation Options** page. In this step, you can specify options for generating roles in the AOT:
     -   Select Include similar matches in the custom role to use privileges that match with **Similar** status, and to add them to the custom role.

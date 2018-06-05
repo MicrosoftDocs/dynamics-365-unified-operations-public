@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Make manual adjustments to the baseline forecast
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
 
@@ -55,7 +54,7 @@ To modify the forecast, click in any of the cells that are available, and type t
 
 If you change the aggregation to make the page show more aggregated data, you can use the **Demand forecast lines** page to see the individual forecast lines that make up the aggregated forecast. 
 
-For example, you've generated the forecast at the item level, but you know that the demand for this item will increase across all sites because of a promotion or another similar event. In this case, you can set the aggregation to **Company / Item allocation key / Item** on the **Change forecast dimensions** page. You can adjust the global forecast for the item across all sites in the **Adjusted demand forecast** grid. To see the effect of your change across all sites, open the **Demand forecast lines** page. On this page, you will see one line for the item for each site, the adjusted forecast quantity, and the original forecast quantity. 
+For example, you've generated the forecast at the item level, but you know that the demand for this item will increase across all sites because of a promotion or another similar event. In this case, you can set the aggregation to **Company / Item allocation key / Item** on the **Change forecast dimensions** page. You can adjust the global forecast for the item across all sites in the **Adjusted demand forecast** grid. To see the effect of your change across all sites, open the **Demand forecast lines** page. On this page, you will see one line for the item for each site, the adjusted forecast quantity, and the original forecast quantity. 
 
 When the adjustment of the forecasted quantity is made at an aggregated level, the system uses weighted allocation to distribute the change among the lines that create the aggregation. 
 
@@ -80,7 +79,7 @@ The **Demand forecast details** page shows the following information in graphica
 
 You can also make manual adjustments to the forecast on the **Demand forecast details** page, by modifying the values in the **Forecast** row in the **Forecast** section.
 
-See also
+Additional resources
 --------
 
 [Monitoring forecast accuracy](monitor-forecast-accuracy.md)

@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # Lookup Type
+
+[!include [banner](../../../../includes/banner.md)]
+
 Lookup control type. A lookup is an input control that is used to select an input from a list of options.
 For example, a lookup could be used to lookup a customer when linking a customer to a new sales order.
 

@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: VendFormletterParameters, VendParameters, TaxTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -30,8 +29,7 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Intra-community VAT for Spain
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the functionality for intra-community value-added tax (VAT). It explains how to turn on the functionality, calculate and print intra-community VAT amounts, and review intra-community VAT amounts that have been posted.
 

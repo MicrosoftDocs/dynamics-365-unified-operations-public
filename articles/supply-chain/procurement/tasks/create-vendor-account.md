@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a vendor account
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to create a vendor account, and add an address and contact information. The procedure does not show how to populate all fields for purchasing and financial purposes. To learn more about those fields, please read the field descriptions. You can use this procedure in demo data company USMF or on your own data. Vendor accounts are typically created by a procurement professional or accounts receivable personnel.
 

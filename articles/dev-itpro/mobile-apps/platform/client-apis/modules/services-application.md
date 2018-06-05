@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # Application 
+
+[!include [banner](../../../../includes/banner.md)]
+
 An application is a unit of runtime execution with sandboxing around concepts and data used inside of it.
 Each application consists of pages, actions, data queries and logic that glue them together. An application
 is primarily described with a declarative metadata system, and can have an accompanying imperative extension model. <br>

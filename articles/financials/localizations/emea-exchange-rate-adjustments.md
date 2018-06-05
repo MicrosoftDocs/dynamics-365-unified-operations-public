@@ -31,8 +31,7 @@ ms.search.validFrom: 2016-11-30
 
 # Exchange rate adjustments
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.
 
@@ -57,18 +56,21 @@ Here are the exchange rates for Canadian dollars (CAD) to U.S. dollars (USD) for
 -   January 3, 2013: 420.0000
 
 ### Invoice
+
 | Date                             | Debit/credit | Amounts               | General ledger (GL) account    | Transaction type             | Posting type       | Credit | Correction |
 |----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
 | 1-Dec-12                         | Debit        | 10,000 CAD/40,000 USD | AR                             | Invoice                      | Customer balance   |        |            |
 | 1-Dec-12                         | Credit       | 10,000 CAD/40,000 USD | Offset                         | Invoice                      | Ledger journal     | X      |
 
 ### Payment
+
 | Date                             | Debit/credit | Amounts               | General ledger (GL) account    | Transaction type             | Posting type       | Credit | Correction |
 |----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
 | 3-Jan-13                         | Debit        | 10,000 CAD/42,000 USD | Offset                         | Payment                      | Ledger journal     |        |            |
 | 3-Jan-13                         | Credit       | 10,000 CAD/42,000 USD | AR                             | Payment                      | Customer balance   | X      |            |
 
 ### Settlement
+
 | Date                             | Debit/credit | Amounts               | General ledger (GL) account    | Transaction type             | Posting type       | Credit | Correction |
 |----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
 |January 3, 2013 (= payment date) | Debit        | 0 CAD/2,000 USD       | AR                             | Customer                     | Exchange rate gain |        |            |
@@ -84,7 +86,7 @@ For this revaluation example, notice that the entry from January 3, 2013, is a d
 | 31-Dec-12           | Credit       | 0 CAD/5,000 USD       | Unrealized currency adj profit | Foreign currency revaluation | Exchange rate gain | X      |            |
 | 3-Jan-13            | Debit        | 0 CAD/5,000 USD       | AR                             | Foreign currency revaluation | Exchange rate gain |        | X          |
  3-Jan-13            | Credit       | 0 CAD/5,000 USD       | Unrealized currency adj profit | Foreign currency revaluation | Exchange rate gain | X      | X          |
- 
+
 
 ### Revaluation (Invoice date method; date = January 1, 2013)
 For this revaluation, notice that the entry from January 1, 2013, is a direct reversal of the January 3, 2013 entry). Even the GL accounts and posting types are the same. Additionally, notice that the **Correction** flag has been set.

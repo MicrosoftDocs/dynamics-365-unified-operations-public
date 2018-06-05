@@ -5,7 +5,7 @@ title: View purge or archive jobs (AX 2012)
 description: This topic provides information about how to use the Intelligent Data Management Framework (IDMF) to view purge and archive jobs. 
 author: kfend
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -32,12 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # View Intelligent Data Management Framework purge or archive jobs (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-
-
-
-You can use the options on the Microsoft Dynamics AX IDMF **Status **menu to refresh the status of all currently running jobs and provide details for all currently running and completed jobs. On the toolbar, click **Status** to open the **Status** workspace.
+You can use the options on the Microsoft Dynamics AX IDMF **Status** menu to refresh the status of all currently running jobs and provide details for all currently running and completed jobs. On the toolbar, click **Status** to open the **Status** workspace.
 
 ## Navigation of the Status workspace
 The following tables provide descriptions for the controls in the **Status** workspace.
@@ -46,7 +43,7 @@ The following tables provide descriptions for the controls in the **Status** wor
 
 | Pane               | Description                                                                                                                                                                                                                                                                                                                                                                                 |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Job status**     | Provides a list of all currently running, canceled, failed, or completed tasks. Each currently running or completed task is referred to as a job. This workspace uses the terms job, task, and schedule interchangeably.Use the **Show status details** **for previous** option in the **Administer** &gt; **Framework options** window to configure the number of jobs shown in this pane. |
+| **Job status**     | Provides a list of all currently running, canceled, failed, or completed tasks. Each currently running or completed task is referred to as a job. This workspace uses the terms job, task, and schedule interchangeably. Use the **Show status details** **for previous** option in the **Administer** &gt; **Framework options** window to configure the number of jobs shown in this pane. |
 | **Status details** | Provides status details of the selected task.                                                                                                                                                                                                                                                                                                                                               |
 | **Trace**          | Lists the multiple steps and queries for the selected task, if there are any.                                                                                                                                                                                                                                                                                                               |
 
@@ -86,7 +83,7 @@ The following tables provide descriptions for the controls in the **Status** wor
 <ol>
 <li>Check the task details in the <strong>Status</strong> workspace.</li>
 <li>Check the error log files to determine the conditions that caused the error, and fix the error condition.</li>
-<li>To restart an archive or restore an archive, in the <strong>Status</strong> <strong>workspace</strong> &gt; <strong><span class="ui">Job status</span></strong> pane, right-click the task, and then select <strong><span class="ui">Restart task</span></strong>. For all other task, create a new task, and run it. <strong>Note:</strong> You can't restart a task that failed or was canceled before it started copying the data. If you can't restart a failed or canceled task, you must create a new task.</li>
+<li>To restart an archive or restore an archive, in the <strong>Status</strong> <strong>workspace</strong> &gt; <strong><span class="ui">Job status</span></strong> pane, right-click the task, and then select <strong><span class="ui">Restart task</span></strong>. For all other task, create a new task, and run it. <strong>Note:</strong> You can&#39;t restart a task that failed or was canceled before it started copying the data. If you can&#39;t restart a failed or canceled task, you must create a new task.</li>
 <li>Monitor the task you started in the previous step to verify successful completion.</li>
 </ol>
 Use the following steps to revert a failed or canceled archive task:
@@ -105,8 +102,8 @@ Use the following steps to revert a failed or canceled archive task:
 <td><strong><span class="ui">Description</span></strong></td>
 <td>The task description. By default, IDMF provides a brief description for the task, such as purge data for the selected Purge Object. The description does not provide any information about the rules in the Archive Object or Purge Object. You can modify IDMF configuration file to provide the rules and their values in the description. Use the following steps to modify the configuration file:
 <ol>
-<li>Using an editing tool such as Notepad, open <strong>AXDataManagementTool.exe.Config</strong> from the installation folder of the Data Management Framework. The default path of the installation folder is C:Program FilesMicrosoft Dynamics AX Intelligent Data Management Framework.</li>
-<li><p>Locate the configuration key <strong>IncludeRulesInDescription</strong>, and change the value to <strong>true</strong> as shown in the following code.</p>
+<li>Using an editing tool such as Notepad, open <strong>AXDataManagementTool.exe.Config</strong> from the installation folder of the Data Management Framework. The default path of the installation folder is C:\Program Files\Microsoft Dynamics AX Intelligent Data Management Framework.</li>
+<li><p>Locate the configuration key <strong>IncludeRulesInDescription</strong>, and change the value to <strong>true</strong> as shown in the following code.</p>
 <pre><code>&lt;add key=&quot;IncludeRulesInDescription&quot; value=&quot;true&quot; /&gt;</code></pre></li>
 <li>Save the configuration file, and restart IDMF.</li>
 </ol>
@@ -114,7 +111,7 @@ With the modified configuration file, when you create or update an archive or pu
 </tr>
 <tr class="odd">
 <td><strong><span class="ui">SSIS trace</span></strong></td>
-<td>This field provides a hyperlink to view the Microsoft SQL Server Integration Services (SSIS) trace output for this task.The hyperlink is only available when you set the trace level to <span class="ui">Verbose</span>. Use the <span class="ui">Framework options</span> menu to set the SSIS trace level.</td>
+<td>This field provides a hyperlink to view the Microsoft SQL Server Integration Services (SSIS) trace output for this task. The hyperlink is only available when you set the trace level to <span class="ui">Verbose</span>. Use the <span class="ui">Framework options</span> menu to set the SSIS trace level.</td>
 </tr>
 </tbody>
 </table>

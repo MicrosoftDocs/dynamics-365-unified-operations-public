@@ -32,8 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Security Development Tool (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the user interface of the Security Development Tool.
 
@@ -91,12 +90,12 @@ This section describes the controls on the ribbon of the list view. The list vie
 -   **Load recording** – Load a list of recorded entry points from an .xml file.
 -   **Load additional metadata** – Load additional metadata for all entry points. This data includes the label, layer, and model, and also license information.
 -   **Assign organizations** – Assign organizations to the selected role, duty, or privilege in the security test workspace.
--   **Portal security** – Enable security for Enterprise Portal and reports for Microsoft SQL Server Reporting Services while the security test workspace is open. Permissions for the system administration role are disabled while the security test workspace is open. X++ breakpoints are not triggered when this function is enabled.This function is not supported for users who run as the Admin user.
+-   **Portal security** – Enable security for Enterprise Portal and reports for Microsoft SQL Server Reporting Services while the security test workspace is open. Permissions for the system administration role are disabled while the security test workspace is open. X++ breakpoints are not triggered when this function is enabled. This function is not supported for users who run as the Admin user.
 -   **Mark form controls** – Enable this function to display menu items that have **NoAccess** permission on forms.
 
 
 
-See also
+Additional resources
 --------
 
 [Install the Security Development Tool](install-security-development-tool.md)

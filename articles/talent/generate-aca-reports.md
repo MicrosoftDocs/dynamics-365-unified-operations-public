@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+# ms.search.form: HcmACACoverageGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Talent, Core
+ms.search.scope: Core, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 # Generate Affordable Care Act reports
+
+[!include [banner](includes/banner.md)]
+
 Functionality is available to assist employers that need to track the information reported on forms 1095-B and 1095-C in support of the **Employer Mandate** portion of the Affordable Care Act. Note this functionality is only enabled for legal entities in the United States.
 
 ## Getting started

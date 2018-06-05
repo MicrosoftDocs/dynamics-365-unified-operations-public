@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial management home page
-description: This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+description: This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations. 
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 206434
@@ -32,19 +32,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Financial management home page
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations. 
 
 Select a feature area to learn more about it.
-- [Accounts payable](accounts-payable\accounts-payable.md) 
-- [Accounts receivable](accounts-receivable\accounts-receivable.md) 
-- [Cash and bank management](cash-bank-management\cash-bank-management.md)
-- [Cost accounting](cost-accounting\cost-accounting-home-page.md)
-- [Fixed assets](fixed-assets\fixed-assets.md)
-- [General ledger](general-ledger\general-ledger.md) 
-- [Project management](project-management\overview-project-management-accounting.md)
-- [Public sector](public-sector\public-sector-functionality.md) 
-- [Budgeting](budgeting\budgeting-overview.md) 
+- [Accounts payable](accounts-payable/accounts-payable.md) 
+- [Accounts receivable](accounts-receivable/accounts-receivable.md) 
+- [Cash and bank management](cash-bank-management/cash-bank-management.md)
+- [Cost accounting](cost-accounting/cost-accounting-home-page.md)
+- [Fixed assets](fixed-assets/fixed-assets.md)
+- [General ledger](general-ledger/general-ledger.md) 
+- [Project management](project-management/overview-project-management-accounting.md)
+- [Public sector](public-sector/public-sector-functionality.md) 
+- [Budgeting](budgeting/budgeting-overview.md) 
 
 

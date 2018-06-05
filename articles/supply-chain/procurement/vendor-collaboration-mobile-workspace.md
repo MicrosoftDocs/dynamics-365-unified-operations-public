@@ -5,7 +5,7 @@ title: Vendor collaboration mobile workspace
 description: This topic provides information about the Vendor collaboration mobile workspace. This workspace helps your vendors stay up to date about the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts.
 author: mkirknel 
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,21 +25,21 @@ ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---
 
 # Vendor collaboration mobile workspace
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the **Vendor collaboration** mobile workspace. This workspace helps your vendors stay up to date about the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts.
 
 This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
 
 ## Overview 
-The **Vendor collaboration** mobile workspace keeps vendors informed about new purchase orders, so that they can view purchase orders and then respond to them in the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, web client. 
+The **Vendor collaboration** mobile workspace keeps vendors informed about new purchase orders, so that they can view purchase orders and then respond to them in the Microsoft Dynamics 365 for Finance and Operations, web client. 
 
 >[!NOTE]
 > The mobile workspace should be used as a supplement to the vendor collaboration web interface, not a replacement for it. 
@@ -65,8 +65,8 @@ The **Vendor collaboration** mobile workspace lets a vendor perform these tasks:
 ## Prerequisites
 The prerequisites vary, depending on the version of Microsoft Dynamics 365 that has been deployed for your organization.
 
-### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) 
-If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), has been deployed for your organization, the system administrator must publish the **Vendor collaboration** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations 
+If Microsoft Dynamics 365 for Finance and Operations has been deployed for your organization, the system administrator must publish the **Vendor collaboration** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later
 If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
@@ -81,9 +81,9 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 </thead>
 <tbody>
 <tr class="odd">
-<td>KB 3216943 must be implemented if you're using Platform update 3.</td>
+<td>KB 3216943 must be implemented if you&#39;re using Platform update 3.</td>
 <td>System administrator</td>
-<td>KB 3216943 is a binary update that is required if you're using Platform update 3. To implement this KB, the system administrator must follow these steps.
+<td>KB 3216943 is a binary update that is required if you&#39;re using Platform update 3. To implement this KB, the system administrator must follow these steps.
 <ol>
 <li>Download KB 3216943 from Microsoft Dynamics Lifecycle Services (LCS).</li>
 <li>Install the binary update, which is delivered as a deployable package. For information about how to apply a deployable package, see <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Apply a deployable package</a>.</li>

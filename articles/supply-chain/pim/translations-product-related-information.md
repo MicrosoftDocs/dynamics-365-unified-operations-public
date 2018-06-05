@@ -17,14 +17,14 @@ ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 201853
 ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
 ms.search.region: global
 ms.search.industry: Product information
-ms.author: yuyus
+ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Product-related translations FAQ
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to manage translations for products, product dimension values, and product attributes. 
 
@@ -98,8 +97,7 @@ A customer wants to buy some small, red T-shirts and the name of the T-shirt mus
 <tbody>
 <tr class="odd">
 <td>To set the preferred language of a customer, follow these steps:
-<ol>  
-<li>Click <strong>Sales and marketing</strong> &gt; <strong>Common</strong> &gt; <strong>Customers</strong> &gt; <strong>All</strong> <strong>customers</strong>.</li>
+<ol><br/><li>Click <strong>Sales and marketing</strong> &gt; <strong>Common</strong> &gt; <strong>Customers</strong> &gt; <strong>All</strong> <strong>customers</strong>.</li>
 <li>Double-click a customer to open the <strong>Customers</strong> page. On the <strong>General</strong> tab, in the <strong>Language</strong> field, select the <strong>language</strong>.</li>
 </ol></td>
 </tr>

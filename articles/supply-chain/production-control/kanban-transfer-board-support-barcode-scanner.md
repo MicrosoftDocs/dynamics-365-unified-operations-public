@@ -32,15 +32,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Kanban transfer board support for barcode scanners
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 The Kanban transfer board supports scanner input from a widget barcode scanner to Select, Start, Complete, and Empty a kanban job.
 
 Registration modes
 ------------------
 
-On the **Scanner registration** FastTab you can select the registration mode, which controls the action when you scan a kanban card number or manually type the number in the Kanban card number field.
+On the **Scanner registration** FastTab you can select the registration mode, which controls the action when you scan a kanban card number or manually type the number in the Kanban card number field.
+
 | Set registration mode | Description                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------------------|
 | Start                 | Registers a Kanban transfer job as in progress.                                                 |

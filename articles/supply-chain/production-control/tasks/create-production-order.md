@@ -1,34 +1,34 @@
---- 
-# required metadata 
- 
+---
+# required metadata
+
 title: Create a production order
-description: This procedure shows how to create a production order. 
+description: This procedure shows how to create a production order.
 author: johanhoffmann
-manager: AnnBe 
+manager: AnnBe
 ms.date: 11/11/2016
-ms.topic: business-process 
+ms.topic: business-process
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-ax-applications
 ms.technology:  
- 
-# optional metadata 
- 
+
+# optional metadata
+
 # ms.search.form:   
-audience: Application User 
+audience: Application User
 # ms.devlang:  
-ms.reviewer: bis
-ms.search.scope: Operations 
+ms.reviewer: yuyus
+ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a production order
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to create a production order. The demo data company used to create this procedure is USMF. This is the first procedure out of seven which explains the production order lifecycle.
 
@@ -72,4 +72,3 @@ This procedure shows how to create a production order. The demo data company use
     * Changing the process time affects the estimated route consumption and the cost of the production order.  
 6. Click Save.
 7. Close the page.
-

@@ -3,7 +3,7 @@
 
 title: Prevent discounts for retail products
 description: There are various reasons why retailers may want to prevent some products from being discounted, either from a promotion or during the sale at the POS.
-author: jeffbl
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: RetailPeriodicDiscount
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Prevent discounts for retail products
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 There are various reasons why retailers may want to prevent some products from being discounted, either from a promotion or during the sale at the POS.
 

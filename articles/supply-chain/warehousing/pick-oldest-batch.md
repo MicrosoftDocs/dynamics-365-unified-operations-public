@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  WHSRFMenuItem
+ms.search.form:  WHSRFMenuItem
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Pick oldest batch on a mobile device
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can access the configuration **Pick oldest batch** via a mobile device menu and it allows you to force or warn warehouse workers to pick the oldest batch in their current location.  
 

@@ -5,7 +5,7 @@ title: F Classes - FormReferenceControl to FormStringControl
 description: API reference for classes from FormReferenceControl to FormStringControl.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # F Classes - FormReferenceControl to FormStringControl
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 API reference for classes from FormReferenceControl to FormStringControl.
 
@@ -884,7 +883,7 @@ form
 | public boolean autoDeclaration(\[boolean value\])                                                                   | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public int backgroundColor(\[int value\])                                                                           | Gets or sets the background color of the control.                                                                                                                       |
 | public Image backgroundImage(\[Image image\], \[int drawMode\])                                                     |                                                                                                                                                                         |
-| public int backStyle(\[int value\])                                                                                 | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                                 | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                                  | Is called when the user starts to drag a form control.                                                                                                                  |
 | public int bold(\[int value\])                                                                                      | Gets or sets the weight of font used to output text in the control.                                                                                                     |
 | public int border(\[int value\])                                                                                    | Gets or sets the style of the borderline of the control.                                                                                                                |
@@ -1204,7 +1203,7 @@ drawMode
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -1379,7 +1378,7 @@ The values for the integer that is returned indicate the character set according
 | 238   | EASTEUROPE\_CHARSET  |
 | 255   | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value | Description    |
 |-------|----------------|
@@ -3643,7 +3642,7 @@ Controls that refer to a data source field are visible only when the visible pro
 | public int arrayIndex(\[int value\])                                                                        |                                                                                                                                                                         |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
 | public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user starts to drag a form control.                                                                                                                  |
 | public int bold(\[int value\])                                                                              | Gets or sets the weight of font used to output text in the control.                                                                                                     |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the borderline of the control.                                                                                                                |
@@ -3927,7 +3926,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -4084,7 +4083,7 @@ The values for the integer that is returned indicate the character set according
 | 238   | EASTEUROPE\_CHARSET  |
 | 255   | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value | Description    |
 |-------|----------------|
@@ -6596,7 +6595,7 @@ fieldId
 
 <!-- -->
 
-  
+
 
 ### Method affectedElementsByControl
 
@@ -6608,7 +6607,7 @@ controlId
 
 <!-- -->
 
-  
+
 
 ### Method clearBackColor
 
@@ -6735,8 +6734,8 @@ This method always returns the current persisted value of the segment, even whil
 | public boolean allowEdit(\[boolean value\])                                                                 | Determines whether the user can change the contents of the control.                                                                                                     |
 | public boolean allowSysSetup()                                                                              | Retrieves a value that indicates whether the control is shown in the SysSetup form.                                                                                     |
 | public boolean autoDeclaration(\[boolean value\])                                                           | Determines whether the system can declare a member variable that has the same name as the control.                                                                      |
-| public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       |
-| public int backStyle(\[int value\])                                                                         | Determiness whether the control background can be transparent.                                                                                                          |
+| public int backgroundColor(\[int value\])                                                                   | Gets or sets the background color of the control.                                                                                                                       
+| public int backStyle(\[int value\])                                                                         | Determines whether the control background can be transparent.                                                                                                          |
 | public int beginDrag(int x, int y)                                                                          | Is called when the user starts to drag a form control.                                                                                                                  |
 | public int border(\[int value\])                                                                            | Gets or sets the style of the borderline of the control.                                                                                                                |
 | public container calcControlSize(int chars, int lines)                                                      | Retrieves the size of the control.                                                                                                                                      |
@@ -6966,7 +6965,7 @@ The integer that is returned contains a packed RGB color as follows:
 
 ### Method backStyle
 
-Determiness whether the control background can be transparent.
+Determines whether the control background can be transparent.
 
     public int backStyle([int value])
 
@@ -7069,7 +7068,7 @@ The color scheme is defined according to the following table.
 | Value | Style                        |
 |-------|------------------------------|
 | 0     | Default                      |
-| 1     | The MicrosoftWindows palette |
+| 1     | The Microsoft Windows palette |
 | 2     | The true-color scheme        |
 
 ### Method configurationKey
@@ -7367,7 +7366,7 @@ The height of the control in pixels.
 
 #### Remarks
 
-Exact mode is used if the valueparameter is omitted. Calculate the height according to the following table.
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table.
 
 | Mode            | Height calculation                                                                        |
 |-----------------|-------------------------------------------------------------------------------------------|
@@ -9387,7 +9386,7 @@ The values for the integer that is returned indicate the character set according
 | 238   | EASTEUROPE\_CHARSET  |
 | 255   | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value | Description    |
 |-------|----------------|
@@ -11513,7 +11512,7 @@ The values for the integer that is returned indicate the character set according
 | 238   | EASTEUROPE\_CHARSET  |
 | 255   | OEM\_CHARSET         |
 
-The value in the following table is for the Korean language edition of MicrosoftWindows.
+The value in the following table is for the Korean language edition of Microsoft Windows.
 
 | Value | Description    |
 |-------|----------------|

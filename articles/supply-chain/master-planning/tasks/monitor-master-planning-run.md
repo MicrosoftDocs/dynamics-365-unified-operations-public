@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Monitor a master planning run
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 The production planner wants to see if a master planning run is in progress. Use the demo data company USMF to complete this procedure.
 

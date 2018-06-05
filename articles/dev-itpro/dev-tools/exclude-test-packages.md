@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Exclude test packages from the build output
 
+[!include [banner](../includes/banner.md)]
+
 In Platform update 4, the automated build process lets you prevent specific packages from being included in the deployable package in the build output. This capability can be important for customers that use automated testing. These customers might want to build and run their tests, but prevent them from being added to the deployable package that the build generates as output.
 
 When customers that have an existing build definition from Platform update 3 or earlier upgrade, they won't see the build definition automatically updated. To use the new feature, these customers must make a few manual edits to the build definition (see below for details). 

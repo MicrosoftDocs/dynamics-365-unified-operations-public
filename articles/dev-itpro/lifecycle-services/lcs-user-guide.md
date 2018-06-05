@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dynamics Lifecycle Services user guide
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Lifecycle Services (LCS) provides regularly updated services. The goal of LCS is to deliver the right information, at the right time, to the right people, and to help ensure repeatable, predictable success with each roll-out of an implementation, update, or upgrade. LCS is available to customers and partners as part of their support plans. If you're a Microsoft Dynamics AX 2012 customer, you can sign in by using your CustomerSource or PartnerSource credentials. If you're a customer of the newest version of Finance and Operations, you can sign in by using your Microsoft Azure Active Directory (Azure AD) credentials. [Go to LCS](https://lcs.dynamics.com/Logon/Index).
 
@@ -60,7 +59,7 @@ The following table lists the tools that are provided in LCS and describes the p
 
 The LCS team is also blogging at the [Lifecycle Services Engineering blog](https://blogs.msdn.microsoft.com/lcs/). Subscribe to our RSS feed to keep up with our posts and announcements.
 
-See also
+Additional resources
 --------
 
 [Lifecycle Services](https://lcs.dynamics.com/)

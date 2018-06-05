@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Register a vendor VAT ID
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to add VAT registration IDs and a tax except number to a vendor account. This process is similar for legal entities and customers. 
 

@@ -3,7 +3,7 @@
 
 title: General ledger in the public sector
 description: This topic describes the General ledger functionality that is available for the public sector.
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: AdvancedLedgerEntry, JournalizingDefinition, LedgerDerivedFinHie
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27211
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # General ledger in the public sector
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the General ledger functionality that is available for the public sector.
 
@@ -63,7 +62,7 @@ You can use posting definitions to create subledger journal lines for originatin
 ## How do I collect and analyze data to meet the Common Governmentwide Accounting Classification (CGAC) requirements?
 You can use derived financial hierarchies to collect and analyze posted transaction data for specific main account numbers, full account numbers, and financial dimension values. To learn more, see [Derived financial hierarchies in the public sector](derived-financial-hierarchies-public-sector.md).
 
-See also
+Additional resources
 --------
 
 [General ledger](../general-ledger/general-ledger.md)

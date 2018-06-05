@@ -5,7 +5,7 @@ title: Security best practices for Retail Cloud POS in a shared environment
 description: Retail Cloud POS is a web application that runs in the context of a browser. This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.
 author: pdp1207
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Security best practices for Retail Cloud POS in a shared environment
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Retail Cloud POS is a web application that runs in the context of a browser. This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.
 
@@ -45,11 +44,11 @@ Retail Cloud POS is a web application that runs in the context of a web browser.
 ## Hardening instructions for a Retail Cloud POS computer
 Here are some of the defense-in-depth recommendations for the operating system and/or browser that will have an activated instance of Retail Cloud POS. The settings should be enabled or set by a high-privileged account for the operating system. Retail Cloud POS should be used by a low-privileged account that can't override those settings. We recommend that you enable all the following settings. Otherwise, you could create a security loophole that will be prone to security exploitation.
 
--   **Required** - Disable script execution in the browser's address bar.
--   **Required** - Disable the browser's developer console.
--   **Required** - Retail Cloud POS should be accessed by a low-privileged user.
--   **Required** - Set up group policies to enable a kiosk session.
--   **Recommended** - Set up a proxy to access only whitelisted websites.
+-   **Required** - Disable script execution in the browser's address bar.
+-   **Required** - Disable the browser's developer console.
+-   **Required** - Retail Cloud POS should be accessed by a low-privileged user.
+-   **Required** - Set up group policies to enable a kiosk session.
+-   **Recommended** - Set up a proxy to access only whitelisted websites.
 
 ## Disable script execution in the address bar of the browser that runs Retail Cloud POS
 ### Internet Explorer
@@ -72,7 +71,7 @@ Use Group Policy Editor to enable the following group policy to disable the Inte
 
 Run **regedit.exe** to change the registry to disable the developer console. \[HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\F12\] "AllowDeveloperTools"=dword:00000000
 
-## Retail Cloud POS should be accessed by a lowprivileged user
+## Retail Cloud POS should be accessed by a low-privileged user
 A point of sale (POS) user must be a non-administrative account that doesn't have privileges to change applied policies.
 
 ## Set up group policies to enable a kiosk session

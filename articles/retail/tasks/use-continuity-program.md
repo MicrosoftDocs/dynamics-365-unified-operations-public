@@ -5,10 +5,10 @@ title: Use a continuity program
 description: This procedure walks through selling a continuity program and processing related sales orders. 
 author: scott-tucker
 manager: AnnBe 
-ms.date: 10/26/2016
+ms.date: 11/14/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-365-retail 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Use a continuity program
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through selling a continuity program and processing related sales orders. To complete this procedure, the user has to be set up as a call center user. This procedure uses the USRT demo data company.
 
@@ -61,6 +61,6 @@ This procedure walks through selling a continuity program and processing related
 19. In the Continuity item field, type '88000' and then press the Tab key.
     * Item '88000' is a continuity item in the USRT demo data.  
 20. In the Sales order field, enter or select a value.
-    * Enter the sales order number that you noted earlier in the procedure. This will keep the processing time to a minimal for this procedure. The Sales order field field is optional--you could process all orders for any one program.  
+    * Enter the sales order number that you noted earlier in the procedure. This will keep the processing time to a minimal for this procedure. The Sales order field is optional--you could process all orders for any one program.  
 21. Click OK.
 

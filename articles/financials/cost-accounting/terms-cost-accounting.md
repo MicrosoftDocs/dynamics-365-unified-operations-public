@@ -13,7 +13,8 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
+ms.search.form: CAMCostAccountingLedger
+
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,8 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost accounting terminology
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic defines the key terms that are used in Cost accounting.
 
@@ -43,7 +43,7 @@ The allocation base is used to measure and quantify activities, such as machine 
 
 **Cost accounting**
 
-Cost accounting lets you collect data from various sources, such as the general ledger, sub-ledgers, budgets, and statistical information. You can then analyze, summarize, and evaluate cost data, so that management can make the best possible decisions for price updates, budgets, cost control, and so on. The source data that is used for cost analysis is treated independently in Cost accounting. Therefore, updates in Cost accounting don’t affect the source data. However, when you collect cost data from various sources, and especially when you import the main accounts from General ledger in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition as cost elements, there is data redundancy, because the same data exists in both General ledger and Cost accounting. This redundancy is required, because you use financial management for external reporting and Cost accounting for internal reporting.
+Cost accounting lets you collect data from various sources, such as the general ledger, sub-ledgers, budgets, and statistical information. You can then analyze, summarize, and evaluate cost data, so that management can make the best possible decisions for price updates, budgets, cost control, and so on. The source data that is used for cost analysis is treated independently in Cost accounting. Therefore, updates in Cost accounting don’t affect the source data. However, when you collect cost data from various sources, and especially when you import the main accounts from General ledger in Microsoft Dynamics 365 for Finance and Operations as cost elements, there is data redundancy, because the same data exists in both General ledger and Cost accounting. This redundancy is required, because you use financial management for external reporting and Cost accounting for internal reporting.
 
 **Cost accounting ledger**
 
@@ -125,7 +125,7 @@ The dimension classification hierarchy type is used to define policies and for r
 Cost accounting supports integration of data from source systems via a set of data connectors. The following data connectors are available:
 
 -  Imported transactions (pre-configured)
--  Dynamics 365 for Finance and Operations, Enterprise edition (pre-configured)
+-  Dynamics 365 for Finance and Operations (pre-configured)
 -  Dynamics AX (configuration required)
 
 **Note:** The data connector Imported transactions is based on data entities.
@@ -134,7 +134,7 @@ Cost accounting supports integration of data from source systems via a set of da
 
 Most source systems can provide data that matches one or more data sources in Cost accounting. To align data from the source systems with the data source in Cost accounting, a data provider needs to be configured. The following table lists the availability of data providers per data connector and data source.
 
-|  **Data sources** |  **Imported transactions data connector** | **Dynamics 365 for Finance and Operations, Enterprise edition data connector**  | **Dynamics AX data connector**  |
+|  **Data sources** |  **Imported transactions data connector** | **Dynamics 365 for Finance and Operations data connector**  | **Dynamics AX data connector**  |
 |---|---|---|---|
 | Cost element dimension members  |  Yes | Yes  | Yes  |
 |  Cost object dimension members |  Yes | Yes  | Yes  |
@@ -155,14 +155,14 @@ Formula allocation bases let you define advanced formulas to achieve the correct
 |  + |  Addition |
 |  – |  Subtraction |
 | *  | Multiplication  |
-	
+
 Traditional IF statements are not supported. However, you can create statements and validate whether they are true.
 
-|  **Statement	Validation** | **Result**  |
+|  **Statement  Validation** | **Result**  |
 |---|---|
 |  a > b| True  |
 |  a > b |  False |
-	
+
 **Overhead cost**
 
 Overhead costs refer to the ongoing expenses of operating a business. They are the costs that can’t be linked directly to specific business activities. Here are some examples of overhead costs:

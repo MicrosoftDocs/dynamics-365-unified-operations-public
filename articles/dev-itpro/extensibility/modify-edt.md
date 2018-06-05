@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Platform update 9
 ---
 
 # Modify an extended data type
+
+[!include [banner](../includes/banner.md)]
 
 There are several properties that can be customized on existing extended data types (EDTs) through extension:
 - Label
@@ -52,7 +54,7 @@ You can view the created extensions in the Application Explorer in Visual Studio
 
 ![Modify EDT](media/EDT03.jpg) 
 
-# If the EDT is modified in more than one model
+## If the EDT is modified in more than one model
 If multiple ISVs have extended the same extended data type, the properties of the EDT from the model with the highest Model ID will be used. For example, if ISV 1 modified the label of ItemId to “Awesome item number” in model AwesomeModel with ID 12, while ISV 2 modified the label of ItemId to “Super item number” in model SuperModel with ID 15, the end user would see “Awesome item number” in the user interface instead of “Item number”.
 
 > [!TIP]

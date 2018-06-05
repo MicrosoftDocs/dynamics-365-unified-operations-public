@@ -5,7 +5,7 @@ title: T Classes
 description: System API classes that start with the letter T.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # T Classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter T.
 
@@ -697,7 +696,7 @@ The record length for the input file.
 
 #### Remarks
 
-For files that have a fixed-length format, use the inRecordLength property to ensure that no more than the specified number of characters are read for each record.If the record format is overruled by a specified inRecordDelimiter property value, that is the inRecordDelimiter value is met before the fixed length is read, the record is accepted, and no further data is read. To ensure that a fixed number of characters are read, set the inRecordDelimiter property value to an empty string. When no inRecordDelimiter property value is found, the inRecordDelimiter property value is the maximum limit of characters to read. Set the inRecordDelimiter property value to zero to disable the record length check.
+For files that have a fixed-length format, use the inRecordLength property to ensure that no more than the specified number of characters are read for each record. If the record format is overruled by a specified inRecordDelimiter property value, that is the inRecordDelimiter value is met before the fixed length is read, the record is accepted, and no further data is read. To ensure that a fixed number of characters are read, set the inRecordDelimiter property value to an empty string. When no inRecordDelimiter property value is found, the inRecordDelimiter property value is the maximum limit of characters to read. Set the inRecordDelimiter property value to zero to disable the record length check.
 
 #### Examples
 
@@ -956,7 +955,7 @@ A run-time error occurs if the file is accessed with a method that does not corr
 <tr class="odd">
 <td>0</td>
 <td>ANSI code page (ACP)</td>
-<td>The code page that supports only characters in the user's current language. The code page is unsuitable for anything that might contain multilingual data or for monolingual data that might be transferred between two systems by using different code pages.</td>
+<td>The code page that supports only characters in the user&#39;s current language. The code page is unsuitable for anything that might contain multilingual data or for monolingual data that might be transferred between two systems by using different code pages.</td>
 </tr>
 <tr class="even">
 <td>437</td>
@@ -1858,7 +1857,7 @@ Retrieves the value of the UtilFileType enumeration type for the TreeNode object
 
 #### Return Value
 
-The value of the UtilFileType enumeration for the tree node. The possible values are in the following list. UtilFileType::Application means that the element is stored in the .aod file (form, report, query, table, and so on). UtilFileType::ApplicationCodeDocumentationmeans that the element is stored in the .add file. UtilFileType::ApplicationHelp means that the element is stored in the .ahd file. UtilFileType::KernelHelp means that the element is stored in the .akh file.
+The value of the UtilFileType enumeration for the tree node. The possible values are in the following list. UtilFileType::Application means that the element is stored in the .aod file (form, report, query, table, and so on). UtilFileType::ApplicationCodeDocumentation means that the element is stored in the .add file. UtilFileType::ApplicationHelp means that the element is stored in the .ahd file. UtilFileType::KernelHelp means that the element is stored in the .akh file.
 
 #### Examples
 
@@ -2006,7 +2005,7 @@ A string that represents the current object.
 
 #### Remarks
 
-The default implementation returns the class name of the object. The method can be overridden in a derived class to return values that are meaningful for that type.For example, an instance of the class returns the method name and type of the method, such as instance or static.
+The default implementation returns the class name of the object. The method can be overridden in a derived class to return values that are meaningful for that type. For example, an instance of the class returns the method name and type of the method, such as instance or static.
 
 ### Method treeNodeName
 
@@ -2631,7 +2630,7 @@ The TreeNodeType class retrieves information about types of TreeNode classes.
 
 ### Remarks
 
-This class enable you to reflect on a TreeNode class instance. The reflection information is not specific to an instance of a TreeNode class. All TreeNode instances with the same NodeType share the same TreeNodeType. The TreeNode.TreeNodeType method return a treeNodeType object with the reflection informantion.
+This class enable you to reflect on a TreeNode class instance. The reflection information is not specific to an instance of a TreeNode class. All TreeNode instances with the same NodeType share the same TreeNodeType. The TreeNode.TreeNodeType method return a treeNodeType object with the reflection information.
 
 ### Examples
 
@@ -2667,7 +2666,7 @@ Indicates whether instances of this node type are consuming memory that needs to
 
 #### Return Value
 
-true if tree nodes of this type are consumes memory; otherwise, false.
+true if tree nodes of this type consumes memory; otherwise, false.
 
 #### Remarks
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Business process modeler
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This article provides information about Business process modeler in Microsoft Dynamics Lifecycle Services (LCS). You can use this tool to create, view, and modify business process libraries and flowcharts for Microsoft Dynamics AX. The article also lists the prerequisites and explains how to start using Business process modeler.
 
@@ -45,7 +45,7 @@ In Microsoft Dynamics Lifecycle Services, you can use Business process modeler t
 ## Prerequisites
 To use the Business process modeler, the following products are required:
 
--   The Task recorder that is included in AX 2012 R3 and cumulative update 7 for Microsoft Dynamics AX 2012 R2 supports generating custom processes in Business process modeler.For earlier releases, an updated Task recorder is available as a hotfix. The hotfix includes a client update and a model file. You must install the client update on all Microsoft Dynamics AX 2012 clients. There are two hotfixes available:
+-   The Task recorder that is included in AX 2012 R3 and cumulative update 7 for Microsoft Dynamics AX 2012 R2 supports generating custom processes in Business process modeler. For earlier releases, an updated Task recorder is available as a hotfix. The hotfix includes a client update and a model file. You must install the client update on all Microsoft Dynamics AX 2012 clients. There are two hotfixes available:
     -   Microsoft Dynamics AX 2012 R2 – Knowledgebase article [2863182](http://go.microsoft.com/fwlink/?LinkId=309911)
     -   Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 Feature Pack – Knowledgebase article [2863182](http://go.microsoft.com/fwlink/?LinkId=309910)
 -   Microsoft Office 2010 or later versions supports generating documents.
@@ -64,7 +64,7 @@ To access Business process modeler, follow these steps:
 4.  After the business process library has been added to the **My libraries** section, click the tile to view the business process library.
 
 
-See also
+Additional resources
 --------
 
 [Business process libraries in Business process modeler](../business-process-libraries-business-process-modeler.md)

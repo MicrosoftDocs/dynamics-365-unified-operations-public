@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reduction keys
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This articles provides examples that show how to set up a reduction key. It includes information about the various reduction key settings and the results of each. You can use a reduction key to define how to reduce forecast requirements.
 
@@ -42,17 +41,19 @@ Example 1: Percent - reduction key forecast reduction principle
 
 This example shows how a reduction key reduces demand forecast requirements according to the percentages and periods that are defined by the reduction key.
 
-1.  On the **Reduction keys** page, set up the following lines.
-    | Change | Unit  | Percent |
-    |--------|-------|---------|
-    | 1      | Month | 100     |
-    | 2      | Month | 75      |
-    | 3      | Month | 50      |
-    | 4      | Month | 25      |
+1. On the **Reduction keys** page, set up the following lines.
 
-2.  Link the reduction key to the item's coverage group.
-3.  On the **Master plans** page, in the **Reduction principle** field, select **Percent - reduction key**.
-4.  Create a demand forecast of 1,000 pieces per month.
+   | Change | Unit  | Percent |
+   |--------|-------|---------|
+   |   1    | Month |   100   |
+   |   2    | Month |   75    |
+   |   3    | Month |   50    |
+   |   4    | Month |   25    |
+
+
+2. Link the reduction key to the item's coverage group.
+3. On the **Master plans** page, in the **Reduction principle** field, select **Percent - reduction key**.
+4. Create a demand forecast of 1,000 pieces per month.
 
 If you run forecast scheduling on January 1, the demand forecast requirements are consumed according to the percentages that you set up on the **Reduction keys** page. The following requirement quantities are transferred to the master plan.
 
@@ -67,7 +68,7 @@ If you run forecast scheduling on January 1, the demand forecast requirements ar
 ## Example 2: Transactions  reduction key forecast reduction principle
 This example shows how actual orders that occur during the periods that are defined by the reduction key reduce demand forecast requirements.
 
--   On the **Master plans** page, in the **Reduction principle** field, select **Transactions - reduction key**.
+-   On the **Master plans** page, in the **Reduction principle** field, select **Transactions - reduction key**.
 
 The following sales orders exist on January 1.
 
@@ -91,20 +92,21 @@ If you use the same demand forecast of 1,000 pieces per month, the following req
 ## Example 3: Transactions  dynamic period forecast reduction principle
 In most cases, systems are set up so that transactions reduce demand forecast within specific forecast periods: weeks, months, and so on. These periods are defined in the reduction key. However, the time between two demand forecast lines can also *imply* a period.
 
-1.  Create a demand forecast for the following dates and quantities.
-    | Date       | Demand forecast |
-    |------------|-----------------|
-    | January 1  | 1,000           |
-    | January 5  | 500             |
-    | January 12 | 1,000           |
+1. Create a demand forecast for the following dates and quantities.
 
-    In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span. These various spans are the dynamic periods.
-2.  Create sales order lines as follows.
-    | Date                             | Sales order quantity |
-    |----------------------------------|----------------------|
-    | December 15 in the previous year | 500                  |
-    | January 3                        | 100                  |
-    | January 10                       | 200                  |
+   | Date       | Demand forecast |
+   |------------|-----------------|
+   | January 1  | 1,000           |
+   | January 5  | 500             |
+   | January 12 | 1,000           |
+
+   In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span. These various spans are the dynamic periods.
+2. Create sales order lines as follows.
+   | Date                             | Sales order quantity |
+   |----------------------------------|----------------------|
+   | December 15 in the previous year | 500                  |
+   | January 3                        | 100                  |
+   | January 10                       | 200                  |
 
 The forecast will be reduced as follows:
 
@@ -112,7 +114,7 @@ The forecast will be reduced as follows:
 -   The second sales order is between January 1 and January 5, so it will reduce the forecast for January 1 by 100.
 -   The third sales order is between January 5 and January 12, so it will reduce the forecast for January 5 by 200.
 
-The following planned order will be created to fulfill the forecast.
+The following planned order will be created to fulfill the forecast.
 
 | Demand forecast date | Reduced quantity |
 |----------------------|------------------|
@@ -120,7 +122,7 @@ The following planned order will be created to fulfill the forecast.
 | January 5            | 300              |
 | January 12           | 1,000            |
 
-Here is a summary of **Transactions - dynamic period** reduction:
+Here is a summary of **Transactions - dynamic period** reduction:
 
 -   Forecast requirements are reduced by the actual order transactions that occur during the dynamic period. The dynamic period covers the current forecast dates and ends at the start of the next forecast.
 -   This method doesn't use or require a reduction key.
@@ -129,10 +131,10 @@ Here is a summary of **Transactions - dynamic period** reduction:
     -   If there is no future forecast, forecast requirements from the last forecast that was entered are reduced.
     -   Time fences are included in the forecast reduction calculation.
     -   Positive days are included in the forecast reduction calculation.
-    -   If actual order transactions exceed the forecasted requirements, the remaining transactions aren't forwarded to the next forecast period.
+    -   If actual order transactions exceed the forecasted requirements, the remaining transactions aren't forwarded to the next forecast period.
 
 
-See also
+Additional resources
 --------
 
 [Master plans](master-plans.md)

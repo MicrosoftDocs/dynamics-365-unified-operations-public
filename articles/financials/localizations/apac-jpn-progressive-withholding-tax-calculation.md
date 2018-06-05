@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Progressive withholding tax
-description: This topic provides information about progressive withholding tax in Japan. Per the legal requirement in Japan, the tax percentage changes, depending on the interval in proportion to the invoice amount. The tax ratio also changes, based on the payment amount.
+title: Progressive withholding tax for Japan
+description: This topic provides information about progressive withholding tax in Japan.
 author: yijialuan
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -30,18 +29,15 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Progressive withholding tax
+# Progressive withholding tax for Japan
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about progressive withholding tax in Japan. Per the legal requirement in Japan, the tax percentage changes, depending on the interval in proportion to the invoice amount. The tax ratio also changes, based on the payment amount.
 
-Tax calculation
----------------
-
+## Tax calculation
 -   **Percentage of net amount** – The **Percentage of net amount** method is the default value in the **Origin** field. The withholding tax is calculated as a percentage of the purchase amount, excluding any other sales taxes.
--   **Percentage of gross amount** – The withholding tax is calculated as a percentage of the gross purchase amount, including any other sales taxes.
+-   **Percentage of gross amount** – The withholding tax is calculated as a percentage of the gross purchase amount, including any other sales taxes.
 
 You can set up a withholding tax code so that it's calculated based on a whole amount or an interval amount. Use the **Calculation method** field on the **Calculation** FastTab of the **Withholding tax codes** page to select how a withholding tax code is calculated.
 
@@ -51,6 +47,7 @@ You can set up a withholding tax code so that it's calculated based on a whole a
 **Note:** Withholding tax codes of different calculation methods can't be attached in a single withholding tax group.
 
 ## Prerequisites
+
 | Task                                                                                  | 
 |---------------------------------------------------------------------------------------|
 | Set up withholding tax codes and withholding tax groups.                              |  
@@ -74,35 +71,35 @@ In this example, withholding tax is calculated by using an **Origin of percentag
 
 | Minimum and maximum limit (Taxable amount interval) | Value (Tax rate) |
 |-----------------------------------------------------|------------------|
-| 0.00 to 1,000.00                                    | 10 percent       |
-| 1,001.00 to 2,000.00                                | 15 percent       |
-| 2,001.00 to 0.00                                    | 20 percent       |
+| 0.00 to 1,000.00                                    | 10 percent       |
+| 1,001.00 to 2,000.00                                | 15 percent       |
+| 2,001.00 to 0.00                                    | 20 percent       |
 
 Payment amount: 11,000.00, which includes 10-percent sales tax (that is, 1,000) **Full payment – 11,000.00** Calculation:
 
 | Taxable amount interval | Tax rate   | Payment amount split, based on the tax interval | Withholding tax |
 |-------------------------|------------|-------------------------------------------------|-----------------|
-| 0–1,000                 | 10 percent | 1,000.00                                        | 100.00          |
-| 1,001–2,000             | 15 percent | 1,000.00                                        | 150.00          |
-| 2,001–0                 | 20 percent | 9,000.00                                        | 1,800.00        |
+| 0–1,000                 | 10 percent | 1,000.00                                        | 100.00          |
+| 1,001–2,000             | 15 percent | 1,000.00                                        | 150.00          |
+| 2,001–0                 | 20 percent | 9,000.00                                        | 1,800.00        |
 |                         |            | **Total WHT amount**                            | **2,050.00**    |
 
 **Partial payment – 6,000.00** Calculation:
 
 | Taxable amount interval | Tax rate   | Payment amount split, based on the tax interval | Withholding tax |
 |-------------------------|------------|-------------------------------------------------|-----------------|
-| 0–1,000                 | 10 percent | 1,000.00                                        | 100.00          |
-| 1,001–2,000             | 15 percent | 1,000.00                                        | 150.00          |
-| 2,001–0                 | 20 percent | 4,000.00                                        | 800.00          |
+| 0–1,000                 | 10 percent | 1,000.00                                        | 100.00          |
+| 1,001–2,000             | 15 percent | 1,000.00                                        | 150.00          |
+| 2,001–0                 | 20 percent | 4,000.00                                        | 800.00          |
 |                         |            | **Total WHT amount**                            | **1,050.00**    |
 
 **Balance payment – 5,000.00** Calculation:
 
 | Taxable amount interval | Tax rate   | Payment amount split, based on the tax interval | Withholding tax |
 |-------------------------|------------|-------------------------------------------------|-----------------|
-| 0–1,000                 | 10 percent | 1,000.00                                        | 100.00          |
-| 1,001–2,000             | 15 percent | 1,000.00                                        | 150.00          |
-| 2,001–0                 | 20 percent | 3,000.00                                        | 600.00          |
+| 0–1,000                 | 10 percent | 1,000.00                                        | 100.00          |
+| 1,001–2,000             | 15 percent | 1,000.00                                        | 150.00          |
+| 2,001–0                 | 20 percent | 3,000.00                                        | 600.00          |
 |                         |            | **Total WHT amount**                            | **850.00**      |
 
 ## Example of Net amount
@@ -110,30 +107,27 @@ In this example, withholding tax is calculated by using an **Origin of percentag
 
 | Taxable amount interval | Tax rate   | Payment amount split based on the tax interval | Withholding tax |
 |-------------------------|------------|------------------------------------------------|-----------------|
-| 0–1,000                 | 10 percent | 1,000.00                                       | 100.00          |
-| 1,001–2,000             | 15 percent | 1,000.00                                       | 150.00          |
-| 2,001–0                 | 20 percent | 8,000.00                                       | 1,600.00        |
+| 0–1,000                 | 10 percent | 1,000.00                                       | 100.00          |
+| 1,001–2,000             | 15 percent | 1,000.00                                       | 150.00          |
+| 2,001–0                 | 20 percent | 8,000.00                                       | 1,600.00        |
 |                         |            | **Total WHT amount**                           | **1,850.00**    |
 
 **Partial payment – 6,000.00** Base for withholding tax calculation, excluding tax = 5,455.00 Calculation:
 
 | Taxable amount interval | Tax rate   | Payment amount split, based on the tax interval | Withholding tax |
 |-------------------------|------------|-------------------------------------------------|-----------------|
-| 0–1,000                 | 10 percent | 1,000.00                                        | 100.00          |
-| 1,001–2,000             | 15 percent | 1,000.00                                        | 150.00          |
-| 2,001–0                 | 20 percent | 3,455.00                                        | 691.00          |
+| 0–1,000                 | 10 percent | 1,000.00                                        | 100.00          |
+| 1,001–2,000             | 15 percent | 1,000.00                                        | 150.00          |
+| 2,001–0                 | 20 percent | 3,455.00                                        | 691.00          |
 |                         |            | **Total WHT amount**                            | **941.00**      |
 
 **Balance payment – 5,000.00** Base for withholding tax calculation excluding tax = 4,545.00 Calculation:
 
-| Taxable amount interval | Tax rate   | Payment amount split, based on the tax interval | Withholding tax |
-|-------------------------|------------|-------------------------------------------------|-----------------|
-| 0–1,000                 | 10 percent | 1,000.00                                        | 100.00          |
-| 1,001–2,000             | 15 percent | 1,000.00                                        | 150.00          |
-| 2,001–0                 | 20 percent | 2,545.00                                        | 509.00          |
-|                         |            | **Total WHT amount**                            | **759.00**      |
 
-
-
-
+| Taxable amount interval |  Tax rate  | Payment amount split, based on the tax interval |     Withholding tax     |
+|-------------------------|------------|-------------------------------------------------|-------------------------|
+|         0–1,000         | 10 percent |                    1,000.00                     |         100.00          |
+|       1,001–2,000       | 15 percent |                    1,000.00                     |         150.00          |
+|         2,001–0         | 20 percent |                    2,545.00                     |         509.00          |
+|                         |            |        <strong>Total WHT amount</strong>        | <strong>759.00</strong> |
 

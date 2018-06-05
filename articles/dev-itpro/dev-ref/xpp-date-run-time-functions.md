@@ -5,7 +5,7 @@ title: X++ date run-time functions
 description: This topic describes the date run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ date run-time functions
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the date run-time functions.
 
 dayName
 -------
 
-Retrieves the name of the day of the week that is specified by a number.
+Retrieves the name of the day of the week that is specified by a number.
 
     str dayName(int number)
 
@@ -584,9 +583,9 @@ The following code example compares the **wkOfYr** function with the **Global::w
 The previous example sent the following information to the Infolog for display. The output shows that there are differences between **wkOfYr** and **Global::weekOfYear**. 
 
     Message (01:59:13 pm) ----- 
-    #1. For Sunday, January 5, 2003 ----- 1 = wkOfYr funtion 2 = Global::weekOfYear method ----- 
-    #2. For Wednesday, August 20, 2003 ----- 34 = wkOfYr funtion 34 = Global::weekOfYear method ----- 
-    #3. For Sunday, December 28, 2003 ----- 52 = wkOfYr funtion 1 = Global::weekOfYear method
+    #1. For Sunday, January 5, 2003 ----- 1 = wkOfYr function 2 = Global::weekOfYear method ----- 
+    #2. For Wednesday, August 20, 2003 ----- 34 = wkOfYr function 34 = Global::weekOfYear method ----- 
+    #3. For Sunday, December 28, 2003 ----- 52 = wkOfYr function 1 = Global::weekOfYear method
 
 ## year
 Retrieves the year from a **date** value.

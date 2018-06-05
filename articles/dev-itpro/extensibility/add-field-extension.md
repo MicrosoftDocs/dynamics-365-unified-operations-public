@@ -19,7 +19,7 @@ ms.technology:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 
@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 4
 ---
 
 # Add a new field to an existing table
+
+[!include [banner](../includes/banner.md)]
 
 To add a new field to an existing table, you must first create a table extension. For example, to add a field that holds the radius of the released product, you must create an extension for the InventTable table in your model, as shown in the following illustration.
 

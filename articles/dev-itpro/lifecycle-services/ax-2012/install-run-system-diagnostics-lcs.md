@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Install and run System diagnostics (AX 2012)
+title: Install and run System diagnostics (AX 2012)
 description: In Microsoft Dynamics Lifecycle Services, System diagnostics includes an on-premises component that must be installed before you can use the service to discover Microsoft Dynamics AX environments and collect data.
 author: manalidongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service:
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Install and run System diagnostics (AX 2012)
+# Install and run System diagnostics (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 In Microsoft Dynamics Lifecycle Services, System diagnostics includes an on-premises component that must be installed before you can use the service to discover Microsoft Dynamics AX environments and collect data.
 
@@ -42,15 +41,15 @@ Install the System diagnostics on-premises component
 
 To install the System diagnostics on-premises component, the following is required:
 
--   A service account with specific permissions on the local computer and the Microsoft Dynamics AX business database.
--   An X509 certificate . You can either use an existing certificate, or have the installer create one for you. Each X509 certificate is associated with a single project. Diagnostics from an environment can be uploaded to only one project.
--   Microsoft .NET 4.5 or 4.5.1
+-   A service account with specific permissions on the local computer and the Microsoft Dynamics AX business database.
+-   An X509 certificate . You can either use an existing certificate, or have the installer create one for you. Each X509 certificate is associated with a single project. Diagnostics from an environment can be uploaded to only one project.
+-   Microsoft .NET 4.5 or 4.5.1
 
 ### Configure the service account for System diagnostics
 
 This section describes the permissions that are required for the service account that the Lifecycle Services Diagnostic Service (LCSDiagFXService.exe) runs as.
 
--   The service account must be a domain account that is a user in Microsoft Dynamics AX and a member of the **BusinessConnector** role.We strongly recommend that, if possible, the account be the same account used for the .NET Business Connector proxy. For more information, see [Specify the .NET Business Connector proxy account](http://technet.microsoft.com/library/3e46dc0a-2ff4-4a06-ae61-041e52dcc774(AX.60).aspx) and [Assign users to security roles](http://technet.microsoft.com/library/214ee45b-5b99-4ea8-9454-f4297f68e38c(AX.60).aspx).
+-   The service account must be a domain account that is a user in Microsoft Dynamics AX and a member of the **BusinessConnector** role. We strongly recommend that, if possible, the account be the same account used for the .NET Business Connector proxy. For more information, see [Specify the .NET Business Connector proxy account](http://technet.microsoft.com/library/3e46dc0a-2ff4-4a06-ae61-041e52dcc774(AX.60).aspx) and [Assign users to security roles](http://technet.microsoft.com/library/214ee45b-5b99-4ea8-9454-f4297f68e38c(AX.60).aspx).
 
     | **Note**                                                                                                                     |
     |------------------------------------------------------------------------------------------------------------------------------|
@@ -62,22 +61,22 @@ This section describes the permissions that are required for the service account
 
 #### Configure read permissions to the registry
 
-On each server in your environment that hosts an AOS instance or Microsoft Dynamics AX SQL Server business database, you must grant read access to a registry key in the HKEY\_LOCAL\_MACHINE hive to the service account for the System diagnostics.
+On each server in your environment that hosts an AOS instance or Microsoft Dynamics AX SQL Server business database, you must grant read access to a registry key in the HKEY\_LOCAL\_MACHINE hive to the service account for the System diagnostics.
 
 | **Caution**                                                                                                                                                                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| The following procedure includes editing the Windows Registry. Editing the registry incorrectly can cause serious problems that may require you to reinstall Windows. Microsoft cannot guarantee that problems resulting from incorrectly editing the registry can be solved.You should make a backup copy of the registry files (System.dat and User.dat) before you edit the registry. |
+| The following procedure includes editing the Windows Registry. Editing the registry incorrectly can cause serious problems that may require you to reinstall Windows. Microsoft cannot guarantee that problems resulting from incorrectly editing the registry can be solved. solved. You should make a backup copy of the registry files (System.dat and User.dat) before you edit the registry. |
 
 To grant access to collect data from the Windows registry on the server that hosts the SQL Server business database:
 1.  Click **Start**, click **Run**, type **regedit**, and then press **Enter**.
-2.  Expand **HKEY\_LOCAL\_MACHINE**, navigate to the subkey **SystemCurrentControlSetControlPriorityControl**, right-click it and select **Permissions**.
+2.  Expand **HKEY\_LOCAL\_MACHINE**, navigate to the subkey **System\CurrentControlSet\Control\PriorityControl**, right-click it and select **Permissions**.
 3.  Add the user that you want to associate with the Lifecycle Services Diagnostic Service.
 4.  Select the user that you added, and then allow read permissions.
 5.  Click **Advanced Security Settings**, and then ensure that the permissions are inherited by the child objects.
 
 To grant access to collect data from the Windows registry on a server that hosts one or more AOS instances:
 1.  Click **Start**, click **Run**, type **regedit**, and press **Enter**.
-2.  Expand **HKEY\_LOCAL\_MACHINE**, navigate to the subkey **SystemCurrentControlSetServicesDynamics Server6.0**, right-click it and select **Permissions**.
+2.  Expand **HKEY\_LOCAL\_MACHINE**, navigate to the subkey **System\CurrentControlSet\Services\Dynamics Server\6.0**, right-click it and select **Permissions**.
 3.  Add the user that you want to associate with the Lifecycle Services Diagnostic Service.
 4.  Select the user that you added, and then allow read permissions.
 5.  Click **Advanced Security Settings**, and then ensure that the permissions are inherited by the child objects.
@@ -94,7 +93,7 @@ To grant access to collect data from the Windows registry on a server that hosts
 </thead>
 <tbody>
 <tr class="odd">
-<td>As you are configuring rights in the registry, do not reduce account privileges that already exist.For more information about Advanced security settings, see:
+<td>As you are configuring rights in the registry, do not reduce account privileges that already exist. For more information about Advanced security settings, see:
 <ul>
 <li><a href="http://technet.microsoft.com/en-us/library/jj134043.aspx">Windows Server 2012 Access Control and Authorization Overview</a></li>
 <li><a href="http://technet.microsoft.com/en-us/library/cc730772.aspx">Windows Server 2008 R2 Advanced Security Settings Properties Page - Permissions Tab</a></li>
@@ -122,7 +121,7 @@ The service account must be able to read the Windows event logs on each server i
 
 #### Secure the remote Windows Management Instrumentation connections
 
-On each server in your environment that hosts an AOS instance or Microsoft Dynamics AX SQL Server business database, ensure that you secure the remote Windows Management Instrumentation (WMI) connection.
+On each server in your environment that hosts an AOS instance or Microsoft Dynamics AX SQL Server business database, ensure that you secure the remote Windows Management Instrumentation (WMI) connection.
 
 1.  Click **Start** &gt; **Run**, type **DCOMCNFG**, and then click **OK**.
 2.  In the **Component Services** dialog box, expand **Component Services**, expand **Computers**, and then right-click **My Computer** and click **Properties**.
@@ -153,9 +152,9 @@ For more information, see [Securing a Remote WMI Connection](http://msdn.microso
 
 The service account must be able to read the data in the Microsoft Dynamics AX business database and must have access to the default dynamic management views in SQL Server.
 
-1.  Add the service account as a login to the SQL Server instance where the Microsoft Dynamics AX business database is installed.For information about how to perform this step, see [Create a Login](http://msdn.microsoft.com/en-us/library/aa337562.aspx).
-2.  Add the account as a user of the business database.For information about how to perform this step, see [How to: Create a Database User](http://msdn.microsoft.com/en-us/library/aa337545.aspx).
-3.  Add the service account to the db\_datareader role in the business database.For information about how to perform this step, see [Join a Role](http://msdn.microsoft.com/en-us/library/ff877886.aspx).
+1.  Add the service account as a login to the SQL Server instance where the Microsoft Dynamics AX business database is installed. For information about how to perform this step, see [Create a Login](http://msdn.microsoft.com/en-us/library/aa337562.aspx).
+2.  Add the account as a user of the business database. For information about how to perform this step, see [How to: Create a Database User](http://msdn.microsoft.com/en-us/library/aa337545.aspx).
+3.  Add the service account to the db\_datareader role in the business database. For information about how to perform this step, see [Join a Role](http://msdn.microsoft.com/en-us/library/ff877886.aspx).
 4.  Grant the service account the VIEW SERVER STATE permission in the SQL Server instance.
     1.  In SQL Server Management Studio, expand **Databases**, right-click the **Microsoft Dynamics AX** database, and then click **Properties**.
     2.  Click **Permissions**, and then click **View server permissions**.
@@ -166,21 +165,21 @@ The service account must be able to read the data in the Microsoft Dynamics AX b
 
 The Business Connector service must be running on the host where the Lifecycle Services Diagnostic Service is installed. If more than one environment is to be discovered, the .Net Business Connector proxy account must be the same for each server that is running a Microsoft Dynamics AX Application Object Server (AOS) instance. For more information, see [Install the .NET Business Connector](http://technet.microsoft.com/library/c67944e8-73c5-4434-94d6-84484c810333(AX.60).aspx).
 
-### Install the Microsoft Dynamics Lifecycle Services System diagnostics
+### Install the Microsoft Dynamics Lifecycle Services System diagnostics
 
 To install the on-premises component of System diagnostics, you must be a member of the Administrator group on the local computer.
 
 1.  [Go to Lifecycle Services](https://lcs.dynamics.com).
 2.  Open a project and click the **System diagnostics** tile.
 3.  On the **Admin** page, download the compressed installer (**LCSDiagFX\_x64.zip.**).
-4.  Extract the installer to a computer that is running a Microsoft Dynamics AX client.The computer must have network access to all other servers in the environment, and must be running the .NET Business Connector if you are using the NET Business Connector proxy account as a service account.
+4.  Extract the installer to a computer that is running a Microsoft Dynamics AX client. The computer must have network access to all other servers in the environment, and must be running the .NET Business Connector if you are using the NET Business Connector proxy account as a service account.
 
     | **Important**                                                                                                                                                                                                      |
     |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | In a production environment, we recommend that you install the on-premises component on a computer that is running only a client, not on computers that are also running an AOS instance or a SQL Server instance. |
 
 5.  Run **Setup.exe**.
-    
+
     | **Note**                           |
     |------------------------------------|
     | Do not run the .msi file directly. |
@@ -216,7 +215,7 @@ You can collect data on demand from the **Environment Discovery** window. We rec
 4.  Schedule the command to run by using a scheduling engine, such as **Windows Task Scheduler**. For more information about using **Task Scheduler**, see [Schedule a task](http://technet.microsoft.com/en-us/library/cc766428.aspx).
 
 ## Use same X509 certificate for all environments
- 
+
 1.  First time let setup generate certificate as usual
 2.  Run MMC (Microsoft management console) as admin
 3.  File -&gt; "**Add or Remove Snap-ins**"
@@ -226,9 +225,9 @@ You can collect data on demand from the **Environment Discovery** window. We rec
 7.  Leave default values in \*.pfx export setup
 8.  In security step Use domain account or password for securing your exported file
 9.  Export files in next steps
-10. Copy exported file to new environment click it and choose **Install PFX**
+10. Copy exported file to new environment click it and choose **Install PFX**
 11. Choose **Local Machine**
-12. Click next -&gt; And in following screen make sure that **Mark this key as exportable** is set. Click next and finish
+12. Click next -&gt; And in following screen make sure that **Mark this key as exportable** is set. Click next and finish
 13. Now when running Lifecycle services system diagnostics setup choose on new environment use an existing certificate
 14. Certificate generated in first step should be present in client certificates lookup choose it and continue as usual:
 

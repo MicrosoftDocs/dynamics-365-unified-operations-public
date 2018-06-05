@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Invoice matching and intercompany purchase orders
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 The purchasing legal entity that is involved in an intercompany trade transaction might be set up to use accounts payable invoice matching. In this case, the posting requirements for both intercompany trade and accounts payable invoice matching must be met before intercompany vendor invoices can be posted.
 
@@ -46,7 +45,7 @@ The examples in this topic use the following setup for intercompany trade:
 -   In Fabrikam Sales, intercompany information is specified for customer 4020. Fabrikam Purchase is specified as the vendor company, and vendor 3024 is specified as the vendor account that corresponds to the Fabrikam Sales legal entity.
 
 The examples use the following setup for accounts payable invoice matching for Fabrikam Purchase:
--   On the Accounts payable parameters page, the Enable invoice matching validation option is selected.
+-   On the Accounts payable parameters page, the Enable invoice matching validation option is selected.
 -   On the Accounts payable parameters page, the Post invoice with discrepancies field is set to Require approval.
 -   The price tolerance percentage for the legal entity is 2 percent.
 
@@ -56,14 +55,14 @@ The net amounts for the intercompany vendor invoice and the intercompany custome
 2.  In Fabrikam Sales, register that the items have been received, and post a packing slip. The status of ICSO888 changes to Delivered. The status of ICPO222 changes to Received.
 3.  In Fabrikam Sales, perform an invoice update for ICSO888. The unit price is 0.45, and 100 items are updated.
 4.  In Fabrikam Purchase, create an invoice for ICPO222. You accidentally change the net price from 45.00 to 54.00. An icon is displayed to indicate that the price exceeds the allowable price tolerance of 2 percent.
-5.  On the Invoice matching details page, select the option to approve posting with matching discrepancies. On the Vendor invoice page, click OK. If the vendor invoice was not an intercompany vendor invoice, posting would be successful. However, because you are working with an intercompany vendor invoice, posting is unsuccessful. For intercompany trade, the invoice totals on the intercompany sales order must equal the invoice totals on the corresponding intercompany purchase order. To resolve this issue, you must correct the net price on the invoice by changing the net price back to the default amount, 45.00.
+5.  On the Invoice matching details page, select the option to approve posting with matching discrepancies. On the Vendor invoice page, click OK. If the vendor invoice was not an intercompany vendor invoice, posting would be successful. However, because you are working with an intercompany vendor invoice, posting is unsuccessful. For intercompany trade, the invoice totals on the intercompany sales order must equal the invoice totals on the corresponding intercompany purchase order. To resolve this issue, you must correct the net price on the invoice by changing the net price back to the default amount, 45.00.
 
 ## Example: Quantity matching with intercompany trade
 The quantities on the intercompany purchase order and the intercompany sales order must be equal. This requirement overrides any invoice matching approvals that apply. This example uses the following additional setup for intercompany trade:
 -   In Fabrikam Purchase, the purchase order action policy for vendor 3024 is set up to automatically post both the original customer invoice and the intercompany vendor invoice.
 
 This example uses the following additional setup for accounts payable invoice matching for Fabrikam Purchase:
--   On the Item model groups page for the model group that is used by item B-R14, the Receiving requirements option is selected.
+-   On the Item model groups page for the model group that is used by item B-R14, the Receiving requirements option is selected.
 -   The on-hand quantity for item B-R14 is 0 (zero).
 
 For example, you follow these steps.

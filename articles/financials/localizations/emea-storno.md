@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Storno accounting
 
+[!include [banner](../includes/banner.md)]
+
 Storno accounting is the practice of using negative numbers to reverse original journal account entries.
 
 *Storno accounting* is a practice of using negative debit or credit amounts to reverse original journal account entries. Because bookkeepers typically write Storno entries in red ink, this accounting practice is also known as *Red Storno*. Using Storno accounting you can cancel a document with incorrect amounts, however you should always enter the correct document amount after the cancellation.

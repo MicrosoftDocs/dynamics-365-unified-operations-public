@@ -5,7 +5,7 @@ title: Set up bills of exchange
 description: This topic describes the steps for setting up bills of exchange.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: CustBillOfExchangeJour
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,15 +32,14 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up bills of exchange
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the steps for setting up bills of exchange.
 
 A bill of exchange is a written or electronic order from a customer that specifies that another party, usually a bank, should pay a stated amount to the company. When you use a bill of exchange as payment for a sales order invoice or free text invoice, you credit the customer account. That credit is secured by the bill of exchange until the customer pays the bill of exchange to the bank. Typically, you will settle the invoice with the bill of exchange on the due date. When you receive notification from your bank that the bill of exchange has been honored, you can close the bill of exchange. You can draw a bill of exchange through your bank at either of the following times:
 
--   On the due date. This approach is known as remit for collection.
--   Before the due date, typically on the discount date that is specified in the terms of payment that are set up for the customer. When you post the transaction, the discount amount is posted to an expense account. The remaining amount is a liability to you until the bank receives payment from the customer. This approach is known as remit for discount.
+-   On the due date. This approach is known as remit for collection.
+-   Before the due date, typically on the discount date that is specified in the terms of payment that are set up for the customer. When you post the transaction, the discount amount is posted to an expense account. The remaining amount is a liability to you until the bank receives payment from the customer. This approach is known as remit for discount.
 
 ## Set up posting profiles for bills of exchange
 Use the **Customer posting profiles** page to set up posting profiles that you can use with bills of exchange, protest bills of exchange, remittances for collection, and remittances for discount. In the **Summary account** field, select the summary account to post bill of exchange amounts to. This account is debited or credited, depending on the type of bill of exchange transaction:
@@ -63,7 +62,7 @@ On the **Journals names** page, create at least five journal names to use for bi
 -   **Customer bank remittance** – Create a journal name for the Remittance journal.
 -   **Customer settle bill of exchange** – Create a journal name for the Settle bill of exchange journal.
 
-On the journal voucher page for each bill of exchange journal, enter information about the bill of exchange on the **Bill of exchange** tab. After the bill of exchange journal lines are posted, you can view them on the **Bill of exchange journal inquiry** page and the **Bills of exchange statistics** page.
+On the journal voucher page for each bill of exchange journal, enter information about the bill of exchange on the **Bill of exchange** tab. After the bill of exchange journal lines are posted, you can view them on the **Bill of exchange journal inquiry** page and the **Bills of exchange statistics** page.
 Set up methods of payment for bills of exchange
 -----------------------------------------------
 
@@ -71,7 +70,7 @@ On the **Methods of payment** page, set up at least one method of payment for bi
 Set up payment fees for bills of exchange
 -----------------------------------------
 
-A payment fee is a charge that is associated with the process of collecting payments from customers. Multiple payment fee setup lines can be associated each payment fee. You can use setup lines to control how default amounts for payment fees are calculated. For example, you can create setup lines for methods of payment, payment specifications, currencies, and time periods. You can also create setup lines for a percentage or amount that is based on day intervals. For example, you can set up an interest percentage that is based on the length of time a payment is overdue. If the bank charges different fees for different remittance types, such as **Collection** or **Discount**, set up a separate payment fee line for each remittance type.
+A payment fee is a charge that is associated with the process of collecting payments from customers. Multiple payment fee setup lines can be associated each payment fee. You can use setup lines to control how default amounts for payment fees are calculated. For example, you can create setup lines for methods of payment, payment specifications, currencies, and time periods. You can also create setup lines for a percentage or amount that is based on day intervals. For example, you can set up an interest percentage that is based on the length of time a payment is overdue. If the bank charges different fees for different remittance types, such as **Collection** or **Discount**, set up a separate payment fee line for each remittance type.
 Set up remittance fees for bank remittance files
 ------------------------------------------------
 

@@ -32,17 +32,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Sales tax rates based on the Marginal base and Calculation methods
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how the values in the fields Marginal base and Calculation method determine the tax rate(s) in sales and purchase transactions.
 
-The Marginal base on the Calculation FastTab on the Sales tax codes page determines which amount is used to pick the appropriate tax rate(s) from the rates in the Sales tax code values page. The amount type in the Marginal base field in combination with the method in the Calculation method field determines the logic to find the correct tax rate(s) for a transaction. 
+The Marginal base on the Calculation FastTab on the Sales tax codes page determines which amount is used to pick the appropriate tax rate(s) from the rates in the Sales tax code values page. The amount type in the Marginal base field in combination with the method in the Calculation method field determines the logic to find the correct tax rate(s) for a transaction. 
 
 Various combinations of values in these fields produce very different sales tax calculations, as shown by the following examples. The examples use the same tax interval values, which are set up for each tax code in the Sales tax codes values page. To open this page, click Sales tax code &gt; Values in the Sales tax codes page.
 
 > [!Important]                                                                                                                  
-> If the Marginal base on one or more of your sales tax codes is based on line amounts or units, the value of the Calculation method field in the General ledger parameters page must be set to Line. |
+> If the Marginal base on one or more of your sales tax codes is based on line amounts or units, the value of the Calculation method field in the General ledger parameters page must be set to Line. |
 
 ## Net amount per line
 Select this option to determine sales tax rates based on the net amount for the invoice lines, excluding any other taxes.
@@ -76,7 +75,7 @@ Total invoice amount = 200.00 + 35.00 = 235.00
 
 **Variation** 
 
-If the invoice has two lines with four items on each line, the net amount on each line is 100.00 and the sales tax is calculated as follows: 
+If the invoice has two lines with four items on each line, the net amount on each line is 100.00 and the sales tax is calculated as follows: 
 
 Sales tax line 1 = 50 x 30% + 50 x 20% = 15 + 10 = 25.00 
 
@@ -87,7 +86,7 @@ Total sales tax = 25.00 + 25.00 = 50.00
 Total invoice amount = 200.00 + 50.00 = 250.00
 
 ## Net amount per unit
-Select this option to determine sales tax rates based on the value of each unit, excluding any other taxes. When a unit based Marginal base is selected then also a Unit has to be specified for the Sales tax code.
+Select this option to determine sales tax rates based on the value of each unit, excluding any other taxes. When a unit based Marginal base is selected then also a Unit has to be specified for the Sales tax code.
 
 ### Example
 
@@ -114,7 +113,7 @@ Total invoice amount = 200.00 + 60.00 = 260.00
 
 ## Net amount of invoice balance
 
-Select this option to determine sales tax rates based on the total value for the invoice, excluding any other taxes.
+Select this option to determine sales tax rates based on the total value for the invoice, excluding any other taxes.
 
 ### Example
 
@@ -130,7 +129,7 @@ Marginal base: **Net amount of invoice balance**
 
 Calculation method: **Interval**
 A sales invoice has 2 lines with 4 lamps on each lines for 25.00 each. 
-The net amount of invoice balance is 4 x 25.00 + 4 x 25.00 = 200.00. 
+The net amount of invoice balance is 4 x 25.00 + 4 x 25.00 = 200.00. 
 The tax is calculated as follows: 
 Total sales tax = 50 x 0.30 + 50 x 0.20 + 100 x 0.10 = 15 + 10 + 10 = 35.00 
 Total invoice amount = 200.00 + 35.00 = 235.00
@@ -154,8 +153,8 @@ The sales tax rates are set up in the following intervals.
 
 Marginal base: **Gross amount per line** 
 Calculation method: **Interval** 
-Additionally there is another tax code calculated for a special duty of 5.00 on each lamp. The duty is added to the net amount before the sales tax calculation. 
-You buy 8 lamps that cost 25.00 each. The net amount for the invoice line is 200.00. 
+Additionally there is another tax code calculated for a special duty of 5.00 on each lamp. The duty is added to the net amount before the sales tax calculation. 
+You buy 8 lamps that cost 25.00 each. The net amount for the invoice line is 200.00. 
 The gross amount for the invoice line is 8 x 25.00 + 8 x 5.00 = 240.00. 
 The tax is calculated as follows: 
 Total sales tax = 50 x 0.30 + 50 x 0.20 + 140 x 0.10 = 15 + 20 + 14 = 39.00 
@@ -164,7 +163,7 @@ Total invoice amount = 200.00 + 39.00 + 40.00 = 279.00
 
 **Variation** 
 
-If the invoice is created by using 2 invoice lines with 4 items on each line, the net amount per invoice line is 100.00. 
+If the invoice is created by using 2 invoice lines with 4 items on each line, the net amount per invoice line is 100.00. 
 The gross amount (including the duty of 4 x 5.00) per invoice line would be 120.00, and the sales tax is created as follows: 
 Sales tax invoice line 1 = 50 x 0.30 + 50 x 0.20 + 20 x 0.10 = 15 + 10 + 2 = 27.00 
 Sales tax invoice line 2 = 50 x 0.30 + 50 x 0.20 + 20 x 0.10 = 15 + 10 + 2 = 27.00 
@@ -215,9 +214,9 @@ The sales tax rates are set up in the following intervals.
 | 100 - 0 (&gt; 100) | 10%      |
 
 Marginal base: **Invoice total incl. other sales tax amounts** 
-Calculation method: **Interval**   
+Calculation method: **Interval**   
 There is a special duty of 5.00 on each lamp. The duty is added to the net amount before the sales tax calculation. 
-You buy 8 lamps that cost 25.00 each. The net amount for the invoice is 200.00. 
+You buy 8 lamps that cost 25.00 each. The net amount for the invoice is 200.00. 
 The gross amount for the invoice is 200.00 + (8 x 5.00) = 240.00. 
 The tax is calculated as follows: 
 Total sales tax = 50 x 0.30 + 50 x 0.20 + 140 x 0.10 = 15 + 10 + 14 = 39.00 

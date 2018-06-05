@@ -5,7 +5,7 @@ title: Set up a procurement category hierarchy
 description: This procedure shows you how to create new nodes in a procurement category hierarchy and how to configure a procurement category to be used in a procurement process. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 11/11/2016
+ms.date: 11/06/2017
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -28,13 +28,13 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up a procurement category hierarchy
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to create new nodes in a procurement category hierarchy and how to configure a procurement category to be used in a procurement process. These tasks would typically be carried out by a Purchasing manager. Before you can start this procedure, there must be a category hierarchy of type Procurement. If you're using a demo data company, you can run this procedure in the USMF company.
 
 
 ## Add a new procurement category
-1. Go to Procurement and sourcing > .. > Procurement categories.
+1. Go to Procurement and sourcing > Procurement categories.
 2. Click Edit category hierarchy.
     * The current procurement category hierarchy is displayed in the left side of the page. You  are about to modify the hierarchy.  
 3. Click New category node.
@@ -46,7 +46,7 @@ This procedure shows you how to create new nodes in a procurement category hiera
 7. Click Save.
 
 ## Add products to your new procurement category
-1. Go to Procurement and sourcing > .. > Procurement categories.
+1. Go to Procurement and sourcing > Procurement categories.
     * Select the node you just added. If you’re running this procedure as a task guide you might need to unlock the task guide to select the node.  
 2. Toggle the expansion of the Products section.
 3. Click Add to associate products with the procurement category.

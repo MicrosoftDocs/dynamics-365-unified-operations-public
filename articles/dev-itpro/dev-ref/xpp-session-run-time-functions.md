@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ session run-time functions
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the session run-time functions.
 
@@ -111,7 +110,7 @@ The short name of the current partition.
 
 ### Remarks
 
-The maximum length of the data partition name that is returned is eight characters.
+The maximum length of the data partition name that is returned is eight characters.
 
 ### Example
 
@@ -269,7 +268,7 @@ Enables the caller to run an X++ method in the security context of another user.
 | staticMethodName | The class method to invoke in the new user context.                                               |
 | params           | The parameters to pass to the method; optional.                                                   |
 | company          | The company that is selected for the impersonated session; optional.                              |
-| language         | The language that is selected for the impersonated session; optional.                             |
+| language         | The language that is selected for the impersonated session; optional.                             |
 | partition        | The partition key of the type that is returned by the **getCurrentPartition** function; optional. |
 
 ### Return value
@@ -278,7 +277,7 @@ A container that holds the return value or values of the method that is called b
 
 ### Remarks
 
-This function makes it possible to run code as another user. This capability presents a security threat. Therefore, this function runs under [Code Access Security](http://msdn.microsoft.com/library/09299e91-5b73-4cf5-a17e-f1f39b6bae76(AX.60).aspx). Calls to this function on the server require permission from the **RunAsPermission** class. Each use of this application programming interface (API) should be threat-modeled. If a security vulnerability is discovered, validate input to this API. The debugger might ignore breakpoints that are located in a method that is called by using the **runAs** function. X++ code that is executed by the **runAs** function must run as Microsoft .NET Framework Common Intermediate Language (CIL). If CIL hasn't been generated for the target static method, an error message indicates that the method isn't found. The **PartitionKey** system type is the exact type of the *partition* parameter. **PartitionKey** is a string that has a maximum length of eight characters.
+This function makes it possible to run code as another user. This capability presents a security threat. Therefore, this function runs under [Code Access Security](http://msdn.microsoft.com/library/09299e91-5b73-4cf5-a17e-f1f39b6bae76(AX.60).aspx). Calls to this function on the server require permission from the **RunAsPermission** class. Each use of this application programming interface (API) should be threat-modeled. If a security vulnerability is discovered, validate input to this API. The debugger might ignore breakpoints that are located in a method that is called by using the **runAs** function. X++ code that is executed by the **runAs** function must run as Microsoft .NET Framework Common Intermediate Language (CIL). If CIL hasn't been generated for the target static method, an error message indicates that the method isn't found. The **PartitionKey** system type is the exact type of the *partition* parameter. **PartitionKey** is a string that has a maximum length of eight characters.
 
 ### Example
 

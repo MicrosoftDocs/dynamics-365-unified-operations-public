@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Define production flow models
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Production flow models describe how the capacity of lean manufacturing work cells is calculated and maintained. Therefore the definition of a production flow model is a prerequisite of the definition of work cells. The demo data company used to create this procedure is USMF.
 
