@@ -66,23 +66,25 @@ Before you begin the move, you must save your data from your existing environmen
 ### Commercial activities
 1.	The customer places the order for the subscriptions, including the add-on environments, under the new agreement with the Volume Licensing Reseller or the CSP.
   > [!IMPORTANT]
-  > it is important to make sure that the subscriptions are purchased against the existing AAD tenant!
+  > Make sure that the subscriptions are purchased against the existing AAD tenant.
 2.	The customer activates the subscriptions. 
 3.	The customer validates in the O365 Admin Portal that the new subscriptions are active in addition to the existing subscriptions.
 
 ### Deploy new environments
 1. After the new subscriptions are active, additional add-ons that you can configure will show in LCS.  
-2. Deploy those new add-ons and configure as appropriate. Apply deployable packages and restore data. 
+2. Deploy those new add-ons and configure as appropriate. Apply deployable the packages and restore the data. 
 
 ### Delete environments under the obsolete agreement
-1. For each environment that was deployed under the old agreement, 
-2. Click Full details in LCS
-3. Stop the environment
-4. When the environment has stopped, click Deallocate
-5. Once deallocation has completed, the Delete action becomes available. Click Delete.
-6. Once deletion of the environment has completed, the Configure action becomes available. Do not use those environments any longer. Do not redeploy them.
-7. CSP or Volume Licensing Reseller suspends the existing subscriptions
-8. Original add-ons disappear from LCS
+Complete the following steps for each environment that was deployed under the old agreement. After you have deleted the environments do not use or redeploy them again.
+1. In LCS, on the **Environment details** page, click **Full details**.
+3. Stop the environment, and when the environment has stopped, click **Deallocate**.
+4. When the deallocation is complete, click **Delete**.
+5. When the environment is deleted, click **Configure**. 
+
+
+### Updated environments
+1. The CSP or Volume Licensing Reseller suspends the existing subscriptions.
+2. Any original add-ons no longer appear in LCS.
 
   > [!IMPORTANT]
   > Existing subscriptions must be kept in an active state in parallel to the new subscriptions until the physical redeployment of the add-on environments has been completed. 
