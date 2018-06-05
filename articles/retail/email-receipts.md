@@ -86,13 +86,13 @@ You must configure a SMTP server to send email receipts.
    - In the **E-mail description** field, enter a description.
    - In the **Default language code** field, select the  language.
    - In the  **Sender name** field, specify a name to appear as the sender of the email. Customers will see this name on the email as the **From** name.
-   - In the **Sender e-mail** field, specify a valid email address. Customers will see this email address as the **From<* email address.
+   - In the **Sender e-mail** field, specify a valid email address. Customers will see this email address as the **From** email address.
 
 4. In the lower grid, configure the following:
    - **E-mail ID** should already be populated as **EmailRecpt**.
    - In the **Subject** field, enter a title for the email receipts.
    - In the **Language** field, specify the language.
-   - In the **Email** field, enter the following string: **&lt;pre&gt;%message%&lt;/pre&gt;**.
+   - In the **Email** field, enter the following string: **%message%**.
    - If you want to have more than just the receipt in the message, click the **E-mail message** button to fill out the template for the body of the email messages to be sent. If you want the receipt to appear (in MPOS), insert the placeholder **%message%.**
 
 This is the only placeholder that will be replaced when sending MPOS receipts. To get more placeholder options, you'll need to create customization on the MPOS side.
