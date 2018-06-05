@@ -63,6 +63,20 @@ You must configure a SMTP server to send email receipts.
 
 4.  In the **Receipt email** field, if you selected either **E-mail** or **Both** in the **Receipt option** field, enter the customer’s email address .
 
+### Set up an email receipt profile
+
+1. Click **Retail &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Receipt profiles.**
+2. Press **CTRL**+**N** to create a receipt profile.
+3. Provide a **Receipt profile ID** and **Description**
+4. On the **General** tab, click **Add** to add a new receipt type.
+5. Select receipt type *Receipt* and select a receipt format to be used for email receipts.
+
+### Add an email receipt profile to the functionality profile
+
+1. Click **Retail &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Functionality profiles**
+2. Click **Edit**
+3. On the **General** tab, specify an email receipt profile for **Receipt profile ID**
+
 ### Set up an email template for receipts
 
 1. Click **Organization Administration &gt; Setup &gt; E-mail Templates.**
