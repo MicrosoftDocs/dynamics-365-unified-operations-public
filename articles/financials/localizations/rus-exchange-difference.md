@@ -1,5 +1,6 @@
 ---
 # required metadata
+
 title: Set up exchange rates for a currency transaction
 description: This topic provides information about setting up exchange rates for currency transactions for Russia. 
 author: ShylaThompson
@@ -11,6 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 			
 # optional metadata
+
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
@@ -23,8 +25,10 @@ ms.search.region: Russia
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
+
 ---
-# (RUS) Set up exchange rates for a currency transaction 
+
+# Set up exchange rates for a currency transaction 
 
 Use the **Currency revaluation accounts** form to set up the loss or gain calculation for currency exchange.
 
@@ -53,7 +57,7 @@ Use the **Currency revaluation accounts** form to set up the loss or gain calcul
 12. In the **Revenue code** field, select the revenue code that corresponds to the transaction for an exchange rate adjustment that occurs when transactions are settled for an advance holder. You can settle the transaction when the exchange rate adjustment is a profit.
 
 
-## (RUS) Set up amount difference parameters for exchange rates 
+## Set up amount difference parameters for exchange rates 
 
 An original facture can be corrected if the currency values change during the shipment of goods. After the facture is corrected, the company verifies that the sum of the correction is equal to the sum of the amount difference. An amount difference facture is generated when a purchase or sales transaction is settled under the following conditions:
 
@@ -79,7 +83,7 @@ Use this procedure to set up parameters for amount difference for exchange rates
     
 
     > [!NOTE]
-    > <P>The <STRONG>Sales/customers</STRONG> FastTab is available only if you select <STRONG>Incremental</STRONG> or <STRONG>Period grand total</STRONG> in the <STRONG>Calculation method</STRONG> field in the <STRONG>General ledger parameters</STRONG> form.</P>
+    > The <STRONG>Sales/customers</STRONG> FastTab is available only if you select <STRONG>Incremental</STRONG> or <STRONG>Period grand total</STRONG> in the <STRONG>Calculation method</STRONG> field in the <STRONG>General ledger parameters</STRONG> form.
 
 
 
@@ -87,7 +91,7 @@ Use this procedure to set up parameters for amount difference for exchange rates
     
 
     > [!NOTE]
-    > <P>This field is required if you select <STRONG>Deviation from the cost price</STRONG> in the <STRONG>Ledger posting</STRONG> field. The <STRONG>Unrealized loss</STRONG> or <STRONG>Unrealized gain</STRONG> account is used when revaluation of foreign currency is performed.</P>
+    > This field is required if you select <STRONG>Deviation from the cost price</STRONG> in the <STRONG>Ledger posting</STRONG> field. The <STRONG>Unrealized loss</STRONG> or <STRONG>Unrealized gain</STRONG> account is used when revaluation of foreign currency is performed.
 
 
 
@@ -97,7 +101,7 @@ Use this procedure to set up parameters for amount difference for exchange rates
     
 
     > [!NOTE]
-    > <P>The amount difference factures are created only if the <STRONG>Sales taxes</STRONG> field for a positive or negative amount difference is set to <STRONG>Tax</STRONG>.</P>
+    > The amount difference factures are created only if the <STRONG>Sales taxes</STRONG> field for a positive or negative amount difference is set to <STRONG>Tax</STRONG>.
 
 
 
@@ -105,7 +109,7 @@ Use this procedure to set up parameters for amount difference for exchange rates
     
 
     > [!NOTE]
-    > <P>The <STRONG>Purchases/Vendors</STRONG> tab is available only if you select <STRONG>Incremental</STRONG> or <STRONG>Period grand total</STRONG> in the <STRONG>Calculation method</STRONG> field in the <STRONG>General ledger parameters</STRONG> form.</P>
+    > The <STRONG>Purchases/Vendors</STRONG> tab is available only if you select <STRONG>Incremental</STRONG> or <STRONG>Period grand total</STRONG> in the <STRONG>Calculation method</STRONG> field in the <STRONG>General ledger parameters</STRONG> form.
 
 
 
@@ -115,7 +119,7 @@ Use this procedure to set up parameters for amount difference for exchange rates
     
 
     > [!NOTE]
-    > <P>The amount difference factures are created only if the <STRONG>Sales taxes</STRONG> field for a positive or negative amount difference is set to <STRONG>Tax</STRONG>.</P>
+    > The amount difference factures are created only if the <STRONG>Sales taxes</STRONG> field for a positive or negative amount difference is set to <STRONG>Tax</STRONG>.
 
 
 
@@ -123,16 +127,16 @@ Use this procedure to set up parameters for amount difference for exchange rates
     
 
     > [!NOTE]
-    > <P>This field is required if you select <STRONG>Deviation from the cost price</STRONG> in the <STRONG>Ledger posting</STRONG> field.</P>
+    > This field is required if you select <STRONG>Deviation from the cost price</STRONG> in the <STRONG>Ledger posting</STRONG> field.
 
 
-## (RUS) Set up accounts payable parameters for amount differences 
+## Set up accounts payable parameters for amount differences 
 
 Use the **Accounts payable parameters** form to set up accounts payable parameters for amount differences. Facture amount differences are included in a separate list that is created in the purchase book for the specified period. This list contains the cancellation of the source facture and the new facture that is recalculated at payment.
 
 
 > [!NOTE]
-> <P>If more than one payment is made during a tax period, the recalculated facture amount is the total of the recalculated payments. If all of the payments belong to the same tax period that the invoice belongs to, the total facture is reflected in the purchase book.</P>
+> If more than one payment is made during a tax period, the recalculated facture amount is the total of the recalculated payments. If all of the payments belong to the same tax period that the invoice belongs to, the total facture is reflected in the purchase book.
 
 
 
@@ -142,7 +146,7 @@ Use the **Accounts payable parameters** form to set up accounts payable paramete
 
 3.  On the **Purchase book** FastTab, select the **Amount difference in additional list** check box to include the amount differences in an additional list in the purchase book.
 
-## (RUS) Set up general ledger parameters for exchange adjustment 
+## Set up general ledger parameters for exchange adjustment 
 
 Use this procedure to set up the parameters for exchange adjustments of advance settlements by using the **General ledger parameters** form.
 
@@ -152,7 +156,7 @@ Use this procedure to set up the parameters for exchange adjustments of advance 
 
 3.  Select the **Advance revaluation cancelation** check box to cancel exchange adjustment during advance settlement.
 
-## (RUS) Amount difference factures for sales and purchase orders 
+## Amount difference factures for sales and purchase orders 
 
 Before you can generate an amount difference facture, you must create and post a facture for a purchase order or sales order. After posting the facture, settle the facture transactions to generate the amount differences based on the exchange rates.
 
@@ -239,7 +243,7 @@ Similarly, for VAT at 10 percent, the value is:
 (48 / 110) \* 10 = 4.36 RUB
 
 
-## (RUS) Create and link an amount difference facture to an original sales invoice 
+## Create and link an amount difference facture to an original sales invoice 
 
 Use the following procedures to create and link an amount difference facture to an original sales invoice.
 
@@ -274,7 +278,7 @@ Use the following procedures to create and link an amount difference facture to 
     
 
     > [!NOTE]
-    > <P>In the sales book, the facture date and facture number should be the same as the original facture.</P>
+    > In the sales book, the facture date and facture number should be the same as the original facture.
 
 
 
@@ -290,7 +294,7 @@ Use the following procedures to create and link an amount difference facture to 
     
 
     > [!NOTE]
-    > <P>The source facture ID is displayed in the <STRONG>Facture source</STRONG> field.</P>
+    > The source facture ID is displayed in the <STRONG>Facture source</STRONG> field.
 
 
 
@@ -301,7 +305,7 @@ Use the following procedures to create and link an amount difference facture to 
 10. Select the **Included only** check box to print the original facture with only the selected amount difference factures. If you clear this check box, all amount difference factures are printed with the original facture.
 
 
-## (RUS) Calculate the exchange rate difference for a customer 
+## Calculate the exchange rate difference for a customer 
 
 
 You can use the **Exchange adjustment** form to calculate the exchange rate difference for a customer. The exchange adjustment is calculated at the end of a period according to the rate specified at the period end date.
@@ -318,7 +322,7 @@ You can use the **Exchange adjustment** form to calculate the exchange rate diff
     
 
     > [!NOTE]
-    > <P>If this field is left blank, then it is automatically filled with the standard text for exchange rate correction, and the number of the revaluated document.</P>
+    > If this field is left blank, then it is automatically filled with the standard text for exchange rate correction, and the number of the revaluated document.
 
 
 
@@ -334,7 +338,7 @@ You can use the **Exchange adjustment** form to calculate the exchange rate diff
     
 
     > [!NOTE]
-    > <P>If you select a posting profile in the <STRONG>Use posting profile from</STRONG> field, the exchange adjustment transaction is based on the posting profile in that field.</P>
+    > If you select a posting profile in the <STRONG>Use posting profile from</STRONG> field, the exchange adjustment transaction is based on the posting profile in that field.
 
 
 
@@ -366,7 +370,7 @@ You can use the **Exchange adjustment** form to calculate the exchange rate diff
     
 
     > [!NOTE]
-    > <P>This button is available only if you select <STRONG>Standard</STRONG> in the <STRONG>General ledger parameters</STRONG> form, in the <STRONG>Calculation method</STRONG> field on the <STRONG>Ledger</STRONG> tab.</P>
+    > This button is available only if you select <STRONG>Standard</STRONG> in the <STRONG>General ledger parameters</STRONG> form, in the <STRONG>Calculation method</STRONG> field on the <STRONG>Ledger</STRONG> tab.
 
 
 
@@ -384,7 +388,7 @@ You can use the **Exchange adjustment** form to calculate the exchange rate diff
 
 25. Click **OK** to generate the **Exchange adjustment simulation** report.
 
-## (RUS) Settle partial payments for customers 
+## Settle partial payments for customers 
 
 Use this procedure to settle partial payment transactions for a customer. You can settle a partial payment against a particular invoice line, and you can settle open transactions by using a periodic settlement for customers. Exchange adjustment factures are created for the invoice lines that are settled.
 
@@ -398,7 +402,7 @@ Use this procedure to settle partial payment transactions for a customer. You ca
     
 
     > [!NOTE]
-    > <P>The <STRONG>Mark lines on free text invoices and interest notes</STRONG> check box must be selected on the <STRONG>Settlement</STRONG> link in the <STRONG>Accounts receivable parameters</STRONG> form.</P>
+    > The <STRONG>Mark lines on free text invoices and interest notes</STRONG> check box must be selected on the <STRONG>Settlement</STRONG> link in the <STRONG>Accounts receivable parameters</STRONG> form.
 
 
 
@@ -410,7 +414,7 @@ Use this procedure to settle partial payment transactions for a customer. You ca
     
 
     > [!NOTE]
-    > <P>To verify that the exchange adjustment facture that is created has the same settled invoice amount in the <STRONG>Facture journal</STRONG> form, select the facture.</P>
+    > To verify that the exchange adjustment facture that is created has the same settled invoice amount in the <STRONG>Facture journal</STRONG> form, select the facture.
 
 
 
