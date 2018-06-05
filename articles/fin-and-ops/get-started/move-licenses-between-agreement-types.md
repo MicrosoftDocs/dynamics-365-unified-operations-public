@@ -82,7 +82,7 @@ Complete the following steps for each environment that was deployed under the ol
 5. When the environment is deleted, click **Configure**. 
 
 
-### Updated environments
+### Update environments
 1. The CSP or Volume Licensing Reseller suspends the existing subscriptions.
 2. Any original add-ons no longer appear in LCS.
 
