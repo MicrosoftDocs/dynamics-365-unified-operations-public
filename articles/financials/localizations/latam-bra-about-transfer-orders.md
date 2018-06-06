@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [Enter topic title here]
-description: [write a simple description of the topic here]
+title: About transfer orders 
+description: This topic provides information about transfer orders for Brazil. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 6/5/2018
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# (BRA) About transfer orders 
+# About transfer orders 
 
 You can transfer inventory items between warehouses that are located at different fiscal establishments by using transfer orders. You can transfer inventory items to another fiscal establishment that is in the same state or in another state.
 
