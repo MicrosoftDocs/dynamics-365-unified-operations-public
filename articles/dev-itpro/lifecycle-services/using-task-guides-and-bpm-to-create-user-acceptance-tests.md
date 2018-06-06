@@ -48,7 +48,7 @@ After you have created a BPM library, you'll need to use Task recorder to create
 
 If you're using a library that already has all of the necessary task recordings attached, you can skip this step. Otherwise, create a new task recording in the client and save it directly to LCS, or download the AXTR file and upload it to a BPM library later. 
 
-#### Create and save a new task recording 
+#### Create and save a new task recording
 1. Open the client and sign in. 
 2. Select the company that you want to use while recording.
 3. Go to **Settings** > **Task recorder**.
@@ -67,8 +67,7 @@ If you're using a library that already has all of the necessary task recordings 
  >[!NOTE]
  > To enable the effective execution of your tests using automation tools, make sure all of your task recordings start on the main dashboard of Dynamics 365 for Finance and Operations. 
 
-#### Upload an AXTR file to BPM 
-
+#### Upload an AXTR file to BPM
 1. In Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to upload the task recording to.
 2. Click **Author and edit** and in the lines, locate and select the process to upload the task recording to.
 3. In the right pane, click **Upload**. 
@@ -80,15 +79,16 @@ If you're using a library that already has all of the necessary task recordings 
 ![Upload AXTR 2](./media/upload_axtr_2.png.PNG "Upload AXTR 2")
 
 #### Save an existing task recording to BPM
-
 1. To attach an existing task recording, sign in to the client.
 2. Go to **Settings** > **Task recorder**.
 3. Select **Edit Task Recording** and attach the file by either saving directly to LCS or downloading the AXTR and then uploading to BPM.
 
 ## Synchronize and Configure your test plan in VSTS
 
+Once you have selected your acceptance test BPM library, synchronize it with VSTS and create your test plan.
+
 ### Sync with VSTS
-Next, you'll need to synchronize your BPM library with your VSTS project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-vsts). 
+Synchronize your BPM library with your VSTS project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-vsts). 
 
 After configuration is complete, synchronize the BPM library with a VSTS project.
 1. On the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **VSTS sync**.
@@ -111,7 +111,6 @@ You can also start VSTS synchronization from the toolbar in a BPM library. Selec
 In addition to the test steps, the task recording XML file is attached to the VSTS test case. This file will be needed if you want to automate test execution. 
 
 ### Create a test suite in VSTS
-
 Next, you will need to create a test suite in VSTS. This will allow you to run a suite of tests so you can easily manage, investigate, and track the results. 
 
 1. Sign in to VSTS and select the project and test plan that you want to test in. 
@@ -130,10 +129,9 @@ Next, you will need to create a test suite in VSTS. This will allow you to run a
  >[!NOTE]
  > This example shows how to create a comprehensive acceptance test suite with all test cases added. You can create various test suites and use custom queries to add specific test cases. 
 
-## Execute your test plan
+## Execute your tests
 
 ### Run manual test cases
-
 After you have a test suite, you are ready to use it for regression testing after updates have been made to your Dynamics 365 for Finance and Operations application in a sandbox or test environment. You can run the test cases in your test suite manually or play the task recordings that are part of the test suite and use VSTS to mark the test cases as passed or failed.
 
 ![VSTS test marked](./media/vsts_test_marked.png.png "VSTS test marked")
@@ -143,9 +141,9 @@ VSTS also provides a tool, **Test Runner**, to manage manual test case execution
 We recommend that you take advantage of VSTS as it provides a rich set of management features not only for testing, but result management and mitigation.
 
 ### Run automated test cases
-
 The Dynamics 365 Unified Operations platform provides developers with tools to author test cases based on task recordings and use VSTS to manage the automated execution of these test cases. Execution of test cases are part of the build and test automation capabilities of **build and test** environment topologies.
 For details, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/).
 
-### Investigate test runs
+#### Investigate test runs
+Once an automate run is complete, on the VSTS toolbar, select **Test > Runs** to investigate your test run. Select the desired test run to investigate individial test case failures and errors.
 
