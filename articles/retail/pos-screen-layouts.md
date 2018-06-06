@@ -90,13 +90,46 @@ The POS application will automatically choose the closest configured layout size
 
 - INSERT IMAGE HERE - 
 
-**Modern POS - Full** - Full layouts are typically best used for larger displays such as PC monitors or tablets. Users can choose which UI elements to include, determine their size and placement, and configure their detailed properties. Full layouts support both portrait and landscape configurations. 
+**Name** – This field allows users to provide a meaningful name to identify the screen sizes.  
+**Layout type** – POS can render it’s user face in different modes for the best user experience on a given device. 
 
-**Modern POS - Compact** - Compact layouts are typically best used for phones or small tablets. Design possibilities are limited for compact devices. Users can configure the columns and fields for the receipt and totals panes.
+- **Modern POS - Full** - Full layouts are typically best used for larger displays such as PC monitors or tablets. Users can choose which UI elements to include, determine their size and placement, and configure their detailed properties. Full layouts support both portrait and landscape configurations. 
+
+- **Modern POS - Compact** - Compact layouts are typically best used for phones or small tablets. Design possibilities are limited for compact devices. Users can configure the columns and fields for the receipt and totals panes.
+
+**Width/Height** – These values represent the expected effective screen size in pixels for the layout.  Keep in mind that some operating systems utilize scaling with high resolution displays.  
+
+***Tip: You can find out the layout size needed for your POS screen by viewing the resolution within the app.  Simply open POS and navigate to Settings > Session information.  POS will display the currently loaded screen layout and layout size, as well as the app window resolution.***
+
+-INSERT IMAGE HERE-
+
+### Button grids
+For each layout size within a screen layout, users can configure and assign button grids for the POS welcome screen and transaction screen.  Welcome screen button grids will automatically be laid out from left to right, from the lowest number (Welcome screen 1) to the largest.  In Full POS layouts, the button grid placement is specified in the screen layout designer.  In Compact POS layouts, the button grids are automatically laid out from top to bottom, from the lowest number (Transaction screen 1) to the largest and are accessible by opening the “Actions” menu.
+
+-INSERT IMAGE HERE-
+
+### Images
+For each layout size within a screen layout, users can specify images to be included in the POS user interface.  Full POS layouts allow a single Welcome screen image which is rendered as the first UI element on the left.  Images can be utilized in the Full POS layout Transaction screen as tab images or as a logo.  Compact POS layouts do not utilize these images.
 
 ### Screen layout designer
 
-Each layout size within a screen layout must be configured using the Screen layout designer. The designer allows users to specify and configure the UI elements of the Transaction screen. The Screen layout designer uses ClickOnce to download, install, and launch the latest version of the application each time the user accesses it. Be sure to check browser requirements for using ClickOnce—some browsers, such as Chrome, require extensions. 
+The screen layout designer allows user to configure the various aspects of the POS Transaction screen for each layout size, in portrait and landscape, and for Full and Compact layout types. The Screen layout designer uses ClickOnce to download, install, and launch the latest version of the application each time the user accesses it. Be sure to check browser requirements for using ClickOnce—some browsers, such as Chrome, require extensions.
+
+***Important: You must configure a screen layout for each layout size defined and utilized by POS***
+
+### Full layout designer
+
+The Full layout type designer allows users to drag and drop UI controls onto the POS transaction and to configure their applicable settings.
+
+-INSERT IMAGE HERE-
+
+**Import/Export layout:** Users can export and import POS screen layout designs as XML files to easily reuse and share across environments.  It is important to only import layout designs for the correct size layouts or UI elements may not fit properly on the screen.
+**Landscape/Portrait:**  If the POS device supports switching between landscape and portrait modes, you must define a screen layout for each.  POS will automatically detect the screen rotation and render the configured layout.
+**Layout grid:** The POS designer is laid out in a 4 pixel grid.  UI controls will snap to the grid layout to allow users to properly align the content.
+**Designer zoom:**  Users can zoom the designer view in and out to better view the content on the POS screen.  This is useful when the screen resolution on the POS is very different than the screen used in the designer.
+**POS controls:** The POS layout designer supports the following controls.  Many controls can be configured by right-clicking and using the context menu.
+
+-INSERT IMAGE HERE (left off here)-
 
 **Number pad** - The number pad is the main user input in the POS Transaction screen. It can be configured to show the entire on-screen pad, which is ideal for touchscreens, or only the input field, which can be used with a physical keyboard. The number pad settings are available in the full layout only. In Dynamics 365 for Retail version 1611, compact layouts always have the full number pad available from the Transaction screen.
 
