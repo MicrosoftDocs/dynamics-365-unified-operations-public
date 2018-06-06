@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 - Go live
 description: This topic explains the final cutover process that starts after you turn off AX 2012 and completes with Dynamics 365 for Finance and Operations running an upgraded version of your code and database.
 author: robadawy
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 06/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
