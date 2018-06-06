@@ -5,7 +5,7 @@ title: Upgrade Dynamics AX 2012 to Dynamics 365 for Finance and Operations
 description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Microsoft Dynamics 365 for Finance and Operations.
 author: tariqbell
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 06/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -101,7 +101,7 @@ The output of this step represents the workstream in the upgrade project plan fo
 For more information, see [Analysis: Deploy a sandbox environment](analysis-sandbox.md)
 
 ### Create a project plan
-A template for a project plan is provided in the upgrade methodology. In this step, the output from the previous steps of the Analyze phase is used to fill the project plan for the upgrade project. The project plan will also contain all testing details: data upgrade testing, cutover testing, the functional test pass iterations, and details about the various resource assignments for those tasks.
+A template for a project plan is provided in the upgrade methodology. In this step, the output from the previous steps of the Analyze phase is used to fill the project plan for the upgrade project. The project plan will also contain all testing details: data upgrade testing, cutover testing (mock cutover), the functional test pass iterations, and details about the various resource assignments for those tasks.
 
 At this stage, the project plan provides a data point that can help you understand the time and cost that an upgrade to Finance and Operations will involve.
 
@@ -158,7 +158,7 @@ When you enter the Validate phase, you will have available environments that inc
 ### Perform cutover testing and create a cutover plan
 The term _cutover_ is used here to describe the final process of putting the new system live. This process consists of the tasks that occur after AX 2012 is turned off and before Finance and Operations is turned on. 
 
-The goal of the testing is to practice the cutover process. In this way, you can help guarantee that everyone who is involved in the actual cutover to go-live will have a smooth experience.
+The goal of the testing, or *mock cutover* is to practice the cutover process. In this way, you can help guarantee that everyone who is involved in the actual cutover to go-live will have a smooth experience.
 
 There are two main workstreams:
 
