@@ -5,7 +5,7 @@ title: Generate demo data by using data packages
 description: This topic explains how to use demo data packages to generate data for your system. 
 author: ryansandness
 manager: AnnBe
-ms.date: 06/01/2018
+ms.date: 06/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-In previous releases, demo data for Microsoft Dynamics 365 for Finance and Operations, is delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages will be available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment. 
+In previous releases, demo data for Microsoft Dynamics 365 for Finance and Operations, is delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment. 
 
 Here are some of the benefits of using data packages instead of a database to deliver demo data:
 
@@ -48,9 +48,11 @@ Here are some of the benefits of using data packages instead of a database to de
 
 The demo data packages are designed to be layered on top of each other, as shown in the following illustration.
 
-![Demo data packages](./media/DemoData.png)
+![Demo data packages](./media/demodatapackages_layers.png)
 
 However, the global information for one demo scenario might have completely different requirements than the global information for another demo scenario. For example, the dimensions for one scenario will interfere with the dimensions for another scenario. In this case, a separate global information package will be created, and only packages that are related to that global information can be layered on top of the package.
+
+For example, there is currently a commercial system and shared package as well as a separate public sector system and shared package that can't be used together. 
 
 ### System and Shared package
 
@@ -117,6 +119,8 @@ Follow these steps to load the packages.
 
 The following packages can be loaded. When you import any package except the System and Shared package, you must be in the legal entity that is listed in the package name. The System and Shared package can be loaded from any legal entity. However, it's typically loaded from the default company, DAT.
 
+Commerical Data
+
 | Description | Notes |
 |-------------|-------|
 | 100 - System and Shared | Load this package before you any other package. |
@@ -132,6 +136,14 @@ The following packages can be loaded. When you import any package except the Sys
 | 300 - Supply chain - PICH | Load this package after the PIFB Supply chain package. |
 | 900 - Financial transactions - HQUS | Load this package after the HQUS Financials package. |
 | 900 - Financial transactions - HQEU | You can load this package alone or together with another Financials package. |
+
+Public Sector data
+
+| Description | Notes |
+|-------------|-------|
+| 100 - Public Sector System and Shared | Load this package before you any other package. |
+| 200 - PSUS Financials | You can load this package alone. |
+| 900 - PSUS Financial transsactions | Load this package after the PSUS Financials package. |
 
 To load the data correctly, you need to load one package at a time, import it, and then load the next one once the import is complete. We are considering additional methods for loading the demo data to improve the process.  
 
@@ -160,9 +172,6 @@ After you load the data packages, you must also manually follow these steps.
 ### Scenario scripts
 
 Scripts have been provided for many of the scenarios that the demo data supports. You can find these scripts in [Demo data scripts for Dynamics 365 Finance and Operations](https://go.microsoft.com/fwlink/?linkid=861599).
-
-> [!NOTE]
-> We will add more scripts as we complete them.
 
 ## Transactions and automatic posting
 
