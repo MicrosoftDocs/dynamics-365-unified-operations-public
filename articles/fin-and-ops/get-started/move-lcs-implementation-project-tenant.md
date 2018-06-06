@@ -38,7 +38,7 @@ The process to “move” your subscriptions and all related artifacts involves 
  
 ![move subscription process](./media/move-subscription-process.png) 
  
-Activate subscriptions on the new tenant
+## Activate subscriptions on the new tenant
 Work with your Cloud Service Provider (CSP) or Volume License Reseller (VLR) to activate subscriptions against the new AAD tenant. All subscriptions for users as well as add-on environments must be activated.
 Cloud Service Provider (CSP)
 If you are licensed through a CSP agreement, purchase the necessary subscriptions against the new tenant from your CSP. If that new tenant already exists, the CSP must request a “Reseller relationship”; otherwise, they must create a “New customer” in Partner Center with the desired default domain name *.onmicrosoft,com, e.g contoso.onmicrosoft.com.
