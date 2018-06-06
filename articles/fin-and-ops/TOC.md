@@ -1056,6 +1056,7 @@
 ###### [Withholding taxes ](../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md)
 ###### [Withholding taxes on customer payments](../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md)
 ###### [Withholding taxes on vendor payments](../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md)
+##### [Transfer orders](../financials/localizations/latam-bra-about-transfer-orders.md)
 
 ##### Tasks for Brazil
 ###### [Set up legal entity parameters](../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md)
@@ -1091,7 +1092,6 @@
 ###### [Include CIAP credit from a previous period](../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md)
 ###### [PIS and COFINS fixed assets](../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md)
 
-##### [Transfer orders](../financials/localizations/latam-bra-about-transfer-orders.md)
 
 #### Mexico
 ##### [Scope of localization](../financials/localizations/latam-mex-scope.md)
