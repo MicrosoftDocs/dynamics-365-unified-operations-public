@@ -64,11 +64,17 @@ Visual profiles are assigned to registers and are used to specify the visual ele
 **Application background** - The POS can also use an image as a background throughout the application in place of the solid theme color. As with the login backgrounds, it is advised to keep the file size as minimal as possible.
 
 ## Screen layouts
-Screen layout configuration determines the actions, content, and placement of UI controls in the POS Welcome screen and Transaction screen. 
+Screen layout configuration determines the actions, content, and placement of UI controls in the POS Welcome screen and Transaction screen.  
 
-**Welcome screen**- In most cases, the Welcome screen is the page that users will see when they first log into POS. The Welcome screen can consist of a branding image and button grids that provide access to POS operations. Typically, operations that are not specific to the current transaction are placed here. 
+- INSERT IMAGE HERE- 
 
-**Transaction screen** - The Transaction screen is the main screen in POS for processing sales transactions and orders. The Transaction screen can be configured using the Screen layout designer. 
+**Welcome screen**- In most cases, the Welcome screen is the page that users will see when they first log into POS. The Welcome screen can consist of a branding image and button grids that provide access to POS operations. Typically, operations that are not specific to the current transaction are placed here.
+
+- INSERT IMAGE HERE- 
+
+**Transaction screen** - The Transaction screen is the main screen in POS for processing sales transactions and orders.  The content and layout is configured using the Screen layout designer. 
+
+- INSERT IMAGE HERE- 
 
 **Default start screen** - Some retailers prefer that the cashier navigate directly to the Transaction screen after logging in. The default start screen setting allows users to set this for each screen layout.
 
@@ -78,7 +84,11 @@ Screen layouts can be assigned at the store, register, or user level. The user a
 
 ### Layout sizes
 
-This feature only applies to Dynamics 365 for Retail version 1611. Because in many cases screen layouts can be used across multiple screen sizes and resolutions, users can configure their layout and content for each. The POS application will automatically choose the closest layout size for the device at the time of startup. A screen layout can also contain configurations for both full and compact devices. This configuration allows a user to be assigned to a single screen layout that will work across various sizes and form factors within the store. 
+Most aspects of the POS user interface are responsive and will automatically resize and adjust the layout depending on the screen size and orientation.  However, the POS transaction screen must be configured for each expected screen resolution.
+
+The POS application will automatically choose the closest configured layout size for the device at the time of startup. A screen layout can also contain configurations for both landscape and portrait and for full and compact devices. This allows a user to be assigned to a single screen layout that will work across various sizes and form factors within the store.
+
+- INSERT IMAGE HERE - 
 
 **Modern POS - Full** - Full layouts are typically best used for larger displays such as PC monitors or tablets. Users can choose which UI elements to include, determine their size and placement, and configure their detailed properties. Full layouts support both portrait and landscape configurations. 
 
