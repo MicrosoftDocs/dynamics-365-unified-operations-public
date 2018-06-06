@@ -1091,6 +1091,8 @@
 ###### [Include CIAP credit from a previous period](../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md)
 ###### [PIS and COFINS fixed assets](../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md)
 
+##### [Transfer orders](../financials/localizations/latam-bra-set-up-create-manage-absorption-costs.md)
+
 #### Mexico
 ##### [Scope of localization](../financials/localizations/latam-mex-scope.md)
 ##### [Adjustment inflation declaration report](../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
