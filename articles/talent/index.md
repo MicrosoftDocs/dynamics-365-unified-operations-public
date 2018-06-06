@@ -47,6 +47,9 @@ You can use Talent to complete these tasks:
 + Review performance and implement worker goals.
 + Set up, deliver, and analyze training courses that include agendas, sessions, and tracks.
 
+Explore Dynamics 365 for Talent by watching the video [How to get started with Dynamics 365 for Talent.](https://www.youtube.com/watch?v=6rg2ByadbN0)
+
+
 > [!NOTE] 
 > Dynamics 365 for Talent is closely related to Human resources in Dynamics 365 for Finance and Operations. The same functionality may appear in both products. As a result, in topics that are primarily related Human resources, the product name will be Dynamics 365 for Finance and Operations; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent. Topics that are written for one product may apply to the same functionality in a related product.
 
