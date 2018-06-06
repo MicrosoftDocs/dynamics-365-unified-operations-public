@@ -38,8 +38,16 @@ This topic provides information about screen layouts for the Microsoft Dynamics 
 
 The Microsoft Dynamics 365 for Retail point of sale (POS) user interface can be configured using a combination of visual profiles and screen layouts, assigned to stores, registers, and/or users.
 
+The diagram below explains the relationship between the various entities that make up the configurable aspects of the POS user interface.
+
+-INSERT IMAGE HERE-
+
 ## Visual profile
-Visual profiles are assigned to registers and are used to specify the visual elements that are register-specific and shared across users. Any user who logs into the register will have the same theme, colors, and images. 
+Visual profiles are assigned to registers and are used to specify the visual elements that are register-specific and shared across users. Any user who logs into the register will have the same theme, colors, and images.
+
+-INSERT IMAGE HERE-
+
+-INSERT IMAGE HERE-
 
 **Profile number** - The profile number is the unique identifier for the Visual profile. 
 
