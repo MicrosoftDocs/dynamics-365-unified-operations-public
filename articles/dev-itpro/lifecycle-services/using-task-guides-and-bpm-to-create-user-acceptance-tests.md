@@ -1,6 +1,6 @@
 ---
-title: Create an acceptance test suite using Task guides and BPM
-description: This topic provides information about using Task guides and BOM to create acceptance test suites.
+title: Create and execute acceptance tests using Task guides and BPM
+description: This topic provides information about using Task guides and BPM to create and exeucte acceptance test suites.
 author: kfend
 manager: AnnBe
 ms.date: 03/27/2018
@@ -28,12 +28,12 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Create an acceptance test suite using Task guides and BPM
+# Create an acceptance test library using Task guides and BPM
 
-You can use Task guides and Business process modeler (BPM) to create a user acceptance test plan. You can organize your acceptance tests by business processes and then synchronize BPM to Visual Studio Team Services (VSTS) to manage test execution and results. This topic walks through the process of creating an acceptance test suite to be used for manual or automatic testing.
+You can use Task guides and Business process modeler (BPM) to create a user acceptance test library. Organize your acceptance tests by business processes and then synchronize BPM to Visual Studio Team Services (VSTS) to manage test execution and test results. This topic walks through the process of creating and executing acceptance test suites to be used for manual or automatic testing.
 
-## Create the Scenario Acceptance Testing BPM library
-BPM is a great LCS tool to describe a hierarchy of tasks and business processes. LCS also allows Microsoft partners and customers to author and distribute BPM libraries across LCS projects via the Asset library. This section describes how to take advantage of BPM to define your acceptance test suite.
+## Create a Scenario Acceptance Testing BPM library
+BPM is a great LCS tool to describe a hierarchy of tasks and business processes. LCS also allows Microsoft partners and customers to author and distribute BPM libraries across LCS projects via the Asset library. This section describes how to take advantage of BPM to define your acceptance test library.
 
 ### Create a BPM library
 There are several ways to create a Business process modeler (BPM) library. For more information about how to create libraries in BPM, see [Create, edit, and browse BPM libraries](creating-editing-browsing.md).
@@ -63,6 +63,9 @@ If you're using a library that already has all of the necessary task recordings 
 ![Task recorder options](./media/task_recorder_options.png.PNG "Task recorder options")
 
 8. Select the library that you want to save the recording to, and then click **Save**. Otherwise, select **Save to Disk** and follow the steps in the next section, "Upload an AXTR file to BPM."
+
+ >[!NOTE]
+ > To enable the effective execution of your tests using automation tools, make sure all of your task recordings start on the main dashboard of Dynamics 365 for Finance and Operations. 
 
 #### Upload an AXTR file to BPM 
 
