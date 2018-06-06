@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Subscriptions, LCS projects, and Azure Active Directory tenants
-description: 
+title: Subscriptions, LCS projects, and Azure Active Directory tenants FAQ
+description: This topic provides answers to frequently asked questions about subscriptions and licenses, Azure AD tenants, and LCS Implementation projects.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
 ms.date: 05/30/2018
@@ -27,38 +27,40 @@ ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
 ---
 
-# Subscriptions, LCS projects, and Azure Active Directory tenants
+# Subscriptions, LCS projects, and Azure Active Directory tenants FAQ
 [!include [banner](../includes/banner.md)]
 
-When a customer subscribes to Microsoft Dynamics 365 for Finance and Operations through a Volume Licensing (VL) or Cloud Service Provider (CSP) agreement, they usually have one Azure Active Directory (AAD) tenant, one LCS implementation project with any number of sandbox environments deployed to one data center of the customer’s choice, and one production instance of Microsoft Dynamics 365 for Finance and Operations. For more information about these core concepts, see [Finance and operations architecture overview](../imp-lifecycle/architecture-over view.md). While this setup works well for most projects, sometimes more advanced scenarios are required or changes during the implementation lifecycle must be accommodated. This topic provides answers to the frequent questions around subscriptions and licenses, Azure Active Directory (AAD) tenants, and Lifecycle Services (LCS) implementation projects. 
+When customers subscribe to Microsoft Dynamics 365 for Finance and Operations through a Microsoft Volume Licensing agreement or a Microsoft Cloud Solution Provider (CSP) agreement, they usually have one Microsoft Azure Active Directory (Azure AD) tenant, one Microsoft Dynamics Lifecycle Services (LCS) Implementation project and any number of sandbox environments that are deployed to one data center of the customer's choice, and one production instance of Finance and Operations. For more information about these core concepts, see [Finance and operations architecture overview](../imp-lifecycle/architecture-overview.md). Although this setup works well for most projects, more advanced scenarios are sometimes required, or changes during the implementation lifecycle must be accommodated.
+
+This topic provides answers to frequently asked questions about subscriptions and licenses, Azure AD tenants, and LCS Implementation projects.
+
+For more information, see the following topics:
 
 - [Move environments between data centers](move-environments-data-center.md)
 - [Move licenses between agreement types](move-licenses-between-agreement-types.md)
 - [Move an LCS Implementation project to another Azure Active Directory tenant](move-lcs-implementation-project-tenant.md)
 - [Implement multiple LCS projects and production environments on the same Azure Active Directory tenant](implement-multiple-projects-aad-tenant.md)
 
-## Frequently asked questions
-**Question:** Do I need to move AAD tenants when moving from a CSP to VL?
+## Do I have to move Azure AD tenants when I move from a CSP agreement to a Volume Licensing agreement?
 
-**Answer:** No. You can keep the existing AAD tenant, but you must make sure that the VL subscriptions are purchased against the same AAD tenant as the CSP subscriptions.
+No. You can keep the existing Azure AD tenant, but you must make sure that the Volume Licensing subscriptions are purchased against the same Azure AD tenant as the CSP subscriptions.
 
-**Question:** Do I get a new LCS Implementation project when I move from a CSP to VL?
+## Do I get a new LCS Implementation project when I move from a CSP agreement to a Volume Licensing agreement?
 
-**Answer:** No. The LCS project remains the same.
+No. The LCS project remains the same.
 
-**Question:** Can I keep the existing LCS Implementation project when moving to different AAD tenant?
+## Can I keep the existing LCS Implementation project when I move to different Azure AD tenant?
 
-**Answer:** No. A new LCS project will be created. 
+No. A new LCS project will be created.
 
-**Question:** How long will it take to move from a CSP to VL?
+## How long does it take to move from a CSP agreement to a Volume Licensing agreement?
 
-**Answer:** The VL purchase process can take a few days until the order is processed and the subscriptions are activated. Redeploying the add-on environments has an SLA of 2 business days. De-allocating and deleting the old add-on environments takes a few hours.
+For a Volume Licensing purchase, it can take a few days for the order to be processed and the subscriptions to be activated. Redeployment of add-on environments has a service level agreement (SLA) of two business days. It takes a few hours to deallocate and delete old add-on environments.
 
-**Question:** What if I forget to delete the existing environments before suspending the existing subscription?
+## What if I forget to delete the existing environments before I suspend the existing subscription?
 
-**Answer:** If you do not de-allocate and delete the existing environments before you suspend the subscriptions, the environments will remain in a **Deployed** state. However, if you try to access the **Full details** on these environments,  you will get an error message.
+If you don't deallocate and delete the existing environments before you suspend the subscriptions, the environments will remain in a **Deployed** state. However, if you try to access the full details of these environments, you will receive an error message.
 
-**Question:** Can I have a CSP and a VL agreement in parallel?
+## Can I have a CSP agreement and a Volume Licensing agreement in parallel?
 
-**Answer:** Yes, you can. You must maintain the minimum required number of licenses under each program.  
-
+Yes. However, you must maintain the minimum required number of licenses under each program.
