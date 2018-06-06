@@ -6,7 +6,7 @@ description: This topic explains how to perform a data upgrade from Dynamics AX 
 author: tariqbell
 manager: AnnBe
 
-ms.date: 03/22/2018
+ms.date: 06/06/2018
 
 ms.topic: article
 ms.prod: 
