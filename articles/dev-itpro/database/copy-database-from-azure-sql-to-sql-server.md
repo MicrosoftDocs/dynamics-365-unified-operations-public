@@ -280,6 +280,9 @@ WHERE T1.storageproviderid = 1 --Azure storage
 
 ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 GO
+DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking
+DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking_V2
+GO
 -- Begin Refresh Retail FullText Catalogs
 DECLARE @RFTXNAME NVARCHAR(MAX);
 DECLARE @RFTXSQL NVARCHAR(MAX);
