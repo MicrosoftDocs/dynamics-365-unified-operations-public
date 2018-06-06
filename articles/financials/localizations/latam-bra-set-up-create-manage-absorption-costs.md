@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [Enter topic title here]
-description: [write a simple description of the topic here]
+title: Set up, create, and manage absorption costs 
+description: This topic provides information on how to set up, create, and manage absorption costs for Brazil. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 6/5/2018
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# (BRA) Set up, create, and manage absorption costs 
+# Set up, create, and manage absorption costs 
 
 You can calculate and post the direct and indirect costs that are incurred in the production orders for a fiscal period. The final manufacturing costs are registered in the ledger at the end of the fiscal period. You can calculate the absorption costs by allocating the total manufacturing costs to the products that are manufactured during a fiscal period.
 
@@ -42,7 +42,7 @@ Use this procedure to set up the number sequence code for cost absorption journa
 
 ## Set up a cost center for absorption costs
 
-Use this procedure to set up a cost type for a cost center. You can use the **Cost center** form to set up cost centers for absorption costs. For more information, see [Operating units (form)](https://technet.microsoft.com/en-us/library/hh208817\(v=ax.60\)).
+Use this procedure to set up a cost type for a cost center. You can use the **Cost center** form to set up cost centers for absorption costs. 
 
 1.  Click **Production control** \> **Setup** \> **Absorption costs** \> **Cost centers**.
 
@@ -62,7 +62,7 @@ Use this procedure to set up journal names for absorption costs.
     
 
     > [!NOTE]
-    > <P>The <STRONG>Journal type</STRONG> field is updated with the default journal type that is used for absorption costs. The default journal type is <STRONG>Indirect costs</STRONG>.</P>
+    > The <STRONG>Journal type</STRONG> field is updated with the default journal type that is used for absorption costs. The default journal type is <STRONG>Indirect costs</STRONG>.
 
 
 
@@ -100,13 +100,13 @@ Use this procedure to create and post a cost absorption journal.
     
 
     > [!NOTE]
-    > <P>You can view the type of absorbed cost that is posted to a work center, the corresponding cost center that the work center is associated with, the hourly rate, and the planned capacity for the work center details in the <STRONG>Absorbed costs</STRONG> form.</P>
+    > You can view the type of absorbed cost that is posted to a work center, the corresponding cost center that the work center is associated with, the hourly rate, and the planned capacity for the work center details in the <STRONG>Absorbed costs</STRONG> form.
 
 
 
 ## Close absorption costs
 
-You can post the absorption costs for a specific month and year to the ledger. You can specify the transfer account and transfer offset account in the **Accounts - WIP** and **Accounts - costing** fields in the **Resources** form. For more information, see [Resources (form)](https://technet.microsoft.com/en-us/library/aa557962\(v=ax.60\)).
+You can post the absorption costs for a specific month and year to the ledger. You can specify the transfer account and transfer offset account in the **Accounts - WIP** and **Accounts - costing** fields in the **Resources** form. 
 
 1.  Click **Production control** \> **Periodic** \> **Absorption costs** \> **Absorption costs - monthly closing**.
 
@@ -123,19 +123,3 @@ Use this procedure to cancel the absorbed costs that are not posted to the ledge
 2.  In the **Month/Year to cancel** field, select the month and year to cancel the absorbed costs for.
 
 3.  Click **OK** to cancel the absorbed costs for the selected month and year.
-
-## See also
-
-[(BRA) Cost absorption journal (form)](https://technet.microsoft.com/en-us/library/jj710612\(v=ax.60\))
-
-[(BRA) Cost absorption journal lines (form)](https://technet.microsoft.com/en-us/library/jj663929\(v=ax.60\))
-
-[(BRA) Cost absorption parameters (form)](https://technet.microsoft.com/en-us/library/jj710572\(v=ax.60\))
-
-[(BRA) Absorption costs - Monthly closing (form)](https://technet.microsoft.com/en-us/library/jj663935\(v=ax.60\))
-
-[(BRA) Absorbed costs cancellation (form)](https://technet.microsoft.com/en-us/library/jj710580\(v=ax.60\))
-
-[(BRA) Absorbed costs (form)](https://technet.microsoft.com/en-us/library/jj663941\(v=ax.60\))
-
-[(BRA) Journal names (form)](https://technet.microsoft.com/en-us/library/jj710533\(v=ax.60\))
