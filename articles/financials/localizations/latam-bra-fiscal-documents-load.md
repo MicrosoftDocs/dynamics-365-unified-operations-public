@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [Enter topic title here]
-description: [write a simple description of the topic here]
+title: Generate fiscal documents for a load
+description: This topic provides information on how to generate fiscal documents for a load for Brazil.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 6/5/2018
@@ -28,13 +28,13 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# (BRA) Generate fiscal documents for a load 
+# Generate fiscal documents for a load 
 
 You can create a load that contains multiple load lines. Each load line is created for a specific quantity of items from a sales order line. You can create one or more load lines or loads for one or more sales order lines or sales orders.
 
 
 > [!NOTE]
-> <P>This topic applies to features in the <STRONG>Transportation management</STRONG> module. It does not apply to features in the <A href="inventory-management.md">Inventory management</A> module.</P>
+> This topic applies to features in the <STRONG>Transportation management</STRONG> module. It does not apply to features in the <A href="inventory-management.md">Inventory management</A> module.
 
 
 
@@ -204,8 +204,6 @@ To perform this task, follow these steps:
 6.  Click **OK** to post the sales orders for the load and generate the fiscal documents.
 
 ## Related tasks
-
-[(BRA) Fiscal establishments (form)](https://technet.microsoft.com/en-us/library/jj933531\(v=ax.60\))
 
 [(BRA) Create and post a sales order](bra-create-and-post-a-sales-order.md)
 
