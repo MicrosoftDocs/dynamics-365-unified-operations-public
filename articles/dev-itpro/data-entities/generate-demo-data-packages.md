@@ -97,6 +97,7 @@ Package names will include a release identifier. For example, for Finance and Op
 Before you load the data packages, you must manually follow these steps.
 
 1. If you want to sign in as a specific user, change the user's email address to the sign-in address that you want to use. You can make this change in the **User information** data entity spreadsheet or, after you load data, on the **Users** page (**System administration** &gt; **Users**).
+
 2. Start the **Ready to post** batch scheduler. This batch job automatically posts transactions. You must start the scheduler in every legal entity where data should be processed. Follow the steps in the "The Ready to post process" section later in this topic.
 
 ## Load the packages
@@ -143,7 +144,7 @@ Public Sector data
 |-------------|-------|
 | 100 - Public Sector System and Shared | Load this package before you any other package. |
 | 200 - PSUS Financials | You can load this package alone. |
-| 900 - PSUS Financial transsactions | Load this package after the PSUS Financials package. |
+| 900 - PSUS Financial transactions | Load this package after the PSUS Financials package. |
 
 To load the data correctly, you need to load one package at a time, import it, and then load the next one once the import is complete. We are considering additional methods for loading the demo data to improve the process.  
 
@@ -158,6 +159,8 @@ To load the data correctly, you need to load one package at a time, import it, a
 > We are working on the issue and will release a fix for it as soon as possible.
 
 ### After you load the packages
+
+Check **Ready to post** if anything needs to be posted. In some cases individual demo scripts may recommend some setup be done prior to loading this data. 
 
 In some cases, there might be data that you want to add because of a special scenario or a missing entity. Add that data after you've finished loading the data packages. You might also want to manually post additional transactions or add your own data packages to enhance the demo experience.
 
