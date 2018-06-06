@@ -40,7 +40,7 @@ When you transfer the items between different fiscal establishments, the followi
 
 You can do the following to transfer items between fiscal establishments by using transfer orders:
 
-  - Set up a Código Fiscal de Operações e Prestações (CFOP) matrix for fiscal establishment transfer or third-party transfer transaction types. For more information, see [(BRA) Set up the CFOP matrix](bra-set-up-the-cfop-matrix.md).
+  - Set up a Código Fiscal de Operações e Prestações (CFOP) matrix for fiscal establishment transfer or third-party transfer transaction types. For more information, see [(BRA) Set up the CFOP matrix](https://review.docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/bra-set-up-the-cfop-matrix?branch=master).
 
   - Set up a tax matrix for a fiscal establishment group by using the fiscal establishment transaction type. For more information, see [(BRA) Set up a tax matrix](bra-set-up-a-tax-matrix.md).
 
