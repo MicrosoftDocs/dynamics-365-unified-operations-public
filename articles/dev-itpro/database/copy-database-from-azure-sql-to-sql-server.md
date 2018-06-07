@@ -280,6 +280,9 @@ WHERE T1.storageproviderid = 1 --Azure storage
 
 ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 GO
+DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking
+DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking_V2
+GO
 -- Begin Refresh Retail FullText Catalogs
 DECLARE @RFTXNAME NVARCHAR(MAX);
 DECLARE @RFTXSQL NVARCHAR(MAX);
@@ -326,9 +329,9 @@ If you're using Financial Reporting, which was previously named Management Repor
 
 To switch the environment and use the new database, first stop the following services:
 
-- World wide web publishing service
-- Finance and Operations Batch Management service
-- Management Reporter 2012 Process service
+- World Wide Web Publishing Service
+- Microsoft Dynamics 365 Unified Operations: Batch Management Service
+- Management Reporter 2012 Process Service
 
 After the services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
 

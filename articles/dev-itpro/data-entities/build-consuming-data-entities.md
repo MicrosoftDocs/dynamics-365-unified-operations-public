@@ -93,7 +93,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 
 [![Data Entity Wizard](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
 
-5.  Click **Next**. For more information about the function of each property, see "Data entity concepts guide."
+5.  Click **Next**. For more information about the function of each property, see "Categories of entities" and "Building an entity" in [Data entities](data-entities.md)
 6.  Add fields to the new entity from your data source, as shown in the following screen shot. You can add fields from the primary data source, **FMCustomer**. For this entity, clear the check box for the **Image** and **LicenseImage** container types to simplify testing.
 7.  Rename the data entity fields to reflect public data contract standards, or click **Convert labels to field names** to generate names from the existing labels.
 8.  On the line for the **DriverLicense** field, select the **Is mandatory** check box. This field will be used as the natural key for the entity. [![Data Entity Wizard 2](./media/data-entity-wizard-2.png)](./media/data-entity-wizard-2.png)
