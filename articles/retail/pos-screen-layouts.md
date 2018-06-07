@@ -40,14 +40,14 @@ The Microsoft Dynamics 365 for Retail point of sale (POS) user interface can be 
 
 The diagram below explains the relationship between the various entities that make up the configurable aspects of the POS user interface.
 
--INSERT IMAGE HERE-
+![POS Screen layout entities](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## Visual profile
 Visual profiles are assigned to registers and are used to specify the visual elements that are register-specific and shared across users. Any user who logs into the register will have the same theme, colors, and images.
 
--INSERT IMAGE HERE-
+![POS Welcome Screen with Light theme](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
 
--INSERT IMAGE HERE-
+![POS Transaction Screen with Dark theme](../retail/media/POS-Transaction-Screen-with-Dark-theme.png)
 
 **Profile number** - The profile number is the unique identifier for the Visual profile. 
 
@@ -66,15 +66,16 @@ Visual profiles are assigned to registers and are used to specify the visual ele
 ## Screen layouts
 Screen layout configuration determines the actions, content, and placement of UI controls in the POS Welcome screen and Transaction screen.  
 
-- INSERT IMAGE HERE- 
+![POS Screen layout view](../retail/media/POS-Screen-Layout-View.png)
+
 
 **Welcome screen**- In most cases, the Welcome screen is the page that users will see when they first log into POS. The Welcome screen can consist of a branding image and button grids that provide access to POS operations. Typically, operations that are not specific to the current transaction are placed here.
 
-- INSERT IMAGE HERE- 
+![POS Welcome screen](../retail/media/POS-Welcome-Screen.png) 
 
 **Transaction screen** - The Transaction screen is the main screen in POS for processing sales transactions and orders.  The content and layout is configured using the screen layout designer. 
 
-- INSERT IMAGE HERE- 
+![POS Transaction screen](../retail/media/POS-Transaction-Screen.png) 
 
 **Default start screen** - Some retailers prefer that the cashier navigate directly to the Transaction screen after logging in. The default start screen setting allows users to set this for each screen layout.
 
@@ -88,9 +89,10 @@ Most aspects of the POS user interface are responsive and will automatically res
 
 The POS application will automatically choose the closest configured layout size for the device at the time of startup. A screen layout can also contain configurations for both landscape and portrait and for full and compact devices. This allows a user to be assigned to a single screen layout that will work across various sizes and form factors within the store.
 
-- INSERT IMAGE HERE - 
+![POS layout sizes](../retail/media/POS-Screen-Layout-Sizes.png) 
 
 **Name** – This field allows users to provide a meaningful name to identify the screen sizes.  
+
 **Layout type** – POS can render it’s user face in different modes for the best user experience on a given device. 
 
 - **Modern POS - Full** - Full layouts are typically best used for larger displays such as PC monitors or tablets. Users can choose which UI elements to include, determine their size and placement, and configure their detailed properties. Full layouts support both portrait and landscape configurations. 
@@ -101,14 +103,14 @@ The POS application will automatically choose the closest configured layout size
 
 *Tip: You can find out the layout size needed for your POS screen by viewing the resolution within the app.  Simply open POS and navigate to **Settings > Session information**.  POS will display the currently loaded screen layout and layout size, as well as the app window resolution.*
 
--INSERT IMAGE HERE-
+![POS layout sizes](../retail/media/POS-Session-Information.png) 
 
 ### Button grids
 For each layout size within a screen layout, users can configure and assign button grids for the POS welcome screen and transaction screen.  Welcome screen button grids will automatically be laid out from left to right, from the lowest number (Welcome screen 1) to the largest.  In Full POS layouts, the button grid placement is specified in the screen layout designer. 
 
 In Compact POS layouts, the button grids are automatically laid out from top to bottom, from the lowest number (Transaction screen 1) to the largest and are accessible by opening the “Actions” menu.
 
--INSERT IMAGE HERE-
+![Compact view button grids](../retail/media/Compact-View-Button-Grids.png)
 
 ### Images
 For each layout size within a screen layout, users can specify images to be included in the POS user interface.  Full POS layouts allow a single Welcome screen image which is rendered as the first UI element on the left.  Images can be utilized in the Full POS layout Transaction screen as tab images or as a logo.  Compact POS layouts do not utilize these images.
