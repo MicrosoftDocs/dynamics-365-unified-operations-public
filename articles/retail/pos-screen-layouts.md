@@ -178,7 +178,9 @@ The button grid designer allows user to configure button grids for use in POS We
 
 **Action**:  This option allows the user to choose from the list of applicable POS Operations to invoke when the button is pressed in POS.
 
-**Action parameters**:  Some POS Operations utilize additional parameters when invoked.  For example, the Add product operation allows the user to specify which product to add.  You can find this list of supported POS Operations here:  [POS operations, online and offline](pos-operations.md)
+**Action parameters**:  Some POS Operations utilize additional parameters when invoked.  For example, the Add product operation allows the user to specify which product to add.
+
+You can find this list of supported POS Operations here:  [POS operations, online and offline](pos-operations.md)
 
 **Button text**:  This is the text that appears on the button in POS.
 
