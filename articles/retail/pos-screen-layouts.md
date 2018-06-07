@@ -72,7 +72,7 @@ Screen layout configuration determines the actions, content, and placement of UI
 
 - INSERT IMAGE HERE- 
 
-**Transaction screen** - The Transaction screen is the main screen in POS for processing sales transactions and orders.  The content and layout is configured using the Screen layout designer. 
+**Transaction screen** - The Transaction screen is the main screen in POS for processing sales transactions and orders.  The content and layout is configured using the screen layout designer. 
 
 - INSERT IMAGE HERE- 
 
@@ -104,7 +104,9 @@ The POS application will automatically choose the closest configured layout size
 -INSERT IMAGE HERE-
 
 ### Button grids
-For each layout size within a screen layout, users can configure and assign button grids for the POS welcome screen and transaction screen.  Welcome screen button grids will automatically be laid out from left to right, from the lowest number (Welcome screen 1) to the largest.  In Full POS layouts, the button grid placement is specified in the screen layout designer.  In Compact POS layouts, the button grids are automatically laid out from top to bottom, from the lowest number (Transaction screen 1) to the largest and are accessible by opening the “Actions” menu.
+For each layout size within a screen layout, users can configure and assign button grids for the POS welcome screen and transaction screen.  Welcome screen button grids will automatically be laid out from left to right, from the lowest number (Welcome screen 1) to the largest.  In Full POS layouts, the button grid placement is specified in the screen layout designer. 
+
+In Compact POS layouts, the button grids are automatically laid out from top to bottom, from the lowest number (Transaction screen 1) to the largest and are accessible by opening the “Actions” menu.
 
 -INSERT IMAGE HERE-
 
