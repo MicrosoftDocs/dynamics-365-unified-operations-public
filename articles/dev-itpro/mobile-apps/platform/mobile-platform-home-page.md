@@ -94,19 +94,22 @@ During development it can be useful to attach a debugger to get more detailed in
 ### Debugging the client side 
 
 #### Prerequisites
-- Android device plus PC (recommended) or iOS device plus Mac
+- Android device plus PC
 - Azure-hosted development machine (so the mobile device can point to it)
 
 #### Steps to debug the client side
 1. On the web client that is exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the Unified Operations app. For information about publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
 
-2. Open the Unified Operations app on your device, point to the Azure-hosted development machine, and sign in.
+2. Install the Android debug apk for the Unified Operations app on an Android device:
+    - Once only, allow installation of apk files - Go to Menu > Settings > Security > and check Unknown Sources to allow the phone to install apps from sources other than the Google Play Store.
+    - Uninstall the Unified Operations app - Ensure that any previous version of the Unified Operations app has been uninstalled.
+    - Download the apk file - From the device’s browser, navigate to the latest [Unified Operations Android debug apk on Github](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click download (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
+    - Install the Unified Operations apk file - Confirm install of the Unified Operations app via the apk file.
+    - Run the debug Unified Operations app on the device and sign in.
 
 3. Connect to the device from the debugging machine.
 
-    - For Android devices, on the Azure-hosted development machine or a separate PC, follow Android developer instructions to [Get Started with Remote Debugging Android Devices](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/). You can also find a wide selection of instructional videos on YouTube by searching for [Chrome for Android remote debugging](https://www.youtube.com/results?search_query=chrome+for+android+remote+debugging). 
-    
-    - For iOS devices, you will connect to your iOS device using Safari running on a Mac.
+    - On the Azure-hosted development machine or a separate PC, follow Android developer instructions to [Get Started with Remote Debugging Android Devices](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/). You can also find a wide selection of instructional videos on YouTube by searching for [Chrome for Android remote debugging](https://www.youtube.com/results?search_query=chrome+for+android+remote+debugging). 
     
 4. After you connect the debugger, find the active tab on your device. You may need to click **View more tabs** on Android. One of the tabs should look similar to `/www.index.html#/app/appList` or `/www.index.html#/app/app_landing`. 
 
