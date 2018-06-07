@@ -1056,6 +1056,7 @@
 ###### [Withholding taxes ](../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md)
 ###### [Withholding taxes on customer payments](../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md)
 ###### [Withholding taxes on vendor payments](../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md)
+##### [Set up parameters for SPED EFD](../financials/localizations/latam-bra-sped-contributions.md)
 
 ##### Tasks for Brazil
 ###### [Set up legal entity parameters](../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md)
