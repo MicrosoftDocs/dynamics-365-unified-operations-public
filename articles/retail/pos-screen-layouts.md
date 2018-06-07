@@ -174,7 +174,7 @@ The button grid designer allows user to configure button grids for use in POS We
 
 **Button properties**:  The user can configure the button properties by right-clicking the button and using the context menu.
 
-*Important:  Some button grid settings are only applicable to Enterprise POS (not Retail Moderns POS or Cloud POS)*
+*Important:  Some button grid settings are only applicable to Enterprise POS (not Retail Modern POS or Cloud POS)*
 
 ![Button grid button properties](../retail/media/Button-grid-button-properties.png)
 
