@@ -124,26 +124,79 @@ The Full layout type designer allows users to drag and drop UI controls onto the
 -INSERT IMAGE HERE-
 
 **Import/Export layout:** Users can export and import POS screen layout designs as XML files to easily reuse and share across environments.  It is important to only import layout designs for the correct size layouts or UI elements may not fit properly on the screen.
+
 **Landscape/Portrait:**  If the POS device supports switching between landscape and portrait modes, you must define a screen layout for each.  POS will automatically detect the screen rotation and render the configured layout.
+
 **Layout grid:** The POS designer is laid out in a 4 pixel grid.  UI controls will snap to the grid layout to allow users to properly align the content.
+
 **Designer zoom:**  Users can zoom the designer view in and out to better view the content on the POS screen.  This is useful when the screen resolution on the POS is very different than the screen used in the designer.
+
 **POS controls:** The POS layout designer supports the following controls.  Many controls can be configured by right-clicking and using the context menu.
 
--INSERT IMAGE HERE (left off here)-
 
-**Number pad** - The number pad is the main user input in the POS Transaction screen. It can be configured to show the entire on-screen pad, which is ideal for touchscreens, or only the input field, which can be used with a physical keyboard. The number pad settings are available in the full layout only. In Dynamics 365 for Retail version 1611, compact layouts always have the full number pad available from the Transaction screen.
+-INSERT IMAGE HERE-
 
-**Totals panel** - The totals panel can be configured in either one or two columns to show fields such as line count, discount amount, charges, subtotal, and tax. In Dynamics 365 for Retail version 1611, compact layouts only support a single totals column. 
+-**Number pad** - The number pad is the main user input in the POS Transaction screen. It can be configured to show the entire on-screen pad, which is ideal for touchscreens, or only the input field, which can be used with a physical keyboard. The number pad settings are available in the full layout only. Compact layouts always have the full number pad available from the Transaction screen.
 
-**Receipt** - The receipt panel contains the sales lines, payment lines, and delivery information for the products and services processed in the POS. Users can specify columns, widths, and placement. In compact layouts in Dynamics 365 for Retail version 1611, you can also configure additional information which will appear in the row under the main line. 
+-**Totals panel** - The totals panel can be configured in either one or two columns to show fields such as line count, discount amount, charges, subtotal, and tax. Compact layouts only support a single totals column.
 
-**Customer card** - The customer card shows information pertaining to the customer currently associated with the transaction. The customer card can be configured to hide or show additional information. 
+-**Receipt** - The receipt panel contains the sales lines, payment lines, and delivery information for the products and services processed in the POS. Users can specify columns, widths, and placement. In Compact layouts you can also configure additional information which will appear in the row under the main line.
 
-**Tab control** - The tab control can be placed onto the screen layout, and other controls such as the number pad, customer card, or button grids can be placed inside the tab. The tab control is a container that helps users fit more content in the screen. The tab control is only available for full layouts. 
+-**Customer card** - The customer card shows information pertaining to the customer currently associated with the transaction. The customer card can be configured to hide or show additional information.
 
-**Image** - The image control can be used to show the store logo or other branding image on the transaction screen. The image control is only available for full layouts. 
+-**Tab control** - The tab control can be placed onto the screen layout, and other controls such as the number pad, customer card, or button grids can be placed inside the tab. The tab control is a container that helps users fit more content in the screen. The tab control is only available for Full layouts.
 
-**Recommended products** - If configured for the environment, the recommended products control will show product suggestions based on machine learning. The recommended products control is only available for full layouts in Dynamics 365 for Retail version 1611. **Custom control **- The custom control acts as a placeholder within the screen layout to allows users to reserve space for custom content. The custom control is only available for full layouts.
+-**Image** - The image control can be used to show the store logo or other branding image on the transaction screen. The image control is only available for full layouts.
+
+-**Recommended products** - If configured for the environment, the recommended products control will show product suggestions based on machine learning. 
+
+-**Custom control**- The custom control acts as a placeholder within the screen layout to allows users to reserve space for custom content. The custom control is only available for full layouts.
+
+### Compact layout designer
+Like the Full layout designer, the Compact layout designer allows users to configure the POS screen layout for phones and small tablets, but in this case the layout itself is fixed.  The controls on the layout can be configured using the right-click context menu, but users cannot drag and drop additional content.
+
+-INSERT IMAGE HERE-
+
+### Button grid designer
+The button grid designer allows user to configure button grids for use in POS Welcome screens and Transaction screens for Full and Compact layout types.  The same button grid can be used across layouts and types. Like the Screen layout designer, the Button grid designer uses ClickOnce to download, install, and launch the latest version of the application each time the user accesses it. Be sure to check browser requirements for using ClickOnce—some browsers, such as Chrome, require extensions
+
+**New button**: This menu option adds a new button to the button grid in the upper left corner of the grid.  Button placement can be arranged on the grid by dragging and dropping the button on the layout.
+
+***Important: Button grid content can overlap.  Be careful placing buttons to ensure content is not hidden by other buttons.***
+
+**New design**:  This menu option will automatically setup a button grid layout by specifying the number of buttons per row and column.
+
+**Button properties**:  The user can configure the button properties by right-clicking the button and using the context menu.
+
+***Important:  Some button grid settings are only applicable to Enterprise POS (not Retail Moderns POS or Cloud POS)***
+
+-INSERT IMAGE HERE-
+
+**Action**:  This option allows the user to choose from the list of applicable POS Operations to invoke when the button is pressed in POS.
+
+**Action parameters**:  Some POS Operations utilize additional parameters when invoked.  For example, the Add product operation allows the user to specify which product to add.  You can find this list of supported POS Operations here:  [POS operations, online and offline](pos-operations.md)
+
+**Button text**:  This is the text that appears on the button in POS.
+
+**Hide button text**:  This option hides the button text.  This is often used for small buttons where only icon is used.
+
+**Tooltip**:  This is the additional help text that is displayed on mouse over. 
+
+**Size in rows/columns**:  This specifies how tall and wide the button is.  
+
+
+-INSERT IMAGE HERE-
+
+**Custom font**:  This setting allows the user to specify a font other than the default system font for POS.
+
+**Custom theme**:  By default, POS buttons will utilize the accent color from the visual profile.  Use this setting to specify additional colors.
+
+***Note:  Only Back color and font color are used by Retail Modern POS and Cloud POS.***
+
+**Button image**:  Buttons can also include images or icons.  Select from available images which are specified at Retail > Channel setup > POS setup > POS > Images.
+
+-INSERT IMAGE HERE-
+
 
 Additional resources
 --------
