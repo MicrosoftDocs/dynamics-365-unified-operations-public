@@ -99,7 +99,7 @@ The POS application will automatically choose the closest configured layout size
 
 **Width/Height** – These values represent the expected effective screen size in pixels for the layout.  Keep in mind that some operating systems utilize scaling with high resolution displays.  
 
-***Tip: You can find out the layout size needed for your POS screen by viewing the resolution within the app.  Simply open POS and navigate to Settings > Session information.  POS will display the currently loaded screen layout and layout size, as well as the app window resolution.***
+*Tip: You can find out the layout size needed for your POS screen by viewing the resolution within the app.  Simply open POS and navigate to **Settings > Session information**.  POS will display the currently loaded screen layout and layout size, as well as the app window resolution.*
 
 -INSERT IMAGE HERE-
 
@@ -117,7 +117,7 @@ For each layout size within a screen layout, users can specify images to be incl
 
 The screen layout designer allows user to configure the various aspects of the POS Transaction screen for each layout size, in portrait and landscape, and for Full and Compact layout types. The Screen layout designer uses ClickOnce to download, install, and launch the latest version of the application each time the user accesses it. Be sure to check browser requirements for using ClickOnce—some browsers, such as Chrome, require extensions.
 
-***Important: You must configure a screen layout for each layout size defined and utilized by POS***
+*Important: You must configure a screen layout for each layout size defined and utilized by POS*
 
 ### Full layout designer
 
@@ -164,13 +164,13 @@ The button grid designer allows user to configure button grids for use in POS We
 
 **New button**: This menu option adds a new button to the button grid in the upper left corner of the grid.  Button placement can be arranged on the grid by dragging and dropping the button on the layout.
 
-***Important: Button grid content can overlap.  Be careful placing buttons to ensure content is not hidden by other buttons.***
+*Important: Button grid content can overlap.  Be careful placing buttons to ensure content is not hidden by other buttons.*
 
 **New design**:  This menu option will automatically setup a button grid layout by specifying the number of buttons per row and column.
 
 **Button properties**:  The user can configure the button properties by right-clicking the button and using the context menu.
 
-***Important:  Some button grid settings are only applicable to Enterprise POS (not Retail Moderns POS or Cloud POS)***
+*Important:  Some button grid settings are only applicable to Enterprise POS (not Retail Moderns POS or Cloud POS)*
 
 -INSERT IMAGE HERE-
 
@@ -193,7 +193,7 @@ The button grid designer allows user to configure button grids for use in POS We
 
 **Custom theme**:  By default, POS buttons will utilize the accent color from the visual profile.  Use this setting to specify additional colors.
 
-***Note:  Only Back color and font color are used by Retail Modern POS and Cloud POS.***
+*Note:  Only Back color and font color are used by Retail Modern POS and Cloud POS.*
 
 **Button image**:  Buttons can also include images or icons.  Select from available images which are specified at Retail > Channel setup > POS setup > POS > Images.
 
