@@ -125,7 +125,8 @@ The screen layout designer allows user to configure the various aspects of the P
 
 The Full layout type designer allows users to drag and drop UI controls onto the POS transaction and to configure their applicable settings.
 
--INSERT IMAGE HERE-
+
+![POS Full layout designer (landscape)](../retail/media/POS-Full-Layout-Designer-Landscape.png)
 
 **Import/Export layout:** Users can export and import POS screen layout designs as XML files to easily reuse and share across environments.  It is important to only import layout designs for the correct size layouts or UI elements may not fit properly on the screen.
 
