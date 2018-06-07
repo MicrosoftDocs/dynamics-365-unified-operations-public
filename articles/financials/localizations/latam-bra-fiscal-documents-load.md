@@ -199,13 +199,10 @@ To perform this task, follow these steps:
 
 4.  Select the **Posting** check box to post the sales orders for the load to generate fiscal documents.
 
-5.  Specify additional details, if required. For more information, see [(BRA) Sales posting (modified form)](https://technet.microsoft.com/en-us/library/jj853383\(v=ax.60\)).
+5.  Specify additional details, if required. 
 
 6.  Click **OK** to post the sales orders for the load and generate the fiscal documents.
 
-## Related tasks
-
-[(BRA) Create and post a sales order](bra-create-and-post-a-sales-order.md)
 
 ## Technical information for system administrators
 
