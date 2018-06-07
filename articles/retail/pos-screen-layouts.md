@@ -138,8 +138,7 @@ The Full layout type designer allows users to drag and drop UI controls onto the
 
 **POS controls:** The POS layout designer supports the following controls.  Many controls can be configured by right-clicking and using the context menu.
 
-
--INSERT IMAGE HERE-
+![POS UI controls](../retail/media/POS-UI-Controls.png)
 
 - **Number pad** - The number pad is the main user input in the POS Transaction screen. It can be configured to show the entire on-screen pad, which is ideal for touchscreens, or only the input field, which can be used with a physical keyboard. The number pad settings are available in the full layout only. Compact layouts always have the full number pad available from the Transaction screen.
 
@@ -160,10 +159,12 @@ The Full layout type designer allows users to drag and drop UI controls onto the
 ### Compact layout designer
 Like the Full layout designer, the Compact layout designer allows users to configure the POS screen layout for phones and small tablets, but in this case the layout itself is fixed.  The controls on the layout can be configured using the right-click context menu, but users cannot drag and drop additional content.
 
--INSERT IMAGE HERE-
+![Compact Layout Designer](../retail/media/Compact-Layout-Designer.png)
 
 ### Button grid designer
 The button grid designer allows user to configure button grids for use in POS Welcome screens and Transaction screens for Full and Compact layout types.  The same button grid can be used across layouts and types. Like the Screen layout designer, the Button grid designer uses ClickOnce to download, install, and launch the latest version of the application each time the user accesses it. Be sure to check browser requirements for using ClickOnce—some browsers, such as Chrome, require extensions
+
+![Button grid designer](../retail/media/Button-Grid-Designer.png)
 
 **New button**: This menu option adds a new button to the button grid in the upper left corner of the grid.  Button placement can be arranged on the grid by dragging and dropping the button on the layout.
 
@@ -175,7 +176,7 @@ The button grid designer allows user to configure button grids for use in POS We
 
 *Important:  Some button grid settings are only applicable to Enterprise POS (not Retail Moderns POS or Cloud POS)*
 
--INSERT IMAGE HERE-
+![Button grid button properties](../retail/media/Button-grid-button-properties.png)
 
 **Action**:  This option allows the user to choose from the list of applicable POS Operations to invoke when the button is pressed in POS.
 
@@ -191,8 +192,7 @@ You can find this list of supported POS Operations here:  [POS operations, onlin
 
 **Size in rows/columns**:  This specifies how tall and wide the button is.  
 
-
--INSERT IMAGE HERE-
+![POS button sizes in rows and columns](../retail/media/POS-Button-Sizes-In-Rows-And-Columns.png)
 
 **Custom font**:  This setting allows the user to specify a font other than the default system font for POS.
 
@@ -202,8 +202,7 @@ You can find this list of supported POS Operations here:  [POS operations, onlin
 
 **Button image**:  Buttons can also include images or icons.  Select from available images which are specified at Retail > Channel setup > POS setup > POS > Images.
 
--INSERT IMAGE HERE-
-
+![Example button grid in POS](../retail/media/Example-Button-Grid-In-POS.png)
 
 Additional resources
 --------
