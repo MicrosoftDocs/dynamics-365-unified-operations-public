@@ -138,21 +138,21 @@ The Full layout type designer allows users to drag and drop UI controls onto the
 
 -INSERT IMAGE HERE-
 
--**Number pad** - The number pad is the main user input in the POS Transaction screen. It can be configured to show the entire on-screen pad, which is ideal for touchscreens, or only the input field, which can be used with a physical keyboard. The number pad settings are available in the full layout only. Compact layouts always have the full number pad available from the Transaction screen.
+- **Number pad** - The number pad is the main user input in the POS Transaction screen. It can be configured to show the entire on-screen pad, which is ideal for touchscreens, or only the input field, which can be used with a physical keyboard. The number pad settings are available in the full layout only. Compact layouts always have the full number pad available from the Transaction screen.
 
--**Totals panel** - The totals panel can be configured in either one or two columns to show fields such as line count, discount amount, charges, subtotal, and tax. Compact layouts only support a single totals column.
+- **Totals panel** - The totals panel can be configured in either one or two columns to show fields such as line count, discount amount, charges, subtotal, and tax. Compact layouts only support a single totals column.
 
--**Receipt** - The receipt panel contains the sales lines, payment lines, and delivery information for the products and services processed in the POS. Users can specify columns, widths, and placement. In Compact layouts you can also configure additional information which will appear in the row under the main line.
+- **Receipt** - The receipt panel contains the sales lines, payment lines, and delivery information for the products and services processed in the POS. Users can specify columns, widths, and placement. In Compact layouts you can also configure additional information which will appear in the row under the main line.
 
--**Customer card** - The customer card shows information pertaining to the customer currently associated with the transaction. The customer card can be configured to hide or show additional information.
+- **Customer card** - The customer card shows information pertaining to the customer currently associated with the transaction. The customer card can be configured to hide or show additional information.
 
--**Tab control** - The tab control can be placed onto the screen layout, and other controls such as the number pad, customer card, or button grids can be placed inside the tab. The tab control is a container that helps users fit more content in the screen. The tab control is only available for Full layouts.
+- **Tab control** - The tab control can be placed onto the screen layout, and other controls such as the number pad, customer card, or button grids can be placed inside the tab. The tab control is a container that helps users fit more content in the screen. The tab control is only available for Full layouts.
 
--**Image** - The image control can be used to show the store logo or other branding image on the transaction screen. The image control is only available for full layouts.
+- **Image** - The image control can be used to show the store logo or other branding image on the transaction screen. The image control is only available for full layouts.
 
--**Recommended products** - If configured for the environment, the recommended products control will show product suggestions based on machine learning. 
+- **Recommended products** - If configured for the environment, the recommended products control will show product suggestions based on machine learning. 
 
--**Custom control**- The custom control acts as a placeholder within the screen layout to allows users to reserve space for custom content. The custom control is only available for full layouts.
+- **Custom control**- The custom control acts as a placeholder within the screen layout to allows users to reserve space for custom content. The custom control is only available for full layouts.
 
 ### Compact layout designer
 Like the Full layout designer, the Compact layout designer allows users to configure the POS screen layout for phones and small tablets, but in this case the layout itself is fixed.  The controls on the layout can be configured using the right-click context menu, but users cannot drag and drop additional content.
