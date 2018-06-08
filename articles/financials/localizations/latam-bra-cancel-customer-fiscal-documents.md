@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [Enter topic title here]
-description: [write a simple description of the topic here]
+title: Cancel a customer fiscal document 
+description: This topic provides information about cancelling a customer fiscal document for Brazil. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 6/5/2018
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# (BRA) Cancel a customer fiscal document 
+# Cancel a customer fiscal document 
 
 You can cancel an incorrect customer fiscal document by using the **Cancel fiscal document** form. When you cancel a fiscal document, the fiscal document is marked as canceled, and all of the ledger transactions and financial transactions are reversed.
 
@@ -40,7 +40,7 @@ You can cancel an incorrect customer fiscal document by using the **Cancel fisca
 
 2.  Select a sales order to cancel.
 
-3.  On the **Action Pane**, click the **Sell** tab, and then click **Cancel fiscal document** to open the **Cancel fiscal document** form. For more information, see [(BRA) Cancel customer fiscal document (form)](https://technet.microsoft.com/en-us/library/jj933503\(v=ax.60\)).
+3.  On the **Action Pane**, click the **Sell** tab, and then click **Cancel fiscal document** to open the **Cancel fiscal document** form. 
 
 4.  In AX 2012 R3 and cumulative update 6 or later for AX 2012 R2: In the **Reason code** field, select the identification code of the reason that is used to cancel the customer fiscal document.
 
@@ -48,7 +48,7 @@ You can cancel an incorrect customer fiscal document by using the **Cancel fisca
     
 
     > [!NOTE]
-    > <P>The reason for the cancellation must contain a minimum of 15 characters.</P>
+    > The reason for the cancellation must contain a minimum of 15 characters.
 
 
 
@@ -66,6 +66,4 @@ You can cancel an incorrect customer fiscal document by using the **Cancel fisca
 
 ## See also
 
-[(BRA) Sales posting (modified form)](https://technet.microsoft.com/en-us/library/jj853383\(v=ax.60\))
-
-[(BRA) Cancel a vendor fiscal document](bra-cancel-a-vendor-fiscal-document.md)
+[Cancel a vendor fiscal document](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/bra-cancel-ven-fis-doc/articles/financials/localizations/latam-bra-cancel-vendor-fiscal-documents.md)
