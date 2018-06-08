@@ -1057,6 +1057,8 @@
 ###### [Withholding taxes on customer payments](../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md)
 ###### [Withholding taxes on vendor payments](../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md)
 
+##### [Cancel a customer fiscal document](../financials/localizations/latam-bra-cancel-customer-fiscal-documents.md)
+
 ##### Tasks for Brazil
 ###### [Set up legal entity parameters](../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md)
 ###### [Set up fiscal document source text](../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md)
