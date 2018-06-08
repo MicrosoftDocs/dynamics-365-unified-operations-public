@@ -105,4 +105,4 @@ If you have a curated solution that is published on AppSource, you must keep the
 See also
 --------
 
-[AppSource for Dynamics 365 for Finance and Operations](lcs-solutions-app-source.md)
+[Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)
