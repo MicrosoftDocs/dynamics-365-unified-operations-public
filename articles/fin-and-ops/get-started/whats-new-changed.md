@@ -133,7 +133,7 @@ For information about how to upgrade to the latest version, see [Process for upg
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>Platform update 15</td>
 <td>7.0.4841</td>
-<td>June 2018</td>
+<td>March 2018</td>
 <td><a href="whats-new-platform-update-15.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 15 (March 2018)</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
