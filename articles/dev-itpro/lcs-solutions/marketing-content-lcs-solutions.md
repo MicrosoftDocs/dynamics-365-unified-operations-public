@@ -39,7 +39,7 @@ This topic explains how to upload the marketing content of your Dynamics 365 for
 Before you can publish the marketing content for your Dynamics 365 for Finance and Operations solution package to the Cloud Partner Portal, you must set up a Developer Center account with Microsoft. After you've set up an account, you can upload your marketing content and then manage the content through the lifecycle of application. For information about how to set up a Developer Center account, see [Create a Microsoft Developer account](https://azure.microsoft.com/en-us/documentation/articles/marketplace-publishing-accounts-creation-registration/).
 
 ## Upload marketing materials, set up legal information, identify the support team, and set up lead management
-You can upload a marketing summary, a description of your solution and other marketing materials, and set up lead management.
+After being registered as a publisher on Cloud Partner Portal, you can create your new offer, upload a marketing summary, a description of your solution and other marketing materials, and set up lead management.
 
 To access the instructions to create and publish your new offer from the Cloud Partner Portal :
 
@@ -53,4 +53,4 @@ To access the instructions to create and publish your new offer from the Cloud P
 See also
 --------
 
-[AppSource for Dynamics 365 for Finance and Operations home page](lcs-solutions-app-source.md)
+[Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)
