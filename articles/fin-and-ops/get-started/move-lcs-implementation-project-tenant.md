@@ -5,7 +5,7 @@ title: Move an LCS Implementation project to another Azure Active Directory tena
 description: This topic explains how to move your subscriptions and LCS Implementation project to a different Azure AD tenant.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
-ms.date: 06/06/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -56,8 +56,8 @@ If you're licensed through a Microsoft Volume Licensing agreement, you must call
 
 - Public customer number
 - Enrollment number
-- The current tenant domain that \*.onmicrosoft.com the subscriptions are currently provisioned on
-- The destination tenant domain that \*.onmicrosoft.com the customer wants the subscriptions provisioned under
+- The current tenant domain that the subscriptions are currently provisioned on
+- The destination tenant domain that the customer wants the subscriptions provisioned under
 - A detailed explanation of why the customer must have its Volume Licensing subscriptions migrated to a different tenant
 - The total number of paid subscriptions that must be moved to the new tenant, together with the subscription type and seat count
 
@@ -83,7 +83,7 @@ On the new tenant, you will get a new LCS project that you must initiate and set
         ```
 
 6. Re-import all other users that have the correct security identifier (SID) and identity provider.
-7. Update the tenant ID in the following tables:
+7. Run the following commands to update the tenant ID in the appropriate tables:
 
     - select VALUE from SYSSERVICECONFIGURATIONSETTING where name = 'TENANTID'
     - select TENANTID from POWERBICONFIG
