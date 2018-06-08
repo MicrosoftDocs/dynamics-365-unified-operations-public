@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add a methodology to an LCS solution
+title: Add a methodology to a Dynamics 365 for Finance and Operations solution solution
 description: This topic explains how to create and modify methodologies. It also provides information about the requirements for methodologies.
 author: kfend
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.author: omarc
 
 ---
 
-# Add a methodology to an LCS solution
+# Add a methodology to a Dynamics 365 for Finance and Operations solution
 
 [!include[banner](../includes/banner.md)]
 
