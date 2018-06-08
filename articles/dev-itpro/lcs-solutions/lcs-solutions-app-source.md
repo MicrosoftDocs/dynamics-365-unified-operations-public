@@ -38,7 +38,7 @@ This topic points to resources that will help you understand the requirements fo
 
 -   [App validation](app-validation-lcs-solutions.md)
 -   [Code migration](code-migration-lcs-solutions.md)
--   [Database backup](database-backup-lcs-solutions.md) and [Process Data Packages (PDP)](process-data-packages-lcs-solutions.md)
+-   [Database backup](database-backup-lcs-solutions.md) 
 -   [Business process models](business-process-modeler-libraries-lcs-solutions.md)
 -   [Methodologies](methodologies-lcs-solutions.md)
 -   [Marketing](marketing-content-lcs-solutions.md)
