@@ -210,7 +210,7 @@
 #### [Metadata properties](../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/fin-and-ops/toc.json)
 #### [Validations, defaults, and unmapped fields](../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/fin-and-ops/toc.json)
 #### [Security and data entities](../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json)
-#### [Use third-party service testing utilities](../data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json)
+#### [Use third-party service testing utilities](../dev-itpro/data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json)
 
 ### [Bring your own database](../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json)
 
