@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Back up database for an LCS solution
+title: Back up database for a Dynamics 365 for Finance and Operations solution
 description: A Dynamics 365 for Finance and Operations database backup is required for your LCS solution package. When you back up your database, you must include the master, reference, and transactional data that is specific to your solution and industry. This will be used for your pre-sales demo deployments. 
 author: kfend
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.author: omarc
 
 ---
 
-# Back up database for an LCS solution
+# Back up database for a Dynamics 365 for Finance and Operations solution
 
 [!include[banner](../includes/banner.md)]
 
