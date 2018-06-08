@@ -141,7 +141,7 @@ Follow these steps to consume the PDP.
 See also
 --------
 
-[AppSource for Dynamics 365 for Finance and Operations home page](lcs-solutions-app-source.md)
+[Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)
 
 
 
