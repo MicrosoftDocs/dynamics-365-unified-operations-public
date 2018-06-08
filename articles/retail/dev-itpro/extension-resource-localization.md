@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail extension resource localization
+title: Localize Retail extension resources and label files
 description: This topic explains how to modify POS UI labels, POS messages, receipt labels, and error message for Retail server or CRT. It also explains how you can add custom error messages for Retail server or CRT.
 author: mugunthanm
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 8.0.1
 
 ---
 
-# Retail extension resource localization
+# Localize Retail extension resources and label files
 
 [!include[banner](../includes/banner.md)]
 
@@ -72,8 +72,8 @@ To get the text ID for a POS string, you must run the POS by using the Retail so
 4. Compile and build the solution, and then select **Deploy \> Local Machine**.
 5. After the POS is deployed, sign in to it by using your operator ID and password.
 6. Select the **Settings** button in the upper right of the POS window.
-7. On the **Settings** page, under **Developer mode**, set the **Developer Mode** option to **On**.
-8. Set the **Show Strings IDs** option to **On**.
+7. On the **Settings** page, under **Developer mode**, set the **Developer Mode** option to **Yes**.
+8. Set the **Show Strings IDs** option to **Yes**.
 9. Sign out of the POS, and then sign in again. The POS now shows the strings IDs in front of all the labels and messages. 
 
 ### Troubleshooting
@@ -124,20 +124,20 @@ This section explains how to modify Retail server or CRT error messages, or rece
 You can also add new Retail server or CRT error messages, or new receipt strings, in the **Retail server language text** grid. In this way, you support localization instead of hard-coding everything in the code.
 
 > [!IMPORTANT]
-> The text ID of all your new messages should start with **Microsoft\_Dynamics\_Commerce\_**.
+> The text ID of all your new messages must start with **Microsoft\_Dynamics\_Commerce\_**.
 
 For example, you want to add a new exception message in US English (en-us) and UK English (en-uk). In this case, add entries that resemble the follow entries in the **Retail server language text** grid.
 
 | Language ID | Text ID                                 | Text                    |
 |-------------|-----------------------------------------|-------------------------|
-| en-us       | Microsoft\_Dynamics_Commerce\_CustomId1 | My new message in US English |
-| en-uk       | Microsoft\_Dynamics_Commerce\_CustomId1 | My new message in UK English |
+| en-us       | Microsoft_Dynamics_Commerce_CustomId1 | My new message in US English |
+| en-uk       | Microsoft_Dynamics_Commerce_CustomId1 | My new message in UK English |
 
 > [!NOTE]
-> In this example, **CustomId1** is the text ID for the new message. You can use any text ID that you want, provided that it starts with **Microsoft\_Dynamics\_Commerce\_**.
+> In this example, **CustomId1** is the text ID for the new message. You can use any text ID that you want, provided that it starts with **Microsoft_Dynamics_Commerce_**.
 
 The following example shows how to use this new message in your CRT extension code.
 
 ```C#
-throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSeverity.Warning, null, "Custom error"); |
+throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSeverity.Warning, null, "Custom error");
 ```
