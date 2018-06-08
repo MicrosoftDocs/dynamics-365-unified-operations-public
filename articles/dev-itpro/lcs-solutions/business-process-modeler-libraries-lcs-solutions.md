@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up Business process modeler libraries for an LCS solution
-description: This topic explains how to create and work with Business process modeler (BPM) libraries.
+title: Set up Business process modeler libraries for a Dynamics 365 for Finance and Operations solution
+description: This topic explains how to create and work with Business Process Modeler (BPM) libraries.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -28,12 +28,12 @@ ms.author: omarc
 
 ---
 
-# Set up Business process modeler libraries for an LCS solution
+# Set up Business process modeler libraries for a Dynamics 365 for Finance and Operations solution
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how to create and work with Business process modeler (BPM) libraries.
+This topic explains how to create and work with Business Process Modeler (BPM) libraries.
 
 Create a business process library
 ---------------------------------
