@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Migrate code for an LCS solution
-description: This topic describes how to upgrade and analyze the code in your LCS solution.  
+title: Migrate code for a Dynamics 365 for Finance and Operations solution
+description: This topic describes how to upgrade and analyze your code in Lifecycle Servicees (LCS).  
 author: kfend
 manager: AnnBe
 ms.date: 04/13/2018
@@ -28,7 +28,7 @@ ms.author: omarc
 
 ---
 
-# Migrate code for an LCS solution
+# Migrate code for Dynamics 365 for Finance and Operations solution
 
 [!include[banner](../includes/banner.md)]
 
