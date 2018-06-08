@@ -396,8 +396,7 @@ This section explains how to override the existing CRT request to print a receip
     }
     ```
 
-8. Inside the project, create a new service class, and name it **CrossLoyaltyCardService.cs**.
-9. Copy the following code, and paste it inside the class to add a new method to read the transaction from the cart table, because suspended transactions aren't yet created in the retail transaction table. You must then convert the cart transaction to sales transaction. This conversion is required because the receipt object can understand only sales transactions.
+8. Copy the following code, and paste it inside the class to add a new method to read the transaction from the cart table, because suspended transactions aren't yet created in the retail transaction table. You must then convert the cart transaction to sales transaction. This conversion is required because the receipt object can understand only sales transactions.
 
     > [!NOTE]
     > If you're printing a custom receipt for a completed transaction, you have don't have to get the cart transaction and convert it to a sales transaction. It has already been converted to a sales transaction, because the transaction is completed.
@@ -424,7 +423,7 @@ This section explains how to override the existing CRT request to print a receip
     }
     ```
 
-10. Copy the following code, and paste it into the class to add a new method to construct the receipt format by using the sales transaction information, based on the custom receipt format that is defined in HQ.
+9. Copy the following code, and paste it into the class to add a new method to construct the receipt format by using the sales transaction information, based on the custom receipt format that is defined in HQ.
 
     ```C#
     private Collection<Receipt> GetCustomReceipts(SalesOrder salesOrder, ReceiptRetrievalCriteria criteria)
@@ -443,7 +442,7 @@ This section explains how to override the existing CRT request to print a receip
     }
     ```
 
-11. Copy the following code, and paste it into the class to add a new method to override the get receipt response. This method processes the request and returns the response.
+10. Copy the following code, and paste it into the class to add a new method to override the get receipt response. This method processes the request and returns the response.
 
     ```C#
     protected override GetReceiptResponse Process(GetCustomReceiptsRequest request)
@@ -604,18 +603,18 @@ This section explains how to override the existing CRT request to print a receip
     }
     ```
 
-13. Compile and build the project.
-14. Go to the output directory, and copy the output assembly.
-15. Navigate to the **…\\RetailServer\\webroot\\bin\\ext** folder, and paste the assembly.
-16. Also paste the assembly in the **…\\RetailSDK\\References** folder.
-17. Open the **commerceruntime.ext.config** file, and add the custom assembly information under the \<composition\> section.
+11. Compile and build the project.
+12. Go to the output directory, and copy the output assembly.
+13. Navigate to the **…\\RetailServer\\webroot\\bin\\ext** folder, and paste the assembly.
+14. Also paste the assembly in the **…\\RetailSDK\\References** folder.
+15. Open the **commerceruntime.ext.config** file, and add the custom assembly information under the \<composition\> section.
 
     ```
     <add source="assembly" value="Contoso.Commerce.Runtime.SuspendReceiptSample" />
     ```
 
-18. Save and close the file.
-19. Restart the Retail Server to load the new assembly.
+16. Save and close the file.
+17. Restart the Retail Server to load the new assembly.
 
 ## Add the custom receipt layout
 
