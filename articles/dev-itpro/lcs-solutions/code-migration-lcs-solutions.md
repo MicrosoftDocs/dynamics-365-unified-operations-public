@@ -28,7 +28,7 @@ ms.author: omarc
 
 ---
 
-# Migrate code for Dynamics 365 for Finance and Operations solution
+# Migrate code for a Dynamics 365 for Finance and Operations solution
 
 [!include[banner](../includes/banner.md)]
 
