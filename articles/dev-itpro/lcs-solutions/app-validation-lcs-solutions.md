@@ -48,8 +48,8 @@ Currently, partners must demonstrate that these requirements have been met by do
 -   Business process modeler (BPM)/test scripts
 -   Business database backup
 -   Project name and description
--   Data packages and Process data packages (PDPs)
--   Methodology (optional)
+-   Data packages and process data packages (PDPs)
+-   Methodology 
 -   Binaries (optional)
 -   Deployable packages
 -   Models (code and tests)
