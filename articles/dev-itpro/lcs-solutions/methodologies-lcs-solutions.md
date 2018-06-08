@@ -39,13 +39,17 @@ This topic explains how to create and modify methodologies in Lifecycle Services
 Methodology requirements
 ------------------------
 
-The first two phases of your methodology are the Learn and Consume phases from the LCS Solutions Consumption methodology. Your product description in the Learn phase must be aligned with your business process library, the descriptions or summaries in your marketing material, and the functionality that is supported in the current version of your solution. The Learn phase includes the following tasks:
+The first two phases of your methodology are the Learn and Consume phases from the LCS Solutions Consumption methodology. 
+
+The Learn Phase: Your product description in the Learn phase must be aligned with your business process library, the descriptions or summaries in your marketing material, and the functionality that is supported in the current version of your solution. The Learn phase includes the following tasks:
 
 -   **Product description** – Take advantage of your marketing description by adding it to the Microsoft Dynamics Lifecycle Services (LCS) methodology.
 -   **Get an overview** – Include content for your solution, such as information about features, architecture, and more.
 -   **How to get help** – Include numbers, contacts, or direct links to your company's website, for people who contribute to building and maintaining the solution.
 
-The Consume phase is optional. It includes tasks that are required in order to complete Conference room pilot 1 (CRP1). After the Learn and Consume phases, you can add the steps that are required in order to implement your solution. You can either modify the phases and tasks so that they are aligned with your solution, or use your company’s implementation methodology.
+The Consume phase is **optional**. It includes tasks that are required in order to complete Conference room pilot 1 (CRP1). 
+
+You may add after the Learn and Consume phases any additional steps that are required in order to implement your solution. You can either modify the phases and tasks so that they are aligned with your solution, or use your company’s implementation methodology.
 
 ## Create a new methodology
 1.  On the LCS home page, click the **Manage methodologies** tile.
@@ -76,7 +80,7 @@ Follow these steps to edit a methodology in a specific project only.
 See also
 --------
 
-[AppSource for Dynamics 365 for Finance and Operations home page](lcs-solutions-app-source.md)
+[Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)
 
 
 
