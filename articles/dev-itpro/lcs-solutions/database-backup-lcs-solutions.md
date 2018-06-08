@@ -43,7 +43,7 @@ On demo or development environments, the database is typically called AXDBRain. 
 See also
 --------
 
-[AppSource for Dynamics 365 for Finance and Operations home page](lcs-solutions-app-source.md)
+[Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)
 
 
 
