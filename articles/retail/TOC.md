@@ -254,6 +254,7 @@
 ### [Extend commerce runtime to support POS offline mode](dev-itpro/call-crt-service-offline.md)
 
 ## Commerce runtime extensibility
+### [Commerce runtime services](dev-itpro/crt-services.md)
 ### [Commerce runtime overview](dev-itpro/commerce-runtime-overview.md)
 ### [Commerce runtime and Retail Server extensibility ](dev-itpro/commerce-runtime-extensibility.md)
 ### [Add customer preference data to a channel database](dev-itpro/add-customer-preference-channel.md)
