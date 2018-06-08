@@ -5,7 +5,7 @@ title: Generate printable FTI forms
 description: This topic explains how to use the Electronic reporting (ER) framework to generate printable free text invoice (FTI) forms as Microsoft Office documents.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 06/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,25 +45,29 @@ The mapping must contain the following data sources:
 
 - Data source type, **Table records**
 
-  - Named **CustInvoiceJour**
+  - Name: **CustInvoiceJour**
   - Refers to the application table **CustInvoiceJour** 
-  - Used to pass the list of invoices at run-time that are selected for printing from the application to the executing ER model mapping
+  - Used at run-time to pass the list of invoices selected for printing from the application to the ER model mapping
 
 - Data source type, **Object**
 
-  - Named **PrintMgmtPrintSettingDetail**
+  - Name: **PrintMgmtPrintSettingDetail**
   - Refers to the application class, **PrintMgmtPrintSettingDetail** 
-  - Used to pass mapping details at run-time of Print management settings for the executing ER format from the application to the executing ER model .
+  - Used at run-time to pass the mapping details of the print management settings for executing the ER format from the application to the ER model.
 
 The details of the application integration with the ER framework can be found in the source code of the application:
 - **ERPrintMgmtReportFormatSubscriber** class (ER Application Suite integration model).
+For mor einformaiton about the design of ER model mappings, see [Define model mapping and select data sources for electronic reporting (ER)](../tasks/er-define-model-mapping-select-data-sources-2016-11.md).
 
 ### Configure ER format
-You need to have in your application instance the ER format configuration that will be used to generate FTI forms. 
-Note. It is required that this format configuration has been created for the CustomersInvoicing data model and uses the model mapping with the FreeTextInvoice root descriptor.
-Explore this page to learn how ER formats can be configured. Review this page to learn how ER formats can be designed to generate reports in OpenXML format.
+In your application instance, you must have the ER format configuration that will be used to generate FTI forms. 
 
-## Configure Print management
+  > [!NOTE]
+  > It is required that this format configuration has been created for the CustomersInvoicing data model and uses the model mapping with the FreeTextInvoice root descriptor.
+
+To learn how ER formats can be configured, see [Create a format configuration for electronic reporting (ER)](../tasks/er-format-configuration-2016-11.md). To learn more about how ER formats can be designed to generate reports in OpenXML format, see [Design a configuration for generating reports in OpenXML format for electronic reporting (ER)](../tasks/er-design-reports-openxml-2016-11.md).
+
+## Configure print management
 Assignment of ER formats for generation of FTI forms by using ER framework can be done in the same way as for the assignment of SSRS reports. You may associate the created ER format with all Accounts receivable free text invoices by using the following application path: Accounts receivable > Setup > Forms > Form setup > General > Print management > Free text invoice > Original. If you want to associate the created ER format with a specific customer or an invoice, you need to do the following:
 1.	Open the Accounts receivable > Invoices > All free text invoices form;
 2.	Select the desire free text invoice;
