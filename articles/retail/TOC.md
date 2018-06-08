@@ -255,6 +255,7 @@
 
 ## Commerce runtime extensibility
 ### [Commerce runtime overview](dev-itpro/commerce-runtime-overview.md)
+### [Commerce runtime services](dev-itpro/crt-services.md)
 ### [Commerce runtime and Retail Server extensibility ](dev-itpro/commerce-runtime-extensibility.md)
 ### [Add customer preference data to a channel database](dev-itpro/add-customer-preference-channel.md)
 ### [Add properties to a sales order](dev-itpro/add-properties-sales-order.md)
