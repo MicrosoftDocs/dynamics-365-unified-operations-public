@@ -48,7 +48,7 @@ Currently, partners must demonstrate that these requirements have been met by do
 -   Business process modeler (BPM)/test scripts
 -   Business database backup
 -   Project name and description
--   Data packages and process data packages (PDPs)
+-   Data packages 
 -   Methodology 
 -   Binaries (optional)
 -   Deployable packages
@@ -65,7 +65,7 @@ The following table describes the steps that must be completed before the valida
 | 1     | 2    | Verify user experience (UX) guidelines | Follow UX guidelines to implement the workspace correctly.                                                                                                      | Reference best practice information in the Migrate and Create methodology section of LCS.                                                                                                                                                                                                                                               |
 | 2     | 3    | Create a project                       | Create a project in LCS.                                                                                                           | Successfully package an LCS project. Correctly deploy package artifacts, such as the BPM.                                                                                                                                                                                                                        |
 | 2     | 4    | Deploy an environment                  | Deploy a standard Microsoft Dynamics 365 for Finance and Operations environment that has partner code based on the package contents (Code, Binaries, and Config).   | Successfully deploy at least one Finance and Operations environment without any errors. The environment configuration (including components and configuration) is the same as the reference environment of the partner. A user can successfully sign in to this environment without any errors. |
-| 2     | 5    | Configure and deploy data              | Deploy partner-supplied data in the environment without any errors.                                                                                              | View the supplied data package in LCS Config manager without any errors. In the specified legal entity, deploy the data supplied to the environment without any errors. Create new data in the selected master data, and then push the data to the Finance and Operations environment without any errors.               |
+| 2     | 5    | Configure and deploy data              | Deploy partner-supplied data in the environment without any errors.                                                                                              | In the specified legal entity, deploy the data supplied to the environment without any errors. Create new data in the selected master data, and then push the data to the Finance and Operations environment without any errors.               |
 | 2     | 6    | Do a sanity check                      | After the data have been loaded into the environment, users should be able to sign in and complete typical transactions (as defined in the scope of the solution). | Users can sign in to the data-loaded environment without any errors. Transactions can be completed, as defined in the package scope, without any errors.                                                                                                                                                                                |
 
 ### Detailed curation requirements
@@ -78,12 +78,12 @@ The following table provides more information about each curation requirement.
 | BPM/test scripts             | All task recordings should be completed for the industry vertical that the solution package is designed for and should include end-to-end scenarios.                                                                                                                                 |
 | Business database backup     | A business database of your upgraded Finance and Operations environment and best practice configurations should be loaded into the Asset library in LCS.                                                                                                                        |
 | Project name and description | The project name and description should be incorporated into the beginning of the implementation methodology for the solution package.                                                                                                                                               |
-| Data packages and PDPs       | All data packages should be loaded into LCS before the validation meeting. You should be able to modify the data packages and load them into an empty environment. A user should be able to run business processes that are in the BPM library by using only data packages. |
-| Methodology                  | The methodology should incorporate an overview of the product. Guided experience to Conference Room Pilot 1 (CRP1) and other implementation methodology specifically tailored for the partner's solution are optional. |
+| Data packages      | All data packages should be loaded into LCS before the validation meeting. Create data entities for any additional custom fields or tables for your custom functional features. You should be able to modify the data packages and load them into an empty environment, and consume the data packages in Data Management Framework. |
+| Methodology                  | The methodology should incorporate an overview of the product. Guided experience to Conference Room Pilot 1 (CRP1) and other implementation methodology specifically tailored for your solution are optional. |
 | Binaries (optional)          | Incorporate any required binary files.                                                                                                                                                                                                                                               |
 | Deployable packages          | Incorporate the deployable packages that are required to bring your custom features and functionality into Finance and Operations.                                                                                                                                     |
 | Models (code and tests)      | Incorporate any model files that are required for your solution.                                                                                                                                                                                                                     |
-| Marketing content            | Add your marketing content, which includes logos, descriptions, and screen shots of your solution package. The logo should be industry-specific and should not include your company name. The description should be aligned with your business processes.                            |
+| Marketing content            | Add your marketing content, which includes logos, descriptions, and screen shots of your solution package. The solution logo should be app-specific and should not include your company name. The description should be aligned with your custom business processes.                            |
 
 
 ## Update and maintenance requirements
@@ -93,7 +93,7 @@ If you have a curated solution that is published on AppSource, you must keep the
 -   Models (code and tests)
 -   Deployable packages
 -   BPM/test scripts
--   Data packages and PDPs
+-   Data packages
 -   Business database backup
 
 ### Maintenance process steps
