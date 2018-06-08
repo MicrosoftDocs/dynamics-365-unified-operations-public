@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [Enter topic title here]
-description: [write a simple description of the topic here]
+title: SPED ECD
+description: This topic provides information on how to set up parameters for and generate SPED ECD text files.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 6/5/2018
@@ -28,13 +28,13 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# (BRA) Set up parameters for SPED ECD text files
+# Set up parameters for SPED ECD text files
 
 This topic describes how to specify how Sistema Publico de Escrituração Digital (SPED) fiscal text files will be saved before you submit them to the federal tax authorities.
 
-The SPED fiscal text files contain information about general ledger transactions, profit and loss information, and balance sheet information. The SPED ECD system is used by federal tax authorities to verify taxable profits of a company. For information about how to generate the yearly SPED ECD fiscal text file, see [(BRA) Generate and validate the SPED ECD statement](bra-generate-and-validate-the-sped-ecd-statement.md).
+The SPED fiscal text files contain information about general ledger transactions, profit and loss information, and balance sheet information. The SPED ECD system is used by federal tax authorities to verify taxable profits of a company. 
 
-## Set up requirements for SPED ECD tax statement
+### Set up requirements for SPED ECD tax statement
 
 To set up requirements for SPED ECD fiscal text files, follow these steps:
 
@@ -46,7 +46,7 @@ To set up requirements for SPED ECD fiscal text files, follow these steps:
 
 4.  Select the file location where the SPED ECD text file will be generated.
 
-5.  The Booking type is assigned automatically depending on the type of fiscal organization. See [(BRA) Set up a fiscal organization](bra-set-up-a-fiscal-organization.md) for more information.
+5.  The Booking type is assigned automatically depending on the type of fiscal organization. 
     
       - G – This booking is used to detail all of the ledger journal transactions.
     
@@ -88,10 +88,10 @@ To set up requirements for SPED ECD fiscal text files, follow these steps:
     
 
     > [!NOTE]
-    > <P>The steps 9, 10 and 11 are not available when Version 3.0 is selected. This information has been changed and included in the configuration of fiscal organization. See <A href="bra-set-up-a-fiscal-organization.md">(BRA) Set up a fiscal organization</A> for more information.</P>
+    > The steps 9, 10 and 11 are not available when Version 3.0 is selected. This information has been changed and included in the configuration of fiscal organization. See <A href="bra-set-up-a-fiscal-organization.md">(BRA) Set up a fiscal organization</A> for more information.
 
 
-# (BRA) Generate and validate the SPED ECD statement 
+## Generate and validate the SPED ECD statement 
 
 This topic describes how to generate and validate the text file for the digital accounting bookkeeping (SPED ECD) statement.
 
@@ -103,7 +103,7 @@ The SPED ECD statement requires organizations to calculate and report the taxabl
 
   - Daily trial balances and balance sheets
 
-## Generate and validate a SPED ECD text file
+### Generate and validate a SPED ECD text file
 
 To generate and validate the text file for the SPED ECD statement, follow these steps:
 
@@ -170,5 +170,5 @@ To generate and validate the text file for the SPED ECD statement, follow these 
 
 ## See also
 
-[(BRA) Generate the Sintegra tax statement](bra-generate-the-sintegra-tax-statement.md)
+[Generate the Sintegra tax statement](latam-bra-set-up-parameters-for-tax-statements.md)
 
