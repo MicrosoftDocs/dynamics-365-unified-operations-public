@@ -101,9 +101,9 @@ During development it can be useful to attach a debugger to get more detailed in
 1. On the web client that is exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the Unified Operations app. For information about publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
 
 2. Install the Android debug apk for the Unified Operations app on an Android device:
-    - Once only, allow installation of apk files - Go to Menu > Settings > Security > and check Unknown Sources to allow the phone to install apps from sources other than the Google Play Store.
+    - One time only, allow the installation of apk files -  Go to **Menu** > **Settings** > **Security** and then check **Unknown Sources** to allow the phone to install apps from sources other than the Google Play Store.
     - Uninstall the Unified Operations app - Ensure that any previous version of the Unified Operations app has been uninstalled.
-    - Download the apk file - From the device’s browser, navigate to the latest [Unified Operations Android debug apk on Github](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click download (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
+    - Download the apk file - From the device’s browser, navigate to the latest [Unified Operations Android debug apk on Github](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click **Download** (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
     - Install the Unified Operations apk file - Confirm install of the Unified Operations app via the apk file.
     - Run the debug Unified Operations app on the device and sign in.
 
