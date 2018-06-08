@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-Commerce runtime (CRT) is a collection of portable .NET libraries that contain the core business logic for the retail channel and pricing functionality. To add or modify any business logic, you should customize CRT. Retail POS calls CRT to request that it perform business logic. CRT processes the request and then sends the response back to POS. POS is like a thin client. All the business logic should be done in CRT.
+Commerce runtime (CRT) is a collection of portable .NET libraries that contain the core business logic for the retail channel and pricing functionality. To add or modify any business logic, you should customize CRT. Retail Modern POS or Cloud POS calls CRT to request that it perform business logic. CRT processes the request and then sends the response back to retail point of sale. Retail point of sale is like a thin client, all the business logic should be done in CRT.
 
 A CRT service is a group of requests/responses. Any time that you do something in POS, POS sends a request to Retail server, and Retail server calls CRT. CRT processes the request and sends back the response.
 
@@ -42,10 +42,10 @@ This topic shows some important requests/responses that you can customize for yo
 There are three main layers in CRT:
 
 - Services
-- Workflow and Messages
+- Workflow
 - Data Access
 
-Other core components that are required for CRT to work are runtime, authentication, and data access managers. You should avoid any customization on these layers, because all customization of business logic can be done in services, data access or at workflow level.
+All CRT customization for business logic can be done in Services, Workflow or Data Access layers, other core layers that are required for CRT to work are runtime, authentication, and data access managers and you should avoid any customization on these layers.
 
 ## Overall flow
 The overall flow looks like this:
@@ -72,7 +72,7 @@ For more information about each service, see the CRT request/response document i
 | ChargeService              | This service implements logic that calculates automatic charges, price charges, and shipping charges for transactions. |
 | CouponService              | This service validates and updates coupon-related requests. |
 | CurrencyService            | This service converts currencies, based on exchange rates. |
-| CustomerService            | This service maintains customer information and like Save, purchase history, get customer, customer balance. |
+| CustomerService            | This service contains customer related operations such as Save cusotomer, purchase history, get customer and customer balance. |
 | EmployeeService            | This service gets employee-related information and employees by store. |
 | FormattingService          | This service implements logic for the format of numbers, currencies, and dates. |
 | GiftCardService            | This service provides information about internal activities that are related to gift cards, such as issuing the gift card, getting the balance, and adding value. |
@@ -284,7 +284,7 @@ The Address service supports the following requests/responses for various extens
 | GetCustomerBalanceServiceRequest             | This request gets the balance of the customer's account.                 |
 | GetOrderHistoryServiceRequest                | This request gets the customer's order history.                          |
 | GetPurchaseHistoryServiceRequest             | This request gets the history of the customer's recent purchases.        |
-| CustomerSearchByFieldsServiceRequest         | This request is run when you search by customer by fields (hint search). |
+| CustomerSearchByFieldsServiceRequest         | This request is run when you search customer by using fields such as name, phone number etc. (hint search). |
 | GetCustomerSearchFieldsServiceRequest        | This request gets the list of customer search fields (hint fields).      |
 
 ### PricingService
@@ -352,9 +352,9 @@ The Address service supports the following requests/responses for various extens
 
 On top of the Services layer is the Workflow layer. A workflow is a collection of services and business logic that together define business processes. For example, when a customer adds an item to the cart, you can use a workflow to get the price, do validation, check the inventory quantity, calculate shipping, calculate tax, and calculate discounts. You can customize the existing workflows, or you can create new workflows. You can even use a workflow to connect to a third-party system as part of your business processes.
 
-Just like services, workflows use the request/response pattern. The request object inherits from the base CRT [Request](https://technet.microsoft.com/en-us/library/microsoft.dynamics.commerce.runtime.messages.request.aspx) class. The response object inherits from the base CRT [Response](https://technet.microsoft.com/en-us/library/microsoft.dynamics.commerce.runtime.messages.response.aspx) class. A workflow also has a request handler class that extends the [WorkflowRequestHandler<TRequest, TResponse>](https://technet.microsoft.com/en-us/library/jj764791.aspx) class. To create a workflow, you create a request class and a response class, and you then create a request handler class that contains the business logic for the workflow.
+Just like services, workflows use the request/response pattern. The request object inherited from the base CRT [Request](https://technet.microsoft.com/en-us/library/microsoft.dynamics.commerce.runtime.messages.request.aspx) class. The response object inherited from the base CRT [Response](https://technet.microsoft.com/en-us/library/microsoft.dynamics.commerce.runtime.messages.response.aspx) class. A workflow also has a request handler class that extends the [WorkflowRequestHandler<TRequest, TResponse>](https://technet.microsoft.com/en-us/library/jj764791.aspx) class. To create a workflow, you create a request class and a response class, and you then create a request handler class that contains the business logic for the workflow.
 
-For example, when you create a cash-and-carry transaction or a customer order, many different steps or workflows are completed before the order is created. One of the workflow steps in the order process is the Save Cart step. The Save cart request workflow is responsible for saving any changes that are made to the cart from the POS. For example, when you add an item to the cart, change the quantity, and so on, anything that you do in the POS will cause a call to the SaveCart to save the changes to the POS and database.
+For example, when you create a cash-and-carry transaction or a customer order, many different steps or workflows are completed before the order is created. One of the workflow steps in the order process is the Save cart request. The Save cart request workflow is responsible for saving any changes that are made to the cart from the POS. For example, when you add an item to the cart, change the quantity, and so on, anything that you do in the POS will cause a call to the SaveCart to save the changes to the POS and database.
 
 The following three classes will be implemented in the Save cart request workflow.
 
@@ -414,7 +414,7 @@ All your workflow classes will follow the same pattern.
 
 ### Default workflows and handlers
 
-The following table lists the default workflow requests which been called one more service, based on the operation that you perform in the POS. You can customize any of these workflows according to your business scenario.
+The following table lists the default workflow requests and response. CRT services call the workflows request and response based on the operation you perform in retail point of sale. You can customize any of these workflows request and response according to your business scenario. 
 
 | Request                           | Handler                                 | Purpose                                                                                                                    |
 |-----------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -423,7 +423,7 @@ The following table lists the default workflow requests which been called one mo
 | CancelOrderRequest                | CancelOrderRequestHandler               | This request is triggered when you cancel an order from the POS.                                                           |
 | CopyCartRequest                   | CopyCartRequestHandler                  | This request creates an identical shopping cart that has the specified cart type.                                          |
 | GetAddressRequest                 | GetAddressRequestHandler                | This request gets the address from the list.                                                                               |
-| GetCardPaymentAcceptPointRequest  | GetCardPaymentAcceptPointRequestHandler | This request gets the accepting point of card payment.                                                                     |
+| GetCardPaymentAcceptPointRequest  | GetCardPaymentAcceptPointRequestHandler | This request shows the accepting page for card payment.                                                                     |
 | GetCartRequest                    | GetCartRequestHandler                   | This request gets the shopping cart, based on the cart search criteria.                                                    |
 | GetDiscountCodesRequest           | GetDiscountCodesRequestHandler          | This request gets the discount codes.                                                                                      |
 | GetOrdersRequest                  | GetOrdersRequestHandler                 | This request gets sales orders.                                                                                            |
@@ -440,7 +440,7 @@ The following table lists the default workflow requests which been called one mo
 | SaveCartLinesRequest              | SaveCartLinesRequestHandler             | This request represents a request for create, update, delete, or void operations on the cart line.                         |
 | SaveCartRequest                   | SaveCartRequestHandler                  | This request is triggered when you make any changes in that POS that affect the cart.                                      |
 | SaveCustomerOrderRequest          | SaveCustomerOrderRequestHandler         | This request initiates a request to save the customer order, based on the specified cart identifier and payment card information. |
-| SaveReasonCodeLineRequest         | SaveReasonCodeLineRequestHandler        | This request adds or updates a reason code line.                                                                           |
+| SaveReasonCodeLineRequest         | SaveReasonCodeLineRequestHandler        | This request adds or updates a reason code on the cart line.                                                                           |
 | SaveTenderLineRequest             | SaveTenderLineRequestHandler            | This request adds, removes, or updates a tender line for the given shopping cart.                                          |
 | SaveVoidTransactionRequest        | SaveVoidTransactionRequestHandler       | This request voids a transaction.                                                                                          |
 | SubmitSalesTransactionRequest     | SubmitOrderRequestHandler               | This request initiates a request to submit the sales transaction, based on the specified cart identifier.                         |
