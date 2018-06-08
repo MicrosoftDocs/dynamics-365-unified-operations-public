@@ -3,7 +3,7 @@ title: Create and execute acceptance tests using Task guides and BPM
 description: This topic provides information about using Task guides and BPM to create and exeucte acceptance test suites.
 author: kfend
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 06/07/2018
 ms.topic: article
 ms.prod: 
 ms.service:  dynamics-ax-platform
@@ -83,7 +83,7 @@ If you're using a library that already has all of the necessary task recordings 
 2. Go to **Settings** > **Task recorder**.
 3. Select **Edit Task Recording** and attach the file by either saving directly to LCS or downloading the AXTR and then uploading to BPM.
 
-## Synchronize and Configure your test plan in VSTS
+## Synchronize and configure your test plan in VSTS
 
 Once you have selected your acceptance test BPM library, synchronize it with VSTS and create your test plan.
 
