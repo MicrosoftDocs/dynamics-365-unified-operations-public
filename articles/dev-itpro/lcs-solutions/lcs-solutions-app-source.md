@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: AppSource for Dynamics 365 for Finance and Operations home page
-description: Lifecycle Services (LCS) solution packages for Microsoft AppSource for Dynamics 365 for Finance and Operations are partner-designed and developed solutions that can be automatically deployed on Microsoft Azure to deliver an end-to-end solution, using industry and vertical-specific content.
+title: Publishing an App for Dynamics 365 for Finance and Operations in AppSource
+description: Dynamics 365 for Finance and Operations solution packages are partner-designed and developed solutions that can be automatically deployed on Microsoft Azure to deliver an end-to-end solution, using industry and vertical-specific content.
 author: kfend
 manager: AnnBe
 ms.date: 04/13/2018
@@ -28,13 +28,13 @@ ms.author: omarc
 
 ---
 
-# AppSource for Dynamics 365 for Finance and Operations home page
+#  Publishing an App for Dynamics 365 for Finance and Operations in AppSource
 
 [!include[banner](../includes/banner.md)]
 
-Lifecycle Services (LCS) solution packages for Microsoft AppSource for Dynamics 365 for Finance and Operations are partner-designed and developed solutions that can be automatically deployed on Microsoft Azure to deliver an end-to-end solution, using industry and vertical-specific content.
+Dynamics 365 for Finance and Operations solution packages are partner-designed and developed solutions that can be automatically deployed on Microsoft Azure to deliver an end-to-end solution, using industry and vertical-specific content.
 
-This topic points to resources that will help you understand the requirements for creating LCS solutions for Microsoft AppSource for Dynamics 365 for Finance and Operations. The requirements fall into six groups.
+This topic points to resources that will help you understand the requirements for creating solutions for Dynamics 365 for Finance and Operations. The requirements fall into six groups.
 
 -   [App validation](app-validation-lcs-solutions.md)
 -   [Code migration](code-migration-lcs-solutions.md)
