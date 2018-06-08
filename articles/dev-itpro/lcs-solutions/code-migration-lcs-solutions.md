@@ -51,6 +51,6 @@ With Microsoft Dynamics 365 for Finance and Operations release 8.0, we have seal
 See also
 --------
 
-[AppSource for Dynamics 365 for Finance and Operations home page](lcs-solutions-app-source.md)
+[Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)
 
 [Technical Concepts Guide for code migration](../dev-tools/developer-home-page.md#code-migration)
