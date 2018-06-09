@@ -136,6 +136,10 @@ The Full layout type designer allows users to drag and drop UI controls onto the
 
 **Designer zoom:**  Users can zoom the designer view in and out to better view the content on the POS screen.  This is useful when the screen resolution on the POS is very different than the screen used in the designer.
 
+**Show/hide navigation bar:** Users can choose to show or hide the POS left navigation bar on the Transaction screen for Full layouts.  This is helpful for lower resolution displays. POS users will still be able to access the navigation bar by clicking or touching menu in the upper left. Right click the navigation bar in the designer and choose to show or hide. 
+
+![POS UI controls](../retail/media/Navigation-Bar.PNG)
+
 **POS controls:** The POS layout designer supports the following controls.  Many controls can be configured by right-clicking and using the context menu.
 
 ![POS UI controls](../retail/media/POS-UI-Controls.png)
