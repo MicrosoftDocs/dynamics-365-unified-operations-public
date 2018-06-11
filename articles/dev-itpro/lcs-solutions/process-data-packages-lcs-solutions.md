@@ -95,6 +95,8 @@ Follow these steps to consolidate the data packages that you uploaded to LCS int
 7.  For step 4, "Associate business process to data packages," select the business process that will be used to configure the process nodes.
 
 ## Consume a PDP
+**Note on the PDP consumption requirement:** For this requirement you have the option to consume data packages directly via the Data Management Framework in your Dynamics 365 for Finance and Operations Environment. Please note that only the consumption of data packages via the LCS PDP tool is optional. You still have to create PDP and upload it to your Asset library. 
+
 The Consume flow lets you review a business process and apply the required configuration and data for implementing the business process to your Finance and Operations environment. To consume PDPs, you must have the following items:
 
 -   An implementation business process library for the solution in your working LCS project
@@ -108,9 +110,6 @@ Follow these steps to consume the PDP.
 3.  The **Consume process data package** page shows a list of the existing PDP assets. Click the plus sign (**+**) to create a new Consume PDP.
 4.  Enter a name for the Consume PDP, select the PDP that you created and saved in the Asset library, select a target environment, and then click **Create**.
 5.  The Consume PDP that you created appears in the list of PDP assets. Click the package. **Note:** The asset that you created can be consumed only in the target environment that was linked to it.
-
-**Note on the PDP consumption requirement:** For this requirement you have the option to consume data packages directly via the Data Management Framework in your Dynamics 365 for Finance and Operations Environment. Please note that only the consumption of data packages via the LCS PDP tool is optional. You still have to create PDP and upload it to your Asset library. 
-
 
 ### Review and approve BPMs
 
@@ -134,8 +133,6 @@ Follow these steps to consume the PDP.
 ### View the data package history
 
 -   On the **Consume process data package** page, select a package, and then click **History**. You can review the status of the data package. The available information includes the target environment, company, package name, start and end times, status by data entity, and the overall status of the data package. To see the details of any errors that occurred, you can sign in to the target environment.
-
-**Note** on the PDP consumption requirement: For this requirement you have the option to consume data packages directly via the Data Management Framework in your Dynamics 365 for Finance and Operations environment. Please note that only the consumption of data packages via the LCS PDP tool is optional. You still have to create a PDP and upload it to your Asset library. 
 
 
 See also
