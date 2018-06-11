@@ -232,6 +232,9 @@
 ### [Add links to your organization's legal terms and privacy statement](../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json)
 ### [Manage Bing Maps](dev-itpro/manage-bing-maps.md)
 
+## Localization
+### [Localize Retail extension resources and label files](dev-itpro/extension-resource-localization.md)
+
 ## Point of sale extensibility
 ### [Retail POS screen layouts](pos-screen-layouts.md)
 ### [Install the POS Layout designer](install-pos-layout-designer.md)
