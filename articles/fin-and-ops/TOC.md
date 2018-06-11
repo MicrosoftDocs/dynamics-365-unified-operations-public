@@ -3,11 +3,6 @@
 ## Get started
 ### [Before you buy](get-started/before-you-buy.md)
 #### [Sign up for preview subscription](../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json)
-#### [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](get-started/subscription-overview.md)
-#### [Move environments between data centers](get-started/move-environments-data-center.md)
-#### [Move licenses between agreement types](get-started/move-licenses-between-agreement-types.md)
-#### [Move an LCS Implementation project to another Azure Active Directory tenant](get-started/move-lcs-implementation-project-tenant.md)
-#### [Implement multiple LCS projects and production environments on the same Azure Active Directory tenant](get-started/implement-multiple-projects-aad-tenant.md)
 #### [Deploy a demo environment](../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json)
 #### [Cloud and on-premises feature comparison](get-started/cloud-prem-comparison.md)
 #### [Choose a deployment option](../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json)
@@ -92,6 +87,12 @@
 ### [Preparing for go-live](imp-lifecycle/prepare-go-live.md)
 ### [Go-live FAQ](imp-lifecycle/go-live-faq.md)
 ### [Submit a service request](../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json)
+### [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](get-started/subscription-overview.md)
+### [Move environments between data centers](get-started/move-environments-data-center.md)
+### [Move licenses between agreement types](get-started/move-licenses-between-agreement-types.md)
+### [Move an LCS Implementation project to another Azure Active Directory tenant](get-started/move-lcs-implementation-project-tenant.md)
+### [Implement multiple LCS projects and production environments on the same Azure Active Directory tenant](get-started/implement-multiple-projects-aad-tenant.md)
+
 
 ## Compliance
 ### [Audit policy rules](../financials/general-ledger/audit-policy-rules.md)
