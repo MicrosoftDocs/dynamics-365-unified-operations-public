@@ -40,7 +40,8 @@
     href: ../financials/general-ledger/indirect-taxes-overview.md
   - name: Sales tax calculation methods in the Origin field
     href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
-  - name: '#### [Sales tax assignment and overrides](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)'
+  - name: Sales tax assignment and overrides
+    href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
   - name: Whole amount and Interval calculation options for sales tax codes
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
 - name: Call center
@@ -59,7 +60,7 @@
     href: set-up-order-processing-options.md
   - name: Set up a continuity program for a call center
     href: set-up-continuity-program.md
-  - name: Order holds
+  - name: Call center order holds
     href: work-with-order-holds.md
   - name: Payment options
     href: work-with-payments.md
@@ -424,6 +425,8 @@
       href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json
     - name: Manage Bing Maps
       href: dev-itpro/manage-bing-maps.md
+  - name: Localize Retail extension resources and label files
+    href: dev-itpro/extension-resource-localization.md
   - name: Point of sale extensibility
     items:
     - name: Retail POS screen layouts
@@ -436,14 +439,16 @@
       href: dev-itpro/modern-pos-trigger-extensibility.md
     - name: Add a custom control to a POS view
       href: dev-itpro/pos-custom-control.md
+    - name: Add a new POS operation to the POS layout
+      href: dev-itpro/add-POS-operations.md     
     - name: POS payment extension
       href: dev-itpro/pos-payment-extension.md
     - name: External gift card support
       href: dev-itpro/gift-card.md
     - name: Create a Retail Experience app
       href: dev-itpro/create-retail-experience-app.md
-    - name: Hardware Station overview and extensibility
-      href: dev-itpro/hardware-station-extensibility.md
+  - name: Hardware Station overview and extensibility
+    href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server extensibility
     items:
     - name: Extend a Retail Server OData controller
@@ -460,7 +465,9 @@
     items:
     - name: Commerce runtime overview
       href: dev-itpro/commerce-runtime-overview.md
-    - name: 'Commerce runtime and Retail Server extensibility '
+    - name: Commerce runtime services
+      href: dev-itpro/crt-services.md
+    - name: Commerce runtime and Retail Server extensibility
       href: dev-itpro/commerce-runtime-extensibility.md
     - name: Add customer preference data to a channel database
       href: dev-itpro/add-customer-preference-channel.md
