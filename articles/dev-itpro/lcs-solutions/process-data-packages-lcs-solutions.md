@@ -95,7 +95,7 @@ Follow these steps to consolidate the data packages that you uploaded to LCS int
 7.  For step 4, "Associate business process to data packages," select the business process that will be used to configure the process nodes.
 
 ## Consume a PDP
-**Note on the PDP consumption requirement:** For this requirement you have the option to consume data packages directly via the Data Management Framework in your Dynamics 365 for Finance and Operations Environment. Please note that only the consumption of data packages via the LCS PDP tool is optional. You still have to create PDP and upload it to your Asset library. 
+**Note on the PDP consumption requirement:** For this requirement you have the option to consume data packages directly via the Data Management Framework in your Dynamics 365 for Finance and Operations Environment. Please note only the consumption of data packages via the LCS PDP tool is optional. You still have to create PDP and upload it to your Asset library. 
 
 The Consume flow lets you review a business process and apply the required configuration and data for implementing the business process to your Finance and Operations environment. To consume PDPs, you must have the following items:
 
