@@ -88,8 +88,7 @@ To set up requirements for SPED ECD fiscal text files, follow these steps:
     
 
     > [!NOTE]
-    > The steps 9, 10 and 11 are not available when Version 3.0 is selected. This information has been changed and included in the configuration of fiscal organization. See <A href="bra-set-up-a-fiscal-organization.md">(BRA) Set up a fiscal organization</A> for more information.
-
+    > The steps 9, 10 and 11 are not available when Version 3.0 is selected. This information has been changed and included in the configuration of fiscal organization. 
 
 ## Generate and validate the SPED ECD statement 
 
@@ -170,5 +169,5 @@ To generate and validate the text file for the SPED ECD statement, follow these 
 
 ## See also
 
-[Generate the Sintegra tax statement](latam-bra-set-up-parameters-for-tax-statements.md)
+[Generate the Sintegra tax statement](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/bra-parameters-tax/articles/financials/localizations/latam-bra-set-up-parameters-for-tax-statements.md)
 
