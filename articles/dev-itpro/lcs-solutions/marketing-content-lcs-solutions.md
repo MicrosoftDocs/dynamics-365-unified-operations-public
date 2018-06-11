@@ -34,7 +34,7 @@ ms.author: omarc
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how to upload the marketing content of your Dynamics 365 for Finance and Operations solution package to the Cloud Partner Portal, and how to stage and publish your solution. Access to the Portal will be granted after you have been formally onboarded and registered as a publisher by the AppSource Team for Dynamics 365 for Finance and Operations. 
+This topic explains how to upload the marketing content of your Dynamics 365 for Finance and Operations solution package to the Cloud Partner Portal, and how to stage and publish your solution. Access to the Portal will be granted after you have been formally onboarded and registered as a publisher by the AppSource Team for Dynamics 365 for Finance and Operations. To start your onboarding, see [Tell Us about Your Company](https://appsource.microsoft.com/en-us/partners/signup).
 
 Before you can publish the marketing content for your Dynamics 365 for Finance and Operations solution package to the Cloud Partner Portal, you must set up a Developer Center account with Microsoft. After you've set up an account, you can upload your marketing content and then manage the content through the lifecycle of application. For information about how to set up a Developer Center account, see [Create a Microsoft Developer account](https://azure.microsoft.com/en-us/documentation/articles/marketplace-publishing-accounts-creation-registration/).
 
