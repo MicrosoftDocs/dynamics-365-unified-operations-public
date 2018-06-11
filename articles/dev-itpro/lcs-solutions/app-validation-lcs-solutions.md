@@ -2,7 +2,7 @@
 # required metadata
 
 title: Validate an application in Dynamics 365 for Finance and Operations
-description: This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully deployed in a Dynamics 365 for Finance and Operations environment. 
+description: This topic provides information about requirements used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a Dynamics 365 for Finance and Operations environment. 
 author: kfend
 manager: AnnBe
 ms.date: 04/13/2018
@@ -34,13 +34,13 @@ ms.author: omarc
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully deployed in a Dynamics 365 for Finance and Operations environment. 
+This topic provides information about requirements used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a Dynamics 365 for Finance and Operations environment. 
 
 Microsoft requires specific reviews in order to validate the following requirements:
 
 -   A partner's custom code meets Microsoft guidelines.
--   A Microsoft Dynamics Lifecycle Services (LCS) solution package can be successfully deployed.
--   Transactions can be completed.
+-   A Microsoft Dynamics Lifecycle Services (LCS) solution package can be successfully bundled and delivered.
+-   Core ISV business scenarios can be transacted.
 
 Currently, partners must demonstrate that these requirements have been met by doing test deployments and then sharing the results with Microsoft. No code will be deployed on a customer environment that Microsoft hasn't validated. Partners must complete the following curation artifacts and tests:
 
@@ -63,10 +63,10 @@ The following table describes the steps that must be completed before the valida
 |-------|------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1     | 1    | Validate code                          | Run all customer model files by using the CAR tool, and then generate the report.                                                                               | Successfully create a CAR without any localization, accessibility, performance, or security issues.                                                                                                                                                                                                                                     |
 | 1     | 2    | Verify user experience (UX) guidelines | Follow UX guidelines to implement the workspace correctly.                                                                                                      | Reference best practice information in the Migrate and Create methodology section of LCS.                                                                                                                                                                                                                                               |
-| 2     | 3    | Create a project                       | Create a project in LCS.                                                                                                           | Successfully package an LCS project. Correctly deploy package artifacts, such as the BPM.                                                                                                                                                                                                                        |
+| 2     | 3    | Validate solution package in LCS                      | Create solution package in LCS with all the required artifacts.                                                                                                            | Solution package with all required artifacts has been published in LCS, and solution GUID created.                                                                                                                                                                                                                        |
 | 2     | 4    | Deploy an environment                  | Deploy a standard Microsoft Dynamics 365 for Finance and Operations environment that has partner code based on the package contents (Code, Binaries, and Config).   | Successfully deploy at least one Finance and Operations environment without any errors. The environment configuration (including components and configuration) is the same as the reference environment of the partner. A user can successfully sign in to this environment without any errors. |
-| 2     | 5    | Configure and deploy data              | Deploy partner-supplied data in the environment without any errors.                                                                                              | In the specified legal entity, deploy the data supplied to the environment without any errors. Create new data in the selected master data, and then push the data to the Finance and Operations environment without any errors.               |
-| 2     | 6    | Do a sanity check                      | After the data have been loaded into the environment, users should be able to sign in and complete typical transactions (as defined in the scope of the solution). | Users can sign in to the data-loaded environment without any errors. Transactions can be completed, as defined in the package scope, without any errors.                                                                                                                                                                                |
+| 2     | 5    | Configure and deploy data              | Deploy partner-supplied data in the environment without any errors.                                                                                              | Demonstrate that partner-supplied master and reference data were successfully pushed into Finance & Operations environment without errors.               |
+| 2     | 6    | Do a sanity check                      | After data have been loaded into the environment, users should be able to complete business transactions (as defined in the scope of the solution). | Users can sign in to the data-loaded environment without  errors. Business transactions can be completed, as defined in the package scope, without errors.                                                                                                                                                                                |
 
 ### Detailed curation requirements
 
@@ -87,7 +87,7 @@ The following table provides more information about each curation requirement.
 
 
 ## Update and maintenance requirements
-If you have a curated solution that is published on AppSource, you must keep the solution up to date. After each release in the Spring and Fall, you will have six weeks to upgrade your code. You must update and test the following artifacts:
+If you have a curated solution that is published on AppSource, you must keep the solution up to date. After each major Spring and Fall release, you will have eight weeks to upgrade your code. You must update and test the following artifacts:
 
 -   CAR
 -   Models (code and tests)
@@ -100,7 +100,7 @@ If you have a curated solution that is published on AppSource, you must keep the
 
 | Phase | Number | Activity                                            | Process steps                                                                | Success criteria                                                                                                                                                                                                                                                                                     |
 |-------|--------|-----------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1     | 1      | Validate Finance and Operations customer code. | Run all customer model files by using the CAR tool, and generate the report. | Successfully create a CAR without any localization, accessibility, performance, or security issues. All major issues that the CAR highlights should be addressed after you have upgraded to the latest major release. The CAR must be submitted to Microsoft within six weeks after each release for Spring and Fall. |
+| 1     | 1      | Validate Finance and Operations customer code. | Run all customer model files by using the CAR tool, and generate the report. | Successfully create a CAR without any localization, accessibility, performance, or security issues. All major issues that the CAR highlights should be addressed after you have upgraded to the latest major release. The CAR must be submitted to Microsoft within eights weeks after each major release for Spring and Fall. |
 
 See also
 --------
