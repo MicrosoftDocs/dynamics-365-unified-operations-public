@@ -44,7 +44,7 @@ This topic explains how to package customizations for extensions of the followin
 - Hardware station
 - Channel database scripts
 - Payment connector
-- Retail store scale unit (RSSU)
+- Retail store scale unit
 - Hybrid app (IOS and Android POS app)
 
 ## Retail deployable package
