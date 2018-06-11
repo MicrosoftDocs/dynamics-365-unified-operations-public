@@ -86,6 +86,8 @@
         href: get-started/whats-new-changed-7-0-february-2016.md
       - name: Updated task guides
         items:
+        - name: December 2017 task guides
+          href: get-started/get-started/new-task-guides-dec-2017.md
         - name: November 2016 task guides
           href: get-started/new-task-guides-november-2016.md
         - name: August 2016 task guides
@@ -149,6 +151,8 @@
   - name: Understand the implementation lifecycle
     href: imp-lifecycle/implementation-lifecycle.md
     items:
+    - name: Finance and Operations architecture
+      href: imp-lifecycle/architecture-overview.md    
     - name: Microsoft FastTrack for Dynamics 365
       href: get-started/fasttrack-dynamics-365-overview.md
     - name: Onboarding
@@ -159,6 +163,16 @@
       href: imp-lifecycle/go-live-faq.md
     - name: Submit a service request
       href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
+    - name: Subscriptions, LCS projects, and Azure Active Directory tenants FAQ
+      href: get-started/subscription-overview.md      
+    - name: Move environments between data centers
+      href: get-started/move-environments-data-center.md      
+    - name: Move licenses between agreement types
+      href: get-started/move-licenses-between-agreement-types.md 
+    - name: Move an LCS Implementation project to another Azure Active Directory tenant
+      href: get-started/move-lcs-implementation-project-tenant.md 
+    - name: Implement multiple LCS projects and production environments on the same Azure Active Directory tenant
+      href: get-started/implement-multiple-projects-aad-tenant.md
   - name: Compliance
     items:
     - name: Audit policy rules
@@ -385,6 +399,8 @@
         href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/fin-and-ops/toc.json
       - name: Security and data entities
         href: ../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json
+      - name: Use third-party service testing utilities
+        href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json
     - name: Bring your own database
       href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
     - name: Data task automation
@@ -450,7 +466,9 @@
         - name: Consolidation and elimination overview
           href: ../financials/budgeting/consolidation-elimination-overview.md
         - name: Fiscal calendars, fiscal years, and periods
-          href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+          href: ../financials/general-ledger/configure-account-structures.md
+        - name: Configure account structures
+          href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md        
       - name: Journals and ledgers
         items:
         - name: General journal processing
@@ -1639,6 +1657,8 @@
           href: ../financials/localizations/emea-amount-printing-forms.md
         - name: VAT statement
           href: ../financials/localizations/emea-cze-vat-statement-details.md
+        - name: Year-end close
+          href: ../financials/localizations/emea-cze-hun-year-end.md
       - name: Denmark
         items:
         - name: Assign a payment slip format to a customer account
@@ -1758,6 +1778,8 @@
           href: ../financials/localizations/emea-hun-fixed-asset-to-inventory.md
         - name: Tax reimbursement documents
           href: ../financials/localizations/emea-hun-tax-reimbursement-docs.md
+        - name: Year-end close
+          href: ../financials/localizations/emea-cze-hun-year-end.md
       - name: Iceland
         items:
         - name: Create a vendor account and attach the invoice declaration category
@@ -1850,6 +1872,8 @@
           href: ../financials/localizations/emea-pol-sales-tax-reports.md
         - name: Standard audit file
           href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
+        - name: Tax interest and free-hand interest
+          href: ../financials/localizations/emea-pol-interest-calculation.md
         - name: Turnover balances statement
           href: ../financials/localizations/emea-pol-turnover-balances-statement.md
       - name: Spain
@@ -2529,6 +2553,12 @@
           href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
         - name: Generate documents with application data
           href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
+      - name: Generate reports by adding content as raw XML
+        href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
+      - name: Trace generated report results and compare them with baseline values
+        href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
+      - name: Cross-company data sources in Electronic reporting
+        href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
       - name: Embed images and shapes in business documents that are generated by using the Electronic reporting tool
         href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
       - name: Manage the configuration lifecycle
@@ -2547,6 +2577,10 @@
         items:
         - name: Create required configurations to import data from an external file for electronic reporting
           href: ../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json
+        - name: Configure data import from SharePoint
+          href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
+      - name: Parse incoming documents in Microsoft Excel
+        href: ../dev-itpro/analytics/parse-incoming-documents-excel.md?toc=/fin-and-ops/toc.json
       - name: Parse incoming documents to update application data
         href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
       - name: Parse incoming documents in CSV format
