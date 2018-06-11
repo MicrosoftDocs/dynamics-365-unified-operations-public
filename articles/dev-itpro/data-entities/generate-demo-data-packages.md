@@ -120,7 +120,7 @@ Follow these steps to load the packages.
 
 The following packages can be loaded. When you import any package except the System and Shared package, you must be in the legal entity that is listed in the package name. The System and Shared package can be loaded from any legal entity. However, it's typically loaded from the default company, DAT.
 
-Commerical Data
+Commercial Data
 
 | Description | Notes |
 |-------------|-------|
