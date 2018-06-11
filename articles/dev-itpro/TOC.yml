@@ -867,6 +867,8 @@
       href: gdpr/respond-dsr-request-talent.md
     - name: Respond to a request for personal data using Microsoft Dynamics AX 2012
       href: gdpr/gdpr-ax2012.md
+    - name: GDPR data requests for LCS
+      href: gdpr/gdpr-lcs.md
   - name: Data validation workspace
     href: user-interface/data-validation-workspace.md
 - name: Continuous delivery
@@ -968,6 +970,8 @@
       href: deployment/arm-onboarding.md
     - name: Azure ExpressRoute and Dynamics 365 for Finance and Operations
       href: deployment/expressroute.md
+    - name: Finance and Operations architecture
+      href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
   - name: On-premises deployment
     href: deployment/on-premises-deployment-landing-page.md
     items:
