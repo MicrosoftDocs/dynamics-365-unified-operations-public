@@ -2585,6 +2585,8 @@
         href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
       - name: Parse incoming documents in CSV format
         href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
+      - name: Split generated files based on file size and content quantity
+        href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
         items:
         - name: Extend Electronic reporting functions
           href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
@@ -2835,6 +2837,8 @@
       href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/fin-and-ops/toc.json
     - name: Configure and send email
       href: organization-administration/configure-email.md
+    - name: Develop email experiences
+      href: ../dev-itpro/dev-tools/sysmailer-develop.md
     - name: Troubleshoot the Office integration
       href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/fin-and-ops/toc.json
   - name: Procurement and sourcing
