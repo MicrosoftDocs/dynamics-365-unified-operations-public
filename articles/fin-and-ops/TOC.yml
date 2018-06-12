@@ -87,7 +87,7 @@
       - name: Updated task guides
         items:
         - name: December 2017 task guides
-          href: get-started/get-started/new-task-guides-dec-2017.md
+          href: get-started/new-task-guides-dec-2017.md
         - name: November 2016 task guides
           href: get-started/new-task-guides-november-2016.md
         - name: August 2016 task guides
