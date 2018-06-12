@@ -5,7 +5,7 @@ title: Configuration steps for Retail developers working on cloud-hosted develop
 description: This topic demonstrates the configuration steps for Retail developers working on cloud-hosted development machines.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 01/16/2018
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -31,12 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 # Configuration steps for Retail developers working on cloud-hosted development environments with no administrator access
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 As of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Platform update 12, customers will no longer have access to virtual machine (VM) administrator accounts on development or build environments that are running in Microsoft subscriptions. This restriction only applies to new deployments of Platform update 12 (or newer) environments. Environments that were deployed before this update, and  have been updated to Platform update 12, will still have administrator access.
 
-You can use a remote desktop (RDP) to access these restricted environments using the non-admin user provided on the Lifecycle Services (LCS) environment page. This blog post contains more information about how to access these VMs: 
-https://blogs.msdn.microsoft.com/lcs/2017/10/31/restricted-admin-access-with-platform-12-updates/
+You can use a remote desktop (RDP) to access these restricted environments using the non-admin user provided on the Lifecycle Services (LCS) environment page. For more information about environments that don't allow administrator access, see [Development and build VMs that don't allow administrator access FAQ](../../dev-itpro/sysadmin/VMs-no-admin-access.md).
 
 Retail developers do not have administrative access to cloud-hosted development virtual machines. Modern POS (MPOS) development is possible if you use Cloud POS. Before starting development on any Retail application, configure Cloud POS as follows:
 

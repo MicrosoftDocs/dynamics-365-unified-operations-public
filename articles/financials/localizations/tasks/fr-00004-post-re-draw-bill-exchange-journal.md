@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Post re-draw bill of exchange journal (France)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through posting a re-draw bill of exchange.
 

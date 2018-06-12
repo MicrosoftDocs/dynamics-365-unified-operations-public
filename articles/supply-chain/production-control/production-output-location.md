@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Production output location
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the hierarchy that is used to identify the production output location.
 

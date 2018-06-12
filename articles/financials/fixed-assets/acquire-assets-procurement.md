@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Acquire assets through procurement
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to set up the integration between Fixed assets and Accounts payable to automatically create fixed assets from purchase orders or vendor invoices, or automatically post acquisition and acquisition adjustment transactions for fixed assets.
 
- The following methods are available for integrating Fixed assets and Accounts payable, and you must use the same method for all fixed assets:
+ The following methods are available for integrating Fixed assets and Accounts payable, and you must use the same method for all fixed assets:
 -   You manually create a fixed asset before you add the fixed asset number to the line on the purchase order or vendor invoice. An acquisition transaction automatically is posted for the asset when you post the vendor invoice. This is the default method.
 -   You manually create a fixed asset before you add the fixed asset number to the line on the purchase order or vendor invoice. No acquisition transaction is posted for the asset when you post the vendor invoice.
 -   A fixed asset automatically is created when you post a product receipt or vendor invoice that has the Create a new fixed asset check box selected. An acquisition transaction automatically is posted for the asset when you post the vendor invoice.
@@ -50,7 +49,7 @@ Whether you manually create fixed assets or use a more flexible approach, you mu
 This topic discusses the details of each method.
 
 ## Methods for manually creating fixed assets
-When you post a vendor invoice that has a fixed asset number entered in the lines, if the Allow asset acquisition from Purchasing option is selected in the Fixed assets parameters page, the acquisition is posted automatically, and the status of the asset changes to Open. 
+When you post a vendor invoice that has a fixed asset number entered in the lines, if the Allow asset acquisition from Purchasing option is selected in the Fixed assets parameters page, the acquisition is posted automatically, and the status of the asset changes to Open. 
 
 If an acquisition cannot be posted, you can either manually enter an acquisition transaction in Fixed assets, or use an acquisition proposal in the Fixed assets journal to create multiple acquisition transactions at the same time.
 

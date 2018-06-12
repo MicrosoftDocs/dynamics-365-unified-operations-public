@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Propose special depreciation (Japan)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 In Japan, a special depreciation is permitted under certain conditions. For Reserve method, this is a two step task: post reserve, and then post reserve allocation. For Direct-off method, only one step is needed, which is the same procedure as post reserve. 
 

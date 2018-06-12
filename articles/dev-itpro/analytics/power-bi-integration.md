@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Power BI integration
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Power BI is a suite of business analytics tools that let you analyze data and share insights. By using Power BI tools, you can explore data and quickly create rich reports and dashboards. You and your colleagues can then use the reports interactively on many devices. Microsoft Dynamics 365 for Finance and Operations uses Power BI for data exploration.
 

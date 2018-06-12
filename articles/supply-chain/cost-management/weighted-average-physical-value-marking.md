@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Weighted average with physical value and marking
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Weighted average is an inventory model based on the weighted average principle, where issues from inventory are valued at the average value of the items that are received into inventory during the inventory closing period, plus any on-hand inventory from the previous period.
 
@@ -79,16 +79,16 @@ The following diagram illustrates this series of transactions with the effects o
 ![WeightedAverage DS without Include Physical Value](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Key to diagram**
--   Inventory transactions are represented by vertical arrows.
--   Receipts into inventory are represented by vertical arrows above the timeline.
--   Issues out of inventory are represented by vertical arrows below the timeline.
--   Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
--   An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
--   An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
--   Each new receipt or issue transaction is designated with a new label.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
--   Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
--   Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
+- Inventory transactions are represented by vertical arrows.
+- Receipts into inventory are represented by vertical arrows above the timeline.
+- Issues out of inventory are represented by vertical arrows below the timeline.
+- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
+- An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
+- An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
+- Each new receipt or issue transaction is designated with a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
+- Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
+- Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
 
 ## Weighted average summarized settlement without the Include physical value option
 Weighted average uses the settlement principle that all receipts within in a closing period are summarized into a transaction called Weighted average inventory closing. All the receipts for the period will be settled against the issue of the newly created inventory transfer transaction. All issues for the period will be settled against the receipt of the new inventory transfer transaction. If the on-hand inventory is positive after the inventory close, that on-hand inventory and value of the inventory are summarized on the new inventory transfer transaction (receipt). If the inventory on-hand is negative after the inventory close, the on-hand inventory and value of the inventory is the sum of individual issues that have not been fully settled. In the scenario below, several financially updated receipts and one issue have been posted. 
@@ -113,18 +113,18 @@ The following diagram illustrates this series of transactions with the effects o
 ![Weighted Average SS without Include Physical Value](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Key to diagram**
--   Inventory transactions are represented by vertical arrows.
--   Receipts into inventory are represented by vertical arrows above the timeline.
--   Issues out of inventory are represented by vertical arrows below the timeline.
--   Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
--   An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
--   An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
--   Each new receipt or issue transaction is designated with a new label.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
--   Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
--   Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
--   Red arrows illustrate the receipt transactions being settled to the issue transaction created by the system.
--   The green arrow represents the offsetting system-generated receipt transaction to which the originally posted issue transaction is settled
+- Inventory transactions are represented by vertical arrows.
+- Receipts into inventory are represented by vertical arrows above the timeline.
+- Issues out of inventory are represented by vertical arrows below the timeline.
+- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
+- An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
+- An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
+- Each new receipt or issue transaction is designated with a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
+- Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
+- Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
+- Red arrows illustrate the receipt transactions being settled to the issue transaction created by the system.
+- The green arrow represents the offsetting system-generated receipt transaction to which the originally posted issue transaction is settled
 
 ## Weighted average direct settlement with the Include physical value option
 The parameter Include physical value works differently with the weighted average inventory model than in earlier versions of the product. Select the Include physical value box for an item in the Item model group form. Then the system will use physically updated receipts when calculating the estimated cost price, or running average. Issues will be posted based on this estimated cost price during the period. During the inventory close, financially updated receipts only will be considered in the weighted average calculation. We recommend a monthly inventory close when you use the weighted average inventory model. In this weighted average direct settlement example, the item model group is marked to include physical value. 
@@ -142,16 +142,16 @@ The following diagram illustrates this series of transactions with the effects o
 ![Weighted average DS with Include Physical Value](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Key to diagram**
--   Inventory transactions are represented by vertical arrows.
--   Receipts into inventory are represented by vertical arrows above the timeline.
--   Issues out of inventory are represented by vertical arrows below the timeline.
--   Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
--   An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
--   An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
--   Each new receipt or issue transaction is designated with a new label.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
--   Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
--   Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
+- Inventory transactions are represented by vertical arrows.
+- Receipts into inventory are represented by vertical arrows above the timeline.
+- Issues out of inventory are represented by vertical arrows below the timeline.
+- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
+- An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
+- An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
+- Each new receipt or issue transaction is designated with a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
+- Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
+- Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
 
 ## Weighted average summarized settlement with the Include physical value option
 The Include physical value parameter works differently with weighted average than in earlier versions. Select the Include physical value box for an item in the Item model group page. Then the system will use physically updated receipts in the calculation of estimated cost price, or running average. Issues will be posted based on this estimated cost price during the period. During the inventory close financially updated receipts only will be considered in the weighted average calculation. We recommend a monthly inventory close when you use the weighted average inventory model. In this weighted average summarized settlement example, the inventory model is marked to include physical value. 
@@ -175,18 +175,18 @@ The following diagram illustrates this series of transactions with the effects o
 ![WeightedAverage SS with Include Physical Value](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Key to diagram**
--   Inventory transactions are represented by vertical arrows.
--   Receipts into inventory are represented by vertical arrows above the timeline.
--   Issues out of inventory are represented by vertical arrows below the timeline.
--   Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
--   An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
--   An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
--   Each new receipt or issue transaction is designated with a new label.
--   Each vertical arrow is labeled with a sequential identifier, such as 1a. The identifiers indicate the sequence of inventory transaction postings in the timeline.
--   Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
--   Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
--   Red arrows illustrate the receipt transactions being settled to the issue transaction created by the system.
--   The green arrow represents the offsetting system-generated receipt transaction to which the originally posted issue transaction is settled
+- Inventory transactions are represented by vertical arrows.
+- Receipts into inventory are represented by vertical arrows above the timeline.
+- Issues out of inventory are represented by vertical arrows below the timeline.
+- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
+- An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
+- An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
+- Each new receipt or issue transaction is designated with a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as 1a. The identifiers indicate the sequence of inventory transaction postings in the timeline.
+- Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
+- Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
+- Red arrows illustrate the receipt transactions being settled to the issue transaction created by the system.
+- The green arrow represents the offsetting system-generated receipt transaction to which the originally posted issue transaction is settled
 
 ## Weighted average with marking
 Marking is a process that lets you link, or mark, an issue transaction to a receipt transaction. Marking can occur either before or after a transaction is posted. You can use marking when you want to make sure of the exact cost of the inventory when the transaction is posted or when the inventory close is performed. 
@@ -223,16 +223,16 @@ The following diagram illustrates this series of transactions with the effects o
 ![Weighted Average with Marking](./media/weightedaveragewithmarking.gif) 
 
 **Key to diagram**
--   Inventory transactions are represented by vertical arrows.
--   Receipts into inventory are represented by vertical arrows above the timeline.
--   Issues out of inventory are represented by vertical arrows below the timeline.
--   Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
--   An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
--   An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
--   Each new receipt or issue transaction is designated with a new label.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
--   Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
--   Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
+- Inventory transactions are represented by vertical arrows.
+- Receipts into inventory are represented by vertical arrows above the timeline.
+- Issues out of inventory are represented by vertical arrows below the timeline.
+- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@"Unitprice".
+- An inventory transaction value enclosed in brackets indicates that the inventory transaction is physically posted into inventory.
+- An inventory transaction value without brackets indicates that the inventory transaction is financially posted into inventory.
+- Each new receipt or issue transaction is designated with a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
+- Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
+- Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
 
 
 

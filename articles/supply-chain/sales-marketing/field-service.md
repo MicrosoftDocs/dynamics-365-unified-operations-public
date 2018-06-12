@@ -5,7 +5,7 @@ title: Integration with Microsoft Dynamics 365 for Field Service
 description: This topic provides an overview of the Integration with Microsoft Dynamics 365 for Field Service. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/10/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,6 +47,10 @@ The first phase of the integration between Field Service and Finance and Operati
 - [Work orders in Field Service to sales orders in Finance and Operations](field-service-work-order.md)
 - [Invoices in Field Service to free text invoices in Finance and Operations](field-service-invoice.md)
 
+To see an example of how you can synchronize a work order between Field Service and Finance and Operations, watch the short YouTube video [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU).
+
+[![](https://img.youtube.com/vi/hAB4TDVMjxU/0.jpg)](https://www.youtube.com/watch?v=hAB4TDVMjxU)
+
 ## System requirements for Finance and Operations
 Field Service integration supports the following versions:
 
@@ -60,5 +64,5 @@ To use the Field Service integration solution, you must install the following co
 ### Microsoft Dynamics 365 for Field Service 9.0 or later
 
 - Dynamics 365 for Field Service version 1612 (9.0.1.733) (DB 9.0.1.733) online or a later version.
-- Prospect to cash solution for Dynamics 365, version 1.15.0.1 or a later version. The solution is available for download from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-- Field Service integration solution for Dynamics 365, version 1.0.0.0 or a later version. The solution is available for download from AppSource. **(PENDING RELEASE)**
+- Prospect to Cash (P2C) solution for Dynamics 365, version 1.15.0.1 or a later version. The solution is available for download from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+- Field Service integration solution for Dynamics 365, version 1.0.0.0 or a later version. The solution is available for download from [AppSource](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.p2cfieldserviceintegration).

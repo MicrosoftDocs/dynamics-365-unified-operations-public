@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up an external catalog for PunchOut eProcurement
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 By using the external catalog, you can ensure that the product and price information that you subsequently process in Dynamics 365 for Finance and Operations July 2017 is accurate and up to date. 
 The requisition can then be approved and converted to a purchase order and an order can be placed at the vendor.

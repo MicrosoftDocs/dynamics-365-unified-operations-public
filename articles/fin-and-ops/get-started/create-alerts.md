@@ -5,7 +5,7 @@ title: Create alerts
 description: This topic provides information about alerts and explains how to create an alert rule so that you're notified about events such as a date that arrives or a specific change that occurs.
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,9 +30,7 @@ ms.dyn365.ops.version: Platform update 15
 
 # Create alerts
 
-[!include[banner](../includes/banner.md)]
-
-[!include[banner](../includes/pre-release.md)] 
+[!include [banner](../includes/banner.md)]
 
 ## Getting started
 Before you set up an alert rule, decide when or in what situations you want to receive alerts. When you know which event you want to be notified about, in Microsoft Dynamics 365 for Finance and Operations find the page where the data that causes that event appears. The event can be a date that arrives or a specific change that occurs. Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears. After you have this information, you can create the alert rule.

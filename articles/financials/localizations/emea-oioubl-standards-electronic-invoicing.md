@@ -30,8 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Supported standards for electronic invoicing in Europe
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains the level of coverage that exists for electronic invoicing for Europe. 
 

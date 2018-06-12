@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Balance sheet financial reports
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
 
@@ -57,7 +56,7 @@ The balance sheet financial reports use the following building blocks.
 
 ### Row definition
 
-The row definitions for both balance sheet reports contain sections for each part of a traditional balance sheet. The side-by-side report includes a column break, so that liability and the owner’s equity appear next to assets. The Main Account Category dimension is used to build both row definitions. Therefore, anyone can generate the reports without having to make any modifications.
+The row definitions for both balance sheet reports contain sections for each part of a traditional balance sheet. The side-by-side report includes a column break, so that liability and the owner’s equity appear next to assets. The Main Account Category dimension is used to build both row definitions. Therefore, anyone can generate the reports without having to make any modifications.
 
 ### Column definition
 
@@ -67,7 +66,7 @@ The column definitions contain different types of columns to provide different l
     -   **DESC** – The description from the row definition
     -   **FD** – Year-to-date financial data for the current year
     -   **FD** – Year-to-date financial data for the last year
-    -   **CALC** – The variance from subtracting last year from this year
+    -   **CALC** – The variance from subtracting last year from this year
 
 <!-- -->
 
@@ -75,9 +74,9 @@ The column definitions contain different types of columns to provide different l
     -   **DESC** – The description from the row definition
     -   **FD** – Year-to-date financial data for the current year
 
- 
 
-See also
+
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-getting-started.md)

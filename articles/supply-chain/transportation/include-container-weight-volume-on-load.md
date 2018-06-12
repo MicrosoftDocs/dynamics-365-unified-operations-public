@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Include container weight and volume on load
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The functionality for including the container weight and volume on a load gives
 a clear representation of the total weight and volume of containers and items

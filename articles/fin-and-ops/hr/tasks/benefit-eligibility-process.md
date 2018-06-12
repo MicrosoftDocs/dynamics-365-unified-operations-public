@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Benefit eligibility process
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how the benefit eligibility process works. When the process is complete you can view the results. The demo data company used to create this procedure is USMF.
 

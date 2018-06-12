@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure and filter workspaces
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides an overview about how to configure and filter workspaces.
 
@@ -42,7 +41,7 @@ Configuring a workspace
 
 You can change the appearance and behavior of some workspaces by updating settings that apply to the whole workspace. When a workspace can be configured, the Action Pane includes a button that instructs you to click it to make configuration changes. For example, in the following illustration, the button is named **Configure my workspace**. 
 
-[![configure-and-filter-workspaces](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)   
+[![configure-and-filter-workspaces](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)   
 
 When you click the button, a dialog appears, where you can modify the predefined settings for the workspace. The specific settings that you see in this dialog vary by workspace, and depend on the specific controls and business data that are available in the workspace. 
 

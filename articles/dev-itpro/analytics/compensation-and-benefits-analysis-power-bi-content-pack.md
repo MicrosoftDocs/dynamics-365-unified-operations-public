@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Compensation and Benefits Power BI content
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the Finance and Operations - Compensation and Benefits Power BI content. 
 

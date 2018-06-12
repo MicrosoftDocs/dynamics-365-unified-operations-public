@@ -26,7 +26,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Substitution/adjustment tax invoice for Thailand
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can track how many times copies of tax invoices for customers are printed. Whenever a copy of a tax invoice must be printed, the reason for the reprinted invoice must be specified. The reprinted invoice is a substitution for the original invoice. A special comment is printed on the copy of the tax invoice copy. This comment includes the reason for the substitution and the number of copies that have been printed.
 

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ math run-time functions
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the math run-time functions.
 
@@ -243,7 +242,7 @@ The following code example displays **0.76**.
     }
 
 ## cosh
-Retrieves the hyperbolic cosine of a real number. **Note:** Argument values that are outside the -250 to 250 range cause the following run-time error: "Argument for trigonometric function out of range."
+Retrieves the hyperbolic cosine of a real number. **Note:** Argument values that are outside the -250 to 250 range cause the following run-time error: "Argument for trigonometric function out of range."
 
 ### Syntax
 
@@ -323,7 +322,7 @@ The natural antilogarithm of the specified real number.
 
 ### Remarks
 
-The calculated natural antilogarithm is the natural logarithm e raised to the power that is indicated by the *arg* parameter.
+The calculated natural antilogarithm is the natural logarithm e raised to the power that is indicated by the *arg* parameter.
 
 ### Example
 

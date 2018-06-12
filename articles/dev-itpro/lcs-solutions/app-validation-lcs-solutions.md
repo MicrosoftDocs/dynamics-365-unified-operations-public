@@ -31,8 +31,7 @@ ms.author: omarc
 
 # Validate an application for Microsoft Dynamics 365 for Finance and Operations
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a Microsoft Dynamics 365 for Finance and Operations environment.
 
@@ -42,7 +41,7 @@ Microsoft requires specific reviews in order to validate the following requireme
 -   A Microsoft Dynamics Lifecycle Services (LCS) solution package can be successfully bundled and delivered.
 -   Core independent software vendor (ISV) business scenarios can be transacted.
 
-Currently, partners must demonstrate that these requirements have been met by doing test deployments and then sharing the results with Microsoft. No code will be deployed on a customer environment that Microsoft hasn't been validated. Partners must complete the following curation artifacts and tests:
+Currently, partners must demonstrate that these requirements have been met by doing test deployments and then sharing the results with Microsoft. No code will be deployed on a customer environment that Microsoft hasn't validated. Partners must complete the following curation artifacts and tests:
 
 -   Code analysis report (CAR)
 -   Business process modeler (BPM)/test scripts
@@ -101,8 +100,13 @@ If you have a curated solution that is published on AppSource, you must keep the
 | Phase | Number | Activity                                       | Process steps                                                                | Success criteria                                                                                                                                                                                                                                                                                     |
 |-------|--------|------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1     | 1      | Validate Finance and Operations customer code. | Run all customer model files by using the CAR tool, and generate the report. | Successfully create a CAR without any localization, accessibility, performance, or security issues. All major issues that the CAR highlights should be addressed after you've upgraded to the latest major release. The CAR must be submitted to Microsoft within eight weeks after each major Spring and Fall release. |
+=======
+| Phase | Number | Activity                                            | Process steps                                                                | Success criteria                                                                                                                                                                                                                                                                                     |
+|-------|--------|-----------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1     | 1      | Validate Finance and Operations customer code. | Run all customer model files by using the CAR tool, and generate the report. | Successfully create a CAR without any localization, accessibility, performance, or security issues. All major issues that the CAR highlights should be addressed after you upgrade to the latest major release. The CAR must be submitted to Microsoft six weeks after the fall and spring releases. |
 
-See also
+
+Additional resources
 --------
 
 [Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)

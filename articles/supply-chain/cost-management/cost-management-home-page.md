@@ -5,7 +5,7 @@ title: Cost management home page
 description: Cost management lets you handle the valuation and accounting of raw materials, semi-finished goods, finished goods, and work in progress assets. 
 author: AndersGirke
 manager: AnnBe
-ms.date: 02/14/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace  
 # ROBOTS:
 audience: Application User
 # ms.devlang: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cost management home page
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 [Cost management (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) lets you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets. It is the process of defining, managing, and reporting [Inventory accounting](cost-object.md) and [Manufacturing accounting](bom-calculations.md).
 

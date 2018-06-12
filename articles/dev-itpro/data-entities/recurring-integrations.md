@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Recurring integrations
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support. Lots of effort and planning go into building third-party integrations between an enterprise line of business (LOB) system, such as Microsoft Dynamics 365 for Finance and Operations, and various source systems. Microsoft Dynamics AX 2012 enables these scenarios through Application Integration Framework (AIF). For Finance and Operations, we have tried to simplify this process for all parties who are involved, from integration solution builders to customer users.
 

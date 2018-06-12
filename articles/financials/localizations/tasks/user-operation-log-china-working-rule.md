@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # User operation log by China working rule
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to generate a user operation log. The database log must be set up before you can generate the user operation log.  
 

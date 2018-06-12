@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Tax reimbursement documents for Hungary
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Set up parameters for tax reimbursement documents
 

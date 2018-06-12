@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Export a letter of credit
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks through the process of the Export letter of credit.
 

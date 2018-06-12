@@ -29,7 +29,7 @@ ms.dyn365.ops.version: April 2018 update
 
 # Project timesheets on a mobile device
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 # Overview
 

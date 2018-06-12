@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Organizational training Power BI content
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the Finance and Operations - Organizational training Power BI content. 
 

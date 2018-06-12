@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Retail Server customer and consumer APIs
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
 
@@ -41,7 +40,7 @@ Overview
 --------
 
 -   Retail Server business data and operations are available to any connected device through the OData Web API, across both employee (point of sale) scenarios and customer (online store) scenarios.
--   The embedded commerce runtime (CRT) enables a unified omni-channel platform.
+-   The embedded commerce runtime (CRT) enables a unified omni-channel platform.
 -   The application programming interfaces (APIs) are stateless and can process requests from many channels.
 -   The APIs have a linear scale-out model (“brick” scale-out).
 -   You use a composition pattern for plug-and-play customizations.
@@ -196,7 +195,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 -   Task&lt;PagedResult&lt;Category&gt;&gt; CategoryManager.GetCategories(Int64 channelId, QueryResultSettings queryResultSettings)
 -   Task&lt;PagedResult&lt;Category&gt;&gt; CategoryManager.GetChildren(Int64 channelId, Int64 categoryId, QueryResultSettings queryResultSettings)
 
-#### StoreOperationsManager and OrgUnitManager APIs
+#### StoreOperationsManager and OrgUnitManager APIs
 
 -   Task&lt;PagedResult&lt;CardTypeInfo&gt;&gt; StoreOperationsManager.GetCardTypes(QueryResultSettings queryResultSettings)
 -   Task&lt;PagedResult&lt;String&gt;&gt; StoreOperationsManager.GetSupportedPaymentCardTypes(QueryResultSettings queryResultSettings)

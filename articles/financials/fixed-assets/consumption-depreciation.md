@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Consumption depreciation
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article gives an overview of the Consumption method of depreciation.
 
@@ -43,8 +42,8 @@ If you set up a depreciation profile for fixed assets and select **Consumption**
 1.  On the **Depreciation profiles** page, create the depreciation profile. For consumption calculations, the depreciation profile must have an ID and a name, and **Consumption** must be selected in the **Method** field.
 2.  On the **Consumption factors** page, set up consumption factors. Each consumption factor must have an ID and a name, and a consumption factor that is specified as either a quantity or a percentage.
 3.  On the **Consumption units** page, set up consumption units. Each consumption unit must have an ID and a name. Depreciation units are used to calculate consumption depreciation on the **Consumption depreciation** page. Examples of units are kilometer (km), kilogram (kg), and hour.
-4.  On the **Fixed assets** page, set up individual fixed assets. For each fixed asset, select value models and depreciation books that have depreciation profiles. You must set up value models or depreciation books for consumption depreciation if any of your fixed assets use depreciation profiles that are based on the Consumption method. This setup is done either on the **Depreciation** tab of the **Value models** page or on the **General** FastTab of the **Depreciation profile** page. You can use the same value model for multiple fixed assets. Depreciation profiles are part of the value model or depreciation book that you select for each fixed asset. You can't add or modify depreciation profiles directly on the **Fixed assets** page. You can modify depreciation profiles only on the **Depreciation books** page.
-5.  On the **Value models** page or the **Depreciation books** page, in the **Consumption depreciation** field group, enter information in the following fields:
+4.  On the **Fixed assets** page, set up individual fixed assets. For each fixed asset, select value models and depreciation books that have depreciation profiles. You must set up value models or depreciation books for consumption depreciation if any of your fixed assets use depreciation profiles that are based on the Consumption method. This setup is done either on the **Depreciation** tab of the **Value models** page or on the **General** FastTab of the **Depreciation profile** page. You can use the same value model for multiple fixed assets. Depreciation profiles are part of the value model or depreciation book that you select for each fixed asset. You can't add or modify depreciation profiles directly on the **Fixed assets** page. You can modify depreciation profiles only on the **Depreciation books** page.
+5.  On the **Value models** page or the **Depreciation books** page, in the **Consumption depreciation** field group, enter information in the following fields:
     -   Consumption factor
     -   Unit
     -   Unit depreciation

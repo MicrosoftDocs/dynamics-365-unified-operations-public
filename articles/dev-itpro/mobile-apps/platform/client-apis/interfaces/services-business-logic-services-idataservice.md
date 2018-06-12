@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # DataService Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Provides ability access data under the application workspace.
 

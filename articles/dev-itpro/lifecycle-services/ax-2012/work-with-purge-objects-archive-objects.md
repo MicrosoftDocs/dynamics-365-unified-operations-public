@@ -32,10 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Intelligent Data Management Framework purge and archive objects (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 Add/Edit rules
 --------------
@@ -257,7 +254,7 @@ This section provides a walkthrough to add a relation in a Purge Object.
 3.  In the **Add relations** dialog box, click **New relation**.
 4.  In the **Relation name** field, enter a valid name for the relation.
 5.  In the **Table relations** area, follow these steps to add the relation.
-    1.  From the **Field name** list, select **ValueRecId**.
+    1.  From the **Field name** list, select **ValueRecId**.
     2.  From the **Related table name** list, select **DocuValue**.
     3.  From the **Related field name** list, select **RecId**.
     4.  Click **Add**.
@@ -332,7 +329,7 @@ The following tables provide descriptions for the controls in the **Validate all
 | **Select an object type**             | From the list, select **Purge** to validate all purge templates and Purge Objects. Select **Archive** to validate all archive templates and Archive Objects.                                                                                                                                                                                                                                                                                                                                                                |
 | **Suffix name**                       | This field is only available when you select **Archive** from the **Select an object type** list. When validating objects, you overwrite existing purge templates and Purge Objects. However, you must use a suffix value to save the new versions of archive templates and Archive Objects. The suffix value is used to create a new name for the archive templates and Archive Objects. For example, if you enter 1 as the suffix name, the BankDeposit archive template is saved as BankDeposit\_1.                      |
 | **Remove invalid tables**             | Select this field to remove all tables that are contained in templates and objects that are not in the production database. Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any.                                                                                                                                                                                                                                                            |
-| **Remove tables with invalid fields** | The templates and objects may be using invalid fields in relationships and rules. A field that is not valid can be caused by your license, disabled security keys, disabled configuration keys, or incomplete post-installation tasks, such as the database synchronization. Select this field to remove all tables that contain fields that are not valid from templates and objects. Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any. |
+| **Remove tables with invalid fields** | The templates and objects may be using invalid fields in relationships and rules. A field that is not valid can be caused by your license, disabled security keys, disabled configuration keys, or incomplete post-installation tasks, such as the database synchronization. Select this field to remove all tables that contain fields that are not valid from templates and objects. Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any. |
 | **Remove tables with zero row**       | Select this field to remove all tables without rows from all templates and objects. Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any.                                                                                                                                                                                                                                                                                                    |
 
 

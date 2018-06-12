@@ -32,15 +32,14 @@ ms.dyn365.ops.version: Platform update 1
 
 # New or updated task guides (May 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article lists the new or updated Task guides that were released to the Microsoft (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX. No new Getting Started Library was released. 
 
-[]()Task guides in the (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX
+Task guides in the (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX
 ------------------------------------------------------------------------------------------------
 
-The (May 2016) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX May 2016 update and the Microsoft Dynamics AX February 2016 release. Localized versions of the Task guides that were released in the (February 2016) APQC Unified Library are available in this library. For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md). **Note:** An asterisk (**\***) next to the title of a Business process modeler (BPM) line indicates that the task guide for that business process was created for Dynamics AX May 2016 update and isn't supported in earlier versions of Microsoft Dynamics AX.
+The (May 2016) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX May 2016 update and the Microsoft Dynamics AX February 2016 release. Localized versions of the Task guides that were released in the (February 2016) APQC Unified Library are available in this library. For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md). <strong>Note:</strong> An asterisk (<strong>\</strong>*) next to the title of a Business process modeler (BPM) line indicates that the task guide for that business process was created for Dynamics AX May 2016 update and isn't supported in earlier versions of Microsoft Dynamics AX.
 
 ### Country/region functionality
 
@@ -68,15 +67,15 @@ The (May 2016) APQC Unified Library contains the Task guides that are intended t
 
 ### Electronic reporting
 
-| BPM line                                                                   | Country/region |
+|                                  BPM line                                  | Country/region |
 |----------------------------------------------------------------------------|----------------|
-| ER Configure destinations                                                  | Global         |
-| ER Design a configuration for generating reports in OPENXML format         | Global         |
-| ER Generate electronic documents for payments using a format configuration | Global         |
-| ER Import a configuration from Lifecycle Services                          | Global         |
-| **\***ER Select service provider                                           | Global         |
-| ER Upgrade your format by adopting of new base version of that format      | Global         |
-| ER Upload a configuration into Lifecycle Services                          | Global         |
+|                         ER Configure destinations                          |     Global     |
+|     ER Design a configuration for generating reports in OPENXML format     |     Global     |
+| ER Generate electronic documents for payments using a format configuration |     Global     |
+|             ER Import a configuration from Lifecycle Services              |     Global     |
+|               <strong>\</strong>*ER Select service provider                |     Global     |
+|   ER Upgrade your format by adopting of new base version of that format    |     Global     |
+|             ER Upload a configuration into Lifecycle Services              |     Global     |
 
 ### Human capital management
 
@@ -182,19 +181,17 @@ The (May 2016) APQC Unified Library contains the Task guides that are intended t
 
 ### Warehouse and transportation
 
-| BPM line                                                            | Country/region |
-|---------------------------------------------------------------------|----------------|
-| Configure wave processing                                           | Global         |
-| **\***Report as finished to a non-license plate controlled location | Global         |
-| Set up a min-max replenishment process                              | Global         |
-| Set up containerization                                             | Global         |
-| Set up manual packing                                               | Global         |
-| Set up transportation constraints for an item                       | Global         |
-| **\***Set up warehouse work policies                                | Global         |
+|                                     BPM line                                     | Country/region |
+|----------------------------------------------------------------------------------|----------------|
+|                            Configure wave processing                             |     Global     |
+| <strong>\</strong>*Report as finished to a non-license plate controlled location |     Global     |
+|                      Set up a min-max replenishment process                      |     Global     |
+|                             Set up containerization                              |     Global     |
+|                              Set up manual packing                               |     Global     |
+|                  Set up transportation constraints for an item                   |     Global     |
+|                <strong>\</strong>*Set up warehouse work policies                 |     Global     |
 
-
-
-See also
+Additional resources
 --------
 
 [New Task guides (February 2016)](new-task-guides-available-february-2016.md)

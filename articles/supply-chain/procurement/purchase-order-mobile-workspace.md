@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Purchase order approval mobile workspace
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This topic provides information about the **Purchase order approval** mobile workspace. This workspace lets you view purchase orders and respond to them through actions. For example, you can approve or reject a purchase order.
  

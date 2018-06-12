@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Plan freight transportation routes with multiple stops
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes the various elements that you use to plan transportation routes in Microsoft Dynamics 365 for Finance and Operations.
 

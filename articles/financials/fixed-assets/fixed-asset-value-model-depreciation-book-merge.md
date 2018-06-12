@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed asset value model and depreciation book merge
-description: In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books. In the Microsoft Dynamics 365 for Operations (1611) release, the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.
+description: In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books. In the Microsoft Dynamics 365 for Operations (1611) release, the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -32,10 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Fixed asset value model and depreciation book merge
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-
-In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books. In the Microsoft Dynamics 365 for Operations (1611) release, the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.
+In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books. In the Microsoft Dynamics 365 for Operations (1611) release, the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.
 
 The new book functionality is based on earlier value model functionality but also includes all functionality that was previously provided only in depreciation books. [![Book as a merging of value model and depreciation book functionality](./media/fixed-assets.png)](./media/fixed-assets.png) Because of this merge, you can now use a single set of pages, inquiries, and reports for all your fixed asset processes. The tables in this topic describe the earlier functionality for depreciation books and value models, together with the new functionality for books.
 
@@ -74,7 +73,7 @@ Inquiries and reports support all books. Reports that aren't included in the fol
 | Fixed asset mid-quarter applicability | Allowed                        | Not allowed              | Allowed                  |
 
 ## Upgrade
-The upgrade process will move your existing setup and all your existing transactions to the new book structure. Value models will remain as they currently are, as a book that posts to the general ledger. However, depreciation books will be moved to a book that has the **Post to general ledger** option set to **No**. Depreciation book journal names will be moved to a general ledger journal name that has the posting layer set to **None**.
+The upgrade process will move your existing setup and all your existing transactions to the new book structure. Value models will remain as they currently are, as a book that posts to the general ledger. However, depreciation books will be moved to a book that has the **Post to general ledger** option set to **No**. Depreciation book journal names will be moved to a general ledger journal name that has the posting layer set to **None**.
 
 
 

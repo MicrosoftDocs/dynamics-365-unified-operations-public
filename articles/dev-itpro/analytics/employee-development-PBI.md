@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Employee development Power BI content
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the **Employee development** Microsoft Power BI content.
 
@@ -49,6 +49,7 @@ The reports that are included in the **Employee development** Power BI content h
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
+
 | Entity                   | Contents                                                                                                   | Relationships with other entities |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | Calendar Offset          | Calendar offsets to slice reports                                                                          | Past Position Assignment, Position Trend, Employee Trend, Terminated Employee 

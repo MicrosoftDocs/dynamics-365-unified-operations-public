@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Inventory on-hand mobile workspace
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the **Inventory on-hand** mobile workspace. This workspace helps you gain insights into reserved and available inventory anytime and anywhere.
 

@@ -1,49 +1,49 @@
 # Testing the new code owners feature in GitHub. Please contact Margo if you have questions.
 
-/articles/dev-itpro/analytics	@sericks007 @kfend
-/articles/dev-itpro/database	@margoc
-/articles/dev-itpro/data-entities	@margoc
-/articles/dev-itpro/deployment	@kfend
-/articles/dev-itpro/dev-ref	@kfend
-/articles/dev-itpro/dev-tools	@kfend
-/articles/dev-itpro/extensibility	@kfend
-/articles/dev-itpro/financial @twheeloc
-/articles/dev-itpro/lcs-solutions	@kfend
-/articles/dev-itpro/lifecycle-services	@kfend
-/articles/dev-itpro/migration-upgrade	@margoc
-/articles/dev-itpro/mobile-apps	@kfend @sericks007
-/articles/dev-itpro/office-integration	@sericks007
-/articles/dev-itpro/perf-test	@margoc
-/articles/dev-itpro/sysadmin	@sericks007
-/articles/dev-itpro/user-interface	@kfend
-/articles/financials/accounts-payable	@twheeloc
-/articles/financials/accounts-receivable	@twheeloc
-/articles/financials/budgeting	@twheeloc
-/articles/financials/cash-bank-management	@twheeloc
-/articles/financials/cost-accounting	@yuyus
-/articles/financials/expense-management	@twheeloc
-/articles/financials/fixed-assets	@twheeloc
-/articles/financials/general-ledger	@twheeloc
+/articles/dev-itpro/analytics	@margoc @kfend
+/articles/dev-itpro/database	@margoc @kfend
+/articles/dev-itpro/data-entities	@margoc @kfend
+/articles/dev-itpro/deployment	@margoc @kfend
+/articles/dev-itpro/dev-ref	@margoc @kfend
+/articles/dev-itpro/dev-tools	@margoc @kfend
+/articles/dev-itpro/extensibility	@margoc @kfend
+/articles/dev-itpro/financial @shylaw
+/articles/dev-itpro/lcs-solutions	@margoc @kfend
+/articles/dev-itpro/lifecycle-services	@margoc @kfend
+/articles/dev-itpro/migration-upgrade	@margoc @kfend
+/articles/dev-itpro/mobile-apps	@margoc @kfend
+/articles/dev-itpro/office-integration	@margoc @kfend
+/articles/dev-itpro/perf-test	@margoc @kfend
+/articles/dev-itpro/sysadmin	@margoc @kfend
+/articles/dev-itpro/user-interface	@margoc @kfend
+/articles/financials/accounts-payable	@shylaw
+/articles/financials/accounts-receivable	@shylaw
+/articles/financials/budgeting	@shylaw
+/articles/financials/cash-bank-management	@shylaw
+/articles/financials/cost-accounting	@shylaw @josaw1
+/articles/financials/expense-management	@shylaw
+/articles/financials/fixed-assets	@shylaw
+/articles/financials/general-ledger	@shylaw
 /articles/financials/localizations	@shylaw
-/articles/financials/project-management	@twheeloc
-/articles/financials/public-sector	@twheeloc
-/articles/fin-and-ops/get-started	@sericks007
-/articles/fin-and-ops/hr	@rschloma
+/articles/financials/project-management	@josaw1
+/articles/financials/public-sector	@shylaw
+/articles/fin-and-ops/get-started	@margoc @kfend
+/articles/fin-and-ops/hr	@josaw1
 /articles/fin-and-ops/hr/localizations	@shylaw
-/articles/fin-and-ops/organization-administration	@sericks007
+/articles/fin-and-ops/organization-administration	@margoc @kfend
 /articles/retail	@josaw1
-/articles/retail/dev-itpro	@sericks007 @kfend
-/articles/retail/dev-itpro/retail-sdk	@kfend @sericks007
+/articles/retail/dev-itpro	@margoc @kfend
+/articles/retail/dev-itpro/retail-sdk	@margoc @kfend
 /articles/retail/get-started	@josaw1
 /articles/retail/localizations	@shylaw
-/articles/supply-chain/cost-management	@yuyus
-/articles/supply-chain/inventory	@yuyus
-/articles/supply-chain/master-planning	@yuyus
-/articles/supply-chain/pim	@yuyus
-/articles/supply-chain/procurement	@bibisp
-/articles/supply-chain/production-control	@yuyus
-/articles/supply-chain/sales-marketing	@yuyus @bibisp
-/articles/supply-chain/transportation	@bibisp
-/articles/supply-chain/warehousing	@bibisp
-/articles/talent	@rschloma
+/articles/supply-chain/cost-management	@shylaw @josaw1
+/articles/supply-chain/inventory	@shylaw @josaw1
+/articles/supply-chain/master-planning	@shylaw @josaw1
+/articles/supply-chain/pim	@shylaw @josaw1
+/articles/supply-chain/procurement	@shylaw @josaw1
+/articles/supply-chain/production-control	@shylaw @josaw1
+/articles/supply-chain/sales-marketing	@shylaw @josaw1
+/articles/supply-chain/transportation	@shylaw @josaw1
+/articles/supply-chain/warehousing	@shylaw @josaw1
+/articles/talent	@josaw1
 

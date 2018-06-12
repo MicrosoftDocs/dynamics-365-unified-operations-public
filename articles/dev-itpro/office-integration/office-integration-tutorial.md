@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Office integration tutorial
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 In this tutorial, you will use and build Office integration experiences that involve Excel, Word, Document Management, and email. 
 
@@ -43,11 +42,11 @@ Overview
 In this tutorial, you will use and build Microsoft Office integration experiences that involve Microsoft Excel, Microsoft Word, the Document Management subsystem, and email. You will see how Excel and Word use data entities as an entry point into the system, how Excel can become a core part of the user experience, and how Excel and Word can be used for ad-hoc lightweight reporting. You will also see how files can be stored and shared by using the Document Management and email capabilities.
 
 ## Prerequisites
-For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance. For more information, see [Access development instances](..\dev-tools\access-instances.md). If you're running Internet Explorer on the virtual machine (VM), you must enable font and file downloads at **Internet Options** &gt; **Security** &gt; **Custom Level**. Microsoft Visual Studio 2015 runs on the VM, and it must run as an administrator so that metadata and compilation files can be overwritten. To make sure that Visual Studio runs as an administrator, search for the program, and pin it to the taskbar. Then right-click the shortcut on the taskbar, right-click **Visual Studio 2015**, click **Properties** &gt; **Advanced**, and select the **Run as administrator** check box. Visual Studio will now run as an administrator via a single left click of the taskbar shortcut.
+For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance. For more information, see [Access development instances](../dev-tools/access-instances.md). If you're running Internet Explorer on the virtual machine (VM), you must enable font and file downloads at **Internet Options** &gt; **Security** &gt; **Custom Level**. Microsoft Visual Studio 2015 runs on the VM, and it must run as an administrator so that metadata and compilation files can be overwritten. To make sure that Visual Studio runs as an administrator, search for the program, and pin it to the taskbar. Then right-click the shortcut on the taskbar, right-click **Visual Studio 2015**, click **Properties** &gt; **Advanced**, and select the **Run as administrator** check box. Visual Studio will now run as an administrator via a single left click of the taskbar shortcut.
 
 ## Key concepts
 -   **Entities and OData** – You will use the Microsoft Dynamics Excel Data Connector App (Excel App) to create, read, update, and delete. The connector uses OData services that are created for any entity that is left in the default state of "public" (**DataEntity.Public**=**Yes**).
--   **Apps for Office** – The Excel App is built by using the Apps for Office framework (which is also known as the Office Web API). The Excel App is web-based, and therefore shares technology with the client and will run inside both on-premises Excel instances and Microsoft Excel Online (Microsoft Office 365). The app runs inside Excel in a task pane.
+-   **Apps for Office** – The Excel App is built by using the Apps for Office framework (which is also known as the Office Web API). The Excel App is web-based, and therefore shares technology with the client and will run inside both on-premises Excel instances and Microsoft Excel Online (Microsoft Office 365). The app runs inside Excel in a task pane.
 -   **Microsoft Office 2016** – The Excel and Word Apps use advances in the Apps for Office framework that were introduced in Office 2016. Therefore, Office 2016 is required in order to run the Excel and Word Apps.
 -   **Authentication** – The Excel and Word Apps run in an Internet Explorer window inside Excel and Word. Even if the user is running the client in an InPrivate Browsing session in Internet Explorer, or in a different browser, such as Chrome, Internet Explorer is still used to run the app inside Excel or Word. Authentication is facilitated by OAuth, and the user can select accounts and sign in within the app. Internet Explorer will first try to automatically sign the user in. Therefore, if you aren't signed in as the correct user, or if you have trouble signing in, you might have to force a sign-out from the app by using the sign-out link on the user menu in the lower-right corner of the app. After sign-out, right-click in the app, and try to sign in again.
 -   **Excel App** – In addition to facilitating refresh and publish data operations, the Excel App also provides source and field information, lookups, filtering, error messaging, and a design experience for adding or removing fields, table columns, or labels from entity data sources.
@@ -111,23 +110,23 @@ Generated Open in Excel options are automatically added to forms when the system
 
 The Excel App has a design experience that lets users add and edit bindings to entity data sources and labels. To add and remove fields from an existing binding, you use the edit experience that is outlined in the following steps.
 
-1.  Get a workbook that has an existing table data source:
-    1.  In Internet Explorer, navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
-    2.  Click **Open in Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers (unfiltered)**.
-    3.  Download and open the workbook that is generated. This workbook contains the Excel Data Connector App, a binding to the Fleet Management Customer entity, and a pointer to the server that the workbook was generated from.
-    4.  Click **Enable editing** to enable the Excel Data Connector App to load. Customer data is read from the OData service on the server and added to the table.
+1. Get a workbook that has an existing table data source:
+   1.  In Internet Explorer, navigate to **Fleet Management** &gt; **Customers** &gt; **Customer**.
+   2.  Click **Open in Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers (unfiltered)**.
+   3.  Download and open the workbook that is generated. This workbook contains the Excel Data Connector App, a binding to the Fleet Management Customer entity, and a pointer to the server that the workbook was generated from.
+   4.  Click **Enable editing** to enable the Excel Data Connector App to load. Customer data is read from the OData service on the server and added to the table.
 
-2.  Open the data source for editing:
-    1.  In Excel, in the Excel App, click **Design**. A list of table and field data sources appears.
-    2.  Click the **Edit** (pencil) button next to the existing table data source. The data source details are shown.
+2. Open the data source for editing:
+   1.  In Excel, in the Excel App, click **Design**. A list of table and field data sources appears.
+   2.  Click the **Edit** (pencil) button next to the existing table data source. The data source details are shown.
 
-3.  Remove fields. In the **Selected** list, double-click a field. Alternatively, click a field, and then click **Remove**. To select multiple fields, keep the Ctrl key held down while you click them. To select all fields, press Ctrl+A.
-4.  Add fields. In the **Available** list, double-click a field. Alternatively, click a field, and then click **Add**. To select multiple fields, keep the Ctrl key held down while you click them. To select all fields, press Ctrl+A.
-5.  Change the field order. In the **Selected** list, click a field, and then click **Up** or **Down**.
-6.  Change a field label. In the **Selected** list, click a field, and then click in the **Column label** field below the list. You can change the label to either a static string or a label identifier that will be translated to the active language (for example, **@SYS129977**).
-7.  Apply the changes that you made to data source fields:
-    1.  Click **Update** to return to the data source list.
-    2.  Click **Refresh** to make sure that any new fields are filled with data.
+3. Remove fields. In the **Selected** list, double-click a field. Alternatively, click a field, and then click **Remove**. To select multiple fields, keep the Ctrl key held down while you click them. To select all fields, press Ctrl+A.
+4. Add fields. In the **Available** list, double-click a field. Alternatively, click a field, and then click **Add**. To select multiple fields, keep the Ctrl key held down while you click them. To select all fields, press Ctrl+A.
+5. Change the field order. In the **Selected** list, click a field, and then click **Up** or **Down**.
+6. Change a field label. In the <strong>Selected</strong> list, click a field, and then click in the <strong>Column label</strong> field below the list. You can change the label to either a static string or a label identifier that will be translated to the active language (for example, <strong>@SYS129977</strong>).
+7. Apply the changes that you made to data source fields:
+   1.  Click **Update** to return to the data source list.
+   2.  Click **Refresh** to make sure that any new fields are filled with data.
 
 ### Change an automatically generated Open in Excel experience
 
@@ -165,7 +164,7 @@ Template options resemble the generated Open in Excel options. They are automati
 2.  Select the **FleetCustomer** entity.
 3.  Add all fields in the list of available fields to the list of selected fields.
 4.  Click **Create workbook**.
-5.  Open the workbook that is generated. This workbook contains the Excel Data Connector App, a binding to the **Fleet Management Customer** entity, and a pointer to the server that the workbook was generated from.
+5.  Open the workbook that is generated. This workbook contains the Excel Data Connector App, a binding to the **Fleet Management Customer** entity, and a pointer to the server that the workbook was generated from.
 6.  Click **Enable editing** to enable the Excel Data Connector App to load. Customer data is read from the OData service on the server and added to the table.
 7.  Insert a blank row above the table, and enter **Fleet Customers** as the title.
 8.  Rename the worksheet **FleetCustomers**.
@@ -297,7 +296,7 @@ You can create custom lookups to show data options when an enum or relationship 
                 result.items().value(3, "FR");
                 result.items().value(4, "GR");
                 result.items().value(5, "NZ");
-            
+
                 return result.serialize();
             }
         }
@@ -365,7 +364,7 @@ The Microsoft Dynamics App for Office can be run in Word to enable the creation 
         6.  In the app, in the **Available** list, select the **FirstName** field.
         7.  Click **Add label** to add a content control that references the "First name" label.
         8.  In the document, click to put focus into the document, click again to put focus at the end of the label, and then press the Right arrow key until the cursor is outside the content control (the control box will disappear).
-        9.  Add a separator, such as space+hyphen+space (" - ") or space+colon+space (" : ").
+        9.  Add a separator, such as space+hyphen+space (" - ") or space+colon+space (" : ").
         10. In the app, click **Add value** to add a content control that references the **FirstName** field.
         11. Repeat the process for the **LastName** field label and value.
         12. Continue to add fields as desired.
@@ -432,7 +431,7 @@ The Document Management subsystem can be used to attach files to records. Most n
 ## Email experiences
 ### Send mail via a local mail client
 
-Email workflows that are enabled via the SysEmail framework can generate email messages (.eml files) that contain attachments. You can then send these messages via Microsoft Outlook or another email client.
+Email workflows that are enabled via the SysEmail framework can generate email messages (.eml files) that contain attachments. You can then send these messages via Microsoft Outlook or another email client.
 
 1.  In Internet Explorer, navigate to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
 2.  Select **US-008 Sparrow Retail**.
@@ -465,7 +464,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 13. To receive the test message, change the To address to your email address.
 14. Enter a subject and body for the message.
 15. Click **Send**. The message should be delivered in one to five minutes. Note that the message will appear to be sent from the email account that is set on the **Email parameters** page. If that email account is given "Send As" (or "Send email from this mailbox") permissions for the From address that is used in the **Send email** dialog box, messages will appear to come from that address.
-    -   You can configure "Send As" permissions in the Office 365 admin center (portal.office.com/Admin), at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
+    -   You can configure "Send As" permissions in the Office 365 admin center (portal.office.com/Admin), at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
     -   Before users can send email messages, "Send As" permissions for each user email account in the client must be given to the email account that is set on the **Email parameters** page. For more information, see [How to set up a multifunction device or application to send email using Office 365](https://technet.microsoft.com/en-us/library/dn554323(v=exchg.150).aspx).
 
 16. Email that is sent directly from the server, without user interaction, is sent via a batch process and requires that the **Email distributor batch** process be started. Follow these steps to start the process:
@@ -474,7 +473,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 
 
 
-See also
+Additional resources
 --------
 
 [Office integration](office-integration.md)

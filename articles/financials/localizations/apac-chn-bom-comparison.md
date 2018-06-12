@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Bill of materials comparison for China
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about BOM comparison for China.
 
@@ -56,18 +55,18 @@ The following table shows how a BOM comparison is done. In this example, product
 
 | Product | BOM     | Site   | Components | Quantity | Unit | Cost      |
 |---------|---------|--------|------------|----------|------|-----------|
-| FG001   | FG001V1 |        | MT001      | 2        | pcs  | USD 20.00 |
-|         |         |        | MT002      | 3        | cm   | USD 10.00 |
-|         |         |        | MT005      | 3        | kg   | USD 32.00 |
-| FG002   | FG002V1 |        | MT001      | 1        | pcs  | USD 50.00 |
-|         |         |        | MT003      | 1        | pcs  | USD 12.00 |
-|         |         |        | MT005      | 1        | kg   | USD 10.00 |
-|         | FG002V2 | Site 1 | MT002      | 3        | cm   | USD 30.00 |
-|         |         |        | MT004      | 2        | box  | USD 32.00 |
-|         |         |        | MT005      | 1        | kg   | USD 10.00 |
-| FG003   | FG003V1 |        | MT003      | 4        | pcs  | USD 30.00 |
-|         |         |        | MT004      | 2        | box  | USD 23.00 |
-|         |         |        | MT005      | 3        | kg   | USD 18.00 |
+| FG001   | FG001V1 |        | MT001      | 2        | pcs  | USD 20.00 |
+|         |         |        | MT002      | 3        | cm   | USD 10.00 |
+|         |         |        | MT005      | 3        | kg   | USD 32.00 |
+| FG002   | FG002V1 |        | MT001      | 1        | pcs  | USD 50.00 |
+|         |         |        | MT003      | 1        | pcs  | USD 12.00 |
+|         |         |        | MT005      | 1        | kg   | USD 10.00 |
+|         | FG002V2 | Site 1 | MT002      | 3        | cm   | USD 30.00 |
+|         |         |        | MT004      | 2        | box  | USD 32.00 |
+|         |         |        | MT005      | 1        | kg   | USD 10.00 |
+| FG003   | FG003V1 |        | MT003      | 4        | pcs  | USD 30.00 |
+|         |         |        | MT004      | 2        | box  | USD 23.00 |
+|         |         |        | MT005      | 3        | kg   | USD 18.00 |
 
 
 

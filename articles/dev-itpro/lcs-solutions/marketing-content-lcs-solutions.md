@@ -31,8 +31,7 @@ ms.author: omarc
 
 # Stage and publish a Microsoft Dynamics 365 for Finance and Operations solution
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to upload the marketing content of your Microsoft Dynamics 365 for Finance and Operations solution package to the Microsoft Cloud Partner Portal. It also explains how to stage and publish your solution. Access to the portal is granted after you've been formally onboarded and registered as a publisher by the Microsoft AppSource Team for Finance and Operations. To start the onboarding process, see [Tell us about your company](https://appsource.microsoft.com/en-us/partners/signup).
 
@@ -50,7 +49,7 @@ To access the instructions to create and publish your new offer from the Cloud P
 
 [![How to publish](./media/CPP_HowtoPublish.png)](./media/CPP_HowtoPublish.png)
 
-See also
+Additional resources
 --------
 
 [Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)

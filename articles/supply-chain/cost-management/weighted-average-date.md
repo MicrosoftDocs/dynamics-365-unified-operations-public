@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Weighted average date
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Weighted average date is an inventory model that is based on the weighted average principle. For the weighted average principle, issues from inventory are valued at the average value of the items that are received into inventory for each day in the inventory closing period. 
 

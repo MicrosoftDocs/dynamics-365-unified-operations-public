@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # V Classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter V.
 
@@ -1075,6 +1074,7 @@ The VSProjectTypeNode class represents project types in the Visual Studio Projec
 
 | Method | Description |
 |--------|-------------|
+|        |             |
 
 ## Class VSS
     class VSS extends Object

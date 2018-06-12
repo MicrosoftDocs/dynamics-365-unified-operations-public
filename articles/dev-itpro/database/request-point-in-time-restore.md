@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Restore a database on a non-production environment
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations lets you request that a database be restored to a specific point in time that is within 35 days of your request. This topic describes how to request a point-in-time restore.
 
@@ -69,6 +69,11 @@ The Microsoft Service Engineering team will take your environment offline, compl
     -   Wait for the Service Engineering team to complete the restore. When restore is completed, the status changes to **Succeeded**.
     -   Reschedule the request by clicking the ID, or by selecting the request and then clicking **Reschedule** on the toolbar. You can then change the downtime windows dates and times, and the point in time to restore to.
     -   Cancel the request by selecting the request and then clicking **Cancel** on the toolbar.
+
+## Enable change tracking
+If change tracking was enabled in the database, ensure to enable change tracking again in the newly restored database using the ALTER DATABASE command.
+
+To ensure current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management. This can be done on any entity as this is needed to trigger the refresh of store procedure.
 
 ## Conditions of a point-in-time restore
 Here is the list of requirements and conditions of operation for a point-in-time restore:

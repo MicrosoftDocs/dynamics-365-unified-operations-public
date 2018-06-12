@@ -34,10 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inventory journals
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!include [retail name](../includes/retail-name.md)]
 
 This topic describes how you can use inventory journals to post various types of physical inventory transactions.
 
@@ -105,7 +104,7 @@ You can post the journal lines that you create at any time until you've locked a
 ## Data entity support for inventory journals
 
 Data entities support the following types of integration scenarios:
--	 Synchronous service (OData)
+-    Synchronous service (OData)
 -  Asynchronous integration
 
 For more information, see [Data entities](../../dev-itpro/data-entities/data-entities.md).
@@ -114,8 +113,8 @@ For more information, see [Data entities](../../dev-itpro/data-entities/data-ent
 > Not all inventory journals are OData-enabled, therefore you cannot use the Excel data connector to get data published, updated, and imported back to Dynamics 365 for Finance and Operations. 
 
 Another difference between the journal data entities is the ability to use composite entities that include both the header and line data. Currently, you can use the composite entities for:
--	Inventory adjustment journal
--	Inventory movement journal
+-   Inventory adjustment journal
+-   Inventory movement journal
 
 These two inventory journals only support the *Initialize stock* scenario as part of a data management import project:
 -  When a journal header number is not specified, but a number sequence is specified for the journal type, the import job will automatically create journal headers per 1000 lines. For example, importing 2020 lines will result in the following three journal headers:

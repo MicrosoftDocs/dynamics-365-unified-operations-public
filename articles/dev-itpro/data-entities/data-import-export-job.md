@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Data import and export jobs
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 To create and manage data import and export jobs in Microsoft Dynamics 365 for Finance and Operations, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean up, or convert data before you move it.
 
@@ -101,6 +101,9 @@ The **Resequencing** menu is available when multiple entities are selected. You 
 
 #### Sorting
 Use can use the **Sort by** option to view the entity list in sequential order.
+
+### Truncating
+For import projects, you can choose to truncate records in the entities prior to import. This is useful if your records must be imported into a clean set of tables. This setting is off by default.
 
 ## Validate that the source data and target data are mapped correctly
 Mapping is a function that applies to both import and export jobs.

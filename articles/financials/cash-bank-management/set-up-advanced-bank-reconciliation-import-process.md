@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up the advanced bank reconciliation import process
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations. This article explains how to set up the import functionality for your bank statements. 
 
@@ -53,7 +52,7 @@ For all three formats, you must have files that translate the electronic bank st
 | BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
 
 ## Examples of bank statement formats and technical layouts
-Below are examples of the advanced bank reconciliation import file technical layout definitions and three related bank statement example files: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+Below are examples of the advanced bank reconciliation import file technical layout definitions and three related bank statement example files: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 | Technical layout definition                             | Bank statement example file          |
 |---------------------------------------------------------|--------------------------------------|
@@ -61,7 +60,7 @@ Below are examples of the advanced bank reconciliation import file technical lay
 | DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
 | DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
 
- 
+
 
 ## Set up the import of ISO20022 bank statements
 First, you must define the bank statement format processing group for ISO20022 bank statements by using the data entity framework.
@@ -75,7 +74,7 @@ First, you must define the bank statement format processing group for ISO20022 b
 7.  After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.
 8.  The Bank statements entity is a composite entity that consists of four separate entities. In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.
 9.  On the **Transformations** tab, click **New**.
-10. For sequence number 1, click **Upload file**, and select the **ISO20022XML-to-Reconciliation.xslt** file that you saved earlier. **Note:** Finance and Operations transformation files are built for the standard format. Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+10. For sequence number 1, click **Upload file**, and select the **ISO20022XML-to-Reconciliation.xslt** file that you saved earlier. **Note:** Finance and Operations transformation files are built for the standard format. Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
 11. Click **New**.
 12. For sequence number 2, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.
 13. Click **Apply transforms**.

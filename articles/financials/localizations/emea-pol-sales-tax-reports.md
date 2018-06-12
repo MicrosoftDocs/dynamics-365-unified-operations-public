@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-05-31
 ---
 
 # Sales tax reports for Poland
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about Polish value-added tax (VAT) reporting and the information that is legally required in VAT registers for Poland.
 
@@ -65,7 +65,7 @@ To set up VAT report date codes, set the following fields on the **VAT report da
 <ul>
 <li><strong>With VAT report date</strong> – The report shows the whole invoice amount if the calculated date in the <strong>Date of VAT register</strong> field on the <strong>Invoice posting</strong> page is in the date interval for the report.</li>
 <li><strong>With VAT report date not later than</strong> – The report shows the whole invoice amount if the date in the <strong>Date of VAT register</strong> field is in the date interval for the report. The date is calculated based on the information in the <strong>Counted from</strong> and <strong>Number of days</strong> fields.</li>
-<li><strong>With date of physical payment</strong> – If you select the <strong>Partial settlements</strong> check box, the report shows the settled part of the invoice amount if the reporting interval includes the payment dates. If the <strong>Partial settlements</strong> check box is cleared, the report doesn't show the invoice amount until the invoice is completely settled.</li>
+<li><strong>With date of physical payment</strong> – If you select the <strong>Partial settlements</strong> check box, the report shows the settled part of the invoice amount if the reporting interval includes the payment dates. If the <strong>Partial settlements</strong> check box is cleared, the report doesn&#39;t show the invoice amount until the invoice is completely settled.</li>
 <li><strong>With date of physical payment not later than</strong> – If you select the <strong>Partial settlements</strong> check box, the report shows settlements that occur in the date interval for the report. If the calculated value in the <strong>Date of VAT register</strong> field is in the date interval for the report, the report shows the whole invoice amount, except the settled amounts for the previous period. If the <strong>Partial settlements</strong> check box is cleared, select <strong>Transaction date</strong> or <strong>VAT date</strong> in the <strong>Counted from</strong> field to specify the criterion that is used to calculate the date of the VAT register.</li>
 </ul></td>
 </tr>
@@ -337,13 +337,13 @@ To set up the functionality for bad debt allowances, you must configure the syst
 
 3. For each journal, set the following fields:
 
-    - **Minimum number of days:** Enter the minimum period that indicates that an invoice is overdue. The minimum period is usually 150 days.
-    - **Maximum number of days:** Enter the maximum period that an invoice isn't considered overdue. The maximum period is usually two years, or 720 days.
-    - **Calculation type:** Select the type of date for each overdue invoice that should be calculated. The available values are **Due date** and **Invoice date**.
-    - **Validate:** Select this check box to validate that the transaction balances don't change on the date of the last posted journal.
+   - **Minimum number of days:** Enter the minimum period that indicates that an invoice is overdue. The minimum period is usually 150 days.
+   - **Maximum number of days:** Enter the maximum period that an invoice isn't considered overdue. The maximum period is usually two years, or 720 days.
+   - **Calculation type:** Select the type of date for each overdue invoice that should be calculated. The available values are **Due date** and **Invoice date**.
+   - **Validate:** Select this check box to validate that the transaction balances don't change on the date of the last posted journal.
 
-    > [!NOTE]
-    > Leave the **Condition** and **Payment term days** fields blank.
+     > [!NOTE]
+     > Leave the **Condition** and **Payment term days** fields blank.
 
 4. On the **Accounts receivable parameters** and **Accounts payable parameters** pages, set up the following number sequence references:
 

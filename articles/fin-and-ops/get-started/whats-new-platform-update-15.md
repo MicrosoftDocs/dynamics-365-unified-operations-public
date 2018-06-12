@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 15. This version was released in March 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 06/8/18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,9 +31,7 @@ ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 1
 ---
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 15 (March 2018)
 
-[!include[banner](../includes/banner.md)]
-
-[!include[banner](../includes/pre-release.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 15. 
 
@@ -138,14 +136,6 @@ Finance and Operations has ISO 27108 certification. 
 financial data is secure and protected. Finance and Operations has achieved
 SOC-1/Type-2 and SOC-2/Type-2 certification.
 
-## Service offered via a published range of network addresses
-
-Your organization may have specific security policies that prevents users from
-navigating to unknown or malicious IP addresses and domains. You can now open
-specific firewall rules in your on-premises network to enable your users to
-access Dynamics 365 for Finance and Operations. This service
-will publish the IP addresses to your service environment so that an
-administrator can define a custom firewall on your on-premises network.
 
 ## Support for display and edit methods on form data sources using augmentation classes (ExtensionOf)
 

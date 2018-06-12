@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Single voucher with multiple customer or vendor records
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions of Microsoft Dynamics 365 for Finance and Operations, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing. 
 
@@ -45,7 +44,7 @@ A voucher containing more than one customer or vendor can be entered using one o
 -   Using a multi-line voucher, where there is no offset ledger account, with more than one customer or vendor.
 -   Entering a voucher with the account and offset account being vendor/vendor, customer/customer, vendor/customer, or customer/vendor.
 
-This topic shows how settlement will be processed when one voucher  with multiple customer or vendor records is posted. Additionally, this topic provides workarounds to help you understand how to avoid using one voucher with multiple customers or vendors. In particular, there are examples which illustrate two common settlement scenarios that are impacted by the use of one voucher with multiple customers or vendors:
+This topic shows how settlement will be processed when one voucher  with multiple customer or vendor records is posted. Additionally, this topic provides workarounds to help you understand how to avoid using one voucher with multiple customers or vendors. In particular, there are examples which illustrate two common settlement scenarios that are impacted by the use of one voucher with multiple customers or vendors:
 
 -   Cash discount accounting
 -   Revaluation accounting
@@ -63,8 +62,8 @@ In the following example, multiple vendor invoices are recorded in General ledge
 | GNJL001     | Vendor           | 1001         | INV1            |           | 100.00     |
 | GNJL001     | Vendor           | 1001         | INV2            |           | 200.00     |
 | GNJL001     | Vendor           | 1001         | INV3            |           | 300.00     |
-| GNJL001     | Ledger           | 606300-001-- | INV1            |   50.00   |            |
-| GNJL001     | Ledger           | 606300-002-- | INV1            |   50.00   |            |
+| GNJL001     | Ledger           | 606300-001-- | INV1            |   50.00   |            |
+| GNJL001     | Ledger           | 606300-002-- | INV1            |   50.00   |            |
 | GNJL001     | Ledger           | 606300-003-- | INV2            | 200.00    |            |
 | GNJL001     | Ledger           | 606300-004-- | INV3            | 300.00    |            |
 
@@ -102,8 +101,8 @@ If the user is dissatisfied with the cash discount being allocated across all of
 |-------------|------------------|--------------|-----------------|-----------|------------|-----------------|--------------------|
 | **Voucher** | **Account type** | **Account**  | **Description** | **Debit** | **Credit** | **Offset type** | **Offset account** |
 | GNJL001     | Vendor           | 1001         | INV1            |           | 100.00     | Ledger          | &lt;blank&gt;      |
-| GNJL001     | Ledger           | 606300-001-- | INV1            |   50.00   |            | Ledger          | &lt;blank&gt;      |
-| GNJL001     | Ledger           | 606300-002-- | INV1            |   50.00   |            | Ledger          | &lt;blank&gt;      |
+| GNJL001     | Ledger           | 606300-001-- | INV1            |   50.00   |            | Ledger          | &lt;blank&gt;      |
+| GNJL001     | Ledger           | 606300-002-- | INV1            |   50.00   |            | Ledger          | &lt;blank&gt;      |
 | GNJL002     | Vendor           | 1001         | INV2            |           | 200.00     | Ledger          | 606300-003--       |
 | GNJL003     | Vendor           | 1001         | INV3            |           | 300.00     | Ledger          | 606300-004--       |
 
@@ -246,17 +245,17 @@ To illustrate, assume that vendor 1001 and customer US-008 are the same entity, 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
 | **Voucher** | **Account type** | **Account** | **Description** | **Debit** | **Credit** | **Offset type** | **Offset account** |
-| APPAYM001   | Vendor           | 1001        | Netting         |  75.00    |            | Customer        | US-008             |
+| APPAYM001   | Vendor           | 1001        | Netting         |  75.00    |            | Customer        | US-008             |
 
 To avoid unwanted issues with future settlements for this transaction, instead of using one voucher, multiple vouchers should be entered in the journal to record the netting transaction. Notice that the customer and vendor balances are offset with a single clearing account to avoid the use of one voucher that contains multiple customer and vendor balances.
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
 | **Voucher** | **Account type** | **Account** | **Description** | **Debit** | **Credit** | **Offset type** | **Offset account** |
-| 001         | Customer         | US-008      |                 |           |  75.00     | Ledger          | 999999---          |
-| 002         | Vendor           | 1001        |                 |  75.00    |            | Ledger          | 999999---          |
+| 001         | Customer         | US-008      |                 |           |  75.00     | Ledger          | 999999---          |
+| 002         | Vendor           | 1001        |                 |  75.00    |            | Ledger          | 999999---          |
 
- 
+
 
 
 

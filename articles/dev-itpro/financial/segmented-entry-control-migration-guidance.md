@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Segmented entry control migration guidance
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.
 
-The goal of the new design is to encapsulate the control implementation and not require that forms interact with the classes that back the control. Therefore, in Microsoft Dynamics AX, *all forms should interact only with the application programming interface (API) of the **Segmented Entry** control instance*. They should not interact directly with the controller classes (such as **LedgerDimensionAccountController** and **DimensionDynamicAccountController**). Any property that was previously manipulated or called on the controller must now be called on the control. **Notes:**
+The goal of the new design is to encapsulate the control implementation and not require that forms interact with the classes that back the control. Therefore, in Microsoft Dynamics AX, <em>all forms should interact only with the application programming interface (API) of the **Segmented Entry</em>* control instance<em>. They should not interact directly with the controller classes (such as **LedgerDimensionAccountController</em>* and <strong>DimensionDynamicAccountController</strong>). Any property that was previously manipulated or called on the controller must now be called on the control. <strong>Notes:</strong>
 
 -   Some APIs have naming differences between the controller and the control. The following table lists these APIs.
     **Controller Method (old)**
@@ -52,8 +51,8 @@ The goal of the new design is to encapsulate the control implementation and not 
     -   **Before:** controller.parmDate(systemDateGet())
     -   **After:** LedgerAccount.parmControlDate(systemDateGet());
 
-    In this example, **controller** &gt; **LedgerDimensionAccountController** instance and **LedgerAccount** &gt; new **Segmented Entry** control instance
--   In methods that have been overridden on controls and data fields, the code upgrade rule replaces method calls on the controllers with method calls on each control instance that was using a particular controller. **Example**
+    In this example, **controller** &gt; **LedgerDimensionAccountController** instance and **LedgerAccount** &gt; new **Segmented Entry** control instance
+-   In methods that have been overridden on controls and data fields, the code upgrade rule replaces method calls on the controllers with method calls on each control instance that was using a particular controller. **Example**
     -   **Before:**
 
             Public void jumpRef()
@@ -69,13 +68,13 @@ The goal of the new design is to encapsulate the control implementation and not 
                 segmentedEntryControl2.jumpRef();
             }
 
-    These changes are made so that it's easier to copy and paste code that must be moved elsewhere (for example, in some instances of **loadSegments()** and other such methods). You can ignore this change when you decide whether the method can be deleted. Your decision should depend on whether the method has any custom logic.
+    These changes are made so that it's easier to copy and paste code that must be moved elsewhere (for example, in some instances of **loadSegments()** and other such methods). You can ignore this change when you decide whether the method can be deleted. Your decision should depend on whether the method has any custom logic.
 -   The code upgrade script does not handle cases where a controller is instantiated within a method. These cases must be migrated manually.
 -   The MRU functionality from Microsoft Dynamics AX 2012 has been removed in Dynamics AX and won't be replaced.
 -   **parmTaxCode** has been removed. There is no replacement.
 
 ## Properties
-The custom properties for the **Segmented Entry** control are found under **Controller**. The following screen shot shows an example. [![111](./media/111.png)](./media/111.png) Not all properties apply to all **Controller** class types. Properties that don't apply to a selected controller class will be disabled. The following table provides details about the properties.
+The custom properties for the **Segmented Entry** control are found under **Controller**. The following screen shot shows an example. [![111](./media/111.png)](./media/111.png) Not all properties apply to all **Controller** class types. Properties that don't apply to a selected controller class will be disabled. The following table provides details about the properties.
 
 **Property**
 
@@ -167,17 +166,17 @@ This Controller provides support for default accounts in the Segmented Entry con
 
 #### AX 2012
 
-If **SegmentedEntry** appears as the type next to any control, change it to **SegmentedEntryControl**. [![SegmentMigrate01](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)
+If **SegmentedEntry** appears as the type next to any control, change it to **SegmentedEntryControl**. [![SegmentMigrate01](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)
 
 #### Dynamics AX
 
-An easy method is to append "\_old" to the name of the old control, add the new control (which should have the original name of the control), migrate all the settings over, and then delete the old control. **Note:** To prevent tests and other code that references the control from breaking, make sure that the new control has the same name as the old control. To add the new control, right-click the parent control that will contain the **Segmented Entry** control, and then select **New** &gt; **SegmentedEntryControl**. [![SegmentMigrate02](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) The following screen shot shows how new control will look. [![SegmentMigrate03](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)
+An easy method is to append "\_old" to the name of the old control, add the new control (which should have the original name of the control), migrate all the settings over, and then delete the old control. **Note:** To prevent tests and other code that references the control from breaking, make sure that the new control has the same name as the old control. To add the new control, right-click the parent control that will contain the **Segmented Entry** control, and then select **New** &gt; **SegmentedEntryControl**. [![SegmentMigrate02](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) The following screen shot shows how new control will look. [![SegmentMigrate03](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)
 
 ### Step 2
 
 #### AX 2012
 
-Override the  **jumpRef()** control/field method.
+Override the  **jumpRef()** control/field method.
 
     public void jumpRef()
     {
@@ -192,7 +191,7 @@ Remove the **jumpRef()** method completely if it contains no other functionality
 
 #### AX 2012
 
-Override the **loadAutoCompleteData()** control method.
+Override the **loadAutoCompleteData()** control method.
 
     public void loadAutoCompleteData(LoadAutoCompleteDataEventArgs _e)
     {
@@ -208,7 +207,7 @@ Remove the **loadAutoCompleteData()** method.
 
 #### AX 2012
 
-Override the **loadSegments()** control method.
+Override the **loadSegments()** control method.
 
     public void loadSegments()
     {
@@ -225,24 +224,24 @@ If the **loadSegments()** method does nothing except call the controller's **loa
 
 #### AX 2012
 
-Override the **loadSegments()** control method.
+Override the **loadSegments()** control method.
 
     public void loadSegments()
     {
         super();
-        dimAccountController.parmControl(this);
-        dimAccountController.parmJournalName(ledgerJournalTable.JournalName);
-        dimAccountController.parmCurrency(ledgerJournalTrans.CurrencyCode);
-        dimAccountController.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
-        dimAccountController.parmDate(ledgerJournalTrans.TransDate);
-        dimAccountController.parmTaxCode(ledgerJournalTrans.TaxCode);
+        dimAccountController.parmControl(this);
+        dimAccountController.parmJournalName(ledgerJournalTable.JournalName);
+        dimAccountController.parmCurrency(ledgerJournalTrans.CurrencyCode);
+        dimAccountController.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
+        dimAccountController.parmDate(ledgerJournalTrans.TransDate);
+        dimAccountController.parmTaxCode(ledgerJournalTrans.TaxCode);
 
-        dimAccountController.loadSegments();
+        dimAccountController.loadSegments();
     }
 
 #### Dynamics AX
 
-If the **loadSegments()** method was used to set parameters on the controller, the calls to **parm** method must be moved to every location where the source of the **parm** method can change. In most cases, these locations are the **modified()** method on the corresponding data field and/or the **active()** method on the data source. For example, some of the migrated code for the **loadSegments()** override on the left would look like this.
+If the **loadSegments()** method was used to set parameters on the controller, the calls to **parm** method must be moved to every location where the source of the **parm** method can change. In most cases, these locations are the **modified()** method on the corresponding data field and/or the **active()** method on the data source. For example, some of the migrated code for the **loadSegments()** override on the left would look like this.
 
     dimAccountController.parmControl(this) -> No longer needed.
 
@@ -291,12 +290,12 @@ Note that the **JournalName** property is set from the ledgerJournalTable buffer
 
 #### Dynamics AX
 
-In such cases, you can't move that code to either the **active()** method of a data source or the **modified()** method on the data field. Instead, you should identify where the table buffer is being set. For example, in the original implementation of the **LedgerJournalTransDaily** form, the ledgerJournalTable buffer was set in the **initLedger()** method on the form. It should be evident that the value that is passed to **parmJournalName()** can change only when the buffer is reassigned in the **initLedger()** method. Therefore, code would have to be moved to the **initLedger()** method after the assignment of the buffer. Also, in accordance with the general guidelines, the **parmJournalName()** method would be called on the control instance.
+In such cases, you can't move that code to either the **active()** method of a data source or the **modified()** method on the data field. Instead, you should identify where the table buffer is being set. For example, in the original implementation of the **LedgerJournalTransDaily** form, the ledgerJournalTable buffer was set in the **initLedger()** method on the form. It should be evident that the value that is passed to **parmJournalName()** can change only when the buffer is reassigned in the **initLedger()** method. Therefore, code would have to be moved to the **initLedger()** method after the assignment of the buffer. Also, in accordance with the general guidelines, the **parmJournalName()** method would be called on the control instance.
 
     void initLedger()
     {
-        TransDate   dateFrom   = dateNull();
-        TransDate   dateTo     = systemDateGet();
+        TransDate   dateFrom   = dateNull();
+        TransDate   dateTo     = systemDateGet();
 
         if (element.args().dataset() == tableNum(LedgerJournalTable))
         {
@@ -314,12 +313,12 @@ In such cases, you can't move that code to either the **active()** method of a d
 
 #### AX 2012
 
-Override the **segmentValueChanged()** control method.
+Override the **segmentValueChanged()** control method.
 
     public void segmentValueChanged(SegmentValueChangedEventArgs _e)
     {
         super(_e);
-        ledgerDimensionDefaultAccountController.segmentValueChanged(_e);
+        ledgerDimensionDefaultAccountController.segmentValueChanged(_e);
     }
 
 #### Dynamics AX
@@ -330,14 +329,14 @@ If the implementation of **segmentValueChanged()** does nothing except call **su
 
 #### AX 2012
 
-Override the **segmentValueChanged()** control method.
+Override the **segmentValueChanged()** control method.
 
     public void segmentValueChanged(SegmentValueChangedEventArgs _e)
     {
-        super(_e);
+        super(_e);
 
-        dimOffsetAccountController.segmentValueChanged(_e);
-        currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(dimOffsetAccountController, currentOffsetMainAccountId, ledgerJournalTrans);
+        dimOffsetAccountController.segmentValueChanged(_e);
+        currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(dimOffsetAccountController, currentOffsetMainAccountId, ledgerJournalTrans);
     }
 
 #### Dynamics AX
@@ -346,7 +345,7 @@ If the implementation of **segmentValueChanged()** has additional logic, you mus
 
     public void onSegmentChanged(DimensionControlSegment _segment)
     {
-        currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(this, currentOffsetMainAccountId, ledgerJournalTrans);
+        currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(this, currentOffsetMainAccountId, ledgerJournalTrans);
     }
 
 **Notes:**
@@ -360,70 +359,70 @@ If the implementation of **segmentValueChanged()** has additional logic, you mus
 
 #### AX 2012
 
-Override the **validate()** control method.
+Override the **validate()** control method.
 
     public boolean validate()
     {
-        boolean isValid;
-        isValid = super();
-        isValid = ledgerDimensionDefaultAccountController.validate() && isValid;
+        boolean isValid;
+        isValid = super();
+        isValid = ledgerDimensionDefaultAccountController.validate() && isValid;
 
-        return isValid;
+        return isValid;
     }
 
 #### Dynamics AX
 
-Remove the **validate()** method, unless you have additional validation. The **super()** call does everything that this code used to do. Therefore, keep only any new code that you have.
+Remove the **validate()** method, unless you have additional validation. The **super()** call does everything that this code used to do. Therefore, keep only any new code that you have.
 
 ### Step 10
 
 #### AX 2012
 
-Override the **lookup()** control method.
+Override the **lookup()** control method.
 
     public void lookup()
     {
-        switch (emplParameters_RU.BankCloseACType)
-        {
-        case LedgerJournalACType::Bank:
-            BankAccountTable::lookupBankAccount(this);
-            break;
-        case LedgerJournalACType::Cust:
-            CustTable::lookupCustomer(this);
-            break;
-        case LedgerJournalACType::FixedAssets:
-            AssetTable::lookupAccountNum(this);
-            break;
-        case LedgerJournalACType::Ledger:
-            super();
-            break;
-        case LedgerJournalACType::Project:
-            ProjTable::lookupProjId(this, emplParameters_RU);
-            break;
-        case LedgerJournalACType::Vend:
-            VendTable::lookupVendor(this);
-            break;
-        default:
-            super();
-            break;
-        }
+        switch (emplParameters_RU.BankCloseACType)
+        {
+        case LedgerJournalACType::Bank:
+            BankAccountTable::lookupBankAccount(this);
+            break;
+        case LedgerJournalACType::Cust:
+            CustTable::lookupCustomer(this);
+            break;
+        case LedgerJournalACType::FixedAssets:
+            AssetTable::lookupAccountNum(this);
+            break;
+        case LedgerJournalACType::Ledger:
+            super();
+            break;
+        case LedgerJournalACType::Project:
+            ProjTable::lookupProjId(this, emplParameters_RU);
+            break;
+        case LedgerJournalACType::Vend:
+            VendTable::lookupVendor(this);
+            break;
+        default:
+            super();
+            break;
+        }
     }
 
 #### Dynamics AX
 
-Leave the **lookup()** method as it is.
+Leave the **lookup()** method as it is.
 
 ### Step 11
 
 #### AX 2012
 
-Override the **lookupReference()** control method.
+Override the **lookupReference()** control method.
 
     public Common lookupReference()
     {
-        Common ret;
-        ret = super();
-        return ret;
+        Common ret;
+        ret = super();
+        return ret;
     }
 
 #### Dynamics AX
@@ -434,27 +433,27 @@ If the **lookupReference()** method uses the default implementation, you can del
 
 #### AX 2012
 
-Override the **modified()** control method.
+Override the **modified()** control method.
 
     public boolean modified()
     {
-        boolean ret;
+        boolean ret;
 
-        ret = super();
+        ret = super();
 
-        if (tmpCurrencyLedgerGainLossAccount.LedgerDimension)
-        {
-            tmpCurrencyLedgerGainLossAccount.AccountName =
-            MainAccount::getLocalizedNameByMainAccountId(
-            DimensionStorage::getMainAccountNumFromLedgerDimension(
-            tmpCurrencyLedgerGainLossAccount.LedgerDimension), ledger.ChartOfAccounts);
-        }
-        else
-        {
-            tmpCurrencyLedgerGainLossAccount.AccountName = '';
-        }
+        if (tmpCurrencyLedgerGainLossAccount.LedgerDimension)
+        {
+            tmpCurrencyLedgerGainLossAccount.AccountName =
+            MainAccount::getLocalizedNameByMainAccountId(
+            DimensionStorage::getMainAccountNumFromLedgerDimension(
+            tmpCurrencyLedgerGainLossAccount.LedgerDimension), ledger.ChartOfAccounts);
+        }
+        else
+        {
+            tmpCurrencyLedgerGainLossAccount.AccountName = '';
+        }
 
-        return ret;
+        return ret;
     }
 
 #### Dynamics AX
@@ -465,80 +464,80 @@ Leave the **modified()** method as it is.
 
 #### AX 2012
 
-Override the **gotFocus()** control method.
+Override the **gotFocus()** control method.
 
     void gotFocus()
     {
-        super();
-        if (ledgerJournalTable.FixedOffsetAccount)
-        {
-            ledgerJournalTrans_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
-        }
-        else if (!ledgerJournalTrans_OffsetAccount.allowEdit())
-        {
-            ledgerJournalTrans_OffsetAccount.allowEdit(true);
-        }
+        super();
+        if (ledgerJournalTable.FixedOffsetAccount)
+        {
+            ledgerJournalTrans_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
+        }
+        else if (!ledgerJournalTrans_OffsetAccount.allowEdit())
+        {
+            ledgerJournalTrans_OffsetAccount.allowEdit(true);
+        }
     }
 
 #### Dynamics AX
 
-The approach is similar to the approach for the **loadSegments()** method. The code must be moved to every location where the source of the **parm** method can change. In most cases, these locations are the **modified()** method on the corresponding data field and/or the **active()** method on the data source. For example, for the preceding code, the migrated code would look like this.
+The approach is similar to the approach for the **loadSegments()** method. The code must be moved to every location where the source of the **parm** method can change. In most cases, these locations are the **modified()** method on the corresponding data field and/or the **active()** method on the data source. For example, for the preceding code, the migrated code would look like this.
 
     LedgerJournalTable data source,
     FixedOffsetAccount field
     public void modified()
     {
-        if (ledgerJournalTable.FixedOffsetAccount)
-        {
-            ledgerJournalTrans_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
-        }
-        else if (!ledgerJournalTrans_OffsetAccount.allowEdit())
-        {
-            ledgerJournalTrans_OffsetAccount.allowEdit(true);
-        }
+        if (ledgerJournalTable.FixedOffsetAccount)
+        {
+            ledgerJournalTrans_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
+        }
+        else if (!ledgerJournalTrans_OffsetAccount.allowEdit())
+        {
+            ledgerJournalTrans_OffsetAccount.allowEdit(true);
+        }
     }
 
     LedgerJournalTrans data source,
     OffsetAccountType field
     public void modified()
     {
-        if (ledgerJournalTable.FixedOffsetAccount)
-        {
-            ledgerJournalTrans_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
-        }
-            else if (!ledgerJournalTrans_OffsetAccount.allowEdit())
-        {
-            ledgerJournalTrans_OffsetAccount.allowEdit(true);
-        }
+        if (ledgerJournalTable.FixedOffsetAccount)
+        {
+            ledgerJournalTrans_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
+        }
+            else if (!ledgerJournalTrans_OffsetAccount.allowEdit())
+        {
+            ledgerJournalTrans_OffsetAccount.allowEdit(true);
+        }
     }
 
     LedgerJournalTrans data source:
     public void active()
     {
-        if (ledgerJournalTable.FixedOffsetAccount)
-        {
-            ledgerJournalTrans_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
-        }
-        else if (!ledgerJournalTrans_OffsetAccount.allowEdit())
-        {
-            ledgerJournalTrans_OffsetAccount.allowEdit(true);
-        }
+        if (ledgerJournalTable.FixedOffsetAccount)
+        {
+            ledgerJournalTrans_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
+        }
+        else if (!ledgerJournalTrans_OffsetAccount.allowEdit())
+        {
+            ledgerJournalTrans_OffsetAccount.allowEdit(true);
+        }
     }
 
     LedgerJournalTable data source:
     public void active()
     {
-        if (ledgerJournalTable.FixedOffsetAccount)
-        {
-            ledgerJournalTrans_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
-        }
-        else if (!ledgerJournalTrans_OffsetAccount.allowEdit())
-        {
-            ledgerJournalTrans_OffsetAccount.allowEdit(true);
-        }
+        if (ledgerJournalTable.FixedOffsetAccount)
+        {
+            ledgerJournalTrans_OffsetAccount.allowEdit(ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger);
+        }
+        else if (!ledgerJournalTrans_OffsetAccount.allowEdit())
+        {
+            ledgerJournalTrans_OffsetAccount.allowEdit(true);
+        }
     }
 
-**Note:** After all the code has been moved out of the **gotFocus()** method, you can delete the method.
+**Note:** After all the code has been moved out of the **gotFocus()** method, you can delete the method.
 
 ### Step 14
 
@@ -550,7 +549,7 @@ In the form **init()** method:
 
 #### Dynamics AX
 
-Set the following properties on the control:
+Set the following properties on the control:
 
 -   **Data Source**
 -   **Reference Field**
@@ -566,13 +565,13 @@ Set the following properties on the control:
 
 #### Dynamics AX
 
-A map of the dimension specifiers must be created that can then be sent into the **Segmented Entry** control's **setDimensionSpecifiers** method.
+A map of the dimension specifiers must be created that can then be sent into the **Segmented Entry** control's **setDimensionSpecifiers** method.
 
     Map defaultDimensionSpecifiers = LedgerDimensionDefaultingEngine::getDefaultDimensionSpecifiers(ledgerJournalTable.DefaultDimension);
 
     TmpLedgerJournalSplitLines_LedgerAccount.setDimensionSpecifiers(defaultDimensionSpecifiers, false);
 
-**Note:** You can add anything to the dimension specifiers map before it's sent to the control. You can also create a new map here. (See the **onSegmentChangedForPrimaryAccount** method in the **LedgerJournalEngine** class for similar logic.)
+**Note:** You can add anything to the dimension specifiers map before it's sent to the control. You can also create a new map here. (See the **onSegmentChangedForPrimaryAccount** method in the **LedgerJournalEngine** class for similar logic.)
 
 ### Step 16
 
@@ -608,7 +607,7 @@ Override **resolveReference()** in the data source field for the ledger dimensio
 
 #### Dynamics AX
 
-Delete this code, because it's no longer required. The control handles this automatically.
+Delete this code, because it's no longer required. The control handles this automatically.
 
 ### Step 19
 
@@ -624,7 +623,7 @@ In general, any property that was previously set on the controller class should 
 
 #### AX 2012
 
-The form uses the control's **currentSegmentIndex()** method.
+The form uses the control's **currentSegmentIndex()** method.
 
     dimOffetAssetController. getDimensionAttributeByControlIndex(currentSegmentIndex);
 
@@ -656,14 +655,14 @@ For **DimensionDynamicAccountController**, the account type is specified through
 
 #### Dynamics AX
 
-There are two methods for implementing this functionality. These methods are mutually exclusive, so use only one of them, depending on the situation:
+There are two methods for implementing this functionality. These methods are mutually exclusive, so use only one of them, depending on the situation:
 
 -   For the **Segmented Entry** control, in the **Properties** dialog box, set the **Account Type Field** property to the data source field that will provide the account type. This is the preferred method. **Note:** If the **super()** call has been removed from the **modified()** method for the field that is bound to the **Account Type Field** property, this method won't work. We have seen this issue in some journal forms, such as **LedgerJournalTransDaily**. In such cases, either add the **super()** call back to the **modified()** method, or use the second method.
 -   Set the account type manually by calling the **parmAccountTypeEnumValue()** method on the control. Here's an example.
 
         LedgerJournalTrans_AccountNum.parmAccountTypeEnumValue(enum2int(ledgerJournalTrans.AccountType));
 
-    **Note:** The call to **parmAccountTypeEnumValue()** must be put in both the data source's **active()** method and the **modified()** method of the field that will provide the account type.
+    **Note:** The call to **parmAccountTypeEnumValue()** must be put in both the data source's **active()** method and the **modified()** method of the field that will provide the account type.
 
 ### Step 23
 
@@ -687,7 +686,7 @@ Remove this, because the controller is no longer required.
 
 #### Dynamics AX
 
-Remove this line of code, because it's no longer required in most cases. Before you delete this line, make sure that the data area ID is correctly passed in to the controller as a parameter, because the **LedgerCOA** value will be derived from that information. If the data area ID is not passed in, replace **parmCurrentLedgerCOA(â€¦)** with **parmDataAreaId(â€¦)**, and pass the appropriate **SelectableDataArea** value, which is usually **curext()** or another table field that controls the scope of the company for the account control. If the form has no data area context but only a current **LedgerCOA** value, it should be working only with the default account controller. There are only a few forms that are agnostic of a company, but that are scoped to a specific chart of accounts (COA) (for example, **MainAccount** and **Allocations**). In these cases, **parmCurrentLedgerCOA** should be called on the **Segmented Entry** control instance that has a default account controller type set.
+Remove this line of code, because it's no longer required in most cases. Before you delete this line, make sure that the data area ID is correctly passed in to the controller as a parameter, because the **LedgerCOA** value will be derived from that information. If the data area ID is not passed in, replace **parmCurrentLedgerCOA(â€¦)** with **parmDataAreaId(â€¦)**, and pass the appropriate **SelectableDataArea** value, which is usually **curext()** or another table field that controls the scope of the company for the account control. If the form has no data area context but only a current **LedgerCOA** value, it should be working only with the default account controller. There are only a few forms that are agnostic of a company, but that are scoped to a specific chart of accounts (COA) (for example, **MainAccount** and **Allocations**). In these cases, **parmCurrentLedgerCOA** should be called on the **Segmented Entry** control instance that has a default account controller type set.
 
 ### Step 25
 
@@ -709,13 +708,13 @@ The code for the **modified** method of the data field that provides the account
 
     public void modified()
     {
-        super();
+        super();
 
-        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-        if (ledgerJournalTable.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            controller.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-        }
+        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+        if (ledgerJournalTable.OffsetAccountType == LedgerJournalACType::Ledger)
+        {
+            controller.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        }
     }
 
 #### Dynamics AX
@@ -724,15 +723,15 @@ The **modified** method of this data field must now clear the ledger dimension f
 
     public void modified()
     {
-        super();
+        super();
 
-        OffsetAccount.LedgerDimension = 0;
+        OffsetAccount.LedgerDimension = 0;
 
-        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
-        if (ledgerJournalTable.OffsetAccountType == LedgerJournalACType::Ledger)
-        {
-            OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
-        }
+        // Lock the main account segment if "Fixed offset account" is selected in Journal Names
+        if (ledgerJournalTable.OffsetAccountType == LedgerJournalACType::Ledger)
+        {
+            OffsetAccount.parmLockMainAccountSegment(ledgerJournalTable.FixedOffsetAccount);
+        }
     }
 
 The additional line is required to clear the control when the account type is changed.
@@ -747,7 +746,7 @@ You can call the **parmAccountStructure()** method on the controller.
 
 #### Dynamics AX
 
-This method is replaced by two different methods. Additionally, the purpose of the new methods is the opposite of the old method: the old method turned validation off, whereas the new methods turn it on. Therefore, when you migrate code, you must reverse the Boolean parameter for the new methods. For example, for the method call in the preceding code, the new methods would look like this.
+This method is replaced by two different methods. Additionally, the purpose of the new methods is the opposite of the old method: the old method turned validation off, whereas the new methods turn it on. Therefore, when you migrate code, you must reverse the Boolean parameter for the new methods. For example, for the method call in the preceding code, the new methods would look like this.
 
     ToBudgetTransactionLine_LedgerDimension.parmDoValueActiveDatesValidation(false);
 
@@ -775,7 +774,7 @@ The **parmAccountStructureId()** method doesn't exist on the control. Instead, s
 
 #### Dynamics AX
 
-This method is replaced by two different methods. Additionally, the purpose of the new methods is opposite of the old method: the old method turned validation off, whereas the new methods turn it on. Therefore, when you migrate code, you must reverse the Boolean parameter for the new methods. For example, for the method call in the preceding code, the new methods would look like this.
+This method is replaced by two different methods. Additionally, the purpose of the new methods is opposite of the old method: the old method turned validation off, whereas the new methods turn it on. Therefore, when you migrate code, you must reverse the Boolean parameter for the new methods. For example, for the method call in the preceding code, the new methods would look like this.
 
     ToBudgetTransactionLine_LedgerDimension.parmDoValueActiveDatesValidation(false);
 
@@ -795,7 +794,7 @@ This method has been deprecated and must not be used. You should delete all call
 
 ### Migrating a Segmented Entry control on a dialog
 
-The uptake pattern for the new **Segmented Entry** control on a dialog has changed in Dynamics AX. Instead of interacting with the controller class API, you must now interact with the **SegmentedEntryControlBuild** class to link the SEC with the dialog. This section shows the code patterns for using SEC on a dialog with different controller types. **Note:** Help text is no longer required in Dynamics AX, so you don't have to set the Help text on dialog fields.
+The uptake pattern for the new **Segmented Entry** control on a dialog has changed in Dynamics AX. Instead of interacting with the controller class API, you must now interact with the **SegmentedEntryControlBuild** class to link the SEC with the dialog. This section shows the code patterns for using SEC on a dialog with different controller types. **Note:** Help text is no longer required in Dynamics AX, so you don't have to set the Help text on dialog fields.
 
 -   **Dynamic account:**
     -   **Before:**
@@ -805,26 +804,26 @@ The uptake pattern for the new **Segmented Entry** control on a dialog has chang
             dialogDynamicAccount = _dialog.addFieldValue(extendedTypeStr(LedgerDimensionBase), defaultOffsetLedgerDimension, "@SYS115166", "@SYS115167");
             dimensionDynamicAccountController = DimensionDynamicAccountController::constructForDialog(dialogDynamicAccount, dialogDynamicAccountType, enumStr(LedgerJournalACTypeForPaymProposal));
                        dimensionDynamicAccountController.parmIsDefaultAccount(true);
-             
+
             public void dialogPostRun(DialogRunBase _dialog)
             {
             …
-             
+
             dialogDynamicAccountType.registerOverrideMethod('modified', 'accountType_Modified', this);
-             
+
             ...
             }
-             
+
             private boolean accountType_Modified(FormComboBoxControl _formComboBoxControl)
             {
              boolean valueWasModified;
-             
+
              valueWasModified = _formComboBoxControl.modified();
              if (valueWasModified)
              {
              dialogDynamicAccount.value(0);
                         }
-             
+
              return valueWasModified;
             }
 
@@ -834,38 +833,38 @@ The uptake pattern for the new **Segmented Entry** control on a dialog has chang
             protected Object dialog()
             {
             ...        
-             
+
             // Create the account type dialog field
             dialogDynamicAccountType = _dialog.addFieldValue(enumStr(LedgerJournalACTypeForPaymProposal), defaultOffsetAccountType, "@SYS115164", "@SYS115165");
             // Create the SEC dialog field
             dialogDynamicAccount = SegmentedEntryControlBuild::addToDialog(dialog, classstr(DimensionDynamicAccountControl), extendedTypeStr(LedgerDimensionBase), "@SYS115166", defaultOffsetLedgerDimension);
-             
+
             // Provide account type information for the SEC field
             SegmentedEntryControlBuild::initDialogFieldAccountType(dialogDynamicAccount, enumStr(LedgerJournalACTypeForPaymProposal) , defaultOffsetAccountType);
             // Set additional parameters on the SEC dialog field
             SegmentedEntryControlBuild segmentedEntryControlBuild = dialogDynamicAccount.control(); 
             segmentedEntryControlBuild.parmIsDefaultAccount(true);
-             
+
             …
             }
-             
+
             // Override for modified method of the Account type checkbox to update the SEC when account type is changed
             public int accountType_selectionChange(FormComboBoxControl _formComboBoxControl)
             {
             SegmentedEntryControl secDDAC = dialogDynamicAccount.control();
             accountType = _formComboBoxControl.selection();
-             
+
             // This is the backing variable used to pack the account specified via the SEC
             ledgerDimensionDynamicAccount = 0; 
             // Clear the SEC value
             secDDAC.clearReference();                     
-             
+
             // Specify the new account type to the SEC; this is an additional step needed for the AX SEC
             secDDAC.parmAccountTypeEnumValue(enum2int(accountType));
-             
+
             return true;
             }
-             
+
             // Set default account type based on value read from SysLastValue
             public void dialogPostRun(DialogRunBase _dialog)
             {
@@ -915,10 +914,10 @@ The uptake pattern for the new **Segmented Entry** control on a dialog has chang
     **Notes:**
     -   The new API lets you specify the label (**Budget planning** in the preceding example) while you set up the dialog field.
     -   The default value for the control is specified via the **ledgerDimensionBudgetPlanning** variable.
-    -   You must specify the account structure that should be used with the **Budget planning** controller. The **Dialog** class must implement a way for the user to select the account structure (outside of the SEC) and set the selected account structure on the SEC.
+    -   You must specify the account structure that should be used with the **Budget planning** controller. The **Dialog** class must implement a way for the user to select the account structure (outside of the SEC) and set the selected account structure on the SEC.
 
 
-See also
+Additional resources
 --------
 
 [Segmented Entry control dialog support](segmented-entry-control-dialog-support.md)

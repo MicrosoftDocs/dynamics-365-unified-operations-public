@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settle a partial customer payment that has multiple discount periods
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article shows how partial customer payments are settled when there are multiple discount periods.
 
-Fabrikam offers customer 4031 two cash discount periods. The customer receives a 2-percent cash discount if the invoice is paid in five days and a 1-percent cash discount if the invoice is paid in 14 days. Fabrikam also offers cash discounts on partial payments. The settlement parameters are located on the **Accounts receivable parameters** page.
+Fabrikam offers customer 4031 two cash discount periods. The customer receives a 2-percent cash discount if the invoice is paid in five days and a 1-percent cash discount if the invoice is paid in 14 days. Fabrikam also offers cash discounts on partial payments. The settlement parameters are located on the **Accounts receivable parameters** page.
 
 ## Invoice
 On June 25, Arnie enters and posts an invoice for 1,000.00 for customer 4031. When he reviews the cash discounts for this invoice, Arnie sees that customer 4031 receives a 20.00 discount if the invoice is paid by June 30. If the invoice is paid by July 9, the customer receives a 10.00 discount.
@@ -95,10 +94,10 @@ The invoice balance is now 0.00. Arnie views the information on the **Customer t
 | Voucher    | Transaction type | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance | Currency |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
 | FTI-10030  | Invoice          | 6/25/2015 | 10030   | 1,000.00                             |                                       | 0.00    | USD      |
-| ARP-10030  |  Payment         | 6/28/2015 |         |                                      | 294.00                                | 0.00    | USD      |
-| DISC-10030 |  Cash discount   | 6/28/2015 |         |                                      | 6.00                                  | 0.00    | USD      |
-| ARP-10031  |  Payment         | 7/8/2015  |         |                                      | 693.00                                | 0.00    | USD      |
-| DISC-1031  |  Cash discount   | 7/8/2015  |         |                                      | 7.00                                  | 0.00    | USD      |
+| ARP-10030  |  Payment         | 6/28/2015 |         |                                      | 294.00                                | 0.00    | USD      |
+| DISC-10030 |  Cash discount   | 6/28/2015 |         |                                      | 6.00                                  | 0.00    | USD      |
+| ARP-10031  |  Payment         | 7/8/2015  |         |                                      | 693.00                                | 0.00    | USD      |
+| DISC-1031  |  Cash discount   | 7/8/2015  |         |                                      | 7.00                                  | 0.00    | USD      |
 
 
 

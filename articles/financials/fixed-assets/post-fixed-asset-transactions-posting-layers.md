@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Post fixed asset transactions to posting layers
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article gives an overview of posting layer functionality for fixed asset transactions.
 

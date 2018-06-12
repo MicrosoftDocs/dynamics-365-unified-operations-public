@@ -48,6 +48,7 @@ During the Learn phase, your product description must be aligned with your busin
 
 The Consume phase is **optional**. It includes tasks that are required in order to complete Conference room pilot 1 (CRP1). 
 
+
 After the Learn and Consume phases, you can add any other steps that are required in order to implement your solution. You can either modify the phases and tasks so that they are aligned with your solution, or use your company's implementation methodology.
 
 ## Create a new methodology
@@ -69,14 +70,14 @@ Follow these steps to edit a methodology in a specific project only.
 2.  Edit the phases and tasks.
 3.  Edit the linked tools and resources, if any changes are required.
 
-## Change a project's methodology
-1.  On the project's home page, select the ellipsis (**...**) button above the project phases, and then select **Change methodology**.
-2.  In the dialog box that appears, set the **Do you want to keep the existing phases and tasks?** option. If you set this option to **Yes**, the phases and tasks from the methodology that you will select in step 3 are added to the end of the current methodology. If you set the option to **No**, the current methodology is replaced with the methodology that you will select in step 3.
+## Change a project’s methodology
+1.  On the project's home page, click the ellipsis (**...**) button above the project phases, and then click **Change methodology**.
+2.  In the dialog box that appears, set the **Do you want to keep the existing phases and tasks?** option. If you set this option to **Yes**, the phases and tasks from the methodology that you select in step 3 are added to the end of the current methodology. If you set the option to **No**, the current methodology is replaced with the methodology that you select in step 3.
 3.  Select a methodology to use with your project.
 4.  Select **Confirm**.
 
 
-See also
+Additional resources
 --------
 
 [Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)

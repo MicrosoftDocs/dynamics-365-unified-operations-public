@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Simple Details form pattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes the Simple Details form pattern. This pattern is used when only a simple set of fields must be presented to the user.
 
 Usage
 -----
 
-The Simple Details pattern is used when only a simple set of fields must be presented to the user. Examples include the display of totals and customer balances. Typically, view mode is used for the Simple Details pattern. However, in cases where the form provides editable information, the edit mode should be synced to the parent form. Four patterns are described in this document:
+The Simple Details pattern is used when only a simple set of fields must be presented to the user. Examples include the display of totals and customer balances. Typically, view mode is used for the Simple Details pattern. However, in cases where the form provides editable information, the edit mode should be synced to the parent form. Four patterns are described in this document:
 
 -   **Simple Details w/Toolbar and Fields** – This is the basic Simple Details pattern, in which several fields are displayed in the form. The fields can optionally appear inside Groups.
 -   **Simple Details w/Fast Tabs** – This is the Simple Details pattern that should be used when fields are organized into FastTabs.
@@ -55,14 +54,14 @@ The Simple Details pattern is used when only a simple set of fields must be pre
 There are no planned changes for the use of this pattern in the current version of Microsoft Dynamics AX.
 
 ## Model
-### Simple Details w/Toolbar and Fields – High-level structure
+### Simple Details w/Toolbar and Fields – High-level structure
 
 - Design
 
     - ActionPane (ActionPane)
-    - Body (Group) – **Note:** A field subpattern is used.
+    - Body (Group) – **Note:** A field subpattern is used.
 
-### Simple Details w/FastTabs – High-level structure
+### Simple Details w/FastTabs – High-level structure
 
 - Design
 
@@ -74,7 +73,7 @@ There are no planned changes for the use of this pattern in the current version 
 
     - *FooterGroup (Group) \[Optional\]*
 
-### Simple Details w/Standard Tabs – High-level structure
+### Simple Details w/Standard Tabs – High-level structure
 
 - Design
 
@@ -86,7 +85,7 @@ There are no planned changes for the use of this pattern in the current version 
 
     - *FooterGroup (Group) \[Optional\]*
 
-### Simple Details w/Panorama – High-level structure
+### Simple Details w/Panorama – High-level structure
 
 - Design
 
@@ -116,7 +115,7 @@ There are no planned changes for the use of this pattern in the current version 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
+-   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Simple Details** **guidelines:**
 

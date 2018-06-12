@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Determine the BOM version
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site. 
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail channel performance Power BI content
-description: This topic provides information about the Retail channel performance Power BI content for Dynamics AX 7.0 releases. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
+title: Retail channel performance PowerBI.com solution
+description: This topic provides information about the Retail channel performance PowerBI.com solution for Dynamics AX 7.0 releases. This PowerBI.com solution lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 author: ashishmsft
 manager: AnnBe
-ms.date: 02/02/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,23 +30,23 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Retail channel performance Power BI content
+# Retail channel performance PowerBI.com solution
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!Note]
-> This content pack has been deprecated as documented in [Power BI content packs published to PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+> This PowerBI.com solution has been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-This topic provides information about the Retail channel performance Power BI content for Dynamics AX. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
+This topic provides information about the Retail channel performance PowerBI.com solution for Dynamics AX. This PowerBI.com solution lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 
-The Retail channel performance content pack lets you quickly build your channel performance analytics. The content pack is designed specifically for channel managers who focus on sales performance to predict trends and uncover insights. Its components draw directly from Retail and commerce data in the Dynamics AX database, and provide drill-down reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more. Power BI automatically creates reports and dashboards that give you a great starting point for exploring and analyzing your Retail and commerce data. This article includes the following information:
+The Retail channel performance PowerBI.com solution lets you quickly build your channel performance analytics. The PowerBI.com solution is designed specifically for channel managers who focus on sales performance to predict trends and uncover insights. Its components draw directly from Retail and commerce data in the Dynamics AX database, and provide drill-down reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more. Power BI automatically creates reports and dashboards that give you a great starting point for exploring and analyzing your Retail and commerce data. This article includes the following information:
 
--   Learn how to connect the Retail channel performance content pack in Power BI to a Dynamics AX data source.
+-   Learn how to connect the Retail channel performance PowerBI.com solution to a Dynamics AX data source.
 -   View a list of reports that provide insights into retail channel performance.
--   Learn how to modify an existing report in the content pack to make it self-authored.
+-   Learn how to modify an existing report in the PowerBI.com solution to make it self-authored.
 -   Get a glimpse of an actual data model that enables the whole experience in Power BI.
 
-## Connect the Retail channel performance content pack in Power BI to a Dynamics AX data source
+## Connect the Retail channel performance PowerBI.com solution to a Dynamics AX data source
 1.  Go to https://www.powerbi.com, and click **Sign in**. If you don't have an account, you can sign up to try the new Power BI Preview for free.
 2.  To sign in, enter a Microsoft Office 365 account that has a Power BI account.
 3.  If your workspace appears, click **Get Data** at the bottom of the left navigation pane.
@@ -72,8 +72,8 @@ For example, you might want to do a deeper analysis of geographical sales distri
 
 [![Geographical sales distribution report](./media/slicendicegeographicalsalesdata-1024x715.png)](./media/slicendicegeographicalsalesdata.png)
 
-## Modify an existing report in the content pack to make it self-authored
-Here's an example that shows how easy it is to modify an existing report in the content pack to make it self-authored. In this example, we will modify an existing report that is named **Category & product performance** by adding **Category level 1** to the **Total amount by Month/Year** chart on that report.
+## Modify an existing report in the PowerBI.com solution to make it self-authored
+Here's an example that shows how easy it is to modify an existing report in the PowerBI.com solution to make it self-authored. In this example, we will modify an existing report that is named **Category & product performance** by adding **Category level 1** to the **Total amount by Month/Year** chart on that report.
 
 1.  Click the **CategoryProductPerformance** tab at the bottom of the window to open the **Category & product performance** report, and then click **Edit report**. [![Edit report](./media/editreport-1024x580.png)](./media/editreport.png)
 2.  Select the chart that is named **Total amount by Month/Year**. Then, on the right side of the window, in the **Fields** pane, expand the **Default Retail Product Category Hierarchy** node. [![Default Retail Product Category Hierarchy node for the Total amount by Month/Year chart](./media/editreportstep2-1024x624.png)](./media/editreportstep2.png)
@@ -81,9 +81,9 @@ Here's an example that shows how easy it is to modify an existing report in the 
 4.  Finally, try to change the visualization itself. Select the **Total amount by Month/Year and Category level 1** chart, and then, in the **Visualizations** pane, click **Area chart** or **Stacked area chart**, and see the effect. [![Changing the visualization of the Total amount by Month/Year and Category level 1 chart](./media/editreportstep4-1024x630.png)](./media/editreportstep4.png)
 
 ## Get a glimpse of the actual data model
-The data model that is included in the content pack for the Dynamics AX data entities and aggregated data entities lets you slice and dice across various measures by using different dimensions. [![Data model](./media/datamodeltomakeslicingndicingpossibleinrcm-1024x600.png)](./media/datamodeltomakeslicingndicingpossibleinrcm.png)
+The data model that is included in the PowerBI.com solution for the Dynamics AX data entities and aggregated data entities lets you slice and dice across various measures by using different dimensions. [![Data model](./media/datamodeltomakeslicingndicingpossibleinrcm-1024x600.png)](./media/datamodeltomakeslicingndicingpossibleinrcm.png)
 
-See also
+Additional resources
 --------
 
 [Power BI integration](power-bi-integration.md)

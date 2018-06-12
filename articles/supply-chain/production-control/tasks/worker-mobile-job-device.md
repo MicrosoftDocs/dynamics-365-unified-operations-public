@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Configure a worker using the mobile job device
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.
 

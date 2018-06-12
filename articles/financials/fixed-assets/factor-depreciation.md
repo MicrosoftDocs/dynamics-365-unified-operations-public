@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Factor depreciation
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article gives an overview of the factor depreciation method.
 
 Factors are the percentages that are used to depreciate assets. When you set up a fixed asset depreciation profile and select **Factor** in the **Method** field on the **Depreciation profiles** page, you can set up progressive, digressive, or straight line depreciation:
 
--   In progressive depreciation, the amount of depreciation increases each depreciation period.
--   In digressive depreciation, the amount of depreciation per period decreases over time.
+-   In progressive depreciation, the amount of depreciation increases each depreciation period.
+-   In digressive depreciation, the amount of depreciation per period decreases over time.
 -   In straight line depreciation, the depreciation is the same in each period.
 
 The rules and examples that follow indicate how you can set up factors for each type of depreciation. 

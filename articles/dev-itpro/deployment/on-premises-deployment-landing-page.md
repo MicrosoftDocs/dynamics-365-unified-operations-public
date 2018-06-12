@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 8
 ---
 # On-premises deployment home page
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises). When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment. This topic provides links to content that contains information specific to on-premises deployments.
 

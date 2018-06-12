@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 .md
 # Set up and maintain vendor collaboration
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. From this interface, a vendor can also reply to requests for quotation (RFQs), and view and edit basic company information.
 
@@ -162,6 +162,8 @@ If the email address of a new vendor collaboration user belongs to a domain that
 
 For more information about the process that is used in the **Send Azure B2B user invitation** task in the workflow for Azure AD account management, see [Azure Active Directory B2B collaboration](https://azure.microsoft.com/en-us/documentation/articles/active-directory-b2b-collaboration-overview/).
 
-## See also
+## Additional resources
 
 [Using vendor collaboration to work with external vendors](vendor-collaboration-work-external-vendors.md)
+
+Watch a short video on the vendor onboarding process: [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)

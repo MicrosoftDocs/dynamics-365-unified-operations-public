@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Develop composite data entities
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 A composite entity is a concept that allows you to build a single entity by leveraging multiple entities that are related to each other. 
 
@@ -70,46 +69,46 @@ Make sure that the entities are related to each other. In this example the indiv
 
 ### Step 2: Add relations between individual entities
 
-Add a relation to parent entity in the relations node. Example – MySalesLineEntity has relationship to MySalesTableEntity.  [![DevelopingCompositeEntities (18)](./media/developingcompositeentities-18.png)](./media/developingcompositeentities-18.png)
+Add a relation to parent entity in the relations node. Example – MySalesLineEntity has relationship to MySalesTableEntity.  [![DevelopingCompositeEntities (18)](./media/developingcompositeentities-18.png)](./media/developingcompositeentities-18.png)
 
 ### Step 3: Create a new composite entity
 
 1.  Add a new **Dynamics 365** artifact item of type **Composite entity** to the project.
-2.  In designer mode, right-click the entity and select **New Root Data Entity Reference**. [![DevelopingCompositeEntities (2)](./media/developingcompositeentities-2.png)](./media/developingcompositeentities-2.png)
+2.  In designer mode, right-click the entity and select **New Root Data Entity Reference**. [![DevelopingCompositeEntities (2)](./media/developingcompositeentities-2.png)](./media/developingcompositeentities-2.png)
 3.  Set the data entity to parent data entity. In this case its MySalesTableEntity.
 4.  Right-click the parent entity node and select **New Embedded Data Entity Reference**. [![DevelopingCompositeEntities (3)](./media/developingcompositeentities-3.png)](./media/developingcompositeentities-3.png)
 5.  Set the embedded data entity as the child entity. In this case it is MySalesLineEntity.
-6.  Set the **Relation** property from the drop-down list on the embedded data entity properties.  [![DevelopingCompositeEntities (4)](./media/developingcompositeentities-4.png)](./media/developingcompositeentities-4.png)
+6.  Set the **Relation** property from the drop-down list on the embedded data entity properties.  [![DevelopingCompositeEntities (4)](./media/developingcompositeentities-4.png)](./media/developingcompositeentities-4.png)
 7.  Composite entity supports multi-level child entities.
 
 ### Step 4: Create relationships between staging tables
 
 You need to create relationships between the parent and child entity staging tables based on the natural keys. For example, staging tables for MySalesTable and MySalesLine are linked by SalesID, DefinitionGroup, and ExecutionId.
 
-1.  Add a foreign key relation on MySalesLineStaging table.  [![DevelopingCompositeEntities (5)](./media/developingcompositeentities-5.png)](./media/developingcompositeentities-5.png)
-2.  Add two columns, RowId and ParentRowId (type int), on all the staging tables associated with the composite data entity. Refer to SysCompositeHeaderStaging table for the columns properties. [![DevelopingCompositeEntities (7)](./media/developingcompositeentities-7.png)](./media/developingcompositeentities-7.png)
+1.  Add a foreign key relation on MySalesLineStaging table.  [![DevelopingCompositeEntities (5)](./media/developingcompositeentities-5.png)](./media/developingcompositeentities-5.png)
+2.  Add two columns, RowId and ParentRowId (type int), on all the staging tables associated with the composite data entity. Refer to SysCompositeHeaderStaging table for the columns properties. [![DevelopingCompositeEntities (7)](./media/developingcompositeentities-7.png)](./media/developingcompositeentities-7.png)
 
 These columns are used to define runtime relationships during the target data movement.
 
--   Create a cluster index on the staging tables which includes RowId, ParentRowid,DefinitionGroup, and ExecutionId. This is for performance reasons.
+-   Create a cluster index on the staging tables which includes RowId, ParentRowid,DefinitionGroup, and ExecutionId. This is for performance reasons.
 -   Compile and synchronize the artifacts.
 
 ### Step 5: Set up the metadata for DMFEntity
 
 For local testing the composite entity metadata needs to be refreshed.
 
-1.  Go to **DIXF Parameters &gt; Entity settings**. Click **Refresh entity list**.  [![DevelopingCompositeEntities (8)](./media/developingcompositeentities-8-1024x212.png)](./media/developingcompositeentities-8.png)
+1.  Go to **DIXF Parameters &gt; Entity settings**. Click **Refresh entity list**.  [![DevelopingCompositeEntities (8)](./media/developingcompositeentities-8-1024x212.png)](./media/developingcompositeentities-8.png)
 2.  Alternately, you can write the following job to refresh the composite entity list metadata.
 
         DMFDataPopulation::refreshCompositeEntityList();
 
 3.  Execute the job. This refreshes the metadata required for the entity lookup.
 
-**Note:** Currently this is a workaround. In the future a feature will be enabled to refresh the list at compile/sync time.
+**Note:** Currently this is a workaround. In the future a feature will be enabled to refresh the list at compile/sync time.
 
 ### Step 6: Test the entity locally
 
-We recommend that you import and export the data as a normal entity from DIXF standard process. Refer to the following the steps for importing and exporting entity. **Note:** The source types of XML-Attribute or XML-Element are supported for composite entity.
+We recommend that you import and export the data as a normal entity from DIXF standard process. Refer to the following the steps for importing and exporting entity. **Note:** The source types of XML-Attribute or XML-Element are supported for composite entity.
 
 ## Import a composite entity
 1.  Click **Import**.
@@ -131,11 +130,11 @@ We recommend that you import and export the data as a normal entity from DIXF st
     -   Mapping fails and the file is not imported.
 -   Root cause:
     -   Check if the exported file has lines or related child entity information.
-    -   If there no lines or related child entity information, then the lines will not be mapped during import.
+    -   If there no lines or related child entity information, then the lines will not be mapped during import.
 -   Resolution:
-    -   Create a sample file with all of the child entities.
+    -   Create a sample file with all of the child entities.
     -   Use this file for initial mapping only.
-    -   When the mapping is successful, import the actual file which does not have the line data into the entity. Use reimport or upload a new file.
+    -   When the mapping is successful, import the actual file which does not have the line data into the entity. Use reimport or upload a new file.
     -   This should import files with partial data (blank child records), depending on the validity of the records.
 
 

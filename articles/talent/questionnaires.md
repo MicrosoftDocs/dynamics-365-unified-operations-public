@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # Questionnaires
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic provides general information about questionnaires, and links to more detailed information. A questionnaire is a set of questions that is used to collect information for various purposes. You can design, create, distribute, and complete questionnaires, and then analyze the results. 
 
@@ -54,7 +54,7 @@ The following table provides links to information about the core questionnaire t
 
 
 
-See also
+Additional resources
 --------
 
 [Designing questionnaires](design-questionnaires.md)

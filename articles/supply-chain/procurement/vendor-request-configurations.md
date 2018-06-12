@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 ---
 
 # Vendor request configurations
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 To complete a vendor request, a vendor contact person must complete the prospective vendor registration wizard.
 
@@ -42,12 +42,12 @@ By default, there is a vendor configuration available in the Vendor request conf
 
 It is not possible to select country/regions for the default configuration, so the **Countries/regions** section cannot be changed.
 
-1.	Click **Procurement and sourcing** > **Setup** > **Vendors**, and then click **Vendor request configurations**.
-2.	Click the **Fields** tab to set the status of the listed fields.
--   Hidden (Not visible)
--   Displayed (Visible but not mandatory)
--   Required (Visible and mandatory)
-3.	Click the **Content** tab to specify if text is going to be shown on the wizard and if there should be an acknowledgement that the prospective vendor user must accept this before moving to the next step in the wizard. The acknowledgement will be requested for any terms and conditions that the user must accept to continue.
+1. Click **Procurement and sourcing** > **Setup** > **Vendors**, and then click **Vendor request configurations**.
+2. Click the **Fields** tab to set the status of the listed fields.
+3. Hidden (Not visible)
+4. Displayed (Visible but not mandatory)
+5. Required (Visible and mandatory)
+6. Click the **Content** tab to specify if text is going to be shown on the wizard and if there should be an acknowledgement that the prospective vendor user must accept this before moving to the next step in the wizard. The acknowledgement will be requested for any terms and conditions that the user must accept to continue.
 
 You can also enter a confirmation message that will be displayed when the wizard is finalized, and you can add one or more questionnaires.
 

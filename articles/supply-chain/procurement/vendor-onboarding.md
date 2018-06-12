@@ -28,7 +28,8 @@ ms.dyn365.ops.version: 7.3
 ---
 
 # Onboard vendors
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+
 ---
 
 New vendors can be onboarded and registered as vendors in Microsoft Dynamics 365 for Finance and Operations, based on information that is collected from a person who represents the vendor.
@@ -51,8 +52,7 @@ The following table shows the steps and roles that are involved in the process.
 | Administrator            | | | Create a user in Finance and Operations and Microsoft Azure. | | | |
 | Vendor contact person    | | | Send email to the contact person. | Register vendor information. | | |
 
-For a quick demonstration of the vendor onboarding process, watch this short YouTube video: 
-> [!Video https://www.youtube.com/embed/0KUc3AGaTKk]
+For a quick demonstration of the vendor onboarding process, watch this short YouTube video: [Onboard a new vendor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
 
 ## Importing the prospective vendor registration request
 
@@ -167,12 +167,14 @@ The various statuses of a prospective vendor registration request give an overvi
 
 By using the **Delete** action on the prospective vendor registration request, you can clean up and remove the chain of records that has been created, and you can inactivate the user account. The result of the **Delete** action varies, depending on the status of the prospective vendor registration request, as shown in the following table.
 
-| Status                   | Status description | Result of the Delete action |
-|--------------------------|--------------------|-----------------------------------|
-| New                      | No actions have been taken on the request. | The prospective vendor registration request is deleted. |
-| User requested           | When you select **Invite user**, the status is changed to **User requested**, and a prospective user request is created and submitted to a user request workflow. | You can't delete a prospective vendor registration request that has this status, because the user request workflow hasn't ended. |
-| User invited             | The user request workflow is approved, and the user is created. | A request to inactivate the user is created, and the prospective vendor registration request is deleted. |
-| Registration in progress | The new user has signed in and has started the vendor registration wizard. | A request to inactivate the user is created, and the prospective vendor registration request and the data that was entered in the vendor registration wizard are deleted. |
-| Vendor request created   | The vendor registration wizard has been completed. | A request to inactivate the user is created, and the prospective vendor registration request, the data that was entered in the vendor registration wizard, and the vendor request are deleted.<blockquote>[!NOTE]<br>You can't use the **Delete** action when the vendor request is in a review process in the workflow.</blockquote> |
-| Approved                 | The vendor request is approved. | The prospective vendor registration request, the data that was entered in the vendor registration wizard, and the vendor request are deleted. |
-| Rejected                 | The vendor request is rejected. | The prospective vendor registration request, the data that was entered in the vendor registration wizard, and the vendor request are deleted. |
+
+|          Status          |                                                                                     Status description                                                                                      |                                                                                                                                                            Result of the Delete action                                                                                                                                                             |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|           New            |                                                                         No actions have been taken on the request.                                                                          |                                                                                                                                              The prospective vendor registration request is deleted.                                                                                                                                               |
+|      User requested      | When you select <strong>Invite user</strong>, the status is changed to <strong>User requested</strong>, and a prospective user request is created and submitted to a user request workflow. |                                                                                                          You can't delete a prospective vendor registration request that has this status, because the user request workflow hasn't ended.                                                                                                          |
+|       User invited       |                                                               The user request workflow is approved, and the user is created.                                                               |                                                                                                                      A request to inactivate the user is created, and the prospective vendor registration request is deleted.                                                                                                                      |
+| Registration in progress |                                                         The new user has signed in and has started the vendor registration wizard.                                                          |                                                                                     A request to inactivate the user is created, and the prospective vendor registration request and the data that was entered in the vendor registration wizard are deleted.                                                                                      |
+|  Vendor request created  |                                                                     The vendor registration wizard has been completed.                                                                      | A request to inactivate the user is created, and the prospective vendor registration request, the data that was entered in the vendor registration wizard, and the vendor request are deleted.<blockquote>[!NOTE]<br>You can't use the <strong>Delete</strong> action when the vendor request is in a review process in the workflow.</blockquote> |
+|         Approved         |                                                                               The vendor request is approved.                                                                               |                                                                                                   The prospective vendor registration request, the data that was entered in the vendor registration wizard, and the vendor request are deleted.                                                                                                    |
+|         Rejected         |                                                                               The vendor request is rejected.                                                                               |                                                                                                   The prospective vendor registration request, the data that was entered in the vendor registration wizard, and the vendor request are deleted.                                                                                                    |
+

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 # Modello 770
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up, create, and export the Model 770 report that is used to report withholding tax.
 

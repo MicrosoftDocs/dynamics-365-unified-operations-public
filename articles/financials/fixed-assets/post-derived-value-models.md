@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Post with derived books
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes how to use derived books.
 
@@ -48,11 +47,11 @@ When you post transactions for a book that contains derived books, the derived b
 ## Example 
 The following information describes how to set up acquisition transactions with the derived book functionality.
 
-1.  Create the books on the Books page.
+1.  Create the books on the Books page.
     -   The book for accounting: VM 1, Current posting layer
     -   The book for tax purposes: VM 2, Tax posting layer
 
-2.  On VM 1, click the Derived books tab. Select VM 2 in the Book field, and Acquisition in the Transaction type field.
+2.  On VM 1, click the Derived books tab. Select VM 2 in the Book field, and Acquisition in the Transaction type field.
 
 The books then can be attached to specific fixed assets. 
 

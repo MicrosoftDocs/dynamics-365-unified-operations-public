@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 # Pay based on registrations
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains, in detail, how pay is calculated based on worker registrations. It includes examples that show how the various combinations of setup options that are available for the calculation affect the result. Here are some of the areas that will be covered:
 
@@ -449,7 +449,7 @@ You can create planned absence for workers on the **Create planned absence** pag
 The job is based on a query. Therefore, you can create planned absence for multiple workers, such as workers who belong to the same calculation group. If the planned absence is for a single worker, the registration can be entered from either the **Attendance** page or the **Time registration workers** page.
 
 - To enter an absence registration from the **Attendance** page, select **Time and attendance** &gt; **Inquiries and reports** &gt; **Attendance** &gt; **Attendance**, and then select **Absence registration**.
-- To enter an absence registration from the ****Time registration workers**** page, select **Time and attendance** &gt; **Setup** &gt; **Time registration workers**, and then, on the **Time** tab, under **Time assignment**, select **Absence registrations**.
+- To enter an absence registration from the *<strong><em>Time registration workers</em></strong>* page, select <strong>Time and attendance</strong> &gt; <strong>Setup</strong> &gt; <strong>Time registration workers</strong>, and then, on the <strong>Time</strong> tab, under <strong>Time assignment</strong>, select <strong>Absence registrations</strong>.
 
 You can use the **Planned absences** report to see an overview of planned absences for workers. To open this report, select **Time and attendance** &gt; **Inquiries and reports** &gt; **Absence reports** &gt; **Planned absences**.
 

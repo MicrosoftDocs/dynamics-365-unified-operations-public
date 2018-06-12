@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # A Classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter A.
 
@@ -328,7 +327,7 @@ The following example adds a field of the enum type to the TutorialJournalName t
     { 
         AOTTableFieldList tfl = infolog.findNode( 
             '\\Data Dictionary\\Tables\\TutorialJournalName\\Fields'); 
-     
+
          if (!tfl.AOTFindChild('NewEnum')) 
          { 
              tfl.addEnum('NewEnum');  // Adds the field NewEnum. 
@@ -405,10 +404,10 @@ The following code example adds the NewContainer and NewContainer1 fields, which
 
     AOTTableFieldList tfl = infolog.findNode( 
         '\\Data Dictionary\\Tables\\TutorialJournalName\\Fields'); 
-     
+
     // Add a NewContainer field. 
     tfl.addContainer('NewContainer'); 
-     
+
     // Add a NewContainer1 field. 
     tfl.addContainer('NewContainer');
 
@@ -620,7 +619,7 @@ The following example creates an array of classes and adds three query objects t
 
     { 
         Array oarray = new Array (Types::Class); 
-     
+
         oarray.value(1, new query()); 
         oarray.value(2, new query()); 
         oarray.value(4, new query());  
@@ -661,7 +660,7 @@ The following example creates an array of classes and then adds three query obje
 
     { 
         Array oarray = new Array (Types::Class); 
-     
+
         oarray.value(1, new query()); 
         oarray.value(2, new query()); 
         oarray.value(4, new query());  
@@ -690,25 +689,25 @@ The following example uses the exists method to test whether various elements in
 
     { 
         array a = new array(types::Integer); 
-     
+
         a.value(1, 23); 
-      
+
         print a.value(1); 
         pause; 
         if (a.exists(7)) // No, only element 1 is initialized 
         { 
             print a.value(7); 
-      
+
         } 
         else  
         { 
             print "Value does not exist"; 
         } 
         pause; 
-     
+
         //Array positions 2 to 9 padded with default values 
         a.value(10, 55); 
-      
+
         if (a.exists(7)) // Yes, elements 1..10 now initialized 
         { 
             print a.value(7); 
@@ -737,10 +736,10 @@ The following example uses the lastIndex method to find the last element in the 
     { 
         Array myArray = new Array(Types::Integer); 
         int newValue; 
-     
+
         // Other code - values are added to myArray 
         // and a value is assigned to newValue 
-      
+
         myArray.value(myArray.lastIndex()+1, newValue); 
     }
 
@@ -774,19 +773,19 @@ The following example creates an array of integers and adds some values to it. T
         // Create an integer array 
         Array ia = new Array (Types::Integer); 
         Array iacopy; 
-      
+
         // Write some elements in it 
         for (i = 1; i< 10; i++) 
         { 
             ia.value(i, i*2); 
         } 
-      
+
         // Pack the array 
         packedArray = ia.pack(); 
-      
+
         // Unpack the array  
         iacopy = Array::create(packedArray); 
-      
+
         // Check the values 
         for (i = 1; i< 10; i++) 
         { 
@@ -814,20 +813,20 @@ The following example creates an array of integers and adds some values to it. T
 
     { 
         Array     myArray; 
-      
+
         Set set1 = new Set(Types::Integer); 
         Set set2 = new Set(Types::Integer); 
         int i; 
-     
-      
+
+
         myArray = new Array(Types::Integer); 
-      
+
         // Add some values to the array. 
         for (i = 1; i< 10; i++) 
         { 
             myArray.value(i, i*2); 
         } 
-      
+
         // Print out the values in the array. 
         print myArray.toString(); 
         pause; 
@@ -857,7 +856,7 @@ The following example tests whether a particular array element exists. If it doe
         { 
             a.value(_index,nullValueFromType(a.typeId())); 
         } 
-      
+
         return a.value(_index); 
     }
 
@@ -893,13 +892,13 @@ The following example creates an array of integers and then uses the value metho
          int i; 
         // Create an integer array 
         Array ia = new Array (Types::Integer); 
-     
+
         // Write some elements in it 
         for (i = 1; i< 10; i++) 
         { 
             ia.value(i, i*2); 
         } 
-     
+
         // Check the values 
         for (i = 1; i< 10; i++) 
         { 
@@ -957,14 +956,14 @@ The following example creates an array and adds two sets to it. The array is pac
         Array     myArray; 
         Array     newArray; 
         container packedArray; 
-     
+
         Set set1 = new Set(Types::Integer); 
         Set set2 = new Set(Types::Integer); 
         int i; 
         int j; 
-     
+
         myArray = new Array(Types::Class); 
-      
+
         // Add some values to the set1 and set2 
         for (i = 0; i < 10; i++) 
         { 
@@ -972,20 +971,20 @@ The following example creates an array and adds two sets to it. The array is pac
             j = i+3; 
             set2.add(j); 
         } 
-      
+
         // Add set1 and set2 to myArray 
         myArray.value(1, set1); 
         myArray.value(2, set2); 
-      
+
         // Pack the myArray into a container 
         packedArray = myArray.pack(); 
-      
+
         // Create a new array from the container 
         if(packedArray != connull()) 
         { 
             newArray = Array::create(packedArray); 
         } 
-      
+
         // Test that newArray has same contents as myArray 
         print newArray.definitionString(); 
         print newArray.toString(); 
@@ -1271,20 +1270,20 @@ The following example uses the AsciiIo class to read from a text file.
         AsciiIo asciiIo; 
         container con; 
         FileIoPermission perm; 
-      
+
         #define.ExampleFile(@"c:\test.txt") 
         #define.ExampleOpenMode("r") 
-         
+
         // The AsciiIo.new method runs under code access permission. 
         perm = new FileIoPermission(#ExampleFile, #ExampleOpenMode); 
         if (perm == null) 
         { 
             return; 
         } 
-      
+
         // Code access permission scope starts here. 
          perm.assert(); 
-      
+
          asciiIo = new AsciiIo(#ExampleFile, #ExampleOpenMode); 
         if (asciiIo != null) 
         { 

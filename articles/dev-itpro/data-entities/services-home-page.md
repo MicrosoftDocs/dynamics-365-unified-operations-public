@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service endpoints
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the service endpoints that are available in Microsoft Dynamics 365 for Finance and Operations. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012. 
 
@@ -93,7 +93,8 @@ Before any clients can communicate with the services, they must be registered i
 4. Enter a name that identifies the external application that you're registering. For an application that will authenticate by using a shared secret, select **Web app / API**. In this context, the sign-on URL doesn't matter. Therefore, use **localhost**.
 5. Select the new application, and copy the application ID. You will require the application ID later to request an Azure AD authentication token. Select **Required permissions**.
 6. Select **Add**, and then select **Select an API**.
-7. Select **Microsoft Dynamics ERP**.
+7. Select **Microsoft Dynamics ERP (Microsoft.ERP)**. If you search **Microsoft Dynamics ERP** in the search field within **Select an API** it might appear to be greyed out. In that case, make sure you look for the full name as shown above.
+
 8. Under **Delegated permissions**, you must select, at a minimum, the following options:
 
     - Access Dynamics AX Custom Service
@@ -114,11 +115,11 @@ Before any clients can communicate with the services, they must be registered i
 2. Select **New**.
 3. Fill in the fields for the new record:
 
-    - In the **Client Id** field, enter the application ID that you registered in Azure AD.
-    - In the **Name** field, enter a name for the application.
-    - In the **User ID** field, select an appropriate service account user ID. For this example, we have selected the **Admin** user. However, as a better practice, you should provision a dedicated service account that has the correct permissions for the operations that must be performed.
+   - In the **Client Id** field, enter the application ID that you registered in Azure AD.
+   - In the **Name** field, enter a name for the application.
+   - In the **User ID** field, select an appropriate service account user ID. For this example, we have selected the **Admin** user. However, as a better practice, you should provision a dedicated service account that has the correct permissions for the operations that must be performed.
     
-    When you've finished, select **Save**.
+     When you've finished, select **Save**.
 
 You've now finished setting up the prerequisites. After the external application retrieves an Azure AD authentication token, it should now be able to use the token in an authorization HTTP header to make subsequent service calls via OData or SOAP, for example.
 

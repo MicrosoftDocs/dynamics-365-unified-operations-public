@@ -32,8 +32,7 @@ ms.search.validFrom: 2016-02-28
 
 # Display charges for a manufactured item
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 The constant costs of a manufactured item reflect the operation setup times and the components that have a constant quantity or a constant scrap amount.
 

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # General ledger 
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Use General ledger to define and manage the legal entity’s financial records. The general ledger is a register of debit and credit 
 entries. These entries are classified using the accounts that are listed in a chart of accounts. 
@@ -43,7 +42,7 @@ entries. These entries are classified using the accounts that are listed in a ch
 
 You can allocate, or distribute, monetary amounts to one or more accounts or account and dimension combinations based on allocation 
 rules. There are two types of allocations: fixed and variable. You can also settle transactions between ledger accounts and revalue 
-currency amounts. At the end of a fiscal year, you must generate closing transactions and prepare your accounts for the next fiscal year. You can use the consolidation functionality to combine the financial results for several subsidiary legal entities into results for a single, consolidated organization. The subsidiaries can be in the same Microsoft Dynamics 365 for Finance and Operations database or in separate databases.
+currency amounts. At the end of a fiscal year, you must generate closing transactions and prepare your accounts for the next fiscal year. You can use the consolidation functionality to combine the financial results for several subsidiary legal entities into results for a single, consolidated organization. The subsidiaries can be in the same Microsoft Dynamics 365 for Finance and Operations database or in separate databases.
 
 - [Consolidation and elimination overview](../budgeting/consolidation-elimination-overview.md)
 - [General ledger account balances](general-ledger-account-balances.md)

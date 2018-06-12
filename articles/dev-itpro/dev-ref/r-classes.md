@@ -32,10 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # R Classes
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!include [banner](../includes/banner.md)]
 
 Class Random
 ------------
@@ -592,7 +589,7 @@ fieldId
 
 <!-- -->
 
-  
+
 
 #### Remarks
 
@@ -710,6 +707,7 @@ This class represents a node under the AOT References node. This class describes
 
 | Method | Description |
 |--------|-------------|
+|        |             |
 
 ## Class RelationPath
     class RelationPath extends Object
@@ -14264,6 +14262,7 @@ section
 
 | Method | Description |
 |--------|-------------|
+|        |             |
 
 ## Class ReportPromptControl
     class ReportPromptControl extends ReportControl

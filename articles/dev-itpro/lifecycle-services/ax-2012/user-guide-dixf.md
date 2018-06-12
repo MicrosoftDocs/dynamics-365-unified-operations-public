@@ -32,10 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Data import/export framework user guide (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 Various versions of the Data Import/Export Framework are available. The version that you use depends on the version of Microsoft Dynamics AX that you run in your environment:
 

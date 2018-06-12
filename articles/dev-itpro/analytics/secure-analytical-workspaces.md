@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Help secure analytical workspaces and reports by using Power BI Embedded
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > This feature is supported in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) (version 7.2) and later releases.

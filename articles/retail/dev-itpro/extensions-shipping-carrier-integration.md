@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3.2
 
 # Extension points for packing slips during customer order fulfillment
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 When you generate packing slips for customer orders from the point of sale (POS), you might want to print the item weight on the packing slip. You might also want to add custom information about the package, information about how to call the shipping carrier for the shipping rates, or information about how to return the package. To handle these scenarios, extension points for the packing slip process for order fulfillment have been added in Retail headquarters, in the commerce runtime (CRT), which is the business logic layer, and in the POS. These extension points let you add custom flow and logic through extensions.
 

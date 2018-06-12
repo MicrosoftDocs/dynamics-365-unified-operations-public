@@ -31,17 +31,16 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Add extension properties to a customer entity
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This tutorial shows how to use extension properties to extend an entity. 
 
-In this tutorial, an entity is extended in Microsoft 365 for Retail, and persisted in both Retail and the channel databases. The point of sale (POS) user interface (UI) then provides access to the value. The new value is also written synchronously to Dynamics AX via the Commerce Data Exchange (CDX) transaction service. No customizations are required for the commerce runtime or Retail Server, because extension properties flow automatically. Changes are required in forms, tables, the Real-time Service (RTS) client, CDX, the channel database, and the POS (both Retail Modern POS and Cloud POS). This tutorial doesn't support offline mode.
+In this tutorial, an entity is extended in Microsoft 365 for Retail, and persisted in both Retail and the channel databases. The point of sale (POS) user interface (UI) then provides access to the value. The new value is also written synchronously to Dynamics AX via the Commerce Data Exchange (CDX) transaction service. No customizations are required for the commerce runtime or Retail Server, because extension properties flow automatically. Changes are required in forms, tables, the Real-time Service (RTS) client, CDX, the channel database, and the POS (both Retail Modern POS and Cloud POS). This tutorial doesn't support offline mode.
 
-Create a new Dynamics AX project
+Create a new Dynamics AX project
 --------------------------------
 
-1.  Create a new table that is named **RetailCustPreference** and that references the CustTable table.
+1.  Create a new table that is named **RetailCustPreference** and that references the CustTable table.
 2.  Start Microsoft Visual Studio.
 3.  Create a new model and project. On the **Dynamics AX** menu, click **Model Management** &gt; **Create Model**.
 4.  Create a new model in the USR layer, and then click **Next**.
@@ -63,7 +62,7 @@ Create a new Dynamics AX project
 2.  Your project now includes a new element that is named **CustTable.Extension**. Double-click this element to open the form designer.
 3.  Add a new data source that is named **RetailCustPreference**, and set the **Link Type** property to **OuterJoin**.
 4.  On the **CustTable** form on the **Retail** tab page, add a new group that is named **CustomerPreference** and that has the **Caption** property set to **Customer Preference** .
-5.  To the **RetailCustPreference** table in the **CustomerPreference** group, add a new check box field that is named **EmailOptIn**.
+5.  To the **RetailCustPreference** table in the **CustomerPreference** group, add a new check box field that is named **EmailOptIn**.
 6.  Add a new class that is named **CustTable\_Extension**. In the code editor, add the following code.
 
         public static class CustTable_Extension
@@ -71,9 +70,9 @@ Create a new Dynamics AX project
             [FormDataSourceEventHandler(formDataSourceStr(CustTable, CustTable), FormDataSourceEventType::ValidatingWrite)]
             public static void foo(FormDataSource fds, FormDataSourceEventArgs e)
             {
-                FormRun                             form = fds.formRun();
-                CustTable                           custTable = fds.cursor() as CustTable;
-                RetailCustPreference                retailCustPreference = form.dataSource(formDataSourceStr(CustTable, RetailCustPreference)).cursor() as RetailCustPreference;
+                FormRun                             form = fds.formRun();
+                CustTable                           custTable = fds.cursor() as CustTable;
+                RetailCustPreference                retailCustPreference = form.dataSource(formDataSourceStr(CustTable, RetailCustPreference)).cursor() as RetailCustPreference;
                 retailCustPreference.AccountNum     = custTable.AccountNum; form.dataSource(formDataSourceStr(CustTable, RetailCustPreference)).write(); 
             } 
         }
@@ -93,13 +92,13 @@ Create a new Dynamics AX project
         /// <param name = "extensionProperties"></param>
         private static void processExtensionProperties(AccountNum accountNum, str extensionProperties)
         {
-            XmlElement                  xmlElementExtensionProperties;
-            XmlNodeList                 xmlListExtensionProperties;
-            int                         i;
-            XmlElement                  xmlElementExtensionProperty;
-            str                         propertyName;
-            str                         propertyValue;
-            int                         emailOptInValue;
+            XmlElement                  xmlElementExtensionProperties;
+            XmlNodeList                 xmlListExtensionProperties;
+            int                         i;
+            XmlElement                  xmlElementExtensionProperty;
+            str                         propertyName;
+            str                         propertyValue;
+            int                         emailOptInValue;
             if(extensionProperties != null && extensionProperties != '')
             {
                 XmlDocument xmlExtensionProperties = new XmlDocument();
@@ -147,14 +146,14 @@ Create a new Dynamics AX project
         /// <returns></returns>
         private static container updateOptIn(AccountNum accountnum, int emailOptIn)
         {
-            RetailCustPreference        retailCustPreference;
+            RetailCustPreference        retailCustPreference;
             boolean validUpdate = false;
             str error = "NO error";
             int fromLine;
             try
             {
                 //Extensibility code for cust preference
-                select forUpdate EmailOptIn from retailCustPreference  where  retailCustPreference.AccountNum == accountnum;
+                select forUpdate EmailOptIn from retailCustPreference  where  retailCustPreference.AccountNum == accountnum;
                 if(retailCustPreference.RecId)
                 {
                     //retailCustPreference.clear();
@@ -222,7 +221,7 @@ You will manually change the channel database for development. For the live depl
 1.  Change \[crt\].\[CUSTOMERSVIEW\]:
     -   Before the UNION All, add ", isnull(rcp.EMAILOPTIN, 0) as EMAILOPTIN" to the end of the list of columns that should be selected.
     -   Before the UNION All, add "LEFT OUTER JOIN \[ax\].RETAILCUSTPREFERENCE rcp ON ct.ACCOUNTNUM = rcp.ACCOUNTNUM AND ct.DATAAREAID = rcp.DATAAREAID".
-    -   After the UNION All, add ", 0  as EMAILOPTIN" to the end of the list of columns that should be selected.
+    -   After the UNION All, add ", 0  as EMAILOPTIN" to the end of the list of columns that should be selected.
     -   Change sproc \[crt\].\[CREATEUPDATECUSTOMER\]:
 
 2.  Add the following code just before line "MERGE INTO \[ax\].DIRADDRESSBOOKPARTY":
@@ -267,20 +266,20 @@ You will manually change the channel database for development. For the live depl
 **Note:** No customizations are required for the commerce runtime or Retail Server. Extension properties flow automatically.
 
 ## Test the customization's business logic by using the Retail Server test client
-1.  Open the project at **RetailSdk\\SampleExtensions\\RetailServer\\Extensions.TestClient**, and then compile and run it.
-2.  In the field next to the **Activate New** button, enter the Retail Server URL, and then click **Activate New**.
-3.  Enter the device and register IDs, and then click **Activate**.
-4.  Enter the Microsoft Azure Active Directory (Azure AD) credentials that have registration privileges, and then click **OK**.
-5.  Wait for the test client to show which device is registered.
-6.  Click the sign-in button, and sign in by using worker credentials.
-7.  Click **Sdk Tests**. This button calls the new functionality that saves a customer with the **EmailOptIn** extension property applied.
-8.  In Dynamics AX or the database, verify that the customer's **EmailOptIn** value is stored correctly. **Note: **To see a console that includes errors/logs, use the **Debug** button.
+1. Open the project at **RetailSdk\\SampleExtensions\\RetailServer\\Extensions.TestClient**, and then compile and run it.
+2. In the field next to the **Activate New** button, enter the Retail Server URL, and then click **Activate New**.
+3. Enter the device and register IDs, and then click **Activate**.
+4. Enter the Microsoft Azure Active Directory (Azure AD) credentials that have registration privileges, and then click **OK**.
+5. Wait for the test client to show which device is registered.
+6. Click the sign-in button, and sign in by using worker credentials.
+7. Click **Sdk Tests**. This button calls the new functionality that saves a customer with the **EmailOptIn** extension property applied.
+8. In Dynamics AX or the database, verify that the customer's <strong>EmailOptIn</strong> value is stored correctly. <strong>Note: **To see a console that includes errors/logs, use the **Debug</strong> button.
 
 ## Extend Modern POS
 1.  Open the **ModernPos.sln** solution.
 2.  Do a global search for **BEGIN SDKSAMPLE\_CUSTOMERPREFERENCES** in the solution.
 3.  Enable the code at all places that you found, and recompile. Only one resources file is required. You can select the required locale.
-4.  Run Modern POS, and verify that you can create a new customer. When an existing customer is updated, the flag should be updated correctly in both the channel database and the Dynamics AX database.
+4.  Run Modern POS, and verify that you can create a new customer. When an existing customer is updated, the flag should be updated correctly in both the channel database and the Dynamics AX database.
 
 ## Live deployment
 1.  Add the channel database change file to the database folder, and register it in **customization.settings**.

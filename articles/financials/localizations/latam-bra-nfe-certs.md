@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # NF-e certificates
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In the Brazilian localization, you must generate a Nota Fiscal eletrônica (NF e) to register the movement of items and services between two parties.
 The NF e fiscal document must be signed and transmitted to the state tax authority using a client certificate that is issued by a Brazilian certificate authority (CA).
@@ -53,7 +53,7 @@ The Brazilian government updated the root certification authority (CA) that is u
 
 Brazilian certificates must be installed via Azure Key Vault. Key Vault lets you store encrypt keys, certificates, and secrets (such as authentication keys, storage account keys, data encryption keys, .pxf files, and passwords) by using keys that are protected by hardware security modules (HSMs).
 
-For more information about how to use keys and secrets with Key Vault, see [About keys, secrets, and certificates](https://docs.microsoft.com/en-us/rest/api/keyvault/about-keys--secrets-and-certificates).
+For more information about how to use keys and secrets with Key Vault, see [About keys, secrets, and certificates](https://docs.microsoft.com/rest/api/keyvault/about-keys--secrets-and-certificates).
 The following table lists each tax authority and the solution that you should use to install certificates for it in Finance and Operations.
 
 |Tax authority|	States|	Solution|

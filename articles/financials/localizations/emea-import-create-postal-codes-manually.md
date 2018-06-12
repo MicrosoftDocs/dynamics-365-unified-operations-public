@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Import or manually create postal codes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to import and manually create postal codes in the correct format. This topic includes information about feature that was added for Microsoft Dynamics 365 for Finance and Operations. 
 
@@ -41,7 +40,7 @@ The import process lets you update the ZIP/postal codes for a specific country/r
 ## Import ZIP/postal codes
 You can use the **Import ZIP/postal codes** page to import new postal codes into Finance and Operations. When you import the codes, the existing ZIP or postal codes are replaced with the new format, and any new codes are added.
 
-For some countries, you must use the Data management framework to import codes, while for other countries only an upload file is required. Belgium, Netherlands, and Sweden require a file to upload.
+For some countries, you must use the Data management framework to import codes, while for other countries only an upload file is required. Belgium, Netherlands, and Sweden require a file to upload.
 
 > [!NOTE]
 > -   For Belgium, the official webpage from the Belgian Post provides an official list of the postcodes and the corresponding city names. The import supports html file format.
