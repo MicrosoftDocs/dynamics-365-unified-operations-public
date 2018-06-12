@@ -62,7 +62,7 @@ As part of the improvements to the statement posting feature, three new paramete
 
 Additionally, the **Maximum number of parallel statement posting** field has been introduced on the **Batch processing** FastTab. This field defines the number of batch tasks should be run at the same time. Currently, you must manually set the value of this field.
 
-Also, with the new posting process, it is required to define a **Gift card product**  on the **Gift card** FastTab on the **Posting** tab of the **Retail parameters** page
+Also, with the new posting process, it is required to define a **Gift card product**  on the **Gift card** FastTab on the **Posting** tab of the **Retail parameters** page. This is true even if no Gift cards are used by the organization. 
 
 Note that all settings and parameters that are related to statement postings, and that are defined on Retail stores and on the **Retail parameters** page, are applicable to the improved statement posting feature.
 
