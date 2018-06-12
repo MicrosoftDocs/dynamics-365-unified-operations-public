@@ -1,3 +1,4 @@
+
 ---
 # required metadata
 
@@ -58,7 +59,7 @@ There are two ways to add a new location roles for address and contact informati
 
         ![Insert New Location](media/InsertNewLocation.PNG)
 
-## Add new party relationship types 
+## Add party relationship types 
 
 There are two ways to add a new relationship type:
 

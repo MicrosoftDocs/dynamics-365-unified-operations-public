@@ -291,3 +291,6 @@ When you create a new record by using an OData client, as shown in example 1, pr
             context.SaveChanges(SaveChangesOptions.PostOnlySetProperties);
         }
 
+
+### Handling duplicate names between enums and entities in metadata
+There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the helper code in gitHub https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the Odata logic on the client side.
