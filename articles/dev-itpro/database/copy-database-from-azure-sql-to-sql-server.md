@@ -59,6 +59,7 @@ The following prerequisites must be met before you can move a database:
     > In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database.
 
 - The destination SQL Server environment must run SQL Server 2016 Release to Manufacturing (RTM) (13.00.1601.5) or later. The Community Technology Preview (CTP) versions of SQL Server 2016 might cause errors during the import process.
+
     > [!IMPORTANT] 
     > To export a database from a sandbox environment, you must be running the same version of SQL Server Management Studio (SSMS) that is in the environment you will be importing the database to. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the VM that runs Application Object Server (AOS) in the sandbox environment. Do the bacpac export on that AOS computer. There are two reasons for this requirement:
 
@@ -189,6 +190,8 @@ UPDATE BatchJob
 SET STATUS = 0
 WHERE STATUS IN (1,2,5,7)
 GO
+-- Clear encrypted hardware profile merchand properties
+update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUREMERCHANTPROPERTIES is not null
 ```
 
 ## Export the database
@@ -277,6 +280,9 @@ WHERE T1.storageproviderid = 1 --Azure storage
 
 ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
 GO
+DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking
+DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking_V2
+GO
 -- Begin Refresh Retail FullText Catalogs
 DECLARE @RFTXNAME NVARCHAR(MAX);
 DECLARE @RFTXSQL NVARCHAR(MAX);
@@ -305,6 +311,12 @@ DEALLOCATE retail_ftx;
 -- End Refresh Retail FullText Catalogs
 ```
 
+### Enable change tracking
+If change tracking was enabled in the source database, ensure to enable change tracking again in the newly provisioned database in the target environment using the ALTER DATABASE command.
+
+To ensure current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management. This can be done on any entity as this is needed to trigger the refresh of store procedure.
+
+
 ### Re-provision the target environment
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
@@ -317,9 +329,9 @@ If you're using Financial Reporting, which was previously named Management Repor
 
 To switch the environment and use the new database, first stop the following services:
 
-- World wide web publishing service
-- Finance and Operations Batch Management service
-- Management Reporter 2012 Process service
+- World Wide Web Publishing Service
+- Microsoft Dynamics 365 Unified Operations: Batch Management Service
+- Management Reporter 2012 Process Service
 
 After the services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
 

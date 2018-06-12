@@ -3,9 +3,9 @@
 
 title: Service management   
 description: Use Service management to establish service agreements and service subscriptions, handle service orders and customer inquiries, and to manage and analyze the delivery of services to customers. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,17 +14,16 @@ ms.technology:
 # optional metadata
 
 ms.search.form: SMAServiceOrderTable
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: YuyuScheller
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -47,7 +46,7 @@ You can create service orders to manage information about scheduled and unschedu
 
 4.  Any expenses and fees related to the service or repair
 
-Customers can submit service requests through the Internet by using the Enterprise Portal. You can receive, process, and dispatch these requests. After you have created a service order, you can use service stages to monitor progress and specify rules that control what actions are enabled in each stage. When a service order is complete, you can sign off on the order to confirm that it is complete, and then post the order to start the invoice process.
+You can receive, process, and dispatch service requests. After you have created a service order, you can use service stages to monitor progress and specify rules that control what actions are enabled in each stage. When a service order is complete, you can sign off on the order to confirm that it is complete, and then post the order to start the invoice process.
 
 Use the reporting tools to monitor service order margins and subscription transactions, and print work descriptions and work receipts.
 
@@ -59,47 +58,19 @@ The following diagram illustrates the high level business processes for **Servic
 
 ## Service management at a glance
 
-<table>
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Important tasks</p></th>
-<th><p>Primary forms</p></th>
-<th><p>Popular reports</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Fulfill service agreements</a></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/aa617823(v=ax.60)">Service agreements (form)</a></p></td>
-<td><p><strong>Service order margin</strong></p></td>
-</tr>
-<tr class="even">
-<td><p>Handle customer inquiries</a></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/aa554361(v=ax.60)">Service orders (form)</a></p></td>
-<td><p><strong>Work description</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p><a href="https://technet.microsoft.com/en-us/library/hh242789(v=ax.60)">Dispatch board (form)</a></p></td>
-<td><p><strong>Transaction - subscription</strong></p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p></p></td>
-<td><p><strong>Subscription fee transactions</strong></p></td>
-</tr>
-</tbody>
-</table>
+|Important tasks           | Primary pages                         |Popular reports              |
+|--------------------------|---------------------------------------|-----------------------------|
+|Fulfill service agreements|Service agreements                     |Service order margin         |
+|Handle customer inquiries |Service orders                         |Work description             |
+|                          |Dispatch board                         |Transaction - subscription   |
+|                          |                                       |Subscription fee transactions|
 
 
 ## Integration of Service management
 
-Service management can be integrated with the following modules in Microsoft Dynamics 365 for Finance and Operations:
+Service management can be integrated with the following modules:
 
   - [Sales and marketing](../sales-marketing/overview-sales-marketing.md)
-
   - [Human resources](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/index)
 
   

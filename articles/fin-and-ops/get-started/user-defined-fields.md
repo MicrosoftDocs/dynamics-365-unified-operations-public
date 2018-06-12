@@ -37,10 +37,7 @@ While Microsoft Dynamics 365 for Finance and Operations provides an extensive se
 
 The ability to add custom fields is available in platform update 13 and later.
 
-This video shows how easy it is to add a custom field to a page.
-
-
-> [!Video https://www.youtube.com/embed/gWSGZI9Vtnc]
+This video shows how easy it is to add a custom field to a page: [Adding custom fields in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
 ## Creating custom fields
 After you’ve identified additional information that you would like to track in the application, you can create the custom field on the appropriate table and expose that new field on a page.   

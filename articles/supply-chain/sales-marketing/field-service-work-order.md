@@ -164,7 +164,7 @@ Synchronization of **Estimated** values versus **Used** values is managed throug
     - **Product line:** Estimated Qty = 5ea, Used Qty = 6ea, Line Status = Used, Allocated = Yes
     - **Service line:** Estimated Qty = 2h, Used Qty = 1.5h, Line Status = Used
 
-    In this example, the product's **Used Qty** value of **6** and the service's **Estimated Qty** of **1.5h** are synchronized to Finance and Operations.
+    In this example, the product's **Used Qty** value of **6** and the service's **Used Qty** of **1.5h** are synchronized to Finance and Operations.
 
 ## Sales order origin and status
 

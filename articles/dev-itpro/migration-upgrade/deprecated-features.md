@@ -168,6 +168,18 @@ Starting February 15, 2018, retailers will no longer be able to display personal
 
 ## Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8
 
+### Currency conversion for accounting and reporting currencies
+
+Currency conversion for accounting and reporting currencies was introduced when the euro was introduced.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Limited usage and addition of the Copy legal entity functionality as a replacement.      |
+| **Replaced by another feature?**   | No, but the Copy legal entity and Configurations features were added to make it easier to move to a company that has changing core requirements. |
+| **Product areas affected**         | Financial management     |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.   |
+
+
 ### Warehouse mobile devices portal
 
 Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment. This component is no longer supported in Finance and Operations. A native app that improves the user experience has replaced the functionality of WMDP.
