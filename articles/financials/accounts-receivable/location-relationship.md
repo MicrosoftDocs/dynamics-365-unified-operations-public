@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 8.0.0
 
 ---
 
-# Add new location roles and party relationship types 
+# Add location roles and party relationship types 
 
-## Add new location roles
+## Add location roles
 
 There are two ways to add a new location roles for address and contact information:
 
@@ -58,7 +58,7 @@ There are two ways to add a new location roles for address and contact informati
 
         ![Insert New Location](media/InsertNewLocation.PNG)
 
-## Add new party relationship types 
+## Add party relationship types 
 
 There are two ways to add a new relationship type:
 
