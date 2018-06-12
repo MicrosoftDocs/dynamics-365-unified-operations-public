@@ -34,6 +34,24 @@
     href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
   - name: Purchase order approval mobile workspace
     href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
+- name: Statements
+  items:
+  - name: Retail statements overview
+    href: retail-statements.md
+  - name: Create, calculate, and post a statement for a retail store
+    href: tasks/create-calculate-post-statement-retail-store.md
+  - name: Improvements to statement posting
+    href: statement-posting-EOD.md
+  - name: Parameter configurations for Retail statements
+    href: tasks/parameter-configurations-retail-statements.md
+  - name: Payment configurations for Retail statements
+    href: tasks/payment-configurations-retail-statements.md
+  - name: Configure and run a job to calculate statements
+    href: tasks/run-job-calculate-statements.md
+  - name: Configure and run a job to post statements
+    href: tasks/run-job-post-statements.md
+  - name: Store configurations for Retail statements
+    href: tasks/store-configurations-retail-statements.md
 - name: Sales tax
   items:
   - name: Sales tax overview
@@ -304,10 +322,6 @@
     href: tasks/create-associate-hardware-station.md
   - name: Create and associate registers
     href: tasks/create-associate-registers.md
-  - name: Create, calculate, and post a statement for a retail store
-    href: tasks/create-calculate-post-statement-retail-store.md
-  - name: Improvements to statement posting
-    href: statement-posting-EOD.md
   - name: Create call center orders
     href: tasks/create-call-center-orders.md
   - name: Create financial dimensions for POS registers and configure dimension values on registers
@@ -336,12 +350,8 @@
     href: tasks/define-loyalty-schemes.md
   - name: Design the relationships between organizational units
     href: tasks/design-relationships-between-organizational-units.md
-  - name: 'Manage assortments '
+  - name: Manage assortments
     href: tasks/manage-assortments-2016-11.md
-  - name: Parameter configurations for Retail statements
-    href: tasks/parameter-configurations-retail-statements.md
-  - name: Payment configurations for Retail statements
-    href: tasks/payment-configurations-retail-statements.md
   - name: Perform self-service to download hardware station
     href: tasks/perform-self-service-download-hardware-station.md
   - name: Post online sales and payments
@@ -352,16 +362,10 @@
     href: tasks/push-products-distribution-center-store-buyers-push.md
   - name: Retail price adjustments
     href: tasks/retail-price-adjustments.md
-  - name: Configure and run a job to calculate statements
-    href: tasks/run-job-calculate-statements.md
-  - name: Configure and run a job to post statements
-    href: tasks/run-job-post-statements.md
   - name: Generate and run out-of-box reports
     href: tasks/run-out-box-reports.md
   - name: Set up rules and parameters for cross docking and buyer's push
     href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
-  - name: Store configurations for Retail statements
-    href: tasks/store-configurations-retail-statements.md
   - name: Use a continuity program
     href: tasks/use-continuity-program.md
   - name: Configure a worker
