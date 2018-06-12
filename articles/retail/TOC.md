@@ -24,7 +24,7 @@
 # Sales tax
 ## [Sales tax overview](../financials/general-ledger/indirect-taxes-overview.md)
 ## [Sales tax calculation methods in the Origin field](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
-## #### [Sales tax assignment and overrides](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
+### [Sales tax assignment and overrides](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
 ## [Whole amount and Interval calculation options for sales tax codes](../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md)
 
 # Call center
@@ -233,6 +233,9 @@
 ## Environment configuration
 ### [Add links to your organization's legal terms and privacy statement](../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json)
 ### [Manage Bing Maps](dev-itpro/manage-bing-maps.md)
+
+## Localization
+### [Localize Retail extension resources and label files](dev-itpro/extension-resource-localization.md)
 
 ## Point of sale extensibility
 ### [Retail POS screen layouts](pos-screen-layouts.md)
