@@ -521,6 +521,8 @@
       href: dev-itpro/channel-db-extensions.md
     - name: CDX extensibility
       href: dev-itpro/cdx-extensibility.md
+    - name: Add custom fields to the POS panel
+      href: dev-itpro/custom-field-pos-totals.md
     - name: Order attributes
       href: dev-itpro/order-attributes.md
     - name: Customer attributes
