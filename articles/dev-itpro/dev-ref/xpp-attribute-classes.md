@@ -3,7 +3,7 @@
 
 title: X++ attribute classes
 description: This topic describes the use of attributes in X++.
-author: RobinARH
+author: pvillads
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
