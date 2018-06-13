@@ -102,6 +102,9 @@ On the previous reflection classes, the methods for reflecting on attribute meta
 -   **getAttributedClasses** method
 -   **getAttributes** method
 
+> [!NOTE]
+> There is no mechanism for listing all methods or classes that are adorned with a particular attribute from X++ code. However, because the X++ compiler records this information in the cross reference database, the information can be mined from there.
+
 ### Metadata reflection code example
 
 You use the **DictMethod** class to find the metadata value of an attribute that is decoration on a method. The following code example uses the **SysEntryPointAttribute** class as the attribute. It accepts your parameter values for the method name, and for the name of the class that contains the method. The **parmChecked** method is particular to the **SysEntryPointAttribute** class, and it is not inherited from its base class **SysAttribute**. Each attribute class can have its own method name for its metadata.
