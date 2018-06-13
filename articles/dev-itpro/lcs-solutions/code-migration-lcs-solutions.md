@@ -62,5 +62,7 @@ The xppbp.exe file is located in *c:\packages\bin* or *I:\AosService\Packages\Lo
 Additional resources
 --------
 [Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)
+
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
+
 [Technical Concepts Guide for code migration](../dev-tools/developer-home-page.md#code-migration)
