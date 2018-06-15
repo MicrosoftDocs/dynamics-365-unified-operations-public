@@ -114,3 +114,13 @@ For information about the new features included in each update, click the links 
 ## Support matrix
 
 Platform updates are compatible with all application versions that are supported at the time of release.
+
+### Table 4: Downloadable virtual hard drive (VHD) releases
+Use of the VHDs is subject to the [Software license terms](https://go.microsoft.com/fwlink/?linkid=851163). 
+
+
+|                   Release                    |           VHD name           | VHD expiration date |
+|----------------------------------------------|------------------------------|---------------------|
+| Platform update 12 / Application release 7.2 | FinandOps7.2PlatUpdate12.vhd |    May 24, 2018     |
+| Platform update 12 / Application release 7.3 | FinandOps7.3PlatUpdate12.vhd |    June 05, 2018    |
+| Platform update 15 / Application release 7.3 | FinandOps7.3withPlatUpdate15 |    December 08, 2018    |
