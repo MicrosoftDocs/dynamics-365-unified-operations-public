@@ -48,8 +48,8 @@ Usually, an extended enum must have its own implementation wherever it's used. L
 
 + Switch blocks:
 
-    - If the switch block doesn't have a default case block or a default case block that doesn't throw an exception, handle the extended enum value by subscribing to a delegate, if a delegate is provided. Otherwise, add a post-event handler to the method. 
-    - If the enum is used in a switch that has a default case block that throws an exception, contact Microsoft to request a delegate.
+    - If the switch block doesn't have a default case block or a default case block that doesn't throw an exception, handle the extended enum value by subscribing to a delegate, if a delegate is provided. Otherwise, wrap the method using chain of command. 
+    - If the enum is used in a switch that has a default case block that throws an exception, contact Microsoft to request an extension point.
 
 + If the enum has an associated class hierarchy that handles the enum, create a subclass for the extended enum–specific implementation, and uptake the construct on the base class as required. For more information, see [Register a subclass for factory methods](register-subclass-factory-methods.md).
 	
