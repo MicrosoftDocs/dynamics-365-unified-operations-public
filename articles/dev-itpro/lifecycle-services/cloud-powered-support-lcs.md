@@ -95,10 +95,10 @@ If you purchased a support plan, such as **Premier Support** or **Advance Suppor
 2. On the **Manage support plans** page, click **Add contract** to enter the **Access ID** and **Password/Contract ID**.
    ![Add contracts](media/SupportAddPlans.png) 
    
-    ### De-couple a Premier support plan 
-    To disassociate a Premier support plan, you can do so via the Premier Portal.
-    1. Login to Premier Portal https://support.microsoft.com/en-us/premier/access
-    2. Select the contracts you wish to disassociate from the **Accociated access IDs**, and click the "Remove" button to remove it. 
+### Remove a Premier support plan 
+If you need to remove a Premier support plan from one or more of your contracts, you can do so using the Premier Portal.
+1. Log in to the [Premier Portal](https://support.microsoft.com/en-us/premier/access).
+2. Select the contracts you want to remove from the **Accociated access IDs**, and then click **Remove**. 
    
    
 ## Report production outage
