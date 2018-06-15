@@ -5,7 +5,7 @@ title: Business activity statement (BAS)
 description: This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form that all businesses submit to the Australian Taxation Office to report their taxation obligations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/23/2018
+ms.date: 06/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -89,7 +89,7 @@ Here is an overview of the process for calculating GST and preparing the BAS in 
 <li><a href="#gst-reporting-codes">Set up sales tax reporting codes for GST</a>.</li>
 <li><a href="../general-ledger/tasks/set-up-sales-tax-codes.md">Set up sales tax codes</a>.</li>
 <li><a href="tasks/set-up-reason-codes-australia-bas.md">Set up reason codes for the BAS</a>.</li>
-<li>Set up BAS fringe benefit reason codes.</li>
+<li>Set up reason codes for BAS fringe benefits.</li>
 <li><a href="../general-ledger/tasks/set-up-withholding-tax.md">Set up withholding tax codes and groups</a>.</li>
 </ul>
 </td>
@@ -188,7 +188,7 @@ Create an XML file that contains the following information.
 </DATA>
 ```
 
-Before you use the XML file, be sure to change the values for the field that are used, so that they are appropriate for your company. Here are the values for each field.
+Before you use the XML file, be sure to change the values for the fields that are used, so that they are appropriate for your company. Here are the values for each field.
 
 ```
 case 'fA1' : // Document Identification Number
