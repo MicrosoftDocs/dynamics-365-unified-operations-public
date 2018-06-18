@@ -1,5 +1,6 @@
 # Generating consolidated financial statements
 This section covers the various scenarios where you might generate consolidated financial statements.
+
 ## Single-level and multilevel consolidations across legal entities
 The simplest method for consolidating by using Financial reporting is to use reporting trees to aggregate data across companies that have the same chart of accounts and fiscal periods.
 Here are the high-level steps to consolidate by using a reporting tree.
@@ -57,19 +58,28 @@ The following illustration shows the consolidated report.
 ![Consolidated report income statement](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/consolidated-report-income-statement.png)
  
 Whether you use accounts, dimensions, or both, Financial reporting lets you filter out the elimination entries by using the dimension filtering capabilities.
+
 ## Minority interest
 A company might own only a percentage of another company. In this situation, when you’re producing a consolidated report, it’s important that you account for only the percentage that the company owns. Financial reporting has multiple ways to show minority interest, depending on user preference. One way is to use a roll-up percentage in the reporting tree definition. Another way is to show minority ownership as a separate line on a report.
+
 ### Using the reporting tree definition
 In the reporting tree definition, enter the percentage of ownership in the **Rollup %** column (column H), as shown in the following illustration. When the report is generated, this percentage will be used to calculate the consolidated amount. In this example, Contoso owns only 80 percent of Contoso Germany. You can enter either **80** or **.8** in the **Rollup %** column, and 80 percent will be rolled up to the consolidated level.
 
 **Note:** You can apply this ownership percentage to any reporting unit, not just at the company level. This capability is helpful when ownership is a business unit level or division level, not just a legal entity level.
+
+![Using reporting tree definition percentage](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/Using-reporting%20tree-definition-percentage.png)
  
 When the report is generated, the Contoso Germany report will show 100 percent of the sales amount, and 80 percent of the amount will be allocated and rolled up to the consolidated level for sales.
 If you own less than 1 percent of a company, you can select the **Allow rollup less than 1%** check box on the **Additional Options** tab of the **Report Settings** form, as shown in the following illustration. In this case, values in the **Rollup %** column in the reporting tree will be treated as less than 1 percent. For example, if you enter **.8**, 0.8 percent will be rolled up to the consolidated level, not 80 percent. Alternatively, you can achieve the same result by leaving the **Allow rollup less than 1%** check box cleared and entering **.008** in the **Rollup %** column.
+
+![Reporting setting options](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/reporting-setting-options.png)
  
 ### Showing ownership as a separate row on the consolidated report
 Another option for minority interest is to show 100 percent of the subsidiary for every line on the report but subtract the non-controlling interest from the net income.
+
 As the following illustration shows, an **IF THEN ELSE** statement and column restriction in the row definition can be used to calculate minority interest on financial reports.
+
+![Showing ownership as a separate row on the consolidated report](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/Showing-ownership-separate-row-consolidated-report.png)
  
 ## Multiple charts of accounts across legal entities
 Often, different legal entities have different charts of accounts but still want to produce consolidated financial statements. In this situation, Financial reporting can be used to consolidate the data, so that you can generate consolidated financial reports.
@@ -81,11 +91,16 @@ Multiple links to financial dimensions can be added to each row in the row defin
 In the following illustration, the USMF company uses the set of accounts in the first **Link to Financial Dimensions** column (column J), and the DEMF company uses the accounts in the second **Link to Financial Dimensions** column (column K).
 
 **Tip:** For more information about the **Link to Financial Dimensions** cell, see Specify Link to Financial Dimensions cell.
+
+![Set accounts first link to financial dimensions](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/set-accounts-first-Link-to-Financial-Dimensions.png)
  
 You can use a reporting tree to define which link to financial dimensions from the row definition is used with each company. Select the row definition in column E, and then select the appropriate row link in column F, as shown in the following illustration.
+
+![Link financial dimensions row definition used](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/link-financial-dimensions-row-definition-used.png)
  
 **Tip:** When you create links to financial dimensions, use the description to identify the companies that each link applies to. In this way, you can more easily select the correct company when you create a reporting tree.
 In the column definition, the **Reporting Unit** field lets you restrict each column to a unit of the reporting tree, so that you can view the data side by side. If you don’t indicate a specific company for a column, consolidated data for all companies will be shown.
+
 ## Different fiscal calendars across multiple legal entities
 Different legal entities might have different fiscal calendars but still be required to produce consolidated financial statements.
 There are two ways to consolidate when different fiscal periods exist across legal entities:
@@ -101,21 +116,34 @@ For example, the following table shows the fiscal period setup for the USMF and 
 |INMF       |Calendar year, January 1 through December 31  | Period 6, fiscal year 2018   |  
 
 In the following illustration, the USMF company is specified in the **Company name** field in the report definition. Therefore, the USMF company’s fiscal calendar will be used as the base fiscal calendar. In this example, when a report is generated for June 30, 2018, the USMF company will use the BASE period, which is defined as period 12 in the report definition. The INMF company will use BASE–6, which is period 6. Both columns will include data for June 2018.
+
+![Report base period](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/report-base-period.png)
  
 The following illustration shows the options in the report definition that let you select whether the period number or the period end date is used for the consolidation.
+
+![Options report definition period number](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/options-report-definition-period-number.png)
  
 ## Business unit consolidations
 This document has focused on using reporting tree definitions and organization hierarchies in Financial reporting for consolidation purposes. You can also use the reporting tree to create business unit consolidation reports, such as reports about worldwide sales or operations. These reports are a common requirement. To create them, select a company and a dimension for each unit that you want to consolidate on. For example, in the following illustration, the business unit roll-up is accomplished by repeating each company in the **Company** column (column A) and identifying a group of Department dimension values per company in the **Dimensions** column (column D).
+
+![Business unit consolidation reports](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/business-unit-consolidation-reports.png)
+ 
  
 ## Consolidations that involve multiple reporting currencies
 Financial reporting offers increased flexibility when you view actual, budget, budget control, and budget planning data in multiple currencies. By bringing across key setup data, you don’t have to do any additional setup in Financial reporting to view any report, in any currency, at any time, for any user.
+
 ### Prerequisites
 To correctly calculate translated balances, Financial reporting requires that the **Retained Earnings Account** category be assigned to the Retained Earnings account in the **Main account** list. Financial reporting doesn’t support posting to the Retained Earnings account. If transactions are posted to the Retained Earnings account, the translated balances won’t be calculated correctly. We recommend that users set up an additional Retained Earnings account to post adjustments to the Retained Earnings account.
+
 On the main account, the **Financial reporting exchange rate type** and **Currency translation type** fields on the **Financial reporting** FastTab must be set for each account, as shown in the following illustration. You can complete this task on an account-by-account basis, or you can use the account templates to easily roll down changes.
+
 - In the **Financial reporting exchange rate type** field, select the exchange rate type that contains the currencies and exchange rates to apply to the account. This table of currencies and exchange rates will be applied to actual data in Financial reporting.
 - In the **Currency translation type** field, select the method that is used to calculate the exchange rate for the account. This currency method is used for both actual and budget data in Financial reporting.
+
+![Financial reporting main accounts](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/Financial-reporting-main-accounts.png)
  
 For budget, budget control, and budget planning data, the exchange rate type is defined in the **Ledger** form. That table will be used to pull the exchange rates, and the currency translation type that is assigned to the account will be used.
+
 ### Currency translation methods
 There are four options for calculating exchange rates in Financial reporting:
 - **Weighted average** – This method is used most often for profit and loss accounts. It uses the following formula:
@@ -124,19 +152,27 @@ There are four options for calculating exchange rates in Financial reporting:
 Total of exchange rates ÷ Number of exchange rates
 - **Current** – This method is used most often for balance sheet accounts. The exchange rate that is used is the rate on or before the date of the report or column in Financial reporting.
 - **Transaction date** – This method is used for fixed assets accounts. The exchange rate that is used is the rate on the day when the asset was acquired. If a rate isn’t entered for that date, the previous rate that was entered closest to the asset acquisition date is used.
+
 ### Report designer options for currency translation
 In Financial reporting, any report can be shown in any number of reporting currencies. The following fields in the report definition support this capability:
 - The **Currency Information** section in the **Report Definition** form. This section shows the currency that the values are shown in when a report is generated.
 - A new **Include all reporting currencies** check box. When this check box is selected, the reporting currencies will queue up after the report that uses the company’s functional currency is generated. If the check box is cleared, you can still select a reporting currency in the Web Viewer. In this case, the reporting currency will be processed only when you select it.
 The options in the report definition let you easily translate a report into all your reporting currencies. Therefore, you might be able to eliminate duplicate report definitions that differ only in the currencies that are used. If you require a report that shows multiple currencies side by side, you can continue to use the **Currency display** field in the **Column Definition** form to translate just that column of the report into an alternate reporting currency.
+
 ### Currency translation adjustment
 The currency translation adjustment (CTA) is the difference between the rates that are used to calculate the balance sheet accounts and the rate that is used for the income statement accounts. This difference will cause the balance sheet to be out of balance.
 You can use Financial reporting to calculate the CTA in two ways:
 - Use the **Rounding Adjustments** form in the row definition, as shown in the following illustration.
+
+![Currency translation adjustment rounding adjustments](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/Currency-translation-adjustment-rounding-adjustments.png)
  
 When you specify the row that should show the rounding adjustment (CTA), the Total assets row, the total liabilities and equity row, and the threshold that you’re comfortable with, Financial reporting will calculate the difference and put it on the desired row. A line that is named **Rounding Adjustment** will be created and shown upon drill-down, as shown in the following illustration.
+
+![Rounding adjustment drill down](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/rounding-adjustment-drill-down.png)
  
 - Put all the accounts in a range, from assets to expenses. As shown in the following illustration, the difference will be the same amount as the rounding adjustment (CTA). Therefore, you can use it as a check total to make sure that the rounding adjustment form doesn’t include any account balances that were missed.
+
+![Rounding adjustment form check](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/rounding-adjustment-form-check.png)
  
 ### Balance calculation approach
 To get correctly translated amounts when currencies are used, Financial reporting uses the following calculation methods for the balances:
