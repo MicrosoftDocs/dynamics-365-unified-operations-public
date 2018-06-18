@@ -68,10 +68,11 @@ There are two ways to consolidate when different fiscal periods exist across leg
 - At **Settings** > **Other** > **Additional Options**, select whether to consolidate by using the period end date or the period number.
 **Tip: ** When you’re designing the column definition for multiple companies that have different fiscal periods, it’s important that you consider which company will be assigned to the **Company name** field in the report definition. That company’s fiscal calendar will be used as the base fiscal calendar for the report definition.
 For example, the following table shows the fiscal period setup for the USMF and INMF companies. For consolidated reports, you want to use the fiscal calendar that USMF uses. The “Mapping” column shows the equivalent period and year for each company if a report is generated for June 30, 2018.
-| Company   | Fiscal year  | Mapping  |  
-|---|---|---|
-|USMF   |Fiscal year, July 1 through June 30   | Period 12, fiscal year 2018  |   
-|INMF   |Calendar year, January 1 through December 31   | Period 6, fiscal year 2018   |  
+
+| Company   |               Fiscal year                    |          Mapping             |  
+|-----------|----------------------------------------------|------------------------------|
+|USMF       |Fiscal year, July 1 through June 30           | Period 12, fiscal year 2018  |   
+|INMF       |Calendar year, January 1 through December 31  | Period 6, fiscal year 2018   |  
 
 In the following illustration, the USMF company is specified in the **Company name** field in the report definition. Therefore, the USMF company’s fiscal calendar will be used as the base fiscal calendar. In this example, when a report is generated for June 30, 2018, the USMF company will use the BASE period, which is defined as period 12 in the report definition. The INMF company will use BASE–6, which is period 6. Both columns will include data for June 2018.
  
