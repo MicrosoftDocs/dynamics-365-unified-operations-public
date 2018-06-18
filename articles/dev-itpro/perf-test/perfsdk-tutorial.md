@@ -43,13 +43,13 @@ This topic describes the Performance software development kit (SDK) and shows ho
 
 - Microsoft Visual Studio 2015 Enterprise
 - A deployment that has volume data
-- The Performance SDK (Look for a folder that is named **PerfSDK** on drive C or F, depending on your environment.)
+- The Performance SDK (The SDK will likely be contained in K:\PerfSDK\PerfSDKLocalDirectory.  Depending on your environment, the SDK may be located in C:\PerfSDK instead.)
 
 ## Create a single-user C# test from an XML recording
 
 To view a video that shows how to create a single-user test, go to [https://mix.office.com/watch/qtdlasy2rcf3](https://mix.office.com/watch/qtdlasy2rcf3).
 
-1. Use Task recorder to create a recording of the scenario that you want to test.
+1. Use Task recorder to create a recording of the scenario that you want to test. Note that your recording must start on the default dashboard page otherwise the test will not be able to run.
 2. Start Microsoft Visual Studio as administrator, and build the **PerfSDKSample** project. This project is in the **PerfSDK** folder. If you've already built the project, skip this step.
 3. Select **Dynamics 365** &gt; **Addins** &gt; **Create C# perf test from recording**.
 4. In the **Import Task Recording** dialog box, enter the required details, and then select **Import**.
@@ -69,36 +69,32 @@ To view a video that shows how to create a single-user test, go to [https://mix.
 
     [![DLLs in the PerfSDK\Common\External\Selenium folder](./media/perf103d.png)](./media/perf103d.png)
 
-4. Generate and install a certificate. To generate a certificate file, open a Command Prompt window as an administrator, and run the following commands.
+4. Generate and install a certificate. To generate a certificate file, open a Command Prompt window as an administrator, and run the following commands. When you're prompted for a private key password, select **None**.
 
     ```
-    C:\Program Files (x86)\Windows Kits\8.1\bin\x64>makecert -n "CN=TestAuthCert" -ss My -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.2 -sv c:\temp\authcert.pvk c:\temp\authcert.cer
+    "C:\Program Files (x86)\Windows Kits\8.1\bin\x64\makecert" -n "CN=127.0.0.1" -ss Root -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.1 -sv c:\temp\authcert.pvk c:\temp\authcert.cer
 
-    C:\Program Files (x86)\Windows Kits\8.1\bin\x64>pvk2pfx -pvk c:\temp\authcert.pvk -spc c:\temp\authcert.cer -pfx c:\temp\authcert.pfx
+    "c:\Program Files (x86)\Windows Kits\8.1\bin\x64\pvk2pfx" -pvk c:\temp\authCert.pvk -spc c:\temp\authcert.cer -pfx c:\temp\authcert.pfx
     ```
 
     Note the following elements in these commands:
 
-   - **-n "CN=TestAuthCert"** gives a human-readable name to the certificate. You can adjust the name to suit your scenario.
-   - **-eku 1.3.6.1.5.5.7.3.2** gives the purpose of the certificate. This certificate is a client authentication certificate instead of a code signing certificate, an encryption certificate, or some other type of certificate.
+   - **-n "CN=127.0.0.1"** gives a human-readable name to the certificate. It is very important that the name of this certificate is "127.0.0.1". If the name is anything else, the single-user tests will not be able to run.
+   - **-eku 1.3.6.1.5.5.7.3.1** gives the purpose of the certificate. This indicates that the certificate can be used as a Secure Sockets Layer (SSL) server certificate.
 
-     When you're prompted for a private key password, select **None**.
-
-     You should see the following files:
+     After the script finishes, you should see the following files in **C:\Temp**:
 
    - authcert.pfx
    - authcert.cer 
    - authcert.pvk
 
-5. Install the **\*.pfx** certificate file. When you install it, make sure that you select **Local Machine**. Then copy the file to the **PerfSDK** folder.
+5. Install the **authcert.pfx** and **authcert.cer** certificate files. When you install it, make sure that you select **Local Machine**. Copy the **authcert.pfx** file to the **PerfSDK** folder.
 6. Open a Microsoft Windows PowerShell window as an administrator, and run the following commands to get the thumbprint of the installed certificate.
 
     ```
     cd Cert:\LocalMachine\My
-    Get-ChildItem | Where-Object { $_.Subject -like "CN=TestAuthCert" }
+    Get-ChildItem | Where-Object { $_.Subject -like "CN=127.0.0.1" }
     ```
-
-    [![Thumbprint of the installed certificate](./media/get-thumbprint.jpg)](./media/get-thumbprint.jpg)
 
 7. In the **CloudEnvironment.Config** file, enter the thumbprint as the value for the **SelfSigningCertificateThumbprint** key.
 
@@ -111,9 +107,9 @@ To view a video that shows how to create a single-user test, go to [https://mix.
 
         [![wif.config file](./media/wifconfig.jpg)](./media/wifconfig.jpg)
 
-    3. Update this file by entering the certificate and authority name.
+    3. In the **wif.config** file, there will be an authority named **AxTokenIssuer**. You must add your thumbprint to the list of thumbprints for this authority.
 
-        [![Updated wif.config file](./media/wif-updated.jpg)](./media/wif-updated.jpg)
+        [![PerfSDKUpdatedWifConfig](./media/PerfSDKUpdatedWifConfig.PNG)](./media/PerfSDKUpdatedWifConfig.PNG)
 
     4. Restart IIS.
 
@@ -133,7 +129,7 @@ To view a video that shows how to create a single-user test, go to [https://mix.
     > [!NOTE]
     > **ConfigName** must be set to **DEVFABRIC**. 
 
-    [![Updated CloudEnvironment.Config file](./media/perf103f.png)](./media/perf103f.png) 
+    [![PerfSDKCloudEnvironmentAdminUser](./media/PerfSDKCloudEnvironmentAdminUser.PNG)](./media/PerfSDKCloudEnvironmentAdminUser.PNG) 
 
 11. In the **CloudEnvironment.Config** file, enter your endpoint.
 
@@ -172,6 +168,14 @@ DispatchedClientHelper helper = new DispatchedClientHelper();
 Client = helper.GetClient();
 ```
 
+The test script generated by the Task Importer may contain a line like the following:
+
+```
+UserContextRole _context = new UserContextRole(UserManagement.AdminUser);
+```
+
+Remove this line from any tests that will be run as load tests. This code is only necessary for single-user tests and has negative performance implications on load tests.
+
 Make sure that the values that you entered when you made the task recording are randomized. You might have to use the Data Expansion Tool first to generate test data.
 
 ## Set up Visual Studio Online for multiuser testing
@@ -186,12 +190,12 @@ For this example, you will use the ProcureToPay.cs file. To start Visual Studio,
 1. Open the **PerfSDKSample** project.
 2. In the <strong>CloudEnvironment.Config</strong> file, update the <strong>UserFormat</strong> entry so that it reflects the admin user URL. For example, for `admin@example.com`, use <strong>TST\_{0}@example.com</strong> as the user format. Additionally, change the <strong>UserCount</strong> value to the number of users that you want to have in your performance test.
 
-    [![Updated CloudEnvironment.Config file](./media/vsonline-12.jpg)](./media/vsonline-12.jpg)
+    [![PerfSDKUserFormatExample](./media/PerfSDKUserFormatExample.PNG)](./media/PerfSDKUserFormatExample.PNG)
 
-3. In the **PerfSDK** folder, run the following command to create test users for your environment.
+3. Open a command prompt window and navigate to the **PerfSDK** folder. Run the following command to create test users for your environment:
 
     ```
-    MS.Dynamics.Performance.CreateUsers.exe
+    MS.Dynamics.Performance.CreateUsers.exe [UserCount] [CompanyCode]
     ```
 
     You can create as many users as you want. For example, the following command creates 150 test users for the USMF company.
@@ -207,9 +211,9 @@ For this example, you will use the ProcureToPay.cs file. To start Visual Studio,
 Up to this point, these instructions have made the assumption that you have a developer topology in which the AOS machine is also your development machine.  In order to run load tests on Visual Studio Online, you must be testing a sandbox environment.  There are a few additional steps that must be completed to establish trust between the sanbox and the computer running the load tests.  The computer running the load tests may be either your development machine or the test agent created by Visual Studio Online.
 
 1. Establish a Remote Desktop connection to your sandbox AOS machine, and copy over the **.cer** file. Double-click the file to install it. When you're prompted for the certificate store, select **Personal**.
-2. Start IIS, and find **AOSService** in the list of sites. Then select **Explore**, and find the **wif.config** file. Update this file by entering the certificate and authority name. (Use the values from the certificate that you generated earlier.)
+2. Start IIS, and find **AOSService** in the list of sites. Then select **Explore**, and find the **wif.config** file. In the **wif.config** file, there will be an authority named **AxTokenIssuer**. You must add your thumbprint to the list of thumbprints for this authority (Use the values from the certificate that you generated earlier.)
 
-    [![Updated wif.config file](./media/wif-updated.jpg)](./media/wif-updated.jpg)
+    [![PerfSDKUpdatedWifConfig](./media/PerfSDKUpdatedWifConfig.PNG)](./media/PerfSDKUpdatedWifConfig.PNG)
 
 3. Restart IIS.
 
@@ -230,8 +234,7 @@ You can now run performance tests against the topology.
     } 
     Environment.SetEnvironmentVariable("testroot", testroot);
     ```
-2. The following installer files must be downloaded and placed in the **Visual Studio Online** folder located within the PerfSDK directory:
-    - Visual C++ redistributable for Visual Studio 2015: https://www.microsoft.com/en-us/download/details.aspx?id=48145
+2. The following installer file must be downloaded and placed in the **Visual Studio Online** folder located within the PerfSDK directory:
     - Microsoft ODBC Driver 13 for SQL Server (pick the 64 bit version msi): https://www.microsoft.com/en-us/download/details.aspx?id=50420
 
 3. Change the contents of **setup.cmd** located in the **Visual Studio Online** folder to match the following:
@@ -240,8 +243,6 @@ You can now run performance tests against the topology.
         ECHO Installing D365 prerequisites
         ECHO MSIEXEC /a %DeploymentDirectory%\msodbcsql /passive /norestart IACCEPTMSODBCSQLLICENSETERMS=YES
         MSIEXEC /a %DeploymentDirectory%\msodbcsql /passive /norestart IACCEPTMSODBCSQLLICENSETERMS=YES
-        ECHO %DeploymentDirectory%\vc_redist.x64.exe /install /passive /norestart
-        %DeploymentDirectory%\vc_redist.x64.exe /install /passive /norestart
         %windir%\sysnative\windowspowershell\v1.0\powershell.exe -File %DeploymentDirectory%\install-wif.ps1
         Md %DeploymentDirectory%\Common\Team\Foundation\Performance\Framework
         %DeploymentDirectory%\CloudCtuFakeACSInstall.cmd %DeploymentDirectory%\authcert.pfx
@@ -261,6 +262,8 @@ You can now run performance tests against the topology.
      - C:\\PerfSDK\\authcert.pfx
      - C:\\PerfSDK\\MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config
      - C:\\PerfSDK\\Visual Studio Online\\
+
+[![PerfSDKOnlineTestSettings](./media/PerfSDKOnlineTestSettings.PNG)](./media/PerfSDKOnlineTestSettings.PNG)
 
        > [!NOTE]
        > Your PerfSDK folder might differ.
@@ -285,6 +288,17 @@ You can now run performance tests against the topology.
      > While tests are being run, information about your system isn't available in this view. To access this information, you must use Microsoft Dynamics Lifecycle Services (LCS) to monitor the CPU and memory usage of your AOS machine. Alternatively, you can set up perfmon directly on the AOS machine and set up the Microsoft Azure portal to monitor Microsoft SQL Server usage of Database Transaction Units (DTUs).
 
 ## Troubleshooting
+
+### No client was opened in the timeout period
+This issue impacts single user tests only. The test will run and open a web client but a website is never loaded.  Instead, there is an empty web client with a white screen with the message "This is the initial start page for the WebDriver server" at the top of the page.  The test will eventually timeout and fail with an error message.
+
+#### Error example
+
+```
+Initialization method <Test class name>.TestSetup threw exception. System.TimeoutException: System.TimeoutException: No client was opened in the timeout period.
+```
+#### Solution
+Follow steps 4-8 of **Run a single-user performance test by using the Performance SDK**.  This section provides details on how to create a proper certificate for this type of test.  The section also explains how to add the thumbprint of the certificate to the wif.config.
 
 ### Zoom factor
 
@@ -384,7 +398,7 @@ There are two scenarios that can cause this error:
 
 - The user who is specified as <strong>SelfMintingAdminUser</strong> has a provider other than "<https://sts.windows-ppe.net/>" or "<https://sts.windows.net/>". Sometimes the admin user will have a company specific domain included in the provider field. To work around this issue, create a user in AX with any name and email. Assign this new user the System Administrator role.  You do not need to link this user to a real Azure Active Directory user. Specify this new admin user as the <strong>SelfMintingAdminUser</strong> in the CloudEnvironment.config
 
-### Request was forbidden with client authentication scheme 'Anonymous'
+### The HTTP request was forbidden with client authentication scheme 'Anonymous'
 
 #### Error example
 
@@ -394,7 +408,24 @@ Initialization method <Test class name>.TestSetup threw exception. System.Servic
 
 #### Solution
 
-This issue can occur when the number of users that you specify in the **UserCount** field in the CloudEnvironment.Config file exceeds the number of test users that you created by running MS.Dynamics.Performance.CreateUsers.exe. Make sure that you created more test users than you request in the CloudEnvironment.Config file.
+There are two known scenarios that can cause this error:
+- This issue can occur when the test users are created by running MS.Dynamics.Performance.CreateUsers.exe without any arguments.  For example:
+
+    ```
+    MS.Dynamics.Performance.CreateUsers.exe
+    ```
+
+    If the CreateUsers script is run without any arguments, it will create test users with improperly formatted email addresses. The tests will output this forbidden request error if they are run with this test users. You can verify that this is the source of the error by viewing the Users in Dynamics for Finance and Operations. The test users will have email addresses that looks like these users:
+
+[![PerfSDKBadUserFormat](./media/PerfSDKBadUserFormat.PNG)](./media/PerfSDKBadUserFormat.PNG)
+
+   To resolve the issue, delete the test users with the improperly formatted email addresses.  Rerun the CreateUser scripts, specifying the user count and company as follows:
+
+        ```
+        MS.Dynamics.Performance.CreateUsers.exe [UserCount] [CompanyCode]
+        ```
+
+- This issue can also occur when the number of users that you specify in the **UserCount** field in the CloudEnvironment.Config file exceeds the number of test users that you created by running MS.Dynamics.Performance.CreateUsers.exe. Make sure that you created at least as many test users as you request in the CloudEnvironment.Config file.
  
 ![Cloud environment configuration](./media/cloud-env-config.png)
 
