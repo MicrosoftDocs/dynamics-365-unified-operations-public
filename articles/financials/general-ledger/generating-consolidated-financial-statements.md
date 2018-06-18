@@ -8,7 +8,9 @@ Here are the high-level steps to consolidate by using a reporting tree.
 3. Create a reporting tree that includes a reporting node for each company that you’re using on consolidated reports.
 
 **Tip:** For more information about how to create and manage row definitions, column definitions, and reporting trees, see Create and manage report components.
+
 The following illustration shows how you can use a reporting tree definition in Financial reporting to identify each company that you will consolidate.
+[![reporting tree definition](/media/reporting-tree-definition.png)](/media/reporting-tree-definition.png)
  
 As the consolidated report in the following illustration shows, when you use the reporting tree together with a report definition, you can view each company separately. The consolidated amounts are shown at the summary level.
  
