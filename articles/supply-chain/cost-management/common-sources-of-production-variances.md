@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Common sources of production variances
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article explains various typical sources of each type of production variance. 
 

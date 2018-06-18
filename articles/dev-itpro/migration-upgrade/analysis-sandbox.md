@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrade from AX 2012 - Deploy a sandbox environment for analysis
+title: Upgrade from AX 2012 - Deploy a demo environment for analysis
 description: This topic explains why and how you should deploy a demo environment during the Analyze phase of your project for upgrading from Microsoft Dynamics AX 2012 to Dynamics 365 for Finance and Operations.
 author: tariqbell
 manager: AnnBe
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Upgrade from AX 2012 - Deploy a sandbox environment for analysis
+# Upgrade from AX 2012 - Deploy a demo environment for analysis
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[upgrade banner](../includes/upgrade-banner.md)]
+[!include [upgrade banner](../includes/upgrade-banner.md)]
 
 This topic explains why and how you should deploy a demo environment during the Analyze phase of your project for upgrading from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations.
 

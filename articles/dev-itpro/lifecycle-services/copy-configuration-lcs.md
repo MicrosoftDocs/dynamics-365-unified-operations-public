@@ -32,9 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Copy a configuration
 
-[!include[banner](../includes/banner.md)]
-
-
+[!include [banner](../includes/banner.md)]
 
 Before you begin, you must set up Configuration manager (beta). For more information, see [Set up Configuration manager (Lifecycle Services, LCS)](set-up-configuration-manager-lcs.md).
 

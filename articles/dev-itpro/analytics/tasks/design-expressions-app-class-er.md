@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Design expressions to call application class methods (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This guide provides information about how to reuse the existing application logic in Electronic reporting (ER) configurations by calling required methods of application classes in ER expressions. Values of arguments for calling classes can be defined dynamically at run-time: for example, based on information in the parsing document to ensure its correctness. In this guide, you will create the required ER configurations for the sample company, Litware, Inc. This procedure is created for users with the assigned role of System administrator or Electronic reporting developer. 
 
@@ -39,7 +39,7 @@ To complete these steps, you must first complete the steps in the procedure, “
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
     * Verify that the configuration provider for sample company, Litware, Inc. is available and marked as active. If you don’t see this configuration provider, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active”.   
-    * Let’s assume that you are designing a process for parsing incoming bank statements for an application data update. You will receive the incoming bank statements as TXT files that contain IBAN codes. As part of the bank statement import process, you need to validate the correctness of this IBAN codes using the logic that is already available in Dynamics 365 for Finance and Operations, Enterprise edition.   
+    * Let’s assume that you are designing a process for parsing incoming bank statements for an application data update. You will receive the incoming bank statements as TXT files that contain IBAN codes. As part of the bank statement import process, you need to validate the correctness of this IBAN codes using the logic that is already available in Dynamics 365 for Finance and Operations.   
 
 ## Import a new ER model configuration
 1. In the list, find and select the desired record.

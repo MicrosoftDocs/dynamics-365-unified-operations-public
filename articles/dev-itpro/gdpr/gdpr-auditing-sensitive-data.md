@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage access to sensitive data
-description: This topic provides information about the user log functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic provides information about the user log functionality in Microsoft Dynamics 365 for Finance and Operations.
 author: ToddLefor
 manager: AnnBe
 ms.date: 12/31/2017
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.custom: 10031
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: 
+ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage access to sensitive data
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-System administrators can use the **User log** page in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to keep an audit log of users who have logged on to the system. Knowing who has logged in can help protect your organization's data. We've enhanced the user logging capability to let the administrator identify roles that provide access to sensitive data. 
+System administrators can use the **User log** page in Microsoft Dynamics 365 for Finance and Operations to keep an audit log of users who have logged on to the system. Knowing who has logged in can help protect your organization's data. We've enhanced the user logging capability to let the administrator identify roles that provide access to sensitive data. 
 
 ![Data flow from customers](../media/gdpr-sensitive-data-1.jpg)
 
@@ -53,6 +53,9 @@ The role information in the user log is language-specific and matches the curren
 The log entries of users who have access to data that's been declared to be sensitive data can be retained separately from all other data in the log. The administrator can enable this functionality by setting an option on the **User log cleanup** page.
 
 ![User log cleanup page](../media/gdpr-sensitive-data-4.jpg)
+
+>[!Note]
+> This feature is available in version 8.0. This feature is available for Dynamics AX 2012 R3 (via KB 4074643)
 
 ## Additional resources
 You can learn more about the GDPR on the [European Union's website](http://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).

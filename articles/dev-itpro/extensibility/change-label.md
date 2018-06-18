@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Change a label
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can create label extension files to modify the string value of a label, add new labels to the same label file, or add new languages. The name of a label extension file must consist of the name of the label file plus the **\_extension** suffix. 
 

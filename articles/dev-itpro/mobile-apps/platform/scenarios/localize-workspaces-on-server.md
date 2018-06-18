@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Localize mobile workspaces
 
-[!include[banner](../../../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 You can use workspace classes in several ways to provide localization support to workspaces.
 

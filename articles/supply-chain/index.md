@@ -2,10 +2,10 @@
 # required metadata
 
 title: Supply chain management home page
-description: This page provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.   
+description: This page provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations.   
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/15/2018
+ms.date: 05/09/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Supply chain management home page
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations. 
 
 ## What's new and in development
 Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
@@ -51,10 +51,15 @@ Select a feature area to learn more about it.
 - [Product information management](pim/product-information.md)
 - [Production control](production-control/production-process-overview.md)
 - [Sales and marketing](sales-marketing/overview-sales-marketing.md)
+- [Service management](service-management/service-management-home-page.md)
 - [Transportation management](transportation/transportation-management-overview.md)
 - [Warehouse management](warehousing/warehouse-configuration.md)
 
 ## Videos
+
+These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).
+
+- [Synchronize a work order between Field Service and Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
 These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).
 
@@ -88,7 +93,7 @@ These tech conference recordings discuss product functionality in the previous v
 
 **Warehouse management** 
 
--  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)  
+<!---  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)-->  
 -  [Get the best out of your warehouse management system](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
 -  [Advanced R3 Warehouse management - Inbound processing and min/max replenishment](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
 -  [Advanced R3 Warehouse management - A day in the life, outbound processing and demand Replenishment](https://youtu.be/Og0gLlVp7jA)
@@ -110,7 +115,7 @@ There are many topics about manufacturing and supply chain management on the <a 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost accounting hands-on labs</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Capable to promise and kanban job scheduling</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">BOM calculation by using a costing sheet</a>
--  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</a>
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## eLearning courses
 For information about Microsoft Dynamics 365 for Finance and Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>. (requires CustomerSource account) 

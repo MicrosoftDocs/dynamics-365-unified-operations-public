@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Sales returns
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 
@@ -54,7 +53,7 @@ There are two types of return order process: physical return and credit only.
 1.  **Create a return order.** Formally document the authorization for the customer to return any defective or unwanted products. The return order doesn’t require that the company accept the returned products or provide a credit for the customer. If the return is accepted, you can authorize a replacement item to be sent before the defective item has been returned.
 2.  **Arrive at warehouse for inspection.** Complete an initial inspection and validation against the return order document. The return order also supports quarantine of the returned items for additional inspection and quality control.
 3.  **Determine disposition.** Finalize the inspection process, and decide what should be done with the returned products. As part of this step, decide whether you will credit the customer, reject the product return, or accept the product return, scrap the product, and then send a replacement product to the customer.
-4.  **Generate a packing slip.** Generate a packing slip, and commit the disposition decision that you made in step 3. Finalize the logistics processes.
+4.  **Generate a packing slip.** Generate a packing slip, and commit the disposition decision that you made in step 3. Finalize the logistics processes.
 5.  **Generate an invoice.** Close the return order.
 
 ### Credit only process
@@ -65,7 +64,7 @@ There are two types of return order process: physical return and credit only.
 ## Return material authorization
 Return Material Authorization (RMA) processing builds on sales order functionality. An RMA is registered as a return order, which is created as a sales order, and may have another sales order associated with it, called a replacement order. Both sales orders link to the originating RMA number.
 
--   **Return order** – To register an RMA, you create a return order, which is a sales order that has the assigned type, **Returned order.** Any changes that you make to the RMA information is automatically updated in the sales order. Until the return order has the status **Open**, it will not appear in the list of sales orders. You use RMA to handle the arrival and receipt of the returned items, as well as to authorize a credit only disposition action (see section **Disposition codes and disposition actions**). All other follow-up processes must be handled in the sales order.
+-   **Return order** – To register an RMA, you create a return order, which is a sales order that has the assigned type, **Returned order.** Any changes that you make to the RMA information is automatically updated in the sales order. Until the return order has the status **Open**, it will not appear in the list of sales orders. You use RMA to handle the arrival and receipt of the returned items, as well as to authorize a credit only disposition action (see section **Disposition codes and disposition actions**). All other follow-up processes must be handled in the sales order.
 -   **Replacement order** – When a replacement order must be shipped to the customer, the RMA can include a second associated sales order. You can manually create the replacement order for the RMA to support immediate shipment. Alternatively, the replacement order can be created automatically after the arrival, inspection, and receipt are completed for the RMA line item that has a disposition code that indicates replacement. The replacement order has the same functionality that is associated with a sales order. For example, you can use it to configure a custom product as the replacement item, create a production order to repair a returned item, create a direct delivery purchase order to send the replacement from a vendor, or support other purposes.
 
 ## Create a return order
@@ -93,7 +92,8 @@ After you complete the return header, you can create return lines by using one o
 -   Manually enter the item details, quantity, and other information for every return line.
 -   Create a return line by using the **Find sales order** function. We recommend that you use this function when you create a return order. The **Find sales order** function establishes a reference from the return line to the invoiced sales order line, and retrieves line details such as item number, quantity, price, discount, and cost values from the sales line. The reference helps guarantee that, when the product is returned to the company, it's valued at the same unit cost that it was sold at. The reference also validates that return orders aren't created for a quantity that exceeds the quantity that was sold on the invoice.
 
-**Note:** Return lines that have a reference to a sales order are handled as corrections to, or reversals of, the sale. For more information, see the "Post to the ledger" section, later in this topic.
+>[Note!] 
+>Return lines that have a reference to a sales order are handled as corrections to, or reversals of, the sale. For more information, see the "Post to the ledger" section, later in this topic.
 
 ### Charges
 
@@ -138,7 +138,7 @@ In addition to determining how the returned goods are disposed of, disposition c
 <ul>
 <li>There is sufficient trust among the parties.</li>
 <li>The cost of returning the defective item is prohibitive.</li>
-<li>The items can't be allowed back into inventory. Because of other conditions, a physical return isn't required.</li>
+<li>The items can&#39;t be allowed back into inventory. Because of other conditions, a physical return isn&#39;t required.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -198,15 +198,27 @@ During the arrival process, returns are integrated with the general process for 
 
 ### Identify products in the Arrival overview list
 
-The **Arrival overview** page lists all the planned incoming arrivals. **Note:** Arrivals from return orders must be processed separately from other types of arrival transactions. After you've identified an incoming package on the **Arrival overview** page (for example, by using the accompanying RMA document), on the Action Pane, click **Start arrival** to create and initialize an Arrival journal that matches the arrival.
+The **Arrival overview** page lists all the planned incoming arrivals. 
+>[Note!] 
+>Arrivals from return orders must be processed separately from other types of arrival transactions. After you've identified an incoming package on the **Arrival overview** page (for example, by using the accompanying RMA document), on the Action Pane, click **Start arrival** to create and initialize an Arrival journal that matches the arrival.
 
 ### Edit the Arrival journal
 
-By setting the **Quarantine management** option to **Yes**, you can create a quarantine order for the return line. If a line has been sent to quarantine for inspection, you can’t specify a disposition code. **Note:** If you set the **Quarantine management** option to **Yes** in the item’s inventory model group, the **Quarantine management** option on the **Journal lines** page will be marked for the Arrival journal line and can’t be changed. If the line is sent to quarantine, you must specify the appropriate quarantine warehouse. If the arrival line isn't sent for inspection, the warehouse arrival clerk must specify the disposition code directly on the Arrival journal line and then post the Arrival journal. If the same disposition code should not be assigned to the whole quantity of the return line, or if the full quantity of the line hasn't been received, you must split the line. When you split an Arrival journal line, you also split the return line (**SalesLine**) and create a new lot ID. You can split the line by reducing the quantity of the Arrival journal line. When the journal is posted, a new return line is created that has a status of **Expected** for the remaining quantity. You can also split the line by clicking **Functions** &gt; **Split**.
+By setting the **Quarantine management** option to **Yes**, you can create a quarantine order for the return line. If a line has been sent to quarantine for inspection, you can’t specify a disposition code. 
+ 
+If you set the **Quarantine management** option to **Yes** in the item’s inventory model group, the **Quarantine management** option on the **Journal lines** page will be marked for the Arrival journal line and can’t be changed. If the line is sent to quarantine, you must specify the appropriate quarantine warehouse. 
+
+If the arrival line isn't sent for inspection, the warehouse arrival clerk must specify the disposition code directly on the Arrival journal line and then post the Arrival journal. If the same disposition code should not be assigned to the whole quantity of the return line, or if the full quantity of the line hasn't been received, you must split the line. When you split an Arrival journal line, you also split the return line (**SalesLine**) and create a new lot ID. You can split the line by reducing the quantity of the Arrival journal line. When the journal is posted, a new return line is created that has a status of **Expected** for the remaining quantity. You can also split the line by clicking **Functions** &gt; **Split**.
 
 ### Process the quarantine order
 
-If the returned products are sent for inspection at the quarantine warehouse, any additional processing is completed in a quarantine order. One quarantine order is created for each arrival line that is sent to quarantine. The disposition code indicates the result of the inspection process. You can split a quarantine order, just as you can split the Arrival journal. If you split the quarantine order, you cause a corresponding split of the return line. After the disposition code is entered, complete the quarantine order by using either the **End** function or the **Report as finished** function. If you select **Report as finished**, a new arrival is created in the designated warehouse. You can then process this arrival by using the **Arrival overview** page. If the arrival originates from a quarantine order, you can't change the disposition code that is assigned during inspection. If you complete the quarantine order by using the **End** function, the lot is automatically registered. Sometimes, an item might be sent back from quarantine to the Shipping and receiving department. For example, the quarantine inspector might not know where to store the item in inventory. In this case, the corresponding packing slip must be updated to correctly register and act on the disposition code that is specified because of the quarantine. Acknowledgment of receipt can be sent to the customer when the return line is registered. The **Return acknowledgement** report resembles the return order document. The **Return acknowledgement** report isn't journalized or otherwise registered in the system, and it isn't a required step in the return order process.
+If the returned products are sent for inspection at the quarantine warehouse, any additional processing is completed in a quarantine order. One quarantine order is created for each arrival line that is sent to quarantine. The disposition code indicates the result of the inspection process. 
+
+You can split a quarantine order, just as you can split the Arrival journal. If you split the quarantine order, you cause a corresponding split of the return line. After the disposition code is entered, complete the quarantine order by using either the **End** function or the **Report as finished** function. If you select **Report as finished**, a new arrival is created in the designated warehouse. You can then process this arrival by using the **Arrival overview** page. 
+
+If the arrival originates from a quarantine order, you can't change the disposition code that is assigned during inspection. If you complete the quarantine order by using the **End** function, the lot is automatically registered. Sometimes, an item might be sent back from quarantine to the Shipping and receiving department. For example, the quarantine inspector might not know where to store the item in inventory. In this case, the corresponding packing slip must be updated to correctly register and act on the disposition code that is specified because of the quarantine. 
+
+Acknowledgment of receipt can be sent to the customer when the return line is registered. The **Return acknowledgement** report resembles the return order document. The **Return acknowledgement** report isn't journalized or otherwise registered in the system, and it isn't a required step in the return order process.
 
 ## Replace a product
 There are two methods for managing product replacement:
@@ -228,7 +240,10 @@ If you ship a replacement item to the customer, and you use the **Replace and sc
 
 ![Replacement process when a disposition code is used](./media/SalesReturn05.png)
 
-The replacement item will be delivered by using an independent sales order, the replacement sales order. This sales order is created when the packing slip for the return order is generated. The order header uses information from the customer that is referenced on the return order header. The line information is collected from the information that is entered on the **Replacement item** page. The **Replacement item** page must be filled in for lines that have disposition actions that start with the word "replace." However, neither the quantity nor the identity of the replacement item is validated or limited. This behavior allows for cases where the customer wants the same item but in a different configuration or size, and also cases where the customers wants a completely different item. By default, an identical item is entered on the **Replacement item** page. However, you can select a different item, provided that the function has been set up. **Note:** You can edit and delete the replacement sales order after it's created.
+The replacement item will be delivered by using an independent sales order, the replacement sales order. This sales order is created when the packing slip for the return order is generated. The order header uses information from the customer that is referenced on the return order header. The line information is collected from the information that is entered on the **Replacement item** page. The **Replacement item** page must be filled in for lines that have disposition actions that start with the word "replace." However, neither the quantity nor the identity of the replacement item is validated or limited. This behavior allows for cases where the customer wants the same item but in a different configuration or size, and also cases where the customers wants a completely different item. By default, an identical item is entered on the **Replacement item** page. However, you can select a different item, provided that the function has been set up. 
+
+>[Note!] 
+>You can edit and delete the replacement sales order after it's created.
 
 ## Generate a packing slip
 Before returned items can be received into inventory, you must update the packing slip for the order that the items belong to. Just as the invoice update process is the update of the financial transaction, the packing slip update process is the physical update of the inventory record. In other words, this process commits the changes to inventory. In the case of returns, the steps that are assigned to the disposition action are implemented during the packing slip update. When you generate the packing slip, the following events occur:
@@ -238,14 +253,20 @@ Before returned items can be received into inventory, you must update the packin
 -   Items that have been marked with the **Return to customer** disposition action are received and delivered to the customer. These items have no net effect on inventory.
 -   A replacement sales order is created. This sales order is based on information on the **Replacement item** page.
 
-You can generate the packing slip only for lines that have a return status of **Registered**, and only for the full quantity on the return line. If several lines on the return order have the **Registered** status, you can generate the packing slip for a subset of the lines by deleting the other lines from the **Post packing slip** page. Partial returns are defined in terms of return order lines, not in terms of return order shipments. Therefore, if you receive the full quantity that is indicated on one return order line, but you receive nothing from the other lines on the return order, the delivery isn't a partial delivery. However, if a return order line requires that 10 units of an item be returned, but you receive only four units, the delivery is a partial delivery. If not all the expected return items have arrived, you can set the shipment aside and wait for the rest of the returned quantity to arrive. Alternatively, you can register and post the partial quantity. As part of the process for posting packing slips, you can associate the packing slip reference number from the customer’s shipping documents with the order lines. This association is optional and is for reference only. It doesn't create any transactional updates. In general, you can skip the packing slip process and go directly to invoicing. In this case, the steps that you would have performed during packing slip generation are completed during invoicing.
+You can generate the packing slip only for lines that have a return status of **Registered**, and only for the full quantity on the return line. If several lines on the return order have the **Registered** status, you can generate the packing slip for a subset of the lines by deleting the other lines from the **Post packing slip** page. 
+
+Partial returns are defined in terms of return order lines, not in terms of return order shipments. Therefore, if you receive the full quantity that is indicated on one return order line, but you receive nothing from the other lines on the return order, the delivery isn't a partial delivery. However, if a return order line requires that 10 units of an item be returned, but you receive only four units, the delivery is a partial delivery. If not all the expected return items have arrived, you can set the shipment aside and wait for the rest of the returned quantity to arrive. Alternatively, you can register and post the partial quantity. As part of the process for posting packing slips, you can associate the packing slip reference number from the customer’s shipping documents with the order lines. This association is optional and is for reference only. It doesn't create any transactional updates. 
+
+In general, you can skip the packing slip process and go directly to invoicing. In this case, the steps that you would have performed during packing slip generation are completed during invoicing.
 
 ## Generate an invoice
 Although the **Return order** page contains the information and actions that are required in order to handle the special logistical aspects of the return order, you must use the **Sales order** page to complete the invoicing process. Your organization can then invoice return orders and sales orders at the same time, and the same person can complete the invoicing process, as required. To view the return order from the **Sales order** page, click the link for the sales order number to open the associated sales order. You can also find the return order on the **All Sales orders** page. Return orders are sales orders that have an order type of **Returned order**.
 
 ### Credit correction
 
-As part of the invoicing process, verify that any miscellaneous charges are correct. To cause the ledger postings to become corrections (Storno), consider using the **Credit correction** option on the **Other** tab of the **Posting invoice** page when you post the invoice/credit note. **Note:** By default, the **Credit correction** option is activated if the **Credit note as correction** option on the **Accounts receivable parameters** page has been enabled. However, we recommend that you not post returns with Storno.
+As part of the invoicing process, verify that any miscellaneous charges are correct. To cause the ledger postings to become corrections (Storno), consider using the **Credit correction** option on the **Other** tab of the **Posting invoice** page when you post the invoice/credit note. 
+>[Note!] 
+>By default, the **Credit correction** option is activated if the **Credit note as correction** option on the **Accounts receivable parameters** page has been enabled. However, we recommend that you not post returns with Storno.
 
 ## Create intercompany return orders
 Return orders can be completed between two companies within your organization. The following scenarios are supported:
@@ -299,7 +320,8 @@ The return order doesn't reference a customer invoice. The returned item is cred
 
 ![Return order doesn't reference a customer invoic](./media/SalesReturn09.png)  
 
-**Note:** The item master price is used as the default value for the **Return cost price** parameter. The default price differs from the cost price at the time of inventory issue. Therefore, the implication is that a loss of 3 has been incurred. Additionally, the return order doesn't include the discount that was given to the customer on the sales order. Therefore, an excessive credit occurs.
+>[Note!]
+>The item master price is used as the default value for the **Return cost price** parameter. The default price differs from the cost price at the time of inventory issue. Therefore, the implication is that a loss of 3 has been incurred. Additionally, the return order doesn't include the discount that was given to the customer on the sales order. Therefore, an excessive credit occurs.
 
 ### Example 2: Credit correction is selected for the return order
 
@@ -307,7 +329,8 @@ Example 2 is the same as example 1, but the **Credit correction** parameter is s
 
 ![Return order where credit correction is selected ](./media/SalesReturn10.png)  
 
-**Note:** The ledger postings are entered as negative corrections.
+>[Note!] 
+>The ledger postings are entered as negative corrections.
 
 ### Example 3: The return order line is created by using the Find sales order function
 
@@ -315,7 +338,8 @@ In this example, the return order line is created by using the **Find sales orde
 
 ![Return order line that is created by using Find sales order ](./media/SalesReturn11.png)  
 
-**Note:** **Discount** and **Return cost price** are set correctly. Therefore, an exact reversal of the customer invoice occurs.
+>[Note!] 
+>**Discount** and **Return cost price** are set correctly. Therefore, an exact reversal of the customer invoice occurs.
 
 
 

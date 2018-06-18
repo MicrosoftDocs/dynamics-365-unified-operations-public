@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # GenericValue Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Generic value control type.
 
@@ -180,7 +180,7 @@ metadata(): [ValueMetadata](view-model-control-value-ivalue-ivaluemetadata.md)
 Returns the metadata object of this control.
 
 > Inherited from [Value](view-model-control-value-ivalue-ivalue.md).[metadata](view-model-control-value-ivalue-ivalue.md#metadata)
-
+> 
 > Overrides [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[metadata](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#metadata)
 
 #### Returns [ValueMetadata](view-model-control-value-ivalue-ivaluemetadata.md)

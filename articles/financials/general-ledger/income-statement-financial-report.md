@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Income statement financial report
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes the default report for income statements. It also describes the building blocks that are associated with this report. 
 
@@ -53,7 +52,7 @@ The income statement financial report uses the following building blocks.
 
 ### Row definition
 
-The row definition, Summary Income Statement – Default, contains a section for each part of a traditional income statement. The Main Account Category dimension is used to build this row definition. Therefore, anyone can generate the report without having to make any modifications.
+The row definition, Summary Income Statement – Default, contains a section for each part of a traditional income statement. The Main Account Category dimension is used to build this row definition. Therefore, anyone can generate the report without having to make any modifications.
 
 ### Column Definition
 
@@ -64,9 +63,9 @@ The column definitions contain different types of columns to provide different l
     -   **FD** – Financial data for the current period
     -   **FD** – Financial data for the year to date
 
- 
 
-See also
+
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-getting-started.md)

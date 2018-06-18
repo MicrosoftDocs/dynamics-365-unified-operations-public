@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # System administration home page
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic points to content for system administrators of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This content will help you configure the system so that it works smoothly and effectively for your organization.
+This topic points to content for system administrators of Microsoft Dynamics 365 for Finance and Operations. This content will help you configure the system so that it works smoothly and effectively for your organization.
 
 ## Implementation management with Lifecycle Services
 Microsoft Dynamics Lifecycle Services (LCS) is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the lifecycle of your Finance and Operations implementations.
@@ -50,7 +50,7 @@ The management of the implementation involves many different stakeholders from t
 You can deploy Finance and Operations in the cloud or on-premises. Cloud deployments offer an enterprise resource planning (ERP) service that is fully managed by Microsoft. On-premises deployments are deployed locally in a customer's data center.
 
 - [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
-- [Dynamics 365 for Finance and Operations, Enterprise edition cloud deployment overview](../deployment/cloud-deployment-overview.md)
+- [Dynamics 365 for Finance and Operations cloud deployment overview](../deployment/cloud-deployment-overview.md)
 - [System requirements for cloud deployments](../../fin-and-ops/get-started/system-requirements.md)
 - [On-premises deployment landing page](../deployment/on-premises-deployment-landing-page.md)
 - [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md)
@@ -87,8 +87,9 @@ Many tasks in Finance and Operations can be run as part of batch jobs. For examp
 - [Batch server overview](batch-server-overview.md)
 
 ## Optimization advisor
+- [Optimization advisor overview](optimization-advisor-overview.md)
 - [Optimization advisor (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
-- [Create rules for Optimization advisor](optimization-advisor.md)
+- [Create rules for Optimization advisor](create-rules-optimization-advisor.md)
 
 ## Office integration
 The integration with Microsoft Office provides a set of productive, collaborative, and integrated user experiences that take advantage of the Microsoft Office suite. This functionality can help your organization become more efficient and effective.

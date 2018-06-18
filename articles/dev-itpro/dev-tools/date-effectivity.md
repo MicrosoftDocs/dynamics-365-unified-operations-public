@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Date effectivity
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
 
 There are different design patterns for date-effective features that involve data entities. The patterns are classified into two main categories:
 
 -   **Date-effective entities** – The entity has at least one date-effective data source, and the entity itself is also date effective.
--   **Non-date-effective entities** – The entity itself is not date effective, but it does contain date-effective data sources.
+-   **Non-date-effective entities** – The entity itself is not date effective, but it does contain date-effective data sources.
 
 The next sections describe the small list of properties and methods that control the date-effective behavior of entities and their date-effective data sources.
 
@@ -49,7 +48,7 @@ The following table describes the properties that control the date-effective beh
 
 | Property name of the entity | Node of the property                                    | Value       | Description                                                                                                                                                                                                                                                                                                                                                  |
 |-----------------------------|---------------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ValidTimeStateEnabled       | Data entity node in the designer                        | Yes (or No) | The value **Yes** makes the entity date effective. The entity must have **ValidFrom** and **ValidTo** fields. These fields are mapped to the **ValidFrom** and **ValidTo** fields of a date-effective data source. The value **No** does *not* disable the enforcement of date effectivity on any date-effective tables that are data sources of the entity. |
+| ValidTimeStateEnabled       | Data entity node in the designer                        | Yes (or No) | The value **Yes** makes the entity date effective. The entity must have **ValidFrom** and **ValidTo** fields. These fields are mapped to the **ValidFrom** and **ValidTo** fields of a date-effective data source. The value **No** does *not* disable the enforcement of date effectivity on any date-effective tables that are data sources of the entity. |
 | ValidTimeStateKey           | Under the data entity node, **Keys** &gt; **EntityKey** | Yes (or No) | The value **Yes** identifies the key that is required to enforce the date-effective values on this particular entity.                                                                                                                                                                                                                                        |
 
 ## Read activities
@@ -59,25 +58,25 @@ When date effectivity is set at the data entity level, reads from the entity beh
 
 A date-effective entity supports the following three *query modes*, which vary in their use of the X++ **validtimestate** keyword:
 
--   **Default mode** – Current records are returned using `select * from FMVehicleRateEntity; // X++ SQL.`
+-   **Default mode** – Current records are returned using `select * from FMVehicleRateEntity; // X++ SQL.`
 -   **AsOfDate mode** – Records valid for the specified date are returned using `select validtimestate(d1) * from FMVehicleRateEntity;`
--   **AsOfDateRange mode** – Records valid for the specified date range are returned using `select validtimestate(d1,d2) * from FMVehicleRateEntity;`
+-   **AsOfDateRange mode** – Records valid for the specified date range are returned using `select validtimestate(d1,d2) * from FMVehicleRateEntity;`
 
 **Important:** For data entities that aren't themselves date effective, but that have a data-effective data source, only the default query mode is available. This concept is discussed later in this article.
 
-### Applying a date filter at the data source level
+### Applying a date filter at the data source level
 
-There are scenarios where date-effective filtering is required outside the data entity, at the data source level. For example, the customer entity (CustTableTestEntity) contains CustTable and LogisticsPostalAddress as data sources, where LogisticsPostalAddress is a date-effective table and CustTable is a regular table. The purpose of a customer entity is to have a list of customers and their active primary addresses, if they have primary addresses. Therefore, the customer entity itself isn't date effective, but it requires date filters on one of the data sources. In this case, the entity isn't marked **ValidTimeStateEnabled**. Instead, an **Apply Date Filter** property is added on the data source. If the value of **Apply Date Filter** is set to **Yes**, date filters are automatically applied to that data source. The following table describes the properties that control the date-effective behavior of a date-effective data source of a data entity.
+There are scenarios where date-effective filtering is required outside the data entity, at the data source level. For example, the customer entity (CustTableTestEntity) contains CustTable and LogisticsPostalAddress as data sources, where LogisticsPostalAddress is a date-effective table and CustTable is a regular table. The purpose of a customer entity is to have a list of customers and their active primary addresses, if they have primary addresses. Therefore, the customer entity itself isn't date effective, but it requires date filters on one of the data sources. In this case, the entity isn't marked **ValidTimeStateEnabled**. Instead, an **Apply Date Filter** property is added on the data source. If the value of **Apply Date Filter** is set to **Yes**, date filters are automatically applied to that data source. The following table describes the properties that control the date-effective behavior of a date-effective data source of a data entity.
 
 | Property name of the data source | Node of the property                             | Value       | Description                                                                                                                                                                                                                                                                                                    |
 |----------------------------------|--------------------------------------------------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Apply Date Filter                | Node of any particular data source of the entity | Yes (or No) | For *reads*, this property controls whether date filters are applied on the entity data source. In this case, the data source should be marked **ValidTimeStateEnabled**. This property value has effect regardless of whether the entity itself is date effective. For *writes*, this property has no effect. |
+| Apply Date Filter                | Node of any particular data source of the entity | Yes (or No) | For *reads*, this property controls whether date filters are applied on the entity data source. In this case, the data source should be marked **ValidTimeStateEnabled**. This property value has effect regardless of whether the entity itself is date effective. For *writes*, this property has no effect. |
 
-This article describes the use of these date-effective properties and the interactions between them.
+This article describes the use of these date-effective properties and the interactions between them.
 
 ### State matrixes for reads
 
-This section concerns only reads from the data entity. The following pair of reference matrixes describe the combinations of date-effective states that can exist between a data entity and its data source. Each table contains four cases, and each case discusses two distinct targets. Here are the primary points that you should understand:
+This section concerns only reads from the data entity. The following pair of reference matrixes describe the combinations of date-effective states that can exist between a data entity and its data source. Each table contains four cases, and each case discusses two distinct targets. Here are the primary points that you should understand:
 
 -   On any given read from the entity, the query mode is the same for both the entity and date-effective data sources.
 -   If the entity is not date effective, the query mode is limited to the default mode. Therefore, the date-effective data source is accessed only for the current date.
@@ -104,7 +103,7 @@ Non-date-effective data sources aren't affected.
 
 Non-date-effective data sources aren't affected.
 
- 
+
 
 B. Entity is *not* date effective, because ValidTimeStateEnabled = No
 
@@ -115,7 +114,7 @@ B. Entity is *not* date effective, because ValidTimeStateEnabled = No
 **Apply Date Filter = Yes**
 
 -   **Entity:** No date filters are applied.
--   **Data source:** Date filters are applied. Only the default query mode is supported, where the X++ **validtimestate** keyword is omitted.
+-   **Data source:** Date filters are applied. Only the default query mode is supported, where the X++ **validtimestate** keyword is omitted.
 
 Non-date-effective data sources aren't affected.
 
@@ -129,7 +128,7 @@ Non-date-effective data sources aren't affected.
 The following screen shot shows the **Apply Date Filter** property set to **Yes**. Therefore, date filters will be applied to reads of the **Address** data source. [![Apply Date Filter = Yes](./media/date1.png)](./media/date1.png)
 
 ## Write activities
-This section describes your options for configuring the behavior of date-effective entities and their date-effective data sources. We will start by reviewing the concept of date-effective tables and contrasting them with date-effective entities. **Date-effective table:** When data is inserted or updated in a date-effective table, the process has the option of calling the **xRecord.validTimeStateUpdateMode** method on the table buffer. The method accepts an element of the **ValidTimeStateUpdate** enumeration. Here are the available element values:
+This section describes your options for configuring the behavior of date-effective entities and their date-effective data sources. We will start by reviewing the concept of date-effective tables and contrasting them with date-effective entities. **Date-effective table:** When data is inserted or updated in a date-effective table, the process has the option of calling the **xRecord.validTimeStateUpdateMode** method on the table buffer. The method accepts an element of the **ValidTimeStateUpdate** enumeration. Here are the available element values:
 
 -   CreateNewTimePeriod
 -   Correction
@@ -148,7 +147,7 @@ This section shows how to create a date-effective entity.
 
 #### Add a new data entity to your project
 
-Create a new entity that is named **FMVehicleRateEntity**, and add it to the project.
+Create a new entity that is named **FMVehicleRateEntity**, and add it to the project.
 
 1.  In the left pane, select **Microsoft Dynamics 365 Artifacts**, and then click **Data Entity** in the left column of the main pane.
 2.  Click **Add**. The **Data Entity View** wizard starts.
@@ -159,7 +158,7 @@ Create a new entity that is named **FMVehicleRateEntity**, and add it to the pr
 #### Build your project
 
 1.  Click **Build** &gt; **Build Solution** to build your project.
-2.  Verify that the build has no errors. Warnings should be tolerated at this stage in the process.
+2.  Verify that the build has no errors. Warnings should be tolerated at this stage in the process.
 
 #### Validate the property values
 
@@ -172,7 +171,7 @@ Create a new entity that is named **FMVehicleRateEntity**, and add it to the pr
 
 #### Configure the Valid Time State Update property for the date-effective data source
 
--   Select the **FMVehicleRate** data source, and then set the **Valid Time State Update** property to **CreateNewTimePeriod**. [![Valid Time State Update = CreateNewTimePeriod](./media/date11.png)](./media/date11.png)
+-   Select the **FMVehicleRate** data source, and then set the **Valid Time State Update** property to **CreateNewTimePeriod**. [![Valid Time State Update = CreateNewTimePeriod](./media/date11.png)](./media/date11.png)
 
 #### Test your project
 

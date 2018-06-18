@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Row Type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Row controls are what make up a list. A list contains any number of row controls.
 

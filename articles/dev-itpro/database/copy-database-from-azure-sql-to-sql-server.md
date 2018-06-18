@@ -2,10 +2,10 @@
 # required metadata
 
 title: Copy a Finance and Operations database – Azure SQL to SQL Server
-description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database from an Azure-based environment to a SQL Server–based environment.
+description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
 author: maertenm
 manager: AnnBe
-ms.date: 03/07/2018
+ms.date: 03/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition database from an environment that is based on Microsoft Azure and import it into an environment that is based on Microsoft SQL Server.
+This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database from an environment that is based on Microsoft Azure and import it into an environment that is based on Microsoft SQL Server.
 
 ## Overview
 
@@ -59,6 +59,7 @@ The following prerequisites must be met before you can move a database:
     > In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database.
 
 - The destination SQL Server environment must run SQL Server 2016 Release to Manufacturing (RTM) (13.00.1601.5) or later. The Community Technology Preview (CTP) versions of SQL Server 2016 might cause errors during the import process.
+
     > [!IMPORTANT] 
     > To export a database from a sandbox environment, you must be running the same version of SQL Server Management Studio (SSMS) that is in the environment you will be importing the database to. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the VM that runs Application Object Server (AOS) in the sandbox environment. Do the bacpac export on that AOS computer. There are two reasons for this requirement:
 
@@ -105,6 +106,9 @@ This SQL statement runs asynchronously. In other words, although it appears to b
 ```
 SELECT * FROM sys.dm_database_copies
 ```
+
+> [!WARNING] 
+> Retaining copies of the database for an extended period is not allowed in any Finance and Operations environment. Microsoft reserves the right to delete any copies of the database older than 7 days without any prior notice. 
 
 ## Prepare the database
 
@@ -186,6 +190,8 @@ UPDATE BatchJob
 SET STATUS = 0
 WHERE STATUS IN (1,2,5,7)
 GO
+-- Clear encrypted hardware profile merchand properties
+update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUREMERCHANTPROPERTIES is not null
 ```
 
 ## Export the database
@@ -258,6 +264,9 @@ CREATE USER axretailruntimeuser FROM LOGIN axretailruntimeuser
 EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
 EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
+CREATE USER axdeployextuser WITH PASSWORD = '<password from LCS>'
+EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
+
 CREATE USER [NT AUTHORITY\NETWORK SERVICE] FROM LOGIN [NT AUTHORITY\NETWORK SERVICE]
 EXEC sp_addrolemember 'db_owner', 'NT AUTHORITY\NETWORK SERVICE'
 
@@ -270,11 +279,47 @@ FROM docuvalue T1
 WHERE T1.storageproviderid = 1 --Azure storage
 
 ALTER DATABASE [<your AX database name>] SET CHANGE_TRACKING = ON (CHANGE_RETENTION = 6 DAYS, AUTO_CLEANUP = ON)
+GO
+DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking
+DROP PROCEDURE IF EXISTS SP_ConfigureTablesForChangeTracking_V2
+GO
+-- Begin Refresh Retail FullText Catalogs
+DECLARE @RFTXNAME NVARCHAR(MAX);
+DECLARE @RFTXSQL NVARCHAR(MAX);
+DECLARE retail_ftx CURSOR FOR
+SELECT OBJECT_SCHEMA_NAME(object_id) + '.' + OBJECT_NAME(object_id) fullname FROM SYS.FULLTEXT_INDEXES
+	WHERE FULLTEXT_CATALOG_ID = (SELECT TOP 1 FULLTEXT_CATALOG_ID FROM SYS.FULLTEXT_CATALOGS WHERE NAME = 'COMMERCEFULLTEXTCATALOG');
+OPEN retail_ftx;
+FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
+
+BEGIN TRY
+	WHILE @@FETCH_STATUS = 0  
+	BEGIN  
+		PRINT 'Refreshing Full Text Index ' + @RFTXNAME;
+		EXEC SP_FULLTEXT_TABLE @RFTXNAME, 'activate';
+		SET @RFTXSQL = 'ALTER FULLTEXT INDEX ON ' + @RFTXNAME + ' START FULL POPULATION';
+		EXEC SP_EXECUTESQL @RFTXSQL;
+		FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
+	END
+END TRY
+BEGIN CATCH
+	PRINT error_message()
+END CATCH
+
+CLOSE retail_ftx;  
+DEALLOCATE retail_ftx; 
+-- End Refresh Retail FullText Catalogs
 ```
+
+### Enable change tracking
+If change tracking was enabled in the source database, ensure to enable change tracking again in the newly provisioned database in the target environment using the ALTER DATABASE command.
+
+To ensure current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management. This can be done on any entity as this is needed to trigger the refresh of store procedure.
+
 
 ### Re-provision the target environment
 
-[!include[environment-reprovision](../includes/environment-reprovision.md)]
+[!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ### Reset the Financial Reporting database
 
@@ -284,9 +329,9 @@ If you're using Financial Reporting, which was previously named Management Repor
 
 To switch the environment and use the new database, first stop the following services:
 
-- World wide web publishing service
-- Finance and Operations Batch Management service
-- Management Reporter 2012 Process service
+- World Wide Web Publishing Service
+- Microsoft Dynamics 365 Unified Operations: Batch Management Service
+- Management Reporter 2012 Process Service
 
 After the services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
 

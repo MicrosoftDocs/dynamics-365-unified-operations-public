@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Operations scheduling options
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the options for operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 
@@ -59,7 +58,7 @@ The following options are available:
 -   **Forward from scheduling date** – Schedule forward from the date that is specified in the **Scheduling date** field. If you don't specify a scheduling date, the scheduling direction is forward from the current date.
 -   **Backward from delivery date** – Schedule backward from the delivery date that is specified for the production order. If you select this option, but no delivery date is specified, the delivery date is the current date.
 -   **Backward from planned end** – Schedule backward from a previously calculated end date. If there is no previous scheduling, the end date is the current date.
--   **Backward from scheduling date** – Schedule backward from the date that is specified in the **Scheduling date** field. If you don't specify a scheduling date, the current date is used. Backward from scheduling date is calculated for the production order the last time that a requirement was calculated. If no date is specified for the production order, the current system date is used.
+-   **Backward from scheduling date** – Schedule backward from the date that is specified in the **Scheduling date** field. If you don't specify a scheduling date, the current date is used. Backward from scheduling date is calculated for the production order the last time that a requirement was calculated. If no date is specified for the production order, the current system date is used.
 -   **Backward from futures date** – Schedule backward from the futures date that was calculated for the production order the last time that a requirement was calculated. If no futures date is specified for the production order, the current system date is used.
 -   **As last scheduling** – For operations scheduling and job scheduling, the selected scheduling direction and date are saved. Therefore, you can select this option for subsequent scheduling. If there is no previous scheduling of the production order, scheduling is backward from the current system date.
 -   **Forward from tomorrow** – Schedule forward from the current date plus one day.
@@ -132,7 +131,7 @@ You can save the current values as default values. There are two options:
 -   Set as default for everyone
 
 
-See also
+Additional resources
 --------
 
 [Operations scheduling](operations-scheduling.md)

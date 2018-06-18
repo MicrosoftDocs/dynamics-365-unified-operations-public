@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 # Pay based on registrations
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains, in detail, how pay is calculated based on worker registrations. It includes examples that show how the various combinations of setup options that are available for the calculation affect the result. Here are some of the areas that will be covered:
 
@@ -250,11 +250,11 @@ Breaks from work affect the calculation of worker pay. Breaks are defined as a t
 
 #### Planned breaks
 
-If a company has a fixed break time, such as a fixed break for lunch, the break can be predefined in the time profile. In this case, the worker doesn't have to register the break on the **Job card terminal** page or on the **Job card device** page. Instead, the break is automatically accounted for when the worker's registrations are calculated on the **Approve** page.
+If a company has a fixed break time, such as a fixed break for lunch, the break can be predefined in the time profile. In this case, the worker doesn't have to register the break on the job card pages. Instead, the break is automatically accounted for when the worker's registrations are calculated on the **Approve** page.
 
 #### Registered breaks
 
-If a company doesn't use planned breaks, workers can register breaks during the workday. Registered breaks can be used, for example, if a worker is working against a flex time profile that has no defined clock-in and clock-out times. Registered breaks are a type of indirect activity. The worker registers the break on the **Job card terminal** page or on the **Job card device** page. On both these pages, the user can select the type of break in a list of predefined break activities.
+If a company doesn't use planned breaks, workers can register breaks during the workday. Registered breaks can be used, for example, if a worker is working against a flex time profile that has no defined clock-in and clock-out times. Registered breaks are a type of indirect activity. The worker registers the break on the **Job card** terminal page or on the **Job card** device page. On both these pages, the user can select the type of break in a list of predefined break activities.
 
 #### Paid and unpaid breaks
 
@@ -449,7 +449,7 @@ You can create planned absence for workers on the **Create planned absence** pag
 The job is based on a query. Therefore, you can create planned absence for multiple workers, such as workers who belong to the same calculation group. If the planned absence is for a single worker, the registration can be entered from either the **Attendance** page or the **Time registration workers** page.
 
 - To enter an absence registration from the **Attendance** page, select **Time and attendance** &gt; **Inquiries and reports** &gt; **Attendance** &gt; **Attendance**, and then select **Absence registration**.
-- To enter an absence registration from the ****Time registration workers**** page, select **Time and attendance** &gt; **Setup** &gt; **Time registration workers**, and then, on the **Time** tab, under **Time assignment**, select **Absence registrations**.
+- To enter an absence registration from the *<strong><em>Time registration workers</em></strong>* page, select <strong>Time and attendance</strong> &gt; <strong>Setup</strong> &gt; <strong>Time registration workers</strong>, and then, on the <strong>Time</strong> tab, under <strong>Time assignment</strong>, select <strong>Absence registrations</strong>.
 
 You can use the **Planned absences** report to see an overview of planned absences for workers. To open this report, select **Time and attendance** &gt; **Inquiries and reports** &gt; **Absence reports** &gt; **Planned absences**.
 

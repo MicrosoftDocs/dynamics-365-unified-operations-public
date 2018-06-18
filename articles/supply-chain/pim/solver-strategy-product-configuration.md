@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Solver strategy for product configuration
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how you can use the solver strategy to improve the performance of product configuration.
 

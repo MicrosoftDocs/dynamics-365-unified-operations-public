@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Warehouse Mobile Devices Portal (WMDP) for Finance and Operations
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes how to enable the Warehouse Mobile Devices Portal for Microsoft Dynamics 365 for Finance and Operations. It also explains how to service and upgrade your environment.
 
@@ -42,7 +41,7 @@ Warehouse Mobile Devices Portal (WMDP) is a web application hosted in IIS. It us
 ## Download the installer for Warehouse Mobile Devices Portal
 The WMDP is installed through a standalone Microsoft installation package. The installer file, WarehouseMobileDevicesPortal.msi, can be downloaded directly from Finance and Operations. In order to obtain the installer, you need to have Warehouse Management module enabled. Follow these steps to download the WMDP installer:
 
-1.  Log-in to Dynamics 365 for Finance and Operations as a user with an Information technology manager role.
+1.  Log-in to Dynamics 365 for Finance and Operations as a user with an Information technology manager role.
 2.  Go to **Warehouse management** &gt; **Setup** &gt; **Mobile device** &gt; **Download Warehouse Mobile Devices Portal**.[![op-wmdp-01](./media/op-wmdp-01.png)](./media/op-wmdp-01.png)
 3.  Familiarize yourself with the Security Best Practices checklist. Select the **Complete** check box for each item that you’ve reviewed.
 4.  In the Legal Information section, read the software license terms.
@@ -83,15 +82,15 @@ To retrieve and install a certificate on your Warehouse Mobile Device Portal hos
 4.  The following screenshot shows an example of a self-signed certificate named localhostWMDP\_DEFAULT, associated with https binding on port 8999. [![Edit site bindings](./media/07.png)](./media/07.png)
 
 ## Configure the Warehouse Mobile Devices Portal web application
-To enable the Warehouse Mobile Devices Portal application to interact with a particular Finance and Operations server, you need to complete the following configuration steps after installation:
+To enable the Warehouse Mobile Devices Portal application to interact with a particular Finance and Operations server, you need to complete the following configuration steps after installation:
 
-1.  Register a native application in Azure Active Directory for the Operations tenant. This application should have access to Microsoft Dynamics ERP.
-    1.  Read the following guide to learn about Finance and Operations custom service authentication: the Custom services section in the [Dynamics 365 for Finance and Operations Services Technical Concepts Guide](../../dev-itpro/data-entities/services-home-page.md).
+1.  Register a native application in Azure Active Directory for the Operations tenant. This application should have access to Microsoft Dynamics ERP.
+    1.  Read the following guide to learn about Finance and Operations custom service authentication: the Custom services section in the [Dynamics 365 for Finance and Operations Services Technical Concepts Guide](../../dev-itpro/data-entities/services-home-page.md).
     2.  Follow the steps for “Register a Native Application with AAD”.
     3.  You have now obtained **Client ID** of the application.
 
-2.  Create a new user account in Azure Active Directory for the Operations tenant. The purpose of this user account is to access the WMDP specific custom service, which the Operations server exposes. After completing this step, you will have **WMDP user credentials**, which consist of a **WMDP email address** and a **WMDP password**. To learn about the basic steps for adding users to Azure AD and Finance and Operations, refer to this tutorial: [Sign up for a Finance and Operations subscription]((../../dev-itpro/sign-up-preview-subscription.md).
-3.  Create an Operations user that corresponds to the **WMDP user credentials**.
+2.  Create a new user account in Azure Active Directory for the Operations tenant. The purpose of this user account is to access the WMDP specific custom service, which the Operations server exposes. After completing this step, you will have **WMDP user credentials**, which consist of a **WMDP email address** and a **WMDP password**. To learn about the basic steps for adding users to Azure AD and Finance and Operations, refer to this tutorial: [Sign up for a Finance and Operations subscription]((../../dev-itpro/sign-up-preview-subscription.md).
+3.  Create an Operations user that corresponds to the **WMDP user credentials**.
     1.  In Finance and Operations, go to **System administration** &gt; **Common** &gt; **Users**.
     2.  Create a new user.
     3.  Assign the Warehouse mobile device user, as shown in the example screenshot. [![Create a new user for the WMDP ](./media/08.png)](./media/08.png)

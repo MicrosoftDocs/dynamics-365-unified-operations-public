@@ -32,14 +32,14 @@ ms.dyn365.ops.version: Version 1611
 
 # Workforce metrics Power BI content
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the **Workforce metrics** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
 ## Accessing the Power BI content
 The **Workforce metrics** Power BI content appears in the **Personnel management** workspace if you use one of these products:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 
+- Microsoft Dynamics 365 for Finance and Operations 
 - Microsoft Dynamics 365 for Talent
 
 ## Metrics that are included in the Power BI content

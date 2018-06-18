@@ -32,9 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service object relations 
 
-[!include[banner](../includes/banner.md)]
-
-
+[!include [banner](../includes/banner.md)]
 
 You can create service object relations between a service object and a service
 agreement or service order. When you create a relation, you attach the service

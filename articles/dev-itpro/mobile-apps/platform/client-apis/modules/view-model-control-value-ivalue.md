@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Value 
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 This is the base class for single value controls.
 

@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Define and maintain retail channels
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 This topic provides an overview of the process for setting up brick-and-mortar stores, which are referred to as retail stores in Microsoft Dynamics 365 for Retail. It includes information about the tasks that you must complete both before and after you set up a retail store.
 
-Dynamics 365 for Retail supports multiple retail channels, such as online stores, call centers, and brick-and-mortar stores. A brick-and-mortar store is called a retail store. Each retail store can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff. You must set up all these elements for a retail store before you create it. After you create the retail store, you assign the products that you want it to carry. You also assign employees, registers, and customers to the store. Finally, you add the new store to an organization hierarchy.
+Dynamics 365 for Retail supports multiple retail channels, such as online stores, call centers, and brick-and-mortar stores. A brick-and-mortar store is called a retail store. Each retail store can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff. You must set up all these elements for a retail store before you create it. After you create the retail store, you assign the products that you want it to carry. You also assign employees, registers, and customers to the store. Finally, you add the new store to an organization hierarchy.
 
 ## Setting up retail stores
-Before you can set up a retail store in Dynamics 365 for Retail, you must complete some prerequisite tasks. You can then create the retail store and add details.
+Before you can set up a retail store in Dynamics 365 for Retail, you must complete some prerequisite tasks. You can then create the retail store and add details.
 
 ### Prerequisites
 
@@ -57,7 +56,7 @@ You must complete the following tasks before you can set up a retail store:
 9.  Set up product price groups.
 10. Set up retail product pricing. As part of this task, you also set up price adjustments, discounts, and discount periods.
 11. Set up staff members. **Note:** You must also assign appropriate permissions to the workers, so that they can sign in and perform tasks by using the Dynamics 365 for Retail for Retail POS system.
-12. Configure the Retail POS profiles to assign to the store. This task includes many other tasks, such as setting up registers, setting up offline profiles, and setting up receipt formats and profiles.
+12. Configure the Retail POS profiles to assign to the store. This task includes many other tasks, such as setting up registers, setting up offline profiles, and setting up receipt formats and profiles.
 
 Review all the tasks that are included in the prerequisite, and complete only the tasks that apply to you.
 

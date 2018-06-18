@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Manage benefit expiration dates
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how you can expire or extend a benefit, and manage the enrollment dates of workers that are enrolled in the benefit. The demo data company used to create this procedure is USMF.
 

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Row definitions in financial report designer
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 A row definition is a report component, or building block, that specifies the contents of each row on a financial report. A row definition can be combined with column definitions, reporting tree definitions, and report definitions to create a building block group that can be used by multiple companies.
 
@@ -64,7 +63,7 @@ Usually, each row in a row definition contains one of the following types of inf
 There are two methods for entering information in a row definition:
 
 -   Manually enter row information in a new row definition. For more information, see [Modify row definition cells](modify-row-definition-cells-financial-reporting.md).
--   Use report designer to pull row information directly from the financial dimensions. For more information, see the "Related formulas/rows/units" section in [Modify row definition cells](modify-row-definition-cells-financial-reporting.md).
+-   Use report designer to pull row information directly from the financial dimensions. For more information, see the "Related formulas/rows/units" section in [Modify row definition cells](modify-row-definition-cells-financial-reporting.md).
 
 ## Add dimensions in a row definition
 A dimension is an intersection of data and values. You can group data and values in report designer. You can then classify and analyze transactions in more detail. You can use the **Insert Rows from Dimensions** dialog box to add multiple rows to a row definition at the same time. The dialog box displays one column for each dimension. The following table describes the information that you can specify for each dimension.
@@ -75,18 +74,18 @@ A dimension is an intersection of data and values. You can group data and values
 | Dimension Range Start | The first value for this dimension to add to the row definition.                                                                                                                                                                                                                 |
 | Dimension Range End   | The last value for this dimension to add to the row definition.                                                                                                                                                                                                                  |
 
-To add dimensions to a row definition, follow these steps.
+To add dimensions to a row definition, follow these steps.
 
-1.  In Report Designer, click **Row Definitions**, and then open the row definition to modify.
+1.  In Report Designer, click **Row Definitions**, and then open the row definition to modify.
 2.  On the **Edit** menu, click **Insert Rows from Dimensions**.
 3.  In the **Insert Rows from Dimensions** dialog box, in the **Dimensions** row, select the cell for the dimension to transfer to the row definition, and then click **All &&&**.
 4.  To limit the row definition to a specific range of dimension values, enter the starting dimension value in the **Dimension Range Start** cell, and then enter the ending dimension value in the **Dimension Range End** cell. To include all values for the selected dimension, leave these cells empty. **Note:** Wildcard characters (\* or ?) in dimension ranges might not return all the results that you want, depending on how the ERP database collates data.
 5.  In the **Starting row code** field, specify the row code for the first dimension value to add to the row definition.
 6.  In the **Increment each row by** field, specify the gap between consecutive row codes. For example, if the first row code is 100, and the increment value is 30, the first new rows have the codes 100, 130, 160, 190, and 220. Use an increment value that provides enough space to insert new format and formula rows.
-7.  Click **OK**. For each of the selected dimension values, one line is added to the row definition.
+7.  Click **OK**. For each of the selected dimension values, one line is added to the row definition.
 
 ## Adjust rounding in a row definition
-If you have a balance sheet where the amounts are rounded, the totals might not balance. This issue can occur if, for example, you use the rounding option on a balance sheet report and the report definition also specifies rounding. You can use the **Rounding adjustment** option in the row definition to balance the amounts in the balance sheets. You can turn rounding off or modify it on the **Settings** tab of the report definition. The following table shows how amounts are rounded. In this table, the totals of rows 100 and 200 differ when rounding is turned on.
+If you have a balance sheet where the amounts are rounded, the totals might not balance. This issue can occur if, for example, you use the rounding option on a balance sheet report and the report definition also specifies rounding. You can use the **Rounding adjustment** option in the row definition to balance the amounts in the balance sheets. You can turn rounding off or modify it on the **Settings** tab of the report definition. The following table shows how amounts are rounded. In this table, the totals of rows 100 and 200 differ when rounding is turned on.
 
 | Row code | Amounts without rounding | Amount with rounding to whole thousands |
 |----------|--------------------------|-----------------------------------------|
@@ -94,7 +93,7 @@ If you have a balance sheet where the amounts are rounded, the totals might not 
 | 200      | 3,700                    | 4                                       |
 | Total    | 7,300                    | 8                                       |
 
-To adjust rounding in a balance sheet, follow these steps.
+To adjust rounding in a balance sheet, follow these steps.
 
 1.  In Report Designer, click **Row Definitions**, and then open the row definition to modify.
 2.  On the **Edit** menu, click **Rounding Adjustment**.
@@ -102,7 +101,7 @@ To adjust rounding in a balance sheet, follow these steps.
     -   **Rounding adjustment row** – The row code for the row that should be adjusted to balance the balance sheet.
     -   **Total assets row** – The row code for the row in the balance sheet that contains the total assets.
     -   **Total liabilities and equity row** – The row code for the row in the balance sheet that contains the total liabilities and equity.
-    -   **Adjustment amount limit** – A positive whole number that specifies the limit on automatic adjustments. This amount is compared with the absolute value of the actual rounding difference.
+    -   **Adjustment amount limit** – A positive whole number that specifies the limit on automatic adjustments. This amount is compared with the absolute value of the actual rounding difference.
 
     **Note:** These row codes must be linked to your financial data. In other words, the row must have a dimension value in its **Link to Financial Dimensions** cell. Do **not** reference a description (**DESC**), calculated (**CALC**), or totaled (**TOT**) row.
 
@@ -140,7 +139,7 @@ You can create and modify font styles for your report. You can then apply those 
 <tr class="odd">
 <td>Apply a font style</td>
 <td><ol>
-<li>In Report Designer, in a definition or column definition, or in headers and footers, select one or more cells.</li>
+<li>In Report Designer, in a definition or column definition, or in headers and footers, select one or more cells.</li>
 <li>In the <strong>Style</strong> list on the toolbar, select a font style.</li>
 </ol></td>
 </tr>
@@ -153,7 +152,7 @@ The formatting that is specified in the row definition overrides any formatting 
 
 1.  In Report Designer, open the row definition to modify.
 2.  Select the cells to format. To select multiple cells, hold down the Ctrl key while you select the cell.
-3.  Click the toolbar button of the format to apply. For example, to indent a row, select the row, and then click **Increase Indent** ![Increase Indent](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Increase Indent") on the toolbar.
+3.  Click the toolbar button of the format to apply. For example, to indent a row, select the row, and then click **Increase Indent** ![Increase Indent](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Increase Indent") on the toolbar.
 
 ### Adjust columns while you design reports
 
@@ -177,7 +176,7 @@ To make it easier to view the columns that you're working on in the row definiti
 2.  Right-click the minimized column to display, and then click **Unhide**.
 
 
-See also
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-intro.md)

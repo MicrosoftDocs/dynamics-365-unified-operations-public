@@ -29,7 +29,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up workflows for expense
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+
 You can set up a workflow process that is used to review and approve travel and expense documents. The documents for which workflows
 can be defined include expense reports, travel requisitions, and cash advance requests.
 
@@ -48,12 +49,14 @@ or approve a document. There are several benefits of using the workflow system i
 
 The following table lists the types of workflows that you can create in **Expense**.
 
-| **Type**                           | **Use this type to**                                                 |     
-|------------------------------------|----------------------------------------------------------------------|
-| **Expense report**                 | Create approval workflows for expense reports.                       |      
-| **Expense report auto posting**    | Create automatic posting workflows for expense reports.              |     
-| **Expense line item**              | Create approval workflows for line items on expense reports.         |     
-| **Expense line item auto posting** | Create automatic posting workflows for line items on expense reports.|
-| **Travel requisition**             | Create approval workflows for travel requisitions.                   |    
-| **Cash advance request**           | Create approval workflows for cash advance requests.                 |     
-| **VAT tax recovery**               | Create approval workflows for the recovery of value-added tax (VAT). |       
+
+|              <strong>Type</strong>              |                   <strong>Use this type to</strong>                   |
+|-------------------------------------------------|-----------------------------------------------------------------------|
+|         <strong>Expense report</strong>         |            Create approval workflows for expense reports.             |
+|  <strong>Expense report auto posting</strong>   |        Create automatic posting workflows for expense reports.        |
+|       <strong>Expense line item</strong>        |     Create approval workflows for line items on expense reports.      |
+| <strong>Expense line item auto posting</strong> | Create automatic posting workflows for line items on expense reports. |
+|       <strong>Travel requisition</strong>       |          Create approval workflows for travel requisitions.           |
+|      <strong>Cash advance request</strong>      |         Create approval workflows for cash advance requests.          |
+|        <strong>VAT tax recovery</strong>        | Create approval workflows for the recovery of value-added tax (VAT).  |
+

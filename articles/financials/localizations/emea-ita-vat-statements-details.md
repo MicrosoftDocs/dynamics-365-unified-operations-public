@@ -31,14 +31,13 @@ ms.dyn365.ops.version: Version 1611
 
 # VAT statements details for Italy
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up a VAT statement for legal entities in Italy. 
 
-## Set up customer/vendor tax information for tax reports
+## Set up customer/vendor tax information for tax reports
 
-To generate the sales tax report, the customer and vendor must be configured with the fiscal information for Italy. On the **Customers** page, select the fields in the following table.
+To generate the sales tax report, the customer and vendor must be configured with the fiscal information for Italy. On the **Customers** page, select the fields in the following table.
 
 ### Invoice and delivery
 
@@ -48,7 +47,7 @@ To generate the sales tax report, the customer and vendor must be configured wit
 | **Fiscal code**       | Enter the fiscal code for this customer.               |
 | **Sales tax Group**   | Select a sales tax group to be used for this customer. |
 
-On the **Vendors** page, select the fields in the following table.
+On the **Vendors** page, select the fields in the following table.
 
 ### Invoice and delivery
 
@@ -59,7 +58,7 @@ On the **Vendors** page, select the fields in the following table.
 | **Sales tax Group**   | Select a sales tax group to be used for this vendor. |
 
 ## Set up a company fiscal code and tax registration number
-To generate reports, the company fiscal code and registration number should be set up on the **Legal entity** page. On the **Legal entity** page, select the fields in the following table.
+To generate reports, the company fiscal code and registration number should be set up on the **Legal entity** page. On the **Legal entity** page, select the fields in the following table.
 
 ### Registration numbers
 
@@ -115,7 +114,7 @@ After the year end, generate the report for each settlement period. The transmis
 | **Export file name**     | The name of the .ivc file.                                                                    |
 
 ## VAT summary report
-For VAT reporting, Italy has specific information to be reported and formatted. In the **Sales tax authorities** page, on **Tax setup**, configure the Italian authority.
+For VAT reporting, Italy has specific information to be reported and formatted. In the **Sales tax authorities** page, on **Tax setup**, configure the Italian authority.
 
 | **Field**                                 | **Description**                                                                                |
 |-------------------------------------------|------------------------------------------------------------------------------------------------|
@@ -126,9 +125,11 @@ For VAT reporting, Italy has specific information to be reported and formatted.
 | **Account loss**                          | Loss due to rounding.                                                                          |
 
 ## Sales tax settlement periods
-Per Italian legislation, rules apply to settlement periods. For example, after the settlement period is closed, no change is allowed. You are required to report if the settlement refers to the last period on the fiscal year. View the settlement period status and report if it refers to a year closing. On the **Sales tax settlement period** page &gt; **Period Intervals** tab, select the following fields.
+Per Italian legislation, rules apply to settlement periods. For example, after the settlement period is closed, no change is allowed. You are required to report if the settlement refers to the last period on the fiscal year. View the settlement period status and report if it refers to a year closing. On the **Sales tax settlement period** page &gt; **Period Intervals** tab, select the following fields.
 
-| **Field**       | **Description**                                                                                   |
-|-----------------|---------------------------------------------------------------------------------------------------|
-| **Closed**      | Indicates if the Italian sales tax book for the period has been updated and automatically closed. |
-| **Last period** | Select this option if the period is the last period in a sales tax year.                          |
+
+|    <strong>Field</strong>    |                                   <strong>Description</strong>                                    |
+|------------------------------|---------------------------------------------------------------------------------------------------|
+|   <strong>Closed</strong>    | Indicates if the Italian sales tax book for the period has been updated and automatically closed. |
+| <strong>Last period</strong> |             Select this option if the period is the last period in a sales tax year.              |
+

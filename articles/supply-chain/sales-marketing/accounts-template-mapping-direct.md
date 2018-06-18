@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronize accounts directly from Sales to customers in Finance and Operations 
-description: This topic discusses the templates and underlying tasks that are used to synchronize accounts from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+description: This topic discusses the templates and underlying tasks that are used to synchronize accounts from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations. 
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/26/2017
@@ -33,12 +33,12 @@ ms.search.validFrom: 2017-07-8
 
 # Synchronize accounts directly from Sales to customers in Finance and Operations
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Before you can use the Prospect to cash solution, you should be familiar with [Dynamics 365 Data integration](/common-data-service/entity-reference/dynamics-365-integration).
 
-This topic discusses the templates and underlying tasks that are used to synchronize accounts directly from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic discusses the templates and underlying tasks that are used to synchronize accounts directly from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations.
 
 ## Data flow in Prospect to cash
 

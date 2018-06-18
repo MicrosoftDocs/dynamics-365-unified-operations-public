@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Depreciation effects with reversals
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article discusses potential implications of reversing a fixed asset transaction. 
 
@@ -95,7 +94,7 @@ Depreciation is understated by 16.95 (983.62 - 966.67).
 
 
 
-See also
+Additional resources
 --------
 
 [Fixed asset depreciation](fixed-asset-depreciation.md)

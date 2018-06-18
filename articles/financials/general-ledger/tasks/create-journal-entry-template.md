@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a journal entry using a template
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher. This procedure uses the USMF demo company.
 

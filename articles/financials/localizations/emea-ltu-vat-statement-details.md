@@ -31,8 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # VAT statement details for Lithuania
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up a VAT statement for legal entities in Lithuania.
 
@@ -47,13 +46,13 @@ Here is an example that show how you can use sales tax reporting codes to genera
 | Sales tax reporting code | Description                                                           | Box name on the report |
 |--------------------------|-----------------------------------------------------------------------|------------------------|
 | 11                       | Tax base amount of sales-taxable sales                                | E11                    |
-| 12                       | Tax base amount of sales-taxable sales per paragraph 96               | E12                    |
+| 12                       | Tax base amount of sales-taxable sales per paragraph 96               | E12                    |
 | 13                       | Tax base amount of non-taxable sales                                  | E13                    |
 | 14                       | Consumption for company requirements                                  | E14                    |
 | 15                       | Fixed asset production                                                | E15                    |
 | 16                       | Margin of deals that have a special taxation schema                   | E16                    |
-| 17                       | Export of goods (0 percent)                                           | E17                    |
-| 18                       | Sales to European Union (EU) VAT payers (0 percent)                   | E18                    |
+| 17                       | Export of goods (0 percent)                                           | E17                    |
+| 18                       | Sales to European Union (EU) VAT payers (0 percent)                   | E18                    |
 | 19                       | Other sales that have 0-percent VAT                                   | E19                    |
 | 20                       | Non-taxable sales outside Lithuanian borders                          | E20                    |
 | 21                       | Amount of goods that are purchased from the EU                        | E21                    |
@@ -64,10 +63,10 @@ Here is an example that show how you can use sales tax reporting codes to genera
 | 26                       | Paid import VAT                                                       | E26                    |
 | 27                       | Import VAT that will be deducted under the control of the tax service | E27                    |
 | 29                       | Tax amount of sales that have a standard tax rate                     | E29                    |
-| 30                       | Tax amount of sales that have a reduced tax rate of 9 percent         | E30                    |
-| 31                       | Tax amount of sales that have a reduced tax rate of 5 percent         | E31                    |
-| 32                       | Tax amount of sales per paragraph 95                                  | E32                    |
-| 33                       | Tax amount of sales per paragraph 96                                  | E33                    |
+| 30                       | Tax amount of sales that have a reduced tax rate of 9 percent         | E30                    |
+| 31                       | Tax amount of sales that have a reduced tax rate of 5 percent         | E31                    |
+| 32                       | Tax amount of sales per paragraph 95                                  | E32                    |
+| 33                       | Tax amount of sales per paragraph 96                                  | E33                    |
 | 34                       | Sales VAT of goods that are purchased in the EU                       | E34                    |
 | 35                       | Deductible purchase and import VAT amount                             | E35                    |
 

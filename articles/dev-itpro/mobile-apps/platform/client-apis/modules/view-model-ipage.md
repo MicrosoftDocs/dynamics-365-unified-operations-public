@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Page 
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 The IPage interface encapsulates the various properties, life cycle and event hooks associated with a page in a workspace.
 ### Page data Synchronization

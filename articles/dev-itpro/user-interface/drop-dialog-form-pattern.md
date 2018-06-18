@@ -32,18 +32,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Drop Dialog form pattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the Drop Dialog form pattern. This pattern is used to initiate actions when the number of fields is seven or fewer. 
 
 Usage
 -----
 
-The Drop Dialog pattern is used to initiate actions when the number of fields is seven or fewer. Drop dialogs are quick and easy for users to use, and are more lightweight than a full dialog that is presented as a slider. Drop dialogs should feel as lightweight to use as a menu. Two patterns are described in this document:
+The Drop Dialog pattern is used to initiate actions when the number of fields is seven or fewer. Drop dialogs are quick and easy for users to use, and are more lightweight than a full dialog that is presented as a slider. Drop dialogs should feel as lightweight to use as a menu. Two patterns are described in this document:
 
--   **Drop dialog** – This is the basic Drop dialog pattern. If your Drop dialog is editable, this is the correct pattern to use.
--   **Drop dialog (read only)** – This Drop dialog pattern is for informational forms that aren't editable. This variation doesn't have an **OK** button.
+-   **Drop dialog** – This is the basic Drop dialog pattern. If your Drop dialog is editable, this is the correct pattern to use.
+-   **Drop dialog (read only)** – This Drop dialog pattern is for informational forms that aren't editable. This variation doesn't have an **OK** button.
 
 ## Wireframe
 ### Drop dialog (basic)
@@ -55,12 +54,12 @@ The Drop Dialog pattern is used to initiate actions when the number of fields i
 [![DropDialog(2)](./media/dropdialog2.png)](./media/dropdialog2.png)
 
 ## Pattern changes
-Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
+Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
 -   Manual handling of error messages is no longer required.
 
 ## Model
-### Drop dialog (basic) – High-level structure
+### Drop dialog (basic) – High-level structure
 
 - Design
 
@@ -70,7 +69,7 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
         - OKButton ($Button)
 
-### Drop dialog (read only) – High-level structure
+### Drop dialog (read only) – High-level structure
 
 - Design
 
@@ -95,7 +94,7 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 -   [Toolbar and List](toolbar-list-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows you the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
+The verification checklist shows you the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
 -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 
@@ -115,7 +114,7 @@ The verification checklist shows you the steps for manually verifying that the f
     -   Besides the main instruction, a secondary instruction to the user should be displayed, and it should present additional information that will help the user understand or use the Drop dialog. The secondary instruction should consist of a complete sentence in sentence case and should have end punctuation.
         -   **Exception:** If the additional instruction merely repeats the main instruction with slightly different wording, don't include it.
 -   A Drop dialog should have a **content** area.
-    -   Constrained input controls should be used to avoid validation errors. Examples include selection lists, check boxes, radio buttons, and command links.
+    -   Constrained input controls should be used to avoid validation errors. Examples include selection lists, check boxes, radio buttons, and command links.
     -   Reasonable defaults for each input should be provided whenever possible.
 -   A Drop dialog should have a **commit** button area that:
     -   Does **not** have a **Cancel** button.
@@ -141,7 +140,7 @@ Form: **CustCollectionsNewActivityAction** (Click **Accounts receivable** &gt; *
 
 ### Drop dialog (read only)
 
-This pattern isn't currently used in the product.
+This pattern isn't currently used in the product.
 
 ## Appendix
 ### Frequently asked questions
@@ -151,9 +150,9 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 -   **Should a vertical Fields and Field Groups subpattern be added for Drop dialogs?**
-    -   No, you should use the normal Fields and Field Groups pattern.
+    -   No, you should use the normal Fields and Field Groups pattern.
 -   **Should buttons be left-aligned or right-aligned?**
-    -   Right-aligned. The pattern is currently enforcing this.
+    -   Right-aligned. The pattern is currently enforcing this.
 
 ### AX 2012 content
 

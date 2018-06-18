@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Formula designer
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to use the formula designer to analyze and maintain formulas in a tree view.
 
@@ -71,7 +71,7 @@ The filter that is applied for the formula and route is shown in the header of t
 <tbody>
 <tr class="odd">
 <td>Product dimensions</td>
-<td>If the selected finished product is a product master, you can define the active product dimensions for the main selection. Note that if you open the formula designer for a product that isn't a product master, no product dimensions can be selected in the <strong>Filter</strong> dialog box.</p></td>
+<td>If the selected finished product is a product master, you can define the active product dimensions for the main selection. Note that if you open the formula designer for a product that isn&#39;t a product master, no product dimensions can be selected in the <strong>Filter</strong> dialog box.</p></td>
 </tr>
 <tr class="even">
 <td>Site</td>
@@ -91,7 +91,7 @@ The filter that is applied for the formula and route is shown in the header of t
 </tr>
 <tr class="odd">
 <td>From quantity</td>
-<td>Filter the versions by selecting a specific "from" quantity. If you set a value, different formula and route versions might be selected.</td>
+<td>Filter the versions by selecting a specific &quot;from&quot; quantity. If you set a value, different formula and route versions might be selected.</td>
 </tr>
 <tr class="even">
 <td>Show valid only</td>
@@ -119,7 +119,9 @@ Use the **BOM lines** or **Formula** functions to modify the formula lines or fo
 ## Configuring the tree view
 Click **Setup** to customize the information that is shown in the tree view of the formula designer.
 
-| Field group | Description |
-|-------------|-------------|
-| BOM         | Use the check boxes to select the criteria that are shown in the tree structure. The formula designer shows the selected criteria at the bottom of both tabs. |
-| Route       | Use the check boxes to select the criteria that are shown for the routes. |
+
+| Field group |                                                                          Description                                                                          |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     BOM     | Use the check boxes to select the criteria that are shown in the tree structure. The formula designer shows the selected criteria at the bottom of both tabs. |
+|    Route    |                                           Use the check boxes to select the criteria that are shown for the routes.                                           |
+

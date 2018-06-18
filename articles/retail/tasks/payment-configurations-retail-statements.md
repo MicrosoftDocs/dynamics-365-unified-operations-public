@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Payment configurations for Retail statements
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates configurations for Retail store payment methods, which affect how Retail statements get created and posted.
 

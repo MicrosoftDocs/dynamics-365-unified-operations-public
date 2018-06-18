@@ -29,14 +29,14 @@ ms.dyn365.ops.version: July 2017 update
 
 # Compensation Power BI content
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the **Compensation** Microsoft Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
 
 ## Accessing the Power BI content
 The **Compensation** Power BI content is shown in the **Compensation management** workspace if you use one of the following products:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+- Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## Reports that are included in the Power BI content

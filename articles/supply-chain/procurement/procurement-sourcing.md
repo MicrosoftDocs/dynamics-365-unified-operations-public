@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Procurement and sourcing home page
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.
 
@@ -64,8 +63,8 @@ Procurement and sourcing covers all steps from identifying a need for product an
 -   [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md)
 -   [Inbound consignment inventory demo script for Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(white paper)
 -   [Monitor consignment inventory using vendor collaboration](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
--   [Collaborating with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md)  (February 2016 and May 2016 versions of Dynamics AX only)
--   [Configuration of security for Vendor portal users](configure-security-vendor-portal-users.md) (2016 and May 2016 versions of Finance and Operations only)
+-   [Collaborating with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md)  (February 2016 and May 2016 versions of Dynamics AX only)
+-   [Configuration of security for Vendor portal users](configure-security-vendor-portal-users.md) (2016 and May 2016 versions of Finance and Operations only)
 -   [Vendor collaboration mobile workspace for Microsoft Dynamics 365 for Finance and Operations app](vendor-collaboration-mobile-workspace.md)
 
 ## Procurement product management

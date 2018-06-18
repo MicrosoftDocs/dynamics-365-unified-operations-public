@@ -2,7 +2,7 @@
 # required metadata
 
 title: NF-e certificates for Brazil
-description: This topic provides information about NF-e certificates for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This includes information about the solution you should use for each state tax authority.
+description: This topic provides information about NF-e certificates for Microsoft Dynamics 365 for Finance and Operations. This includes information about the solution you should use for each state tax authority.
 author: sndray
 manager: AnnBe
 ms.date: 01/31/2018
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # NF-e certificates
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In the Brazilian localization, you must generate a Nota Fiscal eletrônica (NF e) to register the movement of items and services between two parties.
 The NF e fiscal document must be signed and transmitted to the state tax authority using a client certificate that is issued by a Brazilian certificate authority (CA).
@@ -43,7 +43,7 @@ Before you can generate an NF e, you must complete the following tasks:
 - Set up a fiscal document type for NF e.
 
 ## Set up certificates
-The process that you use to install certificates varies, depending on the state where the NF e fiscal document is issued. You must use the correct certificate installation process, so that Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, can connect with the state web services.
+The process that you use to install certificates varies, depending on the state where the NF e fiscal document is issued. You must use the correct certificate installation process, so that Microsoft Dynamics 365 for Finance and Operations, can connect with the state web services.
 
 The Brazilian government updated the root certification authority (CA) that is used to issue the certificate that is required in order to establish a Secure Sockets Layer (SSL) connection on server side. The current version of the root CA is AC Raiz v5. By default, the previous version (AC Raiz v2) is deployed on Microsoft Windows.
 
@@ -53,7 +53,7 @@ The Brazilian government updated the root certification authority (CA) that is u
 
 Brazilian certificates must be installed via Azure Key Vault. Key Vault lets you store encrypt keys, certificates, and secrets (such as authentication keys, storage account keys, data encryption keys, .pxf files, and passwords) by using keys that are protected by hardware security modules (HSMs).
 
-For more information about how to use keys and secrets with Key Vault, see [About keys, secrets, and certificates](https://docs.microsoft.com/en-us/rest/api/keyvault/about-keys--secrets-and-certificates).
+For more information about how to use keys and secrets with Key Vault, see [About keys, secrets, and certificates](https://docs.microsoft.com/rest/api/keyvault/about-keys--secrets-and-certificates).
 The following table lists each tax authority and the solution that you should use to install certificates for it in Finance and Operations.
 
 |Tax authority|	States|	Solution|

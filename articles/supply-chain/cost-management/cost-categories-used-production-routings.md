@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cost categories used in production routing
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about cost categories that apply to manufacturing environments that use routing.
 
@@ -49,7 +48,7 @@ Each cost category has associated cost records and an assigned cost group. Diffe
 -   Provide cost group segmentation of cost contributions to a manufactured item’s calculated cost. For example, you can segment of labor and machine costs.
 -   Provide the cost group basis for overhead calculation formulas, such as formulas for labor-related and machine-related overhead, or overhead that is related to setup and run time.
 
-A cost category can be assigned to the setup time, the process time, and the quantity for a routing operation. When, for example, costs or cost group segmentation differs between the setup time and the process time, different cost categories should be defined and assigned to the setup time and the process time. The selective use of cost categories for setup time, process time, and quantity is determined by the route group that is assigned to an operation. The assignment of cost categories to time and quantity can be mandated by company-wide policies that are defined on the **Production control parameters** page. 
+A cost category can be assigned to the setup time, the process time, and the quantity for a routing operation. When, for example, costs or cost group segmentation differs between the setup time and the process time, different cost categories should be defined and assigned to the setup time and the process time. The selective use of cost categories for setup time, process time, and quantity is determined by the route group that is assigned to an operation. The assignment of cost categories to time and quantity can be mandated by company-wide policies that are defined on the **Production control parameters** page. 
 
 Each cost category has associated costs that are based on the definition of cost records in a costing version. Use the **Cost category price** page to define the cost records for a specified costing version and site. When the cost record for a cost category is first entered, it has a status of **Pending** and an intended effective date. When you activate the cost record, the status is updated to **Current active**, and the effective date is updated to the activation date. Different cost records might reflect different sites, effective dates, or statuses. Bills of materials (BOM) calculations for a future or historical date use cost records that have the relevant effective date. The current active cost record will be used to estimate production order costs and to value reported time against a production order. 
 

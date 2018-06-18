@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inventory close
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 As part of the process to settle issue transactions with receipt transactions, you can also choose to have the general ledger updated to reflect the adjustments that have been made.
 

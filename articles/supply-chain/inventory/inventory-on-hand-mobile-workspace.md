@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Inventory on-hand mobile workspace
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the **Inventory on-hand** mobile workspace. This workspace helps you gain insights into reserved and available inventory anytime and anywhere.
 
@@ -63,8 +63,8 @@ Specifically, the mobile workspace provides these features:
 ## Prerequisites
 The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.
 
-### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 
-If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition has been deployed for your organization, the system administrator must publish the **Inventory on-hand** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations 
+If Microsoft Dynamics 365 for Finance and Operations has been deployed for your organization, the system administrator must publish the **Inventory on-hand** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later
 If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 

@@ -5,7 +5,7 @@ title: One voucher
 description: One voucher for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions in the context of a single voucher.
 author: kweekley
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 # One voucher
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  This functionality will be available in Dynamics 365 for Finance and Operations version 8.0, which will be available in the 
@@ -46,10 +46,13 @@ enter multiple subledger transactions in the context of a single voucher. We ref
 create One voucher by using one of the following methods:
 
 -   Set up the journal name (**General ledger** \> **Journal setup** \>**Journal names**) so that the **New voucher** field is set to 
-**One voucher number only**. Every line that you add to the journal is now included on the same voucher. Because every line is added to 
+**One voucher number only**. * Every line that you add to the journal is now included on the same voucher. Because every line is added to 
 the same voucher, the voucher can be entered as a multiline voucher, as an account/offset account on the same line, or as a combination.
 
 [![Single line](./media/same-line.png)](./media/same-line.png)
+ 
+> [!IMPORTANT] 
+> *  Note that the definition of ‘One voucher’ does NOT include journal names that are set up as **One voucher number** only and the user then enters a voucher which only includes Ledger account types.  In this document, ‘One voucher’ means that there is one voucher that contains more than one vendor, customer, bank, fixed asset, or project. 
 
 -   Enter a multiline voucher where there is no offset account.
 
@@ -88,17 +91,20 @@ Because of the issues that were stated earlier, the One voucher functionality wi
 functional gaps that depend on this functionality, the functionality won't become obsolete all at once. Instead, we will use the 
 following schedule: 
 
--   **Spring 2018 release** – The functionality will be turned off by default through a General ledger parameter. However, you can turn 
-the functionality on if your organization has a scenario that falls in the business scenario gaps that are listed later in this topic.
+- **Spring 2018 release** – The functionality will be turned off by default through a General ledger parameter. However, you can turn 
+  the functionality on if your organization has a scenario that falls in the business scenario gaps that are listed later in this topic.
 
-    -   If a customer has a business scenario that doesn't require One voucher, don't turn the functionality on. We won't fix "bugs" in 
-    the areas that were identified later in this topic if this functionality is used even though another solution exists.
+  -   If a customer has a business scenario that doesn't require One voucher, don't turn the functionality on. We won't fix "bugs" in 
+  the areas that were identified later in this topic if this functionality is used even though another solution exists.
 
-    -   Stop using One voucher for integrations into Microsoft Dynamics 365 Finance and Operations, unless the functionality is required
-    for one of the functional gaps.
+  -   Stop using One voucher for integrations into Microsoft Dynamics 365 Finance and Operations, unless the functionality is required
+  for one of the functional gaps.
 
--   **Fall 2018 and later releases** – The functional gaps will be filled. After the functional gaps are filled, the One voucher 
-functionality will be permanently turned off.
+- **Fall 2018 and later releases** – The functional gaps will be filled. After the functional gaps are filled, the One voucher 
+  functionality will be permanently turned off.
+
+- > [!IMPORTANT]
+  > Please note that the **One voucher number only** option has NOT been removed from the Journal name setup.  This option is still supported when the voucher only contains Ledger account types.  Customers must be careful when using this setting because the voucher will not post if they use **One voucher number only** but then enter more than one customer, vendor, bank, fixed asset, or project.  Also, customers can still enter a mix of subledger account types, such as a payment within a single voucher that contains account types of Vendor/Bank.  
 
 Why use One voucher?
 ====================
@@ -135,17 +141,17 @@ is described for vendor payment summarization.
 
 >   If an organization must view the accounting entries from a business event together, it must use One voucher. 
 
--   **Country-specific features**
+- **Country-specific features**
 
- -   The Single Administrative Document (SAD) feature for Poland currently requires that a single voucher be used. Until a grouping 
- option is available for this feature, you must continue to use the One voucher functionality. There may be additional country-specific
- features that require the One voucher functionality.
+  -   The Single Administrative Document (SAD) feature for Poland currently requires that a single voucher be used. Until a grouping 
+  option is available for this feature, you must continue to use the One voucher functionality. There may be additional country-specific
+  features that require the One voucher functionality.
 
--   **Customer prepayment payment journal that has taxes on multiple "lines"**
+- **Customer prepayment payment journal that has taxes on multiple "lines"**
 
- -   A customer makes a prepayment for an order, and the lines of the order have different taxes that must be recorded for the 
- prepayment. The prepayment customer payment is one transaction that simulates the lines of the order, so that the appropriate tax can 
- be recorded for the amount on each line.
+  -   A customer makes a prepayment for an order, and the lines of the order have different taxes that must be recorded for the 
+  prepayment. The prepayment customer payment is one transaction that simulates the lines of the order, so that the appropriate tax can 
+  be recorded for the amount on each line.
 
 In this scenario, the customers in the single voucher are the same customer, because the transaction simulates the lines of a customer 
 order. The prepayment must be entered in a single voucher, because the tax calculation must be made on the "lines" of the single 

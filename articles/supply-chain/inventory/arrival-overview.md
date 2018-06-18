@@ -32,8 +32,7 @@ ms.search.validFrom: 2016-02-28
 
 # Arrival overview
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the Arrival overview feature. The Arrival overview page is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
 

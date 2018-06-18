@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # POS improvements for serialized products
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## Overview 
 Based on the settings in Retail headquarters, products can be classified as either serialized or non-serialized. When products are serialized, each item can be assigned a unique number that helps track warranties, trace items, and confirm ownership. Although, the ability to provide serial numbers for serialized products existed in our Modern/Cloud Point of Sale (POS), some improvements have been added to help cashiers save time and be more productive.  

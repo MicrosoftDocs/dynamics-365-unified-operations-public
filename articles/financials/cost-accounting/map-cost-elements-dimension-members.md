@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Map cost element dimension members to a common set of dimension members
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 By mapping different cost element dimension members to a common set of cost element dimension members, you merge data into a common format for analysis purposes.
 

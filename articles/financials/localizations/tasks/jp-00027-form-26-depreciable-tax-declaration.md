@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Form 26 for depreciable tax declaration (Japan)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This task walks you through assigning a registration number to a fixed asset and printing the form 26 report.
 

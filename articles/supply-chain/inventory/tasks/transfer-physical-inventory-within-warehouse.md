@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Transfer physical inventory within the warehouse
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through the process of creating and posting an inventory transfer journal in order to register movement of an item from one location in a warehouse to another. You need to have an inventory journal name set up for inventory transfers before you start this. You can walk through this procedure in demo data company USMF using the example values that are shown, or using you can use your own data if you have products and locations set up. These tasks would normally be carried out by a warehouse employee.
 

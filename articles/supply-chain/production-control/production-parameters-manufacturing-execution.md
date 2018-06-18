@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Production parameters in Manufacturing execution
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the setup of production parameters in Manufacturing execution.
 
@@ -71,17 +71,17 @@ For each stage, the **Automatic BOM consumption** field lets you select one of t
 
 - **Flushing principle** – This option is used in combination with an option that is defined for the BOM in the **Production** module. Click **Production control** &gt; **Common** &gt; **Production orders** &gt; **All production orders**. On the **All production orders** page, select a production order in the list, and then, on the Action Pane, click **BOM**. On the **BOM** page, on the **Setup** tab, in **Flushing principle** field, select one of the following options:
 
-    - **Start**
-    - **Finish**
-    - **Manual**
-    - Blank (No option is selected.)
-    - **Available at location**
+  - **Start**
+  - **Finish**
+  - **Manual**
+  - Blank (No option is selected.)
+  - **Available at location**
 
     In Manufacturing execution, if **Flushing principle** is selected in the **Automatic BOM consumption** field on the **Start** tab, all materials that are set to **Start** in the BOM are deducted from inventory when the operation is started. The **Available at location** option is used for products that are enabled for advanced warehouse processes. If you select this flushing principle, material is flushed when warehouse work for raw material picking is completed. Material is also flushed when a BOM line that uses this flushing principle is released to warehouse and the material is available at the production input location.
-    
+
     > [!NOTE]
     > If the **Flushing principle** field is set on the **Start** tab in Manufacturing execution, you must select the same principle on either the **Operations** tab or the **Report as finished** tab. This requirement helps guarantee that materials are deducted from inventory on BOMs that use **Finish** as a flushing principle on the production order. If the same flushing principle isn't selected on either the **Operations** tab or the **Report as finished** tab, materials might be deducted from inventory two times.
- 
+
 - **Always** – If you select this option for a stage, materials are always deducted from inventory at that stage. For example, materials for the production are deducted when the production order is started. This setting requires that **Never** be selected on the **Operations** and **Report as finished** tabs. This requirement helps prevent items from being deducted from inventory two times.
 - **Never** – If you select this option for a stage, no BOM consumption occurs at that stage. For example, if you select **Never** on all three tabs (**Start**, **Operations**, and **Report as finished**), materials must be manually deducted from inventory.
 
@@ -148,10 +148,12 @@ Based on the selections that are described earlier in this section, picking list
 
 You can use the following settings if materials should always be manually deducted from inventory. In this case, picking list journals aren't posted.
 
-| Tab                | Field                          | Setting    |
-|--------------------|--------------------------------|------------|
-| Start              | Update start on-line           | **Status** |
-| Start              | Automatic BOM consumption      | **Never**  |
-| Operations         | Automatic BOM consumption      | **Never**  |
-| Report as finished | Automatic BOM consumption      | **Never**  |
-| Report as finished | Update finished report on-line | **Status** |
+
+|        Tab         |             Field              |         Setting         |
+|--------------------|--------------------------------|-------------------------|
+|       Start        |      Update start on-line      | <strong>Status</strong> |
+|       Start        |   Automatic BOM consumption    | <strong>Never</strong>  |
+|     Operations     |   Automatic BOM consumption    | <strong>Never</strong>  |
+| Report as finished |   Automatic BOM consumption    | <strong>Never</strong>  |
+| Report as finished | Update finished report on-line | <strong>Status</strong> |
+

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Talent July 2017 update
 
 # Create an engaging onboarding experience
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 When done effectively, onboarding helps new employees perform more effectively while also gaining a sense of belonging in their new role. Onboarding can help new employees understand their new role more quickly and accurately than they would have otherwise, and they get a head start on establishing relationships that can help them succeed. Alternatively, an ineffective onboarding experience might leave employees questioning their decision to join your organization. A study conducted by Gartner in 2014 found that nearly one third of the 1,005 respondents who quit a job within the first six months, did so because the guidelines they were given by their leadership weren't clear, their training wasn't effective, or because they didn't establish effective relationships in their new environment.
 

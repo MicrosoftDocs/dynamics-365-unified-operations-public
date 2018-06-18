@@ -31,8 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View and design financial reports
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 for Finance and Operations. Financial reporting consists of a viewing experience within Finance and Operations and a click-once report designer that lets you create and edit financial reports.  
 
@@ -49,7 +48,7 @@ For this exercise, you will be generating and exploring an existing default repo
     4.  Department
 
     Note: The other dimensions can remain in the order they are currently in.
-3.  Save the dimension configuration. Next, we’ll generate a report and explore the data in the report.
+3.  Save the dimension configuration. Next, we’ll generate a report and explore the data in the report.
 4.  Go to **Financial reports** under **Inquiries and reports** in General ledger.
 5.  Select the row for the report named **GL Detail – Default.**
 6.  Select **Edit.** Note: You’ll be prompted to download the click-once report designer and to log in. Use your credentials to log in.

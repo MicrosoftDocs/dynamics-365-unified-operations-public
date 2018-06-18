@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Retail online store publishing architecture
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic contains conceptual information to help developers and system administrators understand how channels and catalogs are published from the retail module to an online store in Microsoft SharePoint 2013 Products. Understanding the publishing process can help you develop, manage, and troubleshoot your Retail online store.
 
 Publish a Retail online store channel
 -------------------------------------
 
-When you publish a Retail online store channel, you replicate the basic structure of your online store between Microsoft Dynamics 365 for Retail and Microsoft SharePoint. You create the basic structure of your online store channel in the **Retail** module. Before you can publish an online store channel, you must complete the following setup tasks:
+When you publish a Retail online store channel, you replicate the basic structure of your online store between Microsoft Dynamics 365 for Retail and Microsoft SharePoint. You create the basic structure of your online store channel in the **Retail** module. Before you can publish an online store channel, you must complete the following setup tasks:
 
 1.  Add the online store to the organization hierarchy.
 2.  Create the online store and configure properties.

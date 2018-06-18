@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Monitor consignment inventory using vendor collaboration
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer. You can also monitor the consumption of the stock when the customer takes ownership of the inventory. You can use this procedure in the USMF demo data company. This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.
 
