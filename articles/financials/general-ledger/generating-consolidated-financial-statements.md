@@ -10,7 +10,7 @@ Here are the high-level steps to consolidate by using a reporting tree.
 **Tip:** For more information about how to create and manage row definitions, column definitions, and reporting trees, see Create and manage report components.
 
 The following illustration shows how you can use a reporting tree definition in Financial reporting to identify each company that you will consolidate.
-[![reporting tree definition](/media/reporting-tree-definition.png)](/media/reporting-tree-definition.png)
+[![reporting tree definition](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/reporting-tree-definition.png)](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/reporting-tree-definition.png)
  
 As the consolidated report in the following illustration shows, when you use the reporting tree together with a report definition, you can view each company separately. The consolidated amounts are shown at the summary level.
  
