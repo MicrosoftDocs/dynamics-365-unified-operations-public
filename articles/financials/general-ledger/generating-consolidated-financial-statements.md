@@ -10,32 +10,51 @@ Here are the high-level steps to consolidate by using a reporting tree.
 **Tip:** For more information about how to create and manage row definitions, column definitions, and reporting trees, see Create and manage report components.
 
 The following illustration shows how you can use a reporting tree definition in Financial reporting to identify each company that you will consolidate.
+
 ![Reporting tree definition](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/reporting-tree-definition.png)
  
 As the consolidated report in the following illustration shows, when you use the reporting tree together with a report definition, you can view each company separately. The consolidated amounts are shown at the summary level.
+
+![Consolidate amount summary level](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/consolidate-amount-summary-level.png)
  
 You can also create a multilevel reporting tree that includes as many levels as you require. The following illustration shows a multilevel reporting tree definition that has roll-ups by worldwide region.
+
+![Multilevel reporting tree definition with roll ups by region](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/multilevel-reporting-tree-definition-roll-ups%20-worldwide-region.png)
  
 The following illustration shows a multilevel reporting tree definition that has roll-ups by function.
- 
+
+![Multilevel reporting tree definition with roll ups by function](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/multilevel-reporting-tree-definition-roll-ups%20-by-function.png)
+
 ### Viewing companies side by side
 Many customers prefer reports where the companies appear side by side, and where a column shows the consolidated total. This format is easy to achieve after you’ve created the reporting tree. Here are the high-level steps to view companies side by side on consolidated financial statements.
+
 1. Create a column definition that includes a **Financial Dimension** column for each company.
 2. Use the **Reporting Unit** field to select the tree and reporting unit for each column.
 3. Optional: Add headers and total columns.
+
 The following illustration shows a column definition in a side-by-side format.
+
+![Column definition in a side-by-side format](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/column-definition-side-by-side-format.png)
  
 ## Consolidations that use organization structures that are created from legal entities
 Organization hierarchies that contain dimensions or legal entities dynamically create reporting tree definitions in Financial reporting. An easy way to streamline consolidations is to add an organization hierarchy to your report in Financial reporting. Based on the report date, Financial reporting will select the organization hierarchy on or before the effective date, as shown in the following illustration.
+
+![Dynamically create reporting tree definition](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/dynamically-create-reporting-tree-definitions.png)
  
 ## Consolidations that involve eliminations
 Elimination transactions are a common part of the consolidation process. In this example, five accounts are eliminated during consolidation: 142600, 211400, 401420, 401180, and 510820. Companies might set up their intercompany accounts differently. For example, some companies set the last digit to 9 if the account is used in intercompany transactions. Regardless of the method, if you know the intercompany accounts, you can show eliminations on your consolidated financial statements.
+
 The following illustration shows a column definition for a consolidated income statement. Three profit and loss intercompany accounts are defined for each company by using the dimension filter. Column D includes the elimination accounts only for the USMF company, and column E includes eliminations only for the DEMF company. Both column D and column E are set up so that they are **not** printed on the financial statement.
- 
+
+![Column definition consolidated income statement](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/column-definition-consolidated-income-statement.png)
+
 When the report is generated, the elimination amounts are calculated in columns F, G, and H, and they are totaled in column I. Column J shows the consolidated amounts, excluding eliminations for the USMF, USRT, and DEMF companies.
 
 **Tip:** Create a second report that shows only the elimination entries, and use it in a report group that includes your consolidated report. In this way, you have all the necessary information to create any journal entries that are required.
+
 The following illustration shows the consolidated report.
+
+![Consolidated report income statement](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/consolidated-report-income-statement.png)
  
 Whether you use accounts, dimensions, or both, Financial reporting lets you filter out the elimination entries by using the dimension filtering capabilities.
 ## Minority interest
