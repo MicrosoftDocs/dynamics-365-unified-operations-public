@@ -6,6 +6,7 @@ Here are the high-level steps to consolidate by using a reporting tree.
 1. Create a row definition, and make sure that all appropriate accounts in all companies are included in the rows.
 2. Create a column definition that includes all the columns that are required for the report that you’re creating.
 3. Create a reporting tree that includes a reporting node for each company that you’re using on consolidated reports.
+
 **Tip:** For more information about how to create and manage row definitions, column definitions, and reporting trees, see Create and manage report components.
 The following illustration shows how you can use a reporting tree definition in Financial reporting to identify each company that you will consolidate.
  
@@ -30,7 +31,8 @@ Elimination transactions are a common part of the consolidation process. In this
 The following illustration shows a column definition for a consolidated income statement. Three profit and loss intercompany accounts are defined for each company by using the dimension filter. Column D includes the elimination accounts only for the USMF company, and column E includes eliminations only for the DEMF company. Both column D and column E are set up so that they are **not** printed on the financial statement.
  
 When the report is generated, the elimination amounts are calculated in columns F, G, and H, and they are totaled in column I. Column J shows the consolidated amounts, excluding eliminations for the USMF, USRT, and DEMF companies.
-**Tip:** Create a second report that shows only the elimination entries, and use it in a report group that includes your consolidated report. In this way, you have all the necessary information to create any journal entries that are required.
+
+**Tip: ** Create a second report that shows only the elimination entries, and use it in a report group that includes your consolidated report. In this way, you have all the necessary information to create any journal entries that are required.
 The following illustration shows the consolidated report.
  
 Whether you use accounts, dimensions, or both, Financial reporting lets you filter out the elimination entries by using the dimension filtering capabilities.
