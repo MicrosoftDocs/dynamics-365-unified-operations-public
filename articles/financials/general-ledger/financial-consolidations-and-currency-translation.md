@@ -2,7 +2,8 @@
 This document takes you through the approach that both Microsoft Dynamics 365 for Finance and Operations and Financial reporting use for consolidations. It describes scenarios that involve multi-company reporting, aggregation, elimination, and minority interest. It also explains how to handle special situations, such as scenarios where legal entities have different fiscal periods or different charts of accounts.
 
 This document was written for users and functional consultants, and it assumes that readers have a general understanding of Finance and Operations and Financial reporting. Basic setup isn’t covered.
-Note: The term legal entity is used in Finance and Operations, and the term company is used in Financial reporting. Both these terms are used in this document. However, for the purposes of this document, their meanings are the same.
+
+**Note:** The term legal entity is used in Finance and Operations, and the term company is used in Financial reporting. Both these terms are used in this document. However, for the purposes of this document, their meanings are the same.
 
 ## Audience
 
