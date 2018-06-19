@@ -902,7 +902,7 @@
           href: ../financials/fixed-assets/tasks/split-fixed-asset.md
         - name: Transfer a fixed asset
           href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
-     - name: General ledger
+    - name: General ledger
       href: ../financials/general-ledger/general-ledger.md
       items:
       - name: Accounts
@@ -1134,9 +1134,13 @@
           href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
         - name: Set up purchase agreement classifications in the public sector
           href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
-    - name: Reporting
+    - name: Financial reporting
       href: ../financials/general-ledger/financial-reporting-getting-started.md
       items:
+      - name: Financial reporting overview
+        href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
+      - name: Financial report components
+        href: ../dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
       - name: Balance sheet financial reports
         href: ../financials/general-ledger/balance-sheet-financial-reports.md
       - name: Generate a financial report
@@ -1149,31 +1153,22 @@
         href: ../financials/general-ledger/view-financial-reports.md
       - name: Report designer
         href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
-   - name: Financial reporting
-    href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
-    items:
-    - name: Generate a financial report
-      href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
-    - name: Financial report components
-      href: ../dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
-    - name: Report designer
-      href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
-    - name: User preferences
-      href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
-    - name: Advanced formatting options
-      href: ../dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/fin-and-ops/toc.json
-    - name: Organize report components
-      href: ../dev-itpro/analytics/organize-components-report-designer.md?toc=/fin-and-ops/toc.json
-    - name: Report definitions
-      href: ../dev-itpro/analytics/design-financial-report-definitions.md?toc=/fin-and-ops/toc.json
-    - name: Row definitions
-      href: ../dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/fin-and-ops/toc.json
-    - name: Column definitions
-      href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
-    - name: Modify row definition cells
-      href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-    - name: Reset the financial reporting data mart after restoring a database
-      href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+      - name: User preferences
+        href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
+      - name: Advanced formatting options
+        href: ../dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/fin-and-ops/toc.json
+      - name: Organize report components
+        href: ../dev-itpro/analytics/organize-components-report-designer.md?toc=/fin-and-ops/toc.json
+      - name: Report definitions
+        href: ../dev-itpro/analytics/design-financial-report-definitions.md?toc=/fin-and-ops/toc.json
+      - name: Row definitions
+        href: ../dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/fin-and-ops/toc.json
+      - name: Column definitions
+        href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
+      - name: Modify row definition cells
+        href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
+      - name: Reset the financial reporting data mart after restoring a database
+        href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
   - name: Localization and regulatory features
     href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
     items:
