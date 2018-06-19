@@ -137,7 +137,7 @@ For information about how to upgrade to the latest version, see [Process for upg
 <td><a href="whats-new-platform-update-17.md">What’s new or changed in Dynamics 365 for Finance and Operations platform update 15 (June 2018)</a></td><tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
-<td>Platform update 15</td>
+<td>Platform update 15*</td>
 <td>7.0.4841</td>
 <td>March 2018</td>
 <td><a href="whats-new-platform-update-15.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 15 (March 2018)</a></td><tbody>
@@ -231,4 +231,5 @@ For information about how to upgrade to the latest version, see [Process for upg
 </tr>
 </tbody>
 </table>
-* Platform update 16 has not been made generally available.
+
+* Platform updates 13, 14, and 16 have not been made generally available.
