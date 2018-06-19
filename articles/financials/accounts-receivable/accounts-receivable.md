@@ -86,30 +86,19 @@ Accept different types of payments from customers, such as bills of exchange, ca
 
 :::row:::
     :::column:::
-        [Use a customer payment to settle multiple invoices that span multiple discount periods](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
-[Centralized payments for Accounts receivable](centralized-payments-accounts-receivable.md)
-[Settle a partial customer payment and the final payment in full before the discount date](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-[Settle a partial customer payment before the discount date with a final payment after the discount date](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+        - [Use a customer payment to settle multiple invoices that span multiple discount periods](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+        - [Centralized payments for Accounts receivable](centralized-payments-accounts-receivable.md)
+        - [Settle a partial customer payment and the final payment in full before the discount date](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+        - [Settle a partial customer payment before the discount date with a final payment after the discount date](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
     :::column-end:::
     :::column:::
-        ![Some image](http://via.placeholder.com/1000x150)
-        ### Hello, title
-        This is where your content goes.
+        - [Settle a partial customer payment that has discounts on credit notes](settle-partial-customer-payment-discounts-credit-notes.md)
+        - [Settle a partial customer payment that has multiple discount periods](settle-partial-customer-payment-multiple-discount-periods.md)
+        - [Reimburse customers](reimburse-customers.md)
+        - [Customer payments for a partial amount](customer-payments-partial-amount.md)
     :::column-end:::
 :::row-end:::
 
-[Use a customer payment to settle multiple invoices that span multiple discount periods](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
-[Centralized payments for Accounts receivable](centralized-payments-accounts-receivable.md)
-[Settle a partial customer payment and the final payment in full before the discount date](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-[Settle a partial customer payment before the discount date with a final payment after the discount date](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
-
-[Settle a partial customer payment that has discounts on credit notes](settle-partial-customer-payment-discounts-credit-notes.md)
-
-[Settle a partial customer payment that has multiple discount periods](settle-partial-customer-payment-multiple-discount-periods.md)
-
-[Reimburse customers](reimburse-customers.md)
-
-[Customer payments for a partial amount](customer-payments-partial-amount.md)
 
 ### Additional resources
 
