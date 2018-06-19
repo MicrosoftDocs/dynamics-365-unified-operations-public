@@ -182,6 +182,6 @@ To get correctly translated amounts when currencies are used, Financial reportin
 
 ## Additional resources
 
-To see the parent topic that provides more information on consolidation and currency translations, please see [Financial consolidations and currency translation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/financial-consolidations-and-currency-translation.md).
+To see the parent topic that provides more information on consolidation and currency translations, please see [Financial consolidations and currency translation](financial-consolidations-and-currency-translation.md).
 
 To find more information about how to enter details of consolidations online, please see [Consolidate Online](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/consolidate-online.md).
