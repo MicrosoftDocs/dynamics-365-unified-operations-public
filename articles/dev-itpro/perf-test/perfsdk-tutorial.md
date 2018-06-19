@@ -43,13 +43,16 @@ This topic describes the Performance software development kit (SDK) and shows ho
 
 - Microsoft Visual Studio 2015 Enterprise
 - A deployment that has volume data
-- The Performance SDK (The SDK will likely be contained in K:\PerfSDK\PerfSDKLocalDirectory.  Depending on your environment, the SDK may be located in C:\PerfSDK instead.)
+- The Performance SDK (The SDK will likely be located in K:\PerfSDK\PerfSDKLocalDirectory. Depending on your environment, the SDK may be located in C:\PerfSDK.)
 
 ## Create a single-user C# test from an XML recording
 
 To view a video that shows how to create a single-user test, go to [https://mix.office.com/watch/qtdlasy2rcf3](https://mix.office.com/watch/qtdlasy2rcf3).
 
-1. Use Task recorder to create a recording of the scenario that you want to test. Note that your recording must start on the default dashboard page otherwise the test will not be able to run.
+1. Use Task recorder to create a recording of the scenario that you want to test. 
+
+    > [!IMPORTANT]
+    > If your recording does not start on the default dashboard page, the test will not be able to run.
 2. Start Microsoft Visual Studio as administrator, and build the **PerfSDKSample** project. This project is in the **PerfSDK** folder. If you've already built the project, skip this step.
 3. Select **Dynamics 365** &gt; **Addins** &gt; **Create C# perf test from recording**.
 4. In the **Import Task Recording** dialog box, enter the required details, and then select **Import**.
@@ -88,7 +91,7 @@ To view a video that shows how to create a single-user test, go to [https://mix.
    - authcert.cer 
    - authcert.pvk
 
-5. Install the **authcert.pfx** and **authcert.cer** certificate files. When you install it, make sure that you select **Local Machine**. Copy the **authcert.pfx** file to the **PerfSDK** folder.
+5. Install the **authcert.pfx** and **authcert.cer** certificate files. When you install these files, make sure that you select **Local Machine**. Copy the **authcert.pfx** file to the **PerfSDK** folder.
 6. Open a Microsoft Windows PowerShell window as an administrator, and run the following commands to get the thumbprint of the installed certificate.
 
     ```
@@ -290,7 +293,7 @@ You can now run performance tests against the topology.
 ## Troubleshooting
 
 ### No client was opened in the timeout period
-This issue impacts single user tests only. The test will run and open a web client but a website is never loaded.  Instead, there is an empty web client with a white screen with the message "This is the initial start page for the WebDriver server" at the top of the page.  The test will eventually timeout and fail with an error message.
+This issue only impacts single-user tests. When the test is running, a web client opens, but a website is never loaded. Instead, there is an empty web client with a white screen with the message "This is the initial start page for the WebDriver server" at the top of the page. The test will eventually timeout and fail with an error message.
 
 #### Error example
 
@@ -298,7 +301,7 @@ This issue impacts single user tests only. The test will run and open a web clie
 Initialization method <Test class name>.TestSetup threw exception. System.TimeoutException: System.TimeoutException: No client was opened in the timeout period.
 ```
 #### Solution
-Follow steps 4-8 of **Run a single-user performance test by using the Performance SDK**.  This section provides details on how to create a proper certificate for this type of test.  The section also explains how to add the thumbprint of the certificate to the wif.config.
+Follow steps 4-8 of **Run a single-user performance test by using the Performance SDK**. This section provides details on how to create a proper certificate for this type of test. The section also explains how to add the thumbprint of the certificate to the wif.config.
 
 ### Zoom factor
 
@@ -409,23 +412,23 @@ Initialization method <Test class name>.TestSetup threw exception. System.Servic
 #### Solution
 
 There are two known scenarios that can cause this error:
-- This issue can occur when the test users are created by running MS.Dynamics.Performance.CreateUsers.exe without any arguments.  For example:
+- This issue can occur when the test users are created by running MS.Dynamics.Performance.CreateUsers.exe without any arguments. For example:
 
     ```
     MS.Dynamics.Performance.CreateUsers.exe
     ```
 
-    If the CreateUsers script is run without any arguments, it will create test users with improperly formatted email addresses. The tests will output this forbidden request error if they are run with this test users. You can verify that this is the source of the error by viewing the Users in Dynamics for Finance and Operations. The test users will have email addresses that looks like these users:
+If the CreateUsers script is run without any arguments, it will create test users with improperly formatted email addresses. The tests will output this forbidden request error if they are run with these test users. You can verify that this is the source of the error by viewing the Users in Dynamics for Finance and Operations. The test users will have email addresses that looks like the following:
 
 [![PerfSDKBadUserFormat](./media/PerfSDKBadUserFormat.PNG)](./media/PerfSDKBadUserFormat.PNG)
 
-   To resolve the issue, delete the test users with the improperly formatted email addresses.  Rerun the CreateUser scripts, specifying the user count and company as follows:
+To resolve the issue, delete the test users with improperly formatted email addresses. Rerun the CreateUser scripts, specifying the user count and company as follows:
 
         ```
         MS.Dynamics.Performance.CreateUsers.exe [UserCount] [CompanyCode]
         ```
 
-- This issue can also occur when the number of users that you specify in the **UserCount** field in the CloudEnvironment.Config file exceeds the number of test users that you created by running MS.Dynamics.Performance.CreateUsers.exe. Make sure that you created at least as many test users as you request in the CloudEnvironment.Config file.
+This issue can also occur when the number of users that you specify in the **UserCount** field in the CloudEnvironment.Config file exceeds the number of test users that you created by running MS.Dynamics.Performance.CreateUsers.exe. Make sure that you created at least as many test users as you request in the CloudEnvironment.Config file.
  
 ![Cloud environment configuration](./media/cloud-env-config.png)
 
