@@ -46,6 +46,7 @@ Select a feature area to learn more about it.
         - [Cost accounting](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
+        - [Expense management](expense-management/expense-management.md)
         - [Financial reporting](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Fixed assets](fixed-assets/fixed-assets.md)
         - [General ledger](general-ledger/general-ledger.md) 
