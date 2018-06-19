@@ -199,6 +199,9 @@ Here is an explanation of the parameters:
   ON d.database_id = slo.database_id;  
   ```
 
+> [!WARNING] 
+> Importing a bacpac with the incorrect pricing tier can severely degrade performance or cause other issues.  Verify the existing pricing tier of the target environment before importing, and update the DatabaseServiceObjective as needed.  Non-default UAT environments may not be the default P2.  You can find this information in SSMS by viewing the properties of the existing Azure database in the target environment.  The property is "Current Service Level Objective".
+
 You will receive the following warning message. You can safely ignore it.
 > A project which specifies SQL Server 2016 as the target platform may experience compatibility issues with Microsoft Azure SQL Database v12.
 
