@@ -179,3 +179,9 @@ To get correctly translated amounts when currencies are used, Financial reportin
 - **Weighted average and average** – Each period is calculated at its weighted average, and is totaled for columns such as quarterly and year to date.
 - **Historical** – Any account that uses the historical translation method always goes back to the transaction date. If an acquisition date is associated with the transaction, that date is used to get the exchange rate. Each period is then totaled and stored to help improve the calculation time.
 - **Current** – Calculated and total columns, such as quarterly and year-to-date, are calculated at the spot rate that is determined in the column or on the report. For example, the **Quarter 1** column will use the March 31 rate if a calendar year is used.
+
+## Additional resources
+
+To see the parent topic that provides more information on consolidation and currency translations, please see [Financial consolidations and currency translation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/financial-consolidations-and-currency-translation.md).
+
+To find more information about how to enter details of consolidations online, please see [Consolidate Online](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/consolidate-online.md).
