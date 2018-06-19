@@ -32,7 +32,7 @@ Users can use Consolidation Online, Financial reporting, or a combination. Their
 The **Consolidations** module includes options for consolidating multiple legal entities during the consolidation process, and for importing or exporting a company’s balance. You can also set up eliminations and post elimination journals.
 
 ## Benefits of using Consolidate online
-Customers who use the Consolidations module will gain various benefits:
+Customers who use the **Consolidations** module will gain various benefits:
 - **Depth of data** – You can create consolidated reports that bring together actual and budget data at both the account level and the dimension level.
 - **Dynamic consolidations** – Consolidations can be processed multiple times.
 - **Audit capabilities** – Dimensions and accounts are maintained for analysis and audit, and balances are created by date.
@@ -54,6 +54,7 @@ Before you process a consolidation, you must set up the legal entity. You can ru
 ![Organizational structure](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/organizational-structure.png "Organizational structure")
  
 In the preceding organizational structure, you must have a legal entity for the North American consolidation, because consolidations always consolidate from the accounting currency of the source company to the currency of the consolidation company. In the example, if all companies are included in a single consolidation, the Mexican subsidiary will be translated from Mexican pesos (MXN) to EUR, not from MXN to USD to EUR.
+
 When you create the legal entity, you can specify whether the company is used for both the consolidation process and the elimination process, or for just one of those processes. In the following illustration, the company is used for both processes. Note that you can’t post daily journals in a consolidation company, but you can post them in an elimination company. Therefore, you might want to have a separate elimination company.
 
 ![Legal entities separate elimination company](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/sep-elimination-company.png "Legal entities separate elimination company")
@@ -125,7 +126,9 @@ For more information and examples, see Elimination rules.
 ## Currency revaluation in a consolidation company
 
 When you consolidate data from one accounting currency to another, you must still run currency revaluation if exchange rates change, so that your account balances are correctly revalued. When you originally consolidate the data, use the **Currency translation** tab to select the initial exchange rates that should be used for translation during the consolidation process. After a new exchange rate is entered (for example, in the next month), you must revalue the account balances. The unrealized gains or losses are then updated based on the new exchange rate and date.
+
 For more information about currency revaluation in a consolidation company see Currency revaluation in a consolidation company.
+
 For more information about how currency revaluation works in the **General ledger** module, see Foreign currency revaluation for General ledger.
 
 ### Additional information
