@@ -268,7 +268,7 @@ Finance and Operations doesn't automatically decrease the forecasted estimates. 
 </tr>
 <tr class="odd">
 <td>Remaining budget</td>
-<td>This method uses a remaining budget model to calculate the cost to complete the project. When you use this method, the actual costs and the forecasted amounts in the remaining budget model are added together. The result is a total cost. Before you use this method, a remaining budget model must be set up to deduct transactions based on actual transactions that are recorded in the system. On the <strong>Forecast models</strong> page, make sure that the fields are marked in the <strong>Automatic forecast reduction</strong> group. Typically, a remaining budget is copied from an original budget. As transactions are entered, the transactions on the remaining budget are decreased. As the project progresses, if you determine that the remaining budget must be adjusted, you charge forecast transactions to the remaining budget. <strong>Note:</strong> This method can be applied only if a forecast model is attached to the estimate.</td>
+<td>This method uses a remaining budget model to calculate the cost to complete the project. When you use this method, the actual costs and the forecasted amounts in the remaining budget model are added together. The result is a total cost. Before you use this method, a remaining budget model must be set up to deduct transactions based on actual transactions that are recorded in the system. On the <strong>Forecast models</strong> page, make sure that the fields are marked in the <strong>Automatic forecast reduction</strong> group. Typically, a remaining budget is copied from an original budget. As transactions are entered, the transactions on the remaining budget are decreased. As the project progresses, if you determine that the remaining budget must be adjusted, you charge forecast transactions to the remaining budget. <br></br> <strong>NOTE:</strong> This method can be applied only if a forecast model is attached to the estimate.</td>
 </tr>
 <tr class="even">
 <td>As previous estimate</td>
@@ -343,11 +343,20 @@ The cost payment date isn't calculated on buffer days. After a project is comple
 
 When all sales and vendor invoices are completed, you can view the relationship between fields on the **Cash flow** page and fields on the **Project statements** page.
 
-| Cash flow page | Project statements page |
-|----------------|-------------------------|
-| Cash inflows   | Revenue                 |
-| Cash outflows  | Total cost              |
-| Net cash flows | Gross margin            |
+:::row:::
+    :::column:::
+        **Cash flow page**
+        Cash inflows 
+        Cash outflows
+        Net cash flows
+    :::column-end:::
+    :::column:::
+        **Project statements page**
+        Revenue
+        Total cost
+        Gross margin
+    :::column-end:::
+:::row-end:::
 
 ### Review costs
 
