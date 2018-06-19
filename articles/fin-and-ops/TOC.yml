@@ -587,9 +587,9 @@
           href: ../financials/accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
           href: ../financials/accounts-receivable/customer-payments-partial-amount.md
-     - name: Budgeting
-       href: ../financials/budgeting/budgeting-overview.md
-       items:
+    - name: Budgeting
+      href: ../financials/budgeting/budgeting-overview.md
+      items:
       - name: 'Budget planning overview '
         href: ../financials/budgeting/budget-planning-overview-configuration.md
       - name: 'Budget control overview '
