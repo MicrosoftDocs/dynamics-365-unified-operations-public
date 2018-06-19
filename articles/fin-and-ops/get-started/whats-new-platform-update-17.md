@@ -43,10 +43,10 @@ This topic describes features that are either new or changed in Dynamics 365 for
 ### Announcing the Dynamics 365 Spring '18 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
 
-[Download the Spring '18 release notes](UPDATE http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf). We've captured all the details, end to end, top to bottom, in a single PDF that you can use for planning. 
+[Download the Spring '18 release notes](http://download.microsoft.com/download/1/C/0/1C0A4DB7-9CE8-4D25-AC7F-65579E713BA8/ReleaseNotes_Dynamics365_03192018.pdf). We've captured all the details, end to end, top to bottom, in a single PDF that you can use for planning. 
 
 ### Platform update 17 bug fixes
-For information about the bug fixes included in Platform update 17, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=869898).
+For information about the bug fixes included in Platform update 17, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=875608).
 
 ## Performance improvement in the Visual Studio development environment
 This update includes fixes that improve your experience while using the X++ code editor and metadata properties
