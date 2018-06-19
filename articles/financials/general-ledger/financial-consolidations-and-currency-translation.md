@@ -69,6 +69,8 @@ The second option is to specify a default consolidation account on the **Main ac
 ![Main accounts consolidation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/main-accounts.png "Main accounts consolidation")
  
 The third option is to use consolidation account groups. You can define as many consolidation account groups as you require. Then, on the **Additional consolidation accounts** page, you just map the main account from the chart of accounts to the account that you require for that group.
+
+![Additional consolidation accounts](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/additional-consolidation-accounts.png "Additional consolidation accounts")
  
 ## Consolidate Online 
 
