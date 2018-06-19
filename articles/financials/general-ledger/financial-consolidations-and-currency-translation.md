@@ -56,7 +56,8 @@ The second option is to specify a default consolidation account on the **Main ac
  
 The third option is to use consolidation account groups. You can define as many consolidation account groups as you require. Then, on the **Additional consolidation accounts** page, you just map the main account from the chart of accounts to the account that you require for that group.
  
-##Consolidate Online 
+## Consolidate Online 
+
 (link) 
 
 ## Managing consolidation transactions
@@ -82,7 +83,7 @@ You can find the setup for eliminations in the **Setup** area of the **Consolida
 You can set the date when the elimination rule becomes effective and the date when it expires, as you require. If you want the elimination rule to be available in the elimination proposal process, you must set the **Active** option to **Yes**. Select a journal name that has a type of **Elimination**.
  
 After you’ve defined the basic properties, click **Lines** to define the actual processing rules. There are two options for eliminations: you can eliminate the net change amount or define a fixed amount.
-Select the source accounts. You can use an asterisk (*) as a wildcard character. For example, **1*** selects all accounts that start with a **1** as a source of data for the allocation.
+Select the source accounts. You can use an asterisk ( * ) as a wildcard character. For example, **1*** selects all accounts that start with a **1** as a source of data for the allocation.
 After you’ve selected the source accounts, use the **Account specification** field to specify the account that is used from the destination company. Select **Source** to use the same main account that is defined in the source account. If you select **User defined**, you must specify a destination account.
  
 The **Dimension specification** field works like the **Account specification** field. Select **Source**, to use the same dimensions in the destination company and the source company. If you select **User defined**, you must specify the dimensions in the destination company by clicking **Destination dimensions**. Then select source dimensions and the financial dimensions and values that are used as a source of the elimination.
@@ -94,7 +95,8 @@ Select the company that is the source of the consolidated data, and then select 
 **Note**: The elimination journal shows the amounts for account values in the currency of their originating transactions, not in the accounting currency. When you review the amounts in the elimination journal, you might find this behavior confusing.
 For more information and examples, see Elimination rules.
 
-##Currency revaluation in a consolidation company
+## Currency revaluation in a consolidation company
+
 When you consolidate data from one accounting currency to another, you must still run currency revaluation if exchange rates change, so that your account balances are correctly revalued. When you originally consolidate the data, use the **Currency translation** tab to select the initial exchange rates that should be used for translation during the consolidation process. After a new exchange rate is entered (for example, in the next month), you must revalue the account balances. The unrealized gains or losses are then updated based on the new exchange rate and date.
 For more information about currency revaluation in a consolidation company see Currency revaluation in a consolidation company.
 For more information about how currency revaluation works in the **General ledger** module, see Foreign currency revaluation for General ledger.
