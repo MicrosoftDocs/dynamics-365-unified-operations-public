@@ -5,7 +5,7 @@ title: Data validation workspace
 description: The Data validation checklist workspace lets you track data validation processes across companies, areas, and people. The checklist can be used during a new implementation, after an upgrade, or after a migration.
 author: bking
 manager: AnnBe
-ms.date: 05/11/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form:  DataValidationWorkspace
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
@@ -29,13 +29,10 @@ ms.author: bking
 
 # Data validation workspace
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the **Data validation checklist workspace** and
 the associated configuration.
-
-## Data validation checklist workspace
 
 The **Data validation checklist** workspace lets you track data validation
 processes across companies, areas, and people. The checklist can be used during
@@ -48,7 +45,7 @@ You must first select a data validation project at the top of the workspace. All
 data that is shown in the workspace is then filtered by the selected data
 validation project.
 
-### Summary tiles
+## Summary tiles
 
 The **Summary** tiles provide an overview of the process, and indicators help you
 keep the data validation process on track. You can see all remaining tasks,
@@ -56,7 +53,7 @@ completed tasks, in progress tasks, and not started tasks for the process. This
 information is for all companies that are included in the selected data
 validation project.
 
-### Tasks and status section
+## Tasks and status section
 
 In the **Tasks and status** section, the status of the overall data validation
 project is displayed in various ways: status by legal entity, by area,
@@ -69,7 +66,7 @@ You can filter the task list in several ways. Click **Edit task** to change the
 status of a task or assign a task. Click **Attachments** to view attachments for a
 task.
 
-The task name is a hyperlink to the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition page
+The task name is a hyperlink to the Microsoft Dynamics 365 for Finance and Operations page
 where the user must go to complete the work. You can set this hyperlink by using
 the **Menu item name** field when you edit or create a task from the **Configure
 data validation project** form.
@@ -84,14 +81,14 @@ completed with the name of the worker who completed the task. When a task is mar
 completed, the **Completed date** field is automatically updated to the current
 date and time.
 
-### Configure data validation project page
+## Configure data validation project page
 
 Before you can use the **Data validation checklist** workspace, you must
 configure the process by using the
 **Configure data validation project** page. (Click **Workspaces** \> **Data
 validation checklist** \> **Configure data validation project**.)
 
-### Task areas
+## Task areas
 
 You use task areas to group data validation tasks into logical areas of
 ownership within your organization. For example, Accounts payable, Accounts

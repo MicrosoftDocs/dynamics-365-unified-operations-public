@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: Taxreport770Table_IT
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 # Modello 770
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up, create, and export the Model 770 report that is used to report withholding tax.
 

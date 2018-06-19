@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up and maintain vendor collaboration
-description: This topic explains how to set up vendor collaboration in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
+description: This topic explains how to set up vendor collaboration in Microsoft Dynamics 365 for Finance and Operations. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -32,11 +32,11 @@ ms.dyn365.ops.version: Version 1611
 .md
 # Set up and maintain vendor collaboration
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. From this interface, a vendor can also reply to requests for quotation (RFQs), and view and edit basic company information.
 
-This topic explains how to set up vendor collaboration in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It also explains how to set up a workflow to provision new vendor collaboration users, and how to manage the security roles for those users.
+This topic explains how to set up vendor collaboration in Microsoft Dynamics 365 for Finance and Operations. It also explains how to set up a workflow to provision new vendor collaboration users, and how to manage the security roles for those users.
 
 > [!NOTE]
 > The information about the setup of security roles for vendor collaboration applies only to the current version of Finance and Operations. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about user permissions for the Vendor portal in Microsoft Dynamics AX, see [Vendor portal user security](configure-security-vendor-portal-users.md).
@@ -162,6 +162,8 @@ If the email address of a new vendor collaboration user belongs to a domain that
 
 For more information about the process that is used in the **Send Azure B2B user invitation** task in the workflow for Azure AD account management, see [Azure Active Directory B2B collaboration](https://azure.microsoft.com/en-us/documentation/articles/active-directory-b2b-collaboration-overview/).
 
-## See also
+## Additional resources
 
 [Using vendor collaboration to work with external vendors](vendor-collaboration-work-external-vendors.md)
+
+Watch a short video on the vendor onboarding process: [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)

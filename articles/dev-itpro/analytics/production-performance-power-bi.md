@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  ProductionPerformancePowerBI
+ms.search.form:  ProductionPerformancePowerBI
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Production performance Power BI content
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes what is included in the **Production performance** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 

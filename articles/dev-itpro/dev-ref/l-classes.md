@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # L Classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter L.
 
@@ -1719,6 +1718,7 @@ Initializes a new instance of the ListPage class.
 
 | Method | Description |
 |--------|-------------|
+|        |             |
 
 ## Class ListPageInteraction
     class ListPageInteraction extends PageInteraction

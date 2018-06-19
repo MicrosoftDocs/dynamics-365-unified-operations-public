@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-365-talent 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations 
+ms.search.scope: Operations, Talent 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Enter worker information
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 After a recruiter has created a mass hire project and generated the positions, the next step is to enter the worker information for the people being hired. The demo data company used to create this procedure is USMF. The demo data contains an open mass hire project. To begin this procedure, go to Human resources > Recruitment > Mass hire projects.
 

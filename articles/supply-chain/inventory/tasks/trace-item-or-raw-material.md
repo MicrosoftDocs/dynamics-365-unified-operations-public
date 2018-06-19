@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User
 # ms.devlang:  
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Trace an item or raw material
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used. With this procedure, you can identify an item, trace it back to the source, and then trace forward through the production and sale of the finished product. The process can be used to investigate the customers impacted, the sales orders affected, and more. This procedure uses demo data company USP2.
 

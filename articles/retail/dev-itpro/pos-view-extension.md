@@ -31,10 +31,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Extend existing POS views to add custom columns and app bar buttons
 
+[!include [banner](../../includes/banner.md)]
+
 This topic explains how you can extend existing point of sale (POS) views. To extend the **Transaction** screen and **Welcome** screen, you can use the screen layout designer. To extend all other POS views, such as the **Customer Add/Edit** screen, you use the Retail software development kit (SDK). This topic focuses on the extension of existing POS views via the Retail SDK.
 
 > [!NOTE]
-> This topic applies to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and to Microsoft Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
+> This topic applies to Microsoft Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
 
 POS views support the following extension points and patterns:
 
@@ -57,11 +59,16 @@ The following table shows the POS views that currently support extensions. It al
 | SearchView                      | No                            | Yes                          | Yes                                  |
 | InventoryLookupView             | No                            | Yes                          | Yes                                  |
 | ShowJournalView                 | No                            | Yes                          | Yes                                  |
-| SimpleProductDetailsView        | No                            | Yes                          | Yes                                  |
+| SimpleProductDetailsView        | Yes                           | No                           | Yes                                  |
 | AddressAddEditView              | Yes                           | No                           |  No                                    |
 | PaymentView                     | No                            | No                           | Yes                                  |
 | PriceCheckView                  | Yes                           | No                           | No                                   |
-| SearchOrdersView                | No                            | Yes                          | No                                     |
+| SearchOrdersView                | No                            | Yes                          | No   
+|
+| SearchPickingAndReceivingView   | No                            | Yes                          | No
+|
+
+Note: The above table is getting updated based on the latest realsed version and hotfix. In lower versions some of these extension points will be missing.
 
 ## Add a custom column and an app bar button
 

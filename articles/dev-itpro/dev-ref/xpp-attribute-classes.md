@@ -3,7 +3,7 @@
 
 title: X++ attribute classes
 description: This topic describes the use of attributes in X++.
-author: RobinARH
+author: pvillads
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ attribute classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the use of attributes in X++.
 
-An attribute is a non-abstract class that extends (inherits from) the **SysAttribute** class. Attributes represent or store metadata about types and methods. An attribute can be attached to a class, an interface, or a method of a class, interface, or table.
+An attribute is a non-abstract class that extends (inherits from) the **SysAttribute** class. Attributes represent or store metadata about types and methods. An attribute can be attached to a class, an interface, or a method of a class, interface, or table.
 
-## Creating an attribute class
-An attribute class can extend the **SysAttribute** class directly, or it can extend any descendant of the **SysAttribute** class. The **SysAttribute** class cannot be used as an attribute because it is declared **abstract**. The following example shows the declaration and design of an ordinary attribute class that you could create.
+## Creating an attribute class
+An attribute class can extend the **SysAttribute** class directly, or it can extend any descendant of the **SysAttribute** class. The **SysAttribute** class cannot be used as an attribute because it is declared **abstract**. The following example shows the declaration and design of an ordinary attribute class that you could create.
 
     public class PracticeAttribute extends SysAttribute
     {
@@ -58,7 +57,7 @@ An attribute class can extend the **SysAttribute** class directly, or it can ext
 
 ### Decorating a class with an attribute
 
-The following example shows a class and a method that are decorated with the **PracticeAttribute** given in the previous example. If the constructor of the attribute takes no parameters, the parentheses for the parameters are optional. The attribute decoration could be `[AnotherAttribute]` without parentheses.
+The following example shows a class and a method that are decorated with the **PracticeAttribute** given in the previous example. If the constructor of the attribute takes no parameters, the parentheses for the parameters are optional. The attribute decoration could be `[AnotherAttribute]` without parentheses.
 
     [PracticeAttribute(StartEnd::End, "Use the RegularClass class at the end.")]
     public class RegularClass
@@ -73,14 +72,14 @@ The following example shows a class and a method that are decorated with the **P
 
 ### Attribute constructors
 
-You can enable your attribute class to store tailored metadata each time it is used to decorate a class, by having its constructor take parameters. The parameters for the constructor must be literals of the primitive types, such as **int,** **enum,** or **str**. The compiler does not construct an instance of the attribute class. It stores the name of the attribute class, plus the literal values for its constructor. Therefore, if the logic in an attribute constructor would throw an exception, the exception would not be found by decorating a class with the attribute. The exception would be found later when a process looks at a class to see the attribute it is decorated with. That is when the attribute is constructed.
+You can enable your attribute class to store tailored metadata each time it is used to decorate a class, by having its constructor take parameters. The parameters for the constructor must be literals of the primitive types, such as **int,** **enum,** or **str**. The compiler does not construct an instance of the attribute class. It stores the name of the attribute class, plus the literal values for its constructor. Therefore, if the logic in an attribute constructor would throw an exception, the exception would not be found by decorating a class with the attribute. The exception would be found later when a process looks at a class to see the attribute it is decorated with. That is when the attribute is constructed.
 
 ### Naming conventions
 
-All attribute classes have the suffix **Attribute** in their name. The **Attribute** suffix is the name convention that we recommend, but it is not a system requirement. You can determine whether a class **extends** directly from **SysAttribute** by selecting the class in the **Application Explorer** and reviewing the **Extends** property in the **Properties** window.
+All attribute classes have the suffix **Attribute** in their name. The **Attribute** suffix is the name convention that we recommend, but it is not a system requirement. You can determine whether a class **extends** directly from **SysAttribute** by selecting the class in the **Application Explorer** and reviewing the **Extends** property in the **Properties** window.
 
 ## SysObsoleteAttribute
-The system provides several attributes, including the **SysObsoleteAttribute** class. One use of the **SysObsoleteAttribute** class is to notify the compiler that the compile should fail if a particular method is called in the source code. The compiler rejects the compile, and displays the specific message that is stored in this use of the attribute. The **SysObsoleteAttribute** class can also be used to notify the compiler to issue warning messages instead of errors.
+The system provides several attributes, including the **SysObsoleteAttribute** class. One use of the **SysObsoleteAttribute** class is to notify the compiler that the compile should fail if a particular method is called in the source code. The compiler rejects the compile, and displays the specific message that is stored in this use of the attribute. The **SysObsoleteAttribute** class can also be used to notify the compiler to issue warning messages instead of errors.
 
 ### SysObsoleteAttribute code example
 
@@ -103,9 +102,12 @@ On the previous reflection classes, the methods for reflecting on attribute meta
 -   **getAttributedClasses** method
 -   **getAttributes** method
 
+> [!NOTE]
+> There is no mechanism for listing all methods or classes that are adorned with a particular attribute from X++ code. However, because the X++ compiler records this information in the cross reference database, the information can be mined from there.
+
 ### Metadata reflection code example
 
-You use the **DictMethod** class to find the metadata value of an attribute that is decoration on a method. The following code example uses the **SysEntryPointAttribute** class as the attribute. It accepts your parameter values for the method name, and for the name of the class that contains the method. The **parmChecked** method is particular to the **SysEntryPointAttribute** class, and it is not inherited from its base class **SysAttribute**. Each attribute class can have its own method name for its metadata.
+You use the **DictMethod** class to find the metadata value of an attribute that is decoration on a method. The following code example uses the **SysEntryPointAttribute** class as the attribute. It accepts your parameter values for the method name, and for the name of the class that contains the method. The **parmChecked** method is particular to the **SysEntryPointAttribute** class, and it is not inherited from its base class **SysAttribute**. Each attribute class can have its own method name for its metadata.
 
     static public int MetadataOfSysEntryPointAttributeOnMethod
                 (

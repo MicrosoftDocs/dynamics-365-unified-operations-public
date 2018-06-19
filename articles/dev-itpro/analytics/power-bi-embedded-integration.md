@@ -5,7 +5,7 @@ title: Power BI Embedded integration
 description: Power BI content that partners and ISVs develop can be embedded directly into the application. This topic describes some of the ways that you can use the Power BI Embedded integration.
 author: TJVass
 manager: AnnBe
-ms.date: 07/26/2017
+ms.date: 02/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Platform update 4
 
 # Power BI Embedded integration
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Microsoft Power BI content that partners and independent software vendors (ISVs) developed can be embedded directly into the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This topic describes some of the ways that you can use the Microsoft Power BI Embedded integration.
+Microsoft Power BI content that partners and independent software vendors (ISVs) developed can be embedded directly into the Microsoft Dynamics 365 for Finance and Operations. This topic describes some of the ways that you can use the Microsoft Power BI Embedded integration.
 
 ## Overview
 The integration of Finance and Operations and [Power BI](http://www.powerbi.com/) enables data mash-up scenarios that require access to external data sources that are supported through Microsoft Power Query for Excel. Users can personalize workspaces by embedding tiles that are hosted on PowerBI.com. Users can also add direct links to reports that are hosted on PowerBI.com. In this way, users can access and interact with the reports without leaving the application. Power BI content (PBIX files) that partners and ISVs develop can be embedded directly into the application. PBIX files that are associated with a model file are automatically published in Power BI Embedded as part of the application deployment process. Additionally, you can add X++ extensions for embedded reporting scenarios that require the following functionality:
@@ -89,4 +89,4 @@ Yes, you can drill into the details on a Power BI report. However, there is limi
 Currently, only English is supported. However, the Power BI team plans to add support for other languages.
  
 ### Can I access analytical workspaces and reports in the on-premises version of Finance and Operations?
-No, you can't currently access analytical workspaces and reports in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises). Systems of Intelligence functions rely on cloud-hosted solutions.
+No, you can't currently access analytical workspaces and reports in Microsoft Dynamics 365 for Finance and Operations (on-premises). Systems of Intelligence functions rely on cloud-hosted solutions.

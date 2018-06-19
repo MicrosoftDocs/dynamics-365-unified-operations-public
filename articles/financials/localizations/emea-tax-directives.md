@@ -28,6 +28,9 @@ ms.dyn365.ops.version: July 2017 update
 ---
 
 # Tax directives for Europe
+
+[!include [banner](../includes/banner.md)]
+
 EU Directive provides regulations to be followed by all Member States regarding invoice rules and information that must be included when creating invoices. 
 EU Directive lists the information that is required by suppliers for their customers in the EU. For example, an invoice could include a reference that describes the legal grounds for a VAT zero-rating or an exemption. If an invoice adjusts an earlier issued invoice, such as a credit note, an unambiguous reference should be made to the original invoice.
 

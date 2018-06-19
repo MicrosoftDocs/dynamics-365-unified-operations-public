@@ -78,3 +78,4 @@ To create or copy a business process template, or to start a business process, n
 - Select **Start process** to start the selected business process, assign tasks, and calculate due dates.
 
 To view active processes and associated tasks, open the **Business processes** workspace.
+

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Master planning and multisite functionality
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Master planning takes the settings of the site and warehouse inventory dimensions into account. 
 

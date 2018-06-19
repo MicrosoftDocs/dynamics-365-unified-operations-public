@@ -5,7 +5,7 @@ title: Create an on-premises project in Lifecycle Services
 description: This topic provides information about the process of setting up an on-premises project in Microsoft Dynamics Lifecycle Services (LCS). 
 author: manalidongre
 manager: AnnBe
-ms.date: 06/09/2017
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 # Create an on-premises project in Lifecycle Services
-You must use Microsoft Dynamics Lifecycle Services (LCS) to deploy and update an instance of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises). After you purchase a server and user license through the Volume Licensing flow or the Dynamics Purchase List flow, you will receive an email that includes instructions for signing in to LCS. A Microsoft Azure Active Directory (Azure AD) account is a prerequisite for signing in to LCS. See the topic, [Purchase Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md), to create an Azure AD account or use an existing Azure AD account, and then complete all the sign-up steps. You will be redirected to LCS, where an on-premises implementation project will be provisioned for you.
+
+[!include [banner](../includes/banner.md)]
+
+You must use Microsoft Dynamics Lifecycle Services (LCS) to deploy and update an instance of Microsoft Dynamics 365 for Finance and Operations (on-premises). After you purchase a server and user license through the Volume Licensing flow or the Dynamics Price List flow, see the topic, [Purchase Dynamics 365 for Finance and Operations (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md), to create an Azure AD account or use an existing Azure AD account, and then complete all the sign-up steps. You will be redirected to LCS, where an on-premises implementation project will be provisioned for you.
 
  [![On-premises implementation project](./media/lbd-proejcts-01.png)](./media/lbd-proejcts-01.png)
 

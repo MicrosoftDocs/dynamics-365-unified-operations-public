@@ -32,10 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Define or edit entry point permissions (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 **Note:** This is pre-release documentation of a preliminary nature and is subject to change at any time without notice. Microsoft cannot guarantee the accuracy of any information provided herein.
 

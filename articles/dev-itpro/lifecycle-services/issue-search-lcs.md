@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Issue search on Lifecycle Services
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Issue search tool on Microsoft Dynamics Lifecycle Services (LCS). It explains how to search for product issues and regulatory features, and describes the information that is provided for each status.
 
@@ -88,7 +87,7 @@ You can filter the results list for resolved or open issues, workarounds, and is
 <tr class="even">
 <td>Postponed</td>
 <td>Gray</td>
-<td>A bug number, title, version, and description of the problem are provided. If a workaround is available, it's described. A bug that has this status has been evaluated and won't be fixed at this time.</td>
+<td>A bug number, title, version, and description of the problem are provided. If a workaround is available, it&#39;s described. A bug that has this status has been evaluated and won&#39;t be fixed at this time.</td>
 </tr>
 <tr class="odd">
 <td>By design</td>
@@ -98,12 +97,12 @@ You can filter the results list for resolved or open issues, workarounds, and is
 <tr class="even">
 <td>Not reproducible</td>
 <td>Gray</td>
-<td>A bug number, title, version, and description of the problem are provided. An explanation of the problem is provided whenever possible. A bug that has this status has been evaluated, and a fix won't be issued at this time.</td>
+<td>A bug number, title, version, and description of the problem are provided. An explanation of the problem is provided whenever possible. A bug that has this status has been evaluated, and a fix won&#39;t be issued at this time.</td>
 </tr>
 <tr class="odd">
 <td>Will not be fixed</td>
 <td>Gray</td>
-<td>A bug number, title, version, and description of the problem are provided. If a workaround is available, it's described. A bug that has this status has been evaluated and won't be fixed.</td>
+<td>A bug number, title, version, and description of the problem are provided. If a workaround is available, it&#39;s described. A bug that has this status has been evaluated and won&#39;t be fixed.</td>
 </tr>
 </tbody>
 </table>

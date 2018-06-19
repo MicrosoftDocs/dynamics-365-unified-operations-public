@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # Group 
+
+[!include [banner](../../../../includes/banner.md)]
+
 A group control is a container control that has any number of controls as children.
 
 ## Index

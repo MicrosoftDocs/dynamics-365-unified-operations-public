@@ -8,28 +8,30 @@ manager:
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
-ms.service: Dynamics365Talent
+ms.service: dynamics-365-talent
 ms.technology:
 
 # optional metadata
 
-# ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
+ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-# ms.reviewer:
-ms.search.scope: Operations, Core, Talent
+ms.reviewer: rschloma
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm:
 # ms.custom:
 # ms.assetid:
 ms.search.region: Global
 # ms.search.industry:
 ms.author: tbisaacs
-# ms.search.validFrom:
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
 ---
 
 # Create an engaging onboarding experience
+
+[!include [banner](includes/banner.md)]
 
 When done effectively, onboarding helps new employees perform more effectively while also gaining a sense of belonging in their new role. Onboarding can help new employees understand their new role more quickly and accurately than they would have otherwise, and they get a head start on establishing relationships that can help them succeed. Alternatively, an ineffective onboarding experience might leave employees questioning their decision to join your organization. A study conducted by Gartner in 2014 found that nearly one third of the 1,005 respondents who quit a job within the first six months, did so because the guidelines they were given by their leadership weren't clear, their training wasn't effective, or because they didn't establish effective relationships in their new environment.
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data upgrade from AX 2012 to Dynamics 365 for Finance and Operations in a development environment
+title: Upgrade from AX 2012 - Data upgrade in a development environment
 description: This topic explains the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations in a development environment
 author: tariqbell
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Data upgrade from AX 2012 to Dynamics 365 for Finance and Operations in a development environment
+# Upgrade from AX 2012 - Data upgrade in a development environment
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[upgrade banner](../includes/upgrade-banner.md)]
+[!include [upgrade banner](../includes/upgrade-banner.md)]
 
 This is an exciting moment in the upgrade project. The output of this task  provides the first upgraded dataset from Microsoft Dynamics AX 2012 in Microsoft Dynamics 365 for Finance and Operations.
 
@@ -44,6 +44,9 @@ Before you run this process in a shared sandbox environment, we recommend that y
 - It helps reduce the overall time that is spent on iterations of the data upgrade process. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. However, larger sandbox environments don’t allow for this level of agility. In those environments, a minimum of several hours will be required to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
 
 We strongly recommend that you run the [Upgrade analyzer](upgrade-analyzer-tool.md) and respond to the issues it identifies before running data upgrade - this will help ensure that your data upgrade is quicker and easier.
+
+> [!NOTE]
+> It's very important that you install the latest version of SQL Server Management Studio before you start this process: [Download SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms). 
 
 ## End-to-end data upgrade process
 
@@ -73,9 +76,16 @@ Next, rename the original AXDB database **AXDB_orig**. This database might be us
 
 Finally, rename the newly restored AX 2012 database **AXDB**.
 
-### Run the MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip packages
+### Run the data upgrade deployable package 
 
-Run the data upgrade deployable packages, which are called MajorVersionDataUpgrade.zip and MajorVersionDataUpgrade_Retail.zip as described in [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). You must run both packages, one after the other.
+To get the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
+
+1. Sign in to http://lcs.dynamics.com/
+2. Select the **Shared asset library** tile.
+3. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
+4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade. For example, if you're upgrading from AX 2012, the package name starts with AX2012DataUpgrade. Select the package that corresponds to the release you are upgrading to. For example: AX2012DataUpgrade-July2017.
+
+For more information, see [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). 
 
 ## Troubleshooting data upgrade script errors
 

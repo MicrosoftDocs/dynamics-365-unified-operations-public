@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 03/02/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-365-talent 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations 
+ms.search.scope: Operations, Talent 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Define new departments
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Departments are operating units that represent a functional area of a business, such as sales or accounting. Many companies have organizational hierarchies that display the various departments within a business. This procedure walks through the process of creating departments, and adding those departments to an organizations departmental hierarchy. The demo data company used to create this procedure is USMF.
 

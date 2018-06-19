@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Platform update 3
 ---
 # Server-side development (workspace X++ APIs)
 
+[!include [banner](../../includes/banner.md)]
+
 ## Class SysAppActionAttribute 
 SysAppActionAttribute used for decorating methods defining actions of workspace
 

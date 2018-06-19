@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
+ms.service: dynamics-365-talent 
 ms.technology:  
  
 # optional metadata 
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations 
+ms.search.scope: Operations, Talent 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Develop salary/compensation structure and plans
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This task guide walks through the process of creating a Fixed compensation plan and enabling employees to be enrolled in the plan through eligibility rules. The demo data company used to create this task is USMF and the task is intended for Compensation and Benefits Managers.
 

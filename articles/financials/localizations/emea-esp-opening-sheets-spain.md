@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: LedgerOpeningSheet_ES
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -31,17 +30,16 @@ ms.dyn365.ops.version: Version 1611
 
 # Special entries and opening sheets
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Legal entities in Spain can post special entries as opening entries for the current period, while adapting accounts to changes in accounting rules.
 
 By using opening sheets, you can indicate the following:
 
--   Increase the value of specific financial fixed assets.
--   Change the value of specific raw materials when the value has changed significantly during the year and when the material meets specific criteria.
+-   Increase the value of specific financial fixed assets.
+-   Change the value of specific raw materials when the value has changed significantly during the year and when the material meets specific criteria.
 
-When you close the entries for the previous fiscal year, you can create several lines by setting the **Type** field to **Opening**. This allows special opening entries for the current fiscal year to be posted. You can make adjustments to the opening sheet for the fiscal year on the **Opening sheets** page.
+When you close the entries for the previous fiscal year, you can create several lines by setting the **Type** field to **Opening**. This allows special opening entries for the current fiscal year to be posted. You can make adjustments to the opening sheet for the fiscal year on the **Opening sheets** page.
 
 ## Create a new opening sheet
 To create a new **Opening sheet,** click **New** on the **Opening sheets** page, and specify the following.

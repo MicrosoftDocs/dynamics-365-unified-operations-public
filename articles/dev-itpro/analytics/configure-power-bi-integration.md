@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Power BI integration for workspaces
-description: This tutorial describes how to configure a new Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
+description: This tutorial describes how to configure a new Microsoft Dynamics 365 for Finance and Operations, environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
 author: MilindaV2
 manager: AnnBe
 ms.date: 01/09/2018
@@ -32,11 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure Power BI integration for workspaces
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Overview
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, lets users pin tiles and reports from their own PowerBI.com account to workspaces.
+Microsoft Dynamics 365 for Finance and Operations lets users pin tiles and reports from their own PowerBI.com account to workspaces.
 
 This functionality requires a one-time configuration of your environment. An administrator must do this step to enable Finance and Operations and Microsoft Power BI to communicate and authenticate correctly.
 
@@ -119,7 +119,7 @@ By completing this configuration step, you enable Finance and Operations to cont
 
     ![Authorize Power BI](./media/Authorize.JPG)
 
-    > [!Note}
+    > [!Note]
     > If you have an issue with this step, please see the **Troubleshooting common errors** section and note the information about the **Users can consent to apps accessing company data on their behalf** option.
 
 4. The Azure AD consent page asks for your consent. User consent is required for Finance and Operations to access PowerBI.com on behalf of the user. Select **Accept**.

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a product
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks through creating a new product in the retail product hierarchy. The demo data company used to create this task is USRT, and this task is intended for the Merchandising Manager and Product Designer.
 

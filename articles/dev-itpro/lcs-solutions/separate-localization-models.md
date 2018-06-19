@@ -32,10 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Separate localization models
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-
-As part of the requirements for LCS solutions for localization and translation, if a localization solution for previous versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition contains both regulatory and competitive features, localization ISV solution providers must split the solution into separate models for each feature type. This article provides information about this requirement.
+As part of the requirements for LCS solutions for localization and translation, if a localization solution for previous versions of Microsoft Dynamics 365 for Finance and Operations contains both regulatory and competitive features, localization ISV solution providers must split the solution into separate models for each feature type. This article provides information about this requirement.
 
 Multinational customers must comply with regulatory requirements in all countries/regions where they deploy Finance and Operations. At the same time, these customers want to minimize the cost of code maintenance. Therefore, if a localization solution for previous versions of Finance and Operations contains both regulatory and competitive features, the solution must be split into separate models, so that customers can adopt and deploy the features that they require. An effort has been made to split the Application foundation and Application suite of the Finance and Operations stack into multiple models. 
 

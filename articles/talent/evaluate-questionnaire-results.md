@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,19 +18,21 @@ ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollect
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kherr75
+ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 
 # View and evaluate the results of a questionnaire
+
+[!include [banner](includes/banner.md)]
 
 This topic explains how you can view and evaluate the results of questionnaires that respondents complete. 
 
@@ -75,7 +77,7 @@ You can use questionnaire statistics to analyze the results of a completed quest
 
 The settings that you define are saved and can be used to periodically recalculate results.
 
-See also
+Additional resources
 --------
 
 [Designing questionnaires](design-questionnaires.md)

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Architecture and design considerations for the mobile platform
+
+[!include [banner](../../includes/banner.md)]
 
 The mobile app communicates with Application Object Server (AOS) to get the metadata for the mobile workspaces (and the pages and the fields that appear on the page), and to get the data for the fields on the pages. Each time that the mobile app requests data for a page, AOS creates a new session that uses the context of the user who is using the mobile app. AOS then uses the user's context to open the corresponding forms (by using the corresponding menu items). AOS can open multiple forms in quick succession and perform actions on those forms (for example, filtering, opening FactBoxes, changing tab pages, and clicking buttons). Any business logic on the forms is also run as usual. Through that process, AOS collects the data values from the requested fields and then sends that data back to the mobile app. 
 
@@ -82,7 +84,7 @@ The mobile app designer lets you select the specific data fields from forms that
 | New workspaces, deleted workspaces, or changes to the name, color, or icon of a workspace | Pull-to-refresh from the main landing page (dashboard) of the app, where you see the list of workspaces.<br>![Pull-to-refresh from the dashboard](media/refreshworkspaces.png) |
 | All other changes (new or changed pages or actions, or changes to business logic)         | Pull-to-refresh from the workspace that has the edited pages or actions.<br>![Pull-to-refresh from a workspace](media/refreshpages.png)                                             |
 
-### See Also
+### Additional resources
 
 [Page design guidelines](page-design-guidelines.md)
 

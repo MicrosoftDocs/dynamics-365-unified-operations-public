@@ -25,15 +25,14 @@ ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: ryansand
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---
 
 # Upgrade budget planning
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 There are significant differences in budget planning between Microsoft Dynamics AX 2012 and Microsoft Dynamics 365 for Finance and Operations. Some features were not upgraded and therefore require reconfiguration. This topic explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
 
@@ -75,26 +74,27 @@ To help you determine how to configure the upgraded system, the following exampl
 
 ### Define columns and layouts
 
-1.  On the **Budget planning configuration** page, click the **Columns** tab. As part of the upgrade, new columns are automatically created based on your budget plan lines. Columns now use dynamic dates, where the time and year are offset from the fiscal year that is defined in the Budget planning process. **Note:** For performance reasons during upgrade, it's assumed that all budget cycles represent calendar years, not fiscal years. If you use fiscal years, you must make edits to correctly map the columns to their fiscal year. For example, the following elements existed in AX 2012:
-    -   Budget plan scenarios: Actuals, Baseline, Budget Request, Budget Approved
-    -   Budget plan lines for all scenarios in 2017, and Actuals for both 2017 and 2016
+1. On the **Budget planning configuration** page, click the **Columns** tab. As part of the upgrade, new columns are automatically created based on your budget plan lines. Columns now use dynamic dates, where the time and year are offset from the fiscal year that is defined in the Budget planning process. **Note:** For performance reasons during upgrade, it's assumed that all budget cycles represent calendar years, not fiscal years. If you use fiscal years, you must make edits to correctly map the columns to their fiscal year. For example, the following elements existed in AX 2012:
+   -   Budget plan scenarios: Actuals, Baseline, Budget Request, Budget Approved
+   -   Budget plan lines for all scenarios in 2017, and Actuals for both 2017 and 2016
 
-    The following columns will be created in Finance and Operations:
-    | Column name    | Budget plan scenario | Column time period | Year offset |
-    |----------------|----------------------|--------------------|-------------|
-    | Jan Scenario 1 | Actuals              | 1                  | 0           |
-    | Jan Scenario 2 | Baseline             | 1                  | 0           |
-    | Jan Scenario 3 | Budget Request       | 1                  | 0           |
-    | Jan Scenario 4 | Budget Approved      | 1                  | 0           |
-    | Jan Scenario 5 | Actuals              | 1                  | -1          |
-    | Feb Scenario 1 | Actuals              | 1                  | 0           |
-    | ...            | ...                  | ...                | ...         |
+   The following columns will be created in Finance and Operations:
 
-    In this example, a column that is named **Jan Scenario 1** is created for the most recent budget plan transaction data that is found where transactions exist in January. A similar column is created for each scenario that has data. After columns exist for all periods in that year, columns are created for previous years.
-2.  Change the column names and descriptions, and any other details, either manually in the client or by doing bulk updates through the Excel add-in that points to the budget plan columns data entity. Any filters that were previously set for matrix fields are now set within the columns.
-3.  Create a new budget plan layout. A layout points to several columns to define the view that appears in Excel and the client. The layout first requires that you specify a ledger dimension set to determine which financial dimensions can be entered. After you specify the dimension set, click **Descriptions** to select dimension descriptions to include in the layout.
-4.  On the **Layout elements** FastTab, click **Add** to add metadata for each row, such as a currency, a comment, or a budget class that determines revenue versus expense rows. Next, add columns for the time period, and scenarios that apply to this budget cycle and stage. You can make these changes manually in the client or through the Excel add-in that points to the budget plan layout elements data entity.
-5.  For each layout element, select whether the column should be editable, and whether the column should also appear in the Excel workbook for this layout. **Note:** For our historical plans, you might want to consider a layout that shows 12 monthly columns for any budget plan scenarios for that process.
+   | Column name    | Budget plan scenario | Column time period | Year offset |
+   |----------------|----------------------|--------------------|-------------|
+   | Jan Scenario 1 | Actuals              | 1                  | 0           |
+   | Jan Scenario 2 | Baseline             | 1                  | 0           |
+   | Jan Scenario 3 | Budget Request       | 1                  | 0           |
+   | Jan Scenario 4 | Budget Approved      | 1                  | 0           |
+   | Jan Scenario 5 | Actuals              | 1                  | -1          |
+   | Feb Scenario 1 | Actuals              | 1                  | 0           |
+   | ...            | ...                  | ...                | ...         |
+
+   In this example, a column that is named **Jan Scenario 1** is created for the most recent budget plan transaction data that is found where transactions exist in January. A similar column is created for each scenario that has data. After columns exist for all periods in that year, columns are created for previous years.
+2. Change the column names and descriptions, and any other details, either manually in the client or by doing bulk updates through the Excel add-in that points to the budget plan columns data entity. Any filters that were previously set for matrix fields are now set within the columns.
+3. Create a new budget plan layout. A layout points to several columns to define the view that appears in Excel and the client. The layout first requires that you specify a ledger dimension set to determine which financial dimensions can be entered. After you specify the dimension set, click **Descriptions** to select dimension descriptions to include in the layout.
+4. On the **Layout elements** FastTab, click **Add** to add metadata for each row, such as a currency, a comment, or a budget class that determines revenue versus expense rows. Next, add columns for the time period, and scenarios that apply to this budget cycle and stage. You can make these changes manually in the client or through the Excel add-in that points to the budget plan layout elements data entity.
+5. For each layout element, select whether the column should be editable, and whether the column should also appear in the Excel workbook for this layout. **Note:** For our historical plans, you might want to consider a layout that shows 12 monthly columns for any budget plan scenarios for that process.
 
 ### Update budget planning processes to use the appropriate layout for each budget stage
 

@@ -26,17 +26,17 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: sarvanis
 ms.search.validFrom: 2017-12-05
-ms.dyn365.ops.version: AX 7.3.0
+ms.dyn365.ops.version: 7.3
 
 ---
 # Reconfigure your environment
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.  
 
 ## Prerequisites
-Before you complete the steps in this topic, you must update your local agent. For more information, see the topic, [Update the local agent](update-local-agent.md). The procedure in this topic will only work with local agents that are on or above version 1.1.1.0. 
+Before you complete the steps in this topic, you must update your local agent. For more information, see the topic, [Update the local agent](update-local-agent.md). The procedure in this topic will only work with local agents that are on or above version 1.1.0. 
 
 ## Reconfigure your environment
 

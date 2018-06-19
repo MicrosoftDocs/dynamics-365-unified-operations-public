@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: AssetDepreciationGroup_W
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -31,8 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Depreciation suspension (holidays)
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the suspension, or postponement, of depreciation for the Czech Republic.
 

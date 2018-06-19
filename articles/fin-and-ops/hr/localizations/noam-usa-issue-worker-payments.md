@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form: PayrollPayStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Issue worker payments
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to submit pay statements, generate checks or electronic payments, generate a positive pay file for payroll, and post the payment journal.
 

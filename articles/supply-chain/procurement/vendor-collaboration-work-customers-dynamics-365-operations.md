@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor collaboration with customers
-description: This topic describes how you can use vendor collaboration in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, to work with POs and monitor consignment inventory.
+description: This topic describes how you can use vendor collaboration in Microsoft Dynamics 365 for Finance and Operations, to work with POs and monitor consignment inventory.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,7 +17,7 @@ ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, P
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: bis
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221234
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Vendor collaboration with customers
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic describes how you can use vendor collaboration to work with customers in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Vendors can complete a series of business processes from the following workspaces:
+This topic describes how you can use vendor collaboration to work with customers in Microsoft Dynamics 365 for Finance and Operations. Vendors can complete a series of business processes from the following workspaces:
 
 - **Purchase order confirmation** – Monitor and respond to purchase orders (POs).
 - **Vendor bidding** – View requests for quotation (RFQs), and respond to them by entering bids.
@@ -145,6 +145,6 @@ As a vendor, you can access part of the information that the customer maintains 
 
 The accessible information is the vendor name, addresses, contact information, contact persons and their contact information, identification numbers, tax registration numbers, procurement categories that the vendor is approved to sell to the customer in, and information about certifications.
 
-## See also
+## Additional resources
 
 [Manage vendor collaboration users](manage-vendor-collaboration-users.md)

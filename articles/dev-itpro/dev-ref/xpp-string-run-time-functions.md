@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ string run-time functions
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the string run-time functions.
 
@@ -72,12 +71,12 @@ The search is case-insensitive. The following special characters can be used to 
 </thead>
 <tbody>
 <tr class="odd">
-<td>\</td>
-<td>A backslash (\) nullifies, or escapes, the special treatment of special characters, so that a special character can be matched like a normal letter. A pair of backslashes is translated into one non-special backslash. Examples:
+<td>&lt;/td&gt;
+<td>A backslash () nullifies, or escapes, the special treatment of special characters, so that a special character can be matched like a normal letter. A pair of backslashes is translated into one non-special backslash. Examples:
 <ul>
 <li><strong>match(&quot;ab$cd&quot;,&quot;ab$cd&quot;);</strong> returns <strong>0</strong>.</li>
-<li><strong>match(&quot;ab$cd&quot;,&quot;ab$cd&quot;);</strong> returns <strong>0</strong>. The backslash isn't escaped.</li>
-<li><strong>match(&quot;ab\$cd&quot;,&quot;ab$cd&quot;);</strong> returns <strong>1</strong>. The backslash and dollar sign are escaped.</li>
+<li><strong>match(&quot;ab$cd&quot;,&quot;ab$cd&quot;);</strong> returns <strong>0</strong>. The backslash isn&#39;t escaped.</li>
+<li><strong>match(&quot;ab$cd&quot;,&quot;ab$cd&quot;);</strong> returns <strong>1</strong>. The backslash and dollar sign are escaped.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -92,7 +91,7 @@ The search is case-insensitive. The following special characters can be used to 
 </tr>
 <tr class="odd">
 <td>&gt; or $</td>
-<td>A right angle bracket (&gt;) or a dollar sign (?) at the end of the expression is used to match the end of a line. Examples:
+<td>A right angle bracket (&gt;) or a dollar sign (?) at the end of the expression is used to match the end of a line. Examples:
 <ul>
 <li><strong>match(&quot;abc&gt;&quot;,&quot;abcdef&quot;);</strong> returns <strong>0</strong>.</li>
 <li><strong>match(&quot;abc&gt;&quot;,&quot;defabc&quot;);</strong> returns <strong>1</strong>.</li>
@@ -139,7 +138,7 @@ The search is case-insensitive. The following special characters can be used to 
 </tr>
 <tr class="odd">
 <td>:SPACE</td>
-<td>SPACE is the space character ( ). Sets the match to blanks, tabulations, and control characters such as Enter (new line). Examples:
+<td>SPACE is the space character ( ). Sets the match to blanks, tabulations, and control characters such as Enter (new line). Examples:
 <ul>
 <li><strong>match(&quot;ab: cd&quot;,&quot;ab cd&quot;);</strong> returns <strong>1</strong>.</li>
 <li><strong>match(&quot;ab: cd&quot;,&quot;ab\ncd&quot;);</strong> returns <strong>1</strong>.</li>
@@ -148,18 +147,18 @@ The search is case-insensitive. The following special characters can be used to 
 </ul></td>
 </tr>
 <tr class="even">
-<td>*</td>
-<td>An expression that is followed by an asterisk (*) requires a match for zero, one, or more occurrences of the preceding expression. Examples:
+<td><em></td>
+<td>An expression that is followed by an asterisk (</em>) requires a match for zero, one, or more occurrences of the preceding expression. Examples:
 <ul>
-<li><strong>match(&quot;abc*d&quot;,&quot;abd&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;abc*d&quot;,&quot;abcd&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;abc*d&quot;,&quot;abcccd&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;abc*d&quot;,&quot;abxd&quot;);</strong> returns <strong>0</strong>.</li>
+<li><strong>match(&quot;abc<em>d&quot;,&quot;abd&quot;);</strong> returns <strong>1</strong>.</li>
+<li><strong>match(&quot;abc</em>d&quot;,&quot;abcd&quot;);</strong> returns <strong>1</strong>.</li>
+<li><strong>match(&quot;abc<em>d&quot;,&quot;abcccd&quot;);</strong> returns <strong>1</strong>.</li>
+<li><strong>match(&quot;abc</em>d&quot;,&quot;abxd&quot;);</strong> returns <strong>0</strong>.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>+</td>
-<td>An expression that is followed by a plus sign (+) requires a match for one or more occurrences of the preceding expression. Examples:
+<td>An expression that is followed by a plus sign (+) requires a match for one or more occurrences of the preceding expression. Examples:
 <ul>
 <li><strong>match(&quot;abc+d&quot;,&quot;abd&quot;);</strong> returns <strong>0</strong>.</li>
 <li><strong>match(&quot;abc+d&quot;,&quot;abcd&quot;);</strong> returns <strong>1</strong></li>
@@ -180,9 +179,9 @@ The search is case-insensitive. The following special characters can be used to 
 <td>Matches a single character with any character that is enclosed in the brackets. A range of characters can be specified by two characters that are separated by a minus sign (-). For example, <strong>[a-z]</strong> matches all letters between a and z, <strong>[0-9]</strong> matches a digit, and <strong>[0-9a-f]</strong> matches a hexadecimal digit. Examples:
 <ul>
 <li><strong>match(&quot;[abc]&quot;,&quot;apple&quot;);</strong> returns <strong>1</strong>, because it matches the a in &quot;apple.&quot;</li>
-<li><strong>match(&quot;[abc]&quot;,&quot;kiwi&quot;);</strong> returns <strong>0</strong>, because &quot;kiwi&quot; doesn't contain an a, b, or c.</li>
+<li><strong>match(&quot;[abc]&quot;,&quot;kiwi&quot;);</strong> returns <strong>0</strong>, because &quot;kiwi&quot; doesn&#39;t contain an a, b, or c.</li>
 <li><strong>match(&quot;gr[ae]y&quot;,&quot;grey&quot;);</strong> returns 1. This expression also matches &quot;gray.&quot;</li>
-<li><strong>match(&quot;gr[ae]y&quot;,&quot;graey&quot;);</strong> returns <strong>0</strong>, because only one character between &quot;gr&quot; and &quot;y&quot; is matched.</li>
+<li><strong>match(&quot;gr[ae]y&quot;,&quot;graey&quot;);</strong> returns <strong>0</strong>, because only one character between &quot;gr&quot; and &quot;y&quot; is matched.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -191,7 +190,7 @@ The search is case-insensitive. The following special characters can be used to 
 <ul>
 <li><strong>match(&quot;[^bc]at&quot;,&quot;bat&quot;);</strong> returns <strong>0</strong>.</li>
 <li><strong>match(&quot;[^bc]at&quot;,&quot;hat&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;[^abc]&quot;,&quot;bat&quot;);</strong> returns <strong>1</strong>. Anything except a, b, or c is matched. Therefore, the t is matched.</li>
+<li><strong>match(&quot;[^abc]&quot;,&quot;bat&quot;);</strong> returns <strong>1</strong>. Anything except a, b, or c is matched. Therefore, the t is matched.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -274,7 +273,7 @@ The **strColSeq** function exists for backward-compatibility purposes. This func
 -   AàáâãäÀÁÂÃÄBCçÇDEèéêëÈÉÊËFGHIìíîïÌÍÎÏJKLMNñÑOòóôõöÒÓÔÕÖPQRSTUùúûüÙÚÛÜVWXYýÝZæøåÆØÅ
 -   aaaaaaaaaaabcccdeeeeeeeeefghiiiiiiiiijklmnnnooooooooooopqrstuuuuuuuuuvwxyyyz~¦Ç~¦Ç
 
-For Unicode-compliant functionality, use the Win32 LCMapString application programming interface (API) via the **DLL** and **DLLFunc** classes.
+For Unicode-compliant functionality, use the Win32 LCMapString application programming interface (API) via the **DLL** and **DLLFunc** classes.
 
 ### Example
 
@@ -302,7 +301,7 @@ Creates a copy of a string, from which the specified substring is removed.
 
 ### Return value
 
-The remaining characters that are copied from the string.
+The remaining characters that are copied from the string.
 
 ### Remarks
 
@@ -409,7 +408,7 @@ The **strIns** function is complementary to the **strDel** function. If the valu
     strIns("ABCD","EFGH",10); //Returns the string "ABCDEFGH".
 
 ## strKeep
-Builds a string by using only the characters from the first input string that the second input string specifies should be kept.
+Builds a string by using only the characters from the first input string that the second input string specifies should be kept.
 
     str strKeep(str _text1, str _text2)
 
@@ -774,7 +773,7 @@ A substring of the original string.
 
 ### Remarks
 
-If a minus sign precedes the value of the *\_number* parameter, the substring will be selected backward from the specified position.
+If a minus sign precedes the value of the *\_number* parameter, the substring will be selected backward from the specified position.
 
     subStr("ABCDEFGHIJ",3,5); //Returns the string "CDEFG".
     subStr("ABCDEFGHIJ",7,-4); //Returns the string "DEFG".

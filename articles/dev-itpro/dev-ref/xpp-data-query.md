@@ -25,15 +25,14 @@ ms.assetid: 999a5ecf-559b-4d66-8b05-9a8e477e0518
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
-ms.dyn365.ops.intro: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 
 ---
 
 # X++ data selection and manipulation
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the support for data selection and manipulation in the X++ language.
 
@@ -50,18 +49,19 @@ Before any data can be changed, you must use a **select** statement to select th
 The **select** statement fetches or manipulates data from the database. All **select** statements use a table variable to fetch records. This variable must be declared before a **select** statement can be run. The **select** statement fetches only one record, or field. To fetch additional records, you can use the **next** statement. The **next** statement fetches the next record in the table. If no **select** statement precedes the **next** statement, an error occurs. If you use a **next** statement, don't use the **firstOnly** find option. If you must traverse several records, it's more appropriate to use a **while** **select** statement. The results of a **select** statement are returned in a table buffer variable. If you use a field list in the **select** statement, only those fields are available in the table variable. If you use aggregate functions, such as **sum** or **count**, the results are returned in the fields that you perform the **sum** or **count** over. You can count, average, or sum only integer and real fields.
 
 ## Syntax of select statements
-|                   |     |                                                                                                                                                                                                                                                                                                    |
-|-------------------|-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *SelectStatement* | =   | **select** *Parameters*                                                                                                                                                                                                                                                                            |
-| *Parameters*      |     | **\[ \[** *FindOptions* **\]** **\[** *FieldList* **from \] \]** *TableBufferVariable* **\[** *IndexClause* **\]** **\[** *Options* **\]** **\[** *WhereClause* **\]** **\[** *JoinClause* **\]**                                                                                                  |
-| *FindOptions*     | =   | **crossCompany** | **reverse** | **firstFast** | \[ **firstOnly** | **firstOnly10** | **firstOnly100** | **firstOnly1000** \] | **forUpdate** | **noFetch** | \[**forcePlaceholders** | **forceLiterals**\] | **forceselectorder** | **forceNestedLoop** | **repeatableRead** | **validTimeState** |
-| *FieldList*       | =   | *Field* **{ ,** *Field* **}** | **\***                                                                                                                                                                                                                                                             |
-| *Field*           | =   | *Aggregate* **(** *FieldIdentifier* **) |** *FieldIdentifier*                                                                                                                                                                                                                                      |
-| *Aggregate*       | =   | **sum** | **avg** | **minof** | **maxof** | **count**                                                                                                                                                                                                                                              |
-| *Options*         | =   | **\[ order by** , **group by ,** *FieldIdentifier* **\[ asc** | **desc \] { ,** *FieldIdentifier* **\[ asc** | **desc \] }\]** | **\[** *IndexClause* **\]**                                                                                                                                       |
-| *IndexClause*     | =   | **index** *IndexName* | **index hint** *IndexName*                                                                                                                                                                                                                                                 |
-| *WhereClause*     | =   | **where** *Expression*                                                                                                                                                                                                                                                                             |
-| *JoinClause*      | =   | \[**exists** | **notexists** | **outer** \] **join** *Parameters*                                                                                                                                                                                                                                  |
+
+|                          |   |                                                                                                                                                                                                                                                                                                                                                                                                                |
+|--------------------------|---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <em>SelectStatement</em> | = |                                                                                                                                                                                  <strong>select</strong> <em>Parameters</em>                                                                                                                                                                                   |
+|   <em>Parameters</em>    |   | <strong>\[ \[</strong> <em>FindOptions</em> <strong>\]</strong> <strong>\[</strong> <em>FieldList</em> <strong>from \] \]</strong> <em>TableBufferVariable</em> <strong>\[</strong> <em>IndexClause</em> <strong>\]</strong> <strong>\[</strong> <em>Options</em> <strong>\]</strong> <strong>\[</strong> <em>WhereClause</em> <strong>\]</strong> <strong>\[</strong> <em>JoinClause</em> <strong>\]</strong> |
+|   <em>FindOptions</em>   | = |                                                                                                                                                                                         <strong>crossCompany</strong>                                                                                                                                                                                          |
+|    <em>FieldList</em>    | = |                                                                                                                                                                     <em>Field</em> <strong>{ ,</strong> <em>Field</em> <strong>}</strong>                                                                                                                                                                      |
+|      <em>Field</em>      | = |                                                                                                                                                                       <em>Aggregate</em> <strong>(</strong> <em>FieldIdentifier</em> **)                                                                                                                                                                       |
+|    <em>Aggregate</em>    | = |                                                                                                                                                                                              <strong>sum</strong>                                                                                                                                                                                              |
+|     <em>Options</em>     | = |                                                                                                                                                  <strong>\[ order by</strong> , <strong>group by ,</strong> <em>FieldIdentifier</em> <strong>\[ asc</strong>                                                                                                                                                   |
+|   <em>IndexClause</em>   | = |                                                                                                                                                                                   <strong>index</strong> <em>IndexName</em>                                                                                                                                                                                    |
+|   <em>WhereClause</em>   | = |                                                                                                                                                                                   <strong>where</strong> <em>Expression</em>                                                                                                                                                                                   |
+|   <em>JoinClause</em>    | = |                                                                                                                                                                                           \[<strong>exists</strong>                                                                                                                                                                                            |
 
 ### Keywords that are used in select statements
 
@@ -534,7 +534,7 @@ A **while select** statement is used to handle data. It's the most widely used f
             Global::info(strFmt("%1 , %2", iCounter, xrecBAT.AccountID));
         }
     }
-     
+
     /*** Display from infolog:
     Message (04:59:38 pm)
     1 , Cash1
@@ -620,7 +620,7 @@ You can achieve the same effect by using the **delete\_from** keyword.
 
 ### select statements on fields
 
-You can use a **select** statement in a lookup on a field. After a **select** statement that fetches a record in a table, you can enter **.fieldName** to reference a field in the table. These **select** statements must be used in expressions. A *normal **select** statement* differs from a *field **select** statement*:
+You can use a <strong>select</strong> statement in a lookup on a field. After a <strong>select</strong> statement that fetches a record in a table, you can enter <strong>.fieldName</strong> to reference a field in the table. These <strong>select</strong> statements must be used in expressions. A <em>normal **select</em>* statement* differs from a <em>field **select</em>* statement*:
 
 -   The field **select** statement operates directly on a table.
 -   The normal **select** statement operates on a table buffer variable.
@@ -691,7 +691,7 @@ In the following code, the clustered index is used instead of the non-clustered 
 
 ### Writing a select statement as an expression
 
-You can use a **select** statement as an expression. This type of **select** statement is known as an *expression **select** statement*. A table buffer variable can't be used in an expression **select** statement. The name of the table must be used in the **from** clause. One limitation of expression **select** statements is that the **join** keyword isn't supported in an expression join.
+You can use a <strong>select</strong> statement as an expression. This type of <strong>select</strong> statement is known as an <em>expression **select</em>* statement<em>. A table buffer variable can't be used in an expression **select</em>* statement. The name of the table must be used in the <strong>from</strong> clause. One limitation of expression <strong>select</strong> statements is that the <strong>join</strong> keyword isn't supported in an expression join.
 
 ### expression select examples
 
@@ -1061,7 +1061,7 @@ The following example shows a join of three tables on an **insert\_recordset** s
     }
 
 ## update\_recordset
-The **update\_recordset** statement lets you update multiple rows in one trip to the server. Therefore, the power of SQL Server can help improve the performance of some tasks. The ****update\_recordset**** statement resembles **delete\_from** in X++ and **update set** in SQL. It doesn't retrieve each record separately by fetching, changing, and updating, Instead, it works on an SQL-style record set on the database server side. If the **update** method is overridden, the implementation falls back to a classic looping construction, where one record at a time is updated. (This behavior resembles the behavior of **delete\_from** for deletions.) Therefore, the construction works on temporary tables and whole table–cached tables by using the looping construction.
+The <strong>update\_recordset</strong> statement lets you update multiple rows in one trip to the server. Therefore, the power of SQL Server can help improve the performance of some tasks. The *<strong><em>update\_recordset</em></strong>* statement resembles <strong>delete\_from</strong> in X++ and <strong>update set</strong> in SQL. It doesn't retrieve each record separately by fetching, changing, and updating, Instead, it works on an SQL-style record set on the database server side. If the <strong>update</strong> method is overridden, the implementation falls back to a classic looping construction, where one record at a time is updated. (This behavior resembles the behavior of <strong>delete\_from</strong> for deletions.) Therefore, the construction works on temporary tables and whole table–cached tables by using the looping construction.
 
 ### Example: Update that is based on a calculated value
 
@@ -1281,6 +1281,7 @@ There are situations where record set–based operations can be converted to slo
 
 
 ### Non-SQL tables
+
 | Operation | Can be converted |
 |---|---|
 |DELETE_FROM|Yes|
@@ -1290,6 +1291,7 @@ There are situations where record set–based operations can be converted to slo
 |Use this setting for overrides|Not applicable|
 
 ### Delete actions
+
 | Operation | Can be converted |
 |---|---|
 |DELETE_FROM|Yes|
@@ -1299,6 +1301,7 @@ There are situations where record set–based operations can be converted to slo
 |Use this setting for overrides|**skipDeleteActions**|
 
 ### The database log is enabled.
+
 | Operation | Can be converted |
 |---|---|
 |DELETE_FROM|Yes|
@@ -1308,6 +1311,7 @@ There are situations where record set–based operations can be converted to slo
 |Use this setting for overrides|**skipDatabaseLog**|
 
 ### Overridden method
+
 | Operation | Can be converted |
 |---|---|
 |DELETE_FROM|Yes|
@@ -1317,6 +1321,7 @@ There are situations where record set–based operations can be converted to slo
 |Use this setting for overrides|**skipDataMethods**|
 
 ### Alerts are set up for the table.
+
 | Operation | Can be converted |
 |---|---|
 |DELETE_FROM|Yes|
@@ -1325,7 +1330,8 @@ There are situations where record set–based operations can be converted to slo
 |ARRAY_INSERT|No|
 |Use this setting for overrides|**skipEvents**|
 
-### The ValidTimeStateFieldType property on a table isn't equal to None.
+### The ValidTimeStateFieldType property on a table isn't equal to None.
+
 | Operation | Can be converted |
 |---|---|
 |DELETE_FROM|Yes|
@@ -1335,7 +1341,7 @@ There are situations where record set–based operations can be converted to slo
 |Use this setting for overrides|Not applicable|
 
 
-You can use the settings that are shown for **Use this setting for overrides** to explicitly skip or ignore one or more factors that adversely affect performance. If, for some reason, one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the **skip\*** settings are also ignored. For example, in the following code, the **insert** method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
+You can use the settings that are shown for <strong>Use this setting for overrides</strong> to explicitly skip or ignore one or more factors that adversely affect performance. If, for some reason, one of the previously mentioned SQL operations is downgraded to a record-by-record operation, all the <strong>skip\</strong>* settings are also ignored. For example, in the following code, the <strong>insert</strong> method on the myTable table is run, even though it's explicitly stated that this method should be skipped if a container or memo field is defined for myTable.
 
     public void tutorialRecordInsertList()
     {

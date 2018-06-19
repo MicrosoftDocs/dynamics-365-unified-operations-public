@@ -16,20 +16,21 @@ ms.technology:
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: twheeloc
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi2
+ms.author: saraschi
 ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Distributions on an expense report
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+
 When you enter expenses on an expense report, you can distribute the expense across multiple projects, financial dimensions, 
 or accounts in your organization.
 
@@ -40,8 +41,10 @@ business days working with organization B on project B.
 Because Nancy worked on two separate projects when she was in Frankfurt, when she enters her expense report, she distributes 
 her expenses as appropriate for each project. The following table shows how Nancy distributed her expenses.
 
-| **Expense type** | **Total expense amount** | **Amount distributed to project A** | **Amount distributed to project B** |
-|------------------|--------------------------|-------------------------------------|-------------------------------------|
-| Train fare       | DKK 578                  | DKK 405                             | DKK 173                             |
-| Hotel            | EUR 725                  | EUR 557                             | EUR 168                             |
-| Meals            | EUR 346                  | EUR 284                             | EUR 62                              |
+
+| <strong>Expense type</strong> | <strong>Total expense amount</strong> | <strong>Amount distributed to project A</strong> | <strong>Amount distributed to project B</strong> |
+|-------------------------------|---------------------------------------|--------------------------------------------------|--------------------------------------------------|
+|          Train fare           |                DKK 578                |                     DKK 405                      |                     DKK 173                      |
+|             Hotel             |                EUR 725                |                     EUR 557                      |                     EUR 168                      |
+|             Meals             |                EUR 346                |                     EUR 284                      |                      EUR 62                      |
+

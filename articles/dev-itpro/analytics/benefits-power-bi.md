@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  HcmBenefitWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations, Talent, Core
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -29,14 +29,14 @@ ms.dyn365.ops.version: July 2017 update
 
 # Benefits Power BI content
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the **Benefits** Microsoft Power BI content. It explains how to access the reports that are included, and provides information about the data model and entities that were used to build the content.
 
 ## Accessing the Power BI content
 The **Benefits** Power BI content is shown in the **Benefits management** workspace if you use one of the following products:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+- Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## Reports that are included in the Power BI content

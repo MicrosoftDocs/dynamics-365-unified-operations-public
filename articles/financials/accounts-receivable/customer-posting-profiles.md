@@ -32,17 +32,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customer posting profiles
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Customer posting profiles control the posting of customer transactions to the general ledger.
 
 Customer posting profiles
 -------------------------
 
-Customer posting profiles enable you to assign general ledger accounts and document settings to all customers, a group of customers or a single customer. These settings will be used when you create sales orders, free text invoices, cash payments, collection letters, and interest notes. For some transactions, you can select a posting profile that differs from and takes precedence over the posting profiles that are set up for transactions in this page. 
+Customer posting profiles enable you to assign general ledger accounts and document settings to all customers, a group of customers or a single customer. These settings will be used when you create sales orders, free text invoices, cash payments, collection letters, and interest notes. For some transactions, you can select a posting profile that differs from and takes precedence over the posting profiles that are set up for transactions in this page. 
 
-The default posting profile is defined in the Ledger and Sales Tax fasttab on the Accounts receivable parameters page. The default posting profile is then included automatically on the header of new documents where you can change it to a different posting profile if needed.
+The default posting profile is defined in the Ledger and Sales Tax fasttab on the Accounts receivable parameters page. The default posting profile is then included automatically on the header of new documents where you can change it to a different posting profile if needed.
 
 You can also associate posting definitions with transaction posting types in the Transaction posting definitions page. Posting definitions control the posting of customer transactions to the general ledger instead of posting profiles.
 
@@ -58,10 +57,6 @@ Specify the ledger accounts that are used in the posting of transactions that us
 If you want all customer transactions to have the same posting profile, set up only one posting profile with All in the Account code field. Specify the following values to set up your posting profile:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -141,9 +136,9 @@ Specify the following values to set up your posting profile:
 
 | Field                 | Description                                                                                                                                                                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Settlement**        | Select this toggle to enable automatic settlement of transactions that have this posting profile. If this toggle is cleared, you must manually settle transactions by using the Settle open transactions page or the Enter customer payments page. |
-| **Interest**          | Select this toggle if interest should be calculated on outstanding balances for customer accounts that use this profile. If this toggle is cleared, interest will not be calculated for these customers.                                           |
-| **Collection letter** | Select this toggle if collection letters should be generated for customer accounts that use this profile. If this toggle is cleared, collection letters will not be generated for these customers.                                                 |
+| **Settlement**        | Select this toggle to enable automatic settlement of transactions that have this posting profile. If this toggle is cleared, you must manually settle transactions by using the Settle open transactions page or the Enter customer payments page. |
+| **Interest**          | Select this toggle if interest should be calculated on outstanding balances for customer accounts that use this profile. If this toggle is cleared, interest will not be calculated for these customers.                                           |
+| **Collection letter** | Select this toggle if collection letters should be generated for customer accounts that use this profile. If this toggle is cleared, collection letters will not be generated for these customers.                                                 |
 | **Close**             | Select a posting profile to change to when transactions that have this posting profile are closed. A transaction is regarded as closed when it has been settled in full.                                                                           |
 
 

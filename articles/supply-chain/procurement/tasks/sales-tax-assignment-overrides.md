@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Sales tax assignment and overrides
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to assign sales tax groups to retail channels. It also walks through the process of creating a new sales tax override and assigning it to an existing sales tax override group. This procedure
 

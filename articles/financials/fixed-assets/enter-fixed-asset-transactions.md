@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed asset transaction options
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes the different methods available to create fixed asset transactions.
 
@@ -43,7 +42,7 @@ You can set up Fixed assets for integration with Accounts payable, Accounts rece
 You can enter Fixed assets transactions in the Journal voucher page. This page can be opened from the Invoice journal page. You can also open the Journal voucher page from the Invoice approval journal page. In the Offset account type field, select Fixed assets. Then, in the Offset account field, select a fixed asset number. On the Fixed assets tab, enter values in the Transaction type and Book fields.
 
 ## Accounts receivable
-You can enter Fixed assets transactions in the Free text invoice page.  In the Free text invoice page, in the Invoice lines grid, select a line item. Click the Line details FastTab. Enter the fixed asset number and book for the disposal transaction. For free text invoices, the fixed asset transaction type is always Disposal - sale.
+You can enter Fixed assets transactions in the Free text invoice page.  In the Free text invoice page, in the Invoice lines grid, select a line item. Click the Line details FastTab. Enter the fixed asset number and book for the disposal transaction. For free text invoices, the fixed asset transaction type is always Disposal - sale.
 
 ## Procurement and sourcing
 You can enter Fixed assets transactions in the Purchase order page. Enter the required information to create a purchase order, and then click OK. In the Purchase order page, click the Line details FastTab. Then, on the Fixed assets tab, enter information about the fixed asset. 
@@ -67,8 +66,8 @@ Any fixed asset transaction type can be posted in the General journal page. You 
 | Depreciation                        | Fixed assets             | Fixed assets                              |
 |                                     | General ledger           | General journal                           |
 | Disposal                            | Fixed assets             | Fixed assets                              |
-| ** **                               | General ledger           | General journal                           |
-| ** **                               | Accounts receivable      | Free text invoice                         |
+| ** **                               | General ledger           | General journal                           |
+| ** **                               | Accounts receivable      | Free text invoice                         |
 
 
 

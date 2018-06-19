@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # NF-e process overview for Brazil
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the process for setting up and submitting a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties.
 
@@ -56,18 +55,19 @@ After you generate an NF-e, you can submit the digitally signed NF-e to the Secr
 
 1.  The fiscal establishment posts a fiscal document by using a fiscal document type that is set up for fiscal document model 55 to generate an NF-e.
 2.  The NF-e export or import process detects the posted fiscal document for the fiscal document model 55 and generates an XML message in the specified format. A separate XML message is generated for each NF-e. The XML message is transmitted to SEFAZ.
-3.  SEFAZ processes the XML message and returns a protocol and status for each NF-e. The NF-e status and protocol are then assigned to the NF-e that is used in the NF-e export or import process. The status that is returned can be **Approved**, **Denied**, **Discarded**, **Canceled**, **Rejected non fixable**, or **Rejected**. This information is used to update the fiscal document status in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+3.  SEFAZ processes the XML message and returns a protocol and status for each NF-e. The NF-e status and protocol are then assigned to the NF-e that is used in the NF-e export or import process. The status that is returned can be **Approved**, **Denied**, **Discarded**, **Canceled**, **Rejected non fixable**, or **Rejected**. This information is used to update the fiscal document status in Microsoft Dynamics 365 for Finance and Operations.
 
 After the status of the NF-e is received from SEFAZ, you can perform the following tasks, depending on the status:
 
 -   If the NF-e is approved, you can print the DANFE. Alternatively, if the **Print DANFE when NF-e is approved** option is selected on the **NF-e federal** FastTab of the **Fiscal establishments** page, the DANFE is printed automatically.
 -   If the NF-e is denied, you must cancel the NF-e.
 -   If the NF-e is rejected and can be fixed, you can correct the incorrect information, and then click **Resend** on the **NF-e federal** tab of the **Fiscal document** page to resend the NF-e to SEFAZ.
--   If the NF-e is rejected and can't be fixed, you must cancel the discarded NF-e that has discarded number. The NF-e export or import process detects the fiscal document that is posted and marked for discard, and then generates an XML message in the specified format for the discarded NF-e number. This XML message is then transmitted to SEFAZ, and the fiscal document status is set to **Discarded**.
+-   If the NF-e is rejected and can't be fixed, you must cancel the discarded NF-e that has discarded number. The NF-e export or import process detects the fiscal document that is posted and marked for discard, and then generates an XML message in the specified format for the discarded NF-e number. This XML message is then transmitted to SEFAZ, and the fiscal document status is set to **Discarded**.
 
 
-For more information, see the following topics:
+## Additional resources
 
+ - [NF-e certification](latam-bra-nfe-certs.md)
  - [Set up NF-e federal parameters (Brazil)](tasks/br-00053-1-set-up-nf-e-federal-parameters.md)
  - [Set up NF-e parameters for a fiscal establishment (Brazil)](tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md)
  - [Generate emails for approved NF-e and attach DANFE PDF files and NF-e XML files to the emails (Brazil)](tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md)

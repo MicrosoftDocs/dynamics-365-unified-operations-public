@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Job scheduling
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about job scheduling, which is a more detailed form of scheduling than operations scheduling. You can use job scheduling to schedule individual jobs or shop orders, and to control the manufacturing environment.
 
@@ -45,7 +44,7 @@ The job scheduling process includes the following tasks:
 -   Split operations into jobs.
 -   Schedule jobs, based on the dates and times for the resources that are specified for the related operation.
 -   Calculate start times and end times for each job. You can use finite capacity to make sure that there are no overlapping times.
--   Determine which resources in the resource group to run the job on. This task requires that a resource group be specified for an operation. Job scheduling selects the resources or resource groups based on the shortest lead time, and also considers any previous reservations on the resources.
+-   Determine which resources in the resource group to run the job on. This task requires that a resource group be specified for an operation. Job scheduling selects the resources or resource groups based on the shortest lead time, and also considers any previous reservations on the resources.
 -   Explode operations into jobs when you run job scheduling. The jobs are scheduled by date and time, according to the order that is specified by the production route. The setup of the operation determines the jobs that are exploded during the scheduling process. The route group that is assigned to the operation controls whether jobs are generated. A job is generated only if it has a specific duration. For example, a transport time job is generated if a transport time was specified for the selected operation.
 
 ## Scheduling direction
@@ -75,10 +74,10 @@ The scheduling engine examines combinations of resources to identify those combi
 When job scheduling is run, the system plans the resources, based on the limitations that are defined in the resource parameters. You can control the capacity of the resources by using calendar settings. The system calculates loads for resources during the scheduling process. **Note:** For productions that use the operations scheduling function, you can run job scheduling after operations scheduling. If you aren't using operations scheduling, you can run job scheduling alone.
 
 ## Maximum capacities for resources per job order
-Resources are assigned to jobs through job scheduling. You can establish maximum capacities for resources per job order. For example, you can set up the system to schedule no more than 50 percent of total capacity for a production order. This setup gives you more control over the scheduling of resources on the job scheduling level. Therefore, it can help prevent issues if not enough capacity is available to perform simultaneous productions.
+Resources are assigned to jobs through job scheduling. You can establish maximum capacities for resources per job order. For example, you can set up the system to schedule no more than 50 percent of total capacity for a production order. This setup gives you more control over the scheduling of resources on the job scheduling level. Therefore, it can help prevent issues if not enough capacity is available to perform simultaneous productions.
 
 ## Resource efficiency
-Job scheduling considers the efficiency percentages that are specified for the resources. Efficiency percentages reduce or increase the time that is reserved for the resource. Therefore, lead time is also increased or decreased. The following formula is used for the calculation: Scheduling time = Time × 100 ÷ Efficiency percentage In this formula, *Time* includes both the run time and the setup time.
+Job scheduling considers the efficiency percentages that are specified for the resources. Efficiency percentages reduce or increase the time that is reserved for the resource. Therefore, lead time is also increased or decreased. The following formula is used for the calculation: Scheduling time = Time × 100 ÷ Efficiency percentage In this formula, *Time* includes both the run time and the setup time.
 
 
 

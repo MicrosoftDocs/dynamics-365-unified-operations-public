@@ -26,12 +26,12 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 2, 
+ms.dyn365.ops.version: Platform update 2 
 
 ---
 # Deploy a demo environment
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to deploy a demo environment on Microsoft Azure using Microsoft Dynamics Lifecycle Services (LCS). This topic applies to deploying a demo environment for:
 
@@ -57,9 +57,11 @@ Use this procedure to deploy a demo environment on Azure using LCS.
 5. Select the size of the virtual machine (VM). All the sizes for VMs that are enabled for ARM end with v2. You must use D* v2 sizes for Finance and Operations workloads. We recommend D12v2.
 6. Set the **Instances** field to 1.
 
-      
-    **Note:** The size of the VM and the number of instances affect the cost of your subscription. For more information, see [Azure pricing](https://azure.microsoft.com/en-us/pricing/).
-  
+
+~~~
+**Note:** The size of the VM and the number of instances affect the cost of your subscription. For more information, see [Azure pricing](https://azure.microsoft.com/en-us/pricing/).
+~~~
+
 7. Click **Advanced settings** to add customizations to your deployment. For the demo environment, we recommend that you keep the default settings.
 8. Agree to the licensing and pricing terms, and then click **Next**.
 9. In the **Confirm** message box, click **Deploy**.

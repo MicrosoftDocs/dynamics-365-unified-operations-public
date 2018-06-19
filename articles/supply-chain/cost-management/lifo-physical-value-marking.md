@@ -34,10 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # LIFO with physical value and marking
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!include [retail name](../includes/retail-name.md)]
 
 Last in, First out (LIFO) is an inventory model in which the last (newest) receipts are issued first. Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction. 
 
@@ -67,21 +66,21 @@ The new running average cost price reflects the average of the financially updat
 
 **Key to the diagram**
 
--   Inventory transactions are represented by vertical arrows.
--   Receipts into inventory are represented by vertical arrows above the timeline.
--   Issues out of inventory are represented by vertical arrows below the timeline.
--   Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.
--   An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
--   An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
--   Each new receipt or issue transaction is designated by a new label.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
--   Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
--   Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
+- Inventory transactions are represented by vertical arrows.
+- Receipts into inventory are represented by vertical arrows above the timeline.
+- Issues out of inventory are represented by vertical arrows below the timeline.
+- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.
+- An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
+- An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
+- Each new receipt or issue transaction is designated by a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
+- Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
+- Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 ## LIFO with the Include physical value option
 If the **Include physical value** check box is selected for an item on the **Item model groups** page, the system uses both physical and financial receipt transactions to calculate the running average cost price. Where applicable, the system also makes adjustments to the physically updated issue transaction. When the **Include physical value** check box is cleared, inventory close with the LIFO inventory model makes settlements only to transactions that are financially updated. 
 
-The illustration that follows shows these transactions:
+The illustration that follows shows these transactions:
 
 -   1a. Inventory physical receipt for a quantity of 1 at a cost of USD 10.00 each.
 -   1b. Inventory financial receipt for a quantity of 1 at a cost of USD 10.00 each.
@@ -101,21 +100,21 @@ The following illustration shows the effects of the LIFO inventory model on this
 
 **Key to the diagram**
 
--   Inventory transactions are represented by vertical arrows.
--   Receipts into inventory are represented by vertical arrows above the timeline.
--   Issues out of inventory are represented by vertical arrows below the timeline.
--   Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.
--   An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
--   An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
--   Each new receipt or issue transaction is designated by a new label.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
--   Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
--   Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
+- Inventory transactions are represented by vertical arrows.
+- Receipts into inventory are represented by vertical arrows above the timeline.
+- Issues out of inventory are represented by vertical arrows below the timeline.
+- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.
+- An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
+- An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
+- Each new receipt or issue transaction is designated by a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
+- Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
+- Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 ## LIFO with marking
 Marking is process that lets you link, or mark, an issue transaction to a receipt transaction. Marking can occur either before or after a transaction is posted. You can use marking when you want to be sure of the exact cost of inventory when the transaction is posted or the inventory close is performed. For example, the Customer Service department accepted a rush order from an important customer. Because this order is a rush order, you must pay more for this item in order to fulfill your customer’s request. 
 
-You must make sure that the cost of this inventory item is reflected in the margin, or cost of goods sold (COGS), for this sales order invoice. When the purchase order is posted, the inventory is received at a cost of USD 120.00. If this sales order document is marked to the purchase order before the packing slip or invoice is posted, the COGS will be USD 120.00, not the current running average cost for the item. If the sales order packing slip or invoice is posted before the marking occurs, the COGS will be posted at the running average cost price. 
+You must make sure that the cost of this inventory item is reflected in the margin, or cost of goods sold (COGS), for this sales order invoice. When the purchase order is posted, the inventory is received at a cost of USD 120.00. If this sales order document is marked to the purchase order before the packing slip or invoice is posted, the COGS will be USD 120.00, not the current running average cost for the item. If the sales order packing slip or invoice is posted before the marking occurs, the COGS will be posted at the running average cost price. 
 
 Before inventory close is performed, these two transactions can still be marked to each other. 
 
@@ -143,16 +142,16 @@ The following illustration shows the effects of the LIFO inventory model on this
 
 **Key to diagram**
 
--   Inventory transactions are represented by vertical arrows.
--   Receipts into inventory are represented by vertical arrows above the timeline.
--   Issues out of inventory are represented by vertical arrows below the timeline.
--   Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.
--   An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
--   An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
--   Each new receipt or issue transaction is designated by a new label.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
--   Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
--   Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
+- Inventory transactions are represented by vertical arrows.
+- Receipts into inventory are represented by vertical arrows above the timeline.
+- Issues out of inventory are represented by vertical arrows below the timeline.
+- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unit price.
+- An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
+- An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
+- Each new receipt or issue transaction is designated by a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
+- Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
+- Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 
 

@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: ReqCreatePlanWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roxanadiaconu
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Master planning home page
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 At its core, Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. Master planning assesses the following: 
 
@@ -61,6 +60,7 @@ The following learning map shows the major concepts and tasks that make up the f
 [![Learning map for master planning](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## Quick links
+
 |      |   |
 |------|---|
 |        [Master plans](master-plans.md)       |     [Generate a constrained plan](./tasks/constrained-plan.md)  |
@@ -84,6 +84,10 @@ Additional help is available as task guides inside Finance and Operations. To ac
 ### Webinars
 [Use Azure machine learning for demand forecasting](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
 
+### Tech conference recordings
+-  [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Master planning - tips and tricks for troubleshooting performance](https://youtu.be/7v8BPmEs9Dg)
+-  [Help! MRP is slow!](https://youtu.be/RLXybx20B5o)
 
 
 

@@ -18,7 +18,7 @@ ms.search.form: RetailTillLayout
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations, Core
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 219684
 ms.assetid: 2e2c4eea-c6e2-4912-9832-a6b22416e39f
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Install the Retail POS Layout designer
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 You can use the one-click designer to design different Retail Modern POS (MPOS) and Cloud POS layouts, in either Landscape mode or Portrait mode, for stores, registers, cashiers, and managers.
 
@@ -55,7 +54,7 @@ The graphical design interface for MPOS or Cloud POS is controlled by the till l
 
 **Known issue:** The designer doesn't work correctly in the Google Chrome and Mozilla Firefox browsers. We are working to fix this issue.
 
-See also
+Additional resources
 --------
 
 [Configure, download, install, and activate Retail Modern POS](retail-modern-pos-device-activation.md)

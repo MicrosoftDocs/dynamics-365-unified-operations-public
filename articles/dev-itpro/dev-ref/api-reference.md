@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # API, class, and table reference
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes where to find API documentation in Visual Studio and on the Microsoft docs site.
 
@@ -45,7 +44,7 @@ You can find documentation for the Application classes in Microsoft Visual Studi
 
 ### Programming with application tables and classes
 
-Application tables are being similar to application classes, but with the following differences from classes:
+Application tables are being similar to application classes, but with the following differences from classes:
 
 -   Tables are persistent.
 -   Table fields are always public.
@@ -54,7 +53,7 @@ Application tables are being similar to application classes, but with the follo
 
 ### Design pattern of private new in application classes
 
-All application classes are under Application Explorer &gt; Classes. Every application class has the constructor method named `new`, even if the class has no new node in the AOT. If the class has no explicit new node, the implicit `new` method is public. A design pattern that is sometimes used in the application classes is to declare the explicit `new` constructor method as `private`. Then a `public static` method is added to call the `new` method. The static method can restrict or control the call the `new` method based on various conditions, if necessary.
+All application classes are under Application Explorer &gt; Classes. Every application class has the constructor method named `new`, even if the class has no new node in the AOT. If the class has no explicit new node, the implicit `new` method is public. A design pattern that is sometimes used in the application classes is to declare the explicit `new` constructor method as `private`. Then a `public static` method is added to call the `new` method. The static method can restrict or control the call the `new` method based on various conditions, if necessary.
 
 ## System classes and tables
 ### System API, class, and table documentation is on the Microsoft docs site

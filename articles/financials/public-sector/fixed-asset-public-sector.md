@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed assets in the public sector
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes the fixed assets functionality that is available for public sector. 
 

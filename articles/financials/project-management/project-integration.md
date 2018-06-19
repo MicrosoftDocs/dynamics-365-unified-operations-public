@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: ProjWbsTemplate
+ms.search.form: ProjWbsTemplate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -26,20 +26,20 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: knelson
 ms.search.validFrom: 2017-12-04
-ms.dyn365.ops.version: AX 7.3.0
+ms.dyn365.ops.version: 7.3
 
 ---
 
 # Microsoft Project client integration
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Planning and maintaining a project schedule can be complex, so project managers need to use tools that help them manage this task. 
 Integration with Microsoft Project Client provides support to open and manage a project work breakdown structure. The project manager 
 can publish any changes back to the Finance and Operations project work breakdown structure.
 
 > [!NOTE]
-> If you are using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, July update, you must install KB 4054797 and 4055884.
+> If you are using Microsoft Dynamics 365 for Finance and Operations, July update, you must install KB 4054797 and 4055884.
 
 ## Configure the Microsoft Project Client add-in
 To enable the integration with Microsoft Project Client, a Microsoft Dynamics 365 add-in is required to be installed in the user’s 

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-#ms.search.form: 
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: 7.3
 
 # Tax engine integration
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-To integrate the [Tax engine](tax-engine.md) (also referred to as GTE) with Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you must implement X++ code that interacts with the Tax engine for tax calculation, and that consumes the results to show, account, and post tax for voucher and tax transactions. (The tax calculation can either include or exclude tax adjustment.) 
+To integrate the [Tax engine](tax-engine.md) (also referred to as GTE) with Microsoft Dynamics 365 for Finance and Operations, you must implement X++ code that interacts with the Tax engine for tax calculation, and that consumes the results to show, account, and post tax for voucher and tax transactions. (The tax calculation can either include or exclude tax adjustment.) 
 
 > [!NOTE]
 > The Tax engine functionality is only available for legal entities with a primary address in India.
@@ -74,7 +74,7 @@ The Tax business service model is part of the Finance and Operations integration
 </tr>
 <tr>
 <td>CalculateTax</td>
-    <td> Delete a tax document if it's marked as <strong>Dirty</strong>, and then calculate tax.<ul>
+    <td> Delete a tax document if it&#39;s marked as <strong>Dirty</strong>, and then calculate tax.<ul>
 <li><strong>Input</strong>: Taxable document identifier</li>
 <li><strong>Output</strong>: Tax document object</li>
 </ul>
@@ -209,7 +209,7 @@ This framework lets you easily find a transaction's document and track the trans
 
 #### Transaction integration
 
-Transaction integration occurs only on a case-by-case basis. For each transaction and scenario, the Tax business service should be called in the appropriate manner for tax calculation, tax assumption, and tax posting. For an example, see the [Finance and Operations integration example – Purchase order invoice](#microsoft-dynamics-ax-integration-example-purchase-order-invoice) section later in this topic.
+Transaction integration occurs only on a case-by-case basis. For each transaction and scenario, the Tax business service should be called in the appropriate manner for tax calculation, tax assumption, and tax posting. For an example, see the [Finance and Operations integration example – Purchase order invoice](#example-finance-and-operations-integration--purchase-order-invoice) section later in this topic.
 
 #### Accounting integration
 
@@ -555,7 +555,7 @@ If the Tax engine returns no issues, the tax document result will be persisted i
 
 - TaxDocument
 - TaxDocumentRow
-- TaxDocumentJason
+- TaxDocumentJson
 
 By querying these tables to obtain the JSON string, you can easily check the result details via any online JSON viewer.
 

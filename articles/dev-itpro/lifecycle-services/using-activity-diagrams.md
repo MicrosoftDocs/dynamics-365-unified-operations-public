@@ -30,13 +30,13 @@ ms.dyn365.ops.version: 2012
 
 # Use activity diagrams with BPM
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can associate an activity diagram with a business process. Activity diagrams are used to describe how a business process or task is completed in a proposed software solution.
 
 There are three types of activity diagrams:
 
-- **Task recordings** – Business processes that are associated with task recordings for Microsoft Dynamics 365 for Finance Operations, Enterprise edition, include activity diagrams and process steps that are automatically generated.
+- **Task recordings** – Business processes that are associated with task recordings for Microsoft Dynamics 365 for Finance Operations, include activity diagrams and process steps that are automatically generated.
 - **Microsoft Visio** – You can associate a business process with a Visio diagram by manually uploading a Visio file.
 - **User-defined** – You can manually create or edit a Business process modeler (BPM) activity diagram.
 

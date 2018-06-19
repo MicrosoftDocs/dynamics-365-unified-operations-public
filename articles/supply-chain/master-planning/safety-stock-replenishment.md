@@ -18,22 +18,21 @@ ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTabl
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: yuyus
-ms.search.scope: Core (Operations, Core)
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: roxanadiaconu
-ms.dyn365.ops.intro: 7.3 
+ms.author: roxanad
+ms.dyn365.ops.version: 7.3 
 ms.search.validFrom: 2017-12-31
 
 ---
 
 # Safety stock fulfillment for items
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Safety stock indicates an additional quantity of an item held in the inventory in order to reduce the risk that the item will be out of stock. Safety stock is used as a buffer stock in case sales orders come in and the supplier is unable to deliver the additional items to meet the customer's requested ship date. When safety stock is used to fulfill a sales order, the safety stock will be reduced. You can use Master planning to automatically bring the inventory back to the safety level.    
 

@@ -32,19 +32,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View and export field descriptions
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
 
-Microsoft Dynamics 365 for Finance and Operations has descriptions for some of the more complex fields. These descriptions appear when you hover over a field. You can also view and export descriptions on the **Field descriptions** page. 
+Microsoft Dynamics 365 for Finance and Operations has descriptions for some of the more complex fields. These descriptions appear when you hover over a field. You can also view and export descriptions on the **Field descriptions** page. 
 
 Not all pages have field descriptions. We want to provide descriptions only for the more complex fields, not where the use of the field is obvious. Therefore, some pages don't have any field descriptions, some pages have a few descriptions, and some of the more complex pages, such as many of the parameters pages, have many descriptions. 
 
-If you have access to the Finance and Operations development environment, you can add new field descriptions and customize existing descriptions. For example, you can add company-specific information to a field description. For more information, see [Customize field help](../../dev-itpro/user-interface/customize-field-help.md).
+If you have access to the Finance and Operations development environment, you can add new field descriptions and customize existing descriptions. For example, you can add company-specific information to a field description. For more information, see [Customize field help](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## See field descriptions in the user interface
-You can view field descriptions by hovering over a field. If no description is available, you see the field name when you hover over the field. (Note: In Dynamics AX 7.0 (February 2016), field descriptions can be viewed only on the **Field descriptions** page.) The following illustration shows the field description that appears when you hover over the **Lock items during count** field. 
+You can view field descriptions by hovering over a field. If no description is available, you see the field name when you hover over the field. (Note: In Dynamics AX 7.0 (February 2016), field descriptions can be viewed only on the **Field descriptions** page.) The following illustration shows the field description that appears when you hover over the **Lock items during count** field. 
 
 [![Example of a field description](./media/field-description.png)](./media/field-description.png)
 
@@ -81,7 +80,7 @@ There are several ways to search for a page in the **Select a page** field. In m
     -   If there is more than one exact match, no descriptions are shown. You must open the drop-down list and select the page that you want.
     -   If the name that you typed is part of the name of another page, you see the descriptions for your page. However, if you open the drop-down list, you see additional pages that contain that name.
 
-For example, no descriptions are shown when you type **Counting** in the ****Select a page**** field. You open the drop-down list, and see that there are two pages that have the name **Counting** and several pages that contain the word "Counting" in the name. If you select the page that has the AOT name **InventJournalCount**, the field descriptions are shown for that page. However, if you open the drop-down list again, you will see that the list now contains all pages that have "InventJournalCount" as part of their AOT name.
+For example, no descriptions are shown when you type <strong>Counting</strong> in the *<strong><em>Select a page</em></strong>* field. You open the drop-down list, and see that there are two pages that have the name <strong>Counting</strong> and several pages that contain the word "Counting" in the name. If you select the page that has the AOT name <strong>InventJournalCount</strong>, the field descriptions are shown for that page. However, if you open the drop-down list again, you will see that the list now contains all pages that have "InventJournalCount" as part of their AOT name.
 
 ## Troubleshooting
 This section provides information to help you troubleshoot issues that you might encounter when you use field descriptions.
@@ -102,7 +101,7 @@ To show all the fields on a page, set the **Include fields without a description
 
 For information about the various way to find pages, see the "Searching for pages" section earlier in this article. If you've typed the exact name of the page, the field descriptions might not be shown if more than one page has the same name. Click the arrow in the **Select a page** field to open a filtered list of the pages that are available.
 
-See also
+Additional resources
 --------
 
 [Customize field help](../../dev-itpro/user-interface/customize-field-help.md)

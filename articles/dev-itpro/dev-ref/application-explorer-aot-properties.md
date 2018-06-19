@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Application Explorer properties
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
 
 Many nodes in Application Explorer represent elements that have properties associated with them. You can read or modify these properties in the **Properties** window of Microsoft Visual Studio.
 
 ## System and common properties
-Most application objects in Application Explorer have a standard set of system properties. These system properties are read-only. You can use the **Properties** window to view the properties for any item in Application Explorer. To open the **Properties** window, right-click a node in Application Explorer, and then click **Properties**. On the **Categories** tab of the **Properties** window, many system properties are listed under the **Statistics** node. This article lists additional common properties that are repeated on many, but not all, Application Explorer nodes. The following table shows the system properties that are found on almost all Application Explorer nodes. All these system properties are read-only.
+Most application objects in Application Explorer have a standard set of system properties. These system properties are read-only. You can use the **Properties** window to view the properties for any item in Application Explorer. To open the **Properties** window, right-click a node in Application Explorer, and then click **Properties**. On the **Categories** tab of the **Properties** window, many system properties are listed under the **Statistics** node. This article lists additional common properties that are repeated on many, but not all, Application Explorer nodes. The following table shows the system properties that are found on almost all Application Explorer nodes. All these system properties are read-only.
 
 | Property     | Description                                                       |
 |--------------|-------------------------------------------------------------------|
@@ -55,10 +54,10 @@ The following table shows other common properties that are found on many, but no
 
 | Property          | Description                                                                                                                                                                                                                                                                                                          |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ConfigurationKey  | Specify the configuration key that controls access to or display of an element. If a user doesn't have access to the configuration key, the element isn't visible. Elements include pages, controls on pages, tables, and other elements.                                                                            |
+| ConfigurationKey  | Specify the configuration key that controls access to or display of an element. If a user doesn't have access to the configuration key, the element isn't visible. Elements include pages, controls on pages, tables, and other elements.                                                                            |
 | LegacyID          | An identifier element from an earlier version. During upgrade from a previous version, the old identifier is assigned to **LegacyID**. An installation-specific identifier isn't assigned, and business logic remains intact. This property isn't used for new elements.                                             |
 | NeededAccessLevel | The minimum access level that a user requires. This property is read-only.                                                                                                                                                                                                                                           |
-| Origin            | The globally unique identifier (GUID) of an Application Explorer element. This property is used to identify elements during synchronization and in upgrade scenarios. It's a read-only property, and the value never changes after the system assigns it. No origin GUID value is duplicated anywhere in the system. |
+| Origin            | The globally unique identifier (GUID) of an Application Explorer element. This property is used to identify elements during synchronization and in upgrade scenarios. It's a read-only property, and the value never changes after the system assigns it. No origin GUID value is duplicated anywhere in the system. |
 | SecurityKey       | This property is obsolete but is retained for reference in systems that were upgraded from an earlier version.                                                                                                                                                                                                       |
 
 ## Base enum properties
@@ -78,10 +77,10 @@ The following table describes the properties that are available for enumerations
 <tbody>
 <tr class="odd">
 <td>AnalysisUsage</td>
-<td>Specify the role of the enumeration in a cube. This setting is automatically propagated to all table fields that reference the enumeration. However, you can override the setting on a table field. The following options are available:
+<td>Specify the role of the enumeration in a cube. This setting is automatically propagated to all table fields that reference the enumeration. However, you can override the setting on a table field. The following options are available:
 <ul>
-<li><strong>Attribute </strong>– A field that references the enumeration is a dimension attribute.</li>
-<li><strong>None </strong>– A field that references the enumeration isn't a dimension attribute.</li>
+<li><strong>Attribute </strong>– A field that references the enumeration is a dimension attribute.</li>
+<li><strong>None </strong>– A field that references the enumeration isn&#39;t a dimension attribute.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -90,7 +89,7 @@ The following table describes the properties that are available for enumerations
 </tr>
 <tr class="odd">
 <td>CountryRegionCodes</td>
-<td>Specify the codes for the countries/regions where the view is applicable or valid. This property is implemented as a comma-separated list of International Organization for Standardization (ISO) country/region codes in a single string. The values must match data in the global address book. The client framework and application might use this property to enable or disable country/region-specific features.</td>
+<td>Specify the codes for the countries/regions where the view is applicable or valid. This property is implemented as a comma-separated list of International Organization for Standardization (ISO) country/region codes in a single string. The values must match data in the global address book. The client framework and application might use this property to enable or disable country/region-specific features.</td>
 </tr>
 <tr class="even">
 <td>DisplayLength</td>
@@ -102,11 +101,11 @@ The following table describes the properties that are available for enumerations
 </tr>
 <tr class="even">
 <td>Label</td>
-<td>Specify the label that is shown on pages and reports.</td>
+<td>Specify the label that is shown on pages and reports.</td>
 </tr>
 <tr class="odd">
 <td>Model</td>
-<td>Specify the model that the table is in. A model is a logical grouping of elements in a layer. Examples of elements include a table and a class. An element can exist in exactly one model in a layer. The same element can exist in a customized version in a model that is in a higher layer.</td>
+<td>Specify the model that the table is in. A model is a logical grouping of elements in a layer. Examples of elements include a table and a class. An element can exist in exactly one model in a layer. The same element can exist in a customized version in a model that is in a higher layer.</td>
 </tr>
 <tr class="even">
 <td>Name</td>
@@ -122,13 +121,13 @@ The following table describes the properties that are available for enumerations
 </tr>
 <tr class="even">
 <td>UseEnumValue</td>
-<td>A value of <strong>Yes</strong> indicates that default values of the <strong>EnumValue</strong> property were modified. A value of <strong>No</strong> resets the <strong>EnumValue</strong> property to the default values.</td>
+<td>A value of <strong>Yes</strong> indicates that default values of the <strong>EnumValue</strong> property were modified. A value of <strong>No</strong> resets the <strong>EnumValue</strong> property to the default values.</td>
 </tr>
 </tbody>
 </table>
 
 ## Extended data type properties
-Extended data type (EDT) properties are divided into the following groups, based on whether they are common to all EDTs or available only for certain base data types.
+Extended data type (EDT) properties are divided into the following groups, based on whether they are common to all EDTs or available only for certain base data types.
 
 ### Properties that are common to all EDTs
 
@@ -146,7 +145,7 @@ Extended data type (EDT) properties are divided into the following groups, base
 <tbody>
 <tr class="odd">
 <td>Alignment</td>
-<td>Change the alignment of the text. The available options are <strong>Left</strong>, <strong>Right</strong>, and <strong>Center</strong>.</td>
+<td>Change the alignment of the text. The available options are <strong>Left</strong>, <strong>Right</strong>, and <strong>Center</strong>.</td>
 </tr>
 <tr class="even">
 <td>AnalysisDefaultSort</td>
@@ -154,15 +153,15 @@ Extended data type (EDT) properties are divided into the following groups, base
 </tr>
 <tr class="odd">
 <td>AnalysisDefaultTotal</td>
-<td>Specify the aggregate function for a measure. Use this property when the <strong>AnalysisUsage</strong> property is set to <strong>Measure</strong>. The following options are available:
+<td>Specify the aggregate function for a measure. Use this property when the <strong>AnalysisUsage</strong> property is set to <strong>Measure</strong>. The following options are available:
 <ul>
-<li><strong>Sum </strong>– Return the sum of all the values in a set.</li>
-<li><strong>Count </strong>– Return the number of non-null items in a set.</li>
-<li><strong>CountDistinct </strong>– Return the number of distinct non-null items in a set.</li>
-<li><strong>Min </strong>– Return the minimum value in a set.</li>
-<li><strong>Max </strong>– Return the maximum value in a set.</li>
-<li><strong>None </strong>– No aggregate function is applied.</li>
-<li><strong>Auto </strong>– This option applies to derived EDTs. The value of the <strong>AnalysisUsage</strong> property for the parent EDT is used.</li>
+<li><strong>Sum </strong>– Return the sum of all the values in a set.</li>
+<li><strong>Count </strong>– Return the number of non-null items in a set.</li>
+<li><strong>CountDistinct </strong>– Return the number of distinct non-null items in a set.</li>
+<li><strong>Min </strong>– Return the minimum value in a set.</li>
+<li><strong>Max </strong>– Return the maximum value in a set.</li>
+<li><strong>None </strong>– No aggregate function is applied.</li>
+<li><strong>Auto </strong>– This option applies to derived EDTs. The value of the <strong>AnalysisUsage</strong> property for the parent EDT is used.</li>
 </ul>
 You can override the aggregate function at the field level. In other words, you can change the aggregate function for the field by using the <strong>AnalysisDefaultTotal</strong> property for that field.</td>
 </tr>
@@ -174,13 +173,13 @@ You can override the aggregate function at the field level. In other words, you 
 <td>AnalysisUsage</td>
 <td>Specify the role of the EDT in a cube. This setting is automatically propagated to all table fields that reference the EDT. However, you can override the setting on a table field. The following options are available:
 <ul>
-<li><strong>Attribute </strong>– A field that references the EDT is a dimension attribute.</li>
-<li><strong>Measure </strong>– A field that references the EDT is a measure.</li>
-<li><strong>Both </strong>– A field that references the EDT is both a dimension attribute and a measure.</li>
-<li><strong>None </strong>– A field that references the EDT is neither a dimension attribute nor a measure.</li>
-<li><strong>Auto </strong>– This option applies to derived EDTs. The value of the <strong>AnalysisUsage</strong> property for the parent EDT is used.</li>
+<li><strong>Attribute </strong>– A field that references the EDT is a dimension attribute.</li>
+<li><strong>Measure </strong>– A field that references the EDT is a measure.</li>
+<li><strong>Both </strong>– A field that references the EDT is both a dimension attribute and a measure.</li>
+<li><strong>None </strong>– A field that references the EDT is neither a dimension attribute nor a measure.</li>
+<li><strong>Auto </strong>– This option applies to derived EDTs. The value of the <strong>AnalysisUsage</strong> property for the parent EDT is used.</li>
 </ul>
-<strong>Note:</strong> Data types that are based on enumerations can't be measures.</td>
+<strong>Note:</strong> Data types that are based on enumerations can&#39;t be measures.</td>
 </tr>
 <tr class="even">
 <td>ArrayLength</td>
@@ -213,7 +212,7 @@ The default value is <strong>Arrow</strong>.</td>
 </tr>
 <tr class="odd">
 <td>DisplayLength</td>
-<td>Specify the maximum number of characters that are shown on a page or report.</td>
+<td>Specify the maximum number of characters that are shown on a page or report.</td>
 </tr>
 <tr class="even">
 <td>EnumType</td>
@@ -241,7 +240,7 @@ The default value is <strong>Arrow</strong>.</td>
 </tr>
 <tr class="even">
 <td>Model</td>
-<td>Specify the model that the table is in. A model is a logical grouping of elements in a layer. Examples of elements include a table and a class. An element can exist in exactly one model in a layer. The same element can exist in a customized version in a model that is in a higher layer.</td>
+<td>Specify the model that the table is in. A model is a logical grouping of elements in a layer. Examples of elements include a table and a class. An element can exist in exactly one model in a layer. The same element can exist in a customized version in a model that is in a higher layer.</td>
 </tr>
 <tr class="odd">
 <td>Name</td>
@@ -249,7 +248,7 @@ The default value is <strong>Arrow</strong>.</td>
 </tr>
 <tr class="even">
 <td>PresenceClass</td>
-<td>Specify the X++ class that is used together with the <strong>PresenceMethod</strong> property to return an instance of the <strong>PresenceInfo</strong> object.</td>
+<td>Specify the X++ class that is used together with the <strong>PresenceMethod</strong> property to return an instance of the <strong>PresenceInfo</strong> object.</td>
 </tr>
 <tr class="odd">
 <td>PresenceIndicatorAllowed</td>
@@ -311,7 +310,7 @@ Unless the following table specifies otherwise, you should leave all these prope
 <tr class="even">
 <td>ChangeCase</td>
 <td>String</td>
-<td>Specify how text that is entered in a string control should be formatted. For example, the text can be formatted as all uppercase letters, or it can use title capitalization. <strong>Note:</strong> This property isn't supported for Enterprise Portal.</td>
+<td>Specify how text that is entered in a string control should be formatted. For example, the text can be formatted as all uppercase letters, or it can use title capitalization. <strong>Note:</strong> This property isn&#39;t supported for Enterprise Portal.</td>
 </tr>
 <tr class="odd">
 <td>DateDay</td>
@@ -341,7 +340,7 @@ Unless the following table specifies otherwise, you should leave all these prope
 <tr class="even">
 <td>DecimalSeparator</td>
 <td>Real</td>
-<td>Specify the decimal separator. When the default setting (<strong>Auto</strong>) is used, the decimal separator that is specified in the system setup is used.</td>
+<td>Specify the decimal separator. When the default setting (<strong>Auto</strong>) is used, the decimal separator that is specified in the system setup is used.</td>
 </tr>
 <tr class="odd">
 <td>DisplaceNegative</td>
@@ -351,7 +350,7 @@ Unless the following table specifies otherwise, you should leave all these prope
 <tr class="even">
 <td>DisplayHeight</td>
 <td>String</td>
-<td>Specify the number of lines to show at the same time when the EDT is shown on a page.</td>
+<td>Specify the number of lines to show at the same time when the EDT is shown on a page.</td>
 </tr>
 <tr class="odd">
 <td>EnumType</td>
@@ -449,7 +448,7 @@ In Application Explorer, under the **Data Dictionary** node, there is a **Perspe
 <tbody>
 <tr class="odd">
 <td>ConfigurationKey</td>
-<td>Specify the configuration key that is assigned to the perspective. The configuration key determines which configurations of a perspective are included for in report models that are generated.</td>
+<td>Specify the configuration key that is assigned to the perspective. The configuration key determines which configurations of a perspective are included for in report models that are generated.</td>
 </tr>
 <tr class="even">
 <td>HelpText</td>
@@ -465,7 +464,7 @@ In Application Explorer, under the **Data Dictionary** node, there is a **Perspe
 </tr>
 <tr class="odd">
 <td>Model</td>
-<td>Specify the model that the perspective is in. A model is a logical grouping of elements in a layer. An element can exist in exactly one model in a layer. The same element can exist in a customized version in a model that is in a higher layer.</td>
+<td>Specify the model that the perspective is in. A model is a logical grouping of elements in a layer. An element can exist in exactly one model in a layer. The same element can exist in a customized version in a model that is in a higher layer.</td>
 </tr>
 <tr class="even">
 <td>SharedDimensionContainer</td>
@@ -475,10 +474,10 @@ In Application Explorer, under the **Data Dictionary** node, there is a **Perspe
 <td>Usage</td>
 <td>Specify the materialization options for a perspective. The following options are available:
 <ul>
-<li><strong>AdHocReporting </strong>– The perspective will be used to generate a transactional Semantic Model Definition Language (SMDL) model.</li>
-<li><strong>OLAP </strong>– The perspective will be used to generate a cube in a Microsoft SQL Server Analysis Services (SSAS) Business Intelligence project.</li>
-<li><strong>Both </strong>– The perspective will be used to generate both a transactional SDML model and a cube in an SSAS Business Intelligence project.</li>
-<li><strong>None </strong>– The perspective won't be materialized.</li>
+<li><strong>AdHocReporting </strong>– The perspective will be used to generate a transactional Semantic Model Definition Language (SMDL) model.</li>
+<li><strong>OLAP </strong>– The perspective will be used to generate a cube in a Microsoft SQL Server Analysis Services (SSAS) Business Intelligence project.</li>
+<li><strong>Both </strong>– The perspective will be used to generate both a transactional SDML model and a cube in an SSAS Business Intelligence project.</li>
+<li><strong>None </strong>– The perspective won&#39;t be materialized.</li>
 </ul>
 The default value is <strong>None</strong>.</td>
 </tr>
@@ -506,23 +505,23 @@ The following table describes the properties of table elements in Application Ex
 <tbody>
 <tr class="odd">
 <td>Abstract</td>
-<td>Specify whether the table supports inheritance. The default value is <strong>No</strong>. If the value is set to <strong>Yes</strong>, the table can't be a direct target of X++ SQL statements such as <strong>update_recordset</strong> and <strong>select</strong>. <strong>Note:</strong> This property is unavailable when the <strong>SupportInheritance</strong> property is set to <strong>No</strong>.</td>
+<td>Specify whether the table supports inheritance. The default value is <strong>No</strong>. If the value is set to <strong>Yes</strong>, the table can&#39;t be a direct target of X++ SQL statements such as <strong>update_recordset</strong> and <strong>select</strong>. <strong>Note:</strong> This property is unavailable when the <strong>SupportInheritance</strong> property is set to <strong>No</strong>.</td>
 </tr>
 <tr class="even">
 <td>AnalysisDimensionType</td>
-<td>Specify the type of dimension that is created, based on the setting of the <strong>IsLookup</strong> property. If the <strong>IsLookup</strong> property is set to <strong>Yes</strong>, the following options are available:
+<td>Specify the type of dimension that is created, based on the setting of the <strong>IsLookup</strong> property. If the <strong>IsLookup</strong> property is set to <strong>Yes</strong>, the following options are available:
 <ul>
-<li><strong>Auto </strong>– The table can contain both factual and dimensional data. The BI Wizard will extract dimensional data, and create dimensions and attributes. Factual data will be extracted to create measures. One child dimension is created that has attributes from the parent table.</li>
-<li><strong>MasterInner </strong>– An inner (full) join is used to create relationships with this table to the child table. Each record combination for this table and the child table are generated in the dimension. One child dimension is created that has attributes from the parent table.</li>
-<li><strong>MasterLeftOuter </strong>– A left outer join is used to create relationships with this table to the child table. Dimensions will have additional attributes, based on values in this table that can also be empty. One child dimension is created that has attributes from the parent table.</li>
-<li><strong>Transaction </strong>– The table should be used to generate only factual data (measures). You should use this option when a table contains only transactional data. One child dimension is created that contains only enumeration fields from the table.</li>
+<li><strong>Auto </strong>– The table can contain both factual and dimensional data. The BI Wizard will extract dimensional data, and create dimensions and attributes. Factual data will be extracted to create measures. One child dimension is created that has attributes from the parent table.</li>
+<li><strong>MasterInner </strong>– An inner (full) join is used to create relationships with this table to the child table. Each record combination for this table and the child table are generated in the dimension. One child dimension is created that has attributes from the parent table.</li>
+<li><strong>MasterLeftOuter </strong>– A left outer join is used to create relationships with this table to the child table. Dimensions will have additional attributes, based on values in this table that can also be empty. One child dimension is created that has attributes from the parent table.</li>
+<li><strong>Transaction </strong>– The table should be used to generate only factual data (measures). You should use this option when a table contains only transactional data. One child dimension is created that contains only enumeration fields from the table.</li>
 </ul>
 If the <strong>IsLookup</strong> property is set to <strong>No</strong>, the following options are available:
 <ul>
-<li><strong>Auto </strong>– Table can contain both factual and dimensional data. The BI Wizard will extract dimensional data, and create dimensions and attributes, Factual data will be extracted to create measures. One parent and child dimension are created.</li>
-<li><strong>MasterInner </strong>– Not applicable. This option is the same as <strong>Auto</strong>.</li>
-<li><strong>MasterLeftOuter </strong>– Not applicable. This option is the same as <strong>Auto</strong>.</li>
-<li><strong>Transaction </strong>– The table should be used to generate only factual data (measures). You should use this option when a table contains only transactional data. One child dimension is created that contains only enumeration values from the table.</li>
+<li><strong>Auto </strong>– Table can contain both factual and dimensional data. The BI Wizard will extract dimensional data, and create dimensions and attributes, Factual data will be extracted to create measures. One parent and child dimension are created.</li>
+<li><strong>MasterInner </strong>– Not applicable. This option is the same as <strong>Auto</strong>.</li>
+<li><strong>MasterLeftOuter </strong>– Not applicable. This option is the same as <strong>Auto</strong>.</li>
+<li><strong>Transaction </strong>– The table should be used to generate only factual data (measures). You should use this option when a table contains only transactional data. One child dimension is created that contains only enumeration values from the table.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -531,11 +530,11 @@ If the <strong>IsLookup</strong> property is set to <strong>No</strong>, the fol
 </tr>
 <tr class="even">
 <td>AOSAuthorization</td>
-<td>Specify the type of operation that a user can perform on a table, depending on the user's permissions. When this property is set to <strong>None</strong>, no authorization check is performed.</td>
+<td>Specify the type of operation that a user can perform on a table, depending on the user&#39;s permissions. When this property is set to <strong>None</strong>, no authorization check is performed.</td>
 </tr>
 <tr class="odd">
 <td>CacheLookup</td>
-<td>Specify how to cache the records that are retrieved during a lookup operation. This property exists only on tables that don't inherit from another table. On an inheritance root table, you can' set this property to <strong>EntireTable</strong> by using the Application Explorer <strong>Properties</strong> window. You must not use other techniques to assign this value to inheritance root tables. For example, don't use the <strong>AOTsetProperty</strong> method of the <strong>TreeNode</strong> class to assign this value.</td>
+<td>Specify how to cache the records that are retrieved during a lookup operation. This property exists only on tables that don&#39;t inherit from another table. On an inheritance root table, you can&#39; set this property to <strong>EntireTable</strong> by using the Application Explorer <strong>Properties</strong> window. You must not use other techniques to assign this value to inheritance root tables. For example, don&#39;t use the <strong>AOTsetProperty</strong> method of the <strong>TreeNode</strong> class to assign this value.</td>
 </tr>
 <tr class="even">
 <td>ClusterIndex</td>
@@ -551,7 +550,7 @@ If the <strong>IsLookup</strong> property is set to <strong>No</strong>, the fol
 </tr>
 <tr class="odd">
 <td>CountryRegionContextField</td>
-<td>Specify the field that is used to identify the country/region context. This property is related to the <strong>CountryRegionCodes</strong> property.</td>
+<td>Specify the field that is used to identify the country/region context. This property is related to the <strong>CountryRegionCodes</strong> property.</td>
 </tr>
 <tr class="even">
 <td>CreatedBy</td>
@@ -571,7 +570,7 @@ If the <strong>IsLookup</strong> property is set to <strong>No</strong>, the fol
 </tr>
 <tr class="even">
 <td>DeveloperDocumentation</td>
-<td>Describe the purpose of a table, and explain how it's used in the program. Typically, a description contains no more than five sentences and is written as a single paragraph.</td>
+<td>Describe the purpose of a table, and explain how it&#39;s used in the program. Typically, a description contains no more than five sentences and is written as a single paragraph.</td>
 </tr>
 <tr class="odd">
 <td>EntityRelationshipType</td>
@@ -579,7 +578,7 @@ If the <strong>IsLookup</strong> property is set to <strong>No</strong>, the fol
 </tr>
 <tr class="even">
 <td>Extends</td>
-<td>Derive the table from the specified table. The value of this property is <strong>null</strong> when the <strong>SupportInheritance</strong> property is set to <strong>Yes</strong>.</td>
+<td>Derive the table from the specified table. The value of this property is <strong>null</strong> when the <strong>SupportInheritance</strong> property is set to <strong>Yes</strong>.</td>
 </tr>
 <tr class="odd">
 <td>FormRef</td>
@@ -593,8 +592,8 @@ If the <strong>IsLookup</strong> property is set to <strong>No</strong>, the fol
 <td>IsLookup</td>
 <td>For report models, use this property to specify whether the table information is incorporated into other tables that reference it when a report model is generated. For online analytical processing (OLAP) cubes, use this property to specify whether to generate a consolidated dimension or a distinct dimension. The following options are available:
 <ul>
-<li><strong>Yes </strong>– Attributes from the table should be consolidated into the parent dimension (star schema).</li>
-<li><strong>No </strong>– A separate dimension should be generated for the table (snowflake schema).</li>
+<li><strong>Yes </strong>– Attributes from the table should be consolidated into the parent dimension (star schema).</li>
+<li><strong>No </strong>– A separate dimension should be generated for the table (snowflake schema).</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -607,7 +606,7 @@ If the <strong>IsLookup</strong> property is set to <strong>No</strong>, the fol
 </tr>
 <tr class="even">
 <td>Model</td>
-<td>Specify the model that the table is in. A model is a logical grouping of elements in a layer. Examples of elements include a table and a class. An element can exist in exactly one model in a layer. The same element can exist in a customized version in a model that is in a higher layer.</td>
+<td>Specify the model that the table is in. A model is a logical grouping of elements in a layer. Examples of elements include a table and a class. An element can exist in exactly one model in a layer. The same element can exist in a customized version in a model that is in a higher layer.</td>
 </tr>
 <tr class="odd">
 <td>ModifiedBy</td>
@@ -615,7 +614,7 @@ If the <strong>IsLookup</strong> property is set to <strong>No</strong>, the fol
 </tr>
 <tr class="even">
 <td>ModifiedDateTime</td>
-<td>Specify whether the system maintains the <strong>ModifiedDate</strong> field for the records in a table. This field contains the date when a record was last modified.</td>
+<td>Specify whether the system maintains the <strong>ModifiedDate</strong> field for the records in a table. This field contains the date when a record was last modified.</td>
 </tr>
 <tr class="odd">
 <td>ModifiedTime</td>
@@ -627,15 +626,15 @@ If the <strong>IsLookup</strong> property is set to <strong>No</strong>, the fol
 </tr>
 <tr class="odd">
 <td>OccEnabled</td>
-<td>Specify whether the optimistic concurrency mode is enabled for a table. When this mode is enabled, data isn't locked from future modification when it's fetched from the database. Data is locked only when the actual update is performed.</td>
+<td>Specify whether the optimistic concurrency mode is enabled for a table. When this mode is enabled, data isn&#39;t locked from future modification when it&#39;s fetched from the database. Data is locked only when the actual update is performed.</td>
 </tr>
 <tr class="even">
 <td>PreviewPartRef</td>
-<td>Specify the info part or form part to use in the enhanced preview. An info part shows a collection of data fields from a specified query. It uses metadata to describe how the data appears. A form part represents a pointer to a page.</td>
+<td>Specify the info part or form part to use in the enhanced preview. An info part shows a collection of data fields from a specified query. It uses metadata to describe how the data appears. A form part represents a pointer to a page.</td>
 </tr>
 <tr class="odd">
 <td>PrimaryIndex</td>
-<td>Specify the primary index. Only a unique index can be selected. This property is used for database optimization and to indicate which unique index should be used as the caching key. If you don't specify a primary index, the unique index that has the lowest ID is used as the caching key.</td>
+<td>Specify the primary index. Only a unique index can be selected. This property is used for database optimization and to indicate which unique index should be used as the caching key. If you don&#39;t specify a primary index, the unique index that has the lowest ID is used as the caching key.</td>
 </tr>
 <tr class="even">
 <td>ReplacementKey</td>
@@ -647,7 +646,7 @@ If the <strong>IsLookup</strong> property is set to <strong>No</strong>, the fol
 </tr>
 <tr class="even">
 <td>SaveDataPerCompany</td>
-<td>Specify whether the data for the current company is saved. If you set the property to <strong>No</strong>, data is saved without a company identifier (DataAreaId). <strong>Note: </strong>If the <strong>SaveDataPerCompany</strong> property on a table is set to <strong>Yes</strong>, the <strong>SetCompany</strong> property on a page design that uses the table as a data source must also be set to <strong>Yes</strong>. <strong>Tip: </strong>The status line shows the acronym for the company. Double-click the acronym to open a dialog box where you can change the company.</td>
+<td>Specify whether the data for the current company is saved. If you set the property to <strong>No</strong>, data is saved without a company identifier (DataAreaId). <strong>Note: </strong>If the <strong>SaveDataPerCompany</strong> property on a table is set to <strong>Yes</strong>, the <strong>SetCompany</strong> property on a page design that uses the table as a data source must also be set to <strong>Yes</strong>. <strong>Tip: </strong>The status line shows the acronym for the company. Double-click the acronym to open a dialog box where you can change the company.</td>
 </tr>
 <tr class="odd">
 <td>SaveDataPerPartition</td>
@@ -667,20 +666,20 @@ If the <strong>IsLookup</strong> property is set to <strong>No</strong>, the fol
 </tr>
 <tr class="odd">
 <td>SupportInheritance</td>
-<td>When you set this property to <strong>Yes</strong>, you can set a value for other inheritance-related properties, such as <strong>Extends</strong> and <strong>Abstract</strong>. <strong>Caution:</strong> If you set this property to <strong>Yes</strong>, any fields on the table are dropped and must be created again.</td>
+<td>When you set this property to <strong>Yes</strong>, you can set a value for other inheritance-related properties, such as <strong>Extends</strong> and <strong>Abstract</strong>. <strong>Caution:</strong> If you set this property to <strong>Yes</strong>, any fields on the table are dropped and must be created again.</td>
 </tr>
 <tr class="even">
 <td>SystemTable</td>
-<td>Indicate whether a table appears as a system table. A table that appears as a system table can be filtered during export and import. System tables are always synchronized when you sign in. Therefore, this property might be useful for tables that you use as soon as you sign in.</td>
+<td>Indicate whether a table appears as a system table. A table that appears as a system table can be filtered during export and import. System tables are always synchronized when you sign in. Therefore, this property might be useful for tables that you use as soon as you sign in.</td>
 </tr>
 <tr class="odd">
 <td>TableContents</td>
 <td>Specify how setup/parameter data can be reused from one customer to another. The following options are available:
 <ul>
-<li><strong>Not specified </strong>– Use this option for most tables.</li>
-<li><strong>Default Data </strong>– Use this option for customer-independent data, such as postal codes, units, and time intervals.</li>
-<li><strong>Base Data </strong>– Use this option for customer-dependent data, such as calendars, groups, and parameters.</li>
-<li><strong>Default+Base data </strong>– Use this option for data where the local perception varies. For example, Chart of Accounts is customer-independent in Germany but is customer dependent in most other places.</li>
+<li><strong>Not specified </strong>– Use this option for most tables.</li>
+<li><strong>Default Data </strong>– Use this option for customer-independent data, such as postal codes, units, and time intervals.</li>
+<li><strong>Base Data </strong>– Use this option for customer-dependent data, such as calendars, groups, and parameters.</li>
+<li><strong>Default+Base data </strong>– Use this option for data where the local perception varies. For example, Chart of Accounts is customer-independent in Germany but is customer dependent in most other places.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -696,13 +695,13 @@ If the <strong>IsLookup</strong> property is set to <strong>No</strong>, the fol
 <td>You can use this property in the following ways:
 <ul>
 <li>Add table field data to a form caption.</li>
-<li>Show additional fields on a lookup page. The <strong>TitleField1</strong> property is also used when you activate the lookup list in a field on a page. The fields that you specify for the <strong>TitleField1</strong> and <strong>TitleField2</strong> properties can be merged with the key value.</li>
+<li>Show additional fields on a lookup page. The <strong>TitleField1</strong> property is also used when you activate the lookup list in a field on a page. The fields that you specify for the <strong>TitleField1</strong> and <strong>TitleField2</strong> properties can be merged with the key value.</li>
 <li>Show field information in a tooltip.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>TypicalRowCount</td>
-<td>Specify the number of records that typically appear in a table. If the <strong>AnalysisSelection</strong> property isn't set, this property determines how records are selected by using Report Builder for SSRS. The setting of this property affects whether a drop-down list, a list box, or a filtered list box is used to select table records.</td>
+<td>Specify the number of records that typically appear in a table. If the <strong>AnalysisSelection</strong> property isn&#39;t set, this property determines how records are selected by using Report Builder for SSRS. The setting of this property affects whether a drop-down list, a list box, or a filtered list box is used to select table records.</td>
 </tr>
 <tr class="even">
 <td>ValidTimeStateFieldType</td>
@@ -710,7 +709,7 @@ If the <strong>IsLookup</strong> property is set to <strong>No</strong>, the fol
 </tr>
 <tr class="odd">
 <td>Visible</td>
-<td>Specify the access rights when the table is used as a data source on a page or a report. If the table is used as a data source on a page, the access rights on the page can't exceed the access rights that are defined for the table.</td>
+<td>Specify the access rights when the table is used as a data source on a page or a report. If the table is used as a data source on a page, the access rights on the page can&#39;t exceed the access rights that are defined for the table.</td>
 </tr>
 </tbody>
 </table>
@@ -751,7 +750,7 @@ The following properties are related to report models that are used to add infor
 <tbody>
 <tr class="odd">
 <td>Adjustment</td>
-<td>Specify whether the string field should be left-aligned or right-aligned when it's stored in the database. For example, if the 11-character string &quot;hello world&quot; is stored in a right-aligned field that has a <strong>StringSize</strong> setting of <strong>40</strong>, 29 space characters are stored as the prefix. <strong>Note:</strong> The <strong>Adjustment</strong> setting affects the search results when you search for a value in a table by using the <strong>&gt;</strong>, <strong>&lt;</strong>, <strong>&gt;=</strong>, and <strong>&lt;=</strong> relational operators. It doesn't affect the search results when you use the <strong>==</strong> operator. The <strong>Adjustment</strong> setting is ignored when the <strong>StringSize</strong> property is set to <strong>(Memo)</strong>.</td>
+<td>Specify whether the string field should be left-aligned or right-aligned when it&#39;s stored in the database. For example, if the 11-character string &quot;hello world&quot; is stored in a right-aligned field that has a <strong>StringSize</strong> setting of <strong>40</strong>, 29 space characters are stored as the prefix. <strong>Note:</strong> The <strong>Adjustment</strong> setting affects the search results when you search for a value in a table by using the <strong>&gt;</strong>, <strong>&lt;</strong>, <strong>&gt;=</strong>, and <strong>&lt;=</strong> relational operators. It doesn&#39;t affect the search results when you use the <strong>==</strong> operator. The <strong>Adjustment</strong> setting is ignored when the <strong>StringSize</strong> property is set to <strong>(Memo)</strong>.</td>
 </tr>
 <tr class="even">
 <td>AliasFor</td>
@@ -767,34 +766,34 @@ The following properties are related to report models that are used to add infor
 </tr>
 <tr class="odd">
 <td>AnalysisDefaultTotal</td>
-<td>For report models, use this property to specify how field data is aggregated when an automatic total for the table is displayed in a report that is built by using SSRS and report models. The default value is <strong>No</strong>, which indicates that the field isn't automatically shown as a total. For OLAP cubes, use this property to specify the aggregate function for a measure. Use this property when the <strong>AnalysisUsage</strong> property is set to <strong>Measure</strong>. The following options are available:
+<td>For report models, use this property to specify how field data is aggregated when an automatic total for the table is displayed in a report that is built by using SSRS and report models. The default value is <strong>No</strong>, which indicates that the field isn&#39;t automatically shown as a total. For OLAP cubes, use this property to specify the aggregate function for a measure. Use this property when the <strong>AnalysisUsage</strong> property is set to <strong>Measure</strong>. The following options are available:
 <ul>
-<li><strong>Sum </strong>– Return the sum of all the values in a set.</li>
-<li><strong>Count </strong>– Return the number of non-null items in a set.</li>
-<li><strong>CountDistinct </strong>– Return the number of distinct non-null items in a set.</li>
-<li><strong>Min </strong>– Return the minimum value in a set.</li>
-<li><strong>Max </strong>– Return the maximum value in a set.</li>
-<li><strong>None </strong>– No aggregate function is applied.</li>
-<li><strong>Auto </strong>– This option applies to derived EDTs. The value of the <strong>AnalysisUsage</strong> property for the parent EDT is used.</li>
+<li><strong>Sum </strong>– Return the sum of all the values in a set.</li>
+<li><strong>Count </strong>– Return the number of non-null items in a set.</li>
+<li><strong>CountDistinct </strong>– Return the number of distinct non-null items in a set.</li>
+<li><strong>Min </strong>– Return the minimum value in a set.</li>
+<li><strong>Max </strong>– Return the maximum value in a set.</li>
+<li><strong>None </strong>– No aggregate function is applied.</li>
+<li><strong>Auto </strong>– This option applies to derived EDTs. The value of the <strong>AnalysisUsage</strong> property for the parent EDT is used.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>AnalysisLabel</td>
-<td>Specify the label to use as the caption in an SSAS cube for the table field. The label is applied to either a dimension attribute or a measure. This property is intended for situations where one of the following conditions is true:
+<td>Specify the label to use as the caption in an SSAS cube for the table field. The label is applied to either a dimension attribute or a measure. This property is intended for situations where one of the following conditions is true:
 <ul>
-<li>The <strong>Label</strong> property isn't defined.</li>
-<li>The <strong>Label</strong> property doesn't work as a caption for a dimension attribute or a measure in a SSAS cube.</li>
+<li>The <strong>Label</strong> property isn&#39;t defined.</li>
+<li>The <strong>Label</strong> property doesn&#39;t work as a caption for a dimension attribute or a measure in a SSAS cube.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>AnalysisUsage</td>
 <td>Specify the role of the field in a cube. The following options are available
 <ul>
-<li><strong>Attribute </strong>– The field is a dimension attribute.</li>
-<li><strong>Measure </strong>– The field is a measure.</li>
-<li><strong>Both </strong>– The field is both a dimension attribute and a measure.</li>
-<li><strong>None </strong>– The field is neither a dimension attribute nor a measure.</li>
-<li><strong>Auto </strong>– The value of the <strong>AnalysisUsage</strong> property for the EDT or enumeration that the field is based on should be used.</li>
+<li><strong>Attribute </strong>– The field is a dimension attribute.</li>
+<li><strong>Measure </strong>– The field is a measure.</li>
+<li><strong>Both </strong>– The field is both a dimension attribute and a measure.</li>
+<li><strong>None </strong>– The field is neither a dimension attribute nor a measure.</li>
+<li><strong>Auto </strong>– The value of the <strong>AnalysisUsage</strong> property for the EDT or enumeration that the field is based on should be used.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -803,11 +802,11 @@ The following properties are related to report models that are used to add infor
 </tr>
 <tr class="odd">
 <td>CountryRegionCodes</td>
-<td>Specify the codes for the countries/regions where the table field is applicable or valid. This property is implemented as a comma-separated list of ISO country codes in a single string. The values must match data in the global address book. The client framework and application might use this property to enable or disable country/region-specific features.</td>
+<td>Specify the codes for the countries/regions where the table field is applicable or valid. This property is implemented as a comma-separated list of ISO country codes in a single string. The values must match data in the global address book. The client framework and application might use this property to enable or disable country/region-specific features.</td>
 </tr>
 <tr class="even">
 <td>CountryRegionContextField</td>
-<td>Specify the field that is used to identify the country/region context. See the description of the <strong>CountryRegionCodes</strong> property.</td>
+<td>Specify the field that is used to identify the country/region context. See the description of the <strong>CountryRegionCodes</strong> property.</td>
 </tr>
 <tr class="odd">
 <td>ExtendedDataType</td>
@@ -815,7 +814,7 @@ The following properties are related to report models that are used to add infor
 </tr>
 <tr class="even">
 <td>GroupPrompt</td>
-<td>Specify a label that is used for the field when it appears in a group. <strong>Tip:</strong> You can use this property to help guarantee that a field label doesn't repeat text that appears in the label for a field group. For example, if a field group on a page is labeled <strong>Customer</strong>, don't include this text in the <strong>GroupPrompt</strong> property for fields that are included in the field group.</td>
+<td>Specify a label that is used for the field when it appears in a group. <strong>Tip:</strong> You can use this property to help guarantee that a field label doesn&#39;t repeat text that appears in the label for a field group. For example, if a field group on a page is labeled <strong>Customer</strong>, don&#39;t include this text in the <strong>GroupPrompt</strong> property for fields that are included in the field group.</td>
 </tr>
 <tr class="odd">
 <td>HelpText</td>
@@ -823,7 +822,7 @@ The following properties are related to report models that are used to add infor
 </tr>
 <tr class="even">
 <td>ID</td>
-<td>The system-generated field ID.</td>
+<td>The system-generated field ID.</td>
 </tr>
 <tr class="odd">
 <td>IgnoreEDTRelation</td>
@@ -835,21 +834,21 @@ The following properties are related to report models that are used to add infor
 </tr>
 <tr class="odd">
 <td>Mandatory</td>
-<td>Specify whether a user must add data to a field on a page. Set this property to <strong>Yes</strong> to indicate that the default or initialization value for each data type isn't acceptable for persistence into the database. The following list shows some default values that can't be used for mandatory fields on a page:
+<td>Specify whether a user must add data to a field on a page. Set this property to <strong>Yes</strong> to indicate that the default or initialization value for each data type isn&#39;t acceptable for persistence into the database. The following list shows some default values that can&#39;t be used for mandatory fields on a page:
 <ul>
-<li>Empty isn't acceptable for a str (string) field.</li>
-<li>The minimum date-time isn't acceptable for date-time fields such as date and utcdatetime.</li>
-<li>A value of 0 (zero) isn't acceptable for numeric fields such as int, real, and enum.</li>
+<li>Empty isn&#39;t acceptable for a str (string) field.</li>
+<li>The minimum date-time isn&#39;t acceptable for date-time fields such as date and utcdatetime.</li>
+<li>A value of 0 (zero) isn&#39;t acceptable for numeric fields such as int, real, and enum.</li>
 </ul>
-Finance and Operations doesn't support the semantics for the <strong>null</strong> value that is standard in most SQL database products. Field can't be nulled in the database. Therefore, the <strong>Mandatory</strong> property has nothing to do with the concept of a <strong>null</strong> value. <strong>Caution:</strong> A mandatory table field can have its <strong>EnumType</strong> property set to an enumeration. You might define a field as an enum type that includes an item that has the integer value <strong>0</strong>. In this case, <strong>0</strong> isn't an item that's available for selection on the page. The forms system automatically calls the <strong>validateWrite</strong> method to enforce the setting of the <strong>Mandatory</strong> property. However, the <strong>Mandatory</strong> property has no effect on the behavior of direct X++ SQL that inserts or updates the value of a table field. In your direct X++ SQL, you can include calls to the <strong>validateWrite</strong> method on your table buffer variable. Your buffer variable inherits the method from the <strong>xRecord</strong> class.</td>
+Finance and Operations doesn&#39;t support the semantics for the <strong>null</strong> value that is standard in most SQL database products. Field can&#39;t be nulled in the database. Therefore, the <strong>Mandatory</strong> property has nothing to do with the concept of a <strong>null</strong> value. <strong>Caution:</strong> A mandatory table field can have its <strong>EnumType</strong> property set to an enumeration. You might define a field as an enum type that includes an item that has the integer value <strong>0</strong>. In this case, <strong>0</strong> isn&#39;t an item that&#39;s available for selection on the page. The forms system automatically calls the <strong>validateWrite</strong> method to enforce the setting of the <strong>Mandatory</strong> property. However, the <strong>Mandatory</strong> property has no effect on the behavior of direct X++ SQL that inserts or updates the value of a table field. In your direct X++ SQL, you can include calls to the <strong>validateWrite</strong> method on your table buffer variable. Your buffer variable inherits the method from the <strong>xRecord</strong> class.</td>
 </tr>
 <tr class="even">
 <td>MinReadAccess</td>
-<td>Specify the mode of the automatic authorization feature. Automatic authorization has two modes of operation: surrogate foreign key and lookup. If a table in a query is tagged for surrogate foreign key authorization, and the user doesn't have access to that table but hasn't been explicitly denied, view access is granted to the table. However, not all fields will be visible. The visibility is determined by the following rules:
+<td>Specify the mode of the automatic authorization feature. Automatic authorization has two modes of operation: surrogate foreign key and lookup. If a table in a query is tagged for surrogate foreign key authorization, and the user doesn&#39;t have access to that table but hasn&#39;t been explicitly denied, view access is granted to the table. However, not all fields will be visible. The visibility is determined by the following rules:
 <ul>
 <li>If <strong>MinReadAccess</strong> is set to <strong>No</strong>, no access is granted to the field.</li>
 <li>If <strong>MinReadAccess</strong> is set to <strong>Yes</strong>, view access is granted to the field.</li>
-<li>Otherwise, view access is granted if the field is part of the natural key automatic identification group, if it's a title field, or if it's a system field.</li>
+<li>Otherwise, view access is granted if the field is part of the natural key automatic identification group, if it&#39;s a title field, or if it&#39;s a system field.</li>
 </ul>
 If a table in a query is tagged for lookup authorization, access is determined by the following rules:
 <ul>
@@ -875,7 +874,7 @@ If a table in a query is tagged for lookup authorization, access is determined b
 </tr>
 <tr class="odd">
 <td>StringSize</td>
-<td>Set the field length, in the number of characters. The maximum field length depends on the database. A value of <strong>(Memo)</strong> indicates that the field length is unlimited.</td>
+<td>Set the field length, in the number of characters. The maximum field length depends on the database. A value of <strong>(Memo)</strong> indicates that the field length is unlimited.</td>
 </tr>
 <tr class="even">
 <td>Type</td>
@@ -893,16 +892,16 @@ The following table describes the properties that are available for indexes on t
 
 | Property              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AllowDuplicates       | If you set this property to **Yes**, the index can be non-unique. If you don't create at least one unique index, Finance and Operations creates a unique index by combining the first index and the RecId.                                                                                                                                                                                                                                                     |
+| AllowDuplicates       | If you set this property to **Yes**, the index can be non-unique. If you don't create at least one unique index, Finance and Operations creates a unique index by combining the first index and the RecId.                                                                                                                                                                                                                                                     |
 | AlternateKey          | Specify whether this index is part of an alternate key. The index field must have a unique value in every record.                                                                                                                                                                                                                                                                                                                                                   |
 | ConfigurationKey      | Set the configuration key. An index field that is disabled through a configuration key is automatically removed from the index.                                                                                                                                                                                                                                                                                                                                     |
 | Enabled               | You can use this property to disable the index.                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ID                    | The internal identifier of the object.                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Model                 | Specify the model that the table index is in. A model is a logical grouping of elements in a layer. Examples of elements include a table or class. An element can exist in exactly one model in a layer. The same element can exist in a customized version in a model that is in a higher layer.                                                                                                                                                                   |
 | Name                  | Specify the index name.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| UniqueAcrossCompanies | This property is for internal Microsoft use only. The available values are **Yes** and **No**. The default value is **No**. The value of this property is ignored when the **AllowDuplicates** property is set to **No**. However, when **AllowDuplicates** is set to **Yes**, a value of **Yes** for **UniqueAcrossCompanies** can improve the performance of some cross-company queries. The performance improvement is caused by changes to the caching of data. |
+| UniqueAcrossCompanies | This property is for internal Microsoft use only. The available values are **Yes** and **No**. The default value is **No**. The value of this property is ignored when the **AllowDuplicates** property is set to **No**. However, when **AllowDuplicates** is set to **Yes**, a value of **Yes** for **UniqueAcrossCompanies** can improve the performance of some cross-company queries. The performance improvement is caused by changes to the caching of data. |
 | ValidTimeStateKey     | Specify whether this index key is used to determine the valid time state relationship with the parent table. The default value is **No**. **Tip:** To enable this property, you must set the **AllowDuplicates** property to **No** and the **AlternateKey** property to **Yes**.                                                                                                                                                                                   |
-| ValidTimeStateMode    | Specify whether gaps are allowed between two date-effective records. The default value is **NoGap**. **Tip:** To enable this property, you must set the **AllowDuplicates** property to **No**, the **AlternateKey** property to **Yes**, and the **ValidTimeStateKey** property to **Yes**.                                                                                                                                                                        |
+| ValidTimeStateMode    | Specify whether gaps are allowed between two date-effective records. The default value is **NoGap**. **Tip:** To enable this property, you must set the **AllowDuplicates** property to **No**, the **AlternateKey** property to **Yes**, and the **ValidTimeStateKey** property to **Yes**.                                                                                                                                                                        |
 
 **Note:** Pages sort on the first index.
 
@@ -925,7 +924,7 @@ The following table describes the properties for a table relation in Application
 <tbody>
 <tr class="odd">
 <td>Cardinality</td>
-<td>The number of times that each primary key value from the referenced table must occur in the foreign key column of the current table. For example, the <strong>OneMore</strong> value means one or more, but not zero. This value indicates that every parent key value must occur in the child table's foreign key column at least one time. A relation node under a SalesLine table might use the <strong>OneMore</strong> value when the business rule requires that every record in the parent SalesTable table relate to at least one item that is being sold. Currently, Finance and Operations doesn't use the <strong>Cardinality</strong> property. However, future releases might use this property and the <strong>RelatedTableCardinality</strong> property.</td>
+<td>The number of times that each primary key value from the referenced table must occur in the foreign key column of the current table. For example, the <strong>OneMore</strong> value means one or more, but not zero. This value indicates that every parent key value must occur in the child table&#39;s foreign key column at least one time. A relation node under a SalesLine table might use the <strong>OneMore</strong> value when the business rule requires that every record in the parent SalesTable table relate to at least one item that is being sold. Currently, Finance and Operations doesn&#39;t use the <strong>Cardinality</strong> property. However, future releases might use this property and the <strong>RelatedTableCardinality</strong> property.</td>
 </tr>
 <tr class="even">
 <td>CreateNavigationPropertyMethods</td>
@@ -937,7 +936,7 @@ The following table describes the properties for a table relation in Application
 </tr>
 <tr class="even">
 <td>EntityRelationshipRole</td>
-<td>This property is used to clarify the semantics of a relationship that is defined on a table. A role name should be either a noun or a noun phrase. The role name should indicate the role of the associated table in relation to the associating object. Alternatively, the role name should be a short phrase that starts with a present-tense verb that indicates the role that the table plays in the relationship. Role names aren't required when the relationship is unambiguous.</td>
+<td>This property is used to clarify the semantics of a relationship that is defined on a table. A role name should be either a noun or a noun phrase. The role name should indicate the role of the associated table in relation to the associating object. Alternatively, the role name should be a short phrase that starts with a present-tense verb that indicates the role that the table plays in the relationship. Role names aren&#39;t required when the relationship is unambiguous.</td>
 </tr>
 <tr class="odd">
 <td>Model</td>
@@ -956,20 +955,20 @@ The following table describes the properties for a table relation in Application
 <td>Specify whether the foreign key field value in the current table can be <strong>null</strong> in some or all records of the current table. The following options are available:
 <ul>
 <li><strong>ZeroOne</strong> means zero or one. This value indicates that the foreign key field in a child record can be <strong>null</strong>.</li>
-<li><strong>ExactlyOne</strong> indicates that the foreign key field can't be <strong>null</strong> in any child record.</li>
+<li><strong>ExactlyOne</strong> indicates that the foreign key field can&#39;t be <strong>null</strong> in any child record.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>RelatedTableRole</td>
-<td>Enter a text value to describe the purpose of the referenced parent table in this relationship. When a table has only one relation that references a given parent table, you can use the name of the parent table. Sometimes, a table has more than one relation to a given referenced parent table. this case, the value of the <strong>RelatedTableRole</strong> property should describe the relation well enough to distinguish the relation's purpose from the other relation to the same parent table. The value of this property can be used as the value of the <strong>JoinRelation</strong> property of a data source relation under an Application Explorer query. In standard cases, this usage is recommended, because it reduces denormalization. This property interacts with the <strong>UseDefaultRoleNames</strong> property.</td>
+<td>Enter a text value to describe the purpose of the referenced parent table in this relationship. When a table has only one relation that references a given parent table, you can use the name of the parent table. Sometimes, a table has more than one relation to a given referenced parent table. this case, the value of the <strong>RelatedTableRole</strong> property should describe the relation well enough to distinguish the relation&#39;s purpose from the other relation to the same parent table. The value of this property can be used as the value of the <strong>JoinRelation</strong> property of a data source relation under an Application Explorer query. In standard cases, this usage is recommended, because it reduces denormalization. This property interacts with the <strong>UseDefaultRoleNames</strong> property.</td>
 </tr>
 <tr class="even">
 <td>RelationshipType</td>
-<td>Select a value that describes the subtle relationship between two tables. For example, the <strong>Composition</strong> value indicates that the child record can't meaningfully exist unless it's related to a specific parent record. The record for the fourth floor in the Floor table can't exist unless it references a record in the parent Building table. <strong>Note:</strong> The DeleteActions should be compatible with this property setting. For a Composition relationship, the DeleteActions should include delete cascade behavior. Currently, Finance and Operations doesn't use the <strong>RelationshipType</strong> property. However, a future release might use this property.</td>
+<td>Select a value that describes the subtle relationship between two tables. For example, the <strong>Composition</strong> value indicates that the child record can&#39;t meaningfully exist unless it&#39;s related to a specific parent record. The record for the fourth floor in the Floor table can&#39;t exist unless it references a record in the parent Building table. <strong>Note:</strong> The DeleteActions should be compatible with this property setting. For a Composition relationship, the DeleteActions should include delete cascade behavior. Currently, Finance and Operations doesn&#39;t use the <strong>RelationshipType</strong> property. However, a future release might use this property.</td>
 </tr>
 <tr class="odd">
 <td>Role</td>
-<td>Specify a name that describes the meaning or role of the relation. For example, one relation to a Department table could track the department that the employee currently belongs to. Another relation could track the department that the employee has requested a transfer to. Although both these relations are relations to the Department table, they fill different roles. As the value of this property, it's a good idea to join the names of the child table and parent table by using an underscore (_) character. For example, enter <strong>SalesTable_SalesLine</strong>. This property interacts with the <strong>UseDefaultRoleNames</strong> property.</td>
+<td>Specify a name that describes the meaning or role of the relation. For example, one relation to a Department table could track the department that the employee currently belongs to. Another relation could track the department that the employee has requested a transfer to. Although both these relations are relations to the Department table, they fill different roles. As the value of this property, it&#39;s a good idea to join the names of the child table and parent table by using an underscore (_) character. For example, enter <strong>SalesTable_SalesLine</strong>. This property interacts with the <strong>UseDefaultRoleNames</strong> property.</td>
 </tr>
 <tr class="even">
 <td>Table</td>
@@ -977,11 +976,11 @@ The following table describes the properties for a table relation in Application
 </tr>
 <tr class="odd">
 <td>UseDefaultRoleNames</td>
-<td>A value of <strong>Yes</strong> indicates that the system must generate default values for the <strong>Role</strong> and <strong>RelatedTableRole</strong> properties. Even when this property is set to <strong>Yes</strong>, the values for that are generated for <strong>Role</strong> and <strong>RelatedTableRole</strong> don't appear in the <strong>Properties</strong> window. Additionally, the <strong>TreeNode</strong> class doesn't use the generate values. However, the <strong>DictRelation</strong> reflection class does use the generated values.</td>
+<td>A value of <strong>Yes</strong> indicates that the system must generate default values for the <strong>Role</strong> and <strong>RelatedTableRole</strong> properties. Even when this property is set to <strong>Yes</strong>, the values for that are generated for <strong>Role</strong> and <strong>RelatedTableRole</strong> don&#39;t appear in the <strong>Properties</strong> window. Additionally, the <strong>TreeNode</strong> class doesn&#39;t use the generate values. However, the <strong>DictRelation</strong> reflection class does use the generated values.</td>
 </tr>
 <tr class="even">
 <td>Validate</td>
-<td>A value of <strong>Yes</strong> indicates that when a page inserts a record into the child table, the insertion is rejected unless the related record exists in the referenced parent table. Additionally, when a page deletes a record from the parent table, the deletion is either rejected or cascades to the related records in the child table. Set the value to <strong>No</strong> when the <strong>RelationshipType</strong> property is set to <strong>Link</strong>. You might also set the value to <strong>No</strong> in special temporary cases, such as during some upgrade scenarios. When the value is set back to <strong>Yes</strong>, no validation occurs for records that were inserted or deleted while the value was <strong>No</strong>. <strong>Caution:</strong> A value of <strong>Yes</strong> for the <strong>Validate</strong> property doesn't prevent direct X++ SQL data operations from deleting parent records or inserting child records that violate the integrity of foreign key data.</td>
+<td>A value of <strong>Yes</strong> indicates that when a page inserts a record into the child table, the insertion is rejected unless the related record exists in the referenced parent table. Additionally, when a page deletes a record from the parent table, the deletion is either rejected or cascades to the related records in the child table. Set the value to <strong>No</strong> when the <strong>RelationshipType</strong> property is set to <strong>Link</strong>. You might also set the value to <strong>No</strong> in special temporary cases, such as during some upgrade scenarios. When the value is set back to <strong>Yes</strong>, no validation occurs for records that were inserted or deleted while the value was <strong>No</strong>. <strong>Caution:</strong> A value of <strong>Yes</strong> for the <strong>Validate</strong> property doesn&#39;t prevent direct X++ SQL data operations from deleting parent records or inserting child records that violate the integrity of foreign key data.</td>
 </tr>
 </tbody>
 </table>
@@ -990,11 +989,11 @@ The following table describes the properties for a table relation in Application
 
 ### RelatedTableRole and query JoinRelation
 
-This section describes how you can use the **RelatedTableRole** property to simplify the creation of a new query. If you enter an explicit value for the **RelatedTableRole** property on a table relation, you can use that value to populate the **JoinRelation** property on a data source relation under a **Queries** &gt; **MyQuery** node in Application Explorer. You can use this method to specify the fields of the join in one location. If the join fields ever change, you must update the join in only one location. Before you can set a value for the **JoinRelation** property, you must delete the values of the **Field** and **RelatedField** properties.
+This section describes how you can use the **RelatedTableRole** property to simplify the creation of a new query. If you enter an explicit value for the **RelatedTableRole** property on a table relation, you can use that value to populate the **JoinRelation** property on a data source relation under a **Queries** &gt; **MyQuery** node in Application Explorer. You can use this method to specify the fields of the join in one location. If the join fields ever change, you must update the join in only one location. Before you can set a value for the **JoinRelation** property, you must delete the values of the **Field** and **RelatedField** properties.
 
 ### CreateNavigationPropertyMethods and RelatedTableRole
 
-When you set the **CreateNavigationPropertyMethods** property to **Yes** on a table relation, the system generates navigation methods for the table buffer class. A navigation method links two table buffer instances by using their foreign key relationship. The **UnitOfWork** class is one area where this navigation linkage is used. The name of a navigation method is copied from the value of the **RelatedTableRole** property on the table relation. This behavior is used when the **RelatedTableRole** value is explicitly set in the **Properties** window, and when the system generates the **RelatedTableRole** value because the **UseDefaultRoleNames** property is set to **Yes**. The property values generate the following navigation method on the child CustTable buffer. Most directly, the navigation method name is copied from the value of the **RelatedTableRole** property.
+When you set the **CreateNavigationPropertyMethods** property to **Yes** on a table relation, the system generates navigation methods for the table buffer class. A navigation method links two table buffer instances by using their foreign key relationship. The **UnitOfWork** class is one area where this navigation linkage is used. The name of a navigation method is copied from the value of the **RelatedTableRole** property on the table relation. This behavior is used when the **RelatedTableRole** value is explicitly set in the **Properties** window, and when the system generates the **RelatedTableRole** value because the **UseDefaultRoleNames** property is set to **Yes**. The property values generate the following navigation method on the child CustTable buffer. Most directly, the navigation method name is copied from the value of the **RelatedTableRole** property.
 
     public final CustBankAccount BankAccounts([CustBankAccount relatedTable])
 
@@ -1002,13 +1001,13 @@ When you set the **CreateNavigationPropertyMethods** property to **Yes** on a ta
 
 The following list describes cases where you must override the name that the system generates for a navigation method on a table buffer class:
 
--   The table class already has a method name that matches the values of the **RelatedTableRole** property.
+-   The table class already has a method name that matches the values of the **RelatedTableRole** property.
 -   The value of the **RelatedTableRole** property exceeds the maximum length that can be used for a method name.
 
 In these cases, you must choose a valid name for the navigation method and assign that name as the value of the **NavigationPropertyMethodNameOverride** property on the table relation.
 
 ## Understanding the RelationshipType enumeration
-When you add a node under table relations, you can set the value of the **RelationshipType** property for the new relation. The list of possible values for the **RelationshipType** property is the list of elements in the **RelationshipType** enumeration. This section describes the meaning of each element in the **RelationshipType** enumeration.
+When you add a node under table relations, you can set the value of the **RelationshipType** property for the new relation. The list of possible values for the **RelationshipType** property is the list of elements in the **RelationshipType** enumeration. This section describes the meaning of each element in the **RelationshipType** enumeration.
 
 ### Description of elements
 
@@ -1053,7 +1052,7 @@ For example, if the criteria for both Composition and Aggregation are met, the s
 </tr>
 <tr class="even">
 <td>Composition</td>
-<td>This element is a stronger type of Aggregation relation. A table must not have more than one Composition relation. For example, a building is composed of rooms, and a given room can't exist in more than one building.</td>
+<td>This element is a stronger type of Aggregation relation. A table must not have more than one Composition relation. For example, a building is composed of rooms, and a given room can&#39;t exist in more than one building.</td>
 <td>If the criteria for Composition are met, but you manually assign a value of <strong>Aggregation</strong> or <strong>Association</strong>, the system leaves the value as <strong>Aggregation</strong> or <strong>Association</strong>.</td>
 </tr>
 <tr class="odd">
@@ -1069,13 +1068,13 @@ If the criteria for Aggregation are met, but you manually assign a value of <str
 <tr class="even">
 <td>Association</td>
 <td>This element is the concept of a standard foreign key.</td>
-<td>You must set the <strong>RelationshipType</strong> property to <strong>Association</strong> if the system doesn't set the value of the property to anything, and if both Aggregation and Composition are inappropriate.</td>
+<td>You must set the <strong>RelationshipType</strong> property to <strong>Association</strong> if the system doesn&#39;t set the value of the property to anything, and if both Aggregation and Composition are inappropriate.</td>
 </tr>
 </tbody>
 </table>
 
 ## View properties
-The properties for views are the same as the properties for tables. However, because views are read-only, most of their properties can't be changed. Some of these properties have fixed values, and some are inherited from the data sources that are used in the query that defines the view. The following properties for views are related to data analysis when you're using SSRS. All these properties can be changed.
+The properties for views are the same as the properties for tables. However, because views are read-only, most of their properties can't be changed. Some of these properties have fixed values, and some are inherited from the data sources that are used in the query that defines the view. The following properties for views are related to data analysis when you're using SSRS. All these properties can be changed.
 
 -   AnalysisVisibility
 -   AnalysisSelection
@@ -1123,7 +1122,7 @@ The following table describes the properties that can be set for a view.
 </tr>
 <tr class="odd">
 <td>DeveloperDocumentation</td>
-<td>Describe the purpose of a view, and explain how it's used in the program. Typically, a description contains no more than five sentences and is written as a single paragraph.</td>
+<td>Describe the purpose of a view, and explain how it&#39;s used in the program. Typically, a description contains no more than five sentences and is written as a single paragraph.</td>
 </tr>
 <tr class="even">
 <td>EntityRelationshipType</td>
@@ -1131,7 +1130,7 @@ The following table describes the properties that can be set for a view.
 </tr>
 <tr class="odd">
 <td>FormRef</td>
-<td>Specify the default page for the view. The default page is the page that is shown when the user activates Jump to Main Table by using the shortcut menu for a field on a page. The page is referenced through a menu item of the <strong>Display</strong> type. If you leave this property blank, MorphX tries to activate a page that has the same name as the table that you're referring to.</td>
+<td>Specify the default page for the view. The default page is the page that is shown when the user activates Jump to Main Table by using the shortcut menu for a field on a page. The page is referenced through a menu item of the <strong>Display</strong> type. If you leave this property blank, MorphX tries to activate a page that has the same name as the table that you&#39;re referring to.</td>
 </tr>
 <tr class="even">
 <td>ID</td>
@@ -1155,11 +1154,11 @@ The following table describes the properties that can be set for a view.
 </tr>
 <tr class="odd">
 <td>PreviewPartRef</td>
-<td>Specify the info part or form part to use in the enhanced preview. An info part shows a collection of data fields from a specified query. It uses metadata to describe how the data appears. A form part represents a pointer to a page.</td>
+<td>Specify the info part or form part to use in the enhanced preview. An info part shows a collection of data fields from a specified query. It uses metadata to describe how the data appears. A form part represents a pointer to a page.</td>
 </tr>
 <tr class="even">
 <td>PrimaryIndex</td>
-<td>Specify the primary index of the view. Only a unique index can be selected. This property is used for database optimization and to indicate which unique index should be used as the caching key. If you don't specify a primary index, the unique index that has the lowest ID is used as the caching key.</td>
+<td>Specify the primary index of the view. Only a unique index can be selected. This property is used for database optimization and to indicate which unique index should be used as the caching key. If you don&#39;t specify a primary index, the unique index that has the lowest ID is used as the caching key.</td>
 </tr>
 <tr class="odd">
 <td>Query</td>
@@ -1171,7 +1170,7 @@ The following table describes the properties that can be set for a view.
 </tr>
 <tr class="odd">
 <td>SaveDataPerCompany</td>
-<td>Set this property to <strong>Yes</strong> for company-specific tables. Set it to <strong>No</strong> if the data is related to cross-companies, installation, a database, Application Explorer, tracing, or OLAP. For example, the SysTraceTable or OLAPServerTable table specifies whether data should be saved for that table on a per-company basis, or whether the data should be available without any company affiliation. If the <strong>SaveDataPerCompany</strong> property on a table is set to <strong>Yes</strong>, that table has a <strong>DataAreaId</strong> column that contains the company identifier. If the table property is set to <strong>No</strong>, the <strong>DataAreaId</strong> column is removed from the table.</td>
+<td>Set this property to <strong>Yes</strong> for company-specific tables. Set it to <strong>No</strong> if the data is related to cross-companies, installation, a database, Application Explorer, tracing, or OLAP. For example, the SysTraceTable or OLAPServerTable table specifies whether data should be saved for that table on a per-company basis, or whether the data should be available without any company affiliation. If the <strong>SaveDataPerCompany</strong> property on a table is set to <strong>Yes</strong>, that table has a <strong>DataAreaId</strong> column that contains the company identifier. If the table property is set to <strong>No</strong>, the <strong>DataAreaId</strong> column is removed from the table.</td>
 </tr>
 <tr class="even">
 <td>SaveDataPerPartition</td>
@@ -1187,7 +1186,7 @@ The following table describes the properties that can be set for a view.
 </tr>
 <tr class="odd">
 <td>SystemTable</td>
-<td>A value that indicates whether a table is a system table. System tables can be filtered during export and import, and are always synchronized when you sign in. Therefore, this property might be useful for tables that you use as soon as you sign in.</td>
+<td>A value that indicates whether a table is a system table. System tables can be filtered during export and import, and are always synchronized when you sign in. Therefore, this property might be useful for tables that you use as soon as you sign in.</td>
 </tr>
 <tr class="even">
 <td>TableContents</td>
@@ -1201,7 +1200,7 @@ The following table describes the properties that can be set for a view.
 </tr>
 <tr class="odd">
 <td>TableGroup</td>
-<td>Specify the group that the view belongs to. Table groups categorize tables and views according to the type of data that they contain. Views can belong to the same table groups as a table.</td>
+<td>Specify the group that the view belongs to. Table groups categorize tables and views according to the type of data that they contain. Views can belong to the same table groups as a table.</td>
 </tr>
 <tr class="even">
 <td>TitleField1, TitleField2</td>
@@ -1214,7 +1213,7 @@ The following table describes the properties that can be set for a view.
 </tr>
 <tr class="odd">
 <td>ValidTimeStateEnabled</td>
-<td>Specify whether the view supports the valid time state feature of the underlying table. The default value is <strong>No</strong>. You can set this property to <strong>Yes</strong> only if both the following conditions are true:
+<td>Specify whether the view supports the valid time state feature of the underlying table. The default value is <strong>No</strong>. You can set this property to <strong>Yes</strong> only if both the following conditions are true:
 <ul>
 <li>The underlying table is a valid time state table.</li>
 <li>The view has <strong>ValidFrom</strong> and <strong>ValidTo</strong> in its <strong>Fields</strong> list.</li>
@@ -1222,7 +1221,7 @@ The following table describes the properties that can be set for a view.
 </tr>
 <tr class="even">
 <td>Visible</td>
-<td>Specify the access rights when the table is used as a data source on a page or a report. If the table is used as a data source on a page, the access rights on the page can't exceed the access rights that are defined for the table.</td>
+<td>Specify the access rights when the table is used as a data source on a page or a report. If the table is used as a data source on a page, the access rights on the page can&#39;t exceed the access rights that are defined for the table.</td>
 </tr>
 </tbody>
 </table>
@@ -1256,10 +1255,10 @@ The following table describes the properties for the **Data Sources** node of th
 <tbody>
 <tr class="odd">
 <td>ChangeGroupMode</td>
-<td>Specify how changes to the data sources are committed. The following options are available:
+<td>Specify how changes to the data sources are committed. The following options are available:
 <ul>
-<li><strong>None </strong>– The changes to any data source for the data set are committed independently of changes to the other data sources.</li>
-<li><strong>ImplicitInnerOuter </strong>– All the data sources that are inner-joined or outer-joined work as a single unit. All changes are committed successfully, or they are rolled back if an error occurs.</li>
+<li><strong>None </strong>– The changes to any data source for the data set are committed independently of changes to the other data sources.</li>
+<li><strong>ImplicitInnerOuter </strong>– All the data sources that are inner-joined or outer-joined work as a single unit. All changes are committed successfully, or they are rolled back if an error occurs.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -1284,10 +1283,10 @@ The following table describes the properties that are available for data set dat
 <td>AllowCheck</td>
 <td>Specify whether security checks occur before the data set is accessed. The following options are available:
 <ul>
-<li><strong>Yes </strong>– The user's read permissions are verified before the data set is accessed.</li>
-<li><strong>No </strong>– The user's read permissions are verified only after the data set is accessed. No data is retrieved if the user lacks sufficient permission for the underlying data sources.</li>
+<li><strong>Yes </strong>– The user&#39;s read permissions are verified before the data set is accessed.</li>
+<li><strong>No </strong>– The user&#39;s read permissions are verified only after the data set is accessed. No data is retrieved if the user lacks sufficient permission for the underlying data sources.</li>
 </ul>
-<strong>Yes</strong> is the default value and is usually recommended.</td>
+<strong>Yes</strong> is the default value and is usually recommended.</td>
 </tr>
 <tr class="even">
 <td>AllowCreate</td>
@@ -1303,19 +1302,19 @@ The following table describes the properties that are available for data set dat
 </tr>
 <tr class="odd">
 <td>AutoNotify</td>
-<td>This property isn't used for data sets.</td>
+<td>This property isn&#39;t used for data sets.</td>
 </tr>
 <tr class="even">
 <td>AutoQuery</td>
-<td>This property isn't used for data sets.</td>
+<td>This property isn&#39;t used for data sets.</td>
 </tr>
 <tr class="odd">
 <td>AutoSearch</td>
-<td>This property isn't used for data sets.</td>
+<td>This property isn&#39;t used for data sets.</td>
 </tr>
 <tr class="even">
 <td>CounterField</td>
-<td>Specify one of the fields in the data source as a counter for the data set. The field must be an index on the underlying table for the data source, and it must be of the <strong>real</strong> type. This property helps guarantee that a record that is inserted in a data set has a line number that corresponds to the actual sequential position in the data. For example, if a new line is inserted between lines 3 and 4, the new line becomes line number 3.5.</td>
+<td>Specify one of the fields in the data source as a counter for the data set. The field must be an index on the underlying table for the data source, and it must be of the <strong>real</strong> type. This property helps guarantee that a record that is inserted in a data set has a line number that corresponds to the actual sequential position in the data. For example, if a new line is inserted between lines 3 and 4, the new line becomes line number 3.5.</td>
 </tr>
 <tr class="odd">
 <td>CrossCompanyAutoQuery</td>
@@ -1323,16 +1322,16 @@ The following table describes the properties that are available for data set dat
 </tr>
 <tr class="even">
 <td>DelayActive</td>
-<td>Use this property to delay execution of the active method for the data source. If you set this property to <strong>Yes</strong>, the active method is activated only after a delay of 20 milliseconds. When a user scrolls through a data source, the active method isn't called on every record. Instead. it's called only on the final record that the user selects. <strong>Tip:</strong> The <strong>DelayActive </strong>property is particularly useful when two data sources are linked (that is, when the <strong>LinkType</strong> property is set to <strong>Delayed</strong>). This property is part of the AutoJoin system.</td>
+<td>Use this property to delay execution of the active method for the data source. If you set this property to <strong>Yes</strong>, the active method is activated only after a delay of 20 milliseconds. When a user scrolls through a data source, the active method isn&#39;t called on every record. Instead. it&#39;s called only on the final record that the user selects. <strong>Tip:</strong> The <strong>DelayActive </strong>property is particularly useful when two data sources are linked (that is, when the <strong>LinkType</strong> property is set to <strong>Delayed</strong>). This property is part of the AutoJoin system.</td>
 </tr>
 <tr class="odd">
 <td>Index</td>
-<td>Set the index that is used to specify a sorting order. You can choose any of the indexes on the table. If you specify an index in this manner, it's used as an index hint on each query to the database. The index specifies both an access path and a sort order for the records in the data set, based on this data source. The initial sort order for the records is prioritized in this manner:
+<td>Set the index that is used to specify a sorting order. You can choose any of the indexes on the table. If you specify an index in this manner, it&#39;s used as an index hint on each query to the database. The index specifies both an access path and a sort order for the records in the data set, based on this data source. The initial sort order for the records is prioritized in this manner:
 <ol>
 <li>If sort fields are added to the data source query, the sort specification is used.</li>
 <li>If an index is specified in the <strong>Index</strong> property on the data source, the sort order that is implicitly specified in that index is used.</li>
 <li>If the data source is autojoined with another data source, the system finds the most appropriate index for this join and then sorts the data according to that index.</li>
-<li>If nothing else is specified, the sort order that is implicitly specified in the first index (the index that has the lowest ID) on the table that is used in the page data source is used.</li>
+<li>If nothing else is specified, the sort order that is implicitly specified in the first index (the index that has the lowest ID) on the table that is used in the page data source is used.</li>
 </ol>
 When no index hints are specified, the database management system locates an applicable access path. This access path is based on the information in the query that is supplied. The user can change the sort order for a page by using the query dialog box.</td>
 </tr>
@@ -1350,7 +1349,7 @@ When no index hints are specified, the database management system locates an app
 </tr>
 <tr class="odd">
 <td>LinkType</td>
-<td>Use this property to maintain an active link between two data sources. When focus changes in the first data source, the corresponding record or records in the second data source are selected. For example, a customer table and a table of transactions is used for each customer. When the user scroll from one customer to the next, the transaction list is automatically updated to show transactions for the current customer. Set this property to <strong>Delayed</strong> for the outer (externally linked) data source. The linked data source is updated only after a delay of 100 milliseconds. This delay helps guarantee that the linked data source isn't updated while the user is scrolling through a data source. The update occurs only after the user finally focuses on a record. This property is part of the AutoJoin system.</td>
+<td>Use this property to maintain an active link between two data sources. When focus changes in the first data source, the corresponding record or records in the second data source are selected. For example, a customer table and a table of transactions is used for each customer. When the user scroll from one customer to the next, the transaction list is automatically updated to show transactions for the current customer. Set this property to <strong>Delayed</strong> for the outer (externally linked) data source. The linked data source is updated only after a delay of 100 milliseconds. This delay helps guarantee that the linked data source isn&#39;t updated while the user is scrolling through a data source. The update occurs only after the user finally focuses on a record. This property is part of the AutoJoin system.</td>
 </tr>
 <tr class="even">
 <td>Name</td>
@@ -1358,13 +1357,13 @@ When no index hints are specified, the database management system locates an app
 </tr>
 <tr class="odd">
 <td>OnlyFetchActive</td>
-<td>Specify whether to fetch all fields in the data source or only those fields that are used by the data set. When this property is set to <strong>Yes</strong>, records can't be deleted from the data set. This restriction helps preserve data integrity, because it helps guarantee that a delete operation is never tried on incomplete records.</td>
+<td>Specify whether to fetch all fields in the data source or only those fields that are used by the data set. When this property is set to <strong>Yes</strong>, records can&#39;t be deleted from the data set. This restriction helps preserve data integrity, because it helps guarantee that a delete operation is never tried on incomplete records.</td>
 </tr>
 <tr class="even">
 <td>OptionalRecordMode</td>
 <td>Specify the create and delete behavior for records on an outer-joined table. The following options are available:
 <ul>
-<li><strong>ImplicitCreate</strong> – When no record is saved in the database, create an outer-joined record and joined tables as soon as the parent record becomes active. If the outer-joined record or its children aren't changed, they will be deleted when the parent record is no longer active.</li>
+<li><strong>ImplicitCreate</strong> – When no record is saved in the database, create an outer-joined record and joined tables as soon as the parent record becomes active. If the outer-joined record or its children aren&#39;t changed, they will be deleted when the parent record is no longer active.</li>
 <li><strong>ExplicitCreate</strong> – When no record is saved in the database, treat this record as disabled until the user explicitly triggers creation by using the <strong>Optional Record</strong> check box. When the record exists, clearing the check box will delete this record.</li>
 <li><strong>None</strong> – No special create or delete behavior occurs for an outer-joined record.</li>
 </ul></td>
@@ -1385,9 +1384,9 @@ When no index hints are specified, the database management system locates an app
 <td>ValidTimeStateUpdate</td>
 <td>Specify the types of updates for an existing date-effective record. The following options are available:
 <ul>
-<li><strong>CreateNewTimePeriod </strong>– On the record that is becoming the previous record, the <strong>ValidTo</strong> date field is set to a date that is no later than the current date. In the same transaction, the new current record has its <strong>ValidFrom</strong> field set to immediately after <strong>ValidTo</strong> date of the previous record.</li>
-<li><strong>Correction </strong>– The <strong>ValidFrom</strong> or <strong>ValidTo</strong> value of existing rows must be modified to keep the date-effective data valid after the record set is updated.</li>
-<li><strong>EffectiveBased </strong>– Records in the past can't be edited. Records that are currently active are edited in a manner that resembles CreateNewTimePeriod mode. Future records are edited in a manner that resembles Correction mode.</li>
+<li><strong>CreateNewTimePeriod </strong>– On the record that is becoming the previous record, the <strong>ValidTo</strong> date field is set to a date that is no later than the current date. In the same transaction, the new current record has its <strong>ValidFrom</strong> field set to immediately after <strong>ValidTo</strong> date of the previous record.</li>
+<li><strong>Correction </strong>– The <strong>ValidFrom</strong> or <strong>ValidTo</strong> value of existing rows must be modified to keep the date-effective data valid after the record set is updated.</li>
+<li><strong>EffectiveBased </strong>– Records in the past can&#39;t be edited. Records that are currently active are edited in a manner that resembles CreateNewTimePeriod mode. Future records are edited in a manner that resembles Correction mode.</li>
 </ul>
 The default value is <strong>CreateNewTimePeriod</strong>.</td>
 </tr>
@@ -1395,10 +1394,10 @@ The default value is <strong>CreateNewTimePeriod</strong>.</td>
 </table>
 
 ## Form properties
-This section describes the properties that you set on forms in Application Explorer. To provide a uniform application interface, many properties have **Auto** values. You can create forms by using a drag-and-drop operation and then manually setting several properties. To specify the name of a form, you set the **Name** property in the **Properties** window for the form. All other properties on the top-level node for the form are system properties and are read-only.
+This section describes the properties that you set on forms in Application Explorer. To provide a uniform application interface, many properties have **Auto** values. You can create forms by using a drag-and-drop operation and then manually setting several properties. To specify the name of a form, you set the **Name** property in the **Properties** window for the form. All other properties on the top-level node for the form are system properties and are read-only.
 
 ## Form design properties
-Most properties on the **Design** node for a form also exist on the individual controls. Examples include the **Width** and **Height** properties. However, when you set a property on the **Design** node instead of setting it on a control, the setting affects the whole form. A few properties exist only on the **Design** node. The following table describes these properties.
+Most properties on the **Design** node for a form also exist on the individual controls. Examples include the **Width** and **Height** properties. However, when you set a property on the **Design** node instead of setting it on a control, the setting affects the whole form. A few properties exist only on the **Design** node. The following table describes these properties.
 
 <table>
 <colgroup>
@@ -1414,7 +1413,7 @@ Most properties on the **Design** node for a form also exist on the individual c
 <tbody>
 <tr class="odd">
 <td>AlignChild</td>
-<td>Specify whether a control within a group follows the <strong>AlignChildren</strong> property setting for the group or for the overall form design. For example, <strong>AlignChildren</strong> is set to <strong>Yes</strong> on the <strong>Design</strong> node for the form, but you don't want a particular group to be arranged together with the other groups. In this case, set <strong>AlignChild</strong> to <strong>No</strong> for that group.</td>
+<td>Specify whether a control within a group follows the <strong>AlignChildren</strong> property setting for the group or for the overall form design. For example, <strong>AlignChildren</strong> is set to <strong>Yes</strong> on the <strong>Design</strong> node for the form, but you don&#39;t want a particular group to be arranged together with the other groups. In this case, set <strong>AlignChild</strong> to <strong>No</strong> for that group.</td>
 </tr>
 <tr class="even">
 <td>AlignChildren</td>
@@ -1426,17 +1425,17 @@ Most properties on the **Design** node for a form also exist on the individual c
 </tr>
 <tr class="even">
 <td>AllowFormCompanyChange</td>
-<td>Specify whether the form supports company changes when it's used as a child form with a cross-company dynamic-link library (DLL). The default value is <strong>No</strong>.</td>
+<td>Specify whether the form supports company changes when it&#39;s used as a child form with a cross-company dynamic-link library (DLL). The default value is <strong>No</strong>.</td>
 </tr>
 <tr class="odd">
 <td>AllowUserSetUp</td>
 <td>Specify whether a user can move controls on a form and can change the value of control properties. This property is also found on the design of a form. The following options are available:
 <ul>
-<li><strong>No </strong>– Users can't customize any controls in this container.</li>
-<li><strong>Restricted </strong>– Users can change properties of individual controls, but they can't move controls.</li>
-<li><strong>Yes </strong>– There are no restrictions on the user setup.</li>
+<li><strong>No </strong>– Users can&#39;t customize any controls in this container.</li>
+<li><strong>Restricted </strong>– Users can change properties of individual controls, but they can&#39;t move controls.</li>
+<li><strong>Yes </strong>– There are no restrictions on the user setup.</li>
 </ul>
-The default value is <strong>Yes</strong>. <strong>Caution:</strong> Full user setup isn't allowed if any of the parent containers for the control have restrictions on the user setup level. The <strong>AllowAdd</strong> property on form data sources determines whether a user can add a field to a form.</td>
+The default value is <strong>Yes</strong>. <strong>Caution:</strong> Full user setup isn&#39;t allowed if any of the parent containers for the control have restrictions on the user setup level. The <strong>AllowAdd</strong> property on form data sources determines whether a user can add a field to a form.</td>
 </tr>
 <tr class="even">
 <td>AlwaysOnTop</td>
@@ -1460,7 +1459,7 @@ The default value is <strong>Startup</strong>.</td>
 </tr>
 <tr class="odd">
 <td>BackgroundColor</td>
-<td>Specify the color that is used for the background of the control. To make the background opaque or transparent, use the <strong>BackStyle</strong> property.</td>
+<td>Specify the color that is used for the background of the control. To make the background opaque or transparent, use the <strong>BackStyle</strong> property.</td>
 </tr>
 <tr class="even">
 <td>BottomMargin</td>
@@ -1484,11 +1483,11 @@ The default value is <strong>Startup</strong>.</td>
 </tr>
 <tr class="odd">
 <td>DataSource</td>
-<td>Specify the table that data in the control comes from. To set a particular field within the table, use the <strong>DataField</strong> property. If the control opens another form, relations between the data source for the control, as specified by this property, and the data source on the other form help guarantee that records in the second form are dynamically selected. For example, a customer is selected in one form, and the control opens a form that shows customer transactions. In this case, the second form shows a range of customer transactions that apply to the current customer. <strong>Caution:</strong> If you set the <strong>DataSource</strong> and <strong>DataField</strong> properties, their settings override any settings for the <strong>DataMethod</strong> or <strong>ExtendedDataType</strong> properties.</td>
+<td>Specify the table that data in the control comes from. To set a particular field within the table, use the <strong>DataField</strong> property. If the control opens another form, relations between the data source for the control, as specified by this property, and the data source on the other form help guarantee that records in the second form are dynamically selected. For example, a customer is selected in one form, and the control opens a form that shows customer transactions. In this case, the second form shows a range of customer transactions that apply to the current customer. <strong>Caution:</strong> If you set the <strong>DataSource</strong> and <strong>DataField</strong> properties, their settings override any settings for the <strong>DataMethod</strong> or <strong>ExtendedDataType</strong> properties.</td>
 </tr>
 <tr class="even">
 <td>Font</td>
-<td>Change the font properties for the control by using the <strong>Font</strong> dialog box. Use the dialog font to specify the font, font style, and font size.</td>
+<td>Change the font properties for the control by using the <strong>Font</strong> dialog box. Use the dialog font to specify the font, font style, and font size.</td>
 </tr>
 <tr class="odd">
 <td>Frame</td>
@@ -1500,7 +1499,7 @@ The default value is <strong>Startup</strong>.</td>
 </tr>
 <tr class="odd">
 <td>HideIfEmpty</td>
-<td>Use this property to hide a container control if it's empty. This property has no affect if the <strong>Width</strong> and <strong>Height</strong> properties of the container are set to <strong>Auto</strong>, because the size of the control is 0 (zero) in this case.</td>
+<td>Use this property to hide a container control if it&#39;s empty. This property has no affect if the <strong>Width</strong> and <strong>Height</strong> properties of the container are set to <strong>Auto</strong>, because the size of the control is 0 (zero) in this case.</td>
 </tr>
 <tr class="even">
 <td>HideToolBar</td>
@@ -1559,7 +1558,7 @@ The default value is <strong>Auto (left)</strong>.</td>
 </tr>
 <tr class="even">
 <td>Model</td>
-<td>Specify the model that the form is in. A model is a logical grouping of elements in a layer. An element can exist in exactly one model in a layer. The same element can exist in a customized version in a model that is in a higher layer.</td>
+<td>Specify the model that the form is in. A model is a logical grouping of elements in a layer. An element can exist in exactly one model in a layer. The same element can exist in a customized version in a model that is in a higher layer.</td>
 </tr>
 <tr class="odd">
 <td>RightMargin</td>
@@ -1626,15 +1625,15 @@ The default value is <strong>Auto</strong>.</td>
 <td>ViewEditMode</td>
 <td>Specify whether the form opens in read-only mode or as a form that allows you to change fields. The following options are available:
 <ul>
-<li><strong>View </strong>– Open the form as read-only.</li>
-<li><strong>Edit </strong>– Open the form in edit mode.</li>
-<li><strong>Auto </strong>– Open the form in the appropriate mode.</li>
+<li><strong>View </strong>– Open the form as read-only.</li>
+<li><strong>Edit </strong>– Open the form in edit mode.</li>
+<li><strong>Auto </strong>– Open the form in the appropriate mode.</li>
 </ul>
-The default value is <strong>Auto</strong>.</td>
+The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="even">
 <td>Visible</td>
-<td>Use this property to hide the form. <strong>Caution:</strong> You can't use the <strong>Visible</strong> property to enforce access restrictions. The user can change the visibility for the controls in the <strong>Form Setup</strong> dialog box. To enforce access restrictions, use the <strong>Enabled</strong> and <strong>NeededAccessLevel</strong> properties instead.</td>
+<td>Use this property to hide the form. <strong>Caution:</strong> You can&#39;t use the <strong>Visible</strong> property to enforce access restrictions. The user can change the visibility for the controls in the <strong>Form Setup</strong> dialog box. To enforce access restrictions, use the <strong>Enabled</strong> and <strong>NeededAccessLevel</strong> properties instead.</td>
 </tr>
 <tr class="odd">
 <td>Width</td>
@@ -1642,7 +1641,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="even">
 <td>WindowResize</td>
-<td>Specify whether the form can be resized.</td>
+<td>Specify whether the form can be resized.</td>
 </tr>
 <tr class="odd">
 <td>WindowType</td>
@@ -1650,7 +1649,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="even">
 <td>WorkflowDataSource</td>
-<td>Set the root data source for the workflow on a form. The root data source that you specify should be the same root data source that is specified in the query that used for the <strong>Document</strong> property on the workflow template.</td>
+<td>Set the root data source for the workflow on a form. The root data source that you specify should be the same root data source that is specified in the query that used for the <strong>Document</strong> property on the workflow template.</td>
 </tr>
 <tr class="odd">
 <td>WorkflowEnabled</td>
@@ -1670,7 +1669,7 @@ The default value is <strong>Auto</strong>.</td>
 </table>
 
 ## Help document set properties
-A document set is a collection of Help documentation that is associated with a workspace. When you publish a content element, you use metadata to add your content element or table of contents information to a document set. To manage the relationship between a workspace and a document set, Application Explorer includes a node that is named **Help Document Sets**. Each document set in the **Help Document Sets** node includes a collection of properties. You edit these properties when you add a new document set or change the relationship between a document set and a workspace. **Caution:** A workspace can be associated with only one document set. Although Application Explorer lets you add a new document set and associate it with a workspace, you will no longer see documentation from the document set that you replaced. Typically, you use **UserDocumentation** as the document set for any content element or table of contents entries that you publish to the Help server. The following table describes the properties for a document set in the **Help Document Sets** node of Application Explorer.
+A document set is a collection of Help documentation that is associated with a workspace. When you publish a content element, you use metadata to add your content element or table of contents information to a document set. To manage the relationship between a workspace and a document set, Application Explorer includes a node that is named **Help Document Sets**. Each document set in the **Help Document Sets** node includes a collection of properties. You edit these properties when you add a new document set or change the relationship between a document set and a workspace. **Caution:** A workspace can be associated with only one document set. Although Application Explorer lets you add a new document set and associate it with a workspace, you will no longer see documentation from the document set that you replaced. Typically, you use **UserDocumentation** as the document set for any content element or table of contents entries that you publish to the Help server. The following table describes the properties for a document set in the **Help Document Sets** node of Application Explorer.
 
 <table>
 <colgroup>
@@ -1709,12 +1708,12 @@ A document set is a collection of Help documentation that is associated with a 
 <tr class="odd">
 <td>UserDocumentSet</td>
 <td>Boolean</td>
-<td>Set this property to <strong>Yes</strong> to associate the document set with the application workspace. If you set this property to <strong>No</strong>, you can't view the context-sensitive (F1) Help that was published by Microsoft.</td>
+<td>Set this property to <strong>Yes</strong> to associate the document set with the application workspace. If you set this property to <strong>No</strong>, you can&#39;t view the context-sensitive (F1) Help that was published by Microsoft.</td>
 </tr>
 <tr class="even">
 <td>DeveloperDocumentSet</td>
 <td>Boolean</td>
-<td>Set this property to <strong>Yes</strong> to associate the document set with the development workspace. If you set this property to <strong>No</strong>, you can't view the context-sensitive (F1) Help that was published by Microsoft.</td>
+<td>Set this property to <strong>Yes</strong> to associate the document set with the development workspace. If you set this property to <strong>No</strong>, you can&#39;t view the context-sensitive (F1) Help that was published by Microsoft.</td>
 </tr>
 <tr class="odd">
 <td>ContentLocation</td>
@@ -1770,15 +1769,15 @@ The following table describes the properties that are available for menus under 
 </tr>
 <tr class="odd">
 <td>DisabledImage</td>
-<td>Specify the button image that is used when the menu is disabled. If this property isn't set, the system uses the setting of the <strong>NormalImage</strong> property to generate an image.</td>
+<td>Specify the button image that is used when the menu is disabled. If this property isn&#39;t set, the system uses the setting of the <strong>NormalImage</strong> property to generate an image.</td>
 </tr>
 <tr class="even">
 <td>DisabledImageLocation</td>
-<td>Specify the location of the image that is used for a disabled control. You can use images from a file, the <strong>Resources</strong> node in Application Explorer, or an embedded resource. The value that you select for this property determines the values that are available for the <strong>DisabledImage</strong> property. If the property isn't set, the system uses the setting of the <strong>ImageLocation</strong> property to generate an image.</td>
+<td>Specify the location of the image that is used for a disabled control. You can use images from a file, the <strong>Resources</strong> node in Application Explorer, or an embedded resource. The value that you select for this property determines the values that are available for the <strong>DisabledImage</strong> property. If the property isn&#39;t set, the system uses the setting of the <strong>ImageLocation</strong> property to generate an image.</td>
 </tr>
 <tr class="odd">
 <td>ImageLocation</td>
-<td>Specify the location of the image that is used. You can use images from a file, the <strong>Resources</strong> node in Application Explorer, or an embedded resource. The value that you select for this property determines the values that are available for the <strong>NormalImage</strong> property.</td>
+<td>Specify the location of the image that is used. You can use images from a file, the <strong>Resources</strong> node in Application Explorer, or an embedded resource. The value that you select for this property determines the values that are available for the <strong>NormalImage</strong> property.</td>
 </tr>
 <tr class="even">
 <td>Label</td>
@@ -1800,7 +1799,7 @@ The value that you set for this property determines the list of menu item names 
 </tr>
 <tr class="odd">
 <td>Model</td>
-<td>Specify the model that the menu is in. A model is a logical grouping of elements in a layer. Examples of elements include a table or class. An element can be located in exactly one model in a layer. The same element can be located in a customized version in a model that is in a higher layer.</td>
+<td>Specify the model that the menu is in. A model is a logical grouping of elements in a layer. Examples of elements include a table or class. An element can be located in exactly one model in a layer. The same element can be located in a customized version in a model that is in a higher layer.</td>
 </tr>
 <tr class="even">
 <td>NormalImage</td>
@@ -1822,8 +1821,8 @@ The value that you set for this property determines the list of menu item names 
 <td>ShowParentModule</td>
 <td>Specify whether to update the navigation pane, based on the parent module of the menu item. The following options are available:
 <ul>
-<li><strong>Yes </strong>– Always update the navigation pane, based on the parent module of the menu item.</li>
-<li><strong>No </strong>– Leave the navigation pane unchanged, even if the parent module of the menu item differs from the current module.</li>
+<li><strong>Yes </strong>– Always update the navigation pane, based on the parent module of the menu item.</li>
+<li><strong>No </strong>– Leave the navigation pane unchanged, even if the parent module of the menu item differs from the current module.</li>
 </ul>
 The default value is <strong>Yes</strong>.</td>
 </tr>
@@ -1857,8 +1856,8 @@ The following properties are available for all menu items (display, output, and 
 <td>CorrectPermissions</td>
 <td>Specify whether correct permission should be available for selection when privileges are assigned to the menu item. The following options are available:
 <ul>
-<li><strong>Auto </strong>– The permission will be available for selection as a privilege on this menu item's <strong>Privileges</strong> node under the <strong>Entry Points</strong> node.</li>
-<li><strong>No </strong>– The permission won't be available for selection as a privilege on the menu item.</li>
+<li><strong>Auto </strong>– The permission will be available for selection as a privilege on this menu item&#39;s <strong>Privileges</strong> node under the <strong>Entry Points</strong> node.</li>
+<li><strong>No </strong>– The permission won&#39;t be available for selection as a privilege on the menu item.</li>
 </ul>
 The default value is <strong>Auto</strong>.</td>
 </tr>
@@ -1874,8 +1873,8 @@ The default value is <strong>Auto</strong>.</td>
 <td>CreatePermissions</td>
 <td>Specify whether create permission should be available for selection when privileges are assigned to the menu item. The following options are available:
 <ul>
-<li><strong>Auto </strong>– The permission will be available for selection as a privilege on this menu item's <strong>Privileges</strong> node under the <strong>Entry Points</strong> node.</li>
-<li><strong>No </strong>– The permission won't be available for selection as a privilege on the menu item.</li>
+<li><strong>Auto </strong>– The permission will be available for selection as a privilege on this menu item&#39;s <strong>Privileges</strong> node under the <strong>Entry Points</strong> node.</li>
+<li><strong>No </strong>– The permission won&#39;t be available for selection as a privilege on the menu item.</li>
 </ul>
 The default value is <strong>Auto</strong>.</td>
 </tr>
@@ -1883,22 +1882,22 @@ The default value is <strong>Auto</strong>.</td>
 <td>DeletePermissions</td>
 <td>Specify whether delete permission should be available for selection when privileges are assigned to the menu item. The following options are available:
 <ul>
-<li><strong>Auto </strong>– The permission will be available for selection as a privilege on this menu item's <strong>Privileges</strong> node under the <strong>Entry Points</strong> node.</li>
-<li><strong>No </strong>– The permission won't be available for selection as a privilege on the menu item.</li>
+<li><strong>Auto </strong>– The permission will be available for selection as a privilege on this menu item&#39;s <strong>Privileges</strong> node under the <strong>Entry Points</strong> node.</li>
+<li><strong>No </strong>– The permission won&#39;t be available for selection as a privilege on the menu item.</li>
 </ul>
 The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="even">
 <td>DisabledImage</td>
-<td>Specify the image that is used when the menu item is disabled. If this property isn't set, the system uses the setting of the <strong>NormalImage</strong> property to generate an image.</td>
+<td>Specify the image that is used when the menu item is disabled. If this property isn&#39;t set, the system uses the setting of the <strong>NormalImage</strong> property to generate an image.</td>
 </tr>
 <tr class="odd">
 <td>DisabledImageLocation</td>
-<td>Specify the location of the image that is used for a disabled control. You can use images from a file, the <strong>Resources</strong> node in Application Explorer, or an embedded resource. The value that you select for this property determines the values that are available for the <strong>DisabledImage</strong> property. If the property isn't set, the system uses the setting of the <strong>ImageLocation</strong> property to generate an image.</td>
+<td>Specify the location of the image that is used for a disabled control. You can use images from a file, the <strong>Resources</strong> node in Application Explorer, or an embedded resource. The value that you select for this property determines the values that are available for the <strong>DisabledImage</strong> property. If the property isn&#39;t set, the system uses the setting of the <strong>ImageLocation</strong> property to generate an image.</td>
 </tr>
 <tr class="even">
 <td>EnumTypeParameter and EnumParameter</td>
-<td>Optional: Select an enumerated type as a parameter for the object, and then select an enumeration value as the value of the <strong>EnumParameter</strong> property. Typically, these properties are used when one form is used in several situations. You can change the behavior of the form, depending on the <strong>EnumParameter</strong> value. For example, the <strong>PriceDiscGroup</strong> form is used by three display menu items (<strong>PriceDiscGroup_*</strong>), each of which has a different <strong>EnumParameter</strong> value. In the form's <strong>init</strong> method, a switch construct validates the value, and then the form is created.</td>
+<td>Optional: Select an enumerated type as a parameter for the object, and then select an enumeration value as the value of the <strong>EnumParameter</strong> property. Typically, these properties are used when one form is used in several situations. You can change the behavior of the form, depending on the <strong>EnumParameter</strong> value. For example, the <strong>PriceDiscGroup</strong> form is used by three display menu items (<strong>PriceDiscGroup_*</strong>), each of which has a different <strong>EnumParameter</strong> value. In the form&#39;s <strong>init</strong> method, a switch construct validates the value, and then the form is created.</td>
 </tr>
 <tr class="odd">
 <td>ExtendedDataSecurity</td>
@@ -1916,19 +1915,19 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>HelpText</td>
-<td>Create a Help string for the menu item. The text appears on the status bar when you select the object that is opened by the menu item (for example, a form). <strong>Note:</strong> To write a Help topic for the menu item, in Application Explorer, in the <strong>Application Documentation/Menu Items</strong> node, find the topic that has the same name as your menu item. This topic will then be shown instead of any Help topic that was written about the object that is opened by the menu item.</td>
+<td>Create a Help string for the menu item. The text appears on the status bar when you select the object that is opened by the menu item (for example, a form). <strong>Note:</strong> To write a Help topic for the menu item, in Application Explorer, in the <strong>Application Documentation/Menu Items</strong> node, find the topic that has the same name as your menu item. This topic will then be shown instead of any Help topic that was written about the object that is opened by the menu item.</td>
 </tr>
 <tr class="even">
 <td>ImageLocation</td>
-<td>Specify the location of the image that is used for a control. You can use images from a file, the <strong>Resources</strong> node in Application Explorer, or an embedded resource. The value that you select for this property determines the values that are available for the <strong>NormalImage</strong> property.</td>
+<td>Specify the location of the image that is used for a control. You can use images from a file, the <strong>Resources</strong> node in Application Explorer, or an embedded resource. The value that you select for this property determines the values that are available for the <strong>NormalImage</strong> property.</td>
 </tr>
 <tr class="odd">
 <td>Label</td>
-<td>Select the label to use as the name that appears for the item on menus and buttons.</td>
+<td>Select the label to use as the name that appears for the item on menus and buttons.</td>
 </tr>
 <tr class="even">
 <td>LinkedPermissionObject</td>
-<td>If the permissions of another object (for example, a form or report) should be applied to this menu item, select the object. Typically, this property is used for action menu items.</td>
+<td>If the permissions of another object (for example, a form or report) should be applied to this menu item, select the object. Typically, this property is used for action menu items.</td>
 </tr>
 <tr class="odd">
 <td>LinkedPermissionType</td>
@@ -1940,7 +1939,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Model</td>
-<td>Specify the model that the table is in. A model is a logical grouping of elements in a layer. Examples of elements include a table or class. An element can be located in exactly one model in a layer. The same element can be located in a customized version in a model that is in a higher layer.</td>
+<td>Specify the model that the table is in. A model is a logical grouping of elements in a layer. Examples of elements include a table or class. An element can be located in exactly one model in a layer. The same element can be located in a customized version in a model that is in a higher layer.</td>
 </tr>
 <tr class="even">
 <td>Name</td>
@@ -1948,7 +1947,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>NeededAccessLevel</td>
-<td>Define the minimum access that is required for the menu item to appear on a menu or a button. This property is used to set access to the menu item for different user groups.</td>
+<td>Define the minimum access that is required for the menu item to appear on a menu or a button. This property is used to set access to the menu item for different user groups.</td>
 </tr>
 <tr class="even">
 <td>NeedsRecord</td>
@@ -1960,15 +1959,15 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="even">
 <td>Object</td>
-<td>Select an object of the object type that is specified in the <strong>Class</strong> property.</td>
+<td>Select an object of the object type that is specified in the <strong>Class</strong> property.</td>
 </tr>
 <tr class="odd">
 <td>ObjectType</td>
-<td>Select the type of object that the menu item opens. <strong>Caution:</strong> You should use <strong>SSRSReport</strong> for a menu item for an SSRS report. Don't use <strong>SQLReportLibraryReport</strong> for new menu items. The <strong>SQLReportLibraryReport</strong> option is obsolete and will be removed in a future version.</td>
+<td>Select the type of object that the menu item opens. <strong>Caution:</strong> You should use <strong>SSRSReport</strong> for a menu item for an SSRS report. Don&#39;t use <strong>SQLReportLibraryReport</strong> for new menu items. The <strong>SQLReportLibraryReport</strong> option is obsolete and will be removed in a future version.</td>
 </tr>
 <tr class="even">
 <td>OpenMode</td>
-<td>Specify the view mode of the target form. You use this property to specify whether the target form opens in edit mode or read-only mode. The following options are available:
+<td>Specify the view mode of the target form. You use this property to specify whether the target form opens in edit mode or read-only mode. The following options are available:
 <ul>
 <li>Auto</li>
 <li>View</li>
@@ -1989,8 +1988,8 @@ The default value is <strong>Auto</strong>.</td>
 <td>ReadPermissions</td>
 <td>Specify whether read permission should be available for section when privileges are assigned to the menu item. The following options are available:
 <ul>
-<li><strong>Auto </strong>– The permission will be available for selection as a privilege on this menu item's <strong>Privileges</strong> node under the <strong>Entry Points</strong> node.</li>
-<li><strong>No </strong>– The permission won't be available for selection as a privilege on the menu item.</li>
+<li><strong>Auto </strong>– The permission will be available for selection as a privilege on this menu item&#39;s <strong>Privileges</strong> node under the <strong>Entry Points</strong> node.</li>
+<li><strong>No </strong>– The permission won&#39;t be available for selection as a privilege on the menu item.</li>
 </ul>
 The default value is <strong>Auto</strong>.</td>
 </tr>
@@ -2000,25 +1999,25 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>RunOn</td>
-<td>Select whether to run the menu item on the client, the server, or the location that it's called from. This property is mainly used for menu items that open reports. This property determines where the application object is run from only if the <strong>RunOn</strong> property of the object is set to <strong>Called from</strong>.
+<td>Select whether to run the menu item on the client, the server, or the location that it&#39;s called from. This property is mainly used for menu items that open reports. This property determines where the application object is run from only if the <strong>RunOn</strong> property of the object is set to <strong>Called from</strong>.
 <ul>
 <li>A form is instantiated and run on the client, because the <strong>FormRun</strong> class always runs on the client.</li>
-<li>A report is instantiated and run as specified by the menu item's <strong>RunOn</strong> property, because the <strong>ReportRun</strong> class always runs where it was called from. You should set the property to <strong>Called from</strong>. If you set the report to run on the client, and the report is run in a batch, the report will fail. If you set the report to run on the server, and the report is shown on the screen, the report will fail.</li>
-<li>A class's <strong>main</strong> method is run as specified by its modifier. The class itself is instantiated as specified by its <strong>RunOn</strong> property. The instantiation might occur in the <strong>main</strong> method.</li>
+<li>A report is instantiated and run as specified by the menu item&#39;s <strong>RunOn</strong> property, because the <strong>ReportRun</strong> class always runs where it was called from. You should set the property to <strong>Called from</strong>. If you set the report to run on the client, and the report is run in a batch, the report will fail. If you set the report to run on the server, and the report is shown on the screen, the report will fail.</li>
+<li>A class&#39;s <strong>main</strong> method is run as specified by its modifier. The class itself is instantiated as specified by its <strong>RunOn</strong> property. The instantiation might occur in the <strong>main</strong> method.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>UpdatePermissions</td>
 <td>Specify whether update permission should be available for section when privileges are assigned to the menu item. The following options are available:
 <ul>
-<li><strong>Auto </strong>– The permission will be available for section as a privilege on this menu item's <strong>Privileges</strong> node under the <strong>Entry Points</strong> node.</li>
-<li><strong>No </strong>– The permission won't be available for section as a privilege on the menu item.</li>
+<li><strong>Auto </strong>– The permission will be available for section as a privilege on this menu item&#39;s <strong>Privileges</strong> node under the <strong>Entry Points</strong> node.</li>
+<li><strong>No </strong>– The permission won&#39;t be available for section as a privilege on the menu item.</li>
 </ul>
 The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Web</td>
-<td>Specify the URL that is opened when you run the menu item. The value of this property is no longer used. Don't use this property.</td>
+<td>Specify the URL that is opened when you run the menu item. The value of this property is no longer used. Don&#39;t use this property.</td>
 </tr>
 <tr class="even">
 <td>WebConfigurationKey</td>
@@ -2039,7 +2038,7 @@ The value that you select determines the web menu item names that are available 
 </tr>
 <tr class="odd">
 <td>WebPage</td>
-<td>Specify the webpage that is linked to the menu item. The value of this property is no longer used. Don't use this property.</td>
+<td>Specify the webpage that is linked to the menu item. The value of this property is no longer used. Don&#39;t use this property.</td>
 </tr>
 <tr class="even">
 <td>WebSecureTransaction</td>
@@ -2071,11 +2070,11 @@ Query properties determine the overall behavior of the query. For example, you c
 <tbody>
 <tr class="odd">
 <td>AllowCheck</td>
-<td>This property is ignored for queries. It's effective on forms and reports.</td>
+<td>This property is ignored for queries. It&#39;s effective on forms and reports.</td>
 </tr>
 <tr class="even">
 <td>AllowCrossCompany</td>
-<td>Specify whether data is retrieved for all companies that the user has authority to read from. If the property is set to <strong>false</strong>, which is the default value, data is retrieved only for the current session company.</td>
+<td>Specify whether data is retrieved for all companies that the user has authority to read from. If the property is set to <strong>false</strong>, which is the default value, data is retrieved only for the current session company.</td>
 </tr>
 <tr class="odd">
 <td>Description</td>
@@ -2091,11 +2090,11 @@ Query properties determine the overall behavior of the query. For example, you c
 </tr>
 <tr class="even">
 <td>Literals</td>
-<td>Specify how literals are represented in SQL statements. The <strong>forceLiterals</strong> option instructs the kernel to reveal the actual values that are used in <strong>where</strong> clauses to the Microsoft SQL Server database at the time of optimization. The <strong>forcePlaceholders</strong> option instructs the kernel not to reveal the actual values. <strong>Note:</strong> We don't recommend that you use the <strong>forceLiterals</strong> option, because it could expose code to an SQL injection security threat.</td>
+<td>Specify how literals are represented in SQL statements. The <strong>forceLiterals</strong> option instructs the kernel to reveal the actual values that are used in <strong>where</strong> clauses to the Microsoft SQL Server database at the time of optimization. The <strong>forcePlaceholders</strong> option instructs the kernel not to reveal the actual values. <strong>Note:</strong> We don&#39;t recommend that you use the <strong>forceLiterals</strong> option, because it could expose code to an SQL injection security threat.</td>
 </tr>
 <tr class="odd">
 <td>Model</td>
-<td>Specify the model that the query is in. A model is a logical grouping of elements in a layer. Examples of elements include a table or class. An element can exist in exactly one model in a layer. The same element can exist in a customized version in a model that is in a higher layer.</td>
+<td>Specify the model that the query is in. A model is a logical grouping of elements in a layer. Examples of elements include a table or class. An element can exist in exactly one model in a layer. The same element can exist in a customized version in a model that is in a higher layer.</td>
 </tr>
 <tr class="even">
 <td>QueryType</td>
@@ -2116,11 +2115,11 @@ The default value is <strong>Join</strong>.</td>
 </tr>
 <tr class="odd">
 <td>UserUpdate</td>
-<td>Specify whether the query form should retain its state when it's reopened. If you set this property to <strong>Yes</strong>, the previous settings are restored. If you set it to <strong>No</strong>, the data can be viewed but not edited.</td>
+<td>Specify whether the query form should retain its state when it&#39;s reopened. If you set this property to <strong>Yes</strong>, the previous settings are restored. If you set it to <strong>No</strong>, the data can be viewed but not edited.</td>
 </tr>
 <tr class="even">
 <td>Version</td>
-<td>The version is increased every time that the query is updated. This property is read-only.</td>
+<td>The version is increased every time that the query is updated. This property is read-only.</td>
 </tr>
 </tbody>
 </table>
@@ -2133,18 +2132,18 @@ The following properties control the characteristics of a data source. Additiona
 |---------------------|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AllowAdd            | Data source                          | Specify whether users can add fields to sorting and ranges at run time.                                                                                                                                                                                                                                                            |
 | Company             | Data source                          | Specify the company to retrieve data from.                                                                                                                                                                                                                                                                                         |
-| Dynamic             | Fields node in a data source         | Specify whether all fields in the table in the data source are used. If you set this property to **Yes**, all the fields in the data source are used. If you set it to **No**, you can remove some of the fields. When the data source is a base table, a value of **Yes** means that all fields from the derived tables are used. |
+| Dynamic             | Fields node in a data source         | Specify whether all fields in the table in the data source are used. If you set this property to **Yes**, all the fields in the data source are used. If you set it to **No**, you can remove some of the fields. When the data source is a base table, a value of **Yes** means that all fields from the derived tables are used. |
 | Enabled             | Data source                          | If you set this property to **No**, the data source (and all embedded data sources) are ignored.                                                                                                                                                                                                                                   |
 | FetchMode           | Embedded data source                 | Specify whether the data sources should be related through a 1:1 relation or a 1:n relation. **Note:** For data sources that are used on reports, use a join relation that uses 1:1 fetch mode.                                                                                                                                    |
 | Field, RelatedField | Relations on an embedded data source | The name of the fields from the parent data source and related data source that are used in the relation.                                                                                                                                                                                                                          |
-| FirstFast           | Data source                          | If you set this property to **Yes**, the database receives a hint that the first record from the query should be retrieved before the other records. This setting enables some database systems to optimize record retrieval and therefore helps improve performance.                                                              |
+| FirstFast           | Data source                          | If you set this property to **Yes**, the database receives a hint that the first record from the query should be retrieved before the other records. This setting enables some database systems to optimize record retrieval and therefore helps improve performance.                                                              |
 | FirstOnly           | Data source                          | If you set this property to **Yes**, the database receives a hint that only the first record from the query is required. This setting enables some database systems to optimize record retrieval and therefore helps improve performance.                                                                                          |
 | JoinMode            | Embedded data source                 | Specify the strategy that is used to join the output from a data source.                                                                                                                                                                                                                                                           |
 | Name                | Data source                          | Specify the name of the data source.                                                                                                                                                                                                                                                                                               |
 | Relations           | Embedded data source                 | Specify whether the query system should use the relations that are defined for tables and EDTs. If you set this property to **Yes**, the query is automatically updated if a relation is changed.                                                                                                                                  |
 | Table               | Data source                          | Specify the table, map, or view that is used as a data source. This property can't be modified after a sorting order or a range has been defined.                                                                                                                                                                                  |
 | Table, RelatedTable | Relations on an embedded data source | The name of the parent data source and the related data source.                                                                                                                                                                                                                                                                    |
-| UniqueId            | Data source                          | The unique number of the data source. This property is read-only.                                                                                                                                                                                                                                                                  |
+| UniqueId            | Data source                          | The unique number of the data source. This property is read-only.                                                                                                                                                                                                                                                                  |
 | Update              | Data source                          | Specify whether the query can update records in the database.                                                                                                                                                                                                                                                                      |
 
 ### Range properties
@@ -2177,16 +2176,16 @@ The following properties determine the characteristics of the range specificatio
 </tr>
 <tr class="even">
 <td>Status</td>
-<td>Specify whether users are allowed to modify the range in the query dialog box at run time. The following options are available:
+<td>Specify whether users are allowed to modify the range in the query dialog box at run time. The following options are available:
 <ul>
 <li><strong>Open</strong> – Users can view and edit the range.</li>
 <li><strong>Lock</strong> – Users can only view the range.</li>
-<li><strong>Hide</strong> – Users can't view or edit the range.</li>
+<li><strong>Hide</strong> – Users can&#39;t view or edit the range.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Value</td>
-<td>Specify the range for the records that are retrieved. If you use enumerations, don't use text strings. The enumeration ID must be used.</td>
+<td>Specify the range for the records that are retrieved. If you use enumerations, don&#39;t use text strings. The enumeration ID must be used.</td>
 </tr>
 </tbody>
 </table>
@@ -2226,11 +2225,11 @@ The following table describes report control properties. For information about a
 </tr>
 <tr class="odd">
 <td>ArrayIndex</td>
-<td>Specify the array element that is shown in a control. The control is based on an extended data type that has array elements. This property isn't available for text and shape controls.</td>
+<td>Specify the array element that is shown in a control. The control is based on an extended data type that has array elements. This property isn&#39;t available for text and shape controls.</td>
 </tr>
 <tr class="even">
 <td>AutoDeclaration</td>
-<td>Specify whether a variable is created that has the same name as the control. When you set this property to <strong>Yes</strong>, it's easier to access the report controls from X++ code, and you can find errors at compile time.</td>
+<td>Specify whether a variable is created that has the same name as the control. When you set this property to <strong>Yes</strong>, it&#39;s easier to access the report controls from X++ code, and you can find errors at compile time.</td>
 </tr>
 <tr class="odd">
 <td>AutoInsSeparator</td>
@@ -2286,11 +2285,11 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>DataField</td>
-<td>Specify a table field for the control. This property isn't available for text, shape, box, and bitmap controls.</td>
+<td>Specify a table field for the control. This property isn&#39;t available for text, shape, box, and bitmap controls.</td>
 </tr>
 <tr class="even">
 <td>DataMethod</td>
-<td>Specify a display method that shows data in a control. This property isn't available for text, shape, and box controls.</td>
+<td>Specify a display method that shows data in a control. This property isn&#39;t available for text, shape, and box controls.</td>
 </tr>
 <tr class="odd">
 <td>DateDay</td>
@@ -2334,11 +2333,11 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Font</td>
-<td>Specify the font.</td>
+<td>Specify the font.</td>
 </tr>
 <tr class="even">
 <td>FontSize</td>
-<td>Specify the font size.</td>
+<td>Specify the font size.</td>
 </tr>
 <tr class="odd">
 <td>ForegroundColor</td>
@@ -2358,15 +2357,15 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>ImageResource</td>
-<td>Specify the ID for a system resource to show. The resource macro provides a list of these IDs. Macros are located under the <strong>Macros</strong> node in Application Explorer. This property is available only for bitmap controls.</td>
+<td>Specify the ID for a system resource to show. The resource macro provides a list of these IDs. Macros are located under the <strong>Macros</strong> node in Application Explorer. This property is available only for bitmap controls.</td>
 </tr>
 <tr class="even">
 <td>Italic</td>
-<td>Specify italic text formatting.</td>
+<td>Specify italic text formatting.</td>
 </tr>
 <tr class="odd">
 <td>Label</td>
-<td>Specify a title for the control. If a label isn't specified here, it's inherited from the field.</td>
+<td>Specify a title for the control. If a label isn&#39;t specified here, it&#39;s inherited from the field.</td>
 </tr>
 <tr class="even">
 <td>LabelBold</td>
@@ -2378,7 +2377,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="even">
 <td>LabelFont</td>
-<td>Set or return a string data type value that indicates the font for the label text in a form combo box control.</td>
+<td>Set or return a string data type value that indicates the font for the label text in a form combo box control.</td>
 </tr>
 <tr class="odd">
 <td>LabelFontSize</td>
@@ -2432,7 +2431,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="even">
 <td>LineAbove</td>
-<td>Specify the type of line for the top border of a control. If your report has many lines or boxes, consider using a shape control inside the individual sections.</td>
+<td>Specify the type of line for the top border of a control. If your report has many lines or boxes, consider using a shape control inside the individual sections.</td>
 </tr>
 <tr class="odd">
 <td>LineBelow</td>
@@ -2460,7 +2459,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>MinNoOfDecimals</td>
-<td>Specify the minimum number of decimal places that are shown. Trailing zeros aren't shown.</td>
+<td>Specify the minimum number of decimal places that are shown. Trailing zeros aren&#39;t shown.</td>
 </tr>
 <tr class="even">
 <td>ModelFieldName</td>
@@ -2492,7 +2491,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>ShowZero</td>
-<td>Specify whether a 0 (zero) value is shown. This property is available only for integer and real controls.</td>
+<td>Specify whether a 0 (zero) value is shown. This property is available only for integer and real controls.</td>
 </tr>
 <tr class="even">
 <td>SignDisplay</td>
@@ -2512,7 +2511,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="even">
 <td>Table</td>
-<td>Specify a data source for the control. This property isn't available for text, shape, box, and bitmap controls.</td>
+<td>Specify a data source for the control. This property isn&#39;t available for text, shape, box, and bitmap controls.</td>
 </tr>
 <tr class="odd">
 <td>Text</td>
@@ -2564,7 +2563,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Underline</td>
-<td>Specify underline text formatting.</td>
+<td>Specify underline text formatting.</td>
 </tr>
 <tr class="even">
 <td>Visible</td>
@@ -2606,7 +2605,7 @@ The following table describes the report design properties.
 | ArrangeMethod                              | Specify the layout for the controls in a report section.                                                                                                                                 |
 | ArrangeWhen                                | Specify when report controls are arranged.                                                                                                                                               |
 | BottomMargin                               | Specify the bottom margin. If you set this property to **Auto**, the default value that is stored in the system table is used.                                                           |
-| Caption                                    | Specify the name that is shown for the report in the user interface.                                                                                                                     |
+| Caption                                    | Specify the name that is shown for the report in the user interface.                                                                                                                     |
 | ColorScheme                                | Specify the color palette.                                                                                                                                                               |
 | Columns                                    | Specify the number of columns.                                                                                                                                                           |
 | ColumnSpace                                | Specify the space between columns.                                                                                                                                                       |
@@ -2614,52 +2613,53 @@ The following table describes the report design properties.
 | ForegroundColor                            | Specify the foreground color.                                                                                                                                                            |
 | Height                                     | Specify the height.                                                                                                                                                                      |
 | LeftMargin                                 | Specify the left margin. If you set this property to **Auto**, the default value that is stored in the system table is used.                                                             |
-| LineAbove                                  | Specify the type of line for the top border of a section. If a report has many lines and boxes, consider using the shape control inside a section.                                       |
+| LineAbove                                  | Specify the type of line for the top border of a section. If a report has many lines and boxes, consider using the shape control inside a section.                                       |
 | LineBelow                                  | Specify the type of line for the bottom border of a section. If a report has many lines and boxes, consider using the shape control inside a section.                                    |
 | LineLeft                                   | Specify the type of line for the left border of a section. If a report has many lines and boxes, consider using the shape control inside a section.                                      |
 | LineRight                                  | Specify the type of line for the right border of a section. If a report has many lines and boxes, consider using the shape control inside a section.                                     |
 | ResolutionX, ResolutionY                   | Specify the distance between gridlines.                                                                                                                                                  |
 | RightMargin                                | Specify the right margin. If you set this property to **Auto**, the default value that is stored in the system table is used.                                                            |
-| Ruler                                      | Specify the unit for the ruler that is shown when you edit a design. To edit a design, right-click **AutoDesignSpecs** or **Generated Design**, and then click **Edit**.                 |
+| Ruler                                      | Specify the unit for the ruler that is shown when you edit a design. To edit a design, right-click **AutoDesignSpecs** or **Generated Design**, and then click **Edit**.                 |
 | Thickness                                  | Specify the thickness of a section border.                                                                                                                                               |
 | TopMargin                                  | Specify the top margin. If you set this property to **Auto**, the default value that is stored in the system table is used.                                                              |
 
 ## Report design section properties
 The following table describes properties for report design sections. For information about additional properties that are available for report designs, see the "Report design properties" section.
 
-| Property                                  | Description                                                                                                                                                                                                                                                                                                                     |
-|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ArrangeMethod                             | Specify the layout for the controls in a report section.                                                                                                                                                                                                                                                                        |
-| ArrangeWhen                               | Specify when the controls in the container should be arranged. The available options are **Startup**, **On demand**, and **Never**.                                                                                                                                                                                             |
-| Bold                                      | Get or set the weight of the font that was used to show text in the control.                                                                                                                                                                                                                                                    |
-| Bottom                                    | Change the position of the bottom of the report.                                                                                                                                                                                                                                                                                |
-| BottomMargin                              | Specify the bottom margin. If you set this property to **Auto**, the default value that is stored in the UserInfo system table is used.                                                                                                                                                                                         |
-| ColorScheme                               | Specify the color palette.                                                                                                                                                                                                                                                                                                      |
-| ColumnHeadingsStrategy                    | Specify the layout of column headings. If you set this property to **WordWrap**, a heading wraps when it's longer than the longest field in the column. Headings can wrap to a maximum of eight lines. Headings that are longer than eight lines are truncated. **Note:** The heading length varies, depending on the language. |
-| Columns                                   | Specify the number of columns.                                                                                                                                                                                                                                                                                                  |
-| Columnspace                               | Specify the space between columns.                                                                                                                                                                                                                                                                                              |
-| Font                                      | Specify the text formatting. The settings of the **Font** and **FontSize** properties override the values that you can set by clicking **Options **&gt; **Fonts** on the **Tools** menu.                                                                                                                                        |
-| FontSize                                  | Specify the text formatting. The settings of the **Font** and **FontSize** properties override the values that you can set by clicking **Options **&gt; **Fonts** on the **Tools** menu.                                                                                                                                        |
-| ForegroundColor                           | Specify the foreground color.                                                                                                                                                                                                                                                                                                   |
-| GrandHeader                               | Specify whether the value of the **HeaderText** property is shown. The **GrandHeader** property is available only when a report has multiple data sources that aren't nested.                                                                                                                                                   |
-| GrandTotal                                | Specify whether the value of the **FooterText** property is shown. The **GrandTotal** property is available only when a report has multiple data sources that aren't nested.                                                                                                                                                    |
-| HeaderText                                | Specify the text that is shown above the first record in a section when the **GrandHeader** property is set to **Yes**. This property is available only when a report has multiple data sources that aren't nested.                                                                                                             |
-| Height                                    | Specify the height.                                                                                                                                                                                                                                                                                                             |
-| Italic                                    | Specify the text formatting. The settings of the **Font** and **FontSize** properties override the values that you can set by clicking **Options **&gt; **Fonts** on the **Tools** menu.                                                                                                                                        |
-| LabelTopMargin, LabelBottomMargin         | Specify the margins above and below column headings.                                                                                                                                                                                                                                                                            |
-| LeftMargin                                | Specify the left margin. If you set this property to **Auto**, the default value that is stored in the UserInfo system table is used.                                                                                                                                                                                           |
-| LineAbove, LineBelow, LineLeft, LineRight | Specify the type of line for a section border. If a report has many lines and boxes, consider using the shape control inside a section.                                                                                                                                                                                         |
-| Map                                       | Specify the map to use to show data. You can associate a map field with a field in one or more tables. This property lets you use the same field name to access fields that have different names in different tables.                                                                                                           |
-| NoOfHeadingLines                          | Specify the number of lines that are used to show column headings. If you set the property to **0** (zero), column headings aren't displayed. For reports that include several fields, increase the number of lines to make sure that all fields are shown.                                                                     |
-| RightMargin                               | Specify the right margin. If you set this property to **Auto**, the default value that is stored in the UserInfo system table is used.                                                                                                                                                                                          |
-| ResolutionX                               | Specify the distance between gridlines.                                                                                                                                                                                                                                                                                         |
-| ResolutionY                               | Specify the distance between gridlines.                                                                                                                                                                                                                                                                                         |
-| Ruler                                     | Specify the unit for the ruler that is shown when you edit a design. To edit a design, right-click **AutoDesignSpecs** or **Generated** Design, and then click **Edit**.                                                                                                                                                        |
-| Table                                     | Specify the data source for a section.                                                                                                                                                                                                                                                                                          |
-| Thickness                                 | Specify the thickness of a section border.                                                                                                                                                                                                                                                                                      |
-| Top                                       | Change the position of the top of the report.                                                                                                                                                                                                                                                                                   |
-| TopMargin                                 | Specify the top margin. If you set this property to **Auto**, the default value that is stored in the UserInfo system table is used.                                                                                                                                                                                            |
-| Underline                                 | Specify the text formatting. The settings of the **Font** and **FontSize** properties override the values that you can set by clicking **Options **&gt; **Fonts** on the **Tools** menu.                                                                                                                                        |
+
+|                 Property                  |                                                                                                                                                                        Description                                                                                                                                                                        |
+|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               ArrangeMethod               |                                                                                                                                                 Specify the layout for the controls in a report section.                                                                                                                                                  |
+|                ArrangeWhen                |                                                                                        Specify when the controls in the container should be arranged. The available options are <strong>Startup</strong>, <strong>On demand</strong>, and <strong>Never</strong>.                                                                                         |
+|                   Bold                    |                                                                                                                                       Get or set the weight of the font that was used to show text in the control.                                                                                                                                        |
+|                  Bottom                   |                                                                                                                                                     Change the position of the bottom of the report.                                                                                                                                                      |
+|               BottomMargin                |                                                                                                   Specify the bottom margin. If you set this property to <strong>Auto</strong>, the default value that is stored in the UserInfo system table is used.                                                                                                    |
+|                ColorScheme                |                                                                                                                                                                Specify the color palette.                                                                                                                                                                 |
+|          ColumnHeadingsStrategy           | Specify the layout of column headings. If you set this property to <strong>WordWrap</strong>, a heading wraps when it's longer than the longest field in the column. Headings can wrap to a maximum of eight lines. Headings that are longer than eight lines are truncated. <strong>Note:</strong> The heading length varies, depending on the language. |
+|                  Columns                  |                                                                                                                                                              Specify the number of columns.                                                                                                                                                               |
+|                Columnspace                |                                                                                                                                                            Specify the space between columns.                                                                                                                                                             |
+|                   Font                    |                                                       Specify the text formatting. The settings of the <strong>Font</strong> and <strong>FontSize</strong> properties override the values that you can set by clicking <strong>Options **&gt; **Fonts</strong> on the <strong>Tools</strong> menu.                                                        |
+|                 FontSize                  |                                                       Specify the text formatting. The settings of the <strong>Font</strong> and <strong>FontSize</strong> properties override the values that you can set by clicking <strong>Options **&gt; **Fonts</strong> on the <strong>Tools</strong> menu.                                                        |
+|              ForegroundColor              |                                                                                                                                                               Specify the foreground color.                                                                                                                                                               |
+|                GrandHeader                |                                                                          Specify whether the value of the <strong>HeaderText</strong> property is shown. The <strong>GrandHeader</strong> property is available only when a report has multiple data sources that aren't nested.                                                                          |
+|                GrandTotal                 |                                                                          Specify whether the value of the <strong>FooterText</strong> property is shown. The <strong>GrandTotal</strong> property is available only when a report has multiple data sources that aren't nested.                                                                           |
+|                HeaderText                 |                                                       Specify the text that is shown above the first record in a section when the <strong>GrandHeader</strong> property is set to <strong>Yes</strong>. This property is available only when a report has multiple data sources that aren't nested.                                                       |
+|                  Height                   |                                                                                                                                                                    Specify the height.                                                                                                                                                                    |
+|                  Italic                   |                                                       Specify the text formatting. The settings of the <strong>Font</strong> and <strong>FontSize</strong> properties override the values that you can set by clicking <strong>Options **&gt; **Fonts</strong> on the <strong>Tools</strong> menu.                                                        |
+|     LabelTopMargin, LabelBottomMargin     |                                                                                                                                                   Specify the margins above and below column headings.                                                                                                                                                    |
+|                LeftMargin                 |                                                                                                    Specify the left margin. If you set this property to <strong>Auto</strong>, the default value that is stored in the UserInfo system table is used.                                                                                                     |
+| LineAbove, LineBelow, LineLeft, LineRight |                                                                                                          Specify the type of line for a section border. If a report has many lines and boxes, consider using the shape control inside a section.                                                                                                          |
+|                    Map                    |                                                                   Specify the map to use to show data. You can associate a map field with a field in one or more tables. This property lets you use the same field name to access fields that have different names in different tables.                                                                   |
+|             NoOfHeadingLines              |                                         Specify the number of lines that are used to show column headings. If you set the property to <strong>0</strong> (zero), column headings aren't displayed. For reports that include several fields, increase the number of lines to make sure that all fields are shown.                                          |
+|                RightMargin                |                                                                                                    Specify the right margin. If you set this property to <strong>Auto</strong>, the default value that is stored in the UserInfo system table is used.                                                                                                    |
+|                ResolutionX                |                                                                                                                                                          Specify the distance between gridlines.                                                                                                                                                          |
+|                ResolutionY                |                                                                                                                                                          Specify the distance between gridlines.                                                                                                                                                          |
+|                   Ruler                   |                                                                      Specify the unit for the ruler that is shown when you edit a design. To edit a design, right-click <strong>AutoDesignSpecs</strong> or <strong>Generated</strong> Design, and then click <strong>Edit</strong>.                                                                      |
+|                   Table                   |                                                                                                                                                          Specify the data source for a section.                                                                                                                                                           |
+|                 Thickness                 |                                                                                                                                                        Specify the thickness of a section border.                                                                                                                                                         |
+|                    Top                    |                                                                                                                                                       Change the position of the top of the report.                                                                                                                                                       |
+|                 TopMargin                 |                                                                                                     Specify the top margin. If you set this property to <strong>Auto</strong>, the default value that is stored in the UserInfo system table is used.                                                                                                     |
+|                 Underline                 |                                                       Specify the text formatting. The settings of the <strong>Font</strong> and <strong>FontSize</strong> properties override the values that you can set by clicking <strong>Options **&gt; **Fonts</strong> on the <strong>Tools</strong> menu.                                                        |
 
 ## Report query properties
 The following table describes report query properties. For information about additional report properties, see the "Report properties" and "System and common properties" sections.
@@ -2840,7 +2840,7 @@ The following tables describes the properties for the node at **Security** &gt;
 <td>The permission value. The following options are available:
 <ul>
 <li><strong>Invoke</strong> – The server method can be called.</li>
-<li><strong>NoAccess</strong> – The server method can't be called.</li>
+<li><strong>NoAccess</strong> – The server method can&#39;t be called.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -3185,7 +3185,7 @@ The following table describes the properties for the node at **Security** &gt; *
 The permission values for the <strong>AccessLevel</strong> property represent a hierarchy. Read is the weakest permission, and Delete is the strongest. Delete permission includes every other permission. Create permission includes Update and Read. You can set the permission value to <strong>NoAccess</strong> to prevent all access to the entry point. The Correct permission applies only when a time state table is involved. This permission authorizes you to issue update records in a time state table. For the <strong>ServiceOperation</strong> object type, the following options are available:
 <ul>
 <li><strong>Invoke</strong> – The server method can be called.</li>
-<li><strong>NoAccess</strong> – The server method can't be called.</li>
+<li><strong>NoAccess</strong> – The server method can&#39;t be called.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -3270,7 +3270,7 @@ The following table describes the properties for the node at **Security** &gt; *
 <td>The permission value. The following options are available:
 <ul>
 <li><strong>Invoke</strong> – The server method can be called.</li>
-<li><strong>NoAccess</strong> – The server method can't be called.</li>
+<li><strong>NoAccess</strong> – The server method can&#39;t be called.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -3451,7 +3451,7 @@ The following table describes the properties for the node at **Security** &gt; *
 <tr class="even">
 <td>PolicyGroup</td>
 <td>No</td>
-<td>Administrators and developers can use this property to quickly identify groups of related security policies. The available options are the names of the security policy groups that the system administrator or developer has created. The system doesn't use this property at run time.</td>
+<td>Administrators and developers can use this property to quickly identify groups of related security policies. The available options are the names of the security policy groups that the system administrator or developer has created. The system doesn&#39;t use this property at run time.</td>
 </tr>
 <tr class="odd">
 <td>ConstrainedTable</td>
@@ -3459,7 +3459,7 @@ The following table describes the properties for the node at **Security** &gt; *
 <td>A value that controls whether the security policy restricts the data values in records that are returned from the primary table. The following options are available:
 <ul>
 <li><strong>Yes </strong>– The security policy is enforced on the primary table.</li>
-<li><strong>No </strong>– The security policy isn't enforced on the primary table.</li>
+<li><strong>No </strong>– The security policy isn&#39;t enforced on the primary table.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -3753,7 +3753,7 @@ The following table describes the properties for the node at **Security** &gt; *
 <td>The permission value. The following options are available:
 <ul>
 <li><strong>Invoke</strong> – The server method can be called.</li>
-<li><strong>NoAccess</strong> – The server method can't be called.</li>
+<li><strong>NoAccess</strong> – The server method can&#39;t be called.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -3816,15 +3816,15 @@ The following table describes the properties that are specific to web menus and 
 <tbody>
 <tr class="odd">
 <td>ConfigurationKey</td>
-<td>Specify the configuration key that is used to control display of this menu. If a user doesn't have access to the configuration key, the menu won't be visible.</td>
+<td>Specify the configuration key that is used to control display of this menu. If a user doesn&#39;t have access to the configuration key, the menu won&#39;t be visible.</td>
 </tr>
 <tr class="even">
 <td>HighlightSelected</td>
-<td>This property isn't supported.</td>
+<td>This property isn&#39;t supported.</td>
 </tr>
 <tr class="odd">
 <td>Label</td>
-<td>Specify the text that is shown for the top-level node of the web menu or submenu. The value can't exceed 250 characters.</td>
+<td>Specify the text that is shown for the top-level node of the web menu or submenu. The value can&#39;t exceed 250 characters.</td>
 </tr>
 <tr class="even">
 <td>MenuItemName</td>
@@ -3871,7 +3871,7 @@ The following table describes the properties that are specific to web menu items
 <tbody>
 <tr class="odd">
 <td>Big</td>
-<td>Specify the size of the button when it's used on an Action Pane. The following options are available:
+<td>Specify the size of the button when it&#39;s used on an Action Pane. The following options are available:
 <ul>
 <li><strong>Yes </strong>– The button is shown at full size and is located at the start of the group.</li>
 <li><strong>No </strong>– The button is shown at the smaller size and is located on the right side of the group.</li>

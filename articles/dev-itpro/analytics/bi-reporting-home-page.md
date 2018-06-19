@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intelligence
-description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27681
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Intelligence
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations.
 
 ## Get started
 - [Information access and reporting](information-access-reporting.md)

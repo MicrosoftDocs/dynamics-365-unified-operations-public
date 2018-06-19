@@ -5,7 +5,7 @@ title: Make a backing table be consumable as a Financial dimension
 description: This topic provides the steps that you need to follow to make a backing table usable as a Financial dimension.
 author: aprilolson
 manager: AnnBe
-ms.date: 05/16/2017
+ms.date: 04/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191363
@@ -32,14 +32,34 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Make a backing table be consumable as a Financial dimension
 
+[!include [banner](../includes/banner.md)]
+
 This topic provides the steps that you need to follow if you want to make a backing table usable as a Financial dimension.
+
+> [!IMPORTANT]
+> Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. 
+- 	Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
+
+Examples of highly volatile data include timestamps and identifiers that are frequently incremented, such as:
+     - Documents
+     - Sales orders
+     - Purchase orders
+     - Transactions
+     - Checks
+     - Serials
+     - Tickets
+     - License numbers 
+
+These are referred to as degenerate dimensions. Tracking these values should be done outside of financial dimensions. This means that you should use customizations for the transactional records that need information, and these values should not be stored along with the financial dimension values.
+
+
+By following these steps, your view will automatically appear in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values will be populated on the **Financial dimension values** page.
+
 
 > [!NOTE]
 > If your dimension is backed by the **OMOperatingUnit** table then many of the steps are already completed for you. Follow the steps in the "[Add a new OMOperatingUnit type backed entity](#add-a-new-omoperatingunit-type-backed-entity)" section.
 
-By following these steps, your view will automatically appear in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values will be populated on the **Financial dimension values** page.
-
-# Step 1: Create a view
+## Step 1: Create a view
 
 The first step is to create a view in the same model as your backing table. Before you complete the following steps, verify that the backing table has **Create Rec Id Index = Yes** in the **Table Properties** pane. Alternatively, ensure that the table has a unique index and RECID is the first segment of that index.
 
@@ -75,7 +95,7 @@ The first step is to create a view in the same model as your backing table. Befo
     **Microsoft.Dynamics.AX.Framework.ViewRules/ViewDimensionEnabledTypeChecker**. Verify that the rule and its children are selected.
 1.  Build and then synchronize the view.
 
-# Step 2: Validate that the view returns the correct data in SQL
+## Step 2: Validate that the view returns the correct data in SQL
 
 At this point you should be able to run the following query in SQL Server Management Studio to ensure that it's pulling the correct data. Here is an abbreviated example using the view created for CustTable.
 
@@ -88,7 +108,7 @@ At this point you should be able to run the following query in SQL Server Manage
 | 22565424579 | US\_SI\_0128 | ussi           | 5637144576    | 22565424579 | Alpine Electronics | 5637144576       |
 
 
-# Step 3: Override methods on the backing table
+## Step 3: Override methods on the backing table
 
 To integrate with the dimensions framework when deleting or renaming the natural key of the backing table, you must write custom code on the backing table's delete method, and on either the update or renamePrimaryKey method. If your table blocks updates of the natural key, you will need to use the renamePrimaryKey override. If it does not, then you can put the code in the update method. Here is an example from CustTable.
 
@@ -120,18 +140,18 @@ public void renamePrimaryKey()
 }
 ```
 
-# Step 4: Clear caches to force detection of the new view
+## Step 4: Clear caches to force detection of the new view
 
 Because the list of entities that can be consumed as a dimension are cached on the server, the creation of a new entity will not appear in the list of existing entities until a call to clear the caches is performed, or until both the client and the server are restarted. To clear the caches and have the new view appear immediately, you must execute the following line of code within a runnable class.
 
       DimensionCache::clearAllScopes();
 
-# Step 5: Verify that the dimension appears in the Use Value From lookup
+## Step 5: Verify that the dimension appears in the Use Value From lookup
 
 Now that you have completed the steps, navigate to the **Financial dimensions** page in the General ledger. Click the drop-down menu on the **Use Values from** field and verify that your value is available.
 
 
-# Add a new OMOperatingUnit type backed entity
+## Add a new OMOperatingUnit type backed entity
 
 If a new Organization Model OMOperatingUnitType enumeration is added, the steps to make it consumable as a dimension are similar but can be made shorter as follows:
 

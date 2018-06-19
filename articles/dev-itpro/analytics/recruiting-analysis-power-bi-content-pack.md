@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: HcmRecruitmentWorkspace
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Recruiting Power BI content
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the **Recruiting** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 

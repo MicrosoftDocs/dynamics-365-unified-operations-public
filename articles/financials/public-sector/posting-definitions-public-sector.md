@@ -31,18 +31,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Posting definitions in the public sector
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides examples of public sector posting definitions that you can use to create subledger journal lines for originating transactions that meet selected criteria. Examples include budget appropriations, pooled cash settlements, write-offs, COD settlements, advanced ledger entries, general ledger year-end close, and proprietary funds.
 
-This article describes the posting definitions functionality available for the public sector. Before you read this topic, you should be familiar with posting definitions.
+This article describes the posting definitions functionality available for the public sector. Before you read this topic, you should be familiar with posting definitions.
 
 ## How do I use these examples of public sector posting definitions?
 You can set up the examples in this article on the **Posting definitions** page. Each example contains these sections:
 
--   Posting definition – Match criteria
--   Posting definition – Generated entries
+-   Posting definition – Match criteria
+-   Posting definition – Generated entries
 -   Transactions with the accounts, dimension values, and amounts
 -   Ledger entries generated from the posting definition
 
@@ -54,7 +53,7 @@ In the **Match criteria** area, when a match occurs between the accounts and dim
 ## Example: Budget appropriations
 For public sector organizations, original budget balances are recorded as either appropriations for expenses or estimated revenues. The original budget balances are used to track available budget balances against expenditures and the actual revenues that are collected.
 
-A posting definition is created to support the recording of budget register entries to the general ledger, and a transaction posting definition is set up for budget register entries that have a budget type of **Original budget**.
+A posting definition is created to support the recording of budget register entries to the general ledger, and a transaction posting definition is set up for budget register entries that have a budget type of **Original budget**.
 
 | Account structure | Match account number\* | Priority |
 |-------------------|------------------------|----------|
@@ -62,7 +61,7 @@ A posting definition is created to support the recording of budget register ent
 
 \*A blank value in the **Match account number** field means that all matching accounts in the defined account structure will be part of the matching rule.
 
-### Posting definition – Generated entries for match criteria – Row 1
+### Posting definition – Generated entries for match criteria – Row 1
 
 | Account structure | Generated account number                | Generated debit/credit |
 |-------------------|-----------------------------------------|------------------------|
@@ -135,9 +134,9 @@ You should also complete one of the following tasks:
 -   **Option A:** Specify a single due-to account in the Treasurer’s fund for all funds.
 -   **Option B:** Specify a different due-to account in the Treasurer’s fund for each fund.
 
-### Option A: Specify a single due-to account for all funds
+### Option A: Specify a single due-to account for all funds
 
-You can specify a single due-to account in the Treasurer’s fund for all funds. In this case, a single global match criterion addresses all funds (except the Treasurer’s fund), and you must specify the following match criteria and generated entries on the posting definition.
+You can specify a single due-to account in the Treasurer’s fund for all funds. In this case, a single global match criterion addresses all funds (except the Treasurer’s fund), and you must specify the following match criteria and generated entries on the posting definition.
 
 #### Settlement posting definition – Match criteria
 
@@ -168,7 +167,7 @@ You can specify a single due-to account in the Treasurer’s fund for all funds
 | Balance           | - 10110 (Equity account in the match entry – Cash account)         | Balancing              |
 | Balance           | 999 - 37000 (Equity account in the Treasurer’s fund for all funds) | Same                   |
 
-### Option B: Specify a different due-to account for each fund
+### Option B: Specify a different due-to account for each fund
 
 You can specify a different due-to account in the Treasurer’s fund for each fund. For every fund that a vendor payable or customer receivable will be generated in (except the Treasurer’s fund), you must specify the following match criteria and generated entries on the posting definition.
 
@@ -210,7 +209,7 @@ The following vouchers are representative of a typical invoice, payment, and set
 
 ### Accounts payable settlement voucher
 
-The accounts payable settlement voucher is accessed through the related vouchers on the vendor payment voucher. 
+The accounts payable settlement voucher is accessed through the related vouchers on the vendor payment voucher. 
 
 In this example, the **Match account number** values for the posting definition match the vendor balance posting type accounts. When 999 - 24210 and 101 - 24210 are evaluated, the generated ledger entries will be created only for Fund 101, because no match entries are set up for the Treasurer’s fund (999).
 
@@ -223,14 +222,14 @@ In this example, the **Match account number** values for the posting definition 
 
 ### Summarizing the entries across the invoice, payment, and settlement vouchers
 
-The following table shows how the final ledger accounts are affected.
+The following table shows how the final ledger accounts are affected.
 
 | Account + Dimensions | Debit  | Credit | Comment                                                                  |
 |----------------------|--------|--------|--------------------------------------------------------------------------|
 | 999 - 11020          |        | 250.00 | Bank/cash account                                                        |
 | 101 - 66100 - 150    | 250.00 |        | Expenditure account                                                      |
 | 101 - 11010          |        | 250.00 | Equity for Fund 101 (Posting definition for settlement)                  |
-| 999 - 37101          | 250.00 |        | Treasurer’s fund – Due from Fund 101 (Posting definition for settlement) |
+| 999 - 37101          | 250.00 |        | Treasurer’s fund – Due from Fund 101 (Posting definition for settlement) |
 
 ## Accounts receivable example
 ### Accounts receivable invoice voucher
@@ -249,7 +248,7 @@ The following table shows how the final ledger accounts are affected.
 
 ### Accounts receivable settlement voucher
 
-The accounts receivable settlement voucher is accessed through the related vouchers on the customer payment voucher.
+The accounts receivable settlement voucher is accessed through the related vouchers on the customer payment voucher.
 
 In this example, the **Match account number** values for the posting definition match the customer balance posting type accounts. When 999 - 11530 and 101 - 11530 are evaluated, the generated ledger entries are created only for Fund 101, because no match entries are set up for the Treasurer’s fund (999).
 
@@ -276,7 +275,7 @@ In addition to the example earlier in this section, posting definitions for sett
 -   Accounts receivable write-offs
 -   Accounts receivable free text invoice cash-on-delivery (cash payment) settlements
 
-Accounts receivable write-offs can use posting definitions that are defined for settlement. Therefore, the general ledger credit journal voucher can be generated when balances are posted by fund. Both ledger and customer account type entries on the journal lines are evaluated against the posting definition for settlement. Both use the posting definition that is assigned to the transaction type on the **Accounts receivable** tab on the **Transaction posting definitions** page. Depending on how the write-off is designed to be run, the posting definition for settlement might require additional match criteria. 
+Accounts receivable write-offs can use posting definitions that are defined for settlement. Therefore, the general ledger credit journal voucher can be generated when balances are posted by fund. Both ledger and customer account type entries on the journal lines are evaluated against the posting definition for settlement. Both use the posting definition that is assigned to the transaction type on the **Accounts receivable** tab on the **Transaction posting definitions** page. Depending on how the write-off is designed to be run, the posting definition for settlement might require additional match criteria. 
 
 When the write-off posting definition is set up to write off balances to an allowance for the Doubtful receivables contra asset account, the posting definition for settlement can also be used for write-offs, provided that the match criterion is already set up for balance sheet accounts that have a mask for the main account. (For more information, see earlier examples, such as the "Settlement posting definition – Match criteria" section.) 
 
@@ -286,7 +285,7 @@ When the write-off posting definition is set up to reverse the originating reven
 
 | Account structure | Match account number\*                                                     | Priority |
 |-------------------|---------------------------------------------------------------------------|----------|
-| Revenue           | 101 – If you use a fund value and a blank main account, the criterion is applicable to all ledger entries. | 1        |
+| Revenue           | 101 – If you use a fund value and a blank main account, the criterion is applicable to all ledger entries. | 1        |
 
 \*A blank value in the **Match account number** field means that all matching accounts in the defined account structure will be part of the matching rule.
 
@@ -332,7 +331,7 @@ In this example, the credit that is created in the general ledger voucher is app
 There is no net effect on the ledger accounts after an invoice is written off in full.
 
 ## Accounts receivable free text invoice cash-on-delivery (cash payment) settlement example
-Free text invoices use terms of payment where the payment method is set to **COD** and cash payment is enabled. Therefore, they immediately settle themselves at the time of posting without having to use the payment journal. When this kind of settlement occurs, a credit note is created. This note uses the specified cash account on the terms of payment offset and the financial dimensions on the customer summary account. In this kind of settlement, the appropriate receivable accounts that are specified on the invoice aren't automatically reversed. Therefore, the posting definition for settlement must address the reversal of the customer balance posting entries on the invoice and credit, in addition to generating the due-to and due-from entries for settlement. 
+Free text invoices use terms of payment where the payment method is set to **COD** and cash payment is enabled. Therefore, they immediately settle themselves at the time of posting without having to use the payment journal. When this kind of settlement occurs, a credit note is created. This note uses the specified cash account on the terms of payment offset and the financial dimensions on the customer summary account. In this kind of settlement, the appropriate receivable accounts that are specified on the invoice aren't automatically reversed. Therefore, the posting definition for settlement must address the reversal of the customer balance posting entries on the invoice and credit, in addition to generating the due-to and due-from entries for settlement. 
 
 To use posting definitions for settlement in this scenario, complete the following additional setup tasks:
 
@@ -352,10 +351,10 @@ Then, in the posting definition, enter the following match criteria and generate
 
 ### Posting definition – Generated entries for match criteria – Row 1
 
-| Account structure | Generated account number                                                               | Generated debit/credit |
-|-------------------|----------------------------------------------------------------------------------------|------------------------|
-| Balance           | 999 - 11530 (Debit the customer balance posting type entry on the credit that is issued.) | Balancing          |
-| Same              | 999 - (Credit the receivable in the 999 fund.)                                         | Same                   |The posting definition must contain the following entry for every fund other than the Treasurer’s fund (999).
+| Account structure |                                 Generated account number                                  | Generated debit/credit |
+|-------------------|-------------------------------------------------------------------------------------------|------------------------|
+|      Balance      | 999 - 11530 (Debit the customer balance posting type entry on the credit that is issued.) |       Balancing        |
+|       Same        |                      999 - (Credit the receivable in the 999 fund.)                       |          Same          |
 
 ### Posting definition – Match criteria – Row 2
 
@@ -613,7 +612,7 @@ In this example, Fund 601 is defined as a **Proprietary** fund class on the **Fu
 
 The posting definition looks for a match on any account part of the Expense account structure. Therefore, when 601-66100-130- is evaluated, the same ledger account is used, the amount is reversed to close the account, and the balancing generated ledger entry is created.
 
-See also
+Additional resources
 --------
 
 [Accounts payable](../accounts-payable/accounts-payable.md)

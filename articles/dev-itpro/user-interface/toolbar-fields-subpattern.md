@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Toolbar and Fields subpattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Toolbar and Fields subpattern. This container pattern is used to show actions above a subpattern of data fields. The toolbar should contain fewer than 10 actions.
 
@@ -52,11 +51,11 @@ This container pattern is used to show actions above a subpattern of data fields
 - \[Container\]
 
     - Toolbar (ActionPane, Style=Strip)
-    - ContentGroup (Group) – **Note:** A fields subpattern is used.
+    - ContentGroup (Group) – **Note:** A fields subpattern is used.
 
 ### Core components
 
--   Apply the ToolbarFields subpattern to the container control.
+-   Apply the ToolbarFields subpattern to the container control.
 -   Address BP Warnings:
     -   No additional BP checks are required beyond the AX6.3 BP checks that were carried forward.
 
@@ -68,10 +67,10 @@ This container pattern is used to show actions above a subpattern of data fields
 
 -   [Fields and Field Groups](fields-field-groups-subpattern.md)
 -   [Tabular Fields](tabular-fields-subpattern.md)
--   [Dimension Expression Builder](..\financial\dimension-expression-builder-subpattern.md)
+-   [Dimension Expression Builder](../financial/dimension-expression-builder-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
 
 **Standard form guidelines:**
 
@@ -104,7 +103,7 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 -   **Should the ShowMoreLess group be part of the pattern, or should it be its own subpattern?**
-    -   We will treat the **ShowMoreLess** group as a custom container pattern until there is enough demand to justify the addition of a new pattern.
+    -   We will treat the **ShowMoreLess** group as a custom container pattern until there is enough demand to justify the addition of a new pattern.
 
 ### Microsoft Dynamics AX 2012 content
 

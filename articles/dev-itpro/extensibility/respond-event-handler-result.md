@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Platform update 9
 
 # Respond by using EventHandlerResult or types that implement IEventHandlerResult
 
+[!include [banner](../includes/banner.md)]
+
 Some delegate methods are implemented so that they can request a response from subscribing delegate handler methods. The delegate calling logic then uses the response from a potential subscriber when it continues execution after the response has been received. These delegate methods usually have a signature that has an **EventHandlerResult** parameter as the last parameter. However, because of the support for the **EventHandlerAcceptResult** and **EventHandlerRejectResult** types, the parameter can be of any type that implements the **IEventHandlerResult** interface.
 
 + In general, the logic that is implemented in the delegate handler method should contain a condition that verifies that the subscribing logic is responsible for providing a response. It should also include logic to provide the response in the form of a result.
@@ -38,7 +40,7 @@ Some delegate methods are implemented so that they can request a response from s
 + When the condition and the response logic are implemented, the calculation of the result must occur only when the condition is evaluated to **true**.
 + All the subscribing delegate handler methods are run when a delegate is called. Therefore, you should make sure that the overhead of running your method is as low as possible when the method isn't responsible for providing a response. Therefore, make sure that the condition is evaluated to **false** as quickly as possible when your delegate handler method isn't responsible for providing a result.
 
-# Examples
+## Examples
 The following example shows a delegate handler that has a condition in the form of a **switch** statement. The delegate handler also has logic to provide a response in the form of the result. The responding logic is run only when the condition is evaluated to **true**.
 
 ```
@@ -98,7 +100,7 @@ public static void validateWriteProdTableInventRefTypeDelegateHandler(ProdTable 
 }
 ```
 
-# Guidelines
+## Guidelines
 In addition to the previously described practices, the following general guidelines apply:
 
 - Respond only when the subscribing logic is responsible for responding. The delegate handler methods were implemented to provide a response when a specific condition is met. Therefore, the subscribing logic must provide a result when a specific condition is met. Before the subscribing logic responds, it should not evaluate whether the result object parameter already contains a result. For example, a delegate handler method should not contain logic that resembles the logic in the following example. This logic evaluates whether the **EventHandlerResult** object parameter already contains a result when the method is run.

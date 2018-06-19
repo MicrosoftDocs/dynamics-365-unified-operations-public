@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 13531
 ms.assetid: 2bb96ac4-0cef-4f66-a953-bd82c117247b
@@ -32,12 +32,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # System administration home page
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic points to content for system administrators of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. This content will help you configure the system so that it works smoothly and effectively for your organization.
+This topic points to content for system administrators of Microsoft Dynamics 365 for Finance and Operations. This content will help you configure the system so that it works smoothly and effectively for your organization.
 
-## Lifecycle Services
-Microsoft Dynamics Lifecycle Services (LCS) is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your Finance and Operations implementations.
+## Implementation management with Lifecycle Services
+Microsoft Dynamics Lifecycle Services (LCS) is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the lifecycle of your Finance and Operations implementations.
+
+The lifecycle of a Finance and Operations implementation spans many phases from pre-sales through Analysis, Design and Development, Test, and Deployment to Operation, possibly in multiple iterative roll-outs. It can last a few months to multiple years, based on the scope and complexity of the project and the chosen deployment model, for example, in the managed cloud or on-premises. 
+
+The management of the implementation involves many different stakeholders from the customer and partner organizations and, especially in the cloud-hosted deployment model, from Microsoft. The implementation is supported through tools provided on LCS and through processes defined within the [FastTrack for Dynamics program](../../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md) and through the partner's implementation approach. 
 
 - [Lifecycle Services for Finance and Operations](../lifecycle-services/lcs.md)
 - [Dynamics Lifecycle Services user guide](../lifecycle-services/lcs-user-guide.md)
@@ -46,7 +50,7 @@ Microsoft Dynamics Lifecycle Services (LCS) is a collaboration portal that provi
 You can deploy Finance and Operations in the cloud or on-premises. Cloud deployments offer an enterprise resource planning (ERP) service that is fully managed by Microsoft. On-premises deployments are deployed locally in a customer's data center.
 
 - [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
-- [Dynamics 365 for Finance and Operations, Enterprise edition cloud deployment overview](../deployment/cloud-deployment-overview.md)
+- [Dynamics 365 for Finance and Operations cloud deployment overview](../deployment/cloud-deployment-overview.md)
 - [System requirements for cloud deployments](../../fin-and-ops/get-started/system-requirements.md)
 - [On-premises deployment landing page](../deployment/on-premises-deployment-landing-page.md)
 - [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md)
@@ -81,6 +85,11 @@ Many tasks in Finance and Operations can be run as part of batch jobs. For examp
 
 - [Batch processing overview](batch-processing-overview.md)
 - [Batch server overview](batch-server-overview.md)
+
+## Optimization advisor
+- [Optimization advisor overview](optimization-advisor-overview.md)
+- [Optimization advisor (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+- [Create rules for Optimization advisor](create-rules-optimization-advisor.md)
 
 ## Office integration
 The integration with Microsoft Office provides a set of productive, collaborative, and integrated user experiences that take advantage of the Microsoft Office suite. This functionality can help your organization become more efficient and effective.

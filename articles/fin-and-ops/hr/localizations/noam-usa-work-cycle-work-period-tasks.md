@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up work cycles and work periods
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to set up work cycles and work periods. You use work cycles to specify the frequency of work periods. Some earnings, such as the regular-rate overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods.
 
@@ -48,7 +47,7 @@ Most organizations use only seven-day work periods. However, there are exception
 | Field           | Description             |
 |-----------------|-------------------------|
 | Work cycle      | Enter the unique name or code that you use to identify a work cycle. For example, you might use **FLSA standard** for a seven-day work cycle that starts on Monday. After you create a work cycle, you can’t change its name or the number of days in it.      |
-| Description     | Enter a longer name that describes the work cycle. For example, you might use **7-day starts Monday** for your organization’s standard work cycle.            |
+| Description     | Enter a longer name that describes the work cycle. For example, you might use **7-day starts Monday** for your organization’s standard work cycle.            |
 | Days per period | Enter the number of days in the work period. Most organizations use only seven-day work periods. Some positions, such as firefighters, might have 14-day or 28-day work periods. You can enter any number of days in this field. If you're using the work period for compliance with the Fair Labor Standards Act (FLSA), the value must be **7**, **14**, or **28**. |
 
 When you've finished creating all the work cycles that you require, you can close the page or continue to the next section, "Generate work periods."
@@ -64,9 +63,9 @@ Overtime premiums can be processed only for work periods that are in the system.
 Typically, work cycles are assigned to non-exempt positions when the positions are set up for payroll. For more information, see [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md).
 
 ## Next step
-The next step is to set up earning codes and earning code groups. For more information, see [Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md).  
+The next step is to set up earning codes and earning code groups. For more information, see [Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md).  
 
-See also
+Additional resources
 --------
 
 [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)

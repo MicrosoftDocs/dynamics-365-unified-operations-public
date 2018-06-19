@@ -18,7 +18,7 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Organize report components in report designer
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 After you've designed building blocks and generated reports, it's helpful to organize these objects so that they are easier for users to locate. This article explains how to organize existing reports, building blocks, and objects in report designer.
 
@@ -51,14 +50,14 @@ In Report Designer, you can rename folders, report definitions, row definitions,
 5.  Repeat step 4 until all associated items are updated.
 
 ## Create and manage report groups
-You can group report definitions to generate multiple reports at the same time. To create, modify, delete, and generate report groups, you must have the designer or administrator role. Users who have the generator role can generate report groups and can also modify the user report definitions setting for report groups.
+You can group report definitions to generate multiple reports at the same time. To create, modify, delete, and generate report groups, you must have the designer or administrator role. Users who have the generator role can generate report groups and can also modify the user report definitions setting for report groups.
 
 ### Create a report group
 
 1.  In Report Designer, in the navigation pane, click **Report Groups**.
-2.  On the **File** menu, click **New** &gt; **Report Group Definition** to open a new report group in the viewer window. Alternatively, click the **Report Group** button ![Report Group](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Report Group") on the toolbar.
+2.  On the **File** menu, click **New** &gt; **Report Group Definition** to open a new report group in the viewer window. Alternatively, click the **Report Group** button ![Report Group](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Report Group") on the toolbar.
 3.  Click the **Report Group** tab. To override the information on the individual report definitions for the generation of this report, select the **Override company, detail, and date settings from individual report definitions** check box. The company name, detail level, provisional setting, and date information are entered automatically, but you can make updates.
-4.  To generate multiple reports that show the reporting currencies, select the **Include all reporting currencies** check box. You can then access multiple views by clicking the **Currency** button in the Web Viewer when you view the report.
+4.  To generate multiple reports that show the reporting currencies, select the **Include all reporting currencies** check box. You can then access multiple views by clicking the **Currency** button in the Web Viewer when you view the report.
 5.  In the **Reports in group** field, click **Add** to select the reports to include in the report group. To select multiple reports in the **Add** dialog box, hold down the Ctrl key while you select reports. When you've finished selecting reports, click **OK**.
 6.  Click **File** &gt; **Save** to save the new report group.
 
@@ -67,7 +66,7 @@ You can group report definitions to generate multiple reports at the same time. 
 1.  In Report Designer, in the navigation pane, click **Report Groups**.
 2.  Double-click the report group to modify.
 3.  On the **Report Group** tab, make the changes that you want.
-4.  On the **File** menu, click **Save** to save the modified report group, Alternatively, click the **Save** button ![Save](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Save") on the toolbar.
+4.  On the **File** menu, click **Save** to save the modified report group, Alternatively, click the **Save** button ![Save](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Save") on the toolbar.
 
 **Note:** If you've scheduled reports so that they are generated at set intervals, you can override those settings and generate a report immediately.
 
@@ -75,7 +74,7 @@ You can group report definitions to generate multiple reports at the same time. 
 
 1.  In Report Designer, in the navigation pane, click **Report Groups**.
 2.  Open the report group to generate.
-3.  Click the **Generate Report** button ![Generate Report](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Generate Report") to generate reports.
+3.  Click the **Generate Report** button ![Generate Report](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Generate Report") to generate reports.
 
 ### Delete a report group
 
@@ -110,7 +109,7 @@ The following table describes the controls on the **Report Group** tab.
 <td>Detail level</td>
 <td>Specify the level of detail that the reports include.
 <ul>
-<li><strong>Financial</strong> − A high-level summary report. You can't drill down to accounts and dimensions, except for those accounts and dimensions that have been added through a reporting tree.</li>
+<li><strong>Financial</strong> − A high-level summary report. You can&#39;t drill down to accounts and dimensions, except for those accounts and dimensions that have been added through a reporting tree.</li>
 <li><strong>Financial &amp; Account</strong> − A report that contains a high-level summary and account details.</li>
 <li><strong>Financial, Account, &amp; Transaction</strong> − A report that contains a high-level summary and transaction details.</li>
 </ul></td>
@@ -126,7 +125,7 @@ The following table describes the controls on the **Report Group** tab.
 </tr>
 <tr class="odd">
 <td>Include all reporting currencies</td>
-<td>Any additional reporting currencies that are configured in your Microsoft Dynamics ERP system are listed here. Select this check box to generate additional reports in the currencies that are indicated. To view these reports in the Web Viewer, click the <strong>Currency</strong> button, and then select a currency.</td>
+<td>Any additional reporting currencies that are configured in your Microsoft Dynamics ERP system are listed here. Select this check box to generate additional reports in the currencies that are indicated. To view these reports in the Web Viewer, click the <strong>Currency</strong> button, and then select a currency.</td>
 </tr>
 <tr class="even">
 <td>Date information not saved with report definition</td>
@@ -150,7 +149,7 @@ Only default base period settings are saved with the report definition.</td>
 <ul>
 <li>To add report definitions to the report group, double-click the report group to open it, and then click <strong>Add</strong>. Select the reports to include in the report group, and then click <strong>OK</strong>.</li>
 <li>To remove a report from the report group, select it, and then click <strong>Remove</strong>.</li>
-<li>To modify the order that the reports are generated in, select a report in the list, and then click <strong>Move up</strong> or <strong>Move down</strong>.</li>
+<li>To modify the order that the reports are generated in, select a report in the list, and then click <strong>Move up</strong> or <strong>Move down</strong>.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -158,7 +157,7 @@ Only default base period settings are saved with the report definition.</td>
 
 
 
-See also
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-intro.md)

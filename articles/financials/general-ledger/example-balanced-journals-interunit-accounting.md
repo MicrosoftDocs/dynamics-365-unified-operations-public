@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Balanced journals for interunit accounting
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page. 
 
-If account entries don't balance at the level of the financial dimension values, additional account entries are created automatically to balance the journal. These account entries use the **Interunit - debit** and **Interunit - credit** posting types on the **Accounts for automatic transactions** page to determine the main account. For example, Business Unit, which is the second segment of the ledger account, is selected as the balancing financial dimension, and the following accounting entries are about to be created.
+If account entries don't balance at the level of the financial dimension values, additional account entries are created automatically to balance the journal. These account entries use the **Interunit - debit** and **Interunit - credit** posting types on the **Accounts for automatic transactions** page to determine the main account. For example, Business Unit, which is the second segment of the ledger account, is selected as the balancing financial dimension, and the following accounting entries are about to be created.
 
 |                      |           |
 |----------------------|-----------|
@@ -50,7 +49,7 @@ In this case, the following balances are determined:
 -   For Business Unit MSP = 100.00 CR
 -   For Business Unit NY = 100.00 DR
 
-Therefore, the following accounting entries are created automatically to balance the  journal at the level of the financial dimension values.
+Therefore, the following accounting entries are created automatically to balance the  journal at the level of the financial dimension values.
 
 |                                   |           |
 |-----------------------------------|-----------|
