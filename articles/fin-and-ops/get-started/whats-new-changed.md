@@ -232,4 +232,4 @@ For information about how to upgrade to the latest version, see [Process for upg
 </tbody>
 </table>
 
-* Platform updates 13, 14, and 16 have not been made generally available.
+\* Platform updates 13, 14, and 16 have not been made generally available.
