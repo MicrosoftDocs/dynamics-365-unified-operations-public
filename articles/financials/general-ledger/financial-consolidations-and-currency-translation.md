@@ -19,8 +19,12 @@ The following illustrations show the steps for doing consolidation in Finance an
 Users can use Consolidation Online, Financial reporting, or a combination. Their choice depends on the needs of their company and the preferences of their auditors.
 
 #### Consolidate Online in Finance and Operations
+
+![Consolidate Online in Finance and Operations](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/consolidate-online-in-fin-op.png "Consolidate Online in Finance and Operations")
  
 #### Consolidation by using Financial reporting
+
+![Consolidation by using Financial reporting](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/consolidate-financial-reporting.png "Consolidation by using Financial reporting")
  
 ## Consolidations
 
@@ -45,27 +49,37 @@ Here are some of the consolidation scenarios that Consolidate online supports:
 
 ## Legal entity setup
 Before you process a consolidation, you must set up the legal entity. You can run consolidation as many times as you require, and all data will be translated from the source company’s accounting currency to the currency that is defined for the consolidation company. Therefore, for the following organizational structure, if you must translate all North American companies first to US dollars (USD) and then to euros (EUR), the currency of the parent company, you must have at least two consolidation companies.
+
+![Organizational structure](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/organizational-structure.png "Organizational structure")
  
 In the preceding organizational structure, you must have a legal entity for the North American consolidation, because consolidations always consolidate from the accounting currency of the source company to the currency of the consolidation company. In the example, if all companies are included in a single consolidation, the Mexican subsidiary will be translated from Mexican pesos (MXN) to EUR, not from MXN to USD to EUR.
 When you create the legal entity, you can specify whether the company is used for both the consolidation process and the elimination process, or for just one of those processes. In the following illustration, the company is used for both processes. Note that you can’t post daily journals in a consolidation company, but you can post them in an elimination company. Therefore, you might want to have a separate elimination company.
+
+![Legal entities separate elimination company](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/sep-elimination-company.png "Legal entities separate elimination company")
  
 ## Main accounts and consolidation account groups
 One of the choices that you must make is how you want to consolidate your chart of accounts. During the consolidation process, you have three options for consolidating main accounts.
+
 The first option is to use the main accounts from the source companies. In this case, every account from all companies will be consolidated. For example, if Cash is account 100000 in the USMF company and account 1100 in the DEMF company, the consolidation company will include both accounts, each of which will have its respective balance.
+
 The second option is to specify a default consolidation account on the **Main accounts** page. The account will then be mapped to the consolidation account. This option can be helpful when you have different charts of accounts or must map to a chart that is defined by the headquarters.
+
+![Main accounts consolidation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/main-accounts.png "Main accounts consolidation")
  
 The third option is to use consolidation account groups. You can define as many consolidation account groups as you require. Then, on the **Additional consolidation accounts** page, you just map the main account from the chart of accounts to the account that you require for that group.
  
 ## Consolidate Online 
 
-(link) 
+To find more information about how to enter details of consolidations online, please see [Consolidate Online](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/consolidate-online.md)
 
 ## Managing consolidation transactions
 To view the results of the consolidation, you have multiple options:
 - Generate a financial report against the consolidation company.
 - Review the **Trial balance** list page in the consolidation company.
 - In the list of consolidation transactions on the **Consolidations** page, view the balances that are created by date for every source company for every period.
- _____
+
+![Managing consolidation transactions](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/managing-consolidation-transactions.png "Managing consolidation transactions")
+
 To run the consolidation again, you can just process the consolidation. Alternatively, you can first click **Remove the transactions** on the **Consolidations** page.
 
 ## Consolidate with import
@@ -79,20 +93,32 @@ To eliminate intercompany transactions, you can create an elimination rule. Alte
 
 ### Set up elimination rules
 When you set up elimination rules in Finance and Operations, you can create a financial dimension that is used specifically for elimination. Most customers name this financial dimension **Trading Partner** or something similar. If you decide not to use a financial dimension, make sure that you have main accounts that are used only for intercompany transactions.
+
 You can find the setup for eliminations in the **Setup** area of the **Consolidations** module. After you enter a description for the rule, you must select the company that the elimination journal will be posted to. The company that you select should have **Use for financial elimination process** selected in the legal entity setup.
+
 You can set the date when the elimination rule becomes effective and the date when it expires, as you require. If you want the elimination rule to be available in the elimination proposal process, you must set the **Active** option to **Yes**. Select a journal name that has a type of **Elimination**.
+
+![Ledger elimination rule journal](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/ledger-elimination-rule-journal.png "Ledger elimination rule journal")
  
 After you’ve defined the basic properties, click **Lines** to define the actual processing rules. There are two options for eliminations: you can eliminate the net change amount or define a fixed amount.
+
 Select the source accounts. You can use an asterisk ( * ) as a wildcard character. For example, **1*** selects all accounts that start with a **1** as a source of data for the allocation.
+
 After you’ve selected the source accounts, use the **Account specification** field to specify the account that is used from the destination company. Select **Source** to use the same main account that is defined in the source account. If you select **User defined**, you must specify a destination account.
+
+![Ledger elimination rule line](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/ledger-elimination-rule-line.png "Ledger elimination rule line")
  
 The **Dimension specification** field works like the **Account specification** field. Select **Source**, to use the same dimensions in the destination company and the source company. If you select **User defined**, you must specify the dimensions in the destination company by clicking **Destination dimensions**. Then select source dimensions and the financial dimensions and values that are used as a source of the elimination.
 
 ### Process elimination transactions
 There are two ways to process elimination transactions. The transaction can be processed during the Consolidate online process, or you can create an elimination journal and run the elimination proposal process. This section focuses on the second option.
+
 In a company that is defined as an elimination company, click **Elimination journal** in the **Consolidations** module. After you’ve selected the journal name, click **Lines**. To run the proposal, click **Proposals** > **Elimination proposal**.
+
 Select the company that is the source of the consolidated data, and then select the rule to process. Enter start and end dates to define the date range that is searched for elimination amounts. The **GL posting date** field specifies the date that is used to post the journal to the general ledger. After you click **OK**, you can review the amounts and post the journal.
+
 **Note**: The elimination journal shows the amounts for account values in the currency of their originating transactions, not in the accounting currency. When you review the amounts in the elimination journal, you might find this behavior confusing.
+
 For more information and examples, see Elimination rules.
 
 ## Currency revaluation in a consolidation company
@@ -127,4 +153,5 @@ Here are some of the consolidation scenarios that Financial reporting supports:
 - Business unit consolidations
 
 ## Generating consolidated financial statements 
-(see)
+
+To find information about scenarios where you might generate consolidate financial statements, please see [Generating Consolidated Financial Statements](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/generating-consolidated-financial-statements.md)
