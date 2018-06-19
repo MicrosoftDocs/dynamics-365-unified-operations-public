@@ -57,5 +57,22 @@ Select a feature area to learn more about it.
 
 ## Additional resources
 
-[Localization and regulatory features](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
+### Blogs
+
+You can find opinions, news, and other information about Accounts payable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+
+There are many posts about financial management on the [Microsoft Dynamics AX product team blog](https://blogs.msdn.microsoft.com/dax/). Although some of these posts were written for an older version of the product, the same concepts still apply, and the procedures are also similar in the current version.
+
+The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
+
+### Task guides
+Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
+
+### Videos
+
+Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+
+### Country/region functionality
+
+Country/region regulations affect tax setup and other areas of financial management. Refer to the [Localization and regulatory features](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) section of our help content to learn about country/region-specific functionality.
 
