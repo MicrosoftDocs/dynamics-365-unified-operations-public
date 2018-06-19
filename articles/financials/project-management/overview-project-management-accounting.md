@@ -345,16 +345,16 @@ When all sales and vendor invoices are completed, you can view the relationship 
 
 :::row:::
     :::column:::
-        **Cash flow page**
-        Cash inflows 
-        Cash outflows
-        Net cash flows
+        #### Cash flow page
+        - Cash inflows 
+        - Cash outflows
+        - Net cash flows
     :::column-end:::
     :::column:::
-        **Project statements page**
-        Revenue
-        Total cost
-        Gross margin
+        #### Project statements page
+        - Revenue
+        - Total cost
+        - Gross margin
     :::column-end:::
 :::row-end:::
 
