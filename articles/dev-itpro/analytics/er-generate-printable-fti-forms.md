@@ -40,7 +40,7 @@ You can use the Electronic reporting (ER) framework to generate printable free t
 As part of your customized solution for FTI printable forms, you must create a set of ER configurations. Then you can create your application instance in one of those configurations. The configuration must include a data model that describes the customer's invoicing business domain. The data model must be named **CustomersInvoicing**. 
 
 ### Configure ER model mapping
-The ER model mapping for the **CustomersInvoicing** data model must be in your application. The model mapping can be in the ER data model configuration or in the ER model mapping configuration. As a requirement, the name of the root descriptor of this model mapping must be **FreeTextInvoice**.
+The ER model mapping for the **CustomersInvoicing** data model must be in your application. The model mapping can be in the ER data model configuration or in the ER model mapping configuration. However, the name of the root descriptor of this model mapping must be **FreeTextInvoice**.
 The mapping must contain the following data sources:
 
 - Data source type, **Table records**
@@ -74,10 +74,10 @@ You can assign ER formats to generate FTI forms using the ER framework the same 
 3.	Choose the documents’ level to identify the scope of invoices for processing and then select the ER fromat for the document level.
 
   > [!NOTE]
-  > Only ER formats that use the root descriptor FreeTextInvoice of the CustomersInvoicing data model can be visible in this Report format lookup field for format’s selection.
+  > Only ER formats that use the root descriptor **FreeTextInvoice** of the **CustomersInvoicing** data model are visible in the **Report format lookup** field for the format selection.
 
 ## Generate FTI forms
-Same execution points are used to generate FTI forms by using ER framework as for execution of SSRS reports.
+FTi forms are generated in the ER framework the same way that SSRS reports are generated.
 1.	Generate FTI forms choosing invoices either by range or by selection.
 Note. When you use ER formats to print FTI forms this way, the default ER file destinations are used for executed ER format. User have no option to change this behavior. Review this page to learn how the ER destinations can be configured for ER formats.
 2.	Generate FTI forms during free text invoice posting:
@@ -134,25 +134,28 @@ c.	when the direct debit mandate ID has been defined for the invoice.
 16.	When available, prepayment details can be shown in the dedicated for that section (for posted invoices only).
 17.	Generated invoice form can be sent to an invoice customer via email as an attachment. The appropriate ER file destination should be configured to do so for using ER format (see more details below).
 
-### Country specific features implemented in the sample ER format
-The following country specific features have been implemented in the sample ER format to shown how the specific requirements can be handled in such ER configurations.
+### Country-specific features 
+The following country-specific features are included in the sample ER format to show how specific requirements are handled in ER configurations.
 
 #### Norway
-1.	The Enterprise register term will be placed to the header of the generated invoice form when this invoice has been processed for the legal entity configured as follows:
-a.	Using the country context for Norway;
-b.	Having the parameter Print Foretaksregisteret on sales documents turned on.
+The Enterprise register term is placed on the header of the generated invoice form when the invoice is processed for the legal entity that is configured by:
+
+- Using the country context for Norway.
+- Having **Print Foretaksregisteret** parameter active on sales documents.
 
 #### Spain
-2.	The Special regime for cash accounting method term will be placed to the header of the generated invoice form when this invoice has been processed for the legal entity configured as follows:
-a.	Using the country context for Spain;
-b.	Configured as having the special regime for cash accounting method enabled on the date of the invoice processing.
-3.	Cash discount details (cash discount amount and invoice line net amount) are presented in the invoice totals section (when available) of the generated invoice form when this invoice has been processed for the legal entity configured as follows:
-a.	Using the country context for Spain;
-b.	Configured as having the turned-on Cash discount is applied in the invoice option (General ledger parameters, Sales tax section).
+The Special regime for cash accounting method term will be placed on the header of the generated invoice form when the invoice is processed for the legal entity that is configured by:
+
+- Using the country context for Spain.
+- Having the special regime for cash accounting method enabled on the date of the invoice processing.
+
+When available, cash discount details including cash discount amount and invoice line net amount, are presented in the invoice totals section of the generated invoice form when it has been processed for the legal entity that is configured by:
+
+- Using the country context for Spain.
+- Having **Cash discount** applied in the invoice option (**General ledger parameters** > **Sales tax section**).
 
 #### Italy
-4.	Goods discount mark is presented in the invoice line section (when applicable for an invoice line) of the generated invoice form when this invoice has been processed for the legal entity configured as follows:
-a.	Using the country context for Italy.
+The goods discount mark is presented in the invoice line section of the generated invoice form when the invoice is processed for the legal entity that is configured by using the country context for Italy.
 
 #### Finland
 5.	In addition to the generated invoice form, the Giro money transfer slips can be generated:
