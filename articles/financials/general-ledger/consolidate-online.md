@@ -55,3 +55,10 @@ Three options are available in the **Apply exchange rate from** field:
 - **User defined rate** – After you select this option, you can enter the exchange rate that you want. This option can be useful for average exchange rates or if you’re consolidating against a fixed exchange rate.
 
 ![Currency translation consolidate online](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/currency-translation-cons-online.png "Currency translation consolidate online")
+
+## Additional resources
+
+To see the parent topic that provides more information on consolidation and currency translations, please see [Financial consolidations and currency translation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/financial-consolidations-and-currency-translation.md).
+
+To find information about scenarios where you might generate consolidate financial statements, please see [Generating Consolidated Financial Statements](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/generating-consolidated-financial-statements.md).
+
