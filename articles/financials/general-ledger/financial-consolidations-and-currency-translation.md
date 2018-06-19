@@ -70,7 +70,7 @@ The third option is to use consolidation account groups. You can define as many 
  
 ## Consolidate Online 
 
-To find more information about how to enter details of consolidations online, please see [Consolidate Online](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/consolidate-online.md)
+To find more information about how to enter details of consolidations online, please see [Consolidate Online](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/consolidate-online.md).
 
 ## Managing consolidation transactions
 To view the results of the consolidation, you have multiple options:
@@ -154,4 +154,4 @@ Here are some of the consolidation scenarios that Financial reporting supports:
 
 ## Generating consolidated financial statements 
 
-To find information about scenarios where you might generate consolidate financial statements, please see [Generating Consolidated Financial Statements](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/generating-consolidated-financial-statements.md)
+To find information about scenarios where you might generate consolidate financial statements, please see [Generating Consolidated Financial Statements](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/generating-consolidated-financial-statements.md).
