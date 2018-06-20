@@ -79,4 +79,4 @@ class MyInventTable_EventHandler
 ```
 
 > [!NOTE]
-> It is common for event handler classes to contain handlers for any number of events. However, it is **not** good practice to put event handlers in augmentation classes. Doing so makes the event handler methods available as methods on the augmented type, which is wrong because the event handler is intended to be called through the event, not explicitly as a method on the type.
+> It is common for event handler classes to contain handlers for any number of events. However, it is **not** good practice to put event handlers in augmentation classes. Doing so makes the event handler methods available as methods on the augmented type. This is incorrect because the event handler is intended to be called through the event, not explicitly as a method on the type.
