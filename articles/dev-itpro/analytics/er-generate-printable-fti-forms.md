@@ -83,9 +83,9 @@ Free text invoice (FTI) forms are generated in the ER framework the same way tha
 
 You can generate FTI forms choosing invoices either by range or by selection. 
 
-![Electronic reporting destination](media/FTIbyGER-InvoiceSelection.png)
+![Invoice selection](media/FTIbyGER-InvoiceSelection.png)
 
-![Electronic reporting format destination](media/FTIbyGER-InvoiceExcelPreview.png)
+![Invoice preview](media/FTIbyGER-InvoiceExcelPreview.png)
 
 When you use ER formats to print FTI forms this way, the default file destinations are used and there is no option to change the destination. For more information about how the ER destinations can be configured for ER formats, see [Electronic reporting destinations](electronic-reporting-destinations.md).
 
@@ -96,9 +96,9 @@ You can also generate FTI forms when you post a free text invoice by turning **P
   -	Name	ERFormatDestinationRuntimeMaintain
   -	Label	Maintain electronic reporting format destination during runtime
 
-![Invoice preview](media/FTIbyGER-ERFileDestinationSetting.png)
+![Electronic reporting destination](media/FTIbyGER-ERFileDestinationSetting.png)
 
-![Invoice preview](media/FTIbyGER-ERFileDestinationUsage.png)
+![Electronic reporting format destination](media/FTIbyGER-ERFileDestinationUsage.png)
 
 The following destinations are currently supported by ER framework for generated documents:
 
@@ -122,6 +122,9 @@ You can download sample ER configurations to use as a template for your FTI solu
 
 ### Features implemented in the sample ER format
 Microsoft Excel is used as a template in the sample ER format configuration to generate FTI forms.
+
+![Format designer](media/FTIbyGER-ERFormat.png)
+
 Currently, this sample ER format supports the following features to generate FTI forms:
 
 - Generated for original invoices both posted and not yet posted. Corrected invoices as well as credit notes are not supported.
@@ -171,6 +174,8 @@ In addition to the generated invoice form, the Giro money transfer slips can be 
 - For the legal entity that uses the country context for Finland and has at least one bank account marked as a Giro account and Bank bar code. 
 - For an invoice that is marked as required for the Finnish associated payment attachment.
 
+![Giro slip](media/FTIbyGER-GiroSlip.PNG)
+
   > [!NOTE]
   > The sample ER format has been configured to optionally generate the Giro money transfer slips in the separated worksheet.
 
@@ -183,12 +188,18 @@ Use the following elements of the sample ER format to configure email destinatio
 - The email subject text can be accessed with the following ER expression: Emailing.TxtToUse.Subject.
 - The email body text can be accessed with the following ER expression: Emailing.TxtToUse.Body.
 
+![Destination settings](media/FTIbyGER-ERFileDestinationSettingEmail.png)
+
 The default text of email’s subject and body is defined in the sample ER format with the language dependent on the format’s labels. It will be used for emailing when a custom organization email template with the predefined ID **ERFTITMP** has not been added.
 
   > [!NOTE]
   > The email template ID **ERFTITMP** has been defined in the sample ER format and can be changed if needed in a new ER format that is created from this sample format.
 
 If the organization email template with the predefined ID **ERFTITMP** has been added for the legal entity that you are processing the invoice for, the template for the email subject and body text will be used to generate the email. 
+
+![Organization email templates](media/FTIbyGER-EmailTemplate.png)
+
+![Upload email template](media/FTIbyGER-EmailTemplateBody.png)
 
   > [!NOTE]
   > The ER expression of the sample ER format Emailing.TxtToUse.Subject is configured to substitute any occurrences of the characters "%1" by the processing the invoice ID.
@@ -201,3 +212,4 @@ Note that the expression of the sample format Emailing.TxtToUse.Body is configur
 •	%5 characters by the job title of the company’s contact person
 •	%6 characters by the email of the company’s contact person
 
+![Email](media/FTIbyGER-Email.PNG)
