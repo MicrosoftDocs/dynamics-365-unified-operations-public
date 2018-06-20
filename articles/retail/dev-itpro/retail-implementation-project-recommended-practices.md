@@ -1,9 +1,12 @@
 # Draft: Dynamics 365 Finance and Operations Retail Implementation project recommended practices 
  
 Over the course of working on a handful of Retail projects from AX 7.0 to Dynamics 365 8.0, I have collected re-occurring tips, notes and communications with customers, partners and ISVs. Some of this information may also be published in some other location, for example at https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/index. However, sometimes these wikis are very “standalone” and partners have difficulties to see the big picture how all these things fit together for the Retail implementation to succeed.  
- This blog is my attempt to help by showing some good (or best) practices so that implementers can focus on the actual feature value add and not get bogged down by the procedures.  If you find anything wrong, missing or like what you read here, please do not hesitate to drop me a note. I will be making updates and additions to any area that needs it.  
- The information frequently links to other blogs by others or myself. Each post can be read stand-alone or all the information can be followed chronologically from beginning to end by following the links.   
- This information includes both AX and Retail practices but the focus is on Retail. 
+ 
+This blog is my attempt to help by showing some good (or best) practices so that implementers can focus on the actual feature value add and not get bogged down by the procedures.  If you find anything wrong, missing or like what you read here, please do not hesitate to drop me a note. I will be making updates and additions to any area that needs it.  
+ 
+The information frequently links to other blogs by others or myself. Each post can be read stand-alone or all the information can be followed chronologically from beginning to end by following the links.   
+ 
+This information includes both AX and Retail practices but the focus is on Retail. 
 
 ## Onboarding Environments, Visual Studio Team Services and branches 
 ### Overview 
@@ -11,21 +14,25 @@ Over the course of working on a handful of Retail projects from AX 7.0 to Dynami
 Starting with the launch of AX7 the majority of environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). The former is the default, and the latter is usually done to have more control over a development or build environment.  See more details at https://docs.microsoft.com/en-us/dynamics365/unifiedoperations/dev-itpro/lifecycle-services/lcs-works-lcs.  
 Tier 1 machines are developer or build environments. Tier 2 and up are multi-box environments for multiple test and verification purposes. Production environments are hands-off, and size of the environment is determined by the sizing process in LCS.  
 A hosting alternative is to download a VHD from LCS and host it locally on a server. From a development perspective, there is no difference regarding the capabilities of the VHD images compared with a hosted VM, except that LCS deployment are not supported on VHDs. Command line deployments are still supported. 
-** Development tier 1 environments ** 
+
+**Development tier 1 environments** 
+
 For Retail implementations that include code extensions, I cannot recommend using a development environment without administrative privileges. There are too many tools I like to install, or OS features I need to configure. Therefore, using a Microsoft-hosted Tier 1 environment, either an included or addedon environment is problematic. For me, a better setup has been a machine hosted on a separate Azure subscription (aka. “cloud-hosted” in LCS user interface). 
 The same goes for a build environment. If you want to build your own POS extensions with an appx certificate (see below). 
 Since these decisions have financial impact, one can recover some of the cost by using the free Tier 1 as a simple test environment (or golden config environment).  It’s not ideal but should work for most projects.   
 Note: A user has the option to shutdown cloud-hosted environments at will. This helps reducing the hosting cost substantially.  
-** Branches, build definitions and environments **
+**Branches, build definitions and environments**
+
 Branching is a well know practice in software development and I assume that the general concepts are clear to the reader. A great video session about Continuous Delivery for Dynamics 365 Finance and Operations implementation projects can be viewed here: 
 https://mbspartner.microsoft.com/D365/Videos/101393. 
-There is no single best strategy for the creation of branches. Different projects and different sizes of implementations require various approaches. I have had success with the approach mentioned by Joris De Gruyter (link above). 
+T
+here is no single best strategy for the creation of branches. Different projects and different sizes of implementations require various approaches. I have had success with the approach mentioned by Joris De Gruyter (link above). 
  
 In the diagram you can see that we have 3 code branches.  
-The ** Dev ** branch is used for daily work that is not quite ready for testing but needs to be shared with other developers. If there are larger teams, there may be multiple Dev’ branches for different features or purposes.  
-The ** Main ** branch is for changes that meet a certain quality bar and are ready for test by others (UAT, performance tests, integration testing, sanity testing after hotfixes, etc.). Deployable packages for this branch must be created by a build environment.  It is not a good practice to generate X++ packages in a tier 1 and deploy these packages into an official test or production environment because it cannot be guaranteed that uncommitted source code changes were excluded from the build. 
-The ** ProdRel1 ** branch holds all source code exactly as it is deployed in production at any point in time.  A build environment may be used but it is not strictly required. If packages from Main branch will be deployed to production, the code should be merged (Main -> ProdRel1) after a production deployment.  But having our own branch for production gives us the opportunity to generate official builds from it if we later choose to do so. 
-All three branches hold both X++ code (extensions and hotfixes in Metadata folders) and a copy of a     ** RetailSdk**. The RetailSdk includes base Microsoft code and code extensions and can be different in each branch. 
+The **Dev** branch is used for daily work that is not quite ready for testing but needs to be shared with other developers. If there are larger teams, there may be multiple Dev’ branches for different features or purposes.  
+The **Main** branch is for changes that meet a certain quality bar and are ready for test by others (UAT, performance tests, integration testing, sanity testing after hotfixes, etc.). Deployable packages for this branch must be created by a build environment.  It is not a good practice to generate X++ packages in a tier 1 and deploy these packages into an official test or production environment because it cannot be guaranteed that uncommitted source code changes were excluded from the build. 
+The **ProdRel1** branch holds all source code exactly as it is deployed in production at any point in time.  A build environment may be used but it is not strictly required. If packages from Main branch will be deployed to production, the code should be merged (Main -> ProdRel1) after a production deployment.  But having our own branch for production gives us the opportunity to generate official builds from it if we later choose to do so. 
+All three branches hold both X++ code (extensions and hotfixes in Metadata folders) and a copy of a     **RetailSdk**. The RetailSdk includes base Microsoft code and code extensions and can be different in each branch. 
 The ** RetailSdk-mirror ** folder is used to bring in Microsoft changes to the RetailSdk and is not for development or build.  It should just be updated when a next version or hotfix is used. The process is described in detail below. 
 Note: For smaller Retail projects it can be sufficient to have two branches only. However, developers must be more disciplined as any code submissions immediately affect the officially tested builds.  The Main branch basically would become the Dev branch. 
 We can opt to build deployable packages out of multiple branches. If we do so, we must have one build definition per buildable branch.  The initial build definition is created automatically as part of a deployment of a build environment (Main). We can make copies of it for other branches. Note that small editions must be made to incorporate the Retail code in it (more information below). 
@@ -40,6 +47,7 @@ The high level steps to set this up in a way that real development work can begi
 - Preparation of the build definition(s) 
  
 TODO show build definitions and Agents and build boxes 
+
 ### Deploy a build environment (and empty Main VSTS branch) 
 
 Use the LCS portal to deploy a new build environment. My recommendation is to use a cloud-hosted environment. We will have more options and capabilities if we have administrative rights. See here for a discussion why a cloud-hosted environment may be better for you. 
@@ -59,13 +67,16 @@ In a couple of hours, the build box will be deployed, build definition and Main 
 ### Deploy a development environment 
 
 Use the LCS portal of your implementation project to create a cloud-hosted development environment. Make sure you are logged in the correct user account. The user account will be used to create the tenant of the development machine. As an example, if you are logged into LCS with foo@bar.com, the environment will be setup for the @bar.com tenant and expects users from that tenant. Even other users can be added to AX, the POS activation must be carried out by a user from that tenant.  There are cases where user accounts from different domains were used. That is needed for example in the case of customers, partners and other parties using emails from different domains. Coordination would have to be done during the POS activation, as only the tenant that was used during the deployment can activate.  This is usually not a huge problem but requires communication. 
+
 Pick the correct version, then DEVTEST, then DEV, a meaningful and unique name and make sure that the machine name is also unique (inside advanced settings). That’s all. In a couple of hours, the machine will be ready and can be used. 
 Since we do not have the Dev branch yet, we skip mapping our VSTS to the local directories at this time. We will do that after the next section. 
+
 ### Create the dev and release branches 
 
 As mentioned above we need a branch that holds more frequent and less often tested changes and we need a branch that holds the source code for production.  Our desired hierarchy looks like this: 
  
 Follow these steps to get the branches created: 
+
 - Log into a development environment 
 - Launch Visual Studio as an administrator and make sure you are logged in with an account that has access to the VSTS project 
 - In Team Explorer, connect Visual Studio to the VSTS project (if not already done) 
@@ -75,7 +86,8 @@ Follow these steps to get the branches created:
 - right click the Main branch, chose Branching and Merging, Branch… and name the new branch ProdRel1 
 - using the Pending Changes, submit this change to VSTS 
 At this point the Source Depot Explorer in Visual Studio looks like this: 
- ### Addition of the Retail Sdk 
+ 
+### Addition of the Retail Sdk 
 
 We need to add the Retail Sdk to each code branch (3 branches as shown here). This will allow us very quick propagation of code changes from Dev to Main and eventually to ProdRel1, and still separate changes between these different branches, just like with the X++ code. Another reason for having the Retail Sdk live in each branch next to the X++ code is that even though they represent different technologies and deployment locations, the X++ code represents in a sense a public API that the channel side (Retail Sdk + customizations) uses. Often a change in the X++ code goes hand-in-hand with a change in the Retail Sdk (tables extension for both AX and Channel with CDX changes, or a new Realtime API that Retail Server consumes). 
 The first thing we need to do is to add the mirror branch. The Retail Sdk mirror branch is needed to have a baseline for code merges when updates from Microsoft are being imported. The exact process how to take updates will be explained later.  
