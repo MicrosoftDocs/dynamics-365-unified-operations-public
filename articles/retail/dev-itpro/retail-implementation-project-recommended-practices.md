@@ -12,30 +12,44 @@ This information includes both AX and Retail practices but the focus is on Retai
 ### Overview 
 
 Starting with the launch of AX7 the majority of environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). The former is the default, and the latter is usually done to have more control over a development or build environment.  See more details at https://docs.microsoft.com/en-us/dynamics365/unifiedoperations/dev-itpro/lifecycle-services/lcs-works-lcs.  
+
 Tier 1 machines are developer or build environments. Tier 2 and up are multi-box environments for multiple test and verification purposes. Production environments are hands-off, and size of the environment is determined by the sizing process in LCS.  
+
 A hosting alternative is to download a VHD from LCS and host it locally on a server. From a development perspective, there is no difference regarding the capabilities of the VHD images compared with a hosted VM, except that LCS deployment are not supported on VHDs. Command line deployments are still supported. 
 
 **Development tier 1 environments** 
 
 For Retail implementations that include code extensions, I cannot recommend using a development environment without administrative privileges. There are too many tools I like to install, or OS features I need to configure. Therefore, using a Microsoft-hosted Tier 1 environment, either an included or addedon environment is problematic. For me, a better setup has been a machine hosted on a separate Azure subscription (aka. “cloud-hosted” in LCS user interface). 
+
 The same goes for a build environment. If you want to build your own POS extensions with an appx certificate (see below). 
+
 Since these decisions have financial impact, one can recover some of the cost by using the free Tier 1 as a simple test environment (or golden config environment).  It’s not ideal but should work for most projects.   
+
 Note: A user has the option to shutdown cloud-hosted environments at will. This helps reducing the hosting cost substantially.  
+
 **Branches, build definitions and environments**
 
 Branching is a well know practice in software development and I assume that the general concepts are clear to the reader. A great video session about Continuous Delivery for Dynamics 365 Finance and Operations implementation projects can be viewed here: 
 https://mbspartner.microsoft.com/D365/Videos/101393. 
-T
-here is no single best strategy for the creation of branches. Different projects and different sizes of implementations require various approaches. I have had success with the approach mentioned by Joris De Gruyter (link above). 
+
+There is no single best strategy for the creation of branches. Different projects and different sizes of implementations require various approaches. I have had success with the approach mentioned by Joris De Gruyter (link above). 
  
 In the diagram you can see that we have 3 code branches.  
+
 The **Dev** branch is used for daily work that is not quite ready for testing but needs to be shared with other developers. If there are larger teams, there may be multiple Dev’ branches for different features or purposes.  
+
 The **Main** branch is for changes that meet a certain quality bar and are ready for test by others (UAT, performance tests, integration testing, sanity testing after hotfixes, etc.). Deployable packages for this branch must be created by a build environment.  It is not a good practice to generate X++ packages in a tier 1 and deploy these packages into an official test or production environment because it cannot be guaranteed that uncommitted source code changes were excluded from the build. 
+
 The **ProdRel1** branch holds all source code exactly as it is deployed in production at any point in time.  A build environment may be used but it is not strictly required. If packages from Main branch will be deployed to production, the code should be merged (Main -> ProdRel1) after a production deployment.  But having our own branch for production gives us the opportunity to generate official builds from it if we later choose to do so. 
-All three branches hold both X++ code (extensions and hotfixes in Metadata folders) and a copy of a     **RetailSdk**. The RetailSdk includes base Microsoft code and code extensions and can be different in each branch. 
+
+All three branches hold both X++ code (extensions and hotfixes in Metadata folders) and a copy of a **RetailSdk**. The RetailSdk includes base Microsoft code and code extensions and can be different in each branch. 
+
 The ** RetailSdk-mirror ** folder is used to bring in Microsoft changes to the RetailSdk and is not for development or build.  It should just be updated when a next version or hotfix is used. The process is described in detail below. 
+
 Note: For smaller Retail projects it can be sufficient to have two branches only. However, developers must be more disciplined as any code submissions immediately affect the officially tested builds.  The Main branch basically would become the Dev branch. 
+
 We can opt to build deployable packages out of multiple branches. If we do so, we must have one build definition per buildable branch.  The initial build definition is created automatically as part of a deployment of a build environment (Main). We can make copies of it for other branches. Note that small editions must be made to incorporate the Retail code in it (more information below). 
+
 The high level steps to set this up in a way that real development work can begin is below (see illustration above for numbering): 
 
 - Deploy a build environment (and empty Main VSTS branch) (1) 
