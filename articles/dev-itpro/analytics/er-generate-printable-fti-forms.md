@@ -83,9 +83,9 @@ Free text invoice (FTI) forms are generated in the ER framework the same way tha
 
 You can generate FTI forms choosing invoices either by range or by selection. 
 
-![Electronic reporting destination](media/FTIbyGER-ERFileDestinationSetting.png)
+![Electronic reporting destination](media/FTIbyGER-InvoiceSelection.png)
 
-![Electronic reporting format destination](media/FTIbyGER-ERFileDestinationUsage.png)
+![Electronic reporting format destination](media/FTIbyGER-InvoiceExcelPreview.png)
 
 When you use ER formats to print FTI forms this way, the default file destinations are used and there is no option to change the destination. For more information about how the ER destinations can be configured for ER formats, see [Electronic reporting destinations](electronic-reporting-destinations.md).
 
@@ -96,9 +96,9 @@ You can also generate FTI forms when you post a free text invoice by turning **P
   -	Name	ERFormatDestinationRuntimeMaintain
   -	Label	Maintain electronic reporting format destination during runtime
 
-![Invoice preview](media/FTIbyGER-InvoiceExcelPreview.png)
+![Invoice preview](media/FTIbyGER-ERFileDestinationSetting.png)
 
-![Invoice preview](media/FTIbyGER-InvoiceExcelPreview.png)
+![Invoice preview](media/FTIbyGER-ERFileDestinationUsage.png)
 
 The following destinations are currently supported by ER framework for generated documents:
 
