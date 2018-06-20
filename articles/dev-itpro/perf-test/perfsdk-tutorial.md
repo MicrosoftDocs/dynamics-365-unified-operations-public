@@ -66,14 +66,16 @@ To view a video that shows how to create a single-user test, go to [https://mix.
 
 1. In Control Panel in Microsoft Windows, select **System and Security** &gt; **System** &gt; **Advanced System Settings**. Verify that the **TestRoot** environment variable is set to the path of the PerfSDK folder.
 
-    [![TestRoot environment variable set to the PerfSDK folder](./media/testroot.jpg)](./media/testroot.jpg)
+    [![EnvironmentVariable](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
 
 2. Download the **selenium-dotnet-strongnamed-2.42.0.zip** and **IEDriverServer\_Win32\_2.42.0.zip** files from [http://selenium-release.storage.googleapis.com/index.html?path=2.42/](http://selenium-release.storage.googleapis.com/index.html?path=2.42/).
-3. Extract the files, and copy the dynamic-link libraries (DLLs) to the **PerfSDK\\Common\\External\\Selenium** folder. Add a reference to **WebDriver.dll** to your project.
+3. Extract the files.  Copy the dynamic-link libraries (DLLs) from the **selenium-dotnet-strongnamed-2.42.0.zip\net40** folder to the **PerfSDK\\Common\\External\\Selenium** folder.  Copy the **IEDriverServer.exe** from the **IEDriverServer_Win32_2.42.0.zip** to the **PerfSDK\\Common\\External\\Selenium** folder as well.
 
     [![DLLs in the PerfSDK\Common\External\Selenium folder](./media/perf103d.png)](./media/perf103d.png)
 
-4. Generate and install a certificate. To generate a certificate file, open a Command Prompt window as an administrator, and run the following commands. When you're prompted for a private key password, select **None**.
+4. Add a reference to the **WebDriver.dll** in the **PerfSDK\\Common\\External\\Selenium** folder to your Visual Studio project.    
+
+5. Generate and install a certificate. To generate a certificate file, open a Command Prompt window as an administrator, and run the following commands. When you're prompted for a private key password, select **None**.
 
     ```
     "C:\Program Files (x86)\Windows Kits\8.1\bin\x64\makecert" -n "CN=127.0.0.1" -ss Root -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.1 -sv c:\temp\authcert.pvk c:\temp\authcert.cer
@@ -92,19 +94,19 @@ To view a video that shows how to create a single-user test, go to [https://mix.
     - authcert.cer 
     - authcert.pvk
 
-5. Install the **authcert.pfx** and **authcert.cer** certificate files. When you install these files, make sure that you select **Local Machine**. Copy the **authcert.pfx** file to the **PerfSDK** folder.
-6. Open a Microsoft Windows PowerShell window as an administrator, and run the following commands to get the thumbprint of the installed certificate.
+6. Install the **authcert.pfx** and **authcert.cer** certificate files. When you install these files, make sure that you select **Local Machine**. Copy the **authcert.pfx** file to the **PerfSDK** folder.
+7. Open a Microsoft Windows PowerShell window as an administrator, and run the following commands to get the thumbprint of the installed certificate.
 
     ```
     cd Cert:\LocalMachine\My
     Get-ChildItem | Where-Object { $_.Subject -like "CN=127.0.0.1" }
     ```
 
-7. In the **CloudEnvironment.Config** file, enter the thumbprint as the value for the **SelfSigningCertificateThumbprint** key.
+8. In the **CloudEnvironment.Config** file, enter the thumbprint as the value for the **SelfSigningCertificateThumbprint** key.
 
     [![Updated CloudEnvironment.Config file](./media/config-thumbprint.jpg)](./media/config-thumbprint.jpg)
 
-8. Follow these steps to update the **wif.config** file so that Application Object Server (AOS) trusts the certificate:
+9. Follow these steps to update the **wif.config** file so that Application Object Server (AOS) trusts the certificate:
 
     1. Start Microsoft Internet Information Services (IIS), and find **Microsoft Dynamics 365 for Finance and Operations** in the list of sites.
     2. Select **Explore**, and find the **wif.config** file.
@@ -117,7 +119,7 @@ To view a video that shows how to create a single-user test, go to [https://mix.
 
     4. Restart IIS.
 
-9. In Visual Studio, open the **PerfSDKSample** project, and find the **PurchaseReq.cs** file. This file is a sample single-user test. In the file, comment out the following lines.
+10. In Visual Studio, open the **PerfSDKSample** project, and find the **PurchaseReq.cs** file. This file is a sample single-user test. In the file, comment out the following lines.
 
     ```
     if (this.TestContext !=null)
@@ -128,14 +130,14 @@ To view a video that shows how to create a single-user test, go to [https://mix.
 
     [![Lines commented out in PurchaseReq.cs](./media/perf103e.png)](./media/perf103e.png)
 
-10. Modify the **CloudEnvironment.Config** file by entering your admin user name. Here is an example.
+11. Modify the **CloudEnvironment.Config** file by entering your admin user name. Here is an example.
 
     > [!NOTE]
     > **ConfigName** must be set to **DEVFABRIC**. 
 
     [![Modified CloudEnvironment.Config file](./media/PerfSDKCloudEnvironmentAdminUser.PNG)](./media/PerfSDKCloudEnvironmentAdminUser.PNG) 
 
-11. In the **CloudEnvironment.Config** file, enter your endpoint.
+12. In the **CloudEnvironment.Config** file, enter your endpoint.
 
     > [!NOTE]
     > If the environment is enabled for Application Request Routing (ARR), you have two endpoints. Here is an example:
@@ -147,11 +149,11 @@ To view a video that shows how to create a single-user test, go to [https://mix.
     >
     > [![Endpoints in CloudEnvironment.Config](./media/perf103upd.png)](./media/perf103upd.png)
 
-12. Select **Test** &gt; **Test settings**, set **Default processor architecture** to **x64**, and then build the solution.
-13. Select **Test** &gt; **Windows** &gt; **Test Explorer** to view the list of tests.
+13. Select **Test** &gt; **Test settings**, set **Default processor architecture** to **x64**, and then build the solution.
+14. Select **Test** &gt; **Windows** &gt; **Test Explorer** to view the list of tests.
 
     > [!NOTE]
-    > Sometimes, Visual Studio might not update the list of tests. In this case, restart Visual Studio, and then reopen Test Explorer.
+    > Sometimes, Visual Studio might not update the list of tests after you created a test script from a task recording. In this case, restart Visual Studio, and then reopen Test Explorer.
 
     Your new test will be named **TestMethod**. If you change the method name of TestMethod, your test will receive an individual name. 
 
@@ -182,12 +184,12 @@ Remove this line from any tests that will be run as load tests. This code is req
 
 Make sure that the values that you entered when you made the task recording are randomized. You might have to use the Data Expansion Tool first to generate test data.
 
-## Set up Visual Studio Online for multiuser testing
+## Set up Visual Studio Team Services for multiuser testing
 
-For this example, you will use the ProcureToPay.cs file. To start Visual Studio, you must sign in to the [Visual Studio Online portal](https://app.vssps.visualstudio.com/profile/view), and then select **Open in Visual Studio**.
+For this example, you will use the ProcureToPay.cs file. To start Visual Studio, you must sign in to the [Visual Studio Team Services portal](https://app.vssps.visualstudio.com/profile/view), and then select **Open in Visual Studio**.
 
 > [!NOTE]
-> You must complete this step only one time. After you've signed in to Visual Studio Online, the settings are saved.
+> You must complete this step only one time. After you've signed in to Visual Studio Team Services, the settings are saved.
 
 [![Open in Visual Studio](./media/vsonline-5-1024x323.jpg)](./media/vsonline-5.jpg)
 
@@ -212,7 +214,7 @@ For this example, you will use the ProcureToPay.cs file. To start Visual Studio,
 
 ### Test the sandbox environment
 
-Up to this point, the instructions have assumed that you have a developer topology where the AOS machine is also your development machine. To run load tests in Visual Studio Online, the environment that you test must be a sandbox environment. You must complete a few additional steps to establish trust between the sandbox environment and the computer that runs the load tests. The computer that runs the load tests can be either your development machine or the test agent that is created by Visual Studio Online.
+Up to this point, the instructions have assumed that you have a developer topology where the AOS machine is also your development machine. To run load tests in Visual Studio Team Services, the environment that you test must be a sandbox environment. You must complete a few additional steps to establish trust between the sandbox environment and the computer that runs the load tests. The computer that runs the load tests can be either your development machine or the test agent that is created by Visual Studio Online.
 
 1. Establish a Remote Desktop connection to your sandbox AOS machine, and copy over the **.cer** file. Double-click the file to install it. When you're prompted for the certificate store, select **Personal**.
 2. Start IIS, and find **AOSService** in the list of sites. Then select **Explore**, and find the **wif.config** file. In the **wif.config** file, find the authority that is named **AxTokenIssuer**. You must add your thumbprint to the list of thumbprints for this authority. (Use the values from the certificate that you generated earlier.)
@@ -404,7 +406,7 @@ Two scenarios can cause this error:
 
     ![Admin user](./media/sdk_admin.png)
 
-- The user who is specified as **SelfMintingAdminUser** in the CloudEnvironment.config file has a provider other than `"<https://sts.windows-ppe.net/>"` or `"<https://sts.windows.net/>"`. Sometimes, a company-specific domain is included in the **Provider** field for the admin user. To work around this issue, in Finance and Operations, create a user who has any name and email address. Assign the System Administrator role to the new user. You don't have to link the user to a real Azure Active Directory user. Specify this new admin user as **SelfMintingAdminUser** in the CloudEnvironment.config file.
+- The user who is specified as **SelfMintingAdminUser** in the CloudEnvironment.config file has a **Provider** other than `"<https://sts.windows-ppe.net/>"` or `"<https://sts.windows.net/>"`. Sometimes, a company-specific domain is included in the **Provider** field for the admin user. To work around this issue, in Finance and Operations, create a user who has any name and email address. Assign the System Administrator role to the new user. You don't have to link the user to a real Azure Active Directory user. Specify this new admin user as **SelfMintingAdminUser** in the CloudEnvironment.config file.
 
 ### The HTTP request was forbidden with client authentication scheme 'Anonymous'
 
