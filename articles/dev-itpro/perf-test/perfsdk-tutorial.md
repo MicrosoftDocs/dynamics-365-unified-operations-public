@@ -69,7 +69,7 @@ To view a video that shows how to create a single-user test, go to [https://mix.
     [![EnvironmentVariable](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
 
 2. Download the **selenium-dotnet-strongnamed-2.42.0.zip** and **IEDriverServer\_Win32\_2.42.0.zip** files from [http://selenium-release.storage.googleapis.com/index.html?path=2.42/](http://selenium-release.storage.googleapis.com/index.html?path=2.42/).
-3. Extract the files.  Copy the dynamic-link libraries (DLLs) from the **selenium-dotnet-strongnamed-2.42.0.zip\net40** folder to the **PerfSDK\\Common\\External\\Selenium** folder.  Copy the **IEDriverServer.exe** from the **IEDriverServer_Win32_2.42.0.zip** to the **PerfSDK\\Common\\External\\Selenium** folder as well.
+3. Extract the files. Copy the dynamic-link libraries (DLLs) from the **selenium-dotnet-strongnamed-2.42.0.zip\net40** folder to the **PerfSDK\\Common\\External\\Selenium** folder.  Copy the **IEDriverServer.exe** from the **IEDriverServer_Win32_2.42.0.zip** to the **PerfSDK\\Common\\External\\Selenium** folder as well.
 
     [![DLLs in the PerfSDK\Common\External\Selenium folder](./media/perf103d.png)](./media/perf103d.png)
 
@@ -153,7 +153,7 @@ To view a video that shows how to create a single-user test, go to [https://mix.
 14. Select **Test** &gt; **Windows** &gt; **Test Explorer** to view the list of tests.
 
     > [!NOTE]
-    > Sometimes, Visual Studio might not update the list of tests after you created a test script from a task recording. In this case, restart Visual Studio, and then reopen Test Explorer.
+    > Sometimes, Visual Studio might not update the list of tests after you create a test script from a task recording. In this case, restart Visual Studio, and then reopen Test Explorer.
 
     Your new test will be named **TestMethod**. If you change the method name of TestMethod, your test will receive an individual name. 
 
