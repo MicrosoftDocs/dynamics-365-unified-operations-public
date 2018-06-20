@@ -68,71 +68,79 @@ In your application instance, you must have the ER format configuration that wil
 To learn how to configure ER formats, see [Create a format configuration for electronic reporting (ER)](../tasks/er-format-configuration-2016-11.md). To learn more about how to design ER formats to generate reports in OpenXML format, see [Design a configuration for generating reports in OpenXML format for electronic reporting (ER)](../tasks/er-design-reports-openxml-2016-11.md).
 
 ## Configure print management
-You can assign ER formats to generate FTI forms using the ER framework the same way you assign for SSRS reports. You can associate the ER format with all Accounts receivable free text invoices by navigating to, **Accounts receivable** > **Setup** > **Forms** > **Form setup** > **General** > **Print management** > **Free text invoice** > **Original**. If you want to associate the ER format with a specific customer or invoice, complete the followign steps.
+You can assign ER formats to generate FTI forms using the ER framework the same way you assign for SSRS reports. You can associate the ER format with all Accounts receivable free text invoices by navigating to, **Accounts receivable** > **Setup** > **Forms** > **Form setup** > **General** > **Print management** > **Free text invoice** > **Original**. If you want to associate the ER format with a specific customer or invoice, complete the following steps.
 1.	Go to **Accounts receivable** > **Invoices** > **All free text invoices**.
 2.	Select the free text invoice you want to associate and open the **Print management setup** form.
 3.	Choose the documents’ level to identify the scope of invoices for processing and then select the ER fromat for the document level.
 
+![Print management setup](media/FTIbyGER-PMSetting.png)
+
   > [!NOTE]
   > Only ER formats that use the root descriptor **FreeTextInvoice** of the **CustomersInvoicing** data model are visible in the **Report format lookup** field for the format selection.
 
-## Generate FTI forms
-FTi forms are generated in the ER framework the same way that SSRS reports are generated.
-1.	Generate FTI forms choosing invoices either by range or by selection.
-Note. When you use ER formats to print FTI forms this way, the default ER file destinations are used for executed ER format. User have no option to change this behavior. Review this page to learn how the ER destinations can be configured for ER formats.
-2.	Generate FTI forms during free text invoice posting:
-a.	Post free text invoice.
-b.	Turn Print invoice on.
-c.	Turn Use print management destination off.
-Note. When you use ER formats to print FTI forms this way, the default ER file destination is used for executed ER format. User will be able to change the default destination at run-time when this destination has been previously configured. To have this capability, the user must be granted the following security privilege:
--	Name	ERFormatDestinationRuntimeMaintain
--	Label	Maintain electronic reporting format destination during runtime
-Currently, the following destinations are supported by ER framework for generated documents:
--	Downloaded file
-o	Generated forms are offered by using browser as downloads
--	Screen
-o	Office 365 Microsoft Excel is used to preview FTI forms in Excel format
--	SharePoint folder
-o	Generated forms are stored based on setting of the Document management framework
--	Application archive
-o	Files of Azure storage as attachments of records of execution log
--	Email
-o	Generated forms are sent as e-mail attachment
-Note. You can’t send the generated FTI form directly to the printer as the direct printing by using the Dynamics Printer Routing Agent is not supported by the ER framework yet.
+## Generate free text invoice forms
+Free text invoice (FTI) forms are generated in the ER framework the same way that SSRS reports are generated.
+
+You can generate FTI forms choosing invoices either by range or by selection. 
+
+![Electronic reporting destination](media/FTIbyGER-ERFileDestinationSetting.png)
+
+![Electronic reporting format destination](media/FTIbyGER-ERFileDestinationUsage.png)
+
+When you use ER formats to print FTI forms this way, the default file destinations are used and there is no option to change the destination. For more information about how the ER destinations can be configured for ER formats, see [Electronic reporting destinations](electronic-reporting-destinations.md).
+
+You can also generate FTI forms when you post a free text invoice by turning **Print invoice** on and **Use print management destinations** off.
+
+  > [!NOTE}
+  > When you use ER formats to print FTI forms this way, the default ER file destination is used. You can change the default destination at run-time if the destination has already been configured. To change the destination, you must have the following security privilege:
+  -	Name	ERFormatDestinationRuntimeMaintain
+  -	Label	Maintain electronic reporting format destination during runtime
+
+![Invoice preview](media/FTIbyGER-InvoiceExcelPreview.png)
+
+![Invoice preview](media/FTIbyGER-InvoiceExcelPreview.png)
+
+The following destinations are currently supported by ER framework for generated documents:
+
+-	Downloaded file: Generated forms are offered by using browser as downloads
+-	Screen: Office 365 Microsoft Excel is used to preview FTI forms in Excel format
+- SharePoint folder: Generated forms are stored based on setting of the Document management framework
+-	Application archive: Files of Azure storage as attachments of records of execution log
+-	Email: Generated forms are sent as e-mail attachment
+
+  > [!NOTE]
+  > You can’t send the generated FTI form directly to the printer because direct printing using the Dynamics Printer Routing Agent is not supported at this time.
 
 ## Download sample ER configurations to generate FTI printable forms
-You can download sample ER configurations to start using them as a template for your FTI solutions. They are stored in the Shared asset library of the Microsoft Lifecycle Services:
--	Customer invoicing model configuration containing the required data model and model mapping;
+You can download sample ER configurations to use as a template for your FTI solutions. The configurations are stored in the Shared asset library in Microsoft Lifecycle Services. The configurations include:
+
+-	Customer invoicing model configuration that contains the required data model and model mapping
 -	Customer FTI report (GER) configuration that contains the sample format.
-Note.  Be aware that these configurations have been created as samples for helping to understand possible scenarios and this feature needs. The future of these configurations will depend on the results of this evaluation and received feedbacks.
+
+  > [!NOTE]
+  > These configurations have been created as samples to help clarify possible scenarios. The future of these configurations will depend on the results of this evaluation and any feedback received.
 
 ### Features implemented in the sample ER format
-Microsoft Excel document is used as a template in the sample ER format configuration for generation of FTI forms.
-Currently, this sample ER format supports the following features for generation of FTI forms:
-1.	FTI forms can be generated for not posted yet and posted original invoices. Corrected invoices as well as credit notes are not supported.
-2.	FTI forms is generated on the invoice language. Note that the values and dates in the generated form are formatted based on the settings of the user’s client locale.
-3.	Instead of the invoice lines, the section with the notification about data unavailability will be shown in the generated form when there are no lines in the processing invoice.
-4.	Invoice header will be generated based on the paper format that has been chosen in Accounts receivable (AR) forms parameters for the FTI form. Company details will be placed to the header of the generated invoice form only for the blank paper format.
-5.	Company and customer tax exempt numbers are shown in the generated invoice form when the appropriate option has been selected in AR forms parameters for the FTI form.
-6.	Invoice lines as well as invoice totals sections are shown presenting by default invoice’s monetary details in the invoice registration currency.
-7.	In addition to the invoice registration currency, invoice totals section can show monetary details in the euro currency. It will happen when the option Print amount in currency representing the euro option of the AR forms parameters has been turned on.
-8.	Processing invoice notes are presented (when available) in the generated invoice form based on the corresponding setting of the AR forms parameters for the FTI form (notes for the entire invoice as well as for each invoice line).
-9.	Form notes are presented in the generated invoice form when they have been configured in the AR form notes list:
-a.	for the customer FTI form;
-b.	for the processing invoice language.
-10.	Custom footer text is presented at the end of the generated invoice when it has been configured by using Print management tool:
-a.	for the processing invoice language;
-b.	for using ER format and FTI documents scope.
-11.	Cash discount information is presented (when available) in the invoice’s totals section.
-12.	Payment schedule details are presented (when available) in the invoice’s payment schedule section.
-13.	Charges transactions are presented (when available) in the invoice’s markup section.
-14.	Sales tax details are optionally shown in the dedicated for that section of the generated invoice form depending on the Sales tax specification option of the AR forms parameters. This section can present tax details either in the invoice registration currency only or in the invoice registration currency and company accounting currency simultaneously.
-15.	The direct debit notification details will be shown in the dedicated for that section of the generated invoice form:
-a.	when the method of payment with mandatory direct debit mandate ID has been selected for the invoice;
-b.	when the processing invoice has been registered in euro currency;
-c.	when the direct debit mandate ID has been defined for the invoice.
-16.	When available, prepayment details can be shown in the dedicated for that section (for posted invoices only).
-17.	Generated invoice form can be sent to an invoice customer via email as an attachment. The appropriate ER file destination should be configured to do so for using ER format (see more details below).
+Microsoft Excel is used as a template in the sample ER format configuration to generate FTI forms.
+Currently, this sample ER format supports the following features to generate FTI forms:
+
+- Generated for original invoices both posted and not yet posted. Corrected invoices as well as credit notes are not supported.
+- Generated in the invoice language. Note that the values and dates in the generated form are formatted based on the settings of the user’s client locale.
+- Generated invoice will show data unavailability notifications when there are no lines in the processing invoice.
+- Generated invoice header will based on the paper format that has been chosen in **Accounts receivable parameters** form for the FTI form. Company details will be placed to the header of the generated invoice form only for the blank paper format.
+- Generated invoice form shows company and customer tax exempt numbers when the appropriate option has been selected in the **Accounts receivable parameters** form for the FTI form.
+- Generated invoice lines as well as invoice totals sections are shown presenting by default invoice’s monetary details in the invoice registration currency.
+- Generated invoice totals section can show monetary details in the euro currency and the invoice registration currency when the option **Print amount in currency representing the euro** is enabled in **Accounts receivable** parameters.
+- When available, the generated invoice form shows process invoice notes that are based on settings in the **Accounts receivable** parmaters form. Notes are included for the entire invoice as well as for each invoice line)
+- Generated invoice form includes notes for the customer FTI form and the processing invoice language when they have been configured in the AR form notes list.
+- When configured, the generated invoice includes customer footer text by using Print management tool for the invoice languate and the ER format and FTO document scope.
+- When available, the generated invoice form includes cash discount information in the invoice’s totals section.
+- When available, the generated invoice form includes payment schedule details in the invoice’s payment schedule section.
+- When availale, the generated inovoice form includes charges transactions in the invoice’s markup section.
+- Generated invoice form includes sales tax details depending on the **Sales tax specification** in the **Accounts receivable parameters** form. This section can present tax details either in the invoice registration currency only or in the invoice registration currency and company accounting currency simultaneously.
+- Generated invoice form will show direct debit notification details including when the method of payment with the mandatory direct debit mandate ID was selected for the invoice, when the processing invoice was registered in euro currency, and when the direct debit mandate ID was defined for the invoice.
+- When available, the generated invoice shows prepayment details for posted invoices.
+- Generated invoice form can be sent to an invoice customer as an email attachment. The appropriate ER file destination should be configured for using ER format.
 
 ### Country-specific features 
 The following country-specific features are included in the sample ER format to show how specific requirements are handled in ER configurations.
@@ -141,13 +149,13 @@ The following country-specific features are included in the sample ER format to 
 The Enterprise register term is placed on the header of the generated invoice form when the invoice is processed for the legal entity that is configured by:
 
 - Using the country context for Norway.
-- Having **Print Foretaksregisteret** parameter active on sales documents.
+- Having the parameter, **Print Foretaksregisteret**, active on sales documents.
 
 #### Spain
 The Special regime for cash accounting method term will be placed on the header of the generated invoice form when the invoice is processed for the legal entity that is configured by:
 
 - Using the country context for Spain.
-- Having the special regime for cash accounting method enabled on the date of the invoice processing.
+- Having the special regime for the cash accounting method enabled on the invoice processing date.
 
 When available, cash discount details including cash discount amount and invoice line net amount, are presented in the invoice totals section of the generated invoice form when it has been processed for the legal entity that is configured by:
 
@@ -155,35 +163,37 @@ When available, cash discount details including cash discount amount and invoice
 - Having **Cash discount** applied in the invoice option (**General ledger parameters** > **Sales tax section**).
 
 #### Italy
-The goods discount mark is presented in the invoice line section of the generated invoice form when the invoice is processed for the legal entity that is configured by using the country context for Italy.
+The goods discount mark is included in the invoice lines of the generated invoice when the it is processed for the legal entity that is configured using the country context for Italy.
 
 #### Finland
-5.	In addition to the generated invoice form, the Giro money transfer slips can be generated:
-a.	For the legal entity configured as follows:
-i.	Using the country context for Finland;
-ii.	Having at least one bank account marked as Giro account and Bank bar code;
-b.	For an invoice defined as follows:
-i.	Marked as required the Finnish associated payment attachment.
+In addition to the generated invoice form, the Giro money transfer slips can be generated:
 
-Note that the sample ER format has been configured to optionally generate the Giro money transfer slips in the separated worksheet.
+- For the legal entity that uses the country context for Finland and has at least one bank account marked as a Giro account and Bank bar code. 
+- For an invoice that is marked as required for the Finnish associated payment attachment.
 
-Be aware that you need to install beforehand the font generating the barcode on the local machine where the generated invoice form in Microsoft Excel format will be previewed.
+  > [!NOTE]
+  > The sample ER format has been configured to optionally generate the Giro money transfer slips in the separated worksheet.
 
-### Elements of the sample ER format to configure the email destination
-The following elements of the sample ER format can be used to configure the email destination:
-1.	The email address of a customer contact of the processing invoice can be accessed by the following ER expression: model.InvoiceBase.Contact.ElectronicMail.
-2.	The email subject text can be accessed by the following ER expression: Emailing.TxtToUse.Subject.
-3.	The email body text can be accessed by the following ER expression: Emailing.TxtToUse.Body.
+You must first install the font used to generate the barcode on the local machine where the generated invoice form in Microsoft Excel format will be previewed.
 
-The default text of email’s subject and body is defined in the sample ER format as language dependent format’s labels. It will be used for emailing when a custom organization email template with the predefined ID ERFTITMP has not been added.
+### Use the sample ER format to configure email destinations
+Use the following elements of the sample ER format to configure email destinations.
 
-Note. The email template ID ERFTITMP has been defined in the sample ER format and can be changed if needed in a new ER format derived from this sample ER format.
+- The email address of a customer contact can be accessed with the following ER expression: model.InvoiceBase.Contact.ElectronicMail.
+- The email subject text can be accessed with the following ER expression: Emailing.TxtToUse.Subject.
+- The email body text can be accessed with the following ER expression: Emailing.TxtToUse.Body.
 
-If the organization email template with the predefined ID ERFTITMP has been added for the legal entity in which you process the invoice, the configured in this email template subject and body text will be used to generate the email. 
+The default text of email’s subject and body is defined in the sample ER format with the language dependent on the format’s labels. It will be used for emailing when a custom organization email template with the predefined ID **ERFTITMP** has not been added.
 
-Note that the ER expression of the sample ER format Emailing.TxtToUse.Subject configured to substitute any occurrences of characters %1 by the processing invoice ID.
+  > [!NOTE]
+  > The email template ID **ERFTITMP** has been defined in the sample ER format and can be changed if needed in a new ER format that is created from this sample format.
 
-Note that the ER expression of the sample ER format Emailing.TxtToUse.Body configured to do the following characters’ substitutions:
+If the organization email template with the predefined ID **ERFTITMP** has been added for the legal entity that you are processing the invoice for, the template for the email subject and body text will be used to generate the email. 
+
+  > [!NOTE]
+  > The ER expression of the sample ER format Emailing.TxtToUse.Subject is configured to substitute any occurrences of the characters "%1" by the processing the invoice ID.
+
+Note that the expression of the sample format Emailing.TxtToUse.Body is configured for the following characters’ substitutions:
 •	%1 characters by the name of the customer’s contact person
 •	%2 characters by the company name
 •	%3 characters by the customer name
