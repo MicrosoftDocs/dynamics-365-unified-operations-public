@@ -175,13 +175,21 @@ No matter if we have customizations in the code branches already or not, the fol
 4. Optional: Restore a recent copy of a production database with good data 
 
  a. Rename existing database to AxDB_Orig 
+ 
  b. Restore the bak file in SQL Server Management Studio (if a bacpac file exists, follow these steps: https://docs.microsoft.com/en-us/dynamics365/unified-operations/devitpro/database/copy-database-from-azure-sql-to-sql-server)  
+ 
  c. Refresh the model store in Visual Studio 
+ 
  d. In Visual Studio, do a full build (if the source and destination environments of the database are on different versions) 
+ 
  e. In Visual Studio, run a full DB sync 
+ 
  f. Make sure Batch service is running 
+ 
  g. Run the Environment Re-provisioning tool (latest from global shared asset library, LCS/Maintain to deploy) 
+ 
  h. Verify that the tool succeeded, this query should show all updated local dev machine urls: select * from dbo.RETAILCHANNELPROFILEPROPERTY where ISSYSTEMRECORD = 1 
+ 
  i. Using the AX user interface, run the “Initialize Retail Scheduler” with deleting old data 
 
 5. Make sure you now can login into AX with your user account.  If you were not the original Admin user in AX production database (if you restored), you can run the Admin Provisioning tool to take ownership (tool is in PackagesLocalDirectory/bin) 
@@ -238,11 +246,13 @@ Once we are done, we just clone the build definition and name it so it becomes c
 - the “Build the solution” step (X++ build) 
 - the Retail Sdk copy packages step 
  
-[![LCS Environment Page](./media/17-LCS-environment-page.png)](/media/17-LCS-environment-page.png)
+[![Build definitions](./media/16-build-definitions.png)](/media/16-build-definitions.png)
  
 Some other good practices or tricks I wanted to share are: 
 1. An official build can be sped up by making these changes to the Build definition (Variables section):
+ 
  a. Set DeployReports to 0 
+ 
  b. Set SkipSourcePackageGeneration to 1 
 2. Change the version of the Retail customization in each branch. It should be different in Dev, Main and ProdRel1 branches. Change either the Customization.settings or add a new global.props file under the RetailSdk\BuildTools folder. Any numbering is fine. You could number Dev as 1.0.0.x, Main as 1.0.1.x and ProdRel1 as 1.0.2.x.  
 3. To save cost, shut down build or dev environments when they are not in use 
