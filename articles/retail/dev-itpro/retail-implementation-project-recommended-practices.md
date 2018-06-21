@@ -198,7 +198,9 @@ No matter if we have customizations in the code branches already or not, the fol
 8. Do a full build of the RetailSdk on command line 
  
  a. open "MSbuild command prompt for Visual Studio 2015" as Administrator 
+ 
  b. change directory into where your RetailSdk is located on the local VM 
+ 
  c. type msbuild and hit Enter, this should not cause any build errors 
 
 9. add the development/sample MPOS certificate to the local machine's trusted root certificate store (...\RetailSDK\BuildTools\ModernPOSAppxSigningCert-Contoso.pfx, password empty string) 
@@ -254,6 +256,7 @@ Some other good practices or tricks I wanted to share are:
 1. An official build can be sped up by making these changes to the Build definition (Variables section):
  
  a. Set DeployReports to 0 
+ 
  b. Set SkipSourcePackageGeneration to 1 
 
 2. Change the version of the Retail customization in each branch. It should be different in Dev, Main and ProdRel1 branches. Change either the Customization.settings or add a new global.props file under the RetailSdk\BuildTools folder. Any numbering is fine. You could number Dev as 1.0.0.x, Main as 1.0.1.x and ProdRel1 as 1.0.2.x.  
