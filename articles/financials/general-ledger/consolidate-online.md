@@ -5,7 +5,7 @@ After you’ve completed your setup, you enter the details of the consolidation 
 ## Criteria
 On the **Criteria** tab of the **Consolidate [Online]** page, you define the accounts, periods, and type of data that is being consolidated.
 
-![Criteria consolidate online](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/criteria-consolidate-online.png "Criteria consolidate online")
+![Criteria consolidate online](./media/criteria-consolidate-online.png "Criteria consolidate online")
  
 Here is an explanation of the various fields on this tab:
 - **Description** – Enter a precise description for the period that you’re consolidating.
