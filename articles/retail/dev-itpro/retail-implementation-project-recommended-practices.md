@@ -69,6 +69,8 @@ TODO show build definitions and Agents and build boxes
 Use the LCS portal to deploy a new build environment. My recommendation is to use a cloud-hosted environment. We will have more options and capabilities if we have administrative rights. See here for a discussion why a cloud-hosted environment may be better for you. 
 If we start a brand-new project, we will have to create a new VTST project as well. In your VSTS account, click new project. 
 
+[![VSTS project](./media/2-VSTS-project.png)](/media/2-VSTS-project.png)
+
  
 Once the new VSTS project is created, we need to allow VSTS to access it. For that you need to create a new personal access token on the VSTS account. Once that is done, we need to configure the LCS project with this information: 
 
