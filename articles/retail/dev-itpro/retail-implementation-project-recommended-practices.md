@@ -1,13 +1,36 @@
-# Draft: Dynamics 365 Finance and Operations Retail Implementation project recommended practices 
- 
-Over the course of working on a handful of Retail projects from AX 7.0 to Dynamics 365 8.0, I have collected re-occurring tips, notes and communications with customers, partners and ISVs. Some of this information may also be published in some other location, for example at https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/index. However, sometimes these wikis are very “standalone” and partners have difficulties to see the big picture how all these things fit together for the Retail implementation to succeed.  
- 
-This blog is my attempt to help by showing some good (or best) practices so that implementers can focus on the actual feature value add and not get bogged down by the procedures.  If you find anything wrong, missing or like what you read here, please do not hesitate to drop me a note. I will be making updates and additions to any area that needs it.  
- 
-The information frequently links to other blogs by others or myself. Each post can be read stand-alone or all the information can be followed chronologically from beginning to end by following the links.   
- 
-This information includes both AX and Retail practices but the focus is on Retail. 
+---
+# required metadata
 
+title: Dynamics 365 Finance and Operations Retail Implementation project recommended practices
+description: This topic describes recommended practices for Dynamics 365 for Retail implementation projects
+author: Andreash1
+manager: AnnBe
+ms.date: 02/08/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Operations, Retail
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: andreash
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: Retail 7.3
+
+---
+
+
+# Dynamics 365 Finance and Operations Retail Implementation project recommended practices 
+ 
 ## Onboarding Environments, Visual Studio Team Services and branches 
 ### Overview 
 
