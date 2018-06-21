@@ -58,7 +58,7 @@ Three options are available in the **Apply exchange rate from** field:
 
 ## Additional resources
 
-To see the parent topic that provides more information on consolidation and currency translations, please see [Financial consolidations and currency translation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/financial-consolidations-and-currency-translation.md).
+To see the parent topic that provides more information on consolidation and currency translations, please see [Financial consolidations and currency translation](./financial-consolidations-and-currency-translation.md).
 
-To find information about scenarios where you might generate consolidate financial statements, please see [Generating Consolidated Financial Statements](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/generating-consolidated-financial-statements.md).
+To find information about scenarios where you might generate consolidate financial statements, please see [Generating Consolidated Financial Statements](./generating-consolidated-financial-statements.md).
 
