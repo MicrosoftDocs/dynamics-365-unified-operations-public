@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dynamics 365 Finance and Operations Retail Implementation project recommended practices
-description: This topic describes recommended practices for Dynamics 365 for Retail implementation projects
+title: Recommended practices for Dynamics 365 for Retail implementation projects 
+description: This topic describes recommended practices for Microsoft Dynamics 365 for Retail implementation projects
 author: Andreash1
 manager: AnnBe
 ms.date: 02/08/2018
@@ -29,12 +29,13 @@ ms.dyn365.ops.version: Retail 7.3
 ---
 
 
-# Dynamics 365 Finance and Operations Retail Implementation project recommended practices 
- 
-## Onboarding Environments, Visual Studio Team Services and branches 
-### Overview 
+# Recommended practices for Dynamics 365 for Retail implementation projects 
 
-Starting with the launch of AX7 the majority of environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). The former is the default, and the latter is usually done to have more control over a development or build environment.  See more details at https://docs.microsoft.com/en-us/dynamics365/unifiedoperations/dev-itpro/lifecycle-services/lcs-works-lcs.  
+This topic describes recommended practices to follow during a Microsoft Dynamics 365 for Retail implemantation project. 
+
+## Onboarding Environments, Visual Studio Team Services and branches 
+
+Starting with the launch of AX7 the majority of environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). The former is the default, and the latter is usually done to have more control over a development or build environment.  See more details at [Understand Lifecycle Services](../..//dev-itpro/lifecycle-services/lcs-works-lcs).
 
 Tier 1 machines are developer or build environments. Tier 2 and up are multi-box environments for multiple test and verification purposes. Production environments are hands-off, and size of the environment is determined by the sizing process in LCS.  
 
