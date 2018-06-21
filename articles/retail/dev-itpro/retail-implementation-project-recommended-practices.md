@@ -116,11 +116,11 @@ In a couple of hours, the build box will be deployed, build definition and Main 
  
 ### Deploy a development environment 
 
-Use the LCS portal of your implementation project to create a cloud-hosted development environment. Make sure you are logged in the correct user account. The user account will be used to create the tenant of the development machine. As an example, if you are logged into LCS with foo@bar.com, the environment will be setup for the @bar.com tenant and expects users from that tenant. Even other users can be added to AX, the POS activation must be carried out by a user from that tenant.  There are cases where user accounts from different domains were used. That is needed for example in the case of customers, partners and other parties using emails from different domains. Coordination would have to be done during the POS activation, as only the tenant that was used during the deployment can activate.  This is usually not a huge problem but requires communication. 
+Use the LCS portal of your implementation project to create a cloud-hosted development environment. Make sure you are logged in the correct user account. The user account will be used to create the tenant of the development machine. As an example, if you are logged into LCS with foo@bar.com, the environment will be setup for the @bar.com tenant and expects users from that tenant. Even other users can be added to AX, the POS activation must be carried out by a user from that tenant.  There are cases where user accounts from different domains were used. That is needed for example in the case of customers, partners and other parties using emails from different domains. Coordination would have to be done during the POS activation, as only the tenant that was used during the deployment can activate.  This approach requires communication. 
 
 Pick the correct version, then DEVTEST, then DEV, a meaningful and unique name and make sure that the machine name is also unique (inside advanced settings). In a couple of hours, the machine will be ready and can be used. 
 
-Since we do not have the Dev branch yet, we skip mapping our VSTS to the local directories at this time. We will do that after the next section. 
+Since we do not have the Dev branch yet, we will skip mapping our VSTS to the local directories at this time. We will do that after the next section. 
 
 ### Create the dev and release branches 
 
@@ -266,7 +266,7 @@ In a couple of hours, the build box will be deployed, and the new agent queue be
 [![New Agent Queue](./media/15-new-agent-queue.png)](/media/15-new-agent-queue.png)
  
 ### Preparation of the build definitions 
-Now, subsequently from following the steps earlier, we now have a single build definition and 2 agent queues with an agent each. To build different branches, we need to configure the build definition differently, so we need to clone the build definition. However, before we do this, lets add the Retail Sdk into the build so that we do not have to do this twice. To edit the one existing build definition (named “Unified Operations platform - Build Main”), please follow the steps in this link to integrate the Retail Sdk into the Metadata build of the **Main** branch: 
+Now, subsequently from following the steps earlier, we now have a single build definition and 2 agent queues with an agent each. To build different branches, we need to configure the build definition differently, so we need to clone the build definition. However, before we do this, we must first add the Retail Sdk into the build so that we do not have to do this twice. To edit the one existing build definition (named “Unified Operations platform - Build Main”), please follow the steps in this link to integrate the Retail Sdk into the Metadata build of the **Main** branch: 
 
 https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retailsdk/integrate-retail-sdk-continuous-build  
 
@@ -304,7 +304,7 @@ A production environment could be used for UAT (for example as a go-live dry run
 
 The UAT should be done after deploying officially built deployable packages and not on Visual Studio built packages. The reason is that it cannot be proven what code changes were included in a manually built package. Only an official build system give assurance and audit trail of what exact changes are in a certain build.  
 
-If you do use POS, make sure you use the correct user roles. You should be testing by logging in as both a manager and a lower-privileged cashier. 
+If you do use POS, make sure you use the correct user roles. You should test by logging in as both a manager and a lower-privileged cashier. 
 
 ### Performance 
 #### Channel performance 
@@ -325,6 +325,7 @@ To troubleshoot the Dynamics 365 F&O performance (especially slow SQL queries or
 #### Performance testing 
 
 Testing the performance of a system usually makes most sense for the components where many resources are competed for because they are shared. These resources may be different for various projects, customers or requirements.  
+
 Some of those bottlenecks may be: 
 
 - Resource intensive calculations in Dynamics 365 F&O (i.e. statement posting, change calculations for channel data sync, warehousing operations with large product assortment, MRP runs, etc.) 
@@ -393,7 +394,7 @@ If your project is further away than a few weeks from go-live or the final UAT, 
 
 We do not suggest trying to pick and choose hotfixes as it is more error-prone and likely not worth your time. If you have a count of 1000 or even 500, you should ask yourself if you are ready to go-live. You will get a more quality product if your LCS update tile count is very low (application fixes < 100, binary fixes < 10).   
 
-After taking new hotfixes, the results of a previous UAT become less meaningful. You should retest. The extend of it can be debated and is dependent on the number of files that changed.  But, if hotfixes are being taken often, especially during the implementation phase, the number of new files is not too large…  
+After taking new hotfixes, the results of a previous UAT become less meaningful. It would be beneficial to retest. The extent of it can be debated and is dependent on the number of files that changed.  But, if hotfixes are being taken often, especially during the implementation phase, the number of new files is not too large.   
 
 Another possible approach is to take all hotfixes frequently and only run part of all UATs.  But when new hotfixes are taken again next time, a different part of UATs is run, in a circular fashion.  Before going live, a full UAT should be run. 
 
