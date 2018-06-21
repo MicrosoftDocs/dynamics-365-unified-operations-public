@@ -26,16 +26,16 @@ data.
 ## Financial dimensions
 On the **Financial dimension** tab, you define the dimensions that should be included in the consolidation company. To select a dimension, set the **Specification** field to **Dimension**, and then define the order of the dimension in the consolidation company.
 
-![Financial dimensions consolidate](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/financial-dimensions-cons.png "Financial dimensions consolidate")
+![Financial dimensions consolidate](./media/financial-dimensions-cons.png "Financial dimensions consolidate")
  
 Regardless of the order that you define, Main account will always be the first segment.
 
 ## Legal entities
 On the **Legal entities** tab, you define the companies that should be included in the consolidation company. You also define the ownership percentage of those companies. If you specify less than 100-percent ownership, the specified percentage will be rolled up to the consolidation company. For any translation differences, the **Account type for conversion differences** field is used to select the main account from the setup on the **Accounts for automatic transactions** page.
  
-![Legal entities consolidate](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/legal-entities-cons.png "Legal entities consolidate")
+![Legal entities consolidate](./media/legal-entities-cons.png "Legal entities consolidate")
 
-![Accounts for automatic transactions](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/accounts%20for%20automatic%20(cons).png "Accounts for automatic transactions")
+![Accounts for automatic transactions](./media/accounts%20for%20automatic%20(cons).png "Accounts for automatic transactions")
 
 ## Elimination
 On the **Elimination** tab, you have three options for processing eliminations:
@@ -43,7 +43,7 @@ On the **Elimination** tab, you have three options for processing eliminations:
 - Select the elimination rule, and then, in the **Proposal options** field, select **Post only**. This option will process the elimination during the consolidation process and post everything in one step.
 - Run an elimination proposal separately from the consolidation process by using the elimination journal.
 
-![Elimination consolidate online](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/elimination-cons-onl.png "Elimination consolidate online")
+![Elimination consolidate online](./media/elimination-cons-onl.png "Elimination consolidate online")
  
 For more information about eliminations see the Elimination rules section later in this document.
 
@@ -54,7 +54,7 @@ Three options are available in the **Apply exchange rate from** field:
 - **Transaction date** – The date of each transaction will be used to select an exchange rate. This option is most often used for fixed assets and is often referred to as a historical rate. You can’t see a preview of the rate, because there will be many rates for the various transactions in the account range.
 - **User defined rate** – After you select this option, you can enter the exchange rate that you want. This option can be useful for average exchange rates or if you’re consolidating against a fixed exchange rate.
 
-![Currency translation consolidate online](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/currency-cons-trans/articles/financials/general-ledger/media/currency-translation-cons-online.png "Currency translation consolidate online")
+![Currency translation consolidate online](./media/currency-translation-cons-online.png "Currency translation consolidate online")
 
 ## Additional resources
 
