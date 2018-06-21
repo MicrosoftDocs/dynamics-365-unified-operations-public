@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure screen layouts for POS
-description: This topic provides information about screen layouts for the Microsoft Dynamics 365 for Retail point of sale (POS) experiences.
+description: This topic provides information about screen layouts for Microsoft Dynamics 365 for Retail point of sale (POS) experiences.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,184 +34,160 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about screen layouts for the Microsoft Dynamics 365 for Retail point of sale (POS) experiences.
+This topic provides information about screen layouts for Microsoft Dynamics 365 for Retail point of sale (POS) experiences.
 
-The Microsoft Dynamics 365 for Retail point of sale (POS) user interface can be configured using a combination of visual profiles and screen layouts, assigned to stores, registers, and/or users.
+The Retail POS user interface (UI) can be configured by using a combination of visual profiles and screen layouts that are assigned to stores, registers, and/or users.
 
-The diagram below explains the relationship between the various entities that make up the configurable aspects of the POS user interface.
+The following illustration shows the relationships among the various entities that make up the configurable aspects of the POS UI.
 
-![POS Screen layout entities](../retail/media/POS-layout-configuration-entities-diagram.png)
+![POS screen layout entities](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## Visual profile
-Visual profiles are assigned to registers and are used to specify the visual elements that are register-specific and shared across users. Any user who logs into the register will have the same theme, colors, and images.
+Visual profiles are assigned to registers, and they specify the visual elements that are register-specific and shared across users. Every user who signs in to the register sees the same theme, colors, and images.
 
-![POS Welcome Screen with Light theme](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
+![POS welcome screen with Light theme](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
 
-![POS Transaction Screen with Dark theme](../retail/media/POS-Transaction-Screen-with-Dark-theme.png)
+![POS Transaction screen with Dark theme](../retail/media/POS-Transaction-Screen-with-Dark-theme.png)
 
-**Profile number** - The profile number is the unique identifier for the Visual profile. 
-
-**Description** - The description allows you to specify a meaningful name that will help to identify the correct profile for your situation.
-
-**Theme** - Users can choose between the Light or Dark application themes. These settings impact the font and background colors throughout the app.
-
-**Accent color** - The accent color is used throughout the POS to differentiate or highlight certain visual elements such as tiles, command buttons, or hyperlinks. These elements are typically actionable.
-
-**Header color** - The header color allows the user to configure the color of the page header to meet the branding needs of the retailer. This feature is only available in Dynamics 365 for Retail version 1611.
-
-**Login backgrounds** - Users can specify a background image for the login screen. The file size of background images should be kept as small as possible, as storing and loading large files can have an impact on the application behavior and performance.
-
-**Application background** - The POS can also use an image as a background throughout the application in place of the solid theme color. As with the login backgrounds, it is advised to keep the file size as minimal as possible.
+- **Profile number** – The profile number is the unique identifier of the visual profile.
+- **Description** – You can specify a meaningful name that will help identify the correct profile for your situation.
+- **Theme** – You can select between the Light and Dark application themes. The theme affects the font and background colors throughout the application.
+- **Accent color** – The accent color is used throughout the POS to differentiate or highlight specific visual elements, such as tiles, command buttons, and hyperlinks. Typically, these elements are actionable.
+- **Header color** – You can configure the color of the page header to meet the retailer's branding requirements. This feature is available only in Microsoft Dynamics 365 for Retail version 1611.
+- **Login backgrounds** – You can specify a background image for the sign-in screen. The file size of background images should be kept as small as possible, because storing and loading large files can affect application behavior and performance.
+- **Application background** – You can specify a background image that is used instead of the solid theme color throughout the application. As for login backgrounds, the file size should be kept as small as possible.
 
 ## Screen layouts
-Screen layout configuration determines the actions, content, and placement of UI controls in the POS Welcome screen and Transaction screen.  
+Screen layout configurations determine the actions, content, and placement of UI controls on the POS welcome screen and **Transaction** screen.
 
 ![POS Screen layout view](../retail/media/POS-Screen-Layout-View.png)
 
+- **Welcome screen** – In most cases, the welcome screen is the page that users see when they first sign in to the POS. The welcome screen can consist of a branding image and button grids that provide access to POS operations. Typically, operations that aren't specific to the current transaction are put on this screen.
 
-**Welcome screen**- In most cases, the Welcome screen is the page that users will see when they first log into POS. The Welcome screen can consist of a branding image and button grids that provide access to POS operations. Typically, operations that are not specific to the current transaction are placed here.
+    ![POS welcome screen](../retail/media/POS-Welcome-Screen.png)
 
-![POS Welcome screen](../retail/media/POS-Welcome-Screen.png) 
+- **Transaction screen** – The **Transaction** screen is the main screen in the POS for processing sales transactions and orders. The content and layout are configured by using the screen layout designer.
 
-**Transaction screen** - The Transaction screen is the main screen in POS for processing sales transactions and orders.  The content and layout is configured using the screen layout designer. 
+    ![POS Transaction screen](../retail/media/POS-Transaction-Screen.png)
 
-![POS Transaction screen](../retail/media/POS-Transaction-Screen.png) 
-
-**Default start screen** - Some retailers prefer that the cashier navigate directly to the Transaction screen after logging in. The default start screen setting allows users to set this for each screen layout.
+- **Default start screen** – Some retailers prefer that cashiers go directly to the **Transaction** screen after sign-in. The **Default start screen** setting lets you specify the default screen that appears after sign-in for each screen layout.
 
 ### Assignment
 
-Screen layouts can be assigned at the store, register, or user level. The user assignment overrides the register and store assignment, and the register assignment overrides the store assignment. In a simple scenario where all users use the same layout regardless of register or role, the screen layout can be set only at the store. In cases where certain registers or users require specialized layouts, they can be assigned appropriately.
+Screen layouts can be assigned at the store, register, or user level. The user assignment overrides the register and store assignments, and the register assignment overrides the store assignment. In a simple scenario where all users use the same layout, regardless of register or role, the screen layout can be set only at the store level. In scenarios where specific registers or users require specialized layouts, those layouts can be assigned.
 
 ### Layout sizes
 
-Most aspects of the POS user interface are responsive and will automatically resize and adjust the layout depending on the screen size and orientation.  However, the POS transaction screen must be configured for each expected screen resolution.
+Most aspects of the POS UI are responsive, and the layout is automatically resized and adjusted based on the screen size and orientation. However, the POS **Transaction** screen must be configured for every screen resolution that is expected.
 
-The POS application will automatically choose the closest configured layout size for the device at the time of startup. A screen layout can also contain configurations for both landscape and portrait and for full and compact devices. This allows a user to be assigned to a single screen layout that will work across various sizes and form factors within the store.
+At startup, the POS application automatically selects the closest layout size that is configured for the device. A screen layout can also contain configurations for both landscape and portrait modes, and for both full-size and compact devices. Therefore, users can be assigned to a single screen layout that works across various sizes and form factors that are used in the store.
 
-![POS layout sizes](../retail/media/POS-Screen-Layout-Sizes.png) 
+![POS layout sizes](../retail/media/POS-Screen-Layout-Sizes.png)
 
-**Name** – This field allows users to provide a meaningful name to identify the screen sizes.  
+- **Name** – You can enter a meaningful name to identify the screen size.
+- **Layout type** – The POS application can show its UI in various modes to provide the best user experience on a given device.
 
-**Layout type** – POS can render it’s user face in different modes for the best user experience on a given device. 
+    - **Modern POS – Full** – Full layouts are typically best for larger displays, such as desktop monitors and tablets. You can select the UI elements to include, specify the size and placement of those elements, and configure their detailed properties. Full layouts support both portrait and landscape configurations.
+    - **Modern POS – Compact** – Compact layouts are typically best for phones and small tablets. The design possibilities for compact devices are limited. You can configure the columns and fields for the receipt and totals panels.
 
-- **Modern POS - Full** - Full layouts are typically best used for larger displays such as PC monitors or tablets. Users can choose which UI elements to include, determine their size and placement, and configure their detailed properties. Full layouts support both portrait and landscape configurations. 
+- **Width/Height** – These values represent the effective screen size, in pixels, that is expected for the layout. Remember that some operating systems use scaling for high-resolution displays.
 
-- **Modern POS - Compact** - Compact layouts are typically best used for phones or small tablets. Design possibilities are limited for compact devices. Users can configure the columns and fields for the receipt and totals panes.
+> [!TIP]
+> You can learn the layout size that is required for a POS screen by viewing the resolution in the app. Start the POS, and go to **Settings \> Session information**. POS shows the screen layout that is currently loaded, the layout size, and the resolution of the app window.
 
-**Width/Height** – These values represent the expected effective screen size in pixels for the layout.  Keep in mind that some operating systems utilize scaling with high resolution displays.  
-
-*Tip: You can find out the layout size needed for your POS screen by viewing the resolution within the app.  Simply open POS and navigate to **Settings > Session information**.  POS will display the currently loaded screen layout and layout size, as well as the app window resolution.*
-
-![POS layout sizes](../retail/media/POS-Session-Information.png) 
+![POS layout sizes](../retail/media/POS-Session-Information.png)
 
 ### Button grids
-For each layout size within a screen layout, users can configure and assign button grids for the POS welcome screen and transaction screen.  Welcome screen button grids will automatically be laid out from left to right, from the lowest number (Welcome screen 1) to the largest.  In Full POS layouts, the button grid placement is specified in the screen layout designer. 
+For each layout size in a screen layout, you can configure and assign button grids for the POS welcome screen and **Transaction** screen. Button grids for the welcome screen are automatically laid out from left to right, from the lowest number (Welcome screen 1) to the highest number.
 
-In Compact POS layouts, the button grids are automatically laid out from top to bottom, from the lowest number (Transaction screen 1) to the largest and are accessible by opening the “Actions” menu.
+In Full POS layouts, the placement of button grids is specified in the screen layout designer.
 
-![Compact view button grids](../retail/media/Compact-View-Button-Grids.png)
+In Compact POS layouts, the button grids are automatically laid out from top to bottom, from the lowest number (Transaction screen 1) to the highest number. They can be accessed on the **Actions** menu.
+
+![Compact layout button grids](../retail/media/Compact-View-Button-Grids.png)
 
 ### Images
-For each layout size within a screen layout, users can specify images to be included in the POS user interface.  Full POS layouts allow a single Welcome screen image which is rendered as the first UI element on the left.  Images can be utilized in the Full POS layout Transaction screen as tab images or as a logo.  Compact POS layouts do not utilize these images.
+For each layout size in a screen layout, you can specify images to include in the POS UI. For Full POS layouts, a single image can be specified for the welcome screen. This image appears as the first UI element on the left. On the **Transaction** screen, images can be used as tab images or as a logo. Compact POS layouts don't use these images.
 
 ### Screen layout designer
 
-The screen layout designer allows user to configure the various aspects of the POS Transaction screen for each layout size, in portrait and landscape, and for Full and Compact layout types. The Screen layout designer uses ClickOnce to download, install, and launch the latest version of the application each time the user accesses it. Be sure to check browser requirements for using ClickOnce—some browsers, such as Chrome, require extensions.
+The screen layout designer lets you configure various aspects of the POS **Transaction** screen for each layout size, in both portrait and landscape modes, and for both Full and Compact layouts. The screen layout designer uses the ClickOnce deployment technology to download, install, and start the latest version of the application every time that users access it. Be sure to check the browser requirements for ClickOnce. Some browsers, such as Google Chrome, require extensions.
 
-*Important: You must configure a screen layout for each layout size defined and utilized by POS*
+> [!IMPORTANT]
+> You must configure a screen layout for each layout size that is defined and that is used by the POS.
 
 ### Full layout designer
 
-The Full layout type designer allows users to drag and drop UI controls onto the POS transaction and to configure their applicable settings.
+The Full layout designer lets users drag UI controls onto the POS **Transaction** screen and configure the settings of those controls.
 
+![POS Full layout designer (landscape mode)](../retail/media/POS-Full-Layout-Designer-Landscape.png)
 
-![POS Full layout designer (landscape)](../retail/media/POS-Full-Layout-Designer-Landscape.png)
+- **Import layout/Export layout** – You can export and import POS screen layout designs as XML files, so that you can easily reuse and share them across environments. It's important that you import layout designs for the correct layout sizes. Otherwise, UI elements might not fit correctly on the screen.
+- **Landscape/Portrait** – If the POS device lets users switch between landscape and portrait modes, you must define a screen layout for each mode. The POS automatically detects screen rotation and shows the correct layout.
+- **Layout grid** – The POS layout designer uses a 4-pixel grid. UI controls "snap" to the grid to help you correctly align the content.
+- **Designer zoom** – You can zoom the designer view in and out to better view the content on the POS screen. This feature is useful when the screen resolution on the POS differs greatly from the resolution of the screen that is used in the designer.
+- **Show/hide navigation bar** – For Full POS layouts, you can select whether the left navigation bar is visible on the **Transaction** screen. This feature is helpful for displays that have a lower resolution. To set the visibility, right-click the navigation bar in the designer, and select or clear the **Always visible** check box. If the navigation bar is hidden, POS users can still access it by using the menu in the upper left.
 
-**Import/Export layout:** Users can export and import POS screen layout designs as XML files to easily reuse and share across environments.  It is important to only import layout designs for the correct size layouts or UI elements may not fit properly on the screen.
+    ![Show/hide navigation bar](../retail/media/Navigation-Bar.PNG)
 
-**Landscape/Portrait:**  If the POS device supports switching between landscape and portrait modes, you must define a screen layout for each.  POS will automatically detect the screen rotation and render the configured layout.
+- **POS controls** – The POS layout designer supports the following controls. You can configure many controls by right-clicking and using the shortcut menu.
 
-**Layout grid:** The POS designer is laid out in a 4 pixel grid.  UI controls will snap to the grid layout to allow users to properly align the content.
+    ![POS UI controls](../retail/media/POS-UI-Controls.png)
 
-**Designer zoom:**  Users can zoom the designer view in and out to better view the content on the POS screen.  This is useful when the screen resolution on the POS is very different than the screen used in the designer.
-
-**Show/hide navigation bar:** Users can choose to show or hide the POS left navigation bar on the Transaction screen for Full layouts.  This is helpful for lower resolution displays. POS users will still be able to access the navigation bar by clicking or touching menu in the upper left. Right click the navigation bar in the designer and choose to show or hide. 
-
-![POS UI controls](../retail/media/Navigation-Bar.PNG)
-
-**POS controls:** The POS layout designer supports the following controls.  Many controls can be configured by right-clicking and using the context menu.
-
-![POS UI controls](../retail/media/POS-UI-Controls.png)
-
-- **Number pad** - The number pad is the main user input in the POS Transaction screen. It can be configured to show the entire on-screen pad, which is ideal for touchscreens, or only the input field, which can be used with a physical keyboard. The number pad settings are available in the full layout only. Compact layouts always have the full number pad available from the Transaction screen.
-
-- **Totals panel** - The totals panel can be configured in either one or two columns to show fields such as line count, discount amount, charges, subtotal, and tax. Compact layouts only support a single totals column.
-
-- **Receipt** - The receipt panel contains the sales lines, payment lines, and delivery information for the products and services processed in the POS. Users can specify columns, widths, and placement. In Compact layouts you can also configure additional information which will appear in the row under the main line.
-
-- **Customer card** - The customer card shows information pertaining to the customer currently associated with the transaction. The customer card can be configured to hide or show additional information.
-
-- **Tab control** - The tab control can be placed onto the screen layout, and other controls such as the number pad, customer card, or button grids can be placed inside the tab. The tab control is a container that helps users fit more content in the screen. The tab control is only available for Full layouts.
-
-- **Image** - The image control can be used to show the store logo or other branding image on the transaction screen. The image control is only available for full layouts.
-
-- **Recommended products** - If configured for the environment, the recommended products control will show product suggestions based on machine learning. 
-
-- **Custom control**- The custom control acts as a placeholder within the screen layout to allows users to reserve space for custom content. The custom control is only available for full layouts.
+    - **Number pad** – The number pad is the main mechanism for user input on the POS **Transaction** screen. You can configure the control so that the full number pad is shown. This option is ideal for touchscreen devices. Alternatively, you can configure it so that only the input field is shown. In this case, a physical keyboard is used for input. The number pad settings are available only for Full layouts. For Compact layouts, the full number pad is always shown on the **Transaction** screen.
+    - **Totals panel** – You can configure the totals panel in either one column or two columns, to show values such as the line count, discount amount, charges, subtotal, and tax. Compact layouts support only a single column.
+    - **Receipt panel** – The receipt panel contains the sales lines, payment lines, and delivery information for the products and services that are processed in the POS. You can specify columns, widths, and placement. In Compact layouts, you can also configure additional information that appears in the row under the main line.
+    - **Customer card** – The customer card shows information about the customer who is associated with the current transaction. You can configure the customer card to hide or show additional information.
+    - **Tab control** – You can add the tab control to a screen layout, and then put other controls, such as the number pad, customer card, or button grids, in it. The tab control is a container that helps you fit more content on the screen. The tab control is available only for Full layouts.
+    - **Image** – You can use the image control to show the store's logo or another branding image on the **Transaction** screen. The image control is available only for Full layouts.
+    - **Recommended products** – If the recommended products control is configured for the environment, it shows product suggestions, based on machine learning.
+    - **Custom control** – The custom control acts as a placeholder in the screen layout and lets you reserve space for custom content. The custom control is available only for Full layouts.
 
 ### Compact layout designer
-Like the Full layout designer, the Compact layout designer allows users to configure the POS screen layout for phones and small tablets, but in this case the layout itself is fixed.  The controls on the layout can be configured using the right-click context menu, but users cannot drag and drop additional content.
+Like the Full layout designer, the Compact layout designer lets you configure the POS screen layout for phones and small tablets. However, in this case, the layout itself is fixed. You can configure the controls in the layout by right-clicking and using the shortcut menu. However, you can't use drag-and-drop operations for additional content.
 
-![Compact Layout Designer](../retail/media/Compact-Layout-Designer.png)
+![Compact layout designer](../retail/media/Compact-Layout-Designer.png)
 
 ### Button grid designer
-The button grid designer allows user to configure button grids for use in POS Welcome screens and Transaction screens for Full and Compact layout types.  The same button grid can be used across layouts and types. Like the Screen layout designer, the Button grid designer uses ClickOnce to download, install, and launch the latest version of the application each time the user accesses it. Be sure to check browser requirements for using ClickOnce—some browsers, such as Chrome, require extensions
+The button grid designer lets you configure button grids that can be used on the POS welcome screen and **Transaction** screen for both Full and Compact layouts. The same button grid can be used across layouts and layout types. Like the screen layout designer, the button grid designer uses the ClickOnce deployment technology to download, install, and start the latest version of the application every time that users access it. Be sure to check the browser requirements for ClickOnce. Some browsers, such as Google Chrome, require extensions.
 
 ![Button grid designer](../retail/media/Button-Grid-Designer.png)
 
-**New button**: This menu option adds a new button to the button grid in the upper left corner of the grid.  Button placement can be arranged on the grid by dragging and dropping the button on the layout.
+- **New button** – Click to add a new button to the button grid. By default, new buttons appear in the upper-left corner of the grid. However, you can arrange buttons by dragging them in the layout.
 
-*Important: Button grid content can overlap.  Be careful placing buttons to ensure content is not hidden by other buttons.*
+    > [!IMPORTANT]
+    > The contents of the button grid can overlap. When you arrange buttons, make sure that they don't hide other buttons.
 
-**New design**:  This menu option will automatically setup a button grid layout by specifying the number of buttons per row and column.
+- **New design** – Click to automatically set up a button grid layout by specifying the number of buttons per row and column.
+- **Button properties** – You can configure button properties by right-clicking the button and using the shortcut menu.
 
-**Button properties**:  The user can configure the button properties by right-clicking the button and using the context menu.
+    > [!IMPORTANT]
+    > Some button grid settings apply only to Enterprise POS, not to Retail Modern POS or Cloud POS.
 
-*Important:  Some button grid settings are only applicable to Enterprise POS (not Retail Modern POS or Cloud POS)*
+    ![Button grid button properties](../retail/media/Button-grid-button-properties.png)
 
-![Button grid button properties](../retail/media/Button-grid-button-properties.png)
+    - **Action** – In the list of applicable POS operations, select the operation that is invoked when the button is clicked in the POS.
 
-**Action**:  This option allows the user to choose from the list of applicable POS Operations to invoke when the button is pressed in POS.
+        For the list of supported POS operations, see [POS operations, online and offline](pos-operations.md).
 
-You can find this list of supported POS Operations here:  [POS operations, online and offline](pos-operations.md)
+    - **Action parameters** – Some POS operations use additional parameters when they are invoked. For example, for the Add product operation, users can specify the product to add.
+    - **Button text** – Specify the text that appears on the button in the POS.
+    - **Hide button text** – Use this check box to hide or show the button text. Button text is often hidden for small buttons that show only an icon.
+    - **Tooltip** – Specify additional Help text that appears when users mouse over the button.
+    - **Size in columns/Size in rows** – You can specify how tall and wide the button is.
 
-**Action parameters**:  Some POS Operations utilize additional parameters when invoked.  For example, the Add product operation allows the user to specify which product to add.
+        ![POS button sizes in rows and columns](../retail/media/POS-Button-Sizes-In-Rows-And-Columns.png)
 
-**Button text**:  This is the text that appears on the button in POS.
+    - **Custom font** – When you select the **Enable custom font for POS** check box, you can specify a font other than the default system font for the POS.
+    - **Custom theme** – By default, POS buttons use the accent color from the visual profile. When you select the **Use custom theme** check box, you can specify additional colors.
 
-**Hide button text**:  This option hides the button text.  This is often used for small buttons where only icon is used.
+        > [!NOTE]
+        > Retail Modern POS and Cloud POS use only the **Back color** and **Font color** values.
 
-**Tooltip**:  This is the additional help text that is displayed on mouse over. 
+    - **Button image** – Buttons can include images or icons. Select among the available images that are specified at **Retail \> Channel setup \> POS setup \> POS \> Images**.
 
-**Size in rows/columns**:  This specifies how tall and wide the button is.  
+![Example button grid in the POS](../retail/media/Example-Button-Grid-In-POS.png)
 
-![POS button sizes in rows and columns](../retail/media/POS-Button-Sizes-In-Rows-And-Columns.png)
-
-**Custom font**:  This setting allows the user to specify a font other than the default system font for POS.
-
-**Custom theme**:  By default, POS buttons will utilize the accent color from the visual profile.  Use this setting to specify additional colors.
-
-*Note:  Only Back color and font color are used by Retail Modern POS and Cloud POS.*
-
-**Button image**:  Buttons can also include images or icons.  Select from available images which are specified at Retail > Channel setup > POS setup > POS > Images.
-
-![Example button grid in POS](../retail/media/Example-Button-Grid-In-POS.png)
-
-Additional resources
---------
+## Additional resources
 
 [Install the Retail POS Layout designer](install-pos-layout-designer.md)
-
-
-
