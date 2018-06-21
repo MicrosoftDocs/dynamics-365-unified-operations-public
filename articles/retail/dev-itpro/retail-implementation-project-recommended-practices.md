@@ -33,6 +33,8 @@ Branching is a well know practice in software development and I assume that the 
 https://mbspartner.microsoft.com/D365/Videos/101393. 
 
 There is no single best strategy for the creation of branches. Different projects and different sizes of implementations require various approaches. I have had success with the approach mentioned by Joris De Gruyter (link above). 
+
+![Branch creation](/media/1-Three-Code-Branch.png "Branch creation")
  
 In the diagram you can see that we have 3 code branches.  
 
