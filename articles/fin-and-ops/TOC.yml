@@ -2258,6 +2258,8 @@
           href: hr/localizations/noam-usa-premium-earning-setup-tasks.md
         - name: Garnishments, tax levies, and administrative fees FAQ
           href: hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees.md
+      - name: Track time off for FMLA
+        href: hr/localizations/noam-usa-track-time-for-fmla.md
       - name: Payroll processing tasks
         items:
         - name: Generate earnings
