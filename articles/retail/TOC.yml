@@ -13,7 +13,7 @@
   - name: Deployment options
     href: dev-itpro/choose-deployment.md
 - name: Understand the implementation lifecycle
-  href: imp-lifecycle/implementation-lifecycle.md
+  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
   - name: Microsoft FastTrack for Dynamics 365
     href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
