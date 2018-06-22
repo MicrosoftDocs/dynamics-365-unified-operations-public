@@ -37,7 +37,6 @@
     href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md 
   - name: Implement multiple LCS projects and production environments on the same Azure Active Directory tenant
     href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md    
-Dynamics-365-Operations/articles/fin-and-ops/get-started/fasttrack-dynamics-365-overview.md 
 - name: Payments
   items:
   - name: Payment methods
