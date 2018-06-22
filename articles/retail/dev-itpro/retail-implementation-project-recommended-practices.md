@@ -35,7 +35,7 @@ This topic describes recommended practices to follow during a Microsoft Dynamics
 
 ## Onboarding Environments, Visual Studio Team Services and branches 
 
-Starting with the launch of AX7 the majority of environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). The former is the default, and the latter is usually done to have more control over a development or build environment.  See more details at [Understand Lifecycle Services](../..//dev-itpro/lifecycle-services/lcs-works-lcs).
+Starting with the launch of AX7 the majority of environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). The former is the default, and the latter is usually done to have more control over a development or build environment.  See more details at [Understand Lifecycle Services](../../../dev-itpro/lifecycle-services/lcs-works-lcs).
 
 Tier 1 machines are developer or build environments. Tier 2 and up are multi-box environments for multiple test and verification purposes. Production environments are hands-off, and size of the environment is determined by the sizing process in LCS.  
 
@@ -312,16 +312,16 @@ If you do use POS, make sure you use the correct user roles. You should test by 
 
 Poor performance is often caused by these factors (in the order from highest impact): 
 
-- Additional custom RetailServer calls. By extending the product with additional RetailServer calls the performance often is decreased substantially. Not only do we have to account for additional processing, but the network latency must be considered too. It is recommended to try to avoid any additional RetailServer calls whenever possible. Often, ExtensionProperties and extending existing CRT handlers or triggers can accomplish the same tasks 
+- Additional custom Retail Server calls. By extending the product with additional RetailServer calls the performance often is decreased substantially. Not only do we have to account for additional processing, but the network latency must be considered too. It is recommended to try to avoid any additional RetailServer calls whenever possible. Often, ExtensionProperties and extending existing CRT handlers or triggers can accomplish the same tasks 
 - Additional Channel Database SQL extensions. Make sure the SQL is efficient and uses proper indexes 
 - The exact same custom or built-in CRT SQL queries are exercised multiple times. If it is too expensive and appropriate, caching could be applied.  
 
-For more details, see the section on Retail development. 
+For more details, see the section on [Retail development](dev-retail-home-page). 
  
 Regarding investigating store performance, please follow some of the ideas published here: https://dynamicsnotes.com/retail-channel-performance-investigations/. With this information, you should be able to answer questions like “why is scanning an item in POS so slow” or “why is the customer details view so slow”. 
 
 #### Using telemetry data to find performance issues 
-To troubleshoot the Dynamics 365 F&O performance (especially slow SQL queries or SQL deadlocks), the LCS environment diagnostics page exposes valuable telemetry data. This data can be used to find potential performance issues in code, configuration, or design. More details can be found here: https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/. With this information, you should be able to get an idea why certain batch processes or form loads are slow.   
+To troubleshoot Retail and Finance and Operations performance (especially slow SQL queries or SQL deadlocks), the LCS environment diagnostics page exposes valuable telemetry data. This data can be used to find potential performance issues in code, configuration, or design. More details can be found here: https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/. With this information, you should be able to get an idea why certain batch processes or form loads are slow.   
 
 #### Performance testing 
 
@@ -329,11 +329,11 @@ Testing the performance of a system usually makes most sense for the components 
 
 Some of those bottlenecks may be: 
 
-- Resource intensive calculations in Dynamics 365 F&O (i.e. statement posting, change calculations for channel data sync, warehousing operations with large product assortment, MRP runs, etc.) 
-- the Dynamics 365 F&O database 
-- Retail business logic for many terminals or stores running on a few RetailServers (either in the cloud or in a scale unit) 
-- Integrated 3rd party systems (integrated either from Dynamics 365 F&O or RetailServer) 
-- Realtime transaction service frequently called from RetailServer 
+- Resource intensive calculations in Finance and Operations such as statement posting, change calculations for channel data sync, warehousing operations with large product assortment, MRP runs, etc. 
+- The Finance and Operations database. 
+- Retail business logic for many terminals or stores running on a few Retail Servers (either in the cloud or in a scale unit) 
+- Integrated 3rd party systems (integrated either from Finance and Operations or Retail Server) 
+- Realtime transaction service frequently called from Retail Server 
 
 In general, default and non-real time POS operations are not considered a bottleneck as it has its own dedicated resource - the computer it is installed or running on.  Performance issues are more likely caused by the business logic or chatty calls to RetailServer. 
 
