@@ -88,10 +88,10 @@ These methods have been refactored to support extensibility through chain of com
 |WHSShipmentTable.createShipmentNotes|
 |WHSUnShipLoadLineTmpDataCreator.createTmpLoadLineInventoryFromContainerLines|
 
-## Other extensibility enhancements
+## Additional extensibility enhancements
 
 In addition to the refactored methods, the following extensibility enhancements have been made.
 
-- Support for extensions to a Map: CustVendTrans
-- Support for extensions to a Map: CustVendTransOpen
+- Support for extensions to map: CustVendTrans
+- Support for extensions to map: CustVendTransOpen
 - Support extensibility for SQL statement:  PriceDiscAdmCheckPost.postJournal
