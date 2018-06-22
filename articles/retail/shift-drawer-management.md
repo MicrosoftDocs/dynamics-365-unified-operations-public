@@ -2,7 +2,7 @@
 # required metadata
 
 title: Shift and cash drawer management
-description: This topic explains how to set up and use the two types of retail point of sale (POS) shifts, shared and stand-alone.
+description: This topic explains how to set up and use shifts in retail point of sale (POS).
 author: jeffblucher
 manager: AnnBe
 ms.date: 05/10/2018
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to set up and use the two types of retail point of sale (POS) shifts, shared and stand-alone. Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.
+This topic explains how to set up and use shifts in retail point of sale (POS). 
 
 In Microsoft Dynamics 365 for Retail, the term *shift* describes the collection of POS transactional data and activities between two points in time. For each shift, the amount of money that is expected is compared against the amount that was counted and declared.
 
