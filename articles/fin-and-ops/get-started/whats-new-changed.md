@@ -5,7 +5,7 @@ title: What's new or changed
 description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 05/14/2018
+ms.date: 06/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -68,7 +68,7 @@ For information about how to upgrade to the latest version, see [Process for upg
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.0</td>
-<td>8.0.30</td>
+<td>8.0.30, 8.0.35</td>
 <td>April 2018</td>
   <td><a href="whats-new-changed-8-0-April-2018.md">What&#39;s new or changed in Dynamics 365 for Finance and Operations version 8.0 (April 2018)</a></td>
 </tr>
