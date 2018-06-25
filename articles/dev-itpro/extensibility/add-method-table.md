@@ -62,7 +62,7 @@ There are a few rules for augmentation classes:
 + They must be suffixed by **\_Extension**.
 + They must be decorated with the **[ExtensionOf()]** attribute.
 
-Now you can use your new method; for example, from an event handler:
+Now you can use your new method, for example, from an event handler:
 
 ```
 class MyInventTable_EventHandler
