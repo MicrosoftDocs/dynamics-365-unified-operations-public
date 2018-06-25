@@ -78,7 +78,7 @@ To generate FTI forms by using the ER framework, you can assign ER formats in th
 ![Print management setup](media/FTIbyGER-PMSetting.png)
 
 > [!NOTE]
-> Only ER formats that use the **FreeTextInvoice** root descriptor of the **CustomersInvoicing** data model appear in the **Report format lookup** field for the format selection.
+> Only ER formats that use the **FreeTextInvoice** root descriptor of the **CustomersInvoicing** data model appear in the **Report format lookup** field for the selected format.
 
 ## Generate FTI forms
 FTI forms are generated in the ER framework in the same way that SSRS reports are generated.
@@ -108,7 +108,7 @@ The ER framework currently supports the following destinations for generated doc
 - **Downloaded file** – Generated forms are offered as downloads that you can save by using the browser.
 - **Screen** – Microsoft Office 365 Excel is used to preview FTI forms in Excel format.
 - **SharePoint folder** – Generated forms are stored based on the settings of the Document management framework.
-- **Application archive** – Files of Microsoft Azure Storage as attachments of records of execution log.
+- **Application archive** – Execution log records stored as attachments in the Microsoft Azure Storage.
 - **Email** – Generated forms are sent as email attachments.
 
 > [!NOTE]
@@ -124,7 +124,7 @@ You can download sample ER configurations to use as a template for your FTI solu
 > These configurations have been created as samples to help clarify possible scenarios. The future of these configurations depends on the results of this evaluation and any feedback that is received.
 
 ### Features that are implemented in the sample ER format
-In the sample ER format configuration, Excel is used as a template to generate FTI forms.
+In the sample ER format configuration, an Excel file is used as a template to generate FTI forms.
 
 ![Format designer](media/FTIbyGER-ERFormat.png)
 
@@ -139,7 +139,7 @@ Currently, this sample ER format supports the following features to generate FTI
 - The generated invoice totals section can show monetary details in the euro currency and the invoice registration currency when the **Print amount in currency representing the euro** option is enabled on the **Accounts receivable parameters** page.
 - Generated invoice forms show any process invoice notes that are available, based on settings on the **Accounts receivable parameters** page. Notes are included for both the whole invoice and each invoice line.
 - Generated invoice forms include notes for the customer FTI form and the processing invoice language when they have been configured in the AR form notes list.
-- Depending on the configuration, generated invoices include customer footer text by using Print management tool for the invoice language and the ER format and FTO document scope.
+- Depending on the configuration, generated invoices include customer footer text by using Print management tool for the invoice language, the ER format, and the FTI document scope.
 - The totals section of generated invoice forms includes any cash discount information that is available.
 - The payment schedule section of generated invoice forms includes any payment schedule details that are available.
 - The markup section of generated invoice forms includes any charges transactions that are available.
@@ -205,7 +205,7 @@ If the organization email template that has the predefined **ERFTITMP** ID has b
 ![Upload email template](media/FTIbyGER-EmailTemplateBody.png)
 
 > [!NOTE]
-> The **Emailing.TxtToUse.Subject** ER expression of the sample ER format is configured to replace any occurrences of the "%1" placeholder by the processing the invoice ID.
+> The **Emailing.TxtToUse.Subject** ER expression of the sample ER format is configured to replace any occurrences of the placeholder by the processing the invoice ID.
 
 Note that the **Emailing.TxtToUse.Body** expression of the sample format is configured for the following substitutions for placeholders:
 
