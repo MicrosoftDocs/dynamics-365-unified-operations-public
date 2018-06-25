@@ -88,16 +88,7 @@ To help maintain referential integrity of the data, financial dimensions can rar
 
 If any of the criteria are met, you can't delete the financial dimension.
 
-## See also
 
 For more information, see the following topics:
 - [Define financial dimensions](tasks/define-financial-dimensions.md)
 - [Maintain financial dimension default templates](tasks/maintain-financial-dimension-default-templates.md)
-
-## Additional resources
-
-### Community blogs
-
-- [Financial dimension values flow in D365FO. Materials and batch order example](https://financefunction.tech/2018/04/15/financial-dimension-values-flow-in-d365fo-materials-and-batch-order-example)
-
-- [How to collect financial data by sites in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/21/how-to-collect-financial-data-by-sites-in-dynamics-365-for-finance-and-operations)
