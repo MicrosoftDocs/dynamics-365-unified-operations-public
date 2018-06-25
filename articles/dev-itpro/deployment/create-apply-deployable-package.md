@@ -59,3 +59,6 @@ After you have completed the development stage, follow these steps to create a d
 
 ## Apply a deployable package
 To apply a deployable package to an environment, see the article [Apply a deployable package](apply-deployable-package-system.md).
+
+## Remove a deployable package
+To uninstall or remove a deployable package from an environment, see the article [Uninstall (remove) a module (package)](uninstall-deployable-package.md).
