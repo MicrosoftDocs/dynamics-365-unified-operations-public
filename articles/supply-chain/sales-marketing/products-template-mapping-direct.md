@@ -83,6 +83,10 @@ Externally maintained products are automatically added to the first valid price 
 > [!NOTE]
 > Product synchronization won't succeed unless there is a price list that has a matching currency.
 
+> [!NOTE]
+> If you want to control the used price list with the integration this can be achieved by mapping the pricelevelid.name [Default Price List (Name)] in the Data Integration project. Note that the input has to be all in lower case.
+E.g. defaulting to a price list in Sales named ‘Standard’ would be: Destination field: pricelevelid.name [Default Price List (Name)] and Map type: [ { "transformType": "Default", "defaultValue": "standard" } ]
+
 ## Preconditions and mapping setup
 
 - Before you run the synchronization for the first time, you must fill the Distinct product table for existing products in Finance and Operations. Existing products won't be synchronized until this job is completed.
