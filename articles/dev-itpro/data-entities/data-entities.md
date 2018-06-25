@@ -164,7 +164,7 @@ When you build an entity, you start with a root data source. However, you can ad
 
 ##### Output
 
-When you compete the wizard, it produces the following two items:
+When you complete the wizard, it produces the following items:
 
 -   Data entity
 -   Staging table (optional, if data management was enabled)
