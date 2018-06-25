@@ -65,10 +65,14 @@ your tax authorities require.
 
 ## Additional resources
 
-### What's new and in development
+### What's new
 
-Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new 
-features are in development. 
+Go to the [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/) to see what new features have been released. 
+
+### Videos
+
+Check out the how-to videos that are now available on the 
+[Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 ### Blogs
 
@@ -82,11 +86,7 @@ procedures are also similar in the current version.
 The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) 
 gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
 
-### Task guides
-Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
+#### Community blogs
 
-### Videos
-
-Check out the how-to videos that are now available on the 
-[Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+- [What you should know about ledger in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
