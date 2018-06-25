@@ -53,7 +53,7 @@ To apply updates to an on-premises environment after it has been deployed, in LC
 > If you're on a platform version that is older than Platform update 12, you can reconfigure an environment that is already deployed to update the customizations or update to the latest platform release. For more information about how to redeploy an environment, see [Redeploy an on-premises environment](redeploy-on-prem.md).
 
 ## Apply application or binary updates through LCS
-The following steps can be used to apply X++, All Binary, or Platform Binary updates. For information about how to move from one platform release to another, see the "Apply the latest platform update" section later in this topic.
+The following steps can be used to apply X++, All Binary, or Platform bianry updates. For information about how to move from one platform release to another, see the "Apply the latest platform update" section later in this topic.
 
 > [!IMPORTANT]
 > The application of updates requires downtime for your environment. Therefore, no business transactions can be performed in the environment during the update. When you complete the following steps, verify that the system isn't being used, and that an official downtime notice has been communicated to all system users.
@@ -64,6 +64,7 @@ The following steps can be used to apply X++, All Binary, or Platform Binary upd
 - Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md).
 - Depending on the type of update, complete the following steps to generate a deployable package:
 
+    - **Platform binary updates** – Download or save the update directly to the Asset library in LCS by following the steps in [Download updates wiki](../migration-upgrade/download-hotfix-lcs.md).
     - **Application binary updates** – Download or save the update directly to the Asset library in LCS by following the steps in [Download updates wiki](../migration-upgrade/download-hotfix-lcs.md).
     - **Application X++ updates** – Download the required hotfix to your development environment, and then follow the steps in [Create a deployable package of your models in order to apply it to a runtime environment](create-apply-deployable-package.md).
     - **Customizations** – Follow the steps in [Develop and deploy custom models](develop-deploy-custom-models-on-premises.md).
@@ -129,7 +130,4 @@ After you review the logs and determine the cause of the failure, complete one o
     > Because this option requires that you do a fresh deployment of the environment, you lose any updates that were previously applied. Any customizations and binary updates must be reapplied to the environment.
 
 ## Apply the latest platform update 
-There are two ways to apply the latest platform update:
-
-- Deploy a new environment, and select the latest platform update topology during deployment. Then follow the usual steps for deploying an environment.
-- Update an existing environment with the latest update by redeploying the environment. For more information about how to redeploy an environment, see [Redeploy an on-premises environment](redeploy-on-prem.md).
+To move to the latest platform, always select the platform update from the **Platform Binary Updates** tile on the **Environment** details page. If you select updates from another location, the updates might not work. The rest of the steps to apply the update are same as X++ or application binary updates as listed above.
