@@ -1,0 +1,67 @@
+---
+# required metadata
+
+title: Uninstall (remove) a module (package)
+description: This topic describes the process for removing a deployable package from your environment
+author: manado
+manager: AnnBe
+ms.date: 10/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: robinr
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+ms.custom: 24211
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: robadawy
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# Uninstall (remove) a module (package)
+
+[!include [banner](../includes/banner.md)]
+
+The following are some reasons a module would need to be uninstalled
+
+- ISV product that is no longer needed and they didn&#39;t renew the license
+- Reorganizing source code
+
+## Removing a model
+
+A model is a design-time concept that is not the same as module. Any model that is not the only model in a module can simply be removed from source code. Nothing else is needed because deploying the updated module will overwrite the old one. All overlayer models fall into this category. See Deleting a model (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/models#deleting-a-model) for more information.
+
+ ## Required prerequisites
+
+- Any models that reference the module to be removed have to have those references removed
+  - Use Viewing model dependencies (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/models#viewing-package-dependencies) to find the references that need to be removed
+- Build and deploy any modules that had references removed
+  - All references to and from the modules to be removed have to be removed before running the uninstall. The module to be removed can have all its references removed by adding a single class with no code and only a reference to the application platform to the model and deploying that before uninstalling the module.
+
+## Process to uninstall a module/package
+
+1. Create a file named ModuleToRemove.txt
+2. Put the name of each module you want to remove on a separate line in the file.
+  1. Make sure you have completed the required prerequisites section above for each module to be removed
+3. Create a valid deployable package and put the ModuleToRemove.txt in the &lt;package&gt;\AOSService\Scripts folder.
+4. Install the deployable package using Apply updates to a cloud deployment (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system)
+5. Validate before repeating on production
+
+_ModuleToRemove.txt sample_
+
+Module1
+
+Module2
+
+Module3
