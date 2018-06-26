@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data migration tool 
-description: This topic provides information about the Data migration tool (DMT) that you can use to migrate data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.
+title: AX 2009 upgrade - Use the Data migration tool to migrate from Dynamics AX 2009 to Dynamics 365 for Finance and Operations 
+description: This topic describes how to use the Data migration tool (DMT) that to migrate data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
-ms.date: 06/21/2018
+ms.date: 06/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -27,27 +27,30 @@ ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
 ---
 
-# Data migration tool
+# AX 2009 upgrade - Use the Data migration tool to migrate from Dynamics AX 2009 to Dynamics 365 for Finance and Operations 
 
 [!include [banner](../includes/banner.md)]
 
-You can use the Data migration tool (DMT) to migrate your data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations. The DMT also finds and fills any gaps between the schema of tables.
+You can use the Microsoft Dynamics AX 2009 Data migration tool (DMT) to migrate your data from AX 2009 to Microsoft Dynamics 365 for Finance and Operations. Using the DMT is the only supported upgrade path from AX 2009 to Finance and Operations. The DMT helps you find and fill gaps between the table schemas of AX 2009 and Finance and Operations, as well as helping you move your data. 
 
-The following illustration shows the technical flow from the source system (AX 2009) to the target system (Finance and Operations).
+## Archictecture
+The following illustration describes the architecture of the DMT, and how data from the source system (AX 2009) is processed and moved to the target system (Finance and Operations).
 
 ![Data migration technical flow](media/dmt_technical_flow.png)
 
-Before you can use the DMT to export data from the source environment (AX 2009), the following pre-processing tasks must be completed for the data:
+## Data migration process
+
+The following illustration shows the overall process of collecting and preparing the data in your AX 2009 instance and then importing that data into your Finance and Operations environment.
+
+![Data migration process](media/dmt_process_flow.PNG)
+
+Before you can use the DMT to export data from the source environment (AX 2009), you must complete the following pre-processing tasks:
 
 - Pre-process staging
 - Mapping the table fields between the source and target environments
 - Applying conversions to the source data
 - Setting up default values for the source data
 - Applying query filters
-
-The following illustration shows the flow for the process of collecting and preparing the appropriate data in your AX 2009 instance and then importing that data into your Finance and Operations environment.
-
-![Data migration process flow](media/dmt_process_flow.PNG)
 
 Because there can be multiple legal entities in the source system, you must select the legal entities that contain the data to migrate. For the selected legal entities, you can review the source tables and their row counts. You can also view any virtual companies. Finally, you can analyze virtual companies that legal entities are attached to and the related tables.
 
