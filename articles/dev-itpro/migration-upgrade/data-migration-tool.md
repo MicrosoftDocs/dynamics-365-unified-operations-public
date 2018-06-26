@@ -16,15 +16,15 @@ ms.technology:
 # ms.search.form:  
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: kfend
 ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tabell
+ms.author: kfend
 ms.search.validFrom: 2018-06-21
-ms.dyn365.ops.version: Platform update 8
+ms.dyn365.ops.version: Platform update 17
 ---
 
 # Data migration tool
