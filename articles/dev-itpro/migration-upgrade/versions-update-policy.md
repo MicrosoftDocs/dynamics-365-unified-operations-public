@@ -62,7 +62,7 @@ For information about the new features included in each release, click the links
 
 | **Release**                                                 | **Major or minor release** | **Version**                                                                                                                                           | **Build number** | **Availability** | **End of Service** |
 |-------------------------------------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|--------------------|
-| Dynamics 365 for Finance and Operations                     | Major release              | [8.0](../../fin-and-ops/get-started/whats-new-changed-8-0-April-2018.md)                                                                                                                                                   | 8.0.30           | April 2018       | April 2019         |
+| Dynamics 365 for Finance and Operations                     | Major release              | [8.0](../../fin-and-ops/get-started/whats-new-changed-8-0-April-2018.md)                                                                                                                                                   | 8.0.30, 8.0.35           | April 2018       | April 2019         |
 | Dynamics 365 for Finance and Operations, Enterprise edition | Major release              | [7.3](../../fin-and-ops/get-started/whats-new-application-7.3-update.md)                       | 7.3.11971.56116  | December 2017    | December 2020      |
 | Dynamics 365 for Finance and Operations, Enterprise edition | Major release              | [July 2017](../../fin-and-ops/get-started/whats-new-application-July-2017-update.md)           | 7.2.11792.56024  | June 2017        | June 2020          |
 | Dynamics 365 for Operations                                 | Major release              | [1611](../../fin-and-ops/get-started/whats-new-dynamics-365-operations-1611.md)                | 7.1.1541.3036    | November 2016    | November 2019      |
@@ -114,3 +114,13 @@ For information about the new features included in each update, click the links 
 ## Support matrix
 
 Platform updates are compatible with all application versions that are supported at the time of release.
+
+### Table 4: Downloadable virtual hard drive (VHD) releases
+Use of the VHDs is subject to the [Software license terms](https://go.microsoft.com/fwlink/?linkid=851163). 
+
+
+|                   Release                    |           VHD name           | VHD expiration date |
+|----------------------------------------------|------------------------------|---------------------|
+| Platform update 12 / Application release 7.2 | FinandOps7.2PlatUpdate12.vhd |    May 24, 2018     |
+| Platform update 12 / Application release 7.3 | FinandOps7.3PlatUpdate12.vhd |    June 05, 2018    |
+| Platform update 15 / Application release 7.3 | FinandOps7.3withPlatUpdate15 |    December 08, 2018    |

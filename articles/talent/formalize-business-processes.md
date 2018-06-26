@@ -2,7 +2,7 @@
 # required metadata
 
 title: Formalize business processes
-description: The Business process feature allows you to create a business process template for processes that need to be completed within your organization.
+description: This topic explains how you can use the Business process feature to create a business process template for processes that must be completed in your organization.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
@@ -30,39 +30,52 @@ ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 
 ---
 # Formalize business processes
-The Business process feature allows you to create a business process template for processes that need to be completed within your organization. For example, your company may complete an HR audit each year. A template can be created to track all the tasks that the audit comprises to help ensure that all the tasks are done each time the process is completed, and if necessary, to help ensure that tasks are performed in the correct order. Templates can be re-used for recurring processes or copied to use as a starting point creating new ones.
 
-After a template is created, a process can be started and tracked in the Business process workspace.  When a business process is started, the tasks will be assigned to the appropriate people and will include a due date. We will cover these components in detail below.
+[!include[banner](includes/banner.md)]
 
-## Business process template
-A Business process template lists a group of tasks that make up a business process. Human resource managers and assistants can create business processes by default.  However, this can be changed in the security configuration by editing the Maintain generic business processes duty.
+The Business process feature lets you create a business process template for business processes that must be completed in your organization. For example, your company completes a Human resources (HR) audit every year. In this case, you can create a template that tracks all the tasks that the audit process consists of. This template can then help guarantee that all the tasks are done every time that the audit is done. Additionally, if the tasks must be completed in a specific order, the template can help guarantee that they are done in the correct order.
 
-A Process owner can be defined for each process. The process owner will have visibility into all the tasks for the process, and can re-assign tasks or change due dates.  For example, the HR director could create a Business process template for a benefits review.  The Comp and benefits manager can be set as the Process owner, so that he or she can have insight into the tasks that need to be completed as part of the review.  A Process owner cannot create or delete active Business processes or Business process templates.
+Templates can be reused for recurring processes. They can also be copied and used as a starting point to create new templates.
 
-## Task
-A business process often comprises multiple tasks. Some tasks can be completed within Dynamics 365 for Talent, such as reviewing internal course offerings. In this instance, a Menu item is selected in the Task link field. Other tasks might involve reviewing or completing forms on a web site. Selecting URL in the Task link field enables the web address to be entered. You can enter URLs for both external and internal sites in this field. You can also create tasks for activities that you complete manually, such as reviewing the accessibility of all structures. In this instance a task link is not required. This flexibility lets you track multiple kinds of tasks in a comprehensive process.
+After a business process template is created, a business process can be started and tracked in the **Business process** workspace. When a business process is started, the tasks are assigned to the appropriate people, and they include a due date.
 
-Tasks can be assigned to a specific worker or to a position. For example, the Comp and benefits manager will always be the person that conducts a review of insurance premiums.   When creating this task, select Position for the Assignment type, and then select Comp and benefit manager from the Position list. When the process starts, the task will be assigned to the worker who is in the Comp and benefits manager position. You can also assign a task to a specific worker by selecting Worker in the Assignment type field, and then selecting the appropriate person.
+## Business process templates
+A business process template lists a group of tasks that make up a business process. By default, HR managers and assistants can create business processes. However, you can change the roles that can create business processes by modifying the **Maintain generic business processes** duty in the security configuration.
 
-Task due dates depend on the Target date entered at the start of the process. Some tasks must be completed before the target date, and some might be completed after the target date.  When defining a task, you will enter a due date that is relative to the target date in the Due date offset from target date field. For example, assume that the Comp and benefits manager must perform a review of the insurance premiums 10 days before the HR audit is complete. The task created will have a due date relative to target date of -10. Therefore, if the process is started on May 13th, the task will be due on May 3rd. Note: Due dates can also be adjusted after the process is started.
+For each business process, you can define a process owner. The process owner has visibility into all the tasks for the process, and can reassign tasks or change due dates. For example, the HR director creates a business process template for a benefits review and specifies the Compensation and benefits manager as the process owner. The Compensation and benefits manager then has visibility into the tasks that must be completed as part of the review.
 
-Complex tasks might require multiple steps, or need the individual performing the tasks to provide additional information. You can add Instructions to the task, and include rich text formatting for the instructions, as well. The instructions can provide additional information on how to complete the task to the person who is assigned to complete it.
+A process owner can't create new business processes or business process templates, or delete active business processes or business process templates.
 
-## Starting a process
-A process can be started within a Business process template by selecting Start process.  When a process is started, tasks will be created for the selected workers and/or positions defined in the tasks that are included in the Business process template. A due date will also be assigned to each task by adding or subtracting the offset days from the target date (see the information regarding offset days in the task section). The active Business processes can be viewed in the Business processes workspace. 
+## Tasks
+A business process often consists of multiple tasks. Some tasks, such as a review of internal course offerings, can be completed in Microsoft Dynamics 365 for Talent[?]. In this case, an option is selected in the **Task link** field. Other tasks might involve reviewing or completing pages on a website. In this case, **URL** is selected in the **Task link** field, and then the web address can be entered. You can enter URLs for both external and internal sites. You can also create tasks for activities that you complete manually, such as a review of the accessibility of all structures. In this case, a task link isn't required. This flexibility lets you track multiple kinds of tasks in a comprehensive process.
+
+Tasks can be assigned either to a specific worker or to a position. For example, the Compensation and benefits manager will always be the person who does a review of insurance premiums. Therefore, when you create this task, select **Position** in the **Assignment type** field, and then select **Comp and benefit manager** in the **Position** list. When the business process is started, the task is assigned to the worker who is in the **Comp and benefits manager** position. To assign a task to a specific worker, select **Worker** in the **Assignment type** field, and then select the appropriate person.
+
+Due dates for tasks depend on the target date that is entered at the start of the business process. Some tasks must be completed before the target date, and other tasks might be able to be completed after the target date. When you define a task, in the **Due date offset from target date** field, you specify a due date that is relative to the target date. For example, the Compensation and benefits manager must do a review of insurance premiums 10 days before the HR audit is completed. In this case, the task that is created for the review has a **Due date offset from target date** value of **-10**. Therefore, if the business process is started on May 13, the task is due on May 3.
+
+> [!NOTE]
+> Due dates can also be adjusted after the business process is started.
+
+Complex tasks might require multiple steps, or the people who perform the tasks might have to provide additional information. For these scenarios, you can add instructions to a task. The instructions can give the person who is assigned to complete the task additional information about how to complete it. You can even include rich text formatting in the instructions.
+
+## Starting a business process
+In a business process template, you can start a business process by selecting **Start process**. When a process is started, tasks are created for the selected workers or the positions that are defined in the tasks that are included in the template. A due date is also assigned to each task by adding or subtracting the number of offset days from the target date, as explained in the "Tasks" section. You can view active business processes in the **Business processes** workspace.
 
 ## Employee self-service
-When a task is assigned to an employee, their assigned tasks can be viewed on the Employee self service page. Employees who have a business process task assigned to them can see the task, its description, instructions for completing it, and the name of a contact person, and they can open the associated Dynamics365 page or web page, from their Employee self-service page. Tasks can be marked as in-progress, canceled or completed.
+After a task is assigned to an employee, the employee can view it, and all his or her other assigned tasks, on the **Employee self service** page. For each business process task that is assigned to him or her, the employee can see the name and description of the task, instructions for completing it, and the name of a contact person. From the **Employee self service** page, the employee can also open the associated page in Microsoft Dynamics 365 or the associated webpage, and can mark tasks as in progress, canceled, or completed.
 
-## Business Process Workspace
-HR professionals can view the active business processes from the Business process workspace. The workspace lists all active processes and the tasks that are associated with each one. The comprehensive task list can be filtered by due date. The page also lists overdue tasks, and tasks specifically assigned to the HR professional. They can also update the status of all tasks and if necessary, reassign tasks to help keep the overall business process moving forward.
+## Business process workspace
+HR professionals can view the active business processes in the **Business process** workspace. This workspace lists all active processes and the tasks that are associated with each. The comprehensive task list can be filtered by due date. The workspace also lists overdue tasks and tasks that are assigned specifically to the HR professional. The HR professional can also update the status of all tasks and, as required, can reassign tasks to help keep the overall business process moving forward.
 
-## My Business Processes Workspace
-Process owners can view the active business processes that are assigned to them from the My Business Process workspace. The workspace lists all active processes and associated tasks that that user owns.  The comprehensive task list can be filtered by due date. The page also lists tasks specifically assigned to process owner. The process owner can also update the status of all tasks, as well as reassign any tasks.
+## My business processes workspace
+Process owners can view the active business processes that are assigned to them in the **My business process** workspace. This workspace lists all the active processes that the user owns, and the associated tasks. The comprehensive task list can be filtered by due date. The workspace also lists tasks that are assigned specifically to the process owner. The process owner can also update the status of all tasks and reassign any task.
 
-## Navigating Business Processes
-1. To add a Business process template, navigate to Business processes- links – Business processes administration.
-   - a.   New will create a new template.
-   - b.   Copy from template will copy the selected template to a new one.
-   - c.   Start process will start the selected business process, assign tasks, and calculate due dates.  
-2. To view active processes and associated tasks navigate to the Business processes workspace.
+## Navigating business processes
+To create or copy a business process template, or to start a business process, navigate to Business processes - links – Business processes administration. You can then perform the following actions:
+
+- Select **New** to create a new business process template.
+- Select **Copy from template** to copy the selected template to a new template.
+- Select **Start process** to start the selected business process, assign tasks, and calculate due dates.
+
+To view active processes and associated tasks, open the **Business processes** workspace.
+
