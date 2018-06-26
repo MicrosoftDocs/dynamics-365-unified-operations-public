@@ -5,7 +5,7 @@ title: X++ conversion run-time functions
 description: This topic describes the conversion run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
