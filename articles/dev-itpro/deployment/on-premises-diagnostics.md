@@ -77,16 +77,21 @@ In our testing, we used the following setup for a small to medium sized Finance 
 Because the orchestrator nodes are already being used for deployment and as primary Service Fabric nodes, they are good candidates for split utilization.
  
 ### Elasticsearch
-Installing Elasticsearch is straight forward. We downloaded the MSI installer onto Orchestrator nodes #1 and #2 and went through the install GUI. Most of the default settings in the installer can be left as is, the other settings are described below. The MSI can be found at: https://www.elastic.co/downloads/elasticsearch.
-We installed Elasticsearch as a service on Windows, to ensure that Elasticsearch would start running again in the case of OS restart. The service can be set up via the MSI.
-On the Configuration page of the installer, we used the same Cluster name when installing on each Elasticsearch node in the cluster.
-We set each Elasticsearch node to perform all three roles (Data, Master and Ingest).
-Depending on the amount of usage expected of Kibana and Elasticsearch, consider bumping up the memory usage from, say, 2 GB, to 4 GB. This decision can be changed later, by modifying the -Xm options in "C:\ProgramData\Elastic\Elasticsearch\config\jvm.options" and restarting Elasticsearch.
-Depending on how many Elasticsearch nodes you choose to set up, you can set the Discovery minimum master nodes appropriately (or keep it empty if you’re unsure). Read more about discovery and nodes here.
-In the network settings, we put each of the nodes’ IP addresses as their respective Network host (for discoverability) and added all Elasticsearch node IP addresses to the Unicast Hosts list for each node. For instance, on Orchestrator #1 (with IP 10.0.0.12), we set the Network host to 10.0.0.12, and added the following to the Unicast Hosts list: 10.0.0.12, 10.0.0.13, where 10.0.0.13 is Orchestrator #2.
-[If you’re installing 6.3 or higher, you can disregard this paragraph] You can select to install X-Pack now, or later. For more information on setting up, and whether you should install X-Pack, see the X-Pack section in this document. For now, unless you know what it is for, choose not to install it.
-Remember to open the HTTP port (default: 9200) and node communication port (default: 9300) in your firewall.
-To check if the installation went smoothly, open a browser and navigate to the application address, i.e.: http://10.0.0.12:9200 – you should see some JSON output.
+Elasticsearch installation is fairly straight forward. During our testing, we downloaded the [MSI installer](https://www.elastic.co/downloads/elasticsearch) onto Orchestrator nodes #1 and #2. Most of the default settings in the installer can be left as is. The settings we changed are described below.
+To ensure that Elasticsearch will start running again in the case of OS restart, install Elasticsearch as a service on Windows. The service can be set up by using the MSI.
+
+On the **Configuration** page of the installer, we used the same cluster name when installing each Elasticsearch node in the cluster.
+We set each Elasticsearch node to perform all three roles, Data, Master, and Ingest.
+Depending on the amount of usage expected of Kibana and Elasticsearch, consider bumping up the memory usage. This decision can be changed later, by modifying the -Xm options in "C:\ProgramData\Elastic\Elasticsearch\config\jvm.options" and restarting Elasticsearch.
+Depending on how many Elasticsearch nodes you choose to set up, you can set the Discovery minimum master nodes appropriately. If you are unsure, you can keep the master nodes empty. For more information about discovery and nodes, see [Node](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-node.html).
+For discoverability, in **Network settings**, we put each nodes’ IP address as their respective Network host and added all Elasticsearch node IP addresses to the Unicast Hosts list for each node. For example, on Orchestrator #1 (with IP 10.0.0.12), we set the Network host to 10.0.0.12, and added the following to the Unicast Hosts list: 10.0.0.12, 10.0.0.13, where 10.0.0.13 is Orchestrator #2.
+
+**If you’re installing Elasticsearch version 6.3 or higher, you can disregard this paragraph** - You can select to install X-Pack now, or later. For more information on setting up, and whether you should install X-Pack, see the X-Pack section in this document. For now, unless you know what it is for, don't install it.
+
+  > [!IMPORTANT}
+  > Open the HTTP port (default: 9200) and node communication port (default: 9300) in your firewall.
+
+To verify that the installation was successul, open a browser and navigate to the application address. You should see some JSON output.
  
 ### Logstash
 In our test setup, we found that some of the events from Winlogbeat needed some tweaking, and Logstash gives us that functionality.
