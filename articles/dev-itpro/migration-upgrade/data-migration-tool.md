@@ -57,6 +57,6 @@ Before you can migrate data from AX 2009 to Finance and Operations, you must com
 
 - Select target dimensions that correspond to the source dimensions that are populated based on the selected legal entities.
 - Review the inventory dimensions that are included with the selected legal entities.
-- Chart of accounts for each legal entity, or consolidate multiple charts of accounts into a single chart of accounts.
+- Select the chart of accounts for each legal entity, or consolidate multiple charts of accounts into a single chart of accounts.
 - Complete the basic ledger setup.
 - Apply data conversions to the source data, based on the extended data type (EDT) of the field.
