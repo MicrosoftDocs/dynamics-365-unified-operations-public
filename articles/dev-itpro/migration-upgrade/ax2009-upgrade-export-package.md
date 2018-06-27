@@ -2,7 +2,7 @@
 # required metadata
 
 title: AX 2009 upgrade - Export package
-description: This topic provides information about how to export a data package from  migrate data from Dynamics AX 2009 to Finance and Operations.
+description: This topic provides information about how to export a data package for migration from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 06/26/2018
