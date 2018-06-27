@@ -31,7 +31,9 @@ ms.dyn365.ops.version: Platform update 17
 
 [!include [banner](../includes/banner.md)]
 
-Determine which entities should be exported together in package, and put all these entities in a migration group. A migration group is a set of entities that must be processed in a sequence, or that can logically be grouped together. The entities in a migration group are exported together from source to staging or directly to file package. In a migration group, you also associate legal entities. migration groups must be set up before you export process. All other settings, such as export criteria, are used only to export data.
+When you create a definition for migration, you determine which entities should be packaged and exported together, and then put all of the entities together in a migration group. A migration group is a set of entities that must be processed in a sequence, or that can logically be grouped together. The entities in a migration group are exported together from the source to staging or directly to file package. In a migration group, you also associate legal entities. Migration groups must be set up before you begin the export process.
+
+Complete the following steps to create a migration group.
 
 1.	Data Management  
 2.	Create Migration group 
