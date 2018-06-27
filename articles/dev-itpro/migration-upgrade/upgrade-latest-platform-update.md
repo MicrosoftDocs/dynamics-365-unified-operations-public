@@ -112,7 +112,8 @@ Platform update packages are released by Microsoft and can be imported from the 
 
 #### Example
 
-```AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="OneBoxDev-runbook.xml"
+```
+AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="OneBoxDev-runbook.xml"
 
     AXUpdateInstaller.exe import -runbookfile=OneBoxDev-runbook.xml
 
