@@ -2,7 +2,7 @@
 # required metadata
 
 title: AX 2009 upgrade - Import package
-description: This topic provides information about how to create package templates that you can use to migrate data from Dynamics AX 2009 to Finance and Operations.
+description: This topic provides information about how to import the migrated data package from Microsoft Dynamics AX 2009 into Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 06/26/2018
@@ -31,16 +31,26 @@ ms.dyn365.ops.version: Platform update 17
 
 [!include [banner](../includes/banner.md)]
 
-Import is the process of pulling data into a system using data entities. The import process is done through the Import tile in the Data Management workspace or you can import from source system directly or use LCS to upload the data package. Data can be imported for a group of logically related entities that are sequenced in the correct order. 
-Import a data package:
-Option 1:  AX 2009 – Data management -> create migration group -> Export now -> mark import  package in target. 
+Data can be imported for a group of logically related entities that are sequenced in the correct order. There are three possible options to import the Microsoft Dynamics AX 2009 data that you want to migrate to Microsoft Dynamics 365 for Fiance and Operations.
 
-Option 2:
-1.	Log into the D365 environment using a login with sufficient privileges (typically this is the Administrator role).
-2.	On the dashboard, click the Data Management workspace.
-3.	Click the Import tile.
-4.	On the next page, do the following:
-a.	Provide a name.
-b.	In the Source Data Format field, select Package .
-c.	Click the Upload button and choose the appropriate package file from the location for the data being imported. This will import all the files from the package.
-Option 3: LCS 
+- Dynamics AX 2009
+- Finance and Operations
+- Lifecycle Services (LCS)
+
+## Dynamics AX 2009
+You can import your data for migration from the source system directly by completing the following steps. 
+
+1. In Dynamics AX 2009, click Data management -> create migration group -> Export now -> mark import package in target. 
+
+## Finance and Operations
+You can import your data for migration using your Finance and Operations environment by completing the following steps. 
+
+1. Using an admin role, log into your Finance and Operations environment. 
+2. On the dashboard, click the **Data Management** workspace.
+3. Click **Import**.
+4. Enter the name of the package, and in the **Source data format** field, select **Package**.
+5. Click **Upload** and choose the appropriate package file from the location for the data being imported. This will import all the files from the package.
+
+## Lifecycle Services 
+For information about how to import a package into Finance and Operations using LCS, see [Apply updates to a cloud environment](./deployment/apply-deployable-package-system.md).
+
