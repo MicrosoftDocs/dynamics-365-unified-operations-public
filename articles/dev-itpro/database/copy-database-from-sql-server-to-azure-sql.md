@@ -246,9 +246,6 @@ EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 CREATE USER axretaildatasyncuser WITH PASSWORD = '<password from LCS>'
 EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
-CREATE USER axdeployextuser WITH PASSWORD = '<password from LCS>'
-EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
-
 ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
 ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
 ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
