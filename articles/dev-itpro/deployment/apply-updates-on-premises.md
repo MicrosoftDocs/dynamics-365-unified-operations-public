@@ -81,7 +81,7 @@ The following steps can be used to apply X++, All Binary, or Platform bianry upd
 >[!NOTE]
 > During preparation, the environment state will be **Deployed** but the Deployment status field will show the progress of Preparation. Steps such formatting the package and downloading the package are executed during preparation. The environment is not directly touched during preparation and hence there is no downtime during the preparation phase. Users can continue to use the system during preparation. 
 
-5. Once preparation is complete, you will see **Abort** and **Update Environment** buttons. To start applying the update, click Update Environment. If preparation fails, see the "Resolve a failed update application" section later in this topic.
+5. Once preparation is complete, you will see **Abort** and **Update Environment** buttons. To start applying the update, click **Update Environment**. If preparation fails, see the "Resolve a failed update application" section later in this topic.
 6. In the confirmation message, select **Yes**. The servicing operation has started on this environment. This is the start of the downtime on your environment. 
 7. The environment state is changed from **Deployed** to **Deploying**. 
 8. After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see the "Resolve a failed update application" section later in this topic.
@@ -97,7 +97,7 @@ Before you update a production environment, you must successfully complete the p
 >[!NOTE]
 > During preparation, the environment state will be **Deployed** but the Deployment status field will show the progress of Preparation. Steps such formatting the package and downloading the package are executed during preparation. The environment is not directly touched during preparation and hence there is no downtime during the preparation phase. Users can continue to use the system during preparation. 
 
-4. Once preparation is complete, you will see **Abort** and **Update Environment** buttons. To start applying the update, click Update Environment. If preparation fails, see the "Resolve a failed update application" section later in this topic.
+4. Once preparation is complete, you will see **Abort** and **Update Environment** buttons. To start applying the update, click **Update Environment**. If preparation fails, see the "Resolve a failed update application" section later in this topic.
 5. In the confirmation message, select **Yes**. The servicing operation has started on this environment. This is the start of the downtime on your environment. 
 6. The environment state is changed from **Deployed** to **Deploying**. 
 7. After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see the "Resolve a failed update application" section later in this topic.
