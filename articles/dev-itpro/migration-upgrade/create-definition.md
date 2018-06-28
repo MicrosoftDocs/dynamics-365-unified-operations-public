@@ -2,7 +2,7 @@
 # required metadata
 
 title: AX 2009 upgrade - Create definitions
-description: This topic explains how to create package templates that you can use to migrate data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains how to create definitions, or migration groups to upgrade from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 06/26/2018
