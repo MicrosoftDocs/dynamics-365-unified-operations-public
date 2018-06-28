@@ -174,7 +174,7 @@ We created a basic task in Windows Task Scheduler with a weekly trigger on Satur
   - Add arguments:
 
         --config curator.yml .\30day_data_retention_actions.yml
-	- Start in:
+  - Start in:
 
         C:\ELK\Curator
  
