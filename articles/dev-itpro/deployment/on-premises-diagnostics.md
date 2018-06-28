@@ -2,7 +2,7 @@
 # required metadata
 
 title: On-premises diagnostics
-description: This topic provides information about exposing the telemetry data for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations. 
+description: This topic provides information about how to expose the telemetry data for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations. 
 author: sarvanisathish
 manager: AnnBe
 ms.date: 06/20/2018
@@ -34,180 +34,206 @@ ms.dyn365.ops.version: Platform Update 12
 [!include [banner](../includes/banner.md)]
 
 ## Telemetry guidelines
-To diagnose Microsoft Dynamics 365 for Finance and Operations deployment and execution, you must have access to telemetry. In a cloud deployment, Microsoft stores and monitors the telemetry from services to keep the environment healthy. For an on-premises deployment, the customer is responsible for this task. 
+To diagnose the deployment and execution of Microsoft Dynamics 365 for Finance and Operations, you must have access to telemetry. For a cloud deployment, Microsoft stores and monitors the telemetry from services to help keep the environment healthy. For an on-premises deployment, the customer is responsible for this task.
 
-You can select the telemetry data store and query tool that you prefer to use. However, at a minimum it should at least perform the following tasks:
+You can select the telemetry data store and query tool that you prefer to use. However, at a minimum, the tool should perform the following tasks:
 
-- The telemetry store should be able to store 30 days worth of telemetry data.
+- The telemetry store should be able to store 30 days' worth of telemetry data.
 - The telemetry events should be stored in a centralized location, so that support engineers don't have to switch between multiple machines to find events that are relevant to an issue.
 - The telemetry events should be discoverable based on event type and event data.
-- The telemetry event data (xml) should be deserialized so that the event data can be queried on and is traversable.
+- The telemetry event data (in XML format) should be deserialized so that the event data can be queried on and traversed.
 
 ## Elastic Stack example
-To fulfill the telemetry guidelines listed in the previous section, we have tested the Elastic Stack set up which includes:
+To meet the telemetry guidelines that are listed in the previous section, Microsoft tested the Elastic Stack setup. This setup includes the following components:
 
-- Elasticsearch: For storage, event indexing, and event querying
-- Logstash: For load distribution and event data mutation
-- Winlogbeat: For telemetry collection
-- Kibana: An interface for querying the data stored in Elasticsearch
+- **Elasticsearch** – For storage, event indexing, and event querying. For more information about Elasticsearch, see the [Elastic website](https://www.elastic.co/products/elasticsearch).
+- **Logstash** – For load distribution and event data mutation.
+- **Winlogbeat** – For telemetry collection.
+- **Kibana** – An interface for querying the data that is stored in Elasticsearch.
 
-You can read more about Elasticsearch at the [Elastic website](https://www.elastic.co/products/elasticsearch).
+> [!NOTE]
+> By default, communication in an Elastic Stack cluster is **not** sent over HTTPS. Don't set up the Elastic Stack unless you've considered the risks, and prepared or implemented mitigations for those risks. The [paid version](https://www.elastic.co/subscriptions) of X-Pack can be used to encrypt communication in the Elastic Stack. For setup information, see [Setting up TLS on a cluster](https://www.elastic.co/guide/en/x-pack/current/ssl-tls.html). There is also an open source [Elasticsearch plug-in](https://github.com/floragunncom/search-guard-ssl). Although Microsoft hasn't tested this plug-in, according to the documentation, it can enable HTTPS.
 
-  > [!NOTE]
-  > Communication in an Elastic Stack cluster is not sent over HTTPS. This is a default behavior. Do not set up Elastic Stack without considering the risks and preparing or implementing mitigations for those risks. Encrypting communication in Elastic Stack can be performed by the [paid version](https://www.elastic.co/subscriptions) of X-Pack. Set it up by following the guide, [Setting up TLS on a cluster](https://www.elastic.co/guide/en/x-pack/current/ssl-tls.html) There is also an open source [Elasticsearch plug-in](https://github.com/floragunncom/search-guard-ssl), which we have not tested, that states it can enable HTTPS.
+If you deploy the Elastic Stack, your experience might vary if you follow the steps that are described in this topic. For its tests, Microsoft used version 6.2.3 of the Elastic Stack components and Microsoft Dynamics 365 for Finance and Operations 7.3 with platform update 12.
 
-If you deploy the Elastic Stack, note that your experience may vary if you follow the steps in this document. We used version 6.2.3 of the Elastic Stack components and Dynamics 365 for Finance and Operations 7.3 Platform Update 12 in our tests.
-This document will describe how we handled the setup and configuration steps required to get Elastic Stack working for a on-premises deployment of Finance and Operations. For guidance not releated to Finance and Operations, we refer to the Elastic.co documentation.
+This topic describes how Microsoft handled the setup and configuration steps that are required for the Elastic Stack to work for a on-premises deployment of Finance and Operations. For guidance that isn't related to Finance and Operations, see the documentation on Elastic.co.
 
-## Install and Configure Elastic Stack
-All hosted components of the Elastic Stack run on Java, except for Winlogbeat. In our scenario, we started by downloading and installing the latest version of Java 8 JRE (64-bit) on each node that would be running Elasticsearch, Logstash or Kibana (all of the orchestrator nodes). You can get Java 8 from [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
-As of June 2018, the Elastic Stack runs on Java 8. Any attempts to run it on a newer version of Java may not work.
+## Install and configure the Elastic Stack
+All hosted components of the Elastic Stack, except Winlogbeat, run on Java. For the test scenario, Microsoft first downloaded and installed the latest version of Java Runtime Environment (JRE) 8 (64-bit) on each node that will run Elasticsearch, Logstash, or Kibana (that is, all the Orchestrator nodes). You can get Java 8 from [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
-  > [!NOTE}
-  > The entire Elastic Stack (except for Winlogbeat) can be hosted on Linux. In our tests, the stack was hosted on Windows Server 2016 VMs.
-  
-Remeber to open ports in the firewall for the different components on each node.
-If you get stuck during setup, Elastic.co has extensive and well-written documentation for installing and configuring the Elastic Stack. For help with specific types of errors, web searches yield reliable results from both the Elastic.co forum and StackOverflow.
+As of June 2018, the Elastic Stack runs on Java 8. Any attempt to run it on a newer version of Java might not work.
+
+> [!NOTE]
+> The whole Elastic Stack, except Winlogbeat, can be hosted on Linux. For its tests, Microsoft hosted the stack on Microsoft Windows Server 2016 virtual machines (VMs).
+
+Remember to open ports in the firewall for the various components on each node.
+
+If you get stuck during setup, Elastic.co has extensive and well-written documentation about the installation and configuration of the Elastic Stack. For help with specific types of errors, web searches yield reliable results from both the Elastic.co forum and StackOverflow.
 
 ### Component matrix
-In our testing, we used the following setup for a small to medium sized Finance and Operations deployment:
+For its tests, Microsoft used the following setup for a small to medium-sized Finance and Operations deployment.
 
- [![Component matrix](./media/component-matrix.PNG)](./media/component-matrix.PNG)
+| Node            | Elasticsearch | Logstash | Kibana | Winlogbeat |
+|-----------------|---------------|----------|--------|------------|
+| Orchestrator #1 | X             |          |        | X          |
+| Orchestrator #2 | X             | X        |        | X          |
+| Orchestrator #3 |               | X        | X      | X          |
+| AOS #1...*n*    |               |          |        | X          |
 
-Because the orchestrator nodes are already being used for deployment and as primary Service Fabric nodes, they are good candidates for split utilization.
- 
+Because the Orchestrator nodes are already used for deployment and as primary Microsoft Azure Service Fabric nodes, they are good candidates for split utilization.
+
 ### Elasticsearch
-Elasticsearch installation is fairly straight forward. During our testing, we downloaded the [MSI installer](https://www.elastic.co/downloads/elasticsearch) onto Orchestrator nodes #1 and #2. Most of the default settings in the installer can be left as is. The settings we changed are described below.
-To ensure that Elasticsearch will start running again in the case of OS restart, install Elasticsearch as a service on Windows. The service can be set up by using the MSI.
+The installation of Elasticsearch is fairly straightforward. For its tests, Microsoft downloaded the [Microsoft Windows Installer (MSI) file](https://www.elastic.co/downloads/elasticsearch) onto the Orchestrator #1 and Orchestrator #2 nodes. Most of the default settings in the installer can be left as is. This section describes the settings that Microsoft changed.
 
-On the **Configuration** page of the installer, we used the same cluster name when installing each Elasticsearch node in the cluster.
-We set each Elasticsearch node to perform all three roles, Data, Master, and Ingest.
-Depending on the amount of usage expected of Kibana and Elasticsearch, consider bumping up the memory usage. This decision can be changed later, by modifying the -Xm options in "C:\ProgramData\Elastic\Elasticsearch\config\jvm.options" and restarting Elasticsearch.
-Depending on how many Elasticsearch nodes you choose to set up, you can set the Discovery minimum master nodes appropriately. If you are unsure, you can keep the master nodes empty. For more information about discovery and nodes, see [Node](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-node.html).
-For discoverability, in **Network settings**, we put each nodes’ IP address as their respective Network host and added all Elasticsearch node IP addresses to the Unicast Hosts list for each node. For example, on Orchestrator #1 (with IP 10.0.0.12), we set the Network host to 10.0.0.12, and added the following to the Unicast Hosts list: 10.0.0.12, 10.0.0.13, where 10.0.0.13 is Orchestrator #2.
+To help guarantee that Elasticsearch starts to run again if the operating system (OS) is restarted, Microsoft installed it as a service on Windows. The installer can be used to set up the service.
 
-**If you’re installing Elasticsearch version 6.3 or higher, you can disregard this paragraph** - You can select to install X-Pack now, or later. For more information on setting up, and whether you should install X-Pack, see the X-Pack section in this document. For now, unless you know what it is for, don't install it.
+On the **Configuration** page of the installer, Microsoft used the same cluster name when it installed each Elasticsearch node in the cluster.
 
-  > [!IMPORTANT}
-  > Open the HTTP port (default: 9200) and node communication port (default: 9300) in your firewall.
+Microsoft set every Elasticsearch node to perform all three roles: Data, Master, and Ingest.
 
-To verify that the installation was successful, open a browser and navigate to the application address where you should see some JSON output.
- 
+Depending on the amount that you expect Kibana and Elasticsearch to be used, consider increasing the memory usage. You can change this setting later by modifying the -Xm options in the C:\\ProgramData\\Elastic\\Elasticsearch\\config\\jvm.options file and restarting Elasticsearch.
+
+Depending on the number of Elasticsearch nodes that you set up, you can set the Discovery minimum master nodes appropriately. If you aren't sure, you can keep the master nodes empty. For more information about discovery and nodes, see [Node](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-node.html).
+
+For discoverability, in **Network settings**, Microsoft set the **Network host** value of each node to that node's IP address and added the IP addresses of all Elasticsearch nodes to the **Unicast Hosts** list for each node. For example, for Orchestrator #1, which has the IP address 10.0.0.12, Microsoft set the **Network host** value to **10.0.0.12** and added the following IP addresses to the **Unicast Hosts** list: 10.0.0.12 and 10.0.0.13, where 10.0.0.13 is Orchestrator #2.
+
+**If you're installing Elasticsearch version 6.3 or higher, you can disregard this paragraph.** You can install X-Pack either now or later. For more information about setup and whether you should install X-Pack, see the "X-Pack" section of this topic. For now, unless you know what X-Pack is for, don't install it.
+
+> [!IMPORTANT]
+> Open the HTTP port (by default, port 9200) and the node communication port (by default, port 9300) in your firewall.
+
+To verify that the installation was successful, start a browser, and open the application address. You should see some JavaScript Object Notation (JSON) output.
+
 ### Logstash
-In our test setup, we found that some of the events from Winlogbeat needed some adjustments, and Logstash provides that functionality.
-We downloaded Logstash into C:\ELK\Logstash on Orchestrator nodes #2 and #3.
-To ensure that Logstash runs on startup, we used NSSM to set up a service for the Logstash batch script.
+In its test setup, Microsoft found that some events from Winlogbeat required adjustments. Logstash provides that functionality.
 
-1. Copy nssm.exe to the Logstash bin folder (e.g. C:\ELK\Logstash\6.2.4\bin\).
-2. Open PowerShell from the bin folder and run the following: 
+Microsoft downloaded Logstash to C:\\ELK\\Logstash on the Orchestrator #2 and Orchestrator #3 nodes.
 
-        .\nssm.exe install Logstash
-      
-3. Set the following fields on the **Application** tab, and then click **Save**:
+To help guarantee that Logstash runs on startup, we used NSSM to set up a service for the Logstash batch script.
 
-      Path: C:\ELK\Logstash\6.2.4\bin\logstash.bat
-      Startup directory: C:\ELK\Logstash\6.2.4
-      Arguments: -f C:\ELK\Logstash\config\logstash-dyn365finops.conf
-      (There are more settings to set if you want, but for now, this will do)
+1. Copy nssm.exe to the Logstash bin folder (for example, C:\\ELK\\Logstash\\6.2.4\\bin\\).
+2. Open Windows PowerShell from the bin folder, and run the following command.
 
-4. Next, run the following:
+    ```
+    .\nssm.exe install Logstash
+    ```
 
-        .\nssm.exe start Logstash
-        
-In our tests, NSSM had trouble restarting the installed services. We considered the service as an OS startup service, and not much else as NSSM was not 100% reliable for Logstash and Kibana.
+3. On the **Application** tab, set the following fields, and then click **Save**:
 
-We created the following configuration file for Logstash, which performs useful mutations on Finance and Operations telemetry ([placed in C:\ELK\Logstash\6.2.4\config](https://aka.ms/ConfigFilesOnPremises)): 
+    - **Path:** C:\\ELK\\Logstash\\6.2.4\\bin\\logstash.bat
+    - **Startup directory:** C:\\ELK\\Logstash\6.2.4
+    - **Arguments:** -f C:\\ELK\\Logstash\\config\\logstash-dyn365finops.conf
 
-To make the configuration work for your set up, you will have to change the hosts fields in the output section to point to the Elasticsearch nodes in your cluster. For example, hosts => ["ORCH1:9200", "ORCH2:9200"].
-The configuration was tested with the Winlogbeat configuration from the section below.
-Remember to open the Winlogbeat port in your firewall on the machine that is hosting Logstash, to allow Beats sending data to Logstash (default: 5044).
- 
+    (There are more settings that you can set. However, these settings suffice for now.)
+
+4. Run the following command.
+
+    ```
+    .\nssm.exe start Logstash
+    ```
+
+In the tests that Microsoft performed, NSSM had trouble restarting the installed services. Because NSSM wasn't 100-percent reliable for Logstash and Kibana, the service was treated as an OS startup service and little else.
+
+Microsoft created a configuration file for Logstash and [put it in C:\\ELK\\Logstash\\6.2.4\\config](https://aka.ms/ConfigFilesOnPremises). This file performs useful mutations on Finance and Operations telemetry.
+
+To make the configuration work for your setup, you must change the **hosts** fields in the **output** section so that they point to the Elasticsearch nodes in your cluster. For example, change **hosts** to **\["ORCH1:9200", "ORCH2:9200"\]**.
+
+The configuration was tested by using the Winlogbeat configuration from the next section.
+
+Remember to open the Winlogbeat port (by default, port 5044) in your firewall on the machine that is hosting Logstash, so that Beats can send data to Logstash.
+
 ### Winlogbeat
-We downloaded Winlogbeat to each of the AOS and Orchestrator nodes at C:\ELK\Winlogbeat, and configured the [winlogbeat.yml file](https://aka.ms/ConfigFilesOnPremises).
+Microsoft downloaded Winlogbeat to each Application Object Server (AOS) and Orchestrator node at C:\\ELK\\Winlogbeat, and configured the [winlogbeat.yml file](https://aka.ms/ConfigFilesOnPremises).
 
-To make the configuration work for your set up, you will have to change the **output.logstash.hosts** fields to point to all your Logstash nodes. Winlogbeat will handle the load balancing.
-When Winlogbeat is running on an Orchestrator node, the **Tags** field can be changed from AOS to ORCH, or something similar. We also used the **fields.env** field to set the environment of the deployment (sandbox, sandbox-n, production). By doing this, there is a cleaner separation when querying data from multiple environments and node types.
-Winlogbeat comes with a service installer which we used to set up Winlogbeat as a service on each of the nodes. From the Run tool (Win+R), we ran the following:
+To make the configuration work for your set up, you must change the **output.logstash.hosts** fields so that they point to all your Logstash nodes. Winlogbeat handles the load balancing.
 
-     powershell.exe -ExecutionPolicy Bypass -File C:\ELK\Winlogbeat\install-service-winlogbeat.ps1
- 
+When Winlogbeat runs on an Orchestrator node, the **Tags** field can be changed from **AOS** to **ORCH** or a similar value. Microsoft also used the **fields.env** field to set the environment of the deployment (sandbox, sandbox-n, or production). In this way, there is a cleaner separation when data from multiple environments and node types is queried.
+
+Winlogbeat includes a service installer. Microsoft used this installer to set up Winlogbeat as a service on each node. Press the Windows logo key+R to start the Run tool, and then run the following command.
+
+```
+powershell.exe -ExecutionPolicy Bypass -File C:\ELK\Winlogbeat\install-service-winlogbeat.ps1
+```
+
 ### Kibana
 Kibana provides the interface to query the telemetry data in Elasticsearch.
-We downloaded Kibana to C:\ELK\Kibana, and configured the kibana.yml file as follows:
-        
-    server.host: "10.0.0.14"
-    server.name: "Dyn365FinOps On-Premises Diagnostics"
-    elasticsearch.url: "http://ORCH1:9200"
 
-From Kibana, we had to define index patterns on the **Management** tab. Because the index pattern groups index by name, we needed an indext patter for the two indexes we made: “deployment-\*” and “runtime-\*”. The index names are case sensitive.
-We set the runtime-* index pattern as the default. Click the asterisk when looking at the index patterns on the **Management** tab. This index pattern will then show up on the **Discovery** tab:
+Microsoft downloaded Kibana to C:\\ELK\\Kibana and configured the kibana.yml file in the following manner.
 
- [![Runtime index pattern](./media/runtime-index-patter.png)](./media/runtime-index-patter.png)
+```
+server.host: "10.0.0.14"
+server.name: "Dyn365FinOps On-Premises Diagnostics"
+elasticsearch.url: "http://ORCH1:9200"
+```
 
-We ran Kibana as a service in the same manner as Logstash, for the benefit of Kibana starting up on OS start. Unlike Logstash, kibana.bat does not need to know the path of the configuration files, so simply install a NSSM service that points to C:\ELK\Kibana\6.2.4\bin\kibana.bat.
-If you want users to browse it on your network, remember to open the port for Kibana. The default port is 5601.
- 
-#### Example queries in Kibanas Discover tab
-The following sample queries can help you get started with probing the telemetry data. If you need something more than the examples show, you can:
+From Kibana, Microsoft had to define index patterns on the **Management** tab. Because index patterns group indexes by name, an index pattern was required for the two indexes that were made: deployment-\* and runtime-\*. The index names are case-sensitive.
 
-  - **Find slow database queries:** You can type **slow** into the search field, which will find events that have the word ‘slow’ somewhere in the event data. If you’re looking to be more precise, you can find events with a task name of **"AosDatabaseSlowQuery”** and then type **TaskName:AosDatabaseSlowQuery** into the search field.
-  - **Find recent exceptions:** Type **exception** into the search field to find events that have thrown an exception or handled one and logged it. From the upper right corner of Kibana you can choose the time-frame that you want the search to be limited to. The time set there will persist between tabs, so the data on the **Visualize** tab will reflect the selected time range.
+Microsoft set the runtime-\* index pattern as the default pattern. When you're looking at the index patterns on the **Management** tab, click the asterisk (\*). The index pattern will then appear on the **Discover** tab.
 
-  [![Search timeframe](./media/time-visualize.png)](./media/time-visualize.png) 
-  
-  - **Find events from an AOS node:** Searching for **host:AOS1** will yield all events from that node.
-  - **Find events with proximity, in time, to another:** When you have found an event of interest, click **View surrounding documents** next to the header of that event. That will find events that happened at the same time. If you’re seeing events that happened around the same time, but from different AOS nodes, you can add additional filtering to only show events from the node you want.
+[![Runtime index pattern](./media/runtime-index-patter.png)](./media/runtime-index-patter.png)
 
-  [![View surrounding documents](./media/events-with-proximity.PNG)](./media/events-with-proximity.PNG)
+Microsoft ran Kibana as a service in the same manner as Logstash, so that Kibana is started at OS startup. Unlike Logstash, kibana.bat doesn't have to know the path of the configuration files. Therefore, you can just install an NSSM service that points to C:\\ELK\\Kibana\\6.2.4\\bin\\kibana.bat.
 
-#### 30-day data retention
-To keep our hard disks free from stale data, we used Curator v5.5 to clean up indexes older than 30 days.
-We downloaded Curator to one of the orchestrator nodes at C:\ELK\Curator, and used the following configuration file to connect it to our Elasticsearch cluster ([put in C:\ELK\Curator](https://aka.ms/ConfigFilesOnPremises)).
+If you want users to browse Kibana on your network, remember to open the port for Kibana. The default port is 5601.
 
-The Curator runs actions, and we created an action to clean up 30-day old indexes ([put in C:\ELK\Curator](https://aka.ms/ConfigFilesOnPremises)).
+#### Example queries on the Discover tab in Kibana
+The following sample queries can help you start probing the telemetry data. If you require something more than the examples show, you can try one of the following queries:
 
-We created a basic task in Windows Task Scheduler with a weekly trigger on Saturday and Sunday that contains the following settings to start a program:
-  - Program/script:
-     
-        C:\ELK\Curator\curator.exe
-  
-  - Add arguments:
+- **Find slow database queries:** Enter **slow** in the search field to find events that have the word "slow" somewhere in the event data. If you want to be more precise, you can find events that have a task name of **AosDatabaseSlowQuery** and then enter **TaskName:AosDatabaseSlowQuery** in the search field.
+- **Find recent exceptions:** Enter **exception** in the search field to find events that have either thrown an exception, or handled an exception and logged it. In the upper-right corner of Kibana, you can select the time frame that the search should be limited to. The time frame that you set there is persisted between tabs. Therefore, the data on the **Visualize** tab will reflect the selected time frame.
 
-        --config curator.yml .\30day_data_retention_actions.yml
-  - Start in:
+    [![Search time frame](./media/time-visualize.png)](./media/time-visualize.png) 
 
-        C:\ELK\Curator
- 
+- **Find events from an AOS node:** Enter **host:AOS1** in the search field to find all events from that node.
+- **Find events with proximity, in time, to another:** When you've found an event that you're interested in, click **View surrounding documents** next to the header of that event to find events that occurred at the same time. If you see events that occurred at around the same time but from different AOS nodes, you can add additional filtering to view only events from the node that you want.
+
+    [![View surrounding documents](./media/events-with-proximity.PNG)](./media/events-with-proximity.PNG)
+
+#### Thirty-day data retention
+To keep its hard disks free from stale data, Microsoft used Curator v5.5 to clean up indexes that were older than 30 days.
+
+Microsoft downloaded Curator to one of the Orchestrator nodes at C:\\ELK\\Curator. Microsoft then used the configuration file that was [put in C:\\ELK\\Curator](https://aka.ms/ConfigFilesOnPremises) to connect Curator to its Elasticsearch cluster.
+
+Curator runs actions, and Microsoft created an action to clean up 30-day-old indexes that were [put in C:\\ELK\\Curator](https://aka.ms/ConfigFilesOnPremises).
+
+Microsoft created a basic task in Windows Task Scheduler. This task has a weekly trigger on Saturday and Sunday, and the trigger has the following settings to start a program:
+
+- **Program/script:** C:\\ELK\\Curator\\curator.exe
+- **Add arguments:** --config curator.yml .\\30day\_data\_retention\_actions.yml
+- **Start in:** C:\\ELK\\Curator
+
 ## X-Pack
-  > [!IMPORTANT]
-  > As of June 2018, Elastic Stack components have been released starting with version 6.3. This updated version handles X-Pack in a more graceful manner, by enabling the free features of X-Pack by default, without having to update the license yearly, and allowing you to opt-in to the paid features afterwards. If you install an Elastic Stack version that was released prior to 6.3, the content in this section will only partially apply to the setup.
+> [!IMPORTANT]
+> As of June 2018, Elastic Stack components have been released that start with version 6.3. This updated version handles X-Pack in a more graceful manner, by enabling the free features of X-Pack by default, without requiring that you update the license every year, and by letting you opt in to the paid features afterwards. If you install an Elastic Stack version that is earlier than 6.3, the content in this section only partially applies to the setup.
 
-When you install Elasticsearch, you can select to install X-Pack or you can choose to [install it at a later time](https://www.elastic.co/guide/en/x-pack/current/installing-xpack.html).
-X-Pack has a free Basic license that must be refreshed once a year.
-We installed the free version to enable CSV exports of query data from Kibana. There are other useful features in X-Pack, and some are locked behind a paid subscription.
-To enable only the free features, and avoid using other X-Pack trial features, we added the following our elasticsearch.yml and kibana.yml configuration files:
+You can select to install X-Pack when you install Elasticsearch. Alternatively, you can [install it later](https://www.elastic.co/guide/en/x-pack/current/installing-xpack.html).
 
-    xpack.graph.enabled: false
-    xpack.ml.enabled: false
-    xpack.security.enabled: false
-    xpack.watcher.enabled: false
+X-Pack has a free basic license that must be updated every year.
 
-Adding these settings also stops Kibana and Elasticsearch from asking for credentials as the security module is no longer enabled.
+Microsoft installed the free version to enable query data to be exported from Kibana in comma-separated value (CSV) format. There are other useful features in X-Pack, but some are available only in a paid subscription.
 
-The logstash.yml configuration file must also be configured for X-Pack to function: 
+To enable only the free features and avoid using other X-Pack trial features, Microsoft added the following settings to our elasticsearch.yml and kibana.yml configuration files:
 
-    xpack.monitoring.elasticsearch.url: "http://orch1:9200"
+```
+xpack.graph.enabled: false
+xpack.ml.enabled: false
+xpack.security.enabled: false
+xpack.watcher.enabled: false
+```
 
-The paid version of X-Pack includes https encryption for connections throughout the cluster, password protected data access, and more. See [Elastic.co](https://www.elastic.co/products/x-pack) for more information on X-Pack.
+These settings also stop Kibana and Elasticsearch from asking for credentials because the security module is no longer enabled.
+
+For X-Pack to work, the logstash.yml configuration file must also be configured in the following manner.
+
+```
+xpack.monitoring.elasticsearch.url: "http://orch1:9200"
+```
+
+The paid version of X-Pack includes HTTPS encryption for connections throughout the cluster, password-protected data access, and more. For more information about X-Pack, see the [Elastic website](https://www.elastic.co/products/x-pack).
 
 ### Export a query to a CSV file
-In Kibana, on the **Discover** tab, write a query and save it. After you save the query, click the **Reporting** tab at the top of the **Discover** page, and then click **Generate CSV**.
- 
+In Kibana, on the **Discover** tab, write a query, and save it. After you save the query, on the **Reporting** tab at the top of the **Discover** page, click **Generate CSV**.
+
 ## Troubleshooting
-### I’m not receiving any data in Kibana
-If you are not receiving any data in Kibana, review the logs from Winlogbeat to Logstash, Elasticsearch, and Kibana. Note that the Winlogbeat installation will put its logs in C:\ProgramData\winlogbeat\Logs, while the other components of the Elastic Stack will put their logs close to the installation path (f.x.: C:\ELK\Elasticsearch\logs).
-
-
-
-
-
+### You don't receive any data in Kibana
+If you don't receive any data in Kibana, review the logs from Winlogbeat to Logstash, Elasticsearch, and Kibana. Note that the Winlogbeat installation puts its logs in C:\\ProgramData\\winlogbeat\\Logs, whereas the other Elastic Stack components put their logs close to the installation path (for example, in C:\\ELK\\Elasticsearch\\logs).
