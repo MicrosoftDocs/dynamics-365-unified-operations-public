@@ -35,10 +35,12 @@ When you create a definition for migration, you determine which entities should 
 
 Complete the following steps to create a migration group.
 
-1.	Data Management  
-2.	Create Migration group 
-3.	Select required entity for export 
-4.	If required fill the gap for field mapping. 
-5.	Apply sequence 
-6.	If required, please set conversion rule or default value for data manipulation.
+1. In Dynamics AX 2009, from the navigation pane, click **Data Migration** > **Common forms** > **Create migration group**.
+2. On the **Migration group** form, click CTRL+N or the **New** icon, to create a new migration group.  
+3. Enter a name for the migration group, tab to the **Company** field, and then click **Select company**.
+4. On the **Select company accounts** form, select one or more companies to add ot the migration group and then click **OK**.
+5. On the **Migration group** form, click **Entity** and select the lines to be included in the migration. 
+6. If needed, fill in any gaps in for field mapping. 
+5. Click **Apply sequence** and then close the form.  
+
 
