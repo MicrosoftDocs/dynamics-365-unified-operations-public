@@ -45,5 +45,8 @@ Before you generate the data maps between the source and target environments, yo
 
 ## Generate maps
 Complete the following steps to generate maps for data migration between AX 2009 and Finance and Operations. 
-1. In AX 2009, go to 
-2. 
+1. In Dynamics AX 2009, fom the navigation pane, go to **Data migration** > **Setup** > **Configure connections**.
+2. Review the field information to verify that it is correct, and then click **Validate**.
+3. After the information is validated, close the form and under **Setup**, click **Configure and generate maps**.
+4. Verify that the information in the form is correct, and then click **Validate path**.
+5. After validation is confirmed, click **Generate maps**.
