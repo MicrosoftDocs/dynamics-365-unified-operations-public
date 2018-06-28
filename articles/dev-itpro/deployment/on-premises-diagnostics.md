@@ -116,14 +116,14 @@ To ensure that Logstash runs on startup, we used NSSM to set up a service for th
         
 In our tests, NSSM had trouble restarting the installed services. We considered the service as an OS startup service, and not much else as NSSM was not 100% reliable for Logstash and Kibana.
 
-We created the following configuration file for Logstash, which performs useful mutations on Finance and Operations telemetry (placed in C:\ELK\Logstash\6.2.4\config): (GOING TO NEED TO LINK TO A CONFIG FILE HERE)
+We created the following configuration file for Logstash, which performs useful mutations on Finance and Operations telemetry ([placed in C:\ELK\Logstash\6.2.4\config](https://aka.ms/ConfigFilesOnPremises)): 
 
 To make the configuration work for your set up, you will have to change the hosts fields in the output section to point to the Elasticsearch nodes in your cluster. For example, hosts => ["ORCH1:9200", "ORCH2:9200"].
 The configuration was tested with the Winlogbeat configuration from the section below.
 Remember to open the Winlogbeat port in your firewall on the machine that is hosting Logstash, to allow Beats sending data to Logstash (default: 5044).
  
 ### Winlogbeat
-We downloaded Winlogbeat to each of the AOS and Orchestrator nodes at C:\ELK\Winlogbeat, and configured the winlogbeat.yml file. (GOING TO NEED TO LINK TO A CONFIG FILE HERE)
+We downloaded Winlogbeat to each of the AOS and Orchestrator nodes at C:\ELK\Winlogbeat, and configured the [winlogbeat.yml file](https://aka.ms/ConfigFilesOnPremises).
 
 To make the configuration work for your set up, you will have to change the **output.logstash.hosts** fields to point to all your Logstash nodes. Winlogbeat will handle the load balancing.
 When Winlogbeat is running on an Orchestrator node, the **Tags** field can be changed from AOS to ORCH, or something similar. We also used the **fields.env** field to set the environment of the deployment (sandbox, sandbox-n, production). By doing this, there is a cleaner separation when querying data from multiple environments and node types.
@@ -162,9 +162,9 @@ The following sample queries can help you get started with probing the telemetry
 
 #### 30-day data retention
 To keep our hard disks free from stale data, we used Curator v5.5 to clean up indexes older than 30 days.
-We downloaded Curator to one of the orchestrator nodes at C:\ELK\Curator, and used the following configuration file to connect it to our Elasticsearch cluster (put in C:\ELK\Curator): (NEED TO ADD LINK TO A YML FILE)
+We downloaded Curator to one of the orchestrator nodes at C:\ELK\Curator, and used the following configuration file to connect it to our Elasticsearch cluster ([put in C:\ELK\Curator](https://aka.ms/ConfigFilesOnPremises)).
 
-The Curator runs actions, and we created an action to clean up 30-day old indexes (put in C:\ELK\Curator): (NEED TO LINK TO ANOTHER YML FILE)
+The Curator runs actions, and we created an action to clean up 30-day old indexes ([put in C:\ELK\Curator](https://aka.ms/ConfigFilesOnPremises)).
 
 We created a basic task in Windows Task Scheduler with a weekly trigger on Saturday and Sunday that contains the following settings to start a program:
   - Program/script:
