@@ -55,5 +55,5 @@ You can import your data for migration using your Finance and Operations environ
 5. Click **Upload** and choose the appropriate package file from the location for the data being imported. This will import all the files from the package.
 
 ## Lifecycle Services 
-For information about how to import a package into Finance and Operations using LCS, see [Apply updates to a cloud environment](././deployment/apply-deployable-package-system.md).
+For information about how to import a package into Finance and Operations using LCS, see [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md).
 
