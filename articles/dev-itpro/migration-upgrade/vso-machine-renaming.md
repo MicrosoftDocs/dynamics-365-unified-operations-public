@@ -41,7 +41,7 @@ Visual Studio Team Services (VSTS) (formerly known as Visual Studio Online or VS
 - To work around this, rename and reboot the machine before you start development, then connect to VSTS.
 - After you do this you will also need to configure the SQL Server Reporting Server. To do that, change the SQL Server Name to (localhost) in the SQL Server Report Server Database connection string.
 
-  [![4](./media/4.png)](./media/4.png)
+  
 
 
 

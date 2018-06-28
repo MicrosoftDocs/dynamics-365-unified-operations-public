@@ -519,7 +519,7 @@
         href: ../financials/accounts-receivable/credit-card-authorizations.md
       - name: Create a free text invoice
         href: ../financials/accounts-receivable/create-free-text-invoice-new.md
-      - name: Create a free text invoice from a template
+      - name: Create a free text invoice template
         href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md      
       - name: Correct a free text invoice
         href: ../financials/accounts-receivable/correct-free-text-invoice.md
@@ -543,7 +543,7 @@
           href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
         - name: Create a direct debit mandate for a customer
           href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-        - name: Create an interest code with a range
+          name: Create an interest code with a range
           href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
         - name: Create sales order invoices
           href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
@@ -3985,4 +3985,10 @@
         href: ../supply-chain/transportation/tasks/set-up-location-directive-purchase-order-put-away.md
       - name: Set up a work template for purchase orders
         href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
+- name: Development & administration for Finance and Operations
+  href: ../dev-itpro/toc.yml
+- name: Dynamics 365 for Retail
+  href: ../retail/toc.yml
+- name: Dynamics 365 for Talent
+  href: ../talent/toc.yml
 
