@@ -31,9 +31,7 @@ ms.dyn365.ops.version: Platform update 17
 
 [!include [banner](../includes/banner.md)]
 
-Before you can migrate your data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations, you must align your source data with your target environment.
-
-This topic explains how to generate source-to-target mappings, extract the schema from Finance and Operations, and then generate the entity sequence after all the values that were entered are validated. Those values include the SQL credentials, the path of the default configuration file, and the paths of the export package files.
+Before you can migrate your data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations, you must align your source data with your target environment. This topic explains how to generate source-to-target mappings.
 
 Before you can generate maps, you must provide the target URL, tenant URL, and service app ID to validate the connection.
 
@@ -41,7 +39,7 @@ Before you can generate maps, you must provide the target URL, tenant URL, and s
 > When you create a new app under Microsoft Azure Active Directory (Azure AD) in the Azure portal, you have two options, **Web API** and **Native**. Select **Native**, and grant permissions to the native Azure AD app.
 
 ## Prerequisites
-Before you generate the data maps between the source and target environments, you must install the Data migration tool (DMT). For more information, see [Install the Data migration tool]().
+Before you generate the data maps between the source and target environments, you must install the Data migration tool (DMT). For more information, see [Install the Data migration tool](still need this link).
 
 ## Generate maps
 Follow these steps to generate maps for data migration between AX 2009 and Finance and Operations.
