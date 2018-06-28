@@ -208,66 +208,64 @@ Regardless if there are customizations in the code branches, the following steps
   i. In the Dynamics 365 for Retail user interface, run the Initialize Retail Scheduler to delete old data. 
 
 5. Make sure that you now can sign into Retail with your user account.  If you were not the original Admin user in the production database, you can run the Admin Provisioning tool to take ownership. (This tool is in PackagesLocalDirectory/bin.) 
-6. Verify that the CDX data sync works. In Retail, go to **Download sessions**, you should see many applied sessions. If not, select job 9999 and run it 
+6. Verify that the CDX data sync works. In Retail, go to **Download sessions**, you should see many applied sessions. If not, select job 9999 and run it.
 7. Install TypeScript version 2.2.2 from https://www.microsoft.com/enus/download/details.aspx?id=48593 
-8. Do a full build of the RetailSdk on command line 
- 
- a. open "MSbuild command prompt for Visual Studio 2015" as Administrator 
- 
- b. change directory into where your RetailSdk is located on the local VM 
- 
- c. type msbuild and hit Enter, this should not cause any build errors 
+8. Do a full build of the Retail SDK from the command prompt.
+ a. Open MSbuild command prompt for Visual Studio 2015 as Administrator. 
+ b. Change the directory to where your RetailSdk is located on the local VM. 
+ c. Type msbuild and click Enter. 
 
-9. add the development/sample MPOS certificate to the local machine's trusted root certificate store (...\RetailSDK\BuildTools\ModernPOSAppxSigningCert-Contoso.pfx, password empty string) 
-10. install MPOS or MPOSOffline, run ...\RetailSDK \References\YourCompany|Contoso.ModernPOSSetupOffline.exe. This is needed only once to get the ClientBroker files deployed 
-11. In Visual Studio, open the ModernPOS.sln (as admin), do a full Rebuild 
-12. hit F5 to launch MPOS in the Debugger, ready to be activated 
-13. in AX: Go to Channel Profiles, find the RetailServer url for the default channel profile, copy it 
-14. in browser, paste the url, you should be able to browse to your local RetailServer 
-15. in AX, add external user to any worker, save its password, disable password reset on first login 
-16. in AX, run 1060 (AX/Distribution schedule) 
-17. in MPOS activation flow: activate MPOS with same AAD user you added above for worker, paste the RetailServer url, pick store <YourStore>, register <Register>, login with user from worker above 
+9. Add the development/sample MPOS certificate to the local machine's trusted root certificate store (...\RetailSDK\BuildTools\ModernPOSAppxSigningCert-Contoso.pfx, password empty string). 
+10. Install MPOS or MPOSOffline, run ...\RetailSDK \References\YourCompany|Contoso.ModernPOSSetupOffline.exe. This is needed to deploy the ClientBroker files.
+11. In Visual Studio, open ModernPOS.sln (as admin), complete a full rebuild. 
+12. Click F5 to launch MPOS in the Debugger.
+13. In Finance and Operations, go to Channel profiles, find the Retail Server URL for the default channel profile, and copy it 
+14. In a browser, paste the URL. You should be able to browse to your local Retail Server. 
+15. In Finanance and Operations, add external user to any worker, save the password, and then do not allow password reset on first sign in 
+16. In Finance and Operations, run 1060 (AX/Distribution schedule). 
+17. In MPOS activation flow, activate Modern POS with same Azure Active Directory (Azure AD) user that you added above, paste the Retail Server URL, select a store <YourStore>, and register <Register>, and then sign in as the user that you just created.  
  
-At this point you should be able to run MPOS in the debugger from your local sources.  
+You should now be able to run MPOS in the debugger from your local sources.  
  
-### Deploy a 2nd build environment for the release branch 
+### Deploy a second build environment for the release branch 
 
-The setup steps are the same steps as for the first build environment. A VSTS project, including the linkage between the LCS project and the VSTS project, exists at this point already.   
+The setup steps for a second build are the same as for the first build environment. A VSTS project, including the link between the LCS project and the VSTS project, already exists at this point already.   
 
-To separate the build environments, it is suggested to create a new VSTS Agent Queue for the release branch. Even though there are ways to co-share an agent queue (and its build environment) for multiple branches it can become a little tricky.  
+To separate the build environments, we suggested that you create a new VSTS Agent Queue for the release branch. Even though there are ways to share an agent queue (and its build environment) for multiple branches, this can become tricky.  
 
-As of the time of this writing, a build environment must be on the same platform and binary hotfix version as the target environment’s during the deployment.  If it is not, the deployment may not be allowed by LCS. And there may be occasions when the test environment(s) (and the Main branch with Main’s build environment) is already at a newer platform and/or binary hotfix version. 
+Currently, the build environment must be on the same platform and binary hotfix version as the target environment’s during deployment.  If it is not, LCS will not allow the deployment. This is because the test environment and the Main branch with Main’s build environment is already at a newer platform and/or binary hotfix version. 
 
 First, create a new VSTS agent queue. 
 
 [![VSTS Agent Queue](./media/13-VSTS-agent-queue.png)](/media/13-VSTS-agent-queue.png)
 
-Then, choose this specific agent queue name during the deploying from LCS: 
+Use XXX as the agent queue name when deploying from LCS. 
  
 [![Queue Name LCS](./media/14-queue-name-lcs.png)](/media/14-queue-name-lcs.png)
 
-Next, under “Customize virtual machine names” give it a unique name and then deploy. 
+Next, under **Customize virtual machine names** provide a unique name and then deploy. 
 
-In a couple of hours, the build box will be deployed, and the new agent queue be created. 
+The process of deploying a new build and creating a new agent queue may take a couple of hours.  
 
 [![New Agent Queue](./media/15-new-agent-queue.png)](/media/15-new-agent-queue.png)
  
-### Preparation of the build definitions 
-Now, subsequently from following the steps earlier, we now have a single build definition and 2 agent queues with an agent each. To build different branches, we need to configure the build definition differently, so we need to clone the build definition. However, before we do this, we must first add the Retail Sdk into the build so that we do not have to do this twice. To edit the one existing build definition (named “Unified Operations platform - Build Main”), please follow the steps in this link to integrate the Retail Sdk into the Metadata build of the **Main** branch: 
+### Prepare of the build definitions 
+
+After following the steps earlier in this topic, you should have a single build definition and 2 agent queues with an agent each. To build different branches, you need to configure the build definition differently, which means that you need to clone the build definition. However, before you do this, you must first add the Retail SDK into the build so that you do not have to do this twice. To edit the existing build definition (named “Unified Operations platform - Build Main”), follow the steps in this link to integrate the Retail SDK into the metadata build of the **Main** branch.
 
 https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retailsdk/integrate-retail-sdk-continuous-build  
 
-Once we are done, we just clone the build definition and name it so it becomes clear for which branch it is (clone feature available on the VSTS portal). We need to give the new build definition a new name, pick the new Agent queue we created and change all paths in any build steps or source mappings (change Main to ProdRel1): 
+When complete, clone the build definition and name it so that it is clear which branch it pertains to. (The clone feature is available on the VSTS portal.) Provide a new name, select the new Agent queue that you created, and change the following paths in any build steps or source mappings (change Main to ProdRel1). 
 
-- the source mappings
-- the Retail Sdk build step 
-- the Retail Sdk copy binaries step 
-- the “Build the solution” step (X++ build) 
-- the Retail Sdk copy packages step 
+- Source mappings
+- Retail SDK build step 
+- Retail SDK copy binaries step 
+- Build the solution step (X++ build) 
+- Retail SDK copy packages step 
  
 [![Build definitions](./media/16-build-definitions.png)](/media/16-build-definitions.png)
  
-Some other good practices or tricks: 
+Here are some additional best practices or tricks: 
 
 1. An official build can be sped up by making these changes to the Build definition (Variables section):
  
@@ -275,23 +273,23 @@ Some other good practices or tricks:
  
  b. Set SkipSourcePackageGeneration to 1 
 
-2. Change the version of the Retail customization in each branch. It should be different in Dev, Main and ProdRel1 branches. Change either the Customization.settings or add a new global.props file under the RetailSdk\BuildTools folder. Any numbering is fine. You could number Dev as 1.0.0.x, Main as 1.0.1.x and ProdRel1 as 1.0.2.x.  
-3. To save cost, shut down build or dev environments when they are not in use 
+2. Change the version of the Retail customization in each branch. It should be different in the Dev, Main, and ProdRel1 branches. Change either the Customization.settings or add a new global.props file under the RetailSdk\BuildTools folder. You can use any kind of numbering for the file name, for instance, you could number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.  
+3. For efficiency, shut down build or dev environments when they are not in use. 
 
 ## Testing and performance 
 ### User acceptance testing 
 
-The main goal of acceptance testing is to verify that the main scenarios the business cares about function according to the expectations. The testing should not only include the customizations, but outof-the-box Microsoft functionality and non-happy path testing.  The goal is to catch any issues that may not function properly before going to the production environment.  
+The main goal of acceptance testing is to verify that specific business scenarios function according to expectations. The testing should not only include the customizations, but out-of-the-box Microsoft functionality and non-happy path testing.  The goal is to catch anything that may not function properly before going to the production environment.  
 
-For best results, a proper UAT environment should be a Tier 2 – 5 environment and not a development environment. 
+For best results, the users acceptance testing (UAT) environment should be a Tier 2 – 5 environment and not a development environment. 
 
-If one would use a development environment (Tier 1) there are scenarios where a developer using the same environment could cause errors (uncommitted source changes, debugger attached, etc.). Also, the  switching between IISExpress and IIS may cause issues. Additionally, since there is no way to know what exactly has happened on a development machine, Microsoft support will be very limited for a Tier 1 environment. 
+If a development environment (Tier 1) is used, there are scenarios where a developer using the same environment could cause errors (uncommitted source changes, debugger attached errors, etc.). Also, the  switching between Internet Information Services (IIS) Express and IIS may cause issues. Additionally, because there is no way to know exactly what has happened on a development machine, Microsoft support will be very limited for a Tier 1 environment. 
 
-A production environment could be used for UAT (for example as a go-live dry run). However, the disadvantage is that anything you wanted to do in SQL would have to be going though DSE service requests. That may not be timely efficient. Also, a production environment is not available for very long before the planned go-live date. 
+A production environment could be used for UAT (for example as a go-live dry run). However, the disadvantage is that anything you wanted to do in SQL would have to go through DSE service requests. This may not be efficient. Also, a production environment is not available for a long period of time before the planned go-live date. 
 
-The UAT should be done after deploying officially built deployable packages and not on Visual Studio built packages. The reason is that it cannot be proven what code changes were included in a manually built package. Only an official build system give assurance and audit trail of what exact changes are in a certain build.  
+The UAT should be done after deploying officially- built deployable packages and not on Visual Studio built packages. The reason is that it cannot be proven what code changes were included in a manually built package. Only an official build system provides assurance and an audit trail of the exact changes that are in a certain build.  
 
-If you do use POS, make sure you use the correct user roles. You should test by logging in as both a manager and a lower-privileged cashier. 
+If you do use POS, make sure that you use the correct user roles. You should test by logging in as both a manager and a lower-privileged cashier. 
 
 ### Performance 
 #### Channel performance 
