@@ -198,7 +198,7 @@ For this example, you will use the ProcureToPay.cs file. To start Visual Studio,
 
     [![Updated CloudEnvironment.Config file](./media/PerfSDKUserFormatExample.PNG)](./media/PerfSDKUserFormatExample.PNG)
 
-3. Open a Command Prompt window, and navigate to the **PerfSDK** folder. Run the following command to create test users for your environment.
+3. Open a Command Prompt window as an administrator, and navigate to the **PerfSDK** folder. Run the following command to create test users for your environment.
 
     ```
     MS.Dynamics.Performance.CreateUsers.exe [UserCount] [CompanyCode]
