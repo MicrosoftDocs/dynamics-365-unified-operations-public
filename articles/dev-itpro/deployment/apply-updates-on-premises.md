@@ -104,7 +104,7 @@ Before you update a production environment, you must successfully complete the p
 8. Open the **History** and **Environment details** pages to view the operations that were performed on the environment. You can also view a record of major actions that were performed on the environment, such as deployments, servicing, and rollbacks.
 
 ## Resolve a failed update application
-When application of an update fails, the environment state is **Failed**. The first step is to determine why the update application failed. The location of the logs varies, depending on the stage where the failure occurred:
+When preparation fails, the envrironment state is **Deployed**. When application of an update fails, the environment state is **Failed**. The first step is to determine why there is a failure. The location of the logs varies, depending on the stage where the failure occurred:
 
 - **Preparation stage:** If the operation fails during the **Preparation** stage, the logs are uploaded to LCS. In the log files, select **Download logs** to download the log files. If the package has any merge issues, the error is included in the log file.
 - **Deploying stage:** If the operation fails during the **Deploying** stage, the logs are located in the on-premises environment. You must sign in to the environment, and then access the logs and event viewer.
@@ -114,6 +114,7 @@ For more information about how to use the troubleshooting logs, see [Troubleshoo
 After you review the logs and determine the cause of the failure, complete one of the following operations to restore the environment to a healthy state. No actions can be performed on an environment that is in a **Failed** state. The environment must first be restored to a healthy state.
 
 - **Retry failed operation** – If update application fails, select **Retry** to recover from the failed operation.
+- **Abort failed operation** – If preparation fails, since there is no change made to the on-premises environment you have the option to cancel the operation.Select **Abort** to cancel the preparation.
 - **Roll back the update** – To roll back the update that failed, select **Rollback**. Before you start the rollback, you must restore the database to the last known good state. When you select **Rollback**, the environment is restored to the last known good state. The environment state is then changed to **Preparation**, then to **Deploying**, and then to either **Deployed** or **Failed**.
 
     >[!NOTE]
