@@ -40,12 +40,15 @@ Data can be imported for a group of logically related entities that are sequence
 ## Dynamics AX 2009
 You can import your data for migration from the source system directly by completing the following steps. 
 
-1. In Dynamics AX 2009, click Data management -> create migration group -> Export now -> mark import package in target. 
+1. In Dynamics AX 2009, in the navigation pane, click **Data mmigration**.
+2. Go to **Common** > **Create migration group**.
+3. In the **Migration group** form, select the migration group that you want to export, and click **Export now**. -> mark import package in target. 
+4. In the **Export data** form, mark the check box, **Import package in target** and then click **OK**.
 
 ## Finance and Operations
 You can import your data for migration using your Finance and Operations environment by completing the following steps. 
 
-1. Using an admin role, log into your Finance and Operations environment. 
+1. Log into your Finance and Operations environment with an Administrator role. 
 2. On the dashboard, click the **Data Management** workspace.
 3. Click **Import**.
 4. Enter the name of the package, and in the **Source data format** field, select **Package**.
