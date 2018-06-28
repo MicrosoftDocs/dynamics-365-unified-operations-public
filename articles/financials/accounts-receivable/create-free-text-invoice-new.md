@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create a free text invoice
-description: This article demonstrates creating a free text invoice. 
+description: This article demonstrates how to create a free text invoice. 
 author: mikefalkner
 manager: AnnBe 
 ms.date: 05/29/2018
