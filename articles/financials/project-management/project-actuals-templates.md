@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.3.0
 
 This topic describes the templates and underlying tasks that are used to synchronize project actuals directly from Microsoft Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations.
 
-The template syncs transactions from Project Service Automation into a staging table in Finance and Operations. After synchronization is complete, you must import from the staging table to the integration journal.
+The template syncs transactions from Project Service Automation into a staging table in Finance and Operations. After synchronization is complete, you **must** import from the staging table to the integration journal.
 
 > [!NOTE]
 > Project actuals integration is available in Dynamics 365 for Finance and Operations version 8.0.1 or later.
