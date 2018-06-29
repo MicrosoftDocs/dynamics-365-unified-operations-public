@@ -289,14 +289,14 @@ A production environment could be used for UAT (for example as a go-live dry run
 
 The UAT should be done after deploying officially- built deployable packages and not on Visual Studio built packages. The reason is that it cannot be proven what code changes were included in a manually built package. Only an official build system provides assurance and an audit trail of the exact changes that are in a certain build.  
 
-If you do use POS, make sure that you use the correct user roles. You should test by logging in as both a manager and a lower-privileged cashier. 
+If you do use POS, make sure that you use the correct user roles. You should test by signing in as both a manager and a lower-privileged cashier. 
 
 ### Performance 
 #### Channel performance 
 
-Poor performance is often caused by these factors (in the order from highest impact): 
+Poor performance is often caused by the following factors (listed in the order from highest impact): 
 
-- Additional custom Retail Server calls. By extending the product with additional RetailServer calls the performance often is decreased substantially. Not only do we have to account for additional processing, but the network latency must be considered too. It is recommended to try to avoid any additional RetailServer calls whenever possible. Often, ExtensionProperties and extending existing CRT handlers or triggers can accomplish the same tasks 
+- Additional custom Retail Server calls By extending the product with additional Retail Server calls, the performance often is decreased substantially. Not only is there the possibility of additional processing, but the network latency must also be considered. It is recommended to try to avoid any additional RetailServer calls whenever possible. Often, ExtensionProperties and extending existing CRT handlers or triggers can accomplish the same tasks 
 - Additional Channel Database SQL extensions. Make sure the SQL is efficient and uses proper indexes 
 - The exact same custom or built-in CRT SQL queries are exercised multiple times. If it is too expensive and appropriate, caching could be applied.  
 
