@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 87983
@@ -39,7 +39,7 @@ The Project Service Automation to Finance and Operations integration solution us
 
 > If you are using Dynamics 365 for Finance and Operations version 8.0, you will be able to use project tasks integration, expense transaction categories, hour estimates, expense estimates, and functionality locking.
 
-> If you are using Dynamics 365 for Finance and Operations version 8.0.1, you will be able to synchronize actuals.
+> If you are using Dynamics 365 for Finance and Operations version 8.0.1, or later, you will be able to synchronize actuals.
 
 > If you are using Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, you will be able to use the templates to integrate project tasks, expense transaction categories, hour estimates, expense estimates, actuals and configure functionality locking after installing KB 4132657 and KB 4132660. It is recommended that you install KB 4131710 if you need to reset the accounting distributions.
 
@@ -55,6 +55,7 @@ This integration solution enables direct synchronization in the following scenar
 - Maintain expense transaction categories in Finance and Operations, and synchronize them directly from Finance and Operations to Project Service Automation.
 - Create project hour estimates in Project Service Automation, and synchronize them directly from Project Service Automation to Finance and Operations.
 - Create project expense estimates in Project Service Automation, and synchronize them directly from Project Service Automation to Finance and Operations.
+- Create project time, expense and fee actuals in Project Service Automation, and create project transactions in the Dynamics 365 for Project Service Automation integration journal to be posted in Finance and Operations.
 
 ## Data synchronization
 The following illustration shows how data is synchronized as part of the integration between Project Service Automation and Finance and Operations.
@@ -78,4 +79,4 @@ To use the Project Service Automation to Finance and Operations integration solu
 
 ## Install the Project Service Automation to Finance and Operations integration solution in your Project Service Automation instance
 
-
+Download the Project Service Automation to Operations solution from the [download center](https://www.microsoft.com/en-us/download/details.aspx?id=57016) and follow the instructions included with the solution.
