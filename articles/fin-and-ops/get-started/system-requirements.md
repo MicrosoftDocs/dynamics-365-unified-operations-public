@@ -107,7 +107,7 @@ The following Microsoft Office applications are supported in cloud and on-premis
 
 - iOS 11 or later
 
-## Retail Modern POS for Android phones or tablets requirements
+## Retail Modern POS for Android phone or tablet requirements
 
 - Android OS 6.0 or later
 
