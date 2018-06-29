@@ -38,7 +38,7 @@ This topic describes the templates and underlying tasks that are used to synchro
 > Project tasks integration, expense transaction categories, hour estimates, expense estimates, and functionality locking is available 
 in Dynamics 365 for Finance and Operations version 8.0.
 > 
-> Actuals integration is available in Dynamics 365 for Finance and Operations version 8.0.1.
+> Actuals integration is available in Dynamics 365 for Finance and Operations version 8.0.1 or later.
 >
 > If you are using Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, after you install KB 4132657 and KB 4132660, you will be able to use the templates to integrate project tasks, expense transaction categories, hour estimates, expense estimates, and actuals, and to configure functionality locking. If you must reset the accounting distributions, we recommend that you also install KB 4131710.
 
@@ -53,7 +53,13 @@ If the project expense categories are mastered in Project Service Automation, th
 > [!NOTE]
 > Typically, the project expense categories will be mastered in Finance and Operations. If that is not your situation, or you already have expense categories created in Project Service Automation, you must first sync using the Project expense transaction categories (PSA to Fin and Ops) and then sync using Project expense transaction categories (Fin and Ops to PSA). You should then run the sync from PSA to Fin and Ops one more time.
 
-> If synchronizing first from Project Service Automation, the project categories must already be set up in Finance and Operations and any project categories that need to be synched with the Project Service Automation transaction categories must be set up to be **Active in journals**.
+> If synchronizing first from Project Service Automation, the following requirements must be met in Finance and Operations prior to synchronizing:
+  - The **Shared category** that matches the project category set up in Project Service Automation in must exist and be enabled for both **Project** and **Expense**
+  - For each Finance and Operations legal entity to be integrated with, the following must the project categories must exist:
+    - **Project category** exists 
+    - **Use in Expense** is enabled
+    - **Active in journal** is enabled
+    - **Transaction type** is **Expense**
 
 The following illustration shows how the data is synchronized between Project Service Automation and Finance and Operations.
 
