@@ -47,7 +47,7 @@ You can select the telemetry data store and query tool that you prefer to use. H
 To meet the telemetry guidelines that are listed in the previous section, Microsoft tested the Elastic Stack setup. This setup includes the following components:
 
 - **Elasticsearch** – For storage, event indexing, and event querying. For more information about Elasticsearch, see the [Elastic website](https://www.elastic.co/products/elasticsearch).
-- **Logstash** – For load distribution and event data mutation.
+- **Logstash** – For load distribution and event data transformation.
 - **Winlogbeat** – For telemetry collection.
 - **Kibana** – An interface for querying the data that is stored in Elasticsearch.
 
@@ -109,7 +109,7 @@ In its test setup, Microsoft found that some events from Winlogbeat required adj
 
 Microsoft downloaded Logstash to C:\\ELK\\Logstash on the Orchestrator #2 and Orchestrator #3 nodes.
 
-To help guarantee that Logstash runs on startup, we used NSSM to set up a service for the Logstash batch script.
+To help guarantee that Logstash runs on startup, we used the Non-Sucking Service Manager (NSSM) to set up a service for the Logstash batch script.
 
 1. Copy nssm.exe to the Logstash bin folder (for example, C:\\ELK\\Logstash\\6.2.4\\bin\\).
 2. Open Windows PowerShell from the bin folder, and run the following command.
@@ -134,7 +134,7 @@ To help guarantee that Logstash runs on startup, we used NSSM to set up a servic
 
 In the tests that Microsoft performed, NSSM had trouble restarting the installed services. Because NSSM wasn't 100-percent reliable for Logstash and Kibana, the service was treated as an OS startup service and little else.
 
-Microsoft created a configuration file for Logstash and [put it in C:\\ELK\\Logstash\\6.2.4\\config](https://aka.ms/ConfigFilesOnPremises). This file performs useful mutations on Finance and Operations telemetry.
+Microsoft created a configuration file for Logstash and [put it in C:\\ELK\\Logstash\\6.2.4\\config](https://aka.ms/ConfigFilesOnPremises). This file performs useful transformations on Finance and Operations telemetry.
 
 To make the configuration work for your setup, you must change the **hosts** fields in the **output** section so that they point to the Elasticsearch nodes in your cluster. For example, change **hosts** to **\["ORCH1:9200", "ORCH2:9200"\]**.
 
