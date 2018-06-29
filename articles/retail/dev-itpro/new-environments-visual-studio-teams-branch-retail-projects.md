@@ -296,34 +296,33 @@ If you do use POS, make sure that you use the correct user roles. You should tes
 
 Poor performance is often caused by the following factors (listed in the order from highest impact): 
 
-- Additional custom Retail Server calls By extending the product with additional Retail Server calls, the performance often is decreased substantially. Not only is there the possibility of additional processing, but the network latency must also be considered. It is recommended to try to avoid any additional RetailServer calls whenever possible. Often, ExtensionProperties and extending existing CRT handlers or triggers can accomplish the same tasks 
-- Additional Channel Database SQL extensions. Make sure the SQL is efficient and uses proper indexes 
-- The exact same custom or built-in CRT SQL queries are exercised multiple times. If it is too expensive and appropriate, caching could be applied.  
+- Additional custom Retail Server calls By extending the product with additional Retail Server calls, the performance often is decreased substantially. Not only is there the possibility of additional processing, but the network latency must also be considered. It is recommended to try to avoid any additional Retail Server calls. Often, ExtensionProperties and extending existing CRT handlers or triggers can accomplish the same tasks. 
+- Additional Channel Database SQL extensions. Make sure that SQL is efficient and uses proper indexes 
+- The same custom or built-in CRT SQL queries are exercised multiple times. If it is too expensive and appropriate, caching could be applied.  
 
 For more details, see the section on [Retail development](dev-retail-home-page). 
  
-Regarding investigating store performance, please follow some of the ideas published here: https://dynamicsnotes.com/retail-channel-performance-investigations/. With this information, you should be able to answer questions like “why is scanning an item in POS so slow” or “why is the customer details view so slow”. 
+When investigating store performance, follow the ideas on Retail Channel performance investigations.
 
 #### Using telemetry data to find performance issues 
-To troubleshoot Retail and Finance and Operations performance (especially slow SQL queries or SQL deadlocks), the LCS environment diagnostics page exposes valuable telemetry data. This data can be used to find potential performance issues in code, configuration, or design. More details can be found here: https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/. With this information, you should be able to get an idea why certain batch processes or form loads are slow.   
+To troubleshoot Retail and Finance and Operations performance (especially slow SQL queries or SQL deadlocks), the LCS environment diagnostics page exposes valuable telemetry data. This data can be used to find potential performance issues in code, configuration, or design. Additional details can be found at: https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/. With this information, you should be able to get an idea why certain batch processes or form loads are slow.   
 
 #### Performance testing 
 
 Testing the performance of a system usually makes most sense for the components where many resources are competed for because they are shared. These resources may be different for various projects, customers or requirements.  
 
-Some of those bottlenecks may be: 
+Some of the reasons for bottlenecks may include: 
 
-- Resource intensive calculations in Finance and Operations such as statement posting, change calculations for channel data sync, warehousing operations with large product assortment, MRP runs, etc. 
-- The Finance and Operations database. 
-- Retail business logic for many terminals or stores running on a few Retail Servers (either in the cloud or in a scale unit) 
-- Integrated 3rd party systems (integrated either from Finance and Operations or Retail Server) 
-- Realtime transaction service frequently called from Retail Server 
+- Resource intensive calculations in Finance and Operations, such as statement posting, change calculations for channel data sync, warehousing operations with large product assortment, MRP runs, etc. 
+- The Dynamics 365 for Finance and Operations database. 
+- Retail business logic for multiple terminals or stores running on a few Retail Servers (either in the cloud or in a scale unit). 
+- Integrated third-party systems (integrated either from Finance and Operations or Retail Server). 
+- Realtime transaction services frequently called from Retail Server. 
 
-In general, default and non-real time POS operations are not considered a bottleneck as it has its own dedicated resource - the computer it is installed or running on.  Performance issues are more likely caused by the business logic or chatty calls to RetailServer. 
+In general, default and non-real time POS operations are not considered a bottleneck as it has its own dedicated resource - the computer it is installed or running on.  Performance issues are typically caused by the business logic or chatty calls to RetailServer. 
 
-Ideally, the performance testing should be done after some initial optimizations according to the information above (https://dynamicsnotes.com/retail-channel-performance-investigations/) has already completed. If it does not perform well for a single user or process, it will not perform well concurrently either.  
+Ideally, the performance testing should be done after some initial optimizations according to the information above has already completed. If it does not perform well for a single user or process, it will not perform well concurrently either.  
 
-Dynamics 365 F&O performance tooling is pretty mature. There are good articles on the https://docs.microsoft.com/en-us/dynamics365/unified-operations/ site. Search for PerfSdk or “Trace parser”. 
+Finance and Operations documentation, and search for "PerfSdk" or “Trace parser." 
 
-Each project is different and therefore it is not easy to give a general answer for what exact performance tests are needed to be run.  
-If the transaction sales line count is pretty low (< 100,000 per day for all stores) and no custom extension code was added in the area of statement posting, it should be ok to not do a performance test for posting.  On the other hand, if the sales line count is substantially  higher or major custom changes have been added, it would be a good idea to do so. 
+Every project is different so it is not easy to give a general answer for what exact performance tests are needed to be run. For exmample, if the transaction sales line count is low (less than 100,000 per day for all stores) and no custom extension code has been added for statement posting, there should be no need to do a performance test for posting. However, if the sales line count is substantially  higher or major custom changes have been added, it would be a good idea to do so. 
