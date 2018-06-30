@@ -32,9 +32,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 Starting with the launch of Microsoft AX 7.0, most environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). The former is the default, and the latter is usually done to have more control over a development or build environment.  For more details, see [Understand Lifecycle Services](../../../dev-itpro/lifecycle-services/lcs-works-lcs).
 
-Tier 1 machines are developer or build environments. Tier 2 and higher machines are multi-box environments for multiple test and verification purposes. Production environments are hands-off, and the size of the environment is determined by the sizing process in Lifecycle Service (LCS).  
-
-A hosting alternative is to download a virtual hard drive (VHD) from LCS and host it locally on a server. From a development perspective, there is no difference regarding the capabilities of the VHD images compared with a hosted VM, except that LCS deployment is not supported on VHDs. Command line deployments are still supported. 
+Tier 1 machines are developer or build environments. 
 
 
 **Development tier 1 environments** 
@@ -43,15 +41,27 @@ For Retail implementations that include code extensions, we do not recommend usi
 
 There are three hosting models for a Tier 1 development or build environment. Refer to the following table to evaluate the pros and cons to evaulate what works best for your project.
 
-[![Pros and Cons 3 Hosting Models](./media/18-three-hosting-models.png)](./media/18-three-hosting-models.png)
-
 If you want to build your own POS extensions with an appx certificate (see below). 
 
 Because these decisions have financial impact, you can reduce some of the cost by using Tier 1, which is free, as a simple test environment (or golden config environment). This is not ideal, but should work for most projects.   
 
 Note: You have the option to shutdown cloud-hosted environments any time. This helps to reduce the hosting cost.  
 
+A hosting alternative is to download a VHD from LCS and host it locally on a server. From a development perspective, there is no difference regarding the capabilities of the VHD images compared with a hosted VM, except that LCS deployment are not supported on VHDs. Command line deployments are still supported.
+
+[![Pros and Cons 3 Hosting Models](./media/18-three-hosting-models.png)](./media/18-three-hosting-models.png)
+
+Tier 2 and higher machines are multi-box environments for multiple test and verification purposes. Production environments are hands-off, and the size of the environment is determined by the sizing process in Lifecycle Service (LCS).  
+
 **Branches, build definitions, and environments**
+
+Branching is a major practice in software development. To learn more about branching, visit this link. https://msdn.microsoft.com/en-us/library/aa730834(v=vs.80).aspx
+
+To summarize branching, using a paragraph from the resource above. 
+
+> A branching and merging strategy involves a tradeoff between risk and productivity. You trade the safety of working in isolation for the increased productivity of working with other people. The productivity increases come with a cost—the additional effort required for merging software assets sometime in the future.
+
+> Using branches provides better isolation and control of individual software assets and increases productivity, because teams or individuals can work in parallel. However, using branches also requires an increase in merge activities and therefore risk, because you must later reassemble branches into a whole.
 
 To learn more about the delivery of Dynamics 365 Finance and Operations implementation projets, refer to the following video: 
 https://mbspartner.microsoft.com/D365/Videos/101393. 
@@ -60,17 +70,17 @@ There is no single best strategy for the creation of branches. Different project
 
 [![Branch creation](./media/1-Three-Code-Branch.png)](./media/1-Three-Code-Branch.png)
  
-The diagram above illustrates three code branches.  
+The diagram above illustrates three code branches. The numbers highlight the order of setup, as described further below.  
 
-The **Dev** branch is used for daily work that is not quite ready for testing but needs to be shared with other developers. If there are larger teams, you might want to multiple Dev branches for different features or purposes.  
+The **Dev** branch [2] is used for daily work that is not quite ready for testing but needs to be shared with other developers. If there are larger teams, you might want to multiple Dev branches for different features or purposes.  
 
-The **Main** branch is for changes that meet a certain quality bar and are ready for test by others (user acceptance tests (UAT), performance tests, integration tests, sanity tests after hotfixes, etc.). Deployable packages for this branch must be created by a build environment.  It is not a good practice to generate X++ packages in a Tier 1 environment and then deploy these packages into an official test or production environment in case uncommitted source changes are excluded from the build. 
+The **Main** branch [1]  is for changes that meet a certain quality bar and are ready for test by others (user acceptance tests (UAT), performance tests, integration tests, sanity tests after hotfixes, etc.). Deployable packages for this branch must be created by a build environment.  It is not a good practice to generate X++ packages in a Tier 1 environment and then deploy these packages into an official test or production environment in case uncommitted source changes are excluded from the build. 
 
-The **ProdRel1** branch holds all source code exactly as it is deployed in a production environment at any point in time.  A build environment can be used but it is not required. If packages from the Main branch are deployed to a production environment, the code should be merged (**Main** > **ProdRel1**) after a production deployment. Having a branch for a production provides the opportunity to generate official builds later - if needed. 
+The **ProdRel1** [3] branch holds all source code exactly as it is deployed in a production environment at any point in time.  A build environment can be used but it is not required. If packages from the Main branch are deployed to a production environment, the code should be merged (**Main** > **ProdRel1**) after a production deployment. Having a branch for a production provides the opportunity to generate official builds later - if needed. 
 
-All three branches hold both X++ code (extensions and hotfixes in Metadata folders) and a copy of the **Retail SDK**. The Retail SDK includes base Microsoft code and code extensions, which can be different in each branch. 
+All three branches hold both X++ code (extensions and hotfixes in Metadata folders) and a copy of the **Retail SDK** [5, 6, 7]. The Retail SDK includes base Microsoft code and code extensions, which can be different in each branch. 
 
-The **RetailSdk-mirror** folder is used to bring in Microsoft changes to the Retail SDK and is not for development or build.  It should only be updated when a new version or hotfix is used. The process is described in detail later in this topic. 
+The **RetailSdk-mirror** folder [4] is used to bring in Microsoft changes to the Retail SDK and is not for development or build.  It should only be updated when a new version or hotfix is used. The process is described in detail later in this topic. 
 
 Note: For small Retail projects it's okay to have two only branches. However, developers must be disciplined to immediately handle any code submissions that might affect tested builds. In this case, the Main branch would become the Dev branch. 
 
@@ -85,6 +95,10 @@ The following high-level steps show  how to set up an environment so that develo
 - Prepare development environment
 - Deploy a second build environment for the release branch (optional) 
 - Prepare the build definitions 
+
+After all these steos have been completed, we will have branches, environment, and builds ready to go. 
+
+These individual steps are explained in more detail below. 
 
 
 ### Deploy a build environment and empty Main VSTS branch 
