@@ -82,16 +82,16 @@ All three branches hold both X++ code (extensions and hotfixes in Metadata folde
 
 The **RetailSdk-mirror** folder [4] is used to bring in Microsoft changes to the Retail SDK and is not for development or build.  It should only be updated when a new version or hotfix is used. The process is described in detail later in this topic. 
 
-Note: For small Retail projects it's okay to have two only branches. However, developers must be disciplined to immediately handle any code submissions that might affect tested builds. In this case, the Main branch would become the Dev branch. 
+For small Retail projects it's okay to have two only branches. However, developers must be disciplined to immediately handle any code submissions that might affect tested builds. In this case, the Main branch would become the Dev branch. 
 
 You can opt to build deployable packages out of multiple branches, in which case you must have one build definition per buildable branch.  The initial build definition is created automatically as part of deployment of a build environment (Main). You can make copies of the build for other branches. Note that small editions must be made to incorporate the Retail code. 
 
 The following high-level steps show  how to set up an environment so that development work can begin. Refer to the illustration above for details about numbering in this list): 
 
-- Deploy a build environment and an empty Main VSTS branch (1) 
+- Deploy a build environment and an empty Main VSTS branch [1] 
 - Deploy a development environment
-- Create the dev and release branches (2, 3) 
-- Add the Retail SDK (4 - 7) 
+- Create the dev and release branches [2, 3] 
+- Add the Retail SDK [4 - 7] 
 - Prepare development environment
 - Deploy a second build environment for the release branch (optional) 
 - Prepare the build definitions 
@@ -100,13 +100,13 @@ After all these steos have been completed, we will have branches, environment, a
 
 These individual steps are explained in more detail below. 
 
+[![VSTS project](./media/2-VSTS-project.png)](/media/2-VSTS-project.png)
 
 ### Deploy a build environment and empty Main VSTS branch 
 
-Use the LCS portal to deploy a new build environment. We recommend that you use a cloud-hosted environment, as there will be more options and capabilities if you have administrative rights. See here for a discussion why a cloud-hosted environment may be beneficial. 
-If you create a new project, you will also need to create a new Visual Studio Team Services (VSTS) project. To do this, in your VSTS account, click New project. 
+Use the LCS portal to deploy a new build environment. We recommend that you use a cloud-hosted environment, as there will be more options and capabilities if you have administrative rights. See the discussion about the different environment hosting models above. 
 
-[![VSTS project](./media/2-VSTS-project.png)](/media/2-VSTS-project.png)
+If you create a new project, you will also need to create a new Visual Studio Team Services (VSTS) project. To do this, in your VSTS account, click New project. 
 
  
 After the new VSTS project is created, you need to allow VSTS to access it. Create a new personal access token on the VSTS account. When that is done, configure the LCS project with the following information: 
@@ -114,6 +114,7 @@ After the new VSTS project is created, you need to allow VSTS to access it. Crea
 [![LCS project](./media/3-LCS-project.png)](/media/3-LCS-project.png)
 
 When the LCS project is linked to VSTS, you are ready to deploy.  
+
 Add a new environment, select the version, topology of DEVTEST, and a build environment. On the next screen, provide a meaningful name for the environment, then give a similar name to the build agent. 
 
 [![Build agent](./media/4-build-agent.png)](/media/4-build-agent.png)
@@ -145,7 +146,8 @@ Follow these steps to create the branches:
 - In Team Explorer, connect Visual Studio to the VSTS project (if not already done).
 - Map the Trunk/Main folder to a local folder (if not already done). This is temporary. 
 - In Source Control Explorer, right click the **Main** folder, select **Branching and Merging**, **Convert to Branch*.  
-- Right-click the **Main** branch, select **Branching and Merging**, **Branch** and name the new branch **Dev** - using the Pending Changes, and then submit this change to VSTS. 
+- Right-click the **Main** branch, select **Branching and Merging**, **Branch** and name the new branch **Dev** 
+- Use the Pending Changes, submit this change to VSTS. 
 - Right-click the Main branch, select **Branching and Merging**, **Branch** and name the new branch **ProdRel1**. 
 - Use Pending Changes, and submit this change to VSTS. 
 
@@ -178,13 +180,9 @@ Now, you will need to branch to each branch. To do this, follow the same path th
 - Select the folder for the mirror branch, right-click, and then select **Branching and Merging**, and **Branch**. 
 - Go to the Dev branch, append **RetailSdk** to the name, and then click OK.
 - [![Branch change](./media/10-branch-change.png)](/media/10-branch-change.png).
-
- 
-Using **Pending Changes**, submit the changes.  
-
-Next, follow the same steps to branch the **RetailSdk** folder of the Dev branch to the Main branch. 
-
-Finally, follow the same steps to branch the **RetailSdk** folder of the Main branch to the ProdRel1 branch. 
+- Using **Pending Changes**, submit the changes.  
+- Next, follow the same steps to branch the **RetailSdk** folder of the Dev branch to the Main branch. 
+- Finally, follow the same steps to branch the **RetailSdk** folder of the Main branch to the ProdRel1 branch. 
 
 There are now code branches and code locations for X++ and Retail extensions. In Source Control Explorer, the file structure should look like this.  
 
@@ -197,7 +195,7 @@ You should also change the version of the Retail customization. This should be d
 Now you can prepare the development environment for Retail development tasks. The development environment will map the Dev branch code locations for both X++ and the Retail SDK to local folders. The Metadata folder (X++) must be always mapped to the PackagesLocalDirectory. The location of the RetailSdk folder needs to follow these guidelines:
 
 - Should be located somewhere inside the local user’s folder.
-- The path should be no more than 256 characters.
+- The path should be no more than 256 characters. You could use c:\users\<username>\Source\RetailSdk.
 
 Update the current Workspace to something like this. 
 
