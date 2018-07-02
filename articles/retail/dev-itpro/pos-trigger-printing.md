@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 You can use triggers to capture events that occur before or after Retail Modern POS operations. Using triggers supports several business logic scenarios that enable you to do the following: 
 - Insert custom logic before the operation runs or after it has completed. This includes operation-specific triggers and generic triggers called the PreOperationTrigger and PostOperationTrigger, which run at the beginning and end of all POS operations.  
-- Continue or cancel an operation. For example, if your validation fails or returns an error, then you can cancel the operation in pre-trigger. Post-triggers are not cancelable. 
+- Continue or cancel an operation. For example, if your validation fails or returns an error, then you can cancel the operation in pre-trigger. Post-triggers are not cancelable.
 - Use the post-trigger for scenarios where you want to show custom messages or insert custom fields after the standard logic is performed. 
 
 This topic applies to Dynamics 365 for Finance and Operations and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix. 
@@ -50,7 +50,9 @@ The following table lists the available triggers and denotes whether they can be
 | ApplicationSuspendTrigger | Non-cancelable | Executed after the POS application is suspended.                                                                                     |
 | PreLogOnTriggerTrigger    | Cancelable     | Executed before the POS log on.                                                                                                      |
 | PostLogOnTriggerTrigger   | Non-cancelable | Executed after the POS log on.                                                                                                       |
-| PostLogOffTrigger         | Non-cancelable | Executed after the POS log off.                                                                                                      |
+| PostLogOffTrigger         | Non-cancelable | Executed after the POS log off.                                                                                                      | 
+| PreLockTerminalTrigger    | Cancelable     | Executed before the POS register lock.  |
+| PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   |     
 
 ## Cash nanagement triggers
 
@@ -156,7 +158,9 @@ Printing Triggers
 | PostSuspendTransactionTrigger      | Non-cancelable | Executed after the transaction is suspended.    |
 | PreRecallTransactionTrigger        | Cancelable     | Executed before the transaction or order is recalled. |
 | PostRecallTransactionTrigger       | Non-cancelable | Executed after the transaction or order is recalled.  |
-| PostCartCheckoutTrigger            | Non-cancelable | Executed after the checkout process is completed.    |
+| PostCartCheckoutTrigger            | Non-cancelable | Executed after the checkout process is completed.     |
+| PreRecallTransactionTrigger        | Cancelable     | Executed before the customer order is recalled.       |
+| PostRecallTransactionTrigger       | Non-Cancelable | Executed after the customer order is recalled.        |
 
 ## Business scenario
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.
