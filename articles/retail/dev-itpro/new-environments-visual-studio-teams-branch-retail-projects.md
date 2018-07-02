@@ -208,7 +208,8 @@ Regardless if there are customizations in the code branches, the following steps
 1. Install your favorite development tools. Here's an example of an automated script: https://dynamicsnotes.com/auto-installing-most-needed-dev-tools-in-5-mins/). 
 2. Exclude the code folders from Windows Defender for a faster compile time. 
 3. If there is already code in the **Dev/Metadata folder**, build all Dynamics 365 for Retail models. (To do this, select all and select database sync).
-4. Optional: Restore a recent copy of a production database with good data. 
+4.	To speed up the development experience, switch to IIS by following this https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/ .This can only be done on the tier 1 VM on which you have administrative privileges (cloud-hosted environments)
+5. Optional: Restore a recent copy of a production database with good data. 
   a. Rename the existing database to AxDB_Orig 
   b. Restore the .bak file in SQL Server Management Studio (if a .bacpac file exists, follow the steps in: https://docs.microsoft.com/en-us/dynamics365/unified-operations/devitpro/database/copy-database-from-azure-sql-to-sql-server)  
   c. Refresh the model store in Visual Studio. 
@@ -219,27 +220,29 @@ Regardless if there are customizations in the code branches, the following steps
   h. Verify that the tool succeeded. The following query should show all updated local dev machine URLs: select * from dbo.RETAILCHANNELPROFILEPROPERTY where ISSYSTEMRECORD = 1 
   i. In the Dynamics 365 for Retail user interface, run the Initialize Retail Scheduler to delete old data. 
 
-5. Make sure that you now can sign into Retail with your user account.  If you were not the original Admin user in the production database, you can run the Admin Provisioning tool to take ownership. (This tool is in PackagesLocalDirectory/bin.) 
-6. Verify that the CDX data sync works. In Retail, go to **Download sessions**, you should see many applied sessions. If not, select job 9999 and run it.
-7. Install TypeScript version 2.2.2 from https://www.microsoft.com/enus/download/details.aspx?id=48593 
-8. Do a full build of the Retail SDK from the command prompt.
+6. Make sure that you now can sign into Retail with your user account.  If you were not the original Admin user in the production database, you can run the Admin Provisioning tool to take ownership. (This tool is in PackagesLocalDirectory/bin.) 
+7. Verify that the CDX data sync works. In Retail, go to **Download sessions**, you should see many applied sessions. If not, select job 9999 and run it.
+8. Install TypeScript version 2.2.2 from https://www.microsoft.com/enus/download/details.aspx?id=48593 
+9. Do a full build of the Retail SDK from the command prompt.
  a. Open MSbuild command prompt for Visual Studio 2015 as Administrator. 
  b. Change the directory to where your RetailSdk is located on the local VM. 
  c. Type msbuild and click Enter. 
 
-9. Add the development/sample MPOS certificate to the local machine's trusted root certificate store (...\RetailSDK\BuildTools\ModernPOSAppxSigningCert-Contoso.pfx, password empty string). 
-10. Install MPOS or MPOSOffline, run ...\RetailSDK \References\YourCompany|Contoso.ModernPOSSetupOffline.exe. This is needed to deploy the ClientBroker files.
-11. In Visual Studio, open ModernPOS.sln (as admin), complete a full rebuild. 
-12. Click F5 to launch MPOS in the Debugger.
-13. In Finance and Operations, go to Channel profiles, find the Retail Server URL for the default channel profile, and copy it 
-14. In a browser, paste the URL. You should be able to browse to your local Retail Server. 
-15. In Finanance and Operations, add external user to any worker, save the password, and then do not allow password reset on first sign in 
-16. In Finance and Operations, run 1060 (AX/Distribution schedule). 
-17. In MPOS activation flow, activate Modern POS with same Azure Active Directory (Azure AD) user that you added above, paste the Retail Server URL, select a store <YourStore>, and register <Register>, and then sign in as the user that you just created.  
+10. Add the development/sample MPOS certificate to the local machine's trusted root certificate store (...\RetailSDK\BuildTools\ModernPOSAppxSigningCert-Contoso.pfx, password empty string). 
+11. Install MPOS or MPOSOffline, run ...\RetailSDK \References\YourCompany|Contoso.ModernPOSSetupOffline.exe. This is needed to deploy the ClientBroker files.
+12. In Visual Studio, open ModernPOS.sln (as admin), complete a full rebuild. 
+13. Click F5 to launch MPOS in the Debugger.
+14. In Finance and Operations, go to Channel profiles, find the Retail Server URL for the default channel profile, and copy it 
+15. In a browser, paste the URL. You should be able to browse to your local Retail Server. 
+16. In Finanance and Operations, add external user to any worker, save the password, and then do not allow password reset on first sign in 
+17. In Finance and Operations, run 1060 (AX/Distribution schedule). 
+18. In MPOS activation flow, activate Modern POS with same Azure Active Directory (Azure AD) user that you added above, paste the Retail Server URL, select a store <YourStore>, and register <Register>, and then sign in as the user that you just created.  
  
 You should now be able to run MPOS in the debugger from your local sources.  
- 
-### Deploy a second build environment for the release branch 
+
+### Optional: Deploy a second build environment for the different branch 
+
+In the case you need to maintain multiple releases at the same time, it becomes necessary to create deployable packages from different code branches (i.e. Main2, Main3 and/or ProdRel1, ProdRel2).
 
 The setup steps for a second build are the same as for the first build environment. A VSTS project, including the link between the LCS project and the VSTS project, already exists at this point already.   
 
@@ -251,7 +254,7 @@ First, create a new VSTS agent queue.
 
 [![VSTS Agent Queue](./media/13-VSTS-agent-queue.png)](/media/13-VSTS-agent-queue.png)
 
-Use XXX as the agent queue name when deploying from LCS. 
+Use 'PRODREL1' as the agent queue name when deploying from LCS. 
  
 [![Queue Name LCS](./media/14-queue-name-lcs.png)](/media/14-queue-name-lcs.png)
 
@@ -279,14 +282,15 @@ When complete, clone the build definition and name it so that it is clear which 
  
 Here are some additional best practices or tricks: 
 
-1. An official build can be sped up by making these changes to the Build definition (Variables section):
- 
- a. Set DeployReports to 0 
- 
- b. Set SkipSourcePackageGeneration to 1 
-
+1. An official build can be sped up by making these changes to the Build definition (Variables section):  
+   a. Set DeployReports to 0 
+   b. Set SkipSourcePackageGeneration to 1 
 2. Change the version of the Retail customization in each branch. It should be different in the Dev, Main, and ProdRel1 branches. Change either the Customization.settings or add a new global.props file under the RetailSdk\BuildTools folder. You can use any kind of numbering for the file name, for instance, you could number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.  
 3. For efficiency, shut down build or dev environments when they are not in use. 
+4.	If you are using cloud-hosted tier 1 development environments (you have administrative privileges) you can switch from IISExpress to IIS. This is a little more robust because we are avoiding the switching. Details can be found here. https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/ 
+5.	For prototyping, a developer may want to change the Retail SDK right on a development VM. Always keep the original Retail SDK untouched and make a copy to work in temporarily. That way you have the opportunity to take the unchanged Retail Sdk later into your mirror branch, if needed.
+6.	Currently, it is a requirement that a build environment must be on the same platform and binary hotfix version as the target environment
+
 
 ## Testing and performance 
 ### User acceptance testing 
