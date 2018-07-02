@@ -132,7 +132,7 @@ If you're a partner and are interested in getting early access to the platform u
 
 ## How can I get the exact package version that is applied to my Sandbox environment by Microsoft ?
 
-When Microsoft updates your Tier 2 Sandbox environment, a copy of the package version is saved in the Project Asset Library. So if you want to apply the exact version of the package in your other environments, then you can go to the Project Asset Library and get the package from there. 
+When Microsoft updates your Tier 2 Sandbox environment, a copy of the package version is saved in the LCS Project Asset Library.
 
 ## I prefer that Microsoft update a Standard Acceptance Test (Sandbox) environment that differs from the Tier-2 sandbox environment that I purchased. What can I do?
 
