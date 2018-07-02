@@ -6,7 +6,7 @@ There are multiple ways to update the data. For good examples about how to get d
 
 Moving the entire database should also be considered when updating an environment. It’s a quick and easy way to duplicate the data from one environment to another. 
 
-Other kinds of updates are code updates. The LCS environment page keeps track of which updates have been applied and what updates need to be applied. 
+Other kinds of updates are code updates. The LCS environment page keeps track of which updates have been applied and what updates need to be applied. The following image shows an environment with 79 outstanding X++ fixes and 14 outstanding binary updates and 9 outstanding platform updates. 
 
 [![LCS Environment Page](./media/17-LCS-environment-page.png)](/media/17-LCS-environment-page.png)
  
@@ -14,11 +14,16 @@ Platform code is very low-level and there is no Retail-feature that is implement
 
 Binary updates or hotfixes include DLLs, scripts, channel SQL schema changes and more. All channel-side hotfixes are shipped with a binary update/hotfix. Because they are DLLs, binary updates are cumulative. If you download a binary update on Friday, you automatically get all binary hotfixes from Monday – thru Thursday.   
 
-The version of a binary hotfix taken is exactly the version of the Retail Sdk’s Microsoft-version.txt file (assuming the code merging has been done correctly). 
+The version of a binary hotfix taken is exactly the version of the Retail Sdk’s Microsoft-version.txt file (assuming the code merging has been done correctly). Binary updates are tied to (usually) the latest platform too. So, you will have to stay up-to-date with the platform when taking binary updates. The platform updates increase stability of the platform, but it impacts build environments and test efforts to some extent.
 
 Application updates or hotfixes delivered in X++ source code. Therefore, they are not for the channel, but for the client side.  
 
 Note that some updates require both an application and a binary update. See the next section for hotfix recommendations.  
+
+Third-party packages are similar to application packages but developed by others. More information about ISV package usage can be found here: https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/manage-runtime-packages 
+
+The two main ways to update an environment are more detailed below.
+
 
 ### Updating data by restoring the database 
 
@@ -37,10 +42,11 @@ In many cases, the Retail scheduler should be reset whenever a database is being
 After restoring the database, follow these steps:  
 
 1. Build + db sync or deployment of the deployable package. 
+> Note: If you have table extensions with data, you must have the metadata for these in the environment. If you do not, you may lose data as columns and tables may get dropped.  
 2. Make sure batch service is running. 
 3. Run the Environment reprovisioning tool (latest from global shared asset library, LCS/Maintain to deploy). 
 4. Verify that the tool succeeded, verify that the Retail channel profile is up-to-date with the correct URLs, and that the data sync jobs for the Default data group succeeded.
-5. In Finance and Operations, run “Initialize Retail Scheduler” to delete old data. 
+5. In Finance and Operations, run “Initialize Retail Scheduler” to delete old data. This assumes that all CDX configuration changes are automated with the help of a resource file. If that is not the case, and tables, sub jobs, and jobs are manually created in the Retail channel schema, do not select the deletion of existing configuration. We reccomend that you automate this. See the development section for more details.
 
 ### Taking updates frequently  
 
@@ -52,7 +58,7 @@ After taking new hotfixes, the results of a previous UAT become less meaningful.
 
 Another possible approach is to take all hotfixes frequently and only run part of all UATs.  The next time that new hotfixes are taken, a different part of UAT is run, in a circular fashion.  Before going live, a full UAT should be run. 
 
-For additional details about how to take updates, see documented https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheatsheet/.   
+
 
 ### Updating development environments 
 
