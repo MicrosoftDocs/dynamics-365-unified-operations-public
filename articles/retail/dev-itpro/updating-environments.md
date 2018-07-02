@@ -1,4 +1,4 @@
-## Code and environment update procedures for Retail projects
+# Code and environment update procedures for Retail projects
 
 An environment can be updated by either updating its data or its code.  
 
