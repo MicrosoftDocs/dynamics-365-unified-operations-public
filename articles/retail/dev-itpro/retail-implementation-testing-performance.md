@@ -1,4 +1,4 @@
-## Testing and performance 
+# Testing and performance 
 ### User acceptance testing (UAT)
 
 The main goal of acceptance testing is to verify that specific business scenarios function according to expectations. The testing should not only include the customizations, but out-of-the-box Microsoft functionality and non-happy path testing.  The goal is to catch anything that may not function properly before going to the production environment.  
