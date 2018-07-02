@@ -16,9 +16,9 @@ If you do use POS, make sure that you use the correct user roles. You should tes
 ### Performance 
 #### Channel performance 
 
-Poor performance is often caused by the following factors (listed in the order from highest impact): 
+In some cases channel performance may not be as good as anticipated. Poor performance is often caused by the following factors (listed in the order from highest impact): 
 
-- Additional custom Retail Server calls By extending the product with additional Retail Server calls, the performance often is decreased substantially. Not only is there the possibility of additional processing, but the network latency must also be considered. It is recommended to try to avoid any additional Retail Server calls. Often, ExtensionProperties and extending existing CRT handlers or triggers can accomplish the same tasks. 
+- Additional custom Retail Server calls. By extending the product with additional Retail Server calls, the performance often is decreased substantially. Not only is there the possibility of additional processing, but the network latency must also be considered. It is recommended to try to avoid any additional Retail Server calls. Often, ExtensionProperties and extending existing CRT handlers or triggers can accomplish the same tasks. 
 - Additional Channel Database SQL extensions. Make sure that SQL is efficient and uses proper indexes 
 - The same custom or built-in CRT SQL queries are exercised multiple times. If it is too expensive and appropriate, caching could be applied.  
 
@@ -36,8 +36,7 @@ Testing the performance of a system usually makes most sense for the components 
 Some of the reasons for bottlenecks may include: 
 
 - Resource intensive calculations in Finance and Operations, such as statement posting, change calculations for channel data sync, warehousing operations with large product assortment, MRP runs, etc. 
-- The Dynamics 365 for Finance and Operations database. 
-- Retail business logic for multiple terminals or stores running on a few Retail Servers (either in the cloud or in a scale unit). 
+- Complex retail business logic for multiple terminals or stores running on a few Retail Servers (either in the cloud or in a scale unit). 
 - Integrated third-party systems (integrated either from Finance and Operations or Retail Server). 
 - Realtime transaction services frequently called from Retail Server. 
 
