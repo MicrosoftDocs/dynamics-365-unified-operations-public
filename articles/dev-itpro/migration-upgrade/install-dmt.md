@@ -40,7 +40,7 @@ This topic explains how to set up the Data migration tool (DMT) so that you can 
 - Microsoft SQL Server machine that has Microsoft SQL 2012 Native Client installed.
 - The Microsoft SQL Server Integration Services (SSIS) service is installed and running on the machine where the DMT service will be installed.
 - SQL Server authentication must support both SQL authentication and Microsoft Windows authentication.
-- Access to database engines that follows the version guidance in the following table.
+- Microsoft Access database engines that follows the version guidance in the following table.
 
     |                                   | SQL Server 2008                 | SQL Server 2012 and later |
     |-----------------------------------|---------------------------------|---------------------------|
@@ -48,17 +48,16 @@ This topic explains how to set up the Data migration tool (DMT) so that you can 
     | **Microsoft Office 32-bit**       | Access engine 32-bit            | Access engine 64-bit      |
     | **Microsoft Office 64-bit**       | Access engine 32-bit and 64-bit | Access engine 64-bit      |
 
-- The Access database engine is installed.
 - Microsoft Dynamics AX 2009 SP1 5.0.1000.52 or later.
-- The Pre-req patch (axpatch.exe) installed. To find the patch, from the location where you downloaded and extracted the zip file, go to <pre-requisiteforpatch\application>.
+- The prerequisite patch (axpatch.exe) installed. To find the patch, from the location where you downloaded and extracted the zip file, go to <pre-requisiteforpatch\>\<application\>.
 
 ## Install the Finance and Operations DIXF service
 
 1. Go to the location where you extracted the zip file, and then, in the **DIXF msi** folder, right-click **DIXF\_Service\_x64.msi**, and select **Run**.
 2. When the wizard starts, select **Next**.
 3. Accept the license terms, and then select **Next**.
-4. Select an account for the service, and then select **Next**. The account should have admin rights. If you select the **Network Service** check box, verify that the Network Service account has admin rights. Otherwise, clear the check box, and enter an admin account user name and password. Then select **Next**.
-5. Select the SQL version, and then select **Next**.
+4. Select an account for the service, and then select **Next**. The account should have admin rights. If you select the **Network Service** check box, verify that the network service account has admin rights. Otherwise, clear the check box, and enter an admin account user name and password. Then select **Next**.
+5. Select the SQL Server version, and then select **Next**.
 6. Select **Install**, and then, when the wizard is completed, select **Finish**.
 
 ## Copy binaries
@@ -73,7 +72,7 @@ There are two ways to install the DMT. You can use the combined XPO file or an a
 ### Combined XPO file
 1. Extract the combined XPO file from **DMT-December\_2017\_Release\\CombinedXPO**.
 2. Import the combined XPO file into AX 2009.
-3. Copy the label file from **DMT-December\_2017\_Release\\Label file** to the **Program Files\\Microsoft Dynamics AX\\50\\Application\\Appl\\(NameOfYourDeployment)** folder.
+3. Copy the label file from **DMT-December\_2017\_Release\\Label file** to the **Program Files\\Microsoft Dynamics AX\\50\\Application\\Appl\\<NameOfYourDeployment\>** folder.
 4. Restart the Application Object Server (AOS) instance.
 5. In AX 2009, select **Data migration** \> **Setup** \> **Compile and synchronize DMT application**.
 
@@ -100,7 +99,7 @@ Go to the location to where you extracted the zip file, and find **defaultvalue.
 
     - **Default configuration** – Enter the path of the Microsoft Excel file.
     - **Export file path** – Enter the server path that can be accessed by the service.
-    - **SQL user and password** – Enter the SQL authentication credentials for the AX 2009 database.
+    - **SQL Server user and password** – Enter the SQL authentication credentials for the AX 2009 database.
 
 2. Close the form.
 3. Under **Setup**, select **Configure connections**, and enter the appropriate information on the following fields:
@@ -154,7 +153,7 @@ The path of the default configuration file and the export package file should be
 If you receive an error message that states, "DIXF service is unavailable," complete the following workaround to enable a service connection for port 7000.
 
 1. Open port 7000, and then, for inbound rules on the DMT service machine, select **Firewall settings**, and then select **Run** \> **wf.msc**.
-2. Select **Inbound Rules** \> **New rule**, and then, on the **Rule Type**, select **Port**, and then select **Next**.
+2. Select **Inbound Rules** \> **New rule**, and then, on the **Rule Type** tab, select **Port**, and then select **Next**.
 3. In the **Specific local ports** field, enter **7000**, and then select **Next**.
 4. Select **Allow the connection**, and then select **Next**.
 5. Select all three check boxes to apply all the rules, and then select **Next**.
