@@ -32,7 +32,7 @@ https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/databa
 
 The Reprovisioning tool should be run when the binary version of the target and destination database is the same. If that is not the case, either a build + dbsync (development environment) or deployment should also be done (sandbox, production).   
 
-In many cases, the Retail scheduler should be reset when a database. 
+In many cases, the Retail scheduler should be reset whenever a database is being updated. 
 
 After restoring the database, follow these steps:  
 
