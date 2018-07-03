@@ -105,7 +105,6 @@ These individual steps are explained in more detail below.
 
 [![Agents for Pool Default](./media/20-agents-for-pool-default.png)](/media/20-agents-for-pool-default.png)
 
-[![VSTS project](./media/2-VSTS-project.png)](/media/2-VSTS-project.png)
 
 ### Deploy a build environment and empty Main VSTS branch 
 
@@ -204,7 +203,7 @@ Now you can prepare the development environment for Retail development tasks. Th
 - Should be located somewhere inside the local user’s folder.
 - The path should be no more than 256 characters. You could use c:\users\<username>\Source\RetailSdk.
 
-Update the current Workspace to something like this. 
+In order to map the X++ and Retail Sdk, edit the current Workspace (Pending Changes, Actions, Workspaces…), update the current Workspace to something like this. 
 
 [![Edit current workspace](./media/12-edit-current-workspace.png)](/media/12-edit-current-workspace.png)
 
@@ -217,7 +216,7 @@ Regardless if there are customizations in the code branches, the following steps
 3. If there is already code in the **Dev/Metadata folder**, build all Dynamics 365 for Retail models. (To do this, select all and select database sync).
 4.	To speed up the development experience, switch to IIS by following [this](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/). This can only be done on the tier 1 VM on which you have administrative privileges (cloud-hosted environments)
 5. Optional: Restore a recent copy of a production database with good data. 
-  a. Rename the existing database to AxDB_Orig 
+  - Rename the existing database to AxDB_Orig 
   b. Restore the .bak file in SQL Server Management Studio (if a .bacpac file exists, follow the steps in the [topic]  (https://docs.microsoft.com/en-us/dynamics365/unified-operations/devitpro/database/copy-database-from-azure-sql-to-sql-server).)  
   c. Refresh the model store in Visual Studio. 
   d. In Visual Studio, do a full build (if the source and destination environments of the database are on different versions). 
