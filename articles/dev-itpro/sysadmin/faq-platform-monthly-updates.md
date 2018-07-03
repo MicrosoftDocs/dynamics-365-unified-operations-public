@@ -130,6 +130,10 @@ The [Software lifecycle policy](../migration-upgrade/versions-update-policy.md) 
 
 If you're a partner and are interested in getting early access to the platform update, join the [PEAP program](http://aka.ms/PEAPnomination) by submitting the nomination survey at <http://aka.ms/PEAPnomination>. If you're a customer and want your environments to always run on the latest platform, submit the nomination survey at <http://aka.ms/CAAPnomination>.
 
+## How can I get the exact package version that is applied to my Sandbox environment by Microsoft ?
+
+When Microsoft updates your Tier 2 Sandbox environment, a copy of the package version is saved in the LCS Project Asset Library.
+
 ## I prefer that Microsoft update a Standard Acceptance Test (Sandbox) environment that differs from the Tier-2 sandbox environment that I purchased. What can I do?
 
 In the opt-out survey, Microsoft will provide a place where you can enter a different sandbox environment ID. Note that Microsoft won't update Tier 1 sandbox environments. Tier 1 sandbox environments are environments that are deployed as a single virtual machine (VM).
