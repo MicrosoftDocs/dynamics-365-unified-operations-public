@@ -270,12 +270,14 @@ The process of deploying a new build and creating a new agent queue may take a c
 
 [![New Agent Queue](./media/15-new-agent-queue.png)](/media/15-new-agent-queue.png)
  
-### Prepare of the build definitions 
+### Prepare the build definitions 
 
-After following the steps earlier in this topic, you should have a single build definition and 2 agent queues with an agent each. To build different branches, you need to configure the build definition differently, which means that you need to clone the build definition. However, before you do this, you must first add the Retail SDK into the build so that you do not have to do this twice. To edit the existing build definition (named “Unified Operations platform - Build Main”), follow the steps in this [link](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retailsdk/integrate-retail-sdk-continuous-build) to integrate the Retail SDK into the metadata build of the **Main** branch.
+After following the steps earlier in this topic, you should have a single build definition and 2 agent queues with an agent each. To build different branches, you need to configure the build definition differently, which means that you need to clone the build definition. 
+
+However, before you do this, you must first add the Retail SDK into the build so that you do not have to do this twice. To edit the existing build definition (named “Unified Operations platform - Build Main”), follow the steps in this [link](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retailsdk/integrate-retail-sdk-continuous-build) to integrate the Retail SDK into the metadata build of the **Main** branch.
   
 
-When complete, clone the build definition and name it so that it is clear which branch it pertains to. (The clone feature is available on the VSTS portal.) Provide a new name, select the new Agent queue that you created, and change the following paths in any build steps or source mappings (change Main to ProdRel1). 
+If you had multiple build branches and environments, just clone the build definition and name it so it becomes clear for which branch it is (clone feature available on the VSTS portal). Provide a new name for the new build definition, select the new Agent queue that you created, and change the following paths in any build steps or source mappings (change Main to ProdRel1). 
 
 - Source mappings
 - Retail SDK build step 
@@ -283,13 +285,12 @@ When complete, clone the build definition and name it so that it is clear which 
 - Build the solution step (X++ build) 
 - Retail SDK copy packages step 
  
-[![Build definitions](./media/16-build-definitions.png)](/media/16-build-definitions.png)
  
 Here are some additional best practices or tricks: 
 
 1. An official build can be sped up by making these changes to the Build definition (Variables section):  
-   a. Set DeployReports to 0 
-   b. Set SkipSourcePackageGeneration to 1 
+     - Set DeployReports to 0 
+     - Set SkipSourcePackageGeneration to 1 
 2. Change the version of the Retail customization in each branch. It should be different in the Dev, Main, and ProdRel1 branches. Change either the Customization.settings or add a new global.props file under the RetailSdk\BuildTools folder. You can use any kind of numbering for the file name, for instance, you could number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.  
 3. For efficiency, shut down build or dev environments when they are not in use. 
 4.	If you are using cloud-hosted tier 1 development environments (you have administrative privileges) you can switch from IISExpress to IIS. This is a little more robust because we are avoiding the switching. Details can be found [here](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/).  
