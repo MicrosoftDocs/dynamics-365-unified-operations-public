@@ -42,8 +42,10 @@ Some of the reasons for bottlenecks may include:
 
 In general, default and non-real time POS operations are not considered a bottleneck as it has its own dedicated resource - the computer it is installed or running on.  Performance issues are typically caused by the business logic or chatty calls to RetailServer. 
 
-Ideally, the performance testing should be done after some initial optimizations according to the information above has already completed. If it does not perform well for a single user or process, it will not perform well concurrently either.  
-
-Finance and Operations documentation, and search for "PerfSdk" or “Trace parser." 
+Ideally, the performance testing should be done after some initial optimizations according to the information above has already completed. If it does not perform well for a single user or process, it will not perform well concurrently either.  For more information, see Retail Channel Performance investigations. Also, refer to the Finance and Operations documentation, and search for "PerfSdk" or “Trace parser." 
 
 Every project is different so it is not easy to give a general answer for what exact performance tests are needed to be run. For exmample, if the transaction sales line count is low (less than 100,000 per day for all stores) and no custom extension code has been added for statement posting, there should be no need to do a performance test for posting. However, if the sales line count is substantially  higher or major custom changes have been added, it would be a good idea to do so. 
+
+Each environment usually has a different hardware capability. However, performance issues can usually be reproduced similarly on different environments as long as the code and data is similar. We do not reccomend using a production environment for performance testing. A good practice is to use the same data in development, test and production. In that case, the development environment can be used to work on and verify a fix. Many performance-critical code paths are data dependent, the same issues may not be seen on a Contoso sample database. 
+
+When finished with a performance fix, the fix should be verified to improve the issue in a test environment (after a deployment of an officially built package) before the deployable package could be marked a release package in order to be able to “go to production”.
