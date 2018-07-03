@@ -113,6 +113,8 @@ Use the LCS portal to deploy a new build environment. We recommend that you use 
 
 If you create a new project, you will also need to create a new Visual Studio Team Services (VSTS) project. To do this, in your VSTS account, click New project. 
 
+[![VSTS project](./media/2-VSTS-project.png)](/media/2-VSTS-project.png)
+
  
 After the new VSTS project is created, you need to allow VSTS to access it. Create a new personal access token on the VSTS account. When that is done, configure the LCS project with the following information: 
 
