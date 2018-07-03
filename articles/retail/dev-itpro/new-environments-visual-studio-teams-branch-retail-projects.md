@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 # New environments, Visual Studio Team Services, and branch setup for Retail projects
 
-Starting with the launch of Microsoft AX 7.0, most environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). The former is the default, and the latter is usually done to have more control over a development or build environment.  For more details, see [Understand Lifecycle Services](./dev-itpro/lifecycle-services/lcs-works-lcs.md).
+Starting with the launch of Microsoft AX 7.0, most environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). The former is the default, and the latter is usually done to have more control over a development or build environment.  For more details, see [Understand Lifecycle Services](././dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 Tier 1 machines are developer or build environments. 
 
