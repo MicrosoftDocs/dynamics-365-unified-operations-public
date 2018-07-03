@@ -217,22 +217,22 @@ Regardless if there are customizations in the code branches, the following steps
 4.	To speed up the development experience, switch to IIS by following [this](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/). This can only be done on the tier 1 VM on which you have administrative privileges (cloud-hosted environments)
 5. Optional: Restore a recent copy of a production database with good data. 
      - Rename the existing database to AxDB_Orig 
-  b. Restore the .bak file in SQL Server Management Studio (if a .bacpac file exists, follow the steps in the [topic]  (https://docs.microsoft.com/en-us/dynamics365/unified-operations/devitpro/database/copy-database-from-azure-sql-to-sql-server).)  
-  c. Refresh the model store in Visual Studio. 
-  d. In Visual Studio, do a full build (if the source and destination environments of the database are on different versions). 
-  e. In Visual Studio, run a full database sync. 
-  f. Be sure Batch service is running. 
-  g. Run the Environment re-provisioning tool (latest from global shared asset library, LCS/Maintain to deploy) 
-  h. Verify that the tool succeeded. The following query should show all updated local dev machine URLs: select * from dbo.RETAILCHANNELPROFILEPROPERTY where ISSYSTEMRECORD = 1 
-  i. In the Dynamics 365 for Retail user interface, run the Initialize Retail Scheduler to delete old data. 
+     - Restore the .bak file in SQL Server Management Studio (if a .bacpac file exists, follow the steps in the [topic]  (https://docs.microsoft.com/en-us/dynamics365/unified-operations/devitpro/database/copy-database-from-azure-sql-to-sql-server).)  
+     - Refresh the model store in Visual Studio. 
+     - In Visual Studio, do a full build (if the source and destination environments of the database are on different versions). 
+     - In Visual Studio, run a full database sync. 
+     - Be sure Batch service is running. 
+     - Run the Environment re-provisioning tool (latest from global shared asset library, LCS/Maintain to deploy) 
+     - Verify that the tool succeeded. The following query should show all updated local dev machine URLs: select * from dbo.RETAILCHANNELPROFILEPROPERTY where ISSYSTEMRECORD = 1 
+     - In the Dynamics 365 for Retail user interface, run the Initialize Retail Scheduler to delete old data. 
 
 6. Make sure that you now can sign into Retail with your user account.  If you were not the original Admin user in the production database, you can run the Admin Provisioning tool to take ownership. (This tool is in PackagesLocalDirectory/bin.) 
 7. Verify that the CDX data sync works. In Retail, go to **Download sessions**, you should see many applied sessions. If not, select job 9999 and run it.
 8. Install TypeScript version 2.2.2 from [here](https://www.microsoft.com/enus/download/details.aspx?id=48593).  
 9. Do a full build of the Retail SDK from the command prompt.
- a. Open MSbuild command prompt for Visual Studio 2015 as Administrator. 
- b. Change the directory to where your RetailSdk is located on the local VM. 
- c. Type msbuild and click Enter. 
+      - Open MSbuild command prompt for Visual Studio 2015 as Administrator. 
+      - Change the directory to where your RetailSdk is located on the local VM. 
+      - Type msbuild and click Enter. 
 
 10. Add the development/sample MPOS certificate to the local machine's trusted root certificate store ...\RetailSDK\BuildTools\ModernPOSAppxSigningCert-Contoso.pfx, password empty string. 
 11. Install MPOS or MPOSOffline, run ...\RetailSDK \References\YourCompany|Contoso.ModernPOSSetupOffline.exe. This is needed to deploy the ClientBroker files.
