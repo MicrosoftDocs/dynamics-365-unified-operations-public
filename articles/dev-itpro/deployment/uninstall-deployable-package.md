@@ -37,11 +37,11 @@ Occasionally, you might have to uninstall a deployable package. For example, you
 
 ## Remove a model
 
-A model is a design-time concept that is part of a package. When a model isn't the only model in a module, you can just remove it from the source code. No other steps are required, because when you deploy the updated module, the old module is overwritten. All overlayer models fall into this category. For more information, see [Deleting a model](././dev-tools/models.md#deleting-a-model).
+A model is a design-time concept that is part of a package. When a model isn't the only model in a module, you can just remove it from the source code. No other steps are required, because when you deploy the updated module, the old module is overwritten. All overlayer models fall into this category. For more information, see [Deleting a model](../dev-tools/models.md#deleting-a-model).
 
 ## Prerequisites
 
-- If any models reference the module that will be removed, the references must be removed from them. For information about how to find the references that must be removed, see [Viewing model dependencies](././dev-tools/models.md#viewing-package-dependencies).
+- If any models reference the module that will be removed, the references must be removed from them. For information about how to find the references that must be removed, see [Viewing model dependencies](../dev-tools/models.md#viewing-package-dependencies).
 - Build and deploy any modules that references were removed from.
 - All references to and from the modules must be removed before you begin to uninstall the module. To remove all a module's references, add a single class to the model. This class should contain no code. It should contain only a reference to the application platform.
 
