@@ -27,7 +27,7 @@ For more details, see the section on [Retail development](dev-retail-home-page).
 When investigating store performance, follow the ideas on Retail Channel performance investigations.
 
 #### Using telemetry data to find performance issues 
-To troubleshoot Retail and Finance and Operations performance (especially slow SQL queries or SQL deadlocks), the LCS environment diagnostics page exposes valuable telemetry data. This data can be used to find potential performance issues in code, configuration, or design. Additional details can be found at: https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/. With this information, you should be able to get an idea why certain batch processes or form loads are slow.   
+To troubleshoot Retail and Finance and Operations performance (especially slow SQL queries or SQL deadlocks), the LCS environment diagnostics page exposes valuable telemetry data. This data can be used to find potential performance issues in code, configuration, or design. Additional details can be found [here](https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/). With this information, you should be able to get an idea why certain batch processes or form loads are slow.   
 
 #### Performance testing 
 
