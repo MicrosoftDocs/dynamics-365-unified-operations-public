@@ -94,7 +94,7 @@ If you want to upgrade to a new version (such as 7.2 to 7.3, or 7.3 to 8.0), you
 
 ### Tips
 -	Decide on a good package naming convention (for names in LCS asset library and zip packages when downloaded). The reason is that it will be easier to figure out what package you have deployed and where it came from. Avoid spaces in package names. Here is an example for a convention:
- - Platform update packages: PUXX_MMDDYY (XX is number of PU)
+    - Platform update packages: PUXX_MMDDYY (XX is number of PU)
  - Binary update packages: BIN_MMDDYY
  -	X++ update packages: APP_MMDDYY
  -	Built X++ deployable packages: AX_BRANCH_VERSION (with appropriate branch name and VSTS version string)
