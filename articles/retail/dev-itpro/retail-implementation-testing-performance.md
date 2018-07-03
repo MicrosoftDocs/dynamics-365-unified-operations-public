@@ -22,7 +22,7 @@ In some cases channel performance may not be as good as anticipated. Poor perfor
 - Additional Channel Database SQL extensions. Make sure that SQL is efficient and uses proper indexes 
 - The same custom or built-in CRT SQL queries are exercised multiple times. If it is too expensive and appropriate, caching could be applied.  
 
-For more details, see the section on [Retail development](../../dev-retail-home-page.md). 
+For more details, see the section on [Retail development](../../dev-retail-home-page). 
  
 When investigating store performance, follow the ideas on Retail Channel performance investigations.
 
