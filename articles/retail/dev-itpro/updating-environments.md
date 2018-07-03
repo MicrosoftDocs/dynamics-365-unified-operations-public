@@ -16,7 +16,7 @@ Binary updates or hotfixes include DLLs, scripts, channel SQL schema changes and
 
 The version of a binary hotfix taken is exactly the version of the Retail Sdk’s Microsoft-version.txt file (assuming the code merging has been done correctly). Binary updates are tied to (usually) the latest platform too. So, you will have to stay up-to-date with the platform when taking binary updates. The platform updates increase stability of the platform, but it impacts build environments and test efforts to some extent.
 
-Application updates or hotfixes delivered in X++ source code. Therefore, they are not for the channel, but for the client side.  
+Application updates or hotfixes delivered in X++ source code. Therefore, they are not for the channel, but for the client side (Retail or non-Retail related).  
 
 Note that some updates require both an application and a binary update. See the next section for hotfix recommendations.  
 
@@ -59,7 +59,6 @@ After taking new hotfixes, the results of a previous UAT become less meaningful.
 Another possible approach is to take all hotfixes frequently and only run part of all UATs.  The next time that new hotfixes are taken, a different part of UAT is run, in a circular fashion.  Before going live, a full UAT should be run. 
 
 
-
 ### Updating development environments 
 
 You should always deploy binary updates and platform updates using LCS’s package deployment. 
@@ -92,4 +91,28 @@ It may be okay that some environments are on different versions. For example, if
 ### Moving to a new version 
 
 If you want to upgrade to a new version (such as 7.2 to 7.3, or 7.3 to 8.0), you must deploy a new environment and target the new version.  If applicable, you also need to run a code upgrade and a database upgrade. More details can be found in NAME OF THE TOPIC https://docs.microsoft.com/en-us/dynamics365/unifiedoperations/dev-itpro/migration-upgrade/code-migration-home-page. 
+
+### Tips
+-	Decide on a good package naming convention (for names in LCS asset library and zip packages when downloaded). The reason is that it will be easier to figure out what package you have deployed and where it came from. Avoid spaces in package names. Here is an example for a convention:
+ - Platform update packages: PUXX_MMDDYY (XX is number of PU)
+ - Binary update packages: BIN_MMDDYY
+ -	X++ update packages: APP_MMDDYY
+ -	Built X++ deployable packages: AX_BRANCH_VERSION (with appropriate branch name and VSTS version string)
+ -	Built Retail combined package: RET_BRANCH_VERSION
+-	Whenever you start a new item of work, use “Get latest” in the VSTS location you are working in
+-	Any code submissions should use proper and detailed comments of the change sets
+- Production Go-live procedures are important. The list below can serve as a reminder of what should be considered on your Go-live check list. Verify your Go-live checklist in a mock Go-live or UAT environment. This is not a complete list:
+ - After deployment, does LCS show the expected deployment history with the correct packages?
+ -	After deployment, does the LCS environment page and Dynamics 365 F&O show the correct and expected version numbers?
+ -	Can MPOS offline mode be used during downtime of cloud (go offline, deploy, go online, sync offline transactions, update MPOS)?
+ -	Does the Environment Reprovisioning tool need to be run (if database has been moved)?
+ -	Batch jobs for CDX sync must be re-enabled by setting to “Waiting”
+ -	“Initialize Retail scheduler” should be run
+ -	Is there other data that needs to be setup in addition to the deployable packages (screen, button, receipt layouts, Azure Active Directory setup, Retail Shared parameters, tax configuration, other batch processes, DIXF recurring jobs, etc.)?
+ -	Is a sync of the CDX data jobs required?
+ -	Is a full sync of CDX data jobs required?
+ -	Does this deployment require an update of store components as well?
+ - If the store components had to be updated, do they show the new version numbers?
+ -	Are the right experts available during the deployment (partner, ISV, customer, etc.)
+ -	And more…
 
