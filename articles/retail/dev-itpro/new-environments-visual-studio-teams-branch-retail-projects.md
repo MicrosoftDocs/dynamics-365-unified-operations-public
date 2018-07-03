@@ -222,7 +222,7 @@ Regardless if there are customizations in the code branches, the following steps
      - In Visual Studio, do a full build (if the source and destination environments of the database are on different versions). 
      - In Visual Studio, run a full database sync. 
      - Be sure Batch service is running. 
-     - Run the Environment re-provisioning tool (latest from global shared asset library, LCS/Maintain to deploy) 
+     - Run the Environment re-provisioning tool (Find the latest version in the Asset library and deploy it with the LCS Maintain function) 
      - Verify that the tool succeeded. The following query should show all updated local dev machine URLs: select * from dbo.RETAILCHANNELPROFILEPROPERTY where ISSYSTEMRECORD = 1 
      - In the Dynamics 365 for Retail user interface, run the Initialize Retail Scheduler to delete old data. 
 
