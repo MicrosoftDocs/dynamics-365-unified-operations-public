@@ -101,6 +101,10 @@ After all these steos have been completed, we will have branches, environment, a
 
 These individual steps are explained in more detail below. 
 
+[![Build Definitions](./media/19-build-definitions.png)](/media/19-build-definitions.png)
+
+[![Agents for Pool Default](./media/20-agents-for-pool-default.png)](/media/20-agents-for-pool-default.png)
+
 [![VSTS project](./media/2-VSTS-project.png)](/media/2-VSTS-project.png)
 
 ### Deploy a build environment and empty Main VSTS branch 
