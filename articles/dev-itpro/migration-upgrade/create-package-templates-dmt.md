@@ -47,4 +47,4 @@ Follow these steps to view and select the entity lists that will be used in the 
 4. In the **Module selected** pane, select the module that contains the data entities to migrate.
 5. On the **Entity details** tab, select the **Select for migration** check box for every entity line that you want to migrate.
 6. Click **Apply sequence**.
-7. To create a customized template, in the Application Object Tree, go to **Resources**, and create a new template that follows the XML format.
+7. To create a customized template, in the Application Object Tree, go to **Resources**, and create a new template in XML format.
