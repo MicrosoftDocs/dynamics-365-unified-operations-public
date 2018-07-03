@@ -2,7 +2,7 @@
 
 An environment can be updated by either updating its data or its code.  
 
-There are multiple ways to update the data. For good examples about how to get data into an environment, see NAME OF TOPIC. https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dataentities/data-entities-data-packages 
+There are multiple ways to update the data. For good examples about how to get data into an environment, see [Data Entities and Data Packages](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dataentities/data-entities-data-packages).  
 
 Moving the entire database should also be considered when updating an environment. It’s a quick and easy way to duplicate the data from one environment to another. 
 
@@ -62,7 +62,7 @@ Just like the branching strategy is dictated by project, team or other constrain
  
 #### Steps 1 – 3: Obtaining and applying updates
 
-The full details about steps 1 – 3 (taking updates) is something already documented here: https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/.  If you have the branches setup the same way as described above, you should be doing this work in the Dev branch.
+The full details about steps 1 – 3 (taking updates) is something already documented [here](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/).  If you have the branches setup the same way as described above, you should be doing this work in the Dev branch.
 
 #### Step 3.1 – 3.2: Keeping development environments up-to-date
 
@@ -92,7 +92,7 @@ Finally, deploy them to your test environments.
 
 When all necessary tests pass, we are ready to deploy the same packages to production. The packages must be marked as Release Candidates in the LCS Asset library after they had been deployed and validated in a tier 2 or higher environment. Then the deployment must be planned and submitted via the LCS environment page. 
 There are lots of things to consider when updating a production environment. Downtime, downtime mitigation, data migration, store updates, mass deployment and many more. It is very important to have a plan of all steps required for an update, as Retail projects usually require more than just a deployment. Some additional things to consider are listed below in the Tips section.
-It is also assumed that the go-live planning has started much earlier. For more details consult https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle. 
+It is also assumed that the go-live planning has started much earlier. For more details consult [Implementation Lifecycle](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle). 
 
 #### Step 5: Merge the code from Main to ProdRel1
 
@@ -121,7 +121,7 @@ Notice that after updating an environment, the tile counts for the available upd
 
 ### Moving to a new version 
 
-If you want to upgrade to a new version (such as 7.2 to 7.3, or 7.3 to 8.0), you must deploy a new environment and target the new version.  If applicable, you also need to run a code upgrade and a database upgrade. More details can be found in NAME OF THE TOPIC https://docs.microsoft.com/en-us/dynamics365/unifiedoperations/dev-itpro/migration-upgrade/code-migration-home-page. 
+If you want to upgrade to a new version (such as 7.2 to 7.3, or 7.3 to 8.0), you must deploy a new environment and target the new version.  If applicable, you also need to run a code upgrade and a database upgrade. More details can be found in [Code Migration Home Page](https://docs.microsoft.com/en-us/dynamics365/unifiedoperations/dev-itpro/migration-upgrade/code-migration-home-page). 
 
 ### Tips
 -	Decide on a good package naming convention (for names in LCS asset library and zip packages when downloaded). The reason is that it will be easier to figure out what package you have deployed and where it came from. Avoid spaces in package names. Here is an example for a convention:
