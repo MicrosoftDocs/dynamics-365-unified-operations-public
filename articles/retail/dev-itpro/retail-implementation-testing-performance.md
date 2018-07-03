@@ -7,7 +7,7 @@ For best results, the users acceptance testing (UAT) environment should be a Tie
 
 If a development environment (Tier 1) is used, there are scenarios where a developer using the same environment could cause errors (uncommitted source changes, debugger attached errors, etc.). Also, the  switching between Internet Information Services (IIS) Express and IIS may cause issues. Additionally, because there is no way to know exactly what has happened on a development machine, Microsoft support will be very limited for a Tier 1 environment. 
 
-A production environment could be used for UAT (for example as a go-live dry run). However, the disadvantage is that anything you wanted to do in SQL would have to go through DSE service requests. This may not be efficient. Also, a production environment is not available for a long period of time before the planned go-live date. 
+A production environment could be used for UAT (for example as a go-live dry run). However, the disadvantage is that anything you wanted to do in SQL would have to go through deployment support engineer (DSE) service requests. This may not be efficient. Also, a production environment is not available for a long period of time before the planned go-live date. 
 
 The UAT should be done after deploying officially- built deployable packages and not on Visual Studio built packages. The reason is that it cannot be proven what code changes were included in a manually built package. Only an official build system provides assurance and an audit trail of the exact changes that are in a certain build.  
 
