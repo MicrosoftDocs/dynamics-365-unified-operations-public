@@ -216,7 +216,7 @@ Regardless if there are customizations in the code branches, the following steps
 3. If there is already code in the **Dev/Metadata folder**, build all Dynamics 365 for Retail models. (To do this, select all and select database sync).
 4.	To speed up the development experience, switch to IIS by following [this](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/). This can only be done on the tier 1 VM on which you have administrative privileges (cloud-hosted environments)
 5. Optional: Restore a recent copy of a production database with good data. 
-  - Rename the existing database to AxDB_Orig 
+     - Rename the existing database to AxDB_Orig 
   b. Restore the .bak file in SQL Server Management Studio (if a .bacpac file exists, follow the steps in the [topic]  (https://docs.microsoft.com/en-us/dynamics365/unified-operations/devitpro/database/copy-database-from-azure-sql-to-sql-server).)  
   c. Refresh the model store in Visual Studio. 
   d. In Visual Studio, do a full build (if the source and destination environments of the database are on different versions). 
