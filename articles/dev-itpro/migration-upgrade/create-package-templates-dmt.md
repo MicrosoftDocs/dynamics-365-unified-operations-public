@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 17
 
 Packages are created by following a predefined sequence. This sequence is based on the dependencies that the data entities have on each another. Because of these dependencies, when you import data entities into Microsoft Dynamics 365 for Finance and Operations, you must import the data entities in the defined order. Otherwise, you might encounter issues during import and configuration.
 
-The Data migration tool (DMT) tool provides twenty predefined templates, as shown in the following illustration.
+The Data migration tool (DMT) provides twenty predefined templates, as shown in the following illustration.
 
 [![Data entity import template list](./media/data-entity-templates.png)](./media/data-entity-templates.png)
 
