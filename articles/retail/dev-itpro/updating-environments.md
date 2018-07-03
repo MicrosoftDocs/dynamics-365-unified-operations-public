@@ -31,7 +31,7 @@ A useful and common operation is to move the entire database from one environmen
 
 Whatever the reason, every time a database from a different environment is restored there are certain “links” in the database that may be broken.  The Environment reprovisioning tool fixes all these broken links for the default database group. It does not matter what type of environment is used. The general guideline is that if the database comes from a different server, the Reprovisioning tool must be run. 
 
-The details about how to run this are outlined in [Copy Database From Azure SQL to SQL Server] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/database/copy-databasefrom-azure-sql-to-sql-server). 
+The details about how to run this are outlined in [Copy Database From Azure SQL to SQL Server](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/database/copy-databasefrom-azure-sql-to-sql-server). 
 
 The Reprovisioning tool should be run when the binary version of the target and destination database is the same. If that is not the case, either a build + dbsync (development environment) or deployment should also be done (sandbox, production).   
 
