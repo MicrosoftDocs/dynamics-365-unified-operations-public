@@ -59,6 +59,8 @@ Another possible approach is to take all hotfixes frequently and only run part o
 ### Change propagation process through branches and environments
 
 Just like the branching strategy is dictated by project, team or other constraints your project has the flexibility how the changes propagate through these branches. The process shown here can be used as an example. For some projects, it may be too simple. For others it may be too complex.  The important point is, a project should have a plan. Different persons in the team will have different responsibilities (dev, deployment, code merges, sign off, etc.) and the role ownership should be clearly decided.
+
+[![Branch diagram](./media/1-1-diagram.png)](/media/1-1-diagram.png)
  
 #### Steps 1 – 3: Obtaining and applying updates
 
@@ -73,6 +75,8 @@ Download binary updates and platform updates can simply be deployed via LCS’s 
 For the X++ code, developers simply sync the Metadata folder and do a full build and db sync.  
 
 If major new Retail changes have been checked in by others in the team (new files, configuration changes, new Retail sdk) it is not enough to just sync and build the new files. Remember, there are a few web applications installed on the developer machine that will not be simply updated with a compilation. The simplest way is to use LCS’s package deployment to deploy the retail package that can be produced on a MSBuild command prompt. Smaller changes to code do not require new package deployments to keep the dev environments in sync if the incremental changes are dropped to the install locations (more on that in the Retail Sdk section).
+
+[![Environment Change History](./media/1-2-environment-change-history.png)](/media/1-2-environment-change-history.png)
  
 #### Step 4: Moving changes from Dev to Main
 
@@ -81,17 +85,27 @@ We separated the Dev and Main branches to have the opportunity to “leave some 
 #### Steps 4.1 – 4.2: Updating test environments
 
 Use your build environment to produce officially built packages from the code in the Main branch. 
+
+[![Build Definition Unified Operations](./media/1-3-build-definition-unified-operations.png)](/1-3-build-definition-unified-operations.png)
  
 When the build is finished, find the built packages, download and rename them according your naming conventions.
+
+[![Artifacts Explorer](./media/1-4-artifacts-explorer.png)](/1-4-artifacts-explorer.png)
  
 Then, upload them to the LCS asset library. 
  
+[![Asset library](./media/1-5-asset-library.png)](/1-5-asset-library.png)
+
 Finally, deploy them to your test environments.  
+
+[![Environment change history UAT](./media/1-6-environment-change-history-UAT.png)](/1-6-environment-change-history-UAT.png)
  
 #### Step 4.3: Deploy to production environment
 
 When all necessary tests pass, we are ready to deploy the same packages to production. The packages must be marked as Release Candidates in the LCS Asset library after they had been deployed and validated in a tier 2 or higher environment. Then the deployment must be planned and submitted via the LCS environment page. 
+
 There are lots of things to consider when updating a production environment. Downtime, downtime mitigation, data migration, store updates, mass deployment and many more. It is very important to have a plan of all steps required for an update, as Retail projects usually require more than just a deployment. Some additional things to consider are listed below in the Tips section.
+
 It is also assumed that the go-live planning has started much earlier. For more details consult [Implementation Lifecycle](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle). 
 
 #### Step 5: Merge the code from Main to ProdRel1
@@ -103,6 +117,8 @@ Before any new feature work starts being added to the Main branch and right afte
 You should always deploy binary updates and platform updates using LCS’s package deployment. 
 
 Finance and Operations and Retail customization packages should not be deployed to a build environment. 
+
+[![Environment change history build](./media/1-7-environment-change-history-build.png)](/1-7-environment-change-history-build.png)
 
 ### Comparing LCS tile counts 
 
