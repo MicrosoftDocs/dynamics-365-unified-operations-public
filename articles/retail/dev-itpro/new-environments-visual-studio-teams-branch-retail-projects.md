@@ -39,7 +39,7 @@ Tier 1 machines are developer or build environments.
 
 For Retail implementations that include code extensions, we do not recommend using a development environment without administrative privileges. There are many tools and operating system (OS) features that need to be configured if a development environment without administrative privileges is used. An alternative setup is to have a machine hosted on a separate Microsoft Azure subscription (also known as “cloud-hosted” in Lifecycle). 
 
-There are three hosting models for a Tier 1 development or build environment. Refer to the following table to evaluate the pros and cons to evaulate what works best for your project.
+There are three hosting models for a Tier 1 development or build environment. 
 
 If you want to build your own POS extensions with an appx certificate (see below). 
 
@@ -49,7 +49,9 @@ Note: You have the option to shutdown cloud-hosted environments any time. This h
 
 A hosting alternative is to download a VHD from LCS and host it locally on a server. From a development perspective, there is no difference regarding the capabilities of the VHD images compared with a hosted VM, except that LCS deployment are not supported on VHDs. Command line deployments are still supported.
 
-[![Pros and Cons 3 Hosting Models](./media/18-three-hosting-models.png)](./media/18-three-hosting-models.png)
+Refer to the following table to evaluate the pros and cons to evaulate what works best for your project.
+
+[![Pros and Cons 3 Hosting Models](./media/18-three-hosting-model.png)](./media/18-three-hosting-model.png)
 
 Tier 2 and higher machines are multi-box environments for multiple test and verification purposes. Production environments are hands-off, and the size of the environment is determined by the sizing process in Lifecycle Service (LCS).  
 
