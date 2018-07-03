@@ -56,7 +56,7 @@ After taking new hotfixes, the results of a previous UAT become less meaningful.
 
 Another possible approach is to take all hotfixes frequently and only run part of all UATs.  The next time that new hotfixes are taken, a different part of UAT is run, in a circular fashion.  Before going live, a full UAT should be run. 
 
-## Change propagation process through branches and environments
+### Change propagation process through branches and environments
 
 Just like the branching strategy is dictated by project, team or other constraints your project has the flexibility how the changes propagate through these branches. The process shown here can be used as an example. For some projects, it may be too simple. For others it may be too complex.  The important point is, a project should have a plan. Different persons in the team will have different responsibilities (dev, deployment, code merges, sign off, etc.) and the role ownership should be clearly decided.
  
