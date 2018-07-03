@@ -107,6 +107,9 @@ Go to the location to where you extracted the zip file, and find **defaultvalue.
     - **DIXF service host** – Enter the host name of the DIXF service installation.
     - **Tenant URL** – Enter the Finance and Operations URL. If you aren't sure of the tenant, see the Finance and Operations web.config file.
 
+    > [!NOTE}
+    > In the Azure Portal, when you create a new app in the Azure Active Directory (AAD), you can select from two options. **Web API** and **Native**. In this instance, select **Native** and grant permissions to native AAD app.
+
 ## Multi-box setup
 For a multi-box setup, you must have the following machines:
 
