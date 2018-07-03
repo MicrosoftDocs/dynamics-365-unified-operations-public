@@ -95,24 +95,24 @@ If you want to upgrade to a new version (such as 7.2 to 7.3, or 7.3 to 8.0), you
 ### Tips
 -	Decide on a good package naming convention (for names in LCS asset library and zip packages when downloaded). The reason is that it will be easier to figure out what package you have deployed and where it came from. Avoid spaces in package names. Here is an example for a convention:
     - Platform update packages: PUXX_MMDDYY (XX is number of PU)
- - Binary update packages: BIN_MMDDYY
- -	X++ update packages: APP_MMDDYY
- -	Built X++ deployable packages: AX_BRANCH_VERSION (with appropriate branch name and VSTS version string)
- -	Built Retail combined package: RET_BRANCH_VERSION
+    - Binary update packages: BIN_MMDDYY
+    -	X++ update packages: APP_MMDDYY
+    -	Built X++ deployable packages: AX_BRANCH_VERSION (with appropriate branch name and VSTS version string)
+    -	Built Retail combined package: RET_BRANCH_VERSION
 -	Whenever you start a new item of work, use “Get latest” in the VSTS location you are working in
 -	Any code submissions should use proper and detailed comments of the change sets
 - Production Go-live procedures are important. The list below can serve as a reminder of what should be considered on your Go-live check list. Verify your Go-live checklist in a mock Go-live or UAT environment. This is not a complete list:
- - After deployment, does LCS show the expected deployment history with the correct packages?
- -	After deployment, does the LCS environment page and Dynamics 365 F&O show the correct and expected version numbers?
- -	Can MPOS offline mode be used during downtime of cloud (go offline, deploy, go online, sync offline transactions, update MPOS)?
- -	Does the Environment Reprovisioning tool need to be run (if database has been moved)?
- -	Batch jobs for CDX sync must be re-enabled by setting to “Waiting”
- -	“Initialize Retail scheduler” should be run
- -	Is there other data that needs to be setup in addition to the deployable packages (screen, button, receipt layouts, Azure Active Directory setup, Retail Shared parameters, tax configuration, other batch processes, DIXF recurring jobs, etc.)?
- -	Is a sync of the CDX data jobs required?
- -	Is a full sync of CDX data jobs required?
- -	Does this deployment require an update of store components as well?
- - If the store components had to be updated, do they show the new version numbers?
- -	Are the right experts available during the deployment (partner, ISV, customer, etc.)
- -	And more…
+    - After deployment, does LCS show the expected deployment history with the correct packages?
+    -	After deployment, does the LCS environment page and Dynamics 365 F&O show the correct and expected version numbers?
+    -	Can MPOS offline mode be used during downtime of cloud (go offline, deploy, go online, sync offline transactions, update MPOS)?
+    -	Does the Environment Reprovisioning tool need to be run (if database has been moved)?
+    -	Batch jobs for CDX sync must be re-enabled by setting to “Waiting”
+    -	“Initialize Retail scheduler” should be run
+    -	Is there other data that needs to be setup in addition to the deployable packages (screen, button, receipt layouts, Azure Active Directory setup, Retail Shared parameters, tax configuration, other batch processes, DIXF recurring jobs, etc.)?
+    -	Is a sync of the CDX data jobs required?
+    -	Is a full sync of CDX data jobs required?
+    -	Does this deployment require an update of store components as well?
+    - If the store components had to be updated, do they show the new version numbers?
+    -	Are the right experts available during the deployment (partner, ISV, customer, etc.)
+    -	And more…
 
