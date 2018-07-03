@@ -55,7 +55,7 @@ Tier 2 and higher machines are multi-box environments for multiple test and veri
 
 **Branches, build definitions, and environments**
 
-Branching is a major practice in software development. To learn more about branching, visit this link. https://msdn.microsoft.com/en-us/library/aa730834(v=vs.80).aspx
+Branching is a major practice in software development. To learn more about branching, visit this [link](https://msdn.microsoft.com/en-us/library/aa730834(v=vs.80).aspx). 
 
 To summarize branching, using a paragraph from the resource above. 
 
@@ -63,8 +63,7 @@ To summarize branching, using a paragraph from the resource above.
 
 > Using branches provides better isolation and control of individual software assets and increases productivity, because teams or individuals can work in parallel. However, using branches also requires an increase in merge activities and therefore risk, because you must later reassemble branches into a whole.
 
-To learn more about the delivery of Dynamics 365 Finance and Operations implementation projets, refer to the following video: 
-https://mbspartner.microsoft.com/D365/Videos/101393. 
+To learn more about the delivery of Dynamics 365 Finance and Operations implementation projets, refer to the following [video](https://mbspartner.microsoft.com/D365/Videos/101393). 
 
 There is no single best strategy for the creation of branches. Different projects and different sizes of implementations require various approaches. The approach mentioned by Joris De Gruyter (the above video link) is a successful method. 
 
@@ -127,7 +126,7 @@ The build box will be deployed, and the build definition and Main branch will be
  
 ### Deploy a development environment 
 
-Use the LCS portal of your implementation project to create a cloud-hosted development environment. Make sure that you are signed in to the correct user account. This user account will be used to create the tenant of the development machine. For example, if you are logged into LCS with foo@bar.com, the environment will be setup for the @bar.com tenant and expect users from that tenant. Other users can be added, however the point of sale (POS) activation must be carried out by a user from that tenant.  There are cases where user accounts from different domains can be used, for example if customers, partners, or other parties use email from different domains. Coordination is needed during the POS activation, as only the tenant that was used during the deployment can activate users.  
+Use the LCS portal of your implementation project to create a cloud-hosted development environment. Make sure that you are signed in to the correct user account. This user account will be used to create the tenant of the development machine. For example, if you are logged into LCS with lily@pad.com, the environment will be setup for the @pad.com tenant and expect users from that tenant. Other users can be added, however the point of sale (POS) activation must be carried out by a user from that tenant.  There are cases where user accounts from different domains can be used, for example if customers, partners, or other parties use email from different domains. Coordination is needed during the POS activation, as only the tenant that was used during the deployment can activate users.  
 
 Select the correct version, then DEVTEST, then DEV, a meaningful and unique name and make sure that the machine name is also unique (inside advanced settings). The process of preparing the machine may take a couple hours. 
 
@@ -205,13 +204,13 @@ The actual download of the files may take a few minutes.
 
 Regardless if there are customizations in the code branches, the following steps help to bring a development box into a state where Retail extension code can be authored and executed. Some steps may be optional, depending on what customizations are planned. 
 
-1. Install your favorite development tools. Here's an example of an automated script: https://dynamicsnotes.com/auto-installing-most-needed-dev-tools-in-5-mins/). 
+1. Install your favorite development tools. Here's an example of an automated [script](https://dynamicsnotes.com/auto-installing-most-needed-dev-tools-in-5-mins/). 
 2. Exclude the code folders from Windows Defender for a faster compile time. 
 3. If there is already code in the **Dev/Metadata folder**, build all Dynamics 365 for Retail models. (To do this, select all and select database sync).
-4.	To speed up the development experience, switch to IIS by following this https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/ .This can only be done on the tier 1 VM on which you have administrative privileges (cloud-hosted environments)
+4.	To speed up the development experience, switch to IIS by following [this](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/). This can only be done on the tier 1 VM on which you have administrative privileges (cloud-hosted environments)
 5. Optional: Restore a recent copy of a production database with good data. 
   a. Rename the existing database to AxDB_Orig 
-  b. Restore the .bak file in SQL Server Management Studio (if a .bacpac file exists, follow the steps in: https://docs.microsoft.com/en-us/dynamics365/unified-operations/devitpro/database/copy-database-from-azure-sql-to-sql-server)  
+  b. Restore the .bak file in SQL Server Management Studio (if a .bacpac file exists, follow the steps in the [topic]  (https://docs.microsoft.com/en-us/dynamics365/unified-operations/devitpro/database/copy-database-from-azure-sql-to-sql-server).)  
   c. Refresh the model store in Visual Studio. 
   d. In Visual Studio, do a full build (if the source and destination environments of the database are on different versions). 
   e. In Visual Studio, run a full database sync. 
@@ -222,13 +221,13 @@ Regardless if there are customizations in the code branches, the following steps
 
 6. Make sure that you now can sign into Retail with your user account.  If you were not the original Admin user in the production database, you can run the Admin Provisioning tool to take ownership. (This tool is in PackagesLocalDirectory/bin.) 
 7. Verify that the CDX data sync works. In Retail, go to **Download sessions**, you should see many applied sessions. If not, select job 9999 and run it.
-8. Install TypeScript version 2.2.2 from https://www.microsoft.com/enus/download/details.aspx?id=48593 
+8. Install TypeScript version 2.2.2 from [here](https://www.microsoft.com/enus/download/details.aspx?id=48593).  
 9. Do a full build of the Retail SDK from the command prompt.
  a. Open MSbuild command prompt for Visual Studio 2015 as Administrator. 
  b. Change the directory to where your RetailSdk is located on the local VM. 
  c. Type msbuild and click Enter. 
 
-10. Add the development/sample MPOS certificate to the local machine's trusted root certificate store (...\RetailSDK\BuildTools\ModernPOSAppxSigningCert-Contoso.pfx, password empty string). 
+10. Add the development/sample MPOS certificate to the local machine's trusted root certificate store ...\RetailSDK\BuildTools\ModernPOSAppxSigningCert-Contoso.pfx, password empty string. 
 11. Install MPOS or MPOSOffline, run ...\RetailSDK \References\YourCompany|Contoso.ModernPOSSetupOffline.exe. This is needed to deploy the ClientBroker files.
 12. In Visual Studio, open ModernPOS.sln (as admin), complete a full rebuild. 
 13. Click F5 to launch MPOS in the Debugger.
@@ -266,9 +265,8 @@ The process of deploying a new build and creating a new agent queue may take a c
  
 ### Prepare of the build definitions 
 
-After following the steps earlier in this topic, you should have a single build definition and 2 agent queues with an agent each. To build different branches, you need to configure the build definition differently, which means that you need to clone the build definition. However, before you do this, you must first add the Retail SDK into the build so that you do not have to do this twice. To edit the existing build definition (named “Unified Operations platform - Build Main”), follow the steps in this link to integrate the Retail SDK into the metadata build of the **Main** branch.
-
-https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retailsdk/integrate-retail-sdk-continuous-build  
+After following the steps earlier in this topic, you should have a single build definition and 2 agent queues with an agent each. To build different branches, you need to configure the build definition differently, which means that you need to clone the build definition. However, before you do this, you must first add the Retail SDK into the build so that you do not have to do this twice. To edit the existing build definition (named “Unified Operations platform - Build Main”), follow the steps in this [link](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retailsdk/integrate-retail-sdk-continuous-build) to integrate the Retail SDK into the metadata build of the **Main** branch.
+  
 
 When complete, clone the build definition and name it so that it is clear which branch it pertains to. (The clone feature is available on the VSTS portal.) Provide a new name, select the new Agent queue that you created, and change the following paths in any build steps or source mappings (change Main to ProdRel1). 
 
@@ -287,6 +285,6 @@ Here are some additional best practices or tricks:
    b. Set SkipSourcePackageGeneration to 1 
 2. Change the version of the Retail customization in each branch. It should be different in the Dev, Main, and ProdRel1 branches. Change either the Customization.settings or add a new global.props file under the RetailSdk\BuildTools folder. You can use any kind of numbering for the file name, for instance, you could number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.  
 3. For efficiency, shut down build or dev environments when they are not in use. 
-4.	If you are using cloud-hosted tier 1 development environments (you have administrative privileges) you can switch from IISExpress to IIS. This is a little more robust because we are avoiding the switching. Details can be found here. https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/ 
+4.	If you are using cloud-hosted tier 1 development environments (you have administrative privileges) you can switch from IISExpress to IIS. This is a little more robust because we are avoiding the switching. Details can be found [here](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/).  
 5.	For prototyping, a developer may want to change the Retail SDK right on a development VM. Always keep the original Retail SDK untouched and make a copy to work in temporarily. That way you have the opportunity to take the unchanged Retail Sdk later into your mirror branch, if needed.
 6.	Currently, it is a requirement that a build environment must be on the same platform and binary hotfix version as the target environment
