@@ -45,7 +45,7 @@ If you want to build your own POS extensions with an appx certificate (see below
 
 Because these decisions have financial impact, you can reduce some of the cost by using Tier 1, which is free, as a simple test environment (or golden config environment). This is not ideal, but should work for most projects.   
 
-Note: You have the option to shutdown cloud-hosted environments any time. This helps to reduce the hosting cost.  
+> Note: You have the option to shutdown cloud-hosted environments any time. This helps to reduce the hosting cost.  
 
 A hosting alternative is to download a VHD from LCS and host it locally on a server. From a development perspective, there is no difference regarding the capabilities of the VHD images compared with a hosted VM, except that LCS deployment are not supported on VHDs. Command line deployments are still supported.
 
