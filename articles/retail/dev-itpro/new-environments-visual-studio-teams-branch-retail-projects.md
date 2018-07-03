@@ -108,7 +108,7 @@ These individual steps are explained in more detail below.
 
 ### Deploy a build environment and empty Main VSTS branch 
 
-Use the LCS portal to deploy a new build environment. We recommend that you use a cloud-hosted environment, as there will be more options and capabilities if you have administrative rights. See the discussion about the different environment hosting models above. 
+Use the LCS portal to deploy a new build environment. We recommend that you use a cloud-hosted environment, as there will be more options and capabilities if you have administrative rights. See the table about the different environment hosting models above in the Development tier 1 environments section. 
 
 If you create a new project, you will also need to create a new Visual Studio Team Services (VSTS) project. To do this, in your VSTS account, click New project. 
 
