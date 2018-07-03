@@ -58,34 +58,67 @@ After taking new hotfixes, the results of a previous UAT become less meaningful.
 
 Another possible approach is to take all hotfixes frequently and only run part of all UATs.  The next time that new hotfixes are taken, a different part of UAT is run, in a circular fashion.  Before going live, a full UAT should be run. 
 
+## Change propagation process through branches and environments
 
-### Updating development environments 
+Just like the branching strategy is dictated by project, team or other constraints your project has the flexibility how the changes propagate through these branches. The process shown here can be used as an example. For some projects, it may be too simple. For others it may be too complex.  The important point is, a project should have a plan. Different persons in the team will have different responsibilities (dev, deployment, code merges, sign off, etc.) and the role ownership should be clearly decided.
+ 
+#### Steps 1 – 3: Obtaining and applying updates
 
-You should always deploy binary updates and platform updates using LCS’s package deployment. 
+The full details about steps 1 – 3 (taking updates) is something already documented here: https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/.  If you have the branches setup the same way as described above, you should be doing this work in the Dev branch.
 
-You can sync the metadata folder and do a full build and database sync, so you do not have to deploy Finance and Operations packages.  However, it is also possible to deploy Finance and OPerations packages via LCS.  
+#### Step 3.1 – 3.2: Keeping development environments up-to-date
 
-If new Retail changes have been checked in, especially if the Retail SDK has been updated from a new binary update (and code merged), use LCS’s package deployment to deploy the retail package. Continued development does not require a package deployment after that. 
+If we do not have a build environment for the Dev branch that is not a big problem. In fact, it is usually not needed. All we need to do is coordinate what packages should be deployed to keep the version correct. 
+
+Download binary updates and platform updates can simply be deployed via LCS’s package deployment.
+
+For the X++ code, developers simply sync the Metadata folder and do a full build and db sync.  
+
+If major new Retail changes have been checked in by others in the team (new files, configuration changes, new Retail sdk) it is not enough to just sync and build the new files. Remember, there are a few web applications installed on the developer machine that will not be simply updated with a compilation. The simplest way is to use LCS’s package deployment to deploy the retail package that can be produced on a MSBuild command prompt. Smaller changes to code do not require new package deployments to keep the dev environments in sync if the incremental changes are dropped to the install locations (more on that in the Retail Sdk section).
+ 
+#### Step 4: Moving changes from Dev to Main
+
+We separated the Dev and Main branches to have the opportunity to “leave some unwanted changes behind”. It is not required, but it’s good to have the option to do so.  The process of moving the code from Dev to Main is simple with Visual Studio. You can pick a range of changes, all or individual changes and merge them. If you want to keep it simple, have some sort of a code freeze in the Dev branch and when you are satisfied with the quality, merge all changes.  There is no reason to treat X++ different from the Retail Sdk. They live next together in each branch because they are dependent on each other.
+
+#### Steps 4.1 – 4.2: Updating test environments
+
+Use your build environment to produce officially built packages from the code in the Main branch. 
+ 
+When the build is finished, find the built packages, download and rename them according your naming conventions.
+ 
+Then, upload them to the LCS asset library. 
+ 
+Finally, deploy them to your test environments.  
+ 
+#### Step 4.3: Deploy to production environment
+
+When all necessary tests pass, we are ready to deploy the same packages to production. The packages must be marked as Release Candidates in the LCS Asset library after they had been deployed and validated in a tier 2 or higher environment. Then the deployment must be planned and submitted via the LCS environment page. 
+There are lots of things to consider when updating a production environment. Downtime, downtime mitigation, data migration, store updates, mass deployment and many more. It is very important to have a plan of all steps required for an update, as Retail projects usually require more than just a deployment. Some additional things to consider are listed below in the Tips section.
+It is also assumed that the go-live planning has started much earlier. For more details consult https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle. 
+
+#### Step 5: Merge the code from Main to ProdRel1
+
+Before any new feature work starts being added to the Main branch and right after we deployed to production, a snapshot should be taken and move dot the ProdRel1 branch. The steps are the same as in step 4. We do not need to pick and choose changes, we simply merge all changes up to the last code change set that was submitted to Main branch.
 
 ### Updating build environments 
 
-You should always deploy binary updates, and platform updates using LCS’s package deployment. 
+You should always deploy binary updates and platform updates using LCS’s package deployment. 
 
 Finance and Operations and Retail customization packages should not be deployed to a build environment. 
-
-### Updating Tier 2+ environments 
-
-All packages should be deployed using LCS’s package deployment. The order should be platform or binary with platform, then Finance and Operations, and then Retail. 
 
 ### Comparing LCS tile counts 
 
 Environments that should be at the same version level, should also have the same LCS tile counts.  If the tile counts are different, this may be caused by any of the following reasons: 
 
-- The same deployable packages have not been deployed/applied and therefore the versions are different. 
+- The same deployable packages have not been deployed/applied and therefore the versions are different. You can troubleshoot by inspecting and comparing the LCS deployment history. 
 - The scheduled task that collects the version information from an environment has not run yet. For development environments you can force the schedule task “LCSDiagnosticsCollector” to run. 
 - The build environment’s application update counts do not match because X++ packages are not deployed on them. Binary and platform counts should be correct. 
+- It may be on purpose. For example, if a developer works with the next version but the rest of the team is still working with a different release. Or, one development environment could have been kept on an older version in case a production hotfix needs to be developed (if the production environment uses older version as current development efforts). 
+ 
 
-It may be okay that some environments are on different versions. For example, if a developer works with the next version but the rest of the team is still working with a different release. Or, one development environment could have been kept on an older version in case a production hotfix needs to be developed (if the production environment uses older version as current development efforts). 
+ 
+Notice that after updating an environment, the tile counts for the available updates are now substantially lower than at the start.  Ideally, these counts match on all environments that work on the same release.
+
 
 
 ### Moving to a new version 
