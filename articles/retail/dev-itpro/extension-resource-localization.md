@@ -60,7 +60,7 @@ You can override the default strings in the POS by using the language text entri
 4. On the Action Pane, select **Save**.
 5. Go to **Retail &gt; Retail IT &gt; Distribution schedule**.
 6. Select the **Registers** (**1090**) job, and then select **Run now**.
-7. Deactivate and reactivate the POS to show the updated labels or messages.
+7. Once the data is pushed logoff and login again to Cloud POS or Modern POS to see the changed labels.
 
 ### Get the text ID for POS strings
 
