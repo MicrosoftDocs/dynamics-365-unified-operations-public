@@ -80,8 +80,8 @@ For its tests, Microsoft used the following setup for a small to medium-sized Fi
 | Orchestrator #3 |               | X        | X      | X          |
 | AOS #1...*n*    |               |          |        | X          |
 
-    > [!NOTE]
-    > For testing purposes, we used the Orchestrator machines for the ELK installation. It is not recommend to use the Orchestrator machines for ELK installations on production environments or critical Sandbox Environments, because it can take up critical resources from the Orchestration services. Separate machines should be used to host the ELK services.
+> [!NOTE]
+> For testing purposes, we used the Orchestrator machines for the ELK installation. Because it can take up critical resources from the Orchestration services, don't use the Orchestrator machines for ELK installations on production environments or critical Sandbox Environments. Instead, use separate machines to host the ELK services.
 
 ### Elasticsearch
 The installation of Elasticsearch is fairly straightforward. For its tests, Microsoft downloaded the [Microsoft Windows Installer (MSI) file](https://www.elastic.co/downloads/elasticsearch) onto the Orchestrator #1 and Orchestrator #2 nodes. Most of the default settings in the installer can be left as is. This section describes the settings that Microsoft changed.
