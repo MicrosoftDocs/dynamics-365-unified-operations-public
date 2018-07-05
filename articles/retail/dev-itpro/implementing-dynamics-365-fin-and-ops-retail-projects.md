@@ -10,4 +10,4 @@ The information focuses on Dynamics 365 F&O implementations with Retail aspects.
 
 ### [Code and environment update procedures for Retail projects](../../updating-environments.md)
 
-### [Testing and performance] (../../retail-implementation-testing-performance.md)
+### [Testing and performance](../../retail-implementation-testing-performance.md)
