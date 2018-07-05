@@ -199,7 +199,7 @@ The **while** keyword supports looping in both X++ and C#.
     static void JobRs002a_LoopsWhile(Args _args)
     {
         int nLoops = 1;
-        while (nLoops &lt;= 88)
+        while (nLoops <= 88)
         {
             print nLoops;
             pause;
@@ -279,7 +279,7 @@ In X++ the counter variable cannot be declared as part of the **for** statement.
     static void JobRs002a_LoopsWhileFor(Args _args)
     {
         int ii; // The counter.
-        for (ii=1; ii &lt; 5; ii++)
+        for (ii=1; ii <> 5; ii++)
         {
             print ii;
             pause;
