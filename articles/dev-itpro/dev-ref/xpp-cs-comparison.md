@@ -49,8 +49,8 @@ The following sections describe some basic similarities and differences between 
 The following X++ features are the same for C#:
 -   Single line (`//`) and multi-line (/\* \*/) comments.
 -   `==` (equal) operator for determining whether two values are equal.
--   != (not equal to) operator for determining whether two values are not equivalent.
--   + (plus sign) operator for string concatenation.
+-   `!=` (not equal to) operator for determining whether two values are not equivalent.
+-   `+` (plus sign) operator for string concatenation.
 
 ### Differences
 
