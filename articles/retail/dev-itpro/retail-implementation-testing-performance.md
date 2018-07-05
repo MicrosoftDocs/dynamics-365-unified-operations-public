@@ -49,3 +49,9 @@ Every project is different so it is not easy to give a general answer for what e
 Each environment usually has a different hardware capability. However, performance issues can usually be reproduced similarly on different environments as long as the code and data is similar. We do not reccomend using a production environment for performance testing. A good practice is to use the same data in development, test and production. In that case, the development environment can be used to work on and verify a fix. Many performance-critical code paths are data dependent, the same issues may not be seen on a Contoso sample database. 
 
 When finished with a performance fix, the fix should be verified to improve the issue in a test environment (after a deployment of an officially built package) before the deployable package could be marked a release package in order to be able to “go to production”.
+
+## Additional Resources
+### [New environments, Visual Studio Team Services, and branch setup for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
+
+### [Code and environment update procedures for Retail projects](./updating-environments.md)
+
