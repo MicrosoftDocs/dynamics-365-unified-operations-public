@@ -296,3 +296,9 @@ Here are some additional best practices or tricks:
 4.	If you are using cloud-hosted tier 1 development environments (you have administrative privileges) you can switch from IISExpress to IIS. This is a little more robust because we are avoiding the switching. Details can be found [here](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/).  
 5.	For prototyping, a developer may want to change the Retail SDK right on a development VM. Always keep the original Retail SDK untouched and make a copy to work in temporarily. That way you have the opportunity to take the unchanged Retail Sdk later into your mirror branch, if needed.
 6.	Currently, it is a requirement that a build environment must be on the same platform and binary hotfix version as the target environment
+
+## Additional Resources 
+
+### [Code and environment update procedures for Retail projects](./updating-environments.md)
+
+### [Testing and performance](./retail-implementation-testing-performance.md)
