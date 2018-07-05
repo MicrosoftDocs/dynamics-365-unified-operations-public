@@ -2,7 +2,7 @@
 
 An environment can be updated by either updating its data or its code.  
 
-There are multiple ways to update the data. For good examples about how to get data into an environment, see [Data Entities and Data Packages](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dataentities/data-entities-data-packages).  
+There are multiple ways to update the data. For good examples about how to get data into an environment, see [Data Entities and Data Packages](../../dev-itpro/dataentities/data-entities-data-packages).  
 
 Moving the entire database should also be considered when updating an environment. It’s a quick and easy way to duplicate the data from one environment to another. 
 
@@ -20,7 +20,7 @@ Application updates or hotfixes delivered in X++ source code. Therefore, they ar
 
 Note that some updates require both an application and a binary update. See the next section for hotfix recommendations.  
 
-Third-party packages are similar to application packages but developed by others. More information about ISV package usage can be found [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/manage-runtime-packages).  
+Third-party packages are similar to application packages but developed by others. More information about ISV package usage can be found [here](../../dev-itpro/dev-tools/manage-runtime-packages).  
 
 The two main ways to update an environment are more detailed below.
 
@@ -106,7 +106,7 @@ When all necessary tests pass, we are ready to deploy the same packages to produ
 
 There are lots of things to consider when updating a production environment. Downtime, downtime mitigation, data migration, store updates, mass deployment and many more. It is very important to have a plan of all steps required for an update, as Retail projects usually require more than just a deployment. Some additional things to consider are listed below in the Tips section.
 
-It is also assumed that the go-live planning has started much earlier. For more details consult [Implementation Lifecycle](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle). 
+It is also assumed that the go-live planning has started much earlier. For more details consult [Implementation Lifecycle](../../fin-and-ops/imp-lifecycle/implementation-lifecycle). 
 
 #### Step 5: Merge the code from Main to ProdRel1
 
@@ -137,7 +137,7 @@ Notice that after updating an environment, the tile counts for the available upd
 
 ### Moving to a new version 
 
-If you want to upgrade to a new version (such as 7.2 to 7.3, or 7.3 to 8.0), you must deploy a new environment and target the new version.  If applicable, you also need to run a code upgrade and a database upgrade. More details can be found in [Code Migration Home Page](https://docs.microsoft.com/en-us/dynamics365/unifiedoperations/dev-itpro/migration-upgrade/code-migration-home-page). 
+If you want to upgrade to a new version (such as 7.2 to 7.3, or 7.3 to 8.0), you must deploy a new environment and target the new version.  If applicable, you also need to run a code upgrade and a database upgrade. More details can be found in [Code Migration Home Page](../../dev-itpro/migration-upgrade/code-migration-home-page). 
 
 ### Tips
 -	Decide on a good package naming convention (for names in LCS asset library and zip packages when downloaded). The reason is that it will be easier to figure out what package you have deployed and where it came from. Avoid spaces in package names. Here is an example for a convention:
