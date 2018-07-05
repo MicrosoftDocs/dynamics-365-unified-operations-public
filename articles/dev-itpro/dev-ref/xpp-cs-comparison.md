@@ -71,8 +71,8 @@ This section contains two simple code samples. One sample is written in X++, and
 -   /\* \*/ multi-line comment
 -   `if` statement
 -   `==` operator
--   != operator
--   + operator to concatenate strings
+-   `!=` operator
+-   `+` operator to concatenate strings
 -   Global::info for message output, with and without the Global:: prefix
 -   Global::error for message output
 -   The use of single and double quotation characters (' and ") as string delimiters.
