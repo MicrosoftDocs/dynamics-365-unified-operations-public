@@ -6,8 +6,8 @@ Some of this information is captured in blogs and wiki pages at other locations 
 
 The information focuses on Dynamics 365 F&O implementations with Retail aspects.
 
-### [New environments, Visual Studio Team Services, and branch setup for Retail projects](../new-environments-visual-studio-teams-branch-retail-projects.md)
+### [New environments, Visual Studio Team Services, and branch setup for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
-### [Code and environment update procedures for Retail projects](../updating-environments.md)
+### [Code and environment update procedures for Retail projects](./updating-environments.md)
 
-### [Testing and performance](../retail-implementation-testing-performance.md)
+### [Testing and performance](./retail-implementation-testing-performance.md)
