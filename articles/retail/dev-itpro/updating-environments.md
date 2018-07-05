@@ -163,3 +163,8 @@ If you want to upgrade to a new version (such as 7.2 to 7.3, or 7.3 to 8.0), you
     -	Are the right experts available during the deployment (partner, ISV, customer, etc.)
     -	And more…
 
+## Additional Resources
+
+### [New environments, Visual Studio Team Services, and branch setup for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
+
+### [Testing and performance](./retail-implementation-testing-performance.md)
