@@ -80,7 +80,7 @@ For its tests, Microsoft used the following setup for a small to medium-sized Fi
 | Orchestrator #3 |               | X        | X      | X          |
 | AOS #1...*n*    |               |          |        | X          |
 
-> [!NOTE]
+> [!IMPORTANT]
 > For testing purposes, Microsoft used the Orchestrator machines for the ELK installation. Because it can take up critical resources from the Orchestration services, don't use the Orchestrator machines for ELK installations on production environments or critical Sandbox Environments. Instead, use separate machines to host the ELK services.
 
 ### Elasticsearch
