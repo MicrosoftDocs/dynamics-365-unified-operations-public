@@ -5,7 +5,7 @@ title: Apply updates to an on-premises deployment
 description: This topic explains how to apply updates to an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/01/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -76,32 +76,38 @@ The following steps can be used to apply X++, All Binary, or Platform bianry upd
 1. In the LCS Asset library, upload the deployable package that was generated in the "Prerequisites" section of this topic to the **Software deployable packages** tab.
 2. In LCS, open the on-premises implementation project, and then open the **Environment details** page of the environment to update.
 3. Under **Maintain**, select **Apply updates**. A slider shows the updates that were uploaded to the Asset library. Note that only packages that are marked as **Valid** in the Asset library appear.
-4. Select the update, and then click **Prepare**. Clicking on **Prepare** will prepare your on-premises environment for servicing. 
+
+**If you are on local agent version 2.1.0 and higher, complete the following steps.**
+1. Select the update, and then click **Prepare**. Clicking on **Prepare** will prepare your on-premises environment for servicing. 
 
 >[!NOTE]
 > During preparation, the environment state will be **Deployed** but the Deployment status field will show the progress of Preparation. Steps such formatting the package and downloading the package are executed during preparation. The environment is not directly touched during preparation and hence there is no downtime during the preparation phase. Users can continue to use the system during preparation. 
 
-5. Once preparation is complete, you will see **Abort** and **Update Environment** buttons. To start applying the update, click **Update Environment**. If preparation fails, see the "Resolve a failed update application" section later in this topic.
-6. In the confirmation message, select **Yes**. The servicing operation has started on this environment. This is the start of the downtime on your environment. 
-7. The environment state is changed from **Deployed** to **Deploying**. 
-8. After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see the "Resolve a failed update application" section later in this topic.
-9. Open the **History** and **Environment details** pages to view the operations that were performed on the environment. You can also view a record of major actions that were performed on the environment, such as deployments, servicing, and rollbacks.
+2. After the preparation is complete, you will see **Abort** and **Update Environment** buttons. To start applying the update, click **Update Environment**. If preparation fails, see the "Resolve a failed update application" section later in this topic.
+3. In the confirmation message, select **Yes**. The servicing operation has started on this environment. This is the start of the downtime on your environment. 
+4. The environment state is changed from **Deployed** to **Deploying**. 
+5. After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see the "Resolve a failed update application" section later in this topic.
+6. Open the **History** and **Environment details** pages to view the operations that were performed on the environment. You can also view a record of major actions that were performed on the environment, such as deployments, servicing, and rollbacks.
+
+**If you are on local agent version lower than 2.1.0, complete the following steps.**
+1. Select the update, and then click **Apply**.
+2. In the confirmation message, select **Yes**. The servicing operation has started on this environment. This is the start of the downtime on your environment. 
+3. Environment state changes from **Deployed** to **Preparing**. 
+
+>[!NOTE]
+> During preparation, steps such formatting the package and downloading the package are executed during preparation. The environment is not directly touched during preparation and hence there is no downtime during the preparation phase. Users can continue to use the system during preparation. However, we recommend that the downtime starts when the environment enters the Preparing state.
+ 
+4. After preparation is complete, the environment state is changed from **Preparing** to **Deploying**. 
+5. After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see the "Resolve a failed update application" section later in this topic.
+6. Open the **History** and **Environment details** pages to view the operations that were performed on the environment. You can also view a record of major actions that were performed on the environment, such as deployments, servicing, and rollbacks.
 
 ### Update a production environment
 Before you update a production environment, you must successfully complete the package application update on a sandbox environment.
 
 1. In the project for the sandbox environment that you applied the package to, open the Asset library, and then, on the **Software deployable packages** tab, select the package, and mark it as a **Release candidate**.
 2. On the **Environment details** page, under **Maintain**, select **Apply updates**. In the dialog box, only packages that are marked as a **Release candidate** are shown.
-3. Select the update, and then click **Prepare**. Clicking on **Prepare** will prepare your on-premises environment for servicing. 
-
->[!NOTE]
-> During preparation, the environment state will be **Deployed** but the Deployment status field will show the progress of Preparation. Steps such formatting the package and downloading the package are executed during preparation. The environment is not directly touched during preparation and hence there is no downtime during the preparation phase. Users can continue to use the system during preparation. 
-
-4. Once preparation is complete, you will see **Abort** and **Update Environment** buttons. To start applying the update, click **Update Environment**. If preparation fails, see the "Resolve a failed update application" section later in this topic.
-5. In the confirmation message, select **Yes**. The servicing operation has started on this environment. This is the start of the downtime on your environment. 
-6. The environment state is changed from **Deployed** to **Deploying**. 
-7. After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see the "Resolve a failed update application" section later in this topic.
-8. Open the **History** and **Environment details** pages to view the operations that were performed on the environment. You can also view a record of major actions that were performed on the environment, such as deployments, servicing, and rollbacks.
+3. Select the Release candidate package to be applied to the Production environment. 
+4. The rest of the Update flow is the same as that of a sandbox environment. Your update experience will differ based on the version of the local agent running on your environment. We recommend that you always run with the latest version.
 
 ## Resolve a failed update application
 When preparation fails, the envrironment state is **Deployed**. When the application of an update fails, the environment state is **Failed**. The first step is to determine why there is a failure. The location of the logs varies, depending on the stage where the failure occurred:
