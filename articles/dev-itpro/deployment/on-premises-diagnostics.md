@@ -5,7 +5,7 @@ title: On-premises diagnostics
 description: This topic provides information about how to expose the telemetry data for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations. 
 author: sarvanisathish
 manager: AnnBe
-ms.date: 06/20/2018
+ms.date: 07/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -81,7 +81,7 @@ For its tests, Microsoft used the following setup for a small to medium-sized Fi
 | AOS #1...*n*    |               |          |        | X          |
 
 > [!NOTE]
-> For testing purposes, we used the Orchestrator machines for the ELK installation. Because it can take up critical resources from the Orchestration services, don't use the Orchestrator machines for ELK installations on production environments or critical Sandbox Environments. Instead, use separate machines to host the ELK services.
+> For testing purposes, Microsoft used the Orchestrator machines for the ELK installation. Because it can take up critical resources from the Orchestration services, don't use the Orchestrator machines for ELK installations on production environments or critical Sandbox Environments. Instead, use separate machines to host the ELK services.
 
 ### Elasticsearch
 The installation of Elasticsearch is fairly straightforward. For its tests, Microsoft downloaded the [Microsoft Windows Installer (MSI) file](https://www.elastic.co/downloads/elasticsearch) onto the Orchestrator #1 and Orchestrator #2 nodes. Most of the default settings in the installer can be left as is. This section describes the settings that Microsoft changed.
@@ -135,7 +135,7 @@ To help guarantee that Logstash runs on startup, we used the Non-Sucking Service
 
 In the tests that Microsoft performed, NSSM had trouble restarting the installed services. Because NSSM wasn't 100-percent reliable for Logstash and Kibana, the service was treated as an OS startup service and little else.
 
-Microsoft created a configuration file for Logstash and [put it in C:\\ELK\\Logstash\\6.2.4\\config](https://aka.ms/ConfigFilesOnPremises). This file performs useful transformations on Finance and Operations telemetry.
+Microsoft created a configuration file for Logstash and put it in [C:\\ELK\\Logstash\\6.2.4\\config](https://aka.ms/ConfigFilesOnPremises). This file performs useful transformations on Finance and Operations telemetry.
 
 To make the configuration work for your setup, you must change the **hosts** fields in the **output** section so that they point to the Elasticsearch nodes in your cluster. For example, change **hosts** to **\["ORCH1:9200", "ORCH2:9200"\]**.
 
@@ -193,9 +193,9 @@ The following sample queries can help you start probing the telemetry data. If y
 #### Thirty-day data retention
 To keep its hard disks free from stale data, Microsoft used Curator v5.5 to clean up indexes that were older than 30 days.
 
-Microsoft downloaded Curator to one of the Orchestrator nodes at C:\\ELK\\Curator. Microsoft then used the configuration file that was [put in C:\\ELK\\Curator](https://aka.ms/ConfigFilesOnPremises) to connect Curator to its Elasticsearch cluster.
+Microsoft downloaded Curator to one of the Orchestrator nodes at C:\\ELK\\Curator. Microsoft then used the configuration file that was put in [C:\\ELK\\Curator](https://aka.ms/ConfigFilesOnPremises) to connect Curator to its Elasticsearch cluster.
 
-Curator runs actions, and Microsoft created an action to clean up 30-day-old indexes that were [put in C:\\ELK\\Curator](https://aka.ms/ConfigFilesOnPremises).
+Curator runs actions, and Microsoft created an action to clean up 30-day-old indexes that were put in [C:\\ELK\\Curator](https://aka.ms/ConfigFilesOnPremises).
 
 Microsoft created a basic task in Windows Task Scheduler. This task has a weekly trigger on Saturday and Sunday, and the trigger has the following settings to start a program:
 
