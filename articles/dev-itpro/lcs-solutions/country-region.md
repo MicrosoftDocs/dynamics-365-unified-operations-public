@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations includes functionality for the country/regions documented in the [International product availability guide](http://download.microsoft.com/documents/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. 
+Microsoft Dynamics 365 for Finance and Operations includes functionality for the country/regions documented in the [Product localization and translation availability guide](https://aka.ms/ax-availabilityguide). This functionality is enabled based on the primary address of the active legal entity. 
 
 This topic includes lists of resources that can help you learn more about country/region-specific solutions, updates, alerts and functionality. 
 

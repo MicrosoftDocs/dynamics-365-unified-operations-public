@@ -62,7 +62,7 @@ Application and Platform releases expire at the end of the month of their softwa
 | Release          |Build number         | Availability          | Expiration | End of life  |
 |------------------|----------------------|------------------|--------------|---------------|
 |  Platform update 15 | 7.0.4841.XXXX  | June 2018  | September 2018 | December 2027     |
-|  Platform Update 12 | 7.0.4709.XXXX  | March 2018  | June 2018 | December 2027     |
+|  Platform Update 12 | 7.0.4709.41182  | March 2018  | June 2018 | December 2027     |
 |  Platform Update 11 | 7.0.4679.35176 | October 2017 | April 2018 | December 2027     |
 |  Platform Update 10 | 7.0.4641.16233 | August 2017 | April 2018 | December 2027     |
 |  Platform Update 9 | 7.0.4612.35162 | August 2017 | April 2018 | December 2027     |

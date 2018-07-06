@@ -439,6 +439,8 @@
       href: install-pos-layout-designer.md
     - name: Configure MPOS for offline mode
       href: dev-itpro/retail-modern-pos-offline.md
+    - name: Extend POS Dual display view
+      href: dev-itpro/pos-dual-display-extension.md
     - name: MPOS and Cloud POS trigger extensibility
       href: dev-itpro/modern-pos-trigger-extensibility.md
     - name: Add a custom control to a POS view

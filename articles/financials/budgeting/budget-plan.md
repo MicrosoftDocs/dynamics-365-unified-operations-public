@@ -2,10 +2,10 @@
 # required metadata
 
 title: Budget planning
-description: The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel 
-author: twheeloc
+description: The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration. 
+author: ShylaThompson
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,10 +14,9 @@ ms.technology:
 # optional metadata
 
 ms.search.form: BudgetPlanningConfiguration
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10763
@@ -34,7 +33,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel 
+The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks:
+- Creating organizational hierarchy for budget planning and configuring user security
+- Defining budget plan scenarios, budget plan columns, layouts and Excel templates
+- Creating and activating budget planning process
+- Creating budget plan document by pulling in actuals from General ledger
+- Using allocations to adjust budget plan document data
+- Editing budget plan document data in Excel 
 
 Prerequisites 
 ------------------
@@ -108,8 +113,6 @@ Budget planning uses special security policies to configure access to budget pla
 2.5. Select “Grant access to specific organizations”. Pick Organizational hierarchy created in the first step. Pick Finance node and click Grant with children button 
 
 ***Important!*** *Make sure you are in DEMF legal entity context when performing this task, as Organizational security is applied per legal entity* 
-
-[![Grant access](./media/screenshot14.png)](./media/screenshot14.png)
 
 ### Task 3: Create scenarios
 3.1. Navigate to Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration. In the Scenarios page note the scenarios we are going to use further in this lab: Previous year actuals and Budgeted. 

@@ -80,7 +80,7 @@ This section of the tutorial describes the Fleet management projects and solutio
 
 [![SolutionExplorer\_IntroVisualStudio](./media/solutionexplorer_introvisualstudio.png)](./media/solutionexplorer_introvisualstudio.png)
 
-1.  In **Solution Explorer**, right-click **Fleet Management Migrated**, and then click **Properties&lt;/strong.**
+1.  In **Solution Explorer**, right-click **Fleet Management Migrated**, and then click **Properties**.
 2.  In the **Property Pages** dialog box, review the listed properties. In the **Startup Object** field, you can see the name of the first form that runs when you run or debug your project. You can see that the **Startup Object type** field is set to **Form**. You can also view the model name and its layer. A project always belongs to one model.
 3.  Don't change anything in this dialog box right now. Click **Cancel** to close it.
 

@@ -89,9 +89,6 @@ This error isn't a root error. It indicates that the status of each node isn't r
 
 Use Event Viewer on the machines related to the error message to view the latest activity.
 
-#### Error: "ExtractInstallerService failed to extract" C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll.
-If you receive this error, download the latest version of [Service Fabric](http://go.microsoft.com/fwlink/?LinkId=730690). Note that the the username and path in the error will change according to your environment.
-
 #### AXSFType 
 For AXSFType (AOS), if a status of **InBuild** is shown, review the DB Sync status and other events from Application Object Server (AOS) machines.
 
@@ -99,6 +96,9 @@ To diagnose errors, use Event Viewer to review the following event logs:
 
 - **Applications and Services Logs** \> **Microsoft** \> **Dynamics** \> **AX-DatabaseSynchronize**
 - **Custom Views** \> **Administrative Events**
+
+#### Error: "ExtractInstallerService failed to extract" C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll.
+If you receive this error, download the latest version of [Service Fabric](http://go.microsoft.com/fwlink/?LinkId=730690). Note that the the username and path in the error will change according to your environment.
 
 #### Service Fabric logs
 You can find additional details about Azure Service Fabric applications in the log files at C:\\ProgramData\\SF\\\<OrchestratorMachineName\>\\Fabric\\work\\Applications\\LocalAgentType\_App\<N\>\\log.
@@ -412,7 +412,7 @@ Get-ServiceFabricRegisteredClusterCodeVersion
 #Enter latest version from above for CodePackageVersion.
 #Note UpgradeReplicaSetCheckTimeout is to skip over PreUpgradeSafetyCheck for SSRS and MR, see <https://github.com/Azure/service-fabric-issues/issues/595>
 #May also want to use -UpgradeDomainTimeoutSec 600 -UpgradeTimeoutSec 1800, <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-parameters>
-Start-ServiSceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monitored -FailureAction Rollback -UpgradeReplicaSetCheckTimeout 30
+Start-ServiceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monitored -FailureAction Rollback -UpgradeReplicaSetCheckTimeout 30
 
 #Get upgrade status
 Get-ServiceFabricClusterUpgrade
