@@ -1,84 +1,84 @@
 - name: Welcome to Dynamics 365 for Talent
   href: index.md
-- name: Getting started
-  href: talent-get-started.md
-  items:
-  - name: System requirements and update policy
-    href: talent-versions-update-policy.md
-  - name: Provision Microsoft Dynamics 365 for Talent
-    href: provisioning-talent.md
-  - name: Remove a Talent environment
-    href: remove-talent-environment.md
-  - name: Provision Microsoft Dynamics 365 for Talent Modular Apps
-    href: modular-app-tech-faq.md
-  - name: Extend Talent functionality
-    href: extend-talent-functionality.md
-  - name: Access preview features in Dynamics 365 for Talent
-    href: access-preview-feature.md
-- name: Develop a human resources strategy
-  href: departments-jobs-positions.md
-  items:
-  - name: Set up job components
-    href: create-job.md
-  - name: Create a department and associate it with the department hierarchy
-    href: create-department-add-department-hierarchy.md
-  - name: Set up HR parameters across legal entities
-    href: set-up-hr-parameters-across-legal-entities.md
-  - name: Set up company-specific HR parameters
-    href: set-up-company-specific-hr-parameters.md
-  - name: Personnel actions FAQ
-    href: personnel-actions-faq.md
-  - name: Formalize business processes
-    href: formalize-business-processes.md
-  - name: Use workflow to manage employee information
-    href: workflow-manage-employee-information.md
-  - name: Leave and absence overview
-    href: leave-absence-overview.md
-- name: Staffing your organization
-  items:
-  - name: Attract overview
-    href: attract-overview.md
-  - name: Onboard overview
-    href: create-onboarding-experience.md
-- name: Motivate employees
-  items:
-  - name: Compensation plans
-    href: compensation-plans.md
-  - name: Create fixed compensation plans
-    href: create-fixed-compensation-plans.md
-  - name: Create variable compensation plans
-    href: create-variable-compensation-plans.md
-  - name: Process compensation
-    href: process-compensation.md
-- name: Develop and train employees
-  items:
-  - name: Performance management overview
-    href: performance-management-overview.md
-  - name: Align workforce skills with business needs
-    href: skills.md
-  - name: Set up training courses
-    href: courses.md
-- name: Create and maintain benefits
-  href: manage-benefit-program.md
-- name: Benefit eligibility policies
-  href: benefit-eligibility-policies.md
-  items:
-  - name: Manage items lent to workers
-    href: loan-items.md
-- name: Gather information using questionnaires
-  href: questionnaires.md
-  items:
-  - name: Design a questionnaire
-    href: design-questionnaires.md
-  - name: Distribute and complete a questionnaire
-    href: distribute-questionnaires.md
-  - name: Evaluate the results of a questionnaire
-    href: evaluate-questionnaire-results.md
-- name: Workplace safety and compliance (United States)
-  items:
-  - name: Respond to a request for personal data using Talent
-    href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/talent/toc.json
-  - name: Form I-9 employment verification
-    href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json
-  - name: Comply with the ADA
-    href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json
+  - name: Getting started
+    href: talent-get-started.md
+    items:
+    - name: System requirements and update policy
+      href: talent-versions-update-policy.md
+    - name: Provision Microsoft Dynamics 365 for Talent
+      href: provisioning-talent.md
+    - name: Remove a Talent environment
+      href: remove-talent-environment.md
+    - name: Provision Microsoft Dynamics 365 for Talent Modular Apps
+      href: modular-app-tech-faq.md
+    - name: Extend Talent functionality
+      href: extend-talent-functionality.md
+    - name: Access preview features in Dynamics 365 for Talent
+      href: access-preview-feature.md
+  - name: Develop a human resources strategy
+    href: departments-jobs-positions.md
+    items:
+    - name: Set up job components
+      href: create-job.md
+    - name: Create a department and associate it with the department hierarchy
+      href: create-department-add-department-hierarchy.md
+    - name: Set up HR parameters across legal entities
+      href: set-up-hr-parameters-across-legal-entities.md
+    - name: Set up company-specific HR parameters
+      href: set-up-company-specific-hr-parameters.md
+    - name: Personnel actions FAQ
+      href: personnel-actions-faq.md
+    - name: Formalize business processes
+      href: formalize-business-processes.md
+    - name: Use workflow to manage employee information
+      href: workflow-manage-employee-information.md
+    - name: Leave and absence overview
+      href: leave-absence-overview.md
+  - name: Staff your organization
+    items:
+    - name: Attract overview
+      href: attract-overview.md
+    - name: Onboard overview
+      href: create-onboarding-experience.md
+  - name: Motivate employees
+    items:
+    - name: Compensation plans
+      href: compensation-plans.md
+    - name: Create fixed compensation plans
+      href: create-fixed-compensation-plans.md
+    - name: Create variable compensation plans
+      href: create-variable-compensation-plans.md
+    - name: Process compensation
+      href: process-compensation.md
+  - name: Develop and train employees
+    items:
+    - name: Performance management overview
+      href: performance-management-overview.md
+    - name: Align workforce skills with business needs
+      href: skills.md
+    - name: Set up training courses
+      href: courses.md
+  - name: Create and maintain benefits
+    href: manage-benefit-program.md
+  - name: Benefit eligibility policies
+    href: benefit-eligibility-policies.md
+    items:
+    - name: Manage items lent to workers
+      href: loan-items.md
+  - name: Gather information using questionnaires
+    href: questionnaires.md
+    items:
+    - name: Design a questionnaire
+      href: design-questionnaires.md
+    - name: Distribute and complete a questionnaire
+      href: distribute-questionnaires.md
+    - name: Evaluate the results of a questionnaire
+      href: evaluate-questionnaire-results.md
+  - name: Workplace safety and compliance (United States)
+    items:
+    - name: Respond to a request for personal data using Talent
+      href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/talent/toc.json
+    - name: Form I-9 employment verification
+      href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json
+    - name: Comply with the ADA
+      href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json
