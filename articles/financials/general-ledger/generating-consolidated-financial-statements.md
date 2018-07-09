@@ -1,4 +1,39 @@
-# Generating consolidated financial statements
+---
+# required metadata
+
+title: Generate consolidated financial statements
+description: This topic walks you through generating consolidated financial statements in Microsoft Dynamics 365 for Finance and Operations.
+author: aprilolson
+manager: AnnBe
+ms.date: 07/09/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+# ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: aolson
+ms.search.validFrom: 2018-5-31
+ms.dyn365.ops.version: 8.0.1
+
+---
+
+# Generate consolidated financial statements
+
+
+[!include [banner](../includes/banner.md)]
+
 This section covers the various scenarios where you might generate consolidated financial statements.
 
 ## Single-level and multilevel consolidations across legal entities
@@ -8,7 +43,8 @@ Here are the high-level steps to consolidate by using a reporting tree.
 2. Create a column definition that includes all the columns that are required for the report that you’re creating.
 3. Create a reporting tree that includes a reporting node for each company that you’re using on consolidated reports.
 
-**Tip:** For more information about how to create and manage row definitions, column definitions, and reporting trees, see Create and manage report components.
+> [!TIP]
+> For more information about how to create and manage row definitions, column definitions, and reporting trees, see Create and manage report components.
 
 The following illustration shows how you can use a reporting tree definition in Financial reporting to identify each company that you will consolidate.
 
@@ -51,7 +87,8 @@ The following illustration shows a column definition for a consolidated income s
 
 When the report is generated, the elimination amounts are calculated in columns F, G, and H, and they are totaled in column I. Column J shows the consolidated amounts, excluding eliminations for the USMF, USRT, and DEMF companies.
 
-**Tip:** Create a second report that shows only the elimination entries, and use it in a report group that includes your consolidated report. In this way, you have all the necessary information to create any journal entries that are required.
+> [!TIP]
+> Create a second report that shows only the elimination entries, and use it in a report group that includes your consolidated report. In this way, you have all the necessary information to create any journal entries that are required.
 
 The following illustration shows the consolidated report.
 
@@ -65,7 +102,8 @@ A company might own only a percentage of another company. In this situation, whe
 ### Using the reporting tree definition
 In the reporting tree definition, enter the percentage of ownership in the **Rollup %** column (column H), as shown in the following illustration. When the report is generated, this percentage will be used to calculate the consolidated amount. In this example, Contoso owns only 80 percent of Contoso Germany. You can enter either **80** or **.8** in the **Rollup %** column, and 80 percent will be rolled up to the consolidated level.
 
-**Note:** You can apply this ownership percentage to any reporting unit, not just at the company level. This capability is helpful when ownership is a business unit level or division level, not just a legal entity level.
+> [!NOTE]
+> You can apply this ownership percentage to any reporting unit, not just at the company level. This capability is helpful when ownership is a business unit level or division level, not just a legal entity level.
 
 ![Using reporting tree definition percentage](./media/Using-reporting%20tree-definition-percentage.png "Using reporting tree definition percentage")
  
@@ -90,7 +128,8 @@ Here are the high-level steps to consolidate when different charts of accounts e
 Multiple links to financial dimensions can be added to each row in the row definition for each unique company’s chart of accounts.
 In the following illustration, the USMF company uses the set of accounts in the first **Link to Financial Dimensions** column (column J), and the DEMF company uses the accounts in the second **Link to Financial Dimensions** column (column K).
 
-**Tip:** For more information about the **Link to Financial Dimensions** cell, see Specify Link to Financial Dimensions cell.
+> [!TIP]
+> For more information about the **Link to Financial Dimensions** cell, see Specify Link to Financial Dimensions cell.
 
 ![Set accounts first link to financial dimensions](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Set accounts first link to financial dimensions")
  
@@ -98,7 +137,8 @@ You can use a reporting tree to define which link to financial dimensions from t
 
 ![Link financial dimensions row definition used](./media/link-financial-dimensions-row-definition-used.png "Link financial dimensions row definition used")
  
-**Tip:** When you create links to financial dimensions, use the description to identify the companies that each link applies to. In this way, you can more easily select the correct company when you create a reporting tree.
+> [!TIP]
+> When you create links to financial dimensions, use the description to identify the companies that each link applies to. In this way, you can more easily select the correct company when you create a reporting tree.
 In the column definition, the **Reporting Unit** field lets you restrict each column to a unit of the reporting tree, so that you can view the data side by side. If you don’t indicate a specific company for a column, consolidated data for all companies will be shown.
 
 ## Different fiscal calendars across multiple legal entities
@@ -107,7 +147,8 @@ There are two ways to consolidate when different fiscal periods exist across leg
 - Create a column definition, and use the period and year to map the appropriate periods for each company.
 - At **Settings** > **Other** > **Additional Options**, select whether to consolidate by using the period end date or the period number.
 
-**Tip:** When you’re designing the column definition for multiple companies that have different fiscal periods, it’s important that you consider which company will be assigned to the **Company name** field in the report definition. That company’s fiscal calendar will be used as the base fiscal calendar for the report definition.
+> [!TIP]
+> When you’re designing the column definition for multiple companies that have different fiscal periods, it’s important that you consider which company will be assigned to the **Company name** field in the report definition. That company’s fiscal calendar will be used as the base fiscal calendar for the report definition.
 For example, the following table shows the fiscal period setup for the USMF and INMF companies. For consolidated reports, you want to use the fiscal calendar that USMF uses. The “Mapping” column shows the equivalent period and year for each company if a report is generated for June 30, 2018.
 
 | Company   |               Fiscal year                    |          Mapping             |  
@@ -182,6 +223,6 @@ To get correctly translated amounts when currencies are used, Financial reportin
 
 ## Additional resources
 
-To see the parent topic that provides more information on consolidation and currency translations, please see [Financial consolidations and currency translation](./financial-consolidations-and-currency-translation.md).
+To see the parent topic that provides more information on consolidation and currency translations, please see [Financial consolidations and currency translation](./financial-consolidations-currency-translation.md).
 
 To find more information about how to enter details of consolidations online, please see [Consolidate Online](./consolidate-online.md).
