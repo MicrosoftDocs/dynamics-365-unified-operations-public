@@ -629,6 +629,8 @@
         href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
       - name: Letters of credit
         href: ../financials/cash-bank-management/letters-of-credit.md
+      - name: Create a bank facility agreement for a letter of credit
+        href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
       - name: Letters of credit and import collections
         href: ../financials/cash-bank-management/letters-of-credit-import-collections.md
       - name: Letters of guarantee
@@ -645,8 +647,6 @@
         href: ../financials/accounts-receivable/automatic-settlement-prioritization.md
       - name: Cash and bank management tasks
         items:
-        - name: Create a bank facility agreement for a letter of credit
-          href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
         - name: Create a bank facility agreement for the letter of guarantee
           href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
         - name: Customer payment overview
