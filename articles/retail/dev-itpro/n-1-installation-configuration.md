@@ -388,3 +388,11 @@ The following list describes all the KBs that need to be installed for N-1 to wo
 | 4095664	| All Microsoft Dynamics AX 2012 clients connecting to Microsoft Dynamics 365 for Operations HQ to create new customers |
 | 4132454	| N-1 version of 1070 fails due to duplicate record exception caused by the CompanyImage_AX63 subjob |
 | 4131243	| When running D365 Retail in N-1 mode, the user is not able to set the HardwareStationURL using the AX client hence may not be able to configure the 6.3 hardwaresation properly |
+| 4338120 | Async service connector installer should use provided HQ message db name instead of always using a default name regardless of the HQ message database name provided by the user. | 
+| 4337834 | When running D365 in N-1 backward compatibility the N-1 (6.3)version MPOS may fails while adding or updating customer from MPOS due to missing methods in RetailTransactionService. |
+| 4337864 | When running D365 in N-1 backward compatibility the N-1 (6.3)version MPOS may fails during login or payment when attempting to load or use the hardware profile payment merchant property. | 
+| 4132453 | Running the N-1 version of the Product download job(1040_AX63) fails when moving data to the InventDim table in the 6.3 version channel database |
+| 4206905 | POS reports throw errors when they are run in non-upgrade N-1  environment. |
+| 4133289 | Running the N-1 version of the Product - Refunds from Journal or existing transactions failing | 
+| 4161086 | CDX table distribution ignores 'FieldValue' link types added on root table nodes and hence does not use that information for filterin the table usign the provided condition (x++ fix) |
+| 4161099 | CDX table distribution ignores 'FieldValue' link types added on root table nodes and hence does not use that information for filterin the table usign the provided condition (Binary changes) |
