@@ -5,7 +5,7 @@ title: e-Commerce Platform SDK
 description: This topic describes the e-Commerce Platform SDK.
 author: kfend
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
