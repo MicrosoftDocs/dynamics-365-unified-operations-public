@@ -49,7 +49,7 @@ This topic describes the e-Commerce Platform SDK. The e-Commerce Platform SDK co
 The Retail SDK is available in development environments, and in hotfix packages in a Retail SDK folder. For more information see:
 
 - If you get the SDK from a development instance, it is immediately ready for configuration and use. For more information, see [Access instances](../../../dev-itpro/dev-tools/access-instances.md). 
-- If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Retail hotfixes are cumulative and includes all other fixes. 
+- If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Retail hotfixes are cumulative and include all other fixes. 
 
 We recommend that you put the SDK in a source control system such as Visual Studio Online.
 
