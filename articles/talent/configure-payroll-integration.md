@@ -165,7 +165,7 @@ Keep the following data and configuration in mind when you set up positions:
 - Default financial dimension – Cost center (required)
 - Worker assignment – Worker, assignment start, assignment end, reason code
 
-If multiple positions in the same department are associated with the same job, it's consolidated into a single position in Dayforce.
+If multiple positions in the same department are associated with the same job, they are consolidated into a single position in Dayforce.
 
 For more information, see the following topics:
 
@@ -256,7 +256,7 @@ When you enter worker information, keep in mind the following data and configura
 
 #### Payroll information and earning codes
 
-Employees might be elected specific earnings at a given frequency of payment and have a preferred payment method. The following fields are used in Dayforce to help guarantee that those preferences and elections are used.
+Employees may be assigned specific earnings at a given frequency of payment and have a preferred payment method. The following fields are used in Dayforce to help guarantee that those preferences and settings are used.
 
 ##### Earning codes
 
@@ -279,7 +279,7 @@ Employees might be elected specific earnings at a given frequency of payment and
 - Work Permit Number
 
 > [!NOTE]
-> For the payment method, Mexico supports **Cash**, **Check** (the company's manual check), and **Electronic Payment**. If none is specified, **Check** is used by default.
+> For the payment method, Mexico supports **Cash**, **Check** (the company's physical check), and **Electronic Payment**. If np payment method is specified, **Check** is used by default.
 
 #### Employment details
 
@@ -336,12 +336,12 @@ Valid bank account information must be entered for any employee who chooses to b
 | Talent                         | Dayforce                                                                                                    |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------|
 | Bank account number (required) |                                                                                                             |
-| SWIFT code (required)          | **Bank ID** field of Mexico's bank information.                                                             |
+| SWIFT code (required)          | **Bank ID** field used when processing payroll in Mexico.                                                             |
 | Branch number (required)       |                                                                                                             |
-| Bank account type (required)   | **Account type** field of Mexico's bank information. Supported values include **Checking** and **Payroll**. |
+| Bank account type (required)   | **Account type** field used when processing payroll in Mexico. Supported values include **Checking** and **Payroll**. |
 
 > [!NOTE]
-> Employees who choose to be paid via bank account transfers must provide a link to a remainder account that is under a Mexico legal entity and associated with a valid Mexico bank account. All other non-remainder accounts are ignored.
+> Employees who choose to be paid via bank account transfers must provide a link to a remainder account that is under a legal entity that has its primary address in Mexico and associated with a valid bank account from a Mexican bank. All other non-remainder accounts are ignored.
 
 #### Address information
 
@@ -362,7 +362,7 @@ Every employee must have one primary location. In Dayforce, this location is use
 If you're generating pay for employees in the United States and Canada, the following elements must be configured:
 
 - Departments are required on positions.
-- Cost centers must be set as financial dimensions and must be the first element in the Default Financial Dimension string.
+- Cost centers must be set as financial dimensions and must be the first element in the default financial dimension string.
 
 ### Job types
 
@@ -370,7 +370,7 @@ Job types are used to group similar jobs into categories. Job types are required
 
 The following job types and descriptions are required.
 
-| Job type\* | Description |
+| Job type\ | Description |
 |------------|-------------|
 | Hourly     | Hourly      |
 | Salaried   | Salaried    |
@@ -381,7 +381,7 @@ You use position types to describe whether the position is full-time, part-time,
 
 The following position types and descriptions are required.
 
-| Position type\* | Description        |
+| Position type\ | Description        |
 |-----------------|--------------------|
 | Full-time       | Full time employee |
 | Part-time       | Part time employee |
@@ -392,7 +392,7 @@ Reason codes provide information about the status of an employee. Reason codes a
 
 The following reason codes and descriptions are required.
 
-| Reason code\*  | Description      | Applicable scenarios |
+| Reason code\  | Description      | Applicable scenarios |
 |----------------|------------------|----------------------|
 | RESIGNATION    | Resignation      | Terminate worker     |
 | TERMINATION    | Termination      | Terminate worker     |
@@ -503,7 +503,7 @@ Job types are used to group similar jobs into categories. Job types are required
 
 The following job types and descriptions are required.
 
-| Job type\* | Description |
+| Job type\ | Description |
 |------------|-------------|
 | Hourly     | MX Hourly   |
 | Salaried   | MX Salaried |
@@ -514,7 +514,7 @@ You use position types to describe whether the position is full-time, part-time,
 
 The following position types and descriptions are required.
 
-| Position type\* | Description        |
+| Position type\ | Description        |
 |-----------------|--------------------|
 | Full-time       | Full time employee |
 | Part-time       | Part time employee |
@@ -525,7 +525,7 @@ Reason codes provide information about the status of an employee. Reason codes a
 
 The following reason codes and descriptions are required.
 
-| Reason code\*          | Description                    | Applicable scenarios |
+| Reason code\          | Description                    | Applicable scenarios |
 |------------------------|--------------------------------|----------------------|
 | DEPARTUREBEFOREPAYMENT | Departure before first payroll | Terminate worker     |
 | RESIGNATION            | Resignation                    | Terminate worker     |
@@ -546,7 +546,7 @@ Terms of employment are used to create categories of employment terms. The terms
 
 The following terms of employment and descriptions are required.
 
-| Terms of employment\* | Description |
+| Terms of employment\ | Description |
 |-----------------------|-------------|
 | Regular               | Regular     |
 | Direct                | Direct      |
