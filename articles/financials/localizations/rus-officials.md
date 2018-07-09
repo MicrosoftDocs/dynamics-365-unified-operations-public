@@ -2,15 +2,15 @@
 # required metadata
 
 title: Set up officials who generate a transportation invoice and a job ticket
-description: This topic provides information about setting up officials who generate transportation invoives and job tickets in Russia. 
+description: This topic provides information about setting up officials who generate transportation invoives and job tickets in Microsoft Dynamics 365 for Finance and Operations in Russia. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 6/4/2018
+ms.date: 7/9/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-			
+
 # optional metadata
 
 # ms.search.form:  
@@ -28,7 +28,8 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Set up officials who generate a transportation invoice and a job ticket 
+# Set up officials who generate a transportation invoice and a job ticket
+[!include [banner](../includes/banner.md)]
 
 This topic applies to features in the **Inventory management** module. It does not apply to features in the [Warehouse management](warehouse-management.md) module.
 
@@ -86,11 +87,8 @@ Use the **Officials** form to set up officials that are involved with the item c
 
 4.  In the **Position** field, select the designation of the official.
     
-
     > [!NOTE]
     > You can set up a maximum of one chair and one person who is in charge.
-
-
 
 5.  In the **Name** field, enter the name of the official.
 
