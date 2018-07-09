@@ -39,7 +39,7 @@ Learn how to create shareable, secured URLs to forms and records.
 Overview
 --------
 
-The URL Generator enables developers to create shareable and secured URLs (a.k.a. deep links) to specific forms that are root navigable. An optional data context can be passed to the form to display filtered or specific data when the form is opened. The URL Generator enables scenarios such as embedding links in reports, emails, and external applications, enabling users to quickly and easily locate the specified forms or data by simply navigating using the generated link.
+The URL Generator enables developers to create shareable and secured URLs (also known as deep links) to specific forms that are root navigable. An optional data context can be passed to the form to display filtered or specific data when the form is opened. The URL Generator enables scenarios such as embedding links in reports, email, and external applications, enabling users to quickly and easily locate the specified forms or data by simply navigating using the generated link.
 
 ### Purpose
 
