@@ -5,7 +5,7 @@ title: Localize Retail extension resources and label files
 description: This topic explains how to modify POS UI labels, POS messages, receipt labels, and error message for Retail server or CRT. It also explains how you can add custom error messages for Retail server or CRT.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/11/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
