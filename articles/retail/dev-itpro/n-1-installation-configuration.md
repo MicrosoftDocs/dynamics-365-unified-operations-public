@@ -312,103 +312,90 @@ The following section describes troubleshooting steps for errors you might encou
 | Sample Event Log Error Message	| Async server connector service encounters error in download timer tick. CorrelationId {4c9cd9a0-d4e3-43e5-80da-59ea2eb01acf}; Error details: Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.SyncMetadataException: Failed synchronizing metadata. ---> Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.MessageDBOperationException: Failed updating metadata in HQ message DB. ---> System.Data.SqlClient.SqlException: A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.) ---> System.ComponentModel.Win32Exception: The certificate chain was issued by an authority that is not trusted |
 | Troubleshooting Steps	| This could have happened because the Synch service web.config connection string has the TrustServerCertificate set to false. To fix the issue browse the Sync service website and open the web.config. Find the connectionStrings section, update the TrustServerCertificate to True if it is false. |
 
-Metadata synchronization fails
-Event Log	Microsoft-Dynamics-Commerce-AsyncServerConnectorService/Operational
+#### Metadata synchronization fails
+| Field | Value |
+| --- | --- |
+| Event Log |	Microsoft-Dynamics-Commerce-AsyncServerConnectorService/Operational |
+| Sample Event Log Error Message	| Async server connector service encounters error in download timer tick. CorrelationId {73d9d0d3-4d12-42ca-ac65-3f1f947c7840}; Error details: Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.SyncMetadataException: Failed synchronizing metadata. ---> Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.MessageDBOperationException: Failed updating metadata in HQ message DB. ---> System.Data.SqlClient.SqlException: Cannot open database "HQMessageDB" requested by the login. The login failed. Login failed for user 'localhost\RetailAsUser'. |
+| Troubleshooting Steps	| This could have happened because the user who runs the Async server connector service does not have access to the HQ message database. <br><br>To fix the issue run services.msc, check the user who runs the Async server connector service. Provide this user access to HQ message database in SQL. |
 
-Sample Event Log Error Message	Async server connector service encounters error in download timer tick. CorrelationId {73d9d0d3-4d12-42ca-ac65-3f1f947c7840}; Error details: Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.SyncMetadataException: Failed synchronizing metadata. ---> Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.MessageDBOperationException: Failed updating metadata in HQ message DB. ---> System.Data.SqlClient.SqlException: Cannot open database "HQMessageDB" requested by the login. The login failed. 
-Login failed for user 'localhost\RetailAsUser'. 
-MPOS Error on Activation Screen	-
-Troubleshooting Steps	This could have happened because the user who runs the Async server connector service does not have access to the HQ message database.
- 
-To fix the issue run services.msc, check the user who runs the Async server connector service. Provide this user access to HQ message database in SQL. 
+#### Metadata synchronization fails or CDX Jobs were successfully downloaded but failed to apply
+| Field | Value |
+| --- | --- |
+| Event Log |	Microsoft Dynamics AX Retail : Async Client SynchClientService |
+| Sample Event Log Error Message |	Unable to communicate with server for download. Please check username/password, server and database connections. Error Details: System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to https://localhost:44300/SynchService/DownloadService.svc. This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: Authentication failed because the remote party has closed the transport stream. |
+| Troubleshooting Steps |	This could have happened because of the following reasons.<br>1) The user ID and password that we provide in async client does not match with the channel database User ID and password that we provide in AX.<br>2) The async service end point is not reachable. https://localhost:44300/SynchService/DownloadService.svc <br><br>To fix this issue, <br>1) Launch the Async client configuration utility (AsyncClientConfigurationUtility.exe) from the async client install location. Under the `Async Server connection tab -> Authentication information (case sensitive)` -> Update the Channel database ID, User name and Password fields as per the values provided under N-1 channel database (`Retail -> Headquarters setup -> Channel database`) in AX. <br>2) Now click on `Test connection` in the utility. If the connection is successful, restart the Async client service. If the connection fails, go to N-1 channel database (`Retail -> Headquarters setup -> Channel database`) in AX, update the Username and password, save. Go to `Retail scheduler parameters` in AX and click `Reset metadata synchronization`. This will populate the HQ message database with the new values. Repeat step 1 again.  <br>3) If the async server end point (https://localhost:44300/SynchService/DownloadService.svc) is not reachable, check the bindings of the service and make sure there is a certificate associated. If the issue still exists, check that the `Working folders` were specified for all the Channel database group’s that were linked to `AX2012R3` retail channel schema. |
 
-Metadata synchronization fails or CDX Jobs were successfully downloaded but failed to apply
-Event Log	Microsoft Dynamics AX Retail : Async Client SynchClientService 
-
-Sample Event Log Error Message	Unable to communicate with server for download. Please check username/password, server and database connections. Error Details: System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to https://localhost:44300/SynchService/DownloadService.svc. This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: Authentication failed because the remote party has closed the transport stream. 
-MPOS Error on Activation Screen	-
-Troubleshooting Steps	This could have happened because of the following reasons.
-1)    The user ID and password that we provide in async client does not match with the channel database User ID and password that we provide in AX.
-2)    The async service end point is not reachable. 
-https://localhost:44300/SynchService/DownloadService.svc
- 
-To fix this issue, 
-1)    Launch the Async client configuration utility (AsyncClientConfigurationUtility.exe) from the async client install location. Under the “Async Server connection” tab -> Authentication information (case sensitive) -> Update the Channel database ID, User name and Password fields as per the values provided under N-1 channel database (retail -> Headquarters setup -> Channel database) in AX. 
-2)    Now click on “Test connection” in the utility. If the connection is successful, restart the Async client service. If the connection fails, go to N-1 channel database (retail -> Headquarters setup -> Channel database) in AX, update the Username and password, save. Go to Retail scheduler parameters in AX and click “Reset metadata synchronization.” This will populate the HQ message database with the new values. Repeat step 1 again.  
-3)    If the async server end point (https://localhost:44300/SynchService/DownloadService.svc)
-is not reachable, check the bindings of the service and make sure there is a certificate associated.  
-If the issue still exists, check that the “Working folders” were specified for all the Channel database group’s that were linked to “AX2012R3” retail channel schema.
-
-CDX Jobs were successfully downloaded but failed to apply
-Event Log	Microsoft Dynamics AX Retail : Async Client SynchClientService 
-
-Sample Event Log Error Message	Exception during DownloadAgent.Execute. Error Details: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Dynamics.Retail.StoreConnect.Request.Base, Version=6.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified. 
+#### CDX Jobs were successfully downloaded but failed to apply
+| Field | Value |
+| --- | --- |
+| Event Log |	Microsoft Dynamics AX Retail : Async Client SynchClientService |
+| Sample Event Log Error Message |	Exception during DownloadAgent.Execute. Error Details: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Dynamics.Retail.StoreConnect.Request.Base, Version=6.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified. 
 File name: 'Microsoft.Dynamics.Retail.StoreConnect.Request.Base, Version=6.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' 
 at Microsoft.Dynamics.Retail.SynchClient.Core.DownloadAgent.ApplySessionFileToClientDatabase(SessionManager sessionMgr, String fileName) 
 at Microsoft.Dynamics.Retail.SynchClient.Core.DownloadAgent.ProcessDownloadSession(DownloadSession session) 
-at Microsoft.Dynamics.Retail.SynchClient.Core.DownloadAgent.Execute() 
-MPOS Error on Activation Screen	-
-Troubleshooting Steps	This could have happened because the AX63 store connect components were not installed on the environment. 
- 
-To fix the issue install the AX63 store connect components on the environment that is running the async client component. 
+at Microsoft.Dynamics.Retail.SynchClient.Core.DownloadAgent.Execute() |
+| Troubleshooting Steps	| This could have happened because the AX63 store connect components were not installed on the environment.<br><br> To fix the issue install the AX63 store connect components on the environment that is running the async client component. |
 
-N-1 Async Server Connector Service Communication Exception
-Event Log	Microsoft Dynamics AX Retail : Async Client SynchClientService
-Sample Event Log Error Message	Unable to communicate with server for download. Please check username/password, server and database connections. Error Details: System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to https://localhost:44300/SynchService/DownloadService.svc. This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: Authentication failed because the remote party has closed the transport stream.
-Troubleshooting Steps	Make sure the HQ Message DB has data. Use the asyncClient configuration tool to validate the connection is successful.
+#### N-1 Async Server Connector Service Communication Exception
+| Field | Value |
+| --- | --- |
+| Event Log |	Microsoft Dynamics AX Retail : Async Client SynchClientService |
+| Sample Event Log Error Message |	Unable to communicate with server for download. Please check username/password, server and database connections. Error Details: System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to https://localhost:44300/SynchService/DownloadService.svc. This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: Authentication failed because the remote party has closed the transport stream. |
+| Troubleshooting Steps	| Make sure the HQ Message DB has data. Use the asyncClient configuration tool to validate the connection is successful. |
 
-Dynamics AX 2012 R3 Modern POS Activation Fails with error on Step 1
-Event Log	Microsoft Dynamics AX Retail : Retail Server RetailServer
+#### Dynamics AX 2012 R3 Modern POS Activation Fails with error on Step 1
+| Field | Value |
+| --- | --- |
+| Event Log |	Microsoft Dynamics AX Retail : Retail Server RetailServer |
+| Sample Event Log Error Message	| Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: An error occurred during logon. ---> Microsoft.Dynamics.Commerce.Runtime.ConfigurationException: The published channel can not be found in local database. Please make sure at least 1 retail channel is published to this DB through AX. |
+| MPOS Error on Activation Screen	| DA1002: A server side error occurred that prevents user from logging on. Please check the server log for detailed information or contact your IT support. |
+| Troubleshooting Steps	| Make sure the CDX download jobs ran successfully and the channel database has data. |
 
-Sample Event Log Error Message	Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: An error occurred during logon. ---> Microsoft.Dynamics.Commerce.Runtime.ConfigurationException: The published channel can not be found in local database. Please make sure at least 1 retail channel is published to this DB through AX.
-MPOS Error on Activation Screen	DA1002: A server side error occurred that prevents user from logging on. Please check the server log for detailed information or contact your IT support.
-Troubleshooting Steps	Make sure the CDX download jobs ran successfully and the channel database has data.
+#### Dynamics AX 2012 R3 Modern POS Activation Fails with error on Step 2
+| Field | Value |
+| --- | --- |
+| Event Log |	Microsoft Dynamics Retail Modern POS |
+| Sample Event Log Error Message |	Dynamics-Error: LoginViewModel ActivateDevice Logon failed<br>
+ErrorMessage: ; <br>
+ErrorCode: Microsoft_Dynamics_Commerce_Runtime_HeadquarterTransactionServiceMethodCallFailure; |
+| MPOS Error on Activation Screen	| DA2001 |
+| Troubleshooting Steps |	Device you are trying to activate is already active. Please deactivate the device and try the activation. |
 
-Dynamics AX 2012 R3 Modern POS Activation Fails with error on Step 2
-Event Log	Microsoft Dynamics Retail Modern POS 
+#### Dynamics AX 2012 R3 Modern POS Activation Fails with error on Step 2
+| Field | Value |
+| --- | --- |
+| Event Log |	Microsoft Dynamics Retail Modern POS |
+| Sample Event Log Error Message	| Exception occured: [04/19/2018 19:26:51] Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: An error occurred during logon. ---> Microsoft.Dynamics.Commerce.Runtime.StorageException: Failed to read from the database. See inner exception for details <br>
+DatabaseErrorCode: 0 ---> Microsoft.Dynamics.Commerce.Runtime.Data.DatabaseException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. ---> System.Data.SqlClient.SqlException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. <br>
+at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action'1 wrapCloseInAction) 
+at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) |
+| MPOS Error on Activation Screen |	DZ1001 |
+| Troubleshooting Steps |	Device you are trying to activate is already active. Please deactivate the device and try the activation. |
 
-Sample Event Log Error Message	Dynamics-Error: LoginViewModel ActivateDevice Logon failed 
-ErrorMessage: ; 
-ErrorCode: Microsoft_Dynamics_Commerce_Runtime_HeadquarterTransactionServiceMethodCallFailure; 
-ErrorObject: '{"_canRetry":false,"_errorCode":"Microsoft_Dynamics_Commerce_Runtime_HeadquarterTransactionServiceMethodCallFailure","_errorMessage":"","_commerceException":null,"_formatData":[],"_extraData":null,"_clientErrorCode":"DA2001","_errorMessageDetails":[]}' 1524013518876mS
-MPOS Error on Activation Screen	DA2001
-Troubleshooting Steps	Device you are trying to activate is already active. Please deactivate the device and try the activation.
+#### Dynamics AX 2012 R3 Modern POS Activation Fails with error on Step 9
+| Field | Value |
+| --- | --- |
+| Event Log |	Microsoft Dynamics Retail Modern POS |
+| Sample Event Log Error Message |	Dynamics-Error: LoginViewModel ActivateDevice Logon failed <br>
+ErrorMessage: Sorry, something went wrong with the encryption on your device. Please contact your system administrator.; <br>
+ErrorCode: MICROSOFT_DYNAMICS_POS_DATAENCRYPTIONERROR; |
+| MPOS Error on Activation Screen	| DA3122: Sorry, something went wrong with the encryption on your device. Please contact your system administrator. |
+| Troubleshooting Steps	| Check the RealTime Service profile filed in the CDX Backward compatibility section of the store. This must be set to the RTS profile that you created for N-1. |
 
-Dynamics AX 2012 R3 Modern POS Activation Fails with error on Step 2
-Event Log	Microsoft Dynamics Retail Modern POS 
-
-Sample Event Log Error Message	Exception occured: [04/19/2018 19:26:51] Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: An error occurred during logon. ---> Microsoft.Dynamics.Commerce.Runtime.StorageException: Failed to read from the database. See inner exception for details 
-DatabaseErrorCode: 0 ---> Microsoft.Dynamics.Commerce.Runtime.Data.DatabaseException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. ---> System.Data.SqlClient.SqlException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. 
-at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction) 
-at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) 
-
-MPOS Error on Activation Screen	DZ1001 
-Troubleshooting Steps	Device you are trying to activate is already active. Please deactivate the device and try the activation.
-
-
-Dynamics AX 2012 R3 Modern POS Activation Fails with error on Step 9
-Event Log	Microsoft Dynamics Retail Modern POS 
-
-Sample Event Log Error Message	Dynamics-Error: LoginViewModel ActivateDevice Logon failed 
-ErrorMessage: Sorry, something went wrong with the encryption on your device. Please contact your system administrator.; 
-ErrorCode: MICROSOFT_DYNAMICS_POS_DATAENCRYPTIONERROR; 
-ErrorObject: '{"_canRetry":false,"_errorCode":"MICROSOFT_DYNAMICS_POS_DATAENCRYPTIONERROR","_errorMessage":"Sorry, something went wrong with the encryption on your device. Please contact your system administrator.","_commerceException":null,"_formatData":[],"_extraData":null,"_clientErrorCode":"DA3122","_errorMessageDetails":[]}' 1524014350787mS
-MPOS Error on Activation Screen	DA3122: Sorry, something went wrong with the encryption on your device. Please contact your system administrator.
-Troubleshooting Steps	Check the RealTime Service profile filed in the CDX Backward compatibility section of the store. This must be set to the RTS profile that you created for N-1.
-
-KBs to Install
+## KBs to Install
 The following list describes all the KBs that need to be installed for N-1 to work properly. 
-Dynamics 365 for Retail – AX 7.2 headquarters
-KB Number 	Title
-4095190	You cannot set the default transaction service profile ID on the shared parameter page
-4095192	You cannot set the transaction service password encryption algorithm
-4095209	Issue when the component tries to authenticate with the transaction service
-4095189	The protocol column of the RetialTransactionServiceProfile table is not synced to the old version channel databases
-4095191	You are not allowed to set the retail server URL to be http based URL
-4132456	[Upgrade & N-1][Designer] Number pad height should be extensible
-4095926	Upgrade & N-1: Return order fails from 63MPOS as the transaction was not found on a N-1 non upgrade environment.
-4095664	All Microsoft Dynamics AX 2012 clients connecting to Microsoft Dynamics 365 for Operations HQ to create new customers
-4132454	N-1 version of 1070 fails due to duplicate record exception caused by the CompanyImage_AX63 subjob
-4131243	When running D365 Retail in N-1 mode, the user is not able to set the HardwareStationURL using the AX client hence may not be able to configure the 6.3 hardwaresation properly
 
-
+### Dynamics 365 for Retail – AX 7.2 headquarters
+| KB Number | Title |
+| --- | --- |
+| 4095190 |	You cannot set the default transaction service profile ID on the shared parameter page |
+| 4095192	| You cannot set the transaction service password encryption algorithm |
+| 4095209	| Issue when the component tries to authenticate with the transaction service |
+| 4095189	| The protocol column of the RetialTransactionServiceProfile table is not synced to the old version channel databases |
+| 4095191	| You are not allowed to set the retail server URL to be http based URL |
+| 4132456	| [Upgrade & N-1][Designer] Number pad height should be extensible |
+| 4095926	| Upgrade & N-1: Return order fails from 63MPOS as the transaction was not found on a N-1 non upgrade environment. |
+| 4095664	| All Microsoft Dynamics AX 2012 clients connecting to Microsoft Dynamics 365 for Operations HQ to create new customers |
+| 4132454	| N-1 version of 1070 fails due to duplicate record exception caused by the CompanyImage_AX63 subjob |
+| 4131243	| When running D365 Retail in N-1 mode, the user is not able to set the HardwareStationURL using the AX client hence may not be able to configure the 6.3 hardwaresation properly |
