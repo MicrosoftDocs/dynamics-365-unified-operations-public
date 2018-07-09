@@ -64,12 +64,12 @@ The following diagram illustrates the high-level overview of the N-1 setup.
 Follow the steps described in order to configure the N-1 components in the Dynamics 365 for Retail headquarters.
 
 ### Connector for Microsoft Dynamics AX
-1. Sign in to the Dynamics 365 for Retail headquarters and navigate to the Retail > Headquarters setup > Retail scheduler > Connector for Microsoft Dynamics AX form.
-2. On the Action pane click on New and set the following fields:
+1. Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Connector for Microsoft Dynamics AX` form.
+2. On the Action pane click on `New` and set the following fields:
 
-| Section | Field Description | Sample Value |
-| --- | --- | --- |
-| Header | Profile	Unique name of the N-1 profile to setup. You should create one profile per environment / server where you currently have installed the Dynamics AX 2012 R3 Realtime Service. | |
+| Section | Field | Description | Sample Value |
+| --- | --- | --- | --- |
+| Header | Profile |	Unique name of the N-1 profile to setup. You should create one profile per environment / server where you currently have installed the Dynamics AX 2012 R3 Realtime Service. | |
 | Header | Description | Helpful description text to identify the profile. | |	
 | Connection | Server | The name of the server where the N-1 Realtime Service will be installed (same server as the current Dynamics AX 2012 R3 Realtime Service). | |
 | Connection | Port | The port the N-1 Realtime Service will use. | |
@@ -80,69 +80,89 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 | Connection | Language | The language associated with the stores that are mapped to this N-1 Realtime service. | |	
 
 
-3.	Click the Save button once done.
+3.	Click the `Save` button once done.
 
-Retail Shared Parameters
-1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the Retail > Headquarters setup > Parameters > Retail shared parameters form.
-2.	On the left pane select the Security tab and set the following fields:
-Section	Fie ld	Description	Value for Dr. Martens Environment
-Set up the retail shared parameters for security	Real-time Service profile	 	
-Set up the retail shared parameters for security	TS password encryption name	The algorithm used to connect to the transaction service. This value should be set to ‘SHA256’.	SHA256 
+### Retail Shared Parameters
+1. Sing in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Parameters > Retail shared parameters` form.
+2. On the left pane select the `Security` tab and set the following fields:
 
-Retail Scheduler Parameters
-1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the Retail > Headquarters setup > Parameters > Retail scheduler parameters form and set the following fields:
-Section	Field	Description	Value for Dr. Martens Environment
-HQ Message Database	SQL Server instance name	The name of the SQL Server instance hosting the existing Dynamics AX 2012 R3 HQ Message Database.	
-HQ Message Database	Server name	The name of the server hosting the existing Dynamics AX 2012 R3 HQ Message Database.	
-HQ Message Database	Database name	The name of the Dynamics AX 2012 R3 HQ Message Database. Note, the default database name in Dynamics AX 2012 R3 was “HQMessageDB”.	
+| Section	| Field | Description	| Sample Value |
+| --- | --- | --- | --- |
+| Set up the retail shared parameters for security | Real-time Service profile | This value should be set to the Id of the profile that is created in the "Connector for Microsoft Dynamics AX" page. | |
+| Set up the retail shared parameters for security |	TS password encryption name | The algorithm used to connect to the transaction service. This value should be set to 'SHA256'.	| SHA256 | 
+| Set up the retail shared parameters for security | Legacy Device Algorithm | The legacy device algorithm. | AES |
 
-3.	Click the Save button once done.
+### Retail Scheduler Parameters
+1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Parameters > Retail scheduler parameters` form and set the following fields:
 
-Working Folders
-Note:  Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
-1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the Retail > Headquarters setup > Retail scheduler > Working folders form and set the following fields.
+| Section | Field | Description | Sample Value |
+| --- | --- | --- | --- |
+| HQ Message Database	| SQL Server instance name | The name of the SQL Server instance hosting the existing Dynamics AX 2012 R3 HQ Message Database.	| |
+| HQ Message Database | Server name | The name of the server hosting the existing Dynamics AX 2012 R3 HQ Message Database. | |
+| HQ Message Database |	Database name |	The name of the Dynamics AX 2012 R3 HQ Message Database. Note, the default database name in Dynamics AX 2012 R3 was `HQMessageDB`.	| HQMessageDB |
+
+3.	Click the `Save` button once done.
+
+### Working Folders
+
+> [!Note]
+> Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
+
+1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Working folders` form and set the following fields.
 2.	Make sure the following entry exist in the table. 
-Field	Description	Value for Dr. Martens Environment
-Name	Name of the working folder.	File storage for N-1
-Description	Description for the working folder.	File storage for N-1
-Download path	Network path where the Dynamics AX 2012 R3 CDX download packages are stored.	TBD
-Upload path	Network path where the Dynamics AX 2012 R3 CDX upload packages are stored.	TBD
 
-3.	Click the Save button once done.
+| Field | Description | Sample Value |
+| --- | --- | --- |
+| Name | Name of the working folder. | |
+| Description | Description for the working folder.	| |
+| Download path	| Network path where the Dynamics AX 2012 R3 CDX download packages are stored.	| |
+| Upload path | Network path where the Dynamics AX 2012 R3 CDX upload packages are stored. | |
 
-Channel Database Group
-Note:  Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
-1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the Retail > Headquarters setup > Retail scheduler > Channel database group form and set the following fields.
-1.	On the Action pane click on New for each physical channel database present in the Dynamics AX 2012 R3 environment and set the following fields:
-Section	Field	Description	Value for Dr. Martens Environment
-Header	Name	Name of the Channel Database Group used for the Dynamics AX 2012 R3 channel environment.	Default_AX63
-Header	Description	Description of the Channel Database Group used for the Dynamics AX 2012 R3 channel environment.	Default group for AX63 channel database
-General	Retail channel schema	The schema of the Dynamics AX 2012 R3 schema. This must be set to “AX2012R3”.	AX2012R3
-General	Working folders	The reference to the working folders record used for the CDX data package sync. This was created the  steps above.	File storage for N-1 (from steps above).
+3.	Click the `Save` button once done.
 
-3.	Click the Save button once done.
+### Channel Database Group
+> [!Note] 
+> Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
 
-Channel Database
-Note:  Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
-1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the Retail > Headquarters setup > Retail scheduler > Channel database form and set the following fields.
-2.	On the Action pane click on New for each physical channel database present in the Dynamics AX 2012 R3 environment and set the following fields:
-Section	Field	Description	Value for Dr. Martens Environment
-Header	Channel database ID	Unique identifier for the physical Channel Database. This value should be derived from the Dynamics AX 2012 R3 environment.	<lookup from AX 2012 environment>
-Header	Channel database group	The Channel Database Group that the Channel Database is mapped to. This value should be derived from the Dynamics AX 2012 R3 environment.	<lookup from AX 2012 environment>
-Header	Type	The type of the Channel Database record. This must be set to “Channel database”.	Channel database
-Header	Data sync interval	The interval at which to runt the CDX data sync. This must be left blank.	<leave it blank>
-Header	Username (Case Sensitive)	The username to use to connect to the Dynamics AX 2012 R3 Channel Database.	<Set by Dr. Martens/Hitachi>
-Header	Password	The password to use to connect to the Dynamics AX 2012 R3 Channel Database.	<Set by Dr. Martens/Hitachi>
-Header	Database name	The name of the Dynamics AX 2012 R3 Channel Database.	<lookup from AX 2012 environment>
-Header	Server name	The name of the server where the Dynamics AX 2012 R3 Channel Database is hosted.	<lookup from AX 2012 environment>
-Retail channel	List	The list of Retail Channels that are mapped to this Channel Database. This value should be derived from the Dynamics AX 2012 R3 environment.	<lookup from AX 2012 environment>
+1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Channel database group` form and set the following fields.
+1.	On the Action pane click on `New` for each physical channel database present in the Dynamics AX 2012 R3 environment and set the following fields:
 
-3.	Click the Save button once done.
+| Section |	Field |	Description	| Sample Value |
+| --- | --- | --- | --- |
+| Header |	Name |	Name of the Channel Database Group used for the Dynamics AX 2012 R3 channel environment. |	Default_AX63 |
+| Header |	Description	| Description of the Channel Database Group used for the Dynamics AX 2012 R3 channel environment. |	Default group for AX63 channel database |
+| General |	Retail channel schema |	The schema of the Dynamics AX 2012 R3 schema. This must be set to 'AX2012R3'. |	AX2012R3 |
+| General |	Working folders |	The reference to the working folders record used for the CDX data package sync. This was created the  steps above. |	*File storage for N-1 (from steps above)* |
 
-Channel Profiles
-Note:  Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
+3.	Click the `Save` button once done.
+
+### Channel Database
+> [!Note]
+> Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
+
+1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Channel database` form and set the following fields.
+2.	On the Action pane click on `New` for each physical channel database present in the Dynamics AX 2012 R3 environment and set the following fields:
+
+| Section | Field | Description	| Sample Value |
+| --- | --- | --- | --- |
+| Header	| Channel database ID |	Unique identifier for the physical Channel Database. This value should be derived from the Dynamics AX 2012 R3 environment.	| |
+| Header |	Channel database group |	The Channel Database Group that the Channel Database is mapped to. This value should be derived from the Dynamics AX 2012 R3 environment.	| |
+| Header |	Type	| The type of the Channel Database record. This must be set to 'Channel database'. | Channel database |
+| Header |	Data sync interval	| The interval at which to runt the CDX data sync. This must be left blank. |	<leave it blank> |
+| Header	| Username (Case Sensitive)	| The username to use to connect to the Dynamics AX 2012 R3 Channel Database.	| |
+| Header |	Password |	The password to use to connect to the Dynamics AX 2012 R3 Channel Database. | |
+| Header |	Database name |	The name of the Dynamics AX 2012 R3 Channel Database.	| |
+| Header |	Server name |	The name of the server where the Dynamics AX 2012 R3 Channel Database is hosted.	| |
+| Retail channel	| *List* |	The list of Retail Channels that are mapped to this Channel Database. This value should be derived from the Dynamics AX 2012 R3 environment.	| *Channels used for Phased Rollout (N-1)* |
+
+3.	Click the `Save` button once done.
+
+### Channel Profiles
+> [!Note]
+> Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
 Note: This section only applies if the existing Dynamics AX 2012 R3 environment uses the Retail Server to interact with the Channel Database. If direct Channel Database access is enabled from the Dynamics AX 2012 R3 Modern POS (MPOS) then this step can be omitted.
-1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the Retail > Channels > Retail stores > All retail stores form and set the following fields.
+
+1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Channels > Retail stores > All retail stores` form and set the following fields.
 2.	On the Action pane click on New for each of the Retail Servers hosted on the N-1 environment and set the following fields:
 Section	Field	Description	Value for Dr. Martens Environment
 Header	Name	Unique name of the N-1 Channel Profile to setup. You should create one profile per environment / server where you currently have installed the Dynamics AX 2012 R3 Retail Server.	Default_AX63
