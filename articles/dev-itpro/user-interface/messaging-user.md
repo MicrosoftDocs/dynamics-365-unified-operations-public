@@ -83,11 +83,12 @@ The legacy **info()**, **warning()**, and **error()** APIs are still supported. 
 ## The Message() API for explicit add and remove messages
 The messaging system supports the legacy validation message APIs (**info()**, **warning()**/**checkfailed()**, and **error()**), and deterministically routes messages either to a message bar or to the Message Center. The messaging system also clears message bar messages that are related to data validation when the validation is rerun. Additionally, the messaging system includes a new **Message()** API that lets developers explicitly add and remove messages. This API is useful for displaying informational messages about aspects of the user's experience that aren't necessarily related to data validation. In this case, the message should be shown when the current record is displayed. ![Messaging\_SingleMessageBarInfo](./media/messaging_singlemessagebarinfo.jpg)
 
-    messageId = Message::Add(MessageSeverity::Info, "The customer is marked as inactive");
+    messageId = Message::Add(MessageSeverity::Informational, "The customer is marked as inactive");
 
 The message can then be cleared when a new record is shown on the page.
 
     Message::Remove(messageId);
+
 
 The following messaging types are supported: **MessageSeverity::Info**, **MessageSeverity::Warning**, and **MessageSeverity::Error**. Messages that use the **Message()** API are also deterministic. They can be routed to a message bar or the Message Center.
 
