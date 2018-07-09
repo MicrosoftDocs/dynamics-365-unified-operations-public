@@ -211,7 +211,7 @@ This topic explains how to add a new custom column to a POS transaction page usi
 17. Compile and rebuild the project.
 
 > [!NOTE]
->  You can find the sample for the custom column in the [Retail SDK](..\retail-sdk\retail-sdk-overview.md).
+>  You can find the sample for the custom column in the [Retail SDK](../retail-sdk/retail-sdk-overview.md).
 
 ## Validate the customization
 
