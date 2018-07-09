@@ -370,7 +370,7 @@ Job types are used to group similar jobs into categories. Job types are required
 
 The following job types and descriptions are required.
 
-| Job type\ | Description |
+| Job type   | Description |
 |------------|-------------|
 | Hourly     | Hourly      |
 | Salaried   | Salaried    |
@@ -381,7 +381,7 @@ You use position types to describe whether the position is full-time, part-time,
 
 The following position types and descriptions are required.
 
-| Position type\ | Description        |
+| Position type   | Description        |
 |-----------------|--------------------|
 | Full-time       | Full time employee |
 | Part-time       | Part time employee |
@@ -392,7 +392,7 @@ Reason codes provide information about the status of an employee. Reason codes a
 
 The following reason codes and descriptions are required.
 
-| Reason code\  | Description      | Applicable scenarios |
+| Reason code    | Description      | Applicable scenarios |
 |----------------|------------------|----------------------|
 | RESIGNATION    | Resignation      | Terminate worker     |
 | TERMINATION    | Termination      | Terminate worker     |
@@ -503,7 +503,7 @@ Job types are used to group similar jobs into categories. Job types are required
 
 The following job types and descriptions are required.
 
-| Job type\ | Description |
+| Job type   | Description |
 |------------|-------------|
 | Hourly     | MX Hourly   |
 | Salaried   | MX Salaried |
@@ -514,7 +514,7 @@ You use position types to describe whether the position is full-time, part-time,
 
 The following position types and descriptions are required.
 
-| Position type\ | Description        |
+| Position type   | Description        |
 |-----------------|--------------------|
 | Full-time       | Full time employee |
 | Part-time       | Part time employee |
@@ -525,7 +525,7 @@ Reason codes provide information about the status of an employee. Reason codes a
 
 The following reason codes and descriptions are required.
 
-| Reason code\          | Description                    | Applicable scenarios |
+| Reason code            | Description                    | Applicable scenarios |
 |------------------------|--------------------------------|----------------------|
 | DEPARTUREBEFOREPAYMENT | Departure before first payroll | Terminate worker     |
 | RESIGNATION            | Resignation                    | Terminate worker     |
@@ -546,7 +546,7 @@ Terms of employment are used to create categories of employment terms. The terms
 
 The following terms of employment and descriptions are required.
 
-| Terms of employment\ | Description |
+| Terms of employment   | Description |
 |-----------------------|-------------|
 | Regular               | Regular     |
 | Direct                | Direct      |
