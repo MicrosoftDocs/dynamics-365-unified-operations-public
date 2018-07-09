@@ -124,7 +124,7 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 > [!Note] 
 > Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
 
-1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Channel database group` form and set the following fields.
+1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Channel database group` form and set the following fields.
 1.	On the Action pane click on `New` for each physical channel database present in the Dynamics AX 2012 R3 environment and set the following fields:
 
 | Section |	Field |	Description	| Sample Value |
@@ -140,7 +140,7 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 > [!Note]
 > Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
 
-1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Channel database` form and set the following fields.
+1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Channel database` form and set the following fields.
 2.	On the Action pane click on `New` for each physical channel database present in the Dynamics AX 2012 R3 environment and set the following fields:
 
 | Section | Field | Description	| Sample Value |
@@ -162,21 +162,24 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 > Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
 Note: This section only applies if the existing Dynamics AX 2012 R3 environment uses the Retail Server to interact with the Channel Database. If direct Channel Database access is enabled from the Dynamics AX 2012 R3 Modern POS (MPOS) then this step can be omitted.
 
-1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Channels > Retail stores > All retail stores` form and set the following fields.
-2.	On the Action pane click on New for each of the Retail Servers hosted on the N-1 environment and set the following fields:
-Section	Field	Description	Value for Dr. Martens Environment
-Header	Name	Unique name of the N-1 Channel Profile to setup. You should create one profile per environment / server where you currently have installed the Dynamics AX 2012 R3 Retail Server.	Default_AX63
-Profile properties	Property key	The key for the Retail Server URL used on the Dynamics AX 2012 R3 environment. This must be set to “Retail Server URL”.	Retail Server URL
-Profile properties	Property value	The Retail Server URL used on the Dynamics AX 2012 R3 environment.	<lookup from AX 2012 environment>
-Profile properties	Property value	The key for the Hardware Station URL used on the Dynamics AX 2012 R3 environment. 	TODO 
-Profile properties	Property value	The Hardware Station URL based on the Dynamics AX 2012 R3 environment.	TODO
+1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Channels > Retail stores > All retail stores` form and set the following fields.
+2.	On the Action pane click on `New` for each of the Retail Servers hosted on the N-1 environment and set the following fields:
 
+| Section | Field | Description	| Sample Value |
+| --- | --- | --- | --- |
+| Header |	Name |	Unique name of the N-1 Channel Profile to setup. You should create one profile per environment / server where you currently have installed the Dynamics AX 2012 R3 Retail Server.	| Default_AX63 |
+| Profile properties |	Property key |	The key for the Retail Server URL used on the Dynamics AX 2012 R3 environment. This must be set to 'Retail Server URL'. | |
+| Profile properties |	Property value |	The Retail Server URL used on the Dynamics AX 2012 R3 environment.	| |
+| Profile properties |	Property value |	The key for the Hardware Station URL used on the Dynamics AX 2012 R3 environment. | |
+| Profile properties |	Property value |	The Hardware Station URL based on the Dynamics AX 2012 R3 environment. | |
 
-3.	Click the Save button once done.
+3.	Click the `Save` button once done.
 
-All Retail Stores 
-Note, the fields described below will be set if the Dynamics 365 for Retail headquarters environment was upgraded from the Dynamics AX 2012 R3 headquarters.
-1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the Retail > Channels > Retail stores > All retail stores form and set the following fields.
+### All Retail Stores 
+> [!Note]
+> The fields described below will be set if the Dynamics 365 for Retail headquarters environment was upgraded from the Dynamics AX 2012 R3 headquarters.
+
+1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Channels > Retail stores > All retail stores` form and set the following fields.
 2.	Click on the Retail Channel ID for each of the stores that are mapped to the N-1 environment, set the fields below on the newly opened form, and click save.
 Section	Field	Description	Value for Dr. Martens Environment
 General	Live channel database	The Channel Database this store is mapped to and setup in the steps above.	<lookup from AX 2012 environment>
