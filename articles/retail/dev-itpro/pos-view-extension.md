@@ -70,9 +70,10 @@ The following table shows the POS views that currently support extensions. It al
 | StockCountDetailsView           | No                            | Yes                          | No                                   |
 | ResumeCartView                  | No                            | Yes                          | No                                    |
 
-Note: The above table is getting updated based on the latest realsed version and hotfix. In lower versions some of these extension points will not be available.
+> [!NOTE]
+> The table shown above is updated based on the latest released version and hotfix. In earlier versions, some of these extension points will not be available.
 
-Also we support filter extension in **Show journal view** and **Search order views** for extensions to add custom filter. 
+Filter extensions are also supported in **Show journal view** and **Search order views** for extensions to add custom filters. 
 
 ## Add a custom column and an app bar button
 
