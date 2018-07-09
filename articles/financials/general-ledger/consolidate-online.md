@@ -1,4 +1,39 @@
+---
+# required metadata
+
+title: Online financial consolidations
+description: This topic describes online financial consolidations in General ledger. 
+author: aprilolson
+manager: AnnBe
+ms.date: 07/09/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+# ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: aolson
+ms.search.validFrom: 2018-5-31
+ms.dyn365.ops.version: 8.0.1
+
+---
+
 # Consolidate online
+
+[!include [banner](../includes/banner.md)]
+
+Be sure to read the [Financial consolidations and currency translation topic](financial-consolidations-and-currency-translation.md) before you read this topic.
 
 After you’ve completed your setup, you enter the details of the consolidation on the **Consolidate [Online]** page. When you’ve finished, you can click **OK** or **Batch** to process the consolidation.
 
