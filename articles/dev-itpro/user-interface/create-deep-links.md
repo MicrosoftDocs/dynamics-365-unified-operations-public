@@ -55,7 +55,7 @@ The URL Generator enables developers to create shareable and secured URLs (also 
 Access to the domain/client is controlled through the existing login and SSL mechanism.
 
 ### Form access
-Access to forms is controlled through Menu Items, as Menu Items are the entry points where security is enforced. If a user navigates using a URL that contains a Menu Item the user does not have access to, then the Menu Item security will prevent the form from opening. The user will receive a message indicating they do not have the necessary permissions to open the form. Note also that deep links will only work for Menu Items that allow root navigation. 
+Access to forms is controlled through Menu items, as Menu items are the entry points where security is enforced. If a user navigates using a URL that contains a Menu item that the user does not have access to, then the Menu item security will prevent the form from opening. The user will receive a message indicating that they do not have the necessary permissions to open the form. Note that deep links will only work for Menu items that allow root navigation.
 
 ### Data access
 
