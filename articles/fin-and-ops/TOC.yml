@@ -520,9 +520,15 @@
       - name: Create a free text invoice
         href: ../financials/accounts-receivable/create-free-text-invoice-new.md
       - name: Create a free text invoice template
-        href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md      
+        href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md  
       - name: Correct a free text invoice
         href: ../financials/accounts-receivable/correct-free-text-invoice.md
+      - name: Assign a free text invoice template to a customer
+        href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
+      - name: Generate and post recurring free text invoices
+        href: ../financials/accounts-receivable/tasks/post-recurring-free-text-invoices.md
+      - name: Create sales order invoices
+        href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
       - name: Set up interest rates for an interest code
         href: ../financials/accounts-receivable/set-up-interest-rates-interest-code.md
       - name: Waive, reinstate, or reverse interest fees
@@ -531,32 +537,26 @@
         href: ../financials/accounts-receivable/configure-customer-invoices.md
       - name: Establish customer payment terms
         href: ../financials/general-ledger/tasks/establish-customer-payment-terms.md
+      - name: Establish customer method of payment
+        href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
+      - name: Establish customer payment fees
+        href: ../financials/accounts-receivable/tasks/establish-customer-payment-fees.md
       - name: Set up bills of exchange
         href: ../financials/accounts-receivable/set-up-bills-exchange.md
       - name: Close Accounts receivable
         href: ../financials/accounts-receivable/close-accounts-receivable.md
+      - name: Create a collection letter sequence
+        href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
+      - name: Create a direct debit mandate for a customer
+        href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
+      - name: Create an interest code with a range
+        href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
+      - name: Create a write-off journal for a customer
+        href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
+      - name: Deposit customer payments
+        href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
       - name: Accounts receivable tasks
         items:
-        - name: Assign a free text invoice template to a customer
-          href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
-        - name: Create a collection letter sequence
-          href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
-        - name: Create a direct debit mandate for a customer
-          href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-          name: Create an interest code with a range
-          href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
-        - name: Create sales order invoices
-          href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
-        - name: Create a write-off journal for a customer
-          href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
-        - name: Deposit customer payments
-          href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
-        - name: Establish customer method of payment
-          href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
-        - name: Establish customer payment fees
-          href: ../financials/accounts-receivable/tasks/establish-customer-payment-fees.md
-        - name: Generate and post recurring free text invoices
-          href: ../financials/accounts-receivable/tasks/post-recurring-free-text-invoices.md
         - name: Process collection letters
           href: ../financials/accounts-receivable/tasks/process-collection-letters.md
         - name: Process interest
