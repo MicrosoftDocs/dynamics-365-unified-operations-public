@@ -1,9 +1,44 @@
+---
+# required metadata
+
+title: Financial consolidations and currency translation
+description: This topic describes financial consolidations and currency translation in General ledger. 
+author: aprilolson
+manager: AnnBe
+ms.date: 07/09/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+# ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: aolson
+ms.search.validFrom: 2018-5-31
+ms.dyn365.ops.version: 8.0.1
+
+---
+
 # Financial consolidations and currency translation
-This document takes you through the approach that both Microsoft Dynamics 365 for Finance and Operations and Financial reporting use for consolidations. It describes scenarios that involve multi-company reporting, aggregation, elimination, and minority interest. It also explains how to handle special situations, such as scenarios where legal entities have different fiscal periods or different charts of accounts.
+
+[!include [banner](../includes/banner.md)]
+
+This topic takes you through the approach that both Microsoft Dynamics 365 for Finance and Operations and Financial reporting use for consolidations. It describes scenarios that involve multi-company reporting, aggregation, elimination, and minority interest. It also explains how to handle special situations, such as scenarios where legal entities have different fiscal periods or different charts of accounts.
 
 This document was written for users and functional consultants, and it assumes that readers have a general understanding of Finance and Operations and Financial reporting. Basic setup isn’t covered.
 
-**Note:** The term legal entity is used in Finance and Operations, and the term company is used in Financial reporting. Both these terms are used in this document. However, for the purposes of this document, their meanings are the same.
+> [!NOTE]
+> The term legal entity is used in Finance and Operations, and the term company is used in Financial reporting. Both these terms are used in this document. However, for the purposes of this document, their meanings are the same.
 
 ## Audience
 
@@ -72,9 +107,10 @@ The third option is to use consolidation account groups. You can define as many 
 
 ![Additional consolidation accounts](./media/additional-consolidation-accounts.png "Additional consolidation accounts")
  
-## Consolidate Online 
+## Consolidating online 
 
-To find more information about how to enter details of consolidations online, please see [Consolidate Online](./consolidate-online.md).
+
+To learn how to enter details of consolidations online, see [Consolidate Online](./consolidate-online.md).
 
 ## Managing consolidation transactions
 To view the results of the consolidation, you have multiple options:
@@ -121,7 +157,8 @@ In a company that is defined as an elimination company, click **Elimination jour
 
 Select the company that is the source of the consolidated data, and then select the rule to process. Enter start and end dates to define the date range that is searched for elimination amounts. The **GL posting date** field specifies the date that is used to post the journal to the general ledger. After you click **OK**, you can review the amounts and post the journal.
 
-**Note**: The elimination journal shows the amounts for account values in the currency of their originating transactions, not in the accounting currency. When you review the amounts in the elimination journal, you might find this behavior confusing.
+> [!NOTE]
+> The elimination journal shows the amounts for account values in the currency of their originating transactions, not in the accounting currency. When you review the amounts in the elimination journal, you might find this behavior confusing.
 
 For more information and examples, see Elimination rules.
 
