@@ -60,15 +60,19 @@ The following table shows the POS views that currently support extensions. It al
 | InventoryLookupView             | No                            | Yes                          | Yes                                  |
 | ShowJournalView                 | No                            | Yes                          | Yes                                  |
 | SimpleProductDetailsView        | Yes                           | No                           | Yes                                  |
-| AddressAddEditView              | Yes                           | No                           |  No                                    |
+| AddressAddEditView              | Yes                           | No                           | No                                    |
 | PaymentView                     | No                            | No                           | Yes                                  |
 | PriceCheckView                  | Yes                           | No                           | No                                   |
-| SearchOrdersView                | No                            | Yes                          | No   
-|
-| SearchPickingAndReceivingView   | No                            | Yes                          | No
-|
+| SearchOrdersView                | No                            | Yes                          | No                                   |
+| SearchPickingAndReceivingView   | No                            | Yes                          | Yes                                   |
+| CustomerOrderHistoryView        | No                            | Yes                          | No                                   |
+| SearchStockCountView            | No                            | Yes                          | No                                   |
+| StockCountDetailsView           | No                            | Yes                          | No                                   |
+| ResumeCartView                  | No                            | Yes                          | No                                    |
 
-Note: The above table is getting updated based on the latest realsed version and hotfix. In lower versions some of these extension points will be missing.
+Note: The above table is getting updated based on the latest realsed version and hotfix. In lower versions some of these extension points will not be available.
+
+Also we support filter extension in **Show journal view** and **Search order views** for extensions to add custom filter. 
 
 ## Add a custom column and an app bar button
 
