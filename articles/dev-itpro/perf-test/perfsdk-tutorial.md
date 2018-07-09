@@ -5,7 +5,7 @@ title: Performance SDK and multiuser testing via Visual Studio Online
 description: This topic introduces the Performance SDK and shows how to do multiuser testing via Visual Studio Online. 
 author: jujoh
 manager: AnnBe
-ms.date: 04/24/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
