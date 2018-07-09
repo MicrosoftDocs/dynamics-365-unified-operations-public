@@ -5,7 +5,7 @@ title: Apply the latest platform update to your Dynamics 365 Finance and Operati
 description: This topic explains how to apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations Enterprise edition environment.
 author: tariqbell
 manager: AnnBe
-ms.date: 03/06/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -112,7 +112,8 @@ Platform update packages are released by Microsoft and can be imported from the 
 
 #### Example
 
-```AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="OneBoxDev-runbook.xml"
+```
+AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="OneBoxDev-runbook.xml"
 
     AXUpdateInstaller.exe import -runbookfile=OneBoxDev-runbook.xml
 
