@@ -375,10 +375,10 @@ During an export, the entity name and the field names are exported in uppercase.
 During an import, data management accepts input file in any casing. However, care must be taken to have same format for a given attribute/element in the file. When applying a transformation, ensure that the transformation is using the same casing rules in all references as in the incoming file.
 
 ### Excel format
-During an export, column names will be exported in upper case. Imports are not case sensitive.
+During an export, column names will be exported in uppercase. Imports are not case sensitive.
 
 ### CSV format
-During an export, column names will be exported in upper case. Imports are not case sensitive.
+During an export, column names will be exported in uppercase. Imports are not case sensitive.
 
 ## Tips & tricks
 
