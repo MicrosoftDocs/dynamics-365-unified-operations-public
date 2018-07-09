@@ -210,7 +210,8 @@ This topic explains how to add a new custom column to a POS transaction page usi
     ```
 17. Compile and rebuild the project.
 
-Note: You can find the sample for the custom column in the [Retail SDK](...\RetailSDK\POS\Extensions\SampleExtensions\ViewExtensions\Cart).
+> [!NOTE]
+>  You can find the sample for the custom column in the [Retail SDK](...\RetailSDK\POS\Extensions\SampleExtensions\ViewExtensions\Cart).
 
 ## Validate the customization
 
