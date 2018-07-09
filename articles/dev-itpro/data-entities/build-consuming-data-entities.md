@@ -370,7 +370,7 @@ This completes the walkthrough, where you've seen an external client interacting
 ## Casing rules in data entities
 
 ### XML format
-During an export, the entity name and the field names are exported in upper case. If there is a need to apply a transformation, the transformation must use upper case in all references.
+During an export, the entity name and the field names are exported in uppercase. If there is a need to apply a transformation, the transformation must use uppercase in all references.
 
 During an import, data management accepts input file in any casing. However, care must be taken to have same format for a given attribute/element in the file. When applying a transformation, care must be taken to ensure the transformation is using the same casing rules in all references as in the incoming file.
 
