@@ -5,7 +5,7 @@ title: POS view extension
 description: This topic explains how you can extend existing POS views such as the Customer Add/Edit screen.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/22/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -73,7 +73,7 @@ The following table shows the POS views that currently support extensions. It al
 > [!NOTE]
 > The table shown above is updated based on the latest released version and hotfix. In earlier versions, some of these extension points will not be available.
 
-Filter extensions are also supported in **Show journal view** and **Search order views** for extensions to add custom filters. 
+Filter extensions are also supported in **Show journal view** and **Search order views** to add custom filters. 
 
 ## Add a custom column and an app bar button
 
