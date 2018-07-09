@@ -233,10 +233,10 @@ Once ready follow these steps to download and install the component:
 1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Connector for Microsoft Dynamics AX` form and select the connector you created in the steps above.
 2.	Click on `DOWNLOAD` in the action pane and select the `Async Server Connector Services` and corresponding `Configuration` file. Make sure that the configuration file is always dropped next to the setup file.
 3.	Once downloaded, double click on the installer and follow these steps:
-   1.	Verify the Application Object Server (AOS) URL (the URL that is used to access Retail headquarters), and then select `Next`.
-   2.	If a specific user is required, enter the user name and password that the service should run as. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended, but it can't be used when the database is located on a separate computer. Select `Next` to continue.
-   3.	Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation. 
-   4. Click `Install`.
+  1.	Verify the Application Object Server (AOS) URL (the URL that is used to access Retail headquarters), and then select `Next`.
+  2.	If a specific user is required, enter the user name and password that the service should run as. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended, but it can't be used when the database is located on a separate computer. Select `Next` to continue.
+  3.	Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation. 
+  4. Click `Install`.
 
 > [Note]
 > For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in Create an Azure Active Directory Application.
@@ -251,14 +251,14 @@ Once ready follow these steps to download and install the component:
 1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Connector for Microsoft Dynamics AX` form and select the connector you created in the steps above.
 2.	Click on `DOWNLOAD` in the action pane and select the `Real-time service for Dynamics AX 2012 R3` and corresponding `Configuration` file. Make sure that the configuration file is always dropped next to the setup file.
 3.	Once downloaded, double click on the installer and follow these steps:
-   1. Verify the Application Object Server (AOS) URL (the URL that is used to access Retail headquarters), and then select `Next`.
-   2. Select a valid SSL certificate to use for HTTPS communication. Select `Next `to continue.
-     -	The certificate must use private key storage, and server authentication must be listed in the enhanced key usage property. Additionally, the certificate must be trusted locally, and it can’t be expired. It must be stored in the personal certificate store location on the local computer.
-   3.	If a specific user is required, enter the user name and password that the application pool should run as. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended, but it can't be used when the database is located on a separate computer. Select `Next` to continue.
-   4. Verify the HTTPS port that should be used and verify that the host name of the computer is correct. Select Next to continue.
-     - The HTTPS port is listed in the Store system profile. To access the Store system profile, on the `Retail store details` page, on the `Store systems` FastTab, select the profile ID of the selected Store system. The installer automatically enters the host name. If, for any reason, the host name must be changed for the installation, change it here. The host name must be the FQDN of the system, and it must match the value that you entered on the `Connector for Microsoft Dynamics AX` page earlier in this topic.
-   5. Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation. Then select `Install`.
-     - This application ID and secret can be the same application ID and secret that you used in the Async Server Connector service installation. For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal). When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
+  1. Verify the Application Object Server (AOS) URL (the URL that is used to access Retail headquarters), and then select `Next`.
+  2. Select a valid SSL certificate to use for HTTPS communication. Select `Next `to continue.
+    -	The certificate must use private key storage, and server authentication must be listed in the enhanced key usage property. Additionally, the certificate must be trusted locally, and it can’t be expired. It must be stored in the personal certificate store location on the local computer.
+  3.	If a specific user is required, enter the user name and password that the application pool should run as. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended, but it can't be used when the database is located on a separate computer. Select `Next` to continue.
+  4. Verify the HTTPS port that should be used and verify that the host name of the computer is correct. Select Next to continue.
+    - The HTTPS port is listed in the Store system profile. To access the Store system profile, on the `Retail store details` page, on the `Store systems` FastTab, select the profile ID of the selected Store system. The installer automatically enters the host name. If, for any reason, the host name must be changed for the installation, change it here. The host name must be the FQDN of the system, and it must match the value that you entered on the `Connector for Microsoft Dynamics AX` page earlier in this topic.
+  5. Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation. Then select `Install`.
+    - This application ID and secret can be the same application ID and secret that you used in the Async Server Connector service installation. For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal). When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
 
 ## Cutover steps to switch to N-1
 The following section describes the recommended step by step instructions on how to switch an existing Dynamics AX 2012 R3 channel environment from the Dynamics AX 2012 R3 headquarters to the Dynamics 365 for Retail headquarters. Note, these instructions are generic and different implementations will likely have to deviate from these steps to accommodate specific business or technical requirements.
@@ -317,25 +317,21 @@ The following section describes troubleshooting steps for errors you might encou
 | --- | --- |
 | Event Log |	Microsoft-Dynamics-Commerce-AsyncServerConnectorService/Operational |
 | Sample Event Log Error Message	| Async server connector service encounters error in download timer tick. CorrelationId {73d9d0d3-4d12-42ca-ac65-3f1f947c7840}; Error details: Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.SyncMetadataException: Failed synchronizing metadata. ---> Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.MessageDBOperationException: Failed updating metadata in HQ message DB. ---> System.Data.SqlClient.SqlException: Cannot open database "HQMessageDB" requested by the login. The login failed. Login failed for user 'localhost\RetailAsUser'. |
-| Troubleshooting Steps	| This could have happened because the user who runs the Async server connector service does not have access to the HQ message database. <br><br>To fix the issue run services.msc, check the user who runs the Async server connector service. Provide this user access to HQ message database in SQL. |
+| Troubleshooting Steps	| This could have happened because the user who runs the Async server connector service does not have access to the HQ message database. To fix the issue run services.msc, check the user who runs the Async server connector service. Provide this user access to HQ message database in SQL. |
 
 #### Metadata synchronization fails or CDX Jobs were successfully downloaded but failed to apply
 | Field | Value |
 | --- | --- |
 | Event Log |	Microsoft Dynamics AX Retail : Async Client SynchClientService |
 | Sample Event Log Error Message |	Unable to communicate with server for download. Please check username/password, server and database connections. Error Details: System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to https://localhost:44300/SynchService/DownloadService.svc. This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: Authentication failed because the remote party has closed the transport stream. |
-| Troubleshooting Steps |	This could have happened because of the following reasons.<br>1) The user ID and password that we provide in async client does not match with the channel database User ID and password that we provide in AX.<br>2) The async service end point is not reachable. https://localhost:44300/SynchService/DownloadService.svc <br><br>To fix this issue, <br>1) Launch the Async client configuration utility (AsyncClientConfigurationUtility.exe) from the async client install location. Under the `Async Server connection tab -> Authentication information (case sensitive)` -> Update the Channel database ID, User name and Password fields as per the values provided under N-1 channel database (`Retail -> Headquarters setup -> Channel database`) in AX. <br>2) Now click on `Test connection` in the utility. If the connection is successful, restart the Async client service. If the connection fails, go to N-1 channel database (`Retail -> Headquarters setup -> Channel database`) in AX, update the Username and password, save. Go to `Retail scheduler parameters` in AX and click `Reset metadata synchronization`. This will populate the HQ message database with the new values. Repeat step 1 again.  <br>3) If the async server end point (https://localhost:44300/SynchService/DownloadService.svc) is not reachable, check the bindings of the service and make sure there is a certificate associated. If the issue still exists, check that the `Working folders` were specified for all the Channel database group’s that were linked to `AX2012R3` retail channel schema. |
+| Troubleshooting Steps |	This could have happened because of the following reasons.<br>1) The user ID and password that we provide in async client does not match with the channel database User ID and password that we provide in AX.<br>2) The async service end point is not reachable. https://localhost:44300/SynchService/DownloadService.svc. To fix this issue, 1) Launch the Async client configuration utility (AsyncClientConfigurationUtility.exe) from the async client install location. Under the `Async Server connection tab -> Authentication information (case sensitive)` -> Update the Channel database ID, User name and Password fields as per the values provided under N-1 channel database (`Retail -> Headquarters setup -> Channel database`) in AX. 2) Now click on `Test connection` in the utility. If the connection is successful, restart the Async client service. If the connection fails, go to N-1 channel database (`Retail -> Headquarters setup -> Channel database`) in AX, update the Username and password, save. Go to `Retail scheduler parameters` in AX and click `Reset metadata synchronization`. This will populate the HQ message database with the new values. Repeat step 1 again. 3) If the async server end point (https://localhost:44300/SynchService/DownloadService.svc) is not reachable, check the bindings of the service and make sure there is a certificate associated. If the issue still exists, check that the `Working folders` were specified for all the Channel database group’s that were linked to `AX2012R3` retail channel schema. |
 
 #### CDX Jobs were successfully downloaded but failed to apply
 | Field | Value |
 | --- | --- |
 | Event Log |	Microsoft Dynamics AX Retail : Async Client SynchClientService |
-| Sample Event Log Error Message |	Exception during DownloadAgent.Execute. Error Details: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Dynamics.Retail.StoreConnect.Request.Base, Version=6.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified. 
-File name: 'Microsoft.Dynamics.Retail.StoreConnect.Request.Base, Version=6.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' 
-at Microsoft.Dynamics.Retail.SynchClient.Core.DownloadAgent.ApplySessionFileToClientDatabase(SessionManager sessionMgr, String fileName) 
-at Microsoft.Dynamics.Retail.SynchClient.Core.DownloadAgent.ProcessDownloadSession(DownloadSession session) 
-at Microsoft.Dynamics.Retail.SynchClient.Core.DownloadAgent.Execute() |
-| Troubleshooting Steps	| This could have happened because the AX63 store connect components were not installed on the environment.<br><br> To fix the issue install the AX63 store connect components on the environment that is running the async client component. |
+| Sample Event Log Error Message |	Exception during DownloadAgent.Execute. Error Details: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Dynamics.Retail.StoreConnect.Request.Base, Version=6.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified. File name: 'Microsoft.Dynamics.Retail.StoreConnect.Request.Base, Version=6.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' at Microsoft.Dynamics.Retail.SynchClient.Core.DownloadAgent.ApplySessionFileToClientDatabase(SessionManager sessionMgr, String fileName) at Microsoft.Dynamics.Retail.SynchClient.Core.DownloadAgent.ProcessDownloadSession(DownloadSession session) at Microsoft.Dynamics.Retail.SynchClient.Core.DownloadAgent.Execute() |
+| Troubleshooting Steps	| This could have happened because the AX63 store connect components were not installed on the environment. To fix the issue install the AX63 store connect components on the environment that is running the async client component. |
 
 #### N-1 Async Server Connector Service Communication Exception
 | Field | Value |
@@ -356,9 +352,7 @@ at Microsoft.Dynamics.Retail.SynchClient.Core.DownloadAgent.Execute() |
 | Field | Value |
 | --- | --- |
 | Event Log |	Microsoft Dynamics Retail Modern POS |
-| Sample Event Log Error Message |	Dynamics-Error: LoginViewModel ActivateDevice Logon failed<br>
-ErrorMessage: ; <br>
-ErrorCode: Microsoft_Dynamics_Commerce_Runtime_HeadquarterTransactionServiceMethodCallFailure; |
+| Sample Event Log Error Message |	Dynamics-Error: LoginViewModel ActivateDevice Logon failed. ErrorMessage: ; ErrorCode: Microsoft_Dynamics_Commerce_Runtime_HeadquarterTransactionServiceMethodCallFailure; |
 | MPOS Error on Activation Screen	| DA2001 |
 | Troubleshooting Steps |	Device you are trying to activate is already active. Please deactivate the device and try the activation. |
 
@@ -366,10 +360,7 @@ ErrorCode: Microsoft_Dynamics_Commerce_Runtime_HeadquarterTransactionServiceMeth
 | Field | Value |
 | --- | --- |
 | Event Log |	Microsoft Dynamics Retail Modern POS |
-| Sample Event Log Error Message	| Exception occured: [04/19/2018 19:26:51] Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: An error occurred during logon. ---> Microsoft.Dynamics.Commerce.Runtime.StorageException: Failed to read from the database. See inner exception for details <br>
-DatabaseErrorCode: 0 ---> Microsoft.Dynamics.Commerce.Runtime.Data.DatabaseException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. ---> System.Data.SqlClient.SqlException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. <br>
-at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action'1 wrapCloseInAction) 
-at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) |
+| Sample Event Log Error Message	| Exception occured: [04/19/2018 19:26:51] Microsoft.Dynamics.Commerce.Runtime.UserAuthenticationException: An error occurred during logon. ---> Microsoft.Dynamics.Commerce.Runtime.StorageException: Failed to read from the database. See inner exception for details. DatabaseErrorCode: 0 ---> Microsoft.Dynamics.Commerce.Runtime.Data.DatabaseException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. ---> System.Data.SqlClient.SqlException: Invalid object name 'crt.EMPLOYEEPERMISSIONSVIEW'. at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action'1 wrapCloseInAction) at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) |
 | MPOS Error on Activation Screen |	DZ1001 |
 | Troubleshooting Steps |	Device you are trying to activate is already active. Please deactivate the device and try the activation. |
 
@@ -377,9 +368,7 @@ at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject
 | Field | Value |
 | --- | --- |
 | Event Log |	Microsoft Dynamics Retail Modern POS |
-| Sample Event Log Error Message |	Dynamics-Error: LoginViewModel ActivateDevice Logon failed <br>
-ErrorMessage: Sorry, something went wrong with the encryption on your device. Please contact your system administrator.; <br>
-ErrorCode: MICROSOFT_DYNAMICS_POS_DATAENCRYPTIONERROR; |
+| Sample Event Log Error Message |	Dynamics-Error: LoginViewModel ActivateDevice Logon failed. ErrorMessage: Sorry, something went wrong with the encryption on your device. Please contact your system administrator.; ErrorCode: MICROSOFT_DYNAMICS_POS_DATAENCRYPTIONERROR; |
 | MPOS Error on Activation Screen	| DA3122: Sorry, something went wrong with the encryption on your device. Please contact your system administrator. |
 | Troubleshooting Steps	| Check the RealTime Service profile filed in the CDX Backward compatibility section of the store. This must be set to the RTS profile that you created for N-1. |
 
