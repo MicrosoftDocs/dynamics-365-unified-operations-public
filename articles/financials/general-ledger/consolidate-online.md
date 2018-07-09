@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.0.1
 
 [!include [banner](../includes/banner.md)]
 
-Be sure to read the [Financial consolidations and currency translation topic](financial-consolidations-and-currency-translation.md) before you read this topic.
+Be sure to read the [Financial consolidations and currency translation topic](financial-consolidations-currency-translation.md) before you read this topic.
 
 After you’ve completed your setup, you enter the details of the consolidation on the **Consolidate [Online]** page. When you’ve finished, you can click **OK** or **Batch** to process the consolidation.
 
@@ -93,7 +93,7 @@ Three options are available in the **Apply exchange rate from** field:
 
 ## Additional resources
 
-To see the parent topic that provides more information on consolidation and currency translations, please see [Financial consolidations and currency translation](./financial-consolidations-and-currency-translation.md).
+To see the parent topic that provides more information on consolidation and currency translations, please see [Financial consolidations and currency translation](./financial-consolidations-currency-translation.md).
 
 To find information about scenarios where you might generate consolidate financial statements, please see [Generating Consolidated Financial Statements](./generating-consolidated-financial-statements.md).
 
