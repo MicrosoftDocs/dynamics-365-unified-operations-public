@@ -53,6 +53,16 @@ The following diagram illustrates the high-level overview of the N-1 setup.
 
 ![Phased Rollout (N-1) Architecture Overview](media/CDX/N-1/Overview.jpg)
 
+## Verify N-1 License Key
+Before starting to configure and install the N-1 components, make sure the corresponding license keys are set. These are set automatically when a customer upgrades fron AX 2012 to Dynamics 365 for Retail. However, given that the steps described below require the license key to be set it is worth checkin this before continuing with the remaining steps.
+
+1. Sign in to the Dynamics 365 for Retail headquarters and navigate to the `System administration > Setup > License configuration` form.
+2. Select the `Configuration keys` tabs.
+3. Expand the `Retail` key, then expand the `Retail scheduler` key, and verify the `Retail Data Commerce Exchange backward compatibility` key is set correctly.
+
+> [!Note]
+> If the key above is not set, contact Microsoft support to help enable this key.
+
 ## Setup AAD Accounts
 > [!Important]
 > To help maintain a high level of security across the company, we strongly recommend that you create a new client ID and secret for this installation. This step requires a new Web App.
@@ -180,119 +190,127 @@ Note: This section only applies if the existing Dynamics AX 2012 R3 environment 
 > The fields described below will be set if the Dynamics 365 for Retail headquarters environment was upgraded from the Dynamics AX 2012 R3 headquarters.
 
 1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Channels > Retail stores > All retail stores` form and set the following fields.
-2.	Click on the Retail Channel ID for each of the stores that are mapped to the N-1 environment, set the fields below on the newly opened form, and click save.
-Section	Field	Description	Value for Dr. Martens Environment
-General	Live channel database	The Channel Database this store is mapped to and setup in the steps above.	<lookup from AX 2012 environment>
-General	Channel profile	The Channel Profile this store is mapped to and setup in the steps above.	<lookup from AX 2012 environment>
+2.	Click on the `Retail Channel ID` for each of the stores that are mapped to the N-1 environment, set the fields below on the newly opened form, and click save.
 
-Initialize AX 2012 Retail Scheduler
-1.	Sing in to the Dynamics 365 for Retail headquarters and open the form Initialize AX 2012 Retail Scheduler form and click OK.
+| Section | Field | Description	| Sample Value |
+| --- | --- | --- | --- |
+| General |	Live channel database |	The Channel Database this store is mapped to and setup in the steps above.	| |
+| General |	Channel profile	| The Channel Profile this store is mapped to and setup in the steps above.	| |
 
-Distribution Schedule
-Note, the fields described below will be set if the Dynamics 365 for Retail headquarters environment was upgraded from the Dynamics AX 2012 R3 headquarters.
-1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the Retail > Retail IT > Distribution schedule form.
-2.	For each distribution schedule in the left page that hast the suffix “AX63” make sure the Channel database groups has the new entries created above mapped to it.
+### Initialize AX 2012 Retail Scheduler
+1.	Sign in to the Dynamics 365 for Retail headquarters and open the form `Initialize AX 2012 Retail Scheduler` form and click OK.
 
-Workers
-Note, the fields described below will be set if the Dynamics 365 for Retail headquarters environment was upgraded from the Dynamics AX 2012 R3 headquarters.
-1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the Retail > Employees > Workers form.
-2.	For each of the Workers that will login to the Dynamics AX 2012 R3 environment, click on the name of the worker, then on the new form click on the Retail tab, and in the Retail section set the Password field. 
+### Distribution Schedule
+> [!Note]
+> The fields described below will be set if the Dynamics 365 for Retail headquarters environment was upgraded from the Dynamics AX 2012 R3 headquarters.
 
-Install N-1 Components
+1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Retail IT > Distribution schedule` form.
+2.	For each distribution schedule in the left page that hast the suffix “AX63” make sure the `Channel database groups` has the new entries created above mapped to it.
+
+### Workers
+> [!Note]
+> The fields described below will be set if the Dynamics 365 for Retail headquarters environment was upgraded from the Dynamics AX 2012 R3 headquarters.
+
+1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Employees > Workers` form.
+2.	For each of the `Workers` that will login to the Dynamics AX 2012 R3 environment, click on the name of the worker, then on the new form click on the `Retail` tab, and in the `Retail` section set the `Password` field. 
+
+## Install N-1 Components
 Before you run the Connector for Microsoft Dynamics AX installers, make sure that the following requirements are met:
-•	The installer requires that the Microsoft .NET Framework version 4.5.1 be installed on the system.
-•	The installers install the Connector for Microsoft Dynamics AX applications only on the following operating systems. Before you install any component, you must update the operating system with all service packs and updates that are available for it.
-•	Windows 7 Professional, Enterprise, or Ultimate edition (both x86 and x64 architectures). Home edition and embedded edition aren’t supported.
-•	Windows 8.1 Update 1 Pro or Enterprise edition (both x86 and x64 architectures). Standard edition isn’t supported.
-•	Windows 10 Pro or Enterprise edition (both x86 and x64 architectures). Home edition isn’t supported.
-•	Windows Server 2012 R2 or Windows Server 2016.
+
+- The installer requires that the Microsoft .NET Framework version 4.5.1 be installed on the system.
+- The installers install the Connector for Microsoft Dynamics AX applications only on the following operating systems. Before you install any component, you must update the operating system with all service packs and updates that are available for it.
+- Windows 7 Professional, Enterprise, or Ultimate edition (both x86 and x64 architectures). Home edition and embedded edition aren’t supported.
+- Windows 8.1 Update 1 Pro or Enterprise edition (both x86 and x64 architectures). Standard edition isn’t supported.
+- Windows 10 Pro or Enterprise edition (both x86 and x64 architectures). Home edition isn’t supported.
+- Windows Server 2012 R2 or Windows Server 2016.
  
-Async Server Connector Service
+### Async Server Connector Service
 The installer validates that all prerequisites are met. These prerequisites include SQL prerequisites, such as a local installation of SQL Server, or the alternative prerequisites, such as SQL Command Line Utilities and other required SQL connectivity installations.
 To meet prerequisites, the SQL Server that is connected to must have Full-text search and, at a minimum, support for Transport Layer Security (TLS) 1.2. For Microsoft SQL Server 2012, Service Pack 3 must be installed, at a minimum. For Microsoft SQL Server 2014, Service Pack 2 must be installed.
 If a system restart is required, the installer shows this requirement. Although the restart is recommended, the installer can continue without it.
 Once ready follow these steps to download and install the component:
-1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the Retail > Headquarters setup > Retail scheduler > Connector for Microsoft Dynamics AX form and select the connector you created in the steps above.
-2.	Click on DOWNLOAD in the action pane and select the Async Server Connector Services and corresponding Configuration file. Make sure that the configuration file is always dropped next to the setup file.
+
+1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Connector for Microsoft Dynamics AX` form and select the connector you created in the steps above.
+2.	Click on `DOWNLOAD` in the action pane and select the `Async Server Connector Services` and corresponding `Configuration` file. Make sure that the configuration file is always dropped next to the setup file.
 3.	Once downloaded, double click on the installer and follow these steps:
-A.	Verify the Application Object Server (AOS) URL (the URL that is used to access Retail headquarters), and then select Next.
+  1.	Verify the Application Object Server (AOS) URL (the URL that is used to access Retail headquarters), and then select `Next`.
+  2.	If a specific user is required, enter the user name and password that the service should run as. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended, but it can't be used when the database is located on a separate computer. Select `Next` to continue.
+  3.	Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation. 
+  4. Click `Install`.
 
-B.	If a specific user is required, enter the user name and password that the service should run as. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended, but it can't be used when the database is located on a separate computer . Select Next to continue.
-C.	Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation. 
-D.	Click Install.
-Note, for information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in Create an Azure Active Directory Application.
-When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
-4.	After an application ID (client ID) and secret are created, the application ID must be accepted in Retail. Navigate to Retail > Headquarters setup > Azure Active Directory applications. Enter the client ID in the Client ID column, enter descriptive text in the Name column, and enter RetailServiceAccount in the User ID column.
-5.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the Retail > Headquarters setup > Parameters > Retail shared parameters form, select Identity providers on the left pane, and select the provider that begins with HTTPS://sts.windows.net/. The values on the Relying parties FastTab are set, based on your selection.
-6.	On the Relying parties FastTab, select +Add. Enter the client ID that was created for this installation. Set the Type field to Public and the UserType field to Worker. Then, on the Action Pane, select Save.
-7.	On the Action Pane, select Save. 
-N-1 Realtime Service   
-1.	Sing in to the Dynamics 365 for Retail headquarters and navigate to the Retail > Headquarters setup > Retail scheduler > Connector for Microsoft Dynamics AX form and select the connector you created in the steps above.
-2.	Click on DOWNLOAD in the action pane and select the Real-time service for Dynamics AX 2012 R3 and corresponding Configuration file. Make sure that the configuration file is always dropped next to the setup file.
+> [Note]
+> For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in Create an Azure Active Directory Application.
+> When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
+
+4.	After an application ID (client ID) and secret are created, the application ID must be accepted in Retail. Navigate to `Retail > Headquarters setup > Azure Active Directory applications`. Enter the client ID in the `Client ID` column, enter descriptive text in the Name column, and enter **RetailServiceAccount** in the `User ID` column.
+5.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Parameters > Retail shared parameters` form, select `Identity providers` on the left pane, and select the provider that begins with **HTTPS://sts.windows.net/**. The values on the `Relying parties` FastTab are set, based on your selection.
+6.	On the `Relying parties` FastTab, select `+ Add`. Enter the client ID that was created for this installation. Set the `Type` field to **Public** and the `UserType` field to **Worker**. Then, on the Action Pane, select Save.
+7.	On the Action Pane, select `Save`.
+
+### N-1 Realtime Service   
+1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Connector for Microsoft Dynamics AX` form and select the connector you created in the steps above.
+2.	Click on `DOWNLOAD` in the action pane and select the `Real-time service for Dynamics AX 2012 R3` and corresponding `Configuration` file. Make sure that the configuration file is always dropped next to the setup file.
 3.	Once downloaded, double click on the installer and follow these steps:
-A.	Verify the Application Object Server (AOS) URL (the URL that is used to access Retail headquarters), and then select Next.
+  1. Verify the Application Object Server (AOS) URL (the URL that is used to access Retail headquarters), and then select `Next`.
+  2. Select a valid SSL certificate to use for HTTPS communication. Select `Next `to continue.
+    -	The certificate must use private key storage, and server authentication must be listed in the enhanced key usage property. Additionally, the certificate must be trusted locally, and it can’t be expired. It must be stored in the personal certificate store location on the local computer.
+  3.	If a specific user is required, enter the user name and password that the application pool should run as. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended, but it can't be used when the database is located on a separate computer. Select `Next` to continue.
+  4. Verify the HTTPS port that should be used and verify that the host name of the computer is correct. Select Next to continue.
+    - The HTTPS port is listed in the Store system profile. To access the Store system profile, on the `Retail store details` page, on the `Store systems` FastTab, select the profile ID of the selected Store system. The installer automatically enters the host name. If, for any reason, the host name must be changed for the installation, change it here. The host name must be the FQDN of the system, and it must match the value that you entered on the `Connector for Microsoft Dynamics AX` page earlier in this topic.
+  5. Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation. Then select `Install`.
+    - This application ID and secret can be the same application ID and secret that you used in the Async Server Connector service installation. For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal). When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
 
-B.	Select a valid SSL certificate to use for HTTPS communication. Select Next to continue.
-i.	The certificate must use private key storage, and server authentication must be listed in the enhanced key usage property. Additionally, the certificate must be trusted locally, and it can’t be expired. It must be stored in the personal certificate store location on the local computer.
-
-C.	If a specific user is required, enter the user name and password that the application pool should run as. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended, but it can't be used when the database is located on a separate computer. Select Next to continue.
-D.	Verify the HTTPS port that should be used and verify that the host name of the computer is correct. Select Next to continue.
-
-i.	The HTTPS port is listed in the Store system profile. To access the Store system profile, on the Retail store details page, on the Store systems FastTab, select the profile ID of the selected Store system.
-
-The installer automatically enters the host name. If, for any reason, the host name must be changed for the installation, change it here. The host name must be the FQDN of the system, and it must match the value that you entered on the Connector for Microsoft Dynamics AX page earlier in this topic.
-E.	Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation. Then select Install.
-i.	This application ID and secret can be the same application ID and secret that you used in the Async Server Connector service installation. For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in Create an Azure Active Directory Application.
-
-When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
-
-Cutover steps to switch to N-1
+## Cutover steps to switch to N-1
 The following section describes the recommended step by step instructions on how to switch an existing Dynamics AX 2012 R3 channel environment from the Dynamics AX 2012 R3 headquarters to the Dynamics 365 for Retail headquarters. Note, these instructions are generic and different implementations will likely have to deviate from these steps to accommodate specific business or technical requirements.
 
-Prerequisites
+### Prerequisites
 Follow these steps to prepare your environment for the cutover.
-Step	Details	Timeline	How to Validate this is done	Date for Dr. Martens Go-Live
-Deploy Dynamics 365 for Retail headquarters	The Dynamics 365 for Retail headquarters is up and running. The Dynamics 365 for Retail Cloud POS (CPOS) can be used to validate functionality on the environment.	Weeks or months before the cutover.		TBD
-Install Dynamics 365 for Retail Application (X++) KBs	Install KBs listed below to ensure all N-1 related issues are addressed.	Weeks or months before the cutover.		TBD
-Setup AAD Accounts	Follow the instructions on the “Setup AAD Accounts” section above to create the accounts needed for the N-1 components to authenticate against the Dynamics 365 for Retail headquarters.	Weeks or months before the cutover.		TBD
-Configure the Dynamics 365 for Retail headquarters	Follow the instructions on the “Configure N-1 Components” section above to configure all the settings for the N-1 components before they are installed.	Weeks or months before the cutover.		TBD
-Install N-1 Realtime Service component	Follow the instructions on the “Install N-1 Components” section above to install the N-1 components. 
 
-Note, the N-1 Async Server Connector Service component should be installed but immediately disabled to ensure that we do not mix Dynamics AX 2012 R3 and Dynamics 365 CDX packages.	Weeks or months before the cutover.		TBD
+| Step | Details | Timeline | How to Validate this is done	|
+| --- | --- | --- | --- |
+| Deploy Dynamics 365 for Retail headquarters |	The Dynamics 365 for Retail headquarters is up and running. The Dynamics 365 for Retail Cloud POS (CPOS) can be used to validate functionality on the environment. |	Weeks or months before the cutover. |	|
+| Install Dynamics 365 for Retail Application (X++) KBs |	Install KBs listed below to ensure all N-1 related issues are addressed. |	Weeks or months before the cutover. | |
+| Setup AAD Accounts |	Follow the instructions on the `Setup AAD Accounts` section above to create the accounts needed for the N-1 components to authenticate against the Dynamics 365 for Retail headquarters.	| Weeks or months before the cutover. | |
+| Configure the Dynamics 365 for Retail headquarters |	Follow the instructions on the `Configure N-1 Components` section above to configure all the settings for the N-1 components before they are installed.	| Weeks or months before the cutover. | |
+| Install N-1 Realtime Service component	| Follow the instructions on the `Install N-1 Components` section above to install the N-1 components. Note, the N-1 Async Server Connector Service component should be installed but immediately disabled to ensure that we do not mix Dynamics AX 2012 R3 and Dynamics 365 CDX packages. |	Weeks or months before the cutover. |
 
-Preparation
+### Preparation
 Follow these steps to prepare a few days before the cutover is scheduled.
-Step	Details	Timeline	How to Validate this is done	Date for Dr. Martens Go-Live
-Stop all Dynamics AX 2012 R3 download jobs	Make sure these are stopped in the Dynamics AX 2012 R3 headquarters.	At least couple days before.	All packages in the Dynamics AX 2012 R3 network share for upload jobs are processed and no new packages appear.	TBD
-Execute full sync on all “AX63” CDX download jobs in Dynamics 365 for Retail headquarters.	Run the CDX download jobs to ensure the packages are generated and dropped in the Azure blob storage to be consumed by the N-1 Async Server Connector Service during cutover.	At least couple days before.	CDX download jobs are in “Available” state on the “Download Sessions” form in the Dynamics 365 for Retail headquarters.	TBD
 
-Cutover Steps
+| Step | Details | Timeline | How to Validate this is done	|
+| --- | --- | --- | --- |
+| Stop all Dynamics AX 2012 R3 download jobs |	Make sure these are stopped in the Dynamics AX 2012 R3 headquarters. |	At least couple days before.	| All packages in the Dynamics AX 2012 R3 network share for upload jobs are processed and no new packages appear.	|
+| Execute full sync on all `AX63` CDX download jobs in Dynamics 365 for Retail headquarters |	Run the CDX download jobs to ensure the packages are generated and dropped in the Azure blob storage to be consumed by the N-1 Async Server Connector Service during cutover.	| At least couple days before. |	CDX download jobs are in “Available” state on the “Download Sessions” form in the Dynamics 365 for Retail headquarters.	|
+
+### Cutover Steps
 Follow these steps below in order during the actual cutover.
-Step	Details	Timeline	How to Validate this is done	Date and Time for Dr. Martens Go-Live
-1. Close all shifts	Make sure all shifts are closed.	After store closing	Manually validate with the stores that the shifts are closed.	TBD
-2. Cleanup any suspended transactions	Make sure all suspended transactions are cleaned up.		Manually validate with the stores that the shifts are closed.	TBD
-3. Synchronize all transactional data	Make sure all transactional data is synchronized through the CDX Upload jobs to the Dynamics AX 2012 R3 headquarters.		All packages in the Dynamics AX 2012 R3 network share for upload jobs are processed and no new packages appear.	TBD
-4. Disable Dynamics AX 2012 R3 CDX upload jobs	Make sure all Dynamics 2012 R3 upload jobs are disabled so no packages are being picked up anymore.		Manually validate through the Dynamics AX 2012 R3 headquarters UI.	TBD
-5. Shut down the Dynamics AX 2012 R3 Realtime Service	Connect to the server hosting the Dynamics AX 2012 R3 Realtime Service, open Internet Information Services (IIS), right click on the Dynamics AX 2012 R3 Realtime Service and stop the service.		Manually validate in IIS that the service is stopped.	TBD
-6. Execute “Reset metadata synchronization” in Dynamics 365 for Retail headquarters	Navigate to the “Retail > Headquarters setup > Retail scheduler > Connector for Microsoft Dynamics AX” form in AX and click the “Reset metadata synchronization” button to rese the “HQMessageDB” on the Dynamics AX 2012 R3 environment for N-1 cutover.		TBD	TBD
-7. Turn on N-1 Async Server Connector Service	Connect to the server hosting the N-1 Async Server Connector Service and enable the windows service.		Download jobs in the Dynamics 365 for Retail headquarters “Download Sessions” form will move from “Available” to “Applied”.	TBD
+
+| Step | Details | Timeline | How to Validate this is done	|
+| --- | --- | --- | --- |
+| 1. Close all shifts	| Make sure all shifts are closed.	| After store closing |	Manually validate with the stores that the shifts are closed.	|
+| 2. Cleanup any suspended transactions	| Make sure all suspended transactions are cleaned up.	| *After previous step* |	Manually validate with the stores that the shifts are closed.	|
+| 3. Synchronize all transactional data	| Make sure all transactional data is synchronized through the CDX Upload jobs to the Dynamics AX 2012 R3 headquarters.		| *After previous step* | All packages in the Dynamics AX 2012 R3 network share for upload jobs are processed and no new packages appear.	|
+| 4. Disable Dynamics AX 2012 R3 CDX upload jobs |	Make sure all Dynamics 2012 R3 upload jobs are disabled so no packages are being picked up anymore. | *After previous step* |	Manually validate through the Dynamics AX 2012 R3 headquarters UI.	|
+| 5. Shut down the Dynamics AX 2012 R3 Realtime Service	| Connect to the server hosting the Dynamics AX 2012 R3 Realtime Service, open Internet Information Services (IIS), right click on the Dynamics AX 2012 R3 Realtime Service and stop the service. | *After previous step* |	Manually validate in IIS that the service is stopped.	|
+| 6. Execute `Reset metadata synchronization` in Dynamics 365 for Retail headquarters	| Navigate to the `Retail > Headquarters setup > Retail scheduler > Connector for Microsoft Dynamics AX` form in AX and click the `Reset metadata synchronization` button to reset the `HQMessageDB` on the Dynamics AX 2012 R3 environment for N-1 cutover. |	*After previous step* |
+| 7. Turn on N-1 Async Server Connector Service	| Connect to the server hosting the N-1 Async Server Connector Service and enable the windows service. | *After previous step* |	Download jobs in the Dynamics 365 for Retail headquarters `Download Sessions` form will move from `Available` to `Applied`.	|
 
 The diagram below is a visual representation of the steps described above.
- 
-Troubleshooting  Guide
+
+![Phased Rollout (N-1) Architecture Overview](media/CDX/N-1/Cutover.jpg)
+
+## Troubleshooting  Guide
 The following section described common problems you might encounter and the corresponding steps to investigate or recover from the issue.
 
-Runtime
+### Runtime
 The following section describes troubleshooting steps for errors you might encounter during the runtime of the application.
 
-Metadata synchronization fails
-Event Log	Microsoft-Dynamics-Commerce-AsyncServerConnectorService/Operational
-
-Sample Event Log Error Message	Async server connector service encounters error in download timer tick. CorrelationId {4c9cd9a0-d4e3-43e5-80da-59ea2eb01acf}; Error details: Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.SyncMetadataException: Failed synchronizing metadata. ---> Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.MessageDBOperationException: Failed updating metadata in HQ message DB. ---> System.Data.SqlClient.SqlException: A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.) ---> System.ComponentModel.Win32Exception: The certificate chain was issued by an authority that is not trusted 
-MPOS Error on Activation Screen	-
-Troubleshooting Steps	This could have happened because the Synch service web.config connection string has the TrustServerCertificate set to false.
- 
-To fix the issue browse the Sync service website and open the web.config. Find the connectionStrings section, update the TrustServerCertificate to True if it is false.
+#### Metadata synchronization fails
+| Field | Value |
+| --- | --- |
+| Event Log |	Microsoft-Dynamics-Commerce-AsyncServerConnectorService/Operational |
+| Sample Event Log Error Message	| Async server connector service encounters error in download timer tick. CorrelationId {4c9cd9a0-d4e3-43e5-80da-59ea2eb01acf}; Error details: Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.SyncMetadataException: Failed synchronizing metadata. ---> Microsoft.Dynamics.Retail.AsyncServerConnector.Service.Exceptions.MessageDBOperationException: Failed updating metadata in HQ message DB. ---> System.Data.SqlClient.SqlException: A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.) ---> System.ComponentModel.Win32Exception: The certificate chain was issued by an authority that is not trusted |
+| Troubleshooting Steps	| This could have happened because the Synch service web.config connection string has the TrustServerCertificate set to false. To fix the issue browse the Sync service website and open the web.config. Find the connectionStrings section, update the TrustServerCertificate to True if it is false. |
 
 Metadata synchronization fails
 Event Log	Microsoft-Dynamics-Commerce-AsyncServerConnectorService/Operational
