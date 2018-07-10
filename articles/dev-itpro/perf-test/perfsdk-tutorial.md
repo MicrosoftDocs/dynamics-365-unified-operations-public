@@ -5,7 +5,7 @@ title: Performance SDK and multiuser testing via Visual Studio Online
 description: This topic introduces the Performance SDK and shows how to do multiuser testing via Visual Studio Online. 
 author: jujoh
 manager: AnnBe
-ms.date: 04/24/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -198,7 +198,7 @@ For this example, you will use the ProcureToPay.cs file. To start Visual Studio,
 
     [![Updated CloudEnvironment.Config file](./media/PerfSDKUserFormatExample.PNG)](./media/PerfSDKUserFormatExample.PNG)
 
-3. Open a Command Prompt window, and navigate to the **PerfSDK** folder. Run the following command to create test users for your environment.
+3. Open a Command Prompt window as an administrator, and navigate to the **PerfSDK** folder. Run the following command to create test users for your environment.
 
     ```
     MS.Dynamics.Performance.CreateUsers.exe [UserCount] [CompanyCode]
