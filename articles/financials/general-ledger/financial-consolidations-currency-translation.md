@@ -52,15 +52,7 @@ Financial reporting can consolidate multiple companies during report generation.
 
 The following illustrations show the steps for doing consolidation in Finance and Operations and Financial reporting.
 
-Users can use Consolidation Online, Financial reporting, or a combination. Their choice depends on the needs of their company and the preferences of their auditors.
-
-#### Consolidate Online in Finance and Operations
-
-![Consolidate Online in Finance and Operations](./media/consolidate-online-in-fin-op.png "Consolidate Online in Finance and Operations")
- 
-#### Consolidation by using Financial reporting
-
-![Consolidation by using Financial reporting](./media/consolidate-financial-reporting.png "Consolidation by using Financial reporting")
+Users can use Consolidate Online, Financial reporting, or a combination. Their choice depends on the needs of their company and the preferences of their auditors.
  
 ## Consolidations
 
@@ -160,7 +152,7 @@ Select the company that is the source of the consolidated data, and then select 
 > [!NOTE]
 > The elimination journal shows the amounts for account values in the currency of their originating transactions, not in the accounting currency. When you review the amounts in the elimination journal, you might find this behavior confusing.
 
-For more information and examples, see Elimination rules.
+For more information and examples, see [Elimination rules](./elimination-rules.md).
 
 ## Currency revaluation in a consolidation company
 
@@ -168,7 +160,7 @@ When you consolidate data from one accounting currency to another, you must stil
 
 For more information about currency revaluation in a consolidation company see Currency revaluation in a consolidation company.
 
-For more information about how currency revaluation works in the **General ledger** module, see Foreign currency revaluation for General ledger.
+For more information about how currency revaluation works in the **General ledger** module, see [Foreign currency revaluation for General ledger](/general-ledger/foreign-currency-revaluation-general-ledger.md).
 
 ### Additional information
 - All posting layers are consolidated when the consolidation is processed.
@@ -178,7 +170,7 @@ For more information about how currency revaluation works in the **General ledge
 
 ## Benefits of using Financial reporting for financial consolidations and currency translation, or to complement Consolidate online for consolidated reporting
 Customers who use Financial reporting for financial consolidations and currency translation, or to complement Consolidate online for consolidated reporting, will gain various benefits:
-- **Depth of data** – You can create consolidated reports that bring together actual and budget data at both the account level and the dimension level. For Finance and Operations, this data includes data from both budge control and Bbudget planning.
+- **Depth of data** – You can create consolidated reports that bring together actual and budget data at both the account level and the dimension level. For Finance and Operations, this data includes data from both budget control and budget planning.
 - **Dynamic consolidations** – Consolidations can be done at any time and at any level in the organizational hierarchy.
 - **Complete audit capabilities** – All dimensions, accounts, and transactional detail are maintained for analysis and audit. In addition, Financial reporting provides full drill-back to the original transaction in any of the legal entities that are consolidated.
 - **Streamlined currency translation** – After minimal setup in Finance and Operations, you can translate any Financial reporting report into any reporting currency that has been set up. In addition, you can set up an unlimited number of reporting currencies.
