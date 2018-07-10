@@ -5,7 +5,7 @@ title: Create and use deep links
 description: Learn how to create shareable, secured URLs to forms and records.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ Learn how to create shareable, secured URLs to forms and records.
 Overview
 --------
 
-The URL Generator enables developers to create shareable and secured URLs (a.k.a. deep links) to specific forms that are root navigable. An optional data context can be passed to the form to display filtered or specific data when the form is opened. The URL Generator enables scenarios such as embedding links in reports, emails, and external applications, enabling users to quickly and easily locate the specified forms or data by simply navigating using the generated link.
+The URL Generator enables developers to create shareable and secured URLs (also known as deep links) to specific forms that are root navigable. An optional data context can be passed to the form to display filtered or specific data when the form is opened. The URL Generator enables scenarios such as embedding links in reports, email, and external applications, enabling users to quickly and easily locate the specified forms or data by simply navigating using the generated link.
 
 ### Purpose
 
@@ -55,7 +55,7 @@ The URL Generator enables developers to create shareable and secured URLs (a.k.a
 Access to the domain/client is controlled through the existing login and SSL mechanism.
 
 ### Form access
-Access to forms is controlled through Menu Items, as Menu Items are the entry points where security is enforced. If a user navigates using a URL that contains a Menu Item the user does not have access to, then the Menu Item security will prevent the form from opening. The user will receive a message indicating they do not have the necessary permissions to open the form. Note also that deep links will only work for Menu Items that allow root navigation. 
+Access to forms is controlled through Menu items, as Menu items are the entry points where security is enforced. If a user navigates using a URL that contains a Menu item that the user does not have access to, then the Menu item security will prevent the form from opening. The user will receive a message indicating that they do not have the necessary permissions to open the form. Note that deep links will only work for Menu items that allow root navigation.
 
 ### Data access
 

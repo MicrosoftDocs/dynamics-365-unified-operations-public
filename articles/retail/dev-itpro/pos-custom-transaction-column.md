@@ -5,7 +5,7 @@ title: Add custom columns to POS transaction grid
 description: This topic explains how to add a new custom column to a POS transaction page using the screen layout designer. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -48,7 +48,8 @@ This topic explains how to add a new custom column to a POS transaction page usi
 7. After installing, enter your AAD credentials to launch the designer.
 8. In the designer, right-click the transaction grid (receipt grid) and select **Customize**.
 9. In the **Customization – Receipt** window, select the **lines** in the pivot panel drop-down menu.
-   **Note: Similarly, you can add custom column to the Payment and Delivery tab.**
+   > [!NOTE]
+   > Similarly, you can add a custom column to the **Payment and Delivery** tab.
 10. In the **Available columns** window, select **Custom column 1**, and then click the **> (arrow)** button to move the column to the **Selected** columns.
 11. Click **OK** to save and close the window.
 12. Adjust the column width in the transaction grid using the **Screen layout** designer. Make sure the column is visible.
@@ -162,7 +163,8 @@ This topic explains how to add a new custom column to a POS transaction page usi
         }
     }
     
-    Note: If you are adding custom column to payments or delivery grid, you will update the manifest like below:
+    > [!NOTE]
+    > If you are adding a custom column to payment or delivery grid, you need to update the manifest with the following code.
     "paymentsGrid": {
         "customColumn1": { "modulePath": "Cart/PaymentsGrid/CustomColumn1Configuration" }
      },
@@ -208,7 +210,8 @@ This topic explains how to add a new custom column to a POS transaction page usi
     ```
 17. Compile and rebuild the project.
 
-Note: You can find the sample for the custom column in Retail SDK (...\RetailSDK\POS\Extensions\SampleExtensions\ViewExtensions\Cart)
+> [!NOTE]
+>  You can find the sample for the custom column in the [Retail SDK](./retail-sdk/retail-sdk-overview.md).
 
 ## Validate the customization
 
