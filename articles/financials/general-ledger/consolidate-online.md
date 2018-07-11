@@ -49,10 +49,10 @@ Here is an explanation of the various fields on this tab:
 - **Use consolidation account** – If you set this option to **Yes**, the **Select consolidation account from** field becomes available. In this field, select whether you want to consolidate all accounts to the consolidation account that is set on the **Main accounts** page, or whether you want to select the account from one of the consolidation account groups.
 - **Consolidation account group** – Select the group to use for the main account mapping for the consolidation.
 - **Consolidation period** – Use the fields in this section to define the consolidation period.
-- **From** and **To** – Specify a range of dates for the consolidation. If you leave these fields blank, the consolidation will be processed for all periods that are defined in the ledger calendar for the company.
+- **From** and **To** – Specify a range of dates for the consolidation. If you leave these fields blank, the consolidation will be processed for all periods that are defined in the ledger calendar for the company, which is not recommended.
 - **Include actual amounts** – Set this option to **Yes** to consolidate your actual data.
 - **Include budget amounts** – Set this option to **Yes** to consolidate data from the budget register.
-- **Rebuild balances during consolidation** – We don’t recommend to that you set this option to **Yes**. Instead, process it as a separate batch job.
+- **Rebuild balances during consolidation** – We don’t recommend that you set this option to **Yes**. Instead, process it as a separate batch job.
 - **Budget models** – If you’ve selected to consolidate budget data, use the fields in this section to define the budget models.
 - **From** and **To** – Specify the range of models to use.
 - **Budget rate type** – Select the type of budget rate to use for currency translation of budget
@@ -80,7 +80,7 @@ On the **Elimination** tab, you have three options for processing eliminations:
 
 ![Elimination consolidate online](./media/elimination-cons-onl.png "Elimination consolidate online")
  
-For more information about eliminations see the Elimination rules section later in this document.
+For more information about eliminations see the [Elimination rules](/financials/general-ledger/elimination-rules.md) article.
 
 ## Currency translation
 On the Currency translation tab, you define the legal entity, account and exchange rate type, and rate.
