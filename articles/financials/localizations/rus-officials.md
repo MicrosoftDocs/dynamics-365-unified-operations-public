@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up officials who generate transportation invoices and job tickets
-description: This topic explains how to set up officials who generate transportation invoices and job tickets in Microsoft Dynamics 365 for Finance and Operations in Russia.
+title: Set up officials
+description: This topic explains how to set up officials in Microsoft Dynamics 365 for Finance and Operations in Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 7/9/2018
+ms.date: 7/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,10 +28,14 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Set up officials who generate transportation invoices and job tickets
+# Set up officials 
 [!include [banner](../includes/banner.md)]
 
-This topic applies to features in the **Inventory management** module. It doesn't apply to features in the [Warehouse management](warehouse-management.md) module.
+This topic explains how to set up officials who generate transportation invoices and job tickets in Microsoft Dynamics 365 for Finance and Operations in Russia, and who are involved in various reports.
+
+## Set up officials who generate transportation invoices and job tickets
+
+This procedure applies to features in the **Inventory management** module. It doesn't apply to features in the [Warehouse management](warehouse-management.md) module.
 
 Use the **Officials** page to set up the officials who are involved in the transportation of cargo. You can select the officials who are responsible for intercompany and intracompany transactions.
 
@@ -93,9 +97,9 @@ Use the **Officials** page to set up officials for the **Counting act (INV-6)** 
 5. In the **Name** field, enter the name of the official.
 6. In the **Job title** field, select the job title of the official.
 
-## Set up officials for the NVFA statement of writing-off (No. MB-8)
+## Set up officials for the NVFA statement of writing-off (No. MB-8) report
 
-Use the **Officials** page to set up the members and chair of the commission that is responsible for the NVFA Statement of writing-off (No. MB-8).
+Use the **Officials** page to set up the members and chair of the commission that is responsible for the NVFA Statement of writing-off (No. MB-8) report.
 
 1. Select **Organization administration** \> **Setup** \> **Contacts** \> **Officials**.
 2. On the **Fixed assets** tab, select **NVFA Statement of writing-off (No. MB-8)**.
