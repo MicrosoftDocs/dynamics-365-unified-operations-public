@@ -35,7 +35,7 @@ This topic explains how to set up officials who generate transportation invoices
 
 ## Set up officials who generate transportation invoices and job tickets
 
-This procedure applies to features in the **Inventory management** module. It doesn't apply to features in the [Warehouse management](warehouse-management.md) module.
+This procedure applies to features in the **Inventory management** module. It doesn't apply to features in [Warehouse management](../../supply-chain/warehousing/warehouse-management-overview.md).
 
 Use the **Officials** page to set up the officials who are involved in the transportation of cargo. You can select the officials who are responsible for intercompany and intracompany transactions.
 
@@ -69,7 +69,7 @@ You must set up records for the officials who are responsible for transportation
 
 ## Set up officials for the counting list (INV-5) report
 
-This procedure applies to features in the **Inventory management** module. It doesn't apply to features in the [Warehouse management](warehouse-management.md) module.
+This procedure applies to features in the **Inventory management** module. It doesn't apply to features in [Warehouse management](../../supply-chain/warehousing/warehouse-management-overview.md).
 
 Use the **Officials** page to set up the officials who are involved in the item counting process for the **Counting list (INV-5)** report.
 
@@ -86,7 +86,7 @@ Use the **Officials** page to set up the officials who are involved in the item 
 
 ## Set up officials for the Counting act INV-6 report
 
-This procedure applies to features in the **Inventory management** module. It doesn't apply to features in the [Warehouse management](warehouse-management.md) module.
+This procedure applies to features in the **Inventory management** module. It doesn't apply to features in [Warehouse management](../../supply-chain/warehousing/warehouse-management-overview.md).
 
 Use the **Officials** page to set up officials for the **Counting act (INV-6)** report. You can identify the company officials who are involved in the item counting process for the report.
 
