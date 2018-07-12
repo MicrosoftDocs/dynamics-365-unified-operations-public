@@ -723,12 +723,14 @@ For new entities, you must also override the factory’s **BuildEntitySets()** m
 
 Before calling the new retail server API please make sure you have performed the below steps:
 
-1.  Register your new retail server extension in Retail server web.config file:  &lt;add source="assembly" value="**Your assembly name**" /&gt;
+1.  Register your new retail server extension in Retail server web.config file:  &lt;add source="assembly" value="**Your assembly name**" /&gt; under the extensionComposition section
 2.  Add the new retail server extension in the Customization.settings file. You can find this file in RetailSdk\\BuildTools&lt;RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;$(SdkReferencesPath)\\**Your assembly name.dll**&lt;/RetailServerLibraryPathForProxyGeneration&gt; &lt;/PropertyGroup&gt;
-3.  Drop both the CRT and Retail server extension dlls into the retail server bin folder. If you have any CRT extension that is related to the new retail server api then update that information in commerceRuntime configuration file under retail server bin folder.
+3.  Drop both the CRT and Retail server extension dlls into the **…\\RetailServer\\webroot\\bin\\Ext** folder. If you have any CRT extension that is related to the new retail server api then update that information in CommerceRuntime.Ext.config file under **…\\RetailServer\\webroot\\bin\\Ext** folder.
 4.  &lt;add source="assembly" value="**Your assembly name**" /&gt;
 5.  Use inetmgr to browse to the retail server metadata and verify whether your entity is exposed in the xml.
 6.  Compile and build the mpos/Cloud POS to regenerate the proxy. During compile mpos regenerates all the entities defined in the retail server metadata, so that you can call the new entities using the commerce context like below:
+
+**Note: You should not change or add anything in Retail server web.config file or Retail server folder expect the extension composition section and copying custom assemblies in bin\Ext folder because during deployment we will merge only the extensionComposition section in the web.config file and all the other sectionswill  will be overwritten and only the assemblies in …\\RetailServer\\webroot\\bin\\Ext folder be merged all other assemblies or file will be overwritten based on the latest binary package. You should not use the Retail server web.config file to add or modify any custom app settings.**
 
 #### Cross loyalty sample:
 
