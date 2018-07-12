@@ -5,7 +5,7 @@ title: Apply updates to a cloud environment
 description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a cloud environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 11/16/2017
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -43,6 +43,9 @@ This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS)
 The following topologies support package deployment that uses automated flows in LCS:
 - **LCS Implementation Project** – All environment types are supported. Automated package application is a self-service operation in all environments except production environments. For production environments, customers must use LCS to submit a request to apply packages.
 - **LCS Partner and Trial Projects** – All environment types are supported, except multi-box dev/test topologies.
+
+> [!NOTE]
+> Regardless of the project type, if you have a build environment, you can only use LCS to apply Binary updates and Data upgrade packages. You can't use LCS to apply an Application Deployable package.
 
 For other topologies (below), you must use Remote Desktop Protocol (RDP) to connect to the environment and install from the command line. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
 
