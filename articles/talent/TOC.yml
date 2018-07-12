@@ -16,6 +16,8 @@
       href: extend-talent-functionality.md
     - name: Access preview features in Dynamics 365 for Talent
       href: access-preview-feature.md
+    - name: Configure Talent to support Payroll integration
+      href: configure-payroll-integration.md
   - name: Develop a human resources strategy
     href: departments-jobs-positions.md
     items:
