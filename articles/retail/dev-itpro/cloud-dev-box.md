@@ -5,7 +5,7 @@ title: Configuration steps for Retail developers working on cloud-hosted develop
 description: This topic demonstrates the configuration steps for Retail developers working on cloud-hosted development machines.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 05/03/2018
+ms.date: 07/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -37,8 +37,11 @@ As of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Pla
 
 You can use a remote desktop (RDP) to access these restricted environments using the non-admin user provided on the Lifecycle Services (LCS) environment page. For more information about environments that don't allow administrator access, see [Development and build VMs that don't allow administrator access FAQ](../../dev-itpro/sysadmin/VMs-no-admin-access.md).
 
-Retail developers do not have administrative access to cloud-hosted development virtual machines. Modern POS (MPOS) development is possible if you use Cloud POS. Before starting development on any Retail application, configure Cloud POS as follows:
+If you deploy an environment using Microsoft Azure subscription in Lifecycle Services (LCS), then you will not have admin access in this environment. If you need admin access in your environment, use your Azure subscription and deploy the environment using LCS. You can also use the downloadable VHD and deploy it in your Azure virtual machine (VM) or host it locally to get full admin access.
 
+If you don’t have admin access in the environment, you will not be able to test and debug using Modern POS. You can still do all retail customization for POS if you are testing the customization, you must use Cloud POS in that environment. From a customization perspective, there is no difference between Cloud POS and Modern POS - any customization will work both in Cloud POS and Modern POS. There is no additional logic or code for customization completed in Cloud POS in order to work in Modern POS or vice versa, unless you added logic that is browser-specific or UWP app- specific for Hardware and other scenarios. Another option is to do all development work in the environment using Modern POS and test it in some other environment where you have admin access to install MPOS. In most cases, you should be able to test using Cloud POS, expect if you want to test for offline scenarious. If you want to test offline scenarios, you can create a Modern POS installer using the build script, and then test it in your test environment or some other POS registers.
+
+**If you are using Cloud POS for development, set up the following configuration before opening the Cloud POS project**
 
 1. Open Visual Studio and click **View** > **Application Explorer**. Wait for Internet Information Services (IIS) Express to start with all the Retail websites deployed. You should see the IIS tray icon in the task bar with all the Retail websites running, such as Cloud POS and Retail Server.
 4. To debug CRT/RS extensions, attach the CRT/RS project to the IIS Express process.
