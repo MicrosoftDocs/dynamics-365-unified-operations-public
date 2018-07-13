@@ -235,152 +235,367 @@ merchantability and fitness for a particular purpose.
 Table 1 – Brazilian localization features
 -----------------------------------------
 
-| **Area**         | **Item**                                                | **AX 2012 R2** | **AX 2012 R3**  | **Finance and Operations** |
-|------------------|---------------------------------------------------------|--------|---------|------------------|
-| Master data      | Multiple fiscal establishments by legal entity          |     Yes| Yes     | Yes              |
-|                  | Legal entity and fiscal establishment tax identifiers:  |     Yes| Yes     | Yes              |
-|                  | Customer and vendor tax identifiers:                    |     Yes| Yes     | Yes              |
-|                  | Item tax characteristics:                               |     Yes| Yes     | Yes              |
-|                  | CFOP table                                              |     Yes| Yes     | Yes              |
-| Taxes            | Tax types: IPI, ICMS, ICMS tax substitution, ICMS difference, DIFAL, Importation tax, PIS, COFINS, CSLL, IRRF, INSS, Retained INSS, and ISS                                                 |     Yes| Yes     | Yes               |
-|                  | Taxation mode per tax type:                             |     Yes| Yes     | Yes               |
-|                  | Tax credit based on taxation mode                       |     Yes| Yes     | Yes               |
-|                  | ICMS base reduction                                     |     Yes| Yes     | Yes               |
-|                  | ICMS tax substitution with calculation based on markup  |     Yes| Yes     | Yes               |
-|                  | Simplified ICMS tax substitution                        |     Yes| Yes     | Yes               |
-|                  | Independent configuration for ICMS base reduction and tax substitution   
-                                                                             |     Yes| Yes     | Yes               |
-|                                                                         | IPI tax on the final user                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |       Yes| Yes       | Yes               |
-|                                                                         | ICMS for use and consumption                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-|                                                                         | ICMS, PIS, and COFINS tax discounts for sales to SUFRAMA                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |       Yes| Yes       | Yes               |
-|                                                                         | ICMS difference over sales in final consumer (DIFAL)                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |       Yes| Yes       | Yes               |
-|                                                                         | ICMS difference over purchase                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |       Yes| Yes       | Yes               |
-|                                                                         | Configurable default taxes based on operations defined/specified per CFOP group                                                                                                                                                                                                                                                                                                                                                                                                                                                    |       Yes| Yes       | Yes               |
-|                                                                         | Calculation of PIS and COFINS reference to law 1.401/2013 during importation                                                                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-| Procure                                                                 | Purchase requisitions, requests for quotation and purchase orders localized to support the Brazilian taxes per the Brazilian localization scope                                                                                                                                                                                                                                                                                                                                                                                    |       Yes| Yes       | Yes               |
-|                                                                         | Fiscal document texts in purchase orders                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |       Yes| Yes       | Yes               |
-|                                                                         | Cancel inbound issued fiscal documents                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |       Yes| Yes       | Yes               |
-|                                                                         | Reverse received fiscal documents                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |       Yes| Yes       | Yes               |
-| Receive                                                                 | Posting fiscal documents for receiving:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |       Yes| Yes       | Yes               |
-|                                                                         | Referenced fiscal documents                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-|                                                                         | Fiscal documents with referenced processes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |       Yes| Yes       | Yes               |
-|                                                                         | Multiple processes referenced by fiscal document texts                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |       Yes| Yes       | Yes               |
-|                                                                         | Tax adjustments during receipt of inbound fiscal documents                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |       Yes| Yes       | Yes               |
-|                                                                         | Electronic fiscal document XML and DANFE received from a POP3 (Post Office Protocol version 3) email account                                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-|                                                                         | Validation of electronic fiscal document access key in SEFAZ                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-|                                                                         | Archiving of electronic fiscal document XML together with the posted received fiscal document                                                                                                                                                                                                                                                                                                                                                                                                                                      |       Yes| Yes       | Yes               |
-|                                                                         | Matching the quantity and price unit from the received electronic fiscal document XML with the vendor invoice from the purchase order                                                                                                                                                                                                                                                                                                                                                                                              |       Yes| Yes       | Yes               |
-| Purchase return                                                         | Issuing fiscal document for vendor returns                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |       Yes| Yes       | Yes               |
-| Sell                                                                    | Sales quotations, sales orders, free text invoices, and project invoices localized to support Brazilian taxes per the Brazilian localization scope                                                                                                                                                                                                                                                                                                                                                                                 |       Yes| Yes       | Yes               |
-|                                                                         | Input of transport information for fiscal documents                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |       Yes| Yes       | Yes               |
-|                                                                         | Fiscal document texts in sales orders and free text invoices                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-|                                                                         | Cancel issued fiscal documents                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |       Yes| Yes       | Yes               |
-| Invoicing                                                               | Issuing fiscal documents for invoicing:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |       Yes| Yes       | Yes               |
-|                                                                         | Referenced fiscal documents                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |       Yes| Yes       | Yes               |
-|                                                                         | Fiscal document with referenced processes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |       Yes| Yes       | Yes               |
-|                                                                         | Multiple processes referenced by fiscal document texts                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |       Yes| Yes       | Yes               |
-|                                                                         | Withholding tax for IRRF, INSS, and ISS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |       Yes| Yes       | Yes               |
-|                                                                         | Outbound fiscal document viewer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |       Yes| Yes       | Yes               |
-|                                                                         | Display approximated taxes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |       Yes| Yes       | Yes               |
-|                                                                         | Manual maintenance of Ficha Conteúdo de Importação (FCI) by product, fiscal establishment, and period                                                                                                                                                                                                                                                                                                                                                                                                                               |       Yes| Yes       | Yes               |
-|                                                                         | **Note:** The localization supports issuing fiscal document models 1, 1-A, and 55, and the Services fiscal document for São Paulo city. Partners must customize the requirements or behavior for unsupported fiscal document models. **Note:** The localization does not support generation of FCI files, subsequent operation, automatic sending of FCI files, and automatic calculation of importation composition.                                                                                                               |       Yes| Yes       | Yes               |
-| Sales return                                                            | Customer returns with your organization’s fiscal document                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |       Yes| Yes       | Yes               |
-|                                                                         | Customer returns with a fiscal document issued by the customer                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |       Yes| Yes       | Yes               |
-|                                                                         | Electronic fiscal document access key                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |       Yes| Yes       | Yes               |
-| Inventory                                                               | Issue and receive fiscal documents for transfers/returns of inventory items between fiscal establishments                                                                                                                                                                                                                                                                                                                                                                                                                           |       Yes| Yes       | Yes               |
-|                                                                         | Issue and receive fiscal documents for remittance/returns of inventory items from a third party                                                                                                                                                                                                                                                                                                                                                                                                                                     |       Yes| Yes       | Yes               |
-| Production                                                              | Indirect and direct cost absorption                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |       Yes| Yes       | Yes               |
-| NF-e (Federal)                                                          | Support to NF-e layout 2.0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |       Yes| Yes       | Yes               |
-|                                                                         | Support to NF-e layout 3.10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |       Yes| Yes       | Yes               |
-|                                                                         | Support to NF-e layout 4.0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |       Yes| Yes       | Yes               |
-|                                                                         | NF-e messages/events:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |       Yes| Yes       | Yes               |
-|                                                                         | Contingency mode: security form (FS or FS-DA)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-|                                                                         | Contingency mode: SCAN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |       Yes| Yes       | Yes               |
-|                                                                         | Contingency mode: SVC                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |       Yes| Yes       | Yes               |
-|                                                                         | XML viewer for issued and received electronic fiscal documents                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |       Yes| Yes       | Yes               |
-|                                                                         | Automatic sending of electronic fiscal document through email for customers, vendors, and transportation companies                                                                                                                                                                                                                                                                                                                                                                                                                  |       Yes| Yes       | Yes               |
-|                                                                         | **Out of scope:** overall purpose services in the NF-e                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |       Yes| Yes       | Yes               |
-| NFS-e Services (São Paulo city)                                         | Service electronic fiscal document using .txt files                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |       Yes| Yes       | Yes               |
-|                                                                         | Recibo Provisório de Serviços (RPS) for São Paulo city                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |       Yes| Yes       | Yes               |
-| Financial and treasury                                                  | Withholding IRRF, PIS, COFINS, CSLL, ISS, and INSS taxes on payments and receiving                                                                                                                                                                                                                                                                                                                                                                                                                                                  |       Yes| Yes       | Yes               |
-|                                                                         | Withholding IRRF, PIS, and COFINS tax threshold by legal entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |       Yes| Yes       | Yes               |
-|                                                                         | Payment with check per bank                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |       Yes| Yes       | Yes               |
-|                                                                         | Payment with Brazilian Borderô                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |       Yes| Yes       | Yes               |
-|                                                                         | Interest and fines on payments and receiving, applying federal, state, and city holiday calendars                                                                                                                                                                                                                                                                                                                                                                                                                                   |       Yes| Yes       | Yes               |
-|                                                                         | Interest, fines, and withholding tax on centralized payments                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |       Yes| Yes       | Yes               |
-|                                                                         | Electronic payment based on configurable files for the FCC-400 layout                                                                                                                                                                                                                                                                                                                                                                                                                                                               |       Yes| Yes       | Yes               |
-|                                                                         | Electronic receiving based on configurable files for the CNAB-240 layout                                                                                                                                                                                                                                                                                                                                                                                                                                                           |       Yes| Yes       | Yes               |
-| General ledger                                                          | Accounting consolidation with transaction detailed transfers                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |       Yes| Yes       | Yes               |
-|                                                                         | Fiscal document for ICMS tax credit transfer between fiscal establishments                                                                                                                                                                                                                                                                                                                                                                                                                                                          |       Yes| Yes       | Yes               |
-|                                                                         | Fiscal document for 1/48 ICMS tax credits                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |       Yes| Yes       | Yes               |
-|                                                                         | Legal reports:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |       Yes| Yes       | Yes               |
-| Retail Enterprise POS                                                   | Customer CPF/CNPJ on fiscal receipts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |       Yes| Yes       | Yes               |
-|                                                                         | File generation for *Nota Fiscal Paulista*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |       Yes| Yes       | Yes               |
-|                                                                         | Tax calculation according to AX 2012 configuration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |       Yes| Yes       | Yes               |
-|                                                                         | Fiscal printer integration for Daruma printers, models FS600, FS700 (H, L and M), FS800i, Mach 1, Mach 2, and Mach 3                                                                                                                                                                                                                                                                                                                                                                                                                |       Yes| Yes       | Yes               |
-|                                                                         | Fiscal printer integration for Bematech printers, models MP2100 FI TH FI and MP4200 TH FI II                                                                                                                                                                                                                                                                                                                                                                                                                                        |       Yes| Yes       | Yes               |
-|                                                                         | POS legal requirements according to PAF-ECF law “ATO COTEPE/ICMS N°9” of 2013, except for any businesses identified as out of scope in the [Out of scope](#out-of-scope) section                                                                                                                                                                                                                                                                                                                                                   |       Yes| Yes       | Yes               |
-|                                                                         | POS legal requirements according to PAF-ECF law “ATO COTEPE/ICMS N°46” of 2014, except for any businesses identified as out of scope in the [Out of scope](#out-of-scope) section                                                                                                                                                                                                                                                                                                                                                  |       Yes| Yes       | Yes               |
-|                                                                         | Display approximated taxes in fiscal receipts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-|                                                                         | Void last fiscal receipt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |       Yes| Yes       | Yes               |
-|                                                                         | Payments with multiple credit cards                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |       Yes| Yes       | Yes               |
-|                                                                         | EFT integration with third-party software *D-TEF Dedicado*, version 8.1.37.2, commercialized by Direção Processamento de Dados Ltda                                                                                                                                                                                                                                                                                                                                                                                                 |       Yes| Yes       | Yes               |
-|                                                                         | EFT integration with third-party software SiTef, version 4.0.111.6, commercialized by Software Express Informática Ltda.                                                                                                                                                                                                                                                                                                                                                                                                            |       Yes| Yes       | Yes               |
-|                                                                         | Presales according to PAF-ECF law “ATO COTEPE/ICMS N°46” of 2014                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |       Yes| Yes       | Yes               |
-|                                                                         | Issuing of return NF-e in EPOS for sales return                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |       Yes| Yes       | Yes               |
-|                                                                         | Issuing of NF-e linked to fiscal receipt in EPOS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |       Yes| Yes       | Yes               |
-|                                                                         | Configurable AOS for NF-e/NFC-e messaging with SEFAZ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |       Yes| Yes       | Yes               |
-|                                                                         | **Note:** The EFT service must be contracted directly from the third-party provider and is not included in any Microsoft software license. **Note:** Not all Enterprise POS operations are permitted in Brazil due to conflicts with the PAF-ECF legislation. For further details, see the white paper Retail and Enterprise POS Localization for Brazil.                                                                                                                                                                          |       Yes| Yes       | Yes               |
-| NFC-e (*Nota Fiscal ao Consumidor Eletrônica*) in Retail Enterprise POS | Support to layout NFC-e 3.10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-|                                                                         | Support to layout NFC-e 4.0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |       Yes| Yes       | Yes               |
-|                                                                         | Contingency mode: off-line                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |       Yes| Yes       | Yes               |
-|                                                                         | Contigency mode for SP: SAT (model 59)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |       Yes| Yes       | Yes               |
-|                                                                         | Sales presence type: in-person                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |       Yes| Yes       | Yes               |
-| Retail                                                                  | Retail item management:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |       Yes| Yes       | Yes               |
-|                                                                         | SAT(model59) for São Paulo state layout 0.07                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |       Yes| Yes       | Yes               |
-|                                                                         | Support to only one SAT hardware per EPOS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |       Yes| Yes       | Yes               |
-|                                                                         | Support for SAT DLL selection, for multiples brand compatibility                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |       Yes| Yes       | Yes               |
-|                                                                         | Fiscal receipt reference                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |       Yes| Yes       | Yes               |
-|                                                                         | Fiscal printer auto-configuration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |       Yes| Yes       | Yes               |
-| Project accounting (PSA)                                                | Credit notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |       Yes| Yes       | Yes               |
-| TMS                                                                     | Issuing outbound fiscal documents and electronic fiscal documents from loads for sales order invoices                                                                                                                                                                                                                                                                                                                                                                                                                               |       Yes| Yes       | Yes               |
-|                                                                         | Issuing outbound fiscal documents and electronic fiscal documents from loads from transfer oders and fiscal document slips                                                                                                                                                                                                                                                                                                                                                                                                          |       Yes| Yes       | Yes               |
-|                                                                         | **Note:** For information about other source documents handled in loads, see the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/partnersource/deployment/resources/productreleases/gfmlocalizationportalmc.htm?printpage=false&sid=xdtafwuk1xh2l5jdjhhv0joy&stext=gfm%20localization%20portal).                                                                                                                                                                                                                 |       Yes| Yes       | Yes               |
-| Call center                                                             | Support to Brazilian tax registration ID (CNPJ/CPF) at the customer data management                                                                                                                                                                                                                                                                                                                                                                                                                                                 |       Yes| Yes       | Yes               |
-| Fiscal books                                                            | Fiscal books reports:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |       Yes| Yes       | Yes               |
-|                                                                         | Tax assessments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |       Yes| Yes       | Yes               |
-|                                                                         | Generation of tax assessment and payment of following taxes:                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |       Yes| Yes       | Yes               |
-|                                                                         | Generation of tax assessment and payment of following taxes:                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-|                                                                         | Generation of tax assessment and payment of following taxes: PIS and COFINS regime Cumulative                                                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-|                                                                         | Generation of tax assessment and payment of following taxes: PIS and COFINS regime Non Cumulative                                                                                                                                                                                                                                                                                                                                                                                                                                 |       Yes| Yes       | Yes               |
-|                                                                         | Integration with the AX 2012 General ledger module:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |       Yes| Yes       | Yes               |
-|                                                                         | Integration with Microsoft Dynamics AX 2009                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-|                                                                         | Fiscal books integration between Microsoft Dynamics AX 2009 SP1 RU8 and AX 2012 R3 Fiscal books to let users generate SPED Fiscal and SPED Contributions blocks A and C only. For detailed information, see <http://www.microsoft.com/en-us/download/details.aspx?id=39271>                                                                                                                                                                                                                                                         |       Yes| Yes       | Yes               |
-| SPED Fiscal                                                             | Generation of a text file and support for companies deined as Profile A. Available layout versions:                                                                                                                                                                                                                                                                                                                                                                                                                                 |       Yes| Yes       | Yes               |
-| (IPI and ICMS)                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |        |         |                  |
-|                                                                         | Layout Code 11 – Version 1.10 From 01.01.2017 to 12.31.2017                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |       Yes| Yes       | Yes               |
-|                                                                         | Layout Code 12 – Version 1.11 From 01.01.2018 to 12.31.2018                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |       Yes| Yes       | Yes               |
-|                                                                         | CIAP control and manual registration of ICMS installments                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |       Yes| Yes       | Yes               |
-|                                                                         | Support for the following records for companies defined as Profile A:                                                                                                                                                                                                                                                                                                                                                                                                                                                               |       Yes| Yes       | Yes               |
-|                                                                         | Block C C114                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-|                                                                         | Block K and related: 0210- K001-K100-K200-K220-K230-K235                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |       Yes| Yes       | Yes               |
-|                                                                         | **Out of scope:** SPED Fiscal with specific requirements from the state/region, as described in the [Brazilian localization strategy](#brazilian-localization-strategy) section; and companies categorized as Profile B and Profile C                                                                                                                                                                                                                                                                                               |       Yes| Yes       | Yes               |
-| SPED Contributions                                                      | Generation of a text file in accordance with Practical Guide 1.25                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |       Yes| Yes       | Yes               |
-| (PIS and COFINS)                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |       Yes| Yes       | Yes               |
-|                                                                         | Support for tax assessment regime **Cumulative**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |       Yes| Yes       | Yes               |
-|                                                                         | Support for company type **Sociedade empresaria em geral**                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |       Yes| Yes       | Yes               |
-|                                                                         | Support for booking criterio **Regime de Competência – Escrituracao detalhada** only                                                                                                                                                                                                                                                                                                                                                                                                                                                |       Yes| Yes       | Yes               |
-|                                                                         | Support for the following records:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |       Yes| Yes       | Yes               |
-|                                                                         | Block 0 0111                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |       Yes| Yes       | Yes               |
-|                                                                         | **Out of scope:** The tax assessment process and generation of related blocks (M) for regime **Non cumulative** and **Both**.                                                                                                                                                                                                                                                                                                                                                                                                       |       Yes| Yes       | Yes               |
-| SPED ECF                                                                | Generation of a text file using “Management Reporter” Layout 001, 002, 003 and 004 Support for the following blocks and records:                                                                                                                                                                                                                                                                                                                                                                                                    |       Yes| Yes       | Yes               |
-| SPED Reinf                                                              | Generation of events R-1000, R-1070, R-2010, R-2020, R-2060, R-2098, R-2099. Layout version 1.3.02                                                                                                                                                                                                                                                                                                                                                                                                                                  |       Yes| Yes       | Yes               |
-| SINTEGRA                                                                | Generation of text files in accordance with Version 3 - ICMS-76/03, which is available from <http://www.sintegra.gov.br/>                                                                                                                                                                                                                                                                                                                                                                                                           |       Yes| Yes       | Yes               |
-| GIA-SP                                                                  | Generation of GIA Sao Paulo state text files in accordance with version 08.00 (01/02/2013), which is available from <http://www.fazenda.sp.gov.br/download/download_gia.shtm>                                                                                                                                                                                                                                                                                                                                                      |       Yes| Yes       | Yes               |
-| GIA-ST Nacional                                                         | Generation of GIA-ST text files in accordance with version 3.1 which is available from <http://www.fazenda.sp.gov.br/download/downloadgiast.shtm>                                                                                                                                                                                                                                                                                                                                                                                   |       Yes| Yes       | Yes               |
-| SPED Accounting                                                         | Generation of SPED Contábil text files Layout version supported: 2.0, 3.0, 4.0, 5.0 and 6.0                                                                                                                                                                                                                                                                                                                                                                                                                                         |       Yes| Yes       | Yes               |
-|                                                                         | Support for bookkeeping type G (Day Book - Livro Diario) and the generation of following blocks and records:                                                                                                                                                                                                                                                                                                                                                                                                                        |       Yes| Yes       | Yes               |
-| Tax statement extensibility                                             | The Tax Statement Framework aims to provide a unified experience for tax statement developers (for example, partners and independent software vendors [ISVs]), so that they can make their tax statements available to users in the AX 2012 Fiscal books module. The framework consists of a set of base artifacts and object-oriented design guidelines that should be followed by tax statement providers. Microsoft, being a tax statement developer itself, also develops its own tax statements by leveraging this framework.  |       Yes| Yes       | Yes               |
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Item</th>
+<th>AX 2012 RTM-R2</th>
+<th>AX 2012 R3</th>
+<th>Finance and Operations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Master data</td>
+<td>Legal entity and fiscal establishment tax identifiers:
+<ul>
+<li>CNPJ/CPF</li>
+<li>IE</li>
+<li>CCM</li>
+<li>IE for tax substitution for multiples states</li>
+<li>CNAE</li>
+</ul>
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Customer and vendor tax identifiers:
+<ul>
+<li>CNPJ/CPF</li>
+<li>IE</li>
+<li>CCM</li>
+<li>NIT</li>
+<li>INSS-CEI</li>
+<li>CNAE</li>  
+</ul>
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Item tax characteristics:
+<ul>
+<li>Fiscal classification code an exception</li>
+<li>Taxation origin</li>
+<li>Product type</li>
+</ul>
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>CFOP table
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Taxes</td>
+<td>Tax types: IPI, ICMS, ICMS tax substitution, ICMS difference, DIFAL, Importation tax, PIS, COFINS, CSLL, IRRF, INSS, Retained INSS, and ISS
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Taxation mode per tax type:
+<ul>
+<li>1 – Taxable</li>
+<li>2 – Exempt or non-taxable</li>
+<li>3 – Others</li>
+</ul>
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Tax credit based on taxation mode</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>ICMS base reduction</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>ICMS tax substitution with calculation based on markup</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Simplified ICMS tax substitution
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Independent configuration for ICMS base reduction and tax substitution
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>IPI tax on the final user
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>ICMS for user and consumption</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>ICMS, PIS, and COFINS tax discounts for sales to SUFRAMA</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>ICMS difference over sales in final consumer (DIFAL)
+</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Printable CFD version in PDF format</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td></td>
+<td>XML viewer for issued CFD invoices</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td></td>
+<td>Automatic sending of the CFD document by email to customers during the posting process</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td></td>
+<td>Generation of a monthly report</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>CFDI</td>
+<td>Support for CFDI layout 3.0 in customer invoices</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Support for CFDI layout 3.2 in customer invoices</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Support for CFDI layout 3.3 in customer invoices</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Support for CFDI layout 3.3 in customer payments with payment complement 1.0</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Support for CFDI layout 3.3 in customer advance payments:
+<ul>
+<li>CFDI advance payment</li>
+<li>CFDI invoice and settlement</li>
+<li>CFDI advance payment reverse</li>
+</ul>
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Support for CFDI layout 3.3 in packing slip and transfer orders between sites (TRASLADOS)</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Support for CFDI layout 3.3 in foreign customer invoices and foreign complement 1.1</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Support for Global CFDI layout 3.3 in customer receipts (Retail)</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Support for CFDI withholding layout 1.0</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>CFDI messages/events:
+<ul>
+<li>Issue</li>
+<li>Cancel</li>
+<li>Manual Cancel</li>
+</ul>
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Printable CFDI version in PDF format that includes a bidimensional bar code</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>XML viewer for issued CFDI invoices</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Automatic sending of CFD documents by email to customers during the posting process</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>PAC</td>
+<td>Microsoft only provides a code example for PAC integration by using web server certificate authentication.</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>DIOT</td>
+<td>Generation of the DIOT declaration as a text file</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Adjustment inflation</td>
+<td>Generation and registration of the Adjustment inflation process</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>ISR declaration</td>
+<td>Generation of the ISR declaration report</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>VAT reports</td>
+<td>Generation of VAT reports:
+<ul>
+<li>Sales</li>
+<li>Purchase</li>
+</ul>
+</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Electronic ledger accounting statement</td>
+<td>Generation of electronic ledger accounting XML files:
+<ul>
+<li>Chart of Account</li>
+<li>Trial Balance</li>
+<li>Ledger entries with related documents (folios)</li>
+<li>Auxiliary ledger account</li>
+</ul>
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
 
 -   CNPJ/CPF
 
