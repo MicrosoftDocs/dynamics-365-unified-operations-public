@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Call CRT service in offline mode
 
-[!include [banner](../includes/banner.md)]
+**Note: This topic is applicable for 7.1 and lower versions only. This approach is not supported or 7.2 and higher version, please follow the new extension model without overlayering.**
 
 This topic describes how provide offline support for point of sale (POS).
 
