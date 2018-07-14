@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Hardware Station overview and extensibility
 
-[!include [banner](../includes/banner.md)]
+**Note: This topic is applicable for 7.1 and lower versions only. This approach is not supported or 7.2 and higher version, please follow the new extension model without overlayering.**
 
 This topic explains how to extend Hardware Station to add support for new devices and new device types for existing devices.
 
