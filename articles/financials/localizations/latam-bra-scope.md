@@ -917,7 +917,7 @@ Table 1 – Brazilian localization features
     <tr>
         <td></td>
         <td>Display approximated taxes in fiscal receipts</td>
-            <td>Yes</td>
+        <td>Yes</td>
         <td>Yes</td>
         <td>No</td>
     </tr>
@@ -937,7 +937,7 @@ Table 1 – Brazilian localization features
     </tr>
     <tr>
         <td></td>
-        <td>EFT integration with third-party software D-TEF Dedicado, version 8.1.37.2, commercialized by Direção Processamento de Dados Ltda<td>
+        <td>EFT integration with third-party software D-TEF Dedicado, version 8.1.37.2, commercialized by Direção Processamento de Dados Ltda</td>
         <td>Yes</td>
         <td>Yes</td>
         <td>No</td>
