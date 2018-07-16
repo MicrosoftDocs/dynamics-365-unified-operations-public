@@ -85,3 +85,17 @@
       href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json
     - name: Comply with the ADA
       href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json
+  - name: Intelligence
+    items:
+    - name: Embedded Power BI in workspaces
+      href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/talent/toc.json
+  - name: Mobile app
+    items:
+    - name: Mobile workspaces
+      items:
+      - name: Company directory
+        href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/talent/toc.json
+      - name: My team
+        href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/talent/toc.json
+    - name: Publish a mobile workspace
+      href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/talent/toc.json
