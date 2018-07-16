@@ -2,10 +2,10 @@
 # required metadata
 
 title: Modern POS and Cloud POS trigger extensibility
-description: This article explains the client-side trigger functionality in Modern POS and Cloud POS.
+description: This topic explains the client-side trigger functionality in Modern POS and Cloud POS.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -32,9 +32,10 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Modern POS and Cloud POS trigger extensibility
 
-**Note: This topic is applicable for 7.1 and lower versions only. This approach is not supported or 7.2 and higher version, please follow the new extension model without overlayering.**
+> [!NOTE]
+> This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier. This implementation is not supported for versions 7.2 and higher. For those versions, follow the extension model without overlayering.
 
-This article explains the client-side trigger functionality in Modern POS and Cloud POS.
+This topic explains the client-side trigger functionality in Modern POS and Cloud POS.
 
 Trigger overview
 ----------------
