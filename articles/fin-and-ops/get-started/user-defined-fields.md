@@ -5,7 +5,7 @@ title: Custom fields
 description: This topic shows how Microsoft Dynamics 365 for Finance and Operations allows some users to create custom fields to tailor the application to fit their business.
 author: jasongre
 manager: AnnBe
-ms.date: 04/18/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Platform update 13
 # Custom fields
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 While Microsoft Dynamics 365 for Finance and Operations provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business, provided you have permissions to the feature. 
 
