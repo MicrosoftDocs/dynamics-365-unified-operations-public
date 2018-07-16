@@ -112,7 +112,7 @@
     - name: Troubleshoot the Office integration
       href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/talent/toc.json
   - name: Organization administration
-      items:
+    items:
     - name: Number sequences
       href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/talent/toc.json
       items:
@@ -178,4 +178,10 @@
         href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/talent/toc.json
       - name: Enable users to receive workflow-related email messages
         href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/talent/toc.json
-     
+    - name: Alerts
+      href: ../fin-and-ops/get-started/alerts-overview.md?toc=/talent/toc.json
+      items:
+      - name: Create alerts
+        href: ../fin-and-ops/get-started/create-alerts.md?toc=/talent/toc.json
+      - name: Batch processing for alerts
+        href: ../fin-and-ops/get-started/alerts-managing.md?toc=/talent/toc.json 
