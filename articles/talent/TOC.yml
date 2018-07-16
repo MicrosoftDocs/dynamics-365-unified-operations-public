@@ -196,4 +196,12 @@
      href: ../fin-and-ops/organization-administration/configure-email.md?toc=/talent/toc.json
    - name: Date/time data and time zones
      href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/talent/toc.json
+ - name: Human resources tasks
+   items:
+   - name: Add to your performance journal and send praise to someone
+     href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/talent/toc.json    
+   - name: Create a goal
+     href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/talent/toc.json
+   - name: Create a performance review
+     href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/talent/toc.json    
      
