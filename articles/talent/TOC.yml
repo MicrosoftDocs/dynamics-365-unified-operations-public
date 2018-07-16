@@ -111,3 +111,71 @@
       href: ../fin-and-ops/organization-administration/configure-email.md?toc=/talent/toc.json
     - name: Troubleshoot the Office integration
       href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/talent/toc.json
+  - name: Organization administration
+      items:
+    - name: Number sequences
+      href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/talent/toc.json
+      items:
+      - name: Set up number sequences on an individual basis
+        href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/talent/toc.json
+      - name: Set up number sequences by using a wizard
+        href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/talent/toc.json
+    - name: Organizations and organizational hierarchies
+      href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/talent/toc.json
+      items:
+      - name: Plan your organizational hierarchy
+        href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/talent/toc.json
+      - name: Create an organization hierarchy
+        href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/talent/toc.json
+      - name: Create a legal entity
+        href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/talent/toc.json
+      - name: Create an operating unit
+        href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/talent/toc.json
+    - name: Global address book
+      href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/talent/toc.json
+      items:
+      - name: Plan how to configure the global address book
+        href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/talent/toc.json
+      - name: Configure the global address book
+        href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/talent/toc.json
+      - name: Address books FAQ
+        href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/talent/toc.json
+    - name: Workflow
+      href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/talent/toc.json
+      items:
+      - name: Workflow elements
+        href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/talent/toc.json
+      - name: Workflow actions
+        href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/talent/toc.json
+      - name: Create a workflow
+        href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/talent/toc.json
+        items:
+        - name: Configure workflow properties
+          href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/talent/toc.json
+        - name: Configure a manual task
+          href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/talent/toc.json
+        - name: Configure an automated task
+          href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/talent/toc.json
+        - name: Configure an approval process
+          href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/talent/toc.json
+        - name: Configure an approval step
+          href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/talent/toc.json
+        - name: Configure a manual decision
+          href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/talent/toc.json
+        - name: Configure a conditional decision
+          href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/talent/toc.json
+        - name: Configure a parallel activity
+          href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/talent/toc.json
+        - name: Configure a parallel branch
+          href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/talent/toc.json
+        - name: Configure a line-item workflow
+          href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/talent/toc.json
+      - name: Configure the message processing batch job
+        href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/talent/toc.json
+      - name: Delegate work items in a workflow
+        href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/talent/toc.json
+      - name: View workflow history
+        href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/talent/toc.json
+      - name: Enable users to receive workflow-related email messages
+        href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/talent/toc.json
+     
