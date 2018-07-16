@@ -170,4 +170,4 @@ To implement the three-time limit, create a new class and implement the IPreVoid
 3.  Create another new transaction and add four different items. Try to return all four items. You will get an error for the fourth item with the message, "Void is not allowed anymore.”
 
 > [!NOTE]
-> In the sample code, the return the time period is configured as 100ms, so that you can test your code immediately. You should change the configuration as needed.
+> In the sample code, the return the time period is configured as 100 ms, so that you can test your code immediately. You should change the configuration as needed.
