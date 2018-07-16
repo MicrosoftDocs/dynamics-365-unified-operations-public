@@ -366,7 +366,7 @@ Table 1 – Brazilian localization features
 </tr>
 <tr>
 <td></td>
-<td>ICMS for user and consumption</td>
+<td>ICMS for use and consumption</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -388,212 +388,771 @@ Table 1 – Brazilian localization features
 </tr>
 <tr>
 <td></td>
-<td>Printable CFD version in PDF format</td>
+<td>ICMS difference over purchase</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Configurable default taxes based on operations defined/specified per CFOP group</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Calculation of PIS and COFINS reference to law 1.401/2013 during importation</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Procure</td>
+<td>Purchase requisitions, requests for quotation and purchase orders localized to support the Brazilian taxes per the Brazilian localization scope</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Fiscal docuent texts in purchase orders</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Cancel inbound issued fiscal documents</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Reverse received fiscal documents</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Receive</td>
+<td>Posting fiscal documents for receiving
+    <ul>
+        <li>Inventory items</li>
+        <li>Services</li>
+        <li>Fixed assets with bookkeeping of deferred ICMS tax amounts</li>
+        <li>Goods for use and consumption</li>
+        <li>From vendors that are not ICMS payers/contributors (using models 1, 1-A, and 55)</li>
+        <li>Direct import (using models 1, 1-A, and 55)</li>
+        <li>(IPI, ICMS) Tax and price complementary fiscal documents</li>
+        <li>Vendor invoices (not dependent on purchase orders)</li>
+    </ul>
+    </td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Refereenced fiscal documents
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Fiscal documents with referenced processes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Multiple processes referenced by fiscal document texts</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Tax adjustments during receipt of inbound fiscal documents</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Electronic fiscal document XML and DANFE received from a POP3 (Post Office Protocol version 3) email account</td>
 <td>No</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td></td>
-<td>XML viewer for issued CFD invoices</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>Validation of electronic fiscal document access key in SEFAZ
+</td>
 <td>No</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td></td>
-<td>Automatic sending of the CFD document by email to customers during the posting process</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>Archiving of electronic fiscal document XML together with the posted received fiscal document</td>
 <td>No</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td></td>
-<td>Generation of a monthly report</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>Matching the quantity and price unit from the received electronic fiscal document XML with the vendor invoice from the purchase order</td>
 <td>No</td>
-</tr>
-<tr>
-<td>CFDI</td>
-<td>Support for CFDI layout 3.0 in customer invoices</td>
-<td>Yes</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>Support for CFDI layout 3.2 in customer invoices</td>
-<td>Yes</td>
+<td>Purchase return</td>
+<td>Issuing fiscal document for vendor returns</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>Support for CFDI layout 3.3 in customer invoices</td>
-<td>Yes</td>
+<td>Sell</td>
+<td>Sales quotations, sales orders, free text invoices, and project invoices localized to support Brazilian taxes per the Brazilian localization scope.</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td></td>
-<td>Support for CFDI layout 3.3 in customer payments with payment complement 1.0</td>
-<td>Yes</td>
+<td>Input of transport information for fiscal documents</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td></td>
-<td>Support for CFDI layout 3.3 in customer advance payments:
+<td>Fiscal document texts in sales order and free text invoices</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td></td>
+<td>Cancel issued fiscal documents</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Invoicing</td>
+<td>Issuing fiscal documents for invoicing:
 <ul>
-<li>CFDI advance payment</li>
-<li>CFDI invoice and settlement</li>
-<li>CFDI advance payment reverse</li>
+<li>Inventory items</li>
+<li>Services</li>
+<li>Fixed assets</li>
+<li>Third-party sales</li>
+<li>Project invoices</li>
+<li>For end users</li>
+<li>For customers in SUFRAMA</li>
+<li>(IPI, ICMS) Tax and price complementary fiscal documents</li>
 </ul>
 </td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
 <td></td>
-<td>Support for CFDI layout 3.3 in packing slip and transfer orders between sites (TRASLADOS)</td>
-<td>No</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>Support for CFDI layout 3.3 in foreign customer invoices and foreign complement 1.1</td>
-<td>No</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>Support for Global CFDI layout 3.3 in customer receipts (Retail)</td>
-<td>No</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>Support for CFDI withholding layout 1.0</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>CFDI messages/events:
-<ul>
-<li>Issue</li>
-<li>Cancel</li>
-<li>Manual Cancel</li>
-</ul>
+<td>References fiscal documents
 </td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
-<tr>
+    <tr>
 <td></td>
-<td>Printable CFDI version in PDF format that includes a bidimensional bar code</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>XML viewer for issued CFDI invoices</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>Automatic sending of CFD documents by email to customers during the posting process</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>PAC</td>
-<td>Microsoft only provides a code example for PAC integration by using web server certificate authentication.</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>DIOT</td>
-<td>Generation of the DIOT declaration as a text file</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Adjustment inflation</td>
-<td>Generation and registration of the Adjustment inflation process</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>ISR declaration</td>
-<td>Generation of the ISR declaration report</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>VAT reports</td>
-<td>Generation of VAT reports:
-<ul>
-<li>Sales</li>
-<li>Purchase</li>
-</ul>
-</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Electronic ledger accounting statement</td>
-<td>Generation of electronic ledger accounting XML files:
-<ul>
-<li>Chart of Account</li>
-<li>Trial Balance</li>
-<li>Ledger entries with related documents (folios)</li>
-<li>Auxiliary ledger account</li>
-</ul>
+<td>Fiscal document with referenced processes
 </td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
+</tr>
+    <tr>
+<td></td>
+<td>Multiple processes referenced by fiscal document texts
+</td>
+<td>Yes</td>
+<td>Yes</td>
 <td>Yes</td>
 </tr>
+    <tr>
+<td></td>
+<td>Withholding tax for IRRF, INSS, and ISS
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+    <tr>
+<td></td>
+<td>Outbound fiscal document viewer
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+     <tr>
+<td></td>
+<td>Display approximated taxes
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+     <tr>
+<td></td>
+<td>Manual maintenance of Ficha Conteúdo de Importação (FCI) by product, fiscal establishment, and period
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+     <tr>
+<td></td>
+<td>The localization supports issuing fiscal document models 1, 1-A, and 55, and the Services fiscal document for São Paulo city. Partners must customize the requirements or behavior for unsupported fiscal document models.
+    <strong>Note:</strong> The localization does not support generation of FCI files, subsequent operation, automatic sending of FCI files, and automatic calculation of importation composition.
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+     <tr>
+<td>Sales return</td>
+<td>Customer returns with your organization’s fiscal document
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+    <tr>
+<td></td>
+<td>Customer returns with a fiscal document issued by the customer
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+    <tr>
+<td></td>
+<td>Electronic fiscal document access key
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+    <tr>
+<td>Inventory</td>
+<td>Issue and receive fiscal documents for transfers/returns of inventory items between fiscal establishments
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+    <tr>
+<td></td>
+<td>Issue and receive fiscal documents for remittance/returns of inventory items from a third party
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+    <tr>
+<td>Production</td>
+<td>Indirect and direct cost absorption
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+    <tr>
+<td>NF-e (Federal)</td>
+<td>Support to NF-e layout 2.0
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+    <tr>
+<td></td>
+<td>Support to NF-e layout 3.10
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+ <tr>
+<td></td>
+<td>Support to NF-e layout 4.0
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+<tr>
+<td></td>
+<td>NF-e messages/events:
+    <ul>
+        <li>Issue</li>
+        <li>Cancel</li>
+        <li>Discard</li>
+        <li>Electronic correction letter (CC-e)</li>
+    </ul>
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+     <tr>
+<td></td>
+<td>Contingency mode: security form (FS or FS-DA)
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+ <tr>
+<td></td>
+<td>Contingency mode: SCAN
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+     <tr>
+<td></td>
+<td>Contingency mode: SVC
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+<tr>
+<td></td>
+<td>XML viewer for issued and received electronic fiscal documents
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+ <tr>
+<td></td>
+<td>Automatic sending of electronic fiscal document through email for customers, vendors, and transportation companies
+</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+    <tr>
+<td></td>
+        <td><strong>Out of scope:</strong> Overall purpose services in the NF-e</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+        <tr>
+<td>NFS-e Services (São Paulo city)</td>
+        <td>Service electronic fiscal document using .txt files</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+        <tr>
+<td></td>
+        <td>Recibo Provisório de Serviços (RPS) for São Paulo city</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+        <tr>
+<td>Financial and treasury</td>
+        <td>Withholding IRRF, PIS, COFINS, CSLL, ISS, and INSS taxes on payments and receiving</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+    <tr>
+<td></td>
+        <td>Withholding IRRF, PIS, and COFINS tax threshold by legal entity</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+    <tr>
+<td></td>
+        <td>Payment with check per bank</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+    <tr>
+<td></td>
+        <td>Payment with Brazilian Borderô</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+    <tr>
+<td></td>
+        <td>Interest and fines on payments and receiving, applying federal, state, and city holiday calendars</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+    <tr>
+<td></td>
+        <td>Interest, fines, and withholding tax on centralized payments</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+    <tr>
+<td></td>
+        <td>Electronic payment based on configurable files for the FCC-400 layout</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+    <tr>
+<td></td>
+        <td>Electronic receiving based on configurable files for the CNAB-240 layout</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+    <tr>
+<td>General ledger</td>
+        <td>Accounting consolidation with transaction detailed transfers</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+      <tr>
+<td></td>
+        <td>Fiscal document for ICMS tax credit transfer between fiscal establishments</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>    
+      <tr>
+<td></td>
+        <td>Fiscal document for 1/48 ICMS tax credits</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr> 
+       <tr>
+<td></td>
+        <td>Legal reports:
+           <ul>
+               <li>Day book</li>
+               <li>Analytical ledger</li>
+               <li>Trial balance</li>
+            </ul></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+    <tr>
+        <td>Retail Enterprise POS</td>
+        <td> Customer CPF/CNPJ on fiscal receipts</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>File generation for Nota Fiscal Paulista</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Tax calculation according to AX 2012 configuration</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Fiscal printer integration for Daruma printers, models FS600, FS700 (H, L and M), FS800i, Mach 1, Mach 2, and Mach 3</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Fiscal printer integration for Bematech printers, models MP2100 FI TH FI and MP4200 TH FI II</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>POS legal requirements according to PAF-ECF law “ATO COTEPE/ICMS N°9” of 2013, except for any businesses identified as out of scope in the Out of scope section</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>POS legal requirements according to PAF-ECF law “ATO COTEPE/ICMS N°46” of 2014, except for any businesses identified as out of scope in the Out of scope section</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Display approximated taxes in fiscal receipts</td>
+            <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Void last fiscal receipt</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Payments with multiple credit cards</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>EFT integration with third-party software D-TEF Dedicado, version 8.1.37.2, commercialized by Direção Processamento de Dados Ltda<td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>EFT integration with third-party software SiTef, version 4.0.111.6, commercialized by Software Express Informática Ltda.
+            Presales according to PAF-ECF law “ATO COTEPE/ICMS N°46” of 2014</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Issuing of return NF-e in EPOS for sales return</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Issuing of NF-e linked to fiscal receipt in EPOS</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Configurable AOS for NF-e/NFC-e messaging with SEFAZ</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>The EFT service must be contracted directly from the third-party provider and is not included in any Microsoft software license. <strong>Note:</strong> Not all Enterprise POS operations are permitted in Brazil due to conflicts with the PAF-ECF legislation. For further details, see the white paper Retail and Enterprise POS Localization for Brazil.</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>NFC-e (Nota Fiscal ao Consumidor Eletrônica) in Retail Enterprise POS</td>
+        <td>Support to layout NFC-e 3.10</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>    
+    <tr>
+        <td></td>
+        <td>Support to layout NFC-e 4.0</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>         
+    <tr>
+        <td></td>
+        <td>Contingency mode: off-line</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+     <tr>
+        <td></td>
+        <td>Contingency mode for SP: SAT (model 59)</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+     <tr>
+        <td></td>
+        <td>Sales presence type: in-person</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+     <tr>
+        <td>Retail</td>
+        <td>Retail item management
+         <ul>
+             <li>Released products by category</li>
+             <li>Mass update worksheet</li>
+             <li>Retail product hierarchy</li>
+            </ul></td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td></td>
+        <td>SAT(model59) for São Paulo state layout 0.07</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+     <tr>
+        <td></td>
+        <td>Support to only one SAT hardware per EPOS</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+     <tr>
+        <td></td>
+        <td>Support for SAT DLL selection, for multiples brand compatibility</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+     <tr>
+        <td></td>
+        <td>Fiscal receipt reference</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Fiscal printer auto-configuration</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+      <tr>
+        <td>Project accounting (PSA)</td>
+        <td>Credit notes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+      <tr>
+        <td>TMS</td>
+        <td>Issuing outbound fiscal documents and electronic fiscal documents from loads for sales order invoices</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+      <tr>
+        <td></td>
+        <td>Issuing outbound fiscal documents and electronic fiscal documents from loads from transfer oders and fiscal document slips</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+      <tr>
+        <td>Call center</td>
+          <td>Support to Brazilian tax registration ID (CNPJ/CPF) at the customer data management</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+      <tr>
+        <td>Fiscal books</td>
+        <td>Fiscal books reports:
+          <ul>
+              <li>IPI tax assessment</li>
+              <li>ICMS tax assessment</li>
+              <li>ICMS-ST tax assessment for states with IE registration</li>
+              <li>Incoming and INcoming model 1A</li>
+              <li>Outgoing and Outgoing model 2A</li>
+              <li>Inventory models 3 and 7</li>
+              <li>CIAP control report</li>
+              <li>ISS Report model 51 (delivering services)</li>
+              <li>ISS Report model 56 (acquiring services)</li>
+              <li>ECF daily operations report (Mapa Resumo)</li>
+            </ul></td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td></td>
+          <td>Tax assessments</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td>Generation of tax assessment and payment of following taxes:
+         <ul>
+             <li></li>
+             <li></li>
+             <li></li></td>
+          <td>Support to Brazilian tax registration ID (CNPJ/CPF) at the customer data management</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td>Call center</td>
+          <td>Support to Brazilian tax registration ID (CNPJ/CPF) at the customer data management</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td>Call center</td>
+          <td>Support to Brazilian tax registration ID (CNPJ/CPF) at the customer data management</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td>Call center</td>
+          <td>Support to Brazilian tax registration ID (CNPJ/CPF) at the customer data management</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td>Call center</td>
+          <td>Support to Brazilian tax registration ID (CNPJ/CPF) at the customer data management</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
 </tbody>
 </table>
 
