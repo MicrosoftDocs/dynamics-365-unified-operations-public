@@ -112,7 +112,8 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\Reference folder
 
     To learn how generate the interface and manager classes, see the Store Hours sample in the Retail SDK. The instructions are in the **RetailSDK\Code\Documents\SampleExtensionsInstructions\StoreHours\readme.txt** file.
     
-**How to generate C# proxy (this applicable for both POS and Ecommerce) for 7.3**
+## How to generate C# proxy (this applicable for both POS and Ecommerce) for 7.3:
+For each RS extensions you must generate separate proxy.
 
 1.  Navigate to RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions. StoreHoursSample
 
@@ -124,51 +125,65 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\Reference folder
 
 5.  Update the below nodes under the first property group section:
 
-    <RootNamespace> - Update it with your custom namespace
+    &lt;RootNamespace&gt; - Update it with your custom namespace
 
-    <AssemblyName> - Update it with your custom output library name for the proxy
+    &lt;AssemblyName&gt; - Update it with your custom output library name for the proxy
 
-    <RetailServerExtensionLibraryNoPrefixForRetailProxyCSharpExtensionGeneration> - Update it with your retail server extension library name.
+6. Update the Retail server assembly name in the CommerceProxyGeneratorExtendedAssemblyPaths tag.
+    &lt;CommerceProxyGeneratorExtendedAssemblyPaths&gt; - Update it with your retail server extension library name.
 
-    **Note:** Proxy is generated based on this library name.
+    Ex: &lt;CommerceProxyGeneratorExtendedAssemblyPaths Include="..\..\RetailServer\Extensions.StoreHoursSample\bin\$(Configuration)\net451\$(AssemblyNamePrefix).RetailServer.StoreHoursSample.dll" /&gt;
 
-6.  Save the csproj file and load the project again.
+    **Note:** .RetailServer.StoreHoursSample.dllProxy is the name of the retail server extension assembly and rest is the prefix if any and path of the assembly where proxy engine can find this assembly. Proxy is generated based on this assembly.
 
-7.  Rename the project according to your extension pattern.
+7.  Save the csproj file and load the project again.
 
-8.  Once the project is loaded, delete the StoreDayHoursManager.cs file from the Adapters folder.
+8.  Rename the project according to your extension pattern.
 
-9.  Add all the relevant CRT library as project reference. (CRT libraries referred or used by your retail server extension)
+9.  Once the project is loaded, delete the StoreDayHoursManager.cs file from the Adapters folder.
 
-10. Rebuild the project.
+10.  Add all the relevant CRT and Retail server library as project or assembly reference to the proxy project. (CRT libraries referred or used by your retail server extension)
+
+11. Rebuild the project.
+
+12. After building the project you must find a new Interfaces.g.cs file generated inside the \Adapters folder.
 
     Note: Before building the proxy project, please rebuild all our CRT and Retail server extensions libraries and drop it in RetailSDK\\References folder.
+    
+13. Include the generated Interfaces.g.cs file in the proxy project and don't make any modification in this generated file.
 
-11. Add a new class file under Adapters folder and name it according to your extension pattern.
+13. Add a new class file under Adapters folder and name it according to your extension pattern.
 
-12. Please make sure the namespace used in the CRT entity and the new class you added in the previous step is same. (Check the store hours sample proxy and store hours CRT sample project for reference)
+14. Extend the class from the interface manager class and implement the interface methods, only the required ones leave others as is.
 
-13. Extend the class from the interface manager and implement the interface methods, only the required ones leave others as is.
+    **Note:** You can find the interface manager class name in the Interfaces.g.cs.
+    
+    **Ex:** IStoreDayHoursManager is the interface name in the below sample.
+    
+```C#
+      public interface IStoreDayHoursManager : Microsoft.Dynamics.Commerce.RetailProxy.IEntityManager
+    {
+        
+    }
+```
 
-    Note: The interface name will be something similar to your controller name without the word controlloer.
-
-    Check the Proxies.RetailProxy.Extensions.StoreHoursSample proj under RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.StoreHoursSample for full code sample.
+Check the Proxies.RetailProxy.Extensions.StoreHoursSample proj under RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.StoreHoursSample for full code sample.
   
-14. Inside the methods you will call the actual CRT request/response. Please avoid any logic in the proxy project, it should only call the CRT request/response.
+15. Inside the methods you will call the actual CRT request/response. Please avoid any logic in the proxy project, it should only call the CRT request/response.
 
-15. Build the project.
+16. Build the project.
 
-16. Copy the output assembly and paste in RetailSDK\\References folder.
+17. Copy the output assembly and paste in RetailSDK\\References folder.
 
-17. Navigate to RetailSDK\\Assets folder and open RetailProxy.MPOSOffline.ext.config
+18. Navigate to RetailSDK\Assets folder and open RetailProxy.MPOSOffline.ext.config
 
-18. Under the composition section, register your new proxy library name. (The assembly generated after building your proxy project.
+19. Under the composition section, register your new proxy library name. (The assembly generated after building your proxy project.
 
-    Ex: <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
+    Ex: &lt;add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" /&gt;
 
     **Note:** In the value field you will add your proxy library name, in the example we used       Contoso.Commerce.RetailProxy.StoreHoursSample
 
-19. For manual testing, update the RetailProxy.MPOSOffline.ext.config under the C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext with the custom proxy library name under the composition section.
+20. For manual testing, update the RetailProxy.MPOSOffline.ext.config under the C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext with the custom proxy library name under the composition section.
 
     Ex: <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
 
