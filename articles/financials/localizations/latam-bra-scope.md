@@ -1110,45 +1110,290 @@ Table 1 – Brazilian localization features
      <tr>
         <td></td>
           <td>Tax assessments</td>
-        <td>No</td>
+        <td>Yes</td>
         <td>Yes</td>
         <td>Yes</td>
     </tr>
      <tr>
-        <td>Generation of tax assessment and payment of following taxes:
+        <td></td>
+          <td>Generation of tax assessment and payment of following taxes:
          <ul>
-             <li></li>
-             <li></li>
-             <li></li></td>
-          <td>Support to Brazilian tax registration ID (CNPJ/CPF) at the customer data management</td>
+             <li>IPI</li>
+             <li>ICMS and ICMS-ST</li>
+             <li>ICMS DIFAL</li>
+             <li>ISS</li>
+            </ul></td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td></td>
+          <td>Generation of tax assessment and payment of following taxes:
+         <ul>
+             <li>INSS CPRB</li>
+              </ul>
+         </td>
         <td>No</td>
         <td>Yes</td>
         <td>Yes</td>
     </tr>
      <tr>
-        <td>Call center</td>
-          <td>Support to Brazilian tax registration ID (CNPJ/CPF) at the customer data management</td>
+        <td></td>
+          <td>Generation of tax assessment and payment of the following taxes:<ul>
+             <li>PIS and COFINS regime Cumulative</li>
+              </ul>
+         </td>
         <td>No</td>
         <td>Yes</td>
         <td>Yes</td>
     </tr>
      <tr>
-        <td>Call center</td>
-          <td>Support to Brazilian tax registration ID (CNPJ/CPF) at the customer data management</td>
+        <td></td>
+          <td>Generation of tax assessment and payment of the following taxes:<ul>
+             <li>PIS and COFINS regime Non-Cumulative</li>
+              </ul>
+         </td>
         <td>No</td>
         <td>Yes</td>
         <td>Yes</td>
     </tr>
      <tr>
-        <td>Call center</td>
-          <td>Support to Brazilian tax registration ID (CNPJ/CPF) at the customer data management</td>
+        <td></td>
+          <td>Integration with the AX 2012 General ledger module:
+              <ul>
+                  <li>Registration and posting of adjustment transactions for ICMS, ICMS_ST, and IPI taxes</li>
+                  <li>Registration and posting of non-fiscal operations with calculation of PIS and COFINS taxes</li>
+                  <li>Tax payment integration with the Accounts payable module</li>
+              </ul>
+</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td></td>
+          <td>Integration with Microsoft Dynamics AX 2009</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+     <tr>
+        <td></td>
+         <td>Generation of a text file and support for companies deined as Profile A. <br></br>Available layout versions: 
+    <ul>
+        <li>Layout Code 08 – Version 1.07 From 01.01.2014 to 12.31.2014 </li>
+        <li>Layout Code 09 – Version 1.08 From 01.01.2015 to 12.31.2015 </li>
+        <li>Layout Code 10 – Version 1.09 From 01.01.2016 to 12.31.2016 </li>
+        <li>Layout Code 10 – Version 1.09 From 01.01.2016 to 12.31.2016 </li>
+    </ul></td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td></td>
+          <td>Layout Code 11 – Version 1.10 From 01.01.2017 to 12.31.2017</td>
+         <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td></td>
+          <td>Layout Code 12 – Version 1.11 From 01.01.2018 to 12.31.2018</td>
         <td>No</td>
         <td>Yes</td>
         <td>Yes</td>
     </tr>
      <tr>
-        <td>Call center</td>
-          <td>Support to Brazilian tax registration ID (CNPJ/CPF) at the customer data management</td>
+        <td></td>
+          <td>CIAP control and manual registration of ICMS installments</td>
+       <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td></td>
+          <td>Support for the following records for companies defined as Profile A:
+              <ul>
+                  <li>Block 0 <br></br> 0000-0001-0005-0015-0100-0150-0190-0200-0220-0300-0305-0400-0450-0460-0500-0600-0990</li>
+              <li>Block C <br></br> C001-C100-C101-C110-C111-C113-C120-C130-C140-C141-C160-C170-C172-C190-C195-C400-C405-C410-C420-C460-C470-C490-C500(incoming)-C590 (incoming)-C990</li>
+              <li>Block D (only for incoming fiscal documents) <br></br> D001-D100-D190-D195-D500-D590-D990 </li>
+              <li>Block E <br></br> E001-E100-E110-E111-E116-E200-E210-E220-E250-E300-E310-E311-E312-E313-E316-E500-E510-E520-E530-E990 </li>
+              <li>Block G <br></br> G001-G110-G125-G126-G130-G140-G990 </li>
+              <li>Block H <br></br> H001-H005-H010-H990 </li>
+              <li>Block 1 <br></br> 1001-1010-1990 </li>
+              </ul>
+</td>
+      <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td></td>
+          <td>Block C <br></br> C114</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+     <tr>
+        <td></td>
+          <td>Block K and related <br></br> 0210- K001-K100-K200-K220-K230-K235</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td></td>
+    <td><strong>Out of scope:</strong> SPED Fiscal with specific requirements from the state/region, as described in the Brazilian localization strategy section; and companies categorized as Profile B and Profile C</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>SPED Contributions 
+(PIS and COFINS)
+</td>
+          <td>Generation of a text file in accordance with Practical Guide 1.25</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td></td>
+          <td>Support for tax assessment regime Cumulative</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td></td>
+          <td>Support for company type Sociedade empresaria em geral</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td></td>
+          <td>Support for booking criterio Regime de Competência – Escrituracao detalhada only</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td></td>
+          <td>Support for the following records:
+              <ul>
+                  <li>Block 0 <br></br> 0000-0001-0100-0110-0140-0150-0190-0200-0400-0450-0990 </li>
+                  <li>Block A <br></br> A001-A010-A100-A110-A111-A120-A170-A990 </li>
+                  <li>Block C <br></br> C001-C010-C100-C110-C111-C120-C170-C180-C181-C185-C188-C190-C191-C195-C198-C199-C380-C381-C385-C400-C405-C481-C485-C490-C491-C495-C500-C501-C505-C509 </li>
+                  <li>Block D (only for incoming fiscal documents) <br></br> D001-D010-D100-D101-D105-D111-D500-D501-D505-D509 </li>
+                  <li>Block F <br></br> F010-F100-F111-F600-F990 </li> </ul>
+</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td></td>
+          <td>Support for the following records:
+              <ul>
+                  <li>Block 0 <br></br> 0111 </li>
+                  <li>Block C <br></br> C175 </li>
+                  <li>Block F <br></br> F120-F129-F130-F139-F700-F800 </li>
+                  <li>Block M <br></br> M001-M100-M105-M110-M115-M200-M205-M210-M220-M225-M400-M410-M500-M505-M510-M515-M600-M606-M610-M620-M625-M800-M810-M990 </li>
+                  <li)Block 1 <br></br> 1100-1300-1500-1700 </li>
+                  </ul>
+    </td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td></td>
+    <td><strong>Out of scope:</strong> The tax assessment process and generation of related blocks (M) for regime Non cumulative and Both.</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>SPED ECF</td>
+          <td>Generation of a text file using “Management Reporter” <br></br> Layout 001, 002, 003 and 004 <br></br> Support for the following blocks and records:
+          <ul>
+    <li>Block 0 <br></br> 0000-0001-0010-0020-0030-0035-0930-0990 </li>
+    <li>Block J <br></br> J001-J050-J051-J100 </li>
+    <li>Block K <br></br> K001-K030-K155-K156-K355-K356-K990 </li>
+    <li>Bloco V (DEREX) <br></br> V001-V010-V020-V030-V100-V990 </li>
+    </ul>
+</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>SPED Reinf</td>
+          <td>Generation of events R-1000, R-1070, R-2010, R-2020, R-2060, R-2098, R-2099. <br></br> Layout version 1.3.02
+</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>SINTEGRA</td>
+          <td>Generation of text files in accordance with Version 3 - ICMS-76/03, which is available from [http://www.sintegra.gov.br]( http://www.sintegra.gov.br/)</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>No</td>
+    </tr>
+      <tr>
+        <td>GIA-SP</td>
+          <td>Generation of GIA Sao Paulo state text files in accordance with version 08.00 (01/02/2013), which is available from [http://www.fazenda.sp.gov.br/download/download_gia.shtm](http://www.fazenda.sp.gov.br/download/download_gia.shtm)
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+      <tr>
+        <td>GIA-ST Nacional</td>
+          <td>Generation of GIA-ST text files in accordance with version 3.1 which is available from [http://www.fazenda.sp.gov.br/download/downloadgiast.shtm](http://www.fazenda.sp.gov.br/download/downloadgiast.shtm)
+</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+      <tr>
+        <td>SPED Accounting</td>
+          <td>Generation of SPED Contábil text files <br></br>Layout version supported: 2.0, 3.0, 4.0, 5.0 and 6.0
+</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+      <tr>
+        <td></td>
+          <td>Support for bookkeeping type G (Day Book - Livro Diario) and the generation of following blocks and records:
+              <ul>
+                  <li>Block 0 <br></br> 0000-0001-0007-0220-0990 </li>
+                  <li>Block I <br></br> I001-I010-I020-I050-I052-I100-I150-I155-I200-I250-I350-I355-I990 </li>
+                  <li>Block J <br></br> J001-J005-J100-J150-J900-J930-J999 </li>
+                  <li>Block 9 <br></br> 9900-9999 </li> </ul> <br></br> Out os scope: Referenced chart of account (mapping between local CoA and government CoA).
+</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+      <tr>
+        <td>Tax statement extensibility</td>
+          <td>The Tax Statement Framework aims to provide a unified experience for tax statement developers (for example, partners and independent software vendors [ISVs]), so that they can make their tax statements available to users in the AX 2012 Fiscal books module. <br></br> 
+The framework consists of a set of base artifacts and object-oriented design guidelines that should be followed by tax statement providers. Microsoft, being a tax statement developer itself, also develops its own tax statements by leveraging this framework.
+<ul>
+    <li>Sped Fiscal </li>
+    <li>EFD Contributions</li>
+    <li>Sped ECD and ECF</li>
+    <li>GIA-SP</li>
+    <li>GIA-ST</li>
+    <li>Sintegra</li>
+    </ul>
+</td>
         <td>No</td>
         <td>Yes</td>
         <td>Yes</td>
@@ -1156,230 +1401,6 @@ Table 1 – Brazilian localization features
 </tbody>
 </table>
 
--   CNPJ/CPF
-
--   IE
-
--   CCM
-
--   IE for tax substitution for multiples states
-
--   CNAE
-
--   CNPJ/CPF
-
--   IE
-
--   CCM
-
--   NIT
-
--   INSS-CEI
-
--   CNAE
-
--   Fiscal classification code and exception
-
--   Taxation origin
-
--   Product type
-
--   1 – Taxable
-
--   2 – Exempt or non-taxable
-
--   3 – Others
-
--   Inventory items
-
--   Services
-
--   Fixed assets with bookkeeping of deferred ICMS tax amounts
-
--   Goods for use and consumption
-
--   From vendors that are not ICMS payers/contributors (using models 1, 1-A, and
-    55)
-
--   Direct import (using models 1, 1-A, and 55)
-
--   (IPI, ICMS) Tax and price complementary fiscal documents
-
--   Vendor invoices (not dependent on purchase orders)
-
--   Inventory items
-
--   Services
-
--   Fixed assets
-
--   Third-party sales
-
--   Project invoices
-
--   For end users
-
--   For customers in SUFRAMA
-
--   (IPI, ICMS) Tax and price complementary fiscal documents
-
--   Issue
-
--   Cancel
-
--   Discard
-
--   Electronic correction letter (CC-e)
-
--   Day book
-
--   Analytical ledger
-
--   Trial balance
-
--   Released products by category
-
--   Mass update worksheet
-
--   Retail product hierarchy
-
--   IPI tax assessment
-
--   ICMS tax assessment
-
--   ICMS-ST tax assessment for states with IE registration
-
--   Incoming and Incoming model 1A
-
--   Outgoing and Outgoing model 2A
-
--   Inventory models 3 and 7
-
--   CIAP control report
-
--   ISS Report model 51 (delivering services)
-
--   ISS Report model 56 (acquiring services)
-
--   ECF daily operations report (Mapa Resumo)
-
--   IPI
-
--   ICMS and ICMS-ST
-
--   ICMS DIFAL
-
--   ISS
-
--   INSS CPRB
-
--   Registration and posting of adjustment transactions for ICMS, ICMS\_ST, and
-    IPI taxes
-
--   Registration and posting of non-fiscal operations with calculation of PIS
-    and COFINS taxes
-
--   Tax payment integration with the Accounts payable module
-
--   Layout Code 08 – Version 1.07 From 01.01.2014 to 12.31.2014
-
--   Layout Code 09 – Version 1.08 From 01.01.2015 to 12.31.2015
-
--   Layout Code 10 – Version 1.09 From 01.01.2016 to 12.31.2016
-
--   Layout Code 10 – Version 1.09 From 01.01.2016 to 12.31.2016
-
--   Block 0  
-    0000-0001-0005-0015-0100-0150-0190-0200-0220-0300-0305-0400-0450-0460-0500-0600-0990
-
--   Block C  
-    C001-C100-C101-C110-C111-C113-C120-C130-C140-C141-C160-C170-C172-C190-C195-C400-C405-C410-C420-C460-C470-C490-C500(incoming)-C590
-    (incoming)-C990
-
--   Block D (only for incoming fiscal documents)  
-    D001-D100-D190-D195-D500-D590-D990
-
--   Block E  
-    E001-E100-E110-E111-E116-E200-E210-E220-E250-E300-E310-E311-E312-E313-E316-E500-E510-E520-E530-E990
-
--   Block G  
-    G001-G110-G125-G126-G130-G140-G990
-
--   Block H  
-    H001-H005-H010-H990
-
--   Block 1  
-    1001-1010-1990
-
--   Block 0  
-    0000-0001-0100-0110-0140-0150-0190-0200-0400-0450-0990
-
--   Block A  
-    A001-A010-A100-A110-A111-A120-A170-A990
-
--   Block C  
-    C001-C010-C100-C110-C111-C120-C170-C180-C181-C185-C188-C190-C191-C195-C198-C199-C380-C381-C385-C400-C405-C481-C485-C490-C491-C495-C500-C501-C505-C509
-
--   Block D (only for incoming fiscal documents)  
-    D001-D010-D100-D101-D105-D111-D500-D501-D505-D509
-
--   Block F  
-    F010-F100-F111-F600-F990
-
--   Block C
-
-C175
-
--   Block F  
-    F120-F129-F130-F139-F700-F800
-
--   Block M
-
-M001-M100-M105-M110-M115-M200-M205-M210-M220-M225-M400-M410-M500-M505-M510-M515-M600-M606-M610-M620-M625-M800-M810-M990
-
--   Block 1
-
-1100-1300-1500-1700
-
--   Block 0  
-    0000-0001-0010-0020-0030-0035-0930-0990
-
--   Block J  
-    J001-J050-J051-J100
-
--   Block K  
-    K001-K030-K155-K156-K355-K356-K990
-
--   Bloco V (DEREX)
-
-V001-V010-V020-V030-V100-V990
-
--   Block 0  
-    0000-0001-0007-0220-0990
-
--   Block I  
-    I001-I010-I020-I050-I052-I100-I150-I155-I200-I250-I350-I355-I990
-
--   Block J  
-    J001-J005-J100-J150-J900-J930-J999
-
--   Block 9  
-    9900-9999
-
-**Out os scope**: Referenced chart of account (mapping between local CoA and
-government CoA).
-
--   Sped Fiscal
-
--   EFD Contributions
-
--   Sped ECD and ECF
-
--   GIA-SP
-
--   GIA-ST
-
--   Sintegra
 
 Out of scope 
 -------------
