@@ -5,7 +5,7 @@ title: Scope of the Brazilian localization
 description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil that have been implemented as part of Microsoft Dynamics AX 2012 R2, R3 and Dynamics 365 for Operations. 
 author: sndray
 manager: AnnBe
-ms.date: 07/13/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
