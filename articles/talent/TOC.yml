@@ -185,23 +185,23 @@
         href: ../fin-and-ops/get-started/create-alerts.md?toc=/talent/toc.json
       - name: Batch processing for alerts
         href: ../fin-and-ops/get-started/alerts-managing.md?toc=/talent/toc.json 
-   - name: Case management
-     href: ../fin-and-ops/organization-administration/cases.md?toc=/talent/toc.json
-     items:
-     - name: Configure case security, processes, and categories
-       href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/talent/toc.json
-   - name: Configure document management
-     href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/talent/toc.json
-   - name: Configure and send email
-     href: ../fin-and-ops/organization-administration/configure-email.md?toc=/talent/toc.json
-   - name: Date/time data and time zones
-     href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/talent/toc.json
- - name: Human resources tasks
-   items:
-   - name: Add to your performance journal and send praise to someone
-     href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/talent/toc.json    
-   - name: Create a goal
-     href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/talent/toc.json
-   - name: Create a performance review
-     href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/talent/toc.json    
+    - name: Case management
+      href: ../fin-and-ops/organization-administration/cases.md?toc=/talent/toc.json
+      items:
+      - name: Configure case security, processes, and categories
+        href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/talent/toc.json
+    - name: Configure document management
+      href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/talent/toc.json
+    - name: Configure and send email
+      href: ../fin-and-ops/organization-administration/configure-email.md?toc=/talent/toc.json
+    - name: Date/time data and time zones
+      href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/talent/toc.json
+  - name: Human resources tasks
+    items:
+    - name: Add to your performance journal and send praise to someone
+      href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/talent/toc.json    
+    - name: Create a goal
+      href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/talent/toc.json
+    - name: Create a performance review
+      href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/talent/toc.json    
      
