@@ -46,19 +46,11 @@ This topic provides links to documentation resources for Mexico.
 - [Electronic ledger accounting statements](latam-mex-electronic-ledger-accounting-statements.md)
 - [Enter tax registration IDs for Mexican legal entities](tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md)
 - [Inquire and print an electronic invoice](tasks/mx-00010-inquire-print-electronic-invoice.md)
-        - name: ISR declaration report
-          href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
-        - name: Post a free text invoice
-          href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
-        - name: Produce Mexican electronic ledger accounting report version 1.1
-          href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
-        - name: Set parameters for an electronic invoice
-          href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
-        - name: Set up sales tax codes for Mexico
-          href: ../financials/localizations/tasks/mx-00006-sales-tax-code.md
-        - name: Set up the chart of accounts for a legal entity in Mexico
-          href: ../financials/localizations/tasks/mx-00020-chart-accounts-legal-entity-mexico.md
-        - name: Specify the RFC registration ID for Mexican bank accounts
-          href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
-        - name: Vendor registration IDs
-          href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
+- [ISR declaration report](latam-mex-isr-declaration-report-supporting-processes.md)
+- [Post a free text invoice](tasks/mx-00010-post-free-text-invoice.md)
+- [Produce Mexican electronic ledger accounting report version 1.1](tasks/mx-00020-electronic-ledger.md)
+- [Set parameters for an electronic invoice](tasks/mx-00010-set-parameters-electronic-invoice.md)
+- [Set up sales tax codes for Mexico](tasks/mx-00006-sales-tax-code.md)
+- [Set up the chart of accounts for a legal entity in Mexico](tasks/mx-00020-chart-accounts-legal-entity-mexico.md)
+- [Specify the RFC registration ID for Mexican bank accounts](tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md)
+- [Vendor registration IDs](tasks/mx-00008-vendor-registration-ids.md)
