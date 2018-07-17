@@ -69,7 +69,8 @@ This topic provides links to documentation resources for Brazil.
   - [Issue ICMS tax credit fiscal documents (Brazil)](tasks/br-00072-issuing-icms-tax-credit-fiscal-document.md)
   - [Issue ICMS tax credit transfer fiscal documents (Brazil)](tasks/br-00071-issuing-icms-tax-credit-transfer-fiscal-document.md)
   - [Set up adjustment codes for ICMS tax (Brazil)](tasks/br-10001-1-set-up-adjustment-codes-icms-tax.md)
-  
+
+----
   
 - [Fiscal books](latam-bra-fiscal-books.md)
   - [Configure fiscal books](latam-bra-configure-fiscal-books.md)
