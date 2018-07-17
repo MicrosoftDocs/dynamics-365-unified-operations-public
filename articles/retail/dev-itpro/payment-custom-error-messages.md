@@ -260,4 +260,6 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 
             return new AuthorizePaymentTerminalDeviceResponse(paymentInfo);
         }
+    }
+}
 ```
