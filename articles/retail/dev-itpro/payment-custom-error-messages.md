@@ -135,7 +135,7 @@ In order to return localized error messages from the payment connector to the PO
 
 ![Create new resource file in Visual Studio](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-New-Resource-File.jpg)
 
-You can see an example of these files below. Note, the culture specific postfix on each file (e.g. `en-us` is required in order for each localizes sattelite assembly to be generated). Also, make sure you have the culture neutral resources file defined as well as it will serve as the fallback in case you are missing a file for a specific culture. Once created, the following files should be present in your project. Note, this illustrates only one extra local, namely `en-us`, but you can add support for as many locales as needed).
+You can see an example of these files below. Note, the culture specific postfix on each file (e.g. `en-us`) is required in order for each localizes sattelite assembly to be generated. Also, make sure you have the culture neutral resources file (i.e. `Messages.resx`) defined as it serves as the fallback in case you are missing a file for a specific culture. Once created, the following files should be present in your project. Note, this illustrates only one extra local, namely `en-us`, but you can add support for as many locales as needed).
 
 ![Layout of resource files in Visual Studio](media/PAYMENTS/CUSTOM-ERRORS/VisualStudio-Layout-Resource-File.jpg)
 
@@ -251,6 +251,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
             // Assuming the external payment terminal/gateway returned a decline and a reference number. Construct 
             // the custom error message and set the payment error on the 'paymentInfo' object set on the response.
             PaymentInfo paymentInfo = new PaymentInfo();
+            CultureInfo cultureInfo = new CultureInfo(this.terminalSettings.Locale);
             string localizedString = this.messagesResourceManager.GetString("CustomPaymentConnector_Decline", cultureInfo);
             string errorMessage = string.Format(localizedString, referenceNumber);
             bool isLocalized = true;
