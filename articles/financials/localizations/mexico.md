@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mexico
-description: This topic provides links to documentation resources for Mexico. 
+description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for Mexico. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/17/2018
