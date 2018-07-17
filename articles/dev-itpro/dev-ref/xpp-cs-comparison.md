@@ -5,7 +5,7 @@ title: X++ and C# comparison
 description: This topic compares X++ and C# syntax and programming.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -49,8 +49,8 @@ The following sections describe some basic similarities and differences between 
 The following X++ features are the same for C#:
 -   Single line (`//`) and multi-line (/\* \*/) comments.
 -   `==` (equal) operator for determining whether two values are equal.
--   != (not equal to) operator for determining whether two values are not equivalent.
--   + (plus sign) operator for string concatenation.
+-   `!=` (not equal to) operator for determining whether two values are not equivalent.
+-   `+` (plus sign) operator for string concatenation.
 
 ### Differences
 
@@ -71,8 +71,8 @@ This section contains two simple code samples. One sample is written in X++, and
 -   /\* \*/ multi-line comment
 -   `if` statement
 -   `==` operator
--   != operator
--   + operator to concatenate strings
+-   `!=` operator
+-   `+` operator to concatenate strings
 -   Global::info for message output, with and without the Global:: prefix
 -   Global::error for message output
 -   The use of single and double quotation characters (' and ") as string delimiters.
@@ -199,7 +199,7 @@ The **while** keyword supports looping in both X++ and C#.
     static void JobRs002a_LoopsWhile(Args _args)
     {
         int nLoops = 1;
-        while (nLoops &lt;= 88)
+        while (nLoops <= 88)
         {
             print nLoops;
             pause;
@@ -279,7 +279,7 @@ In X++ the counter variable cannot be declared as part of the **for** statement.
     static void JobRs002a_LoopsWhileFor(Args _args)
     {
         int ii; // The counter.
-        for (ii=1; ii &lt; 5; ii++)
+        for (ii=1; ii < 5; ii++)
         {
             print ii;
             pause;

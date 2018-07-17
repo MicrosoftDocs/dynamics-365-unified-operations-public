@@ -958,9 +958,9 @@
         - name: Consolidation and elimination overview
           href: ../financials/budgeting/consolidation-elimination-overview.md
         - name: Fiscal calendars, fiscal years, and periods
-          href: ../financials/general-ledger/configure-account-structures.md
+          href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
         - name: Configure account structures
-          href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md        
+          href: ../financials/general-ledger/configure-account-structures.md        
       - name: Journals and ledgers
         items:
         - name: General journal processing
