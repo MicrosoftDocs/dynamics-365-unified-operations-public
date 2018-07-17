@@ -107,8 +107,6 @@
       href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/talent/toc.json
     - name: Create Open in Excel experiences
       href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/talent/toc.json
-    - name: Configure and send email
-      href: ../fin-and-ops/organization-administration/configure-email.md?toc=/talent/toc.json
     - name: Troubleshoot the Office integration
       href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/talent/toc.json
   - name: Organization administration
