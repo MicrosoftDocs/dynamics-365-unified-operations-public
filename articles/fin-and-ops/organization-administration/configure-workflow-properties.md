@@ -112,6 +112,7 @@ When a document is submitted for processing, a workflow instance is created. You
     2.  Click **Insert placeholder**.
     3.  In the list that appears, select the placeholder to insert.
     4.  Click **Insert**.
+    5.  A common **Notification text** placeholder to include is "Last Notes: %Workflow.Last note%" to display any comments from the previous step.
 
 6.  To add translations of the text, follow these steps:
     1.  Click **Translations**.
