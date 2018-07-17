@@ -2,7 +2,7 @@
 # required metadata
 
 title: Brazil
-description: This topic provides links to documentation resources for Brazil. 
+description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for Brazil. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/17/2018
