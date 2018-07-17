@@ -38,7 +38,7 @@ This topic provides links to documentation resources for Mexico.
 - [Scope of localization](latam-mex-scope.md)
 - [Adjustment inflation declaration report](latam-mex-adjustment-inflation-declaration-report.md)
 - [Cancel an electronic invoice](tasks/mx-00010-cancel-electronic-invoice.md)
-- [CFDI Version 3.3](atam-mex-cfdi-3-3.md)
+- [CFDI Version 3.3](latam-mex-cfdi-3-3.md)
 - [Customer registration IDs and other information](tasks/mx-00007-customer-registration-ids-other-information.md)
 - [DIOT declaration statement](latam-mex-diot-declaration-statement.md)
 - [E-invoicing CFDI](tasks/mx-00010-e-invoicing-cfdi.md)
