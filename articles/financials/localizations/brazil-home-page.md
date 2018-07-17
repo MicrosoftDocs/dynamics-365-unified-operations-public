@@ -107,10 +107,8 @@ This topic provides links to documentation resources for Brazil.
   - [Issue ICMS tax credit fiscal documents](tasks/br-00072-issuing-icms-tax-credit-fiscal-document.md)
   - [Issue ICMS tax credit transfer fiscal documents](tasks/br-00071-issuing-icms-tax-credit-transfer-fiscal-document.md)
   - [Set up adjustment codes for ICMS tax](tasks/br-10001-1-set-up-adjustment-codes-icms-tax.md)
-          - name: Set up adjustment codes for ICMS taxes on fiscal documents
-            href: ../financials/localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
-          - name: Set up adjustment codes for IPI taxes
-            href: ../financials/localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
+  - [Set up adjustment codes for ICMS taxes on fiscal documents](tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md)
+  - [Set up adjustment codes for IPI taxes](tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md)
           - name: Set up adjustment codes for PIS and COFINS taxes
             href: ../financials/localizations/tasks/br-10006-2-set-up-adjustment-codes-pis-cofins-taxes.md
           - name: Set up PIS and COFINS tables
