@@ -35,26 +35,17 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic provides links to documentation resources for Mexico. 
 
 
-        - [Scope of localization](latam-mex-scope.md)
-        - [Adjustment inflation declaration report](latam-mex-adjustment-inflation-declaration-report.md)
-        - name: Cancel an electronic invoice
-          href: ../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md
-        - name: CFDI Version 3.3
-          href: ../financials/localizations/latam-mex-cfdi-3-3.md
-        - name: Customer registration IDs and other information
-          href: ../financials/localizations/tasks/mx-00007-customer-registration-ids-other-information.md
-        - name: DIOT declaration statement
-          href: ../financials/localizations/latam-mex-diot-declaration-statement.md
-        - name: E-invoicing CFDI
-          href: ../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md
-        - name: 'Electronic invoices '
-          href: ../financials/localizations/latam-mex-CFDI-electronic-invoices.md
-        - name: Electronic ledger accounting statements
-          href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
-        - name: Enter tax registration IDs for Mexican legal entities
-          href: ../financials/localizations/tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md
-        - name: Inquire and print an electronic invoice
-          href: ../financials/localizations/tasks/mx-00010-inquire-print-electronic-invoice.md
+- [Scope of localization](latam-mex-scope.md)
+- [Adjustment inflation declaration report](latam-mex-adjustment-inflation-declaration-report.md)
+- [Cancel an electronic invoice](tasks/mx-00010-cancel-electronic-invoice.md)
+- [CFDI Version 3.3](atam-mex-cfdi-3-3.md)
+- [Customer registration IDs and other information](tasks/mx-00007-customer-registration-ids-other-information.md)
+- [DIOT declaration statement](latam-mex-diot-declaration-statement.md)
+- [E-invoicing CFDI](tasks/mx-00010-e-invoicing-cfdi.md)
+- [Electronic invoices](latam-mex-CFDI-electronic-invoices.md)
+- [Electronic ledger accounting statements](latam-mex-electronic-ledger-accounting-statements.md)
+- [Enter tax registration IDs for Mexican legal entities](tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md)
+- [Inquire and print an electronic invoice](tasks/mx-00010-inquire-print-electronic-invoice.md)
         - name: ISR declaration report
           href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
         - name: Post a free text invoice
