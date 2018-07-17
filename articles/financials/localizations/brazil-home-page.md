@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Business activity statement
+# Brazil 
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,5 +49,5 @@ This topic provides links to documentation resources for Brazil.
   - [Electronic fiscal document for services](latam-bra-service-electronic-fiscal-document.md)
   - [Journals generated during the electronic payment return process for Brazil](latam-bra-examples-journals-generated-electronic-payment-return-process.md)
 - [NF-e process overview for Brazil](latam-bra-nf-e-process.md)
-  - [Automatic transmission of NF-e fiscal documents (Brazil)](br-00058-automatic-transmission-nf-e-fiscal-documents.md)
-  - [Generate emails for approved NF-e and attach DANFE PDF files and NF-e XML files to the emails (Brazil)](br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md)
+  - [Automatic transmission of NF-e fiscal documents (Brazil)](tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md)
+  - [Generate emails for approved NF-e and attach DANFE PDF files and NF-e XML files to the emails (Brazil)](tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md)
