@@ -5,7 +5,7 @@ title: Configure workflow properties
 description: This topic explains how to configure the various properties of a workflow.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -112,7 +112,7 @@ When a document is submitted for processing, a workflow instance is created. You
     2.  Click **Insert placeholder**.
     3.  In the list that appears, select the placeholder to insert.
     4.  Click **Insert**.
-    5.  A common **Notification text** placeholder to include is "Last Notes: %Workflow.Last note%" to display any comments from the previous step.
+    5.  A common **Notification text** placeholder to include is "Last Notes: %Workflow.Last note%", which displays any comments from the previous step.
 
 6.  To add translations of the text, follow these steps:
     1.  Click **Translations**.
