@@ -34,12 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides links to documentation resources for Mexico. 
 
-      - name: Mexico
-        items:
-        - name: Scope of localization
-          href: ../financials/localizations/latam-mex-scope.md
-        - name: Adjustment inflation declaration report
-          href: ../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md
+
+        - [Scope of localization](latam-mex-scope.md)
+        - [Adjustment inflation declaration report](latam-mex-adjustment-inflation-declaration-report.md)
         - name: Cancel an electronic invoice
           href: ../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md
         - name: CFDI Version 3.3
