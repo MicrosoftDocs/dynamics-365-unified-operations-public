@@ -36,4 +36,4 @@ This topic provides links to documentation resources for Sweden.
 
 - [Export financial information for auditors in Sweden](emea-swe-sie-standard-report.md)
 - [Import payment formats](emea-swe-payment-formats-import.md)
-- [Cash registers](emea-swe-cash-registers.md)
+- [Cash registers](emea-swe-cash-registers?toc=/fin-and-ops/toc.json)
