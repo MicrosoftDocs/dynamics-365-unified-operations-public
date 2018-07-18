@@ -49,9 +49,8 @@ Code examples for consuming custom services using SOAP are available in the [Mic
 -   All the service groups under the **AOTService group** node are automatically deployed.
 -   All services that must be deployed must be part of a service group.
 
-The SOAP endpoint is at `https://host_uri/soap/services/service_group_name`. 
-
-**Example:** `https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/UserSessionService?wsdl`
+**Example endpoint for a dev environment:** `https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/UserSessionService?wsdl`
+**Example endpoint for a non-dev environment:** `https://<env-name>soap.cloudax.dynamics.com/soap/services/UserSessionService?wsdl`
 
 For more information, see:
 -   [Using Custom Services \[AX 2012\] (TechNet)](http://technet.microsoft.com/en-us/library/hh509052.aspx)
