@@ -48,7 +48,9 @@ The following illustration shows how the data is synchronized between Project Se
 
 [![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectEstimatesFlow.png)](./media/ProjectEstimatesFlow.png)
 
-## Template and tasks (Project hour estimates)
+## Project hour estimates
+
+### Template and tasks
 
 To access the available templates, in the Microsoft PowerApps admin center, select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
@@ -60,21 +62,21 @@ The following template and underlying tasks are used to synchronize project hour
     - Transaction relationships
     - Expense estimates
 
-## Entity set (Project hour estimates)
+### Entity set
 
 | Project Service Automation | Finance and Operations                        |
 |----------------------------|-----------------------------------------------|
 | Project tasks              | Integration entity for project hour estimates |
 
-## Entity flow (Project hour estimates)
+### Entity flow
 
 Project hour estimates are managed in Project Service Automation, and they are synchronized to Finance and Operations as project hour forecasts.
 
-## Prerequisites (Project hour estimates)
+### Prerequisites
 
 Before synchronization of project hour estimates can occur, you must synchronize projects, project tasks, and project expense transaction categories.
 
-## Power Query (Project hour estimates)
+### Power Query
 
 In the project hour estimates template, you must use Microsoft Power Query for Excel to complete these tasks:
 
@@ -82,28 +84,30 @@ In the project hour estimates template, you must use Microsoft Power Query for E
 - Filter out any resource-specific records in the task that will fail the integration into hour forecasts.
 - Filter out any empty transaction category rows. Failure to complete this task might result in incorrect hour forecasts.
 
-### Set the default forecast model ID
+#### Set the default forecast model ID
 
-To update the default forecast model ID in the template, click the **Map** arrow to open the mapping. Then select to open the **Advanced Query and Filtering** form.
+To update the default forecast model ID in the template, click the **Map** arrow to open the mapping. Then select the **Advanced Query and Filtering** link.
 
-- If you're using the default Project hour estimates (PSA to Fin and Ops) template, in the **Applied Steps** section, select the **Inserted Condition**. In the **Function** entry, replace **O\_forecast** with the name of the forecast model ID that should be used with the integration. The default template has a forecast model ID from the demo data.
-- If you're creating a new template, you must add this column. Select **Add Conditional Column**, and enter a name for the new column, such as **ModelID**. Enter the condition for the column, where, if Project task is not null, then \<enter the forecast model ID\>; else null.
+- If you're using the default Project hour estimates (PSA to Fin and Ops) template, select the **Inserted Condition** in the list of **Applied Steps**. In the **Function** entry, replace **O\_forecast** with the name of the forecast model ID that should be used with the integration. The default template has a forecast model ID from the demo data.
+- If you're creating a new template, you must add this column. In Power Query, select **Add Conditional Column**, and enter a name for the new column, such as **ModelID**. Enter the condition for the column, where, if Project task is not null, then \<enter the forecast model ID\>; else null.
 
-### Filter out resource-specific records
+#### Filter out resource-specific records
 
-The Project hour estimates (PSA to Fin and Ops) template has a default filter that removes any resource-specific records. If you create your own template, you must add this filter. In the **Advanced Query and Filtering** form, select to filter on the **msdyn\_islinetask** column so that only **False** records are included.
+The Project hour estimates (PSA to Fin and Ops) template has a default filter that removes any resource-specific records. If you create your own template, you must add this filter. Select the **Advanced Query and Filtering** link to filter on the **msdyn\_islinetask** column so that only **False** records are included.
 
-### Filter out empty transaction category rows
+#### Filter out empty transaction category rows
 
-You must add a filter to remove any rows that have empty transaction categories. This task is required, regardless of whether you're using the default template or creating your own template. This filter removes any summary rows from Project Service Automation that might cause the hour forecasts in Finance and Operations to be incorrect. In the **Advanced Query and Filtering** form, select to filter out null records in the **msdyn\_transactioncategory\_value** column.
+You must add a filter to remove any rows that have empty transaction categories. This task is required, regardless of whether you're using the default template or creating your own template. This filter removes any summary rows from Project Service Automation that might cause the hour forecasts in Finance and Operations to be incorrect. Select **Advanced Query and Filtering** link to filter out null records in the **msdyn\_transactioncategory\_value** column.
 
-## Template mapping in Data integration (Project hour estimates)
+### Template mapping in Data integration
 
 The following illustration shows an example of the template task mapping in Data integration. The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
 
 [![Template mapping](./media/ProjectHourEstimatesMapping.jpg)](./media/ProjectHourEstimatesMapping.jpg)
 
-## Template and tasks (Project expense estimates)
+## Project expense estimates
+
+### Template and tasks
 
 The following template and underlying tasks are used to synchronize project expense estimates from Project Service Automation to Finance and Operations:
 
@@ -113,22 +117,22 @@ The following template and underlying tasks are used to synchronize project expe
     - Transaction relationships 
     - Expense estimates
 
-## Entity set (Project expense estimates)
+### Entity set
 
 | Project Service Automation | Finance and Operations                                   |
 |----------------------------|----------------------------------------------------------|
 | Transaction Connections    | Integration entity for project transaction relationships |
 | Estimate Lines             | Integration entity for project expense estimates         |
 
-## Entity flow (Project expense estimates)
+### Entity flow
 
 Project expense estimates are managed in Project Service Automation, and they are synchronized to Finance and Operations as project expense forecasts.
 
-## Prerequisites (Project expense estimates)
+### Prerequisites
 
 Before synchronization of project expense estimates can occur, you must synchronize projects, project tasks, and project expense transaction categories.
 
-## Power Query (Project expense estimates)
+### Power Query
 
 In the project expense estimates template, you must use Power Query to complete the following tasks:
 
@@ -137,35 +141,35 @@ In the project expense estimates template, you must use Power Query to complete 
 - Transform the billing types.
 - Transform the transaction types.
 
-### Filter to include only expense estimate lines
+#### Filter to include only expense estimate lines
 
-The Project expense estimates (PSA to Fin and Ops) template has a default filter that includes only expense lines in the integration. If you create your own template, you must add this filter. Select the **Transaction relationships** task, and then click the **Map** arrow to open the mapping. Then select to open the **Advanced Query and Filtering** form. Filter the **msdyn\_transactiontype1** column so that it includes only **msdyn\_estimateline**.
+The Project expense estimates (PSA to Fin and Ops) template has a default filter that includes only expense lines in the integration. If you create your own template, you must add this filter. Select the **Transaction relationships** task, and then click the **Map** arrow to open the mapping. Select the **Advanced Query and Filtering** link. Filter the **msdyn\_transactiontype1** column so that it includes only **msdyn\_estimateline**.
 
-### Set the default forecast model ID
+#### Set the default forecast model ID
 
-To update the default forecast model ID in the template, select the **Expense estimates** task, and then click the **Map** arrow to open the mapping. Then select to open the **Advanced Query and Filtering** form.
+To update the default forecast model ID in the template, select the **Expense estimates** task, and then click the **Map** arrow to open the mapping. Select the **Advanced Query and Filtering** link.
 
-- If you're using the default Project expense estimates (PSA to Fin and Ops) template, in the **Applied Steps** section, select the first **Inserted Condition**. In the **Function** entry, replace **O\_forecast** with the name of the forecast model ID that should be used with the integration. The default template has a forecast model ID from the demo data.
-- If you're creating a new template, you must add this column. Select **Add Conditional Column**, and enter a name for the new column, such as **ModelID**. Enter the condition for the column, where, if Estimate line ID is not null, then \<enter the forecast model ID\>; else null.
+- If you're using the default Project expense estimates (PSA to Fin and Ops) template, in Power Query, select the first **Inserted Condition** from the **Applied Steps** section. In the **Function** entry, replace **O\_forecast** with the name of the forecast model ID that should be used with the integration. The default template has a forecast model ID from the demo data.
+- If you're creating a new template, you must add this column. In Power Query, select **Add Conditional Column**, and enter a name for the new column, such as **ModelID**. Enter the condition for the column, where, if Estimate line ID is not null, then \<enter the forecast model ID\>; else null.
 
-### Transform the billing types
+#### Transform the billing types
 
-The Project expense estimates (PSA to Fin and Ops) template includes a conditional column that is used to transform the billing types that are received from Project Service Automation during the integration. If you create your own template, you must add this conditional column. In the **Advanced Query and Filtering** form, select **Add Conditional Column**. Enter a name for the new column, such as **BillingType**. Then enter the following condition:
+The Project expense estimates (PSA to Fin and Ops) template includes a conditional column that is used to transform the billing types that are received from Project Service Automation during the integration. If you create your own template, you must add this conditional column. Select the **Advanced Query and Filtering** link and then select **Add Conditional Column**. Enter a name for the new column, such as **BillingType**. Then enter the following condition:
 
 If **msdyn\_billingtype** = 192350000, then **NonChargeable**  
 else if **msdyn\_billingtype** = 192350001, then **Chargeable**  
 else if **msdyn\_billingtype** = 192350002, then **Complimentary**  
 else **NotAvailable**
 
-### Transform the transaction types
+#### Transform the transaction types
 
-The Project expense estimates (PSA to Fin and Ops) template includes a conditional column that is used to transform the transaction types that are received from Project Service Automation during the integration. If you create your own template, you must add this conditional column. In the **Advanced Query and Filtering** form, select **Add Conditional Column**. Enter a name for the new column, such as **TransactionType**. Then enter the following condition:
+The Project expense estimates (PSA to Fin and Ops) template includes a conditional column that is used to transform the transaction types that are received from Project Service Automation during the integration. If you create your own template, you must add this conditional column. Select the **Advanced Query and Filtering** link and then select **Add Conditional Column**. Enter a name for the new column, such as **TransactionType**. Then enter the following condition:
 
 If **msdyn\_transactiontypecode** = 192350000, then **Cost**  
 else if **msdyn\_transactiontypecode** = 192350005, then **Sales**  
 else **null**
 
-## Template mapping in Data integration (Project expense estimates)
+### Template mapping in Data integration
 
 The following illustrations show examples of the template task mappings in Data integration. The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
 
