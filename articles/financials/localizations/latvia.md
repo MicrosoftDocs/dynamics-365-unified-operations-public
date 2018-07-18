@@ -2,7 +2,7 @@
 # required metadata
 
 title: Latvia
-description: This topic provides links to documentation resources for Latvia. 
+description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for Latvia. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/17/2018
