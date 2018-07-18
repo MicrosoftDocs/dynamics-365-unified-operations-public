@@ -79,16 +79,15 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 
 | Section | Field | Description | Sample Value |
 | --- | --- | --- | --- |
-| Header | Profile |	Unique name of the N-1 profile to setup. You should create one profile per environment / server where you currently have installed the Dynamics AX 2012 R3 Realtime Service. | |
-| Header | Description | Helpful description text to identify the profile. | |	
-| Connection | Server | The name of the server where the N-1 Realtime Service will be installed (same server as the current Dynamics AX 2012 R3 Realtime Service). | |
-| Connection | Port | The port the N-1 Realtime Service will use. | |
-| Connection | Web application name | The name to use for the N-1 Realtime Service in the Internet Information Services (IIS). | |
-| Connection | Protocol | The protocol that the current Dynamics AX 2012 R3 Realtime service uses. | |
-| Connection | Common name | The friendly name of the certificate that the N-1 Realtime Service uses. | |
-| Connection | Passphrase | Passphrase to use for the N-1 Realtime Service. | |	
-| Connection | Language | The language associated with the stores that are mapped to this N-1 Realtime service. | |	
-
+| Header | Profile |	Unique name of the N-1 profile to setup. You should create one profile per environment / server where you currently have installed the Dynamics AX 2012 R3 Realtime Service. | AXConnect |
+| Header | Description | Helpful description text to identify the profile. | Connector for AX2012 |	
+| Connection | Server | The name of the server where the N-1 Realtime Service will be installed (same server as the current Dynamics AX 2012 R3 Realtime Service). | sampleserver.local |
+| Connection | Port | The port the N-1 Realtime Service will use. | 8017 |
+| Connection | Web application name | The name to use for the N-1 Realtime Service in the Internet Information Services (IIS). | RealTimeServiceAX63 |
+| Connection | Protocol | The protocol that the current Dynamics AX 2012 R3 Realtime service uses. | https |
+| Connection | Common name | The friendly name of the certificate that the N-1 Realtime Service uses. | samplecertificate.local |
+| Connection | Passphrase | Passphrase to use for the N-1 Realtime Service. | *passphrase* |	
+| Connection | Language | The language associated with the stores that are mapped to this N-1 Realtime service. | EN-US |	
 
 3.	Click the `Save` button once done.
 
@@ -98,7 +97,7 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 
 | Section	| Field | Description	| Sample Value |
 | --- | --- | --- | --- |
-| Set up the retail shared parameters for security | Real-time Service profile | This value should be set to the Id of the profile that is created in the "Connector for Microsoft Dynamics AX" page. | |
+| Set up the retail shared parameters for security | Real-time Service profile | This value should be set to the Id of the profile that is created in the "Connector for Microsoft Dynamics AX" page. | AXConnect |
 | Set up the retail shared parameters for security |	TS password encryption name | The algorithm used to connect to the transaction service. This value should be set to 'SHA256'.	| SHA256 | 
 | Set up the retail shared parameters for security | Legacy Device Algorithm | The legacy device algorithm. | AES |
 
@@ -107,8 +106,8 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 
 | Section | Field | Description | Sample Value |
 | --- | --- | --- | --- |
-| HQ Message Database	| SQL Server instance name | The name of the SQL Server instance hosting the existing Dynamics AX 2012 R3 HQ Message Database.	| |
-| HQ Message Database | Server name | The name of the server hosting the existing Dynamics AX 2012 R3 HQ Message Database. | |
+| HQ Message Database	| SQL Server instance name | The name of the SQL Server instance hosting the existing Dynamics AX 2012 R3 HQ Message Database.	| sampleinstance |
+| HQ Message Database | Server name | The name of the server hosting the existing Dynamics AX 2012 R3 HQ Message Database. | sampleserver |
 | HQ Message Database |	Database name |	The name of the Dynamics AX 2012 R3 HQ Message Database. Note, the default database name in Dynamics AX 2012 R3 was `HQMessageDB`.	| HQMessageDB |
 
 3.	Click the `Save` button once done.
@@ -123,10 +122,10 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 
 | Field | Description | Sample Value |
 | --- | --- | --- |
-| Name | Name of the working folder. | |
-| Description | Description for the working folder.	| |
-| Download path	| Network path where the Dynamics AX 2012 R3 CDX download packages are stored.	| |
-| Upload path | Network path where the Dynamics AX 2012 R3 CDX upload packages are stored. | |
+| Name | Name of the working folder. | File storage for N-1 |
+| Description | Description for the working folder.	| File storage for N-1 |
+| Download path	| Network path where the Dynamics AX 2012 R3 CDX download packages are stored.	| \\sampleserver\Download |
+| Upload path | Network path where the Dynamics AX 2012 R3 CDX upload packages are stored. | \\sampleserver\Upload |
 
 3.	Click the `Save` button once done.
 
@@ -142,7 +141,7 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 | Header |	Name |	Name of the Channel Database Group used for the Dynamics AX 2012 R3 channel environment. |	Default_AX63 |
 | Header |	Description	| Description of the Channel Database Group used for the Dynamics AX 2012 R3 channel environment. |	Default group for AX63 channel database |
 | General |	Retail channel schema |	The schema of the Dynamics AX 2012 R3 schema. This must be set to 'AX2012R3'. |	AX2012R3 |
-| General |	Working folders |	The reference to the working folders record used for the CDX data package sync. This was created the  steps above. |	*File storage for N-1 (from steps above)* |
+| General |	Working folders |	The reference to the working folders record used for the CDX data package sync. This was created the  steps above. |	workingfolder |
 
 3.	Click the `Save` button once done.
 
@@ -155,15 +154,15 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 
 | Section | Field | Description	| Sample Value |
 | --- | --- | --- | --- |
-| Header	| Channel database ID |	Unique identifier for the physical Channel Database. This value should be derived from the Dynamics AX 2012 R3 environment.	| |
-| Header |	Channel database group |	The Channel Database Group that the Channel Database is mapped to. This value should be derived from the Dynamics AX 2012 R3 environment.	| |
+| Header	| Channel database ID |	Unique identifier for the physical Channel Database. This value should be derived from the Dynamics AX 2012 R3 environment.	| Default_AX63_Database |
+| Header |	Channel database group |	The Channel Database Group that the Channel Database is mapped to. This value should be derived from the Dynamics AX 2012 R3 environment.	| Default_AX63_DatabaseGroup |
 | Header |	Type	| The type of the Channel Database record. This must be set to 'Channel database'. | Channel database |
-| Header |	Data sync interval	| The interval at which to runt the CDX data sync. This must be left blank. |	<leave it blank> |
-| Header	| Username (Case Sensitive)	| The username to use to connect to the Dynamics AX 2012 R3 Channel Database.	| |
-| Header |	Password |	The password to use to connect to the Dynamics AX 2012 R3 Channel Database. | |
-| Header |	Database name |	The name of the Dynamics AX 2012 R3 Channel Database.	| |
-| Header |	Server name |	The name of the server where the Dynamics AX 2012 R3 Channel Database is hosted.	| |
-| Retail channel	| *List* |	The list of Retail Channels that are mapped to this Channel Database. This value should be derived from the Dynamics AX 2012 R3 environment.	| *Channels used for Phased Rollout (N-1)* |
+| Header |	Data sync interval	| The interval at which to runt the CDX data sync. This must be left blank. |	*leave this blank* |
+| Header	| Username (Case Sensitive)	| The username to use to connect to the Dynamics AX 2012 R3 Channel Database.	| channeluser |
+| Header |	Password |	The password to use to connect to the Dynamics AX 2012 R3 Channel Database. | *passphrase* |
+| Header |	Database name |	The name of the Dynamics AX 2012 R3 Channel Database.	| SampleChannelDB |
+| Header |	Server name |	The name of the server where the Dynamics AX 2012 R3 Channel Database is hosted.	| sampleserver |
+| Retail channel	| *List* |	The list of Retail Channels that are mapped to this Channel Database. This value should be derived from the Dynamics AX 2012 R3 environment.	| *Channels used for Phased Rollout (N-1)* (e.g. London) |
 
 3.	Click the `Save` button once done.
 
@@ -177,11 +176,11 @@ Note: This section only applies if the existing Dynamics AX 2012 R3 environment 
 
 | Section | Field | Description	| Sample Value |
 | --- | --- | --- | --- |
-| Header |	Name |	Unique name of the N-1 Channel Profile to setup. You should create one profile per environment / server where you currently have installed the Dynamics AX 2012 R3 Retail Server.	| Default_AX63 |
-| Profile properties |	Property key |	The key for the Retail Server URL used on the Dynamics AX 2012 R3 environment. This must be set to 'Retail Server URL'. | |
-| Profile properties |	Property value |	The Retail Server URL used on the Dynamics AX 2012 R3 environment.	| |
-| Profile properties |	Property value |	The key for the Hardware Station URL used on the Dynamics AX 2012 R3 environment. | |
-| Profile properties |	Property value |	The Hardware Station URL based on the Dynamics AX 2012 R3 environment. | |
+| Header |	Name |	Unique name of the N-1 Channel Profile to setup. You should create one profile per environment / server where you currently have installed the Dynamics AX 2012 R3 Retail Server.	| Default_AX63_Profile |
+| Profile properties |	Property key |	The key for the Retail Server URL used on the Dynamics AX 2012 R3 environment. This must be set to 'Retail Server URL'. | Retail Server URL |
+| Profile properties |	Property value |	The Retail Server URL used on the Dynamics AX 2012 R3 environment.	| http://localhost"35080/RetailServer/V1 |
+| Profile properties |	Property value |	The key for the Hardware Station URL used on the Dynamics AX 2012 R3 environment. | Hardware Station URL |
+| Profile properties |	Property value |	The Hardware Station URL based on the Dynamics AX 2012 R3 environment. | ipc://localhost |
 
 3.	Click the `Save` button once done.
 
@@ -194,8 +193,8 @@ Note: This section only applies if the existing Dynamics AX 2012 R3 environment 
 
 | Section | Field | Description	| Sample Value |
 | --- | --- | --- | --- |
-| General |	Live channel database |	The Channel Database this store is mapped to and setup in the steps above.	| |
-| General |	Channel profile	| The Channel Profile this store is mapped to and setup in the steps above.	| |
+| General |	Live channel database |	The Channel Database this store is mapped to and setup in the steps above.	| Default_AX63_Database |
+| General |	Channel profile	| The Channel Profile this store is mapped to and setup in the steps above.	| Default_AX63_Profile |
 
 ### Initialize AX 2012 Retail Scheduler
 1.	Sign in to the Dynamics 365 for Retail headquarters and open the form `Initialize AX 2012 Retail Scheduler` form and click OK.
