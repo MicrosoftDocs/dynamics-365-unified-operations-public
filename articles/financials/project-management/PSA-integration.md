@@ -39,7 +39,7 @@ The Project Service Automation to Finance and Operations integration solution us
 > [!NOTE]
 > - If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, after you install KB 4132657 and KB 4132660, you will be able to use the templates to integrate project tasks, expense transaction categories, hour estimates, expense estimates, and actuals, and to configure functionality locking. If you must reset the accounting distributions, we recommend that you also install KB 4131710.
 > - If you're using Finance and Operations 7.3.0, you must install KB 4074835. You will then be able to integrate fixed price projects.
-> - If you're using Finance and Operations 7.3.0, and you are bringing fee transactions over from Project Service Automation, ou must install KB 4345320 in order to include those fees in the project invoice.
+> - If you're using Finance and Operations 7.3.0, and you are bringing fee transactions over from Project Service Automation, you must install KB 4345320 in order to include those fees in the project invoice.
 > - If you're using Microsoft Dynamics 365 for Finance and Operations version 8.0, you will be able to use project task integration, expense transaction categories, hour estimates, expense estimates, and functionality locking.
 > - If you're using Microsoft Dynamics 365 for Finance and Operations version 8.0.1, or later, you will be able to synchronize actuals.
 
