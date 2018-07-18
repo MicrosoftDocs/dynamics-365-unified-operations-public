@@ -66,7 +66,9 @@ The following illustration shows how the data is synchronized between Project Se
 
 [![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectExpenseCategoriesFlow.png)](./media/ProjectExpenseCategoriesFlow.png)
 
-## Template and task (Finance and Operations to Project Service Automation)
+## Project expense category synchronization from Finance and Operations to Project Service Automation
+
+### Template and task
 
 To access the template, in the Microsoft PowerApps admin center, select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
@@ -75,17 +77,17 @@ The following template and underlying task are used to synchronize project expen
 - **Name of the template in Data integration:** Project expense transaction categories (Fin and Ops to PSA)
 - **Name of the task in the project:** Sync categories to PSA
 
-## Entity set (Finance and Operations to Project Service Automation)
+### Entity set
 
 | Finance and Operations            | Project Service Automation |
 |-----------------------------------|----------------------------|
 | Integration entity for categories | Transaction categories     |
 
-## Entity flow (Finance and Operations to Project Service Automation)
+### Entity flow
 
 Project expense categories are managed in Finance and Operations, and they are synchronized to Project Service Automation as transaction categories.
 
-## Power Query
+### Power Query
 
 When you're synchronizing to Project Service Automation, you must use Microsoft Power Query for Excel to set the billing type on the transaction category. The Project expense transaction categories (Fin and Ops to PSA) template provides a default column and mapping. If you create your own template, you must add a conditional column in Power Query. Follow these steps.
 
@@ -100,24 +102,26 @@ The following illustration shows an example of the template task mapping in Data
 
 [![Template mapping](./media/ProjectExpenseCategoriesToPSAMapping.jpg)](./media/ProjectExpenseCategoriesToPSAMapping.jpg)
 
-## Template and task (Project Service Automation to Finance and Operations)
+## Project expense category synchronization from Project Service Automation to Finance and Operations
+
+### Template and task
 
 The following template and underlying task are used to synchronize project expense categories from Project Service Automation to Finance and Operations:
 
 - **Name of the template in Data integration:** Project expense transaction categories (PSA to Fin and Ops)
 - **Name of the task in the project:** Sync categories to Fin Ops
 
-## Entity set (Project Service Automation to Finance and Operations)
+### Entity set
 
 | Project Service Automation | Finance and Operations            |
 |----------------------------|-----------------------------------|
 | Transaction categories     | Integration entity for categories |
 
-## Entity flow (Project Service Automation to Finance and Operations)
+### Entity flow
 
 Project expense categories are managed in Finance and Operations, and they are synchronized to Project Service Automation as transaction categories. The synchronization back to Finance and Operations updates the integration ID from Project Service Automation on the Finance and Operations project category.
 
-## Template mapping in Data integration
+### Template mapping in Data integration
 
 The following illustration shows an example of the template task mapping in Data integration.
 
