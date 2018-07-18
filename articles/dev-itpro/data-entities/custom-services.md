@@ -55,7 +55,7 @@ Code examples for consuming custom services using SOAP are available in the [Mic
 **Example endpoint for a non-dev environment** 
 `https://<env-name>soap.cloudax.dynamics.com/soap/services/UserSessionService?wsdl`
 
-For more information about custome services, see:
+For more information about custom service, see:
 -   [Using Custom Services \[AX 2012\] (TechNet)](http://technet.microsoft.com/en-us/library/hh509052.aspx)
 -   [Walkthrough: Exposing an X++ Class as a Data Contract (TechNet)](http://technet.microsoft.com/en-us/library/gg844225.aspx)
 
