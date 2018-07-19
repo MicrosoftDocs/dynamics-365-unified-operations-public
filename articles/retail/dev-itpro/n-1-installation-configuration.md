@@ -54,7 +54,7 @@ The following diagram illustrates the high-level overview of the N-1 setup.
 ![Phased Rollout (N-1) Architecture Overview](media/CDX/N-1/Overview.jpg)
 
 ## Verify N-1 License Key
-Before starting to configure and install the N-1 components, make sure the corresponding license keys are set. These are set automatically when a customer upgrades fron AX 2012 to Dynamics 365 for Retail. However, given that the steps described below require the license key to be set it is worth checkin this before continuing with the remaining steps.
+Before starting to configure and install the N-1 components, make sure the corresponding license keys are set. These are set automatically upgrading from AX 2012 to Dynamics 365 for Retail. However, given that the steps described below require the license key to be set this license key should be checked before continuing with the remaining steps.
 
 1. Sign in to the Dynamics 365 for Retail headquarters and navigate to the `System administration > Setup > License configuration` form.
 2. Select the `Configuration keys` tabs.
@@ -71,7 +71,7 @@ Before starting to configure and install the N-1 components, make sure the corre
 2. After you've created a client ID and secret for Connector for Microsoft Dynamics AX, the client ID must be accepted in Retail. Go to System administration > Setup > Azure Active Directory applications . Enter the client ID in the Client ID column, enter descriptive text in the Name column, and enter RetailServiceAccount in the User ID column.
 
 ## Configure N-1 Components
-Follow the steps described in order to configure the N-1 components in the Dynamics 365 for Retail headquarters.
+Follow the steps described below in order to configure the N-1 components in the Dynamics 365 for Retail headquarters.
 
 ### Connector for Microsoft Dynamics AX
 1. Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Connector for Microsoft Dynamics AX` form.
@@ -115,10 +115,10 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 ### Working Folders
 
 > [!Note]
-> Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
+> Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should be validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
 
 1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Working folders` form and set the following fields.
-2.	Make sure the following entry exist in the table. 
+2.	Make sure the following entries exist in the table. 
 
 | Field | Description | Sample Value |
 | --- | --- | --- |
@@ -131,7 +131,7 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 
 ### Channel Database Group
 > [!Note] 
-> Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
+> Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should be validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
 
 1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Channel database group` form and set the following fields.
 1.	On the Action pane click on `New` for each physical channel database present in the Dynamics AX 2012 R3 environment and set the following fields:
@@ -141,13 +141,13 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 | Header |	Name |	Name of the Channel Database Group used for the Dynamics AX 2012 R3 channel environment. |	Default_AX63 |
 | Header |	Description	| Description of the Channel Database Group used for the Dynamics AX 2012 R3 channel environment. |	Default group for AX63 channel database |
 | General |	Retail channel schema |	The schema of the Dynamics AX 2012 R3 schema. This must be set to 'AX2012R3'. |	AX2012R3 |
-| General |	Working folders |	The reference to the working folders record used for the CDX data package sync. This was created the  steps above. |	workingfolder |
+| General |	Working folders |	The reference to the working folders record used for the CDX data package sync. This was created using the  steps above. |	workingfolder |
 
 3.	Click the `Save` button once done.
 
 ### Channel Database
 > [!Note]
-> Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
+> Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should be validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
 
 1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Headquarters setup > Retail scheduler > Channel database` form and set the following fields.
 2.	On the Action pane click on `New` for each physical channel database present in the Dynamics AX 2012 R3 environment and set the following fields:
@@ -157,7 +157,7 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 | Header	| Channel database ID |	Unique identifier for the physical Channel Database. This value should be derived from the Dynamics AX 2012 R3 environment.	| Default_AX63_Database |
 | Header |	Channel database group |	The Channel Database Group that the Channel Database is mapped to. This value should be derived from the Dynamics AX 2012 R3 environment.	| Default_AX63_DatabaseGroup |
 | Header |	Type	| The type of the Channel Database record. This must be set to 'Channel database'. | Channel database |
-| Header |	Data sync interval	| The interval at which to runt the CDX data sync. This must be left blank. |	*leave this blank* |
+| Header |	Data sync interval	| The interval at which to run the CDX data sync. This must be left blank. |	*leave this blank* |
 | Header	| Username (Case Sensitive)	| The username to use to connect to the Dynamics AX 2012 R3 Channel Database.	| channeluser |
 | Header |	Password |	The password to use to connect to the Dynamics AX 2012 R3 Channel Database. | *passphrase* |
 | Header |	Database name |	The name of the Dynamics AX 2012 R3 Channel Database.	| SampleChannelDB |
@@ -168,7 +168,7 @@ Follow the steps described in order to configure the N-1 components in the Dynam
 
 ### Channel Profiles
 > [!Note]
-> Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
+> Environments upgraded from Dynamics AX 2012 R3 will already have these values populated but should be validated to ensure that they are correct. This information must be manually entered for environments that have not been upgraded from Dynamics AX 2012 R3. 
 Note: This section only applies if the existing Dynamics AX 2012 R3 environment uses the Retail Server to interact with the Channel Database. If direct Channel Database access is enabled from the Dynamics AX 2012 R3 Modern POS (MPOS) then this step can be omitted.
 
 1.	Sign in to the Dynamics 365 for Retail headquarters and navigate to the `Retail > Channels > Retail stores > All retail stores` form and set the following fields.
@@ -197,7 +197,7 @@ Note: This section only applies if the existing Dynamics AX 2012 R3 environment 
 | General |	Channel profile	| The Channel Profile this store is mapped to and setup in the steps above.	| Default_AX63_Profile |
 
 ### Initialize AX 2012 Retail Scheduler
-1.	Sign in to the Dynamics 365 for Retail headquarters and open the form `Initialize AX 2012 Retail Scheduler` form and click OK.
+1.	Sign in to the Dynamics 365 for Retail headquarters and open the `Initialize AX 2012 Retail Scheduler` form and click OK.
 
 ### Distribution Schedule
 > [!Note]
@@ -282,7 +282,7 @@ Follow these steps to prepare a few days before the cutover is scheduled.
 | Execute full sync on all `AX63` CDX download jobs in Dynamics 365 for Retail headquarters |	Run the CDX download jobs to ensure the packages are generated and dropped in the Azure blob storage to be consumed by the N-1 Async Server Connector Service during cutover.	| At least couple days before. |	CDX download jobs are in “Available” state on the “Download Sessions” form in the Dynamics 365 for Retail headquarters.	|
 
 ### Cutover Steps
-Follow these steps below in order during the actual cutover.
+Follow the steps below during the actual cutover.
 
 | Step | Details | Timeline | How to Validate this is done	|
 | --- | --- | --- | --- |
