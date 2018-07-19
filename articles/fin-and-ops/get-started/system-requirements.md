@@ -5,7 +5,7 @@ title: System requirements for cloud deployments
 description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for cloud deployments.
 author: sericks007
 manager: AnnBe
-ms.date: 05/11/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -103,13 +103,13 @@ The following Microsoft Office applications are supported in cloud and on-premis
     - It must have, at a minimum, 3 gigabytes (GB) of random-access memory (RAM).  When combining with SQL Server for offline, no less than 4 GB of RAM is required.
     - It must have internet access.
 
-## Retail Modern POS for Apple iPad requirements
+## Retail Modern POS for Apple iPhone or iPad requirements
 
-- iOS 8 or later
+- iOS 11 or later
 
-## Retail Modern POS for Android tablets requirements
+## Retail Modern POS for Android phone or tablet requirements
 
-- Android OS 4.0.4 or later
+- Android OS 6.0 or later
 
 ## Retail hardware station requirements
 ### Supported operating systems
