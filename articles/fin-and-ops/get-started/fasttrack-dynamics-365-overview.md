@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Microsoft FastTrack for Dynamics 365 overview
-description: Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. 
+title: Microsoft FastTrack for Dynamics 365 for Finance and Operations overview
+description: Microsoft FastTrack for Dynamics 365 for Finance and Operations is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. 
 author: margoc
 manager: AnnBe
 ms.date: 03/09/2018
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form:  
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
@@ -33,24 +33,26 @@ ms.dyn365.ops.version: Version 1611, July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success.  
+Microsoft FastTrack for Dynamics 365 for Finance and Operations is our customer
+success service designed to help you deploy Finance and Operations in the cloud
+smoothly and confidently and realize business value faster. When you participate
+in the FastTrack program, you will receive guidance on implementation best
+practices, planning for successful rollouts, and expanding capabilities – all
+while implementing at your own pace. Additionally, you will have access to
+Microsoft engineering resources committed to making your experience with Finance
+and Operations a success.  
 
-## Eligibility: Microsoft FastTrack for Dynamics 365
+## Eligibility for Microsoft FastTrack for Dynamics 365 for Finance and Operations
+To get started with FastTrack, your project must satisfy the minimum license
+requirement. For more details, please refer to the Licensing guide. Currently
+there is a 20-seat minimum of Dynamics 365 Unified Operations Plan or
+equivalent.
 
-**Product offering: Dynamics 365**
-
-| **Minimum seats**                                                                  | **Eligible SKUs, Apps, or Plans** |
-|--------------------------------------------------------------------------------|-------------------------------|
-| 250 combined eligible App or Plan user subscription licenses                   | Dynamics 365 for Sales <br> Dynamics 365 for Field service <br> Dynamics 365 for Customer service <br> Dynamics 365 for Project service automation<br>Dynamics 365 Customer Engagement Plan<br>Dynamics 365 Plan with a commitment to implement Sales, Field Service, Customer Service, or Project Service Automation apps                         |
-| 20 combined eligible App or Plan user subscription licenses, or the equivalent | Dynamics 365 Unified Operations Plan <br>Dynamics 365 Plan, with a commitment to implement the Finance and Operations app<br><br>**Note:** 2.5 device subscription licenses are considered the equivalent of one Finance and Operations user subscription license   
-
-To get started with FastTrack for Dynamics 365 for Finance and Operations, you must be nominated by a partner, or by the Microsoft field. 
-
-**Product offering: Dynamics CRM Online**
-
-| Minimum seats              | Eligible SKUs, Apps, or Plans |
-|----------------------------|-------------------------------|
-| 250 combined eligible SKUs | Enterprise<br>Professional<br>Basic                    |
+After your LCS **Implementation project** workspace is provisioned, the
+Microsoft FastTrack team will contact your project team to onboard the project
+and provide information about the program. There is no action required on your
+part other than making sure the user information in Lifecycle Services (LCS) is
+current and setup with monitored email addresses.
 
 **Tiered services for Finance and Operations**
 
@@ -59,258 +61,154 @@ To get started with FastTrack for Dynamics 365 for Finance and Operations, you m
 | 20-149 combined eligible App or Plan user subscription licenses, or the equivalent      | **✓**          | Not available | Not available | Go-live assessment via email | Not available                   |
 | 150 or more combined eligible App or Plan user subscription licenses, or the equivalent | **✓**         | **✓**             | **✓**             | Go-live assessment workshop  | **✓**                              |
 
-## Overview: Microsoft FastTrack for Dynamics 365
-During FastTrack engagements, the Dynamics FastTrack engineering team will offer customers opportunities to get practical guidance on cloud deployment, help with usage and adoption, and assist with removing blockers during implementation through the following interactions:
+**Microsoft FastTrack for Dynamics 365 for Finance and Operations services**
 
--   **Regular touchpoints** are typically 30-minute calls that continue throughout the duration of the engagements. Small technical proof points are sometimes provided to help remove customer roadblocks. Touchpoints are biweekly through the Initiate, Design, and Build phases, and weekly during the Deploy and Operate phases
--   **Workshops** are interactive outcome-based activities, and may involve automation and tooling. Customers and partners can provide input prior to the workshops and customize them for their engagements.
--   **Tech talks** focus on providing technical depth and best practices that empower both customers and partners with knowledge that is specific to the subject areas. These talks often provide an overview of available tooling and/or content.
+------------------------------------------------------------------------
 
-All sessions are delivered remotely by the FastTrack engineering team. We have time zone-based resources to cover major markets in the Americas, EMEA, and APAC. 
+Tech talks (internal link to the section below)
 
-FastTrack sessions are scheduled throughout the stages of the project lifecycle. The following diagram summarizes how the lifecycle stages relate to the workshops and techtalks, which are described in detail below. 
+Community (internal link to the section below)
 
-**Legend**
-- T: Tech talk
-- W: Workshop
-- Tech talks and Workshops in bold are included for 20-149 seats
+Workshops (internal link to the section below)
 
-|          INITIATE          |             DESIGN            |           BUILD          |             DEPLOY             |       OPERATE       |
-|:--------------------------:|:-----------------------------:|:------------------------:|:------------------------------:|:-------------------:|
-|    Bi-weekly touchpoints   |     Bi-weekly touchpoints     |   Bi-weekly touchpoints  |       Weekly touchpoints       |  Weekly touchpoints |
-|            **W 1.1**           |             W 2.2             |           W 3.1          |              **W 4.1**             |        W 5.1        |
-| Pre-kickoff (partner only) | Solution milestone workshop   | Build milestone workshop | Go-live assessment workshop | Post go-live review |
-|            **W 1.2**           |             W 2.1             |           W 3.2          |                                |                     |
-|           Kickoff          | Governance milestone workshop |  Build iterations (CRP)  |                                |                     |
-|            **T 1.1**           |             **T 2.1**             |           **T 3.1**          |                                |                     |
-|          LCS usage         |        Environment plan       |    Performance testing   |                                |                     |
-|            **T 1.2**           |             **T 2.2**             |           **T 3.2**          |                                |                     |
-|  Tenant/VSTS configuration |        Development ALM        |         Servicing        |                                |                     |
-|                            |             **T 2.3**             |                          |                                |                     |
-|                            |     Integration guidelines    |                          |                                |                     |
-|                            |             **T 2.4**             |                          |                                |                     |
-|                            |         Data migration        |                          |                                |                     |
-|                            |             **T 2.5**             |                          |                                |                     |
-|                            |            Upgrade            |                          |                                |                     |
-
-
-
-
-## Workshops
-Workshops are interactive outcome-based activities, and may involve automation and tooling. Customers and partners can provide input prior to the workshops and customize them for their engagements.
-
-### Kickoff workshop (W1.2, Initiate phase)
-
-The Kickoff workshop is designed to initiate FastTrack engagements and provide introduction to services available through FastTrack and onboarding guidance. Topics are likely to include:
-
--   Team introductions
--   FastTrack for Finance and Operations overview
--   Project goals and objectives
--   Engagement scope, schedule, and adoption targets
--   Responsibilities among customers, partners, and the Microsoft FastTrack engineering team
--   Explanation on how services are delivered, where and when to seek help from the Microsoft FastTrack engineering team
--   Introduction to Dynamics Lifecycle Service (LCS) and Finance and Operations Microsoft docs site
--   Pre-activation checklist
--   Environment planning
--   Regular touchpoint schedule
-
-The typical format is a one-hour Skype call. The recommended attendees include key stakeholders from customer, partner, and Microsoft teams.
-
-### Governance workshop (W2.1, Design phase)
-
-The Governance workshop is designed to provide planning and governance recommendations based on project needs and best practices from other cloud deployments. Topics are likely to include:
-
--   Project team structure – customer and partner teams
--   Implementation approach
--   Project timeline and key milestones
--   Risk register – known risk and mitigation plans
--   Guidance on user training, adoption, and change management
--   How to manage product issues and reach out to Microsoft
-    -   Microsoft Support for Finance and Operations
-    -   LCS cloud-powered support
-
-The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Project managers are mandatory.
-
-### Solution workshop (W2.2, Design phase)
-
-The Solution workshop is designed to provide guidance on solution design alignment with our public cloud deployment approach, a review of the product roadmap, and project goals and schedule. Topics are likely to include:
-
--   Solution overview
--   Conceptual architecture
--   Key customizations and extensions
--   Integration approach
--   Data management
-    -   Configuration management
-    -   Data migration approach
--   Test strategy
--   Performance testing (if required)
--   BI/reporting strategy
--   ISV solutions
--   Environment plans
-
-The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
-
-### Build workshop (W3.1, Build phase)
-
-The Build workshop is designed to review the development approach, build progress, quality, risks, and blockers. Topics are likely to include:
-
--   Progress on development
--   Progress on system configuration
--   Integration
--   Reporting/BI status
--   Test results
--   Bug stats
--   Performance results
--   Development risks and mitigations
-
-The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Solution architects and technical leads are mandatory.
-
-### Go-live assessment workshop (W4.1, Deploy phase)
-
-The Go-live assessment workshop is designed to ensure that there are no last-minute blockers during cutover and go-live. Topics are likely to include:
-
--   Go-live scope confirmation
--   Bug and build status
--   Blocking issue review
--   User training and organization change management status
--   Cutover plan and final data migration
--   Hyper-care plan
--   Risk and mitigation review
--   Customer go/no-go criteria
--   Recap support process
-
-The typical format is 1.5-hour Skype call. The recommended attendees include key business users and subject matter experts. Hyper-care team leads are mandatory.
-
-### Post go-live review workshop (W5.1, Operate phase)
-
-The Post go-live review workshop is designed to wrap up the FastTrack engagement. Topics are likely to include:
-
--   Review goals and objectives
--   Discuss lessons learned
--   Review aged Support items
--   Hand over open issues to Support teams
--   Support overview content
--   Pro-Direct Support overview (if applicable)
-
-The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer, partner, and Microsoft teams. Project managers are mandatory.
+**Note**: The FastTrack team is continuously documenting its processes and
+guidance; see Understand the implementation Lifecycle
 
 ## Tech talks
-Tech talks focus on providing technical depth and best practices that empower both customers and partners with knowledge that is specific to the subject areas. These talks often provide an overview of available tooling and content.
+Tech talks focus on providing technical depth and best practices that empower
+both customers and partners with knowledge that is specific to the subject areas
+covered. These talks often provide an overview of available tooling and
+features. TechTalks are delivered in the form of life webcasts that allow for a
+Q&A session at the end. They can also be consumed on-demand and are publicly
+available. You can view all TechTalks and sign up for coming ones on the
+**FastTrack Dynamics 365 for Finance & Operations - Enterprise Edition - Tech
+Talks** page.
 
-The [Videos for Dynamics 365 for Finance and Operations](../get-started/videos.md) landing page lists all the Tech talks that have been recorded and are available to stream or download. Below are some examples of the type of content presented in Tech talks.
+Tech talks will form a basis of understanding that will increase the value and
+efficiency of the workshops offered. The FastTrack team will work with you to
+help guide you to the relevant tech talks to prepare you for specific workshops.
+The complete inventory of all the TechTalks that have been recorded and are
+available to stream or download is compiled on the Videos for Dynamics 365 for
+Finance and Operations landing page.
 
-### Lifecycle Services (LCS) usage tech talk (T1.1, Initiate phase)
+## Community
+FastTrack Finance and Operations community provides a platform for customers and
+partners to post questions and get answers from FastTrack Solutions Architects
+on best practices and guidance.  See FastTrack Finance and Operations Forum to
+access the community landing page.
 
-The Lifecycle Services usage tech talk is designed to introduce customers to LCS. Key topics might include:
+## Workshops
+Workshops are interactive outcome-based remote sessions. Customers and partners
+can provide input prior to the workshops and customize them for their
+engagements.
 
--   Introduction to LCS
--   LCS scope, schedule, and adoption targets
--   Customer, partner, and Microsoft team usage scenarios
--   Common usage and related best practices
--   How to stay on top of new features/services available
--   Further learning opportunities
+### Onboarding workshop
 
-The typical format is a one-hour Skype call. The recommended attendees include key stakeholders from the customer, partner, and Microsoft teams.
+The Onboarding workshop is designed to introduce FastTrack services, and to
+provide introductory guidance on a set of implementation topics that will help
+to ensure maximum success. For details, see Onboard a Finance and Operations
+Project. Topics are likely to include:
 
-### Tenant/Visual Studio online configuration tech talk (T1.2, Initiate phase)
+-   Team introductions
 
-The Tenant/Visual Studio Online configuration tech talk is designed to provide guidance on how to configure tenant and Visual Studio Online. Key topics might include:
+-   FastTrack for Finance and Operations overview
 
--   Connect from LCS
--   Best practices in configuration
--   Common pitfalls
--   Continued learning
+-   Project goals and objectives
 
-The typical format is a one-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
+-   Engagement scope, schedule, and adoption targets
 
-### Environment plan tech talk (T2.1, Design phase)
+-   Responsibilities among customers, partners, and the Microsoft FastTrack
+    engineering team
 
-The Environment plan tech talk is designed to provide guidance on how to plan and use environments. Key topics might include:
+-   Explanation on how services are delivered, where and when to seek help from
+    the Microsoft FastTrack engineering team
 
--   Environment planning
--   Optimal utilization of the default environments in the standard offer
--   How to purchase add-ons
--   ISV approach
--   Performance testing
+-   Success factors and key learnings that can be shared by the FastTrack team.
+
+The typical format is a 60-minute Skype call. The recommended attendees include
+key stakeholders and project team leaders from customer, partner, and Microsoft
+teams.
+
+### Solution blueprint workshops
+
+The Solution Blueprint workshops are designed to promote understanding of the
+solution design to facilitate alignment with our public cloud deployment
+approach, known patterns and best practices, a review of the product roadmap,
+and project goals and schedule. The initial blueprint review is conducted early
+in the implementation. Supplementary reviews are conducted as the blueprint
+evolves. Topics are likely to include:
+
+-   Solution overview and rollout plan
+
+-   Application Component Design
+
+-   ISV inclusions
+
+-   Instance Strategy
+
+-   Environment Plan
+
+-   Business Process Catalog
+
+-   Gaps Solution Design
+
+-   Integration Design
+
+    -   Data migration Design
+
+-   Business Intelligence and Analytics Design
+
+The typical format is a 2 to 4 hour Skype call. Recommended attendees include
+key stakeholders from customer and partner teams. Solution architects,
+functional leads, and technical leads are mandatory.
+
+<<some to be added>>
+
+### Go-live assessment workshop 
+
+The Go-live assessment workshop is designed to ensure the successful go-live of
+projects. Topics are likely to include:
+
+-   Go-live date and scope confirmation
+
+-   Solution acceptance and user training
+
+-   Performance
+
+-   Integrations
+
+-   Code management
+
 -   Configuration management
 
-The typical format is a one-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
+-   Blocking issue review
 
-### Development Application Lifecycle Management (ALM) tech talk (T2.2, Design phase)
+-   Cutover plan and final data migration
 
-The Development ALM tech talk is designed to provide guidance on ALM best practices. Key topics might include:
+-   Risk and mitigation review
 
--   Packaging and release management
--   Build orchestration – builds and build VMs
--   Source control
--   Branching
--   Developer VMs
--   Automated testing
+-   Customer go/no-go criteria
 
-The typical format is a one-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
+-   Support process and Hyper-care plan
 
-### Integration guidelines tech talk (T2.3, Design phase)
+The typical format is 1.5-hour Skype call. The recommended attendees include key
+business users and subject matter experts. Hyper-care team leads are mandatory.
 
-The Integration guidelines tech talk is designed to provide guidance on key integration topics throughout implementation. Key topics might include:
+### Post go-live review workshop
 
--   Integration approaches for the cloud
--   Recurring integrations
--   File-based integrations
--   Role of data entities in integrations
--   Integration platform choices
+The Post go-live review workshop is designed to wrap up the FastTrack
+engagement. Topics are likely to include:
 
-The typical format is a one-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
+-   Review goals and objectives
 
-### Reporting and Business Intelligence (BI) guidance tech talk (T2.4, Design phase)
+-   Discuss lessons learned
 
-The Reporting and BI guidance tech talk is designed to provide guidance on leveraging key analytics capabilities of Finance and Operations. Key topics might include:
+-   Support overview
 
--   Entity store
--   Power BI
--   Configuration
--   Content packs – building and consuming
--   Common pitfalls
--   Continued learning
+-   Review aged support items
 
-The typical format is a one-hour Skype call. The recommended attendees include technical resources from the customer and partner teams.
+-   Hand over open issues to support teams
 
-### Data management tech talk (T2.5, Build phase)
-
-The Data management tech talk is designed to provide guidance on how to migrate and/or manage data entities and packages. Key topics might include:
-
--   Data entities
--   Data packages
--   Process data packages
--   Configuration management using data packages
--   Data migration
--   ETL approach and tool (DIXF)
--   Masters
--   Transactions
--   Delta processing
-
-The typical format is a 1.5-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
-
-### Performance testing tech talk (T3.1, Build phase)
-
-The Performance testing tech talk is designed to provide guidance on planning and executing performance testing. Key topics might include:
-
--   Defining a performance test plan
--   Taking a trace with Trace Parser and analyzing it
--   Taking a trace and using it for data expansion
--   Introduction to the Performance SDK and multiuser testing with Visual Studio Online
--   Performance timer (optional)
--   Further learning opportunities
-
-The typical format is a one-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
-
-### Servicing tech talk (T3.2, Build phase)
-
-The Servicing tech talk is designed to provide guidance on the servicing options available to customers. Key topics might include:
-
--   Overview of the servicing story
--   DSE team
--   Deploying hotfixes
--   Submitting a service request
--   Cloud powered support
-
-The typical format is a one-hour Skype call. The recommended attendees include project managers and technical resources from customer and partner teams.
+The typical format is a 1.5-hour Skype call. The recommended attendees include
+key stakeholders from customer, partner, and Microsoft teams. Project managers
+are mandatory.
