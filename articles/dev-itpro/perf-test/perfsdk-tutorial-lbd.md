@@ -2,7 +2,7 @@
 # required metadata
 
 title: Performance SDK and multiuser testing in on-premises environments
-description: This topic provided instructions on how to do multiuser tesing with Performance SDK in on-premises environment 
+description: This topic provided instructions on how to do multiuser tesing with Performance SDK in on-premises environments. 
 author: jujoh
 manager: AnnBe
 ms.date: 07/20/2018
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 9954
-ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jujoh
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-XX-XX
+ms.dyn365.ops.version: Platform update 19
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use the Performance software development kit (SDK) to perform multiuser load testing in an on-premises environment.
+This topic describes how to use the Performance software development kit (SDK) to perform multiuser load testing in an on-premises environments.
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ This topic describes how to use the Performance software development kit (SDK) t
 - A development environment with:
   - Microsoft Visual Studio 2015 Enterprise (or a later version)
   - The Performance SDK (The SDK will likely be in K:\\PerfSDK\\PerfSDKLocalDirectory. However, depending on your environment, it might be in another location like C:\\PerfSDK.)
-  - Access to the on-premises environment through the web browser (The development VM could be in the same domain as the on-premises environment or the on-premises environment could have a publicly registered domain name)
+  - Access to the on-premises environment through the web browser (The development VM could be in the same domain as the on-premises environment or the on-premises environment could have a publicly registered domain name.)
 
 ## Create a single-user C# test from an XML recording
 
@@ -62,8 +62,8 @@ This topic describes how to use the Performance software development kit (SDK) t
 
     A C# test is generated in the Generated folder for the project that you selected.
     
-> [!NOTE]
-> The generated test may need to be edited to resolve any compilation issues.
+    > [!NOTE]
+    > The generated test may need to be edited to resolve any compilation issues.
 
 ## Run a single-user test using the Performance SDK
 
