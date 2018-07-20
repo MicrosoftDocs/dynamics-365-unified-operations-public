@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 19
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use the Performance software development kit (SDK) to perform multiuser load testing in an on-premises environments.
+This topic describes how to use the Performance software development kit (SDK) to perform multiuser load testing in an on-premises environment.
 
 ## Prerequisites
 
@@ -70,7 +70,9 @@ This topic describes how to use the Performance software development kit (SDK) t
 ### Prepare the development environment
 Complete the following steps on the development environment:
 
-1. In Control Panel in Microsoft Windows, select **System and Security** &gt; **System** &gt; **Advanced System Settings**. Verify that the **TestRoot** environment variable is set to the path of the PerfSDK folder.
+1. In Control Panel in Microsoft Windows, select **System and Security** &gt; **System** &gt; **Advanced System Settings**. 
+
+  Verify that the **TestRoot** environment variable is set to the path of the PerfSDK folder.
 
     [![EnvironmentVariable](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
 
