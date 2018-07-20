@@ -23,25 +23,27 @@ ms.search.scope: Core, Operations
 ms.search.region: Brazil
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: v-gonode
-ms.search.validFrom: 2017-06-30]
+ms.search.validfrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update 
 ---
 
 # CIAP fixed asset
 
+[!include [banner](../includes/banner.md)]
+
 ## Acquire a CIAP fixed asset
 Use this functionality to register in Fiscal books module the acquisition of a fixed asset controlled by the ICMS tax long term return.
 
-1.	On the **All purchase orders** page, in the **Vendor account** field, select a vendor.
-2.	Click **Add line**.
- - 	Fill in the **Item number**, **CFOP**, **Quantity**, **Unit price** fields.
-3.	Expand the Line details section.
-4.	Click the **Fixed assets** tab.
-5.	Select **Yes in the New fixed asset?** field.
-6.	In the **Fixed asset group** field, select a fixed asset group.
-7.	On the **Financial dimensions** tab, fill out the **CostCenter** and **Filial** fields.
-8.	Click **Confirm**.
-9.	On the **All purchase orders** page, click the link to select a Purchase order.
+1. On the **All purchase orders** page, in the **Vendor account** field, select a vendor.
+2. Click **Add line**.
+   -  Fill in the **Item number**, **CFOP**, **Quantity**, **Unit price** fields.
+3. Expand the Line details section.
+4. Click the **Fixed assets** tab.
+5. Select **Yes in the New fixed asset?** field.
+6. In the **Fixed asset group** field, select a fixed asset group.
+7. On the **Financial dimensions** tab, fill out the **CostCenter** and **Filial** fields.
+8. Click **Confirm**.
+9. On the **All purchase orders** page, click the link to select a Purchase order.
 10.	On the Action Pane, click **Invoice** > **Default from: Product receipt quantity**. In the **Default quantity for lines** field, select a quantity.
 11.	Click **OK**.
 12.	Fill in the **Document model**, **Access key**, **Invoice date** and **Posting date** fields.

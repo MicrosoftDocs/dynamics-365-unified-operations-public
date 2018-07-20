@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: HcmPositionForecast
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,9 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Position forecasting
 
-[!include[banner](../includes/banner.md)]
-
-
+[!include [banner](../includes/banner.md)]
 
 Expenses that are related to workers often make up a large proportion of an organization's costs. Position forecasting lets you plan those expenses and include them in the planning of budgets.
 
@@ -44,9 +42,9 @@ Expenses that are related to workers often make up a large proportion of an orga
 
 Position forecasting uses three main components to provide accurate budget amounts for position expenses. These amounts can then be brought into a budget plan for budget calculations. 
 
-The primary component is the **forecast position**, which represents all cost data that is related to a single position. You can create multiple versions of a forecast position by assigning a different budget plan scenario to each version. Multiple versions allow for an iterative approach to budgeting and let you compare what-if scenarios. Each forecast position has a corresponding position in Human resources.
+The primary component is the **forecast position**, which represents all cost data that is related to a single position. You can create multiple versions of a forecast position by assigning a different budget plan scenario to each version. Multiple versions allow for an iterative approach to budgeting and let you compare what-if scenarios. Each forecast position has a corresponding position in Human resources.
 
-A **budget cost element** is a setup component that represents a specific cost that is associated with a position, such as base pay, employer-paid health insurance, cell phone allowances, and so on. A budget cost element includes the main account that is used for the cost and options for calculation. Each budget cost element can be assigned to multiple forecast positions. 
+A **budget cost element** is a setup component that represents a specific cost that is associated with a position, such as base pay, employer-paid health insurance, cell phone allowances, and so on. A budget cost element includes the main account that is used for the cost and options for calculation. Each budget cost element can be assigned to multiple forecast positions. 
 
 A **compensation group** is an optional setup component that is used to apply a set of budget cost elements and pay calculations to positions that have similar pay characteristics. A compensation group can include a compensation grid of pay rates. When the group is assigned to a forecast position, a level and step in the grid can assign the forecast position’s earnings. The set of cost elements is automatically added.
 
@@ -65,7 +63,7 @@ You can create additional forecast position versions as budget plans are revised
 
 Budget cost elements are used to define cost details for a forecast position. These details include the type of cost, how the cost is calculated, and whether the cost is allocated to multiple dates when the forecast position is included in a budget plan. 
 
-Specific fields define the behavior of the budget cost element. Each budget cost element is assigned a budget cost type of **Earning**, **Benefit**, **Taxes**, or **Other**. The budget cost types are primarily used to calculate totals. The **Forecast position override** value specifies whether the amounts on the element can be modified on the forecast position. The **Allocation method** field is used when a forecast position is added to a budget plan. You can split the cost amount onto separate budget plan lines that have different dates, on a monthly, quarterly, weekly, or biweekly basis. By selecting a start date, you assign the cost as a single amount on the start date that is set on the forecast position. 
+Specific fields define the behavior of the budget cost element. Each budget cost element is assigned a budget cost type of **Earning**, **Benefit**, **Taxes**, or **Other**. The budget cost types are primarily used to calculate totals. The **Forecast position override** value specifies whether the amounts on the element can be modified on the forecast position. The **Allocation method** field is used when a forecast position is added to a budget plan. You can split the cost amount onto separate budget plan lines that have different dates, on a monthly, quarterly, weekly, or biweekly basis. By selecting a start date, you assign the cost as a single amount on the start date that is set on the forecast position. 
 
 The calculation of the budget cost element’s cost amount uses effective dates to enable the same cost element to be used in different periods. A single main account is assigned in each period, together with a percentage or annual amount that indicates the cost amount. A budget cost element can use a percentage of other cost elements or an annual amount, but not both. You can also specify an annual limit. 
 
@@ -73,7 +71,7 @@ If the cost element is based on a percentage, you must specify the budget cost e
 
 **Example** 
 
-Jodi’s organization is providing a training allowance of 5 percent of an employee’s base pay. Jodi wants to create a budget cost element for this cost. She creates a new budget cost element and assigns the **Benefit** budget cost type.
+Jodi’s organization is providing a training allowance of 5 percent of an employee’s base pay. Jodi wants to create a budget cost element for this cost. She creates a new budget cost element and assigns the **Benefit** budget cost type.
 
 Jodi doesn't want managers to change the amount of the benefit. Therefore, she selects **Do not allow cost changes** in the **Forecast position override** field. The organization wants this cost to be assigned evenly to each month. Therefore, Jodi selects **Quarterly** in the **Allocation method** field. 
 
@@ -83,44 +81,44 @@ Finally, Jodi adds all the earning cost elements that are used for base pay as c
 
 ### Compensation groups
 
-Compensation groups can be used to group forecast position that have similar compensation attributes. They can also be used to define a forecast position’s earnings and annual increases, and to assign a set of common budget cost elements. 
+Compensation groups can be used to group forecast position that have similar compensation attributes. They can also be used to define a forecast position’s earnings and annual increases, and to assign a set of common budget cost elements. 
 
-A basic function of compensation groups is to assign a set of budget cost elements to a forecast position. Therefore, compensation groups can be used to add common costs, such as benefit plans and taxes. A manager who is creating a forecast position doesn't have to know all the cost elements that must be added. Instead, the cost elements can be added when the compensation group is selected. The elements are added to the compensation group setup on the **Budget cost elements** tab. 
+A basic function of compensation groups is to assign a set of budget cost elements to a forecast position. Therefore, compensation groups can be used to add common costs, such as benefit plans and taxes. A manager who is creating a forecast position doesn't have to know all the cost elements that must be added. Instead, the cost elements can be added when the compensation group is selected. The elements are added to the compensation group setup on the **Budget cost elements** tab. 
 
 Compensation groups can also determine the earning rates for a forecast position. You set up a group to use either an hourly basis or an annual salary basis to calculate forecast position earnings. On the **Compensation rate tables** tab, a compensation grid of pay rates determines the earnings that are added to a forecast position, based on an assigned level and step. These grids can be based on existing compensation grids in Human resources. Alternatively, you can create new compensation grids for budget planning. 
 
-The effective dates and expiration dates on the compensation rate tables let you change pay rates on any date. This feature is useful when a bargaining unit has negotiated for an across-the-board increase in the middle of a budget cycle. In this case, you change the expiration date of the existing table to the day before the date of the rate change and add a new rate table that starts on the new date. When you create a new rate table, if you select **Create a new compensation grid from an existing grid**, you can select an existing rate table from Human resources. On the rate table that is created, the **Mass Change** option lets you apply a percentage or flat amount increase or decrease to all rates in the grid. 
+The effective dates and expiration dates on the compensation rate tables let you change pay rates on any date. This feature is useful when a bargaining unit has negotiated for an across-the-board increase in the middle of a budget cycle. In this case, you change the expiration date of the existing table to the day before the date of the rate change and add a new rate table that starts on the new date. When you create a new rate table, if you select **Create a new compensation grid from an existing grid**, you can select an existing rate table from Human resources. On the rate table that is created, the **Mass Change** option lets you apply a percentage or flat amount increase or decrease to all rates in the grid. 
 
 The **Increase schedule** and **Date of increase** fields on the compensation group are used when you must create pay increases because positions go from one step to the next. An annual pay increase is a typical scenario. The increase schedule determines whether the position’s anniversary date or a single common date is used for the step increase. The increase schedule applies to all forecast positions in the compensation group. 
 
-The earning cost element that is selected on the compensation group is used when you create earnings for the forecast positions in the group, including their base pay and any step increases. The **Compensation fixed plan** field links the compensation group to a fixed compensation plan in Human resources. This link can assign a worker’s fixed compensation information to a forecast position, and can therefore make budget planning more accurate. Remember that the structure of the compensation grid (the levels and steps) for the compensation group should match the structure of the fixed compensation plan. Otherwise, the system can't correctly link the compensation group and the fixed compensation plan.
+The earning cost element that is selected on the compensation group is used when you create earnings for the forecast positions in the group, including their base pay and any step increases. The **Compensation fixed plan** field links the compensation group to a fixed compensation plan in Human resources. This link can assign a worker’s fixed compensation information to a forecast position, and can therefore make budget planning more accurate. Remember that the structure of the compensation grid (the levels and steps) for the compensation group should match the structure of the fixed compensation plan. Otherwise, the system can't correctly link the compensation group and the fixed compensation plan.
 
 ## Creating forecast positions
 [![graphic3](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
 ### Creating forecast positions for existing positions
 
-For the most accurate budget planning, you can create forecast positions by using details from existing positions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, regardless of whether the position is currently filled or unfilled. 
+For the most accurate budget planning, you can create forecast positions by using details from existing positions in Microsoft Dynamics 365 for Finance and Operations, regardless of whether the position is currently filled or unfilled. 
 
-The **Add existing positions** function displays all the positions for an organization. By setting the **As of** date, you can change the list of positions so that it contains the positions that existed at a date in the past or, more commonly, in the future (for example, the start of the next budget cycle). Select a budget planning process and budget plan scenario, select positions in the list, and then click **OK** to create forecast positions for the selected positions. Note that you can create only one forecast position for each existing position in a budget planning process and scenario. However, you can create additional versions by assigning different budget plan scenarios. 
+The **Add existing positions** function displays all the positions for an organization. By setting the **As of** date, you can change the list of positions so that it contains the positions that existed at a date in the past or, more commonly, in the future (for example, the start of the next budget cycle). Select a budget planning process and budget plan scenario, select positions in the list, and then click **OK** to create forecast positions for the selected positions. Note that you can create only one forecast position for each existing position in a budget planning process and scenario. However, you can create additional versions by assigning different budget plan scenarios. 
 
-If budget cost elements have been assigned to the position in Human resources, those budget cost elements are also assigned to the forecast position and use the default amounts. The **Assigned worker** field on the forecast position is set to the name of the worker who is assigned to the position, if a worker is assigned. This field is a simple text field. No direct link is created. 
+If budget cost elements have been assigned to the position in Human resources, those budget cost elements are also assigned to the forecast position and use the default amounts. The **Assigned worker** field on the forecast position is set to the name of the worker who is assigned to the position, if a worker is assigned. This field is a simple text field. No direct link is created. 
 
-If a budget cost element is selected, the fixed compensation annual amount is assigned to the forecast position by using the selected cost element, provided that the assigned worker has a fixed compensation plan. If the worker doesn't have a fixed comp plan, or if no worker is assigned, the default amount is used for the budget cost element. 
+If a budget cost element is selected, the fixed compensation annual amount is assigned to the forecast position by using the selected cost element, provided that the assigned worker has a fixed compensation plan. If the worker doesn't have a fixed comp plan, or if no worker is assigned, the default amount is used for the budget cost element. 
 
-When the **Assign a compensation group** option is set to **Yes**, if the worker who is assigned to the position has a step-based fixed compensation plan that is linked to a compensation group (as described earlier), the level and step from the worker are assigned to the forecast position, together with the compensation group. The earnings budget cost element from the compensation group is added to the forecast position, and the pay rate at the level and step from the compensation group are used. 
+When the **Assign a compensation group** option is set to **Yes**, if the worker who is assigned to the position has a step-based fixed compensation plan that is linked to a compensation group (as described earlier), the level and step from the worker are assigned to the forecast position, together with the compensation group. The earnings budget cost element from the compensation group is added to the forecast position, and the pay rate at the level and step from the compensation group are used. 
 
 The setting of the **Assign a compensation group** option takes precedence over the **Budget cost element assignment** setting. The two settings can be used at the same time. 
 
 [![graphic4](./media/graphic4.png)](./media/graphic4.png) 
 
-Another option is to assign an anniversary date. The selected date (adjusted start date, worker start date, employment start date, or seniority date) from the assigned worker is then set as the forecast position’s anniversary date, and is used for information and when pay increases are generated.
+Another option is to assign an anniversary date. The selected date (adjusted start date, worker start date, employment start date, or seniority date) from the assigned worker is then set as the forecast position’s anniversary date, and is used for information and when pay increases are generated.
 
 ### Creating new forecast positions
 
 You can create new forecast positions in two ways: by copying an existing forecast position and by creating a completely new forecast position. 
 
-When a forecast position is selected, select **Copy the selected forecast position** to create a new forecast position that has a forecast state of **Proposed**. This forecast position has all of the same data as the forecast position that was copied, except the assigned worker and any notes on the budget cost elements. Note that a corresponding new position is also created in Human resources. This position has a description of **Created by forecast**. 
+When a forecast position is selected, select **Copy the selected forecast position** to create a new forecast position that has a forecast state of **Proposed**. This forecast position has all of the same data as the forecast position that was copied, except the assigned worker and any notes on the budget cost elements. Note that a corresponding new position is also created in Human resources. This position has a description of **Created by forecast**. 
 
 You can also create a completely new forecast position. Select an existing job, and also select the budget planning process and budget plan scenario. You can then add any other details that you want to add. Once again, a new position is created in Human resources at the same time.
 
@@ -129,7 +127,7 @@ You can also create a completely new forecast position. Select an existing job, 
 
 ### Multiple versions of a forecast position
 
-You can modify forecast positions either to apply known changes for the budget cycle or to model proposed changes. A common practice is to create a baseline set of forecast positions, create copies of those forecast positions, and then use the copies to model different sets of changes. The copies are assigned to a different budget plan scenario but, at least until changes are made, are otherwise identical to the forecast positions that they are copied from. The originals and the copies share the same position in Human resources. 
+You can modify forecast positions either to apply known changes for the budget cycle or to model proposed changes. A common practice is to create a baseline set of forecast positions, create copies of those forecast positions, and then use the copies to model different sets of changes. The copies are assigned to a different budget plan scenario but, at least until changes are made, are otherwise identical to the forecast positions that they are copied from. The originals and the copies share the same position in Human resources. 
 
 The **Copy to scenario** function provides this functionality. Note that each Human resources position can have only one forecast position in each budget plan scenario.
 
@@ -139,11 +137,11 @@ Changes that are made to forecast positions are limited to those forecast positi
 
 #### Budget cost elements
 
-Budget cost elements provide the main information for budget plans: the budget amount and the main account. The budget amount is the amount that is sent to the budget plan when a forecast position is included in a plan. The budget amount is calculated and can't be directly changed. This amount is either the annual amount or a calculation of the percentage of the annual amount's basis elements (as defined on the setup of the budget cost element). The amount is then factored by the number of days in the element’s date range (start date to end date) and also by the **Full-time equivalent** (FTE) value for the forecast position. 
+Budget cost elements provide the main information for budget plans: the budget amount and the main account. The budget amount is the amount that is sent to the budget plan when a forecast position is included in a plan. The budget amount is calculated and can't be directly changed. This amount is either the annual amount or a calculation of the percentage of the annual amount's basis elements (as defined on the setup of the budget cost element). The amount is then factored by the number of days in the element’s date range (start date to end date) and also by the **Full-time equivalent** (FTE) value for the forecast position. 
 
 For example, a budget cost element line from January 1, 2017, to June 30, 2017, that has an annual amount of 100,000 and an FTE value of **0.50** is calculated as 100,000 × (181 days ÷ 365 days) × 0.50 = 24,794.52. 
 
-The budget cost element lines must be recalculated when the FTE value is changed on the forecast position. The lines must also be recalculated when the activation dates or retirement dates are changed. Changes to these dates can cause an update of the budget cost element's start and end dates, which must be within the forecast position’s dates. When recalculation is required, the **Recalculate** button becomes available, and a "Requires calculation" message is displayed. Recalculation is also required if you add or remove a budget cost element.
+The budget cost element lines must be recalculated when the FTE value is changed on the forecast position. The lines must also be recalculated when the activation dates or retirement dates are changed. Changes to these dates can cause an update of the budget cost element's start and end dates, which must be within the forecast position’s dates. When recalculation is required, the **Recalculate** button becomes available, and a "Requires calculation" message is displayed. Recalculation is also required if you add or remove a budget cost element.
 
 **Example** 
 
@@ -151,7 +149,7 @@ The organization is considering two options for reducing the cost of an accounta
 
 #### Assigning a compensation group
 
-When you first assign a compensation group to a forecast position, the default budget cost elements from the compensation group are added. If cost elements are already assigned to the forecast position, those cost elements remain. If a compensation group has already been assigned and is being changed, the existing budget cost elements are removed and are replaced by the set from the compensation group. 
+When you first assign a compensation group to a forecast position, the default budget cost elements from the compensation group are added. If cost elements are already assigned to the forecast position, those cost elements remain. If a compensation group has already been assigned and is being changed, the existing budget cost elements are removed and are replaced by the set from the compensation group. 
 
 When you select a compensation level and step, an earnings budget cost element (as defined in the compensation group) is added. The annual amount is calculated by using the rate in the selected level and step, and the annual hours in the compensation group (or, for an annual based salary, the full amount in the level and step). Once again, this amount is factored by the cost element line’s date range and the forecast position’s FTE value.
 
@@ -169,7 +167,7 @@ Updates to forecast positions can also come from other areas, such as the budget
 
 Two options are available on the **Budget cost element** setup page: **Add to positions** and **Update positions**. The **Add to positions** option adds the budget cost element to selected forecast positions. If the element is already assigned to a forecast position, that forecast position is skipped. The **Update positions** option applies the current values (the main account, percent, annual amount, and so on) to the selected forecast positions. 
 
-Each process has a similar page where you can select forecast positions. The **Add to positions** page shows all forecast positions that are available for selection, whereas the **Update positions** page shows only those forecast positions that already have the budget cost element assigned. (Therefore, the **Update positions** page gives you a way to find out which forecast positions already have the cost element attached.) You move forecast positions from an upper grid to a lower grid to include them in the update. 
+Each process has a similar page where you can select forecast positions. The **Add to positions** page shows all forecast positions that are available for selection, whereas the **Update positions** page shows only those forecast positions that already have the budget cost element assigned. (Therefore, the **Update positions** page gives you a way to find out which forecast positions already have the cost element attached.) You move forecast positions from an upper grid to a lower grid to include them in the update. 
 
 Note that the **Change dates** function on the **Cost calculation** tab immediately changes the budget cost element’s start and end dates on the forecast positions. No selection options are available. 
 
@@ -187,7 +185,7 @@ The purpose of creating and modifying forecast positions is to add them to budge
 
 ### Generating a budget plan from forecast positions
 
-The **Generate budget plan from forecast positions** function creates or updates budget plans so that they have the budget amounts and FTE counts from forecast positions. The budget amounts from the forecast position become the budget plan line amounts and are aggregated by financial dimension values and effective date. The generation process assigns the source forecast position to the budget plan line. To view the position, you can either add the forecast position as a row in the budget plan layout or use the **Budget plan lines** inquiry. To skip this assignment, set the **Include position in budget plan line** option to **No**. 
+The **Generate budget plan from forecast positions** function creates or updates budget plans so that they have the budget amounts and FTE counts from forecast positions. The budget amounts from the forecast position become the budget plan line amounts and are aggregated by financial dimension values and effective date. The generation process assigns the source forecast position to the budget plan line. To view the position, you can either add the forecast position as a row in the budget plan layout or use the **Budget plan lines** inquiry. To skip this assignment, set the **Include position in budget plan line** option to **No**. 
 
 You can select a budget plan FTE scenario to include the number of FTEs in the budget plan. You can select only scenarios of the quantity type that are included in the layout of the target budget plan. When you select an FTE scenario is, you must also specify an FTE main account. This account is used to create the quantity budget plan lines. 
 
@@ -205,16 +203,16 @@ You can also add forecast position budget amounts directly to a budget plan. Use
 
 The budget plan scenarios that you can select as the source are limited to scenarios that are included in the plan’s layout. One option on the **Target** tab lets you specify that the FTE scenario and main account are available to include FTE counts, but aren't required. 
 
-This selection process behaves like the **Update existing budget plan scenario, and append new data** option for a generation process. All existing budget plan lines where the forecast position is being added are removed and replaced by new lines that are based on the current state of the forecast position.
+This selection process behaves like the **Update existing budget plan scenario, and append new data** option for a generation process. All existing budget plan lines where the forecast position is being added are removed and replaced by new lines that are based on the current state of the forecast position.
 
 #### Date options
 
 For both the generation process and the selection process, the start date on the budget cost element line determines the effective date of the corresponding budget plan line. The **Allocation method** field on the budget cost element setup page specifies the allocation method:
 
 -   **Start date** – The budget cost element's start date is used as the budget plan line's effective date.
--   **Monthly** – The budget amount is evenly divided by the number of months in the date range to produce a typical monthly amount that is assigned on the first day of each month. If the first period is a partial month, the amount for that month is factored by the number of days that the cost is active in that month, and the result is assigned to the start date. The amount for the last month is the difference between the total budget amount and the sum of all other months. Therefore, rounding might affect the amount for the last month.
+-   **Monthly** – The budget amount is evenly divided by the number of months in the date range to produce a typical monthly amount that is assigned on the first day of each month. If the first period is a partial month, the amount for that month is factored by the number of days that the cost is active in that month, and the result is assigned to the start date. The amount for the last month is the difference between the total budget amount and the sum of all other months. Therefore, rounding might affect the amount for the last month.
 -   **Quarterly** – This method is the same as **Monthly**, but the calculations are done for three-month periods.
--   **Weekly** – The logic resembles the logic of the **Monthly** and **Quarterly** methods. The budget amount is evenly divided by the number of weeks in the date range to produce a typical weekly amount that is assigned on the first day of each week. If the first period is a partial week, the amount for that week is factored by the number of days that the cost is active in that week, and the result is assigned to the start date. The amount for the last week is the difference between the total budget amount and the sum of all other weeks. Therefore, rounding might affect the amount for the last week.
+-   **Weekly** – The logic resembles the logic of the **Monthly** and **Quarterly** methods. The budget amount is evenly divided by the number of weeks in the date range to produce a typical weekly amount that is assigned on the first day of each week. If the first period is a partial week, the amount for that week is factored by the number of days that the cost is active in that week, and the result is assigned to the start date. The amount for the last week is the difference between the total budget amount and the sum of all other weeks. Therefore, rounding might affect the amount for the last week.
 -   **Biweekly** – This method is the same as **Weekly**, but the calculations are done for two-week periods.
 
 #### Changing budget plan lines that have forecast positions

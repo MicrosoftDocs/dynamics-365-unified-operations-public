@@ -17,14 +17,14 @@ ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.search.scope: Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: YuyuScheller
+ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost rollup policy and overhead calculation 
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Cost accounting lets you gain insight into how the cost flow relates to the products and services that are delivered within an organization. To see the cost transparency, it's crucial to achieve cost allocation between cost objects based on an appropriate allocation basis. By default, the cost allocation is achieved for the primary cost element, which is desired in some situations, but it has a few implications that should be considered.
 
@@ -302,7 +302,7 @@ The clear separation between **Cost allocation** and **Cost rollup policies** pr
 
 
 
-## See also
+## Additional resources
 -  [Cost object dimensions](cost-objects.md)
 -  [Cost element dimensions](cost-elements.md)
 -  [Dimension hierarchies](dimension-hierarchy.md)

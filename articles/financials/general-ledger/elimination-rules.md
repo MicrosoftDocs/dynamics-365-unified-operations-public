@@ -5,7 +5,7 @@ title: Elimination rules
 description: This topic provides information about elimination rules and the various options for reporting about eliminations.
 author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: LedgerEliminationRule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13131
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Elimination rules
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about elimination rules and the various options for reporting about eliminations.
 
@@ -136,28 +135,28 @@ Your legal entity, legal entity A, sells widgets to another legal entity in your
 All these transactions create intercompany transactions that are posted to due-to and due-from accounts. In addition, these transactions might include markup and markdown amounts when the amount of the intercompany sale doesn't equal the cost of the goods that were sold.
 
 ## Set up elimination rules
-When setting up elimination rules in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, we recommend that you create a financial dimension specifically for elimination purposes. Most customers name it Trading Partner or something similar. If you decide not to use a financial dimension, then be sure to have main accounts that are specific for intercompany transactions only. 
+When setting up elimination rules in Microsoft Dynamics 365 for Finance and Operations, we recommend that you create a financial dimension specifically for elimination purposes. Most customers name it Trading Partner or something similar. If you decide not to use a financial dimension, then be sure to have main accounts that are specific for intercompany transactions only. 
 
 The setup for eliminations is found in the Setup area of the Consolidations module. After you enter a description for the rule, you must pick the company that the elimination journal will post to. This should be a company that has **Use for financial elimination process** selected in the Legal entity setup. 
 
-You can set a date on which the elimination rule becomes effective and when it is expired, if needed. You must set **Active** to **Yes** if you want it to be available in the elimination proposal process. Select a journal name that has a type of **Elimination**.
+You can set a date on which the elimination rule becomes effective and when it is expired, if needed. You must set **Active** to **Yes** if you want it to be available in the elimination proposal process. Select a journal name that has a type of **Elimination**.
 
-After you have defined the basics, you can define the actual processing rules by clicking **Lines**. There are two options for eliminations, eliminating the net change amount or defining a fixed amount. 
+After you have defined the basics, you can define the actual processing rules by clicking **Lines**. There are two options for eliminations, eliminating the net change amount or defining a fixed amount. 
 
-Select your source account. You can use an asterisk (\*) as a wild card. For example, 1\* would select all accounts that start with a 1 as a source of data for the allocation. 
+Select your source account. You can use an asterisk (\*) as a wild card. For example, 1\* would select all accounts that start with a 1 as a source of data for the allocation. 
 
-After you have selected your source accounts, the **Account specification** determines the account from the destination company that is used. Select **Source** if you want to use the same main account defined in the **Source** account. If you select **User defined**, then you must specify a destination account. 
+After you have selected your source accounts, the **Account specification** determines the account from the destination company that is used. Select **Source** if you want to use the same main account defined in the **Source** account. If you select **User defined**, then you must specify a destination account. 
 
-The dimension specification acts in the same way. If you select **Source**, it will use the same dimensions in the destination company as the source company. If you select **User defined**, you will need to specify the dimensions in the destination company by clicking the **Destination dimensions** menu item. 
+The dimension specification acts in the same way. If you select **Source**, it will use the same dimensions in the destination company as the source company. If you select **User defined**, you will need to specify the dimensions in the destination company by clicking the **Destination dimensions** menu item. 
 
 Select source dimensions and the financial dimensions and values that are used as a source of the elimination.
 
 ## Process elimination transactions
 There are two ways to process elimination transactions, during the consolidate online process or by creating an elimination journal and running the elimination proposal process. This section focuses on creating the journal and running the elimination process. 
 
-In a company defined as an elimination company, select **Elimination journal** in the Consolidations module. After you have selected the journal name, click **Lines**. You can run the proposal by selecting the **Proposals** menu and then selecting **Elimination proposal**.
+In a company defined as an elimination company, select **Elimination journal** in the Consolidations module. After you have selected the journal name, click **Lines**. You can run the proposal by selecting the **Proposals** menu and then selecting **Elimination proposal**.
 
-Select the company that is the source of the consolidated data, and then choose the rule that you want to process. Enter a start date to begin the search for elimination amounts, and an end date to end the search date for elimination amounts. The **GL posting date** field is the date used for posting the journal to the general ledger. After you click **OK**, you can review the amounts and post the journal.
+Select the company that is the source of the consolidated data, and then choose the rule that you want to process. Enter a start date to begin the search for elimination amounts, and an end date to end the search date for elimination amounts. The **GL posting date** field is the date used for posting the journal to the general ledger. After you click **OK**, you can review the amounts and post the journal.
 
 
 

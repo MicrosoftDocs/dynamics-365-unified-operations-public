@@ -32,8 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to resolve common issues and how to get assistance with your Microsoft Dynamics AX 2012 R3 environment on Azure.
 
@@ -64,8 +63,8 @@ When installing a SQL Server AlwaysOn cluster, if the primary SQL Server instanc
 ## How do I resolve the following error: Script 'CreateAzureFailoverCluster:HASQL1' failed execution
 If you have deployed to an existing network and Active Directory—while also customizing the names of the VMs in the topology—you cannot redeploy that same name customization without altering the DNS server in Azure. In this scenario, the DNS server will have the IP addresses of the previous VMs with the same names, and as a result, the deployment will fail. To resolve this issue, you must delete the DNS server entries for those VMs before redeploying.
 
-## The Dynamics AX client crashes on first use.  How do I resolve this?
-Dynamics AX clients may crash upon first login after a restart or after a period of inactivity. This is due to a RemoteApp issue that has been fixed in kernel 6.3.3000.287.  If you've deployed a high availability environment or a test environment, you may be using RemoteApp. To resolve this issue, complete one of the following procedures:
+## The Dynamics AX client crashes on first use.  How do I resolve this?
+Dynamics AX clients may crash upon first login after a restart or after a period of inactivity. This is due to a RemoteApp issue that has been fixed in kernel 6.3.3000.287.  If you've deployed a high availability environment or a test environment, you may be using RemoteApp. To resolve this issue, complete one of the following procedures:
 
 ### Disable the status bar
 
@@ -75,10 +74,10 @@ Dynamics AX clients may crash upon first login after a restart or after a perio
 
 ### Install kernel 6.3.3000.287 or later
 
-Kernels are cumulative and the most recent kernel can be found here: <https://blogs.msdn.microsoft.com/axsupport/2012/03/29/overview-of-microsoft-dynamics-ax-build-numbers/>
+Kernels are cumulative and the most recent kernel can be found here: <https://blogs.msdn.microsoft.com/axsupport/2012/03/29/overview-of-microsoft-dynamics-ax-build-numbers/>
 
 ## How do I monitor for storage account throttling?
-To monitor storage account throttling, see [How to Monitor for Storage Account Throttling](https://blogs.msdn.microsoft.com/mast/2014/08/02/how-to-monitor-for-storage-account-throttling/). Alerts and notifications can be utilized to notify you when storage is being throttled. If this is happening, see the [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) topic for information about leveraging multiple Azure Connectors and/or LCS projects.
+To monitor storage account throttling, see [How to Monitor for Storage Account Throttling](https://blogs.msdn.microsoft.com/mast/2014/08/02/how-to-monitor-for-storage-account-throttling/). Alerts and notifications can be utilized to notify you when storage is being throttled. If this is happening, see the [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) topic for information about leveraging multiple Azure Connectors and/or LCS projects.
 
 ## How do I contact Support?
 If you need to contact Microsoft with licensing or technical questions, you must first determine which support team to contact. Use the information below to best identify which support team to contact.
@@ -169,7 +168,7 @@ To obtain support for Microsoft Dynamics AX, use the resources listed in the fol
 </tbody>
 </table>
 
-   
+
 
 
 

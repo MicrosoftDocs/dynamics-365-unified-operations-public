@@ -5,7 +5,7 @@ title: Microsoft FastTrack for Dynamics 365 overview
 description: Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. 
 author: margoc
 manager: AnnBe
-ms.date: 05/12/2017
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,14 +31,13 @@ ms.dyn365.ops.version: Version 1611, July 2017 update
 
 # Microsoft FastTrack for Dynamics 365 overview
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-
-Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success.  
+Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success.  
 
 ## Eligibility: Microsoft FastTrack for Dynamics 365
 
-**Product offering: Dynamics 365, Enterprise edition**
+**Product offering: Dynamics 365**
 
 | **Minimum seats**                                                                  | **Eligible SKUs, Apps, or Plans** |
 |--------------------------------------------------------------------------------|-------------------------------|
@@ -55,11 +54,10 @@ To get started with FastTrack for Dynamics 365 for Finance and Operations, you m
 
 **Tiered services for Finance and Operations**
 
-| **Number of seats**                                                                         | **Tech talks** | **Workshops**                      | **Touchpoints**   | **FastTrack engineering resources** |
-|-----------------------------------------------------------------------------------------|------------|--------------------------------|---------------|---------------------------------|
-| 20-149 combined eligible App or Plan user subscription licenses, or the equivalent      | **✓**      | Pre Go-live milestone workshop | Not available | Not available                   |
-| 150 or more combined eligible App or Plan user subscription licenses, or the equivalent | **✓**          | **✓**                              | **✓**             | **✓**                               |
-
+| **Number of seats**                                                                         | **Tech talks** | **Workshops**     | **Touchpoints**   | **Assessments**                  | **FastTrack engineering resources** |
+|-----------------------------------------------------------------------------------------|------------|---------------|---------------|------------------------------|---------------------------------|
+| 20-149 combined eligible App or Plan user subscription licenses, or the equivalent      | **✓**          | Not available | Not available | Go-live assessment via email | Not available                   |
+| 150 or more combined eligible App or Plan user subscription licenses, or the equivalent | **✓**         | **✓**             | **✓**             | Go-live assessment workshop  | **✓**                              |
 
 ## Overview: Microsoft FastTrack for Dynamics 365
 During FastTrack engagements, the Dynamics FastTrack engineering team will offer customers opportunities to get practical guidance on cloud deployment, help with usage and adoption, and assist with removing blockers during implementation through the following interactions:
@@ -81,7 +79,7 @@ FastTrack sessions are scheduled throughout the stages of the project lifecycle.
 |:--------------------------:|:-----------------------------:|:------------------------:|:------------------------------:|:-------------------:|
 |    Bi-weekly touchpoints   |     Bi-weekly touchpoints     |   Bi-weekly touchpoints  |       Weekly touchpoints       |  Weekly touchpoints |
 |            **W 1.1**           |             W 2.2             |           W 3.1          |              **W 4.1**             |        W 5.1        |
-| Pre-kickoff (partner only) | Solution milestone workshop   | Build milestone workshop | Pre go-live milestone workshop | Post go-live review |
+| Pre-kickoff (partner only) | Solution milestone workshop   | Build milestone workshop | Go-live assessment workshop | Post go-live review |
 |            **W 1.2**           |             W 2.1             |           W 3.2          |                                |                     |
 |           Kickoff          | Governance milestone workshop |  Build iterations (CRP)  |                                |                     |
 |            **T 1.1**           |             **T 2.1**             |           **T 3.1**          |                                |                     |
@@ -118,7 +116,7 @@ The Kickoff workshop is designed to initiate FastTrack engagements and provide i
 
 The typical format is a one-hour Skype call. The recommended attendees include key stakeholders from customer, partner, and Microsoft teams.
 
-### Governance workshop (W2.2, Design phase)
+### Governance workshop (W2.1, Design phase)
 
 The Governance workshop is designed to provide planning and governance recommendations based on project needs and best practices from other cloud deployments. Topics are likely to include:
 
@@ -131,9 +129,9 @@ The Governance workshop is designed to provide planning and governance recommend
     -   Microsoft Support for Finance and Operations
     -   LCS cloud-powered support
 
-The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Project managers are mandatory.
+The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Project managers are mandatory.
 
-### Solution workshop (W3.1, Build phase)
+### Solution workshop (W2.2, Design phase)
 
 The Solution workshop is designed to provide guidance on solution design alignment with our public cloud deployment approach, a review of the product roadmap, and project goals and schedule. Topics are likely to include:
 
@@ -150,9 +148,9 @@ The Solution workshop is designed to provide guidance on solution design alignme
 -   ISV solutions
 -   Environment plans
 
-The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
+The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
 
-### Build workshop (W3.2, Build phase)
+### Build workshop (W3.1, Build phase)
 
 The Build workshop is designed to review the development approach, build progress, quality, risks, and blockers. Topics are likely to include:
 
@@ -165,11 +163,11 @@ The Build workshop is designed to review the development approach, build progres
 -   Performance results
 -   Development risks and mitigations
 
-The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Solution architects and technical leads are mandatory.
+The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Solution architects and technical leads are mandatory.
 
-### Pre go-live readiness workshop (W4.1, Deploy phase)
+### Go-live assessment workshop (W4.1, Deploy phase)
 
-The Pre go-live readiness workshop is designed to ensure that there are no last-minute blockers during cutover and go-live. Topics are likely to include:
+The Go-live assessment workshop is designed to ensure that there are no last-minute blockers during cutover and go-live. Topics are likely to include:
 
 -   Go-live scope confirmation
 -   Bug and build status
@@ -199,7 +197,7 @@ The typical format is a 1.5-hour Skype call. The recommended attendees include k
 ## Tech talks
 Tech talks focus on providing technical depth and best practices that empower both customers and partners with knowledge that is specific to the subject areas. These talks often provide an overview of available tooling and content.
 
-Some of the tech talks are recorded, and the recordings are available on the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+The [Videos for Dynamics 365 for Finance and Operations](../get-started/videos.md) landing page lists all the Tech talks that have been recorded and are available to stream or download. Below are some examples of the type of content presented in Tech talks.
 
 ### Lifecycle Services (LCS) usage tech talk (T1.1, Initiate phase)
 

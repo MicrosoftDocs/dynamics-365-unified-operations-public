@@ -5,7 +5,7 @@ title: Consolidation and elimination overview
 description: This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
 author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: LedgerConsolidate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13151
@@ -32,21 +32,20 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Consolidation and elimination overview
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
 
-When you consolidate data, the financial results for multiple subsidiary companies are combined into results for a single, consolidated company. Subsidiaries might be on different versions or systems, they might not be fully owned, and they might use different currencies. There are multiple options for consolidating data:
+When you consolidate data, the financial results for multiple subsidiary companies are combined into results for a single, consolidated company. Subsidiaries might be on different versions or systems, they might not be fully owned, and they might use different currencies. There are multiple options for consolidating data:
 
 -   **Consolidate online** – This option consolidates daily balances by the selected accounts and dimensions, and stores them in a consolidation company.
 -   **Financial reporting** – This option enables consolidation of transactions and balances, and can be generated at any time. Multiple levels of hierarchies can be created, and multiple reporting currencies can be viewed.
 -   **Consolidate with import** – This option imports balances into a consolidation company.
--   **Export company balances** – This option provides an export file of company balances. The file can then be imported into other instances or systems. Financial reporting can also be used to export the balances to a Microsoft Excel file.
+-   **Export company balances** – This option provides an export file of company balances. The file can then be imported into other instances or systems. Financial reporting can also be used to export the balances to a Microsoft Excel file.
 
 Eliminations can be reported in multiple ways:
 
--   Elimination rules can be set up in the system, and then processed during the consolidation process or through an elimination proposal. The rules can be posted to any company that has **Use for financial elimination process** selected in the legal entity setup.
+-   Elimination rules can be set up in the system, and then processed during the consolidation process or through an elimination proposal. The rules can be posted to any company that has **Use for financial elimination process** selected in the legal entity setup.
 -   A separate company can be created and used to manually determine and post elimination transactions. This company can be used in the consolidation process or in financial reporting.
 -   The accounts and financial dimensions that are used to determine intercompany activity can be filtered on a row definition or column definition in Financial reporting, and full drill-down capabilities can be used. A calculated column or row can then be used to remove the accounts and financial dimensions from the consolidated total.
 
@@ -70,13 +69,13 @@ The **Financial reporting** option is the solution to consolidate any budget pla
 
 5.  Our subsidiaries are spread throughout the world, and we have multiple charts of accounts. What is the best method for consolidating our data?
 
-You have multiple options when you must handle multiple charts of accounts. You can use the **Consolidate online** option, and then choose to use either the consolidation account that is defined on the main account or a consolidation account group. You can also use the **Financial reporting** option, include multiple links to the financial dimensions in the row definition, and map the accounts.
+You have multiple options when you must handle multiple charts of accounts. You can use the **Consolidate online** option, and then choose to use either the consolidation account that is defined on the main account or a consolidation account group. You can also use the **Financial reporting** option, include multiple links to the financial dimensions in the row definition, and map the accounts.
 
 6.  We require multiple levels of consolidation. In other words, we first consolidate all our European subsidiaries to the British pound (GBP). We then take that data and translate the consolidated amount to US dollars. How can we do this?
 
-When multiple levels of consolidation are required, and different currencies are used at each level, you must use the **Consolidate online** option. Multiple consolidation companies must be created that differ in their accounting and reporting currencies. The consolidation must then be run multiple times. The **Financial reporting** option always translates from each source company's accounting currency to the selected currency.
+When multiple levels of consolidation are required, and different currencies are used at each level, you must use the **Consolidate online** option. Multiple consolidation companies must be created that differ in their accounting and reporting currencies. The consolidation must then be run multiple times. The **Financial reporting** option always translates from each source company's accounting currency to the selected currency.
 
-7.  We have subsidiaries on a different system. How can we consolidate them?
+7.  We have subsidiaries on a different system. How can we consolidate them?
 
 Use the **Consolidate with import** option to bring the balances into a consolidation company.
 
@@ -90,9 +89,9 @@ The **Financial reporting** option is the solution. Organization hierarchies tha
 
 10. We have more than one instance of the system.
 
-By using the **Export company balances** option to export from one instance and then using the **Consolidate with import** option on the other instance, you can consolidate the data.
+By using the **Export company balances** option to export from one instance and then using the **Consolidate with import** option on the other instance, you can consolidate the data.
 
 
-For more information, see [Currency revalution in a consolidation company](..\general-ledger\currency-revaluation-consolidation-company.md).
+For more information, see [Currency revalution in a consolidation company](../general-ledger/currency-revaluation-consolidation-company.md).
 
 

@@ -32,18 +32,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ compile-time functions
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic lists the compile-time functions and describes their syntax, parameters, and return values.
 
 Overview
 --------
 
-Compile-time functions are executed early during compilation of X++ code. They should be used wherever possible in X++ code to make the code resilient to changes to the metadata stored in the Application Explorer. Compile-time functions have their input value verified by the compiler. If the input value is not found to match any existing object in the Application Explorer, the compiler issues an error. The inputs to these functions must be literals, because the compiler cannot determine the value that a variable contains at run time. A compile-time function is a metadata assertion function. It takes arguments that represents an entity in the Application Explorer and validates the arguments at compile time. It has no effect at run time. Attributes are classes that inherit from the **SysAttribute** class. To support the validation of form, report, query, and menu metadata, use the **AutoDeclaration** property on controls. Most of these functions retrieve metadata about items that are in the Application Explorer. Some common compile time functions are as follows:
+Compile-time functions are executed early during compilation of X++ code. They should be used wherever possible in X++ code to make the code resilient to changes to the metadata stored in the Application Explorer. Compile-time functions have their input value verified by the compiler. If the input value is not found to match any existing object in the Application Explorer, the compiler issues an error. The inputs to these functions must be literals, because the compiler cannot determine the value that a variable contains at run time. A compile-time function is a metadata assertion function. It takes arguments that represents an entity in the Application Explorer and validates the arguments at compile time. It has no effect at run time. Attributes are classes that inherit from the **SysAttribute** class. To support the validation of form, report, query, and menu metadata, use the **AutoDeclaration** property on controls. Most of these functions retrieve metadata about items that are in the Application Explorer. Some common compile time functions are as follows:
 
 -   `classNum` – Retrieves the ID of a class.
--   `classStr` – During compile time, verifies that a class of that name exists. This approach is better than discovering the error later during run time.
+-   `classStr` – During compile time, verifies that a class of that name exists. This approach is better than discovering the error later during run time.
 -   `evalBuf`– Evaluates the input string of X++ code, and then returns the results as a string.
 -   `literalStr` – retrieves a label ID when given the string representation of a label, such as the string `"@SYS12345"`. For example, `myLabel.exists(literalStr("@SYS12345"));`.
 
@@ -225,7 +224,7 @@ Retrieves the name of a data source of a data entity.
 | Parameter  | Description                  |
 |------------|------------------------------|
 | dataEntity | The name of the data entity. |
-| dataSource | The name of the data source. |
+| dataSource | The name of the data source. |
 
 ### Return Value
 
@@ -355,7 +354,7 @@ Retrieves a string that represents the name of the specified security duty.
 
 ### Return Value
 
-The name of the security duty in a string.
+The name of the security duty in a string.
 
 ### Remarks
 
@@ -513,7 +512,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
         int i;
         str s;
         ;
-     
+
         i = extendedTypeNum(AccountName);
         s = extendedTypeStr(AccountName);
         print  int2Str(i);
@@ -549,7 +548,7 @@ Use this function instead of literal text to return a string that contains the e
         int i;
         str s;
         ;
-     
+
         i = extendedTypeNum(AccountName);
         s = extendedTypeStr(AccountName);
         print  int2Str(i);
@@ -694,7 +693,7 @@ A string that contains the name of the control as it appears in the Application 
 
 ### Remarks
 
-A compile error is issued if the compiler determines that the control does not exist on the form. If your X++ code uses a string that contains quotation marks to supply the control name, the error cannot be discovered until run time. Use of this function enables the compiler to discover the error earlier at compile time. X++ functions such as **formControlStr** that are executed by the compiler are called compile-time functions or compile-time functions. That is why the input parameters are not standard strings in quotation marks. Compile-time functions are not represented in the p-code or other executable that is output by the compiler. This is a compile-time function. For more information, see [Overview](#overview).
+A compile error is issued if the compiler determines that the control does not exist on the form. If your X++ code uses a string that contains quotation marks to supply the control name, the error cannot be discovered until run time. Use of this function enables the compiler to discover the error earlier at compile time. X++ functions such as **formControlStr** that are executed by the compiler are called compile-time functions or compile-time functions. That is why the input parameters are not standard strings in quotation marks. Compile-time functions are not represented in the p-code or other executable that is output by the compiler. This is a compile-time function. For more information, see [Overview](#overview).
 
 ### Example
 
@@ -728,7 +727,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
     str a = formDataFieldStr(FMVehicle, FMModelRate, RatePerDay);
 
 ## formDataSourceStr
-Returns the name of a data source in a form.
+Returns the name of a data source in a form.
 
 ### Syntax
 
@@ -743,7 +742,7 @@ Returns the name of a data source in a form.
 
 ### Return Value
 
-The name of a data source in a form.
+The name of a data source in a form.
 
 ### Remarks
 
@@ -754,7 +753,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
     str b = formDataSourceStr(FMVehicle, FMModelRate);
 
 ## formMethodStr
-Returns the name of a method of a form.
+Returns the name of a method of a form.
 
 ### Syntax
 
@@ -765,11 +764,11 @@ Returns the name of a method of a form.
 | Parameter  | Description             |
 |------------|-------------------------|
 | formName   | The name of the form.   |
-| methodName | The method of the form. |
+| methodName | The method of the form. |
 
 ### Return Value
 
-The name of a method in a form.
+The name of a method in a form.
 
 ### Remarks
 
@@ -836,7 +835,7 @@ A string that represents the specified identifier.
 
 ### Remarks
 
-You will receive a best practice warning if you use the **identifierStr** function. This occurs because existence checking is performed for **identifierStr**. Try to use a more specific compile-time function if one is available. This is a compile-time function. For more information, [Overview](#overview).
+You will receive a best practice warning if you use the **identifierStr** function. This occurs because existence checking is performed for **identifierStr**. Try to use a more specific compile-time function if one is available. This is a compile-time function. For more information, [Overview](#overview).
 
 ### Example
 
@@ -847,7 +846,7 @@ The following code example assigns the *myvar* variable name to the *thevar* var
         str myvar;
         str thevar
         ;
-        
+
         thevar = "[" + identifierStr(myvar) + "]";
         Global::info(strfmt(thevar));
     }
@@ -885,7 +884,7 @@ The following example returns the index value of the Party index.
     static void indexNumExample(Args _arg)
     {
         ;
-        
+
         Global::info(strfmt("%1 is the index number of Party.", indexNum(CustTable, Party)));
     }
     /****Infolog Display
@@ -1030,7 +1029,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
     {
         str s;
         ;
-     
+
         s = literalStr("This is a literal str");
         print s;
         pause;
@@ -1138,7 +1137,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
     No example.
 
 ## menuItemActionStr
-Validates that the specified menu item action exists in the Application Object Tree (Application Explorer); if it does not, a compiler error occurs.
+Validates that the specified menu item action exists in the Application Object Tree (Application Explorer); if it does not, a compiler error occurs.
 
 ### Syntax
 
@@ -1163,17 +1162,17 @@ This is a compile-time function. For more information, see [Overview](#overview)
     {
         str s1, s2, s3, s4;
         ;
-     
+
         s1 = menuItemActionStr(AssetCopy);
         s2 = menuItemDisplayStr(Address);
         s3 = menuItemOutputStr(AssetBarcode);
         s4 = menuStr(Administration);
-     
+
         print "menuItemActionStr for AssetCopy is " + s1;
         print "menuItemDisplayStr for Address is " + s2;
         print "menuItemOutputStr for AssetBarcode is " + s3;
         print "menuStr for Administration is " + s4;
-     
+
         pause;
     }
 
@@ -1203,17 +1202,17 @@ This is a compile-time function. For more information, see [Overview](#overview)
     {
         str s1, s2, s3, s4;
         ;
-     
+
         s1 = menuItemActionStr(AssetCopy);
         s2 = menuItemDisplayStr(Address);
         s3 = menuItemOutputStr(AssetBarcode);
         s4 = menuStr(Administration);
-     
+
         print "menuItemActionStr for AssetCopy is " + s1;
         print "menuItemDisplayStr for Address is " + s2;
         print "menuItemOutputStr for AssetBarcode is " + s3;
         print "menuStr for Administration is " + s4;
-     
+
         pause;
     }
 
@@ -1243,17 +1242,17 @@ This is a compile-time function. For more information, see [Overview](#overview)
     {
         str s1, s2, s3, s4;
         ;
-     
+
         s1 = menuItemActionStr(AssetCopy);
         s2 = menuItemDisplayStr(Address);
         s3 = menuItemOutputStr(AssetBarcode);
         s4 = menuStr(Administration);
-     
+
         print "menuItemActionStr for AssetCopy is " + s1;
         print "menuItemDisplayStr for Address is " + s2;
         print "menuItemOutputStr for AssetBarcode is " + s3;
         print "menuStr for Administration is " + s4;
-     
+
         pause;
     }
 
@@ -1283,17 +1282,17 @@ This is a compile-time function. For more information, see [Overview](#overview)
     {
         str s1, s2, s3, s4;
         ;
-     
+
         s1 = menuItemActionStr(AssetCopy);
         s2 = menuItemDisplayStr(Address);
         s3 = menuItemOutputStr(AssetBarcode);
         s4 = menuStr(Administration);
-     
+
         print "menuItemActionStr for AssetCopy is " + s1;
         print "menuItemDisplayStr for Address is " + s2;
         print "menuItemOutputStr for AssetBarcode is " + s3;
         print "menuStr for Administration is " + s4;
-     
+
         pause;
     }
 
@@ -1326,7 +1325,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
         str s;
         SysHelpInitTimeOut SysHelpInitTimeOut;
         ;
-     
+
         s = methodStr(SysHelpInitTimeOut, timeout);
         print s;
         pause;
@@ -1403,14 +1402,14 @@ A string that contains the name of the data source as it appears in the Applicat
 
 ### Remarks
 
-A compile error is issued if the compiler determines that the data source does not exist on the query. If your X++ code uses a string that contains quotation marks to supply the data source name, the error cannot be discovered until run time. Use of this function enables the compiler to discover the error earlier at compile time. X++ functions such as **queryDataSourceStr** that are executed by the compiler are referred to as compile-time functions or compile-time functions. That is why the input parameters are not standard strings in quotation marks. Compile-time functions are not represented in the p-code or other executable that is output by the compiler. This is a compile-time function. For more information, see [Overview](#overview).
+A compile error is issued if the compiler determines that the data source does not exist on the query. If your X++ code uses a string that contains quotation marks to supply the data source name, the error cannot be discovered until run time. Use of this function enables the compiler to discover the error earlier at compile time. X++ functions such as **queryDataSourceStr** that are executed by the compiler are referred to as compile-time functions or compile-time functions. That is why the input parameters are not standard strings in quotation marks. Compile-time functions are not represented in the p-code or other executable that is output by the compiler. This is a compile-time function. For more information, see [Overview](#overview).
 
 ### Example
 
     No example.
 
 ## queryMethodStr
-Returns the name of a method of a query.
+Returns the name of a method of a query.
 
 ### Syntax
 
@@ -1421,11 +1420,11 @@ Returns the name of a method of a query.
 | Parameter  | Description             |
 |------------|-------------------------|
 | queryName  | The name of the query.  |
-| methodName | The method of the form. |
+| methodName | The method of the form. |
 
 ### Return Value
 
-The name of a method in a query.
+The name of a method in a query.
 
 ### Remarks
 
@@ -1462,7 +1461,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
     {
         str myText;
         ;
-        
+
         myText = queryStr(AssetTable);
         Global::info(strfmt("%1 is the name of the query.",myText));
     }
@@ -1510,7 +1509,7 @@ The following example assigns the name of the **AssetAddition** report to the *M
     ****/
 
 ## resourceStr
-Validates that the specified resource exists in the Application Explorer; if it does not, a compiler error occurs.
+Validates that the specified resource exists in the Application Explorer; if it does not, a compiler error occurs.
 
 ### Syntax
 
@@ -1564,7 +1563,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
     No example.
 
 ## ssrsReportStr
-Retrieves a string that represents the name of the specified report. Use this function when you want to specify the report that should be run by a report controller class.
+Retrieves a string that represents the name of the specified report. Use this function when you want to specify the report that should be run by a report controller class.
 
 ### Syntax
 
@@ -1602,7 +1601,7 @@ The **ssrsReportStr** function parses the two values that are passed to it, to v
     }
 
 ## staticDelegateStr
-Returns the name of a static delegate.
+Returns the name of a static delegate.
 
 ### Syntax
 
@@ -1612,7 +1611,7 @@ Returns the name of a static delegate.
 
 | Parameter | Description                          |
 |-----------|--------------------------------------|
-| class     | The name of a class, table, or form. |
+| class     | The name of a class, table, or form. |
 | delegate  | The name of the delegate.            |
 
 ### Return Value
@@ -1770,7 +1769,7 @@ The following example sets the **tableID** variable to 77, which is the **ID** o
     {
         int tableID;
         ;
-        
+
         tableID = tableNum(CustTable);
         Global::info(strfmt("%1 is the table ID for the CustTable table.", tableID));
 
@@ -1873,7 +1872,7 @@ The following example assigns the name of the **CustTable** table to the *MyTxt*
     {
         str MyTxt;
         ;
-        
+
         MyTxt = tableStr(CustTable);
         Global::info(strfmt("%1 is the str output of the input of CustTable.", MyTxt));
     }
@@ -1897,7 +1896,7 @@ Retrieves a string that represents the name of the specified tile.
 
 ### Return Value
 
-The name of the tile in a string.
+The name of the tile in a string.
 
 ### Remarks
 
@@ -1935,7 +1934,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
         str myString;
         anytype myVariable;
         ;
-        
+
         myString = varStr(myVariable);
         Global::info(strfmt("%1 is the variable name.", myString));
     }
@@ -2213,7 +2212,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
     {
         str s;
         ;
-     
+
         s = websiteDefStr(AxSiteDef_1033_xip);
         print "string for web site definition AxSiteDef_1033_xip is " + s;
         pause;
@@ -2270,7 +2269,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
     {
         str s;
         ;
-     
+
         s = webStaticFileStr(AXEP);
         print "string for web static file AXEP is " + s;
         pause;
@@ -2302,7 +2301,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
     {
         str s;
         ;
-     
+
         s = webUrlItemStr(EPAdmin);
         print "string for web url item EPAdmin is " + s;
         pause;
@@ -2334,7 +2333,7 @@ This is a compile-time function. For more information, see [Overview](#overview)
     {
         str s;
         ;
-     
+
         s = webWebpartStr(AxWebParts_cab);
         print "string for web part AxWebParts_cab is " + s;
         pause;

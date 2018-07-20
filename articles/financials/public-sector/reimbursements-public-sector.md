@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reimbursements in the public sector
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic answers common questions related to reimbursements in the public sector. 
 

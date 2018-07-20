@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: CAMDimension
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 256254
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Create dimensions and import dimension members
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Cost accounting is an independent module that requires data from other modules. This data is categorized into the following:
 

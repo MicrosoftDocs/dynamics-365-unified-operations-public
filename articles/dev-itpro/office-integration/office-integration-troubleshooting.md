@@ -5,7 +5,7 @@ title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: OfficeAppParameters
+ms.search.form: OfficeAppParameters, SysEmailParameters
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
-ms.search.scope: Operations
+ms.reviewer: sericks
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72263
 ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Troubleshoot the Office integration 
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
 
@@ -84,15 +83,34 @@ To check processing time in the Excel Add-in versus the server/service, follow t
     - If the time from a request to its response is large, the bottleneck is the server/service.
     - If the time from a response to the next request is large, the bottleneck is the Excel Add-in (that is, the client).
 
+### Why is the Export to Excel functionality limited to 10,000 records?
+
+The Export to Excel functionality is limited to 10,000 records. This limitation is in place because the export process uses the form from which data is being exported to provide the following records with fields and data that can't be obtained otherwise: formatted values, calculated values, and temporary table data. The fact that the form is used means that the export occurs inside the client process that is shared by all the users on a given computer. During the export, those other users are blocked from interacting with the client. 
+
+The ideal alternative is to use Open in Excel and the Excel Add-in. The Excel Add-in retrieves data by using the OData service, and it takes advantage of the security that the entities provide. The import and export capabilities in the Data management framework (DMF)/Data import/export framework (DIXF) can also be used. However, DMF/DIXF is often limited to administrators. 
+
+If you have concerns about giving users access to the data via the Excel Add-in, because they should not be able to update records, consider the following points: 
+
+- The entities should have all the validation and logic that the forms have. If they don't, it's a bug. 
+- The way that entities are secured resembles the way that forms are secured. Therefore, if a user should not have permission to update or write data by using a form that exposes that data, the user should not have permission to update or write data by using an entity that exposes that data. 
+
+### Why is the Publish button in the Excel Add-in unavailable? 
+
+All key and mandatory fields must be present to publish data back to the entity. Try to edit the design to add more fields to the binding. 
+
+### Why are the Excel Add-in, the Word Add-in, and the Open in Excel options only available when the Internet is available?
+
+For all environments, including on-premises, the Excel and Word Add-ins, and the libraries they use, are loaded from multiple Internet locations and therefore will only run when the Internet is available. For on-premises environments, when the Internet is not available, the Open in Excel options are hidden because the Excel Add-in will not run without access to the Content Delivery Network (CDN) that houses the Excel Add-in. 
+
 ## Troubleshooting issues
 
 ### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
 
 **Issue:** During sign in to the Excel Add-in, you receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ."
 
-**Explanation:** Typically, this issue occurs because Microsoft Azure Active Directory (Azure AD) can't find the Azure AD application that represents the Excel Add-in. That issue occurs because, during the [configuration of Microsoft Power BI](..\analytics\configure-power-bi-integration.md), an Azure AD application was added that has the App ID URI set to the environment URL. 
+**Explanation:** Typically, this issue occurs because Microsoft Azure Active Directory (Azure AD) can't find the Azure AD application that represents the Excel Add-in. That issue occurs because, during the [configuration of Microsoft Power BI](../analytics/configure-power-bi-integration.md), an Azure AD application was added that has the App ID URI set to the environment URL. 
 
-**Fix:** Make sure that no Azure AD apps have the App ID URI set to the environment URL. App ID URIs should be fabricated, unique URIs, such as `https://contosoAXPowerBI`.
+**Fix:** Make sure that no Azure AD apps have the App ID URI set to the environment URL. App ID URIs should be fabricated, unique URIs, such as `https://contosoAXPowerBI`.
 
 ### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS50001: The application named ABC was not found in the tenant named XYZ"
 
@@ -131,17 +149,17 @@ The permissions SMTP user account is `serviceacct@d365forops.onmicrosoft.com1`.
 
 [![SMTP account that is granted Send As permissions in Office 365](./media/o365.png)](./media/o365.png)
 
-### \[Fixed\] Issue: The Office Add-ins don't yet support AD FS
+### \[Fixed\] Issue: The Office Add-ins don't yet support AD FS
 
 **Affected versions:** CTP8 and the February 2016 releases 
 
-**Issue:** When users from an Azure AD tenant that uses Active Directory Federation Services (AD FS) try to sign in to the Office Add-ins (in other words, when the users enter their account, and then press Tab or click in the field to enter their password), a separate browser window opens. This browser window usually has a URL that starts with `https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.2.1.0/App/DynamicsApp.html\#id\_token=`. The user can't sign in. 
+**Issue:** When users from an Azure AD tenant that uses Active Directory Federation Services (AD FS) try to sign in to the Office Add-ins (in other words, when the users enter their account, and then press Tab or click in the field to enter their password), a separate browser window opens. This browser window usually has a URL that starts with `https://az689774.vo.msecnd.net/dynamicsofficeapp/v1.2.1.0/App/DynamicsApp.html\#id\_token=`. The user can't sign in. 
 
-**Explanation:** During sign-in to the Office add-ins (both the Excel Add-in and the Word Add-in), a redirect to the AD FS site for the tenant occurs. However, that site is an unknown and therefore disallowed application domain (AppDomain). 
+**Explanation:** During sign-in to the Office add-ins (both the Excel Add-in and the Word Add-in), a redirect to the AD FS site for the tenant occurs. However, that site is an unknown and therefore disallowed application domain (AppDomain). 
 
 **Long-term fix:** The long-term fix for this issue was put in place on May 10, 2016. The Office Add-ins now use a new Dialog API that the Office team added. 
 
-**Taking advantage of the add-in updates that support AD FS:** All Office installations should be updated via **File** > **Account** > **Updates** (for click-to-run installations) or via Windows Update (for MSI installations). The AD FS Dialog API was included in the May update ([16.0.6868.2060](http://answers.microsoft.com/en-us/office/forum/office_2016-office_install/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2?auth=1)). For information about updates, see the [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396) page. 
+**Taking advantage of the add-in updates that support AD FS:** All Office installations should be updated via **File** > **Account** > **Updates** (for click-to-run installations) or via Windows Update (for MSI installations). The AD FS Dialog API was included in the May update ([16.0.6868.2060](http://answers.microsoft.com/en-us/office/forum/office_2016-office_install/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2?auth=1)). For information about updates, see the [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396) page. 
 
 If your Office build isn't updated, you might be on the deferred track ([Microsoft Office 365 ProPlus update channel option](https://technet.microsoft.com/en-us/library/mt455210.aspx)). In this case, you can [use the Office Deployment Tool to move to the Current channel](https://technet.microsoft.com/en-us/library/jj219422.aspx?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/en-us/office-insider) to help guarantee that you have the latest updates. Additionally, see [Install the latest version of Office 2016](https://dev.office.com/docs/add-ins/develop/install-latest-office-version) and [Office 2016 Deployment Guides for Admins](https://technet.microsoft.com/en-us/library/cc303401(v=office.16).aspx). 
 
@@ -163,9 +181,9 @@ This workaround requires user knowledge and extra steps. After users have been e
 
 **Issue:** When users try to sign into the Excel Add-in, a blank authentication dialog box appears, or an error message is shown instead of the authentication page. The user can't sign in. 
 
-**Explanation:** The Excel Add-in relies on the Office Web JS Add-in platform and uses Azure AD for authentication. If a proxy is used, several URLs must be accessible for users to run and sign in to the Excel Add-in. Additionally, if AD FS is used, the AD FS URL must use HTTPS. 
+**Explanation:** The Excel Add-in relies on the Office Web JS Add-in platform and uses Azure AD for authentication. If a proxy is used, several URLs must be accessible for users to run and sign in to the Excel Add-in. Additionally, if AD FS is used, the AD FS URL must use HTTPS. 
 
-**Solution:** Because this issue is a customer-specific network issue, it requires a customer-specific resolution. If AD FS is used, make sure that the AD FS URL uses HTTPS. Additionally, make sure that all the following URLs are accessible from the user's computer.
+**Solution:** Because this issue is a customer-specific network issue, it requires a customer-specific resolution. If AD FS is used, make sure that the AD FS URL uses HTTPS. Additionally, make sure that all the following URLs are accessible from the user's computer.
 
 The following URLs are accessed for loading:
 
@@ -192,10 +210,10 @@ The following URLs are accessed for authentication:
 - `http://login.microsoftonline.com:443`
 - `https://login.microsoftonline.com`
 
-## See also
+## Additional resources
 
 [Office integration](office-integration.md)
 
 [Office integration tutorial](office-integration-tutorial.md)
 
-[Configuring Power BI integration](..\analytics\configure-power-bi-integration.md)
+[Configuring Power BI integration](../analytics/configure-power-bi-integration.md)

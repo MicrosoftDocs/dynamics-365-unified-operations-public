@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 # Complete tasks in Business process modeler
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Upload a task recording
 

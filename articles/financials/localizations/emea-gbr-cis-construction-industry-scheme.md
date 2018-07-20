@@ -2,7 +2,7 @@
 # required metadata
 
 title: Construction Industry Scheme for the United Kingdom
-description: The Construction Industry Scheme (CIS) is a scheme in the United Kingdom that specifies the rules that contractors and deemed contractors in the construction industry must follow when they make payments to subcontractors for construction work. This article describes functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition that supports the requirements from these regulations.
+description: The Construction Industry Scheme (CIS) is a scheme in the United Kingdom that specifies the rules that contractors and deemed contractors in the construction industry must follow when they make payments to subcontractors for construction work. This article describes functionality in Microsoft Dynamics 365 for Finance and Operations that supports the requirements from these regulations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -31,10 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Construction Industry Scheme for the United Kingdom
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-
-The Construction Industry Scheme (CIS) is a scheme in the United Kingdom that specifies the rules that contractors and deemed contractors in the construction industry must follow when they make payments to subcontractors for construction work. This article describes functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition that supports the requirements from these regulations.
+The Construction Industry Scheme (CIS) is a scheme in the United Kingdom that specifies the rules that contractors and deemed contractors in the construction industry must follow when they make payments to subcontractors for construction work. This article describes functionality in Microsoft Dynamics 365 for Finance and Operations that supports the requirements from these regulations.
 
 The Construction Industry Scheme (CIS) is a scheme that is issued by Her Majesty’s Revenue & Customs (HMRC) in the United Kingdom. CIS specifies the rules that contractors and deemed contractors in the construction industry must follow when they make payments to subcontractors for construction work. Deemed contractors are organizations that don't have construction as their core business, but their annual spending on construction is high. The contractors and deemed contractors must complete these steps:
 
@@ -47,7 +46,7 @@ The Construction Industry Scheme (CIS) is a scheme that is issued by Her Majesty
 -   Maintain records of the details of the payments and deductions. The records must include the following information:
     -   The gross amount (excluding value-added tax \[VAT\]) of each payment that was made to a subcontractor.
     -   The amount of any deductions that the contractor withheld from a payment before it made the payment.
-    -   The amount (excluding VAT) of any material costs, if the contractor made a deduction.
+    -   The amount (excluding VAT) of any material costs, if the contractor made a deduction.
 
 ## CIS deductions from subcontractor payments
 You must complete the following setup before you make CIS deductions from subcontractor payments:

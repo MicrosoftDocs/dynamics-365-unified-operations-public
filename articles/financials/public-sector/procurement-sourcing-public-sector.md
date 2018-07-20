@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Procurement and sourcing in the public sector
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This overview introduces you to the public sector Procurement and sourcing functionality. This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
 
-This article describes the Procurement and sourcing functionality that is available for the public sector. 
+This article describes the Procurement and sourcing functionality that is available for the public sector. 
 
 ## What are the prerequisites for setting up Procurement and sourcing in the public sector?
 Before you begin to adjust the settings and input your data, you should:
@@ -46,9 +45,9 @@ Before you begin to adjust the settings and input your data, you should:
 -   Set up the numbering system for vendors, purchase orders, and so on
 -   Specify vendor certification types
 
-You may need to set up the following Procurement and sourcing features for public sector organizations:
+You may need to set up the following Procurement and sourcing features for public sector organizations:
 
--    [Public sector purchase order codes](purchase-order-codes-public-sector.md) 
+-    [Public sector purchase order codes](purchase-order-codes-public-sector.md) 
 Create codes and special messages for confirming purchase orders. A confirming purchase order circumvents the typical purchasing process.
 
 > [!NOTE]
@@ -58,7 +57,7 @@ Create codes and special messages for confirming purchase orders. A confirming p
 
 For French organizations, additional steps may be required for the public sector.
 
-The following sections describe the Procurement and sourcing features that are available for the public sector.
+The following sections describe the Procurement and sourcing features that are available for the public sector.
 
 ## What are vendor certification types?
 You can create and assign to vendor organizations any types of certification that the vendors hold. This includes not only professional credentials, such as a professional engineer’s license or Microsoft SQL Server Certification, but also whether they have liability insurance, minority status, or are in compliance with various environmental or consumer safety standards. 
@@ -89,7 +88,7 @@ Select the **Activities** option.
 Select the **Require direct invoicing** option. 
 
 ## Can I view purchase order line amounts?
-Yes. Line amounts for a purchase order can be viewed, including the current ordered amount and any amounts that have been received or invoiced. They can also view any amounts that remain to be invoiced or amounts for pending invoices.
+Yes. Line amounts for a purchase order can be viewed, including the current ordered amount and any amounts that have been received or invoiced. They can also view any amounts that remain to be invoiced or amounts for pending invoices.
 
 ### Tip
 
@@ -140,7 +139,7 @@ Let’s say you view a purchase order line with purchases posted to two ledger a
 </tbody>
 </table>
 
- 
+
 
 For more information, see [Procurement and sourcing](../../supply-chain/procurement/procurement-sourcing-overview.md) and 
 [Accounts payable in the public sector](accounts-payable-public-sector.md).

@@ -32,10 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 Security and permissions
 ------------------------
@@ -88,9 +85,9 @@ All arguments are optional.
 | *direction* | EXPORT                | Specify EXPORT to export data or IMPORT to import data.                                                                                                                                                                                                                                                               |
 | *directory* | The current directory | Specify the directory from which the data should be exported or to which the data should be imported.                                                                                                                                                                                                                 |
 | *database*  | AXDB                  | The name of the database.                                                                                                                                                                                                                                                                                             |
-| *server*    | The current computer  | Specify the computer name or instance name of the SQL Server computer that is hosting the Microsoft Dynamics AX database. To specify an instance name, enter it in the format ServerNameInstanceName. If you have a named instance on a local computer, you can use the format localhostInstanceName or InstanceName. |
+| *server*    | The current computer  | Specify the computer name or instance name of the SQL Server computer that is hosting the Microsoft Dynamics AX database. To specify an instance name, enter it in the format ServerNameInstanceName. If you have a named instance on a local computer, you can use the format localhostInstanceName or InstanceName. |
 
-  You can view a summary of the command-line options by using the following command.
+  You can view a summary of the command-line options by using the following command.
 
     DP.exe -?
 
@@ -168,8 +165,8 @@ After you have generated the Metadata.xml file and chosen the data to export, yo
 
 ### Export filtering
 
-When you export data by using the Microsoft Dynamics AX 2012 Test Data Transfer Tool (beta), you can prevent the tool from exporting data in three ways:
--   Exclude  or include tables
+When you export data by using the Microsoft Dynamics AX 2012 Test Data Transfer Tool (beta), you can prevent the tool from exporting data in three ways:
+-   Exclude  or include tables
 -   Exclude columns
 -   Exclude rows
 

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Track user sign-ins 
-description: This topic explains how to create an audit log of users who have signed in and used Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
-author: manado
+description: This topic explains how to create an audit log of users who have signed in and used Microsoft Dynamics 365 for Finance and Operations.
+author: manalidongre
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations, Unified Operations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: Platform update 12
 ---
 # Track user sign-ins 
  
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Many organizations are required to maintain an audit trail of users who have used the system. This requirement can be in place for compliance reasons, or to enable trackbacks in the event of incorrect use.
 
-In Microsoft Dynamics AX 2012, the **Audit log** form recorded which users accessed the Microsoft Dynamics AX environment. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, this information is captured in telemetry. IT administrators can download this information by using Microsoft Dynamics Lifecycle Services (LCS) and then move it to offline storage to maintain the audit trail of users who have signed in.
+In Microsoft Dynamics AX 2012, the **Audit log** form recorded which users accessed the Microsoft Dynamics AX environment. In Microsoft Dynamics 365 for Finance and Operations, this information is captured in telemetry. IT administrators can download this information by using Microsoft Dynamics Lifecycle Services (LCS) and then move it to offline storage to maintain the audit trail of users who have signed in.
 
 To generate an audit log of users who have used the system, follow these steps.
 

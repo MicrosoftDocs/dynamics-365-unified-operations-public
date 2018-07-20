@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronize sales invoice headers and lines directly from Finance and Operations to Sales
-description: This topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, to Microsoft Dynamics 365 for Sales. 
+description: This topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Microsoft Dynamics 365 for Finance and Operations, to Microsoft Dynamics 365 for Sales. 
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/26/2017
@@ -25,16 +25,16 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update 
+ms.dyn365.ops.version: July 2017 update 
 ms.search.validFrom: 2017-07-8
 
 ---
 
 # Synchronize sales invoice headers and lines directly from Finance and Operations to Sales
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, to Microsoft Dynamics 365 for Sales.
+This topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Microsoft Dynamics 365 for Finance and Operations, to Microsoft Dynamics 365 for Sales.
 
 ## Data flow in Prospect to cash
 
@@ -141,7 +141,7 @@ The following illustrations show an example of a template mapping in Data integr
 
 [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](contacts-template-mapping-direct.md)
 
-[Synchronize sales order headers and lines directly from Finance and Operations to Sales](sales-order-template-mapping-direct.md)
+[Synchronize sales order headers and lines directly from Finance and Operations to Sales](sales-order-template-mapping-direct-two-ways.md)
 
 
 

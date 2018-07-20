@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Prerequisites for a standard cost conversion
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic discusses tasks to perform before you run a standard cost conversion. 
 
@@ -46,7 +45,7 @@ Before you run a standard cost conversion, follow these steps:
 
 3.  Assign a **standard order quantity** to a manufactured item when it has constant costs. The standard order quantity for a manufactured item acts as an accounting lot size for amortizing, or prorating, constant costs. These can include setup times in routing operations or a constant component quantity in a bill of material (BOM).
 4.  Assign **general ledger accounts** that are related to standard costs, especially the revaluation variance. Use the **Posting** page (**Inventory management** &gt; **Setup**) to assign general ledger accounts that are related to standard costs. As a minimum for the standard cost conversion process, you must assign the account for the revaluation variance for all items and all cost groups. Use the **Chart of accounts** page to define the general ledger accounts that will be needed for standard costs. Use the **Transaction combinations** page to enable cost relations (for tables, groups, and all) before you define the item posting rules.
-5.  Define the inventory parameters that are related to standard costs. Use the **Number sequences** tab on the **Inventory and warehouse management parameters** page to assign a number sequence to revaluation vouchers. A revaluation voucher is generated when the standard cost conversion creates a change of an item's inventory value. Use the **Inventory and warehouse management parameters** page to define Cost Control parameters (on the **Inventory accounting** tab) to define two parameters that are related to standard costs.
+5.  Define the inventory parameters that are related to standard costs. Use the **Number sequences** tab on the **Inventory and warehouse management parameters** page to assign a number sequence to revaluation vouchers. A revaluation voucher is generated when the standard cost conversion creates a change of an item's inventory value. Use the **Inventory and warehouse management parameters** page to define Cost Control parameters (on the **Inventory accounting** tab) to define two parameters that are related to standard costs.
     -   Use the **Cost breakdown** field to select No or Sub ledger. The selection of Sub ledger is termed an active cost breakdown. An active cost breakdown is very important for calculating, retaining, and viewing cost group segmentation across a multilevel product structure for standard cost items. When the cost breakdown is active, you can report and analyze the following in a single level, multi-level, or total format:
         1.  Inventory
         2.  Work in process (WIP)

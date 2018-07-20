@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # F Classes - FormListBoxControl to FormNotifyEventArgs
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 API reference for classes from FormListBoxControl to FormNotifyEventArgs.
 
@@ -3601,7 +3600,7 @@ To display columns in a form list control, call the FormListControl.viewType met
 
 The following example shows a call to the columnImages method to indicate that the form list control has column images. The FormListControl.addColumn method adds the column to the form list control.
 
-     
+
     static void createForm2(Args _args) 
     { 
         Args args; 
@@ -4480,7 +4479,7 @@ To display columns in a form list control, call the FormListControl.viewType met
 
 The following example shows a call to the getColumn method to return a FormListColumn object for the column in the form list control. The FormListControl.addColumn method adds the column to the form list control.
 
-     
+
     static void createForm2(Args _args) 
     { 
         Args args; 
@@ -4544,7 +4543,7 @@ To display columns in a form list control, call the FormListControl.viewType met
 
 The following example shows a call to the getColumnCount method to return the number of columns in the form list control. The FormListControl.addColumn method adds the column to the form list control.
 
-     
+
     static void createForm2(Args _args) 
     { 
         Args args; 

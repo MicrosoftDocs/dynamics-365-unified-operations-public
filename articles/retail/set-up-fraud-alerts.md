@@ -2,10 +2,10 @@
 # required metadata
 
 title: Set up fraud alerts
-description: This topic explains how to set up rules to alert customer service representatives of potentially fraudulent information when orders are processed. You can define specific codes to use to automatically or manually put suspicious orders on hold. 
+description: This topic explains how to set up rules to alert customer service representatives of potentially fraudulent information when orders are processed. You can define specific codes that are used to automatically or manually put suspicious orders on hold. 
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: SalesPostingHistory, MCRHoldCodeTrans, SysOperationTemplateForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -31,25 +31,45 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Set up fraud alerts
+# Set up and work with call center fraud alerts
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-This topic explains how to set up criteria and rules to place potentially fraudulent sales orders on hold for further review. Fraud review functionality is used to determine the validity of information in a sales order. If the information in the sales order appears to be questionable based on an organization’s fraud criteria and rules, the order may be put on hold for further review by an administrator.
-
-> [!NOTE]
-> This feature can only be used with Retail Call Center channel sales order processing. 
-
-When the Call Center channel is defined, **Enable Order Completion** must be set to **Yes**. When order completion is enabled, users can view the order recap and click **Submit** to finalize the order. Users will also be provided options to manually place the sales order on fraud review hold. Sales orders keyed in by a Call Center user are processed through fraud check rules and criteria during the submit process.
-
-There are two types of fraud criteria that the system will reference to check if the order should be held for fraud review:
-
--   **Static rules** use a specific value, such as a phone number that has been blacklisted or an email address that has been flagged as being known as used for past fraudulent transactions. On the **Static Fraud Data** page, fraud information can be added manually or through data import, with scores attached to the fraudulent information. If fraud checking is turned on, every sales order entered will be compared to the static data. If the data is found in either the customer’s billing or delivery address, or if the data is found in the delivery address on the sales line, the scores of all unique matches will be summed.  
--   **Dynamic rules** are composed from variables and conditions defined for those variables. With dynamic rules, other criteria not defined in the static rules can be checked. More complex “AND/OR” statements can be used to consider multiple conditions to determine if there is a positive match against the rule criteria and the sales order being submitted. For example, if a user wants to hold for fraud review all orders for customers that are tied to a specific customer group value and that ordered a specific product, the conditions to validate customer and validate products would be defined on the **Rules** page with an “AND” condition. The order would fall into fraud hold only if both conditions were true and if the score value assigned to the rule put the order’s total fraud score over the minimum fraud score as defined in Call Center parameters.
-
-A call center user may also manually place an order into the fraud hold queue. If the user entering the order believes the customer placing the order may be suspicious and wants someone else to further review the validity of the order before it is processed, the user entering the order can choose the **Manual Fraud Hold** option from the **Holds** dropdown menu on the **Sales Order Summary** page (this appears after the **Complete** order function is called). The user will be prompted to enter a note to further explain why they feel the order may be fraudulent so that the reviewer has more context.
-
-All orders held through manual fraud hold or by systematic calculation of fraud scores will appear on the **Order Holds** page, where the order can be reviewed and then either canceled or released to processing.
+This topic explains how to set up criteria and rules to put potentially fraudulent sales orders on hold for further review. The fraud check feature is used to determine the validity of the information in a sales order. If the information in the sales order appears to be questionable, based on an organization's fraud criteria and rules, the order can be put on hold for further review. In this case, the order can't be released to the warehouse for further processing until the hold has been cleared.
 
 > [!NOTE]
-> Use of multiple rules or overly complex rules will result in poor system performance when sales orders are submitted. The fraud alert feature hasn't been optimized to handle a large volume of static fraud data entries and many active rules. It’s important to remember that every rule is evaluated during the submit function of call center sales order entry. The rules are evaluated against the sales order header and all order lines. The more rules there are and the more complex the rule statements are, the longer it will take to process. If you have a large number of line items on your order, and a large number of active rules and static data entries, this systematic process of reviewing and validating all of the data and calculating a fraud score can have a severe performance impact.  Organizations using this feature should always test and confirm that the order submission processing time is acceptable before applying any changes to rules or static fraud criteria into the production environment.
+> This feature can be used only with sales order processing for the Retail call center channel.
+
+## Turning on the fraud check feature
+
+To use the fraud check feature, you must set the **Enable order completion** option on the channel to **Yes** when the call center channel is [defined](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-order-processing-options). When order completion is turned on, call center users must select **Complete** on the sales order page for all sales orders that are created. The Complete action causes the **Sales order summary** page to open. After users enter the required payment data on the **Sales order summary** page, they select **Submit** to finalize the order. When the order is submitted, the fraud check feature is triggered, and any rules that are active in the system are automatically validated.
+
+Call center users can also manually put sales orders on hold for fraud review before they select **Submit**. To manually put a sales order on hold, on the **Sales order summary** page, select **Hold** \> **Manual fraud hold**. You're then prompted to enter a comment to explain your reason for putting the order on hold. This comment will appear in the [order holds](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds) workbench to provide context to the user who reviews orders that are on hold to determine whether the order should be released.
+
+In addition to configuring the **Enable order completion** option on the channel, you must configure the fraud check feature in the Call center parameters. Go to **Retail** \> **Channel setup** \> **Call center setup** \> **Call center parameters**. On the **Call center parameters** page, on the **Holds** tab, set the **Fraud check** option to **Yes**.
+
+On the **Holds** tab, you should also define the [hold codes](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds) that will be applied to an order that is either manually or automatically put on hold for fraud review. Set the hold codes in the **Manual fraud hold code** and **Fraud hold code** fields. You might find it helpful to create two unique hold codes, so that users who work in the holds workbench can easily filter and distinguish automatic holds from manual holds.
+
+For the fraud check feature to work effectively, you must also set the **Minimum score** field. Every fraud criterion and rule that is defined in the system has a score. When a sales order is checked for fraud matches, if one or more matches are found, the scores are added together to give the order a total fraud score. If the total fraud score for an order exceeds the value of the **Minimum score** field, the order is automatically put on hold. You can optionally use the other score-related fields on the **Holds** tab to define the email score, phone score, ZIP/postal code score, and extended ZIP/postal code score. If you don't specify a score for any of these static fraud criteria when you define them on the **Static fraud data** page, the system will score them by using the default scores that you specify on the **Holds** tab of the **Call center parameters** page.
+
+Finally, use the **Fraud comment type** field to specify the document type that should be used when users enter comments when they manually put an order on hold for fraud review. Most often, this field is set to **Note**.
+
+## Defining fraud criteria and rules
+
+The system references two types of fraud criteria to determine whether an order should be put on hold for fraud review:
+
+- **Static fraud data** uses a specific value, such as a phone number that has been put on a list of blocked numbers or an email address that has been flagged because it's known to have been used for previous fraudulent transactions. To set up static fraud data, go to **Retail** \> **Channel setup** \> **Call center setup** \> **Fraud** \> **Static fraud data**. On the **Static fraud data** page, you can add fraud criteria manually or through data import. Scores are attached to the fraudulent information. If the fraud check feature is turned on, every sales order that is entered is compared to the static data. If the data is found in either the customer's billing address or the delivery address that is linked to the order header, or if the data is found in the delivery addresses that are linked to any of the lines on that sales order, the scores of all unique matches are added together and compared to the **Minimum score** value to determine whether the order should be put on hold.
+- **Fraud rules** consist of user-defined variables and the conditions that are defined for those variables. To create rules, go to **Retail** \> **Channel setup** \> **Call center setup** \> **Fraud** \> **Rules**. Fraud rules let a company configure a more complex rule set that can include **AND** or **OR** statements to evaluate multiple conditions. For example, a user wants all orders for customers who belong to a specific customer group and who ordered a specific product to be put on hold for fraud review. In this case, conditions to validate the customer and products are defined on the **Rules** page, and an AND condition is used. An order is then put on hold only if both conditions are true, and if the score value that is assigned to this rule, plus the score value of any other rules that the order matches, causes the order's total fraud score to exceed the **Minimum score** value that is defined on the **Call center parameters** page.
+
+> [!NOTE]
+> Multiple rules or overly complex rules will affect system performance when sales orders are submitted. The fraud check feature hasn't been optimized to handle a large volume of static fraud data entries and many active rules. Remember that every rule is evaluated when call center users select **Submit** during sales order entry. The rules are evaluated against the sales order header and all order lines. The more rules there are and the more complex the rule statements are, the more time will be required for processing. If there are many line items on an order, and many active rules and static data entries, the automatic process of reviewing and validating all the data and calculating a fraud score can have a severe impact on performance. Organizations that use this feature should always test and confirm that the processing time for order submission is acceptable before they apply any changes to rules or static fraud criteria to the production environment.
+
+## Identifying orders that are on hold for fraud review
+
+When call center users submit a sales order, if the order matches the fraud criteria or rules, and if the score exceeds the minimum, the users receive a warning message that states that the order has been put on hold. Users can close this message, because it's for informational purposes only. Users can optionally communicate this information to the customer. The business should determine the protocol that users follow in this situation.
+
+The order is saved, but the **Do not process** flag is set on it. This flag helps guarantee that the order can't be released to the warehouse. At any time, users can view the setting of the **Do not process** flag for any sales order on the **Detailed status** page. This page can be opened from the **All sales order** and **Customer service** pages. The system also updates the value of the **Detailed status** field for the order to **Fraud hold**.
+
+To view and manage the orders that are on hold for fraud review, go to **Retail** \> **Customers** \> **Order holds**. On the **Order holds** page, select an entry in the list, and then click **Order hold** to see a more detailed view that includes information about the reason for the hold. On the **Fraud details** FastTab, you can view the systematic fraud criteria that were found to be a match for the order and the scores that were applied. If the order was put on manual hold, you can review any comments that were entered by the user who put the order on hold by looking at the **Fraud notes** section on the **Notes** FastTab.
+
+For more information about how to work with hold orders, see [Order holds](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds).

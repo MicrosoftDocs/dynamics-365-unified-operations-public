@@ -5,10 +5,10 @@ title: Page design guidelines
 description: This topic provides in-depth information on designing mobile apps.
 author: makhabaz
 manager: AnnBe
-ms.date: 08/14/2017
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Page design guidelines
+
+[!include [banner](../../includes/banner.md)]
+
 Before you begin to use the designer to build pages and actions, it’s important that you plan the overall design of the mobile workspace that you want to build. We recommend that you orient your design around the entities that you plan to use in the mobile workspace. Don't begin by thinking about the forms that you want to use. From the perspective of the mobile app, the forms are just a mechanism for retrieving data, and the run-time UI behavior of a form isn't applicable to the mobile app. Therefore, you should first identify your entities and the relationships between them. For each entity, the following questions will help you decide how you should design your forms and pages.
 
 ### How do I create a list view for an entity in the mobile app?
@@ -131,3 +134,12 @@ If you want just a details view for an entity, it's likely that the entity is a 
                     }
             }; 
         }
+        
+### How do I adjust the number of records returned in a list page using list fetch size?
+
+The number of records returned in a list page is controlled by the **List fetch size** value. The default is 50 records. The **List fetch size** indicates the maximum number of records returned by a page when it first loads, and the maximum number of records returned  when search is used to find a specific set of records. Be careful not to make the value too large or it may negatively affect the user experience.
+
+1. In the Mobile App designer,add a page containing a grid and select some fields from the grid.
+2. Click the **Grid** node and then click **Properties**.
+3. The **Control properties** dialog box will contain a default fetch size of 50 records.
+4. Adjust the fetch size as needed.

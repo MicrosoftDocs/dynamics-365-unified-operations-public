@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Generate earnings
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the various ways that you can generate earnings for workers. You can automatically generate earnings for salaried positions, for positions that use a schedule, and for recurring earnings, premium earnings, and retroactive earnings. You can also enter earnings manually.
 
@@ -73,7 +72,7 @@ To manually enter earnings that are based on pieces and earnings for exceptions,
     1.  Modify the earnings date if it isn’t the end date of the pay period.
     2.  Select the position that the worker earned the earnings in.
     3.  Select the tax region.
-    4.  Select the earning code that represents the type of earning. When you select the earning code, the default description, quantity, unit type, and rate are entered from the earning code. Enter a quantity that is appropriate for the unit type. You can also change the rate. However, the that you enter must be a flat rate and must not be calculated by the system.
+    4.  Select the earning code that represents the type of earning. When you select the earning code, the default description, quantity, unit type, and rate are entered from the earning code. Enter a quantity that is appropriate for the unit type. You can also change the rate. However, the that you enter must be a flat rate and must not be calculated by the system.
 
 4.  If you didn't use the automated process to generate earnings before you began to enter lines manually, you can click **Generate earnings** to use the default values on the remaining lines of the worker’s earnings statement. The lines that you entered manually aren't affected. You can also automatically generate earnings statements by using the process that is described earlier in this topic. In that case, the lines that you entered manually *are* affected. 
     -  **Note:** You can complete this step regardless of whether the worker is paid a salary or paid hourly.
@@ -166,7 +165,7 @@ You can also calculate retroactive pay for salaried workers. The salary-based ea
 ## Next step
 After you generate earnings, you must release them before you can create pay statements. You might also have to change the earnings or put certain earnings on hold. For more information, see [Work with existing earnings](noam-usa-existing-earnings.md).
 
-See also
+Additional resources
 --------
 
 [Work with existing earnings](noam-usa-existing-earnings.md)

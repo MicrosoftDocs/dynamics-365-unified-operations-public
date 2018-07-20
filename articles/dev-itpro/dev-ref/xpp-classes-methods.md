@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ classes and methods
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to create and use classes and interfaces in X++.
 
@@ -64,7 +63,7 @@ All classes are public, but all member variables are implicitly protected. Howev
         {
             return firstName;
         }
-        
+
         public void setFirstName(str newName)
         {
            firstName = newName;
@@ -76,7 +75,7 @@ To create an instance of a class, you must instantiate it by using a *constructo
 
     // Declare a variable to refer to a Point object
     Point myPoint; 
-        
+
     // Create an instance of a Point object
     myPoint = new Point(); 
 
@@ -175,9 +174,9 @@ You can prevent classes from being inherited by using the **final** modifier.
 ## Methods
 The following code block types are standard for application classes:
 
--   ****classDescription** declaration block** – This declaration block contains class modifiers such as **public**, **private**, and **extends**. It also contains the field members for objects that are constructed from the class. When you type the keyword **this**, IntelliSense can show a list of the members.
--   ****new** method** – This method creates an instance of the class. The constructor can be called only by using the **new** keyword. Derived classes can call the **new** method of their constructor by calling the **super** method reference.
--   ****finalize** method** – This method finalizes an instance of the class. This method is the destructor method. However, it's a destructor by convention only. The system doesn't automatically call the **finalize** method during garbage collection.
+- *<strong><em>classDescription</em>* declaration block</strong> – This declaration block contains class modifiers such as <strong>public</strong>, <strong>private</strong>, and <strong>extends</strong>. It also contains the field members for objects that are constructed from the class. When you type the keyword <strong>this</strong>, IntelliSense can show a list of the members.
+- *<strong><em>new</em>* method</strong> – This method creates an instance of the class. The constructor can be called only by using the <strong>new</strong> keyword. Derived classes can call the <strong>new</strong> method of their constructor by calling the <strong>super</strong> method reference.
+- *<strong><em>finalize</em>* method</strong> – This method finalizes an instance of the class. This method is the destructor method. However, it's a destructor by convention only. The system doesn't automatically call the <strong>finalize</strong> method during garbage collection.
 
 Additional methods for a class have the following types:
 
@@ -232,12 +231,12 @@ If a method doesn't return anything, you must use the **void** keyword. The foll
     // If a method returns something, you must specify the return type and include a return statement.
     int methodNameIntegerReturnValue()
     {
-        return 1;
+        return 1;
     }
 
 ### Syntax
 
-Method declaration = *Heading*  *Body* Heading = **\[** *Modifiers* **\]**  *ReturnType*  *MethodName*  **(**  *ParameterList*  **)** Modifiers = **\[client\] \[server\] \[edit | display | public | protected | private\] \[static | abstract | final \]** ReturnType = *Datatype*  **| void | anytype** MethodName = *Identifier* ParameterList = **\[** *Parameter*  **{ ,**  *Parameter*  **}\]** Parameter = *Datatype*  *Variableidentifier*  **\[ =**  *Expression*  **\]** Body = **{ \[**  *VariableDeclarations*  **\] \[**  *EmbeddedFunctionDeclarations*  **\] \[**  *Statements*  **\] }** EmbeddedFunctionDeclaration = *Heading*  **{\[**  *VariableDeclarations*  **\] \[**  *Statements*  **\]}** If you use the **anytype** return type, the method can return any data type.
+Method declaration = *Heading*  *Body* Heading = **\[** *Modifiers* **\]**  *ReturnType*  *MethodName*  **(**  *ParameterList*  **)** Modifiers = **\[client\] \[server\] \[edit | display | public | protected | private\] \[static | abstract | final \]** ReturnType = *Datatype*  **| void | anytype** MethodName = *Identifier* ParameterList = **\[** *Parameter*  **{ ,**  *Parameter*  **}\]** Parameter = *Datatype*  *Variableidentifier*  **\[ =**  *Expression*  **\]** Body = **{ \[**  *VariableDeclarations*  **\] \[**  *EmbeddedFunctionDeclarations*  **\] \[**  *Statements*  **\] }** EmbeddedFunctionDeclaration = *Heading*  **{\[**  *VariableDeclarations*  **\] \[**  *Statements*  **\]}** If you use the **anytype** return type, the method can return any data type.
 
 ### Example of a method that doesn't have a return type
 
@@ -311,7 +310,7 @@ This section describes a scenario where a software key type is used to help prev
 
     static public boolean validateSoftwareKey(str _softwareKeyString)
     {
-          // Your code here.
+          // Your code here.
     }
 
 In the following example, you don't have to construct an instance of the **SoftwareKey** class before you call a static method on the class. When you want to call the static **validateSoftwareKey** method, the syntax starts with the name of the class that contains the method. A pair of colons (::) is used to connect the class name to the static method name.
@@ -497,22 +496,22 @@ The methods in a class are inherited by any class that extends it. To change the
     // Superclass: Attribute
     public class Attribute
     {
-        int objectVariable;
+        int objectVariable;
 
         void methodAtt()
         {
-            //Some statements
+            //Some statements
         }
     }
 
     // Subclass: ColorAttribute
     public class ColorAttribute extends Attribute
     {
-        int addedObjectVariable;
+        int addedObjectVariable;
 
         void methodAtt()
         {
-            //Some statements
+            //Some statements
         }
     }
 
@@ -522,11 +521,11 @@ Static methods can't be overridden, because they exist per class. To protect oth
 
     public class Attribute
     {
-        int objectVariable;
+        int objectVariable;
 
         final void methodAtt()
         {
-            //Some statements
+            //Some statements
         }
     }
 
@@ -601,7 +600,7 @@ The **this** reference can't be used in the following ways:
 -   It can't qualify the names of static methods of the class or table.
 
 ## Interfaces
-An *interface* is a specification for a set of public instance methods. An interface defines and enforces similarities between unrelated classes without having to derive one class from the other. All interfaces are public, even if you don't explicitly add the **public** keyword ****in front of the **interface** keyword ****in the **classDeclaration** code. The methods on an interface are also public. Once again, explicit inclusion of the keyword **public** is optional. To create an interface, follow these steps.
+An <em>interface</em> is a specification for a set of public instance methods. An interface defines and enforces similarities between unrelated classes without having to derive one class from the other. All interfaces are public, even if you don't explicitly add the <strong>public</strong> keyword *<strong><em>in front of the *</em>interface</strong> keyword *<strong><em>in the *</em>classDeclaration</strong> code. The methods on an interface are also public. Once again, explicit inclusion of the keyword <strong>public</strong> is optional. To create an interface, follow these steps.
 
 1.  In Server Explorer, right-click the project, and then click **Add**.
 2.  In the **New Item** dialog box, select **Interface**, and then enter a name for the interface.
@@ -646,16 +645,16 @@ In the following example, an **Automobile** class implements an **IDrivable** in
             IDrivable yourIDrivable;
             Automobile myAutomobile;
             str sTemp = "object is not an IDrivable";
-            
+
             myAutomobile = new Automobile();
-            
+
             if (myAutomobile is IDrivable)
             {
                 yourIDrivable = myAutomobile;
                 yourIDrivable.setSpeed(42);
                 sTemp = int2str(yourIDrivable.getSpeed());
             }
-            
+
             Global::info(sTemp);
             return;
             // output
@@ -677,7 +676,7 @@ You should call the *substitute application classes* instead of the system class
 
 ### x-system classes
 
-Some of the substitute application classes are associated with a special global variable that represents an instance of the class. For example, the **appl** variable references a pre-instantiated object from the **Application** class. The advantage of the **appl** variable is that the system maintains the object throughout the scope of your session. Your code would be less efficient if it repeatedly used the **new Application()** syntax to obtain an instance of the **Application** class. You should not use the **xApplication** system class. Instead, use the **Application** substitute application class. You can reference the static members of the **Application** class by using the following standard syntax: **Application::checkForNewBatchJobs()**. However, to reference the instance members of the **Application** class, you should use that class's **appl** variable, if it exists. This pattern applies to most of the x-system classes. The **Session** substitute application class is one exception, because there is no special global variable for **Session**. The following table lists the x-system classes that have a corresponding substitute application class. The special global variables are also shown for those classes that have one.
+Some of the substitute application classes are associated with a special global variable that represents an instance of the class. For example, the **appl** variable references a pre-instantiated object from the **Application** class. The advantage of the **appl** variable is that the system maintains the object throughout the scope of your session. Your code would be less efficient if it repeatedly used the **new Application()** syntax to obtain an instance of the **Application** class. You should not use the **xApplication** system class. Instead, use the **Application** substitute application class. You can reference the static members of the **Application** class by using the following standard syntax: **Application::checkForNewBatchJobs()**. However, to reference the instance members of the **Application** class, you should use that class's **appl** variable, if it exists. This pattern applies to most of the x-system classes. The **Session** substitute application class is one exception, because there is no special global variable for **Session**. The following table lists the x-system classes that have a corresponding substitute application class. The special global variables are also shown for those classes that have one.
 
 | Application class | x-system class  | Global variable    |
 |-------------------|-----------------|--------------------|
@@ -707,7 +706,7 @@ The following example shows the syntax for using several special variables that 
         // Infolog variable
         treeNode2 = infolog.findNode("\\forms\\custTable");
         print treeNode2.AOTgetProperty("Name");
-     
+
         // classFactory variable
         args3 = new Args(formstr(vendTable));
         formRun4 = classFactory.formRunClass(args3);
@@ -737,7 +736,7 @@ The **SysStartupCmd.construct** method lists the commands that are available whe
 -   AOTImport
 -   Synchronize
 
-The following example shows how to run a new command when Finance and Operations starts. First, a class that extends **SysStartupCmd** is created. This new class performs your specific task. You then modify the construct method on **SysStartupCmd** to call your class. In the Finance and Operations Configuration Utility, on the **General** tab, in the **Command to run at application startup** field, you can add commands that are run at startup. Alternatively, you can use the **-startupcmd= *MyCommand*** command-line parameter.
+The following example shows how to run a new command when Finance and Operations starts. First, a class that extends <strong>SysStartupCmd</strong> is created. This new class performs your specific task. You then modify the construct method on <strong>SysStartupCmd</strong> to call your class. In the Finance and Operations Configuration Utility, on the <strong>General</strong> tab, in the <strong>Command to run at application startup</strong> field, you can add commands that are run at startup. Alternatively, you can use the <strong>-startupcmd= *MyCommand</strong>* command-line parameter.
 
     public class SysStartupCmdAutoRun : extends SysStartupCmd 
     {
@@ -815,8 +814,8 @@ When you implement a class by using the batch processing system, you can remove 
 ## Image manipulation classes
 Two system classes let you to manipulate graphics and icons: **Image** and **Imagelist**.
 
--   **Image** – This class lets you load, save, and manipulate individual images. For example, you can capture a screen and save it as an image, crop or rotate an image, or manipulate the color depth.
--   **Imagelist** – This class lets you work with a set of images that have common properties, such as the size and transparency color. You can view the image lists that are used in Finance and Operations in the **ImageListAppl\_\*** application classes.
+- **Image** – This class lets you load, save, and manipulate individual images. For example, you can capture a screen and save it as an image, crop or rotate an image, or manipulate the color depth.
+- <strong>Imagelist</strong> – This class lets you work with a set of images that have common properties, such as the size and transparency color. You can view the image lists that are used in Finance and Operations in the <strong>ImageListAppl\_\</strong>* application classes.
 
 ## Query object model
 The query object model contains classes that are used to define and run a query. The query objects are used to define the query data source, the fields that are returned, record ranges, and relations to child data sources. The query classes are more visible when you create a dynamic query in code, but they are also used behind the scenes when you create a static query in Application Explorer. The following table describes the classes in the query object model.

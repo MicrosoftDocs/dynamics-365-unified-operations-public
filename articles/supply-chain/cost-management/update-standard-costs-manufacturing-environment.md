@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Update standard costs in a manufacturing environment
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides guidance about how to update standard costs in a manufacturing environment. 
 

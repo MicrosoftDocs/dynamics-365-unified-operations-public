@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Back up database for an LCS solution
-description: A Finance and Operations database backup is required for your LCS solution package. When you back up your database, you must include the master, reference, and transactional data that is specific to your solution and industry. This will be used for your pre-sales demo deployments. 
+title: Back up the database for a Microsoft Dynamics 365 for Finance and Operations solution
+description: This topic provides information about the database backup that is required for your Microsoft Dynamics Lifecycle Services (LCS) solution package.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,21 +29,21 @@ ms.author: omarc
 
 ---
 
-# Back up database for an LCS solution
+# Back up the database for a Microsoft Dynamics 365 for Finance and Operations solution
 
 [!include[banner](../includes/banner.md)]
 
+A backup of the Microsoft Dynamics 365 for Finance and Operations database is required for your Microsoft Dynamics Lifecycle Services (LCS) solution package. When you back up the database, you must include the master, reference, and transactional data that is specific to your solution and industry. This data will be used for your pre-sales demo deployments.
 
-A Finance and Operations database backup is required for your LCS solution package. When you back up your database, you must include the master, reference, and transactional data that is specific to your solution and industry. This will be used for your pre-sales demo deployments. 
+On demo or development environments, the database is typically named AXDBRain. Your database backup should be no larger than 15 gigabytes (GB). Otherwise, a time-out error might occur when you try to upload the database to the Asset library in LCS. To compress your database backup, in Microsoft SQL Server Management Studio, on the **Back Up Database** page, in the **Set backup compression** field, select **Compress backup**.
 
-On demo or development environments, the database is typically called AXDBRain. Your database backup should be no larger than 15 gigabyte (GB). If your database is larger, a timeout error may occur when you try to upload the database to the **Asset library **in Lifecycle Services (LCS). To compress your database backup, in SQL Server Management Studio, on the **Back Up Database** page, in the **Set backup compression** field, select **Compress backup**. 
+[![Compress backup selected in the Set backup compression field](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)
+=======
+On demo or development environments, the database is typically called AXDBRain. Your database backup should be no larger than 15 gigabyte (GB). If your database is larger, a timeout error may occur when you try to upload the database to the <strong>Asset library **in Lifecycle Services (LCS). To compress your database backup, in SQL Server Management Studio, on the **Back Up Database</strong> page, in the <strong>Set backup compression</strong> field, select <strong>Compress backup</strong>. 
 
 [![databasebackup01](./media/databasebackup01.jpg)](./media/databasebackup01.jpg)
 
-See also
+Additional resources
 --------
 
-[LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
-
-
-
+[Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)

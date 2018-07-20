@@ -32,12 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Electronic invoices (CFDI)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
+Electronic billing in Mexico requires the Comprobantes fiscales digitales por internet (CFDI) format. 
 
 This article provides information about the electronic invoices that your organization can submit to the Mexican tax authority (SAT). It describes the currently approved method for submitting electronic invoices (CFDI), the requirements for using them, and the information that they include.
 
-An electronic invoice is a legally accepted digital tax receipt that your organization submits to the Mexican tax authority (Servicio de Administración Tributaria \[SAT\]). Microsoft Dynamics 365 for Finance and Operations, Enterprise edition helps guarantee that the electronic invoices that your organization generates are secure, confidential, authentic, and legally acceptable. You can also make sure that international standards are applied to your electronic invoices. You can generate an electronic invoice for the following documents when a transaction is posted:
+An electronic invoice is a legally accepted digital tax receipt that your organization submits to the Mexican tax authority (Servicio de Administración Tributaria \[SAT\]). Microsoft Dynamics 365 for Finance and Operations helps guarantee that the electronic invoices that your organization generates are secure, confidential, authentic, and legally acceptable. You can also make sure that international standards are applied to your electronic invoices. You can generate an electronic invoice for the following documents when a transaction is posted:
 
 -   Sales order
 -   Free text invoice
@@ -96,5 +97,6 @@ As is explained in detail in the Mexican localization scope document, integratio
 - [Create and post a customer invoice as an electronic invoice by using the CFDI method](./tasks/mx-00010-e-invoicing-cfdi.md)
 - [View, email, export, or print an already-generated CFDI electronic invoice based on a customer’s request](./tasks/mx-00010-inquire-print-electronic-invoice.md)
 - [Cancel a CFDI electronic invoice](./tasks/mx-00010-cancel-electronic-invoice.md)
+- [CFDI Version 3.3](latam-mex-cfdi-3-3.md)
 
 

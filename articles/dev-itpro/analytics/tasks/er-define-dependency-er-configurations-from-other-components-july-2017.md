@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Define the dependency of configurations from other components for electronic reporting (ER)
+title: Define the dependency of configurations from other components
 description: To complete these steps, you must first complete the steps in the task guide, ER Manage model mapping configurations, and you must have access to Microsoft Dynamics Lifecycle Services (LCS). 
 author: NickSelin
 manager: AnnBe 
@@ -26,13 +26,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Define the dependency of configurations from other components for electronic reporting (ER)
+# Define the dependency of configurations from other components 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To complete these steps, you must first complete the steps in the task guide, ER Manage model mapping configurations, and you must have access to Microsoft Dynamics Lifecycle Services (LCS).
 
-This procedure shows how to design an Electronic reporting (ER) configuration and specify its dependency from other software components, so that you can help guarantee that the configuration is correctly downloaded to a specific version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. In this example, you will create required ER configurations for the sample company Litware, Inc. 
+This procedure shows how to design an Electronic reporting (ER) configuration and specify its dependency from other software components, so that you can help guarantee that the configuration is correctly downloaded to a specific version of Microsoft Dynamics 365 for Finance and Operations. In this example, you will create required ER configurations for the sample company Litware, Inc. 
 
 This procedure is intended for users who have the System administrator or Electronic reporting developer role assigned to them. The steps can be performed in any company, because ER configurations are shared among companies. 
 

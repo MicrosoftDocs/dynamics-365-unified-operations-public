@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a vendor account and attach the invoice declaration category (Iceland)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through creating a vendor with configuration for an invoice declaration. The demo data company used to create this procedure is DEMF with the country of legal entity primary address updated to Iceland.
 

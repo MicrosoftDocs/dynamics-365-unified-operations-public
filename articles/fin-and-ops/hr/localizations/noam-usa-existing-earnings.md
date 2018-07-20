@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Process existing earnings
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement. You must release earnings statement lines before you generate pay statements.
 
@@ -72,7 +71,7 @@ After you generate an earnings statement, you can add lines to it. You can also 
 ## Next step
 After you finalize all the earnings, you’re ready to generate pay statements. For more information, see [Work with pay statements](noam-usa-pay-statements.md).
 
-See also
+Additional resources
 --------
 
 [Earnings and the earnings generation process Q&A](noam-usa-earnings-generation-process.md)

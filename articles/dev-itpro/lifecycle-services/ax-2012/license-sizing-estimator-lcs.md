@@ -32,12 +32,11 @@ ms.dyn365.ops.version: 2012
 
 # License sizing estimator (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This article provides information about License sizing estimator in Microsoft Dynamics Lifecycle Services (LCS). The License sizing estimator tool helps you estimate the number of licenses that an organization will require for Microsoft Dynamics AX. The article also explains how to enter data and generate a report so that you can start using the tool.
 
-In Microsoft Dynamics Lifecycle Services (LCS), License sizing estimator helps you estimate the number of licenses that an organization will require for Microsoft Dynamics AX. It provides a shared workspace that you can use to model default and customized roles, and then automatically calculate the required client access licenses (CALs). License sizing estimator provides information that you can use in the following circumstances:
+In Microsoft Dynamics Lifecycle Services (LCS), License sizing estimator helps you estimate the number of licenses that an organization will require for Microsoft Dynamics AX. It provides a shared workspace that you can use to model default and customized roles, and then automatically calculate the required client access licenses (CALs). License sizing estimator provides information that you can use in the following circumstances:
 
 -   Before a customer purchases Microsoft Dynamics AX
 -   Before you expand your existing Microsoft Dynamics AX implementation

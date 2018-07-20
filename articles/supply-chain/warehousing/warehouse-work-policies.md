@@ -32,10 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Warehouse work policies
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-
-Warehouse work policies in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition control whether warehouse work is created by warehouse processes in manufacturing, based on work order type, inventory location, and product.
+Warehouse work policies in Microsoft Dynamics 365 for Finance and Operations control whether warehouse work is created by warehouse processes in manufacturing, based on work order type, inventory location, and product.
 
 This work policy controls whether warehouse work is created for warehouse processes in manufacturing. You can set up the work policy by using a combination of **work order types**, an **inventory location**, and a **product**. For example, product L0101 is reported as finished to output location 001. The finished good is later consumed in another production order at output location 001. In this case, you can set up a work policy to prevent the work for finished goods put-away from being created when you report product L0101 as finished to output location 001. The work policy is an individual entity that can be described through the following information:
 
@@ -71,14 +70,15 @@ When you plan to configure a warehouse work policy for this scenario, you should
 
 Here is an example of the work policy that you can set up, based on these considerations.
 
-|                                         |                                                       |
-|-----------------------------------------|-------------------------------------------------------|
-|**Work policy name**<br>                 |**Work order types**<br>                               |
-| No put away 01     `                    |- Finished good put away<br>                           |
-|                                         |**Locations**<br>                                      |
-|                                         |- O1   |                                               |
-|                                         |**Products** <br>                                      |
-|                                         |- SC1                                                  |
+
+|                                       |                                       |
+|---------------------------------------|---------------------------------------|
+| <strong>Work policy name</strong><br> | <strong>Work order types</strong><br> |
+|         No put away 01     `          |     - Finished good put away<br>      |
+|                                       |    <strong>Locations</strong><br>     |
+|                                       |                 - O1                  |
+|                                       |    <strong>Products</strong> <br>     |
+|                                       |                 - SC1                 |
 
 The following procedures provide step-by-step instructions about how to set up the warehouse work policy for this scenario. A sample setup showing how to report a production order as finished to a location that isn’t license plate–controlled is also described.
 
@@ -129,7 +129,7 @@ STEPS (25)
 <tr>
 <td></td>
 <td>2.</td>
-<td>In the list, select resource group '5102'.</td>
+<td>In the list, select resource group &#39;5102&#39;.</td>
 </tr>
 <tr>
 <td></td>
@@ -139,17 +139,17 @@ STEPS (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>In the Output warehouse field, enter '51'.</td>
+<td>In the Output warehouse field, enter &#39;51&#39;.</td>
 </tr>
 <tr>
 <td></td>
 <td>5.</td>
-<td>In the Output location field, enter '001'.</td>
+<td>In the Output location field, enter &#39;001&#39;.</td>
 </tr>
 <tr>
 <td></td>
 <td>6.</td>
-<td>Location 001 isn't a license plate–controlled location. You can set up a non–license plate output location only if an applicable work policy exists for the location.</td>
+<td>Location 001 isn&#39;t a license plate–controlled location. You can set up a non–license plate output location only if an applicable work policy exists for the location.</td>
 </tr>
 <tr>
 <td colspan="3"><strong>Sub-task: Create a production order and report it as finished.</strong></td>
@@ -172,7 +172,7 @@ STEPS (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>In the Item number field, enter 'L0101'.</td>
+<td>In the Item number field, enter &#39;L0101&#39;.</td>
 </tr>
 <tr>
 <td></td>
@@ -207,7 +207,7 @@ STEPS (25)
 <tr>
 <td></td>
 <td>11.</td>
-<td>In the Automatic BOM consumption field, select 'Never'.</td>
+<td>In the Automatic BOM consumption field, select &#39;Never&#39;.</td>
 </tr>
 <tr>
 <td></td>

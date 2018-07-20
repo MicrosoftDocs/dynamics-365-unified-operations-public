@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: GeneralJournalEntryWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # General ledger 
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Use General ledger to define and manage the legal entity’s financial records. The general ledger is a register of debit and credit 
 entries. These entries are classified using the accounts that are listed in a chart of accounts. 
@@ -43,7 +42,7 @@ entries. These entries are classified using the accounts that are listed in a ch
 
 You can allocate, or distribute, monetary amounts to one or more accounts or account and dimension combinations based on allocation 
 rules. There are two types of allocations: fixed and variable. You can also settle transactions between ledger accounts and revalue 
-currency amounts. At the end of a fiscal year, you must generate closing transactions and prepare your accounts for the next fiscal year. You can use the consolidation functionality to combine the financial results for several subsidiary legal entities into results for a single, consolidated organization. The subsidiaries can be in the same Microsoft Dynamics 365 for Finance and Operations database or in separate databases.
+currency amounts. At the end of a fiscal year, you must generate closing transactions and prepare your accounts for the next fiscal year. You can use the consolidation functionality to combine the financial results for several subsidiary legal entities into results for a single, consolidated organization. The subsidiaries can be in the same Microsoft Dynamics 365 for Finance and Operations database or in separate databases.
 
 - [Consolidation and elimination overview](../budgeting/consolidation-elimination-overview.md)
 - [General ledger account balances](general-ledger-account-balances.md)
@@ -51,7 +50,7 @@ currency amounts. At the end of a fiscal year, you must generate closing transac
 
 [![Business process](./media/GL-process.PNG)](./media/GL-process.PNG)
 
-# Sales tax
+## Sales tax
 Every company collects and pays taxes to various tax authorities. The rules and rates vary by country/region, state, county, and city.
 In addition, the rules must be updated periodically when tax authorities change their requirements. Sales tax codes contain the basic 
 information about how much you collect and pay to the authorities. When you set up sales tax codes, you define the amounts or 
@@ -64,14 +63,18 @@ your tax authorities require.
  - [Sales tax payments and rounding rules](round-sales-tax-payments.md)
 
 
-### Additional resources
+## Additional resources
 
-#### What's new and in development
+### What's new
 
-Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new 
-features are in development. 
+Go to the [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/) to see what new features have been released. 
 
-#### Blogs
+### Videos
+
+Check out the how-to videos that are now available on the 
+[Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+
+### Blogs
 
 You can find opinions, news, and other information about Accounts payable and other solutions on the
 [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
@@ -83,11 +86,7 @@ procedures are also similar in the current version.
 The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) 
 gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
 
-#### Task guides
-Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
+#### Community blogs
 
-#### Videos
-
-Check out the how-to videos that are now available on the 
-[Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+- [What you should know about ledger in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 

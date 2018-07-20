@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Consuming external web services from Microsoft Dynamics 365 for Finance and Operations
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-You can consume web services by adding new class libraries to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. In Microsoft Dynamics AX 2012, you could consume web services from X++ code by adding Microsoft Visual Studio projects as a reference and by using **Aif::CreateServiceClient**. This scenario is supported, but the steps have changed. Application Integration Framework (AIF) is no longer supported. 
+You can consume web services by adding new class libraries to Microsoft Dynamics 365 for Finance and Operations. In Microsoft Dynamics AX 2012, you could consume web services from X++ code by adding Microsoft Visual Studio projects as a reference and by using **Aif::CreateServiceClient**. This scenario is supported, but the steps have changed. Application Integration Framework (AIF) is no longer supported. 
 
 The following steps show how to consume an external StockQuote service from X++.
 
@@ -53,13 +53,13 @@ The following steps show how to consume an external StockQuote service from X++
       return client.GetQuote("MSFT");
      }
 ```
-4.  Build the project. The binary ExternalServiceLibrary.dll is created.
-5.  Create a new Dynamics project in Visual Studio.
-6.  Add **ExternalServiceLibrary.dll** as a reference.
-7.  In the X++ class, you can use the external web services that were referenced in ExternalesrviceLibrary.dll.
-```
- public static void main(Args _args)
-     {
-       info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));
-      }
-```
+4. Build the project. The binary ExternalServiceLibrary.dll is created.
+5. Create a new Dynamics project in Visual Studio.
+6. Add **ExternalServiceLibrary.dll** as a reference.
+7. In the X++ class, you can use the external web services that were referenced in ExternalesrviceLibrary.dll.
+   ```
+   public static void main(Args _args)
+    {
+      info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));
+     }
+   ```

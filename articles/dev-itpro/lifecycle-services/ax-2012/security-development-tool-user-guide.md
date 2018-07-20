@@ -32,10 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Security Development Tool (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 | **Note**                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,7 +42,7 @@ The Security Development Tool for Microsoft Dynamics AX 2012 is intended to help
 
 
 
-See also
+Additional resources
 --------
 
 [Overview of the Security Development Tool user interface (AX 2012)](overview-security-development-tool-user-interface.md)

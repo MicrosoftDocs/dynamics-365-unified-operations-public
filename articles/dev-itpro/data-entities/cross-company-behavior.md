@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cross-company behavior
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about how data entities interact with the cross-company concept. To understand this aspect of data entities, you must understand how tables and views apply the cross-company concept. Therefore, this topic begins with a brief review of tables and views, and then explains how data entities are related.
 
@@ -47,17 +46,17 @@ Each table has a **SaveDataPerCompany** property, and each view has a **AllowCro
 | Property name          | SaveDataPerCompany                                                                                                                                                                                                                                                                                                                                                                              | AllowCrossCompany                                                                                                                                                                                                                                                                                                                    |
 | Relevant CRUD mode     | CUD                                                                                                                                                                                                                                                                                                                                                                                             | R                                                                                                                                                                                                                                                                                                                                    |
 | Timing of effect       | Run time, Design time                                                                                                                                                                                                                                                                                                                                                                           | Run time, mostly. At design time, this setting causes the view to have **dataAreaId** in its list of selected fields. However, the filter for a specific **dataAreaId** value is added later, at run time.                                                                                                                           |
-| Meaning of value = Yes | At design time, the system automatically *adds* a **dataAreaId** field to the table, even though the field isn't displayed in the Application Object Tree (AOT). Every record in the table is tagged with the company (or legal entity) that it belongs to. The system automatically *adds* a filter to the SQL **Where** clause to limit the returned set of rows to one **dataAreaId** value. | At run time, the system does *not* automatically add a filter for **dataAreaId** on the **Where** clause of the SQL **Select** statement that it sends to the underlying Microsoft SQL Server system. Therefore, SQL **Select** statements from the view can return a set of records that contains records for *multiple* companies. |
+| Meaning of value = Yes | At design time, the system automatically *adds* a **dataAreaId** field to the table, even though the field isn't displayed in the Application Object Tree (AOT). Every record in the table is tagged with the company (or legal entity) that it belongs to. The system automatically *adds* a filter to the SQL **Where** clause to limit the returned set of rows to one **dataAreaId** value. | At run time, the system does *not* automatically add a filter for **dataAreaId** on the **Where** clause of the SQL **Select** statement that it sends to the underlying Microsoft SQL Server system. Therefore, SQL **Select** statements from the view can return a set of records that contains records for *multiple* companies. |
 | Meaning of value = No  | The system does *not* add a **dataAreaId** field to the table. The table is said to be a shared table, because none of its records contain any formal company-specific data.                                                                                                                                                                                                                    | The system automatically *adds* a filter to the SQL **Where** clause to limit the returned set of rows to one **dataAreaId** value. However, the **AllowCrossCompany** property is ignored if the *root* data source of the view is a shared table.                                                                                  |
 
 ## Comparisons within AllowCrossCompany = No
 In the following screen shot, the **CustomerList** view has two data sources:
 
--   **Root** – CustTable, which has its **SaveDataPerCompany** property set to **Yes**.
+-   **Root** – CustTable, which has its **SaveDataPerCompany** property set to **Yes**.
 -   **Non-root** – DirPartyTable, which has its **SaveDataPerCompany** property set to **No**.
 
 [![root](./media/root.png)](./media/root.png) 
-The **CustomerList** view has its **AllowCrossCompany** property set to **No**, as shown in the following screen shot. 
+The **CustomerList** view has its **AllowCrossCompany** property set to **No**, as shown in the following screen shot. 
 [![crosscomp](./media/crosscomp.png)](./media/crosscomp.png) 
 Given the preceding information about the **CustomerList** view, the system creates the view in the underlying SQL Server system by generating and then running the following SQL **Create View** statement.
 
@@ -77,7 +76,7 @@ Given the preceding information about the **CustomerList** view, the system crea
 ### Making DirPartyTable the root data source
 
 [![dirpar](./media/dirpar.png)](./media/dirpar.png) 
-By swapping the positions of the two data source tables in the **CustomerList** view, you make the DirPartyTable table the root data source.
+By swapping the positions of the two data source tables in the **CustomerList** view, you make the DirPartyTable table the root data source.
 
     CREATE VIEW [dbo].[CUSTOMERLISTPARTY] 
     AS 
@@ -96,7 +95,7 @@ By swapping the positions of the two data source tables in the **CustomerList** 
 In this case, the SQL **Create View** statement is the same, except for the following two differences:
 
 -   The **FROM** clause mentions DirPartyTable first and CustTable second.
--   The **SELECT** column list does *not* include the line for **dataAreaId** (because DirPartyTable has its **SaveDataPerCompany** property set to **No**.)
+-   The **SELECT** column list does *not* include the line for **dataAreaId** (because DirPartyTable has its **SaveDataPerCompany** property set to **No**.)
 
 ## Limitations of tables and views
 In some cases, the cross-company control features of tables and views aren't as granular control as you might require. Here are the limitations:
@@ -107,7 +106,7 @@ In some cases, the cross-company control features of tables and views aren't as 
 For example, this might happen if the legal entity information is in **LegalEntityRecId**, or if shared tables don't have a **dataAreaId** column.
 
 ## Design time: Setting the PrimaryCompanyContext property
-Data entities help you overcome the limitations of tables and view where cross-company functionality is concerned. Data entities have a **PrimaryCompanyContext** property, where you can specify the entity field to use for company identification. This property provides flexibility and granular control in the following ways:
+Data entities help you overcome the limitations of tables and view where cross-company functionality is concerned. Data entities have a **PrimaryCompanyContext** property, where you can specify the entity field to use for company identification. This property provides flexibility and granular control in the following ways:
 
 -   The field can be from any data source of the entity and isn't limited to fields of the root data source.
 -   The field can be any field that is extended from the **DataAreaId** extended data type (EDT), and isn't limited to an underlying system **dataAreaId** field.
@@ -139,11 +138,11 @@ The following table describes the behavior of a data entity under CRUD access wh
 | Read (R)    | By default, results are *always* filtered by **dataAreaId** = current company, and cross-company data can be fetched by using the **crosscompany** option.                   | Results are *not* filtered by **dataAreaId**. The consumer must filter explicitly.                                                                                                                                    |
 | Write (CUD) | CUD access to the data entity always occurs in the context of the current company. If cross-company CUD access to the entity is required, use the **changeCompany** keyword. | CUD access to the entity can be accomplished by the consumer for any company by setting the value of the **PrimaryCompanyContext(myDataAreaId)** field. The framework handles the necessary **ChangeCompany** action. |
 
-The following X++ code example accesses **FMCustGroupEntity**, which has its **PrimaryCompanyContext** property set to **dataAreaId**. [![FMCust](./media/fmcust.png)](./media/fmcust.png) [![Snip](./media/snip-550x1024.png)](./media/snip.png)
+The following X++ code example accesses **FMCustGroupEntity**, which has its **PrimaryCompanyContext** property set to **dataAreaId**. [![FMCust](./media/fmcust.png)](./media/fmcust.png) [![Snip](./media/snip-550x1024.png)](./media/snip.png)
 
 ### X++ when PrimaryCompanyContext is empty
 
-When the **PrimaryCompanyContext** property is set on the data entity, a **dataAreaId** field is created in the view schema and mapped to the **PrimaryCompanyContext** field. The following table describes the behavior of a data entity under CRUD access when the **PrimaryCompanyContext** property is empty. Both X++ and OData accesses are described.
+When the **PrimaryCompanyContext** property is set on the data entity, a **dataAreaId** field is created in the view schema and mapped to the **PrimaryCompanyContext** field. The following table describes the behavior of a data entity under CRUD access when the **PrimaryCompanyContext** property is empty. Both X++ and OData accesses are described.
 
 |             | X++                                                                                                                              | OData                          |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
@@ -154,7 +153,7 @@ In the current example, the **FMCustomerGroupGlobalEntity** entity has no value 
 [![ent1](./media/ent1.png)](./media/ent1.png) 
 However, a **dataAreaId** field from the FMCustGroup table is mapped to the **FMCustomerGroupGlobalEntity** entity as a regular field that is named **LegalEntity**. In this example, the FMCustGroup table is the root data source for **FMCustomerGroupGlobalEntity**. However, we are using this **dataAreaId** field in an informal way that bypasses the automatic mechanisms of the system. All these details are shown in the following screen shot of the **LegalEntity** field.
 [![ent2](./media/ent2.png)](./media/ent2.png)
-**Note:** Although the terms *legal entity* and *data entity* both use the word *entity*, don't confuse them. Legal entities and data entities are two entirely different concepts. When the **PrimaryCompanyContext** property is empty, the SQL **Create View** statement usually contains no mention of a system **dataAreaId** column. However, in the current example, **dataAreaId** is "half-mentioned" because of the **LegalEntity** regular field on the data entity. This field is shown in the following SQL statement.
+**Note:** Although the terms *legal entity* and *data entity* both use the word *entity*, don't confuse them. Legal entities and data entities are two entirely different concepts. When the **PrimaryCompanyContext** property is empty, the SQL **Create View** statement usually contains no mention of a system **dataAreaId** column. However, in the current example, **dataAreaId** is "half-mentioned" because of the **LegalEntity** regular field on the data entity. This field is shown in the following SQL statement.
 
     CREATE VIEW [dbo].[FMCUSTOMERGROUPGLOBALENTITY] 
     AS 
@@ -175,7 +174,7 @@ This example has two purposes:
 
 ### Test data
 
-The following screen shot of the **Table browser** page shows the test data that is in the **FMCustomerGroupGlobalEntity** entity before the X++ test code is run. 
+The following screen shot of the **Table browser** page shows the test data that is in the **FMCustomerGroupGlobalEntity** entity before the X++ test code is run. 
 [![ent3](./media/ent3.png)](./media/ent3.png)
 
 ### X++ code

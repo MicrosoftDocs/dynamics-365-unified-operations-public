@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronize accounts directly from Sales to customers in Finance and Operations 
-description: This topic discusses the templates and underlying tasks that are used to synchronize accounts from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+description: This topic discusses the templates and underlying tasks that are used to synchronize accounts from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations. 
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/26/2017
@@ -26,19 +26,19 @@ ms.search.region: global
 
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update 
+ms.dyn365.ops.version: July 2017 update 
 ms.search.validFrom: 2017-07-8
 
 ---
 
 # Synchronize accounts directly from Sales to customers in Finance and Operations
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Before you can use the Prospect to cash solution, you should be familiar with [Dynamics 365 Data integration](/common-data-service/entity-reference/dynamics-365-integration).
 
-This topic discusses the templates and underlying tasks that are used to synchronize accounts directly from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic discusses the templates and underlying tasks that are used to synchronize accounts directly from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations.
 
 ## Data flow in Prospect to cash
 
@@ -116,7 +116,7 @@ The following illustrations show an example of a template mapping in Data integr
 
 [Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](contacts-template-mapping-direct.md)
 
-[Synchronize sales order headers and lines directly from Finance and Operations to Sales](sales-order-template-mapping-direct.md)
+[Synchronize sales order headers and lines directly from Finance and Operations to Sales](sales-order-template-mapping-direct-two-ways.md)
 
 [Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](sales-invoice-template-mapping-direct.md)
 

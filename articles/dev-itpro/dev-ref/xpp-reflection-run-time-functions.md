@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ reflection run-time functions
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the reflection run-time functions.
 
@@ -82,7 +81,7 @@ If the value of the *object* parameter is an array, the number of elements in th
 
 ### Remarks
 
-The **dimOf** function is intended for X++ arrays that are declared as the following X++ primitive types:
+The **dimOf** function is intended for X++ arrays that are declared as the following X++ primitive types:
 
 -   boolean
 -   date
@@ -120,7 +119,7 @@ An example is **int iAmounts\[6\];**. Arrays of enumeration values and extended 
             info("--(Next, dynamic int array, dimension not yet set.)");
             info(int2Str(dimOf(iCounts)));
             info("--(Next, dynamic int array, after dimension established.)");
-            
+
             iCounts[13] = 13;
             info(int2Str(dimOf(iCounts)));
             info(" == == == == == (Next, array types that dimOf() does not support.)");
@@ -169,7 +168,7 @@ An example is **int iAmounts\[6\];**. Arrays of enumeration values and extended 
     ***********/
 
 ## fieldId2Name
-Retrieves a string that represents the name of the field that is specified by a table ID number and a field ID number.
+Retrieves a string that represents the name of the field that is specified by a table ID number and a field ID number.
 
     str fieldId2Name(int tableid, int fieldid)
 
@@ -190,7 +189,7 @@ To return a printable version of the field name, use the **fieldId2PName** funct
 
 ### Example
 
-The following example sets **fn** to the name of the field in the Customer (CustGroup) table that has a field ID of 7.
+The following example sets **fn** to the name of the field in the Customer (CustGroup) table that has a field ID of 7.
 
     static void fieldId2NameExample(Args _arg)
     {

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Centralized payments for Accounts payable
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments. Therefore, the same payments don't have to be entered in multiple legal entities. This article provides examples that show how posting for centralized payments is handled in various scenarios.
 
@@ -46,7 +45,7 @@ The following examples illustrate how posting is handled in various scenarios. T
 -   The legal entities are Fabrikam, Fabrikam East, and Fabrikam West. Payments are made from Fabrikam.
 -   The **Post cash discount** field on the **Intercompany accounting** page is set to **Legal entity of the invoice**.
 -   The **Post currency exchange gain or loss** field on the **Intercompany accounting** page is set to **Legal entity of the payment**.
--   The vendor Fourth Coffee is set up as a vendor in each legal entity. The vendors from the various legal entities are identified as the same vendor because they share the same global address book ID.
+-   The vendor Fourth Coffee is set up as a vendor in each legal entity. The vendors from the various legal entities are identified as the same vendor because they share the same global address book ID.
 
 | Directory ID | Vendor account | Name          | Legal entity  |
 |--------------|----------------|---------------|---------------|
@@ -255,7 +254,7 @@ Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee. The paymen
 | Due to Fabrikam (Fabrikam West)  |              | 100.00        |
 
 ## Example 6: Vendor credit note without primary payment
-Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee. The payment is settled with an open invoice for Fabrikam West vendor 3004 and an open credit note for Fabrikam East vendor 100. The payment isn't selected as the primary payment on the **Settle transactions** page.
+Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee. The payment is settled with an open invoice for Fabrikam West vendor 3004 and an open credit note for Fabrikam East vendor 100. The payment isn't selected as the primary payment on the **Settle transactions** page.
 
 ### Invoice is posted to Fabrikam West for vendor 3004
 

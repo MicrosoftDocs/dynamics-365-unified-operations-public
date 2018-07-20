@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace
+ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 
 ms.search.scope: Core, Operations, Retail
 
@@ -26,7 +26,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: 
-ms.author: cvocph
+ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Product information overview
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This topic provides information about product information management. Product information management works with a shared product definition, categorization, and identifiers across all legal entities, and also specific configurations of a product, to fit into the business processes. 
 
@@ -63,7 +63,7 @@ A product is primarily defined by a product number, name, and description. Howev
 
 ## Distribution, export, and import of product data
 
-The product definition can be created in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It can also be imported from product lifecycle management (PLM), product data management (PDM), or product information management (PIM) systems. When more than one instance of Finance and Operations is used, one instance is typically used as the master of the product data for all other instances. This approach is supported by a large set of data entities that enable the export and import of product definition data from one instance to another.
+The product definition can be created in Microsoft Dynamics 365 for Finance and Operations. It can also be imported from product lifecycle management (PLM), product data management (PDM), or product information management (PIM) systems. When more than one instance of Finance and Operations is used, one instance is typically used as the master of the product data for all other instances. This approach is supported by a large set of data entities that enable the export and import of product definition data from one instance to another.
 
 To support the distribution of product data to many instances, Finance and Operations lets you use the Common Data Service. The product definitions can be exported from an instance of Finance and Operations to the Common Data Service. The product definitions can then be used to provision other business applications, such as Microsoft Dynamics 365 for Sales, with product data.
 

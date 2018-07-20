@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Work breakdown structures
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A work breakdown structure (WBS) is a description of the work that will be done for a project. It’s a hierarchy of tasks that represents the project team’s understanding of the composition of work, and of the size, cost, and duration of each component or task. A WBS has three major purposes:
 
@@ -127,7 +127,7 @@ The following factors determine the scheduling of leaf node tasks:
 
 The start date of a leaf node task that doesn’t have predecessors is automatically set to the project’s scheduling start date. The duration of a leaf node task is always calculated as the number of working days between its start and end dates. 
 
-****Scheduling rules**** 
+*<strong><em>Scheduling rules</em></strong>* 
 When automatic scheduling assistance is turned on, the following rules apply to task scheduling for leaf node tasks:
 
 -   The start and end dates of a task must be working days, according to the project’s scheduling calendar.

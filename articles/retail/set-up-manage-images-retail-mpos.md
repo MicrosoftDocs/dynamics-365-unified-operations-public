@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages, 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -33,19 +33,18 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Set up and manage images for Retail Modern POS
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 This article explains the steps that are involved in setting up and managing images for the various entities that appear in Retail Modern POS (MPOS).
 
 Setting up the media base URL and defining media templates to configure the format for image URLs
 -------------------------------------------------------------------------------------------------
 
-The images that appear in Retail Modern POS (MPOS) must be hosted externally, outside Microsoft Dynamics 365 for Retail. Typically, they are hosted in a content management system, content delivery network (CDN), or media server. MPOS then fetches and displays the images for the appropriate entities, such as products and catalogs, by accessing the target URL. To fetch these externally hosted images, MPOS requires the correct URL format for the images. You can configure the required URL format for the images by setting up the **Media base URL** value in the channel profile and using the **Define media template** functionality for each entity. You can also overwrite the standard URL format for a subset of entities by using the **Edit in Excel** functionality. **Important note:** In the current version of Dynamics 365 for Retail, you can no longer set up the URL format by using the **Image** attribute XML for MPOS in the **Default** attribute group for entities. If you're familiar with Microsoft Dynamics AX 2012 R3 and are now using the current version of Dynamics 365 for Retail, make sure that you always use the new **Define media template** functionality to set up images. Don't use or modify the **Image** attribute in the **Default** attribute group for any entities, including products. Changes that you make directly in the **Default** attribute group for images won't be reflected. This option will be disabled in a future release. In the following procedures, images are set up for the Catalog entity as an example. These procedures will help guarantee that the correct image destination path is set implicitly for all catalog images that use a common path. For example, if you've set up a media server or CDN externally, and want the images to appear in MPOS for a given store, the **Define media template** functionality helps you the set the path where MPOS can look up and retrieve the images. **Note:** For this demo data example, the media server is deployed on the Retail Server. However, you can have it anywhere outside Dynamics 365 for Retail.
+The images that appear in Retail Modern POS (MPOS) must be hosted externally, outside Microsoft Dynamics 365 for Retail. Typically, they are hosted in a content management system, content delivery network (CDN), or media server. MPOS then fetches and displays the images for the appropriate entities, such as products and catalogs, by accessing the target URL. To fetch these externally hosted images, MPOS requires the correct URL format for the images. You can configure the required URL format for the images by setting up the **Media base URL** value in the channel profile and using the **Define media template** functionality for each entity. You can also overwrite the standard URL format for a subset of entities by using the **Edit in Excel** functionality. **Important note:** In the current version of Dynamics 365 for Retail, you can no longer set up the URL format by using the **Image** attribute XML for MPOS in the **Default** attribute group for entities. If you're familiar with Microsoft Dynamics AX 2012 R3 and are now using the current version of Dynamics 365 for Retail, make sure that you always use the new **Define media template** functionality to set up images. Don't use or modify the **Image** attribute in the **Default** attribute group for any entities, including products. Changes that you make directly in the **Default** attribute group for images won't be reflected. This option will be disabled in a future release. In the following procedures, images are set up for the Catalog entity as an example. These procedures will help guarantee that the correct image destination path is set implicitly for all catalog images that use a common path. For example, if you've set up a media server or CDN externally, and want the images to appear in MPOS for a given store, the **Define media template** functionality helps you the set the path where MPOS can look up and retrieve the images. **Note:** For this demo data example, the media server is deployed on the Retail Server. However, you can have it anywhere outside Dynamics 365 for Retail.
 
 ### Set up the media base URL for a channel
 
-1.  Open the Dynamics 365 for Retail HQ portal.
+1.  Open the Dynamics 365 for Retail HQ portal.
 2.  Click **Retail** &gt; **Channel setup** &gt; **Channel profiles**. [![channel-profile1](./media/channel-profile1.png)](./media/channel-profile1.png)
 3.  In the channel profile that your store uses for MPOS, update the **Media base URL** field with the base URL of your media server or CDN. The base URL is the first part of the URL that is shared by all image folders of different entities.[![channel-profile2](./media/channel-profile2.png)](./media/channel-profile2.png)
 
@@ -67,7 +66,7 @@ The images that appear in Retail Modern POS (MPOS) must be hosted externally, ou
 3.  You can use the **Add** and **Remove** buttons to manually change the path that is based on the implicit template and used for a specific image. For more information, see the "Overwriting the media template for entity items" section later in this article.
 4.  After you've finished previewing an image and making any changes that you require, start the MPOS instance for the appropriate store, and see whether the catalog images are shown.[![catalog4](./media/catalog4.png)](./media/catalog4.png)
 
-**Note:** You can use the same procedure for all the five entities that are supported: Worker, Customer, Catalog, Category, and Products. "Catalog Products" (products that are set at the catalog level) and "Channel Products" (products that are set at the channel level) use the media template that is set for the Products entity. For the Products media template, you can select the number of product images to show per product. You can also set the default image for a given product. In this way, you can prevent blank images in MPOS and help to control which image is used as the default image for a product item. In the following example, each product has five images, and the first image is set as the default image. Variant products are treated the same way as master products. The file name of the image file should be based on the product number. Some characters are also escaped while the file name is generated. Therefore, it's a good to verify the file name by using the **Generate Image URLs for Excel** section. [![prods](./media/prods.png)](./media/prods.png)  
+**Note:** You can use the same procedure for all the five entities that are supported: Worker, Customer, Catalog, Category, and Products. "Catalog Products" (products that are set at the catalog level) and "Channel Products" (products that are set at the channel level) use the media template that is set for the Products entity. For the Products media template, you can select the number of product images to show per product. You can also set the default image for a given product. In this way, you can prevent blank images in MPOS and help to control which image is used as the default image for a product item. In the following example, each product has five images, and the first image is set as the default image. Variant products are treated the same way as master products. The file name of the image file should be based on the product number. Some characters are also escaped while the file name is generated. Therefore, it's a good to verify the file name by using the **Generate Image URLs for Excel** section. [![prods](./media/prods.png)](./media/prods.png)  
 
 ## Synchronization jobs to send a media template to the channel side
 For all the five supported entities (Worker, Customer, Catalog, Category, and Products), whenever you update the **Define media template** dialog to set up an image, make sure that you run the Catalog job (1150) from **Retail IT** &gt; **Distribution schedule**. This job will enable the updated media template to be synced to the channel and used by MPOS. Run the Catalog job (1150) after you make any of the following changes:
@@ -145,7 +144,7 @@ The product images that must be used in Offline mode can be set up by uploading 
 6.  While MPOS is in Online mode, run the Catalog job in HQ, to make sure that the data is sent at least one time to the offline database.
 7.  Put MPOS into Offline mode. You should see the image that you uploaded for the specific product in HQ. [![offline1](./media/offline1.png)](./media/offline1.png)
 
- 
+
 
 ### Set up catalog, category, employee, and customer images to appear in Offline mode for MPOS
 
@@ -157,7 +156,7 @@ The catalog, category, employee, and customer images that must be used in Offlin
 4.  Run the Catalog job. This image will now be used as the Offline image for that catalog in MPOS.
 5.  Follow a similar process for other entities, such as Category, Employee, and Customer.
 
-[![offline2](./media/offline2.png)](./media/offline2.png)    
+[![offline2](./media/offline2.png)](./media/offline2.png)    
 
 
 

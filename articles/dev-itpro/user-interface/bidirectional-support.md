@@ -32,13 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Right-to-left language support and bidirectional text
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. This article discusses the issue of bidirectional text and how it's handled.
 
-A great example of right-to-left language support: Microsoft Word
------------------------------------------------------------------
+## A great example of right-to-left language support: Microsoft Word
 
 In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. One example of a program that implements this functionality correctly is Microsoft Word. If you're trying to understand the correct behavior of mixed language presentation, you can use Word for validation. The problem is that most software just implements the Unicode standard to display bidirectional data, without evaluating how that data is actually used. Additionally, there's no attempt to provide the interactive experience that the user actually requires. 
 
@@ -47,7 +45,7 @@ To understand how Word “gets it right” and provides a great experience, you 
 Keeping track of character orientation in a financial program that might record billions of transactions and multi-billions of characters would produce significant transnational and spatial overhead if we stored contextual information for each character. Therefore, this behavior would be considered only for special conditions.
 
 ## Bidirectional text
-To support Arabic and Hebrew, both of which are RTL languages, there is an RTL orientation for the controls in each form, so that an RTL reader can interact with the form in a natural reading manner. For the most part, RTL orientation of the controls works as expected and provides RTL users with the experience that they expect. Finance and Operations and modern browsers support RTL orientation, and Finance and Operations conforms to that functionality. However, in some cases, extensible controls (custom controls) require special code to orient their elements correctly. 
+To support Arabic and Hebrew, both of which are RTL languages, there is an RTL orientation for the controls in each form, so that an RTL reader can interact with the form in a natural reading manner. For the most part, RTL orientation of the controls works as expected and provides RTL users with the experience that they expect. Finance and Operations and modern browsers support RTL orientation, and Finance and Operations conforms to that functionality. However, in some cases, extensible controls (custom controls) require special code to orient their elements correctly. 
 
 A point of reference in this article is the Win32 CEdit control, which is used primarily for standard text entry (account name, description, user name, and so on, in Microsoft Dynamics AX 2012). The behavior of the HTML Input control mimics the functionality of the CEdit control. Therefore, the same behavior applies to Finance and Operations. 
 
@@ -55,9 +53,9 @@ The CEdit control is a Win32 control that is governed by the rules for bidirecti
 
 When you evaluate the examples in this article, remember that, regardless of the orientation of the form (RTL or LTR), the actual text that is presented is never reversed or “mirrored.” English text is always read LTR and Arabic/Hebrew text is always read RTL. When LTR and RTL text are combined, the reader must jump to the beginning of the run of characters in a given orientation. For example, when a mixed string is read from right to left, the individual words might be read like this: 
 
-**–––––&gt;  &lt;–––––  –––––&gt;  &lt;–––––** 
+**–––––&gt;  &lt;–––––  –––––&gt;  &lt;–––––** 
 
-**English  Arabic  English  Arabic**
+**English  Arabic  English  Arabic**
 
 ## English and Arabic/Hebrew text together: Bidirectional issues
 The visual presentation (glyphs) of English, Arabic, and Hebrew characters on the corresponding keyboards clearly differ. However, those three keyboards also share some symbols. These symbols include numerals, and formatting characters such as parentheses, brackets, and underscores. According to the Unicode bidirectional algorithm, when these characters are used in a bidirectional string, their RTL/LTR orientation depends on **the context of the characters that surround them**. From the Unicode standard (<http://www.unicode.org/versions/Unicode5.1.0/>): 
@@ -121,18 +119,17 @@ Numbers are read from left to right in Arabic and Hebrew. “Item” numbers, re
 **Workarounds:**
 
 -   When you're using an English keyboard, use a different delimiter. For example, enter **123.456** or **123/456**.
--   When you're using a Hebrew keyboard, use a different delimiter. For example, enter **123.456**. The slash character (/) on a Hebrew keyboard produces a period (.).
+-   When you're using a Hebrew keyboard, use a different delimiter. For example, enter **123.456**. The slash character (/) on a Hebrew keyboard produces a period (.).
 
 **Recommendation:** None of the off-the-shelf controls provide the requested behavior. One alternative is to identify fields that must allow for this directional formatting and flag those fields as LTR for data input (right-aligned for display purposes). The program can't automatically determine that a field must have this behavior. Therefore, if we expose an RTL/LTR flag, a customizer can modify targeted fields for the desired behavior. Although this approach enables this specific scenario, it's important to understand that, if you extend the scenario by using characters in a combination of RTL and LTR languages, you will introduce other issues. Another alternative is to educate users about the fundamental behavior when underscore characters and numbers are used together. When underscore characters and numbers are required, users can then use a workaround to obtain the desired display behavior. 
 
-**Note:** The underscore character doesn't present an issue when you combine English and RTL languages (pattern: RTL\_LTR\_RTL). Therefore, if you force a control to LTR when the input includes numbers/text/underscore characters, the behavior won't be as expected. Users will have to manually reposition the cursor after each use of an underscore when they type RTL text. However, the behavior will be as expected for the use of numbers/text/underscore characters. 
+**Note:** The underscore character doesn't present an issue when you combine English and RTL languages (pattern: RTL\_LTR\_RTL). Therefore, if you force a control to LTR when the input includes numbers/text/underscore characters, the behavior won't be as expected. Users will have to manually reposition the cursor after each use of an underscore when they type RTL text. However, the behavior will be as expected for the use of numbers/text/underscore characters. 
 
 **Hebrew:** קשגכ\_english\_יקנקרק 
 
 **Arabic:** شقلاهؤ\_english\_شقشلاهؤ
 
-Issue: The hyphen used together with numbers: Language-specific behavior
-========================================================================
+## Issue: The hyphen used together with numbers: Language-specific behavior
 
 **Description:** LTR is expected for Hebrew, whereas RTL is expected for Arabic. 
 
@@ -153,13 +150,13 @@ The Unicode standard doesn’t provide for language-specific or keyboard-specifi
 **Workarounds for the Hebrew user:**
 
 -   Don't type hyphens between the numbers. For example, if you type 1 2 3-A-B-C on a Hebrew keyboard, it appears in RTL as C-B-A-3 2 1. You should assume that the ABC order is correct for Hebrew, which is an RTL language. The English ABC text is reversed here for demonstrative purposes.
--   Use a different delimiter between the numbers. For example, the slash character (/)  on a Hebrew keyboard produces a period (.).
+-   Use a different delimiter between the numbers. For example, the slash character (/)  on a Hebrew keyboard produces a period (.).
 
 **Recommendation:** This pattern is an issue for Hebrew users who want to use numbers or hyphens in item names. Therefore, a global solution might not be appropriate, because there are exceptions. Phone numbers, Social Security numbers, and other source document identification numbers are always read LTR. 
 
 The WPF RichTxt control provides the desired behavior according to the strict guidance. However, it isn't clear that this behavior is always the desired behavior. That is, phone numbers, US Social Security numbers, and so on, should always be read and appear in LTR order, regardless of the language orientation. The alternative is to identify fields that must enable this behavior. The program can't automatically determine that a field must have this behavior. Therefore, you might have to use a descriptive property on the control, so that users can specify “Structured Formatting.” If none of these approaches can be achieved, you must educate Hebrew users about the fundamental behavior when hyphens are used together with numbers. Users can then use one of the preceding workarounds to get the desired display behavior, by omitting the hyphens between numbers. 
 
-**Hebrew example:** (Desired and correct Operations for both Arabic and the Hebrew example in Hebrew) 
+**Hebrew example:** (Desired and correct Operations for both Arabic and the Hebrew example in Hebrew) 
 
 **Pattern:** First (עברית) hyphen second (English) hyphen third (שלום) hyphen forth (Hello) 
 
@@ -191,8 +188,7 @@ There is an issue with phone numbers if you try to use a US pattern that include
 
 **Recommendation:** Expose an RTL flag for controls or an extended data type for phone numbers. A customizer can force the control into LTR mode. This approach will let users enter values in the order that they want.
 
-Issue: LTR text combined with neutral characters in RTL input
-=============================================================
+## Issue: LTR text combined with neutral characters in RTL input
 
 **Description:** English text is combined with parentheses or other neutral characters. 
 

@@ -18,7 +18,7 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
@@ -32,15 +32,14 @@ ms.dyn365.ops.version: Version 1611
 
 # Column definitions in financial reports
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about column definitions. A column definition is a report component, or building block, that defines the contents of columns on a report. Like row definitions, basic column definitions can be used on multiple reports.
 
 Create and modify a column definition
 -------------------------------------
 
-A column definition can contain two to 255 columns.
+A column definition can contain two to 255 columns.
 
 ### Create a column definition
 
@@ -56,7 +55,7 @@ A column definition can contain two to 255 columns.
 ### Add a column to a column definition
 
 1.  In Report Designer, click **Column Definitions**, and then open the column definition to modify.
-2.  Select the column where a new column should be inserted.
+2.  Select the column where a new column should be inserted.
 3.  On the **Edit** menu, click **Insert Column**. The new column appears to the left of the column that you selected.
 
 ### Delete a column from a column definition
@@ -69,13 +68,13 @@ A column definition can contain two to 255 columns.
 A column definition includes the following information:
 
 -   A column of the descriptions for the row definition
--   Amount columns that show data from the financial data, a Microsoft Excel worksheet, or calculations that are based on other data in the column definition
+-   Amount columns that show data from the financial data, a Microsoft Excel worksheet, or calculations that are based on other data in the column definition
 -   Formatting columns
 -   Attribute columns
 
 This information appears in the following areas in the column definition:
 
--   The headers area of the column definition contains the heading text and formatting that appears in the report. A header can apply to a single column of data, can span multiple columns, or can apply to columns on a conditional basis. The column definition can include as many column header rows as you require. **Note:** Column headers apply to each column of data on the report. Report headers apply to the whole report. You define report headers on the **Headers and Footers** tab of the report definition.
+-   The headers area of the column definition contains the heading text and formatting that appears in the report. A header can apply to a single column of data, can span multiple columns, or can apply to columns on a conditional basis. The column definition can include as many column header rows as you require. **Note:** Column headers apply to each column of data on the report. Report headers apply to the whole report. You define report headers on the **Headers and Footers** tab of the report definition.
 -   Column detail rows are the rows under the header rows in the column definition. Column detail rows define the information that is included on the report. The following table lists and describes the column detail rows.
 
     | Column detail row name                                                | Description                                                                                            |
@@ -119,8 +118,8 @@ The following table describes the column restriction codes.
 | CR                      | Restrict the amounts in an **FD** column to credit amounts.                                                                                                                                                                                                                                                                             |
 | ADJ                     | Restrict the amounts in the column to period adjustment amounts, if these amounts are available.                                                                                                                                                                                                                                        |
 | XAD                     | Restrict the amounts in the column, so that period adjustment amounts are excluded.                                                                                                                                                                                                                                                     |
-| PT                      | Restrict the amounts in the column, so that only posted transactions are included, if these transactions are available.                                                                                                                                                                                                                 |
-| UPT                     | Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available. **Note:** Not all data providers support unposted transactions. For more information, see the [data integration guide](http://go.microsoft.com/fwlink/?LinkID=162565) for your Microsoft Dynamics ERP system. |
+| PT                      | Restrict the amounts in the column, so that only posted transactions are included, if these transactions are available.                                                                                                                                                                                                                 |
+| UPT                     | Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available. **Note:** Not all data providers support unposted transactions. For more information, see the [data integration guide](http://go.microsoft.com/fwlink/?LinkID=162565) for your Microsoft Dynamics ERP system. |
 
 ### Restrict a column to a reporting unit
 
@@ -162,27 +161,28 @@ You can use the **Column Header** dialog box to add, modify, and delete the head
 ### Delete a column header row
 
 1.  In Report Designer, open the column definition to modify.
-2.  In the header row, select the cell to delete.
+2.  In the header row, select the cell to delete.
 3.  On the **Edit** menu, click **Delete Row**.
 
 ### Create an automatically generated header
 
-Report designer can automatically generate column headers, based on autotext codes. Autotext codes are variables that are updated every time that a report is generated. Any column header can include these codes to specify report information that can vary, such as dates or period numbers. Therefore, you can use one column definition for multiple report definitions, time periods, and reporting trees. Because autotext codes rely on the calendar information from the detail rows of the column definition, they are supported only for **CALC**, **FD**, and **WKS** columns. The way that an autotext code appears in the column header cell affects how that information appears on the report. In the **Column Header** dialog box, the autotext codes appear in mixed case. Therefore, the text appears in mixed case on the report. For example, in a standard calendar year, **@CalMonthLong** resolves month **7** to **July**. If the name of the month should be uppercase (for example **JULY**), enter the autotext code in uppercase characters in the **Column header text** field. For example, enter **@CALMONTHLONG**. You can mix codes and text. For example, you enter the following header text: **Period @FiscalPeriod-@FiscalYear from @StartDate to @EndDate**. The report heading that is generated resembles the following text: **Period 1-02 from 01/01/02 to 01/31/02**. **Note:** The format of some of the text, such as the long date, depends on your regional settings on the Finance and Operations server. To change these settings, click the **Start** button, click **Control Panel**, and then click **Region and Language**. The following table lists the available autotext options for column headers.
+Report designer can automatically generate column headers, based on autotext codes. Autotext codes are variables that are updated every time that a report is generated. Any column header can include these codes to specify report information that can vary, such as dates or period numbers. Therefore, you can use one column definition for multiple report definitions, time periods, and reporting trees. Because autotext codes rely on the calendar information from the detail rows of the column definition, they are supported only for <strong>CALC</strong>, <strong>FD</strong>, and <strong>WKS</strong> columns. The way that an autotext code appears in the column header cell affects how that information appears on the report. In the <strong>Column Header</strong> dialog box, the autotext codes appear in mixed case. Therefore, the text appears in mixed case on the report. For example, in a standard calendar year, <strong>@CalMonthLong</strong> resolves month <strong>7</strong> to <strong>July</strong>. If the name of the month should be uppercase (for example <strong>JULY</strong>), enter the autotext code in uppercase characters in the <strong>Column header text</strong> field. For example, enter <strong>@CALMONTHLONG</strong>. You can mix codes and text. For example, you enter the following header text: <strong>Period @FiscalPeriod-@FiscalYear from @StartDate to @EndDate</strong>. The report heading that is generated resembles the following text: <strong>Period 1-02 from 01/01/02 to 01/31/02</strong>. <strong>Note:</strong> The format of some of the text, such as the long date, depends on your regional settings on the Finance and Operations server. To change these settings, click the <strong>Start</strong> button, click <strong>Control Panel</strong>, and then click <strong>Region and Language</strong>. The following table lists the available autotext options for column headers.
 
-| Autotext option and code                | Description                                                                                                                                                                                                                                                                                      |
+
+|        Autotext option and code         |                                                                                                                                           Description                                                                                                                                            |
 |-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Month name (@CalMonthLong)              | Print the name of the current month in the column heading. If you decide to round the amounts in the report to thousands, millions, or billions, or if you set the column width on the report to fewer than nine characters, the name of the month is abbreviated to the first three characters. |
-| Abbreviated month name (@CalMonthShort) | Print the abbreviated name of the month for the selected fiscal period.                                                                                                                                                                                                                          |
-| Period number (@FiscalPeriod)           | Print the numeric form of the fiscal period that is identified for that column. If the column spans multiple periods, the last period in the range is printed.                                                                                                                                   |
-| Period description (@FiscalPeriodName)  | Print the fiscal period description that is identified in the financial data.                                                                                                                                                                                                                    |
-| Fiscal year (@FiscalYear)               | Print the fiscal year for the column in numeric form.                                                                                                                                                                                                                                            |
-| Calendar year (@CalYear)                | Print the calendar year for the column in numeric form.                                                                                                                                                                                                                                          |
-| Start date (@StartDate)                 | Print the start date for the column.                                                                                                                                                                                                                                                             |
-| End Date (@EndDate)                     | Print the end date for the column.                                                                                                                                                                                                                                                               |
-| Unit name from tree (@UnitName)         | If you restrict a column to a specific unit of the reporting tree, print the unit name in the column header.                                                                                                                                                                                     |
-| Unit description (@UnitDesc)            | If you restrict a column to a specific unit of the reporting tree, print the unit description in the column header.                                                                                                                                                                              |
-| Book Code (@BookCode)                   | Print the book code that is specified in the column.                                                                                                                                                                                                                                             |
-| Blank line (@Blank)                     | Insert an empty line in the column header.                                                                                                                                                                                                                                                       |
+|       Month name (@CalMonthLong)        | Print the name of the current month in the column heading. If you decide to round the amounts in the report to thousands, millions, or billions, or if you set the column width on the report to fewer than nine characters, the name of the month is abbreviated to the first three characters. |
+| Abbreviated month name (@CalMonthShort) |                                                                                                             Print the abbreviated name of the month for the selected fiscal period.                                                                                                              |
+|      Period number (@FiscalPeriod)      |                                                                  Print the numeric form of the fiscal period that is identified for that column. If the column spans multiple periods, the last period in the range is printed.                                                                  |
+| Period description (@FiscalPeriodName)  |                                                                                                          Print the fiscal period description that is identified in the financial data.                                                                                                           |
+|        Fiscal year (@FiscalYear)        |                                                                                                                      Print the fiscal year for the column in numeric form.                                                                                                                       |
+|        Calendar year (@CalYear)         |                                                                                                                     Print the calendar year for the column in numeric form.                                                                                                                      |
+|         Start date (@StartDate)         |                                                                                                                               Print the start date for the column.                                                                                                                               |
+|           End Date (@EndDate)           |                                                                                                                                Print the end date for the column.                                                                                                                                |
+|     Unit name from tree (@UnitName)     |                                                                                           If you restrict a column to a specific unit of the reporting tree, print the unit name in the column header.                                                                                           |
+|      Unit description (@UnitDesc)       |                                                                                       If you restrict a column to a specific unit of the reporting tree, print the unit description in the column header.                                                                                        |
+|          Book Code (@BookCode)          |                                                                                                                       Print the book code that is specified in the column.                                                                                                                       |
+|           Blank line (@Blank)           |                                                                                                                            Insert an empty line in the column header.                                                                                                                            |
 
 ### Create a conditional spanning header
 
@@ -198,8 +198,8 @@ Conditional spanning headers can span multiple columns that are based on specifi
 1.  In Report Designer, open the column definition to modify.
 2.  Double-click a header cell.
 3.  In the **Column Header** dialog box, enter the column header text. Alternatively, click **Insert AutoText**, and select an option.
-4.   In the **Format options** field, select a formatting style for the header.
-5.  Specify a period relative to the base period that is specified when the report is generated. In the **Spread from** and **Spread to** fields, enter one of the following values: **BASE**, **BASE-X** or **BASE+X**, where X is the number of periods from the base period. For example, if you enter **BASE** in the **Spread from** field, the conditional spanning column header text starts in the column header where the report definition's **Base period** value equals the column definition's **Period** value. It ends in the column that is indicated in the **Spread to** field. Therefore, if the spread is BASE to M, and the report definition's **Base period** value is **4**, the header starts in the column where the period is set to **4** and ends at column M. Headers stop and start on printing columns only.
+4.   In the **Format options** field, select a formatting style for the header.
+5.  Specify a period relative to the base period that is specified when the report is generated. In the **Spread from** and **Spread to** fields, enter one of the following values: **BASE**, **BASE-X** or **BASE+X**, where X is the number of periods from the base period. For example, if you enter **BASE** in the **Spread from** field, the conditional spanning column header text starts in the column header where the report definition's **Base period** value equals the column definition's **Period** value. It ends in the column that is indicated in the **Spread to** field. Therefore, if the spread is BASE to M, and the report definition's **Base period** value is **4**, the header starts in the column where the period is set to **4** and ends at column M. Headers stop and start on printing columns only.
 6.  Under **Justification**, select whether the column header text should be left-justified, center-justified, or right justified.
 7.  Click **OK**.
 
@@ -207,18 +207,19 @@ Conditional spanning headers can span multiple columns that are based on specifi
 
 Phyllis is creating a report for a dynamic six-month forecast. She wants the word "Actual" to be printed over the columns that contain actual data, and the word "Budget" to be printed over the columns that contain budget forecasts. Each month that the report is run, there is one more actual column and one less budget column. Although Phyllis can modify the column definition manually each time that the report is generated to adjust the headers, to save time and effort, she decides to create conditional spanning headers that will automatically create headers over the appropriate columns each time that the report is run. Phyllis opens Report Designer, clicks **Column Definition** in the navigation pane, and opens the column definition for the report. She then enters the following information. The base period in the report definition is 4.
 
-|                     | A    | B             | C             | D             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
+
+|                     |  A   |       B       |       C       |       D       |       E       |       F       |       G       |       H       |       I       |       J       |       K       |       L       |       M       |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-| Header 1            |      | Actual        | Budget        |               |               |               |               |               |               |               |               |               |               |
-| Header 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
-| Header 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
-| Column Type         | DESC | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
-| Book Code/Attribute |      | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    |
-| Fiscal Year         |      | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          |
-| Period              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
-| Periods Covered     |      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      |
-| Column Width        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
-| Print Control       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
+|      Header 1       |      |    Actual     |    Budget     |               |               |               |               |               |               |               |               |               |               |
+|      Header 2       |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
+|      Header 3       |      |               |               |               |               |               |               |               |               |               |               |               |               |
+|     Column Type     | DESC |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |      FD       |
+| Book Code/Attribute |      |    ACTUAL     |  BUDGET2012   |    ACTUAL     |  BUDGET2012   |    ACTUAL     |  BUDGET2012   |    ACTUAL     |  BUDGET2012   |    ACTUAL     |  BUDGET2012   |    ACTUAL     |  BUDGET2012   |
+|     Fiscal Year     |      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |     BASE      |
+|       Period        |      |       1       |       1       |       2       |       2       |       3       |       3       |       4       |       4       |       5       |       5       |       6       |       6       |
+|   Periods Covered   |      |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |   PERIODIC    |
+|    Column Width     |  30  |      10       |      10       |      10       |      10       |      10       |      10       |      10       |      10       |      10       |      10       |      10       |      10       |
+|    Print Control    |      |    P&lt;=B    |    P&gt;B     |    P&lt;=B    |    P&gt;B     |    P&lt;=B    |    P&gt;B     |    P&lt;=B    |    P&gt;B     |    P&lt;=B    |    P&gt;B     |    P&lt;=B    |    P&gt;B     |
 
 Phyllis double-clicks a column header cell to open the **Column Header** dialog box, where she enters the following information.
 
@@ -250,7 +251,7 @@ The **Justification** cell is used to apply justification formatting to a descri
 
 1.  In Report Designer, open the column definition to modify.
 2.  Double-click the **Justification** cell.
-3.  Select one of the following values in the list:
+3.  Select one of the following values in the list:
     -   **None** – No justification is applied.
     -   **Left** – Left-align the column descriptions.
     -   **Center** – Center-align the column descriptions.
@@ -266,16 +267,16 @@ In the column definition, the formatting column detail rows apply special format
 
 ### Changing the column width
 
-The **Column Width** cell specifies the number of characters to use for the width of this column on the printed report. Column width is important for columns that contain amounts (columns of the **CALC**, **WKS**, or **FD** type), descriptions (columns of the **DESC** type), or fill (columns of the **FILL** type). By default, the **AutoFit** option is selected, so that the width of each column is automatically adjusted to fit the contents.
+The **Column Width** cell specifies the number of characters to use for the width of this column on the printed report. Column width is important for columns that contain amounts (columns of the **CALC**, **WKS**, or **FD** type), descriptions (columns of the **DESC** type), or fill (columns of the **FILL** type). By default, the **AutoFit** option is selected, so that the width of each column is automatically adjusted to fit the contents.
 
 #### Specify the width of a column on a report
 
 1.  In Report Designer, open the column definition to modify.
-2.  In the **Column Width** cell, enter the number of spaces for the width of the column. The maximum width of any column is 255 characters (this number includes cents, commas, and parentheses). Alternatively, to enable report designer to select the appropriate width for the column, based on the cell content, double-click the **Column Width** cell, and then click **AutoFit**.
+2.  In the **Column Width** cell, enter the number of spaces for the width of the column. The maximum width of any column is 255 characters (this number includes cents, commas, and parentheses). Alternatively, to enable report designer to select the appropriate width for the column, based on the cell content, double-click the **Column Width** cell, and then click **AutoFit**.
 
 ### Add space between columns
 
-The **Extra Spaces Before Column** cell specifies the width of the separator between one column and adjacent columns in the column definition. The **Extra Spaces Before Column** setting affects all column detail rows for the column, but not the column header rows. Use this option to separate groups of columns or to add a few spaces before the description, so that the description column is indented from the left-aligned titles on the report. The default number of spaces between each column is two. You can change this setting on the **Settings** tab in the report definition.
+The **Extra Spaces Before Column** cell specifies the width of the separator between one column and adjacent columns in the column definition. The **Extra Spaces Before Column** setting affects all column detail rows for the column, but not the column header rows. Use this option to separate groups of columns or to add a few spaces before the description, so that the description column is indented from the left-aligned titles on the report. The default number of spaces between each column is two. You can change this setting on the **Settings** tab in the report definition.
 
 #### Specify the space between columns
 
@@ -294,19 +295,19 @@ The **Format/Currency Override** cell specifies the formatting of the decimal, c
 
 ### Add a print control code
 
-The **Print Control** cell can contain codes that adjust the display or the printing characteristics of a column. There are two types of print control codes: regular print control codes and conditional print control codes.
+The **Print Control** cell can contain codes that adjust the display or the printing characteristics of a column. There are two types of print control codes: regular print control codes and conditional print control codes.
 
 #### Regular print control codes
 
 | Print control code | Translation                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |--------------------|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | NP                 | Nonprinting                                     | Exclude the amounts in this column from the report that is printed and from calculations. To include a non-printing column in a calculation, refer to the column directly in the calculation formula. For example, the non-printing column C is included in the following calculation: **B+C+D**. However, the non-printing column C isn't included in the following calculation: **B:D**.                                                                                                                                          |
-| XCR                | Change sign if typical balance of row is credit | Create a budget or comparative report where any unfavorable variance (such as a revenue shortfall or an expense overrun) is always negative. Apply this code to a **CALC** column to reverse the sign of the column amount if the typical balance of a given row is a credit (as identified by a **C** in the **Normal Balance** column of the row definition). **Note:** For **TOT** rows and **CAL** rows that typically carry a credit balance, be sure to enter a **C** in the **Normal Balance** column in the row definition. |
+| XCR                | Change sign if typical balance of row is credit | Create a budget or comparative report where any unfavorable variance (such as a revenue shortfall or an expense overrun) is always negative. Apply this code to a **CALC** column to reverse the sign of the column amount if the typical balance of a given row is a credit (as identified by a **C** in the **Normal Balance** column of the row definition). **Note:** For **TOT** rows and **CAL** rows that typically carry a credit balance, be sure to enter a **C** in the **Normal Balance** column in the row definition. |
 | X0                 | Suppress column if all zeros or blanks          | Exclude an **FD** column from the report if all cells in that column are either empty or contain zeros.                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | SR                 | Suppress rounding                               | Prevent the amounts in this column from being rounded.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | XR                 | Suppress rollup                                 | Suppress a rollup. If the report uses a reporting tree, the amounts in this column aren't rolled up into subsequent parent nodes.                                                                                                                                                                                                                                                                                                                                                                                                   |
 | RP                 | Repeat column on each page                      | Repeat a specified column on each page of a report. For example, you can use the **RP** print control code to include a column of the **ROW** type that pulls in row codes on every page.                                                                                                                                                                                                                                                                                                                                           |
-| WT                 |  Wrap text                                      |  If the text in a column is too long to fit the space, wrap the text to keep all the text in the column.                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| WT                 |  Wrap text                                      |  If the text in a column is too long to fit the space, wrap the text to keep all the text in the column.                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 #### Conditional print control codes
 
@@ -353,7 +354,7 @@ The type of information that each column on a report includes is specified by th
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>Display financial data or data from an Excel worksheet when you use a <strong>Link to Financial Dimensions</strong> column or a <strong>Link to Worksheet</strong> column in the row definition. When you select the <strong>FD</strong> column type, default settings are automatically specified for the following rows:
+    <td>Display financial data or data from an Excel worksheet when you use a <strong>Link to Financial Dimensions</strong> column or a <strong>Link to Worksheet</strong> column in the row definition. When you select the <strong>FD</strong> column type, default settings are automatically specified for the following rows:
     <ul>
     <li><strong>Book Code/Attribute Category:</strong> ACTUAL</li>
     <li><strong>Book Code/Attribute Category:</strong> ACTUAL</li>
@@ -366,11 +367,11 @@ The type of information that each column on a report includes is specified by th
     </tr>
     <tr class="even">
     <td>CALC</td>
-    <td>Display the result of a simple or complex calculation that is specified in the <strong>Formula</strong> cell. For more information, see <a href="advanced-formatting-options-financial-reporting.md">Advanced formatting options in financial reporting</a>.</td>
+    <td>Display the result of a simple or complex calculation that is specified in the <strong>Formula</strong> cell. For more information, see <a href="advanced-formatting-options-financial-reporting.md">Advanced formatting options in financial reporting</a>.</td>
     </tr>
     <tr class="odd">
     <td>DESC</td>
-    <td>Display the row description from the row definition. Although the description column is often the first column on the report, it can be in any position.</td>
+    <td>Display the row description from the row definition. Although the description column is often the first column on the report, it can be in any position.</td>
     </tr>
     <tr class="even">
     <td>ROW</td>
@@ -378,11 +379,11 @@ The type of information that each column on a report includes is specified by th
     </tr>
     <tr class="odd">
     <td>ACCT (Account codes)</td>
-    <td>Display the financial data segment values or dimension values that apply to each row. For account and transaction detail reports, the fully qualified account is printed (for example, <strong>110140-070-0101</strong>). If ranges have been specified in the <strong>Link to Financial Dimensions</strong> column in an associated row definition, the range is enclosed in square brackets and is treated as a single value (for example, <strong>[110140:110700]-070-[0101:0200]</strong>). For financial reports and high-level reports that are a combination of several accounts, the financial data link from the row definition is printed (for example, <strong>1100:1200</strong>).</td>
+    <td>Display the financial data segment values or dimension values that apply to each row. For account and transaction detail reports, the fully qualified account is printed (for example, <strong>110140-070-0101</strong>). If ranges have been specified in the <strong>Link to Financial Dimensions</strong> column in an associated row definition, the range is enclosed in square brackets and is treated as a single value (for example, <strong>[110140:110700]-070-[0101:0200]</strong>). For financial reports and high-level reports that are a combination of several accounts, the financial data link from the row definition is printed (for example, <strong>1100:1200</strong>).</td>
     </tr>
     <tr class="even">
     <td>FILL</td>
-    <td>Fill the cell with a character that you enclose in single quotation marks. If you don't enter a character, the column is empty. For example, to fill a column with an ellipsis (...), enter <strong>FILL</strong> <strong>'.'</strong>.</td>
+    <td>Fill the cell with a character that you enclose in single quotation marks. If you don't enter a character, the column is empty. For example, to fill a column with an ellipsis (...), enter <strong>FILL</strong> <strong>'.'</strong>.</td>
     </tr>
     <tr class="odd">
     <td>PAGE</td>
@@ -399,14 +400,14 @@ The type of information that each column on a report includes is specified by th
     </tr>
     <tr class="odd">
     <td>ATTR</td>
-    <td>If your accounting system supports attributes, display an account or transaction attribute in the column. An attribute, which must apply to a single full account, extracts underlying account or transaction information from the financial data. Account-level attributes display data from the account, and transaction-level attributes display data that occurred at the time that the transaction was posted. If you select <strong>ATTR</strong> as the column type, specify the attribute category in the <strong>Book Code/Attribute Category</strong> detail row of the column definition.</td>
+    <td>If your accounting system supports attributes, display an account or transaction attribute in the column. An attribute, which must apply to a single full account, extracts underlying account or transaction information from the financial data. Account-level attributes display data from the account, and transaction-level attributes display data that occurred at the time that the transaction was posted. If you select <strong>ATTR</strong> as the column type, specify the attribute category in the <strong>Book Code/Attribute Category</strong> detail row of the column definition.</td>
     </tr>
     </tbody>
     </table>
 
 ### Financial Dimensions column
 
-The following **Column Definition** row definitions apply to columns that have a column type of **FD** (Amounts from financial dimensions).
+The following **Column Definition** row definitions apply to columns that have a column type of **FD** (Amounts from financial dimensions).
 
 #### Book Code/Attribute Category cell
 
@@ -439,7 +440,7 @@ The **Period** cell identifies the fiscal periods that the column should include
 | \#              | Always use a specific period number. We don't recommend that you use this option, because it reduces the flexibility of the column definition.                                                                                       |
 | \#:\#           | Always use a specific range of periods. We don't recommend that you use this option, because it reduces the flexibility of the column definition.                                                                                    |
 
-You can go beyond fiscal year boundaries in any of the period specifications, and you can mix years in a range of periods. For example, you specify the periods as **BASE-5** (to represent the past six periods) and run a report that has a base period of 2. In this case, the report shows data for the first two periods of the specified fiscal year and the last four periods of the previous fiscal year.
+You can go beyond fiscal year boundaries in any of the period specifications, and you can mix years in a range of periods. For example, you specify the periods as **BASE-5** (to represent the past six periods) and run a report that has a base period of 2. In this case, the report shows data for the first two periods of the specified fiscal year and the last four periods of the previous fiscal year.
 
 ### Specify the periods for an FD column
 
@@ -465,7 +466,7 @@ The **Periods Covered** cell identifies the amount that the column should displa
 
 ### Attribute filter in a column definition
 
-Attributes are financial data values that further define an account or transaction. The account attributes include **Asset**, **Liability**, **Revenue**, and **Expense**. The transaction attributes include **Transaction Description** and **Transaction Apply Date**. Attribute support might differ between Microsoft Dynamics ERP systems. The **Attribute Filter** cell restricts the data in **FD** columns to specific values or ranges for attribute categories. Although this feature can be used together with an **ATTR** column, the **ATTR** column isn't required. In an **FD** column, there is a limit on the accounts or transactions that the report will include from the attribute filter. **Note:** To see which attributes your ERP system supports, see the integration guide for your system.
+Attributes are financial data values that further define an account or transaction. The account attributes include **Asset**, **Liability**, **Revenue**, and **Expense**. The transaction attributes include **Transaction Description** and **Transaction Apply Date**. Attribute support might differ between Microsoft Dynamics ERP systems. The **Attribute Filter** cell restricts the data in **FD** columns to specific values or ranges for attribute categories. Although this feature can be used together with an **ATTR** column, the **ATTR** column isn't required. In an **FD** column, there is a limit on the accounts or transactions that the report will include from the attribute filter. **Note:** To see which attributes your ERP system supports, see the integration guide for your system.
 
 #### Apply an attribute filter for an FD column on a report
 
@@ -489,7 +490,7 @@ The following example shows part of a column description that has an account att
 | ...                          |      |                      |
 | Column Width                 | 30   |                      |
 | ...                          |      |                      |
-| Attribute Filter             |      |  Reference=\[01:10\] |
+| Attribute Filter             |      |  Reference=\[01:10\] |
 
 ### Dimension filter in a column definition
 
@@ -511,11 +512,11 @@ You can also use any combination of alphanumeric characters for exact matching, 
 
 A multiple-currency report can display amounts in the natural (local) currency, the functional (default) currency, or the reporting currency. A company’s functional currency is defined in the Microsoft Dynamics ERP system. Don't confuse this ERP setting with the operating system's regional options setting, where you can configure the default currency symbols that are used on reports. The following currency-related cells are available in the column definition:
 
--   **Currency Display** – Specify the type of currency (natural, functional, or reporting) that the transactions are displayed in. This functionality is sometimes referred to as currency translation. Currency translation is the ability to report general ledger amounts in a currency that might not be the functional currency of the company or the currency that the transaction was entered in.
+-   **Currency Display** – Specify the type of currency (natural, functional, or reporting) that the transactions are displayed in. This functionality is sometimes referred to as currency translation. Currency translation is the ability to report general ledger amounts in a currency that might not be the functional currency of the company or the currency that the transaction was entered in.
 -   **Currency Filter** – Specify a currency filter. Only transactions that are entered in the selected currency are displayed on the report.
 
 > [!NOTE]
-> To create reports that use multiple currencies, you must select the **Include all reporting currencies** check box on the **Report** tab of the report definition. To determine a company’s functional currency, follow these steps.
+> To create reports that use multiple currencies, you must select the **Include all reporting currencies** check box on the **Report** tab of the report definition. To determine a company’s functional currency, follow these steps.
 
 1.  In Report Designer, on the **Company** menu, click **Companies**.
 2.  In the **Companies** dialog box, select a company, and then click **View**.
@@ -543,16 +544,17 @@ Because of the currency filter that Phyllis selected, the report includes only t
 
 The following table shows the report results that can occur for various combinations of the options in **Currency Display** and **Currency Filter** cells because of the selections that Phyllis made. The functional currency is USD.
 
-| Currency Display cell                        | Currency Filter cell | Report result                                                                                                                                                                                    |
-|----------------------------------------------|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Natural/originating currency                 | **YEN**              | **Y6,000** – The result shows only transactions that were entered in JPY.                                                                                                                        |
-| Functional currency from company information | **YEN**              | **$60** – The result shows only transactions that were entered in JPY and displays those transactions in USD. **Note:** The conversion rate is approximately 100 JPY per USD.                    |
-| Functional currency from company information | Empty                | **$2,310\*\*** – The result shows all data in the functional currency that is specified in the company information. **Note:** This amount is the sum of all transactions in functional currency. |
-| Natural/originating currency                 | Empty                | **$2,250** – The result shows all amounts in the currency that the transaction was performed in.                                                                                                 |
+
+|            Currency Display cell             | Currency Filter cell |                                                                                                       Report result                                                                                                        |
+|----------------------------------------------|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Natural/originating currency         | <strong>YEN</strong> |                                                                   <strong>Y6,000</strong> – The result shows only transactions that were entered in JPY.                                                                   |
+| Functional currency from company information | <strong>YEN</strong> |          <strong>$60</strong> – The result shows only transactions that were entered in JPY and displays those transactions in USD. <strong>Note:</strong> The conversion rate is approximately 100 JPY per USD.           |
+| Functional currency from company information |        Empty         | <strong>$2,310\*\</strong>* – The result shows all data in the functional currency that is specified in the company information. <strong>Note:</strong> This amount is the sum of all transactions in functional currency. |
+|         Natural/originating currency         |        Empty         |                                                       <strong>$2,250</strong> – The result shows all amounts in the currency that the transaction was performed in.                                                        |
 
 ### Calculation column in a column definition
 
-A column type of **CALC** in a column definition supports complex calculations in the **Formula** cell, and can include the **+**, **-**, **\***, and **/** operators, and also **IF/THEN/ELSE** statements. A calculation column can also refer to any other column, even subsequent columns. Additionally, a calculation column can also include the fiscal year and period to support headers for the column. The calculation formula can be up to 1,024 characters long. To express the calculation result as a percentage, use a special format override. **Note:** The results of calculation formulas don't include the values in non-printing column ranges. For example, **A:D** prints **0** (zero), whereas **A+B+C** for non-printing values calculates the value.
+A column type of **CALC** in a column definition supports complex calculations in the <strong>Formula</strong> cell, and can include the <strong>+</strong>, <strong>-</strong>, <strong>\</strong>, and **/* operators, and also <strong>IF/THEN/ELSE</strong> statements. A calculation column can also refer to any other column, even subsequent columns. Additionally, a calculation column can also include the fiscal year and period to support headers for the column. The calculation formula can be up to 1,024 characters long. To express the calculation result as a percentage, use a special format override. <strong>Note:</strong> The results of calculation formulas don't include the values in non-printing column ranges. For example, <strong>A:D</strong> prints <strong>0</strong> (zero), whereas <strong>A+B+C</strong> for non-printing values calculates the value.
 
 #### Operators in calculation columns
 
@@ -577,7 +579,7 @@ A complex calculation can contain any combination of cell references, operators,
 
 #### Specify report cells in a column calculation
 
-You can refer to a specific report cell by entering a column letter and a row code. For example, **B.100** refers to row code 100 in column B. You can divide a whole column by a specific report cell amount that is in the same column. For example, the calculation **B/B.100** means that the amount in column B should be divided by the value in row code 100 in column B. If the calculation refers to a column that depends on another column, the dependent column is resolved first. If you refer a column to another column that refers back to the first column, you will cause a circular reference error. **Note:** The calculation might be incorrect if you change the calculation priority for the report. You can set the calculation priority on the **Settings** tab of the report definition.
+You can refer to a specific report cell by entering a column letter and a row code. For example, **B.100** refers to row code 100 in column B. You can divide a whole column by a specific report cell amount that is in the same column. For example, the calculation **B/B.100** means that the amount in column B should be divided by the value in row code 100 in column B. If the calculation refers to a column that depends on another column, the dependent column is resolved first. If you refer a column to another column that refers back to the first column, you will cause a circular reference error. **Note:** The calculation might be incorrect if you change the calculation priority for the report. You can set the calculation priority on the **Settings** tab of the report definition.
 
 #### Multiply or divide a column by a base row
 
@@ -587,7 +589,7 @@ You can create a column that displays all the values in a specified column as a 
 
 You can divide the amount in a column by a specified number of periods. For example, the formula **B/Periods** divides the value in column B by the number of periods in column B. If the calculation spans multiple columns, specify the number of periods to use in the calculation. For example, the formula **(B+C)/Periods** adds the amounts in column B and column C, and then divides the result by the period value.
 
-See also
+Additional resources
 --------
 
 [Row definitions in financial reporting](row-definitions-financial-reporting.md)

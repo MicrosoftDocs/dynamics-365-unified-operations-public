@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: POS operations
+title: POS operations, online and offline
 description: This topic provides details about the point of sale (POS) operations in Microsoft Dynamics 365 for Retail. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: jblucher
 manager: AnnBe
@@ -30,7 +30,10 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# POS operations
+# POS operations, online and offline
+
+[!include [banner](includes/banner.md)]
+
 Most actions that user take in the point of sale (POS) are considered operations. Operations are configured and managed in the Microsoft Dynamics 365 for Retail back office. Many operations can be added to buttons in the POS button grid. Users can then select the buttons to invoke the operations and perform their function. Other operations are part of the main POS application, and are invoked either from on-screen buttons or as part of other workflows or processes.
 
 The following table provides details about the operations that are available in Retail Modern POS and Cloud POS for Dynamics 365 for Retail. The table also specifies where in the application the operations can invoked, and whether they are available when the POS is in offline mode.
@@ -42,6 +45,8 @@ The following columns specify where the operations can be invoked:
 - **Button grid** – The operation can be assigned to buttons in POS button grids, which are part of a POS screen layout.
 - **Transaction screen** – The operation can be invoked from POS button grids that are configured on the POS transaction screen.
 - **Welcome screen** – The operation can be invoked from POS button grids that are configured on the POS welcome screen.
+
+Note: The operations listed below apply to the latest version of Dynamics 365 for Retail. Some operations may have changed or may not be available in previous versions.
 
 | ID | Operation | Description | Button grid | Transaction screen | Welcome screen | Available offline | Locale-specific |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -106,8 +111,10 @@ The following columns specify where the operations can be invoked:
 | 703 | Lock register | Lock the current register, so that it can't be used, but don't sign the current user out. | No | No | No | Yes | No |
 | 701 | Log off | Sign the current user out of the register. | Yes | Yes | Yes | Yes | No |
 | 521 | Loyalty card points balance | Show the balance of points for the specified loyalty card. | Yes | Yes | No | No | No |
+| 918 | Manage shifts | Show a list of active, suspended, and blind closed shifts. | Yes | Yes | Yes | No | No |
 | 914 | Minimize POS window | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 1000 | Open drawer | Perform a "no sale" operation, and open the currently selected cash drawer. | Yes | Yes | Yes | Yes | No |
+| 928 | Order fulfillment | This operation allows users to pick, pack, ship, or recall orders for store picked up. | Yes | Yes | Yes | No | No |
 | 129 | Override line product tax | Override the tax on the selected line item, and use a different specified tax. | Yes | Yes | No | Yes | No |
 | 130 | Override line product tax from list | Override the tax on the selected line item, and use the tax that the user selects in a list. | Yes | Yes | No | Yes | No |
 | 127 | Override transaction tax | Override the tax on the transaction, and use a different specified tax. | Yes | Yes | No | Yes | No |
@@ -162,7 +169,6 @@ The following columns specify where the operations can be invoked:
 | 638 | Set sales representative on line | This operation lets the user select one of the eligible commission sales groups (sale reps) for the currently selected line. | Yes | Yes | No | Yes | No |
 | 630 | Ship all products | Set the fulfillment mode to **Shipping** for all line items. | Yes | Yes | No | Yes\* | No |
 | 629 | Ship selected products | Set the fulfillment mode to **Shipping** for the selected lines. | Yes | Yes | No | Yes\* | No |
-| 918 | Show blind closed shifts | Show a list of shifts that have been blind closed. | Yes | Yes | Yes | No | No |
 | 115 | Show journal | Show the store's journal. You can view transactions, reprint receipts and gift receipts, and recall for return. | Yes | Yes | Yes | Yes\*\* | No |
 | 802 | Stock count | This operation lets the user create or modify stock counting journals for physical inventory or cycle counts. | Yes | Yes | Yes | No | No |
 | 401 | Sub menu | This operation takes the user to another linked button grid. | Yes | Yes | Yes | Yes | No |

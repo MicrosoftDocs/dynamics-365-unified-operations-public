@@ -30,9 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Data import and export jobs
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-To create and manage data import and export jobs in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean up, or convert data before you move it.
+To create and manage data import and export jobs in Microsoft Dynamics 365 for Finance and Operations, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean up, or convert data before you move it.
+
+> [!NOTE]
+> This topic assumes that you are familiar with [data entities](data-entities.md).
 
 ## Data import/export process
 Here are the steps to import or export data.
@@ -53,6 +56,9 @@ Here are the steps to import or export data.
 
 The remaining sections of this topic provide more details about each step of the process.
 
+> [!NOTE]
+> In order to refresh the Data import/export form to see the latest progress, use the form refresh icon. Browser level refresh is not recommended because it will interrupt any import/export jobs that are not run in batch.
+
 ## Create an import or export job
 A data import or export job can be run one time or many times.
 
@@ -63,13 +69,15 @@ We recommend that you take the time to select an appropriate project category fo
 You can add specific entities to an import or export job or select a template to apply. Templates fill a job with a list of entities. The **Apply template** option is available after you give the job a name and save the job.
 
 ### Set the data format for the job
-When you select an entity, you must select the format of the data that will be exported or imported. You define formats by using the **Data sources setup** tile. Many organizations start from the formats that are included by default in the demo data set. Here is a list of some of these formats:
+When you select an entity, you must select the format of the data that will be exported or imported. You define formats by using the **Data sources setup** tile. A source data format is a combination of **Type**, **File format**, **Row delimiter** and **Column delimiter**. There are also other attributes, but these are the key ones to understand. The following table lists the valid combinations.
 
-- AX (for data that must be imported or exported in the same format that is used for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition)
-- ColonSeparated
-- CSV
-- Excel
-- Package
+| **File Format**        | **Row/Column delimiter**                   | **XML Style**             |
+|------------------------|--------------------------------------------|---------------------------|
+| Excel                  | Excel                                      | \-NA-                     |
+| XML                    | \-NA-                                      | XML-Element XML-Attribute |
+| Delimited, fixed width | Comma, semicolon, tab, vertical bar, colon | \-NA-                     |
+
+
 
 ### Sequence the entities
 Entities can be sequenced in a data template, or in import and export jobs. When you run a job that contains more than one data entity, you must make sure that the data entities are correctly sequenced. You sequence entities primarily so that you can address any functional dependencies among entities. If entities don’t have any functional dependencies, they can be scheduled for parallel import or export.
@@ -93,6 +101,9 @@ The **Resequencing** menu is available when multiple entities are selected. You 
 
 #### Sorting
 Use can use the **Sort by** option to view the entity list in sequential order.
+
+### Truncating
+For import projects, you can choose to truncate records in the entities prior to import. This is useful if your records must be imported into a clean set of tables. This setting is off by default.
 
 ## Validate that the source data and target data are mapped correctly
 Mapping is a function that applies to both import and export jobs.

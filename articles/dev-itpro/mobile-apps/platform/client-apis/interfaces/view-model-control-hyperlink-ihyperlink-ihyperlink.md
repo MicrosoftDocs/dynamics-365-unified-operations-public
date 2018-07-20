@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # HyperLink Type
+
+[!include [banner](../../../../includes/banner.md)]
+
 Hyperlink control type. Hyperlink control is a control to represent hyperlinks. Pagelinks can also be used in most cases.
 
 ### Hierarchy

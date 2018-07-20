@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up taxes, tax regions, tax codes, and tax groups
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.
 
@@ -97,7 +96,7 @@ If a tax code is used by more than one legal entity in your organization, you mu
 | Report description | Optional: To overwrite the description of the tax code that appears on reports, such as printed pay statements, enter the new description here. To use the default description, leave this field blank.                                                                                                                                                                                                                                                                                                                          |
 | Account ID         | Enter the account number that the legal entity has with the taxing authority. State income taxes always have an account ID. If the taxing authority hasn't specified an account ID, leave this field blank.                                                                                                                                                                                                                                                                                                                      |
 | Wage base          | Enter the value that is specified by the taxing authority. If the taxing authority doesn't specify a wage base, leave this field blank.                                                                                                                                                                                                                                                                                                                                                                                          |
-| Rate               | Enter the rate that the legal entity pays. For example, if the rate is 2.5 percent, enter **0.025**. Unemployment taxes always have a specified rate. For other taxes, if the taxing authority hasn't specified a rate, leave this field blank. **Caution:** Although base state unemployment taxes are supported, individual surcharges aren’t calculated independently. You must increase the defined base SUTA rate to cover the calculation of any SUTA surcharges. Then, when you file, you must manually list the amounts. |
+| Rate               | Enter the rate that the legal entity pays. For example, if the rate is 2.5 percent, enter **0.025**. Unemployment taxes always have a specified rate. For other taxes, if the taxing authority hasn't specified a rate, leave this field blank. **Caution:** Although base state unemployment taxes are supported, individual surcharges aren’t calculated independently. You must increase the defined base SUTA rate to cover the calculation of any SUTA surcharges. Then, when you file, you must manually list the amounts. |
 
 On the **Accounting** tab, specify the following information.
 
@@ -122,9 +121,9 @@ In most cases, when you create a list of tax codes to include in each tax group,
 After you create tax groups that are enabled for posting definitions, you can assign those tax groups to transaction posting definitions. For more information, see [Posting definitions in the public sector](../../../financials/public-sector/posting-definitions-public-sector.md).
 
 ## Next step
-The next step is to set up benefits and mandatory deductions. For more information, see [Benefit setup tasks](noam-usa-benefit-set-up-tasks.md).  
+The next step is to set up benefits and mandatory deductions. For more information, see [Benefit setup tasks](noam-usa-benefit-set-up-tasks.md).  
 
-See also
+Additional resources
 --------
 
 [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)

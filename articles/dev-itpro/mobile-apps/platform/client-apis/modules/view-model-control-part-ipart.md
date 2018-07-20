@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # Part 
+
+[!include [banner](../../../../includes/banner.md)]
+
 A part is a container control that contains only a page, allowing for a page to be embedded within a page.
 
 ## Index

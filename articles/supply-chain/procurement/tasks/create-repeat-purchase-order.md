@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a repeat purchase order
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to create a repeat purchase order (PO) by copying lines from an earlier purchase order document to a new PO or to an existing PO. There are two methods for creating repeat orders. You can use the actions available at the document level from the Action Pane, or you can use the line detail actions. The document level actions are mainly intended for creating a new purchase order by adding lines and header information from another order, while the line details action is mainly for adding lines to an existing order. The example shown in this guide can be used in the USMF demo data company. This task would typically be carried out by a purchasing agent.
 

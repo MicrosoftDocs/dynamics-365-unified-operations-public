@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Version control, metadata search, and navigation
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This tutorial will walk you through configuring Visual Studio Team Systems (previously known as Visual Studio Online) to enable source control on your models. It’ll also help you learn about other productivity features in the development tools, including the ability to create and organize TODO task, search metadata and source code, navigate between related model elements, and create a project from a model.
 
@@ -43,36 +42,36 @@ In this section, you'll create a new project in Visual Studio Team Services. Thi
 
 ### Sign up to Visual Studio Team Services, create an account, and create a new project
 
-Navigate to <http://www.visualstudio.com/> to sign up for Visual Studio Team Services. Click **Sign up**. If you already have an account in Visual Studio Team Services, go to the Create a Visual Studio Team Services project section later in this topic. 
+Navigate to <http://www.visualstudio.com/> to sign up for Visual Studio Team Services. Click **Sign up**. If you already have an account in Visual Studio Team Services, go to the Create a Visual Studio Team Services project section later in this topic. 
 
 1.  Sign in with your Microsoft account. **Note**: You can also use an organizational account (Microsoft Office 365 domain).
 2.  Create a Visual Studio Team Services account, and select a URL for your account. This is the URL that you'll connect to from your development computer when you're configuring source control in Visual Studio. The following is an example of the account URL. 
 
     [![AccountURL\_UsingDevoTools](./media/accounturl_usingdevotools.png)](./media/accounturl_usingdevotools.png) 
-    
+
     When the account is created, you're directed to your account main page where you're prompted to create your first project.
 3.  Create a demo **Fleet Management** project. 
-    
+
     [![FirstProject\_UsingDevoTools](./media/firstproject_usingdevotools.png)](./media/firstproject_usingdevotools.png)
 
 ### Create a Visual Studio Team Services team project
 
-If you already have a Visual Studio Team Services account, go to your account using Internet Explorer. This topic uses **.visualstudio.com** as the example URL for illustration purposes.
+If you already have a Visual Studio Team Services account, go to your account using Internet Explorer. This topic uses **.visualstudio.com** as the example URL for illustration purposes.
 
-1.  Go to http://.visualstudio.com.
-2.  Under **Recent projects & teams**, click **New** to create a new project. 
+1. Go to http://.visualstudio.com.
+2. Under **Recent projects & teams**, click **New** to create a new project. 
 
-    [![ClickNew\_UsingDevoTools](./media/clicknew_usingdevotools.png)](./media/clicknew_usingdevotools.png)
+   [![ClickNew\_UsingDevoTools](./media/clicknew_usingdevotools.png)](./media/clicknew_usingdevotools.png)
 
-3.  In the **Project name** field, enter **Fleet Management**, enter a **Description**, and then click **Create project**.
+3. In the **Project name** field, enter **Fleet Management**, enter a **Description**, and then click **Create project**.
 
-### Create the recommended folder structure in your team project
+### Create the recommended folder structure in your team project
 
-If you have migrated your code from a previous version using the Lifecycle Services (LCS) automated code upgrade tool, the following folder structure is automatically created in your Visual Studio Team Services team project. 
+If you have migrated your code from a previous version using the Lifecycle Services (LCS) automated code upgrade tool, the following folder structure is automatically created in your Visual Studio Team Services team project. 
 
 [![VSOfolders](./media/vsofolders1.png)](./media/vsofolders1.png)
 
-The **Metadata** folder contains your source XML files organized by packages and models and the **Projects** folder contains Visual Studio projects. If you are not migrating code and are starting from scratch, create a similar folder structure on the server in your team project before you start development.
+The **Metadata** folder contains your source XML files organized by packages and models and the **Projects** folder contains Visual Studio projects. If you are not migrating code and are starting from scratch, create a similar folder structure on the server in your team project before you start development.
 
 ### Configure Visual Studio to connect to your team project
 
@@ -93,34 +92,34 @@ The **Metadata** folder contains your source XML files organized by packages and
 
 ### Map your Visual Studio Team Services project to your local model store and projects folder
 
-Your model store root folder contains source files of all packages and models that are part of your application. During deployment, you'll probably use source files from more than one model across more than one package. Because of this, we recommend that you map your model store root folder to the Visual Studio Team Services team project metadata folder.
+Your model store root folder contains source files of all packages and models that are part of your application. During deployment, you'll probably use source files from more than one model across more than one package. Because of this, we recommend that you map your model store root folder to the Visual Studio Team Services team project metadata folder.
 
-1.  In Visual studio **Team Explorer**, connect to the team project as described earlier in this document.
-2.  Open **Source Control Explorer** from **Team Explorer**.
-3.  Map the **Metadata** folder of your team project to the root folder of the model store on your local drive (Typically c:\\packages), an example is shown in the image below. **Note**: Your model store may be located under I:\\AosService\\PackagesLocalDirectory or another drive, depending on your machine configuration.
+1. In Visual studio **Team Explorer**, connect to the team project as described earlier in this document.
+2. Open **Source Control Explorer** from **Team Explorer**.
+3. Map the **Metadata** folder of your team project to the root folder of the model store on your local drive (Typically c:\\packages), an example is shown in the image below. **Note**: Your model store may be located under I:\\AosService\\PackagesLocalDirectory or another drive, depending on your machine configuration.
 
-    [![VSOfolders2](./media/vsofolders21.png)](./media/vsofolders21.png)
+   [![VSOfolders2](./media/vsofolders21.png)](./media/vsofolders21.png)
 
-4.  Click **Map**, and on the next dialog, click **No**.
-5.  Similarly, map the **/Trunk/Main/Projects **server folder to the **local projects folder** that will hold your Visual Studio solution and project files.
+4. Click **Map**, and on the next dialog, click **No**.
+5. Similarly, map the <strong>/Trunk/Main/Projects **server folder to the **local projects folder</strong> that will hold your Visual Studio solution and project files.
 
 ## Scenario 1: Open the fleet management solution and add it to Visual Studio Team Services source control
 This section describes the steps needed to add a solution to Visual Studio Team Services source control. This scenario is relevant when you have started development on a new model and you are adding it to source control for the first time. For code migration scenarios or in the case you are synchronizing new models that have been created by another developer, refer to scenario 2 below.
 
 ### Open the FleetManagement solution
 
-Note: This is only an example. You can open any project/solution to learn about the process of adding a solution to source control.
+Note: This is only an example. You can open any project/solution to learn about the process of adding a solution to source control.
 
 1.  On the **File** menu, point to **Open**, and then click **Project/Solution**.
 2.  Browse to the desktop and open the **FleetManagement** folder.
-3.  Select the solution file named **FleetManagement**. The file type listed is Microsoft Visual Studio Solution. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
+3.  Select the solution file named **FleetManagement**. The file type listed is Microsoft Visual Studio Solution. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
 4.  Click **Open**. Loading the solution may take some time.
 
 ### Add the FleetManagement solution to source control
 
 1.  In **Solution Explorer**, right-click the Fleet Management solution, and select **Add Solution to Source Control.**
 2.  On the next dialog, select **Team Foundation Version Control**, and then click **Next**.
-3.  In the **Team Project Location**, select **Projects**, as shown in this image (**Note**: If you have already mapped the server Projects folder to a local folder that contains the FleetManagement solution, steps 2 and 3 are omitted)
+3.  In the **Team Project Location**, select **Projects**, as shown in this image (**Note**: If you have already mapped the server Projects folder to a local folder that contains the FleetManagement solution, steps 2 and 3 are omitted)
 
     [![VSOfolders3](./media/vsofolders31.png)](./media/vsofolders31.png)
 
@@ -129,7 +128,7 @@ Note: This is only an example. You can open any project/solution to learn about 
 
 ### Add the model descriptor file to source control
 
-All Visual Studio projects belong to models. Models are source code distribution and deployment units that are typically larger in scope than a Visual Studio project. In the previous section, you added element files of the fleet management solution to source control. Because this was the first time that you added elements of the Fleet Management models to source control, you'll also need to check-in the model descriptor file.
+All Visual Studio projects belong to models. Models are source code distribution and deployment units that are typically larger in scope than a Visual Studio project. In the previous section, you added element files of the fleet management solution to source control. Because this was the first time that you added elements of the Fleet Management models to source control, you'll also need to check-in the model descriptor file.
 
 1.  In Visual Studio, in **Team Explorer**, open **Source Control Explorer**, and then right-click on the metadata folder (for example, **\Trunk\Main\Metadata**).
 2.  In the **Source Control Explorer** toolbar, click **Add Item to Folder**.
@@ -137,7 +136,7 @@ All Visual Studio projects belong to models. Models are source code distributio
 
     [![AddSourceControl\_UsingDevoTools](./media/addsourcecontrol_usingdevotools.png)](./media/addsourcecontrol_usingdevotools.png)
 
-4.  Click **Finish**. **Note**: Because your solution contained elements from two models, you'll need to add an additional model descriptor file to source control: C:\\Packages\\FleetManagementExtension\\Descriptor\\FleetManagementExtension.xml
+4.  Click **Finish**. **Note**: Because your solution contained elements from two models, you'll need to add an additional model descriptor file to source control: C:\\Packages\\FleetManagementExtension\\Descriptor\\FleetManagementExtension.xml
 5.  Check-in your pending items. Your item is now ready for development of the fleet management application using a state-of-the-art, cloud-based source control system and many other application lifecycle features of Visual Studio Team Services.
 
 ### Experiment with source control
@@ -166,7 +165,7 @@ In this section, you'll make minor changes to the **FMRental** table and compare
 11. Confirm the undo on the next dialog and close the **diff** window.
 
 ## Scenario 2: Synchronize models from source control
-In this section, you will synchronize existing models and model elements from your Visual Studio Team Services project. This is relevant in the following cases: 1) You have migrated your code from a previous version via LCS, or 2) another developer has checked-in a new model or new model elements and you would like to synchronize them to your development environment.
+In this section, you will synchronize existing models and model elements from your Visual Studio Team Services project. This is relevant in the following cases: 1) You have migrated your code from a previous version via LCS, or 2) another developer has checked-in a new model or new model elements and you would like to synchronize them to your development environment.
 
 1.  In Source Control Explorer, right-click on Metadata and select **Get Latest Version**. This will synchronize you local packages folder with the latest code.
 2.  Alternatively you can use the **Advanced** menu to synchronize specific build version or change sets.
@@ -174,7 +173,7 @@ In this section, you will synchronize existing models and model elements from y
     ![getlatest](./media/getlatest.png)
 
 3.  Once synchronization is complete, and if this leads to synchronizing new models to your environment, you need to refresh your metadata from Visual Studio.
-4.  Go to **Dynamics 365 &gt; Model Management &gt; Refresh models**
+4.  Go to **Dynamics 365 &gt; Model Management &gt; Refresh models**
 
 ## Organize TODO tasks in a project
 This section describes how you can create a Visual Studio project out of tasks (TODO comments) embedded in your X++ code.
@@ -211,14 +210,14 @@ This section demonstrates how you can perform meta-data based searches throughou
 
 ### Use the Metadata search window
 
-1.  Click **Dynamics 365 &gt; Metadata search**.
-2.  In the **Metadata search** window, in the **Search** field, enter the following text to find all of the table insert methods in the Application Suite model that contain a cross-company query. *type:table,method name:insert code:"crosscompany" model:"Application Suite"*
-3.  Wait for the search to complete. It may take a while. 
+1. Click **Dynamics 365 &gt; Metadata search**.
+2. In the **Metadata search** window, in the **Search** field, enter the following text to find all of the table insert methods in the Application Suite model that contain a cross-company query. *type:table,method name:insert code:"crosscompany" model:"Application Suite"*
+3. Wait for the search to complete. It may take a while. 
 
-    [![MetadataSearchResults\_UsingDevoTools](./media/metadatasearchresults_usingdevotools.png)]    (./media/metadatasearchresults_usingdevotools.png)
+   [![MetadataSearchResults\_UsingDevoTools](./media/metadatasearchresults_usingdevotools.png)]    (./media/metadatasearchresults_usingdevotools.png)
 
-4.  Double-click a result in the list. The code editor will open and place the cursor at the line that matches your search criteria.
-5.  Select several elements in the results list by holding down the Ctrl key for multiple selections, right-click, and then select **Add to new project**. This will let you to create a new solution and project containing the selected elements.
+4. Double-click a result in the list. The code editor will open and place the cursor at the line that matches your search criteria.
+5. Select several elements in the results list by holding down the Ctrl key for multiple selections, right-click, and then select **Add to new project**. This will let you to create a new solution and project containing the selected elements.
 
 ### Try other search examples
 
@@ -247,12 +246,12 @@ This section highlights a feature that enables you to move from one element to a
 4.  In the **FMCustomer** menu item designer, right-click the root node, and then select **Go to Form FMCustomer**. 
 
     [![GoFormFMCustomer\_UsingDevoTools](./media/goformfmcustomer_usingdevotools.png)](./media/goformfmcustomer_usingdevotools.png) 
-    
+
     The **FMCustomer** form designer will open.
 5.  In the designer of the **FMCustomer** form, expand **Data sources**, right-click **FMCustomer**, and then select **Go to Table FMCustomer** 
 
     [![GoTableFMCustomer\_UsingDevoTools](./media/gotablefmcustomer_usingdevotools.png)](./media/gotablefmcustomer_usingdevotools.png)
-    
+
     The **FMCustomer** table designer will open.
 6.  Using the same methodology, you can navigate to the EDT element that a table field references. **Tip**: Press F9 instead of opening the context menu. F9 will open the designer of the referenced element. **Tip**: You can add an element to the current project by right-clicking on the document tab and selecting **Add to project**.
 
@@ -263,18 +262,18 @@ Use Application Explorer to create a project from a model
 
 You can use Application Explorer to search for all or some elements of a model and create a project out of the search results.
 
-1.  Make sure the option to organize a project by element type is on. Go to **Dynamics 365** &gt; **Options** &gt; **Projects**.
-2.  Go to Application Explorer and search for elements in the desired model. For example, enter* model:"fleet management"* and click **Enter**.
+1.  Make sure the option to organize a project by element type is on. Go to **Dynamics 365** &gt; **Options** &gt; **Projects**.
+2.  Go to Application Explorer and search for elements in the desired model. For example, enter* model:"fleet management"* and click **Enter**.
 
     [![AppExplorerModelSearch](./media/appexplorermodelsearch.jpg)](./media/appexplorermodelsearch.jpg)
 
 3.  When the search is complete, right-click the AOT root node and select *Add search results to new project.
 
     [![AddSearchResultsToNewProject](./media/addsearchresultstonewproject.jpg)](./media/addsearchresultstonewproject.jpg)*
-    
-4.  Specify your project properties in the new project dialog and click **OK** to create the project.
 
-**Tip:** To create a project from search results, you can add any type, name, or other filters to your search as long as all results are in the same model. For example: *model:"Fleet Management" type:Table name:^FM* will return all tables in the Fleet Management model with a name starting with the letters FM.
+4.  Specify your project properties in the new project dialog and click **OK** to create the project.
+
+**Tip:** To create a project from search results, you can add any type, name, or other filters to your search as long as all results are in the same model. For example: *model:"Fleet Management" type:Table name:^FM* will return all tables in the Fleet Management model with a name starting with the letters FM.
 
 
 

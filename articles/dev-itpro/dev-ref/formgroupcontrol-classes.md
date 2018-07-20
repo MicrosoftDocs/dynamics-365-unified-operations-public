@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # F Classes - FormGroupControl to FormIntControl
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic contains API reference documentation for classes from FormGroupControl to FormIntControl.
 
@@ -6807,7 +6806,7 @@ This method is used by the reference group control to track exactly which relati
 
 #### Parameters
 
-  
+
 
 #### Return Value
 

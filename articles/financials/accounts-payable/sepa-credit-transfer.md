@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # SEPA credit transfer overview
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. A SEPA credit transfer is a specific type of payment in euros from one company or individual to another company or individual. The topic also explains how to set up and transmit a credit transfer payment file.
 
@@ -57,7 +56,7 @@ The EPC, which consists of European banks, develops the commercial and technical
 A SEPA credit transfer is a payment from one company or individual to another company or individual. Payments must be in euros, and must include the International Bank Account Number (IBAN) and the Bank Identifier Code (BIC) for both parties. (The BIC is also known as the Society for Worldwide Interbank Financial Telecommunication \[SWIFT\] code.) Additionally, transaction costs must be shared between both parties. Credit transfers that occur between parties should use XML files that comply with ISO 20022 payment processing standards and the XML format, as specified by the EPC.
 
 ## How is a credit transfer implemented?
-The credit transfer payment format for European countries is implemented by using the Electronic reporting (ER) and Methods of payment functionality in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. A few credit transfer formats that are used in other regions still use the legacy payment framework. Among many other formats, there are twelve ISO 20022 credit transfer file formats that are available. These export formats conform to the SEPA ISO 20022 XML standard. They are used to generate non-euro payment transfers for countries/regions where they are used and euro payments as specified in version 8.2 of the SEPA Credit Transfer Scheme Rulebook that the EPC releases. Before you can implement credit transfers, you must contact your bank to obtain the software that is required in order to upload electronic banking files. You will use that software to transfer the XML files that contain payment orders to your bank.
+The credit transfer payment format for European countries is implemented by using the Electronic reporting (ER) and Methods of payment functionality in Microsoft Dynamics 365 for Finance and Operations. A few credit transfer formats that are used in other regions still use the legacy payment framework. Among many other formats, there are twelve ISO 20022 credit transfer file formats that are available. These export formats conform to the SEPA ISO 20022 XML standard. They are used to generate non-euro payment transfers for countries/regions where they are used and euro payments as specified in version 8.2 of the SEPA Credit Transfer Scheme Rulebook that the EPC releases. Before you can implement credit transfers, you must contact your bank to obtain the software that is required in order to upload electronic banking files. You will use that software to transfer the XML files that contain payment orders to your bank.
 
 ## What credit transfer formats are currently supported in Finance and Operations?
 You should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**. The next section, "What do I have to set up?", provides a link to the topic that explains how to create an LCS repository to review available configurations and import selected configurations.
@@ -97,7 +96,7 @@ The list of specific parameters depends on the credit transfer format. The follo
 <td>Format</td>
 <td>Select the format for remittance information, depending on the requirements of your country/region or bank:
 <ul>
-<li><strong>Strd</strong> – Select this option to use the structured format when one payment line is settled against one invoice. This option isn't available for the country/region-specific export formats for France, Germany, or the Netherlands.</li>
+<li><strong>Strd</strong> – Select this option to use the structured format when one payment line is settled against one invoice. This option isn&#39;t available for the country/region-specific export formats for France, Germany, or the Netherlands.</li>
 <li><strong>Ustrd</strong> – Select this option to use the unstructured format when the payment is settled against multiple invoices. The invoice numbers for the settled invoices are concatenated and used as the remittance information. In compliance with ISO 20022 guidelines, unstructured remittance information is limited to 140 characters.</li>
 </ul></td>
 </tr>

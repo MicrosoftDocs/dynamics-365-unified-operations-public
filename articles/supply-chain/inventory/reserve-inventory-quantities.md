@@ -17,7 +17,7 @@ ms.search.form: InventModelGroup
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 207264
@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reserve inventory quantities
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the different options that are available for reserving inventory.
 
-You can automatically reserve inventory quantities for a specific sales order. This means that reserved inventory cannot be withdrawn from the warehouse for other orders unless the inventory reservation, or part of the inventory reservation, is canceled.
+You can automatically reserve inventory quantities for a specific sales order. This means that reserved inventory cannot be withdrawn from the warehouse for other orders unless the inventory reservation, or part of the inventory reservation, is canceled.
 
 There are several reasons for reserving inventory:
 -   First ordered, first delivered, which means that customers get available items in the same order in which they place their orders.
@@ -47,13 +46,14 @@ There are several reasons for reserving inventory:
 -   Specially ordered items that are reserved for certain orders.
 -   Production orders. For example, you can mark items that are produced for and adjusted to specific orders.
 
-Inventory can be reserved automatically when a new order line is created, or inventory can be reserved manually on the individual orders. It's also possible to reserve inventory at different stages in a production process. Only stocked products can be reserved. Services cannot be reserved, because there is no on-hand inventory. Both physical on-hand inventory and ordered, but not yet received, inventory can be reserved. If a larger quantity is reserved than what the on-hand inventory contains, a message displays that you cannot reserve such a large quantity. You can then either reserve the quantity anyway, or change the ordered quantity. The quantity can be either reserved or changed. If more items are reserved than are available, the shortage is covered the next time that items are available for delivery.
+Inventory can be reserved automatically when a new order line is created, or inventory can be reserved manually on the individual orders. It's also possible to reserve inventory at different stages in a production process. Only stocked products can be reserved. Services cannot be reserved, because there is no on-hand inventory. Both physical on-hand inventory and ordered, but not yet received, inventory can be reserved. If a larger quantity is reserved than what the on-hand inventory contains, a message displays that you cannot reserve such a large quantity. You can then either reserve the quantity anyway, or change the ordered quantity. The quantity can be either reserved or changed. If more items are reserved than are available, the shortage is covered the next time that items are available for delivery.
 
 ## Inventory reservation policies
-Inventory reservation policies are set on the **Item model groups** page, the **Inventory and warehouse management parameters** page, and the **Production parameters** page.
+Inventory reservation policies are set on the **Item model groups** page, the **Inventory and warehouse management parameters** page, and the **Production parameters** page.
 ### Policies on the Item model groups page
 
 The **Inventory policies** section contains the following reservation policies.
+
 |                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Reservation policy**  | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -67,6 +67,7 @@ The **Inventory policies** section contains the following reservation policies.
 #### Example for FIFO date-controlled and Backward from ship date
 
 In this example, on-hand inventory for item number A exists for three different batch numbers.
+
 | Item number | Batch number | Quantity | Date             |
 |-------------|--------------|----------|------------------|
 | A           | 1000         | 5        | February 2, 2016 |
@@ -78,12 +79,12 @@ A sales order that should be automatically reserved and delivered on April 4, 20
 -   If the **FIFO date-controlled** check box is selected and the **Backward from ship date** check box is cleared, batch 1001 is reserved because it is the batch with the first date of receipt (FIFO).
 -   If both the **FIFO date-controlled** and **Backward from ship date** check boxes are selected, batch 1002 is reserved because it is the batch receipt closest to the sales order ship date.
 
-### Policies on the Inventory and warehouse management parameter page
+### Policies on the Inventory and warehouse management parameter page
 
-There are two options related to reservations on the **Inventory and warehouse management parameters** page:
--   The **Reserve ordered items** option on the **General** tab lets you to reserve item receipts that are ordered against item issues in Accounts receivable, Project management and accounting, and Production control. If you clear this option, you can only reserve items that have been physically received. If a particular item has been set up to accept negative inventory, this field is not relevant.
--   The **Reserve items automatically** option on the **Transport** tab determines the default setting if items are automatically reserved for transfer orders. The default setting can be overridden on individual transfer orders.
+There are two options related to reservations on the **Inventory and warehouse management parameters** page:
+-   The **Reserve ordered items** option on the **General** tab lets you to reserve item receipts that are ordered against item issues in Accounts receivable, Project management and accounting, and Production control. If you clear this option, you can only reserve items that have been physically received. If a particular item has been set up to accept negative inventory, this field is not relevant.
+-   The **Reserve items automatically** option on the **Transport** tab determines the default setting if items are automatically reserved for transfer orders. The default setting can be overridden on individual transfer orders.
 
-### Inventory reservation policies on the Production parameters page
+### Inventory reservation policies on the Production parameters page
 
-The value of the **Reservation** field on the **General** tab on the **Production parameters** page determines the default point in the production process at which inventory should be reserved. For example, inventory could be reserved when work is scheduled, or when work is started.
+The value of the **Reservation** field on the **General** tab on the **Production parameters** page determines the default point in the production process at which inventory should be reserved. For example, inventory could be reserved when work is scheduled, or when work is started.

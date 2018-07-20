@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customization Analysis Report (CAR)
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes how to generate a Customization Analysis Report for your model. It also describes some best practice rules that are included in the report, and provides suggestions for fixing errors and warnings that are associated with these rules. 
 
-What is the Customization Analysis Report?
+What is the Customization Analysis Report?
 ------------------------------------------
 
-The Customization Analysis Report is a tool that analyzes your customization and extension models, and runs a predefined set of best practice rules. The report is one of the requirements of the solution certification process. The report is in the form of a Microsoft Excel workbook.
+The Customization Analysis Report is a tool that analyzes your customization and extension models, and runs a predefined set of best practice rules. The report is one of the requirements of the solution certification process. The report is in the form of a Microsoft Excel workbook.
 
 ## How to generate the report
 To generate the Customization Analysis Report, run the following command in a development environment.
@@ -54,7 +53,7 @@ To generate the Customization Analysis Report, run the following command in a de
 The xppbp.exe tool is located in c:\\packages\\bin or I:\\AosService\\PackagesLocalDirectory\\bin.
 
 ## Issues List
-This section describes all best practice rules (errors, warnings, or informational messages) that can appear on the **Issues List** page of the report and provides suggestions for fixing the issues. Issues are of the **metadata** or **code** type. For all **code** issues, keep in mind that, if the warning or error occurs in a method that you've overlaid, the lines of code that violate the rule might belong to a model in a lower layer. In that case, you're not responsible for fixing warnings and errors in code that isn't yours.
+This section describes all best practice rules (errors, warnings, or informational messages) that can appear on the **Issues List** page of the report and provides suggestions for fixing the issues. Issues are of the **metadata** or **code** type. For all **code** issues, keep in mind that, if the warning or error occurs in a method that you've overlaid, the lines of code that violate the rule might belong to a model in a lower layer. In that case, you're not responsible for fixing warnings and errors in code that isn't yours.
 
 ### BPCheckPackReturnsConnull
 
@@ -82,7 +81,7 @@ This section describes all best practice rules (errors, warnings, or informatio
 
 ### BPCheckNestedLoopInCode
 
-| Description         | This rule fails if it finds a **while select** loop nested within a loop.                                                                                                                                                                      |
+| Description         | This rule fails if it finds a **while select** loop nested within a loop.                                                                                                                                                                      |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Nested data access loop found in %1 method                                                                                                                                                                                                     |
 | Issue type/severity | Code/Warning                                                                                                                                                                                                                                   |
@@ -90,7 +89,7 @@ This section describes all best practice rules (errors, warnings, or informatio
 
 ### BPCheckInsertMethodInLoop
 
-| Description         | This rules fails if it finds a call to the method **insert** nested inside a loop. We recommend that you use **InsertRecordList**. This rule doesn't apply to InMemory tables. |
+| Description         | This rules fails if it finds a call to the method **insert** nested inside a loop. We recommend that you use **InsertRecordList**. This rule doesn't apply to InMemory tables. |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Insert method can be replaced with RecordInsertList in method %1                                                                                                               |
 | Issue type/severity | Code/Warning                                                                                                                                                                   |
@@ -154,13 +153,13 @@ This section describes all best practice rules (errors, warnings, or informatio
 <tbody>
 <tr class="odd">
 <td>Description</td>
-<td>This rule reports an informational message if it finds a set-based operation that doesn't have <strong>Skip</strong> statements.
+<td>This rule reports an informational message if it finds a set-based operation that doesn&#39;t have <strong>Skip</strong> statements.
 <ul>
 <li>When <strong>update_recordset</strong> is found, the rule checks for <strong>skipDataMethods(true)</strong>. The rule applies only when the <strong>update</strong> method on the table is overridden.</li>
 <li>When <strong>insert_recordset</strong> is found, the rule checks for <strong>skipDataMethods(true)</strong>. The rule applies only when the <strong>insert</strong> method on the table is overridden.</li>
 <li>When <strong>delete_from</strong> is found, the rule checks for <strong>skipDeleteActions(true)</strong>. The rule applies only when the <strong>insert</strong> method on the table is overridden.</li>
 </ul>
-This is an informational message that highlights the need to call <strong>skip</strong> methods to take full advantage of the performance gains of set-based operations. If <strong>skip</strong> methods aren't used, the execution falls back to a row-by-row operation.</td>
+This is an informational message that highlights the need to call <strong>skip</strong> methods to take full advantage of the performance gains of set-based operations. If <strong>skip</strong> methods aren&#39;t used, the execution falls back to a row-by-row operation.</td>
 </tr>
 <tr class="even">
 <td>Error message</td>
@@ -187,7 +186,7 @@ This is an informational message that highlights the need to call <strong>skip</
 <tbody>
 <tr class="odd">
 <td>Description</td>
-<td>This rule fails if it finds a <strong>try</strong> statement within a <strong>tts</strong> block that isn't handled correctly.</td>
+<td>This rule fails if it finds a <strong>try</strong> statement within a <strong>tts</strong> block that isn&#39;t handled correctly.</td>
 </tr>
 <tr class="even">
 <td>Error message</td>
@@ -229,7 +228,7 @@ catch(Exception::UpdateConflictNotRecovered) {}</code></pre></td>
 
 ### BPCheckBatchJobsEnabled
 
-| Description         | This rule makes sure that all classes that extend **RunBaseBatch** have a **canGoBatch** method that returns **true**. |
+| Description         | This rule makes sure that all classes that extend **RunBaseBatch** have a **canGoBatch** method that returns **true**. |
 |---------------------|------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Custom job is not batch-enabled in class %1                                                                            |
 | Issue type/severity | Code/Warning                                                                                                           |
@@ -247,8 +246,8 @@ catch(Exception::UpdateConflictNotRecovered) {}</code></pre></td>
 <td>Description</td>
 <td>For each control that is bound to a data method, this rules fails if one of these conditions is met:
 <ul>
-<li>The <strong>Cache Data Method</strong> property is set to <strong>Auto</strong>, the corresponding table <strong>display</strong>/<strong>edit</strong> method doesn't have the <strong>SysClientCacheDataMethodAttribute</strong>, and the <strong>init</strong> method of the data source doesn't use <strong>CacheAddMethod</strong>.</li>
-<li>The <strong>Cache Data Method</strong> property is set to <strong>No</strong>, and the <strong>init</strong> method of the data source doesn't use <strong>CacheAddMethod</strong>.</li>
+<li>The <strong>Cache Data Method</strong> property is set to <strong>Auto</strong>, the corresponding table <strong>display</strong>/<strong>edit</strong> method doesn&#39;t have the <strong>SysClientCacheDataMethodAttribute</strong>, and the <strong>init</strong> method of the data source doesn&#39;t use <strong>CacheAddMethod</strong>.</li>
+<li>The <strong>Cache Data Method</strong> property is set to <strong>No</strong>, and the <strong>init</strong> method of the data source doesn&#39;t use <strong>CacheAddMethod</strong>.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -261,10 +260,10 @@ catch(Exception::UpdateConflictNotRecovered) {}</code></pre></td>
 </tr>
 <tr class="even">
 <td>How to fix it</td>
-<td>You can fix this warning by using one of the following patterns:
+<td>You can fix this warning by using one of the following patterns:
 <ul>
-<li>Set the <strong>Cache Data Method</strong> property to <strong>Yes</strong>.</li>
-<li><p>Set the <strong>Cache Data Method</strong> property to <strong>Auto</strong>, and mark the data method of the table with the <strong>SysClientCacheDataMethodAttribute</strong> attribute. Here is an example.</p>
+<li>Set the <strong>Cache Data Method</strong> property to <strong>Yes</strong>.</li>
+<li><p>Set the <strong>Cache Data Method</strong> property to <strong>Auto</strong>, and mark the data method of the table with the <strong>SysClientCacheDataMethodAttribute</strong> attribute. Here is an example.</p>
 <pre><code>[SysClientCacheDataMethodAttribute(true)]
 Display TransDate myDateMethod()
 {
@@ -286,7 +285,7 @@ Display TransDate myDateMethod()
 
 ### BPCheckNewQueryWithForm
 
-| Description         | This rule fails if it finds the **new Query()** statement in the **init** or **executeQuery** method of a form. |
+| Description         | This rule fails if it finds the **new Query()** statement in the **init** or **executeQuery** method of a form. |
 |---------------------|-----------------------------------------------------------------------------------------------------------------|
 | Error message       | Data source query overridden in form method %1                                                                  |
 | Issue type/severity | Code/Warning                                                                                                    |
@@ -298,7 +297,7 @@ Display TransDate myDateMethod()
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Select ForUpdate not implemented in method %1                                                                                                                                                         |
 | Issue type/severity | Code/Warning                                                                                                                                                                                          |
-| How to fix it       | Use **Select** instead of **Select ForUpdate**, or set the **OCC Enabled** property to **Yes** on the table.                                                                                          |
+| How to fix it       | Use **Select** instead of **Select ForUpdate**, or set the **OCC Enabled** property to **Yes** on the table.                                                                                          |
 
 ### BPCheckTablePropertyMismatch
 
@@ -310,11 +309,11 @@ Display TransDate myDateMethod()
 <tbody>
 <tr class="odd">
 <td>Description</td>
-<td>This rule fails when the table belongs to a table group but doesn't have the appropriate <strong>Cache Lookup</strong> value. The rule fails if one of these conditions is met:
+<td>This rule fails when the table belongs to a table group but doesn&#39;t have the appropriate <strong>Cache Lookup</strong> value. The rule fails if one of these conditions is met:
 <ul>
-<li>The <strong>Table Group</strong> property is set to <strong>Main</strong>, and the <strong>Cache Lookup</strong> property is set to <strong>NotinTTS</strong> or <strong>EntireTable</strong>.</li>
-<li>The <strong>Table Group</strong> property is set to <strong>Group</strong> or <strong>Parameter</strong>, and the <strong>Cache Lookup</strong> property is set to <strong>NotinTTS</strong>.</li>
-<li>The <strong>Table Group</strong> property is set to <strong>WorksheetHeader</strong>, <strong>WorksheetLine</strong>, or <strong>Transaction</strong>, and the <strong>Cache Lookup</strong> property is set to <strong>Found</strong>, <strong>FoundAndEmpty</strong>, or <strong>EntireTable</strong>.</li>
+<li>The <strong>Table Group</strong> property is set to <strong>Main</strong>, and the <strong>Cache Lookup</strong> property is set to <strong>NotinTTS</strong> or <strong>EntireTable</strong>.</li>
+<li>The <strong>Table Group</strong> property is set to <strong>Group</strong> or <strong>Parameter</strong>, and the <strong>Cache Lookup</strong> property is set to <strong>NotinTTS</strong>.</li>
+<li>The <strong>Table Group</strong> property is set to <strong>WorksheetHeader</strong>, <strong>WorksheetLine</strong>, or <strong>Transaction</strong>, and the <strong>Cache Lookup</strong> property is set to <strong>Found</strong>, <strong>FoundAndEmpty</strong>, or <strong>EntireTable</strong>.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -334,7 +333,7 @@ Display TransDate myDateMethod()
 
 ### BPCheckMissingDeleteActions
 
-| Description         | This rule validates that the value of either a **delete** action or the **On Delete** property of a table relation isn't equal to **None**. The rule isn't triggered when the related or current table is a tempDB, in memory table, reference table, staging table, or parameter table. |
+| Description         | This rule validates that the value of either a **delete** action or the **On Delete** property of a table relation isn't equal to **None**. The rule isn't triggered when the related or current table is a tempDB, in memory table, reference table, staging table, or parameter table. |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Delete actions missing in table %1 which is related to table %2 with relation name %3                                                                                                                                                                                                    |
 | Issue type/severity | MetaData/Warning                                                                                                                                                                                                                                                                         |
@@ -384,10 +383,10 @@ Display TransDate myDateMethod()
 <td>Description</td>
 <td>This rule validates that, when a form allows for pre-loading of data, the link type of tab page data sources is passive. The rule fails if all the following conditions are met:
 <ul>
-<li>A form has the <strong>AllowPreLoading</strong> property set to <strong>Yes</strong>.</li>
+<li>A form has the <strong>AllowPreLoading</strong> property set to <strong>Yes</strong>.</li>
 <li>A tab page on the form is bound to a top-level data source.</li>
-<li>The data source’s <strong>Join Source </strong>property is set.</li>
-<li>The data source’s <strong>Link Type</strong> property isn't set to <strong>Passive</strong>.</li>
+<li>The data source’s <strong>Join Source </strong>property is set.</li>
+<li>The data source’s <strong>Link Type</strong> property isn&#39;t set to <strong>Passive</strong>.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -411,7 +410,7 @@ Display TransDate myDateMethod()
 |---------------------|------------------------------------------------------------------------------------------|
 | Error message       | Table %1 does not have an alternate key                                                  |
 | Issue type/severity | MetaData/Warning                                                                         |
-| How to fix it       | Set the **Alternate Key** property to **Yes** on a unique index of the table.            |
+| How to fix it       | Set the **Alternate Key** property to **Yes** on a unique index of the table.            |
 
 ### BPCheckBaseTableModified
 

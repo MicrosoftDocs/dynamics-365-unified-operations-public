@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Chronological invoice and voucher numbers for France
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up and use chronological numbers for invoices and vouchers in Accounts receivable for legal entities in France.  
 

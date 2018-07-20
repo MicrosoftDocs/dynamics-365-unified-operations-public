@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
-description: This topic describes how to install the Microsoft Dynamics AX 2012 Test Data Transfer Tool. 
+description: This topic describes how to install the Microsoft Dynamics AX 2012 Test Data Transfer Tool. 
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -32,10 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Install the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-
-This topic describes how to install the Microsoft Dynamics AX 2012 Test Data Transfer Tool (beta). Only advanced users should use this tool. 
+This topic describes how to install the Microsoft Dynamics AX 2012 Test Data Transfer Tool (beta). Only advanced users should use this tool. 
 
 You must be a database administrator or a developer who has experience using Microsoft SQL Server. You must also have permission to read from or write directly to the Microsoft Dynamics AX 2012 database that you are working with, and to execute applications directly on the computer that is hosting the database. Before you begin, your environment must include the following components:
 
@@ -47,11 +46,11 @@ During export, the tool creates three files for each table. Make sure that there
 ## Install the Test Data Transfer Tool (beta)
 1.  Get the tool from the Downloadable tools section of [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?LinkId=228148), and extract it to a local folder.
 2.  Right-click **AX2012TestDataTransferTool.msi**, and then click **Run as administrator**.
-3.  In the **Setup** **Wizard**, accept the license terms, and then select the location in which to install the binaries and files for the tool. By default, the tool is installed to %Program Files%/Microsoft Dynamics AX 2012 Test Data Transfer Tool (Beta).
+3.  In the **Setup** **Wizard**, accept the license terms, and then select the location in which to install the binaries and files for the tool. By default, the tool is installed to %Program Files%/Microsoft Dynamics AX 2012 Test Data Transfer Tool (Beta).
 
- 
 
-See also
+
+Additional resources
 --------
 
 [Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](test-data-transfer-tool-beta-2012.md)

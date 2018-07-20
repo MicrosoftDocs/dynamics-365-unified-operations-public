@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure a conditional decision in a workflow
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Use the following procedure to configure the properties of a conditional decision.
 
 A conditional decision is a point at which a workflow divides into two branches. To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click **Properties** to open the **Properties** form.
 
-## Name a decision
-Follow these steps to enter a name for a conditional decision.
+## Name a decision
+Follow these steps to enter a name for a conditional decision.
 1.  In the left pane, click **Basic Settings**.
 2.  In the **Name** field, enter a unique name for the conditional decision.
 

@@ -13,11 +13,11 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: InventParameters
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 2094
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inventory management 
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can use Inventory management to perform the following tasks:
 

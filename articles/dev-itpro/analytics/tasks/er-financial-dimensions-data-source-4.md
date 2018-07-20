@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Run a report that uses financial dimensions as a data source for electronic reporting (ER)
+title: Run a report that uses financial dimensions as a data source 
 description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Run a report that uses financial dimensions as a data source for electronic reporting (ER)
+# Run a report that uses financial dimensions as a data source
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. These steps can be performed in the DEMF company.
 
@@ -48,5 +48,5 @@ To complete these steps, you must first complete the steps in the “ER Use fina
 9. In the Criteria field, type '00057'.
 10. Click OK.
 11. Click OK.
-    * Review the generated output. Note that for each transaction of the selected batch, the financial dimensions from the corresponding dimensions set are presented. Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this Dynamics 365 for Finance and Operations, Enterprise edition instance.  
+    * Review the generated output. Note that for each transaction of the selected batch, the financial dimensions from the corresponding dimensions set are presented. Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this Dynamics 365 for Finance and Operations instance.  
 

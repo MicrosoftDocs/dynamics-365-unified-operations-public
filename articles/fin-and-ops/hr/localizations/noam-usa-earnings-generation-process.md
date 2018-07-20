@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Earnings and generating earnings FAQ
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic answers some frequently asked questions about earnings and generating earnings. It includes questions about distributions and earning lines, recurring earnings, calculating salaries for workers who are on leave, and earnings generation. 
 
@@ -70,7 +69,7 @@ When you generate earnings, you might receive the following message: “The sele
 -   The worker wasn't assigned to a position during the pay period that you selected.
 -   The legal entity that you're signed in to doesn't match the **Paid by** value that was in effect for the position at the end of the pay period.
 -   You haven’t selected the **Generate salary** or **Generate earnings from schedule** option on the **Position** page, and there aren’t any recurring earning codes to generate for any workers.
--   The pay period that you selected has the wrong year. For example, you selected January 1, 2013, through January 15, 2013, but you intended to select January 1, 2014, through January 15, 2014.
+-   The pay period that you selected has the wrong year. For example, you selected January 1, 2013, through January 15, 2013, but you intended to select January 1, 2014, through January 15, 2014.
 
 **Important:** The fields on the **Payroll** FastTab of the **Position** page have their own date-effective settings. To view these settings, click **Changes timeline** &gt; **Manage changes** &gt; **Payroll Tab**.
 

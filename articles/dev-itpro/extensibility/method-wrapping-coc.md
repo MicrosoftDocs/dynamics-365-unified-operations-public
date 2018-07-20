@@ -5,7 +5,7 @@ title: Class extension - Method wrapping and Chain of Command
 description: This topic discusses how to extend the business logic of public and protected methods by using method wrapping. 
 author: robadawy
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
@@ -30,7 +29,10 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Class extension: Method wrapping and Chain of Command
-The functionality for class extension, or class augmentation, has been improved. You can now wrap logic around methods that are defined in the base class that you're augmenting. You can extend the logic of public and protected methods without having to use event handlers. When you wrap a method, you can also access public and protected methods, and variables of the base class. In this way, you can start transactions and easily manage state variables that are associated with your class.
+
+[!include [banner](../includes/banner.md)]
+
+The functionality for class extension, or class augmentation, has been improved in Microsoft Dynamics 365 for Finance and Operations. You can now wrap logic around methods that are defined in the base class that you're augmenting. You can extend the logic of public and protected methods without having to use event handlers. When you wrap a method, you can also access public and protected methods, and variables of the base class. In this way, you can start transactions and easily manage state variables that are associated with your class.
 
 For example, a model contains the following code.
 
@@ -72,7 +74,7 @@ When this code is run, the system finds any method that wraps the **DoSomething*
 
 ## Supported versions
 > [!IMPORTANT]
-> The functionality that is described in this topic (CoC and access to protected methods and variables) is available in Microsoft Dynamics 365 Unified Operations Platform update 9. However, the class that is being augmented must also be compiled on Platform update 9 or later. As of August 2017, all current releases of the applications for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, have been compiled on Platform update 8 or earlier. Therefore, to wrap a method that is defined in a base package (such as Application Suite), you must recompile that base package on Platform update 9 or later.
+> The functionality that is described in this topic (CoC and access to protected methods and variables) is available in Platform update 9. However, the class that is being augmented must also be compiled on Platform update 9 or later. As of August 2017, all current releases of the applications for Finance and Operations have been compiled on Platform update 8 or earlier. Therefore, to wrap a method that is defined in a base package (such as Application Suite), you must recompile that base package on Platform update 9 or later.
 As an example: If you create your own extension model that is augmenting a class that exists in the Application Suite model, and if you are using CoC or accessing protected methods/variables, you will need to build both Application Suite and your extension model. You will also need to create a deployable package that includes both models in order to deploy this functionality on a runtime environment.
 This is a temporary situation until the next release of the Microsoft Dynamics 365 for Finance and Operations application.
 

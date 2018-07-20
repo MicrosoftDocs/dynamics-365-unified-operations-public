@@ -5,7 +5,7 @@ title: Apply the latest platform update to your Dynamics 365 Finance and Operati
 description: This topic explains how to apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations Enterprise edition environment.
 author: tariqbell
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 3
 
 # Apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations environment
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to apply the latest platform release to your Microsoft Dynamics 365 for Finance and Operations environment.
 
@@ -59,43 +59,42 @@ If you are already running on platform update 4 or later, updating the Finance a
 
 Learn how to **get the latest platform package and apply it to an environment deployed through LCS** in the next section.
 
-### How to get the latest platform package
-There are two ways to get the latest platform update package.
-- Click the **Platform binary updates** tile of your environment's page in LCS to get the latest platform update or a platform hotfix. 
-- Click the **All Binary Updates** tile of your environment's page in LCS to get a combined package of application and platform binary updates.(As of Platform update 4, binary updates from LCS include an upgrade to the latest platform).
+## Apply the latest platform update package
+There are two ways to get the latest platform update package in LCS from your environment page.
+- Click the **Platform binary updates** tile 
+- Click the **All Binary Updates** tile to see a list of combined package of application and platform binary updates. (As of Platform update 4, binary updates from LCS include an upgrade to the latest platform).
 
 > [!NOTE]
-> Tiles on an environments page in LCS show the updates that are applicable to your environment based on the version of the environment you have deployed. 
+> Tiles on an environment's page in LCS show only the updates that are applicable to your environment based on the current version and state of the environment.
 
-### Import the platform update package
-Get the latest platform update package by clicking on one of the two tiles as mentioned above. After reviewing the KBs included in the platform, click on **Save Package** button to save the package to the project asset library.
+Get the latest platform update package by clicking on one of the two tiles as mentioned above. After reviewing the fixes included in the platform, click **Save Package** to save the package to the project asset library.
 
-### Choose the correct package deployment method
-From a process perspective, deploying a platform upgrade package resembles a binary hotfix deployable package.
+From a process perspective, deploying a platform upgrade package resembles a binary hotfix deployable package.
 
--   To apply a platform update package to your cloud development, build, demo, tier-2 sandbox, or production environment, update directly from LCS.
-[![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg) 
-For more details, follow the instructions for applying a binary hotfix in [Apply a deployable package on a Microsoft Dynamics 365 for Finance and Operations system](..\deployment\apply-deployable-package-system.md).
+-   To apply a platform update package to your cloud development, build, demo, tier-2 sandbox, or production environment, update directly from LCS.
+[![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg)
 
-Learn how to apply a platform update package to your **local development environments (environments not connected to LCS servicing)** in the next section:
+For more details, follow the instructions for applying a binary hotfix in [Apply a deployable package](../deployment/apply-deployable-package-system.md).
 
 > [!NOTE]
 > **Migrate files for Document management**: After upgrading to Platform update 6 or later, an administrator needs to click the **Migrate Files** button on the **Document management parameters** page to finish the upgrade process. This will migrate any attachments stored in the database to blob storage. The migration will run as a batch process and could take a long time, depending on the number and size of the files being moved from the database into Azure blob storage. The attachments will continue to be available to users while the migration process is running, so there should be no noticeable effects from the migration. To check if the batch process is still running, look for the **Migrate files stored in the database to blob storage** process on the **Batch jobs** page.
 
-### How to get the latest platform package
-- In Lifecycle Services (LCS), import the platform update package from the Shared Asset Library.
+## Apply a platform update to environments that are not connected to LCS
+This section describes how to apply a platform update package to a *local development environment* (one that that is not connected to LCS).
 
-### Import the platform update package
-Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Dynamics 365 packages are currently prefixed with *Finance and Operations Platform Update* (for example, Finance and Operations Platform Update 3)*.* Use these steps to import the platform update package:
+### How to get the platform update package
+Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The package name is prefixed with **Dynamics 365 Unified Operations Platform Update**. Use these steps to import the platform update package:
 
 1.  Go to your LCS project's Asset library.
-2.  On the **Software deployable package** tab, click **Import** to create a reference to the platform update package. [![Import button](./media/importupgradepackage.png)](./media/importupgradepackage.png)
+2.  On the **Software deployable package** tab, click **Import** to create a reference to the platform update package. [![Import button](./media/importupgradepackage.png)](./media/importupgradepackage.png)
 3.  Select the desired platform update package.
 
-### Apply the platform update package on your development environment
-Follow the instructions in this section if you are upgrading your local development or build environment to the latest platform. 
 > [!NOTE]
-> This only applies to environments that cannot be updated directly from LCS.
+> The package in the Shared Asset library may not correspond to the latest build (with hotfixes) of the desired platform release. To guarrantee the latest build, use the LCS environment page as described earlier in this article.
+
+### Apply the platform update package to your development environment
+> [!NOTE]
+> These instructions apply only to environments that cannot be updated directly from LCS.
 
 ### Install the deployable package
 
@@ -103,27 +102,28 @@ Follow the instructions in this section if you are upgrading your local developm
 2.  Unzip the contents to a local directory.
 3.  Depending on the type of environment that you're upgrading, open the PlatformUpdatePackages.Config file under \\AOSService\\Scripts, and change the **MetaPackage** value.
     -   If you're upgrading a development or demo environment that contains source code, change the **MetaPackage** value to **dynamicsax-meta-platform-development**.
-    -   If you're upgrading a runtime environment, such as a tier-2 sandbox environment or another environment that doesn't contain source code, the default value, **dynamicsax-meta-platform-runtime**, is correct.
+    -   If you're upgrading a runtime environment, such as a tier-2 sandbox environment or another environment that doesn't contain source code, the default value, **dynamicsax-meta-platform-runtime**, is correct.
 
 > [!NOTE]
-> Step 3 is not applicable when upgrading to platform update 4 or newer.
+> Step 3 is not applicable when upgrading to platform update 4 or later.
 
 4.  Follow the instructions for installing a deployable package. See [Install a deployable package](../deployment/install-deployable-package.md).
 5.  If you're working in a development environment, rebuild your application’s code.
 
-
 #### Example
 
-    AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="OneBoxDev-runbook.xml"
+```
+AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="OneBoxDev-runbook.xml"
 
     AXUpdateInstaller.exe import -runbookfile=OneBoxDev-runbook.xml
 
     AXUpdateInstaller.exe execute -runbookid=OneBoxDev
+```
 
-### Install the Visual Studio development tools
+### Install the Visual Studio development tools (Platform update 3 or earlier)
 
 > [!NOTE]
-> Skip this section if you are updating to platform update 4 or newer, development tools are automatically installed as part of installing the deployable package.
+> Skip this section if you are updating to platform update 4 or later, development tools are automatically installed as part of installing the deployable package.
 
 Update the Visual Studio development tools as described in [Updating the Visual Studio development tools](../dev-tools/update-development-tools.md).
 
@@ -136,14 +136,15 @@ Form adaptor models are required for test automation. Regenerate the platform fo
 -   DirectoryFormAdaptor
 
 The following examples show how to generate the form adaptor models.
+```
+xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="ApplicationPlatformFormAdaptor" -xmllog="c:\temp\log1.xml"
 
-    xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="ApplicationPlatformFormAdaptor" -xmllog="c:\temp\log1.xml"
+xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="ApplicationFoundationFormAdaptor" -xmllog="c:\temp\log2.xml"
 
-    xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="ApplicationFoundationFormAdaptor" -xmllog="c:\temp\log2.xml"
+xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="DirectoryFormAdaptor" -xmllog="c:\temp\log3.xml"
+```
 
-    xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="DirectoryFormAdaptor" -xmllog="c:\temp\log3.xml"
-
-### Install the new Data Management service
+### Install the Data Management service (Platform update 3 or earlier)
 
 > [!NOTE]
 > Skip this section if you are updating to platform update 4 or newer, the data management service is automatically installed as part of installing the deployable package.
@@ -160,23 +161,29 @@ If you're connected to an earlier release of Microsoft SQL Server Integration Se
 
     msiexec /i "DIXF_Service_x64.msi" ISSQLSERVERVERSION="Bin" SERVICEACCOUNT="NT AUTHORITY\NetworkService" /qb /lv DIXF_log.txt
 
-## Apply the platform update package on a build environment
+## Apply the platform update package on a build environment (Platform update 6 or earlier)
 
 > [!NOTE]
 > Skip this section if you are updating to platform update 7 or newer. This was a pre-requesite step for build environments.
 
-If the build machine has been used for one or more builds, you should restore the metadata packages folder from the metadata backup folder before you upgrade the VM to a newer Dynamics 365 for Finance and Operations platform. You should then delete the metadata backup. These steps help ensure that the platform update will be applied on a clean environment. The next build process will then detect that no metadata backup exists and will automatically create a new one. This new metadata backup will include the updated platform. To determine whether a complete metadata backup exists, look for a BackupComplete.txt file in I:\\DynamicsBackup\\Packages (or C:\\DynamicsBackup\\Packages on a downloadable virtual hard disk \[VHD\]). If this file is present, a metadata backup exists, and the file will contain a timestamp that indicates when it was created. To restore the deployment's metadata packages folder from the metadata backup, open an elevated Windows PowerShell **Command Prompt** window, and run the following command. This command will run the same script that is used in the first step of the build process.
+If the build machine has been used for one or more builds, you should restore the metadata packages folder from the metadata backup folder before you upgrade the VM to a newer Dynamics 365 for Finance and Operations platform. You should then delete the metadata backup. These steps help ensure that the platform update will be applied on a clean environment. The next build process will then detect that no metadata backup exists and will automatically create a new one. This new metadata backup will include the updated platform. To determine whether a complete metadata backup exists, look for a BackupComplete.txt file in I:\\DynamicsBackup\\Packages (or C:\\DynamicsBackup\\Packages on a downloadable virtual hard disk \[VHD\]). If this file is present, a metadata backup exists, and the file will contain a timestamp that indicates when it was created. To restore the deployment's metadata packages folder from the metadata backup, open an elevated Windows PowerShell **Command Prompt** window, and run the following command. This command will run the same script that is used in the first step of the build process.
 
     if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
 
-**Note:** Run the preceding command only if a complete metadata backup exists. If a complete metadata backup doesn't exist, the command will create a new backup. This command will stop the Finance and Operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. You should see output that resembles the following example. <br><br>*6:17:52 PM: Preparing build environment...* *6:17:53 PM: Updating Dynamics SDK registry key with specified values...* *6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...* *6:17:53 PM: Stopping Finance and Operations deployment...* *6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created**.* *6:18:06 PM: **Restoring metadata packages from backup...*** *6:22:56 PM: **Metadata packages successfully restored from backup**.* *6:22:57 PM: Preparing build environment complete.* *6:22:57 PM: Script completed with exit code: 0* <br><br> After the metadata backup has been restored, delete (or rename) the metadata backup folder (DynamicsBackup\\Packages), so that it will no longer be found by the build process.
+If a complete metadata backup doesn't exist, the command will create a new backup. This command will also stop the Finance and Operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. 
+You should see output that resembles the following example. 
+```
+6:17:52 PM: Preparing build environment...* <em>6:17:53 PM: Updating Dynamics SDK registry key with specified values...</em> <em>6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...</em> <em>6:17:53 PM: Stopping Finance and Operations deployment...</em> <em>6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created</em><em>.</em> <em>6:18:06 PM: **Restoring metadata packages from backup...</em>** <em>6:22:56 PM: **Metadata packages successfully restored from backup</em><em>.</em> <em>6:22:57 PM: Preparing build environment complete.</em> <em>6:22:57 PM: Script completed with exit code: 0</em> 
+```
+
+After the metadata backup has been restored, delete (or rename) the metadata backup folder (DynamicsBackup\\Packages), so that it will no longer be found by the build process.
 
 ### Apply the platform update package
 
 After you've prepared your build environment for this update, apply the platform update package by using the same method that you use on other environments.
 
 ## Upgrading to platform update 3 from an earlier build
-When upgrading to platform update 3 from an earlier build, there are some very important considerations because of two key changes in update 3:
+When upgrading to platform update 3 from an earlier build, there are some very important considerations because of two key changes in update 3:
 
 - It is no longer possible to overlayer platform models (Application Platform, Application Foundation, Test Essentials).
 - You need to delete all X++ hotfixes to the platform that are in you version control (see the section below)
@@ -184,7 +191,7 @@ When upgrading to platform update 3 from an earlier build, there are some very
 
 This means two things:
 
-1.  If taking only platform update 3 and not taking the application update (Finance and Operations version 1611), then you cannot have overlayering on any of the following models. All overlayering on these models must be removed before attempting to install update 3:
+1.  If taking only platform update 3 and not taking the application update (Finance and Operations version 1611), then you cannot have overlayering on any of the following models. All overlayering on these models must be removed before attempting to install update 3:
     -   Application Platform
     -   Application Foundation
     -   Test Essentials
@@ -192,23 +199,23 @@ This means two things:
 
 2.  If you cannot remove over-layering from the Directory model, and you still want to upgrade, you will have to do a complete upgrade of the platform and the application (Finance and Operations version 1611) as described in [Overview of moving to the latest update of Finance and Operations](upgrade-latest-update.md).
 
-### How to Delete platform metadata hotfixes from your VSTS project?
+### Delete platform metadata hotfixes from your VSTS project (Platform update 2 or earlier)
 
 > [!NOTE]
 > This section is not relevant if you are already on Platform update 3 and updating to a newer platform.
 
 Before you install the new platform update, you must clean up your Microsoft Visual Studio Team Services (VSTS) source control project.
-Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your VSTS project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
+Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your VSTS project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
 
 -   Application Platform
 -   Application Foundation
 -   TestEssentials
 -   Directory
 
-You can find these hotfixes by browsing the check-in history of these Microsoft models. For example, use Source Control Explorer to browse the check-in history of the Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation folder, and delete all XML files that have been checked in to it.
+You can find these hotfixes by browsing the check-in history of these Microsoft models. For example, use Source Control Explorer to browse the check-in history of the Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation folder, and delete all XML files that have been checked in to it.
 ![View History](./media/checkinhistory.png)
 
-See also
+Additional resources
 --------
 
 [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md)

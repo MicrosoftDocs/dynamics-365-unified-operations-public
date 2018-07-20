@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure case security, processes, and categories
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes the considerations and decisions that you must make during the planning process, before you configure cases in Microsoft Dynamics 365 for Finance and Operations.
 
@@ -56,14 +55,14 @@ Only appropriate employees in an organization should have access to cases and re
 -   FMLA
 
 ## Case processes
-You should set up processes that employees must follow for the cases that are opened in your organization. Processes help guarantee consistency for the people who are involved in cases, and also help employees resolve cases faster and more efficiently. You can set up a process for each case category that cases are assigned to. Although planning a separate process for each case type takes time, case resolution will go much more smoothly if the processes are planned out. **Decisions:** For each case process, you must make the following decisions:
+You should set up processes that employees must follow for the cases that are opened in your organization. Processes help guarantee consistency for the people who are involved in cases, and also help employees resolve cases faster and more efficiently. You can set up a process for each case category that cases are assigned to. Although planning a separate process for each case type takes time, case resolution will go much more smoothly if the processes are planned out. **Decisions:** For each case process, you must make the following decisions:
 
 -   What are the name and description of the process?
 -   Is the process active, and should employees use it when they handle a case that the process is assigned to?
 -   Who in the organization will be responsible for applying the process to a case? For example, Cost accounting or Human resources might be responsible for some case processes. Note that multiple areas can be responsible for completing one process.
 
 ## Case categories
-The Case category hierarchy provides a list of categories that you can assign cases to (see the "Case category security by role" section). Each top-level category includes subcategories, so that you can create more specific categories for the cases that your organization works with. Review the list of existing categories and subcategories to determine whether you must create more. If you must create more categories and subcategories, you must make the following decisions for each addition. **Decisions:**
+The Case category hierarchy provides a list of categories that you can assign cases to (see the "Case category security by role" section). Each top-level category includes subcategories, so that you can create more specific categories for the cases that your organization works with. Review the list of existing categories and subcategories to determine whether you must create more. If you must create more categories and subcategories, you must make the following decisions for each addition. **Decisions:**
 
 -   Are you creating a new top-level category?
     -   What is the name of the category

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dimension entry control migration
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run. It uses the PurchTable form as an example.
 
@@ -44,7 +43,7 @@ Simple migration scenario - PurchTable form
 2.  Add the form to the current project.
 3.  Open the form in the designer and code editor view.
 4.  In the form design view
-    1.  Locate the dimension entry controls (DECs), either by manually in the control tree or by searching for "DimensionEntry" in the search bar below the **File** tab.
+    1.  Locate the dimension entry controls (DECs), either by manually in the control tree or by searching for "DimensionEntry" in the search bar below the **File** tab.
     2.  Select the first **DEC** (DimensionEntryControlHeader) and verify the following:
         -   The type for the control, specified in parenthesis next the control, is Dimension Entry Control.
         -   The Controller class property is blank. This property indicates what type of controller will be used by this instance of DEC, which in turn governs the behavior of the control. When this property is blank, the controller is determined by the EDT of the field specified in the **Value Data** field (in this case, the **DefaultDimension** field on the **PurchTable** table). Search for the **PurchTable** table in the Application Explorer. Right-click **PurchTable** and select **Open Designer**. Expand the **Fields** node and select the **DefaultDimension** field. The EDT property of this field is set to LedgerDefaultDimensionValueSet. This EDT implies that this control will use the LedgerDefaultDimensionEntryController.
@@ -79,7 +78,7 @@ Simple migration scenario - PurchTable form
 |                                                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Before**                                                                                                                                      | **After**                                                                                                                                                                                                                                                                                                                                                                   |
-| /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlHeader.reactivate(); | Because this method call does not have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. The entire modified() method can be deleted as well because the super() call is all that remains. The ProjId class can be removed because there are no methods in it. |
+| /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlHeader.reactivate(); | Because this method call does not have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. The entire modified() method can be deleted as well because the super() call is all that remains. The ProjId class can be removed because there are no methods in it. |
 
 ## Data field VendGroup
 (**Form &gt; Data sources &gt; PurchTable &gt; Fields &gt; VendGroup &gt; Methods**)
@@ -146,7 +145,7 @@ Simple migration scenario - PurchTable form
 
 
 
-See also
+Additional resources
 --------
 
 [Dimension Entry control uptake](dimension-entry-control-uptake.md)

@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # List Panel subpattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the List Panel form subpattern. Application teams use this subpattern to manage two lists that move data between each other.
 
 Usage
 -----
 
-List Panel is the subpattern that application teams use to manage two lists that move data between each other. This pattern is meant to represent a modeled version of the **SysListPanel** class (programmatic) approach of managing two lists that move data between each other. The List Panel subpattern can be applied on the following controls:
+List Panel is the subpattern that application teams use to manage two lists that move data between each other. This pattern is meant to represent a modeled version of the **SysListPanel** class (programmatic) approach of managing two lists that move data between each other. The List Panel subpattern can be applied on the following controls:
 
 -   TabPage control
 -   Group control
@@ -97,7 +96,7 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
     -   No additional BP checks are required beyond the AX6.3 BP checks that were carried forward.
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
 
 -   **Standard form guidelines:**
     -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.

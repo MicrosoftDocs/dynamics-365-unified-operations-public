@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Platform update 9
 
 # Naming Guidelines
 
+[!include [banner](../includes/banner.md)]
+
 ## Naming model elements
 Any element in a model must be given a name, which is unique across all models at installation time. 
 Given that all potential models, that your model will be installed together with, are unknown at implementation time, then every element name should include a prefix, which is specific to your solution. 

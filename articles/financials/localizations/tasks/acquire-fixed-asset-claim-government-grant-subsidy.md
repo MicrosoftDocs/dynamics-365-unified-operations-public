@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Acquire a fixed asset and claim for the government grant subsidy (Japan)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Use this task to walk through acquiring a fixed asset and then claiming it for a government grant.
 

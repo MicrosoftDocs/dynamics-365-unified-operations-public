@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Modify a format by reapplying a Microsoft Excel template for electronic reporting (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To complete the steps in this procedure, you must first complete the procedure, ER - Design a configuration for generating reports in OPENXML format.
 

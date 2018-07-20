@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # GenericValue Type
+
+[!include [banner](../../../../includes/banner.md)]
+
 Generic value control type.
 
 ### Hierarchy
@@ -177,7 +180,7 @@ metadata(): [ValueMetadata](view-model-control-value-ivalue-ivaluemetadata.md)
 Returns the metadata object of this control.
 
 > Inherited from [Value](view-model-control-value-ivalue-ivalue.md).[metadata](view-model-control-value-ivalue-ivalue.md#metadata)
-
+> 
 > Overrides [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[metadata](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#metadata)
 
 #### Returns [ValueMetadata](view-model-control-value-ivalue-ivaluemetadata.md)

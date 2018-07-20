@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Form design requirements
+
+[!include [banner](../../includes/banner.md)]
 
 This section provides valuable guidelines for building Finance and Operations forms that work well with the mobile app.
 

@@ -32,16 +32,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Preliminary budgets and apportionments in the public sector
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic covers creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget. 
 
-The following sections in this topic describe the budgeting features that are available for the public sector.  Before you read this topic, you should also read [Budgeting in the public sector](budgeting-public-sector.md).
+The following sections in this topic describe the budgeting features that are available for the public sector.  Before you read this topic, you should also read [Budgeting in the public sector](budgeting-public-sector.md).
 
 -   Setting up budgeting and budget control for apportionments - You can define one or more budget codes for the apportionment budget type and configure budget control for apportionments.
 -   Setting up budgeting and budget control for a preliminary budget - You can define budget codes for the preliminary budget type and configure budget control for preliminary budgets.
--   Creating, viewing, and reversing a preliminary budget - You can create preliminary budget entries, as well as create original budget entries.
+-   Creating, viewing, and reversing a preliminary budget - You can create preliminary budget entries, as well as create original budget entries.
 
 
 ## Set up budgeting and budget control for apportionments
@@ -110,7 +109,7 @@ The **Budget control configuration** page contains the options for working with 
 > If preliminary budgets are included in the budget funds available calculation, it is important to reverse the preliminary budget register entries when the original budget register entries are recorded in the budget balances. If the budget register entries with preliminary budget codes are not reversed, then both the preliminary budget and original budget types are added, which will overstate the available balance. For more information, see "How do I reverse a preliminary budget?" later in this article. In the **Documents and journals** section, when you select the **Purchase requisitions** option, note that the options for purchase orders and vendor invoices options are automatically selected.
 
 
-## Create, view, and reverse a preliminary budget
+## Create, view, and reverse a preliminary budget
 After you set up basic budgeting and budget control for the preliminary budget, you can create budget register entries for the preliminary budget type.
 
 ### How do I create and view a preliminary budget?

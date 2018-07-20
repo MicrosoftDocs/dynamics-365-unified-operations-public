@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 9
 
 # Getting started with the mobile platform
 
+[!include [banner](../../includes/banner.md)]
+
 After you acquire a development environment, complete the following procedures to get started with development.
 
 ### Get the Fleet Management mobile forms
@@ -66,7 +68,7 @@ The mobile app is being made available for the most popular mobile operating sys
 
 You're done! Launch the app from your mobile device to see the sample workspace.
 
-### See Also
+### Additional resources
 
 [Architecture](mobile-platform-architecture.md) 
 

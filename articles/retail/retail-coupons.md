@@ -13,12 +13,15 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: RetailCoupon
+
+ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
+
+ms.search.scope: Core, Operations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -31,8 +34,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Create coupons for retail sales
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 ## Overview of coupons
 
@@ -49,9 +51,12 @@ To create a coupon, you create the discount and the coupon separately. You then 
 
 ### Limited-use coupons
 
-Coupons can be configured as limited-use coupons. The usage limit can be defined per customer or channel, or as a global limit. This limit is enforced when the code or bar code is entered or scanned in POS or during sales order entry. A coupon is recorded as used when an order is completed that has the coupon associated with it.
+Coupons can be configured as limited-use coupons. The usage limit can be defined per customer or channel, or as a global limit. This limit is enforced when the code or bar code is entered or scanned in POS or during sales order entry.
 
 The limit is enforced per coupon code on a coupon. For example, a single-use coupon that has two coupon codes can be used two times: one time for each coupon code. Each code on a coupon can be independently set to active.
+
+> [!NOTE]
+> Once a coupon code has reached its usage limit, the system does *not* automatically change the status of the coupon code to "Used". The system however, does not allow further usage of a coupon code which has reached its usage limit. If the status of a coupon code is manually set to anything apart from "Active" then this coupon code cannot be used in any channel.
 
 ## Managing coupons
 
@@ -64,16 +69,16 @@ Essentially, coupons are now additional validation on top of retail discounts. T
 Before you can set up a coupon, you must set up the coupon bar code and two coupon number sequences. 
 
 1.  On the **Mask characters** page, create a new mask character for the coupon code. You can select any unused character.
-2.	On the **Bar code mask setup** page, create a new bar code mask. Set the **Type** field to **Coupon**.
-3.	On the **Bar code setup** page, create a new bar code that uses the bar code mask that you just created.
-4.	On the **Number sequences** page, create two new number sequences. One sequence is for the coupon code ID, and the other sequence is for the coupon number. The coupon code ID is the unique identifier for each coupon code for a coupon. The coupon number is the unique identifier for a coupon. Each coupon can have multiple codes and bar codes that trigger the coupon.
+2.  On the **Bar code mask setup** page, create a new bar code mask. Set the **Type** field to **Coupon**.
+3.  On the **Bar code setup** page, create a new bar code that uses the bar code mask that you just created.
+4.  On the **Number sequences** page, create two new number sequences. One sequence is for the coupon code ID, and the other sequence is for the coupon number. The coupon code ID is the unique identifier for each coupon code for a coupon. The coupon number is the unique identifier for a coupon. Each coupon can have multiple codes and bar codes that trigger the coupon.
 
     > [!NOTE]
     > For both number sequences, you must set the **Scope** field to **Company**. In most cases, you should automatically generate both sequence numbers.
 
-5.	On the **Retail shared parameters** page, on the **Bar codes** tab, select the bar code that you created earlier.
-6.	On the **Retail parameters** page, on the **Number sequences** tab, select the number sequences that you created for the coupon number and coupon code ID.
-7.	You can now open the **Coupons** page and create new coupons.
+5.  On the **Retail parameters** page, on the **Bar codes** tab, select the bar code that you created earlier.
+6.  On the **Retail shared parameters** page, on the **Number sequences** tab, select the number sequences that you created for the coupon number and coupon code ID.
+7.  You can now open the **Coupons** page and create new coupons.
 
 ## The effect of partial updates on coupons
 

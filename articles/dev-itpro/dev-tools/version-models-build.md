@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Version models in the automated build
+
+[!include [banner](../includes/banner.md)]
+
 In Platform update 6, a new task in the automated build definition updates the models in the source package and deployable package of the build output with the version of the build that produced them.
 
 Build definitions that were created before Platform update 6 must be manually updated to include this task. See the [Updating an existing build definition](#updating-an-existing-build-definition) section later in this topic.
@@ -69,7 +72,7 @@ For third parties that develop solutions in the ISV or ISP layer, a manual chang
 1. Edit the build definition. On the **Tasks** tab, click the **Set Model Versions** task. 
 1. In the **Arguments** field, add the following option at the end of the existing list of arguments: **-UpdateLayersAbove 7**
 
-# Updating an existing build definition
+## Updating an existing build definition
 For build definitions that were created before Platform update 6, a new task must be manually added to the build definition.
 
 > [!NOTE]

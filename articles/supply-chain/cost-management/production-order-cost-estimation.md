@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Production order cost estimation
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about production cost estimation. Production cost estimation provides the projected material and capacity consumption costs of producing an item in the planned production order quantity. 
 

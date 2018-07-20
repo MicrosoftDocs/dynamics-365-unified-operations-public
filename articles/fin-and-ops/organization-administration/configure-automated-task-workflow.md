@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure an automated task in a workflow
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure the properties for an automated task.
 
@@ -53,7 +52,7 @@ You can send notifications to people when an automated task has been run or canc
     -   **Execution** – Notifications are sent when the task has been run.
     -   **Canceled** – Notifications are sent when the task has been canceled.
 
-3.  Select the row for an event that you selected in step 2.
+3.  Select the row for an event that you selected in step 2.
 4.  On the **Notification text** tab, in the text box, enter the text of the notification.
 5.  To personalize the notification, you can insert placeholders. Placeholders are replaced with appropriate data when the notification is shown to users. Follow these steps to insert a placeholder:
     1.  In the text box, click where the placeholder should appear.
@@ -66,10 +65,10 @@ You can send notifications to people when an automated task has been run or canc
     2.  On the page that appears, click **Add**.
     3.  In the list that appears, select the language that you're entering the text in.
     4.  In the **Translated text** field, enter the text.
-    5.  To personalize the text, you can insert placeholders as described in step 5.
+    5.  To personalize the text, you can insert placeholders as described in step 5.
     6.  Click **Close**.
 
-7.  On the **Recipient** tab, specify who the notifications are sent to. Select one of the options in the following table, and then follow the additional steps for that option before you go to step 8.
+7.  On the **Recipient** tab, specify who the notifications are sent to. Select one of the options in the following table, and then follow the additional steps for that option before you go to step 8.
     <table>
     <colgroup>
     <col width="33%" />
@@ -110,7 +109,7 @@ You can send notifications to people when an automated task has been run or canc
     </tbody>
     </table>
 
-8.  Repeat steps 3 through 7 for each event that you selected in step 2.
+8.  Repeat steps 3 through 7 for each event that you selected in step 2.
 
 
 

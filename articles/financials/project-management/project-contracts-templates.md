@@ -5,7 +5,7 @@ title: Synchronize project contracts and projects directly from Project Service 
 description: This topic describes the template and underlying tasks that are used to synchronize project contracts and projects directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
-ms.date: 12/13/2017
+ms.date: 07/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

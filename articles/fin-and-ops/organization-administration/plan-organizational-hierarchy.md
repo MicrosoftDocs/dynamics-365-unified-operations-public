@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Plan your organizational hierarchy
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Before you set up organizations and organization hierarchies in Microsoft Dynamics 365 for Finance and Operations, make sure that you plan how your business will be modeled. The organization model has a significant effect on the implementation of Finance and Operations and on business processes. 
 
@@ -42,20 +41,20 @@ Organizational hierarchies represent the relationships between the organizations
 When you are planning hierarchies, it is also important to consider the relationship between the organizational hierarchy and financial dimensions. You can set up multiple organizational hierarchies to represent different views of your business. By using financial dimensions, you can create reports based on these views. Work with your Microsoft Dynamics 365 for Finance and Operations partner to create hierarchies that address both organizational and statutory reporting needs. 
 
 > [!Note]
-> Although you can use financial dimensions to represent legal entities without creating the legal entities in Finance and Operations, financial dimensions aren’t designed to address the operational or business needs of legal entities. The interunit accounting functionality in Finance and Operations is designed to address only the accounting entries that are created by each transaction. 
+> Although you can use financial dimensions to represent legal entities without creating the legal entities in Finance and Operations, financial dimensions aren’t designed to address the operational or business needs of legal entities. The interunit accounting functionality in Finance and Operations is designed to address only the accounting entries that are created by each transaction. 
 
 > [!Caution]
-> You shouldn’t decide how to model organizations based only on the information in this article. This documentation is a guide. You can work with your Finance and Operations Partner for additional guidance. Your Finance and Operations Partner has gained experience in various industries and across the customer base.
+> You shouldn’t decide how to model organizations based only on the information in this article. This documentation is a guide. You can work with your Finance and Operations Partner for additional guidance. Your Finance and Operations Partner has gained experience in various industries and across the customer base.
 
 ## Decide whether to model internal organizations as legal entities or operating units
 
 You must have at least one legal entity to represent your business in Finance and Operations. A legal entity can enter legal contracts and is required to prepare financial statements that report on its performance. 
 
-In Finance and Operations, legal entities can be used for transactional business or for consolidation. This means that a legal entity in Finance and Operations does not necessarily represent a real entity in your business. For example, a company that participates in transactions can own subsidiary legal entities. In this scenario, a legal entity is required for transactions, and a virtual legal entity is required to consolidate the results and balances of the subsidiary legal entities. 
+In Finance and Operations, legal entities can be used for transactional business or for consolidation. This means that a legal entity in Finance and Operations does not necessarily represent a real entity in your business. For example, a company that participates in transactions can own subsidiary legal entities. In this scenario, a legal entity is required for transactions, and a virtual legal entity is required to consolidate the results and balances of the subsidiary legal entities. 
 
 Internal organizations in your business, such as regional offices, can be represented as additional legal entities, or as operating units of the main legal entity. An operating unit is not required to be a legally defined organization. Operating units are used to control economic resources and operational processes in the business. For example, departments and cost centers are operating units. 
 
-Some functionality in Finance and Operations works differently depending on whether the organization is a legal entity or an operating unit. Carefully consider the functionality described below as you make your decision. 
+Some functionality in Finance and Operations works differently depending on whether the organization is a legal entity or an operating unit. Carefully consider the functionality described below as you make your decision. 
 
 
 ### Master data
@@ -146,7 +145,7 @@ For countries/regions that are supported by Finance and Operations, most statuto
 > In Finance and Operations, a posting layer in the general ledger allows you to make adjusting entries to a parent company that uses a different accounting standard than the child company. For example, for a company that uses generally accepted accounting practices in the United Kingdom (UK GAAP), you can make adjusting entries in the posting layer. These entries can be consolidated into a parent company that uses generally accepted accounting principles (GAAP) in the United States. The adjusting entries do not affect UK GAAP reporting.
 
 #### If the organization is modeled as an operating unit 
-Statutory reports must be created by using another application. You must ensure that data is captured in Finance and Operations to support the requirements of each operating unit, where they differ from the requirements of headquarters. 
+Statutory reports must be created by using another application. You must ensure that data is captured in Finance and Operations to support the requirements of each operating unit, where they differ from the requirements of headquarters. 
 
 ### Currency
 #### If the organization is modeled as a legal entity
@@ -162,7 +161,7 @@ If laws and accounting practices differ among the countries/regions where your o
 
 #### If the organization is modeled as an operating unit 
 If laws and accounting practices are the same among the countries/regions where your organizations are located, you may use a single set of year-end procedures. This means that you can model the organizations as operating units. All operating units must use the same year-end closing procedure. 
-   
+
 ### Number sequences
 #### If the organization is modeled as a legal entity
 Number sequences for some references can be set up per legal entity. Some number sequences can be shared. 

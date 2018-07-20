@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: LedgerTrialBalanceListPage 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,20 +32,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Trial balance financial reports
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes the default reports for trial balances. It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements. 
 
 Default trial balance reports
 -----------------------------
 
-Three trial balance reports are available in Financial reporting in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+Three trial balance reports are available in Financial reporting in Microsoft Dynamics 365 for Finance and Operations.
 
 | Default report                                 | What it does                                                                                                                                                                                        |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Detailed Trial Balance - Default               | Provides balance information for all accounts, and includes debit and credit balances, and the net of these, together with the transaction date, voucher, and journal description.                  |
-| Summary Trial Balance – Default                | Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference.                                        |
+| Summary Trial Balance – Default                | Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference.                                        |
 | Summary Trial Balance Year Over Year – Default | Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference for the current year and the past year. |
 
 ## Building blocks
@@ -59,7 +58,7 @@ The trial balance financial reports use the following building blocks.
 
 ### Row definition
 
-The row definition, Trial Balance – Default, contains a single row that pulls in all main accounts. Therefore, anyone can generate the report without having to make any modifications. When you view the report, you drill into the single row to see details about each account. You can modify the row definition so that it includes more detail. To modify the Trial Balance – Default row definition so that it includes rows for all accounts, follow these steps.
+The row definition, Trial Balance – Default, contains a single row that pulls in all main accounts. Therefore, anyone can generate the report without having to make any modifications. When you view the report, you drill into the single row to see details about each account. You can modify the row definition so that it includes more detail. To modify the Trial Balance – Default row definition so that it includes rows for all accounts, follow these steps.
 
 1.  Click **Edit**, and then click **Insert Rows from Dimensions**. The **Insert Rows from Dimensions** command lets you choose the dimensions that you want to have in your row definition. For this row definition, you're going to use **Main Account**.
 2.  Make sure that **Main Account** contains all ampersands (&), and then click **OK**.
@@ -79,14 +78,14 @@ Each trial balance report uses a different column definition. These column defin
         -   Journal Description
     -   **FD** – Financial data that contains only debits
     -   **FD** – Financial data that contains only credits
-    -   **CALC** – The net difference
+    -   **CALC** – The net difference
 -   **Summary Trial Balance – Default columns types:**
     -   **ACCT** – Account codes
     -   **DESC** – The description from the row definition
     -   **ATTR** – An attribute:
         -   Voucher
     -   **FD** – The beginning balance financial data
-    -   **FD** – Financial data that contains only debits
+    -   **FD** – Financial data that contains only debits
     -   **FD** – Financial data that contains only credits
     -   **CALC** – The net difference
     -   **CALC** – The closing balance
@@ -96,16 +95,16 @@ Each trial balance report uses a different column definition. These column defin
     -   **ATTR** – An attribute
         -   Voucher
     -   **FD** – The beginning balance financial data for the current year
-    -   **FD** – Financial data that contains only debits for the current year
+    -   **FD** – Financial data that contains only debits for the current year
     -   **FD** – Financial data that contains only credits for the current year
     -   **CALC** – The net difference
     -   **CALC** – The closing balance
-    -   **FD** – Financial data that contains only debits for the last year
+    -   **FD** – Financial data that contains only debits for the last year
     -   **FD** – Financial data that contains only credits for the last year
 
- 
 
-See also
+
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-getting-started.md)

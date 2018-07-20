@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settle a partial vendor payment and the final payment in full before the discount date
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article walks you through a scenario where partial payments are made for a vendor invoice, and a cash discount is taken.
 
-Fabrikam buys goods from vendor 3064. The vendor gives Fabrikam a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. The vendor also lets Fabrikam take cash discounts on partial payments. The settlement parameters are located on the **Accounts payable parameters** page. On June 25, April enters an invoice for 1,000.00 for vendor 3064.
+Fabrikam buys goods from vendor 3064. The vendor gives Fabrikam a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. The vendor also lets Fabrikam take cash discounts on partial payments. The settlement parameters are located on the **Accounts payable parameters** page. On June 25, April enters an invoice for 1,000.00 for vendor 3064.
 
 ## Vendor invoice on June 25
 On June 25, April enters and posts an invoice for 1,000.00 for vendor 3064. April can view this transaction on the **Vendor transactions** page.
@@ -70,7 +69,7 @@ April clicks the **Cash discount** tab to view the discount amount.
 | 7/25/2015          | 0.00                 | 1,000.00                       |
 
 ## Partial payment on July 1 by using the Settle transactions page
-April can create a payment journal for this payment by opening the **Payment journal** page in Accounts payable. She create a new journal and enters a line for vendor 3064. She then opens the **Settle transactions** page, so that she can mark the invoice for settlement. April marks the invoice and changes the value in the **Amount to settle** field to **-500.00**. She sees that the value in the **Cash discount amount** field is **-10.00** for the full invoice, and that the value in the **Cash discount amount to take** field is **-5.05**. Therefore, April is settling -505.05 of this invoice.
+April can create a payment journal for this payment by opening the **Payment journal** page in Accounts payable. She create a new journal and enters a line for vendor 3064. She then opens the **Settle transactions** page, so that she can mark the invoice for settlement. April marks the invoice and changes the value in the **Amount to settle** field to **-500.00**. She sees that the value in the **Cash discount amount** field is **-10.00** for the full invoice, and that the value in the **Cash discount amount to take** field is **-5.05**. Therefore, April is settling -505.05 of this invoice.
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -86,7 +85,7 @@ Discount information appears at the bottom of the **Settle open transactions** p
 | Cash discount taken          | 0.00      |
 | Cash discount amount to take | -5.05     |
 
-April wants to settle exactly half the invoice. Therefore, she changes the value in the **Amount to settle** field to **-495.00**. The total amount that is settled is now 500.00. This amount includes the -5.00 cash discount.
+April wants to settle exactly half the invoice. Therefore, she changes the value in the **Amount to settle** field to **-495.00**. The total amount that is settled is now 500.00. This amount includes the -5.00 cash discount.
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -102,7 +101,7 @@ Discount information appears at the bottom of the **Settle open transactions** p
 | Cash discount taken          | 0.00      |
 | Cash discount amount to take | -5.00     |
 
-April closes the **Settle transactions** page. A payment line for 495.00 is created in the journal, and April then posts the journal. April can review the vendor transactions on the **Vendor transactions** page. She sees that the invoice has a balance of -500.00. She also sees a payment of 495.00 and a cash discount of 5.00.
+April closes the **Settle transactions** page. A payment line for 495.00 is created in the journal, and April then posts the journal. April can review the vendor transactions on the **Vendor transactions** page. She sees that the invoice has a balance of -500.00. She also sees a payment of 495.00 and a cash discount of 5.00.
 
 | Voucher    | Transaction type | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance | Currency |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -139,7 +138,7 @@ April posts the payment journal and reviews the vendor transactions on the **Ven
 | Voucher    | Transaction type | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance | Currency |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
 | Inv-10010  | Invoice          | 6/25/2015 | 10010   |                                      | 1,000.00                              | 0.00    | USD      |
-| APP-10010  |  Payment         | 7/1/2015  |         | 495.00                               |                                       | 0.00    | USD      |
+| APP-10010  |  Payment         | 7/1/2015  |         | 495.00                               |                                       | 0.00    | USD      |
 | DISC-10010 | Cash discount    | 7/1/2015  |         | 5.00                                 |                                       | 0.00    | USD      |
 | APP-10011  | Payment          | 7/8/2015  |         | 495.00                               |                                       | 0.00    | USD      |
 | DISC-10011 | Cash discount    | 7/8/2015  |         | 5.00                                 |                                       | 0.00    | USD      |

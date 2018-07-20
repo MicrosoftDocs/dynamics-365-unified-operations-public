@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form:  RetailTerminalTable, SystemParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
 # Task recorder and Help for POS
+
+[!include [banner](includes/banner.md)]
 
 This topic describes how to use Task recorder in Retail Modern POS and Cloud POS.
 
@@ -102,7 +104,7 @@ To resume the recording session after you've paused it, click **Continue**.
 
 ### Capture screenshots
 
-Task recorder can capture screenshots of the Retail Modern POS UI as you record a business process. Task recorder uses the screenshots if you download the recording as a Word document. To turn on the screenshot capture feature, set the **Capture screenshot** option to **Yes**. 
+Task recorder can capture screenshots of the Retail Modern POS UI as you record a business process. To turn on the screenshot capture feature, set the **Capture screenshot** option to **Yes** and then make the recording. Once the recording is completed, click **Stop** and download the Word document. The document will contain the steps with relevant screenshots.
 
 #### Note
 > Capture screenshot functionality is not supported in Cloud POS.

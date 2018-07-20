@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade cutover testing
-description: This topic explains how to test the tasks that occur after you turn off AX 2012 but before you turn on Dynamics 365 for Finance and Operations, Enterprise edition. 
-author: tariqbell
+title: Upgrade from AX 2012 - Cutover testing (Mock cutover)
+description: This topic explains how to test the cutover process between turning off an AX 2012 environment and turning on Dynamics 365 for Finance and Operations. 
+author: robadawy
 manager: AnnBe
-ms.date: 05/29/2017
+ms.date: 06/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -22,37 +22,42 @@ ms.search.scope:  Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
+ms.author: robadawy
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Upgrade cutover testing
+# Upgrade from AX 2012 - Cutover testing (Mock cutover)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[upgrade banner](../includes/upgrade-banner.md)]
+[!include [upgrade banner](../includes/upgrade-banner.md)]
 
-*Cutover* is the term that we use for the final process of getting a new system live. This cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off but before Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, is turned on. The purpose of upgrade cutover testing is to practice the cutover process, to help guarantee a smooth experience for everyone who is involved during the actual cutover to go-live.
+*Cutover* is the term that we use for the final process of getting a new system live. The cutover process consists of the tasks that occur after Microsoft Dynamics AX 2012 is turned off, but before Microsoft Dynamics 365 for Finance and Operations, is turned on. The purpose of upgrade cutover testing (mock cutover) is to practice the cutover process, to help guarantee a smooth experience for everyone who is involved during the actual cutover to go-live.
 
-There are two main workstreams during a cutover:
+There are three main workstreams during a cutover:
 
 - **Technical workstream** – This workstream includes the data upgrade execution process. Your business will enforce a limit on the amount of downtime that is allowed. During this downtime, neither AX 2012 nor Finance and Operations will be available. This workstream might have to tune the data upgrade procedure to meet the business's downtime limit.
 - **Functional workstream** – This workstream includes the configuration tasks that are performed after the data upgrade is completed. All these tasks must be documented and quantified, and a resource must be assigned, because both the functional workstream and the technical workstream must fit within the business's downtime limit.
+- **AX 2012 rollback** - This workstream includes rolling back to an AX 2012 environment. Although it's unlikely that you will have to roll back, it's very important that you have a tested process in case you require it.
 
 The following illustration shows the overall process for cutover to go-live as it will occur in the production environment.
 
 ![Cutover process](./media/cutover_1.png)
 
-This cutover process differs from a basic data upgrade in a sandbox environment in the following ways:
+The mock cutover process is very similar to a basic data upgrade validation in a sandbox environment. We assume that you are familiar with that process, and have already performed it. Mock cutover differs in the following ways:
 
-- The AX 2012 database isn’t copied but is only backed up, and then the original database is modified. This approach is faster, and the backup provides rollback, if rollback is required.
-- Because the production environment for Finance and Operations has restricted access, the tasks that were previously performed on the sandbox instance of Application Object Server (AOS) are now performed by the Microsoft DSE team. These tasks include downloading and importing the bacpac file, and running the MajorversionDataUpgrade.zip package.
+- After you perform a data upgrade in the sandbox environment, a LCS other type service requests is needed to copy your upgraded database from the data upgrade sandbox environment into your production environment. The email template below is provided for your use
+>[!Copy]
+>This is a request for 2012 data upgrade database copy from the sandbox environment <source sandbox environment name> to production. I acknowledge that this will overwrite the database currently in production.
+
 - We added the following tasks:
-
     - Perform a smoke test.
     - Complete application setup tasks. This step can be large, depending on the functionality that is used. During this step, the functional team configures new application functionality so that it's ready to be used in the upgraded system.
     - Allow users back in. Notify your user base that the upgrade is completed and that they can use the system again.
+
+> [!NOTE]
+> In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
 
 ## Technical workstream
 
@@ -60,81 +65,12 @@ The technical workstream involves various technical team members: the database a
 
 During cutover testing, the technical team is focused on performance and reliability testing of the data upgrade process, to make sure that it meets the business's downtime limit. Many elements of hardware and software are involved in this process. Some of these elements are on-premises, whereas others are in the Microsoft cloud. In addition, many elements of custom application code and standard code are involved. The result of this testing should be confidence in the cutover process for your environment.
 
-### Turn off the AX 2012 AOS instances
+### Technical workstream process
 
-This task involves the AX 2012 system administrator and the server administrators.
+> [!NOTE]
+> For the technical workstream, the cutover testing process is the same as the high-level steps of the actual/go-live cutover process.
 
-The following areas should be validated:
-
-- **Batch jobs that are running at the time of cutover** – A long-running batch job that has already started to run will prevent the system from stopping. Plan ahead, so that you can stop your AOS instances at the desired moment. You might have to schedule batches so that they're completed some time before you turn off AX 2012.
-- **Integrated systems** – You might have other systems that are integrated with the AX 2012 environment. You must factor these systems into your plan to turn off AX 2012. For example, you might have to turn off the integrated systems some time before you turn off AX 2012 itself, so that any remaining in-flight transactions can be completed. The requirements for integrated systems vary widely from business to business. Therefore, your team of experts must plan for this scenario independently.
-
-### Create a backup of the AX 2012 database
-
-This task involves the DBA. The backup will be used if a rollback is required. It will also be used as a reference point that will be kept for a period and show the system state at the moment of cutover.
-
-The following areas should be validated:
-
-- Get concrete timings for the backup process.
-- Adjust the backup options that are used (for example, compression versus non-compression), to help guarantee the fastest possible backup.
-
-### Export the database to bacpac
-
-This task involves the DBA. The output of this task is the export file that will be uploaded to Microsoft Azure for the new system.
-
-The following areas should be validated:
-
-- Get concrete timings for the backup process.
-- Optimize the export process to help guarantee the fastest possible experience. Optimization might require the following tasks:
-
-    - Measure system resources during export, such as CPU, disk I/O, and memory.
-    - If resource bottlenecks are found, create a plan to mitigate them. Typically, you will mitigate these bottlenecks by assigning more of the required resource.
-
-### Upload the bacpac file to Azure storage
-
-This task involves the DBA or the server administrators. During this task, the bacpac file is moved into Azure.
-
-The following areas should be validated:
-
-- Select the machine that will be used for upload, and make sure that the Azure Storage explorer tool is configured and ready to use.
-- Get concrete timings for the upload process by measuring it several times. Upload times will vary, based on the speed of your Internet connection and the geographical location of the Azure datacenter in relation to your location.
-
-### Download and import the bacpac file to the Azure SQL database
-
-When this task occurs at go-live, it will be performed by the Microsoft DSE team. However, during cutover testing, it involves your DBA. The outcome of this task is the export file that will be uploaded to Azure for the new system.
-
-The following areas should be validated:
-
-- Get concrete timings for the import process.
-- Optimize the export process to help guarantee the fastest possible experience. Optimization might require the following tasks:
-
-    - Measure system resources during export. Here are some examples:
-
-        - **On the AOS machine:** CPU, disk I/O, and memory
-        - **On the Azure SQL Database instance:** SQL database throughput (DTU). You can monitor Azure SQL DTU from Microsoft SQL Server Management Studio on the AOS machine by looking at the sys.dm_resource_stats system view.
-
-    - If resource bottlenecks are found, create a plan to mitigate them. Typically, you will mitigate these bottlenecks by assigning more of the required resource. Because this machine is Microsoft-hosted, you must submit a request to Microsoft to increase resources if you identify that they are a bottleneck.
-
-### Run the MajorVersiondataUpgrade.zip package
-
-When this task occurs at go-live, it will be performed by the Microsoft DSE team. However, during cutover testing, it involves the developers. During this task, the old database structure is transformed to the structure of the new system.
-
-The database synchronization process runs as part of this task. Database synchronization might take a significant amount of time in some situations, such as when a clustered index has changed on a table, because this operation is a costly operation in SQL.
-
-We strongly recommend that you first perform your analysis and debugging process in a development environment. In a sandbox environment, debugging and analysis options are more restricted. The goal is to have few or no issues that must be addressed when you do cutover testing.
-
-The following areas should be validated:
-
-- Get concrete timings for the import process.
-- Optimize the process to help guarantee the fastest experience. Optimization might require the following tasks:
-
-    - Monitor the performance of individual upgrade scripts through the ReleaseUpdateScriptsExecution table.
-    - Adjust scripts to optimize performance. This task might require that you customize a script’s X++ code to optimize it for your dataset.
-    - Monitor Azure SQL DTU by using Microsoft Dynamics Lifecycle Services (LCS) monitoring or the sys.dm_resources_stats system view in Management Studio. If resources are maxed out, you might have to request a higher database level from the Microsoft DSE team.
-
-### Roll back to AX 2012
-
-The goal of this task is to restore the database by using the backup that was made when AX 2012 was turned off, and then turn AX 2012 back on. The state of integrated systems might also have to be restored. However, because integrated systems vary from business to business, you must plan for this scenario independently, based on your specific circumstances. Although it's unlikely that you will have to roll back, it's very important that you have a tested process in case you require it.
+For the technical workstream, the cutover testing process is the same described in [Upgrade from AX 2012 - Data upgrade in a sandbox environment](upgrade-data-sandbox.md).
 
 ## Functional workstream
 
@@ -151,3 +87,10 @@ For each manual change, a task must be added to the cutover plan document. This 
 -	What is the task, and what must be done?
 -	Who must do it?
 -	How long does it take?
+
+### Add users, and perform functionl tests
+When you have fully configured your environment, add users, and perform appropriate testing. 
+
+## Roll back to AX 2012
+
+The goal of this task is to restore the database by using the backup that was made when AX 2012 was turned off, and then turn AX 2012 back on. The state of integrated systems might also have to be restored. However, because integrated systems vary from business to business, you must plan for this scenario independently, based on your specific circumstances. Although it's unlikely that you will have to roll back, it's very important that you have a tested process in case you require it.

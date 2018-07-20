@@ -2,7 +2,7 @@
 # required metadata
 
 title: Public sector home page
-description: Microsoft Dynamics 365 for Finance and Operations, Enterprise edition enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
+description: Microsoft Dynamics 365 for Finance and Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -32,30 +32,29 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Public sector home page
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Finance and Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
 
-Use the Public sector functionality to meet the rules, regulations, and reporting requirements for organizations that serve the public. The business processes affected include: 
+Use the Public sector functionality to meet the rules, regulations, and reporting requirements for organizations that serve the public. The business processes affected include: 
 
--   Fund accounting, derived financial hierarchies, and posting definitions for accounts receivable and the general ledger.
--   Preliminary budgets, apportionments, and commitments.
--   Billing codes, billing classifications, trading partner codes, and custom fields for free text invoices.
--   General ledger year-end processing, which includes encumbrances and commitments on purchase orders.
--   Electronic payments to vendors, signature pages for payment reports, and invoice payment holds.
+- Fund accounting, derived financial hierarchies, and posting definitions for accounts receivable and the general ledger.
+- Preliminary budgets, apportionments, and commitments.
+- Billing codes, billing classifications, trading partner codes, and custom fields for free text invoices.
+- General ledger year-end processing, which includes encumbrances and commitments on purchase orders.
+- Electronic payments to vendors, signature pages for payment reports, and invoice payment holds.
 
- For more information, see the following topics:
+  For more information, see the following topics:
 
--   [Planning for Public sector functionality](plan-public-sector-functionality.md)
--   [Accounts payable in the Public sector](accounts-payable-public-sector.md)
--   [Accounts receivable in the Public sector](accounts-receivable-public-sector.md)
--   [Budgeting in the Public sector](budgeting-public-sector.md)
--   [Fixed assets in the Public sector](fixed-asset-public-sector.md)
--   [French regulatory features](../localizations/emea-fra-public-sector-accounting.md)
--   [General ledger in the Public sector](general-ledger-public-sector.md)
--   [Procurement and sourcing in the Public sector](procurement-sourcing-public-sector.md)
--   [Security roles in the Public sector](security-roles-public-sector.md)
+- [Planning for Public sector functionality](plan-public-sector-functionality.md)
+- [Accounts payable in the Public sector](accounts-payable-public-sector.md)
+- [Accounts receivable in the Public sector](accounts-receivable-public-sector.md)
+- [Budgeting in the Public sector](budgeting-public-sector.md)
+- [Fixed assets in the Public sector](fixed-asset-public-sector.md)
+- [French regulatory features](../localizations/emea-fra-public-sector-accounting.md)
+- [General ledger in the Public sector](general-ledger-public-sector.md)
+- [Procurement and sourcing in the Public sector](procurement-sourcing-public-sector.md)
+- [Security roles in the Public sector](security-roles-public-sector.md)
 
 \* Applicable only if your organization is in France.
 
@@ -69,10 +68,10 @@ The following table provides information about how this configuration key relate
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Detail** | **Description**                                                                                                                                                                                                     |
 | Parent key | None                                                                                                                                                                                                                |
-| Child keys | **Advanced ledger entry** configuration key (AdvancedLedgerEntry) **Public sector 1099G** configuration key (Tax1099G) **Public sector 1099S** configuration key (Tax1099S) **French regulatory** configuration key |
+| Child keys | **Advanced ledger entry** configuration key (AdvancedLedgerEntry) **Public sector 1099G** configuration key (Tax1099G) **Public sector 1099S** configuration key (Tax1099S) **French regulatory** configuration key |
 
 
-See also
+Additional resources
 --------
 
 [Planning for public sector functionality](plan-public-sector-functionality.md)

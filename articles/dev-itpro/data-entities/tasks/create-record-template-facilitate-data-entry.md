@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a record template to facilitate data entry
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. In this procedure, you’ll create a new record for new laptops that should be added to your fixed assets. This procedure uses the USMF sample company.
 

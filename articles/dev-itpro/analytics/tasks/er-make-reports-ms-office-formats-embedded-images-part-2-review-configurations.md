@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Review configurations to make reports in Microsoft Office formats with embedded images for electronic reporting (ER)
+title: Review configurations to make reports in Microsoft Office formats with embedded images
 description: To complete these steps, you must first complete the steps in the “ER Make reports in MS Office formats with embedded images (Part 1 - Set up parameters)” task guide. 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Review configurations to make reports in Microsoft Office formats with embedded images for electronic reporting (ER)
+# Review configurations to make reports in Microsoft Office formats with embedded images
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To complete these steps, you must first complete the steps in the “ER Make reports in MS Office formats with embedded images (Part 1: Set up parameters)” task guide.
 

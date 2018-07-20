@@ -5,7 +5,7 @@ title: Implement a return policy using triggers
 description: This topic has two examples which show how you can implement a new policy using a trigger.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -32,18 +32,18 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Implement a return policy using triggers
 
-[!include[banner](../includes/banner.md)]
+> [!NOTE]
+> This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier. This implementation is not supported for versions 7.2 and higher. For those versions, follow the extension model without overlayering.
 
+This topic has two examples that show how you can implement a new policy using a trigger.
 
-This topic has two examples which show how you can implement a new policy using a trigger.
-
-The examples in this topic assume that you have a new return policy. The maximum time period for returning an item is 30 days and no item may be returned more than 30 days after the date of purchase. Additionally, the cashier or manager is not allowed to void more than three items in a single transaction.
+The examples in this topic assume that you have a new return policy. The maximum time period for returning an item is 30 days and no item may be returned more than 30 days after the date of purchase. Additionally, the cashier or manager is not allowed to void more than three items in a single transaction.
 
 ## Extend the MPOS trigger
 1.  Open Visual Studio as an administrator.
-2.  Open the Modern POS solution from K:\\RainMainStab\\7.0.1265.3014\\retail\\Services\\RetailSDK\\Code\\POS.
-3.  Add new a TypeScript file in the POS.Core project, under the **Triggers** folder, and name it ExtensionTrigger.ts.
-4.  Add reference to the triggers interface and create a new module for the code. In the ExtensionTrigger.ts file, add the following code.
+2.  Open the Modern POS solution from K:\\RainMainStab\\7.0.1265.3014\\retail\\Services\\RetailSDK\\Code\\POS.
+3.  Add new a TypeScript file in the POS.Core project, under the **Triggers** folder, and name it ExtensionTrigger.ts.
+4.  Add reference to the triggers interface and create a new module for the code. In the ExtensionTrigger.ts file, add the following code.
 
         <///<reference path="TransactionTriggers.ts" />
         ///<reference path="TriggerHelper.ts" />
@@ -58,40 +58,40 @@ The examples in this topic assume that you have a new return policy. The maximum
         }
 
 ## Scenario 1: 30day return policy
-To implement the 30-day return policy, extend the IPreConfrimReturnTransactionTrigger by creating a new class and implementing the IPreConfirmReturnTransactionTrigger interface. This trigger will be invoked before returning any item from the transaction.
+To implement the 30-day return policy, extend the IPreConfrimReturnTransactionTrigger by creating a new class and implementing the IPreConfirmReturnTransactionTrigger interface. This trigger will be invoked before returning any item from the transaction.
 
-1.  Create a new class that implements IPreConfirmReturnTransactionTrigger in the module Commerce.Triggers.Samples. Name it PreConfirmReturnTransactionTrigger, as shown in the following code example.
+1.  Create a new class that implements IPreConfirmReturnTransactionTrigger in the module Commerce.Triggers.Samples. Name it PreConfirmReturnTransactionTrigger, as shown in the following code example.
 
         /*** Implementation of a pre-confirm return transaction trigger that validates that the transaction being returned is within the return period. */
         export class PreConfirmReturnTransactionTrigger implements IPreConfirmReturnTransactionTrigger {
         }
 
-2.  Implement the **execute** method from the interface and add code to validate the return condition.
+2.  Implement the **execute** method from the interface and add code to validate the return condition.
 
         private static MILLISECONDS_PER_DAY: number = 100;
         private static RETURN_PERIOD_IN_DAYS: number = 0;
         private static RETURN_PERIOD_ENDED_ERROR_CODE: string = "Cannot return, you are past return date";
         /*** Executes the trigger. */
-        public execute(options: IPreConfirmReturnTransactionTriggerOptions):     Commerce.IAsyncResult<Commerce.ICancelableResult> {
+        public execute(options: IPreConfirmReturnTransactionTriggerOptions):     Commerce.IAsyncResult<Commerce.ICancelableResult> {
             var timeDiff: number = Math.abs(new Date().getTime() - options.originalTransaction.BusinessDate.getTime());
             var diffDays: number = Math.ceil(timeDiff / PreConfirmReturnTransactionTrigger.MILLISECONDS_PER_DAY);
             if (diffDays > PreConfirmReturnTransactionTrigger.RETURN_PERIOD_IN_DAYS) {
-                var error: Proxy.Entities.Error = new     Proxy.Entities.Error(PreConfirmReturnTransactionTrigger.RETURN_PERIOD_ENDED_ERROR_CODE);
+                var error: Proxy.Entities.Error = new     Proxy.Entities.Error(PreConfirmReturnTransactionTrigger.RETURN_PERIOD_ENDED_ERROR_CODE);
                 return Commerce.AsyncResult.createRejected([error]);
             }
             return Commerce.AsyncResult.createResolved({ canceled: false });
         }
 
-## Scenario 2: Limit of three returns per transaction
-To implement the three-time limit, create a new class and implement the IPreVoidProductsTrigger interface. This trigger will be invoked before voiding any item in a transaction.
+## Scenario 2: Limit of three returns per transaction
+To implement the three-time limit, create a new class and implement the IPreVoidProductsTrigger interface. This trigger will be invoked before voiding any item in a transaction.
 
-1.  Create a new class named PreVoidProductsTrigger that implements the IPreVoidProductsTrigger interface in the module Commerce.Triggers.Samples. Make sure this code is outside of the PreConfirmReturnTransactionTrigger class that you created in the previous step.
+1.  Create a new class named PreVoidProductsTrigger that implements the IPreVoidProductsTrigger interface in the module Commerce.Triggers.Samples. Make sure this code is outside of the PreConfirmReturnTransactionTrigger class that you created in the previous step.
 
         /*** Implementation of a pre-customer add trigger that is used to ensure a blocked customer is not added to sale. */
         export class PreVoidProductsTrigger implements IPreVoidProductsTrigger {
         }
 
-2.  Implement the **execute** method from the interface and add the code to validate the void condition.
+2.  Implement the **execute** method from the interface and add the code to validate the void condition.
 
         private static VOID_ERROR_CODE: string = "Void is not allowed anymore.";
         /*** Executes the trigger. */
@@ -117,7 +117,7 @@ To implement the three-time limit, create a new class and implement the IPreVoi
             return voidedQuantity;
         }
 
-3.  Register the two triggers after the MPOS logon. Copy the following code to the same file after the two classes that you created in the previous steps but within the same module Commerce.Triggers.Samples.
+3.  Register the two triggers after the MPOS logon. Copy the following code to the same file after the two classes that you created in the previous steps but within the same module Commerce.Triggers.Samples.
 
         /*** Implementation of a post log on trigger that is used to perform conditional registration of other triggers.*/
         export class ConditionalRegistrationPostLogOnTrigger implements IPostLogOnTrigger {
@@ -159,17 +159,15 @@ To implement the three-time limit, create a new class and implement the IPreVoi
 
 ## Build the project
 1.  Compile and rebuild the project.
-2.  Deploy the MPOS in Local Machine by clicking the **Deploy** button in Visual Studio. If you get an error which states that “The project POS.App needs to be deployed before it can be started.”, then follow the steps below to resolve the error and try again.
+2.  Deploy the MPOS in Local Machine by clicking the **Deploy** button in Visual Studio. If you get an error which states that “The project POS.App needs to be deployed before it can be started.”, then follow the steps below to resolve the error and try again.
 3.  Right-click the ModernPOS solution in Visual Studio and click **Properties**.
 4.  In the **Property** window, select **Configuration**.
 5.  Select the **Deploy** check box for the Pos.App project and click **OK**.
 
 ## Validate the customization
-1.  Log in to MPOS using 000160 as the operator ID and 123 as the password. Complete a sales transaction.
+1.  Log in to MPOS using 000160 as the operator ID and 123 as the password. Complete a sales transaction.
 2.  Click **Show Journal** and try to return the merchandise. You will get the error message “Cannot return, you are past return date”.
-3.  Create another new transaction and add four different items. Try to return all four items. You will get an error for the fourth item with the message, "Void is not allowed anymore.”
+3.  Create another new transaction and add four different items. Try to return all four items. You will get an error for the fourth item with the message, "Void is not allowed anymore.”
 
-**Note:** In the sample code, the return the time period is configured as 100ms, so that you can test your code immediately. You should change the configuration as needed.
-
-
-
+> [!NOTE]
+> In the sample code, the return the time period is configured as 100 ms, so that you can test your code immediately. You should change the configuration as needed.

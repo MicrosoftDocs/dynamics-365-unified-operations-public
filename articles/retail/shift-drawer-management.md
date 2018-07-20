@@ -2,10 +2,10 @@
 # required metadata
 
 title: Shift and cash drawer management
-description: This article explains how to set up and use the two types of retail point of sale (POS) shifts -  shared and stand-alone. Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.
-author: rubencdelgado
+description: This topic explains how to set up and use shifts in retail point of sale (POS).
+author: jblucher
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: RetailHardwareProfile, RetailTerminalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -34,76 +34,110 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Shift and cash drawer management
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
+This topic explains how to set up and use shifts in retail point of sale (POS). 
 
-This article explains how to set up and use the two types of retail point of sale (POS) shifts -  shared and stand-alone. Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.
+In Microsoft Dynamics 365 for Retail, the term *shift* describes the collection of POS transactional data and activities between two points in time. For each shift, the amount of money that is expected is compared against the amount that was counted and declared.
 
-There are two types of retail point of sale (POS) shifts: stand-alone and shared. Stand-alone shifts can be used by only one worker at a time. Shared shifts can be used by multiple users in multiple places. Therefore, they effectively create a single shift for multiple workers in a store.
+Typically, shifts are opened at the start of the business day. At that point, a user declares the starting amount that the cash drawer contains. Sales transactions are then performed throughout the day. Finally, at the end of the day, the drawer is counted, and the closing amounts are declared. The shift is closed, and a Z report is generated. The Z report indicates whether there is an overage or shortage.
 
-## Standalone shifts
-Stand-alone shifts are used in a traditional, fixed POS scenario, where cash is reconciled independently for each POS register. For example, in a grocery store setting, there are typically several fixed POS registers, and a cashier is assigned to each register. In this case, each register likely uses a stand-alone shift, and the cashier is responsible for the till or physical cash at that register. A stand-alone shift encompasses all the activity on that register during the cashier’s work shift. Activities can include the opening amount that is deposited in the till, all removal and addition of cash through operations such as bank drops and float entry, and the tender declaration at the end of the shift.
+## Typical shift scenarios
+Retail provides several configuration options and POS operations to support a wide range of end-of-day business processes for the POS. This section describes some typical shift scenarios.
 
-### Set up a stand-alone shift
+### Fixed till
+Traditionally, this scenario has been used most often. It's still extensively used. In a "fixed till" shift, the shift and till are associated with a specific register. They aren't moved from one register to another. A "fixed till" shift can be used by a single user or shared among multiple users. "Fixed till" shifts don't require any special configuration.
 
-A stand-alone shift is designated at the cash drawer level. This procedure explains how to set up a stand-alone shift on a POS register.
+### Floating till
+In a "floating till" shift, the shift and cash drawer can be moved from one register to another. Although a register can have only one active shift per cash drawer, shifts can be suspended and then resumed later or on a different register.
 
-1.  Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
-2.  Select the hardware profile to use for the stand-alone shift.
-3.  On the **Drawer** FastTab, confirm that the **Shared shift drawer** option is set to **No**.
-4.  Click **Save**.
-5.  Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
-6.  Select the register that requires a stand-alone shift, and then click **Edit**.
-7.  In the **Hardware profile** field, select the hardware profile that you selected in step 2.
-8.  Click **Save**.
-9.  Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
-10. Select the **1090** distribution schedule, and then click **Run now** to synchronize changes to the POS.
+For example, a store has two registers. Each register is opened at the start of the day when the cashier opens a new shift and provides the starting amount. When one cashier is ready to take a break, that cashier suspends his or her shift and removes the till from the cash drawer. That register then becomes available to other cashiers. Another cashier can sign in to and open his or her own shift on the register. After the first cashier's break has ended, that cashier can resume his or her shift when one of the other registers becomes available. "Floating till" shifts don't require any special configuration or permission.
 
-### Use a stand-alone shift
+### Single user
+Many retailers prefer to allow only one user per shift, to help guarantee the highest level of accountability for the cash in the cash drawer. If only one user is allowed to use the till that is associated with a shift, that user can be held solely responsible for any discrepancies. If more than one user uses a shift, it's difficult to determine who made an error, or who might be trying to steal from the till.
 
-1.  Sign in to the POS.
-2.  If no shift is open, select **Open a new shift**.
-3.  Go to the **Declare start amount** operation, and specify the amount of cash that is being added to the till to start the work day.
-4.  Perform some transactions.
-5.  At the end of the day, select **Declare tender** to declare the amount of cash that remains in the cash drawer.
-6.  Enter the amount of cash, and then click **Save** to save the tender declaration.
-7.  Select **Close shift** to close the shift.
+### Multiple users
+Some retailers are willing to sacrifice the level of accountability that single-user shifts provide and to allow more than one user per shift. This approach is typical when there are more users than available registers, and the need for flexibility and speed outweighs the potential for loss. It's also typical when store managers don't have their own shifts but can, as required, use the shifts of any of their cashiers. To sign in to and use a shift that was opened by another user, a user must have the **Allow multiple shift logon** POS permission.
 
-**Note:** Other operations are available during the shift, depending on the business processes that are in place. The **Safe drop**, **Bank drop**, and **Tender removal** operations can be used to remove money from the till during the day or before the shift is closed. If a till runs low on cash, the **Float entry** operation can be used to add cash to the till.
+### Shared shift
+A "shared shift" configuration lets retailers have a single shift across multiple registers, cash drawers, and users. A shared shift has a single starting amount and a single closing amount that are summarized across all cash drawers. Shared shifts are most typical when mobile devices are used. In this scenario, a separate cash drawer isn't reserved for each register. Instead, all registers can share one cash drawer.
 
-## Shared shifts
-A shared shift is used in an environment where multiple cashiers share a cash drawer or a set of cash drawers throughout the work day. Typically, a shared shift is used in mobile POS environments. In a mobile environment, each cashier isn’t assigned to and responsible for a single cash drawer. Instead, all cashiers must be able to tender a sale and add cash to whatever cash drawer is closest to them. In this scenario, the cash drawers that are shared among cashiers are included in a shared shift. All the cash drawers in a shared shift are included in the same shift for the purpose of activities that are related to cash management for that shift. Therefore, the starting amount for the shift should include the sum of all cash in all the cash drawers that are included in the shared shift. Likewise, the tender declaration will be the sum of all the cash in all the cash drawers that are included in the shared shift. **Note:** Only one shared shift can be open at a time in each store. Shared shifts and stand-alone shifts can be used in the same store.
+For shared shifts to be used in a store, the cash drawer must be configured as a "shared shift drawer" at **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles \> Drawer**. Additionally, users must have one or both of the shared shift permissions (Allow manage shared shift and Allow use shared shift).
 
-### Set up a shared shift
+> [!NOTE]
+> Only one shared shift can be open at a time in each store. Shared shifts and stand-alone shifts can be used in the same store.
 
-1.  Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
-2.  Select the hardware profile to use for the shared shift.
-3.  On the **Drawer** FastTab, set the **Shared shift drawer** option to **Yes**.
-4.  Click **Save**.
-5.  Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.
-6.  Select the register that requires a shared shift, and then click **Edit**.
-7.  In the **Hardware profile** field, select the hardware profile that you selected in step 2.
-8.  Click **Save**.
-9.  Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
-10. Select the **1090** distribution schedule, and then click **Run now** to synchronize changes to the POS.
+## Shift and drawer operations
+Various operations can be performed to change the state of a shift, or to increase or decrease the amount of money in the cash drawer. This section describes these shift operations for Microsoft Dynamics 365 for Retail Modern POS and Cloud POS.
 
-### Use a shared shift
+### Open shift
+The POS requires that users have an active, open shift in order to perform any operations that will produce a financial transaction, such as a sale, return, or customer order.
 
-1.  Sign in to the POS.
-2.  If the POS isn’t yet connected to a hardware station, select **Non-drawer operation**, and then select the **Select hardware station** operation to make a hardware station active for the shared shift. This step is required only the first time that a register is added to a shared shift environment.
-3.  Sign out of the POS, and then sign back in.
-4.  Select **Create a new shift**.
-5.  Select **Declare start amount**.
-6.  Enter the starting amount of all the cash drawers in the store that are part of the shared shift, and then click **Save**.
-    -   To add part of the starting amount to each subsequent cash drawer, use the **Select hardware station** operation to make the hardware station active.
-    -   To add a till to a specific cash drawer, use the **Open drawer** operation.
-    -   Continue until all cash drawers in the shared shift have their part of the starting amount.
+When a user signs in to the POS, the system first verifies whether an active shift is available for that user on the current register. If an active shift isn't available, the user can open a new shift, resume an existing shift, or sign in in "non-drawer" mode, depending on the system configuration and the user's permissions.
 
-7.  At the end of the day, open each cash drawer, and remove the cash.
-8.  After you’ve removed the cash from the last cash drawer, count all the cash from all the cash drawers.
-9.  Use the **Declare tender** operation to declare the total amount of cash from all the cash drawers that are included in the shared shift.
-10. Use the **Close shift** operation to close the shared shift.
+### Declare start amount
+This operation is often the first operation that is performed for a newly opened shift. For this operation, users specify the starting cash amount in the cash drawer for the shift. This operation is important because the overage/shortage calculation that occurs when a shift is closed considers the start amount.
 
+### Float entry
+*Float entries* are non-sales transactions that are performed in an active shift to increase the amount of cash in the cash drawer. A typical example of a float entry is a transaction to add additional change to the drawer when it's running low.
 
+### Tender removal
+*Tender removals* are non-sales transactions that are performed in an active shift to reduce the amount of cash in the cash drawer. This operation is most often used in conjunction with a Float entry operation on a different shift. For example, because register 1 is running low on change, the user on register 2 does a tender removal to reduce the amount in his or her cash drawer. The user on register 1 then does a float entry to increase the amount in his or her cash drawer.
 
+### Suspend shift
+Users can suspend their active shift to free up the current register for another user, or to move their shift to a different register (in this case, the shift is often referred to as a "floating till" shift).
 
+Suspension of a shift prevents any new transactions or changes to the shift until it's resumed.
+
+### Resume shift
+This operation lets users resume a previously suspended shift on any register that doesn't already have an active shift.
+
+### Tender declaration
+This operation is performed to specify the total amount of money that is currently in the cash drawer. Users most often perform this operation before they close a shift. The specified amount is compared against the expected shift amount to calculate the overage/shortage amount.
+
+### Safe drop
+Safe drops can be done on an active shift at any time. This operation removes money from the cash drawer so that it can be transferred to a more secure location, such as a safe in the back room. The total amount that is recorded for safe drops is included in shift totals, but it doesn't have to be counted as part of the tender declaration.
+
+### Bank drop
+Like safe drops, bank drops are done on active shifts. This operation removes money from the shift to prepare for the bank deposit.
+
+### Blind close shift
+*Blind-closed shifts* are no longer active but haven't been fully closed. Unlike suspended shifts, blind-closed shifts can't be resumed. However, operations such as Declare start amount and Tender declaration can be performed on them later or from a different register.
+
+Blind-closed shifts are often used to free up a register for a new user or shift without first having to fully count, reconcile, and close the shift.
+
+### Close shift
+This operation calculates shift totals and overage/shortage amounts, and then finalizes an active or blind-closed shift. Depending on the user's permissions, a Z report is also printed for the shift. Closed shifts can't be resumed or modified.
+
+### Print X
+This operation generates and prints an X report for the current active shift.
+
+### Reprint Z
+This operation reprints the last Z report that the system generated when a shift was closed.
+
+### Manage shifts
+This operation lets users view all active, suspended, and blind-closed shifts for the store. Depending on their permissions, users can perform their final closing procedures, such as Tender declaration and Close shift operations for blind-closed shifts. This operation also lets users view and delete invalid shifts, in the rare event that shifts are left in a bad state after a switch between offline and online modes. These invalid shifts don't contain any financial information or transactional data that is required for reconciliation.
+
+## Shift and drawer permissions
+The following POS permissions affect what a user can and can't do in various scenarios:
+
+- **Allow blind close**
+- **Allow X-report printing**
+- **Allow Z-report printing**
+- **Allow tender declaration**
+- **Allow floating declaration**
+- **Open drawer without sale**
+- **Allow multiple shift logon** – This permission allows the user to sign in to and use a shift that a different user opened. Users who don't have this permission can sign in to and use only shifts that they have opened.
+- **Allow manage shared shift** – Users must have this permission to open or close a shared shift.
+- **Allow use shared shift** – Users must have this permission to sign in to and use a shared shift.
+
+## Back-office end-of-day considerations
+The way that shifts and cash drawer reconciliation are used in the POS differs from the way that transaction data is summarized during statement calculation. It's important that you understand this difference. Depending on your configuration and your business processes, the shift data in the POS (the Z report) and a calculated statement in the back office can give you different results. This difference doesn't necessarily mean that either the shift data or the calculated statement is incorrect, or that there is a problem with the data. It just means that the parameters that are provided might be including additional transaction or fewer transactions, or that the transactions have been summarized differently.
+
+Although every retailer has different business requirements, we recommend that you set up your system in the following way to avoid situations where differences of this type occur:
+
+Go to **Retail \> Channels \> Retail stores \> All retail stores \> Statement/closing**, and for each store, set both the **Statement method** field and the **Closing method** field to **Shift**.
+
+This setup helps guarantee that back-office statements include the same transactions as shifts in the POS, and that the data is summarized by that shift.
+
+For more information about statement and closing methods, see [Store configurations for Retail statement](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).

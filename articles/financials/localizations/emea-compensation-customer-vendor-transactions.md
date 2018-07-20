@@ -18,6 +18,7 @@ ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 #ms.suite: 
 # ms.tgt_pltfrm: 
 ms.custom: 1691503
@@ -29,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Set up customer and vendor compensation
+
+[!include [banner](../includes/banner.md)]
+
 This topic provides information that will help you run the compensation process for vendor and customer accounts, for legal entities that have their primary address in Hungary or Poland.
 
 Often, users in Eastern Europe must settle receivable and payable amounts for a company that is registered as both a customer and a vendor in the system. This settlement process uses a legal procedure that is known as *compensation* or *netting*. 

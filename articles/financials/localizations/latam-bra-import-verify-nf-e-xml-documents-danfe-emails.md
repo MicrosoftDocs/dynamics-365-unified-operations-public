@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Import and verify NF-e XML documents and DANFE files for Brazil
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic answers questions about the process for importing and verifying Nota fiscal eletrônica (NF-e) XML documents and Documento auxiliar da Nota fiscal eletrônica (DANFE) that you receive in emails.
 
@@ -46,7 +45,7 @@ You can perform the following tasks to import Nota fiscal eletrônica (NF-e) XML
     -   View the DANFE for the NF-e XML document.
     -   Use an access key to inquire about the current status of the NF-e at the Secretaria da Fazenda (SEFAZ).
 -   Manually enter an access key for an NF-e that you didn't receive an XML document for.
--   Post electronic fiscal documents that have access keys that aren't validated by SEFAZ. Alternatively, you can set up Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to post only electronic fiscal documents that have access keys that are validated by SEFAZ.
+-   Post electronic fiscal documents that have access keys that aren't validated by SEFAZ. Alternatively, you can set up Microsoft Dynamics 365 for Finance and Operations to post only electronic fiscal documents that have access keys that are validated by SEFAZ.
 -   If you post electronic fiscal documents for which the access keys aren't available on the **Received NF-e XML documents** page, you can update the access keys or XML documents for the electronic fiscal documents after posting is completed. You can view the following posted NF-e documents that require access keys or XML documents:
     -   NF-e documents that have access keys that aren't validated by SEFAZ.
     -   NF-e documents for which the status is updated from **Approved** to **Canceled**.

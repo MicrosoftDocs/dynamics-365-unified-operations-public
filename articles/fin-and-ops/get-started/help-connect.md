@@ -32,23 +32,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Connect the Help system
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the components of the Help system for Microsoft Dynamics 365 for Finance and Operations. It provides an overview of how to connect these components and a summary of how to create custom help. 
 
 ## Help architecture
 The following illustration shows the parts of the Finance and Operations Help system. The in-product Help system pulls articles from the Finance and Operations site on https://docs.microsoft.com, as well as task guides stored in Business Process Modeler in Lifecycle Services (LCS). 
 > [!NOTE]
-> The features listed in the diagram with an asterisk (\*) are planned, but are not available yet. [![Help architecture](./media/help-architecture.png)](./media/help-architecture.png)
+> The features listed in the diagram with an asterisk (\*) are planned, but are not available yet. [![Help architecture](./media/help-architecture.png)](./media/help-architecture.png)
 
 
-## Connecting the Help system
+## Connecting the Help system
 > [!NOTE]
 > The **Task guides** tab is currently not available in Microsoft Dynamics 365 for Talent and Microsoft Dynamics 365 for Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for both Retail and Talent.
- 
 
-Using the **System Parameters** page, system administrators connect the pieces of the Help system for an implementation. [![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) On the **System parameters** page, follow these steps:
+
+Using the **System Parameters** page, system administrators connect the pieces of the Help system for an implementation. [![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) On the **System parameters** page, follow these steps:
 
 > [!IMPORTANT]
 > The first time that you open the **Help** tab, you must connect to Lifecycle Services. Be sure to click the link in the middle of the form, wait for the connection, close the dialog box, and then click **OK** to get to the **System Parameters** page.[![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png "Connect to LCS")](./media/connect-to-lcs-crop.png)
@@ -59,9 +58,9 @@ Using the **System Parameters** page, system administrators connect the pieces o
     - For Retail, we will be releasing a library in the near future. 
     - You do not need to select a library for Talent—the connection to the correct library is established for you. 
 
-3.  Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the **Help** pane.
+3.  Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the **Help** pane.
 
-After you complete these steps, you can open the **Help** pane and click the **Task guides** tab. You'll now see the task guides that apply to the page that you’re currently on in Finance and Operations. If no task guides are found, you can enter keywords to refine your search.
+After you complete these steps, you can open the **Help** pane and click the **Task guides** tab. You'll now see the task guides that apply to the page that you’re currently on in Finance and Operations. If no task guides are found, you can enter keywords to refine your search.
 
 ### Showing translated task guides
 
@@ -77,7 +76,7 @@ You can create custom help for Finance and Operations, and for Retail by creatin
 
 For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder.md).
 
-See also
+Additional resources
 --------
 
 [Help overview](help-overview.md)

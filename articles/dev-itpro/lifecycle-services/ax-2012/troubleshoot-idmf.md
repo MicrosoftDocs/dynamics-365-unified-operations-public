@@ -32,22 +32,21 @@ ms.dyn365.ops.version: 2012
 
 # Troubleshoot the Intelligent Data Management Framework (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic contains information about troubleshooting the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF).
 
 Known issues
 ------------
 
--   **Issue** The domain account provided during setup and installation of the service is not granted **permission to log on as a service**, therefore the IDMF service fails when it is started. **Workaround** Open the **Services control** panel. On the **Security** tab, enter the password for the account.
--   **Issue** If the service account for IDMF has not been granted local administrator privileges, the following error message is received: "An unhandled exception occurred and has been logged. Please contact support." **Workaround** Grant the service account for IDMF administrator privileges on the local computer.
--   **Issue** A **ByFiscal** archive task cannot be scheduled when a metadata task is running. **Workaround** Wait until the metadata task completes before scheduling a **ByFiscal** archive task
--   **Issue** Running archive, purge or restore archive tasks at the same time as offline **ALTER INDEX** operations causes database locking issues. **Workaround** Wait until offline **ALTER INDEX** operations for the specified indexes have completed before running archive, purge or restore archive tasks.
--   **Issue** Archive templates and purge template should not be modified when archive or purge tasks are running. **Workaround** Do not modify archive and purge templates when archive or purge tasks are running.
--   **Issue** During a restore, the insert bulk statements can cause a high amount of table lock escalations on tables in the production Microsoft Dynamics AX business database. **Workaround** None.
--   **Issue** In the **ByFiscal** task page and in other pages, expand and collapse icons can show reversed images. **Workaround** None.
--   **Issue** Unable to discover archive objects if the drive table is **AccountingEvent**. The system returns the following message: "Error executing code: Insufficient memory to run script." **Workaround** Update the following registry entries.\[HKEY\_CURRENT\_USERSoftwareMicrosoftDynamics6.0Configurationconfiguration name\]\[HKEY\_LOCAL\_MACHINESoftwareMicrosoftDynamics6.0Configurationconfiguration name\]\[HKEY\_LOCAL\_MACHINESYSTEMCurrentControlSetServicesDynamics Server6.0AOS instance configuration name\]Value name: maxbuffersizeValue type: REG\_SZValue: Maximum amount of memory in MB or 0 for no limit
+-   **Issue** The domain account provided during setup and installation of the service is not granted **permission to log on as a service**, therefore the IDMF service fails when it is started. **Workaround** Open the **Services control** panel. On the **Security** tab, enter the password for the account.
+-   **Issue** If the service account for IDMF has not been granted local administrator privileges, the following error message is received: "An unhandled exception occurred and has been logged. Please contact support." **Workaround** Grant the service account for IDMF administrator privileges on the local computer.
+-   **Issue** A **ByFiscal** archive task cannot be scheduled when a metadata task is running. **Workaround** Wait until the metadata task completes before scheduling a **ByFiscal** archive task
+-   **Issue** Running archive, purge or restore archive tasks at the same time as offline **ALTER INDEX** operations causes database locking issues. **Workaround** Wait until offline **ALTER INDEX** operations for the specified indexes have completed before running archive, purge or restore archive tasks.
+-   **Issue** Archive templates and purge template should not be modified when archive or purge tasks are running. **Workaround** Do not modify archive and purge templates when archive or purge tasks are running.
+-   **Issue** During a restore, the insert bulk statements can cause a high amount of table lock escalations on tables in the production Microsoft Dynamics AX business database. **Workaround** None.
+-   **Issue** In the **ByFiscal** task page and in other pages, expand and collapse icons can show reversed images. **Workaround** None.
+-   **Issue** Unable to discover archive objects if the drive table is **AccountingEvent**. The system returns the following message: "Error executing code: Insufficient memory to run script." **Workaround** Update the following registry entries.\[HKEY\_CURRENT\_USERSoftwareMicrosoftDynamics6.0Configurationconfiguration name\]\[HKEY\_LOCAL\_MACHINESoftwareMicrosoftDynamics6.0Configurationconfiguration name\]\[HKEY\_LOCAL\_MACHINESYSTEMCurrentControlSetServicesDynamics Server6.0AOS instance configuration name\]Value name: maxbuffersizeValue type: REG\_SZValue: Maximum amount of memory in MB or 0 for no limit
 
 ## View log files
 IDMF logs error events in a log file in a folder under the installation folder. The default installation path is C:\Program File\Microsoft Dynamics AX Intelligent Data Management Framework. IDMF creates the log file when the first error message is generated. The file is named trace\_mm-dd-yyyy.log, with mm-dd-yyyy providing the current month, day, and year. The IDMF scheduler service creates an error log file called servicetrace\_mm-dd-yyyy.log. The error log files are created for each day. When the first error occurs during the day, the error log file is created, and the error message is appended to the newly created error log file. All subsequent error messages are appended to the existing error log file for the day.

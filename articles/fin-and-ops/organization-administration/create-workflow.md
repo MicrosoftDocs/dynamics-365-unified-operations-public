@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Create a workflow
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to create a workflow.
 

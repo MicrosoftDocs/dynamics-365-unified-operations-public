@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a purchase order
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to create a purchase order manually. It’s more typical for purchase orders to be created automatically as result of master planning, direct delivery, and other processes. Purchase orders are typically created by a purchasing agent. The example shown here can be used in the USMF demo data company using the values that are suggested in the notes for various steps.
 

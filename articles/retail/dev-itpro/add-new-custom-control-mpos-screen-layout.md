@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Add a custom control to an MPOS screen layout
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to add a new custom control to a Modern POS (MPOS) screen layout.
 
@@ -83,13 +82,13 @@ You want to provide the cashier and manager more information about sales. For ex
             export interface ICustomControlOptions {
                 data: Proxy.Entities.Cart;
             }
-            /*** User control for rendering custom control. */
+            /*** User control for rendering custom control. */
             export class CustomControl extends UserControl {
                 // Observable that is binded to the control's UI
                 // See ExtraControl.html (data-bind="text: _quantities")
                 private _quantities: Observable<number>;
                 private _voidedLines: Observable<number>;
-                /*** Initializes a new instance of the ExtraControlOptions class.  This is called every time the cart is changed.  */
+                /*** Initializes a new instance of the ExtraControlOptions class.  This is called every time the cart is changed.  */
                 constructor(options: ICustomControlOptions) {
                 super();
                 options = options || { data: undefined };
@@ -118,14 +117,14 @@ You want to provide the cashier and manager more information about sales. For ex
                         voidedQuantity = voidedQuantity + 1;
                 }});
                 return voidedQuantity;
-            }  }
+            }  }
         }
 
 7.  Compile the project.
 8.  Before you deploy MPOS, you must add the new custom control in the screen layout designer and set the relative URL. Sign in to the client, and go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Screen layouts**.
 9.  Select the **F2MP16:9M** screen layout, and then, on the Action Pane, click the **Designer** button.
 10. If you're prompted to install the designer tool, click **Open**, and follow the installation instructions.
-11. After the installation is completed, you're prompted for your Microsoft Azure Active Directory (Azure AD) credentials. Provide them to start the designer.
+11. After the installation is completed, you're prompted for your Microsoft Azure Active Directory (Azure AD) credentials. Provide them to start the designer.
 12. In the designer, drag the custom control to the transaction page.
 13. Right-click the custom control on the transaction page, and then click **Customize**.
 14. Set the relative URI to **Views/Controls/CustomControl.html**, and then click **OK**.

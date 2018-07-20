@@ -5,7 +5,7 @@ title: Cloud and on-premises feature comparison
 description: The topic shows which features are supported in Cloud and on-premises.
 author: robinarh
 manager: AnnBe
-ms.date: 07/13/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -25,16 +25,18 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
-ms.search.validFrom: 2017-07-13
+ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ---
 
 # Cloud and on-premises feature comparison
 
+[!include [banner](../includes/banner.md)]
+
 This topic shows whether each feature is available in these products:
 
-+ Dynamics 365 for Finance and Operations, Enterprise edition (cloud)
-+ Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)
++ Dynamics 365 for Finance and Operations (cloud)
++ Dynamics 365 for Finance and Operations (on-premises)
 
 The following tables list the product areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, the features are listed on a separate line in the Feature column.
 
@@ -51,8 +53,9 @@ The following tables list the product areas. Cloud and on-premises support is li
 | | Cost management content pack for Power BI | Yes | No |
 | Data management and integration| | Yes | Yes |
 | | Configuration-driven extension| Yes | No |
-| | Export data to your own data warehouse| Yes | No |
+| | Export data to your own data warehouse| Yes | Yes |
 | | Enable the export of incremental updates to a data entity | Yes | No |
+| | Data integrations                 |Yes | Yes|
 | Document management| | Yes| Yes |
 | Financial management|  | Yes | Yes |
 | Help| | Yes | No |
@@ -63,6 +66,9 @@ The following tables list the product areas. Cloud and on-premises support is li
 | | Integration with PowerBI.com| Yes | No |
 | | Analytical workspaces | Yes | No |
 | | Intelligent business process: Recommendations| Yes | No |
+| | Authoring Power BI reports with OData using Power BI desktop or Excel PowerQuery tools | Yes | No |
+| | SQL Server Reporting Services (SSRS) supports scaling out  | Yes | No |
+| | Telemetry is transferred into the cloud | Yes | No |
 | Inventory management| | Yes | Yes |
 | Lifecycle services| | Yes | Yes |
 | | Configurable business processes | Yes | No |
@@ -107,6 +113,7 @@ The following tables list the product areas. Cloud and on-premises support is li
 | Platform compatibility  || Yes | Yes |
 | Servicing | | Yes | Yes |
 | | Servicing environments | Yes | No |
+| Trace Parser and PerfTimer | | Yes | No |
 | Upgrade | | Yes | Yes |
 | | Upgrade | Yes | No |
 | | Upgrade and support for previous versions | Yes | No |
@@ -125,5 +132,7 @@ The following tables list the product areas. Cloud and on-premises support is li
 |---|---|---|---|
 | All Talent areas | All Talent features | Yes | No |
 
+## Additional resources
 
+- [Features not implemented in on-premises deployments](features-not-implemented-on-prem.md)
 

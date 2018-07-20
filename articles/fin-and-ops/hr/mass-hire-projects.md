@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Mass hire projects
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Mass hire projects allow human resources specialists to create multiple positions and efficiently hire workers into those positions.
 
@@ -51,7 +50,7 @@ In the summer, you usually hire 15-20 part-time college students to fill availab
 
 In the **Mass hire projects** page, select the “SummerInterns” project and then click **Open project**. In the open mass hire project, click **Create positions** and enter information about the accountant position. You can indicate that five accountant positions should be created using the same information for each one, and then click OK. Repeat this process for the order processor and cashier positions. 
 
-After selecting students to hire for the internship positions, you'll enter each student’s information in the **Position details** for the position that you're hiring them for. When you have entered all of the position details, select the position in the Mass hire projects page, and then click **Hire**. A position record will be created for each position and a worker record will be created and assigned to the correct position for each person who you hire.
+After selecting students to hire for the internship positions, you'll enter each student’s information in the **Position details** for the position that you're hiring them for. When you have entered all of the position details, select the position in the Mass hire projects page, and then click **Hire**. A position record will be created for each position and a worker record will be created and assigned to the correct position for each person who you hire.
 
 ## Mass hire project statuses
 A mass hire project can have the following statuses.
@@ -98,7 +97,7 @@ On the **Mass hire project** page, click **Open project** or **Close project** t
 </tbody>
 </table>
 
- 
+
 
 
 

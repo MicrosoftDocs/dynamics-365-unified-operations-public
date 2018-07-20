@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Development and administration for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
-description: This page helps developers and IT Pros get started with Finance and Operations, Enterprise edition.
+title: Development and administration for Microsoft Dynamics 365 for Finance and Operations
+description: This page helps developers and IT Pros get started with Finance and Operations.
 author: margoc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -23,6 +23,7 @@ ms.reviewer: margoc
 ms.custom: 62303
 ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ms.search.region: Global
+ms.search.scope: Operations
 # ms.search.industry: 
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
@@ -30,11 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Development and administration for Dynamics 365 for Finance and Operations, Enterprise edition 
+# Development and administration for Dynamics 365 for Finance and Operations 
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-Development and administration for Microsoft Dynamics 365 for Finance and Operations platform includes:
+Development and administration for Microsoft Dynamics 365 for Finance and Operations includes:
 
 - Administrator experience and Lifecycle Services
 - Developer experience
@@ -49,7 +50,7 @@ The developer experience is based on modern tooling using Visual Studio and .NET
 -	Microsoft Visual Studio is the development environment. Finance and Operations customizes the Visual Studio environment to provide you with a smooth and familiar experience.
 -	The X++ compiler generates Common Intermediate Language (CIL) for all features. CIL is the same intermediate language used by other .NET-based (managed) languages, such as the C# programming language.
 -	You can leverage the browser-based client and design patterns for forms to provide an improved end-user experience.
--	The Application Lifecycle Model (ALM) supports build automation, test automation, and deployment of models to the cloud.
+-	The Application Lifecycle Management (ALM) system supports build automation, test automation, and deployment of models to the cloud.
 
 For more information, see [Developer home page](dev-tools/developer-home-page.md).
 
@@ -72,7 +73,7 @@ The Microsoft Dynamics 365 for Finance and Operations mobile app empowers your 
 + IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework. Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don’t have constant network connectivity. 
 
 ## Data management and data entities
-Data from Finance and Operations can easily be integrated with Microsoft and non-Microsoft data sources using the common data service, Power Apps, and Power BI. For more information, see [Data entities](data-entities\data-entities.md).
+Data from Finance and Operations can easily be integrated with Microsoft and non-Microsoft data sources using the common data service, Power Apps, and Power BI. For more information, see [Data entities](data-entities/data-entities.md).
 
 ## Office integration
 The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products. For more information, see [Office integration](office-integration/office-integration.md).

@@ -2,22 +2,22 @@
 # required metadata
 
 title: Out-of-the-box security reports
-description: Dynamics 365 for Finance and Operations, Enterprise edition provides a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role.
+description: Dynamics 365 for Finance and Operations provides a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role.
 author:  maertenm
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  SysSecConfiguration, SrsReportViewerForm
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
-ms.search.scope:  Operations Core
+ms.search.scope:  Core, Operations
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Platform update 8
 
 # Out-of-the-box security reports
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Dynamics 365 for Finance and Operations, Enterprise edition provides a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role. Each of these reports can be found under **System administration \> Inquiries \> Security.** A description of each report is provided below.
+Dynamics 365 for Finance and Operations provides a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role. Each of these reports can be found under **System administration \> Inquiries \> Security.** A description of each report is provided below.
 
 User role assignments
 ----------------------------

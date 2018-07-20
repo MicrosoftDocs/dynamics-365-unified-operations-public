@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Simple List form pattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Simple List form pattern. This pattern is used to maintain data for simple entities.
 
@@ -55,7 +54,7 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 -   A Quick Filter has been added above the grid.
 -   When the form is used as a dependent form, the parent form record context is automatically shown above the form caption.
     -   The page title group for dependent form usage was removed, because it will be provided by the framework.
--   The pattern allows for multiple selections in the grid.
+-   The pattern allows for multiple selections in the grid.
 
 ## Model
 ### High-level structure
@@ -88,7 +87,7 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 -   [Custom Filter Group](custom-filter-group-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
 
 **Standard form guidelines:**
 
@@ -96,7 +95,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 **Simple list guidelines:**
 
--   By default, the Quick Filter should use the name or description column.
+-   By default, the Quick Filter should use the name or description column.
 -   The list can display up to 15 columns.
 
     **Note:** This guideline has been relaxed from AX 2012.
@@ -115,7 +114,7 @@ Form: **CustGroup**
 ## Appendix
 ### Frequently asked questions
 
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
+This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 ### Open issues
 

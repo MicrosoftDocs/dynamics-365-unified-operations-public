@@ -24,7 +24,7 @@ ms.custom: 223174
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: YuyuScheller
+ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Allocation bases 
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 An allocation base is the basis on which Cost accounting allocates overhead costs. An allocation base can be a quantity, such as machine hours that are used, kilowatt hours (kWh) that are consumed, or square footage that is occupied. Allocation bases are mostly used to assign overhead costs to inventory that is produced. For example, an IT department allocates its expenses according to the number of computers that each department uses.
 
@@ -427,8 +427,10 @@ Here is a closer look at the formula for CC003 (IT):
 
 Here is an example of a cost distribution rule if the Electricity fixed formula allocation base is assigned as the allocation base in it.
 
-| Cost object |  Description  | Magnitude | Allocation factor                |
-|-------------|----|-----------|----------------------------------|
-| CC001       | HR | 1,837.50  | (1,837.50 ÷ 18,162.50) × Amount  |
-| CC002       | FI | 3,075.00  | (3,075.00 ÷ 18,162.50) × Amount  |
-| CC003       | IT | 13,250.00 | (13,250.00 ÷ 18,162.50) × Amount |
+
+| Cost object | Description | Magnitude |        Allocation factor         |
+|-------------|-------------|-----------|----------------------------------|
+|    CC001    |     HR      | 1,837.50  | (1,837.50 ÷ 18,162.50) × Amount  |
+|    CC002    |     FI      | 3,075.00  | (3,075.00 ÷ 18,162.50) × Amount  |
+|    CC003    |     IT      | 13,250.00 | (13,250.00 ÷ 18,162.50) × Amount |
+

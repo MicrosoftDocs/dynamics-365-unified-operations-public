@@ -26,6 +26,8 @@ ms.dyn365.ops.version: July 2017 update
 
 # Substitution/adjustment tax invoice for Thailand
 
+[!include [banner](../includes/banner.md)]
+
 You can track how many times copies of tax invoices for customers are printed. Whenever a copy of a tax invoice must be printed, the reason for the reprinted invoice must be specified. The reprinted invoice is a substitution for the original invoice. A special comment is printed on the copy of the tax invoice copy. This comment includes the reason for the substitution and the number of copies that have been printed.
 
 When you print a copy of an invoice, you can also select the **Adjustment** option to adjust the customer information that is printed on the tax invoice. The information that you can adjust includes the customer name, address, contact information, tax registration number, branch number, and branch name. The adjusted tax invoice receives a new tax invoice number and references the original tax invoice.

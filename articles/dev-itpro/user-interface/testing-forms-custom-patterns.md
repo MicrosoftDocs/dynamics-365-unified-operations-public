@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Test forms with custom patterns
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic how to test forms using custom patterns.
 
@@ -43,7 +42,7 @@ Introduction
 By adhering to form patterns, you gain various benefits. For example, form patterns correctly set layout properties so that forms are laid out responsively. However, when form pattern coverage is lacking (for example, there currently isn't support for many extensible controls), or when a form or container has unique requirements/uses that don't fit any pattern, developers can set the pattern to Custom. The developer then becomes responsible for ensuring a correct and responsive form layout.
 
 ## Forms that use custom patterns
-You can find the forms that use custom patterns by using the **Form Patterns** report. For information on running the report, see [Form pattern add-ins](form-pattern-add-ins.md). After running the report, filter the **Percent covered controls** column to show forms that have less than 100-percent coverage. For forms that have a top-level Custom pattern, **Custom** will appear in the **Patterns** column. 
+You can find the forms that use custom patterns by using the **Form Patterns** report. For information on running the report, see [Form pattern add-ins](form-pattern-add-ins.md). After running the report, filter the **Percent covered controls** column to show forms that have less than 100-percent coverage. For forms that have a top-level Custom pattern, **Custom** will appear in the **Patterns** column. 
 
 ## Testing configurations
 ### Key resolution
@@ -70,12 +69,12 @@ You can find the forms that use custom patterns by using the **Form Patterns** r
 
 ### Steps
 
-Follow these steps. At each step, examine your form for layout issues. As part of your examination, look at all tab pages, and any groups that can expand/collapse content.
+Follow these steps. At each step, examine your form for layout issues. As part of your examination, look at all tab pages, and any groups that can expand/collapse content.
 
-1.  Open a browser window at full-screen size, and navigate to your form/control (in low density). It's a good idea to starting your testing at a resolution of 1366 × 768.
-2.  Press the Windows log key+Left Arrow to switch the browser window to Snap view (half the screen).
-3.  Slowly resize the browser horizontally back to full width. Stop at intervals, and evaluate the form layout.
-4.  Slowly resize the browser vertically from full height to half-screen height. Stop at intervals, and evaluate the form layout.
+1.  Open a browser window at full-screen size, and navigate to your form/control (in low density). It's a good idea to starting your testing at a resolution of 1366 × 768.
+2.  Press the Windows log key+Left Arrow to switch the browser window to Snap view (half the screen).
+3.  Slowly resize the browser horizontally back to full width. Stop at intervals, and evaluate the form layout.
+4.  Slowly resize the browser vertically from full height to half-screen height. Stop at intervals, and evaluate the form layout.
 5.  Maximize the browser window to full-screen size. Adjust the zoom levels (50 percent, 75 percent, 125 percent, 150 percent, and 200 percent), and evaluate the form layout.
 6.  Do a sanity check in high density.
 7.  Do a sanity check in other browsers.
@@ -93,18 +92,18 @@ Follow these steps. At each step, examine your form for layout issues. As part 
 -   Containers aren't showing up at all (there are no scrollbars that you can use to get to parts of the form).
     -   This issue can occur with **SizeToAvailable** containers when there is no available height/width.
 -   There are extra (unnecessary) scrollbars.
-    -   You should expect more scrollbars in smaller viewports, especially because some containers (for example, grids and tab pages) have a minimum height.
+    -   You should expect more scrollbars in smaller viewports, especially because some containers (for example, grids and tab pages) have a minimum height.
     -   This issue can occur with **SizeToContent** containers that should be **SizeToAvailable**.
 
 ### Other known/expected issues
 
--   Horizontal scrollbars appear on Toolbars.
+-   Horizontal scrollbars appear on Toolbars.
     -   Where there isn't enough width to show all the buttons on a Toolbar, a horizontal scrollbar will appear. This issue will be resolved soon by a framework deliverable that will implement overflow behavior on Toolbars.
 -   Random input control borders are missing at various zoom levels.
     -   This is a known issue and is tracked by 1721990.
 -   Grids receive extra scrollbars, because the space that is available for the grid is less than the grid's minimum height (200 px).
     -   We have a future work item to investigate reducing/removing this minimum height.
--   When StaticText controls that have **SizeToAvailable** width are inside a group that also has **SizeToAvailable** width, horizontal scrollbars appear at some widths (Internet Explorer only).
+-   When StaticText controls that have **SizeToAvailable** width are inside a group that also has **SizeToAvailable** width, horizontal scrollbars appear at some widths (Internet Explorer only).
     -   The browser has a calculation error that sometimes causes scrollbars to appear in this scenario.
 
 ## Appendix

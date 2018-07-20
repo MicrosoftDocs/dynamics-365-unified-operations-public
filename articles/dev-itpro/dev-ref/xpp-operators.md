@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ operators
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the operators supported in X++.
 
@@ -206,7 +205,7 @@ The following code examples illustrate the conditions that control whether an **
     // Every subtype is also of its supertype.
     Form myForm = new Form();
     info(strFmt("%1", (myForm is TreeNode)));
-     
+
     // The Infolog displays 1 during run time, where 1 means true. 
     // The type of the underlying object matters in the is expression,
     // not the type of the variable that references the object.
@@ -234,10 +233,10 @@ The following code example contains a typical use of the **is** keyword. The **a
         basec = new BaseClass();
         if (!(basec IS DerivedClass))
         {
-            info("Test 2: !(basec IS DerivedClass) is true. Good.");
+            info("Test 2: !(basec IS DerivedClass) is true. Good.");
         }
     }
-     
+
     //Output to the Infolog
     Test 1: (basec IS DerivedClass) is true. Good.
     Test 2: (!(basec IS DerivedClass)) is true. Good.
@@ -285,7 +284,7 @@ The following table lists the relational operators that can be used in X++. Most
 
 ### The like operator
 
-The **like** operator can use **\*** as a wildcard character for zero or more characters, and **?** as a wildcard character for one character. The operand can't be longer than 1,000 characters. The **like** operator is evaluated by the underlying SQL, so the result might differ on different installations. If the expressions that you're comparing contain a file path, you must include four backslashes between each element, as shown in the following example.
+The <strong>like</strong> operator can use <strong>\</strong>* as a wildcard character for zero or more characters, and <strong>?</strong> as a wildcard character for one character. The operand can't be longer than 1,000 characters. The <strong>like</strong> operator is evaluated by the underlying SQL, so the result might differ on different installations. If the expressions that you're comparing contain a file path, you must include four backslashes between each element, as shown in the following example.
 
 ```
     select * from xRefpaths
@@ -314,13 +313,14 @@ When you use the **equal** (**==**) operator to compare objects, the object refe
 ## Operator precedence
 The order that a compound expression is evaluated in can be important. For example, **(x + y / 100)** gives a different result, depending on whether the addition or the division is done first. You can use parentheses (**()**) to explicitly tell the compiler how it should evaluate an expression. For example, you can specify **(x + y) / 100**. If you don't explicitly tell the compiler the order that you want operations to be done in, the order is based on the precedence that is assigned to the operators. For example, the division operator has higher precedence than the addition operator. Therefore, for the expression **x + y / 100**, the compiler evaluates **y / 100** first. In other words,` `**x + y / 100** is equivalent to **x + (y / 100)**. To make your code easy to read and maintain, be explicit. Use parentheses to indicate which operators should be evaluated first. The following table lists the operators in order of precedence. The higher an operator appears in the table, the higher its precedence. Operators that have higher precedence are evaluated before operators that have lower precedence. Note that the operator precedence of X++ isn't the same as the operator precedence of other languages, such as C\# and Java.
 
-| Operators, in order of precedence                                | Syntax                                 |
-|------------------------------------------------------------------|----------------------------------------|
-| Unary                                                            | - ~ !                                  |
-| Multiplicative, shift, bitwise **AND**, bitwise exclusive **OR** | \* / % DIV &lt;&lt; &gt;&gt; & ^       |
-| Additive, bitwise inclusive **OR**                               | + – |                                  |
-| Relational, equality                                             | &lt; &lt;= == != &gt; &gt;= like as is |
-| Logical (**AND**, **OR**)                                        | && ||                                  |
-| Conditional                                                      | ? :                                    |
+
+|                             Operators, in order of precedence                              |                 Syntax                 |
+|--------------------------------------------------------------------------------------------|----------------------------------------|
+|                                           Unary                                            |                 - ~ !                  |
+| Multiplicative, shift, bitwise <strong>AND</strong>, bitwise exclusive <strong>OR</strong> |    \* / % DIV &lt;&lt; &gt;&gt; & ^    |
+|                      Additive, bitwise inclusive <strong>OR</strong>                       |                  + –                   |
+|                                    Relational, equality                                    | &lt; &lt;= == != &gt; &gt;= like as is |
+|                    Logical (<strong>AND</strong>, <strong>OR</strong>)                     |                   &&                   |
+|                                        Conditional                                         |                  ? :                   |
 
 Operators on the same line have equal precedence. If an expression includes more than one of these operators, it's evaluated from left to right, unless assignment operators are used. (Assignment operators are evaluated from right to left.) For example, **&&** (logical **AND**) and **||** (logical **OR**) have the same precedence, and are evaluated from left to right. Therefore, **0&&0||1 == 1**, and **1||0&&0 == 0**.

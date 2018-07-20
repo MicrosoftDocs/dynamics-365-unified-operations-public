@@ -2,7 +2,7 @@
 # required metadata
 
 title: Demo data overview
-description: This topic provides an overview of the demo data that is available for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+description: This topic provides an overview of the demo data that is available for Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 07/05/2017
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Demo data overview
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the demo data that is available for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This topic provides an overview of the demo data that is available for Microsoft Dynamics 365 for Finance and Operations.
 
 
 Demo data is the base data set that is released together with Finance and Operations for implementation support and demonstration purposes. The current demo data set supports the following verticals:
@@ -76,7 +76,7 @@ The demo data set supports 40 languages across 16 countries or regions. It also 
 | USSI         | Contoso Consulting USA               |
 
 
-# Embedded analytics
+## Embedded analytics
 Demo data has been updated in five companies to provide better reports on the new embedded analytics within workspace.  Filter the embedded analytics to the following legal entities for the improved report data:
 
 | Legal entity | Description                           |
@@ -93,7 +93,7 @@ To view the Cash flow forecasting reports with data, you must first run the fore
 
 For demonstration purposes, you can add cash flow forecasting demo data using the **Generate data** page from the **Demo data** module. This script will insert data into the cash flow forecasting tables to quickly populate information necessary for reports. 
 
-The credit and collections analytics can be viewed on the **Manage customer credit and collections** workspace. The view the analytics you need to refresh the CustCollectionsBIMeasurements aggregate measure on the **Entity Store** page.
+The credit and collections analytics can be viewed on the **Manage customer credit and collections** workspace. To view the analytics you need to refresh the CustCollectionsBIMeasurements aggregate measure on the **Entity Store** page.
 
 The vendor payments analytics can be viewed on the **Vendor payments** workspace. To view the analytics, you need to refresh the VendPaymentBIMeasure aggregate measure on the **Entity Store** page.
 

@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # New task guides (February 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic lists the Task guides that were released to the Microsoft BPM libraries as of February 2016.  The libraries that were published include the (February 2016) APQC Unified Library for Microsoft Dynamics AX and (February 2016) Getting started.
 
 Task guides in the (February 2016) APQC Unified Library for Microsoft Dynamics AX
 ---------------------------------------------------------------------------------
 
-The (February 2016) APQC Unified library contains the Task guides that are intended to be used for Help with the Dynamics AX 7.0.0 release. If you need localized versions of these Task guides, they are available in the (May 2016) APQC Unified Library for Microsoft Dynamics AX. For more information about how to connect the help system to a Task guide library, see [Get started with Help](help-overview.md).
+The (February 2016) APQC Unified library contains the Task guides that are intended to be used for Help with the Dynamics AX 7.0.0 release. If you need localized versions of these Task guides, they are available in the (May 2016) APQC Unified Library for Microsoft Dynamics AX. For more information about how to connect the help system to a Task guide library, see [Get started with Help](help-overview.md).
 
 ### Accounts payable
 
@@ -55,8 +54,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Set up Accounts payable invoice matching validation       | Global             |
 | Set up vendor invoice policies                            | Global             |
 
- 
 
+ 
 ### Accounts receivable
 
 |                                                             |                    |
@@ -76,8 +75,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Review collections information                              | Global             |
 | Set up and generate accounts receivable aging information   | Global             |
 
- 
 
+ 
 ### Cash and bank management
 
 |                                                                      |                    |
@@ -104,8 +103,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Settle a postdated check from a customer                             | Global             |
 | Vendor payment overview                                              | Global             |
 
- 
 
+ 
 ### Compliance
 
 |                                            |                    |
@@ -113,8 +112,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | **BPM Line**                               | **Country/Region** |
 | Define audit policies for source documents | Global             |
 
- 
 
+ 
 ### Cost management
 
 |                                                                     |                    |
@@ -126,8 +125,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | View current WIP status on a production order                       | Global             |
 | View inventory statement and KPI by cost object                     | Global             |
 
- 
 
+ 
 ### Country/Region functionality
 
 |                                                                                                        |                                 |
@@ -268,8 +267,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | GB-00009 Create a credit note on the settlement discount                                               | United Kingdom                  |
 | GB-00009 Setup parameters for credit note on prompt payment discount                                   | United Kingdom                  |
 
- 
 
+ 
 ### Develop Vision and Strategy
 
 |                                                                                          |                    |
@@ -281,8 +280,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Make a question dependent on the answer of the previous question (Conditional questions) | Global             |
 | Score a questionnaire based on Percent                                                   | Global             |
 
- 
 
+ 
 ### Electronic reporting
 
 |                                                 |                    |
@@ -294,8 +293,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | ER Map data model to selected data sources      | Global             |
 | ER Select service provider                      | Global             |
 
- 
 
+ 
 ### Expense management
 
 |                              |                    |
@@ -303,8 +302,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | **BPM Line**                 | **Country/Region** |
 | Configure expense management | Global             |
 
- 
 
+ 
 ### Fixed assets
 
 |                                                           |                    |
@@ -326,15 +325,15 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Split a fixed asset                                       | Global             |
 | Transfer a fixed asset                                    | Global             |
 
- 
 
+ 
 ### General ledger
 
 |                                                                   |                    |
 |-------------------------------------------------------------------|--------------------|
 | **BPM Line**                                                      | **Country/Region** |
 | Close the fiscal year                                             | Global             |
-| Create a journal entry using   template                           | Global             |
+| Create a journal entry using   template                           | Global             |
 | Create a main account                                             | Global             |
 | Create account structures                                         | Global             |
 | Create accrual schemes                                            | Global             |
@@ -359,8 +358,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | View journal entries or transactions                              | Global             |
 | View related intercompany voucher from journal                    | Global             |
 
- 
 
+ 
 ### Human capital management
 
 |                                                                  |                    |
@@ -403,8 +402,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Setting benefit eligibility policies                             | Global             |
 | Setting up i9 document types                                     | Global             |
 
- 
 
+ 
 ### Inventory management
 
 |                                                                                   |                    |
@@ -427,8 +426,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Trace an item or raw material                                                     | Global             |
 | Transfer physical inventory within the warehouse                                  | Global             |
 
- 
 
+ 
 ### Manufacturing
 
 |                                                               |                    |
@@ -479,8 +478,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Transfer material with Kanban jobs                            | Global             |
 | Validate production flow and version                          | Global             |
 
- 
 
+ 
 ### Master planning
 
 |                                                   |                    |
@@ -492,8 +491,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Identify critical materials and supplier capacity | Global             |
 | Modify a demand forecast manually                 | Global             |
 
- 
 
+ 
 ### Organization administration
 
 |                                           |                    |
@@ -506,8 +505,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Set up electronic signatures              | Global             |
 | Set up number sequences by using a wizard | Global             |
 
- 
 
+ 
 ### Planning
 
 |                        |                    |
@@ -515,8 +514,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | **BPM Line**           | **Country/Region** |
 | Determine availability | Global             |
 
- 
 
+ 
 ### Procurement and sourcing
 
 |                                                                  |                    |
@@ -530,8 +529,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Search for vendors                                               | Global             |
 | Set up a procurement category hierarchy                          | Global             |
 
- 
 
+ 
 ### Product information and configuration
 
 |                                                       |                    |
@@ -556,8 +555,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Release a ..\financial-dimensions\dimension-based product master              | Global             |
 | Transfer data for product models                      | Global             |
 
- 
 
+ 
 ### Public sector
 
 |                                                                                         |                    |
@@ -582,8 +581,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Set up a fund for Public sector                                                         | Global             |
 | Set up purchase agreement classifications for Public Sector                             | Global             |
 
- 
 
+ 
 ### Retail and commerce
 
 |                                                                                           |                    |
@@ -624,8 +623,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Retail price adjustments                                                                  | Global             |
 | Store configurations for Retail statements                                                | Global             |
 
- 
 
+ 
 ### Sales
 
 |                                            |                    |
@@ -647,8 +646,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Ship orders as direct deliveries           | Global             |
 | Ship sales orders without warehousing      | Global             |
 
- 
 
+ 
 ### Sales tax
 
 |                                                    |                    |
@@ -666,8 +665,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Set up withholding tax                             | Global             |
 | View posted sales tax transactions                 | Global             |
 
- 
 
+ 
 ### Security
 
 |                                                         |                    |
@@ -677,8 +676,8 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Identify and resolve conflicts in segregation of duties | Global             |
 | Set up segregation of duties                            | Global             |
 
- 
 
+ 
 ### Warehouse and transportation
 
 |                                                                                   |                    |
@@ -702,9 +701,10 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Set up shipping carriers                                                          | Global             |
 | Use the Load Planning Workbench to plan loads and shipments                       | Global             |
 
- 
 
+ 
 ## Task guides in the (February 2016) Getting started library
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **BPM Line**                                       | **Country/Region** |
@@ -724,7 +724,7 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 
  
 
-See also
+Additional resources
 --------
 
 [New or updated Task guides (May 2016)](new-updated-task-guides-available-may-2016.md)

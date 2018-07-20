@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: JmgShopSupervisorReleaseOrders
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Controlling raw material consumption by using flushing principles
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The flushing principles reflect different consumption strategies for raw materials that are used in production processes. Consumption is the process that deducts material from the on-hand inventory and sets the value of the consumed materials to **Work in progress** (WIP) for production orders and batch orders. Raw materials are usually consumed from a location that is configured for the process that consumes the material. This location is known as the production input location.
 

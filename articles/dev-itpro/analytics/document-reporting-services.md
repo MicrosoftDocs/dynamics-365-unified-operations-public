@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Document Reporting Services overview
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes the integrated reporting solution that is available in Microsoft Dynamics 365 for Finance and Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
 
@@ -48,9 +47,9 @@ In a one-box environment, developers can create, modify, and preview reports, fr
 
 [![document-reporting-services-topology](./media/document-reporting-services-topology.png)](./media/document-reporting-services-topology.png)
 
-### Viewing reports in Dynamics 365 for Finance and Operations
+### Viewing reports in Dynamics 365 for Finance and Operations
 
-The enhanced report viewing experience that Finance and Operations provides for end users is the same as the report preview experience in Microsoft Visual Studio. You no longer use a separate design preview in Visual Studio. Instead, just press Ctrl+F5 to build and preview the report in an Internet Explorer window. The report appears exactly as it would appear in the client. Even the user's parameter experience is the same. The following screen shot shows an example of a report preview that is opened from Visual Studio. 
+The enhanced report viewing experience that Finance and Operations provides for end users is the same as the report preview experience in Microsoft Visual Studio. You no longer use a separate design preview in Visual Studio. Instead, just press Ctrl+F5 to build and preview the report in an Internet Explorer window. The report appears exactly as it would appear in the client. Even the user's parameter experience is the same. The following screen shot shows an example of a report preview that is opened from Visual Studio. 
 
 [![Example of a report preview](./media/2_report.png)](./media/2_report.png)
 
@@ -65,7 +64,7 @@ The following table compares the service administration prerequisites for Micros
 <thead>
 <tr class="header">
 <th>AX 2012</th>
-<th>The current version of Dynamics 365 for Finance and Operations</th>
+<th>The current version of Dynamics 365 for Finance and Operations</th>
 </tr>
 </thead>
 <tbody>
@@ -82,7 +81,7 @@ The following table compares the service administration prerequisites for Micros
 </table>
 
 ## Developing application reports
-The process for developing a report in the current version of Finance and Operations is easier than it is in AX 2012, because you can create and validate a reporting solution entirely in Visual Studio 2015. The following table describes how Finance and Operations simplifies the basic procedure for adding an automatic design report that is based on a query.
+The process for developing a report in the current version of Finance and Operations is easier than it is in AX 2012, because you can create and validate a reporting solution entirely in Visual Studio 2015. The following table describes how Finance and Operations simplifies the basic procedure for adding an automatic design report that is based on a query.
 
 <table>
 <colgroup>
@@ -92,7 +91,7 @@ The process for developing a report in the current version of Finance and Operat
 <thead>
 <tr class="header">
 <th>AX 2012</th>
-<th>The current version of Dynamics 365 for Finance and Operations</th>
+<th>The current version of Dynamics 365 for Finance and Operations</th>
 </tr>
 </thead>
 <tbody>
@@ -112,7 +111,7 @@ The process for developing a report in the current version of Finance and Operat
 <li>Edit the report in Visual Studio.</li>
 <li>In Visual Studio, add the report to a menu item, and set the menu item as a startup object.</li>
 <li>Use the AOT to deploy the report to the report server.</li>
-<li>Press Ctrl+F5 to verify the report in the Finance and Operations client. <strong>Note:</strong> There is no longer a separate preview of the report design from the model editor.</li>
+<li>Press Ctrl+F5 to verify the report in the Finance and Operations client. <strong>Note:</strong> There is no longer a separate preview of the report design from the model editor.</li>
 <li>When the whole solution is completed, deploy it to the cloud in one package.</li>
 </ol></td>
 </tr>

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Help secure mobile workspaces
+
+[!include [banner](../../../includes/banner.md)]
+
 This topic describes how to limit a user's access to a workspace.
 
 ## Assign a menu item to workspace

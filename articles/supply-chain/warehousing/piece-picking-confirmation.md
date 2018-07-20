@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  WHSRFAutoConfirm, WHSRFMenuItem
+ms.search.form:  WHSRFAutoConfirm, WHSRFMenuItem
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Piece picking confirmation
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device. For picks, you can confirm the quantity of work to be processed up to the quantity that is specified on work to be picked. For counting work, you can scan the inventory that you are counting and track the total amount.
 
@@ -44,12 +44,14 @@ Piece picking works for all counting work and for the initial pick for any type 
 
 ## Set up piece picking
 
-1.	On a mobile device menu item, open the setup form for work confirmation: Warehouse management > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**. 
+1.  On a mobile device menu item, open the setup form for work confirmation: Warehouse management > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**. 
 2. From the mobile device menu item, open Work confirmation setup.
 
 The following options become available for selection when the work type is pick or counting.
 
-| Option        | Description   | 
-| ------------- | ------------- |
-| Piece picking confirmation   | Available for pick and counting work types. Product confirmation is automatically selected. Allows you to confirm each piece of inventory from the mobile device. | 
-| Maximum number of pieces     | Available for pick work if piece picking confirmation is enabled. Sets a limit to the number of pieces that you must confirm. |  
+
+|           Option           |                                                                            Description                                                                            |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Piece picking confirmation | Available for pick and counting work types. Product confirmation is automatically selected. Allows you to confirm each piece of inventory from the mobile device. |
+|  Maximum number of pieces  |                   Available for pick work if piece picking confirmation is enabled. Sets a limit to the number of pieces that you must confirm.                   |
+

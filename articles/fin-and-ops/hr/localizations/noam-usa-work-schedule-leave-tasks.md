@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up work schedules and leave
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
 
@@ -77,7 +76,7 @@ To create a leave type, on the **Leave types** page, click **New**, and then ent
 Enter the earning code that is used when earnings lines for the leave are generated, if earning codes are required.
 
 -   For paid leave, earning codes are required. The earnings lines that are generated for the position during the leave will show a daily breakout.
--   For unpaid leave, if you don’t enter any earning codes, no earnings lines will be generated during the leave period, and the salary amount will be adjusted. However, you can manually modify the earnings statement to add earnings statement lines. If you want unpaid leave to generate earning lines, you can create a zero-rate earning code and assign it to the leave type. Hours for time on leave will then be tracked in Payroll, so that you can generate pay statements. These statements will have no pay, but you can force deduction arrears and track time on leave in Payroll. In addition, Payroll can update Family and Medical Leave Act (FMLA) hours that are taken.
+-   For unpaid leave, if you don’t enter any earning codes, no earnings lines will be generated during the leave period, and the salary amount will be adjusted. However, you can manually modify the earnings statement to add earnings statement lines. If you want unpaid leave to generate earning lines, you can create a zero-rate earning code and assign it to the leave type. Hours for time on leave will then be tracked in Payroll, so that you can generate pay statements. These statements will have no pay, but you can force deduction arrears and track time on leave in Payroll. In addition, Payroll can update Family and Medical Leave Act (FMLA) hours that are taken.
 
 Repeat these steps to create additional leave types.
 

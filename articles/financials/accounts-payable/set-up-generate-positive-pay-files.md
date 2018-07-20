@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: BankPositivePayFormat
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Set up and generate positive pay files
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article explains how to set up positive pay and generate positive pay files. 
 
 Set up positive pay to generate an electronic list of checks that is provided to the bank. Then, when a check is presented to the bank, the bank compares it with the list of checks. If the check matches a check in the list, the bank clears it. If the check doesn't match a check in the list, the bank holds it for review.
 
 ## Security for positive pay files
-Positive pay files can contain sensitive information about payees and check amounts. Therefore, make sure that you use appropriate security measures from the time that the files are generated until they are received by the bank. Positive pay files are downloaded to the location that is specified by your web browser. Because positive pay files can contain sensitive information, it's important that only authorized users have access to generate and view this information in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Use the following table to help you determine the privileges that are required.
+Positive pay files can contain sensitive information about payees and check amounts. Therefore, make sure that you use appropriate security measures from the time that the files are generated until they are received by the bank. Positive pay files are downloaded to the location that is specified by your web browser. Because positive pay files can contain sensitive information, it's important that only authorized users have access to generate and view this information in Microsoft Dynamics 365 for Finance and Operations. Use the following table to help you determine the privileges that are required.
 
 <table>
 <colgroup>
@@ -84,65 +83,65 @@ Positive pay files can contain sensitive information about payees and check amou
 </table>
 
 ## Set up a positive pay format
-Positive pay files are created by using data entities. Before you can generate a positive pay file, you must set up a transformation input format that will be used to translate the check information into a format that can communicate with the bank. On the **Positive pay format** page, you can create a file format identifier and a description. The transformation input format must be of the XML type. The specific format depends on the transformation file that you're using. For example, the sample Extensible Stylesheet Language Transformations (XSLT) file that is provided uses the **XML-Element** format. Use the **Upload file used for transformation** action to specify the location of the transform file for the format that your bank requires.
+Positive pay files are created by using data entities. Before you can generate a positive pay file, you must set up a transformation input format that will be used to translate the check information into a format that can communicate with the bank. On the **Positive pay format** page, you can create a file format identifier and a description. The transformation input format must be of the XML type. The specific format depends on the transformation file that you're using. For example, the sample Extensible Stylesheet Language Transformations (XSLT) file that is provided uses the **XML-Element** format. Use the **Upload file used for transformation** action to specify the location of the transform file for the format that your bank requires.
 
 ## Example: XSLT file for positive pay file
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl xslthelper" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xslthelper="http://schemas.microsoft.com/BizTalk/2003/xslthelper">
-      <xsl:output method="xml" omit-xml-declaration="no" version="1.0" encoding="utf-8"/>
-      <xsl:template match="/">
-        <xsl:value-of select="'
+      <xsl:output method="xml" omit-xml-declaration="no" version="1.0" encoding="utf-8"/>
+      <xsl:template match="/">
+        <xsl:value-of select="'
     '" />
-        <Document>
-          <xsl:value-of select="'
+        <Document>
+          <xsl:value-of select="'
     '" />
-          <!--Header Begin-->
-          <xsl:value-of select='string("Vendor ID,Vendor Name,Voided,Document Type,Check Date,Check Number,Check Amount,Checkbook ID,Vendor Class ID,Posted Date")'/>
-          <xsl:value-of select="'
+          <!--Header Begin-->
+          <xsl:value-of select='string("Vendor ID,Vendor Name,Voided,Document Type,Check Date,Check Number,Check Amount,Checkbook ID,Vendor Class ID,Posted Date")'/>
+          <xsl:value-of select="'
     '" />
-          <!--Header End-->
-          <xsl:for-each select="Document/BankPositivePayExportEntity">
-            <!--Cheque Detail begin-->
-            <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='BANKNEGINSTRECIPIENTNAME/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:choose>
-              <xsl:when test='CHEQUESTATUS/text()=normalize-space("Void") or CHEQUESTATUS/text()=normalize-space("Rejected") or CHEQUESTATUS/text()=normalize-space("Cancelled")'>
-                <xsl:value-of select='string("Yes")'/>
-              </xsl:when>
-              <xsl:when test='CHEQUESTATUS/text()=normalize-space("Payment")'>
-                <xsl:value-of select='string("No")'/>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select='string(" ")'/>
-              </xsl:otherwise>
-            </xsl:choose>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='string("Payment")'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='TRANSDATE/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='CHEQUENUM/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='AMOUNTCUR/text()'/>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='string("BOA-#1812")'/>
-            <xsl:value-of select="','" />
-            <xsl:choose>
-              <xsl:when test='RECIPIENTTYPE/text()=normalize-space("Vend")'>
-                <xsl:value-of select='VENDGROUP/text()'/>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of select='CUSTGROUP/text()'/>
-              </xsl:otherwise>
-            </xsl:choose>
-            <xsl:value-of select="','" />
-            <xsl:value-of select='TRANSDATE/text()'/>
-            <xsl:value-of select="'
+          <!--Header End-->
+          <xsl:for-each select="Document/BankPositivePayExportEntity">
+            <!--Cheque Detail begin-->
+            <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
+            <xsl:value-of select="','" />
+            <xsl:value-of select='BANKNEGINSTRECIPIENTNAME/text()'/>
+            <xsl:value-of select="','" />
+            <xsl:choose>
+              <xsl:when test='CHEQUESTATUS/text()=normalize-space("Void") or CHEQUESTATUS/text()=normalize-space("Rejected") or CHEQUESTATUS/text()=normalize-space("Cancelled")'>
+                <xsl:value-of select='string("Yes")'/>
+              </xsl:when>
+              <xsl:when test='CHEQUESTATUS/text()=normalize-space("Payment")'>
+                <xsl:value-of select='string("No")'/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select='string(" ")'/>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:value-of select="','" />
+            <xsl:value-of select='string("Payment")'/>
+            <xsl:value-of select="','" />
+            <xsl:value-of select='TRANSDATE/text()'/>
+            <xsl:value-of select="','" />
+            <xsl:value-of select='CHEQUENUM/text()'/>
+            <xsl:value-of select="','" />
+            <xsl:value-of select='AMOUNTCUR/text()'/>
+            <xsl:value-of select="','" />
+            <xsl:value-of select='string("BOA-#1812")'/>
+            <xsl:value-of select="','" />
+            <xsl:choose>
+              <xsl:when test='RECIPIENTTYPE/text()=normalize-space("Vend")'>
+                <xsl:value-of select='VENDGROUP/text()'/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select='CUSTGROUP/text()'/>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:value-of select="','" />
+            <xsl:value-of select='TRANSDATE/text()'/>
+            <xsl:value-of select="'
     '" />
-          </xsl:for-each>
-        </Document>
-      </xsl:template>
+          </xsl:for-each>
+        </Document>
+      </xsl:template>
     </xsl:stylesheet>
 
 ## Assign the positive pay format to a bank account

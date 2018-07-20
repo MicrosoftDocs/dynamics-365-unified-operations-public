@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ run-time functions
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the X++ run-time functions.
 
-The X++ language provides nearly 200 system functions that aren't part of any class and are executed at run time. Run-time functions are used for data type conversions, mathematical operations, and so on. Here are some common run-time functions:
+The X++ language provides nearly 200 system functions that aren't part of any class and are executed at run time. Run-time functions are used for data type conversions, mathematical operations, and so on. Here are some common run-time functions:
 
 -   **str2Int** – Creates an int value from a str value.
 -   **abs** – Creates a positive real value from a real value that is either positive or negative.
@@ -49,7 +48,7 @@ The logic of the X++ run-time functions is also implemented in the following .NE
 
     Microsoft.Dynamics.AX.Xpp.Support.DLL
 
-Inside this assembly, the X++ run-time functions are implemented as static methods of the following class.
+Inside this assembly, the X++ run-time functions are implemented as static methods of the following class.
 
     Microsoft.Dynamics.AX.Xpp.PredefinedFunctions
 
@@ -59,7 +58,7 @@ The following table lists and describes only the categories of X++ functions. Th
 | Category                  | Description  |
 |---|---|
 | [Business](#business)     | Functions that enter financial data and calculate formulas. For more information, see [X++ Business Run-Time Functions](xpp-business-run-time-functions.md).                              |
-| [Container](#container)   | Functions that operate on the container data type of X++. For more information, see [X++ Container Run-Time Functions](xpp-container-run-time-functions.md).                               |
+| [Container](#container)   | Functions that operate on the container data type of X++. For more information, see [X++ Container Run-Time Functions](xpp-container-run-time-functions.md).                               |
 | [Conversion](#conversion) | Functions that translate data of one type into data of another type. For more information, see [X++ Conversion Run-Time Functions](xpp-conversion-run-time-functions.md).                  |
 | [Date](#date)             | Functions that operate on the date data type. For more information, see [X++ Date Run-Time Functions](xpp-date-run-time-functions.md).                                                     |
 | [Math](#Math)             | Functions that perform mathematical calculations. For more information, see [X++ Math Run-Time Functions](xpp-math-run-time-functions.md).                                                 |

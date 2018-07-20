@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inventory object values
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about how the values of an inventory object are calculated. 
 
@@ -41,16 +40,16 @@ A new functionality that is named **physical quantity** lets you see the values 
 
 A cost object represents the entity level where inventory accounting is performed. For more information about cost objects, see [Cost objects](cost-object.md). 
 
-To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page. Here is how the value of an inventory object is calculated: 
+To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page. Here is how the value of an inventory object is calculated: 
 
 Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity 
 
 The following example shows how the values of an inventory object and a cost object are calculated. Two product receipt events are registered on item A:
 
--   Product receipt 1: Quantity = 100 pcs., Amount = $1,000.00, Site = 1, Warehouse =11, Batch No. = B1
--   Product receipt 2: Quantity = 50 pcs., Amount = $800.00, Site = 1, Warehouse =11, Batch No. = B2
+-   Product receipt 1: Quantity = 100 pcs., Amount = $1,000.00, Site = 1, Warehouse =11, Batch No. = B1
+-   Product receipt 2: Quantity = 50 pcs., Amount = $800.00, Site = 1, Warehouse =11, Batch No. = B2
 
-The following table shows the calculation result for a cost object. You can view the result on the **Cost object** page.
+The following table shows the calculation result for a cost object. You can view the result on the **Cost object** page.
 
 <table style="width:100%;">
 <colgroup>
@@ -141,7 +140,7 @@ The following table shows the calculation result for an inventory object. You ca
 
 
 
-See also
+Additional resources
 --------
 
 [Cost objects](cost-object.md)

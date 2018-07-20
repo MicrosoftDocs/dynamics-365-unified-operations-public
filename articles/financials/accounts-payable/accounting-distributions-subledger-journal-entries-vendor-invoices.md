@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounting distributions and subledger journal entries for vendor invoices
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
 
@@ -47,7 +46,7 @@ You can use the following buttons in the Vendor invoice page to view, and possib
 -   **View distributions** – View the accounting distributions for all lines on the document. You cannot modify the accounting distributions from this view.
     -   View header and line amounts.
 
-If the vendor invoice references a purchase order, you can split and modify the accounting distributions for lines that contain an item that is not stocked. If the vendor invoice line does not reference a purchase order line, you can also delete an accounting distribution. You cannot split or delete lines for charges, taxes, and line discounts. You can modify the ledger account, but you cannot change the amounts or percentages.
+If the vendor invoice references a purchase order, you can split and modify the accounting distributions for lines that contain an item that is not stocked. If the vendor invoice line does not reference a purchase order line, you can also delete an accounting distribution. You cannot split or delete lines for charges, taxes, and line discounts. You can modify the ledger account, but you cannot change the amounts or percentages.
 > [!NOTE]                                                                                                                                 
 > If the parent line contains an item that is not stocked and the accounting distributions are split, the child line will be split automatically to match the financial dimensions of the parent line. The accounting distributions for the child line cannot be additionally split or deleted, but depending on the setup of the child line, you might be able to modify the ledger account for the accounting distributions of the child line.
 
@@ -160,7 +159,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <tr class="even">
 <td>Tax, with the following condition:
 <ul>
-<li>The Apply U.S. taxation rules option is selected in the General ledger parameters page.</li>
+<li>The Apply U.S. taxation rules option is selected in the General ledger parameters page.</li>
 </ul></td>
 <td><ol>
 <li>The accounting distribution for the purchase order line, if the invoice line references a purchase order line.</li>
@@ -175,7 +174,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <tr class="odd">
 <td>Tax, with the following conditions:
 <ul>
-<li>The Apply U.S. taxation rules option is cleared in the General ledger parameters page.</li>
+<li>The Apply U.S. taxation rules option is cleared in the General ledger parameters page.</li>
 <li>The Use tax field for the sales tax group is cleared in the Sales tax groups page.</li>
 </ul></td>
 <td><ol>
@@ -192,7 +191,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <tr class="even">
 <td>Tax, with the following conditions:
 <ul>
-<li>The Apply U.S. taxation rules option is cleared in the General ledger parameters page.</li>
+<li>The Apply U.S. taxation rules option is cleared in the General ledger parameters page.</li>
 <li>The Use tax field for the sales tax group is selected in the Sales tax groups page.</li>
 </ul></td>
 <td><ol>
@@ -235,7 +234,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 </tbody>
 </table>
 
- 
+
 Distributing taxes
 ------------------
 

@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Table of Contents form pattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Table of Contents form pattern. This pattern should be used when two or more logically related forms are required for setup configuration. 
 
 Usage
 -----
 
-The Table of Contents pattern should be used when two or more logically related forms are required for setup configuration. The vertical arrangement of tabs implies the order of completion. This form pattern is also used for collections of unrelated items, such as tab pages that have a different root entity per tab. This form pattern contains a collection of smaller content regions, each of which follows a container subpattern such as Toolbar and List, Nested Simple List and Details, or Fields and Field Groups.
+The Table of Contents pattern should be used when two or more logically related forms are required for setup configuration. The vertical arrangement of tabs implies the order of completion. This form pattern is also used for collections of unrelated items, such as tab pages that have a different root entity per tab. This form pattern contains a collection of smaller content regions, each of which follows a container subpattern such as Toolbar and List, Nested Simple List and Details, or Fields and Field Groups.
 
 ## Wireframe
 
@@ -90,7 +89,7 @@ Each BodyGroup will use one of the following container patterns for the content 
 -   [List Panel](list-panel-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. 
 
 **Standard form guidelines:**
 
@@ -103,12 +102,12 @@ The verification checklist shows the steps for manually verifying that the form 
 -   The first tab in the list should be highlighted when the form is opened, unless the form is opened in the context of a specific task from another form.
 -   The **content area** for the TOC content should primarily be one of three patterns: Simple List, Simple List and Details, or Simple Details.
     -   Simple List content should follow the subpattern guidelines.
-    -   Simple List and Details content should follow the [Nested Simple List and Details](nested-simple-list-details-subpattern.md) subpattern guidelines.
-    -   Simple Details content should follow the [Toolbar and Fields](toolbar-fields-subpattern.md) subpattern guidelines.
+    -   Simple List and Details content should follow the [Nested Simple List and Details](nested-simple-list-details-subpattern.md) subpattern guidelines.
+    -   Simple Details content should follow the [Toolbar and Fields](toolbar-fields-subpattern.md) subpattern guidelines.
     -   FastTabs should follow the FastTab guidelines in the Dynamics AX [General Form Guidelines ](general-form-guidelines.md) document.
     -   Actions appearing on a Toolbar on a tab page.
 -   A TOC form should **not** have the following:
-    -   Application actions on a standard ActionPane. (It should have only framework actions.)
+    -   Application actions on a standard ActionPane. (It should have only framework actions.)
     -   FactBoxes.
     -   Standard tabs on a TOC tab page.
 
@@ -120,10 +119,10 @@ Form: **CustParameters**
 ## Appendix
 ### Frequently asked questions
 
-This section will have answers to frequently asked questions that are related to this guideline/pattern.
+This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 -   **What do I do with ‘Global’ buttons?**
-    -   There have been several cases where a button is required in order to initialize data or sync information between services. Because we allow only system buttons on the standard Action Pane in this pattern, we recommend that these buttons go in one of two places:
+    -   There have been several cases where a button is required in order to initialize data or sync information between services. Because we allow only system buttons on the standard Action Pane in this pattern, we recommend that these buttons go in one of two places:
         -   On the tab page that the action is most closely related to.
         -   If a place doesn’t exist, on a toolbar on the first tab page of the pattern.
 

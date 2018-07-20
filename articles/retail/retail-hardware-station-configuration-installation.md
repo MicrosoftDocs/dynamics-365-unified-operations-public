@@ -5,7 +5,7 @@ title: Configure and install Retail hardware station
 description: This topic explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: jashanno
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Configure and install Retail hardware station
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 
@@ -118,13 +118,7 @@ This topic explains how to configure, download, and install Retail hardware stat
 ### Run the installer
 
 > [!NOTE]
-> Before you run the Retail hardware station installer, make sure that the following requirements are met:
-> - The installer requires that the Microsoft .NET Framework version 4.5.1 be installed on your system.
-> - The installer installs Retail hardware station only on the following operating systems:
->    - Windows 7 Professional, Enterprise, or Ultimate edition (both x86 and x64 architectures). Home edition and Embedded edition aren't supported.
->    - Windows 8.1 Update 1 Pro or Enterprise edition (both x86 and x64 architectures). Standard edition isn't supported.
->    - Windows 10 Pro or Enterprise edition with Anniversary Update (both x86 and x64 architectures). Home edition isn't supported.
->    - Microsoft Windows Server 2012 R2.
+> Before you run the Retail hardware station installer, make sure that all [system requirements](../fin-and-ops/get-started/system-requirements.md) are met.
 
 The Retail hardware station installer first extracts the associated files and then begins the installation.
 

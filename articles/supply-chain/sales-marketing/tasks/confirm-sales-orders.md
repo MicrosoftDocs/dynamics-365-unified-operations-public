@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Confirm sales orders
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to confirm sales orders. You’ll be shown how to confirm a single order, and how to confirm multiple orders at once. These tasks would typically be carried out by a sales order processor. You can use this procedure in demo data company USMF or on your own data. Before you start, make sure there are several open sales orders for the same customer. If you’re using USMF, you can use customer US-027.
 

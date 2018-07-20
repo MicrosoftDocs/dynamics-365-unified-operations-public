@@ -2,7 +2,7 @@
 # required metadata
 
 title: Close Accounts receivable
-description: The following topic lists the pages that support the close Accounts receivable business process.
+description: The following topic lists the pages that support the close Accounts receivable business process.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
@@ -32,15 +32,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Close Accounts receivable
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-
-
-
-The following table lists the pages that support the close Accounts receivable business process.
+The following table lists the pages that support the close Accounts receivable business process.
 
 > [!NOTE] 
-> To open some of the pages in the table, you must enter information or specify parameter settings.
+> To open some of the pages in the table, you must enter information or specify parameter settings.
 
 **Business process component task**                   
 

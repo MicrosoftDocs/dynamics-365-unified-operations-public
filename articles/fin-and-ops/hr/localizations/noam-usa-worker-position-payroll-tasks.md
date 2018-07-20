@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up payroll for workers
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. This topic provides information about these tasks and the fields that are used to complete them.
 
@@ -67,22 +66,22 @@ You must specify payroll details and add them to a position before you can gener
 <td>Enter the number of regularly paid hours that the position is expected to have each year. This value is used to determine salary adjustments. For example, you might enter <strong>2080</strong> for a regular salaried worker. This value represents 40 hours per week. If a worker has eight hours of sick time, the difference of 32 hours can be calculated automatically.</td>
 </tr>
 <tr class="odd">
-<td>Workers' compensation</td>
-<td>Click <strong>Add</strong>, and select a compensation state and a compensation code. Repeat these steps for any additional workers' compensation benefits.</td>
+<td>Workers&#39; compensation</td>
+<td>Click <strong>Add</strong>, and select a compensation state and a compensation code. Repeat these steps for any additional workers&#39; compensation benefits.</td>
 </tr>
 <tr class="even">
 <td>Earnings</td>
 <td>The fields in this group interact in the following ways to determine how earnings are generated and shown on earnings statements:
 <ul>
-<li>If neither <strong>Generate salary</strong> nor <strong>Generate earnings from schedule</strong> is selected, base earnings statement lines for the position aren't generated. Only the recurring earnings that are specified on the <strong>Worker</strong> page are generated.</li>
-<li>If <strong>Generate earnings from schedule</strong> is selected, but <strong>Generate salary</strong> isn't selected, the following information applies:
+<li>If neither <strong>Generate salary</strong> nor <strong>Generate earnings from schedule</strong> is selected, base earnings statement lines for the position aren&#39;t generated. Only the recurring earnings that are specified on the <strong>Worker</strong> page are generated.</li>
+<li>If <strong>Generate earnings from schedule</strong> is selected, but <strong>Generate salary</strong> isn&#39;t selected, the following information applies:
 <ul>
 <li>A schedule is required. You can select among the calendars that have been created for the legal entity that is selected in the <strong>Paid by</strong> field.</li>
 <li>A default earning code is required.</li>
-<li>A day-by-day breakout of earnings for the position appears on the worker's earnings statement.</li>
+<li>A day-by-day breakout of earnings for the position appears on the worker&#39;s earnings statement.</li>
 </ul>
 This set of selections is typically used for hourly workers.</li>
-<li>If <strong>Generate salary</strong> is selected, but <strong>Generate earnings from schedule</strong> Isn't selected, the following information applies:
+<li>If <strong>Generate salary</strong> is selected, but <strong>Generate earnings from schedule</strong> Isn&#39;t selected, the following information applies:
 <ul>
 <li>A default earning code is required.</li>
 <li>The worker is paid the standard position salary amount for each pay period, and a single line is included on the earnings statement. This line has the date of the last day in the pay period. <strong>Note:</strong> If earnings statement lines were entered manually before the earnings were generated, the salary might be split across multiple lines. The total of the manually entered lines and the single generated line is always the standard salary amount.</li>
@@ -93,9 +92,9 @@ This set of selections is typically used for salaried workers.</li>
 <li>A schedule is required. You can select among the calendars that have been created for the legal entity that is selected in the <strong>Paid by</strong> field.</li>
 <li>A default earning code is required.</li>
 <li>The worker is paid the standard position salary amount for each pay period.</li>
-<li>A day-by-day breakout of earnings for the position appears on the worker's earnings statement.</li>
+<li>A day-by-day breakout of earnings for the position appears on the worker&#39;s earnings statement.</li>
 </ul>
-This set of selections is typically used for salaried workers when you want a day-by-day breakout of their time. This functionality might be useful if, for example, a worker's time is associated with a project on two out of five days.</li>
+This set of selections is typically used for salaried workers when you want a day-by-day breakout of their time. This functionality might be useful if, for example, a worker&#39;s time is associated with a project on two out of five days.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -136,7 +135,7 @@ If a worker's position requires different tax regions at different times, you mu
 **Note:** If the worker tax region that should be specified for the position isn’t included in the list, close this page, and use the **Worker tax region** page to assign the tax region to the worker. Then return to this page to assign the default tax region.
 
 ## Setting up worker tax codes
-You can manage a worker's tax options, such as filing status and total allowances, on the **Worker tax codes** page. You don't have to create or assign the worker tax codes, because the codes are automatically created and assigned to the worker when you create worker tax regions. At first, all parameters for worker tax codes are set to their default values. We recommend that you review the worker tax codes for each worker to make sure that they're accurate. For more information, see [Tax information tasks](noam-usa-tax-information-tasks.md). You must first create a list or spreadsheet that contains the values of the tax options for all the tax codes that are assigned to each worker whose tax codes you're setting up. These values differ for each tax code. The information is typically collected on IRS Form W-4 or a similar form for the state.
+You can manage a worker's tax options, such as filing status and total allowances, on the **Worker tax codes** page. You don't have to create or assign the worker tax codes, because the codes are automatically created and assigned to the worker when you create worker tax regions. At first, all parameters for worker tax codes are set to their default values. We recommend that you review the worker tax codes for each worker to make sure that they're accurate. For more information, see [Tax information tasks](noam-usa-tax-information-tasks.md). You must first create a list or spreadsheet that contains the values of the tax options for all the tax codes that are assigned to each worker whose tax codes you're setting up. These values differ for each tax code. The information is typically collected on IRS Form W-4 or a similar form for the state.
 
 ### Tips for setting up worker tax codes
 
@@ -166,7 +165,7 @@ The following table show the information that you must enter on the **Payroll** 
 </tr>
 <tr class="even">
 <td>Position</td>
-<td>Leave this field blank, except when the total costs for the benefit must follow a specific position. Union dues are an example of a benefit that is assigned to a position. If you select a position, the benefit calculations are based only on the earnings from the position. If you don't select a position, the deductions and contributions for the benefit are calculated based on all the worker's earnings. The amounts are split among all the positions that the employee is currently assigned to. The distribution for the deductions and calculations uses the same distribution as the earnings for those positions.</td>
+<td>Leave this field blank, except when the total costs for the benefit must follow a specific position. Union dues are an example of a benefit that is assigned to a position. If you select a position, the benefit calculations are based only on the earnings from the position. If you don&#39;t select a position, the deductions and contributions for the benefit are calculated based on all the worker&#39;s earnings. The amounts are split among all the positions that the employee is currently assigned to. The distribution for the deductions and calculations uses the same distribution as the earnings for those positions.</td>
 </tr>
 <tr class="odd">
 <td>Calculation priority</td>
@@ -181,7 +180,7 @@ The following table show the information that you must enter on the **Payroll** 
 <td>Together, the basis option and the deduction amount are used to calculate the amount of the payroll deduction for the benefit. The default values for these fields are set in the <strong>Basis</strong> and <strong>Amount or rate</strong> fields on the <strong>Benefits</strong> page. The <strong>Rate source</strong> field determines whether these fields are changed to match the default values when the benefit rates are updated from the benefit.
 <ul>
 <li>If you select <strong>Benefit</strong>, the deduction amount and basis for the worker are updated automatically when you click <strong>Update benefit rates</strong> on the <strong>Benefits</strong> page.</li>
-<li>If you select <strong>Custom</strong>, the deduction amount and basis for the worker aren't changed when you click <strong>Update benefit rates</strong> on the <strong>Benefits</strong> page. Select this option when the contribution for a worker is specific to that worker. For example, after a rate change, contribution amounts might be grandfathered in for some workers.</li>
+<li>If you select <strong>Custom</strong>, the deduction amount and basis for the worker aren&#39;t changed when you click <strong>Update benefit rates</strong> on the <strong>Benefits</strong> page. Select this option when the contribution for a worker is specific to that worker. For example, after a rate change, contribution amounts might be grandfathered in for some workers.</li>
 </ul>
 <strong>Note:</strong> For contributions, the default value of the <strong>Rate source</strong> field is <strong>Benefit</strong>.</td>
 </tr>
@@ -208,7 +207,7 @@ The following table show the information that you must enter on the **Payroll li
 
 
 
-See also
+Additional resources
 --------
 
 [Tax information tasks](noam-usa-tax-information-tasks.md)

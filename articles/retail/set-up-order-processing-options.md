@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up order processing options
-description: This topic provides information about how to process orders for call centers using Microsoft Dynamics 365 for Retail. 
+title: Set up a call center channel
+description: This topic provides information about how to process orders for call centers by using Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -28,28 +28,58 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
-
 ---
 
-# Set up order processing options
+# Set up a call center channel
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
+A company can define multiple call center channels in Microsoft Dynamics 365 for Retail. Call center channels are configured at **Retail** \> **Channels** \> **Call centers** \> **All call centers**, and they are specific to a legal entity.
 
-This topic provides information about how to process orders for call centers using Microsoft Dynamics 365 for Retail. 
+When a new call center channel is created, it's systematically assigned an operating unit number. Because call centers are created as operating units, users can link the call center channel to various Retail features, such as assortments, catalogs, and specific modes of delivery.
 
-Retail supports multiple retail channels, such as online stores, brick-and-mortar stores, and call centers. In call centers, workers take customer orders over the phone and create sales orders. This topic describes how to create a call center and configure call center options. Each call center can have its own users, payment methods, price groups, financial dimensions, and modes of delivery. You can configure these options when you create the call center. **Important:** Before the call center workflows can be used when a user creates sales orders, the user must be assigned to the call center as a call center user. You can use the **Call center** page to enable or disable groups of features that are unique to call centers. The following groups of features can be enabled:
+A default warehouse can be configured on the call center channel. Then, when sales orders are created in that channel, the default warehouse is automatically entered on the sales order header, unless another warehouse has been defined on the customer that is selected for the sales order. In that case, the customer's warehouse is entered by default.
 
--   **Order completion** – This group includes features that are related to payments and order completion on the **Sales order** page.
--   **Directed selling** – This group includes features that are related to source codes, scripts, and catalog requests.
+Users must be linked to a call center channel to use the features of call center. Any sales order that a user creates in Retail is automatically linked to that user's call center channel. Currently, a single user may not be linked to multiple call center channels at the same time.
 
-When you enable these features in the call center settings, they are available on the **Sales order** page for users who are associated with the call center. Most of these features require additional setup before they can be used. Images and scripts are enabled as part of the directed selling setting for the specific call center. If these feature are enabled, the scripts and product images are displayed in the FactBox pane of the **Sales order** page. The default image that is set for a product is shown. Scripts can be configured for an item, catalog, customer, or item in the context of a catalog. Call center orders can show additional details about how the price for a specific order line was derived. For example, the orders show which discounts were applied. You enable this functionality at **Accounts receivable** &gt; **Setup** &gt; **Accounts receivable parameters** &gt; **Prices** &gt; **Price details**. You can access the **Price details** page from the **Sales order line** drop-down list. You can use order event tracking for auditing purposes, to review the actions that are taken on an order during the order’s life cycle, or to track the actions of a specific user. For example, you can record the action every time that a user creates a sales order, puts a hold on an order, overrides a charge, or updates an order line. You can set up order events to track actions for specific users, groups of users, or all users during a specific period. You can view the actions that were taken on a document by opening the **Order events** page from the Action Pane on the page for that document. You can configure order events at **Sales and marketing** &gt; **Setup** &gt; **Events** &gt; **Order events**. When a customer's order can't be shipped on time, a company can automatically send notification email messages to the customer to explain the order status and give the customer an opportunity to cancel the order. If the delay extends beyond a specified threshold, the order can be canceled automatically. Up to three email messages can be sent at specified intervals:
+An email notification profile can also be configured on the call center channel. The profile defines the set of email templates that is used when email is sent to customers who place orders through the call center channel. The email triggers can be configured against system events, such as order submission or order shipment.
 
-1.  **First cancellation notice** – The customer can cancel the order.
-2.  **Second cancellation notice** – The customer can cancel the order.
-3.  **Final cancellation notice** – The system cancels the order, and the customer is informed of the cancellation.
+Before sales can be correctly process through a call center channel, correct [payment methods](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-payments) and delivery modes must be defined for the channel.
 
-You can exempt individual customers and products from the automatic notification and cancellation process. A margin alert is triggered when you add an item to an order. The alert contains important information about the item, such as the price margin and item profitability. You can use this information to decide whether a price override is appropriate when you add an item to the sales order. For example, you set up thresholds for the trade margins, to specify that a threshold of 40 percent or more above cost is acceptable for an item, but a threshold of 20 to 39 percent above cost is questionable. In this case, any item that has a threshold between 20 and 39 percent triggers a warning. Any item that has a threshold of less than 20 percent above cost can’t be sold, and the item price can’t be adjusted. You can configure margin alerts at **Accounts receivable** &gt; **Setup** &gt; **Accounts receivable parameters** &gt; **Margin alerts**. When you set up the sales tax assignment based on default rules, you can determine a matching priority for address elements. For example, you can specify that matching a sales tax group by ZIP Code or postal code has a higher priority than matching a sales tax group by state. As you enter new customer address records, the sales tax group is automatically assigned, based on how the customer’s address matches with the default rules and priority matching that you defined. You can configure this functionality on the **General ledger parameters** page.
+At the level of the call center channel, you can define other default values that are related to the financial dimensions that will be linked to orders that are created by that channel.
 
+## Options for order processing behavior
 
+Three settings in the configuration of a call center have a major effect on the features and functions that are available for sales orders that are created against that call center: **Enable order completion**, **Enable direct selling**, and **Enable order price control**.
 
+### Enable order completion
+
+The **Enable order completion** setting on the call center channel has a major effect on the order processing flow of sales orders that are entered for that channel. When this setting is turned on, all sales orders must go through a set of validation rules before they can be confirmed. You run these rules by selecting the **Complete** button that is added on the Action Pane of the sales order page. All sales orders that are created when the **Enable order completion** setting is turned on must go through the order completion process. This process enforces the capture of payment and payment validation logic. In addition to payment enforcement, the order submission process can trigger [fraud checks](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts) that you configure in the system. Orders that fail payment or fraud validations are put on hold and can't be released to further processing (such as picking or shipping) until the issue that caused the hold is resolved.
+
+When the **Enable order completion** setting is turned on for the call center channel, if line items are entered on a sales order and the channel user tries to close or navigate away from the sales order form without first selecting **Complete**, the system enforces the order completion process by opening the sales order recap page and requiring that the user correctly submit the order. If the order can't be correctly submitted together with payment, the user can use the [order holds](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds) functionality to put the order on hold. If the user is trying to cancel the order, he or she must correctly cancel it by using either the Cancel function or the Delete function, depending on the function that the user's security allows.
+
+If the **Enable order completion** setting is turned on for the call center channel, the **Payment status** field will be tracked on the order. The system calculates the **Payment status** when the sales order is submitted. Only orders that have an approved payment status are allowed to move through the system for additional order processing steps, such as picking and shipping. If payments are declined, the **do not process** flag will be enabled on the detailed order status, this puts the order on hold until the payment issue is resolved.
+
+Additionally, if the **Enable order completion** setting is turned on, when users create sales orders and are in line item entry mode, the **Source** field will be available on the main sales order header. The **Source** field is used to capture a [catalog source code](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/call-center-catalogs) in a direct marketing selling scenario. This code can then drive special prices and promotions.
+
+Even if the **Enable order completion** setting is turned off, users can still apply a source code to a sales order. However, they must first open the sales order header details to access the **Source** field. In other words, some additional clicks are required. The same behavior applies to features such as ship complete and expedited orders. These features are available for all orders that are created in the call center. However, when the **Enable order completion** setting is turned on, users can see the configuration of these features on the sales header while they are in the line entry view. They don't have to drill into the sales order header details to find the appropriate settings and fields.
+
+### Enable direct selling
+
+If the **Enable direct selling** setting is turned for the call center channel, users can take advantage of the upsell and cross-sell features of Retail. In this case, pop-up windows appear during order entry and suggest other products that the call center user can offer to the customer. The products that are suggested are based on the product that was just ordered on the sales order line. Currently, the upsell and cross-sell suggestions are configured at the item level on products or catalogs. If the **Enable direct selling** setting is turned off for the call center channel, pop-up windows don't appear during order entry, even if a valid upsell or cross-sell was defined for an item that is being ordered.
+
+When the **Enable direct selling** setting is turned on, the scripts and images features of the sales order entry page are also turned on. In this case, an information panel is available on right side of the page during order entry. This panel can show scripts that are related to the generic order entry process, the catalog source code that was applied, or scripts that are related to the items that are being ordered. Additionally, the images panel can show a product image for the items that are being ordered, if an image has been defined for the item in the product setup.
+
+### Enable order price control
+
+When the **Enable order price control** setting is turned, only authorized users can change the sales price of an item during order entry. The changes must be within defined tolerances. Users who don't have the proper authorization must submit a request for a price change instead. The request will then be processed through system workflows for review and approval.
+
+## Channel users
+
+When you define the call center channel, you must link channel users to the call center. Otherwise, the call center can't be used in the system. When users sign in to Retail and enter sales orders or return orders on a page that is related to order entry, their user ID is validated against the configuration of the call center channel. If a user is linked to a specific call center channel, orders that the user creates inherit the traits and default values of that channel.
+
+By default, the **Retail sale** flag on the sales order header is turned on for all orders that call center users create. The orders can then take advantage of the system's retail-specific price and promotions features.
+
+Users who aren't linked to a call center channel use the standard order entry features of Microsoft Dynamics 365 for Finance and Operations. Orders that these users enter through the sales order entry form will not be systematically identified as Retail orders. Additionally, these orders entered by these users will not be subject to any of the order completion processing rules, retail pricing logic, or other order validations that can be defined in the call center channel configuration or call center system parameters.
+
+After you've finished configuring the call center channel and defining channel users, to help guarantee the desired system behavior, make sure that all required Call center parameters are defined at **Retail** \> **Channel setup** \> **Call center setup** \> **Call center parameters**. Make sure that related number sequences are also defined.

@@ -32,18 +32,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build the Rental Charge Type form
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 In this lab you’ll create a Simple List form. A Simple List form can show reference or secondary data that has six or fewer fields. For example, the form that you create will list and describe the types of rental charges. 
 
 Prerequisites
 -------------
 
-For this tutorial, you’ll need to access the environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Instances](..\dev-tools\access-instances.md).
+For this tutorial, you’ll need to access the environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Instances](../dev-tools/access-instances.md).
 
 ## Overview
-To create the form, you’ll start from the existing form, **FmtChargeType**. This form uses the Simple List pattern. The following illustration shows the **FmtChargeType** form with the required controls from the Simple List pattern. 
+To create the form, you’ll start from the existing form, **FmtChargeType**. This form uses the Simple List pattern. The following illustration shows the **FmtChargeType** form with the required controls from the Simple List pattern. 
 
 [![rentalcharge1](./media/rentalcharge1.png)](./media/rentalcharge1.png) 
 
@@ -58,7 +57,7 @@ Adhering to the form pattern ensures that this Simple List form has the same str
 ## Setup
 ### Import the tutorial project and transactional data
 
-Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you’ll use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You’ll use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you’re working on, review [Access Microsoft Instances](..\dev-tools\access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
+Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you’ll use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You’ll use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you’re working on, review [Access Microsoft Instances](../dev-tools/access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:\\**, and unzip it.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.
@@ -69,7 +68,7 @@ Use Visual Studio to import the tutorial project. The tutorial project includes 
 7.  Select the **Overwrite Elements** option, and the **Current solution** radio button. The following illustration shows the completed **Import Project** dialog box. 
 
     [![rentalcharge2](./media/rentalcharge2.png)](./media/rentalcharge2.png)
-    
+
 8.  Click **OK**.
 9.  In **Solution Explorer**, expand **Classes, and** under the **FMTutorial** project, right-click **FMTDataHelper**, and then click **Set as Startup Object**.
 10. On the **Build** menu, click **Rebuild Solution**. Use the rebuild to make sure that all of the files in the project are built regardless of timestamps. You can view the build progress in the **Output** window.
@@ -98,9 +97,9 @@ Use Visual Studio to create the **FmtChargeType** form. You’ll use a template 
     | Name         | FMTChargeType *Be sure to specify the value for the Table property first. This property will automatically update to use that same value.* |
 
     The following illustration shows **Data Sources** after you add the **FMTChargeType** table. 
-    
+
     [![rentalcharge3](./media/rentalcharge3.png)](./media/rentalcharge3.png)
-    
+
 6.  In the Form designer, click **Design**. In the **Properties** window, populate the following properties with the specified values.
 
     | **Property** | **Value**                                                                    |
@@ -110,14 +109,14 @@ Use Visual Studio to create the **FmtChargeType** form. You’ll use a template 
 
 7.  In the Form designer, click **Design** &gt; **Grid**.
 8.  Bind the FMTChargeType data source to the grid that appears in the simple list form. In the **Properties** window, in **Data Source**, enter **FMTChargeType**.
-9.  You have to specify the data source before you add fields to the grid. You can then use the fields from the data source to add columns to the grid. Add two fields from the data source to the grid. The fields you add will appear as columns on the Simple List form. Expand the FMTChargeType data source **Fields** node in the left pane. Press **Ctrl** and then click the following fields:
+9.  You have to specify the data source before you add fields to the grid. You can then use the fields from the data source to add columns to the grid. Add two fields from the data source to the grid. The fields you add will appear as columns on the Simple List form. Expand the FMTChargeType data source **Fields** node in the left pane. Press **Ctrl** and then click the following fields:
     -   ChargeType
     -   Description
 
 10. Drag the selected fields to **Design** &gt; **Grid** in the right pane. The following illustration shows the grid after the grid node is expanded and the two fields are added. 
 
     [![rentalcharge4](./media/rentalcharge4.png)](./media/rentalcharge4.png)
-    
+
 11. In the Form designer, click **Design &gt; CustomFilterGroup &gt; QuickFilter**.
 12. In the **Properties** window, click **TargetControl**, and then select **Grid** to bind the **QuickFilter** control to the grid on the form.
 13. Click **File** &gt; **Save** **FmtChargeType**.
@@ -126,7 +125,7 @@ Use Visual Studio to create the **FmtChargeType** form. You’ll use a template 
 Use Visual Studio to build and run the **FmtChargeType** form.
 
 1.  In **Solution Explorer**, right-click the **FmtChargeType** form, and then click **Set as Startup Object**.
-2.  Press Ctrl+F5 to build and run the form.
+2.  Press Ctrl+F5 to build and run the form.
 3.  The form opens in Internet Explorer.
 4.  To add a rental charge type, click **New** in the Action Pane at the top of the form. Add the following information.
 
@@ -138,8 +137,8 @@ Use Visual Studio to build and run the **FmtChargeType** form.
 6.  Refresh the browser to see the new record in the list. The following illustration shows how the form should look.
 
     [![rentalcharge5](./media/rentalcharge5.png)](./media/rentalcharge5.png)
-    
-7.  The form opens in view mode. Click **Edit** in the Action Pane to switch the form into edit mode. To return to view mode, click **Options** and then **Read mode**.
+
+7.  The form opens in view mode. Click **Edit** in the Action Pane to switch the form into edit mode. To return to view mode, click **Options** and then **Read mode**.
 
 
 

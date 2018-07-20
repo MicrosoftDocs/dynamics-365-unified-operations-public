@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,19 +18,21 @@ ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kherr75
+ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 
 # Design a questionnaire
+
+[!include [banner](includes/banner.md)]
 
 This topic describes the process for creating a questionnaire. The first step is to design the questionnaire. When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated. 
 
@@ -232,7 +234,7 @@ A legal entity offers both items and services to its customers. As typically oc
 
 Alternatively, you set up a questionnaire so that if a respondent selects answer A for question 1, question 2 is next in the question sequence. However, if the respondent selects answer B for question 1, question 5 is next.
 
-See also
+Additional resources
 --------
 
 [Using questionnaires](questionnaires.md)

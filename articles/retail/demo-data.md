@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: RetailTillLayout
 # ROBOTS: 
 audience: Application user
 # ms.devlang: 
-# ms.reviewer: josaw
-ms.search.scope: Operations, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Retail April 2017 update
 ---
 
 # Demo data screen layouts in MPOS/CPOS
+
+[!include [banner](includes/banner.md)]
 
 This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Microsoft Dynamics 365 for Retail.
 

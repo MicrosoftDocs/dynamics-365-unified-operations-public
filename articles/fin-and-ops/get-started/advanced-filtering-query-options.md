@@ -2,7 +2,7 @@
 # required metadata
 
 title: Advanced filtering and query syntax
-description: This article describes the filtering and query options that are available when you use the "matches" operator in the Advanced filter/sort dialog.
+description: This article describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the **matches** operator in the Filter pane or grid column header filters.  
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -32,10 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Advanced filtering and query syntax
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-
-This article describes the filtering and query options that are available when you use the "matches" operator in the Advanced filter/sort dialog.
+This article describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the **matches** operator in the Filter pane or grid column header filters. 
 
 Advanced query syntax
 ---------------------
@@ -72,7 +71,7 @@ Advanced query syntax
 <td><em>from-value</em>..<em>to-value</em> (double period)</td>
 <td>Between the two values that are separated by double periods</td>
 <td>Type the from-value, then two periods, and then the to-value.</td>
-<td><strong>1..10</strong> finds all values from 1 through 10. However, in a string field, <strong>A..C</strong> finds all values that start with &quot;A&quot; and &quot;B&quot;, and values that are exactly equal to &quot;C&quot;. For example, this query won't find &quot;Ca&quot;. To find all values from &quot;A*&quot; through &quot;C*&quot;, type <strong>A..D</strong>.</td>
+<td><strong>1..10</strong> finds all values from 1 through 10. However, in a string field, <strong>A..C</strong> finds all values that start with &quot;A&quot; and &quot;B&quot;, and values that are exactly equal to &quot;C&quot;. For example, this query won&#39;t find &quot;Ca&quot;. To find all values from &quot;A<em>&quot; through &quot;C</em>&quot;, type <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>value</em> (double period)</td>
@@ -101,20 +100,20 @@ Advanced query syntax
 <tr class="even">
 <td><em>value</em>* (asterisk)</td>
 <td>Starting from the value that is entered</td>
-<td>Type the starting value and then an asterisk (<strong>*</strong>).</td>
-<td><strong>S*</strong> finds any string that starts with &quot;S&quot;, such as &quot;Stockholm&quot;, &quot;Sydney&quot;, and &quot;San Francisco&quot;.</td>
+<td>Type the starting value and then an asterisk (<strong><em></strong>).</td>
+<td><strong>S</em></strong> finds any string that starts with &quot;S&quot;, such as &quot;Stockholm&quot;, &quot;Sydney&quot;, and &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>value</em> (asterisk)</td>
+<td><em><em>value</em> (asterisk)</td>
 <td>Ending with the value that is entered</td>
 <td>Type an asterisk and then the ending value.</td>
-<td><strong>*east</strong> finds any string that ends with &quot;east&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</td>
+<td><strong></em>east</strong> finds any string that ends with &quot;east&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>value</em>* (asterisk)</td>
+<td><em><em>value</em></em> (asterisk)</td>
 <td>Containing the value that is entered</td>
 <td>Type an asterisk, then a value, and then another asterisk.</td>
-<td><strong>*th*</strong> finds any string that contains &quot;th&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</td>
+<td><strong><em>th</em></strong> finds any string that contains &quot;th&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (question mark)</td>
@@ -136,9 +135,9 @@ Advanced query syntax
 </tr>
 <tr class="even">
 <td>T</td>
-<td>Today's date</td>
+<td>Today&#39;s date</td>
 <td>Type <strong>T</strong>.</td>
-<td><strong>T</strong> matches today's date.</td>
+<td><strong>T</strong> matches today&#39;s date.</td>
 </tr>
 <tr class="odd">
 <td>(methodName(parameters)) (<strong>SysQueryRangeUtil</strong> method between parentheses)</td>

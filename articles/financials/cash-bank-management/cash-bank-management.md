@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: BankTreasurerWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cash and bank management home page
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated 
 with those bank accounts. 

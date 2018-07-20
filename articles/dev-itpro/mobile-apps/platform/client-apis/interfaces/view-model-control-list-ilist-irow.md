@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # Row Type
+
+[!include [banner](../../../../includes/banner.md)]
+
 Row controls are what make up a list. A list contains any number of row controls.
 
 ### Hierarchy
@@ -231,4 +234,3 @@ select(): any
 
 
 #### Returns any
-

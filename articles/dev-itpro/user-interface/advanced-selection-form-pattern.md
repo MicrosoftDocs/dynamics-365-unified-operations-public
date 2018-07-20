@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Advanced selection form pattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Advanced Selection form pattern. This Dialog form pattern lets users filter and select items from a large, wide list. Like the List Panel pattern, this pattern should be used when the primary user task is to select a set of items.
 
@@ -58,15 +57,15 @@ This is a new pattern in Finance and Operations.
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn’t include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 -   **Standard form guidelines:**
-    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
+    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 -   **Advanced selection guidelines:**
-    -   By default, the Quick filter should use the name or description column.
+    -   By default, the Quick filter should use the name or description column.
     -   The list can display up to 15 columns. **Note:** This guidelines has been relaxed since Microsoft Dynamics AX 2012.
     -   The main instruction should instruct users what they need to do.
     -   When there is no data, the grid should not automatically add a new record.
 
 ## Example
-Form: **ProcCategoryAddVendor** (Click **Procurement and sourcing** &gt; **Procurement categories**. On the **Vendors** FastTab, click **Add**.) 
+Form: **ProcCategoryAddVendor** (Click **Procurement and sourcing** &gt; **Procurement categories**. On the **Vendors** FastTab, click **Add**.) 
 
 [![advancedSelectionExample](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
 

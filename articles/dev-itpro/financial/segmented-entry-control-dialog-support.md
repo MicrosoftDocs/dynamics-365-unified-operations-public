@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Segmented entry control dialog support
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Describes the code pattern to add Segmented Entry controls to dialogs.
 
@@ -54,7 +53,7 @@ In the current release, this code would be converted to:
         "@SYS119703", 
         feeLedgerDimension);
 
-For the second parameter, choose the class that satisfies the requirements for your dialog.  The options are:
+For the second parameter, choose the class that satisfies the requirements for your dialog.  The options are:
 
 -   LedgerDimensionAccountController
 -   LedgerDimensionDefaultAccountController
@@ -62,14 +61,14 @@ For the second parameter, choose the class that satisfies the requirements for y
 -   BudgetLedgerDimensionController
 -   BudgetPlanningLedgerDimensionController
 
-This is a simple dialog scenario around Segmented Entry. More advanced scenarios include:
+This is a simple dialog scenario around Segmented Entry. More advanced scenarios include:
 
 -   Binding the dynamic account type.
--   Company selection support.
+-   Company selection support.
 -   Account structure selection support.
 
 
-See also
+Additional resources
 --------
 
 [Segmented Entry control Metadata Specification](segmented-entry-control-metadata-specification.md)

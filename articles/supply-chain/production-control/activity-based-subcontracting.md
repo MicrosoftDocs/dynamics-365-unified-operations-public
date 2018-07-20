@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Activity-based subcontracting
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes, in detail, how to use subcontracted activities in a production flow for lean manufacturing.
 
@@ -51,7 +50,7 @@ A subcontractor can be used to load balance the overall capacity of the producti
 Like any other activity in a production flow, subcontracted activities can consume and supply inventoried, non-inventoried (work in process \[WIP\]), and semi-finished material and products. In all cases, the processes for scheduling and executing subcontracted activities are the same. Additionally, these process the same as the processes for internal work.
 
 ## Purchase process for subcontracted activities (services)
-The purchase process for subcontracted activities is based on the physical material flow that is registered by kanban job progress, for example, Start or Complete. The financial flow, for example, cost of subcontracted work, is a secondary flow that follows the physical flow. At the same time, the purchase process is an independent process that allows for manual adjustment of the purchase documents at every step. Here is the purchase process for subcontracted activities:
+The purchase process for subcontracted activities is based on the physical material flow that is registered by kanban job progress, for example, Start or Complete. The financial flow, for example, cost of subcontracted work, is a secondary flow that follows the physical flow. At the same time, the purchase process is an independent process that allows for manual adjustment of the purchase documents at every step. Here is the purchase process for subcontracted activities:
 
 1.  Create a purchase agreement. The purchase agreement is created for the service and connected to the activity of the production flow.
 2.  Create a purchase order. A release purchase order can be created for the service, based on the scheduled kanban jobs. Jobs for the same service can be grouped to purchase order lines by day, week, or month. The purchase order lines can be created at any time after the kanban jobs are created. Purchase order lines can even be created after the fact. This option is usually selected if a subcontractor provides services without additional notice, based on the kanbans or kanban cards that the subcontractor receives. In this case, deviations between the purchase order and the invoice can be minimized.

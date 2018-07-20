@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a purchase return order
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to create a purchase return order by using the Credit note action to copy lines from a vendor invoice document to a new PO. It also shows you how to confirm the order and process shipment of the goods back to the vendor. The example shown in this procedure can be used in the USMF demo data company. This task would typically be carried out by a purchasing agent.
 

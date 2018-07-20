@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Web API and OData controllers
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides code to extend the ApiController class so that you can create a Web API controller for Retail Server.
 

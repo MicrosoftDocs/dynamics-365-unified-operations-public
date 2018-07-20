@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Mobile workspaces
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic lists the mobile workspaces that are available for use with the Dynamics 365 for Unified Operations mobile app.
 

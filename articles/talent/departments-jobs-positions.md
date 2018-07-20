@@ -18,7 +18,7 @@ ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, Retail
+ms.search.scope: Core, Operations, Talent, Retail
 
 # ms.tgt_pltfrm: 
 ms.custom: 87933
@@ -33,10 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # Organize your workforce using departments, jobs, and positions
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-[!include[retail name](includes/retail-name.md)]
-
+[!include [retail name](includes/retail-name.md)]
 
 Departments, jobs, and positions are organizational elements that are maintained within Human resources. This topic describes conceptual information about these elements. 
 
@@ -53,7 +52,7 @@ The following example is used to illustrate the concepts described in this topic
 |**Human resources**|HR manager (West)|HR manager|
 |**Human resources**|HR manager (Central)|HR manager|
 
- 
+
  Departments
 ------------
 
@@ -89,7 +88,7 @@ You can create job tasks that describe the basic tasks that a worker in a positi
 
 ### Job functions
 
-Job functions are like job tasks. A job function describes one or more tasks, duties or responsibilities that are assigned to a job. Job functions can be assigned to jobs and used to set up and implement eligibility rules for compensation plans. Examples of job functions are listed in the following table.
+Job functions are like job tasks. A job function describes one or more tasks, duties or responsibilities that are assigned to a job. Job functions can be assigned to jobs and used to set up and implement eligibility rules for compensation plans. Examples of job functions are listed in the following table.
 
 | Job           | Job function                                                |
 |---------------|-------------------------------------------------------------|

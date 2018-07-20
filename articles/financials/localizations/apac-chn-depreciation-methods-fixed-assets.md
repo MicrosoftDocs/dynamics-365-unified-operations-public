@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Depreciation methods for fixed assets
+title: Fixed assets depreciation methods for China
 description: This topic describes the depreciation method set up for legal entities in China.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,8 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: AssetParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -29,10 +28,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Depreciation methods for fixed assets
+# Fixed assets depreciation methods for China
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the depreciation method set up for legal entities in China.
 

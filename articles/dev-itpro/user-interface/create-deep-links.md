@@ -5,7 +5,7 @@ title: Create and use deep links
 description: Learn how to create shareable, secured URLs to forms and records.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,19 +32,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create and use deep links
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Learn how to create shareable, secured URLs to forms and records.
 
 Overview
 --------
 
-The URL Generator enables developers to create shareable and secured URLs (a.k.a. deep links) to specific forms. An optional data context can be passed to the form to display filtered or specific data when the form is opened. The URL Generator enables scenarios such as embedding links in reports, emails, and external applications, enabling users to quickly and easily locate the specified forms or data by simply navigating using the generated link.
+The URL Generator enables developers to create shareable and secured URLs (also known as deep links) to specific forms that are root navigable. An optional data context can be passed to the form to display filtered or specific data when the form is opened. The URL Generator enables scenarios such as embedding links in reports, email, and external applications, enabling users to quickly and easily locate the specified forms or data by simply navigating using the generated link.
 
 ### Purpose
 
--   Empower developers to generate URLs that can be used to navigate to forms in a specified instance.
+-   Empower developers to generate URLs that can be used to navigate to root navigable forms in a specified instance.
 -   Empower developers to optionally specify a data context that should be displayed when navigating to the specified form.
 -   Empower users to share, save, and access the generated URLs from any browser with Internet access.
 -   Secure the URLs to prevent unauthorized access to the system, forms, or data.
@@ -53,11 +52,10 @@ The URL Generator enables developers to create shareable and secured URLs (a.k.a
 ## Security
 ### Site access
 
-Access to the domain/client is controlled through the existing login and SSL mechanism.
+Access to the domain/client is controlled through the existing login and SSL mechanism.
 
 ### Form access
-
-Access to the form is controlled through the specified Menu Item, and the accompanying Menu Item security system. If a user navigates using a URL which contains a Menu Item that the user does not have access to, then the Menu Item security will prevent the form from opening. The user will receive message which says that they do not have the necessary permissions to open the form.
+Access to forms is controlled through Menu items, as Menu items are the entry points where security is enforced. If a user navigates using a URL that contains a Menu item that the user does not have access to, then the Menu item security will prevent the form from opening. The user will receive a message indicating that they do not have the necessary permissions to open the form. Note that deep links will only work for Menu items that allow root navigation.
 
 ### Data access
 
@@ -73,7 +71,7 @@ The URL Generator is a .NET library that is accessible from X++, under the follo
 The URL Generator must be used from code running on the AOS, in an active user session or batch process. This requirement ensures that the URL can be secured through encryption specific to the instance that generates the URL. At a minimum, the following information must be specified and passed to the URL Generator in order to generate a working URL.
 
 -   **Host URL**
-    -   The URL of the web root for the instance. For example: https://ax.dynamics.contoso.com/
+    -   The URL of the web root for the instance. For example: https://ax.dynamics.contoso.com/
 -   AOT name of the **Menu Item Display**
     -   The menu item display to be used to open the form.
 -   **Partition**
@@ -85,12 +83,12 @@ The URL Generator must be used from code running on the AOS, in an active user s
 
 ```
 // gets the generator instance
-var generator     = new Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator();
-var currentHost   = new System.Uri(UrlUtility::getUrl());
+var generator     = new Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator();
+var currentHost   = new System.Uri(UrlUtility::getUrl());
 generator.HostUrl = currentHost.GetLeftPart(System.UriPartial::Authority);
 generator.Company = curext();
 generator.MenuItemName = <menu item name>;
-generator.Partition = getCurrentPartition(); 
+generator.Partition = getCurrentPartition(); 
 
 // repeat this segment for each datasource to filter
 var requestQueryParameterCollection = generator.RequestQueryParameterCollection;

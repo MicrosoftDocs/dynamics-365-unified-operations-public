@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Parameters for legal entities in Brazil
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 To collect and submit tax statements that report on performance, a Brazilian legal entity requires specific fiscal information. This topic explains how to set the parameters to specify this information.
 
@@ -74,7 +73,7 @@ A fiscal establishment is a physical location of a legal entity, such as a subsi
 
 ### Tax substitution
 
-This section is used to identify the tax registration ID when the company has registers in another state. When this registration exists, it also enables the company to create the ICMS-ST tax assessment.
+This section is used to identify the tax registration ID when the company has registers in another state. When this registration exists, it also enables the company to create the ICMS-ST tax assessment.
 
 | Field     | Description                                                                       |
 |-----------|-----------------------------------------------------------------------------------|
@@ -96,7 +95,7 @@ You can configure information and certificates that are used on the electronic f
 |-------------------------------------|----------------------------------------------------------------------|
 | **Environment**                     | Specify whether the environment is a test or production environment. |
 | **The version of the NF-e feature** | Enter the NF-e layout version to use.                                |
-| **Authority**                       | Enter the fiscal authority to use to approve the NF-e.               |
+| **Authority**                       | Enter the fiscal authority to use to approve the NF-e.               |
 
 #### NFC-e web service
 
@@ -228,7 +227,7 @@ Set up default text, and product and document types, for fiscal documents that a
 </tr>
 <tr class="even">
 <td><strong>Document type</strong></td>
-<td>Select the ID of the default document type for fiscal document texts. You can select a document type that isn't assigned to the fiscal document text that is attached to a fiscal document. <strong>Note:</strong> If a fiscal document text is attached to a fiscal document, you can't modify the document type.</td>
+<td>Select the ID of the default document type for fiscal document texts. You can select a document type that isn&#39;t assigned to the fiscal document text that is attached to a fiscal document. <strong>Note:</strong> If a fiscal document text is attached to a fiscal document, you can&#39;t modify the document type.</td>
 </tr>
 <tr class="odd">
 <td><strong>Item</strong></td>

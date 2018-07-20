@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Select data model definition while creating format for electronic reporting (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To complete the steps in this procedure, you must first complete the procedure, ER Create a configuration provider and mark it as active. 
 

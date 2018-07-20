@@ -5,7 +5,7 @@ title: Synchronize project expense categories between Finance and Operations and
 description: This topic describes the templates and underlying tasks that are used to synchronize project expense categories between Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Project Service Automation.
 author: KimANelson
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 07/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

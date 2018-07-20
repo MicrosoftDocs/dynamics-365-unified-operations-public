@@ -3,7 +3,7 @@
 
 title: External gift card support
 description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 for Retail.
-author: 
+author: sericks007
 manager: AnnBe
 ms.date: 10/10/2017
 ms.topic: article
@@ -23,12 +23,15 @@ ms.search.scope: Operations, Retail
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: retailms.author: ivanvms.search.validFrom: 2017-10-02
+ms.search.industry: retail
+ms.author: ivanv
+ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
-
 ---
 
 # External gift card support
+
+[!include [banner](../../includes/banner.md)]
 
 To provide a seamless experience for their customers, retailers want to be able to accept a wide variety of payment methods. Gift cards are one of the most frequently used payment methods after cash and credit cards. An important requirement for many retailers is the ability to accept various types of gift cards, from various providers, at the point of sale (POS).
 
@@ -43,17 +46,17 @@ The external gift card must be configured for both the Retail headquarters and t
 1. Search for **hardware profile** to open the **POS hardware profile** page.
 2. On the **POS hardware profile** page, follow these steps:
 
-    1. On the navigation bar on the left side of the page, select **Virtual**.
-    2. Select **Edit**.
-    3. On the **ETF service** FastTab, in the **Connectors** grid, select the first entry, **TestConnector**.
-    4. In the **Supported Tender Types** field, add **GiftCard**.
+   1. On the navigation bar on the left side of the page, select **Virtual**.
+   2. Select **Edit**.
+   3. On the **ETF service** FastTab, in the **Connectors** grid, select the first entry, **TestConnector**.
+   4. In the **Supported Tender Types** field, add **GiftCard**.
 
-        ![Adding GiftCard to the list of supported tender types](./media/01.png)
+       ![Adding GiftCard to the list of supported tender types](./media/01.png)
 
-    5. Select **Save**.
+   5. Select **Save**.
 
-    > [!NOTE]
-    > You can also use the **New** button to create multiple payment connectors. In this way, you can take advantage of the support for multiple connectors that has been added to the solution. You can then have different payment connectors for different payment methods. For example, all credit cards can be processed through one connector, but the gift card can be processed through a different connector.
+      > [!NOTE]
+      > You can also use the **New** button to create multiple payment connectors. In this way, you can take advantage of the support for multiple connectors that has been added to the solution. You can then have different payment connectors for different payment methods. For example, all credit cards can be processed through one connector, but the gift card can be processed through a different connector.
 
 3. Search for **payment methods** to open the **Payment methods** page.
 4. Select **New**, and then follow these steps:

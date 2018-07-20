@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build and debug a project
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 In this tutorial, you’ll learn about using the tools in Visual Studio to analyze and debug code in the Fleet Management application. You’ll go through a simple developer scenario in which you will set breakpoints, modify some code, and build the result. 
 
@@ -54,14 +53,14 @@ The rental company has had unfortunate events when customers rent cars using cre
 ## Run to a breakpoint
 1.  On the desktop, double-click the Visual Studio shortcut to open the development environment.
 2.  Open the FleetManagement solution. On the **File** menu, point to **Open**, and then click **Project/Solution**.
-3.  Browse to the desktop, and then open the **FleetManagement** folder. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
+3.  Browse to the desktop, and then open the **FleetManagement** folder. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
 4.  Select the file named **FleetManagement**. The file type listed is SLN File.
 5.  Click **Open**. Loading the solution may take some time.
 6.  Make the **FleetManagement Migrated** project the startup project. In **Solution Explorer**, right-click the **Fleet Management Migrated** project, and choose **Set as StartUp Project** in the context menu.
 7.  In **Solution Explorer**, double-click the **Fleet Management migrated** project to display its content.
 8.  Double-click the **Code** folder, and then double click the **Classes** folder of the Fleet Management migrated project. Locate the **FMRentailCheckoutProcessor** class. Right-click this class, and then click **Open**. Alternatively, you can use the solution explorer search bar at the top of the solution explorer window. As you enter the name in the search bar, you'll see the corresponding artifacts selected in the solution explorer. You can now see the X++ code for the class. This class has a method named
 9.  Place a breakpoint in this method on the line following the first comment. To do this, click in the margin to the left of the line of code where you want the debugger to pause execution. You can also click anywhere in the line of code, and then press F9. The following illustration shows a breakpoint, which is displayed as a red-filled circle in the margin. [![RedCircleMargin\_BuildDebugProj](./media/redcirclemargin_builddebugproj.png)](./media/redcirclemargin_builddebugproj.png) The FinalizeRentalCheckout method is called when a rental transaction is saved. This method calls the delegate named RentalTransactionAboutTobeFinalizedEvent. You can implement an event handler method, which is called by this delegate. The method that calls the delegate passes a parameter, named RentalConfirmation, which contains a value that indicates whether the rental should be allowed or blocked. If the rental is allowed, the value contains "true"; if it's blocked, the value contains "false". An event handler can change this value, based on any test the developer chooses to implement in code. In this case, we'll modify the code to test the expiration date of the credit card.
-10. Press F5 to start the application for debugging, or, on the **Debug** menu, click **Start Debugging**. It's important that you start the application in one of these ways. If you don't, the Visual Studio debugger won't start, so you won't hit any of the breakpoints you've set. **Note**: The debugger needs to relate code position to source positions. It does this through consuming PDB files produced alongside the assemblies and net modules. The debugger will load symbols from the PDB files as described in the settings in the global tools settings. To open the options page containing the setting that controls which symbols load, go to the **Tools** menu and choose **Options**. In the **Microsoft Dynamics 365 for Finance and Operations** group, select the **Debugging** page. If this option is selected, the system will load symbols from only the PDB files related to the artifacts in the current solution. This reduces the startup time significantly, so be sure it’s selected for this lab. Be aware that when this option is selected, it won’t be possible to see source code from entities outside of the current solution. After a few moments, the browser will start and display the startup object that was selected in the project.
+10. Press F5 to start the application for debugging, or, on the **Debug** menu, click **Start Debugging**. It's important that you start the application in one of these ways. If you don't, the Visual Studio debugger won't start, so you won't hit any of the breakpoints you've set. **Note**: The debugger needs to relate code position to source positions. It does this through consuming PDB files produced alongside the assemblies and net modules. The debugger will load symbols from the PDB files as described in the settings in the global tools settings. To open the options page containing the setting that controls which symbols load, go to the **Tools** menu and choose **Options**. In the **Microsoft Dynamics 365 for Finance and Operations** group, select the **Debugging** page. If this option is selected, the system will load symbols from only the PDB files related to the artifacts in the current solution. This reduces the startup time significantly, so be sure it’s selected for this lab. Be aware that when this option is selected, it won’t be possible to see source code from entities outside of the current solution. After a few moments, the browser will start and display the startup object that was selected in the project.
 11. Browse to the **Current rentals** page.
     1.  Go to the Dynamics **Dashboard** by clicking **Finance and Operations** in the upper left corner.
     2.  Find the Fleet Management module. You can use the Navigation (press Alt+F1), expand the Modules heading and find the **Fleet Management** module.
@@ -97,7 +96,7 @@ In the **FinalizeRentalCheckout** method, you saw that the developer added code 
             // Credit cards expire on the last day of the month indicated
             ccExpiryDate = mkdate(1, str2int(paymentInfo.ExpirationMonth), paymentInfo.ExpirationYear);
             lastDayOfExpiryMonth = endmth(ccExpiryDate);
-            
+
             if (lastDayOfExpiryMonth < today())
             {
                 rentalConfirmation.value('OktoRent', false);
@@ -155,7 +154,7 @@ The preceding code is straightforward. The method is marked as handler for the r
                 // Credit cards expire on the last day of the month indicated
                 ccExpiryDate = mkdate(1, str2int(paymentInfo.ExpirationMonth), paymentInfo.ExpirationYear);
                 lastDayOfExpiryMonth = endmth(ccExpiryDate);
-                
+
                 if (lastDayOfExpiryMonth < today())
                 {
                     rentalConfirmation.value('OktoRent', false);
@@ -197,12 +196,12 @@ The preceding code is straightforward. The method is marked as handler for the r
 Earlier in this tutorial, you had the opportunity to add code to the project and build the solution with your changes. The build process may not have been successful, requiring you to refer to the error window. Using this window, you can get to the error by clicking on the line that describes the error. You may have noticed some diagnostic messages that don’t represent compilation errors. These are diagnostics from the **Best Practice** checker. This tool will check for instances where the developer has violated a known best practice, and display a warning when one is found. The Best Practice rules apply to both code constructs and metadata. Each software development organization is likely to have its own set of best practices that they enforce. They may want to disregard some of the existing best practice checks. To support this, the set of reported best practice diagnostics can be modified by the individual developer. To demonstrate this, complete the following steps:
 
 1.  On the **View** menu, click **Error List**. You should see a small number of best practice warnings.
-2.  On the **DYNAMICS AX** menu, click **Options**. In the **Finance and Operations** group, choose **Best Practices**.
+2.  On the **DYNAMICS AX** menu, click **Options**. In the **Finance and Operations** group, choose **Best Practices**.
 3.  In the **Model** drop-down list, make sure that the **Fleet Management** model is selected. The best practice rules apply to a particular model.
-4.  Mark the selections for some of the sets of Best Practice rules. For example, if you select the entry for **CodeStyleRules**, best practice guidelines for variables will be examined. After you've updated the selections, click **OK**.
+4.  Mark the selections for some of the sets of Best Practice rules. For example, if you select the entry for **CodeStyleRules**, best practice guidelines for variables will be examined. After you've updated the selections, click **OK**.
 5.  Rebuild the Fleet Management Migrated project by right-clicking the project name and then clicking **Rebuild**. You'll notice that the violations of the best practice rules that you specified appear in the **Error list** window.
 
-Because Microsoft can’t know all of the best practice checks that a development organization wants to use, the **Best Practice** system is extensible. You author new best practice rules and add them to the system. This is done by creating a class in C\# that identifies the problem; the class is compiled, and the assembly is selected in the dialog that appears when you click **Install Extension** in the **Options** window. An example of how to implement a best practice rule can be found in the **C:\\FMLab\\Code Best Practice Example** folder.
+Because Microsoft can’t know all of the best practice checks that a development organization wants to use, the **Best Practice** system is extensible. You author new best practice rules and add them to the system. This is done by creating a class in C\# that identifies the problem; the class is compiled, and the assembly is selected in the dialog that appears when you click **Install Extension** in the **Options** window. An example of how to implement a best practice rule can be found in the **C:\\FMLab\\Code Best Practice Example** folder.
 
 
 

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  WHSRFAutoConfirm
+ms.search.form:  WHSRFAutoConfirm
 audience: Application User
 # ms.devlang: 
 ms.reviewer: bis
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Batch and license plate confirmation
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Batch confirmation allows you to confirm that the correct batch is being picked from the mobile device. On the initial pick of work for batch above-items only, where batch above indicates that batch ranges higher than location in the search hierarchy, you must verify that the batch that is picked matches the batch on the work line. 
 

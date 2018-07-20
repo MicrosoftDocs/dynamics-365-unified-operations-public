@@ -32,10 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Copy data between Dynamics AX instances (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 This walkthrough illustrates the following tasks:
 
@@ -77,13 +74,13 @@ The following diagram illustrates the path that data takes during the export and
 4.  In the **Get data from source to staging** form, click **OK** to run immediately. The source data is copied to the staging tables.
 
 ## Validate the data in staging
-1.  In **Data Import/Export Framework**, click **Common** &gt; **Processing group** &gt; **Execution history**, and then select the job that ran.
+1.  In **Data Import/Export Framework**, click **Common** &gt; **Processing group** &gt; **Execution history**, and then select the job that ran.
 2.  Click **View staging data**.
 3.  Review the staging data to validate that it matches the source.
 4.  Click **Validate all** to verify that all the related reference data is correct and present in the system.
 
 ## Export the data to a file
-1.  In **Data Import/Export Framework**, click **Common** &gt; **Processing group**, and then select the processing group to work with.
+1.  In **Data Import/Export Framework**, click **Common** &gt; **Processing group**, and then select the processing group to work with.
 2.  Click **Export to AX**, enter a file name, and then click **OK**. A .dat file of the data identified by the processing group is created.
 
 ## Import the data

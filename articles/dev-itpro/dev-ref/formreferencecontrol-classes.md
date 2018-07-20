@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # F Classes - FormReferenceControl to FormStringControl
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 API reference for classes from FormReferenceControl to FormStringControl.
 
@@ -6596,7 +6595,7 @@ fieldId
 
 <!-- -->
 
-  
+
 
 ### Method affectedElementsByControl
 
@@ -6608,7 +6607,7 @@ controlId
 
 <!-- -->
 
-  
+
 
 ### Method clearBackColor
 

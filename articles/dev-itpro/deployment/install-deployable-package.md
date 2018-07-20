@@ -32,12 +32,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Install a deployable package
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development or build environment.
 
 > [!IMPORTANT]
-> For most types of environments, you can apply a deployable package to an environment directly from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Apply a deployable package on a system](apply-deployable-package-system.md). Therefore, this topic applies primarily to environment types that don't support the application of updates via LCS. Examples include local development environments (downloadable virtual hard disks [VHDs]) and multi-box development/test environments in Microsoft Azure (LCS Partner and trial projects). However, you can also use this topic any time that you want to install deployable packages by using the command line instead of LCS.
+> For most types of environments, you can apply a deployable package to an environment directly from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Apply a deployable package on a system](apply-deployable-package-system.md). Therefore, this topic applies primarily to environment types that don't support the application of updates via LCS. Examples include local development environments (downloadable virtual hard disks [VHDs]), multi-box development/test environments in Microsoft Azure (LCS Partner and trial projects), and build environments. However, you can also use this topic any time that you want to install deployable packages by using the command line instead of LCS.
 
 ## Key concepts
 - **Deployable package** – A deployable package is a unit of deployment that can be applied to any environment. It can consist of a binary hotfix to the runtime components of Application Object Server (AOS), an updated application package, or a new application package.
@@ -75,26 +75,26 @@ An AOT deployable package is a package that contains customizations and extensio
 3. Extract the files.
 4. In the folder where you extracted the deployable package, find and open the file that is named **DefaultTopologyData.xml**. You must specify the VM name and the installed components in this file.
 
-    - To specify the VM name, follow these steps:
+   - To specify the VM name, follow these steps:
 
-        1. In File Explorer, right-click **This PC**, and then select **Properties**.
-        2. In the system properties, find and make a note of the computer name (for example, **AOS-950ed2c3e7b**).
-        3. In the DefaultTopologyData.xml file, replace the machine name with the computer name that you found in the previous step.
+       1. In File Explorer, right-click **This PC**, and then select **Properties**.
+       2. In the system properties, find and make a note of the computer name (for example, **AOS-950ed2c3e7b**).
+       3. In the DefaultTopologyData.xml file, replace the machine name with the computer name that you found in the previous step.
 
-    - To specify the installed components, follow these steps:
+   - To specify the installed components, follow these steps:
 
-        1. Open a Command Prompt window as an administrator.
-        2. Go to the extracted folder, and run the following command to see a list of all the components that are installed on the computer.
+       1. Open a Command Prompt window as an administrator.
+       2. Go to the extracted folder, and run the following command to see a list of all the components that are installed on the computer.
 
-            ```
-            AXUpdateInstaller.exe list
-            ```
+           ```
+           AXUpdateInstaller.exe list
+           ```
 
-        3. Update the DefaultTopologyData.xml file with the list of components.
+       3. Update the DefaultTopologyData.xml file with the list of components.
 
-    When you've finished specifying the VM name and the installed components, the DefaultTopologyData.xml file should resemble the following illustration.
+     When you've finished specifying the VM name and the installed components, the DefaultTopologyData.xml file should resemble the following illustration.
     
-    ![Topology configuration data](./media/defaulttopology.png)
+     ![Topology configuration data](./media/defaulttopology.png)
 
 5. Repeat steps 1 through 4 for every other VM that is listed on the **Environment** page.
 
@@ -109,10 +109,10 @@ Based on the topology information in the DefaultTopologyData.xml file, you must 
 
     Here is an explanation of the parameters that are used in this command:
 
-    - **\[runbookID\]**– A parameter that is specified by the developer who applies the deployable package.
-    - **\[topologyFile\]**– The path of the DefaultTopologyData.xml file.
-    - **\[serviceModelFile\]**– The path of the DefaultServiceModelData.xml file.
-    - **\[runbookFile\]**– The name of the runbook file to generate (for example, **AOSRunbook.xml**).
+  - **\[runbookID\]**– A parameter that is specified by the developer who applies the deployable package.
+  - **\[topologyFile\]**– The path of the DefaultTopologyData.xml file.
+  - **\[serviceModelFile\]**– The path of the DefaultServiceModelData.xml file.
+  - **\[runbookFile\]**– The name of the runbook file to generate (for example, **AOSRunbook.xml**).
 
     **Example**
 

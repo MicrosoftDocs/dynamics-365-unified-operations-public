@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a released product for a single company
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks through how to create a single released product in the context of a single legal unit. After the released product is created,  it's immediately available in this unit only. You can walk through this procedure in demo data company USMF. This task is usually performed by a product designer.
 

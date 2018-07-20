@@ -31,8 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Partial location cycle counting
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Cycle count plans guide the actual counting operations. You can request that only specific products and product variants be counted instead of all on-hand inventory in a location.
 
@@ -60,7 +59,7 @@ For this example, only item number A0001 must be counted in warehouse 61.
 
 
 
-See also
+Additional resources
 --------
 
 [Cycle counting](cycle-counting.md)

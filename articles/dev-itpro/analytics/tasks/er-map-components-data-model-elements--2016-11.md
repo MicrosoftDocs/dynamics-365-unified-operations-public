@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Map components of the created format to data model elements for electronic reporting (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 The following procedure shows how a user in either the System administrator or Electronic reporting developer role can map data model elements to components of the created Electronic reporting (ER) configuration, which defines an electronic document format for the payments business domain. This format will be used later to generate electronic documents for processing payments. In this example, you will create a format configuration for the sample company, ‘Litware, Inc.’. These steps can be performed in any company as ER configurations are shared for all companies. To complete these steps, you must first complete the steps in the “Create a format configuration” task guide.
 

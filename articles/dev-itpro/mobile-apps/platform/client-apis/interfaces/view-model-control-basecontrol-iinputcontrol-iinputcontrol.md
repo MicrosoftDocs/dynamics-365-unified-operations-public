@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # InputControl Type
+
+[!include [banner](../../../../includes/banner.md)]
+
 Input control interface with methods and attributes for all input controls.
 Input controls are typically used on task pages for collecting user input, for example, for a new control.
 

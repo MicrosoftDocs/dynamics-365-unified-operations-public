@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed assets integration
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Fixed assets can be integrated with General ledger, Inventory management, Accounts receivable, and Accounts payable. You can also set up Fixed assets so that it is integrated with purchase orders.
 

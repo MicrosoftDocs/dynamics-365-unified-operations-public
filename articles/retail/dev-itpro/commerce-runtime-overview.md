@@ -3,7 +3,7 @@
 
 title: Commerce runtime overview
 description: This article provides information about the architecture and configuration of the Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the retail channel. 
-author: MargoC
+author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -32,21 +32,20 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Commerce runtime overview
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the architecture and configuration of Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the retail channel. 
 
 Commerce Runtime architecture
 -----------------------------
 
-The following diagram shows the components of the Microsoft Dynamics 365 for Retail Commerce Runtime (CRT). 
+The following diagram shows the components of the Microsoft Dynamics 365 for Retail Commerce Runtime (CRT). 
 
 [![Commerce Runtime components](./media/crt-architecture-1024x793.jpg)](./media/crt-architecture.jpg)
 
 ### Data access
 
-On top of the database is a data access layer. In the data access layer, raw data is translated into objects in memory. For example, an object might be a product. Products have attributes, such as price and color. The data access layer has functions that you can use to manipulate the objects. Stored procedures pass packets of data from the database to data entities that can be used in services and workflows. You can update the packets of data to include new fields that you add in Dynamics 365 for Retail.
+On top of the database is a data access layer. In the data access layer, raw data is translated into objects in memory. For example, an object might be a product. Products have attributes, such as price and color. The data access layer has functions that you can use to manipulate the objects. Stored procedures pass packets of data from the database to data entities that can be used in services and workflows. You can update the packets of data to include new fields that you add in Dynamics 365 for Retail.
 
 ### Services
 
@@ -54,7 +53,7 @@ On top of the data access layer is a services layer. Services query for real-tim
 
 ### Workflows
 
-On top of the services layer is the workflow layer. A workflow is a collection of services and business logic that, together, define business processes. For example, when a customer adds an item to the cart, you can use a workflow to get the price, perform validation, check the inventory quantity, calculate shipping charges, calculate tax, and calculate discounts. You can use the workflows that are included in Dynamics 365 for Retail, or you can create new workflows. You can even use a workflow to connect to a third-party system as part of your business processes.
+On top of the services layer is the workflow layer. A workflow is a collection of services and business logic that, together, define business processes. For example, when a customer adds an item to the cart, you can use a workflow to get the price, perform validation, check the inventory quantity, calculate shipping charges, calculate tax, and calculate discounts. You can use the workflows that are included in Dynamics 365 for Retail, or you can create new workflows. You can even use a workflow to connect to a third-party system as part of your business processes.
 
 ### API
 

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  LedgerConsolidate
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
@@ -28,6 +28,8 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 # Export and import transactions for General ledger consolidation for Brazil
+
+[!include [banner](../includes/banner.md)]
 
 You can transfer general ledger transactions from the source company to the consolidated account in the consolidated company without consolidating the transactions.
 

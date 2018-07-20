@@ -32,10 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Configuration manager
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!include [banner](../includes/banner.md)]
 
 You can use the Configuration manager to copy from and to Dynamics AX 2012 R3 environments that meet the following criteria:
 -   Managed as part of a Lifecycle Services project

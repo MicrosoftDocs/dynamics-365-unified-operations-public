@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # What's new in Lifecycle Services
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and their partners can use to manage Microsoft Dynamics 365 for Finance and Operations projects from pre-sales to implementation and operations. Based on the phase of your project and the industry that you are working in, the site provides checklists and tools that help you manage the project. The site also provides a dashboard, so that you have a single location from which you can obtain up-to-date project information. Go to the Lifecycle Services [site](https://lcs.dynamics.com/en/). Read the documentation: [Lifecycle Services for Microsoft Dynamics User Guide (LCS)](lcs-user-guide.md).
 

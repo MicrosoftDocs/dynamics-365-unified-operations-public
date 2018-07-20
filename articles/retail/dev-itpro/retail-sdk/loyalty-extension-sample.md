@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Loyalty extension sample
 
+[!include [banner](../../../includes/banner.md)]
+
 ## Scenario 
 A retailer wants customers to be able to earn loyalty points and pay by using loyalty points in a single transaction. 
 

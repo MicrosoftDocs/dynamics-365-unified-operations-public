@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # C Classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter C.
 
@@ -265,7 +264,7 @@ All methods are loaded into the editor. The arguments are included in the signat
     static void example() 
     { 
         ClassNode classNode; 
-     
+
         classNode = infolog.findNode('\Classes\SysClassWizard'); 
         classNode.AOTedit(); 
     }
@@ -514,14 +513,14 @@ The following example sets the value of a CLR string to an X++ str data type.
         InteropPermission perm; 
         System.String   clrStr = "Calculate total"; 
         str             s; 
-         
+
         perm = new InteropPermission(InteropKind::ClrInterop); 
         if (perm == null) 
         { 
             return; 
         } 
         perm.assert(); 
-      
+
         s = ClrInterop::getAnyTypeForObject(clrStr); 
         CodeAccessPermission::revertAssert(); 
     }
@@ -548,7 +547,7 @@ The following example tries to pass in a date that has an invalid format. The CL
     { 
         CLRObject clrObj; 
         InteropPermission perm; 
-         
+
         try 
         { 
             System.DateTime::Parse( "-1/-1/-1"); 
@@ -561,18 +560,18 @@ The following example tries to pass in a date that has an invalid format. The CL
                 return; 
             } 
             perm.assert(); 
-      
+
             e = ClrInterop::getLastException(); 
-             
+
             CodeAccessPermission::revertAssert(); 
-      
+
             while( e ) 
             { 
                 info( e.get_Message() ); 
                 e = e.get_InnerException(); 
             } 
         } 
-         
+
     }
 
 ### Method getObjectForAnyType
@@ -603,16 +602,16 @@ The following example converts a string value to a CLR string object.
         CLRObject clrObj; 
         InteropPermission perm; 
         System.String s; 
-     
+
         perm = new InteropPermission(InteropKind::ClrInterop); 
         if (perm == null) 
         { 
             return; 
         } 
         perm.assert(); 
-         
+
         s = CLRInterop::getObjectForAnyType("Calculate total"); 
-      
+
         CodeAccessPermission::revertAssert(); 
     }
 
@@ -652,9 +651,9 @@ The following example sets the CLR string data type to nullNothingnullptrunita n
     static void Job5(Args _args) 
     { 
         System.String nullStr; 
-         
+
         nullStr = CLRInterop::Null("System.String"); 
-         
+
         print CLRInterop::isNull(nullStr); 
     }
 
@@ -684,9 +683,9 @@ The following example sets the CLR string type to nullNothingnullptrunita null r
     static void Job5(Args _args) 
     { 
         System.String nullStr; 
-         
+
         nullStr = CLRInterop::Null("System.String"); 
-         
+
         print CLRInterop::isInitialized(nullStr); 
         print CLRInterop::isNull(nullStr); 
     }
@@ -723,11 +722,11 @@ The following example converts the enumerator value to the string value of Monda
     { 
         System.DayOfWeek    dayOfWeek; 
         System.Type         dayOfWeekType; 
-         
+
         dayOfWeek = CLRInterop::parseClrEnum( "System.DayOfWeek", "Monday"); 
-         
+
         dayOfWeekType = dayOfWeek.GetType(); 
-     
+
         info( dayOfWeek.ToString() ); 
     }
 
@@ -769,22 +768,22 @@ The following example calls the get\_Now method on the System.DateTime CLR class
         CLRObject clrObj; 
         InteropPermission perm; 
         System.DateTime dateTime; 
-     
+
         perm = new InteropPermission(InteropKind::ClrInterop); 
         if (perm == null) 
         { 
             return; 
         } 
         perm.assert(); 
-     
+
         dateTime = CLRInterop::staticInvoke( 
                        "System.DateTime", 
                        "get_Now" ); 
         info(dateTime.ToString()); 
         CodeAccessPermission::revertAssert(); 
-         
+
         pause; 
-         
+
         // This is the same code using CLR syntax. 
         // dateTime = System.DateTime::get_Now(); 
         // info(dateTime.ToString()); 
@@ -832,7 +831,7 @@ Reserved: Do not explicitly call this method.
 
 #### Parameters
 
-  
+
 
 #### Return Value
 
@@ -869,17 +868,17 @@ This example creates a new System.Int32 CLR object.
         CLRObject clrObj; 
         InteropPermission perm; 
         anytype retVal; 
-      
+
         perm = new InteropPermission(InteropKind::ClrInterop); 
         if (perm == null) 
         { 
             return; 
         } 
-      
+
         perm.assert(); 
-      
+
         clrObj = new CLRObject("System.Int32"); 
-      
+
         CodeAccessPermission::revertAssert(); 
     }
 
@@ -996,11 +995,11 @@ The following code example shows a call to the assert method before the AsciiIo 
     { 
         FileIoPermission _perm; 
         AsciiIo a; 
-      
-         
+
+
         _perm = new FileIoPermission("c:\File.txt",'r'); 
         _perm.assert(); 
-      
+
         // Invoke the protected API. 
         a = new AsciiIo("c:\File.txt",'r'); 
     }
@@ -1019,7 +1018,7 @@ The following code example shows a call to the demand method before the API func
     { 
         SysTestCodeAccessPermission p = new SysTestCodeAccessPermission(data); 
         p.demand(); 
-     
+
         //Add functionality 
     }
 
@@ -1044,13 +1043,13 @@ The following code example shows a call to the CodeAccessPermission::revertAsser
         FileIoPermission _perm; 
         AsciiIo a; 
 
-         
+
         _perm = new FileIoPermission("c:\File.txt",'r'); 
         _perm.assert(); 
-      
+
         //invoke protected API 
         a = new AsciiIo("c:\File.txt",'r'); 
-         
+
         // Optionally call revertAssert() to limit scope of assert. 
         CodeAccessPermission::revertAssert(); 
     }
@@ -1080,7 +1079,7 @@ The following code example calls the CodeAccessPermission::assertMultple method.
         Set permissionSet;
         str fileName = @"C:\TestFile75a.txt";
         boolean boolFileDeleted;
-     
+
         permissionSet =  new Set(Types::Class);
         permissionSet.add(new FileIoPermission(fileName,'rw'));
 
@@ -1111,7 +1110,7 @@ The COM class also supports Distributed Component Object Model (DCOM). DCOM enab
 
     com.comMethod(COMArgument::NoValue, "Hello Another World");
 
- 
+
 
 If the arguments to omit from the COM object appear at the end of the argument list, omit them from the code. The following types are supported for the extended syntax for the COM class argument type and return type:
 
@@ -1136,7 +1135,7 @@ This example calls the GetFileName method from the Scripting.FileSystemObject CO
         str               result; 
         InteropPermission perm; 
         ; 
-      
+
         // Set code access permission to help protect the use of the 
         // COM object. 
         perm = new InteropPermission(InteropKind::ComInterop); 
@@ -1146,13 +1145,13 @@ This example calls the GetFileName method from the Scripting.FileSystemObject CO
         } 
         // Permission scope starts here. 
         perm.assert(); 
-      
+
         com = new COM("Scripting.FileSystemObject"); 
         if (com != null) 
         { 
             result = com.GetFileName(@"c:\boot.ini"); 
         } 
-      
+
         // Close code access permission scope. 
         CodeAccessPermission::revertAssert(); 
     }
@@ -1186,7 +1185,7 @@ Reserved. Do not explicitly call this method.
 
 #### Parameters
 
-  
+
 
 #### Return Value
 
@@ -1229,10 +1228,10 @@ A COMError value that represents the error that is associated with the instance 
 The following example shows how to retrieve the error object that is associated with an instance of the COM class.
 
     COMError err; 
-     
+
     // The obj variable was previously instantiated. 
     err = obj.error(); 
-     
+
     // Output the error number. 
     info(strfmt("Error: %1", err.number()))
 
@@ -1361,13 +1360,13 @@ The following example shows how to retrieve an instance of a running COM object.
 
     COM objExcel, objWorkBook, objWorkBooks; 
     InteropPermission perm; 
-      
+
     // Set code access permission to help protect the use of COM.new. 
     perm = new InteropPermission(InteropKind::ComInterop); 
     perm.assert(); 
-      
+
     objExcel = COM::getObject("Excel.Application"); 
-      
+
     if (!objExcel) 
     { 
         // Unable to connect to a running instance of Microsoft Excel. 
@@ -1381,7 +1380,7 @@ The following example shows how to retrieve an instance of a running COM object.
     } 
     // Close code access permission scope. 
     CodeAccessPermission::revertAssert(); 
-      
+
     objExcel.visible(true); 
     objWorkBooks = objExcel.workbooks(); 
     if (objWorkBooks) 
@@ -1478,7 +1477,7 @@ This example calls the GetFileName method from the Scripting.FileSystemObject CO
         COM               com; 
         str               result; 
         InteropPermission perm; 
-      
+
         // Set the code access permission to help protect the use of the 
         // COM object. 
         perm = new InteropPermission(InteropKind::ComInterop); 
@@ -1488,13 +1487,13 @@ This example calls the GetFileName method from the Scripting.FileSystemObject CO
         } 
         // Permission scope starts here. 
         perm.assert(); 
-      
+
         com = new COM("Scripting.FileSystemObject"); 
         if (com != null) 
         { 
             result = com.GetFileName(@"c:\boot.ini"); 
         } 
-      
+
         // Close the code access permission scope. 
         CodeAccessPermission::revertAssert(); 
     }
@@ -1547,7 +1546,7 @@ For example, this method can be called to detach a COM object from a call to the
 
 #### Parameters
 
-  
+
 
 #### Return Value
 
@@ -1610,7 +1609,7 @@ It is important that you specify the correct context of the functionality in the
 
 #### Examples
 
- 
+
 
     { 
         InteropPermission perm; 
@@ -1619,7 +1618,7 @@ It is important that you specify the correct context of the functionality in the
         COMDispFunction getValue; 
         COMDispFunction putValue; 
         ; 
-      
+
         perm = new InteropPermission(InteropKind::ComInterop); 
         perm.assert(); 
         com = new COM("MyCOM.Object"); 
@@ -1962,23 +1961,23 @@ This example uses a CommaIO object to read from the example file.
         container c; 
         CommaIo myfile; 
         FileIoPermission perm; 
-      
+
         #define.ExampleFile(@"c:\myfile.txt") 
         #define.ExampleOpenMode("w") 
-      
+
         // Set code access permission to help protect the use 
         // of CommaIO.new 
         perm = new FileIoPermission(#ExampleFile, #ExampleOpenMode); 
         perm.assert(); 
-      
+
         myfile = new CommaIo(#ExampleFile, #ExampleOpenMode); 
-      
+
         // Assign the entries in the container according to record layout. 
         c = [1,"MyText",1.324,"Last field"]; 
         // Write this record according to file format  
         // (record/field delimiters). 
         myfile.writeExp(c); 
-         
+
         // Close the code access permission. 
         CodeAccessPermission::revertAssert(); 
     }
@@ -2011,10 +2010,10 @@ The following example uses a CommaIO object to read from the ExampleFile file.
         CommaIo         io; 
         container       con; 
         FileIoPermission perm; 
-      
+
         #define.ExampleFile(@"c:\test.txt") 
         #define.ExampleOpenMode("r") 
-      
+
         perm = new FileIoPermission(#ExampleFile, #ExampleOpenMode); 
         if (perm == null) 
         { 
@@ -2023,13 +2022,13 @@ The following example uses a CommaIO object to read from the ExampleFile file.
         // Grants permission to execute the CommaIo.new method. 
         // CommaIo.new runs under code access security. 
         perm.assert(); 
-      
+
         io = new CommaIo(#ExampleFile, #ExampleOpenMode); 
         if (io != null) 
         { 
             con = io.read(); 
         } 
-      
+
         // Close the code access permission scope. 
         CodeAccessPermission::revertAssert(); 
     }
@@ -2319,7 +2318,7 @@ The following example instantiates a COM object that exposes a method called mul
         COMVariant varRet; 
         real ret; 
         InteropPermission perm; 
-      
+
         // Set code access permission to help protect the use  
         // of the COM object. 
         perm = new InteropPermission(InteropKind::ComInterop); 
@@ -2327,20 +2326,20 @@ The following example instantiates a COM object that exposes a method called mul
         { 
             return; 
         } 
-      
+
         // Permission scope starts here 
         perm.assert(); 
-      
+
             com = new COM("MyCOM.Object"); 
-      
+
         // Specify arguments for the 'multiply' method 
         varArg1.float(123); 
         varArg2.float(456); 
         varRet = com.multiply(varArg1, varArg2); 
-      
+
         ret = varRet.double(); 
         // 'ret' is now 56088 (123*456) 
-      
+
         // Close the code access permission scope. 
         CodeAccessPermission::revertAssert(); 
     }
@@ -2420,7 +2419,7 @@ The following example creates a new COMVariant object of type VT\_BOOL and sets 
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_BOOL); 
-     
+
         // Set value of the object 
         var.boolean(true); 
     }
@@ -2452,7 +2451,7 @@ The following example creates a new COMVariant object of type VT\_BSTR, and sets
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_BSTR); 
-      
+
         // Set string value of the object 
         var.bStr("Hello World"); 
     }
@@ -2484,7 +2483,7 @@ The following example creates a new COMVariant object of the VT\_UI1 type and se
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_UI1); 
-      
+
         // Set value of the object 
         var.byte(123); 
     }
@@ -2516,7 +2515,7 @@ The following example creates a new COMVariant object of type VT\_I1 and sets th
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_I1); 
-      
+
         // Set value of the object 
         var.char(Char2Num("A", 1)); 
     }
@@ -2575,29 +2574,29 @@ The following example creates a new COMVariant object of type container. The dat
         COMVariant var = new COMVariant(); 
         container con; 
         InteropPermission perm; 
-      
+
         // Set code access permission to help protect use of COM object 
         perm = new InteropPermission(InteropKind::ComInterop); 
         if (perm == null) 
         { 
             return; 
         } 
-      
+
         // Permission scope starts here 
         perm.assert(); 
-      
+
         // Put some data in the container 
         con = conins(con, 1, "Element 1"); 
         con = conins(con, 2, "Element 2"); 
         // Set value of the object and ensure the data 
         // is stored in a binary array of bytes 
         var.container(con, COMVariantType::VT_UI1); 
-      
+
         // Create a database object to store the data in 
         com = new COM("MyDatabaseCOM.Object"); 
         com.writeData(var); 
         // ... 
-      
+
         // Close code access permission 
         CodeAccessPermission::revertAssert(); 
     }
@@ -2629,7 +2628,7 @@ The following example creates a new COMVariant object of type VT\_CY and sets th
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_CY); 
-      
+
         // Set value of the object 
         var.currency(123.4567); 
     }
@@ -2661,7 +2660,7 @@ The following example creates a COMVariant object of type VT\_DATE and sets the 
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_DATE); 
-      
+
         // Set value of the object 
         var.date(Str2Date("12.24.1998", 213)); 
         var.time(Str2Time("13:24:00")); 
@@ -2694,7 +2693,7 @@ The following example creates a new COMVariant object of type VT\_DECIMAL and se
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_DECIMAL); 
-      
+
         // Set value of the object 
         var.decimal(123.456); 
     }
@@ -2726,7 +2725,7 @@ The following example creates a new COMVariant object of type VT\_R8 and sets th
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_R8); 
-      
+
         // Set value of the object 
         var.double(123.456); 
     }
@@ -2758,7 +2757,7 @@ The following example creates a new COMVariant object of type VT\_R4 and sets th
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_R4); 
-      
+
         // Set value of the object 
         var.float(123.456); 
     }
@@ -2791,11 +2790,11 @@ The following example creates a new COMVariant object of type VT\_DISPATCH.
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_DISPATCH); 
         COMInterface comInterface; 
-      
+
         // Here, the comInterface variable must be assigned 
         // a COM IDispatch interface 
         //… 
-     
+
         // Set value of the object 
         var.iDispatch(comInterface); 
     }
@@ -2827,7 +2826,7 @@ The following example creates a COMVariant object of type VT\_I4 and sets the va
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_I4); 
-      
+
         // Set value of the object 
         var.int(123456); 
     }
@@ -2860,11 +2859,11 @@ The following example creates a new COMVariant object of type VT\_UNKNOWN.
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_UNKNOWN); 
         COMInterface comInterface; 
-      
+
         // comInterface variable is assigned 
         // a COM IUnknown interface 
         // ... 
-      
+
         // Set value of the object 
         var.iUnknown(comInterface); 
     }
@@ -2896,7 +2895,7 @@ The following example creates a COMVariant object of type VT\_I4 and sets the va
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_I4); 
-      
+
         // Set value of the object 
         var.long(123456); 
     }
@@ -2928,7 +2927,7 @@ The following example creates a new COMVariant object of type VT\_I8 and sets th
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_BOOL); 
-      
+
         // Set value of the object 
         var.longLong(2305843009213693952); 
     }
@@ -2968,13 +2967,13 @@ The following example creates a new COMVariant object of type VT\_SAFEARRAY and 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_SAFEARRAY); 
         Array arr = new Array(Types::INTEGER); 
-      
+
         // Insert 10 values in the array 
         for (i = 1; i <= 10; i++) 
         { 
             arr.value(i, i); 
         } 
-      
+
         // Set value of the object and ensure the integer values 
         // are treated as short data types 
         var.safeArray(arr, COMVariantType::VT_I2); 
@@ -3007,7 +3006,7 @@ The following example creates a new COMVariant object of type VT\_ERROR and sets
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_ERROR); 
-      
+
         // Set value of the object 
         var.sCode(0x80001004); 
     }
@@ -3039,7 +3038,7 @@ The following example creates a new COMVariant object of the VT\_I2 type and set
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_I2); 
-      
+
         // Set value of the object 
         var.short(123); 
     }
@@ -3071,7 +3070,7 @@ The following example creates a COMVariant object of type VT\_DATE and sets the 
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_DATE); 
-      
+
         // Set value of the object 
         var.date(Str2Date("12.24.1998", 213)); 
         var.time(Str2Time("13:24:00")); 
@@ -3096,7 +3095,7 @@ The actual string returned from this method depends on the variant data type of 
 The following example creates a COMVariant object and assigns the current date to it. It then prints a description of the object to the Infolog.
 
     COMVariant theDay; 
-     
+
     theDay = COMVariant::createFromDate(today()); 
     info(theDay.toString());
 
@@ -3127,7 +3126,7 @@ The following example creates a new COMVariant object of the VT\_UI4 type and se
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_UI4); 
-      
+
         // Set value of the object 
         var.uInt(123456); 
     }
@@ -3159,7 +3158,7 @@ The following example creates a new COMVariant object of type VT\_UI4 and sets t
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_UI4); 
-      
+
         // set value of the object 
         var.uLong(123456); 
     }
@@ -3191,7 +3190,7 @@ The following example creates a new COMVariant object of type VT\_I8 and sets th
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_BOOL); 
-      
+
         // Set value of the object 
         var.longLong(9223372036854775808); 
     }
@@ -3223,7 +3222,7 @@ The following example creates a new COMVariant object of type VT\_UI2 and sets t
         COMVariant var = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_UI2); 
-      
+
         // Set value of the object 
         var.uShort(12345); 
     }
@@ -3254,49 +3253,49 @@ The following example creates a COMVariant object of type VT\_I4 (long), and a C
     { 
         COM com; 
         COMDispFunction funcShow; 
-      
+
         COMVariant var1 = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_I4); 
-      
+
         COMVariant var2 = new COMVariant( 
             COMVariantInOut::IN_OUT,  
             COMVariantType::VT_VARIANT); 
-      
+
         InteropPermission perm1; 
         InteropPermission perm2; 
-      
+
         // Set code access permission to help protect use of COM object 
         perm1 = new InteropPermission(InteropKind::ComInterop); 
         perm1.assert(); 
-      
+
         com = new COM("MyCOM.Object"); 
-      
+
         // Close code access permission for COM 
         CodeAccessPermission::revertAssert(); 
-      
+
         // Set value of 'var1' 
         var1.Long(123456); 
         // Set value of 'var2' to 'var1' 
         var2.Variant(var1); 
-      
+
         // Set code access permission to protect use of 
         // COMDispFunction object 
         perm2 = new InteropPermission(InteropKind::ComInterop); 
         perm2.assert(); 
-      
+
         funcShow = new COMDispFunction( 
             com,  
             "Show",  
             COMDispContext::METHOD); 
-     
+
         // Call funcShow with a long 
         funcShow.Call(var2); 
         // Change value of 'var1' 
          var1.BStr("Hello World"); 
         // Call funcShow with a string 
         funcShow.Call(var2); 
-      
+
         // Close code access permission for COMDispFunction 
         CodeAccessPermission::revertAssert(); 
     }
@@ -3333,7 +3332,7 @@ The following example creates a COMVariant object that has the InOutFlag setting
 
     { 
         COMVariant var = new COMVariant(COMVariantInOut::IN); 
-      
+
         // Change the 'var' object to be used as an out argument 
         var.variantInOutFlag(COMVariantInOut::OUT); 
     }
@@ -3383,10 +3382,10 @@ The following example creates a new COMVariant object and sets it to be of long 
 
     { 
         COMVariant var = new COMVariant(); 
-      
+
         // Set the 'var' object to be a long 
         var.long(123); 
-      
+
         // Change var so that it can store a date 
         var.variantType(COMVariantType::VT_DATE); 
     }
@@ -3430,7 +3429,7 @@ The COMVariant object that is created by this method has the data type VT\_DATE 
 The following example creates a COMVariant object and initializes it with the date 01 January 4015.
 
     COMVariant myDate; 
-     
+
     myDate = COMVariant::createDateFromYMD(4015,1,1);
 
 ### Method createFromArray
@@ -3465,11 +3464,11 @@ The following example creates a new COMVariant object and initializes it with an
         int i; 
         COMVariant var; 
         Array arr = new Array(Types::INTEGER); 
-      
+
         for (i = 1; i <= 10; i++) 
             // Insert 10 values in the array 
             arr.value(i, i); 
-      
+
         // Create and initialize a COMVariant object  
         var = COMVariant::createFromArray(arr); 
     }
@@ -3504,7 +3503,7 @@ The following example creates a COMVariant object of the VT\_BOOL variant data t
 
     { 
         COMVariant var; 
-      
+
         var = COMVariant::createFromBoolean(TRUE); 
     }
 
@@ -3544,7 +3543,7 @@ The following example creates a new COMVariant object and initializes it with a 
     { 
         COMVariant var; 
         COM com = new COM("MyCOM.Object"); 
-      
+
         var = COMVariant::createFromCOM(com); 
     }
 
@@ -3577,7 +3576,7 @@ The COMVariant object that is created by this method has the data type VT\_DATE 
 The following example creates a COMVariant object and initializes it with the current date.
 
     COMVariant theDay; 
-     
+
     theDay = COMVariant::createFromDate(today()); 
     info(theDay.toString());
 
@@ -3616,7 +3615,7 @@ The following example creates a COMVariant object and assigns it the current dat
 
     date theDay; 
     COMVariant theDayAndTime; 
-     
+
     theDay = today(); 
     theDayAndTime = COMVariant::createFromDateAndTime(theDay, 10); 
     info(theDayAndTime.toString());
@@ -3651,7 +3650,7 @@ The following example creates a COMVariant object of the VT\_I4 variant data typ
 
     { 
         COMVariant var; 
-      
+
         var = COMVariant::createFromInt(123); 
     }
 
@@ -3685,7 +3684,7 @@ The following example creates a COMVariant object of the VT\_I8 variant data typ
 
     { 
         COMVariant var; 
-      
+
         var = COMVariant::createFromInt64(123456); 
     }
 
@@ -3719,7 +3718,7 @@ The following example creates a COMVariant object of the VT\_R8 variant data typ
 
     { 
         COMVariant var; 
-       
+
         var = COMVariant::createFromReal(123.456); 
     }
 
@@ -3753,7 +3752,7 @@ The following example creates a COMVariant object of the VT\_BSTR variant data t
 
     { 
         COMVariant var; 
-       
+
         var = COMVariant::createFromStr("Hello World"); 
     }
 
@@ -3786,7 +3785,7 @@ The COMVariant object that is created by this method has the data type VT\_DATE 
 The following example will create a COMVariant object and set the time part to 10 seconds past midnight.
 
     COMVariant theTime; 
-     
+
     theTime = COMVariant::createFromTime(10); 
     info(theTime.toString());
 
@@ -3823,7 +3822,7 @@ A COMVariant object with no value can be used for COM parameters which are optio
 The following example creates an empty COMVariant object.
 
     COMVariant noValue; 
-     
+
     noValue = COMVariant::createNoValue(); 
     info(noValue.toString());
 
@@ -3864,10 +3863,10 @@ The following example creates three COMVariant objects:
             COMVariantType::VT_I4); 
         COMVariant varOutRetval = new COMVariant( 
             COMVariantInOut::OUT_RETVAL); ; 
-      
+
         // Store a text string in the varIn object 
         varIn.bStr("Hello World"); 
-      
+
         // Change varIn to a short. 
         // Text string stored in varIn is automatically released 
         varIn.short(123);  
@@ -3895,19 +3894,19 @@ The following example shows how to call the COM.multiply method with the third a
         COMVariant varRet  = new COMVariant(COMVariantInOut::OUT_RETVAL); 
         real       ret; 
         InteropPermission perm; 
-      
+
         // Set code access permission to help protect use of COM object 
         perm = new InteropPermission(InteropKind::ComInterop); 
         if (perm == null) 
         { 
             return; 
         } 
-      
+
         // Permission scope starts here 
         perm.assert(); 
-      
+
         com = new COM("MyCOM.Object"); 
-      
+
         // Specify arguments for the multiply method 
         varArg1.float(123); 
         varArg2.float(456); 
@@ -3917,7 +3916,7 @@ The following example shows how to call the COM.multiply method with the third a
         varRet = com.multiply(varArg1, varArg2, COMArgument::NoValue); 
          ret = varRet.double(); 
         // ret is now 56088 (123*456) 
-      
+
         // Close code access permission 
         CodeAccessPermission::revertAssert(); 
     }
@@ -3989,7 +3988,7 @@ To find the number of configuration keys, use the cnt method. In general, the in
     ConfigurationKeySet configKeySet = new ConfigurationKeySet(); 
     DictConfigurationKey dictConfigurationKey; 
     int i; 
-     
+
     configKeySet.loadSystemSetup(); 
     for (i=1; i<= configKeySet.cnt(); i++) 
     { 
@@ -4033,23 +4032,23 @@ This example demonstrates the use of the ConfigurationKeySet.enabled method.
     static void testConfigKey(Args _args) 
     { 
         ConfigurationKeySet configKey = new ConfigurationKeySet(); 
-     
+
         configKey.loadSystemSetup(); 
-     
+
         // Set the enable value to false. 
         configKey.enabled(configurationkeynum(RouteApprove), false); 
         SysDictConfigurationKey::save(configKey.pack()); 
         SysSecurity::reload(true); 
         print isConfigurationkeyEnabled(configurationkeynum(RouteApprove)); 
-     
+
         // Set the enable value to true. 
         configKey.enabled(configurationkeynum(RouteApprove), true); 
         //Save the configuration key setup. 
         SysDictConfigurationKey::save(configKey.pack()); 
         SysSecurity::reload(true); 
-     
+
         print isConfigurationkeyEnabled(configurationkeynum(RouteApprove)); 
-     
+
         pause; 
     }
 
@@ -4111,14 +4110,14 @@ In the following example, the createStatement method initializes the Statement o
         ResultSet r; 
         str sql; 
         SqlStatementExecutePermission perm; 
-      
+
         sql = strfmt('SELECT VALUE FROM SQLSYSTEMVARIABLES'); 
-      
+
         // Set code access permission to help protect the use of 
         // Statement.executeUpdate. 
         perm = new SqlStatementExecutePermission(sql); 
         perm.assert(); 
-      
+
         try 
         { 
             r = stmt.executeQuery(sql); 
@@ -4208,24 +4207,24 @@ In the following example, the odbcGetInfoInt method returns an integer value for
         Connection con; 
         Statement stmt; 
         int info; 
-     
+
         #define.SQL_MAX_COLUMN_NAME_LEN(30) 
         con = new Connection(); 
-     
+
         try 
         { 
             info = con.odbcGetInfoInt(#SQL_MAX_COLUMN_NAME_LEN); 
-     
+
             print info; 
             pause; 
          } 
-     
+
         catch(exception::Error) 
         { 
             print "An error occurred."; 
-     
+
         } 
-     
+
     }
 
 ### Method odbcGetInfoLong
@@ -4256,24 +4255,24 @@ In the following example, the odbcGetInfoLong method returns an integer for the 
         Connection con; 
         Statement stmt; 
         int info; 
-     
+
         #define.SQL_MAX_ROW_SIZE(104) 
         con = new Connection(); 
-     
+
         try 
         { 
             info = con.odbcGetInfoLong(#SQL_MAX_ROW_SIZE); 
-     
+
             print info; 
             pause; 
          } 
-     
+
         catch(exception::Error) 
         { 
             print "An error occurred."; 
-     
+
         } 
-     
+
     }
 
 ### Method odbcGetInfoStr
@@ -4299,18 +4298,18 @@ In the following example, the odbcGetInfoStr method returns the name of the data
     { 
         Connection con; 
         str info; 
-     
+
         #define.SQL_DBMS_NAME(17) 
         con = new Connection(); 
-      
+
         try 
         { 
             info = con.odbcGetInfoStr(#SQL_DBMS_NAME); 
-      
+
             print info; 
             pause; 
          } 
-      
+
         catch(exception::Error) 
         { 
             print "An error occurred."; 
@@ -5114,7 +5113,7 @@ Initializes a new instance of the TreeNode class.
 cueReferenceName  
 The name to use to identify this form, report, table, query, or other application object.
 
- 
+
 
 
 

@@ -18,11 +18,11 @@ ms.search.form: TaxIntervat
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 273023
 ms.search.region: Belgium
-ms.search.industry: All
+# ms.search.industry: 
 ms.author: v-oloski
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
@@ -31,8 +31,7 @@ ms.search.validFrom: 2016-05-31
 
 # INTERVAT tax declaration
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only.
 

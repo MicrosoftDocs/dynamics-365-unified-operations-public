@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Organizational Training Power BI content
-description: This topic describes the Finance and Operations - Organizational Training Power BI content. It explains how to access the content pack, and describes the data model and entities that were used to build the content pack.
+title: Organizational training Power BI content
+description: This topic describes the Finance and Operations - Organizational training Power BI content. 
 author: jcart1106
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,17 +30,11 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Organizational Training Power BI content
+# Organizational training Power BI content
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-
-This topic describes the Finance and Operations - Organizational Training Power BI content. It explains how to access the content pack, and describes the data model and entities that were used to build the content pack.
-
-Accessing the content pack
---------------------------
-
-You can find the Organizational Training content pack in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your Microsoft Dynamics 365 for Finance and Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+This topic describes the Finance and Operations - Organizational training Power BI content. 
 
 ## Reports that are included in the content pack
 After you’ve connected the content pack to your Finance and Operations data, the reports show your organization's data. If you’ve never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
@@ -53,7 +47,7 @@ After you’ve connected the content pack to your Finance and Operations data, t
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
-Finance and Operations data is used to populate the reports in the Organizational Training content pack. The following table shows the entities that the content pack was based on.
+Finance and Operations data is used to populate the reports in the Organizational training content pack. The following table shows the entities that the content pack was based on.
 
 | Entity                    | Contents                                                         | Relationships with other entities                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,16 +64,6 @@ Finance and Operations data is used to populate the reports in the Organizationa
 | Training\_Position        | Position, title, and full-time equivalent (FTE)                  | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
 | Training\_WorkerName      | First name, last name, and full name                             | Training\_CourseAttendees                                                                                                                                                                          |
 | Training\_WorkerTitle     | Title and seniority date                                         | Training\_CourseAttendees                                                                                                                                                                          |
-
-These entities were used to create calculated measures in the data model. These calculated measures are then used to calculate the key performance indicators (KPIs) and reports that are used in the content pack. If you want to include additional calculations on your reports and dashboard, you can download and modify the Training.pbix file from LCS. This file is the default data model that was used to create the content pack. After you've made modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.
-
-## Additional resources
-Here are some helpful links that are related to entities and building Power BI content:
-
--   [Data entities](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)
--   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Adding Power BI tiles to workspaces](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
 
 
 

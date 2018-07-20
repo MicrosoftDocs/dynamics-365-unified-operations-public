@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Add properties to a sales order
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 By customizing the properties of sales orders, you can send additional data from your online store to meet the requirements of your business processes. This article explains how to add properties to a sales order.
 
@@ -47,7 +46,7 @@ The starter store has sales order properties that you can use to capture data du
 ## Create an attribute
 To create an attribute, you must define an attribute type and then assign the attribute type to your new attribute. In this example, you use a pre-defined attribute type.
 
-1.  In the client, click **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attributes**.
+1.  In the client, click **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attributes**.
 2.  Click **New**, and enter the following values.
 
     | Property       | Value        |
@@ -94,10 +93,10 @@ After you create a sales order in the commerce runtime, you can view the new att
 
 ### View the attribute
 
-1.  In the client, click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
+1.  In the client, click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 2.  Run the **P-0001\_OC** job to run POS transactions in the online channel.
-3.  Click **Retail** &gt; **Retail IT** &gt; **Synchronize orders** to create a sales order.
-4.  Click **Retail** &gt; **Inquiries and reports** &gt; **Sales orders** &gt; **All sales orders**.
+3.  Click **Retail** &gt; **Retail IT** &gt; **Synchronize orders** to create a sales order.
+4.  Click **Retail** &gt; **Inquiries and reports** &gt; **Sales orders** &gt; **All sales orders**.
 5.  On the **Retail** tab, and click **Retail attributes**. You should see the attribute that you created.
 
 

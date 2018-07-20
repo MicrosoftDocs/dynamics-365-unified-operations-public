@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Apply updates to a cloud environment of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+title: Apply updates to a cloud environment
 description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a cloud environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 11/16/2017
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Operations Retail
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: ms.custom: 107013
 ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
 ms.search.region: Global
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Apply updates to a cloud environment of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+# Apply updates to a cloud environment
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to either a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition environment or a Microsoft Dynamics 365 for Retail environment. Updates are applied using deployable packages.
+This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to either a Microsoft Dynamics 365 for Finance and Operations environment or a Microsoft Dynamics 365 for Retail environment. Updates are applied using deployable packages.
 
 > [!IMPORTANT]
 > Applying packages causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
@@ -41,9 +41,11 @@ This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS)
 ## Supported environments
 
 The following topologies support package deployment that uses automated flows in LCS:
-
-- **LCS Implementation Project** – All environment types are supported. Automated package application is a self-service operation in all environments except production environments. For production environments, customers must use LCS to submit a request to the Service Engineering team to apply packages.
+- **LCS Implementation Project** – All environment types are supported. Automated package application is a self-service operation in all environments except production environments. For production environments, customers must use LCS to submit a request to apply packages.
 - **LCS Partner and Trial Projects** – All environment types are supported, except multi-box dev/test topologies.
+
+> [!NOTE]
+> Regardless of the project type, if you have a build environment, you can only use LCS to apply Binary updates and Data upgrade packages. You can't use LCS to apply an Application Deployable package.
 
 For other topologies (below), you must use Remote Desktop Protocol (RDP) to connect to the environment and install from the command line. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
 
@@ -73,6 +75,7 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 
 - **Make sure that the package is applied in a sandbox environment before it's applied in the production environment.** To help guarantee that the production environment is always in a good state, we want to make sure that the package is tested in a sandbox environment before it's applied in the production environment. Therefore, before you request that the package be applied in your production environment, make sure that it has been applied in your sandbox environment by using the automated flows.
 - **If you want to apply multiple packages, create a merged package that can be applied first in a sandbox environment and then in the production environment.** Application of a single package in an average environment requires about 5 hours of downtime. To avoid additional hours of downtime when you must apply multiple packages, you can create a single combined package that contains one package of each type. If you select a binary package and an application deployable package in the Asset library, a **Merge** button becomes available on the toolbar. By clicking this button, you can merge the two packages into a single package and therefore reduce the total downtime by half.
+- **Make sure that the Application binary update package is applied to your dev/build environment before it is applied to your sandbox and production environment** - If the application binary package is applied directly to your Tier 2+ sandbox environment but is not applied on your dev/build environment, the next time you move an AOT package from dev/build box (which does not have the same application binaries as your sandbox environment) to sandbox, some of the application binaries will be overwritten with what is in your dev/build environment. This could result in a regression of the version of your sandbox environment. 
 
 ## Apply a package to a non-production environment by using LCS
 
@@ -118,7 +121,7 @@ If package application isn't successful, you can download either the logs or the
 2. Unzip the log files.
 3. Select the role that a step failed for, such as **AOS** or **BI**.
 4. Select the VM where the step failed. This information appears in the **Machine name** column in the **Environment updates** section.
-5. In the logs for the VM, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. For example, if the issue occurred in the executing of a step, select the **ExecuteRunbook\*** folder.
+5. In the logs for the VM, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. For example, if the issue occurred in the executing of a step, select the <strong>ExecuteRunbook\</strong>* folder.
 
     For example, if the folder name is ExecuteRunbook-b0c5c413-dae3-4a7a-a0c4-d558614f7e98-1\_I0\_R0, the step number is highlighted and is the number after the globally unique identifier (GUID).
 
@@ -152,7 +155,7 @@ In a production environment, unlike in a sandbox environment or other types of e
 5. Open the **Environment details** view for the production environment where you want to apply the package.
 6. Click **Maintain** &gt; **Apply updates** to apply the package.
 7. Select the type of package to apply.
-8. Select the package to apply in your production environment, and then click **Schedule** to submit a request to the Service Engineering team to apply it.
+8. Select the package to apply in your production environment, and then click **Schedule** to submit a request to apply it.
 
     > [!NOTE]
     > The list of packages includes only the packages that have been successfully signed off in the sandbox environment, and that have been marked as release candidates.
@@ -226,6 +229,6 @@ Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use t
 
 **AXUpdateInstaller** – When you create a customization package from Microsoft Visual Studio or a Microsoft binary update, the installer executable is bundled together with the deployable package. The installer generates the runbook for the specified topology. The installer can also run steps in order, according to the runbook for a specific topology.
 
-## See also
+## Additional resources
 
 [Install a deployable package](install-deployable-package.md)

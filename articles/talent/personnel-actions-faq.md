@@ -3,7 +3,7 @@
 
 title: Personnel actions [FAQ]
 description: This topic contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.
-author: shielas
+author: ShielaSogge
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
@@ -13,12 +13,13 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+# ms.search.form: HcmPositionActionDetail
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -31,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ---
 
 # Personnel actions [FAQ]
+
+[!include [banner](includes/banner.md)]
+
 This topic contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks. Examples of tasks that might require personnel actions are when you create new positions, modify existing position values, hire new workers, transfer workers, change worker compensation, change position assignments, or terminate workers.
 
 **Note:**
@@ -67,9 +71,9 @@ Open any of the personnel action list pages and select a personnel action.
 If a personnel action request fails, follow these steps to resolve the error and resubmit the request:
 
 > 1. On the **Action Pane**, click the **Error text** button to view the message text that describes the problem.
-
+> 
 > 2. On the **Action Pane**, click **Reactivate** to load the latest information and set the status of the personnel action back to **Draft**.
-
+> 
 > 3. Resolve the error, and then click **Complete** or **Submit**.
 
 ## What happens to a personnel action that uses workflow when the final approval is completed?

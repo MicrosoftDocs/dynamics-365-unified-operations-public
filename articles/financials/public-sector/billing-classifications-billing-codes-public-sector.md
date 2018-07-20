@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Billing classifications and billing codes in the public sector
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Public-sector organizations can use billing classifications and billing codes to help manage free text invoices. 
 

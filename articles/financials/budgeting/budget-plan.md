@@ -2,10 +2,10 @@
 # required metadata
 
 title: Budget planning
-description: The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel 
-author: twheeloc
+description: The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration. 
+author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,11 +13,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10763
@@ -32,15 +31,20 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Budget planning
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
+The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks:
+- Creating organizational hierarchy for budget planning and configuring user security
+- Defining budget plan scenarios, budget plan columns, layouts and Excel templates
+- Creating and activating budget planning process
+- Creating budget plan document by pulling in actuals from General ledger
+- Using allocations to adjust budget plan document data
+- Editing budget plan document data in Excel 
 
-The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel 
-
-Prerequisites 
+Prerequisites 
 ------------------
 
-For this tutorial, you’ll need to access the Finance and Operations environment with Contoso demo data, and be provisioned as an administrator on the instance. Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with Finance and Operations administrator credentials. When signing into Finance and Operations, you **MUST** check the “Keep me signed in” checkbox. This creates a persistent cookie that the Excel App currently needs. If you sign in to the Finance and Operations using a browser other than IE, then you’ll be prompted to sign in within the Excel App. When you click “Sign in” in the Excel App, an IE popup window will open and when signing in you **MUST** check the “Keep me signed in” checkbox. If clicking “Sign in” in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.
+For this tutorial, you’ll need to access the Finance and Operations environment with Contoso demo data, and be provisioned as an administrator on the instance. Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with Finance and Operations administrator credentials. When signing into Finance and Operations, you **MUST** check the “Keep me signed in” checkbox. This creates a persistent cookie that the Excel App currently needs. If you sign in to the Finance and Operations using a browser other than IE, then you’ll be prompted to sign in within the Excel App. When you click “Sign in” in the Excel App, an IE popup window will open and when signing in you **MUST** check the “Keep me signed in” checkbox. If clicking “Sign in” in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.
 
 ## **Scenario overview**
 Julia works as a finance manager in Contoso Entertainment Systems in Germany (DEMF). As FY2016 approaches, she needs to work on setting up the company’s budget for the upcoming year. Budget preparation looks as follows:
@@ -57,10 +61,9 @@ Julia uses the following Excel template to prepare the budget:
 
 [![Excel template](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
-Exercise 1: Configuration
-=========================
+## Exercise 1: Configuration
 
-## **Task 1: Create organizational hierarchy**
+### **Task 1: Create organizational hierarchy**
 As all the budgeting process happens in the Finance department, therefore Julia needs to create a very simple organizational hierarchy – consisting of Finance department only. 1.1. Navigate to Organization hierarchies (Organization administration &gt; Organizations &gt; Organization hierarchies) and click New button
 
 ![Org hierarchy](./media/screenshot3.png) 
@@ -89,7 +92,7 @@ As all the budgeting process happens in the Finance department, therefore Julia 
 
 [![Effective date](./media/screenshot9.png)](./media/screenshot9.png)
 
-## Task 2: Configure user security
+### Task 2: Configure user security
 Budget planning uses special security policies to configure access to budget plans data. Julia needs to give access to Finance budget plans for herself. 
 
 2.1. Switch to DEMF legal entity context. 
@@ -111,9 +114,7 @@ Budget planning uses special security policies to configure access to budget pla
 
 ***Important!*** *Make sure you are in DEMF legal entity context when performing this task, as Organizational security is applied per legal entity* 
 
-[![Grant access](./media/screenshot14.png)](./media/screenshot14.png)
-
-## Task 3: Create scenarios
+### Task 3: Create scenarios
 3.1. Navigate to Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration. In the Scenarios page note the scenarios we are going to use further in this lab: Previous year actuals and Budgeted. 
 
 *Note: You can create new scenarios for this exercise if desired and use those instead.* 
@@ -122,7 +123,7 @@ Budget planning uses special security policies to configure access to budget pla
 
 *Note: as Julia is not using formal approval process for budget preparation, we will skip Workflows, Stages and Workflow stages setup in this lab and will use existing setup for Auto – approve workflow. See appendix for this workflow configuration.*
 
-## Task 4: Create budget plan columns
+### Task 4: Create budget plan columns
 Budget plan columns are either Monetary or quantity based columns that can be used in budget plan document layout. In our example we need to create a column for Previous year actuals and 12 columns to represent each month in a budgeted year. Columns can be created either by simply clicking Add button and filling in the values, or with a help of Data entity. In this lab we will use Data entity to fill in the values. 
 
 4.1. In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Columns page. Click Office button on the top right corner of the form and pick Columns (unfiltered) 
@@ -155,7 +156,7 @@ Budget plan columns are either Monetary or quantity based columns that can be us
 
 [![Refresh](./media/screenshot23.png)](./media/screenshot23.png)
 
-## Task 5: Create budget plan document layouts and templates
+### Task 5: Create budget plan document layouts and templates
 Layout defines how budget plan document lines grid is going to look like when user opens budget plan document. It is also possible to switch the layout for budget plan document to see the same data in different angles. Now, as she’s got columns defined to be used with our budget plan document, Julia needs to create a budget plan document layout, that would look similar to the Excel table she uses to create budget data (see section Scenario overview in this lab) 
 
 5.1. In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Layouts page. Create a new layout for Monthly budget entry:
@@ -176,7 +177,7 @@ Based on the budget plan layout definition we can create an Excel template to be
 5.3. &lt; Optional step&gt; Modify Excel template to make it look more user friendly – add total formulas, header fields, formatting, etc. Save the changes and upload the file to budget plan layout by clicking Layout &gt; Upload 
 [![Upload](./media/screenshot26.png)](./media/screenshot26.png)
 
-## Task 6: Create a budget planning process
+### Task 6: Create a budget planning process
 Julia needs to create and activate a new budget planning process combining all the setup above to start entering budget plans. Budget planning process defines what budgeting organizations, workflow, layouts and templates will be used for creating budget plans. 
 
 6.1. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning process and create a new record.
@@ -197,10 +198,9 @@ Julia needs to create and activate a new budget planning process combining all t
 
 [![Activate](./media/screenshot28.png)](./media/screenshot28.png)
 
-Exercise 2: Process simulation
-==============================
+## Exercise 2: Process simulation
 
-## Task 7: Generate initial data for budget plan from General ledger
+### Task 7: Generate initial data for budget plan from General ledger
 7.1. Navigate to Budgeting &gt; Periodic &gt; Generate budget plan from General ledger. Fill in the periodic process parameters and click button Generate. 
 
 [![Generate](./media/screenshot29.png)](./media/screenshot29.png) 
@@ -213,7 +213,7 @@ Exercise 2: Process simulation
 
 [![Budget plan display](./media/screenshot31.png)](./media/screenshot31.png)
 
-## Task 8: Create current year budget based on previous year actuals
+### Task 8: Create current year budget based on previous year actuals
 Allocation methods can be used in budget plan to easily copy information for budget plans from one scenario to another/ spread them across periods/ allocate to dimensions. We will use allocations to create current year budget from previous year actuals. 
 
 8.1. Pick all lines in the budget plan document grid and click button allocate budget 
@@ -228,7 +228,7 @@ The previous year actual amounts will be copied to current year budget and alloc
 
 [![Sales curve](./media/screenshot34.png)](./media/screenshot34.png)
 
-## Task 9: Adjust budget plan document using Excel and finalize the document
+### Task 9: Adjust budget plan document using Excel and finalize the document
 9.1. Click Button worksheet to open document contents in Excel
 
 [![Excel](./media/screenshot35.png)](./media/screenshot35.png)
@@ -243,8 +243,7 @@ The previous year actual amounts will be copied to current year budget and alloc
 
 Once workflow completes, budget plan document stage changes to Approved. [![Approved](./media/screenshot38.png)](./media/screenshot38.png)
 
-Appendix
-========
+## Appendix
 
 ### Auto-Approve workflow configuration
 
@@ -264,7 +263,7 @@ B. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning co
 
 C. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration. In Workflow Stages tab Associate the workflow Auto – approve created in A step with the stages Initial and Submitted 
 
-[![Budgeting and budget planning](./media/screenshot42.png)](./media/screenshot42.png)  
+[![Budgeting and budget planning](./media/screenshot42.png)](./media/screenshot42.png)  
 
 
 

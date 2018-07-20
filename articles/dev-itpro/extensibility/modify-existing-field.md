@@ -33,6 +33,8 @@ ms.dyn365.ops.version: Platform update 4
 
 # Modify an existing field in a table
 
+[!include [banner](../includes/banner.md)]
+
 To modify properties on an existing field in a table, you must first create an extension for the table. You can modify the following properties:
 
 - **Label**

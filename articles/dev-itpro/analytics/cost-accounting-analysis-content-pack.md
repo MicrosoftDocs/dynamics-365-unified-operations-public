@@ -5,7 +5,7 @@ title: Cost accounting analysis Power BI content
 description: This topic describes what is included in the Cost accounting analysis Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost accounting analysis Power BI content
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes what is included in the **Cost accounting analysis** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
@@ -49,7 +49,9 @@ To learn more about Cost accounting, see [Cost accounting home page](../../finan
 By defining access-level security in Cost accounting and combining it with row-level security in Power BI, you can grant all cost object owners access to the **Cost accounting analysis** Power BI content. All data in the visualizations will then be filtered based on the access level that is controlled in Cost accounting. To learn more about access-level security and row-level security, see [Set up security for Cost accounting content for Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## Accessing the Power BI content
-You can find the **Cost accounting analysis** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+You can find the **Cost accounting analysis** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/). 
+
+<!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
 Be sure to download the **Cost accounting analysis** content that applies to the version of Microsoft Dynamics 365 that you're using.
 
@@ -116,17 +118,19 @@ The following table shows how the key aggregate measurements are used to create 
 
 The following key dimensions are used as filters to slice the aggregate measurements to achieve greater granularity and provide deeper analytical insights.
 
-| Entity                             | Examples of attributes                                                                                               |
+
+|               Entity               |                                                Examples of attributes                                                |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Cost accounting ledgers            | Cost accounting ledger                                                                                               |
-| Cost control units                 | Cost control unit name                                                                                               |
-| Cost element dimensions            | Cost elements dimension name, Cost element dimension member name, Cost element dimension member description          |
-| Cost object dimensions             | Cost object dimension name, Cost object dimension member name, Cost object dimension member description              |
-| Statistical dimensions             | Statistical dimension name, Statistical dimension member name, Statistical dimension member description              |
-| Cost object dimension hierarchies  | Cost object dimension hierarchy name, Cost object dimension hierarchy level, Cost object dimension hierarchy tree    |
+|      Cost accounting ledgers       |                                                Cost accounting ledger                                                |
+|         Cost control units         |                                                Cost control unit name                                                |
+|      Cost element dimensions       |     Cost elements dimension name, Cost element dimension member name, Cost element dimension member description      |
+|       Cost object dimensions       |       Cost object dimension name, Cost object dimension member name, Cost object dimension member description        |
+|       Statistical dimensions       |       Statistical dimension name, Statistical dimension member name, Statistical dimension member description        |
+| Cost object dimension hierarchies  |  Cost object dimension hierarchy name, Cost object dimension hierarchy level, Cost object dimension hierarchy tree   |
 | Cost element dimension hierarchies | Cost element dimension hierarchy name, Cost element dimension hierarchy level, Cost element dimension hierarchy tree |
-| Statistical dimension hierarchies  | Statistical dimension hierarchy name, Statistical dimension hierarchy level, Statistical dimension hierarchy tree    |
-| Transaction versions               | Version name                                                                                                         |
-| Fiscal calendars                   | Calendar, Calendar description                                                                                       |
-| Fiscal years                       | Calendar year                                                                                                        |
-| Fiscal periods                     | Calendar year period                                                                                                 |
+| Statistical dimension hierarchies  |  Statistical dimension hierarchy name, Statistical dimension hierarchy level, Statistical dimension hierarchy tree   |
+|        Transaction versions        |                                                     Version name                                                     |
+|          Fiscal calendars          |                                            Calendar, Calendar description                                            |
+|            Fiscal years            |                                                    Calendar year                                                     |
+|           Fiscal periods           |                                                 Calendar year period                                                 |
+

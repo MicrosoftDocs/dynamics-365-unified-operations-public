@@ -34,6 +34,8 @@ ms.dyn365.ops.version: Platform update 4
 
 # Modify properties on a form control
 
+[!include [banner](../includes/banner.md)]
+
 Often, the way that users interact with the application requires modification. Typically, you hide or disable controls on the page, replace standard labels with labels that are more appropriate, or even add new controls that the user requires. You can also create a form extension. 
 
 > [!TIP]

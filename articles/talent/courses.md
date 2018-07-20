@@ -3,7 +3,7 @@
 
 title: Set up training courses
 description: Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.
-author: twheeloc
+author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
+ms.reviewer: rschloma
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # Set up training courses
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.
 
@@ -85,16 +84,16 @@ The following table lists the three setup types for courses. Setup types determi
 
 ## Course tasks
 For each course, you can complete the following tasks.
--   Register participants
--   Specify a registration deadline
--   Define the minimum and maximum number of participants
--   Assign a course location and classroom
--   Recommend hotels to course participants
--   Create a course description, which you can then advertise on Employee self service
+- Register participants
+- Specify a registration deadline
+- Define the minimum and maximum number of participants
+- Assign a course location and classroom
+- Recommend hotels to course participants
+- Create a course description, which you can then advertise on Employee self service
 
   >**Note**
   >You can delete a course only if no one has registered for it. 
-    
+
 ## Course statuses
 The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.
 
@@ -140,7 +139,7 @@ Course participants are workers, applicants, or contact persons who participate 
 Workflow
 --------
 
-Employees who register for a course through the **Employee self service** page can have their registration routed through workflow for approval.  A workflow can be assigned to a course on the **General** FastTab on the **Courses** page.
+Employees who register for a course through the **Employee self service** page can have their registration routed through workflow for approval.  A workflow can be assigned to a course on the **General** FastTab on the **Courses** page.
 
 
 

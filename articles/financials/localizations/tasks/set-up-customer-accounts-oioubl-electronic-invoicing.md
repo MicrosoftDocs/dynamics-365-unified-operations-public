@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up customer accounts for OIOUBL electronic invoicing (Denmark)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This task walks you through how to set up a customer account for OIOUBL electronic invoicing. 
 

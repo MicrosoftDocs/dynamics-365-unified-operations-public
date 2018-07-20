@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up earning codes and earning code groups
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to set up earning codes and earning code groups. Earning codes uniquely identify every type of earning that workers receive. They include parameters that are related to earnings, such as accounting rules, tax laws, reporting requirements, and gross-up capability.
 
@@ -93,7 +92,7 @@ Each earning type should have a unique earning code. The following information i
 </tr>
 <tr class="odd">
 <td>Productive</td>
-<td>Select this option if the earning code is used for productive hours. Productive hours represent regular work hours, whereas nonproductive hours represent hours that weren't actually worked, such as vacation and sick pay hours. Hours that are worked, but that are accounted for under another earning code, are also considered nonproductive. This information is used in several benefit and tax calculations, such as the calculation of the regular-rate-of-pay premium that is required for overtime hours under the Fair Labor Standards Act (FLSA). For more information about premium earnings, see <a href="noam-usa-premium-earning-setup-tasks.md">Premium earning setup tasks</a>.</td>
+<td>Select this option if the earning code is used for productive hours. Productive hours represent regular work hours, whereas nonproductive hours represent hours that weren&#39;t actually worked, such as vacation and sick pay hours. Hours that are worked, but that are accounted for under another earning code, are also considered nonproductive. This information is used in several benefit and tax calculations, such as the calculation of the regular-rate-of-pay premium that is required for overtime hours under the Fair Labor Standards Act (FLSA). For more information about premium earnings, see <a href="noam-usa-premium-earning-setup-tasks.md">Premium earning setup tasks</a>.</td>
 </tr>
 <tr class="even">
 <td>Description</td>
@@ -135,12 +134,12 @@ The following information is entered on the **General** tab.
 <li>If you select <strong>Flat amount</strong>, the <strong>Amount or multiplier</strong> value is treated as a currency amount. Flat amounts are used when the earnings amount isn’t based on a worker’s fixed compensation. Here are some examples:
 <ul>
 <li>To pay a worker a recurring $500.00 car allowance, select <strong>Flat amount</strong> in the <strong>Rate basis</strong> field, and enter <strong>500.00</strong> in the <strong>Amount or multiplier</strong> field.</li>
-<li>To pay a worker 25 cents for each piece that is produced, select <strong>Flat amount</strong> in the <strong>Rate basis</strong> field, and enter <strong>.25</strong> in the <strong>Amount or multiplier</strong> field.</li>
+<li>To pay a worker 25 cents for each piece that is produced, select <strong>Flat amount</strong> in the <strong>Rate basis</strong> field, and enter <strong>.25</strong> in the <strong>Amount or multiplier</strong> field.</li>
 </ul></li>
 <li>If you select <strong>Hourly</strong>, <strong>Pay period</strong>, <strong>Monthly</strong>, or <strong>Annually</strong>, the earning rate is calculated by using the workers’ compensation settings. This calculation is based on the time frame of the rate basis. The calculated fixed compensation for the worker is multiplied by the <strong>Amount or multiplier</strong> value to determine the earning rate. The rate is then multiplied by the quantity on the earnings statement line to determine the amount. Here are some examples:
 <ul>
 <li>To set up an earning code for double-time pay for hourly workers, select <strong>Hourly</strong> in the <strong>Rate basis</strong> field, and enter <strong>2</strong> in the <strong>Amount or multiplier</strong> field. If the calculated hourly equivalent for the worker on the <strong>Employee fixed compensation</strong> page is $35.00, the worker receives 70.00 for each hour that is logged for this earning code.</li>
-<li>To set up a 1-percent uniform allowance that is paid each pay period, select <strong>Pay period</strong> in the <strong>Rate basis</strong> field, and enter <strong>.01</strong> in the <strong>Amount or multiplier</strong> field. The worker then receives 1 percent of his or her pay each pay period.</li>
+<li>To set up a 1-percent uniform allowance that is paid each pay period, select <strong>Pay period</strong> in the <strong>Rate basis</strong> field, and enter <strong>.01</strong> in the <strong>Amount or multiplier</strong> field. The worker then receives 1 percent of his or her pay each pay period.</li>
 </ul></li>
 <li>If <strong>Retroactive</strong> is selected, the earning code is set up for retroactive pay. This option is available only if the <strong>Retroactive earning</strong> option is selected.</li>
 <li>If <strong>Percent of earnings</strong>, <strong>Hours of earnings</strong>, or <strong>Regular rate of pay</strong> is selected, select an earning code group in the <strong>Basis earning code group</strong> field. These rate bases are most often used to generate premium earnings. For more information, see <a href="noam-usa-premium-earning-setup-tasks.md">Premium earning setup tasks</a>.</li>
@@ -181,11 +180,11 @@ For information about how to use earning code groups to generate premium earning
 </tr>
 <tr class="even">
 <td>Fringe benefit type</td>
-<td>The benefits that the worker is taxed on, even if the worker doesn't receive any direct compensation for them, such as life insurance and health benefits.</td>
+<td>The benefits that the worker is taxed on, even if the worker doesn&#39;t receive any direct compensation for them, such as life insurance and health benefits.</td>
 </tr>
 <tr class="odd">
 <td>Retroactive earning code</td>
-<td>This field is used to associate a non-retroactive earning code with an earning code that will retroactively adjust the processed earning lines that use this code. <strong>Note:</strong> This field is optional. It's available only if the <strong>Retroactive earning</strong> option is cleared.</td>
+<td>This field is used to associate a non-retroactive earning code with an earning code that will retroactively adjust the processed earning lines that use this code. <strong>Note:</strong> This field is optional. It&#39;s available only if the <strong>Retroactive earning</strong> option is cleared.</td>
 </tr>
 <tr class="even">
 <td>Gross up earning code</td>
@@ -199,10 +198,10 @@ For information about how to use earning code groups to generate premium earning
 <td>Base definition</td>
 <td>Select how the earning code is used to calculate workers’ compensation and general liability insurance. The following options are available:
 <ul>
-<li><strong>Not applicable</strong> – The earnings that are associated with this earning code aren't used in the calculation.</li>
-<li><strong>Base time</strong> – The calculations use 100 percent of the earnings.</li>
-<li><strong>Time and a half</strong> – The calculations use 150 percent of the earnings.</li>
-<li><strong>Double time</strong> – The calculations use 200 percent of the earnings.</li>
+<li><strong>Not applicable</strong> – The earnings that are associated with this earning code aren&#39;t used in the calculation.</li>
+<li><strong>Base time</strong> – The calculations use 100 percent of the earnings.</li>
+<li><strong>Time and a half</strong> – The calculations use 150 percent of the earnings.</li>
+<li><strong>Double time</strong> – The calculations use 200 percent of the earnings.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -246,9 +245,9 @@ You can assign earning codes to groups when you create them, or you can assign a
 On the **Earning code groups** tab of the **Earning codes** page, you can see each group that an earning code belongs to. Additionally, on the **Earning codes** tab of the **Earning code groups** page, you can see each earning code that belongs to the selected group.
 
 ## Next step
-The next step is to set up schedules, leave types, and benefit accrual plans. For more information, see [Work schedule and leave tasks](noam-usa-work-schedule-leave-tasks.md) and [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md).  
+The next step is to set up schedules, leave types, and benefit accrual plans. For more information, see [Work schedule and leave tasks](noam-usa-work-schedule-leave-tasks.md) and [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md).  
 
-See also
+Additional resources
 --------
 
 [Generate earnings](noam-usa-generate-earnings.md)

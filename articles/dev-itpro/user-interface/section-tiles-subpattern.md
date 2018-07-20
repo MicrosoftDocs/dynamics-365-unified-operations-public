@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Section Tiles subpattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Section Tiles subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for the first panorama section (the Summary section) that contains a set of tiles, charts, and singleton cards. 
 
@@ -56,7 +55,7 @@ This pattern didn't exist for Microsoft Dynamics AX 2012.
     - *TileButton (TileButton) \[0..N\]*
     - *TargetForm (FormPart) \[0..N\]*
 
-The Form Parts are used to embed Charts or singleton Cards into the **Summary** section of the workspace. Each form that represents a Chart should use the [Section Chart](section-chart-form-pattern.md) form pattern.
+The Form Parts are used to embed Charts or singleton Cards into the **Summary** section of the workspace. Each form that represents a Chart should use the [Section Chart](section-chart-form-pattern.md) form pattern.
 
 ### Core components
 
@@ -68,13 +67,13 @@ Apply Section Tiles to the first tab page in the Operational Workspace.
 -   [Section Chart](section-chart-form-pattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 -   The **Summary** section should be named "Summary" or a variant that qualifies the word “Summary.”
 -   No two tiles in the workspace should have the same symbol.
--   There should be a maximum of one "New" tile.
+-   There should be a maximum of one "New" tile.
 -   Chart sizes should correspond to multiples of tile sizes.
-    -   Available sizes include 1 tile tall × 2 tiles wide, 2 × 2, 2 × 3, 2 × 4, 2 × 6, 4 × 4, 4 × 6, and 4 × 8.
+    -   Available sizes include 1 tile tall × 2 tiles wide, 2 × 2, 2 × 3, 2 × 4, 2 × 6, 4 × 4, 4 × 6, and 4 × 8.
 
 ## Examples
 Form: **PurchOrderMaintainWorkspace** (**All workspaces** &gt; **Purchase order preparation** (see the **Summary** section)

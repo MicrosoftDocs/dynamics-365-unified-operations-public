@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # Multi-Lookup 
+
+[!include [banner](../../../../includes/banner.md)]
+
 Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.
 
 ## Index

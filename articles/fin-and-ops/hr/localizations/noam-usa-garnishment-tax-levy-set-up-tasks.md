@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up garnishments and tax levies
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to set up garnishments and tax levies. Garnishments and tax levies are created and managed by using the benefit framework. This framework helps guarantee that the effect that garnishments and tax levies have on payroll is handled correctly.
 
@@ -55,7 +54,7 @@ When the court imposes an order to garnish a worker's wages, the actual amount o
 
 Under the federal formula, voluntary deductions (for example, deductions for life insurance, union dues, and retirement plan contributions) aren't subtracted from earnings. The federal formula has been built into the Payroll system. 
 
-Many states use the federal definition of disposable income. However, some states have their own definition that exempts some additional earnings from total wages and subtracts other deductions, to further reduce what is considered disposable income. You don't have to create a definition by using the federal formula. (The federal formula is built into the Payroll calculations.) However, you must create additional disposable income definitions to comply with each state's formula. 
+Many states use the federal definition of disposable income. However, some states have their own definition that exempts some additional earnings from total wages and subtracts other deductions, to further reduce what is considered disposable income. You don't have to create a definition by using the federal formula. (The federal formula is built into the Payroll calculations.) However, you must create additional disposable income definitions to comply with each state's formula. 
 
 **Important:** State definitions are subject to change every year. Because it can be difficult to match your organization's earning codes and benefits to the definitions that are used by a specific state, we recommend that your legal advisors determine the earning codes and benefits that must be included in each disposable income definition. We also recommend that your legal advisors review the definitions every year. 
 
@@ -114,7 +113,7 @@ You set up benefit types for garnishments, tax levies, and administrative fees o
 <li>For tax levies, select <strong>Tax levy</strong>.</li>
 <li>Optional: For administrative fees, select <strong>Standard</strong>.</li>
 </ul>
-The payroll category helps guarantee that the benefit follows the processing requirements that the government defines for garnishments or tax levies. The payroll category also determines which settings are available in the <strong>Plans</strong> area of this page. Settings that don't apply to the selected payroll category aren't available.</td>
+The payroll category helps guarantee that the benefit follows the processing requirements that the government defines for garnishments or tax levies. The payroll category also determines which settings are available in the <strong>Plans</strong> area of this page. Settings that don&#39;t apply to the selected payroll category aren&#39;t available.</td>
 </tr>
 </tbody>
 </table>
@@ -161,11 +160,11 @@ On the **Payroll details** FastTab, enter the following information.
 <tbody>
 <tr class="odd">
 <td>Lock pay statement</td>
-<td>Select this option to prevent changes to pay statement lines that include the garnishment or tax levy. When this option is selected, you can add lines that include the garnishment or tax levy to the pay statement, or delete them from the pay statement. However, you can't change the garnishment or tax levy lines that are on the pay statement. If you don't select this option, you can change garnishment and tax levy lines directly on the pay statement.</td>
+<td>Select this option to prevent changes to pay statement lines that include the garnishment or tax levy. When this option is selected, you can add lines that include the garnishment or tax levy to the pay statement, or delete them from the pay statement. However, you can&#39;t change the garnishment or tax levy lines that are on the pay statement. If you don&#39;t select this option, you can change garnishment and tax levy lines directly on the pay statement.</td>
 </tr>
 <tr class="even">
 <td>Deduction method</td>
-<td>By default, this field is set to <strong>Partial</strong>. When the <strong>Partial</strong> deduction method is used, part of the garnishment amount is automatically deducted from a worker's pay if the whole amount can't be deducted legally.</td>
+<td>By default, this field is set to <strong>Partial</strong>. When the <strong>Partial</strong> deduction method is used, part of the garnishment amount is automatically deducted from a worker&#39;s pay if the whole amount can&#39;t be deducted legally.</td>
 </tr>
 <tr class="odd">
 <td>Payroll types</td>
@@ -179,7 +178,7 @@ Deductions for the garnishment or tax levy are included in payroll runs of the s
 </tr>
 <tr class="even">
 <td>Deduction priority</td>
-<td>This field determines the order that the garnishment or tax levy is deducted from pay in, relative to other deductions. The default value is <strong>100</strong>. Don't change the default value on this page. Instead, to adjust the value, you must use the <strong>Maintain benefits</strong> page for each worker when the worker is enrolled in the garnishment or tax levy.</td>
+<td>This field determines the order that the garnishment or tax levy is deducted from pay in, relative to other deductions. The default value is <strong>100</strong>. Don&#39;t change the default value on this page. Instead, to adjust the value, you must use the <strong>Maintain benefits</strong> page for each worker when the worker is enrolled in the garnishment or tax levy.</td>
 </tr>
 <tr class="odd">
 <td>Limit period Limit amount</td>
@@ -221,7 +220,7 @@ Next, on the **Eligibility rules** FastTab, change the eligibility from **All wo
 
 **Note:** When eligibility is set to **Bypass eligibility process**, eligibility overrides have no effect. Therefore, you can skip the fields on the **Eligibility overrides** FastTab. 
 
-Next, on the **Payroll details** FastTab, enter the following payroll information. The values that you enter here are used as default values when you enroll a worker in the garnishment or tax levy.
+Next, on the **Payroll details** FastTab, enter the following payroll information. The values that you enter here are used as default values when you enroll a worker in the garnishment or tax levy.
 
 | Field                         | Description                    |
 |-------------------------------|--------------------------------|
@@ -235,9 +234,9 @@ Finally, on the **Earning basis** FastTab, enter the earning codes that can be i
 **Caution:** You can't change the list of earning codes on the **Maintain benefits** page for a specific worker. However, you can change the basis. If you change the basis to **Percent of earnings**, but no earning codes are entered here, the calculated amount of the deduction for the garnishment or tax levy is 0 (zero).
 
 ## Next step
-The next step is to enroll workers in garnishments and tax levies. For more information, see [Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md).    
+The next step is to enroll workers in garnishments and tax levies. For more information, see [Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md).    
 
-See also
+Additional resources
 --------
 
 [Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md)

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: JMGParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -33,12 +33,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Retail time and attendance
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Retail. 
 
-Manage worker setup and scheduling
+Manage worker setup and scheduling
 ----------------------------------
 
 ### Initial configuration
@@ -50,7 +49,7 @@ Manage worker setup and scheduling
 
 -   Apply profiles by using the work planner. For more information, see <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
 
-For information about the configuration steps, see <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
+For information about the configuration steps, see <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
 
 ### Retail-specific configuration
 
@@ -58,7 +57,7 @@ For information about the configuration steps, see <https://technet.microsoft.c
 -   Configure point of sale (POS) permissions groups to enable the View timeclock entries permission. This permission lets a user view the time clock registrations of other workers in the store (and from any other store that the user is associated with, via the address book). You might want to enable this permission for a manager role but not for a cashier role. Click **POS permission groups** &gt; **View time clock entries**.
 
 ## Register time
-### Cashier and non-cashier time registrations
+### Cashier and non-cashier time registrations
 
 -   On POS:
     -   Clock-in operations:
@@ -106,7 +105,7 @@ For information about the configuration steps, see <https://technet.microsoft.c
     </table>
 
     [![TimeClockStates](./media/timeclockstates.png)](./media/timeclockstates.png)
--   View the confirmation message, and validate that the current activity time is correct.
+-   View the confirmation message, and validate that the current activity time is correct.
 -   Logbook:
     -   Click **Logbook** to view time clock activity.
     -   Use time filters to select different time windows.
@@ -115,10 +114,10 @@ For information about the configuration steps, see <https://technet.microsoft.c
 <!-- -->
 
 -   Different time zones:
-    -   If you view time from a different location (for the cashier logbook, or by using **View timeclock entries** for a manager scenario), and that location is in a different time zone, the time records that you see are converted to your local time zone. For example, you are a manager for two stores, one in Arizona and the other in Nevada. A cashier registers a clock-in at 9:00 A.M. in Arizona. At that moment, the time in Nevada is 8:00 A.M. Therefore, if you are in the Nevada store and look at time registration records, the time registration is marked as 8 A.M.
+    -   If you view time from a different location (for the cashier logbook, or by using **View timeclock entries** for a manager scenario), and that location is in a different time zone, the time records that you see are converted to your local time zone. For example, you are a manager for two stores, one in Arizona and the other in Nevada. A cashier registers a clock-in at 9:00 A.M. in Arizona. At that moment, the time in Nevada is 8:00 A.M. Therefore, if you are in the Nevada store and look at time registration records, the time registration is marked as 8 A.M.
 
 ## View worker time registrations
-### View worker time registrations, and filter by store or activity type
+### View worker time registrations, and filter by store or activity type
 
 On POS:
 

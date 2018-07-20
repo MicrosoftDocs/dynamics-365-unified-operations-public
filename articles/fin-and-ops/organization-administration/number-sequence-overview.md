@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: NumberSequenceTableListPage, NumberSequenceConfiguration
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Number sequences
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. A master data record or transaction record that requires an identifier is referred to as a *reference*.
 
@@ -102,7 +101,7 @@ In the following example, purchase requisition numbers are organization-wide.
 
 **Example of formatted number**: Req0052 
 
-Because the scope is **Shared**, the number sequence format is used across the organization. You cannot set up different number sequence formats for different parts of the organization. 
+Because the scope is **Shared**, the number sequence format is used across the organization. You cannot set up different number sequence formats for different parts of the organization. 
 
 Performance considerations for number sequences
 -----------------------------------------------

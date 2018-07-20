@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Packing materials and fees
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Packing material fees are paid to a recycling company at certain intervals. An amount is paid, per unit of weight, for each material that a packing unit consists of. Packing material fees are calculated and reported, but no ledger transactions are posted because the fees are not regarded as taxes to be paid to an authority.
 
@@ -66,7 +65,7 @@ If your company pays the packaging material fees, do not specify the customer li
 
 ## Print packaging material weights on invoices
 You can print the packaging material weights on the invoice, and indicate who pays the packaging material fees. The weights are summarized by packaging code.
- 
+
 
 
 

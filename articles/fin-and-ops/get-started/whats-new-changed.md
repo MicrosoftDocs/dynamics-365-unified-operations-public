@@ -5,7 +5,7 @@ title: What's new or changed
 description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 06/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,14 +32,14 @@ ms.dyn365.ops.version: Platform update 2
 
 # What's new or changed
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
-> [!NOTE]
-> Dynamics 365 for Operations (on-premises) is currently being renamed. You will see Dynamics 365 for Operations (on-premises) referenced throughout communications and licensing guides. The in-product name that you will see when deploying the product is Dynamics 365 for Finance and Operations, Enterprise edition. Both of these names refer to the same product.
+
+[!include [release notes](../includes/release-notes.md)]
 
 ## Application releases
 
@@ -64,6 +64,20 @@ For information about how to upgrade to the latest version, see [Process for upg
 <tr class="even">
 
 </tr>
+<tr class="even">
+<tr class="even">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>8.0</td>
+<td>8.0.30, 8.0.35</td>
+<td>April 2018</td>
+  <td><a href="whats-new-changed-8-0-April-2018.md">What&#39;s new or changed in Dynamics 365 for Finance and Operations version 8.0 (April 2018)</a></td>
+</tr>
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>7.3</td>
+<td>7.3.11971.56116</td>
+<td>December 2017</td>
+<td><a href="whats-new-application-7.3-update.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition 7.3</a></td>
+</tr></tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>July 2017</td>
@@ -116,6 +130,18 @@ For information about how to upgrade to the latest version, see [Process for upg
 </thead>
 <tbody>
 <tr class="odd">
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Platform update 15</td>
+<td>7.0.4841</td>
+<td>March 2018</td>
+<td><a href="whats-new-platform-update-15.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 15 (March 2018)</a></td><tbody>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Platform update 12</td>
+<td>7.0.4709</td>
+<td>November 2017</td>
+<td><a href="whats-new-platform-update-12.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12 (November 2017)</a></td>
+<tbody><tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>Platform update 11</td>
 <td>7.0.4679.35176</td>

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Submit and approve project budget revisions
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure provides information about revising a project budget. You can revise a project budget as many times as necessary, however you can't see the amount of an individual revision if the budget has been revised more than one time. 
 

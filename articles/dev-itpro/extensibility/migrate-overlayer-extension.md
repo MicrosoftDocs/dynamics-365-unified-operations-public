@@ -5,7 +5,7 @@ title: Migrate from overlayering to extensions
 description: This topic provides information about migration from customizations that are based on overlayered code to customizations that are based on extensions.
 author: FrankDahl
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,11 +31,13 @@ ms.dyn365.ops.version: Platform update 9
 
 # Migrate from overlayering to extensions
 
+[!include [banner](../includes/banner.md)]
+
 ## Introduction
 
-When Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, was first released, we strongly recommended that extensions be used instead of overlayering for customization. Overlayering-based customizations have been migrated from release to release through code migrations, and many customizations of application code are still based on the overlayering of code. For most partners, at least some of their solution is still based on overlaying, and some partners will have lots of overlayering across their solutions.
+When Microsoft Dynamics 365 for Finance and Operations was first released, we strongly recommended that extensions be used instead of overlayering for customization. Overlayering-based customizations have been migrated from release to release through code migrations, and many customizations of application code are still based on the overlayering of code. For most partners, at least some of their solution is still based on overlaying, and some partners will have lots of overlayering across their solutions.
 
-The amount of work that is required in order to change an implementation from overlayered code to extensions depends on the code itself. Some overlayered code can be changed relatively seamlessly. However, for some changes, you must rethink the customization to find an appropriate way to accomplish it through extension. Therefore, it can be a major undertaking to change complete solutions where multiple places have overlayered code. Such an undertaking requires an investment in the solution. The upside of this investment is a more seamless upgrade process, because customization is now based on application programming interfaces (APIs) through extensions. Additionally, a lengthy code upgrade process is no longer required as it was for overlayered code. More importantly, daily servicing of a running environment offers many benefits. The core application and extensions no longer have to be compiled together, and patching can be done by deploying precompiled assemblies. Therefore, customers can apply patches to their system in a relatively seamless manner, and the amount of downtime is minimized. However, there is work that must be done before this result can be achieved.
+The amount of work that is required to change an implementation from overlayered code to extensions depends on the code itself. Some overlayered code can be changed relatively seamlessly. However, for some changes, you must rethink the customization to find an appropriate way to accomplish it through extension. Therefore, it can be a major undertaking to change complete solutions where multiple places have overlayered code. Such an undertaking requires an investment in the solution. The upside of this investment is a more seamless upgrade process, because customization is now based on application programming interfaces (APIs) through extensions. Additionally, a lengthy code upgrade process is no longer required as it was for overlayered code. More importantly, daily servicing of a running environment offers many benefits. The core application and extensions no longer have to be compiled together, and patching can be done by deploying precompiled assemblies. Therefore, customers can apply patches to their system in a relatively seamless manner, and the amount of downtime is minimized. However, there is work that must be done before this result can be achieved.
 
 Although there are multiple ways to approach this task, we have gained experience through our close work with independent software vendors (ISVs) and value-added resellers (VARs) that have already started to migrate from overlayering to extensions. In this topic, we share some of this experience.
 
@@ -65,7 +67,7 @@ When you create an overview of your code, first consider analyzing each of your 
 
 We have gained practical experience both with ISVs that take each ISV solution in turn, and with ISVs that work as VARs and take customer solutions later.
 
-No matter how the work is pieced up in solutions, you can use the [Customization Analysis Report (CAR)](..\dev-tools\customization-analysis-report.md) to get information about what has been overlayered. This report is generated when you submit your solutions to the Code Migration tool on Microsoft Dynamics Lifecycle Services (LCS). The report is in Microsoft Excel format and includes a list of all places that have overlayered code. You can use the report to both analyze and categorize all overlayered instances in your solution.
+No matter how the work is pieced together in solutions, you can use the [Customization Analysis Report (CAR)](../dev-tools/customization-analysis-report.md) to get information about what has been overlayered. This report is generated when you submit your solutions to the Code Migration tool on Microsoft Dynamics Lifecycle Services (LCS). The report is in Microsoft Excel format and includes a list of all the places that have overlayered code. You can use the report to both analyze and categorize all overlayered instances in your solution.
 
 To obtain an overview, you might find it helpful to categorize each overlayered instance. The category that you apply to an overlayered instance should represent the approximate effort that is required in order to change the customization to extensions. Some customizations will be easily changed to extensions. However, for other customizations, the change will be more difficult.
 
@@ -76,16 +78,15 @@ From our experience working with numerous ISVs, we have found that the following
 | Extensible enums | You can add new enum values by using extensions. For more information, see [Add an enum value](add-enum-value.md). |
 | Construct with throw | Most construct methods are simple and can be extended by using post-event handlers. However, some construct methods are more complex and throw an exception when no class is created. |
 | Exposing members | Member variables that have the **private** access modifier in their definition can't be accessed through extensions unless they become exposed through public methods. You can request that we add access to members through extensions that currently have not been exposed for this. Note that access to protected members is generally enabled through extension classes. |
-| Data manipulation methods that don't raise DataEvents | In some places in the application, data methods such as **insert()** and **update()** don't call **super()**. Therefore, the methods don't raise DataEvents to add extensions to. Microsoft plans to refactor the standard application so that it includes additional methods that enable extensions in these places. If you submit a request for us to add this, add any of the affected methods that you must currently overlayer, if those methods haven't already been accounted for. |
-| Hookable methods | Methods that have the **private** access modifier in their definition can't be extended. |
-| Inline delegates | This category is for code changes in the middle of methods, which can't be made through either pre-event handlers or post-event handlers, and also can't be made through extension classes. When you request an inline delegate, be sure to specify which variables are critical for your extension. |
+| Data manipulation methods that don't raise DataEvents | In some places in the application, data methods such as **insert()** and **update()** don't call **super()**. Therefore, the methods don't raise DataEvents to add extensions to. Microsoft plans to refactor the standard application so that it includes additional methods that enable extensions in these places. If you submit a request for Microsoft to add this, add any of the affected methods that you must currently overlayer, if those methods haven't already been accounted for. |
+| Extract method | This category is for code changes in the middle of methods, which can't be made through chain of command. When you request a method extraction, be sure to specify which lines of a method to extract, and what the signature of the new method must be. |
 | SQL statement operations | SQL statements that are written directly in the application code don't enable extensions. When you make a request to extend these SQL statements, be sure to explicitly specify what you must extend, such as a field list, **where** clauses, or ordering. |
 | Metadata overlayering | Provide the Application Object Tree (AOT) path of the element where you believe the metadata (property value) must be changed. Metadata changes can't be made through the current extension capabilities. |
-| Method overlayering | This category is for customizations where a method is overlayered. You should consider converting the overlayed method to an extension, so that changes are clean as by extension not substitution. |
+| Method overlayering | This category is for customizations where a method is overlayered. You should consider converting the overlayed method to an extension, so that changes are clean by extension not substitution. |
 | Method signature changes | The capability to change method signatures through overlayering will be discontinued. Other patterns for achieving similar results are required. You can request changes to the standard signature to support extensibility. Be sure to include information about additional parameters that are required. |
 | Inventory dimensions | You can no longer add dimensions by editing the macro and recompiling the standard application. Another approach will be offered that involves predefined dimensions that are deployed at runtime. This approach drives changes to existing customizations where new dimensions are added. |
 | Extensibility platform  | Some customizations might not be possible through extensions unless new platform features are added. If you determine that customizations can't currently be done through extensions, open an extensibility request that explains the scenario and what is required. |
-| Reports  | Customizations of reports designs have limited support for extensibility. In general, a new report must be created. Data provider classes can also be customized so that they include additional information. In some places, the standard application must be changed to enable this type of customization. |
+| Reports  | Customizations of report designs have limited support for extensibility. In general, a new report must be created. Data provider classes can also be customized so that they include additional information. In some places, the standard application must be changed to enable this type of customization. |
 | Other  | This category is for overlayering instances that don't fit into any other category. |
 
 By categorizing all overlaying code, you gain an overview of what must be changed.
@@ -94,24 +95,24 @@ By categorizing all overlaying code, you gain an overview of what must be change
 
 In a typical approach to assessing work impact, you break down tasks into something tangible. This approach also applies to this work. The categories that were discussed in the previous section help frame similar customizations, and a first pass on estimates can be built by coming up with an overall estimate for each of these categories and similar categories that make up your solution. The group of customizations in a given category often has a few extremes that stand out, and it might be appropriate to establish estimates for these customizations individually.
 
-Consider that some customizations will require either a request to Microsoft to enable extensibility or significant refactoring of the customization so that it can be done through extensibility. Both these scenarios will increase the estimates for migrating the solution.
+Consider that some customizations will require either a request to Microsoft to enable extensibility or significant refactoring of the customization so that it can be done through extensibility. Both of these scenarios will increase the estimates for migrating the solution.
 
 Customization that drives what are referred to as intrusive changes is often more complex to convert to extensions. For these changes, you must consider what is the correct way to approach the customization. Here are some examples of these changes:
 
-+ Customizations that request inline delegates 
-+ Customizations of complex classes or methods such as **SalesLinetype**
-+ Changes to method signatures
-+ Additions of inventory dimensions
-+ Changes to report definitions and report data provider classes
-+ Intrusive changes to forms
++ Customizations that request inline delegates. 
++ Customizations of complex classes or methods such as **SalesLinetype**.
++ Changes to method signatures.
++ Additions of inventory dimensions.
++ Changes to report definitions and report data provider classes.
++ Intrusive changes to forms.
 
 For changes that require different approaches to make the customizations extension-based, you might have to log requests to Microsoft to enable extensibility. When creating your migration schedule, you'll need to take into account the delay of waiting for updates from Microsoft.
 
 ## What is supported, and what requires an extensibility request?
 
-When you review a customization, be sure to consider different options for converting it to an extension. Be sure to consider whether a method is hookable, or whether it can be a class extension or form event. Review most of the currently available application code that is available to you. This code includes planned monthly Community Technology Previews (CTP) drops that are released as downloadable virtual hard disks (VHDs).
+When you review a customization, be sure to consider different options for converting it to an extension. Be sure to consider whether a method is hookable, or whether it can be a class extension or form event. Review most of the currently available application code that is available to you. 
 
-You might conclude that a change to the standard application is required in order to enable the required extension. In this case, you must log an extensibility request through the Connect feedback program. The request is then put into the backlog at Microsoft so that it can be addressed. Don't log extensibility requests by opening requests for hotfix, because Microsoft doesn't release extensibility requests as hotfixes.
+You might conclude that a change to the standard application is required in order to enable the required extension. In this case, you must [log an extensibility request](extensibility-requests.md)  The request is then put into the backlog at Microsoft so that it can be addressed. Don't log extensibility requests by opening a request for a hotfix, because Microsoft doesn't release extensibility requests as hotfixes.
 
 Be sure to supply enough contextual information in your extensibility requests. For example, a request for an inline delegate might come from the current customization approach. However, to better accommodate extension, the requirement that led to this customization might be better served by a structural change to the standard application. We appreciate suggestions of this type, because they help move the application toward a better platform for building different customizations.
 
@@ -119,8 +120,6 @@ Be sure to supply enough contextual information in your extensibility requests. 
 
 Be sure to start planning the migration of your solutions early. This planning is important because it helps you make sure that you have room in your schedules to identify and log extensibility requests, and that you have room for the time delay before these requests become available in product releases. Additionally, acknowledge that your developers might have to build new skills, and make sure that you cater to any required learning as part of the migration plan.
 
-We plan to release CTP drops regularly as VHD downloads. Those downloads will include up-to-date application code. The general idea is that you will be able to work concurrently with Microsoft toward the next release. This approach helps minimize the time lag between the date when the new release is made publicly available and the date when your solution is ready for deployment.
-
 Your solution might contain intrusive customizations that aren't easily accommodated through extensions. You should consider whether the business value of these customizations outweighs the effort of building them through extensions. In some cases, partners have decided to discontinue parts of their solutions, because they found that it was impractical to rebuild those parts through extensions, and those parts weren't critical to the solutions.
 
-Some smaller fixes that you're customizing across the application might not be core for your solution, but they are important for the customers that you engage with. In these cases, you must decide whether you prefer to ask Microsoft to implement similar capabilities in the standard application. You can enter an extensibility requests for this purpose. For example, if customers want to simplify standard business processes in the system, you might suggest that we add options for disabling steps of the process in the standard application.
+Some smaller fixes that you're customizing across the application might not be core for your solution, but they are important for the customers that you engage with. In these cases, you must decide whether you prefer to ask Microsoft to implement similar capabilities in the standard application. You can enter an extensibility request for this purpose. For example, if customers want to simplify standard business processes in the system, you might suggest that we add options for disabling steps of the process in the standard application.

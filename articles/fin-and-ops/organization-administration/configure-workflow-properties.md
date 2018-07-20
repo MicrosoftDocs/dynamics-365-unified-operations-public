@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure the properties of a workflow
+title: Configure workflow properties
 description: This topic explains how to configure the various properties of a workflow.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure the properties of a workflow
+# Configure workflow properties
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure the various properties of a workflow.
 
@@ -73,7 +72,7 @@ You can provide instructions to users who submit documents for processing and ap
     2.  On the page that appears, click **Add**.
     3.  In the list that appears, select the language that you will enter the text in.
     4.  In the **Translated text** field, enter the text.
-    5.  To personalize the text, you can insert placeholders. For instructions about how to enter a placeholder, see step 3.
+    5.  To personalize the text, you can insert placeholders. For instructions about how to enter a placeholder, see step 3.
     6.  Click **Close**.
 
 ## Specify when this workflow is used
@@ -92,7 +91,7 @@ Follow these steps to specify when the workflow that you're configuring is used.
 6.  To verify that the conditions that you entered are set correctly, follow these steps:
     1.  Click **Test**.
     2.  On the **Test workflow condition** page, in the **Validate condition** area, select a record.
-    3.  Click **Test**. The system evaluates the record to determine whether it meets the conditions that you specified. For example, if you're creating a purchase requisition workflow for Spain, the **Validate condition** area of the page shows a list of purchase requisitions. When you click **Test**, the system evaluates the selected purchase requisition to determine whether the country/region is ES.
+    3.  Click **Test**. The system evaluates the record to determine whether it meets the conditions that you specified. For example, if you're creating a purchase requisition workflow for Spain, the **Validate condition** area of the page shows a list of purchase requisitions. When you click **Test**, the system evaluates the selected purchase requisition to determine whether the country/region is ES.
     4.  Click **OK** or **Cancel** to return to the **Properties** page.
 
 ## Specify when notifications are sent
@@ -106,20 +105,21 @@ When a document is submitted for processing, a workflow instance is created. You
     -   **Unrecoverable** – Send notifications when a workflow instance is stopped because of an unrecoverable error.
     -   **Terminated** – Send notifications when a workflow instance is terminated.
 
-3.  Select the row for an event that you selected in step 2.
+3.  Select the row for an event that you selected in step 2.
 4.  On the **Notification text** tab, enter the text of the notification.
 5.  To personalize the text, you can insert placeholders. Placeholders are replaced with the appropriate data when the text is shown to users. To insert a placeholder, follow these steps:
     1.  Click in the field to specify where the placeholder should appear.
     2.  Click **Insert placeholder**.
     3.  In the list that appears, select the placeholder to insert.
     4.  Click **Insert**.
+    5.  A common **Notification text** placeholder to include is "Last Notes: %Workflow.Last note%", which displays any comments from the previous step.
 
 6.  To add translations of the text, follow these steps:
     1.  Click **Translations**.
     2.  On the page that appears, Click **Add**.
     3.  In the list that appears, select the language that you will enter the text in.
     4.  In the **Translated text** field, enter the text.
-    5.  To personalize the text, you can insert placeholders. For instructions about how to enter a placeholder, see step 5.
+    5.  To personalize the text, you can insert placeholders. For instructions about how to enter a placeholder, see step 5.
     6.  Click **Close**.
 
 7.  On the **Recipient** tab, use the following options to specify who should receive the notifications.
@@ -159,13 +159,13 @@ When a document is submitted for processing, a workflow instance is created. You
     <td>Specific Finance and Operations users</td>
     <td><ol>
     <li>On the <strong>Recipient</strong> tab, click <strong>User</strong>.</li>
-    <li>On the <strong>User</strong> tab, the <strong>Available users</strong> list includes all Finance and Operations users. Select the users to send notifications to, and move those users into the <strong>Selected users</strong> list.</li>
+    <li>On the <strong>User</strong> tab, the <strong>Available users</strong> list includes all Finance and Operations users. Select the users to send notifications to, and move those users into the <strong>Selected users</strong> list.</li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
-8.  Repeat steps 3 through 7 for each event that you selected in step 2.
+8.  Repeat steps 3 through 7 for each event that you selected in step 2.
 
 ## Enter comments about the changes that you made to the workflow
 To enter comments about the changes that you made to the workflow, follow these steps.

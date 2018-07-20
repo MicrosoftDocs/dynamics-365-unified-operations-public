@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: robinr
+ms.reviewer: robinr
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -25,6 +25,9 @@ ms.dyn365.ops.version:
 ---
 
 # Design Type
+
+[!include [banner](../../../../includes/banner.md)]
+
 Design object type.
 For more information on design, please reference the [Design Introduction](../../scenarios/client-api-design-overview.md).
 

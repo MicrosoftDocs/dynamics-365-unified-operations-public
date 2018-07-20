@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up a min-max replenishment process
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy. When inventory falls below the minimum level, work will be created to replenish the location. The procedure also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job. These tasks would typically be carried out by a warehouse manager. You can run this procedure in the USMF demo data company using the example values in the notes, or can run it on your own data. If you’re using your own data, make sure that you have a warehouse that’s enabled for Warehouse management processes.
 

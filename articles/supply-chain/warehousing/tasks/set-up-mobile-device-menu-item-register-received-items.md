@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up a mobile device menu item to register received items
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This task focuses on the setup of a mobile device menu item. This menu item is used for registration of the receipt of items ordered via purchase orders. 
 

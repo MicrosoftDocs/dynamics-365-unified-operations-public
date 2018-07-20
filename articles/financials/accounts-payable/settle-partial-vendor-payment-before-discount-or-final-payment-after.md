@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settle a partial vendor payment before the discount date with a final payment after the discount date
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
 
-Fabrikam purchases goods from vendor 3057. Fabrikam receives a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. The vendor also lets Fabrikam take cash discounts on partial payments. The settlement parameters are located on the **Accounts payable parameters** page.
+Fabrikam purchases goods from vendor 3057. Fabrikam receives a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. The vendor also lets Fabrikam take cash discounts on partial payments. The settlement parameters are located on the **Accounts payable parameters** page.
 
 ## Invoice on June 25
 On June 25, April enters and posts an invoice for 1,000.00 for vendor 3057. April can view this transaction on the **Vendor transactions** page.
@@ -47,7 +46,7 @@ On June 25, April enters and posts an invoice for 1,000.00 for vendor 3057. Apri
 | Inv-10020 | Invoice          | 6/25/2015 | 10020   |                                      | 1,000.00                              | -1,000.00 | USD      |
 
 ## Partial payment on July 2
-On July 2, April wants to settle 300.00 of this invoice. The payment is eligible for a discount, because Fabrikam takes discounts on partial payments. Therefore, April pays 297.00 and takes a 3.00 discount. She creates a payment journal and enters a line for vendor 3057. She then opens the **Settle transactions** page, so that she can mark the invoice for settlement.
+On July 2, April wants to settle 300.00 of this invoice. The payment is eligible for a discount, because Fabrikam takes discounts on partial payments. Therefore, April pays 297.00 and takes a 3.00 discount. She creates a payment journal and enters a line for vendor 3057. She then opens the **Settle transactions** page, so that she can mark the invoice for settlement.
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -63,7 +62,7 @@ Discount information appears at the bottom of the **Settle open transactions** p
 | Cash discount taken          | 0.00      |
 | Cash discount amount to take | -3.00     |
 
-April then posts the payment. The invoice now has a balance of 700.00. April can view this transaction on the **Vendor transactions** page.
+April then posts the payment. The invoice now has a balance of 700.00. April can view this transaction on the **Vendor transactions** page.
 
 | Voucher    | Transaction type | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance | Currency |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -98,7 +97,7 @@ April then posts the payment. When she opens the **Vendor transactions** page, s
 | APP-10021  | Payment          | 7/15/2015 |         | 700.00                               |                                       | 0.00    | USD      |
 
 ## Remaining payment on July 15, Use cash discount = Always
-If the vendor lets April take a discount even though she is paying after the discount date, she can change the value in the **Use cash discount** field to **Always**. The **Calculate cash discounts for partial payments** setting is overridden, and the discount is taken. The payment amount is 693.00, and the discount is the remaining 7.00.
+If the vendor lets April take a discount even though she is paying after the discount date, she can change the value in the **Use cash discount** field to **Always**. The **Calculate cash discounts for partial payments** setting is overridden, and the discount is taken. The payment amount is 693.00, and the discount is the remaining 7.00.
 
 | Mark     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Currency | Amount to settle |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|

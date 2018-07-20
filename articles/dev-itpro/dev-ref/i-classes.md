@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # I Classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter I.
 
@@ -63,7 +62,7 @@ methodName
 
 <!-- -->
 
-  
+
 
 #### Return Value
 
@@ -2180,8 +2179,8 @@ The possible values for the RotateType parameter are those available in the Rota
 |-----|--------------------|--------------------------|
 | 0   | RotateNoneFlipNone | No rotation.             |
 | 1   | Rotate90FlipNone   | Rotation by 90 degrees.  |
-| 2   | Rotate180FlipNone  | Rotation by 180 degrees. |
-| 3   | Rotate270FlipNone  | Rotation by 270 degrees. |
+| 2   | Rotate180FlipNone  | Rotation by 180 degrees. |
+| 3   | Rotate270FlipNone  | Rotation by 270 degrees. |
 
 ### Method saveImage
 
