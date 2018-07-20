@@ -440,7 +440,7 @@ This issue occurs when the AOS endpoint can't validate the thumbprint of the cer
 
 - The configuration called **IsAdfs** is either not specified or set to **False** in the CloudEnvironment.config. Ensure that **IsAdfs** is set to **True**.
 - The certificate wasn't installed on the AOS machine. To fix the issue, copy the .cer file that you created earlier in this topic to the AOS machine, and install it.
-- The thumbprint of the certificate wasn't added to the wif.config file on the AOS machine. To fix the issue, see step 8 in the "Run a single-user performance test by using the Performance SDK" section for information about how to add the certificate to the wif.config file. Be sure to restart the application through **Service Fabric Explorer** after you modify the wif.config file.
+- The thumbprint of the certificate wasn't added to the wif.config file on the AOS machine. To fix the issue, see step 8 in the [Run a single-user test using the Performance SDK](#run-a-single-user-test-using-the-performance-sdk) section for information about how to add the certificate to the wif.config file. Be sure to restart the application through **Service Fabric Explorer** after you modify the wif.config file.
  
 ### MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config is missing from the deployment items
 
