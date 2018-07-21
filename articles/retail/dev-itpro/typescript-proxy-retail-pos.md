@@ -69,13 +69,13 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference folde
 3. Open a Command Prompt window as an administrator, and navigate to the **...\\Retail SDK\\Reference** folder. Run the following command to generate the proxy. The proxy files will be generated in the same folder.
 
     ```
-    CommerceProxyGenerator.exe <Path>\\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
+    CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
     ```
 
     Here is an example.
 
     ``` 
-    CommerceProxyGenerator.exe C:\\RetailSDK\\Reference\\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\Reference\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /application:typescriptextensions
+    CommerceProxyGenerator.exe C:\RetailSDK\Reference\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\RetailSDK\Reference\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /application:typescriptextensions
     ```
 
     In the command that you run, replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with the name of your custom Retail Server extension library. Include the generated files in your POS project. The command generates two files that are based on your extension libraries: DataServiceEntities.g.ts and DataServiceRequests.g.ts.
@@ -88,7 +88,7 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference folde
 > [!IMPORTANT]
 > The following procedure doesn't apply to version 7.3 and later.
 
-1. Open the **Customization.settings** files from **...Retail SDK\\BuildTools**.
+1. Open the **Customization.settings** file from **...Retail SDK\\BuildTools**.
 2. Under the **RetailServerLibraryPathForProxyGeneration** node, include all your custom Retail Server extension libraries, as shown here.
 
     ```
@@ -107,7 +107,7 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference folde
     ```
 
 7. Build the project.
-8. Under the **Adapters** folder, add a new class. Use any other manager class from the adapter folder as a template, so that the whole namespace is included.
+8. Under the **Adapters** folder, add a new class file. Use any other manager class from the adapter folder as a template, so that the whole namespace is included.
 9. Extend the class from the interface manager, and implement only the interface methods that are required.
 
     To learn how generate the interface and manager classes, see the Store Hours sample in the Retail SDK. The instructions are in the **RetailSDK\\Code\\Documents\\SampleExtensionsInstructions\\StoreHours\\readme.txt** file.
@@ -137,12 +137,12 @@ For each Retail Server extension, you must generate a separate proxy.
     ```
 
     > [!NOTE]
-    > **.RetailServer.StoreHoursSample.dllProxy** is the name of the Retail Server extension assembly, and the rest of the value is the prefix (if there is a prefix) and the path of the assembly where the proxy engine can find this assembly. The proxy is generated based on this assembly.
+    > **.RetailServer.StoreHoursSample.dll** is the name of the Retail Server extension assembly, and the rest of the value is the prefix (if there is a prefix) and the path of the assembly where the proxy engine can find this assembly. The proxy is generated based on this assembly.
 
 7. Save the file, and load the project again.
 8. Rename the project according to your extension pattern.
 9. After the project is loaded, delete the **StoreDayHoursManager.cs** file from the **Adapters** folder.
-10. Add all the relevant CRT and Retail Server libraries to the proxy project as project or assembly references. (CRT libraries referred or used by your Retail Server extension)
+10. Add all the relevant CRT and Retail Server libraries to the proxy project as project or assembly references.
 11. Rebuild the project.
 
     You will see that a new Interfaces.g.cs file is generated inside the Adapters folder.
@@ -167,7 +167,7 @@ For each Retail Server extension, you must generate a separate proxy.
 
     For the full sample code, see the **Proxies.RetailProxy.Extensions.StoreHoursSample** project under **RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.StoreHoursSample**.
 
-15. Inside the methods you will call the actual CRT request/response. Avoid any logic in the proxy project. The proxy project should just call the CRT request/response.
+15. Inside the methods you will call the actual CRT request/response. Avoid including any logic in the proxy project. The proxy project should just call the CRT request/response.
 16. Build the project.
 17. Copy the output assembly, and paste it in the **RetailSDK\\References** folder.
 18. Navigate to the **RetailSDK\\Assets** folder, and open the **RetailProxy.MPOSOffline.ext.config** file.
@@ -189,7 +189,7 @@ For each Retail Server extension, you must generate a separate proxy.
     <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
     ```
 
-21. For e-Commerce, you must initialize the proxy for the extensions before you call it from your e-Commerce project. In your e-Commerce **Startup.cs** file (or an equivalent, such as web project initialization), initialize **RetailServerContext** with the edm model for your Retail proxy extension. Otherwise, you will receive a runtime error when you try to call the proxy. You must complete this step only one time.
+21. For e-Commerce, you must initialize the proxy for the extensions before you call it from your e-Commerce project. In your e-Commerce **Startup.cs** file (or an equivalent, such as web project initialization), initialize **RetailServerContext** with the Extended data model(EDM) model for your Retail proxy extension. Otherwise, you will receive a runtime error when you try to call the proxy. You must complete this step only one time.
 
     Here is an example.
 
