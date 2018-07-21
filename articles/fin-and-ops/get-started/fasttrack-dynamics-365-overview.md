@@ -44,8 +44,7 @@ and Operations a success.
 
 ## Eligibility for Microsoft FastTrack for Dynamics 365 for Finance and Operations
 To get started with FastTrack, your project must satisfy the minimum license
-requirement. For more details, please refer to the Licensing guide. Currently
-there is a 20-seat minimum of Dynamics 365 Unified Operations Plan or
+requirement. For more details, please refer to the [Licensing Guide]( https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Currently there is a 20-seat minimum of Dynamics 365 Unified Operations Plan or
 equivalent.
 
 After your LCS **Implementation project** workspace is provisioned, the
@@ -75,7 +74,7 @@ current and setup with monitored email addresses.
 -   Workshops (internal link to the section below)
 
 **Note**: The FastTrack team is continuously increasing the documentation of its processes and
-guidance; see Understand the implementation Lifecycle
+guidance; see [Understand the implementation lifecycle](implementation-livecycle.md).
 
 ## TechTalks
 TechTalks focus on providing technical depth and best practices that empower
@@ -83,21 +82,17 @@ both customers and partners with knowledge that is specific to the subject areas
 covered. These talks often provide an overview of available tooling and
 features. TechTalks are delivered in the form of life webcasts that allow for a
 Q&A session at the end. They can also be consumed on-demand and are publicly
-available. You can view all TechTalks and sign up for coming ones on the
-**FastTrack Dynamics 365 for Finance & Operations - Enterprise Edition - Tech
-Talks** page.
+available. You can view all TechTalks and sign up for coming ones on [FastTrack for Finance and Operations TechTalks](https://infopedia.eventbuilder.com/index?landingpageid=92tzhl).
 
 TechTalks will form a basis of understanding that will increase the value and
 efficiency of the workshops offered. The FastTrack team will work with you to
 help guide you to the relevant tech talks to prepare you for specific workshops.
-The complete inventory of all the TechTalks that have been recorded and are
-available to stream or download is compiled on the Videos for Dynamics 365 for
-Finance and Operations landing page.
+You also find the complete inventory of all the TechTalks that have been recorded and are available to stream or download, together with additional how-to videos, on [Videos for Dynamics 365 for Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/videos).
 
 ## Community
 FastTrack Finance and Operations community provides a platform for customers and
 partners to post questions and get answers from FastTrack Solutions Architects
-on best practices and guidance.  See FastTrack Finance and Operations Forum to
+on best practices and guidance.  See [FastTrack Finance and Operations Forum](https://community.dynamics.com/365/fasttrack/f/770) to
 access the community landing page.
 
 ## Workshops
@@ -109,8 +104,7 @@ engagements.
 
 The Onboarding workshop is designed to introduce FastTrack services, and to
 provide introductory guidance on a set of implementation topics that will help
-to ensure maximum success. For details, see Onboard a Finance and Operations
-Project. Topics are likely to include:
+to ensure maximum success. For details, see [Onboard a Finance and Operations Project](onboard.md). Topics are likely to include:
 
 -   Team introductions
 
