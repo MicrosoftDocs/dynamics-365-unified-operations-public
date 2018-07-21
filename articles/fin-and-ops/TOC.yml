@@ -3525,6 +3525,19 @@
         href: ../financials/project-management/project-integration.md
     - name: Project time entry mobile workspace
       href: ../financials/project-management/project-time-entry-mobile-workspace.md
+    - name: Project Service Automation
+      href: ../financials/project-management/PSA-integration.md
+      items:
+      - name: Project Service Automation integration parameters
+        href: ../financials/project-management/PSA-parameters.md
+      - name: Synchronize project contracts and projects from Project Service Automation directly to Finance and Operations
+        href: ../financials/project-management/project-contracts-templates.md
+      - name: Synchronize project tasks from Project Service Automation directly to Finance and Operations
+        href: ../financials/project-management/project-tasks-template.md
+      - name: Synchronize project expense categories between Finance and Operations and Project Service Automation
+        href: ../financials/project-management/project-categories-templates.md
+      - name: Synchronize project estimates from Project Service Automation directly to project forecasts in Finance and Operations
+        href: ../financials/project-management/project-estimates-templates.md
   - name: Sales and marketing
     href: ../supply-chain/sales-marketing/overview-sales-marketing.md
     items:
