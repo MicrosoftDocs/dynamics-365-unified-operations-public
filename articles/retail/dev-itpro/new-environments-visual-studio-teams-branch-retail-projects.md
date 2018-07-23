@@ -34,7 +34,7 @@ Starting in Microsoft Dynamics AX 7.0, most environments are hosted in the cloud
 
 Tier 1 machines are developer or build environments.
 
-##Development Tier 1 environments
+## Development Tier 1 environments
 
 For implementations of Microsoft Dynamics 365 for Retail that include code extensions, we recommend that you use a development environment that has administrative privileges. If you use a development environment that doesn't have administrative privileges, other programming tools and features of the operating system (OS) cannot be installed or configured. An alternative setup is a machine that is hosted on a separate Microsoft Azure subscription. (This type of machine is also known as "cloud-hosted" in Microsoft Dynamics Lifecycle Services [LCS].)
 
