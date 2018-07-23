@@ -1,13 +1,44 @@
-# Implementing Dynamics 365 Finance and Operations Retail projects
+---
+# required metadata
 
-The purpose of the following topics are to help new implementers of Retail projects with important aspects of the process to avoid complications. The guidelines mentioned are best practices that have been collected during previous implementation projects. These guimplementers can focus on the actual feature work and not get bogged down by the procedures.
+title: Implement Finance and Operations Retail projects
+description: This topic describes recommended practices for Microsoft Dynamics 365 for Retail implementation projects.
+author: Andreash1
+manager: AnnBe
+ms.date: 07/09/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+# optional metadata
 
-Some of this information is captured in blogs and wiki pages at other locations such as https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/index, https://dynamicsnotes.com/, etc. These blogs can be read separately, or you can read this information from the beginning to the end and review the linked documents at the time of their reference.  
+ms.search.form: 
+# ROBOTS: 
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Operations, Retail
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: andreash
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: Retail 7.3
 
-The information focuses on Dynamics 365 F&O implementations with Retail aspects.
+---
 
-### [New environments, Visual Studio Team Services, and branch setup for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
-### [Code and environment update procedures for Retail projects](./updating-environments.md)
+# Implement Finance and Operations Retail projects
 
-### [Testing and performance](./retail-implementation-testing-performance.md)
+This topic provides links to other topics that will help new implementers of Retail projects with important aspects of the implementation process, so that they can avoid complications. The guidelines that are mentioned are best practices that have been collected during previous implementation projects. Therefore, implementers can focus on the actual feature work and not become bogged down by the procedures.
+
+Some of the information in these topics can also be found on blogs and pages at other locations, such as <https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/index> and <https://dynamicsnotes.com>. You can read those blogs and pages separately, or you can read this topic from beginning to end and review the linked documents within the subtopics as you require them during the implementation process.
+
+The information focuses on implementations of Microsoft Dynamics 365 for Finance and Operations that include Retail functionality.
+
+[Set up new environments, Visual Studio Team Services, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
+
+[Update code and environments for Retail projects](./updating-environments.md)
+
+[Testing and performance](./retail-implementation-testing-performance.md)
