@@ -1,170 +1,197 @@
-# Code and environment update procedures for Retail projects
+---
+# required metadata
 
-An environment can be updated by either updating its data or its code.  
+title: Update code and environments for Retail projects
+description: This topic describes recommended practices for Microsoft Dynamics 365 for Retail implementation projects.
+author: Andreash1
+manager: AnnBe
+ms.date: 07/09/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+# optional metadata
 
-There are multiple ways to update the data. For good examples about how to get data into an environment, see [Data Entities and Data Packages](../../dev-itpro/dataentities/data-entities-data-packages).  
+ms.search.form: 
+# ROBOTS: 
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Operations, Retail
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: andreash
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: Retail 7.3
 
-Moving the entire database should also be considered when updating an environment. It’s a quick and easy way to duplicate the data from one environment to another. 
-
-Other kinds of updates are code updates. The LCS environment page keeps track of which updates have been applied and what updates need to be applied. The following image shows an environment with 79 outstanding X++ fixes and 14 outstanding binary updates and 9 outstanding platform updates. 
-
-[![LCS Environment Page](./media/17-LCS-environment-page.png)](/media/17-LCS-environment-page.png)
- 
-Platform code is very low-level and there is no Retail-feature that is implemented in the platform. This means, that stand-alone Platform binary updates will not require any Retail-specific code to be retested.  Examples of features that are implemented in the platform are Data Import and Export Framework (DIXF) and the batch framework. 
-
-Binary updates or hotfixes include DLLs, scripts, channel SQL schema changes and more. All channel-side hotfixes are shipped with a binary update/hotfix. Because they are DLLs, binary updates are cumulative. If you download a binary update on Friday, you automatically get all binary hotfixes from Monday – thru Thursday.   
-
-The version of a binary hotfix taken is exactly the version of the Retail Sdk’s Microsoft-version.txt file (assuming the code merging has been done correctly). Binary updates are tied to (usually) the latest platform too. So, you will have to stay up-to-date with the platform when taking binary updates. The platform updates increase stability of the platform, but it impacts build environments and test efforts to some extent.
-
-Application updates or hotfixes delivered in X++ source code. Therefore, they are not for the channel, but for the client side (Retail or non-Retail related).  
-
-Note that some updates require both an application and a binary update. See the next section for hotfix recommendations.  
-
-Third-party packages are similar to application packages but developed by others. More information about ISV package usage can be found [here](../../dev-itpro/dev-tools/manage-runtime-packages).  
-
-The two main ways to update an environment are more detailed below.
+---
 
 
-### Updating data by restoring the database 
+# Update code and environments for Retail projects
 
-A useful and common operation is to move the entire database from one environment to another. This may be moving the production database to development environments when preparing to develop additional features. It could also be used to move the golden setup database to the production database as part of the go-live process.  
+An environment can be updated by updating either its data or its code.
 
-Whatever the reason, every time a database from a different environment is restored there are certain “links” in the database that may be broken.  The Environment reprovisioning tool fixes all these broken links for the default database group. It does not matter what type of environment is used. The general guideline is that if the database comes from a different server, the Reprovisioning tool must be run. 
+There are multiple ways to update the data. For examples that show how to get data into an environment, see [Data entities and data packages](../../dev-itpro/dataentities/data-entities-data-packages).
 
-The details about how to run this are outlined in [Copy Database From Azure SQL to SQL Server](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/database/copy-databasefrom-azure-sql-to-sql-server). 
+When you update an environment, you should also consider moving the whole database. This approach lets you quickly and easily duplicate the data from one environment to another.
 
-The Reprovisioning tool should be run when the binary version of the target and destination database is the same. If that is not the case, either a build + dbsync (development environment) or deployment should also be done (sandbox, production).   
+Other updates are code updates. The environment page in Microsoft Dynamics Lifecycle Services (LCS) tracks the updates that have been applied and the updates that must be applied. The following illustration shows an environment that has 79 outstanding X++ fixes, 14 outstanding binary updates, and nine outstanding platform binary updates.
 
-In many cases, the Retail scheduler should be reset whenever a database is being updated. 
+[![LCS environment page](./media/17-LCS-environment-page.png)](/media/17-LCS-environment-page.png)
 
-After restoring the database, follow these steps:  
+Platform code is at a very low level, and no Microsoft Dynamics 365 for Retail features are implemented in the platform. Therefore, stand-alone platform binary updates don't require that you retest any Retail-specific code. Examples of features that are implemented in the platform are the Data Import/Export Framework (DIXF) and the batch framework.
 
-1. Build + db sync or deployment of the deployable package. 
-> Note: If you have table extensions with data, you must have the metadata for these in the environment. If you do not, you may lose data as columns and tables may get dropped.  
-2. Make sure batch service is running. 
-3. Run the Environment reprovisioning tool (latest from global shared asset library, LCS/Maintain to deploy). 
-4. Verify that the tool succeeded, verify that the Retail channel profile is up-to-date with the correct URLs, and that the data sync jobs for the Default data group succeeded.
-5. In Finance and Operations, run “Initialize Retail Scheduler” to delete old data. This assumes that all CDX configuration changes are automated with the help of a resource file. If that is not the case, and tables, sub jobs, and jobs are manually created in the Retail channel schema, do not select the deletion of existing configuration. We reccomend that you automate this. See the development section for more details.
+Binary updates or hotfixes include dynamic-link libraries (DLLs), scripts, and channel SQL schema changes. All channel-side hotfixes are released together with a binary update/hotfix. Because binary updates are DLLs, they are cumulative. For example, if you download a binary update on Friday, you automatically receive all binary hotfixes from Monday through Thursday.
 
-### Taking updates frequently  
+If the code merge is done correctly, the version of a binary hotfix that you take matches the version of the Microsoft-version.txt file in the Retail software development kit (SDK). Typically, binary updates are also linked to the latest platform. Therefore, when you take binary updates, you must stay up to date with the platform. Platform updates help increase the stability of the platform, and they affect build environments and test efforts to some extent.
 
-If your project is further than a few weeks from go-live or the final UAT, we reccomend that you take all hotfixes (binary, X++ and platform) on a regular schedule. Doing this once a month is reccomended. In fact, the more often that you do this, the less issues occur as the code churn of the hotfixes is smaller. It will take substantially less time than 8 hours if you do this frequently. 
+Application updates or hotfixes are delivered in X++ source code. Therefore, they aren't for the channel side but for the client side (they are either Retail-related or not Retail-related).
 
-We do not suggest trying to pick and choose hotfixes, as this is more error-prone and likely not worth your time. If you have a count of 1000 or even 500, you should ask yourself if you are ready to go-live. You will get a more quality product if your LCS update tile count is very low (application fixes < 100, binary fixes < 10).   
+Note that some updates require both an application update and a binary update. For hotfix recommendations, see the next section.
 
-After taking new hotfixes, the results of a previous UAT become less meaningful. It would be beneficial to retest, as this is dependent on the number of files that changed.  However, if hotfixes are being taken often, especially during the implementation phase, the number of new files is not too large.   
+Third-party packages resemble application packages, but they are developed by other people. For more information about how to use independent software vendor (ISV) packages, see [Manage Runtime Packages](../../dev-itpro/dev-tools/manage-runtime-packages).
 
-Another possible approach is to take all hotfixes frequently and only run part of all UATs.  The next time that new hotfixes are taken, a different part of UAT is run, in a circular fashion.  Before going live, a full UAT should be run. 
+## Updating data by restoring the database
 
-### Change propagation process through branches and environments
+In one useful and typical operation, the whole database is moved from one environment to another. For example, you might move the production database to development environments when you're preparing to develop additional features. Alternatively, you might move the golden setup database to the production database as part of the go-live process.
 
-Just like the branching strategy is dictated by project, team or other constraints your project has the flexibility how the changes propagate through these branches. The process shown here can be used as an example. For some projects, it may be too simple. For others it may be too complex.  The important point is, a project should have a plan. Different persons in the team will have different responsibilities (dev, deployment, code merges, sign off, etc.) and the role ownership should be clearly decided.
+For more details, see [Copy Database From Azure SQL to SQL Server](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/database/copy-databasefrom-azure-sql-to-sql-server). If source and destination environments don't have the same binary version, you should also do either a build and a database synchronization (for a development environment), or a deployment (for a sandbox or production environment).
+
+Every time that a database that has been moved from a different environment is restored, specific links in the database can be broken. The Environment reprovisioning tool fixes all these broken links for the default database group, regardless of type of environment that is used. The general guideline is that if the database comes from a different environment, the Environment reprovisioning tool must be run.
+
+In many cases, you should reset the Retail scheduler after you updated the database.
+
+After you have restored the database, follow these steps.
+
+1. Either do a build and a database synchronization, or deploy the deployable package.
+
+    > [!NOTE]
+    > If you have table extensions that include data, you must have the metadata for those extensions in the environment. Otherwise, you can lose data, because columns and tables might be dropped.
+
+2. Make sure that the batch service is running.
+3. Run the Environment reprovisioning tool. (Find the latest version in the global Shared asset library in LCS, and then deploy it by using the **Maintain** function.)
+4. Verify that the tool succeeded, the Retail channel profile is up to date with the correct URLs, and the data synchronization jobs for the Default data group succeeded.
+5. In Microsoft Dynamics 365 for Finance and Operations, run the **Initialize Retail scheduler** job (select delete old data). This step assumes that all Commerce Data Exchange (CDX) configuration changes are automated by using a resource file. If CDX configuration changes aren't automated, and tables, subjobs, and jobs are manually created in the Retail channel schema, don't select the option to delete the existing configuration. We recommend that you automate CDX configuration changes. 
+
+## Taking updates frequently
+
+If your project is more than a few weeks from go-live or the final user acceptance testing (UAT), we recommend that you take all hotfixes (binary, X++, and platform) on a regular schedule. Specifically, we recommend that you take all hotfixes one time per month. The more often you perform this task, the fewer issues you should experience, because the code churn of the hotfixes is smaller. If you perform this task often, it will take significantly less than eight hours.
+
+We recommend that you not pick and choose hotfixes, because this approach is more likely to cause errors and is probably not worth your time. If you have 500 or 1000 outstanding hotfixes, you should consider whether you're really ready to go-live. The quality of the product will be higher if the count on the update tiles in LCS is very low (fewer than 100 application fixes and fewer than ten binary fixes).
+
+After you take new hotfixes, the results of a previous round of UAT become less meaningful. Therefore, it's crucial to retest again. How extensive the testing needs to be depends on the number of files that changed. If hotfixes are frequently taken, especially during the implementation phase, the number of new files isn't very large and the retesting effort is manageable.
+
+Another approach is to take all hotfixes frequently and run only part of the UAT. Then, the next time that new hotfixes are taken, run a different part of the UAT. Run the different parts of the UAT in a circular manner. Before go-live, you should do a full UAT run.
+
+## The flow of code changes through branches and environments
+
+Just as the branching strategy is dictated by project, team, or other constraints, your project has flexibility about how the changes are propagated through the branches. The following illustration shows an example of the process. However, this example might be too simple for some projects and too complex for other projects. The important point is that a project should have a plan. Different persons in the team will have different responsibilities (development, deployment, code merges, sign-off, and so on), and the role ownership should be clearly defined.
 
 [![Branch diagram](./media/1-1-diagram.png)](/media/1-1-diagram.png)
- 
-#### Steps 1 – 3: Obtaining and applying updates
 
-The full details about steps 1 – 3 (taking updates) is something already documented [here](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/).  If you have the branches setup the same way as described above, you should be doing this work in the Dev branch.
+### Steps 1–3: Obtain and apply updates
 
-#### Step 3.1 – 3.2: Keeping development environments up-to-date
+For full details about steps 1 through 3 (taking updates), see [Dynamics 365 for Finance and Operations hotfix and deployment cheat sheet (including Retail)](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/). If the branches are set up in the same manner that is shown in the preceding illustration, you should do this work in the Dev branch.
 
-If we do not have a build environment for the Dev branch that is not a big problem. In fact, it is usually not needed. All we need to do is coordinate what packages should be deployed to keep the version correct. 
+### Steps 3.1–3.2: Keep development environments up to date
 
-Download binary updates and platform updates can simply be deployed via LCS’s package deployment.
+You don't have to have a build environment for the Dev branch. In fact, a build environment for the Dev branch isn't usually required. You just have to coordinate the packages that should be deployed to keep the version correct.
 
-For the X++ code, developers simply sync the Metadata folder and do a full build and db sync.  
+After you download binary updates and platform updates, you can deploy them via LCS package deployment.
 
-If major new Retail changes have been checked in by others in the team (new files, configuration changes, new Retail sdk) it is not enough to just sync and build the new files. Remember, there are a few web applications installed on the developer machine that will not be simply updated with a compilation. The simplest way is to use LCS’s package deployment to deploy the retail package that can be produced on a MSBuild command prompt. Smaller changes to code do not require new package deployments to keep the dev environments in sync if the incremental changes are dropped to the install locations (more on that in the Retail Sdk section).
+For the X++ code, developers just synchronize the Metadata folder and do a full build and database synchronization.
 
-[![Environment Change History](./media/1-2-environment-change-history.png)](/media/1-2-environment-change-history.png)
- 
-#### Step 4: Moving changes from Dev to Main
+If major new Retail changes have been checked in by other members of the team (for example new files, configuration changes, or a new Retail SDK), it isn't enough to synchronize and build the new files. Remember that a few web applications that are installed on the developer machine won't be updated through a compilation (they must be deployed). Use the LCS package deployment to deploy the retail package that can be produced at an MSBuild command prompt. For smaller code changes, new package deployments aren't required to keep the dev environments in sync if the incremental changes are dropped to the install locations. 
 
-We separated the Dev and Main branches to have the opportunity to “leave some unwanted changes behind”. It is not required, but it’s good to have the option to do so.  The process of moving the code from Dev to Main is simple with Visual Studio. You can pick a range of changes, all or individual changes and merge them. If you want to keep it simple, have some sort of a code freeze in the Dev branch and when you are satisfied with the quality, merge all changes.  There is no reason to treat X++ different from the Retail Sdk. They live next together in each branch because they are dependent on each other.
+[![Environment change history](./media/1-2-environment-change-history.png)](/media/1-2-environment-change-history.png)
 
-#### Steps 4.1 – 4.2: Updating test environments
+### Step 4: Move changes from the Dev branch to the Main branch
 
-Use your build environment to produce officially built packages from the code in the Main branch. 
+In this example, the Dev and Main branches have been separated to give us an opportunity to "leave some unwanted changes behind." Although this approach isn't required, it's a good option to have. Microsoft Visual Studio makes the process of moving the code from Dev to Main easy. You can select a range of changes, select all or individual changes, and merge those changes. To keep the process simple, you can have some type of a code freeze in the Dev branch. Then, when you're satisfied with the quality, you can merge all changes. There is no reason to treat X++ differently than the Retail SDK. They reside next together in each branch, because they are dependent on each other.
 
-[![Build Definition Unified Operations](./media/1-3-build-definition-unified-operations.png)](/1-3-build-definition-unified-operations.png)
- 
-When the build is finished, find the built packages, download and rename them according your naming conventions.
+### Steps 4.1–4.2: Update test environments
+
+Use your build environment to produce officially built packages from the code in the Main branch.
+
+[![Build Definitions Unified Operations](./media/1-3-build-definition-unified-operations.png)](/1-3-build-definition-unified-operations.png)
+
+When the build is completed, find the packages that were built, download them, and rename them according to your naming conventions.
 
 [![Artifacts Explorer](./media/1-4-artifacts-explorer.png)](/1-4-artifacts-explorer.png)
- 
-Then, upload them to the LCS asset library. 
- 
+
+Then upload the packages to the LCS Asset library.
+
 [![Asset library](./media/1-5-asset-library.png)](/1-5-asset-library.png)
 
-Finally, deploy them to your test environments.  
+Finally, deploy the packages to your test environments.
 
 [![Environment change history UAT](./media/1-6-environment-change-history-UAT.png)](/1-6-environment-change-history-UAT.png)
- 
-#### Step 4.3: Deploy to production environment
 
-When all necessary tests pass, we are ready to deploy the same packages to production. The packages must be marked as Release Candidates in the LCS Asset library after they had been deployed and validated in a tier 2 or higher environment. Then the deployment must be planned and submitted via the LCS environment page. 
+### Step 4.3: Deploy packages to the production environment
 
-There are lots of things to consider when updating a production environment. Downtime, downtime mitigation, data migration, store updates, mass deployment and many more. It is very important to have a plan of all steps required for an update, as Retail projects usually require more than just a deployment. Some additional things to consider are listed below in the Tips section.
+When all the required tests are passed, you're ready to deploy the same packages to production. After the packages have been deployed and validated in a Tier 2 or higher environment, you must mark them as Release Candidates in the LCS Asset library. You must then plan the deployment and submit it via the LCS environment page.
 
-It is also assumed that the go-live planning has started much earlier. For more details consult [Implementation Lifecycle](../../fin-and-ops/imp-lifecycle/implementation-lifecycle). 
+There are many considerations when you update a production environment, such as downtime, downtime mitigation, data migration, store updates, and mass deployment. It's very important that you have a plan of all the steps that are required for an update, because Retail projects usually require more than just deployment. For some additional considerations, see the "Tips" section.
 
-#### Step 5: Merge the code from Main to ProdRel1
+It's assumed that the planning for go-live was started much earlier. For more details, see [Implementation lifecycle](../../fin-and-ops/imp-lifecycle/implementation-lifecycle).
 
-Before any new feature work starts being added to the Main branch and right after we deployed to production, a snapshot should be taken and move dot the ProdRel1 branch. The steps are the same as in step 4. We do not need to pick and choose changes, we simply merge all changes up to the last code change set that was submitted to Main branch.
+### Step 5: Merge the code from the Main branch to the ProdRel1 branch
 
-### Updating build environments 
+Immediately after deployment to production, and before any new feature work is added to the Main branch, you should take a snapshot and move it to the ProdRel1 branch. The steps are the same as in step 4. You don't have to select individual changes. Instead, just merge all changes up to the last code change set that was submitted to the Main branch.
 
-You should always deploy binary updates and platform updates using LCS’s package deployment. 
+## Update build environments
 
-Finance and Operations and Retail customization packages should not be deployed to a build environment. 
+You should always deploy binary updates and platform updates by using LCS package deployment.
+
+Finance and Operations and Retail customization packages should not be deployed to a build environment.
 
 [![Environment change history build](./media/1-7-environment-change-history-build.png)](/1-7-environment-change-history-build.png)
 
-### Comparing LCS tile counts 
+## Compare LCS tile counts
 
-Environments that should be at the same version level, should also have the same LCS tile counts.  If the tile counts are different, this may be caused by any of the following reasons: 
+Environments used for work of the same release should also have the same LCS tile counts. Here are some reasons why the tile counts might differ:
 
-- The same deployable packages have not been deployed/applied and therefore the versions are different. You can troubleshoot by inspecting and comparing the LCS deployment history. 
-- The scheduled task that collects the version information from an environment has not run yet. For development environments you can force the schedule task “LCSDiagnosticsCollector” to run. 
-- The build environment’s application update counts do not match because X++ packages are not deployed on them. Binary and platform counts should be correct. 
-- It may be on purpose. For example, if a developer works with the next version but the rest of the team is still working with a different release. Or, one development environment could have been kept on an older version in case a production hotfix needs to be developed (if the production environment uses older version as current development efforts). 
- 
+- The same deployable packages haven't been deployed and applied. You can troubleshoot this issue by inspecting and comparing the LCS deployment history.
+- The scheduled task that collects the version information from an environment hasn't been run yet. For development environments, you can force the "LCSDiagnosticsCollector" schedule task to run.
+- The counts for the build environment's application updates don't match because X++ packages aren't deployed on build environments. Binary and platform counts should be correct.
+- The difference might be intentional. For example, a developer might work with the next version, whereas the rest of the team is still working with a different release. Alternatively, one development environment might be kept on an older version in case a production hotfix must be developed (and the production environment uses the older version than current development environments).
 
- 
-Notice that after updating an environment, the tile counts for the available updates are now substantially lower than at the start.  Ideally, these counts match on all environments that work on the same release.
+Notice that after you've finished updating an environment, the tile counts for the available updates are significantly lower than they were when you started.
 
+## Move to a new version
 
+To upgrade to a new version (such as 7.2 to 7.3, or 7.3 to 8.0), you must deploy a new environment. You must also run a code upgrade and a database upgrade, if these upgrades are applicable. For more details, see [Code migration home page](../../dev-itpro/migration-upgrade/code-migration-home-page).
 
-### Moving to a new version 
+## Tips
+- Decide on a good package naming convention for names in the LCS Asset library and for the names of zip packages that are downloaded. In this way, you can more easily determine what package you've deployed and where it came from. Avoid spaces in package names. Here is an example of a naming convention:
 
-If you want to upgrade to a new version (such as 7.2 to 7.3, or 7.3 to 8.0), you must deploy a new environment and target the new version.  If applicable, you also need to run a code upgrade and a database upgrade. More details can be found in [Code Migration Home Page](../../dev-itpro/migration-upgrade/code-migration-home-page). 
+    - **Platform update packages:** PUXX_MMDDYY, where XX is the number of the platform update
+    - **Binary update packages:** BIN_MMDDYY
+    - **X++ update packages:** APP_MMDDYY
+    - **Built X++ deployable packages:** AX_BRANCH_VERSION, where BRANCH is an appropriate branch name, and VERSION is the Microsoft Visual Studio Team Services (VSTS) version string
+    - **Built Retail combined package:** RET_BRANCH_VERSION, where BRANCH is an appropriate branch name, and VERSION is the VSTS version string
 
-### Tips
--	Decide on a good package naming convention (for names in LCS asset library and zip packages when downloaded). The reason is that it will be easier to figure out what package you have deployed and where it came from. Avoid spaces in package names. Here is an example for a convention:
-    - Platform update packages: PUXX_MMDDYY (XX is number of PU)
-    - Binary update packages: BIN_MMDDYY
-    -	X++ update packages: APP_MMDDYY
-    -	Built X++ deployable packages: AX_BRANCH_VERSION (with appropriate branch name and VSTS version string)
-    -	Built Retail combined package: RET_BRANCH_VERSION
--	Whenever you start a new item of work, use “Get latest” in the VSTS location you are working in
--	Any code submissions should use proper and detailed comments of the change sets
-- Production Go-live procedures are important. The list below can serve as a reminder of what should be considered on your Go-live check list. Verify your Go-live checklist in a mock Go-live or UAT environment. This is not a complete list:
-    - After deployment, does LCS show the expected deployment history with the correct packages?
-    -	After deployment, does the LCS environment page and Dynamics 365 F&O show the correct and expected version numbers?
-    -	Can MPOS offline mode be used during downtime of cloud (go offline, deploy, go online, sync offline transactions, update MPOS)?
-    -	Does the Environment Reprovisioning tool need to be run (if database has been moved)?
-    -	Batch jobs for CDX sync must be re-enabled by setting to “Waiting”
-    -	“Initialize Retail scheduler” should be run
-    -	Is there other data that needs to be setup in addition to the deployable packages (screen, button, receipt layouts, Azure Active Directory setup, Retail Shared parameters, tax configuration, other batch processes, DIXF recurring jobs, etc.)?
-    -	Is a sync of the CDX data jobs required?
-    -	Is a full sync of CDX data jobs required?
-    -	Does this deployment require an update of store components as well?
+- Whenever you start a new item of work, use "Get latest" option in Visual Studio’s source code explorer.
+- Any code submissions should use correct and detailed comments that describe the change sets.
+- Production go-live procedures are important. You should consider including the following items on your Go-live checklist. Verify your Go-live checklist in a mock go-live or UAT environment. This list isn't exhaustive.
+
+    - After deployment, does LCS show the expected deployment history together with the correct package names?
+    - After deployment, do the LCS environment page and Finance and Operations show the correct and expected version numbers?
+    - Can Retail Modern Point of Sale (MPOS) offline mode be used during a downtime of Dynamics 365 for Operations and Finances. Downtimes will be caused by package deployments. If yes, have you tested the procedure? (go offline, deploy, go online, sync offline transactions, update MPOS)
+    - Does the Environment reprovisioning tool have to be run (if a database has been moved)?
+    - Batch jobs for CDX synchronization must be reenabled by setting them to **Waiting**.
+    - The "Initialize Retail scheduler" job should be run.
+    - Does other data have to be set up in addition to the deployable packages (for example, screens, buttons, receipt layouts, the Microsoft Azure Active Directory setup, Retail shared parameters, the tax configuration, other batch processes, and DIXF recurring jobs)?
+    - Is a synchronization of the CDX data jobs required?
+    - Is a full synchronization of CDX data jobs required?
+    - Does a deployment require that store components also be updated?
     - If the store components had to be updated, do they show the new version numbers?
-    -	Are the right experts available during the deployment (partner, ISV, customer, etc.)
-    -	And more…
+    - Are the correct experts available during the deployment (for example, partners, ISVs, and customers)?
 
-## Additional Resources
+## Additional resources
 
-### [New environments, Visual Studio Team Services, and branch setup for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
+[Set up new environments, Visual Studio Team Services, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
-### [Testing and performance](./retail-implementation-testing-performance.md)
+[Testing and performance](./retail-implementation-testing-performance.md)
