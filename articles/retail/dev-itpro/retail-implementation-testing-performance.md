@@ -2,7 +2,7 @@
 # required metadata
 
 title: Testing and performance
-description: This topic describes recommended practices for Microsoft Dynamics 365 for Retail implementation projects.
+description: This topic describes recommended practices for testing and performance for Microsoft Dynamics 365 for Retail implementation projects.
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 # Testing and performance
 
-This document describes practices and tools related to functional testing, performance testing and performance troubleshooting.
+This document describes practices and tools that are related to functional testing, performance testing, and performance troubleshooting.
 
 ## User acceptance testing
 
@@ -41,7 +41,7 @@ For the best results, the UAT environment should be a Tier 2 through Tier 5 envi
 
 If a development environment is used, there are scenarios where a developer who uses the same environment can cause errors (for example, uncommitted source changes or debugger attached errors). The switch between Microsoft Internet Information Services (IIS) Express and IIS can also cause issues. Additionally, because there is no way to know exactly what has happened on a development machine, Microsoft support for a Tier 1 environment is very limited.
 
-A production environment can be used for UAT (for example, as a "dry run" for go-live). However, if you need access to the database for any reason you must go through deployment support engineer (DSE) service requests. Therefore, this approach might not be efficient. Additionally, the production environment isn't available for a long period before the planned go-live date.
+A production environment can be used for UAT (for example, as a "dry run" for go-live). However, if you require access to the database for any reason, you must go through deployment support engineer (DSE) service requests. Therefore, this approach might not be efficient. Additionally, the production environment isn't available for a long period before the planned go-live date.
 
 The UAT should be done after you deploy officially built deployable packages. It should not be done on packages that are manually built in Microsoft Visual Studio. The reason is that there is no way to prove what code changes were included in a manually built package. Only an official build system provides assurance and an audit trail of the exact changes that are in a specific build.
 
@@ -58,7 +58,7 @@ In some cases, channel performance might not be as good as you expected. Poor pe
 
 For more details, see the [Microsoft Dynamics 365 for Retail for IT pros and developers](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page) topics.
 
-When you investigate store performance, follow the suggestions at [Retail Channel performance investigations](https://dynamicsnotes.com/retail-channel-performance-investigations/).
+When you investigate store performance, follow the suggestions in [Retail Channel performance investigations](https://dynamicsnotes.com/retail-channel-performance-investigations/).
 
 ### Using telemetry data to find performance issues
 If you must troubleshoot the performance of Microsoft Dynamics 365 for Retail and Microsoft Dynamics 365 for Finance and Operations (especially slow SQL queries or SQL deadlocks), the environment diagnostics page in Microsoft Dynamics Lifecycle Services (LCS) shows valuable telemetry data. You can use this data to find potential performance issues in code, configuration, or design. For more details, see [How to use Environment Monitoring View Raw Logs](https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/). That information should help you determine why some batch processes or form loads are slow.
@@ -73,19 +73,19 @@ Here are some of the reasons why bottlenecks can occur:
 - Complex retail business logic for multiple terminals or stores that run on a few Retail Servers (either in the cloud or in a Retail store scale unit)
 - Integrated third-party systems (integrated from either Finance and Operations or Retail Server)
 - Real-time transaction services that are frequently called from Retail Server.
-- non-standard or extended standard functionality (for example extended statement posting with custom WHS code)
+- Non-standard or extended standard functionality (for example, extended statement posting that uses a custom WHS code)
 
 In general, default and non-real-time POS operations aren't considered bottlenecks because they have their own dedicated resource: the computer that the POS is installed or running on. Performance issues are typically caused by the business logic or "chatty" calls to Retail Server.
 
 Ideally, performance testing should be done after some initial optimizations have already been completed by using the information earlier in this topic. If the system doesn't perform well for a single user or process, it won't perform well for concurrent users or processes. For more information, see [Retail Channel performance investigations](https://dynamicsnotes.com/retail-channel-performance-investigations/). Additionally, in the Finance and Operations documentation, search for "PerfSdk" or "Trace parser."
 
-Because every project is different, it's difficult to give a general answer about the exact performance tests that must be run. For example, if the count of transaction sales lines is low (less than 100,000 per day for all stores), and no custom extension code has been added for statement posting, a performance test should not be required for posting. However, if the count of sales lines is substantially higher, or if major custom changes have been added, a performance test for posting is a good idea.
+Because every project is different, it's difficult to give a general answer about the exact performance tests that must be run. For example, if the count of transaction sales lines is low (less than 100,000 per day for all stores), and if no custom extension code has been added for statement posting, a performance test should not be required for posting. However, if the count of sales lines is substantially higher, or if major custom changes have been added, a performance test for posting is a good idea.
 
-Usually, the hardware capabilities of every environment differ. However, performance issues can usually be reproduced in other environments if the code and data are similar. We don't recommend that you use a production environment for performance testing. A good practice is to use the same data in development, test, and production. The development environment can then be used to work on and verify a fix. Because many performance-critical code paths are data-dependent, the same issues might not be seen for a Contoso sample database.
+Usually, the hardware capabilities of every environment differ. However, performance issues can usually be reproduced in other environments if the code and data are similar. We don't recommend that you use a production environment for performance testing. A good practice is to use the same data in development, test, and production environments. The development environment can then be used to work on and verify a fix. Because many performance-critical code paths are data-dependent, the same issues might not be seen for a Contoso sample database.
 
-After you've completed a performance fix, you should verify the fix in a test environment. Deploy an officially built package to the test environment and, if the issue is fixed, mark the package as a release package. 
+After you've completed a performance fix, you should verify the fix in a test environment. Deploy an officially built package to the test environment, and if the issue is fixed, mark the package as a release package. 
 
-Having fixed a larger performance issue should be followed by a new performance test. Often, a big issue masks other smaller issues. Once the top issue is solved, the next issues can be found and worked on until the performance meets the customer’s expectations.
+Any fix of a larger performance issue should be followed by a new performance test. Often, a large issue masks other smaller issues. After the top issue is resolved, the next issues can be found and worked on until the performance meets the customer's expectations.
 
 ## Additional resources
 [Set up new environments, Visual Studio Team Services, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
