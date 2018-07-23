@@ -228,3 +228,6 @@ The **Emailing.TxtToUse.Body** expression of the sample format is configured for
 - "%6" is replaced with the email address of the company's contact person.
 
 ![Email](media/FTIbyGER-Email.PNG)
+
+## Additional resources
+[Electronic reporting overview](general-electronic-reporting.md)
