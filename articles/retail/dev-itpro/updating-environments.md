@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 An environment can be updated by updating either its data or its code.
 
-There are multiple ways to update the data. For examples that show how to get data into an environment, see [Data entities and data packages](../../dev-itpro/dataentities/data-entities-data-packages).
+There are multiple ways to update the data. For examples that show how to get data into an environment, see [Data entities and data packages](../../dev-itpro/data-entities/integration-overview ).
 
 When you update an environment, you should also consider moving the whole database. This approach lets you quickly and easily duplicate the data from one environment to another.
 
@@ -43,11 +43,11 @@ Other updates are code updates. The environment page in Microsoft Dynamics Lifec
 
 Platform code is at a very low level, and no Microsoft Dynamics 365 for Retail features are implemented in the platform. Therefore, stand-alone platform binary updates don't require that you retest any Retail-specific code. Examples of features that are implemented in the platform are the Data Import/Export Framework (DIXF) and the batch framework.
 
-Binary updates or hotfixes include dynamic-link libraries (DLLs), scripts, and channel SQL schema changes. All channel-side hotfixes are released together with a binary update/hotfix. Because binary updates are DLLs, they are cumulative. For example, if you download a binary update on Friday, you automatically receive all binary hotfixes from Monday through Thursday.
+Binary updates or hotfixes include dynamic-link libraries (DLLs), scripts, and channel SQL schema changes. All channel-side hotfixes are released together as a binary update/hotfix. Because binary updates are DLLs, they are cumulative. For example, if you download a binary update on Friday, you automatically receive all binary hotfixes from Monday through Thursday.
 
 If the code merge is done correctly, the version of a binary hotfix that you take matches the version of the Microsoft-version.txt file in the Retail software development kit (SDK). Typically, binary updates are also linked to the latest platform. Therefore, when you take binary updates, you must stay up to date with the platform. Platform updates help increase the stability of the platform, and they affect build environments and test efforts to some extent.
 
-Application updates or hotfixes are delivered in X++ source code. Therefore, they aren't for the channel side but for the client side (they are either Retail-related or not Retail-related).
+Application updates or hotfixes are delivered in X++ source code. Therefore, they aren't for the channel side but for the Dynamics 365 side (they are either Retail-related or not Retail-related).
 
 Note that some updates require both an application update and a binary update. For hotfix recommendations, see the next section.
 
@@ -57,7 +57,7 @@ Third-party packages resemble application packages, but they are developed by ot
 
 In one useful and typical operation, the whole database is moved from one environment to another. For example, you might move the production database to development environments when you're preparing to develop additional features. Alternatively, you might move the golden setup database to the production database as part of the go-live process.
 
-For more details, see [Copy Database From Azure SQL to SQL Server](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/database/copy-databasefrom-azure-sql-to-sql-server). If source and destination environments don't have the same binary version, you should also do either a build and a database synchronization (for a development environment), or a deployment (for a sandbox or production environment).
+For more details, see [Copy Database From Azure SQL to SQL Server](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql). If source and destination environments don't have the same binary version, you should also do either a build and a database synchronization (for a development environment), or a deployment (for a sandbox or production environment).
 
 Every time that a database that has been moved from a different environment is restored, specific links in the database can be broken. The Environment reprovisioning tool fixes all these broken links for the default database group, regardless of type of environment that is used. The general guideline is that if the database comes from a different environment, the Environment reprovisioning tool must be run.
 
