@@ -159,6 +159,8 @@ Environments used for work of the same release should also have the same LCS til
 - The difference might be intentional. For example, a developer might work with the next version, whereas the rest of the team is still working with a different release. Alternatively, one development environment might be kept on an older version in case a production hotfix must be developed (and the production environment uses the older version than current development environments).
 
 Notice that after you've finished updating an environment, the tile counts for the available updates are significantly lower than they were when you started.
+/media/LCSDevEnvironmentpage.png
+[![LCS Dev Environment](./media/LCSDevEnvironmentpage.png)](/media/LCSDevEnvironmentpage.png)
 
 ## Move to a new version
 
