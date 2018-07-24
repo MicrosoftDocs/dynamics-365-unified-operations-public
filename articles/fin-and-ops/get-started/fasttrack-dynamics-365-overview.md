@@ -62,13 +62,11 @@ current and setup with monitored email addresses.
 
 ### Microsoft FastTrack for Dynamics 365 for Finance and Operations services
 
--   Tech talks (internal link to the section below)
+-   TechTalks 
 
+-   Community 
 
--   Community (internal link to the section below)
-
-
--   Workshops (internal link to the section below)
+-   Workshops 
 
 > [!Note]
 > The FastTrack team is continuously increasing the documentation of its processes and
