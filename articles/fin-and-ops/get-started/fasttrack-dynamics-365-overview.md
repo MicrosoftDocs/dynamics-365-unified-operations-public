@@ -53,17 +53,14 @@ and provide information about the program. There is no action required on your
 part other than making sure the user information in Lifecycle Services (LCS) is
 current and setup with monitored email addresses.
 
-**Tiered services for Finance and Operations**
+### Tiered services for Finance and Operations
 
 | Number of seats                                                                         | TechTalks |   Workshops   |          Assessments         | Dedicated FastTrack solution architect | Community |
 |-----------------------------------------------------------------------------------------|:---------:|:-------------:|:----------------------------:|:--------------------------------------:|:---------:|
 | 20-149 combined eligible App or Plan user subscription licenses, or the equivalent      |     ✓     | Not available | Go-live assessment via email |              Not available             |     ✓     |
 | 150 or more combined eligible App or Plan user subscription licenses, or the equivalent |     ✓     |       ✓       |  Go-live assessment workshop |                    ✓                   |     ✓     |
 
-**Microsoft FastTrack for Dynamics 365 for Finance and Operations services**
-
-------------------------------------------------------------------------
-
+### Microsoft FastTrack for Dynamics 365 for Finance and Operations services
 
 -   Tech talks (internal link to the section below)
 
@@ -73,7 +70,8 @@ current and setup with monitored email addresses.
 
 -   Workshops (internal link to the section below)
 
-**Note**: The FastTrack team is continuously increasing the documentation of its processes and
+> [!Note]
+> The FastTrack team is continuously increasing the documentation of its processes and
 guidance; see [Understand the implementation lifecycle](implementation-livecycle.md).
 
 ## TechTalks
