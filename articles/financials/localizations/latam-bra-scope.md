@@ -1326,6 +1326,10 @@ The following features and functionality are out of scope for the Brazilian loca
         - Fiscal printers that have more than one registry for the same tax rate
         - Rounding of values, quantities, and amounts at the point of sale (POS) by using a different rule than the fiscal printer
 
+    - **Tax calculation requirements:** The following tax calculation requirements for retail businesses in Brazil are out of scope for the Brazilian localization:
+
+        - Tax discounts for sales through Retail Enterprise POS in SUFRAMA
+
 ### Out of scope for fiscal books
 
 The following tax reporting requirements are out of scope for fiscal books for the Brazilian localization:
