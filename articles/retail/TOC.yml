@@ -36,7 +36,9 @@
   - name: Move an LCS Implementation project to another Azure Active Directory tenant
     href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md 
   - name: Implement multiple LCS projects and production environments on the same Azure Active Directory tenant
-    href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md    
+    href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md   
+  - name: Implement Finance and Operations Retail projects
+    href: ../dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
 - name: Payments
   items:
   - name: Payment methods
