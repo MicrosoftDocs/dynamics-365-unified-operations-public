@@ -1328,7 +1328,7 @@ The following features and functionality are out of scope for the Brazilian loca
 
     - **Tax calculation requirements:** The following tax calculation requirements for retail businesses in Brazil are out of scope for the Brazilian localization:
 
-        - Tax discounts for sales through Retail Enterprise POS in SUFRAMA
+        - Tax discounts for sales through Retail Enterprise POS in SUFRAMA or other Free Trade Zone
 
 ### Out of scope for fiscal books
 
