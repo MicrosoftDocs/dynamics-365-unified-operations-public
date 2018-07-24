@@ -316,7 +316,7 @@ Poor performance is often caused by these factors (in the order from highest imp
 - Additional Channel Database SQL extensions. Make sure the SQL is efficient and uses proper indexes 
 - The exact same custom or built-in CRT SQL queries are exercised multiple times. If it is too expensive and appropriate, caching could be applied.  
 
-For more details, see the section on [Retail development](dev-retail-home-page). 
+For more details, see the section on [Retail development](../../dev-retail-home-page.md). 
  
 Regarding investigating store performance, please follow some of the ideas published here: https://dynamicsnotes.com/retail-channel-performance-investigations/. With this information, you should be able to answer questions like “why is scanning an item in POS so slow” or “why is the customer details view so slow”. 
 
