@@ -35,7 +35,7 @@ This topic describes recommended practices to follow during a Microsoft Dynamics
 
 ## Onboarding Environments, Visual Studio Team Services and branches 
 
-Starting with the launch of AX7 the majority of environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). The former is the default, and the latter is usually done to have more control over a development or build environment.  See more details at [Understand Lifecycle Services](../../../dev-itpro/lifecycle-services/lcs-works-lcs).
+Starting with the launch of AX7 the majority of environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). The former is the default, and the latter is usually done to have more control over a development or build environment.  See more details at [Understand Lifecycle Services](../../dev-itpro/lifecycle-services/lcs-works-lcs).
 
 Tier 1 machines are developer or build environments. Tier 2 and up are multi-box environments for multiple test and verification purposes. Production environments are hands-off, and size of the environment is determined by the sizing process in LCS.  
 
