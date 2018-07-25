@@ -11,7 +11,7 @@
   - name: Deploy a demo environment
     href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
   - name: Deployment options
-    href: dev-itpro/choose-deployment.md
+    href: ../dev-itpro/choose-deployment.md
 - name: Understand the implementation lifecycle
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -20,7 +20,7 @@
   - name: Onboarding
     href: ../fin-and-ops/imp-lifecycle/onboard.md
   - name: Retail implementation project recommended practices
-    href: /dev-itpro/retail-implementation-project-recommended-practices.md 
+    href: ../dev-itpro/retail-implementation-project-recommended-practices.md 
   - name: Preparing for go-live
     href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
   - name: Go-live FAQ
@@ -365,7 +365,7 @@
     href: tasks/create-online-channel-define-channel-attributes.md
   - name: Create POS permission groups
     href: tasks/create-pos-permission-groups.md
-  - name: 'Create a POS visual profile '
+  - name: Create a POS visual profile
     href: tasks/create-pos-visual-profile-2016-02.md
   - name: Create product packages for purchase orders
     href: tasks/create-product-packages-purchase-orders.md
