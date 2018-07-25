@@ -5,7 +5,7 @@ title: Microsoft FastTrack for Dynamics 365 for Finance and Operations overview
 description: Microsoft FastTrack for Dynamics 365 for Finance and Operations is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. 
 author: margoc
 manager: AnnBe
-ms.date: 03/09/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -62,17 +62,17 @@ current and setup with monitored email addresses.
 
 ### Microsoft FastTrack for Dynamics 365 for Finance and Operations services
 
--   TechTalks 
+-   [TechTalks](#techtalks) 
 
--   Community 
+-   [Community](#community)
 
--   Workshops 
+-   [Workshops](#workshops)
 
 > [!Note]
 > The FastTrack team is continuously increasing the documentation of its processes and
 guidance; see [Understand the implementation lifecycle](implementation-livecycle.md).
 
-## TechTalks
+## <a name="techtalks"></a>TechTalks
 TechTalks focus on providing technical depth and best practices that empower
 both customers and partners with knowledge that is specific to the subject areas
 covered. These talks often provide an overview of available tooling and
@@ -85,13 +85,13 @@ efficiency of the workshops offered. The FastTrack team will work with you to
 help guide you to the relevant tech talks to prepare you for specific workshops.
 You also find the complete inventory of all the TechTalks that have been recorded and are available to stream or download, together with additional how-to videos, on [Videos for Dynamics 365 for Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/videos).
 
-## Community
+## <a name="community"></a>Community
 FastTrack Finance and Operations community provides a platform for customers and
 partners to post questions and get answers from FastTrack Solutions Architects
 on best practices and guidance.  See [FastTrack Finance and Operations Forum](https://community.dynamics.com/365/fasttrack/f/770) to
 access the community landing page.
 
-## Workshops
+## <a name="workshops"></a>Workshops
 Workshops are interactive outcome-based remote sessions. Customers and partners
 can provide input prior to the workshops and customize them for their
 engagements.
