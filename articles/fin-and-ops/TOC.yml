@@ -2093,7 +2093,7 @@
           - name: PIS and COFINS fixed assets
             href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
       - name: Mexico
-        href: ../financials/localization/mexico.md
+        href: ../financials/localizations/mexico.md
         items:
         - name: Scope of localization
           href: ../financials/localizations/latam-mex-scope.md
