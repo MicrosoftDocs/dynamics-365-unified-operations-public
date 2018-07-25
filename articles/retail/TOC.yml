@@ -11,7 +11,7 @@
   - name: Deploy a demo environment
     href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
   - name: Deployment options
-    href: ../dev-itpro/choose-deployment.md
+    href: dev-itpro/choose-deployment.md
 - name: Understand the implementation lifecycle
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -20,7 +20,7 @@
   - name: Onboarding
     href: ../fin-and-ops/imp-lifecycle/onboard.md
   - name: Retail implementation project recommended practices
-    href: ../dev-itpro/retail-implementation-project-recommended-practices.md 
+    href: dev-itpro/retail-implementation-project-recommended-practices.md 
   - name: Preparing for go-live
     href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
   - name: Go-live FAQ
@@ -38,13 +38,13 @@
   - name: Implement multiple LCS projects and production environments on the same Azure Active Directory tenant
     href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md   
   - name: Implement Finance and Operations Retail projects
-    href: ../dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+    href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
   - name: Set up new environments, Visual Studio Team Services, and branches for Retail projects
-    href: ../dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+    href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
   - name: Update code and environments for Retail projects
-    href: ../dev-itpro/updating-environments.md
+    href: dev-itpro/updating-environments.md
   - name: Testing and performance
-    href: ../dev-itpro/retail-implementation-testing-performance.md   
+    href: dev-itpro/retail-implementation-testing-performance.md   
 - name: Payments
   items:
   - name: Payment methods
