@@ -113,3 +113,10 @@ This topic provides links to documentation resources for Brazil.
   - [Calculate CIAP credit amount](tasks/br-10020-2-calculate-ciap-credit-amount.md)
   - [Include CIAP credit from a previous period](tasks/br-10020-3-include-ciap-credit-from-previous-period.md)
   - [PIS and COFINS fixed assets](tasks/br-10020-4-pis-cofins-fixed-assets.md)
+
+
+## Additional resources
+
+- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Microsoft Dynamics Localization Portal: Australia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/brazil.html)
