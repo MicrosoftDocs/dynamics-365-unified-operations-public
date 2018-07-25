@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Brazil
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Brazil. 
+This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in Brazil. 
   
 - [Fiscal books](latam-bra-fiscal-books.md)
   - [Configure fiscal books](latam-bra-configure-fiscal-books.md)
