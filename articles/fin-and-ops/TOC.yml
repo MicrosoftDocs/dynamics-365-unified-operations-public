@@ -533,6 +533,12 @@
         href: ../financials/accounts-receivable/set-up-interest-rates-interest-code.md
       - name: Waive, reinstate, or reverse interest fees
         href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
+      - name: Process interest
+        href: ../financials/accounts-receivable/tasks/process-interest.md
+      - name: Set up vendor invoice policies
+        href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+      - name: Record vendor invoice and match against received quantity
+        href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
       - name: Create a customer invoice
         href: ../financials/accounts-receivable/configure-customer-invoices.md
       - name: Establish customer payment terms
@@ -547,6 +553,8 @@
         href: ../financials/accounts-receivable/close-accounts-receivable.md
       - name: Create a collection letter sequence
         href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
+      - name: Process collection letters
+        href: ../financials/accounts-receivable/tasks/process-collection-letters.md
       - name: Create a direct debit mandate for a customer
         href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
       - name: Create an interest code with a range
@@ -555,20 +563,6 @@
         href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Deposit customer payments
         href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
-      - name: Accounts receivable tasks
-        items:
-        - name: Process collection letters
-          href: ../financials/accounts-receivable/tasks/process-collection-letters.md
-        - name: Process interest
-          href: ../financials/accounts-receivable/tasks/process-interest.md
-        - name: Record vendor invoice and match against received quantity
-          href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
-        - name: Review collections information
-          href: ../financials/accounts-receivable/tasks/review-collections-information.md
-        - name: Set up and generate accounts receivable aging information
-          href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-        - name: Set up vendor invoice policies
-          href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
       - name: Payments and settlements
         items:
         - name: Use a customer payment to settle multiple invoices that span multiple discount periods
