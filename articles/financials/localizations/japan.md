@@ -5,7 +5,7 @@ title: Japan
 description: This topic provides an overview of functionality specific to Japan.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/18/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.1
 # Japan
 
 [!include[banner](../includes/banner.md)]
+
+This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in Japan.
 
 ## Cash and bank management
 
@@ -129,6 +131,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 
 ## Additional resources
-- [Microsoft Dynamics Localization Portal: Japan report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Japan.html)
+
 - [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Microsoft Dynamics Localization Portal: Australia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/japan.html)
