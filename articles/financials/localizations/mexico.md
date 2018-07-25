@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Mexico. 
+This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in Mexico. 
 
 
 - [Scope of localization](latam-mex-scope.md)
@@ -54,3 +54,9 @@ This topic provides links to documentation resources for Mexico.
 - [Set up the chart of accounts for a legal entity in Mexico](tasks/mx-00020-chart-accounts-legal-entity-mexico.md)
 - [Specify the RFC registration ID for Mexican bank accounts](tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md)
 - [Vendor registration IDs](tasks/mx-00008-vendor-registration-ids.md)
+
+## Additional resources
+
+- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Microsoft Dynamics Localization Portal: Australia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/mexico.html)
