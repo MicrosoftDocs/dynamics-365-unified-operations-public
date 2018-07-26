@@ -19,8 +19,6 @@
     href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
   - name: Onboarding
     href: ../fin-and-ops/imp-lifecycle/onboard.md
-  - name: Retail implementation project recommended practices
-    href: dev-itpro/retail-implementation-project-recommended-practices.md 
   - name: Preparing for go-live
     href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
   - name: Go-live FAQ
