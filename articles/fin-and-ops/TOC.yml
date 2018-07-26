@@ -3530,7 +3530,7 @@
         href: ../financials/project-management/project-integration.md
     - name: Project time entry mobile workspace
       href: ../financials/project-management/project-time-entry-mobile-workspace.md
-    - name: Project Service Automation
+    - name: Configure Project Service Automation integration
       href: ../financials/project-management/PSA-integration.md
       items:
       - name: Project Service Automation integration parameters
