@@ -1270,6 +1270,7 @@
         - name: Tax thresholds FAQ
           href: ../financials/localizations/apac-ind-tax-thresholds.md
       - name: Japan
+        href: ../financials/localizations/japan.md
         items:
         - name: Acquire a fixed asset and claim for the government grant subsidy
           href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
@@ -1944,6 +1945,7 @@
     - name: Latin America
       items:
       - name: Brazil
+        href: ../financials/localizations/brazil.md
         items:
         - name: Fiscal books
           href: ../financials/localizations/latam-bra-fiscal-books.md
@@ -2107,6 +2109,7 @@
           - name: PIS and COFINS fixed assets
             href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
       - name: Mexico
+        href: ../financials/localizations/mexico.md
         items:
         - name: Scope of localization
           href: ../financials/localizations/latam-mex-scope.md
@@ -2146,13 +2149,15 @@
           href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
         - name: Vendor registration IDs
           href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
-    - name: Middle East
+    - name: Saudi Arabia
+      href: ../financials/localizations/saudi-arabia.md
       items:
       - name: Sales tax
         href: ../financials/localizations/apac-sau-sales-tax.md
       - name: Zakat reporting for Saudi Arabia
         href: ../financials/localizations/emea-sau-zakat-reporting.md
-    - name: North America
+    - name: United States
+      href: ../financials/localizations/united-states.md
       items:
       - name: Year-end 1099 reporting for the United States
         href: ../financials/localizations/noam-usa-year-end-1099-reporting.md
