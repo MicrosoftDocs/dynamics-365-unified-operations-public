@@ -5,7 +5,7 @@ title: Install the Security Development Tool (AX 2012)
 description: This topic provides information about how to install the Security Development Tool. 
 author: kfend
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 07/26/2018
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -34,7 +34,8 @@ ms.dyn365.ops.version: 2012
 
 [!include [banner](../../includes/banner.md)]
 
-**Note: **This is pre-release documentation of a preliminary nature and is subject to change at any time without notice. Microsoft cannot guarantee the accuracy of any information provided herein. Before you install the Security Development Tool, be aware that we assume that you meet the following prerequisites:
+> [!NOTE] 
+> This is pre-release documentation of a preliminary nature and is subject to change at any time without notice. Microsoft cannot guarantee the accuracy of any information provided herein. Before you install the Security Development Tool, be aware that we assume that you meet the following prerequisites:
 
 -   You are familiar with the development environment in Microsoft Dynamics AX 2012.
 -   You are familiar with the security model in Microsoft Dynamics AX 2012.
@@ -51,8 +52,8 @@ This section lists the procedures required to install and configure the Security
 2.  Run **SecurityDevelopmentTool.msi** to open the **Installation Wizard**.
 3.  Accept the Microsoft Software License Terms, and then click **Install**.
 4.  When a message indicates that the tool has been successfully installed, click **Finish**. After the **Installation** **Wizard** has finished running, the files are available at the following locations:
-    -   For 64-bit systems: %ProgramFiles (x86)%MicrosoftSecurity Development Tool
-    -   For 32-bit systems: %ProgramFiles%MicrosoftSecurity Development Tool
+    -   For 64-bit systems: %ProgramFiles (x86)%Microsoft%Security Development Tool
+    -   For 32-bit systems: %ProgramFiles%Microsof%tSecurity Development Tool
 
 ### Import and compile the tool
 
@@ -76,8 +77,3 @@ This section lists the procedures required to install and configure the Security
     |-------------------------------|------------------------------------|
     | SysSecRoleEntryPointDeveloper | SysContextMenu (AOT Add-Ins)       |
     | SysSecRoleEntryPoint          | System AdministrationSetupSecurity |
-
-
-
-
-
