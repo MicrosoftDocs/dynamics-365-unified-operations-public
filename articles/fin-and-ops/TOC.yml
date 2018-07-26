@@ -264,7 +264,8 @@
         href: ../supply-chain/cost-management/common-sources-of-production-variances.md
       - name: Cost categories used in production routing
         href: ../supply-chain/cost-management/cost-categories-used-production-routings.md
-      - name: Cost categories used in Production control and Project management accounting
+      - name: Cost categories used in Production control and Project management
+      accounting
         href: ../supply-chain/cost-management/cost-categories-used-production-control-project-management-accounting.md
       - name: Display charges for a manufactured item
         href: ../supply-chain/cost-management/charges-manufactured-item.md
@@ -3545,21 +3546,6 @@
         href: ../financials/project-management/project-integration.md
     - name: Project time entry mobile workspace
       href: ../financials/project-management/project-time-entry-mobile-workspace.md
-    - name: Configure Project Service Automation integration
-      href: ../financials/project-management/PSA-integration.md
-      items:
-      - name: Project Service Automation integration parameters
-        href: ../financials/project-management/PSA-parameters.md
-      - name: Synchronize project contracts and projects
-        href: ../financials/project-management/project-contracts-templates.md
-      - name: Synchronize project tasks
-        href: ../financials/project-management/project-tasks-template.md
-      - name: Synchronize project expense categories
-        href: ../financials/project-management/project-categories-templates.md
-      - name: Synchronize project estimates from to project forecasts
-        href: ../financials/project-management/project-estimates-templates.md
-      - name: Synchronize project actuals to the project integration journal
-        href: ../financials/project-management/project-actuals-templates.md
   - name: Sales and marketing
     href: ../supply-chain/sales-marketing/overview-sales-marketing.md
     items:
