@@ -362,8 +362,8 @@
             href: ../financials/project-management/project-estimates-templates.md?toc=/dev-itpro/toc.json
           - name: Synchronize project actuals to the project integration journal
             href: ../financials/project-management/project-actuals-templates.md?toc=/dev-itpro/toc.json
-- name: Consuming external web services
-        href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
+        - name: Consuming external web services
+          href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
   - name: Data management
     href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
     items:
