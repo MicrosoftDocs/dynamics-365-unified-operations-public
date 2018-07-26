@@ -795,6 +795,21 @@
           href: ../supply-chain/sales-marketing/field-service-work-order.md
         - name: Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations
           href: ../supply-chain/sales-marketing/field-service-invoice.md
+      - name: Configure Project Service Automation integration
+        href: ../financials/project-management/PSA-integration.md?toc=/dev-itpro/toc.json
+        items:
+        - name: Project Service Automation integration parameters
+          href: ../financials/project-management/PSA-parameters.md?toc=/dev-itpro/toc.json
+        - name: Synchronize project contracts and projects
+          href: ../financials/project-management/project-contracts-templates.md?toc=/dev-itpro/toc.json
+        - name: Synchronize project tasks
+          href: ../financials/project-management/project-tasks-template.md?toc=/dev-itpro/toc.json
+        - name: Synchronize project expense categories
+          href: ../financials/project-management/project-categories-templates.md?toc=/dev-itpro/toc.json
+        - name: Synchronize project estimates from to project forecasts
+          href: ../financials/project-management/project-estimates-templates.md?toc=/dev-itpro/toc.json
+        - name: Synchronize project actuals to the project integration journal
+          href: ../financials/project-management/project-actuals-templates.md?toc=/dev-itpro/toc.json
     - name: Consuming external web services
       href: data-entities/consume-external-web-service.md
 - name: Data management
