@@ -41,7 +41,8 @@ ms.dyn365.ops.version: 2012
 -   You are familiar with the security model in Microsoft Dynamics AX 2012.
 -   You have developer privileges in Microsoft Dynamics AX, so that you can run the tool from the Application Object Tree (AOT).
 
-**Important:** Some optional features of the Security Development Tool require that changes be made to framework classes, or that tracing be enabled. These changes can affect the overall performance of your Microsoft Dynamics AX system. Therefore, we recommend that you use this tool only in development or test environments.
+> [!IMPORTANT] 
+> Some optional features of the Security Development Tool require that changes be made to framework classes, or that tracing be enabled. These changes can affect the overall performance of your Microsoft Dynamics AX system. Therefore, we recommend that you use this tool only in development or test environments.
 
 ## Procedures
 This section lists the procedures required to install and configure the Security Development Tool.
@@ -61,7 +62,7 @@ This section lists the procedures required to install and configure the Security
 2.  Go to **Administrative Tools**, click **Services**, and stop the **Microsoft Dynamics AX Object Server 6.0** service.
 3.  Use Windows PowerShell or AXUtil to import the **SecurityDevelopmentTool.axmodel** model into the Microsoft Dynamics AX AOT.
     1.  On the Start menu, point to **All Programs**, point to **Administrative Tools**, and then click **Microsoft Dynamics AX Management Shell**.
-    2.  At the Windows PowerShell command prompt, PS C:&gt;, type the following command, and then press ENTER.
+    2.  At the Windows PowerShell command prompt, PS C:&gt;, type the following command, and then press Enter.
 
             Install-AXModel -File “C:\Program Files (x86)\Microsoft\Security Development Tool\SecurityDevelopmentTool.axmodel”
 
@@ -70,7 +71,7 @@ This section lists the procedures required to install and configure the Security
 4.  Start the Microsoft Dynamics AX Object Server 6.0 service.
 5.  Start the Microsoft Dynamics AX client. The Model store has been modified dialog box opens.
 6.  Click **Compile and Synchronize**.
-7.  When synchronization is completed, press Ctrl+Shift+W to open a Development Workspace.
+7.  When synchronization is completed, press **Ctrl+Shift+W** to open a Development workspace.
 8.  Run the **SysSecEntryPointManagerSetup** class to add the following menu items to the standard Microsoft Dynamics AX menus.
 
     | Menu item                     | Menu                               |
