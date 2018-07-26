@@ -33,31 +33,31 @@ ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-Whenever you create a new controller for Retail server application programming interfaces (APIs) or extend the existing controller, you must generate the Retail proxy by using the tools that are available as part of the Retail software development kit (SDK). For example, you must generate the Retail proxy if you add a new API for the Customer entity by extending the Customer controller.
+Whenever you create a new controller for Retail Server application programming interfaces (APIs) or extend the existing controller, you must generate the Retail proxy by using the tools that are available as part of the Retail software development kit (SDK). For example, you must generate the Retail proxy if you add a new API for the Customer entity by extending the Customer controller.
 
 ## What is the Retail proxy used for and when should you use it?
 
-All the clients use the proxy API to interact with Retail server. The Retail proxy abstracts the interface between Retail server and the Commerce runtime (CRT). For example, you create a new entity and some business logic as request/response operations in CRT, and you add a new Retail server API to expose that  entity and those request/response operations. You now want to access the entity and the request/response operations in the point of sale (POS) to do some client logic. You can manually create all the entities and request/response metadata in the POS, and access the Retail server by using the correct parameters. However, this approach involves lots of additional overhead, because you must duplicate the entities, manager, and request/response code in two places, and you must also write lots of code.
+All the clients use the proxy API to interact with Retail Server. The Retail proxy abstracts the interface between Retail Server and the Commerce runtime (CRT). For example, you create a new entity and some business logic as request/response operations in CRT, and you add a new Retail Server API to expose that entity and those request/response operations. You now want to access the entity and the request/response operations in the point of sale (POS) to do some client logic. You can manually create all the entities and request/response metadata in the POS, and access the Retail Server by using the correct parameters. However, this approach involves lots of additional overhead, because you must duplicate the entities, manager, and request/response code in two places, and you must also write lots of code.
 
-The Retail proxy reduces this effort by automatically generating the proxy for all the custom entities and request/response operations that are added in Retail server. The proxy tool generates the required interface and all the required metadata, and abstracts the actual implementation. In that way, you can include the files in the extension projects, and can access the Retail server APIs and the entities by using the metadata and interface that are generated.
+The Retail proxy reduces this effort by automatically generating the proxy for all the custom entities and request/response operations that are added in Retail Server. The proxy tool generates the required interface and all the required metadata, and abstracts the actual implementation. In that way, you can include the files in the extension projects, and can access the Retail Server APIs and the entities by using the metadata and interface that are generated.
 
 ## Proxy types
 
 There two types of proxy to support cross-platform scenarios:
 
-- **Typescript proxy** – The POS uses the Typescript proxy to access the Retail server APIs and CRT entities. If the POS is using Retail server, it requires the Typescript proxy. Otherwise, the POS won't be able to communicate with the Retail server for any operations or workflows.
-- **C# proxy** – The POS uses the C# proxy when it's offline and for e-commerce. (When the POS is offline, it communicates directly with CRT, without using Retail server.) If you want your customization to work when the POS is offline, and you want your e-commerce client to access the Retail server APIs, you must generate the C# proxy.
+- **Typescript proxy** – The POS uses the Typescript proxy to access the Retail Server APIs and CRT entities. If the POS uses Retail Server, it requires the Typescript proxy. Otherwise, the POS can't communicate with the Retail Server for any operations or workflows.
+- **C# proxy** – The POS uses the C# proxy when it's offline. (When the POS is offline, it communicates directly with CRT, without using Retail Server.) The POS also uses this proxy for the Dynamics e-Commerce platform. If you want your customization to work when the POS is offline, and you want your e-Commerce client to access the Retail Server APIs, you must generate the C# proxy.
 
-> [!NOTE]
-> The Typescript proxy and C# proxy differ, and the steps to create them also differ.
+The steps to generate the Typescript proxy and the C# proxy differ. The rest of this topic explains how to generate each type of proxy.
 
 ## Generate the Typescript proxy
 
-The following steps apply only to Microsoft Dynamics 365 for Retail (July 2017 release) and Microsoft Dynamics 365 for Finance and Operation.
+> [!IMPORTANT]
+> The following procedure applies only to Microsoft Dynamics 365 for Retail (July 2017 release) and Microsoft Dynamics 365 for Finance and Operation.
 
-You use the CommerceProxyGenerator.exe file from the Retail SDK\Reference folder to generate the Typescript proxy for the POS.
+You use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference folder to generate the Typescript proxy for the POS.
 
-1. Before you generate the proxy, copy the following libraries from **Retail SDK\Reference\...** to the **Retail SDK\Reference** folder:
+1. Before you generate the proxy, copy the following libraries from **Retail SDK\\Reference\\...** to the **Retail SDK\\Reference** folder:
 
     - Microsoft.OData.Core.dll@ 6.11.0.0
     - Microsoft.OData.Edm.dll@ 6.11.0.0
@@ -65,126 +65,139 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\Reference folder
     - System.Web.Http.dll@ 5.2.2.0
     - System.Web.OData.dll@ 5.5.1.0
 
-2. Copy the customized Retail server and CRT libraries to the **Retail SDK\Reference** folder.
-3. Open a Command Prompt window as an administrator, and navigate to the **...\Retail SDK\Reference** folder. Run the following command to generate the proxy. The proxy files will be generated in the same folder.
+2. Copy the customized Retail Server and CRT libraries to the **Retail SDK\\Reference** folder.
+3. Open a Command Prompt window as an administrator, and navigate to the **...\\Retail SDK\\Reference** folder. Run the following command to generate the proxy. The proxy files will be generated in the same folder.
 
     ```
-    CommerceProxyGenerator.exe <Path>\\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
+    CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
     ```
 
     Here is an example.
 
     ``` 
-    CommerceProxyGenerator.exe C:\\RetailSDK\\Reference\\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\Reference\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /application:typescriptextensions
+    CommerceProxyGenerator.exe C:\RetailSDK\Reference\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\RetailSDK\Reference\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /application:typescriptextensions
     ```
 
-    In the command that you run, replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with the name of your custom Retail server extension library. Include the generated files in your POS project. The command will generate two files that are based on your extension libraries: DataServiceEntities.g.ts and DataServiceRequests.g.ts.
+    In the command that you run, replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with the name of your custom Retail Server extension library. Include the generated files in your POS project. The command generates two files that are based on your extension libraries: DataServiceEntities.g.ts and DataServiceRequests.g.ts.
 
     > [!NOTE]
-    > You must generate the proxy for all Retail server extensions.
+    > You must generate the proxy for all Retail Server extensions.
 
-## Generate the C# proxy (7.1 and 7.2) - These steps are not applicable for version 7.3 and higher
+## Generate the C# proxy (7.1 and 7.2)
 
-1. Open the **Customization.settings** files from **...Retail SDK\BuildTools**.
-2. Under the **RetailServerLibraryPathForProxyGeneration** node, include all custom Retail server extension libraries, as shown here.
+> [!IMPORTANT]
+> The following procedure doesn't apply to version 7.3 and later.
+
+1. Open the **Customization.settings** file from **...Retail SDK\\BuildTools**.
+2. Under the **RetailServerLibraryPathForProxyGeneration** node, include all your custom Retail Server extension libraries, as shown here.
 
     ```
     <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll"/>;
     ```
 
-    In this example, **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** is the custom library.
+    In this example, there is just one custom library, **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll**. However, be sure to include all your custom Retail Server extension libraries.
 
-    > [!NOTE]
-    > Add all your custom Retail server extension libraries.
-
-3. Open **RetailSDK\Proxies\RetailProxy\Proxies.RetailProxy.csproj**.
+3. Open **RetailSDK\\Proxies\\RetailProxy\\Proxies.RetailProxy.csproj**.
 4. Include your custom CRT project library as a reference to **Proxies.RetailProxy.csproj**.
-5. Open **RetailSDK\Proxies\RetailProxy\Adapters\UsingStatements.Extensions.txt** in the solution.
-6. In **UsingStatements.Extensions.txt**, add the **using** statement for your CRT entity namespace and request/response namespace. For example, if you use the **Contoso.Commerce.Runtime.DataModel** namespace in your CRT extension, add that namespace in **UsingStatements.Extensions.txt** to generate the proxy.
+5. Open **RetailSDK\\Proxies\\RetailProxy\\Adapters\\UsingStatements.Extensions.txt** in the solution.
+6. In **UsingStatements.Extensions.txt**, add the **using** statement for your CRT entity namespace and request/response namespace. For example, if you use the **Contoso.Commerce.Runtime.DataModel** namespace in your CRT extension, add that namespace in **UsingStatements.Extensions.txt** to generate the proxy, as shown here.
 
     ```
     using Contoso.Commerce.Runtime.DataModel;
     ```
 
 7. Build the project.
-8. Add a new class under the **Adapters** folder. Use any other manager class from the adapter folder as a template, so that the whole namespace is included.
-9. Extend the class from the interface manager, and implement only the required interface methods.
+8. Under the **Adapters** folder, add a new class file. Use any other manager class from the adapter folder as a template, so that the whole namespace is included.
+9. Extend the class from the interface manager, and implement only the interface methods that are required.
 
-    To learn how generate the interface and manager classes, see the Store Hours sample in the Retail SDK. The instructions are in the **RetailSDK\Code\Documents\SampleExtensionsInstructions\StoreHours\readme.txt** file.
-    
-**How to generate C# proxy (this applicable for both POS and Ecommerce) for 7.3**
+    To learn how generate the interface and manager classes, see the Store Hours sample in the Retail SDK. The instructions are in the **RetailSDK\\Code\\Documents\\SampleExtensionsInstructions\\StoreHours\\readme.txt** file.
 
-1.  Navigate to RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions. StoreHoursSample
+## Generate the C# proxy (7.3)
 
-2.  Open the Proxies.RetailProxy.Extensions.StoreHoursSample project file in visual studio.
+> [!IMPORTANT]
+> The following procedure applies to both the POS and e-Commerce.
 
-3.  In visual studio, right click and unload the project.
+For each Retail Server extension, you must generate a separate proxy.
 
-4.  Right click the project and choose Edit Proxies.RetailProxy.Extensions.StoreHoursSample.csproj file.
+1. Navigate to **RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.StoreHoursSample**.
+2. In Microsoft Visual Studio, open the **Proxies.RetailProxy.Extensions.StoreHoursSample** project file.
+3. Right-click, and select to unload the project.
+4. Right-click the project, and select to edit the **Proxies.RetailProxy.Extensions.StoreHoursSample.csproj** file.
+5. In the first property group section, update the following nodes:
 
-5.  Update the below nodes under the first property group section:
+    - **&lt;RootNamespace&gt;** – Specify your custom namespace.
+    - **&lt;AssemblyName&gt;** – Specify your custom output library name for the proxy.
 
-    <RootNamespace> - Update it with your custom namespace
+6. Update the **CommerceProxyGeneratorExtendedAssemblyPaths** element by specifying the name of your Retail Server extension library.
 
-    <AssemblyName> - Update it with your custom output library name for the proxy
+    Here is an example.
 
-    <RetailServerExtensionLibraryNoPrefixForRetailProxyCSharpExtensionGeneration> - Update it with your retail server extension library name.
+    ```
+    <CommerceProxyGeneratorExtendedAssemblyPaths Include="..\..\RetailServer\Extensions.StoreHoursSample\bin\$(Configuration)\net451\$(AssemblyNamePrefix).RetailServer.StoreHoursSample.dll" />
+    ```
 
-    **Note:** Proxy is generated based on this library name.
+    > [!NOTE]
+    > **.RetailServer.StoreHoursSample.dll** is the name of the Retail Server extension assembly, and the rest of the value is the prefix (if there is a prefix) and the path of the assembly where the proxy engine can find this assembly. The proxy is generated based on this assembly.
 
-6.  Save the csproj file and load the project again.
+7. Save the file, and load the project again.
+8. Rename the project according to your extension pattern.
+9. After the project is loaded, delete the **StoreDayHoursManager.cs** file from the **Adapters** folder.
+10. Add all the relevant CRT and Retail Server libraries to the proxy project as project or assembly references.
+11. Rebuild the project.
 
-7.  Rename the project according to your extension pattern.
+    You will see that a new Interfaces.g.cs file is generated inside the Adapters folder.
 
-8.  Once the project is loaded, delete the StoreDayHoursManager.cs file from the Adapters folder.
+    > [!NOTE]
+    > Before you build the proxy project, rebuild all your CRT and Retail Server extension libraries, and drop them into the **RetailSDK\\References** folder.
 
-9.  Add all the relevant CRT library as project reference. (CRT libraries referred or used by your retail server extension)
+12. Include the new **Interfaces.g.cs** file in the proxy project. However, don't modify this file.
+13. Under the **Adapters** folder, add a new class file, and name it according to your extension pattern.
+14. Extend the class from the interface manager class, and implement only the interface methods that are required.
 
-10. Rebuild the project.
+    > [!NOTE]
+    > You can find the name of the interface manager class in the Interfaces.g.cs. file.
 
-    Note: Before building the proxy project, please rebuild all our CRT and Retail server extensions libraries and drop it in RetailSDK\\References folder.
+    In the following example, **IStoreDayHoursManager** is the name of the interface.
 
-11. Add a new class file under Adapters folder and name it according to your extension pattern.
+    ```C#
+    public interface IStoreDayHoursManager : Microsoft.Dynamics.Commerce.RetailProxy.IEntityManager
+    {
+    }
+    ```
 
-12. Please make sure the namespace used in the CRT entity and the new class you added in the previous step is same. (Check the store hours sample proxy and store hours CRT sample project for reference)
+    For the full sample code, see the **Proxies.RetailProxy.Extensions.StoreHoursSample** project under **RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.StoreHoursSample**.
 
-13. Extend the class from the interface manager and implement the interface methods, only the required ones leave others as is.
+15. Inside the methods you will call the actual CRT request/response. Avoid including any logic in the proxy project. The proxy project should just call the CRT request/response.
+16. Build the project.
+17. Copy the output assembly, and paste it in the **RetailSDK\\References** folder.
+18. Navigate to the **RetailSDK\\Assets** folder, and open the **RetailProxy.MPOSOffline.ext.config** file.
+19. In the **composition** section, register the name of your new proxy library (that is, the assembly that was generated after you built your proxy project).
 
-    Note: The interface name will be something similar to your controller name without the word controlloer.
+    Here is an example.
 
-    Check the Proxies.RetailProxy.Extensions.StoreHoursSample proj under RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions.StoreHoursSample for full code sample.
-  
-14. Inside the methods you will call the actual CRT request/response. Please avoid any logic in the proxy project, it should only call the CRT request/response.
+    ```
+    <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
+    ```
 
-15. Build the project.
+    In this example, the proxy library is named **Contoso.Commerce.RetailProxy.StoreHoursSample**. You should specify the name of your proxy library in the **value** field.
 
-16. Copy the output assembly and paste in RetailSDK\\References folder.
+20. For manual testing, open the **RetailProxy.MPOSOffline.ext.config** file under **C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext**. Update the **composition** section with the name of the custom proxy library.
 
-17. Navigate to RetailSDK\\Assets folder and open RetailProxy.MPOSOffline.ext.config
+    Here is an example.
 
-18. Under the composition section, register your new proxy library name. (The assembly generated after building your proxy project.
+    ```
+    <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
+    ```
 
-    Ex: <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
+21. For e-Commerce, you must initialize the proxy for the extensions before you call it from your e-Commerce project. In your e-Commerce **Startup.cs** file (or an equivalent, such as web project initialization), initialize **RetailServerContext** with the Extended data model(EDM) model for your Retail proxy extension. Otherwise, you will receive a runtime error when you try to call the proxy. You must complete this step only one time.
 
-    **Note:** In the value field you will add your proxy library name, in the example we used       Contoso.Commerce.RetailProxy.StoreHoursSample
+    Here is an example.
 
-19. For manual testing, update the RetailProxy.MPOSOffline.ext.config under the C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext with the custom proxy library name under the composition section.
-
-    Ex: <add source="assembly" value="Contoso.Commerce.RetailProxy.StoreHoursSample" />
-
-**Note:**
-In case of e-commerce, you must perform one more additional step to initialize the proxy for the extensions before calling it from your e-commerce project:
-
-1. In your e-commerce Startup.cs (or their equivalent like web project initialization etc.) you must initialize the RetailServerContext with the edm model for your retail proxy extension or else you will get runtime error if you try to call the proxy. You need to do this only once to initialize the RetailServerContext.
-             
-Ex:
-```C#
-  RetailServerContext.Initialize(newIEdmModelExtension[]
-                {
-                   // /* BEGIN SDKSAMPLE_STOREHOURS
- 
-                   new Contoso.Commerce.RetailProxy.StoreHoursSample.EdmModel(),
- 
-                    // END SDKSAMPLE_STOREHOURS */
-                });
-```
+    ```C#
+    RetailServerContext.Initialize(newIEdmModelExtension[]
+    {
+        // /* BEGIN SDKSAMPLE_STOREHOURS
+        new Contoso.Commerce.RetailProxy.StoreHoursSample.EdmModel(),
+        // END SDKSAMPLE_STOREHOURS */
+    });
+    ```
