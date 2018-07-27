@@ -1046,22 +1046,38 @@
       items:
       - name: Plan for public sector functionality
         href: ../financials/public-sector/plan-public-sector-functionality.md
+      - name: Create cover and signature pages for a payments report for the public sector
+        href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
       - name: Accounts payable in the public sector
         href: ../financials/public-sector/accounts-payable-public-sector.md
         items:
         - name: Purchase order codes in the public sector
           href: ../financials/public-sector/purchase-order-codes-public-sector.md
+        - name: Create and assign a trading partner code in the public sector
+          href: ../financials/public-sector/tasks/create-assign-trading-partner-code-public-sector.md
         - name: Posting definitions in the public sector
           href: ../financials/public-sector/posting-definitions-public-sector.md
-        - name: Plan for one-time vendors in the public sector
-          href: ../financials/public-sector/plan-one-time-vendors-public-sector.md
         - name: One-time vendors in the public sector
           href: ../financials/public-sector/one-time-vendors-public-sector.md
+        - name: Create a one-time vendor and invoice in the public sector
+          href: ../financials/public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
+        - name: Create a vendor certification type in the public sector
+          href: ../financials/public-sector/tasks/create-vendor-certification-type-public-sector.md
+        - name: Import and create multiple one-time vendors and invoices in the public sector
+          href: ../financials/public-sector/tasks/import-multiple-one-time-vendors.md
+        - name: Plan for one-time vendors in the public sector
+          href: ../financials/public-sector/plan-one-time-vendors-public-sector.md
+        - name: Control access to purchase agreements in the public sector
+          href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
       - name: Accounts receivable in the public sector
         href: ../financials/public-sector/accounts-receivable-public-sector.md
         items:
         - name: Billing classifications and billing codes in the public sector
           href: ../financials/public-sector/billing-classifications-billing-codes-public-sector.md
+        - name: Create a billing classification in the public sector
+          href: ../financials/public-sector/tasks/create-billing-classification-public-sector.md
+        - name: Create a billing code for the public sector
+          href: ../financials/public-sector/tasks/create-billing-code-public-sector.md
         - name: Settlement priority in the public sector
           href: ../financials/public-sector/settlement-priority-public-sector.md
         - name: Free text invoices in the public sector
@@ -1071,10 +1087,16 @@
       - name: Budgeting in the public sector
         href: ../financials/public-sector/budgeting-public-sector.md
         items:
+        - name: Create an original budget and reverse preliminary budget entries in the public sector
+          href: ../financials/public-sector/tasks/create-original-budget.md
+        - name: Create a preliminary budget for public sector
+          href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
         - name: Budget analysis in the public sector
           href: ../financials/public-sector/budget-analysis-public-sector.md
         - name: Preliminary budgets and apportionments in the public sector
           href: ../financials/public-sector/preliminary-budgets-apportionments-public-sector.md
+        - name: Create a commitment to reserve budget funds for the public sector
+          href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
       - name: Fixed assets in the public sector
         href: ../financials/public-sector/fixed-asset-public-sector.md
       - name: General ledger in the public sector
@@ -1082,6 +1104,8 @@
         items:
         - name: Advanced ledger entries in the public sector
           href: ../financials/public-sector/advanced-ledger-entries-public-sector.md
+        - name: Create an advanced ledger entry in the public sector
+          href: ../financials/public-sector/tasks/create-advanced-ledger-entry-public-sector.md
         - name: Year-end processing in the public sector
           href: ../financials/public-sector/year-end-processing-public-sector.md
         - name: Derived financial hierarchies in the public sector
@@ -1092,42 +1116,10 @@
         href: ../financials/public-sector/security-roles-public-sector.md
       - name: Funds in the public sector
         href: ../financials/public-sector/funds-public-sector.md
-      - name: Public sector tasks
-        items:
-        - name: Add a certification type to a vendor in the public sector
-          href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
-        - name: Control access to purchase agreements in the public sector
-          href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
-        - name: Create an advanced ledger entry in the public sector
-          href: ../financials/public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-        - name: Create and assign a trading partner code in the public sector
-          href: ../financials/public-sector/tasks/create-assign-trading-partner-code-public-sector.md
-        - name: Create a billing classification in the public sector
-          href: ../financials/public-sector/tasks/create-billing-classification-public-sector.md
-        - name: Create a billing code for the public sector
-          href: ../financials/public-sector/tasks/create-billing-code-public-sector.md
-        - name: Create a commitment to reserve budget funds for the public sector
-          href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
-        - name: Create cover and signature pages for a payments report for the public sector
-          href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
-        - name: Create a fund type in the public sector
-          href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
-        - name: Create a one-time vendor and invoice in the public sector
-          href: ../financials/public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
-        - name: Create an original budget and reverse preliminary budget entries in the public sector
-          href: ../financials/public-sector/tasks/create-original-budget.md
-        - name: Create a preliminary budget for public sector
-          href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
-        - name: Create a vendor certification type in the public sector
-          href: ../financials/public-sector/tasks/create-vendor-certification-type-public-sector.md
-        - name: Import and create multiple one-time vendors and invoices in the public sector
-          href: ../financials/public-sector/tasks/import-multiple-one-time-vendors.md
-        - name: Set up a derived financial hierarchy in the public sector
-          href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
-        - name: Set up a fund in the public sector
-          href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
-        - name: Set up purchase agreement classifications in the public sector
-          href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
+      - name: Create a fund type in the public sector
+        href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
+      - name: Add a certification type to a vendor in the public sector
+        href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
     - name: Financial reporting
       href: ../financials/general-ledger/financial-reporting-getting-started.md
       items:
