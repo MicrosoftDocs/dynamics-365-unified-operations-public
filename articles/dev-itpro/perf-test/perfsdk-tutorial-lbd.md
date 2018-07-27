@@ -201,6 +201,10 @@ Follow these steps on each Application Object Server (AOS) VM in the on-premises
     <add key="Aos.AosRole" value="AosRoleUnknown" />
     ```
 
+    > [!NOTE]
+    > Setting the **AosRole** to **AosRoleUnknown** disables the limit on the number of web sessions per user. This is necessary to complete load testing with a large user load because the load test will create many sessions for a single user. Once you are finished with your load testing, reset this value to **"AosRoleWeb"**.
+
+
 7. In Service Fabric Explorer, find the **Code** package for the AOS node, select the ellipse button (**...**), and then select **Restart** to restart the Finance and Operations application.
 
     ![Restarting Finance and Operations from Service Fabric Explorer](./media/ServiceFabricExplorerRestart.png)
