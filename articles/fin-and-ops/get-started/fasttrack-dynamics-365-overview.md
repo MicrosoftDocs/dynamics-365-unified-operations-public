@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Microsoft FastTrack for Dynamics 365 for Finance and Operations overview
-description: Microsoft FastTrack for Dynamics 365 for Finance and Operations is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. 
+title: Microsoft FastTrack for Finance and Operations
+description: This topic provides an overview of Microsoft FastTrack for Microsoft Dynamics 365 for Finance and Operations. FastTrack is a customer success service that is designed to help you move smoothly and confidently to Microsoft Dynamics 365, so that you can realize business value faster.
 author: margoc
 manager: AnnBe
 ms.date: 07/25/2018
@@ -29,344 +29,206 @@ ms.dyn365.ops.version: Version 1611, July 2017 update
 
 ---
 
-# Microsoft FastTrack for Dynamics 365 for Finance and Operations overview
+# Microsoft FastTrack for Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft FastTrack for Dynamics 365 for Finance and Operations is our customer
-success service designed to help you deploy Finance and Operations in the cloud
-smoothly and confidently and realize business value faster. When you participate
-in the FastTrack program, you will receive guidance on implementation best
-practices, planning for successful rollouts, and expanding capabilities – all
-while implementing at your own pace. Additionally, you will have access to
-Microsoft engineering resources committed to making your experience with Finance
-and Operations a success.  
+Microsoft FastTrack for Microsoft Dynamics 365 for Finance and Operations is a customer success service that is designed to help you move smoothly and confidently to Microsoft Dynamics 365, so that you can realize business value faster. When you participate in the FastTrack program, you receive guidance about implementation best practices, planning for successful rollouts, and expanding capabilities. However, you implement at your own pace. You also have access to Microsoft engineering resources who are committed to making your experience with Finance and Operations a success.
 
-## Eligibility for Microsoft FastTrack for Dynamics 365 for Finance and Operations
-To get started with FastTrack, your project must satisfy the minimum license
-requirement. For more details, please refer to the [Licensing Guide]( https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Currently there is a 20-seat minimum of Dynamics 365 Unified Operations Plan or
-equivalent.
+## Eligibility for FastTrack for Finance and Operations
 
-After your LCS **Implementation project** workspace is provisioned, the
-Microsoft FastTrack team will contact your project team to onboard the project
-and provide information about the program. There is no action required on your
-part other than making sure the user information in Lifecycle Services (LCS) is
-current and setup with monitored email addresses.
+To get started with FastTrack, your project must meet the minimum license requirement. For more information, see the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Currently, there is a 20-seat minimum of Dynamics 365 Unified Operations Plan or equivalent.
+
+After your **Implementation project** workspace is provisioned in Microsoft Dynamics Lifecycle Services (LCS), the FastTrack team will contact your project team to onboard the project and provide information about the program. No action is required on your part. You just have to make sure that the user information in LCS is up to date, and that the email addresses in the setup are monitored.
 
 ### Tiered services for Finance and Operations
 
-| Number of seats                                                                         | TechTalks |   Workshops   |          Assessments         | Dedicated FastTrack solution architect | Community |
+| Number of seats                                                                         | TechTalks | Workshops     | Assessments                  | Dedicated FastTrack solution architect | Community |
 |-----------------------------------------------------------------------------------------|:---------:|:-------------:|:----------------------------:|:--------------------------------------:|:---------:|
-| 20-149 combined eligible App or Plan user subscription licenses, or the equivalent      |     ✓     | Not available | Go-live assessment via email |              Not available             |     ✓     |
-| 150 or more combined eligible App or Plan user subscription licenses, or the equivalent |     ✓     |       ✓       |  Go-live assessment workshop |                    ✓                   |     ✓     |
+| 20–149 combined eligible App or Plan user subscription licenses, or the equivalent      | ✓         | Not available | Go-live assessment via email | Not available                          | ✓         |
+| 150 or more combined eligible App or Plan user subscription licenses, or the equivalent | ✓         | ✓             | Go-live assessment workshop  | ✓                                      | ✓         |
 
-### Microsoft FastTrack for Dynamics 365 for Finance and Operations services
+### FastTrack for Finance and Operations services
 
--   [TechTalks](#techtalks) 
-
--   [Community](#community)
-
--   [Workshops](#workshops)
+- [TechTalks](#techtalks)
+- [Community](#community)
+- [Workshops](#workshops)
 
 > [!NOTE]
-> The FastTrack team is continuously increasing the documentation of its processes and
-guidance. For more information, see [Understand the implementation lifecycle](implementation-livecycle.md).
+> The FastTrack team is always increasing the documentation of its processes and guidance. For more information, see [Understand the implementation lifecycle](implementation-livecycle.md).
 
-## <a name="techtalks"></a>TechTalks
-TechTalks focus on providing technical depth and best practices that empower
-both customers and partners with knowledge that is specific to the subject areas
-covered. These talks often provide an overview of available tooling and
-features. TechTalks are delivered in the form of live webcasts that include a
-question and answer (Q&A) session at the end. They can also be consumed on-demand and are publicly
-available. You can view all TechTalks and sign up for future talks at [FastTrack for Finance and Operations TechTalks](https://infopedia.eventbuilder.com/index?landingpageid=92tzhl).
+## TechTalks
 
-TechTalks form a basis of understanding that will increase the value and
-efficiency of the workshops offered. The FastTrack team will work with you to
-help guide you to the relevant TechTalks to prepare you for specific workshops.
-You can also find the complete inventory of all recorded TechTalks that are available to stream or download, together with additional how-to videos, at [Videos for Dynamics 365 for Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/videos).
+TechTalks focus on empowering both customers and partners by providing technical depth and best practices that are specific to the subject areas that are covered. These talks often provide an overview of available tooling and features. TechTalks are delivered in the form of live webcasts that include a question and answer (Q&A) session at the end. They can also be accessed on-demand and are publicly available. To view all TechTalks and sign up for future talks, see [FastTrack Dynamics 365 for Finance & Operations - Enterprise Edition - Tech Talks](https://infopedia.eventbuilder.com/index?landingpageid=92tzhl).
 
-## <a name="community"></a>Community
-The FastTrack Finance and Operations community provides a platform for customers and
-partners to post questions and get answers from FastTrack Solutions Architects
-on best practices and guidance.  To access the community landing page, see [FastTrack Finance and Operations Forum](https://community.dynamics.com/365/fasttrack/f/770).
+TechTalks provide a basic understanding that will increase the value and efficiency of the workshops that are offered. The FastTrack team will guide you to relevant TechTalks that will help you prepare for specific workshops. For a complete inventory of all recorded TechTalks that are available to stream or download, together with additional how-to videos, see [Videos for Dynamics 365 for Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/videos).
 
-## <a name="workshops"></a>Workshops
-Workshops are interactive outcome-based remote sessions. Customers and partners
-can provide input prior to the workshops and customize them for their
-engagements.
+## Community
+The FastTrack Finance and Operations community provides a platform where customers and partners can post questions and get answers from FastTrack solution architects about best practices and guidance. To participate in the community, see [FastTrack Finance and Operations Forum](https://community.dynamics.com/365/fasttrack/f/770).
+
+## Workshops
+
+Workshops are interactive outcome-based remote sessions. Customers and partners can provide input before the workshops and customize them for their engagements.
 
 ### Onboarding workshop
 
-The Onboarding workshop is designed to introduce FastTrack services, and to
-provide introductory guidance on a set of implementation topics that will help
-to ensure maximum success. For more information, see [Onboard a Finance and Operations Project](onboard.md). Topics are likely to include:
+The Onboarding workshop is designed to introduce FastTrack services and provide introductory guidance about a set of implementation topics that will help guarantee maximum success. For more information, see [Onboard a Finance and Operations Project](onboard.md). Here are some of the topics that the workshop is likely to cover:
 
--   Team introductions
+- Team introductions
+- Overview of FastTrack for Finance and Operations
+- Project goals and objectives
+- Engagement scope, schedule, and adoption targets
+- Responsibilities among customers, partners, and the FastTrack engineering team
+- Explanation of how services are delivered, and where and when to seek help from the FastTrack engineering team
+- Success factors and key learning that can be shared by the FastTrack team
 
--   FastTrack for Finance and Operations overview
-
--   Project goals and objectives
-
--   Engagement scope, schedule, and adoption targets
-
--   Responsibilities among customers, partners, and the Microsoft FastTrack
-    engineering team
-
--   Explanation on how services are delivered, where and when to seek help from
-    the Microsoft FastTrack engineering team
-
--   Success factors and key learnings that can be shared by the FastTrack team.
-
-The typical format is a 1 hour Skype call. The recommended attendees include
-key stakeholders and project team leaders from customer, partner, and Microsoft
-teams.
+The typical format is a one-hour Skype call. The recommended attendees include key stakeholders and project team leaders from the customer, partner, and Microsoft teams.
 
 ### Solution blueprint workshops
 
-The Solution Blueprint workshops are designed to promote understanding of the
-solution design to facilitate alignment with our public cloud deployment
-approach, known patterns and best practices, a review of the product roadmap,
-and project goals and schedule. The initial blueprint review is conducted early
-in the implementation. Supplementary reviews are conducted as the blueprint
-evolves. Topics are likely to include:
+The Solution blueprint workshops are designed to promote understanding of the solution design to facilitate alignment with the approach that Microsoft uses for public cloud deployment, known patterns and best practices, a review of the product roadmap, and project goals and schedule. The initial blueprint review is done early in the implementation. Supplementary reviews are done as the blueprint evolves. Here are some of the topics that these workshops are likely to cover:
 
--   Solution overview and rollout plan
+- Solution overview and rollout plan
+- Application component design
+- Inclusions from independent software vendors (ISVs)
+- Instance strategy
+- Environment plan
+- Business process catalog
+- Gap solution design
+- Integration design
 
--   Application Component Design
+    - Data migration design
 
--   ISV inclusions
+- Business intelligence and analytics design
 
--   Instance Strategy
+The typical format is a two-to-four-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
 
--   Environment Plan
+### Environment planning workshop
 
--   Business Process Catalog
+The Environment planning workshop is designed to cover the environment planning in more depth. Here are some of the topics that the workshop is likely to cover:
 
--   Gaps Solution Design
+- Environment strategy
+- Project methodology
+- Project schedule and phases
+- Rollout and long-term operations plan
 
--   Integration Design
+The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and technical leads are mandatory.
 
-    -   Data migration Design
+### Gap solution design workshop
 
--   Business Intelligence and Analytics Design
+The Gap solution design workshop is designed for implementations that have critical requirements that aren't supported by the standard system. The workshop reviews the top gaps in terms of complexity. This workshop isn't intended as a fit/gap review. The expectation is that initial consideration of solutions for every scenario will be completed before the workshop. Here are some of the topics that the workshop is likely to cover:
 
-The typical format is a 2 to 4 hour Skype call. Recommended attendees include
-key stakeholders from customer and partner teams. Solution architects,
-functional leads, and technical leads are mandatory.
+- Gap requirements
+- Proposed extension solution
+- Potential workarounds that have been considered
+- ISV solutions that have been considered
 
-### Environment planning workshop 
+The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, functional leads, and technical leads are mandatory.
 
-This workshop is designed to cover the environment planning in more depth.
-Topics are likely to include:
+### Application lifecycle management review workshop
 
--   Environment strategy
+The Application lifecycle management (ALM) review workshop is designed for cases where implementers want to make sure that their ALM approach will meet the requirements of the implementation and be aligned with typical best practices. Here are some of the topics that the workshop is likely to cover:
 
--   Project methodology
+- Environment plan
+- Development work management plan
+- Code management design
+- Build process design
+- Rollout plan
 
--   Project schedule and phases
+The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and technical leads are mandatory.
 
--   Rollout and long-term operations plan
+### Performance workshop
 
-The typical format is a 1 to 3 hour Skype call. Recommended attendees
-include key stakeholders from customer and partner teams. Solution architects,
-project managers and technical leads are mandatory.
+The Performance workshop is designed for cases where implementers must make sure that performance-related aspects of the implementation are accounted for, and that the correct process and approach are followed to help guarantee performance. Here are some of the topics that the workshop is likely to cover:
 
-### Gap solution design workshop 
+- Usage profile
+- Performance testing approach
+- Performance remediation approach
 
-The gap solution design workshop is designed for implementations that have
-critical requirements not supported by the standard system. The workshop will
-review the top gaps in terms of complexity. This is not intended to be a fit/gap
-review and it is expected that each scenario will have initial solutioning
-completed prior to the workshop. Topics are likely to include:
+The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
 
--   Gaps requirements
+### Integration design workshop
 
--   Proposed extension solution
+The Integration design workshop is designed to review the overall plan for integrations and also aspects of specific interface designs. Here are some of the topics that the workshop is likely to cover:
 
--   Potential workarounds considered
+- Overall application component design
+- In-scope interface catalog
+- Middleware designs
+- Performance and operational aspects of the integration designs
 
--   ISV solutions considered
+The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
 
-The typical format is a 1 to 3 hour Skype call. The recommended attendees
-include key stakeholders from customer and partner teams. Solution architects,
-functional leads and technical leads are mandatory.
+### Data migration workshop
 
-### Application lifecycle management review workshop 
+The Data migration workshop is designed to help guarantee that the migration strategy covers all the required topics or to review the complexities of specific migrations. Here are some of the topics that the workshop is likely to cover:
 
-The application lifecycle management workshop is designed for implementations
-that are looking to ensure that their ALM approach will meet the needs of
-the implementation and that it aligns to common best practices. Topics are
-likely to include:
+- Data migration strategy
+- Data migration design
 
--   Environment plan
+The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
 
--   Development work management plan
+### Business intelligence and analytics design workshop
 
--   Code management design
+The Business intelligence (BI) and analytics design workshop is designed to review the overall strategy for using BI and analytics in the solution, and also to drill into specific designs. Here are some of the topics that the workshop is likely to cover:
 
--   Build process design
+- Analytics designs
+- Audit reporting designs
+- Output document designs
+- Financial reporting designs
 
--   Rollout plan
+The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and technical leads are mandatory.
 
-The typical format is a 1 to 3 hour Skype call. The recommended attendees
-include key stakeholders from customer and partner teams. Solution architects,
-project managers and technical leads are mandatory.
+### Test strategy workshop
 
-### Performance workshop 
+The Test strategy workshop is designed to validate the strategy that has been proposed for various testing requirements both before and after go-live. Here are some of the topics that the workshop is likely to cover:
 
-The performance workshop is designed for implementations that need to ensure
-performance related aspects of the implementation are being accounted for and
-that the proper process and approach to ensure performance is being followed.
-Topics are likely to include:
+- Functional test strategy
+- End-to-end test strategy
+- Acceptance test strategy
+- Performance test strategy (This topic is covered in depth during the Performance workshop.)
+- Regression test strategy
+- Mock cutover strategy
 
--   Usage profile
+The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects, project managers, and testing leads are mandatory.
 
--   Performance testing approach
+### Cutover plan workshop
 
--   Performance remediation approach
+The Cutover plan workshop is designed to validate the plan for go-live cutover. The cutover process for the initial phase and subsequent phases is also validated. Here are some of the topics that the workshop is likely to cover:
 
-The typical format is a 1 t o3 hour Skype call. The recommended attendees
-include key stakeholders from customer and partner teams. Solution architects
-and technical leads are mandatory.
+- Cutover checklist or checklist approach
+- Subsequent initial and subsequent cutover approaches
+- Cutover timing and dependency
+- Cutover validation approach
+- Cutover contingency planning
 
-### Integration design workshop 
+The typical format is a one-to-three-hour Skype call. The recommended attendees include key stakeholders from the customer and partner teams. Solution architects and project managers are mandatory.
 
-The integration design review workshop is designed for implementations to
-review the overall plan for integrations as well as to review aspects of
-specific interface designs. Topics are likely to include:
+### Go-live assessment workshop
 
--   Overall application component design
+The Go-live assessment workshop is designed to help guarantee a successful go-live of projects. Here are some of the topics that the workshop is likely to cover:
 
--   In-scope interface catalog
+- Confirmation of the go-live date and scope
+- Solution acceptance and user training
+- Performance
+- Integrations
+- Code management
+- Configuration management
+- Review of blocking issues
+- Cutover plan and final data migration
+- Risk and mitigation review
+- Customer go/no-go criteria
+- Support process and Hyper-care plan
 
--   Middleware designs
-
--   Performance and operational aspects of the integration designs
-
-The typical format is a 1 to 3 hour Skype call. The recommended attendees
-include key stakeholders from customer and partner teams. Solution architects
-and technical leads are mandatory.
-
-### Data migration workshop 
-
-The data migration workshop is designed to help ensure that the migration
-strategy encompasses the necessary topics or to review complexities of specific
-migrations. Topics are likely to include:
-
--   Data migration strategy
-
--   Data migration design
-
-The typical format is a 1 to 3 hour Skype call. The recommended attendees
-include key stakeholders from customer and partner teams. Solution architects
-and technical leads are mandatory.
-
-### Business intelligence and analytics design workshop 
-
-The business intelligence and analytics design workshop is designed for
-implementations to review the overall strategy for use of BI and analytics
-within the solution and to drill into specific designs. Topics are likely
-to include:
-
--   Analytics designs
-
--   Audit reporting designs
-
--   Output document designs
-
--   Financial reporting designs
-
-The typical format is a 1 to 3 hour Skype call. The recommended attendees
-include key stakeholders from customer and partner teams. Solution architects
-and technical leads are mandatory.
-
-### Test strategy workshop 
-
-The test strategy workshop is designed for implementations to validate the
-strategy proposed for various testing needs both pre and post go-live. Topics
-are likely to include:
-
--   Functional test strategy
-
--   End to end test strategy
-
--   Acceptance test strategy
-
--   Performance test strategy (covered in depth in performance workshop)
-
--   Regression test strategy
-
--   Mock cutover strategy
-
-The typical format is a 1 to 3 hour Skype call. The recommended attendees
-include key stakeholders from customer and partner teams. Solution architects,
-project managers, and testing leads are mandatory.
-
-### Cutover plan workshop 
-
-The cutover plan workshop is designed for implementations to validate the
-plan for go-live cutover including the process for initial and subsequence phase
-cutover. Topics are likely to include:
-
--   Cutover checklist or checklist approach
-
--   Subsequent initial and subsequent cutover approaches
-
--   Cutover timing and dependency
-
--   Cutover validation approach
-
--   Cutover contingency planning
-
-The typical format is a 1 to 3 hour Skype call. The recommended attendees
-include key stakeholders from customer and partner teams. Solution architects
-and project managers are mandatory.
-
-### Go-live assessment workshop 
-
-The Go-live assessment workshop is designed to ensure the successful go-live of
-projects. Topics are likely to include:
-
--   Go-live date and scope confirmation
-
--   Solution acceptance and user training
-
--   Performance
-
--   Integrations
-
--   Code management
-
--   Configuration management
-
--   Blocking issue review
-
--   Cutover plan and final data migration
-
--   Risk and mitigation review
-
--   Customer go/no-go criteria
-
--   Support process and Hyper-care plan
-
-The typical format is 1.5-hour Skype call. The recommended attendees include key
-business users and subject matter experts. Hyper-care team leads are mandatory.
+The typical format is a one-and-a-half-hour Skype call. The recommended attendees include key business users and subject matter experts. Hyper-care team leads are mandatory.
 
 ### Post go-live review workshop
 
-The Post go-live review workshop is designed to wrap up the FastTrack
-engagement. Topics are likely to include:
+The Post go-live review workshop is designed to wrap up the FastTrack engagement. Here are some of the topics that the workshop is likely to cover:
 
--   Review goals and objectives
+- Review of goals and objectives
+- Discussion of lessons that have been learned
+- Support overview
+- Review of aged support items
+- Handover of open issues to support teams
 
--   Discuss lessons learned
-
--   Support overview
-
--   Review aged support items
-
--   Hand over open issues to support teams
-
-The typical format is a 1.5-hour Skype call. The recommended attendees include
-key stakeholders from customer, partner, and Microsoft teams. Project managers
-are mandatory.
+The typical format is a one-and-a-half-hour Skype call. The recommended attendees include key stakeholders from the customer, partner, and Microsoft teams. Project managers are mandatory.
