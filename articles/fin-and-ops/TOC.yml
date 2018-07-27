@@ -466,6 +466,8 @@
           href: ../financials/accounts-payable/centralized-payments-accounts-payable.md
         - name: Configure settlement
           href: ../financials/cash-bank-management/configure-settlement.md
+        - name: Vendor payment overview
+          href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
         - name: Vendor payments workspace
           href: ../financials/accounts-payable/vendor-payments-workspace.md
         - name: Define vendor payment fees
@@ -505,6 +507,8 @@
         href: ../financials/accounts-receivable/accounts-receivables-set-up-overview.md
       - name: Set up credit and collections
         href: ../financials/accounts-receivable/set-up-collections.md
+      - name: Review collections information
+        href: ../financials/accounts-receivable/tasks/review-collections-information.md
       - name: Set up and process recurring invoices
         href: ../financials/accounts-receivable/set-up-process-recurring-invoices.md
       - name: Accounting distributions and subledger journal entries for free text invoices
@@ -541,6 +545,8 @@
         href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
       - name: Create a customer invoice
         href: ../financials/accounts-receivable/configure-customer-invoices.md
+      - name: Deposit customer payments
+        href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
       - name: Establish customer payment terms
         href: ../financials/general-ledger/tasks/establish-customer-payment-terms.md
       - name: Establish customer method of payment
@@ -561,10 +567,12 @@
         href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
       - name: Create a write-off journal for a customer
         href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
-      - name: Deposit customer payments
-        href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
+      - name: Set up and generate accounts receivable aging information
+        href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
       - name: Payments and settlements
         items:
+        - name: Customer payment overview
+          href: ../financials/cash-bank-management/tasks/customer-payment-overview.md
         - name: Use a customer payment to settle multiple invoices that span multiple discount periods
           href: ../financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
         - name: Centralized payments for Accounts receivable
@@ -625,12 +633,34 @@
         href: ../financials/cash-bank-management/letters-of-credit.md
       - name: Create a bank facility agreement for a letter of credit
         href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
+      - name: Set up bank facilities and posting profiles for letter of credit
+        href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
       - name: Letters of credit and import collections
         href: ../financials/cash-bank-management/letters-of-credit-import-collections.md
+      - name: Export a letter of credit
+        href: ../financials/cash-bank-management/tasks/export-letter-credit.md
+      - name: Import a letter of credit
+        href: ../financials/cash-bank-management/tasks/import-letter-credit.md
       - name: Letters of guarantee
         href: ../financials/cash-bank-management/letters-of-guarantee.md
+      - name: Letter of guarantee transaction
+        href: ../financials/cash-bank-management/tasks/letter-guarantee-transaction.md
+      - name: Create a bank facility agreement for the letter of guarantee
+        href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
+      - name: Set up bank facilities and posting profiles for letters of guarantee
+        href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
       - name: Postdated checks
         href: ../financials/cash-bank-management/postdated-checks.md
+      - name: Set up postdated checks
+        href: ../financials/cash-bank-management/tasks/set-up-postdated-checks.md
+      - name: Register and post a postdated check for a customer
+        href: ../financials/cash-bank-management/tasks/register-post-postdated-check-customer.md
+      - name: Register and post a postdated check for a vendor
+        href: ../financials/cash-bank-management/tasks/register-post-postdated-check-vendor.md
+      - name: Settle a postdated check from a customer
+        href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
+      - name: Settle a postdated check for a vendor
+        href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
       - name: Prepayment invoices vs. prepayments
         href: ../financials/accounts-payable/prepayments-invoices-vs-prepayments.md
       - name: Handling cash discounts for overpayments
@@ -639,34 +669,6 @@
         href: ../financials/cash-bank-management/set-up-centralized-payments.md
       - name: Automatic settlement and prioritization
         href: ../financials/accounts-receivable/automatic-settlement-prioritization.md
-      - name: Cash and bank management tasks
-        items:
-        - name: Create a bank facility agreement for the letter of guarantee
-          href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
-        - name: Customer payment overview
-          href: ../financials/cash-bank-management/tasks/customer-payment-overview.md
-        - name: Export a letter of credit
-          href: ../financials/cash-bank-management/tasks/export-letter-credit.md
-        - name: Import a letter of credit
-          href: ../financials/cash-bank-management/tasks/import-letter-credit.md
-        - name: Letter of guarantee transaction
-          href: ../financials/cash-bank-management/tasks/letter-guarantee-transaction.md
-        - name: Register and post a postdated check for a customer
-          href: ../financials/cash-bank-management/tasks/register-post-postdated-check-customer.md
-        - name: Register and post a postdated check for a vendor
-          href: ../financials/cash-bank-management/tasks/register-post-postdated-check-vendor.md
-        - name: Settle a postdated check from a customer
-          href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
-        - name: Settle a postdated check for a vendor
-          href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
-        - name: Set up bank facilities and posting profiles for letters of guarantee
-          href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
-        - name: Set up bank facilities and posting profiles for letter of credit
-          href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
-        - name: Set up postdated checks
-          href: ../financials/cash-bank-management/tasks/set-up-postdated-checks.md
-        - name: Vendor payment overview
-          href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
       - name: Advanced bank reconciliation
         items:
         - name: Advanced bank reconciliation setup tasks
