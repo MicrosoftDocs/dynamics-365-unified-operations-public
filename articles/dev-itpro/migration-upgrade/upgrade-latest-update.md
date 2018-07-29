@@ -167,22 +167,14 @@ To run the data upgrade process, follow the steps in [Process for data upgrade f
 > - Data upgrade in a development environment is a required step. It helps reduce the risk of extended downtime and upgrade errors later, when you upgrade sandbox user acceptance testing (UAT) and production environments.
 > - Several application hotfixes might be required before you can upgrade data. Before you redeploy your existing development environment, verify whether these hotfixes are required. Install the required hotfixes, and check them in to VSTS. This step can be completed only in the old version of your development environment. For a list of the hotfixes that are required in various situations, see [Upgrade data in develop, demo, or sandbox environments](upgrade-data-to-latest-update.md#before-you-begin).
  
-### Upgrade your sandbox UAT environment
+### Upgrade your Tier2/Standard Acceptance Test (or higher) sandbox environment
 
 When the following conditions are met, you must request that the Microsoft Servicing Engineering Team (DSE) run this process for you. You submit the request via LCS.
 
 - You've completed the code upgrade process and have tested the data upgrade in your development environment.
 - You're live in production, or you've already deployed your production environment.
 
-DSE will do the data upgrade in one Tier 2 or higher sandbox UAT environment. This upgrade process is used as a control. The same upgrade process that will be used in production is used in this sandbox environment.
-
-**Upgrading any additional Tier 2 or higher sandbox environments**
-
-You don't have to upgrade any additional Tier 2 or higher sandbox environments. Instead, delete and redeploy them, and then make a database refresh request to copy a database from a Tier 2 or higher environment that has already been upgraded. Alternatively, you can manually upgrade these environments by following the steps in [Process for upgrading a sandbox environment](upgrade-sandbox-environment.md).
-
-**Upgrading any Tier 1 environments**
-
-You can deploy Tier 1 environments (also known as dev boxes or one-boxes) by using the new version. Then just synchronize to your upgraded VSTS branch. To get data for the Tier 1 environments, a developer can upgrade the database by following the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
+DSE will upgrade one Tier 2 (Standard Acceptance Test) or higher sandbox environment. This upgrade process is used as a control and is a required step. The same upgrade process, including the same customization packages, will be used for your production environment upgrade. DSE uses this process as a mock upgrade to ensure a successful upgrade of your production environment.
 
 #### Use LCS to submit an upgrade request to DSE
 
@@ -210,6 +202,14 @@ You can deploy Tier 1 environments (also known as dev boxes or one-boxes) by usi
 #### Validate your sandbox environment
 
 When the DSE team completes the upgrade process, the service request status will change to **Ready for Validation**. The system is available at this stage. The updated environment will have the same URL, the same environment name, and the same machine names as the old environment. Validate and then change the status of the service request to **Validation Successful** or **Validation Failed**. If you set the service request to **Validation Failed**, a rollback of the upgrade is initiated. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
+
+#### Upgrading any additional Tier 2 or higher sandbox environments
+
+You don't have to upgrade any additional Tier 2 or higher sandbox environments. Instead, delete and redeploy them, and then make a database refresh request to copy a database from a Tier 2 or higher environment that has already been upgraded. Alternatively, you can manually upgrade these environments by following the steps in [Process for upgrading a sandbox environment](upgrade-sandbox-environment.md).
+
+#### Upgrading any Tier 1 environments
+
+You can deploy Tier 1 environments (also known as dev/test or build boxes) by using the new version. Then just synchronize to your upgraded VSTS branch. To get data for the Tier 1 environments, a developer can upgrade the database by following the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
 
 ### Upgrade your production environment
 
