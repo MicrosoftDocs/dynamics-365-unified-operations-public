@@ -1029,7 +1029,6 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <li>Layout Code 08 – Version 1.07 From 01.01.2014 to 12.31.2014</li>
 <li>Layout Code 09 – Version 1.08 From 01.01.2015 to 12.31.2015</li>
 <li>Layout Code 10 – Version 1.09 From 01.01.2016 to 12.31.2016</li>
-<li>Layout Code 10 – Version 1.09 From 01.01.2016 to 12.31.2016</li>
 </ul>
 </td>
 <td>Yes</td>
