@@ -1069,6 +1069,8 @@
           href: ../financials/public-sector/plan-one-time-vendors-public-sector.md
         - name: Control access to purchase agreements in the public sector
           href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
+        - name: Set up purchase agreement classifications in the public sector
+          href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
       - name: Accounts receivable in the public sector
         href: ../financials/public-sector/accounts-receivable-public-sector.md
         items:
@@ -1110,12 +1112,16 @@
           href: ../financials/public-sector/year-end-processing-public-sector.md
         - name: Derived financial hierarchies in the public sector
           href: ../financials/public-sector/derived-financial-hierarchies-public-sector.md
+        - name: Set up a derived financial hierarchy in the public sector
+          href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
       - name: Procurement and sourcing in the public sector
         href: ../financials/public-sector/procurement-sourcing-public-sector.md
       - name: Security roles in the public sector
         href: ../financials/public-sector/security-roles-public-sector.md
       - name: Funds in the public sector
         href: ../financials/public-sector/funds-public-sector.md
+      - name: Set up a fund in the public sector
+        href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
       - name: Create a fund type in the public sector
         href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
       - name: Add a certification type to a vendor in the public sector
@@ -1936,10 +1942,24 @@
             href: ../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md
           - name: Fiscal document text placeholders
             href: ../financials/localizations/latam-bra-fiscal-document-text-placeholders.md
+          - name: Set up fiscal document source text
+            href: ../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md
+          - name: Issue fiscal documents for vendors
+            href: ../financials/localizations/tasks/br-00033-issuing-fiscal-document-non-taxable-vendors.md
+          - name: Issue customer fiscal documents
+            href: ../financials/localizations/tasks/br-00038-issuing-customer-fiscal-document.md  
           - name: Purchase complementary fiscal documents
             href: ../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md
+          - name: Create and post a purchase complementary fiscal document
+            href: ../financials/localizations/tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md
+          - name: Cancel a purchase complementary fiscal document
+            href: ../financials/localizations/tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md   
           - name: Referenced fiscal documents
             href: ../financials/localizations/latam-bra-referenced-fiscal-documents.md
+          - name: Receive vendor fiscal documents (products)
+            href: ../financials/localizations/tasks/br-00024-receiving-vendor-fiscal-document-products.md
+          - name: Receive vendor fiscal documents (fixed assets - PIS and COFINS long term recoverable)
+            href: ../financials/localizations/tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md  
           - name: Sales complementary fiscal documents
             href: ../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md
           - name: Service electronic fiscal document
@@ -1963,10 +1983,22 @@
             href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
         - name: Parameters for legal entities
           href: ../financials/localizations/latam-bra-legal-entity-parameters.md
+        - name: Set up legal entity parameters
+          href: ../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md
         - name: Acquire a CIAP fixed asset
           href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
         - name: Dispose a CIAP fixed asset
           href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
+        - name: Delivery slips
+          href: ../financials/localizations/tasks/br-00041-delivery-slip.md
+        - name: Set up interest and fines for vendor payments
+          href: ../financials/localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
+        - name: Calculate interest and fines on vendor payments
+          href: ../financials/localizations/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md
+        - name: Set up interest and fines on customer payments
+          href: ../financials/localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
+        - name: Calculate interest and fines on customer payments
+          href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
         - name: Taxes
           href: ../financials/localizations/latam-bra-calculate-taxes.md
           items:
