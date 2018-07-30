@@ -1097,7 +1097,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 </tr>
 <tr>
 <td>SPED Contributions (PIS and COFINS)</td>
-<td>Generation of a text file in accordance with Practical Guide 1.25</td>
+<td>Generation of a text file in accordance with layout 004</td>
 <td>No</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1178,7 +1178,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 </tr>
 <tr>
 <td>SPED Reinf</td>
-<td>Generation of events R-1000, R-1070, R-2010, R-2020, R-2060, R-2098, R-2099
+<td>Generation of events R-1000, R-1070, R-2010, R-2020, R-2060, R-2098, R-2099, R-5011
 <p>Layout version 1.3.02</p>
 </td>
 <td>No</td>
