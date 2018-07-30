@@ -2171,6 +2171,10 @@
         href: ../talent/process-compensation.md
       - name: Add to your performance journal and send praise to someone
         href: hr/tasks/add-your-performance-journal-send-praise-someone.md
+      - name: Enroll an employee in a fixed compensation plan
+        href: hr/tasks/enroll-employee-fixed-compensation-plan.md
+      - name: Enroll an employee in a variable compensation plan
+        href: hr/tasks/enroll-employee-variable-compensation-plan.md
     - name: Develop and train employees
       items:
       - name: Performance management overview
@@ -2185,8 +2189,12 @@
         href: ../talent/manage-benefit-program.md
       - name: Benefit eligibility policies
         href: ../talent/benefit-eligibility-policies.md
+      - name: Benefit eligibility process
+        href: hr/tasks/benefit-eligibility-process.md
       - name: Manage items lent to workers
         href: ../talent/loan-items.md
+      - name: Enroll and remove benefits from workers
+        href: hr/tasks/enroll-remove-benefits-workers.md
     - name: Gather information using questionnaires
       items:
       - name: Questionnaires
@@ -2197,6 +2205,10 @@
         href: ../talent/distribute-questionnaires.md
       - name: Evaluate the results of a questionnaire
         href: ../talent/evaluate-questionnaire-results.md
+      - name: Analyze questionnaire results
+        href: hr/tasks/analyze-questionnaire-results.md
+      - name: Create a closed ended question
+        href: hr/tasks/create-closed-ended-question.md
     - name: Workplace safety and compliance (United States)
       items:
       - name: Form I-9 employment verification
