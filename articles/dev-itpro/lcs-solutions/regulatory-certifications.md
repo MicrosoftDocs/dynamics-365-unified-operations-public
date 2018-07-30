@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Regulatory certifications
+title: Regulatory certification information in feature titles
 description: As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must include details about any regulatory certifications that the solution requires in order to be legally compliant for sale in the intended market. This article shows how information about certifications is used in the title of the feature.
 author: ShylaThompson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Regulatory certifications
+# Regulatory certification information in feature titles
 
 [!include [banner](../includes/banner.md)]
 

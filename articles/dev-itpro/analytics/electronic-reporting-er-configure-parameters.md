@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure the Electronic reporting framework
+title: Configure the Electronic reporting (ER) framework
 description: This topic explains how to configure parameters of the Electronic reporting (ER) framework.
 author: NickSelin
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# Configure the Electronic reporting framework
+# Configure the Electronic reporting (ER) framework
 
 [!include [banner](../includes/banner.md)]
 

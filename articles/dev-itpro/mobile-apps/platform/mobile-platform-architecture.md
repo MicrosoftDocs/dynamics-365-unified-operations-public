@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobile platform architecture
+title: Architecture and design considerations for the mobile platform
 description: This topic provides in-depth information on designing mobile apps.
 author: makhabaz
 manager: AnnBe

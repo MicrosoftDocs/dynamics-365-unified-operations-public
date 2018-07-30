@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: MetadataService
+title: MetadataService type
 description: Provides ability to access and configure various metadata elements under the application workspace.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# MetadataService Type
+# MetadataService type
 
 [!include [banner](../../../../includes/banner.md)]
 

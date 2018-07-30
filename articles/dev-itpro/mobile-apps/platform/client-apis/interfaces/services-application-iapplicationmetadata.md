@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: ApplicationMetadata
+title: ApplicationMetadata type
 description: Represents the declarative metadata of an application
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# ApplicationMetadata Type
+# ApplicationMetadata type
 
 [!include [banner](../../../../includes/banner.md)]
 

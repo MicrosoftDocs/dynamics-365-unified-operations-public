@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Document Reporting Services overview
+title: Document Reporting Services
 description: This article describes the integrated reporting solution that is available in Microsoft Dynamics 365 for Finance and Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
 author: TJVass
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Document Reporting Services overview
+# Document Reporting Services
 
 [!include [banner](../includes/banner.md)]
 

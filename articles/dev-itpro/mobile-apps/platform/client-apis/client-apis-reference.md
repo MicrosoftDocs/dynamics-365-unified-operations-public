@@ -24,7 +24,7 @@ ms.search.validFrom: 08/09/2017
 ms.dyn365.ops.version:
 ---
 
-# Client APIs Contents
+# Mobile platform client APIs
 
 [!include [banner](../../../includes/banner.md)]
 

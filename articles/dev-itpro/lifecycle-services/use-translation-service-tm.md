@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 Translation Service - Translation memory
+title: Translation memory files
 description: This topic describes when and where translation memory files can be created, edited, and used to help Microsoft Dynamics 365 Translation Service (DTS) provide a quality translation output file.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.3.0
 
 ---
 
-# Microsoft Dynamics 365 Translation Service - Translation memory
+# Translation memory files
 
 [!include [banner](../includes/banner.md)]
 

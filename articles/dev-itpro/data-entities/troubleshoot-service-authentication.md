@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Service authentication troubleshooting
+title: Troubleshoot service authentication issues
 description: This topic provides some tips for troubleshooting issues that involve service authentication.  
 author: nimakms
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Service authentication troubleshooting
+# Troubleshoot service authentication issues
 
 [!include [banner](../includes/banner.md)]
 

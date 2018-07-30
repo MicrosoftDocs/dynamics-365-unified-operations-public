@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customize with extensions and overlayering
+title: Customize through extension and overlayering
 description: This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
 author: robadawy
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Customize with extensions and overlayering
+# Customize through extension and overlayering
 
 [!include [banner](../includes/banner.md)]
 

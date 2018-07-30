@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Submit a service request to the Dynamics Service Engineering team
+title: Submit service requests to the Dynamics Service Engineering team
 description: This topic explains how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services (LCS). 
 author: manalidongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Submit a service request to the Dynamics Service Engineering team
+# Submit service requests to the Dynamics Service Engineering team
 
 [!include [banner](../includes/banner.md)]
 

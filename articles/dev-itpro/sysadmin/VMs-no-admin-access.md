@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Development and build VMs that don't allow administrator access FAQ
+title: Development and build VMs that don't allow admin access FAQ
 description: This topic provides answers to frequantly asked questions (FAQs) about virtual machines that don't allow administrator access.
 author: yukonpeegs
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Development and build VMs that don't allow administrator access FAQ
+# Development and build VMs that don't allow admin access FAQ
 
 [!include [banner](../includes/banner.md)]
 

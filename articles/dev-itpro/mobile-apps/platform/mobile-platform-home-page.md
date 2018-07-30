@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 9
 
 ---
 
-# Mobile platform
+# Mobile platform home page
 
 [!include [banner](../../includes/banner.md)]
 

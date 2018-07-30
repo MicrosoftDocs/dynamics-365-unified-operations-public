@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: PageLinkMetadata
+title: PageLinkMetadata type
 description: Pagelink metadata type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# PageLinkMetadata Type
+# PageLinkMetadata type
 
 [!include [banner](../../../../includes/banner.md)]
 

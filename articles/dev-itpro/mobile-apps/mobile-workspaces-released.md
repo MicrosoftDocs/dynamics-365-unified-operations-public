@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobile workspaces 
+title: Available mobile workspaces
 description: This topic lists the mobile workspaces that are available for use.
 author: sericks007
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# Mobile workspaces
+# Available mobile workspaces
 
 [!include [banner](../includes/banner.md)]
 

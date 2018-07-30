@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add dimensions to an Excel template
+title: Add dimensions to Excel templates
 description: This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
 author: robinarh
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Add dimensions to an Excel template
+# Add dimensions to Excel templates
 
 [!include [banner](../includes/banner.md)]
 

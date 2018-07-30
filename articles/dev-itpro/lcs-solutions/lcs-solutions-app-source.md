@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Publishing apps for Microsoft Dynamics 365 for Finance and Operations on AppSource
+title: Requirements for publishing apps on AppSource
 description: This topic points to resources that will help you understand the requirements for creating solutions for Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.author: omarc
 
 ---
 
-# Publishing apps for Microsoft Dynamics 365 for Finance and Operations on AppSource
+# Requirements for publishing apps on AppSource
 
 [!include[banner](../includes/banner.md)]
 

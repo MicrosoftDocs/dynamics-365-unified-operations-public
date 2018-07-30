@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: PageData
+title: PageData type
 description: Represents the data that is loaded into a page.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# PageData Type
+# PageData type
 
 [!include [banner](../../../../includes/banner.md)]
 

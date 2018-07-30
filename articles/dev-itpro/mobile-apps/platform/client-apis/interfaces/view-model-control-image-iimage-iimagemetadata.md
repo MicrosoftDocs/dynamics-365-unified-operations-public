@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: ImageMetadata
+title: ImageMetadata type
 description: Image metadata type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# ImageMetadata Type
+# ImageMetadata type
 
 [!include [banner](../../../../includes/banner.md)]
 

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Group
+title: Group module
 description: A group control is a container control that has any number of controls as children.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Group 
+# Group module
 
 [!include [banner](../../../../includes/banner.md)]
 

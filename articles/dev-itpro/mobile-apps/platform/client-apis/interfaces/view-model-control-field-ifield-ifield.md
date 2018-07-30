@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Field
+title: Field type
 description: Field control type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Field Type
+# Field type
 
 [!include [banner](../../../../includes/banner.md)]
 

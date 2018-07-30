@@ -1,7 +1,7 @@
 ---
 
 # required metadata
-title: Extensibility changes in the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+title: Extensibility changes in Finance and Operations, Enterprise edition (July 2017)
 description: This is a list of extensibility features that were implemented in the (July 2017).
 author: FrankDahl
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Extensibility changes in the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+# Extensibility changes in Finance and Operations, Enterprise edition (July 2017)
 
 [!include [banner](../includes/banner.md)]
 

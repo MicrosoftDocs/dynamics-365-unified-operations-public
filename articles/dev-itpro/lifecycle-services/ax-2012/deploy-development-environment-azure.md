@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy a development environment on Azure (AX 2012)
+title: Deploy development environments on Azure
 description: This topic provides information about how to deploy a development environment on Microsoft Azure. 
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Deploy a development environment on Azure (AX 2012)
+# Deploy development environments on Azure
 
 [!include [banner](../../includes/banner.md)]
 

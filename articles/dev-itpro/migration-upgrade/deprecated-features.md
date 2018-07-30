@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Removed or deprecated features
+# Deprecated features
 
 [!include [banner](../includes/banner.md)]
 

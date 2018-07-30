@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: ContainerControlMetadata
+title: ContainerControlMetadata type
 description: Container control metadata type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# ContainerControlMetadata Type
+# ContainerControlMetadata type
 
 [!include [banner](../../../../includes/banner.md)]
 

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Application
+title: Application type
 description: Represents a runtime instance of an application.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Application Type
+# Application type
 
 [!include [banner](../../../../includes/banner.md)]
 
