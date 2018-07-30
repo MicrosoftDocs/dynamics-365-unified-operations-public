@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: AsyncService
+title: AsyncService type
 description: Provides ability to perform async operations from business logic code.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# AsyncService Type
+# AsyncService type
 
 [!include [banner](../../../../includes/banner.md)]
 

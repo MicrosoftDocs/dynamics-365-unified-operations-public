@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Finance and Operations deployment options 
+title: Deployment options
 description: Microsoft Dynamics 365 for Finance and Operations now supports running business processes in the cloud or on-premises. This topic provides information about the different deployment options. 
 author: kfend
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
 ---
-# Microsoft Dynamics 365 for Finance and Operations deployment options
+# Deployment options
 
 [!include [banner](../includes/banner.md)]
 

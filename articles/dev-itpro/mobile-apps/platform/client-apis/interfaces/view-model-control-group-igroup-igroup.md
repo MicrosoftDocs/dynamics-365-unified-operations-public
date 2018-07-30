@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Group
+title: Group type
 description: Group container control type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Group Type
+# Group type
 
 [!include [banner](../../../../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: On-premises deployment
+title: On-premises deployments home page
 description: This topic provides information and links to content about on-premises deployments.
 author: kfend
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 
 ---
-# On-premises deployment home page
+# On-premises deployments home page
 
 [!include [banner](../includes/banner.md)]
 

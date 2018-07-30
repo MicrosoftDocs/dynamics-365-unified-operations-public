@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create an Electronic reporting configuration
+title: Create Electronic reporting (ER) configurations
 description: As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. 
 author: ShylaThompson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create an Electronic reporting configuration
+# Create Electronic reporting (ER) configurations
 
 [!include [banner](../includes/banner.md)]
 

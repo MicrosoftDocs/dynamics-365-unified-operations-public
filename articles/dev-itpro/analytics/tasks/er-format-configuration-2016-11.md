@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create a format configuration for electronic reporting (ER)
+title: Create Electronic reporting (ER) format configurations
 description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER). 
 author: NickSelin
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create a format configuration for electronic reporting (ER)
+# Create Electronic reporting (ER) format configurations
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

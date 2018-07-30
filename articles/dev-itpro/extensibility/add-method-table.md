@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Add a method to a table
+title: Add methods to tables through extension
 description: This topic describes how to add a method to a table by using an extension.
 author: ivanv-microsoft
 manager: AnnBe
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Add a method to a table
+# Add methods to tables through extension
 
 [!include [banner](../includes/banner.md)]
 

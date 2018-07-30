@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new in Lifecycle Services
+title: What's new in Lifecycle Services (LCS)
 description: This topic provides links to the LCS release notes blog post. 
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# What's new in Lifecycle Services
+# What's new in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 

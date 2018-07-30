@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Information access and reporting in Finance and Operations
+title: Information access and reporting
 description: This topic explains the various reporting options available as part of the Finance and Operations platform.
 author: TJVass
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Information access and reporting in Finance and Operations
+# Information access and reporting
 
 [!include [banner](../includes/banner.md)]
 

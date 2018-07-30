@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Modify properties on a form control
+title: Modify the properties of form controls through extension
 description: This topic explains how you can modify the properties of a control by using an extension.
 author: ivanv-microsoft
 manager: AnnBe
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Modify properties on a form control
+# Modify the properties of form controls through extension
 
 [!include [banner](../includes/banner.md)]
 

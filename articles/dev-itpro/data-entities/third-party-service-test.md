@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use third-party service testing utilities with Finance and Operations
+title: Test services by using third-party utilities
 description: This topic describes how to set up third-party utilities to test services for Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Use third-party service testing utilities with Microsoft Dynamics 365 for Finance and Operations
+# Test services by using third-party utilities
 
 [!include [banner](../includes/banner.md)]
 

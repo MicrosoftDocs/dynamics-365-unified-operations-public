@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a new user on a development machine
+title: Create new users on development machines
 description: When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM). This article explains how to enable another user account as a developer on a development VM.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create a new user on a development machine
+# Create new users on development machines
 
 [!include [banner](../includes/banner.md)]
 

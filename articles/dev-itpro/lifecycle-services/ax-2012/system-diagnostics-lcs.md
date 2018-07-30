@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: System diagnostics 
+title: System diagnostics in Lifecycle Services (LCS)
 description: This topic provides information about System diagnostics in Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# System diagnostics (AX 2012)
+# System diagnostics in Lifecycle Services (LCS)
 
 [!include [banner](../../includes/banner.md)]
 

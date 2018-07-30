@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Apply the latest platform update to your Dynamics 365 Finance and Operations environment
+title: Apply the latest platform update to environments
 description: This topic explains how to apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations Enterprise edition environment.
 author: tariqbell
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ---
 
-# Apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations environment
+# Apply the latest platform update to environments
 
 [!include [banner](../includes/banner.md)]
 

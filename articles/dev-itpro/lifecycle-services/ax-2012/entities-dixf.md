@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Data import/export framework entities (AX 2012)
+title: Data Import/Export Framework (DIXF) entities
 description: This topic lists the entities that can be imported by using the Data Import/Export Framework, the application module that each entity is associated with, and the class, staging table, and target table for each entity.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Data import/export framework entities (AX 2012)
+# Data Import/Export Framework (DIXF) entities
 
 [!include [banner](../../includes/banner.md)]
 

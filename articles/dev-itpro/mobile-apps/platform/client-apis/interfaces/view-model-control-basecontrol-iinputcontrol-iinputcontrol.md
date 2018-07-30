@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: InputControl
+title: InputControl type
 description: Input control interface with methods and attributes for all input controls. Input controls are typically used on task pages for collecting user input, for example, for a new control.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# InputControl Type
+# InputControl type
 
 [!include [banner](../../../../includes/banner.md)]
 

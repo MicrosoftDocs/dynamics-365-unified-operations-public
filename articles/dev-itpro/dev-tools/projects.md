@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Projects
+title: Finance and Operations project type in Visual Studio
 description: The Microsoft Dynamics 365 for Finance and Operations project type is part of the development tools. 
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Projects
+# Finance and Operations project type in Visual Studio
 
 [!include [banner](../includes/banner.md)]
 

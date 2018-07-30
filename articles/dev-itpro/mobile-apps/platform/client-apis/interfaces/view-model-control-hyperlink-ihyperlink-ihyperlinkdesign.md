@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: HyperLinkDesign
+title: HyperLinkDesign type
 description: Hyperlink design object type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# HyperLinkDesign Type
+# HyperLinkDesign type
 
 [!include [banner](../../../../includes/banner.md)]
 

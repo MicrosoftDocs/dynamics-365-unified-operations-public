@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Segmented entry control parm methods
+title: Parm methods for Segmented Entry controls
 description: Describes the parm methods that can be set in code on an instance of a Segmented Entry control.
 author: twheeloc
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Segmented entry control parm methods
+# Parm methods for Segmented Entry controls
 
 [!include [banner](../includes/banner.md)]
 

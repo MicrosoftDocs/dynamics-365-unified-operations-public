@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure Electronic reporting to pull data into Power BI
+title: Configure Electronic reporting (ER) to pull data into Power BI
 description: This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance of Finance and Operations to Power BI services. 
 author: NickSelin
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Configure Electronic reporting to pull data into Power BI
+# Configure Electronic reporting (ER) to pull data into Power BI
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: List
+title: List type
 description: List control type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# List Type
+# List type
 
 [!include [banner](../../../../includes/banner.md)]
 

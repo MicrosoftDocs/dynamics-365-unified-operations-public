@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Finance and Operations cloud platform monthly updates FAQ
+title: Cloud platform monthly updates FAQ
 description: This topic provides some important information about the monthly updates of the Microsoft Dynamics 365 for Finance and Operations cloud platform.
 author: manalidongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-03-31
 
 ---
 
-# Finance and Operations cloud platform monthly updates FAQ
+# Cloud platform monthly updates FAQ
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: ImageDesign
+title: ImageDesign type
 description: Image design object type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# ImageDesign Type
+# ImageDesign type
 
 [!include [banner](../../../../includes/banner.md)]
 

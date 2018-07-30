@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create a model mapping configuration (ER)
+title: Create Electronic reporting (ER) model mapping configurations
 description: Use this procedure to design a new Electronic reporting (ER) model mapping configuration and use built-in ER functions for efficient aggregate calculations. 
 author: NickSelin
 manager: AnnBe 
@@ -27,7 +27,7 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 
 ---
-# Create a model mapping configuration (ER)
+# Create Electronic reporting (ER) model mapping configurations
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sign up for a preview subscription
+title: Sign up for preview subscriptions
 description: This topic explains how to subscribe to the preview/partner offer and deploy an environment.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Sign up for a preview subscription
+# Sign up for preview subscriptions
 
 [!include [banner](../includes/banner.md)]
 

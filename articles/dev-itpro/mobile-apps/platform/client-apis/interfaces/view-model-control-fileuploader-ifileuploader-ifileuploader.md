@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: FileUploader
+title: FileUploader type
 description: File uploader control type. A control for uploading files such as images.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# FileUploader Type
+# FileUploader type
 
 [!include [banner](../../../../includes/banner.md)]
 

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: NumberSequenceConfig
+title: NumberSequenceConfig type
 description: Number Sequence Configuration type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# NumberSequenceConfig Type
+# NumberSequenceConfig type
 
 [!include [banner](../../../../includes/banner.md)]
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Troubleshoot the Office integration 
+# Troubleshoot the Office integration
 
 [!include [banner](../includes/banner.md)]
 

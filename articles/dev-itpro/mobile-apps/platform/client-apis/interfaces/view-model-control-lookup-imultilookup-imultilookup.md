@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: MultiLookup
+title: MultiLookup type
 description: Multi-Lookup control type. Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# MultiLookup Type
+# MultiLookup type
 
 [!include [banner](../../../../includes/banner.md)]
 

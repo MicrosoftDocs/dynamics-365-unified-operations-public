@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Custom designs for business documents
+title: Create custom designs for business documents
 description: This topic shows how to create a custom report design for an existing application business document by using a pure extension model. 
 author: TJVass
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Custom designs for business documents
+# Create custom designs for business documents
 
 [!include [banner](../includes/banner.md)]
 
