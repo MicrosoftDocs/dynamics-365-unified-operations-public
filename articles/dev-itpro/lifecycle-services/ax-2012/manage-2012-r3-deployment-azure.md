@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage your Dynamics AX 2012 R3 deployment on Azure
+title: Manage AX 2012 R3 deployments on Azure
 description: This topic provides information about how to work in and maintain a Microsoft Dynamics AX 2012 R3 deployment on Microsoft Azure.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Manage your Dynamics AX 2012 R3 deployment on Azure
+# Manage AX 2012 R3 deployments on Azure
 
 [!include [banner](../../includes/banner.md)]
 

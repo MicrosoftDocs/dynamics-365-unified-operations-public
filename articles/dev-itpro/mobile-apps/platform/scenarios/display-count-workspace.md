@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Display a count in a field
+title: Show counts in fields
 description: This topic explains how to calculate a count that is correct and that appears quickly. 
 author: makhabaz
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Display a count in a field
+# Show counts in fields
 
 [!include [banner](../../../includes/banner.md)]
 

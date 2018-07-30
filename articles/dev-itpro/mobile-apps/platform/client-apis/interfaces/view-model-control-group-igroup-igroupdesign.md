@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: GroupDesign
+title: GroupDesign type
 description: Group design object type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# GroupDesign Type
+# GroupDesign type
 
 [!include [banner](../../../../includes/banner.md)]
 

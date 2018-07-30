@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Document generation, publishing, and printing capabilities in on-premises deployments
+title: Document generation, publishing, and printing in on-premises deployments
 description: This topic describes the capabilities for generating, publishing, and printing documents in on-premises deployments.
 author: TJVass
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8 
 ---
 
-# Document generation, publishing, and printing capabilities in on-premises deployments
+# Document generation, publishing, and printing in on-premises deployments
 
 [!include [banner](../includes/banner.md)]
 

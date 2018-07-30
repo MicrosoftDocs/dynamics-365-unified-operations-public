@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: InputControlMetadata
+title: InputControlMetadata type
 description: Metadata for input controls.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# InputControlMetadata Type
+# InputControlMetadata type
 
 [!include [banner](../../../../includes/banner.md)]
 

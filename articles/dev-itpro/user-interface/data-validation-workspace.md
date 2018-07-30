@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Data validation workspace
+title: Data validation checklist workspace
 description: The Data validation checklist workspace lets you track data validation processes across companies, areas, and people. The checklist can be used during a new implementation, after an upgrade, or after a migration.
 author: bking
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.author: bking
 
 ---
 
-# Data validation workspace
+# Data validation checklist workspace
 
 [!include [banner](../includes/banner.md)]
 

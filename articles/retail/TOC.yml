@@ -545,7 +545,7 @@
       href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
     - name: Retail SDK packaging
       href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-    - name: 'Retail SDK samples '
+    - name: Retail SDK samples
       href: dev-itpro/retail-sdk/retail-sdk-samples.md
       items:
       - name: Extension points for packing slips

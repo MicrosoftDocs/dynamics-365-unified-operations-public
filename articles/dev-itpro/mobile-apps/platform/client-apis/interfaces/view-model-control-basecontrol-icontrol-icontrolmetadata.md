@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: ControlMetadata
+title: ControlMetadata type
 description: Interface for the metadata of a control. Overriding control metadata can modify a controls&#x27; look and behavior.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# ControlMetadata Type
+# ControlMetadata type
 
 [!include [banner](../../../../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customize App Suite reports using extensions
+title: Customize App Suite reports by using extensions
 description: This topic discusses a series of scenarios for customizing App Suite reports.
 author: TJVass
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Customize App Suite reports using extensions
+# Customize App Suite reports by using extensions
 
 [!include [banner](../includes/banner.md)]
 

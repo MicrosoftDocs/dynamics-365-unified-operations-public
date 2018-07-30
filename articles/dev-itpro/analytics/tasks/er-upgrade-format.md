@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Upgrade your format by adopting of new base version of that format for electronic reporting (ER)
+title: Upgrade formats by adopting new base versions
 description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration. 
 author: NickSelin
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Upgrade your format by adopting of new base version of that format for electronic reporting (ER)
+# Upgrade formats by adopting new base versions
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

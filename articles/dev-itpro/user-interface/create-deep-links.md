@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create and use deep links
+title: Create shareable, secured URLs (deep links)
 description: Learn how to create shareable, secured URLs to forms and records.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create and use deep links
+# Create shareable, secured URLs (deep links)
 
 [!include [banner](../includes/banner.md)]
 

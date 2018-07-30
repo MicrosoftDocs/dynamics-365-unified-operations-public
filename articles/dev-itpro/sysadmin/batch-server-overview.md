@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Batch server overview
+title: Batch processing and batch servers
 description: This article describes batch processing and batch servers, and how to plan for their use.
 author: maertenm
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Batch server overview
+# Batch processing and batch servers
 
 [!include [banner](../includes/banner.md)]
 

@@ -12,7 +12,7 @@
         href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
       - name: Cloud and on-premises feature comparison
         href: get-started/cloud-prem-comparison.md
-      - name: Choose a deployment option
+      - name: Deployment options
         href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
         items:
         - name: Cloud deployment
@@ -23,7 +23,7 @@
           href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/fin-and-ops/toc.json
         - name: System requirements for on-premises deployments
           href: get-started/system-requirements-on-prem.md
-        - name: Warehousing for on-premises deployments
+        - name: Configure Warehousing for on-premises deployments
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
       - name: Standard and targeted platform releases
         href: get-started/public-preview-releases.md
@@ -372,7 +372,7 @@
       items:
       - name: Configuration data projects
         href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/fin-and-ops/toc.json
-      - name: Copy configuration data between companies
+      - name: Copy configuration data between companies or legal entities
         href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
         items:
         - name: Configuration data packages (July 2017 release only)
@@ -398,7 +398,7 @@
         href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
       - name: Data entity properties
         href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/fin-and-ops/toc.json
-      - name: Create compute columns and virtual fields
+      - name: Create computed columns and virtual fields
         href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/fin-and-ops/toc.json
       - name: Cross-company behavior
         href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/fin-and-ops/toc.json
@@ -605,11 +605,11 @@
     - name: Budgeting
       href: ../financials/budgeting/budgeting-overview.md
       items:
-      - name: 'Budget planning overview '
+      - name: Budget planning overview
         href: ../financials/budgeting/budget-planning-overview-configuration.md
-      - name: 'Budget control overview '
+      - name: Budget control overview
         href: ../financials/budgeting/budget-control-overview-configuration.md
-      - name: 'Budgeting overview '
+      - name: Budgeting overview
         href: ../financials/budgeting/basic-budgeting-overview-configuration.md
       - name: Position forecasting
         href: ../financials/budgeting/position-forecasting.md
@@ -903,7 +903,7 @@
           href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
         - name: Set up bonus depreciation
           href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
-        - name: 'Set up depreciation books '
+        - name: Set up depreciation books
           href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
         - name: Set up and create depreciation profiles
           href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
@@ -932,7 +932,7 @@
           href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
         - name: Posting definitions
           href: ../financials/general-ledger/posting-definitions.md
-        - name: 'Posting definition examples '
+        - name: Posting definition examples
           href: ../financials/general-ledger/example-posting-definitions.md
         - name: General ledger account balances
           href: ../financials/general-ledger/general-ledger-account-balances.md
@@ -1158,7 +1158,7 @@
         href: ../dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
       - name: Balance sheet financial reports
         href: ../financials/general-ledger/balance-sheet-financial-reports.md
-      - name: Generate a financial report
+      - name: Generate financial reports
         href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
       - name: Income statement financial report
         href: ../financials/general-ledger/income-statement-financial-report.md
@@ -1166,13 +1166,13 @@
         href: ../financials/general-ledger/trial-balance-financial-reports.md
       - name: View financial reports
         href: ../financials/general-ledger/view-financial-reports.md
-      - name: Report designer
+      - name: Report designer interface
         href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
-      - name: User preferences
+      - name: User preferences in financial report designer
         href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
       - name: Advanced formatting options
         href: ../dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/fin-and-ops/toc.json
-      - name: Organize report components
+      - name: Organize report components in report designer
         href: ../dev-itpro/analytics/organize-components-report-designer.md?toc=/fin-and-ops/toc.json
       - name: Report definitions
         href: ../dev-itpro/analytics/design-financial-report-definitions.md?toc=/fin-and-ops/toc.json
@@ -1182,7 +1182,7 @@
         href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
       - name: Modify row definition cells
         href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-      - name: Reset the financial reporting data mart after restoring a database
+      - name: Reset the financial reporting data mart
         href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
   - name: Localization and regulatory features
     href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
@@ -1637,7 +1637,7 @@
           href: ../financials/localizations/emea-bel-intervat-tax-declaration.md
         - name: Reconciliation reports
           href: ../financials/localizations/emea-bel-reconciliation-reports.md
-        - name: 'Set up payment balance reporting '
+        - name: Set up payment balance reporting
           href: ../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md
         - name: Set up and maintain PRODCOM
           href: ../financials/localizations/emea-bel-prodcom-report.md
@@ -1762,7 +1762,7 @@
         items:
         - name: Additional acquisition depreciation
           href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
-        - name: 'Audit file '
+        - name: Audit file
           href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
           items:
           - name: Customize audit file configuration
@@ -1777,7 +1777,7 @@
           href: ../financials/localizations/tasks/de-00003-electronic-transmission-elster.md
         - name: Journal list report
           href: ../financials/localizations/emea-deu-journal-list-report.md
-        - name: Set up electronic tax declaration
+        - name: Set up electronic tax declarations
           href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
       - name: Hungary
         href: ../financials/localizations/hungary.md
@@ -1943,7 +1943,7 @@
       - name: United Kingdom
         href: ../financials/localizations/united-kingdom.md
         items:
-        - name: 'Construction Industry Scheme '
+        - name: Construction Industry Scheme
           href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
         - name: Create a credit on the settlement discount
           href: ../financials/localizations/tasks/gb-00009-credit-note-settlement-discount.md
@@ -2051,7 +2051,7 @@
             href: ../financials/localizations/latam-bra-tax-payments.md
           - name: Tax in sales quotations
             href: ../financials/localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
-          - name: 'Withholding taxes '
+          - name: Withholding taxes
             href: ../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md
           - name: Withholding taxes on customer payments
             href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
@@ -2140,7 +2140,7 @@
           href: ../financials/localizations/latam-mex-diot-declaration-statement.md
         - name: E-invoicing CFDI
           href: ../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md
-        - name: 'Electronic invoices '
+        - name: Electronic invoices
           href: ../financials/localizations/latam-mex-CFDI-electronic-invoices.md
         - name: Electronic ledger accounting statements
           href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
@@ -2260,7 +2260,7 @@
           href: hr/localizations/noam-usa-worker-position-payroll-tasks.md
         - name: Set up work cycles and work periods
           href: hr/localizations/noam-usa-work-cycle-work-period-tasks.md
-        - name: 'Set up benefit accrual plans '
+        - name: Set up benefit accrual plans
           href: hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
         - name: Set up benefits
           href: hr/localizations/noam-usa-benefit-set-up-tasks.md
@@ -2283,7 +2283,7 @@
           href: hr/localizations/noam-usa-garnishment-tax-levy-set-up-tasks.md
         - name: Enroll workers in garnishment and tax levies
           href: hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks.md
-        - name: 'Set up premium earnings '
+        - name: Set up premium earnings
           href: hr/localizations/noam-usa-premium-earning-setup-tasks.md
         - name: Garnishments, tax levies, and administrative fees FAQ
           href: hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees.md
@@ -2418,7 +2418,7 @@
       - name: Cost accounting analysis
         href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
         items:
-        - name: Security for the Cost accounting analysis
+        - name: Set up security for the Cost accounting analysis Power BI content
           href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Cost management
         href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/fin-and-ops/toc.json
@@ -2460,166 +2460,166 @@
       items:
       - name: Document Reporting Services overview
         href: ../dev-itpro/analytics/document-reporting-services.md?toc=/fin-and-ops/toc.json
-      - name: Configure SSRS for an on-premises deployment
+      - name: Configure SSRS for on-premises deployments
         href: ../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json
       - name: Printing
         href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
         items:
-        - name: Install the Document Routing Agent to enable network printer devices
+        - name: Install the Document Routing Agent to enable network printing
           href: ../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json
         - name: Upgrade the Document Routing Agent
           href: ../dev-itpro/analytics/upgrade-document-routing-agent.md
         - name: Install network printer devices in on-premises environments
           href: ../dev-itpro/analytics/install-network-printer-onprem.md?toc=/fin-and-ops/toc.json
-        - name: Document generation, publishing, and printing capabilities in on-premises deployments
+        - name: Document generation, publishing, and printing in on-premises deployments
           href: ../dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/fin-and-ops/toc.json
         - name: Run the Document Routing Agent as a Windows service
           href: ../dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/fin-and-ops/toc.json
       - name: Help prevent long-running reports from timing out
         href: ../dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/fin-and-ops/toc.json
-      - name: List of SQL Server Reporting Services reports
+      - name: Available SQL Server Reporting Services reports
         href: ../dev-itpro/analytics/SSRS-report.md?toc=/fin-and-ops/toc.json
       - name: Create reporting solutions
         href: ../dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/fin-and-ops/toc.json
       - name: Install report design templates
         href: ../dev-itpro/analytics/install-modern-report-design-templates.md?toc=/fin-and-ops/toc.json
-      - name: Customize App Suite reports using extensions
+      - name: Customize App Suite reports by using extensions
         href: ../dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/fin-and-ops/toc.json
       - name: Expand Application Suite report data sets
         href: ../dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/fin-and-ops/toc.json
-      - name: Extend report menu items
+      - name: Extend report menu items to redirect user navigations
         href: ../dev-itpro/analytics/extend-report-menu-items.md?toc=/fin-and-ops/toc.json
-      - name: Custom design business docs
+      - name: Create custom designs for business documents
         href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
     - name: Electronic reporting
       href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
       items:
       - name: Configure the Electronic reporting framework
         href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
-      - name: Create a configuration
+      - name: Create configurations
         href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
         items:
-        - name: Create a configuration provider and mark it as active for electronic reporting
+        - name: Create configuration providers and mark them as active
           href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
-        - name: Design a domain-specific data model for electronic reporting
+        - name: Design domain-specific data models
           href: ../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json
-        - name: Define model mapping and select data sources for electronic reporting
+        - name: Define model mappings and select data sources
           href: ../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-        - name: Map a data model to selected data sources for electronic reporting
+        - name: Map data models to selected data sources
           href: ../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-        - name: Create a format configuration for electronic reporting
+        - name: Create format configurations
           href: ../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/fin-and-ops/toc.json
-        - name: Map components of the created format to data model elements for electronic reporting
+        - name: Map the components of formats to data model elements
           href: ../dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/fin-and-ops/toc.json
-        - name: Generate electronic documents for payments using a format configuration for electronic reporting
+        - name: Generate electronic documents for payments using format configurations
           href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
-        - name: Upgrade your format by adopting of new base version of that format for electronic reporting
+        - name: Upgrade formats by adopting new base versions
           href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
       - name: Formula designer in Electronic reporting
         href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
-      - name: Set up Electronic reporting with Power BI
+      - name: Configure Electronic reporting to pull data into Power BI
         href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
       - name: Destinations
         href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
         items:
-        - name: Configure destinations for electronic reporting
+        - name: Configure destinations
           href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
-      - name: Design a configuration for generating reports in Microsoft Word format for electronic reporting
+      - name: Design configurations to generate reports in Word format
         href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
-      - name: Design a configuration for generating reports in OpenXML format for electronic reporting
+      - name: Design configurations to generate reports in OpenXML format
         href: ../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json
-      - name: Modify an Electronic reporting format by reapplying a Microsoft Excel template
+      - name: Modify Electronic reporting formats by reapplying Excel templates
         href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-      - name: Select data model definition while creating format for electronic reporting
+      - name: Select data model definition while creating formats
         href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
-      - name: Define the dependency of configurations from other components for electronic reporting
+      - name: Define the dependency of configurations on other components
         href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
         items:
-        - name: Design data model to use financial dimensions as a data source
+        - name: Design data models to use financial dimensions as data sources
           href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
-        - name: Map models to use financial dimensions as a data source
+        - name: Map models to use financial dimensions as data sources
           href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
-        - name: Design a report to use financial dimensions as a data source
+        - name: Design reports to use financial dimensions as data sources
           href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
-        - name: Run a report that uses financial dimensions as a data source
+        - name: Run reports that use financial dimensions as data sources
           href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
-        - name: Create format for counting and summing
+        - name: Create formats to do counting and summing
           href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
         - name: Configure computations to do counting and summing
           href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
-        - name: Use computations to make the output for counting and summing
+        - name: Use computations to generate the output for counting and summing
           href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
-        - name: Run the format to do counting and summing
+        - name: Run formats to do counting and summing
           href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
-        - name: Design a format to use horizontally-expandable ranges to dynamically add columns in Excel reports
+        - name: Design formats to dynamically add columns as horizontally expandable ranges
           href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
-        - name: Run a format that uses horizontally-expandable ranges to dynamically add columns in Excel reports
+        - name: Run formats to dynamically add columns as horizontally expandable ranges
           href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
-        - name: Prepare data model to use Document Management files in format outputs
+        - name: Prepare data models to use Document Management files in output
           href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
-        - name: Extend data model to use Document Management files in format outputs
+        - name: Extend data models to use Document Management files in output
           href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
-        - name: Create format to use Document Management files in format outputs
+        - name: Create formats to use Document Management files in output
           href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
-        - name: Run format to use Document Management files in format outputs
+        - name: Run formats to use Document Management files in output
           href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
-        - name: Modify and run format to use Document Management files in format outputs
+        - name: Modify and run formats to use Document Management files in output
           href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
-        - name: Design configurations to generate reports in Microsoft Office formats with embedded images
+        - name: Design configurations to generate reports in Office formats with embedded images
           href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json
-        - name: Review configurations to make reports in Microsoft Office formats with embedded images
+        - name: Review configurations to generate reports in Office formats with embedded images
           href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json
-        - name: Generate reports in Microsoft Office formats with embedded images
+        - name: Generate reports in Office formats with embedded images
           href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
-      - name: Generate electronic documents and update application data using the Electronic reporting tool
+      - name: Generate electronic documents and update application data
         href: ../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json
         items:
         - name: Import configurations to generate documents with application data
           href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
         - name: Design configurations to generate documents with application data
           href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
-        - name: Modify model and mapping to generate documents with application data
+        - name: Modify models and mappings to generate documents with application data
           href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
-        - name: Modify format to generate documents with application data
+        - name: Modify formats to generate documents with application data
           href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
         - name: Generate documents with application data
           href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
       - name: Generate reports by adding content as raw XML
         href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
-      - name: Trace generated report results and compare them with baseline values
+      - name: Trace generated report results and compare with baseline values
         href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
       - name: Cross-company data sources in Electronic reporting
         href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
-      - name: Embed images and shapes in business documents that are generated by using the Electronic reporting tool
+      - name: Embed images and shapes in documents that you generate
         href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
       - name: Manage the configuration lifecycle
         href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
         items:
-        - name: Upload a configuration into Lifecycle Services for electronic reporting
+        - name: Upload configurations into Lifecycle Services
           href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
-        - name: Import a configuration from Lifecycle Services for electronic reporting
+        - name: Import configurations from Lifecycle Services
           href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
         - name: Download configurations from Lifecycle Services
           href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
-        - name: Import Electronic reporting configurations
+        - name: Import configurations
           href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
-      - name: Manage model mapping configurations for electronic reporting
+      - name: Manage model mapping configurations
         href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
         items:
-        - name: Create required configurations to import data from an external file for electronic reporting
+        - name: Create configurations to import data from external files
           href: ../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json
         - name: Configure data import from SharePoint
           href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
-      - name: Parse incoming documents in Microsoft Excel
+      - name: Parse incoming documents in Excel format
         href: ../dev-itpro/analytics/parse-incoming-documents-excel.md?toc=/fin-and-ops/toc.json
       - name: Parse incoming documents to update application data
         href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
       - name: Parse incoming documents in CSV format
         href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
-      - name: Split generated files based on file size and content quantity
+      - name: Split generated XML files based on file size and content quantity
         href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
         items:
-        - name: Extend Electronic reporting functions
+        - name: Extend the list of Electronic reporting functions
           href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
         - name: Electronic reporting framework API changes for Application update 7.3
           href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
@@ -2631,7 +2631,7 @@
         href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
     - name: Personalization options with PowerBI.com
       items:
-      - name: Power BI integration
+      - name: Features and services available via Power BI integration
         href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
       - name: Pin Power BI reports to workspaces
         href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
@@ -2639,21 +2639,21 @@
       items:
       - name: Analytics, aggregate measurements, and KPI modeling
         href: ../dev-itpro/analytics/analytics.md?toc=/fin-and-ops/toc.json
-      - name: Author analytical reports by using Power BI Desktop
+      - name: Create analytical reports using Power BI Desktop
         href: ../dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/fin-and-ops/toc.json
-      - name: Modeling and aggregate data
+      - name: Model aggregate data
         href: ../dev-itpro/analytics/model-aggregate-data.md?toc=/fin-and-ops/toc.json
       - name: Add financial dimensions to aggregate measurements
         href: ../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/fin-and-ops/toc.json
       - name: Add analytics to workspaces by using Power BI Embedded
         href: ../dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/fin-and-ops/toc.json
-      - name: Help secure analytical workspaces and reports by using Power BI Embedded
+      - name: Help secure analytical workspaces and reports using Power BI Embedded
         href: ../dev-itpro/analytics/secure-analytical-workspaces.md?toc=/fin-and-ops/toc.json
     - name: Power user management tools
       items:
       - name: Power BI integration with Entity store
         href: ../dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/fin-and-ops/toc.json
-      - name: Entity store maintenance
+      - name: Resolve issues after Entity store maintenance
         href: ../dev-itpro/analytics/entity-store-maintenance.md
       - name: Configure Power BI integration for workspaces
         href: ../dev-itpro/analytics/configure-power-bi-integration.md?toc=/fin-and-ops/toc.json
@@ -2825,10 +2825,10 @@
         href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
       - name: Modify a demand forecast manually
         href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-  - name: Mobile app
+  - name: Dynamics 365 for Unified Operations mobile app
     href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
     items:
-    - name: Mobile workspaces
+    - name: Available mobile workspaces
       href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
       items:
       - name: Company directory
@@ -2851,14 +2851,14 @@
         href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md
       - name: Vendor collaboration
         href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md
-    - name: Publish a mobile workspace
+    - name: Publish mobile workspaces
       href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/fin-and-ops/toc.json
   - name: Office integration
     href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
     items:
     - name: Office integration tutorial
       href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/fin-and-ops/toc.json
-    - name: Use the Excel add-in
+    - name: Open entity data in Excel and update it using the Excel add-in
       href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/fin-and-ops/toc.json
     - name: Create Open in Excel experiences
       href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/fin-and-ops/toc.json
@@ -3814,7 +3814,7 @@
             href: ../supply-chain/service-management/reverse-changes-in-a-dispatch-board.md
           - name: View undispatched service orders
             href: ../supply-chain/service-management/view-undispatched-service-orders.md
-          - name: 'Modify a Service BOM '
+          - name: Modify a Service BOM
             href: ../supply-chain/service-management/modify-service-bom.md
         - name: Deliver service
           items:
@@ -3915,7 +3915,7 @@
     - name: Warehouse work policies
       href: ../supply-chain/warehousing/warehouse-work-policies.md
       items:
-      - name: 'Set up warehouse work policies '
+      - name: Set up warehouse work policies
         href: ../supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
       - name: Movement of inventory with associated work in Warehouse management
         href: ../supply-chain/warehousing/move-inventory-associated-work.md
@@ -3957,11 +3957,11 @@
         href: ../supply-chain/inventory/inventory-blocking.md
       - name: Cycle counting
         href: ../supply-chain/warehousing/cycle-counting.md
-      - name: 'Define cycle counting '
+      - name: Define cycle counting
         href: ../supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
       - name: Partial location cycle counting
         href: ../supply-chain/warehousing/partial-location-cycle-counting.md
-      - name: 'Define partial location cycle counting process '
+      - name: Define partial location cycle counting process
         href: ../supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017-update.md
       - name: Inventory journal
         href: ../supply-chain/inventory/inventory-journals.md
@@ -3980,7 +3980,7 @@
         href: ../supply-chain/warehousing/material-replenishment-withdrawal-kanban.md
       - name: Set up a min-max replenishment process
         href: ../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md
-    - name: 'Install and configure the warehousing app '
+    - name: Install and configure the warehousing app
       href: ../supply-chain/warehousing/install-configure-warehousing-app.md
       items:
       - name: Configure field names in warehousing app

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Custom services
+title: Custom service development
 description: This topic describes how to create a custom service.
 author: Sunil-Garg
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Custom services for Microsoft Dynamics 365 for Finance and Operations
+# Custom service development
 
 [!include [banner](../includes/banner.md)]
 

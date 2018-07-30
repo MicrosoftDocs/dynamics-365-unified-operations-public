@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: FileUploaderMetadata
+title: FileUploaderMetadata type
 description: File uploader metadata type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# FileUploaderMetadata Type
+# FileUploaderMetadata type
 
 [!include [banner](../../../../includes/banner.md)]
 

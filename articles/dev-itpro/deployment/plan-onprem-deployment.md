@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Planning for your on-premises deployment 
+title: Plan and prepare for on-premises deployments
 description: This topic will help you plan and prepare for your on-premises deployment.
 author: robinarh
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 ---
 
-# Planning for your on-premises deployment
+# Plan and prepare for on-premises deployments
 
 [!include [banner](../includes/banner.md)]
 

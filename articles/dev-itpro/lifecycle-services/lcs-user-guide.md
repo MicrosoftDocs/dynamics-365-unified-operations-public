@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics Lifecycle Services user guide
+title: Lifecycle Services (LCS) user guide
 description: This topic provides information about the tools that are available in Lifecycle Services (LCS) and when to use them as you move through the phases of your work in LCS.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Dynamics Lifecycle Services user guide
+# Lifecycle Services (LCS) user guide
 
 [!include [banner](../includes/banner.md)]
 

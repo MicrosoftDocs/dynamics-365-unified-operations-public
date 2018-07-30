@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Validate an application in Microsoft Dynamics 365 for Finance and Operations
+title: Validate applications for Finance and Operations
 description: This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a Microsoft Dynamics 365 for Finance and Operations environment.
 author: kfend
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.author: omarc
 
 ---
 
-# Validate an application for Microsoft Dynamics 365 for Finance and Operations
+# Validate applications for Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 

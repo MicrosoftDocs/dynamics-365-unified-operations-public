@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Map models to use financial dimensions as a data source 
+title: Map models to use financial dimensions as data sources
 description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. 
 author: NickSelin
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Map models  to use financial dimensions as a data source 
+# Map models to use financial dimensions as data sources 
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

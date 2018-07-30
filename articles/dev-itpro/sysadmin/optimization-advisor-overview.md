@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Optimization advisor overview
+title: Optimization advisor
 description: This topic describes how you can use Optimization advisor to help guarantee optimal configuration of Microsoft Dynamics 365 Finance and Operations. 
 author: roxanadiaconu
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Optimization advisor overview
+# Optimization advisor
 
 [!include [banner](../includes/banner.md)]
 

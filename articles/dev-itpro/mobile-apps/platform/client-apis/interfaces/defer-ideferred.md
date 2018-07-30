@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Deferred
+title: Deferred type<T>
 description: Deferred type
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Deferred Type&lt;T&gt;
+# Deferred type&lt;T&gt;
 
 [!include [banner](../../../../includes/banner.md)]
 

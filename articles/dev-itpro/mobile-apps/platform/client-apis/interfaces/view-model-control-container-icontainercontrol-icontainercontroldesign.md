@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: ContainerControlDesign
+title: ContainerControlDesign type
 description: Container control design object has properties specific to all container controls.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# ContainerControlDesign Type
+# ContainerControlDesign type
 
 [!include [banner](../../../../includes/banner.md)]
 

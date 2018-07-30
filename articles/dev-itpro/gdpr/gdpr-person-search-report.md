@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# The Person search report
+# Person search report
 
 [!include [banner](../includes/banner.md)]
 

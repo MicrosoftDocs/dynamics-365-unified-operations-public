@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Formula designer in Electronic reporting
+title: Formula designer in Electronic reporting (ER)
 description: This topic explains how to use the formula designer in Electronic reporting (ER).
 author: NickSelin
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Formula designer in Electronic reporting
+# Formula designer in Electronic reporting (ER)
 
 [!include [banner](../includes/banner.md)]
 

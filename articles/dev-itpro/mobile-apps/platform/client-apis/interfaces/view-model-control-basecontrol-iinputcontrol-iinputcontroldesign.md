@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: InputControlDesign
+title: InputControlDesign type
 description: Input control design.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# InputControlDesign Type
+# InputControlDesign type
 
 [!include [banner](../../../../includes/banner.md)]
 

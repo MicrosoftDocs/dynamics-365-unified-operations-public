@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Image
+title: Image type
 description: Image control interface for representing images in the mobile app. Images can be of any of the following types&amp;58 DataUri, Base64, URL, AOTResource, or Symbol.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Image Type
+# Image type
 
 [!include [banner](../../../../includes/banner.md)]
 

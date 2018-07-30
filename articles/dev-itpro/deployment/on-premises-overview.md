@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Finance and Operations on-premises overview 
+title: On-premises deployment option
 description: Dynamics 365 for Finance and Operations now supports running business processes in customer data centers with the on-premises or Local Business Data (LBD) deployment option. 
 author: kfend
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
 ---
-# Dynamics 365 for Finance and Operations, (Enterprise edition on-premises) overview 
+# On-premises deployment option
 
 [!include [banner](../includes/banner.md)]
 

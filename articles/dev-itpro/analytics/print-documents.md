@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Printing in Finance and Operations applications
+title: Document printing
 description: In Microsoft Dynamics 365 for Finance and Operations, you can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
 author: TJVass
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Printing in Finance and Operations applications
+# Document printing
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Regulatory watch and regulatory update communication
+title: Regulatory watch and communication of regulatory updates
 description: As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must undertake their regulatory watch by taking advantage of localization tools in Microsoft Dynamics Lifecycle Services (LCS).
 author: ShylaThompson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Regulatory watch and regulatory update communication
+# Regulatory watch and communication of regulatory updates
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: FieldMetadata
+title: FieldMetadata type
 description: Interface for field metadata.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# FieldMetadata Type
+# FieldMetadata type
 
 [!include [banner](../../../../includes/banner.md)]
 

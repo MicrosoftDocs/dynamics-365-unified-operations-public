@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Scheduling entity store model updates
+title: Schedule updates of entity store models
 description: This topic explains how system administrators can use built-in tools to manage the frequency at which data models are refreshed with the latest updates available in the transactional database.
 author: tjvass
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2018-3-31
 ms.dyn365.ops.version: Platform update 16
 ---
 
-# Scheduling entity store model updates
+# Schedule updates of entity store models
 
 [!include[banner](../includes/banner.md)]
 

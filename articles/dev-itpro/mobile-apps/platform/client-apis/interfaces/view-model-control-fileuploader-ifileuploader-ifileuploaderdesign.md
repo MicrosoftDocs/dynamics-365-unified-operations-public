@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: FileUploaderDesign
+title: FileUploaderDesign type
 description: File uploader design object type. 
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# FileUploaderDesign Type
+# FileUploaderDesign type
 
 [!include [banner](../../../../includes/banner.md)]
 
