@@ -203,18 +203,18 @@ DSE will upgrade one Tier 2 (Standard Acceptance Test) or higher sandbox environ
 
 When the DSE team completes the upgrade process, the service request status will change to **Ready for Validation**. The system is available at this stage. The updated environment will have the same URL, the same environment name, and the same machine names as the old environment. Validate and then change the status of the service request to **Validation Successful** or **Validation Failed**. If you set the service request to **Validation Failed**, a rollback of the upgrade is initiated. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
 
-#### Upgrading any additional Tier 2 or higher sandbox environments
+#### Upgrade additional Tier 2 or higher sandbox environments
 
-You don't have to upgrade any additional Tier 2 or higher sandbox environments. Instead, delete and redeploy them, and then make a database refresh request to copy a database from a Tier 2 or higher environment that has already been upgraded. Alternatively, you can manually upgrade these environments by following the steps in [Process for upgrading a sandbox environment](upgrade-sandbox-environment.md).
+You don't have to upgrade any additional Tier 2 or higher sandbox environments. Instead, delete and redeploy them, and then create a database refresh request to copy a database from a Tier 2 or higher environment that has already been upgraded. Alternatively, you can manually upgrade these environments by following the steps in [Process for upgrading a sandbox environment](upgrade-sandbox-environment.md).
 
-#### Upgrading any Tier 1 environments
+#### Upgrade Tier 1 environments
 
-You can deploy Tier 1 environments (also known as dev/test or build boxes) by using the new version. Then just synchronize to your upgraded VSTS branch. To get data for the Tier 1 environments, a developer can upgrade the database by following the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
+You can deploy Tier 1 environments (also known as dev/test or build boxes) by using the new version and then synchronizing to your upgraded VSTS branch. To get data for the Tier 1 environments, a developer can upgrade the database by following the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
 
 ### Upgrade your production environment
 
 1. Use LCS to submit an upgrade request to update the production environment, just as you did for the sandbox environment.
-3. Complete your validation and testing and sign-off by setting the service request status to **Validation Successful**. If you discover an issue and want to roll back to the old environment, set the status to **Validation Failed** to rollback. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
+2. Complete your validation, testing, and sign-off by setting the service request status to **Validation Successful**. If you discover an issue and want to roll back to the old environment, set the status to **Validation Failed** to rollback. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
 
 ## Scenario 4: Upgrade to the most current platform only
 
