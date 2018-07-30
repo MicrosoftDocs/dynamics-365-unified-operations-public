@@ -1936,14 +1936,20 @@
             href: ../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md
           - name: Import and verify NF-e XML documents and DANFE files
             href: ../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md
+          - name: Service electronic fiscal document using text files
+            href: ../financials/localizations/tasks/br00059-service-electronic-fiscal-document-text-files.md
           - name: Process electronic payment remittances
             href: ../financials/localizations/latam-bra-process-electronic-payment-remittances.md
+          - name: Electronic payment management for vendor payments
+            href: ../financials/localizations/tasks/br-00067-electronic-payment-management-vendor-payments.md
           - name: Fiscal documents
             href: ../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md
           - name: Fiscal document text placeholders
             href: ../financials/localizations/latam-bra-fiscal-document-text-placeholders.md
           - name: Set up fiscal document source text
             href: ../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md
+          - name: Manage fiscal document text in procurement documents
+            href: ../financials/localizations/tasks/br-00080-manage-fiscal-document-texts-procurement-documents.md
           - name: Issue fiscal documents for vendors
             href: ../financials/localizations/tasks/br-00033-issuing-fiscal-document-non-taxable-vendors.md
           - name: Issue customer fiscal documents
@@ -1960,12 +1966,32 @@
             href: ../financials/localizations/tasks/br-00024-receiving-vendor-fiscal-document-products.md
           - name: Receive vendor fiscal documents (fixed assets - PIS and COFINS long term recoverable)
             href: ../financials/localizations/tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md  
+          - name: Receive vendor fiscal documents (fixed assets - ICMS long term recoverable)
+            href: ../financials/localizations/tasks/br-00082-receiving-vendor-fiscal-document-fixed-assets-icms-long-term-recoverable.md
+          - name: Issue customer fiscal documents (services)
+            href: ../financials/localizations/tasks/br-00084-issuing-customer-fiscal-documents-services.md
+          - name: Issue customer fiscal documents (fixed assets)
+            href: ../financials/localizations/tasks/br-00085-issuing-customer-fiscal-documents-fixed-assets.md
+          - name: Issue customer fiscal documents (project)
+            href: ../financials/localizations/tasks/br-00086-issuing-customer-fiscal-documents-project.md
+          - name: Issue customer fiscal documents (for end users)
+            href: ../financials/localizations/tasks/br-00087-issuing-customer-fiscal-documents-end-user.md
+          - name: Issue customer fiscal documents (for SUFRAMA customers)
+            href: ../financials/localizations/tasks/br-00088-issuing-customer-fiscal-documents-suframa-customers.md
+          - name: Cancel a customer fiscal document (project)
+            href: ../financials/localizations/tasks/br-00092-cancel-customer-fiscal-document-project.md
           - name: Sales complementary fiscal documents
             href: ../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md
+          - name: Create and post a sales complementary fiscal document
+            href: ../financials/localizations/tasks/br-00052-1-create-post-sales-complementary-fiscal-documents.md
+          - name: Cancel a sales complementary fiscal document
+            href: ../financials/localizations/tasks/br-00052-2-cancel-sales-complementary-fiscal-document.md
           - name: Service electronic fiscal document
             href: ../financials/localizations/latam-bra-service-electronic-fiscal-document.md
           - name: Journals generated during the electronic payment return process
             href: ../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md
+          - name: Project debit notes
+            href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
         - name: NF-e process
           href: ../financials/localizations/latam-bra-nf-e-process.md
           items:
@@ -1989,8 +2015,18 @@
           href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
         - name: Dispose a CIAP fixed asset
           href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
+        - name: Enter a CIAP transaction
+          href: ../financials/localizations/tasks/br-10020-1-enter-ciap-transaction.md
+        - name: Calculate CIAP credit amount
+          href: ../financials/localizations/tasks/br-10020-2-calculate-ciap-credit-amount.md
+        - name: Include CIAP credit from a previous period
+          href: ../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md
         - name: Delivery slips
           href: ../financials/localizations/tasks/br-00041-delivery-slip.md
+        - name: Non-fiscal operations
+          href: ../financials/localizations/tasks/br-10016-non-fiscal-operations.md
+        - name: Miscellaneous charges on free text invoices
+          href: ../financials/localizations/tasks/br-00050-miscellaneous-charge-free-text-invoice.md
         - name: Set up interest and fines for vendor payments
           href: ../financials/localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
         - name: Calculate interest and fines on vendor payments
@@ -2026,6 +2062,8 @@
             href: ../financials/localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
           - name: Set up adjustment codes for IPI taxes
             href: ../financials/localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
+          - name: PIS and COFINS fixed assets
+            href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
           - name: Set up adjustment codes for PIS and COFINS taxes
             href: ../financials/localizations/tasks/br-10006-2-set-up-adjustment-codes-pis-cofins-taxes.md
           - name: Set up PIS and COFINS tables
@@ -2044,72 +2082,6 @@
             href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
           - name: Withholding taxes on vendor payments
             href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
-        - name: Tasks for Brazil
-          items:
-          - name: Set up legal entity parameters
-            href: ../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md
-          - name: Set up fiscal document source text
-            href: ../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md
-          - name: Receive vendor fiscal documents (fixed assets - PIS and COFINS long term recoverable)
-            href: ../financials/localizations/tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md
-          - name: Receive vendor fiscal documents (products)
-            href: ../financials/localizations/tasks/br-00024-receiving-vendor-fiscal-document-products.md
-          - name: Create and post a purchase complementary fiscal document
-            href: ../financials/localizations/tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md
-          - name: Cancel a purchase complementary fiscal document
-            href: ../financials/localizations/tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md
-          - name: Issue fiscal documents for vendors
-            href: ../financials/localizations/tasks/br-00033-issuing-fiscal-document-non-taxable-vendors.md
-          - name: Issue customer fiscal documents
-            href: ../financials/localizations/tasks/br-00038-issuing-customer-fiscal-document.md
-          - name: Delivery slips
-            href: ../financials/localizations/tasks/br-00041-delivery-slip.md
-          - name: Miscellaneous charges on free text invoices
-            href: ../financials/localizations/tasks/br-00050-miscellaneous-charge-free-text-invoice.md
-          - name: Create and post a sales complementary fiscal document
-            href: ../financials/localizations/tasks/br-00052-1-create-post-sales-complementary-fiscal-documents.md
-          - name: Cancel a sales complementary fiscal document
-            href: ../financials/localizations/tasks/br-00052-2-cancel-sales-complementary-fiscal-document.md
-          - name: Service electronic fiscal document using text files
-            href: ../financials/localizations/tasks/br00059-service-electronic-fiscal-document-text-files.md
-          - name: Set up interest and fines for vendor payments
-            href: ../financials/localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
-          - name: Calculate interest and fines on vendor payments
-            href: ../financials/localizations/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md
-          - name: Set up interest and fines on customer payments
-            href: ../financials/localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
-          - name: Calculate interest and fines on customer payments
-            href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
-          - name: Electronic payment management for vendor payments
-            href: ../financials/localizations/tasks/br-00067-electronic-payment-management-vendor-payments.md
-          - name: Project debit notes
-            href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
-          - name: Manage fiscal document text in procurement documents
-            href: ../financials/localizations/tasks/br-00080-manage-fiscal-document-texts-procurement-documents.md
-          - name: Receive vendor fiscal documents (fixed assets - ICMS long term recoverable)
-            href: ../financials/localizations/tasks/br-00082-receiving-vendor-fiscal-document-fixed-assets-icms-long-term-recoverable.md
-          - name: Issue customer fiscal documents (services)
-            href: ../financials/localizations/tasks/br-00084-issuing-customer-fiscal-documents-services.md
-          - name: Issue customer fiscal documents (fixed assets)
-            href: ../financials/localizations/tasks/br-00085-issuing-customer-fiscal-documents-fixed-assets.md
-          - name: Issue customer fiscal documents (project)
-            href: ../financials/localizations/tasks/br-00086-issuing-customer-fiscal-documents-project.md
-          - name: Issue customer fiscal documents (for end users)
-            href: ../financials/localizations/tasks/br-00087-issuing-customer-fiscal-documents-end-user.md
-          - name: Issue customer fiscal documents (for SUFRAMA customers)
-            href: ../financials/localizations/tasks/br-00088-issuing-customer-fiscal-documents-suframa-customers.md
-          - name: Cancel a customer fiscal document (project)
-            href: ../financials/localizations/tasks/br-00092-cancel-customer-fiscal-document-project.md
-          - name: Non-fiscal operations
-            href: ../financials/localizations/tasks/br-10016-non-fiscal-operations.md
-          - name: Enter a CIAP transaction
-            href: ../financials/localizations/tasks/br-10020-1-enter-ciap-transaction.md
-          - name: Calculate CIAP credit amount
-            href: ../financials/localizations/tasks/br-10020-2-calculate-ciap-credit-amount.md
-          - name: Include CIAP credit from a previous period
-            href: ../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md
-          - name: PIS and COFINS fixed assets
-            href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
       - name: Mexico
         items:
         - name: Scope of localization
