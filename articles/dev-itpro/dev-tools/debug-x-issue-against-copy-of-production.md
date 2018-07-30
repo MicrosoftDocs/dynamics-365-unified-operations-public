@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Debug X++ against a copy of a production database
+title: Debug X++ against copies of production databases
 description: This topic explains how to configure X++ debugging so that you can investigate issues in the production environment.
 author: tariqbell
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Debug X++ against a copy of a production database
+# Debug X++ against copies of production databases
 
 [!include [banner](../includes/banner.md)]
 

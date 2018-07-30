@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Bring your own database
+title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Bring your own database
+# Bring your own database (BYOD)
 
 [!include [banner](../includes/banner.md)]
 

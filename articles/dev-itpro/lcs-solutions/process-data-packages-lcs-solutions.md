@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Process and consume data packages in a Microsoft Dynamics 365 for Finance and Operations solution
+title: Process and consume data packages in Finance and Operations solutions
 description: This topic explains how to process and consume data packages in a Microsoft Dynamics 365 for Finance and Operations solution.
 author: kfend
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.author: omarc
 
 ---
 
-# Process and consume data packages in a Microsoft Dynamics 365 for Finance and Operations solution
+# Process and consume data packages in Finance and Operations solutions
 
 [!include [banner](../includes/banner.md)]
 

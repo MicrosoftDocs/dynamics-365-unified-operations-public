@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: HyperLinkMetadata
+title: HyperLinkMetadata type
 description: Hyperlink metadata type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# HyperLinkMetadata Type
+# HyperLinkMetadata type
 
 [!include [banner](../../../../includes/banner.md)]
 

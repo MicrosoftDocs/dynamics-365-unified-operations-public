@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: EventHook
+title: EventHook type<T>
 description: EventHook type
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# EventHook Type&lt;T&gt;
+# EventHook type&lt;T&gt;
 
 [!include [banner](../../../../includes/banner.md)]
 

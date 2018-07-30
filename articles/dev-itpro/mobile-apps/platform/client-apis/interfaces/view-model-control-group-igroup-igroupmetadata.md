@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: GroupMetadata
+title: GroupMetadata type
 description: Group metadata type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# GroupMetadata Type
+# GroupMetadata type
 
 [!include [banner](../../../../includes/banner.md)]
 

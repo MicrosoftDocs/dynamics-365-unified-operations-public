@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Apply updates to an on-premises deployment
+title: Apply updates to on-premises deployments
 description: This topic explains how to apply updates to an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations.
 author: manalidongre
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
 
 ---
-# Apply updates to an on-premises deployment
+# Apply updates to on-premises deployments
 
 [!include [banner](../includes/banner.md)]
 

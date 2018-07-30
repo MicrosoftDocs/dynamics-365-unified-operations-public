@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install a deployable package
+title: Install deployable packages from the command line
 description: This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
 author: manalidongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Install a deployable package
+# Install deployable packages from the command line
 
 [!include [banner](../includes/banner.md)]
 

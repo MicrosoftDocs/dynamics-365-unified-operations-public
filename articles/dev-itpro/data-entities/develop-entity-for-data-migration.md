@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Develop an entity for data migration
+title: Develop entities for data migration
 description: This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.
 author: Sunil-Garg
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Develop an entity for data migration
+# Develop entities for data migration
 
 [!include [banner](../includes/banner.md)]
 

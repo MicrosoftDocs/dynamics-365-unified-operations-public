@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Update Visual Studio development tools
+title: Update the Visual Studio development tools
 description: This topic explains how to update the development tools.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Update Visual Studio development tools
+# Update the Visual Studio development tools
 
 [!include [banner](../includes/banner.md)]
 

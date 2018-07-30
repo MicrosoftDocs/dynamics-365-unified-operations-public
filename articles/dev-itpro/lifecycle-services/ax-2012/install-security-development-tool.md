@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install the Security Development Tool (AX 2012)
+title: Install the Security Development Tool
 description: This topic provides information about how to install the Security Development Tool. 
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Install the Security Development Tool (AX 2012)
+# Install the Security Development Tool
 
 [!include [banner](../../includes/banner.md)]
 

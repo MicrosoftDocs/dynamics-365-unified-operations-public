@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ conversion run-time functions
+title: X++ conversion runtime functions
 description: This topic describes the conversion run-time functions.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ conversion run-time functions
+# X++ conversion runtime functions
 
 [!include [banner](../includes/banner.md)]
 

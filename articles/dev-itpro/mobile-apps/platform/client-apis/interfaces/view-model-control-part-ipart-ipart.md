@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Part
+title: Part type
 description: Part control type. A part is a container control that contains only a page, allowing for a page to be embedded within a page.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Part Type
+# Part type
 
 [!include [banner](../../../../includes/banner.md)]
 

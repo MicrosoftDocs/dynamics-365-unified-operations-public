@@ -332,7 +332,7 @@
     href: tasks/create-online-channel-define-channel-attributes.md
   - name: Create POS permission groups
     href: tasks/create-pos-permission-groups.md
-  - name: 'Create a POS visual profile '
+  - name: Create a POS visual profile
     href: tasks/create-pos-visual-profile-2016-02.md
   - name: Create product packages for purchase orders
     href: tasks/create-product-packages-purchase-orders.md
@@ -514,7 +514,7 @@
       href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
     - name: Retail SDK packaging
       href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-    - name: 'Retail SDK samples '
+    - name: Retail SDK samples
       href: dev-itpro/retail-sdk/retail-sdk-samples.md
       items:
       - name: Extension points for packing slips

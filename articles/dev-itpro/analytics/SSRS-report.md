@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: SQL Server Reporting Services reports
+title: SQL Server Reporting Services (SSRS) reports that are available
 description: This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available in Finance and Operations.
 author: sericks007
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# SQL Server Reporting Services reports
+# SQL Server Reporting Services (SSRS) reports that are available
 
 [!include [banner](../includes/banner.md)]
 

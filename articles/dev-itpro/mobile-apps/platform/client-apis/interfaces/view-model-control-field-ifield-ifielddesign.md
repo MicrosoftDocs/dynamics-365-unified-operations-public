@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: FieldDesign
+title: FieldDesign type
 description: Design object interface for a field control.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# FieldDesign Type
+# FieldDesign type
 
 [!include [banner](../../../../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Version models in the automated build
+title: Update model versions in the automated build
 description: The topic explains how you can update the models in a source package and deployable package of the build output with the version of the build that produced them.
 author: jorisdg
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Version models in the automated build
+# Update model versions in the automated build
 
 [!include [banner](../includes/banner.md)]
 

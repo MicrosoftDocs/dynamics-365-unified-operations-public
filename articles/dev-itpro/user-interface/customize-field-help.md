@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customize field Help
+title: Customize field descriptions
 description: This article describes how you can customize existing field descriptions and add your own descriptions.
 author: YuyuScheller
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Customize field Help
+# Customize field descriptions
 
 [!include [banner](../includes/banner.md)]
 

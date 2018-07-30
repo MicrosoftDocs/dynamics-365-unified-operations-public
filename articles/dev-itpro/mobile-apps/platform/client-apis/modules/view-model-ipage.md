@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Page
+title: Page module
 description: The IPage interface encapsulates the various properties, life cycle and event hooks associated with a page in a workspace.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Page 
+# Page module
 
 [!include [banner](../../../../includes/banner.md)]
 

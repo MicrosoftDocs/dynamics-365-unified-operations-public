@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Incremental refresh option for entity store models
+title: Incremental refresh option for Entity store models
 description: Incremental refresh is an option for updating entity store models in response to changes in objects referenced by the model.
 author: tjvass
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2018-3-31
 ms.dyn365.ops.version: Platform update 16
 ---
 
-# Incremental refresh option for entity store models
+# Incremental refresh option for Entity store models
 
 [!include[banner](../includes/banner.md)]
 

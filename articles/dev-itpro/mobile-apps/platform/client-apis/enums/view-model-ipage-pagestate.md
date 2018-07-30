@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: PageState
+title: PageState enumeration
 description: Represents the various high-level states the a page can be in.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# PageState Enumeration
+# PageState enumeration
 
 [!include [banner](../../../../includes/banner.md)]
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 8.0
 
 ---
 
-# Generate ER reports by adding content as raw XML
+# Generate reports by adding content as raw XML
 
 [!include[banner](../includes/banner.md)]
 

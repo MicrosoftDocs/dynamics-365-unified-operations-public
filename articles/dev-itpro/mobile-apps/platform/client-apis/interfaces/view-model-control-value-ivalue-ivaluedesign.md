@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: ValueDesign
+title: ValueDesign type
 description: Value design object type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# ValueDesign Type
+# ValueDesign type
 
 [!include [banner](../../../../includes/banner.md)]
 

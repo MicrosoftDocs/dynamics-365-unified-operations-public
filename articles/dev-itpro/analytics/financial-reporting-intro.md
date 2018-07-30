@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Financial reporting for Finance and Operations
+title: Financial reporting
 description: Financial reporting for Finance and Operations allows financial and business professionals to create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
 author: aprilolson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Financial reporting for Finance and Operations
+# Financial reporting
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Data management and integration using data entities
+title: Data management and integration by using data entities
 description: This topic provides a brief overview of the mechanics of synchronous and asynchronous integration.
 author: Sunil-Garg
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data management and integration using data entities
+# Data management and integration by using data entities
 
 [!include [banner](../includes/banner.md)]
 
