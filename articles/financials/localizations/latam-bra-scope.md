@@ -63,7 +63,7 @@ In general, the Microsoft strategy for addressing the tax, financial, accounting
 
 - They implement the federal tax requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section of this topic.
 - They implement, for the following states, the state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section: São Paulo (SP), Rio de Janeiro (RJ), Paraná (PR), Santa Catarina (SC), and Rio Grande do Sul (RS).
-- They deliver specific new regulatory features through configurations or development of new functionality that implements the federal and state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section, in accordance with the business rules that are specified in this topic and the Microsoft Dynamics roadmap.
+- They deliver specific new regulatory features through configurations or development of new functionality that implements the federal and state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section, in accordance with the business rules that are specified in this topic and the Microsoft Dynamics roadmap on the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/partnersource/deployment/resources/productreleases/gfmlocalizationportalmc.htm?printpage=false&sid=xdtafwuk1xh2l5jdjhhv0joy&stext=gfm%20localization%20portal).
 - They deliver specific new regulatory features in the most recent service pack that is available, or in a new service pack, for supported versions of Microsoft Dynamics.
 - They apply National Standards and competitive features that Microsoft, at its sole discretion, determines to be necessary or appropriate, based on business needs in the region.
 - They don't focus on the requirements of specific businesses, segments, verticals, regions, or large enterprises, even when these requirements are required by laws, statutes, or regulations at the federal, state, or city level.
@@ -811,7 +811,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <tr>
 <td></td>
 <td>The EFT service must be contracted directly from the third-party provider and isn't included in any Microsoft software license.
-<blockquote>[!NOTE]<br>Not all Enterprise POS operations are permitted in Brazil because of conflicts with the PAF-ECF legislation. For more details, see the Retail and Enterprise POS Localization for Brazil white paper.</blockquote>
+<blockquote>[!NOTE]<br>Not all Enterprise POS operations are permitted in Brazil because of conflicts with the PAF-ECF legislation. For more details, see <a href="https://www.microsoft.com/en-hk/download/details.aspx?id=42938">the Retail and Enterprise POS Localization for Brazil white paper.</blockquote>
 </td>
 <td>Yes</td>
 <td>Yes</td>
