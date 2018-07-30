@@ -347,8 +347,23 @@
             href: ../supply-chain/sales-marketing/field-service-work-order.md
           - name: Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations
             href: ../supply-chain/sales-marketing/field-service-invoice.md
-      - name: Consuming external web services
-        href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
+        - name: Configure Project Service Automation integration
+          href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
+          items:
+          - name: Project Service Automation integration parameters
+            href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
+          - name: Synchronize project contracts and projects
+            href: ../financials/project-management/project-contracts-templates.md?toc=/fin-and-ops/toc.json
+          - name: Synchronize project tasks
+            href: ../financials/project-management/project-tasks-template.md?toc=/fin-and-ops/toc.json
+          - name: Synchronize project expense categories
+            href: ../financials/project-management/project-categories-templates.md?toc=/fin-and-ops/toc.json
+          - name: Synchronize project estimates from to project forecasts
+            href: ../financials/project-management/project-estimates-templates.md?toc=/fin-and-ops/toc.json
+          - name: Synchronize project actuals to the project integration journal
+            href: ../financials/project-management/project-actuals-templates.md?toc=/fin-and-ops/toc.json
+        - name: Consuming external web services
+          href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
   - name: Data management
     href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
     items:
@@ -517,6 +532,10 @@
         href: ../financials/accounts-receivable/sepa-direct-debit-mandate.md
       - name: Credit card setup, authorization, and capture
         href: ../financials/accounts-receivable/credit-card-authorizations.md
+      - name: Create a free text invoice
+        href: ../financials/accounts-receivable/create-free-text-invoice-new.md
+      - name: Create a free text invoice template
+        href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md      
       - name: Correct a free text invoice
         href: ../financials/accounts-receivable/correct-free-text-invoice.md
       - name: Set up interest rates for an interest code
@@ -539,11 +558,7 @@
           href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
         - name: Create a direct debit mandate for a customer
           href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-        - name: Create a free text invoice
-          href: ../financials/accounts-receivable/tasks/create-free-text-invoice.md
-        - name: Create a free text invoice template
-          href: ../financials/accounts-receivable/tasks/create-free-text-invoice-template.md
-        - name: Create an interest code with a range
+          name: Create an interest code with a range
           href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
         - name: Create sales order invoices
           href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
@@ -958,9 +973,9 @@
         - name: Consolidation and elimination overview
           href: ../financials/budgeting/consolidation-elimination-overview.md
         - name: Fiscal calendars, fiscal years, and periods
-          href: ../financials/general-ledger/configure-account-structures.md
+          href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
         - name: Configure account structures
-          href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md        
+          href: ../financials/general-ledger/configure-account-structures.md        
       - name: Journals and ledgers
         items:
         - name: General journal processing
@@ -1270,6 +1285,7 @@
         - name: Tax thresholds FAQ
           href: ../financials/localizations/apac-ind-tax-thresholds.md
       - name: Japan
+        href: ../financials/localizations/japan.md
         items:
         - name: Acquire a fixed asset and claim for the government grant subsidy
           href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
@@ -1655,6 +1671,7 @@
         - name: Year-end close
           href: ../financials/localizations/emea-cze-hun-year-end.md
       - name: Denmark
+        href: ../financials/localizations/denmark.md
         items:
         - name: Assign a payment slip format to a customer account
           href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
@@ -1686,6 +1703,7 @@
         - name: VAT statement
           href: ../financials/localizations/emea-est-vat-statement-details.md
       - name: France
+        href: ../financials/localizations/france.md
         items:
         - name: Public sector
           items:
@@ -1762,6 +1780,7 @@
         - name: Set up electronic tax declarations
           href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
       - name: Hungary
+        href: ../financials/localizations/hungary.md
         items:
         - name: Exchange rate calculation
           href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
@@ -1776,6 +1795,7 @@
         - name: Year-end close
           href: ../financials/localizations/emea-cze-hun-year-end.md
       - name: Iceland
+        href: ../financials/localizations/iceland.md
         items:
         - name: Create a vendor account and attach the invoice declaration category
           href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
@@ -1786,6 +1806,7 @@
         - name: Update vendor invoice declarations and generate the report
           href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
       - name: Italy
+        href: ../financials/localizations/italy.md
         items:
         - name: VAT statements details
           href: ../financials/localizations/emea-ita-vat-statements-details.md
@@ -1808,6 +1829,7 @@
         - name: Withholding tax
           href: ../financials/localizations/emea-ita-withholding-tax.md
       - name: Latvia
+        href: ../financials/localizations/latvia.md
         items:
         - name: Fixed assets accounting
           href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
@@ -1820,6 +1842,7 @@
         - name: VAT statement details
           href: ../financials/localizations/emea-lva-vat-statement-details.md
       - name: Lithuania
+        href: ../financials/localizations/lithuania.md
         items:
         - name: Fixed asset repair statement
           href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
@@ -1830,12 +1853,14 @@
         - name: VAT statement details
           href: ../financials/localizations/emea-ltu-vat-statement-details.md
       - name: Netherlands
+        href: ../financials/localizations/netherlands.md
         items:
         - name: Electronic tax declarations (EVAT)
           href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
         - name: Semansys XBRL integration
           href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
       - name: Norway
+        href: ../financials/localizations/norway.md
         items:
         - name: Customer and vendor payment formats
           href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
@@ -1850,6 +1875,7 @@
         - name: Deployment guidelines for cash registers
           href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
       - name: Poland
+        href: ../financials/localizations/poland.md
         items:
         - name: Calculate line discounts from the unit price
           href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
@@ -1872,6 +1898,7 @@
         - name: Turnover balances statement
           href: ../financials/localizations/emea-pol-turnover-balances-statement.md
       - name: Spain
+        href: ../financials/localizations/spain.md
         items:
         - name: Apply cash discounts in the invoice
           href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
@@ -1900,6 +1927,7 @@
         - name: Special entries and opening sheets
           href: ../financials/localizations/emea-esp-opening-sheets-spain.md
       - name: Sweden
+        href: ../financials/localizations/sweden.md
         items:
         - name: Export financial information for auditors in Sweden
           href: ../financials/localizations/emea-swe-sie-standard-report.md
@@ -1908,10 +1936,12 @@
         - name: Cash registers
           href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
       - name: Switzerland
+        href: ../financials/localizations/switzerland.md
         items:
         - name: Import customer payments in ESR
           href: ../financials/localizations/emea-che-esr-customer-payments-import.md
       - name: United Kingdom
+        href: ../financials/localizations/united-kingdom.md
         items:
         - name: Construction Industry Scheme
           href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
@@ -1930,6 +1960,7 @@
     - name: Latin America
       items:
       - name: Brazil
+        href: ../financials/localizations/brazil.md
         items:
         - name: Fiscal books
           href: ../financials/localizations/latam-bra-fiscal-books.md
@@ -2093,6 +2124,7 @@
           - name: PIS and COFINS fixed assets
             href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
       - name: Mexico
+        href: ../financials/localizations/mexico.md
         items:
         - name: Scope of localization
           href: ../financials/localizations/latam-mex-scope.md
@@ -2132,13 +2164,15 @@
           href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
         - name: Vendor registration IDs
           href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
-    - name: Middle East
+    - name: Saudi Arabia
+      href: ../financials/localizations/saudi-arabia.md
       items:
       - name: Sales tax
         href: ../financials/localizations/apac-sau-sales-tax.md
       - name: Zakat reporting for Saudi Arabia
         href: ../financials/localizations/emea-sau-zakat-reporting.md
-    - name: North America
+    - name: United States
+      href: ../financials/localizations/united-states.md
       items:
       - name: Year-end 1099 reporting for the United States
         href: ../financials/localizations/noam-usa-year-end-1099-reporting.md
@@ -3989,5 +4023,5 @@
   href: ../dev-itpro/toc.yml
 - name: Dynamics 365 for Retail
   href: ../retail/toc.yml
-- name: Dynamics 365 for Talent
-  href: ../talent/toc.yml
+
+

@@ -68,7 +68,7 @@ No, you can't install additional development tools.
 No, you can't run Windows PowerShell commands and commands at a prompt command as an administrator.
 
 ## Is the Trace Parser supported?
-Although the Trace Parser isn't currently supported, we plan to add support for it again soon.
+Trace Parser currently requires the user to be an administrator.
 
 ## Can the system be put into maintenance mode?
 You can put the system into maintenance mode to change the license configuration. However, the procedure that is described in [Maintenance mode](maintenance-mode.md) isn't supported. Self-service support for maintenance mode in all environments will be added to LCS in the future. Until this support is available in LCS, you can follow these steps to put a system into maintenance mode.

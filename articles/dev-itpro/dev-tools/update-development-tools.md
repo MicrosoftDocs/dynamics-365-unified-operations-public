@@ -5,7 +5,7 @@ title: Update the Visual Studio development tools
 description: This topic explains how to update the development tools.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains how to update the development tools.
 
-Use this tutorial to update your Visual Studio development tools with a new version. It explains how to uninstall your existing Visual Studio development tools and install the new extension. The new extension is in the form of an installable VSIX file. This file is a part of the binary hotfix available on the Dynamics Lifecycle Services (LCS) site. The VSIX file is located in the **DevToolsService\\Scripts** folder of the binary hotfix package. Whenever you update a developer machine with an AOS binary hotfix, it is also recommended to install the development tools that are packaged within the same binary hotfix.
+Use this tutorial to update your Visual Studio development tools with a new version. It explains how to uninstall your existing Visual Studio development tools and install the new extension. The new extension is in the form of an installable VSIX file. This file is a part of the binary hotfix available on the Dynamics Lifecycle Services (LCS) site. The VSIX file is located in the **DevToolsService\\Scripts** folder of the binary hotfix package. 
+
+> [!NOTE]
+> You do not need to follow the instructions in this article if you are upgrading your Finance and Operations platform (also known as the Dynamics 365 Unified Operations platform) to Platform update 4 or newer. It is an automatic step that is part of the platform upgrade process.
 
 ## Uninstall the existing Visual Studio extension
 In order to install a new version of the development tools, you'll need to uninstall the existing version first. Verify the version of the development tools that you have installed. If you don't have it installed, you can skip this section.
