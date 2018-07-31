@@ -47,7 +47,7 @@ embedded in the Talent client to augment the product's functionality. For
 example, you might build a PowerApp to supplement Talent with information
 retrieved from another system.
 
-Full description is available [here](../fin-and-ops/get-started/embed-power-apps.md).
+More information is available [here](../fin-and-ops/get-started/embed-power-apps.md).
 
 ## Ceridian payroll integration
 
@@ -55,19 +55,19 @@ Integration between Microsoft Dynamics 365 for Talent and Ceridian Dayforce is
 now available for the US, Canada and Mexico. The integration uses broad
 categories of data including:
 
--   Human Resources data
+-   Human Resources data,
 
--   Compensation data
+-   Compensation data,
 
--   Payroll data, such as pay cycles, pay periods and earning codes
+-   Payroll data, such as pay cycles, pay periods and earning codes, and
 
--   Worker data
+-   Worker data.
 
-Full description is available [here](configure-payroll-integration.md)
+More information is available [here](configure-payroll-integration.md).
 
 ## Worker tax regions expanded beyond US
 
-Tax region support has been added for regions outside of the US. Tax regions
+Tax region support has been added for regions outside of the United States. Tax regions
 when assigned to workers can drive tax calculations and be used in integrations
 to external payroll solutions.
 
