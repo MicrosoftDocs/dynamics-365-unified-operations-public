@@ -1361,8 +1361,6 @@
         items:
         - name: Install
           href: lifecycle-services/ax-2012/install-security-development-tool.md
-        - name: User guide
-          href: lifecycle-services/ax-2012/security-development-tool-user-guide.md
         - name: Define or edit entry point permissions
           href: lifecycle-services/ax-2012/define-edit-entry-point-permissions.md
       - name: Performance Benchmark SDK
