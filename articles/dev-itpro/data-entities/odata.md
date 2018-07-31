@@ -90,7 +90,7 @@ The following are the high-level features that are enabled for the OData service
   -   $top
   -   $expand
   -   $select
-- The OData service supports serving driven paging with a maximum page size of 1,000.
+- The OData service supports serving driven paging with a maximum page size of 10,000.
 
 For more information, see: [OData actions that are bound to entities](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355).
 
