@@ -2139,12 +2139,16 @@
     items:
     - name: Develop a human resources strategy
       items:
+      - name: Create a goal
+        href: hr/tasks/create-goal.md
       - name: Organize your workforce using departments, jobs, and positions
         href: ../talent/departments-jobs-positions.md
       - name: Set up job components
         href: ../talent/create-job.md
       - name: Create a department and associate it with the department hierarchy
         href: ../talent/create-department-add-department-hierarchy.md
+      - name: Create a calendar and generate working times
+        href: hr/tasks/create-calendar-working-times.md
       - name: Set up HR parameters across legal entities
         href: ../talent/set-up-hr-parameters-across-legal-entities.md
       - name: Set up company-specific HR parameters
@@ -2153,12 +2157,20 @@
         href: ../talent/personnel-actions-faq.md
       - name: Use workflow to manage employee information
         href: ../talent/workflow-manage-employee-information.md
+      - name: Approve application inbox records
+        href: hr/tasks/approve-application-inbox-records.md
+      - name: Create loan items
+        href: hr/tasks/create-loan-items.md
+      - name: Manage items lent to workers
+        href: ../talent/loan-items.md
     - name: Recruiting
       items:
       - name: Manage a recruiting process
         href: hr/manage-recruiting-process.md
       - name: Mass hire projects
         href: hr/mass-hire-projects.md
+      - name: Create a mass hire project
+        href: hr/tasks/create-mass-hire-project.md
     - name: Motivate employees
       items:
       - name: Compensation plans
@@ -2175,6 +2187,8 @@
         href: hr/tasks/enroll-employee-fixed-compensation-plan.md
       - name: Enroll an employee in a variable compensation plan
         href: hr/tasks/enroll-employee-variable-compensation-plan.md
+      - name: Create a performance review
+        href: hr/tasks/create-performance-review.md
     - name: Develop and train employees
       items:
       - name: Performance management overview
@@ -2191,8 +2205,8 @@
         href: ../talent/benefit-eligibility-policies.md
       - name: Benefit eligibility process
         href: hr/tasks/benefit-eligibility-process.md
-      - name: Manage items lent to workers
-        href: ../talent/loan-items.md
+      - name: Create a new benefit
+        href: hr/tasks/create-new-benefit.md
       - name: Enroll and remove benefits from workers
         href: hr/tasks/enroll-remove-benefits-workers.md
     - name: Gather information using questionnaires
@@ -2207,6 +2221,8 @@
         href: ../talent/evaluate-questionnaire-results.md
       - name: Analyze questionnaire results
         href: hr/tasks/analyze-questionnaire-results.md
+      - name: Create an open-ended question
+        href: hr/tasks/create-open-ended-question.md
       - name: Create a closed ended question
         href: hr/tasks/create-closed-ended-question.md
     - name: Workplace safety and compliance (United States)
