@@ -2145,6 +2145,10 @@
         href: ../talent/departments-jobs-positions.md
       - name: Set up job components
         href: ../talent/create-job.md
+      - name: Define new departments
+        href: hr/tasks/define-new-departments.md
+      - name: Define new jobs
+        href: hr/tasks/define-new-jobs.md
       - name: Create a department and associate it with the department hierarchy
         href: ../talent/create-department-add-department-hierarchy.md
       - name: Create a calendar and generate working times
@@ -2157,12 +2161,26 @@
         href: ../talent/personnel-actions-faq.md
       - name: Use workflow to manage employee information
         href: ../talent/workflow-manage-employee-information.md
+      - name: Modify reporting relationships for a position
+        href: hr/tasks/modify-reporting-relationships-position.md
       - name: Approve application inbox records
         href: hr/tasks/approve-application-inbox-records.md
+      - name: Enter worker information
+        href: hr/tasks/enter-worker-information.md
+      - name: Loan items to a worker
+        href: hr/tasks/loan-item-worker.md
       - name: Create loan items
         href: hr/tasks/create-loan-items.md
       - name: Manage items lent to workers
         href: ../talent/loan-items.md
+      - name: Develop a succession plan
+        href: hr/tasks/develop-succession-plan.md
+      - name: Enter project timesheets
+        href: hr/tasks/enter-project-timesheets.md
+      - name: Manage email templates
+        href: hr/tasks/manage-email-templates.md
+      - name: Manage leave of absence
+        href: hr/tasks/manage-leave-absence.md
     - name: Recruiting
       items:
       - name: Manage a recruiting process
@@ -2171,6 +2189,18 @@
         href: hr/mass-hire-projects.md
       - name: Create a mass hire project
         href: hr/tasks/create-mass-hire-project.md
+      - name: Enter applicant and application data manually
+        href: hr/tasks/enter-applicant-application-data-manually.md
+      - name: Develop and open a job requisition
+        href: hr/tasks/develop-open-job-requisition.md
+      - name: Set up positions
+        href: hr/tasks/set-up-positions.md
+      - name: Hire a candidate through recruiting
+        href: hr/tasks/hire-candidate-through-recruiting.md
+      - name: Hire an existing employee through recruiting
+        href: hr/tasks/hire-existing-employee-through-recruiting.md
+      - name: Identify and deploy candidate selection tools
+        href: hr/tasks/identify-deploy-candidate-selection-tools.md
     - name: Motivate employees
       items:
       - name: Compensation plans
@@ -2179,8 +2209,14 @@
         href: ../talent/create-fixed-compensation-plans.md
       - name: Create variable compensation plans
         href: ../talent/create-variable-compensation-plans.md
+      - name: Define compensation process and calculate results
+        href: hr/tasks/define-compensation-process-calculate-results.md
       - name: Process compensation
         href: ../talent/process-compensation.md
+      - name: Set up compensation grids
+        href: hr/tasks/set-up-compensation-grids.md
+      - name: Develop salary/compensation structure and plans
+        href: hr/tasks/develop-salary-compensation-structure-plan.md
       - name: Add to your performance journal and send praise to someone
         href: hr/tasks/add-your-performance-journal-send-praise-someone.md
       - name: Enroll an employee in a fixed compensation plan
@@ -2205,10 +2241,16 @@
         href: ../talent/benefit-eligibility-policies.md
       - name: Benefit eligibility process
         href: hr/tasks/benefit-eligibility-process.md
+      - name: Define benefit eligibility rules and policies
+        href: hr/tasks/define-benefit-eligibility-rules-policies.md
+      - name: Deliver an employee benefits program
+        href: hr/tasks/deliver-employee-benefits-program.md
       - name: Create a new benefit
         href: hr/tasks/create-new-benefit.md
       - name: Enroll and remove benefits from workers
         href: hr/tasks/enroll-remove-benefits-workers.md
+      - name: Manage benefit expiration dates
+        href: hr/tasks/manage-benefit-expiration-dates.md
     - name: Gather information using questionnaires
       items:
       - name: Questionnaires
@@ -2217,6 +2259,8 @@
         href: ../talent/design-questionnaires.md
       - name: Distribute and complete a questionnaire
         href: ../talent/distribute-questionnaires.md
+      - name: Distribute questionnaires using scheduling
+        href: hr/tasks/distribute-questionnaires-scheduling.md
       - name: Evaluate the results of a questionnaire
         href: ../talent/evaluate-questionnaire-results.md
       - name: Analyze questionnaire results
@@ -2225,6 +2269,8 @@
         href: hr/tasks/create-open-ended-question.md
       - name: Create a closed ended question
         href: hr/tasks/create-closed-ended-question.md
+      - name: Make a question dependent on the answer of the previous question
+        href: hr/tasks/make-question-dependent-answer-previous-question.md
     - name: Workplace safety and compliance (United States)
       items:
       - name: Form I-9 employment verification
@@ -2237,6 +2283,10 @@
         href: hr/localizations/noam-usa-comply-ada.md
       - name: Manage worker accommodations
         href: hr/localizations/tasks/manage-worker-accommodations.md
+      - name: Set up injury and illness information
+        href: hr/tasks/set-up-injury-illness-information.md
+      - name: Maintain employee injury and illness information
+        href: hr/tasks/maintain-employee-injury-illness-information.md
     - name: US Payroll
       href: hr/localizations/noam-usa-payroll.md
       items:
