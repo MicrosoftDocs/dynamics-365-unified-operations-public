@@ -35,8 +35,8 @@ This topic explains how to set up Phased Rollout (N-1) components so that your M
 ## Key terms
 | Term | Description |
 |---|---|
-| N-1 Async Server Connector Service | A component that is used to synchronize data packages between Retail headquarters and the AX 2012 channel components. |
-| N-1 Realtime Service | A component that supports real-time calls from the AX 2012 R3 channel components to Retail headquarters. |
+| N-1 Async Server Connector Service | A component that is used to synchronize data packages between Retail headquarters and the AX 2012 R3 channel components. |
+| N-1 Real-time Service | A component that supports real-time calls from the AX 2012 R3 channel components to Retail headquarters. |
 
 ## Overview
 The sections in this topic describe the following steps, which you must complete to set up an environment with N-1 components. These steps assume that Retail headquarters is already deployed, and that an AX 2012 R3 environment is currently running.
@@ -54,7 +54,7 @@ The following illustration shows a high-level overview of the N-1 setup.
 ![Phased Rollout (N-1) architecture](media/CDX/N-1/Overview.jpg)
 
 ## Verify that the N-1 license key is turned on
-Before you start to configure and install the N-1 components, make sure that the corresponding license key is turned on. This license key is automatically turned on during an upgrade from AX 2012 to Microsoft Dynamics 365 for Retail. However, because the steps that follow require this key, you should verify that it's turned on before you continue.
+Before you start to configure and install the N-1 components, make sure that the corresponding license key is turned on. This license key is automatically turned on during an upgrade from AX 2012 R3 to Microsoft Dynamics 365 for Retail. However, because the steps that follow require this key, you should verify that it's turned on before you continue.
 
 1. Sign in to Retail headquarters, and go to **System administration \> Setup \> License configuration**.
 2. On the **Configuration keys** tab, expand the **Retail** key, expand the **Retail scheduler** key, and verify that the check box for the **Retail Data Commerce Exchange backward compatibility** key is selected.
@@ -66,7 +66,7 @@ Before you start to configure and install the N-1 components, make sure that the
 > [!IMPORTANT]
 > To help maintain a high level of security across the company, we strongly recommend that you create a new client ID and secret for this installation. This step requires a new Web App.
 
-1. Generate an Azure Web App to create a client ID and secret for Connector for Microsoft Dynamics AX. For instructions, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal).
+1. Generate an Azure Web App to create a client ID and secret for Connector for Microsoft Dynamics AX. For instructions, see the "Create an Azure Active Directory application" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal).
 2. After you've finished creating the client ID and secret, the client ID must be accepted in Retail. Go to **System administration \> Setup \> Azure Active Directory applications**. Enter the client ID in the **Client Id** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 ## Configure N-1 components
@@ -78,15 +78,15 @@ Follow the steps in this section to configure the N-1 components in Retail headq
 
     | Section | Field | Description | Sample value |
     |---|---|---|---|
-    | Header | Profile | Enter a unique name for the N-1 profile that you're setting up. You should create one profile for each environment/server where the AX 2012 R3 Realtime Service is currently installed. | AXConnect |
+    | Header | Profile | Enter a unique name for the N-1 profile that you're setting up. You should create one profile for each environment/server where the AX 2012 R3 Real-time Service is currently installed. | AXConnect |
     | Header | Description | Enter descriptive text to help identify the profile. | Connector for AX2012 |
-    | **Connection** | Server | Enter the name of the server where the N-1 Realtime Service will be installed. (This server is the same server where the AX 2012 R3 Realtime Service is currently installed.) | sampleserver.local |
-    | **Connection** | Port | Enter the port that the N-1 Realtime Service will use. | 8017 |
-    | **Connection** | Web application name | Enter the name to use for the N-1 Realtime Service in Microsoft Internet Information Services (IIS). | RealTimeServiceAX63 |
-    | **Connection** | Protocol | Select the protocol that the AX 2012 R3 Realtime Service currently uses. | https |
-    | **Connection** | Common name | Enter the friendly name of the certificate that the N-1 Realtime Service uses. | samplecertificate.local |
-    | **Connection** | Passphrase | Enter the passphrase to use for the N-1 Realtime Service. | *passphrase* |
-    | **Connection** | Language | Select the language that is associated with the stores that are mapped to the N-1 Realtime service. | EN-US |
+    | **Connection** | Server | Enter the name of the server where the N-1 Real-time Service will be installed. (This server is the same server where the AX 2012 R3 Real-time Service is currently installed.) | sampleserver.local |
+    | **Connection** | Port | Enter the port that the N-1 Real-time Service will use. | 8017 |
+    | **Connection** | Web application name | Enter the name to use for the N-1 Real-time Service in Microsoft Internet Information Services (IIS). | Real-timeServiceAX63 |
+    | **Connection** | Protocol | Select the protocol that the AX 2012 R3 Real-time Service currently uses. | https |
+    | **Connection** | Common name | Enter the friendly name of the certificate that the N-1 Real-time Service uses. | samplecertificate.local |
+    | **Connection** | Passphrase | Enter the passphrase to use for the N-1 Real-time Service. | |
+    | **Connection** | Language | Select the language that is associated with the stores that are mapped to the N-1 Real-time service. | EN-US |
 
 3. When you've finished, select **Save**.
 
@@ -98,7 +98,7 @@ Follow the steps in this section to configure the N-1 components in Retail headq
     |---|---|---|
     | Real-time Service profile | Select the profile that you created on the **Connector for Microsoft Dynamics AX** page in the previous section. | AXConnect |
     | TS password encryption name | Enter the algorithm that is used to connect to the transaction service. You should set this field to **SHA256**. | SHA256 | 
-    | Legacy device algorithm | Enter the legacy device algorithm. | AES |
+    | Legacy device algorithm | Enter the AX 2012 R3 device algorithm. | AES |
 
 ### Retail scheduler parameters
 1. Sign in to Retail headquarters, and go to **Retail \> Headquarters setup \> Parameters \> Retail scheduler parameters**.
@@ -137,9 +137,9 @@ Follow the steps in this section to configure the N-1 components in Retail headq
 
     | Section | Field | Description | Sample value |
     |---|---|---|---|
-    | Header | Name | Enter the name of the channel database group that is used for the AX 2012 R3 channel environment. | Default\_AX63 |
+    | Header | Name | Enter the name of the channel database group that is used for the AX 2012 R3 environment. | Default\_AX63 |
     | Header | Description | Enter a description of the channel database group that is used for the AX 2012 R3 channel environment. | Default group for AX63 channel database |
-    | **General** FastTab | Retail channel schema | Select the schema of the AX 2012 R3 schema. This field must be set to **AX2012R3**. | AX2012R3 |
+    | **General** FastTab | Retail channel schema | Select the AX 2012 R3 schema. This field must be set to **AX2012R3**. | AX2012R3 |
     | **General** FastTab | Working folders | Select the reference to the working folders record that is used for the synchronization of CDX data packages. You created this working folders record in the previous section. | workingfolder |
 
 3. When you've finished, select **Save**.
@@ -178,10 +178,10 @@ Follow the steps in this section to configure the N-1 components in Retail headq
     | Section | Field | Description | Sample value |
     |---|---|---|---|
     | Header | Name | Enter a unique name for the N-1 channel profile that you're setting up. You should create one profile per environment/server where you currently have installed the AX 2012 R3 Retail Server. You should create one profile for each environment/server where the AX 2012 R3 Retail Server is currently installed. | Default\_AX63\_Profile |
-    | Profile properties | Property key | Enter the key for the Retail Server URL that is used in the AX 2012 R3 environment. This field must be set to **Retail Server URL**. | Retail Server URL |
-    | Profile properties | Property value | Enter the Retail Server URL that is used in the AX 2012 R3 environment. | `http://localhost"35080/RetailServer/V1` |
-    | Profile properties | Property value | Enter the key for the Hardware Station URL that is used in the AX 2012 R3 environment. | Hardware Station URL |
-    | Profile properties | Property value | Enter the Hardware Station URL based on the AX 2012 R3 environment. | ipc://localhost |
+    | **Profile properties** | Property key | Enter the key for the Retail Server URL that is used in the AX 2012 R3 environment. This field must be set to **Retail Server URL**. | Retail Server URL |
+    | **Profile properties** | Property value | Enter the Retail Server URL that is used in the AX 2012 R3 environment. | `http://localhost"35080/RetailServer/V1` |
+    | **Profile properties** | Property key | Enter the key for the Hardware Station URL that is used in the AX 2012 R3 environment. | Hardware Station URL |
+    | **Profile properties** | Property value | Enter the Hardware Station URL that is used in the AX 2012 R3 environment. | ipc://localhost |
 
 3. When you've finished, select **Save**.
 
@@ -283,13 +283,13 @@ This section gives the recommended step-by-step instructions to switch an existi
 ### Prerequisites
 Follow these steps to prepare your environment for the cutover.
 
-| Step | Details | Timeline | How to validate that this step is done |
-|---|---|---|---|
-| 1. Deploy Retail headquarters. | Retail headquarters is up and running. Microsoft Dynamics 365 for Retail Cloud POS (CPOS) can be used to validate functionality in the environment. | Weeks or months before the cutover | Not applicable |
-| 2. Install the Microsoft Dynamics 365 for Retail application (X++) KBs. | Install the KBs that are listed in the [Required KBs for N-1](#Required-KBs-for-N-1) section to make sure all issues that are related to N-1 are addressed. | Weeks or months before the cutover | Not applicable |
-| 3. Set up Azure AD accounts. | Follow the instructions in the [Set up Azure AD accounts](#Set-up-Azure-AD-accounts) section to create the accounts that are required for the N-1 components to authenticate against Retail headquarters. | Weeks or months before the cutover | Not applicable |
-| 4. Configure Retail headquarters. | Follow the instructions in the [Configure N-1 components](#Configure-N-1-components) section to configure all the settings for the N-1 components before they are installed. | Weeks or months before the cutover | Not applicable |
-| 5. Install the N-1 Realtime Service component. | Follow the instructions in the [Install N-1 components](#Install-N-1-components) section to install the N-1 components. Note that the N-1 Async Server Connector Service component should be installed but immediately disabled to help guarantee that AX 2012 R3 and Dynamics 365 CDX packages aren't mixed. | Weeks or months before the cutover | Not applicable |
+| Step | Details | Timeline |
+|---|---|---|
+| 1. Deploy Retail headquarters. | Retail headquarters is up and running. Microsoft Dynamics 365 for Retail Cloud POS (CPOS) can be used to validate functionality in the environment. | Weeks or months before the cutover |
+| 2. Install the Microsoft Dynamics 365 for Retail application (X++) KBs. | Install the KBs that are listed in the [Required KBs for N-1](#Required-KBs-for-N-1) section to make sure all issues that are related to N-1 are addressed. | Weeks or months before the cutover |
+| 3. Set up Azure AD accounts. | Follow the instructions in the [Set up Azure AD accounts](#Set-up-Azure-AD-accounts) section to create the accounts that are required for the N-1 components to authenticate against Retail headquarters. | Weeks or months before the cutover |
+| 4. Configure Retail headquarters. | Follow the instructions in the [Configure N-1 components](#Configure-N-1-components) section to configure all the settings for the N-1 components before they are installed. | Weeks or months before the cutover |
+| 5. Install the N-1 components. | Follow the instructions in the [Install N-1 components](#Install-N-1-components) section to install the N-1 components. Note that the N-1 Async Server Connector Service component should be installed but immediately disabled to help guarantee that AX 2012 R3 and Dynamics 365 CDX packages aren't mixed. | Weeks or months before the cutover |
 
 ### Preparation
 Follow these steps to prepare a few days before the cutover is scheduled.
@@ -297,7 +297,7 @@ Follow these steps to prepare a few days before the cutover is scheduled.
 | Step | Details | Timeline | How to validate that this step is done |
 |---|---|---|---|
 | 1. Stop all AX 2012 R3 download jobs. | Make sure that all AX 2012 R3 download jobs are stopped in the AX 2012 R3 headquarters. | At least a couple days before the cutover | All packages in the AX 2012 R3 network share for upload jobs are processed, and no new packages appear. |
-| 2. Do a full synchronization of all **AX63** CDX download jobs in Retail headquarters. | Run the CDX download jobs to make sure that the packages are generated and dropped in the Azure Blob storage, so that the N-1 Async Server Connector Service can consume them during cutover. | At least a couple days before the cutover | CDX download jobs are in the **Available** state on the **Download Sessions** page in Retail headquarters. |
+| 2. Do a full synchronization of all **AX63** CDX download jobs in Retail headquarters. | Run the CDX download jobs to make sure that the packages are generated and dropped in the Azure Blob storage blob, so that the N-1 Async Server Connector Service can consume them during cutover. | At least a couple days before the cutover | CDX download jobs are in the **Available** state on the **Download Sessions** page in Retail headquarters. |
 
 ### Cutover steps
 Follow these steps to do the actual cutover.
@@ -308,7 +308,7 @@ Follow these steps to do the actual cutover.
 | 2. Clean up any suspended transactions. | Make sure that all suspended transactions are cleaned up. | After the previous step | Manually validate with the stores that the shifts are closed. |
 | 3. Synchronize all transactional data. | Make sure that all transactional data is synchronized through the CDX upload jobs to the AX 2012 R3 headquarters. | After the previous step | All packages in the AX 2012 R3 network share for upload jobs are processed, and no new packages appear. |
 | 4. Disable AX 2012 R3 CDX upload jobs. | Make sure that all AX 2012 R3 upload jobs are disabled, so that packages are no longer being picked up. | After the previous step | Manually validate through the AX 2012 R3 headquarters UI that the CDX upload jobs are disabled. |
-| 5. Shut down the AX 2012 R3 Realtime Service. | Connect to the server that hosts the AX 2012 R3 Realtime Service, start IIS, right-click the AX 2012 R3 Realtime Service, and stop the service. | After the previous step | Manually validate in IIS that the service is stopped. |
+| 5. Shut down the AX 2012 R3 Real-time Service. | Connect to the server that hosts the AX 2012 R3 Real-time Service, start IIS, right-click the AX 2012 R3 Real-time Service, and stop the service. | After the previous step | Manually validate in IIS that the service is stopped. |
 | 6. Run the **Reset metadata synchronization** command in Retail headquarters. | In Microsoft Dynamics AX, go to **Retail \> Headquarters setup \> Retail scheduler \> Connector for Microsoft Dynamics AX**, and select **Reset metadata synchronization** to reset the **HQMessageDB** database in the AX 2012 R3 environment for N-1 cutover. | After the previous step | Not applicable |
 | 7. Turn on the N-1 Async Server Connector Service. | Connect to the server that hosts the N-1 Async Server Connector Service, and enable the Microsoft Windows service. | After the previous step | The status of download jobs on the **Download Sessions** page in Retail headquarters changes from **Available** to **Applied**. |
 
@@ -386,17 +386,17 @@ This section describes troubleshooting steps for errors that you might encounter
 | Event Log | Microsoft Dynamics Retail Modern POS |
 | Sample Event Log Error Message | Dynamics-Error: LoginViewModel ActivateDevice Logon failed. ErrorMessage: Sorry, something went wrong with the encryption on your device. Please contact your system administrator.; ErrorCode: MICROSOFT\_DYNAMICS\_POS\_DATAENCRYPTIONERROR; |
 | MPOS Error on Activation Screen | DA3122: Sorry, something went wrong with the encryption on your device. Please contact your system administrator. |
-| Troubleshooting Steps | Check the RealTime Service profile filed in the CDX Backward compatibility section of the store. This must be set to the RTS profile that you created for N-1. |
+| Troubleshooting Steps | Check the Real-time Service profile filed in the CDX Backward compatibility section of the store. This must be set to the RTS profile that you created for N-1. |
 
 ## Required KBs for N-1
 The following list describes all the KBs that are required for N-1 to work correctly.
 
-### Dynamics 365 for Retail – Microsoft Dynamics AX 7.2 headquarters
+### Dynamics 365 for Retail – Microsoft Dynamics 365 7.2 headquarters
 | KB number | Title |
 |---|---|
 | 4095190 | Expose RetailSharedParameter's TransactionServiceProfileID in the RetailSharedParameters form as it is required to enable N-1 functionality when customer did not follow th official upgrade process to move data from 6.3 to D365 |
 | 4095192 | Expose RetailSharedParameter's TSPasswordEncryption field in the RetailSharedParameters form as it is required to enable N-1 functionality when customer did not follow th official upgrade process to move data from AX6.3 to D365 |
-| 4095209 | The RealTimeServiceAX63 N-1 component's webconfig contains an invalid authentication type name. This causes issue when the component tries to authenticate with the transaction service in D365 |
+| 4095209 | The Real-timeServiceAX63 N-1 component's webconfig contains an invalid authentication type name. This causes issue when the component tries to authenticate with the transaction service in D365 |
 | 4095189 | RetialTransactionServiceProfile table's Protocol column is not being synced to the old version channel databases from the new version D365 AX database. |
 | 4095191 | The user is not allowed to set the retail server usrl to be http based URL as only secured urls are allowed. This prevents the user from connecting to old (6.3) version retail servers while running in backwardcompatiility mode. |
 | 4132456 | \[Upgrade \& N-1\]\[Designer\] Number pad height should be extensible |
