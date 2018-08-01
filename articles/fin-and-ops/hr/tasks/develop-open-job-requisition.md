@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Develop and open a job requisition
+title: Develop and open job requisitions
 description: Recruitment projects help manage the recruiting process. 
 author: kherr75
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Develop and open a job requisition
+# Develop and open job requisitions
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

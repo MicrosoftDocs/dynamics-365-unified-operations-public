@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Add to your performance journal and send praise to someone
+title: Add information to your performance journal and send praise
 description: The performance journal holds information that relates to how you met your goals or how you performed during a period. 
 author: ShielaSogge
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Add to your performance journal and send praise to someone
+# Add information to your performance journal and send praise
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

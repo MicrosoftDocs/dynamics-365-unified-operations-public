@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Enroll and remove benefits from workers
+title: Enroll workers in benefits and remove benefits from workers
 description: This procedure demonstrates how a single worker can be enrolled in one or more benefits, as well as multiple workers can be enrolled in a benefit. 
 author: kherr75
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Enroll and remove benefits from workers
+# Enroll workers in benefits and remove benefits from workers
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Features not implemented in on-premises deployments
+title: Features that aren't implemented in on-premises deployments
 description: This topic lists features that have not been implemented in on-premises deployments.
 author: sericks007
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Features not implemented in on-premises deployments
+# Features that aren't implemented in on-premises deployments
 
 [!include [banner](../includes/banner.md)]
 
