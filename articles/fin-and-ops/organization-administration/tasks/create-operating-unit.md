@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create an operating unit
+title: Create operating units
 description: An operating unit is an organization that is used to divide the control of economic resources and operational processes in a business. 
 author: sericks007
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create an operating unit
+# Create operating units
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

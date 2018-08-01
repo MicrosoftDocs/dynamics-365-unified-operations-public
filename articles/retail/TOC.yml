@@ -448,7 +448,7 @@
     items:
     - name: Overview of upgrade and N-1 support
       href: dev-itpro/overview-upgrade-n-minus1.md
-    - name: Install N-1 components
+    - name: Phased Rollout (N-1) installation, configuration, and cutover guide
       href: dev-itpro/n-1-installation-configuration.md
   - name: Implementation guidance
     items:

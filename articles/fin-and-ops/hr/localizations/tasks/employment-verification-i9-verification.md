@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Employment verification using form I-9
+title: Verify employment eligibility by using Form I-9
 description: The Immigration Reform and Control Act requires US employers to verify the employment eligibility status of newly hired employees. 
 author: ShielaSogge
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Employment verification using form I-9
+# Verify employment eligibility by using Form I-9
 
 [!include [task guide banner](../../../includes/task-guide-banner.md)]
 

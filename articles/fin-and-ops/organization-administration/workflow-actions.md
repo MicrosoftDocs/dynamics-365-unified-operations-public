@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Workflow actions
+title: Actions in workflow approval processes
 description: This article explains the actions that each participant in a workflow approval process can take.
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Workflow actions
+# Actions in workflow approval processes
 
 [!include [banner](../includes/banner.md)]
 

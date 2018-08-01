@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Hardware sizing for on-premises environments
+# Hardware sizing requirements for on-premises environments
 
 [!include [banner](../includes/banner.md)]
 

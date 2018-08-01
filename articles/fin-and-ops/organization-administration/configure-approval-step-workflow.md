@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure an approval step in a workflow
+title: Configure approval steps in a workflow
 description: This topic explains how to configure the properties of an approval step.
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure an approval step in a workflow
+# Configure approval steps in a workflow
 
 [!include [banner](../includes/banner.md)]
 

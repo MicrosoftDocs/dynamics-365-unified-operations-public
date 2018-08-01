@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Custom fields
+title: Create and work with custom fields
 description: This topic shows how Microsoft Dynamics 365 for Finance and Operations allows some users to create custom fields to tailor the application to fit their business.
 author: jasongre
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ---
 
-# Custom fields
+# Create and work with custom fields
 
 [!include [banner](../includes/banner.md)]
 

@@ -10,7 +10,7 @@
         href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
       - name: Deploy a demo environment
         href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
-      - name: Cloud and on-premises feature comparison
+      - name: Comparison of cloud and on-premises features
         href: get-started/cloud-prem-comparison.md
       - name: Deployment options
         href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
@@ -44,11 +44,11 @@
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
-      - name: Finance and Operations 8.0 (April 2018)
+      - name: Finance and Operations version 8.0 (April 2018)
         href: get-started/whats-new-changed-8-0-April-2018.md
       - name: Platform update 15 (March 2018)
         href: get-started/whats-new-platform-update-15.md
-      - name: On-premises deployments of 7.2 with platform update 12 (March 2018)
+      - name: On-premises deployments of Finance and Operations, Enterprise edition 7.2 with platform update 12 (March 2018)
         href: get-started/whats-new-LBD-PU12-App72.md
       - name: Finance and Operations, Enterprise edition 7.3
         href: get-started/whats-new-application-7.3-update.md
@@ -82,7 +82,7 @@
         href: get-started/whats-new-changed-application-version-7-0-1-may-2016.md
       - name: Platform update 1 (May 2016)
         href: get-started/whats-new-changed-platform-version-7-1-may-2016.md
-      - name: Dynamics AX 7.0 (February 2016)
+      - name: AX 7.0 (February 2016)
         href: get-started/whats-new-changed-7-0-february-2016.md
       - name: Updated task guides
         items:
@@ -100,7 +100,7 @@
       items:
       - name: Accessibility features
         href: get-started/accessibility-features.md
-      - name: Client UI FAQ
+      - name: Client FAQ
         href: get-started/client-faq.md
       - name: Action search
         href: get-started/action-search.md
@@ -108,23 +108,23 @@
         href: get-started/advanced-filtering-query-options.md
       - name: Configure and filter workspaces
         href: get-started/configure-filter-workspaces.md
-      - name: Display pages side-by-side using the Open in New Window icon
+      - name: Show pages side by side by using the Open in new window feature
         href: get-started/display-pages-side-by-side.md
       - name: Keyboard shortcuts
         href: get-started/shortcut-keys.md
-      - name: Change the banner or logo
+      - name: Change the banners or logo images for legal entities
         href: get-started/tasks/change-banner-or-logo.md
       - name: Navigation search
         href: get-started/navigation-search.md
       - name: Personalize the user experience
         href: get-started/personalize-user-experience.md
-      - name: Custom fields
+      - name: Create and work with custom fields
         href: get-started/user-defined-fields.md
-      - name: Embed PowerApps
+      - name: Embed PowerApps apps
         href: get-started/embed-power-apps.md
-      - name: Use lookups to find information
+      - name: Find information by using lookups
         href: get-started/use-lookups-to-find-information.md
-      - name: Change the date for the session
+      - name: Change the date for a session
         href: organization-administration/tasks/change-date-session.md
       - name: Set a user's preferred time zone
         href: organization-administration/tasks/set-users-preferred-time-zone.md
@@ -132,9 +132,9 @@
         href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json
     - name: Read and run the documentation
       items:
-      - name: Help overview
+      - name: Help system
         href: get-started/help-overview.md
-      - name: Connect Help
+      - name: Connect the Help system
         href: get-started/help-connect.md
       - name: View and export field descriptions
         href: get-started/view-export-field-descriptions.md
@@ -146,32 +146,32 @@
           href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/fin-and-ops/toc.json
       - name: Glossary
         href: get-started/glossary.md
-    - name: Videos for Dynamics 365 for Finance and Operations
+    - name: Videos for Finance and Operations
       href: get-started/videos.md
-  - name: Understand the implementation lifecycle
+  - name: Implementation lifecycle management
     href: imp-lifecycle/implementation-lifecycle.md
     items:
     - name: Finance and Operations architecture
       href: imp-lifecycle/architecture-overview.md    
-    - name: Microsoft FastTrack for Dynamics 365
+    - name: Microsoft FastTrack for Finance and Operations
       href: get-started/fasttrack-dynamics-365-overview.md
-    - name: Onboarding
+    - name: Onboard an implementation project
       href: imp-lifecycle/onboard.md
-    - name: Preparing for go-live
+    - name: Prepare for go-live
       href: imp-lifecycle/prepare-go-live.md
     - name: Go-live FAQ
       href: imp-lifecycle/go-live-faq.md
     - name: Submit a service request
       href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
-    - name: Subscriptions, LCS projects, and Azure Active Directory tenants FAQ
+    - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
       href: get-started/subscription-overview.md      
     - name: Move environments between data centers
       href: get-started/move-environments-data-center.md      
     - name: Move licenses between agreement types
       href: get-started/move-licenses-between-agreement-types.md 
-    - name: Move an LCS Implementation project to another Azure Active Directory tenant
+    - name: Move LCS implementation projects to different Azure AD tenants
       href: get-started/move-lcs-implementation-project-tenant.md 
-    - name: Implement multiple LCS projects and production environments on the same Azure Active Directory tenant
+    - name: Multiple LCS projects and production environments on one Azure AD tenant
       href: get-started/implement-multiple-projects-aad-tenant.md
   - name: Compliance
     items:
@@ -2199,7 +2199,7 @@
         href: ../talent/workflow-manage-employee-information.md
     - name: Recruiting
       items:
-      - name: Manage a recruiting process
+      - name: Manage recruiting processes
         href: hr/manage-recruiting-process.md
       - name: Mass hire projects
         href: hr/mass-hire-projects.md
@@ -2241,13 +2241,13 @@
         href: ../talent/evaluate-questionnaire-results.md
     - name: Workplace safety and compliance (United States)
       items:
-      - name: Form I-9 employment verification
+      - name: Form I-9 verification
         href: hr/localizations/noam-usa-form-i-9-verification.md
-      - name: Employment verification using form I-9
+      - name: Verify employment eligibility using Form I-9
         href: hr/localizations/tasks/employment-verification-i9-verification.md
-      - name: Set up I-9 document types
+      - name: Set up Form I-9 document types
         href: hr/localizations/tasks/set-up-i9-document-types.md
-      - name: Comply with the ADA
+      - name: Comply with the Americans with Disabilities Act
         href: hr/localizations/noam-usa-comply-ada.md
       - name: Manage worker accommodations
         href: hr/localizations/tasks/manage-worker-accommodations.md
@@ -2265,39 +2265,39 @@
         - name: Set up benefits
           href: hr/localizations/noam-usa-benefit-set-up-tasks.md
       - name: Frequencies and cycles
-      - name: Pay cycle and pay period tasks
+      - name: Set up pay cycles and pay periods
         href: hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md
-      - name: Payroll calculation and frequency tasks
+      - name: Set up payroll calculation frequencies
         href: hr/localizations/noam-usa-payroll-calculation-frequencies-tasks.md
-      - name: Work schedule and leave tasks
+      - name: Set up work schedules and leave
         href: hr/localizations/noam-usa-work-schedule-leave-tasks.md
       - name: Codes and taxes
         items:
-        - name: Earning code and earning code group tasks
+        - name: Set up earning codes and earning code groups
           href: hr/localizations/noam-usa-earning-code-group-tasks.md
-        - name: Tax information tasks
+        - name: Set up taxes, tax regions, tax codes, and tax groups
           href: hr/localizations/noam-usa-tax-information-tasks.md
       - name: Garnishments, tax levies, and premium pay
         items:
         - name: Set up garnishments and tax levies
           href: hr/localizations/noam-usa-garnishment-tax-levy-set-up-tasks.md
-        - name: Enroll workers in garnishment and tax levies
+        - name: Enroll workers in garnishments or tax levies
           href: hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks.md
         - name: Set up premium earnings
           href: hr/localizations/noam-usa-premium-earning-setup-tasks.md
         - name: Garnishments, tax levies, and administrative fees FAQ
           href: hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees.md
-      - name: Track time off for FMLA
+      - name: Track time off for the Family and Medical Leave Act
         href: hr/localizations/noam-usa-track-time-for-fmla.md
       - name: Payroll processing tasks
         items:
-        - name: Generate earnings
+        - name: Earnings and earnings generation FAQ
           href: hr/localizations/noam-usa-earnings-generation-process.md
         - name: Issue worker payments
           href: hr/localizations/noam-usa-issue-worker-payments.md
-        - name: Post payroll and generate vendor invoices
+        - name: Post payroll distributions and generate vendor invoices
           href: hr/localizations/noam-usa-post-payroll-generate-vendor-invoices.md
-        - name: Pay statements and generating payments FAQ
+        - name: Pay statements and payment generation FAQ
           href: hr/localizations/noam-usa-pay-statements-payment-generation-process.md
       - name: Complete the payment process
         items:
@@ -2305,17 +2305,17 @@
           href: hr/localizations/noam-usa-existing-payroll-payments.md
         - name: Process existing earnings
           href: hr/localizations/noam-usa-existing-earnings.md
-        - name: Process pay statements
+        - name: Generate and work with pay statements
           href: hr/localizations/noam-usa-pay-statements.md
       - name: Maintenance and reporting
         items:
         - name: Payroll data updates FAQ
           href: hr/localizations/noam-usa-payroll-data-updates.md
-        - name: Generate payroll reports
+        - name: Standard payroll reports
           href: hr/localizations/noam-usa-generate-payroll-reports.md
     - name: Human resources tasks
       items:
-      - name: Add to your performance journal and send praise to someone
+      - name: Add information to your performance journal and send praise
         href: hr/tasks/add-your-performance-journal-send-praise-someone.md
       - name: Analyze questionnaire results
         href: hr/tasks/analyze-questionnaire-results.md
@@ -2323,25 +2323,25 @@
         href: hr/tasks/approve-application-inbox-records.md
       - name: Benefit eligibility process
         href: hr/tasks/benefit-eligibility-process.md
-      - name: Create a calendar and generate working times
+      - name: Create calendars and generate working times
         href: hr/tasks/create-calendar-working-times.md
-      - name: Create a closed ended question
+      - name: Create closed-ended questions
         href: hr/tasks/create-closed-ended-question.md
-      - name: Create a goal
+      - name: Create goals
         href: hr/tasks/create-goal.md
       - name: Create loan items
         href: hr/tasks/create-loan-items.md
-      - name: Create a mass hire project
+      - name: Create mass hire projects
         href: hr/tasks/create-mass-hire-project.md
-      - name: Create a new benefit
+      - name: Create new benefits
         href: hr/tasks/create-new-benefit.md
-      - name: Create an open-ended question
+      - name: Create open-ended questions
         href: hr/tasks/create-open-ended-question.md
-      - name: Create a performance review
+      - name: Create performance reviews
         href: hr/tasks/create-performance-review.md
       - name: Define benefit eligibility rules and policies
         href: hr/tasks/define-benefit-eligibility-rules-policies.md
-      - name: Define compensation process and calculate results
+      - name: Define compensation processes and calculate results
         href: hr/tasks/define-compensation-process-calculate-results.md
       - name: Define new departments
         href: hr/tasks/define-new-departments.md
@@ -2349,45 +2349,45 @@
         href: hr/tasks/define-new-jobs.md
       - name: Deliver an employee benefits program
         href: hr/tasks/deliver-employee-benefits-program.md
-      - name: Develop and open a job requisition
+      - name: Develop and open job requisitions
         href: hr/tasks/develop-open-job-requisition.md
-      - name: Develop salary/compensation structure and plans
+      - name: Develop salary/compensation structures and plans
         href: hr/tasks/develop-salary-compensation-structure-plan.md
       - name: Develop a succession plan
         href: hr/tasks/develop-succession-plan.md
       - name: Distribute questionnaires using scheduling
         href: hr/tasks/distribute-questionnaires-scheduling.md
-      - name: Enroll an employee in a fixed compensation plan
+      - name: Enroll employees in a fixed compensation plan
         href: hr/tasks/enroll-employee-fixed-compensation-plan.md
-      - name: Enroll an employee in a variable compensation plan
+      - name: Enroll employees in a variable compensation plan
         href: hr/tasks/enroll-employee-variable-compensation-plan.md
-      - name: Enroll and remove benefits from workers
+      - name: Enroll workers in benefits and remove benefits from workers
         href: hr/tasks/enroll-remove-benefits-workers.md
-      - name: Enter applicant and application data manually
+      - name: Manually enter applicant and application data
         href: hr/tasks/enter-applicant-application-data-manually.md
       - name: Enter project timesheets
         href: hr/tasks/enter-project-timesheets.md
       - name: Enter worker information
         href: hr/tasks/enter-worker-information.md
-      - name: Hire a candidate through recruiting
+      - name: Hire candidates through recruitment
         href: hr/tasks/hire-candidate-through-recruiting.md
-      - name: Hire an existing employee through recruiting
+      - name: Hire existing employees through recruitment
         href: hr/tasks/hire-existing-employee-through-recruiting.md
       - name: Identify and deploy candidate selection tools
         href: hr/tasks/identify-deploy-candidate-selection-tools.md
-      - name: Loan items to a worker
+      - name: Loan items to workers
         href: hr/tasks/loan-item-worker.md
       - name: Maintain employee injury and illness information
         href: hr/tasks/maintain-employee-injury-illness-information.md
-      - name: Make a question dependent on the answer of the previous question
+      - name: Make questions dependent on the answer of the previous question
         href: hr/tasks/make-question-dependent-answer-previous-question.md
       - name: Manage benefit expiration dates
         href: hr/tasks/manage-benefit-expiration-dates.md
       - name: Manage email templates
         href: hr/tasks/manage-email-templates.md
-      - name: Manage leave of absence
+      - name: Manage leaves of absence
         href: hr/tasks/manage-leave-absence.md
-      - name: Modify reporting relationships for a position
+      - name: Modify the reporting relationships for positions
         href: hr/tasks/modify-reporting-relationships-position.md
       - name: Set up compensation grids
         href: hr/tasks/set-up-compensation-grids.md
@@ -3009,7 +3009,7 @@
       items:
       - name: Set up number sequences on an individual basis
         href: organization-administration/tasks/set-up-number-sequences-individual-basis.md
-      - name: Set up number sequences by using a wizard
+      - name: Set up number sequences using a wizard
         href: organization-administration/tasks/set-up-number-sequences-wizard.md
     - name: Organizations and organizational hierarchies
       href: organization-administration/organizations-organizational-hierarchies.md
@@ -3018,20 +3018,20 @@
         href: organization-administration/plan-organizational-hierarchy.md
       - name: Create an organization hierarchy
         href: organization-administration/tasks/create-organization-hierarchy.md
-      - name: Create a legal entity
+      - name: Create legal entities
         href: organization-administration/tasks/create-legal-entity.md
-      - name: Create an operating unit
+      - name: Create operating units
         href: organization-administration/tasks/create-operating-unit.md
     - name: Global address book
       href: organization-administration/overview-global-address-book.md
       items:
-      - name: Plan how to configure the global address book
+      - name: Plan for the global address book and other address books
         href: organization-administration/plan-configuration-global-address-book-additional-address-books.md
       - name: Configure the global address book
         href: organization-administration/tasks/configure-global-address-book.md
       - name: Address books FAQ
         href: organization-administration/qa-address-books.md
-    - name: Workflow
+    - name: Workflow system
       href: organization-administration/overview-workflow-system.md
       items:
       - name: Workflow system architecture
@@ -3040,45 +3040,45 @@
         href: organization-administration/workflow-elements.md
       - name: Workflow actions
         href: organization-administration/workflow-actions.md
-      - name: Create a workflow
+      - name: Create workflows
         href: organization-administration/create-workflow.md
         items:
         - name: Configure workflow properties
           href: organization-administration/configure-workflow-properties.md
-        - name: Configure a manual task
+        - name: Configure manual tasks
           href: organization-administration/configure-manual-task-workflow.md
-        - name: Configure an automated task
+        - name: Configure automated tasks
           href: organization-administration/configure-automated-task-workflow.md
-        - name: Configure an approval process
+        - name: Configure approval processes
           href: organization-administration/configure-approval-process-workflow.md
-        - name: Configure an approval step
+        - name: Configure approval steps
           href: organization-administration/configure-approval-step-workflow.md
-        - name: Configure a manual decision
+        - name: Configure manual decisions
           href: organization-administration/configure-manual-decision-workflow.md
-        - name: Configure a conditional decision
+        - name: Configure conditional decisions
           href: organization-administration/configure-conditional-decision-workflow.md
-        - name: Configure a parallel activity
+        - name: Configure parallel activities
           href: organization-administration/configure-parallel-activity-workflow.md
-        - name: Configure a parallel branch
+        - name: Configure parallel branches
           href: organization-administration/configure-parallel-branch-workflow.md
-        - name: Configure a line-item workflow
+        - name: Configure line-item workflows
           href: organization-administration/configure-line-item-workflow.md
-      - name: Configure the message processing batch job
+      - name: Configure the Workflow Message Processing batch job as critical
         href: organization-administration/workflow-batch-job-critical.md
       - name: Delegate work items in a workflow
         href: organization-administration/tasks/delegate-work-items-workflow.md
       - name: View workflow history
         href: organization-administration/tasks/view-workflow-history.md
-      - name: Enable users to receive workflow-related email messages
+      - name: Configure the system to send workflow-related email to users
         href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
       - name: Workflow types report
         href: organization-administration/workflow-types-report.md
     - name: Alerts
       href: get-started/alerts-overview.md
       items:
-      - name: Create alerts
+      - name: Create alert rules
         href: get-started/create-alerts.md
-      - name: Batch processing for alerts
+      - name: Batch processing of alerts
         href: get-started/alerts-managing.md
     - name: Electronic signatures
       href: organization-administration/electronic-signature-overview.md
@@ -3088,7 +3088,7 @@
     - name: Case management
       href: organization-administration/cases.md
       items:
-      - name: Configure case security, processes, and categories
+      - name: Plan case security, processes, and categories
         href: organization-administration/plan-case-management.md
     - name: Record templates
       href: organization-administration/record-templates.md
