@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Enroll an employee in a variable compensation plan
+title: Enroll employees in a variable compensation plan
 description: The Compensation and Benefits manager can enroll employees in variable compensation plans to calculate cash and non-cash awards for employees. 
 author: kherr75
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Enroll an employee in a variable compensation plan
+# Enroll employees in a variable compensation plan
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

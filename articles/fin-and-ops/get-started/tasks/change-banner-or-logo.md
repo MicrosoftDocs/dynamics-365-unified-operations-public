@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Change the banner or logo
+title: Change the banners or logo images for legal entities
 description: The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity. 
 author: aneesmsft
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: aneesa
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Change the banner or logo
+# Change the banners or logo images for legal entities
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

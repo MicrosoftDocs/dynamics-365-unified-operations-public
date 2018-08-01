@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Make a question dependent on the answer of the previous question
+title: Make questions dependent on the answer of the previous question
 description: Conditional questions allow you to specify what follow-up question will be presented to a respondent, based on the answer to the preceding question. 
 author: twheeloc
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Make a question dependent on the answer of the previous question
+# Make questions dependent on the answer of the previous question
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

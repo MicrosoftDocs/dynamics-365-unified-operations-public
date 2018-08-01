@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Manage leave of absence
+title: Manage leaves of absence
 description: This procedure walks through the creation of employee leave records. 
 author: ShielaSogge
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Manage leave of absence
+# Manage leaves of absence
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create a performance review
+title: Create performance reviews
 description: This procedure shows how to create a performance review and describes the purpose for each section of the review. 
 author: kherr75
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create a performance review
+# Create performance reviews
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

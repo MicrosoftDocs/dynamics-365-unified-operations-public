@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create a goal
+title: Create goals
 description: You can create goals, add activities to goals, track measurements, and link the goals to a review. 
 author: kherr75
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create a goal
+# Create goals
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

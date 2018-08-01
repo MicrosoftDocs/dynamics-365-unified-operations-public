@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Finance and Operations architecture
+title: Finance and Operations architecture
 description: This topic provides an overview of the architecture of Microsoft Dynamics 365 for Finance and Operations.
 author: ClaudiaBetz-Haubold
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Microsoft Dynamics 365 for Finance and Operations architecture
+# Finance and Operations architecture
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create an open-ended question
+title: Create open-ended questions
 description: Open-ended questions enable respondents to provide their own response. 
 author: kherr75
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create an open-ended question
+# Create open-ended questions
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
