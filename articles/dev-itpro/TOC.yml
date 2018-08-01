@@ -998,7 +998,7 @@
       href: deployment/on-premises-overview.md
     - name: Plan and prepare for on-premises deployments
       href: deployment/plan-onprem-deployment.md
-    - name: Hardware sizing
+    - name: Hardware sizing requirements
       href: ../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
     - name: Set up on-premises projects
       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
@@ -1361,8 +1361,6 @@
         items:
         - name: Install
           href: lifecycle-services/ax-2012/install-security-development-tool.md
-        - name: User guide
-          href: lifecycle-services/ax-2012/security-development-tool-user-guide.md
         - name: Define or edit entry point permissions
           href: lifecycle-services/ax-2012/define-edit-entry-point-permissions.md
       - name: Performance Benchmark SDK

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Display pages side-by-side using the Open in New Window icon
+title: Show pages side by side by using the Open in new window feature
 description: This article explains how to display pages side-by-side in Microsoft Dynamics 365 for Finance and Operations.
 author: aneesmsft
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Display pages side-by-side using the Open in New Window icon
+# Show pages side by side by using the Open in new window feature
 
 [!include [banner](../includes/banner.md)]
 

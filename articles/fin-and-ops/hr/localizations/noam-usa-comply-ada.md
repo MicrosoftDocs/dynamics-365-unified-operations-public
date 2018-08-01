@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Comply with the Americans with Disabilities Act
+title: Comply with the Americans with Disabilities Act (ADA)
 description: This article describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA). This information applies only to legal entities doing business in the United States.
 author: kherr75
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Comply with the Americans with Disabilities Act
+# Comply with the Americans with Disabilities Act (ADA)
 
 [!include [banner](../../includes/banner.md)]
 

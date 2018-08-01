@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Demo data overview
+title: Demo data
 description: This topic provides an overview of the demo data that is available for Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Demo data overview
+# Demo data
 
 [!include [banner](../includes/banner.md)]
 

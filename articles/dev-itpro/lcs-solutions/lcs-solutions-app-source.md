@@ -5,7 +5,7 @@ title: Requirements for publishing apps on AppSource
 description: This topic points to resources that will help you understand the requirements for creating solutions for Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
-ms.date: 04/13/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,9 +32,9 @@ ms.author: omarc
 
 [!include[banner](../includes/banner.md)]
 
-Lifecycle Services (LCS) solution packages for Microsoft AppSource, are partner-designed and developed solutions that can be automatically deployed on Microsoft Azure to deliver an end-to-end solution using industry and vertical-specific content.
+Lifecycle Services (LCS) solution packages for Microsoft AppSource are partner-designed and developed solutions that can be automatically deployed on Microsoft Azure to deliver an end-to-end solution, using industry and vertical-specific content.
 
-This topic points to resources that will help you understand the requirements for creating LCS solutions for Microsoft AppSource. The requirements for creating a LCS solution package fall into six groups.
+This topic points to resources that will help you understand the requirements for creating LCS solutions for Microsoft AppSource. The requirements for creating an LCS solution package fall into the following groups.
 
 -   [App validation](app-validation-lcs-solutions.md)
 -   [Code migration](code-migration-lcs-solutions.md)

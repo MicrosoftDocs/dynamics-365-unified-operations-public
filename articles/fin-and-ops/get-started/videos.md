@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Videos for Dynamics 365 for Finance and Operations
+title: Videos for Finance and Operations
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Dynamics 365 for Finance and Operations that are available on YouTube and other sites.
 author: josaw1
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
 ---
 
-# Videos for Dynamics 365 for Finance and Operations
+# Videos for Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
