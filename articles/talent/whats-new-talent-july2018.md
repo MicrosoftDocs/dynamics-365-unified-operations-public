@@ -59,7 +59,7 @@ Support has been added for tax regions outside the United States. When tax regio
 
 ## The title field has been expanded in Talent
 
-Titles have been expanded in Talent. In this update, the length of the title field is now 65 characters. This change has been implemented everywhere that title is selected, such as workers, positions, and jobs.
+Titles have been expanded in this update. The field is now 65 characters. This change has been implemented everywhere that title is selected, such as workers, positions, and jobs.
 
 ## Benefit enrollment status report
 
