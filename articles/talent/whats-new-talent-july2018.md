@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Talent Core HR (July 2018)
-description: This topic describes features that are either new or changed in Dynamics 365 for Talent Core HR
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
 author: josaw1
 manager: AnnBe
 ms.date: 07/31/2018
@@ -34,55 +34,33 @@ ms.dyn365.ops.version: Talent July 2018 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for
-Talent Core HR.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
 
 ## PowerApps personalization
 
-Microsoft Dynamics 365 for Talent supports integration with Microsoft PowerApps,
-a service for developers and non-technical users to build custom business apps
-for mobile devices, tablets, and the web, without writing code. PowerApps
-developed by you, your organization, or the broader ecosystem can then be
-embedded in the Talent client to augment the product's functionality. For
-example, you might build a PowerApp to supplement Talent with information
-retrieved from another system.
+Microsoft Dynamics 365 for Talent supports integration with the Microsoft PowerApps service. PowerApps lets both developers and non-technical users build custom business apps for mobile devices, tablets, and the web without having to write code. Apps that you, your organization, or the broader ecosystem develop by using PowerApps can then be embedded in the Talent client to augment the product's functionality. For example, you might build an app that supplements Talent with information that is retrieved from another system.
 
-More information is available [here](../fin-and-ops/get-started/embed-power-apps.md).
+For more information, see [Embed PowerApps apps](../fin-and-ops/get-started/embed-power-apps.md).
 
 ## Ceridian payroll integration
 
-Integration between Microsoft Dynamics 365 for Talent and Ceridian Dayforce is
-now available for the US, Canada and Mexico. The integration uses broad
-categories of data including:
+Integration between Talent and Ceridian Dayforce is now available for the US, Canada, and Mexico. The integration uses broad categories of data. Here are some examples:
 
--   Human Resources data,
+- Human resources data
+- Compensation data
+- Payroll data, such as pay cycles, pay periods, and earning codes
+- Worker data
 
--   Compensation data,
+For more information, see [Configure your payroll integration](configure-payroll-integration.md).
 
--   Payroll data, such as pay cycles, pay periods and earning codes, and
+## Worker tax regions have been expanded beyond the US
 
--   Worker data.
+Support has been added for tax regions outside the United States. When tax regions are assigned to workers, they can drive tax calculations and can be used in integrations with external payroll solutions.
 
-More information is available [here](configure-payroll-integration.md).
+## The title field has been expanded in Talent
 
-## Worker tax regions expanded beyond US
-
-Tax region support has been added for regions outside of the United States. Tax regions
-when assigned to workers can drive tax calculations and be used in integrations
-to external payroll solutions.
-
-## Title field expanded in Talent
-
-Titles have been expanded with in Dynamics 365 for Talent. The length in this
-latest update for the title field is now 65 characters. This change has been
-implemented in all areas where title is selected, including workers, positions
-and jobs.
+Titles have been expanded in Talent. In this update, the length of the title field is now 65 characters. This change has been implemented everywhere that title is selected, such as workers, positions, and jobs.
 
 ## Benefit enrollment status report
 
-Benefits open enrollment reporting: Easily understand where your employees are
-in the open enrollment process with built in reporting letting you know how many
-employees are complete, in process or have not started their open enrollment. In
-addition, quickly view any employee enrollment issues as well as a full log of
-all employee submissions for easy verification and auditing.
-
+Built-in reporting about open enrollment for benefits helps you easily understand where your employees are in the open enrollment process. You can learn how many employees have completed the process, are currently completing it, and haven't started it. Additionally, you can quickly view any issues that occur during employee enrollment and a full log of all employee submissions. Therefore, you can easily verify and audit employee submissions.
