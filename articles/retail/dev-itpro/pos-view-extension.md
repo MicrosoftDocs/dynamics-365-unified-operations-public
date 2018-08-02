@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: POS view extension
+title: Extend POS views to add custom columns and app bar buttons
 description: This topic explains how you can extend existing POS views such as the Customer Add/Edit screen.
 author: mugunthanm
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Extend existing POS views to add custom columns and app bar buttons
+# Extend POS views to add custom columns and app bar buttons
 
 [!include [banner](../../includes/banner.md)]
 

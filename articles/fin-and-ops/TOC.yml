@@ -639,7 +639,7 @@
       - name: Cash discounts for overpayments
         href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
       - name: Settlement overview
-        href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
+        href: ../financials/cash-bank-management/settlement-overview.md
       - name: Settlement overview for centralized payments
         href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
       - name: Letters of credit
@@ -1962,6 +1962,8 @@
       - name: Brazil
         href: ../financials/localizations/brazil.md
         items:
+        - name: Scope of localization
+          href: ../financials/localizations/latam-bra-scope.md
         - name: Fiscal books
           href: ../financials/localizations/latam-bra-fiscal-books.md
           items:

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Order holds
+title: Configure and work with call center order holds
 description: This topic describes how to work with holds on orders by using Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Work with call center order holds
+# Configure and work with call center order holds
 
 [!include [banner](includes/banner.md)]
 

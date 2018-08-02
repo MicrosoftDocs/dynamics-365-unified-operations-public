@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Access preview features in Dynamics 365 for Talent
+title: Access preview features in Talent
 description: This topic describes how an administrator can enable the preview features, and it lists the features that are currently enabled for preview.
 author: rschloma
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 
 ---
 
-# Access preview features in Dynamics 365 for Talent 
+# Access preview features in Talent
 
 [!include[banner](../includes/banner.md)]
 

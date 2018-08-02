@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Testing and performance
+title: Testing and performance issues
 description: This topic describes recommended practices for testing and performance for Microsoft Dynamics 365 for Retail implementation projects.
 author: Andreash1
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Retail 7.3
 ---
 
 
-# Testing and performance
+# Testing and performance issues
 
 This document describes practices and tools that are related to functional testing, performance testing, and performance troubleshooting.
 
