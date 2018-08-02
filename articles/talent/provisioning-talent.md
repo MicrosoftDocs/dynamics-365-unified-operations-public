@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Provision Microsoft Dynamics 365 for Talent
+title: Provision Talent
 description: This topic walks you through the process of provisioning a new environment for Microsoft Dynamics 365 for Talent. 
 author: rschloma
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 
 ---
-# Provision Microsoft Dynamics 365 for Talent
+# Provision Talent
 
 [!include [banner](includes/banner.md)]
 

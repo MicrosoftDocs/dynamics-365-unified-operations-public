@@ -1,7 +1,7 @@
-- name: Dynamics 365 for Talent
+- name: Welcome to Dynamics 365 for Talent
   href: index.md
   items:
-  - name: Getting started
+  - name: Get started
     href: talent-get-started.md
     items:
     - name: What's new or changed
@@ -10,24 +10,24 @@
         href: whats-new-talent-july2018.md
     - name: System requirements and update policy
       href: talent-versions-update-policy.md
-    - name: Provision Microsoft Dynamics 365 for Talent
+    - name: Provision Talent
       href: provisioning-talent.md
-    - name: Remove a Talent environment
+    - name: Remove Talent environments
       href: remove-talent-environment.md
-    - name: Provision Microsoft Dynamics 365 for Talent Modular Apps
+    - name: Provisioning for the Talent modular apps
       href: modular-app-tech-faq.md
     - name: Extend Talent functionality
       href: extend-talent-functionality.md
-    - name: Access preview features in Dynamics 365 for Talent
+    - name: Access preview features
       href: access-preview-feature.md
-    - name: Configure Talent to support Payroll integration
+    - name: Configure the payroll integration between Talent and Dayforce
       href: configure-payroll-integration.md
-  - name: Develop a human resources strategy
+  - name: Organize your workforce by using departments, jobs, and positions
     href: departments-jobs-positions.md
     items:
-    - name: Set up job components
+    - name: Set up the components of a job
       href: create-job.md
-    - name: Create a department and associate it with the department hierarchy
+    - name: Create departments and include them in the department hierarchy
       href: create-department-add-department-hierarchy.md
     - name: Set up HR parameters across legal entities
       href: set-up-hr-parameters-across-legal-entities.md
@@ -37,15 +37,15 @@
       href: personnel-actions-faq.md
     - name: Formalize business processes
       href: formalize-business-processes.md
-    - name: Use workflow to manage employee information
+    - name: Use workflows to manage employee information
       href: workflow-manage-employee-information.md
-    - name: Leave and absence overview
+    - name: Leave and absence management
       href: leave-absence-overview.md
   - name: Staff your organization
     items:
-    - name: Attract overview
+    - name: Attract features and capabilities
       href: attract-overview.md
-    - name: Onboard overview
+    - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
   - name: Motivate employees
     items:
@@ -59,13 +59,13 @@
       href: process-compensation.md
   - name: Develop and train employees
     items:
-    - name: Performance management overview
+    - name: Performance management
       href: performance-management-overview.md
     - name: Align workforce skills with business needs
       href: skills.md
     - name: Set up training courses
       href: courses.md
-  - name: Create and maintain benefits
+  - name: Define and manage a benefits program
     href: manage-benefit-program.md
   - name: Benefit eligibility policies
     href: benefit-eligibility-policies.md
@@ -75,11 +75,11 @@
   - name: Gather information using questionnaires
     href: questionnaires.md
     items:
-    - name: Design a questionnaire
+    - name: Design questionnaires
       href: design-questionnaires.md
-    - name: Distribute and complete a questionnaire
+    - name: Distribute and schedule questionnaires
       href: distribute-questionnaires.md
-    - name: Evaluate the results of a questionnaire
+    - name: View and evaluate the results of questionnaires
       href: evaluate-questionnaire-results.md
   - name: Workplace safety and compliance (United States)
     items:

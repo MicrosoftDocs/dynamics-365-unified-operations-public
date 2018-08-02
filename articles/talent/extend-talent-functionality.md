@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extend the functionality of Microsoft Dynamics 365 for Talent
+title: Extend the functionality of Talent
 description: If you’ve created any Microsoft PowerApps, you can start those applications from links within Microsoft Dynamics 365 for Talent. 
 author: rschloma
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Talent July 2017 update
 
 ---
-# Extend the functionality of Microsoft Dynamics 365 for Talent
+# Extend the functionality of Talent
 
 [!include [banner](includes/banner.md)]
 
