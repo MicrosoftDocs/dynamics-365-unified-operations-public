@@ -315,6 +315,8 @@
       href: perf-test/trace-trace-tutorial.md
     - name: Performance SDK and multiuser testing via Visual Studio Online
       href: perf-test/perfsdk-tutorial.md
+    - name: Performance SDK and multiuser testing in on-premises environments
+      href: perf-test/perfsdk-tutorial-lbd.md  
     - name: Diagnose issues and analyze performance using Trace parser
       href: perf-test/trace-parser.md
     - name: Performance timer
