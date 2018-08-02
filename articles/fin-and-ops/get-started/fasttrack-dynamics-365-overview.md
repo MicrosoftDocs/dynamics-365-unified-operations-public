@@ -35,28 +35,25 @@ ms.dyn365.ops.version: Version 1611, July 2017 update
 
 Microsoft FastTrack for Microsoft Dynamics 365 for Finance and Operations is a customer success service that is designed to help you move smoothly and confidently to Microsoft Dynamics 365, so that you can realize business value faster. When you participate in the FastTrack program, you receive guidance about implementation best practices, planning for successful rollouts, and expanding capabilities. However, you implement at your own pace. You also have access to Microsoft engineering resources who are committed to making your experience with Finance and Operations a success.
 
-## Microsoft FastTrack for Dynamics 365 for Finance and Operations overview
+## Microsoft FastTrack for Finance and Operations overview
 
-Microsoft Dynamics 365 for Finance and Operations offers different [Deployment
-options](../../dev-itpro/deployment/choose-deployment-type.md) for cloud and on-premises environments. Because of the different nature of the underlying architecture and implementation approach, Microsoft provides FastTrack service that is tailored to each deployment option.
+Finance and Operations offers different [deployment options](../../dev-itpro/deployment/choose-deployment-type.md) for cloud and on-premises environments. Because the underlying architecture and implementation approach for each deployment option differ, Microsoft provides a FastTrack service that is tailored to each option.
 
 ### FastTrack for cloud
 
-This service is designed for customers who are implementing Finance and Operations in the cloud. The service includes new implementations as well as customers who are upgrading or migrating to a cloud deployment from an existing Dynamics AX 2012 or Dynamics AX 2009 implementation.
+This service is designed for customers who are implementing Finance and Operations in the cloud. The service is designed not only for new implementations but also for customers who are upgrading or migrating to a cloud deployment from an existing Microsoft Dynamics AX 2012 or Microsoft Dynamics AX 2009 implementation.
 
 ### FastTrack for on-premises
 
-FastTrack for Dynamics 365 on-premises is a service designed to help new customers with architectural guidance and the tools and processes needed to implement Finance and Operations on-premises.
+This service is designed to help new customers by providing architectural guidance and the tools and processes that are required in order to implement Finance and Operations on-premises.
 
-The program is designed for customers who are creating new on-premises deployments, rather than migrating existing Dynamics AX 2012 deployments to Finance and Operations.
+The service is designed for customers who are creating new on-premises deployments, not for customers who are migrating existing AX 2012 deployments to Finance and Operations.
 
-Guidance includes:
+Here is some of the guidance that is provided:
 
--   On-premises sizing
-
--   On-premises deployment
-
--   On-premises performance tuning
+- On-premises sizing
+- On-premises deployment
+- On-premises performance tuning
 
 ## Eligibility for FastTrack for Finance and Operations
 
