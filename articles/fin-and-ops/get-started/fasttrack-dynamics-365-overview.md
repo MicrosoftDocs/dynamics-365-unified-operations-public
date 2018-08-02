@@ -5,7 +5,7 @@ title: Microsoft FastTrack for Finance and Operations
 description: This topic provides an overview of Microsoft FastTrack for Microsoft Dynamics 365 for Finance and Operations. FastTrack is a customer success service that is designed to help you move smoothly and confidently to Microsoft Dynamics 365, so that you can realize business value faster.
 author: margoc
 manager: AnnBe
-ms.date: 07/25/2018
+ms.date: 08/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,33 +35,22 @@ ms.dyn365.ops.version: Version 1611, July 2017 update
 
 Microsoft FastTrack for Microsoft Dynamics 365 for Finance and Operations is a customer success service that is designed to help you move smoothly and confidently to Microsoft Dynamics 365, so that you can realize business value faster. When you participate in the FastTrack program, you receive guidance about implementation best practices, planning for successful rollouts, and expanding capabilities. However, you implement at your own pace. You also have access to Microsoft engineering resources who are committed to making your experience with Finance and Operations a success.
 
-## Overview of Microsoft FastTrack for Dynamics 365 for Finance and Operations
+## Microsoft FastTrack for Dynamics 365 for Finance and Operations overview
 
 Microsoft Dynamics 365 for Finance and Operations offers different [Deployment
-options](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type) - in the cloud or on-premises. Due to the different nature of the underlying
-architecture and implementation approach, Microsoft provides FastTrack service
-tailored to the chosen deployment option.
+options](../../dev-itpro/deployment/choose-deployment-type.md) for cloud and on-premises environments. Because of the different nature of the underlying architecture and implementation approach, Microsoft provides FastTrack service that is tailored to each deployment option.
 
-### Fastrack for Dynamics 365 for Finance and Operations (Cloud)
+### FastTrack for cloud
 
-This service is designed for customers who are implementing Finance and
-Operations in the cloud. It includes new implementations as well as customers
-who are upgrading or migrating to a cloud deployment from an existing Dynamics
-AX 2012 or Dynamics AX 2009 implementation.
+This service is designed for customers who are implementing Finance and Operations in the cloud. The service includes new implementations as well as customers who are upgrading or migrating to a cloud deployment from an existing Dynamics AX 2012 or Dynamics AX 2009 implementation.
 
-### FastTrack for Dynamics 365 for Finance and Operations (On-premises)
+### FastTrack for on-premises
 
-FastTrack for Dynamics 365 (On-premises) is a service designed to help new
-customers with architectural guidance, tools and processes for implementing
-Finance and Operations on-premises.
+FastTrack for Dynamics 365 on-premises is a service designed to help new customers with architectural guidance and the tools and processes needed to implement Finance and Operations on-premises.
 
-The program is designed for customers who are creating new on-premises
-deployments, rather than migrating existing AX 2012 deployments to Finance and
-Operations (on-premises).
+The program is designed for customers who are creating new on-premises deployments, rather than migrating existing Dynamics AX 2012 deployments to Finance and Operations.
 
 Guidance includes:
-
--   Choosing between on-premises and cloud deployment options
 
 -   On-premises sizing
 
