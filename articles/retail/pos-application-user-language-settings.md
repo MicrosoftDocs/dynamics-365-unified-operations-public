@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: POS application and user language settings
+title: Point of sale (POS) application and user language settings
 description: This topic describes how to change language settings in Retail Modern POS (MPOS) and Cloud POS.
 author: jblucher
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# POS application and user language settings
+# Point of sale (POS) application and user language settings
 
 [!include [banner](includes/banner.md)]
 

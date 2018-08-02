@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail Store Scale Unit configuration and installation
+title: Configure and install Retail Store Scale Unit
 description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
 
 author: jashanno
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Retail Store Scale Unit configuration and installation
+# Configure and install Retail Store Scale Unit
 
 [!include [banner](../includes/banner.md)]
 
@@ -160,7 +160,6 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 7. Enter the HTTPS port to use, and verify that the host name of the computer is correct. Then select **Next** to continue.
 
     > [!NOTE]
-    > - The HTTPS port is listed in the Store system profile. To access the Store system profile, on the **Retail store details** page, on the **Store systems** FastTab, select the profile ID of the selected Store system.
     > - The installer automatically enters the host name. If, for any reason, the host name must be changed for the installation, change it here. The host name must be the FQDN of the system, and it must be entered in the **Host name** field for the selected Store system entry.
 
 8. Enter the application ID (client ID) and secret that are associated with this Retail Store Scale Unit installation. Additionally, verify the channel database ID, which is automatically entered from the configuration file. Then select **Install**. If you will use Retail Cloud POS, make sure that the **Configure Retail Cloud POS** check box at the bottom of the page is selected. This configuration requests Azure AD sign-in and automatically generates all required information in Azure, so that Retail Cloud POS can be used on-premises.
@@ -192,6 +191,7 @@ The last steps require validation and verification that the Azure application ID
 6. In the new **Issuer** row, enter the Retail Server URL of the newly installed Retail Store Scale Unit. At the end of the URL, add **/auth**. The URL will resemble `https://MyComputerName/RetailServer/auth`.
 
     > [!NOTE]
+    > The URL described above is case sensitive.
     > There will be a new identity provider line for each Retail Store Scale Unit that is installed. Each Retail Store Scale Unit will have a URL that resembles this URL.
 
 7. In the **Name** column, enter a description for the store that the URL belongs to.
@@ -208,7 +208,8 @@ The last steps require validation and verification that the Azure application ID
     - In the **ClientId** column, enter **Modern POS**. Set the **Type** field to **Public** and the **UserType** field to **Worker**.
 
 12. On the Action Pane, select **Save**.
-13. When you've finished, return to the installer, and select **Finish**.
+13. In Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution Schedule**, and run CDX Job **1110**.
+14. When you've finished, return to the installer, and select **Finish**.
 
     The final page of the installer includes valuable information that you can use to test and validate that all components work correctly. Keep this page open until you've completed the validation.
 

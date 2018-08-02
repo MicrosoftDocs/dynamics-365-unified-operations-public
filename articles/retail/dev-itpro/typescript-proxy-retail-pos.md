@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Typescript and C# proxies for Retail POS
+title: Typescript and C# proxies for Retail point of sale (POS)
 description: This topic provides information about the Retail proxy and explains how to generate it.
 author: mugunthanm
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
 
 ---
 
-# Retail Typescript and C# proxies
+# Typescript and C# proxies for Retail point of sale (POS)
 
 [!include [banner](../../includes/banner.md)]
 

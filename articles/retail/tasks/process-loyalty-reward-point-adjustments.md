@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Process loyalty reward point adjustments
+title: Process adjustments of loyalty reward points
 description: This procedure demonstrates how to look up loyalty card information and adjust loyalty reward points. 
 author: scott-tucker
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Process loyalty reward point adjustments
+# Process adjustments of loyalty reward points
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

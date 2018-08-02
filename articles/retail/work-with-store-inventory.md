@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage store inventory
+title: Store inventory management
 description: This article describes the types of documents that you can use to manage inventory.
 author: rubencdelgado
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Manage store inventory
+# Store inventory management
 
 [!include [banner](includes/banner.md)]
 

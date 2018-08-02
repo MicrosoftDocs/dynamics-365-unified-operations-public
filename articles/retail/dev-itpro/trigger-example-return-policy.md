@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Implement a return policy using triggers
+title: Implement a return policy by using triggers
 description: This topic has two examples which show how you can implement a new policy using a trigger.
 author: mugunthanm
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Implement a return policy using triggers
+# Implement a return policy by using triggers
 
 > [!NOTE]
 > This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier. This implementation is not supported for versions 7.2 and higher. For those versions, follow the extension model without overlayering.
