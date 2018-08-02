@@ -1962,6 +1962,8 @@
       - name: Brazil
         href: ../financials/localizations/brazil.md
         items:
+        - name: Scope of localization
+          href: ../financials/localizations/latam-bra-scope.md
         - name: Fiscal books
           href: ../financials/localizations/latam-bra-fiscal-books.md
           items:
