@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Before you buy Dynamics 365 for Retail
+title: Before you buy Retail
 description: New to Dynamics 365 for Retail? We've put together some guidance to help you, whether you’re still evaluating or ready to make a purchase.
 author: jblucher
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update 
 ---
 
-# Before you buy Dynamics 365 for Retail
+# Before you buy Retail
 
 [!include [banner](../../includes/banner.md)]
 

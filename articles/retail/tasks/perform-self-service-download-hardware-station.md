@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Perform self-service to download hardware station
+title: Download hardware stations by using self-service
 description: This procedure walks through how to download a pre-defined hardware station. 
 author: jashanno
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Perform self-service to download hardware station
+# Download hardware stations by using self-service
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

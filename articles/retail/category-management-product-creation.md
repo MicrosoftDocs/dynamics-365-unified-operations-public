@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Product category management 
+title: Manage Retail product categories and products
 description: This topic describes how merchandising managers can use Retail product categories to manage relationships between the Retail product hierarchy and released product details. 
 author: ashishmsft
 manager: AnnBe

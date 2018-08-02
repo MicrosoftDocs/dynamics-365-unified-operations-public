@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Inventory lookup in the Point of Sale
+title: Inventory lookup in the point of sale (POS)
 description: This topic describes the options that are available for viewing inventory information in the point of sale (POS). 
 author: ashishmsft
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Application update 5, AX 8.0
 
 ---
 
-# Inventory lookup in the Point of Sale 
+# Inventory lookup in the point of sale (POS)
 
 [!include [banner](includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up a call center channel
+title: Set up call center channels
 description: This topic provides information about how to process orders for call centers by using Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Set up a call center channel
+# Set up call center channels
 
 [!include [banner](includes/banner.md)]
 

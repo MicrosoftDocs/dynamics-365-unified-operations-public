@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up new environments, Visual Studio Team Services, and branches for Retail projects
+title: Set up new environments, VSTS, and branches for Retail projects
 description: This topic describes recommended practices for setting up new environments, Microsoft Visual Studio Team Services, and branches for Microsoft Dynamics 365 for Retail implementation projects.
 author: Andreash1
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 ---
 
-# Set up new environments, Visual Studio Team Services, and branches for Retail projects
+# Set up new environments, VSTS, and branches for Retail projects
 
 Starting in Microsoft Dynamics AX 7.0, most environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). By default, environments are Microsoft-hosted. Typically, cloud-hosted environments are used to provide more control over a development or build environment. For more details, see [Choose a data integration (import/export) strategy](../../dev-itpro/data-entities/integration-overview.md).
 

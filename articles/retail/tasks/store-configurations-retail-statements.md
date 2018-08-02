@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Store configurations for Retail statements
+title: Configure store settings that affect retail statements
 description: This procedure walks through configurations for the Retail store that affect how Retail statements get created and posted. 
 author: jashanno
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Store configurations for Retail statements
+# Configure store settings that affect retail statements
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

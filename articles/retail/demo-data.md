@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: The demo data screen layouts in MPOS/CPOS
+title: Demo data screen layouts in Retail Modern POS (MPOS) and Cloud POS
 description: This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Microsoft Dynamics 365 for Retail.
 author: zlinster
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 ---
 
-# Demo data screen layouts in MPOS/CPOS
+# Demo data screen layouts in Retail Modern POS (MPOS) and Cloud POS
 
 [!include [banner](includes/banner.md)]
 

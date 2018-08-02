@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Improvements to statement posting
+title: Improvements to statement posting functionality
 description: This topic describes improvements that have been made to the statement posting feature.
 author: josaw1
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
-# Improvements to statement posting
+# Improvements to statement posting functionality
 
 [!include[banner](includes/banner.md)]
 
