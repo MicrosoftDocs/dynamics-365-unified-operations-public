@@ -37,7 +37,7 @@ Microsoft FastTrack for Microsoft Dynamics 365 for Finance and Operations is a c
 
 ## Microsoft FastTrack for Finance and Operations overview
 
-Finance and Operations offers different [deployment options](../../dev-itpro/deployment/choose-deployment-type.md) for cloud and on-premises environments. Because the underlying architecture and implementation approach for each deployment option differ, Microsoft provides a FastTrack service that is tailored to each option.
+Finance and Operations offers different [deployment options](../../dev-itpro/deployment/choose-deployment-type.md) for cloud and on-premises environments. Because the underlying architecture and implementation approach for each deployment option differs, Microsoft provides a FastTrack service that is tailored to each option.
 
 ### FastTrack for cloud
 
