@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail Modern POS in offline mode
+title: Retail Modern POS (MPOS) in offline mode
 description: This article explains how to use Retail Modern POS devices in offline mode if the Retail Server is unavailable.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail Modern POS in offline mode
+# Retail Modern POS (MPOS) in offline mode
 
 [!include [banner](../includes/banner.md)]
 

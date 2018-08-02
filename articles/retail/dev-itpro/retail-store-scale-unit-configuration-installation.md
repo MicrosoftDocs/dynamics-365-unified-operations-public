@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail Store Scale Unit configuration and installation
+title: Configure and install Retail Store Scale Unit
 description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
 
 author: jashanno
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Retail Store Scale Unit configuration and installation
+# Configure and install Retail Store Scale Unit
 
 [!include [banner](../includes/banner.md)]
 

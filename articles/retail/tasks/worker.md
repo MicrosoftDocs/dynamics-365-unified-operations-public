@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Configure a worker
+title: Configure retail workers
 description: This procedure demonstrates how to configure a retail worker as a sales representative who is eligible for commission on sales in POS. 
 author: jblucher
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Configure a worker
+# Configure retail workers
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

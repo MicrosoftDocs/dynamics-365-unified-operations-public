@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Retail 
+title: Welcome to Dynamics 365 for Retail 
 description: Home page for Dynamics 365 for Retail
 author: josaw1
 manager: AnnBe

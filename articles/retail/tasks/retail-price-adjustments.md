@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Retail price adjustments
+title: Create retail price adjustments
 description: This procedure will walk through creating a retail price adjustment. 
 author: josaw1
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Retail price adjustments
+# Create retail price adjustments
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 
