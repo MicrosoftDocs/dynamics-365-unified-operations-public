@@ -46,23 +46,25 @@ The following limitations are applied to the Microsoft Adyen connector:
 This section describes how to configure the Microsoft Adyen connector for the different channels
 ### AX Hardware profile setup
 In the EFT service section select the EFT service dropdown and assign it to "Payment Connector". Then click the grid +New button so the "Microsoft Adyen Processor" can be selected from the connector dropdown. Make sure the new Microsoft Adyen connector sequence number is smallest. The connector with the smallest sequence number will be the default connector assigned to the Microsoft Adyen payment terminal. Below is a list of merchant properties supported by the Microsoft Adyen connector:
-Property name | Description | Channel
-------------- | ----------- | -------
-Assembly name | Read only field containing the strong name for the Microsoft Adyen connector. | All
-Service account Id | Guid to uniquely identifier the Microsoft Adyen connector for this profile. | All
-Version | The connector version to be used. Allows different versions of the connector to co-exist, defaults to latest version. | Gateway
-Environment | Environment points to Test/Live/Custom | Gateway and Cloud Terminal
-Optional Domain | (Custom live only domain) [Adyen](https://docs.adyen.com/developers/development-resources/live-endpoints#liveendpointsstructure) [random]-[company name] | Gateway and Cloud Terminal
-Merchant account Id | The merchant account identifier [Adyen](https://ca-test.adyen.com/ca/ca/accounts/show.shtml?accountTypeCode=MerchantAccount) has assigned to your account | All
-Terminal architecture | Local or Cloud based communication to terminals | Terminal
-Local password phrase | [Adyen](https://docs.adyen.com/developers/point-of-sale-integration/terminal-api-integration/getting-started-adyen-terminal-api/adyen-terminal-api-architecture/local-communication-to-the-terminal/terminal-api-out-of-band-encryption/encrypting-messages#backofficeconfiguration) supplied password phrase used to encrypt communication between POS and devices | Local Terminal
-Local key identifier | Adyen supplied key identifier, use default value | Local Terminal
-Local key version | Adyen supplied key version, use default value | Local Terminal
-Local cryptor version | Adyen supplied cryptor version, use default value | Local Terminal
-Cloud API key | [Adyen](https://docs.adyen.com/developers/user-management/how-to-get-the-checkout-api-key) supplied API gateway key | Gateway and Cloud Terminal
-Supported currencies | Currencies supported by channel | All
-Supported tender types | Tender types supported by channel | All
-Gift card provider | Optional Adyen gift card provider | Terminal
+
+| Property name | Description | Channel |
+| ------------- | ----------- | ------- |
+| Assembly name | Read only field containing the strong name for the Microsoft Adyen connector. | All |
+| Service account Id | Guid to uniquely identifier the Microsoft Adyen connector for this profile. | All |
+| Version | The connector version to be used. Allows different versions of the connector to co-exist, defaults to latest version. | Gateway |
+| Environment | Environment points to Test/Live/Custom | Gateway and Cloud Terminal |
+| Optional Domain | (Custom live only domain) [Adyen](https://docs.adyen.com/developers/development-resources/live-endpoints#liveendpointsstructure) [random]-[company name] | Gateway and Cloud Terminal |
+| Merchant account Id | The merchant account identifier [Adyen](https://ca-test.adyen.com/ca/ca/accounts/show.shtml?accountTypeCode=MerchantAccount) has assigned to your account | All |
+| Terminal architecture | Local or Cloud based communication to terminals | Terminal |
+| Local password phrase | [Adyen](https://docs.adyen.com/developers/point-of-sale-integration/terminal-api-integration/getting-started-adyen-terminal-api/adyen-terminal-api-architecture/local-communication-to-the-terminal/terminal-api-out-of-band-encryption/encrypting-messages#backofficeconfiguration) supplied password phrase used to encrypt communication between POS and devices | Local Terminal |
+| Local key identifier | Adyen supplied key identifier, use default value | Local Terminal |
+| Local key version | Adyen supplied key version, use default value | Local Terminal |
+| Local cryptor version | Adyen supplied cryptor version, use default value | Local Terminal |
+| Cloud API key | [Adyen](https://docs.adyen.com/developers/user-management/how-to-get-the-checkout-api-key) supplied API gateway key | Gateway and Cloud Terminal |
+| Supported currencies | Currencies supported by channel | All |
+| Supported tender types | Tender types supported by channel | All |
+| Gift card provider | Optional Adyen gift card provider | Terminal |
+
 The PIN pad must be set to Network and the Device name MicrosoftAdyenDeviceVXXX where XXX = latest version number
 
 ### AX Register setup
