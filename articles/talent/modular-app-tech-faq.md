@@ -5,7 +5,7 @@ title: Provisioning for the Dynamics 365 for Talent modular apps
 description: This topic provides information about how to provision the standalone modular applications that can be purchased to provide core human resources (HR) functionality that is included in Microsoft Dynamics 365 for Talent. This functionality provides additional experiences, such as Attract and Onboard.
 author: rschloma
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 08/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
