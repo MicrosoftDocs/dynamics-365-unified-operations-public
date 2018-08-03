@@ -289,3 +289,11 @@ These methods have been refactored to support extensibility through chain of com
 |WrkCtrlScheduler_Proj.loadJob|
 |WrkCtrScheduler_Prod.saveOperation|
 |WrkCtrScheduler_Prod.saveOrder|
+
+## Additional extensibility enhancements
+
+In addition to the refactored methods, the following extensibility enhancements have been made.
+
+- Increase EDT string size for EcoResProductSearchName
+- Change CacheLookup property to NotInTTS for AssetLedgerAccounts
+- Change CacheLookup property to Found on TaxOnItem, TaxJurisdiction, TaxGroupData, and TaxData, and AssetLedgerAcounts
