@@ -1,8 +1,8 @@
 ---
 
 # required metadata
-title: Preview the ledger transactions
-description: Tihs topic provides information about how to preview ledger transactions in Russia. 
+title: Preview ledger transactions
+description: Tihs topic provides information about how to preview ledger transactions in Microsoft Dynamics 365 for Finance and Operations for Russia. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-			
+
 # optional metadata
 
 # ms.search.form:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Preview the ledger transactions 
+# Preview ledger transactions 
 
 You can preview the ledger transactions before posting the ledger journal.
 
