@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: 8.0.2
 
 ---
 
