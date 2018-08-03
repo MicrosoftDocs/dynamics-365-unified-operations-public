@@ -44,11 +44,11 @@ You can preview the ledger transactions before posting the ledger journal.
 
 2.  Press CTRL+N to create a new journal.
 
-3.  Click **Lines** to create a journal line in the **Journal voucher** form.
+3.  Click **Lines** to create a journal line in the **Journal voucher** page.
 
-4.  Press CTRL+S or close the **Journal voucher** form.
+4.  Press CTRL+S or close the **Journal voucher** page.
 
-5.  Select an open journal in the **Journal** form.
+5.  Select an open journal in the **Journal** page.
 
 6.  Click **Post** and select the **Preview journal transactions** menu item to preview the ledger transaction. The ledger transactions are displayed in the lower pane, and the journal lines are shown in the upper pane. The vouchers displayed on the left are used in the journal.
 
