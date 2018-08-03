@@ -85,7 +85,14 @@ subscription managed by Microsoft, therefore, the customer has no separate Azure
 billing.
 
 ### Tier-1 versus Tier-2+
-INSERT TABLE HERE
+|    Tier-1                                                                                                 |    Tier-2   and higher                                                                                       |
+|-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+|    Single-box environment                                                                                 |   Multi-box  environment                                                                                     |
+|    All   components (e.g. AOS, database, Retail and MR) are installed on the same   server                |    Components are installed on multiple servers                                                              |
+|    Uses SQL   Server                                                                                      |    Uses [Azure SQL](https://docs.microsoft.com/en-us/azure/sql-database/)                                                                                            |
+|    Different   architecture than Production, made to maximize the efficiency of the   development team    |    Same architecture as Production despite a different sizing and not   disaster-Rrecovery enabled             |
+|    Can be   deployed in different ways (add-on, cloud-hosted, environment image .VHD)                     |    Can only be deployed as standard or add-on   environment (can’t be hosted as cloud-Hosted environment)    |
+|    Not suitable for   UAT nor performance testing                                                         |    Suitable for UAT and performance testing                                                                  |
 
 ## Microsoft Dynamics 365 for Finance and Operations Standard Cloud Offer
 
@@ -129,10 +136,13 @@ pricing](https://dynamics.microsoft.com/en-us/pricing/)
 
 ### Standard Environments Provisioning
 
-The different Dynamics 365 for Finance and Operations environments will get
-provisioned at a different timing. This is the overview for the Microsoft
-Dynamics 365 for Finance and Operations Standard Cloud Offer:
-INSERT TABLE HERE
+The different Dynamics 365 for Finance and Operations environments will get provisioned at different times. This is the suggested timing for the Microsoft Dynamics 365 for Finance and Operations standard cloud offer environments:
+
+|    Environment                               |    When   does it happen?                                                          |    Is   it self-service?                                                                                       |
+|----------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|    Tier-2    Standard   Acceptance Test      |    During onboarding with the FastTrack team                                                               |    ✓                                                                                                           |
+|    Tier-1    Development/Build   and Test    |    When ***Design*** phase starts   (requires that Visual Studio Team Services (VSTS) is configured)    |    ✓                                                                                                           |
+|    PRODUCTION                                |    On Production readiness                                                                    |    Production deployment request must be submitted in   LCS; Deployment through DSE within 2 business days    |
 
 > [!IMPORTANT]
 > Always deploy environments using an **unnamed** account (such as *dynadmin@customer.com*). Deploy and leverage the Develop and Test
