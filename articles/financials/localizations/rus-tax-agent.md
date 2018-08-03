@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up VAT for tax agents and tax agent transactions
+title: Value added tax (VAT) for tax agents and tax agent transactions
 description: This topic provides information about setting up the tax agent transactions for Russia.
 author: ShylaThompson
 manager: AnnBe
@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-			
+
 # optional metadata
 
 # ms.search.form:  
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
 ---
-# Overview of VAT for tax agents
+# Value added tax (VAT) for tax agents
 
 When a company is acknowledged as a tax agent it has to accrue and to deduct VAT correctly from funds, paid to taxpayers (or to accrue at the expense of own funds), and to transfer VAT to the tax authority. 
 This functionality is required to support generation of invoices, factures, and payments to vendors for whom our company is defined as tax (fiscal) agents.
@@ -86,9 +86,8 @@ You must set up the parameters for tax agent transactions in the Tax module befo
 
 13. On the **Setup** tab, in the **Sales tax code** field, select the sales tax code created in steps 1 through 10.
     
-
     > [!NOTE]
-    > If you select the sales tax code for the <STRONG>From own funds</STRONG> option, the <STRONG>Exempt</STRONG> check box is selected by default on the <STRONG>Setup</STRONG> tab.
+    > If you select the sales tax code for the **From own funds** option, the **Exempt** option is selected by default on the **Setup** tab.
 
 
 14. Press CTRL+S or close the form.
@@ -166,7 +165,7 @@ You can use the **Vendor payment proposal** form to create payment proposals tha
 7.  Click **Create payments** to transfer the proposal lines to the payment journal. In the **Vendor payments** form, two payment lines are displayed for each invoice. One line is for payment to a vendor, and the other line is for tax payment to a tax authority. On the second journal line, the purpose of the VAT payment is displayed in the **Purpose text** field, including vendor account number and address.
 
     > [!NOTE]
-    > For the line which is a tax payment to a tax authority, the sales tax code is displayed in the <STRONG>Sales tax code</STRONG> field on the <STRONG>General</STRONG> tab and the vendor account for whom the tax is paid is displayed in the <STRONG>Vendor account</STRONG> field on the <STRONG>Payment</STRONG> tab.
+    > For the line which is a tax payment to a tax authority, the sales tax code is displayed in the <STRONG>Sales tax code</STRONG> field on the **General** tab and the vendor account for whom the tax is paid is displayed in the **Vendor account** field on the **Payment** tab.
 
 8. In the **VAT operation code** field, view or modify the operation code for the VAT declaration.
 
@@ -196,7 +195,7 @@ You can use the **Vendor payment proposal** form to create payment proposals tha
 
     > [!NOTE]
     > VAT amount to be paid is calculated based on the value of the sales tax code.
-    > To avoid tax calculation on prepayment itself, <STRONG>Sales tax on prepayment in payment journal</STRONG> should be switched off in the <STRONG>Accounts payable parameters</STRONG> form on the <STRONG>Ledger and sales tax</STRONG> tab.
+    > To avoid tax calculation on prepayment itself, **Sales tax on prepayment in payment journal** should be switched off in the **Accounts payable parameters** form on the **Ledger and sales tax** tab.
 
 5.  Click **Payment proposal** \> **VAT Proposal**. In the created tax payment line there will be information on the tax code, the VAT operation code and the supplier for which we pay the tax.
  
