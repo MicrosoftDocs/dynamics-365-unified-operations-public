@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up the tax agent transactions
+title: Set up VAT for tax agents and tax agent transactions
 description: This topic provides information about setting up the tax agent transactions for Russia.
 author: ShylaThompson
 manager: AnnBe
@@ -27,12 +27,22 @@ ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
 ---
+# Overview of VAT for tax agents
 
-# Set up the tax agent transactions
+When a company is acknowledged as a tax agent it has to accrue and to deduct VAT correctly from funds, paid to taxpayers (or to accrue at the expense of own funds), and to transfer VAT to the tax authority. 
+This functionality is required to support generation of invoices, factures, and payments to vendors for whom our company is defined as tax (fiscal) agents.
+The following functions are supported: 
+ - Creating vendors with whom we operate as tax agent.
+ - Marking sales tax codes for tax agent transactions to determine if the VAT payments are to be made from the vendor's funds or at the expense of the company's own funds.
+ - Creating payment proposals for  vendors' invoices.
+ - Creating payments for tax authorities
+ - Posting and settlement of payments to the vendor.
+ - Creating and printing factures for VAT amount, being liable to the budget, and registering the factures in the sales book
+ - Creating and printing factures for VAT deductions and registering the factures in the purchase book.
+
+## Set up the tax agent transactions
 
 You must set up the parameters for tax agent transactions in the Tax module before you can create the tax agent transactions.
-
-
 
 ### Set up the VAT operation code for the tax declaration
 
@@ -101,7 +111,31 @@ You must set up the parameters for tax agent transactions in the Tax module befo
 
 4.  Press CTRL+S or close the form.
 
+## Create vendor for which our company acts as a tax agent and post transactions 
+You can define a vendor as a tax agent in the Vendors form and perform transactions with this vendor.
+1. Click **Accounts payable** \> **Vendors** \> **All vendors**.
 
+2. Press CTRL+N to create a vendor for which our company acts as a tax agent, and enter the necessary information.
+
+3. On the **General** tab, select the **Tax agent** check box to define the vendor as a tax agent.
+
+4. In the **Vendor type** field, select the type of vendor from the following options:
+
+   - **Blank** – common vendor.
+   - **Non resident** – If the vendor is a foreigner.
+   - **State authority** – If the vendor is a governmental or municipal authority.
+   
+5. In the **VAT operation code** field, select the operation code for VAT declaration.
+
+6. Press CTRL+S or close the form.
+
+7. Click **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+
+8. Press CTRL+N to create a purchase order for the vendor. Enter the necessary information.
+
+9. Click the **Header** view, and then, on the **Setup tab**, in the **VAT operation code field**, view or modify the code for VAT declarations. Select the source for VAT accrual, From vendor funds or From own funds in the VAT charge.
+
+10. Confirm purchase order and post invoice.
 
 ## Create a payment proposal for a tax agent invoice 
 
@@ -141,41 +175,7 @@ You can use the **Vendor payment proposal** form to create payment proposals tha
     > After payments to the vendor are completed, you can view the settled transactions in the <STRONG>Transactions on settlement</STRONG> form. You can view the posted sales tax transactions in the <STRONG>Sales tax transactions</STRONG> form.
 
 
-## Create vendor for which our company acts as a tax agent and post transactions 
-
-You can define a vendor as a tax agent in the **Vendors** form and perform transactions with this vendor.
-
-
-
-1.  Click **Accounts payable** \> **Vendors** \> **All vendors**.
-
-2.  Press CTRL+N to create a vendor for which our company acts as a tax agent, and enter the necessary information.
-
-3.  On the **General** tab, select the **Tax agent** check box to define the vendor as a tax agent.
-
-4.  In the **Vendor type** field, select the type of vendor from the following options:
-    
-      - **Blank** – common vendor.
-    
-      - **Non resident** – If the vendor is a foreigner.
-    
-      - **State authority** – If the vendor is a governmental or municipal authority.
-
-5.  In the **VAT operation code** field, select the operation code for VAT declaration.
-
-6.  Press CTRL+S or close the form.
-
-7.  Click **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
-
-8.  Press CTRL+N to create a purchase order for the vendor. Enter the necessary information.
-
-9.  Click the **Header** view, and then, on the **Setup** tab, in the **VAT operation code** field, view or modify the code for VAT declarations. Select the source for VAT accrual, From vendor funds or From own funds in the **VAT charge**.
-
-10. Confirm purchase order and post invoice.
-
 ## Create and print factures for VAT deductions 
-
-You can use the **Update facture** form to create and print factures for journals that have been posted. You can then view the factures that you created or updated in the **Facture journal** form.
 
 Before you can create and print a facture report for received invoices, issued invoices, purchases, or sales in estimates of value-added tax (VAT), you must complete the following tasks:
 
@@ -190,37 +190,3 @@ Before you can create and print a facture report for received invoices, issued i
 The facture report displays the number and date of the payment order, the base amount without VAT, and the computational tax rate (VAT value / VAT value + 100).
 
 
-> [!NOTE]
-> If the source of the facture is <STRONG>Tax correction</STRONG>, enter an explanatory note about the details of the invoice line in the <STRONG>Note</STRONG> field in the <STRONG>Facture journal</STRONG> form. This information is displayed on the facture report.
-
-
-
-1.  Click **Accounts payable** \> **Inquiries** \> **Journals** \> **Invoice journal**.
-
-2.  Select the journal line for the posted journal, and then click **Create facture** \> **Update facture**.
-
-3.  In the **Facture** field, enter an identification number for the facture.
-
-4.  In the **Date of the registration** field, select the date when the facture is registered.
-
-5.  In the **Facture date** field, select the date when the facture is created.
-    
-
-    > [!NOTE]
-    > You can select the facture date only if you clear the <STRONG>Same as</STRONG> check box. Otherwise, this field displays the same date that you select in the <STRONG>Date of the registration</STRONG> field.
-
-
-
-6.  In the lower pane, on the **Invoice** tab, select the **To facture** check box to update the facture by using the selected invoice.
-
-7.  In the upper pane, click **Posting** \> **Update and print** to update and print the facture.
-    
-
-    > [!TIP]
-    > <P>Click <STRONG>Posting</STRONG> &gt; <STRONG>Update</STRONG> to update changes to the facture, but without printing the facture.</P>
-    > <P>–or–</P>
-    > <P>Click <STRONG>Posting</STRONG> &gt; <STRONG>Print</STRONG> to print the facture without posting it.</P>
-
-
-
-8.  Click **Accounts payable** \> **Inquiries** \> **Journals** \> **Facture**. You can view the facture that you created or updated in the **Facture journal** form. These factures can be registered in the sales book. 
