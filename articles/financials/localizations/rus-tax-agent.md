@@ -111,8 +111,10 @@ You must set up the parameters for tax agent transactions in the Tax module befo
 
 4.  Press CTRL+S or close the form.
 
-## Create vendor for which our company acts as a tax agent and post transactions 
+## Create vendor for which our company acts as a tax agent and post transactions
+
 You can define a vendor as a tax agent in the Vendors form and perform transactions with this vendor.
+
 1. Click **Accounts payable** \> **Vendors** \> **All vendors**.
 
 2. Press CTRL+N to create a vendor for which our company acts as a tax agent, and enter the necessary information.
@@ -137,7 +139,15 @@ You can define a vendor as a tax agent in the Vendors form and perform transacti
 
 10. Confirm purchase order and post invoice.
 
-## Create a payment proposal for a tax agent invoice 
+## Create tax payments
+
+In the Vendor payment journal, two options for paying VAT as a tax agent are implemented:
+
+ 1) Payment for a specific invoice.
+ 
+ 2) Prepayment (invoice is unknown).
+
+### Create a payment proposal for a tax agent invoice 
 
 You can use the **Vendor payment proposal** form to create payment proposals that you can use to generate payments to a vendor tax agent. You can also generate payments of value-added tax (VAT) to a tax authority.
 
@@ -151,7 +161,7 @@ You can use the **Vendor payment proposal** form to create payment proposals tha
 
 5.  Click **Records to include** and then **Filter** to define the criteria for the payment proposal, e.g. Vendor account.
 
-6.  Click **OK** to open the **Vendor payment proposal** form. In the upper pane, you can view the open invoice transactions that contribute to the payment proposal line On the **VAT Proposal** tab, you can view the details of the tax transaction for the VAT payment to the tax authorities.
+6.  Click **OK** to open the **Vendor payment proposal** form. In the upper pane, you can view the open invoice transactions that contribute to the payment proposal line. On the **VAT Proposal** tab, you can view the details of the tax transaction for the VAT payment to the tax authorities.
     
 7.  Click **Create payments** to transfer the proposal lines to the payment journal. In the **Vendor payments** form, two payment lines are displayed for each invoice. One line is for payment to a vendor, and the other line is for tax payment to a tax authority. On the second journal line, the purpose of the VAT payment is displayed in the **Purpose text** field, including vendor account number and address.
 
@@ -174,6 +184,22 @@ You can use the **Vendor payment proposal** form to create payment proposals tha
     > [!NOTE]
     > After payments to the vendor are completed, you can view the settled transactions in the <STRONG>Transactions on settlement</STRONG> form. You can view the posted sales tax transactions in the <STRONG>Sales tax transactions</STRONG> form.
 
+## Create a prepayment
+
+1.  Click **Accounts payable** \> **Payments** \> **Payment journal**.
+
+2.  Press CTRL+N to create a new journal, and then click **Lines** to open the **Vendor payments** form.
+
+3.  Press CTRL+N to create a new journal line, select vendor and enter a prepayment amount.
+
+4.  Set **Sales tax group** and **Item sales tax group** that contain sales tax code with necessary setup of VAT charge.
+
+    > [!NOTE]
+    > VAT amount to be paid is calculated based on the value of the sales tax code.
+    > To avoid tax calcilation on prepayment itself, <STRONG>Sales tax on prepayment in payment journal</STRONG> should be swithed off in the <STRONG>Accounts payable parameters</STRONG> form on the <STRONG>Ledger and sales tax</STRONG> tab.
+
+5.  Click **Payment proposal** \> **VAT Proposal**. In the created tax payment line there will be information on the tax code, the VAT operation code and the supplier for which we pay the tax.
+ 
 
 ## Create and print factures for VAT deductions 
 
