@@ -150,7 +150,7 @@ Dimension control for settlements helps you accurately manage and analyze accoun
 
 Use this procedure to set up a dimension set for dimension control for settlements by using the **Financial dimension sets** form.
 
-1.  Click **General ledger** \> **Setup** \> **Financial dimensions** \> **Financial dimension sets**.
+1.  Click **General ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimension sets**.
 
 2.  Press CTRL+N to create a dimension set.
 
