@@ -184,7 +184,7 @@ You can use the **Vendor payment proposal** form to create payment proposals tha
     > [!NOTE]
     > After payments to the vendor are completed, you can view the settled transactions in the <STRONG>Transactions on settlement</STRONG> form. You can view the posted sales tax transactions in the <STRONG>Sales tax transactions</STRONG> form.
 
-## Create a prepayment
+### Create a prepayment
 
 1.  Click **Accounts payable** \> **Payments** \> **Payment journal**.
 
@@ -196,7 +196,7 @@ You can use the **Vendor payment proposal** form to create payment proposals tha
 
     > [!NOTE]
     > VAT amount to be paid is calculated based on the value of the sales tax code.
-    > To avoid tax calcilation on prepayment itself, <STRONG>Sales tax on prepayment in payment journal</STRONG> should be swithed off in the <STRONG>Accounts payable parameters</STRONG> form on the <STRONG>Ledger and sales tax</STRONG> tab.
+    > To avoid tax calculation on prepayment itself, <STRONG>Sales tax on prepayment in payment journal</STRONG> should be switched off in the <STRONG>Accounts payable parameters</STRONG> form on the <STRONG>Ledger and sales tax</STRONG> tab.
 
 5.  Click **Payment proposal** \> **VAT Proposal**. In the created tax payment line there will be information on the tax code, the VAT operation code and the supplier for which we pay the tax.
  
@@ -213,6 +213,12 @@ Before you can create and print a facture report for received invoices, issued i
 
 4.  Create a payment proposal, and post the payment.
 
+As a result of tax payment posting sales tax transactions with the following tax directions are created:
+ - *Tax agent – charged* – VAT accrued to be paid. A facture document that will be reflected in the Sales book is created upon this sales tax transaction.
+ - *Sales tax receivable* – VAT to be deducted as the VAT amount was transferred to the tax authority. The facture created upon the sales tax transaction will be reflected in the Purchase book, after VAT incoming processing.
+
+5.  Click **Accounts payable** \> **Inquiries and reports** \> **Facture**.
+
+6.  Click **Print** \> **Original** for the facture created upon the *Tax agent - charged* sales tax transaction.
+
 The facture report displays the number and date of the payment order, the base amount without VAT, and the computational tax rate (VAT value / VAT value + 100).
-
-
