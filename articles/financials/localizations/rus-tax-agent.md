@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Value added tax (VAT) for tax agents and tax agent transactions
+title: Value added tax (VAT) for tax agents
 description: This topic provides information about setting up the tax agent transactions for Russia.
 author: ShylaThompson
 manager: AnnBe
