@@ -301,9 +301,9 @@ final class FormButton1_Extension
 
 #### Requirements and considerations when you write CoC methods on extensions for form-nested concepts
 
-- Like other CoC methods, these methods must always call **next** to invoke the next in the chain, so that it can go all the way to the kernel or native implementation in the runtime behavior. These is equivalent to a call to **super( )** from the form itself to help guarantee that the base behavior in the runtime is always run as expected.
-- Currently, the X++ editor in Microsoft Visual Studio doesn't support discovery of methods candidates that can be wrapped. Therefore, you must refer to the system documentation for each nested concept to identify the correct method to wrap and its exact signature.
-- You **cannot** add CoC to wrap methods that aren't defined in the original base behavior of the nested control type. You can't add **methodInButton1** CoC on an extension. However, from the control extension, you can make a call into this method if the method has been defined as public or protected. Here is an example where the **Button1** control is defined in the **FormToExtend** form in such a way that it has the **methodInButton1** method.
+- Like other CoC methods, these methods must always call **next** to invoke the next method in the chain, so that the chain can go all the way to the kernel or native implementation in the runtime behavior. The call to next is equivalent to a call to **super()** from the form itself to help guarantee that the base behavior in the runtime is always run as expected.
+- Currently, the X++ editor in Microsoft Visual Studio doesn't support discovery of methods that can be wrapped. Therefore, you must refer to the system documentation for each nested concept to identify the correct method to wrap and its exact signature.
+- You **cannot** add CoC to wrap methods that aren't defined in the original base behavior of the nested control type. For example, you can't add **methodInButton1** CoC on an extension. However, from the control extension, you can make a call into this method if the method has been defined as public or protected. Here is an example where the **Button1** control is defined in the **FormToExtend** form in such a way that it has the **methodInButton1** method.
 
     ```C#
     [Form]
@@ -314,7 +314,7 @@ final class FormButton1_Extension
         {
             public void methodInButton1 (str param1)
             {
-                Info(“Hi from methodInButton1);
+                Info("Hi from methodInButton1");
                 //...
     }
     ```
