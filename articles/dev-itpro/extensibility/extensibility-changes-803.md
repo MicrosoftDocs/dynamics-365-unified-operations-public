@@ -290,6 +290,26 @@ These methods have been refactored to support extensibility through chain of com
 |WrkCtrScheduler_Prod.saveOperation|
 |WrkCtrScheduler_Prod.saveOrder|
 
+## Enumerations made extensible
+
+These enumerations have been made extensible in this update.
+
+| Enumeration|
+| --------------- |
+|BankReconMatchRuleLineSysGeneratedType|
+|BankReconMatchRuleLineSysGeneratedType|
+|BankReconMatchRuleLineSysGeneratedType|
+|ItemNumAlternative|
+|JmgRegistrationErrorMode|
+|MCRCustSearchType|
+|ModuleSalesPurch|
+|ModuleSalesPurch|
+|ProjStatusRule|
+|PurchRFQUpdateType|
+|TAMVendRebateItemCode|
+|TMSLoadBuildSupplyDemandType|
+
+
 ## Additional extensibility enhancements
 
 In addition to the refactored methods, the following extensibility enhancements have been made.
