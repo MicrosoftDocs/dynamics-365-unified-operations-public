@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up exchange rates for a currency transaction
-description: This topic provides information about setting up exchange rates for currency transactions for Russia. 
+description: This topic provides information about setting up exchange rates for currency transactions in Russia. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-			
+
 # optional metadata
 
 # ms.search.form:  
@@ -33,8 +33,8 @@ ms.dyn365.ops.version: 8.1
 Use the **Currency revaluation accounts** form to set up the loss or gain calculation for currency exchange.
 
 1.  Click **General ledger** \> **Setup** \> **Currency** \> **Currency parameters**.
-3.  In the **Legal entities** field, select a company.
-2.  Set the **Activate parameters** option to **Yes** to activate the Russian revaluation parameters for the specified currency.
+2.  In the **Legal entities** field, select a company.
+3.  Set the **Activate parameters** option to **Yes** to activate the Russian revaluation parameters for the specified currency.
 
 4.  On the **General** FastTab, in the grid, select the main accounts to post the exchange rate profits or losses to.
 
@@ -93,8 +93,6 @@ Use this procedure to settle partial payment transactions for a customer. You ca
 
     > [!NOTE]
     > To verify that the exchange adjustment facture that is created has the same settled invoice amount in the <STRONG>Facture journal</STRONG> form, select the facture.
-
-
 
 8.  Click **Accounts receivable** \> **Periodic** \> **Sales book** \> **Sales books journal**.
 
