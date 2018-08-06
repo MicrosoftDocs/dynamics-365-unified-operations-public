@@ -34,7 +34,7 @@ Use this procedure to set up accounts payable parameters for dimension control f
 
 1.  Click **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 
-2.  Click the **Settlement** link.
+2.  Click the **Settlement** tab.
 
 3.  In the **Settlement by dimension** field, select one of the following options to control settlement transactions:
     
@@ -46,7 +46,7 @@ Use this procedure to set up accounts payable parameters for dimension control f
     
       - **Always** – Transactions are controlled by dimensions during automatic and manual settlement.
 
-4.  Click the **Advance holders** link.
+4.  Click the **Advance holders** tab.
 
 5.  In the **Settlement by dimension** field, select one of the following options to control settlement transactions for an advance holder. The advance holder can be a customer or a vendor.
     
@@ -95,7 +95,7 @@ Use this procedure to set up accounts receivable parameters for dimensions contr
 
 1.  Click **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 
-2.  Click the **Settlement** link.
+2.  Click the **Settlement** tab.
 
 3.  In the **Settlement by dimension** field, select one of the following options to control settlement transactions for a customer:
     
