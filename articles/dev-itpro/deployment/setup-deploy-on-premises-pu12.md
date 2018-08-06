@@ -53,7 +53,7 @@ The Finance and Operations application consists of three main components:
 
 These components depend on the following system software:
 
-- Microsoft Windows Server 2016, only English installation language is supported
+- Microsoft Windows Server 2016 (only the English language installation is supported)
 - Microsoft SQL Server 2016 SP1, which has the following features:
   - Full-text index search is enabled.
   - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines.
