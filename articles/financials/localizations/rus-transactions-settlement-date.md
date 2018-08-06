@@ -28,7 +28,11 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Set up accounts payable parameters for dimensions control for settlements 
+# Set up dimension control for settlements 
+
+[!include [banner](../includes/banner.md)]
+
+## Set up accounts payable parameters for dimensions control for settlements 
 
 Use this procedure to set up dimension control for settlements using the **Accounts payable parameters** page.
 
