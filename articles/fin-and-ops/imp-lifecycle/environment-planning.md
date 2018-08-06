@@ -3,7 +3,7 @@
 
 title: Environment planning
 description: This topic provides an overview of the different aspects you must consider while doing the environment planning for your project. 
-author: author: ClaudiaBetz-Haubold
+author: ClaudiaBetz-Haubold
 manager: AnnBe
 ms.date: 08/06/2018
 ms.topic: article
