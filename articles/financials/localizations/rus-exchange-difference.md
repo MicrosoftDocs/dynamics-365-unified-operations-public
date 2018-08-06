@@ -54,8 +54,17 @@ Use the **Currency revaluation accounts** form to set up the loss or gain calcul
 
 12. In the **Expense code** field, select the expense code that corresponds to the transaction for an exchange rate adjustment that occurs when transactions are settled for an advance holder. 
 
-13. In the **Revenue code** field, select the revenue code that corresponds to the transaction for an exchange rate adjustment that occurs when transactions are settled for an advance holder. Y
+13. In the **Revenue code** field, select the revenue code that corresponds to the transaction for an exchange rate adjustment that occurs when transactions are settled for an advance holder.
 
+## Set up general ledger parameters for exchange adjustment 
+
+Use this procedure to set up the parameters for exchange adjustments of advance settlements by using the **General ledger parameters** form.
+
+1.  Click **General ledger** \> **Setup** \> **General ledger parameters**.
+
+2.  In the **Foreign currency revaluation** field group, in the **Calculation method** field, select **Period grand total** as the calculation method for exchange differences..
+
+3.  Set the **Advance revaluation cancelation** option to **Yes** to cancel exchange adjustment during advance settlement.
 
 ## Set up amount difference parameters for exchange rates 
 
@@ -144,15 +153,7 @@ Use the **Accounts payable parameters** form to set up accounts payable paramete
 
 3.  On the **Purchase book** FastTab, set the **Amount difference in additional list** option to **Yes** to include the amount differences in an additional list in the purchase book.
 
-## Set up general ledger parameters for exchange adjustment 
 
-Use this procedure to set up the parameters for exchange adjustments of advance settlements by using the **General ledger parameters** form.
-
-1.  Click **General ledger** \> **Setup** \> **General ledger parameters**.
-
-2.  In the **Foreign currency revaluation** field group, in the **Calculation method** field, select **Period grand total** as the calculation method for exchange differences..
-
-3.  Set the **Advance revaluation cancelation** option to **Yes** to cancel exchange adjustment during advance settlement.
 
 ## Amount difference factures for sales and purchase orders 
 
