@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail Server architecture
-description: This article describes the architecture of Retail Server. Retail Server provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.
+description: This article describes the architecture of Retail Server. Retail Server provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Retail Server architecture
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-
-This article describes the architecture of Retail Server. Retail Server provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.
+This article describes the architecture of Retail Server. Retail Server provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.
 
 Retail Server architecture
 --------------------------
 
-The commerce runtime is wrapped in a Retail Server layer. Retail Server uses a web API and OData to support thin clients both in the store and online on tablets and phones. The commerce runtime communicates with Retail Headquarters through Commerce Data Exchange services. The following diagram shows the architecture of Retail Server. 
+The commerce runtime is wrapped in a Retail Server layer. Retail Server uses a web API and OData to support thin clients both in the store and online on tablets and phones. The commerce runtime communicates with Retail Headquarters through Commerce Data Exchange services. The following diagram shows the architecture of Retail Server. 
 
 [![RetailServer](./media/retailserver.png)](./media/retailserver.png) 
 
@@ -56,7 +55,7 @@ Retail Server uses the following concepts.
 <tbody>
 <tr class="odd">
 <td>Entity type</td>
-<td>An entity type is an entity that has a life cycle that you want to monitor. Each entity type has a key. An example of an entity type is <strong>Customer</strong>.</td>
+<td>An entity type is an entity that has a life cycle that you want to monitor. Each entity type has a key. An example of an entity type is <strong>Customer</strong>.</td>
 </tr>
 <tr class="even">
 <td>Complex type</td>
@@ -64,7 +63,7 @@ Retail Server uses the following concepts.
 </tr>
 <tr class="odd">
 <td>Controller</td>
-<td>A controller is a mapping for an entity type that controls create, read, update, and delete (CRUD) behaviors and actions for the entity type. A controller is provided for each commerce entity. You can customize the following controllers:
+<td>A controller is a mapping for an entity type that controls create, read, update, and delete (CRUD) behaviors and actions for the entity type. A controller is provided for each commerce entity. You can customize the following controllers:
 <ul>
 <li>Carts</li>
 <li>Catalogs</li>

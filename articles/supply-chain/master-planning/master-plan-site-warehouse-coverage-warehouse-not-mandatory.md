@@ -32,14 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Master planning for site and warehouse coverage, warehouse not mandatory
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes how an item that has site and warehouse as coverage dimensions is planned. The warehouse dimension is not mandatory.
 
 This master planning scenario involves the following conditions:
 
--   The site dimension is set to mandatory and must be entered on the demand transaction. This setting can't be modified.
+-   The site dimension is set to mandatory and must be entered on the demand transaction. This setting can't be modified.
 -   The warehouse dimension is not set to mandatory. The warehouse may be known, but it is not used in the master planning calculation.
 -   The site and warehouse dimensions are set for coverage planning. Other dimensions may be set for coverage planning also. However, they are not affected by the multisite functionality.
 
@@ -51,12 +50,12 @@ The following graphic illustrates how master planning proceeds. The parameters t
 
 ![Demand for site and warehouse, warehouse not](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousenotmandatory.jpg)
 
- 
+
 -
 
 
 
-See also
+Additional resources
 --------
 
 [Master planning and multisite functionality](master-plan-multisite-functionality.md)

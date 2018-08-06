@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Develop an entity for data migration
+title: Develop entities for data migration
 description: This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.
 author: Sunil-Garg
 manager: AnnBe
@@ -30,20 +30,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Develop an entity for data migration
+# Develop entities for data migration
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.
 
-This tutorial is broken out into two sections and four exercises. In the first section, you will build a **Project Category** entity in Visual Studio. You will then use this entity to export data. In the second section, you will use **Customer Groups** and **Customers** entities to import multiple sets of files by using the new Data Import/Export Framework. **Note:** This tutorial is designed to be slightly more challenging than [Building and consuming data entities](build-consuming-data-entities.md). Instead of providing a step-by-step guide, it has scenario exercises and describes the expected outcomes. The assumption is that you've already familiarized yourself with entities and the Data Import/Export Framework through Microsoft Office Mix videos.
+This tutorial is broken out into two sections and four exercises. In the first section, you will build a **Project Category** entity in Visual Studio. You will then use this entity to export data. In the second section, you will use **Customer Groups** and **Customers** entities to import multiple sets of files by using the new Data Import/Export Framework. **Note:** This tutorial is designed to be slightly more challenging than [Building and consuming data entities](build-consuming-data-entities.md). Instead of providing a step-by-step guide, it has scenario exercises and describes the expected outcomes. The assumption is that you've already familiarized yourself with entities.
 
 ## Prerequisites
 This tutorial requires that you access the environment by using Remote Desktop. You must be provisioned as an administrator on the instance.
 
 ## Base URL
-Throughout this tutorial, "base URL" refers to the base URL of the  instance.
+Throughout this tutorial, "base URL" refers to the base URL of the  instance.
 
 -   In the cloud environment, you obtain the base URL from Microsoft Dynamics Lifecycle Services (LCS).
 -   On a local virtual machine (VM), the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com.
@@ -55,7 +54,7 @@ You're developing a new solution for a Project module. As part of your implement
 
 ### Exercise 1: Build a Project Category entity
 
-In this exercise, you will build an entity, **Project Category**, that uses the ProjCategory table as its primary data source. This entity has the following properties.
+In this exercise, you will build an entity, **Project Category**, that uses the ProjCategory table as its primary data source. This entity has the following properties.
 
 
 | Property               | Value                 |
@@ -87,7 +86,7 @@ The entity also has the following fields.
 
 #### Steps
 
-1.  In Visual Studio, create a new Microsoft Dynamics 365 for Finance and Operations project.
+1.  In Visual Studio, create a new Microsoft Dynamics 365 for Finance and Operations project.
 2.  In Solution Explorer, select the project, and then right-click **Properties**.
 3.  Specify the following project properties, and then click **OK**.
 
@@ -113,25 +112,25 @@ The entity also has the following fields.
 -   In Visual Studio, the following artifacts will appear in the project after you've completed the **Data Entity** wizard. 
 [![New project artifacts](./media/testappsuite_devoentity.png)](./media/testappsuite_devoentity.png)
 
--   Right-click the data entity, and then select **Open table browser**. **Note:** Make sure that your company is set to **USSI**.
+-   Right-click the data entity, and then select **Open table browser**. **Note:** Make sure that your company is set to **USSI**.
 
 ### Exercise 2: Export a limited set of data by using a sample file mapping and filters
 
-In this exercise, you will use the **Project Category** entity that you just built to export data. To export only a subset of the data, you will use a sample file mapping and filters. The exported data will be in XML format.
+In this exercise, you will use the **Project Category** entity that you just built to export data. To export only a subset of the data, you will use a sample file mapping and filters. The exported data will be in XML format.
 
 #### Steps
 
-1.  After you've finished building the **Project Category** entity, start the client.
+1.  After you've finished building the **Project Category** entity, start the client.
 2.  Change the company to **USSI**.
 3.  In the **Data management** workspace, click **Export** to begin data extraction.
 4.  Enter the export details, such as entity name and target data format.
 
 [![Entering export details](./media/exportprojectcategory_devoentity.png)](./media/exportprojectcategory_devoentity.png) 
 
-Use the following file as the sample file format for XML: 
+Use the following file as the sample file format for XML: 
 [ProjectCategoryExport\_Sample](https://go.microsoft.com/fwlink/?linkid=845209). 
 
-Open this file in a text editor, and save it as an XML file. If the sample file mapping isn't valid, there is an incorrect field name in the entity. Fix either the entity or the sample file to continue.
+Open this file in a text editor, and save it as an XML file. If the sample file mapping isn't valid, there is an incorrect field name in the entity. Fix either the entity or the sample file to continue.
 
 5.  Click **Filter**, and then specify **Project** as the filter criterion, so that only limited data is exported. 
 [![Filtering by project](./media/inquiry_devoentity.png)](./media/inquiry_devoentity.png)
@@ -148,11 +147,11 @@ Open this file in a text editor, and save it as an XML file. If the sample file 
 ## Migrating data in multiple files by using the Data Import/Export Framework
 ### Business problem
 
-You're implementing a new environment. As part of this implementation, you want to migrate some legacy customer data. The data is contained in two sets of files, each of which has data for the **Customers** and **Customer Groups** entities. This migration is slightly complex, because some columns in the data files don't map directly to the entities. Additionally, the files have validation errors that must be corrected during the import process.
+You're implementing a new environment. As part of this implementation, you want to migrate some legacy customer data. The data is contained in two sets of files, each of which has data for the **Customers** and **Customer Groups** entities. This migration is slightly complex, because some columns in the data files don't map directly to the entities. Additionally, the files have validation errors that must be corrected during the import process.
 
 ### Exercise 3: Create a data project and import multiple files
 
-In this exercise, you will import two files into the **USRT** company by using the new Data Import/Export Framework. These files need to be imported in sequence by using a single data project. The **Customers** entity has a reference to the **Customer Groups** entity. Because the Customers1 file doesn't map correctly to the **Customers** entity, you will receive an error when you upload the file. Therefore, to complete the import process, you will have to provide the correct column mappings for the **Customers** entity.
+In this exercise, you will import two files into the **USRT** company by using the new Data Import/Export Framework. These files need to be imported in sequence by using a single data project. The **Customers** entity has a reference to the **Customer Groups** entity. Because the Customers1 file doesn't map correctly to the **Customers** entity, you will receive an error when you upload the file. Therefore, to complete the import process, you will have to provide the correct column mappings for the **Customers** entity.
 
 #### Steps
 
@@ -171,7 +170,7 @@ In this exercise, you will import two files into the **USRT** company by using t
 
 #### Expected outcome
 
-Four updates and 23 inserts are successfully imported and the **Execution summary** page shows the results.
+Four updates and 23 inserts are successfully imported and the **Execution summary** page shows the results.
 
 ### Exercise 4: Re-import by using an existing data project and manage data in staging
 
@@ -200,8 +199,8 @@ In this exercise, you will use a new set of files to import data through the exi
 #### Expected outcome
 
 -   On the first try, the import succeeds for the **Customer Groups** entity and partially succeeds for the **Customers** entity.
--   The **Execution summary** page shows that five records were created, three records were updated, and two records have errors.
--   In the staging view, two records have errors.
+-   The **Execution summary** page shows that five records were created, three records were updated, and two records have errors.
+-   In the staging view, two records have errors.
 -   After you fix the records and run the import again, the staging view shows that all records are completed.
 
 

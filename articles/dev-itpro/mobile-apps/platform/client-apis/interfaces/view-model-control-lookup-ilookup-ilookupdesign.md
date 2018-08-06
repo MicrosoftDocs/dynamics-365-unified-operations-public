@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: LookupDesign
+title: LookupDesign type
 description: Lookup design object type.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# LookupDesign Type
+# LookupDesign type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Lookup design object type.
 

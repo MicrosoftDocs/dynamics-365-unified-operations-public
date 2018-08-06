@@ -1,5 +1,5 @@
 ---
-title: Use activity diagrams with BPM
+title: Work with activity diagrams in Business process modeler libraries
 description: This topic provides information about how you can use activity diagrams in a BPM library.
 author: kfend
 manager: AnnBe
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Use activity diagrams with BPM
+# Work with activity diagrams in Business process modeler libraries
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can associate an activity diagram with a business process. Activity diagrams are used to describe how a business process or task is completed in a proposed software solution.
 

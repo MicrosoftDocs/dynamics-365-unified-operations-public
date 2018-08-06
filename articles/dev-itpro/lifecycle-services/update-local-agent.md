@@ -5,7 +5,7 @@ title: Update the local agent
 description: This topic explains how to update the local agent.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 ---
 # Update the local agent
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to update the local agent. The latest version of the local agent is version 2.0.0, which was released in March 2018.
 
@@ -41,6 +41,10 @@ This topic explains how to update the local agent. The latest version of the loc
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. |
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md)  for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
 | 2.0.0               | This version enables servicing flows and deploys Platform update 12. |
+| 2.1.0               | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. |
+
+## What's new in local agent 2.1.0?
+- Local agent 2.1.0 enables the two-phased servicing where **Environment preparation** and **Environment update** are two distinct steps and explicit actions. This reduces the total downtime customers must take when applying updates to their on-premises environments by preparing upfront and allowing users to use the environment during preparation and then communicating the downtime when the actual update environment action is triggered.
 
 ## What's new in local agent 2.0.0?
 - Local agent 2.0.0 can deploy Platform update 12.

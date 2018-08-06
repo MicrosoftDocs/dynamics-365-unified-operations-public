@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Set up, import, and verify NF-e XML documents and DANFE
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can automatically extract and import the XML from the Nota Fiscal Eletrônica (NF-e) and its DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) from emails sent by the vendor for your company. The vendor must send these emails as file attachements during the time which the acquired goods are in transit.
 
@@ -58,11 +58,11 @@ The imported XML and DANFE files can be viewed on the **Received NF-e XML docume
 > [!NOTE] 
 > The name of the issuer of the Nota Fiscal Eletrônica (NF-e) is left blank when the tax registration ID (CNPJ) cannot be found as an attribute of a vendor in the **All vendors** page.
 
- - For a selected Nota Fiscal Eletrônica (NF-e), click **XML document** to view the XML document.
- - For a selected Nota Fiscal Eletrônica (NF-e), click **DANFE** to view the Documento Auxiliar da Nota Fiscal Eletrônica (DANFE).
- - For a selected Nota Fiscal Eletrônica (NF-e), click **Inquire status** to inquire on the status of the NF-e at the SEFAZ using the access key.
-> [!NOTE] 
-> The status, date, and time of the inquiry are updated in the Status from SEFAZ and Date and time from the last inquiry.
+- For a selected Nota Fiscal Eletrônica (NF-e), click **XML document** to view the XML document.
+- For a selected Nota Fiscal Eletrônica (NF-e), click **DANFE** to view the Documento Auxiliar da Nota Fiscal Eletrônica (DANFE).
+- For a selected Nota Fiscal Eletrônica (NF-e), click **Inquire status** to inquire on the status of the NF-e at the SEFAZ using the access key.
+  > [!NOTE] 
+  > The status, date, and time of the inquiry are updated in the Status from SEFAZ and Date and time from the last inquiry.
 
 ## Inquire about the status of NF-e access keys at the SEFAZ
 1. On the **Inquire about NF-e access key status** page, in the **Limit of cancellation** field, enter the number of hours that the vendor has to cancel the NF-e.

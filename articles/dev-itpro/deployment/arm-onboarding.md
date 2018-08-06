@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Azure Resource Manager onboarding
+title: Complete the Azure Resource Manager (ARM) onboarding process
 description: This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors. 
 author: sarvanisathish
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Azure Resource Manager onboarding
+# Complete the Azure Resource Manager (ARM) onboarding process
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors. 
 
@@ -71,7 +70,7 @@ The administrator of the tenant must complete the following procedure.
 
 Follow these steps to assign the **Contributor** role to the **Dynamics Deployment Services \[wsfed-enabled\]** application.
 
-1.  In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then click the **Access Control (IAM)** line item.
+1.  In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then click the **Access Control (IAM)** line item.
 2.  Click **Add**, select **Contributor**, and then click **OK**. **Note:** Some Azure subscriptions have a **Users** section instead of an **Access control (IAM)** section. In this case, in the **Add users** dialog box, in the **Select** field, enter **Dynamics Deployment Services \[wsfed-enabled\]**, and then click **Select**.
 3.  On the **Add access** page, click **OK**. The **Users** page opens, and you can see that the user is assigned as a **Contributor**. **Note:** If Dynamics Deployment Services \[wsfed-enabled\] doesn't appear, the Authorize process hasn't been completed, or it was completed on another Azure subscription. [![Dynamics Deployment Services \[wsfed-enabled\]](./media/arm_redo_01-1024x407.png)](./media/arm_redo_01.png)
 
@@ -87,24 +86,24 @@ Follow these steps to enable the Azure Connector and, as required, add an LCS us
 2.  On the **Project settings** page, on the **Azure connectors** tab, under **Azure connectors**, click **Add**. **Note:** If you're enabling ARM for an existing connector, click **Edit**.
 3.  Enter the connector name, enter the Azure subscription ID to deploy to, and set the **Configure to use Azure Resource manager** option to **Yes**.
 4.  In the **Azure subscription AAD Tenant domain** field, enter the domain name of the Azure subscription account admin, and then click **Next**.
-5.  Authorize access to the subscription, either by adding the LCS user to the Azure subscription or by using the Management certificate. **Important:** If you're adding an LCS user, continue with step 6. If you must upload a Management certificate, don't complete steps 6 through 8 of this procedure. Instead, complete the next procedure, "Upload the Management certificate."
-6.  In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then click the **Access Control (IAM)** line item.
+5.  Authorize access to the subscription, either by adding the LCS user to the Azure subscription or by using the Management certificate. **Important:** If you're adding an LCS user, continue with step 6. If you must upload a Management certificate, don't complete steps 6 through 8 of this procedure. Instead, complete the next procedure, "Upload the Management certificate."
+6.  In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then click the **Access Control (IAM)** line item.
 7.  In the **Access Control (IAM)** dialog box, click **Add**, select **Contributor**, and then click **OK**.
 8.  In the **Add users** dialog box, in the **Select** field, enter the LCS user, and then press Enter. **Note:** You must specifically enter a user. You can't just add a group that the user is a member of. When the **Users** page opens, you can see that the user is assigned as a **Contributor**.
 
 #### Upload the Management certificate
 
-Complete this procedure only if you didn't complete steps 6 through 8 of the previous procedure, "Enable the Azure Connector and add an LCS user."
+Complete this procedure only if you didn't complete steps 6 through 8 of the previous procedure, "Enable the Azure Connector and add an LCS user."
 
 1.  In LCS, on the **Microsoft Azure setup** page, click **Download**. Make a note of the location of the certificate file that is downloaded. You will use this information to upload the certificate to the Azure subscription.
 2.  In the [Azure classic portal](https://manage.windowsazure.com/), in the left pane, click **Settings**.
 3.  Filter to the Azure subscription that is used, and then, on the **Management certificates** tab, click **Upload**.
-4.  Select the Management certificate that you downloaded in step 1, and then click **OK**.
+4.  Select the Management certificate that you downloaded in step 1, and then click **OK**.
 
 #### Configure deployment settings
 
 1.  In LCS, on the **Project** page, in the **Environments** section, click **Microsoft Azure settings**.
-2.  On the **Microsoft Azure setup** page, select the region to deploy to, and then click **Connect**. The ARM onboarding flow is now completed. You should now see that the subscription has been added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
+2.  On the **Microsoft Azure setup** page, select the region to deploy to, and then click **Connect**. The ARM onboarding flow is now completed. You should now see that the subscription has been added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
 
 
 

@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Change a label
+title: Change labels by using label extension files
 description: This topic explains how you can create label extension files to modify the string value of a label, add new labels to the same label file, or add new languages.
 author: smithanataraj
 manager: AnnBe
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Change a label
+# Change labels by using label extension files
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can create label extension files to modify the string value of a label, add new labels to the same label file, or add new languages. The name of a label extension file must consist of the name of the label file plus the **\_extension** suffix. 
 

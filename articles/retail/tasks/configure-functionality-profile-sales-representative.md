@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Configure the functionality profile for a sales representative
+title: Configure functionality profiles for sales representatives
 description: This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives. 
 author: jblucher
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Configure the functionality profile for a sales representative
+# Configure functionality profiles for sales representatives
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives. This procedures uses the USRT demo data company.
 

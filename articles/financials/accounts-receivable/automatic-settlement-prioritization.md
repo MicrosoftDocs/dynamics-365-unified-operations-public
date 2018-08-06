@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Automatic settlement and prioritization
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
 
-You have two options when you settle payments with invoices and other transactions. You can manually select the transactions to settle, or Microsoft Dynamics 365 for Finance and Operations can select the transactions automatically by using the automatic settlement functionality. You can also customize how automatic settlements are processed by using the **Prioritize settlement** option. All these options are part of the settlement parameters that are defined on the **Accounts receivable parameters** page. The way that transactions are automatically settled can differ, depending on the method that you use for automatic settlement. The following methods are available:
+You have two options when you settle payments with invoices and other transactions. You can manually select the transactions to settle, or Microsoft Dynamics 365 for Finance and Operations can select the transactions automatically by using the automatic settlement functionality. You can also customize how automatic settlements are processed by using the **Prioritize settlement** option. All these options are part of the settlement parameters that are defined on the **Accounts receivable parameters** page. The way that transactions are automatically settled can differ, depending on the method that you use for automatic settlement. The following methods are available:
 
 -   User-defined settlement priority
 -   Default automatic settlement
@@ -66,7 +65,7 @@ If you set **Use priority for automatic settlements** to **Yes** on the **Accoun
 2.  Transaction date, Ascending
 3.  Voucher
 
-If you post a payment for 700.00 on October 25, the payment is settled to the transactions in the following order.
+If you post a payment for 700.00 on October 25, the payment is settled to the transactions in the following order.
 
 | Voucher       | Date       | Invoice | Amount in transaction currency | Amount to settle | Balance | Currency |
 |---------------|------------|---------|--------------------------------|------------------|---------|----------|

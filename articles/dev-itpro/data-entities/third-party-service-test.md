@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use third-party service testing utilities with Finance and Operations
+title: Test services by using third-party utilities
 description: This topic describes how to set up third-party utilities to test services for Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Use third-party service testing utilities with Microsoft Dynamics 365 for Finance and Operations
+# Test services by using third-party utilities
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 At <https://github.com/Microsoft/Dynamics-AX-Integration>, Microsoft provides sample code for consuming services for Microsoft Dynamics 365 for Finance and Operations. However, there are many scenarios where the other endpoint in an integration might not use a Microsoft stack. Even when the other endpoint does use, for example, the Open Data Protocol (OData) client code that Microsoft makes available, you might find it useful to perform the following actions:
 
@@ -79,7 +79,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool  that is often used to 
 9. On the **Body** tab, add body elements as request parameters that refer to the environment variables that you created earlier. Select **Bulk Edit**, enter the keys from the previous table, enter a colon (:), and then enter the key name again but enclose it in double braces ({{}}). Enter one request parameter per line. For example, enter **grant\_type:{{grant\_type}}**. Here is an example.
 
     ![Body elements](./media/postman8.png)
- 
+
 10. On the **Tests** tab, create a test that validates that the response is reasonable, and that stores the returned authorization token in an environment variable. Here is an example.
 
     ```
@@ -127,38 +127,40 @@ SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with
 1. Start SoapUI, and select the **SOAP** button to create a project.
 2. Complete the information for the project:
 
-    - In the **Project Name** field, enter a name for the project.
-    - In the **Initial WSDL** field, enter the service address, and add the suffix **?wsdl**. (The service address should be in the format \[Finance and Operations instance base URL\]/soap/services/\[service group name\].) For more information, see the [Services home page](services-home-page.md).
+   - In the **Project Name** field, enter a name for the project.
+   - In the **Initial WSDL** field, enter the service address, and add the suffix **?wsdl**. (The service address should be in the format \[Finance and Operations instance base URL\]/soap/services/\[service group name\].) For more information, see the [Services home page](services-home-page.md).
 
-        For example, we are querying the user session service at the URL `https://[Finance and Operations base URL]/soap/services/UserSessionService?wsdl`.
+       For example, we are querying the user session service at the URL `https://[Finance and Operations base URL]/soap/services/UserSessionService?wsdl`.
 
-    - Select the **Create sample requests for all operations?** check box.
+   - Select the **Create sample requests for all operations?** check box.
 
-    Because you selected to create sample requests, one sample request is created for each service operation that is available.
+     Because you selected to create sample requests, one sample request is created for each service operation that is available.
 
-    ![Sample requests](./media/soapui3.png)
+     ![Sample requests](./media/soapui3.png)
 
-4. Right-click the new project, and then select **New TestSuite** to create a test suite. This test suite will generate a POST request for an Azure AD authorization token.
-5. Right-click the test suite, and then select **New TestCase**.
-6. Expand the test case, right-click **Test Steps**, select **Add Step**, and then select **HTTP Request**.
-7. Enter a name for the request, and then select **OK**.
-8. Enter a name for the test step. The endpoint that you should use for the POST request is `[https://login.microsoftonline.com/[tenant_id]/oauth2/token](https://login.microsoftonline.com/%5btenant_id%5d/oauth2/token)`.
-9. Use the plus sign (**+**) button next to **Parameters** to add the following values.
+3. Right-click the new project, and then select **New TestSuite** to create a test suite. This test suite will generate a POST request for an Azure AD authorization token.
+4. Right-click the test suite, and then select **New TestCase**.
+5. Expand the test case, right-click **Test Steps**, select **Add Step**, and then select **HTTP Request**.
+6. Enter a name for the request, and then select **OK**.
+7. Enter a name for the test step. The endpoint that you should use for the POST request is `[https://login.microsoftonline.com/[tenant_id]/oauth2/token](https://login.microsoftonline.com/%5btenant_id%5d/oauth2/token)`.
+8. Use the plus sign (**+**) button next to **Parameters** to add the following values.
 
-    | Parameter     | Value                                                           |
-    |---------------|-----------------------------------------------------------------|
-    | grant\_type    | client\_credentials                                              |
-    | client\_id     | The application ID from the Azure AD application registration   |
-    | client\_secret | The secret key value from the Azure AD application registration |
-    | resource      | The URL of the Finance and Operations instance                  |
 
-10. To make sure that the parameters are in the POST body, select **Post QueryString**, and then select **Play**. An access token should be returned in the response pane. The values will be most readable if you use the **JSON response** tab. Copy the access token so that you can use it in the authorization header of subsequent requests.
-11. Go back to the first request node under the **GetUserSessionInfo** SOAP sample request. In the request pane on the left, select the plus sign (**+**) button to add a header that is named **Authorization**. Paste the access token into the **Value** field, and add the prefix **Bearer**.
-12. The sample requests that SoapUI creates won't work unless you modify them. You must edit the call context and body so that they are consistent with the schema for what you're trying to do.
+   |   Parameter    |                              Value                              |
+   |----------------|-----------------------------------------------------------------|
+   |  grant\_type   |                       client\_credentials                       |
+   |   client\_id   |  The application ID from the Azure AD application registration  |
+   | client\_secret | The secret key value from the Azure AD application registration |
+   |    resource    |         The URL of the Finance and Operations instance          |
+
+
+9. To make sure that the parameters are in the POST body, select **Post QueryString**, and then select **Play**. An access token should be returned in the response pane. The values will be most readable if you use the **JSON response** tab. Copy the access token so that you can use it in the authorization header of subsequent requests.
+10. Go back to the first request node under the **GetUserSessionInfo** SOAP sample request. In the request pane on the left, select the plus sign (**+**) button to add a header that is named **Authorization**. Paste the access token into the **Value** field, and add the prefix **Bearer**.
+11. The sample requests that SoapUI creates won't work unless you modify them. You must edit the call context and body so that they are consistent with the schema for what you're trying to do.
 
     For our simple scenario, you can edit the optional call context elements so that they are null-valued. Insert a forward slash (/) before the greater than sign (&gt;) in the opening tags. Then comment out the question marks (?) and the closing tags by using the standard &lt;!--...--&gt; syntax to delimit the start and end of the comments. (Question marks aren't valid content for the XML schema.) Alternatively, you can just delete the question marks (?) so that the context elements are empty.
 
-13. The SOAP request is now ready. Select **Play**, and validate the result on the right.
+12. The SOAP request is now ready. Select **Play**, and validate the result on the right.
 
     ![Validate the results](./media/soapui8.png)
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up a work template for purchase orders
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure focuses on the set up of a simple work template to be used when putting away received items. Work templates determine the set of instructions presented to the warehouse worker on a mobile device when moving items from the receiving area. You can use this procedure with the data mentioned in demo data company USMF. Before you start this guide, create a work pool ID. In this example, a work pool ID called in Inbound is used. This procedure is intended for the warehouse manager.
 

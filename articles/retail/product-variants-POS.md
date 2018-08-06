@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Inventory lookup in the Point of Sale
+title: Inventory lookup in the point of sale (POS)
 description: This topic describes the options that are available for viewing inventory information in the point of sale (POS). 
 author: ashishmsft
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Application update 5, AX 8.0
 
 ---
 
-# Inventory lookup in the Point of Sale 
+# Inventory lookup in the point of sale (POS)
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Inventory lookup in the point of sale (POS) helps retailers achieve real-time operational excellence and gain insights by connecting stores, the POS, and the back office. This functionality provides an accurate real-time view of product inventory across stores and distribution centers. It also helps retailers drive additional efficiencies and cost savings by improving inventory planning in real time.
 
@@ -100,7 +100,7 @@ You can also change the pivot for dimensions by selecting the new dimension to u
 > In the preceding illustrations, the display order of the dimensions for the selected product is custom (non-alphabetic). It's based on the dimension display order that is set in the back office.
 
 Additionally, in the **Dimension based matrix** view, more actions can be performed to help boost a store associate's productivity. Here are some examples:
- 
+
 - Change the store location to look up the inventory availability of all product variants at other locations. These locations include other stores in the store locator group and distribution centers of the **Standard** default type.
 - Sell an individual product variant to a customer by using cash and carry, in-store pickup, or shipment to an address.
 - Provide the customer with ATP information for an individual product variant at a specific location.
@@ -112,11 +112,13 @@ Additionally, in the **Dimension based matrix** view, more actions can be perfor
 
 The following table provides more information about the additional actions that are available.
 
-| Action               | Description |
-|----------------------|-------------|
-| Sell now             | Add the selected item variant to the transaction, and redirect the user to the transaction screen. (This action isn't available when the selected location is a distribution center.) |
-| Pick up in store     | Create a customer order for the product variant that will be picked up from the selected location, and redirect the user to the transaction screen. (This action isn't available when the selected location is a distribution center.) |
-| Ship product         | Create a customer order for the product variant that will be shipped from the selected location, and redirect the user to the transaction screen. |
-| Availability         | Show the ATP information for the selected variant combination for the selected location. |
-| Show all locations   | Switch to the standard inventory lookup view, and highlight inventory availability information for the item variant across all stores in the store locator group, and also in distribution centers of the **Standard/Default** type. |
-| View product details | Redirect the user to the **Product details** page of the associated product master. |
+
+|        Action        |                                                                                                                    Description                                                                                                                    |
+|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|       Sell now       |                               Add the selected item variant to the transaction, and redirect the user to the transaction screen. (This action isn't available when the selected location is a distribution center.)                               |
+|   Pick up in store   |      Create a customer order for the product variant that will be picked up from the selected location, and redirect the user to the transaction screen. (This action isn't available when the selected location is a distribution center.)       |
+|     Ship product     |                                                 Create a customer order for the product variant that will be shipped from the selected location, and redirect the user to the transaction screen.                                                 |
+|     Availability     |                                                                             Show the ATP information for the selected variant combination for the selected location.                                                                              |
+|  Show all locations  | Switch to the standard inventory lookup view, and highlight inventory availability information for the item variant across all stores in the store locator group, and also in distribution centers of the <strong>Standard/Default</strong> type. |
+| View product details |                                                                         Redirect the user to the <strong>Product details</strong> page of the associated product master.                                                                          |
+

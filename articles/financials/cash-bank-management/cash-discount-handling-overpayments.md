@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Handling cash discounts for overpayments
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
 
@@ -43,8 +42,8 @@ An invoice is considered overpaid when the payment amount is more than the invoi
 |---------------|-------------------------|-----------------------------------------------------|-----------------------------------|
 | 105.00        | 10.50                   | 94.50                                               | 95.00                             |
 
-## Cash discount administration = Specific
-When **Specific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the full cash discount is taken. The overpayment amount either is posted to a cash discount difference ledger account or remains a balance on the customer’s account. The behavior depends on whether the overpayment amount is between 0.00 and the amount that is entered in the **Maximum overpayment or underpayment** field, or whether the overpayment amount is more than the **Maximum overpayment or underpayment** amount.
+## Cash discount administration = Specific
+When **Specific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the full cash discount is taken. The overpayment amount either is posted to a cash discount difference ledger account or remains a balance on the customer’s account. The behavior depends on whether the overpayment amount is between 0.00 and the amount that is entered in the **Maximum overpayment or underpayment** field, or whether the overpayment amount is more than the **Maximum overpayment or underpayment** amount.
 
 ### Scenario 1
 
@@ -54,7 +53,7 @@ In this scenario, the overpayment amount is between 0.00 and the maximum overpay
 |---------------|-------------------------|-----------------------------------------------------|
 | 105.00        | 10.50                   | 94.50                                               |
 
-The customer submits a payment for 95.00 within the cash discount period. The payment is settled against the invoice for 105.00. After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.
+The customer submits a payment for 95.00 within the cash discount period. The payment is settled against the invoice for 105.00. After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.
 
 | Transaction   | Amount | Balance |
 |---------------|--------|---------|
@@ -86,7 +85,7 @@ In this scenario, the overpayment amount exceeds the maximum overpayment or unde
 |---------------|-------------------------|-----------------------------------------------------|
 | 105.00        | 10.50                   | 94.50                                               |
 
-The customer submits a payment for 95.00 within the cash discount period. The payment is settled against the invoice for 105.00. After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.
+The customer submits a payment for 95.00 within the cash discount period. The payment is settled against the invoice for 105.00. After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.
 
 | Transaction   | Amount | Balance |
 |---------------|--------|---------|
@@ -108,8 +107,8 @@ The overpayment amount of 0.50 will remain as an open balance on the payment and
 | Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page) | 10.50        |               |
 | Accounts receivable                                                                              |              | 10.50         |
 
-## Cash discount administration = Unspecific
-When **Unspecific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the cash discount amount is reduced by the overpayment amount. This behavior always applies, regardless of whether the overpayment amount is over or under the amount that is entered in the **Maximum overpayment or underpayment** field.
+## Cash discount administration = Unspecific
+When **Unspecific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the cash discount amount is reduced by the overpayment amount. This behavior always applies, regardless of whether the overpayment amount is over or under the amount that is entered in the **Maximum overpayment or underpayment** field.
 
 ### Scenario 3
 
@@ -119,7 +118,7 @@ In this scenario, an invoice for 105.00 is entered, and a cash discount is avail
 |---------------|-------------------------|-----------------------------------------------------|
 | 105.00        | 10.50                   | 94.50                                               |
 
-The customer submits a payment for 95.00 within the cash discount date. The payment is settled against the invoice for 105.00. After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.
+The customer submits a payment for 95.00 within the cash discount date. The payment is settled against the invoice for 105.00. After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.
 
 | Transaction   | Amount | Balance |
 |---------------|--------|---------|

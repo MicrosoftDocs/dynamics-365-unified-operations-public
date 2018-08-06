@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.0. This version was released in April 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/03/2018
+ms.date: 06/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Release 8.0
 ---
 # What's new or changed in Dynamics 365 for Finance and Operations version 8.0 (April 2018)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). This version was released in April 2018 and has a build number of 8.0.30.8020.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). This version was released in April 2018 and has build numbers 8.0.30 and 8.0.35.
 
 To discover the latest updates to our business applications, as well as a host of new capabilities for building your own applications and extensions on top of our platform, download the [Dynamics 365 Spring ’18 release notes](https://aka.ms/businessappsreleasenotes). The Release Notes provide details about the features that are either new or changed in Dynamics 365 for Finance and Operations.
 
@@ -81,8 +81,13 @@ Data can be shared across customer and vendor tables and many related tables
 across multiple legal entities.
 
 ### One voucher deprecation
+The existing functionality for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions in the context of a single voucher. This functionality is referred to as “One voucher.” The One voucher functionality causes issues during settlement, tax calculation, reconciliation of a subledger to the general ledger, financial reporting, and more. Because of these issues, the One voucher functionality will be made obsolete. However, because there are functional gaps that depend on this functionality, the functionality won't become obsolete all at once. Instead, we will use the following schedule:
+-   **Spring '18 release** – The functionality will be turned off by default, through a General ledger parameter. However, you can turn the functionality on if your organization has a scenario that falls in the business scenario gaps that are listed in the One voucher documentation.
+    -  If a customer has a business scenario that doesn't require One voucher, don't turn the functionality on. We won't fix “bugs” in the areas that are identified in the One voucher documentation if this functionality is used.
+    - Stop using One voucher for integrations into Microsoft Dynamics 365 Finance and Operations, unless the functionality is required for one of the functional gaps.
+-   **Fall '18 and later releases** – The functional gaps will be filled. After the functional gaps are filled, the One voucher functionality will be permanently turned off.
 
-One voucher is turned off by default, through a General ledger parameter.
+See the [One voucher documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/one-voucher) for detailed information about the use and deprecation of this functionality.
 
 ## Extensibility and customization 
 
@@ -96,12 +101,6 @@ moving away from over-layering to the use of extensions.
 Customers can submit a request to Microsoft for extension support to be added to
 the product for a needed scenario. In this release, this feature is moved to
 Lifecycle Services (LCS).
-
-### Extensible project work breakdown structure
-
-Enables customization of the project work breakdown structure using extensions.
-This replaces the hierarchical grid control used for the project work breakdown
-structure with a standard grid that supports hierarchical data.
 
 ### Embedding PowerApps in workspaces and forms
 

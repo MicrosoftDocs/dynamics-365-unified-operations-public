@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage warehouse workers
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes how you can use Microsoft Dynamics 365 for Finance and Operations to help control and monitor the work that's carried out by employees in your warehouses.
 
@@ -44,7 +43,7 @@ To create a new work user, on the **Workers** page, on the **General** tab, in t
 As part of the setup for each work user, you can also define specific process workflows. For example, you can use the **Is a cycle count supervisor** field to specify whether the user can process adjustments to cycle counting discrepancies during a counting operation, or whether these adjustments must first be reviewed by another person.
 
 ## Defining labor standards
-The **Labor standards** page lets you define the calculation methods that the system uses to calculate the estimated time that a particular type of work should require. This definition can be set on a generic level or on a specific level. For example, you can define the time that should be required in order to process a sales order pick per weight for a specific unit definition when a specific picking process is used. At the same time, you can record the time, based on another calculation method, for the put operation of the on-hand inventory that is picked. 
+The **Labor standards** page lets you define the calculation methods that the system uses to calculate the estimated time that a particular type of work should require. This definition can be set on a generic level or on a specific level. For example, you can define the time that should be required in order to process a sales order pick per weight for a specific unit definition when a specific picking process is used. At the same time, you can record the time, based on another calculation method, for the put operation of the on-hand inventory that is picked. 
 
 To enable the labor standards that you've defined, you must select the **Allow labor standards** option for each warehouse where labor standards will be used.
 

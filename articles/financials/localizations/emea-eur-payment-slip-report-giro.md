@@ -30,8 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Payment slip report for Europe
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about payment slip reports for Europe.
 
@@ -62,7 +61,7 @@ After you set up the payment slip attachment format for sales invoices, free tex
 
 1.  Click **Accounts receivable** &gt; **Common** &gt; **Customers** &gt; **All customers**.
 2.  Create a new customer, or select an existing customer.
-3.  On the **Invoice and delivery** FastTab, in the **On a customer invoice**, **On a free text invoice**, **On an interest note**, **On a collection letter**, **On a project invoice**, and **On an account statement** fields, select the format for payment slip attachments that will accompany documents of each type that are sent to the selected customer.
+3.  On the **Invoice and delivery** FastTab, in the **On a customer invoice**, **On a free text invoice**, **On an interest note**, **On a collection letter**, **On a project invoice**, and **On an account statement** fields, select the format for payment slip attachments that will accompany documents of each type that are sent to the selected customer.
 4.  Close the form to save your changes.
 
 

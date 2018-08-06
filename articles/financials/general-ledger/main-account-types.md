@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Main account types
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 The main account types determine how a main account is used in the chart of accounts.
 

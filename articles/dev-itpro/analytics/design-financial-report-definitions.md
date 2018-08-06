@@ -32,22 +32,21 @@ ms.dyn365.ops.version: Version 1611
 
 # Report definitions in financial report designer
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about report definitions. A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report. A report definition also provides options and settings that for customizing a report. 
 
-A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report. A report definition also provides options and settings that you can use to customize a report. After you define row definitions and column definitions, you must combine them in a report definition. At this point, you also define other aspects of the definitions, such as the detail level and report date. You can then save and generate a report. Financial reporting offers the following levels of detail:
+A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report. A report definition also provides options and settings that you can use to customize a report. After you define row definitions and column definitions, you must combine them in a report definition. At this point, you also define other aspects of the definitions, such as the detail level and report date. You can then save and generate a report. Financial reporting offers the following levels of detail:
 
 -   Financial
--   Financial and Account
+-   Financial and Account
 -   Financial, Account, and Transaction
 
 However, depending on how data is stored in the Microsoft Dynamics ERP system, transaction details might not be available in reports.
 
 ## Create a report definition
 1.  In Report Designer, on the **File** menu, click **New**, and then select **Report Definition**.
-2.  Specify the appropriate information on the **Report**, **Output and Distribution**, **Headers and Footers**, and **Settings** tabs.
+2.  Specify the appropriate information on the **Report**, **Output and Distribution**, **Headers and Footers**, and **Settings** tabs.
 
 ## Contents of a report definition
 The following table describes the tabs in a report definition and how the information is used.
@@ -93,7 +92,7 @@ The following table describes the tabs in a report definition and how the inform
 
 
 
-See also
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-intro.md)

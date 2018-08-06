@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Choose a data integration (import/export) strategy
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations.
 

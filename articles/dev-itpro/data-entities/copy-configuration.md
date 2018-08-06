@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Copy configuration data from one company or legal entity to another
+title: Copy configuration data between companies or legal entities
 description: This topic describes how to use a configuration data project and configuration data templates to move configuration data for a company or legal entity between instances of Microsoft Dynamics 365 for Finance and Operations.
 
 author: mikefalkner
@@ -29,9 +29,9 @@ ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
 
 ---
-# Copy configuration data from one company or legal entity to another
+# Copy configuration data between companies or legal entities
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 There are two options for copying configuration data in Microsoft Dynamics 365 for Finance and Operations:
 
@@ -213,12 +213,12 @@ To import a configuration, follow these steps.
 4. Set the operation type for the data project to **Import**, and set the project category to **Configuration**.
 5. Add the entities that represent the information that you want to copy. You can add entities by using several methods:
 
-    - **Add one entity** – Enter the first part of the name of the entity until it appears in the lookup.
-    - **Add multiple entities** – Enter any part of the entity name, use the lookup for the module, enter any part of the tag name, or use the lookup for the entity category to show a list of entities. Press Tab to move focus away from the **Lookup** field and activate the filter. In the grid, select the entities to add.
-    - **Add a file** – Browse to a file that contains a name that matches the name of an entity and a file name extension that matches the file name extension that is in your data sources, and the source data format will be set automatically. If you haven't set up the default file name extensions, you must select a source data format before you select the file.
-    - **Add a template** – Select from a list of templates that you've loaded in your instance.
+   - **Add one entity** – Enter the first part of the name of the entity until it appears in the lookup.
+   - **Add multiple entities** – Enter any part of the entity name, use the lookup for the module, enter any part of the tag name, or use the lookup for the entity category to show a list of entities. Press Tab to move focus away from the **Lookup** field and activate the filter. In the grid, select the entities to add.
+   - **Add a file** – Browse to a file that contains a name that matches the name of an entity and a file name extension that matches the file name extension that is in your data sources, and the source data format will be set automatically. If you haven't set up the default file name extensions, you must select a source data format before you select the file.
+   - **Add a template** – Select from a list of templates that you've loaded in your instance.
 
-    When you load a package, the **Import** page first reads the list of entities from the package. A progress indicator shows how much of the package has been read. After the list of entities is read, the **Import** page starts to load the data in the package. This process can take some time.
+     When you load a package, the **Import** page first reads the list of entities from the package. A progress indicator shows how much of the package has been read. After the list of entities is read, the **Import** page starts to load the data in the package. This process can take some time.
 
 6. Select **Remove entity** to remove any selected entities, as required.
 7. After you've completed the configuration, select **Import** to start the import. You can monitor the results on the **Execution details** page that appears.
@@ -243,26 +243,26 @@ To copy a configuration from one legal entity to another legal entity in the sam
 5. Select the legal entity that should be the source of the data to copy. By default, the legal entity that you're currently using is selected.
 6. On the **Legal entities** FastTab, you can select existing legal entities as a destination, or you can create new legal entities:
 
-    - **Select** – Select one or more legal entities in the list, and then select **Add selected**. The legal entities are added to the list of destination legal entities.
-    - **Create** – Enter the legal entity ID, the legal entity name, and the region that the legal entity belongs in. Then select **Create legal entity**. The legal entity is created and added to the list of destination legal entities.
+   - **Select** – Select one or more legal entities in the list, and then select **Add selected**. The legal entities are added to the list of destination legal entities.
+   - **Create** – Enter the legal entity ID, the legal entity name, and the region that the legal entity belongs in. Then select **Create legal entity**. The legal entity is created and added to the list of destination legal entities.
 
-    > [!NOTE]
-    > The functionality for creating destination legal entities is available in Finance and Operations 7.2.3.
+     > [!NOTE]
+     > The functionality for creating destination legal entities is available in Finance and Operations 7.2.3.
 
 7. After you've added the destination legal entities, select **Yes** if the number sequences should be copied. The entities that are required in order to copy the number sequence codes and number sequence references will be added to the project. The execution unit, level, and sequence number for these entities are set to the numbers in the default System and Shared templates. If you aren't using the default templates, adjust the entity sequences so that they are first in the list.
 8. If you selected **Yes** for number sequences, select **Yes** or **No** to specify whether those number sequences should be reset to the smallest value.
 9. Add the entities that represent the information that you want to copy. You can add entities by using several methods:
 
-    - **Add one entity** – Enter the first part of the name of the entity until it appears in the lookup.
-    - **Add multiple entities** – Enter any part of the entity name, use the lookup for the module, enter any part of the tag name, or use the lookup for the entity category to show a list of entities. Press Tab to move focus away from the **Lookup** field and activate the filter. In the grid, select the entities to add.
-    - **Add a file** – Browse to a file that contains a name that matches the name of an entity and a file name extension that matches the file name extension that is in your data sources.
-    - **Add a template** – Select from a list of templates that you've loaded in your instance.
+   - **Add one entity** – Enter the first part of the name of the entity until it appears in the lookup.
+   - **Add multiple entities** – Enter any part of the entity name, use the lookup for the module, enter any part of the tag name, or use the lookup for the entity category to show a list of entities. Press Tab to move focus away from the **Lookup** field and activate the filter. In the grid, select the entities to add.
+   - **Add a file** – Browse to a file that contains a name that matches the name of an entity and a file name extension that matches the file name extension that is in your data sources.
+   - **Add a template** – Select from a list of templates that you've loaded in your instance.
 
-    To help guarantee that the correct order is maintained, we recommend that you use the default templates. Then add and remove entities to match the data that you want to copy. You can remove the entities that you don't want to copy.
+     To help guarantee that the correct order is maintained, we recommend that you use the default templates. Then add and remove entities to match the data that you want to copy. You can remove the entities that you don't want to copy.
 
-    > [!NOTE]
-    > - If an entity has a field that represents the legal entity, a filter will be applied to that entity, so that only the data for the source legal entity is included. The value for that field will be changed to the destination legal entity.
-    > - Document, transaction, and composite entities aren't available when you copy to a legal entity.
+     > [!NOTE]
+     > - If an entity has a field that represents the legal entity, a filter will be applied to that entity, so that only the data for the source legal entity is included. The value for that field will be changed to the destination legal entity.
+     > - Document, transaction, and composite entities aren't available when you copy to a legal entity.
 
 10. Select **Remove entity** to remove any selected entities, as required.
 11. After you've completed the configuration, select **Copy into legal entity** to start the import. The copy process will export the data from the source legal entity into the destination legal entity. Each destination legal entity will have its own import data project. You can monitor the results on the **Execution summary** page that appears. All import projects that are related to the Copy into legal entity project will appear in a list on the left of the page.

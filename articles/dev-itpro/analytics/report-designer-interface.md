@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Report Designer interface
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article explains how to navigate through Report Designer and how to use the various options to meet your specific requirements. 
 
@@ -195,7 +194,7 @@ The standard toolbar provides quick access to file and edit commands. This toolb
 | [![Demote button](./media/demotec130389.png)](./media/demotec130389.png)                     | Demote a unit of the reporting tree definition. When you select a unit and then click **Demote**, the unit becomes a child of the unit that precedes it.                               |
 | [![Expand button](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | Expand all units of the reporting tree definition at the level of the selected unit.                                                                                                   |
 | [![Collapse button](./media/collapsec130389.png)](./media/collapsec130389.png)               | Collapse the reporting tree.                                                                                                                                                           |
-| [![Help button](./media/helpc130389.png)](./media/helpc130389.png)                           | Open Help.                                                                                                                                                                             |
+| [![Help button](./media/helpc130389.png)](./media/helpc130389.png)                           | Open Help.                                                                                                                                                                             |
 
 ### Formatting toolbar
 
@@ -214,9 +213,9 @@ The formatting toolbar provides easy access to style commands. This toolbar incl
 | [![Background color button](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Change the background color of the current cell.        |
 | [![Font color button](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Change the color of the current text.                   |
 
-### Report designer toolbar
+### Report designer toolbar
 
-The report designer toolbar provides quick access to commands for navigating within report designer. This toolbar includes the following buttons.
+The report designer toolbar provides quick access to commands for navigating within report designer. This toolbar includes the following buttons.
 
 | Button                                                                                                                                                                                          | Description                                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -229,7 +228,7 @@ The report designer toolbar provides quick access to commands for navigating w
 
 
 
-See also
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-intro.md)

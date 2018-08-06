@@ -31,8 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Monthly average cost model for China
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Inventory costing is used to determine the cost or monetary value of warehoused inventory items.
 
@@ -54,7 +53,7 @@ In addition to the standard inventory costing methods, the monthly average cost 
 When you run a monthly inventory closing by using the monthly average cost model, all receipts for the month are settled against an issued transaction, which represents the total received quantity and value for that month. This issued transaction has a corresponding receipt transaction, from which all inventory transaction issues will be settled. In this manner, all issue are allocated the same average cost. The issued transaction and receipt transaction can be seen as a transfer, which is named the weighted average inventory closing transfer.
 
 > [!NOTE]
-> If only one receipt occurred in or before the month, you do not have to average the value. This is because all issue are settled from the receipt, and the transfer is not created. Likewise, if only one issue occurs in the month, there are no receipts from which to average the value, and the transfer is not created.
+> If only one receipt occurred in or before the month, you do not have to average the value. This is because all issue are settled from the receipt, and the transfer is not created. Likewise, if only one issue occurs in the month, there are no receipts from which to average the value, and the transfer is not created.
 
 
 The monthly average cost model is used to calculate the weighted average cost of an item at the end of the month. This average cost is used to adjust all issued transactions during the month, so that all output transactions for the month carry the same unit cost. For example, when an issued transaction is posted, its unit cost is calculated as the average cost at that time. Therefore, the unit costs for all issued transactions will be different. At the end of the month, when you run the monthly average cost adjustment, all unit costs that are generated during the month are adjusted to a uniform monthly average cost. The adjustment is based on the following formula:
@@ -63,6 +62,7 @@ The monthly average cost model is used to calculate the weighted average cost of
 
 
 Many Chinese manufacturing and trading companies use a monthly average cost model because it is a simple means of manually calculating inventory value. The following table compares the processes that are used to handle issue and receipt transactions in the manual monthly average cost model and the monthly average cost model that is available in Microsoft Dynamics 365 for Finance and Operations.
+
 | Manual monthly average cost model                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Monthly average cost model in Finance and Operations                                                                                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | The monthly average cost is calculated, including all receipt and issue transactions. If the receipt transactions have not been invoiced, the estimated physical price is considered. The calculated monthly average cost is used to settle all issued transactions for the month, whether they are invoiced or not. When the receipts are invoiced, if there are differences between the estimated physical price and the invoiced price, the difference is added to the current on-hand inventory value. No adjustment is made to the previously issued transactions. If the current inventory quantity is 0 (zero), the differences are adjusted in the expense account. | Only the monthly average cost from invoiced receipts is calculated, and only invoiced issue transactions are settled. Non-invoiced receipts and issue transactions are calculated and settled only when they are invoiced. |

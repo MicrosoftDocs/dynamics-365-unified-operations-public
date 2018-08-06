@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounts payable in the public sector
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article introduces you to the public sector Accounts payable functionality that is integrated with Microsoft Dynamics 365 for Finance and Operations. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project Accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
 
@@ -46,32 +45,32 @@ Before you begin to adjust the settings and enter your data, you should complete
 -   Set up numbering systems for vendors, purchase orders, and so on.
 -   Decide what purchase order (PO) codes and messages will be used.
 
-After you’ve set up the prerequisites,  you might have to set up the following Accounts payable features:
+After you’ve set up the prerequisites,  you might have to set up the following Accounts payable features:
 
--   [Purchase order codes in the public sector](purchase-order-codes-public-sector.md) –  You can create codes and special messages for confirming purchase orders. A confirming purchase order bypasses the typical purchasing process. For example, you authorize an unplanned order by using a purchase order number at the time of a purchase, instead of by using a document that is provided before the item is required. 
-> [!NOTE]
-> This also applies to Procurement and sourcing.
+- [Purchase order codes in the public sector](purchase-order-codes-public-sector.md) –  You can create codes and special messages for confirming purchase orders. A confirming purchase order bypasses the typical purchasing process. For example, you authorize an unplanned order by using a purchase order number at the time of a purchase, instead of by using a document that is provided before the item is required. 
+  > [!NOTE]
+  > This also applies to Procurement and sourcing.
 
--   [Posting definitions in the public sector](posting-definitions-public-sector.md) – You can use posting definitions to create subledger journal lines for originating transactions that meet selected criteria. For example, you can use positing definitions to generate multiple balanced ledger entries, based on attributes such as transaction types and accounts. 
-> [!NOTE]
-> This also applies to General ledger, Budgeting, and Accounts receivable.
+- [Posting definitions in the public sector](posting-definitions-public-sector.md) – You can use posting definitions to create subledger journal lines for originating transactions that meet selected criteria. For example, you can use positing definitions to generate multiple balanced ledger entries, based on attributes such as transaction types and accounts. 
+  > [!NOTE]
+  > This also applies to General ledger, Budgeting, and Accounts receivable.
 
 
--   [One-time vendors in the public sector](one-time-vendors-public-sector.md) – When approval or a contract in the form of a purchase order isn't required, you can quickly create one or more invoices at the same time that you create a record for the vendor. For more information, see [Planning for one-time vendors in the public sector](plan-one-time-vendors-public-sector.md).
--   1099 form overview in the public sector – If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information at the end of the calendar year. Public sector organizations use forms 1099-G and 1099-S.
+- [One-time vendors in the public sector](one-time-vendors-public-sector.md) – When approval or a contract in the form of a purchase order isn't required, you can quickly create one or more invoices at the same time that you create a record for the vendor. For more information, see [Planning for one-time vendors in the public sector](plan-one-time-vendors-public-sector.md).
+- 1099 form overview in the public sector – If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information at the end of the calendar year. Public sector organizations use forms 1099-G and 1099-S.
 
 > [!NOTE]
 > This also applies to Procurement and sourcing.
 
 ## Additional public sector functionality
-The remaining sections in this article describe the Accounts payable functionality that is available for the public sector.
+The remaining sections in this article describe the Accounts payable functionality that is available for the public sector.
 
--   **Cash discounts** – Select the account to offset when cash discounts are applied to invoices.
--   **Vendor certification types** – Define a certification type for any vendor requirement that you want to track.
--   **Purchase agreement activity summary** – Enter summary details for activities that are related to a purchase agreement.
--   **Electronic payments** – Specify electronic payments to vendors. 
--   **Cover and signature pages for payments reports** – Specify what information should appear on cover and signature pages for a payment report.
--   **Purchase order line amounts** – View line amounts for a purchase order and any amounts that must still be invoiced, or for invoices that are pending.
+-   **Cash discounts** – Select the account to offset when cash discounts are applied to invoices.
+-   **Vendor certification types** – Define a certification type for any vendor requirement that you want to track.
+-   **Purchase agreement activity summary** – Enter summary details for activities that are related to a purchase agreement.
+-   **Electronic payments** – Specify electronic payments to vendors. 
+-   **Cover and signature pages for payments reports** – Specify what information should appear on cover and signature pages for a payment report.
+-   **Purchase order line amounts** – View line amounts for a purchase order and any amounts that must still be invoiced, or for invoices that are pending.
 
 ### How can I apply cash discounts to vendor invoices?
 
@@ -79,7 +78,7 @@ You use the **Cash discounts** page in Accounts payable or Accounts receivable t
 
 ### How do I specify and assign certification types for vendors?
 
-You can create and assign vendor organizations any type of certification that those vendors have. This certification includes professional credentials, such as a professional engineer’s license or Microsoft SQL Server Certification. However, the certification can also specify that the vendors have liability insurance or minority status, or that they are in compliance with various environmental or consumer safety standards. You use the **Certification type** page to create certification types and descriptions.
+You can create and assign vendor organizations any type of certification that those vendors have. This certification includes professional credentials, such as a professional engineer’s license or Microsoft SQL Server Certification. However, the certification can also specify that the vendors have liability insurance or minority status, or that they are in compliance with various environmental or consumer safety standards. You use the **Certification type** page to create certification types and descriptions.
 
 ### How do I view or enter summary information for purchase agreement activity?
 
@@ -92,11 +91,11 @@ You use the **Purchase agreements** page in Accounts payable or Procurement and 
 
 ### How do I specify electronic payments to vendors?
 
-You can distribute the payment of an invoice to bank accounts for multiple vendors. You can select multiple bank accounts and allocate a percentage to each account. Based on the accounts that are selected, single or multiple open transactions are created against the invoice. You can create payments for each journal line without creating a partial payment for each vendor bank account.
+You can distribute the payment of an invoice to bank accounts for multiple vendors. You can select multiple bank accounts and allocate a percentage to each account. Based on the accounts that are selected, single or multiple open transactions are created against the invoice. You can create payments for each journal line without creating a partial payment for each vendor bank account.
 
 #### Tip
 
-For example, there’s an existing purchase order for $100, and Bank A is the default vendor bank account. In the payment disbursement table, Bank A has 100-percent allocation. (If there is no default vendor bank account, the table is blank.) You can change the allocation for Bank A to 30 percent and then add a new row. On the new row, you can select another vendor bank, such as Bank B, and the allocation for the new row is automatically updated to 70 percent.
+For example, there’s an existing purchase order for $100, and Bank A is the default vendor bank account. In the payment disbursement table, Bank A has 100-percent allocation. (If there is no default vendor bank account, the table is blank.) You can change the allocation for Bank A to 30 percent and then add a new row. On the new row, you can select another vendor bank, such as Bank B, and the allocation for the new row is automatically updated to 70 percent.
 
 ### How can I create and print cover and signature pages for payments reports?
 

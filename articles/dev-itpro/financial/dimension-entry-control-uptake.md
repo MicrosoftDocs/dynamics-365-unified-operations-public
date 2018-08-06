@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dimension entry control uptake
+title: Uptake of Dimension Entry controls
 description: Describes the Dimension Entry control and associated Controller classes.
 author: twheeloc
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Dimension entry control uptake
+# Uptake of Dimension Entry controls
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Describes the Dimension Entry control and associated Controller classes.
 
@@ -289,7 +288,7 @@ parmDimensionEntryControlHeader(
 
 
 
-See also
+Additional resources
 --------
 
 [Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build operational workspaces
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
 
@@ -60,14 +59,14 @@ Overview
 
 ### Examples
 
-An example of a workspace is the **Reservation management** workspace in **Fleet management**. You can get to it by accessing the menu item **FMClerkWorkspace**.   The workspace, shown above, has the following items:
+An example of a workspace is the **Reservation management** workspace in **Fleet management**. You can get to it by accessing the menu item **FMClerkWorkspace**.   The workspace, shown above, has the following items:
 
 -   **Summary** - Contains tiles and a chart.
--   **Rentals** - Contains a vertical tab control having three pages - the first is selected, and you can see the corresponding content on the rightmost side.
+-   **Rentals** - Contains a vertical tab control having three pages - the first is selected, and you can see the corresponding content on the rightmost side.
 -   **Statistics** - Contains stacked charts.
 -   **Related links** - Contains a series of grouped menu item links to forms of relevance to this user and activity.
 
-The overall form, as well as each of the sections within, are defined using UX patterns and subpatterns. The corresponding patterns are described in detail in the following sections.
+The overall form, as well as each of the sections within, are defined using UX patterns and subpatterns. The corresponding patterns are described in detail in the following sections.
 
 ## Patterns and subpatterns
 When building an operational workspace, you must use the patterns and subpatterns defined for that purpose. These patterns and subpatterns are described below. In general, when a control is cited within a pattern's structure, it'll be described as: Common name (ControlType) \[cardinality\] If cardinality isn't specified, then the item is required exactly once. Very simple patterns and subpatterns have the structural tree omitted.
@@ -167,19 +166,19 @@ This subpattern is referenced in the pattern Form Part Section List, in the Head
 
 ### Future best practices check
 
-There are a few best practice (BP) checks that will eventually be built for workspaces. These checks are intended to provide guidance to the user about items that are strongly recommended for performance or design reasons.
+There are a few best practice (BP) checks that will eventually be built for workspaces. These checks are intended to provide guidance to the user about items that are strongly recommended for performance or design reasons.
 
 #### Filters are covered by indexes
 
-This check is intended to ensure that any field that is modeled for use as a field on a workspace-wide filter is covered by an index. This will help ensure that performance remains superior when users are taking advantage of these filters.
+This check is intended to ensure that any field that is modeled for use as a field on a workspace-wide filter is covered by an index. This will help ensure that performance remains superior when users are taking advantage of these filters.
 
 #### Chart parts only contain OLAP charts
 
-When a workspace contains a chat, that chart is be modeled as a separate form, and that form is referenced on the workspace via a Form Part control. The intent of this check is to ensure that any such charts ultimately referenced from a workspace are only using OLAP data.
+When a workspace contains a chat, that chart is be modeled as a separate form, and that form is referenced on the workspace via a Form Part control. The intent of this check is to ensure that any such charts ultimately referenced from a workspace are only using OLAP data.
 
 #### Count tiles have queries defined
 
-A tile caching system has been implemented to improve performance of workspaces, as these forms generally contain several count tiles. For these count tiles to work correctly with the caching system, each tile must have a query defined. That query may be defined on the tile or on the menu item referenced by the tile. The intent of this BP check is to ensure a query is defined in one of these two locations for all count tiles.
+A tile caching system has been implemented to improve performance of workspaces, as these forms generally contain several count tiles. For these count tiles to work correctly with the caching system, each tile must have a query defined. That query may be defined on the tile or on the menu item referenced by the tile. The intent of this BP check is to ensure a query is defined in one of these two locations for all count tiles.
 
 
 

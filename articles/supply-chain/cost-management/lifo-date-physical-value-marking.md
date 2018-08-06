@@ -32,10 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # LIFO Date with physical value and marking
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!include [retail name](../includes/retail-name.md)]
 
 Last in, First out Date (LIFO Date) is an inventory model based on the LIFO principle. Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction. By using LIFO Date, if there is no receipt before the issue, the issue is settled against any receipts that occur after the date of the issue. Several issues on the same date may be settled in the order of last issue, last receipt. 
 
@@ -65,20 +64,20 @@ In this example, the item model group isn't marked to include physical value. Th
 
 The new running average cost price reflects the average of the financially updated transactions at USD 15.00. 
 
-The following illustration shows the effects of the LIFO Date inventory model when the **Include physical value** option isn't used. ![LIFO Date with Include Physical Value](./media/lifodatewithoutincludephysicalvalue.gif) 
+The following illustration shows the effects of the LIFO Date inventory model when the **Include physical value** option isn't used. ![LIFO Date with Include Physical Value](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
--   Inventory transactions are represented by vertical arrows.
--   Receipts into inventory are represented by vertical arrows above the timeline.
--   Issues out of inventory are represented by vertical arrows below the timeline.
--   Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
--   An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
--   An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
--   Each new receipt or issue transaction is designated by a new label.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
--   Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
--   Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
+- Inventory transactions are represented by vertical arrows.
+- Receipts into inventory are represented by vertical arrows above the timeline.
+- Issues out of inventory are represented by vertical arrows below the timeline.
+- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
+- An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
+- An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
+- Each new receipt or issue transaction is designated by a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
+- Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
+- Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 ## LIFO Date with the Include physical value option
 You can select the **Include physical value** check box for an item on the **Item model groups** page. In this case, the system uses both physical and financial receipt transactions to calculate the running average cost price. Where applicable, the system also makes adjustments to the physically updated issue transaction. When the **Include physical value** check box is cleared, inventory close that uses the LIFO Date inventory model makes settlements only to transactions that are financially updated. 
@@ -100,20 +99,20 @@ The illustration that follows shows these transactions:
 
 The new running average cost price reflects the average of the financially updated transactions at USD 20.00. 
 
-The following illustration shows the effects of the LIFO inventory model when the **Include physical value** option is used. ![LIFO Date with Include Physical Value](./media/lifodatewithincludephysicalvalue.gif) 
+The following illustration shows the effects of the LIFO inventory model when the **Include physical value** option is used. ![LIFO Date with Include Physical Value](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
--   Inventory transactions are represented by vertical arrows.
--   Receipts into inventory are represented by vertical arrows above the timeline.
--   Issues out of inventory are represented by vertical arrows below the timeline.
--   Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
--   An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
--   An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
--   Each new receipt or issue transaction is designated by a new label.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
--   Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
--   Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
+- Inventory transactions are represented by vertical arrows.
+- Receipts into inventory are represented by vertical arrows above the timeline.
+- Issues out of inventory are represented by vertical arrows below the timeline.
+- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
+- An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
+- An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
+- Each new receipt or issue transaction is designated by a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
+- Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
+- Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 ## LIFO Date with marking
 Marking is a process that lets you link, or mark, an issue transaction to a receipt transaction. Marking can occur either before or after a transaction is posted. You can use marking when you want to be sure of the exact cost of inventory when the transaction is posted or the inventory close is performed. 
@@ -150,16 +149,16 @@ The following illustration shows the effects of the LIFO inventory model when ma
 
 **Key to the diagram**
 
--   Inventory transactions are represented by vertical arrows.
--   Receipts into inventory are represented by vertical arrows above the timeline.
--   Issues out of inventory are represented by vertical arrows below the timeline.
--   Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
--   An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
--   An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
--   Each new receipt or issue transaction is designated by a new label.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
--   Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
--   Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
+- Inventory transactions are represented by vertical arrows.
+- Receipts into inventory are represented by vertical arrows above the timeline.
+- Issues out of inventory are represented by vertical arrows below the timeline.
+- Above (or below) each vertical arrow, the value of the inventory transaction is specified in the format Quantity@Unitprice.
+- An inventory transaction value that is enclosed in parentheses indicates that the inventory transaction is physically posted into inventory.
+- An inventory transaction value that isn't enclosed in parentheses indicates that the inventory transaction is financially posted into inventory.
+- Each new receipt or issue transaction is designated by a new label.
+- Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
+- Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
+- Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
 
 

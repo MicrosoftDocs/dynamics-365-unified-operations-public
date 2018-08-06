@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Propose and post the impairment amount on a cash generating unit (Japan)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 For Japan, after the calculation of the impairment amount, you can propose and post it in a fixed asset journal.
 

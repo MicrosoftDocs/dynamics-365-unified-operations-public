@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Allocate time to jobs in a job bundle
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 In Manufacturing execution, you can bundle jobs. You can then start multiple jobs at the same time on the Job list page.
 
@@ -68,16 +67,16 @@ The following table shows the actual work hours that are spent on each job.
 The following sections describe the results of the calculated time for each allocation key.
 
 ## Estimation allocation key
-The following table illustrates the formula for calculating allocated time. Here is the formula: Time per job = Total bundle time × (Estimated job time ÷ Total estimated time)
+The following table illustrates the formula for calculating allocated time. Here is the formula: Time per job = Total bundle time × (Estimated job time ÷ Total estimated time)
 
 | Job   | Formula           | Allocated time |
 |-------|-------------------|----------------|
-| Job 1 | 6 × (1 ÷ 8) hours | 0.75 hour      |
-| Job 2 | 6 × (3 ÷ 8) hours | 2.25 hours     |
-| Job 3 | 6 × (4 ÷ 8) hours | 3.00 hours     |
+| Job 1 | 6 × (1 ÷ 8) hours | 0.75 hour      |
+| Job 2 | 6 × (3 ÷ 8) hours | 2.25 hours     |
+| Job 3 | 6 × (4 ÷ 8) hours | 3.00 hours     |
 
 ## Jobs allocation key
-The following table illustrates the formula for calculating allocated time. Here is the formula: Time per job = Total bundle time ÷ Number of jobs
+The following table illustrates the formula for calculating allocated time. Here is the formula: Time per job = Total bundle time ÷ Number of jobs
 
 | Job   | Formula | Allocated time |
 |-------|---------|----------------|
@@ -86,7 +85,7 @@ The following table illustrates the formula for calculating allocated time. Here
 | Job 3 | 6 ÷ 3   | 2 hours        |
 
 ## Net time allocation key
-The following table illustrates the formula for calculating allocated time. Here is the formula: Calculated time per reporting = Bundle time ÷ Number of jobs
+The following table illustrates the formula for calculating allocated time. Here is the formula: Calculated time per reporting = Bundle time ÷ Number of jobs
 
 |                              | 09:00–10:00 (1 hour) | 10:00–11:00 (1 hour) | 11:00–13:00 (2 hours) | 13:00–15:00 (2 hours) | Allocated time |
 |------------------------------|----------------------|----------------------|-----------------------|-----------------------|----------------|
@@ -104,13 +103,13 @@ If you want production costs to be calculated based on real costs, you must clea
 | Job 2 | 3 hours     |
 | Job 3 | 5 hours     |
 
-Consider the three jobs that are performed by a worker who has an hourly wage of USD 12.00. No overtime bonus or premium was earned in the time that was spent on the jobs. The worker worked on the three bundled jobs for a total of six hours. Therefore, the salary cost is 6 × USD 12.00 = USD 72.00. When you use real-time allocation, the cost per hour is recalculated by using the factor from the Net time formula. The actual time that was spent on each job is then transferred together with the corrected cost price per hour. In the example, six hours are spent, although 10 hours were allocated. The following table illustrates the formula for calculating cost. Here is the formula: Cost per hour = (Total bundle time per job (Net time) ÷ Actual time per job) × Standard cost price per hour
+Consider the three jobs that are performed by a worker who has an hourly wage of USD 12.00. No overtime bonus or premium was earned in the time that was spent on the jobs. The worker worked on the three bundled jobs for a total of six hours. Therefore, the salary cost is 6 × USD 12.00 = USD 72.00. When you use real-time allocation, the cost per hour is recalculated by using the factor from the Net time formula. The actual time that was spent on each job is then transferred together with the corrected cost price per hour. In the example, six hours are spent, although 10 hours were allocated. The following table illustrates the formula for calculating cost. Here is the formula: Cost per hour = (Total bundle time per job (Net time) ÷ Actual time per job) × Standard cost price per hour
 
 | Job   | Calculation of corrected cost per hour | Corrected cost per hour | Allocated time | Total cost of job |
 |-------|----------------------------------------|-------------------------|----------------|-------------------|
-| Job 1 | (1.33 ÷ 2) × USD 12.00                 | USD 8.00                | 2 hours        | USD 16.00         |
-| Job 2 | (1.33 ÷ 3) × USD 12.00                 | USD 5.33                | 3 hours        | USD 16.00         |
-| Job 3 | (3.33 ÷ 5) × USD 12.00                 | USD 8.00                | 5 hours        | USD 40.00         |
+| Job 1 | (1.33 ÷ 2) × USD 12.00                 | USD 8.00                | 2 hours        | USD 16.00         |
+| Job 2 | (1.33 ÷ 3) × USD 12.00                 | USD 5.33                | 3 hours        | USD 16.00         |
+| Job 3 | (3.33 ÷ 5) × USD 12.00                 | USD 8.00                | 5 hours        | USD 40.00         |
 
 The corrected cost per hour and the job time are posted in a production journal. **Note:** If you select the **Cost category** option on the **General** tab on the **Production order defaults** page, the actual time for each job is transferred to a production journal, where the cost is applied to the cost category of the specific job.
 

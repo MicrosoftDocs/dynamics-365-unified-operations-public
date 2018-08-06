@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy a Retail essentials demo environment on Azure (AX 2012)
+title: Deploy Retail essentials demo environments on Azure
 description: This topic explains how to deploy a Retail essentials demo environment on Microsoft Azure.
 author: aamirallaqaband
 manager: AnnBe
@@ -30,12 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Deploy a Retail essentials demo environment on Azure (AX 2012)
+# Deploy Retail essentials demo environments on Azure
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to deploy a Retail essentials demo environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
 
@@ -55,27 +52,27 @@ After you log in to Lifecycle Services, open an existing project, or create a ne
 ## 3. Connect the project to your Azure subscription
 Connect the Lifecycle Services project to your Azure subscription. This will enable Lifecycle Services to deploy a Dynamics AX environment to the subscription. To connect the project to your Azure subscription, complete the following procedure.
 
-1.  In your LCS project, go to the **Environments** section, click **Microsoft Azure settings**, and then click **Add** in the **Azure Connectors** area. 
-    >[!Note]
-    > The **Microsoft Azure settings** option is also available when you click the **Cloud-hosted environments** tile.
-3.  Enter a name to identify the connection to Azure.
-4.  Enter your Azure subscription ID. If you need to find your subscription ID, complete the following steps:
-    1.  Open another instance of your browser.
-    2.  Log on to the [Azure portal](https://ms.portal.azure.com/).
-    3.  In the navigation pane on the left, click **Subscriptions**.
-    
-        > [!Note]
-        > You may need to click **More services** at the bottom, and then click **Subscriptions**.
-        
-    4.  Copy your subscription ID, and then paste it into the **Azure subscription ID** field in Lifecycle Services (which is currently displayed in another browser instance).
+1. In your LCS project, go to the **Environments** section, click **Microsoft Azure settings**, and then click **Add** in the **Azure Connectors** area. 
+   >[!Note]
+   > The **Microsoft Azure settings** option is also available when you click the **Cloud-hosted environments** tile.
+2. Enter a name to identify the connection to Azure.
+3. Enter your Azure subscription ID. If you need to find your subscription ID, complete the following steps:
+   1.  Open another instance of your browser.
+   2.  Log on to the [Azure portal](https://ms.portal.azure.com/).
+   3.  In the navigation pane on the left, click **Subscriptions**.
 
-5.  Click **Next**.
-6.  Click **Download** to download a management certificate. This management certificate enables Lifecycle Services to communicate with Azure on your behalf. By default, the management certificate is saved to the **Downloads** folder on your computer and is named **LifecycleServicesDeployment.cer.**
-7.  Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](https://docs.microsoft.com/en-us/azure/azure-api-management-certs).
+       > [!Note]
+       > You may need to click **More services** at the bottom, and then click **Subscriptions**.
 
-8.  Go back to the browser that displays the **Microsoft Azure setup** panel in Lifecycle Services. Click **Next**.
-9.  Select a region. The AX 2012 R3 environment will be deployed to a datacenter in this region.
-10.  Click **Connect**. The project is now connected to the Azure subscription that you specified. 
+   4.  Copy your subscription ID, and then paste it into the **Azure subscription ID** field in Lifecycle Services (which is currently displayed in another browser instance).
+
+4. Click **Next**.
+5. Click **Download** to download a management certificate. This management certificate enables Lifecycle Services to communicate with Azure on your behalf. By default, the management certificate is saved to the **Downloads** folder on your computer and is named **LifecycleServicesDeployment.cer.**
+6. Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](https://docs.microsoft.com/en-us/azure/azure-api-management-certs).
+
+7. Go back to the browser that displays the **Microsoft Azure setup** panel in Lifecycle Services. Click **Next**.
+8. Select a region. The AX 2012 R3 environment will be deployed to a datacenter in this region.
+9. Click **Connect**. The project is now connected to the Azure subscription that you specified. 
 
 >[!Note]
 > If the certificate expires, you can obtain a new one. To do so:
@@ -139,7 +136,7 @@ Complete the following procedure to deploy a Retail essentials demo environment 
 10. Click **Deploy** to confirm that you’re ready to deploy the environment. The deployment may take a few hours to complete. When the deployment is done, the Deployment Status column on the **Cloud-hosted environments** page will display **Deployed**. (You may need to refresh your browser to see this.)If the deployment fails, you may see an error message right away. If the error occurs later in the deployment process, error details will be displayed in the details pane on the right-side of the page.
 
 ## 5. Open the Dynamics AX client
-Complete the following procedure to connect to the virtual machine where the Dynamics AX client is installed.
+Complete the following procedure to connect to the virtual machine where the Dynamics AX client is installed.
 
 1.  On the **Cloud-hosted environments page**, select the Retail essentials environment that you just deployed.
 2.  Scroll to the right side of the page to view the properties of the environment.

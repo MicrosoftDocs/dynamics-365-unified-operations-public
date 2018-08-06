@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X Classes
+title: X classes
 description: System API classes that start with the letter X.
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X Classes
+# X classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter X.
 
@@ -7527,7 +7526,7 @@ General use of this method is discouraged, because the output format might chang
 
 #### Parameters
 
-  
+
 
 #### Return Value
 

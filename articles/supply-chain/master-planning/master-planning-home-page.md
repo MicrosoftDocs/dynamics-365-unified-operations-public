@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Master planning home page
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 At its core, Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. Master planning assesses the following: 
 
@@ -61,6 +60,7 @@ The following learning map shows the major concepts and tasks that make up the f
 [![Learning map for master planning](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## Quick links
+
 |      |   |
 |------|---|
 |        [Master plans](master-plans.md)       |     [Generate a constrained plan](./tasks/constrained-plan.md)  |

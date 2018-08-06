@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Prerequisites for standard costs
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the basic steps for using standard costs. Subsequent steps depend on the company's operations. For example, the steps differ for a nonmanufacturing environment, a manufacturing environment that doesn't use routings, and a manufacturing environment that uses routings. 
 
@@ -55,7 +54,7 @@ Before you define the item posting rules, use the **Transaction combinations** p
 
 **4. Define inventory parameters that are related to standard costs.** 
 
--  Use the **Bills of materials** tab on the **Inventory parameters** page to define two cost control parameters that are related to standard costs. 
+-  Use the **Inventory accounting** tab on the **Inventory accounting policies setup > Parameters** page to define two cost control parameters that are related to standard costs.
 
     -  In the **Cost breakdown** field, select **None** or **Sub ledger**. If you select **Sub ledger**, the cost breakdown is an *active* cost breakdown. An active cost breakdown is critical for calculating, retaining, and viewing cost group segmentation across a multilevel product structure for standard cost items. When the cost breakdown is active, you can report and analyze inventory, work in process (WIP), and cost of goods sold (COGS) per cost group in a single-level, multilevel, or total format. When the cost breakdown is active, if you activate a manufactured item's cost, the cost group segmentation will be stored in the item's cost record. 
 
@@ -79,3 +78,9 @@ Related topics
 
 [Standard cost conversion overview](standard-cost-conversion-overview.md)
 
+### Blogs
+
+#### Community blogs
+
+- [How to set up standard costs for direct materials in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
+- [Standard direct labor costs in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)

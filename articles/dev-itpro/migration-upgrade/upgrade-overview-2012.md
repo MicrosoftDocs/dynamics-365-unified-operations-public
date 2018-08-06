@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade Dynamics AX 2012 to Dynamics 365 for Finance and Operations 
+title: Upgrade from AX 2012 to Finance and Operations 
 description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Microsoft Dynamics 365 for Finance and Operations.
 author: tariqbell
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 06/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -27,11 +27,11 @@ ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Upgrade Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations
+# Upgrade from AX 2012 to Finance and Operations
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[upgrade banner](../includes/upgrade-banner.md)]
+[!include [upgrade banner](../includes/upgrade-banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations running Platform update 8 and the July 2017 Application release, and later provides an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations. Currently upgrade from AX 2012 R3 and AX 2012 R2 are supported. The upgrade process is built on the following elements:
 
@@ -53,17 +53,17 @@ The following diagram shows the end-to-end upgrade process, and the activities t
 
 The activities in the Analyze phase help you estimate the effort that is required for the upgrade. They also help you prepare a project plan. These activities can be done before you buy Finance and Operations. They will help you make an informed purchase decision by providing a data point about the effort and resources that you will require.
 
-### Sign up for a public preview in LCS
+### Sign up for a Finance and Operations LCS trial or partner project
 
-To perform Analyze activities before you purchase Finance and Operations, you can sign up for a public preview. The public preview lets you deploy your own Finance and Operations environments. It also gives you access to the tools in Microsoft Dynamics Lifecycle Services (LCS) that are used to evaluate your AX 2012 environment and your existing custom code.
+To perform Analyze activities before you purchase Finance and Operations, you need to sign up for an LCS trial or partner project. This lets you deploy your own Finance and Operations environments. It also gives you access to the tools in Microsoft Dynamics Lifecycle Services (LCS) that are used to evaluate your AX 2012 environment and your existing custom code.
 
-If you have an existing LCS project for AX 2012, you must still sign up for an additional new project to evaluate Finance and Operations.
+If you have an existing LCS project for AX 2012, you must still sign up for an additional LCS project for Finance and Operations.
 
-For information about how to get a public preview for customers, go to https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview.
+For information about how to get an LCS trial project for customers, go to https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview.
 
-For information about how to get a public preview for partners, go to https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview.
+For information about how to get an LCS partner project, go to https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview.
 
-Be aware that this public preview differs from a [30-day trial](https://aka.ms/D365OperationTrials). Thirty-day trials provide a deployed instance of Finance and Operations that you can use to explore and evaluate the application. However, the Analyze activities require the full LCS experience and tools.
+Be aware that this differs from a [30-day trial](https://aka.ms/D365OperationTrials). Thirty-day trials provide a deployed instance of Finance and Operations that you can use to explore and evaluate the application. However, the Analyze activities require the full LCS experience and tools.
 
 ### Select the upgrade methodology
 In your new LCS project, set the project methodology to **Upgrade AX 2012 to Dynamics 365 for Finance and Operations**. This methodology is made specially for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
@@ -101,7 +101,7 @@ The output of this step represents the workstream in the upgrade project plan fo
 For more information, see [Analysis: Deploy a sandbox environment](analysis-sandbox.md)
 
 ### Create a project plan
-A template for a project plan is provided in the upgrade methodology. In this step, the output from the previous steps of the Analyze phase is used to fill the project plan for the upgrade project. The project plan will also contain all testing details: data upgrade testing, cutover testing, the functional test pass iterations, and details about the various resource assignments for those tasks.
+A template for a project plan is provided in the upgrade methodology. In this step, the output from the previous steps of the Analyze phase is used to fill the project plan for the upgrade project. The project plan will also contain all testing details: data upgrade testing, cutover testing (mock cutover), the functional test pass iterations, and details about the various resource assignments for those tasks.
 
 At this stage, the project plan provides a data point that can help you understand the time and cost that an upgrade to Finance and Operations will involve.
 
@@ -158,7 +158,7 @@ When you enter the Validate phase, you will have available environments that inc
 ### Perform cutover testing and create a cutover plan
 The term _cutover_ is used here to describe the final process of putting the new system live. This process consists of the tasks that occur after AX 2012 is turned off and before Finance and Operations is turned on. 
 
-The goal of the testing is to practice the cutover process. In this way, you can help guarantee that everyone who is involved in the actual cutover to go-live will have a smooth experience.
+The goal of the testing, or *mock cutover* is to practice the cutover process. In this way, you can help guarantee that everyone who is involved in the actual cutover to go-live will have a smooth experience.
 
 There are two main workstreams:
 

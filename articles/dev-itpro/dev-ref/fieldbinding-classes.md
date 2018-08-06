@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: F Classes - FieldBinding to FormBuildAnimateControl
+title: F classes (FieldBinding to FormBuildAnimateControl)
 description: System API classes that start with the letter F.
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# F Classes - FieldBinding to FormBuildAnimateControl
+# F classes (FieldBinding to FormBuildAnimateControl)
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter F.
 
@@ -5430,7 +5429,7 @@ This method is used by the reference group control to track exactly which relati
 
 #### Parameters
 
-  
+
 
 #### Return Value
 

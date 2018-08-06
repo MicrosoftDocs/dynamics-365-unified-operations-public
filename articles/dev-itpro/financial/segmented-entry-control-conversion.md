@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Segmented entry control migration
+title: Migrate Segmented Entry controls
 description: This tutorial walks you through two migration scenarios for the Segmented Entry control -  a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
 author: twheeloc
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Segmented entry control migration
+# Migrate Segmented Entry controls
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This tutorial walks you through two migration scenarios for the Segmented Entry control -  a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
 
@@ -42,11 +41,11 @@ Simple migration scenario – SMAServiceOrderTable form
 
 1.  Search for the **SMAServiceOrderTable** form in Application Explorer.
 2.  Add the form to the current project.
-3.  Open the form in the form design view and the code editor view.
+3.  Open the form in the form design view and the code editor view.
 4.  In the form design view, find the Segmented Entry control (SEC), either by manually walking the control tree or by searching for “SegmentedEntry” in the search bar below the **File** tab.
 5.  Select the SEC, and verify the following information:
     -   The type for the control, as specified in parenthesis next to the control, is **SegmentedEntryControl**.
-    -   The **Controller class** property is set to **DimensionDynamicAccountController**. This property indicates the type of controller that this instance of the SEC will use. The type of controller, in turn, determines the behavior of the control.
+    -   The **Controller class** property is set to **DimensionDynamicAccountController**. This property indicates the type of controller that this instance of the SEC will use. The type of controller, in turn, determines the behavior of the control.
 
 6.  Switch to the code editor view, and search for all occurrences of “TODO: (Code Upgrade) \[Segmented entry control\]” in the form source code.
 7.  In the search results, ignore the first result, which points to the controller variable declaration. You must fix this TODO last, after you've removed all references to the controller variable.
@@ -84,7 +83,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX for Operations
 
-Because this method only calls the **jumpRef()** method on the control and doesn't performing any additional processing, you can delete it.
+Because this method only calls the **jumpRef()** method on the control and doesn't performing any additional processing, you can delete it.
 
 #### Step 2
 
@@ -154,7 +153,7 @@ This method implements a custom lookup for the control. Therefore, leave the met
         return ret;
      }
 
-Additionally, make sure that the **closeSelectRecord** method on the custom lookup form is overridden. For an example, see the **CustTableLookup** form.
+Additionally, make sure that the **closeSelectRecord** method on the custom lookup form is overridden. For an example, see the **CustTableLookup** form.
 
 #### Step 4
 
@@ -207,14 +206,14 @@ The **dimDynamicAccountController** variable is no longer used on the form. Ther
 ## Complex migration scenario – LedgerJournalTransDaily form
 1.  Search for the **LedgerJournalTransDaily** form in Application Explorer.
 2.  Add the form to the current project.
-3.  Open the form in the form design view and the code editor view.
-4.  In the form design view, find the SEC, either by manually walking the control tree or by searching for “SegmentedEntry” in the search bar below the **File** tab.
+3.  Open the form in the form design view and the code editor view.
+4.  In the form design view, find the SEC, either by manually walking the control tree or by searching for “SegmentedEntry” in the search bar below the **File** tab.
 5.  Select the SEC, and verify the following information:
     -   The type for the control, as specified in parenthesis next to the control, is **SegmentedEntryControl**.
-    -   The **Controller class** property is set to **DimensionDynamicAccountController**. This property indicates the type of controller that this instance of the SEC will use. The type of controller, in turn, determines the behavior of the control.
+    -   The **Controller class** property is set to **DimensionDynamicAccountController**. This property indicates the type of controller that this instance of the SEC will use. The type of controller, in turn, determines the behavior of the control.
 
 6.  Switch to the code editor view, and search for all occurrences of “TODO: (Code Upgrade) \[Segmented entry control\]” in the form source code.
-7.  In the search results, the first three results are for the controller variable declarations. Look at the comments that accompany the TODOs, and make a note of the mapping that shows which SEC instance uses which controller instance. You will need this mapping when you replace method calls on the controller with method calls on the control. Here is what the controller-to-control mapping looks like:
+7.  In the search results, the first three results are for the controller variable declarations. Look at the comments that accompany the TODOs, and make a note of the mapping that shows which SEC instance uses which controller instance. You will need this mapping when you replace method calls on the controller with method calls on the control. Here is what the controller-to-control mapping looks like:
     1.  dimAccountController
         1.  LedgerJournalTrans\_AccountNum
         2.  LedgerJournalTrans\_AccountNum1
@@ -228,7 +227,7 @@ The **dimDynamicAccountController** variable is no longer used on the form. Ther
     3.  dimPaymentFeeAccountController
         1.  CustPaymJournalFee\_CustAccount
 
-    You will fix these three TODO comments at the end, after you've removed all references to the controller variables.
+    You will fix these three TODO comments at the end, after you've removed all references to the controller variables.
 8.  Go through each of the remaining TODO comments, as described in the following subsections.
 
 ### LedgerDimension data field
@@ -248,7 +247,7 @@ The **dimDynamicAccountController** variable is no longer used on the form. Ther
 
 ##### Dynamics AX for Operations
 
-Because this method only calls the **jumpRef()** method on the control and doesn't perform any additional processing, you can delete it.
+Because this method only calls the **jumpRef()** method on the control and doesn't perform any additional processing, you can delete it.
 
 ### OffsetLedgerDimension data field
 
@@ -310,7 +309,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
         LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
         LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
         Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
         // dimAccountController.loadSegments();
         currentMainAccountId = dimAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
@@ -333,7 +332,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
                 Group4_AccountNum.parmJournalName(ledgerJournalTable.JournalName);
         . . .
 
-2.  Update the code in the **LedgerJournalTrans** data source’s **active()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
+2.  Update the code in the **LedgerJournalTrans** data source’s **active()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
 
         . . .
         LedgerJournalTrans_AccountNum.parmCurrency(ledgerJournalTrans.CurrencyCode);
@@ -367,7 +366,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
         LedgerJournalTrans_AccountNum1.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
         Group4_AccountNum.parmDataAreaId(ledgerJournalTrans.Company ? ledgerJournalTrans.Company : curext());
 
-5.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **TransDate** field.
+5.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **TransDate** field.
 
         LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
         LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
@@ -400,7 +399,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX for Operations
 
-This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup** method. Additionally, make sure that the **closeSelectRecord** method on the custom lookup form is overridden. For an example, see the **CustTableLookup** form.
+This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup** method. Additionally, make sure that the **closeSelectRecord** method on the custom lookup form is overridden. For an example, see the **CustTableLookup** form.
 
 #### Step 4
 
@@ -421,7 +420,7 @@ This method implements a custom lookup for the control. Therefore, leave the met
         }
         // </GIN>
         super(_e);
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
         // dimAccountController.segmentValueChanged(_e);
         currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimAccountController, currentMainAccountId, ledgerJournalTrans);
@@ -449,7 +448,7 @@ This method implements a custom lookup for the control. Therefore, leave the met
                     return;
                 }
             }
-            
+
             // </GIN>
             if (_segment.parmName() == mainAccountDimAttrName)
             {
@@ -458,7 +457,7 @@ This method implements a custom lookup for the control. Therefore, leave the met
             currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(LedgerJournalTrans_AccountNum, currentMainAccountId, ledgerJournalTrans);
         }
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
+2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
 #### Step 5
 
@@ -469,7 +468,7 @@ This method implements a custom lookup for the control. Therefore, leave the met
     {
         boolean isValid;
         isValid = super();
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
         // isValid = dimAccountController.validate() && isValid;
         return isValid;
@@ -561,7 +560,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
         GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
         LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
         Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
         // dimOffsetAccountController.loadSegments();
         currentOffsetMainAccountId = dimOffsetAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
@@ -577,7 +576,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX for Operations
 
-1.  Update the **initLedger()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
+1.  Update the **initLedger()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
 
         void initLedger()
         {
@@ -606,7 +605,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
                 }
         . . .
 
-2.  Update the code in the **LedgerJournalTrans** data source’s **active()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
+2.  Update the code in the **LedgerJournalTrans** data source’s **active()** method. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method will cause an invalid function call.
 
         . . .
         GridOffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
@@ -640,7 +639,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
         LedgerJournalTrans_OffsetAccount1.parmCurrency(ledgerJournalTrans.CurrencyCode);
         Group4_OffsetAccount.parmCurrency(ledgerJournalTrans.CurrencyCode);
 
-4.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetCompany** field.
+4.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetCompany** field.
 
         GridOffsetAccount.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
         LedgerJournalTrans_OffsetAccount1.parmDataAreaId(ledgerJournalTrans.getOffsetCompany());
@@ -652,7 +651,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
         LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
         Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
 
-6.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetAccountType** field. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method cause an invalid function call.
+6.  Add the following code to the **modified()** method of the **LedgerJournalTrans** data source’s **OffsetAccountType** field. **Note:** The **getValue()** method should be called only if the account type is set to **Ledger**. Otherwise, a call to this method cause an invalid function call.
 
         if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
         {
@@ -690,7 +689,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX for Operations
 
-This method implements a custom lookup for the control. Therefore, keep the method, but replace the controller with the control instance. In this case, because the method is overridden on the **GridOffsetAccount** control, even though **dimOffsetAccountController** was used for three different SEC instances (based on the mapping that is shown in the TODOs on controller variable declarations), we must replace the controller with only one SEC instance. Therefore, the code will look like this.
+This method implements a custom lookup for the control. Therefore, keep the method, but replace the controller with the control instance. In this case, because the method is overridden on the **GridOffsetAccount** control, even though **dimOffsetAccountController** was used for three different SEC instances (based on the mapping that is shown in the TODOs on controller variable declarations), we must replace the controller with only one SEC instance. Therefore, the code will look like this.
 
     public void lookup()
     {
@@ -732,7 +731,7 @@ To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup*
             GridOffsetAccount, currentOffsetMainAccountId, ledgerJournalTrans);
         }
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
+2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
 #### Step 6
 
@@ -743,7 +742,7 @@ To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup*
     {
         boolean isValid;
         isValid = super();
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
         // isValid = dimOffsetAccountController.validate() && isValid;
         return isValid;
@@ -793,7 +792,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
         LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
         LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
         Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
         // dimAccountController.loadSegments();
         currentMainAccountId = dimAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
@@ -848,7 +847,7 @@ This method implements a custom lookup for the control. Therefore, leave the met
             LedgerJournalTrans_AccountNum1, currentMainAccountId, ledgerJournalTrans);
         }
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all of those calls. Alternatively, you can add a new method that follows this guidance.
+2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all of those calls. Alternatively, you can add a new method that follows this guidance.
 
 #### Step 5
 
@@ -908,7 +907,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
         GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
         LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
         Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
         // dimOffsetAccountController.loadSegments();
         currentOffsetMainAccountId = dimOffsetAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
@@ -923,7 +922,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX for Operations
 
-The migration steps for the **GridOffsetAccount.loadSegments()** method already made most of the changes that are required for this method. However, you must still make the following changes.
+The migration steps for the **GridOffsetAccount.loadSegments()** method already made most of the changes that are required for this method. However, you must still make the following changes.
 
 1.  Add a line of code to the **LedgerJournalTrans** data source’s **active** method.
 
@@ -1001,7 +1000,7 @@ The migration steps for the **GridOffsetAccount.loadSegments()** method already
 
 ##### Dynamics AX for Operations
 
-This method implements a custom lookup for the control. Therefore, keep the method, but replace the controller with the control instance. In this case, because the method is overridden on the **LedgerJournalTrans\_OffsetAccount1** control, even though **dimOffsetAccountController** was used for three different SEC instances (based on the mapping that is shown in the TODOs on controller variable declarations), we must replace the controller with only one SEC instance. Therefore, the code will look like this.
+This method implements a custom lookup for the control. Therefore, keep the method, but replace the controller with the control instance. In this case, because the method is overridden on the **LedgerJournalTrans\_OffsetAccount1** control, even though **dimOffsetAccountController** was used for three different SEC instances (based on the mapping that is shown in the TODOs on controller variable declarations), we must replace the controller with only one SEC instance. Therefore, the code will look like this.
 
     public void lookup()
     {
@@ -1023,7 +1022,7 @@ To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup*
     public void segmentValueChanged(SegmentValueChangedEventArgs _e)
     {
         super(_e);
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
         // dimOffsetAccountController.segmentValueChanged(_e);
         currentOffsetMainAccountId = ledgerJournalEngine.onOffsetAccountSegmentChanged(dimOffsetAccountController, currentOffsetMainAccountId, ledgerJournalTrans);
@@ -1044,7 +1043,7 @@ To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup*
             LedgerJournalTrans_OffsetAccount1, currentOffsetMainAccountId, ledgerJournalTrans);
         }
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
+2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
 #### Step 5
 
@@ -1055,7 +1054,7 @@ To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup*
     {
         boolean isValid;
         isValid = super();
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
         // isValid = dimOffsetAccountController.validate() && isValid;
         return isValid;
@@ -1081,7 +1080,7 @@ Because this method only calls the **validate()** method on the control and does
 
 ##### Dynamics AX for Operations
 
-Because this method only calls the **jumpRef()** method on the control and doesn't perform any additional processing, you can delete it.
+Because this method only calls the **jumpRef()** method on the control and doesn't perform any additional processing, you can delete it.
 
 #### Step 2
 
@@ -1094,7 +1093,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
         CustPaymJournalFee_CustAccount.parmJournalName(ledgerJournalTable.JournalName);
         CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
         CustPaymJournalFee_CustAccount.parmControlDate(ledgerJournalTrans.TransDate);
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
         // dimPaymentFeeAccountController.loadSegments();
         currentPaymentFeeMainAccountId = dimPaymentFeeAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
@@ -1114,7 +1113,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
         CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
 
-3.  Add the following code to the **modified()** method of the **CustVendPaymJournalFee** data source’s **FeeCurrency** field. **Note:** The method doesn't exist, so you must override it.
+3.  Add the following code to the **modified()** method of the **CustVendPaymJournalFee** data source’s **FeeCurrency** field. **Note:** The method doesn't exist, so you must override it.
 
         CustPaymJournalFee_CustAccount.parmCurrency(custVendPaymJournalFee.FeeCurrency);
 
@@ -1161,7 +1160,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
 
 ##### Dynamics AX for Operations
 
-This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup** method. Here is an example.
+This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup** method. Here is an example.
 
     public boolean checkUseCustomLookup(int _accountTypeEnumValue, int _secondaryAccountTypeEnumValue)
     {
@@ -1191,7 +1190,7 @@ Additionally, make sure that the **closeSelectRecord** method on the custom look
     public void segmentValueChanged(SegmentValueChangedEventArgs _e)
     {
         super(_e);
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
         // dimPaymentFeeAccountController.segmentValueChanged(_e);
         currentPaymentFeeMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimPaymentFeeAccountController, currentPaymentFeeMainAccountId, ledgerJournalTrans);
@@ -1212,7 +1211,7 @@ Additionally, make sure that the **closeSelectRecord** method on the custom look
             CustPaymJournalFee_CustAccount, currentPaymentFeeMainAccountId, ledgerJournalTrans);
         }
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that can follow this guidance.
+2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that can follow this guidance.
 
 #### Step 5
 
@@ -1223,7 +1222,7 @@ Additionally, make sure that the **closeSelectRecord** method on the custom look
     {
         boolean isValid;
         isValid = super();
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
         // isValid = dimPaymentFeeAccountController.validate() && isValid;
         return isValid;
@@ -1273,7 +1272,7 @@ Because this method only calls the **jumpRef()** method on the control and doesn
         LedgerJournalTrans_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
         LedgerJournalTrans_AccountNum1.parmControlDate(ledgerJournalTrans.TransDate);
         Group4_AccountNum.parmControlDate(ledgerJournalTrans.TransDate);
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
         // dimAccountController.loadSegments();
         currentMainAccountId = dimAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
@@ -1298,7 +1297,7 @@ The steps for migrating this method are the same as the steps for migrating the 
 
 ##### Dynamics AX for Operations
 
-This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup** method. Additionally, make sure that the **closeSelectRecord** method on the custom lookup form is overridden. For an example, see the **CustTableLookup** form.
+This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup** method. Additionally, make sure that the **closeSelectRecord** method on the custom lookup form is overridden. For an example, see the **CustTableLookup** form.
 
 #### Step 4
 
@@ -1308,7 +1307,7 @@ This method implements a custom lookup for the control. Therefore, leave the met
     public void segmentValueChanged(SegmentValueChangedEventArgs _e)
     {
         super(_e);
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
         // dimAccountController.segmentValueChanged(_e);
         currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(dimAccountController, currentMainAccountId, ledgerJournalTrans);
@@ -1332,7 +1331,7 @@ This method implements a custom lookup for the control. Therefore, leave the met
             currentMainAccountId = ledgerJournalEngine.onPrimaryAccountSegmentChanged(Group4_AccountNum, currentMainAccountId, ledgerJournalTrans);
         }
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
+2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onPrimaryAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
 #### Step 5
 
@@ -1343,7 +1342,7 @@ This method implements a custom lookup for the control. Therefore, leave the met
     {
         boolean isValid;
         isValid = super();
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
         // isValid = dimAccountController.validate() && isValid;
         return isValid;
@@ -1429,11 +1428,11 @@ Because this method only calls the **jumpRef()** method on the control and doesn
         GridOffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
         LedgerJournalTrans_OffsetAccount1.parmControlDate(ledgerJournalTrans.TransDate);
         Group4_OffsetAccount.parmControlDate(ledgerJournalTrans.TransDate);
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] Replace this based on the migration guidance */
         // dimOffsetAccountController.loadSegments();
         currentOffsetMainAccountId = dimOffsetAccountController.getValue(DimensionAttribute::getWellKnownDimensionAttribute(DimensionAttributeType::MainAccount));
-        
+
         // Lock the main account segment if "Fixed offset account" is selected in Journal Names
         if (ledgerJournalTrans.OffsetAccountType == LedgerJournalACType::Ledger)
         {
@@ -1519,7 +1518,7 @@ The migration steps for the **GridOffsetAccount.loadSegments()** method already 
 
 ##### Dynamics AX for Operations
 
-This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup** method. Additionally, make sure that the **closeSelectRecord** method on the custom lookup form is overridden. For an example, see the **CustTableLookup** form.
+This method implements a custom lookup for the control. Therefore, leave the method as it is. Just remove the TODO. To hook up custom lookups, you must override the SEC’s **checkUseCustomLookup** method. Additionally, make sure that the **closeSelectRecord** method on the custom lookup form is overridden. For an example, see the **CustTableLookup** form.
 
 #### Step 5
 
@@ -1550,7 +1549,7 @@ This method implements a custom lookup for the control. Therefore, leave the me
             Group4_OffsetAccount, currentOffsetMainAccountId, ledgerJournalTrans);
         }
 
-2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
+2.  Delete the **segmentValueChanged()** method. **Note:** The preceding code for the **onSegmentChanged()** method will not compile, because the **onOffsetAccountSegmentChanged()** method expects a controller object, but this code passes an instance of the SEC. To call methods on the control instance, you must change the method’s signature and its implementation accordingly. This method is used by more than 50 callers. Therefore, you would also have to update all those calls. Alternatively, you can add a new method that follows this guidance.
 
 #### Step 6
 
@@ -1561,7 +1560,7 @@ This method implements a custom lookup for the control. Therefore, leave the me
     {
         boolean isValid;
         isValid = super();
-        
+
         /* TODO: (Code Upgrade) [Segmented entry control] This statement can be removed if there is no custom logic */
         // isValid = dimOffsetAccountController.validate() && isValid;
         return isValid;
@@ -1571,7 +1570,7 @@ This method implements a custom lookup for the control. Therefore, leave the me
 
 Because this method only calls the **validate()** method on the control and doesn't perform any additional processing, you can delete it.
 
-See also
+Additional resources
 --------
 
 [Segmented Entry control dialog support](segmented-entry-control-dialog-support.md)

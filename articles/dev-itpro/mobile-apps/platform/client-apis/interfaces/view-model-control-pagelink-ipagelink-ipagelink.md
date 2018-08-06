@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: PageLink
+title: PageLink type
 description: Pagelink control type. A pagelink is a control that navigates to another page.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# PageLink Type
+# PageLink type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Pagelink control type. A pagelink is a control that navigates to another page.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Access rights of a cost object controller
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The **Cost control** workspace is a central point where managers can view the performance of their cost objects. This workspace lets managers consume Cost accounting data even though they aren't cost accountants. For security reasons, managers should be allowed to see only the Cost accounting data that is related to the specific cost objects that they are responsible for.
 
@@ -105,7 +105,7 @@ The settings for the Access list hierarchy are used to control the data that is 
 > - Before the Access list hierarchy can affect data in Power BI, the Access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - This topic shows the prerequisites that must be in place before you can use the **Cost control** workspace.
 
-See also
+Additional resources
 
 - [Cost control workspace](cost-control-workspace.md)
 - [Dimension hierarchy](dimension-hierarchy.md)

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dimension Entry control dialog support
+title: Support for Dimension Entry controls on dialogs
 description: Describes the code pattern for putting a Dimension Entry control on a dialog.
 author: twheeloc
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Dimension Entry control dialog support
+# Support for Dimension Entry controls on dialogs
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Describes the code pattern for putting a Dimension Entry control on a dialog.
 
@@ -58,7 +57,7 @@ In the current release, this code would be converted to:
 
 For the second parameter on `addToDialog`, choose the controller class that satisfies the requirements for your dialog.
 
-## See also
+## Additional resources
 
 [Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)
 

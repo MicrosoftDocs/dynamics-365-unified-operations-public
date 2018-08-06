@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 Translation Service - Translation memory
+title: Translation memory files
 description: This topic describes when and where translation memory files can be created, edited, and used to help Microsoft Dynamics 365 Translation Service (DTS) provide a quality translation output file.
 author: kfend
 manager: AnnBe
@@ -30,15 +30,15 @@ ms.dyn365.ops.version: AX 7.3.0
 
 ---
 
-# Microsoft Dynamics 365 Translation Service - Translation memory
+# Translation memory files
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Translation Service (DTS) uses a bilingual XML Localization Interchange File Format (XLIFF) file to store pairs of source languages and target languages. Because XLIFF is based on XML, you can open XLIFF files in any text editor. However, we recommend that you use XLIFF editors that are specifically designed to work with this format. For example, you can use the free Microsoft Multilingual Editor that is available in the [Multilingual App Toolkit (MAT)](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit).
 
 In DTS, you can obtain an XLIFF translation memory (TM) in two ways:
 
-+ **Run the Align tool** – When you have files that were previously translated, and you also have corresponding source files, you can use the Align tool to create an XLIFF TM. For more details, see the [Creating a translation memory - Alignment](./use-translation-service-tm.md#creating-a-translation-memory---alignment) section later in this topic.
++ **Run the Align tool** – When you have files that were previously translated, and you also have corresponding source files, you can use the Align tool to create an XLIFF TM. For more details, see the [Creating a translation memory - Alignment](#creating-a-translation-memory-alignment) section later in this topic.
 + **Complete a translation request** – When a DTS translation request is completed, it provides the XLIFF TMs as part of the request output. You can then use the files the next time that you submit a new translation request that includes the updated source files.
 
 XLIFF files contain a series of translation units (TUs) that are extracted from the source files. The following illustration shows an example of a TU.

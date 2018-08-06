@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get started with Microsoft Dynamics 365 for Talent
+title: Get started with Talent
 description: This topic provides information about how to adapt the user interface to your preferences, as well as connect to the Help resources that are available within the product, and on the docs.microsoft.com site. 
 author: rschloma
 manager: AnnBe
@@ -30,16 +30,16 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 
 ---
-# Getting started with Microsoft Dynamics 365 for Talent
+# Get started with Talent
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In Microsoft Dynamics 365 for Talent it's easy to modify the user interface and set options that make the software more intuitive for your needs. This topic includes links to topics that provide information on how to adapt the user interface to your preferences. The topic also includes links to information that can help you find information in the system efficiently and accurately. 
 
 > [!NOTE] 
 > The following products are closely related: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product.
 
-### Personalizing Talent 
+## Personalizing Talent 
 The following topics show how to set up many features in Dynamics 365 for Talent that make it easier for you to get your work done in a timely manner. 
 
 -   [Personalize the user experience](../fin-and-ops/get-started/personalize-user-experience.md) - This topic explains the different ways in which you can personalize Talent and adapt parts of the product to more closely suite your preferences.
@@ -50,7 +50,7 @@ The following topics show how to set up many features in Dynamics 365 for Talent
 
 -   [Keyboard shortcuts](../fin-and-ops/get-started/shortcut-keys.md) - This topic lists keyboard shortcuts for the United States keyboard layout. 
 
-### Accessing information
+## Accessing information
 The following topics explain how to use lookups, and the search and filtering features, to find information quickly. 
 
 -   [Use lookups to find information](../fin-and-ops/get-started/use-lookups-to-find-information.md) - This topic shows how lookups can help you quickly find the correct or desired value. The topic describes how lookups work and includes tips to help you optimize your use of them.

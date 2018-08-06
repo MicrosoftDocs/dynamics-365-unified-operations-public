@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Financial performance Power BI content
-description: This topic describes the Financial performance Power BI content. 
+title: Financial performance PowerBI.com solution
+description: This topic describes the Financial performance PowerBI.com solution. 
 author: kweekley
 manager: AnnBe
-ms.date: 02/02/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,19 +30,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Financial performance Power BI content
+# Financial performance PowerBI.com solution
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!Note]
-> This content pack has been deprecated as documented in [Power BI content packs published to PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+> This PowerBI.com solution has been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-This topic describes the **Financial performance** Microsoft Power BI content. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the content.
+This topic describes the **Financial performance** PowerBI.com solution. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the solution.
 
 ## Main account setup
 Because organizations want liabilities and revenue amounts to appear as positive amounts on reports, the setup of the main accounts is important. For these main accounts to appear as positive amounts, the main account type must be set to **Liability** or **Revenue**. When these account types are used, reporting through Power BI will reverse the signs and show the amounts as positive.
 
-## Dashboard and reports that are included in the Power BI content
+## Dashboard and reports that are included in the PowerBI.com solution
 The dashboard contains summarized tiles of data that are based on underlying reports. Each tile contains summarized information for the current year across all companies in an organization. Here are some of the tiles:
 
 - Cash
@@ -79,7 +79,7 @@ Each tile is backed by a supporting report. These reports contain both charts an
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure a Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
-The following entities were used as the basis of the **Financial performance** Power BI content:
+The following entities were used as the basis of the **Financial performance** PowerBI.com solution:
 
 **Aggregate data entities**
 

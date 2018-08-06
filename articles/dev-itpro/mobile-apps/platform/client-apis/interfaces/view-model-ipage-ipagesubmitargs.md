@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: PageSubmitArgs
+title: PageSubmitArgs type
 description: Args supplied to the OnSubmit event of the page.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# PageSubmitArgs Type
+# PageSubmitArgs type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Args supplied to the OnSubmit event of the page.
 

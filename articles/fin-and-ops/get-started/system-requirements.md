@@ -5,7 +5,7 @@ title: System requirements for cloud deployments
 description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for cloud deployments.
 author: sericks007
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # System requirements for cloud deployments
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for cloud deployments. If this step is appropriate, before you install Finance and Operations, you should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 
@@ -103,13 +103,13 @@ The following Microsoft Office applications are supported in cloud and on-premis
     - It must have, at a minimum, 3 gigabytes (GB) of random-access memory (RAM).  When combining with SQL Server for offline, no less than 4 GB of RAM is required.
     - It must have internet access.
 
-## Retail Modern POS for Apple iPad requirements
+## Retail Modern POS for Apple iPhone or iPad requirements
 
-- iOS 8 or later
+- iOS 11 or later
 
-## Retail Modern POS for Android tablets requirements
+## Retail Modern POS for Android phone or tablet requirements
 
-- Android OS 4.0.4 or later
+- Android OS 6.0 or later
 
 ## Retail hardware station requirements
 ### Supported operating systems
@@ -135,6 +135,8 @@ The computer must meet all system requirements for installing and using the foll
 - Third-party hardware
 
 ## Retail Store Scale Unit requirements
+Take note that the minimum system requirements listed below are the bare minimum necessary to get a Retail Store Scale Unit to function in a test scenario.  The following is not representative of a realistic production environment.  It is critical to perform proper performance testing and validate that the hardware used will meet the needs of the users.
+
 ### Supported operating systems
 
 - Retail Store Scale Unit is a 32-bit application, but it will run on both x86 and x64 architectures.
@@ -162,6 +164,13 @@ The computer must meet all system requirements for installing and using the foll
 - 2.4 GHz i7 (or equivalent) peak CPU speed per core (Four cores are recommended.)
 - At least 10 GB of free space (The channel database can require a large amount of space.)
 
+It would be in an organization's best interest to also take the following items into consideration when determining personal hardware needs:
+- Number of physical network ports (More ports enhances throughput per second.)
+- SQL Server log flush size (This directly impacts SQL Server performance.)
+- Data read and write capabilities (This directly impacts SQL Server performance.)
+- Number of CPU(s) core, number of simultaneous threads per core, and speed per core (This impacts overall throughput of the system.)
+- Whether load balancing will be required 
+
 ## Connector requirements
 ### Supported operating systems
 
@@ -185,6 +194,6 @@ The computer must meet all system requirements for installing and using the foll
 
 For information about the requirements for development on local virtual machines (VMs), see [VM that is running on-premises](../../dev-itpro/dev-tools/access-instances.md#vm-that-is-running-on-premises).
 
-## See also
+## Additional resources
 
 [Get an evaluation copy](../../dev-itpro/dev-tools/get-evaluation-copy.md)

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reset the Financial reporting data mart for Finance and Operations
+title: Reset the Financial reporting data mart
 description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 for Finance and Operations.
 author: aprilolson
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Reset the Financial reporting data mart
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to reset the Financial reporting data mart for the following versions of Microsoft Dynamics 365 for Finance and Operations:
 
@@ -48,8 +48,7 @@ To get Finance and Operations Financial reporting release 7.2.6.0, you can downl
 > [!NOTE]
 > The steps in this process are supported for Finance and Operations Financial reporting release 7.2.6.0 and later. If you have an earlier release, contact the Support team for assistance.
 
-To find the version of report designer, watch this video:
-> [!Video https://www.youtube.com/embed/icfA5Q3kp4w]
+To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w)
 
 In specific scenarios, you might have to reset the data mart for Financial reporting. You can complete this task in the Report designer client. Here are some scenarios where you might have to reset the data mart:
 
@@ -155,7 +154,7 @@ The following Microsoft Windows services will have open connections to the Finan
 
 #### Download the latest MinorVersionDataUpgrade.zip package
 
-Download the latest MinorVersionDataUpgrade.zip package. For instructions about how to find and download the correct version of the data upgrade package, see the section [Select the correct data upgrade deployable package](..\migration-upgrade\upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) in the Upgrade data in development, demo, or sandbox environments topic.
+Download the latest MinorVersionDataUpgrade.zip package. For instructions about how to find and download the correct version of the data upgrade package, see the section [Select the correct data upgrade deployable package](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) in the Upgrade data in development, demo, or sandbox environments topic.
 
 An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have follow the steps in the "Download the latest data upgrade deployable package" section of that topic. You can skip all the other steps in the topic.
 
@@ -178,9 +177,9 @@ cd F:\MRApplicationService\MRInstallDirectory
 Import-Module .\Server\MRDeploy\MRDeploy.psd1
 Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -SkipMRTableReset
 ```
- > [!NOTE]
- > SkipMRTableReset preserves tree unit security if you are using it. 
-  - If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).
+> [!NOTE]
+> SkipMRTableReset preserves tree unit security if you are using it. 
+>   - If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).
 
 
 

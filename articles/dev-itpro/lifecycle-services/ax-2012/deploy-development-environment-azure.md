@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy a development environment on Azure (AX 2012)
+title: Deploy development environments on Azure
 description: This topic provides information about how to deploy a development environment on Microsoft Azure. 
 author: kfend
 manager: AnnBe
@@ -30,12 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Deploy a development environment on Azure (AX 2012)
+# Deploy development environments on Azure
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 Prerequisites
 -------------
@@ -128,7 +125,7 @@ An Active Directory is required in the Azure virtual network. An Active Director
 <tr class="odd">
 <td>&lt;DomainName&gt;DynamicsInstallUser</td>
 <td>AX 2012 R3 installation account 
-    
+
     Note: This account must have permission to join computers to the domain. To give this account permission, complete the following steps:
 <ol>
 <li>Click <strong>Start</strong>, click <strong>Run</strong>, type dsa.msc, and then click <strong>OK</strong>.</li>
@@ -183,46 +180,46 @@ If you want virtual machines to be added to Active Directory in a custom organiz
 ## 5. Deploy a development environment on Azure
 Complete the following procedure to deploy a development environment on Azure.
 
-1.  On the **Cloud-hosted environments** page, click the Add (+) icon.
-2.  In the **Select environment topology** panel, select **Dev/test**.
-3.  Click **Development** or **Development with shared SQL Server**.
-4.  In the **Environment name** field, enter a name for the environment that will be deployed.
-5.  Click **Advanced settings**.
-6.  To customize domain settings, click **Customize domain settings**. Then use the following table to enter information.
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td><strong>If you want to:</strong></td>
-    <td><strong>Do this:</strong></td>
-    </tr>
-    <tr class="even">
-    <td>Create a new domain in Azure for the environment</td>
-    <td><ol>
-    <li>Click <strong>New domain</strong>.</li>
-    <li>Enter a name for the domain. By default, the domain is named <em>contoso.com</em>.</li>
-    </ol></td>
-    </tr>
-    <tr class="odd">
-    <td>Add the environment to an existing domain in Azure</td>
-    <td><ol>
-    <li>Click <strong>Existing domain</strong>.</li>
-    <li>Enter the name of the domain. For example, <em>contoso.com</em>.</li>
-    </ol></td>
-    </tr>
-    </tbody>
-    </table>
+1. On the **Cloud-hosted environments** page, click the Add (+) icon.
+2. In the **Select environment topology** panel, select **Dev/test**.
+3. Click **Development** or **Development with shared SQL Server**.
+4. In the **Environment name** field, enter a name for the environment that will be deployed.
+5. Click **Advanced settings**.
+6. To customize domain settings, click **Customize domain settings**. Then use the following table to enter information.
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <tbody>
+   <tr class="odd">
+   <td><strong>If you want to:</strong></td>
+   <td><strong>Do this:</strong></td>
+   </tr>
+   <tr class="even">
+   <td>Create a new domain in Azure for the environment</td>
+   <td><ol>
+   <li>Click <strong>New domain</strong>.</li>
+   <li>Enter a name for the domain. By default, the domain is named <em>contoso.com</em>.</li>
+   </ol></td>
+   </tr>
+   <tr class="odd">
+   <td>Add the environment to an existing domain in Azure</td>
+   <td><ol>
+   <li>Click <strong>Existing domain</strong>.</li>
+   <li>Enter the name of the domain. For example, <em>contoso.com</em>.</li>
+   </ol></td>
+   </tr>
+   </tbody>
+   </table>
 
-7.  To customize the service accounts that will be created in the domain, click **Customize service accounts**. Service accounts and/or service account passwords may be specified through the **Advanced Settings** option for a deployment. If neither is provided, default accounts are used and random passwords are selected. Use these features when you want to maintain account naming and password rules for your corporation. Account and password rules:
-    -   A valid service name must be less than 20 characters with no special characters.
-    -   A valid password must be more than 8 characters and contain uppercase letters, lowercase letters, numbers, and at least one of the following characters: \['@', '!', '=', '\*'\] You can’t use common passwords, such as: pass@word1
+7. To customize the service accounts that will be created in the domain, click **Customize service accounts**. Service accounts and/or service account passwords may be specified through the **Advanced Settings** option for a deployment. If neither is provided, default accounts are used and random passwords are selected. Use these features when you want to maintain account naming and password rules for your corporation. Account and password rules:
+   - A valid service name must be less than 20 characters with no special characters.
+   - A valid password must be more than 8 characters and contain uppercase letters, lowercase letters, numbers, and at least one of the following characters: \['@", "!', '=', '\*'\] You can’t use common passwords, such as: pass@word1
 
-8.  To select the version of AX 2012 R3 that you want use, click **Supported version**. By default, the AX 2012 R3 CU8 version of this environment will be deployed. If you don’t want to use the CU8 version, select **Dynamics ERP 2012 R3 RTM** from the list.
-9.  To customize virtual machine names, click **Customize virtual machine names**. In order to support common IT naming guidelines, the ability to name virtual machines is provided through the **Advanced settings** option on most deployment topologies. In addition to defining the name, a starting index can be selected for each virtual machine type. The index is incremented for each instance of the virtual machine type that is deployed. Virtual machine names must be 13 characters or less. The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits. Example: ACustomVMName-99 When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off. For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6. If you add two more AOS instances, they will be AOS-7 and AOS-8. If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized. This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.
-10. To customize virtual network settings, click **Customize virtual network**. Then use the following table to enter information.
+8. To select the version of AX 2012 R3 that you want use, click **Supported version**. By default, the AX 2012 R3 CU8 version of this environment will be deployed. If you don’t want to use the CU8 version, select **Dynamics ERP 2012 R3 RTM** from the list.
+9. To customize virtual machine names, click **Customize virtual machine names**. In order to support common IT naming guidelines, the ability to name virtual machines is provided through the **Advanced settings** option on most deployment topologies. In addition to defining the name, a starting index can be selected for each virtual machine type. The index is incremented for each instance of the virtual machine type that is deployed. Virtual machine names must be 13 characters or less. The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits. Example: ACustomVMName-99 When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off. For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6. If you add two more AOS instances, they will be AOS-7 and AOS-8. If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized. This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.
+10. To customize virtual network settings, click <strong>Customize virtual network</strong>. Then use the following table to enter information.
     <table>
     <colgroup>
     <col width="50%" />
@@ -246,7 +243,7 @@ Complete the following procedure to deploy a development environment on Azure.
     <li>Click <strong>Existing virtual network</strong>.</li>
     <li>Select the name of the existing virtual network that you want to use.</li>
     <li>The <strong>Address space</strong> field will automatically display the appropriate value. Select the provided value.</li>
-    <li>The <strong>Application subnet name</strong> field will display available options. If you are deploying to an AD that was previously deployed through Lifecycle Services, select the *APPNET* value.</li>
+    <li>The <strong>Application subnet name</strong> field will display available options. If you are deploying to an AD that was previously deployed through Lifecycle Services, select the <em>APPNET</em> value.</li>
     <li>The Active Directory subnet must be entered and match the Active Directory subnet IP/Range found in the Azure management portal for the AD you desire to target.
     <ol>
     <li>Log on to the <a href="https://manage.windowsazure.com/">Azure management portal</a>.</li>
@@ -261,8 +258,8 @@ Complete the following procedure to deploy a development environment on Azure.
 
 11. Click **Done.** The **Deploy environment** panel is redisplayed.
 12. The number and size of each virtual machine that will be deployed is listed. Change the number and size of the virtual machines, as needed.
-    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
-    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).
+    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
+    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).
 
 13. Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
 14. Click **Next**.
@@ -293,7 +290,7 @@ If you want sample data installed in your environment, complete the following st
 4.  Open a command prompt and navigate to the following location: C:\Program Files (x86)\Microsoft Dynamics AX 2012 Test Data Transfer Tool (Beta)
 5.  Run the following command: dp.exe import F:DemoData MicrosoftDynamicsAx
 
-**Note: **The sample data includes trial license keys for AX 2012 R3. If you choose not to install the sample data, you can download trial license keys—for development or testing purposes—from [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) or [MSDN](https://msdn.microsoft.com/en-us/subscriptions/securedownloads/hh442898#FileId=57028).
+**Note: **The sample data includes trial license keys for AX 2012 R3. If you choose not to install the sample data, you can download trial license keys—for development or testing purposes—from [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) or [MSDN](https://msdn.microsoft.com/en-us/subscriptions/securedownloads/hh442898#FileId=57028).
 
 ### Give users access
 
@@ -302,7 +299,7 @@ To enable your users to access AX 2012 R3, complete the following tasks:
 -   Add each user’s domain account to the Remote Desktop Users group on the CLI-&lt;GUID&gt; virtual machine.
 -   Give users access to AX 2012 R3. For instructions, see [Create new users in Microsoft Dynamics AX](https://technet.microsoft.com/EN-US/library/aa548139.aspx).
 
-**Note: **If you don’t want to create a VPN connection and a domain trust, you can still give users access to AX 2012 R3. To do so, you’ll need to log on to the virtual machine that serves as the domain controller, and create domain accounts for each user. Then, you’ll need to complete the two tasks mentioned above.
+**Note: **If you don’t want to create a VPN connection and a domain trust, you can still give users access to AX 2012 R3. To do so, you’ll need to log on to the virtual machine that serves as the domain controller, and create domain accounts for each user. Then, you’ll need to complete the two tasks mentioned above.
 
 ### Set up and configure AX 2012 R3
 

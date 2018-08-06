@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage Finance and Operations Support experiences
+title: Manage Finance and Operations support experiences
 description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services to manage support incidents. 
 author: kfend
 manager: AnnBe
@@ -30,53 +30,58 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Manage Finance and Operations Support experiences
+# Manage Finance and Operations support experiences
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 To use the Support tool, you must have previously created a project in Lifecycle Services (LCS) and installed and ran the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](ax-2012/system-diagnostics-lcs.md).
 
 
 ## Open a new incident
 1. In LCS, navigate to the project for which you want to file a support incident. 
-2.  Click the **Support** tile.
-![Support menu](media/CPS1.png)
 
-3.  On the **Submitted to Microsoft** tab, click the **Submit an incident** button.
-![Support button](media/CPS2.png)
+2. Click the **Support** tile.
+   ![Support menu](media/CPS1.png)
 
-4.  Select an issue category.
-![Category](media/CPS5.png)
+3. On the **Submitted to Microsoft** tab, click the **Submit an incident** button.
+   ![Support button](media/CPS2.png)
 
-5.  Select an issue area.
-![Area](media/CPS6.png)
+4. Select an issue category.
+   ![Category](media/CPS5.png)
 
-6. In the **Describe your issue** window, provide additional information related to the issue.  
+5. Select an issue area.
+   ![Area](media/CPS6.png)
 
-  - If the issue occurred in an environment, select **Yes**, and then select the environment name. 
-  - Specify the **Problem type** and **Problem area**. Based on the selection in the **Problem type** field, you may see different Problem area options.
-  - In the **Title** field, enter a short description of the issue.
-  - Provide details about the issue and the steps needed to reproduce the error.
-  - If applicable, enter an error message. 
-  - To attach screenshots to illustrate the problem, click **Attach file from computer**.
- > [!NOTE]
- > When you create an incident, Issue search will populate the top 10 "Possible issue solutions" search results based on the your selection and input, and dynamically refresh these results as more details are provided during support case creation.  
- > Standalone Issue search is still accessible via the dropdown menu if you need to search for more solutions. 
+6. In the **Describe your issue** window, enter the following:
+
+   - Select **Yes** if the issue occured in an environment. Select the environment name.  
+   - Enter a short description of your issue in the **Title** field.
+   - Provide details about the issue detail and the steps needed to reproduce the error.
+   - If applicable, enter an error message. 
+   - If possible, attach screenshots that illustrate the problem. To do this, click **Attach file from computer**.
  
- ![Detail](media/CPS7.png)
+   > [!NOTE]
+   > When you create an incident, Issue search will populate the top 10 "Possible issue solutions" search results based on the your selection and input, and dynamically refresh these results as more details are provided during support case creation. 
+   > 
+   > Standalone Issue search is still accessible via the dropdown menu if you need to search for more solutions. 
+ 
+   ![Detail](media/CPS7.png)
  
 7. Enter the primary contact information. These contact details will be used by the customer support team to contact you about the case.
-![Contact info](media/CPS8.png)
+   ![Contact info](media/CPS8.png)
+
 
 8. Select the support contract and the severity level. 
     
-  - Support contracts for on-premises environments have a limited incident count. 
-  - Support contracts for cloud environments have an unlimited incident count. 
-  - For on-premises products or cloud environments, from the list of available support contracts, select the support option to use if you have multiple tier support contracts. 
-![Contract and severity](media/CPS9.png)
+   - Support contracts for on-premises environments have a limited incident count. 
+   - Support contracts for cloud environments have an unlimited incident count. 
+   - For on-premises products or cloud environments, from the list of available support contracts, select the support option to use if you have multiple tier support contracts. 
+   ![Contract and severity](media/CPS9.png)
 
 9. Click **Submit**. 
-![Completed](media/CPS10.png)
+
+   ![Completed](media/CPS10.png)
+
 
 After you click **Submit**, an incident is created and added to the **Incidents** list. You will receive an email message from the Microsoft Support Engineer assigned to your case. 
 
@@ -89,6 +94,11 @@ If you purchased a support plan, such as **Premier Support** or **Advance Suppor
    
 2. On the **Manage support plans** page, click **Add contract** to enter the **Access ID** and **Password/Contract ID**.
    ![Add contracts](media/SupportAddPlans.png) 
+   
+### Remove a Premier support plan 
+If you need to remove a Premier support plan from one or more of your contracts, you can do so using the Premier Portal.
+1. Log in to the [Premier Portal](https://support.microsoft.com/en-us/premier/access).
+2. Select the contracts you want to remove from the **Accociated access IDs**, and then click **Remove**. 
    
    
 ## Report production outage

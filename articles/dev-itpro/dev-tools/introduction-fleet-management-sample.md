@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fleet Management sample application overview
+title: Fleet Management sample application
 description: This topic is an overview of the Fleet Management sample application.
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Fleet Management sample application overview
+# Fleet Management sample application
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic is an overview of the Fleet Management sample application.
 
@@ -41,7 +40,7 @@ The Fleet Management sample application has been provided to showcase developmen
 
 For some tutorials, you will need to create the FleetManagement solution if it is not on your computer. The steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
 
-For some tutorials, you must download the Fleet Management tutorial code and other artifacts from <https://github.com/Microsoft/FMLab>.
+For some tutorials, you must download the Fleet Management tutorial code and other artifacts from <https://github.com/Microsoft/FMLab>.
 
 Fleet Management is provided as a Visual Studio solution that demonstrates platform capabilities, such as:
 
@@ -54,9 +53,9 @@ Fleet Management is provided as a Visual Studio solution that demonstrates platf
 -   Business Intelligence
 -   Extensions
 
-The Fleet Management solution includes two separate projects: one for the base model and the other one for extensions to the base model. The project named FleetManagement Migrated demonstrates how a migrated application might appear after migrating code from Dynamics AX 2012. This version shows how forms that have been migrated from Microsoft Dynamics AX 2012 R3 work on a web client. These forms have been created using automated migration tools and some other manual migration steps in Visual Studio. These forms bind to X++ tables and use the X++ programming model. The project named FleetManagement Discounts (or FleetManagementExtension) demonstrates how to use extensions to customize an application. This project extends the Fleet Management sample by extending controls and tables, handling data events, and replacing business logic using a plug-in. The tutorials that accompany this article provide a more-detailed look at the Fleet Management sample. These include a Fleet Management tutorial, [Using the Fleet Management sample](fleet-management-sample.md), and a tutorial that walks through extensions, [Customize model elements using Extensions](..\extensibility\customize-model-elements-extensions.md).
+The Fleet Management solution includes two separate projects: one for the base model and the other one for extensions to the base model. The project named FleetManagement Migrated demonstrates how a migrated application might appear after migrating code from Dynamics AX 2012. This version shows how forms that have been migrated from Microsoft Dynamics AX 2012 R3 work on a web client. These forms have been created using automated migration tools and some other manual migration steps in Visual Studio. These forms bind to X++ tables and use the X++ programming model. The project named FleetManagement Discounts (or FleetManagementExtension) demonstrates how to use extensions to customize an application. This project extends the Fleet Management sample by extending controls and tables, handling data events, and replacing business logic using a plug-in. The tutorials that accompany this article provide a more-detailed look at the Fleet Management sample. These include a Fleet Management tutorial, [Using the Fleet Management sample](fleet-management-sample.md), and a tutorial that walks through extensions, [Customize model elements using Extensions](../extensibility/customize-model-elements-extensions.md).
 
-See also
+Additional resources
 --------
 
 [Using the Fleet Management sample](fleet-management-sample.md)

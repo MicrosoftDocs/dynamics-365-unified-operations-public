@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # License codes and configuration keys report
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic points you to a report that lists the license codes and configuration keys available in Finance and Operations.
 
@@ -41,8 +40,8 @@ When you purchase Finance and Operations, all functionality is included. By defa
 
 When a license code or configuration key is disabled, the associated module or feature is removed from the user interface. Large sets of functionality, such as modules, are controlled by license codes. Many license codes, in turn, enable configuration keys that allow you to enable and disable functionality at a more detailed level.
 
-## To view the report
-The [License codes and configuration keys report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each configuration key that is available. The report also indicates the license code and menu items associated with each configuration key.
+## To view the report
+The [License codes and configuration keys report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each configuration key that is available. The report also indicates the license code and menu items associated with each configuration key.
 
 
 

@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up vendor accounts
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the types of information that you must specify when you create a new vendor account.
 
@@ -68,7 +67,7 @@ To add contacts for a vendor, on the **All vendors** page, on the **Vendor** tab
 
 You can create vendor contacts from scratch. Alternatively, you can copy details from another person who is already registered in Microsoft Dynamics 365 for Finance and Operations, and edit the information as you require.  
 
-**Note:** Adding a contact for a vendor isn't the same as adding contact information for that vendor. Although you might add general contact information for a vendor, you might also have several specific people who are contacts at that company, and who all have their own contact information.  
+**Note:** Adding a contact for a vendor isn't the same as adding contact information for that vendor. Although you might add general contact information for a vendor, you might also have several specific people who are contacts at that company, and who all have their own contact information.  
 
 You can't delete a contact person record if the contact is referenced on a document. Instead, you can inactivate the contact.  
 
@@ -101,15 +100,15 @@ When you put a vendor on hold, you can also specify a reason and a date when the
 
 You can bulk update the on-hold status to **All** for vendors based on the selected criteria on the **Vendor inactivation** page, and assign a reason for why the vendor is on-hold.
 
-The following criteria are used to include vendors that have been inactive in a period, include or exclude vendors that are employees, and exclude vendors that are under a grace time before the next hold.
+The following criteria are used to include vendors that have been inactive in a period, include or exclude vendors that are employees, and exclude vendors that are under a grace time before the next hold.
 
 - Based on the number of days that you enter in the **In activity period** field on the **Vendor inactivation** page, the application calculates the latest date where the vendor can have any activity to be considered inactive. That is, the current date minus the number of days that you enter. If one or more invoices exist for the vendor where the date is later than the calculated latest date, the vendor will be excluded from the inactivation. This is also validated if the vendor has payments after that date, open purchase requisitions, open purchase orders, requests for quotations, or replies.
-- The number of days in the **Grace time before next hold** field is used to calculate the latest grace date. That is, the current date minus the days that you enter. This only applies to vendors who have previously been inactivated. In the case of a previous inactivation, the application verifies the history of other occurrences of inactivation for the vendor and checks if the latest inactivation occurred before the latest grace date. If this is the case, the vendor will be included in the inactivation process.
+- The number of days in the **Grace time before next hold** field is used to calculate the latest grace date. That is, the current date minus the days that you enter. This only applies to vendors who have previously been inactivated. In the case of a previous inactivation, the application verifies the history of other occurrences of inactivation for the vendor and checks if the latest inactivation occurred before the latest grace date. If this is the case, the vendor will be included in the inactivation process.
 - The parameter **Include employees** refers to vendors that are linked to an employee. You can set if you want to include those employees.
 
 This process will always exclude vendors where the value in the **Vendor hold** field is **Never**.
 
-Vendors that pass the validations are put on-hold, which sets the **Vendor hold** field value to **All** and the **Reason** to what has been selected. A record in the on-hold history is created for the vendor.
+Vendors that pass the validations are put on-hold, which sets the **Vendor hold** field value to **All** and the **Reason** to what has been selected. A record in the on-hold history is created for the vendor.
 
 ## Vendor invoice account
 If more than one vendor has the same billing address, or if a vendor is invoiced through a third party, you can specify an invoice account on the vendor record. The invoice account is the account that the invoice amount is credited to when you create a vendor invoice from a purchase order. If you don't enter an invoice account on the vendor record, the vendor account is used as the invoice account.

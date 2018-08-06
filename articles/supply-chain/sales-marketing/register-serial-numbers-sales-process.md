@@ -34,15 +34,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Register serial numbers in the sales process
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This topic explains how you can register serial numbers on packing slips or invoices during the sales process. This functionality is useful if a company wants to capture serial numbers for service and warranty purposes, but doesn't have to maintain serial numbers in inventory from receipt to issue.
 
 Many companies just want to capture serial numbers for service and warranty purposes, and don't have to maintain serial numbers in inventory from receipt to issue. In these scenarios, Microsoft Dynamics 365 for Finance and Operations lets you register the serial numbers on the packing slips or invoices when products are sold. If products are later returned, you can trace each product to an invoice to determine whether you sold the product, and whether the service or warranty obligations are valid.
-Are there any prerequisites?
-----------------------------
 
 You must enable serial numbers for the sales process by selecting the **Active in sales process** option on the **Tracking dimension groups** page. The following events then occur in Microsoft Dynamics 365 for Finance and Operations:
 -   On the **Serial numbers** FastTab, the **Serial number control** option is selected. When this option is selected, you must register one serial number for each item on the packing slip or invoice.
@@ -76,8 +74,8 @@ No, you can't view the serialized items that you have on hand, because serial nu
 
 ## Can I register serial numbers for catchweight items?
 No, you can't register serial numbers for catch-weight items during the sales process. Additionally, if a product is set up as a catch-weight item, you can't assign the product to a tracking dimension group that is set up to use serial numbers only during the sales process.
-Can I register serial numbers at the retail POS?
-------------------------------------------------
+
+## Can I register serial numbers at the retail POS?
 
 Yes, the retail point of sale (POS) will prompt the user to enter a serial number when the user sells an item that is assigned a tracking dimension group that is set up to use serial numbers only during the sales process.
 

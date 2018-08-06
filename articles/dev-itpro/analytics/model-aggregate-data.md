@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Modeling and aggregate data
+title: Model aggregate data
 description: This tutorial will walk you through the process of modeling aggregate data .
 author: MilindaV2
 manager: AnnBe
@@ -30,17 +30,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Modeling and aggregate data
+# Model aggregate data
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This tutorial will walk you through the process of modeling aggregate data .
 
 Prerequisites
 -------------
 
-This tutorial requires you to access the environment using Remote Desktop, and be provisioned as an administrator. For more information, see the topic named [Access Microsoft Dynamics 365 for Finance and Operations instances](..\dev-tools\access-instances.md).
+This tutorial requires you to access the environment using Remote Desktop, and be provisioned as an administrator. For more information, see the topic named [Access Microsoft Dynamics 365 for Finance and Operations instances](../dev-tools/access-instances.md).
 
 ## Key concepts
 -   **Aggregate measurements**, similar to **perspectives** and **Cubes** from earlier versions, enable you to model and consume aggregate data.
@@ -61,7 +60,7 @@ If this is the first tutorial you are working on, make sure you have configured 
 
 ### Import the tutorial project
 
-If you have already imported the Fleet management tutorial project, skip to the next section. In Visual Studio, on the **Dynamics 365** menu, click **Import Project**.
+If you have already imported the Fleet management tutorial project, skip to the next section. In Visual Studio, on the **Dynamics 365** menu, click **Import Project**.
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **c:\\**, and unzip it.
 2.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
@@ -69,18 +68,18 @@ If you have already imported the Fleet management tutorial project, skip to the 
 4.  In the **Project file location** text box, enter **C:\FMLab**.
 5.  Select the **Overwrite Elements** check box, and then click **OK**.
 
-### Open the tutorial project
+### Open the tutorial project
 
 1.  In Visual Studio, open the **FMTutorial** project. On the **File** menu, point to **Open**, and then click **Project/Solution**.
 2.  In the **Open Project** dialog box, browse to C:\FMLab\FMTutorial, and then click FMTutorial. Click **Open**. The **FMTutorial** project appears in **Solution Explorer**.
 3.  Use the FMTDataHelper class to load data for the Fleet Management tutorial. In **Solution Explorer**, in the FMTutorial project, expand **Classes**. Right-click **FMTDataHelper**, and then click **Set as Startup Object**.
-4.  On the **Build** menu, click **Rebuild Solution**. You use the rebuild to update the timestamps of the imported artifacts. You can view the build progress in the **Output** window.
+4.  On the **Build** menu, click **Rebuild Solution**. You use the rebuild to update the timestamps of the imported artifacts. You can view the build progress in the **Output** window.
 5.  Press **Ctrl+F5** to run the project and load the data.
 
 ## Model an aggregate measurement for rental charges
 Often, when a user asks for additional information, you get a request for one or more new reports. Imagine that the manager of a rental car company has called and asked for a report. She is interested in finding out how the rental business is performing. She wants a report that shows rental revenue by month. You soon find out that she is interested in a breakdown of rental revenues. She wants to know whether the rental revenue is high in cases where they have sold additional services, for example, car seats, GPS, re-fueling, as opposed to the base rental charge. As it turns out, she suspects that specific customer groups are driving revenue up, and this is why she wanted the report in the first place. She insists on adding Customer group to the report. Because the revenue must be considered in relation to the number of rentals, she doesn’t want a few large corporate rentals to skew her analysis. You both agree that the number of rentals needs to be shown along with revenue. We could represent this requirement as a set of business questions using a matrix. Rows indicate the **measures** (or numbers) and the columns indicate the **dimensions** (or slicers). An “X” in the intersection between a measure and a dimension indicates that the measure needs to be “grouped by” the dimension.
 
-| ** **                 | **Rental date** | **Customer group** | **Rental charge type** |
+| ** **                 | **Rental date** | **Customer group** | **Rental charge type** |
 |-----------------------|-----------------|--------------------|------------------------|
 | **Revenue**           | X               | X                  | X                      |
 | **Number of rentals** | X               | X                  | X                      |
@@ -104,14 +103,14 @@ In this section you will add a new measure group to an existing aggregate measur
     | Table    | FMRentalChargeExtendedView |
 
 4.  In **Solution Explorer**, double-click the **FMRentalChargeExtendedView** view. When the designer form opens, expand the **Fields** node.
-5.  Select the **ExtendedAmount** and **RentalID** fields, and then drag-and-drop the two fields onto the **Measures** node of the newly created **FMAggregateMeasurement** measure group called **FMRentalChargeExtendedView**. As you drag the fields, hover your cursor over the **FMAggregateMeasurement** tab to access the **Measures** node. By default, when you drag-and-drop the fields, the system assumes that you want counts of the measures. In this case, you need to modify default properties for the **ExtendedAmount** and **RentalId** measures as follows:
+5.  Select the **ExtendedAmount** and **RentalID** fields, and then drag-and-drop the two fields onto the **Measures** node of the newly created **FMAggregateMeasurement** measure group called **FMRentalChargeExtendedView**. As you drag the fields, hover your cursor over the **FMAggregateMeasurement** tab to access the **Measures** node. By default, when you drag-and-drop the fields, the system assumes that you want counts of the measures. In this case, you need to modify default properties for the **ExtendedAmount** and **RentalId** measures as follows:
 
     | Property (ExtendedAmount) | Value                               |
     |---------------------------|-------------------------------------|
     | Default Aggregate         | **Sum**                             |
     | Field                     | ExtendedAmount (no change required) |
     | Name                      | Revenue                             |
- 
+
     | Property (RentalId) | Value                         |
     |---------------------|-------------------------------|
     | Default Aggregate   | **DistinctCount**             |
@@ -126,7 +125,7 @@ In this section you will add a new measure group to an existing aggregate measur
 To analyze rental revenue by the different charge types, you need to be able to slice revenue by the charge type. For this purpose, you will first model a charge type dimension.
 
 1.  In **Solution Explorer**, under **FMTutorial**, right-click **Analytics**, point to **Add**, and then click **New Item**.
-2.  Select **Dynamics 365 Artifacts** &gt; **Analytics** &gt; **Aggregate Dimension** from the list of items.
+2.  Select **Dynamics 365 Artifacts** &gt; **Analytics** &gt; **Aggregate Dimension** from the list of items.
 3.  In the **Name** property, enter **FMTChargeType**. This is the name of the aggregate dimension that will be created. This name must be unique. Click **Add**. The new dimension will appear in Visual Studio.
 4.  In **Application Explorer**, expand the **AOT** and click **Data Model** &gt; **Tables**. Drag-and-drop the **FMTChargeType** table from **Application Explorer** onto the root node of the newly created **FMTChargeType** dimension in the designer. Notice that dimension attributes and corresponding keys have been added using the AutoReport field group of the table.
 5.  Expand the **Attributes** node of the new dimension. Notice that several attributes have been created for you by default. The system has also created a dimension key based on unique indexes of the table. You can add additional fields by dragging and dropping them into the **Fields** node. 
@@ -143,25 +142,25 @@ Next, create dimension references to new and existing dimensions so that revenue
 1.  In **Solution Explorer**, double-click **FMTAggregateMeasurement** or, if you have it open, navigate to it in the designer.
 2.  In **Solution Explorer**, select the dimensions **FMTChargeType** and **FMTCustomerProfile**.
 3.  Drag-and-drop them into the **Dimensions** node of the **FMTRentalChargeExtendedView** measure group. Notice that dimension references have been created along with relations.
-4.  Save changes to **FMTAggregateMeasurement**. Review the property sheet for the dimension relation and notice that the **Use Table relations** property is set to **Yes**. Notice that the drag-and-drop operation created relationships between the measure group dimensions **FMTRentalChargeExtendedView** and **FMTChargeType**, **FMTCustomerProfile**. Review the property sheet for the dimension relation and notice that the **Use Table relations** property is set to **Yes**. 
+4.  Save changes to **FMTAggregateMeasurement**. Review the property sheet for the dimension relation and notice that the **Use Table relations** property is set to **Yes**. Notice that the drag-and-drop operation created relationships between the measure group dimensions **FMTRentalChargeExtendedView** and **FMTChargeType**, **FMTCustomerProfile**. Review the property sheet for the dimension relation and notice that the **Use Table relations** property is set to **Yes**. 
 
     [![FMTChargeType2](./media/fmtchargetype2.png)](./media/fmtchargetype2.png)
-    
+
     **NOTE:** In platform update 1611 and later, **UseTableRelations** property has been removed. When a new dimension reference is created, system will default existing relationships. You can continue to provide an explicit relationship by changing the relationship field that was defaulted. Providing an explicit relationship is equal to setting **UseTableRelationship** to **No**.
-5.  Expand the Dimension relations node for the **FMTCustomerProfile** dimension. Notice that the **UseTableRelations** property is set to **No**. In this case, the system has not been able to find a suitable relationship between the Measure group and dimension. You will need to specify one manually.
+5.  Expand the Dimension relations node for the **FMTCustomerProfile** dimension. Notice that the **UseTableRelations** property is set to **No**. In this case, the system has not been able to find a suitable relationship between the Measure group and dimension. You will need to specify one manually.
 6.  Expand the **FMTCustomerProfile** dimension reference if you have not done so already. Select the node **FMTCustomerExtendedView**. Right-click and see the property sheet.
 7.  Select **CustomerID** as the value for property **DimensionAttribute**. Select the relationship shown below. Select **Customer** for the property value **RelatedField**.
 8.  Save changes to **FMTAggregateMeasurement**. 
-    
+
     [![FMT4](./media/fmt4.png)](./media/fmt4.png)
 
-9.  In this scenario, we specified a relationship because the system was unable to find one. You could also specify a different relationship if you want to override the system choice by setting **Use Table Relations property** to **No**.
+9.  In this scenario, we specified a relationship because the system was unable to find one. You could also specify a different relationship if you want to override the system choice by setting **Use Table Relations property** to **No**.
 
 ### Model dimension references for the date dimension's rental start date and transaction date
 
 Assume that for analysis purposes, you want to enable slicing by the start date of the rental; but for accounting purposes, you want to enable slicing by the transaction date for each of the charges. To do this, you need to associate the rental charges measure group with two date dimensions. In the BI world, this pattern is known as **Role Playing dimensions**. By default, a date dimension is added to the measure group. You can rename the default name appropriately and add new date dimensions as required.
 
-1.  Expand the **Dimensions** node of the **FMTRentalChargeExtendedView** measure group. Notice that the **Date\_** dimension has already been included as dimension slicers. **Note:** If the table or the view used to model the measure group is a Company-specific table, for example it contains DATAAREAID as part of the key), a **Company** dimension relation will be created by default. In this case, the view we used is not a company specific one. 
+1.  Expand the **Dimensions** node of the **FMTRentalChargeExtendedView** measure group. Notice that the **Date\_** dimension has already been included as dimension slicers. **Note:** If the table or the view used to model the measure group is a Company-specific table, for example it contains DATAAREAID as part of the key), a **Company** dimension relation will be created by default. In this case, the view we used is not a company specific one. 
 
     [![FMT5](./media/fmt5.png)](./media/fmt5.png)
 
@@ -188,9 +187,9 @@ Assume that for analysis purposes, you want to enable slicing by the start date 
     No
     Tags
     RolePlayingDate; Fleet
-    Notice the new property called **Tags**. This property enables the discovery of patterns within code and metadata from within the Visual studio environment. You can enter any number of tags and they can be searched using the hot keys or the **Dynamics 365** menu in Visual Studio.
+    Notice the new property called **Tags**. This property enables the discovery of patterns within code and metadata from within the Visual studio environment. You can enter any number of tags and they can be searched using the hot keys or the **Dynamics 365** menu in Visual Studio.
 9.  Define the table relationship. Right-click **TransactionDate**, and then click **New Relation**. You do not need to specify any properties in the DimensionsRelation at this point.
-10. Expand **BIDateDimensionValue**, and then select the **Relationship** **Constraint**. Right-click and select the property sheet
+10. Expand **BIDateDimensionValue**, and then select the **Relationship** **Constraint**. Right-click and select the property sheet
 11. Specify the following properties for the BIDateDimensionsView relation constraint.
 
     | Property      | Value    |
@@ -199,7 +198,7 @@ Assume that for analysis purposes, you want to enable slicing by the start date 
     | Related Field | TranDate |
 
     The relationship you defined should look like the following screenshot.
-    
+
     [![FMY7](./media/fmy7.png)](./media/fmy7.png)
 
 12. Save the aggregate measurement.
@@ -211,11 +210,11 @@ Now that you have completed modeling the aggregate measurement, you can deploy t
 | **Option**                | **Considerations**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |---|---|
 | **In-memory real-time**   | This option will leverage the In-memory Column store indexes of SQL Server database to deploy Aggregate Measurements. This option is recommended when the Aggregate measurement is used for embedded analytics within the client where you need **real-time analytics**. For an overview of concepts on real-time analytics, see [Analytics, aggregate measurements, and KPI modeling](analytics.md).                                                                                                                                                                                   |
-| **Stage in Entity Store** | This option leverages Entity store, the operational data store that enables **near real-time PowerBI reporting**. If you choose this option, Aggregate measurement can be deployed to Entity store and you can schedule the data to be refreshed periodically. For an overview of this approach, refer to the blog post here: [https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/ ](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) |
+| **Stage in Entity Store** | This option leverages Entity store, the operational data store that enables **near real-time PowerBI reporting**. If you choose this option, Aggregate measurement can be deployed to Entity store and you can schedule the data to be refreshed periodically. For an overview of this approach, refer to the blog post here: [https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/ ](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) |
 
 **NOTE:** **SSAS Cube** option is no longer supported when modeling aggregate measurements.
 
-1.  Select the **FMTAggregateMeasurement** node. Right-click and select **Properties**. Select **InMemoryRealTime** as the value for the property **Usage**. 
+1.  Select the **FMTAggregateMeasurement** node. Right-click and select **Properties**. Select **InMemoryRealTime** as the value for the property **Usage**. 
 
     [![FMT9](./media/fmt9.png)](./media/fmt9.png)
 
@@ -230,7 +229,7 @@ Now that you have completed modeling the aggregate measurement, you can deploy t
 Model a KPI definition in Visual Studio by using the aggregate measurement you defined above.
 
 1.  In **Solution Explorer**, right-click **FMTutorial**, point to **Add**, and then click **New Item**.
-2.  Select **Dynamics 365 Artifacts** &gt; **Analytics** &gt; **Key Performance Indicator**. Enter FMTRevenuePerRental as the name of the KPI, and then click **Add**. The name must be unique across KPIs. The KPI is created.
+2.  Select **Dynamics 365 Artifacts** &gt; **Analytics** &gt; **Key Performance Indicator**. Enter FMTRevenuePerRental as the name of the KPI, and then click **Add**. The name must be unique across KPIs. The KPI is created.
 3.  Select **FMTRevenuePerRental**, and specify the **Measurement** Leave the default values for the other properties.
 
 | Property              | Value                   |
@@ -251,14 +250,14 @@ Model a KPI definition in Visual Studio by using the aggregate measurement you d
 | Measure Group | FMTRentalChargeExtendedView |
 | Measure       | RevenuePerRental            |
 
-  5. Define the expression for the KPI Goal. Select **Goal**, and specify the following properties.
+  5. Define the expression for the KPI Goal. Select **Goal**, and specify the following properties.
 
 | Property  | Value        |
 |-----------|--------------|
 | Goal Type | BasedOnValue |
 | Value     | 250          |
 
-  **Note**: You could have defined a goal based on an aggregate measure as well. In this case, we will define a number as the goal. 6. Save the KPI definition.
+  **Note**: You could have defined a goal based on an aggregate measure as well. In this case, we will define a number as the goal. 6. Save the KPI definition.
 
 ### Preview KPI in client
 
@@ -266,13 +265,13 @@ Next you will preview the KPI definition in the client.
 
 1.  Right-click **FMTutorial**, and then click **Re-Build**. On completion of the build, select the **Synchronize ... database** option
 2.  Open Internet Explorer, and navigate to your Rainier instance base URL.
-3.  Navigate to the **Reservation Management workspace** under **App links** &gt;** Fleet Management** &gt;** Workspaces &gt; Reservation Management**.
+3.  Navigate to the **Reservation Management workspace** under **App links** &gt;** Fleet Management** &gt;** Workspaces &gt; Reservation Management**.
 4.  Select the KPI tile **Total Revenue**. KPI details page for T**otal Revenue** KPI will be displayed.
 5.  To navigate to the newly defined KPI, select the **Show list** icon on top left. From the list of KPIs shown, select **FMTRevenuePerRental**
 
 Notice that the KPI details page for the new KPI, **FMTRevenuePerRental** is shown. Even though we did not define trend charts, the system created a set of charts based on the limited metadata defined by the developer. Users have the ability to modify KPI definitions and create new ones in the client. Next, you will modify the newly defined KPI. 6. To demonstrate this capability, you can change the KPI Goal. Click the **Edit** button on top left, and enter 900 as the Goal Value. 7. Modify the threshold properties as follows:
 
-|  Property          | Value      |
+|  Property          | Value      |
 |--------------------|------------|
 | Threshold Type     | Percentage |
 | Red if less than   | 90         |

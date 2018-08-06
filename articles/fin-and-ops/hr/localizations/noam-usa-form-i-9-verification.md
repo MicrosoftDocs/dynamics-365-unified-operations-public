@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Form I-9 employment verification
+title: Form I-9 verification
 description: This topic provides information about Form I-9 verification. Employers must complete Form I-9 for all new employees who will be working in the United States. The form documents that the employer has verified the identity of the new employee, and that the employee is authorized to work in the United States.
 author: ShielaSogge
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Form I-9 employment verification
+# Form I-9 verification
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic provides information about Form I-9 verification. Employers must complete Form I-9 for all new employees who will be working in the United States. The form documents that the employer has verified the identity of the new employee, and that the employee is authorized to work in the United States.
 
@@ -46,15 +45,15 @@ To prove employment eligibility, employees must complete and sign a right to wor
 You can collect, electronically store and retrieve, and verify Form I-9 information again from areas of the program that support employment processes. Here are some of the benefits of this functionality:
 
 -   It helps you make sure that all members of your workforce are legally authorized to work.
--   It helps process Form I-9 verification information more efficiently.
--   It helps improve the accuracy of Form I-9 information.
--   It streamlines the retrieval of Form I-9 information to help government inspections go more smoothly.
+-   It helps process Form I-9 verification information more efficiently.
+-   It helps improve the accuracy of Form I-9 information.
+-   It streamlines the retrieval of Form I-9 information to help government inspections go more smoothly.
 
 You can use the document management system to upload and save signed Form I-9 documents for each employee. 
 
 You can use the **Renew Form I-9 alarm list** report to identify employees whose Form I-9 information must be verified again. To prepare for a Bureau of Immigration and Customs Enforcement (BICE) inspection, you can use the **Form I-9** report to print Form I-9 information for all or selected employees.
 
-See also
+Additional resources
 --------
 
 [Organizing your workforce using departments, jobs, and positions](../../../talent/departments-jobs-positions.md)

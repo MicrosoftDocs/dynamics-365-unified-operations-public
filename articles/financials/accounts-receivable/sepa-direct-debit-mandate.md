@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up SEPA direct debit mandate
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 A Single Euro Payment Area (SEPA) direct debit lets a creditor collect funds from a customer's bank account, provided that the customer has granted a signed mandate to the creditor. The mandate that the customer signs authorizes the creditor to collect a payment and instructs the customer's bank to pay the collection. This topic is organized to show the process for setting up SEPA direct debit mandates.
 
@@ -57,7 +56,7 @@ You must set up a method of payment for direct debit mandates. You use this meth
 -   Optional: If you expect each of your customers to have multiple mandates, in the **Period** field, select **Invoice**. A separate payment will be created for each invoice, and each payment will use the mandate that is specified for the invoice.
 -   Select the **Require mandate** option to create payments by using direct debit mandates. The **Require mandate** option is available only if you select **Electronic payment** in the **Payment type** field.
 
-See Also
+Additional resources
 
 [Direct debit overview](sepa-direct-debit-overview.md) 
 

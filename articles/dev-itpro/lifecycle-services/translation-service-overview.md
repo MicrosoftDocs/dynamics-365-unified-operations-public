@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Microsoft Dynamics 365 Translation Service overview
+# Microsoft Dynamics 365 Translation Service
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The Microsoft Dynamics 365 Translation Service (DTS) is hosted in Microsoft Dynamics Lifecycle Services (LCS). It's designed to enhance the experience for partners and independent software vendors (ISVs) when they translate their solutions or add a new language for [supported Dynamics products](./translation-service-overview.md#supported-products).
 
@@ -97,16 +97,17 @@ Two preview features are available for DTS:
 + **NAV product availability** – You must turn on this feature if you want to create an LCS project for NAV products and access DTS from within the project.
 
 
-Product name |	Version |	File format supported |	Note
+Product name |  Version |   File format supported | Note
 --- | --- | --- | ---
-**Dynamics AX 2012**	| All versions	| .ktd, .ald	|
-**Dynamics 365 for Finance and Operations** | All versions |	.label.txt	|
+**Dynamics AX 2012**    | All versions  | .ktd, .ald    |
+**Dynamics 365 for Finance and Operations** | All versions |    .label.txt  |
 **Dynamics 365 for Retail** | All versions | .label.txt |
-**Dynamics CRM**	| 2011-2016 |	.resx, .js	|
-**Dynamics NAV** | 2015-2018	| .etx, .stx, .resx, .txt, .xml, .xlf |	.txt, .xml and .xlf are in NAV-specific formats
+**Dynamics CRM**    | 2011-2016 |   .resx, .js  |
+**Dynamics NAV** | 2015-2018    | .etx, .stx, .resx, .txt, .xml, .xlf | .txt, .xml and .xlf are in NAV-specific formats
 
 
 ## Glossary
+
 | Term | Description |
 |------|-------------|
 | XLIFF | XML Localization Interchange File Format. XLIFF is an XML-based format. It was created to standardize the way that localizable data is passed between tools during a localization process, and to serve as a common format for files that are used by computer-aided translation (CAT) tools. |

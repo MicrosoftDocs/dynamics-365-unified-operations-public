@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Retail for IT pros and developers
+title: Retail for IT pros and developers home page
 description: This page lists the resources that are available for IT pros and developers who support Retail.
 author: RobinARH
 manager: AnnBe
@@ -30,42 +30,41 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Microsoft Dynamics 365 for Retail for IT pros and developers
+# Retail for IT pros and developers home page
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This page lists the resources that are available for IT pros and developers who support Retail.
 
 Retail is dependent on Finance and Operations. We recommend that you familiarize yourself with the core [deployment and development content](../../dev-itpro/index.md).
 
 ## Retail components and architecture
--   [Components of Dynamics 365 for Retail](..\retail-components.md)
+-   [Components of Dynamics 365 for Retail](../retail-components.md)
 -   [MPOS architecture](retail-modern-pos-architecture.md)
 -   [Retail Server architecture](retail-server-architecture.md)
 -   [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
 -   [Retail Channel Performance Power BI  content](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Retail deployment
--   [Retail Modern POS configuration and installation](..\retail-modern-pos-device-activation.md)
--   [Manage Retail accounts and devices from headquarters](..\set-up-activation-accounts-validate-devices-hq.md)
+-   [Retail Modern POS configuration and installation](../retail-modern-pos-device-activation.md)
+-   [Manage Retail accounts and devices from headquarters](../set-up-activation-accounts-validate-devices-hq.md)
 -   [Retail POS device activation](retail-device-activation.md)
--   [Install the POS Layout designer](..\install-pos-layout-designer.md)
--   [Retail Hardware Station configuration and installation](..\retail-hardware-station-configuration-installation.md)
+-   [Install the POS Layout designer](../install-pos-layout-designer.md)
+-   [Retail Hardware Station configuration and installation](../retail-hardware-station-configuration-installation.md)
 -   [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
 -   [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
 -   [Access instances](../../dev-itpro/dev-tools/access-instances.md)
 
 ## Point of Sale (POS)
--   [Retail Modern POS configuration and installation](..\retail-modern-pos-device-activation.md)
--   [Manage Retail accounts and devices from headquarters](..\set-up-activation-accounts-validate-devices-hq.md)
+-   [Retail Modern POS configuration and installation](../retail-modern-pos-device-activation.md)
+-   [Manage Retail accounts and devices from headquarters](../set-up-activation-accounts-validate-devices-hq.md)
 -   [Retail POS device activation](retail-device-activation.md)
 -   [Security best practices for Retail Cloud POS in a shared environment](secure-retail-cloud-pos.md)
 -   [External gift card support](gift-card.md)
 
 ## Customize POS
-- [Retail POS screen layouts](..\pos-screen-layouts.md)
-- [Install the POS Layout designer](..\install-pos-layout-designer.md)
+- [Retail POS screen layouts](../pos-screen-layouts.md)
+- [Install the POS Layout designer](../install-pos-layout-designer.md)
 - [Use Retail Modern POS in offline mode](retail-modern-pos-offline.md)
 - [Call a new or customized CRT service in offline mode](call-crt-service-offline.md)
 - [Modern POS and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
@@ -96,7 +95,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 -   [Retail Server customer and consumer APIs](retail-server-customer-consumer-api.md)
 
 ## Retail hardware station
--   [Retail hardware station configuration and installation](..\retail-hardware-station-configuration-installation.md)
+-   [Retail hardware station configuration and installation](../retail-hardware-station-configuration-installation.md)
 -   [Hardware Station Extensibility](hardware-station-extensibility.md)
 
 ## Retail Store Scale Unit
@@ -110,10 +109,10 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 -   [Add properties to a sales order](add-properties-sales-order.md)
 
 ## Retail SDK
-- [Retail SDK Overview](retail-sdk\retail-sdk-overview.md)
-- [Retail SDK packaging](retail-sdk\retail-sdk-packaging.md)
-- [Integrate the Retail SDK with the continuous build system (VSTS)](retail-sdk\integrate-retail-sdk-continuous-build.md)
-- [Retail SDK samples](retail-sdk\retail-sdk-samples.md)
+- [Retail SDK Overview](retail-sdk/retail-sdk-overview.md)
+- [Retail SDK packaging](retail-sdk/retail-sdk-packaging.md)
+- [Integrate the Retail SDK with the continuous build system (VSTS)](retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [Retail SDK samples](retail-sdk/retail-sdk-samples.md)
 - [Channel database (DB) extensions](channel-db-extensions.md) 
 - [CDX extensibility](cdx-extensibility.md)
 - [Order attributes](order-attributes.md)
@@ -135,7 +134,8 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 -   [Configure an online store](configure-online-store.md)
 
 ## Payment connectors
--   [Implementing a payment connector and payment device (white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+- [Payment integration with a payment terminal](end-to-end-payment-extension.md)
+- [Implementing a payment connector and payment device (white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 -   [Create a Windows installer for a payment connector](create-windows-installer-payment-connector.md)
 -   [Deploy a payment connector](deploy-payment-connector.md)
 

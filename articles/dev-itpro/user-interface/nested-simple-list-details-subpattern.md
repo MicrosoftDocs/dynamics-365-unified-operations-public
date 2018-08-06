@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Nested Simple List and Details subpattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Nested Simple List and Details (NSL+D) subpattern. This subpattern is used to display information about a secondary or child entity when that child entity is presented within another form type.
 
 Usage
 -----
 
-This article describes a variant of the Simple List and Details (SL+D) pattern that is named the Nested Simple List and Details (NSL+D) subpattern. Whereas the SL&D form pattern is used to display information about the primary entity on the form, the NSL+D subpattern is used to display information about a secondary or child entity when that child entity is presented within another form type. The amount of information that is related to the child entity should be too much for a grid (10 or more fields) but not enough for the child entity to deserve its own form. The NSL+D subpattern has a few differences from the SL+D form pattern:
+This article describes a variant of the Simple List and Details (SL+D) pattern that is named the Nested Simple List and Details (NSL+D) subpattern. Whereas the SL&D form pattern is used to display information about the primary entity on the form, the NSL+D subpattern is used to display information about a secondary or child entity when that child entity is presented within another form type. The amount of information that is related to the child entity should be too much for a grid (10 or more fields) but not enough for the child entity to deserve its own form. The NSL+D subpattern has a few differences from the SL+D form pattern:
 
 -   You may not nest an NSL+D subpattern within another NSL+D subpattern.
 -   The NSL+D subpattern uses a Toolbar for contextual actions.
@@ -52,7 +51,7 @@ This article describes a variant of the Simple List and Details (SL+D) pattern t
 ## Pattern changes for Microsoft Dynamics 365 for Finance and Operations
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
--   This pattern is new. Any pattern changes to the SL+D pattern can be found in the [Simple List and Details](simple-list-details-form-pattern.md) pattern document.
+-   This pattern is new. Any pattern changes to the SL+D pattern can be found in the [Simple List and Details](simple-list-details-form-pattern.md) pattern document.
 
 ## Model
 ### High-level structure
@@ -92,9 +91,9 @@ The verification checklist shows the steps for manually verifying that the form 
 **Nested simple list & detail guidelines**
 
 -   There should not be duplicate **New** or **Delete** buttons.
--   If a **grid** is used for the list portion of the pattern:
+-   If a **grid** is used for the list portion of the pattern:
     -   The grid should be a **list-style** grid.
-    -   List-style grids should display no more than three rows (lines) for each record in the List style grid. Typically, just the ID and Description are sufficient.
+    -   List-style grids should display no more than three rows (lines) for each record in the List style grid. Typically, just the ID and Description are sufficient.
     -   When there is no data, the grid control should not automatically add a new record.
 -   A **details** section that is displayed on the right of the Container Body:
     -   Display the grid columns as the first fields in the Details Header Group, in the same order that they are displayed in the grid.

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # VAT reconciliation report
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities. This task was created using the demo data company DEMF with the country/region of legal entity primary address updated to be Norway.
 

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: MultiLookupDesign
+title: MultiLookupDesign type
 description: Multi-Lookup design object type.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# MultiLookupDesign Type
+# MultiLookupDesign type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Multi-Lookup design object type.
 

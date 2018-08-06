@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: S Classes
+title: S classes
 description: System API classes that start with the letter S.
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# S Classes
+# S classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter S.
 

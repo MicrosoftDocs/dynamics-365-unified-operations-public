@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure SQL Server Reporting Services for an on-premises deployment
+title: Configure SQL Server Reporting Services for on-premises deployments
 description: This topic provides information about configuring SQL Server Reporting Services (SSRS) for an on-premises deployment.
 author: sarvanisathish
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 
 ---
-# Configure SQL Server Reporting Services for an on-premises deployment
+# Configure SQL Server Reporting Services for on-premises deployments
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Use the steps in this topic to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 for Finance and Operations (on-premises) deployment.
 
@@ -57,13 +57,13 @@ Use the steps in this topic to configure SQL Server Reporting Services (SSRS) fo
 
     [![web portal url tab](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
     
-  After the Portal is configured, the **Web Portal** tab will match the following graphic.
+   After the Portal is configured, the **Web Portal** tab will match the following graphic.
     [![web portal tab](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
     
 8. Click the reports URL to view the SQL Server Reporting Services web portal. 
-9.	When you are in the portal, create a new folder named **Dynamics**.
+9. When you are in the portal, create a new folder named **Dynamics**.
 
-    [![dynamics folder](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
+   [![dynamics folder](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
     
 10. In the **Reporting Services Configuration Manager**, click the **E-mail Settings** tab and verify that the settings match the following graphic.
 
@@ -73,17 +73,17 @@ Use the steps in this topic to configure SQL Server Reporting Services (SSRS) fo
 
     [![execution account tab](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
     
-  Don’t change the default settings on the **Encryption Keys** tab.
+    Don’t change the default settings on the **Encryption Keys** tab.
     [![encryption keys tab](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
     
 12. Click the **Subscription Settings** tab, and verify that the settings match the following graphic.
 
     [![subscription settings tab](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
     
-  Don’t change the default settings on the **Scale-out Deployment** tab.
+    Don’t change the default settings on the **Scale-out Deployment** tab.
     [![scale-out deployment tab](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
     
-  Don’t change the default settings on the **Power BI Integration** tab.
+    Don’t change the default settings on the **Power BI Integration** tab.
     [![power bi integration tab](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
     
 13. Click **Exit** to close the **Reporting Services Configuration Manager**.

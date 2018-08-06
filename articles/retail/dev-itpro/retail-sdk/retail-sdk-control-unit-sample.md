@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Control unit sample for Sweden
+title: Sample for Retail POS integration with control units for Sweden
 description: This topic is the building and installation guide for the sample for control unit integration for Sweden. 
 author: EvgenyPopovMBS
 manager: Annbe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3.2
 ---
 # Sample for Retail POS integration with control units for Sweden
 
-[!include[banner](../../../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 **SAMPLE CODE NOTICE**
 
@@ -53,34 +53,34 @@ Follow these steps to set up a development environment so that you can test and 
 
 1. Extend the Hardware station component:
 
-    1. Open the Hardware station solution under **RetailSDK\SampleExtensions\HardwareStation**.
-    2. Find the **HardwareStation.Extension.FiscalRegisterSample.csproj** extension project, and compile it.
-    3. Find the following files in **Extension.FiscalRegisterSample\bin\Debug**:
+   1. Open the Hardware station solution under **RetailSDK\SampleExtensions\HardwareStation**.
+   2. Find the **HardwareStation.Extension.FiscalRegisterSample.csproj** extension project, and compile it.
+   3. Find the following files in **Extension.FiscalRegisterSample\bin\Debug**:
 
-        - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** assembly
-        - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** configuration
-        - The **Interop.CleanCash_1_1.dll** assembly
+       - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** assembly
+       - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** configuration
+       - The **Interop.CleanCash_1_1.dll** assembly
 
-    4. Copy the files to a deployed Hardware station machine:
+   4. Copy the files to a deployed Hardware station machine:
 
-        - **Remote Hardware station:** Copy the files to the **bin** folder under the Microsoft Internet Information Services (IIS) Hardware station site location.
-        - **Local Hardware station:** Copy the files to the Modern POS client broker location.
+       - **Remote Hardware station:** Copy the files to the **bin** folder under the Microsoft Internet Information Services (IIS) Hardware station site location.
+       - **Local Hardware station:** Copy the files to the Modern POS client broker location.
 
-    5. Find the configuration file for Hardware station's extensions.
+   5. Find the configuration file for Hardware station's extensions.
 
-    # [Retail 7.3 and earlier](#tab/retail-7-3)
+      # [Retail 7.3 and earlier](#tab/retail-7-3)
 
-    **Remote Hardware station:** The file is named **hardwarestation.shared.config**, and it's under the IIS Hardware station site location.
+      **Remote Hardware station:** The file is named **hardwarestation.shared.config**, and it's under the IIS Hardware station site location.
 
-    **Local Hardware station:** The file is named **HardwareStation.Dedicated.config**, and it's under the Modern POS client broker location.
+      **Local Hardware station:** The file is named **HardwareStation.Dedicated.config**, and it's under the Modern POS client broker location.
 
-    # [Retail 7.3.1 and later](#tab/retail-7-3-1)
+      # [Retail 7.3.1 and later](#tab/retail-7-3-1)
 
-    The file is named **HardwareStation.Extension.config**:
+      The file is named **HardwareStation.Extension.config**:
 
-    **Remote Hardware station:** The file is located under the IIS Hardware station site location.
+      **Remote Hardware station:** The file is located under the IIS Hardware station site location.
 
-    **Local Hardware station:** The file is located under the Modern POS client broker location.
+      **Local Hardware station:** The file is located under the Modern POS client broker location.
 
     ---
 
@@ -97,30 +97,30 @@ Follow these steps to set up a development environment so that you can test and 
 
 2. Extend the CRT component:
 
-    1. Open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\SampleExtensions\CommerceRuntime**.
-    2. Find the **Runtime.Extensions.FiscalRegisterReceiptSample** project, and build it.
-    3. Find the ext.config file for CRT:
+   1. Open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\SampleExtensions\CommerceRuntime**.
+   2. Find the **Runtime.Extensions.FiscalRegisterReceiptSample** project, and build it.
+   3. Find the ext.config file for CRT:
 
-        - **Retail Server:** The file is named **commerceRuntime.ext.config**, and it's under the **bin\ext** folder under the IIS Retail server site location.
-        - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the **bin\ext** folder under the local CRT client broker location.
+       - **Retail Server:** The file is named **commerceRuntime.ext.config**, and it's under the **bin\ext** folder under the IIS Retail server site location.
+       - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the **bin\ext** folder under the local CRT client broker location.
 
-    4. Register the CRT change in the configuration file.
+   4. Register the CRT change in the configuration file.
 
-        ``` xml
-        <add source="type" value="Contoso.Commerce.Runtime.FiscalRegisterReceipt, Contoso.Commerce.Runtime.FiscalRegisterReceipt" />
-        ```
+       ``` xml
+       <add source="type" value="Contoso.Commerce.Runtime.FiscalRegisterReceipt, Contoso.Commerce.Runtime.FiscalRegisterReceipt" />
+       ```
 
-        > [!NOTE]
-        > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+       > [!NOTE]
+       > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-    5. Find the **Contoso.Commerce.Runtime.FiscalRegisterReceiptSample.dll** assembly file in **Extensions.FiscalRegisterReceiptSample\bin\Debug**.
-    6. Copy the assembly to the CRT extensions folder:
+   5. Find the **Contoso.Commerce.Runtime.FiscalRegisterReceiptSample.dll** assembly file in **Extensions.FiscalRegisterReceiptSample\bin\Debug**.
+   6. Copy the assembly to the CRT extensions folder:
 
-        - **Retail Server:** Copy the assembly to the **\bin\ext** folder under the IIS Retail server site location.
-        - **Local CRT on Modern POS:** Copy the assembly to the **\ext** folder under the local CRT client broker location.
+       - **Retail Server:** Copy the assembly to the **\bin\ext** folder under the IIS Retail server site location.
+       - **Local CRT on Modern POS:** Copy the assembly to the **\ext** folder under the local CRT client broker location.
 
-    > [!NOTE]
-    > All the code changes for CRT and Retail Server are all part of RetailSdk\SampleExtensions. Therefore, the preceding steps show how to build, deploy, and test these code changes.
+      > [!NOTE]
+      > All the code changes for CRT and Retail Server are all part of RetailSdk\SampleExtensions. Therefore, the preceding steps show how to build, deploy, and test these code changes.
 
 3. Extend the Modern POS component:
 

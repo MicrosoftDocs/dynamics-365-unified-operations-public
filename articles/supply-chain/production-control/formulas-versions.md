@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Formulas and formula versions
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A formula defines the materials, ingredients, and outcomes of a specific process in process manufacturing. Together with the corresponding route, the formula defines the whole process in process manufacturing. Formulas are used to plan and produce products in process manufacturing.
 

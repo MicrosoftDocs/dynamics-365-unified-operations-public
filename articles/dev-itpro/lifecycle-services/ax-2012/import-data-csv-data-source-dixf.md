@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Import data from a CSV data source (AX 2012)
-description: You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to import data from a CSV file into Microsoft Dynamics AX.
+title: Import data from CSV data sources
+description: You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to import data from a CSV file into Microsoft Dynamics AX.
 author: kfend
 manager: AnnBe
 ms.date: 11/13/2017
@@ -30,12 +30,11 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Import data from a CSV data source (AX 2012)
+# Import data from CSV data sources
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-
-You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to import data from a CSV file into Microsoft Dynamics AX.
+You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to import data from a CSV file into Microsoft Dynamics AX.
 
 This walkthrough provides examples to illustrate the following tasks:
 
@@ -57,7 +56,7 @@ To complete this walkthrough you will need:
 To work through this example, use any of the delimited demo files that are shipped with the Data Import/Export Framework. For more information on the demo files, see [Demo files for the Data import/export framework (DIXF, DMF)](demo-files-dixf.md).
 
 ## Define the format of your source data
-1.  Open **Data Import/Export Framework**, and then click **Setup** &gt; **Source data formats**.
+1.  Open **Data Import/Export Framework**, and then click **Setup** &gt; **Source data formats**.
 2.  Click **New** and enter the name CSV for the source.
 3.  Verify that the source type is **File**.
 4.  Configure the following options:

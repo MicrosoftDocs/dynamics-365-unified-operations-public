@@ -32,8 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # VAT exchange rate overview
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about exchange rates for the VAT calculation. The exchange rate that is used for VAT calculation can differ from the exchange rate that is used for company accounting functions. When a document in a foreign currency is posted, any exchange rate differences that occur are posted to specific ledger accounts.
 

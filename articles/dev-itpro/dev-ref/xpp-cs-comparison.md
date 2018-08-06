@@ -5,7 +5,7 @@ title: X++ and C# comparison
 description: This topic compares X++ and C# syntax and programming.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ and C# comparison
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic compares X++ and C# syntax and programming.
 
@@ -50,8 +49,8 @@ The following sections describe some basic similarities and differences between 
 The following X++ features are the same for C#:
 -   Single line (`//`) and multi-line (/\* \*/) comments.
 -   `==` (equal) operator for determining whether two values are equal.
--   != (not equal to) operator for determining whether two values are not equivalent.
--   + (plus sign) operator for string concatenation.
+-   `!=` (not equal to) operator for determining whether two values are not equivalent.
+-   `+` (plus sign) operator for string concatenation.
 
 ### Differences
 
@@ -60,7 +59,7 @@ The following table lists X++ features that are different in C#.
 | Feature | X++ | C# | Comments |
 |---|---|---|---|
 | Declarations | All declarations must be at the start of the method, before any X++ statements. | Declarations can occur anywhere in the method. | Both languages permit multiple variables of the same type to be listed together in one declaration. Both languages allow you to assign an initial value in the declaration statement. |
-| `if` and `else` conditional statements | The `if` statement accepts any type of expression that it can automatically convert to a Boolean. Common examples include an `int` for which 0 means false, or an object for which null means false. | The `if` statement requires a Boolean expression. | The syntax structure regarding curly braces and parentheses is exactly the same between X++ and C#. |
+| `if` and `else` conditional statements | The `if` statement accepts any type of expression that it can automatically convert to a Boolean. Common examples include an `int` for which 0 means false, or an object for which null means false. | The `if` statement requires a Boolean expression. | The syntax structure regarding curly braces and parentheses is exactly the same between X++ and C#. |
 | Literal string | A literal string can be delimited by either of the following:<ul><li>A pair of double quotation mark (") characters.</li><li>A pair of single quotation mark (') characters.</li></ul> | A literal string must be delimited by a pair of double quotation mark (") characters. | For X++, the double quotation mark characters are usually used to delimit strings. However, it is convenient delimit a string with single quotation mark characters when your string must contain a double quotation mark character.|
 | char `type` | There is no `char` or character type in X++. You can declare a `str` of length one, but it is still a string:<br> `str 1 myString = "a";` | There is a `char` in C#. You cannot pass a `char` as the parameter to a method that inputs a `string` parameter, although you can first explicitly convert the `char` to a `string`.| For more information about X++ data types, see Primitive Data Types.|
 | Output of messages| X++ delivers messages to the user in the Infolog window. Common methods include the following:<ul><li>The <strong>print</strong> statement:</li><li>static methods on the `Global` class:<ul><li>Global::info</li><li>Global::warning</li><li>Global::error</li></ul></li></ul>| For a command line C# program, messages can be delivered to the console. Common methods include the following:<ul><li>`Console.Out.WriteLine`</li><li>`Console.Error.WriteLine`</li></ul>| The <strong>print</strong> statement is not a function nor a method. Recommended use would be `print mystring;` rather than `print(mystring);`. A `pause;` statement is always useful shortly after a <strong>print</strong> statement. The print statement is convenient for testing because it automatically converts <strong>int</strong> and other primitive values to strings for display. For more information, see Print Statements. The `Global` class has special recognition in the X++ compiler. The `info` method can be called without including the Global:: prefix.|
@@ -72,8 +71,8 @@ This section contains two simple code samples. One sample is written in X++, and
 -   /\* \*/ multi-line comment
 -   `if` statement
 -   `==` operator
--   != operator
--   + operator to concatenate strings
+-   `!=` operator
+-   `+` operator to concatenate strings
 -   Global::info for message output, with and without the Global:: prefix
 -   Global::error for message output
 -   The use of single and double quotation characters (' and ") as string delimiters.
@@ -200,7 +199,7 @@ The **while** keyword supports looping in both X++ and C#.
     static void JobRs002a_LoopsWhile(Args _args)
     {
         int nLoops = 1;
-        while (nLoops &lt;= 88)
+        while (nLoops <= 88)
         {
             print nLoops;
             pause;
@@ -213,7 +212,7 @@ The **while** keyword supports looping in both X++ and C#.
         }
         beep(); // Function.
         pause; // X++ keyword.
-} 
+} 
 
 ##### Output
 
@@ -252,8 +251,8 @@ C#
         }
     }
 
- 
 
+ 
 ##### Output
 
 The console output from the C# program is as follows:
@@ -280,7 +279,7 @@ In X++ the counter variable cannot be declared as part of the **for** statement.
     static void JobRs002a_LoopsWhileFor(Args _args)
     {
         int ii; // The counter.
-        for (ii=1; ii &lt; 5; ii++)
+        for (ii=1; ii < 5; ii++)
         {
             print ii;
             pause;
@@ -296,8 +295,8 @@ In X++ the counter variable cannot be declared as part of the **for** statement.
         pause;
 }
 
- 
 
+ 
 ##### Output
 
 The output in the X++ Print window is as follows:
@@ -338,8 +337,8 @@ C#
         }
     }
 
- 
 
+ 
 ##### Output
 
 The console output from the C# program is as follows:
@@ -457,8 +456,8 @@ C#
     >>
     ***/
 
- 
 
+ 
 ## X++, C# Comparison: String Case and Delimiters
 This section compares the treatment of strings with mixed casing in X++ and C\#. It also explains the string delimiters that are available in X++.
 
@@ -475,7 +474,7 @@ X++ features that are different in C\# are listed in the following table.
 
 | Feature | X++ | C# | Comments |
 |---|---|---|---|
-| `== `comparison operator| Insensitive: the `==` operator is insensitive to differences in string casing.| In C#, the `==` operator is sensitive to differences in string casing.| In X++ you can use the strCmp Function for case sensitive comparisons between strings.|
+| `== `comparison operator| Insensitive: the `==` operator is insensitive to differences in string casing.| In C#, the `==` operator is sensitive to differences in string casing.| In X++ you can use the strCmp Function for case sensitive comparisons between strings.|
 | String delimiters| In X++ you can use either the single (') or double (`"`) quotation mark as the string delimiter. **Note**: Usually the best practice is to use double quotation marks for strings that might be displayed to the user. However, it is convenient to delimit a string with single quotation marks when a double quotation mark is one of the characters in the string.| In C# you must use the double quotation mark as the string delimiter. This refers to the type `System.String`.| In X++ and C# you have the option of embedding a delimiter in a literal string and escaping it with \. <br>In X++ you also have the alternative of embedding single quotation marks in a string that is delimited by double quotation marks (or the reverse), without having to use the escape.|
 | Character delimiters| X++ has a string data type (`str`), but no character type.| In C# you must use the single quotation mark as the character delimiter. This refers to the type `System.Char`.| In the .NET Framework, a `System.String` of length one is a different data type than a `System.Char` character.|
 
@@ -493,8 +492,8 @@ The + and += operators are used to concatenate strings in both X++ and C\#, as i
 
 | X++  | C#   | Comments |
 |---------|--------------------|----------------------------|
-| `myString1 = "Hello" + " world";` <br>Result is equality: <br>`myString1 == "Hello world"`  | (Same as for X++.) | In both X++ and C#, the behavior of the + operator depends on the data type of its operands. The operator concatenates strings, or adds numbers. |
-| `mystring2 = "Hello";` <br>`myString2 += " world";` <br>Result is equality: `myString2 == "Hello world"` | (Same as for X++.) | In both X++ and C#, the following statements are equivalent: <br>`a = a + b;` <br>`a += b;`  |
+| `myString1 = "Hello" + " world";` <br>Result is equality: <br>`myString1 == "Hello world"`  | (Same as for X++.) | In both X++ and C#, the behavior of the + operator depends on the data type of its operands. The operator concatenates strings, or adds numbers. |
+| `mystring2 = "Hello";` <br>`myString2 += " world";` <br>Result is equality: `myString2 == "Hello world"` | (Same as for X++.) | In both X++ and C#, the following statements are equivalent: <br>`a = a + b;` <br>`a += b;`  |
 
 ### Example 3: Embedding and Escaping String Delimiters
 
@@ -502,9 +501,9 @@ Either single or double quotation marks can be used to delimit strings in X++. T
 
 | X++ | C#         | Comments   |
 |---------|-----|--------------------------------------|
-| `myString1 = "He said \"yes\".";` <br>Result: <br>`He said "yes".`  | (Same as for X++.)  | The escape character enables you to embed string delimiters inside strings.   |
-| `myString2 = 'He said "yes".';` <br>Result: <br>`He said "yes".`  | C# syntax does not allow for single quotation marks to delimit strings.    | For strings that may be seen by the user, it is considered a best practice to use the escape character instead of the single quotation marks as shown in the example.   |
-| `myString3 = "He said 'yes'.";` <br>Result: <br>`He said 'yes'.` | (Same as for X++.) | In X++, the single quotation marks are not treated as delimiters unless the string starts with a single quotation mark delimiter. In C# the single quotation mark has no special meaning for strings, and it cannot be used to delimit strings. In C# the single quotation mark is the required delimiter for literals of type `System.Char`. X++ has no character data type. |
+| `myString1 = "He said \"yes\".";` <br>Result: <br>`He said "yes".`  | (Same as for X++.)  | The escape character enables you to embed string delimiters inside strings.   |
+| `myString2 = 'He said "yes".';` <br>Result: <br>`He said "yes".`  | C# syntax does not allow for single quotation marks to delimit strings.    | For strings that may be seen by the user, it is considered a best practice to use the escape character instead of the single quotation marks as shown in the example.   |
+| `myString3 = "He said 'yes'.";` <br>Result: <br>`He said 'yes'.` | (Same as for X++.) | In X++, the single quotation marks are not treated as delimiters unless the string starts with a single quotation mark delimiter. In C# the single quotation mark has no special meaning for strings, and it cannot be used to delimit strings. In C# the single quotation mark is the required delimiter for literals of type `System.Char`. X++ has no character data type. |
 | `str myString4 = 'C';` <br>Here the single quotation is a string delimiter. | `char myChar4 = 'C';` <br>Here the single quotation mark is a `System.Char` delimiter, not a `System.String` delimiter. | X++ has no data type that corresponds to `System.Char` in the .NET Framework. An X++ string that is limited to a length of one is still a string, not a character data type. |
 
 ### Example 4: Single Escape Character
@@ -513,8 +512,8 @@ Examples that illustrate the single escape character in either the input or the 
 
 | X++    | C# | Comments     |
 |-----------------------|--------|------------------|
-| `myString1 = "Red\ shoe";` <br>Result: <br>`Red shoe`     | A literal string in C# cannot contain the two character sequence of escape followed by a space, such as "\ ". A compiler error occurs. | When the X++ compiler encounters the two character sequence of "\ ", it discards the single escape character. |
-| `myString2 = "Red\\ shoe";` <br>Result: <br>`Red\ shoe` | (Same as for X++.)  | In a pair of escape characters, the first negates the special meaning of the second.     |
+| `myString1 = "Red\ shoe";` <br>Result: <br>`Red shoe`     | A literal string in C# cannot contain the two character sequence of escape followed by a space, such as "\ ". A compiler error occurs. | When the X++ compiler encounters the two character sequence of "\ ", it discards the single escape character. |
+| `myString2 = "Red\\ shoe";` <br>Result: <br>`Red\ shoe` | (Same as for X++.)  | In a pair of escape characters, the first negates the special meaning of the second.     |
 
 ## Comparison: Array Syntax
 
@@ -530,13 +529,13 @@ The following table lists areas in the [] syntax for arrays that are different f
 
 | Category | X++ | C# | Comments |
 |---|---|---|---|
-| Declaration| An array is declared with square brackets appended to the variable name.| An array is declared with square brackets appended to the data type.| `int myInts[]; // X++` <br>**Note**: An X++ array cannot be a parameter in a method.<br>`int[] myInts; // C#`|
-| Declaration| The array syntax supports only primitive data types, such as `int` and `str`. The syntax does not support classes or tables.|The array syntax supports primitive data types and classes.| In X++ you can use the `Array` Array for an array of objects.|
+| Declaration| An array is declared with square brackets appended to the variable name.| An array is declared with square brackets appended to the data type.| `int myInts[]; // X++` <br>**Note**: An X++ array cannot be a parameter in a method.<br>`int[] myInts; // C#`|
+| Declaration| The array syntax supports only primitive data types, such as `int` and `str`. The syntax does not support classes or tables.|The array syntax supports primitive data types and classes.| In X++ you can use the `Array` Array for an array of objects.|
 | Declaration| X++ is limited to single dimension arrays (myStrings[8]).| C# adds support for multi-dimensional arrays (myStrings[8,3]) and for jagged arrays (myStrings[8][3]).| In X++ you cannot have an array of arrays. However, there is advanced syntax for limiting the amount of active memory that a large array can consume, which looks like the multi-dimensional syntax in C#: int intArray[1024,16];. For more information, see Best Practice Performance Optimizations: Swapping Arrays to Disk.|
 | Declaration| In X++ an array is a special construct but it is not an object.| In C# all arrays are objects regardless of syntax variations.| X++ does have an Array class, but its underlying mechanism differs from arrays created by using the [] syntax. In C# all arrays use the same underlying mechanism, regardless of whether [] syntax of the `System.Array` class is used in your code.|
 | Length| In X++ the length of a static sized array is determined in the declaration syntax.| In C# the size of an array is determined when the array object is constructed.| When you use the [] declaration syntax in X++, no more preparation is needed before you assign values to the array. <br>In C# you must declare and then construct the array before assigning to it.|
-| Length| An X++ array can have a dynamic length that can be increased even after population has begun. This applies only when the array is declared without a number inside the []. Performance might be slowed if the length of the dynamic array is increased many times.| In C# the length of an array cannot be changed after the length is set.| In the following fragment of X++ code, only the `myInts` array is dynamic and can increase in size. <br>`int myInts[];` <br>`int myBools[5];` <br>`myInts[2] = 12;` <br>`myInts[3] = 13;` <br>`myBools[6] = 26; //Error`|
-| Length| You can get the length of some arrays by using the `dimOf` function.| C# arrays are objects that have a `Length` property.| No comments.|
+| Length| An X++ array can have a dynamic length that can be increased even after population has begun. This applies only when the array is declared without a number inside the []. Performance might be slowed if the length of the dynamic array is increased many times.| In C# the length of an array cannot be changed after the length is set.| In the following fragment of X++ code, only the `myInts` array is dynamic and can increase in size. <br>`int myInts[];` <br>`int myBools[5];` <br>`myInts[2] = 12;` <br>`myInts[3] = 13;` <br>`myBools[6] = 26; //Error`|
+| Length| You can get the length of some arrays by using the `dimOf` function.| C# arrays are objects that have a `Length` property.| No comments.|
 | Indexing| Array indexing is 1 based.| Array indexing is 0 based.
 | mtIntArray[0] would cause an error in X++.|
 | Constant| In X++ a constant value is best achieved by using the <strong>#define</strong> precompiler directive.| In C# you can decorate your variable declaration with the keyword <strong>const</strong>, to achieve a constant value.| X++ has no <strong>const</strong> keyword. C# cannot assign values to variables that are created by its #define precompiler directive.|
@@ -659,7 +658,7 @@ The output from the C# program to the command line console is as follows:
 The **container** is a special data type that is available in X++. It can be considered as similar to an array, or similar to a `List` collection.
 
 ## Comparison: Collections
-Finance and Operations provides the X++ `List` collection class. The .NET Framework that is used in C# has a similar class named `System.Collections.Generic.List`.
+Finance and Operations provides the X++ `List` collection class. The .NET Framework that is used in C# has a similar class named `System.Collections.Generic.List`.
 
 ### Comparing the Use of the List Classes
 
@@ -667,8 +666,8 @@ The following table compares methods on the X++ `List` class to the methods on `
 
 | Feature | X++ | C# | Comments |
 |---|---|---|---|
-| Declaration of collection| `List myList;`| `List<string> myList;`| The X++ declaration does not include the type of elements to be stored.|
-| Declaration of iterator|`ListIterator iter`<br>`ListEnumerator enumer;`| IEnumerator&lt;string&gt; iter;| In X++ the `ListIterator` object has methods that can `insert` and `delete` items from the `List`. The X++ `ListEnumerator` cannot modify the contents of the `List`. In X++ the `ListEnumerator` object is always created on the same tier as the `List`. This is not always true for `ListIterator`.|
+| Declaration of collection| `List myList;`| `List<string> myList;`| The X++ declaration does not include the type of elements to be stored.|
+| Declaration of iterator|`ListIterator iter`<br>`ListEnumerator enumer;`| IEnumerator&lt;string&gt; iter;| In X++ the `ListIterator` object has methods that can `insert` and `delete` items from the `List`. The X++ `ListEnumerator` cannot modify the contents of the `List`. In X++ the `ListEnumerator` object is always created on the same tier as the `List`. This is not always true for `ListIterator`.|
 | Obtaining an iterator|`new ListIterator (myList)`<br>`myList.getEnumerator()`| `myList.GetEnumerator()`| In both X++ and C#, the List object has a getter method for an associated enumerator.|
 | Constructor| `new List(Types::String)`| `new List<string>()`|Information about the type of objects to be stored inside the `List` classes is given to the constructor in both X++ and C#.|
 | Updating data|Enumerator – the enumerator becomes invalid if any items in the `List` are added or removed.<br>Iterator – the iterator has methods that insert and delete items from the `List`. The iterator remains valid.| Enumerator – the enumerator becomes invalid if any items in the `List` are added or removed.| Enumerators become invalid after items are added or deleted from the `List`, in both X++ and C#.|
@@ -693,7 +692,7 @@ In both languages, the type of items that the collection stores must be specifie
 
     // X++
     listStrings = new List( Types::String );
-    
+
     // C#
     listStrings = new SysCollGen.List<string>;
 
@@ -733,7 +732,7 @@ Both X++ and C\# have iterator classes that you can use to step through the item
     // C#
     literator = listStrings .GetEnumerator(); 
     // Now enumerator points before the first item, not at the first item.
-    
+
     // The MoveNext method both advances the item pointer, and 
     // answers whether the pointer is pointing at an item. 
     while (literator.MoveNext()) 
@@ -960,8 +959,8 @@ static void JobRs008a_Exceptions(Args _args)
     //}
     info("End of program.");
 }</pre>
- 
 
+ 
 ##### Output
 
 Here is the output from the Infolog window:
@@ -1037,8 +1036,8 @@ The following C\# program is a rewrite of the previous X++ program.
         }
     } // EOClass
 
- 
 
+ 
 ##### Output
 
 Here is the actual output to the C\# console:
@@ -1162,8 +1161,8 @@ The following C\# sample is not a line-by-line translation from the previous X++
         }
     }
 
- 
 
+ 
 #### Output
 
 Here is the output to the console:
@@ -1209,14 +1208,15 @@ The following table lists the arithmetic operators.
 
 The following table compares the bitwise operators between X++ and C\#.
 
-| X++ and C\# | Differences             |
+
+| X++ and C\# |                     Differences                      |
 |-------------|------------------------------------------------------|
-| &lt;&lt;    | The left shift operator is the same in X++ and C\#.  |
-| &gt;&gt;    | The right shift operator is the same in X++ and C\#. |
-| ~           | The bitwise NOT operator is the same in X++ and C\#. |
-| &           | The binary AND operator is the same in X++ and C\#.  |
-| ^           | The binary XOR operator is the same in X++ and C\#.  |
-| |           | The binary OR operator is the same in X++ and C\#.   |
+|  &lt;&lt;   | The left shift operator is the same in X++ and C\#.  |
+|  &gt;&gt;   | The right shift operator is the same in X++ and C\#. |
+|      ~      | The bitwise NOT operator is the same in X++ and C\#. |
+|      &      | The binary AND operator is the same in X++ and C\#.  |
+|      ^      | The binary XOR operator is the same in X++ and C\#.  |
+|             |                                                      |
 
 ### Relational Operators
 
@@ -1443,7 +1443,7 @@ The following table lists several classes that are available to you when you wri
 | `TreeNode` | `System .Assembly`   | Assembly is the first class to use when a C\# program must gather reflection information. Static methods on the X++ class `TreeNode` are the starting point for reflection in X++.    |
 | `TreeNode` | `System .Type`       | Instance methods on `TreeNode` correspond to instance methods on `System.Type`.                |
 | `TreeNode .AOTgetSource`         | `MethodInfo`         | The `AOTgetSource` method returns several pieces of information together in one string. This includes the X++ source code in the method. In contrast, `MethodInfo` has a separate member for each piece of information.                  |
-| `TreeNode .AOTfirstChild` `TreeNode .AOTnextSibling` `TreeNode .AOTiterator` `AOTiterator` | MethodInfo\[\] (an array)   | In C\#, the `GetMethods` method on `System.Type` returns an array of MethodInfo objects. You can loop through the array by the common technique of incrementing an indexer. In contrast, the X++ model is to navigate the tree control of the AOT. The `TreeNode` methods of `AOTfirstChild` and `AOTnextSibling` accomplish the navigation. As an equivalent alternative, the X++ `AOTiterator` class is designed to navigate the tree control of the AOT. A class node is the parent over several method nodes. The `AOTiterator` steps through child nodes, returning each as another `TreeNode` instance. See also the `TreeNode` methods that are named `AOTparent` and `AOTprevious`. |
+| `TreeNode .AOTfirstChild` `TreeNode .AOTnextSibling` `TreeNode .AOTiterator` `AOTiterator` | MethodInfo\[\] (an array)   | In C\#, the `GetMethods` method on `System.Type` returns an array of MethodInfo objects. You can loop through the array by the common technique of incrementing an indexer. In contrast, the X++ model is to navigate the tree control of the AOT. The `TreeNode` methods of `AOTfirstChild` and `AOTnextSibling` accomplish the navigation. As an equivalent alternative, the X++ `AOTiterator` class is designed to navigate the tree control of the AOT. A class node is the parent over several method nodes. The `AOTiterator` steps through child nodes, returning each as another `TreeNode` instance. Additional resources the `TreeNode` methods that are named `AOTparent` and `AOTprevious`. |
 | `TreeNode .AOTgetProperty` `TreeNode .AOTgetProperties` `TreeNode .AOTname`                | `PropertyInfo`       | In X++, the `AOTgetProperties` method returns a long string that contains name-value pairs for all the properties of the `TreeNode`. The `AOTname` method returns a string that contains only the value for the name property.                  |
 | `TreeNode .AOTsave` `TreeNode .AOTinsert`                     | `System .Reflection .Emit` (namespace of classes) | The `AOTsave` method applies changes from a `TreeNode` object in your X++ code to the AOT, and the changes are persisted. For a large code sample, see TreeNode.AOTsave Method.       |
 

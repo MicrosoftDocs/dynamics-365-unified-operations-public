@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Extend table maps used for versioning
+title: Extend table maps that are used for versioning
 description: This topic describes how to extend table maps that can be used for versioning.
 author: LarsBlaaberg
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
 ---
 
-# Extend table maps used for versioning
+# Extend table maps that are used for versioning
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic applies to Dynamics 365 for Finance and Operations, Enterprise edition 7.3 and later.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Patch SQL Server Reporting Services in a one-box environment
+title: Patch SQL Server Reporting Services (SSRS) in one-box environments
 description: Apply SSRS hotfixes to a one-box development environment. 
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Patch SQL Server Reporting Services in a one-box environment
+# Patch SQL Server Reporting Services (SSRS) in one-box environments
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 The following procedure is for one-box development environments only.
 
@@ -42,7 +41,7 @@ The following procedure is for one-box development environments only.
 The following procedure is for one-box development environments only.
 
 -   Download the patch .zip file from Lifecycle Services (LCS).
--   If there are any font files in the Reporting Service patch’s data folder, install these to the machine where SQL Server Reporting Services (SSRS) is running. For more information about installing fonts on windows, see <http://www.microsoft.com/en-us/Typography/TrueTypeInstall.aspx>.  Any fonts that have already been installed do not need to be installed again.
+-   If there are any font files in the Reporting Service patch’s data folder, install these to the machine where SQL Server Reporting Services (SSRS) is running. For more information about installing fonts on windows, see <http://www.microsoft.com/en-us/Typography/TrueTypeInstall.aspx>.  Any fonts that have already been installed do not need to be installed again.
 -   Copy the files in the Reporting Services patch scripts folder to the Report plug-in folder located under C:\\Packages\\Plugins\\AxReportVmRoleStartupTask.
 -   Change the directory to the Report plug-in folder where you stored the script files.
 -   Using one of the methods listed below, replace the old instance of reporting extensions.
@@ -63,7 +62,7 @@ Complete the following procedure as a user in the administrator group for the ma
 ### Manually copy binaries to the SQL Server binary folder
 1.  Stop SQL Server Reporting Services. This can be done either from the **Services management** console or from the **Reporting Services Configuration Manager**. [![Configuration\_RSHotfix](./media/configuration_rshotfix.png)](./media/configuration_rshotfix.png)
 2.  Find the SQL Server Reporting Services binary folder. This folder is usually located at C:\\Program Files\\Microsoft SQL Server\\MSRS11.MSSQLSERVER\\Reporting Services\\ReportServer\\bin.
-3.  If any of the following files are in the patch, copy them to the SQL Server Reporting Services bin folder.* *
+3.  If any of the following files are in the patch, copy them to the SQL Server Reporting Services bin folder.* *
 
 **Note:** Patches can either be full patches, which would contain all of the files used by the service, or incremental patches, which contain only the files that have changed. If you have an incremental patch, then some files may not be included. Files not included in the patch do not need to be replaced.
 
@@ -104,7 +103,7 @@ The following changes are made with the reporting service installation: The foll
 -   IdentityModel.dll
 -   msshrtmi.dll
 
-An SSRS service account will be updated to use the local system. A new SSRS catalog database DynamicsAxReportServer and temp database DynamicsAxReportServerTempDB database will be created, and SSRS will be configured to use these two databases. The default catalog database ReportServer and ReportServerTempDBstill exist, but are set to not be used by reporting services. The SSRS service will be updated to use Windows Authentication. An xml configuration file ReportPVMConfiguration.xml will be created in the SSRS bin folder for the report runtime. A report root folder named **Dynamics** and a new security role named **DynamicsBrowser** will be created. Both AOS Web application AppPool identity and batch service account will be added to this custom role. Note that during deployment, the report folder will be deleted and then recreated. Therefore all the previously deployed reports will be deleted from the SSRS server.  After you reinstall the reporting extension, you must redeploy the reports.  
+An SSRS service account will be updated to use the local system. A new SSRS catalog database DynamicsAxReportServer and temp database DynamicsAxReportServerTempDB database will be created, and SSRS will be configured to use these two databases. The default catalog database ReportServer and ReportServerTempDBstill exist, but are set to not be used by reporting services. The SSRS service will be updated to use Windows Authentication. An xml configuration file ReportPVMConfiguration.xml will be created in the SSRS bin folder for the report runtime. A report root folder named **Dynamics** and a new security role named **DynamicsBrowser** will be created. Both AOS Web application AppPool identity and batch service account will be added to this custom role. Note that during deployment, the report folder will be deleted and then recreated. Therefore all the previously deployed reports will be deleted from the SSRS server.  After you reinstall the reporting extension, you must redeploy the reports.  
 
 
 

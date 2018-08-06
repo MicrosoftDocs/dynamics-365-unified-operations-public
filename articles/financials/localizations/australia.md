@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Australia
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about Dynamics 365 for Finance and Operations functionality that supports Australian regulations. 
 

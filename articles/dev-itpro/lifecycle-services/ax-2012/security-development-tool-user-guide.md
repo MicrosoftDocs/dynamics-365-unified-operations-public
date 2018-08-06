@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Security Development Tool (AX 2012)
+title: Security Development Tool user guide
 description: This topic provides information about how to create and maintain security artifacts such as roles, duties, and privileges by using the Security Development Tool.
 author: kfend
 manager: AnnBe
@@ -30,12 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Security Development Tool (AX 2012)
+# Security Development Tool user guide
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 | **Note**                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,7 +42,7 @@ The Security Development Tool for Microsoft Dynamics AX 2012 is intended to help
 
 
 
-See also
+Additional resources
 --------
 
 [Overview of the Security Development Tool user interface (AX 2012)](overview-security-development-tool-user-interface.md)

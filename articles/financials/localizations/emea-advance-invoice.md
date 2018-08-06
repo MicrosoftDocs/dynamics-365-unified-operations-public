@@ -30,8 +30,7 @@ ms.search.validFrom: 2016-11-30
 
 # Advance invoices for Eastern Europe
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order. This topic provides information about advance invoices for Eastern Europe.
 
@@ -50,19 +49,20 @@ Polish companies that receive prepayments must create an invoice for prepayments
 ## Set up Accounts receivable for advance invoices
 On the **Accounts receivable parameters** page, on the **Updates** tab, specify the following parameters.
 
-|FastTab|Parameter|Description|
-|------|----------|------------|
-|Advance invoice  |Posting profile|Select the posting profile to use with advance invoicing (for Poland only). **Important:** For the Czech Republic and Hungary, advance invoices aren't treated as accounting or tax documents, and they aren't posted to the general ledger. Therefore, you should leave this field blank for these countries to prevent advance invoices from being posted to the general ledger.
-|
-|Advance invoice  |Off|set account        |Select the default offset account to use with advanced invoicing.|
-|Advance invoice  |Sales tax group        |Select the sales tax group to use when sales tax is calculated for advance invoicing.|
-|Advance invoice  |Reversal as correction |Select this check box if the reversal of an advance invoice should be considered a correction.|
-|Advance invoice  |Reverse on invoice date|Select this check box to reverse the prepayment on the date when the invoice is posted.|
-|Payment          |Multiple prepayment dates|Select from the following options: **Accept**, **Warning**, or **Error**.|
-|Payment          |Date mismatch          |Select from the following options: **Accept**, **Warning**, or **Error**.|
-|Payment          |Amount mismatch        |Select from the following options: **Accept**, **Warning**, or **Error**.|
-|Payment          |Linking to posted advance invoice|Select from the following options: **Accept**, **Warning**, or **Error**.|
-|Payment          |(CZE), (POL) Prepayment handling|Select **Advanced**.|
+
+|     FastTab     |             Parameter             |                                                                                                                                                                                           Description                                                                                                                                                                                           |
+|-----------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Advance invoice |          Posting profile          | Select the posting profile to use with advance invoicing (for Poland only). <strong>Important:</strong> For the Czech Republic and Hungary, advance invoices aren't treated as accounting or tax documents, and they aren't posted to the general ledger. Therefore, you should leave this field blank for these countries to prevent advance invoices from being posted to the general ledger. |
+|                 |                                   |                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Advance invoice |                Off                |                                                                                                                                                                                           set account                                                                                                                                                                                           |
+| Advance invoice |          Sales tax group          |                                                                                                                                                      Select the sales tax group to use when sales tax is calculated for advance invoicing.                                                                                                                                                      |
+| Advance invoice |      Reversal as correction       |                                                                                                                                                 Select this check box if the reversal of an advance invoice should be considered a correction.                                                                                                                                                  |
+| Advance invoice |      Reverse on invoice date      |                                                                                                                                                     Select this check box to reverse the prepayment on the date when the invoice is posted.                                                                                                                                                     |
+|     Payment     |     Multiple prepayment dates     |                                                                                                                                        Select from the following options: <strong>Accept</strong>, <strong>Warning</strong>, or <strong>Error</strong>.                                                                                                                                         |
+|     Payment     |           Date mismatch           |                                                                                                                                        Select from the following options: <strong>Accept</strong>, <strong>Warning</strong>, or <strong>Error</strong>.                                                                                                                                         |
+|     Payment     |          Amount mismatch          |                                                                                                                                        Select from the following options: <strong>Accept</strong>, <strong>Warning</strong>, or <strong>Error</strong>.                                                                                                                                         |
+|     Payment     | Linking to posted advance invoice |                                                                                                                                        Select from the following options: <strong>Accept</strong>, <strong>Warning</strong>, or <strong>Error</strong>.                                                                                                                                         |
+|     Payment     | (CZE), (POL) Prepayment handling  |                                                                                                                                                                                Select <strong>Advanced</strong>.                                                                                                                                                                                |
 
 On the **Number sequences** tab, set up number sequences for the following references:
 

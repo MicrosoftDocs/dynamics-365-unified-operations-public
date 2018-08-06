@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure Accounts payable
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics 365 for Finance and Operations. It also describes setup steps that you must complete before you start to set up Accounts payable.
 
@@ -49,7 +48,7 @@ Before you can set up Accounts payable, you must complete the following setup:
 
 ## Setup pages for Accounts payable
 
-Use the following pages to set up the basic functionality of Accounts payable for each legal entity. The pages are listed in the recommended order of setup. To make the setup process easier, you can create templates from the first records that you create. In a template, values are typically entered in many fields to reflect the features that the organization wants to implement for a particular type of vendor.
+Use the following pages to set up the basic functionality of Accounts payable for each legal entity. The pages are listed in the recommended order of setup. To make the setup process easier, you can create templates from the first records that you create. In a template, values are typically entered in many fields to reflect the features that the organization wants to implement for a particular type of vendor.
 1.  On the Terms of payment page, define the terms of payment that you assign to sales orders, purchase orders, customers, and vendors, and that determine invoice due dates. For more information, see [Define vendor payment fees](tasks/define-vendor-payment-fees.md).
 2.  On the Methods of payment - vendors page, create and maintain information about how the organization pays its vendors.
 3.  On the Vendor groups page, create and maintain groups of vendors that share important parameters for posting, settlement and payment, reporting, and forecasting.
@@ -72,8 +71,8 @@ The additional setup pages are organized by functionality.
 -   On the Matching policy page, set up two-way and three-way matching policies.
 -   On the Price tolerances page, set up tolerances for unit prices.
 -   On the Item price tolerance groups page, set up tolerance groups for item prices.
--   On the Vendor price tolerance groups page, set up  tolerance groups for vendor prices.
--   On the Charges tolerances page, set up tolerances for charges.
+-   On the Vendor price tolerance groups page, set up  tolerance groups for vendor prices.
+-   On the Charges tolerances page, set up tolerances for charges.
 
 **Workflow**
 
@@ -92,8 +91,8 @@ The additional setup pages are organized by functionality.
 
 **Supplementary items**
 
--   On the Supplementary item groups - Vendor page, create and maintain supplementary item groups for vendors.
--   On the Supplementary item groups - Inventory page, create and maintain supplementary item groups for items.
+-   On the Supplementary item groups - Vendor page, create and maintain supplementary item groups for vendors.
+-   On the Supplementary item groups - Inventory page, create and maintain supplementary item groups for items.
 
 **Distribution**
 
@@ -118,13 +117,13 @@ The additional setup pages are organized by functionality.
 **Statistics**
 
 -   On the Aging period definitions page, set up user-defined intervals that are used to analyze the maturity distribution of vendor accounts.
--   On the Line of business page, create the line of business (LOB) codes that are assigned to vendors.
+-   On the Line of business page, create the line of business (LOB) codes that are assigned to vendors.
 
 **Tax 1099**
 
 -   On the **1099 fields** page, verify and update the minimum amounts that must be reported to the Internal Revenue Service (IRS), based on the latest IRS requirements.
 
-## **Optional setup for other modules**
+## **Optional setup for other modules**
 **Organization administration**
 
 -   On the Number sequences page, set up number sequence groups for invoice numbers.

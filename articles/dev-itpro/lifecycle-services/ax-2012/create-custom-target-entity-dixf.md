@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a custom target entity for the Data import/export framework (AX 2012)
+title: Create custom target entities for the Data Import/Export Framework
 description: This topic describes how to create a custom entity, so that you can use the Microsoft Dynamics AX Data Import/Export Framework to import, export, or migrate data that does not fit a predefined entity.
 author: kfend
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Create a custom target entity for the Data import/export framework (AX 2012)
+# Create custom target entities for the Data Import/Export Framework
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how to create a custom entity, so that you can use the Microsoft Dynamics AX Data Import/Export Framework to import, export, or migrate data that does not fit a predefined entity.
 
@@ -90,15 +89,15 @@ This section describes how to manually create a custom entity.
     | Field group name                                                         | Label                                                                         | Field                                                                                        |
     |--------------------------------------------------------------------------|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
     | **ExclusionList**                                                        | **Exclusion List**                                                            | **DefinitionGroup**                                                                          |
-    | ** **                                                                    | ** **                                                                         | **IsSelected**                                                                               |
-    | ** **                                                                    | ** **                                                                         | **TransferStatus**                                                                           |
-    | ** **                                                                    | ** **                                                                         | **ExecutionId**                                                                              |
+    | ** **                                                                    | ** **                                                                         | **IsSelected**                                                                               |
+    | ** **                                                                    | ** **                                                                         | **TransferStatus**                                                                           |
+    | ** **                                                                    | ** **                                                                         | **ExecutionId**                                                                              |
     | **Enabled**                                                              | **Enabled**                                                                   | Optional: Fields from the staging table that you want to include in the template by default. |
     | &lt;&lt;FunctionName\_Sequence&gt;&gt;Example – GeneratePostalAddress\_2 | &lt;&lt; Description of function &gt;&gt;Function to generate postal address. | The fields from the staging table that are the source for the specified method.              |
     |                                                                          |                                                                               | **CountryRegionId**                                                                          |
-    | ** **                                                                    | ** **                                                                         | **State**                                                                                    |
-    | ** **                                                                    | ** **                                                                         | **City**                                                                                     |
-    | ** **                                                                    |                                                                               | ..                                                                                           |
+    | ** **                                                                    | ** **                                                                         | **State**                                                                                    |
+    | ** **                                                                    | ** **                                                                         | **City**                                                                                     |
+    | ** **                                                                    |                                                                               | ..                                                                                           |
 
 5.  Create a primary index for the table.
 

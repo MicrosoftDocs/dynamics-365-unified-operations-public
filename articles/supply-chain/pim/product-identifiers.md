@@ -32,7 +32,7 @@ ms.search.validFrom: 2017-12-31
 
 # Product identifiers 
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 

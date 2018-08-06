@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a workflow
+title: Create workflows
 description: This topic explains how to create a workflow.
 author: sericks007
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Create a workflow
+# Create workflows
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to create a workflow.
 

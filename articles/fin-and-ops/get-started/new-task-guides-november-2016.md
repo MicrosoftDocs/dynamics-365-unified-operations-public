@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: New or updated Task guides (November 2016)
+title: New or updated task guides (November 2016)
 description: This topic lists the new or updated Task guides that were released to the Microsoft (November 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations. No new Getting Started Library was released.
 author: josaw1
 manager: AnnBe
@@ -30,14 +30,13 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# New or updated Task guides (November 2016)
+# New or updated task guides (November 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic lists the new or updated Task guides that were released to the Microsoft (November 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations. No new Getting Started Library was released.
 
-The (November 2016 -- all languages) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations platform update 3, Microsoft Dynamics AX Platform update 2, the Dynamics AX May 2016 update, and the Microsoft Dynamics AX February 2016 release. For more information about these releases, see [What’s new or changed](whats-new-changed.md). Localized versions of the Task guides are available in this library. For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md). **Note:** An asterisk (**\***) next to the title of a Business process modeler (BPM) line indicates that the Task guide for that business process was created for Dynamics 365 for Operations November 2016 update and isn’t supported in earlier versions of Microsoft Dynamics AX.
+The (November 2016 -- all languages) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations platform update 3, Microsoft Dynamics AX Platform update 2, the Dynamics AX May 2016 update, and the Microsoft Dynamics AX February 2016 release. For more information about these releases, see [What’s new or changed](whats-new-changed.md). Localized versions of the Task guides are available in this library. For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md). <strong>Note:</strong> An asterisk (<strong>\</strong>*) next to the title of a Business process modeler (BPM) line indicates that the Task guide for that business process was created for Dynamics 365 for Operations November 2016 update and isn’t supported in earlier versions of Microsoft Dynamics AX.
 
 ### Accounts payable
 
@@ -144,192 +143,192 @@ The (November 2016 -- all languages) APQC Unified Library contains the Task guid
 
 ### Country/region functionality
 
-| BPM line                                                                                                                             | Country/region                    |
-|--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| Add BAS report boxes and generate the Australia Business Activity Statement (BAS)                                                    | Australia and New Zealand         |
-| Set up reason codes for Australia BAS                                                                                                | Australia and New Zealand         |
-| **\***Chinese voucher continuity check                                                                                               | China                             |
-| **\***CN-00010 China hierarchy of chart of accounts                                                                                  | China                             |
-| **\***CN-00016 User operation log by China working rule                                                                              | China                             |
-| **\***Golden tax integration export setup                                                                                            | China                             |
-| **\***Post vouchers from other modules, like sales invoices                                                                          | China                             |
-| **\***Post vouchers from the general journal                                                                                         | China                             |
-| **\***Set up basic tax integration profile for China                                                                                 | China                             |
-| **\***Set up Chinese vouchers                                                                                                        | China                             |
-| Create and post a customer invoice for a public sector customer                                                                      | Denmark                           |
-| Create and post a free text invoice for a public sector customer                                                                     | Denmark                           |
-| Create and post a project invoice for a public sector customer                                                                       | Denmark                           |
-| DK-00007 FIK 752 giro money transfer slip/Post a free text invoice with a payment slip                                               | Denmark                           |
-| DK-00007 FIK 752 giro money transfer slip/Post a project invoice with a payment slip                                                 | Denmark                           |
-| Import OIOUBL electronic invoicing configurations                                                                                    | Denmark                           |
-| Set up customer accounts for OIOUBL electronic invoicing                                                                             | Denmark                           |
-| Set up OIOUBL electronic invoicing                                                                                                   | Denmark                           |
-| Set up payment slip format                                                                                                           | Denmark                           |
-| **\***EEU-00047 Advance payment to employee                                                                                          | Eastern Europe                    |
-| Create and export vendor payments using ISO20022 payment format                                                                      | Europe                            |
-| Create payments for customer who have direct debit mandates                                                                          | Europe                            |
-| **\***EE-00015 Payment reference generation tool                                                                                     | Europe                            |
-| EUR-00002 Generate an EU Intrastat declaration                                                                                       | Europe                            |
-| **\***EUR-00002 Specify a lading address for an intra-community transaction                                                          | Europe                            |
-| EUR-00002 Transfer transactions to the Intrastat                                                                                     | Europe                            |
-| EUR-00011 Generate the EU sales list report                                                                                          | Europe                            |
-| EUR-00011 Set up EU sales list reporting                                                                                             | Europe                            |
-| EUR-00012 Issue an EU entry certificate                                                                                              | Europe                            |
-| EUR-00012 Receive an EU entry certificate                                                                                            | Europe                            |
-| **\***EUR-00015 Party search using VAT ID                                                                                            | Europe                            |
-| **\***EUR-00015 Registration of vendor VAT ID                                                                                        | Europe                            |
-| **\***EUR-00015 Set up VAT ID                                                                                                        | Europe                            |
-| **\***HU-00001 Exchange rate calculation                                                                                             | Europe                            |
-| Import ISO20022 credit transfer configuration                                                                                        | Europe                            |
-| Import ISO20022 direct debit configuration                                                                                           | Europe                            |
-| **\***LT-00003 Transfer document for goods movement inside company/Generate a transfer document for an internal inventory transfer   | Europe                            |
-| **\***LT-00003 Transfer document for goods movement inside company/Set up the transfer documents for goods movement inside a company | Europe                            |
-| **\***NO-00002 Customer payment based on payment ID                                                                                  | Europe                            |
-| Set up company bank accounts for ISO20022 credit transfers                                                                           | Europe                            |
-| Set up company bank accounts for ISO20022 direct debits                                                                              | Europe                            |
-| Set up customers and customer bank accounts for ISO20022 direct debits                                                               | Europe                            |
-| Set up method of payment for ISO20022 credit transfer                                                                                | Europe                            |
-| Set up method of payment for ISO20022 direct debit                                                                                   | Europe                            |
-| Set up vendors and vendor bank accounts for ISO20022 credit transfers                                                                | Europe                            |
-| Establish customer methods of payment                                                                                                | France                            |
-| FR-00002 Customer and vendor account                                                                                                 | France                            |
-| FR-00003 NAF codes and Siret numbers                                                                                                 | France                            |
-| FR-00004 Approve and post draw bill of exchange                                                                                      | France                            |
-| FR-00004 French bills of exchange and promissory notes                                                                               | France                            |
-| FR-00004 Post protest draw bill of exchange journal                                                                                  | France                            |
-| FR-00004 Post re-draw bill of exchange journal                                                                                       | France                            |
-| FR-00004 Setup method of payment                                                                                                     | France                            |
-| FR-00004 Update method of payment on customer                                                                                        | France                            |
-| FR-00018 Daily interest calculation for late payment and lump sum in the invoice and collection letter                               | France                            |
-| Customize German audit file configuration                                                                                            | Germany                           |
-| DE-00002 Depreciation adjustments for additional acquisitions in the second year                                                     | Germany                           |
-| DE-00003 Electronic transmission of VAT declaration (ELSTER)                                                                         | Germany                           |
-| ER Configure destinations                                                                                                            | Germany                           |
-| ER Configure format to do counting and summing (Part 1: Create format)                                                               | Germany                           |
-| ER Configure format to do counting and summing (Part 2: Configure computations)                                                      | Germany                           |
-| ER Configure format to do counting and summing (Part 3: Use computations to make the output)                                         | Germany                           |
-| ER Configure format to do counting and summing (Part 4: Run format)                                                                  | Germany                           |
-| ER Create a configuration provider and mark it as active                                                                             | Germany                           |
-| ER Design a configuration for generating reports in Microsoft WORD format (November 2016)                                            | Germany                           |
-| ER Design domain specific data model (November 2016)                                                                                 | Germany                           |
-| ER Import a configuration from Lifecycle Services                                                                                    | Germany                           |
-| ER Upload a configuration into Lifecycle Services                                                                                    | Germany                           |
-| ER Use Document Management files in format outputs (Part 1: Prepare data model)                                                      | Germany                           |
-| ER Use Document Management files in format outputs (Part 2: Extend data model)                                                       | Germany                           |
-| ER Use Document Management files in format outputs (Part 3: Create format)                                                           | Germany                           |
-| ER Use Document Management files in format outputs (Part 4: Run format)                                                              | Germany                           |
-| ER Use Document Management files in format outputs (Part 5: Modify and run format)                                                   | Germany                           |
-| ER Use financial dimensions as a data source (Part 1: Design data model)                                                             | Germany                           |
-| ER Use financial dimensions as a data source (Part 2: Model mapping)                                                                 | Germany                           |
-| ER Use financial dimensions as a data source (Part 3: Design the report)                                                             | Germany                           |
-| ER Use financial dimensions as a data source (Part 4: Run the report)                                                                | Germany                           |
-| ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1: Design format)                            | Germany                           |
-| ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 2: Run format)                               | Germany                           |
-| Generate German audit file                                                                                                           | Germany                           |
-| Import German audit file configuration                                                                                               | Germany                           |
-| **\***EUR-00018 VAT reconciliation report                                                                                            | Iceland                           |
-| IS-00006 Vendor invoice declaration/Create a vendor account and attach the invoice declaration                                       | Iceland                           |
-| IS-00006 Vendor invoice declaration/Set up an invoice declaration for vendors                                                        | Iceland                           |
-| IS-00006 Vendor invoice declaration/Update vendor invoice declarations and generate the report                                       | Iceland                           |
-| Maintain chart of accounts/Set up mandatory payment references                                                                       | Iceland                           |
-| Acquire a fixed asset with asset retirement obligations                                                                              | Japan                             |
-| Acquire fixed assets, claim for the government grant                                                                                 | Japan                             |
-| Adjustment of the asset retirement obligation estimate                                                                               | Japan                             |
-| Allocate the carrying amount of shared asset and goodwill to cash generating units                                                   | Japan                             |
-| Change the depreciation method during the asset life for one asset                                                                   | Japan                             |
-| Change the depreciation method during the asset life for book                                                                        | Japan                             |
-| Configure accelerated depreciation parameters and posting profiles                                                                   | Japan                             |
-| CN-00004 Fixed asset depreciation allocation (JP-)                                                                                   | Japan                             |
-| Configure a depreciation profile and a posting profile for additional depreciation                                                   | Japan                             |
-| Configure a depreciation profile and a posting profile for special depreciation                                                      | Japan                             |
-| Configure consolidated invoice parameters and setup for accounts payable                                                             | Japan                             |
-| Configure main accounts for asset retirement obligation posting and market discount rates                                            | Japan                             |
-| Create a fixed asset with additional depreciation                                                                                    | Japan                             |
-| Create a fixed asset with special depreciation profile                                                                               | Japan                             |
-| Create accelerated depreciation profile and assign it to book                                                                        | Japan                             |
-| Create an accelerated depreciation document and enter usage data                                                                     | Japan                             |
-| Create and assign an equipment group                                                                                                 | Japan                             |
-| Create and assign reduction entry document                                                                                           | Japan                             |
-| Create and confirm a vendor consolidated invoice                                                                                     | Japan                             |
-| Create and confirm recognition test                                                                                                  | Japan                             |
-| Create CGU groups and cash generating units                                                                                          | Japan                             |
-| Create lump-sum depreciation assets using equally divided method                                                                     | Japan                             |
-| Define asset idle period and validate depreciation process                                                                           | Japan                             |
-| Depreciate and accrue the interest expense for asset retirement obligations                                                          | Japan                             |
-| Depreciation of fixed assets with reduction entry posted                                                                             | Japan                             |
-| Dispose of a fixed asset with reduction entry                                                                                        | Japan                             |
-| Enable JBA payment file format                                                                                                       | Japan                             |
-| Enter depreciation rate schedule and associate to depreciation profile                                                               | Japan                             |
-| Generate and post payment fee                                                                                                        | Japan                             |
-| Generate an EFT payment file with the JBA format                                                                                     | Japan                             |
-| Generate Japan consumption tax report                                                                                                | Japan                             |
-| Import a customer payment with a JBA file format                                                                                     | Japan                             |
-| Inquiries of payment fee on journal                                                                                                  | Japan                             |
-| Inquiries of the asset retirement obligation related transactions                                                                    | Japan                             |
-| Inquiry on deductible expenses                                                                                                       | Japan                             |
-| JP-00005 Input journal in T account form (Japan)                                                                                     | Japan                             |
-| JP-00011 Consolidated invoice - AR - Create and confirm a customer consolidated invoice                                              | Japan                             |
-| JP-00027 Form 26 for depreciable tax declaration                                                                                     | Japan                             |
-| Maintain fixed-asset master data files for Deductible expenses                                                                       | Japan                             |
-| Maintain impairment indicators on individual assets                                                                                  | Japan                             |
-| Pay a vendor transaction by endorsing a customer bill of exchange                                                                    | Japan                             |
-| Periodic settlement of over and under depreciation                                                                                   | Japan                             |
-| Propose additional depreciation                                                                                                      | Japan                             |
-| Propose and post the accelerated depreciation                                                                                        | Japan                             |
-| Propose and post the impairment amount by batch                                                                                      | Japan                             |
-| Propose and post the impairment amount by using fixed asset journal                                                                  | Japan                             |
-| Propose and post the impairment amount on a cash generating unit                                                                     | Japan                             |
-| Propose special depreciation                                                                                                         | Japan                             |
-| Reopen and edit a customer consolidated invoice                                                                                      | Japan                             |
-| Reopen and edit a vendor consolidated invoice                                                                                        | Japan                             |
-| Reverse an endorsed bill of exchange                                                                                                 | Japan                             |
-| Run the recognition test and calculate the impairment amount on individual assets                                                    | Japan                             |
-| Settle an endorsed bill of exchange                                                                                                  | Japan                             |
-| Settle customer consolidated invoices by using a payment journal                                                                     | Japan                             |
-| Settle vendor consolidated invoices by using a payment journal                                                                       | Japan                             |
-| Settle vendor consolidated invoices by using settle transactions                                                                     | Japan                             |
-| Settle vendor consolidated invoices by using settle transactions                                                                     | Japan                             |
-| Set up a customer and sales order to be target of consolidated invoice                                                               | Japan                             |
-| Set up asset retirement obligation documents and enter ARO amount on a fixed asset                                                   | Japan                             |
-| Set up consolidated invoices                                                                                                         | Japan                             |
-| Setup impairment accounting common parameters and posting profile                                                                    | Japan                             |
-| Setup Japan payment by endorsing a customer bill of exchange                                                                         | Japan                             |
-| Set up master data for inclusion of deductible expenses for multiple posting layers                                                  | Japan                             |
-| Setup Japan consumption tax report                                                                                                   | Japan                             |
-| Setup payment fee for Japan                                                                                                          | Japan                             |
-| Setup vendor master and purchase order to be target of consolidated invoice                                                          | Japan                             |
-| Use assemble list of a fixed asset                                                                                                   | Japan                             |
-| Use disassemble list for fixed assets                                                                                                | Japan                             |
-| MX-00006 Set up sales tax code                                                                                                       | Mexico                            |
-| MX-00007 Customer registration IDs and other information                                                                             | Mexico                            |
-| MX-00008: Vendor registration IDs                                                                                                    | Mexico                            |
-| MX-00010 Cancel an electronic invoice                                                                                                | Mexico                            |
-| MX-00010 E-invoicing CFDI                                                                                                            | Mexico                            |
-| MX-00010 Enter tax registration IDs for Mexican legal entities                                                                       | Mexico                            |
-| MX-00010 Inquire and print an electronic invoice                                                                                     | Mexico                            |
-| MX-00010 Post a free text invoice                                                                                                    | Mexico                            |
-| MX-00010 Set parameters for an electronic invoice                                                                                    | Mexico                            |
-| MX-00020: Produce Mexican electronic ledger accounting report version 1.1                                                            | Mexico                            |
-| MX-00020 Set up the chart of accounts for a legal entity in Mexico                                                                   | Mexico                            |
-| MX-00020 - Specify the RFC registration ID for Mexican bank accounts                                                                 | Mexico                            |
-| NL-00003 Semansys XBRL integration                                                                                                   | Netherlands                       |
-| NL-00010 Electronic tax declarations (EVAT)                                                                                          | Netherlands                       |
-| MY-00003 Manage customer Debit note and Credit note for GST                                                                          | Singapore, Malaysia, and Thailand |
-| MY-00004 Manage vendor Debit note and Credit note for GST                                                                            | Singapore, Malaysia, and Thailand |
-| MY-00005 Print GST tax invoices                                                                                                      | Singapore, Malaysia, and Thailand |
-| MY-00006 01 Set up GST relief clauses                                                                                                | Singapore, Malaysia, and Thailand |
-| MY-00006 02 Print GST customer invoices with a relief clause                                                                         | Singapore, Malaysia, and Thailand |
-| MY-00007 Self-billed invoices                                                                                                        | Singapore, Malaysia, and Thailand |
-| MY-00010 GST - Generate GAF files in the required format                                                                             | Singapore, Malaysia, and Thailand |
-| MY-00011 02 Generate Customer Debit Note for Project sales                                                                           | Singapore, Malaysia, and Thailand |
-| MY-00011 03 Generate Customer Credit note for Project sales                                                                          | Singapore, Malaysia, and Thailand |
-| Create a purchase order that includes items subject to reverse charge VAT                                                            | United Kingdom                    |
-| Create a sales order that includes items subject to reverse charge VAT                                                               | United Kingdom                    |
-| GB-00002 Set up reverse charge VAT item groups, rules, and parameters                                                                | United Kingdom                    |
-| GB-00009 Create a credit note on the settlement discount                                                                             | United Kingdom                    |
-| GB-00009 Setup parameters for credit note on prompt payment discount                                                                 | United Kingdom                    |
-| Set up item sales tax groups for reverse charge VAT                                                                                  | United Kingdom                    |
-| Set up sales tax groups for reverse charge VAT                                                                                       | United Kingdom                    |
+|                                                                     BPM line                                                                      |          Country/region           |
+|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|                                 Add BAS report boxes and generate the Australia Business Activity Statement (BAS)                                 |     Australia and New Zealand     |
+|                                                       Set up reason codes for Australia BAS                                                       |     Australia and New Zealand     |
+|                                                <strong>\</strong>*Chinese voucher continuity check                                                |               China               |
+|                                         <strong>\</strong>*CN-00010 China hierarchy of chart of accounts                                          |               China               |
+|                                       <strong>\</strong>*CN-00016 User operation log by China working rule                                        |               China               |
+|                                              <strong>\</strong>*Golden tax integration export setup                                               |               China               |
+|                                     <strong>\</strong>*Post vouchers from other modules, like sales invoices                                      |               China               |
+|                                             <strong>\</strong>*Post vouchers from the general journal                                             |               China               |
+|                                         <strong>\</strong>*Set up basic tax integration profile for China                                         |               China               |
+|                                                    <strong>\</strong>*Set up Chinese vouchers                                                     |               China               |
+|                                          Create and post a customer invoice for a public sector customer                                          |              Denmark              |
+|                                         Create and post a free text invoice for a public sector customer                                          |              Denmark              |
+|                                          Create and post a project invoice for a public sector customer                                           |              Denmark              |
+|                              DK-00007 FIK 752 giro money transfer slip/Post a free text invoice with a payment slip                               |              Denmark              |
+|                               DK-00007 FIK 752 giro money transfer slip/Post a project invoice with a payment slip                                |              Denmark              |
+|                                                 Import OIOUBL electronic invoicing configurations                                                 |              Denmark              |
+|                                             Set up customer accounts for OIOUBL electronic invoicing                                              |              Denmark              |
+|                                                        Set up OIOUBL electronic invoicing                                                         |              Denmark              |
+|                                                            Set up payment slip format                                                             |              Denmark              |
+|                                             <strong>\</strong>*EEU-00047 Advance payment to employee                                              |          Eastern Europe           |
+|                                          Create and export vendor payments using ISO20022 payment format                                          |              Europe               |
+|                                            Create payments for customer who have direct debit mandates                                            |              Europe               |
+|                                           <strong>\</strong>*EE-00015 Payment reference generation tool                                           |              Europe               |
+|                                                  EUR-00002 Generate an EU Intrastat declaration                                                   |              Europe               |
+|                             <strong>\</strong>*EUR-00002 Specify a lading address for an intra-community transaction                              |              Europe               |
+|                                                 EUR-00002 Transfer transactions to the Intrastat                                                  |              Europe               |
+|                                                    EUR-00011 Generate the EU sales list report                                                    |              Europe               |
+|                                                     EUR-00011 Set up EU sales list reporting                                                      |              Europe               |
+|                                                      EUR-00012 Issue an EU entry certificate                                                      |              Europe               |
+|                                                     EUR-00012 Receive an EU entry certificate                                                     |              Europe               |
+|                                              <strong>\</strong>*EUR-00015 Party search using VAT ID                                               |              Europe               |
+|                                            <strong>\</strong>*EUR-00015 Registration of vendor VAT ID                                             |              Europe               |
+|                                                    <strong>\</strong>*EUR-00015 Set up VAT ID                                                     |              Europe               |
+|                                               <strong>\</strong>*HU-00001 Exchange rate calculation                                               |              Europe               |
+|                                                   Import ISO20022 credit transfer configuration                                                   |              Europe               |
+|                                                    Import ISO20022 direct debit configuration                                                     |              Europe               |
+|  <strong>\</strong>*LT-00003 Transfer document for goods movement inside company/Generate a transfer document for an internal inventory transfer  |              Europe               |
+| <strong>\</strong>*LT-00003 Transfer document for goods movement inside company/Set up the transfer documents for goods movement inside a company |              Europe               |
+|                                         <strong>\</strong>*NO-00002 Customer payment based on payment ID                                          |              Europe               |
+|                                            Set up company bank accounts for ISO20022 credit transfers                                             |              Europe               |
+|                                              Set up company bank accounts for ISO20022 direct debits                                              |              Europe               |
+|                                      Set up customers and customer bank accounts for ISO20022 direct debits                                       |              Europe               |
+|                                               Set up method of payment for ISO20022 credit transfer                                               |              Europe               |
+|                                                Set up method of payment for ISO20022 direct debit                                                 |              Europe               |
+|                                       Set up vendors and vendor bank accounts for ISO20022 credit transfers                                       |              Europe               |
+|                                                       Establish customer methods of payment                                                       |              France               |
+|                                                       FR-00002 Customer and vendor account                                                        |              France               |
+|                                                       FR-00003 NAF codes and Siret numbers                                                        |              France               |
+|                                                  FR-00004 Approve and post draw bill of exchange                                                  |              France               |
+|                                              FR-00004 French bills of exchange and promissory notes                                               |              France               |
+|                                                FR-00004 Post protest draw bill of exchange journal                                                |              France               |
+|                                                  FR-00004 Post re-draw bill of exchange journal                                                   |              France               |
+|                                                         FR-00004 Setup method of payment                                                          |              France               |
+|                                                   FR-00004 Update method of payment on customer                                                   |              France               |
+|                      FR-00018 Daily interest calculation for late payment and lump sum in the invoice and collection letter                       |              France               |
+|                                                     Customize German audit file configuration                                                     |              Germany              |
+|                                 DE-00002 Depreciation adjustments for additional acquisitions in the second year                                  |              Germany              |
+|                                           DE-00003 Electronic transmission of VAT declaration (ELSTER)                                            |              Germany              |
+|                                                             ER Configure destinations                                                             |              Germany              |
+|                                      ER Configure format to do counting and summing (Part 1: Create format)                                       |              Germany              |
+|                                  ER Configure format to do counting and summing (Part 2: Configure computations)                                  |              Germany              |
+|                           ER Configure format to do counting and summing (Part 3: Use computations to make the output)                            |              Germany              |
+|                                        ER Configure format to do counting and summing (Part 4: Run format)                                        |              Germany              |
+|                                             ER Create a configuration provider and mark it as active                                              |              Germany              |
+|                             ER Design a configuration for generating reports in Microsoft WORD format (November 2016)                             |              Germany              |
+|                                               ER Design domain specific data model (November 2016)                                                |              Germany              |
+|                                                 ER Import a configuration from Lifecycle Services                                                 |              Germany              |
+|                                                 ER Upload a configuration into Lifecycle Services                                                 |              Germany              |
+|                                  ER Use Document Management files in format outputs (Part 1: Prepare data model)                                  |              Germany              |
+|                                  ER Use Document Management files in format outputs (Part 2: Extend data model)                                   |              Germany              |
+|                                    ER Use Document Management files in format outputs (Part 3: Create format)                                     |              Germany              |
+|                                      ER Use Document Management files in format outputs (Part 4: Run format)                                      |              Germany              |
+|                                ER Use Document Management files in format outputs (Part 5: Modify and run format)                                 |              Germany              |
+|                                     ER Use financial dimensions as a data source (Part 1: Design data model)                                      |              Germany              |
+|                                       ER Use financial dimensions as a data source (Part 2: Model mapping)                                        |              Germany              |
+|                                     ER Use financial dimensions as a data source (Part 3: Design the report)                                      |              Germany              |
+|                                       ER Use financial dimensions as a data source (Part 4: Run the report)                                       |              Germany              |
+|                     ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1: Design format)                     |              Germany              |
+|                      ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 2: Run format)                       |              Germany              |
+|                                                            Generate German audit file                                                             |              Germany              |
+|                                                      Import German audit file configuration                                                       |              Germany              |
+|                                              <strong>\</strong>*EUR-00018 VAT reconciliation report                                               |              Iceland              |
+|                          IS-00006 Vendor invoice declaration/Create a vendor account and attach the invoice declaration                           |              Iceland              |
+|                                   IS-00006 Vendor invoice declaration/Set up an invoice declaration for vendors                                   |              Iceland              |
+|                          IS-00006 Vendor invoice declaration/Update vendor invoice declarations and generate the report                           |              Iceland              |
+|                                          Maintain chart of accounts/Set up mandatory payment references                                           |              Iceland              |
+|                                              Acquire a fixed asset with asset retirement obligations                                              |               Japan               |
+|                                               Acquire fixed assets, claim for the government grant                                                |               Japan               |
+|                                              Adjustment of the asset retirement obligation estimate                                               |               Japan               |
+|                                Allocate the carrying amount of shared asset and goodwill to cash generating units                                 |               Japan               |
+|                                        Change the depreciation method during the asset life for one asset                                         |               Japan               |
+|                                           Change the depreciation method during the asset life for book                                           |               Japan               |
+|                                        Configure accelerated depreciation parameters and posting profiles                                         |               Japan               |
+|                                                CN-00004 Fixed asset depreciation allocation (JP-)                                                 |               Japan               |
+|                                Configure a depreciation profile and a posting profile for additional depreciation                                 |               Japan               |
+|                                  Configure a depreciation profile and a posting profile for special depreciation                                  |               Japan               |
+|                                     Configure consolidated invoice parameters and setup for accounts payable                                      |               Japan               |
+|                             Configure main accounts for asset retirement obligation posting and market discount rates                             |               Japan               |
+|                                                 Create a fixed asset with additional depreciation                                                 |               Japan               |
+|                                              Create a fixed asset with special depreciation profile                                               |               Japan               |
+|                                           Create accelerated depreciation profile and assign it to book                                           |               Japan               |
+|                                         Create an accelerated depreciation document and enter usage data                                          |               Japan               |
+|                                                       Create and assign an equipment group                                                        |               Japan               |
+|                                                    Create and assign reduction entry document                                                     |               Japan               |
+|                                                 Create and confirm a vendor consolidated invoice                                                  |               Japan               |
+|                                                        Create and confirm recognition test                                                        |               Japan               |
+|                                                    Create CGU groups and cash generating units                                                    |               Japan               |
+|                                         Create lump-sum depreciation assets using equally divided method                                          |               Japan               |
+|                                            Define asset idle period and validate depreciation process                                             |               Japan               |
+|                                    Depreciate and accrue the interest expense for asset retirement obligations                                    |               Japan               |
+|                                             Depreciation of fixed assets with reduction entry posted                                              |               Japan               |
+|                                                   Dispose of a fixed asset with reduction entry                                                   |               Japan               |
+|                                                          Enable JBA payment file format                                                           |               Japan               |
+|                                      Enter depreciation rate schedule and associate to depreciation profile                                       |               Japan               |
+|                                                           Generate and post payment fee                                                           |               Japan               |
+|                                                 Generate an EFT payment file with the JBA format                                                  |               Japan               |
+|                                                       Generate Japan consumption tax report                                                       |               Japan               |
+|                                                 Import a customer payment with a JBA file format                                                  |               Japan               |
+|                                                        Inquiries of payment fee on journal                                                        |               Japan               |
+|                                         Inquiries of the asset retirement obligation related transactions                                         |               Japan               |
+|                                                          Inquiry on deductible expenses                                                           |               Japan               |
+|                                                 JP-00005 Input journal in T account form (Japan)                                                  |               Japan               |
+|                              JP-00011 Consolidated invoice - AR - Create and confirm a customer consolidated invoice                              |               Japan               |
+|                                                 JP-00027 Form 26 for depreciable tax declaration                                                  |               Japan               |
+|                                          Maintain fixed-asset master data files for Deductible expenses                                           |               Japan               |
+|                                                Maintain impairment indicators on individual assets                                                |               Japan               |
+|                                         Pay a vendor transaction by endorsing a customer bill of exchange                                         |               Japan               |
+|                                                Periodic settlement of over and under depreciation                                                 |               Japan               |
+|                                                          Propose additional depreciation                                                          |               Japan               |
+|                                                   Propose and post the accelerated depreciation                                                   |               Japan               |
+|                                                  Propose and post the impairment amount by batch                                                  |               Japan               |
+|                                        Propose and post the impairment amount by using fixed asset journal                                        |               Japan               |
+|                                         Propose and post the impairment amount on a cash generating unit                                          |               Japan               |
+|                                                           Propose special depreciation                                                            |               Japan               |
+|                                                  Reopen and edit a customer consolidated invoice                                                  |               Japan               |
+|                                                   Reopen and edit a vendor consolidated invoice                                                   |               Japan               |
+|                                                       Reverse an endorsed bill of exchange                                                        |               Japan               |
+|                                 Run the recognition test and calculate the impairment amount on individual assets                                 |               Japan               |
+|                                                        Settle an endorsed bill of exchange                                                        |               Japan               |
+|                                         Settle customer consolidated invoices by using a payment journal                                          |               Japan               |
+|                                          Settle vendor consolidated invoices by using a payment journal                                           |               Japan               |
+|                                         Settle vendor consolidated invoices by using settle transactions                                          |               Japan               |
+|                                         Settle vendor consolidated invoices by using settle transactions                                          |               Japan               |
+|                                      Set up a customer and sales order to be target of consolidated invoice                                       |               Japan               |
+|                                Set up asset retirement obligation documents and enter ARO amount on a fixed asset                                 |               Japan               |
+|                                                           Set up consolidated invoices                                                            |               Japan               |
+|                                         Setup impairment accounting common parameters and posting profile                                         |               Japan               |
+|                                           Setup Japan payment by endorsing a customer bill of exchange                                            |               Japan               |
+|                                Set up master data for inclusion of deductible expenses for multiple posting layers                                |               Japan               |
+|                                                        Setup Japan consumption tax report                                                         |               Japan               |
+|                                                            Setup payment fee for Japan                                                            |               Japan               |
+|                                    Setup vendor master and purchase order to be target of consolidated invoice                                    |               Japan               |
+|                                                        Use assemble list of a fixed asset                                                         |               Japan               |
+|                                                       Use disassemble list for fixed assets                                                       |               Japan               |
+|                                                          MX-00006 Set up sales tax code                                                           |              Mexico               |
+|                                             MX-00007 Customer registration IDs and other information                                              |              Mexico               |
+|                                                         MX-00008: Vendor registration IDs                                                         |              Mexico               |
+|                                                       MX-00010 Cancel an electronic invoice                                                       |              Mexico               |
+|                                                             MX-00010 E-invoicing CFDI                                                             |              Mexico               |
+|                                          MX-00010 Enter tax registration IDs for Mexican legal entities                                           |              Mexico               |
+|                                                 MX-00010 Inquire and print an electronic invoice                                                  |              Mexico               |
+|                                                         MX-00010 Post a free text invoice                                                         |              Mexico               |
+|                                                 MX-00010 Set parameters for an electronic invoice                                                 |              Mexico               |
+|                                     MX-00020: Produce Mexican electronic ledger accounting report version 1.1                                     |              Mexico               |
+|                                        MX-00020 Set up the chart of accounts for a legal entity in Mexico                                         |              Mexico               |
+|                                       MX-00020 - Specify the RFC registration ID for Mexican bank accounts                                        |              Mexico               |
+|                                                        NL-00003 Semansys XBRL integration                                                         |            Netherlands            |
+|                                                    NL-00010 Electronic tax declarations (EVAT)                                                    |            Netherlands            |
+|                                            MY-00003 Manage customer Debit note and Credit note for GST                                            | Singapore, Malaysia, and Thailand |
+|                                             MY-00004 Manage vendor Debit note and Credit note for GST                                             | Singapore, Malaysia, and Thailand |
+|                                                          MY-00005 Print GST tax invoices                                                          | Singapore, Malaysia, and Thailand |
+|                                                       MY-00006 01 Set up GST relief clauses                                                       | Singapore, Malaysia, and Thailand |
+|                                           MY-00006 02 Print GST customer invoices with a relief clause                                            | Singapore, Malaysia, and Thailand |
+|                                                           MY-00007 Self-billed invoices                                                           | Singapore, Malaysia, and Thailand |
+|                                             MY-00010 GST - Generate GAF files in the required format                                              | Singapore, Malaysia, and Thailand |
+|                                            MY-00011 02 Generate Customer Debit Note for Project sales                                             | Singapore, Malaysia, and Thailand |
+|                                            MY-00011 03 Generate Customer Credit note for Project sales                                            | Singapore, Malaysia, and Thailand |
+|                                     Create a purchase order that includes items subject to reverse charge VAT                                     |          United Kingdom           |
+|                                      Create a sales order that includes items subject to reverse charge VAT                                       |          United Kingdom           |
+|                                       GB-00002 Set up reverse charge VAT item groups, rules, and parameters                                       |          United Kingdom           |
+|                                             GB-00009 Create a credit note on the settlement discount                                              |          United Kingdom           |
+|                                       GB-00009 Setup parameters for credit note on prompt payment discount                                        |          United Kingdom           |
+|                                                Set up item sales tax groups for reverse charge VAT                                                |          United Kingdom           |
+|                                                  Set up sales tax groups for reverse charge VAT                                                   |          United Kingdom           |
 
 ### 
 
@@ -394,11 +393,11 @@ The (November 2016 -- all languages) APQC Unified Library contains the Task guid
 
 ### Inbound consignment
 
-| BPM line                                                                       | Country/region |
-|--------------------------------------------------------------------------------|----------------|
-| **\***Change the ownership of consignment inventory based on production demand | Global         |
-| **\***Create a consignment replenishment order                                 | Global         |
-| **\***Monitor consignment inventory using vendor collaboration                 | Global         |
+|                                          BPM line                                           | Country/region |
+|---------------------------------------------------------------------------------------------|----------------|
+| <strong>\</strong>*Change the ownership of consignment inventory based on production demand |     Global     |
+|                 <strong>\</strong>*Create a consignment replenishment order                 |     Global     |
+|         <strong>\</strong>*Monitor consignment inventory using vendor collaboration         |     Global     |
 
 ### 
 
@@ -423,11 +422,11 @@ The (November 2016 -- all languages) APQC Unified Library contains the Task guid
 
 ### Performance management
 
-| BPM line                                                         | Country/region |
-|------------------------------------------------------------------|----------------|
-| **\***Add to your performance journal and send praise to someone | Global         |
-| **\***Create a goal                                              | Global         |
-| **\***Create a performance review                                | Global         |
+|                                   BPM line                                    | Country/region |
+|-------------------------------------------------------------------------------|----------------|
+| <strong>\</strong>*Add to your performance journal and send praise to someone |     Global     |
+|                       <strong>\</strong>*Create a goal                        |     Global     |
+|                <strong>\</strong>*Create a performance review                 |     Global     |
 
 ### 
 
@@ -499,25 +498,25 @@ The (November 2016 -- all languages) APQC Unified Library contains the Task guid
 
 ### Retail and commerce
 
-| BPM line                                                         | Country/region |
-|------------------------------------------------------------------|----------------|
-| Configure a worker                                               | Global         |
-| **\***Configure machine learning-powered product recommendations | Global         |
-| Configure the functionality profile for a sales representative   | Global         |
-| **\***Create a POS visual profile (November 2016)                | Global         |
-| Create and associate registers                                   | Global         |
-| Create call center orders                                        | Global         |
-| Create trade agreements using a category pricing rule            | Global         |
-| Create, calculate, and post a statement for a store              | Global         |
-| Define an affiliation and assign a discount                      | Global         |
-| Define and manage POS permission groups                          | Global         |
-| Define continuity schedule                                       | Global         |
-| **\***Define retail channel communications (CDX)                 | Global         |
-| Loyalty rewards adjustments                                      | Global         |
-| Manage assortments                                               | Global         |
-| Sales tax assignment and override                                | Global         |
-| Set up rules and parameters for cross docking and buyer's push   | Global         |
-| Using continuity program                                         | Global         |
+|                                   BPM line                                    | Country/region |
+|-------------------------------------------------------------------------------|----------------|
+|                              Configure a worker                               |     Global     |
+| <strong>\</strong>*Configure machine learning-powered product recommendations |     Global     |
+|        Configure the functionality profile for a sales representative         |     Global     |
+|        <strong>\</strong>*Create a POS visual profile (November 2016)         |     Global     |
+|                        Create and associate registers                         |     Global     |
+|                           Create call center orders                           |     Global     |
+|             Create trade agreements using a category pricing rule             |     Global     |
+|              Create, calculate, and post a statement for a store              |     Global     |
+|                  Define an affiliation and assign a discount                  |     Global     |
+|                    Define and manage POS permission groups                    |     Global     |
+|                          Define continuity schedule                           |     Global     |
+|         <strong>\</strong>*Define retail channel communications (CDX)         |     Global     |
+|                          Loyalty rewards adjustments                          |     Global     |
+|                              Manage assortments                               |     Global     |
+|                       Sales tax assignment and override                       |     Global     |
+|        Set up rules and parameters for cross docking and buyer's push         |     Global     |
+|                           Using continuity program                            |     Global     |
 
 ### 
 
@@ -581,21 +580,19 @@ The (November 2016 -- all languages) APQC Unified Library contains the Task guid
 
 ### Warehouse and transportation
 
-| BPM line                                                                    | Country/region |
-|-----------------------------------------------------------------------------|----------------|
-| Create a location profile                                                   | Global         |
-| **\***Create a mobile device menu item for license plate consolidation      | Global         |
-| Reconcile freight manually                                                  | Global         |
-| Register driver check-in and check-out for an appointment                   | Global         |
-| Set up a mobile device menu item for completing work of type purchase order | Global         |
-| Set up an appointment for a load                                            | Global         |
-| Set up a transportation tender                                              | Global         |
-| Set up automatic freight reconciliation                                     | Global         |
-| **\***Set up short picking item reallocation                                | Global         |
+|                                      BPM line                                       | Country/region |
+|-------------------------------------------------------------------------------------|----------------|
+|                              Create a location profile                              |     Global     |
+| <strong>\</strong>*Create a mobile device menu item for license plate consolidation |     Global     |
+|                             Reconcile freight manually                              |     Global     |
+|              Register driver check-in and check-out for an appointment              |     Global     |
+|     Set up a mobile device menu item for completing work of type purchase order     |     Global     |
+|                          Set up an appointment for a load                           |     Global     |
+|                           Set up a transportation tender                            |     Global     |
+|                       Set up automatic freight reconciliation                       |     Global     |
+|              <strong>\</strong>*Set up short picking item reallocation              |     Global     |
 
-
-
-See also
+Additional resources
 --------
 
 [New task guides available (February 2016)](new-task-guides-available-february-2016.md)

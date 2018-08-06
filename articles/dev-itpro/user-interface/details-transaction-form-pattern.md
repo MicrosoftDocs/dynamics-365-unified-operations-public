@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Details Transaction form pattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the Details Transaction form pattern. Forms that use this pattern can have two details views that the user can switch between - a Header view and a Line view.
 
 Usage
 -----
 
-A details form with lines (Details Transaction form) consists of one form that can have two details views that the user can switch between. The Header view contains all fields that are related to or part of the header. The Line view contains the lines grid, line details, and a section that contains a collection of the most important header fields.
+A details form with lines (Details Transaction form) consists of one form that can have two details views that the user can switch between. The Header view contains all fields that are related to or part of the header. The Line view contains the lines grid, line details, and a section that contains a collection of the most important header fields.
 
 ## Wireframe
 ### Line view
@@ -58,9 +57,9 @@ A details form with lines (Details Transaction form) consists of one form that c
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
--   A List style grid has been added to the left of the Details view content, which is shown in either Header view or Line view.
--   List Page and Details Master have been merged into a single form. This change has the following benefits:
-    -   It improves performance when users move between the list and details.
+-   A List style grid has been added to the left of the Details view content, which is shown in either Header view or Line view.
+-   List Page and Details Master have been merged into a single form. This change has the following benefits:
+    -   It improves performance when users move between the list and details.
     -   It enables bulk editing in the initial list.
     -   It allows for elimination of the list page preview pane.
 -   View/Edit, New, Delete, Save, Refresh, Attachments, and Export to Excel actions are all provided by the foundation and should not have explicit app buttons unless the foundation-provided button is removed.
@@ -141,9 +140,9 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 -   [Custom Filter Group](custom-filter-group-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Detail Transaction guidelines:**
 
@@ -156,18 +155,18 @@ The verification checklist shows the steps for manually verifying that the form 
     -   A link to the Details page should be provided on the Main Menu after the List page has been merged into the Details page.
     -   The page title should be in a plural form.
 -   **Navigation list grid**:
-    -   The list style grid should not have fields within a grid row that spans more than three lines.
+    -   The list style grid should not have fields within a grid row that spans more than three lines.
         -   Typically, just the ID and Description are sufficient.
-        -   There should be at least two fields.
+        -   There should be at least two fields.
     -   The last field should be the total of the transaction.
 -   **Grid view**:
     -   The grid has 2 to 15 fields. Typically, all mandatory fields are included, so that records can be created in the grid.
-    -   A linked field lets the user open the details for the selected record.
-    -   By default, the Quick Filter should use the most likely field for a filter scenario.
+    -   A linked field lets the user open the details for the selected record.
+    -   By default, the Quick Filter should use the most likely field for a filter scenario.
     -   Focus should be in the Quick Filter when the list page is opened.
     -   **Grid**:
         -   The **ID** field should be the first column, followed by the master entity **ID** and **Name** fields.
-        -   Additional grid guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document, in the Grid guidelines section.
+        -   Additional grid guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document, in the Grid guidelines section.
     -   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md) document.
 
 ## Example

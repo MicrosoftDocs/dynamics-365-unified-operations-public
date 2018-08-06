@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Performance management overview
+title: Performance management
 description: The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
 author: mikefalkner
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Performance management overview
+# Performance management
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
 
@@ -43,7 +42,7 @@ As the following diagram shows, there are three pages that help you manage the p
 -   Goals
 -   Performance review
 
-The following diagram shows how the primary components of performance management are related to each other. [![Performance process overview](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+The following diagram shows how the primary components of performance management are related to each other. [![Performance process overview](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## Performance journal
 As an employee, before you complete your review, you often gather information about activities or events that contributed to your success during a review period. The performance journal is the place where you can document those activities and events. In addition, you can create future activities that must be completed to help you accomplish a goal, meet the requirements of a development plan, or meet a performance commitment. Performance journals aren’t required in order to create goals or performance reviews. 
@@ -116,7 +115,7 @@ You can show performance journal items that are related to the review. You can a
 
 ### Ratings
 
-You can apply a rating to any goal or competency that is on the review. You can define the rating models for each review. The defaults for ratings are on the **Human resources parameters** page under **Performance.**
+You can apply a rating to any goal or competency that is on the review. You can define the rating models for each review. The defaults for ratings are on the **Human resources parameters** page under **Performance.**
 
 ### Sign-offs
 
@@ -132,7 +131,7 @@ You can attach a document to a review in the **Attachments** section of the **re
 You can use the Worker Review workflow to control the approval of a review. You can also choose to skip the automated workflow and manually change the status of the review, which allows you to create simpler documents like a one-on-one without having to use the workflow process. Access to a review is controlled by the status of the review.
 
 1.  When the review is created, it’s set to the **Not started** status. The review is editable by anyone.
-2.  Once the employee presses the **Begin review** button, the review is set to the **In progress** status. The employee then begins to add content. At this point, the manager can no longer view the review document.
+2.  Once the employee presses the **Begin review** button, the review is set to the **In progress** status. The employee then begins to add content. At this point, the manager can no longer view the review document.
 3.  The employee changes the status to **Ready for review**.
 4.  The manager can add comments and ratings. At this point, only the manager can see the review.
 5.  The manager changes the status to **Final review**, so that both the manager and the employee can see the review and discuss it. You can specify in the parameters whether or not the review can be edited at this point. This step is also optional if the manager simply wants to share the review with the employee and mark it as **Complete** when they are finished.
@@ -141,10 +140,10 @@ You can use the Worker Review workflow to control the approval of a review. You 
 The Worker Review workflow has two elements:
 
 1.  Approve review. Add this element to control the status change from **In progress** to **Ready for review**. Change the assignment to use the managerial hierarchy where the Employee.line manager level = 1.
-2.  Final review. Add this element to control the status change from **Ready for review** to **Final review**. Change the assignment to use the managerial hierarchy where the Employee.line manager level = 1 if you want the manager to approve the final review. Change the assignment to Workflow user if you want the employee to approve it. If you want both the manager and employee to approve it, add two steps in the workflow and make the appropriate assignment for each step in the order that you want the approvals to follow.
+2.  Final review. Add this element to control the status change from **Ready for review** to **Final review**. Change the assignment to use the managerial hierarchy where the Employee.line manager level = 1 if you want the manager to approve the final review. Change the assignment to Workflow user if you want the employee to approve it. If you want both the manager and employee to approve it, add two steps in the workflow and make the appropriate assignment for each step in the order that you want the approvals to follow.
 
 ## Setup
-There are three pages that help you set up information that is required in order to complete the performance process: the **measurements** page,  the **performance journal source types** page and the **review types** page.
+There are three pages that help you set up information that is required in order to complete the performance process: the **measurements** page,  the **performance journal source types** page and the **review types** page.
 
 ### Measurements
 
@@ -152,11 +151,11 @@ The measurements page lets you create standard measurements that will be used on
 
 ### Performance journal source types
 
-Performance journal source types describe where the performance journals come from. You can see whether a journal item will be viewed by default by the manager only, the employee only, or both the manager and the employee. You can also enable or disable the Send Praise feature by changing the Praise source type. You cannot disable the other source types at this time.
+Performance journal source types describe where the performance journals come from. You can see whether a journal item will be viewed by default by the manager only, the employee only, or both the manager and the employee. You can also enable or disable the Send Praise feature by changing the Praise source type. You cannot disable the other source types at this time.
 
-### Review types
+### Review types
 
-Performance review types help you control the behavior of a review. You can enable or disable workflow for a review. If the review does not use workflow, you can define the default status that will be used when the review is created. You can also decide if the employee, the manager, or both will be required to sign off on the review.
+Performance review types help you control the behavior of a review. You can enable or disable workflow for a review. If the review does not use workflow, you can define the default status that will be used when the review is created. You can also decide if the employee, the manager, or both will be required to sign off on the review.
 
 
 

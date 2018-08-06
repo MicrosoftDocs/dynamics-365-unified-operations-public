@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Configure and run a job to calculate statements
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through configuring and running recurrent batch jobs to create and calculate statements for a selected store or group of stores. This procedure uses the USRT company in demo data.
 

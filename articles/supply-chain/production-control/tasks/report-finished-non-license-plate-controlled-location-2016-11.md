@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Report as finished to a plate-controlled location 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This task guide shows an example of reporting as finished to a location that isn't license plate–controlled. An applicable work policy is the prerequisite for this task. A previous task guide showed the setup of the work policy. This task guide requires Dynamics AX application 7.0.1 or later.
 

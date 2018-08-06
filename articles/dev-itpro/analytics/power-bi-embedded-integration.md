@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Power BI Embedded integration
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Power BI content that partners and independent software vendors (ISVs) developed can be embedded directly into the Microsoft Dynamics 365 for Finance and Operations. This topic describes some of the ways that you can use the Microsoft Power BI Embedded integration.
 

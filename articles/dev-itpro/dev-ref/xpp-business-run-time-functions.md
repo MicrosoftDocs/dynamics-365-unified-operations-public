@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ business run-time functions
+title: X++ business runtime functions
 description: This topic describes the business run-time functions.
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ business run-time functions
+# X++ business runtime functions
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the business run-time functions.
 
@@ -100,18 +99,18 @@ The depreciation of the asset.
 The book value for a specific period is equal to the purchase price minus the accumulated depreciation for previous periods:
 
 -   Book value for Period 1 = Price
--   Book value for Period 2 = Book value for Period 1 – Depreciation for Period 1
--   Book value for Period n = Book value for Period (n–1) – Depreciation for Period (n–1)
+-   Book value for Period 2 = Book value for Period 1 – Depreciation for Period 1
+-   Book value for Period n = Book value for Period (n–1) – Depreciation for Period (n–1)
 
 There are three variations for the calculation of depreciation: If Period &gt; Life:
 
 -   Depreciation = 0
 
-If (Book value for Period n) – ((Book value for Period n) × 2 ÷ Life) &lt; Residual value:
+If (Book value for Period n) – ((Book value for Period n) × 2 ÷ Life) &lt; Residual value:
 
--   Depreciation = (Book value for Period n) – Residual value
+-   Depreciation = (Book value for Period n) – Residual value
 
-In all other cases: Depreciation = (Book value for Period n) × 2 ÷ Life The **syd** and **sln** functions also calculate the depreciation of an asset. The **syd** and **ddb** functions enables higher depreciation for the earlier years, whereas **sln** calculates a linear depreciation.
+In all other cases: Depreciation = (Book value for Period n) × 2 ÷ Life The **syd** and **sln** functions also calculate the depreciation of an asset. The **syd** and **ddb** functions enables higher depreciation for the earlier years, whereas **sln** calculates a linear depreciation.
 
     ddb(12000,2000,10,1); //Returns the value 2400.
     ddb(12000,2000,10,3); //Returns the value 1536.
@@ -384,7 +383,7 @@ Retrieves the sum of a number plus a specified percentage of that number.
 
 ### Return value
 
-The number that is equal to ((*amount *× *percentage*) + *amount*).
+The number that is equal to ((<em>amount *× *percentage</em>) + <em>amount</em>).
 
 ### Remarks
 

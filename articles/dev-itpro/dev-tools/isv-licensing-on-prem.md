@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: ISV licensing (on-premises)
+title: Independent software vendor (ISV) licensing (on-premises)
 description: This topic describes the independent software vendor (ISV) licensing feature for on-premises environments.
 author: manalidongre
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.3.0
 
 ---
 
-# ISV licensing (on-premises)
+# Independent software vendor (ISV) licensing (on-premises)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to import independent software vendor (ISV) licenses into an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations.
 
@@ -83,13 +83,13 @@ The following procedure can be used for a sandbox environment or a production en
 3. Copy the licenses that are generated to a folder on one of the machines that is running fabric:/AXSF, and verify that fabric:/AXSF is healthy.
 4. Run the **Import-LicensePackage.ps1** script from one of the AOS machines. You can find this script in the latest **Deployment scripts** folder on the **Model** tab in the Shared asset library in LCS. Here is a list of the parameters that you must pass to the script:
 
-    - **LicenseFilesPath** – The path of a folder that contains the license files that must be imported. 
-    - **SqlUser** – The same user who is specified in the credentials.json file to run the AOS.
-    - **SqlPassword** – The password that can be used to connect to SQL.
-    - **EnvironmentConfigPath** – The configuration file for the environment. This file is named config.json and is located under the agent share in a folder that has the format wp\\&lt;environment-name&gt;\\StandaloneSetup.
+   - **LicenseFilesPath** – The path of a folder that contains the license files that must be imported. 
+   - **SqlUser** – The same user who is specified in the credentials.json file to run the AOS.
+   - **SqlPassword** – The password that can be used to connect to SQL.
+   - **EnvironmentConfigPath** – The configuration file for the environment. This file is named config.json and is located under the agent share in a folder that has the format wp\\&lt;environment-name&gt;\\StandaloneSetup.
 
-    After the command is run, log files are generated for each license file that is processed. The names of the log files are in the format {license\_file\_name}.output.log and {license\_file\_name}.error.log. The logs that are generated during database synchronization are located in files that are structured like dbsync.output.log and dbsync.error.log.
+     After the command is run, log files are generated for each license file that is processed. The names of the log files are in the format {license\_file\_name}.output.log and {license\_file\_name}.error.log. The logs that are generated during database synchronization are located in files that are structured like dbsync.output.log and dbsync.error.log.
 
-6. When the script has been run successfully, validate that the configuration key has been imported and enabled. In the product, the corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, if you added a configuration key that is named ISVConfigurationKey1, it will appear in the list of configuration keys.
+5. When the script has been run successfully, validate that the configuration key has been imported and enabled. In the product, the corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, if you added a configuration key that is named ISVConfigurationKey1, it will appear in the list of configuration keys.
 
 When the configuration key is enabled, the changes in the ISV solution will be visible in the product.

@@ -31,7 +31,7 @@ ms.search.validFrom: 2017-12-31
 
 # India Goods and Services Tax
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides detailed information about India Goods and Services Tax (GST).
 
@@ -119,7 +119,7 @@ The item sales tax group should be removed on products that are assigned an HSN 
 <tr>
 <td>Create main accounts for the GST posting type.</td>
 <td><p>Go to <strong>General ledger</strong> &gt; <strong>Common</strong> &gt; <strong>Main accounts</strong>, and create a main account for each state-wide ledger account that is required. On the <strong>Setup</strong> FastTab, be sure to select <strong>GST</strong> as the posting type.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localization/tasks/create-main-account">Create a main account</a>.</p>
+<p>For more information, see <a href="../general-ledger/tasks/create-main-account.md">Create a main account</a>.</p>
 </td>
 </tr>
 <tr>
@@ -229,20 +229,20 @@ This section walks you through the process of defining the GST and Customs tax s
 
 7. Define main accounts:
 
-    1. On the **Accounting** tab, on the **Conditions** FastTab, select **Add**.
-    2. In the **Import Order** field, select a value.
-    3. In the **Export order** field, select a value.
-    4. Save the record.
-    5. On the **Values** FastTab, in the **Main account** field, select a value.
+   1. On the **Accounting** tab, on the **Conditions** FastTab, select **Add**.
+   2. In the **Import Order** field, select a value.
+   3. In the **Export order** field, select a value.
+   4. Save the record.
+   5. On the **Values** FastTab, in the **Main account** field, select a value.
 
-        > [!NOTE]
-        > The list of accounts is generated dynamically, based on the posting profile from the configuration. The posting type of the selected main account should be **Customs**.
+       > [!NOTE]
+       > The list of accounts is generated dynamically, based on the posting profile from the configuration. The posting type of the selected main account should be **Customs**.
 
-    6. Select the **IGST CUS** node.
-    7. On the **Values** FastTab, in the **Main account** field, select a value.
+   6. Select the **IGST CUS** node.
+   7. On the **Values** FastTab, in the **Main account** field, select a value.
 
-    > [!NOTE]
-    > The main account that you selected for **Customs duty accrual** should be the same account that you selected as the Customs duty accrual account for the **GST** &gt; **IGST** node.
+      > [!NOTE]
+      > The main account that you selected for **Customs duty accrual** should be the same account that you selected as the Customs duty accrual account for the **GST** &gt; **IGST** node.
 
 ### Map configuration tax types to ERP tax types (GST)
 
@@ -258,14 +258,14 @@ This section walks you through the process of defining the GST and Customs tax s
 
 7. Define main accounts:
 
-    1. On the **Accounting** tab, on the **Conditions** FastTab, select **Add**.
-    2. In the **GST Registration Number** field, select a value.
-    3. Save the record.
-    4. On the **Values** FastTab, in the **Main account** field, select a value.
+   1. On the **Accounting** tab, on the **Conditions** FastTab, select **Add**.
+   2. In the **GST Registration Number** field, select a value.
+   3. Save the record.
+   4. On the **Values** FastTab, in the **Main account** field, select a value.
 
-    > [!NOTE]
-    > - The list of accounts is generated dynamically, based on the posting profile from the configuration.
-    > - Tax main accounts can be defined at the level of either the tax type or the tax component. The value at the tax component level overrides the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level is used for posting. We recommend that you set up the tax accounts at the tax component level for each  registration.
+      > [!NOTE]
+      > - The list of accounts is generated dynamically, based on the posting profile from the configuration.
+      > - Tax main accounts can be defined at the level of either the tax type or the tax component. The value at the tax component level overrides the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level is used for posting. We recommend that you set up the tax accounts at the tax component level for each  registration.
 
 8. Set up rate and percentage tables:
 

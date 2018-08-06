@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a copy of a Finance and Operations database to restore later
+title: Export copies of Finance and Operations databases to restore later
 description: This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application.
 author: tariqbell
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Create a copy of a Finance and Operations database to restore later
+# Export copies of Finance and Operations databases to restore later
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application. This procedure can be used only in non-production environments. 
 
@@ -130,14 +130,14 @@ Here is an explanation of the parameters:
 - **sf (source file)** – The path and name of the file to import from.
 - **tu (target user)** – The SQL user name for the target Azure SQL database instance. We recommend that you use the standard **sqladmin** user. You can retrieve the password for this user from your LCS project.
 - **tp (target password)** – The password for the target Azure SQL database user.
-- **DatabaseServiceObjective** - Specifies the performance level of the database such as S1, P2 or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this envrironment. To query the service level objective of the current database, run the following query.
-```
-SELECT  d.name,   
+- **DatabaseServiceObjective** - Specifies the performance level of the database such as S1, P2 or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. To query the service level objective of the current database, run the following query.
+  ```
+  SELECT  d.name,   
      slo.*    
-FROM sys.databases d   
-JOIN sys.database_service_objectives slo    
-ON d.database_id = slo.database_id;  
-```
+  FROM sys.databases d   
+  JOIN sys.database_service_objectives slo    
+  ON d.database_id = slo.database_id;  
+  ```
 
 ### Run a script to update the Finance and Operations database
 
@@ -182,6 +182,10 @@ EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 CREATE USER axretailruntimeuser WITH PASSWORD = '<password from LCS>'
 EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
 EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
+
+CREATE USER axdeployextuser WITH PASSWORD = '<password from LCS>'
+EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
+
 GO
 -- Begin Refresh Retail FullText Catalogs
 DECLARE @RFTXNAME NVARCHAR(MAX);
@@ -215,7 +219,7 @@ DEALLOCATE retail_ftx;
 
 Reprovisioning is only required if you are restoring or importing the database on another environment. 
 
-[!include[environment-reprovision](../includes/environment-reprovision.md)]
+[!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## Limitations
 After you import a database, the link between the database and document handling documents that are stored in Azure blob storage might be broken. If you have custom code that uses the X++ **FileUpload** class to put files in blob storage, the links to those files might also be broken.

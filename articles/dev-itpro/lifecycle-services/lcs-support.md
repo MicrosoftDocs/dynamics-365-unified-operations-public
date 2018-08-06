@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Find support for Finance and Operations and Dynamics Lifecycle Services
+title: Get support for Finance and Operations or Lifecycle Services (LCS)
 description: This article explains how to get help with Microsoft Dynamics 365 for Finance and Operations or Microsoft Dynamics Lifecycle Services (LCS). 
 author: kfend
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Find support for Microsoft Dynamics 365 for Finance and Operations and Dynamics Lifecycle Services
+# Get support for Finance and Operations or Lifecycle Services (LCS)
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article explains how to get help with Finance and Operations or Microsoft Dynamics Lifecycle Services (LCS). 
 
@@ -76,8 +75,8 @@ To obtain support for Finance and Operations or LCS, use the resources in the fo
 Note: Microsoft Premier Customers and Partners can also submit premier support tickets using the steps above.</td>
 </tr>
 <tr class="even">
-<td>Open a support ticket with the Finance and Operations support team.</td>
-<td>If you have issues when you try to submit a ticket to Microsoft from the <strong>Support</strong> tile in LCS, see <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Contact Microsoft Business Solutions Support</span></a> for information about to contact a Microsoft Dynamics Regional Operations Center. The support team can help you resolve the following types of technical issues:
+<td>Open a support ticket with the Finance and Operations support team.</td>
+<td>If you have issues when you try to submit a ticket to Microsoft from the <strong>Support</strong> tile in LCS, see <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Contact Microsoft Business Solutions Support</span></a> for information about to contact a Microsoft Dynamics Regional Operations Center. The support team can help you resolve the following types of technical issues:
 <ul>
 <li>Errors that occur when you use LCS or issues that occur when you try to access LCS.</li>
 <li>Errors that occur when you use Finance and Operations.</li>
@@ -85,7 +84,7 @@ Note: Microsoft Premier Customers and Partners can also submit premier support t
 For technical questions that are related to signing in to and accessing CustomerSource, e-learning, Search, Knowledge Base, file download, and page or system errors, go to <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">Website Support</span></a>.</td>
 </tr>
 <tr class="odd">
-<td>Get help with questions about Finance and Operations licensing.</td>
+<td>Get help with questions about Finance and Operations licensing.</td>
 <td>Contact your partner, large account reseller (LAR), or Microsoft sales representative.</td>
 </tr>
 <tr class="even">

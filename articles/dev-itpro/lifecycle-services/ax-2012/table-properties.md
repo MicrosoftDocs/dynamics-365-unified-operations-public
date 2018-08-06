@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Table properties
+title: Table properties in the Application Object Tree (AOT)
 description: This topic describes the properties that are in the<strong> Properties</strong> window for table elements in the Application Object Tree (AOT). Table elements are located under <strong>Data Dictionary</strong> &gt; <strong>Tables</strong>.
 author: kfend
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Table properties
+# Table properties in the Application Object Tree (AOT)
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the properties that are in the<strong> Properties</strong> window for table elements in the Application Object Tree (AOT). Table elements are located under <strong>Data Dictionary</strong> &gt; <strong>Tables</strong>.
 
@@ -77,7 +76,7 @@ The following table describes the properties of table elements in the AOT.
 </tr>
 <tr class="even">
 <td><strong><span class="ui">AOSAuthorization</span></strong></td>
-<td>Specifies the type of operation that a user can perform on a table, depending on the user's permissions. When the property is set to <strong><span class="ui">None</span></strong>, an authorization check is not performed.</td>
+<td>Specifies the type of operation that a user can perform on a table, depending on the user&#39;s permissions. When the property is set to <strong><span class="ui">None</span></strong>, an authorization check is not performed.</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -357,7 +356,7 @@ The following properties are related to report models that are used to add infor
 
 
 
-See also
+Additional resources
 --------
 
 [Data Dictionary Node in the AOT](http://msdn.microsoft.com/library/4d7d1f77-11b8-4d8a-a44c-85e7d288c368(AX.60).aspx)

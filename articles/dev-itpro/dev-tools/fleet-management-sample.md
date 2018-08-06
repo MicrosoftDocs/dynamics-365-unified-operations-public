@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fleet Management sample application
+title: End-to-end scenario for the Fleet Management sample application
 description: This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
 author: RobinARH
 manager: AnnBe
@@ -30,14 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Fleet Management sample application
+# End-to-end scenario for the Fleet Management sample application
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
 
-In this tutorial, you’ll take a tour of the Fleet Management sample. The overviews in this tutorial provide some background knowledge and contextual info. You’ll walk through an end-to-end scenario that this sample application is designed to support. This is information that you should have before proceeding to other tutorials.
+In this tutorial, you’ll take a tour of the Fleet Management sample. The overviews in this tutorial provide some background knowledge and contextual info. You’ll walk through an end-to-end scenario that this sample application is designed to support. This is information that you should have before proceeding to other tutorials.
 
 ## Prerequisite
 -   You must first be provisioned as an end user before you start this tutorial.
@@ -51,11 +50,11 @@ To work with the sample, you must install the provided demo data.
 3.  On the dashboard, open the navigation pane and go to **Fleet Management &gt; Setup &gt; Fleet setup**. 
 
     [![Fleet Setup](./media/fleetsetup1_introfleetmgmt1.png)](./media/fleetsetup1_introfleetmgmt1.png)
-    
+
 4.  Click **Setup Demo Data**. 
-    
+
     [![Load Demo Data](./media/loaddemodata_introfleetmgmt1.png)](./media/loaddemodata_introfleetmgmt1.png)
-    
+
 5.  If you're prompted to reload the demo data, click **Yes**.
 6.  When the data is finished loading, click **Close**.
 
@@ -64,34 +63,34 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 
 1.  Open Internet Explorer, and sign into Microsoft Dynamics 365 for Finance and Operations.
 2.  To return to the **Dashboard**, click the Microsoft Dynamics logo in the top-left corner of the page.[![Return to Dash](./media/returntodash_introfleetmgmt.png)](./media/returntodash_introfleetmgmt.png) The dashboard is the main working hub. You can see the various tiles, organized into sections, which lead to parts of the application. The dashboard is designed for horizontal scrolling, which is an optimization for working well on modern devices. The button to the right of the dashboard shows the navigation bar.
-3.  From the Dashboard, open the navigation bar and go to **Fleet Management** &gt; **Common** &gt; **Customers** &gt; **Customer**. 
+3.  From the Dashboard, open the navigation bar and go to **Fleet Management** &gt; **Common** &gt; **Customers** &gt; **Customer**. 
 
     [![Customers](./media/customers_introfleetmgmt.png)](./media/customers_introfleetmgmt.png) 
-    
+
     [![New Customer](./media/newcustomer_introfleetmgmt1.png)](./media/newcustomer_introfleetmgmt1.png)
-        
-4.  On the Action Pane, click the Microsoft Office logo, then click on **Customers** under **Export to Excel **to send the information in the grid view to a Microsoft Excel spreadsheet. This operation can take some time.
+
+4.  On the Action Pane, click the Microsoft Office logo, then click on **Customers** under **Export to Excel **to send the information in the grid view to a Microsoft Excel spreadsheet. This operation can take some time.
 
     [![Export to excel](./media/exporttoexcel.jpg)](./media/exporttoexcel.jpg)
-    
+
 5.  When prompted, click **Open** to view the data in Excel.
 6.  Close Excel.
 7.  To switch to the **Details** view, click on a value in the **First Name** column. 
 
     [![First name](./media/customer.jpg)](./media/customer.jpg) This view shows detailed information for a single customer.
-    
+
 8.  Click **Show list** to show the navigation list. 
 
     [![Navigation list](./media/listnav_introfleetmgmt1.png)](./media/listnav_introfleetmgmt1.png)
-    
+
 9.  Click the various customer names in the navigation list in the side pane, and watch as the detailed information about each customer changes.
 10. Select the customer **Phil Spencer**. You'll notice the charts update to indicate Phil's previous rental preferences.
 11. Hover over the pie slices to see the details. You'll notice that, in the past, Phil has often rented red SUVs. This might give the sales clerk a cue to look for available red SUVs the next time Phil makes a reservation. This is a simple example of proactively providing insights.
 12. Add yourself as a customer.
     -   On the Action Pane, click **New**. 
-        
+
         [![Add yourself](./media/addyourself_introfleetmgmt1.png)](./media/addyourself_introfleetmgmt1.png)
-        
+
     -   Fill in the form to add yourself as a customer. Make sure that you provide your name, a 16-digit number in the credit card field, and address information, at a minimum. **Note**: You don't have to take any action to save a new record.
 
 13. Create a new rental.
@@ -119,7 +118,7 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 8.  On the navigation bar, navigate to **Fleet management** &gt; **Vehicles** &gt; **Vehicle Maintenance**. 
 
     [![Vehicle Maintenance](./media/vehiclemaintenance_introfleetmgmt.png)](./media/vehiclemaintenance_introfleetmgmt.png) 
-    
+
     In the **Vehicle Maintenance** form, the **Status** field shows that your rental is awaiting examination by the service department. **Note**: You might need to wait up to two minutes for the batch framework to change the status of the vehicle. On the Action Pane, click **Refresh** periodically to update the view, until you see the status change. Keep in mind that a different person usually handles each step in a workflow; the brief delay introduced by the batch framework is not an issue in a real-world application.
 9.  Select the row that contains your rental. On the Action Pane, click **Workflow**, and then click **Examination complete**. **Note**: You may need to refresh the page to get the full set of options under Workflow.
 10. Enter a comment, and then click **Examination complete**.
@@ -133,18 +132,18 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 1.  On the dashboard, navigate to **Fleet Management** &gt; **Setup** &gt; **Workflow setup**. The **Workflow Setup** page shows the list of workflows. 
 
     [![Workflow setup](./media/workflowsetup.jpg)](./media/workflowsetup.jpg)
-    
+
 2.  In the **Workflow ID** column, click the ID of your vehicle maintenance workflow.
 3.  Accept any prompts that ask you for permission to run code. After a short wait, the workflow editor opens. **Note:** This step works on the one-box environment, but not in the cloud. You can view the workflow diagram in the workflow editor. The following illustration shows the workflow.
 
     [![Workflow diagram](./media/workflow_introfleetmgmt.png)](./media/workflow_introfleetmgmt.png)
-    
+
 4.  When you are done, close the **Workflow** window.
 
 ## Create a new KPI definition
 The web client enables users who have appropriate permissions to modify KPI definitions that have been modeled and deployed by developers. Users also have the ability to create new KPI definitions in the client. In this walkthrough, you create a new KPI definition in the client.
 
-1.  Open the **Reservation Management** workspace. On the navigation bar, go to** Fleet Management **&gt;** Workspaces &gt; Reservation Management**.
+1.  Open the **Reservation Management** workspace. On the navigation bar, go to** Fleet Management **&gt;** Workspaces &gt; Reservation Management**.
 2.  Notice the Total revenue KPI tile shown on the bottom left of the workspace. Click the **Total Revenue KPI** tile. Details of the total revenue KPI tile along with charts indicating top and bottom contributors to revenue will be shown on screen.
 3.  Next, you will define a new KPI to monitor the number of rentals.
 4.  On the Action Pane, click **New**. The **New KPI** dialog will open.
@@ -159,12 +158,12 @@ The web client enables users who have appropriate permissions to modify KPI defi
     | **Goal is**       | Fixed Value             |
     | **Goal Value**    | 30                      |
 
-     
+
 6.  Click **Save**. 
 
     [![New KPI](./media/newkpi_introfleetmgmt1.png)](./media/newkpi_introfleetmgmt1.png) 
-    
-    **Note:** If the **Save** button isn’t visible in the **New KPI** dialog box, use a higher screen resolution so that you can see the entire dialog. You can see the KPI details page that contains details about the KPI that you created. You can make changes in the **Details** section. You will modify the default threshold values so that if the value is less than 90% of the goal, the KPI will show red and if the value is over 110% of the goal, the KPI will show green.
+
+    **Note:** If the **Save** button isn’t visible in the **New KPI** dialog box, use a higher screen resolution so that you can see the entire dialog. You can see the KPI details page that contains details about the KPI that you created. You can make changes in the **Details** section. You will modify the default threshold values so that if the value is less than 90% of the goal, the KPI will show red and if the value is over 110% of the goal, the KPI will show green.
 7.  Click **Edit**.
 8.  Scroll to the right of the screen, and modify the values in the thresholds fields as follows.
 
@@ -173,11 +172,11 @@ The web client enables users who have appropriate permissions to modify KPI defi
     | **Red if less than**   | 90        |
     | **Green if more than** | 110       |
 
-     
+
 9.  In the application bar, click **Save 
 
     [![KPI Graph](./media/kpigraph_introfleetmgmt.png)](./media/kpigraph_introfleetmgmt.png)**
-    
+
 10. Click the form caption to return to the grid view.
 11. Click the **Name** column header, change the filter operator to **contains**, and update the filter field value to **Number**. You will see the new KPI is available in the list.
 
@@ -190,7 +189,7 @@ In this tutorial, you’ll launch an operational report that contains a list of 
 2.  Click the **Customers report** tile. Do not enter anything in the parameter for **Customer group**. 
 
     [![Customer List](./media/customerlist_introfleetmgmt1.png)](./media/customerlist_introfleetmgmt1.png)
-    
+
 3.  Click **OK** to close the dialog box. The report will be rendered and show the list of customers. The report may take a minute to render.
 
 ## Secure access using the role-based security system
@@ -212,9 +211,9 @@ In this tutorial, you’ll access the system as a user that has been assigned a 
 4.  Click **Assign Roles**. 
 
     [![Assign Roles](./media/assignroles_introfleetmgmt.png)](./media/assignroles_introfleetmgmt.png)
-    
+
 5.  Select **Fleet management branch manager**, and then click **OK**.
-6.  Click the user name on the top right, and then click **Sign Out**. You’ll be redirected back to the sign-n page
+6.  Click the user name on the top right, and then click **Sign Out**. You’ll be redirected back to the sign-n page
 7.  Sign in using the credentials for the user who you assigned the security role to in the steps above.
 8.  Notice that in the dashboard, this user can see only items that are related to his security role. Items that system administrators can see are now hidden.
 9.  Click **Sign out** to sign out of the session.

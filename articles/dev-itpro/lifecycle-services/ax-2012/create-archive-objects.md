@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create an archive object for the Intelligent Data Management Framework
+title: Create archive objects for the Intelligent Data Management Framework
 description: This topic describes how to use archive objects.
 author: kfend
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Create an archive object for the Intelligent Data Management Framework
+# Create archive objects for the Intelligent Data Management Framework
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 Overview of Archive Objects
 ---------------------------
@@ -79,120 +78,120 @@ Consider the following points when working with an Archive Object:
 
 ## Overview of Related Archive Objects
 The relationship tree of an Archive Object can be very complex. In order to archive data from all the related tables, complex relationship trees have to be managed. In some cases, one relationship tree has to include another relationship tree to guarantee data integrity and functionally valid archiving of data. Due to this complexity, you can create a relationship between two independent Archive Objects by adding one Archive Object in the other Archive Object. The child Archive Object is called the Related Archive Object and forms a relationship with the parent Archive Object. An archive task archives selected records from all the tables in the Archive Object and the Related Archive Object. The following steps provide a walkthrough of an Archive Object with a Related Archive Object:
-1.  Use the Microsoft Dynamics AX Windows client to work with the Application Object Tree (AOT). In the AOT, expand **Data Dictionary** &gt; **Tables** &gt; **CustInvoiceSalesLink** &gt; **Relations**. The **CustInvoiceSalesLink** table has two parents, **SalesTable** and **CustInvoiceJour**. Expand the **Relations** node for the **CustInvoiceJour** table. The **CustInvoiceJour** table does not have a relationship with **SalesTable** in the AOT.
-2.  In IDMF, click **Configure** &gt; **Archive templates/Archive Object** &gt; **SalesTable** to open the **SalesTable** Archive Object.
-3.  Review the hierarchical tree, and understand the parent-child relationship. Notice that the **CustInvoiceSalesLink** table from step 1 is not in the relationship tree as a child of **SalesTable**, even though the AOT shows a relationship between the two tables. Notice that the relationship tree contains two oval shapes, named **CustInvoiceJour** and **CustPackingSlipJour**. These oval shapes represent Related Archive Objects for **SalesTable**. A Related Archive Object is an Archive Object that is part of the relationship tree of a parent Archive Object.
-4.  Double-click **CustInvoiceJour**. Notice that the **CustInvoiceJour** Archive Object opens and shows the **SalesTable** in a green rectangle next to the root table, **CustInvoiceJour**. The green rectangle highlights **SalesTable** as the parent Archive Object of the **CustInvoiceJour** Archive Object. The **CustInvoiceSalesLink** table is a child table of the **CustInvoiceJour** table. Double-click **SalesTable** to return to the parent Archive Object.
-5.  Right-click **CustInvoiceJour**, and select **View relation**. In the **Configure Related Archive Object** window, review the relationship between the **SalesTable** and **CustInvoiceJour** tables, and then click **Close** to close the window.
-6.  In the **SalesTable** Archive Object, right-click **CustInvoiceJour**, and select **Remove**. Confirm that the Related Archive Object **CustInvoiceJour** is removed.
-7.  Right-click **SalesTable**, and select **Add Related Archive Object**.
-8.  In the **Configure Related Archive Object** window, follow these steps:
+1. Use the Microsoft Dynamics AX Windows client to work with the Application Object Tree (AOT). In the AOT, expand **Data Dictionary** &gt; **Tables** &gt; **CustInvoiceSalesLink** &gt; **Relations**. The **CustInvoiceSalesLink** table has two parents, **SalesTable** and **CustInvoiceJour**. Expand the **Relations** node for the **CustInvoiceJour** table. The **CustInvoiceJour** table does not have a relationship with **SalesTable** in the AOT.
+2. In IDMF, click **Configure** &gt; **Archive templates/Archive Object** &gt; **SalesTable** to open the **SalesTable** Archive Object.
+3. Review the hierarchical tree, and understand the parent-child relationship. Notice that the **CustInvoiceSalesLink** table from step 1 is not in the relationship tree as a child of **SalesTable**, even though the AOT shows a relationship between the two tables. Notice that the relationship tree contains two oval shapes, named **CustInvoiceJour** and **CustPackingSlipJour**. These oval shapes represent Related Archive Objects for **SalesTable**. A Related Archive Object is an Archive Object that is part of the relationship tree of a parent Archive Object.
+4. Double-click **CustInvoiceJour**. Notice that the **CustInvoiceJour** Archive Object opens and shows the **SalesTable** in a green rectangle next to the root table, **CustInvoiceJour**. The green rectangle highlights **SalesTable** as the parent Archive Object of the **CustInvoiceJour** Archive Object. The **CustInvoiceSalesLink** table is a child table of the **CustInvoiceJour** table. Double-click **SalesTable** to return to the parent Archive Object.
+5. Right-click **CustInvoiceJour**, and select **View relation**. In the **Configure Related Archive Object** window, review the relationship between the **SalesTable** and **CustInvoiceJour** tables, and then click **Close** to close the window.
+6. In the **SalesTable** Archive Object, right-click **CustInvoiceJour**, and select **Remove**. Confirm that the Related Archive Object **CustInvoiceJour** is removed.
+7. Right-click **SalesTable**, and select **Add Related Archive Object**.
+8. In the **Configure Related Archive Object** window, follow these steps:
 
-    1.  In the **Select Related Archive Object** list, select **CustInvoiceJour**. Click **New relation**.
-    2.  In the **Configure relations for Related Archive Object** pane, enter SalesTable in the **Relation name** field.
-    3.  Enter a valid description in the **Relation description** field.
-    4.  In the **Configure relations** pane, use the following table to select fields, and then click **Add**.
-        
-        | From the list          | Select the value    |
-        |------------------------|---------------------|
-        | **Table name**         | **SalesTable**      |
-        | **Field name**         | **dataAreaId**      |
-        | **Condition**          | **=**               |
-        | **Related table name** | **CustInvoiceJour** |
-        | **Related field name** | **dataAreaID**      |
+   1.  In the **Select Related Archive Object** list, select **CustInvoiceJour**. Click **New relation**.
+   2.  In the **Configure relations for Related Archive Object** pane, enter SalesTable in the **Relation name** field.
+   3.  Enter a valid description in the **Relation description** field.
+   4.  In the **Configure relations** pane, use the following table to select fields, and then click **Add**.
 
-    5.  Click **New Relation**. Using the previous step, use the **SalesID** field to create a relationship between the **SalesTable** and **CustInvoiceJour** tables. Click **Add**.
-    6.  Verify that the **SalesTable** and **CustInvoiceJour** tables are related using the **DataAreaId** and **SalesID** fields.
-    7.  Click **Save**. Click **OK**. Click **Close** to return to the parent SalesTable Archive Object.
-    8.  Verify that the SalesTable Archive Object contains the CustInvoiceJour Related Archive Object.
-    9.  Click **Save**. In the **Save as** dialog box, type SalesTable\_a, and then click **Save**. Click **OK** to continue. You must save an Archive Object with a new name.
-    10. Click **Properties** on the upper-right side of the relationship tree workspace, and pin the **Properties** window to the workspace. In the relationship tree, right-click the **Related Archive Object CustInoviceJour**, and then click **Remove**. In the **Properties** window, click **Revert**. The revert action reverses the changes you have made since the last time you clicked **Save**. The revert action here brings back the Related Archive Object **CustInvoiceJour**, because you did not click **Save** after you removed the Related Archive Object.
-    11. Remove the Related Archive Object **CustInvoiceJour** again. Save the Archive Object as **SalesTable\_deleted**.
-    12. On the toolbar, click **Archive templates/Archive Object**. Compare the icon of the SalesTable Archive Object with other objects in the list, and notice the difference. The icon indicates that you have opened the default template and saved it as an Archive Object. You can only use an Archive Object, and not an archive template, in an archive task. Click **SalesTable**. Notice that IDMF opens the Archive Object you just saved as **SalesTable\_deleted**. IDMF lets you save multiple versions of the Archive Object and uses the most recently saved version of the Archive Object.
-    13. On the toolbar, click **Show versions**. In the **Version history** window, select **SalesTable** in the **Archive template** list. Notice that the **Archive Object** list displays the different versions of **SalesTable**, with the most recent version at the top. An archive task uses the most recent version of the Archive Object.
+       | From the list          | Select the value    |
+       |------------------------|---------------------|
+       | **Table name**         | **SalesTable**      |
+       | **Field name**         | **dataAreaId**      |
+       | **Condition**          | **=**               |
+       | **Related table name** | **CustInvoiceJour** |
+       | **Related field name** | **dataAreaID**      |
 
-    This walkthrough explained the concept of including a Related Archive Object in an Archive Object. You must understand the Microsoft Dynamics AX metadata and functionality thoroughly before working with an Archive Object or including a Related Archive Object in a parent Archive Object.
+   5.  Click **New Relation**. Using the previous step, use the **SalesID** field to create a relationship between the **SalesTable** and **CustInvoiceJour** tables. Click **Add**.
+   6.  Verify that the **SalesTable** and **CustInvoiceJour** tables are related using the **DataAreaId** and **SalesID** fields.
+   7.  Click **Save**. Click **OK**. Click **Close** to return to the parent SalesTable Archive Object.
+   8.  Verify that the SalesTable Archive Object contains the CustInvoiceJour Related Archive Object.
+   9.  Click **Save**. In the **Save as** dialog box, type SalesTable\_a, and then click **Save**. Click **OK** to continue. You must save an Archive Object with a new name.
+   10. Click **Properties** on the upper-right side of the relationship tree workspace, and pin the **Properties** window to the workspace. In the relationship tree, right-click the **Related Archive Object CustInoviceJour**, and then click **Remove**. In the **Properties** window, click **Revert**. The revert action reverses the changes you have made since the last time you clicked **Save**. The revert action here brings back the Related Archive Object **CustInvoiceJour**, because you did not click **Save** after you removed the Related Archive Object.
+   11. Remove the Related Archive Object **CustInvoiceJour** again. Save the Archive Object as **SalesTable\_deleted**.
+   12. On the toolbar, click **Archive templates/Archive Object**. Compare the icon of the SalesTable Archive Object with other objects in the list, and notice the difference. The icon indicates that you have opened the default template and saved it as an Archive Object. You can only use an Archive Object, and not an archive template, in an archive task. Click **SalesTable**. Notice that IDMF opens the Archive Object you just saved as **SalesTable\_deleted**. IDMF lets you save multiple versions of the Archive Object and uses the most recently saved version of the Archive Object.
+   13. On the toolbar, click **Show versions**. In the **Version history** window, select **SalesTable** in the **Archive template** list. Notice that the **Archive Object** list displays the different versions of **SalesTable**, with the most recent version at the top. An archive task uses the most recent version of the Archive Object.
 
-    Understanding the Archive Object exception list
-    -----------------------------------------------
+   This walkthrough explained the concept of including a Related Archive Object in an Archive Object. You must understand the Microsoft Dynamics AX metadata and functionality thoroughly before working with an Archive Object or including a Related Archive Object in a parent Archive Object.
 
-    IDMF lets you create an exception parameters list as detailed in a later section of this topic. The exception parameters list applies globally to all purge templates, Purge Objects, archive templates, and Archive Objects. In addition to the exception parameters list, IDMF lets you maintain an exception tables list specifically for Archive Objects. When you create a new Archive Object and select the driver table, IDMF displays the Archive Object exception tables window. The exception list contains tables that you can use as driver tables to create a separate and independent Archive Object. Carefully evaluate these tables to determine whether you want to include them in the relationship tree as related child tables or as Related Archive Objects. The discovery process ignores all tables in the Archive Object exception tables list and does not include them in the relationship tree, even if a relationship exists. To include a table from the Archive Object exception tables list, deselect the table, and click **Save** before you click **Continue** to begin the discovery process. In this case, the discovery process includes the deselected table if a relationship exists. You can also add other tables to the list and select to exclude the newly added table from the discovery process.
+   Understanding the Archive Object exception list
+   -----------------------------------------------
 
-    Navigation of the Archive Object exception tables window
-    --------------------------------------------------------
+   IDMF lets you create an exception parameters list as detailed in a later section of this topic. The exception parameters list applies globally to all purge templates, Purge Objects, archive templates, and Archive Objects. In addition to the exception parameters list, IDMF lets you maintain an exception tables list specifically for Archive Objects. When you create a new Archive Object and select the driver table, IDMF displays the Archive Object exception tables window. The exception list contains tables that you can use as driver tables to create a separate and independent Archive Object. Carefully evaluate these tables to determine whether you want to include them in the relationship tree as related child tables or as Related Archive Objects. The discovery process ignores all tables in the Archive Object exception tables list and does not include them in the relationship tree, even if a relationship exists. To include a table from the Archive Object exception tables list, deselect the table, and click **Save** before you click **Continue** to begin the discovery process. In this case, the discovery process includes the deselected table if a relationship exists. You can also add other tables to the list and select to exclude the newly added table from the discovery process.
 
-    The following tables provide descriptions for the controls in this window.
-    #### Panes
+   Navigation of the Archive Object exception tables window
+   --------------------------------------------------------
 
-    | Pane                        | Description                                                                                                                                           |
-    |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | **Main** window             | Provides the driver table, and a list of exception tables for this driver table. The list of exception tables changes, depending on the driver table. |
-    | **Add new exception table** | Provides controls to add a table to the exception tables list.                                                                                        |
+   The following tables provide descriptions for the controls in this window.
+   #### Panes
 
-    #### 
+   | Pane                        | Description                                                                                                                                           |
+   |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | **Main** window             | Provides the driver table, and a list of exception tables for this driver table. The list of exception tables changes, depending on the driver table. |
+   | **Add new exception table** | Provides controls to add a table to the exception tables list.                                                                                        |
 
-    #### Buttons (main window)
+   #### 
 
-    | Button       | Description                                                                                                 |
-    |--------------|-------------------------------------------------------------------------------------------------------------|
-    | **Save**     | Save the changes to the exception tables list, such as change to the **Status** field and any added tables. |
-    | **Continue** | Continue with the discovery process for the Archive Object.                                                 |
+   #### Buttons (main window)
 
-    #### 
+   | Button       | Description                                                                                                 |
+   |--------------|-------------------------------------------------------------------------------------------------------------|
+   | **Save**     | Save the changes to the exception tables list, such as change to the **Status** field and any added tables. |
+   | **Continue** | Continue with the discovery process for the Archive Object.                                                 |
 
-    #### Buttons (Add new exception tables pane)
+   #### 
 
-    | Button    | Description                                                                                                                       |
-    |-----------|-----------------------------------------------------------------------------------------------------------------------------------|
-    | **Add**   | Add the selected table to the exception tables list. You must select a table in the **Table name** list before you click **Add**. |
-    | **Clear** | Clear the **Table name** list.                                                                                                    |
+   #### Buttons (Add new exception tables pane)
 
-    #### 
+   | Button    | Description                                                                                                                       |
+   |-----------|-----------------------------------------------------------------------------------------------------------------------------------|
+   | **Add**   | Add the selected table to the exception tables list. You must select a table in the **Table name** list before you click **Add**. |
+   | **Clear** | Clear the **Table name** list.                                                                                                    |
 
-    #### Fields (main window)
+   #### 
 
-    | Field                | Description                                                                                                                                                                                                                                                    |
-    |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | **Table name**       | The name of the driver table.                                                                                                                                                                                                                                  |
-    | **Exception tables** | The names of the exception tables. Each table in the list can become a driver table.                                                                                                                                                                           |
-    | **Status**           | A table with the **Status** field selected is not added to the relationship tree during the discovery process, even if a relationship exists. If the **Status** field is not selected, the table is added to the relationship tree if there is a relationship. |
-    | Modified by          | The Windows ID of the user who changed the status of an existing table or added a new table to the list.                                                                                                                                                       |
+   #### Fields (main window)
 
-    #### 
+   | Field                | Description                                                                                                                                                                                                                                                    |
+   |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | **Table name**       | The name of the driver table.                                                                                                                                                                                                                                  |
+   | **Exception tables** | The names of the exception tables. Each table in the list can become a driver table.                                                                                                                                                                           |
+   | **Status**           | A table with the **Status** field selected is not added to the relationship tree during the discovery process, even if a relationship exists. If the **Status** field is not selected, the table is added to the relationship tree if there is a relationship. |
+   | Modified by          | The Windows ID of the user who changed the status of an existing table or added a new table to the list.                                                                                                                                                       |
 
-    #### Fields (Add exception list)
+   #### 
 
-    | Field          | Description                                                         |
-    |----------------|---------------------------------------------------------------------|
-    | **Table name** | Select the table that you want to add to the exception tables list. |
+   #### Fields (Add exception list)
 
-     Create a new Archive Object
-    ----------------------------
+   | Field          | Description                                                         |
+   |----------------|---------------------------------------------------------------------|
+   | **Table name** | Select the table that you want to add to the exception tables list. |
 
-    You can create an Archive Object by selecting a driver table and creating a relationship tree based on the driver table, instead of selecting a template that is included with IDMF. Follow these steps to create a new Archive Object:
-    1.  On the toolbar, click **Create Archive Object**.
-    2.  In the **Create Archive Object** dialog box, select a table from the **Driver table** list. The list excludes tables from the exception parameters list, which is covered later in this topic. Navigate to and select **WMSOrder**. A driver table is the parent table that defines the relationship tree for a specific Archive Object. In an Archive Object, the driver table may have child entities but does not have a parent entity in the relationship tree.
-    3.  To continue, you must select the most unique index for the table. This index is used to create the parent-child relationship in the Archive Object. In the Unique keys field, select orderid. The **WMSOrderIdx** index is created by using the **orderid** field.
-    4.  Click **Discover**. In the **Archive Object exception tables** dialog box, review the exception tables list carefully. If you want a table from the list to be included in the relationship tree, clear the **Status** field. Use the **Add new exception table** pane to add a new table to the list. The **Status** field for the newly added table is selected by default. Click **Save** to save your changes in the Archive Object exception tables window. Click **Continue** to start the discovery process and create the Archive Object.
-    > [!NOTE]
-    > The **Administer** &gt; **Discovery** command lets you maintain an exception parameters list. A table that belongs to the exception parameters list, with Archive discovery selected, is excluded from the relationship tree when the Archive Object is created, even if there is a relationship between the driver table and the excluded table.
+    Create a new Archive Object
+   ----------------------------
 
-    Using the metadata that is imported from the Microsoft Dynamics AX database, the exception parameters, and the Archive Object exception tables list, IDMF generates a hierarchical relationship tree. The relationship tree starts with the driver table, in level 0, and creates a hierarchy of parent-child relationships. Make sure that your Archive Object resembles the following screen shot. Do not save the Archive Object. 
-    
-    ![IDMF Archive Object Expanded](./media/idmfarchiveobjectexpanded.png) 
-    
-    The relationship tree in this Archive Object is five levels deep. Level 0, the topmost level, contains the driver table, **WMSOrder**. Level 1 contains the child entities of the driver table. Level 2 contains child entities of tables in level 1. The last level, level 4, contains the child entities of tables in level 3. This relationship tree is created based on the following data:
-    -   The Microsoft Dynamics AX metadata. The discovery process uses the metadata to create a list of related tables that form the parent-child hierarchy based on the driver table.
-    -   The exception parameters. Tables that belong to the exception parameters list are filtered out of the relationship tree. Use the **Administer** menu to configure the exception parameters.
-    -   The tables listed in the Archive Object exception tables dialog box. The tables you selected in this dialog box are also filtered out of the hierarchical relationship tree.
+   You can create an Archive Object by selecting a driver table and creating a relationship tree based on the driver table, instead of selecting a template that is included with IDMF. Follow these steps to create a new Archive Object:
+   1. On the toolbar, click **Create Archive Object**.
+   2. In the **Create Archive Object** dialog box, select a table from the **Driver table** list. The list excludes tables from the exception parameters list, which is covered later in this topic. Navigate to and select **WMSOrder**. A driver table is the parent table that defines the relationship tree for a specific Archive Object. In an Archive Object, the driver table may have child entities but does not have a parent entity in the relationship tree.
+   3. To continue, you must select the most unique index for the table. This index is used to create the parent-child relationship in the Archive Object. In the Unique keys field, select orderid. The **WMSOrderIdx** index is created by using the **orderid** field.
+   4. Click **Discover**. In the **Archive Object exception tables** dialog box, review the exception tables list carefully. If you want a table from the list to be included in the relationship tree, clear the **Status** field. Use the **Add new exception table** pane to add a new table to the list. The **Status** field for the newly added table is selected by default. Click **Save** to save your changes in the Archive Object exception tables window. Click **Continue** to start the discovery process and create the Archive Object.
+      > [!NOTE]
+      > The **Administer** &gt; **Discovery** command lets you maintain an exception parameters list. A table that belongs to the exception parameters list, with Archive discovery selected, is excluded from the relationship tree when the Archive Object is created, even if there is a relationship between the driver table and the excluded table.
+
+   Using the metadata that is imported from the Microsoft Dynamics AX database, the exception parameters, and the Archive Object exception tables list, IDMF generates a hierarchical relationship tree. The relationship tree starts with the driver table, in level 0, and creates a hierarchy of parent-child relationships. Make sure that your Archive Object resembles the following screen shot. Do not save the Archive Object. 
+
+   ![IDMF Archive Object Expanded](./media/idmfarchiveobjectexpanded.png) 
+
+   The relationship tree in this Archive Object is five levels deep. Level 0, the topmost level, contains the driver table, **WMSOrder**. Level 1 contains the child entities of the driver table. Level 2 contains child entities of tables in level 1. The last level, level 4, contains the child entities of tables in level 3. This relationship tree is created based on the following data:
+   -   The Microsoft Dynamics AX metadata. The discovery process uses the metadata to create a list of related tables that form the parent-child hierarchy based on the driver table.
+   -   The exception parameters. Tables that belong to the exception parameters list are filtered out of the relationship tree. Use the **Administer** menu to configure the exception parameters.
+   -   The tables listed in the Archive Object exception tables dialog box. The tables you selected in this dialog box are also filtered out of the hierarchical relationship tree.
 
 > [!WARNING]
 > Tables that you configure as master tables by clicking **Administer** &gt; **Master data tables** are replicated from the production database to the archive database by a master data synchronization task. The relationship tree created by the discovery process may include tables that are configured as master tables. Verify the tables in the relationship tree, and remove any tables that must be treated as master tables. Right-click the table, and select **Add to data replicate** to remove the table from the relationship and configure it as a master data table. If you do not remove these tables, tables in the relationship tree are automatically removed from that master data synchronization list when you save the Archive Object.
 
 Verify the relationship tree, and assess the functional effect of the tree on your Microsoft Dynamics AX application. As a result of your assessment, you may have to manually add, modify, or remove some relations and rules. For example, click **Show versions** to display the Archive Object from the default template that is included with IDMF. Compare the relationship tree from the template with the relationship tree you created in the previous procedure. The relationship tree in the **WMSOrder** archive template differs from the **WMSOrder** Archive Object you created. The difference is caused by the modification made to the default template, based on the functionality assessment of the Microsoft Dynamics AX application. As demonstrated by this walkthrough, an Archive Object you create through discovery may not match the default template that is included with IDMF. Be careful with your selection of the driver table. If you select a table such as **ProdTable**, the relationship tree can go many levels deep, spanning many tables on each level. Such an Archive Object creates a complex relationship tree and increases the potential for error, and for resulting data corruption and application downtime. 
-    
+
     ![IDMF Archive Object with Invalid Tables](./media/idmfarchiveobjectwithinvalidtables.png)
-    
+
 The default template that is included with IDMF may not match the metadata of your Microsoft Dynamics AX implementation. A table in the default template that is not found in the metadata from the production database is marked invalid. An invalid table appears with a dotted red border, as shown in Figure 2. You must remove invalid tables. When you use fields from valid tables to create relations and rules, IDMF validates those fields. A field with a disabled configuration key is considered invalid. A valid table with invalid fields is shown with a yellow dotted border. You must either remove valid tables with invalid rules from the relationship tree or fix the relationships before you can save the Archive Object.
 
 Navigation of the Create Archive Object workspace

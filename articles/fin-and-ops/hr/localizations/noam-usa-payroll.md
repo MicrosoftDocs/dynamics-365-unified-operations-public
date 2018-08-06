@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Payroll overview
+title: US Payroll
 description: Payroll provides full gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. Payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
 author: rschloma
 manager: AnnBe
@@ -30,17 +30,16 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Payroll overview
+# US Payroll
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 Payroll provides gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. Payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
 
 Payroll setup
 -----------
 
-Basic setup for Payroll involves setting pay cycles and pay periods, calculation frequencies, and setting work schedules. The pay cycle frequency determines how often a pay cycle is run. Pay periods and pay dates are defined as part of the pay cycle. You use the payroll calculation frequency to select the specific pay periods when you want certain earnings or other payroll entities to be processed. 
+Basic setup for Payroll involves setting pay cycles and pay periods, calculation frequencies, and setting work schedules. The pay cycle frequency determines how often a pay cycle is run. Pay periods and pay dates are defined as part of the pay cycle. You use the payroll calculation frequency to select the specific pay periods when you want certain earnings or other payroll entities to be processed. 
 
 Configuring Payroll also includes setting up earning codes and creating earning code groups, and entering information for tax withholding, benefit accrual, and setting beginning balances.
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add custom columns to POS transaction grid
+title: Add custom columns to a point of sale (POS) transaction grid
 description: This topic explains how to add a new custom column to a POS transaction page using the screen layout designer. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Add custom columns to a POS transaction grid
+# Add custom columns to a point of sale (POS) transaction grid
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to add a new custom column to a POS transaction page using the screen layout designer. You can add more information to a transaction page by using the custom column feature. A custom column can be added to the transaction page receipt grid by using the screen layout designer. You can adjust the width and position of the columns by using the designer. There are 10 custom columns in the layout for extensions scenarios. You can use all 10 in one layout. The custom columns are already added to the designer metadata. After adding the column to the layout, you run the distribution job so that the column shows up on the transaction page.
 
@@ -47,7 +47,9 @@ This topic explains how to add a new custom column to a POS transaction page usi
 6. If prompted, click **Open** and follow the instruction to install the designer tool.
 7. After installing, enter your AAD credentials to launch the designer.
 8. In the designer, right-click the transaction grid (receipt grid) and select **Customize**.
-9. In the **Customization – Receipt** window, select the lines in the pivot panel drop-down menu.
+9. In the **Customization – Receipt** window, select the **lines** in the pivot panel drop-down menu.
+   > [!NOTE]
+   > Similarly, you can add a custom column to the **Payment and Delivery** tab.
 10. In the **Available columns** window, select **Custom column 1**, and then click the **> (arrow)** button to move the column to the **Selected** columns.
 11. Click **OK** to save and close the window.
 12. Adjust the column width in the transaction grid using the **Screen layout** designer. Make sure the column is visible.
@@ -160,7 +162,20 @@ This topic explains how to add a new custom column to a POS transaction page usi
             }
         }
     }
+    
+    > [!NOTE]
+    > If you are adding a custom column to payment or delivery grid, you need to update the manifest with the following code.
+    "paymentsGrid": {
+        "customColumn1": { "modulePath": "Cart/PaymentsGrid/CustomColumn1Configuration" }
+     },
+     "deliveryGrid": {
+         "customColumn1": { "modulePath": "Cart/DeliveryGrid/CustomColumn1Configuration" }
+     }
+
+    
     ```
+    
+    
 15. Open the **extensions.json** file under the **POS.Extensions** project and update it with the **CustomColumnExtensions** sample, so that POS during runtime will include this extension.
 
     ```Typescript
@@ -194,6 +209,9 @@ This topic explains how to add a new custom column to a POS transaction page usi
     ],
     ```
 17. Compile and rebuild the project.
+
+> [!NOTE]
+>  You can find the sample for the custom column in the [Retail SDK](./retail-sdk/retail-sdk-overview.md).
 
 ## Validate the customization
 

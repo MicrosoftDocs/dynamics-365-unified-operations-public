@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cloud and on-premises feature comparison
+title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: robinarh
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ---
 
-# Cloud and on-premises feature comparison
+# Comparison of cloud and on-premises features
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic shows whether each feature is available in these products:
 
@@ -55,7 +55,7 @@ The following tables list the product areas. Cloud and on-premises support is li
 | | Configuration-driven extension| Yes | No |
 | | Export data to your own data warehouse| Yes | Yes |
 | | Enable the export of incremental updates to a data entity | Yes | No |
-| | Recurring integrations                 |Yes | No|
+| | Data integrations                 |Yes | Yes|
 | Document management| | Yes| Yes |
 | Financial management|  | Yes | Yes |
 | Help| | Yes | No |
@@ -132,7 +132,7 @@ The following tables list the product areas. Cloud and on-premises support is li
 |---|---|---|---|
 | All Talent areas | All Talent features | Yes | No |
 
-## See also
+## Additional resources
 
 - [Features not implemented in on-premises deployments](features-not-implemented-on-prem.md)
 

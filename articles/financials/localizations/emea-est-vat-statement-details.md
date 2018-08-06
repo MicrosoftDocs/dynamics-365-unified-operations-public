@@ -31,8 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # VAT statement details for Estonia
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up a VAT statement for legal entities in Estonia.
 
@@ -46,11 +45,11 @@ Here is an example that shows how you can use sales tax reporting codes to gener
 
 | Sales tax reporting code | Description                                                                                                                                                                                                                                   | Line on the VAT return (KMD) |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| 1                        | Acts and transactions that are subject to tax at a rate of 20 percent                                                                                                                                                                         | 1                            |
-| 11                       | Self-supply of goods or services that are taxable at 20 percent                                                                                                                                                                               | 1.1                          |
-| 2                        | Acts and transactions that are subject to tax at a rate of 9 percent                                                                                                                                                                          | 2                            |
-| 21                       | Self-supply of goods or services that are taxable at 9 percent                                                                                                                                                                                | 2.1                          |
-| 3                        | Acts and transactions that are subject to tax at a rate of 0 percent, inclusive                                                                                                                                                               | 3                            |
+| 1                        | Acts and transactions that are subject to tax at a rate of 20 percent                                                                                                                                                                         | 1                            |
+| 11                       | Self-supply of goods or services that are taxable at 20 percent                                                                                                                                                                               | 1.1                          |
+| 2                        | Acts and transactions that are subject to tax at a rate of 9 percent                                                                                                                                                                          | 2                            |
+| 21                       | Self-supply of goods or services that are taxable at 9 percent                                                                                                                                                                                | 2.1                          |
+| 3                        | Acts and transactions that are subject to tax at a rate of 0 percent, inclusive                                                                                                                                                               | 3                            |
 | 31                       | Total intra-community supply of goods and services that are provided to a taxable person of another member state/taxable person that has limited liability, inclusive                                                                         | 3.1                          |
 | 311                      | Intra-community supply of goods                                                                                                                                                                                                               | 3.1.1                        |
 | 32                       | Export of goods, inclusive                                                                                                                                                                                                                    | 3.2                          |
@@ -61,9 +60,9 @@ Here is an example that shows how you can use sales tax reporting codes to gener
 | 6                        | Total intra-community acquisitions of goods and services that are received from a taxable person of another member state, inclusive                                                                                                           | 6                            |
 | 61                       | Intra-community acquisitions of goods                                                                                                                                                                                                         | 6.1                          |
 | 7                        | Acquisition of other goods and services that are subject to VAT, inclusive                                                                                                                                                                    | 7                            |
-| 71                       | Acquisition of immovables and metal waste that are taxable by special arrangements for the imposition of VAT on immovables, metal waste, and precious metals (VAT Act §41)                                                                    | 7.1                          |
+| 71                       | Acquisition of immovables and metal waste that are taxable by special arrangements for the imposition of VAT on immovables, metal waste, and precious metals (VAT Act §41)                                                                    | 7.1                          |
 | 8                        | Supply that is exempt from tax                                                                                                                                                                                                                | 8                            |
-| 9                        | Supply of goods that are taxable by special arrangements for the imposition of VAT on immovable, metal waste, and precious metals (VAT Act §1 41), and the taxable value of goods that will be installed or assembled in another member state | 9                            |
+| 9                        | Supply of goods that are taxable by special arrangements for the imposition of VAT on immovable, metal waste, and precious metals (VAT Act §1 41), and the taxable value of goods that will be installed or assembled in another member state | 9                            |
 | 1010                     | Adjustments (+)                                                                                                                                                                                                                               | 10                           |
 | 1011                     | Adjustments (–)                                                                                                                                                                                                                               | 11                           |
 
@@ -98,7 +97,7 @@ Then set the following fields.
 | Format mapping                                 | Specify the name and path of the exported XML file.                                                                                 |
 | Name                                           | Specify the employee who creates the declaration.                                                                                   |
 | Declaration period type                        | Select one of the following declaration types: **Normal** or **Bankruptcy**.                                                        |
-| Invoice threshold                              | Specify the minimum total net amount of invoices per customer or vendor in a reporting period that must be included in the annexes. |
+| Invoice threshold                              | Specify the minimum total net amount of invoices per customer or vendor in a reporting period that must be included in the annexes. |
 | Declaration (In the **Export** field group)    | Set this option to **Yes** to export the declaration body.                                                                          |
 | Sales annex (In the **Export** field group)    | Set this option to **Yes** to export invoices and credit notes in the Sales annex.                                                  |
 | Purchase annex (In the **Export** field group) | Set this option to **Yes** to export invoices and credit notes in the Purchase annex.                                               |

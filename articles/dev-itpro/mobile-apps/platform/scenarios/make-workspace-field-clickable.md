@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up clickable fields
+title: Make fields on mobile app pages clickable
 description: This topic explains how to customize the fields on a mobile app page so that they are shown as email addresses, phone numbers, or URLs.
 author: makhabaz
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Set up clickable fields
+# Make fields on mobile app pages clickable
 
-[!include[banner](../../../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 The fields on a mobile app page can be customized so that they are shown as email addresses, phone numbers, or URLs.
 
@@ -49,7 +49,7 @@ You can mark a field as a phone number field by using business logic. Then, when
 You can mark a field as a URL field by using business logic. Then, when a user clicks the field, the URL opens in the default mobile browser, and the field value appears in the address bar.
 
 > [!NOTE]
-> On iOS, you must provide a complete URL (that is, a URL that starts with a protocol, such as **http**). Otherwise, the URL isn't opened in the browser. A URL such as www.microsoft.com doesn't work. Instead, the URL must be specified as `http://www.microsoft.com`.
+> On iOS, you must provide a complete URL (that is, a URL that starts with a protocol, such as <strong>http</strong>). Otherwise, the URL isn't opened in the browser. A URL such as www.microsoft.com doesn't work. Instead, the URL must be specified as `http://www.microsoft.com`.
 
 ## Example
 This example shows how to configure the customer email address and phone number fields so that they can clicked and opened in the appropriate iOS apps.

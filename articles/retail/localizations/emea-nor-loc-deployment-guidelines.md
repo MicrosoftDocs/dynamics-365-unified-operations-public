@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3.2
 ---
 # Deployment guidelines for cash registers for Norway
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 for Retail localization for Norway. The localization consists of several extensions of Retail components. For example, the extensions let you print custom fields on receipts, register additional audit events and sales and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the Retail localization for Norway, see [Cash registers for Norway](./emea-nor-cash-registers.md).
 
@@ -375,40 +375,38 @@ The CRT extension components are included in the CRT samples. To complete the fo
     ```
 
 6. Register the dependencies of the Retail Server extensions.
-    
-   # [Application update 4](#tab/app-update-4)
+
+   #### [Application update 4](#tab/app-update-4/)
     Complete the following procedure:
-    1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
+   1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
       - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
       - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
-    2. Copy the files to the **\\bin** folder under the IIS Retail Server site location.
-    3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
+   2. Copy the files to the **\\bin** folder under the IIS Retail Server site location.
+   3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
 
       ``` xml
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
+           <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
       ```
 
-   # [Application update 5 and later](#tab/app-update-5-and-later)
+   #### [Application update 5 and later](#tab/app-update-5-and-later/)
     Complete the following procedure:
-    1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file.
-    2. Copy the file to the **\\bin** folder under the IIS Retail Server site location.
-    3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
+   1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file.
+   2. Copy the file to the **\\bin** folder under the IIS Retail Server site location.
+   3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
 
       ``` xml
-            <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
+           <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
       ```
-        
-   # [Retail 7.3.1](#tab/retail-7-3-1)
+
+   #### [Retail 7.3.1](#tab/retail-7-3-1/)
     > [!Note]
     > No actions required.
 
-   # [Retail 7.3.2 and later](#tab/retail-7-3-2)
-
+   #### [Retail 7.3.2 and later](#tab/retail-7-3-2/)
     > [!Note]
     > No actions required.
 
-    ---
-
+   * * *
 ### The Modern POS extension components
 
 #### Implement the proxy code for offline mode
@@ -531,7 +529,7 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 
 3. Copy the assembly files to the **\\ext** folder under the local CRT client broker location.
 
-4. Register the Retail proxy change in the extensions configuration file. The file is named ****RetailProxy.MPOSOffline.ext.config****, and it's under the local CRT client broker location.
+4. Register the Retail proxy change in the extensions configuration file. The file is named *<strong><em>RetailProxy.MPOSOffline.ext.config</em></strong>*, and it's under the local CRT client broker location.
 
     ``` xml
         <add source="assembly" value="Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample" />
@@ -547,22 +545,22 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 2. Include the following existing source code folders in the **Pos.Extensions** project.
 
     # [Application update 4](#tab/app-update-4)
-      
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
-    
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
-    
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
-    
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
       **SalesTransactionSignatureNorway**
@@ -573,22 +571,22 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 3. Enable the extensions to be compiled in **tsconfig.json** by removing the following folders from the exclude list.
 
     # [Application update 4](#tab/app-update-4)
-    
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
-      
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
-      
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
-      
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
       **SalesTransactionSignatureNorway**
@@ -661,22 +659,22 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 2. Include following existing source code folders in the **Pos.Extensions** project.
 
     # [Application update 4](#tab/app-update-4)
-     
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
-      
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
-      
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
-      
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
       **SalesTransactionSignatureNorway**
@@ -687,22 +685,22 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 3. Enable the extensions to be compiled in **tsconfig.json** by removing following folders from the exclude list.
 
     # [Application update 4](#tab/app-update-4)
-      
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
-      
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
-     
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
-      
+
       **AuditEventExtensionSample**
       **SalesTransactionSignatureSample**
       **SalesTransactionSignatureNorway**
@@ -780,7 +778,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
 1. Complete the above **Cloud POS extension components** or **Modern POS extension components** section
 
-1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
+2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
     1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:
 
@@ -866,128 +864,128 @@ Follow these steps to create deployable packages that contain Retail components,
 
         ---
 
-2. Make the following changes in the **Customization.settings** package customization configuration file:
+3. Make the following changes in the **Customization.settings** package customization configuration file:
 
-    1. Enable Retail Proxy customization
-        # [Application update 4](#tab/app-update-4)
+   1. Enable Retail Proxy customization
+       # [Application update 4](#tab/app-update-4)
 
-        Add the following lines to the **&lt;ItemGroup Condition="'@(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;** section.
+       Add the following lines to the **&lt;ItemGroup Condition="'@(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;** section.
 
-        ``` xml
-        <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll"/>
-        ```
-
-        # [Application update 5 and later](#tab/app-update-5-and-later)
-
-        Add the following lines to the **&lt;ItemGroup Condition="'@(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;** section.
-
-        ``` xml
-        <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll"/>
-        ```
-
-        # [Retail 7.3.1](#tab/retail-7-3-1)
-
-        Add the following lines to the **ItemGroup** section to include the Retail proxy extension in the deployable packages:
-
-        ``` xml
-            <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
-        ```
-
-        # [Retail 7.3.2 and later](#tab/retail-7-3-2)
-
-        Add the following lines to the **ItemGroup** section to include the Retail proxy extension in the deployable packages:
-
-        ``` xml
-            <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
-        ```
-
-        ---
-
-    2. Add the following lines to the **ItemGroup** section to include the CRT extensions in the deployable packages:
-
-         # [Application update 4](#tab/app-update-4)
-
-        ``` xml
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
-        ```
+       ``` xml
+       <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll"/>
+       ```
 
        # [Application update 5 and later](#tab/app-update-5-and-later)
 
-        ``` xml
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
-        ```
+       Add the following lines to the **&lt;ItemGroup Condition="'@(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;** section.
 
-        # [Retail 7.3.1](#tab/retail-7-3-1)
+       ``` xml
+       <RetailServerLibraryPathForProxyGeneration Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll"/>
+       ```
 
-        ``` xml
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
-        ```
+       # [Retail 7.3.1](#tab/retail-7-3-1)
 
-        # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+       Add the following lines to the **ItemGroup** section to include the Retail proxy extension in the deployable packages:
 
-        ``` xml
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtNorway.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegisterNorway.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
-            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
-        ```
+       ``` xml
+           <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
+       ```
 
-      ---
+       # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-    3. Add following lines to the **ItemGroup** section to include the Retail Server extension in the deployable packages:
+       Add the following lines to the **ItemGroup** section to include the Retail proxy extension in the deployable packages:
+
+       ``` xml
+           <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
+       ```
+
+       ---
+
+   2. Add the following lines to the **ItemGroup** section to include the CRT extensions in the deployable packages:
 
         # [Application update 4](#tab/app-update-4)
 
-        ``` xml
-            <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
-            <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
-            <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
-        ```
+       ``` xml
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
+       ```
 
-        # [Application update 5 and later](#tab/app-update-5-and-later)
+      # [Application update 5 and later](#tab/app-update-5-and-later)
 
-        ``` xml
-            <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
-            <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll" />
-        ```
+       ``` xml
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
+       ```
 
-        # [Retail 7.3.1](#tab/retail-7-3-1)
+       # [Retail 7.3.1](#tab/retail-7-3-1)
 
-        ``` xml
-            <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
-        ```
+       ``` xml
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
+       ```
 
-        # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+       # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-        ``` xml
-            <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
-        ```
+       ``` xml
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.RegisterAuditEventSample.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtNorway.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegisterNorway.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
+       ```
 
-        ---
+      ---
 
-3. Modify the certificate's configuration file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then copy the configuration file to the **References** folder.
+   3. Add following lines to the **ItemGroup** section to include the Retail Server extension in the deployable packages:
+
+       # [Application update 4](#tab/app-update-4)
+
+       ``` xml
+           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
+           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll" />
+           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config" />
+       ```
+
+       # [Application update 5 and later](#tab/app-update-5-and-later)
+
+       ``` xml
+           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
+           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll" />
+       ```
+
+       # [Retail 7.3.1](#tab/retail-7-3-1)
+
+       ``` xml
+           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
+       ```
+
+       # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+
+       ``` xml
+           <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
+       ```
+
+       ---
+
+4. Modify the certificate's configuration file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then copy the configuration file to the **References** folder.
 
     # [Application update 4](#tab/app-update-4)
 
@@ -1007,14 +1005,14 @@ Follow these steps to create deployable packages that contain Retail components,
 
     ---
 
-3. Update Retail Server configuration file. In the **RetailSDK\\Packages\\RetailServer\\Code\\web.config** add the following lines to the **extensionComposition** section
+5. Update Retail Server configuration file. In the **RetailSDK\\Packages\\RetailServer\\Code\\web.config** add the following lines to the **extensionComposition** section
 
     ``` xml
         <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
     ```
 
-3. Run **msbuild** for the whole Retail SDK to create deployable packages.
-4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+6. Run **msbuild** for the whole Retail SDK to create deployable packages.
+7. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ### Enable the digital signature in offline mode for Modern POS
 

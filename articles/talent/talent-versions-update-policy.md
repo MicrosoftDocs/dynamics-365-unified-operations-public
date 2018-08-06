@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Talent system requirements and update policy
+title: Talent system requirements and update policy
 description: This topic lists requirements for Dynamics 365 for Talent. The update policy is outlined, as well.
 author: rschloma
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# Microsoft Dynamics 365 for Talent system requirements and update policy
+# Talent system requirements and update policy
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 This topic lists requirements for Microsoft Dynamics 365 for Talent. The update policy is outlined, as well.
 
@@ -41,31 +40,31 @@ This topic lists requirements for Microsoft Dynamics 365 for Talent. The update 
 
 The Microsoft Dynamics 365 for Talent web application can run in any of the following web browsers that run on the specified operating systems: 
 
-*	Microsoft Edge (latest publicly available version) on Windows 10
-*	Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
-*	Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet
-*	Apple Safari (latest publicly available version) on Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) or 10.12 (Sierra), or Apple iPad
+*   Microsoft Edge (latest publicly available version) on Windows 10
+*   Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
+*   Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet
+*   Apple Safari (latest publicly available version) on Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) or 10.12 (Sierra), or Apple iPad
 
 To find the latest release for each web browser, go to the software manufacturer’s website. 
 
 > [!NOTE]
-> *	To capture images that are generated from Task Recorder and include them in Microsoft Word documents, you must have a Chrome extension installed. 
-> *	The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit compatible operating system.
-> *	To preview PDF files, we recommend that you use modern browsers like Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
-Network requirements
-> *	Dynamics 365 for Talent is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Dynamics 365 for Talent. We recommend that you test network latency at [www.azurespeed.com] (http://www.azurespeed.com "Azure Latency Test").
-> *	Bandwidth requirements for Dynamics 365 for Talent depend on your scenario. Most typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps).
-
+> * To capture images that are generated from Task Recorder and include them in Microsoft Word documents, you must have a Chrome extension installed. 
+> * The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit compatible operating system.
+> * To preview PDF files, we recommend that you use modern browsers like Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
+>   Network requirements
+> * Dynamics 365 for Talent is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Dynamics 365 for Talent. We recommend that you test network latency at [www.azurespeed.com](http://www.azurespeed.com "Azure Latency Test").
+> * Bandwidth requirements for Dynamics 365 for Talent depend on your scenario. Most typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps).
+> 
 > [!WARNING]
 > Don't compute bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is very difficult to calculate. For customers who are concerned about bandwidth requirements, use a trial version of Dynamics 365 for Talent.
 
 ## Supported Microsoft Office applications
 
-*	To run the Microsoft Excel and Word add-ins, you must have Microsoft Office 2016 for Windows or Mac installed. For more details about version requirements, see [Office integration troubleshooting] (../dev-itpro/office-integration/office-integration-troubleshooting.md "Office integration troubleshooting").
-*	To view documents that are generated by the Export to Excel or Export to Word functionality, you must have Microsoft Office 2007 or later installed.
+* To run the Microsoft Excel and Word add-ins, you must have Microsoft Office 2016 for Windows or Mac installed. For more details about version requirements, see [Office integration troubleshooting](../dev-itpro/office-integration/office-integration-troubleshooting.md "Office integration troubleshooting").
+* To view documents that are generated by the Export to Excel or Export to Word functionality, you must have Microsoft Office 2007 or later installed.
 
 ## Update policy
 
 Microsoft Dynamics 365 for Talent is serviced as a cloud offering. Updates to Dynamics 365 for Talent are continuous and applied automatically by Microsoft.
 
-Updates are released on a regular cadence, updates will be made to all environments.  Dynamics 365 for Talent is supported according to the [Microsoft Support Lifecycle policy] (https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), which provides consistent and predictable guidelines for product support availability.
+Updates are released on a regular cadence, updates will be made to all environments.  Dynamics 365 for Talent is supported according to the [Microsoft Support Lifecycle policy](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), which provides consistent and predictable guidelines for product support availability.

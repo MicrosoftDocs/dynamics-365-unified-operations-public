@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-12-01
 
 # CFDI layout version 3.3
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Electronic invoice parameters
 

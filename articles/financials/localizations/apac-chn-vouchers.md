@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Chinese vouchers
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes Chinese vouchers and how they are used in Microsoft Dynamics 365 for Finance and Operations.
 

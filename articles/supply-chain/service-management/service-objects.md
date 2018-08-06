@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service objects 
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Service objects are a customer’s assets and products for which you can perform a
 service. Depending on the type of service you provide, objects can be tangible

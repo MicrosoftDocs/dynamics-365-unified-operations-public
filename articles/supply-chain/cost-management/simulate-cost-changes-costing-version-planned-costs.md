@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Simulate cost changes by using a costing version for planned costs
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article explains how you can simulate the effects of cost changes on a manufactured item’s calculated costs by using a separate costing version for planned costs.
 
-You can simulate the effects of cost changes on the calculated costs of a manufactured item by using a separate costing version for planned costs. Use this separate costing version to enter pending cost records that reflect incremental cost changes, and to calculate the cost impact on manufactured items. Because the Active costs fallback principle will be used in the bill of materials (BOM) calculations, only the incremental cost changes must be entered.
+You can simulate the effects of cost changes on the calculated costs of a manufactured item by using a separate costing version for planned costs. Use this separate costing version to enter pending cost records that reflect incremental cost changes, and to calculate the cost impact on manufactured items. Because the Active costs fallback principle will be used in the bill of materials (BOM) calculations, only the incremental cost changes must be entered.
 
 ## Guidelines for defining the simulation costing version
 Use the following guidelines when you define the costing version for simulations:

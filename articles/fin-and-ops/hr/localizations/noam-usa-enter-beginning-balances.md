@@ -32,20 +32,20 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Enter payroll beginning balances
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The topic describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes. This information is valuable for partners who transfer data for a new Payroll implementation from another system. To prepare to enter beginning payroll balances, we verify the following information:
 
 > * Employee records are entered and available in the system
 > * The following data is set up and assigned to employees:
-
+> 
 > > * Pay cycles and pay periods
 > > * Earning codes
 > > * Taxes
 > > * Benefits and deductions
-
+> 
 > * The company should have chosen a date where payroll beginning balances can be set.
-
+> 
 > * Information were gathered on all earnings, benefits/deductions, benefit contributions, employee taxes, and employer taxes and their YTD amounts from the legacy system.
 
 As you plan to enter beginning balances, consider how detailed the data needs to be. Most businesses enter a single, consolidated year-to-date amount. However if more detailed information is needed, balances can be entered in quarterly increments. Deciding the level of detail that's needed determines how many manual pay statements must be created for each worker. For a single year-to-date amount, only one manual statement is needed for each employee. To do this use year-to-date amounts from the final pay statement from the previous system as the amount entered in the new payroll system.
@@ -133,22 +133,22 @@ After you generate pay statements that have beginning balances, you must verify 
 
 4. Open the **Benefit deductions** tab and enter the following:
 
-| Field                           | Value            |
-|---------------------------------|------------------|
-| Benefit                         | Deduction amount |
-| 401K | Participate              | 3000.00          |
-| Dental | SubSp                  | 495.00           |
-| Dep care spending | Participate | 2500.00          |
-| Vision | SupSp                  | 500.00           |
+|       Field       |      Value       |
+|-------------------|------------------|
+|      Benefit      | Deduction amount |
+|       401K        |   Participate    |
+|      Dental       |      SubSp       |
+| Dep care spending |   Participate    |
+|      Vision       |      SupSp       |
 
 5. In the **Benefit contributions** tab and enter the following:
 
-| Field              | Value               |
-|--------------------|---------------------|
-| Benefit            | Contribution amount |
-| 401K | Participate | 3000,00             |
-| Dental | SubSp     | 495.00              |
-| Vision | SubSp     | 500.00              |
+|  Field  |        Value        |
+|---------|---------------------|
+| Benefit | Contribution amount |
+|  401K   |     Participate     |
+| Dental  |        SubSp        |
+| Vision  |        SubSp        |
 
 6. In the **Tax deductions** tab, enter the following:
 
@@ -161,8 +161,8 @@ After you generate pay statements that have beginning balances, you must verify 
 7. In the **Tax contributions** tab enter the following:
 
 8. Click **Calculate**.
-> [!IMPORTANT] 
-> Validate the totals of the pay statement that they match the YTD of the legacy system for the worker. You may want to hold off on finalizing in the next step to do some overall validating of all pay statements in aggregate. Once validated run through all the pay statements and finalize them.
+   > [!IMPORTANT] 
+   > Validate the totals of the pay statement that they match the YTD of the legacy system for the worker. You may want to hold off on finalizing in the next step to do some overall validating of all pay statements in aggregate. Once validated run through all the pay statements and finalize them.
 
 The same process can be done in quarter increments if necessary for all prior quarters in each year. This is only needed if the customer needs to see the data by quarter without going back to the legacy system.
 

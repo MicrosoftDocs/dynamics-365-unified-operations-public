@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ container run-time functions
+title: X++ container runtime functions
 description: This topic describes the container run-time functions.
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ container run-time functions
+# X++ container runtime functions
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the container run-time functions.
 
@@ -123,7 +122,7 @@ A new container that contains the inserted elements.
 
 ### Remarks
 
-The first element of the container is specified by the number **1**. To insert after the n element, the *start* parameter should be n+1. You can also use the **+=** operator to add values of any type to a container. For example, to create a container that contains the squared values of the first 10 loop iterations, use the following code.
+The first element of the container is specified by the number **1**. To insert after the n element, the *start* parameter should be n+1. You can also use the **+=** operator to add values of any type to a container. For example, to create a container that contains the squared values of the first 10 loop iterations, use the following code.
 
     int i;
     container c;

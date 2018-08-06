@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inventory locations
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Inventory locations are used with basic warehousing (WMS I) to determine where items are stored and where items are picked from in a WMS I warehouse.
 
@@ -45,9 +44,9 @@ For each location, the place where the item is inserted can also be specified. B
 Location properties
 
 A location has the following characteristics:
--   Size (height, width, depth, and thereby volume)
+-   Size (height, width, depth, and thereby volume)
 -   Warehouse, aisle, rack, shelf, and bin position
--   Location type (bulk location, picking location, inbound dock, outbound dock, production input location, inspection location, or kanban supermarket)
+-   Location type (bulk location, picking location, inbound dock, outbound dock, production input location, inspection location, or kanban supermarket)
 
 Check text can be used in online systems to verify that the operator has selected the correct location for a specific item. This check text can be created manually or by default.
 
@@ -59,15 +58,15 @@ Occasionally, you might want to indicate that a location is blocked for a period
 
 ## Tree structure
 
-In the Inventory locations page, you can view the warehouse layout in a tree structure based on the coordinates of inventory locations, in a defined display format.
+In the Inventory locations page, you can view the warehouse layout in a tree structure based on the coordinates of inventory locations, in a defined display format.
 
 ## Maintain inventory locations via the warehouse form
 
-It is possible to copy locations from one warehouse to another and to create locations via a wizard. Before you run the wizard you should make sure that you have defined the default location names on the Warehouse page.
+It is possible to copy locations from one warehouse to another and to create locations via a wizard. Before you run the wizard you should make sure that you have defined the default location names on the Warehouse page.
 
 
 
-See also
+Additional resources
 --------
 
 [Create a new warehouse layout (Task guide)](tasks/create-new-warehouse-layout.md)

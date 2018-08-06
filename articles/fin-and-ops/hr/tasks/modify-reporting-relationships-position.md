@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Modify reporting relationships for a position
+title: Modify the reporting relationships for positions
 description: This procedure shows how to change the reporting relationship for an employee. 
 author: ShielaSogge
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Modify reporting relationships for a position
+# Modify the reporting relationships for positions
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to change the reporting relationship for an employee. The reporting relationship can be used for routing documents through workflow. The procedure also shows how to assign the employee to additional hierarchies. For example, an employee might be a part of a project team with an informal reporting relationship to a project supervisor. Additional reporting relationships can be defined on the position to accommodate various project or matrix scenarios. The demo data company used to create this procedure is USMF.
 

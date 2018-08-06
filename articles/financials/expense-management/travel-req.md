@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Travel requisitions
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A *travel requisition* is a source document that lists the expenses that will be incurred for the purpose of travel. A travel requisition is submitted for review and can then be used to authorize expenses.
 

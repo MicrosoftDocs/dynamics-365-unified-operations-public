@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Task Recorder quick reference
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides a quick reference sheet that explains what each button in the Task recorder menus does.
 
@@ -68,7 +67,7 @@ Choose this option if you need to add or remove steps. You can also use this mod
 </colgroup>
 <tbody>
 <tr class="odd">
-<td> <a href="./media/trquick02.png"><img src="./media/trquick02.png" alt="TRQuick02" class="alignnone size-full wp-image-290301" width="157" height="120" /></a><a href="./media/trquick03.png"><img src="./media/trquick03.png" alt="TRQuick03" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
+<td> <a href="./media/trquick02.png"><img src="./media/trquick02.png" alt="TRQuick02" class="alignnone size-full wp-image-290301" width="157" height="120" /></a><a href="./media/trquick03.png"><img src="./media/trquick03.png" alt="TRQuick03" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
 <td><h3 id="opensave-fromto-this-pc">Open/Save from/to this PC</h3>
 These options allow you to open a recording that is saved on your computer, or save a recording to your computer.
 <h3 id="opensave-fromto-lcs">Open/Save from/to LCS</h3>

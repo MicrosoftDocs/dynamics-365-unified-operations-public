@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Asset library (LCS)
+title: Asset library in Lifecycle Services (LCS)
 description: This topic provides information about the Asset Library functionality in Lifecycle Services (LCS).
 author: manalidongre
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Asset library (LCS)
+# Asset library in Lifecycle Services (LCS)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The Asset library is a storage location for the various assets that are associated with a tenant in Microsoft Dynamics Lifecycle Services (LCS). Two types of Asset library are available in LCS: the Shared asset library and the project-level Asset library.
 

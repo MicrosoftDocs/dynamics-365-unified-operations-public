@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Process for upgrading a sandbox environment
-description: This topic describes the steps for deploying an upgrade to a non-production sandbox or standalone sandbox environment. 
+title: Upgrade sandbox environments
+description: This topic describes the steps for performing a data upgrade to a non-production sandbox or standalone sandbox environment. 
 author: tariqbell
 manager: AnnBe
 
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Process for upgrading a sandbox environment
+# Upgrade sandbox environments
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the steps for performing a data upgrade on a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher sandbox environment.
 
@@ -80,6 +80,11 @@ Import the database from a bacpac file into the newly redeployed sandbox environ
 ## Run the data upgrade package
 
 Run the data upgrade by following the steps in [Upgrade data in development, demo or sandbox environments](upgrade-data-to-latest-update.md).
+
+
+## Deploy retail customizations 
+
+If your environment requires customizations for retail channel components, after you run the data upgrade package, follow the steps in [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md) to re-apply your retail combined deployable package.
 
 ## Update additional components
 

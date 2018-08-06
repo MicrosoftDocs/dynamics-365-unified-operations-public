@@ -30,8 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # NAF codes and siret numbers
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains the purpose and usage of Nomenclature des Activités Françaises (NAF) codes and Siret numbers in Microsoft Dynamics 365 for Finance and Operations.
 

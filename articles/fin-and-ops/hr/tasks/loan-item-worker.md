@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Loan items to a worker
+title: Loan items to workers
 description: This procedure shows how to loan an item to a worker and record the worker returning an item. 
 author: kherr75
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Loan items to a worker
+# Loan items to workers
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to loan an item to a worker and record the worker returning an item. Workers can also request loan items through their Employee self-service pages. The demo data company used to create this procedure is USMF.
 

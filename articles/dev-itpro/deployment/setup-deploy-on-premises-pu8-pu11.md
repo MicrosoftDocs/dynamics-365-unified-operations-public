@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # Set up and deploy on-premises environments (Platform updates 8 and 11)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), Platform updates 8 and 11.
 
@@ -51,9 +51,9 @@ These components depend on the following system software:
 
 - Microsoft Windows Server 2016
 - Microsoft SQL Server 2016 SP1, which has the following features:
-    - Full-text index search is enabled.
-    - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines.
-    - SQL Server Integration Services (SSIS) - This is deployed on AOS virtual machines.
+  - Full-text index search is enabled.
+  - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines.
+  - SQL Server Integration Services (SSIS) - This is deployed on AOS virtual machines.
 
     > [!WARNING]
     > Full Text Search must be enabled.
@@ -64,10 +64,10 @@ These components depend on the following system software:
 - Active Directory Federation Services (AD FS) on Windows Server 2016
 - Domain controller
 
-    > [!WARNING]
-    > The domain controller must be Microsoft Windows Server 2012 R2 or later and must have a domain functional level of 2012 R2 or more.    For more information about domain functional levels, see the following topics:
-    - [What Are Active Directory Functional Levels](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)
-    - [Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/en-us/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
+  > [!WARNING]
+  > The domain controller must be Microsoft Windows Server 2012 R2 or later and must have a domain functional level of 2012 R2 or more.    For more information about domain functional levels, see the following topics:
+  >   - [What Are Active Directory Functional Levels](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)
+  >   - [Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/en-us/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
 
 ## Lifecycle Services
 
@@ -369,13 +369,13 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 3. If you're using SSL certificates that were already generated, skip the Certificate generation and update the thumbprints in the configTemplate.xml file. The certificates need to be installed in the CurrentUser\My store and their private keys must be exportable.
 
->[!WARNING]
->Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get **X509 certificate not valid** error. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
-```powershell
-dir cert:\CurrentUser\My
-dir cert:\LocalMachine\My
-dir cert:\LocalMachine\Root
-```
+> [!WARNING]
+> Because of a leading not-printable special character, which is difficult to determine when present, the cert manager should not be used to copy thumbprints. If the not-printable special character is present, you will get **X509 certificate not valid** error. To retrieve the thumbprints, see results from PowerShell commands or run the following commands in PowerShell.
+> ```powershell
+> dir cert:\CurrentUser\My
+> dir cert:\LocalMachine\My
+> dir cert:\LocalMachine\Root
+> ```
 
 4. Specify a semi-colon separated list of users or groups in the **ProtectTo** tag for each certificate. Only Active directory users and groups specified in the **ProtectTo** tag will have permissions to import the certificates that are exported using the scripts. Passwords are not supported by the script to protect the exported certificates
 
@@ -583,7 +583,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
    > [!WARNING]
    > 1. The user running the SQL service and the user running the scripts should have READ access on the folder or share where the backup file is located.
-   
+   > 
    > 2. If a database with the same name exists, the database will be reused.
 
 6. Copy the **infrastructure** folder to the SQL Server machine and navigate to it in a PowerShell window with elevate privileges.
@@ -596,10 +596,10 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName Orchestrator
    ```
 
-  The script will do the following:
+   The script will do the following:
   
-  - Create an empty database named **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
-  - Grant the local agent gMSA (svc-LocalAgent$) **db\_owner** permissions on the database.
+   - Create an empty database named **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
+   - Grant the local agent gMSA (svc-LocalAgent$) **db\_owner** permissions on the database.
 
 #### Configure the Finance and Operations database
 
@@ -612,25 +612,25 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
    The **Initialize-Database.ps1** script will do the following:
 
-    1. Restore the database from the specified backup file.
-    2. Create a new user that has SQL authentication enabled (axdbadmin).
-    3. Map users to database roles based on the following table for AXDB.
+   1. Restore the database from the specified backup file.
+   2. Create a new user that has SQL authentication enabled (axdbadmin).
+   3. Map users to database roles based on the following table for AXDB.
 
-    | User            | Type    | Database role |
-    |-----------------|---------|---------------|
-    | svc-AXSF$       | gMSA    | db\_owner     |
-    | svc-LocalAgent$ | gMSA    | db\_owner     |
-    | svc-FRPS$       | gMSA    | db\_owner     |
-    | svc-FRAS$       | gMSA    | db\_owner     |
-    | axdbadmin       | SqlUser | db\_owner     |
+      | User            | Type    | Database role |
+      |-----------------|---------|---------------|
+      | svc-AXSF$       | gMSA    | db\_owner     |
+      | svc-LocalAgent$ | gMSA    | db\_owner     |
+      | svc-FRPS$       | gMSA    | db\_owner     |
+      | svc-FRAS$       | gMSA    | db\_owner     |
+      | axdbadmin       | SqlUser | db\_owner     |
 
 
-    4. Map users to database roles based on the following table for TempDB.
+   4. Map users to database roles based on the following table for TempDB.
 
-    | User            | Type    | Database role |
-    |-----------------|---------|---------------|
-    | svc-AXSF$       | gMSA    | db_datareader, db_datawriter, db_ddladmin     |
-    | axdbadmin       | SqlUser | db_datareader, db_datawriter, db_ddladmin     |
+      | User            | Type    | Database role |
+      |-----------------|---------|---------------|
+      | svc-AXSF$       | gMSA    | db_datareader, db_datawriter, db_ddladmin     |
+      | axdbadmin       | SqlUser | db_datareader, db_datawriter, db_ddladmin     |
 
    The **Configure-Database.ps1** script will do the following:
 
@@ -655,14 +655,14 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    ```
 
    The script will do the following:
-    1. Create an empty database named **FinancialReporting**.
-    2. Map the users to database roles based on the following table.
+   1. Create an empty database named **FinancialReporting**.
+   2. Map the users to database roles based on the following table.
 
-    | User            | Type | Database role |
-    |-----------------|------|---------------|
-    | svc-LocalAgent$ | gMSA | db\_owner     |
-    | svc-FRPS$       | gMSA | db\_owner     |
-    | svc-FRAS$       | gMSA | db\_owner     |
+      | User            | Type | Database role |
+      |-----------------|------|---------------|
+      | svc-LocalAgent$ | gMSA | db\_owner     |
+      | svc-FRPS$       | gMSA | db\_owner     |
+      | svc-FRAS$       | gMSA | db\_owner     |
 
 ### <a name="encryptcred"></a> 15. Encrypt credentials
 
@@ -800,6 +800,6 @@ If the deployment fails, the **Reconfigure** button will become available for yo
 
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
 
-## See also
+## Additional resources
 - [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
 - [Redeploy an on-premises deployment](redeploy-on-prem.md)

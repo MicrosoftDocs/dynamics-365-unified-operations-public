@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deployment options
+title: Deployment options for retail functionality
 description: This topic explains the differences in the retail functionality between Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
 author: ashishmsft 
 manager: AnnBe
@@ -27,9 +27,9 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update 
 ---
 
-# Deployment options
+# Deployment options for retail functionality
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Retail functionality is available in the following products:
  

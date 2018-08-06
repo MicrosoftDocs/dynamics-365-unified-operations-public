@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up short picking item reallocation
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to enable warehouse workers to quickly find alternative locations if there isn’t sufficient inventory at the location they’ve been directed to. It’s possible to use an automatic re-allocation process, which uses location directives to retrieve the goods if they’re available at another location. Alternatively, when manual re-allocation is used, a list of the locations with the available quantity is shown on the mobile device, allowing the warehouse worker to choose which location to use inventory from. You can use this procedure in demo data company USMF. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 

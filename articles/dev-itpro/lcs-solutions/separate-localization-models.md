@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Separate localization models
+title: Separation of localization models
 description: As part of the requirements for LCS solutions for localization and translation, if a localization solution for previous versions of Microsoft Dynamics 365 for Finance and Operations contains both regulatory and competitive features, localization ISV solution providers must split the solution into separate models for each feature type. This article provides information about this requirement.
 author: ShylaThompson
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Separate localization models
+# Separation of localization models
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 As part of the requirements for LCS solutions for localization and translation, if a localization solution for previous versions of Microsoft Dynamics 365 for Finance and Operations contains both regulatory and competitive features, localization ISV solution providers must split the solution into separate models for each feature type. This article provides information about this requirement.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Copying and comparing entity data between companies (AX 2012)
+title: Copy and compare entity data between companies
 description: This topic provides information about copying entity data between companies in Microsoft Dynamics AX 2012 R2 and Microsoft Dynamics AX 2012 R3.
 author: kfend
 manager: AnnBe
@@ -30,12 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Copying and comparing entity data between companies (AX 2012)
+# Copy and compare entity data between companies
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 This process for copying entity data between companies is supported only for Microsoft Dynamics AX 2012 R2 and Microsoft Dynamics AX 2012 R3. If you are running an earlier version of the Data Import/Export Framework, see the instructions in [Walkthrough: Copy data between companies (DIXF, DMF)](copy-data-between-companies-dixf.md). This topic describes the following processes:
 
@@ -45,7 +42,7 @@ This process for copying entity data between companies is supported only for Mic
 ## Copy entity data between companies
 To copy entity data between companies or legal entities, use the Copy entity data between companies wizard.
 
-1.  Click **Data import export framework** &gt; **Common** &gt; **Copy entity data between companies**. The **Copy entity data between companies** **Wizard** opens.
+1.  Click **Data import export framework** &gt; **Common** &gt; **Copy entity data between companies**. The **Copy entity data between companies** **Wizard** opens.
 2.  Click **Next &gt;**.
 3.  On the **Name the comparison processing group** page, provide a name for the processing group, so that you can identify it later, and then click **Next &gt;**.
 4.  On the **Select entities to compare** page, select one or more source entities to copy, click **&gt;** to add them to the list of entities to copy, and then click **Next &gt;**.
@@ -55,7 +52,7 @@ To copy entity data between companies or legal entities, use the Copy entity dat
 8.  Click **Execution history** to review the entities that have been copied.
 
 ## Compare entity data between companies
-To compare entity data between companies or legal entities, use the **Compare entity data between companies** **Wizard**. After you have compared data, you can select specific values to copy to the other system.
+To compare entity data between companies or legal entities, use the **Compare entity data between companies** **Wizard**. After you have compared data, you can select specific values to copy to the other system.
 
 1.  Click **Data import export framework** &gt; **Common** &gt; **Compare entity data between companies**. The **Compare entity data between companies** wizard opens.
 2.  Click **Next &gt;**.

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Vendor collaboration with customers
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how you can use vendor collaboration to work with customers in Microsoft Dynamics 365 for Finance and Operations. Vendors can complete a series of business processes from the following workspaces:
 
@@ -145,6 +145,6 @@ As a vendor, you can access part of the information that the customer maintains 
 
 The accessible information is the vendor name, addresses, contact information, contact persons and their contact information, identification numbers, tax registration numbers, procurement categories that the vendor is approved to sell to the customer in, and information about certifications.
 
-## See also
+## Additional resources
 
 [Manage vendor collaboration users](manage-vendor-collaboration-users.md)

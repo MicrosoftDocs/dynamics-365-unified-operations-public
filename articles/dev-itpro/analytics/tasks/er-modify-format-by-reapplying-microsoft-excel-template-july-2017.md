@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Modify a format by reapplying a Microsoft Excel template for electronic reporting (ER)
+title: Modify formats by reapplying Excel templates
 description: To complete the steps in this procedure, you must first complete the procedure, ER - Design a configuration for generating reports in OPENXML format. 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Modify a format by reapplying a Microsoft Excel template for electronic reporting (ER)
+# Modify formats by reapplying Excel templates
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To complete the steps in this procedure, you must first complete the procedure, ER - Design a configuration for generating reports in OPENXML format.
 

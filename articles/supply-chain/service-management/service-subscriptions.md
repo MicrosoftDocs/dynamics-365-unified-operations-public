@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service subscriptions
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Subscriptions are based on a time-and-materials project. You can create subscriptions from a project, from the **Service subscriptions** page, or by using a service subscription group.
 

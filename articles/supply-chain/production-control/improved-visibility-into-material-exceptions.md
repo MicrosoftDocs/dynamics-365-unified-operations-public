@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3
 ---
 # Visibility into material exceptions
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In the **Production floor management** workspace, three tiles give you better visibility into exceptions for raw materials for production orders and batch orders:
 

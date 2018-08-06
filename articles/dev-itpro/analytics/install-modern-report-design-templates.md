@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install report design templates
+title: Install modern report design templates
 description: This topic explains how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible branding in the header and footer.
 author: tjvass
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Install report design templates
+# Install modern report design templates
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible branding in the header and footer.
 
@@ -78,7 +78,7 @@ Follow these steps to install the modern report designs for the application suit
     ModelUtil.exe -import -metadatastorepath=J:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
     ```
 
-    For more information about how to import model files, see [Distribution of models: How to export and import a model](..\dev-tools\models-export-import.md). After you've imported the model file, start Microsoft Visual Studio 2015. In Application Explorer, verify that the **Application Suite - Modern Designs** collection appears under the **AOT** node.
+    For more information about how to import model files, see [Distribution of models: How to export and import a model](../dev-tools/models-export-import.md). After you've imported the model file, start Microsoft Visual Studio 2015. In Application Explorer, verify that the **Application Suite - Modern Designs** collection appears under the **AOT** node.
 
 Now that you've successfully imported the Application Suite Modern Designs model, you must to rebuild the application suite to update the metadata elements.
 

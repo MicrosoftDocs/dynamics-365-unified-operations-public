@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure Lifecycle Services security
+title: Configure Lifecycle Services (LCS) security
 description: Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization.
 author: RobinARH
 manager: AnnBe
@@ -30,19 +30,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure Lifecycle Services security
+# Configure Lifecycle Services (LCS) security
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization.
 
-For the current version of Microsoft Dynamics 365 for Finance and Operations, users can sign in by using the Microsoft Azure Active Directory (Azure AD) credentials that they created in the [Microsoft Office 365 portal](http://go.microsoft.com/fwlink/?LinkID=324287) when they signed up. Users who are administrators for their organization in Azure AD will be administrators in Microsoft Dynamics Lifecycle Services (LCS). For Microsoft Dynamics AX 2012, organization-level access to LCS is controlled by the association of a person’s Microsoft ID with an organization in CustomerSource or PartnerSource. Therefore, users of CustomerSource or PartnerSource automatically have access to their organization’s workspace in LCS, and can view all projects that they have been invited to participate in. Users who are administrators for their organization in CustomerSource and PartnerSource will be administrators in LCS. Although an administrator can invite people who don’t have CustomerSource or PartnerSource credentials to be members of an organization in LCS, we don't recommend this approach. People who are invited to be members of an LCS organization aren't provided with credentials in CustomerSource or PartnerSource. Project-level access to LCS is by invitation. You can invite members of your organization to be project owners and team members. Additionally, you can invite users who aren't part of your organization, and who don't have accounts in Azure AD or CustomerSource or PartnerSource, to be team members. **Important:** We strongly recommend that you manage all users within your company at the organization level. In that way, you help guarantee that their relationship with your organization is correct in CustomerSource, PartnerSource, and Azure AD. Additionally, you help guarantee that users can access the benefits that are available to your organization.
+For the current version of Microsoft Dynamics 365 for Finance and Operations, users can sign in by using the Microsoft Azure Active Directory (Azure AD) credentials that they created in the [Microsoft Office 365 portal](http://go.microsoft.com/fwlink/?LinkID=324287) when they signed up. Users who are administrators for their organization in Azure AD will be administrators in Microsoft Dynamics Lifecycle Services (LCS). For Microsoft Dynamics AX 2012, organization-level access to LCS is controlled by the association of a person’s Microsoft ID with an organization in CustomerSource or PartnerSource. Therefore, users of CustomerSource or PartnerSource automatically have access to their organization’s workspace in LCS, and can view all projects that they have been invited to participate in. Users who are administrators for their organization in CustomerSource and PartnerSource will be administrators in LCS. Although an administrator can invite people who don’t have CustomerSource or PartnerSource credentials to be members of an organization in LCS, we don't recommend this approach. People who are invited to be members of an LCS organization aren't provided with credentials in CustomerSource or PartnerSource. Project-level access to LCS is by invitation. You can invite members of your organization to be project owners and team members. Additionally, you can invite users who aren't part of your organization, and who don't have accounts in Azure AD or CustomerSource or PartnerSource, to be team members. **Important:** We strongly recommend that you manage all users within your company at the organization level. In that way, you help guarantee that their relationship with your organization is correct in CustomerSource, PartnerSource, and Azure AD. Additionally, you help guarantee that users can access the benefits that are available to your organization.
 
 ## Manage LCS organization users
 Only an administrator can manage users. Follow these steps.
 
-1.  In CustomerSource, PartnerSource, or Azure AD, associate all the users in your organization who require access to LCS with your organization. Users might have to wait up to two business days before they can sign in to LCS.
+1.  In CustomerSource, PartnerSource, or Azure AD, associate all the users in your organization who require access to LCS with your organization. Users might have to wait up to two business days before they can sign in to LCS.
 2.  Add your users to the appropriate projects in LCS.
 
 ### Invite a user to an LCS project
@@ -88,11 +87,11 @@ You can invite users from inside or outside your organization to join your proje
 </tr>
 <tr class="odd">
 <td>Project team member</td>
-<td>Members of this role have access to all tools in LCS but can't manage cloud-hosted environments.</td>
+<td>Members of this role have access to all tools in LCS but can&#39;t manage cloud-hosted environments.</td>
 </tr>
 <tr class="even">
 <td>Project team member (prospect)</td>
-<td>Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don't have an account in VOICE or an Azure AD account. You can identify that a user is a prospect, because <strong>prospect</strong> is listed as his or her organization.</td>
+<td>Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don&#39;t have an account in VOICE or an Azure AD account. You can identify that a user is a prospect, because <strong>prospect</strong> is listed as his or her organization.</td>
 </tr>
 <tr class="odd">
 <td>Operations user</td>

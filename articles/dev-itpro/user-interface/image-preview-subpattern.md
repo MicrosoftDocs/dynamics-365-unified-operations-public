@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Image Preview subpattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Image Preview form subpattern. This subpattern can be used for most images that appear within a form container, especially within a FastTab or Group. 
 
@@ -57,17 +56,17 @@ Image Preview can be used for most images that appear within a form container, e
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
 -   Fields are to the right of the image, if there are any fields.
--   An ActionPane above the image can be used for associated actions (for example, Upload and Select).
+-   An ActionPane above the image can be used for associated actions (for example, Upload and Select).
 
 ## Model
-### Image only – High-level structure
+### Image only – High-level structure
 
 - \[Container\] (Columns = Fixed – 1)
 
     - *Toolbar (ActionPane) \[Optional\]*
     - Image
 
-### Image and fields – High-level structure
+### Image and fields – High-level structure
 
 - \[Container\] (Columns = Fixed – 1)
 
@@ -90,7 +89,7 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 -   [Fill Text](fill-text-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with the UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
+The verification checklist shows the steps for manually verifying that the form complies with the UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
 
 -   **Image Preview guidelines:**
     -   Any fields should be placed to the right of the image.

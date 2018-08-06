@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Vendor collaboration mobile workspace
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the **Vendor collaboration** mobile workspace. This workspace helps your vendors stay up to date about the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts.
 
@@ -81,9 +81,9 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 </thead>
 <tbody>
 <tr class="odd">
-<td>KB 3216943 must be implemented if you're using Platform update 3.</td>
+<td>KB 3216943 must be implemented if you&#39;re using Platform update 3.</td>
 <td>System administrator</td>
-<td>KB 3216943 is a binary update that is required if you're using Platform update 3. To implement this KB, the system administrator must follow these steps.
+<td>KB 3216943 is a binary update that is required if you&#39;re using Platform update 3. To implement this KB, the system administrator must follow these steps.
 <ol>
 <li>Download KB 3216943 from Microsoft Dynamics Lifecycle Services (LCS).</li>
 <li>Install the binary update, which is delivered as a deployable package. For information about how to apply a deployable package, see <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Apply a deployable package</a>.</li>

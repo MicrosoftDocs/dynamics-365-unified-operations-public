@@ -29,13 +29,12 @@ ms.dyn365.ops.version: 7.3
 
 # Extending tax engine configurations
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 The [Tax engine](tax-engine.md) (also referred to as GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. This topic walks you through the Tax engine configuration extension process using the following example scenarios that apply to India.
 
--	Extend the Tax engine configuration for Union Territory Goods and Services Tax (UTGST).
--	Use a reference model to apply a tax rate of Basic Customs Duty (BCD) for import order of goods from different countries/regions.
+-   Extend the Tax engine configuration for Union Territory Goods and Services Tax (UTGST).
+-   Use a reference model to apply a tax rate of Basic Customs Duty (BCD) for import order of goods from different countries/regions.
 
 > [!NOTE]
 > The Tax engine functionality is only available for legal entities with a primary address in India.
@@ -88,24 +87,24 @@ Before you can complete the example scenarios, complete the following tasks.
 
 For union territories that don’t have a legislature, the GST Council introduced UTGST, which is comparable to SGST. UTGST applies to the following union territories of India:
 
--	Chandigarh
--	Lakshadweep
--	Daman and Diu
--	Dadra and Nagar Haveli
--	Andaman and Nicobar Islands
+-   Chandigarh
+-   Lakshadweep
+-   Daman and Diu
+-   Dadra and Nagar Haveli
+-   Andaman and Nicobar Islands
 
 SGST can also be applied in union territories such as New Delhi and Puducherry, which have their own legislatures and can be considered “states” per the GST process.
 
 For UTGST, the following combinations of taxes can be applied for any transaction:
 
--	Supply of goods and services within a state (intrastate): CGST + SGST
--	Supply of goods and services within union territories (intra-UT): CGST + UTGST
--	Supply of goods and services across states or union territories (interstate/inter-UT): IGST
+-   Supply of goods and services within a state (intrastate): CGST + SGST
+-   Supply of goods and services within union territories (intra-UT): CGST + UTGST
+-   Supply of goods and services across states or union territories (interstate/inter-UT): IGST
 
 The order of utilization for the Input Tax Credit of UTGST is the same as it is for the Input Tax Credit of SGST. Therefore, Input Tax Credit of SGST or UTGST is first set off against SGST or UTGST, respectively. The Output Tax liabilities and any balance can be set off against IGST Output Tax liabilities.
 
 To support this scenario, you must complete the following tasks:
-1. [Create extension configurations](#create-extension-configurations)	
+1. [Create extension configurations](#create-extension-configurations)  
 2. [Extend the taxable document so that it includes the IntraStateInUnionTerritory flag](#extend-the-taxable-document-so-that-it-includes-the-intrastateinunionterritory-flag)
 3. [Complete data mapping for the extended taxable document](#complete-data-mapping-for-the-extended-taxable-document)
 4. [Change the data model of Tax (India GST Contoso)](#change-the-data-model-of-tax-india-gst-contoso)
@@ -118,8 +117,8 @@ To support this scenario, you must complete the following tasks:
 
 ### Create extension configurations
 The following steps are needed to create extension configurations:
--	Create a new taxable document that is derived from Taxable Document (India)
--	Create a new tax document that is derived from Tax (India GST)
+-   Create a new taxable document that is derived from Taxable Document (India)
+-   Create a new tax document that is derived from Tax (India GST)
 
 1. In the **Localization configurations** workspace (**Organization administration** > **Workspaces** > **Electronic reporting**), click **Tax configurations**.
 2. In the tree, find the **Taxable Document (India)** configuration, and then click **Create configuration**.
@@ -136,10 +135,10 @@ Complete the following steps to add the **IntraStateInUnionTerritory** flag to *
  1. In the tree, find the **Taxable Document (India Contoso)** configuration that you created in [Create extension configurations](#create-extension-configurations), and then click **Designer**.
  2. In the tree, go to **Taxable document** > **Header** > **Lines**, and then click **New** to create a new node.
  3. Enter a name for the node, and select the item type:
-	-	**Name:** IntraStateInUnionTerritory
-	-	**Item type:** Enum
+    -   **Name:** IntraStateInUnionTerritory
+    -   **Item type:** Enum
 
-	![Create a new node](media/gte-create-node-tax-document.png)
+    ![Create a new node](media/gte-create-node-tax-document.png)
 
  4. Click **Add**.
  5. On the **Node** FastTab, click **Switch item reference**.
@@ -147,31 +146,31 @@ Complete the following steps to add the **IntraStateInUnionTerritory** flag to *
  7. Save the configuration, and close the designer.
  8. With **Taxable Document (India Contoso)** still selected in the tree, click **Change status** > **Complete** in the **Versions** list.
 
-	![Update the configuration status](media/gte-change-configuration-status.png)
+    ![Update the configuration status](media/gte-change-configuration-status.png)
 
  9. Enter a description such as **UTGST**, and then click **OK**.
  10. If there are any errors, open the designer, click **Validate**, and fix the errors.
  11. After the status is updated to **Complete**, the configuration is ready for deployment.
- 
+
 ### Complete data mapping for the extended taxable document
 There are data mappings for each taxable document, such as a purchase order or sales order, and reference mode in the taxable document. The purpose of data mapping is to get the value from taxable transactions and pass it into GTE for tax applicability or tax calculation. 
 For convenience, there is a special data source called **Taxable document source**, which encapsulates most common tax relevant fields like assessable value, HSN, or SAC. So, there are two methods for retrieving and mapping the value of the additional field to your extended taxable document.
 
-- 	Method 1: Enable the additional field for the existing taxable document source.
--	Method 2: Use Electronic reporting (ER) data mapping.
- 
+-   Method 1: Enable the additional field for the existing taxable document source.
+-   Method 2: Use Electronic reporting (ER) data mapping.
+
 #### Method 1: Data mapping by taxable document source
 Before you use this method, be sure to read about [Tax engine integration](tax-engine-integration.md) so you understand the underlying concepts. The Tax engine must determine whether a state is a union territory. Therefore, in this method, you will modify the data provider so that it provides this information to the Tax engine.
 
 1. Find the system name of the Union Territory of State master.
-	1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**. 
-	2. Right-click the **Union territory** column, and then click **Form information** > **Form Name: LogisticsAddressSetup**. For this example, notice that the system name for the column is **LogisticsAddressState.UnionTerritory_IN**.
+    1. Go to **Organization administration** > **Global address book** > **Addresses** > **Address setup**. 
+    2. Right-click the **Union territory** column, and then click **Form information** > **Form Name: LogisticsAddressSetup**. For this example, notice that the system name for the column is **LogisticsAddressState.UnionTerritory_IN**.
 
 ![GTE extension of union territory](media/gte-extension-union-territory-form-info.png)
 
 2. Add a tax engine model field for intrastate transactions in a union territory. 
-	1. In the AOT, open **Classes** > **TaxableDocRowDataProviderExtensionLine**, add a ```const str``` for intrastate transactions in a union territory.
-	
+    1. In the AOT, open **Classes** > **TaxableDocRowDataProviderExtensionLine**, add a ```const str``` for intrastate transactions in a union territory.
+
 ```
 public class TaxableDocRowDataProviderExtensionLine extends TaxableDocumentRowDataProviderExtension
 {
@@ -179,7 +178,7 @@ public class TaxableDocRowDataProviderExtensionLine extends TaxableDocumentRowDa
 ```
 
 3. Implement logic to determine if a transaction is an intrastate transaction in a union territory. For example, add a new method for the **TaxableDocRowDataProviderExtensionLine** class, and implement the logic in the method.
-	
+
 ```
 private NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
 {
@@ -218,55 +217,56 @@ validFields.add(TaxableDocRowDataProviderExtensionLine::IsIntraStateInUnionTerri
 ```
 
 6. Complete the data binding in the Designer.
-	1. Navigate to the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
+   1. Navigate to the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
 
-	![Tax configuration designer](media/gte-extension-tax-configuration-designer.png)
-	
-	2. Click **Map model to datasource**
-	3. You will find there are lots of data mapping for each taxable document and reference model, like purchase order or sales order. You need to do your data mapping per your business requirement. For example:
-		1. Select a sales order document line.
-		2. Click **Designer**.
+      ![Tax configuration designer](media/gte-extension-tax-configuration-designer.png)
 
-		![Data mapping](media/gte-extension-data-mapping.png)
+   2. Click **Map model to datasource**
+   3. You will find there are lots of data mapping for each taxable document and reference model, like purchase order or sales order. You need to do your data mapping per your business requirement. For example:
+      1. Select a sales order document line.
+      2. Click **Designer**.
 
-	4. After completing steps 1-5, you should be able to find the field **IntraStateInUnionTerritory** in the data source under **Sales order** > **Header** > **Lines**. You can bind this field to the **IntraStateInUnionTerritory:Enumeration** value in the taxable document.
+         ![Data mapping](media/gte-extension-data-mapping.png)
 
-	![Data binding](media/gte-extension-data-binding.png)
+   4. After completing steps 1-5, you should be able to find the field **IntraStateInUnionTerritory** in the data source under **Sales order** > **Header** > **Lines**. You can bind this field to the **IntraStateInUnionTerritory:Enumeration** value in the taxable document.
 
-	5. Save the configuration, and close the designer.
-	6. In the **Configurations** workspace, click **Change status** > **Complete**.
+      ![Data binding](media/gte-extension-data-binding.png)
 
-	![Chang configuration status](media/gte-change-configuration-status.png)
+   5. Save the configuration, and close the designer.
+   6. In the **Configurations** workspace, click **Change status** > **Complete**.
 
-	7. Enter a description such as **UTGST**, and then click **OK**.
-	8. If there are any errors, open the designer, click **Validate**, and fix the errors.
+      ![Chang configuration status](media/gte-change-configuration-status.png)
+
+   7. Enter a description such as **UTGST**, and then click **OK**.
+   8. If there are any errors, open the designer, click **Validate**, and fix the errors.
 
 #### Method 2: Data mapping using the ER model mapping designer
 Before you use this method, be sure that you are familiar with ER and the table relation, class, and method for purchase orders. 
 1. Open the model mapping designer for a purchase order, add table records **PurchLine** as a root data source.
-![Purchline extension](media/gte-extension-purchline.png)
+   ![Purchline extension](media/gte-extension-purchline.png)
 2. Add Data model\Enumeration **YesNo Global** and Dynamics 365 for Operations\Enumeration **NoYes**.
-![Add enumerations](media/gte-extension-add-enumerations.png)
+   ![Add enumerations](media/gte-extension-add-enumerations.png)
 3. In the **Data Source** tree, add a calculated field **$PurchLine** under **purchase order** > **lines**  to build the connection between the existing taxable document **purchase order** and the table records **PurchLine**. Click **Edit formula**.
-![Edit formula](media/gte-extension-edit-formula.png)
+   ![Edit formula](media/gte-extension-edit-formula.png)
 4. Input the formula that describe the relationship between **PurchLine** and **purchase order**: 
-```FIRST(FILTER(PurchLine, PurchLine.RecId='purchase order'.Header.Lines.RecId))```
-![Add formula](media/gte-extension-add-formula.png)
+   ```FIRST(FILTER(PurchLine, PurchLine.RecId='purchase order'.Header.Lines.RecId))```
+   ![Add formula](media/gte-extension-add-formula.png)
 5. Click **Save** and close the page.
 6. Add the calculated field **\$IsIntraStateInUnionTerritory** in **$PurchLine**, and use the following formula. 
-```
-AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.StateId = 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.StateId, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes)
-```
+   ```
+   AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.StateId = 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.StateId, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes, 'purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getTaxLogisticsPostalAddress.'>Relations'.State.UnionTerritory_IN = NoYesAx.Yes)
+   ```
 7. In the **Model mapping designer**, complete the mapping:
-	1. In the **Data Sources** tree, select **$IntraStateInUnionTerritory**.
-	2. In the **Data Model**, select **IntraStateInUnionTerritory**.
-	3. Click **Edit**.
-![Edit data mapping](media/gte-extension-data-binding2.png)
-	4. Input the following formula to convert the Boolean value to the enumeration value, which is used by the extended taxable document field **IntraStateInUnionTerritory**.
-	```
-	CASE('purchase order'.'$PurchLine'.'$IsIntraStateInUnionTerritory', true, NoYesModel.Yes, false, NoYesModel.No)
-	```
-	5. Click **Save** and close the page.
+   1. In the **Data Sources** tree, select **$IntraStateInUnionTerritory**.
+   2. In the **Data Model**, select **IntraStateInUnionTerritory**.
+   3. Click **Edit**.
+      ![Edit data mapping](media/gte-extension-data-binding2.png)
+   4. Input the following formula to convert the Boolean value to the enumeration value, which is used by the extended taxable document field **IntraStateInUnionTerritory**.
+      ```
+      CASE('purchase order'.'$PurchLine'.'$IsIntraStateInUnionTerritory', true, NoYesModel.Yes, false, NoYesModel.No)
+      ```
+   5. Click **Save** and close the page.
+
 8. Save the configuration, and close the designer.
 9. In the **Configurations** workspace, click **Change status** > **Complete**.
 
@@ -301,11 +301,11 @@ AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPo
 	1. Go to **Tax document** > **Header** > **Lines** > **GST**. Click **Add**, and then select **Tax component**.
 	2. Enter a name and description for the UTGST tax component, and then click **OK**.
 3. Configure tax measures for the UTGST tax component.
-	1. Expand the tax document tree, and click the UTGST tax component to create a measure for.
-	2. Click **Add**, and then select **Tax measure**.
-	3. All the logic, such as properties, lookups, formulas, postings, and accounting, except applicability of UTGST, is the same as it is for SGST. Therefore, select all the tax measures that SGST uses in the **Name** list and then click **OK**. 
+   1. Expand the tax document tree, and click the UTGST tax component to create a measure for.
+   2. Click **Add**, and then select **Tax measure**.
+   3. All the logic, such as properties, lookups, formulas, postings, and accounting, except applicability of UTGST, is the same as it is for SGST. Therefore, select all the tax measures that SGST uses in the **Name** list and then click **OK**. 
 
-	![Listed measures](media/gte-utgst-list.png)
+      ![Listed measures](media/gte-utgst-list.png)
 
 4. Configure rate/percentage lookups.
 	1. Expand the **UTGST** tax component node.
@@ -318,13 +318,13 @@ AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPo
 	5. Save the tax document.
 
 5. Configure properties.
-	1. Go to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**. Click the **Properties** tab.
-	2. Click **Edit** (the pencil icon) next to **Condition**.
-	3. Enter the same condition that SGST uses.
+   1. Go to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**. Click the **Properties** tab.
+   2. Click **Edit** (the pencil icon) next to **Condition**.
+   3. Enter the same condition that SGST uses.
 
-	![SGST condition](media/gte-sgst-condition.png)
+      ![SGST condition](media/gte-sgst-condition.png)
 
-	4. Save the tax document.
+   4. Save the tax document.
 
 6. Configure tax applicability lookups.
 	1. Go to **Tax document** > **Header** > **Lines** > **GST** > **UTGST**. Click the **Lookup** tab.
@@ -373,7 +373,7 @@ AND('purchase order'.'$PurchLine'.'initTaxModelDocLine_IN()'.getPartyLogisticsPo
 1. Go to **Tax document** > **Header** > **Lines**. Click the **Formulas** tab.
 2. Change any formulas that contain the **Base Amount**, **Line tax amount**, and **Tax amount included in price** measures, so that the formulas reflect UTGST. For example, change the **Tax amount inclusive** formula as shown here.
 
- ![Tax amount inclusive formula](media/gte-tax-amount-inclusive.png)
+   ![Tax amount inclusive formula](media/gte-tax-amount-inclusive.png)
 	
 3. Save the tax document.
 4. Close the designer.

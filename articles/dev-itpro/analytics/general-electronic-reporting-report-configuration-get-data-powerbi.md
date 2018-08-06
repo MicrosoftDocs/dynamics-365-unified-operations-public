@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure Electronic reporting to pull data into Power BI
+title: Configure Electronic reporting (ER) to pull data into Power BI
 description: This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance of Finance and Operations to Power BI services. 
 author: NickSelin
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Configure Electronic reporting to pull data into Power BI
+# Configure Electronic reporting (ER) to pull data into Power BI
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance of Finance and Operations to Power BI services. As an example, this topic uses Intrastat transactions as business data that must be transferred. The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import/export activities on the Power BI report.
 
@@ -73,7 +72,7 @@ To complete the example in this topic, you must have the following access:
 You must have an ER data model as the source of business data that will be used on Power BI reports. This data model is uploaded from the ER configurations repository. For more information, see [Download Electronic reporting configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md), or play the **ER Import a configuration from Lifecycle Services** task guide. Select **Intrastat** as the data model that will be uploaded from the selected ER configurations repository. (In this example, version 1 of the model is used.) You can then access the **Intrastat** ER model configuration on the **Configurations** page. [![Configurations page](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## Design an ER format configuration
-You must create a new ER format configuration that uses the **Intrastat** data model as the source of business data. This format configuration must generate output results as electronic documents in OpenXML (Excel file) format. For more information, play the **ER Create a configuration for reports in OPENXML format** task guide. Name the new configuration **Import / export activities**, as shown in the following illustration. Use the [ER data - import and export details](https://go.microsoft.com/fwlink/?linkid=845208) Excel file as a template when you design the ER format. (For information about how to import a format template, play the task guide.) [![Import / export activities configuration](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png) To modify the **Import / export activities** format configuration, follow these steps.
+You must create a new ER format configuration that uses the **Intrastat** data model as the source of business data. This format configuration must generate output results as electronic documents in OpenXML (Excel file) format. For more information, play the **ER Create a configuration for reports in OPENXML format** task guide. Name the new configuration **Import / export activities**, as shown in the following illustration. Use the [ER data - import and export details](https://go.microsoft.com/fwlink/?linkid=845208) Excel file as a template when you design the ER format. (For information about how to import a format template, play the task guide.) [![Import / export activities configuration](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png) To modify the **Import / export activities** format configuration, follow these steps.
 
 1.  Click **Designer**.
 2.  On the **Format** tab, name the file element for this format **Excel output file**. [![Excel output file element](./media/ger-power-bi-format-configuration-file-element-name-1024x395.png)](./media/ger-power-bi-format-configuration-file-element-name.png)
@@ -94,7 +93,7 @@ You must configure the ER framework to send the output result of the new ER form
 -   The output result must be sent to the folder of the selected SharePoint Server.
 -   Each execution of the format configuration must create a new version of same Excel file.
 
-On the **Electronic reporting** page (**Organization administration** &gt; **Electronic reporting**), click the **Electronic reporting destination** item, and add a new destination. In the **Reference** field, select the **Import / export activities** format configuration that you created earlier. Follow these steps to add a new file destination record for the reference.
+On the **Electronic reporting** page (**Organization administration** &gt; **Electronic reporting**), click the **Electronic reporting destination** item, and add a new destination. In the **Reference** field, select the **Import / export activities** format configuration that you created earlier. Follow these steps to add a new file destination record for the reference.
 
 1.  In the **Name** field, enter the title of the file destination.
 2.  In the **File name** field, select the name **Excel output file** for the Excel file format component.
@@ -105,9 +104,9 @@ Click the **Settings** button for the new destination record. Then, in the **Des
 2.  In the **SharePoint** field, select the **Shared** document type that you created earlier.
 
 ## Schedule execution of the configured ER format
-1. On the **Configurations** page (**Organization administration** &gt; **Electronic reporting** &gt; **Configurations**), in the configurations tree, select the **Import / export activities** configuration that you created earlier. 
+1. On the **Configurations** page (**Organization administration** &gt; **Electronic reporting** &gt; **Configurations**), in the configurations tree, select the **Import / export activities** configuration that you created earlier. 
 2. Change the status of version 1.1 from **Draft** to **Complete** to make this format available for use. [![Configurations page](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) 
-3. Select the completed version of the **Import / export activities** configuration, and then click **Run**. Note that the configured destination is applied to the output result that is generated in Excel format. 
+3. Select the completed version of the **Import / export activities** configuration, and then click **Run**. Note that the configured destination is applied to the output result that is generated in Excel format. 
 4. Set the **Batch processing** option to **Yes** to run this report in unattended mode. 
 5. Click **Recurrence** to schedule the required recurrence of this batch execution. The recurrence defines how often the updated data will be transferred from Finance and Operations to Power BI. [![Electronic report parameters dialog box](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) 
 6. After it's configured, you can find the ER report execution job on the **Batch jobs** page (**System administration &gt; Inquiries &gt; Batch jobs**). [![Batch jobs page](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) 
@@ -123,9 +122,9 @@ Click the **Settings** button for the new destination record. Then, in the **Des
 ## Create a Power BI report by using the new dataset
 1. Click the **Import and export details** Power BI dataset that you created. 
 2. Configure the visualization. For example, select the **Filled map** visualization, and configure it as follows:
- -   Assign the **CountryOrigin** dataset field to the **Location** field of the map visualization.
- -   Assign the **Amount** dataset field to the **Color saturation** field of the map visualization.
- -   Add the **Activity** and **Year** dataset fields to the **Filters** fields collection of the map visualization.
+   -   Assign the **CountryOrigin** dataset field to the **Location** field of the map visualization.
+   -   Assign the **Amount** dataset field to the **Color saturation** field of the map visualization.
+   -   Add the **Activity** and **Year** dataset fields to the **Filters** fields collection of the map visualization.
 
 3. Save the Power BI report as **Import and export details report**. [![Import and export details report](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Note that the map shows the countries/regions that are mentioned in the Excel file (Austria and Switzerland in this example). These countries/regions are colored to show the proportion of invoiced amounts for each. 
 4. Update the list of Intrastat transactions. The export transaction that originated from Italy is added. [![Intrastat transactions list](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) 
@@ -138,7 +137,7 @@ Set up the integration between Finance and Operations and Power BI. For more inf
 2. Select the **Import and export details** Power BI report that you created, to show that report as an action item on the selected page. 
 3. Click the action item to open the Finance and Operations page that shows the report that you designed in Power BI. [![Import and export details report](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
-See also
+Additional resources
 --------
 
 [Electronic reporting destinations](electronic-reporting-destinations.md)

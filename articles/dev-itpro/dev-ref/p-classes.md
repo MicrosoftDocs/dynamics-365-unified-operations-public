@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: P Classes
+title: P classes
 description: System API classes that start with the letter P.
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# P Classes
+# P classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter P.
 

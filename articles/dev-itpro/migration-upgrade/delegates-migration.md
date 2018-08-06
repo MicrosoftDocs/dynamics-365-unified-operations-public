@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use delegates to solve dependencies between models when migrating code
+title: Solve dependencies among models by using delegates during code migration
 description: This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
 author: maertenm
 manager: AnnBe
@@ -30,17 +30,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Use delegates to solve dependencies between models when migrating code
+# Solve dependencies among models by using delegates during code migration
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
 
 Overview
 --------
 
-Microsoft Dynamics 365 for Finance and Operations is split into more several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite (See [Models](..\dev-tools\models.md) to learn about models and packages). With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. In this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. 
+Microsoft Dynamics 365 for Finance and Operations is split into more several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite (See [Models](../dev-tools/models.md) to learn about models and packages). With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. In this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. 
 
 [![Del1](./media/del1.jpg)](./media/del1.jpg) 
 
@@ -67,20 +66,20 @@ In order for a delegate to be properly handled, the delegate method declaration,
 
 ![static delegate handler](media/static-delegate-handler.png)
 
-Due to the fact that delegates do not have a return value, an EventHandlerResult is passed as a parameter to provide access to the needed result value after the delegate has returned. This topic focuses on static delegate handlers using the SubscribesTo. The delegate functionality from Dynamics AX 2012 remains. [How to use X++ Delegates in Dynamics AX 2012](http://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) is a great blog post on MSDN by Microsoft developer Marcos Calderon on delegate concepts in Dynamics AX 2012. These concepts still apply.
+Due to the fact that delegates do not have a return value, an EventHandlerResult is passed as a parameter to provide access to the needed result value after the delegate has returned. This topic focuses on static delegate handlers using the SubscribesTo. The delegate functionality from Dynamics AX 2012 remains. [How to use X++ Delegates in Dynamics AX 2012](http://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) is a great blog post on MSDN by Microsoft developer Marcos Calderon on delegate concepts in Dynamics AX 2012. These concepts still apply.
 
 ## Example scenarios
 ### Overlaying an existing delegate
 
-In many cases where delegates are needed, the code that was formerly overlayed has already been moved to a delegate handler by Microsoft. In these instances, Microsoft created delegates that can be leveraged and the code can be overlayed in a similar manner in the delegate handler. In this scenario, an Independent Software Vendor (ISV) is migrating code from Dynamics  AX 2012 R3 where they have overlayed the showSalesTax() method in the LogisticsEntityPostalAddressFormHandler class. After migration, the CodeUpgrade project will contain the LogisticsEntityPostalAddressFormHandler with the *Your Solution*, *Microsoft AX 2012,* and *Microsoft AX* sections to resolve for the showSalesTax() method. The commented Your Solution section shows that the showSalesTax() method was overlayed by adding an additional table to approve showing sales tax from. This overlay is shown between the &lt;isv&gt; tags circled in red below. 
+In many cases where delegates are needed, the code that was formerly overlayed has already been moved to a delegate handler by Microsoft. In these instances, Microsoft created delegates that can be leveraged and the code can be overlayed in a similar manner in the delegate handler. In this scenario, an Independent Software Vendor (ISV) is migrating code from Dynamics  AX 2012 R3 where they have overlayed the showSalesTax() method in the LogisticsEntityPostalAddressFormHandler class. After migration, the CodeUpgrade project will contain the LogisticsEntityPostalAddressFormHandler with the *Your Solution*, *Microsoft AX 2012,* and *Microsoft AX* sections to resolve for the showSalesTax() method. The commented Your Solution section shows that the showSalesTax() method was overlayed by adding an additional table to approve showing sales tax from. This overlay is shown between the &lt;isv&gt; tags circled in red below. 
 
 [![4](./media/41.png)](./media/41.png)
 
-When comparing this overlay with the code from Dynamics AX 2012, this is a simple change. The overlay has added an additional table to the switch statement. 
+When comparing this overlay with the code from Dynamics AX 2012, this is a simple change. The overlay has added an additional table to the switch statement. 
 
 [![5](./media/51.png)](./media/51.png) 
 
-However, the Finance and Operations section does not appear to resemble either of the Dynamics AX 2012 code snippets. 
+However, the Finance and Operations section does not appear to resemble either of the Dynamics AX 2012 code snippets. 
 
 [![6](./media/61.png)](./media/61.png) 
 
@@ -115,7 +114,7 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 ```
 
 
-**Note:** The signature for the delegate declaration, the delegate instance, and the delegate handler must match. We now have to create an instance of the delegate at the point in the code where we would like the delegate handler to be run. The changes in between the &lt;isv&gt; tags represent the added code. 
+**Note:** The signature for the delegate declaration, the delegate instance, and the delegate handler must match. We now have to create an instance of the delegate at the point in the code where we would like the delegate handler to be run. The changes in between the &lt;isv&gt; tags represent the added code. 
 
 ![calculateTotalTax method](media/calculate-total-tax.png)
 
@@ -142,7 +141,7 @@ There are three key ways to find delegates and handlers
 -   Class references
 -   SubscribesTo references
 
-The Metadata search tool, described on the [Metadata search in Visual Studio](..\dev-tools\metadata-search-visual-studio.md) page, is the best way to find either delegates or their handlers. In Visual Studio, go to **Dynamics 365 **&gt; **Metadata Search** to open the metadata search tool. 
+The Metadata search tool, described on the [Metadata search in Visual Studio](../dev-tools/metadata-search-visual-studio.md) page, is the best way to find either delegates or their handlers. In Visual Studio, go to <strong>Dynamics 365 **&gt; **Metadata Search</strong> to open the metadata search tool. 
 
 [![Del15](./media/del15.png)](./media/del15.png) 
 

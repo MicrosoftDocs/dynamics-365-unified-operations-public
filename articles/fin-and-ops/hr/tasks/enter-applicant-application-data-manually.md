@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Enter applicant and application data manually
+title: Manually enter applicant and application data
 description: This procedure shows how to manually maintain information about applicants and their application. 
 author: kherr75
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Enter applicant and application data manually
+# Manually enter applicant and application data
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to manually maintain information about applicants and their application.   You can enter and maintain personal information, interview dates and times, references, competencies, and accommodation requests for applicants. You can also update the status of applicants’ applications for employment and create letters or email messages to communicate with applicants. When you create an applicant record, a person record for that applicant is created in the global address book.  	 The demo data company used to create this procedure is USMF.
 

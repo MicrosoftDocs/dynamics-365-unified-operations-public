@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Maintenance in the Intelligent Data Management Framework (AX 2012)
+title: Maintenance in the Intelligent Data Management Framework (IDMF)
 description: This topic provides information about the database settings in the Intelligent Data Management Framework (IDMF).
 author: kfend
 manager: AnnBe
@@ -30,12 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Maintenance in the Intelligent Data Management Framework (AX 2012)
+# Maintenance in the Intelligent Data Management Framework (IDMF)
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 Database
 --------
@@ -113,7 +110,7 @@ The following tables provide descriptions for the controls in the **Database con
 | **Minimum pool size**                               | The minimum value of the connection pool.                                                                                                                                                                                                        |
 | **Same as production** (**Production replica** tab) | When you select this field, the connection string from the production database is copied to the production replica database. Therefore, the health check queries run against the production database instead of the production replica database. |
 
- 
+
 
 ## Email
 IDMF can send email alerts to configured recipients. This command is used to configure the email functionality. On the toolbar, click **Email** to work with the **Email parameters** window.
@@ -141,7 +138,7 @@ The following tables provide descriptions for the controls in the **Email parame
 | **Username**             | The user name that is used to access the SMTP server. This is an optional field. Enter this value if you want to receive email alerts from IDMF. |
 | **Password**             | The password that is used to access the SMTP server. This is an optional field. Enter this value if you want to receive email alerts from IDMF.  |
 
- 
+
 
 ## Thresholds
 This command lets you determine the threshold values for index fragmentation growth, index-to-data growth ratio, and snapshot-to-snapshot growth ratio. When a table or a measure reaches the threshold value, an alert is generated. By default, the threshold parameter values are 0. Only a threshold parameter containing a non-zero value generates an alert. You can see the alerts in the **Analysis details** workspace. Click **Analysis menu** &gt; **Analysis details command**. You also receive an email message, together with an alert, if you have configured the email functionality. On the toolbar, click **Threshold** to work with the **Configure threshold parameters** window.
@@ -179,7 +176,7 @@ The following tables provide descriptions for the controls in the **Configure th
 | **Measure name**                    | The name of the measure.                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Data size (MB)**                  | A threshold value for the purge tables. When a purge table reaches the specified size, an alert is generated.                                                                                                                                                                                                                                                                                                   |
 
- 
+
 ## Alerts
 This command is used to configure the alerts functionality in IDMF. To receive an email alert, you must configure email parameters from the **Administer** &gt; **Email command**. On the toolbar, click **Alerts** to open the **Configure alerts** window. Select an alert event to generate an alert. The following table describes the alert events you can select.
 
@@ -424,14 +421,14 @@ The following tables provide descriptions for the controls in the **Application 
 <tbody>
 <tr class="odd">
 <td><strong><span class="ui">Validate queries</span></strong></td>
-<td>The <strong><span class="ui">Validate queries</span></strong> button is available only when you start the application for the first time. An invalid query is caused either by a metadata mismatch or by incorrect security keys. When you expand the <strong><span class="ui">Queries</span></strong> node, queries that are not valid appear in red. You must validate the queries before you create an application health check task, because all queries that are not valid are ignored by the task. To validate queries, click <strong><span class="ui">Validate queries</span></strong>, and wait for the validation to be completed. Scroll through the <strong><span class="ui">Queries</span></strong> node, and verify that all the queries are displayed in black.</td>
+<td>The <strong><span class="ui">Validate queries</span></strong> button is available only when you start the application for the first time. An invalid query is caused either by a metadata mismatch or by incorrect security keys. When you expand the <strong><span class="ui">Queries</span></strong> node, queries that are not valid appear in red. You must validate the queries before you create an application health check task, because all queries that are not valid are ignored by the task. To validate queries, click <strong><span class="ui">Validate queries</span></strong>, and wait for the validation to be completed. Scroll through the <strong><span class="ui">Queries</span></strong> node, and verify that all the queries are displayed in black.</td>
 </tr>
 <tr class="even">
 <td><strong><span class="ui">Search</span></strong></td>
 <td>Open the <strong>Health check query search</strong> window. In the <strong>Health check query search</strong> window, follow these steps:
 <ol>
 <li>From the <strong><span class="ui">Search</span></strong> list, select <strong><span class="ui">Query name</span></strong> or <strong><span class="ui">Table name</span></strong>.</li>
-<li>In the <strong><span class="ui">Containing</span></strong> text box, enter the search text. You can use an asterisk (*) as a wildcard character before and after the text. For example, you can search for <span class="ui">*sales</span>, <span class="ui">sales*</span>, or <span class="ui">*sales*</span>.</li>
+<li>In the <strong><span class="ui">Containing</span></strong> text box, enter the search text. You can use an asterisk (<em>) as a wildcard character before and after the text. For example, you can search for <span class="ui"></em>sales</span>, <span class="ui">sales<em></span>, or <span class="ui"></em>sales*</span>.</li>
 <li>Click <strong><span class="ui">Find now</span></strong> to begin the search. Depending on your selection in step 1, IDMF searches for matching values in table names or query names. The <strong><span class="ui">Query name</span> data grid</strong> displays matching results.</li>
 <li>Double-click the query of interest from the result set. The <strong>Health check query search</strong> window closes and takes you to the query node that matches your selection.</li>
 </ol></td>
@@ -594,7 +591,7 @@ This section describes how to permanently delete recycled records after a succes
 2.  Run steps 2 and 3 from the previous section to create the stored procedures and obtain the traceid.
 3.  In SQL Server Management Studio, click **New Query**. Connect to the production database by selecting the production database from the SQL Editor toolbar. Replace the parameter values in the query with appropriate values from your environment and the traceid from the previous step. Run the stored procedure.
 
-        EXEC  DELETE_PURGERECORDS 
+        EXEC  DELETE_PURGERECORDS 
         @MANAGEMENTSERVER = `Server Name’,
         @MANAGEMENTDB= `Management DB’,
         @JOBIDENTIFIER = ‘Selected TRACEID from Step 1’

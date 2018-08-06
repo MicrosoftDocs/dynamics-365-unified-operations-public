@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Debug X++ against a copy of a production database
+title: Debug X++ against copies of production databases
 description: This topic explains how to configure X++ debugging so that you can investigate issues in the production environment.
 author: tariqbell
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Debug X++ against a copy of a production database
+# Debug X++ against copies of production databases
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure X++ debugging so that you can investigate issues in the production environment. For this procedure, you make a copy of the production database and then configure a developer environment to connect to the copy.
 
@@ -58,7 +58,9 @@ Before you begin to configure X++ debugging in a production environment, note th
 - You can't debug directly against the production environment, because debugging might cause data corruption. However, developers can manipulate values at runtime. Alternatively, in their own instance, developers can make a code change that changes data.
 
     > [!NOTE] 
-    > The developer environment that is used for debugging must exist in the same LCS project as the sandbox environment. This requirement helps strengthen the security of the sandbox database. By default, there is a firewall restriction on both the sandbox and production SQL databases. This restriction allows only servers in those environments to connect to the databases. To enable debugging, a firewall exception is added so that a developer environment can connect to the sandbox database.
+
+    > The developer environment that is used for debugging must exist in the same LCS project as the sandbox environment, and both of them must be Microsoft managed. This requirement helps strengthen the security of the sandbox database. By default, there is a firewall restriction on both the sandbox and production SQL databases. This restriction allows only servers in those environments to connect to the databases. To enable debugging, a firewall exception is added so that a developer environment can connect to the sandbox database.
+
 
 - A one-time manual change to the developer environment is required, so that the IP address of the environment can connect to the sandbox database. Submit a request to the Microsoft Service Engineering Team (DSE) to allow the IP address.
 - We recommend that you not use a build environment for debugging. Otherwise, there is a risk that the developer's activities on the computer might break the automated build process.

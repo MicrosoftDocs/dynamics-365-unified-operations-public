@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 # Manage Bing Maps for your organization
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Learn how you can manage Bing Maps for your application. When Bing Maps is turned on, people can view a map of a store, warehouse, or other location when creating orders. 
 

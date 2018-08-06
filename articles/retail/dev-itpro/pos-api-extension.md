@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Call an API from a POS extension
+title: Call point of sale (POS) APIs or operations from POS extensions
 description: The Retail POS APIs help you to build extensions or add new features to POS. 
 author: mugunthanm
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Call a POS API or operation from a POS extension
+# Call point of sale (POS) APIs or operations from POS extensions
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The Retail POS APIs help you to build extensions or add new features to POS. For example, if you wanted to add new features that would retrieve product details, change a price, or add an item to a cart, you would call the POS APIs to do that work. The POS APIs simplify the extension pattern and provide continuous support to build the extensions. The extension patterns for Commerce Runtime (RT), POS, and Hardware Station now all use the request/response pattern. 
 
@@ -52,27 +52,27 @@ Many new APIs have been added. You can find a list of all the APIs in the file *
 ### How to consume an API in an extension
 To consume APIs in an extension, follow these steps:
 
-1.  Open Visual Studio 2015 in administrator mode.
-2.  Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
-3.  Under the **POS.Extensions** project create a new folder named **POSAPIExtension**.
-4.  Under **POSAPIExtension**, create a new folder named **TriggersHandlers**.
-5.  In the **TriggersHandlers** folder, add a new Typescript file and name it **PreEndTransactionTrigger.ts**.
-6.  Add the following **import** statements to import the relevant entities and context.
-    ```Typescript
-    import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
-    import { ClientEntities, ProxyEntities } from "PosApi/Entities";
-    import { ObjectExtensions, StringExtensions } from "PosApi/TypeExtensions";
-    import {
-        GetCurrentCartClientRequest, GetCurrentCartClientResponse,
-        SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse
-    } from "PosApi/Consume/Cart";
+1. Open Visual Studio 2015 in administrator mode.
+2. Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
+3. Under the **POS.Extensions** project create a new folder named **POSAPIExtension**.
+4. Under **POSAPIExtension**, create a new folder named **TriggersHandlers**.
+5. In the **TriggersHandlers** folder, add a new Typescript file and name it **PreEndTransactionTrigger.ts**.
+6. Add the following **import** statements to import the relevant entities and context.
+   ```Typescript
+   import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
+   import { ClientEntities, ProxyEntities } from "PosApi/Entities";
+   import { ObjectExtensions, StringExtensions } from "PosApi/TypeExtensions";
+   import {
+       GetCurrentCartClientRequest, GetCurrentCartClientResponse,
+       SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse
+   } from "PosApi/Consume/Cart";
 
-    import {
-        GetCustomerClientRequest, GetCustomerClientResponse,
-    } from "PosApi/Consume/Customer";
+   import {
+       GetCustomerClientRequest, GetCustomerClientResponse,
+   } from "PosApi/Consume/Customer";
 
-    import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse } from "PosApi/Consume/Dialogs";
-    ```
+   import { ShowMessageDialogClientRequest, ShowMessageDialogClientResponse } from "PosApi/Consume/Dialogs";
+   ```
 7. Create a new class called **PreEndTransactionTrigger** and extend it from **PreEndTransactionTrigger**.
     ```Typescript
         export default class PreEndTransactionTrigger extends Triggers.PreEndTransactionTrigger { }
@@ -336,7 +336,7 @@ To consume APIs in an extension, follow these steps:
         ]
     }
     ```
- **Note:** The extension.json file must contain at least two extensions folder names so don’t remove the **SampleExtensions** folder name.
+    **Note:** The extension.json file must contain at least two extensions folder names so don’t remove the **SampleExtensions** folder name.
 
 13. Open **tsconfig.json** and comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions, if you want to include any extensions that are part of the POS, then you need add the extension folder name and comment out the extension from the extension list as shown.
 

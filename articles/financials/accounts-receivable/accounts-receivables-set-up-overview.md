@@ -32,13 +32,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure Accounts receivables and Credit and collections
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.
 
-You can set up customer groups, customers, posting profiles, various payment options, interest notes, collection letters, commissions, parameters regarding customers, charges, deliveries and destinations, bills of exchange, and other types of Accounts receivable and Credit and collections information.
-The following table lists the pages that support the configuration and maintenance of Accounts receivable and Credit and collections. The table entries are organized by task and then alphabetically by page name.
+You can set up customer groups, customers, posting profiles, various payment options, interest notes, collection letters, commissions, parameters regarding customers, charges, deliveries and destinations, bills of exchange, and other types of Accounts receivable and Credit and collections information.
+The following table lists the pages that support the configuration and maintenance of Accounts receivable and Credit and collections. The table entries are organized by task and then alphabetically by page name.
 
 > [!NOTE]
 > You cannot navigate to some pages in the following table unless data or parameter settings have been entered in other pages.
@@ -111,7 +110,7 @@ The following table lists the pages that support the configuration and maintenan
 |                                                      | NSF information.                     | Set up NSF information on the bank account that will be used when a payment is marked as an NSF transaction on the Collections page.                                                                                                                                              |
 |                                                      | Salesperson information              | Set up the email address for salespersons. These addresses will appear on the Collections page and you can use them to send email to a salesperson from that page.                                                                                                                |
 
- 
+
 For more information, see [Credit and collections in Accounts receivable](collections-credit-accounts-receivable.md).
 
 

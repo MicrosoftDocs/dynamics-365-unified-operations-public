@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Accounts payable home page
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of Accounts payable. 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Code Upgrade Tool User Guide
+title: Code Upgrade Service user guide
 description: The Code Upgrade Service has been deprecated. Use the Upgrade analysis tool. 
 author: kfend
 manager: AnnBe
@@ -30,12 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Code Upgrade Tool User Guide (AX 2012)
+# Code Upgrade Service user guide
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 The Code Upgrade Service has been deprecated. Use the Upgrade analysis tool. For more information, see [Upgrade analysis (Lifecycle Services, LCS)](upgrade-analysis-lcs.md).
 [Go to Lifecycle Services](https://lcs.dynamics.com).

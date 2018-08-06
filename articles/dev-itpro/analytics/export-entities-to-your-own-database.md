@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Bring your own database
+title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/30/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Bring your own database
+# Bring your own database (BYOD)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how administrators can export data entities from Microsoft Dynamics 365 for Finance and Operations into their own Microsoft Azure SQL database. This feature is also known as *bring your own database* (BYOD). The BYOD feature was released in Microsoft Dynamics AX with platform update 2 (August 2016). Minor improvements and bug fixes have been included in subsequent platform updates.
 
@@ -154,13 +154,19 @@ You can use the **Export** page to export data from Finance and Operations into 
 
 ![Export page](media/091eb0da74bf94c620c3785bca92b41e.png)
 
-When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the Finance and Operations database and specify an appropriate change tracking option, as described earlier in this topic.
-
-If you select to do an incremental push, whenever a new record is inserted, or a record is added, the corresponding change will be reflected in the destination entity. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with platform update 8, records that are deleted in the source aren't updated in the destination.
-
-Full push truncates the table and inserts all the records from the selected entity.
-
 You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
+
+### Incremental export
+When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the Finance and Operations database and specify an appropriate change tracking option, as described earlier in this topic. 
+
+>[!NOTE]
+> A full push deletes all existing records from an entity and then inserts the current set of records from the selected entity.
+
+If you select an incremental push, the first push is always going to be a full push. This is because SQL needs to know which records have been 'tracked' in order to be able to track subsequent changes. Whenever a new record is inserted, or a record is added or deleted, the corresponding change will be reflected in the destination entity. 
+
+Because the first push is always a full push, we do not recomend that you do an explicit full push before you enable change tracking. 
+
+We recommend that you first enable change tracking and schedule a export job with incremental push. This will take care of the first full push and the subsequent incremental exports.
 
 ### Known limitations
 

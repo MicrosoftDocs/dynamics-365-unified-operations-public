@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Installation guide 
+title: Intelligent Data Management Framework (IDMF) installation guide
 description: This topic describes the system requirements and steps to install the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF). 
 author: kfend
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Installation Guide for the Intelligent Data Management Framework (AX 2012)
+# Intelligent Data Management Framework (IDMF) installation guide
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the system requirements and steps to install the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF). 
 
@@ -47,20 +46,20 @@ To benefit from this topic, you must have knowledge in the following areas:
 
 -   Microsoft Dynamics AX application and system administration
 -   Microsoft SQL Server database administration, backup, recovery, and performance tuning
--   Microsoft Windows Server administration, backup, recovery, and performance tuning
+-   Microsoft Windows Server administration, backup, recovery, and performance tuning
 
 ## Before you begin
 During the installation, you are prompted to provide information about the following databases:
 
--   The production database. The production database is the Microsoft Dynamics AX database in the production environment.
--   The production replica database. The application health analysis requires many queries to be run to capture information from the Microsoft Dynamics AX modules. These application queries are extensive and, if applied to a production database, adversely affect the response time for online users. Therefore, by default, these queries are run against the production replica database. The accuracy of the application health check depends on how well the application data in the production replica database mirrors that in the production database. Verify that you have a production replica database in place with relevant application data before you begin the installation process. Develop a synchronization strategy to keep your production replica database as close to the production database as possible.
--   The management database. The Setup program creates a new database, referred to as the management database, based on the information you provide during installation. The framework uses this database for internal use. You must provide a unique name for this database. We recommend that you use a name that easily identifies this database as the management database for the framework. The AOS service account must have **datareader**, **datawriter**, and **ddladmin** rights on the management database. 
-    > [!NOTE]
-    > IDMF stores the Microsoft Dynamics AX metadata information in the management database. When you run the post-installation tasks, IDMF synchronizes the metadata information from the production database with the management database. You must synchronize the production database with the management database whenever you change the metadata in your Microsoft Dynamics AX application. To synchronize the databases, follow the instructions in the **Post-installation tasks** section in this topic.
--   The Setup program creates a new database, referred to as the archive database, based on the information you provide during installation. The framework uses the archive database to store records that are moved from the production database by the archive tasks. 
-    > [!NOTE]
-    > You must configure an Application Object Server (AOS) instance to connect with the archive database to view archived transactions. Make sure that users have only read access to the archive database. Modifying archived transactions causes data inconsistency. IDMF cannot restore data from an archive database that has been modified.
--   You must have an AOS configured to run as a batch server before you can use the IDMF archive functionality. For more information, see [Configure an AOS instance as a batch server](http://technet.microsoft.com/library/74687f8d-fd55-4a99-bea9-835655905fb4(AX.60).aspx).
+- The production database. The production database is the Microsoft Dynamics AX database in the production environment.
+- The production replica database. The application health analysis requires many queries to be run to capture information from the Microsoft Dynamics AX modules. These application queries are extensive and, if applied to a production database, adversely affect the response time for online users. Therefore, by default, these queries are run against the production replica database. The accuracy of the application health check depends on how well the application data in the production replica database mirrors that in the production database. Verify that you have a production replica database in place with relevant application data before you begin the installation process. Develop a synchronization strategy to keep your production replica database as close to the production database as possible.
+- The management database. The Setup program creates a new database, referred to as the management database, based on the information you provide during installation. The framework uses this database for internal use. You must provide a unique name for this database. We recommend that you use a name that easily identifies this database as the management database for the framework. The AOS service account must have **datareader**, **datawriter**, and **ddladmin** rights on the management database. 
+  > [!NOTE]
+  > IDMF stores the Microsoft Dynamics AX metadata information in the management database. When you run the post-installation tasks, IDMF synchronizes the metadata information from the production database with the management database. You must synchronize the production database with the management database whenever you change the metadata in your Microsoft Dynamics AX application. To synchronize the databases, follow the instructions in the **Post-installation tasks** section in this topic.
+- The Setup program creates a new database, referred to as the archive database, based on the information you provide during installation. The framework uses the archive database to store records that are moved from the production database by the archive tasks. 
+  > [!NOTE]
+  > You must configure an Application Object Server (AOS) instance to connect with the archive database to view archived transactions. Make sure that users have only read access to the archive database. Modifying archived transactions causes data inconsistency. IDMF cannot restore data from an archive database that has been modified.
+- You must have an AOS configured to run as a batch server before you can use the IDMF archive functionality. For more information, see [Configure an AOS instance as a batch server](http://technet.microsoft.com/library/74687f8d-fd55-4a99-bea9-835655905fb4(AX.60).aspx).
 
 Determine the location and initial size of the data files and log files for the archive, management, and production replica databases. Make sure that the initial size is sufficient for optimal performance, and that the location provides resources for future growth. For more information about database configuration, see [Configure SQL Server and storage settings](http://technet.microsoft.com/library/83931d0a-2d75-4cc8-b29b-129ebd5b27e5(AX.60).aspx).
 
@@ -97,9 +96,9 @@ You must have the following software installed on the computer before you instal
 
 | Software                                                           | Comment                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Microsoft .NET Framework 4.5                                       |                                                                                                                                                                                                                                                                  |
+| Microsoft .NET Framework 4.5                                       |                                                                                                                                                                                                                                                                  |
 | Windows Installer 3.1 or a later version                           |                                                                                                                                                                                                                                                                  |
-| Microsoft Dynamics AX Windows client                               | For your version of Microsoft Dynamics AX.                                                                                                                                                                                                                       |
+| Microsoft Dynamics AX Windows client                               | For your version of Microsoft Dynamics AX.                                                                                                                                                                                                                       |
 | Microsoft Dynamics AX .NET Business Connector                      | AX 2009, Microsoft Dynamics AX 2012 up to AX 2012 R2                                                                                                                                                                                                             |
 | SQL Server Integration Services runtime, and the client components | The same version, including service packs, as the SQL Server database that is used. Use the SQL Server Setup program to install these components on the computer. You do not have to install other SQL Server components, such as the SQL Server database engine. |
 | Microsoft Office 2007 or later (optional)                          | Only required if you use the export to Excel functionality.                                                                                                                                                                                                      |
@@ -157,8 +156,8 @@ Be sure that the following prerequisites are in place before you install IDMF:
 -   IDMF is only supported on AX 2009, and on Microsoft Dynamics AX 2012 up to AX 2012 R2.
 -   The computer where you install IDMF must meet the hardware and software requirements detailed in the **Software requirements** section in this topic.
 -   You must update the cross-reference information in the Microsoft Dynamics AX database:
-    -   In the Microsoft Dynamics AX 2012 Windows client, in the Development workspace, click **Tools** &gt; **Cross-reference** &gt; **Periodic** &gt; **Update**. In the **Update cross-reference (w/recompile)** form, verify that the **Update data model** field is selected. Click **OK**.
-    -   In earlier versions of the Microsoft Dynamics AX Windows client, click **Microsoft Dynamics AX** &gt; **Tools** &gt; **Development Tools** &gt; **Cross-reference** &gt; **Periodic** &gt; **Update**. In the **Update cross-reference (w/recompile)** form, verify that the **Update Data Model** and **Update type hierarchy** fields are selected. Click **OK**. Wait for the Infolog message, and verify that the cross-reference update is successful.
+    -   In the Microsoft Dynamics AX 2012 Windows client, in the Development workspace, click **Tools** &gt; **Cross-reference** &gt; **Periodic** &gt; **Update**. In the **Update cross-reference (w/recompile)** form, verify that the **Update data model** field is selected. Click **OK**.
+    -   In earlier versions of the Microsoft Dynamics AX Windows client, click **Microsoft Dynamics AX** &gt; **Tools** &gt; **Development Tools** &gt; **Cross-reference** &gt; **Periodic** &gt; **Update**. In the **Update cross-reference (w/recompile)** form, verify that the **Update Data Model** and **Update type hierarchy** fields are selected. Click **OK**. Wait for the Infolog message, and verify that the cross-reference update is successful.
 
 ### Rights required for installation
 
@@ -251,7 +250,7 @@ Before you install IDMF, make sure that the account that you log on with has app
 Check the following settings and services before you start the installation process:
 1.  On the computer where you plan to install IDMF:
     1.  Check the connection to Application Object Server (AOS). IDMF connects to the AOS instance specified in the active configuration in the Microsoft Dynamics AX configuration utility (**Start** &gt; **Administrative Tools** &gt; **Microsoft Dynamics AX 2012 Configuration**).
-    2.  Start the Microsoft Dynamics AX Windows client, and verify successful access to the Microsoft Dynamics AX application.
+    2.  Start the Microsoft Dynamics AX Windows client, and verify successful access to the Microsoft Dynamics AX application.
     3.  Verify that the SQL Server Integration Services service and the Distributed Transaction Coordinator service are running.
 
 2.  Verify that the SQL Server service is running on the database server.
@@ -299,11 +298,11 @@ You must complete the post-installation tasks before you start IDMF console. The
 
 Follow these steps to complete the post-installation tasks:
 
-1.  Verify that the Microsoft Dynamics AX client starts and opens the Microsoft Dynamics AX application successfully.
-2.  Verify that you have updated the cross-reference system in the Microsoft Dynamics AX application. Without an updated cross-reference system, the post-installation process fails with an error message. See the **Installation prerequisites** section in this topic for instructions. 
-    > [!NOTE]
-    > You must run the post-installation tasks as an administrator.
-3.    Click **Start** &gt; **All Programs** &gt; **Microsoft Dynamics AX Intelligent Data Management Framework**. Right-click **Post-installation tasks**, and click **Run as Administrator** to complete the post-installation tasks. You can also navigate to the installation location, right- click **PostInstallSetup.exe**, and click **Run as Administrator**. The default installation location is \Program Files\Microsoft Dynamics AX Intelligent Data Management Framework.
+1. Verify that the Microsoft Dynamics AX client starts and opens the Microsoft Dynamics AX application successfully.
+2. Verify that you have updated the cross-reference system in the Microsoft Dynamics AX application. Without an updated cross-reference system, the post-installation process fails with an error message. See the **Installation prerequisites** section in this topic for instructions. 
+   > [!NOTE]
+   > You must run the post-installation tasks as an administrator.
+3. Click **Start** &gt; **All Programs** &gt; **Microsoft Dynamics AX Intelligent Data Management Framework**. Right-click **Post-installation tasks**, and click **Run as Administrator** to complete the post-installation tasks. You can also navigate to the installation location, right- click **PostInstallSetup.exe**, and click **Run as Administrator**. The default installation location is \Program Files\Microsoft Dynamics AX Intelligent Data Management Framework.
 
 The post-installation checklist application runs in a Command Prompt window. The application displays prompts in white. You must respond to the questions in white. Each starting step is displayed in yellow. Optional missing configuration details are also displayed in yellow. Each successfully completed step is displayed in green. Each unsuccessfully completed step is displayed in red. The post-installation checklist application performs the following actions:
 
@@ -326,32 +325,32 @@ After the successful completion of the post-installation tasks, start IDMF from 
 3.  Verify that IDMF for Microsoft Dynamics AX service is running.
 
 You see the **Framework checklist** dialog box every time you start the framework, until you successfully complete the following checklist. Click **OK** to complete the following checklist in the **Scheduled tasks** window:
-1.  Successfully complete the baseline analysis snapshot of the production database. On the menu bar, click **Schedule**. Follow these steps in the **Scheduled tasks** window to create a baseline analysis snapshot of the database. 
-    1.  In the **Task details** pane, enter values in the **Name** and **Description** fields for the task.
-    2.  On the **Schedule** tab, select **One time only** from the **Frequency** list. Select or enter values in the **Start date** and **Time** fields.
-    3.  Click **Save**.
-    4.  When prompted to validate the health check queries, click **No**.
-    5.  Click **Status** &gt; **Refresh** to refresh the task. Wait for the task to be completed with a **Pass** status. You are ready to use the **Analysis** menu for the database analysis.
+1. Successfully complete the baseline analysis snapshot of the production database. On the menu bar, click **Schedule**. Follow these steps in the **Scheduled tasks** window to create a baseline analysis snapshot of the database. 
+   1.  In the **Task details** pane, enter values in the **Name** and **Description** fields for the task.
+   2.  On the **Schedule** tab, select **One time only** from the **Frequency** list. Select or enter values in the **Start date** and **Time** fields.
+   3.  Click **Save**.
+   4.  When prompted to validate the health check queries, click **No**.
+   5.  Click **Status** &gt; **Refresh** to refresh the task. Wait for the task to be completed with a **Pass** status. You are ready to use the **Analysis** menu for the database analysis.
 
-2.  Schedule and complete the health check analysis. Follow these steps to create the baseline health check analysis. 
-    1.  Click **Administer** &gt; **Application health check** to work with the health check queries. In the **Application health check queries** window, click **Validate queries**, and wait for the validation to be completed. Upon successful validation, the **Validate queries** button becomes hidden, and all the queries in the **Queries** node appear in black.
-    2.  Click **Schedule** &gt; **Ledger periods** to create the ledger periods for the health check analysis. Enter the required information in the **Task details** pane of the **Scheduled tasks** window, and then click **Save**. For this task, select **One time only** from the **Frequency** list. Wait for the ledger periods schedule to be completed successfully before going to the next step.
-    3.  Click **Schedule** &gt; **System health check** to create the baseline health check analysis task. This task must start after successful completion of the ledger periods task that you created in the previous step. Enter the required information in the **Task details** pane of the **Scheduled tasks** window, and then click **Save**. For this task, select **One time only** from the **Frequency** list.
-    4.  Click **Status** &gt; **Refresh** to refresh the task. Verify that both the ledger periods task and the baseline health check analysis tasks have been completed with a **Pass** status. You are now ready to use the **Analysis** menu for health check analysis. 
+2. Schedule and complete the health check analysis. Follow these steps to create the baseline health check analysis. 
+   1.  Click **Administer** &gt; **Application health check** to work with the health check queries. In the **Application health check queries** window, click **Validate queries**, and wait for the validation to be completed. Upon successful validation, the **Validate queries** button becomes hidden, and all the queries in the **Queries** node appear in black.
+   2.  Click **Schedule** &gt; **Ledger periods** to create the ledger periods for the health check analysis. Enter the required information in the **Task details** pane of the **Scheduled tasks** window, and then click **Save**. For this task, select **One time only** from the **Frequency** list. Wait for the ledger periods schedule to be completed successfully before going to the next step.
+   3.  Click **Schedule** &gt; **System health check** to create the baseline health check analysis task. This task must start after successful completion of the ledger periods task that you created in the previous step. Enter the required information in the **Task details** pane of the **Scheduled tasks** window, and then click **Save**. For this task, select **One time only** from the **Frequency** list.
+   4.  Click **Status** &gt; **Refresh** to refresh the task. Verify that both the ledger periods task and the baseline health check analysis tasks have been completed with a **Pass** status. You are now ready to use the **Analysis** menu for health check analysis. 
 
-3.  This step is only required if you plan to use the archive functionality. Synchronize metadata with the archive database. The metadata synchronization task copies the metadata from the production database to the archive database. You must complete the metadata synchronization task successfully before going to the next step. Follow these steps to create a metadata synchronization task:
-    1.  Click **Schedule** &gt; **Metadata** to work with the metadata synchronization task. Enter the required information in the **Task details** pane of the **Scheduled tasks** window, and then click **Save**. For this task, select **One time only** from the **Frequency** list. **Note**: Consider creating a recurring task to synchronize the metadata between the production and archive databases, to keep the archive database in a consistent state.
-    2.  Click **Status** &gt; **Refresh** to refresh the task. Verify that the metadata synchronization task has been completed with a **Pass** status.
+3. This step is only required if you plan to use the archive functionality. Synchronize metadata with the archive database. The metadata synchronization task copies the metadata from the production database to the archive database. You must complete the metadata synchronization task successfully before going to the next step. Follow these steps to create a metadata synchronization task:
+   1.  Click **Schedule** &gt; **Metadata** to work with the metadata synchronization task. Enter the required information in the **Task details** pane of the **Scheduled tasks** window, and then click **Save**. For this task, select **One time only** from the **Frequency** list. **Note**: Consider creating a recurring task to synchronize the metadata between the production and archive databases, to keep the archive database in a consistent state.
+   2.  Click **Status** &gt; **Refresh** to refresh the task. Verify that the metadata synchronization task has been completed with a **Pass** status.
 
-4.  This step is only required if you plan to use the archive functionality. Replicate master data from the production database to the archive database. You must complete the previous step before creating a master data replication task. The master data replication task copies the master data tables from the production database to the archive database. Follow these steps to create a master data replication task:
+4. This step is only required if you plan to use the archive functionality. Replicate master data from the production database to the archive database. You must complete the previous step before creating a master data replication task. The master data replication task copies the master data tables from the production database to the archive database. Follow these steps to create a master data replication task:
 
-    1.  Click **Schedule** &gt; **Master data** to work with the master data replication task. Enter the required information in the **Task details** pane of the **Scheduled tasks** window, and then click **Save**. For this task, select **One time only** from the **Frequency** list. **Note**: Consider creating a recurring task to synchronize the master data tables between the production and archive databases, to keep the archive database in a consistent state.
-     2.  Click **Status** &gt; **Refresh** to refresh the task. Verify that the master data replication task has been completed with a **Pass** status.
+   1. Click **Schedule** &gt; **Master data** to work with the master data replication task. Enter the required information in the **Task details** pane of the **Scheduled tasks** window, and then click **Save**. For this task, select **One time only** from the **Frequency** list. **Note**: Consider creating a recurring task to synchronize the master data tables between the production and archive databases, to keep the archive database in a consistent state.
+      2.  Click **Status** &gt; **Refresh** to refresh the task. Verify that the master data replication task has been completed with a **Pass** status.
 
-5.  Verify that the tasks from the previous steps are completed successfully with a **Pass** status. Now you are ready to work with IDMF.
+5. Verify that the tasks from the previous steps are completed successfully with a **Pass** status. Now you are ready to work with IDMF.
 
 ## Removing IDMF
-IDMF can be uninstalled by using the **Control Panel**. The uninstall program does not delete the management database, production replica database, or archive database. Optionally, you can back up and then delete these databases manually.
+IDMF can be uninstalled by using the **Control Panel**. The uninstall program does not delete the management database, production replica database, or archive database. Optionally, you can back up and then delete these databases manually.
 
 ## Troubleshoot installation issues
 This section provides information to help you troubleshoot issues you may encounter when running the **Setup Wizard**.
@@ -400,7 +399,7 @@ You may encounter the following common error messages from the post-installation
 ### Metadata synchronization fails
 
 You may encounter the error message, "Inner exception: The operation failed. The class &lt;xxxx&gt; does not exist. Metadata synchronization failed." Here, &lt;xxxx&gt; is the name of the class. This issue is caused by the Microsoft Dynamics AX application cache, called Axapta Object Cache (AOC), on the Windows clients in a three-tier configuration. You must clear the cache, and then follow the instruction provided in the **Manually running the post-installation tasks** section in this topic. **Clear the cache**
-1.  Start the Microsoft Dynamics AX Windows client.
+1.  Start the Microsoft Dynamics AX Windows client.
 2.  For Microsoft Dynamics AX 2012, on the **Tools** &gt; **Caches** menu, click each of the following menu items: **Refresh Dictionary**, **Refresh Data**, **Refresh AOD**.
 3.  For earlier versions of Microsoft Dynamics AX, on the **Microsoft Dynamics AX** &gt;**Tools** &gt; **Development Tools** &gt; **Application objects** menu, click each of the following menu items: **Refresh Dictionary**, **Refresh Data**, **Refresh AOD**.
 
@@ -410,19 +409,19 @@ You may encounter the message, "ODBC operation failed. Unable to log on to the d
 Manually running the post-installation tasks
 
 Follow these steps to run the post-installation tasks manually:
-1.  Copy all the label files in the folder from &lt;Data Management Framework installation folder&gt;XPOLabels&lt; version&gt; to the Microsoft Dynamics AX application folder. The default IDMF installation folder is C:\Program Files\Microsoft Dynamics AX Intelligent Data Management Framework.
-2.  After the XPO is successfully imported, modify the job **DMTPopulateMetadataJob** in the Application Object Tree (AOT). Enter appropriate values for the management database server name and management database name, and then run the job. This job retrieves metadata and system information from the Microsoft Dynamics AX application and stores it in the management database. IDMF retrieves metadata information from the management database for its use. **Note**: You must run this job when the Microsoft Dynamics AX application metadata changes, to synchronize the management database with the production database.
-3.  If the job in the previous step has been completed successfully, the following tables contain records. Query the management database to verify that these tables are not empty.
-    -   **AXAOTENUMINFO**
-    -   **AXAOTTABLEINFO**
-    -   **AXAOTFIELDSINFO**
-    -   **AXAOTINDEXINFO**
-    -   **AXAOTTABLERELATION**
+1. Copy all the label files in the folder from &lt;Data Management Framework installation folder&gt;XPOLabels&lt; version&gt; to the Microsoft Dynamics AX application folder. The default IDMF installation folder is C:\Program Files\Microsoft Dynamics AX Intelligent Data Management Framework.
+2. After the XPO is successfully imported, modify the job **DMTPopulateMetadataJob** in the Application Object Tree (AOT). Enter appropriate values for the management database server name and management database name, and then run the job. This job retrieves metadata and system information from the Microsoft Dynamics AX application and stores it in the management database. IDMF retrieves metadata information from the management database for its use. **Note**: You must run this job when the Microsoft Dynamics AX application metadata changes, to synchronize the management database with the production database.
+3. If the job in the previous step has been completed successfully, the following tables contain records. Query the management database to verify that these tables are not empty.
+   -   **AXAOTENUMINFO**
+   -   **AXAOTTABLEINFO**
+   -   **AXAOTFIELDSINFO**
+   -   **AXAOTINDEXINFO**
+   -   **AXAOTTABLERELATION**
 
-4.  Open and run the job **DMTAddEnumValue** in the Application Object Tree (AOT). This job adds an enum value, **DMTArchiveSummary**, to the enums **LedgerTransType** and **InventTransType**. IDMF uses the enum **DMTArchiveSummary** during the archival process.
- > [!NOTE]
- > You must perform this step before you continue with the next step.
-5.  Synchronize the database. In the Microsoft Dynamics AX Windows client, click **Application Object Tree** on the toolbar. In the AOT window, right-click the **Data Dictionary** node, and then select **Synchronize**.
-6.  Navigate to C:\Program Files\Microsoft Dynamics AX Intelligent Data Management Framework\XPO. This folder contains X++ project (XPO). Using the Microsoft Dynamics AX client, import the Summation XPO file. IDMF uses the Summation XPO file when archiving data or restoring archived data, to make adjusting entries to Ledger, Inventory and Bank transactions.
+4. Open and run the job **DMTAddEnumValue** in the Application Object Tree (AOT). This job adds an enum value, **DMTArchiveSummary**, to the enums **LedgerTransType** and **InventTransType**. IDMF uses the enum **DMTArchiveSummary** during the archival process.
+   > [!NOTE]
+   > You must perform this step before you continue with the next step.
+5. Synchronize the database. In the Microsoft Dynamics AX Windows client, click **Application Object Tree** on the toolbar. In the AOT window, right-click the **Data Dictionary** node, and then select **Synchronize**.
+6. Navigate to C:\Program Files\Microsoft Dynamics AX Intelligent Data Management Framework\XPO. This folder contains X++ project (XPO). Using the Microsoft Dynamics AX client, import the Summation XPO file. IDMF uses the Summation XPO file when archiving data or restoring archived data, to make adjusting entries to Ledger, Inventory and Bank transactions.
 
 

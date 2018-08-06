@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Copy a Finance and Operations database – SQL Server to production Azure SQL
+title: Copy Finance and Operations databases from SQL Server to production Azure SQL Database environments
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from a SQL Server–based development, build, or demo environment (Tier 1 or one-box) to an Azure SQL database–based sandbox UAT environment (Tier 2 or higher).
 author: maertenm
 manager: AnnBe
-ms.date: 03/30/2018
+ms.date: 07/09/2018
 
 ms.topic: article
 ms.prod: 
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment
+# Copy Finance and Operations databases from SQL Server to production Azure SQL Database environments
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an environment that is based on Microsoft SQL Server (a development, build or demo environment, which is also known as a Tier 1 or one-box environment) to an environment that is based on a Microsoft Azure SQL database (a sandbox user acceptance testing \[UAT\] environment, Tier 2 or higher).
 
@@ -119,6 +119,7 @@ Run the following script against the AxDB\_CopyForExport database that you creat
 - Set the **SysGlobalConfiguration** flag to inform Finance and Operations that the database is Azure-based.
 - Remove a reference to tempDB in the XU\_DisableEnableNonClusteredIndexes procedure. References to tempDB aren't allowed in an Azure SQL database. The database synchronization process will re-create the reference later.
 - Drop users, because Microsoft Windows users are forbidden in Azure SQL databases. Other users must be re-created later, so that they're correctly linked to the appropriate sign-in on the target server.
+- Clear encrypted hardware profile merchand properties
 
 A successful export and import of the database requires all these changes.
 
@@ -132,6 +133,8 @@ set value = 1
 where name = 'TEMPTABLEINAXDB'
 
 drop procedure XU_DisableEnableNonClusteredIndexes
+drop procedure if exists SP_ConfigureTablesForChangeTracking
+drop procedure if exists SP_ConfigureTablesForChangeTracking_V2
 drop schema [NT AUTHORITY\NETWORK SERVICE]
 drop user [NT AUTHORITY\NETWORK SERVICE]
 drop user axdbadmin
@@ -140,6 +143,8 @@ drop user axmrruntimeuser
 drop user axretaildatasyncuser
 drop user axretailruntimeuser
 drop user axdeployextuser
+-- Clear encrypted hardware profile merchand properties
+update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUREMERCHANTPROPERTIES is not null
 ```
 
 ## Export the database from SQL Server
@@ -185,10 +190,16 @@ Here is an explanation of the parameters:
 - **sf (source file)** – The path and name of the file to import from.
 - **tu (target user)** – The SQL user name for the target Azure SQL database instance. We recommend that you use the standard **sqladmin** user. You can retrieve the password for this user from your LCS project.
 - **tp (target password)** – The password for the target Azure SQL database user.
-- **DatabaseServiceObjective** – The pricing tier of the database. Default sandbox UAT environments for Finance and Operations use P2.
+- **DatabaseServiceObjective** - Specifies the performance level of the database such as S1, P2, or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. To query the service level objective of the current database, run the following query.
+  ```
+  SELECT  d.name,   
+     slo.*    
+  FROM sys.databases d   
+  JOIN sys.database_service_objectives slo    
+  ON d.database_id = slo.database_id;  
+  ```
 
 You will receive the following warning message. You can safely ignore it.
-
 > A project which specifies SQL Server 2016 as the target platform may experience compatibility issues with Microsoft Azure SQL Database v12.
 
 
@@ -239,6 +250,7 @@ ALTER DATABASE SCOPED CONFIGURATION  SET MAXDOP=2
 ALTER DATABASE SCOPED CONFIGURATION  SET LEGACY_CARDINALITY_ESTIMATION=ON
 ALTER DATABASE SCOPED CONFIGURATION  SET PARAMETER_SNIFFING= ON
 ALTER DATABASE SCOPED CONFIGURATION  SET QUERY_OPTIMIZER_HOTFIXES=OFF
+
 ALTER DATABASE <imported database name> SET COMPATIBILITY_LEVEL = 130;
 ALTER DATABASE <imported database name> SET QUERY_STORE = ON;
 
@@ -257,28 +269,28 @@ DECLARE @RFTXNAME NVARCHAR(MAX);
 DECLARE @RFTXSQL NVARCHAR(MAX);
 DECLARE retail_ftx CURSOR FOR
 SELECT OBJECT_SCHEMA_NAME(object_id) + '.' + OBJECT_NAME(object_id) fullname FROM SYS.FULLTEXT_INDEXES
-	WHERE FULLTEXT_CATALOG_ID = (SELECT TOP 1 FULLTEXT_CATALOG_ID FROM SYS.FULLTEXT_CATALOGS WHERE NAME = 'COMMERCEFULLTEXTCATALOG');
+    WHERE FULLTEXT_CATALOG_ID = (SELECT TOP 1 FULLTEXT_CATALOG_ID FROM SYS.FULLTEXT_CATALOGS WHERE NAME = 'COMMERCEFULLTEXTCATALOG');
 OPEN retail_ftx;
 FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
 
 BEGIN TRY
-	WHILE @@FETCH_STATUS = 0  
-	BEGIN  
-		PRINT 'Refreshing Full Text Index ' + @RFTXNAME;
-		EXEC SP_FULLTEXT_TABLE @RFTXNAME, 'activate';
-		SET @RFTXSQL = 'ALTER FULLTEXT INDEX ON ' + @RFTXNAME + ' START FULL POPULATION';
-		EXEC SP_EXECUTESQL @RFTXSQL;
-		FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
-	END
+    WHILE @@FETCH_STATUS = 0  
+    BEGIN  
+        PRINT 'Refreshing Full Text Index ' + @RFTXNAME;
+        EXEC SP_FULLTEXT_TABLE @RFTXNAME, 'activate';
+        SET @RFTXSQL = 'ALTER FULLTEXT INDEX ON ' + @RFTXNAME + ' START FULL POPULATION';
+        EXEC SP_EXECUTESQL @RFTXSQL;
+        FETCH NEXT FROM retail_ftx INTO @RFTXNAME;
+    END
 END TRY
 BEGIN CATCH
-	PRINT error_message()
+
+PRINT error_message()
 END CATCH
 
 CLOSE retail_ftx;  
 DEALLOCATE retail_ftx; 
 -- End Refresh Retail FullText Catalogs
-
 ```
 
 ## Synchronize the database
@@ -319,9 +331,14 @@ DEALLOCATE retail_ftx;
     DROP DATABASE [axdb_123456789_original]
     ```
 
+### Enable change tracking
+If change tracking was enabled in the source database, ensure to enable change tracking again in the newly provisioned database in the target environment using the ALTER DATABASE command.
+
+To ensure current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management. This can be done on any entity as this is needed to trigger the refresh of store procedure.
+
 ### Re-provision the target environment
 
-[!include[environment-reprovision](../includes/environment-reprovision.md)]
+[!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ### Reset the Financial Reporting database
 

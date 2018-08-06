@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: PageOptions
+title: PageOptions type
 description: PageOptions type
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# PageOptions Type
+# PageOptions type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 ### Hierarchy
 

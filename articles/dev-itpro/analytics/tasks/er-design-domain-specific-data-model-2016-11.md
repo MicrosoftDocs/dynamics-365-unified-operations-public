@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Design a domain-specific data model for electronic reporting (ER)
+title: Design domain-specific data models
 description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a data model for electronic payment documents. 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Design a domain-specific data model for electronic reporting (ER)
+# Design domain-specific data models
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a data model for electronic payment documents. This data model will later be used as a data source when you create the format of the payment documents.
 

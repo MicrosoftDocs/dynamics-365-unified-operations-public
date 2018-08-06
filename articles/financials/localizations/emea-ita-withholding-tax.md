@@ -32,8 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Withholding tax for Italy
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure up Italy-specific settings for withholding tax and Italian withholding tax reports.
 
@@ -69,14 +68,15 @@ On the Action Pane, click **Limits**, and set up limits for the withholding tax 
 
 Set up withholding tax groups at **Tax** &gt; **Indirect taxes** &gt; **Withholding tax** &gt; **Withholding tax groups**. Define the code and name for a withholding tax group, and assign a withholding tax code to the group. Find more information, see [Set up withholding tax (Task guide)](../general-ledger/tasks/set-up-withholding-tax.md). Set up a vendor account for the calculation of withholding tax at **Accounts payable** &gt; **Vendors** &gt; **All vendors**. Define the following settings.
 
-|FastTab|Field|Description|
-|-------|---------|-----------|
-|Invoice and delivery|Calculate withholding tax|Set this option to **Yes** to calculate withholding tax.|
-|Invoice and delivery|Withholding tax g|Withholding tax group|Specify a withholding tax group.|
-|Invoice and delivery|Fiscal code|Enter the fiscal code.|
-|Purchasing demographics|Residence foreign country/region|Select the country/region.|
-|Purchasing demographics|Birth place|Enter the place of birth.|
-|General|Birthday - Day, Month, Year|Enter the date of birth for a vendor of the **Person** type.|
+
+|         FastTab         |              Field               |                                Description                                |
+|-------------------------|----------------------------------|---------------------------------------------------------------------------|
+|  Invoice and delivery   |    Calculate withholding tax     |   Set this option to <strong>Yes</strong> to calculate withholding tax.   |
+|  Invoice and delivery   |        Withholding tax g         |                           Withholding tax group                           |
+|  Invoice and delivery   |           Fiscal code            |                          Enter the fiscal code.                           |
+| Purchasing demographics | Residence foreign country/region |                        Select the country/region.                         |
+| Purchasing demographics |           Birth place            |                         Enter the place of birth.                         |
+|         General         |   Birthday - Day, Month, Year    | Enter the date of birth for a vendor of the <strong>Person</strong> type. |
 
 To run the Italy-specific reports about withholding tax, go to **Tax** &gt; **Inquiries and reports** &gt; **Withholding tax reports**:
 

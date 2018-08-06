@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Budget planning overview
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article introduces budget planning, and contains information to help you configure budget planning and set up budget planning processes.
 
@@ -63,24 +62,24 @@ You can use budget planning to perform the following tasks:
 -   Automatically route the budget plans, together with worksheets, justification documents, and other attachments, for review and approval.
 -   Consolidate multiple budget plans from a lower level of the organization into a single parent budget plan at a higher level of the organization. You can also develop a single budget plan at a higher level of the organization and allocate the budget to lower levels of the organization.
 
-Budget planning is integrated with other Microsoft Dynamics 365 for Finance and Operations modules. Therefore, you can bring in information from previous budgets, actual expenditures, fixed assets, and human resources. Because budget planning is also integrated with Microsoft Excel and Microsoft Word, you can use these programs to work with budget planning data. For example, a budget manager can export a department’s budget request from a budget plan scenario into an Excel worksheet. The data can be analyzed, updated, and charted in the worksheet, and then published back to the budget plan lines.
+Budget planning is integrated with other Microsoft Dynamics 365 for Finance and Operations modules. Therefore, you can bring in information from previous budgets, actual expenditures, fixed assets, and human resources. Because budget planning is also integrated with Microsoft Excel and Microsoft Word, you can use these programs to work with budget planning data. For example, a budget manager can export a department’s budget request from a budget plan scenario into an Excel worksheet. The data can be analyzed, updated, and charted in the worksheet, and then published back to the budget plan lines.
 
 ## Configuring budget planning
 The **Budget planning configuration** page contains most of the settings that you require in order to set up budget planning. The following sections describe some key factors that you should consider as you configure budget planning. After you've completed the configuration, you set up budget planning processes.
 
 ### Create a budget planning schema
 
-An optional but recommended first step is to create a schema that shows your organization’s procedure for formulating a budget. You can use any method that you want to create this schema. The following illustration shows a generic example, where separate budget planning workflows are created for different levels of the organization. Stages are defined within each workflow, and specific scenarios are assigned to each stage to hold the budget data. Tasks are performed to move the data from one stage to the next. For example, amounts can be allocated or aggregated to different accounts, approvals, or other reviews. In this example, italic text indicates a scenario that isn't editable during the stage, or data that is historical or has been approved at an earlier stage and therefore should not be changed. 
+An optional but recommended first step is to create a schema that shows your organization’s procedure for formulating a budget. You can use any method that you want to create this schema. The following illustration shows a generic example, where separate budget planning workflows are created for different levels of the organization. Stages are defined within each workflow, and specific scenarios are assigned to each stage to hold the budget data. Tasks are performed to move the data from one stage to the next. For example, amounts can be allocated or aggregated to different accounts, approvals, or other reviews. In this example, italic text indicates a scenario that isn't editable during the stage, or data that is historical or has been approved at an earlier stage and therefore should not be changed. 
 
 [![Budget planning generic schema](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
-In the following example, the corporate headquarters estimates the initial budget baseline amounts and distributes them to sales departments. The sales departments then estimate and submit their forecast back to the headquarters, where the budget manager aggregates and adjusts the forecast. Finally, the budget manager sends adjusted budget amounts to the CFO for review, final adjustments, and approval. 
+In the following example, the corporate headquarters estimates the initial budget baseline amounts and distributes them to sales departments. The sales departments then estimate and submit their forecast back to the headquarters, where the budget manager aggregates and adjusts the forecast. Finally, the budget manager sends adjusted budget amounts to the CFO for review, final adjustments, and approval. 
 
 [![Budget planning schema example](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
-###  Organization hierarchy for budget planning
+###  Organization hierarchy for budget planning
 
-On the **Organization hierarchy** page, you can designate an organization hierarchy as a budget planning hierarchy for each budget planning process. The budget planning hierarchy doesn't have to match the standard organization hierarchy that is used for other purposes. Because this hierarchy is used to aggregate and distribute data, you might want it to have a different structure. In the example schema, the sales departments are under a headquarters level that includes budget and finance departments. This structure likely differs from the structure that is used to manage operations for the sales departments. Only one organization hierarchy can be assigned to each budget planning process. 
+On the **Organization hierarchy** page, you can designate an organization hierarchy as a budget planning hierarchy for each budget planning process. The budget planning hierarchy doesn't have to match the standard organization hierarchy that is used for other purposes. Because this hierarchy is used to aggregate and distribute data, you might want it to have a different structure. In the example schema, the sales departments are under a headquarters level that includes budget and finance departments. This structure likely differs from the structure that is used to manage operations for the sales departments. Only one organization hierarchy can be assigned to each budget planning process. 
 
 For more information, see [Organizations and organizational hierarchies](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
 
@@ -94,9 +93,9 @@ Budget planning workflows are used together with Budgeting workflows to manage t
 
 A budget planning workflow consists of an ordered set of stages that a budget plan moves through. Each budget planning workflow is associated with a Budgeting workflow. Budgeting workflows are one of the types of workflow that are used throughout Finance and Operations. The Budgeting workflow routes the budget plans, together with worksheets, justifications, and attachments, through the organization for review and approval. 
 
-You create the budget planning workflow in the **Workflow stages** section of the **Budget planning configuration** page. There, you can select the stages and the Budgeting workflow that will be used, and also configure additional settings. 
+You create the budget planning workflow in the **Workflow stages** section of the **Budget planning configuration** page. There, you can select the stages and the Budgeting workflow that will be used, and also configure additional settings. 
 
-A good practice is to create a budget planning workflow for each level of a budgeting hierarchy. You then assign a Budgeting workflow that contains elements that correspond to the stages in the budget planning workflow. In the example schema that appears earlier in this article, one budget planning workflow would be created for the sales departments, and another would be created for the headquarters. A Budgeting workflow moves the budget plans through the stages. 
+A good practice is to create a budget planning workflow for each level of a budgeting hierarchy. You then assign a Budgeting workflow that contains elements that correspond to the stages in the budget planning workflow. In the example schema that appears earlier in this article, one budget planning workflow would be created for the sales departments, and another would be created for the headquarters. A Budgeting workflow moves the budget plans through the stages. 
 
 You create the Budgeting workflow for budget planning on the **Budgeting workflows** page. The process resembles the process for creating other workflows in Finance and Operations. The following illustration shows an example of a Headquarters workflow. 
 
@@ -116,24 +115,24 @@ The initial settings on the **Budget planning configuration** page let you creat
 
 ### Allocation schedules
 
-In budget planning, you can allocate the amounts or quantities on budget plan lines from one scenario to another scenario, or even to the same scenario. For example, you might allocate to the same scenario if you want to apply changes to the financial dimensions or the dates of the amounts in that scenario. An allocation can be done within a budget plan or from one budget plan to another. 
+In budget planning, you can allocate the amounts or quantities on budget plan lines from one scenario to another scenario, or even to the same scenario. For example, you might allocate to the same scenario if you want to apply changes to the financial dimensions or the dates of the amounts in that scenario. An allocation can be done within a budget plan or from one budget plan to another. 
 
 Allocation schedules automatically allocate budget plan lines during workflow processing. You can perform allocations by using any of the following methods in the **Allocation method** list:
 
--   **Allocate across periods** – You use a period allocation key to allocate budget plan lines from the source budget plan scenario across periods in the destination scenario. **Note:** Before you can allocate across periods, you must set up period allocation keys on the ****Period allocation categories**** page.
--   **Allocate to dimensions** – The budget plan lines are allocated from the source budget plan scenario across the financial dimensions in the destination scenario. **Note:** Before you can allocate to dimensions, you must set up budget allocation terms on the ****Budget allocation terms**** page.
--   **Aggregate** – The budget plan lines are aggregated from the source budget plan scenario in the associated budget plans to the destination scenario in the parent budget plan.
--   **Distribute** – The budget plan lines are distributed from the source budget plan scenario in the parent budget plan to the destination scenario in the associated budget plans.
--   **Use ledger allocation rules** – The budget plan lines are distributed from the source budget plan scenario to the destination scenario, based on the ledger allocation rule that is selected.
--   **Copy from budget plan** – You can select another budget plan to use as the source of the allocation.
+- <strong>Allocate across periods</strong> – You use a period allocation key to allocate budget plan lines from the source budget plan scenario across periods in the destination scenario. <strong>Note:</strong> Before you can allocate across periods, you must set up period allocation keys on the *<strong><em>Period allocation categories</em></strong>* page.
+- <strong>Allocate to dimensions</strong> – The budget plan lines are allocated from the source budget plan scenario across the financial dimensions in the destination scenario. <strong>Note:</strong> Before you can allocate to dimensions, you must set up budget allocation terms on the *<strong><em>Budget allocation terms</em></strong>* page.
+- **Aggregate** – The budget plan lines are aggregated from the source budget plan scenario in the associated budget plans to the destination scenario in the parent budget plan.
+- **Distribute** – The budget plan lines are distributed from the source budget plan scenario in the parent budget plan to the destination scenario in the associated budget plans.
+- **Use ledger allocation rules** – The budget plan lines are distributed from the source budget plan scenario to the destination scenario, based on the ledger allocation rule that is selected.
+- **Copy from budget plan** – You can select another budget plan to use as the source of the allocation.
 
 ### Stage allocations
 
-Stage allocations are used to automatically allocate budget plan lines during workflow processing. When stage allocations are used, budget plan lines in the destination scenario can be created and modified without the intervention of the budget plan preparer or reviewer.
+Stage allocations are used to automatically allocate budget plan lines during workflow processing. When stage allocations are used, budget plan lines in the destination scenario can be created and modified without the intervention of the budget plan preparer or reviewer.
 
-When you set up a stage allocation, you associate the budget planning workflow and stage with the allocation schedule. The budget planning workflow must be associated with a Budgeting workflow that uses the ****Budget planning stage allocation**** automated workflow task. When the workflow reaches the specified stage, the allocation occurs automatically. This automated task can be used to create budget plan lines in a new scenario. 
+When you set up a stage allocation, you associate the budget planning workflow and stage with the allocation schedule. The budget planning workflow must be associated with a Budgeting workflow that uses the *<strong><em>Budget planning stage allocation</em></strong>* automated workflow task. When the workflow reaches the specified stage, the allocation occurs automatically. This automated task can be used to create budget plan lines in a new scenario. 
 
-In the example schema that appears earlier in this article, an allocation is performed to transfer amounts from a budget plan and scenarios in the headquarters Baseline stage to another budget plan and scenarios in the Sales department Estimate stage. The following illustration shows the relevant section of the example schema.
+In the example schema that appears earlier in this article, an allocation is performed to transfer amounts from a budget plan and scenarios in the headquarters Baseline stage to another budget plan and scenarios in the Sales department Estimate stage. The following illustration shows the relevant section of the example schema.
 
 [![Stage allocation](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
@@ -165,10 +164,10 @@ You also designate whether each layout element (column) is editable, and whether
 
 In the **Layouts** section of the **Budget planning configuration** page, you can also generate, view, or upload Excel templates. These templates are the workbooks that are linked to each budget plan to provide additional analysis, charting, and data entry capabilities. 
 
-You can generate, view, or upload a template for each layout. When a template is generated, the layout is locked and can't be edited. This lock helps guarantee that the template format matches the layout of the budget plan and includes the same data. After a template is generated, it can be viewed and edited. For example, you can add charts to the template or further customize its appearance.
+You can generate, view, or upload a template for each layout. When a template is generated, the layout is locked and can't be edited. This lock helps guarantee that the template format matches the layout of the budget plan and includes the same data. After a template is generated, it can be viewed and edited. For example, you can add charts to the template or further customize its appearance.
 
 > [!NOTE] 
-> The template should be saved to a location that the user has access to, so that it can be uploaded to the layout after editing is completed. That way, the template will be used with budget plans that use the layout.
+> The template should be saved to a location that the user has access to, so that it can be uploaded to the layout after editing is completed. That way, the template will be used with budget plans that use the layout.
 
 ### Descriptions
 

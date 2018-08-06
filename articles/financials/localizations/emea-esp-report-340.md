@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Report 340
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Report 340 replaced two earlier reports (Sales Statutory Books and Purchases Statutory Books) that all Spanish companies submitted as hard copies to the Spanish tax authorities. The new report can be uploaded to the tax authorities' website, or it can be submitted by using a software package that is available free of cost from the tax authorities.
 
@@ -80,20 +80,20 @@ Report 340 includes the following entries:
 7. Select **OK** to return to the **Spanish VAT reports** page. The system enters information from the **Spanish VAT list** page on the **Spanish VAT reports** page. You can't modify the values in the **Settlement period**, **Method of numbering**, and **From date** fields on the **Spanish VAT reports** page.
 8. On the **General** tab, follow these steps:
 
-    1. In the **Presentation type** field, select the type of media to use to export the file:
+   1. In the **Presentation type** field, select the type of media to use to export the file:
 
-         - **Telematic** – Upload the report to the tax authorities' website, or submit the report by using the free software that is provided by the tax authorities.
+      - **Telematic** – Upload the report to the tax authorities' website, or submit the report by using the free software that is provided by the tax authorities.
         - **CD-R** – Send the report to the tax authorities on a CD-ROM.
         - **Report**
 
         > [!NOTE]
         > Select either **Telematic** or **CD-R**. If you select **Report**, you receive an error message.
 
-    2. Set the **Reported** option to **Yes** to generate the final report.
-    3. In the **Contact person** field, enter the name of the contact person.
-    4. In the **Telephone** field, enter the telephone number of the contact person.
-    5. In the **Document** field, enter the four-digit document number. If you enter a number that contains fewer than four digits, leading zeros are added to create a four-digit number. For example, if you enter **1**, the system automatically converts the value to **0001** and stores the new value.
-    6. In the **Electronic** field, enter the 16-digit electronic code. This number is mandatory and is provided by the tax authorities.
+   2. Set the **Reported** option to **Yes** to generate the final report.
+   3. In the **Contact person** field, enter the name of the contact person.
+   4. In the **Telephone** field, enter the telephone number of the contact person.
+   5. In the **Document** field, enter the four-digit document number. If you enter a number that contains fewer than four digits, leading zeros are added to create a four-digit number. For example, if you enter **1**, the system automatically converts the value to **0001** and stores the new value.
+   6. In the **Electronic** field, enter the 16-digit electronic code. This number is mandatory and is provided by the tax authorities.
 
 9. Select the **Totals** button to open the **Totals** page. On this page, you can view the following values:
 

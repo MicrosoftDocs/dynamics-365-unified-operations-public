@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Absence registration in Time and attendance
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the concepts for absence and explains how to handle absence in Time and attendance.
 

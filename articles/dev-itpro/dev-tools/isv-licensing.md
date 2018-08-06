@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: ISV licensing
+title: Independent software vendor (ISV) licensing
 description: This topic describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
 author: robadawy
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# ISV licensing
+# Independent software vendor (ISV) licensing
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
 
@@ -62,7 +61,7 @@ ISVs can create two types of license: **Boolean** and **Number**. ISVs can assoc
 
 ### License validation errors
 
-When an ISV license becomes invalid after import, the ISV solution continues to run until the server is restarted. (After the server is restarted, the solution is disabled.) An error is thrown when the instance of the Application Object Server (AOS) starts. The error is written to the event log.
+When an ISV license becomes invalid after import, the ISV solution continues to run until the server is restarted. (After the server is restarted, the solution is disabled.) An error is thrown when the instance of the Application Object Server (AOS) starts. The error is written to the event log.
 
 ## Implementing ISV licensing in a solution
 ISVs must have a valid Authenticode certificate (X.509) from a certificate authority (CA). Microsoft doesn't recommend any particular CA. However, many companies offer these certificates. Authenticode certificates come in various key sizes. The ISV licensing feature supports certificates of both 1024-bit and 2048-bit key sizes. By default, many providers use the 2048-bit key size, and we recommend that ISVs use this bit key size, because it provides stronger encryption. However, if an ISV already has an existing 1024-bit key size, that key size works with the ISV licensing feature. **Note:** The ISV licensing feature doesn't support 4096-bit key sizes. Authenticode certificates can have various cryptographic service providers. The ISV licensing feature uses Enhanced Cryptographic Provider (which also covers Base Cryptographic Provider). There are many independent providers that you can purchase an Authenticode certificate from. Microsoft doesn't recommend any particular provider. Some providers that are often used are Symantec VeriSign, Thawte, and Go Daddy.
@@ -79,29 +78,29 @@ There is a restriction on the format. The PFX (PKCS \#12) format should be used 
 Follow these steps to enable licensing for your solution.
 
 1.  Create an ISV solution. 
-    
+
     ![Creating an ISV solution](./media/isv1.png)
 
 2.  Add the certificate's public key (.cer file) to your project as a resource.
     1.  Add a new item. 
-    
+
         ![Adding a new item](./media/isv2.png)
 
     2.  Click **Labels And Resources**, and then click **Resource**. 
-    
+
         ![Clicking Resource](./media/isv3.png)
 
     3.  Select the certificate's public key as the resource. 
-    
+
         ![Selecting the certificate's public key as the resource](./media/isv4.png)
 
     4.  Add the certificate as a resource. 
-    
+
         ![Adding the certificate as a resource](./media/isv5.png)
 
 
 3.  Create a license code. 
-    
+
     ![Creating a license code](./media/isv6.png)
 
 4.  Map the certificate to the license code. 
@@ -123,17 +122,17 @@ Follow these steps to enable licensing for your solution.
 8.  Add a button to the form. 
 
     ![Adding a button to the new form](./media/isv11.png)
-    
+
     The button will be visible, because it isn't controlled by a configuration key at first. 
-    
+
     ![New button is visible when it's first added](./media/isv12.png)
 
 9.  Associate a configuration key with the button. 
 
     ![Associating a configuration key with the button](./media/isv13.png) 
-    
+
     The button will no longer be visible, because the configuration key must be available and enabled. 
-    
+
     ![Button is no longer visible](./media/isv14.png)
 
 
@@ -150,7 +149,7 @@ Follow these steps to enable licensing for your solution.
     | licensecode     | The name of your license code (from Microsoft Visual Studio).                |
     | certificatepath | The path of your certificate's private key.                                  |
     | password        | The password for your certificate's private key.                             |
-    | customer        | The customer's tenant name (from the screen shot under step 1).              |
+    | customer        | The customer's tenant name (from the screen shot under step 1).              |
     | serialnumber    | The customer's tenant ID (labeled "Serial number" in the screen shot).       |
     | expirationdate  | Optional: The expiration date for the license.                               |
     | usercount       | Optional: The number that custom validation logic can use as required. This could be users, but is not limited to users. |
@@ -159,9 +158,9 @@ Follow these steps to enable licensing for your solution.
 
         C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
 
-     
 
-3.  Import the license into the target environment. **Note:** In production systems, you complete this step from Microsoft Dynamics Lifecycle Services (LCS), by using a deployable package. For more information, see the "Production environments" section later in this article.
+
+3.  Import the license into the target environment. **Note:** In production systems, you complete this step from Microsoft Dynamics Lifecycle Services (LCS), by using a deployable package. For more information, see the "Production environments" section later in this article.
 
     | Parameter name                | Description                                                                                            |
     |-------------------------------|--------------------------------------------------------------------------------------------------------|

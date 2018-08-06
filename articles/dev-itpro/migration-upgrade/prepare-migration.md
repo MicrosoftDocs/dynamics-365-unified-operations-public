@@ -30,28 +30,27 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Prepare to migrate code from Dynamics AX 2012 R3 to Dynamics 365 for Finance and Operations
+# Prepare to migrate code to Finance and Operations
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 In this topic, we will describe the Lifecycle Services (LCS) Code upgrade service and Visual Studio tools that help you migrate your code and metadata from Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Finance and Operations. Most of these steps also apply to code migration between two major versions of Finance and Operations. 
 
 Prerequisites
 -------------
 
-You will need access to a Finance and Operations development environment using Remote Desktop, and be provisioned as an administrator on the instance. We recommend you become familiar with some of the Dynamics 365 for Operation development, customization and user interface concepts before you upgrade your code. Here are some references.
+You will need access to a Finance and Operations development environment using Remote Desktop, and be provisioned as an administrator on the instance. We recommend you become familiar with some of the Dynamics 365 for Operation development, customization and user interface concepts before you upgrade your code. Here are some references.
 
--   [Development tools](..\dev-tools\developer-home-page.md)
--   [Models and packages](..\dev-tools\models.md)
--   [X++ programming language](..\dev-ref\xpp-language-reference.md)
--   [Extensions and Overlayering](..\extensibility\extensibility-home-page.md)
--   [User interface development](..\user-interface\user-interface-development-home-page.md)
+-   [Development tools](../dev-tools/developer-home-page.md)
+-   [Models and packages](../dev-tools/models.md)
+-   [X++ programming language](../dev-ref/xpp-language-reference.md)
+-   [Extensions and Overlayering](../extensibility/extensibility-home-page.md)
+-   [User interface development](../user-interface/user-interface-development-home-page.md)
 
 ## Overview of the code migration process
 ### Model split
 
-The Finance and Operations application is split into several packages, or assemblies: Platform Packages
+The Finance and Operations application is split into several packages, or assemblies: Platform Packages
 
 -   Application Platform
 -   Application Foundation
@@ -66,7 +65,7 @@ ISV and customer code that is migrated from Dynamics AX 2012 R3 will be re-basel
 
 ### Auto-migration using the LCS Code Upgrade service
 
-The LCS code upgrade service takes a Dynamics AX 2012 R3 model store as input and completes the following tasks:
+The LCS code upgrade service takes a Dynamics AX 2012 R3 model store as input and completes the following tasks:
 
 -   Converts metadata into the latest format.
 -   Re-baselines metadata, by moving and merging, into the right model.
@@ -75,57 +74,57 @@ The LCS code upgrade service takes a Dynamics AX 2012 R3 model store as input 
 -   Runs migration rules that inform developers what to manually fix by using TODOs.
 -   Automatically checks-in the upgraded solution into your Visual Studio Team Services (VSTS) project.
 
-To configure and run the code upgrade service, see [Configure and execute the code upgrade service in Lifecycle Services](..\lifecycle-services\configure-execute-code-upgrade.md).
+To configure and run the code upgrade service, see [Configure and execute the code upgrade service in Lifecycle Services](../lifecycle-services/configure-execute-code-upgrade.md).
 
 ### Manual migration steps
 
 After you upgrade your code using the LCS code upgrade service configure your developer VM and VSTS to connect to the upgraded code branch.
 
--   [Configure your developer VM](..\dev-tools\configure-developer-vm.md)
+-   [Configure your developer VM](../dev-tools/configure-developer-vm.md)
 -   [Configure VSTS](configure-vso-solution.md)
 
-The code upgrade service will provide with Visual Studio solutions that you can open to compile your code. A **code merge** solution for all elements that contain conflicts and an **upgraded** solutions for all your upgraded elements. Typically, you can compile the application by fixing compilation errors in the order shown below. The order is determined based on the package dependencies graph, start with the lowest package in the graph. To determine package dependencies, see [Models](..\dev-tools\models.md). A typical order is Application Platform, Application Foundation, Directory, ...etc., Application Suite. For each of your upgraded models:
+The code upgrade service will provide with Visual Studio solutions that you can open to compile your code. A **code merge** solution for all elements that contain conflicts and an **upgraded** solutions for all your upgraded elements. Typically, you can compile the application by fixing compilation errors in the order shown below. The order is determined based on the package dependencies graph, start with the lowest package in the graph. To determine package dependencies, see [Models](../dev-tools/models.md). A typical order is Application Platform, Application Foundation, Directory, ...etc., Application Suite. For each of your upgraded models:
 
 -   Fix merge conflicts.
 -   Fix compilation errors related to a model split (references across packages).
     -   Typical error messages are:
         -   &lt;Element Type&gt; X refers to &lt;Element Type&gt; Y which does not exist.
         -   The name &lt;Name&gt; does not denote a class, a table or an extended data type.
-    -   For example, your overlayering customizations may be referencing elements or code that are higher in the package dependency graph:
+    -   For example, your overlayering customizations may be referencing elements or code that are higher in the package dependency graph:
         -   A method in the Directory model is referencing a table in the Application Suite package.
         -   A form in the Directory package is referencing a data source in the Application Suite package.
     -   You will have to refactor your code to address these dependencies by moving model elements or business logic to higher level packages.
     -   [Delegates for Migration](delegates-migration.md) describes how to use delegates to solve some of these issues.
 -   Fix compilation errors.
 
-After you have resolved all of the compilation errors, all packages will compile. Next, you must complete the following tasks:
+After you have resolved all of the compilation errors, all packages will compile. Next, you must complete the following tasks:
 
-1.  Address guided code upgrade TODOs and code upgrade-specific best practice warnings. Some examples and details are in the sections below.
+1.  Address guided code upgrade TODOs and code upgrade-specific best practice warnings. Some examples and details are in the sections below.
 2.  Replace deprecated controls, for example, ActiveX or find an alternative.
 3.  Apply form patterns and sub patterns to all forms.
 4.  Validate that all scenarios work in multiple browsers with different sizes for custom patterns.
 5.  Write and run tests.
 
-For more information, see [Resolve Conflicts Using Visual Studio Tools (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7).
+<!--For more information, see [Resolve Conflicts Using Visual Studio Tools (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7).-->
 
 ## Best practice setup
-In the Best Practice framework, there is a subset of Best Practice warnings that need to be resolved to complete migration. This applies if you are migrating from Dynamics AX 2012 R3 or earlier.
+In the Best Practice framework, there is a subset of Best Practice warnings that need to be resolved to complete migration. This applies if you are migrating from Dynamics AX 2012 R3 or earlier.
 
-1.  In Visual Studio, click **Dynamics 365 &gt; Options &gt; Best Practices**.
+1.  In Visual Studio, click **Dynamics 365 &gt; Options &gt; Best Practices**.
 2.  In the **Model** drop-down menu, select **Application Suite** (Repeat with all models you are working on)
 
-These rules should be set to “ON” while migrating your solution. The setting is driven by an XML file in the AxRuleSet folder. For example, see the Application Suite xml file, BPRules.xml, located under C:\\Packages\\ApplicationSuite\\Foundation\\AxRuleSet. [![bpupgraderules](./media/bpupgraderules.png)](./media/bpupgraderules.png) To complete the migration, you need to fix all migration-specific Best Practice rules. The errors will show up in the error list as warnings. In the error list, you will see compiler warnings and best practice errors. Best Practice errors are prefixed with the text **BP**. For example, **BPErrorFormControlPatternUnspecified**.
+These rules should be set to “ON” while migrating your solution. The setting is driven by an XML file in the AxRuleSet folder. For example, see the Application Suite xml file, BPRules.xml, located under C:\\Packages\\ApplicationSuite\\Foundation\\AxRuleSet. [![bpupgraderules](./media/bpupgraderules.png)](./media/bpupgraderules.png) To complete the migration, you need to fix all migration-specific Best Practice rules. The errors will show up in the error list as warnings. In the error list, you will see compiler warnings and best practice errors. Best Practice errors are prefixed with the text **BP**. For example, **BPErrorFormControlPatternUnspecified**.
 
 ## Debugging
-By default, Finance and Operations optimizes the debugging experience for the files that you are working on. As a result, when you step into a file (F11) that is not in your project, the PDBs are not loaded and you can’t debug the code. To work around this, change the project debugging setting by clicking **Dynamics 365 **&gt; **Options** &gt; **Debugging**. Verify that the **Load symbols only for items in the solution** check box is not selected. This option is selected by default because it improves the debugger speed significantly. Another debugging setting that you may want to turn off is Intellitrace. Intellitrace collects the complete execution history of an application. It creates a lot of noise in the IDE when debugging. To turn off Intellitrace, click **Options** &gt; **IntelliTrace** &gt; **Enable IntelliTrace**, clear the check box, and then click **OK**. Note that Intellitrace is only available in the Enterprise version of Visual Studio.  
+By default, Finance and Operations optimizes the debugging experience for the files that you are working on. As a result, when you step into a file (F11) that is not in your project, the PDBs are not loaded and you can’t debug the code. To work around this, change the project debugging setting by clicking <strong>Dynamics 365 **&gt; **Options</strong> &gt; <strong>Debugging</strong>. Verify that the <strong>Load symbols only for items in the solution</strong> check box is not selected. This option is selected by default because it improves the debugger speed significantly. Another debugging setting that you may want to turn off is Intellitrace. Intellitrace collects the complete execution history of an application. It creates a lot of noise in the IDE when debugging. To turn off Intellitrace, click <strong>Options</strong> &gt; <strong>IntelliTrace</strong> &gt; <strong>Enable IntelliTrace</strong>, clear the check box, and then click <strong>OK</strong>. Note that Intellitrace is only available in the Enterprise version of Visual Studio.  
 
 ## Address code migration tasks
-When metadata is migrated to Finance and Operations, multiple auto-upgrade scripts are run. In the case where developers need to complete manual migration tasks, TO DOs and Best Practices (BP) have been added.
+When metadata is migrated to Finance and Operations, multiple auto-upgrade scripts are run. In the case where developers need to complete manual migration tasks, TO DOs and Best Practices (BP) have been added.
 
--   TO DOs are prefixed with */\* TODO: (Code Upgrade)*, and need to be fixed as a part of code migration.
--   BP migration specific rules also need to be fixed as part of code migration.
+-   TO DOs are prefixed with */\* TODO: (Code Upgrade)*, and need to be fixed as a part of code migration.
+-   BP migration specific rules also need to be fixed as part of code migration.
 
-This example below uses the **PurchCommitment\_PSN** form to walk you through the migration task of fixing navigation. Specifically, you will see examples of duplicate buttons and Action Pane TODOs.
+This example below uses the **PurchCommitment\_PSN** form to walk you through the migration task of fixing navigation. Specifically, you will see examples of duplicate buttons and Action Pane TODOs.
 
 ### Setup
 
@@ -137,7 +136,7 @@ This example below uses the **PurchCommitment\_PSN** form to walk you through 
 6.  Note: The form is located in the French demo data company FRSI.
 7.  Press **Ctrl+F5 to** see the form.
 
-While the form looks complete, there are still code migration tasks necessary to be migration-complete. [![i](./media/i1.png)](./media/i1.png)
+While the form looks complete, there are still code migration tasks necessary to be migration-complete. [![i](./media/i1.png)](./media/i1.png)
 
 ### Navigation migration tasks
 
@@ -156,12 +155,12 @@ In Finance and Operations, the following core actions are provided as system-def
 -   Edit
 -   Export
 
-As part of the auto-migration, the Action Pane rule is run to identify redundant buttons. To complete this part of migration, you need to manually:
+As part of the auto-migration, the Action Pane rule is run to identify redundant buttons. To complete this part of migration, you need to manually:
 
 -   Remove or move the code.
 -   Delete redundant controls in the application code.
 
-**Note**: In the section below, we will provide examples of how to migrate and modify the code on modeled buttons that replicate system-defined buttons. However, in practice, before making changes similar to those made in this article, the code must first be evaluated with respect to the scenario to determine if it is still needed. First, fix the TODO for the DeleteCmdButton, which duplicates the system-defined Delete button.
+**Note**: In the section below, we will provide examples of how to migrate and modify the code on modeled buttons that replicate system-defined buttons. However, in practice, before making changes similar to those made in this article, the code must first be evaluated with respect to the scenario to determine if it is still needed. First, fix the TODO for the DeleteCmdButton, which duplicates the system-defined Delete button.
 
 1.  In Visual Studio, find the TODO shown below, and then double-click the TODO.[![k](./media/k1.png)](./media/k1.png)
 2.  Replace the TODO and the line of code as shown below.
@@ -172,12 +171,12 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
             deleteCmdButton.enabled(purchCommitmentHeader && purchCommitmentHeader.canDelete());
             PurchCommitmentHeader_DS.allowDelete(purchCommitmentHeader && purchCommitmentHeader.canDelete());
 
-3.  In the editor, find and remove DeleteCmdButton from the form design. [![l](./media/l1.png)](./media/l1.png)
+3.  In the editor, find and remove DeleteCmdButton from the form design. [![l](./media/l1.png)](./media/l1.png)
 4.  Press **Ctrl+S to** save the form.
     -   Next, we will focus on the EditCmdButton that duplicates the system Edit button, handing the two TODOs associated with this button as well as removing this button.
 
 5.  In Visual Studio, find the TODO shown below, and then double-click the TODO.[![m](./media/m1.png)](./media/m1.png)
-6.  Because the visibility of the **Edit** button is controlled by the View/Edit mode of the form, you will need to modify this code so it sets that property. Replace the TODO and the line of code as shown in the following graphic.
+6.  Because the visibility of the **Edit** button is controlled by the View/Edit mode of the form, you will need to modify this code so it sets that property. Replace the TODO and the line of code as shown in the following graphic.
 
         /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: EditCmdButton */
         editCmdButton.enabled(purchCommitmentHeader && isInDraftOrUnderRevisionStatus && !isInWorkFlowReviewState && !isLineReferenced);
@@ -192,7 +191,7 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
 
         }
 
-7.   Double-click the other TODO for this button.[![n](./media/n1.png)](./media/n1.png)
+7.   Double-click the other TODO for this button.[![n](./media/n1.png)](./media/n1.png)
 8.  Inspect the code on the modeled **Edit** button. This logic will need to be moved to the form’s task() method.
 
         [Control("CommandButton")]
@@ -252,21 +251,21 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
                         }
 
                         break;
-                    
+
                     default:
                         ret = super(_taskId);
                         break;
                 }
-            
+
                 return ret;
             }
 
-11. In the Editor, find and remove the **EditCmdButton** from the form design. [![o](./media/o1.png)](./media/o1.png)
+11. In the Editor, find and remove the **EditCmdButton** from the form design. [![o](./media/o1.png)](./media/o1.png)
 12. Press **Ctrl+S** to save the form.
 13. Press **Ctrl+F5** to view the form. Notice the **Delete** and **Edit** buttons in the **Commitment** tab have been removed.
 
 ## Resolve casting exceptions
-In Finance and Operations, X++ is completely intermediate-language (IL) based and therefore has a stricter runtime type behavior than the interpreted Dynamics AX2 012. This stricter runtime type behavior can generate exceptions in migrated Dynamics AX 2012 R3 metadata. It is likely you will encounter these exceptions during your migration. The casting exceptions can be raised in different runtime scenarios, such as down-casting, casting runtime to design time objects, and side-casting. In the section below, we will walk through an example where a form, CosJournalName, is generating controls at runtime, and has a type mismatch which causes a .NET exception because it is strongly typed.
+In Finance and Operations, X++ is completely intermediate-language (IL) based and therefore has a stricter runtime type behavior than the interpreted Dynamics AX2 012. This stricter runtime type behavior can generate exceptions in migrated Dynamics AX 2012 R3 metadata. It is likely you will encounter these exceptions during your migration. The casting exceptions can be raised in different runtime scenarios, such as down-casting, casting runtime to design time objects, and side-casting. In the section below, we will walk through an example where a form, CosJournalName, is generating controls at runtime, and has a type mismatch which causes a .NET exception because it is strongly typed.
 
 ### Example: Side-casting exception
 
@@ -276,7 +275,7 @@ In Finance and Operations, X++ is completely intermediate-language (IL) based a
 4.  Add the cosDimCheckBoxController class to your project.
 5.  Rebuild your project.
 6.  Press **Ctrl+F5** to run the form.
-7.  Note that you will get an exception, similar to the following, when running the form.[![u](./media/u1.png)](./media/u1.png)
+7.  Note that you will get an exception, similar to the following, when running the form.[![u](./media/u1.png)](./media/u1.png)
 8.  Right-click the class, cosDimCheckBoxController, and then select **View Code**.
 9.  Set a breakpoint on the cosDimCheckBoxController::getBuildControl().
 10. Press **F5**.
@@ -290,7 +289,7 @@ In Finance and Operations, X++ is completely intermediate-language (IL) based a
         protected FormBuildStringControl getBuildControl()
         protected FormBuildCheckBoxControl getBuildControl()
 
-15. Rebuild the project, and press **Ctrl+F5**. The form should open successfully because the casting error is resolved.
+15. Rebuild the project, and press **Ctrl+F5**. The form should open successfully because the casting error is resolved.
 
 [![a](./media/a-1024x576.png)](./media/a.png)
 

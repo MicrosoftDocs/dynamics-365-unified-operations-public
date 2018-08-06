@@ -33,8 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost accounting terminology
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic defines the key terms that are used in Cost accounting.
 
@@ -156,14 +155,14 @@ Formula allocation bases let you define advanced formulas to achieve the correct
 |  + |  Addition |
 |  – |  Subtraction |
 | *  | Multiplication  |
-	
+
 Traditional IF statements are not supported. However, you can create statements and validate whether they are true.
 
-|  **Statement	Validation** | **Result**  |
+|  **Statement  Validation** | **Result**  |
 |---|---|
 |  a > b| True  |
 |  a > b |  False |
-	
+
 **Overhead cost**
 
 Overhead costs refer to the ongoing expenses of operating a business. They are the costs that can’t be linked directly to specific business activities. Here are some examples of overhead costs:

@@ -32,8 +32,7 @@ ms.search.validFrom: 2017-03-31
 
 # What's new or changed in Dynamics 365 for Operations platform update 5 (March 2017)
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 5. This version was released in March 2017 and has a build number of 7.0.4475.16165.
 
@@ -48,6 +47,7 @@ Development and customization
 | X++ compiler and try catch blocks                          | The X++ compiler now generates code that is slightly different for try catch blocks. Before, the system would catch the DuplicateKey and UpdateConflict exceptions as part of the catch all clause. This introduced some problems that could ultimately lead to data consistency problems if the try catch was used when a transaction is running. Now, the two exceptions mentioned, which are special because they do not roll back a running transaction, are no longer caught in the catch all. For more information, see the blog post [X++, the catch](https://blogs.msdn.microsoft.com/mfp/2016/11/24/x-the-catch/). |
 
 ## Personalization
+
 | Feature                                              | **Why this is important**                                                                                                                                                                                                                                                                                                  |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Enhanced administration features for personalization | The personalization administrator can now apply or remove form personalizations for groups of users. Previously personalization administration was only possible one user at a time. For more information, see [Personalize the user experience](personalize-user-experience.md). |

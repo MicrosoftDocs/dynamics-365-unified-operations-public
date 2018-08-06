@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Element designers
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article reviews the element designers and explains how to use them. The tools contain designers for each kind of element in the program. You use these designers when you create or modify elements.
 
@@ -59,10 +58,10 @@ Each node for the element will have a set of properties that applies to it. To m
 
 | Organization | Description                                                                                                   |
 |--------------|---------------------------------------------------------------------------------------------------------------|
-| Alphabetical | Arrange the properties in alphabetical order.                                                                 |
-| Categorized  | Arrange the properties into standard categories for the node type.                                            |
-| Changed      | Divide the properties into those that have been changed and those that use the default values.                |
-| Frequency    | Divide the properties into categories, based on whether a property is often, occasionally, or rarely changed. |
+| Alphabetical | Arrange the properties in alphabetical order.                                                                 |
+| Categorized  | Arrange the properties into standard categories for the node type.                                            |
+| Changed      | Divide the properties into those that have been changed and those that use the default values.                |
+| Frequency    | Divide the properties into categories, based on whether a property is often, occasionally, or rarely changed. |
 
 ### Working with nodes
 
@@ -70,7 +69,7 @@ When you create or modify elements, you will often find that you must add or rem
 
 [![20\_DevoToolsConcept](./media/20_devotoolsconcept.png)](./media/20_devotoolsconcept.png) 
 
-To remove a node, right-click the new, and then click **Delete**. You can also perform other actions for a node. You rename a node, duplicate a node, or move the node up or down in the node list.
+To remove a node, right-click the new, and then click **Delete**. You can also perform other actions for a node. You rename a node, duplicate a node, or move the node up or down in the node list.
 
 ### Searching element nodes
 
@@ -78,7 +77,7 @@ Sometimes, the node list for an element can be long, so that it's difficult to f
 
 [![21\_DevoToolsConcept](./media/21_devotoolsconcept.png)](./media/21_devotoolsconcept.png) 
 
-If you're working with a customization element or an extension element, you can prefix your search string with **c:** (for "customization elements") or **e:** (for "extension elements") to return only customizations or extensions, respectively. **Examples**
+If you're working with a customization element or an extension element, you can prefix your search string with **c:** (for "customization elements") or **e:** (for "extension elements") to return only customizations or extensions, respectively. **Examples**
 
 -   **e:** returns all extensions that belong to the current element.
 -   **c:** returns all customizations that belong to the current element.

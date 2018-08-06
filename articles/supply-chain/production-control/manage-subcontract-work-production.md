@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage subcontracting work in production
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Finance and Operations. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
 
@@ -62,7 +61,7 @@ There are two methods for modeling subcontracting work for production operations
     -   Cost control allocates subcontracted work in its own cost breakdown block.
 
 ## Subcontracting of route operations
-To use subcontracting of route operations for production or batch orders, the service product that is used for the procurement of the service must be defined as a product of the **Service** type. Additionally, it must have an item model group that has the **Stocked product** option under **Inventory policy** set to **Yes**. This option defines whether a product is accounted as inventory on product receipt (**Stocked product** = **Yes**), or whether the product is expensed on a profit and loss account (**Stocked product** = **No**). Although this behavior might seem contradictory, it's based on the fact that only products that have this policy will create inventory transactions that can be used in cost control to calculate planned cost and determine the actual cost when a production order is ended.  
+To use subcontracting of route operations for production or batch orders, the service product that is used for the procurement of the service must be defined as a product of the **Service** type. Additionally, it must have an item model group that has the **Stocked product** option under **Inventory policy** set to **Yes**. This option defines whether a product is accounted as inventory on product receipt (**Stocked product** = **Yes**), or whether the product is expensed on a profit and loss account (**Stocked product** = **No**). Although this behavior might seem contradictory, it's based on the fact that only products that have this policy will create inventory transactions that can be used in cost control to calculate planned cost and determine the actual cost when a production order is ended.  
 
 To be considered in planning and cost calculation, the service must be added to the BOM. The BOM line must be of the **Vendor** type, and it must be allocated to the route operation that the service is allocated to. This route operation must have a costing resource and resource requirement that point to a resource of the **Vendor** type that connects the operation and the related service to the corresponding vendor account.  
 

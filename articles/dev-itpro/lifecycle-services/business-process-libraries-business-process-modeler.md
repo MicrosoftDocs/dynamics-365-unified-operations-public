@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Business process libraries in Business process modeler
+title: Business process libraries in Business process modeler (BPM)
 description: This article explains how to view a standard business process library in Business process modeler, how to copy and modify a business process library, and how to export information about the business process library to Microsoft Word.
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Business process libraries in Business process modeler
+# Business process libraries in Business process modeler (BPM)
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article explains how to view a standard business process library in Business process modeler, how to copy and modify a business process library, and how to export information about the business process library to Microsoft Word.
 
@@ -47,7 +46,7 @@ You can select a standard business process library on the Business process libra
 
 To select a standard business process library to start with, follow these steps:
 
-1.  Sign in to Lifecycle Services, open a project, and then click the **Business process modeler** tile.
+1.  Sign in to Lifecycle Services, open a project, and then click the **Business process modeler** tile.
 2.  In the **Global libraries** or **Corporate libraries** section, right-click a library.
 3.  On the app bar, click **Copy**. The library is added to the **My libraries** section.
 4.  In the **My libraries** section, click the library to display the business process library.
@@ -70,7 +69,7 @@ You can modify a business process library if it is associated with a project as 
 
 ## Export a business process library to Word
 You can export information about a business process library, and all the flowcharts that are associated with it, to a Word document. To export a business process library to Word, follow these steps:
-1.  Sign in to Lifecycle Services, open a project, and then click the **Business process modeler** tile.
+1.  Sign in to Lifecycle Services, open a project, and then click the **Business process modeler** tile.
 2.  Open a business process library.
 3.  In the **Core Business Processes** list, right-click a top-level node in the library.
 4.  On the app bar, click **Doc**, and save the document.

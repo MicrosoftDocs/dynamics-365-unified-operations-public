@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Three-way matching policies
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides examples of three-way matching.
 
@@ -144,7 +143,7 @@ Note the following items:
 -   For the MM01 – Wireless Mouse line, the Product receipt quantity match column has a warning icon because the invoice line is not matched to a product receipt. The Unit price match column has a warning icon because the 2% net unit price tolerance is exceeded.
 -   For the USB Drive line, the Product receipt quantity match column is blank because two-way matching does not match invoice line and product receipt line quantities.
 
-If approval is required for invoices to be posted with invoice matching discrepancies, the Approve posting with matching discrepancies toggle on the Invoice matching details page must be selected before the invoice can be posted with price matching errors and quantity matching errors. If approval is not required, invoice processing can continue if there are no other posting errors.
+If approval is required for invoices to be posted with invoice matching discrepancies, the Approve posting with matching discrepancies toggle on the Invoice matching details page must be selected before the invoice can be posted with price matching errors and quantity matching errors. If approval is not required, invoice processing can continue if there are no other posting errors.
 
 
 For more information, see [Accounts payable invoice matching](accounts-payable-invoice-matching.md).

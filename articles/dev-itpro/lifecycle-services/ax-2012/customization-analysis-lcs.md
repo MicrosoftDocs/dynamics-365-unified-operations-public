@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customization analysis
+title: Customization analysis in Lifecycle Services (LCS)
 description: In Microsoft Dynamics Lifecycle Services, Customization analysis offers Microsoft Dynamics AX 2012 customers an automated tool that validates the customer’s model files against Microsoft Dynamics AX best-practice rules for tables, classes, forms, and enums. It then generates reports, including a summary report display on the site, a detailed Microsoft Excel report that lists all issues, and a developer report that the developer can load in the Microsoft Dynamics AX development environment. 
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Customization analysis
+# Customization analysis in Lifecycle Services (LCS)
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 In Microsoft Dynamics Lifecycle Services, Customization analysis offers Microsoft Dynamics AX 2012 customers an automated tool that validates the customer’s model files against Microsoft Dynamics AX best-practice rules for tables, classes, forms, and enums. It then generates reports, including a summary report display on the site, a detailed Microsoft Excel report that lists all issues, and a developer report that the developer can load in the Microsoft Dynamics AX development environment. 
 
@@ -70,7 +69,7 @@ Customization analysis checks your model files against the Microsoft Dynamics AX
 
 To remove a job from the list of customizations for a project, hover over the job name, then click the box to the left, and click the **Remove** button.
 
-See also
+Additional resources
 --------
 
 [Best Practices for Microsoft Dynamics AX Development](http://msdn.microsoft.com/library/833e44ff-d89a-459a-84be-0cc5da57ee90(AX.60).aspx)

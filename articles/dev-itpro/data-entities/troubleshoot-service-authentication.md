@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Service authentication troubleshooting
+title: Troubleshoot service authentication issues
 description: This topic provides some tips for troubleshooting issues that involve service authentication.  
 author: nimakms
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Service authentication troubleshooting
+# Troubleshoot service authentication issues
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides some tips for troubleshooting issues that involve service authentication.  
 
@@ -51,10 +50,10 @@ When you troubleshoot service authentication issues, there are a few basic and c
 1.  Go to <http://jwt.io>, and paste the JWT into the input panel.
 2.  View the contents in the form of name-value pairs. See the example that follows.
 3.  Verify that the following information is correct:
-    -   **"aud"** – The value corresponds to the Microsoft Azure Active Directory (Azure AD) resource concept. Here are some typical issues that involve "aud":
+    -   **"aud"** – The value corresponds to the Microsoft Azure Active Directory (Azure AD) resource concept. Here are some typical issues that involve "aud":
         -   The **"aud"** segment of the JWT contains a URI that has a trailing slash.
         -   The **"aud"** segment of the JWT contains a URI that uses an incorrect capitalization style. The URI must be all lowercase.
-    -   **"appid"** – The value corresponds to the Azure AD Native Client App ID (or Service App ID).
+    -   **"appid"** – The value corresponds to the Azure AD Native Client App ID (or Service App ID).
     -   **"upn"** – The value corresponds to the user who is being authenticated through a Native Client App.
 
 The following illustration shows an example of the contents of the JWT. [![Example of a JWT](./media/serviceauthenticationtroubleshooting01.png)](./media/serviceauthenticationtroubleshooting01.png)

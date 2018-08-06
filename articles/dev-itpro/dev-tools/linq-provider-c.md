@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: LINQ provider for C#
+title: Language Integrated Query (LINQ) provider for C#
 description: This topic discusses the LINQ provider.
 author: pvillads
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# LINQ provider for C#
+# Language Integrated Query (LINQ) provider for C#
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic discusses the LINQ provider.
 
@@ -59,7 +58,7 @@ There are two syntactic mechanisms for accessing the LINQ provider in C\# (or in
 -   By standard, or fluent, method call syntax.
 -   By specialized syntax that the C\# compiler has been enhanced to understand as equivalent to the LINQ method calls. (Such syntax is sometimes called “syntactic sugar”.)
 
-This topic is going to review each syntactic mechanism for LINQ, starting with the easier specialized syntax.
+This topic is going to review each syntactic mechanism for LINQ, starting with the easier specialized syntax.
 
 ## LINQ by specialized syntax in C\#
 Some .NET languages understand specialized syntax for LINQ as an alternative that is easier for us to write. C\# is one such language. ***Note about var:*** To use LINQ in C\#, you must understand the C\# keyword **var**, which is used to declare variables. The var keyword tells the compiler to figure out the data type of the variable by what is assigned to the variable. This feature is now also available in X++. The type is implicit in the source code, and the type is settled and unvarying after the compilation completes.
@@ -169,7 +168,7 @@ The model that's provided by LINQ allows queries to be composed of subqueries. T
 
 LINQ queries can be applied for CRUD operations. But the model for updating, deleting, and inserting records isn't useful for the expression of set based operations. We're now working on extensions to add to the LINQ model that will translate into set based operations.
 
-See also
+Additional resources
 --------
 
 [Programming language support](programming-language-support.md)

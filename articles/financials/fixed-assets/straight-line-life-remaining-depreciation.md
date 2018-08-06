@@ -32,19 +32,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Straight line life remaining depreciation
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article gives an overview of the Straight line life remaining method of depreciation.
 
-When you set up a fixed asset depreciation profile and select **Straight line life remaining** in the **Method** field on the **Depreciation profiles** page, the depreciation of fixed assets that are assigned to the depreciation profile is based on the remaining service life of the asset. The depreciation amount is generally the same in each depreciation period. To set up straight line life remaining depreciation, you also must select options in the **Depreciation year** field and the **Period frequency** field on the **Depreciation profiles** page. The options that are available in the **Period frequency** field vary, depending on the value that is selected in the **Depreciation year** field.
+When you set up a fixed asset depreciation profile and select **Straight line life remaining** in the **Method** field on the **Depreciation profiles** page, the depreciation of fixed assets that are assigned to the depreciation profile is based on the remaining service life of the asset. The depreciation amount is generally the same in each depreciation period. To set up straight line life remaining depreciation, you also must select options in the **Depreciation year** field and the **Period frequency** field on the **Depreciation profiles** page. The options that are available in the **Period frequency** field vary, depending on the value that is selected in the **Depreciation year** field.
 
 ## Select a depreciation year
 You can select either **Calendar** or **Fiscal** in the **Depreciation year** field on the **Depreciation profiles** page. The default value is **Calendar**. Your selection determines the options that are available in the **Period frequency** field. This field defines the depreciation accrual posting dates and amounts throughout the calendar year.
 
 ### Calendar
 
-If you select **Calendar** in the ***Depreciation year*** field, a year of January 1 through December 31 is assumed, even if you've defined the fiscal calendar differently. The **Calendar** option updates the depreciation base on January 1 of each year. Typically, the depreciation base is the net book value minus the salvage value. In the example later in this topic, the depreciation base is the numerator in the first expression in the calculations column. If you select **Calendar** as the depreciation year, the following options are available in the **Period frequency** field:
+If you select **Calendar** in the ***Depreciation year*** field, a year of January 1 through December 31 is assumed, even if you've defined the fiscal calendar differently. The **Calendar** option updates the depreciation base on January 1 of each year. Typically, the depreciation base is the net book value minus the salvage value. In the example later in this topic, the depreciation base is the numerator in the first expression in the calculations column. If you select **Calendar** as the depreciation year, the following options are available in the **Period frequency** field:
 
 -   **Yearly** posts an amount on December 31.
 -   **Monthly** posts a monthly amount at the end of each calendar month.
@@ -72,7 +71,7 @@ A fixed asset has the following characteristics.
 | Service life years  | 5      |
 | Yearly depreciation | 2,000  |
 
-The depreciation amount is the same every year: (Acquisition cost – Salvage value) ÷ Service life years
+The depreciation amount is the same every year: (Acquisition cost – Salvage value) ÷ Service life years
 
 | Period | Calculation of the yearly depreciation amount | Net book value at the end of the year |
 |--------|-----------------------------------------------|---------------------------------------|

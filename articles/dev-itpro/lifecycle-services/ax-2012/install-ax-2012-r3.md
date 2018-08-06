@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install Data import/export framework for AX 2012 R3
+title: Install the Data Import/Export Framework (DIXF) for AX 2012 R3
 description: This topic describes how to install the Data Import/Export Framework for Microsoft Dynamics AX 2012 R3. 
 author: kfend
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 2012 R3 CU8
 
 ---
 
-# Install the Data import/export framework for AX 2012 R3
+# Install the Data Import/Export Framework (DIXF) for AX 2012 R3
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how to install the Data Import/Export Framework for Microsoft Dynamics AX 2012 R3. 
 
@@ -71,7 +70,7 @@ These components can be on either the same computer or different computers. You 
 ## Configure the Data Import/Export Framework
 When you have finished installing the Data Import/Export Framework, follow these steps to configure it.
 
-1.  Add the Data Import/Export Framework service account to the **Microsoft Dynamics AX Data Import Export Framework Service Users** local group on the computer that is running the Data Import/Export Framework service. Then restart that computer. **Note: ** For more information about how to add a service account to a group, see [Add a member to a local group](http://go.microsoft.com/fwlink/?LinkID=394060&clcid=0x409).
+1.  Add the Data Import/Export Framework service account to the **Microsoft Dynamics AX Data Import Export Framework Service Users** local group on the computer that is running the Data Import/Export Framework service. Then restart that computer. **Note: ** For more information about how to add a service account to a group, see [Add a member to a local group](http://go.microsoft.com/fwlink/?LinkID=394060&clcid=0x409).
 2.  Add the AOS service account to the **Microsoft Dynamics AX Data Import Export Framework Service Users** local group on the computer that is running the AOS instance. Then restart that computer.
 3.  Set the Data Import/Export Framework parameters. The Data Import/Export Framework requires a shared directory that the Data Import/Export Framework service account must have read access to. The AOS service account must have read and write access to the directory. The AOS service writes data to the shared directory, so that the Data Import/Export Framework can use SQL Server Integration Services to read the data. For performance reasons, we recommend that the directory be located on the same server as SQL Server Integration Services. **Security Note:** Be aware that the shared directory may contain sensitive data, depending on what you are importing and exporting. Ensure that as few users as possible have access to the location, in addition to the AOS service account and the Data Import/Export Framework service account.
     1.  In an AX 2012 R3 client, go to **Data Import/Export Framework** &gt; **Setup** &gt; **Data Import/Export Framework parameters**.

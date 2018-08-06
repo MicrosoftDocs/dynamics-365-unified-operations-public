@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail Modern POS installation and updates
+title: Configure, install, and activate Retail Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Retail Modern POS on various platforms. It then describes how to activate Retail Modern POS through device activation.
 author: jashanno
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail Modern POS configuration and installation
+# Configure, install, and activate Retail Modern POS (MPOS)
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to configure, download, and install Retail Modern POS on various platforms. It then describes how to activate Retail Modern POS through device activation.
 
@@ -307,6 +307,6 @@ On a single-computer system, such as a developer topology or a demo environment,
 
 **Solution:** This issue occurs because Retail Modern POS can't make network calls to the same computer (that is, calls to itself). To mitigate this issue, you must enable an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Retail Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](https://msdn.microsoft.com/en-us/library/windows/apps/hh780593.aspx).
 
-## See also
+## Additional resources
 
 [Install the POS Layout designer](install-pos-layout-designer.md)

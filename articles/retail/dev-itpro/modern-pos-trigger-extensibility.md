@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Modern POS and Cloud POS trigger extensibility
-description: This article explains the client-side trigger functionality in Modern POS and Cloud POS.
+title: Retail Modern POS (MPOS) and Cloud POS trigger extensibility
+description: This topic explains the client-side trigger functionality in Modern POS and Cloud POS.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,25 +30,25 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Modern POS and Cloud POS trigger extensibility
+# Retail Modern POS (MPOS) and Cloud POS trigger extensibility
 
-[!include[banner](../includes/banner.md)]
+> [!NOTE]
+> This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier. This implementation is not supported for versions 7.2 and higher. For those versions, follow the extension model without overlayering.
 
-
-This article explains the client-side trigger functionality in Modern POS and Cloud POS.
+This topic explains the client-side trigger functionality in Modern POS and Cloud POS.
 
 Trigger overview
 ----------------
 
-Triggers are events that are raised by Microsoft Dynamics 365 for Retail for Retail POS. Triggers let you insert custom code before or after operations. There are two kinds of triggers: pre-triggers and post-triggers.
+Triggers are events that are raised by Microsoft Dynamics 365 for Retail for Retail POS. Triggers let you insert custom code before or after operations. There are two kinds of triggers: pre-triggers and post-triggers.
 
 | Pre-triggers                                                                                                                                                                                                                                                    | Post-triggers                                                                                                                                                                                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Pre-triggers can be used to insert custom code before an operation is run. For example, if a customer uses a coupon for a purchase, you can use a pre-trigger to insert custom code to validate that the coupon hasn't expired and hasn't previously been used. | Post-triggers can be used to insert custom code that responds to a completed operation. For example, you can write code that runs after the **CustomerAdd** operation and prompts the cashier to wish the customer a happy birthday if it's the customer’s birthday. |
+| Pre-triggers can be used to insert custom code before an operation is run. For example, if a customer uses a coupon for a purchase, you can use a pre-trigger to insert custom code to validate that the coupon hasn't expired and hasn't previously been used. | Post-triggers can be used to insert custom code that responds to a completed operation. For example, you can write code that runs after the **CustomerAdd** operation and prompts the cashier to wish the customer a happy birthday if it's the customer’s birthday. |
 
 ### Trigger types
 
-In Modern POS and Cloud POS, triggers are either cancelable or non-cancelable.
+In Modern POS and Cloud POS, triggers are either cancelable or non-cancelable.
 
 | Cancelable                                                                                                                                                                                                                                                                                                                                                                                                              | Non-cancelable                                                                                                                                                                                                                                                                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ In Modern POS and Cloud POS, triggers are either cancelable or non-cancelable.
 ### Guidelines
 
 -   **Trigger registration** – All triggers should be registered by using the **TriggerManager::register** method. The **ApplicationStart**, **PreLogOn**, and **PostLogOn** triggers must be registered inside a function that is called when the **DOMContentLoaded** event is raised. Other triggers can be registered in the same manner, but they can also be registered conditionally.
-    -   **Conditional registration** – If the decision about whether to register a trigger is based on information in the channel, the trigger can be registered conditionally. Conditional registration should be performed inside a **PostLogOn** trigger. **Note:** It's important that the conditional registration be performed only during the first sign-in after the app has been loaded. For an example implementation, see the sample code later in this article.
+    -   **Conditional registration** – If the decision about whether to register a trigger is based on information in the channel, the trigger can be registered conditionally. Conditional registration should be performed inside a **PostLogOn** trigger. **Note:** It's important that the conditional registration be performed only during the first sign-in after the app has been loaded. For an example implementation, see the sample code later in this article.
 -   **Trigger implementation** – Each trigger event that is listed in the "Supported trigger events" section has a trigger interface that is associated with it. These trigger interfaces define the contract between the application and the trigger implementations. Each trigger should implement the predefined interface that is associated with the trigger event type that it's registered for.
 
 ### Triggers execution workflow
@@ -72,12 +72,12 @@ Together with pre-operation and post-operation triggers that are triggered for e
 
 -   Application triggers
     -   Cancelable
-        -   **PreLogOn** – Called before sign-in to Modern POS
+        -   **PreLogOn** – Called before sign-in to Modern POS
             -   operatorId
     -   Non-cancelable
         -   **ApplicationStart** – Called when the application is launched
         -   **ApplicationSuspend** – Called when the application is suspended
-        -   **PostLogOff** – Called after the sign-out operation is completed
+        -   **PostLogOff** – Called after the sign-out operation is completed
         -   **PostLogOn** – Called after the sign-in operation is completed
 -   Cash management triggers
     -   Cancelable
@@ -88,7 +88,7 @@ Together with pre-operation and post-operation triggers that are triggered for e
     -   Cancelable
         -   **PreCustomerAdd** – Called before a new customer is created
         -   **PreCustomerClear** – Called before the customer is cleared from the current transaction
-        -   **PreCustomerSearch** – Called before a search for a customer
+        -   **PreCustomerSearch** – Called before a search for a customer
         -   **PreCustomerSet** – Called before the customer is set on the transaction
     -   Non-cancelable
         -   **PostCustomerAdd** – Called after a new customer is created
@@ -113,7 +113,7 @@ Together with pre-operation and post-operation triggers that are triggered for e
         -   **PostOperation** – Called when an operation is completed successfully
 -   Payment triggers
     -   Cancelable
-        -   **PreAddTenderLine** – Called before a tender line is added to the transaction
+        -   **PreAddTenderLine** – Called before a tender line is added to the transaction
         -   **PrePayment** – Called before any payment operation is started
         -   **PreVoidPayment** – Called before the void payment operation is started
     -   Non-cancelable
@@ -142,14 +142,14 @@ Together with pre-operation and post-operation triggers that are triggered for e
         -   **PreConfirmReturnTransaction** – Called after a search for a transaction to return, but before the cart lines appear as available for return
         -   **PreEndTransaction** – Called before a sales transaction is completed
         -   **PreRecallTransaction** – Called before a transaction is recalled
-        -   **PreReturnTransaction** – Called before a transaction is returned
+        -   **PreReturnTransaction** – Called before a transaction is returned
         -   **PreSuspendTransaction** – Called before a transaction is suspended
         -   **PreVoidTransaction** – Called before a transaction is voided
     -   Non-cancelable
         -   **BeginTransaction** – Called before a cart is created and a transaction is started
         -   **PostEndTransaction** – Called after a sales transaction is completed
         -   **PostRecallTransaction** – Called after a transaction is recalled
-        -   **PostReturnTransaction** – Called after items from a transaction are added to the cart for return
+        -   **PostReturnTransaction** – Called after items from a transaction are added to the cart for return
         -   **PostSuspendTransaction** – Called after suspending a transaction
         -   **PostVoidTransaction** – Called after a transaction is voided
 
@@ -158,20 +158,20 @@ The best way to understand triggers is to look at a sample implementation scenar
 
 ### Modern POS/Cloud POS changes to support Swedish localization requirements by using POS triggers
 
-Transactions can't have both return and sale operations if a fiscal register is connected. An **IPreProductSaleTrigger** trigger is implemented to detect this situation if it occurs and to show a message to prompt the cashier. This is a requirement in Sweden.
+Transactions can't have both return and sale operations if a fiscal register is connected. An **IPreProductSaleTrigger** trigger is implemented to detect this situation if it occurs and to show a message to prompt the cashier. This is a requirement in Sweden.
 
-1.  Implement an **IPreProductSaleTrigger** trigger to detect the situation and show a message to prompt the cashier.
+1.  Implement an **IPreProductSaleTrigger** trigger to detect the situation and show a message to prompt the cashier.
 2.  Write trigger business logic in the **Execute** method in the implementation class.
 3.  Register the trigger as part of the **PostLogonTrigger** implementation on the **DOMContentLoad** event. 
 
 [![Trigger01](./media/trigger01.png)](./media/trigger01.png)
 
-**Purpose:** To customize Modern POS/Cloud POS to implement the Swedish localization requirement that the same transaction not include both sale and return lines when a fiscal register is connected. Open a Modern POS project, and add a new TypeScript (.ts) file to add the trigger implementation. We are creating a new TypeScript file for our customization to keep our customization separate from the product code and make upgrades easier to manage.
+**Purpose:** To customize Modern POS/Cloud POS to implement the Swedish localization requirement that the same transaction not include both sale and return lines when a fiscal register is connected. Open a Modern POS project, and add a new TypeScript (.ts) file to add the trigger implementation. We are creating a new TypeScript file for our customization to keep our customization separate from the product code and make upgrades easier to manage.
 
 1.  Start Microsoft Visual Studio 2015 as an administrator.
 2.  Open the Modern POS solution from the Retail SDK directory:
     -   If you're using a cloud-hosted computer, the path is I:/RetailSDK.
-    -   If you're using a locally downloaded machine, the path is C:\\Microsoft Dynamics AX\\70\\Retail SDK.
+    -   If you're using a locally downloaded machine, the path is C:\\Microsoft Dynamics AX\\70\\Retail SDK.
 
 3.  In POS.Core\\Triggers\\, create a new TypeScript file that is named **TriggerSample.ts**. 
 
@@ -321,7 +321,7 @@ Transactions can't have both return and sale operations if a fiscal register is
 9.  Compile and rebuild Modern POS to verify the implementation:
     1.  Go to **Show Journal**, and select a transaction to return. If the transaction has multiple lines, return one line. A return line should be added in the cart.
     2.  In the left navigation pane, use product search (the search icon) to search for the text "shirt."
-    3.  Select one of the shirt products, and then, on the app bar, click **Sell now**.
+    3.  Select one of the shirt products, and then, on the app bar, click **Sell now**.
     4.  Observe that **IPreProductSaleTrigger** trigger is run. You should receive a message that states that you can't perform a sale and a return in same transaction.
 
 

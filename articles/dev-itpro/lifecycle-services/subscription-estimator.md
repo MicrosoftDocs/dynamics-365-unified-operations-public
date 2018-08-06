@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Subscription estimator
+title: Subscription estimator in Lifecycle Services (LCS)
 description: This topic explains how to use the Subscription estimator tool that is available in Lifecycle Services (LCS) for Microsoft Dynamics 365 Finance and Operations.
 author: manalidongre
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform update 12
 
 ---
-# Subscription estimator
+# Subscription estimator in Lifecycle Services (LCS)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Subscription estimator is a tool that is available in Microsoft Dynamics Lifecycle Services (LCS). Microsoft uses this tool to estimate the initial size of the production environment that must be provisioned for a customer. Before customers can request deployment of a production environment, they must estimate their peak workloads in terms of transaction counts and then upload that information to LCS. By using the details of user licenses and transaction counts to infer subscription requirements, the Subscription estimator tool helps ensure that the provisioned environment meets the customer's business requirements.
 

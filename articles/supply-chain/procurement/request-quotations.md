@@ -5,7 +5,7 @@ title: Requests for quotation (RFQs)
 description: This topic provides an overview of requests for quotation (RFQs). Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Requests for quotation (RFQs)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of requests for quotation (RFQs). Organizations
 issue RFQs when they want to receive competitive offers from several vendors for
@@ -85,8 +85,8 @@ the **Request for quotation** page. The Return action generates a new journal
 and a report that will be printed, archived, and sent according to your Printing
 settings.
 
-[!NOTE]
-The name of the **Request for quotation** page has been changed. In earlier releases
+> [!NOTE]
+> The name of the **Request for quotation** page has been changed. In earlier releases
 of Dynamics 365 for Finance and Operations, this page is called **Request for
 quotations reply**.
 
@@ -163,7 +163,7 @@ tokens:
 
 -   %RFQ case name%
 
--   %ExpiryDateTime%
+-   %Expiry Date Time%
 
 -   %Date%
 
@@ -201,8 +201,8 @@ accepted, you must set up reason codes on the **Vendor reasons** page.
 On the **Form setup** page in Procurement and sourcing, you can configure the
 appearance of your printed or stored RFQ documents.
 
-[!NOTE]
-For a public-sector configuration, you must use the amendment process to change
+> [!NOTE]
+> For a public-sector configuration, you must use the amendment process to change
 an RFQ that has already been sent. When an RFQ is sent, fields are locked.
 Therefore, to make changes to the RFQ, you must select **Create** to start the
 amendment process, as described earlier. The locking behavior is controlled by
@@ -413,11 +413,11 @@ Statuses – highest and lowest
 On the Vendor tab of the RFQ case, you can see the lines with the highest and
 the lowest status for a particular vendor. When the vendor is added, and no
 lines have yet been sent, both the lowest and the highest status is
-**Created.**When the RFQ is sent to the vendor with all lines, the status of the
-two lines will be **Sent**. If some lines in a bid from a vendor are accepted
+<strong>Created.</strong>When the RFQ is sent to the vendor with all lines, the status of the
+two lines will be <strong>Sent</strong>. If some lines in a bid from a vendor are accepted
 and others are rejected, the rejected lines will get the lowest status which is
-**Rejected**, and the accepted lines will get the highest status which is
-**Accepted**.
+<strong>Rejected</strong>, and the accepted lines will get the highest status which is
+<strong>Accepted</strong>.
 
 On the RFQ case lines, you can see the highest and the lowest status per line
 across all vendors. If you have sent a line to all the vendors in the RFQ case
@@ -459,7 +459,9 @@ where one bid has been received and the other bid has been accepted. When a
 received bid is rejected, the lowest status will change from received to
 rejected on the RFQ case header and line.
 
-| **Action**                                     | **Lowest status across all lines of all RFQs** | **Highest status across all lines of all RFQs** | **Lowest RFQ case header status** | **Highest RFQ case header status** | **Lowest RFQ case line status** | **Highest RFQ case line status** |
-|------------------------------------------------|------------------------------------------------|-------------------------------------------------|-----------------------------------|------------------------------------|---------------------------------|----------------------------------|
-| Accept one of the bids. (or at least one line) | Received                                       | Accepted                                        | Received                          | Accepted                           | Received                        | Accepted                         |
-| Reject all the other bids.                     | Rejected                                       | Accepted                                        | Rejected                          | Accepted                           | Rejected                        | Accepted   
+
+|            <strong>Action</strong>             | <strong>Lowest status across all lines of all RFQs</strong> | <strong>Highest status across all lines of all RFQs</strong> | <strong>Lowest RFQ case header status</strong> | <strong>Highest RFQ case header status</strong> | <strong>Lowest RFQ case line status</strong> | <strong>Highest RFQ case line status</strong> |
+|------------------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------|-------------------------------------------------|----------------------------------------------|-----------------------------------------------|
+| Accept one of the bids. (or at least one line) |                          Received                           |                           Accepted                           |                    Received                    |                    Accepted                     |                   Received                   |                   Accepted                    |
+|           Reject all the other bids.           |                          Rejected                           |                           Accepted                           |                    Rejected                    |                    Accepted                     |                   Rejected                   |                   Accepted                    |
+

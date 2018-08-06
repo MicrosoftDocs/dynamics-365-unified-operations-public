@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Design a configuration for generating reports in Microsoft Word format for electronic reporting (ER)
+title: Design ER configurations to generate reports in Word format
 description: The following steps explain how a user in either the System administrator or Electronic reporting developer role can configure an Electronic reporting (ER) formats to generate reports as Microsoft Word files. 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Design a configuration for generating reports in Microsoft Word format for electronic reporting (ER)
+# Design ER configurations to generate reports in Word format
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 The following steps explain how a user in either the System administrator or Electronic reporting developer role can configure an Electronic reporting (ER) formats to generate reports as Microsoft Word files. These steps can be performed in the GBSI company.
 

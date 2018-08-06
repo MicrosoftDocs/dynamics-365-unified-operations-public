@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Set up electronic tax declaration (Germany)
+title: Set up electronic tax declarations (Germany)
 description: This procedure walks you through setting electronic tax declaration. 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Set up electronic tax declaration (Germany)
+# Set up electronic tax declarations (Germany)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through setting electronic tax declaration.
 

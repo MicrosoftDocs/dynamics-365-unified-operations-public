@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a purchase agreement
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure guides you through the creation of a purchase agreement. This would typically be done by a purchasing manager. You can use this procedure in demo data company USMF or on your own data. You need to have set up purchase agreement classifications before you start. Once you've created an agreement you can use it when you create a PO, and this will copy the purchase agreement conditions to the header and to any lines in the order that are affected by the agreement.
 

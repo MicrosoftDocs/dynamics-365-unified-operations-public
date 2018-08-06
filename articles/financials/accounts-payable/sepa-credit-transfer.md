@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # SEPA credit transfer overview
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. A SEPA credit transfer is a specific type of payment in euros from one company or individual to another company or individual. The topic also explains how to set up and transmit a credit transfer payment file.
 
@@ -97,7 +96,7 @@ The list of specific parameters depends on the credit transfer format. The follo
 <td>Format</td>
 <td>Select the format for remittance information, depending on the requirements of your country/region or bank:
 <ul>
-<li><strong>Strd</strong> – Select this option to use the structured format when one payment line is settled against one invoice. This option isn't available for the country/region-specific export formats for France, Germany, or the Netherlands.</li>
+<li><strong>Strd</strong> – Select this option to use the structured format when one payment line is settled against one invoice. This option isn&#39;t available for the country/region-specific export formats for France, Germany, or the Netherlands.</li>
 <li><strong>Ustrd</strong> – Select this option to use the unstructured format when the payment is settled against multiple invoices. The invoice numbers for the settled invoices are concatenated and used as the remittance information. In compliance with ISO 20022 guidelines, unstructured remittance information is limited to 140 characters.</li>
 </ul></td>
 </tr>

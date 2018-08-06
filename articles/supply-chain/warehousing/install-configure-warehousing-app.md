@@ -32,11 +32,10 @@ ms.dyn365.ops.version: Version 1611
 
 # Install and configure Microsoft Dynamics 365 for Finance and Operations &#8211; Warehousing
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-
+> 
 > This topic describes how to configure warehousing for cloud deployments. If you are looking for how to configure warehousing for on-premises deployments, please see [Warehousing for on-premises deployments](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 
@@ -50,8 +49,8 @@ The app is available on Android and Windows operating systems. To use this app, 
 | Platform                    | Version                                                                                                                                                                     |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0, 7.0, 8.0                                                                                                                                                     |
-| Windows (UWP)               | Windows 10 (all versions)                                                                                                                                                   |
-| Finance and Operations | Microsoft Dynamics 365 for Operations, version 1611 <br>-or- <br>Microsoft Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
+| Windows (UWP)               | Windows 10 (all versions)                                                                                                                                                   |
+| Finance and Operations | Microsoft Dynamics 365 for Operations, version 1611 <br>-or- <br>Microsoft Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
 
 ## Get the app
 -   Windows (UWP)
@@ -61,7 +60,7 @@ The app is available on Android and Windows operating systems. To use this app, 
     - [Finance and Operations - Warehousing on the Zebra App Gallery](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
 ## Create a web service application in Azure Active Directory
-To enable the app to interact with a specific Finance and Operations server, you must register a web service application in an Azure Active Directory for the Finance and Operations tenant. For security reasons, we recommend that you create a web service application for each device that you use. To create a web service application in Azure Active Directory (Azure AD), complete the following steps:
+To enable the app to interact with a specific Finance and Operations server, you must register a web service application in an Azure Active Directory for the Finance and Operations tenant. For security reasons, we recommend that you create a web service application for each device that you use. To create a web service application in Azure Active Directory (Azure AD), complete the following steps:
 
 1.  In a web browser, go to <https://portal.azure.com>.
 2.  Enter the name and password for the user who has access to the Azure subscription.
@@ -78,7 +77,7 @@ To enable the app to interact with a specific Finance and Operations server, you
 ## Create and configure a user account in Finance and Operations
 To enable Finance and Operations to use your Azure AD application, you need to complete the following configuration steps:
 
-1.  Create a new user account in Azure Active Directory for the Finance and Operations tenant. The purpose of this user account is to access the specific custom service of the warehousing app, which the Finance and Operations server exposes. After completing this step, you will have WMDP user credentials, which consist of a WMDP email address and a WMDP password. To learn about the basic steps for adding users to Azure AD and Finance and Operations, refer to this tutorial: [Sign up for a Finance and Operations subscription](../../dev-itpro/dev-tools/sign-up-preview-subscription.md).
+1.  Create a new user account in Azure Active Directory for the Finance and Operations tenant. The purpose of this user account is to access the specific custom service of the warehousing app, which the Finance and Operations server exposes. After completing this step, you will have WMDP user credentials, which consist of a WMDP email address and a WMDP password. To learn about the basic steps for adding users to Azure AD and Finance and Operations, refer to this tutorial: [Sign up for a Finance and Operations subscription](../../dev-itpro/dev-tools/sign-up-preview-subscription.md).
 2.  Create a Finance and Operations user that corresponds to the warehousing app user credentials.
     1.  In Finance and Operations, go to **System administration** &gt; **Common** &gt; **Users**.
     2.  Create a new user.
@@ -87,18 +86,18 @@ To enable Finance and Operations to use your Azure AD application, you need to c
 3.  Associate your Azure Active Directory application with the warehousing app user.
     1.  In Finance and Operations, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**.
     2.  Create a new line.
-    3.  Enter the **Client ID** (obtained in the last section), give it a name, and select the previously created user. We recommend that you tag all your devices so that you can easily remove their access to Finance and Operations from this page in case they are lost. [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
+    3.  Enter the **Client ID** (obtained in the last section), give it a name, and select the previously created user. We recommend that you tag all your devices so that you can easily remove their access to Finance and Operations from this page in case they are lost. [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
 
 ## Configure the application
-You must configure the app on the device to connect to the Finance and Operations server through the Azure AD application. To do this, complete the following steps.
+You must configure the app on the device to connect to the Finance and Operations server through the Azure AD application. To do this, complete the following steps.
 
 1.  In the app, go to **Connection settings**.
-2.  Clear the **Demo mode** field. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+2.  Clear the **Demo mode** field. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
 3.  Enter the following information: 
-    + **Azure Active directory client ID** - The client ID is obtained in step 9 in "Create a web service application in Active Directory". 
+    + **Azure Active directory client ID** - The client ID is obtained in step 9 in "Create a web service application in Active Directory". 
     + **Azure Active directory client secret** - The client secret is obtained in step 11 in "Create a web service application in Active Directory". 
-    + **Azure Active directory resource** - The Azure AD directory resource depicts the Finance and Operations root URL. **Note**: Do not end this field with a forward slash character (/). 
-    + **Azure Active directory tenant** - The Azure AD directory tenant used with the Finance and Operations server: `https://login.windows.net/your-AD-tenant-ID`. For example: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
+    + **Azure Active directory resource** - The Azure AD directory resource depicts the Finance and Operations root URL. **Note**: Do not end this field with a forward slash character (/). 
+    + **Azure Active directory tenant** - The Azure AD directory tenant used with the Finance and Operations server: `https://login.windows.net/your-AD-tenant-ID`. For example: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
     <br>**Note**: Do not end this field with a forward slash character (/). 
     + **Company** - Enter the legal entity in Finance and Operations to which you want the application to connect. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Select the **Back** button in the top-left corner of the application. The application will now connect to your Finance and Operations server and the log-in screen for the warehouse worker will display. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)

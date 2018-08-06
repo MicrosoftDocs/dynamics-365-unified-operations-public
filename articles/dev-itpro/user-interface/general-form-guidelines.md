@@ -32,42 +32,42 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # General form guidelines
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
 
 Verification checklist
 ----------------------
 
-The verification checklist shows the steps for manually verifying that the form complies with the UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
+The verification checklist shows the steps for manually verifying that the form complies with the UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 ## Standard form guidelines
 **Specific form patterns and subpatterns might have exceptions to these guidelines.**
 
--   The form layout is responsive when the browser is resized or the app is run on different device sizes. In other words, all the fields should be accessible to the user either by reflowing the layout or by scrolling to the fields.
--   Make sure that the form’s default View/Edit state is correct. By default, forms are in View mode. If a form should always be in Edit mode, you must explicitly set **Form.Design.ViewEditMode**=**Edit**.
-    -   The View/Edit state should be appropriate to the state of the entity. For example, if the state of the entity is **Posted**, and the form can’t be edited, the default state should be View mode (and Edit mode should be disabled).
--   **Form captions**:
-    -   Avoid setting the form caption programmatically. Instead, consider setting the **TitleDataSource** property on the form design node to enable the framework to provide the caption dynamically.
-    -   If you can't avoid setting the form caption programmatically, make sure that it's short (no more than 30 characters). This guideline exists because a large font size is used for the form in some form types*.*
-        -   **Exceptions:** Custom Lookups, FactBoxes
-    -   Form captions should provide the user with the context of the “type” of entity. The font size and the position of the form caption will vary, depending on the type of form.
-    -   Don't use the form caption to convey contextual information such as the parent record or other status information.
--   All labels in the form are in sentence case. The framework guarantees consistency by putting some elements, such as Group labels, FactBox captions, Action Pane tab labels, and Button Group labels, in ALL CAPS. These strings should still be added in sentence case, but the framework will display them in all caps.
--   All labels in the form are spelled correctly and use proper grammar.
--   Avoid overriding the formatting alignment for extended data types (EDTs).
--   When custom filters are used, no more than five should be specified. Instead, consider pre-populating the filter pane with fields.
--   Occasionally, a decision must be made to determine whether a control should be temporarily disabled or hidden. The following information can help you make this determination:
-    -   A control should be temporarily disabled if the specific conditions must be met before the control can be enabled, and the user must first perform some action to meet those conditions.
-    -   A control should be hidden from the user if there is nothing that the user can do to enable or edit the control.
-        -   **Exception:** The control is used to convey status to the user.
--   No UX guidelines are violated when security is applied for the various roles that have access to this form.
-    -   **Example:** For role A, field A **is not** required, but for role B, field A **is** required.
--   No UX guidelines are violated when country/region codes are applied.
--   Two fields can share a single label. Group the fields into a group, and set the **FrameType** property of the group to **GroupedFieldsLabel**.
+- The form layout is responsive when the browser is resized or the app is run on different device sizes. In other words, all the fields should be accessible to the user either by reflowing the layout or by scrolling to the fields.
+- Make sure that the form’s default View/Edit state is correct. By default, forms are in View mode. If a form should always be in Edit mode, you must explicitly set **Form.Design.ViewEditMode**=**Edit**.
+  -   The View/Edit state should be appropriate to the state of the entity. For example, if the state of the entity is **Posted**, and the form can’t be edited, the default state should be View mode (and Edit mode should be disabled).
+- **Form captions**:
+  - Avoid setting the form caption programmatically. Instead, consider setting the **TitleDataSource** property on the form design node to enable the framework to provide the caption dynamically.
+  - If you can't avoid setting the form caption programmatically, make sure that it's short (no more than 30 characters). This guideline exists because a large font size is used for the form in some form types<em>.</em>
+    -   **Exceptions:** Custom Lookups, FactBoxes
+  - Form captions should provide the user with the context of the “type” of entity. The font size and the position of the form caption will vary, depending on the type of form.
+  - Don't use the form caption to convey contextual information such as the parent record or other status information.
 
-    [![GeneralForm(1)](./media/generalform1.jpg)](./media/generalform1.jpg)
+- All labels in the form are in sentence case. The framework guarantees consistency by putting some elements, such as Group labels, FactBox captions, Action Pane tab labels, and Button Group labels, in ALL CAPS. These strings should still be added in sentence case, but the framework will display them in all caps.
+- All labels in the form are spelled correctly and use proper grammar.
+- Avoid overriding the formatting alignment for extended data types (EDTs).
+- When custom filters are used, no more than five should be specified. Instead, consider pre-populating the filter pane with fields.
+- Occasionally, a decision must be made to determine whether a control should be temporarily disabled or hidden. The following information can help you make this determination:
+  -   A control should be temporarily disabled if the specific conditions must be met before the control can be enabled, and the user must first perform some action to meet those conditions.
+  -   A control should be hidden from the user if there is nothing that the user can do to enable or edit the control.
+      -   **Exception:** The control is used to convey status to the user.
+- No UX guidelines are violated when security is applied for the various roles that have access to this form.
+  -   **Example:** For role A, field A **is not** required, but for role B, field A **is** required.
+- No UX guidelines are violated when country/region codes are applied.
+- Two fields can share a single label. Group the fields into a group, and set the **FrameType** property of the group to **GroupedFieldsLabel**.
+
+  [![GeneralForm(1)](./media/generalform1.jpg)](./media/generalform1.jpg)
 
 ## Other form guidelines
 -   Use a StaticText control instead of StringEdit for multi-line read-only text. StringEdit controls are semantically incorrect for informational text, because they can never be edited. Additionally, StringEdit controls typically have a border and different layout characteristics than StaticText controls, and these differences negatively affect the user experience.
@@ -96,17 +96,17 @@ It's important that the state of a field be set correctly. The state of the fiel
 <tbody>
 <tr class="odd">
 <td>Enabled=No</td>
-<td>Disabled fields tell the user that the field isn't valid in the current state of the entity. Use the <strong>Enabled</strong> property to disable a field and prevent data input. A disabled field (<strong>Enabled</strong>=<strong>No</strong>) has these characteristics:
+<td>Disabled fields tell the user that the field isn&#39;t valid in the current state of the entity. Use the <strong>Enabled</strong> property to disable a field and prevent data input. A disabled field (<strong>Enabled</strong>=<strong>No</strong>) has these characteristics:
 <ul>
 <li>The field is visually presented so that it looks unavailable. The text will be gray to indicate a “not valid” appearance.</li>
-<li>The field’s value is unimportant and won't be sent to the server for processing.</li>
+<li>The field’s value is unimportant and won&#39;t be sent to the server for processing.</li>
 <li>The field is skipped in the tab sequence.</li>
 </ul>
 A disabled field might become enabled by actions that the user takes in the form. If the user can never enable a field, consider hiding the field instead.</td>
 </tr>
 <tr class="even">
 <td>Readonly=Yes</td>
-<td>For read-only fields, the data is valid in the current context but can't be edited. The field isn't skipped in the tab sequence. If the value can never be edited, consider using <strong>ViewEditMode</strong>=<strong>View</strong> for the field.</td>
+<td>For read-only fields, the data is valid in the current context but can&#39;t be edited. The field isn&#39;t skipped in the tab sequence. If the value can never be edited, consider using <strong>ViewEditMode</strong>=<strong>View</strong> for the field.</td>
 </tr>
 <tr class="odd">
 <td>ViewEditMode=View</td>
@@ -114,11 +114,11 @@ A disabled field might become enabled by actions that the user takes in the for
 </tr>
 <tr class="even">
 <td>Secured</td>
-<td>Fields are typically hidden if they are secured. In grids, each row can define different levels of security for each column. Therefore, for cells where the user has no access, a padlock appears in the field. This isn't an application-controlled ability and occurs automatically.</td>
+<td>Fields are typically hidden if they are secured. In grids, each row can define different levels of security for each column. Therefore, for cells where the user has no access, a padlock appears in the field. This isn&#39;t an application-controlled ability and occurs automatically.</td>
 </tr>
 <tr class="odd">
 <td>Not available</td>
-<td>Similar to secured fields, data can appear in a grid where each row has a different set of columns. In this case, cells that aren't applicable to a row display a “not” symbol. This isn't an application-controlled ability and occurs automatically.</td>
+<td>Similar to secured fields, data can appear in a grid where each row has a different set of columns. In this case, cells that aren&#39;t applicable to a row display a “not” symbol. This isn&#39;t an application-controlled ability and occurs automatically.</td>
 </tr>
 </tbody>
 </table>
@@ -187,18 +187,18 @@ Toggle buttons are typically used instead of traditional check boxes.
 -   If the selection list is common to a set of items, the combo box should appear above all the items that are affected.
 
 ## General grid guidelines
--   Grids should be sorted on the first column and in ascending order, unless the scenario requires a different sort order:
-    -   The identifier (ID) field for documents (Sales Order ID, Purchase Order ID, and so on)
-    -   The name/description field for entities (Vendor name, Customer name, and so on)
-    -   Depending on the scenario, sorting can be on another column that makes business sense, such as the sequence number or date.
--   **Editable grids**:
-    -   You must show and set the mandatory fields in the grid. It's not acceptable to alert the user to a missing mandatory field only when the record is saved.
-    -   All editable grids must have a **New**/**Delete** or **Add**/**Remove** button in a toolbar above the grid, or in the global Action Pane.
--   Order the columns so that the most important columns are on the left. Amount columns are most usable for a user when they are placed in the rightmost position in the grid.
--   Image columns can be used to convey state information for an entity or process, such as the workflow status.
--   In general, the image column should be placed on the left side of the grid, and there should not be a column label. The meaning of the image should be indicated by the tooltip.
--   Numeric columns should be right-aligned. All other columns should be left-aligned.
--   If the form can be opened in View mode and can be used to create records in Edit Mode, the property of the root data source that is connected to the grid should be **Insert If** **Empty**=**No***.* This setting will prevent situations where a user sees and selects a blank record when a read-only form is opened.
+- Grids should be sorted on the first column and in ascending order, unless the scenario requires a different sort order:
+  -   The identifier (ID) field for documents (Sales Order ID, Purchase Order ID, and so on)
+  -   The name/description field for entities (Vendor name, Customer name, and so on)
+  -   Depending on the scenario, sorting can be on another column that makes business sense, such as the sequence number or date.
+- **Editable grids**:
+  -   You must show and set the mandatory fields in the grid. It's not acceptable to alert the user to a missing mandatory field only when the record is saved.
+  -   All editable grids must have a **New**/**Delete** or **Add**/**Remove** button in a toolbar above the grid, or in the global Action Pane.
+- Order the columns so that the most important columns are on the left. Amount columns are most usable for a user when they are placed in the rightmost position in the grid.
+- Image columns can be used to convey state information for an entity or process, such as the workflow status.
+- In general, the image column should be placed on the left side of the grid, and there should not be a column label. The meaning of the image should be indicated by the tooltip.
+- Numeric columns should be right-aligned. All other columns should be left-aligned.
+- If the form can be opened in View mode and can be used to create records in Edit Mode, the property of the root data source that is connected to the grid should be <strong>Insert If</strong> <strong>Empty</strong>=<strong>No</strong><em>.</em> This setting will prevent situations where a user sees and selects a blank record when a read-only form is opened.
 
 ## Entity status field guidelines
 -   The entity status must appear in the upper-right of the form, to the right of the title fields. The Details form patterns provide an optional Group where status fields can be defined.

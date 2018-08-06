@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Enter account and dimension combinations (segmented entry control)
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes how to enter account and dimension combinations or ledger accounts. The entry experience is often referred to as segmented entry control.
 
-Users enter account and dimension combinations on various pages, such as pages for general journals, budgeting, and posting definitions. The valid account and dimension combinations depend on the account structures that are assigned to the ledger and the advanced rules that are assigned to the account structures. When users enter a combination, they can either manually type the values or take advantage of a rich, lookup experience. When you enter the field, you can start to type and it will search the value and the description. For example, if you type 180 it will search any value that begins with that number combination. Or you may type Cash and it will search any value that has a description that begins with Cash. You can also use a wildcard, such as \*Cash or \*180 to search if the value or description contain the search criteria. 
+Users enter account and dimension combinations on various pages, such as pages for general journals, budgeting, and posting definitions. The valid account and dimension combinations depend on the account structures that are assigned to the ledger and the advanced rules that are assigned to the account structures. When users enter a combination, they can either manually type the values or take advantage of a rich, lookup experience. When you enter the field, you can start to type and it will search the value and the description. For example, if you type 180 it will search any value that begins with that number combination. Or you may type Cash and it will search any value that has a description that begins with Cash. You can also use a wildcard, such as \*Cash or \*180 to search if the value or description contain the search criteria. 
 
 The following table describes the keyboard shortcuts that can be used when the lookup is closed.
 
@@ -101,7 +100,7 @@ The following table describes the keyboard shortcuts that can be used when the l
 <tr class="odd">
 <td><ul>
 <li>Chart of accounts delimiter</li>
-<li>Right Arrow and Left Arrow</li>
+<li>Right Arrow and Left Arrow</li>
 </ul></td>
 <td>Move to the next or previous segment.</td>
 </tr>
@@ -116,7 +115,7 @@ The following table describes the keyboard shortcuts that can be used when the l
 </tbody>
 </table>
 
- 
+
 
 
 

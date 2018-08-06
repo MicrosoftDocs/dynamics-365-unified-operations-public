@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Slider and MessageBox
+title: Slider and MessageBox dialogs
 description: There are two dialogs that replace the existing dialog box, the Slider and the MessageBox from Dynamics AX 2012. 
 author: robinarh
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Slider and MessageBox
+# Slider and MessageBox dialogs
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dialogs
 

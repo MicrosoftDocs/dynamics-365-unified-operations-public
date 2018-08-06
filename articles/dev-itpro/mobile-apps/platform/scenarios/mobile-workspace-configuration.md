@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Workspace class overview
+title: Configure workspaces by using the SysAppWorkspace class
 description: This topic explains how you can use the SysAppWorkspace class to configure and publish workspaces on the server. 
 author: makhabaz
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Workspace class overview
+# Configure workspaces by using the SysAppWorkspace class
 
-[!include[banner](../../../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 Workspace class, **SysAppWorkspace**, is the starting point to create, configure and publish workspaces on the server. The following two categories of APIs are available for use in sysAppWorkspace;
 
@@ -108,12 +108,12 @@ Follow these steps to edit the workspace.
 1. Export the workspace by using the mobile app designer. The designer automatically creates new app IDs for workspaces that are stored in the AOT.
 2. Import the newly exported workspace by using the mobile app designer.
 
-    1. Optional: Change the name so that the newly added workspace can be distinguished from other workspaces.
-    2. Copy the app ID of the newly created workspace.
+   1. Optional: Change the name so that the newly added workspace can be distinguished from other workspaces.
+   2. Copy the app ID of the newly created workspace.
 
-    ![New workspace in database](media/workspace-api/UpdateWorkspaceNewWorkspace.png)
+      ![New workspace in database](media/workspace-api/UpdateWorkspaceNewWorkspace.png)
 
-    ![New workspace details](media/workspace-api/UpdateWorkspaceNewWorkspaceDetails.png)
+      ![New workspace details](media/workspace-api/UpdateWorkspaceNewWorkspaceDetails.png)
 
 3. Create a new class that extends your backing class, apply the **SysAppWorkspaceAttribute** attribute, and specify the new app ID.
 

@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Extend table maps used as interfaces
+title: Extend table maps that are used as interfaces
 description: This topic describes how to extend table maps that are used as interfaces.
 author: LarsBlaaberg
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 11
 ---
 
-# Extend table maps used as interfaces
+# Extend table maps that are used as interfaces
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The **SalesPurchLine** and **SalesPurchTable** table maps expose a set of common fields and methods that are used by a variety of product features. The mapping of fields and the implementation of methods have been refactored into a class hierarchy. Some of these changes include:
 - Methods on the table maps have been moved to the class hierarchy.

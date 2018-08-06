@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics AX 2012 features that were postponed
+title: AX 2012 features that were postponed
 description: This topic lists features of Microsoft Dynamics AX 2012 that were postponed, and indicates whether the features have been implemented since the AX 7.0 release.
 author: sericks007
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Dynamics AX 2012 features that were postponed
+# AX 2012 features that were postponed
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic lists features of Microsoft Dynamics AX 2012 that were postponed. These features weren't implemented in Microsoft Dynamics AX 7.0. In the following table, the **Current status** column indicates whether the feature has been implemented since the AX 7.0 release.
 
@@ -54,7 +54,7 @@ For a detailed list of when each version of the product was released, see [Softw
 
 <tr class="even">
 <td>Absence management in Human resources</td>
-<td>Functionality for entering absence transactions isn't included in Finance and Operations. Additionally, functionality for approving absence transactions as a manager isn't included. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
+<td>Functionality for entering absence transactions isn&#39;t included in Finance and Operations. Additionally, functionality for approving absence transactions as a manager isn&#39;t included. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
 <td>Implemented in Dynamics 365 for Talent</td>
 </tr>
 
@@ -112,7 +112,7 @@ For a detailed list of when each version of the product was released, see [Softw
 <tr class="even">
 <td>External questionnaire and recruiting functionality</td>
 <td>Functionality for externally posting questionnaires and open jobs will be added to Talent in a future update.</td>
-<td><p>External questionnaire functionality hasn't been implemented.</p><p>Recruiting functionality is available in the Attract app for Talent.</p></td></tr>
+<td><p>External questionnaire functionality hasn&#39;t been implemented.</p><p>Recruiting functionality is available in the Attract app for Talent.</p></td></tr>
 
 <td>Fiscal printers for Poland</td>
 <td>Integration with Polish fiscal printers enables the required information to be sent to the fiscal printer in the correct format during invoice posting. Examples of Polish fiscal printers include the Posnet Thermal and Elzab Omega printer types. This feature will be available in a future update.</td>
@@ -120,7 +120,7 @@ For a detailed list of when each version of the product was released, see [Softw
 
 <tr class="odd">
 <td>General budget reservations</td>
-<td>Thw General budget reservations document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. This functionality will be added in a future update.</td>
+<td>Thw General budget reservations document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren&#39;t available for other purposes. This functionality will be added in a future update.</td>
 <td>Not implemented</td></tr>
 
 <tr class="even">
@@ -149,7 +149,7 @@ Additionally, on the procurement site the employee could approve a vendor invoic
 
 <tr class="odd">
 <td>Secure global address book</td>
-<td>The ability to help secure the global address book by legal entity and address book hasn't been implemented yet. This feature will be available in a future update.</td>
+<td>The ability to help secure the global address book by legal entity and address book hasn&#39;t been implemented yet. This feature will be available in a future update.</td>
 <td>Not implemented</td></tr>
 <tr class="even">
 
@@ -435,18 +435,18 @@ Additionally, on the procurement site the employee could approve a vendor invoic
 
 <td>Vendor collaboration (Vendor Portal)</td>
 <td>Dynamics AX 2012 provided vendor portal capabilities via Enterprise Portal. These capabilities have been ported to Financial and Operations. In version 7.1 (also known as Dynamics 365 for Operations 1611), a vendor could view and respond to purchase orders.
-</p><p>In version 7.3, the vendor can view and respond to RFQ's. Vendors can also view and edit selected information from the vendor record such as  addresses, contact information, and contact persons, and they can upload documents in relation to their certifications.<p/>
+</p><p>In version 7.3, the vendor can view and respond to RFQ&#39;s. Vendors can also view and edit selected information from the vendor record such as  addresses, contact information, and contact persons, and they can upload documents in relation to their certifications.<p/>
 </td>
 <td>Implemented in version 7.3</td></tr>
 
 <tr class="odd">
 <td>Vendor requests - external request to become a new vendor</td>
-<td>Dynamics AX 2012 provided the ability for an anonymous user to sign up to be a vendor in the system, which could lead to a vendor request for adding a new vendor to the vendor master. In version 7.3, the anonymous request from a prospective vendor can be imported via an entity (Data Management/OData), which can lead to inviting the vendor - or the vendor's contact person - to register additional details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account in Finance and Operations.
+<td>Dynamics AX 2012 provided the ability for an anonymous user to sign up to be a vendor in the system, which could lead to a vendor request for adding a new vendor to the vendor master. In version 7.3, the anonymous request from a prospective vendor can be imported via an entity (Data Management/OData), which can lead to inviting the vendor - or the vendor&#39;s contact person - to register additional details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account in Finance and Operations.
 </td>
 <td>Implemented in version 7.3</td></tr>
 
 <td>Vendor requests in general</td>
-<td>Dynamics AX 2012 had a concept of vendor requests that served various purposes related to updating vendor-related information, such as requesting new procurement categories for the vendor, internal employees requesting new vendors, or requesting to add a vendor to another company. Only the vendor's request of being added as a vendor has been implemented in version 7.3.</td>
+<td>Dynamics AX 2012 had a concept of vendor requests that served various purposes related to updating vendor-related information, such as requesting new procurement categories for the vendor, internal employees requesting new vendors, or requesting to add a vendor to another company. Only the vendor&#39;s request of being added as a vendor has been implemented in version 7.3.</td>
 <td>Not implemented</td>
 </td></tr>
 

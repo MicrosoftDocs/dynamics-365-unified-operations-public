@@ -1,6 +1,7 @@
 ---
 # required metadata
-title: FileUploader
+
+title: FileUploader type
 description: File uploader control type. A control for uploading files such as images.
 author: shadykdc
 manager: AnnBe
@@ -9,7 +10,9 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+
 # optional metadata
+
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
@@ -22,11 +25,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom:
 ms.dyn365.ops.version:
+
 ---
 
-# FileUploader Type
+# FileUploader type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 File uploader control type.
 A control for uploading files such as images.

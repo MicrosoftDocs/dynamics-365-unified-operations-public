@@ -5,7 +5,7 @@ title: Create Open in Excel experiences
 description: Learn about creating Open in Office experiences for Excel and Word.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create Open in Excel experiences
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Learn about creating Open in Office experiences for Excel and Word.
 
@@ -45,15 +44,15 @@ Open in Excel experiences are:
 -   Dynamically-generated or based on a pre-defined template.
 -   Editable and refreshable via the Excel Add-in.
 
-The following image shows the **Excel Add-in** being used for Journal entry.
+The following image shows the **Excel Add-in** being used for Journal entry.
 
 [![off101a](./media/off101a.png)](./media/off101a.png)
 
-## Where are the Open in Excel experiences?
+## Where are the Open in Excel experiences?
 Open in Excel experiences are usually found under in the Open in Excel section of the Open in Microsoft Office menu, but an explicit button can be added for these experiences.
 
-## What's the difference between Export to Excel and Open in Excel?
-The Export to Excel options and experiences are both found in the Open in Microsoft Office menu:
+## What's the difference between Export to Excel and Open in Excel?
+The Export to Excel options and experiences are both found in the Open in Microsoft Office menu:
 
 -   The Export to Excel options are static exports of grid data. Each one corresponds to a visible grid. All the grid data for the current filter is placed into a workbook.
 -   The Open in Excel experiences utilize the Excel Add-in to facilitate refresh and publish.
@@ -76,15 +75,15 @@ When a relationship is defined between two entities, if the identifier for one e
 [![off101d](./media/off101d.png)](./media/off101d.png)
 
 ## What should be done to make an entity ready for use in Excel?
-Define the AutoReport and AutoLookup field groups and test them using the Excel App design experience.
+Define the AutoReport and AutoLookup field groups and test them using the Excel App design experience.
 
 ## Why does an automatically added entity option have “(unfiltered)” after the entity name?
-Currently, a filter is not added to these options, hence the term “(unfiltered)”. In the future, an attempt will be made to apply the filter from the form to these options. For example, if a list of Customers was filtered to just Customers in the state of California, then, in the future, the entity will be scanned for the state field and if it is found then a filter would be added automatically.
+Currently, a filter is not added to these options, hence the term “(unfiltered)”. In the future, an attempt will be made to apply the filter from the form to these options. For example, if a list of Customers was filtered to just Customers in the state of California, then, in the future, the entity will be scanned for the state field and if it is found then a filter would be added automatically.
 
 ## How can an entity be added as an Open in Excel option on a form that doesn’t share the same root datasource?
 A generated Open in Excel option can be added on any form by implementing the ExportToExcelIGeneratedCustomExport interface. When adding a generated option programmatically, the set of fields can be explicitly specified.
 
-## What are the region-specific considerations for defining entities?
+## What are the region-specific considerations for defining entities?
 The Open in Excel generated experiences can be made region-specific by adding region-specific fields into the AutoLookup group. These region-specific fields will then be included in the generated workbook.
 
 ## How can I create a custom lookup for an entity field in Excel?
@@ -96,7 +95,7 @@ A custom lookup can be shown for an Entity field.
     -   SysODataCollectionAttribute(str &lt;name&gt;, Types &lt;type&gt;, “Value”)
 -   Return – The method should return a list of strings.
 
-Example:  
+Example:  
 
     public class ExportToExcel_SimpleEntity extends common
     {
@@ -139,7 +138,7 @@ When a template listed in the **Common** &gt; **Common** &gt; **Office integrati
 [![off101g](./media/off101g.png)](./media/off101g.png)
 
 ## Will a filter be added to the template?
-In the **Document Templates** form, the standard filter for “current record” can be turned on and off. If the filter is on, when the template is invoked as an Open in Excel option, then a filter for the current record will be added to the workbook. The filter will be the key fields and their values.
+In the **Document Templates** form, the standard filter for “current record” can be turned on and off. If the filter is on, when the template is invoked as an Open in Excel option, then a filter for the current record will be added to the workbook. The filter will be the key fields and their values.
 
 ## How can templates be defined in metadata and code and loaded automatically?
 When adding a template into the **Document Templates** form, it is added for that instance and is referred to as a “user-defined” template. Templates can also be defined in metadata and code and loaded automatically, thus making them “system-defined” templates. To create a system-defined template using metadata and code, you need to do the following:
@@ -168,7 +167,7 @@ Don’t create a template if:
 -   You can just specify a set of fields to show in a table binding.
 
 ## What are the region-specific considerations for templates?
-When creating a template for an entity that has region-specific fields, you should leave those region-specific fields out of the template, otherwise all users will see the region-specific fields. Templates should cater to the majority of users by default and region-specific users can add those fields using the easy-to-use design experience of the Excel Add-in.  The region-specific fields and columns can be added by users as needed. That template can be either saved to local computer for reuse by a single user or uploaded via the Document Templates form for reuse by any user of that instance. A couple of other considerations:
+When creating a template for an entity that has region-specific fields, you should leave those region-specific fields out of the template, otherwise all users will see the region-specific fields. Templates should cater to the majority of users by default and region-specific users can add those fields using the easy-to-use design experience of the Excel Add-in.  The region-specific fields and columns can be added by users as needed. That template can be either saved to local computer for reuse by a single user or uploaded via the Document Templates form for reuse by any user of that instance. A couple of other considerations:
 
 -   If a region has a region-specific entity, then a region-specific template could be created.
 -   If a region is important enough, then you could define a region-specific template as well as a region-generic template.
@@ -183,108 +182,108 @@ An explicit button can be added for Open in Excel experiences. The label shown o
 
 An example of this code can be found on the **LedgerJournalTable** form (**General ledger** &gt; **Journals** &gt; **General journal**) in the **Clicked** method on the **OpenLinesInExcel** button.
 
-        [Control("Button")]
-        class OpenLinesInExcel
-        {
-            /// <summary>
-            /// Opens the current journal in Excel for line entry and editing
-            /// </summary>
-            public void clicked()
-            {
-                super();
+        [Control("Button")]
+        class OpenLinesInExcel
+        {
+            /// <summary>
+            /// Opens the current journal in Excel for line entry and editing
+            /// </summary>
+            public void clicked()
+            {
+                super();
 
-                const str templateName = resourceStr(LedgerJournalLineEntryTemplate);
-                DocuTemplate template = DocuTemplate::findTemplate(OfficeAppApplicationType::Excel, templateName);
+                const str templateName = resourceStr(LedgerJournalLineEntryTemplate);
+                DocuTemplate template = DocuTemplate::findTemplate(OfficeAppApplicationType::Excel, templateName);
 
-                // Ensure the template was present
-                if (template && template.TemplateID == templateName)
-                {
-                    Map filtersToApply = new Map(Types::String, Types::String);
+                // Ensure the template was present
+                if (template && template.TemplateID == templateName)
+                {
+                    Map filtersToApply = new Map(Types::String, Types::String);
 
-                    // Create lines filter
-                    ExportToExcelFilterBuilder filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalLineEntity));
-                    str filterString = filterBuilder.areEqual(fieldstr(LedgerJournalLineEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
-                    filtersToApply.insert(tablestr(LedgerJournalLineEntity), filterString);
+                    // Create lines filter
+                    ExportToExcelFilterBuilder filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalLineEntity));
+                    str filterString = filterBuilder.areEqual(fieldstr(LedgerJournalLineEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
+                    filtersToApply.insert(tablestr(LedgerJournalLineEntity), filterString);
 
-                    // Create header filter
-                    filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalHeaderEntity));
-                    filterString = filterBuilder.areEqual(fieldstr(LedgerJournalHeaderEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
-                    filtersToApply.insert(tablestr(LedgerJournalHeaderEntity), filterString);
+                    // Create header filter
+                    filterBuilder = new ExportToExcelFilterBuilder(tablestr(LedgerJournalHeaderEntity));
+                    filterString = filterBuilder.areEqual(fieldstr(LedgerJournalHeaderEntity, JournalBatchNumber), LedgerJournalTable.JournalNum);
+                    filtersToApply.insert(tablestr(LedgerJournalHeaderEntity), filterString);
 
-                    // Generate the workbook using the template and filters
-                    DocuTemplateRender renderer = new DocuTemplateRender();
-                    str documentUrl = renderer.renderTemplateToStorage(template, filtersToApply);
+                    // Generate the workbook using the template and filters
+                    DocuTemplateRender renderer = new DocuTemplateRender();
+                    str documentUrl = renderer.renderTemplateToStorage(template, filtersToApply);
 
-                    // Pass the workbook to the user
-                    if (documentUrl)
-                    {
-                        Browser b = new Browser();
-                        b.navigate(documentUrl, false, false);
-                    }
-                    else
-                    {
-                        error(strFmt("@ApplicationFoundation:DocuTemplateGenerationFailed", templateName));
-                    }
-                }
-                else
-                {
-                    warning(strFmt("@ApplicationFoundation:DocuTemplateNotFound", templateName));
-                }
-            }
+                    // Pass the workbook to the user
+                    if (documentUrl)
+                    {
+                        Browser b = new Browser();
+                        b.navigate(documentUrl, false, false);
+                    }
+                    else
+                    {
+                        error(strFmt("@ApplicationFoundation:DocuTemplateGenerationFailed", templateName));
+                    }
+                }
+                else
+                {
+                    warning(strFmt("@ApplicationFoundation:DocuTemplateNotFound", templateName));
+                }
+            }
 
-        }
+        }
 
-The following image shows the **General ledger** &gt; **Journals** &gt; **General journal** form with the **Open lines in Excel** button highlighted. 
+The following image shows the **General ledger** &gt; **Journals** &gt; **General journal** form with the **Open lines in Excel** button highlighted. 
 [![off101i](./media/off101i.png)](./media/off101i.png)
 
 To programmatically add generated and template Open in Excel options, Open in Excel options can be added by implementing the ExportToExcelIGeneratedCustomExport and ExportToExcelITemplateCustomExport interfaces. This allows the addition of options to forms where the entity or template doesn’t have the same table as the root datasource. An example of when you would use this capability is on forms without a datasource, potentially containing only a collection of form parts. The following example adds generated and template Open in Excel options programmatically to the **FMRental** form.
 
     [Form]
     public class FMRental extends FormRun implements ExportToExcelIGeneratedCustomExport, ExportToExcelITemplateCustomExport
-    {    
+    {    
     ...
-        public List getExportOptions()
-        {
-            List exportOptions = new List(Types::Class);
+        public List getExportOptions()
+        {
+            List exportOptions = new List(Types::Class);
 
-            ExportToExcelExportOption exportOption = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomGenerated, int2str(1));
-            exportOption.setDisplayNameWithDataEntity(tablestr(FMRentalEntity));
-            exportOptions.addEnd(exportOption);
+            ExportToExcelExportOption exportOption = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomGenerated, int2str(1));
+            exportOption.setDisplayNameWithDataEntity(tablestr(FMRentalEntity));
+            exportOptions.addEnd(exportOption);
 
-            ExportToExcelExportOption exportOption2 = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomTemplate, int2str(2));
-            exportOption2.displayName("Analyze rentals");
-            exportOptions.addEnd(exportOption2);
-            
-            return exportOptions;
-        }
+            ExportToExcelExportOption exportOption2 = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomTemplate, int2str(2));
+            exportOption2.displayName("Analyze rentals");
+            exportOptions.addEnd(exportOption2);
 
-        public ExportToExcelDataEntityContext getDataEntityContext(ExportToExcelExportOption _exportOption)
-        {
-            ExportToExcelDataEntityContext context = null;
+            return exportOptions;
+        }
 
-            if (_exportOption.id() == int2str(1))
-            {
-                context = ExportToExcelDataEntityContext::construct(tablestr(FMRentalEntity), tablefieldgroupstr(FMRentalEntity, AutoReport));
-            }
+        public ExportToExcelDataEntityContext getDataEntityContext(ExportToExcelExportOption _exportOption)
+        {
+            ExportToExcelDataEntityContext context = null;
 
-            return context;
-        }
+            if (_exportOption.id() == int2str(1))
+            {
+                context = ExportToExcelDataEntityContext::construct(tablestr(FMRentalEntity), tablefieldgroupstr(FMRentalEntity, AutoReport));
+            }
 
-        public System.IO.Stream getTemplate(ExportToExcelExportOption _exportOption)
-        {
-            System.IO.Stream stream = null;
+            return context;
+        }
 
-            if (_exportOption.id() == int2str(2))
-            {
-                stream = Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream(resourcestr(FMRentalEditableExportTemplate));
-            }
+        public System.IO.Stream getTemplate(ExportToExcelExportOption _exportOption)
+        {
+            System.IO.Stream stream = null;
 
-            return stream;
-        }
+            if (_exportOption.id() == int2str(2))
+            {
+                stream = Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream(resourcestr(FMRentalEditableExportTemplate));
+            }
 
-        public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
-        {
-        }
+            return stream;
+        }
+
+        public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
+        {
+        }
     ...
 
 ## How do I add a filter for a programmatically-added template Open in Excel option?
@@ -303,7 +302,7 @@ A template Open in Excel option can be programmatically added by implementing th
 
     }
 
-After a filter has been added programmatically, the resulting filter can be viewed in the Excel Add-in using the **Filter** button. The following image shows the Excel Add-in with the **Filter** button highlighted.
+After a filter has been added programmatically, the resulting filter can be viewed in the Excel Add-in using the **Filter** button. The following image shows the Excel Add-in with the **Filter** button highlighted.
 
 [![off101j](./media/off101j.png)](./media/off101j.png) 
 
@@ -314,16 +313,18 @@ The following image shows the Excel Add-in with the **Filter** dialog box opened
 ## How do I enable relationship lookups in Excel?
 To enable relationship lookups in the Excel Data Connector, you must ensure that the following metadata is set.
 
-  - The Role and Related Data Entity Role defined on the relationship need to be unique among all relationships on both the source and target entity. This is particularly important for relationships involving entities with lots of relationships, such as DimensionCombinationEntity. If you're not seeing an expected lookup, try changing the role names to the following format:
+- The Role and Related Data Entity Role defined on the relationship need to be unique among all relationships on both the source and target entity. This is particularly important for relationships involving entities with lots of relationships, such as DimensionCombinationEntity. If you're not seeing an expected lookup, try changing the role names to the following format:
 
-     - **Role**: \[this entity's public name\] + \[target entity's public name\] + \[target entity field\] + "Source"
-     - **Related Data Entity Role**: \[this entity's public name\] + \[target entity's public name\] + \[target entity field\] + "Target"
+   - **Role**: \[this entity's public name\] + \[target entity's public name\] + \[target entity field\] + "Source"
+   - **Related Data Entity Role**: \[this entity's public name\] + \[target entity's public name\] + \[target entity field\] + "Target"
 
- - The Cardinality and Related Data Entity Cardinality need to be set appropriately.
- -  At least one constraint must be added to the relationship. With the exception of dimension relationships, which are a special case, the properties constrained must both be public.
+  - The Cardinality and Related Data Entity Cardinality need to be set appropriately.
+  -  At least one constraint must be added to the relationship. With the exception of dimension relationships, which are a special case, the properties constrained must both be public.
 
 ## How can I enable users to create new header records as well as lines in a workbook?
 To enable creation of header records and related lines, the header data source must be added as a set of "fields" and the lines data source must be added as a related table. This pattern can work well for document data entry scenarios such as Journal entry.
+
+To learn more about header records and related lines, watch the short [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) video.
 
 To design a workbook with header fields and a lines table that enables header creation:
 1. In the Excel Add-in, click **Design** to open the Designer. Select **Add fields** to add a header data source.
@@ -385,13 +386,13 @@ If you are not seeing an expected lookup, validate relationship metadata by chec
 ## How do dimensions work?
 The easiest way to set up dimension metadata on data entities is to use the data entity creation wizard, which will automatically create the private relationships and public display value fields exactly as the dimensions framework needs them. If you want to customize your dimensions setup, see [Dimensions Overview](../financial/dimensions-overview.md). Lookups, are only generated automatically for non-ledger dimensions. Custom dimensions are not supported curently. If you want to enable lookups for ledger dimensions (MainAccount, Department, CostCenter, etc.), see [Dimensions Overview](../financial/dimensions-overview.md) for guidance on creating relationships on DimensionCombationEntity and DimensionSetEntity fields. When those relationships are present, relationship lookups will be displayed in the Excel Data Connector. The Excel Data Connector supports two types of dimension data entry: editing the display value directly or editing each attribute of the display value in a separate column. If both the display value column and the individual attribute columns are bound, they can both be edited and published separately. If both the display value and an individual attribute are edited in the same row, the individual attribute change overrides the display value change.
 
-## How do I create formula table columns?
+## How do I create formula table columns?
 If a formula is needed in a table, then add a formula column. When in the field selection page for a table binding, click the **Formula** button above the Selected fields list to add a new formula column. The label and value for the formula are entered in the fields immediately below the Selected fields list. After adding a new formula column, leave the value empty and click **Update**. After the field has been added to the table, use standard Excel capabilities to create a formula, then copy the formula and paste it into the formula column value field. When defining a formula, make sure there is more than one row in the table, otherwise the formula that Excel provides may be for ALL rows instead of THAT row. To specify just the current row, the at sign (@) is needed. For example, sum of four columns for all rows "=SUM(Table1\[\[ColumnA\]:\[ColumnD\]\])" versus sum of four columns for the current row "=SUM(Table1\[@\[ColumnA\]:\[ColumnD\]\])".
 
-## Known issues
+## Known issues
 ### Refresh doesn’t automatically occur in old templates
 
-The ability to control “refresh on open” was added as a setting. To add this to the default behavior, existing templates and workbooks need to have the **Refresh on open** check box selected in **Options** &gt; **Data Connector** &gt; **Refresh Options**.
+The ability to control “refresh on open” was added as a setting. To add this to the default behavior, existing templates and workbooks need to have the **Refresh on open** check box selected in **Options** &gt; **Data Connector** &gt; **Refresh Options**.
 
 ### Error finding entity
 
@@ -399,15 +400,15 @@ The reference to entities changed from using the Private Entity Name (DataEntity
 
 [![off101l](./media/off101l.png)](./media/off101l.png) 
 
-To resolve this, change the binding information in the affected template so that it points to DataEntity.PublicEntityName instead of DataEntity.Name.
+To resolve this, change the binding information in the affected template so that it points to DataEntity.PublicEntityName instead of DataEntity.Name.
 
-1.  For the DataEntity.Name that needs to be replaced, determine the DataEntity.PublicEntityName, for example replace FMCustomerEntity with FleetCustomer.
-2.  Find the affected template.
+1.  For the DataEntity.Name that needs to be replaced, determine the DataEntity.PublicEntityName, for example replace FMCustomerEntity with FleetCustomer.
+2.  Find the affected template.
 3.  Change the file extension on the template from .xlsx to .zip.
     [![off101m](./media/off101m.png)](./media/off101m.png)
-4.  The file to be changed will be one of the webextension\*.xml files in the xlwebextensions directory, such as 2015-05-25-FleetCustomersWithLocations.zipxlwebextensionswebextension2.xml.
+4.  The file to be changed will be one of the webextension\*.xml files in the xlwebextensions directory, such as 2015-05-25-FleetCustomersWithLocations.zipxlwebextensionswebextension2.xml.
 5.  Open the file to ensure that you have the correct location.
-6.  Find the DataEntity.Name,  such as FMCustomerEntity.
+6.  Find the DataEntity.Name,  such as FMCustomerEntity.
     [![off101n](./media/off101n.png)](./media/off101n.png)
 7.  Extract the zip file.
     [![off101o](./media/off101o.png)](./media/off101o.png)
@@ -418,6 +419,6 @@ To resolve this, change the binding information in the affected template so that
 12. Create a new zip file of all the previously extracted content. This usually involves highlighting the content inside the archive/zip folder and creating a zipped folder using that content.
     [![off101p](./media/off101p.png)](./media/off101p.png)
 13. Verify that the zip file has the “\_rels”, “docProps”, and “xl” folders in the root of the zip file.
-14. Rename the zip file as needed, for example rename the file 2015-05-25-FleetCustomersWithLocations.zip.
+14. Rename the zip file as needed, for example rename the file 2015-05-25-FleetCustomersWithLocations.zip.
 15. Change the zip file extension to .xlsx.
-16. Re-publish the workbook .xlsx file, if needed.
+16. Re-publish the workbook .xlsx file, if needed.

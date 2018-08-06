@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install the Data import/export framework (AX 2012)
+title: Install the Data Import/Export Framework (DIXF)
 description: This topic provides information about how to install the data import/export framework.
 author: kfend
 manager: AnnBe
@@ -30,14 +30,11 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Install the Data import/export framework (AX 2012)
+# Install the Data Import/Export Framework (DIXF)
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-
-
-
-**Note: **The procedure for completing this task changed for cumulative update 7 or later for Microsoft Dynamics AX 2012 R2. The updated procedure also applies to AX 2012 R3. For more information, see the section later in this topic. Before you begin, your environment must include the following components:
+**Note: **The procedure for completing this task changed for cumulative update 7 or later for Microsoft Dynamics AX 2012 R2. The updated procedure also applies to AX 2012 R3. For more information, see the section later in this topic. Before you begin, your environment must include the following components:
 
 -   A running version of AX 2012 that has been configured for your business
 -   A running version of Microsoft SQL Server Integration Services that is running the same version of SQL Server that is hosting the Microsoft Dynamics AX business and model store database
@@ -112,7 +109,7 @@ This section describes how to troubleshoot issues with a Data Import/Export Fram
 
 After you install the Data Import/Export Framework, if you cannot compile, validate that the Data Import/Export Framework was installed correctly.
 
-1.  Verify that the Microsoft Dynamics AX Data Import/Export Framework service is running.
+1.  Verify that the Microsoft Dynamics AX Data Import/Export Framework service is running.
 2.  Verify that the Data Import/Export Framework DLLs are present in C:\Program Files (x86)\Microsoft Dynamics AX60\Client\Bin folder:
     -   Microsoft.Dynamics.AX.DMF.Mapper.dll
     -   Microsoft.Dynamics.AX.DMF.PreviewGrid.
@@ -138,7 +135,7 @@ Verify that the following files are present in the C:\Program Files (x86)\Micros
 
 ### Changes to the location of the Data Import/Export Framework service
 
-If you have to update the location where you run Integration Services and the Data Import/Export Framework service, you can update the endpoint address in the Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file to use the new server name. &lt;endpoint address="http://&lt;&lt;NEW MACHINE NAME&gt;&gt;:7000/DMFService/DMFServiceHelper.svc" **Note:** The Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file is located in the C:\Program Files (x86)\Microsoft Dynamics AX60\Server\Bin folder on the server that is running the AOS instance.
+If you have to update the location where you run Integration Services and the Data Import/Export Framework service, you can update the endpoint address in the Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file to use the new server name. &lt;endpoint address="http://&lt;&lt;NEW MACHINE NAME&gt;&gt;:7000/DMFService/DMFServiceHelper.svc" **Note:** The Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file is located in the C:\Program Files (x86)\Microsoft Dynamics AX60\Server\Bin folder on the server that is running the AOS instance.
 
 
 

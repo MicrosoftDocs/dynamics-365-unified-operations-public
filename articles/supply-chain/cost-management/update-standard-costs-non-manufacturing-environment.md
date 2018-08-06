@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Update standard costs in a non-manufacturing environment
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides guidance for updating standard costs in a non-manufacturing environment.
 

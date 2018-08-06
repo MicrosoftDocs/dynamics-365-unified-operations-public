@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up and deploy on-premises environments landing page
+title: Set up and deploy on-premises environments home page
 description: This topic provides links to topics about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Set up and deploy on-premises environments landing page
+# Set up and deploy on-premises environments home page
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The process for deploying on-premises environments differs between Platform update 12 and earlier platform updates. For details about the setup changes in Platform update 12, see [What's new or changed in on-premises deployments with Platform update 12](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md). 
 

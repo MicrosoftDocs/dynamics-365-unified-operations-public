@@ -31,8 +31,7 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Returnable packaging for Poland
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 The functionality for returnable packaging lets you handle the registration of packages that can be returned by customers. Users can define packaging codes and specify the amount of the deposit that a customer pays for returned packaging materials. This functionality is an extension of the standard functionality for packaging materials.
 

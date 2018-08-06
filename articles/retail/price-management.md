@@ -5,7 +5,7 @@ title: Retail sales price management
 description: This topic describes the concepts for creating and managing sales prices in Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail sales price management
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic provides information about the process of creating and managing sales prices in Microsoft Dynamics 365 for Retail. It focuses on the concepts that are involved in this process, and on the effects of the various configuration options for sales prices.
 
@@ -201,32 +201,6 @@ Microsoft SQL Server Express is often used for channel databases because of the 
 When you set sales prices in Microsoft Dynamics 365, you don't specify whether the price value that you're setting includes or excludes tax. The value is just the price. However, the **Price includes sales tax** setting on retail channels lets you configure retail channels so that they either include or exclude tax from prices. This setting is set on the channel and can change even in a single company.
 
 If you work with both inclusive and exclusive types of tax, it's very important that you set prices correctly, because the total amount that the customer pays will change if the **Price includes sales tax** setting on the channel is changed.
-
-### Effect of the Price includes sales tax setting on financial postings
-All the amounts that are posted to the general ledger for revenue and discount accounts are affected by the **Price includes sales tax** setting. The following example shows how this setting affects financial postings.
-
-The example discusses only the sales postings, because the **Price includes sales tax** setting doesn't affect inventory cost postings.
-
-#### Example
-For this example, discount amounts are configured so that they are posted separately from revenue.
-
-You sell a $100 product that has a tax rate of 10 percent, and a 5-percent discount is applied. The following accounts from the USRT demo data are used:
-
-- **Revenue:** 401100
-- **Discount:** 403200
-- **Tax:** 202100
-
-**Case 1: Tax-exclusive (also known as sales tax)**
-
-- **Revenue:** $100
-- **Discount:** $5
-- **Tax:** $9.5 (= 10 percent of $95)
-
-**Case 2: Tax-inclusive (also known as value-added tax \[VAT\])**
-
-- **Revenue:** $90
-- **Discount:** $4.5 (= 5 percent of $90)
-- **Tax:** $10
 
 ## Differences between retail pricing and non-retail pricing
 A single pricing engine is used to calculate retail prices across all channels: Call center, Retail store, and Online stores. This helps in enabling the unified commerce scenarios. 

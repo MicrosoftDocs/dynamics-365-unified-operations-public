@@ -1,5 +1,5 @@
 ---
-title: Business process modeler
+title: Business process modeler (BPM) in Lifecycle Services (LCS)
 description: This topic provides information about the Business process modeler tool in Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Business process modeler
+# Business process modeler (BPM) in Lifecycle Services (LCS)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS) is a tool that you can use to create, view, and modify repeatable implementations that are based on business process libraries and flowcharts. BPM helps you align your business processes in Microsoft Dynamics 365 for Finance and Operations, with industry-standard processes that are described by the [American Productivity &amp; Quality Center (APQC)](http://www.apqc.org/). You can perform fit-gap analysis between your business requirements and the default processes in Microsoft Dynamics 365 for Finance and Operations. Additionally, you can add new business processes and create flowcharts for processes that aren't already defined in Finance and Operations.
 

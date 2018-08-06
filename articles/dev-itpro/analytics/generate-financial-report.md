@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Generate a financial report
+title: Generate financial reports
 description: This topic provides information about generating a financial report. 
 author: aprilolson
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Generate a financial report
+# Generate financial reports
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about generating a financial report. 
 
@@ -54,13 +53,13 @@ When you generate a report, the options that you have specified on the Report de
 ## Generate a financial report
 
 To generate a financal report with Microsoft Dynamics 365 for Finance and Operations, go to **General ledger** > **Inquiries and reports** > **Financial reports**. 
- - Select a report to generate and click **Generate**. 
- - Fill in the **Report date** field and click **OK**.
- 
- After the report has been generated, the report will be available to view in the **Reports** section.
- You can select to **View** or **Delete** the report.
- 
- 
+- Select a report to generate and click **Generate**. 
+- Fill in the **Report date** field and click **OK**.
+
+  After the report has been generated, the report will be available to view in the **Reports** section.
+  You can select to **View** or **Delete** the report.
+
+
 To generate a report using **Report designer**, open the report definition and then click the Generate button in the toolbar. The Report Queue Status window will open and indicate the location of your report in the queue. By default, the generated report will open in the Web Viewer.
 
 > [!NOTE]
@@ -163,8 +162,8 @@ When you run a missing account analysis, the following keyboard shortcuts are av
 | Open the selected report definition  | Ctrl+R                     |
 | Open the selected row definition     | Ctrl+O                     |
 
- 
-See also
+
+Additional resources
 --------
 
 [Financial reporting](financial-reporting-intro.md)

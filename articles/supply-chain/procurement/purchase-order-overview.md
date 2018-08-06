@@ -34,10 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Purchase order overview
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!include [retail name](../includes/retail-name.md)]
 
 This article provides general information about purchase orders (POs) and links to additional articles that are related to the various stages that a PO goes through.
 
@@ -47,7 +46,7 @@ The **Purchase orders** page contains an overview of the available orders and le
 
 There are many reports where you can view information about POs, product receipts, and vendor invoices. These reports are found in the **Procurement and sourcing** and **Accounts payable** modules.  
 
-The **Purchase order preparation** and **Purchase order receipt and follow-up** workspaces let you view lists of POs in the various states that they have progressed to. They also provide a summary of the actions that must be taken. The **Purchase order preparation** workspace is focused on PO creation and review, processing of the order through approval, and confirmation with the vendor. The **Purchase order receipt and follow-up** workspace is focused on processing the receipt of goods or services against POs. It includes lists that give insight into receipts that are overdue, or that will soon be due for delivery by the supplier. These workspaces aren't used to perform the related receipt activities that are done in the warehouse. Those activities are performed by using pages in the **Inventory management** and **Warehouse management** modules. Processing of vendor invoices should be done by using the **Vendor invoice entry** workspace, and payments should be done by using the **Vendor payments** workspace.  
+The **Purchase order preparation** and **Purchase order receipt and follow-up** workspaces let you view lists of POs in the various states that they have progressed to. They also provide a summary of the actions that must be taken. The **Purchase order preparation** workspace is focused on PO creation and review, processing of the order through approval, and confirmation with the vendor. The **Purchase order receipt and follow-up** workspace is focused on processing the receipt of goods or services against POs. It includes lists that give insight into receipts that are overdue, or that will soon be due for delivery by the supplier. These workspaces aren't used to perform the related receipt activities that are done in the warehouse. Those activities are performed by using pages in the **Inventory management** and **Warehouse management** modules. Processing of vendor invoices should be done by using the **Vendor invoice entry** workspace, and payments should be done by using the **Vendor payments** workspace.  
 
 The following articles provide an overview of the various stages that a PO goes through:
 
@@ -65,7 +64,7 @@ There are three types of POs. When you create a PO, you must specify the type. Y
 | Purchase order | Use this type to create POs when orders are confirmed with a vendor, and as the orders are processed through receipt and invoicing before payment is made to the vendor. This type of PO is the most common.                                                                          |
 | Returned order | Use this type when you return goods to the vendor. This type of order requires that you specify the return material authorization (RMA) number that the vendor gives you. You specify the RMA number on the **General** tab of the PO. The order lines must have negative quantities. |
 
-## Purchase order statuses
+## Purchase order statuses
 POs include several status fields that indicate the progress of the order. All these fields are visible in the **Header** view of the order, and a few of them are also visible in the grid overview of all orders. The **Status** field show the status for quantities on the order. The following values are available:
 
 -   **Open order** – Orders have been created, and quantities are on order.
@@ -89,7 +88,7 @@ The **Approval status** field is used when a PO goes through a review process or
 -   **Confirmed** – This status is assigned after the order has been confirmed. Typically, this status is the last approval status that is assigned to an order.
 
 
-See also
+Additional resources
 --------
 
 [Purchase order creation](purchase-order-creation.md)

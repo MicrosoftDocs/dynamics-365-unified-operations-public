@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cash registers for Sweden
+title: Cash register functionality for Sweden
 description: This topic provides an overview of the cash register functionality that is available for Sweden. 
 author: EvgenyPopovMBS
 manager: annbe
@@ -26,9 +26,9 @@ ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ---
-# Cash registers for Sweden
+# Cash register functionality for Sweden
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the cash register functionality that is available for Sweden in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 
@@ -101,12 +101,12 @@ You must specify the following general settings for Sweden.
 
 1. Set up the following parameters for value-added tax (VAT) per Swedish requirements:
 
-    - Sales tax codes
-    - Sales tax groups
-    - Item sales tax groups
-    - Sales tax settings in items (item sales tax groups for sales)
+   - Sales tax codes
+   - Sales tax groups
+   - Item sales tax groups
+   - Sales tax settings in items (item sales tax groups for sales)
 
-    For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+     For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
 
 2. On the **All retail stores** page, update retail store details. Specifically, set the following parameters:
     

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Practice manager Power BI content
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes what is included in the **Practice manager** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 
@@ -123,6 +123,8 @@ The following sections describe the aggregate measurements that are used in each
 ### Entity: ProjectAccountingCube\_TotalEstimatedCosts 
 **Data source:** ProjTable
 
-| Key aggregate measurement       | Field               | Description |
-|---------------------------------|---------------------|-------------|
+
+|    Key aggregate measurement    |        Field        |                                          Description                                           |
+|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
 | Completed activity planned cost | Sum(TotalCostPrice) | The total cost price in estimates for all project transaction types that have completed tasks. |
+

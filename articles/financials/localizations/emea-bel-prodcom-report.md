@@ -31,12 +31,11 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up and maintain PRODCOM
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 for Finance and Operations. 
 
-Manufacturers of industrial products are required to report the quantities and values of products sold, as well as employment data, to the Nationaal Instituut voor de Statistiek (NIS) in response to the routine PRODCOM survey. Most producers submit an itemized PRODCOM report to the NIS monthly, using one of six standard report formats. The NIS determines the report layout, depending on the nature of the materials produced. The PRODCOM report displays production statistics for industrial products that are manufactured by production companies operating in Belgium. This report is typically used by accounting managers and accountants.
+Manufacturers of industrial products are required to report the quantities and values of products sold, as well as employment data, to the Nationaal Instituut voor de Statistiek (NIS) in response to the routine PRODCOM survey. Most producers submit an itemized PRODCOM report to the NIS monthly, using one of six standard report formats. The NIS determines the report layout, depending on the nature of the materials produced. The PRODCOM report displays production statistics for industrial products that are manufactured by production companies operating in Belgium. This report is typically used by accounting managers and accountants.
 
 ## Set up PRODCOM reporting
 Before you can generate the PRODCOM report, you must set up the following on the **PRODCOM parameters** page.
@@ -50,19 +49,19 @@ Before you can generate the PRODCOM report, you must set up the following on the
 
 4.  Specify an automatic recalculation preference.
 5.  Set up number sequences.
-6.  Specify the branch ID for Legal entity or Warehouses. For more information about the branch ID of Legal entity processing, including required prerequisites, see [Registration IDs](emea-registration-ids.md).
+6.  Specify the branch ID for Legal entity or Warehouses. For more information about the branch ID of Legal entity processing, including required prerequisites, see [Registration IDs](emea-registration-ids.md).
 
 ## Assign PRODCOM properties to an item
 Assign PRODCOM properties to an item (**Product information management** &gt; **Products** &gt; **Released products**). Open the **Released product details** page, in the **Foreign trade** section, open the PRODCOM dialog box and provide the following details.
 
--   **Product made in company** - Select this check box to report quantities and values of products that were delivered by companies.****
+-   **Product made in company** - Select this check box to report quantities and values of products that were delivered by companies.
 -   **Delivery to a third party** - Select this check box to report quantities and values of products that were delivered by third parties.
--   **Work done for** **enterprises** - Select this check box to report quantities and values of products that were delivered by enterprises.****
+-   **Work done for** **enterprises** - Select this check box to report quantities and values of products that were delivered by enterprises.
 
 After you've set up PRODCOM, you can use the **PRODCOM** page to create PRODCOM periods and transfer sales lines to the PRODCOM report.
 
 ## Convert Intrastat to PRODCOM
-Use the **Intrastat to PRODCOM conversion** page to assign PRODCOM codes to Intrastat commodity codes. These codes can change every year. On the **Intrastat to PRODCOM conversion** page, click **Import PRODCOM data** to import the information.
+Use the **Intrastat to PRODCOM conversion** page to assign PRODCOM codes to Intrastat commodity codes. These codes can change every year. On the **Intrastat to PRODCOM conversion** page, click **Import PRODCOM data** to import the information.
 
 ## Use PRODCOM
 Use the **PRODCOM** page to create PRODCOM periods and transfer sales lines to the PRODCOM report. After you enter the dates for the declaration period and then enter the section codes, you can transfer the sales lines to the PRODCOM report. After you transfer the sales lines to the report, you can review and edit the products on the PRODCOM list, and then you can print the report.

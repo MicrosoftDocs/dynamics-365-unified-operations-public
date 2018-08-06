@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Troubleshooting guide for package deployment issues
+# Troubleshoot package application issues
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides detailed information that will help you troubleshoot issues that might occur when you apply packages on your Tier 1 or Tier 2 through Tier 5 environments. For information about how to apply a package, see [Apply a deployable package](apply-deployable-package-system.md).
 
@@ -53,7 +53,7 @@ If package application fails, and you want to use the logs, follow these steps.
 3. Select the virtual machine (VM) where the step failed. You can find this information in the **Machine name** column in the **Environment updates** section.
 4. In the VM logs, select the folder that corresponds to the step where the issue occurred. The folder name identifies the step that each folder corresponds to. 
 
-    For example, if the issue occurred during the execution of a step, select the  **ExecuteRunbook\*** folder. The step number is highlighted and is the number after the globally unique identifier (GUID).
+    For example, if the issue occurred during the execution of a step, select the  <strong>ExecuteRunbook\</strong>* folder. The step number is highlighted and is the number after the globally unique identifier (GUID).
 
 ## Package application issues
 

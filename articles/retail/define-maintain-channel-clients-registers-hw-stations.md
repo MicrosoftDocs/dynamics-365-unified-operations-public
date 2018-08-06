@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Define and maintain channel clients, registers, and hardware stations
+title: Connect peripherals to the point of sale (POS)
 description: This topic covers how to connect peripherals to your Retail POS.
 author: rubencdelgado
 manager: AnnBe
@@ -31,10 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Define and maintain channel clients, registers, and hardware stations
+# Connect peripherals to the point of sale (POS)
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 This topic covers how to connect peripherals to your Retail POS.
 
@@ -69,7 +68,7 @@ Navigation: Click **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All
 
 ### Hardware station profile
 
-Navigation: Click **Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**. Whereas the hardware station itself is specified at the channel level includes instance-specific information, such as the URL for the hardware station, the hardware station profile includes information that can be static or shared across multiple hardware stations. The static information includes the port that should be used, the hardware station package, and the hardware profile. The static information also includes a description of the type of hardware station that is being deployed, such as **Checkout** or **Returns**, depending on the hardware that is required for each specific hardware station.
+Navigation: Click **Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**. Whereas the hardware station itself is specified at the channel level includes instance-specific information, such as the URL for the hardware station, the hardware station profile includes information that can be static or shared across multiple hardware stations. The static information includes the port that should be used, the hardware station package, and the hardware profile. The static information also includes a description of the type of hardware station that is being deployed, such as **Checkout** or **Returns**, depending on the hardware that is required for each specific hardware station.
 
 ## Scenarios
 ### MPOS with connected peripheral devices
@@ -81,7 +80,7 @@ To connect MPOS to POS peripherals in a traditional, fixed POS scenario, first n
 ### MPOS or Cloud POS with a stand-alone hardware station
 [![Shared peripherals](./media/shared-300x254.png)](./media/shared.png)
 
-In this scenario, a stand-alone hardware station is shared among MPOS and Cloud POS clients. This scenario requires that you create a hardware station profile to specify the download package, port, and hardware profile that the hardware station uses. You can find the hardware station profile at **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**. After you've created the hardware station profile, navigate to the specific retail channel (**Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**), and add a new hardware station. Map this new hardware station to the hardware station profile that was previously created. Next, provide a description that will help the cashier identify the hardware station. In the **Host name** field, enter the host machine URL in the following format: **https://&lt;MachineName:Port&gt;/HardwareStation**. (Replace **&lt;MachineName:Port&gt;** with the actual machine name of the hardware station and the port that is specified in the hardware station profile.) For a stand-alone hardware station, you should also specify the electronic funds transfer (EFT) terminal ID. This value identifies the EFT terminal that is connected to the hardware station when the payment connector communicates with the payment provider. Next, from the actual hardware station machine, navigate to the channel, and select the hardware station. Then click **Download**, and install the hardware station. Next, from MPOS or Cloud POS, use the **Select hardware station** operation to select the hardware station that was previously installed. Select **Pair** to establish a secure relationship between the POS and the hardware station. This step must be completed once for every combination of a POS and a hardware station. After the hardware station is paired, the same operation is used to make the hardware station active while it's used. For this scenario, the hardware profile should be assigned to the hardware station profile rather than the register itself. If for some reason a hardware station does not have a hardware profile directly assigned, then the hardware profile assigned to the register is used
+In this scenario, a stand-alone hardware station is shared among MPOS and Cloud POS clients. This scenario requires that you create a hardware station profile to specify the download package, port, and hardware profile that the hardware station uses. You can find the hardware station profile at **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**. After you've created the hardware station profile, navigate to the specific retail channel (**Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**), and add a new hardware station. Map this new hardware station to the hardware station profile that was previously created. Next, provide a description that will help the cashier identify the hardware station. In the **Host name** field, enter the host machine URL in the following format: **https://&lt;MachineName:Port&gt;/HardwareStation**. (Replace **&lt;MachineName:Port&gt;** with the actual machine name of the hardware station and the port that is specified in the hardware station profile.) For a stand-alone hardware station, you should also specify the electronic funds transfer (EFT) terminal ID. This value identifies the EFT terminal that is connected to the hardware station when the payment connector communicates with the payment provider. Next, from the actual hardware station machine, navigate to the channel, and select the hardware station. Then click **Download**, and install the hardware station. Next, from MPOS or Cloud POS, use the **Select hardware station** operation to select the hardware station that was previously installed. Select **Pair** to establish a secure relationship between the POS and the hardware station. This step must be completed once for every combination of a POS and a hardware station. After the hardware station is paired, the same operation is used to make the hardware station active while it's used. For this scenario, the hardware profile should be assigned to the hardware station profile rather than the register itself. If for some reason a hardware station does not have a hardware profile directly assigned, then the hardware profile assigned to the register is used
 
 ## Client maintenance
 ### Registers

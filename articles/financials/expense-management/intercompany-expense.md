@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Intercompany expenses
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A worker who is employed by one legal entity in an organization might perform work for another legal entity in the same organization. 
 In this situation, you can use the intercompany expense feature to assign the worker’s expenses to the legal entity for which the 

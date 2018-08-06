@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Defer
+title: Defer module
 description: Defer type
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Defer 
+# Defer module
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 ## Index
 

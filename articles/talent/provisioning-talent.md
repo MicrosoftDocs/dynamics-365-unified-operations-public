@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Provision Microsoft Dynamics 365 for Talent
+title: Provision Talent
 description: This topic walks you through the process of provisioning a new environment for Microsoft Dynamics 365 for Talent. 
 author: rschloma
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 
 ---
-# Provision Microsoft Dynamics 365 for Talent
+# Provision Talent
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 for Talent. This topic assumes that you've purchased Talent through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Talent service plan, and you can't complete the steps in this topic, contact Support.
 
@@ -59,17 +59,18 @@ After you've created an LCS project, you can provision Talent into an environmen
     > To view existing environments or create new environments, the tenant admin who provisions Talent must be assigned to the PowerApps P2 license. If your organization doesn't have a PowerApps P2 license, you can get one from your CSP or from the [PowerApps pricing page](https://powerapps.microsoft.com/en-us/pricing/).
 
 4. Select **Add**, and then select the environment to provision Talent into.
-5. Select **Yes** to agree to the terms and begin deployment.
+5. Select the ‘Include Demo Data’ option if you want your environment to include the same Demo data set used in the Talent Test Drive experience.  This is beneficial for long-term demo or training environments, and should never be used for production environments.  Note that you must choose this option upon initial deployment and can't update an existing deployment later.
+6. Select **Yes** to agree to the terms and begin deployment.
 
     Your new environment appears in the list of environments in the navigation pane on the left. However, you can't start to use the environment until the deployment status is updated to **Deployed**. This process typically takes just a few minutes. If the provisioning process is unsuccessful, you must contact Support.
 
-6. Select **Log on to Talent** to use your new environment.
+7. Select **Log on to Talent** to use your new environment.
 
 > [!NOTE]
 > If you haven't yet signed off on the final requirements, you can deploy a test instance of Talent in the project. You can then use this instance to test your solution until you sign off. If you use your new environment for testing, you must repeat this procedure to create a production environment.
 
 > [!NOTE]
-> Talent environments that are provisioned through LCS don't contain demo data that is configured for Human resources (HR) tasks, or that is specific to Talent. If you require an environment that contains demo data, we recommend that you sign up for a free 60-day [Talent trial environment](https://dynamics.microsoft.com/en-us/talent/overview/). Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Core HR. Trial environments contain fictitious data that can be used to explore the program in a safe manner. They aren't intended to be used as production environments. Note that when the trial environment expires after 60 days, all the data in it is deleted and can't be recovered. You can sign up for a new trial environment after the existing environment expires.
+> Since only two LCS environments are allowed as part of the Talent subscription, you may also consider leveraging a free 60-day [Talent trial environment](https://dynamics.microsoft.com/en-us/talent/overview/). Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Core HR. Trial environments contain fictitious data that can be used to explore the program in a safe manner. They aren't intended to be used as production environments. Note that when a trial environment expires after 60 days, all the data that's in it is deleted and can't be recovered. You can sign up for a new trial environment after the existing environment expires.
 
 ## Select a PowerApps environment
 
@@ -84,12 +85,12 @@ Use the following guidance when determining which PowerApps environment to deplo
  
     **CDS 2.0 Environments** CDS 2.0 will be made publicly available on March 21, 2018; however, Talent does not yet support CDS 2.0. Though you can view and create CDS 2.0 databases in the PowerApps Admin center, they will not be usable in Talent. The option to use CDS 2.0 Environments in Talent deployments will be available at a later date.
    
- > [!Note]
- > To differentiate between CDS 1.0 and 2.0 environments in the administration portal, select an environment and look at the **Details**. CDS 2.0 environments all reference the fact that "You can manage these settings in the Dynamics 365 Administration Center," point to an instance version, and have no Database tab. 
+   > [!Note]
+   > To differentiate between CDS 1.0 and 2.0 environments in the administration portal, select an environment and look at the **Details**. CDS 2.0 environments all reference the fact that "You can manage these settings in the Dynamics 365 Administration Center," point to an instance version, and have no Database tab. 
  
    **Default Power Apps environments** Although each tenant is automatically provisioned with a default PowerApps environment, we don't recommend using them with Talent since all tenant users have access to the PowerApps environment and may unintentionally corrupt production data when testing and exploring with PowerApps or Flow integrations.
    
-   **Test Drive environments** Environments with a name like ‘TestDrive – alias@domain’ are created with a 60-day expiration period and will expire after that time, causing your environment to be removed automatically.
+   <strong>Test Drive environments</strong> Environments with a name like ‘TestDrive – alias@domain’ are created with a 60-day expiration period and will expire after that time, causing your environment to be removed automatically.
    
    **Unsupported regions** Currently Talent is only supported in the following regions: United States, Europe, or Australia.
   
@@ -109,34 +110,28 @@ Complete the following instructions to run the script:
 
 1. Download the ProvisionCDSEnvironment.zip file from the following location: [ProvisionCDSEnvironment scripts](https://go.microsoft.com/fwlink/?linkid=870436)  
 
-2. Unzip the entire contents of the ProvisionCDSEnviroinment.zip file into a folder.
+2. From your downloads folder, right click on the ProvisionCDSEnvironment.zip file just downloaded and select **Properties**.  If there is a Security note at the bottom of the dialog that states “This file came from another computer and might be blocked to help protect this computer”, mark the checkbox to **Unblock**, then click **Apply** and then **OK**.
 
-3. Run the Windows PowerShell or Windows PowerShell ISE program as the administrator.
+3. Unzip the entire contents of the ProvisionCDSEnviroinment.zip file into a folder, other than your root folder.
 
-   Visit the [Set Execution Policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) topic to learn more about setting the execution policy so that scripts can be run.
+4. Run the Windows PowerShell or Windows PowerShell ISE program as the administrator.
+
+   Visit the [Set Execution Policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) topic to learn more about setting the execution policy so that scripts can be run. We suggest using the following, “Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process”, but be sure to follow your company security policies and close the PowerShell window when finished. 
   
-4. Within PowerShell, navigate to the folder where you unzipped the file and run the following command, replacing values as directed below:
+5. Within PowerShell, navigate to the folder where you unzipped the file and run the following command, replacing values as directed below:
  
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
    **MyNewEnvironment** should be replaced with your environment name. This name will appear in LCS and will be visible when users select which Talent environment to use. 
 
-   **YourLocation** should be replaced with one of the supported regions for Talent: unitedsates, europe, australia. 
+   **YourLocation** should be replaced with one of the supported regions for Talent: unitedstates, europe, australia. 
 
    **-Verbose** is optional and will provide detailed information to send to support if problems are encountered.
 
-5. Continue with the provisioning process.
+6. Continue with the provisioning process.
  
 
-
 ## Grant access to the environment
-By default, the global administrator who created the environment has access to it. However, additional application users must be explicitly granted access. To grant access, you [add users](../dev-itpro/sysadmin/tasks/create-new-users.md) and [assign the appropriate roles to them](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) in the Core HR environment. You must also add those users to the PowerApps environment, so that they can access the Attract and Onboard applications. The procedure is outlined here. If you require help to complete the steps, see the [Introducing the PowerApps admin center](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/) blog post.
+By default, the global administrator who created the environment has access to it. However, additional application users must be explicitly granted access. To grant access, you [add users](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [assign the appropriate roles to them](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) in the Core HR environment. The global administrator that deployed Talent must also launch both the Attract and Onboard applications to complete the initialization and enable access for other tenant users.  Until this happens, other users will not be able to access Attract and Onboard applications and will get access violation errors.
 
-This procedure is completed by the global administrator who deployed the Talent environment.
-
-1. Open the [PowerApps Admin center](https://preview.admin.powerapps.com/environments).
-2. Select the appropriate environments.
-3. On the **Security** tab, add the required users to the **Environment Maker** role.
-
-    Note that this final step, where you manually add users to the PowerApps environment, is temporary. Eventually, it will be completed automatically when users are added in Core HR.

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Copy service templates lines 
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Template information can be copied to either a service agreement or a service order.
 

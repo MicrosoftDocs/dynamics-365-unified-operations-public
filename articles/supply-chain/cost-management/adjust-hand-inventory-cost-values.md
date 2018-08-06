@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Adjust on-hand inventory cost values
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Use the Adjustment of on-hand inventory page to adjust the cost value of the on-hand inventory quantities after an inventory close process is run.
 

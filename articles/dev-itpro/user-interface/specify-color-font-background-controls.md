@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Font and background colors for input, table, and grid controls
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the new color picker control that lets users select a color.
 
@@ -75,7 +74,7 @@ In Microsoft Dynamics AX 2012, color selection had these characteristics:
 ## Color selection for input controls
 In the current version, the color picker control is a standard control type. The color picker control can be put directly in a form, or it can be used as part of a custom lookup for an integer or string control. The following example shows how to interact with the color picker control in a custom lookup. However, the code is similar if you put the color picker in a form and provide the user with a button to select a color.
 
--   A color picker control can be hosted in a form or a custom lookup to let the user visually pick a color or specify an RGB value.
+-   A color picker control can be hosted in a form or a custom lookup to let the user visually pick a color or specify an RGB value.
 -   The return value is a decimal value that can be assigned directly to an input control property. (No run-time RGB conversion is required.)
 
 <!-- -->
@@ -140,7 +139,7 @@ There is no design-time experience for coloring input controls. In other words, 
             {
                 _options.backColor(WinAPI::RGB2int(255,165,0));
             }
-            else if( table.AInt>20 &&  table.AInt <60)
+            else if( table.AInt>20 &&  table.AInt <60)
             {
                 _options.backColor(WinAPI::RGB2int(255,255,0));
                 _options.fontItalic(true);

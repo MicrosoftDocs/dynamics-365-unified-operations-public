@@ -32,14 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # 150 percent reducing balance depreciation
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article gives an overview of the 150 percent reducing balance method of depreciation.
 
 When you set up a fixed asset depreciation profile and select **150% reducing balance** in the **Method** field on the **Depreciation profiles** page, fixed assets that are assigned the depreciation profile are depreciated by the same percentage in each depreciation period. This percentage is calculated based on the service life of the asset. For example, if an asset has a service life of five years, the percentage is calculated as 30 percent (150% ÷ 5). 
 
-To set up 150% reducing balance depreciation, you must also select options in the **Depreciation year** field and the **Period frequency** field on the **Depreciation profiles** page. The options that are available in the **Period frequency** field vary, depending on the value that is selected in the **Depreciation year** field.
+To set up 150% reducing balance depreciation, you must also select options in the **Depreciation year** field and the **Period frequency** field on the **Depreciation profiles** page. The options that are available in the **Period frequency** field vary, depending on the value that is selected in the **Depreciation year** field.
 
 ## Selection of depreciation year
 You can select either **Calendar** or **Fiscal** in the **Depreciation year** field on the **Depreciation profiles** page. 
@@ -52,13 +51,13 @@ You can keep the default value in the **Depreciation year** field, **Calendar**.
 
 The **Calendar** option updates the depreciation base on January 1 of each year. Typically, the depreciation base is the net book value minus the scrap value. In the examples later in this topic, the depreciation base is the numerator in the first expression in the calculations column. 
 
-If you select **Calendar** as the depreciation year, the following options are available in the **Period frequency** field:
+If you select **Calendar** as the depreciation year, the following options are available in the **Period frequency** field:
 
 -   **Yearly** posts an amount on December 31.
 -   **Monthly** posts a monthly amount at the end of each calendar month.
 -   **Quarterly** posts a quarterly amount at the end of each calendar quarter (March 31, June 30, September 30, and December 31).
 -   **Half-Yearly** posts a half-yearly amount at the calendar half year (June 30 and December 31).
--   **Daily** posts the depreciation amount for the daily depreciation method by using one transaction for each day.
+-   **Daily** posts the depreciation amount for the daily depreciation method by using one transaction for each day.
 
 ### Fiscal
 
@@ -72,6 +71,7 @@ If you select **Fiscal** as the depreciation year, the following options are ava
 -   **Fiscal period** posts the total amount of the depreciation that is calculated for the fiscal year. This amount is accrued into the fiscal periods that are defined on the **Fiscal calendars** page.
 
 ## Example of 150% reducing balance depreciation
+
 |                                |        |
 |--------------------------------|--------|
 | Acquisition cost               | 11,000 |

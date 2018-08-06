@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Merge inventory batches
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about how to consolidate two or more inventory batches into a merged batch.
 
@@ -56,7 +55,7 @@ Yes, there are some things that you must set up before you can use the merge bat
 <tbody>
 <tr class="odd">
 <td>Journal names, inventory</td>
-<td>You must create a journal name of the type BOM that is used by default when you post batch merges in inventory journals. Optional but recommended: You can specify that reservations should be made automatically when the batch merge is transferred to the inventory journal. Otherwise, there is a risk that the on-hand inventory might be changed after the batch merge details are set up and the journal is posted. To enable automatic reservations for the journal name, select <strong>Automatic</strong> in the <strong><strong>Reservation</strong></strong> field.</td>
+<td>You must create a journal name of the type BOM that is used by default when you post batch merges in inventory journals. Optional but recommended: You can specify that reservations should be made automatically when the batch merge is transferred to the inventory journal. Otherwise, there is a risk that the on-hand inventory might be changed after the batch merge details are set up and the journal is posted. To enable automatic reservations for the journal name, select <strong>Automatic</strong> in the <strong><strong>Reservation</strong></strong> field.</td>
 </tr>
 <tr class="even">
 <td>Inventory and warehouse management parameters</td>
@@ -66,12 +65,12 @@ Yes, there are some things that you must set up before you can use the merge bat
 <td>Released products</td>
 <td>Here are the recommended settings for the item:
 <ul>
-<li>To automatically generate batch numbers for merged batches, you must assign the released product to a batch number group. You can also enter a batch number manually when you create a merged batch, or select an existing batch number. If you select an existing batch number, make sure that the selected batch hasn't been included in any inventory transactions.</li>
-<li>If you're using shelf life or best-before dates for the released product, the dates for a merged batch are calculated based on the selection in the <strong>Batch merge date calculation</strong> field. The following options are available:
+<li>To automatically generate batch numbers for merged batches, you must assign the released product to a batch number group. You can also enter a batch number manually when you create a merged batch, or select an existing batch number. If you select an existing batch number, make sure that the selected batch hasn&#39;t been included in any inventory transactions.</li>
+<li>If you&#39;re using shelf life or best-before dates for the released product, the dates for a merged batch are calculated based on the selection in the <strong>Batch merge date calculation</strong> field. The following options are available:
 <ul>
 <li><strong>Earliest</strong> – The calculation is based on the earliest date that is specified for a source batch that is selected for the batch merge.</li>
-<li><strong>Latest</strong> – The calculation is based on the latest date that is specified for a source batch that is selected for the batch merge.</li>
-<li><strong>Manual</strong> – No calculation is done. If a date is the same on all source batches, a date is suggested. You can change that date. If a date isn't the same on the source batches, you can manually enter the date.</li>
+<li><strong>Latest</strong> – The calculation is based on the latest date that is specified for a source batch that is selected for the batch merge.</li>
+<li><strong>Manual</strong> – No calculation is done. If a date is the same on all source batches, a date is suggested. You can change that date. If a date isn&#39;t the same on the source batches, you can manually enter the date.</li>
 </ul></li>
 </ul></td>
 </tr>
@@ -83,19 +82,19 @@ Yes, there are some things that you must set up before you can use the merge bat
 </table>
 
 ## When might I want to merge batches of inventory?
-Here are some examples of scenarios where it might be useful to merge batches:
+Here are some examples of scenarios where it might be useful to merge batches:
 
 -   As Sammy is walking through his warehouse, he notices that several batches of the same item have low quantities. He is expecting to receive several new shipments, and he realizes that he can free some floor space by merging the odd quantities into a new batch.
 -   Sammy is receiving inventory, and he wants to combine the new batch with one that he has already received, to improve the batch attribute value of the existing batch. By doing so you create a new batch.
 
 ## Can I merge batches across sites and legal entities?
-No, you can merge only batches that have the same site and warehouse storage dimensions in one legal entity. However, you can specify a different location and pallet ID for the merged batch.
+No, you can merge only batches that have the same site and warehouse storage dimensions in one legal entity. However, you can specify a different location and pallet ID for the merged batch.
 
 ## Can I merge partial quantities?
 No, you can merge only the full quantity of batches. The batch merge functionality is intended as an inventory feature, not a production feature.
 
 ## What if the batches have different batch attribute values?
-When you select the source batches to combine in the merged batch, Finance and Operations verifies whether all the batches have the characteristics or attribute values. When an attribute value is the same, a value is suggested for the merged batch. You can change that value. Attribute values that aren't the same are left blank for the merged batch, and you can enter those values manually. If the batch attribute type for the attribute value is an integer or a fraction, and the values aren't the same for all the source batches, the value is calculated by using a weighted average calculation. The calculated value is rounded up or down to the nearest increment. If the value is blank for a source batch, the batch and its quantity aren't included in the calculation. **Example** The following example shows a weighted average calculation for a merged batch. Two of the source batches have a blank value for a batch attribute type that is an integer. The following attribute is assigned to the source batches.
+When you select the source batches to combine in the merged batch, Finance and Operations verifies whether all the batches have the characteristics or attribute values. When an attribute value is the same, a value is suggested for the merged batch. You can change that value. Attribute values that aren't the same are left blank for the merged batch, and you can enter those values manually. If the batch attribute type for the attribute value is an integer or a fraction, and the values aren't the same for all the source batches, the value is calculated by using a weighted average calculation. The calculated value is rounded up or down to the nearest increment. If the value is blank for a source batch, the batch and its quantity aren't included in the calculation. **Example** The following example shows a weighted average calculation for a merged batch. Two of the source batches have a blank value for a batch attribute type that is an integer. The following attribute is assigned to the source batches.
 
 | Attribute | Minimum | Increment | Maximum |
 |-----------|---------|-----------|---------|
@@ -124,10 +123,10 @@ The values and quantities for batches B1 and B4 aren't included in the weighted 
 | 15    | 15                                             | 0.230769231     | 3.461538462                                                           |
 | 20    | 20                                             | 0.307692308     | 6.153846154                                                           |
 | 25    | 30                                             | 0.461538462     | 11.53846154                                                           |
-|       | **Total:** 65, which is the sum of the weights |                 | **Total:** 21.5384615, which is rounded to 21 (the nearest increment) |
+|       | **Total:** 65, which is the sum of the weights |                 | **Total:** 21.5384615, which is rounded to 21 (the nearest increment) |
 
 ## What if the batches have different batch dates?
-If the batches have different batch dates, some of the dates are calculated based on the values in the **Batch dates** group on the **Merged batch** FastTab of the **Batch merge** page. The system calculates values for the fields in the **Batch dates** group. These values include the manufacturing date, expiration date, shelf advice date, and best-before date. The dates are calculated based on settings for the item in the **Item data** field group of the **Released product details** page. You can change the values or enter them manually. For all other dates, no calculation is done. The same principle is used for batch attribute values. If a date is the same for all the source batches, that date is suggested for the merged batch. If the date isn't the same for all source batches, the date is blank on the merged batch, and you can enter it manually.
+If the batches have different batch dates, some of the dates are calculated based on the values in the **Batch dates** group on the **Merged batch** FastTab of the **Batch merge** page. The system calculates values for the fields in the **Batch dates** group. These values include the manufacturing date, expiration date, shelf advice date, and best-before date. The dates are calculated based on settings for the item in the **Item data** field group of the **Released product details** page. You can change the values or enter them manually. For all other dates, no calculation is done. The same principle is used for batch attribute values. If a date is the same for all the source batches, that date is suggested for the merged batch. If the date isn't the same for all source batches, the date is blank on the merged batch, and you can enter it manually.
 
 ## What if the dimensions are different on the batches that I want to merge?
 Here is how product dimensions, tracking dimensions, and storage dimensions are handled:

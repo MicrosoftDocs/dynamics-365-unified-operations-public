@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Cloud operations and servicing
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 For customers, partners, and Microsoft to be successful in this endeavor, we must ensure that most of the actions are self-serve with the Microsoft Dynamics Service Engineering (DSE) team managing by exception. To attain this self-serve mode, the Microsoft Product team continues to add more automation around the various features needed to operate an environment.
 

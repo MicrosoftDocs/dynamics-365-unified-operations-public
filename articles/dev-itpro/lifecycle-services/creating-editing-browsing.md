@@ -1,5 +1,5 @@
 ---
-title: Create, edit, and browse BPM libraries
+title: Create, edit, and browse Business process modeler (BPM) libraries
 description: This topic provides information about how to create or edit a BPM library and how to browse an existing library.
 author: kfend
 manager: AnnBe
@@ -28,11 +28,14 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Create, edit, and browse BPM libraries
+# Create, edit, and browse Business process modeler (BPM) libraries
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about how to create, edit, and browse Business process modeler (BPM) libraries. It's important to note You can browse a BPM library that is a global library or a corporate library. However, before you can edit and work with a BPM library, it must be part of your project in Microsoft Dynamics Lifecycle Services (LCS). Libraries that are distributed by Microsoft appear under **Global libraries**, whereas libraries that are published by your organization appear under **Corporate libraries**.
+
+  >[!NOTE]
+  >BPM localization is not supported. If you edit in the new BPM client in any language other than EN-US, your changes will only display when you view the BPM in the language in which the changes were made. To view any changes made in EN-US, you must synchronize with Visual Studio Team Server before the changes will display.
 
 ## Create a BPM library
 There are several ways to author a BPM library. You can do so from scratch either building directly in the client or by importing an Excel template. Additionally, you can copy an existing library. This section walks through each of these methods.
@@ -132,3 +135,5 @@ You can search for words or phrases in your BPM library. The search functionalit
 - You can also search for Application Object Tree (AOT) elements that are part of the task recordings for Microsoft Dynamics 365 for Finance and Operations, that are in your library. Typically, these AOT elements are the names of pages or menu items. When you search for an AOT element, prefix it with a dollar sign ($). For example, enter **$CustTable** in the search box.
 
 ![Search box](./media/searching.png "Search box")
+
+   

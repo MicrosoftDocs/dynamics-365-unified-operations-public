@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Make a backing table be consumable as a Financial dimension
+title: Make backing tables consumable as financial dimensions
 description: This topic provides the steps that you need to follow to make a backing table usable as a Financial dimension.
 author: aprilolson
 manager: AnnBe
-ms.date: 05/16/2017
+ms.date: 04/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191363
@@ -30,16 +30,34 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Make a backing table be consumable as a Financial dimension
+# Make backing tables consumable as financial dimensions
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides the steps that you need to follow if you want to make a backing table usable as a Financial dimension.
 
-> [!NOTE]
-> If your dimension is backed by the **OMOperatingUnit** table then many of the steps are already completed for you. Follow the steps in the "[Add a new OMOperatingUnit type backed entity](#add-a-new-omoperatingunit-type-backed-entity)" section.
+> [!IMPORTANT]
+> Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. 
+- 	Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
+
+Examples of highly volatile data include timestamps and identifiers that are frequently incremented, such as:
+     - Documents
+     - Sales orders
+     - Purchase orders
+     - Transactions
+     - Checks
+     - Serials
+     - Tickets
+     - License numbers 
+
+These are referred to as degenerate dimensions. Tracking these values should be done outside of financial dimensions. This means that you should use customizations for the transactional records that need information, and these values should not be stored along with the financial dimension values.
+
 
 By following these steps, your view will automatically appear in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values will be populated on the **Financial dimension values** page.
+
+
+> [!NOTE]
+> If your dimension is backed by the **OMOperatingUnit** table then many of the steps are already completed for you. Follow the steps in the "[Add a new OMOperatingUnit type backed entity](#add-a-new-omoperatingunit-type-backed-entity)" section.
 
 ## Step 1: Create a view
 

@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Category pricing rules to create trade agreements
+title: Create trade agreements by using category pricing rules
 description: This procedure demonstrates how to create sales price trade agreements using a category pricing rule. 
 author: scott-tucker
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Category pricing rules to create trade agreements
+# Create trade agreements by using category pricing rules
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to create sales price trade agreements using a category pricing rule. The demo data company used to create this task is USRT. This task is intended for the Retail merchandising manager role.
 

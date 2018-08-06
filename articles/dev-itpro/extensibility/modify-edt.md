@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Modify an extended data type
+title: Modify extended data types (EDTs) through extension
 description: You can customize several properties on extended data types (EDTs) by using extensions.
 author: ivanv-microsoft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: margoc
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
@@ -29,9 +29,9 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ---
 
-# Modify an extended data type
+# Modify extended data types (EDTs) through extension
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 There are several properties that can be customized on existing extended data types (EDTs) through extension:
 - Label
@@ -55,7 +55,7 @@ You can view the created extensions in the Application Explorer in Visual Studio
 ![Modify EDT](media/EDT03.jpg) 
 
 ## If the EDT is modified in more than one model
-If multiple ISVs have extended the same extended data type, the properties of the EDT from the model with the highest Model ID will be used. For example, if ISV 1 modified the label of ItemId to “Awesome item number” in model AwesomeModel with ID 12, while ISV 2 modified the label of ItemId to “Super item number” in model SuperModel with ID 15, the end user would see “Awesome item number” in the user interface instead of “Item number”.
+If multiple ISVs have extended the same extended data type, the properties of the EDT from the model with the highest Model ID (closest to USR) will be used. If there are multiple models with changes in the same layer, changes from the model with the highest Model ID will be used. For example, if ISV 1 modified the label of ItemId to “Awesome item number” in model AwesomeModel (USR layer) with ID 15, while ISV 2 modified the label of ItemId to “Super item number” in model SuperModel (USR layer) with ID 12, the end user would see “Awesome item number” in the user interface instead of “Item number”.
 
 > [!TIP]
 > Instead of extending an existing EDT, you can create a new one, deriving it from the existing EDT. This allows you to edit more properties than you could edit using the extension approach. This means that you would need to modify the fields using this EDT to use your new EDT.

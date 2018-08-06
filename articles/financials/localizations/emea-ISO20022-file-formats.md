@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Import ISO20022 files
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can import payment files that have the following formats:
 
@@ -45,8 +45,8 @@ You must complete the following prerequisites to import bank notification messag
 3. On the **Customer bank account** page, set up a customer bank account record by entering the following information: IBAN or bank account number, and SWIFT code or routing number.
 4. On the **Bank accounts** page, set up legal entity bank accounts by entering the following information: IBAN or bank account number, SWIFT code or routing number, currency, and address.
 
-  	> [!NOTE]
-    	> If you plan to use Advanced bank reconciliation, on the **Reconciliation** FastTab, set the **Advanced bank reconciliation** option to **Yes**. If you plan to reconcile unposted imported payments, set the **Use bank statements as confirmation of electronic payments** option to **Yes**.
+   > [!NOTE]
+   > If you plan to use Advanced bank reconciliation, on the **Reconciliation** FastTab, set the **Advanced bank reconciliation** option to **Yes**. If you plan to reconcile unposted imported payments, set the **Use bank statements as confirmation of electronic payments** option to **Yes**.
 
 5. Optional: On the **Transaction code mapping** page, set up the mapping between bank transaction codes in the file and bank transaction types.
 6. If the file contains transaction charges that you want to post together with the incoming payment, create a payment fee on the **Customer payment fee** page. Then, on the **Methods of payment** page, associate the payment fee with the bank account in the payment fee setup.

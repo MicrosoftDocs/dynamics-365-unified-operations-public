@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Add new inventory dimensions through extensions
+title: Add new inventory dimensions through extension
 description: This topic describes how to add new inventory dimensions through extensions in Microsoft Dynamics 365 for Finance and Operations.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ---
 
-# Add a new inventory dimension
+# Add new inventory dimensions through extension
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides a high-level overview of how to add new inventory dimensions through extensions. It also includes information about how to access a sample application that contains an actual implementation.
 
@@ -43,15 +43,15 @@ The cornerstone in this solution is that multiple roles participate in the life 
 Microsoft provides a finite set of unused dimension fields.
 
 In addition to the 15 existing dimensions, Microsoft supports 10 generic dimensions: 
- - 8 string-based
- - 1 real-based
- - 1 utcdatetime-based
+- 8 string-based
+- 1 real-based
+- 1 utcdatetime-based
  
- This brings the total number of inventory dimensions in the standard application to 25:
- - 4 product dimensions: Color, Size, Style, and Config
- - 5 tracking dimensions: Serial, Batch, Owner, Profile (Russia only), and GTD (Russia only)
- - 6 storage dimensions: Site, Warehouse, Location, Status, License Plate, and Pallet (for upgrade and migration only)
- - 10 unassigned generic dimensions: InventDimension1 to InventDimension10
+  This brings the total number of inventory dimensions in the standard application to 25:
+- 4 product dimensions: Color, Size, Style, and Config
+- 5 tracking dimensions: Serial, Batch, Owner, Profile (Russia only), and GTD (Russia only)
+- 6 storage dimensions: Site, Warehouse, Location, Status, License Plate, and Pallet (for upgrade and migration only)
+- 10 unassigned generic dimensions: InventDimension1 to InventDimension10
 
 Microsoft provides the physical schema.
 

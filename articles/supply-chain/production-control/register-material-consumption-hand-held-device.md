@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Register material consumption using a mobile device
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes a workflow that enables registration of raw material consumption in production by using a handheld device.
 

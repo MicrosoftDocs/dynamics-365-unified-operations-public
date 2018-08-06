@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: GST integration for cash registers for India
+title: Goods and Services Tax (GST) integration for cash registers for India
 description: This topic provides an overview of the cash register functionality that is available for India. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS 
 manager: annbe
@@ -26,9 +26,9 @@ ms.author: v-pakris
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
 ---
-# GST integration for cash registers for India
+# Goods and Services Tax (GST) integration for cash registers for India
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides a walkthrough of the features that are related to Goods and Services Tax (GST) in Microsoft Dynamics 365 for Retail. It also highlights the effect of GST on various types of retail business transactions, and shows the accounting and posting of retail transactions where the receipt is printed at the point of sale (POS).
 
@@ -180,7 +180,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
     2. Select the transactions.
     3. Select **Receipt**.
 
-    ![Receipt example](media/apac-ind-gst-receipt.png)
+    ![Receipt example](media/apac-ind-gst-s1-receipt1.png)
 
 11. Validate the sales order and tax document in Retail headquarters:
 
@@ -203,7 +203,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
 13. Select **Exact** to process the payment.
 14. Validate the receipt.
 
-    ![Receipt example](media/apac-ind-gst-receipt-2.png)
+    ![Receipt example](media/apac-ind-gst-s1-receipt2.png)
 
 15. Validate the voucher transactions:
 
@@ -240,11 +240,11 @@ When you sell to unregistered customers, the sales are referred to as *business-
 4. Select **Exact** to process the payment.
 5. Validate the receipt:
 
-    1. Select **Show journal**.
-    2. Select the transactions.
-    3. Select **Receipt**.
+   1. Select **Show journal**.
+   2. Select the transactions.
+   3. Select **Receipt**.
 
-    ![Receipt validation](media/apac-ind-gst-receipt-validation.png)
+      ![Receipt validation](media/apac-ind-gst-receipt-validation.png)
 
 6. Validate the retail sales invoice in Retail headquarters:
 
@@ -296,19 +296,19 @@ When you sell to unregistered customers, the sales are referred to as *business-
 
 3. Enter a transaction:
 
-    1. Sign in to the POS.
-    2. Enter an item, and then select **Enter**. For this example, use an item that has the following values:
+   1. Sign in to the POS.
+   2. Enter an item, and then select **Enter**. For this example, use an item that has the following values:
 
-        - **Taxable value:** 10,000.00
-        - **CGST:** 12 percent
-        - **SGST:** 11 percent
+       - **Taxable value:** 10,000.00
+       - **CGST:** 12 percent
+       - **SGST:** 11 percent
 
-    ![Transaction example](media/apac-ind-gst-trx-example.png)
+      ![Transaction example](media/apac-ind-gst-trx-example.png)
 
 4. Select **Exact** to process the payment.
 5. Validate the receipt.
 
-    ![Receipt example](media/apac-ind-gst-receipt-3.png)
+    ![Receipt example](media/apac-ind-gst-s3-receipt4.png)
 
 6. Validate the retail sales invoice in Retail headquarters:
 
@@ -324,22 +324,24 @@ When you sell to unregistered customers, the sales are referred to as *business-
 
 8. Validate the voucher transactions:
 
-    1. Go to **Retail** \> **Customers** \> **All sales orders**.
-    2. Select the sales invoice.
-    3. On the Action Pane, on the **Invoice** tab, select **Invoice journals**.
-    4. Select **Voucher**.
+   1. Go to **Retail** \> **Customers** \> **All sales orders**.
+   2. Select the sales invoice.
+   3. On the Action Pane, on the **Invoice** tab, select **Invoice journals**.
+   4. Select **Voucher**.
 
-        | Ledger account name  | Debit amount (Rs.) | Credit amount (Rs.) |
-        |----------------------|--------------------|---------------------|
-        | Customer account     | 10,000.00          |                     |
-        | CGST payable account |                    | 975.61              |
-        | SGST payable account |                    | 894.31              |
-        | Sales account        |                    | 8,130.08            |
 
-    5. Select **Tax document**.
-    6. Verify that the transaction ID is updated according to the GST number sequence that is defined in the GST reference number sequence group.
+      | Ledger account name  | Debit amount (Rs.) | Credit amount (Rs.) |
+      |----------------------|--------------------|---------------------|
+      |   Customer account   |     10,000.00      |                     |
+      | CGST payable account |                    |       975.61        |
+      | SGST payable account |                    |       894.31        |
+      |    Sales account     |                    |      8,130.08       |
 
-    ![Tax document transaction ID](media/apac-ind-gst-tax-doc-trx-id.png)
+
+   5. Select **Tax document**.
+   6. Verify that the transaction ID is updated according to the GST number sequence that is defined in the GST reference number sequence group.
+
+      ![Tax document transaction ID](media/apac-ind-gst-tax-doc-trx-id.png)
 
 ### Scenario 4: Sell an exempted good
 
@@ -394,7 +396,7 @@ When you sell to unregistered customers, the sales are referred to as *business-
 
 7. Validate the receipt.
 
-   ![Receipt example](media/apac-ind-gst-receipt-5.png)
+   ![Receipt example](media/apac-ind-gst-receipt-5.png)
 
 8. Validate the retail sales invoice in Retail headquarters:
 

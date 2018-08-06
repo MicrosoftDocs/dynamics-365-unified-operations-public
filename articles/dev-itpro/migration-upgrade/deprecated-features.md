@@ -5,7 +5,7 @@ title: Deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,21 +25,21 @@ ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.search.validFrom: 2016-02-28 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.validFrom: 2016-02-28 
+ms.dyn365.ops.version: AX 7.0.0 
 
 ---
 
-# Removed or deprecated features
+# Deprecated features
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-This list is intended to help you consider these removals and deprecations for your own planning. 
+This list is intended to help you consider these removals and deprecations for your own planning. 
 
 > [!Note]
 > Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
@@ -83,13 +83,13 @@ These two reports are no longer supported in Finance and Operations. Instead, th
 | **Deployment option**        | All|
 | **Status**                       | Deprecated: The menu items for the two reports have been removed in version 7.3. However, the code for the reports remains in the product. The plan is to remove the code in a future release. |
 
-### Power BI content packs published to PowerBI.com
-The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, which were published to the PowerBI.com site, are deprecated as a consequence of product updates in Microsoft Power BI. System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.
+### Power BI content packs available on AppSource
+The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [Microsoft AppSource](https://appsource.microsoft.com) site, are deprecated as a consequence of product updates in Microsoft Power BI. System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.
 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Product updates in Microsoft Power BI. |
-| **Replaced by another feature?**   | Power BI content packs (published to PowerBI.com) are being replaced by analytical applications which allow for solution integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspackes](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Replaced by another feature?**   | The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [AppSource](https://appsource.microsoft.com) site, are being replaced by analytical applications which allow for solution integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspackes](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Product areas affected**         | Cost management, Finance, and Retail                                                                                               |
 | **Deployment option**              | Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)                                                                                                            |
 | **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 2018.    |
@@ -113,7 +113,7 @@ These taxes have been subsumed into Indian GST.
 |                                             |                                                                         |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Reason for removal or deprecation**       | These taxes have been subsumed into Indian GST.                          |
-| **Replaced by another feature?**            | Indian GST                                                              |
+| **Replaced by another feature?**            | Indian GST                                                              |
 | **Product areas affected**                  | Tax                                                                     |
 | **Deployment option**                       | All modules                                                   |
 | **Status**                                  | Deprecated: A removal date has not been set for this feature. |    
@@ -126,7 +126,7 @@ These taxes have been subsumed into Indian GST.
 | **Replaced by another feature?**            | No                                                                      |
 | **Product areas affected**                  | Indian withholding tax                                                  |
 | **Deployment option**                       | All modules                                                                    |
-| **Status**                                  | Deprecated: A removal date has not been set for this feature.   |        
+| **Status**                                  | Deprecated: A removal date has not been set for this feature.   |        
 
 ### TDS/TCS certificate for India
 
@@ -168,6 +168,18 @@ Starting February 15, 2018, retailers will no longer be able to display personal
 
 ## Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8
 
+### Currency conversion for accounting and reporting currencies
+
+Currency conversion for accounting and reporting currencies was introduced when the euro was introduced.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Limited usage and addition of the Copy legal entity functionality as a replacement.      |
+| **Replaced by another feature?**   | No, but the Copy legal entity and Configurations features were added to make it easier to move to a company that has changing core requirements. |
+| **Product areas affected**         | Financial management     |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.   |
+
+
 ### Warehouse mobile devices portal
 
 Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment. This component is no longer supported in Finance and Operations. A native app that improves the user experience has replaced the functionality of WMDP.
@@ -175,7 +187,7 @@ Warehouse mobile devices portal (WMDP) was a standalone component that was inten
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Duplicate functionality.       |
-| **Replaced by another feature?**   | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Replaced by another feature?**   | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Product areas affected**         | Warehouse management, Transportation management     |
 | **Deployment option**              | Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.               |
 | **Status**                         | Deprecated: A removal date has not been set for this feature.   |
@@ -410,7 +422,7 @@ Human Resources Payroll information
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | This functionality has been replaced by core Payroll and Human Resources pages.  |
-| **Replaced by another feature?**   | **Benefits**, **Earnings**, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing. This functionality is accessed by using the **Human Resources 1** \> **Payroll** configuration key. |
+| **Replaced by another feature?**   | **Benefits**, **Earnings**, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing. This functionality is accessed by using the **Human Resources 1** \> **Payroll** configuration key. |
 | **Product areas affected**         | Human Resources, Payroll   |
 | **Status**                         | Removed as of Dynamics 365 for Operations version 1611.    |
 
@@ -504,8 +516,8 @@ Two formats for exporting payments are available for Finland. LM02 (FI) is used 
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The Warehouse management II solution (WMS II) that was available in the **Inventory management** module duplicates functionality that is in the **Warehouse management** module that was released in Microsoft Dynamics AX 2012 R3.                                                                         |
-| **Replaced by another feature?**   | The **Warehouse management** module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features. The new module has more advanced features and more flexible warehouse management processes than Warehouse management II. |
+| **Reason for deprecation/removal** | The Warehouse management II solution (WMS II) that was available in the **Inventory management** module duplicates functionality that is in the **Warehouse management** module that was released in Microsoft Dynamics AX 2012 R3.                                                                         |
+| **Replaced by another feature?**   | The **Warehouse management** module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features. The new module has more advanced features and more flexible warehouse management processes than Warehouse management II. |
 | **Product areas affected**         | Inventory management, Sales and marketing, Procurement and sourcing   |
 | **Status**                         | Removed as of Dynamics 365 for Operations version 1611.    |
 
@@ -545,7 +557,7 @@ A workflow for managing the creation of employee goals is one of several workflo
 
 ### AIF, AxD, and AxBC integrations
 
-In Application Integration Framework (AIF), data can be exchanged with external systems through business logic that is exposed as services. Dynamics AX includes services that are based on documents and .NET Business Connector (AxBC). A document is created by using XML. The XML includes header information that is added to create a *message* that can be transferred into or out of Dynamics AX. Examples of documents include sales orders and purchase orders. However, almost any entity, such as a customer, can be represented by a document. Services that are based on documents use the **Axd \<Document\>** classes.
+In Application Integration Framework (AIF), data can be exchanged with external systems through business logic that is exposed as services. Dynamics AX includes services that are based on documents and .NET Business Connector (AxBC). A document is created by using XML. The XML includes header information that is added to create a *message* that can be transferred into or out of Dynamics AX. Examples of documents include sales orders and purchase orders. However, almost any entity, such as a customer, can be represented by a document. Services that are based on documents use the **Axd \<Document\>** classes.
 
 |   |  |
 |------------|--------------------|
@@ -556,7 +568,7 @@ In Application Integration Framework (AIF), data can be exchanged with external 
 
 ### BOMs without BOM versions
 
-When the **BOM versions** configuration key was disabled, bill of materials (BOM) versions were hidden in all forms, and the system forced a 1:1 relationship between released products and BOMs. In the current version of Dynamics AX, the **BOM versions** configuration key can't be disabled.
+When the **BOM versions** configuration key was disabled, bill of materials (BOM) versions were hidden in all forms, and the system forced a 1:1 relationship between released products and BOMs. In the current version of Dynamics AX, the **BOM versions** configuration key can't be disabled.
 
 |   |  |
 |------------|--------------------|
@@ -844,12 +856,12 @@ Prenote generation can't be done by using a batch, but it can still be done by a
 
 ### GL SSRS reports
 
-Reports that include the following menu items have been removed: **Summary trial balance**, **Detailed trial balance**, **Chart of accounts**, **Audit trail**, **Balances**, and **Balance list**.
+Reports that include the following menu items have been removed: **Summary trial balance**, **Detailed trial balance**, **Chart of accounts**, **Audit trail**, **Balances**, and **Balance list**.
 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Financial Microsoft SQL Server Reporting Services (SSRS) reports have been replaced by Management Reporter capabilities and default reports. |
-| **Replaced by another feature?**   | Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX)    |
+| **Replaced by another feature?**   | Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX)    |
 | **Product areas affected**         | General ledger   |
 | **Status**                         | Removed as of Dynamics AX 7.0.   |
 
@@ -868,8 +880,8 @@ A list of accounts for the legal entity and related balance information
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Balance information is available on the **Trial balance** list page by account and dimension.  |
-| **Replaced by another feature?**   | **Main accounts** contains the same list of accounts that the **Main account** list page contained. The grid view in **Main accounts** also shows an even smaller, grid-like view. |
+| **Reason for deprecation/removal** | Balance information is available on the **Trial balance** list page by account and dimension.  |
+| **Replaced by another feature?**   | **Main accounts** contains the same list of accounts that the **Main account** list page contained. The grid view in **Main accounts** also shows an even smaller, grid-like view. |
 | **Product areas affected**         | General ledger      |
 | **Status**                         | Removed as of Dynamics AX 7.0.    |
 
@@ -1010,7 +1022,7 @@ Sites Services let you build websites that extend your business processes to the
 
 ### Virtual company accounts
 
-The virtual companies feature is no longer supported in Dynamics AX. The virtual companies feature let users set up tables that could be shared by a set of companies. For a description of the feature, see [Company accounts and Virtual company accounts](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies. Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.
+The virtual companies feature is no longer supported in Dynamics AX. The virtual companies feature let users set up tables that could be shared by a set of companies. For a description of the feature, see [Company accounts and Virtual company accounts](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies. Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.
 
 |   |  | 
 |------------|--------------------|
@@ -1035,15 +1047,16 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Low usage |
-| **Replaced by another feature?**   | No, but the **Profile relation** page, which is opened from the **Profile groups** page, supports the same business scenario as the deprecated **Workplanner** page. |
+| **Replaced by another feature?**   | No, but the **Profile relation** page, which is opened from the **Profile groups** page, supports the same business scenario as the deprecated **Workplanner** page. |
 | **Product areas affected**         | Time and attendance     |
 | **Status**                         | The code has not been removed. However, the form, JmgWorkPlanner, was not migrated.    |
 
 ### X++ financial statements
 
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | This functionality has been replaced by another feature.                                    |
-| **Replaced by another feature?**   | Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX) |
-| **Product areas affected**         | General ledger                                                                              |
-| **Status**                         | Removed as of Dynamics AX 2012                                                              |
+|                                                 |                                                                                                          |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| <strong>Reason for deprecation/removal</strong> |                         This functionality has been replaced by another feature.                         |
+|  <strong>Replaced by another feature?</strong>  | Management Reporter (labeled <strong>Financial reporting</strong> in the current version of Dynamics AX) |
+|     <strong>Product areas affected</strong>     |                                              General ledger                                              |
+|             <strong>Status</strong>             |                                      Removed as of Dynamics AX 2012                                      |
+

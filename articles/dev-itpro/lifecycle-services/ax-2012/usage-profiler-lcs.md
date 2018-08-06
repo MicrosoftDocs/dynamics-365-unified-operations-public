@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Usage profiler 
+title: Usage profiler in Lifecycle Services (LCS)
 description: This topic provides information about the data that is collected by the Usage profiler. 
 author: kfend
 manager: AnnBe
@@ -30,12 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Usage profiler (AX 2012)
+# Usage profiler in Lifecycle Services (LCS)
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 The Usage profiler provides you with the following information:
 

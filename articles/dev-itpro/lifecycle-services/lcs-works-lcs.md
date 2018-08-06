@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Lifecycle Services for Finance and Operations customers
+title: Lifecycle Services (LCS) for Finance and Operations customers
 description: This article is intended for customers who have signed up for the current version of Microsoft Dynamics 365 for Finance and Operations. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
 author: manalidongre
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Lifecycle Services for Finance and Operations customers
+# Lifecycle Services (LCS) for Finance and Operations customers
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article is intended for customers who have signed up for the current version of Microsoft Dynamics 365 for Finance and Operations. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
 
@@ -45,7 +44,7 @@ When you sign up for the current version of Microsoft Dynamics 365 for Finance a
 -   Environments that are deployed and managed by Microsoft
 -   Guidance that is provided through the Action center to help you complete required actions
 -   A new methodology experience that includes tasks that lock as you move through the implementation
--   A more complete history that specifies who completed each methodology phase and task
+-   A more complete history that specifies who completed each methodology phase and task
 -   Milestones that you can use to track critical project dates
 -   Various services to help you with your implementation
 
@@ -76,7 +75,7 @@ Use can use the Subscription estimator tool to evaluate your subscription requir
 -   Instance Characteristics
 -   Retail & Commerce
 
-After you've completed the worksheets, enter the data from the summary sheet into Subscription estimator by clicking **+ New estimate**. You must make one estimate the active estimate. Make sure that the estimate that you mark as active is same as the offer that you bought through the VL or CSP channel.
+After you've completed the worksheets, enter the data from the summary sheet into Subscription estimator by clicking **+ New estimate**. You must make one estimate the active estimate. Make sure that the estimate that you mark as active is same as the offer that you bought through the VL or CSP channel.
 
 ## New deployment experience
 To provision your environment, you must to complete a configuration checklist. As you make progress through the methodology, environments become available to you. Click **Configure** to add deployment information. 

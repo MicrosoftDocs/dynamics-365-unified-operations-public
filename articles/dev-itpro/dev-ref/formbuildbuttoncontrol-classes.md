@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: F Classes - FormBuildButtonControl to FormBuildFastTabSummarySeparator
+title: F classes (FormBuildButtonControl to FormBuildFastTabSummarySeparator)
 description: System API classes that start with the letter F.
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# F Classes - FormBuildButtonControl to FormBuildFastTabSummarySeparator
+# F classes (FormBuildButtonControl to FormBuildFastTabSummarySeparator)
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter F.
 

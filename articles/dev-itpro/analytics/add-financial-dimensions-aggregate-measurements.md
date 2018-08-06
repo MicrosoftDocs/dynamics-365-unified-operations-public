@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # Add financial dimensions to aggregate measurements
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This feature lets power users include financial dimensions in ready-made Microsoft Power BI reports. Power users can also create new Power BI reports that use financial dimensions.
 

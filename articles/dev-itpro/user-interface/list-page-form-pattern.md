@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # List Page form pattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the List Page form pattern. A list page presents a set of data on a UI that is optimized for browsing records, so that you can find and work with a specific record. 
 
 Usage
 -----
 
-A list page presents a set of data on a user interface that is optimized so that you can browse records, find the right record, and then take an action upon that record. The list page lets the user search, filter, and sort the data. FactBoxes on the right side of the grid show related data for the active record. Actions that are relevant to the record are located on the ActionPane at the top of the page. The use of this pattern is now discouraged when there is a 1:1 correspondence between the List Page and Details page. Current guidance is to use this pattern only in other situations, such as when list pages have no backing details pages or have multiple backing details page (for example, when project quotations and sales quotations are shown together in the same List Page).
+A list page presents a set of data on a user interface that is optimized so that you can browse records, find the right record, and then take an action upon that record. The list page lets the user search, filter, and sort the data. FactBoxes on the right side of the grid show related data for the active record. Actions that are relevant to the record are located on the ActionPane at the top of the page. The use of this pattern is now discouraged when there is a 1:1 correspondence between the List Page and Details page. Current guidance is to use this pattern only in other situations, such as when list pages have no backing details pages or have multiple backing details page (for example, when project quotations and sales quotations are shown together in the same List Page).
 
 ## Wireframe
 [![Wireframe](./media/listpage1-1024x576.png)](./media/listpage1.png)
@@ -48,9 +47,9 @@ A list page presents a set of data on a user interface that is optimized so that
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
--   FormTemplate/InteractionClass is now optional when you build new pages.
--   List Page and Details Master/Details Transaction are merged into a single form when there is a 1:1 correspondence between the List Page and Details Page.
-    -   Improves performance when the user moves between the list and details.
+-   FormTemplate/InteractionClass is now optional when you build new pages.
+-   List Page and Details Master/Details Transaction are merged into a single form when there is a 1:1 correspondence between the List Page and Details Page.
+    -   Improves performance when the user moves between the list and details.
     -   Allows for bulk editing in the initial list.
 -   The **Preview** pane has been eliminated.
 
@@ -90,14 +89,14 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 -   [Custom Filter Group](custom-filter-group-subpattern.md)
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 
 **List Page guidelines:**
 
 -   Have fewer than 15 fields in the grid.
--   The first textual/data column should be displayed as a link that goes to the appropriate details form. To do this, make sure that the grid has a default action to enable the hyperlink for the first column.
+-   The first textual/data column should be displayed as a link that goes to the appropriate details form. To do this, make sure that the grid has a default action to enable the hyperlink for the first column.
 -   A Quick Filter should appear above the list. By default, the QuickFilter should use the most likely field for a filter scenario.
 -   There should not be any duplicate **New** and **Delete** buttons.
 -   A link to the List page should be provided in the Main Menu.
@@ -109,7 +108,7 @@ The verification checklist shows the steps for manually verifying that the form
 -   **Grid**:
     -   For transactional entities, the **ID** field should be the first column, followed by the master entity **ID** and **Name** fields.
     -   For master entities, the **Name** field should be the first column, followed by the **ID** field.
--   **ActionPane** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md) document in the ActionPane guidelines section.
+-   **ActionPane** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md) document in the ActionPane guidelines section.
 -   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md) document.
 
 ## Examples
@@ -125,9 +124,9 @@ This section will have answers to frequently asked questions that are related to
     You can do one of the following:
 
     -   Remove the **Preview** pane altogether if it no longer makes sense.
-    -   Remove the large header, and leave the **Preview** pane as is.
+    -   Remove the large header, and leave the **Preview** pane as is.
     -   Split the **Preview** pane into multiple logical FactBoxes if the current one is too tall.
-        -   For a transaction preview, the lines would go into their own FactBox and should be limited to five lines.
+        -   For a transaction preview, the lines would go into their own FactBox and should be limited to five lines.
         -   For a transaction preview, rework the lines into a FactBox card pattern, where the lines are summarized into a count and a lines grid is shown in an enhanced preview when the user hovers over the count value.
 
 ### Open issues

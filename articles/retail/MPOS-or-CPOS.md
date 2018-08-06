@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Choose between Modern POS and Cloud POS
+title: Choose between Retail Modern POS (MPOS) and Cloud POS
 description: This topic explains the key differences between Retail Modern POS and Cloud POS. It also describes various factors that retailers that are implementing Microsoft Dynamics 365 for Retail should consider to help them make the best choice for their requirements.
 author:  jblucher 
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
-# Choose between Modern POS and Cloud POS
+# Choose between Retail Modern POS (MPOS) and Cloud POS
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic gives implementers additional background, tips, and guidance for factors that they should consider when they deploy Microsoft Dynamics 365 for Retail. By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.
 
@@ -95,8 +95,8 @@ Consider the following information as you plan your POS implementation in your r
 
     Unless the connectivity for a given device is very dependable and resilient, or unless a certain amount of downtime is acceptable to the retailer, we recommend one of the following options:
 
-    - Use MPOS in Windows, and enable offline mode.
-    - Deploy an on-premises RSSU.
+  - Use MPOS in Windows, and enable offline mode.
+  - Deploy an on-premises RSSU.
 
     These two options aren't mutually exclusive. For the most reliable topology, retailers can deploy a local RSSU to reduce the dependency on internet connectivity or Azure availability, and they can also deploy POS registers where offline mode is enabled if there is an issue with the local server or network.
 

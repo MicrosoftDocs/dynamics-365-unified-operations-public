@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store
+title: Migrate upgraded AX 2012 R3 sales cubes to the entity store
 description: In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Finance and Operations. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
 author: MilindaV2
 manager: AnnBe
@@ -30,17 +30,16 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store
+# Migrate upgraded AX 2012 R3 sales cubes to the entity store
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Finance and Operations. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
 
 The entity store will support near real-time Microsoft Power BI integration scenarios, as shown in the following diagram. For an overview of Power BI integration with entity store, see [Power BI integration with entity store](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). [![Power BI Architecture diagram](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
 
-## New Power BI features included in the May 2016 and November 2016 updates
-This tutorial requires the Dynamics 365 for Operations May 2016 update or later. You will use the following new capabilities in this tutorial:
+## New Power BI features included in the May 2016 and November 2016 updates
+This tutorial requires the Dynamics 365 for Operations May 2016 update or later. You will use the following new capabilities in this tutorial:
 
 -   Stage an aggregate measurement in the entity store and refresh the data from Dynamics AX. You might prefer this option over in-memory real time aggregate measurements when:
     -   You upgrade a Dynamics AX 2012 cube.
@@ -51,12 +50,12 @@ This tutorial requires the Dynamics 365 for Operations May 2016 update or lat
 -   Leverage the direct query option when creating Power BI content. For example, you can create larger models without relying on OData as the data refresh mechanism.
 -   Migrate reports from your development environment to a production environment using Lifecycle Services (LCS).
 -   As a partner or an ISV you can distribute Power BI content as part of an LCS solution to your customers.
--   **If you're using the November update (platform release 1611)** or later, some steps in this document are part of the process to refresh the entity store - you do not need to perform them manually.
+-   **If you're using the November update (platform release 1611)** or later, some steps in this document are part of the process to refresh the entity store - you do not need to perform them manually.
 
 ## Change upgraded aggregate measurement properties
 As part of the code upgrade process, analysis services projects from the Application Object Tree (AOT) in Dynamics AX 2012 can be migrated to the new aggregate measurements metadata format.
 
-1.  Launch Visual Studio and create a new project in Application Suite. **Note**: You can create a model and include the customized aggregate measurement within that model. For more information, see [Customization: Overlayering and extensions](..\extensibility\customization-overlayering-extensions.md).
+1.  Launch Visual Studio and create a new project in Application Suite. **Note**: You can create a model and include the customized aggregate measurement within that model. For more information, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
 2.  Open Application Explorer. Navigate to **Analytics** &gt; **Perspectives** &gt; **Aggregate measurements**. You will notice a set of aggregate measurements that were upgraded from Dynamics AX 2012 R3, as well as the measurements that ship in the current version of Finance and Operations.
 3.  Select **SalesCube**. Right-click and select **Duplicate in project**.
 4.  An aggregate measurement with the name **SalesCubeCopy** will be added to the project.
@@ -67,7 +66,7 @@ As part of the code upgrade process, analysis services projects from the Applica
     -   Remove unwanted dimension references by adding the corresponding field to the attributes node. For example, the Sizes dimension reference can be removed because the **Size** field in the measure group is sufficiently descriptive. This will improve the runtime performance of queries as well as refresh times.
 
 8.  Select the **SalesCubeV2** root node in the Aggregate measurement designer. Right-click and select **Properties**.
-9.  During upgrade, aggregate measurements are set to the legacy property flag, **SSASCube**. You need to change this property to one of two supported usage types. Previously, **InMemoryRealTime** was supported as usage for aggregate measurements. **StagedEntityStore** is supported as a new usage type. **Note:** Modify the usage property to InMemoryRealTime if you plan to use the Aggregate measurement for embedded BI scenarios as well as Power BI integration. If you are using the Aggregate measurement only for Power BI or Cortana Intelligence Suite integration, select **StagedEntityStore**.
+9.  During upgrade, aggregate measurements are set to the legacy property flag, **SSASCube**. You need to change this property to one of two supported usage types. Previously, **InMemoryRealTime** was supported as usage for aggregate measurements. **StagedEntityStore** is supported as a new usage type. **Note:** Modify the usage property to InMemoryRealTime if you plan to use the Aggregate measurement for embedded BI scenarios as well as Power BI integration. If you are using the Aggregate measurement only for Power BI or Cortana Intelligence Suite integration, select **StagedEntityStore**.
 10. Save the project. Right-click the project in Solution Explorer and select **Rebuild**.
 11. After the rebuild operation is finished, save the project, and then close Visual Studio. This completes the development work. You will author reports as a report developer or a power user.
 
@@ -75,13 +74,13 @@ As part of the code upgrade process, analysis services projects from the Applica
 As an administrator you can configure the refresh of the aggregate measurement using the client.
 
 1.  Launch the Dynamics AX client and navigate to **System Administration** &gt; **Setup** &gt; **Entity Store**. The **Entity Store** form shows a list of aggregate measurements that are available for deployment to the entity store.
-2.  Notice that **Sales Cube** (which was upgraded from Dynamics AX 2012) is not available for deployment to the entity store. **SalesCubeV2**, which you created in the previous step, can be deployed to the entity store.
+2.  Notice that **Sales Cube** (which was upgraded from Dynamics AX 2012) is not available for deployment to the entity store. **SalesCubeV2**, which you created in the previous step, can be deployed to the entity store.
 3.  Select **SalesCubeV2** from the list, and click the **Refresh** button. The **Refresh** dialog box will display. Expand the **Run in the background** tab.
 4.  Provide a descriptive name in the **Task description** field. Optionally, you can select the **Recurrence** tab and create a recurring schedule instead of a one-time refresh. Click **OK**.
 5.  The system will create a batch job for refresh of the aggregate measurement in the entity store.
 
 ## Authoring a report on Sales by State with Power BI desktop
-This step requires that you the install Power BI desktop tool that can be downloaded from [Microsoft Power BI Desktop](http://www.microsoft.com/en-us/download/details.aspx?id=45331).
+This step requires that you the install Power BI desktop tool that can be downloaded from [Microsoft Power BI Desktop](http://www.microsoft.com/en-us/download/details.aspx?id=45331).
 
 1.  Launch Power BI desktop. You may need to apply updates. A welcome page will display. Click **Get data**.
 2.  Alternatively, when Power BI desktop launches, on the **Home** tab select **Get Data** &gt; **SQL Server**.
@@ -130,7 +129,7 @@ FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_Customer[DATAAREAID], "-"), Sal
 
 ### Create a Sales by state report
 
-1.  To create a report that shows sales by customer group, drag the **CustomerInvoiceAmountAccountingCurrency** field from the **SalesCubeV2\_CustomerIncoices** table and drop it on the Power BI desktop canvas. Next, drag the **CustomerGroupName** field in the **SalesCubeV2\_Customer** table to the same grid.
+1.  To create a report that shows sales by customer group, drag the **CustomerInvoiceAmountAccountingCurrency** field from the **SalesCubeV2\_CustomerIncoices** table and drop it on the Power BI desktop canvas. Next, drag the **CustomerGroupName** field in the **SalesCubeV2\_Customer** table to the same grid.
 2.  Change the chart type to a doughnut chart. You should see a report similar to the following.
 
 [![Power BI Doughnut Chart](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)
@@ -185,7 +184,7 @@ As an administrator or a power user, you have successfully authored and publishe
 -   Users can personalize their workspaces by adding Power BI tiles or reports.
 
 
-See also
+Additional resources
 --------
 
 [Modeling and using aggregate data](../analytics/model-aggregate-data.md)

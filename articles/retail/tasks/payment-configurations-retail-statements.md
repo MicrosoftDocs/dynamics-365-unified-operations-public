@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Payment configurations for Retail statements
+title: Configure payment method settings that affect retail statements
 description: This procedure demonstrates configurations for Retail store payment methods, which affect how Retail statements get created and posted. 
 author: jashanno
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Payment configurations for Retail statements
+# Configure payment method settings that affect retail statements
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates configurations for Retail store payment methods, which affect how Retail statements get created and posted.
 

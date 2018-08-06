@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cross-docking from production orders to outbound docks
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
 
@@ -79,10 +79,10 @@ In the **cross-docking policy**, you define which document types are applicable 
 
 ### Cross-docking policy name: Transfer order
 
--   Sequence number: 10
- -   Work order type: Transfer issue
--   Cross docking demand requires location: False
--   Cross docking strategy: Date and time
+- Sequence number: 10
+  -   Work order type: Transfer issue
+- Cross docking demand requires location: False
+- Cross docking strategy: Date and time
 
 ### Sequence number
 

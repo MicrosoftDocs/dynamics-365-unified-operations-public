@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reduce balance depreciation
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article gives an overview of the Reducing balance method of depreciation.
 
@@ -84,7 +83,7 @@ Using the Reducing balance method, 30 percent of the depreciation base (net book
 | Year 2 | (7,000 - 1,000) \* 30% = 1,800            | (7,000 -1,800) = 5,200                |
 | Year 3 | (5,200 - 1,000) \* 30% = 1,260            | (5,200 - 1,260) = 3,940               |
 
- 
+
 -
 
 

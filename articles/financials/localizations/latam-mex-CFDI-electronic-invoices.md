@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Electronic invoices (CFDI)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Electronic billing in Mexico requires the Comprobantes fiscales digitales por internet (CFDI) format. 
 

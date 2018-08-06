@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Cash overview Power BI content
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the **Cash overview** Microsoft Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
 

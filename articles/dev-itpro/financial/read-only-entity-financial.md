@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Build a read-only entity that exposes financial dimensions
+title: Create read-only entities that expose financial dimensions
 description: In this topic, we describe how to build an entity for registered transactions. 
 author: margoc
 manager: AnnBe
@@ -30,8 +30,8 @@ ms.search.validFrom: 2016-11-30
 
 ---
 
-# Build a read-only entity that exposes financial dimensions
-"[!include[banner](../includes/banner.md)]"
+# Create read-only entities that expose financial dimensions
+"[!include [banner](../includes/banner.md)]"
 
 
 In this topic, we describe how to build an entity for registered transactions that are registered. 
@@ -168,7 +168,7 @@ The entity work is now complete, and we can build it.
 > [!NOTE]
 > In this scenario, a LedgerDimension was associated with the DimensionCombinationentity entity. In scenarios where there is a DefaultDimension, we must associate it with the DimensionSetentity entity. The improvements and extensions that are required are identical to the improvements and extensions that we made to the DimensionCombinationentity entity.
 
-See also
+Additional resources
 --------
 
 [Export Dynamics AX 7 Entities to your own Azure SQL Database](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/27/export-dynamics-ax7-entities-to-your-own-azure-sql-database/)

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 
 # Install network printer devices in on-premises environments
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to connect an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations to existing network printer devices. Network printing in the on-premises application is supported by the [Print and Document Services](https://technet.microsoft.com/en-us/library/hh831468(v=ws.11).aspx) feature in Microsoft Windows Server 2016. This feature lets you centralize tasks that are related to printer management. To install and configure Print and Document Services, you must have administrative access to the server that hosts the primary instance of Application Object Server (AOS).
 

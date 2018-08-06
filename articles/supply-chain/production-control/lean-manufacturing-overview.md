@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Lean manufacturing overview
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics 365 for Finance and Operations.
 
@@ -43,6 +42,7 @@ Lean manufacturing offers tools that you can use to model lean operations. These
 -   Monitor and maintain kanban jobs.
 
 The lean manufacturing architecture in Finance and Operations consists of production flows, activities, and kanban rules. These structures are fully integrated with Finance and Operations processes. You can use lean manufacturing in a mixed-mode manufacturing environment that combines various supply, production, and sourcing strategies. These strategies include production orders, batch orders for process industries, purchase orders, and transfer orders.
+
 | **Important**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | You can use Finance and Operations to support the implementation of lean manufacturing with kanbans. However, a successful implementation of lean principles depends on the internal business processes that you use, and the actual production conditions and environment. |

@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 # Set up bar code masks
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 This topic describes how to set up bar code mask characters, bar code masks, and how to assign bar code masks to bar codes.
 
@@ -64,10 +63,10 @@ Bar code masks are used to create bar codes and to quickly identify bar codes th
 | **Loyalty card**     | Adds a loyalty customer to the transaction, and can be used when paying by loyalty.                             |
 
 ## Define bar code masks
-After bar code mask characters are specified for the necessary bar code masks, go to **Retail** &gt; **Inventory management** &gt; **Barcodes and labels** &gt; **Barcode mask setup**. On this page, you can define bar code masks that use the previously specified characters. These bar code masks will be used when generating bar codes and will also help to identify bar codes scanned at the POS.
+After bar code mask characters are specified for the necessary bar code masks, go to **Retail** &gt; **Inventory management** &gt; **Barcodes and labels** &gt; **Barcode mask setup**. On this page, you can define bar code masks that use the previously specified characters. These bar code masks will be used when generating bar codes and will also help to identify bar codes scanned at the POS.
 
 1.  Click **New** to create a new bar code mask.
-2.  Enter values in the **Mask ID** and **Description** fields, and then select a bar code mask type in the **Type** field.
+2.  Enter values in the **Mask ID** and **Description** fields, and then select a bar code mask type in the **Type** field.
 3.  In the **General** section, select a value in the **Bar code standard** field, and then specify the bar code prefix, if one is required.
 4.  In the **Bar code mask segment** section, add bar code segments that will be used in the bar code to be created.
 
@@ -77,18 +76,18 @@ As an example, to create a bar code mask with mask ID 'Product', you'd do the fo
 2.  Select a bar code standard, for example, 'Code 39'.
 3.  Provide a prefix to be used to easily identify the bar code. For example, ‘22’.
 4.  Add a mask segment. The ‘Product’ mask segment will be selected.
-5.  Provide a length for the product segment, for example, ‘10’. The length should match the length of a product ID commonly used in the store. The mask will be displayed as a preview in the **General** section under **Mask**.
+5.  Provide a length for the product segment, for example, ‘10’. The length should match the length of a product ID commonly used in the store. The mask will be displayed as a preview in the **General** section under **Mask**.
 
-## Assign bar code masks to bar codes
-Bar codes masks must be assigned to bar codes before they can be used. Continuing with the previous example, to assign the bar code mask to a bar code, do the following:
+## Assign bar code masks to bar codes
+Bar codes masks must be assigned to bar codes before they can be used. Continuing with the previous example, to assign the bar code mask to a bar code, do the following:
 
 1.  Go to **Organization administration** &gt; **Setup** &gt; **Bar codes**. Click **New** to create a new bar code.
-2.  Enter values in the **Barcode** **setup** and **Setup **fields.
+2.  Enter values in the **Barcode** **setup** and **Setup **fields.
 3.  In the **General** section, in the **Bar code type** field, select ‘Code 39’. In the **Mask** **ID** field, select the ‘Product’ mask previously created.
-4.  Under **Size**, enter ‘12’.
+4.  Under **Size**, enter ‘12’.
 5.  Click **Save**.
 
-The bar code mask can now be used to create bar codes for products. The above steps are examples of how to create bar code masks for products, but they also illustrate how to create bar code masks for any of the other supported bar code types. Bar code masks, types, and lengths should be adjusted for use in your specific environment.
+The bar code mask can now be used to create bar codes for products. The above steps are examples of how to create bar code masks for products, but they also illustrate how to create bar code masks for any of the other supported bar code types. Bar code masks, types, and lengths should be adjusted for use in your specific environment.
 
 
 

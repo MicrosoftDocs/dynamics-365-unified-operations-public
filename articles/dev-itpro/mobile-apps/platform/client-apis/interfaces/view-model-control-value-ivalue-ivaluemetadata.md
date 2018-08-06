@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: ValueMetadata
+title: ValueMetadata type
 description: Value metadata type.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# ValueMetadata Type
+# ValueMetadata type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Value metadata type.
 

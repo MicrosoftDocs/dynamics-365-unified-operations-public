@@ -32,18 +32,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Maintain planned orders
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about how to manage planned orders. It describes how you can update the status of planned orders, firm them, and filter for planned orders that have the same status as a selected planned order.
 
 You can manage planned orders from the **Master planning** workspace, the **Planned order** list, or the **Planned production orders**, **Planned purchase orders**, and **Planned transfer** lists. You can use the **Status** field to help track your progress. The following values are used:
 
--   When master planning generates planned orders, the planned orders have a status of **Unprocessed**.
+-   When master planning generates planned orders, the planned orders have a status of **Unprocessed**.
 -   If you decide not to firm a planned order, you can give it a status of **Completed**.
--   When you decide to firm a planned order, you can give it a status of **Approved**. This status indicates that you approve firming of the planned order, but it isn't firmed yet.
+-   When you decide to firm a planned order, you can give it a status of **Approved**. This status indicates that you approve firming of the planned order, but it isn't firmed yet.
 
-**Note:** An approved planned order is transferred, in its current state, to the next master planning calculation. You can firm planned orders by clicking **Firm**. You can firm the following planned orders:
+**Note:** An approved planned order is transferred, in its current state, to the next master planning calculation. You can firm planned orders by clicking **Firm**. You can firm the following planned orders:
 
 -   The planned order that is selected.
 -   Multiple planned orders.
@@ -51,7 +50,7 @@ You can manage planned orders from the **Master planning** workspace, the **Plan
 
 When a planned order is firmed, it's moved to the orders section of the relevant module. **Note:** You can right-click a planned order that has a particular status and filter for other planned orders that have the same status. This functionality is useful if, for example, you want to filter for all planned orders that have a status of **Approved**, so that you can then firm them.
 
-See also
+Additional resources
 --------
 
 [Master plans](master-plans.md)

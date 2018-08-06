@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3
 ---
 
 # Shift depreciation calculation
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Shift depreciation is used when manufacturing companies have multiple production shifts for parts of the year. For example, a company can have one, two, or three shifts during high production season but only one shift during the rest of the year. This means that some fixed assets are used more often than normal during the high product season and they would experience greater depreciation during that time. Being able to adjust the fixed asset's depreciation rates higher makes sense if the fixed asset is active for more than one shift. You can adjust the depreciation using calculated depreciation that is unique to each shift.
 

@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Security roles in the public sector
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes the functionality for public sector security roles. This functionality includes the Project manager and Purchasing agent roles for the public sector.
 
 All users must be assigned to at least one security role to have access to Microsoft Dynamics 365 for Finance and Operations. Security roles determine which duties users can perform and which parts of the user interface they can view.
 
 ## What are the prerequisites for assigning security roles in the public sector?
-Users must exist in Finance and Operations before you can assign them to roles. Even if you use automatic role assignment, users themselves aren't automatically added to Finance and Operations.
+Users must exist in Finance and Operations before you can assign them to roles. Even if you use automatic role assignment, users themselves aren't automatically added to Finance and Operations.
 
 ## Which roles do I have to assign?
 After users are in the system, there are two roles that you might have to set up for public sector organizations:
@@ -48,9 +47,9 @@ After users are in the system, there are two roles that you might have to set up
 -   Project manager
 -   Purchasing agent
 
-### What is the Project manager - Public sector role?
+### What is the Project manager - Public sector role?
 
-The **Project manager - Public Sector** security role supports the public sector extensions for Project management. Assign this role in addition to the **Project manager** role to give project managers access to project management functionality. By default, this security role is assigned the following duties in Finance and Operations.
+The **Project manager - Public Sector** security role supports the public sector extensions for Project management. Assign this role in addition to the **Project manager** role to give project managers access to project management functionality. By default, this security role is assigned the following duties in Finance and Operations.
 
 | Duty name                                                         | Duty AOT name                           | Duty description                                                                |
 |-------------------------------------------------------------------|-----------------------------------------|---------------------------------------------------------------------------------|
@@ -76,13 +75,13 @@ The **Purchasing agent - Public Sector** security role supports the public secto
 | Maintain purchase document print management settings            | PrintMgmtPurchDocumentSettingsMaintain   | Maintain print management settings for purchase documents.                                              |
 | Inquire into purchasing policies                                | ProcPurchasingProcessInquire             | Respond to inquiries about policies that govern the purchasing process.                                 |
 | Inquire into purchasing policies for public sector              | ProcPurchasingProcessInquire\_PSN        | Respond to inquiries about public sector policies that govern the purchasing process.                   |
-| Approve purchase agreement                                      | PurchaseAgreementWFMaintain              | Review and approve purchase agreements in a workflow.                                                   |
+| Approve purchase agreement                                      | PurchaseAgreementWFMaintain              | Review and approve purchase agreements in a workflow.                                                   |
 | Maintain purchase orders                                        | PurchOrderMaintain                       | Document and record purchase orders.                                                                    |
 | Maintain purchase requisition consolidation                     | PurchReqConsolidationMaintain            | Maintain the purchase requisition consolidation process.                                                |
 | Maintain creation of purchase orders from purchase requisitions | PurchReqOrderFromRequisitionMaintain     | Release purchase orders from purchase requisitions.                                                     |
 | Approve purchase requisitions                                   | PurchReqPurchaseRequisitionApprove       | Approve and authorize purchase requisitions.                                                            |
 | Maintain all purchase requisitions                              | PurchReqPurchaseRequisitionMaintainAll   | Edit and update purchase requisitions.                                                                  |
-| View purchase requisitions on hold                              | PurchReqTableView                        | Open and review purchase requisitions that are on hold.                                                 |
+| View purchase requisitions on hold                              | PurchReqTableView                        | Open and review purchase requisitions that are on hold.                                                 |
 | Maintain request for quotation questionnaire                    | PurchRFQQuestionnaireMaintain            | Edit and update request for quotation (RFQ) questionnaires.                                             |
 | Maintain request for quotation                                  | PurchRFQRequestForQuoteMaintain          | Edit and update RFQs.                                                                                   |
 | Maintain request for quotation replies                          | PurchRFQRequestForQuoteReplyMaintain     | Edit and update RFQ replies.                                                                            |
@@ -101,7 +100,7 @@ The **Purchasing agent - Public Sector** security role supports the public secto
 ## What do I do next?
 After the users are created, you assign them to roles on the **Assign users to roles** page.
 
-See also
+Additional resources
 --------
 
 [Role-based security](../../dev-itpro/sysadmin/role-based-security.md)

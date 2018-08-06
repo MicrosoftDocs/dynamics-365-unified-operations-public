@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Import a configuration from Lifecycle Services for electronic reporting (ER)
+title: Import Electronic reporting configurations from Lifecycle Services
 description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Lifecycle Services (LCS). 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Import a configuration from Lifecycle Services for electronic reporting (ER)
+# Import Electronic reporting configurations from Lifecycle Services
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Lifecycle Services (LCS).
 

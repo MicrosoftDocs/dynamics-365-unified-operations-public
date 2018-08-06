@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Services
+title: Services module
 description: Various services that are available to the application in client runtime.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Services 
+# Services module
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Various services that are available to the application in client runtime.
 

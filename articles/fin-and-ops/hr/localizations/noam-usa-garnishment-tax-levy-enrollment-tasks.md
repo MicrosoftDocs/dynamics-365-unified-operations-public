@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll workers in a garnishment or tax levy
+title: Enroll workers in garnishments or tax levies
 description: This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps guarantee that the payroll impact of garnishments and tax levies is handled correctly.
 author: rschloma
 manager: AnnBe
@@ -30,14 +30,13 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Enroll workers in a garnishment or tax levy
+# Enroll workers in garnishments or tax levies
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps guarantee that the payroll impact of garnishments and tax levies is handled correctly.
 
-If you have questions about garnishments and tax levies that aren't answered in this topic, or in the [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md) or [Garnishments, tax levies, and administrative fees](noam-usa-garnishment-tax-levy-administrative-fees.md) topics, contact your legal advisors. To learn more about the concepts that are discussed in this topic, see [Garnishments, tax levies, and administrative fees](noam-usa-garnishment-tax-levy-administrative-fees.md).
+If you have questions about garnishments and tax levies that aren't answered in this topic, or in the [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md) or [Garnishments, tax levies, and administrative fees](noam-usa-garnishment-tax-levy-administrative-fees.md) topics, contact your legal advisors. To learn more about the concepts that are discussed in this topic, see [Garnishments, tax levies, and administrative fees](noam-usa-garnishment-tax-levy-administrative-fees.md).
 
 ## Enroll a worker in a garnishment or tax levy
 When the Payroll department is notified about a court-ordered garnishment or tax levy, the federal government requires that deductions begin within a specific number of days. As for other garnishment rules, some states might use federal rules, or they might set their own requirements. For example, a state might require that deductions begin in the first payroll payment, no later than three days after the court order is received. Because this payment might occur in the current pay period, it's in your interest to enroll workers as quickly as possible. 
@@ -58,7 +57,7 @@ Start on the **Payroll details** FastTab. The following table shows the informat
 | Deduction priority   | The number that you enter determines the order that deductions for the garnishment are made in, relative to other deductions. The deduction for the benefit that has the lowest deduction priority number is made first. The lowest deduction priority number is 0 (zero). When multiple benefits have the same deduction priority number, the deductions for those benefits are made in alphabetical order. Often, garnishments must be deducted from pay before other voluntary benefits. However, some states require that specific deductions take precedence, such as union dues or term life deductions. The default value for this field is set on the **Benefit elements** page. |
 | **Important:**     |Your legal advisors should help you determine the correct deduction priority for all benefits.      |
 | Rate source          | This field is automatically set to **Custom**. Because you must manually maintain the amount of a garnishment, you can't change this value. For more information, see "Setting up payroll information for benefits" in [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md). This field isn't available for tax levies.                                         |
-| Basis Deduction      | The court order indicates whether the deduction should be a fixed amount (for example, 350.00 per pay period) or a percentage of earnings (for example, 15 percent of earnings). Select the basis, and then enter the deduction amount that is specified on the court order. These fields aren't available for tax levies. The tax levy deduction is calculated based on the information on the **Tax levy details** FastTab.                                                                              |
+| Basis Deduction      | The court order indicates whether the deduction should be a fixed amount (for example, 350.00 per pay period) or a percentage of earnings (for example, 15 percent of earnings). Select the basis, and then enter the deduction amount that is specified on the court order. These fields aren't available for tax levies. The tax levy deduction is calculated based on the information on the **Tax levy details** FastTab.                                                                              |
 | Notes                | Enter detailed information about the garnishment order, such as the date when it was received, data that was entered, and communication with the worker.                                                                                   |
 
 Enter the following information on the **Payroll limits** FastTab. In most cases, garnishment orders don't have limit amounts or periods. Instead, the garnishment continues until the court notifies you to stop it.
@@ -92,14 +91,14 @@ If the garnishment enhancement hotfix is installed, skip to the table for the **
 </tr>
 <tr class="even">
 <td>Disposable income definition Maximum withholding percent</td>
-<td>If the state that issued the garnishment order requires any changes to the federal rules that define the worker's disposable income, select the disposable income definition for this garnishment. Then enter the maximum withholding percentage that is provided in the court order. Otherwise, leave these fields blank. These fields are available only for garnishments, and only when the limit method is <strong>Calculate disposable income</strong>.</td>
+<td>If the state that issued the garnishment order requires any changes to the federal rules that define the worker&#39;s disposable income, select the disposable income definition for this garnishment. Then enter the maximum withholding percentage that is provided in the court order. Otherwise, leave these fields blank. These fields are available only for garnishments, and only when the limit method is <strong>Calculate disposable income</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Income exempt from levy</td>
 <td>Enter the amount of wages that are exempt from the tax levy.
 <ul>
 <li>For a federal tax levy, use publication 1494, which is updated and issued every year.</li>
-<li>For state and local tax levies, see the state's tax levy withholding rules, and apply the formulas to determine the amount of the exemption.</li>
+<li>For state and local tax levies, see the state&#39;s tax levy withholding rules, and apply the formulas to determine the amount of the exemption.</li>
 </ul>
 This field is available only for tax levies, and only when the limit method is <strong>Calculate disposable income</strong>.</td>
 </tr>
@@ -109,7 +108,7 @@ This field is available only for tax levies, and only when the limit method is <
 </tr>
 <tr class="odd">
 <td>Administrative fee</td>
-<td>Enter the amount to reduce the deduction for the garnishment by if the deduction for the garnishment plus the deduction for the administrative fee exceeds the worker's disposable income limit. This field doesn't cause the administrative fee to be deducted. Instead, it sets the amount that the garnishment deduction should be reduced by. To deduct the administrative fee, you must create a benefit for the administrative fee and then assign that benefit to the worker. <strong>Caution:</strong> The amount in this field must be the same as the amount in the <strong>Amount or rate</strong> field for the administrative fee benefit that you assign to the worker.</td>
+<td>Enter the amount to reduce the deduction for the garnishment by if the deduction for the garnishment plus the deduction for the administrative fee exceeds the worker&#39;s disposable income limit. This field doesn&#39;t cause the administrative fee to be deducted. Instead, it sets the amount that the garnishment deduction should be reduced by. To deduct the administrative fee, you must create a benefit for the administrative fee and then assign that benefit to the worker. <strong>Caution:</strong> The amount in this field must be the same as the amount in the <strong>Amount or rate</strong> field for the administrative fee benefit that you assign to the worker.</td>
 </tr>
 <tr class="even">
 <td>Multiple garnishment method</td>
@@ -120,7 +119,7 @@ This field is available only for tax levies, and only when the limit method is <
 <li><strong>Equal</strong> – The deduction is divided so that each garnishment receives an equal amount.</li>
 <li><strong>First in</strong> – The garnishments are satisfied in the order in which the worker enrolled in them. This option is typically used for tax levies.</li>
 </ul>
-<strong>Important:</strong> If the court order doesn't specify which method to use, check with your legal advisors for clarification. Typically, if the orders have the same type but are from different states, the laws in the state where the worker works apply. For example, a worker who is located in Washington has three orders: two from California and one from Idaho. The rules for Washington apply to all three orders. However, if this worker has two support orders from California and a creditor garnishment from Idaho, the support orders use the California rules, and the creditor garnishment uses the Idaho rules. If it isn't clear which method you should use, check with your legal advisors.</td>
+<strong>Important:</strong> If the court order doesn&#39;t specify which method to use, check with your legal advisors for clarification. Typically, if the orders have the same type but are from different states, the laws in the state where the worker works apply. For example, a worker who is located in Washington has three orders: two from California and one from Idaho. The rules for Washington apply to all three orders. However, if this worker has two support orders from California and a creditor garnishment from Idaho, the support orders use the California rules, and the creditor garnishment uses the Idaho rules. If it isn&#39;t clear which method you should use, check with your legal advisors.</td>
 </tr>
 </tbody>
 </table>
@@ -151,15 +150,15 @@ Set up each garnishment type only one time for each worker. When a worker has mo
 </tr>
 <tr class="even">
 <td>State</td>
-<td>Specify the state that a tax levy is from. This field is available only for state and local tax levies. It isn't available for other garnishment types.</td>
+<td>Specify the state that a tax levy is from. This field is available only for state and local tax levies. It isn&#39;t available for other garnishment types.</td>
 </tr>
 <tr class="odd">
 <td>Limit method</td>
-<td>Select <strong>Calculate disposable income</strong> to calculate the worker's disposable income for garnishments of this type. Select <strong>Use alternative limit</strong> only if your legal advisors direct you to select that option. In this case, your legal advisors should provide the amount to enter in the <strong>Alternative limit</strong> field.</td>
+<td>Select <strong>Calculate disposable income</strong> to calculate the worker&#39;s disposable income for garnishments of this type. Select <strong>Use alternative limit</strong> only if your legal advisors direct you to select that option. In this case, your legal advisors should provide the amount to enter in the <strong>Alternative limit</strong> field.</td>
 </tr>
 <tr class="even">
 <td>Disposable income definition</td>
-<td>Select the disposable income definition to use for garnishments of this type. If you leave this field blank, the federal rules that define the worker's disposable income are used. This field is available only when the limit method is <strong>Calculate disposable income</strong>. For more information, see <a href="noam-usa-garnishment-tax-levy-set-up-tasks.md">Garnishment and tax levy setup tasks</a>.</td>
+<td>Select the disposable income definition to use for garnishments of this type. If you leave this field blank, the federal rules that define the worker&#39;s disposable income are used. This field is available only when the limit method is <strong>Calculate disposable income</strong>. For more information, see <a href="noam-usa-garnishment-tax-levy-set-up-tasks.md">Garnishment and tax levy setup tasks</a>.</td>
 </tr>
 <tr class="odd">
 <td>Maximum withholding percent</td>
@@ -173,20 +172,20 @@ Set up each garnishment type only one time for each worker. When a worker has mo
 <td>Multiple garnishment method</td>
 <td>Select the method to use if the amount of the deduction must be split among multiple garnishments of the same type:
 <ul>
-<li><strong>None</strong> – The deduction isn't split among garnishments of this type.</li>
+<li><strong>None</strong> – The deduction isn&#39;t split among garnishments of this type.</li>
 <li><strong>Pro rata</strong> – The deduction is divided so that each garnishment receives a proportionate amount.</li>
 <li><strong>Equal</strong> – The deduction is divided so that each garnishment receives an equal amount.</li>
 <li><strong>First in</strong> – The garnishments are satisfied in the order in which the worker enrolled in them. This option is typically used for tax levies.</li>
 </ul>
-<strong>Important:</strong> If the court order doesn't specify which method to use, check with your legal advisors for clarification. Typically, if the orders have the same type but are from different states, the laws in the state where the worker works apply. For example, a worker who is located in Washington has three support orders: two from California and one from Idaho. The rules for Washington apply to all three orders. However, if this worker has two support orders from California and a creditor garnishment from Idaho, the support orders use the California rules and the creditor garnishment uses the Idaho rules. If it isn't clear which method you should use, check with your legal advisors.</td>
+<strong>Important:</strong> If the court order doesn&#39;t specify which method to use, check with your legal advisors for clarification. Typically, if the orders have the same type but are from different states, the laws in the state where the worker works apply. For example, a worker who is located in Washington has three support orders: two from California and one from Idaho. The rules for Washington apply to all three orders. However, if this worker has two support orders from California and a creditor garnishment from Idaho, the support orders use the California rules and the creditor garnishment uses the Idaho rules. If it isn&#39;t clear which method you should use, check with your legal advisors.</td>
 </tr>
 <tr class="even">
 <td>Exempt disposable income</td>
-<td>Enter the amount that should be used to further reduce the allowable deduction after the worker's disposable income is calculated. The amount should be provided by your legal advisors. It's based on IRS publication 1494 and applicable state requirements.</td>
+<td>Enter the amount that should be used to further reduce the allowable deduction after the worker&#39;s disposable income is calculated. The amount should be provided by your legal advisors. It&#39;s based on IRS publication 1494 and applicable state requirements.</td>
 </tr>
 <tr class="odd">
 <td>Exempt earnings</td>
-<td>Enter the amount that the worker's earnings should be reduced by before the disposable income is calculated. The amount should be provided by your legal advisors.</td>
+<td>Enter the amount that the worker&#39;s earnings should be reduced by before the disposable income is calculated. The amount should be provided by your legal advisors.</td>
 </tr>
 <tr class="even">
 <td>Minimum wage Minimum wage multiplier</td>
@@ -194,7 +193,7 @@ Set up each garnishment type only one time for each worker. When a worker has mo
 </tr>
 <tr class="odd">
 <td>Allow reduction</td>
-<td>Select this option if deduction amounts for this garnishment type can be reduced so that they stay within the mandated limit for all garnishment types. This option is usually selected for student loan garnishments and cleared for support orders. If you aren't sure whether you should select this option, check with your legal advisors.</td>
+<td>Select this option if deduction amounts for this garnishment type can be reduced so that they stay within the mandated limit for all garnishment types. This option is usually selected for student loan garnishments and cleared for support orders. If you aren&#39;t sure whether you should select this option, check with your legal advisors.</td>
 </tr>
 </tbody>
 </table>
@@ -261,7 +260,7 @@ A worker has the following three child support orders. Because the calculation p
 
 The worker's gross wages for the pay period are 2,000.00, and the total amount of taxes and benefits that are excluded from the worker's disposable income is 600.00. Therefore, the worker's calculated disposable income is 2,000.00 – 600.00, or 1,400.00. 
 
-The maximum amount that can be withheld from the worker's pay for these garnishments is 55 percent of 1,400.00, or 770.00. 
+The maximum amount that can be withheld from the worker's pay for these garnishments is 55 percent of 1,400.00, or 770.00. 
 
 The total amount that is required by the three garnishments is 450.00 + 225.00 + 200.00, or 875.00. 
 
@@ -275,9 +274,9 @@ In this example, here are the garnishment amounts for the **Pro rata** method:
 
 -   Total amount from all three support orders: 875.00
 -   Maximum withholding amount that is allowed: 770.00
--   Percentage that can be applied to the first order: 51 percent (450.00 ÷ 875.00)
--   Percentage that can be applied to the second order: 26 percent (250.00 ÷ 875.00)
--   Percentage that can be applied to the third order: 23 percent (200.00 ÷ 875.00)
+-   Percentage that can be applied to the first order: 51 percent (450.00 ÷ 875.00)
+-   Percentage that can be applied to the second order: 26 percent (250.00 ÷ 875.00)
+-   Percentage that can be applied to the third order: 23 percent (200.00 ÷ 875.00)
 -   First garnishment amount: 392.00 (770.00 × .51)
 -   Second garnishment amount: 200.20 (770.00 × .26)
 -   Third garnishment amount: 177.10 (770.00 × .23)
@@ -318,7 +317,7 @@ If the combined amount exceeds the maximum deduction limit, set the following va
 
 
 
-See also
+Additional resources
 --------
 
 [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md)

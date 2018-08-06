@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Learning Power BI content
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the **Learning** Microsoft Power BI content.
 

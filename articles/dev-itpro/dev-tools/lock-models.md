@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Turn off model customization and deprecate functionality
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes the process of disabling customization of a model. By following this process, you make it ineligible for over-layering. Developers will still be able to extend that model. This article also describes how you can deprecate obsolete functionality.
 
@@ -59,7 +58,7 @@ There are three levels of customization settings:
 
 -   **Allow customizations** – If the **Customization** element is omitted, or if it’s provided but the text **Allow** is used inside it, there are no restrictions.
 -   **Soft-locking** – If you require soft-locking, use the text **AllowAndWarn** inside the **Customization** element.
--   **Hard-locking** – To disable customization of the model, use the text **DoNotAllow** inside the **Customization** element, as shown in the preceding example.
+-   **Hard-locking** – To disable customization of the model, use the text **DoNotAllow** inside the **Customization** element, as shown in the preceding example.
 
 **Note:** Elements in the descriptor file must be listed in alphabetical order.
 
@@ -88,7 +87,7 @@ Later, your vendor (perhaps Microsoft) releases a new, updated version of the mo
 In this case, we break the app. The common language runtime (CLR) can’t call the method, because the parameter profile that is assumed in the call isn’t the same as the parameter profile of the callee (the calling code provided one parameter, but two are now required). Therefore, it’s a good idea to limit what is publicly consumable. If something is private, nobody can use it from outside your model. However, another option is to make the artifact internal. If you apply the **internal** modifier to a class or method, the artifact is visible only inside your model and can’t be reached from the outside. Essentially, you must assume that anything that isn’t internal or private will be used from outside your model. Therefore, you must support it forever. Never make anything public or protected unless it absolutely must be public or protected, and use interfaces to hide implementation details that aren’t relevant outside the boundary of your model. There is no way to mark metadata (as opposed to code) with the internal visibility specifier.
 
 ## Testing internal functionality
-By limiting the surface area of your model, you help guarantee that you will be able to fix issues in your models that do not allow customizations, and that the application will run smoothly. However, you might argue that, by making things internal, you limit the ability to test your code. To remedy this situation, you can inform your test packages about the packages that they should test. In other words, the test packages can access internal things. To implement this solution, you edit the descriptor file, as shown in the following example.
+By limiting the surface area of your model, you help guarantee that you will be able to fix issues in your models that do not allow customizations, and that the application will run smoothly. However, you might argue that, by making things internal, you limit the ability to test your code. To remedy this situation, you can inform your test packages about the packages that they should test. In other words, the test packages can access internal things. To implement this solution, you edit the descriptor file, as shown in the following example.
 
     <?xml version="1.0" encoding="utf-8"?>
     <AxModelInfo xmlns:i=http://www.w3.org/2001/XMLSchema-instance>
@@ -103,7 +102,7 @@ You can provide any number of external packages by including them in the **Inter
 ## Deprecating functionality
 ### Deprecating methods
 
-Sometimes, you no longer want to support source code that is public. As we mentioned earlier, you should not remove an artifact from the code unless that artifact is private or internal, because there might be users who rely on it. Instead, you can use the **SysObsoleteAttribute** attribute to specify that consumers should no longer use that artifact. We recommend that you mark things as obsolete in two phases:
+Sometimes, you no longer want to support source code that is public. As we mentioned earlier, you should not remove an artifact from the code unless that artifact is private or internal, because there might be users who rely on it. Instead, you can use the **SysObsoleteAttribute** attribute to specify that consumers should no longer use that artifact. We recommend that you mark things as obsolete in two phases:
 
 1.  Specify that using the artifact is flagged as a warning.
 2.  After one or more release cycles, make using the artifact an error.
@@ -148,11 +147,11 @@ All your existing customers will continue to call the old version. This situatio
         }
     }
 
-Again, for the reasons that we mentioned earlier, you may never be able to get rid of the old method completely, because it was not made private or internal.
+Again, for the reasons that we mentioned earlier, you may never be able to get rid of the old method completely, because it was not made private or internal.
 
 ### Deprecating metadata
 
-For deprecating model elements (tables, data entities, EDTs, Enums, ...etc.), use the property **IsObsolete** that is available on all model element types. **IsObsolete** is also available on table, view, and data entity fields. When you set **IsObsolete** to Yes, references to that element or field will cause compilation warnings.
+For deprecating model elements (tables, data entities, EDTs, Enums, ...etc.), use the property **IsObsolete** that is available on all model element types. **IsObsolete** is also available on table, view, and data entity fields. When you set **IsObsolete** to Yes, references to that element or field will cause compilation warnings.
 
 
 

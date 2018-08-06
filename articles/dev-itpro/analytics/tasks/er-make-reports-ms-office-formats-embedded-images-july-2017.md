@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Design configurations to generate reports in Microsoft Office formats with embedded images 
+title: Design configurations to generate reports in Office format that have embedded images
 description: The steps in this topic provide information about how to design Electronic reporting (ER) configurations that generate electronic documents in Microsoft Office formats (Excel and Word) that contain embedded images. 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Design configurations to generate reports in Microsoft Office formats with embedded images
+# Design configurations to generate reports in Office format that have embedded images
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To complete the steps in this procedure, first complete the procedure, “ER Create a configuration provider and mark it as active.” 
 This procedure explains how to design Electronic reporting (ER) configurations to generate a Microsoft Excel or Word document that contains embedded images. In this procedure, you will create the required ER configurations for the sample company, Litware, Inc. These steps can be completed using the USMF dataset. 

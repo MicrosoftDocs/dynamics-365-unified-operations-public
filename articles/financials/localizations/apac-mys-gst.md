@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Malaysia Goods and Services Tax
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information that will help you set up Goods and Services Tax (GST) for a Malaysian company. It also explains the functionality that Microsoft Dynamics 365 for Finance and Operations provides for GST.
 

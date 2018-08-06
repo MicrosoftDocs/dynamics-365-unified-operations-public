@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create and acquire assets from accounts payable
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This task guide will walk through creation and acquisition of a fixed asset with the purchasing process. It uses the Accountant and Accounts payable clerks and the demo company USMF.
 

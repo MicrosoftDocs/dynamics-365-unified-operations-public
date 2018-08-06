@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 Translation Service - User interface file translation
+title: Translate user interface files
 description: This topic explains how to use the UI translation service for Microsoft Dynamics 365 products.
 author: kfend
 manager: AnnBe
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Microsoft Dynamics 365 Translation Service - User interface file translation
+# Translate user interface files
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about how to translate a user interface (UI) file for Microsoft Dynamics products or solutions.
 
-For more information about the Microsoft Dynamics 365 Translation Service, see [Dynamics 365 - Translation Service overview](translation-service-overview.md#microsoft-dynamics-365---translation-service-overview). For information about how to translate a documentation file, see [Dynamics 365 - Translation Service user guide - Documentation file translation](use-translation-service-ua.md).
+For more information about the Microsoft Dynamics 365 Translation Service, see [Dynamics 365 - Translation Service overview](translation-service-overview.md). For information about how to translate a documentation file, see [Dynamics 365 - Translation Service user guide - Documentation file translation](use-translation-service-ua.md).
 
 ## Create a translation request
 1. In Microsoft Dynamics Lifecycle Services (LCS), on the DTS dashboard, select **Add** to create a new translation request.
@@ -74,7 +74,7 @@ Select the plus sign (**+**) in each section to open the **File upload** page.
 Create one zip file that contains all the UI files that you want to translate. The zip file can include different file types, provided that the file types are supported for the product. For more information about supported file types, see [Supported products](translation-service-overview.md#supported-products). Note that DTS doesn't change the source files that you upload. The source files are just used to create files in the corresponding target language.
 
 ### Upload XLIFF translation memory files (Optional)
-If you have XLIFF TM files from a previous UI translation request, or if you used the [Align tool](use-translation-service-tm.md#creating-a-translation-memory---alignment) to create an XLIFF TM, you can zip the files before you upload them. Strings that match are then recycled to help guarantee consistency between product versions. For more information about XLIFF TMs, see [Microsoft Dynamics 365 Translation service - Translation memory](use-translation-service-tm.md).
+If you have XLIFF TM files from a previous UI translation request, or if you used the [Align tool](use-translation-service-tm.md) to create an XLIFF TM, you can zip the files before you upload them. Strings that match are then recycled to help guarantee consistency between product versions. For more information about XLIFF TMs, see [Microsoft Dynamics 365 Translation service - Translation memory](use-translation-service-tm.md).
 
 In addition to using XLIFF TMs for recycling, DTS uses them to create a custom [MT system](translation-service-overview.md#custom-trained-mt-system) if either the source language or the target language is a Microsoft GA language, and if the other language is **English – United States**. However, if neither the source language nor the target language is a Microsoft GA language, and if the XLIFF TM contains fewer than 10,000 TUs, DTS uses a general domain MT system after recycling is completed. This behavior occurs because of requirements that are set by Microsoft Translator Hub (MT Hub).
 

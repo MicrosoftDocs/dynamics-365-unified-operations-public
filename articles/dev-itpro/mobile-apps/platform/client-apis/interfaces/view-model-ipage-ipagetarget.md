@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: PageTarget
+title: PageTarget type
 description: PageTarget type
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# PageTarget Type
+# PageTarget type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 ### Hierarchy
 

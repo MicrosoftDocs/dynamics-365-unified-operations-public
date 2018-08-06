@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a Retail Experience app
+title: Create and apply branding to the Retail Experience app
 description: This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 author: josaw1
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Create a Retail Experience app
+# Create and apply branding to the Retail Experience app
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 
@@ -59,14 +58,16 @@ For more information, see [Change the Updates Channel](https://developer.xamarin
 
 If you're developing on Windows and using the Mac just for building the iOS app then you must connect the computer that runs Windows and the Mac. For instructions, see [Connecting to the Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/).
 
-## Loading the solution in Visual Studio
+## Loading the solution in Visual Studio
 You must modify the Retail Experience app solution before it can be loaded correctly in Visual Studio. Follow these steps.
 
 1.  Copy the **entire** Retail SDK folder to a Xamarin-enabled computer. For example, copy it to C:\RetailSdk.
 2.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\Sample.ShoppingApp.sln, and remove the following line.
 
-           
-        Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailSdk.Sample.ShoppingApp", "RetailSdk.Sample.ShoppingApp.csproj", "{D88688FA-C42E-48BE-8334-5A5855561913}" .
+
+~~~
+    Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailSdk.Sample.ShoppingApp", "RetailSdk.Sample.ShoppingApp.csproj", "{D88688FA-C42E-48BE-8334-5A5855561913}" .
+~~~
 
 3.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\iOSShoppingApp.iOS.csproj, and remove following lines.
 
@@ -80,7 +81,7 @@ You must modify the Retail Experience app solution before it can be loaded corre
     1.  Open the .csproj files for both Android and iOS projects and replace the line "&lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.1.114&lt;/PkgXamarin\_Forms&gt;" with &lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.2.127&lt;/PkgXamarin\_Forms&gt;
     2.  Open the files package.config file for both Android and iOS projects and replace the line "&lt;package id="Xamarin.Forms" version="2.3.1.114" targetFramework="monoandroid60" /&gt;" with "&lt;package id="Xamarin.Forms" version="2.3.2.127" targetFramework="monoandroid60" /&gt;"
 
-## Connect to an online channel
+## Connect to an online channel
 The Retail Experience app uses an online channel to show the products. You can use any online channel. Depending on your requirements, you can use a different online channel for each apps, or you can use the same online channel for both apps. Any released product that is assorted to the online channel will appear in the app. **Note:** The app can't be used to issue gift cards. Therefore, gift cards must be excluded from the assortment for the online channel that the apps use. Information about the Retail Server endpoint and the online channel is added to the config.xml file that is present in each app project. You must make the following changes in the config.xml file:
 
 -   In the **&lt;DataServiceUrl&gt;** tag, add the URL of the Retail Server.
@@ -132,7 +133,7 @@ After you've successfully built the Retail Experience app by using the Microsoft
 
 #### Icons
 
-To change the icons for the Android app, open the Resource folder, and update the icons in each drawable folder. These drawable folders contain images for Android at different resolutions. You can either preserve the sizes of the images in these folders or change them to meet your requirements. For information about how Android handles different screen sizes, see <https://developer.android.com/guide/practices/screens_support.html>. The splash screen is put in the drawable folder and is a special type of image that Android requires. For more information about the splash screen, see <https://developer.android.com/studio/write/draw9patch.html>.
+To change the icons for the Android app, open the Resource folder, and update the icons in each drawable folder. These drawable folders contain images for Android at different resolutions. You can either preserve the sizes of the images in these folders or change them to meet your requirements. For information about how Android handles different screen sizes, see <https://developer.android.com/guide/practices/screens_support.html>. The splash screen is put in the drawable folder and is a special type of image that Android requires. For more information about the splash screen, see <https://developer.android.com/studio/write/draw9patch.html>.
 
 #### Label/text
 
@@ -153,7 +154,7 @@ To change the text labels on the Android app, open the TextResources.resx file, 
 
 #### Colors
 
-To change the colors that appear in the Android app, open the config.xml file and colors.xml files (colors.xml is under Resources-&gt;values folder). Now change the values for **Primary** (the app bar color), **PrimaryDark** (the status bar color), **Accent**, and **ActionButtonBackground in both the files** and keep them consistent. **Note**: The product price is shown on two pages namely products list page and the product details page. The price shown on the product list page is set to green (\#008A00) and cannot be altered. However, the price shown on the product details page is governed by the value set for the "PrimaryDark" property.
+To change the colors that appear in the Android app, open the config.xml file and colors.xml files (colors.xml is under Resources-&gt;values folder). Now change the values for **Primary** (the app bar color), **PrimaryDark** (the status bar color), **Accent**, and **ActionButtonBackground in both the files** and keep them consistent. **Note**: The product price is shown on two pages namely products list page and the product details page. The price shown on the product list page is set to green (\#008A00) and cannot be altered. However, the price shown on the product details page is governed by the value set for the "PrimaryDark" property.
 
 ### Applying branding to the iOS app
 

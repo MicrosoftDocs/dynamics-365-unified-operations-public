@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Sales complementary fiscal documents for Brazil
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes sales complementary invoice for the Brazilian localization.
 
@@ -47,7 +46,7 @@ According to the fiscal regulations in Brazil, a specific fiscal document that i
 -   Error in the tax percentage
 
 ## Sales complementary fiscal document
-You must create a sales complementary fiscal document to adjust a sales fiscal document that was generated for an incorrect price, an incorrect Imposto sobre Produtos Industrializados (IPI) amount, or an incorrect Imposto sobre Circulação de Mercadorias e Serviços (ICMS) amount. A sales complementary fiscal document is issued to adjust only a positive difference. For example, a sales complementary fiscal document is generated if the price of an item on the original customer fiscal document is incorrect, and if the correct price for the item is more than the price that is recorded on the original customer fiscal document. You can create a sales complementary fiscal document to adjust an error in the price or quantity of items or services, the tax percentage, or the tax calculation. The sales complementary fiscal document is a sales fiscal document that complements the original sales fiscal document. All information, except information about charges, is updated from the original sales fiscal document. You can't add lines to or delete lines from a sales complementary fiscal document. The following types of sales complementary fiscal documents are available:
+You must create a sales complementary fiscal document to adjust a sales fiscal document that was generated for an incorrect price, an incorrect Imposto sobre Produtos Industrializados (IPI) amount, or an incorrect Imposto sobre Circulação de Mercadorias e Serviços (ICMS) amount. A sales complementary fiscal document is issued to adjust only a positive difference. For example, a sales complementary fiscal document is generated if the price of an item on the original customer fiscal document is incorrect, and if the correct price for the item is more than the price that is recorded on the original customer fiscal document. You can create a sales complementary fiscal document to adjust an error in the price or quantity of items or services, the tax percentage, or the tax calculation. The sales complementary fiscal document is a sales fiscal document that complements the original sales fiscal document. All information, except information about charges, is updated from the original sales fiscal document. You can't add lines to or delete lines from a sales complementary fiscal document. The following types of sales complementary fiscal documents are available:
 
 -   **Price** – This type of complementary fiscal document is created to adjust an incorrect price for a fiscal document. The correct price must be more than the price that is recorded on the original fiscal document. The price difference is charged to the customer.
 -   **IPI** – This type of complementary fiscal document is created to adjust an incorrect IPI tax amount for a fiscal document. The IPI tax difference is charged to the customer.

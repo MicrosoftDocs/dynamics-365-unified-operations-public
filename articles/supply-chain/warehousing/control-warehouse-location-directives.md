@@ -32,12 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Control warehouse work by using work templates and location directives
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes how to use work templates and location directives to determine how and where work is carried out in the warehouse.
 
-The instructions that warehouse workers receive on a mobile device are determined by the work templates that you set up in Microsoft Dynamics 365 for Finance and Operations to define the various warehouse processes and tasks. Work templates determine how the work is performed for each warehouse process. By linking a location directive to work templates, you can help guarantee that work occurs in specific physical areas of the warehouses.
+The instructions that warehouse workers receive on a mobile device are determined by the work templates that you set up in Microsoft Dynamics 365 for Finance and Operations to define the various warehouse processes and tasks. Work templates determine how the work is performed for each warehouse process. By linking a location directive to work templates, you can help guarantee that work occurs in specific physical areas of the warehouses.
 
 ## Work templates
 The **Work templates** page lets you define the work operations that must be performed in the warehouse. Typically, warehouse work operations consist of a pair of actions: a warehouse worker picks up on-hand inventory in one location and then puts the picked inventory down in another location. 

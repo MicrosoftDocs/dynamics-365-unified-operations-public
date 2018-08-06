@@ -1,8 +1,7 @@
 ---
 # required metadata
 
-title: Infrastructure estimator (AX 2012)
-description: The Microsoft Dynamics Lifecycle Services Infrastructure estimator provides an automated rough first estimate of the hardware needs of an environment. Estimates can be provided for environments that are on your premises or in the cloud. The estimate is intended to be used as a basis for more in-depth, manual sizing estimates, not to replace them.
+title: Infrastructure estimator in Lifecycle Services (LCS)
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
@@ -30,12 +29,11 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Infrastructure estimator (AX 2012)
+# Infrastructure estimator in Lifecycle Services (LCS)
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-
-The Microsoft Dynamics Lifecycle Services Infrastructure estimator provides an automated rough first estimate of the hardware needs of an environment. Estimates can be provided for environments that are on your premises or in the cloud. The estimate is intended to be used as a basis for more in-depth, manual sizing estimates, not to replace them.
+The Microsoft Dynamics Lifecycle Services Infrastructure estimator provides an automated rough first estimate of the hardware needs of an environment. Estimates can be provided for environments that are on your premises or in the cloud. The estimate is intended to be used as a basis for more in-depth, manual sizing estimates, not to replace them.
 
 An infrastructure sizing estimate is created by:
 1.  Gathering usage and role requirements in a usage profile.
@@ -62,8 +60,8 @@ Server roles represent the major components of the Microsoft Dynamics AX environ
 | Terminal Services             | Required if there is a remote operating site                                              |
 | Enterprise Portal             | Required if it is specified in the Deployment details questionnaire of the Usage profiler |
 | AOS for Enterprise Portal     | Required if Enterprise Portal is needed                                                   |
-| SQL Server Reporting Services | Required if it is specified in the Deployment details questionnaire of the Usage profiler |
-| SQL Server Analysis Services  | Required if it is specified in the Deployment details questionnaire of the Usage profiler |
+| SQL Server Reporting Services | Required if it is specified in the Deployment details questionnaire of the Usage profiler |
+| SQL Server Analysis Services  | Required if it is specified in the Deployment details questionnaire of the Usage profiler |
 | Help server                   | Required if it is specified in the Deployment details questionnaire of the Usage profiler |
 
 ## Prerequisites

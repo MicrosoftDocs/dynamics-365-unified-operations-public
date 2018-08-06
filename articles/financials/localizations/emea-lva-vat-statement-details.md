@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # VAT statement details for Latvia
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up the VAT statement for legal entities in Latvia.
 
@@ -66,7 +65,7 @@ Here is an example that shows how you might set up sales tax reporting codes on 
 | 65                       | The compensation paid to farmers                                                         | Lauksaimniekiem izmaksātā kompensācija                                                   | R65          |
 | 66                       | Not payable tax prepayment                                                               | PVN summa, kas nav atskaitāma kā priekšnodoklis                                          | R66          |
 | 67                       | Tax amount reduction calculated for previous tax periods                                 | Iepriekšējos taksācijas periodos samaksai valsts budžetā aprēķinātā nodokļa samazinājums | R67          |
-| 57                       | Calculated prepayment tax amount reduction for previous tax periods                      | Iepriekšējos taksācijas periodos atskaitītā priekšnodokļa samazinājums                   | R57          |
+| 57                       | Calculated prepayment tax amount reduction for previous tax periods                      | Iepriekšējos taksācijas periodos atskaitītā priekšnodokļa samazinājums                   | R57          |
 
 ## Configure the Electronic reporting model and format for the report
 To review or change the VAT statement configuration, on the **Reporting configurations** page, select **VAT declaration model** in the list of models. Then click **Designer** to review or change the model. To review or change the VAT statement format, on the **Reporting configurations** page, select **VAT declaration (LV)**, and then click **Designer**.

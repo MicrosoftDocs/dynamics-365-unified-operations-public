@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Add a predecessor to a production flow activity
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 In a production flow version, all activities must be sequenced. An activity can have one or multiple predecessors or successors. 
 

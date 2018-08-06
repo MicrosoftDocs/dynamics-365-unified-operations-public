@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Page
+title: Page type
 description: Page object type.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Page Type
+# Page type
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Page object type.
 

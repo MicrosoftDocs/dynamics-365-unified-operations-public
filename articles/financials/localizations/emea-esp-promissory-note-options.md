@@ -30,8 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Spanish promissory note options
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes options and changes for the basic promissory note functionality that is implemented in Microsoft Dynamics 365 for Finance and Operations for legal entities in Spain.
 
@@ -47,7 +46,7 @@ To set up parameters for promissory notes for legal entities in Spain, go to **A
 ## Validation for promissory notes journals
 If the **Validation on promissory notes journal** parameter is set to **Yes**, the vendor's tax exempt number is validated when lines are added and fulfilled in a Promissory note settlement journal. If this parameter is set to **No**, and if **Domestic + EU member states** is selected in the **Tax exempt number requirement** field, the tax exempt number isn't validated.
 
-## Dates in promissory notes journals
+## Dates in promissory notes journals
 If the **Date treatment (promissory notes journal)** parameter is set to **Yes**, the **Minimum date** field is cleared when you create payment proposals for Draw promissory note journals and Remittance journals. Therefore, the due date is used as the transaction date, even if the due date is before the system date. If the **Date treatment (promissory notes journal)** parameter is set to **No**, the system date is the default date in the **Minimum date** field.
 
 ## Invoice confirmation

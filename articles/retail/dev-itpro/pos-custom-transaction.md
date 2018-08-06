@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add custom controls to Retail Modern POS transaction pages
+title: Add custom controls to Retail Modern POS (MPOS) transaction pages
 description: This topic explains how to add a new custom control on a transaction page by using the screen layout designer.
 author: mugunthanm
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Add custom controls to Retail Modern POS transaction pages
+# Add custom controls to Retail Modern POS (MPOS) transaction pages
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can add more information to a transaction page by using custom controls. You can add a custom control to a transaction page by using the screen layout designer. In the designer, you can use a drag-and-drop operation to add the custom control, and then set the location, height, and width of the control. You can implement business logic for the custom control in your own extensions by using the POS extension framework. This topic explains how to add a new custom control that shows the details for the selected line item, the item ID, and the description.
 
@@ -50,12 +50,12 @@ You can add more information to a transaction page by using custom controls. You
 8. On the page, right-click the custom control, and then select **Customize**.
 9. In the dialog box, set these properties:
 
-    - **Control Name:** lineDetails
-    - **Package Name:** Pos_Extensibility_Samples
-    - **Publisher Name:** Contoso
+   - **Control Name:** lineDetails
+   - **Package Name:** Pos_Extensibility_Samples
+   - **Publisher Name:** Contoso
 
-    > [!NOTE]
-    > These names should match the names in the extension manifest.
+     > [!NOTE]
+     > These names should match the names in the extension manifest.
 
 10. Close the designer by selecting the **Close** button (**X**).
 11. When you're prompted to save your changes, select **Yes**. If you select **No**, your changes won't be saved.

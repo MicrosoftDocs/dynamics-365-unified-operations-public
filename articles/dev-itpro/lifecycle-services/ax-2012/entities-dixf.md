@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Data import/export framework entities (AX 2012)
+title: Data Import/Export Framework (DIXF) entities
 description: This topic lists the entities that can be imported by using the Data Import/Export Framework, the application module that each entity is associated with, and the class, staging table, and target table for each entity.
 author: kfend
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Data import/export framework entities (AX 2012)
+# Data Import/Export Framework (DIXF) entities
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic lists the entities that can be imported by using the Data Import/Export Framework, the application module that each entity is associated with, and the class, staging table, and target table for each entity.
 
@@ -129,7 +128,7 @@ This topic lists the entities that can be imported by using the Data Import/Expo
 | Document types(Setup)                                                       | System                 | DMFDocuTypeEntityClass                  | DMFDocuTypeEntity                    | DMFDocuTypeTargetEntity                  |
 | Electronic signature parameters(Parameter)                                  | System                 | DMFSIGParametersEntityClass             | DMFSIGParametersEntity               | DMFSIGParametersTargetEntity             |
 | Email parameters(System configuration                                       | System                 | DMFSysEmailParametersEntityClass        | DMFSysEmailParametersEntity          | DMFSysEmailParametersTargetEntity        |
-|  Enterprise Portal for Microsoft Dynamics AX document parameters(Parameter) | System                 | DMFEPDocuParametersEntityClass          | DMFEPDocuParametersEntity            | DMFEPDocuParametersTargetEntity          |
+|  Enterprise Portal for Microsoft Dynamics AX document parameters(Parameter) | System                 | DMFEPDocuParametersEntityClass          | DMFEPDocuParametersEntity            | DMFEPDocuParametersTargetEntity          |
 | Environmental parameters(Parameter)                                         | System                 | DMFEMSParameterEntityClass              | DMFEMSParameterEntity                | DMFEMSParameterTargetEntity              |
 | Expense policy(Documents)                                                   | System                 | DMFTrvPolicyRuleEntityClass             | DMFTrvPolicyRuleEntity               | DMFTrvPolicyRuleTargetEntity             |
 | Fixed asset parameters(Parameter)                                           | System                 | DMFAssetParametersClass                 | DMFAssetParametersEntity             | DMFAssetParametersTargetEntity           |
@@ -191,7 +190,7 @@ This topic lists the entities that can be imported by using the Data Import/Expo
 | Vendor invoice header(Documents)                                            | Vendor                 | DMFVendInvoiceInfoTableEntityClass      | DMFVendInvoiceInfoTableEntity        | DMFVendInvoiceInfoTableTargetEntity      |
 | Vendor invoice line(Documents)                                              | Vendor                 | DMFVendInvoiceInfoLineEntityClass       | DMFVendInvoiceInfoLineEntity         | DMFVendInvoiceInfoLineTargetEntity       |
 
- 
+
 
 
 

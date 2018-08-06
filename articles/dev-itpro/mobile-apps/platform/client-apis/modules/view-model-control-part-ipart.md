@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Part
+title: Part module
 description: A part is a container control that contains only a page, allowing for a page to be embedded within a page.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Part 
+# Part module
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 A part is a container control that contains only a page, allowing for a page to be embedded within a page.
 

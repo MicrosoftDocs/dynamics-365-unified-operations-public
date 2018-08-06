@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Purchase agreements
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about purchase agreements. A purchase agreement is a contract that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time. In exchange for this commitment, the buyer receives special prices and discounts. 
 
@@ -41,7 +40,7 @@ Purchase agreements can apply to a specific quantity of a product, a specific cu
 
 On the **Purchase agreements** page, you can create, apply, and follow up on purchase agreements that exist between your organization and your vendors. For example, after you create a purchase agreement, you can order directly from it. Each purchase agreement has a validity period that is defined by the person who creates the purchase agreement. The delivery date of a purchase must be within the effective dates of this validity period.  
 
-After you create a purchase agreement, you must activate it before it becomes effective. To activate a purchase agreement, set the **Mark agreement as effective** option to **Yes**.
+After you create a purchase agreement, you must activate it before it becomes effective. To activate a purchase agreement, set the **Mark agreement as effective** option to **Yes**.
 
 ## Commitment types
 Each line in a purchase agreement is a commitment to buy something. You can use lines from multiple purchase orders (POs) to fulfill the commitment. There are four types of commitments:
@@ -69,11 +68,11 @@ The following policies affect the way that the link between a purchase agreement
 -   **Minimum release amount and Maximum release amount** – If an amount is specified, you receive a message if you make any change to an order line that causes the order line to differ from the related commitment.
 
 ## Fulfillment calculations for purchase agreements
-Fulfillment quantities and amounts are shown on the **Fulfillment** tab on the **Line details** FastTab of the **Purchase agreements** page.  
+Fulfillment quantities and amounts are shown on the **Fulfillment** tab on the **Line details** FastTab of the **Purchase agreements** page.  
 
-The **Fulfillment** area shows the remaining amount or quantity that is required to fulfill the commitment.  
+The **Fulfillment** area shows the remaining amount or quantity that is required to fulfill the commitment.  
 
-The **Agreement** area shows the total quantity or the total amount that the sales agreement line is valid for.  
+The **Agreement** area shows the total quantity or the total amount that the sales agreement line is valid for.  
 
 You can access the PO lines and the invoice lines that contribute to the fulfillment calculation by selecting the **Related information** action on the lines or on the header of a purchase agreement.
 
@@ -83,8 +82,8 @@ When you confirm a purchase agreement, the current version of the purchase agree
 ## Applying purchase agreements in the ordering process
 When you create a PO, you can apply a purchase agreement to it. Information from the terms for the agreement, such as the payment terms, delivery terms, and delivery address, is then copied to the header of the PO. If the PO contains one or more lines for products or categories that are covered by the agreement, the prices and discounts from the purchase agreement are used for those lines. The amount or quantity on the order line contributes to the fulfillment of the commitment in the purchase agreement. The same PO can include both lines that aren't related to a purchase agreement and lines that have a commitment for a purchase agreement.  
 
-You can select a purchase agreement only when you're creating a PO. You can't select a purchase agreement after the PO has been created.  
-In some situations where POs are created indirectly, you can control whether Finance and Operations automatically searches for applicable purchase agreements. For example, you might do this when you're automatically firming planned POs or creating POs that are based on sales orders.
+You can select a purchase agreement only when you're creating a PO. You can't select a purchase agreement after the PO has been created.  
+In some situations where POs are created indirectly, you can control whether Finance and Operations automatically searches for applicable purchase agreements. For example, you might do this when you're automatically firming planned POs or creating POs that are based on sales orders.
 
 ## Purchase agreements and intercompany trade
 Intercompany trading relationships can be created between vendor accounts and customer accounts that are in different legal entities. When a sales order or PO is created for one of the parties, an intercompany order chain is created. In the order chain, the sales order and PO are created in the appropriate legal entities.  
@@ -96,7 +95,7 @@ If you create an intercompany PO that uses the intercompany purchase agreement i
 ## Financial dimensions on purchase agreements
 You can copy financial dimensions to document headers or to individual lines of a purchase agreement. If you change the dimensions in the agreement header or on the agreement line, the change doesn't affect any released orders, but it will be reflected on any new orders.
 
-See also
+Additional resources
 --------
 
 [Create a purchase agreement (Task guide)](tasks/create-purchase-agreement.md)

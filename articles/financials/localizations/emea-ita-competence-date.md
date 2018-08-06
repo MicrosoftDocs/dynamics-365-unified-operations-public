@@ -30,8 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Competence date for transactions
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the competence date and explains how to enable the functionality for transactions in Italy.
 
@@ -50,7 +49,7 @@ To enable this functionality for transactions, on the **General ledger parameter
 -   Bank account reconciliation
 -   Closing sheet
 -   Opening transaction
--   Project – Post costs
+-   Project – Post costs
 -   Project – Accrue turnover
 -   Project – Estimate post
 -   Project – Estimate reverse

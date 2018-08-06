@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Finance and Operations cloud platform monthly updates FAQ
+title: Cloud platform monthly updates FAQ
 description: This topic provides some important information about the monthly updates of the Microsoft Dynamics 365 for Finance and Operations cloud platform.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/29/2018
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,9 +30,9 @@ ms.search.validFrom: 2017-03-31
 
 ---
 
-# Finance and Operations cloud platform monthly updates FAQ
+# Cloud platform monthly updates FAQ
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides important information about the monthly updates of the Microsoft Dynamics 365 for Finance and Operations cloud platform.
 
@@ -130,7 +130,11 @@ The [Software lifecycle policy](../migration-upgrade/versions-update-policy.md) 
 
 If you're a partner and are interested in getting early access to the platform update, join the [PEAP program](http://aka.ms/PEAPnomination) by submitting the nomination survey at <http://aka.ms/PEAPnomination>. If you're a customer and want your environments to always run on the latest platform, submit the nomination survey at <http://aka.ms/CAAPnomination>.
 
-## I prefer that Microsoft update a Standard Acceptance Test (Sandbox) environment that differs from the Tier-2 sandbox environment that I purcased. What can I do?
+## How can I get the exact package version that is applied to my Sandbox environment by Microsoft ?
+
+When Microsoft updates your Tier 2 Sandbox environment, a copy of the package version is saved in the LCS Project Asset Library.
+
+## I prefer that Microsoft update a Standard Acceptance Test (Sandbox) environment that differs from the Tier-2 sandbox environment that I purchased. What can I do?
 
 In the opt-out survey, Microsoft will provide a place where you can enter a different sandbox environment ID. Note that Microsoft won't update Tier 1 sandbox environments. Tier 1 sandbox environments are environments that are deployed as a single virtual machine (VM).
 

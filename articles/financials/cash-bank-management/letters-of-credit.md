@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Letters of credit
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Letters of credit are bank documents that are commonly used for the purchase and sale of goods across international borders. 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create tables
+title: Create tables by using the Application Object Tree (AOT)
 description: This topic provides information about how to use the Application Object Tree (AOT) to create tables in which to store data.
 author: kfend
 manager: AnnBe
@@ -30,12 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Create tables
+# Create tables by using the Application Object Tree (AOT)
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 Create tables to store data in by using the Application Object Tree (AOT).
 
@@ -55,6 +52,7 @@ Table fields are based on a primitive data type or an extended data type. For mo
 7.  To delete the table, right-click it, and then click **Delete**.
 
 ## Add Fields to a Table
+
 | **Note**                                                                                                                               |
 |----------------------------------------------------------------------------------------------------------------------------------------|
 | You can delete only fields that do not contain data in any of the table records. You cannot modify the data type of an existing field. |
@@ -69,7 +67,7 @@ Table fields are based on a primitive data type or an extended data type. For mo
 
 When you insert data in a table during development, the SQL statement you use to insert the data is cached in the AOS. Next you might add a new field to the table and persist the change to the database. This causes the SQL statement in the cache to become stale, because the statement is not updated to include the new field. If you reuse the stale statement, the new field is ignored, or an error might occur. To avoid this problem, restart the AOS after you persist table schema changes to the database. The cache is empty when the AOS restarts.
 
-See also
+Additional resources
 --------
 
 [Use the Table Browser to View, Add, Modify, or Delete Records](http://msdn.microsoft.com/library/89402b55-02ea-40bc-ad0e-0774b1655426(AX.60).aspx)

@@ -32,14 +32,14 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Financial report components
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article describes how the components, or building blocks, of report definitions are used in financial reporting. These building blocks include row definitions, column definitions, and reporting tree definitions. The article explains how to organize and lock building blocks. 
 
 The design philosophy behind financial report designer is to break information down into the smallest component or building block, and then mix and match the components as required. Therefore, your report formatting is separate from your financial data, and you can change the design of a report without modifying the financial data in your Microsoft Dynamics ERP system. By using this building block approach, you can combine text, amounts, and calculations to produce the reports that you require. Additionally, this flexibility encourages creativity by making it easy for you to view your operations in different ways. The individual building blocks of a report definition are similar to a three-dimensional spreadsheet, but they have more power. A report definition specifies the row definition, column definition, and optional reporting tree definition that should be used for the report. It also includes information about where to store the report that is generated and how to format it. 
 
 ## Building blocks of a report
+
 | Building block            | Description                     | For more information                                    |
 |---------------------------|---------------------------------|---------------------------------------------------------|
 | Row definition            | A row definition defines the descriptive lines (for example, salaries or sales) on a report. It also lists the segment values or dimensions that contain the values for each line item, and includes row formatting and calculations.                                                    | [Row definitions](row-definitions-financial-reporting.md)                       |
@@ -116,7 +116,7 @@ When you open a building block, other users have read-only access that building 
 3.  Select a building block, and then click **Undo Checkout**.
 4.  Click **Yes** to check in the building block.
 
-## See also
+## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
 

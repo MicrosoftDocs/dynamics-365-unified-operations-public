@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Virtual machines that don't allow administrator access FAQ
+title: Development and build VMs that don't allow admin access FAQ
 description: This topic provides answers to frequantly asked questions (FAQs) about virtual machines that don't allow administrator access.
 author: yukonpeegs
 manager: AnnBe
-ms.date: 03/29/2018
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Virtual machines that don't allow administrator access FAQ
+# Development and build VMs that don't allow admin access FAQ
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides answers to frequently asked questions (FAQ) about virtual machines (VMs) that don't allow administrator access. Specifically, the information in this topic applies to Tier 1 VMs that run Platform update 12 and later.
 
@@ -61,9 +61,6 @@ You must use IIS Express. See the next question for more information.
 ## What are the instructions for using IIS Express?
 When IIS Express is started, an icon appears in the notification area (near the clock). When you right-click on the IIS Express icon, all the running sites are listed. You can stop IIS Express from that menu. Some actions in Visual Studio cause IIS Express to be started, but you can also explicitly start IIS Express from Visual Studio by selecting **Restart IIS Express** on the **Dynamics 365** menu.
 
-## How can I apply a partner Visual Studio license that isn't linked to the Visual Studio sign-in account that is likely to be used in the customer Azure AD or domain?
-This functionality isn't supported. You can't apply a partner Visual Studio license unless it's linked to the Visual Studio sign-in account that is used in the customer Azure Active Directory (Azure AD) or domain.
-
 ## Can I install additional development tools (such as Fiddler and Pepper)?
 No, you can't install additional development tools.
 
@@ -71,7 +68,7 @@ No, you can't install additional development tools.
 No, you can't run Windows PowerShell commands and commands at a prompt command as an administrator.
 
 ## Is the Trace Parser supported?
-Although the Trace Parser isn't currently supported, we plan to add support for it again soon.
+Trace Parser currently requires the user to be an administrator.
 
 ## Can the system be put into maintenance mode?
 You can put the system into maintenance mode to change the license configuration. However, the procedure that is described in [Maintenance mode](maintenance-mode.md) isn't supported. Self-service support for maintenance mode in all environments will be added to LCS in the future. Until this support is available in LCS, you can follow these steps to put a system into maintenance mode.
@@ -91,3 +88,14 @@ You can put the system into maintenance mode to change the license configuration
 
 ## Can I install a license deployable package?
 You should be able to use the **-devinstall** option to install license deployable packages. However, an issue was found with this scenario. We are working to resolve the issue.
+
+## Is licensing Visual Studio by entering a product key supported?
+Entering a product key directly in Visual Studio is not supported. Instead, use Visual Studio subscription licensing and sign in to Visual Studio with the email address (user account) associated with the license. You can link a Visual Studio license to a user account by assigning an MSDN license to the user account or by assigning a license to the user account by using https://www.visualstudio.com/subscriptions-administration.
+
+## Can I upgrade my database to a new application release?
+As of the February 2018 release of Lifecyle Services (LCS), you can execute the data upgrade package from the LCS environment page of a development environment. Executing the data upgrade package from LCS does not require you to be an administrator on the VM.
+
+The process described in [Upgrade data in development, demo, or sandbox environments](../migration-upgrade/upgrade-data-to-latest-update.md) runs the data upgrade package from the command line. This requires you to be an administrator on the VM.
+
+## What do I need to know if I am developing for Retail?
+If you are developing for Dynamics 365 for Retail, configuration steps and other important information is described in [Configuration steps for Retail developers working on cloud-hosted development environments with no administrator access](../../retail/dev-itpro/cloud-dev-box.md).

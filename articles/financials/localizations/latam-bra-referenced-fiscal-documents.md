@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Referenced fiscal documents for Brazil
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of referenced fiscal documents that are used in Brazil.
 
@@ -48,7 +47,7 @@ In some scenarios, a fiscal document must include another fiscal document's info
 -   When you return an item to a vendor or receive a return from a customer, a reference to the original document is added.
 -   Enter a manual fiscal document, model 01, in the system. You will create a fiscal document that references the original fiscal document.
 -   Enter a Sales Order for Retail Sales or NF-e (model 55). The fiscal document will reference the original retail document and fiscal printer.
--   Create a sales order, and post the invoice. Then create a return order that references the previous order. The return fiscal document will create a fiscal document that references the original fiscal document.
+-   Create a sales order, and post the invoice. Then create a return order that references the previous order. The return fiscal document will create a fiscal document that references the original fiscal document.
 
 ## Manual
 When a fiscal document isn't available, you can attach customer or vendor fiscal documents as fiscal references to a fiscal document. You can also view the fiscal references that are attached to a posted fiscal document.

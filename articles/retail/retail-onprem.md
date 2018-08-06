@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail capabilities available in on-premises deployments
+title: Retail capabilities that are available in on-premises deployments
 description: This topic lists the retail capabilities available in on-premises deployments.
 author: aamirallaqaband
 manager: AnnBe
@@ -27,9 +27,9 @@ ms.search.validFrom: July 2017 update
 ms.dyn365.ops.version: 2017-06-30 
 ---
 
-# Retail capabilities available in on-premises deployments
+# Retail capabilities that are available in on-premises deployments
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic lists retail capabilities that are available in on-premises deployments.
 

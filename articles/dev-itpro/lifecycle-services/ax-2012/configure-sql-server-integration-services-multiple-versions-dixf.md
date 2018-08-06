@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure the version of SSIS used by the AX 2012 Data import/export framework
+title: Specify the version of Integration Services that the Data Import/Export Framework uses
 description: This topic provides information about how to configure the SSIS that is being used by the data import/export framework in Dynamics AX 2012.
 author: kfend
 manager: AnnBe
@@ -30,12 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Configure the version of SSIS used by the AX 2012 Data import/export framework
+# Specify the version of Integration Services that the Data Import/Export Framework uses
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 This topic only applies to environments that are running Microsoft Dynamics AX 2012 R2 with [KB 3018235](https://mbs2.microsoft.com/Knowledgebase/KBDisplay.aspx?scid=kb;en-us;3018235) installed. KB 3018235 is required to use Data Import/Export Framework for AX 2012 R2 CU7 with SQL Server 2014 Integration Services. If you are in an environment in which two versions of Microsoft SQL Server Integration Services are installed on the same computer, by default, the Data Import/Export Framework Windows service will attach to the oldest version of Integration Services that it can find. SQL Server 2008 Integration Services is the oldest supported version. You can force the Data Import/Export Framework to use another version of Integration Services by using redirecting assembly versions. We strongly recommend that you use Data Import/Export Framework in an environment with only one version of SQL Server Integration Services installed. To see which versions of Integration Services are supported with the Data Import/Export Framework, see the [Microsoft Dynamics AX 2012 System Requirements](http://go.microsoft.com/fwlink/?LinkId=165377).
 

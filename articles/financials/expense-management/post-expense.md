@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Post an expense report
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 After an expense report has been approved and transferred to the general journal, it can be posted to the general ledger. When you post an expense report, expenses that are eligible for recovery of value-added tax (VAT) are identified. The task of verifying and recovering VAT payments is assigned to the employee who is responsible for verifying the expense report.
 

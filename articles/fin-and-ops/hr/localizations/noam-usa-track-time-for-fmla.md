@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Track time off for FMLA
+title: Track time off for the Family and Medical Leave Act (FMLA)
 description: This topic explains how to track Family and Medical Leave Act (FMLA) eligibility and hours that are worked to meet federal requirements.
 author: ShielaSogge
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Track time off for FMLA
+# Track time off for the Family and Medical Leave Act (FMLA)
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to track Family and Medical Leave Act (FMLA) eligibility and hours that are worked to meet federal requirements.
 

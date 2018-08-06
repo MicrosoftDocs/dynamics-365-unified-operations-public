@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up accounts payable invoice matching validation
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This recording uses the USMF demo company. The accounts payable manager or accounting manager role would perform these steps. Before you begin, make sure that the Invoice matching configuration key is selected. If your legal entity tracks expenses, such as freight, by using charges, make sure that the Charges configuration key is selected.  Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information. Differences among these documents are called matching discrepancies. Matching discrepancies are compared with the tolerances that are specified. If a matching discrepancy exceeds the tolerance percentage or amount, match variance icons are displayed in the Vendor invoice form and in the Invoice matching details form.
 

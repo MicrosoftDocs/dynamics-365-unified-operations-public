@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Financial dimension configuration for integrating applications
+title: Financial dimension configuration
 description: This topic describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
 author: aprilolson
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Financial dimension configuration for integrating applications
+# Financial dimension configuration
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the Financial dimension configuration. There are two important areas for setup: 
 - the order of financial dimensions for financial reporting. This is configured on the **Financial reporting setup** page. 
@@ -81,7 +80,7 @@ For this example, we will use the same import file.
 
 However, we will use the following active ledger dimension format: **Main account - Department - Cost Center - Customer** For the first row of the import file, because only three segments are defined, a blank or dash is assumed for the Customer segment. **Main account == 605140** **Department == 001** **Cost Center == 02** **Customer == blank** Therefore, the string looks like this: 605140-001-02- The second row is imported just as defined in the import file. **Main account == 110110** **Department == 002** **Cost Center == 04** **Customer == ABC**
 
-See also
+Additional resources
 --------
 
 [Dimensions in Excel](dimensions-overview.md)

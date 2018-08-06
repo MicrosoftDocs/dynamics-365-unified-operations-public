@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Development and administration for Microsoft Dynamics 365 for Finance and Operations
+title: Development and administration for Finance and Operations
 description: This page helps developers and IT Pros get started with Finance and Operations.
 author: margoc
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Development and administration for Dynamics 365 for Finance and Operations 
+# Development and administration for Finance and Operations
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Development and administration for Microsoft Dynamics 365 for Finance and Operations includes:
 
@@ -73,7 +73,7 @@ The Microsoft Dynamics 365 for Finance and Operations mobile app empowers your 
 + IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework. Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don’t have constant network connectivity. 
 
 ## Data management and data entities
-Data from Finance and Operations can easily be integrated with Microsoft and non-Microsoft data sources using the common data service, Power Apps, and Power BI. For more information, see [Data entities](data-entities\data-entities.md).
+Data from Finance and Operations can easily be integrated with Microsoft and non-Microsoft data sources using the common data service, Power Apps, and Power BI. For more information, see [Data entities](data-entities/data-entities.md).
 
 ## Office integration
 The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products. For more information, see [Office integration](office-integration/office-integration.md).

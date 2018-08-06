@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Validations, defaults, and unmapped fields
+title: Validations, default values, and unmapped fields
 description: This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values, but instead contain virtual or computed data (unmapped fields). 
 author: Sunil-Garg
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Validations, defaults, and unmapped fields
+# Validations, default values, and unmapped fields
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values, but instead contain virtual or computed data (unmapped fields). 
 
@@ -91,12 +91,12 @@ To skip **validateDelete** for all back-end tables for a data entity, a consumer
 <li>Data types</li>
 <li>Mandatory relationships (both tables and extended data types [EDTs])</li>
 <li>Any custom validation</li>
-<li>Doesn't call <strong>validateField</strong> for underlying mapped table fields</li>
+<li>Doesn&#39;t call <strong>validateField</strong> for underlying mapped table fields</li>
 </ul></td>
 <td><ul>
 <li>Is called automatically from OData</li>
 <li>Is called by the form engine when a field is modified</li>
-<li>Isn't called automatically if an insert/update is fired from X++ code</li>
+<li>Isn&#39;t called automatically if an insert/update is fired from X++ code</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -105,12 +105,12 @@ To skip **validateDelete** for all back-end tables for a data entity, a consumer
 <li>Mandatory columns</li>
 <li>Relationships (both tables and EDTs)</li>
 <li>Any custom validation</li>
-<li>Doesn't call table-level <strong>validateWrite</strong> for underlying tables</li>
+<li>Doesn&#39;t call table-level <strong>validateWrite</strong> for underlying tables</li>
 </ul></td>
 <td><ul>
 <li>Is called automatically from OData</li>
 <li>Is called by the form engine when a record is saved.</li>
-<li>Isn't called automatically if an insert/update is fired from X++ code</li>
+<li>Isn&#39;t called automatically if an insert/update is fired from X++ code</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -118,12 +118,12 @@ To skip **validateDelete** for all back-end tables for a data entity, a consumer
 <td><ul>
 <li>DeleteActions</li>
 <li>Any custom validation</li>
-<li>Doesn't call table-level <strong>validateDelete</strong> for underlying tables</li>
+<li>Doesn&#39;t call table-level <strong>validateDelete</strong> for underlying tables</li>
 </ul></td>
 <td><ul>
 <li>Is called automatically from OData.</li>
 <li>Is called by the form engine when a record is deleted</li>
-<li>Isn't called automatically if a delete is fired from X++ code</li>
+<li>Isn&#39;t called automatically if a delete is fired from X++ code</li>
 </ul></td>
 </tr>
 </tbody>
@@ -197,7 +197,7 @@ The two types of unmapped fields are *virtual* and *computed*. Unmapped fields a
 <td>NoYes</td>
 <td>Yes</td>
 <td><ul>
-<li><strong>Yes:</strong> The field is synchronized as a SQL view computed column. An X++ method is required to compute the SQL definition string for the column. The virtual column definition is static and is used when the entity is synchronized. After that, the X++ method isn't called at run time.</li>
+<li><strong>Yes:</strong> The field is synchronized as a SQL view computed column. An X++ method is required to compute the SQL definition string for the column. The virtual column definition is static and is used when the entity is synchronized. After that, the X++ method isn&#39;t called at run time.</li>
 <li><strong>No:</strong> The field is a true virtual field, where inbound and outbound values are fully controlled through custom code.</li>
 </ul></td>
 </tr>

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail SDK samples
+title: Retail software development kit (SDK) samples
 description: This topic describes three new samples that were released together with the Retail SDK in December 2016.
 author: mugunthanm
 manager: AnnBe
@@ -30,17 +30,16 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Retail SDK samples
+# Retail software development kit (SDK) samples
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
 This topic describes three new samples that were released together with the Retail SDK in December 2016.
 
 Override message handler sample
 -------------------------------
 
-**Scenario:** Sometimes, one of Fabrikam's customers is in the customer relationship management (CRM) system but isn't imported into Microsoft Dynamics 365 for Retail. Therefore, Fabrikam wants to look up the customer from the CRM system and the point of sale (POS). Here are the business requirements:
+**Scenario:** Sometimes, one of Fabrikam's customers is in the customer relationship management (CRM) system but isn't imported into Microsoft Dynamics 365 for Retail. Therefore, Fabrikam wants to look up the customer from the CRM system and the point of sale (POS). Here are the business requirements:
 
 -   Search for customers from the CRM system and the POS.
 -   Merge the results, and show a unified result set in Retail Modern POS (MPOS).
@@ -240,7 +239,7 @@ The following steps show the CRT code changes:
             return new GetReceiptResponse(new ReadOnlyCollection<Receipt>(result));
         }
 
-The full sample code is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsSamplefolder folder of the SDK. **Note:** You should call the printing of the custom receipt type from the client. For more information, see [Extensibility patterns and best practices](https://youtu.be/qQkHFubENIY)[.]()
+The full sample code is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsSamplefolder folder of the SDK. **Note:** You should call the printing of the custom receipt type from the client. For more information, see [Extensibility patterns and best practices](https://youtu.be/qQkHFubENIY).
 
 ### Best practice
 

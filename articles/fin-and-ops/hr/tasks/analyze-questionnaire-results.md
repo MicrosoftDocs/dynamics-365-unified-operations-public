@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Analyze questionnaire results
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Questionnaire statistics can be used to calculate averages, totals, and percentages based on a set of demographic data. To begin this procedure, go to Questionnaire > View and analyze results > Questionnaire statistics. The demo data company used to create this procedure is USMF.
 

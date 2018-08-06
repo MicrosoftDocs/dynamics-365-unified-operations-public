@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: N Classes
+title: N classes
 description: System API classes that start with the letter N.
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# N Classes
+# N classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter N.
 

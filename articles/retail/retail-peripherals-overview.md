@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail peripherals overview
+title: Retail peripherals
 description: This topic explains the concepts that are related to retail peripherals. 
 author: rubencdelgado
 manager: AnnBe
@@ -29,10 +29,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Retail peripherals overview
+# Retail peripherals
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 This topic explains the concepts that are related to retail peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
 
@@ -139,7 +138,7 @@ If OPOS controls are available for the Windows printer that you're using, the pr
 
 ### Universal Windows Platform
 
-UWP, in the case of retail peripherals, is related to Windows support for Plug and Play devices. When a Plug and Play device is connected to a Windows OS version that supports that type of device, no driver is required for the device to be used as intended. For example, if Windows detects a Bluetooth speaker device, the OS knows that the device has the **Speaker** class type. Therefore, and it treats that device as a speaker. No additional setup is required. In the case of POS devices, many USB devices can be plugged in, and Windows will recognize them as Human Interface Devices (HIDs). However, it might not be able to determine the capabilities that the device provides, because the device doesn't specify the class, or type, of device. In Windows 10, device classes for bar code scanners and MSRs have been added. Therefore, if a device declares itself to Windows 10 as a device of one of these classes, Windows will listen for events from the device at the appropriate times. Modern POS supports UWP MSRs and scanners. Therefore, when it's ready for input from one of these devices, and a device that belongs to one of these classes is connected, the device can be used. For example, if a UWP bar code scanner is plugged into a Windows 10 computer, and bar code sign-in is configured for Modern POS, the bar code scanner will become active on the sign-in screen. No additional setup is required. Additional classes of point of service UWP devices are being added to Windows. These classes include classes for cash drawers and receipt printers. Support for these new device classes in Modern POS is pending.
+UWP, in the case of retail peripherals, is related to Windows support for Plug and Play devices. When a Plug and Play device is connected to a Windows OS version that supports that type of device, no driver is required for the device to be used as intended. For example, if Windows detects a Bluetooth speaker device, the OS knows that the device has the **Speaker** class type. Therefore, and it treats that device as a speaker. No additional setup is required. In the case of POS devices, many USB devices can be plugged in, and Windows will recognize them as Human Interface Devices (HIDs). However, it might not be able to determine the capabilities that the device provides, because the device doesn't specify the class, or type, of device. In Windows 10, device classes for bar code scanners and MSRs have been added. Therefore, if a device declares itself to Windows 10 as a device of one of these classes, Windows will listen for events from the device at the appropriate times. Modern POS supports UWP MSRs and scanners. Therefore, when it's ready for input from one of these devices, and a device that belongs to one of these classes is connected, the device can be used. For example, if a UWP bar code scanner is plugged into a Windows 10 computer, and bar code sign-in is configured for Modern POS, the bar code scanner will become active on the sign-in screen. No additional setup is required. Additional classes of point of service UWP devices are being added to Windows. These classes include classes for cash drawers and receipt printers. Support for these new device classes in Modern POS is pending.
 
 ### Keyboard wedge
 
@@ -155,7 +154,7 @@ The **Windows** device type is used for printers only. When a Windows printer is
 
 ### Network
 
-Network-addressable cash drawers, receipt printers, and payment terminals can be used over a network, either directly through the Interprocess Communications (IPC) hardware station that is built into the Modern POS for Windows application or through the IIS hardware station for other Modern POS clients.
+Network-addressable cash drawers, receipt printers, and payment terminals can be used over a network, either directly through the Interprocess Communications (IPC) hardware station that is built into the Modern POS for Windows application or through the IIS hardware station for other Modern POS clients.
 
 ## Hardware station deployment options
 ### IPC (built-in)
@@ -805,7 +804,7 @@ The following peripherals were tested by using a shared IIS hardware station tog
     6.  After the DLL hosts have been closed, restart Modern POS.
 
 
-See also
+Additional resources
 --------
 
 [Retail peripheral simulator](dev-itpro/retail-peripheral-simulator.md)

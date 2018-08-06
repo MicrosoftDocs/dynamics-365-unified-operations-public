@@ -31,8 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # VAT statement for the Czech Republic
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Set up and generate the VAT statement for users in legal entities located in the Czech Republic.
 
@@ -41,35 +40,35 @@ This topic includes country-specific information about VAT statement setup for u
 ## Set up sales tax authorities
 To generate a VAT declaration in the required format for the specific tax authority, you must set up the report layout for the sales tax authorities.
 
--   On the **Sales tax authorities** page, in the **General** section, set the **Report layout **to **Default**.
--   Select the same **Sales tax authority** for the **Sales tax settlement period** that you will use for the sales tax codes.
+- On the <strong>Sales tax authorities</strong> page, in the <strong>General</strong> section, set the <strong>Report layout **to **Default</strong>.
+- Select the same **Sales tax authority** for the **Sales tax settlement period** that you will use for the sales tax codes.
 
 ## Set up sales tax reporting codes
-The following is an example of how sales tax reporting codes could be set up for VAT statement generation.
+The following is an example of how sales tax reporting codes could be set up for VAT statement generation.
 
 ### Example
 
-For users in legal entities in the Czech Republic, according VAT declaration in 2016, the following sales tax reporting codes could be created.
+For users in legal entities in the Czech Republic, according VAT declaration in 2016, the following sales tax reporting codes could be created.
 
 |                              |                                                         |
 |------------------------------|---------------------------------------------------------|
 | **Sales tax reporting code** | **Description**                                         |
-| 2101                         | ř.210 - se zákl. sazbou daně  - Základ                  |
-| 2102                         | ř.210 - se zákl. sazbou daně  - Daň                     |
-| 2151                         | ř.215 - se sníž. sazbou daně  - Základ                  |
-| 2152                         | ř.215 - se sníž. sazbou daně  - Daň                     |
-| 2201                         | ř.220 - se zákl. sazbou daně  - Základ                  |
-| 2202                         | ř.220 - se zákl. sazbou daně  - Daň                     |
-| 2251                         | ř.225 - se sníž. sazbou daně  - Základ                  |
-| 2252                         | ř.225 - se sníž. sazbou daně  - Daň                     |
-| 2301                         | ř.230 - se zákl. sazbou daně  - Základ                  |
-| 2302                         | ř.230 - se zákl. sazbou daně  - Daň                     |
+| 2101                         | ř.210 - se zákl. sazbou daně  - Základ                  |
+| 2102                         | ř.210 - se zákl. sazbou daně  - Daň                     |
+| 2151                         | ř.215 - se sníž. sazbou daně  - Základ                  |
+| 2152                         | ř.215 - se sníž. sazbou daně  - Daň                     |
+| 2201                         | ř.220 - se zákl. sazbou daně  - Základ                  |
+| 2202                         | ř.220 - se zákl. sazbou daně  - Daň                     |
+| 2251                         | ř.225 - se sníž. sazbou daně  - Základ                  |
+| 2252                         | ř.225 - se sníž. sazbou daně  - Daň                     |
+| 2301                         | ř.230 - se zákl. sazbou daně  - Základ                  |
+| 2302                         | ř.230 - se zákl. sazbou daně  - Daň                     |
 | 2351                         | ř.235 - se sníž. sazbou daně – Základ                   |
 | 2352                         | ř.235 - se sníž. sazbou daně – Daň                      |
-| 2401                         | ř.240 - se zákl. sazbou daně  - Základ                  |
-| 2402                         | ř.240 - se zákl. sazbou daně  - Daň                     |
-| 2451                         | ř.245 - se sníž. sazbou daně  - Základ                  |
-| 2452                         | ř.245 - se sníž. sazbou daně  - Daň                     |
+| 2401                         | ř.240 - se zákl. sazbou daně  - Základ                  |
+| 2402                         | ř.240 - se zákl. sazbou daně  - Daň                     |
+| 2451                         | ř.245 - se sníž. sazbou daně  - Základ                  |
+| 2452                         | ř.245 - se sníž. sazbou daně  - Daň                     |
 | 2501                         | ř.250 - od osob reg. v jiném čl.státě - Základ          |
 | 2502                         | ř.250 - od osob reg. v jiném čl.státě - Daň             |
 | 2551                         | ř.255 - od osob nereg. v jiném čl.státě - Základ        |
@@ -78,48 +77,48 @@ For users in legal entities in the Czech Republic, according VAT declaration i
 | 2602                         | ř.260 - se zákl. sazbou daně – Daň                      |
 | 2651                         | ř.265 - se sníž. sazbou daně – Základ                   |
 | 2652                         | ř.265 - se sníž. sazbou daně - Daň                      |
-| 2701                         | ř.270 - se zákl. sazbou daně  - Základ                  |
-| 2702                         | ř.270 - se zákl. sazbou daně  - Daň                     |
-| 2751                         | ř.275 - se sníž. sazbou daně  - Základ                  |
-| 2752                         | ř.275 - se sníž. sazbou daně  - Daň                     |
+| 2701                         | ř.270 - se zákl. sazbou daně  - Základ                  |
+| 2702                         | ř.270 - se zákl. sazbou daně  - Daň                     |
+| 2751                         | ř.275 - se sníž. sazbou daně  - Základ                  |
+| 2752                         | ř.275 - se sníž. sazbou daně  - Daň                     |
 | 3101                         | ř.310 - se zákl. sazbou daně - Základ                   |
 | 3102                         | ř.310 - se zákl. sazbou daně - Daň, plný nárok          |
 | 3103                         | ř.310 - se zákl. sazbou daně - Daň, krác. nárok         |
 | 3151                         | ř.315 - se sníž. sazbou daně - Základ                   |
 | 3152                         | ř.315 - se sníž. sazbou daně - Daň, plný nárok          |
 | 3153                         | ř.315 - se sníž. sazbou daně - Daň, krác. nárok         |
-| 3201                         | ř.320 - se zákl. sazbou daně  - Základ                  |
-| 3202                         | ř.320 - se zákl. sazbou daně  - Daň, plný nárok         |
-| 3203                         | ř.320 - se zákl. sazbou daně  - Daň, krác. nárok        |
-| 3251                         | ř.325 - se sníž. sazbou daně  - Základ                  |
-| 3252                         | ř.325 - se sníž. sazbou daně  - Daň, plný nárok         |
-| 3253                         | ř.325 - se sníž. sazbou daně  - Daň, krác. nárok        |
+| 3201                         | ř.320 - se zákl. sazbou daně  - Základ                  |
+| 3202                         | ř.320 - se zákl. sazbou daně  - Daň, plný nárok         |
+| 3203                         | ř.320 - se zákl. sazbou daně  - Daň, krác. nárok        |
+| 3251                         | ř.325 - se sníž. sazbou daně  - Základ                  |
+| 3252                         | ř.325 - se sníž. sazbou daně  - Daň, plný nárok         |
+| 3253                         | ř.325 - se sníž. sazbou daně  - Daň, krác. nárok        |
 | 3301                         | ř.330 - se zákl. sazbou daně - Základ                   |
 | 3302                         | ř.330 - se zákl. sazbou daně - Daň, plný nárok          |
 | 3303                         | ř.330 - se zákl. sazbou daně - Daň, krác. nárok         |
-| 3351                         | ř.335 - se sníž. sazbou daně  - Základ                  |
-| 3352                         | ř.335 - se sníž. sazbou daně  - Daň, plný nárok         |
-| 3353                         | ř.335 - se sníž. sazbou daně  - Daň, krác. nárok        |
+| 3351                         | ř.335 - se sníž. sazbou daně  - Základ                  |
+| 3352                         | ř.335 - se sníž. sazbou daně  - Daň, plný nárok         |
+| 3353                         | ř.335 - se sníž. sazbou daně  - Daň, krác. nárok        |
 | 3401                         | ř.340 - se zákl. sazbou daně - Základ                   |
 | 3402                         | ř.340 - se zákl. sazbou daně - Daň, plný nárok          |
 | 3403                         | ř.340 - se zákl. sazbou daně - Daň, krác. nárok         |
-| 3451                         | ř.345 - se sníž. sazbou daně  - Základ                  |
-| 3452                         | ř.345 - se sníž. sazbou daně  - Daň, plný nárok         |
-| 3453                         | ř.345 - se sníž. sazbou daně  - Daň, krác. nárok        |
-| 3501                         | ř.350 - se zákl. sazbou daně  - Základ                  |
-| 3502                         | ř.350 - se zákl. sazbou daně  - Daň, plný nárok         |
-| 3503                         | ř.350 - se zákl. sazbou daně  - Daň, krác. nárok        |
-| 3551                         | ř.355 - se sníž. sazbou daně  - Základ                  |
-| 3552                         | ř.355 - se sníž. sazbou daně  - Daň, plný nárok         |
-| 3553                         | ř.355 - se sníž. sazbou daně  - Daň, krác. nárok        |
+| 3451                         | ř.345 - se sníž. sazbou daně  - Základ                  |
+| 3452                         | ř.345 - se sníž. sazbou daně  - Daň, plný nárok         |
+| 3453                         | ř.345 - se sníž. sazbou daně  - Daň, krác. nárok        |
+| 3501                         | ř.350 - se zákl. sazbou daně  - Základ                  |
+| 3502                         | ř.350 - se zákl. sazbou daně  - Daň, plný nárok         |
+| 3503                         | ř.350 - se zákl. sazbou daně  - Daň, krác. nárok        |
+| 3551                         | ř.355 - se sníž. sazbou daně  - Základ                  |
+| 3552                         | ř.355 - se sníž. sazbou daně  - Daň, plný nárok         |
+| 3553                         | ř.355 - se sníž. sazbou daně  - Daň, krác. nárok        |
 | 3601                         | ř.360 - od osob reg. v jiném čl.státě - Základ          |
 | 3602                         | ř.360 - od osob reg. v jiném čl.státě - Daň             |
 | 3603                         | ř.360 - od osob reg. v jiném čl.státě - Daň, krác.      |
 | 3651                         | ř.365 - od osob nereg. v jiném čl.státě - Základ        |
 | 3652                         | ř.365 - od osob nereg. v jiném čl.státě - Daň           |
 | 3653                         | ř.365 - od osob nereg. v jiném čl.státě - Daň, kr.      |
-| 3702                         | ř.370 - při změně režimu  - Daň, plný nárok             |
-| 3703                         | ř.370 - při změně režimu  - Daň, krác. nárok            |
+| 3702                         | ř.370 - při změně režimu  - Daň, plný nárok             |
+| 3703                         | ř.370 - při změně režimu  - Daň, krác. nárok            |
 | 3803                         | ř.380 - celková suma pro krácení nároku na odpočet daně |
 | 3902                         | ř.390 - celková suma plného nároku na odpočet daně      |
 | 4102                         | ř.410 - dodání zboží do jiného čl.státu                 |
@@ -148,10 +147,10 @@ For users in legal entities in the Czech Republic, according VAT declaration i
 | 8151                         | ř.815 - Dodání zboží prostřední osobou                  |
 
 ## Configure the ER model and format for the report
-You can use the **Electronic reporting** workspace to review or change the VAT statement configuration. Go to the **Configurations** page and select **VAT declaration model** from the list of models. This model is common for Austria, Czech Republic, Estonia, Finland, Latvia, and Lithuania and it aggregates tax data needed for VAT declaration. To review or change the VAT statement format for users in legal entities in the Czech Republic, select **VAT declaration (CZ)**, which is a child of **VAT declaration model** in the model tree. Select it and click **Designer** on the Action Pane to review or change the format. For more information, see [Electronic reporting.](../../dev-itpro/analytics/general-electronic-reporting.md)
+You can use the **Electronic reporting** workspace to review or change the VAT statement configuration. Go to the **Configurations** page and select **VAT declaration model** from the list of models. This model is common for Austria, Czech Republic, Estonia, Finland, Latvia, and Lithuania and it aggregates tax data needed for VAT declaration. To review or change the VAT statement format for users in legal entities in the Czech Republic, select **VAT declaration (CZ)**, which is a child of **VAT declaration model** in the model tree. Select it and click **Designer** on the Action Pane to review or change the format. For more information, see [Electronic reporting.](../../dev-itpro/analytics/general-electronic-reporting.md)
 
 ## Generate the VAT statement
-To generate a VAT XML file, open the **Sales tax payments** page, select vouchers, and then click **Export VAT XML file**.
+To generate a VAT XML file, open the **Sales tax payments** page, select vouchers, and then click **Export VAT XML file**.
 
 
 

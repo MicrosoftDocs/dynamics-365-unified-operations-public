@@ -26,13 +26,13 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: 8.0.2
 
 ---
 
 # One voucher
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  This functionality will be available in Dynamics 365 for Finance and Operations version 8.0, which will be available in the 
@@ -91,20 +91,20 @@ Because of the issues that were stated earlier, the One voucher functionality wi
 functional gaps that depend on this functionality, the functionality won't become obsolete all at once. Instead, we will use the 
 following schedule: 
 
--   **Spring 2018 release** – The functionality will be turned off by default through a General ledger parameter. However, you can turn 
-the functionality on if your organization has a scenario that falls in the business scenario gaps that are listed later in this topic.
+- **Spring 2018 release** – The functionality will be turned off by default through a General ledger parameter. However, you can turn 
+  the functionality on if your organization has a scenario that falls in the business scenario gaps that are listed later in this topic.
 
-    -   If a customer has a business scenario that doesn't require One voucher, don't turn the functionality on. We won't fix "bugs" in 
-    the areas that were identified later in this topic if this functionality is used even though another solution exists.
+  -   If a customer has a business scenario that doesn't require One voucher, don't turn the functionality on. We won't fix "bugs" in 
+  the areas that were identified later in this topic if this functionality is used even though another solution exists.
 
-    -   Stop using One voucher for integrations into Microsoft Dynamics 365 Finance and Operations, unless the functionality is required
-    for one of the functional gaps.
+  -   Stop using One voucher for integrations into Microsoft Dynamics 365 Finance and Operations, unless the functionality is required
+  for one of the functional gaps.
 
--   **Fall 2018 and later releases** – The functional gaps will be filled. After the functional gaps are filled, the One voucher 
-functionality will be permanently turned off.
+- **Fall 2018 and later releases** – The functional gaps will be filled. After the functional gaps are filled, the One voucher 
+  functionality will be permanently turned off.
 
--  > [!IMPORTANT]
-> Please note that the **One voucher number only** option has NOT been removed from the Journal name setup.  This option is still supported when the voucher only contains Ledger account types.  Customers must be careful when using this setting because the voucher will not post if they use **One voucher number only** but then enter more than one customer, vendor, bank, fixed asset, or project.  Also, customers can still enter a mix of subledger account types, such as a payment within a single voucher that contains account types of Vendor/Bank.  
+- > [!IMPORTANT]
+  > Please note that the **One voucher number only** option has NOT been removed from the Journal name setup.  This option is still supported when the voucher only contains Ledger account types.  Customers must be careful when using this setting because the voucher will not post if they use **One voucher number only** but then enter more than one customer, vendor, bank, fixed asset, or project.  Also, customers can still enter a mix of subledger account types, such as a payment within a single voucher that contains account types of Vendor/Bank.  
 
 Why use One voucher?
 ====================
@@ -141,17 +141,17 @@ is described for vendor payment summarization.
 
 >   If an organization must view the accounting entries from a business event together, it must use One voucher. 
 
--   **Country-specific features**
+- **Country-specific features**
 
- -   The Single Administrative Document (SAD) feature for Poland currently requires that a single voucher be used. Until a grouping 
- option is available for this feature, you must continue to use the One voucher functionality. There may be additional country-specific
- features that require the One voucher functionality.
+  -   The Single Administrative Document (SAD) feature for Poland currently requires that a single voucher be used. Until a grouping 
+  option is available for this feature, you must continue to use the One voucher functionality. There may be additional country-specific
+  features that require the One voucher functionality.
 
--   **Customer prepayment payment journal that has taxes on multiple "lines"**
+- **Customer prepayment payment journal that has taxes on multiple "lines"**
 
- -   A customer makes a prepayment for an order, and the lines of the order have different taxes that must be recorded for the 
- prepayment. The prepayment customer payment is one transaction that simulates the lines of the order, so that the appropriate tax can 
- be recorded for the amount on each line.
+  -   A customer makes a prepayment for an order, and the lines of the order have different taxes that must be recorded for the 
+  prepayment. The prepayment customer payment is one transaction that simulates the lines of the order, so that the appropriate tax can 
+  be recorded for the amount on each line.
 
 In this scenario, the customers in the single voucher are the same customer, because the transaction simulates the lines of a customer 
 order. The prepayment must be entered in a single voucher, because the tax calculation must be made on the "lines" of the single 

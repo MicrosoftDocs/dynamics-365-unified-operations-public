@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Build a workspace
+title: Build workspaces
 description: In this tutorial, you will create a new tile and include it in the summary section of a workspace, build a new list for a workspace, and create a data cache for the list in the workspace.
 author: jasongre
 manager: AnnBe
@@ -30,17 +30,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Build a workspace
+# Build workspaces
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 In this tutorial, you will create a new tile and include it in the summary section of a workspace, build a new list for a workspace, and create a data cache for the list in the workspace.
 
 Prerequisites
 -------------
 
-For this tutorial, you must access the Microsoft Dynamics AX environment by using Remote Desktop, and you must be provisioned as an administrator on the Dynamics AX instance. For more information, see [Access Microsoft Dynamics AX Instances](..\dev-tools\access-instances.md).
+For this tutorial, you must access the Microsoft Dynamics AX environment by using Remote Desktop, and you must be provisioned as an administrator on the Dynamics AX instance. For more information, see [Access Microsoft Dynamics AX Instances](../dev-tools/access-instances.md).
 
 ## Key concepts
 -   Learn about and use form patterns that are related to workspaces.
@@ -51,7 +50,7 @@ For this tutorial, you must access the Microsoft Dynamics AX environment by usin
 ## Setup
 ### Import the tutorial project and transactional data
 
-Use Microsoft Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the **FMTDataHelper** class to load data for the Fleet Management tutorial. If this is the first tutorial that you’re working on, review [Access Microsoft Dynamics AX Instances](..\dev-tools\access-instances.md), and make sure that you provision your administrator user if you’re working on a local virtual machine (VM).
+Use Microsoft Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the **FMTDataHelper** class to load data for the Fleet Management tutorial. If this is the first tutorial that you’re working on, review [Access Microsoft Dynamics AX Instances](../dev-tools/access-instances.md), and make sure that you provision your administrator user if you’re working on a local virtual machine (VM).
 
 1.  Download the **FMTutorialDataModel.axpp** file from the Microsoft Dynamics Lifecycle Services (LCS) methodology, and copy it to the **Downloads** folder of the VM.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.
@@ -61,7 +60,7 @@ Use Microsoft Visual Studio to import the tutorial project. The tutorial project
 6.  Select the **Overwrite Elements** check box and the **Current solution** option. The following illustration shows the completed **Import Project** dialog box. 
 
     [![Import project](./media/importproject1.png)](./media/importproject1.png)
-    
+
 7.  Click **OK**.
 8.  In Solution Explorer, expand **Classes**, and then, under the **FMTutorial** project, right-click **FMTDataHelper**, and then click **Set as Startup Object**.
 9.  On the **Build** menu, click **Rebuild Solution**. Use the rebuild to make sure that all the files in the project are built, regardless of timestamps. You can view the build progress in the **Output** window.
@@ -84,11 +83,11 @@ Before you start to make adjustments to **FmtClerkWorkspace** form, you will loo
 3.  Click the **Pattern** tab. Operational workspaces have an optional Action Pane and optional filter group (as indicated by the 0..1 notation to the left of those nodes). However, the panorama-style tab is required by this pattern. Note that the **Patterns** tab shows that the PanoramaBody control matches the required Tab in the pattern, but there are no corresponding controls for the optional items at this level of the pattern. 
 
     [![Operational workspace pattern](./media/workspacepattern1.png)](./media/workspacepattern1.png)
-    
+
 4.  Click **PanoramaBody**. 
 
     [![Operational workspace pattern](./media/workspacepattern2.png)](./media/workspacepattern2.png)
-    
+
 
 Notice that all workspaces have three required sections:
 
@@ -104,7 +103,7 @@ Operational workspaces can optionally include a panorama section that contains u
 2.  Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer. 
 
     [![Open form](./media/fmtworkspaceinitial-1024x650.png)](./media/fmtworkspaceinitial.png)
-    
+
 
 ## Exercise 2: Create a new tile for the workspace
 Now that you understand the content structure of a workspace, you will see how to add content to a workspace. For example, one important piece of information for this workspace might be the number of rentals that are currently in progress. In this section, you will add the required metadata to add a new tile to the **Summary** section of the **FmtClerkWorkspace** form to show this information. To make this tile work correctly, you will have to add four metadata artifacts: a query, a menu item, a tile, and a tile button.
@@ -113,7 +112,7 @@ Now that you understand the content structure of a workspace, you will see how t
 
 All tiles require a backing query to retrieve the correct information.
 
-1.  In Solution Explorer, in the **FMTutorial** project, right-click the **Queries** folder, point to **Add**, and then click **New item**.
+1.  In Solution Explorer, in the **FMTutorial** project, right-click the **Queries** folder, point to **Add**, and then click **New item**.
 2.  Click **Dynamics AX Artifacts** &gt; **Data Model** &gt; **Query**. For the **Name** property, enter **FMTRental\_Current**.
 3.  Click **Add**.
 4.  If the new **FMTRental\_Current** query isn’t already open in the designer, double-click it in Solution Explorer.
@@ -133,7 +132,7 @@ All tiles require a backing query to retrieve the correct information.
     | Field    | State      |
     | Value    | InProgress |
 
-9.  Right-click **Order By**, and then click **New Field**.
+9.  Right-click **Order By**, and then click **New Field**.
 10. In the **Properties** window, set the following properties.
 
     | Property    | Value      |
@@ -146,19 +145,21 @@ All tiles require a backing query to retrieve the correct information.
 
 ### Add the corresponding menu item
 
-1.  In Solution Explorer, in the **FMTutorial** project, right-click the **Menu items** folder, point to **Add**, and then click **New item**.
-2.  Click **Dynamics AX Artifacts** &gt; **User Interface** &gt; **Display menu item**. Set the **Name** property to **FMTRental\_Current**.
-3.  Click **Add**.
-4.  If the new **FMTRental\_Current** menu item isn’t already open in the designer, double-click it in Solution Explorer.
-5.  In the **Properties** window, set the following properties.
+1. In Solution Explorer, in the **FMTutorial** project, right-click the **Menu items** folder, point to **Add**, and then click **New item**.
+2. Click **Dynamics AX Artifacts** &gt; **User Interface** &gt; **Display menu item**. Set the **Name** property to **FMTRental\_Current**.
+3. Click **Add**.
+4. If the new **FMTRental\_Current** menu item isn’t already open in the designer, double-click it in Solution Explorer.
+5. In the **Properties** window, set the following properties.
 
-    | Property | Value                                                          |
-    |----------|----------------------------------------------------------------|
-    | Label    | @FMT197 **Note:** This value corresponds to “Current rentals”. |
-    | Object   | FMTRental                                                      |
-    | Query    | FMTRental\_Current                                             |
 
-6.  Press **Ctrl+S** to save.
+   | Property |                                    Value                                    |
+   |----------|-----------------------------------------------------------------------------|
+   |  Label   | @FMT197 <strong>Note:</strong> This value corresponds to “Current rentals”. |
+   |  Object  |                                  FMTRental                                  |
+   |  Query   |                             FMTRental\_Current                              |
+
+
+6. Press **Ctrl+S** to save.
 
 ### Add a tile
 
@@ -200,7 +201,7 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 2.  Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer. 
 
     [![Rentals tile](./media/currentrentalstile.png)](./media/currentrentalstile.png)
-    
+
 3.  Click the **Current rentals** tile. You go to the **Rentals** page, which should be filtered to the three current rentals.
 4.  Click the **Back** button or the **Close** button to return to the workspace.
 5.  Click on the small **i** button in the upper-right corner of the **Current rentals** tile. You see information about how current the data in the tile is. Additionally, a link is provided that you can use to manually refresh the tile to view updated data.
@@ -209,15 +210,15 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 
 A system administrator can modify tile cache parameters at run time by using the **Tile data cache configuration** page.
 
-1.  Click in the navigation search field on the navigation bar.
-2.  Type **Tile data**, and then click ******Tile data cache configuration****** in the search results. 
+1. Click in the navigation search field on the navigation bar.
+2. Type **Tile data**, and then click **Tile data cache configuration** in the search results. 
 
-    [![Tile cache search](./media/tilecachesearch.png)](./media/tilecachesearch.png)
-    
-3.  Find the **FMTCurrentRentalsTile** record. 
+   [![Tile cache search](./media/tilecachesearch.png)](./media/tilecachesearch.png)
 
-    [![Tile cache parameters](./media/tilecacheparams-1024x328.png)](./media/tilecacheparams.png)
-    
+3. Find the **FMTCurrentRentalsTile** record. 
+
+   [![Tile cache parameters](./media/tilecacheparams-1024x328.png)](./media/tilecacheparams.png)
+
 
 From this page, the system administrator can perform several run-time modifications to a tile cache. For example, the system administrator can enable/disable the data cache, modify the refresh frequency, and enable/disable the ability to manually refresh the count tile. Note that tile caches are registered when a form that has a tile is first opened. Therefore, the list of tiles that is shown in your environment might differ from the list in the preceding illustration.
 
@@ -231,21 +232,23 @@ Next, you will next see how to include an additional list in the workspace. This
 
 ### Add space in the workspace for a new list
 
-1.  In Solution Explorer, double-click the **FmtClerkWorkspace** form to open it in the designer.
-2.  Right-click **Design** &gt; **PanoramaBody** &gt; **TabbedListSection** &gt; **TabbedLists**, and then click **New Tab Page**.
-3.  In the **Properties** window, set the following properties.
+1. In Solution Explorer, double-click the **FmtClerkWorkspace** form to open it in the designer.
+2. Right-click **Design** &gt; **PanoramaBody** &gt; **TabbedListSection** &gt; **TabbedLists**, and then click **New Tab Page**.
+3. In the **Properties** window, set the following properties.
 
-    | Property | Value                                                             |
-    |----------|-------------------------------------------------------------------|
-    | Name     | AvailableVehiclesContainer                                        |
-    | Caption  | @FMT199 **Note:** This value corresponds to “Available vehicles”. |
 
-4.  Right-click **AvailableVehiclesContainer**, point to **New**, and then click **Form Part**. **Note:** **Form Part **is the only control type that the Operational Workspace pattern allows here. This control will be used to link to the form that you will build to hold the content for this section. 
+   | Property |                                     Value                                      |
+   |----------|--------------------------------------------------------------------------------|
+   |   Name   |                           AvailableVehiclesContainer                           |
+   | Caption  | @FMT199 <strong>Note:</strong> This value corresponds to “Available vehicles”. |
 
-    [![Add section](./media/addsection1.png)](./media/addsection1.png)
-    
-5.  In the **Properties** window, set the **Name** property to **AvailableVehiclesPart**.
-6.  Press **Ctrl+S** to save.
+
+4. Right-click **AvailableVehiclesContainer**, point to **New**, and then click **Form Part**. **Note:** **Form Part **is the only control type that the Operational Workspace pattern allows here. This control will be used to link to the form that you will build to hold the content for this section. 
+
+   [![Add section](./media/addsection1.png)](./media/addsection1.png)
+
+5. In the **Properties** window, set the **Name** property to **AvailableVehiclesPart**.
+6. Press **Ctrl+S** to save.
 
 ### Add a new form that has the new workspace content
 
@@ -256,7 +259,7 @@ Next, you will next see how to include an additional list in the workspace. This
 5.  Add the **FmtVehicle** table as a data source for the form.
     1.  Right-click **Data Sources**, and then click **New Data Source**.
     2.  Click the new data source node. In the **Properties** window, set the following properties.
-    
+
         | Property | Value                                                                                                                                                      |
         |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
         | Table    | FMTVehicle                                                                                                                                                 |
@@ -265,7 +268,7 @@ Next, you will next see how to include an additional list in the workspace. This
 6.  Add the **FmtVehicleModel** table as a second data source for the form.
     1.  Right-click **Data Sources**, and then click **New Data Source**.
     2.  Click the new data source node. In the **Properties** window, set the following properties.
-    
+
         | Property    | Value                                                                                                                                                           |
         |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
         | Table       | FMTVehicleModel                                                                                                                                                 |
@@ -277,7 +280,7 @@ Next, you will next see how to include an additional list in the workspace. This
 8.  Click the **Pattern** tab to see the expected content for this pattern. This information will help guide you as you create content for the form. **Note:** In the future, we plan to provide a mechanism for automatically creating a form structure, based on a selected form pattern. 
 
     [![Section list](./media/formpartsectionlist.png)](./media/formpartsectionlist.png) 
-    
+
     In particular, this pattern looks for the following elements:
     -   An optional header group that contains any filters and actions that are required for this workspace list.
     -   A required grid. As the red border in the preceding illustration indicates, the patterns engine can't currently find this element.
@@ -376,7 +379,7 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 2.  Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer. 
 
     [![Available list](./media/availablelist.png)](./media/availablelist.png)
-    
+
 3.  Click the **Available vehicles** tab to see the new list.
 4.  Click in the QuickFilter, type **Lit**, and then press **Enter** to filter down to Litware model vehicles that are available.
 
@@ -437,9 +440,9 @@ The first step is to build a query that will be used to populate the cache table
     | Related Field    | RecID     |
 
     The query that you've constructed should match the following illustration. 
-    
+
     ![Cache query](./media/cachequery.png)
-        
+
 15. Press **Ctrl+S** to save.
 
 ### Add a cache table

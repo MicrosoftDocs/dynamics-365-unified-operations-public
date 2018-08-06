@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Use the Excel add-in
+title: Open entity data in Excel and update it by using the Excel add-in
 description: This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Office add-in for Excel. 
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/30/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Use the Excel add-in
+# Open entity data in Excel and update it by using the Excel add-in
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Office add-in for Excel. To open the entity data, you can start from either Excel or Microsoft Dynamics 365 for Finance and Operations.
 
@@ -40,6 +40,8 @@ By opening entity data in Excel, you can quickly and easily view and edit the da
 
 > [!NOTE]
 > If your Microsoft Azure Active Directory (Azure AD) tenant is configured to use Active Directory Federation Services (AD FS), you must make sure that the May 2016 update for Office has been applied, so that the Excel add-in can correctly sign you in.
+
+To learn more about using the Excel add-in, watch the short [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) video.
 
 ## Open entity data in Excel when you start from Finance and Operations
 1. On a page in Finance and Operations, select **Open in Microsoft Office**.

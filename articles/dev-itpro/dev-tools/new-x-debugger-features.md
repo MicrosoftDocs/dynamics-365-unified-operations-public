@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ and debugger features
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This tutorial is for developers to use advanced constructs of the X++ language and take advantage of productive debugger features. This is a walkthrough of the new features with exercises included to practice using these features. 
 
@@ -176,7 +175,7 @@ The code above has the same semantic meaning as:
     {
       int field1;
       str field2;
-      
+
       void new()
       {
         this.field1 = 1;
@@ -184,7 +183,7 @@ The code above has the same semantic meaning as:
         // …
       }
     }
-    
+
 The inline assignments work for both static and instance members.
 
 ## Consts/Readonly
@@ -241,12 +240,14 @@ You can now declare a variable without explicitly providing the type of the vari
 
 -   Use var to declare local variables when the type of the variable is obvious from the right side of the assignment, or when the precise type is not important.
 
-         
-        // When the type of a variable is clear from the context, use var 
-        // in the declaration. 
-        var var1 = "This is clearly a string.";
-        var var2 = 27; // This is an integer (not a real).
-        var i = System.Convert::ToInt32(3.4);
+
+~~~
+    // When the type of a variable is clear from the context, use var 
+    // in the declaration. 
+    var var1 = "This is clearly a string.";
+    var var2 = 27; // This is an integer (not a real).
+    var i = System.Convert::ToInt32(3.4);
+~~~
 
 -   Don't use var when the type isn't apparent from the initialization expression.
 
@@ -489,7 +490,7 @@ because the ToString method is defined on the object class. There's one differen
 You should use the IS and AS operators liberally in your code. The IS operator can be used if the expression provided is of a particular type (including derived types); the AS operator will perform casting into the given type and return null if a cast isn't possible.
 
 ## Compiler diagnoses attempts to store objects in containers
-In previous incarnations of the X++ compiler, it was possible to store object references into containers, even though this would fail at runtime. This is no longer possible. When the compiler sees an attempt to store an object reference into a container:
+In previous incarnations of the X++ compiler, it was possible to store object references into containers, even though this would fail at runtime. This is no longer possible. When the compiler sees an attempt to store an object reference into a container:
 
     container c = [new Query()];
 
@@ -530,7 +531,7 @@ In legacy systems, it was possible to use "shorthand" values for the year argume
     {
       int y;
       date d;
-      
+
       for (y = 0; y < 150; y++)
       {
         d = mkDate(1,1,y);  
@@ -581,7 +582,7 @@ Consider the following code:
       }
     }
 
-Set a breakpoint on the assignment statement. Make your class the startup object in your project, and start by pressing F5. When the breakpoint is encountered, view the rental variable by expanding it in the locals window. You'll see something similar to the following graphic. [![DebuggingAdmin2\_DebugFeatures](./media/debuggingadmin2_debugfeatures.png)](./media/debuggingadmin2_debugfeatures.png) You can see that the fields that have been selected (EndMileage and RentalId) appear with their selected values, while the unselected fields appear as null. This signifies their value wasn't fetched from the database. Obviously, this is a debugging artifact. The values of the unselected fields will be the default value for the type of the field. Step over this and notice how the debugger changes the rendering to the actual value. **Note**: If the table is set to Cache, the system will always fetch all fields from the entire table, irrespective of the field list provided in the code.
+Set a breakpoint on the assignment statement. Make your class the startup object in your project, and start by pressing F5. When the breakpoint is encountered, view the rental variable by expanding it in the locals window. You'll see something similar to the following graphic. [![DebuggingAdmin2\_DebugFeatures](./media/debuggingadmin2_debugfeatures.png)](./media/debuggingadmin2_debugfeatures.png) You can see that the fields that have been selected (EndMileage and RentalId) appear with their selected values, while the unselected fields appear as null. This signifies their value wasn't fetched from the database. Obviously, this is a debugging artifact. The values of the unselected fields will be the default value for the type of the field. Step over this and notice how the debugger changes the rendering to the actual value. **Note**: If the table is set to Cache, the system will always fetch all fields from the entire table, irrespective of the field list provided in the code.
 
 ### The Auto and Infolog Windows
 

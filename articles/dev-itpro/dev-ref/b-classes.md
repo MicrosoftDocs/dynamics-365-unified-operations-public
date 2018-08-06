@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: B Classes
+title: B classes
 description: System API classes that start with the letter B.
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# B Classes
+# B classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter B.
 
@@ -384,7 +383,7 @@ This example uses the BinaryIo class to read data from the ExampleFile text file
             return;
         }
         perm.assert();
-             
+
         // Overwrites the file if it already exists; restarts it as empty.
         binaryIoObject = new BinaryIo(#ExampleFile, #ExampleOpenModeW);
         if (binaryIoObject != null)

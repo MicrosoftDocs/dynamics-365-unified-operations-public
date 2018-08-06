@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Funds in the public sector
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements. Public-sector organizations use funds to demonstrate their fiscal accountability.
 
@@ -43,7 +42,7 @@ What General ledger parameters should be set for funds?
 To learn about the General ledger parameters required for funds, see [General ledger in the public sector](general-ledger-public-sector.md).
 
 ## What fund classes and fund types do I need to set up?
-The Governmental Accounting Standards Board (GASB) recommends a set of Generally Accepted Accounting Principles (GAAP) for state and local governmental accounting.  The GAAP identifies eight fund types that are categorized under the three fund classes:
+The Governmental Accounting Standards Board (GASB) recommends a set of Generally Accepted Accounting Principles (GAAP) for state and local governmental accounting.  The GAAP identifies eight fund types that are categorized under the three fund classes:
 
 -   Governmental funds
     -   General fund
@@ -61,7 +60,7 @@ The three GAAP fund classes, plus a **Memo** class, are predefined options in Mi
 
 Fund types are defined according to the needs of the organization. In most cases, you’ll set up the eight GAAP fund types. The fund types group funds for detailed fiscal tracking and reporting. Many funds can be included in a single high-level report, but each fund remains a separate fiscal and accounting entity with its own general ledger, income statements, and balance sheet reports. 
 
-Each fund must have a unique fund number. In Finance and Operations, fund numbers are used as dimension values in financial account numbers where a dimension has been mapped to a fund. When an account number is linked to a particular fund, it belongs to the set of financial books that are contained by that fund.
+Each fund must have a unique fund number. In Finance and Operations, fund numbers are used as dimension values in financial account numbers where a dimension has been mapped to a fund. When an account number is linked to a particular fund, it belongs to the set of financial books that are contained by that fund.
 
 ### Example
 

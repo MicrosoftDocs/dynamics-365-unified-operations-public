@@ -30,7 +30,9 @@ ms.dyn365.ops.version: July 2017 update
 
 # Reverse charge VAT
 
-[!INCLUDE[banner](../includes/banner.md)]
+
+[!include [banner](../includes/banner.md)]
+
 
 This topic describes a generic approach for setting up reverse charge value-added tax (VAT) for Saudi Arabia and European countries.
 
@@ -58,7 +60,7 @@ We recommend that you use separate sales tax codes for sales operations and purc
 <li>Create a sales tax code that has a negative value. Set the <strong>Allow negative sales tax percentage</strong> option to <strong>Yes</strong>.
 You must assign this negative sales tax code to an item sales tax group and then assign that item sales tax group to the items that are subject to the reverse charge VAT.</li>
 </ol>
-<p>For more information, see the next section, "Set up sales tax groups and item sales tax groups."</p>
+<p>For more information, see the next section, &quot;Set up sales tax groups and item sales tax groups.&quot;</p>
 </td>
 </tr>
 </tbody>

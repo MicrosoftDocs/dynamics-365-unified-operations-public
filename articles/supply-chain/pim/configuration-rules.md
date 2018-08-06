@@ -32,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configuration rules
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides general information about configuration rules. Configuration rules define relationships between items in a bill of materials (BOM) for products that use the dimension-based configuration technology.
 
@@ -41,11 +40,11 @@ Configuration rules are available when you define dimension-based configuration 
 
 **Note:** This information applies only to product masters that use the dimension-based configuration technology.  
 
-Existing configurations aren't affected by subsequent changes to the configuration rules. However, it's important that you set the rules before you define a new configuration, and that you check the rules if you think they have been changed.  
+Existing configurations aren't affected by subsequent changes to the configuration rules. However, it's important that you set the rules before you define a new configuration, and that you check the rules if you think they have been changed.  
 
 **Note:** For the **Select** method, the derived configuration group, item number, and configuration are automatically selected. For the **Deselect** method, the derived configuration group, item number, and configuration can't be selected.
 
-See also
+Additional resources
 --------
 
 [Dimension-based product configuration](dimension-based-product-configuration.md)

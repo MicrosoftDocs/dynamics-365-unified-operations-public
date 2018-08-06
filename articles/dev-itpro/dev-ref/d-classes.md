@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: D Classes
+title: D classes
 description: System API classes that start with the letter D.
 author: RobinARH
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# D Classes
+# D classes
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter D.
 
@@ -580,6 +579,7 @@ obj
 
 | Method | Description |
 |--------|-------------|
+|        |             |
 
 ## Class DataImportExportManager
     class DataImportExportManager extends Object
@@ -2580,7 +2580,7 @@ Called
 
 <!-- -->
 
-  
+
 
 #### Return Value
 
@@ -2628,7 +2628,7 @@ methodName
 
 <!-- -->
 
-  
+
 
 #### Return Value
 
@@ -2818,7 +2818,7 @@ Creates an object.
 
 #### Parameters
 
-  
+
 
 #### Return Value
 
@@ -2973,7 +2973,7 @@ className
 
 <!-- -->
 
-  
+
 
 #### Return Value
 
@@ -3577,13 +3577,14 @@ The DictEnum class obtains meta-information about the base enum enumerations in 
 
 For backward compatibility, a special naming convention for methods that convert to or from properties is used.
 
+
 |                 |                                |                          |
 |-----------------|--------------------------------|--------------------------|
-| Name            | ReqDate                        | Symbol (typed as string) |
-| Label           | @SYS18075 ("Requirement date") | Name or Label            |
-| FeatureKey      | ReqSchedAction                 | FeatureKey               |
-| EnumValue       | 0                              | Value                    |
-| Position in AOT | First (Index = 0)              | Index                    |
+|      Name       |            ReqDate             | Symbol (typed as string) |
+|      Label      | @SYS18075 ("Requirement date") |      Name or Label       |
+|   FeatureKey    |         ReqSchedAction         |        FeatureKey        |
+|    EnumValue    |               0                |          Value           |
+| Position in AOT |       First (Index = 0)        |          Index           |
 
 This example is from the ActionBasicDateType base enum. For general information about enumerations, see the Developer's Guide.
 
@@ -7259,7 +7260,7 @@ Called
 
 <!-- -->
 
-  
+
 
 #### Return Value
 
@@ -7309,7 +7310,7 @@ methodName
 
 <!-- -->
 
-  
+
 
 #### Return Value
 
@@ -10229,7 +10230,7 @@ Releases resources and performs clean-up before an instance of the DLL class is 
 
 #### Parameters
 
-  
+
 
 #### Return Value
 
@@ -10304,7 +10305,7 @@ functionname
 
 #### Parameters
 
-  
+
 
 ## Class DocNode
     class DocNode extends TreeNode

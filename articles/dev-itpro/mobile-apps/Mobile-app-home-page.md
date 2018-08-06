@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobile app home page
+title: Dynamics 365 for Unified Operations mobile app home page
 description: This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.
 author: sericks007
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.search.validFrom: 2017-02-28
 
 ---
 
-# Mobile app home page
+# Dynamics 365 for Unified Operations mobile app home page
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.
 
@@ -90,12 +90,12 @@ The following table includes links to resources that can help you implement both
 <td>1</td>
 <td>System administrator</td>
 <td>Implement Finance and Operations in your organization.</td>
-<td><ul><li>If you haven't yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</li><li>To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</li></ul></td>
+<td><ul><li>If you haven&#39;t yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</li><li>To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</li></ul></td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>System administrator</td>
-<td><strong>If you're using Microsoft Dynamics 365 for Operations version 1611:</strong> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</td>
+<td><strong>If you&#39;re using Microsoft Dynamics 365 for Operations version 1611:</strong> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</td>
 <td>See the following topics for more information:
 <ul>
 

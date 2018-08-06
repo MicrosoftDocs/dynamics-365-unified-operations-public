@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Embed PowerApps
+title: Embed PowerApps apps
 description: This topic describes how to embed PowerApps into the Finance and Operations client to augment the product's functionality.
 author: jasongre
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -27,13 +27,13 @@ ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
 ---
 
-# Embed PowerApps
+# Embed PowerApps apps
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+In Platform update 14, Microsoft Dynamics 365 for Finance and Operations supports integration with Microsoft PowerApps, a service for developers and non-technical users to build custom business apps for mobile devices, tablets, and the web without writing code. PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality. For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system. 
 
-In Platform update 14, Microsoft Dynamics 365 for Finance and Operations supports integration with Microsoft PowerApps, a service for developers and non-technical users to build custom business apps for mobile devices, tablets, and the web without writing code. PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality. For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system.  
+To learn more about embedding PowerApps, watch the short [How to embed PowerApps in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY) video.
 
 ## Adding an embedded PowerApp to a page
 ### Overview

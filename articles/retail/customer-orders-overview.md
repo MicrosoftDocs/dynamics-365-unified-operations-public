@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customer orders overview
+title: Customer orders in Retail Modern POS (MPOS)
 description: This topic provides information about customer orders in Retail Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
 manager: AnnBe
@@ -31,10 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Customer orders overview
+# Customer orders in Retail Modern POS (MPOS)
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 This topic provides information about customer orders in Retail Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 
@@ -54,7 +53,7 @@ Here are some of the parameters that can be set on the **Retail parameters** pag
 -   **Cancellation charge code** – If a charge will be applied when a customer order is canceled, that charge will be reflected under a charge code on the sales order. Use this parameter to define the cancellation charge code.
 -   **Shipping charge code** – Retailers can charge an extra fee for shipping merchandise to a customer. The amount of that shipping charge will be reflected under a charge code on the sales order. Use this parameter to map the shipping charge code to shipping charges on the customer order.
 -   **Refund shipping charges** – Specify whether shipping charges that are associated with a customer order are refundable.
--   **Maximum amount without approval** – If shipping charges are refundable, specify the maximum amount of shipping charge refunds across return orders. If this amount is exceeded, manager override is required in order to continue with the refund. To accommodate the following scenarios, a refund of shipping charges can exceed the amount that was originally paid:
+-   **Maximum amount without approval** – If shipping charges are refundable, specify the maximum amount of shipping charge refunds across return orders. If this amount is exceeded, manager override is required in order to continue with the refund. To accommodate the following scenarios, a refund of shipping charges can exceed the amount that was originally paid:
     -   Charges are applied at the level of the sales order header, and when some quantity of a product line is returned, the maximum refund of shipping charges that is allowed for the products and the quantity can't be determined in way that works for all retail customers.
     -   Shipping charges are incurred for every instance of shipping. If a customer returns products multiple times, and the retailer’s policy specifies that the retailer will bear the cost of return shipping charges, the return shipping charges will be more than the actual shipping charges.
 
@@ -100,7 +99,7 @@ Customer orders can be created from the point of sale (POS) client in either syn
 
 When the **Create customer order in async mode** option is set to **Yes**, customer orders are always created in asynchronous mode, even if Retail Transaction Service (RTS) is available. If you set this option to **No**, customer orders are always created in synchronous mode by using RTS. When customer orders are created in asynchronous mode, they are pulled and inserted into Retail by Pull (P) jobs. The corresponding sales orders are created in Retail when **Synchronize orders** is run either manually or through a batch process.
 
-See also
+Additional resources
 --------
 
 [Hybrid customer orders](hybrid-customer-orders.md)

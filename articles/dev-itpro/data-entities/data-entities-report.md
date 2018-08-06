@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Find information about standard data entities
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations, ships with many default data entities. Data entities are frequently updated, so for documentation, we rely on the data entity templates to indicate which order data entities should be imported in, and on reports for a list of data entities that ship with each release.  
 
@@ -48,5 +48,5 @@ Microsoft provides the following reports for data entities, which can be downloa
 You may also find the Tables report of interest--it lists each table, and its table group. 
 
 
-## See also
+## Additional resources
 [Data entities home page](data-entities.md)

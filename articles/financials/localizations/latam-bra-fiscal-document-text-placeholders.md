@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Fiscal document text placeholders for Brazil
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 Fiscal document text placeholders are predefined tags that represent specific values. You can include the placeholders in the <strong>Text </strong>field on the <strong>Fiscal document source texts </strong>page when you create a fiscal document source text.
 
@@ -49,11 +48,13 @@ Tags that support fiscal document text for referenced processes
 | %RefProcess\_RefProcessNumber   | The number of the referenced process. |
 
 ## Tag that supports fiscal document text for SUFRAMA
+
 | Predefined tag       | Value                        |
 |----------------------|------------------------------|
 | %Suframa\_CustNumber | The SUFRAMA customer number. |
 
 ## Tags that support fiscal document text for taxes
+
 | Predefined tag | Value                                                                                    |
 |----------------|------------------------------------------------------------------------------------------|
 | %ICMS          | The Imposto Sobre Circulação de Mercadorias e Serviços (ICMS) tax amount.                |
@@ -61,6 +62,7 @@ Tags that support fiscal document text for referenced processes
 | %COFINS        | The Contribuição para o financiamente da securidade social (COFINS) contribution amount. |
 
 ## Tags that support fiscal document text for fiscal references
+
 | Predefined tag                  | Value                                                                                                               |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | %FiscalRef\_InvNoRef            | The number of the reference invoice.                                                                                |
@@ -72,6 +74,7 @@ Tags that support fiscal document text for referenced processes
 | %FiscalRef\_InvAccCNPJCPFNumRef | The Cadastro Nacional da Pessoa Jurídica (CNPJ), or taxpayer registration number, of the reference invoice account. |
 
 ## Tags that support fiscal document text that involve vendor information
+
 | Predefined tag     | Value                                                                                                                              |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | %Vendor\_Name      | The name of the vendor.                                                                                                            |
@@ -80,6 +83,7 @@ Tags that support fiscal document text for referenced processes
 | %Vendor\_Address   | The address of the vendor.                                                                                                         |
 
 ## Tags that support fiscal document text that involve customer information
+
 | Predefined tag       | Value                         |
 |----------------------|-------------------------------|
 | %Customer\_Name      | The name of the customer.     |
@@ -88,6 +92,7 @@ Tags that support fiscal document text for referenced processes
 | %Vendor\_Address     | The address of the customer.  |
 
 ## Tags that support fiscal document text for withholding taxes
+
 | Predefined tag       | Value                          |
 |----------------------|--------------------------------|
 | %TaxWithhold\_Code   | The withholding tax code.      |
@@ -95,6 +100,7 @@ Tags that support fiscal document text for referenced processes
 | %TaxWithhold\_Amount | The amount of withholding tax. |
 
 ## Tags that support fiscal document text for imports
+
 | Predefined tag | Value                                                                    |
 |----------------|--------------------------------------------------------------------------|
 | %DI\_Number    | The identifier of the import declaration document.                       |
@@ -105,7 +111,8 @@ Tags that support fiscal document text for referenced processes
 | %Siscomex      | The charge amount for Sistema Integrado de Comércio Exterior (Siscomex). |
 | %ExchRate      | The exchange rate that is used in the import.                            |
 
-## Tags for ICMSDIF final consumer
+## Tags for ICMSDIF final consumer
+
 | Predefined tag           | Value                                                                          |
 |--------------------------|--------------------------------------------------------------------------------|
 | %DifICMS\_vBCUFDest      | Tax base amount used for tax type ICMS-DIF.                                    |

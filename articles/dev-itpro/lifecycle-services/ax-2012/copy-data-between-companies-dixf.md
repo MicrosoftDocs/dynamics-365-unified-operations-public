@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Copy data between Dynamics AX companies (AX 2012)
-description: You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to copy an entity, such as customers, from one Microsoft Dynamics AX legal entity (company) to another. In this example, we will export customers in a specific customer group from the CEU company to the CEC company in the Contoso data set.
+title: Copy data between Dynamics AX companies
+description: You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to copy an entity, such as customers, from one Microsoft Dynamics AX legal entity (company) to another. In this example, we will export customers in a specific customer group from the CEU company to the CEC company in the Contoso data set.
 author: kfend
 manager: AnnBe
 ms.date: 11/13/2017
@@ -30,14 +30,13 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Copy data between Dynamics AX companies (AX 2012)
+# Copy data between Dynamics AX companies
 
-[!include[banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
+You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to copy an entity, such as customers, from one Microsoft Dynamics AX legal entity (company) to another. In this example, we will export customers in a specific customer group from the CEU company to the CEC company in the Contoso data set.
 
-You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to copy an entity, such as customers, from one Microsoft Dynamics AX legal entity (company) to another. In this example, we will export customers in a specific customer group from the CEU company to the CEC company in the Contoso data set.
-
-**Note: **This walkthrough is not intended for users of the versions of the Data Import/Export Framework that ship with cumulative update 7 for Microsoft Dynamics AX 2012 R2 or Microsoft Dynamics AX 2012 R3. Those users should refer to the topic [Copying and comparing entity data between companies (DIXF, DMF)](copy-compare-entity-data-between-companies-dixf.md). This walkthrough illustrates the following tasks:
+**Note: **This walkthrough is not intended for users of the versions of the Data Import/Export Framework that ship with cumulative update 7 for Microsoft Dynamics AX 2012 R2 or Microsoft Dynamics AX 2012 R3. Those users should refer to the topic [Copying and comparing entity data between companies (DIXF, DMF)](copy-compare-entity-data-between-companies-dixf.md). This walkthrough illustrates the following tasks:
 
 -   Define the format of your source data
 -   Define a processing group
@@ -75,14 +74,14 @@ To complete this walkthrough you will need:
 3.  In the **Get data from source to staging** form, click **OK** to run immediately. The source data is copied to the staging tables.
 
 ## Validate the data in staging
-1.  In **Data Import/Export Framework**, click **Common** &gt; **Processing group** &gt; **Execution history**, and then select the job that ran.
+1.  In **Data Import/Export Framework**, click **Common** &gt; **Processing group** &gt; **Execution history**, and then select the job that ran.
 2.  Click **View staging data**.
 3.  Review the staging data to validate that it matches the source.
 4.  Click **Validate all** to verify that all the related reference data is correct and present in the system.
 
 ## Switch companies to copy data to another company
 1.  Switch to the **CEC** company.
-2.  In **Data Import/Export Framework**, click **Common** &gt; **Processing group**, and then select the processing group to work with.
+2.  In **Data Import/Export Framework**, click **Common** &gt; **Processing group**, and then select the processing group to work with.
 3.  Click **Copy data to target**. The **Select a job ID to run** form opens.
 4.  Select a job and click **OK**. The **Target data execution** form opens.
 5.  Click **Run**, and then click **OK**. The data is copied to the target entity.

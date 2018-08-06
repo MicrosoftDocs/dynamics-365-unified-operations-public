@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Migrate data 
+title: Migrate data by using the Data Import/Export Framework (DIXF)
 description:  This topic describes how to use the Data Import/Export Framework for Microsoft Dynamics AX 2012 to migrate data.
 author: kfend
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Migrate data using the Data import/export framework (AX 2012)
+# Migrate data by using the Data Import/Export Framework (DIXF)
 
-[!include[banner](../../includes/banner.md)]
-
+[!include [banner](../../includes/banner.md)]
 
  This topic describes how to use the Data Import/Export Framework for Microsoft Dynamics AX 2012 to migrate data.
 
@@ -80,7 +79,7 @@ For a list of the predefined target entities that the Data Import/Export Framewo
 -   The entity class is where X++ transformation logic is stored. You can create a copy of an entity class and modify the transformation logic.
 -   The target table is the table that data is pulled from for export procedures, or the table that fully modified data is written to for import procedures.
 
-**Important: **The mapping from the staging table schema to the target table schema is automatically generated. Unless you have customized your target Microsoft Dynamics AX system, you should not have to modify the staging-to-target mapping. For details about each target entity, you can review the information in **Data Import/Export Framework** &gt; **Setup** &gt; **Target entities**. If no default target entity suits your purposes, you can create a new target entity by using an entity that is already present in the system. If no entity that is already present in the system is appropriate, you can create a custom entity. For more information about how to create a custom entity, see [Create a custom target entity for the Data import/export framework (DIXF, DMF)](create-custom-target-entity-dixf.md).
+<strong>Important: **The mapping from the staging table schema to the target table schema is automatically generated. Unless you have customized your target Microsoft Dynamics AX system, you should not have to modify the staging-to-target mapping. For details about each target entity, you can review the information in **Data Import/Export Framework</strong> &gt; <strong>Setup</strong> &gt; <strong>Target entities</strong>. If no default target entity suits your purposes, you can create a new target entity by using an entity that is already present in the system. If no entity that is already present in the system is appropriate, you can create a custom entity. For more information about how to create a custom entity, see [Create a custom target entity for the Data import/export framework (DIXF, DMF)](create-custom-target-entity-dixf.md).
 
 ## Using the Data Import/Export Framework
 This section provides information about how to use the Data Import/Export Framework to import or export data. This section contains the following subsections:
@@ -350,10 +349,10 @@ To add a new target entity, follow these steps.
 
 ### Modify an entity’s target mapping
 
-You can change the sequence in which fields in an entity are processed. You can also enable a field to call the **validateField** method or the **modifiedField** method to check business logic when the field is processed. **Important:** Even if you set the **Call validate** field method or **Call modified** field method value for a field, you do not guarantee that a method will be run. These values only *enable* the methods to be run. However, the settings for the processing group determine whether a method is actually run for a specific operation.
+You can change the sequence in which fields in an entity are processed. You can also enable a field to call the **validateField** method or the **modifiedField** method to check business logic when the field is processed. **Important:** Even if you set the **Call validate** field method or **Call modified** field method value for a field, you do not guarantee that a method will be run. These values only *enable* the methods to be run. However, the settings for the processing group determine whether a method is actually run for a specific operation.
 
 1.  Open **Data import export framework** &gt; **Setup** &gt; **Target entities**.
-2.  Select the target entity to modify, and then click **Modify target mapping**. The **Map staging to target** form opens. The default **Mapping visualization view** shows the staging fields, functions (entity classes that contain transformations), and target fields that are associated with the target entity.
+2.  Select the target entity to modify, and then click **Modify target mapping**. The **Map staging to target** form opens. The default **Mapping visualization view** shows the staging fields, functions (entity classes that contain transformations), and target fields that are associated with the target entity.
 3.  Click **Mapping details**.
 4.  To modify the order in which a field is processed, change the **Sequence** value.
 5.  To enable a field to be run together with any business logic in the **validateField** method, select **Call validate Field method**.
@@ -564,7 +563,7 @@ You can copy data from staging to target, one processing group at a time.
 After the job has finished running, follow these steps to validate the data in target.
 
 1.  Open **Data import export framework** &gt; **Common** &gt; **Processing group**.
-2.  Click **Execution history **and review the status of the job.
+2.  Click **Execution history **and review the status of the job.
 
 #### Clean up staging data
 

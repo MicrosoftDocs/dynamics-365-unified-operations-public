@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Planning for your on-premises deployment 
+title: Plan and prepare for on-premises deployments
 description: This topic will help you plan and prepare for your on-premises deployment.
 author: robinarh
 manager: AnnBe
-ms.date: 01/03/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,15 +30,15 @@ ms.dyn365.ops.version: Platform Update 8
 
 ---
 
-# Planning for your on-premises deployment
+# Plan and prepare for on-premises deployments
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations now supports running business processes in customer data centers with the on-premises deployment option. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center.
 
 This topic will help you plan and prepare for your on-premises deployment.
 
->   [!IMPORTANT]
+> [!IMPORTANT]
 >   On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure. 
 
 ## Differences between cloud deployments and on-premises deployments
@@ -75,7 +75,7 @@ At a minimum, an on-premises sandbox environment requires:
 - 2 machines running Application Object Servers (AOS)
 - 1 machine running Management Reporter (MR)
 - 1 machine running SQL Server Reporting Services (SSRS)
-- 1 machine running Azure Active Directory (Azure AD)
+- 1 machine running Active Directory
 - 1 machine running SQL Server
 
 ### Production environment
@@ -87,7 +87,7 @@ At a minimum, an on-premises production environment requires:
 - 1 machine running Management Reporter (MR)
 - 1 machine running SQL Server Reporting Services (SSRS)
 - 2 or more machines running SQL Server
-- 2 or more machines running Azure Active Directory (Azure AD)
+- 2 or more machines running Active Directory
 
 ## Service Fabric
 An on-premises deployment uses Azure Service Fabric standalone clusters. Service Fabric is the next-generation Microsoft middleware platform for building and managing enterprise-class, high-scale applications. Service Fabric standalone clusters can be deployed on any computer that is running Windows Server.
@@ -214,9 +214,9 @@ The following authentication methods are used with on-premises deployments:
 - **Azure Active Directory (Azure AD)** - Azure AD is the authentication method used to log in to LCS. Azure AD is used configure the LCS Local Agent. For more information, see [What is Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis)
 - **Active Directory Domain Services (AD DS)** - The machines that host Finance and Operations (on-premises) components must belong to an Active Directory domain. You must configure Active Directory Domain Services (AD DS) in native mode. For more information, see [Active Directory Domain Services](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-domain-services).
 - **Active Directory Federation Services (AD FS)** - AD FS is the authentication method used in an on-premises deployment. AD FS provides access control and single sign on across a wide variety of applications including Office 365, cloud-based SaaS applications, and applications on the corporate network.
-    - For the IT organization, it enables you to provide sign on and access control to both modern and legacy applications, on-premises and in the cloud, based on the same set of credentials and policies.
-    - For the user, it provides seamless sign on using the same, familiar account credentials.
-    - For the developer, it provides an easy way to authenticate users whose identities live in the organizational directory. This means you can focus your efforts on your application, not authentication or identity.
+  - For the IT organization, it enables you to provide sign on and access control to both modern and legacy applications, on-premises and in the cloud, based on the same set of credentials and policies.
+  - For the user, it provides seamless sign on using the same, familiar account credentials.
+  - For the developer, it provides an easy way to authenticate users whose identities live in the organizational directory. This means you can focus your efforts on your application, not authentication or identity.
 
     For more information, see [Active Directory Federation Services](https://docs.microsoft.com/en-us/windows-server/identity/active-directory-federation-services).
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Client-side design APIs overview
+title: Client-side design APIs
 description: This topic provides an overview of the client-side design APIs and includes recommendations for using them.
 author: makhabaz
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Client-side design APIs overview
+# Client-side design APIs
 
-[!include[banner](../../../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 This topic provides an overview of the application programming interfaces (APIs) for client-side design and includes recommendations for using them.
 
@@ -42,21 +42,21 @@ The following list includes some frequently used terms that apply to the client-
 - **Design** – A property that can optionally be specified on a Page, Action, or other component object to override its default design.
 - **Component** – A component can be one of four types:
 
-    - **Block container** (default) – A container that has CSS block behaviors. (In other words, the container is equivalent to an element that has a CSS **display: block** style declaration.)
-    - **Flex container** – A container that has CSS flex behaviors. (In other words, the container is equivalent to an element that has a CSS **display: flex** style declaration.)
-    - **Control reference** – A component that refers to a control that exists in the static metadata (XML) of the Page or Action.
-    - **New control** – A component that instantiates a new control. (In other words, the control doesn't already exist in the static metadata [XML] of the Page or Action.)
+  - **Block container** (default) – A container that has CSS block behaviors. (In other words, the container is equivalent to an element that has a CSS **display: block** style declaration.)
+  - **Flex container** – A container that has CSS flex behaviors. (In other words, the container is equivalent to an element that has a CSS **display: flex** style declaration.)
+  - **Control reference** – A component that refers to a control that exists in the static metadata (XML) of the Page or Action.
+  - **New control** – A component that instantiates a new control. (In other words, the control doesn't already exist in the static metadata [XML] of the Page or Action.)
 
     A component is represented in the design by a JavaScript Object Notation (JSON) object, and the properties of this JSON object represent the properties of the component. Almost every JSON object in the design property hierarchy is a component.
 
 - **Item** – A component that is nested in a container.
 - **Property** – Several types of properties can be set on a component:
 
-    - Container-specific
-    - Item-specific
-    - Control-specific
-    - List-specific
-    - Generic (non-specific)
+  - Container-specific
+  - Item-specific
+  - Control-specific
+  - List-specific
+  - Generic (non-specific)
 
     Properties are specified as key-value pairs on the component's JSON object. The properties that are applicable depend on the type of component that the property is applied to.
 
@@ -66,8 +66,8 @@ The following list includes some frequently used terms that apply to the client-
 
 	When you specify properties, follow these guidelines:
 
-    - You should not enclose property names in quotation marks.
-    - You must enclose all property values in double quotation marks, unless the documentation specifies otherwise.
+  - You should not enclose property names in quotation marks.
+  - You must enclose all property values in double quotation marks, unless the documentation specifies otherwise.
 
 - **Inheritance** – If a color, font size, or font weight is applied to a control, all descendant controls inherit the same property, unless they are reassigned. If padding is applied to a control, it's inherited by the item (non-container) descendants of the control. No other properties are inherited.
 

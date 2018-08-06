@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Employee competencies and development Power BI content
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes the Finance and Operations - Employee competencies and development Power BI content. 
 
@@ -49,7 +48,7 @@ After you’ve connected the content pack to your Finance and Operations data, t
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
-Finance and Operations data is used to populate the reports in the Employee competencies and development content pack. The following table shows the entities that the content pack was based on.
+Finance and Operations data is used to populate the reports in the Employee competencies and development content pack. The following table shows the entities that the content pack was based on.
 
 | Entity                            | Contents                                                                                                   | Relationships with other entities                                                                                                                                                                                                                                                                       |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

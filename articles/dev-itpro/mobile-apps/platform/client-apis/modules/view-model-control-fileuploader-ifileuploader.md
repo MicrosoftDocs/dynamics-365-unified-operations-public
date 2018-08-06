@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: File Uploader
+title: File Uploader module
 description: A control for uploading images.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# File Uploader 
+# File Uploader module
 
-[!include[banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 A control for uploading images.
 

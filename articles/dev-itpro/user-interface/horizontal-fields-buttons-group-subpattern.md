@@ -32,15 +32,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Horizontal Fields and Buttons Group subpattern
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Horizontal Fields and Buttons Group form subpattern. This subpattern is used when actions must be defined for an individual field on a form.
 
 Usage
 -----
 
-This subpattern is used when actions must be defined for an individual field on a form. The buttons are laid out just to the right of the field to visually associate the actions with the field. The buttons should display only an icon (no text). Actions that are associated with a section or an entire form should be placed in a Toolbar or ActionPane above that section or form.
+This subpattern is used when actions must be defined for an individual field on a form. The buttons are laid out just to the right of the field to visually associate the actions with the field. The buttons should display only an icon (no text). Actions that are associated with a section or an entire form should be placed in a Toolbar or ActionPane above that section or form.
 
 ### Typical contents
 
@@ -51,7 +50,7 @@ This subpattern is used when actions must be defined for an individual field on 
 [![HorizontalFieldsButtons(1)](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)
 
 ## Pattern changes
-Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
+Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
 -   The layout of fields and buttons will use a single column, where **ArrangeMethod**=**HorizontalLeft**.
 
@@ -77,7 +76,7 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 -   Horizontal Fields
 
 ## UX guidelines
-The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
 
 -   **Standard form guidelines:**
     -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.

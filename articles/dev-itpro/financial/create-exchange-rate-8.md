@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create exchange rate providers in Microsoft Dynamics 365 for Finance and Operations version 8.0
+title: Create exchange rate providers in Finance and Operations version 8.0
 description: This topic explains how to set up an exchange rate provider in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).
 author: aolson
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 8.0.0
 
 ---
 
-# Create exchange rate providers in Microsoft Dynamics 365 for Finance and Operations version 8.0
+# Create exchange rate providers in Finance and Operations version 8.0
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the steps that are required in order to set up an exchange rate provider in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). For the purpose of illustration, the OANDA exchange rate service is used throughout this topic.
 
@@ -143,21 +143,21 @@ Follow these steps to create an exchange rate provider. The code examples are ta
 
 7. Implement the **GetSupportedOptions** method. This method indicates whether the exchange rate provider supports some framework features.
 
-    - Set the **doesSupportSpecificCurrencyPairs** property to **true** only if the exchange rate service requires that a source currency and a destination currency be passed to get an exchange rate. Many exchange rate services return rates for a fixed currency or a given set of currency pairs. For these services, this property should be set to **false**. If the prices that a service charges are based on quotas on the number of rates, a value of **true** will cause the **IExchangeRateRequest** interface to contain only those currency pairs that are configured for an exchange rate type on the **Exchange rate** page (**General ledger** &gt; **Currencies** &gt; **Exchange rates**). The provider can then specifically request these rates from the service and therefore lower the cost.
-    - Set the **fixedBaseIsoCurrency** property to the three-character International Organization for Standardization (ISO) currency code that represents the fixed base currency of the exchange rates that are returned from the exchange rate service. If the exchange rate service doesn't support a fixed base currency, return an empty string. For example, the euro is often used as a fixed base currency. When you create a new provider, be sure to research the exchange rate service so that you can select the correct value.
-    - Set the **singleRateForDateRange** property to **true** if the service can return a single rate that represents the whole date range. For example, you can use this setting to return a single exchange rate that represents the average exchange rate for a month. If the service doesn't support this functionality, set this property to **false**.
+   - Set the **doesSupportSpecificCurrencyPairs** property to **true** only if the exchange rate service requires that a source currency and a destination currency be passed to get an exchange rate. Many exchange rate services return rates for a fixed currency or a given set of currency pairs. For these services, this property should be set to **false**. If the prices that a service charges are based on quotas on the number of rates, a value of **true** will cause the **IExchangeRateRequest** interface to contain only those currency pairs that are configured for an exchange rate type on the **Exchange rate** page (**General ledger** &gt; **Currencies** &gt; **Exchange rates**). The provider can then specifically request these rates from the service and therefore lower the cost.
+   - Set the **fixedBaseIsoCurrency** property to the three-character International Organization for Standardization (ISO) currency code that represents the fixed base currency of the exchange rates that are returned from the exchange rate service. If the exchange rate service doesn't support a fixed base currency, return an empty string. For example, the euro is often used as a fixed base currency. When you create a new provider, be sure to research the exchange rate service so that you can select the correct value.
+   - Set the **singleRateForDateRange** property to **true** if the service can return a single rate that represents the whole date range. For example, you can use this setting to return a single exchange rate that represents the average exchange rate for a month. If the service doesn't support this functionality, set this property to **false**.
 
-    ```
-    public IExchangeRateProviderSupportedOptions GetSupportedOptions()
-    {
-        IExchangeRateProviderSupportedOptions options = factory.CreateExchangeRateProviderSupportedOptions();
-        options.set_doesSupportSpecificCurrencyPairs(true);
-        options.set_doesSupportSpecificDates(false);
-        options.set_fixedBaseIsoCurrency('');
-        options.set_singleRateForDateRange(true);
-        options.set_doesSupportPreventImportOnNationalHoliday(false);
-    return options;
-    ```
+     ```
+     public IExchangeRateProviderSupportedOptions GetSupportedOptions()
+     {
+       IExchangeRateProviderSupportedOptions options = factory.CreateExchangeRateProviderSupportedOptions();
+       options.set_doesSupportSpecificCurrencyPairs(true);
+       options.set_doesSupportSpecificDates(false);
+       options.set_fixedBaseIsoCurrency('');
+       options.set_singleRateForDateRange(true);
+       options.set_doesSupportPreventImportOnNationalHoliday(false);
+     return options;
+     ```
 
 8. Implement the **GetConfigurationDefaults** method. Configuration defaults are name-value pairs that represent the default configuration settings for the exchange rate provider. These settings are automatically loaded when the provider is registered, but users can change them. Take the necessary precautions when you convert these strings into usable values. The value field is stored as an encrypted field in SQL. Therefore, sensitive data such as an application programming interface (API) key will be more secure.
 

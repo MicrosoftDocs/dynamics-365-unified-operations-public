@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Use a continuity program
+title: Selling continuity programs and processing related sales orders
 description: This procedure walks through selling a continuity program and processing related sales orders. 
 author: scott-tucker
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Use a continuity program
+# Selling continuity programs and processing related sales orders
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through selling a continuity program and processing related sales orders. To complete this procedure, the user has to be set up as a call center user. This procedure uses the USRT demo data company.
 

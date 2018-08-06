@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Access instances
+title: Deploy and access development environments
 description: This topic describes how to access development instances, configure on-premises development VMs, and find important configuration settings for developers and administrators.
 author: robadawy
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Deploy and access development environments 
+# Deploy and access development environments
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to access development instances, configure on-premises development VMs, and find important configurations settings for developers and administrators.
 
@@ -42,8 +41,8 @@ Definitions
 
 | Term      | Definition                                                                                                                                                                                                                                       |
 |-----------|------------------------------------------|
-| End user  | A user who accesses an instance through the web client. The end user must have Microsoft Azure Active Directory (Azure AD) credentials to access an instance and must be provisioned/added as a user of that instance. |
-| Developer | A user who will develop code through the Microsoft Visual Studio environment. A developer requires Remote Desktop access to development environment (VM). The developer account must be an administrator on the VM.      |
+| End user  | A user who accesses an instance through the web client. The end user must have Microsoft Azure Active Directory (Azure AD) credentials to access an instance and must be provisioned/added as a user of that instance. |
+| Developer | A user who will develop code through the Microsoft Visual Studio environment. A developer requires Remote Desktop access to development environment (VM). The developer account must be an administrator on the VM.      |
 
 
 ## Deploying cloud development environments
@@ -113,10 +112,10 @@ Cloud environments can be accessed both as an end user and as a developer. The d
 ![Restricted admin access](media/restricted-admin.png)
 
 For environments deployed **before Platform Update 12**:
-1.	Click the VM name.
-2.	Use the local administrator user name and password that are shown to connect to the cloud VM through Remote Desktop. You can reveal the password by clicking the eye icon.
+1.  Click the VM name.
+2.  Use the local administrator user name and password that are shown to connect to the cloud VM through Remote Desktop. You can reveal the password by clicking the eye icon.
 
-For any environments deployed **on or after Platform Update 12** , there are distinct accounts, a developer account and an admin account. Customers will not have have access to virtual machine (VM) admin accounts on development or build environments that are running in Microsoft subscriptions. Thus, the admin account will be hidden unless the environment is running in their Azure subscription. 
+For any environments deployed **on or after Platform Update 12** , there are distinct accounts, a developer account and an admin account. Customers will not have access to virtual machine (VM) admin accounts on development or build environments that are running in Microsoft subscriptions. Thus, the admin account will be hidden unless the environment is running in their Azure subscription. For more information, see [Development and build VMs that don't allow administrator access FAQ](../sysadmin/VMs-no-admin-access.md). 
 
 After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from LCS.
 
@@ -126,7 +125,7 @@ An environment virtual hard disk (VHD) is made available for download from LCS, 
 
 1.  On the main page for your LCS project, in the **Environments** section, click the plus sign (**+**), and then click **Locally**. You're taken to the Connect site.
 2.  Go to the **Downloads** page to download the latest VHD.
-3.  In Microsoft Hyper-V Manager, create a local VM from the VHD that you downloaded. It's a good idea to give your VM the recommended 16 gigabytes (GB) of memory and two virtual processors. Don't use dynamic memory allocation.
+3.  In Microsoft Hyper-V Manager, create a local VM from the VHD that you downloaded. It's a good idea to give your VM the recommended 16 gigabytes (GB) of memory and two virtual processors. Don't use dynamic memory allocation.
 
 ### Retail configuration
 
@@ -140,20 +139,20 @@ To use the downloadable VHD for POS customizations, you must also follow this st
 
 Follow these steps to run the VM from Hyper-V Manager.
 
-1.  To start the VM, click **Start**.
-2.  To open the VM in a window, click **Connect**.
-3.  Click the **Ctrl+Alt+Delete** button on the toolbar. The VM receives most keyboard commands, but Ctrl+Alt+Delete isn't one of them. Therefore, you must use the button or a menu command.
-4.  Sign in to the VM by using the following credentials:
-    -   User name: **Administrator**
-    -   Password: **pass@word1**
+1. To start the VM, click **Start**.
+2. To open the VM in a window, click **Connect**.
+3. Click the **Ctrl+Alt+Delete** button on the toolbar. The VM receives most keyboard commands, but Ctrl+Alt+Delete isn't one of them. Therefore, you must use the button or a menu command.
+4. Sign in to the VM by using the following credentials:
+   - User name: **Administrator**
+   - Password: <strong>pass@word1</strong>
 
-    **Tip:** You can resize the VM window by changing the screen resolution. Right-click the desktop on the VM, and then click **Screen resolution**. Select a resolution that works well for your display.
-5.  Provision the administrator user. For more information, see the next section.
-6.  Start the Batch Manager Service. This step is required if you're running batch jobs or workflows.
-    1.  Open a **Command Prompt** window as an administrator.
-    2.  Type **net start DynamicsAxBatch**, and then press Enter.
+   **Tip:** You can resize the VM window by changing the screen resolution. Right-click the desktop on the VM, and then click **Screen resolution**. Select a resolution that works well for your display.
+5. Provision the administrator user. For more information, see the next section.
+6. Start the Batch Manager Service. This step is required if you're running batch jobs or workflows.
+   1.  Open a **Command Prompt** window as an administrator.
+   2.  Type **net start DynamicsAxBatch**, and then press Enter.
 
-    You can also start the service from the **Services** window.
+   You can also start the service from the **Services** window.
 
 #### Retail configuration
 
@@ -164,7 +163,7 @@ For POS customizations, you must also follow these steps on the guest VM.
 
 ### Provisioning the administrator user
 
-For developer access, you must be an administrator on the instance. To provision your own credentials as an administrator, run the admin user provisioning tool that is provided on the desktop, and provide your email address (Azure AD credentials) in the tool.
+For developer access, you must be an administrator on the instance. To provision your own credentials as an administrator, run the admin user provisioning tool that is provided on the desktop, and provide your email address (Azure AD credentials) in the tool.
 
 1.  From the desktop, run the admin user provisioning tool as an administrator (right-click the icon, and then click **Run as administrator**).
 2.  Enter your email address, and then click **Submit**.
@@ -179,13 +178,13 @@ Follow the steps in this section if you are also configuring for Retail.
     -   The icon for this tool is available on the desktop.
     -   This tool is also available at the following location: C:\windowsSystem32WindowsPowerShellv1.0PowerShell.exe -File C:\RetailSDKToolsRetailTenantUpdateTool.ps1
 
-2.  Double-click the icon to start this tool. You will be prompted for your Azure AD credentials. You must use the same credentials that you used in the admin user provisioning tool earlier.
+2.  Double-click the icon to start this tool. You will be prompted for your Azure AD credentials. You must use the same credentials that you used in the admin user provisioning tool earlier.
 
-#### For Dynamics 365 for Operations 7.0
+#### For Dynamics 365 for Operations 7.0
 
 1.  Install [Microsoft Online Services Sign-In Assistant for IT Professionals RTW](http://go.microsoft.com/fwlink/?LinkID=286152).
 2.  Install [Azure Active Directory Module for Windows PowerShell (64-bit version)](http://go.microsoft.com/fwlink/p/?linkid=236297).
-3.  Query Azure AD for your tenant and user ID. Open a Windows PowerShell Integrated Scripting Environment (ISE) window with administrative privileges, and run the following command. You will be prompted for Azure AD credentials. Use the same user account that you used in the admin user provisioning tool earlier.
+3.  Query Azure AD for your tenant and user ID. Open a Windows PowerShell Integrated Scripting Environment (ISE) window with administrative privileges, and run the following command. You will be prompted for Azure AD credentials. Use the same user account that you used in the admin user provisioning tool earlier.
 
         $msocred = Get-Credential 
         Connect-MsolService -Credential $msocred 
@@ -237,7 +236,7 @@ After the user is provisioned as an administrator, that user can access the inst
 
 #### Retail configuration
 
-The URL of the Retail Cloud POS app is: <https://usnconeboxax1pos.cloud.onebox.dynamics.com/> After you complete the configuration steps, this VM is provisioned with your Azure AD tenant. Your Azure AD admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a Retail POS device in this environment.
+The URL of the Retail Cloud POS app is: <https://usnconeboxax1pos.cloud.onebox.dynamics.com/> After you complete the configuration steps, this VM is provisioned with your Azure AD tenant. Your Azure AD admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a Retail POS device in this environment.
 
 -   Cashier user ID: **000160**
 -   Cashier password: **123**
@@ -267,7 +266,7 @@ To restart the local runtime and redeploy all the packages, follow these steps.
 1.  Open File Explorer, and go to C:\CustomerServiceUnit.
 2.  Right-click **AOSDeploy.cmd**, and then click **Run as administrator**.
 
-This process might take a while. The process is completed when the cmd.exe window closes. If you just want to restart AOS (without redeploying the runtime), run **iisreset** from an administrator **Command Prompt** window, or restart AOSWebApplication from IIS.
+This process might take a while. The process is completed when the cmd.exe window closes. If you just want to restart AOS (without redeploying the runtime), run **iisreset** from an administrator **Command Prompt** window, or restart AOSWebApplication from IIS.
 
 
 

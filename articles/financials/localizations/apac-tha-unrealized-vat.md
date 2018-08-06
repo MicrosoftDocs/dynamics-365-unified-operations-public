@@ -31,8 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Thailand unrealized VAT
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about unrealized VAT and how to set it up. It also explains how to calculate and post purchase orders that have unrealized purchase VAT and sales orders that have unrealized sales VAT, and generate reports.
 
@@ -50,13 +49,13 @@ Before you create and post transactions that have unrealized VAT, complete the f
 ## Unrealized purchase VAT
 Follow these steps to calculate and post purchase orders that have unrealized purchase VAT, and to generate the **Purchase Unrealized VAT Remaining** and **Input sales tax** reports.
 
-1.  **Reverse the unrealized purchase VAT that was posted.** You can reverse the unrealized VAT when you receive the tax invoice from the vendor. Follow one of these steps, depending on when you receive the tax invoice from the vendor:
-    -   Reverse unrealized VAT directly when you post the payment journal. On the **Journal voucher** page, enter the tax invoice number, tax invoice date, and tax invoice receipt date that are applicable to the payment.
+1.  **Reverse the unrealized purchase VAT that was posted.** You can reverse the unrealized VAT when you receive the tax invoice from the vendor. Follow one of these steps, depending on when you receive the tax invoice from the vendor:
+    -   Reverse unrealized VAT directly when you post the payment journal. On the **Journal voucher** page, enter the tax invoice number, tax invoice date, and tax invoice receipt date that are applicable to the payment.
     -   Reverse unrealized VAT only for the transactions only before you receive the tax invoice from the vendor. When you receive the tax invoice from the vendor for the settled transactions, you can reverse the unrealized purchase VAT for the transactions and post the input VAT by using the **Reversal journal** page.
 
-2.  **Generate the Purchase Unrealized VAT Remaining report.** This report includes the transactions that the taxes haven't been realized for.
-3.  **Create and post a purchase order that has unrealized purchase VAT.** On the **Create purchase order**, **Purchase order**, and **Vendor invoice** pages, create and post a purchase order that has unrealized purchase VAT. The purchase order can be for an item or a service. When you post the purchase order before you receive the tax invoice from the vendor, the unrealized purchase VAT is posted to the unrealized purchase VAT account.
-4.  **Generate the Input sales tax report.** This report includes transactions that the purchase VAT is realized for, and includes the details of the VAT that the legal entity pays for the purchase of goods and services.
+2.  **Generate the Purchase Unrealized VAT Remaining report.** This report includes the transactions that the taxes haven't been realized for.
+3.  **Create and post a purchase order that has unrealized purchase VAT.** On the **Create purchase order**, **Purchase order**, and **Vendor invoice** pages, create and post a purchase order that has unrealized purchase VAT. The purchase order can be for an item or a service. When you post the purchase order before you receive the tax invoice from the vendor, the unrealized purchase VAT is posted to the unrealized purchase VAT account.
+4.  **Generate the Input sales tax report.** This report includes transactions that the purchase VAT is realized for, and includes the details of the VAT that the legal entity pays for the purchase of goods and services.
 
 ## Unrealized sales VAT
 Follow these steps to calculate and post sales orders that have unrealized sales VAT, and to generate the **Output sales tax** report.

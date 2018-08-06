@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Import historical data for demand forecasts
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 To help guarantee the accuracy of demand forecasts, you must have as much historical demand data as you can get per item or item allocation key. If the historical demand data isn't already imported, use the **Historical external demand** (ReqDemPlanHistoricalExternalDemandEntity) data entity in Microsoft Dynamics 365 for Finance and Operations to import it.
 
@@ -60,6 +60,6 @@ You can use the following file as an example. Download the [HistoricalDemandData
 
 After you've imported the historical demand data, you can generate a demand forecast.
 
-## See also
+## Additional resources
 
 [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)

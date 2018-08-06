@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Register a subclass for factory methods
+title: Register subclasses for factory methods
 description: This topic describes how to register your own variations for the factories.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Platform update 9
 
 ---
 
-# Register a subclass for factory methods
+# Register subclasses for factory methods
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Class inheritance is a central concept in X++, as in other object-oriented languages. The object-oriented strategy pattern is used throughout the X++ business logic. In this pattern, variations in behavior can be encapsulated by subclasses, and the business process uses an abstract base class or interface. A factory method determines the variation that is used, by creating an instance of a specific subclass.
 

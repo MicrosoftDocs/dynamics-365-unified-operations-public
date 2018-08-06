@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Use external catalogs for PunchOut eProcurement
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 By using external catalogs for PunchOut e-procurement, you don't have to maintain information about your vendors' products in your own master data. 
 Instead, the shopping cart on a vendor's website is converted to requisition lines that have the correct product information. 

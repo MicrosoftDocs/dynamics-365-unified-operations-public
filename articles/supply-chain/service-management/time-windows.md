@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Time windows  
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can use time windows to optimize the scheduling of service order lines. You
 can set up the system so that it automatically creates service orders. Based on

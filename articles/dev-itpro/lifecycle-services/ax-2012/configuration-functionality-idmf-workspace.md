@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configuration 
+title: Configuration in the Intelligent Data Management Framework (IDMF)
 description: This topic provides information about the Intelligent Data Management Framework (IDMF) functionality in Microsoft Dynamics AX.
 author: kfend
 manager: AnnBe
@@ -30,12 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Configuration in the Intelligent Data Management Framework (AX 2012)
+# Configuration in the Intelligent Data Management Framework (IDMF)
 
-[!include[banner](../../includes/banner.md)]
-
-
-
+[!include [banner](../../includes/banner.md)]
 
 Purge and archive functionality
 -------------------------------
@@ -69,7 +66,7 @@ The following table explains the legend that is shown in a relationship tree of 
 | Related Archive Object: Fields with disabled configuration keys       | This Related Archive Object contains relationships or rules with disabled configuration keys. You must enable the configuration keys, or remove the relationships and rules based on disabled fields, and then save the Related Archive Object before you can use it in this object.                                                                                                                                                                                                                                                                                                               |
 | Driver table of the parent Archive Object                             | This is the driver table of the Archive Object that is the parent object of this Related Archive Object.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
- 
+
 
 ## Introduction to the discovery process
 The discovery process creates a hierarchical relationship tree for a Purge Object or an Archive Object. When you create a new Purge Object or Archive Object, you select a parent table, called the driver table. IDMF uses a process called discovery to create a hierarchical relationship tree based on the driver table you select. The following steps provide a high-level walkthrough of the discovery process, assuming that you selected the WMSOrder table as the driver table:

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Chart of accounts delimiter must be unique
+title: Make the chart of accounts delimiter unique
 description: In Dynamics 365 for Finance and Operations, you cannot have the same delimiter for the chart of accounts and dimension values. You must change delimiter values after upgrade. 
 author: ryansandness
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 8.0
 
 ---
 
-# Chart of accounts delimiter must be unique
+# Make the chart of accounts delimiter unique
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In Microsoft Dynamics AX 2012, you could use the same delimiter for your chart of accounts and dimension values. In Dynamics 365 for Finance and Operations, you cannot have the same delimiter for the chart of accounts and dimension values. If there is a duplicate delimiter, you can change it after upgrade. 
 

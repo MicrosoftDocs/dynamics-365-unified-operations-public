@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Respond to a request for personal data using Talent
+title: Respond to requests for personal data in Talent
 description: This topic describes how you, as a data controller, can use Microsoft Dynamics 365 for Talent as a data processor to help you respond to a request for data under the European Union's General Data Protection Regulation (GDPR).
 author: shielasogge
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
-# Respond to a request for personal data using Talent
+# Respond to requests for personal data in Talent
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic can help both businesses that use Microsoft Dynamics 365 for Talent, and also partners and independent software vendors (ISVs), when they comply with data subject rights (DSR) requests. For more information about the European Union's General Data Protection Regulation (GDPR) and the related resources that Microsoft provides, see [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](./gdpr-guide.md).
 
@@ -44,7 +44,7 @@ Data subjects have the following rights under the GDPR, and a data controller mi
 
 ### Right to view
 
-+ Use the Person search report to find and collect personal data that is subject to a DSR request. For information about using this report, see the [Person search report](/gdpr-person-search-report.md) topic.  
++ Use the Person search report to find and collect personal data that is subject to a DSR request. For information about using this report, see the [Person search report](gdpr-person-search-report.md) topic.  
 + Use advanced search and filters to find specific personal data and export that data by using the Microsoft Office Export functionality.
 + Extend the Person search report by adding an existing entity. For information that can help you extend the report, see [Extend the Person search report with your own data](gdpr-extend-person-search-report.md).
 
