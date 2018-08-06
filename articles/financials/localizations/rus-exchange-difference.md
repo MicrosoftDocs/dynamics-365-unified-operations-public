@@ -100,6 +100,89 @@ Use this procedure to settle partial payment transactions for a customer. You ca
 
 9.  Create a new sales book that includes the settled facture amount and the exchange adjustment facture. You can verify that the invoice facture is included in the sales book for the settled amount.
 
+## Calculate the exchange rate difference for a customer 
+
+
+You can use the **Exchange adjustment** form to calculate the exchange rate difference for a customer. The exchange adjustment is calculated at the end of a period according to the rate specified at the period end date.
+
+1.  Click **Accounts receivable** \> **Periodic** \> **Foreign currency revaluation**.
+
+2.  In the **Method** field, select the **Standard** method.
+
+3.  In the **Considered date** field, select the date to adjust the open transaction. The same date is used to post the adjusted transaction.
+
+4.  In the **Date of rate** field, select the date that determines the exchange rate to be used to revalue the voucher.
+
+5.  In the **Transaction text** field, enter the text that describes the exchange adjustment transaction.
+    
+
+    > [!NOTE]
+    > If this field is left blank, then it is automatically filled with the standard text for exchange rate correction, and the number of the revaluated document.
+
+
+
+6.  In the **Notes** field, enter any additional information about the transaction.
+
+7.  In the **Use posting profile from** field, select the posting profile for the transaction from the following options:
+    
+      - **Posting** − The profile of the posted open transaction is used for the exchange adjustment.
+    
+      - **Select** − The profile selected in the **Posting profile** field is used for the exchange adjustment.
+
+8.  In the **Posting profile** field, select the posting profile to be used.
+    
+
+    > [!NOTE]
+    > If you select a posting profile in the <STRONG>Use posting profile from</STRONG> field, the exchange adjustment transaction is based on the posting profile in that field.
+
+
+
+9.  In the **Dimension** field, select the dimensions that are posted to the exchange adjustment transactions from the following options:
+    
+      - **None** – In the exchange adjustment voucher, the line dimension is not dependent on the dimension in the original voucher.
+    
+      - **Table** – In the exchange adjustment voucher, the line dimension is inherited from the dimension of the customer account.
+    
+      - **Posting** – In the exchange adjustment voucher, the line dimension is inherited from the dimension in the original voucher.
+
+10. Set the **Print** option to **Yes** to print the report.
+
+11. Click **OK** to open the **Customer – Exchange adjustment** form.
+
+12. Click **Select** to specify the criteria for exchange adjustment, if required.
+
+13. Click **OK** to revalue the selected transaction.
+
+14. In the **Exchange adjustment** form, click **Voucher** to open the **Voucher transactions** form to view the resulting ledger transactions for exchange adjustment.
+
+15. Press CTRL+S or close the form.
+
+16. In the **Exchange adjustment** form, click **Transactions** to open the **Customer transactions** form to view the resulting customer transactions for exchange adjustment.
+
+17. Press CTRL+S or close the form.
+
+18. In the **Exchange adjustment** form, click **Simulation** to open the **Customer - Exchange adjustment simulation** form.
+    
+
+    > [!NOTE]
+    > This button is available only if you select <STRONG>Standard</STRONG> in the <STRONG>General ledger parameters</STRONG> form, in the <STRONG>Calculation method</STRONG> field on the <STRONG>Ledger</STRONG> tab.
+
+
+
+19. In the **Method** field, select a method for exchange adjustment.
+
+20. In the **Considered date** field, select the voucher posting date.
+
+21. In the **Date of rate** field, select the exchange date.
+
+22. Click **Select** to define the customer account, currency, and fixed rate.
+
+23. Click **OK** to display the customer transaction details in the **Customer - Exchange adjustment simulation** form.
+
+24. Click **Parameters** to specify the report output.
+
+25. Click **OK** to generate the **Exchange adjustment simulation** report.
+
 ## Set up amount difference parameters for exchange rates 
 
 An original facture can be corrected if the currency values change during the shipment of goods. After the facture is corrected, the company verifies that the sum of the correction is equal to the sum of the amount difference. An amount difference facture is generated when a purchase or sales transaction is settled under the following conditions:
@@ -338,87 +421,6 @@ Use the following procedures to create and link an amount difference facture to 
 10. Set the **Included only** option to **Yes** to print the original facture with only the selected amount difference factures. If you set this option to **No**, all amount difference factures are printed with the original facture.
 
 
-## Calculate the exchange rate difference for a customer 
 
-
-You can use the **Exchange adjustment** form to calculate the exchange rate difference for a customer. The exchange adjustment is calculated at the end of a period according to the rate specified at the period end date.
-
-1.  Click **Accounts receivable** \> **Periodic** \> **Foreign currency revaluation**.
-
-2.  In the **Method** field, select the **Standard** method.
-
-3.  In the **Considered date** field, select the date to adjust the open transaction. The same date is used to post the adjusted transaction.
-
-4.  In the **Date of rate** field, select the date that determines the exchange rate to be used to revalue the voucher.
-
-5.  In the **Transaction text** field, enter the text that describes the exchange adjustment transaction.
-    
-
-    > [!NOTE]
-    > If this field is left blank, then it is automatically filled with the standard text for exchange rate correction, and the number of the revaluated document.
-
-
-
-6.  In the **Notes** field, enter any additional information about the transaction.
-
-7.  In the **Use posting profile from** field, select the posting profile for the transaction from the following options:
-    
-      - **Posting** − The profile of the posted open transaction is used for the exchange adjustment.
-    
-      - **Select** − The profile selected in the **Posting profile** field is used for the exchange adjustment.
-
-8.  In the **Posting profile** field, select the posting profile to be used.
-    
-
-    > [!NOTE]
-    > If you select a posting profile in the <STRONG>Use posting profile from</STRONG> field, the exchange adjustment transaction is based on the posting profile in that field.
-
-
-
-9.  In the **Dimension** field, select the dimensions that are posted to the exchange adjustment transactions from the following options:
-    
-      - **None** – In the exchange adjustment voucher, the line dimension is not dependent on the dimension in the original voucher.
-    
-      - **Table** – In the exchange adjustment voucher, the line dimension is inherited from the dimension of the customer account.
-    
-      - **Posting** – In the exchange adjustment voucher, the line dimension is inherited from the dimension in the original voucher.
-
-10. Set the **Print** option to **Yes** to print the report.
-
-11. Click **OK** to open the **Customer – Exchange adjustment** form.
-
-12. Click **Select** to specify the criteria for exchange adjustment, if required.
-
-13. Click **OK** to revalue the selected transaction.
-
-14. In the **Exchange adjustment** form, click **Voucher** to open the **Voucher transactions** form to view the resulting ledger transactions for exchange adjustment.
-
-15. Press CTRL+S or close the form.
-
-16. In the **Exchange adjustment** form, click **Transactions** to open the **Customer transactions** form to view the resulting customer transactions for exchange adjustment.
-
-17. Press CTRL+S or close the form.
-
-18. In the **Exchange adjustment** form, click **Simulation** to open the **Customer - Exchange adjustment simulation** form.
-    
-
-    > [!NOTE]
-    > This button is available only if you select <STRONG>Standard</STRONG> in the <STRONG>General ledger parameters</STRONG> form, in the <STRONG>Calculation method</STRONG> field on the <STRONG>Ledger</STRONG> tab.
-
-
-
-19. In the **Method** field, select a method for exchange adjustment.
-
-20. In the **Considered date** field, select the voucher posting date.
-
-21. In the **Date of rate** field, select the exchange date.
-
-22. Click **Select** to define the customer account, currency, and fixed rate.
-
-23. Click **OK** to display the customer transaction details in the **Customer - Exchange adjustment simulation** form.
-
-24. Click **Parameters** to specify the report output.
-
-25. Click **OK** to generate the **Exchange adjustment simulation** report.
 
 
