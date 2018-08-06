@@ -33,28 +33,28 @@ ms.dyn365.ops.version: 8.1
 Use the **Currency revaluation accounts** form to set up the loss or gain calculation for currency exchange.
 
 1.  Click **General ledger** \> **Setup** \> **Currency** \> **Currency parameters**.
+3.  In the **Legal entities** field, select a company.
+2.  Set the **Activate parameters** option to **Yes** to activate the Russian revaluation parameters for the specified currency.
 
-2.  In the **Legal entities** field, select a company.
+4.  On the **General** FastTab, in the grid, select the main accounts to post the exchange rate profits or losses to.
 
-3.  On the **General** FastTab, in the **Ledger posting** grid, select the main accounts to post the exchange rate profits or losses to.
+5.  On the **Sales/customers** FastTab, in the grid, select the main accounts to post the exchange rates profits or losses to.
 
-4.  On the **Sales/customers** FastTab, in the **Customer posting** grid, select the main accounts to post the exchange rates profits or losses to.
+6.  In the **Expense code** field, select the expense code that corresponds to the transaction for an exchange rate adjustment that occurs when transactions are settled for a customer.
 
-5.  In the **Expense code** field, select the expense code that corresponds to the transaction for an exchange rate adjustment that occurs when transactions are settled for a customer. You can settle the transaction when the exchange rate adjustment is a loss.
+7.  In the **Revenue code** field, select the revenue code that corresponds to the transaction for an exchange rate adjustment that occurs when transactions are settled for a customer.
 
-6.  In the **Revenue code** field, select the revenue code that corresponds to the transaction for an exchange rate adjustment that occurs when transactions are settled for a customer. You can settle the transaction when the exchange rate adjustment is a profit.
+8.  On the **Purchases/Vendors** FastTab, in the grid, select the main accounts for vendor posting.
 
-7.  On the **Purchases/Vendors** FastTab, in the **Vendor posting** grid, select the main accounts for vendor posting.
+9.  In the **Revenue code (currency conversion)** field, select the revenue code for a currency conversion transaction if the exchange adjustment is a profit.
 
-8.  In the **Revenue code (currency conversion)** field, select the revenue code for a currency conversion transaction if the exchange adjustment is a profit.
+10.  In the **Expense code (currency conversion)** field, select the revenue code for a currency conversion transaction if the exchange adjustment is a loss.
 
-9.  In the **Expense code (currency conversion)** field, select the revenue code for a currency conversion transaction if the exchange adjustment is a loss.
+11. On the **Purchases/Advance holders** FastTab, select the relevant main accounts for advance holder posting.
 
-10. On the **Purchases/Advance holders** FastTab, select the relevant main accounts for advance holder posting.
+12. In the **Expense code** field, select the expense code that corresponds to the transaction for an exchange rate adjustment that occurs when transactions are settled for an advance holder. 
 
-11. In the **Expense code** field, select the expense code that corresponds to the transaction for an exchange rate adjustment that occurs when transactions are settled for an advance holder. You can settle the transaction when the exchange rate adjustment is a loss.
-
-12. In the **Revenue code** field, select the revenue code that corresponds to the transaction for an exchange rate adjustment that occurs when transactions are settled for an advance holder. You can settle the transaction when the exchange rate adjustment is a profit.
+13. In the **Revenue code** field, select the revenue code that corresponds to the transaction for an exchange rate adjustment that occurs when transactions are settled for an advance holder. Y
 
 
 ## Set up amount difference parameters for exchange rates 
@@ -75,11 +75,9 @@ Use this procedure to set up parameters for amount difference for exchange rates
 
 1.  Click **General ledger** \> **Setup** \> **Currency** \> **Currency parameters**.
 
-2.  Select the **Activate parameters** check box to activate the Russian revaluation parameters for the specified currency.
+2.  On the **General** FastTab, set the **Amount difference in tax accounting before 01.01.2015** option to **Yes** to take amount difference into account in the calculation of tax accounting registers.
 
-3.  On the **General** FastTab, select the **Amount difference in tax accounting** check box to take amount difference into account in the calculation of tax accounting registers.
-
-4.  On the **Sales/customers** FastTab, in the **Expense code** field, select the expense code to use as a tax dimension for the exchange adjustment transaction if the exchange adjustment is a loss.
+3.  On the **Sales/customers** FastTab, in the **Expense code** field, select the expense code to use as a tax dimension for the exchange adjustment transaction if the exchange adjustment is a loss.
     
 
     > [!NOTE]
@@ -87,7 +85,7 @@ Use this procedure to set up parameters for amount difference for exchange rates
 
 
 
-5.  The settlement transactions may cause exchange adjustment losses and profits. In the **Main account** field, select the main account for the **Realized loss** or **Realized gain** account and the **Unrealized loss** or **Unrealized gain** account that these exchange adjustment losses and profits are posted to.
+4.  The settlement transactions may cause exchange adjustment losses and profits. In the **Main account** field, select the main account for the **Realized loss** or **Realized gain** account and the **Unrealized loss** or **Unrealized gain** account that these exchange adjustment losses and profits are posted to.
     
 
     > [!NOTE]
@@ -95,9 +93,9 @@ Use this procedure to set up parameters for amount difference for exchange rates
 
 
 
-6.  In the **Customer tax dimension** field group, in the **Revenue code** field, select the revenue code for the exchange adjustment transaction if the exchange adjustment is a profit.
+5.  In the **Customer tax dimension** field group, in the **Revenue code** field, select the revenue code for the exchange adjustment transaction if the exchange adjustment is a profit.
 
-7.  In the **Sales taxes** field, select **Tax** to specify whether the realized profit or loss of purchase tax is subject to VAT.
+6.  In the **Sales taxes** field, select **Tax** to specify whether the realized profit or loss of purchase tax is subject to VAT.
     
 
     > [!NOTE]
@@ -105,7 +103,7 @@ Use this procedure to set up parameters for amount difference for exchange rates
 
 
 
-8.  On the **Purchases/Vendors** FastTab, in the **Expense code** field, select the expense code to use as a tax dimension for the amount difference transaction if the amount difference is a loss.
+7.  On the **Purchases/Vendors** FastTab, in the **Expense code** field, select the expense code to use as a tax dimension for the amount difference transaction if the amount difference is a loss.
     
 
     > [!NOTE]
@@ -113,9 +111,9 @@ Use this procedure to set up parameters for amount difference for exchange rates
 
 
 
-9.  In the **Revenue code** field, select the revenue code to use for the transaction if the amount difference that the settlement produces is a profit.
+8.  In the **Revenue code** field, select the revenue code to use for the transaction if the amount difference that the settlement produces is a profit.
 
-10. In the **Sales taxes** field, select **Tax** to specify whether the realized profit or loss of purchase tax is subject to VAT.
+9. In the **Sales taxes** field, select **Tax** to specify whether the realized profit or loss of purchase tax is subject to VAT.
     
 
     > [!NOTE]
@@ -123,7 +121,7 @@ Use this procedure to set up parameters for amount difference for exchange rates
 
 
 
-11. In the **Main account** fields, select the ledger account that the exchange adjustment transactions for losses and profits are posted to.
+10. In the **Main account** fields, select the ledger account that the exchange adjustment transactions for losses and profits are posted to.
     
 
     > [!NOTE]
@@ -142,9 +140,9 @@ Use the **Accounts payable parameters** form to set up accounts payable paramete
 
 1.  Click **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 
-2.  Click the **Ledger and sales tax** link.
+2.  Click the **Ledger and sales tax** tab.
 
-3.  On the **Purchase book** FastTab, select the **Amount difference in additional list** check box to include the amount differences in an additional list in the purchase book.
+3.  On the **Purchase book** FastTab, set the **Amount difference in additional list** option to **Yes** to include the amount differences in an additional list in the purchase book.
 
 ## Set up general ledger parameters for exchange adjustment 
 
@@ -154,7 +152,7 @@ Use this procedure to set up the parameters for exchange adjustments of advance 
 
 2.  In the **Foreign currency revaluation** field group, in the **Calculation method** field, select **Period grand total** as the calculation method for exchange differences..
 
-3.  Select the **Advance revaluation cancelation** check box to cancel exchange adjustment during advance settlement.
+3.  Set the **Advance revaluation cancelation** option to **Yes** to cancel exchange adjustment during advance settlement.
 
 ## Amount difference factures for sales and purchase orders 
 
@@ -262,7 +260,7 @@ Use the following procedures to create and link an amount difference facture to 
 
 7.  Click **Functions** \> **Settlement** to open the **Settle open transactions** form.
 
-8.  Select the **Mark** check box to mark the sales invoice line to be settled.
+8.  Set the **Mark** option to **Yes** to mark the sales invoice line to be settled.
 
 9.  Close the form.
 
@@ -282,7 +280,7 @@ Use the following procedures to create and link an amount difference facture to 
 
 
 
-3.  In the lower pane, select the **To facture** check box to mark the facture to be updated.
+3.  In the lower pane, set the **To facture** option to **Yes** to mark the facture to be updated.
 
 4.  Click **Posting** \> **Update** to update the facture with the amount difference.
 
@@ -298,11 +296,11 @@ Use the following procedures to create and link an amount difference facture to 
 
 
 
-8.  Select the **Include in book** check box to update the amount difference facture in the sales book.
+8.  Set the **Include in book** option to **Yes** to update the amount difference facture in the sales book.
 
 9.  Click **Print**.
 
-10. Select the **Included only** check box to print the original facture with only the selected amount difference factures. If you clear this check box, all amount difference factures are printed with the original facture.
+10. Set the **Included only** option to **Yes** to print the original facture with only the selected amount difference factures. If you set this option to **No**, all amount difference factures are printed with the original facture.
 
 
 ## Calculate the exchange rate difference for a customer 
@@ -350,7 +348,7 @@ You can use the **Exchange adjustment** form to calculate the exchange rate diff
     
       - **Posting** – In the exchange adjustment voucher, the line dimension is inherited from the dimension in the original voucher.
 
-10. Select the **Print** check box to print the report.
+10. Set the **Print** option to **Yes** to print the report.
 
 11. Click **OK** to open the **Customer – Exchange adjustment** form.
 
@@ -398,11 +396,11 @@ Use this procedure to settle partial payment transactions for a customer. You ca
 
 3.  Click **Mark invoice lines** to open the **Mark invoice lines** form.
 
-4.  Select the **Mark** check box to mark the transaction line for settlement.
+4.  Set the **Mark** option to **Yes** to mark the transaction line for settlement.
     
 
     > [!NOTE]
-    > The <STRONG>Mark lines on free text invoices and interest notes</STRONG> check box must be selected on the <STRONG>Settlement</STRONG> link in the <STRONG>Accounts receivable parameters</STRONG> form.
+    > The <STRONG>Mark lines on free text invoices and interest notes</STRONG> check box must be selected on the <STRONG>Settlement</STRONG> tab in the <STRONG>Accounts receivable parameters</STRONG> form.
 
 
 
