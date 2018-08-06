@@ -161,7 +161,7 @@ You can use the **Foreign currency revaluation** form to calculate the exchange 
 
 17. Press CTRL+S or close the form.
 
-18. In the **Foreign currency revaluation** form, click **Simulation** to open the **Customer - Exchange adjustment simulation** form.
+18. In the **Foreign currency revaluation** form, click **Simulation** to open the **Simulation** form.
     
 
     > [!NOTE]
@@ -177,11 +177,11 @@ You can use the **Foreign currency revaluation** form to calculate the exchange 
 
 22. Click **Select** to define the customer account, currency, and fixed rate.
 
-23. Click **OK** to display the customer transaction details in the **Customer - Exchange adjustment simulation** form.
+23. Click **OK** to display the customer transaction details in the **Simulation** form.
 
-24. Click **Parameters** to specify the report output.
+24. Click **Distribution** to specify the report output.
 
-25. Click **OK** to generate the **Exchange adjustment simulation** report.
+25. Click **OK** to generate the **Customer - foreign currency revaluation simulation** report.
 
 ## Set up amount difference parameters for exchange rates 
 
