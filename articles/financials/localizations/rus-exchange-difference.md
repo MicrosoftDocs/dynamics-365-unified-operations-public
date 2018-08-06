@@ -66,6 +66,40 @@ Use this procedure to set up the parameters for exchange adjustments of advance 
 
 3.  Set the **Advance revaluation cancelation** option to **Yes** to cancel exchange adjustment during advance settlement.
 
+## Settle partial payments for customers 
+
+Use this procedure to settle partial payment transactions for a customer. You can settle a partial payment against a particular invoice line, and you can settle open transactions by using a periodic settlement for customers. Exchange adjustment factures are created for the invoice lines that are settled.
+
+1.  Click **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**.
+
+2.  Create or select a payment journal line, and then click **Lines** to open the **Customer payments** form. 
+
+3.  Click **Settle transactions** to open the **Settle transactions** form.
+
+4.  Select the **Mark** check box to mark the transaction line for settlement.
+    
+
+    > [!NOTE]
+    > The <STRONG>Mark lines on free text invoices and interest notes</STRONG> check box must be selected on the <STRONG>Settlement</STRONG> tab in the <STRONG>Accounts receivable parameters</STRONG> form.
+
+
+
+5.  In the **Amount to settle** field, view or modify the partial payment that has to be settled.
+
+6.  Click **OK** to settle the partial settlement for the customer.
+
+7.  Click **Post** \> **Post** to post the customer payment journal and settle the payment amount.
+    
+
+    > [!NOTE]
+    > To verify that the exchange adjustment facture that is created has the same settled invoice amount in the <STRONG>Facture journal</STRONG> form, select the facture.
+
+
+
+8.  Click **Accounts receivable** \> **Periodic** \> **Sales book** \> **Sales books journal**.
+
+9.  Create a new sales book that includes the settled facture amount and the exchange adjustment facture. You can verify that the invoice facture is included in the sales book for the settled amount.
+
 ## Set up amount difference parameters for exchange rates 
 
 An original facture can be corrected if the currency values change during the shipment of goods. After the facture is corrected, the company verifies that the sum of the correction is equal to the sum of the amount difference. An amount difference facture is generated when a purchase or sales transaction is settled under the following conditions:
@@ -387,36 +421,4 @@ You can use the **Exchange adjustment** form to calculate the exchange rate diff
 
 25. Click **OK** to generate the **Exchange adjustment simulation** report.
 
-## Settle partial payments for customers 
 
-Use this procedure to settle partial payment transactions for a customer. You can settle a partial payment against a particular invoice line, and you can settle open transactions by using a periodic settlement for customers. Exchange adjustment factures are created for the invoice lines that are settled.
-
-1.  Click **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**.
-
-2.  Create or select a payment journal line, and then click **Lines** to open the **Journal voucher** form. 
-
-3.  Click **Mark invoice lines** to open the **Mark invoice lines** form.
-
-4.  Set the **Mark** option to **Yes** to mark the transaction line for settlement.
-    
-
-    > [!NOTE]
-    > The <STRONG>Mark lines on free text invoices and interest notes</STRONG> check box must be selected on the <STRONG>Settlement</STRONG> tab in the <STRONG>Accounts receivable parameters</STRONG> form.
-
-
-
-5.  In the **Amount to settle** field, view or modify the partial payment that has to be settled.
-
-6.  Click **OK** to settle the partial settlement for the customer.
-
-7.  Click **Post** \> **Post** to post the customer payment journal and settle the payment amount.
-    
-
-    > [!NOTE]
-    > To verify that the exchange adjustment facture that is created has the same settled invoice amount in the <STRONG>Facture journal</STRONG> form, select the facture.
-
-
-
-8.  Click **Accounts receivable** \> **Periodic** \> **Sales book** \> **Sales books journal**.
-
-9.  Create a new sales book that includes the settled facture amount and the exchange adjustment facture. You can verify that the invoice facture is included in the sales book for the settled amount.
