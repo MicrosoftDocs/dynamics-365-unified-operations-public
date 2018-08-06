@@ -378,7 +378,7 @@ Use the following procedures to create and link an amount difference facture to 
 
 7.  Click **Functions** \> **Settlement** to open the **Settle open transactions** form.
 
-8.  Set the **Mark** option to **Yes** to mark the sales invoice line to be settled.
+8.  Select the **Mark** check box to mark the sales invoice line to be settled.
 
 9.  Close the form.
 
@@ -398,7 +398,7 @@ Use the following procedures to create and link an amount difference facture to 
 
 
 
-3.  In the lower pane, set the **To facture** option to **Yes** to mark the facture to be updated.
+3.  In the lower pane, select the **To facture** check box to mark the facture to be updated.
 
 4.  Click **Posting** \> **Update** to update the facture with the amount difference.
 
@@ -414,7 +414,7 @@ Use the following procedures to create and link an amount difference facture to 
 
 
 
-8.  Set the **Include in book** option to **Yes** to update the amount difference facture in the sales book.
+8.  Select the **Include in book** check box to update the amount difference facture in the sales book.
 
 9.  Click **Print**.
 
