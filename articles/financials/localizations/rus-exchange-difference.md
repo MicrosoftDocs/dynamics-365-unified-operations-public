@@ -103,17 +103,19 @@ Use this procedure to settle partial payment transactions for a customer. You ca
 ## Calculate the exchange rate difference for a customer 
 
 
-You can use the **Exchange adjustment** form to calculate the exchange rate difference for a customer. The exchange adjustment is calculated at the end of a period according to the rate specified at the period end date.
+You can use the **Foreign currency revaluation** form to calculate the exchange rate difference for a customer. The exchange adjustment is calculated at the end of a period according to the rate specified at the period end date.
 
-1.  Click **Accounts receivable** \> **Periodic** \> **Foreign currency revaluation**.
+1.  Click **Accounts receivable** \> **Periodic tasks** \> **Foreign currency revaluation**.
 
-2.  In the **Method** field, select the **Standard** method.
+2.  Click **Foreign currency revaluation** buuton to create a new foreign currency revaluation for accounting period
 
-3.  In the **Considered date** field, select the date to adjust the open transaction. The same date is used to post the adjusted transaction.
+3.  In the **Method** field, select the **Standard** method.
 
-4.  In the **Date of rate** field, select the date that determines the exchange rate to be used to revalue the voucher.
+4.  In the **Considered date** field, select the date to adjust the open transaction. The same date is used to post the adjusted transaction.
 
-5.  In the **Transaction text** field, enter the text that describes the exchange adjustment transaction.
+5.  In the **Date of rate** field, select the date that determines the exchange rate to be used to revalue the voucher.
+
+6.  In the **Transaction text** field, enter the text that describes the exchange adjustment transaction.
     
 
     > [!NOTE]
@@ -121,15 +123,15 @@ You can use the **Exchange adjustment** form to calculate the exchange rate diff
 
 
 
-6.  In the **Notes** field, enter any additional information about the transaction.
+7.  In the **Notes** field, enter any additional information about the transaction.
 
-7.  In the **Use posting profile from** field, select the posting profile for the transaction from the following options:
+8.  In the **Use posting profile from** field, select the posting profile for the transaction from the following options:
     
       - **Posting** − The profile of the posted open transaction is used for the exchange adjustment.
     
       - **Select** − The profile selected in the **Posting profile** field is used for the exchange adjustment.
 
-8.  In the **Posting profile** field, select the posting profile to be used.
+9.  In the **Posting profile** field, select the posting profile to be used.
     
 
     > [!NOTE]
@@ -137,7 +139,7 @@ You can use the **Exchange adjustment** form to calculate the exchange rate diff
 
 
 
-9.  In the **Dimension** field, select the dimensions that are posted to the exchange adjustment transactions from the following options:
+10.  In the **Dimension** field, select the dimensions that are posted to the exchange adjustment transactions from the following options:
     
       - **None** – In the exchange adjustment voucher, the line dimension is not dependent on the dimension in the original voucher.
     
@@ -145,23 +147,21 @@ You can use the **Exchange adjustment** form to calculate the exchange rate diff
     
       - **Posting** – In the exchange adjustment voucher, the line dimension is inherited from the dimension in the original voucher.
 
-10. Set the **Print** option to **Yes** to print the report.
+11. Set the **Print** option to **Yes** to print the report.
 
-11. Click **OK** to open the **Customer – Exchange adjustment** form.
-
-12. Click **Select** to specify the criteria for exchange adjustment, if required.
+12. Click **Records to include** to specify the criteria for exchange adjustment, if required.
 
 13. Click **OK** to revalue the selected transaction.
 
-14. In the **Exchange adjustment** form, click **Voucher** to open the **Voucher transactions** form to view the resulting ledger transactions for exchange adjustment.
+14. In the **Foreign currency revaluation** form, click **Voucher** to open the **Voucher transactions** form to view the resulting ledger transactions for exchange adjustment.
 
 15. Press CTRL+S or close the form.
 
-16. In the **Exchange adjustment** form, click **Transactions** to open the **Customer transactions** form to view the resulting customer transactions for exchange adjustment.
+16. In the **Foreign currency revaluation** form, click **Transactions** to open the **Customer transactions** form to view the resulting customer transactions for exchange adjustment.
 
 17. Press CTRL+S or close the form.
 
-18. In the **Exchange adjustment** form, click **Simulation** to open the **Customer - Exchange adjustment simulation** form.
+18. In the **Foreign currency revaluation** form, click **Simulation** to open the **Customer - Exchange adjustment simulation** form.
     
 
     > [!NOTE]
