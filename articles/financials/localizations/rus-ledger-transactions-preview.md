@@ -1,8 +1,7 @@
 ---
-
 # required metadata
 title: Preview ledger transactions
-description: Tihs topic provides information about how to preview ledger transactions in Microsoft Dynamics 365 for Finance and Operations for Russia. 
+description: This topic explains how to preview ledger transactions in Microsoft Dynamics 365 for Finance and Operations for Russia. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -28,33 +27,29 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Preview ledger transactions 
+# Preview ledger transactions
 
-You can preview the ledger transactions before posting the ledger journal.
+[!include [banner](../includes/banner.md)]
 
-1.  Click **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**.
-    
+You can preview ledger transactions before you post the ledger journal.
+
+1. Select **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**.
+
     −or−
-    
-    Click **Accounts payable** \> **Journals** \> **Payments** \> **Payment journal**.
-    
+
+    Select **Accounts payable** \> **Journals** \> **Payments** \> **Payment journal**.
+
     −or−
-    
-    Click **General ledger** \> **Journals** \> **General journal**.
 
-2.  Press CTRL+N to create a new journal.
+    Select **General ledger** \> **Journals** \> **General journal**.
 
-3.  Click **Lines** to create a journal line in the **Journal voucher** page.
+2. Press Ctrl+N to create a journal.
+3. On the **Journal voucher** page, select **Lines** to create a journal line.
+4. Press Ctrl+S, or close the **Journal voucher** page.
+5. On the **Journal** page, select an open journal.
+6. Select **Post**, and then select **Preview journal transactions** to preview the ledger transaction. The lower pane shows ledger transactions, and the upper pane shows journal lines. The vouchers that are shown on the left are used in the journal.
 
-4.  Press CTRL+S or close the **Journal voucher** page.
-
-5.  Select an open journal in the **Journal** page.
-
-6.  Click **Post** and select the **Preview journal transactions** menu item to preview the ledger transaction. The ledger transactions are displayed in the lower pane, and the journal lines are shown in the upper pane. The vouchers displayed on the left are used in the journal.
-
-7.  Click **Print** to print a copy of the ledger transactions.
-    
+7. Select **Print** to print a copy of the ledger transactions.
 
     > [!NOTE]
-    > You can include only journal lines, only transactions, or both journal lines and transactions in the report.
-
+    > You can include only journal lines, only transactions, or both journal lines and transactions on the report.
