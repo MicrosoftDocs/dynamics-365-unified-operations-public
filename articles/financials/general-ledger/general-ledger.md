@@ -3,7 +3,7 @@
 
 title: General ledger and Financial reporting home page
 description: Use General ledger to define and manage the legal entity’s financial records.  
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: GeneralJournalEntryWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65431
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

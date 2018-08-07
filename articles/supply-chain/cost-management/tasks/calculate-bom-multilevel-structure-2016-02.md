@@ -3,7 +3,7 @@
  
 title: Calculate a BOM by using a multilevel structure (February 2016 only)
 description: This procedure shows how to calculate the cost of a finished product by using multilevel explosion that is based in the Costing sheet. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 02/07/2017
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

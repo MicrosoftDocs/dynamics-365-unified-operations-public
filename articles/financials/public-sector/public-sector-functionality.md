@@ -3,7 +3,7 @@
 
 title: Public sector home page
 description: Microsoft Dynamics 365 for Finance and Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
@@ -17,14 +17,14 @@ ms.search.form: SysConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20691
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

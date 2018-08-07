@@ -3,7 +3,7 @@
 
 title: General journal processing
 description: This articles describes capabilities in Microsoft Dynamics 365 for Finance and Operations that can help make general journal processing easier, and that can also help guarantee that correct data is captured and internal control isn't compromised.  
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: LedgerJournalSetup, LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15721
