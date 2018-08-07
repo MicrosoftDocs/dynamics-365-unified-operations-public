@@ -2,7 +2,7 @@
 # required metadata
 
 title: On-premises diagnostics
-description: This topic provides information about how to expose the telemetry data for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations. 
+description: This topic provides information about how to expose the diagnostic data for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations. 
 author: sarvanisathish
 manager: AnnBe
 ms.date: 07/06/2018
@@ -33,22 +33,38 @@ ms.dyn365.ops.version: Platform Update 12
 
 [!include [banner](../includes/banner.md)]
 
-## Telemetry guidelines
-To diagnose the deployment and execution of Microsoft Dynamics 365 for Finance and Operations, you must have access to telemetry. For a cloud deployment, Microsoft stores and monitors the telemetry from services to help keep the environment healthy. For an on-premises deployment, the customer is responsible for this task.
+The Microsoft Dynamics 365 for Finance and Operations team monitors the health and performance of the Azure Services that provide functionality for our cloud-based customers by using state-of-the-art Azure diagnostic tools. For customers who have implemented Finance and Operations on-premises and would like to have the ability to monitor the health and performance of their on-premises solution, there are several third-party offerings available. 
 
-You can select the telemetry data store and query tool that you prefer to use. However, at a minimum, the tool should perform the following tasks:
+This topic describes the setup and configuration of Elastic Stack, a third-party product, and one of many choices that may provide the diagnostic monitoring your on-premises solution requires.
 
-- The telemetry store should be able to store 30 days' worth of telemetry data.
-- The telemetry events should be stored in a centralized location, so that support engineers don't have to switch between multiple machines to find events that are relevant to an issue.
-- The telemetry events should be discoverable based on event type and event data.
-- The telemetry event data (in XML format) should be deserialized so that the event data can be queried on and traversed.
+When you consider a diagnostic solution, consider following fundamentals for your implementation:
+
+- Your diagnostic system should be able to collect and store 30 days worth of diagnostic information.
+- Your diagnostic repository should be set up in a central location that is sharable among many client computers.
+- Create structured diagnostics events, including event type, classification and data.
+- Events stored in raw text (deserialized) can be easily queried and searched.
+- Avoid storing sensitive or personal data in events.
+
+> [!NOTE]
+> By default, communication in an Elastic Stack cluster is not sent over HTTPS. Don't set up the Elastic Stack unless you've considered the risks, and prepared or implemented mitigations for those risks. The paid version of X-Pack can be used to encrypt communication in the Elastic Stack. For setup information, see Setting up TLS on a cluster. There is also an open source Elasticsearch plug-in. Although Microsoft hasn't tested this plug-in, according to the documentation, it can enable HTTPS, and Microsoft recommends that you always utilize encrypted communication using HTTPs, VPN or another secure, encrypted protocol. Many industry certifications and compliance laws require the use of encrypted transmission if your content includes end user, customer, personal or sensitive data.
+
+
+## Diagnostic data guidelines
+To diagnose the deployment and execution of Microsoft Dynamics 365 for Finance and Operations, you must have access to diagnoatic data. For a cloud deployment, Microsoft stores and monitors the diagnostic data from services to help keep the environment healthy. For an on-premises deployment, the customer is responsible for this task.
+
+You can select the diagnostic data store and query tool that you prefer to use. However, at a minimum, the tool should perform the following tasks:
+
+- The store should be able to store 30 days' worth of diagnostic data.
+- The events should be stored in a centralized location, so that support engineers don't have to switch between multiple machines to find events that are relevant to an issue.
+- The events should be discoverable based on event type and event data.
+- The event data (in XML format) should be deserialized so that the event data can be queried on and traversed.
 
 ## Elastic Stack example
-To meet the telemetry guidelines that are listed in the previous section, Microsoft tested the Elastic Stack setup. This setup includes the following components:
+To meet the diagnostic data guidelines that are listed in the previous section, Microsoft tested the Elastic Stack setup. This setup includes the following components:
 
 - **Elasticsearch** – For storage, event indexing, and event querying. For more information about Elasticsearch, see the [Elastic website](https://www.elastic.co/products/elasticsearch).
 - **Logstash** – For load distribution and event data transformation.
-- **Winlogbeat** – For telemetry collection.
+- **Winlogbeat** – For diagnostic data collection.
 - **Kibana** – An interface for querying the data that is stored in Elasticsearch.
 
 > [!NOTE]
@@ -86,7 +102,7 @@ For its tests, Microsoft used the following setup for a small to medium-sized Fi
 ### Elasticsearch
 The installation of Elasticsearch is fairly straightforward. For its tests, Microsoft downloaded the [Microsoft Windows Installer (MSI) file](https://www.elastic.co/downloads/elasticsearch) onto the Orchestrator #1 and Orchestrator #2 nodes. Most of the default settings in the installer can be left as is. This section describes the settings that Microsoft changed.
 
-To help guarantee that Elasticsearch starts to run again if the operating system (OS) is restarted, Microsoft installed it as a service on Windows. The installer can be used to set up the service.
+To facilitate Elasticsearch to start running again if the operating system (OS) is restarted, Microsoft installed it as a service on Windows. The installer can be used to set up the service.
 
 On the **Configuration** page of the installer, Microsoft used the same cluster name when it installed each Elasticsearch node in the cluster.
 
@@ -135,7 +151,7 @@ To help guarantee that Logstash runs on startup, we used the Non-Sucking Service
 
 In the tests that Microsoft performed, NSSM had trouble restarting the installed services. Because NSSM wasn't 100-percent reliable for Logstash and Kibana, the service was treated as an OS startup service and little else.
 
-Microsoft created a configuration file for Logstash and put it in [C:\\ELK\\Logstash\\6.2.4\\config](https://aka.ms/ConfigFilesOnPremises). This file performs useful transformations on Finance and Operations telemetry.
+Microsoft created a configuration file for Logstash and put it in [C:\\ELK\\Logstash\\6.2.4\\config](https://aka.ms/ConfigFilesOnPremises). This file performs useful transformations on Finance and Operations diagnostics.
 
 To make the configuration work for your setup, you must change the **hosts** fields in the **output** section so that they point to the Elasticsearch nodes in your cluster. For example, change **hosts** to **\["ORCH1:9200", "ORCH2:9200"\]**.
 
@@ -157,7 +173,7 @@ powershell.exe -ExecutionPolicy Bypass -File C:\ELK\Winlogbeat\install-service-w
 ```
 
 ### Kibana
-Kibana provides the interface to query the telemetry data in Elasticsearch.
+Kibana provides the interface to query the diagnostic data in Elasticsearch.
 
 Microsoft downloaded Kibana to C:\\ELK\\Kibana and configured the kibana.yml file in the following manner.
 
@@ -178,7 +194,7 @@ Microsoft ran Kibana as a service in the same manner as Logstash, so that Kibana
 If you want users to browse Kibana on your network, remember to open the port for Kibana. The default port is 5601.
 
 #### Example queries on the Discover tab in Kibana
-The following sample queries can help you start probing the telemetry data. If you require something more than the examples show, you can try one of the following queries:
+The following sample queries can help you start probing the diagnostic data. If you require something more than the examples show, you can try one of the following queries:
 
 - **Find slow database queries:** Enter **slow** in the search field to find events that have the word "slow" somewhere in the event data. If you want to be more precise, you can find events that have a task name of **AosDatabaseSlowQuery** and then enter **TaskName:AosDatabaseSlowQuery** in the search field.
 - **Find recent exceptions:** Enter **exception** in the search field to find events that have either thrown an exception, or handled an exception and logged it. In the upper-right corner of Kibana, you can select the time frame that the search should be limited to. The time frame that you set there is persisted between tabs. Therefore, the data on the **Visualize** tab will reflect the selected time frame.
