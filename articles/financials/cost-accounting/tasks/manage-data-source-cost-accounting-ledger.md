@@ -3,7 +3,7 @@
  
 title: Manage a data source for the cost accounting ledger
 description: Use this procedure to manage the general ledger data source for a cost accounting ledger. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

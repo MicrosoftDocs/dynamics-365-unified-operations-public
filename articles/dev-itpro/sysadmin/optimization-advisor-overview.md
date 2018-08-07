@@ -17,7 +17,7 @@ ms.search.form: SelfHealingWorkspace
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
