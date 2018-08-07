@@ -175,13 +175,11 @@ To select the appropriate data center (DC) for Production, consider the latency 
 ![Environment planning process flow](./media/environment-planning-1-process-flow.png) 
 
 
-
 ## Additional environments
 
 Additional environments may be purchased as add-ons or deployed as cloud-hosted environments. Below you can find a *sample* overview of standard and additional environments based on complexity of the Microsoft Dynamics 365 for Finance and Operations implementation.
 
 ![Environment purpose and complexity](./media/environment-planning-2-purpose-complexity-matrix.png)
-[![Environment purpose and complexity](./media/environment-planning-2-purpose-complexity-matrix.png)] (./media/environment-planning-2-purpose-complexity-matrix.png)
 
 > [!IMPORTANT]
 > Always deploy environments using an **unnamed** account (such as *dynadmin@customer.com*). Assign an owner to the environments who will be responsible for their status and maintenance (if applicable). Get an additional Tier-2+ environment post go-live to support Production if you plan to work on new releases
