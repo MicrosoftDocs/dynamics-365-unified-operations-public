@@ -47,7 +47,7 @@ In addition to the existing capability of generating printable FTI forms by usin
 As part of your customized solution for printable FTI forms, you must create a set of ER configurations.
 
 ### Configure the ER data model
-Your application must include the ER data model configuration that contains a data model that describes the customer invoicing business domain. As a requirement, the name of the data model must be **CustomersInvoicing**. For information about how to design ER data models, see [Design a domain-specific data model for electronic reporting (ER)](../tasks/er-design-domain-specific-data-model-2016-11.md).
+Your application must include the ER data model configuration that contains a data model that describes the customer invoicing business domain. As a requirement, the name of the data model must be **CustomersInvoicing**. For information about how to design ER data models, see [Design a domain-specific data model for electronic reporting (ER)](tasks/er-design-domain-specific-data-model-2016-11.md).
 
 ### Configure the ER model mapping
 Your application must include the ER model mapping for the CustomersInvoicing data model. The model mapping can be in either the ER data model configuration or the ER model mapping configuration. However, the name of the root descriptor of the model mapping must be **FreeTextInvoice**.
@@ -68,7 +68,7 @@ The mapping must contain the following data sources:
 
 The details of the application integration with the ER framework can be found in the **ERPrintMgmtReportFormatSubscriber** class (ER Application Suite integration model) in the source code of the application.
 
-For more information about the design of ER model mappings, see [Define model mapping and select data sources for electronic reporting (ER)](../tasks/er-define-model-mapping-select-data-sources-2016-11.md).
+For more information about the design of ER model mappings, see [Define model mapping and select data sources for electronic reporting (ER)](tasks/er-define-model-mapping-select-data-sources-2016-11.md).
 
 ### Configure the ER format
 In your application instance, you must have the ER format configuration that will be used to generate FTI forms. 
@@ -76,7 +76,7 @@ In your application instance, you must have the ER format configuration that wil
 > [!NOTE]
 > This format configuration must be created for the CustomersInvoicing data model, and it must use the model mapping that has the **FreeTextInvoice** root descriptor.
 
-For information about how to configure ER formats, see [Create a format configuration for electronic reporting (ER)](../tasks/er-format-configuration-2016-11.md). For information about how to design ER formats to generate reports in OpenXML format, see [Design a configuration for generating reports in OpenXML format for electronic reporting (ER)](../tasks/er-design-reports-openxml-2016-11.md).
+For information about how to configure ER formats, see [Create a format configuration for electronic reporting (ER)](tasks/er-format-configuration-2016-11.md). For information about how to design ER formats to generate reports in OpenXML format, see [Design a configuration for generating reports in OpenXML format for electronic reporting (ER)](tasks/er-design-reports-openxml-2016-11.md).
 
 ## Configure print management
 To generate FTI forms by using the ER framework, you can assign ER formats in the same way that you assign SSRS reports. To associate the ER format with all Accounts receivable FTIs, go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup** \> **General** \> **Print management** \> **Free text invoice** \> **Original**. To associate the ER format with a specific customer or invoice, follow these steps.
