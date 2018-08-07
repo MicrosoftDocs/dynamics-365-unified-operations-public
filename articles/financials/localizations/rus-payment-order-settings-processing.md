@@ -1,0 +1,479 @@
+# (RUS) Set up a method of payment 
+
+
+_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+
+The method of payment determines the format that is used for export of payment orders. Within the payment type, you can also set up bridging accounts when reconciliation is being done. In this case, when posting payment journals, the payments are reflected in off-balance Accounts payable and banking operations. After banking reconciliation, these transactions are reversed and reflected in Accounts payable and banking accounts. To link actual accounts with payment types, in most cases, the number of payment types created equals the number of accounts that the company holds.
+
+
+> [!NOTE]
+> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
+
+
+
+1.  Click **Accounts payable** \> **Setup** \> **Payment** \> **Methods of payment**.
+
+2.  Press CTRL+N to create a new line.
+
+3.  In the **Method of payment** field, enter the code for the method of payment.
+
+4.  In the **Description** field, enter a description for the method of payment.
+
+5.  In the **Payment status** field, select the status for the payment line, which indicates the status for posting.
+
+6.  On the **General** tab, in the **Account type** field, select the account type as **Bank**.
+
+7.  In the **Payment account** field, select the bank account for payment.
+
+8.  Select the **Bridging Posting** check box.
+    
+
+    > [!NOTE]
+    > <P>You can enter information in the <STRONG>Bridging account</STRONG> field only after you select the <STRONG>Bridging Posting</STRONG> check box.</P>
+
+
+
+9.  In the **Bridging account** field, select the account number for posting in the ledger.
+
+10. In the **Bank transaction type** field, select the bank transaction type.
+
+11. On the **File formats** tab, click **Setup** to open the **File formats for methods of payment** form.
+
+12. Transfer formats from the **Available** field to the **Selected** field to generate a list of accessible formats for exporting payment orders.
+
+13. Close the form and return to the **File formats** tab in the **Methods of payment** form.
+
+14. In the **Export format** field, select the format for exporting payment orders for the specified method of payment.
+    
+
+    > [!NOTE]
+    > <P>When using the customer-bank, the <STRONG>Export format</STRONG> field should show the class that handles the export of data for the payment journal to an external file in a format that corresponds to the customer-bank of the actual bank.</P>
+
+
+
+15. On the **Payment control** tab, select the control for the method of payment from the following list:
+    
+      - **Payment reference is mandatory** – Checks that the essential details for the payment are filled in.
+    
+      - **Payment note is mandatory** – Checks that the note for the payment is filled in.
+    
+      - **Payment ID is mandatory** – Checks that the ID for the payment is filled in.
+    
+      - **Payment specification is mandatory** – Checks that the payment specification is filled in.
+    
+      - **Check number is mandatory** – Checks that the check number is filled in.
+    
+      - **Offset account has the type bank** – Checks that the type of corresponding account is **Bank**.
+    
+      - **Bank transaction type is mandatory** – Checks that a type of bank operation is selected.
+
+16. Press CTRL+S or close the form.
+
+## See also
+
+[(RUS) Methods of payment (modified form)](https://technet.microsoft.com/en-us/library/jj665379\(v=ax.60\))
+
+  
+**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
+# (RUS) Set up to generate a payment order in rubles 
+
+
+_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+
+
+> [!NOTE]
+> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
+
+
+
+1.  Click Click **Cash and bank management** \> **Common** \> **Bank accounts**. Select a bank account. On the **Action Pane**, click **Edit**.
+
+2.  On the **Currency management** tab, in the **P/O numeration** field, select a number sequence for numbering payment orders in a single account.
+    
+
+    > [!NOTE]
+    > <P>If the number sequence is not set up, the number for the payment order will be retrieved from the Accounts payable parameters setup.</P>
+
+
+
+3.  Press CTRL+S or close the form.
+
+4.  Click **Accounts payable** \> **Setup** \> **Payment** \> **Methods of payment**.
+
+5.  On the **File formats** tab, in the **Export format** field, select **Payment order in RUB** for export of payments.
+    
+
+    > [!WARNING]
+    > <P>For more information, see <A href="rus-set-up-a-method-of-payment.md">(RUS) Set up a method of payment</A></P>
+
+
+
+6.  Press CTRL+S or close the form.
+
+## See also
+
+[(RUS) Bank accounts (modified form)](https://technet.microsoft.com/en-us/library/jj923612\(v=ax.60\))
+
+[(RUS) Generate a payment order in rubles](rus-generate-a-payment-order-in-rubles.md)
+
+[(RUS) Methods of payment (modified form)](https://technet.microsoft.com/en-us/library/jj665379\(v=ax.60\))
+
+  
+**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
+# (RUS) Set up a method of payment for currency transactions 
+
+
+_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+
+Use the **Methods of payment - vendors** form to set up a method of payment for currency transactions.
+
+1.  Click **Accounts payable** \> **Setup** \> **Payment** \> **Methods of payment**.
+
+2.  Press CTRL+N to create a new method of payment.
+
+3.  On the **General** FastTab, in the **Bank transaction type** field, select the type of bank transaction.
+    
+
+    > [!NOTE]
+    > <P>This field is available only when you select <STRONG>Bank</STRONG> in the <STRONG>Account type</STRONG> field.</P>
+
+
+
+4.  In the **Payment account** field, select the ID of the bank account.
+
+5.  On the **File formats** FastTab, click **Setup** to open the **File formats for methods of payment** form.
+
+6.  On the **Export** tab, in the **Available** list, select **Currency transfer order**.
+
+7.  Click **\<** to move the selected export file format to the **Selected** list.
+
+8.  Close the **File formats for methods of payment** form.
+
+9.  In the **Methods of payment - vendors** form, in the **Export format** field, select **Currency transfer order** as the format for the export of payments.
+
+## See also
+
+[(RUS) Methods of payment - vendors (modified form)](https://technet.microsoft.com/en-us/library/jj711469\(v=ax.60\))
+
+[(RUS) Create and post a payment journal for an exchanged currency](rus-create-and-post-a-payment-journal-for-an-exchanged-currency.md)
+
+  
+**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
+# (RUS) Set up an intermediate bank account for a foreign vendor 
+
+
+_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+
+You can use the **Vendor bank accounts** form to set up a foreign bank account for a vendor, so that you can make payments by using payment orders or payment requests. This bank account is registered with the foreign bank that is linked to the vendor account. For more information, see [(RUS) Set up a foreign bank](rus-set-up-a-foreign-bank.md).
+
+You can also set up an intermediate Russian bank account to link to the vendor payments that are made to the foreign bank. You can specify a bank code, an account number, and a Society for Worldwide Interbank Financial Telecommunication (SWIFT) code for the foreign bank that the payments are made to.
+
+1.  Click **Accounts payable** \> **Common** \> **Vendors** \> **All vendors**.
+
+2.  Select the vendor account that is linked to the foreign bank, and then click **Set up** \> **Bank accounts** to open the **Vendor bank accounts** form.
+
+3.  Create a bank account for the vendor.
+
+4.  On the **General** FastTab, in the **Foreign bank** field group, in the **Bank groups** field, select the code of the foreign bank with which the vendor bank account is registered.
+
+5.  In the **Bank account number** field, enter the bank account number of the vendor.
+
+6.  In the **SWIFT** field, enter the SWIFT code of the bank.
+
+## See also
+
+[(RUS) Vendor bank accounts (modified form)](https://technet.microsoft.com/en-us/library/jj711714\(v=ax.60\))
+
+[(RUS) Set up a customer bank account for payment returns from a foreign vendor](rus-set-up-a-customer-bank-account-for-payment-returns-from-a-foreign-vendor.md)
+
+  
+**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
+# (RUS) Generate a payment order in rubles 
+
+
+_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+
+
+> [!NOTE]
+> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
+
+
+
+1.  Click **Accounts payable** \> **Journals** \> **Payments** \> **Payment journal**.
+
+2.  On the **Overview** tab, press CTRL+N to create a new line.
+
+3.  In the **Date** field, select the date of payment.
+
+4.  In the **Account** field, select the vendor account.
+
+5.  In the **Transaction text** field, enter text that describes the transaction.
+
+6.  In the **Debit** field, enter the sum of the payment.
+
+7.  In the **Offset account type** field, select the account type for the selected account.
+
+8.  In the **Offset account** field, select the offset account for the transaction.
+
+9.  In the **Currency** field, select the currency code.
+
+10. In the **Purpose text** field, enter any text that must be reflected in the payment order.
+    
+
+    > [!NOTE]
+    > <P>If you click <STRONG>VAT in payment order</STRONG>, the text, including the VAT amount in the <STRONG>Purpose text</STRONG> field, will be entered.</P>
+
+
+
+11. In the **Method of payment** field, select the method of payment to the vendor.
+
+12. On the **General** tab, in the **Contracts group** field, select the contract group.
+
+13. In the **DVR** field, select the registration number of the contract.
+
+14. In the **Sales tax group** and the **Item sales tax group** fields, select the tax groups for VAT calculation.
+
+15. On the **Bank** tab, in the **Bank transaction type** field, select the transaction type.
+
+16. In the **Account identification** field, select the bank account of the recipient.
+    
+
+    > [!NOTE]
+    > <P>If the payment order is being generated for a legal representative of the vendor, the code must be entered in the <STRONG>Payment documented on</STRONG> field. Along with this, the payment order slip will refer to the bank of the vendor that is specified in the <STRONG>Payment documented on</STRONG> field, but the transaction will be performed for the vendor that is specified in the <STRONG>Account</STRONG> field.</P>
+
+
+
+17. On the **Payment order** tab, in the **Order of payment** field, specify the order of payment.
+
+18. In the **Number status** field, specify the number status of the payment.
+
+19. In the **Origin payment** field, specify the origin of the payment.
+
+20. In the **Payment type** field, specify the type of payment.
+
+21. Click **Functions**, and then select **Generate payments** to open the **Generate payments** form.
+
+22. In the **Method of payment** field, select the method of payment.
+
+23. In the **Export format** field, select **Payment order in RUB**.
+
+24. In the **Bank account** field, select the bank account from which the payment is to be made.
+
+25. Select the **Show format dialog** check box.
+
+26. Click **OK**. The **Payment order setup** form opens.
+
+27. Select the **Document** check box to print the payment document.
+
+28. Select the **Warrant text** check box to print the warrant text.
+
+29. Click **OK**. The payment order is generated, and the payment status of the appropriate payment journal line is changed to **Sent**.
+
+30. Click **Functions**, and then select **Void payment order** to void a payment order from the payment journal lines. The value for the voided payment order in the **Payment status** field is **None** after the voided payment order is deleted from the registry of payment orders.
+
+31. To post a payment journal, click **Post**. A transaction is generated for the bank account, vendor, and accounting transactions to reflect the outgoing payment.
+    
+
+    > [!NOTE]
+    > <P>If the method of payment is <STRONG>Bridging Posting</STRONG>, the payment will be posted to the bridging accounts. You can view the transactions in the <STRONG>Journal voucher</STRONG> form, <STRONG>Bank transactions</STRONG> form, and <STRONG>Vendor</STRONG> form.</P>
+
+    
+    The payment journal can also be used to register an outgoing payment for a cash refund to a customer. In the **Journal voucher** form, select **Customer** in the **Account type** field, the customer code in the **Account** field, and the payment type of the customer in the **Method of payment** field. Click **Accounts receivable** \> **Setup** \> **Payment** \> **Methods of payment**.
+
+32. To reprint a payment order:
+    
+      - Click **Print**, and then click **Print payment order** in the **Journal voucher** form.
+    
+      - Payment orders can also be reprinted from the **Bank transactions** form. Select the voucher for the payment order, click **Print**, and then click **Payment order** to print the document.
+
+## Registry of payment orders
+
+Generated payment orders are available in the **Registry of payment orders** form.
+
+1.  Click **Accounts payable** \> **Inquiries** \> **Payment order register**.
+
+2.  View the information in all the fields.
+
+3.  On the **Essential elements** tab, view the attributes of the payer and the recipient.
+
+4.  Close the form.
+
+## See also
+
+[(RUS) Methods of payment (modified form)](https://technet.microsoft.com/en-us/library/jj665379\(v=ax.60\))
+
+[(RUS) Registry of payment orders (form)](https://technet.microsoft.com/en-us/library/jj711545\(v=ax.60\))
+
+  
+**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
+# (RUS) Payments to foreign bank accounts 
+
+
+_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+
+Payments that are made to vendors by using payment orders or payment requests must include additional information about the vendor bank account if the vendor uses a foreign bank to receive payments. This bank account can include the bank code, the bank name, the Society for Worldwide Interbank Financial Telecommunication (SWIFT) code of the foreign bank, the foreign bank account number of the vendor, and the address of the payer.
+
+When you make payments to the foreign bank account of a vendor, the vendor must register a bank account with a Russian bank. This bank account can be assigned as an intermediate bank account between the payer and the vendor. You can generate a payment order for the payments, and then enter the details of the vendor bank account and the vendor account that the payments are made to.
+
+For transactions that involve payment returns to a foreign customer, you can set up a customer bank account to receive the returned payments, and then generate a customer payment order that includes the bank and address of the payer.
+
+## Setting up payments to foreign bank accounts
+
+You must complete the following tasks if you want to generate a payment order for payments to a foreign vendor bank account, or to send a payment return to a foreign customer bank account:
+
+  - Set up a bank account in the **Bank accounts** form. For more information, see [Bank accounts (form)](https://technet.microsoft.com/en-us/library/aa587660\(v=ax.60\)).
+
+  - Set up a vendor account in the **Vendors** form.
+
+  - Set up a customer account in the **Customer** form. For more information, see[(RUS) Customers (modified form)](https://technet.microsoft.com/en-us/library/jj853212\(v=ax.60\))
+
+  - Set up payment journals for a vendor account and a customer account in the **Ledger journal** form.
+
+## See also
+
+[(RUS) Set up an intermediate bank account for a foreign vendor](rus-set-up-an-intermediate-bank-account-for-a-foreign-vendor.md)
+
+  
+**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
+# (RUS) Generate a payment order for a foreign vendor
+   
+Applies To: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2
+
+You can use the **Generate payments** form to generate a payment order for payments that are made to the foreign bank account of a vendor. Before you generate a payment order, you can use the **Journal voucher** form to register a line in the payment journal to record the vendor payments.
+
+1. Click **Accounts payable** > **Journals** > **Payments** > **Payment journal**.
+2. Select a vendor payment journal, and then click **Lines** to open the **Journal voucher** form.
+3. In the **Method of payment** field, select the payment method for the current payment.
+4. Click the **Bank** tab, and then, in the **Account identification** field, enter the foreign bank account of the vendor.
+5. In the **Payment documented on** field, select the vendor account that the payments are made to.
+6. Click **Functions** > **Generate payments** to open the **Generate payments** form. For more information, see "Generate a payment order in rubles".
+7. Click **OK** to generate the payment order.
+
+# (RUS) Set up a customer bank account for payment returns from a foreign vendor 
+
+
+_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+
+For transactions that involve payment returns to a foreign customer, you can set up a customer bank account to receive the payments that are returned. You can then generate a customer payment order that includes the bank and address of the payer. Use the following procedure to set up a customer bank account for payment returns.
+
+1.  Click **Accounts receivable** \> **Common** \> **Customers** \> **All customers**.
+
+2.  Select a customer account, and then click **Set up** \> **Bank accounts** to open the **Customer bank accounts** form.
+
+3.  Create a bank account for the customer to receive payment returns from a foreign vendor.
+
+4.  Click the **General** tab.
+
+5.  In the **Foreign bank** field group, in the **Bank name** field, select the code of the foreign bank with which the customer bank account is registered.
+
+6.  In the **Bank account number** field, enter the foreign bank account number for the account that receives payment returns from the vendor.
+
+7.  In the **SWIFT** field, enter the Society for Worldwide Interbank Financial Telecommunication (SWIFT) code of the bank that receives payment returns from the vendor.
+
+## See also
+
+[Customer bank accounts (form)](https://technet.microsoft.com/en-us/library/aa575695\(v=ax.60\))
+
+  
+**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
+# (RUS) Generate a customer payment order for a payment return 
+
+
+_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+
+When you send a payment return to the foreign bank account of a customer, you can generate a payment order to make the payment. You can use the **Journal voucher** form to register a line in the payment journal to record the customer payment.
+
+1.  Click **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**.
+
+2.  Select a customer payment journal, and then click **Lines** to open the **Journal voucher** form.
+
+3.  In the **Method of payment** field, select the payment method for the current payment.
+
+4.  Click the **Bank** tab, and then, in the **Account identification** field, enter the bank account number of the customer account that receives the payment return.
+
+5.  In the **Payment documented on** field, select the customer account that receives the payment return.
+
+6.  Click **Functions** \> **Generate payments** to open the **Generate payments** form. For more information, see [Generate payments - customer (class form)](https://technet.microsoft.com/en-us/library/aa554105\(v=ax.60\)).
+
+7.  Click **OK** to generate the payment order.
+
+## See also
+
+[Journal voucher - Customer payment journal (form)](https://technet.microsoft.com/en-us/library/aa556141\(v=ax.60\))
+
+  
+**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
+# (RUS) Register an incoming bank payment from a customer 
+
+
+_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+
+
+> [!NOTE]
+> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
+
+
+
+1.  Click **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**. Click **Lines**.
+
+2.  Create a new journal line.
+
+3.  In the **Date** field, select the date of the payment.
+
+4.  In the **Account** field, select the customer code.
+    
+
+    > [!NOTE]
+    > <P>If a vendor payment, such as a refund, is being made, select <STRONG>Vendor</STRONG> in the <STRONG>Account type</STRONG> field on the <STRONG>General</STRONG> tab. On the <STRONG>Overview</STRONG> tab in the <STRONG>Account</STRONG> field, select the vendor code.</P>
+
+
+
+5.  In the **Transaction text** field, enter or select the transaction text.
+
+6.  In the **Credit** field, enter the sum of the payment.
+
+7.  In the **Offset account type** field, select **Bank**.
+
+8.  In the **Offset account** field, select the bank account.
+
+9.  In the **Currency** field, select the payment currency.
+
+10. On the **General** tab, in the **Contracts group** field, select the contract group.
+    
+
+    > [!NOTE]
+    > <P>If the payment is a prepayment, select the <STRONG>Prepayment</STRONG> check box on the <STRONG>Payment</STRONG> tab. The <STRONG>Sales tax group</STRONG>, <STRONG>Item sales tax group</STRONG>, and <STRONG>Posting profile</STRONG> fields will be entered automatically to calculate VAT for prepayment.</P>
+
+
+
+11. Click **Post**, and then click **Post** again to post the incoming payment.
+    
+    When the journal is posted, transactions will be generated for the bank account, customer account, and ledger. The debit account will be the account in the ledger configured for the bank account. The credit account will be determined by the posting profile that is selected for the customer.
+
+  
+**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
+# (RUS) Transit account function 
+
+
+_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+
+Use the **Transit account** function to change the date of a posted transaction. The banking operation type must be created, and a transaction account must be set. This function is applied to transactions of the types **Bank-Bank**, **Cash account-Bank**, and **Ledger-Bank**.
+
+You cannot post incoming or outgoing payments if the selected bank account is inactive, or if the receipt date of the banking operation is outside the period when the account is active.
+
+## See also
+
+[(RUS) Set up the bank operation type](rus-set-up-the-bank-operation-type.md)
+
+  
+**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
