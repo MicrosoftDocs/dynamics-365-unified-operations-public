@@ -170,15 +170,18 @@ Production System readiness includes, but is not limited to:
 
 Production is an environment for the customer to **operate** the solution, not to build it. Production is sized to run your business based on the subscription estimate and performance testing telemetry data. Once deployed, customers can and should perform a mock cutover and a final round of validation on Production. Prior to the final cutover, a Point-In-Time (PiT) restore can be requested to restore Production to a clean snapshot (up to 35 days in the past).
 
-TODO - INSERT GRAPHIC - environment-planning-1.png
-
 To select the appropriate data center (DC) for Production, consider the latency from the geographic locations where the business operates. Leverage tools like [PsPing](https://docs.microsoft.com/en-us/sysinternals/downloads/psping) and [azurespeed.com](http://azurespeed.com/) to test latency to Azure data centers.
+
+![Environment planning process flow](./media/environment-planning-1-process-flow.png) 
+
+
 
 ## Additional environments
 
 Additional environments may be purchased as add-ons or deployed as cloud-hosted environments. Below you can find a *sample* overview of standard and additional environments based on complexity of the Microsoft Dynamics 365 for Finance and Operations implementation.
 
-TODO - INSERT GRAPHIC - environment-planning-2.png
+![Environment purpose and complexity](./media/environment-planning-2-purpose-complexity-matrix.png)
+[![Environment purpose and complexity](./media/environment-planning-2-purpose-complexity-matrix.png)] (./media/environment-planning-2-purpose-complexity-matrix.png)
 
 > [!IMPORTANT]
 > Always deploy environments using an **unnamed** account (such as *dynadmin@customer.com*). Assign an owner to the environments who will be responsible for their status and maintenance (if applicable). Get an additional Tier-2+ environment post go-live to support Production if you plan to work on new releases
@@ -216,11 +219,11 @@ Be aware that you must allocate one development environment per developer.
 
 Depending on the environment purpose (e.g. Performance Testing, UAT…) it is key to select the correct Tier-2+ environment. Below gives a ***baseline*** guidance. You must work with your implementation partner to adjust this *baseline* considering your specific business scenarios (type of users, complexity,volumes…).
 
-TODO - INSERT GRAPHIC - environment-planning-3.png
+![Environment tiers](./media/environment-planning-3-environment-tiers.png)
 
 Note that transaction lines per hour can be seen in LCS after activating a subscription estimate:
 
-TODO - INSERT GRAPHIC - environment-planning-4.png
+![Subscription estimate](./media/environment-planning-4-subscription-estimate.png)
 
 > [!IMPORTANT]
 > The upcoming Administrator lockdown for Tier-2+ environments will no longer allow remote connection (.RDP) to the servers. Microsoft’s roadmap is to replace most common actions where .RDP access is needed by self-service tasks in Lifecycle Services (LCS). As an example, the procedure currently described in [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md) would be available as a service from Microsoft via a service request in LCS. More information will be shared through the [LCS Blog](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/) and on [Docs](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/).
@@ -229,7 +232,7 @@ TODO - INSERT GRAPHIC - environment-planning-4.png
 
 For purchasing add-on environments, we advise you to work closely with your Cloud Solution Provider (CSP) or License Service Reseller (LSR). Take into consideration the potential lead time from *Placing the order* up to *Deployment of the environment*.
 
-TODO - INSERT GRAPHIC - environment-planning-5.png
+![Procuring add ons](./media/environment-planning-5-procuring-add-on.png)
 
 > [!IMPORTANT]
 > You can subscribe to add-on environments on a month-by-month basis through the *Microsoft Products and Services Agreement* (MPSA) licensing program (if you have a Volume Licensing agreement with Microsoft) or through the *Cloud Solution Provider* program (CSP). For more information, about the different environments and Tiers, download the latest Microsoft Dynamics 365 Licensing Guide from [Dynamics 365 pricing](https://dynamics.microsoft.com/en-us/pricing/).
