@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Value added tax (VAT) for tax agents
-description: This topic provides information about setting up the tax agent transactions for Russia.
+title: Value-added tax (VAT) for tax agents
+description: This topic explains how to set up tax agent transactions for Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -27,197 +27,155 @@ ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
 ---
-# Value added tax (VAT) for tax agents
+# Value-added tax (VAT) for tax agents
 
-When a company is acknowledged as a tax agent it has to accrue and to deduct VAT correctly from funds, paid to taxpayers (or to accrue at the expense of own funds), and to transfer VAT to the tax authority. 
-This functionality is required to support generation of invoices, factures, and payments to vendors for whom our company is defined as tax (fiscal) agents.
-The following functions are supported: 
- - Creating vendors with whom we operate as tax agent.
- - Marking sales tax codes for tax agent transactions to determine if the VAT payments are to be made from the vendor's funds or at the expense of the company's own funds.
- - Creating payment proposals for  vendors' invoices.
- - Creating payments for tax authorities
- - Posting and settlement of payments to the vendor.
- - Creating and printing factures for VAT amount, being liable to the budget, and registering the factures in the sales book
- - Creating and printing factures for VAT deductions and registering the factures in the purchase book.
+[!include [banner](../includes/banner.md)]
 
-## Set up the tax agent transactions
+When a company is acknowledged as a tax agent, it must correctly accrue and deduct value-added tax (VAT) from funds that are paid to taxpayers, or it must accrue VAT at the expense of its own funds. It must then transfer VAT to the tax authority.
 
-You must set up the parameters for tax agent transactions in the Tax module before you can create the tax agent transactions.
+This functionality is required in order to generate invoices, factures, and payments to vendors that the company is defined as a tax agent (fiscal agent) for.
+
+The following functions are supported:
+
+- Create vendors that your company operates as a tax agent for.
+- Mark sales tax codes for tax agent transactions to specify whether the VAT payments must be made from the vendor's funds or at the expense of your company's own funds.
+- Create payment proposals for vendor invoices.
+- Create payments for tax authorities.
+- Post and settle payments to the vendor.
+- Create and print factures for the VAT amount that is liable to the budget, and register the factures in the sales book.
+- Create and print factures for VAT deductions, and register the factures in the purchase book.
+
+## Set up tax agent transactions
+
+Before you can create tax agent transactions, you must set up the parameters for them in the **Tax** module.
 
 ### Set up the VAT operation code for the tax declaration
 
-1.  Click **Tax** \> **Setup** \> **Sales tax** \> **VAT operation codes**.
-
-2.  In the **VAT operation code** field, enter the operation code for the VAT declaration.
-
-3.  In the **Description** field, enter a description of the transaction code.
-
-4.  Press CTRL+S or close the form.
+1. Select **Tax** \> **Setup** \> **Sales tax** \> **VAT operation codes**.
+2. In the **VAT operation code** field, enter the operation code for the VAT declaration.
+3. In the **Description** field, enter a description for the transaction code.
+4. Press Ctrl+S, or close the page.
 
 ### Set up the sales tax code for tax agent transactions
 
-1.  Click **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
+1. Select **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
+2. Press Ctrl+N to create a tax code.
+3. In the **Sales tax code** field, enter a code for sales tax.
+4. In the **Settlement period** field, select the period that the tax is calculated and paid to the tax authority for.
+5. In the **Ledger posting group** field, select the ledger posting group for the sales tax code.
+6. In the **Type of tax** field, select either **Standard VAT** or **Reduced VAT**.
+7. In the **VAT charge** field, select the source of VAT accrual:
 
-2.  Press CTRL+N to create a new tax code.
+    - **From vendor funds** − The VAT payment is made from the vendor's income.
+    - **From own funds** − The VAT payment is made from the tax agent's funds.
 
-3.  In the **Sales tax code** field, enter a code for sales tax.
+8. Select **Values** to open the **Values** page.
+9. In the **Value** field, enter the VAT percentage.
+10. Press Ctrl+S, or close the page.
+11. Select **Indirect taxes** \> **Sales tax** \> **Sales tax groups**.
+12. Press Ctrl+N to create a sales tax group, and enter the required information.
+13. On the **Setup** tab, in the **Sales tax code** field, select the sales tax code that you created in steps 1 through 10.
 
-4.  In the **Settlement period** field, select the time period for which the tax is calculated and paid to the tax authority.
-
-5.  In the **Ledger posting group** field, select the ledger posting group for the sales tax code.
-
-6.  In the **Type of tax** field, select **Standard VAT** or **Reduced VAT**.
-
-7.  In the **VAT charge** field, select the source of VAT accrual from the following options:
-    
-      - **From vendor funds** − VAT payment is made from the vendor's income.
-    
-      - **From own funds** − VAT payment is made from the tax agent's funds.
-
-8.  Click **Values** to open the **Values** form.
-
-9.  In the **Value** field, enter the VAT percentage.
-
-10. Press CTRL+S or close the form.
-
-11. Click **Indirect taxes** \> **Sales tax** \> **Sales tax groups**.
-
-12. Press CTRL+N to create a sales tax group, and enter the necessary information.
-
-13. On the **Setup** tab, in the **Sales tax code** field, select the sales tax code created in steps 1 through 10.
-    
     > [!NOTE]
-    > If you select the sales tax code for the **From own funds** option, the **Exempt** option is selected by default on the **Setup** tab.
+    > If you selected the **From own funds** option for the sales tax code in step 7, the **Exempt** option is selected by default on the **Setup** tab.
 
-
-14. Press CTRL+S or close the form.
-
-15. Click **Indirect taxes** \> **Sales tax** \> **Item sales tax groups**.
-
-16. Press CTRL+N to create an item sales tax group, and enter the necessary information.
-    
-17. On the **Setup** tab, in the **Sales tax code** field, select the sales tax code created in steps 1 through 10.
-
-18. Press CTRL+S or close the form.
+14. Press Ctrl+S, or close the page.
+15. Select **Indirect taxes** \> **Sales tax** \> **Item sales tax groups**.
+16. Press Ctrl+N to create an item sales tax group, and enter the required information. 
+17. On the **Setup** tab, in the **Sales tax code** field, select the sales tax code that you created in steps 1 through 10.
+18. Press Ctrl+S, or close the page.
 
 ### Set up a vendor tax authority
 
-1.  Click **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
+1. Select **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**.
+2. Press Ctrl+N to create a tax authority, and enter the required information.
+3. In the **Vendor account** field, select the vendor that operates as the tax authority.
+4. Press Ctrl+S, or close the page.
 
-2.  Press CTRL+N to create a tax authority, and enter the required details.
+## Create a vendor that your company acts as a tax agent for, and post transactions
 
-3.  In the **Vendor account** field, select the vendor who operates as the tax authority.
+On the **Vendors** page, you can define a vendor as a tax agent. You can then perform transactions with this vendor.
 
-4.  Press CTRL+S or close the form.
-
-## Create vendor for which our company acts as a tax agent and post transactions
-
-You can define a vendor as a tax agent in the Vendors form and perform transactions with this vendor.
-
-1. Click **Accounts payable** \> **Vendors** \> **All vendors**.
-
-2. Press CTRL+N to create a vendor for which our company acts as a tax agent, and enter the necessary information.
-
+1. Select **Accounts payable** \> **Vendors** \> **All vendors**.
+2. Press Ctrl+N to create a vendor that your company acts as a tax agent for, and enter the required information.
 3. On the **General** tab, select the **Tax agent** check box to define the vendor as a tax agent.
+4. In the **Vendor type** field, select the type of vendor:
 
-4. In the **Vendor type** field, select the type of vendor from the following options:
+    - **Blank** – The vendor is a common vendor.
+    - **Non resident** – The vendor is a foreigner.
+    - **State authority** – The vendor is a governmental or municipal authority.
 
-   - **Blank** – common vendor.
-   - **Non resident** – If the vendor is a foreigner.
-   - **State authority** – If the vendor is a governmental or municipal authority.
-   
-5. In the **VAT operation code** field, select the operation code for VAT declaration.
-
-6. Press CTRL+S or close the form.
-
-7. Click **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
-
-8. Press CTRL+N to create a purchase order for the vendor. Enter the necessary information.
-
-9. Click the **Header** view, and then, on the **Setup tab**, in the **VAT operation code field**, view or modify the code for VAT declarations. Select the source for VAT accrual, From vendor funds or From own funds in the VAT charge.
-
-10. Confirm purchase order and post invoice.
+5. In the **VAT operation code** field, select the operation code for the VAT declaration.
+6. Press Ctrl+S, or close the page.
+7. Select **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+8. Press Ctrl+N to create a purchase order for the vendor, and enter the required information.
+9. Select **Header** to open the Header view, and then, on the **Setup** tab, in the **VAT operation code** field, view or modify the code for the VAT declaration.
+10. In the **VAT charge** field, select the source of VAT accrual: **From vendor funds** or **From own funds**.
+11. Confirm the purchase order, and post the invoice.
 
 ## Create tax payments
 
 In the Vendor payment journal, two options for paying VAT as a tax agent are implemented:
 
- 1) Payment for a specific invoice.
- 
- 2) Prepayment (invoice is unknown).
+- Payment for a specific invoice
+- Prepayment (invoice is unknown)
 
-### Create a payment proposal for a tax agent invoice 
+### Create a payment proposal for a tax agent invoice
 
-You can use the **Vendor payment proposal** form to create payment proposals that you can use to generate payments to a vendor tax agent. You can also generate payments of value-added tax (VAT) to a tax authority.
+On the **Vendor payment proposal** page, you can create payment proposals that you can use to generate payments to a vendor tax agent. You can also generate VAT payments to a tax authority.
 
-1.  Click **Accounts payable** \> **Payments** \> **Payment journal**.
+1. Select **Accounts payable** \> **Payments** \> **Payment journal**.
+2. Press Ctrl+N to create a journal, and then select **Lines** to open the **Vendor payments** page.
+3. Select **Payment proposal** \> **Create payment proposal** to open the **Vendor payment proposal** page.
+4. In the **Select invoices by** field, select the type of payment proposal to create. You can create the proposal by due date, by cash discount date, or by both due date and cash discount date.
+5. Select **Records to include**, and then select **Filter** to define the criteria for the payment proposal. For example, you can use the vendor account as a criterion.
+6. Select **OK** to open the **Vendor payment proposal** page. In the upper pane, you can view the open invoice transactions that contribute to the payment proposal line. On the **VAT Proposal** tab, you can view the details of the tax transaction for the VAT payment to the tax authorities.
+7. Select **Create payments** to transfer the proposal lines to the payment journal.
 
-2.  Press CTRL+N to create a new journal, and then click **Lines** to open the **Vendor payments** form.
-
-3.  Click **Payment proposal** \> **Create payment proposal** to open the **Vendor payment proposal** form.
-
-4.  In the **Select invoices by** field, select the type of payment proposal to create. You can create the proposal by due date, cash discount date, or both due date and cash discount date.
-
-5.  Click **Records to include** and then **Filter** to define the criteria for the payment proposal, e.g. Vendor account.
-
-6.  Click **OK** to open the **Vendor payment proposal** form. In the upper pane, you can view the open invoice transactions that contribute to the payment proposal line. On the **VAT Proposal** tab, you can view the details of the tax transaction for the VAT payment to the tax authorities.
-    
-7.  Click **Create payments** to transfer the proposal lines to the payment journal. In the **Vendor payments** form, two payment lines are displayed for each invoice. One line is for payment to a vendor, and the other line is for tax payment to a tax authority. On the second journal line, the purpose of the VAT payment is displayed in the **Purpose text** field, including vendor account number and address.
+    The **Vendor payments** page shows two payment lines for each invoice. One line is for a payment to a vendor, and the other line is for a tax payment to a tax authority. On the second journal line, the **Purpose text** field shows the purpose of the VAT payment. The vendor account number and address are included.
 
     > [!NOTE]
-    > For the line which is a tax payment to a tax authority, the sales tax code is displayed in the <STRONG>Sales tax code</STRONG> field on the **General** tab and the vendor account for whom the tax is paid is displayed in the **Vendor account** field on the **Payment** tab.
+    > For the line that is a tax payment to a tax authority, the **Sales tax code** field on the **General** tab shows the sales tax code. The **Vendor account** field on the **Payment** tab shows the vendor account that the tax is paid for.
 
 8. In the **VAT operation code** field, view or modify the operation code for the VAT declaration.
-
-9. Click **Generate payments** to open the **Generate payments** form.
-
-10. Select the payment method or the export format, depending on the method of payment on the journal line. Then select the bank account to draw the payment from, and enter the required information. 
-
-11. Click **OK**.
-
-12. Click **Print** \> **Payment order** to print the payment order report.
-
-13. In the **Journal voucher** form, click **Validate** \> **Validate** to validate the journal line. Then click **Post** \> **Post** to post the journal lines.
-    
+9. Select **Generate payments** to open the **Generate payments** page.
+10. Select either the payment method or the export format, depending on the method of payment on the journal line. Then select the bank account to draw the payment from, and enter the required information. 
+11. Select **OK**.
+12. Select **Print** \> **Payment order** to print the payment order report.
+13. On the **Journal voucher** page, select **Validate** \> **Validate** to validate the journal line. Then select **Post** \> **Post** to post the journal lines.
 
     > [!NOTE]
-    > After payments to the vendor are completed, you can view the settled transactions in the <STRONG>Transactions on settlement</STRONG> form. You can view the posted sales tax transactions in the <STRONG>Sales tax transactions</STRONG> form.
+    > After payments to the vendor are completed, you can view the settled transactions on the **Transactions on settlement** page. You can view the posted sales tax transactions on the **Sales tax transactions** page.
 
 ### Create a prepayment
 
-1.  Click **Accounts payable** \> **Payments** \> **Payment journal**.
-
-2.  Press CTRL+N to create a new journal, and then click **Lines** to open the **Vendor payments** form.
-
-3.  Press CTRL+N to create a new journal line, select vendor and enter a prepayment amount.
-
-4.  Set **Sales tax group** and **Item sales tax group** that contain sales tax code with necessary setup of VAT charge.
+1. Select **Accounts payable** \> **Payments** \> **Payment journal**.
+2. Press Ctrl+N to create a journal, and then select **Lines** to open the **Vendor payments** page.
+3. Press Ctrl+N to create a new journal line, select the vendor, and enter a prepayment amount.
+4. Specify the sales tax group and item sales tax group that contain the sales tax code that has the required setup of the VAT charge.
 
     > [!NOTE]
-    > VAT amount to be paid is calculated based on the value of the sales tax code.
-    > To avoid tax calculation on prepayment itself, **Sales tax on prepayment in payment journal** should be switched off in the **Accounts payable parameters** form on the **Ledger and sales tax** tab.
+    > - The VAT amount that must be paid is calculated based on the value of the sales tax code.
+    > - To prevent tax from being calculated on the prepayment itself, on the **Accounts payable parameters** page, on the **Ledger and sales tax** tab, set the **Sales tax on prepayment in payment journal** option to **No**.
 
-5.  Click **Payment proposal** \> **VAT Proposal**. In the created tax payment line there will be information on the tax code, the VAT operation code and the supplier for which we pay the tax.
+5. Select **Payment proposal** \> **VAT Proposal**. The tax payment line that is created includes information about the tax code, the VAT operation code, and the supplier that you pay the tax for.
  
 
-## Create and print factures for VAT deductions 
+## Create and print factures for VAT deductions
 
-Before you can create and print a facture report for received invoices, issued invoices, purchases, or sales in estimates of value-added tax (VAT), you must complete the following tasks:
+Before you can create and print a facture report for received invoices, issued invoices, purchases, or sales in estimates of VAT, you must complete the following tasks.
 
-1.  Set up the parameters for a tax agent transaction.
+1. Set up the parameters for a tax agent transaction.
+2. Define a vendor as a tax agent.
+3. Create and post a purchase order that has a sales tax group and an item sales tax group.
+4. Create a payment proposal, and post the payment.
 
-2.  Define a vendor as a tax agent.
+    As a result of tax payment posting, sales tax transactions are created that have the following tax directions:
 
-3.  Create and post a purchase order that has a sales tax group and an item sales tax group.
+    - **Tax agent – charged** – Accrued VAT that must be paid. A facture document is created on this sales tax transaction and will be reflected in the sales book.
+    - **Sales tax receivable** – VAT that must be deducted because the VAT amount was transferred to the tax authority. The facture is created on the sales tax transaction and will be reflected in the purchase book after VAT incoming is processed.
 
-4.  Create a payment proposal, and post the payment.
+5. Select **Accounts payable** \> **Inquiries and reports** \> **Facture**.
+6. Select **Print** \> **Original** for the facture that is created on the **Tax agent - charged** sales tax transaction.
 
-As a result of tax payment posting sales tax transactions with the following tax directions are created:
- - *Tax agent – charged* – VAT accrued to be paid. A facture document that will be reflected in the Sales book is created upon this sales tax transaction.
- - *Sales tax receivable* – VAT to be deducted as the VAT amount was transferred to the tax authority. The facture created upon the sales tax transaction will be reflected in the Purchase book, after VAT incoming processing.
-
-5.  Click **Accounts payable** \> **Inquiries and reports** \> **Facture**.
-
-6.  Click **Print** \> **Original** for the facture created upon the *Tax agent - charged* sales tax transaction.
-
-The facture report displays the number and date of the payment order, the base amount without VAT, and the computational tax rate (VAT value / VAT value + 100).
+The facture report shows the number and date of the payment order, the base amount without VAT, and the computational tax rate (VAT value ÷ VAT value + 100).
