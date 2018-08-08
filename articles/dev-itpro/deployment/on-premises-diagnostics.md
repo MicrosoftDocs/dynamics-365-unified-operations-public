@@ -5,7 +5,7 @@ title: On-premises diagnostics
 description: This topic provides information about how to expose the diagnostic data for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations. 
 author: sarvanisathish
 manager: AnnBe
-ms.date: 07/06/2018
+ms.date: 08/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,22 +35,21 @@ ms.dyn365.ops.version: Platform Update 12
 
 The Microsoft Dynamics 365 for Finance and Operations team monitors the health and performance of the Azure Services that provide functionality for our cloud-based customers by using state-of-the-art Azure diagnostic tools. For customers who have implemented Finance and Operations on-premises and would like to have the ability to monitor the health and performance of their on-premises solution, there are several third-party offerings available. 
 
-This topic describes the setup and configuration of Elastic Stack, a third-party product, and one of many choices that may provide the diagnostic monitoring your on-premises solution requires.
+This topic describes the setup and configuration of Elastic Stack, a third-party product, and one of many choices that can provide  diagnostic monitoring of your on-premises solution.
 
-When you consider a diagnostic solution, consider following fundamentals for your implementation:
+When you consider a diagnostic solution, consider the following fundamentals of your implementation:
 
-- Your diagnostic system should be able to collect and store 30 days worth of diagnostic information.
+- Your diagnostic system should be able to collect and store 30 days' worth of diagnostic information.
 - Your diagnostic repository should be set up in a central location that is sharable among many client computers.
-- Create structured diagnostics events, including event type, classification and data.
+- Create structured diagnostics events, including event type, classification, and data.
 - Events stored in raw text (deserialized) can be easily queried and searched.
 - Avoid storing sensitive or personal data in events.
 
 > [!NOTE]
-> By default, communication in an Elastic Stack cluster is not sent over HTTPS. Don't set up the Elastic Stack unless you've considered the risks, and prepared or implemented mitigations for those risks. The paid version of X-Pack can be used to encrypt communication in the Elastic Stack. For setup information, see Setting up TLS on a cluster. There is also an open source Elasticsearch plug-in. Although Microsoft hasn't tested this plug-in, according to the documentation, it can enable HTTPS, and Microsoft recommends that you always utilize encrypted communication using HTTPs, VPN or another secure, encrypted protocol. Many industry certifications and compliance laws require the use of encrypted transmission if your content includes end user, customer, personal or sensitive data.
-
+> By default, communication in an Elastic Stack cluster is not sent over HTTPS. Don't set up the Elastic Stack unless you've considered the risks, and prepared or implemented mitigations for those risks. The paid version of X-Pack can be used to encrypt communication in the Elastic Stack. For setup information, see Setting up TLS on a cluster. There is also an open source Elasticsearch plug-in. Although Microsoft hasn't tested this plug-in, according to the documentation, it can enable HTTPS. Microsoft recommends that you always utilize encrypted communication using HTTPs, VPN, or another secure, encrypted protocol. Many industry certifications and compliance laws require the use of encrypted transmission if your content includes end user, customer, personal, or sensitive data.
 
 ## Diagnostic data guidelines
-To diagnose the deployment and execution of Microsoft Dynamics 365 for Finance and Operations, you must have access to diagnoatic data. For a cloud deployment, Microsoft stores and monitors the diagnostic data from services to help keep the environment healthy. For an on-premises deployment, the customer is responsible for this task.
+To diagnose the deployment and execution of Microsoft Dynamics 365 for Finance and Operations, you must have access to diagnostic data. For a cloud deployment, Microsoft stores and monitors the diagnostic data from services to help keep the environment healthy. For an on-premises deployment, the customer is responsible for this task.
 
 You can select the diagnostic data store and query tool that you prefer to use. However, at a minimum, the tool should perform the following tasks:
 
@@ -126,7 +125,7 @@ In its test setup, Microsoft found that some events from Winlogbeat required adj
 
 Microsoft downloaded Logstash to C:\\ELK\\Logstash on the Orchestrator #2 and Orchestrator #3 nodes.
 
-To help guarantee that Logstash runs on startup, we used the Non-Sucking Service Manager (NSSM) to set up a service for the Logstash batch script.
+To help ensure that Logstash runs on startup, we used the Non-Sucking Service Manager (NSSM) to set up a service for the Logstash batch script.
 
 1. Copy nssm.exe to the Logstash bin folder (for example, C:\\ELK\\Logstash\\6.2.4\\bin\\).
 2. Open Windows PowerShell from the bin folder, and run the following command.
@@ -189,7 +188,7 @@ Microsoft set the runtime-\* index pattern as the default pattern. When you're l
 
 [![Runtime index pattern](./media/runtime-index-patter.png)](./media/runtime-index-patter.png)
 
-Microsoft ran Kibana as a service in the same manner as Logstash, so that Kibana is started at OS startup. Unlike Logstash, kibana.bat doesn't have to know the path of the configuration files. Therefore, you can just install an NSSM service that points to C:\\ELK\\Kibana\\6.2.4\\bin\\kibana.bat.
+Microsoft ran Kibana as a service in the same manner as Logstash, so that Kibana is started at OS startup. Unlike Logstash, kibana.bat doesn't need the path of the configuration files. Therefore, you can just install an NSSM service that points to C:\\ELK\\Kibana\\6.2.4\\bin\\kibana.bat.
 
 If you want users to browse Kibana on your network, remember to open the port for Kibana. The default port is 5601.
 
@@ -221,7 +220,7 @@ Microsoft created a basic task in Windows Task Scheduler. This task has a weekly
 
 ## X-Pack
 > [!IMPORTANT]
-> As of June 2018, Elastic Stack components have been released that start with version 6.3. This updated version handles X-Pack in a more graceful manner, by enabling the free features of X-Pack by default, without requiring that you update the license every year, and by letting you opt in to the paid features afterwards. If you install an Elastic Stack version that is earlier than 6.3, the content in this section only partially applies to the setup.
+> As of June 2018, Elastic Stack components have been released that start with version 6.3. This updated version handles X-Pack in a more graceful manner, by enabling the free features of X-Pack by default, without requiring that you update the license every year, and by letting you opt in to the paid features afterward. If you install an Elastic Stack version that is earlier than 6.3, the content in this section only partially applies to the setup.
 
 You can select to install X-Pack when you install Elasticsearch. Alternatively, you can [install it later](https://www.elastic.co/guide/en/x-pack/current/installing-xpack.html).
 
