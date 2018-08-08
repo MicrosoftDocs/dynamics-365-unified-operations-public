@@ -996,6 +996,8 @@
       href: deployment/onprem-reverseproxy.md
     - name: Apply updates to an on-premises deployment
       href: deployment/apply-updates-on-premises.md
+    - name: On-premises diagnostics
+      href: deployment/on-premises-diagnostics.md
     - name: Redeploy an on-premises deployment
       href: deployment/redeploy-on-prem.md
     - name: Update the local agent
