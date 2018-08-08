@@ -44,7 +44,7 @@ This list is intended to help you consider these removals and deprecations for y
 > [!Note]
 > Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
 
-> [Note]
+> ![Note]
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
 ## Dynamics 365 for Finance and Operations 8.0 with platform update 15
