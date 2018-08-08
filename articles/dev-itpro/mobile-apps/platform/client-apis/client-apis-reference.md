@@ -1,5 +1,6 @@
 ---
 # required metadata
+
 title: Mobile platform client APIs
 description: Mobile platform client APIs
 author: shadykdc
@@ -8,8 +9,10 @@ ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
+
 # optional metadata
+
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
@@ -22,6 +25,7 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom: 08/09/2017
 ms.dyn365.ops.version:
+
 ---
 
 # Mobile platform client APIs

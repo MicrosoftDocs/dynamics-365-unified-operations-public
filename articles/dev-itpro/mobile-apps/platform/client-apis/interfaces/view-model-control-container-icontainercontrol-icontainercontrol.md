@@ -1,5 +1,6 @@
 ---
 # required metadata
+
 title: ContainerControl type
 description: Container control interface with methods and attributes for all container controls. A container control can contain any number of controls.
 author: shadykdc
@@ -9,7 +10,9 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+
 # optional metadata
+
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
@@ -22,6 +25,7 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom:
 ms.dyn365.ops.version:
+
 ---
 
 # ContainerControl type

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Provision Microsoft Dynamics 365 for Talent Modular Apps
-description: ynamics 365 for Talent includes Core HR capabilities and functionality that provides additional experiences such as Attract and Onboard. Such functionality may also be available for purchase as a standalone modular application. 
+title: Provisioning for the Dynamics 365 for Talent modular apps
+description: This topic provides information about how to provision the standalone modular applications that can be purchased to provide core human resources (HR) functionality that is included in Microsoft Dynamics 365 for Talent. This functionality provides additional experiences, such as Attract and Onboard.
 author: rschloma
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 08/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,22 +30,24 @@ ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
 
 ---
-# Provision Microsoft Dynamics 365 for Talent Modular Apps
+# Provisioning for the Dynamics 365 for Talent modular apps
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 for Talent includes core human resources capabilities and functionality that provide additional experiences such as Attract and Onboard. Such functionality may also be available for purchase as a standalone modular application through web-direct (for example, Dynamics 365 for Talent: Attract or Dynamics 365 for Talent: Onboard SKUs). There are some experience differences when purchasing full Talent versus the modular applications.  
+Microsoft Dynamics 365 for Talent includes core human resources (HR) capabilities and functionality that provide additional experiences, such as Attract and Onboard. This functionality can also be purchased as standalone modular applications through web-direct. Examples include Microsoft Dynamics 365 for Talent: Attract and Microsoft Dynamics 365 for Talent: Onboard SKUs. Depending on whether you purchase full Talent or the modular applications, the experience differs somewhat.
 
-Modular applications will automatically provision upon initiation of a trial or purchase of the services through web-direct. Lifecycle Services (LCS), which is used to provision Dynamics 365 for Talent, is not used with the modular applications. Customers can sign up for a trial for Attract or Onboard independently.
+Modular applications are automatically provisioned when you initiate a trial of the services or purchase them through web-direct. Customers can sign up for trials of Attract and Onboard separately.
 
-Customers do not select specifically where their modular applications will provision, rather provisioning of modular applications is determined by: 
+Although Microsoft Dynamics Lifecycle Services (LCS) is used to provision Talent, it isn't used to provision the modular applications.
 
- > + location of the organization’s existing PowerApps environments;
- > + location of the organization’s existing tenant if no PowerApps environments exist; and
- > + the data centers currently supported by Dynamics 365 for Talent 
+Customers don't select the exact location where the modular applications should be provisioned. Instead, the following factors determine where the modular applications are provisioned:
 
-Modular applications will provision only in supported geographies (as defined in the Microsoft Trust Center for Talent data transparency), according to the logic below: 
++ The location of the organization's existing Microsoft PowerApps environments
++ If no PowerApps environments exist, the location of the organization's existing tenant
++ The data centers that Talent currently supports
 
-[![Geographies for modular applications](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
+Modular applications will be provisioned only in supported countries or regions. The following illustration shows the logic that is used. (The supported countries and regions are defined in the Microsoft Trust Center for Talent data transparency.)
 
-Unlike Dynamics 365 for Talent, the modular applications do not maintain a list of environments accessible by each user. When using the modular applications service users, will automatically log into the last environment used, and can select alternate environments through the gear menu. 
+[![Provisioning process for modular applications, based on country/region](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
+
+Unlike Talent, the modular applications don't maintain a list of the environments that each user can access. Users are automatically signed in to the last environment that they used. They can then select different environments by using the **Settings** button (the gear symbol).
