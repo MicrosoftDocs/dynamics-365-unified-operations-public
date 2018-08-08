@@ -1,14 +1,34 @@
-# (RUS) Create a purchase book 
+---
+# required metadata
+title: Create a purchase book 
+description: This topic provides information about adding addtitional sheets to sales books and purchase books for Russia.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/28/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+			
+# optional metadata
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Russia
+# ms.search.industry: 
+ms.author: shylaw
+ms.search.validFrom: 2018-10-28
+ms.dyn365.ops.version: 8.1
+---
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+# Create a purchase book 
 
 A purchase book is a tax accounting document. In a purchase book, you can record vendor factures, factures on returns and credit notes to vendors, factures on advance reports from advance holders, factures on customer prepayments, and corrected tax transaction factures.
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
-
 
 
 1.  Click **Organization administration** \> **Setup** \> **Organization** \> **Legal entities**.
@@ -68,18 +88,8 @@ A purchase book is a tax accounting document. In a purchase book, you can record
     > <P>In the <STRONG>Purchase books journal</STRONG> form, click <STRONG>Lines</STRONG> to open the <STRONG>Purchase book lines</STRONG> form to verify purchase book line details.</P>
 
 
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
 
-# (RUS) Create an additional page in a purchase book 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
-
+## Create an additional page in a purchase book 
 
 
 When you correct transactions for a closed tax period, an additional page is created in the closed purchase book to represent the tax period of the adjustment. Corrected factures are displayed in the new page in the purchase book.
@@ -159,27 +169,10 @@ The additional page contains information about purchase book totals at the end o
 
 
 
-## See also
+## Create a sales book 
 
-[(RUS) Purchase books journal (form)](https://technet.microsoft.com/en-us/library/jj853172\(v=ax.60\))
-
-[(RUS) Facture journal (form)](https://technet.microsoft.com/en-us/library/jj923567\(v=ax.60\))
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-
-# (RUS) Create a sales book 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 VAT debt accrual is generated according to sales book entries. All factures for sales of goods, services, and advance payments from customers are included in the sales book.
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
-
 
 
 1.  Click **Organization administration** \> **Setup** \> **Organization** \> **Legal entities**.
@@ -237,8 +230,4 @@ VAT debt accrual is generated according to sales book entries. All factures for 
 
     > [!NOTE]
     > <P>In the <STRONG>Sales books journal</STRONG> form, click <STRONG>Lines</STRONG> to open the <STRONG>Sales book lines</STRONG> form to verify the sales book line details.</P>
-
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
 
