@@ -17,7 +17,7 @@ ms.search.form: CaseDetail
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23541

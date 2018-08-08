@@ -3,7 +3,7 @@
 
 title: Plan for public sector functionality
 description: This article suggests the first steps to setting up Public sector functionality in Microsoft Dynamics 365 for Finance and Operations.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: SysConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19851

@@ -3,7 +3,7 @@
  
 title: Set up sales tax settlement periods
 description: Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

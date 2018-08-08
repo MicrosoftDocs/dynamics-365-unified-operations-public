@@ -17,7 +17,7 @@ ms.search.form: ProjProjectContractsListPage, ProjProjectsListPage
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23561

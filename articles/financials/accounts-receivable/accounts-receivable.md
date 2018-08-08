@@ -3,7 +3,7 @@
 
 title: Accounts receivable home page
 description: Use Accounts receivable to track customer invoices and incoming payments.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
@@ -17,14 +17,14 @@ ms.search.form:  CustomerInvoiceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20671
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

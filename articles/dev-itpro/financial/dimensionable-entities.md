@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191363

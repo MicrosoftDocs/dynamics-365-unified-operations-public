@@ -3,7 +3,7 @@
  
 title: Set up short picking item reallocation
 description: This procedure shows you how to enable warehouse workers to quickly find alternative locations if there isn’t sufficient inventory at the location they’ve been directed to. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 10/14/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

@@ -3,7 +3,7 @@
  
 title: Create and assign a trading partner code in the public sector
 description: Create a trading partner code and assign it to a government agency that your organization does business with. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 10/30/2017
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  WHSClusterProfile, WHSRFAutoConfirm
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
