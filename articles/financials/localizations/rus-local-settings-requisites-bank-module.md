@@ -1,13 +1,34 @@
+---
+# required metadata
+title: Set up bank accounts 
+description: This topic provides information about local settings and requisites for bank modules for Russia. 
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/28/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+			
+# optional metadata
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Russia
+# ms.search.industry: 
+ms.author: shylaw
+ms.search.validFrom: 2018-10-28
+ms.dyn365.ops.version: 8.1
+---
 
-# (RUS) Set up bank accounts 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
-
+# Set up bank accounts 
 
 
 You must register the bank accounts for the company.
@@ -46,13 +67,9 @@ You must register the bank accounts for the company.
 
 14. Press CTRL+S or close the form.
 
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
 
-# (RUS) Set up a foreign bank 
+## Set up a foreign bank 
 
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 When you make payments to the foreign bank account of a vendor, the vendor must register the bank account with a Russian bank. Otherwise, the vendor cannot receive the payments. You can use the **Banks** form to set up a foreign bank. You can then link the foreign bank to the vendor account that is associated with it.
 
