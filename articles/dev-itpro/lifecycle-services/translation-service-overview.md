@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Microsoft Dynamics 365 Translation Service overview
+# Microsoft Dynamics 365 Translation Service
 
 [!include [banner](../includes/banner.md)]
 

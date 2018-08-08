@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Change the caption of a form
+title: Change the captions of forms through extension
 description: This topic explains how to change the form caption that helps the user identify the current page in a web browser.
 author: ivanv-microsoft
 manager: AnnBe
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Change the caption on a form
+# Change the captions of forms through extension
 
 [!include [banner](../includes/banner.md)]
 

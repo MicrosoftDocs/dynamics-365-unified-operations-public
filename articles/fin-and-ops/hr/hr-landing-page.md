@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Welcome to human resources
+# Human resources
 
 [!include [banner](../includes/banner.md)]
 

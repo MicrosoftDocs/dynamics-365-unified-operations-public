@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Design data model to use financial dimensions as a data source 
+title: Design data models to use financial dimensions as data sources
 description: The following steps explain how either a system administrator or electronic reporting developer can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. 
 author: NickSelin
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Design data model to use financial dimensions as a data source 
+# Design data models to use financial dimensions as data sources
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Ship an order from a different store
+title: Ship orders from another store by using the Charge send feature
 description: This topic describes the Charge send feature.
 author: ashishmsft
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 ---
 
-# Ship an order from a different store
+# Ship orders from another store by using the Charge send feature
 
 [!include [banner](includes/banner.md)]
 

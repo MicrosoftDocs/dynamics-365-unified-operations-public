@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Develop email experiences
+title: Develop email experiences by using the SysMailer framework
 description: This topic describes how you can use the SysMailer framework to send email in Microsoft Dynamics 365 for Finance and Operations.
 author: ChrisGarty
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Develop email experiences
+# Develop email experiences by using the SysMailer framework
 
 ## Sending emails
 

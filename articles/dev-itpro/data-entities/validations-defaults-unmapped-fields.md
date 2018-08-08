@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Validations, defaults, and unmapped fields
+title: Validations, default values, and unmapped fields
 description: This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values, but instead contain virtual or computed data (unmapped fields). 
 author: Sunil-Garg
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Validations, defaults, and unmapped fields
+# Validations, default values, and unmapped fields
 
 [!include [banner](../includes/banner.md)]
 

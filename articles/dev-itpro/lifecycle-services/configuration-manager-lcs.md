@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configuration manager
+title: Configuration manager in Lifecycle Services (LCS)
 description: The Configuration manager (beta) functionality in Microsoft Dynamics Lifecycle Services lets you copy a configuration from one instance of Microsoft Dynamics AX 2012 R3 to another. 
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Configuration manager
+# Configuration manager in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 

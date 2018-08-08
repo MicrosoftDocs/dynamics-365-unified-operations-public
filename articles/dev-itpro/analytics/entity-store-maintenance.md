@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Entity store mainentance
+title: Resolve issues after entity store mainentance
 description: This topic describes procedures that must be completed after entity store maintenance.
 author: sarvanisathish
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ---
 
-# Entity store maintenance
+# Resolve issues after entity store maintenance
 
 [!include[banner](../includes/banner.md)]
 

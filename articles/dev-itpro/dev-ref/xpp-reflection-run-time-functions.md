@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ reflection run-time functions
+title: X++ reflection runtime functions
 description: This topic describes the reflection run-time functions.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ reflection run-time functions
+# X++ reflection runtime functions
 
 [!include [banner](../includes/banner.md)]
 

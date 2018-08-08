@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Modify an extended data type
+title: Modify extended data types (EDTs) through extension
 description: You can customize several properties on extended data types (EDTs) by using extensions.
 author: ivanv-microsoft
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ---
 
-# Modify an extended data type
+# Modify extended data types (EDTs) through extension
 
 [!include [banner](../includes/banner.md)]
 

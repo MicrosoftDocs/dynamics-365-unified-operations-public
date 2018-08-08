@@ -83,7 +83,11 @@
     },
     "fileMetadata": {
         "feedback_product_url": {
-        "retail/**/*.md": "https://experience.dynamics.com/ideas/list/?forum=fd509429-7e87-e711-8105-c4346bb5988c"}
+        "retail/**/*.md": "https://experience.dynamics.com/ideas/list/?forum=fd509429-7e87-e711-8105-c4346bb5988c"},
+      "searchScope": {
+        "articles/talent/**.md": ["Dynamics 365", "Talent"]
+        }
+      
     },
     "template": [],
     "dest": "d365F-O",

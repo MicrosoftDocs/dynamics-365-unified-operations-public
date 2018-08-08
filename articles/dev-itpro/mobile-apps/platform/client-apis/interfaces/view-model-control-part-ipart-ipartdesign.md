@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: PartDesign
+title: PartDesign type
 description: Part design object type.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# PartDesign Type
+# PartDesign type
 
 [!include [banner](../../../../includes/banner.md)]
 

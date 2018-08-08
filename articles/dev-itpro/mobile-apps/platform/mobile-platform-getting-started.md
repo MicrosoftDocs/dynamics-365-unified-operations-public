@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Getting started with the mobile platform
+title: Get started with the mobile platform
 description: This topic describes how to develop on the mobile platform.
 author: makhabaz
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 9
 
 ---
 
-# Getting started with the mobile platform
+# Get started with the mobile platform
 
 [!include [banner](../../includes/banner.md)]
 

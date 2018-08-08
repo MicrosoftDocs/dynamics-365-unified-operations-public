@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a deployable package
+title: Create deployable packages of models
 description: This topic describes the workflow for creating and applying a deployable package.
 author: robadawy
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create a deployable package of your models in order to apply it to a runtime environment
+# Create deployable packages of models
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,3 +59,6 @@ After you have completed the development stage, follow these steps to create a d
 
 ## Apply a deployable package
 To apply a deployable package to an environment, see the article [Apply a deployable package](apply-deployable-package-system.md).
+
+## Remove a deployable package
+To uninstall or remove a deployable package from an environment, see the article [Uninstall (remove) a module (package)](uninstall-deployable-package.md).

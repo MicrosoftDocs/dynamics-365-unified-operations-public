@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Warehousing for on-premises deployment
+title: Configure the Warehousing app for on-premises deployments
 description: This topic describes the prerequisites for the warehousing app for on-premises deployments.
 author: MarkusFogelberg
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24861
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.3
 
 ---
-# Warehousing for on-premises deployments
+# Configure the Warehousing app for on-premises deployments
 
 [!include [banner](../includes/banner.md)]
 

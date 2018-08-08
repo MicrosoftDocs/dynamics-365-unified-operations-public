@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Demo files for the Data import/export framework
+title: Demo files for the Data Import/Export Framework (DIXF)
 description: This topic provides a list of the demo files and their corresponding entities for the Data import/export framework (DIXF).
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Demo files for the Data import/export framework
+# Demo files for the Data Import/Export Framework (DIXF)
 
 [!include [banner](../../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create a legal entity
+title: Create legal entities
 description: A legal entity is an organization that is identified through registration with a legal authority. 
 author: sericks007
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create a legal entity
+# Create legal entities
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

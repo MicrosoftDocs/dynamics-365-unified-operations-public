@@ -3,7 +3,7 @@
 
 title: Cost accounting home page
 description: This topic provides a list of the help topics and other resources that are available for Cost accounting.
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, C
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 256254
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

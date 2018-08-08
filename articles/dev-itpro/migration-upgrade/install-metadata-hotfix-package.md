@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install a metadata hotfix
+title: Install metadata hotfixes in development environments
 description: This topic will guide you through installing an Application Metadata hotfix on your development environment.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Install a metadata hotfix
+# Install metadata hotfixes in development environments
 
 [!include [banner](../includes/banner.md)]
 

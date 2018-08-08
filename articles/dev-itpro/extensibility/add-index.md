@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Add a new index to a table
+title: Add indexes to tables through extension
 description: This topic describes how to add an index to a table.
 author: ivanv-microsoft
 manager: AnnBe
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Add a new index to a table
+# Add indexes to tables through extension
 
 [!include [banner](../includes/banner.md)]
 

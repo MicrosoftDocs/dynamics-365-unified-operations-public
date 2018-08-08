@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure a manual decision in a workflow
+title: Configure manual decisions in a workflow
 description: This topic explains how to configure the properties of a manual decision.
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure a manual decision in a workflow
+# Configure manual decisions in a workflow
 
 [!include [banner](../includes/banner.md)]
 

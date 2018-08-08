@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Help overview
+title: Finance and Operations Help system
 
 description: This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 author: margoc
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Help system overview
+# Finance and Operations Help system
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,7 +41,7 @@ This topic provides an overview of the components of the Microsoft Dynamics 365 
 > The following products are closely related: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product.
 
 The Help system is shared by the following products:
-- Dynamics 365 for Finance and Operations
+- Dynamics 365 for Finance and Operations
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -66,7 +66,7 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations]
 -   **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps to ensure that you have access to the latest technical information.
 -   **Content that is written by experts** – The site provides a richer set of product documentation that can be enhanced by community members both inside and outside Microsoft.
 -   **Access to different types of content** – The site lets you quickly access different types of content about Finance and Operations, such as task guides, videos, and topics.
--   **Content that supports your business processes** – The site includes business process–focused content that takes advantage of the Business Process Modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
+-   **Content that supports your business processes** – The site includes business process–focused content that takes advantage of the Business Process Modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
 
 ### Searching on docs.microsoft.com
 We get a lot of questions about how to search for our content. On our site, if you start from a page about Finance and Operations, we scope your search to just be for Finance and Operations content. You can remove the scoping by clicking the X next to Operations in the search box. 
@@ -88,31 +88,23 @@ To subscribe to an RSS feed of all updates to the Unified Operations content, us
 [RSS feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### Give feedback 
-We really like customer feedback. You can either comment, or suggest changes to our content through GitHub.
+We really like customer feedback. You can either comment or suggest changes to our content through GitHub. For more information about our feedback system, see [this blog post](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### Leave us a comment 
+##### Leave us feedback 
 If you have feedback or questions about a topic, leave us a comment at the bottom of the page.  
 
-1 Click **Comments** to get to the comments at the bottom of the page.
+1. Click **Feedback** to get to the comments at the bottom of the page, and then click either **Product feedback**, or **Sign in to give documentation feedback**.
 
-![Comments](./media/comments.png)
+![Feedback](./media/comments.png)
 
-2 Start typing your comments, and then click **Post comment**.
+2. Start typing your comments, and then click **Submit feedback**.
 
-![Post comment](./media/before-signin.png)
+![Post comment](./media/feedback.png)
 
-3 Select the type of account that you want to sign in with:  
-Click one of the icons on the left to associate this site with an existing account, such as a Twitter, Facebook, or Microsoft account. 
-
-Or 
-
-On the right, enter an email address, and a new password to create a new account for the site. 
-
-![Sign in options](./media/signin-options.png)
 
 
 ##### Suggest a change or contribute content through GitHub
-To suggest a change, you'll need to have a GitHub account, and sign a Contributor License Agreement.  After you submit a pull request, we'll review your proposed changes. If necessary, we'll discuss them internally, and then get back to you.  
+To suggest a change, you'll need to have a GitHub account, and sign a Contributor License Agreement.  After you submit a pull request, we'll review your proposed changes. If necessary, we'll discuss them internally, and then get back to you.  
 
 To get started, click the **Edit** (pencil) button on a topic, or go to our repo at https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
 
@@ -120,8 +112,7 @@ For more information, please refer to our contributor's guide: https://github.co
 
 
 > [!NOTE]
-> We will only be accepting contributions to our English repositories at this time.  
-> We don't accept Issues reported through GitHub--be sure to use a pull request for content suggestions. Product and feature feedback is best handled through the Dynamics 365 Ideas Portal: https://experience.dynamics.com/ideas/. 
+> We will only be accepting contributions to our English repositories at this time.  
 
 
 ## Task guides
@@ -148,7 +139,7 @@ For more information about Task Recorder, see [Task recorder in Finance and Oper
 
 ### Creating customized task recordings
 
-You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Finance and Operations implementation. To display a task recording in the Finance and Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../../dev-itpro/user-interface/task-recorder.md).
+You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Finance and Operations implementation. To display a task recording in the Finance and Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../../dev-itpro/user-interface/task-recorder.md).
 
 ## In-product Help
 To access Help content within Finance and Operations, either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. 
@@ -168,11 +159,11 @@ Before you can access Task guides from the Help pane, a System administrator has
 
 > [!NOTE]
 > -   In order to configure help, you must be signed in with an account in the same tenant as the tenant in which Finance and Operations is deployed.
-> -   It is not possible to connect to an LCS library from an instance of Finance and Operations running in a local virtual hard drive (VHD).
+> -   It is not possible to connect to an LCS library from an instance of Finance and Operations running in a local virtual hard drive (VHD).
 
 ![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
 
-On the **System parameters** page, follow these steps:
+On the **System parameters** page, follow these steps:
 
 1.  **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to click the link in the middle of the form, wait for the connection, close the dialog box, and then click **OK** to get to the parameters form.
 ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
@@ -182,9 +173,9 @@ On the **System parameters** page, follow these steps:
     - For Retail, we will be releasing a library in July. 
     - You do not need to select a library for Talent—the connection to the correct library is established for you. 
 
-4.  Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the Help pane.
+4.  Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the Help pane.
 
-After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the Task guides that apply to the page that you’re currently on in Finance and Operations. If no Task guides are found, you can enter keywords to refine your search. After you click a Task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide. 
+After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the Task guides that apply to the page that you’re currently on in Finance and Operations. If no Task guides are found, you can enter keywords to refine your search. After you click a Task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide. 
 
 ![Task guide reading view](./media/task-guide-ops.png)
 

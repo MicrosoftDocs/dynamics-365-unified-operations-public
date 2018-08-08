@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Add a method to a table
+title: Add methods to tables through extension
 description: This topic describes how to add a method to a table by using an extension.
 author: ivanv-microsoft
 manager: AnnBe
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Add a method to a table
+# Add methods to tables through extension
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,13 +46,6 @@ You first create a new class in the extension model. This class will augment the
 [ExtensionOf(tableStr(InventTable))]
 final class MyInventTable_Extension
 {
-    [DataEventHandler(tableStr(InventTable), DataEventType::Inserting)]
-    public static void InventTable_onInserting(Common sender, DataEventArgs e)
-    {
-        InventTable inventTable = sender as InventTable;
-        // Call the method as if it was defined directly on InventTable.
-        inventTable.defaultMyInventLocationId();
-    }
     public void defaultMyInventLocationId()
     {
         // This would have partner specific logic to initialize the new field.
@@ -69,5 +62,21 @@ There are a few rules for augmentation classes:
 + They must be suffixed by **\_Extension**.
 + They must be decorated with the **[ExtensionOf()]** attribute.
 
+Now you can use your new method, for example, from an event handler:
+
+```
+class MyInventTable_EventHandler
+{
+    [DataEventHandler(tableStr(InventTable), DataEventType::Inserting)]
+    public static void InventTable_onInserting(Common sender, DataEventArgs e)
+    {
+        InventTable inventTable = sender as InventTable;
+        // Call the method as if it was defined directly on InventTable.
+        inventTable.defaultMyInventLocationId();
+    }
+}
+
+```
+
 > [!NOTE]
-> In this example, the data event handling method is also defined on the augmentation class. In a real implementation, you might want to move the data event handling method into a separate class that contains the event handlers for the InventTable table.
+> It is common for event handler classes to contain handlers for any number of events. However, it is **not** good practice to put event handlers in augmentation classes. Doing so makes the event handler methods available as methods on the augmented type. This is incorrect because the event handler is intended to be called through the event, not explicitly as a method on the type.

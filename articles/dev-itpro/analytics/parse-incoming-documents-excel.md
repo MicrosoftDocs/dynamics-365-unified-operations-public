@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Parse incoming documents in Microsoft Excel
+title: Parse incoming documents in Excel format
 description:  This topic provides information about designing Electronic reporting (ER) formats to parse content contained in incoming Microsoft Excel files. 
 author: NickSelin
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 8.0
 
 ---
 
-# Parse incoming Microsoft Excel files
+# Parse incoming documents in Excel format
 
 [!include[banner](../includes/banner.md)]
 

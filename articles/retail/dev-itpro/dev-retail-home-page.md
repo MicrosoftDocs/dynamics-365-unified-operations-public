@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Retail for IT pros and developers
+title: Retail for IT pros and developers home page
 description: This page lists the resources that are available for IT pros and developers who support Retail.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Microsoft Dynamics 365 for Retail for IT pros and developers
+# Retail for IT pros and developers home page
 
 [!include [banner](../includes/banner.md)]
 

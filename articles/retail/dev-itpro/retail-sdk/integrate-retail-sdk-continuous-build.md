@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Integrate the Retail SDK with the Dynamics 365 Unified Operations platform build definition using Visual Studio Team Services
+title: Merge the build systems for Retail and Finance and Operations
 description: This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail using Visual Studio Team Services.  
 author: andreash1
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Integrate the Retail SDK with the continuous build system (VSTS)
+# Merge the build systems for Retail and Finance and Operations
 
 [!include [banner](../../includes/banner.md)]
 

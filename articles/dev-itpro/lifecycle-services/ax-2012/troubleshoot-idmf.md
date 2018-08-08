@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot 
+title: Troubleshoot the Intelligent Data Management Framework (IDMF)
 description: This topic contains information about troubleshooting the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF).
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Troubleshoot the Intelligent Data Management Framework (AX 2012)
+# Troubleshoot the Intelligent Data Management Framework (IDMF)
 
 [!include [banner](../../includes/banner.md)]
 
