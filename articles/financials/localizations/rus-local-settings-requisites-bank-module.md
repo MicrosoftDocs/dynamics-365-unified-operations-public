@@ -118,4 +118,4 @@ Use the **Document type** form to create a code for a document type that you can
 
 ## Additional resources 
 
-[Set up a method of payment](../rus-payment-order-settings-processing.md)
+[Set up a method of payment](./rus-payment-order-settings-processing.md)
