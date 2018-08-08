@@ -1,13 +1,36 @@
-# (RUS) Set up a method of payment 
+---
+# required metadata
+title: Set up a method of payment 
+description: This topic provides information about payment order settings and processing for Russia. 
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/28/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+			
+# optional metadata
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Russia
+# ms.search.industry: 
+ms.author: shylaw
+ms.search.validFrom: 2018-10-28
+ms.dyn365.ops.version: 8.1
+---
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+# Set up a method of payment 
+
 
 The method of payment determines the format that is used for export of payment orders. Within the payment type, you can also set up bridging accounts when reconciliation is being done. In this case, when posting payment journals, the payments are reflected in off-balance Accounts payable and banking operations. After banking reconciliation, these transactions are reversed and reflected in Accounts payable and banking accounts. To link actual accounts with payment types, in most cases, the number of payment types created equals the number of accounts that the company holds.
 
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
 
 
 
@@ -69,22 +92,8 @@ The method of payment determines the format that is used for export of payment o
 
 16. Press CTRL+S or close the form.
 
-## See also
 
-[(RUS) Methods of payment (modified form)](https://technet.microsoft.com/en-us/library/jj665379\(v=ax.60\))
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Set up to generate a payment order in rubles 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
-
+## Set up to generate a payment order in rubles 
 
 
 1.  Click Click **Cash and bank management** \> **Common** \> **Bank accounts**. Select a bank account. On the **Action Pane**, click **Edit**.
@@ -111,21 +120,9 @@ _**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 6.  Press CTRL+S or close the form.
 
-## See also
 
-[(RUS) Bank accounts (modified form)](https://technet.microsoft.com/en-us/library/jj923612\(v=ax.60\))
+## Set up a method of payment for currency transactions 
 
-[(RUS) Generate a payment order in rubles](rus-generate-a-payment-order-in-rubles.md)
-
-[(RUS) Methods of payment (modified form)](https://technet.microsoft.com/en-us/library/jj665379\(v=ax.60\))
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Set up a method of payment for currency transactions 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 Use the **Methods of payment - vendors** form to set up a method of payment for currency transactions.
 
@@ -153,19 +150,13 @@ Use the **Methods of payment - vendors** form to set up a method of payment for 
 
 9.  In the **Methods of payment - vendors** form, in the **Export format** field, select **Currency transfer order** as the format for the export of payments.
 
-## See also
-
-[(RUS) Methods of payment - vendors (modified form)](https://technet.microsoft.com/en-us/library/jj711469\(v=ax.60\))
+## Additional resources
 
 [(RUS) Create and post a payment journal for an exchanged currency](rus-create-and-post-a-payment-journal-for-an-exchanged-currency.md)
 
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
 
-# (RUS) Set up an intermediate bank account for a foreign vendor 
+## Set up an intermediate bank account for a foreign vendor 
 
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 You can use the **Vendor bank accounts** form to set up a foreign bank account for a vendor, so that you can make payments by using payment orders or payment requests. This bank account is registered with the foreign bank that is linked to the vendor account. For more information, see [(RUS) Set up a foreign bank](rus-set-up-a-foreign-bank.md).
 
