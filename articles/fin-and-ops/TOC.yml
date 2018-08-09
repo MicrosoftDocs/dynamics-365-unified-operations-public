@@ -719,6 +719,8 @@
         href: ../financials/general-ledger/financial-dimensions.md
       - name: Account structures
         href: ../financials/general-ledger/Default-dimensions.md
+      - name: Add financial dimensions to the CFO workspace
+        href: ../financials/general-ledger/CFO-workspace.md
       - name: Create account structures
         href: ../financials/general-ledger/tasks/create-account-structures.md
       - name: Budgeting overview
@@ -1020,6 +1022,8 @@
           href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
         - name: Import currency exchange rates
           href: ../financials/general-ledger/import-currency-exchange-rates.md
+        - name: One voucher
+          href: ../financials/general-ledger/one-voucher.md
       - name: Period-end close
         items:
         - name: Close the general ledger at period end
