@@ -187,6 +187,4 @@ Select the **Summary** tab to view the total quantity of products that have been
 
 Select the **Bill back credits** tab to view the details of individual bill-backs that have been credited to the customer.
 
-To get a more analytical overview of the various performance measures for the promotion, you can use the Analysis view.
-
-Select **Save**.
+To get a more analytical overview of the various performance measures for the promotion, you can use the Analysis view. To go to the Analysis view, click **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**. On the Action Pane, click **Analysis**. 
