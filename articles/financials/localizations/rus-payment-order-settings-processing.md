@@ -150,15 +150,11 @@ Use the **Methods of payment - vendors** form to set up a method of payment for 
 
 9.  In the **Methods of payment - vendors** form, in the **Export format** field, select **Currency transfer order** as the format for the export of payments.
 
-## Additional resources
-
-[(RUS) Create and post a payment journal for an exchanged currency](rus-create-and-post-a-payment-journal-for-an-exchanged-currency.md)
-
 
 ## Set up an intermediate bank account for a foreign vendor 
 
 
-You can use the **Vendor bank accounts** form to set up a foreign bank account for a vendor, so that you can make payments by using payment orders or payment requests. This bank account is registered with the foreign bank that is linked to the vendor account. For more information, see [(RUS) Set up a foreign bank](rus-set-up-a-foreign-bank.md).
+You can use the **Vendor bank accounts** form to set up a foreign bank account for a vendor, so that you can make payments by using payment orders or payment requests. This bank account is registered with the foreign bank that is linked to the vendor account. For more information, see [Set up a foreign bank](../rus-local-settings-requisites-bank-module.md).
 
 You can also set up an intermediate Russian bank account to link to the vendor payments that are made to the foreign bank. You can specify a bank code, an account number, and a Society for Worldwide Interbank Financial Telecommunication (SWIFT) code for the foreign bank that the payments are made to.
 
@@ -174,24 +170,10 @@ You can also set up an intermediate Russian bank account to link to the vendor p
 
 6.  In the **SWIFT** field, enter the SWIFT code of the bank.
 
-## See also
 
-[(RUS) Vendor bank accounts (modified form)](https://technet.microsoft.com/en-us/library/jj711714\(v=ax.60\))
+ 
 
-[(RUS) Set up a customer bank account for payment returns from a foreign vendor](rus-set-up-a-customer-bank-account-for-payment-returns-from-a-foreign-vendor.md)
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Generate a payment order in rubles 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
-
+## Generate a payment order in rubles 
 
 
 1.  Click **Accounts payable** \> **Journals** \> **Payments** \> **Payment journal**.
@@ -293,19 +275,9 @@ Generated payment orders are available in the **Registry of payment orders** for
 
 4.  Close the form.
 
-## See also
 
-[(RUS) Methods of payment (modified form)](https://technet.microsoft.com/en-us/library/jj665379\(v=ax.60\))
+## Payments to foreign bank accounts 
 
-[(RUS) Registry of payment orders (form)](https://technet.microsoft.com/en-us/library/jj711545\(v=ax.60\))
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Payments to foreign bank accounts 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 Payments that are made to vendors by using payment orders or payment requests must include additional information about the vendor bank account if the vendor uses a foreign bank to receive payments. This bank account can include the bank code, the bank name, the Society for Worldwide Interbank Financial Telecommunication (SWIFT) code of the foreign bank, the foreign bank account number of the vendor, and the address of the payer.
 
@@ -317,24 +289,18 @@ For transactions that involve payment returns to a foreign customer, you can set
 
 You must complete the following tasks if you want to generate a payment order for payments to a foreign vendor bank account, or to send a payment return to a foreign customer bank account:
 
-  - Set up a bank account in the **Bank accounts** form. For more information, see [Bank accounts (form)](https://technet.microsoft.com/en-us/library/aa587660\(v=ax.60\)).
+  - Set up a bank account in the **Bank accounts** form. 
 
   - Set up a vendor account in the **Vendors** form.
 
-  - Set up a customer account in the **Customer** form. For more information, see[(RUS) Customers (modified form)](https://technet.microsoft.com/en-us/library/jj853212\(v=ax.60\))
+  - Set up a customer account in the **Customer** form. 
 
   - Set up payment journals for a vendor account and a customer account in the **Ledger journal** form.
 
-## See also
 
-[(RUS) Set up an intermediate bank account for a foreign vendor](rus-set-up-an-intermediate-bank-account-for-a-foreign-vendor.md)
 
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Generate a payment order for a foreign vendor
+## Generate a payment order for a foreign vendor
    
-Applies To: Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2
 
 You can use the **Generate payments** form to generate a payment order for payments that are made to the foreign bank account of a vendor. Before you generate a payment order, you can use the **Journal voucher** form to register a line in the payment journal to record the vendor payments.
 
@@ -346,10 +312,8 @@ You can use the **Generate payments** form to generate a payment order for payme
 6. Click **Functions** > **Generate payments** to open the **Generate payments** form. For more information, see "Generate a payment order in rubles".
 7. Click **OK** to generate the payment order.
 
-# (RUS) Set up a customer bank account for payment returns from a foreign vendor 
+## Set up a customer bank account for payment returns from a foreign vendor 
 
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 For transactions that involve payment returns to a foreign customer, you can set up a customer bank account to receive the payments that are returned. You can then generate a customer payment order that includes the bank and address of the payer. Use the following procedure to set up a customer bank account for payment returns.
 
@@ -367,17 +331,9 @@ For transactions that involve payment returns to a foreign customer, you can set
 
 7.  In the **SWIFT** field, enter the Society for Worldwide Interbank Financial Telecommunication (SWIFT) code of the bank that receives payment returns from the vendor.
 
-## See also
 
-[Customer bank accounts (form)](https://technet.microsoft.com/en-us/library/aa575695\(v=ax.60\))
+## Generate a customer payment order for a payment return 
 
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Generate a customer payment order for a payment return 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 When you send a payment return to the foreign bank account of a customer, you can generate a payment order to make the payment. You can use the **Journal voucher** form to register a line in the payment journal to record the customer payment.
 
@@ -391,25 +347,12 @@ When you send a payment return to the foreign bank account of a customer, you ca
 
 5.  In the **Payment documented on** field, select the customer account that receives the payment return.
 
-6.  Click **Functions** \> **Generate payments** to open the **Generate payments** form. For more information, see [Generate payments - customer (class form)](https://technet.microsoft.com/en-us/library/aa554105\(v=ax.60\)).
+6.  Click **Functions** \> **Generate payments** to open the **Generate payments** form. 
 
 7.  Click **OK** to generate the payment order.
 
-## See also
 
-[Journal voucher - Customer payment journal (form)](https://technet.microsoft.com/en-us/library/aa556141\(v=ax.60\))
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Register an incoming bank payment from a customer 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
+## Register an incoming bank payment from a customer 
 
 
 
@@ -449,22 +392,21 @@ _**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
     
     When the journal is posted, transactions will be generated for the bank account, customer account, and ledger. The debit account will be the account in the ledger configured for the bank account. The credit account will be determined by the posting profile that is selected for the customer.
 
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
 
-# (RUS) Transit account function 
+## Transit account function 
 
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 Use the **Transit account** function to change the date of a posted transaction. The banking operation type must be created, and a transaction account must be set. This function is applied to transactions of the types **Bank-Bank**, **Cash account-Bank**, and **Ledger-Bank**.
 
 You cannot post incoming or outgoing payments if the selected bank account is inactive, or if the receipt date of the banking operation is outside the period when the account is active.
 
-## See also
+
+
+## Additional resources
+
+[(RUS) Create and post a payment journal for an exchanged currency](rus-create-and-post-a-payment-journal-for-an-exchanged-currency.md)
 
 [(RUS) Set up the bank operation type](rus-set-up-the-bank-operation-type.md)
 
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+
 
