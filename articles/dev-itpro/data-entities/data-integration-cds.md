@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Introduction to Data integration with Common Data Service
+title: Data integration by using Common Data Service
 description: This topic provides a brief overview of the mechanics of synchronous and asynchronous integration.
 author: Sunil-Garg
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Introduction to data integration with Common Data Service
+# Data integration by using Common Data Service
 
 [!include [banner](../includes/banner.md)]
 

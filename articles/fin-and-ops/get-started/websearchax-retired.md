@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: WebSearchAX retired
+title: WebSearchAX page has been retired
 description: We’ve had to retire the WebSearchAX page. We recommend that you use site search from your favorite search engine to replace it.
 author: margoc
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 2012
 
 ---
 
-# WebSearchAX retired
+# WebSearchAX page has been retired
 
 [!include [banner](../includes/banner.md)]
 

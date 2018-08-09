@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure the code upgrade service in Lifecycle Services
+title: Configure the code upgrade service in Lifecycle Services (LCS)
 description: This topic explains how to configure the <strong>Code upgrade </strong>tile in Lifecycle Services (LCS) to migrate your solution to the latest version of Finance and Operations.
 author: tariqbell
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure the code upgrade service in Lifecycle Services
+# Configure the code upgrade service in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 

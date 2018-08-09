@@ -1,6 +1,7 @@
 ---
 # required metadata
-title: EventHook
+
+title: EventHook type<T>
 description: EventHook type
 author: shadykdc
 manager: AnnBe
@@ -9,7 +10,9 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+  
 # optional metadata
+
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
@@ -22,9 +25,10 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom:
 ms.dyn365.ops.version:
+
 ---
 
-# EventHook Type&lt;T&gt;
+# EventHook type&lt;T&gt;
 
 [!include [banner](../../../../includes/banner.md)]
 

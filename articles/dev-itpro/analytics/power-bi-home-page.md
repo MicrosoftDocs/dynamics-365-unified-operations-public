@@ -2,7 +2,7 @@
 # required metadata
 
 
-title: PowerBI.com solutions
+title: PowerBI.com solutions home page
 description: This topic lists PowerBI.com solutions that are available and points you to resources where you can learn more about the solutions.
 author: sericks007
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# PowerBI.com solutions
+# PowerBI.com solutions home page
 The following PowerBI.com solutions are available for Dynamics 365 for Finance and Operations environments. 
 
 ## PowerBI.com solutions available from Lifecycle Services (LCS)

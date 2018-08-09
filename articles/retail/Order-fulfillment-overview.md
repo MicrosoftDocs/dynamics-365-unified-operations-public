@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Store order fulfillment overview
+title: Store order fulfillment
 description: This topic provides an overview of store order fulfillment. 
 author: rubencdelgado
 manager: AnnBe

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a copy of a Finance and Operations database to restore later
+title: Export copies of Finance and Operations databases to restore later
 description: This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application.
 author: tariqbell
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Create a copy of a Finance and Operations database to restore later
+# Export copies of Finance and Operations databases to restore later
 
 [!include [banner](../includes/banner.md)]
 

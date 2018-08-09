@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Build a workspace
+title: Build workspaces
 description: In this tutorial, you will create a new tile and include it in the summary section of a workspace, build a new list for a workspace, and create a data cache for the list in the workspace.
 author: jasongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Build a workspace
+# Build workspaces
 
 [!include [banner](../includes/banner.md)]
 

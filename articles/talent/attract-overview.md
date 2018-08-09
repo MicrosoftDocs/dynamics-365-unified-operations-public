@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Attract overview
+title: Attract features and capabilities
 description: Attract provides capabilities to manage the process of hiring new talent. Candidates can be added to open jobs and advanced from stage to stage until an offer is extended or the application is rejected. 
 author: rschloma
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-# Attract overview
+# Attract features and capabilities
 
 [!include [banner](includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X Classes
+title: X classes
 description: System API classes that start with the letter X.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X Classes
+# X classes
 
 [!include [banner](../includes/banner.md)]
 

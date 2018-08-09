@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Data management package integration API
+title: Data management package REST API
 description: This topic describes the data management framework's package REST API.
 
 author: Sunil-Garg
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 5
 
 ---
 
-# Data management package API 
+# Data management package REST API
 
 [!include [banner](../includes/banner.md)]
 

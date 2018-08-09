@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create a record template to facilitate data entry
+title: Create record templates to facilitate data entry
 description: This procedure demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. 
 author: sericks007
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create a record template to facilitate data entry
+# Create record templates to facilitate data entry
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

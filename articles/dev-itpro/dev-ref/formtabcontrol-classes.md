@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: F Classes - FormTabControl to FormWindowControl
+title: F classes (FormTabControl to FormWindowControl)
 description: API reference for classes from FormTabControl to FormWindowControl.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# F Classes - FormTabControl to FormWindowControl
+# F classes (FormTabControl to FormWindowControl)
 
 [!include [banner](../includes/banner.md)]
 

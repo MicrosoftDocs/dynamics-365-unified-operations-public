@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ string run-time functions
+title: X++ string runtime functions
 description: This topic describes the string run-time functions.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ string run-time functions
+# X++ string runtime functions
 
 [!include [banner](../includes/banner.md)]
 

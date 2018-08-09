@@ -3,7 +3,7 @@
  
 title: Set up sales tax groups and item sales tax groups
 description: This task recording walks you through the setup of Sales tax and Item sales tax groups. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/10/2015
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Hire a candidate through recruiting
+title: Hire candidates through recruitment
 description: This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project. 
 author: kherr75
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Hire a candidate through recruiting
+# Hire candidates through recruitment
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

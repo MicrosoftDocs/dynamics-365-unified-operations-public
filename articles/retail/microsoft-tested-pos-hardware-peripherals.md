@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: POS hardware peripherals
+title: Microsoft-tested point of sale (POS) hardware peripherals
 description: Retail Modern point of sale (POS) and Cloud POS can utilize a wide range of POS hardware peripherals, with multiple interfaces and deployment options to achieve a retailer’s various business scenarios. 
 author: jblucher
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# POS hardware peripherals
+# Microsoft-tested point of sale (POS) hardware peripherals
 
 [!include [banner](includes/banner.md)]
 

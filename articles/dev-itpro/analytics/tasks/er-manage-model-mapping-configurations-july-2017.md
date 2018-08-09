@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Manage model mapping configurations for electronic reporting (ER)
+title: Manage ER model mapping in separate ER configurations
 description: The following steps explain how a user assigned to the System administrator or Electronic reporting developer role can manage Electronic reporting (ER) model mappings in separate ER configurations. 
 author: NickSelin
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Manage model mapping configurations for electronic reporting (ER)
+# Manage ER model mapping in separate ER configurations
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

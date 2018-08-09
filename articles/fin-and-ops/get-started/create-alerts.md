@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create alerts
+title: Create alert rules
 description: This topic provides information about alerts and explains how to create an alert rule so that you're notified about events such as a date that arrives or a specific change that occurs.
 author: tjvass
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ---
 
-# Create alerts
+# Create alert rules
 
 [!include [banner](../includes/banner.md)]
 

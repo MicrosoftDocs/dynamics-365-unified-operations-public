@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: ListMetadata
+title: ListMetadata type
 description: Metadata for list control.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# ListMetadata Type
+# ListMetadata type
 
 [!include [banner](../../../../includes/banner.md)]
 

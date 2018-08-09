@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Develop salary/compensation structure and plans
+title: Develop salary/compensation structures and plans
 description: This task guide walks through the process of creating a Fixed compensation plan and enabling employees to be enrolled in the plan through eligibility rules. 
 author: kherr75
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Develop salary/compensation structure and plans
+# Develop salary/compensation structures and plans
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

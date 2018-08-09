@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with Platform update 12.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 05/08/2018
+ms.date: 08/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -53,7 +53,7 @@ The Finance and Operations application consists of three main components:
 
 These components depend on the following system software:
 
-- Microsoft Windows Server 2016
+- Microsoft Windows Server 2016 (only English language installations are supported)
 - Microsoft SQL Server 2016 SP1, which has the following features:
   - Full-text index search is enabled.
   - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines.

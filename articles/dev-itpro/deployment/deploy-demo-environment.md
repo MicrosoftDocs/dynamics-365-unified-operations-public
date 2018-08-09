@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy a demo environment
+title: Deploy demo environments
 description: This topic explains how to deploy a demo environment on Microsoft Azure using Microsoft Dynamics Lifecycle Services (LCS). This applies to Dynamics 365 for Finance and Operations and Dynamics 365 for Retail.
 author: sarvanisathish
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2 
 
 ---
-# Deploy a demo environment
+# Deploy demo environments
 
 [!include [banner](../includes/banner.md)]
 

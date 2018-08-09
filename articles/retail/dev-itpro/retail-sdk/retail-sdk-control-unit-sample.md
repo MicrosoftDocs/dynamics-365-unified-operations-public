@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Control unit sample for Sweden
+title: Sample for Retail POS integration with control units for Sweden
 description: This topic is the building and installation guide for the sample for control unit integration for Sweden. 
 author: EvgenyPopovMBS
 manager: Annbe

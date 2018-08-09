@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Embed PowerApps
+title: Embed PowerApps apps
 description: This topic describes how to embed PowerApps into the Finance and Operations client to augment the product's functionality.
 author: jasongre
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
 ---
 
-# Embed PowerApps
+# Embed PowerApps apps
 
 [!include [banner](../includes/banner.md)]
 

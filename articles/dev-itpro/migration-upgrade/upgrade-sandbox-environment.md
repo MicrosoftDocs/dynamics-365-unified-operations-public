@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Process for upgrading a sandbox environment
+title: Upgrade sandbox environments
 description: This topic describes the steps for performing a data upgrade to a non-production sandbox or standalone sandbox environment. 
 author: tariqbell
 manager: AnnBe
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Process for upgrading a sandbox environment
+# Upgrade sandbox environments
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Buy Dynamics 365 for Finance and Operations (on-premises)
+title: Buy Finance and Operations (on-premises)
 description: This topic explains how to purchase and deploy Microsoft Dynamics 365 for Finance and Operations (on-premises).
 author: maertenm 
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8 
 ---
 
-# Buy Dynamics 365 for Finance and Operations (on-premises)
+# Buy Finance and Operations (on-premises)
 
 [!include [banner](../includes/banner.md)]
 

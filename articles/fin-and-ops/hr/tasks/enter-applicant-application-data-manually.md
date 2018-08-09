@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Enter applicant and application data manually
+title: Manually enter applicant and application data
 description: This procedure shows how to manually maintain information about applicants and their application. 
 author: kherr75
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Enter applicant and application data manually
+# Manually enter applicant and application data
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

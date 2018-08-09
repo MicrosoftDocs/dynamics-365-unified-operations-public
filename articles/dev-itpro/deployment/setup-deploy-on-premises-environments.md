@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up and deploy on-premises environments landing page
+title: Set up and deploy on-premises environments home page
 description: This topic provides links to topics about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Set up and deploy on-premises environments landing page
+# Set up and deploy on-premises environments home page
 
 [!include [banner](../includes/banner.md)]
 

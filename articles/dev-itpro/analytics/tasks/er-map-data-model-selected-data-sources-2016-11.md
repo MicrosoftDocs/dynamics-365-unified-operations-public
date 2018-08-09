@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Map a data model to selected data sources for electronic reporting (ER)
+title: Map Electronic reporting (ER) data models to selected data sources
 description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can map an Electronic reporting (ER) data model to selected Dynamics 365 for Finance and Operations, Enterprise edition (November 2016) data sources. 
 author: NickSelin
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Map a data model to selected data sources for electronic reporting (ER)
+# Map Electronic reporting (ER) data models to selected data sources
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

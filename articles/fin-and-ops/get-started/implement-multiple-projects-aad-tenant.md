@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Implement multiple LCS projects and production environments on the same Azure Active Directory tenant
+title: Multiple LCS projects and production environments on one Azure AD tenant
 description: This topic explains how to implement multiple LCS projects and production environments on the same Azure Active Directory tenant.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
 ---
 
-# Implement multiple LCS projects and production environments on the same Azure Active Directory tenant
+# Multiple LCS projects and production environments on one Azure AD tenant
 [!include [banner](../includes/banner.md)]
 
 For any new Microsoft Dynamics for Finance and Operations (cloud) project, one Microsoft Dynamics Lifecycle Services (LCS) Implementation project is instantiated on a Microsoft Azure Active Directory (Azure AD) tenant that provides access to one production instance. In rare cases, to handle the requirements of a specific implementation, you might require multiple production instances that run in parallel. By creating multiple LCS projects against the same Azure AD tenant, you can have multiple production instances. Here are the most common scenarios where multiple production instances might be required:

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: New or updated Task guides (December 2017)
+title: New or updated task guides (December 2017)
 description: This topic lists the new or updated Task guides that were released to the Microsoft (December 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations. No new Getting Started Library was released.
 author: josaw1
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# New or updated Task guides (December 2017)
+# New or updated task guides (December 2017)
 
 This topic lists the new or updated Task guides that were released to the Microsoft (December 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations.
 
