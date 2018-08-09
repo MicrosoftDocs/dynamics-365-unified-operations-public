@@ -917,45 +917,6 @@
           href: ../financials/fixed-assets/straight-line-life-remaining-depreciation.md
         - name: Straight line service life depreciation
           href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
-
-      - name: Fixed asset tasks
-        items:
-        - name: Calculate fixed asset depreciation across legal entities
-          href: ../financials/fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
-        - name: Change depreciation conventions for multiple fixed assets
-          href: ../financials/fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
-        - name: Change a fixed asset group
-          href: ../financials/fixed-assets/tasks/change-fixed-asset-group.md
-        - name: Create and acquire assets from accounts payable
-          href: ../financials/fixed-assets/tasks/create-acquire-assets-accounts-payable.md
-        - name: Create a depreciation proposal
-          href: ../financials/fixed-assets/tasks/create-depreciation-proposal.md
-        - name: Create a fixed asset
-          href: ../financials/fixed-assets/tasks/create-fixed-asset.md
-        - name: Dispose of a fixed asset using a free text invoice
-          href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
-        - name: Enter an addition to a fixed asset
-          href: ../financials/fixed-assets/tasks/enter-addition-fixed-asset.md
-        - name: Propose fixed asset acquisitions
-          href: ../financials/fixed-assets/tasks/propose-fixed-asset-acquisitions.md
-        - name: Reclassify fixed assets
-          href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
-        - name: Set up bonus depreciation
-          href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
-        - name: Set up depreciation books
-          href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
-        - name: Set up and create depreciation profiles
-          href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
-        - name: Set up fixed asset groups
-          href: ../financials/fixed-assets/tasks/set-up-fixed-asset-groups.md
-        - name: Set up fixed asset posting profiles
-          href: ../financials/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
-        - name: Set up value models
-          href: ../financials/fixed-assets/tasks/set-up-value-models.md
-        - name: Split a fixed asset
-          href: ../financials/fixed-assets/tasks/split-fixed-asset.md
-        - name: Transfer a fixed asset
-          href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
     - name: General ledger
       href: ../financials/general-ledger/general-ledger.md
       items:
