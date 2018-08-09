@@ -483,6 +483,8 @@
           href: ../financials/cash-bank-management/configure-settlement.md
         - name: Vendor payments workspace
           href: ../financials/accounts-payable/vendor-payments-workspace.md
+        - name: Specify a cross rate
+          href: ../financials/accounts-payable/specify-cross-rate.md
         - name: Define vendor payment fees
           href: ../financials/accounts-payable/tasks/define-vendor-payment-fees.md
         - name: Define vendor payment terms
@@ -717,6 +719,8 @@
         href: ../financials/general-ledger/financial-dimensions.md
       - name: Account structures
         href: ../financials/general-ledger/Default-dimensions.md
+      - name: Add financial dimensions to the CFO workspace
+        href: ../financials/general-ledger/CFO-workspace.md
       - name: Create account structures
         href: ../financials/general-ledger/tasks/create-account-structures.md
       - name: Budgeting overview
@@ -847,6 +851,8 @@
           href: ../financials/fixed-assets/fixed-asset-integration.md
       - name: Depreciation methods
         items:
+        - name: Depreciation conventions
+          href: ../financials/fixed-assets/Fixed-asset-depreciation-conventions.md
         - name: 125 percent reducing balance depreciation
           href: ../financials/fixed-assets/125-percent-reducing-balance-depreciation.md
         - name: 150 percent reducing balance depreciation
@@ -1016,6 +1022,8 @@
           href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
         - name: Import currency exchange rates
           href: ../financials/general-ledger/import-currency-exchange-rates.md
+        - name: One voucher
+          href: ../financials/general-ledger/one-voucher.md
       - name: Period-end close
         items:
         - name: Close the general ledger at period end
@@ -2283,6 +2291,10 @@
           href: hr/localizations/noam-usa-earning-code-group-tasks.md
         - name: Set up taxes, tax regions, tax codes, and tax groups
           href: hr/localizations/noam-usa-tax-information-tasks.md
+        - name: Tax codes, tax groups, and posting definitions FAQ
+          href: hr/localizations/noam-usa-tax-codes-tax-groups-definitions.md
+        - name: Enter payroll beginning balances
+          href: hr/localizations/noam-usa-enter-beginning-balances.md
       - name: Garnishments, tax levies, and premium pay
         items:
         - name: Set up garnishments and tax levies
@@ -2299,6 +2311,8 @@
         items:
         - name: Earnings and earnings generation FAQ
           href: hr/localizations/noam-usa-earnings-generation-process.md
+        - name: Generate earnings for workers
+          href: hr/localizations/noam-usa-generate-earnings.md
         - name: Issue worker payments
           href: hr/localizations/noam-usa-issue-worker-payments.md
         - name: Post payroll distributions and generate vendor invoices
@@ -3039,6 +3053,8 @@
         href: organization-administration/tasks/configure-global-address-book.md
       - name: Address books FAQ
         href: organization-administration/qa-address-books.md
+      - name: Configure address books
+        href: organization-administration/tasks/address-books.md
     - name: Workflow system
       href: organization-administration/overview-workflow-system.md
       items:
