@@ -849,6 +849,8 @@
           href: ../financials/fixed-assets/fixed-asset-integration.md
       - name: Depreciation methods
         items:
+        - name: Depreciation conventions
+          href: ../financials/fixed-assets/Fixed-asset-depreciation-conventions.md
         - name: 125 percent reducing balance depreciation
           href: ../financials/fixed-assets/125-percent-reducing-balance-depreciation.md
         - name: 150 percent reducing balance depreciation
