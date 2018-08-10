@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate demo data by using data packages
-description: This topic explains how to use demo data packages to generate data for your system. 
+description: This topic explains how to use demo data packages to generate data for your system.
 author: ryansandness
 manager: AnnBe
 ms.date: 06/06/2018
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-In previous releases, demo data for Microsoft Dynamics 365 for Finance and Operations, is delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment. 
+In previous releases, demo data for Microsoft Dynamics 365 for Finance and Operations, is delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment.
 
 Here are some of the benefits of using data packages instead of a database to deliver demo data:
 
@@ -52,7 +52,7 @@ The demo data packages are designed to be layered on top of each other, as shown
 
 However, the global information for one demo scenario might have completely different requirements than the global information for another demo scenario. For example, the dimensions for one scenario will interfere with the dimensions for another scenario. In this case, a separate global information package will be created, and only packages that are related to that global information can be layered on top of the package.
 
-For example, there is currently a commercial system and shared package as well as a separate public sector system and shared package that can't be used together. 
+For example, there is currently a commercial system and shared package as well as a separate public sector system and shared package that can't be used together.
 
 ### System and Shared package
 
@@ -97,7 +97,6 @@ Package names will include a release identifier. For example, for Finance and Op
 Before you load the data packages, you must manually follow these steps.
 
 1. If you want to sign in as a specific user, change the user's email address to the sign-in address that you want to use. You can make this change in the **User information** data entity spreadsheet or, after you load data, on the **Users** page (**System administration** &gt; **Users**).
-
 2. Start the **Ready to post** batch scheduler. This batch job automatically posts transactions. You must start the scheduler in every legal entity where data should be processed. Follow the steps in the "The Ready to post process" section later in this topic.
 
 ## Load the packages
@@ -146,21 +145,22 @@ Public Sector data
 | 200 - PSUS Financials | You can load this package alone. |
 | 900 - PSUS Financial transactions | Load this package after the PSUS Financials package. |
 
-To load the data correctly, you need to load one package at a time, import it, and then load the next one once the import is complete. We are considering additional methods for loading the demo data to improve the process.  
+To load the data correctly, you need to load one package at a time, import it, and then load the next one once the import is complete. We are considering additional methods for loading the demo data to improve the process.
 
 > [!NOTE]
 > We discovered an issue with the Number sequence references entity that causes a random failure during import although the data in the packages is correct. If you see an error during the import of number sequence references, follow these steps to process the failed records.
+>
 > 1. Click on the name of the entity (**number sequence references**) to display a form that lists all of the records in the data package.
-> 2. Click on **Copy data to target**
-> 3. Change the **Run for** value to **Criteria** and **Change Rows with previous errors** to **Yes**
-> 4. Click **Ok** and then click **Run** on the form that appears
+> 2. Click on **Copy data to target**.
+> 3. Change the **Run for** value to **Criteria** and **Change Rows with previous errors** to **Yes**.
+> 4. Click **Ok** and then click **Run** on the form that appears.
 > 5. Repeat these steps until all records import without error.
 >
 > We are working on the issue and will release a fix for it as soon as possible.
 
 ### After you load the packages
 
-Check **Ready to post** if anything needs to be posted. In some cases individual demo scripts may recommend some setup be done prior to loading this data. 
+Check **Ready to post** if anything needs to be posted. In some cases individual demo scripts may recommend some setup be done prior to loading this data.
 
 In some cases, there might be data that you want to add because of a special scenario or a missing entity. Add that data after you've finished loading the data packages. You might also want to manually post additional transactions or add your own data packages to enhance the demo experience.
 
@@ -170,7 +170,6 @@ After you load the data packages, you must also manually follow these steps.
 2. Set up policy precedence rules. Select **Procurement and sourcing** &gt; **Setup** &gt; **Policies** &gt; **Purchasing policies**, and then select **Parameters**. Then select **Companies**, and move it to the right column.
 3. After you load the Project management and accounting packages, you must run the **Resource capacity roll-up** batch job. You can run this job from the **Synchronize resource capacity roll-ups** page (**Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resource capacity roll-ups**). Specify an end date that lets you schedule resources a long time in the future. After the batch job is run, automatic generation of team functionality will be enabled in the project's work breakdown structure (WBS).
 4. Add Print management settings for each module.
-
 
 ### Scenario scripts
 
@@ -210,7 +209,7 @@ The Ready to post feature uses a batch to monitor the list of transaction types 
 1. Select **System administration** &gt; **Periodic tasks** &gt; **Batch job ready to post** to open the **Ready to post** page.
 2. Select **Create posting monitor**, and set up the batch parameters so that a recurring batch is running. You must complete this step only one time for each legal entity to start the batch process for posting.
 3. Select **New**, and enter a name for the demo data job. The job name must be unique across all companies.
-4. Select **Add line** to add a transaction type. 
+4. Select **Add line** to add a transaction type.
 5. Select the transaction target. For journals, the target is **Post**. For other transactions, the target depends on the transaction type.
 6. Specify a start date and an end date (that is, a date range) to limit the transactions that will be processed (when available).
 7. Specify a "from" document and a "to" document (that is, a document range) to limit the transactions that will be processed (when available).
@@ -224,7 +223,7 @@ When the batch is completed, the status is changed to **Successful** or **Error*
 
 #### Use the Ready to post entity to process transactions
 
-An entity that is named **Demo data posting** lets you import a list of document types that you want to post. The entity will create a demo data job on the **Ready to post** page. If you've started the posting monitor, the transactions are automatically posted after you import the data by using the entity. 
+An entity that is named **Demo data posting** lets you import a list of document types that you want to post. The entity will create a demo data job on the **Ready to post** page. If you've started the posting monitor, the transactions are automatically posted after you import the data by using the entity.
 
 The following columns appear in the **Ready to post** entity.
 
