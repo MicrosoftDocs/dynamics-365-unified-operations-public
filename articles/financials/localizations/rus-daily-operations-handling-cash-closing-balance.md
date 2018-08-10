@@ -1,17 +1,43 @@
-# (EEUR) Create and post vendor invoices with advance holder details 
+---
+# required metadata
+title: Create and post vendor invoices with advance holder details 
+description: This topic provides information on daily operations like handing cash and closing balance for advance holders for Russia. 
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/28/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+			
+# optional metadata
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Russia
+# ms.search.industry: 
+ms.author: shylaw
+ms.search.validFrom: 2018-10-28
+ms.dyn365.ops.version: 8.1
+---
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+# Create and post vendor invoices with advance holder details 
+
 
 Use this procedure to create and post vendor invoices with advance holder details. The advance holder balances are posted to the employee balance account instead of the vendor balance account.
 
 1.  Click **Accounts payable** \> **Common** \> **Purchase orders** \> **All purchase orders**.
 
-2.  Press CTRL+N or click **Purchase order** to create a purchase order. For more information, see [Create a purchase order](create-a-purchase-order.md) and [(EEUR) Purchase orders (modified form)](https://technet.microsoft.com/en-us/library/jj710700\(v=ax.60\)).
+2.  Press CTRL+N or click **Purchase order** to create a purchase order. For more information, see [Create a purchase order](create-a-purchase-order.md).
 
 3.  In the **Purchase order** form, on the **Action Pane**, click **Header view**, and then click the **Price and discount** FastTab.
 
-4.  In the **Terms of payment** field, select the payment term. For more information, see [(EEUR) Terms of payment (modified form)](https://technet.microsoft.com/en-us/library/jj911004\(v=ax.60\)).
+4.  In the **Terms of payment** field, select the payment term. 
     
 
     > [!NOTE]
@@ -29,27 +55,18 @@ Use this procedure to create and post vendor invoices with advance holder detail
 
 9.  Click **Post** \> **Post** to select the posting settings and generate the invoice.
     
-    You can view two vendor transactions with opposite amounts in the **Vendor transactions** form. For more information, see [(EEUR) Vendor transactions (modified form)](https://technet.microsoft.com/en-us/library/jj730985\(v=ax.60\)).
+    You can view two vendor transactions with opposite amounts in the **Vendor transactions** form. 
 
 10. Close the form.
 
-11. Click **Accounts payable** \> **Inquiries** \> **Advance holders** \> **Transactions**. In the **Advance holder transactions** form, you can view one advance holder transaction. For more information, see [(EEUR) Advance holder transactions (form)](https://technet.microsoft.com/en-us/library/jj910968\(v=ax.60\)).
+11. Click **Accounts payable** \> **Inquiries** \> **Advance holders** \> **Transactions**. In the **Advance holder transactions** form, you can view one advance holder transaction. 
 
-12. Click **Voucher** to open the **Voucher transactions** form. The vendor balance account is replaced by the employee balance account, and the **Posting type** field is updated to **Employee balance**. For more information, see [Voucher transactions (form)](https://technet.microsoft.com/en-us/library/aa583215\(v=ax.60\)).
-
-## See also
-
-[(EEUR) Settle advance holder balances](eeur-settle-advance-holder-balances.md)
-
-[(EEUR) Vendor invoice (modified form)](https://technet.microsoft.com/en-us/library/jj862346\(v=ax.60\))
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Close balances for an advance holder 
+12. Click **Voucher** to open the **Voucher transactions** form. The vendor balance account is replaced by the employee balance account, and the **Posting type** field is updated to **Employee balance**.
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+
+## Close balances for an advance holder 
+
 
 You can close balances for an advance holder in one of the following ways:
 
@@ -58,12 +75,8 @@ You can close balances for an advance holder in one of the following ways:
   - Close via bank
 
 
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
 
-
-
-## Closing via cash
+### Closing via cash
 
 1.  Click **Accounts payable** \> **Inquiries** \> **Advance holders** \> **Balance**.
 
@@ -99,7 +112,7 @@ You can close balances for an advance holder in one of the following ways:
 
 8.  Press CTRL+S or close the form.
 
-## Closing via bank
+### Closing via bank
 
 The procedure for closing balances through a bank is similar to closing through cash. You can set up the code for the journal and the bank on the **Advance holders** tab in the **Accounts payable parameters** form.
 
@@ -108,13 +121,8 @@ The procedure for closing balances through a bank is similar to closing through 
 > <P>In the <STRONG>Balance</STRONG> form, you must click <STRONG>Balance closing</STRONG>, and then select <STRONG>Close via bank</STRONG> to open the <STRONG>Close via bank</STRONG> report.</P>
 
 
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
+## Print an advance report 
 
-# (RUS) Print an advance report 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 Use this procedure to print an advance report. You can print an advance report after an advance invoice that is issued to an advance holder is settled.
 
@@ -132,27 +140,18 @@ Use this procedure to print an advance report. You can print an advance report a
 
 4.  Click **OK** to print the advance report in Microsoft Excel format.
 
-## See also
 
-[(RUS) Advance reports (form)](https://technet.microsoft.com/en-us/library/jj733237\(v=ax.60\))
+## Settle advance holder balances 
 
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (EEUR) Settle advance holder balances 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 Use this procedure to settle advance holder balances. When you settle advance holder balances, journal entries for closing the advance holder balances are created in the general journal.
 
 You can close balances for an advance holder in the following ways:
 
-  - Close through cash. For more information, see [(RUS) Close via cash (form)](https://technet.microsoft.com/en-us/library/jj711592\(v=ax.60\)).
+  - Close through cash. 
+  - Close through a bank. 
 
-  - Close through a bank. For more information, see [(RUS) Close via bank (form)](https://technet.microsoft.com/en-us/library/jj665454\(v=ax.60\)).
-
-## Close through cash
+### Close through cash
 
 1.  Click **Accounts payable** \> **Inquiries** \> **Advance holders** \> **Balance**.
 
@@ -186,7 +185,7 @@ You can close balances for an advance holder in the following ways:
 
 
 
-## Close through a bank
+### Close through a bank
 
 The procedure for closing balances through a bank is similar to the procedure for closing through cash. You can set up the code for the journal and the bank in the **Advance holders** area in the **Accounts payable parameters** form.
 
@@ -194,25 +193,14 @@ The procedure for closing balances through a bank is similar to the procedure fo
 > [!NOTE]
 > <P>In the <STRONG>Balance</STRONG> form, you must click <STRONG>Balance closing</STRONG>, and then select <STRONG>Close via bank</STRONG> to open the <STRONG>Close via bank</STRONG> form.</P>
 
+ 
 
+## Complete the settlement for an advance holder 
 
-## See also
-
-[(EEUR) Create and post vendor invoices with advance holder details](eeur-create-and-post-vendor-invoices-with-advance-holder-details.md)
-
-[(EEUR) Accounts payable parameters (modified form)](https://technet.microsoft.com/en-us/library/jj720358\(v=ax.60\))
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Complete the settlement for an advance holder 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 You can complete a manual settlement or periodic settlement for an advance holder. If you clear the **Automatic settlement** check box in the **Accounts payable parameters** form, you must settle the posting or closing transactions manually, or by using the periodic settlement function.
 
-## Settle advance holder transactions manually
+### Settle advance holder transactions manually
 
 Use this procedure to settle advance holder transactions manually.
 
@@ -244,7 +232,7 @@ Use this procedure to settle advance holder transactions manually.
 
 11. On the **Financials** tab, click **View distributions** to verify that the distribution of the expense amount is correct.
 
-## Settle advance holder transactions periodically
+### Settle advance holder transactions periodically
 
 Use this procedure to settle advance holder transactions periodically. When you use the periodic settlement function, all open transactions are settled in chronological order.
 
@@ -258,7 +246,7 @@ Use this procedure to settle advance holder transactions periodically. When you 
 
 5.  Click **OK** to settle the transactions.
 
-## Cancel a periodic settlement
+### Cancel a periodic settlement
 
 Use this procedure to cancel a periodic settlement for advance holder transactions.
 
@@ -269,17 +257,4 @@ Use this procedure to cancel a periodic settlement for advance holder transactio
 3.  Click **Select** to open the supplementary request setup to search for transactions to cancel the settlements for.
 
 4.  Click **OK** to cancel the periodic settlement.
-
-## See also
-
-[(RUS) Periodic reverse (form)](https://technet.microsoft.com/en-us/library/jj678637\(v=ax.60\))
-
-[(RUS) Advance holders (form)](https://technet.microsoft.com/en-us/library/jj665294\(v=ax.60\))
-
-[(RUS) Transaction settlements (form)](https://technet.microsoft.com/en-us/library/jj711614\(v=ax.60\))
-
-[(RUS) Accounts payable parameters (modified form)](https://technet.microsoft.com/en-us/library/jj923609\(v=ax.60\))
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
 
