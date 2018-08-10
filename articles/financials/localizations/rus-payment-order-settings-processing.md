@@ -285,7 +285,7 @@ When you make payments to the foreign bank account of a vendor, the vendor must 
 
 For transactions that involve payment returns to a foreign customer, you can set up a customer bank account to receive the returned payments, and then generate a customer payment order that includes the bank and address of the payer.
 
-## Setting up payments to foreign bank accounts
+### Setting up payments to foreign bank accounts
 
 You must complete the following tasks if you want to generate a payment order for payments to a foreign vendor bank account, or to send a payment return to a foreign customer bank account:
 
