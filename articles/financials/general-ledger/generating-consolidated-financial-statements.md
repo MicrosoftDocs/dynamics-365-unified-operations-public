@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate consolidated financial statements
-description: This topic walks you through the process of generating consolidated financial statements in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes the various scenarios where you might generate consolidated financial statements.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
