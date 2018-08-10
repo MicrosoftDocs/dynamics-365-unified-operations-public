@@ -481,8 +481,12 @@
           href: ../financials/accounts-payable/centralized-payments-accounts-payable.md
         - name: Configure settlement
           href: ../financials/cash-bank-management/configure-settlement.md
+        - name: Vendor payment overview
+          href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
         - name: Vendor payments workspace
           href: ../financials/accounts-payable/vendor-payments-workspace.md
+        - name: Specify a cross rate
+          href: ../financials/accounts-payable/specify-cross-rate.md
         - name: Define vendor payment fees
           href: ../financials/accounts-payable/tasks/define-vendor-payment-fees.md
         - name: Define vendor payment terms
@@ -520,6 +524,8 @@
         href: ../financials/accounts-receivable/accounts-receivables-set-up-overview.md
       - name: Set up credit and collections
         href: ../financials/accounts-receivable/set-up-collections.md
+      - name: Review collections information
+        href: ../financials/accounts-receivable/tasks/review-collections-information.md
       - name: Set up and process recurring invoices
         href: ../financials/accounts-receivable/set-up-process-recurring-invoices.md
       - name: Accounting distributions and subledger journal entries for free text invoices
@@ -535,57 +541,55 @@
       - name: Create a free text invoice
         href: ../financials/accounts-receivable/create-free-text-invoice-new.md
       - name: Create a free text invoice template
-        href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md      
+        href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md  
       - name: Correct a free text invoice
         href: ../financials/accounts-receivable/correct-free-text-invoice.md
+      - name: Assign a free text invoice template to a customer
+        href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
+      - name: Generate and post recurring free text invoices
+        href: ../financials/accounts-receivable/tasks/post-recurring-free-text-invoices.md
+      - name: Create sales order invoices
+        href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
       - name: Set up interest rates for an interest code
         href: ../financials/accounts-receivable/set-up-interest-rates-interest-code.md
       - name: Waive, reinstate, or reverse interest fees
         href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
+      - name: Process interest
+        href: ../financials/accounts-receivable/tasks/process-interest.md
+      - name: Set up vendor invoice policies
+        href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+      - name: Record vendor invoice and match against received quantity
+        href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
       - name: Create a customer invoice
         href: ../financials/accounts-receivable/configure-customer-invoices.md
+      - name: Deposit customer payments
+        href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
       - name: Establish customer payment terms
         href: ../financials/general-ledger/tasks/establish-customer-payment-terms.md
+      - name: Establish customer method of payment
+        href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
+      - name: Establish customer payment fees
+        href: ../financials/accounts-receivable/tasks/establish-customer-payment-fees.md
       - name: Set up bills of exchange
         href: ../financials/accounts-receivable/set-up-bills-exchange.md
       - name: Close Accounts receivable
         href: ../financials/accounts-receivable/close-accounts-receivable.md
-      - name: Accounts receivable tasks
-        items:
-        - name: Assign a free text invoice template to a customer
-          href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
-        - name: Create a collection letter sequence
-          href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
-        - name: Create a direct debit mandate for a customer
-          href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-          name: Create an interest code with a range
-          href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
-        - name: Create sales order invoices
-          href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
-        - name: Create a write-off journal for a customer
-          href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
-        - name: Deposit customer payments
-          href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
-        - name: Establish customer method of payment
-          href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
-        - name: Establish customer payment fees
-          href: ../financials/accounts-receivable/tasks/establish-customer-payment-fees.md
-        - name: Generate and post recurring free text invoices
-          href: ../financials/accounts-receivable/tasks/post-recurring-free-text-invoices.md
-        - name: Process collection letters
-          href: ../financials/accounts-receivable/tasks/process-collection-letters.md
-        - name: Process interest
-          href: ../financials/accounts-receivable/tasks/process-interest.md
-        - name: Record vendor invoice and match against received quantity
-          href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
-        - name: Review collections information
-          href: ../financials/accounts-receivable/tasks/review-collections-information.md
-        - name: Set up and generate accounts receivable aging information
-          href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-        - name: Set up vendor invoice policies
-          href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+      - name: Create a collection letter sequence
+        href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
+      - name: Process collection letters
+        href: ../financials/accounts-receivable/tasks/process-collection-letters.md
+      - name: Create a direct debit mandate for a customer
+        href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
+      - name: Create an interest code with a range
+        href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
+      - name: Create a write-off journal for a customer
+        href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
+      - name: Set up and generate accounts receivable aging information
+        href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
       - name: Payments and settlements
         items:
+        - name: Customer payment overview
+          href: ../financials/cash-bank-management/tasks/customer-payment-overview.md
         - name: Use a customer payment to settle multiple invoices that span multiple discount periods
           href: ../financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
         - name: Centralized payments for Accounts receivable
@@ -644,12 +648,36 @@
         href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
       - name: Letters of credit
         href: ../financials/cash-bank-management/letters-of-credit.md
+      - name: Create a bank facility agreement for a letter of credit
+        href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
+      - name: Set up bank facilities and posting profiles for letter of credit
+        href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
       - name: Letters of credit and import collections
         href: ../financials/cash-bank-management/letters-of-credit-import-collections.md
+      - name: Export a letter of credit
+        href: ../financials/cash-bank-management/tasks/export-letter-credit.md
+      - name: Import a letter of credit
+        href: ../financials/cash-bank-management/tasks/import-letter-credit.md
       - name: Letters of guarantee
         href: ../financials/cash-bank-management/letters-of-guarantee.md
+      - name: Letter of guarantee transaction
+        href: ../financials/cash-bank-management/tasks/letter-guarantee-transaction.md
+      - name: Create a bank facility agreement for the letter of guarantee
+        href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
+      - name: Set up bank facilities and posting profiles for letters of guarantee
+        href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
       - name: Postdated checks
         href: ../financials/cash-bank-management/postdated-checks.md
+      - name: Set up postdated checks
+        href: ../financials/cash-bank-management/tasks/set-up-postdated-checks.md
+      - name: Register and post a postdated check for a customer
+        href: ../financials/cash-bank-management/tasks/register-post-postdated-check-customer.md
+      - name: Register and post a postdated check for a vendor
+        href: ../financials/cash-bank-management/tasks/register-post-postdated-check-vendor.md
+      - name: Settle a postdated check from a customer
+        href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
+      - name: Settle a postdated check for a vendor
+        href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
       - name: Prepayment invoices vs. prepayments
         href: ../financials/accounts-payable/prepayments-invoices-vs-prepayments.md
       - name: Handling cash discounts for overpayments
@@ -658,36 +686,6 @@
         href: ../financials/cash-bank-management/set-up-centralized-payments.md
       - name: Automatic settlement and prioritization
         href: ../financials/accounts-receivable/automatic-settlement-prioritization.md
-      - name: Cash and bank management tasks
-        items:
-        - name: Create a bank facility agreement for a letter of credit
-          href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
-        - name: Create a bank facility agreement for the letter of guarantee
-          href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
-        - name: Customer payment overview
-          href: ../financials/cash-bank-management/tasks/customer-payment-overview.md
-        - name: Export a letter of credit
-          href: ../financials/cash-bank-management/tasks/export-letter-credit.md
-        - name: Import a letter of credit
-          href: ../financials/cash-bank-management/tasks/import-letter-credit.md
-        - name: Letter of guarantee transaction
-          href: ../financials/cash-bank-management/tasks/letter-guarantee-transaction.md
-        - name: Register and post a postdated check for a customer
-          href: ../financials/cash-bank-management/tasks/register-post-postdated-check-customer.md
-        - name: Register and post a postdated check for a vendor
-          href: ../financials/cash-bank-management/tasks/register-post-postdated-check-vendor.md
-        - name: Settle a postdated check from a customer
-          href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
-        - name: Settle a postdated check for a vendor
-          href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
-        - name: Set up bank facilities and posting profiles for letters of guarantee
-          href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
-        - name: Set up bank facilities and posting profiles for letter of credit
-          href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
-        - name: Set up postdated checks
-          href: ../financials/cash-bank-management/tasks/set-up-postdated-checks.md
-        - name: Vendor payment overview
-          href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
       - name: Advanced bank reconciliation
         items:
         - name: Advanced bank reconciliation setup tasks
@@ -717,6 +715,8 @@
         href: ../financials/general-ledger/financial-dimensions.md
       - name: Account structures
         href: ../financials/general-ledger/Default-dimensions.md
+      - name: Add financial dimensions to the CFO workspace
+        href: ../financials/general-ledger/CFO-workspace.md
       - name: Create account structures
         href: ../financials/general-ledger/tasks/create-account-structures.md
       - name: Budgeting overview
@@ -815,6 +815,14 @@
     - name: Fixed assets
       href: ../financials/fixed-assets/fixed-assets.md
       items:
+      - name: Create a fixed asset
+        href: ../financials/fixed-assets/tasks/create-fixed-asset.md
+      - name: Enter an addition to a fixed asset
+        href: ../financials/fixed-assets/tasks/enter-addition-fixed-asset.md
+      - name: Propose fixed asset acquisitions
+        href: ../financials/fixed-assets/tasks/propose-fixed-asset-acquisitions.md
+      - name: Reclassify fixed assets
+        href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
       - name: Fixed asset workspace
         href: ../financials/fixed-assets/fixed-asset-management-workspace.md
       - name: Fixed assets roll forward report
@@ -831,10 +839,20 @@
         href: ../financials/fixed-assets/post-fixed-asset-transactions-posting-layers.md
       - name: Fixed asset transaction options
         href: ../financials/fixed-assets/enter-fixed-asset-transactions.md
+      - name: Transfer a fixed asset
+        href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
+      - name: Split a fixed asset
+        href: ../financials/fixed-assets/tasks/split-fixed-asset.md
+      - name: Set up fixed asset groups
+        href: ../financials/fixed-assets/tasks/set-up-fixed-asset-groups.md
+      - name: Change a fixed asset group
+        href: ../financials/fixed-assets/tasks/change-fixed-asset-group.md
       - name: Recalculate replacement costs and insured values for fixed asset groups
         href: ../financials/fixed-assets/recalculate-replacement-costs-insured-values-fixed-asset-groups.md
       - name: Fixed asset disposal posting accounts
         href: ../financials/fixed-assets/fixed-asset-disposal-posting-accounts.md
+      - name: Dispose of a fixed asset using a free text invoice
+        href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
       - name: Fixed asset mass update
         href: ../financials/fixed-assets/fixed-asset-mass-update.md
       - name: Acquire assets through procurement
@@ -843,10 +861,22 @@
         items:
         - name: Set up fixed assets
           href: ../financials/fixed-assets/set-up-fixed-assets.md
+        - name: Set up fixed asset posting profiles
+          href: ../financials/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
         - name: Fixed assets integration
           href: ../financials/fixed-assets/fixed-asset-integration.md
+        - name: Create and acquire assets from accounts payable
+          href: ../financials/fixed-assets/tasks/create-acquire-assets-accounts-payable.md
+        - name: 'Set up depreciation books '
+          href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
+        - name: Set up and create depreciation profiles
+          href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
+        - name: Set up value models
+          href: ../financials/fixed-assets/tasks/set-up-value-models.md
       - name: Depreciation methods
         items:
+        - name: Depreciation conventions
+          href: ../financials/fixed-assets/Fixed-asset-depreciation-conventions.md
         - name: 125 percent reducing balance depreciation
           href: ../financials/fixed-assets/125-percent-reducing-balance-depreciation.md
         - name: 150 percent reducing balance depreciation
@@ -857,18 +887,26 @@
           href: ../financials/fixed-assets/200-percent-reducing-balance-depreciation.md
         - name: Bonus depreciation
           href: ../financials/fixed-assets/bonus-depreciation.md
+        - name: Set up bonus depreciation
+          href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
         - name: Consumption depreciation
           href: ../financials/fixed-assets/consumption-depreciation.md
         - name: Depreciation effects with reversals
           href: ../financials/fixed-assets/depreciation-effects-reversals.md
         - name: Depreciation methods and conventions
           href: ../financials/fixed-assets/depreciation-methods-conventions.md
+        - name: Create a depreciation proposal
+          href: ../financials/fixed-assets/tasks/create-depreciation-proposal.md
         - name: Factor depreciation
           href: ../financials/fixed-assets/factor-depreciation.md
         - name: Fixed asset acquisition posting accounts
           href: ../financials/fixed-assets/fixed-asset-acquisition-posting-accounts.md
         - name: Fixed asset depreciation
           href: ../financials/fixed-assets/fixed-asset-depreciation.md
+        - name: Calculate fixed asset depreciation across legal entities
+          href: ../financials/fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
+        - name: Change depreciation conventions for multiple fixed assets
+          href: ../financials/fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
         - name: Manual depreciation
           href: ../financials/fixed-assets/manual-depreciation.md
         - name: Reduce balance depreciation
@@ -879,44 +917,6 @@
           href: ../financials/fixed-assets/straight-line-life-remaining-depreciation.md
         - name: Straight line service life depreciation
           href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
-      - name: Fixed asset tasks
-        items:
-        - name: Calculate fixed asset depreciation across legal entities
-          href: ../financials/fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
-        - name: Change depreciation conventions for multiple fixed assets
-          href: ../financials/fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
-        - name: Change a fixed asset group
-          href: ../financials/fixed-assets/tasks/change-fixed-asset-group.md
-        - name: Create and acquire assets from accounts payable
-          href: ../financials/fixed-assets/tasks/create-acquire-assets-accounts-payable.md
-        - name: Create a depreciation proposal
-          href: ../financials/fixed-assets/tasks/create-depreciation-proposal.md
-        - name: Create a fixed asset
-          href: ../financials/fixed-assets/tasks/create-fixed-asset.md
-        - name: Dispose of a fixed asset using a free text invoice
-          href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
-        - name: Enter an addition to a fixed asset
-          href: ../financials/fixed-assets/tasks/enter-addition-fixed-asset.md
-        - name: Propose fixed asset acquisitions
-          href: ../financials/fixed-assets/tasks/propose-fixed-asset-acquisitions.md
-        - name: Reclassify fixed assets
-          href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
-        - name: Set up bonus depreciation
-          href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
-        - name: Set up depreciation books
-          href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
-        - name: Set up and create depreciation profiles
-          href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
-        - name: Set up fixed asset groups
-          href: ../financials/fixed-assets/tasks/set-up-fixed-asset-groups.md
-        - name: Set up fixed asset posting profiles
-          href: ../financials/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
-        - name: Set up value models
-          href: ../financials/fixed-assets/tasks/set-up-value-models.md
-        - name: Split a fixed asset
-          href: ../financials/fixed-assets/tasks/split-fixed-asset.md
-        - name: Transfer a fixed asset
-          href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
     - name: General ledger
       href: ../financials/general-ledger/general-ledger.md
       items:
@@ -1016,6 +1016,8 @@
           href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
         - name: Import currency exchange rates
           href: ../financials/general-ledger/import-currency-exchange-rates.md
+        - name: One voucher
+          href: ../financials/general-ledger/one-voucher.md
       - name: Period-end close
         items:
         - name: Close the general ledger at period end
@@ -1067,22 +1069,40 @@
       items:
       - name: Plan for public sector functionality
         href: ../financials/public-sector/plan-public-sector-functionality.md
+      - name: Create cover and signature pages for a payments report for the public sector
+        href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
       - name: Accounts payable in the public sector
         href: ../financials/public-sector/accounts-payable-public-sector.md
         items:
         - name: Purchase order codes in the public sector
           href: ../financials/public-sector/purchase-order-codes-public-sector.md
+        - name: Create and assign a trading partner code in the public sector
+          href: ../financials/public-sector/tasks/create-assign-trading-partner-code-public-sector.md
         - name: Posting definitions in the public sector
           href: ../financials/public-sector/posting-definitions-public-sector.md
-        - name: Plan for one-time vendors in the public sector
-          href: ../financials/public-sector/plan-one-time-vendors-public-sector.md
         - name: One-time vendors in the public sector
           href: ../financials/public-sector/one-time-vendors-public-sector.md
+        - name: Create a one-time vendor and invoice in the public sector
+          href: ../financials/public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
+        - name: Create a vendor certification type in the public sector
+          href: ../financials/public-sector/tasks/create-vendor-certification-type-public-sector.md
+        - name: Import and create multiple one-time vendors and invoices in the public sector
+          href: ../financials/public-sector/tasks/import-multiple-one-time-vendors.md
+        - name: Plan for one-time vendors in the public sector
+          href: ../financials/public-sector/plan-one-time-vendors-public-sector.md
+        - name: Control access to purchase agreements in the public sector
+          href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
+        - name: Set up purchase agreement classifications in the public sector
+          href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
       - name: Accounts receivable in the public sector
         href: ../financials/public-sector/accounts-receivable-public-sector.md
         items:
         - name: Billing classifications and billing codes in the public sector
           href: ../financials/public-sector/billing-classifications-billing-codes-public-sector.md
+        - name: Create a billing classification in the public sector
+          href: ../financials/public-sector/tasks/create-billing-classification-public-sector.md
+        - name: Create a billing code for the public sector
+          href: ../financials/public-sector/tasks/create-billing-code-public-sector.md
         - name: Settlement priority in the public sector
           href: ../financials/public-sector/settlement-priority-public-sector.md
         - name: Free text invoices in the public sector
@@ -1092,10 +1112,16 @@
       - name: Budgeting in the public sector
         href: ../financials/public-sector/budgeting-public-sector.md
         items:
+        - name: Create an original budget and reverse preliminary budget entries in the public sector
+          href: ../financials/public-sector/tasks/create-original-budget.md
+        - name: Create a preliminary budget for public sector
+          href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
         - name: Budget analysis in the public sector
           href: ../financials/public-sector/budget-analysis-public-sector.md
         - name: Preliminary budgets and apportionments in the public sector
           href: ../financials/public-sector/preliminary-budgets-apportionments-public-sector.md
+        - name: Create a commitment to reserve budget funds for the public sector
+          href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
       - name: Fixed assets in the public sector
         href: ../financials/public-sector/fixed-asset-public-sector.md
       - name: General ledger in the public sector
@@ -1103,52 +1129,26 @@
         items:
         - name: Advanced ledger entries in the public sector
           href: ../financials/public-sector/advanced-ledger-entries-public-sector.md
+        - name: Create an advanced ledger entry in the public sector
+          href: ../financials/public-sector/tasks/create-advanced-ledger-entry-public-sector.md
         - name: Year-end processing in the public sector
           href: ../financials/public-sector/year-end-processing-public-sector.md
         - name: Derived financial hierarchies in the public sector
           href: ../financials/public-sector/derived-financial-hierarchies-public-sector.md
+        - name: Set up a derived financial hierarchy in the public sector
+          href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
       - name: Procurement and sourcing in the public sector
         href: ../financials/public-sector/procurement-sourcing-public-sector.md
       - name: Security roles in the public sector
         href: ../financials/public-sector/security-roles-public-sector.md
       - name: Funds in the public sector
         href: ../financials/public-sector/funds-public-sector.md
-      - name: Public sector tasks
-        items:
-        - name: Add a certification type to a vendor in the public sector
-          href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
-        - name: Control access to purchase agreements in the public sector
-          href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
-        - name: Create an advanced ledger entry in the public sector
-          href: ../financials/public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-        - name: Create and assign a trading partner code in the public sector
-          href: ../financials/public-sector/tasks/create-assign-trading-partner-code-public-sector.md
-        - name: Create a billing classification in the public sector
-          href: ../financials/public-sector/tasks/create-billing-classification-public-sector.md
-        - name: Create a billing code for the public sector
-          href: ../financials/public-sector/tasks/create-billing-code-public-sector.md
-        - name: Create a commitment to reserve budget funds for the public sector
-          href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
-        - name: Create cover and signature pages for a payments report for the public sector
-          href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
-        - name: Create a fund type in the public sector
-          href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
-        - name: Create a one-time vendor and invoice in the public sector
-          href: ../financials/public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
-        - name: Create an original budget and reverse preliminary budget entries in the public sector
-          href: ../financials/public-sector/tasks/create-original-budget.md
-        - name: Create a preliminary budget for public sector
-          href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
-        - name: Create a vendor certification type in the public sector
-          href: ../financials/public-sector/tasks/create-vendor-certification-type-public-sector.md
-        - name: Import and create multiple one-time vendors and invoices in the public sector
-          href: ../financials/public-sector/tasks/import-multiple-one-time-vendors.md
-        - name: Set up a derived financial hierarchy in the public sector
-          href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
-        - name: Set up a fund in the public sector
-          href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
-        - name: Set up purchase agreement classifications in the public sector
-          href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
+      - name: Set up a fund in the public sector
+        href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
+      - name: Create a fund type in the public sector
+        href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
+      - name: Add a certification type to a vendor in the public sector
+        href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
     - name: Financial reporting
       href: ../financials/general-ledger/financial-reporting-getting-started.md
       items:
@@ -1981,22 +1981,62 @@
             href: ../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md
           - name: Import and verify NF-e XML documents and DANFE files
             href: ../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md
+          - name: Service electronic fiscal document using text files
+            href: ../financials/localizations/tasks/br00059-service-electronic-fiscal-document-text-files.md
           - name: Process electronic payment remittances
             href: ../financials/localizations/latam-bra-process-electronic-payment-remittances.md
+          - name: Electronic payment management for vendor payments
+            href: ../financials/localizations/tasks/br-00067-electronic-payment-management-vendor-payments.md
           - name: Fiscal documents
             href: ../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md
           - name: Fiscal document text placeholders
             href: ../financials/localizations/latam-bra-fiscal-document-text-placeholders.md
+          - name: Set up fiscal document source text
+            href: ../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md
+          - name: Manage fiscal document text in procurement documents
+            href: ../financials/localizations/tasks/br-00080-manage-fiscal-document-texts-procurement-documents.md
+          - name: Issue fiscal documents for vendors
+            href: ../financials/localizations/tasks/br-00033-issuing-fiscal-document-non-taxable-vendors.md
+          - name: Issue customer fiscal documents
+            href: ../financials/localizations/tasks/br-00038-issuing-customer-fiscal-document.md  
           - name: Purchase complementary fiscal documents
             href: ../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md
+          - name: Create and post a purchase complementary fiscal document
+            href: ../financials/localizations/tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md
+          - name: Cancel a purchase complementary fiscal document
+            href: ../financials/localizations/tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md   
           - name: Referenced fiscal documents
             href: ../financials/localizations/latam-bra-referenced-fiscal-documents.md
+          - name: Receive vendor fiscal documents (products)
+            href: ../financials/localizations/tasks/br-00024-receiving-vendor-fiscal-document-products.md
+          - name: Receive vendor fiscal documents (fixed assets - PIS and COFINS long term recoverable)
+            href: ../financials/localizations/tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md  
+          - name: Receive vendor fiscal documents (fixed assets - ICMS long term recoverable)
+            href: ../financials/localizations/tasks/br-00082-receiving-vendor-fiscal-document-fixed-assets-icms-long-term-recoverable.md
+          - name: Issue customer fiscal documents (services)
+            href: ../financials/localizations/tasks/br-00084-issuing-customer-fiscal-documents-services.md
+          - name: Issue customer fiscal documents (fixed assets)
+            href: ../financials/localizations/tasks/br-00085-issuing-customer-fiscal-documents-fixed-assets.md
+          - name: Issue customer fiscal documents (project)
+            href: ../financials/localizations/tasks/br-00086-issuing-customer-fiscal-documents-project.md
+          - name: Issue customer fiscal documents (for end users)
+            href: ../financials/localizations/tasks/br-00087-issuing-customer-fiscal-documents-end-user.md
+          - name: Issue customer fiscal documents (for SUFRAMA customers)
+            href: ../financials/localizations/tasks/br-00088-issuing-customer-fiscal-documents-suframa-customers.md
+          - name: Cancel a customer fiscal document (project)
+            href: ../financials/localizations/tasks/br-00092-cancel-customer-fiscal-document-project.md
           - name: Sales complementary fiscal documents
             href: ../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md
+          - name: Create and post a sales complementary fiscal document
+            href: ../financials/localizations/tasks/br-00052-1-create-post-sales-complementary-fiscal-documents.md
+          - name: Cancel a sales complementary fiscal document
+            href: ../financials/localizations/tasks/br-00052-2-cancel-sales-complementary-fiscal-document.md
           - name: Service electronic fiscal document
             href: ../financials/localizations/latam-bra-service-electronic-fiscal-document.md
           - name: Journals generated during the electronic payment return process
             href: ../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md
+          - name: Project debit notes
+            href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
         - name: NF-e process
           href: ../financials/localizations/latam-bra-nf-e-process.md
           items:
@@ -2014,10 +2054,32 @@
             href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
         - name: Parameters for legal entities
           href: ../financials/localizations/latam-bra-legal-entity-parameters.md
+        - name: Set up legal entity parameters
+          href: ../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md
         - name: Acquire a CIAP fixed asset
           href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
         - name: Dispose a CIAP fixed asset
           href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
+        - name: Enter a CIAP transaction
+          href: ../financials/localizations/tasks/br-10020-1-enter-ciap-transaction.md
+        - name: Calculate CIAP credit amount
+          href: ../financials/localizations/tasks/br-10020-2-calculate-ciap-credit-amount.md
+        - name: Include CIAP credit from a previous period
+          href: ../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md
+        - name: Delivery slips
+          href: ../financials/localizations/tasks/br-00041-delivery-slip.md
+        - name: Non-fiscal operations
+          href: ../financials/localizations/tasks/br-10016-non-fiscal-operations.md
+        - name: Miscellaneous charges on free text invoices
+          href: ../financials/localizations/tasks/br-00050-miscellaneous-charge-free-text-invoice.md
+        - name: Set up interest and fines for vendor payments
+          href: ../financials/localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
+        - name: Calculate interest and fines on vendor payments
+          href: ../financials/localizations/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md
+        - name: Set up interest and fines on customer payments
+          href: ../financials/localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
+        - name: Calculate interest and fines on customer payments
+          href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
         - name: Taxes
           href: ../financials/localizations/latam-bra-calculate-taxes.md
           items:
@@ -2045,6 +2107,8 @@
             href: ../financials/localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
           - name: Set up adjustment codes for IPI taxes
             href: ../financials/localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
+          - name: PIS and COFINS fixed assets
+            href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
           - name: Set up adjustment codes for PIS and COFINS taxes
             href: ../financials/localizations/tasks/br-10006-2-set-up-adjustment-codes-pis-cofins-taxes.md
           - name: Set up PIS and COFINS tables
@@ -2063,72 +2127,6 @@
             href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
           - name: Withholding taxes on vendor payments
             href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
-        - name: Tasks for Brazil
-          items:
-          - name: Set up legal entity parameters
-            href: ../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md
-          - name: Set up fiscal document source text
-            href: ../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md
-          - name: Receive vendor fiscal documents (fixed assets - PIS and COFINS long term recoverable)
-            href: ../financials/localizations/tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md
-          - name: Receive vendor fiscal documents (products)
-            href: ../financials/localizations/tasks/br-00024-receiving-vendor-fiscal-document-products.md
-          - name: Create and post a purchase complementary fiscal document
-            href: ../financials/localizations/tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md
-          - name: Cancel a purchase complementary fiscal document
-            href: ../financials/localizations/tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md
-          - name: Issue fiscal documents for vendors
-            href: ../financials/localizations/tasks/br-00033-issuing-fiscal-document-non-taxable-vendors.md
-          - name: Issue customer fiscal documents
-            href: ../financials/localizations/tasks/br-00038-issuing-customer-fiscal-document.md
-          - name: Delivery slips
-            href: ../financials/localizations/tasks/br-00041-delivery-slip.md
-          - name: Miscellaneous charges on free text invoices
-            href: ../financials/localizations/tasks/br-00050-miscellaneous-charge-free-text-invoice.md
-          - name: Create and post a sales complementary fiscal document
-            href: ../financials/localizations/tasks/br-00052-1-create-post-sales-complementary-fiscal-documents.md
-          - name: Cancel a sales complementary fiscal document
-            href: ../financials/localizations/tasks/br-00052-2-cancel-sales-complementary-fiscal-document.md
-          - name: Service electronic fiscal document using text files
-            href: ../financials/localizations/tasks/br00059-service-electronic-fiscal-document-text-files.md
-          - name: Set up interest and fines for vendor payments
-            href: ../financials/localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
-          - name: Calculate interest and fines on vendor payments
-            href: ../financials/localizations/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md
-          - name: Set up interest and fines on customer payments
-            href: ../financials/localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
-          - name: Calculate interest and fines on customer payments
-            href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
-          - name: Electronic payment management for vendor payments
-            href: ../financials/localizations/tasks/br-00067-electronic-payment-management-vendor-payments.md
-          - name: Project debit notes
-            href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
-          - name: Manage fiscal document text in procurement documents
-            href: ../financials/localizations/tasks/br-00080-manage-fiscal-document-texts-procurement-documents.md
-          - name: Receive vendor fiscal documents (fixed assets - ICMS long term recoverable)
-            href: ../financials/localizations/tasks/br-00082-receiving-vendor-fiscal-document-fixed-assets-icms-long-term-recoverable.md
-          - name: Issue customer fiscal documents (services)
-            href: ../financials/localizations/tasks/br-00084-issuing-customer-fiscal-documents-services.md
-          - name: Issue customer fiscal documents (fixed assets)
-            href: ../financials/localizations/tasks/br-00085-issuing-customer-fiscal-documents-fixed-assets.md
-          - name: Issue customer fiscal documents (project)
-            href: ../financials/localizations/tasks/br-00086-issuing-customer-fiscal-documents-project.md
-          - name: Issue customer fiscal documents (for end users)
-            href: ../financials/localizations/tasks/br-00087-issuing-customer-fiscal-documents-end-user.md
-          - name: Issue customer fiscal documents (for SUFRAMA customers)
-            href: ../financials/localizations/tasks/br-00088-issuing-customer-fiscal-documents-suframa-customers.md
-          - name: Cancel a customer fiscal document (project)
-            href: ../financials/localizations/tasks/br-00092-cancel-customer-fiscal-document-project.md
-          - name: Non-fiscal operations
-            href: ../financials/localizations/tasks/br-10016-non-fiscal-operations.md
-          - name: Enter a CIAP transaction
-            href: ../financials/localizations/tasks/br-10020-1-enter-ciap-transaction.md
-          - name: Calculate CIAP credit amount
-            href: ../financials/localizations/tasks/br-10020-2-calculate-ciap-credit-amount.md
-          - name: Include CIAP credit from a previous period
-            href: ../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md
-          - name: PIS and COFINS fixed assets
-            href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
       - name: Mexico
         href: ../financials/localizations/mexico.md
         items:
@@ -2189,12 +2187,20 @@
     items:
     - name: Develop a human resources strategy
       items:
+      - name: Create goals
+        href: hr/tasks/create-goal.md
       - name: Organize your workforce using departments, jobs, and positions
         href: ../talent/departments-jobs-positions.md
       - name: Set up job components
         href: ../talent/create-job.md
+      - name: Define new departments
+        href: hr/tasks/define-new-departments.md
+      - name: Define new jobs
+        href: hr/tasks/define-new-jobs.md
       - name: Create a department and associate it with the department hierarchy
         href: ../talent/create-department-add-department-hierarchy.md
+      - name: Create calendars and generate working times
+        href: hr/tasks/create-calendar-working-times.md
       - name: Set up HR parameters across legal entities
         href: ../talent/set-up-hr-parameters-across-legal-entities.md
       - name: Set up company-specific HR parameters
@@ -2203,12 +2209,46 @@
         href: ../talent/personnel-actions-faq.md
       - name: Use workflow to manage employee information
         href: ../talent/workflow-manage-employee-information.md
+      - name: Modify reporting relationships for positions
+        href: hr/tasks/modify-reporting-relationships-position.md
+      - name: Approve application inbox records
+        href: hr/tasks/approve-application-inbox-records.md
+      - name: Enter worker information
+        href: hr/tasks/enter-worker-information.md
+      - name: Loan items to workers
+        href: hr/tasks/loan-item-worker.md
+      - name: Create loan items
+        href: hr/tasks/create-loan-items.md
+      - name: Manage items lent to workers
+        href: ../talent/loan-items.md
+      - name: Develop a succession plan
+        href: hr/tasks/develop-succession-plan.md
+      - name: Enter project timesheets
+        href: hr/tasks/enter-project-timesheets.md
+      - name: Manage email templates
+        href: hr/tasks/manage-email-templates.md
+      - name: Manage leaves of absence
+        href: hr/tasks/manage-leave-absence.md
     - name: Recruiting
       items:
       - name: Manage recruiting processes
         href: hr/manage-recruiting-process.md
       - name: Mass hire projects
         href: hr/mass-hire-projects.md
+      - name: Create mass hire projects
+        href: hr/tasks/create-mass-hire-project.md
+      - name: Manually enter applicant and application data
+        href: hr/tasks/enter-applicant-application-data-manually.md
+      - name: Develop and open job requisitions
+        href: hr/tasks/develop-open-job-requisition.md
+      - name: Set up positions
+        href: hr/tasks/set-up-positions.md
+      - name: Hire candidates through recruitment
+        href: hr/tasks/hire-candidate-through-recruiting.md
+      - name: Hire an existing employees through recruitment
+        href: hr/tasks/hire-existing-employee-through-recruiting.md
+      - name: Identify and deploy candidate selection tools
+        href: hr/tasks/identify-deploy-candidate-selection-tools.md
     - name: Motivate employees
       items:
       - name: Compensation plans
@@ -2217,8 +2257,22 @@
         href: ../talent/create-fixed-compensation-plans.md
       - name: Create variable compensation plans
         href: ../talent/create-variable-compensation-plans.md
+      - name: Define compensation processes and calculate results
+        href: hr/tasks/define-compensation-process-calculate-results.md
       - name: Process compensation
         href: ../talent/process-compensation.md
+      - name: Set up compensation grids
+        href: hr/tasks/set-up-compensation-grids.md
+      - name: Develop salary/compensation structures and plans
+        href: hr/tasks/develop-salary-compensation-structure-plan.md
+      - name: Add information to your performance journal and send praise
+        href: hr/tasks/add-your-performance-journal-send-praise-someone.md
+      - name: Enroll employees in a fixed compensation plan
+        href: hr/tasks/enroll-employee-fixed-compensation-plan.md
+      - name: Enroll employees in a variable compensation plan
+        href: hr/tasks/enroll-employee-variable-compensation-plan.md
+      - name: Create performance reviews
+        href: hr/tasks/create-performance-review.md
     - name: Develop and train employees
       items:
       - name: Performance management overview
@@ -2233,8 +2287,18 @@
         href: ../talent/manage-benefit-program.md
       - name: Benefit eligibility policies
         href: ../talent/benefit-eligibility-policies.md
-      - name: Manage items lent to workers
-        href: ../talent/loan-items.md
+      - name: Benefit eligibility process
+        href: hr/tasks/benefit-eligibility-process.md
+      - name: Define benefit eligibility rules and policies
+        href: hr/tasks/define-benefit-eligibility-rules-policies.md
+      - name: Deliver an employee benefits program
+        href: hr/tasks/deliver-employee-benefits-program.md
+      - name: Create new benefits
+        href: hr/tasks/create-new-benefit.md
+      - name: Enroll workers in benefits and remove benefits from workers
+        href: hr/tasks/enroll-remove-benefits-workers.md
+      - name: Manage benefit expiration dates
+        href: hr/tasks/manage-benefit-expiration-dates.md
     - name: Gather information using questionnaires
       items:
       - name: Questionnaires
@@ -2243,8 +2307,18 @@
         href: ../talent/design-questionnaires.md
       - name: Distribute and complete a questionnaire
         href: ../talent/distribute-questionnaires.md
+      - name: Distribute questionnaires using scheduling
+        href: hr/tasks/distribute-questionnaires-scheduling.md
       - name: Evaluate the results of a questionnaire
         href: ../talent/evaluate-questionnaire-results.md
+      - name: Analyze questionnaire results
+        href: hr/tasks/analyze-questionnaire-results.md
+      - name: Create open-ended questions
+        href: hr/tasks/create-open-ended-question.md
+      - name: Create closed-ended questions
+        href: hr/tasks/create-closed-ended-question.md
+      - name: Make questions dependent on the answer of the previous question
+        href: hr/tasks/make-question-dependent-answer-previous-question.md
     - name: Workplace safety and compliance (United States)
       items:
       - name: Form I-9 verification
@@ -2257,6 +2331,10 @@
         href: hr/localizations/noam-usa-comply-ada.md
       - name: Manage worker accommodations
         href: hr/localizations/tasks/manage-worker-accommodations.md
+      - name: Set up injury and illness information
+        href: hr/tasks/set-up-injury-illness-information.md
+      - name: Maintain employee injury and illness information
+        href: hr/tasks/maintain-employee-injury-illness-information.md
     - name: US Payroll
       href: hr/localizations/noam-usa-payroll.md
       items:
@@ -2283,6 +2361,10 @@
           href: hr/localizations/noam-usa-earning-code-group-tasks.md
         - name: Set up taxes, tax regions, tax codes, and tax groups
           href: hr/localizations/noam-usa-tax-information-tasks.md
+        - name: Tax codes, tax groups, and posting definitions FAQ
+          href: hr/localizations/noam-usa-tax-codes-tax-groups-definitions.md
+        - name: Enter payroll beginning balances
+          href: hr/localizations/noam-usa-enter-beginning-balances.md
       - name: Garnishments, tax levies, and premium pay
         items:
         - name: Set up garnishments and tax levies
@@ -2299,6 +2381,8 @@
         items:
         - name: Earnings and earnings generation FAQ
           href: hr/localizations/noam-usa-earnings-generation-process.md
+        - name: Generate earnings for workers
+          href: hr/localizations/noam-usa-generate-earnings.md
         - name: Issue worker payments
           href: hr/localizations/noam-usa-issue-worker-payments.md
         - name: Post payroll distributions and generate vendor invoices
@@ -2319,88 +2403,6 @@
           href: hr/localizations/noam-usa-payroll-data-updates.md
         - name: Standard payroll reports
           href: hr/localizations/noam-usa-generate-payroll-reports.md
-    - name: Human resources tasks
-      items:
-      - name: Add information to your performance journal and send praise
-        href: hr/tasks/add-your-performance-journal-send-praise-someone.md
-      - name: Analyze questionnaire results
-        href: hr/tasks/analyze-questionnaire-results.md
-      - name: Approve application inbox records
-        href: hr/tasks/approve-application-inbox-records.md
-      - name: Benefit eligibility process
-        href: hr/tasks/benefit-eligibility-process.md
-      - name: Create calendars and generate working times
-        href: hr/tasks/create-calendar-working-times.md
-      - name: Create closed-ended questions
-        href: hr/tasks/create-closed-ended-question.md
-      - name: Create goals
-        href: hr/tasks/create-goal.md
-      - name: Create loan items
-        href: hr/tasks/create-loan-items.md
-      - name: Create mass hire projects
-        href: hr/tasks/create-mass-hire-project.md
-      - name: Create new benefits
-        href: hr/tasks/create-new-benefit.md
-      - name: Create open-ended questions
-        href: hr/tasks/create-open-ended-question.md
-      - name: Create performance reviews
-        href: hr/tasks/create-performance-review.md
-      - name: Define benefit eligibility rules and policies
-        href: hr/tasks/define-benefit-eligibility-rules-policies.md
-      - name: Define compensation processes and calculate results
-        href: hr/tasks/define-compensation-process-calculate-results.md
-      - name: Define new departments
-        href: hr/tasks/define-new-departments.md
-      - name: Define new jobs
-        href: hr/tasks/define-new-jobs.md
-      - name: Deliver an employee benefits program
-        href: hr/tasks/deliver-employee-benefits-program.md
-      - name: Develop and open job requisitions
-        href: hr/tasks/develop-open-job-requisition.md
-      - name: Develop salary/compensation structures and plans
-        href: hr/tasks/develop-salary-compensation-structure-plan.md
-      - name: Develop a succession plan
-        href: hr/tasks/develop-succession-plan.md
-      - name: Distribute questionnaires using scheduling
-        href: hr/tasks/distribute-questionnaires-scheduling.md
-      - name: Enroll employees in a fixed compensation plan
-        href: hr/tasks/enroll-employee-fixed-compensation-plan.md
-      - name: Enroll employees in a variable compensation plan
-        href: hr/tasks/enroll-employee-variable-compensation-plan.md
-      - name: Enroll workers in benefits and remove benefits from workers
-        href: hr/tasks/enroll-remove-benefits-workers.md
-      - name: Manually enter applicant and application data
-        href: hr/tasks/enter-applicant-application-data-manually.md
-      - name: Enter project timesheets
-        href: hr/tasks/enter-project-timesheets.md
-      - name: Enter worker information
-        href: hr/tasks/enter-worker-information.md
-      - name: Hire candidates through recruitment
-        href: hr/tasks/hire-candidate-through-recruiting.md
-      - name: Hire existing employees through recruitment
-        href: hr/tasks/hire-existing-employee-through-recruiting.md
-      - name: Identify and deploy candidate selection tools
-        href: hr/tasks/identify-deploy-candidate-selection-tools.md
-      - name: Loan items to workers
-        href: hr/tasks/loan-item-worker.md
-      - name: Maintain employee injury and illness information
-        href: hr/tasks/maintain-employee-injury-illness-information.md
-      - name: Make questions dependent on the answer of the previous question
-        href: hr/tasks/make-question-dependent-answer-previous-question.md
-      - name: Manage benefit expiration dates
-        href: hr/tasks/manage-benefit-expiration-dates.md
-      - name: Manage email templates
-        href: hr/tasks/manage-email-templates.md
-      - name: Manage leaves of absence
-        href: hr/tasks/manage-leave-absence.md
-      - name: Modify the reporting relationships for positions
-        href: hr/tasks/modify-reporting-relationships-position.md
-      - name: Set up compensation grids
-        href: hr/tasks/set-up-compensation-grids.md
-      - name: Set up injury and illness information
-        href: hr/tasks/set-up-injury-illness-information.md
-      - name: Set up positions
-        href: hr/tasks/set-up-positions.md
   - name: Intelligence
     href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
     items:
@@ -3039,6 +3041,8 @@
         href: organization-administration/tasks/configure-global-address-book.md
       - name: Address books FAQ
         href: organization-administration/qa-address-books.md
+      - name: Configure address books
+        href: organization-administration/tasks/address-books.md
     - name: Workflow system
       href: organization-administration/overview-workflow-system.md
       items:

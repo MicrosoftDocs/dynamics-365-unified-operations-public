@@ -112,7 +112,7 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\Reference folder
 
     To learn how generate the interface and manager classes, see the Store Hours sample in the Retail SDK. The instructions are in the **RetailSDK\Code\Documents\SampleExtensionsInstructions\StoreHours\readme.txt** file.
     
-**How to generate C# proxy (this applicable for both POS and Ecommerce) for 7.3**
+## How to generate C# proxy (this applicable for both POS and Ecommerce) for 7.3
 
 1.  Navigate to RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions. StoreHoursSample
 
