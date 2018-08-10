@@ -213,15 +213,13 @@ Transactions for these workers can be posted by using advance holder accounts. T
 
 ## Set up a worker table number for an advance holder 
 
-
-
 Use this procedure to set up a worker table number for a worker. You can view the details of employees in the **Employment history** form, and you can identify the employees as advance holders.
 
 1.  Click **Human resources** \> **Common** \> **Workers** \> **Workers**.
 
 2.  On the **Action Pane**, click **Hire new worker**.
 
-3.  Enter the first, middle, and last names of the person who you are hiring to fill the position. For more information, see [Key tasks: Workers](key-tasks-workers.md).
+3.  Enter the first, middle, and last names of the person who you are hiring to fill the position. 
 
 4.  In the **Worker ID** field, enter the unique internal number that is used to identify advance holders.
 
