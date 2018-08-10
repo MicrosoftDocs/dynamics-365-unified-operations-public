@@ -1,21 +1,14 @@
-# (RUS) Set up parameters for advance holders 
+# Set up parameters for advance holders 
 
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 1.  Click **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
-    
-
-    > [!NOTE]
-    > <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
-
 
 
 2.  Click **Advance holders**, and then in the **Advance holders** area, in the **Posting profile** field, select the default profile to complete transactions for advance holders.
     
 
     > [!NOTE]
-    > <P>For more information, see <A href="rus-set-up-posting-profiles-for-accounting-vouchers.md">(RUS) Set up posting profiles for accounting vouchers</A>.</P>
+    > <P>For more information, see "Set up posting profiles for accounting vouchers".</P>
 
 
 
@@ -45,23 +38,8 @@ _**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 12. Press CTRL+S or close the form.
 
-## See also
 
-[(RUS) Accounts payable parameters (modified form)](https://technet.microsoft.com/en-us/library/jj923609\(v=ax.60\))
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Set up an advance holder group 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
-
-
+## Set up an advance holder group 
 
 You must create an advance holder group in order to group advance holders. For example, you can group advance holders by vouchers calculated in a single account.
 
@@ -77,20 +55,11 @@ You must create an advance holder group in order to group advance holders. For e
 
 6.  Press CTRL+S or close the form.
 
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
 
-# (RUS) Set up posting profiles for accounting vouchers 
+## Set up posting profiles for accounting vouchers 
 
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 You can set up the following posting profiles for an account of operations:
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
-
 
 
   - One ledger account for all advance holders.
@@ -131,23 +100,15 @@ You can set up the following posting profiles for an account of operations:
 
 9.  Press CTRL+S or close the form.
 
-## See also
 
-[(RUS) Advance holders (form)](https://technet.microsoft.com/en-us/library/jj665294\(v=ax.60\))
+## Set up employee posting profiles for dimensions control for settlements 
 
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Set up employee posting profiles for dimensions control for settlements 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 Use this procedure to set up employee posting profiles for dimension control for settlements by using the **Employee posting profiles** form. Set up advance holder posting profiles for accruals and closing payment operations. These posting profiles can be adjusted for advance holder operation of payments and debts by using a dimension set for control for settlements.
 
 1.  Click **Accounts payable** \> **Setup** \> **Advance holders** \> **Employee posting profiles**.
 
-2.  Create a new employee posting profile. For more information, see [(RUS) Set up posting profiles for accounting vouchers](rus-set-up-posting-profiles-for-accounting-vouchers.md).
+2.  Create a new employee posting profile. For more information, see "Set up posting profiles for accounting vouchers".
 
 3.  Click the **Table restrictions** FastTab.
 
@@ -177,26 +138,10 @@ Use this procedure to set up employee posting profiles for dimension control for
 
 
 
-## See also
+## Set up the terms of payment 
 
-[(RUS) Set up customer posting profiles for dimensions control for settlements](rus-set-up-customer-posting-profiles-for-dimensions-control-for-settlements.md)
-
-[(RUS) Employee posting profiles (form)](https://technet.microsoft.com/en-us/library/jj733181\(v=ax.60\))
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Set up the terms of payment 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 You must set up the terms of payment when you register the purchase of goods from a vendor through an advance holder. The advance holder makes the purchase.
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
-
 
 
 1.  Click **Accounts payable** \> **Setup** \> **Payment** \> **Terms of payment**.
@@ -217,20 +162,11 @@ You must set up the terms of payment when you register the purchase of goods fro
 
 9.  Press CTRL+S or close the form.
 
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
 
-# (RUS) Set up the per diem expense rates 
+## Set up the per diem expense rates 
 
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 Expense rates are used to generate an advance report for per diem expenses, and for automatic calculation of standard and over-rate amounts.
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
-
 
 
 1.  Click Click **Accounts payable** \> **Setup** \> **Advance holders** \> **Expense rates**.
@@ -265,34 +201,19 @@ Expense rates are used to generate an advance report for per diem expenses, and 
 
 16. Press CTRL+S or close the form.
 
-## See also
-
-[(RUS) Expense rates (form)](https://technet.microsoft.com/en-us/library/jj733231\(v=ax.60\))
-
-# (RUS) About worker table numbers for advance holders 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+## About worker table numbers for advance holders 
+
 
 A worker can be an employee or a contractor, and can hold several positions in an organization. An employee or a contractor can also be an advance holder who is accountable for the expense amount that is provided by the organization. To specify a worker as an advance holder, you must enter a unique worker ID in the **Worker ID** field in the **Worker** form. You must also select the **Advance holder** check box in the **Advance holders** form to indicate that the selected worker is an advance holder.
 
 Transactions for these workers can be posted by using advance holder accounts. The worker ID that is specified for each advance holder can be used to track all advance holder transactions. This number is retrieved as an account number for advance holder transactions in the **General journals** and **Advance holder transactions** forms.
 
-## See also
 
-[(RUS) Advance holders (form)](https://technet.microsoft.com/en-us/library/jj665294\(v=ax.60\))
-
-[(RUS) Create new worker (modified form)](https://technet.microsoft.com/en-us/library/jj733249\(v=ax.60\))
-
-[(RUS) Transaction settlements (form)](https://technet.microsoft.com/en-us/library/jj711614\(v=ax.60\))
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Set up a worker table number for an advance holder 
+## Set up a worker table number for an advance holder 
 
 
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 Use this procedure to set up a worker table number for a worker. You can view the details of employees in the **Employment history** form, and you can identify the employees as advance holders.
 
@@ -316,22 +237,8 @@ Use this procedure to set up a worker table number for a worker. You can view th
 
 10. Select a worker record, and then select the **Advance holder** check box to specify that the worker is an advance holder.
 
-## See also
 
-[(RUS) About worker table numbers for advance holders](rus-about-worker-table-numbers-for-advance-holders.md)
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (RUS) Set up the advance holder 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
-
-
-> [!NOTE]
-> <P>This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.</P>
-
+## Set up the advance holder 
 
 
 1.  Click **Accounts payable** \> **Common** \> **Advance holders** \> **Advance holders**.
@@ -352,19 +259,7 @@ _**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
 
 
 
-## See also
-
-[(RUS) Advance holders (form)](https://technet.microsoft.com/en-us/library/jj665294\(v=ax.60\))
-
-[(RUS) Accounts payable parameters (modified form)](https://technet.microsoft.com/en-us/library/jj923609\(v=ax.60\))
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
-# (EEUR) Set up advance holders 
-
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
+## Set up advance holders 
 
 Use this procedure to set up advance holders from the directory of workers.
 
@@ -378,22 +273,9 @@ Use this procedure to set up advance holders from the directory of workers.
 
 2.  Select the **Advance holder** check box to mark a worker as an advance holder.
 
-3.  In the **Group** field, select the advance holder group that the worker belongs to. For more information, see [(EEUR) Advance holder groups (form)](https://technet.microsoft.com/en-us/library/jj910965\(v=ax.60\)).
+3.  In the **Group** field, select the advance holder group that the worker belongs to. 
     
 
     > [!NOTE]
     > <P>If the <STRONG>Advance holder sorting</STRONG> check box is selected in the <STRONG>Accounts payable parameters</STRONG> form, the advance holders are displayed first in the list in the <STRONG>Advance holders</STRONG> form. You can also select the default employee posting profile in the <STRONG>Posting profile</STRONG> field.</P>
-
-
-
-## See also
-
-[(EEUR) Advance holders (form)](https://technet.microsoft.com/en-us/library/jj910963\(v=ax.60\))
-
-[(EEUR) Advance holder groups (form)](https://technet.microsoft.com/en-us/library/jj910965\(v=ax.60\))
-
-[(EEUR) Accounts payable parameters (modified form)](https://technet.microsoft.com/en-us/library/jj720358\(v=ax.60\))
-
-  
-**Announcements:** To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?linkid=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?linkid=306505) (LCS).
-
+    
