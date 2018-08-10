@@ -77,7 +77,7 @@ This topic includes information and links to resources that can help you set up 
 - [Payment slip report](emea-eur-payment-slip-report-giro.md)
 - [Petty cash](emea-petty-cash.md)
 - [Post the pre-acquisition of a fixed asset](emea-pre-acquisition-acquisition-fixed-asset.md)
-- [Postal codes](emea-import-create-postal-codes-manually.md
+- [Postal codes](emea-import-create-postal-codes-manually.md)
 - [Receive an EU entry certificate](eur-00012-receive-eu-entry-certificate.md)
 - [Registration IDs](emea-registration-ids.md)
 - [Reverse charges](emea-reverse-charge.md)
