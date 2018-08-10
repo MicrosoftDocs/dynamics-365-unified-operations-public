@@ -2,10 +2,10 @@
 # required metadata
 
 title: Environment planning
-description: This topic provides an overview of the different aspects you must consider while doing the environment planning for your project. 
+description: This topic provides an overview of what must be considered while planning your project's environment. 
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 08/06/2018
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,142 +35,97 @@ ms.dyn365.ops.version: Finance and Operations
 [!include[banner](../includes/banner.md)]
 
 This article provides an overview of the different aspects you must consider
-while doing the environment planning for your project. Discussing environment
-planning early in the project is key to the success of your Dynamics 365 for
+while doing planning for your project's environment. Discussing and planning your environment
+early in the project is key to the success of your Dynamics 365 for
 Finance and Operations Cloud implementation.
 
 ## Environment planning overview
 
 Let’s start with a few important concepts:
 
--   ***Environment purpose*** represents the reason(s) why the environment exists.
-    For example; development, system testing, User Acceptance Testing (UAT),
+- **Environment purpose:** The reasons why the environment exists.
+    For example, development, system testing, User Acceptance Testing (UAT), or
     Operations.
-
--   ***Environment topology*** represents the composition of the environment and
-    ultimately the purpose. For example; **Develop** or **Build and Test** for
+- **Environment topology:** The composition of the environment and
+   the purpose. For example, **Develop** or **Build and Test** for
     Tier-1 environments.
-
--   ***Environment Tier*** represents the type or category of the environment. For
-    example; Tier-1, Tier-2 environment. For more information, about the
-    different environments and Tiers download the latest Microsoft Dynamics 365
+- **Environment Tier:** The type or category of the environment. For
+    example, a Tier-1 or Tier-2 environment. For more information, about the
+    different environments and tiers, download the latest Microsoft Dynamics 365
     Licensing Guide from [Dynamics 365 pricing](https://dynamics.microsoft.com/en-us/pricing/)
     
 
 ### Environment types
+You can use the following environment types for your project.
 
--   **Standard environments** are included in the standard offer and managed by
-    Microsoft in a Microsoft subscription. For example: the **Production**
-    environment, one Tier-2 **Standard Acceptance Test** environment, and one
+- **Standard:** This environment is included in the standard offer and managed by
+    Microsoft in a Microsoft subscription. Standard environments include, the **Production**
+    environment, a Tier-2 **Standard Acceptance Test** environment, and one
     Tier-1 **Develop and Test** environment.
-
--   **Add-on environments** are environments in a Microsoft managed subscription
-    purchased by the customer in addition to the standard offer. For example; an
+- **Add-on:** The add-on environments are in a Microsoft-managed subscription that has been
+    purchased by the customer in addition to the standard offer. For example, an add-on environment mighe be an
     additional Tier-4 environment for performance testing.
-
--   **Cloud-hosted environments** are additional environments managed by the
-    customer or partner in a customer or partner Azure subscription. For
-    example; a Tier-1 demo environment.
-
--   **Environment image (.VHD)** are additional Tier-1 environments hosted
+- **Cloud-hosted:** Cloud-hosted environments are additional environments that managed by the
+    customer or partner in a customer or partner Azure subscription. A cloud-hosted environment could include a Tier-1 demo environment.
+- **Environment image (.VHD)** These additional Tier-1 environments are hosted
     on-premises through the use of a VHD downloadable from [Lifecycle
-    Services](https://lcs.dynamics.com/v2) (LCS).
+    Services (LCS)](https://lcs.dynamics.com/v2).
 
 > [!IMPORTANT]
-> A *customer or partner Azure subscription* means that the
-customer or partner brings their own Azure subscription and deploys Dynamics 365
-for Finance and Operations environments to it, for evaluation and development
-purposes only. The customer or partner pays for the resources deployed to their
-Azure subscription based on the Azure price list. A *Microsoft subscription*
-means that the customer purchases Dynamics 365 for Finance and Operations
-licenses which will then allow them to deploy environments to an Azure
-subscription managed by Microsoft, therefore, the customer has no separate Azure
-billing.
+> A **customer or partner Azure subscription** means that the
+customer or partner brings their own Azure subscription and deploys Finance and Operations environments to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. A **Microsoft subscription** means that the customer purchases Dynamics 365 for Finance and Operations
+licenses which will then allow them to deploy environments to an Azure subscription that is managed by Microsoft. This results in the customer having no separate Azure billing.
 
 ### Tier-1 versus Tier-2+
-|    Tier-1                                                                                                 |    Tier-2   and higher                                                                                       |
+|    Tier-1                                                                                                 |    Tier-2 and higher                                                                                       |
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-|    Single-box environment                                                                                 |   Multi-box  environment                                                                                     |
-|    All   components (e.g. AOS, database, Retail and MR) are installed on the same   server                |    Components are installed on multiple servers                                                              |
-|    Uses SQL   Server                                                                                      |    Uses [Azure SQL](https://docs.microsoft.com/en-us/azure/sql-database/)                                                                                            |
-|    Different   architecture than Production, made to maximize the efficiency of the   development team    |    Same architecture as Production despite a different sizing and not   disaster-Rrecovery enabled             |
-|    Can be   deployed in different ways (add-on, cloud-hosted, environment image .VHD)                     |    Can only be deployed as standard or add-on   environment (can’t be hosted as cloud-Hosted environment)    |
-|    Not suitable for   UAT nor performance testing                                                         |    Suitable for UAT and performance testing                                                                  |
+|    Single-box environment                                                                                 |   Multi-box environment                                                                                     |
+|    All components, including AOS, database, Retail and MR are installed on the same server                |    Components are installed on multiple servers                                                              |
+|    Uses SQL Server                                                                                      |    Uses [Azure SQL](https://docs.microsoft.com/en-us/azure/sql-database/)                                                                                            |
+|    Different architecture than Production and made to maximize the efficiency of the development team    |    Same architecture as Production despite a different sizing and not disaster-recovery enabled             |
+|    Can be deployed in different ways, for example add-on, cloud-hosted, and environment image .VHD)                     |    Can only be deployed as standard or add-on environment, noy cloud-hosted   |
+|    Not suitable for UAT or performance testing                                                         |    Suitable for UAT and performance testing                                                                  |
 
-## Microsoft Dynamics 365 for Finance and Operations Standard Cloud Offer
+## Finance and Operations standard cloud offer
 
-With each Microsoft Dynamics 365 for Finance and Operations Standard Cloud
-Offer, three environments are included by default:
+With each Finance and Operations standard cloud offer, three environments are included:
 
--   ***Tier-1 environment: Develop and Test:*** One Developer/Test instance for the
-    duration of the subscription. Additional Developer/Test instances can be
-    purchased separately as an optional add-on. This is a non-production single
-    box instance that customer can use as an automated build environment and/or
-    to customize Microsoft Dynamics 365 for Finance and Operations and unit test
-    their changes.
+- **Tier-1 environment: Develop and Test:** One Developer/Test instance is provided for the duration of the subscription. Additional Developer/Test instances can be purchased separately as an optional add-on. This is a non-production single-box instance that a customer can use as an automated build environment or to customize Finance and Operations and unit test the changes.
+- **Tier-2 environment: Standard Acceptance Testing:** One Standard Acceptance Testing (UAT) instance for the duration of the subscription. Additional Sandbox/Staging instances can be purchased separately as an optional add-on. This is a non-production multi-box instance that customers can use for User Acceptance Testing, Integration Testing, and Training.
+- **Production environment:** One production instance per tenant. The production multi-box instance comes with Disaster Recovery and High Availability. It will be provisioned when the implementation nears the **operate** phase after the required activities in the LCS methodology and successful go-live assessment are complete. Additionally, a certain amount of file storage and database storage is included in the offer:
 
--   ***Tier-2 environment: Standard Acceptance Testing:*** One Standard Acceptance
-    Testing (UAT) instance for the duration of the subscription. Additional
-    Sandbox/Staging instances can be purchased separately as an optional add-on.
-    This is a non-production multi-box instance that customers can use for User
-    Acceptance Testing, Integration Testing and Training.
+    - **File storage:** Each customer will receive 100GB of file/Azure Binary Large Objects (BLOBs) cloud storage for files and binary data. Additional file/blob storage can be purchased.
+    - **Database storage:** Each Finance and Operations subscription includes 10GB of Azure SQL database storage per customer at no additional charge. Additional storage capacity is granted at no charge as an organization increases the number of User and Device SLs. For more information, about the different environments and storage download the latest Microsoft Dynamics 365 Licensing Guide from [Dynamics 365 pricing](https://dynamics.microsoft.com/en-us/pricing/)
 
--   ***PRODUCTION environment:*** One production instance per tenant. The production
-    multi-box instance comes with Disaster Recovery and High Availability. It
-    will be provisioned once the implementation nears the ‘operate’ phase after
-    completion of the required activities in the Microsoft Dynamics Lifecycle
-    Services (LCS) methodology and successful go-live assessment.
+### Standard environments provisioning
 
-Additionally, a certain amount of File storage and Database storage is included
-in the offer:
-
--   ***File storage:*** Each customer will receive 100GB of file/Azure Binary Large
-    Objects (BLOBs) cloud storage for files and binary data. Additional
-    file/blob storage can be purchased.
-
--   ***Database storage:*** Each Dynamics 365 for Finance and Operations
-    subscription includes 10GB of Azure SQL database storage at no additional
-    charge per customer. Additional storage capacity is granted at no charge as
-    an organization increases the number of User and Device SLs.
-
-For more information, about the different environments and storage download the
-latest Microsoft Dynamics 365 Licensing Guide from [Dynamics 365
-pricing](https://dynamics.microsoft.com/en-us/pricing/)
-
-### Standard Environments Provisioning
-
-The different Dynamics 365 for Finance and Operations environments will get provisioned at different times. This is the suggested timing for the Microsoft Dynamics 365 for Finance and Operations standard cloud offer environments:
+The different Finance and Operations environments will be provisioned at different times. The following is the suggested timing for the Finance and Operations standard cloud offer environments:
 
 |    Environment                               |    When   does it happen?                                                          |    Is   it self-service?                                                                                       |
 |----------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 |    Tier-2    Standard   Acceptance Test      |    During onboarding with the FastTrack team                                                               |    ✓                                                                                                           |
 |    Tier-1    Development/Build   and Test    |    When ***Design*** phase starts   (requires that Visual Studio Team Services (VSTS) is configured)    |    ✓                                                                                                           |
-|    PRODUCTION                                |    On Production readiness                                                                    |    Production deployment request must be submitted in   LCS; Deployment through DSE within 2 business days    |
+|    PRODUCTION                                |    On Production readiness                                                                    |    Production deployment request must be submitted in LCS with deployment through DSE within 2 business days    |
 
 > [!IMPORTANT]
-> Always deploy environments using an **unnamed** account (such as *dynadmin@customer.com*). Deploy and leverage the Develop and Test
-environment with the build topology as it simplifies the builds management and initialize automatically the VSTS source repository.
+> Always deploy environments using an **unnamed** account such as *dynadmin@customer.com*. Deploy and leverage the Develop and Test
+environment with the build topology as it simplifies the build management and automatically initializes the VSTS source repository.
 
-### Production System Readiness
+### Production system readiness
 
-Production environment can be deployed when the project is ready for the initial
-go-live. See [Prepare for go-live](prepare-go-live.md) for detailed information.
+The production environment can be deployed when the project is ready for the initial go-live. For more information, see [Prepare for go-live](prepare-go-live.md).
 
-Production System readiness includes, but is not limited to:
+Production system readiness includes, but is not limited to:
 
--   Up to date subscription estimate activated as described in [Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md)
+- Activated up-to-date subscription estimate as described in [Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md)
+- Code, configuration, and data are ready for cutover
+- Engineering process is in place to manage critical fixes
+- Solution and UAT is signed off by customer
+- Cutover plan is in place
 
--   Code, configuration and data are ready for cutover
+Production is an environment for the customer to **operate** the solution, not to build it. Production is sized to run your business based on the subscription estimate and performance testing diagnostic data. After deployment, customers can and should perform a mock cutover and a final round of validation on the production environment. Prior to the final cutover, a point-in-time (PiT) restore can be requested to restore production to a clean snapshot (up to 35 days in the past).
 
--   Engineering process in place to manage critical fixes
-
--   Solution and UAT signed off by customer
-
--   Cutover plan in place
-
-Production is an environment for the customer to **operate** the solution, not to build it. Production is sized to run your business based on the subscription estimate and performance testing telemetry data. Once deployed, customers can and should perform a mock cutover and a final round of validation on Production. Prior to the final cutover, a Point-In-Time (PiT) restore can be requested to restore Production to a clean snapshot (up to 35 days in the past).
-
-To select the appropriate data center (DC) for Production, consider the latency from the geographic locations where the business operates. Leverage tools like [PsPing](https://docs.microsoft.com/en-us/sysinternals/downloads/psping) and [azurespeed.com](http://azurespeed.com/) to test latency to Azure data centers.
+To select the appropriate data center (DC) for production, consider the latency from the geographic locations where the business operates. Leverage tools like [PsPing](https://docs.microsoft.com/en-us/sysinternals/downloads/psping) and [azurespeed.com](http://azurespeed.com/) to test latency to Azure data centers.
 
 ![Environment planning process flow](./media/environment-planning-1-process-flow.png) 
 
@@ -182,53 +137,52 @@ Additional environments may be purchased as add-ons or deployed as cloud-hosted 
 ![Environment purpose and complexity](./media/environment-planning-2-purpose-complexity-matrix.png)
 
 > [!IMPORTANT]
-> Always deploy environments using an **unnamed** account (such as *dynadmin@customer.com*). Assign an owner to the environments who will be responsible for their status and maintenance (if applicable). Get an additional Tier-2+ environment post go-live to support Production if you plan to work on new releases
+> Always deploy environments using an **unnamed** account such as *dynadmin@customer.com*. Assign an owner to the environments who will be responsible for the status and maintenance. After go-live, if you plan to work on new releases, get an additional Tier-2+ environment to support production.
 
 ### Deployment considerations for development environments
 
 For development environments there are three different deployment options:
 
--   Standard or add-on environment managed by Microsoft in a Microsoft subscription
+- **Standard or add-on:** Managed by Microsoft in a Microsoft subscription
+- **Cloud-hosted:** Managed by customer/partner in a customer/partner Azure subscription
+- **Environment image (downloadable .VHD):** Hosted on-premises
 
--   Cloud-hosted managed by customer/partner in a customer/partner Azure subscription
+> [!NOTE]
+> You must allocate one development environment per developer. 
 
--   Environment image (downloadable .VHD) hosted on-premises
-
-Below overview provides a comparison between these different deployment options:
+The following table provides a comparison between the different deployment options:
 
 |    **Capability**                              |    **Standard/add-on**                                                   |    **Cloud-hosted**                                                                     |    **Downloaded .VHD**                                                    |
 |--------------------------------------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 |    Public URL                              |    ✓                                                                 |    ✓                                                                                |    Not supported                                                         |
-|    Integration   development               |    ✓                                                                 |    ✓                                                                                |    Extra setup required   (e.g. run the admin user provisioning tool)    |
-|    Visual   Studio Team Services (VSTS)    |    ✓                                                                 |    ✓                                                                                |    Extra setup required   (e.g. rename the computer)                     |
+|    Integration   development               |    ✓                                                                 |    ✓                                                                                |    Extra setup required (for example, run the admin user provisioning tool)    |
+|    Visual   Studio Team Services (VSTS)    |    ✓                                                                 |    ✓                                                                                |    Extra setup required (for example, rename the computer)                     |
 |    Apply   deployable packages from LCS    |    Automated                                                         |    Automated                                                                        |    Manual through runbooks                                               |
 |    Deploy data   packages from LCS         |    ✓                                                                 |    ✓                                                                                |    Not supported                                                         |
 |    Maintenance                             |    Managed by Microsoft                                              |    Managed by customer/partner                                                      |    Managed by customer/partner                                           |
-|    Cost model                              |    Fixed flat rate   (same price when the environment is on 24*7)    |    Pay-as-you-go   (if the environment is on for 8 hours, you pay for 8   hours)    |    Hardware related                                                      |
+|    Cost model                              |    Fixed flat rate (same price when the environment is on 24/7)    |    Pay-as-you-go   (if the environment is on for 8 hours, you pay for 8 hours)    |    Hardware related                                                      |
 |    Limitations                             |    Administrator access disabled (admin lockdown)                    |    None                                                                             |    None                                                                  |
-
-Be aware that you must allocate one development environment per developer.
 
 
 > [!IMPORTANT]
-> The ***Administrator lockdown*** for Tier-1 environments is effective from Platform Update (PU) 12 and higher. Actions where local Administrator access is required are no longer possible (e.g. installing a 3rd party tool, developing Power BI reports…) If Administrator permissions are required, use cloud-hosted environments or environment image (downloadable .VHD) instead. For more information see [Development and build VMs that don't allow admin access FAQ](../../dev-itpro/sysadmin/vms-no-admin-access.md).
+> The ***Administrator lockdown*** for Tier-1 environments is effective from Platform Update (PU) 12 and higher. Actions that require local Administrator access, such as installing a third party tool or developing Power BI reports, are no longer possible. If Administrator permissions are required, use cloud-hosted environments or the environment image (downloadable .VHD) instead. For more information see [Development and build VMs that don't allow admin access FAQ](../../dev-itpro/sysadmin/vms-no-admin-access.md).
 
-### Selecting the right Tier-2+ environment
+### Select the right Tier-2+ environment
 
-Depending on the environment purpose (e.g. Performance Testing, UAT…) it is key to select the correct Tier-2+ environment. Below gives a ***baseline*** guidance. You must work with your implementation partner to adjust this *baseline* considering your specific business scenarios (type of users, complexity,volumes…).
+Depending on the purpose of the environment, it is important to select the correct Tier-2+ environment. The following guidance is a ***baseline***. You must work with your implementation partner to adjust this based your specific business scenarios, including type of users, complexity, and volumes.
 
 ![Environment tiers](./media/environment-planning-3-environment-tiers.png)
 
-Note that transaction lines per hour can be seen in LCS after activating a subscription estimate:
+Note that transaction lines per hour can be seen in LCS after activating a subscription estimate.
 
 ![Subscription estimate](./media/environment-planning-4-subscription-estimate.png)
 
 > [!IMPORTANT]
-> The upcoming Administrator lockdown for Tier-2+ environments will no longer allow remote connection (.RDP) to the servers. Microsoft’s roadmap is to replace most common actions where .RDP access is needed by self-service tasks in Lifecycle Services (LCS). As an example, the procedure currently described in [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md) would be available as a service from Microsoft via a service request in LCS. More information will be shared through the [LCS Blog](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/) and on [Docs](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/).
+> The upcoming Administrator lockdown for Tier-2+ environments will no longer allow remote connection (.RDP) to the servers. Microsoft’s roadmap is to replace the most common actions where .RDP access is needed by self-service tasks in Lifecycle Services (LCS). For example, the procedure currently described in [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md) would be available as a service from Microsoft by creating a service request in LCS. More information will be shared through the [LCS Blog](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/) and on [Docs](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/).
 
 ### Purchasing add-on environments
 
-For purchasing add-on environments, we advise you to work closely with your Cloud Solution Provider (CSP) or License Service Reseller (LSR). Take into consideration the potential lead time from *Placing the order* up to *Deployment of the environment*.
+For purchasing add-on environments, we advise you to work closely with your Cloud Solution Provider (CSP) or License Service Reseller (LSR). Consider the potential lead time from placing the order to deploying the environment.
 
 ![Procuring add ons](./media/environment-planning-5-procuring-add-on.png)
 
@@ -237,18 +191,15 @@ For purchasing add-on environments, we advise you to work closely with your Clou
 
 ## Environments plan
 
-Create the environments plan early in your implementation:
+Create the environments plan early in your implementation.
 
-1.  Identify the project activities that require an environment (e.g. developing customizations, maintaining golden configuration data, etc.)
+1. Identify the project activities that require an environment. These include, but are not limited to, developing customizations and maintaining golden configuration data.
+2. Determine the ***activities lifecycle*** to determine the ***environments lifecycle***. For example, when and for how long do you need the environment, do you need it before or after go-live, etc.
+3. Determine the type and topology of the required environments.
+4. Summarize the list of required environments in a matrix.
 
-2.  Determine the ***activities lifecycle*** to determine the ***environments lifecycle*** (e.g. when and for how long do you need the environment; do you need it before or after go-live; etc.)
+After the environments are identified, the environments plan can be used to structure the ***Application Lifecycle Management (ALM)*** flows. For example, after you have finalized your environments plan, you can define the flows for building and moving the code and the data across environments.
 
-3.  Determine the type and topology of the required environments
-
-4.  Summarize the list of required environments in a matrix
-
-Once the environments are identified, the environments plan can be used to structure the ***Application Lifecycle Management (ALM)*** flows. For example, once you have finalized your environments plan, you can define the flows for building and moving the code and the data across environments.
-
-It is strongly encouraged that you watch the [Environment Planning TechTalk](https://infopedia.eventbuilder.com/event?eventid=o8a5q2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks). From the link, you can also download the *Sample Environment Planning exercise* spreadsheet to get you jump-started on your environment planning exercise.
+It is strongly encouraged that you watch the [Environment Planning TechTalk](https://infopedia.eventbuilder.com/event?eventid=o8a5q2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks). From the link, you can also download the *Sample Environment Planning exercise* spreadsheet to get a jump start on your environment planning exercise.
 
 
