@@ -2187,7 +2187,7 @@
     items:
     - name: Develop a human resources strategy
       items:
-      - name: Create a goal
+      - name: Create goals
         href: hr/tasks/create-goal.md
       - name: Organize your workforce using departments, jobs, and positions
         href: ../talent/departments-jobs-positions.md
@@ -2199,7 +2199,7 @@
         href: hr/tasks/define-new-jobs.md
       - name: Create a department and associate it with the department hierarchy
         href: ../talent/create-department-add-department-hierarchy.md
-      - name: Create a calendar and generate working times
+      - name: Create calendars and generate working times
         href: hr/tasks/create-calendar-working-times.md
       - name: Set up HR parameters across legal entities
         href: ../talent/set-up-hr-parameters-across-legal-entities.md
@@ -2209,13 +2209,13 @@
         href: ../talent/personnel-actions-faq.md
       - name: Use workflow to manage employee information
         href: ../talent/workflow-manage-employee-information.md
-      - name: Modify reporting relationships for a position
+      - name: Modify reporting relationships for positions
         href: hr/tasks/modify-reporting-relationships-position.md
       - name: Approve application inbox records
         href: hr/tasks/approve-application-inbox-records.md
       - name: Enter worker information
         href: hr/tasks/enter-worker-information.md
-      - name: Loan items to a worker
+      - name: Loan items to workers
         href: hr/tasks/loan-item-worker.md
       - name: Create loan items
         href: hr/tasks/create-loan-items.md
@@ -2227,7 +2227,7 @@
         href: hr/tasks/enter-project-timesheets.md
       - name: Manage email templates
         href: hr/tasks/manage-email-templates.md
-      - name: Manage leave of absence
+      - name: Manage leaves of absence
         href: hr/tasks/manage-leave-absence.md
     - name: Recruiting
       items:
@@ -2235,17 +2235,17 @@
         href: hr/manage-recruiting-process.md
       - name: Mass hire projects
         href: hr/mass-hire-projects.md
-      - name: Create a mass hire project
+      - name: Create mass hire projects
         href: hr/tasks/create-mass-hire-project.md
-      - name: Enter applicant and application data manually
+      - name: Manually enter applicant and application data
         href: hr/tasks/enter-applicant-application-data-manually.md
-      - name: Develop and open a job requisition
+      - name: Develop and open job requisitions
         href: hr/tasks/develop-open-job-requisition.md
       - name: Set up positions
         href: hr/tasks/set-up-positions.md
-      - name: Hire a candidate through recruiting
+      - name: Hire candidates through recruitment
         href: hr/tasks/hire-candidate-through-recruiting.md
-      - name: Hire an existing employee through recruiting
+      - name: Hire an existing employees through recruitment
         href: hr/tasks/hire-existing-employee-through-recruiting.md
       - name: Identify and deploy candidate selection tools
         href: hr/tasks/identify-deploy-candidate-selection-tools.md
@@ -2257,21 +2257,21 @@
         href: ../talent/create-fixed-compensation-plans.md
       - name: Create variable compensation plans
         href: ../talent/create-variable-compensation-plans.md
-      - name: Define compensation process and calculate results
+      - name: Define compensation processes and calculate results
         href: hr/tasks/define-compensation-process-calculate-results.md
       - name: Process compensation
         href: ../talent/process-compensation.md
       - name: Set up compensation grids
         href: hr/tasks/set-up-compensation-grids.md
-      - name: Develop salary/compensation structure and plans
+      - name: Develop salary/compensation structures and plans
         href: hr/tasks/develop-salary-compensation-structure-plan.md
-      - name: Add to your performance journal and send praise to someone
+      - name: Add information to your performance journal and send praise
         href: hr/tasks/add-your-performance-journal-send-praise-someone.md
-      - name: Enroll an employee in a fixed compensation plan
+      - name: Enroll employees in a fixed compensation plan
         href: hr/tasks/enroll-employee-fixed-compensation-plan.md
-      - name: Enroll an employee in a variable compensation plan
+      - name: Enroll employees in a variable compensation plan
         href: hr/tasks/enroll-employee-variable-compensation-plan.md
-      - name: Create a performance review
+      - name: Create performance reviews
         href: hr/tasks/create-performance-review.md
     - name: Develop and train employees
       items:
@@ -2293,9 +2293,9 @@
         href: hr/tasks/define-benefit-eligibility-rules-policies.md
       - name: Deliver an employee benefits program
         href: hr/tasks/deliver-employee-benefits-program.md
-      - name: Create a new benefit
+      - name: Create new benefits
         href: hr/tasks/create-new-benefit.md
-      - name: Enroll and remove benefits from workers
+      - name: Enroll workers in benefits and remove benefits from workers
         href: hr/tasks/enroll-remove-benefits-workers.md
       - name: Manage benefit expiration dates
         href: hr/tasks/manage-benefit-expiration-dates.md
@@ -2313,11 +2313,11 @@
         href: ../talent/evaluate-questionnaire-results.md
       - name: Analyze questionnaire results
         href: hr/tasks/analyze-questionnaire-results.md
-      - name: Create an open-ended question
+      - name: Create open-ended questions
         href: hr/tasks/create-open-ended-question.md
-      - name: Create a closed ended question
+      - name: Create closed-ended questions
         href: hr/tasks/create-closed-ended-question.md
-      - name: Make a question dependent on the answer of the previous question
+      - name: Make questions dependent on the answer of the previous question
         href: hr/tasks/make-question-dependent-answer-previous-question.md
     - name: Workplace safety and compliance (United States)
       items:
