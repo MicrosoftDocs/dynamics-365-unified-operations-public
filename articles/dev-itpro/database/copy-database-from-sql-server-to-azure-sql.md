@@ -42,12 +42,12 @@ Typically, this process is completed before go-live, to bring a golden (or seed)
 Here is the supported procedure for bringing a golden database into a production environment.
 
 1. A customer or partner exports the database from SQL Server.
-2. The customer or partner imports the database into a sandbox environment that runs on an Azure SQL database. 
+2. The customer or partner imports the database into a sandbox environment that runs on an Azure SQL database.
 3. In Microsoft Dynamics Lifecycle Services (LCS), the customer or partner submits a service request of the **Other request** type to ask that the Microsoft Dynamics Support Engineering (DSE) team move the sandbox database to the production environment.
-4. The DSE team copies the database from the sandbox environment to the production environment. 
+4. The DSE team copies the database from the sandbox environment to the production environment.
 
 > [!NOTE]
-> Microsoft accepts requests to copy a database into a production environment only before go-live. 
+> Microsoft accepts requests to copy a database into a production environment only before go-live.
 
 During the process for moving a database, the sqlpackage.exe command-line tool is used to export the database from SQL Server and import it into an Azure SQL database. Because the file name extension for the exported data file is .bacpac, the process is often referred to as the *bacpac process*.
 
@@ -65,6 +65,7 @@ If you encounter issues, see the "Known issues and limitations" section at the e
 
 - The source environment (the environment where the source database was created) must run a version of the Finance and Operations platform that is earlier than or the same as the version of the platform that the destination environment runs.
 - To import a database from a sandbox environment, you must be running the same version of SQL Server Management Studio that is in the environment you will be importing the database to. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in the sandbox environment. You can then do the bacpac export on that AOS computer. There are two reasons for this requirement:
+
     - Because of an Internet Protocol (IP) access restriction on the sandbox instance of SQL Server, only computers in that environment can connect to the instance.
     - The exported \*.bacpac file may be dependent on version specific features of Management Studio.
 
@@ -190,21 +191,22 @@ Here is an explanation of the parameters:
 - **sf (source file)** – The path and name of the file to import from.
 - **tu (target user)** – The SQL user name for the target Azure SQL database instance. We recommend that you use the standard **sqladmin** user. You can retrieve the password for this user from your LCS project.
 - **tp (target password)** – The password for the target Azure SQL database user.
-- **DatabaseServiceObjective** - Specifies the performance level of the database such as S1, P2, or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. To query the service level objective of the current database, run the following query.
-  ```
-  SELECT  d.name,   
-     slo.*    
-  FROM sys.databases d   
-  JOIN sys.database_service_objectives slo    
-  ON d.database_id = slo.database_id;  
-  ```
+- **DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2, or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. To query the service level objective of the current database, run the following query.
+
+    ```
+    SELECT  d.name,   
+        slo.*    
+    FROM sys.databases d   
+    JOIN sys.database_service_objectives slo    
+    ON d.database_id = slo.database_id;  
+    ```
 
 You will receive the following warning message. You can safely ignore it.
+
 > A project which specifies SQL Server 2016 as the target platform may experience compatibility issues with Microsoft Azure SQL Database v12.
 
-
 > [!WARNING] 
-> Retaining copies of the database for an extended period is not allowed in any Finance and Operations environment. Microsoft reserves the right to delete any copies of the database older than 7 days without any prior notice. 
+> Retaining copies of the database for an extended period is not allowed in any Finance and Operations environment. Microsoft reserves the right to delete any copies of the database older than 7 days without any prior notice.
 
 ## Update the database
 

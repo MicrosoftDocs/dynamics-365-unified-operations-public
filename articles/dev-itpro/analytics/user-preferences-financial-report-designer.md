@@ -34,25 +34,24 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience. You can also control how individual reports, the report library, and the default file locations are displayed. 
+This article explains how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience. You can also control how individual reports, the report library, and the default file locations are displayed.
 
-Set user preferences
---------------------
+## Set user preferences
 
-1.  In Report Designer, on the **Tools** menu, click **Options**.
-2.  In the **Options** dialog box, select your preferences.
-3.  Click **OK**.
+1. In Report Designer, on the **Tools** menu, click **Options**.
+2. In the **Options** dialog box, select your preferences.
+3. Click **OK**.
 
 ## Options dialog box options
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>User option</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>At startup</td>
 <td>Select what you see when Report Designer starts. Select one of the following options:
 <ul>
@@ -61,27 +60,21 @@ Set user preferences
 <li><strong>Show empty environment</strong> – Open an empty designer window.</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Display confirmation before exiting Report Designer</td>
-<td>Select whether to receive a warning message when you exit the application. This message helps guarantee that you don&#39;t exit the program unintentionally.</td>
+<td>Select whether to receive a warning message when you exit the application. This message helps guarantee that you don't exit the program unintentionally.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Automatically apply cell underline in column headers</td>
 <td>Select whether to insert an underline in the cell of a new column header.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Management Reporter files location</td>
 <td>Specify the default location for files. The application uses the default location when you export building block groups.</td>
 </tr>
 </tbody>
 </table>
 
-
-
-Additional resources
---------
+## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
-
-
-

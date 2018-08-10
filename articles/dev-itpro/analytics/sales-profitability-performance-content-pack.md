@@ -40,21 +40,21 @@ This topic describes what is included in the **Sales and profitability performan
 
 The **Sales and profitability performance** Power BI content was created so that sales managers can monitor the key sales metrics of revenue, gross profit, and profit margins. It uses sales transactional data, and provides both an aggregate view of the company-wide sales figures and a breakdown of sales performance for customers and products.
 
-Reports highlight changes in revenue and profit growth over time. Therefore, the reports can be used to alert managers about positive and negative trends for individual customers and products. Additionally, charts compare the revenue and profitability of different product categories and customer groups to each other. Therefore, category and regional managers can identify laggards and leaders. Finally, a comprehensive report plots an individual customer’s revenue versus profit margin. Therefore, account managers have a data-backed foundation that they can use to tune their sales and marketing efforts to each customer’s profile. 
+Reports highlight changes in revenue and profit growth over time. Therefore, the reports can be used to alert managers about positive and negative trends for individual customers and products. Additionally, charts compare the revenue and profitability of different product categories and customer groups to each other. Therefore, category and regional managers can identify laggards and leaders. Finally, a comprehensive report plots an individual customer's revenue versus profit margin. Therefore, account managers have a data-backed foundation that they can use to tune their sales and marketing efforts to each customer's profile.
 
 The **Sales and profitability performance** content lets sales managers analyze sales performance in the following ways:
 
--   Revenue, year-to-date (by customer group and individual customers, sales categories, and individual products and geographies)
--   Revenue change, year-over-year (by customer regions and sales categories)
+- Revenue, year-to-date (by customer group and individual customers, sales categories, and individual products and geographies)
+- Revenue change, year-over-year (by customer regions and sales categories)
 
 Profitability can be analyzed in these ways:
 
--   Gross profit and profit margin (by customer groups and product sales categories)
--   Gross profit change, year-over-year
--   Customer profitability (by revenue versus gross margin)
+- Gross profit and profit margin (by customer groups and product sales categories)
+- Gross profit change, year-over-year
+- Customer profitability (by revenue versus gross margin)
 
 ## Accessing the Power BI content
-The **Sales and profitability performance** Power BI content is shown on the **Sales and profitability performance** page (**Sales and marketing** > **Inquiries and reports** > **Sales performance analysis** > **Sales and profitability performance**). 
+The **Sales and profitability performance** Power BI content is shown on the **Sales and profitability performance** page (**Sales and marketing** \> **Inquiries and reports** \> **Sales performance analysis** \> **Sales and profitability performance**).
 
 ## Metrics that are included in the Power BI content
 The **Sales and profitability performance** Power BI content includes a report that consists of a set of metrics. These metrics are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the content.
@@ -81,21 +81,20 @@ The **Sales and profitability performance** Power BI content includes a report t
 
 \* Revenue this and last year, and growth by sales category.
 
-
 ## Understanding the data model and entities
-The following data is used to fill the report in the **Sales and profitability performance** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). 
+The following data is used to fill the report in the **Sales and profitability performance** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
-The aggregate measurements in this content are the subset of aggregate measurements that were available in the Sales Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3. To stage the cube's aggregate measurements in the Entity store, you must make them deployable. For more information, see the procedure for staging aggregate measurements in the Entity store in the [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blog post. 
+The aggregate measurements in this content are the subset of aggregate measurements that were available in the Sales Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3. To stage the cube's aggregate measurements in the Entity store, you must make them deployable. For more information, see the procedure for staging aggregate measurements in the Entity store in the [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blog post.
 
 The following key aggregate measurements of the Invoice lines entity are used as the basis of the content.
 
-| Entity        | Key aggregate measurements                   | Data source for Dynamics 365                    | Field                                        | Description                                   |
-|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|----------------------------------------------|
-| Invoice lines | Revenue                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | The amount in the accounting currency.            |
-|               | Cost of goods sold                           | InventTrans                                     | SUM(CostAmountPosted + CostAmountAdjustment) | The sum of the cost amount and the adjustment.    |
-|               | Commission line amount – accounting currency | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | The commission amount in the accounting currency. |
+| Entity        | Key aggregate measurements                   | Data source for Dynamics 365 | Field                                        | Description                                       |
+|---------------|----------------------------------------------|------------------------------|----------------------------------------------|---------------------------------------------------|
+| Invoice lines | Revenue                                      | CustInvoiceTrans             | SUM(LineAmountMST)                           | The amount in the accounting currency.            |
+|               | Cost of goods sold                           | InventTrans                  | SUM(CostAmountPosted + CostAmountAdjustment) | The sum of the cost amount and the adjustment.    |
+|               | Commission line amount – accounting currency | CustInvoiceTrans             | SUM(CommissAmountMST)                        | The commission amount in the accounting currency. |
 
-The following table shows the key aggregate measurements of the Invoice lines entity that are used to create several calculated measures in the content’s dataset.
+The following table shows the key aggregate measurements of the Invoice lines entity that are used to create several calculated measures in the content's dataset.
 
 | Measure           | Calculation                                                                                      |
 |-------------------|--------------------------------------------------------------------------------------------------|
