@@ -48,8 +48,6 @@ Finance and Operations uses a separate legal entity to process a consolidation. 
 
 Financial reporting can consolidate multiple companies during report generation. Although the data is stored in a data mart, is versioned, and can be exported, every source company is the owner and container of the data. The report can be run at any time, even every minute (for example). It provides many additional benefits, such as the ability to drill down to all companies and dimensions.
 
-The following illustrations show the steps for doing consolidation in Finance and Operations and Financial reporting.
-
 Users can use Consolidate Online, Financial reporting, or a combination. Their choice depends on the needs of their company and the preferences of their auditors.
 
 ## Consolidations
@@ -155,9 +153,9 @@ For more information and examples, see [Elimination rules](./elimination-rules.m
 ## Currency revaluation in a consolidation company
 When you consolidate data from one accounting currency to another, you must still run currency revaluation if exchange rates change, so that your account balances are correctly revalued. When you originally consolidate the data, use the **Currency translation** tab to select the initial exchange rates that should be used for translation during the consolidation process. After a new exchange rate is entered (for example, in the next month), you must revalue the account balances. The unrealized gains or losses are then updated based on the new exchange rate and date.
 
-For more information about currency revaluation in a consolidation company see Currency revaluation in a consolidation company.
+For more information about currency revaluation in a consolidation company see [Currency revaluation in a consolidation company](currency-revaluation-consolidation-company.md).
 
-For more information about how currency revaluation works in the **General ledger** module, see [Foreign currency revaluation for General ledger](/general-ledger/foreign-currency-revaluation-general-ledger.md).
+For more information about how currency revaluation works in the **General ledger** module, see [Foreign currency revaluation for General ledger](./foreign-currency-revaluation-general-ledger.md).
 
 ### Additional information
 - All posting layers are consolidated when the consolidation is processed.
