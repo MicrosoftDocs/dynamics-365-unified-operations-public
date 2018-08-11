@@ -108,7 +108,7 @@ In the reporting tree definition, enter the percentage of ownership in the **Rol
 
 When the report is generated, the Contoso Germany report will show 100 percent of the sales amount, and 80 percent of the amount will be allocated and rolled up to the consolidated level for sales.
 
-If you own less than 1 percent of a company, you can select the **Allow rollup less than 1%** check box on the **Additional Options** tab of the **Report Settings** form, as shown in the following illustration. In this case, values in the **Rollup %** column in the reporting tree will be treated as less than 1 percent. For example, if you enter **.8**, 0.8 percent will be rolled up to the consolidated level, not 80 percent. Alternatively, you can achieve the same result by leaving the **Allow rollup less than 1%** check box cleared and entering **.008** in the **Rollup %** column.
+If you own less than 1 percent of a company, you can select the **Allow rollup less than 1%** check box on the **Additional Options** tab of the **Report Settings** page, as shown in the following illustration. In this case, values in the **Rollup %** column in the reporting tree will be treated as less than 1 percent. For example, if you enter **.8**, 0.8 percent will be rolled up to the consolidated level, not 80 percent. Alternatively, you can achieve the same result by leaving the **Allow rollup less than 1%** check box cleared and entering **.008** in the **Rollup %** column.
 
 ![Reporting setting options](./media/reporting-setting-options.png "Reporting setting options")
 
@@ -179,7 +179,7 @@ On the main account, the **Financial reporting exchange rate type** and **Curren
 
 ![Financial reporting main accounts](./media/Financial-reporting-main-accounts.png "Financial reporting main accounts")
 
-For budget, budget control, and budget planning data, the exchange rate type is defined in the **Ledger** form. That table will be used to pull the exchange rates, and the currency translation type that is assigned to the account will be used.
+For budget, budget control, and budget planning data, the exchange rate type is defined in the **Ledger** page. That table will be used to pull the exchange rates, and the currency translation type that is assigned to the account will be used.
 
 ### Currency translation methods
 There are four options for calculating exchange rates in Financial reporting:
@@ -198,15 +198,15 @@ There are four options for calculating exchange rates in Financial reporting:
 ### Report designer options for currency translation
 In Financial reporting, any report can be shown in any number of reporting currencies. The following fields in the report definition support this capability:
 
-- The **Currency Information** section in the **Report Definition** form. This section shows the currency that the values are shown in when a report is generated.
+- The **Currency Information** section in the **Report Definition** page. This section shows the currency that the values are shown in when a report is generated.
 - A new **Include all reporting currencies** check box. When this check box is selected, the reporting currencies will queue up after the report that uses the company's functional currency is generated. If the check box is cleared, you can still select a reporting currency in the Web Viewer. In this case, the reporting currency will be processed only when you select it.
 
-The options in the report definition let you easily translate a report into all your reporting currencies. Therefore, you might be able to eliminate duplicate report definitions that differ only in the currencies that are used. If you require a report that shows multiple currencies side by side, you can continue to use the **Currency display** field in the **Column Definition** form to translate just that column of the report into an alternate reporting currency.
+The options in the report definition let you easily translate a report into all your reporting currencies. Therefore, you might be able to eliminate duplicate report definitions that differ only in the currencies that are used. If you require a report that shows multiple currencies side by side, you can continue to use the **Currency display** field in the **Column Definition** page to translate just that column of the report into an alternate reporting currency.
 
 ### Currency translation adjustment
 The currency translation adjustment (CTA) is the difference between the rates that are used to calculate the balance sheet accounts and the rate that is used for the income statement accounts. This difference will cause the balance sheet to be out of balance. You can use Financial reporting to calculate the CTA in two ways:
 
-- Use the **Rounding Adjustments** form in the row definition, as shown in the following illustration.
+- Use the **Rounding Adjustments** page in the row definition, as shown in the following illustration.
 
     ![Currency translation adjustment rounding adjustments](./media/Currency-translation-adjustment-rounding-adjustments.png "Currency translation adjustment rounding adjustments")
 
@@ -214,7 +214,7 @@ The currency translation adjustment (CTA) is the difference between the rates th
 
     ![Rounding adjustment drill down](./media/rounding-adjustment-drill-down.png "Rounding adjustment drill down")
 
-- Put all the accounts in a range, from assets to expenses. As shown in the following illustration, the difference will be the same amount as the rounding adjustment (CTA). Therefore, you can use it as a check total to make sure that the rounding adjustment form doesn't include any account balances that were missed.
+- Put all the accounts in a range, from assets to expenses. As shown in the following illustration, the difference will be the same amount as the rounding adjustment (CTA). Therefore, you can use it as a check total to make sure that the rounding adjustment page doesn't include any account balances that were missed.
 
     ![Rounding adjustment form check](./media/rounding-adjustment-form-check.png "Rounding adjustment form check")
 
