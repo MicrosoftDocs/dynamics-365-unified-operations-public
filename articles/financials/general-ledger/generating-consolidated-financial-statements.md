@@ -43,7 +43,7 @@ The simplest method for consolidating by using Financial reporting is to use rep
 3. Create a reporting tree that includes a reporting node for each company that you're using on consolidated reports.
 
 > [!TIP]
-> For more information about how to create and manage row definitions, column definitions, and reporting trees, see Create and manage report components.
+> For more information about how to create and manage row definitions, column definitions, and reporting trees, see [Create and manage report components](/dev-itpro/analytics/financial-report-components.md).
 
 The following illustration shows how you can use a reporting tree definition in Financial reporting to identify each company that you will consolidate.
 
@@ -73,7 +73,7 @@ The following illustration shows a column definition in a side-by-side format.
 ![Column definition in a side-by-side format](./media/column-definition-side-by-side-format.png "Column definition in a side-by-side format")
 
 ## Consolidations that use organization structures that are created from legal entities
-Organization hierarchies that contain dimensions or legal entities dynamically create reporting tree definitions in Financial reporting. An easy way to streamline consolidations is to add an organization hierarchy to your report in Financial reporting. Based on the report date, Financial reporting will select the organization hierarchy on or before the effective date, as shown in the following illustration.
+Organization hierarchies that contain dimensions or legal entities dynamically create reporting tree definitions in Financial reporting. An easy way to streamline consolidations is to add an organization hierarchy to your report in Financial reporting. Based on the report date, Financial reporting will select tfhe organization hierarchy on or before the effective date, as shown in the following illustration.
 
 ![Dynamically create reporting tree definition](./media/dynamically-create-reporting-tree-definitions.png "Dynamically create reporting tree definition")
 
@@ -102,7 +102,7 @@ A company might own only a percentage of another company. In this situation, whe
 In the reporting tree definition, enter the percentage of ownership in the **Rollup %** column (column H), as shown in the following illustration. When the report is generated, this percentage will be used to calculate the consolidated amount. In this example, Contoso owns only 80 percent of Contoso Germany. You can enter either **80** or **.8** in the **Rollup %** column, and 80 percent will be rolled up to the consolidated level.
 
 > [!NOTE]
-> You can apply this ownership percentage to any reporting unit, not just at the company level. This capability is helpful when ownership is a business unit level or a division level, not just a legal entity level.
+> You can apply this ownership percentage to any reporting unit, not just at the company level. 
 
 ![Using reporting tree definition percentage](./media/Using-reporting%20tree-definition-percentage.png "Using reporting tree definition percentage")
 
@@ -124,7 +124,7 @@ Often, different legal entities have different charts of accounts but still want
 
 1. Create a row definition that has multiple links to financial dimensions. There should be one link for each chart of accounts.
 2. Use the reporting unit restriction in the column definition to assign each company to the appropriate column.
-3. Use the reporting unit restriction in the column definition to assign each company to the appropriate column.
+
 
 Multiple links to financial dimensions can be added to each row in the row definition for each unique company's chart of accounts. In the following illustration, the USMF company uses the set of accounts in the first **Link to Financial Dimensions** column (column J), and the DEMF company uses the accounts in the second **Link to Financial Dimensions** column (column K).
 
@@ -199,7 +199,7 @@ There are four options for calculating exchange rates in Financial reporting:
 In Financial reporting, any report can be shown in any number of reporting currencies. The following fields in the report definition support this capability:
 
 - The **Currency Information** section in the **Report Definition** page. This section shows the currency that the values are shown in when a report is generated.
-- A new **Include all reporting currencies** check box. When this check box is selected, the reporting currencies will queue up after the report that uses the company's functional currency is generated. If the check box is cleared, you can still select a reporting currency in the Web Viewer. In this case, the reporting currency will be processed only when you select it.
+- A new **Include all reporting currencies** check box. When this check box is selected, a report for each reporting currencies will be added to the report queue up after the report that uses the company's functional currency is generated. If the check box is cleared, you can still select a reporting currency in the Web Viewer. In this case, the reporting currency will be processed only when you select it.
 
 The options in the report definition let you easily translate a report into all your reporting currencies. Therefore, you might be able to eliminate duplicate report definitions that differ only in the currencies that are used. If you require a report that shows multiple currencies side by side, you can continue to use the **Currency display** field in the **Column Definition** page to translate just that column of the report into an alternate reporting currency.
 
@@ -223,7 +223,7 @@ To get correctly translated amounts when currencies are used, Financial reportin
 
 - **Weighted average and average** – Each period is calculated at its weighted average, and is totaled for columns such as quarterly and year to date.
 - **Historical** – Any account that uses the historical translation method always goes back to the transaction date. If an acquisition date is associated with the transaction, that date is used to get the exchange rate. Each period is then totaled and stored to help improve the calculation time.
-- **Current** – Calculated and total columns, such as quarterly and year-to-date, are calculated at the spot rate that is determined in the column or on the report. For example, the **Quarter 1** column will use the March 31 rate if a calendar year is used.
+- **Current** – Calculated and total columns, such as columns for quarterly and year-to-date, are calculated at the spot rate that is determined in the column or on the report. For example, the **Quarter 1** column will use the March 31 rate if a calendar year is used.
 
 ## Additional resources
 
