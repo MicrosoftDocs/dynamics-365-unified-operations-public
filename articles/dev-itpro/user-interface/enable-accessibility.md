@@ -95,9 +95,9 @@ A visually impaired or blind user cannot be surprised by significant or unexpect
 ## Extensible controls – Insights for accessibility
 An extensible control is simply an extension of the framework. The interaction of the extensible control should be considered no different than any other framework control. When the control is a visually-rich widget that offers mouse actions, the author needs to ensure that equivalent, keyboard access functionality is available. A widget may not run in an “accessible mode” that is different than the standard presentation. Instead the widget must offer similar functionality without the need to activate or toggle state of the control. All uses of color should be based on themed colors so that when the mode is “High Contrast” your color scheme matches the theme change. The World Wide Web Consortium (WC3) website provides guidance for "Supported States and Properties" ([www.w3.org/TR/wai aria/states\_and\_properties\#state\_prop\_def](http://www.w3.org/TR/wai-aria/states_and_properties#state_prop_def)). This site is a helpful resource for ARIA tags and provides the definitions that you see below.
 
-### Control should
+### Controls should do this
 
-##### **Introduce itself**
+**Introduce itself**
 
 Importantly, your control should not only identify itself by name, but (using a label or ARIA tag) give a brief introduction on how it works. Make sure your descriptive text is supplied via a framework label for localization. 
 
@@ -137,7 +137,7 @@ Importantly, your control should not only identify itself by name, but (using a 
 
 - *aria-valuetext* - Defines the human readable text alternative of *aria-valuenow* for a range widget.
 
-### Control could
+### Controls could do this
 
 **Indicate an expanded state** Complex interactions can be learned, but current state isn’t always easy to determine without experimentation. When using an *aria-expanded* tag, the control describes its current state. An example is tabbing to a tab or FastTab section of a control.
 
@@ -147,7 +147,7 @@ Importantly, your control should not only identify itself by name, but (using a 
 
 - *aria-haspopup* - Indicates that the element has a pop-up context menu or sub-level menu.
 
-**Other Misc**
+**Other miscellaneous controls**
 
 - *aria-live* - Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.
 
