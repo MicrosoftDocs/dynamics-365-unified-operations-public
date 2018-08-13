@@ -36,9 +36,9 @@ This topic includes information and links to resources that should be considered
 
 ## Audit file
 - [German audit file (GDPdU/GoBD)](emea-deu-gdpdu-audit-data-export.md)
-- [Customize audit file configuration](/tasks/customize-german-audit-file-configuration.md)
-- [Generate the audit file](/tasks/german-audit-file.md)
-- [Import audit file configuration](/tasks/import-german-audit-file-configuration.md)
+- [Customize audit file configuration](tasks/customize-german-audit-file-configuration.md)
+- [Generate the audit file](tasks/german-audit-file.md)
+- [Import audit file configuration](tasks/import-german-audit-file-configuration.md)
 
 ## Depreciation
 -   [Additional acquisition depreciation](emea-deu-additional-acquisition-depreciation.md)
