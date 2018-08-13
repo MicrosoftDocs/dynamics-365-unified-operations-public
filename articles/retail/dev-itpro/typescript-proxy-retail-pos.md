@@ -107,9 +107,9 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference folde
     ```
 
 7. Build the project.
-8. Under the **Adapters** folder, add a new class file. Use any other manager class from the adapter folder as a template, so that the whole namespace is included.
-9. Extend the class from the interface manager, and implement only the interface methods that are required.
-
+8. Add a new class under the **Adapters** folder. Use any other manager class from the adapter folder as a template, so that the whole namespace is included.
+9. Extend the class from the interface manager, and implement only the required interface methods.
+  
     To learn how generate the interface and manager classes, see the Store Hours sample in the Retail SDK. The instructions are in the **RetailSDK\\Code\\Documents\\SampleExtensionsInstructions\\StoreHours\\readme.txt** file.
 
 ## Generate the C# proxy (7.3)
