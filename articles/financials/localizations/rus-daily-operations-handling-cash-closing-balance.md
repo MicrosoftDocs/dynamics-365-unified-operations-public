@@ -181,7 +181,7 @@ You can close balances for an advance holder in the following ways:
     
 
     > [!NOTE]
-    > <P>After the slip journal is processed, if the amount in the <STRONG>Amount to be transferred.</STRONG> field is negative, a disbursement slip is generated for the advance holder when the balances are closed. If the amount in the <STRONG>Amount to be transferred.</STRONG> field is positive, a reimbursement slip is generated. For more information, see <A href="./eeur-generate-a-cash-reimbursement-and-disbursement-slip.md">(EEUR) Generate a cash reimbursement and disbursement slip</A>.</P>
+    > <P>After the slip journal is processed, if the amount in the <STRONG>Amount to be transferred.</STRONG> field is negative, a disbursement slip is generated for the advance holder when the balances are closed. If the amount in the <STRONG>Amount to be transferred.</STRONG> field is positive, a reimbursement slip is generated.</P>
 
 
 
