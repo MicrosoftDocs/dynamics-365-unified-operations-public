@@ -114,7 +114,7 @@ The method of payment determines the format that is used for export of payment o
     
 
     > [!WARNING]
-    > <P>For more information, see <A href="rus-set-up-a-method-of-payment.md">(RUS) Set up a method of payment</A></P>
+    > <P>For more information, see <A href="./rus-payment-order-settings-processing.md"> Set up a method of payment</A></P>
 
 
 
@@ -399,14 +399,4 @@ When you send a payment return to the foreign bank account of a customer, you ca
 Use the **Transit account** function to change the date of a posted transaction. The banking operation type must be created, and a transaction account must be set. This function is applied to transactions of the types **Bank-Bank**, **Cash account-Bank**, and **Ledger-Bank**.
 
 You cannot post incoming or outgoing payments if the selected bank account is inactive, or if the receipt date of the banking operation is outside the period when the account is active.
-
-
-
-## Additional resources
-
-[(RUS) Create and post a payment journal for an exchanged currency](rus-create-and-post-a-payment-journal-for-an-exchanged-currency.md)
-
-[(RUS) Set up the bank operation type](rus-set-up-the-bank-operation-type.md)
-
-
 
