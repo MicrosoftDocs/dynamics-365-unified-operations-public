@@ -5,7 +5,7 @@ title: Environment planning
 description: This topic provides an overview of various aspects that you must consider while you plan for your project's environment.
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 08/09/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -76,7 +76,7 @@ Each Finance and Operations standard cloud offer includes three environments:
 - **Production environment** – One production instance is provided per tenant. The production multi-box instance includes disaster recovery and high availability. It will be provisioned when the implementation approaches the Operate phase, after the required activities in the Microsoft Dynamics Lifecycle Services (LCS) methodology and a successful go-live assessment are completed. Additionally, some file storage and database storage are included in the offer:
 
     - **File storage:** Every customer receives 100 gigabytes (GB) of file/Azure blob cloud storage for files and binary data. Additional file/blob storage can be purchased.
-    - **Database storage:** Every Finance and Operations subscription includes 10 GB of Azure SQL Database storage per customer at no additional charge. Additional storage capacity is provided at no charge as an organization increases the number of User and Device SLs. For more information about the various environments and the various types of storage, download the latest *Microsoft Dynamics 365 Licensing Guide* from [Dynamics 365 pricing](https://dynamics.microsoft.com/en-us/pricing/).
+    - **Database storage:** Every Finance and Operations subscription includes 10 GB of Azure SQL Database storage per customer at no additional charge. Additional storage capacity is provided at no charge as an organization increases the number of user and device SLs. For more information about the various environments and the various types of storage, download the latest *Microsoft Dynamics 365 Licensing Guide* from [Dynamics 365 pricing](https://dynamics.microsoft.com/en-us/pricing/).
 
 ### Provisioning of standard environments
 
@@ -86,7 +86,7 @@ The various Finance and Operations environments are provisioned at different tim
 |---------------------------------|-------------------------------|---------------------|
 | Tier-2 Standard Acceptance Test | During onboarding with the Microsoft FastTrack team | Yes |
 | Tier-1 develop/build and test   | When the Design phase starts. The provisioning process requires that Microsoft Visual Studio Team Services (VSTS) be configured. | Yes |
-| Production                      | At production system readiness | A production deployment request must be submitted in LCS. Deployment is done through DSE within two business days. |
+| Production                      | At production system readiness | A production deployment request must be submitted in LCS. Deployment is done through the Dynamics Service Engineering (DSE) team within two business days. |
 
 > [!IMPORTANT]
 > Always deploy environments by using an **unnamed** account, such as `dynadmin@customer.com`. Use the build topology to deploy and use the develop and test environment, because this topology simplifies build management and automatically initializes the VSTS source repository.
