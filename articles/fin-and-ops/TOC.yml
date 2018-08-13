@@ -1497,7 +1497,7 @@
           - name: Advance payment to an employee (Eastern Europe)
             href: ../financials/localizations/tasks/advance-payment-employee.md
         - name: Advanced invoicing
-         href: ../financials/localizations/emea-advance-invoice.md
+          href: ../financials/localizations/emea-advance-invoice.md
         - name: Bank reconciliation
           href: ../financials/localizations/emea-bank-reconciliation.md
         - name: Corrective invoicing
