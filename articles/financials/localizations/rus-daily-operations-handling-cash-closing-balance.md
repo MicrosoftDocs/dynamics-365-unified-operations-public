@@ -33,7 +33,7 @@ Use this procedure to create and post vendor invoices with advance holder detail
 
 1.  Click **Accounts payable** \> **Common** \> **Purchase orders** \> **All purchase orders**.
 
-2.  Press CTRL+N or click **Purchase order** to create a purchase order. For more information, see [Create a purchase order](create-a-purchase-order.md).
+2.  Press CTRL+N or click **Purchase order** to create a purchase order. For more information, see [Create a purchase order](./create-a-purchase-order.md).
 
 3.  In the **Purchase order** form, on the **Action Pane**, click **Header view**, and then click the **Price and discount** FastTab.
 
@@ -181,7 +181,7 @@ You can close balances for an advance holder in the following ways:
     
 
     > [!NOTE]
-    > <P>After the slip journal is processed, if the amount in the <STRONG>Amount to be transferred.</STRONG> field is negative, a disbursement slip is generated for the advance holder when the balances are closed. If the amount in the <STRONG>Amount to be transferred.</STRONG> field is positive, a reimbursement slip is generated. For more information, see <A href="eeur-generate-a-cash-reimbursement-and-disbursement-slip.md">(EEUR) Generate a cash reimbursement and disbursement slip</A>.</P>
+    > <P>After the slip journal is processed, if the amount in the <STRONG>Amount to be transferred.</STRONG> field is negative, a disbursement slip is generated for the advance holder when the balances are closed. If the amount in the <STRONG>Amount to be transferred.</STRONG> field is positive, a reimbursement slip is generated. For more information, see <A href="./eeur-generate-a-cash-reimbursement-and-disbursement-slip.md">(EEUR) Generate a cash reimbursement and disbursement slip</A>.</P>
 
 
 
