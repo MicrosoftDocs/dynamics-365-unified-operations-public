@@ -1961,6 +1961,10 @@
           href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
         - name: Set up sales tax groups for reverse charge VAT
           href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
+    - name: Russia 
+      items:
+      - name: Create a purchase book
+        href: ../financials/localizations/rus-sales-books-purchase-books.md     
     - name: Latin America
       items:
       - name: Brazil
