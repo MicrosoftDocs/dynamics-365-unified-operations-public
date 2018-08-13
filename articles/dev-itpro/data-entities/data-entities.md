@@ -175,6 +175,15 @@ You can quickly create an entity from a table, and then customize the properties
 
 [![Create data entity](./media/over5.png)](./media/over5.png)
 
+## Entity list refresh
+Entities in an environment must be refreshed using the following guidelines.
+
+-   When a new environment is deployed and the user navigates to the data management workspace, entity list refresh starts automatically.
+-   When code packages are deployed to an environment where data management has already been used, entity list refresh must be manually started from **Data management > Framework parameters > Entity settings > Refresh entity list**.
+-   When configuration keys are modified, entity list must be refreshed manually from **Data management > Framework parameters > Entity settings > Refresh entity list**.
+
+Refreshing the entity list ensures all entities are available in the environment and that the entities have the latest metadata.
+
 ## Configuration keys and data entities
 Before you use data entities to import or export data, we recommended that you first determine the impact of configuration keys on the data entities that you are planning to use. 
 

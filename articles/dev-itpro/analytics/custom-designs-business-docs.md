@@ -75,7 +75,7 @@ The following walkthrough shows the process of introducing a custom report desig
         }
 
 8.  **Add a new report handler (X++) class to the project.** Give the class a name that appropriately describes that it's a handler for Print management–based documents. For this example, rename the class **PrintMgtDocTypeHandlerExt** to distinguish it from other object handlers.
-9.  **Add a delegate handler method to start to use your custom report.** In this example, extend the **getDefaultReportFormatDelegate** method in the **PrintMgtDocTypeHandlerExt** class by using the following code.
+9.  **Add a delegate handler method to start to use your custom report.** In this example, subscribe to the **getDefaultReportFormatDelegate** method in the **PrintMgtDocTypeHandlerExt** class by using the following code.
 
         class PrintMgtDocTypeHandlersExt
         {
