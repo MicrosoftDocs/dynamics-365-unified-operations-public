@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Add a relation to a table
+title: Add relations to tables through extension
 description: This topic explains how to add a relation to a table.
 author: ivanv-microsoft
 manager: AnnBe
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Add a relation to a table
+# Add relations to tables through extension
 
 [!include [banner](../includes/banner.md)]
 

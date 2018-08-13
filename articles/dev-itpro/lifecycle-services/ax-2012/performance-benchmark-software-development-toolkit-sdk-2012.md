@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Performance Benchmark Software Development Toolkit (SDK) 
+title: Performance Benchmark software development kit (SDK) 
 description: The Microsoft Dynamics AX 2012 Performance Benchmark Software Development Toolkit (SDK) provides partners and customers with extensible features to develop benchmarks that closely mimic their custom implementation.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Performance Benchmark Software Development Toolkit (SDK) for Dynamics AX 2012
+# Performance Benchmark software development kit (SDK)
 
 [!include [banner](../../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Validate an application in Microsoft Dynamics 365 for Finance and Operations
+title: Validate applications for Finance and Operations
 description: This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that a solution package can be successfully bundled and delivered in a Microsoft Dynamics 365 for Finance and Operations environment.
 author: kfend
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.author: omarc
 
 ---
 
-# Validate an application for Microsoft Dynamics 365 for Finance and Operations
+# Validate applications for Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
@@ -78,7 +78,7 @@ The following table provides more information about each curation requirement.
 | Business database backup     | A business database of your upgraded Finance and Operations environment and best practice configurations should be loaded into the Asset library in LCS.                                                                                                                        |
 | Project name and description | The project name and description should be incorporated into the beginning of the implementation methodology for the solution package.                                                                                                                                               |
 | Data packages                | All data packages should be loaded into LCS before the validation meeting. Create data entities for any additional custom fields or tables for your custom functional features. You should be able to modify the data packages and load them into an empty environment, and then consume the data packages in Data Management Framework. |
-| Methodology                  | The methodology should incorporate an overview of the product. A guided experience to Conference Room Pilot 1 (CRP1) and another implementation methodology that is specifically tailored to your solution are optional. |
+| Methodology                  | The methodology should incorporate an overview of the product. A guided experience to Conference Room Pilot 1 (CRP1) and any other implementation methodology that is specifically tailored to your solution are optional. |
 | Binaries (optional)          | Incorporate any required binary files.                                                                                                                                                                                                                                               |
 | Deployable packages          | Incorporate the deployable packages that are required in order to bring your custom features and functionality into Finance and Operations.                                                                                                                                     |
 | Models (code and tests)      | Incorporate any model files that are required for your solution.                                                                                                                                                                                                                     |
@@ -100,10 +100,6 @@ If you have a curated solution that is published on AppSource, you must keep the
 | Phase | Number | Activity                                       | Process steps                                                                | Success criteria                                                                                                                                                                                                                                                                                     |
 |-------|--------|------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1     | 1      | Validate Finance and Operations customer code. | Run all customer model files by using the CAR tool, and generate the report. | Successfully create a CAR without any localization, accessibility, performance, or security issues. All major issues that the CAR highlights should be addressed after you've upgraded to the latest major release. The CAR must be submitted to Microsoft within eight weeks after each major Spring and Fall release. |
-=======
-| Phase | Number | Activity                                            | Process steps                                                                | Success criteria                                                                                                                                                                                                                                                                                     |
-|-------|--------|-----------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1     | 1      | Validate Finance and Operations customer code. | Run all customer model files by using the CAR tool, and generate the report. | Successfully create a CAR without any localization, accessibility, performance, or security issues. All major issues that the CAR highlights should be addressed after you upgrade to the latest major release. The CAR must be submitted to Microsoft six weeks after the fall and spring releases. |
 
 
 Additional resources

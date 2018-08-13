@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Enable users to receive workflow-related email messages
+title: Configure the system to send workflow-related email to users
 description: You can configure the system to send email messages to users when workflow-related events occur. 
 author: jasongre
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: jasongre
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Enable users to receive workflow-related email messages
+# Configure the system to send workflow-related email to users
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Azure Resource Manager onboarding
+title: Complete the Azure Resource Manager (ARM) onboarding process
 description: This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors. 
 author: sarvanisathish
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Azure Resource Manager onboarding
+# Complete the Azure Resource Manager (ARM) onboarding process
 
 [!include [banner](../includes/banner.md)]
 

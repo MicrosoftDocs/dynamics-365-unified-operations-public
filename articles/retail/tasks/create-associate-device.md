@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create and associate a device
+title: Create devices and associate them with registers
 description: This procedure walks through how to create a new device and associate it to a register. 
 author: jashanno
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create and associate a device
+# Create devices and associate them with registers
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

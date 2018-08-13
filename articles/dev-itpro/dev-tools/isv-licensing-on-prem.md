@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: ISV licensing (on-premises)
+title: Independent software vendor (ISV) licensing (on-premises)
 description: This topic describes the independent software vendor (ISV) licensing feature for on-premises environments.
 author: manalidongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.3.0
 
 ---
 
-# ISV licensing (on-premises)
+# Independent software vendor (ISV) licensing (on-premises)
 
 [!include [banner](../includes/banner.md)]
 

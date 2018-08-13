@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deployment with continuous build and test automation
+title: Deploy topologies that support continuous build and test automation
 description: This topic describes how to deploy a developer topology that supports continuous build and test automation.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Deployment with continuous build and test automation
+# Deploy topologies that support continuous build and test automation
 
 [!include [banner](../includes/banner.md)]
 

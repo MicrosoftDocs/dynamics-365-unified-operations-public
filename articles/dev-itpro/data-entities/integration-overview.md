@@ -46,10 +46,10 @@ The following table lists the integration patterns that are available for Financ
 | Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data package API](data-management-api.md) |
 | Custom service                | [Custom services](custom-services.md) |
 | Consume external web services | [Consuming external web services](consume-external-web-service.md) |
-| Excel integration | [Office integration](../office-integration/office-integration.md) |
+| Excel integration             | [Office integration](../office-integration/office-integration.md) |
 
-Note:
-For on premise deployments, the only supported API is the [Data package API](data-management-api.md). This is currently available on 7.2, platform update 12 build 7.0.4709.41184.
+> [!NOTE]
+> For on premise deployments, the only supported API is the [Data package API](data-management-api.md). This is currently available on 7.2, platform update 12 build 7.0.4709.41184.
 
 ## Synchronous vs. asynchronous integration patterns
 
@@ -68,12 +68,12 @@ Before you compare synchronous and asynchronous patterns, you should be aware th
 
 The following examples illustrate this point. You can't assume that the caller will be blocked when the Open Data Protocol (OData) is used for integration. The caller might not be blocked, depending on how a call is made.
 
-| Pattern        | Synchronous programming paradigm      | Asynchronous programming paradigm |
-|----------------|---------------------------------------|-----------------------------------|
+| Pattern        | Synchronous programming paradigm    | Asynchronous programming paradigm |
+|----------------|-------------------------------------|-----------------------------------|
 | OData          | DbResourceContextaveChanges         | DbResourceContextaveChangesAsync |
 | Custom service | httpRequestetResponse               | httpRequesteginGetResponse |
 | SOAP           | UserSessionServiceetUserSessionInfo | UserSessionServiceetUserSessionInfoAsync |
-| Batch data API | ImportFromPackage                     | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
+| Batch data API | ImportFromPackage                   | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
 
 Both OData and custom services are synchronous integration patterns, because when these APIs are called, business logic is immediately run in Finance and Operations. Here are some examples:
 
@@ -104,11 +104,11 @@ Here are some typical scenarios that use OData integrations.
 
 A manufacturer runs Finance and Operations, but defines and configures its product by using a third-party application that is hosted on-premises. This manufacturer wants to move its production information from the on-premises application to Finance and Operations. When a product is defined, or when it's changed in the on-premises application, the user should see the same change, in real time, in Finance and Operations.
 
-| Decision                    | Information      |
-|-----------------------------|------------------|
-| Is real-time data required? | Yes              |
+| Decision                    | Information              |
+|-----------------------------|--------------------------|
+| Is real-time data required? | Yes                      |
 | Peak data volume            | 1,000 records per hour\* |
-| Frequency                   | Ad hoc           |
+| Frequency                   | Ad hoc                   |
 
 \* Occasionally, many new or modified production configurations will occur in a short time.
 
@@ -129,11 +129,11 @@ In the third-party application:
 
 A company runs Finance and Operations but has a self-hosted customer portal where customers can check the status of their orders. Order status information is maintained in Finance and Operations.
 
-| Decision                    | Information    |
-|-----------------------------|----------------|
-| Is real-time data required? | Yes            |
+| Decision                    | Information            |
+|-----------------------------|------------------------|
+| Is real-time data required? | Yes                    |
 | Peak data volume            | 5,000 records per hour |
-| Frequency                   | Ad hoc         |
+| Frequency                   | Ad hoc                 |
 
 #### Recommended solution
 
@@ -152,11 +152,11 @@ On the customer portal site:
 
 A company runs Finance and Operations but uses a product lifecycle management (PLM) system that is hosted on-premises. The PLM system has a workflow that sends the finished bill of materials (BOM) information to Finance and Operations for approval.
 
-| Decision                    | Information    |
-|-----------------------------|----------------|
-| Is real-time data required? | Yes            |
+| Decision                    | Information            |
+|-----------------------------|------------------------|
+| Is real-time data required? | Yes                    |
 | Peak data volume            | 1,000 records per hour |
-| Frequency                   | Ad hoc         |
+| Frequency                   | Ad hoc                 |
 
 #### Recommended solution
 
@@ -183,11 +183,11 @@ Here are some typical scenarios that use a custom service.
 
 An energy company has field workers who schedule installation jobs for heaters. This company uses Finance and Operations for the back office and third-party software as a service (SaaS) to schedule appointments. When field workers schedule appointments, they must look up inventory availability to make sure that installation parts are available for the job.
 
-| Decision                    | Information    |
-|-----------------------------|----------------|
-| Is real-time data required? | Yes            |
+| Decision                    | Information            |
+|-----------------------------|------------------------|
+| Is real-time data required? | Yes                    |
 | Peak data volume            | 1,000 records per hour |
-| Frequency                   | Ad hoc         |
+| Frequency                   | Ad hoc                 |
 
 #### Recommended solution
 
@@ -217,7 +217,7 @@ A company receives a large volume of sales orders from a front-end system that r
 | Decision                    | Information                 |
 |-----------------------------|-----------------------------|
 | Is real-time data required? | No                          |
-| Peak data volume            | 200,000 records per hour            |
+| Peak data volume            | 200,000 records per hour    |
 | Frequency                   | One time every five minutes |
 
 #### Recommended solution
@@ -237,11 +237,11 @@ In the on-premises system:
 
 A company generates a large volume of purchase orders in Finance and Operations and uses an on-premises inventory management system to receive products. Purchase orders must be moved from Finance and Operations to the on-premises inventory system.
 
-| Decision                    | Information       |
-|-----------------------------|-------------------|
-| Is real-time data required? | No                |
+| Decision                    | Information               |
+|-----------------------------|---------------------------|
+| Is real-time data required? | No                        |
 | Peak data volume            | 300,000 records per hour  |
-| Frequency                   | One time per hour |
+| Frequency                   | One time per hour         |
 
 #### Recommended solution
 
@@ -262,7 +262,10 @@ In the on-premises inventory system:
 It's typical that Finance and Operations calls out to an external web service that is hosted either on-premises or by another SaaS provider. In this case, Finance and Operations acts as the integration client. When you write an integration client for Finance and Operations, you should follow the same set of best practices and guidelines that you follow when you write an integration client for any other application. For a simple example, see [Consuming external web services](consume-external-web-service.md).
 
 > [!IMPORTANT]
-> Because of security requirements, Finance and Operations production and sandbox environments support only secured communication that uses Transport Layer Security (TLS) 1.2 or later. In other words, the target web service endpoint that Finance and Operations calls out to must support TLS 1.2 or later. If the target service endpoint doesn't meet this requirement, calls from Finance and Operations fail. The exception error message resembles the following message:  
-> "Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host."  
-> If you can't modify the target service so that it uses TLS 1.2 or later, you can work around this issue by introducing a broker service and making a two-hop call, as shown in the following illustration.  
+> Because of security requirements, Finance and Operations production and sandbox environments support only secured communication that uses Transport Layer Security (TLS) 1.2 or later. In other words, the target web service endpoint that Finance and Operations calls out to must support TLS 1.2 or later. If the target service endpoint doesn't meet this requirement, calls from Finance and Operations fail. The exception error message resembles the following message:
+>
+> *Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.*
+>
+> If you can't modify the target service so that it uses TLS 1.2 or later, you can work around this issue by introducing a broker service and making a two-hop call, as shown in the following illustration.
+>
 > ![TLS requirements](./media/integration-tls.png)

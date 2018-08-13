@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create required configurations to import data from an external file for electronic reporting (ER)
+title: Create ER configurations to import data from external files
 description: The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations application from an external file. 
 author: NickSelin
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create required configurations to import data from an external file for electronic reporting (ER)
+# Create ER configurations to import data from external files
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

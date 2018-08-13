@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Store fulfillment setup
+title: Set up order fulfillment for stores
 description: This topic provides an overview of how to set up store order fulfillment. 
 author: rubencdelgado
 manager: AnnBe

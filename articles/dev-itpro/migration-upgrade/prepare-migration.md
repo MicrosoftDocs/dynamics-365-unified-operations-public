@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Prepare to migrate code from Dynamics AX 2012 R3 to Dynamics 365 for Finance and Operations
+# Prepare to migrate code to Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Set up technical support
+# Set up technical support for Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 

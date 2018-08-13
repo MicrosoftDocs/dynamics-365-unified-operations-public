@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Web API and OData controllers
+title: Create a Web API controller for Retail Server
 description: This article provides code to extend the ApiController class so that you can create a Web API controller for Retail Server.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Web API and OData controllers
+# Create a Web API controller for Retail Server
 
 [!include [banner](../includes/banner.md)]
 

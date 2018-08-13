@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Finance and Operations cloud platform monthly updates FAQ
+title: Cloud platform monthly updates FAQ
 description: This topic provides some important information about the monthly updates of the Microsoft Dynamics 365 for Finance and Operations cloud platform.
 author: manalidongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-03-31
 
 ---
 
-# Finance and Operations cloud platform monthly updates FAQ
+# Cloud platform monthly updates FAQ
 
 [!include [banner](../includes/banner.md)]
 
@@ -129,6 +129,10 @@ The [Software lifecycle policy](../migration-upgrade/versions-update-policy.md) 
 ## How can I get early access to the platform bits for validation?
 
 If you're a partner and are interested in getting early access to the platform update, join the [PEAP program](http://aka.ms/PEAPnomination) by submitting the nomination survey at <http://aka.ms/PEAPnomination>. If you're a customer and want your environments to always run on the latest platform, submit the nomination survey at <http://aka.ms/CAAPnomination>.
+
+## How can I get the exact package version that is applied to my Sandbox environment by Microsoft ?
+
+When Microsoft updates your Tier 2 Sandbox environment, a copy of the package version is saved in the LCS Project Asset Library.
 
 ## I prefer that Microsoft update a Standard Acceptance Test (Sandbox) environment that differs from the Tier-2 sandbox environment that I purchased. What can I do?
 

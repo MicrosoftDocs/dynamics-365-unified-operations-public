@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Set up rules and parameters for cross docking and buyer's push
+title: Set up rules and parameters for cross-docking and buyer's push
 description: This procedure demonstrates the steps to create Replenishment rules. 
 author: josaw1
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Set up rules and parameters for cross docking and buyer's push
+# Set up rules and parameters for cross-docking and buyer's push
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

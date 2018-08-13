@@ -17,7 +17,7 @@ ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220774

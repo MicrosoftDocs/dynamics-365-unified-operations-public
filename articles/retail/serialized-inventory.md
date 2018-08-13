@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: POS improvements for serialized products
+title: Point of sale (POS) improvements for serialized products
 description: This topic lists improvements that have been made to serialized products to help you save time and be more productive.
 author: ShalabhjainMSFT
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
-# POS improvements for serialized products
+# Point of sale (POS) improvements for serialized products
 
 [!include [banner](includes/banner.md)]
 

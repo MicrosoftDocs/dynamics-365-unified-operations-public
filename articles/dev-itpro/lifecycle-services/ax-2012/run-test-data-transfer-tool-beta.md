@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
+title: Run the Test Data Transfer Tool (beta)
 description: This topic provides information about how to run the Test Data Transfer Tool in Microsoft Dynamics AX.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
+# Run the Test Data Transfer Tool (beta)
 
 [!include [banner](../../includes/banner.md)]
 

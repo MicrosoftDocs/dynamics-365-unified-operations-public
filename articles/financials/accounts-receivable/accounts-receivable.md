@@ -3,7 +3,7 @@
 
 title: Accounts receivable home page
 description: Use Accounts receivable to track customer invoices and incoming payments.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
@@ -17,14 +17,14 @@ ms.search.form:  CustomerInvoiceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20671
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -50,29 +50,25 @@ to record payments in a single legal entity on behalf of the other legal entitie
 
 Use Accounts receivable to track customer invoices and payments that you receive from customers. You can set up customer groups, customers, posting profiles, interest notes, collection letters, commissions, and parameters regarding customers, charges, deliveries and destinations, bills of exchange, and other types of Accounts receivable information. 
 
-[Accounting distributions and subledger journal entries for free text invoices](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+:::row:::
+    :::column:::
+        - [Accounting distributions and subledger journal entries for free text invoices](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+        - [Customer posting profiles](customer-posting-profiles.md)
+        - [Credit card setup, authorization, and capture](credit-card-authorizations.md)
+        - [Create a customer invoice](configure-customer-invoices.md)
+        - [Set up and process recurring invoices](set-up-process-recurring-invoices.md)
+        - [Correct a free text invoice](correct-free-text-invoice.md)
+    :::column-end:::
+    :::column:::
+        - [Set up bills of exchange](set-up-bills-exchange.md)
+        - [Set up interest rates for an interest code](set-up-interest-rates-interest-code.md)
+        - [Waive, reinstate, or reverse interest fees](waive-reinstate-reverse-interest-fees.md)
+        - [SEPA direct debit overview](sepa-direct-debit-overview.md)
+        - [Set up SEPA direct debit mandate](sepa-direct-debit-mandate.md)
+        - [Close Accounts receivable](close-accounts-receivable.md)
+    :::column-end:::
+:::row-end:::
 
-[Customer posting profiles](customer-posting-profiles.md)
-
-[Credit card setup, authorization, and capture](credit-card-authorizations.md)
-
-[Create a customer invoice](configure-customer-invoices.md)
-
-[Set up and process recurring invoices](set-up-process-recurring-invoices.md)
-
-[Correct a free text invoice](correct-free-text-invoice.md)
-
-[Set up bills of exchange](set-up-bills-exchange.md)
-
-[Set up interest rates for an interest code](set-up-interest-rates-interest-code.md)
-
-[Waive, reinstate, or reverse interest fees](waive-reinstate-reverse-interest-fees.md)
-
-[SEPA direct debit overview](sepa-direct-debit-overview.md)
-
-[Set up SEPA direct debit mandate](sepa-direct-debit-mandate.md)
-
-[Close Accounts receivable](close-accounts-receivable.md)
 
 ## Set up credit and collections
 
@@ -88,21 +84,21 @@ Accounts receivable collections information is managed in one central view, the 
 
 Accept different types of payments from customers, such as bills of exchange, cash, checks, credit cards, and electronic payments. 
 
-[Use a customer payment to settle multiple invoices that span multiple discount periods](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+:::row:::
+    :::column:::
+        - [Use a customer payment to settle multiple invoices that span multiple discount periods](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+        - [Centralized payments for Accounts receivable](centralized-payments-accounts-receivable.md)
+        - [Settle a partial customer payment and the final payment in full before the discount date](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+        - [Settle a partial customer payment before the discount date with a final payment after the discount date](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+    :::column-end:::
+    :::column:::
+        - [Settle a partial customer payment that has discounts on credit notes](settle-partial-customer-payment-discounts-credit-notes.md)
+        - [Settle a partial customer payment that has multiple discount periods](settle-partial-customer-payment-multiple-discount-periods.md)
+        - [Reimburse customers](reimburse-customers.md)
+        - [Customer payments for a partial amount](customer-payments-partial-amount.md)
+    :::column-end:::
+:::row-end:::
 
-[Centralized payments for Accounts receivable](centralized-payments-accounts-receivable.md)
-
-[Settle a partial customer payment and the final payment in full before the discount date](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-
-[Settle a partial customer payment before the discount date with a final payment after the discount date](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
-
-[Settle a partial customer payment that has discounts on credit notes](settle-partial-customer-payment-discounts-credit-notes.md)
-
-[Settle a partial customer payment that has multiple discount periods](settle-partial-customer-payment-multiple-discount-periods.md)
-
-[Reimburse customers](reimburse-customers.md)
-
-[Customer payments for a partial amount](customer-payments-partial-amount.md)
 
 ### Additional resources
 

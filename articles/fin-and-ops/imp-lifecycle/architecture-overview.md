@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Finance and Operations architecture
+title: Finance and Operations architecture
 description: This topic provides an overview of the architecture of Microsoft Dynamics 365 for Finance and Operations.
 author: ClaudiaBetz-Haubold
 manager: AnnBe
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Microsoft Dynamics 365 for Finance and Operations architecture
+# Finance and Operations architecture
 
 [!include [banner](../includes/banner.md)]
 
-The cloud architecture for Microsoft Dynamics 365 for Finance and Operations includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management.
+The Microsoft Dynamics 365 for Finance and Operations cloud architecture contains all the elements that are common to all Microsoft cloud offerings, as described in [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](https://docs.microsoft.com/en-us/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings). Beyond this, it also includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management. 
 
 ![Cloud architecture](./media/cloud-architecture.png)
 

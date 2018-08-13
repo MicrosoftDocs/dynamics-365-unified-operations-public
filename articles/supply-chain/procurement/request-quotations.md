@@ -5,7 +5,7 @@ title: Requests for quotation (RFQs)
 description: This topic provides an overview of requests for quotation (RFQs). Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, P
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2154
@@ -163,7 +163,7 @@ tokens:
 
 -   %RFQ case name%
 
--   %ExpiryDateTime%
+-   %Expiry Date Time%
 
 -   %Date%
 

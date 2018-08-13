@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create a mass hire project
+title: Create mass hire projects
 description: This procedure walks through the process of setting up a mass hire project. 
 author: kherr75
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create a mass hire project
+# Create mass hire projects
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

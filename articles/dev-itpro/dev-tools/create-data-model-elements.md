@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a model and data model elements
+title: Create models and data model elements
 description: In this tutorial, you'll use Visual Studio's Dynamics 365 menu to create a new model named Fleet Management tutorial. You'll also create and edit new model elements.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create a model and data model elements
+# Create models and data model elements
 
 [!include [banner](../includes/banner.md)]
 

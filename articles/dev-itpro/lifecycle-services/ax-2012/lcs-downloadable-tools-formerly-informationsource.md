@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Lifecycle Services downloadable tools (AX 2012)
+title: Downloadable tools in Lifecycle Services (LCS)
 description: This topic provides information about the tools that are available for download from Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Lifecycle Services downloadable tools (AX 2012)
+# Downloadable tools in Lifecycle Services (LCS)
 
 [!include [banner](../../includes/banner.md)]
 

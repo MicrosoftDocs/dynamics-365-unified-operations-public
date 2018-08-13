@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Import data from an ODBC data source (AX 2012)
+title: Import data from ODBC data sources
 description: You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to import data from an ODBC data source into Microsoft Dynamics AX 2012. 
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Import data from an ODBC data source (AX 2012)
+# Import data from ODBC data sources
 
 [!include [banner](../../includes/banner.md)]
 

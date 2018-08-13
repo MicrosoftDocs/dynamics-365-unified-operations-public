@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Base price and trade agreements
+title: Create channel-specific trade agreements
 description: This procedure walks through creating channel-specific sales price trade agreements. 
 author: josaw1
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Base price and trade agreements
+# Create channel-specific trade agreements
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail SDK extensibility samples
+title: Retail software development kit (SDK) extensibility samples
 description: The Retail SDK includes extensibility samples. These samples are a good way to learn about different ways to customize Retail.  
 author: mugunthanm
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail SDK extensibility samples
+# Retail software development kit (SDK) extensibility samples
 
 [!include [banner](../../includes/banner.md)]
 

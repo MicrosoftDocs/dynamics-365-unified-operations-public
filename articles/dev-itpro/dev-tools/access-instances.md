@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Access instances
+title: Deploy and access development environments
 description: This topic describes how to access development instances, configure on-premises development VMs, and find important configuration settings for developers and administrators.
 author: robadawy
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Deploy and access development environments 
+# Deploy and access development environments
 
 [!include [banner](../includes/banner.md)]
 

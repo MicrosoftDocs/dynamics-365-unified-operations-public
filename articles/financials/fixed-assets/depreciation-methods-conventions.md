@@ -3,7 +3,7 @@
 
 title: Depreciation methods and conventions
 description: This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics 365 for Finance and Operations.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBook
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3441

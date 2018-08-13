@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Migrate code for a Microsoft Dynamics 365 for Finance and Operations solution
+title: Migrate code for Finance and Operations solutions
 description: This topic describes how to upgrade and analyze your code in Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms.date: 04/13/2018
+ms.date: 06/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -28,7 +28,7 @@ ms.author: omarc
 
 ---
 
-# Migrate code for a Microsoft Dynamics 365 for Finance and Operations solution
+# Migrate code for Finance and Operations solutions
 
 [!include[banner](../includes/banner.md)]
 
@@ -46,8 +46,6 @@ The xppbp.exe file is located in c:\\packages\\bin or I:\\AosService\\Packages\\
 
 ## Extensibility
 In Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018), all product models are sealed. Therefore, only extension-based customizations are currently supported. For more information about extensibility, see [Extensibility](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page).
-=======
-[!include [banner](../includes/banner.md)]
 
 The first step in completing your solution package is to upgrade your code using the best practices in <strong>Migrate and Create Finance and Operations Solutions</strong> in LCS. After this step is complete, you must run the Customization Analysis report. This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
 
@@ -63,9 +61,6 @@ The xppbp.exe file is located in *c:\packages\bin* or *I:\AosService\Packages\Lo
 
 Additional resources
 --------
-
 [Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)
-=======
-[LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
 
 [Technical Concepts Guide for code migration](../dev-tools/developer-home-page.md#code-migration)

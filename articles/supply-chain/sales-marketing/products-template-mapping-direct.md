@@ -5,7 +5,7 @@ title: Synchronize products directly from Finance and Operations to products in 
 description: This topic discusses the templates and underlying tasks that are used to synchronize products from Microsoft Dynamics 365 for Finance and Operations, to Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,10 +14,9 @@ ms.technology:
 # optional metadata
 
 ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -81,7 +80,8 @@ The **Is Externally Maintained** field helps guarantee that only quotations and 
 Externally maintained products are automatically added to the first valid price list that has the same currency. Price lists are organized alphabetically by name. The product sales price from Finance and Operations is used as the price on the price list. Therefore, there must be a price list in Sales for every product sales currency in Finance and Operations. The currency on the released sellable products is set to the accounting currency in the legal entity that the product is exported from.
 
 > [!NOTE]
-> Product synchronization won't succeed unless there is a price list that has a matching currency.
+> - Product synchronization will not succeed unless there is a price list that has a matching currency.
+> - You can control the used price list with the integration by mapping the pricelevelid.name [Default Price List (Name)] in the Data Integration project. The input has to be in all lowercase letters. For example, the default for a price list in Sales named ‘Standard’ would be: Destination field: pricelevelid.name [Default Price List (Name)] and Map type: [ { "transformType": "Default", "defaultValue": "standard" } ].
 
 ## Preconditions and mapping setup
 

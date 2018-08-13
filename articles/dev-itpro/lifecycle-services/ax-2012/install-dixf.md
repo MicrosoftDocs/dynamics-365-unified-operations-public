@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install the Data import/export framework (AX 2012)
+title: Install the Data Import/Export Framework (DIXF)
 description: This topic provides information about how to install the data import/export framework.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Install the Data import/export framework (AX 2012)
+# Install the Data Import/Export Framework (DIXF)
 
 [!include [banner](../../includes/banner.md)]
 

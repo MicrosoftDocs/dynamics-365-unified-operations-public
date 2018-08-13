@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install Data import/export framework for AX 2012 R3
+title: Install the Data Import/Export Framework (DIXF) for AX 2012 R3
 description: This topic describes how to install the Data Import/Export Framework for Microsoft Dynamics AX 2012 R3. 
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 2012 R3 CU8
 
 ---
 
-# Install the Data import/export framework for AX 2012 R3
+# Install the Data Import/Export Framework (DIXF) for AX 2012 R3
 
 [!include [banner](../../includes/banner.md)]
 
