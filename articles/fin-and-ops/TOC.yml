@@ -157,6 +157,8 @@
       href: get-started/fasttrack-dynamics-365-overview.md
     - name: Onboarding
       href: imp-lifecycle/onboard.md
+   - name: Environment planning
+      href: imp-lifecycle/environment-planning.md    
     - name: Preparing for go-live
       href: imp-lifecycle/prepare-go-live.md
     - name: Go-live FAQ
