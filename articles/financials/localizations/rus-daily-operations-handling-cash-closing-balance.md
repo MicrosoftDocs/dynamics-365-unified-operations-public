@@ -33,7 +33,7 @@ Use this procedure to create and post vendor invoices with advance holder detail
 
 1.  Click **Accounts payable** \> **Common** \> **Purchase orders** \> **All purchase orders**.
 
-2.  Press CTRL+N or click **Purchase order** to create a purchase order. For more information, see [Create a purchase order](../../../supply-chain/procurement/tasks/create-purchase-order).
+2.  Press CTRL+N or click **Purchase order** to create a purchase order. For more information, see [Create a purchase order](/../../supply-chain/procurement/tasks/create-purchase-order).
 
 3.  In the **Purchase order** form, on the **Action Pane**, click **Header view**, and then click the **Price and discount** FastTab.
 
