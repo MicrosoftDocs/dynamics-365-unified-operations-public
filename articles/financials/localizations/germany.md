@@ -56,10 +56,6 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 -   If the **Print corrective invoice on a sales memo** option is set to **No**, the label "Gutschrift" will be printed on all credit memos.
 -   If the **Print corrective invoice on a sales memo** option is set to **Yes**, the label "Rechnungskorrektur” will be printed on credit memos for sales orders, free text invoices, and project invoices.
 
-## Electronic tax declarations
-
--   [Set up electronic tax declaration](tasks/setup-electronic-tax-declaration-germany.md)
-
 
 ## Reports for Germany
 
