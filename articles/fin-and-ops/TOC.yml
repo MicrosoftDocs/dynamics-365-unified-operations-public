@@ -944,7 +944,14 @@
           href: ../financials/general-ledger/tasks/create-account-structures.md
         - name: Create accrual schemes
           href: ../financials/general-ledger/tasks/create-accrual-schemes.md
-        - name: Create consolidation groups and additional consolidation accounts
+        - name: Financial consolidations and currency translation
+          href: ../financials/general-ledger/financial-consolidations-currency-translation.md
+          items:
+           - name: Consolidate online
+             href: ../financials/general-ledger/consolidate-online.md
+           - name: Generate consolidated financial statements
+             href: ../financials/general-ledger/generating-consolidated-financial-statements.md
+        - name: Create consolidation groups and additional consolidation account
           href: ../financials/general-ledger/tasks/create-consolidation-groups.md
         - name: Main account types
           href: ../financials/general-ledger/main-account-types.md
