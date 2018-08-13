@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extend the number sequence scope
+title: Extend the scope of number sequences
 description: This topic explains how developers can extend number sequence scope.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Extend the number sequence scope
+# Extend the scope of number sequences
 
 [!include [banner](../includes/banner.md)]
 

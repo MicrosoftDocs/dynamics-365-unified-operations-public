@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 Translation Service - Documentation file translation
+title: Translate documentation files
 description: This topic explains how to translate a documentation file for a Microsoft Dynamics product or solution.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.3.0
 
 ---
 
-# Microsoft Dynamics 365 Translation Service - Documentation file translation
+# Translate documentation files
 
 [!include [banner](../includes/banner.md)]
 

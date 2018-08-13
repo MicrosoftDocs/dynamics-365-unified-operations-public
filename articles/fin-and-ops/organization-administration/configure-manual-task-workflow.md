@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure a manual task in a workflow
+title: Configure manual tasks in a workflow
 description: This topic explains how to configure the properties for a manual task.
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure a manual task in a workflow
+# Configure manual tasks in a workflow
 
 [!include [banner](../includes/banner.md)]
 

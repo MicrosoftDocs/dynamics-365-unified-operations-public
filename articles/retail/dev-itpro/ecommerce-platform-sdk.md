@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: e-Commerce Platform SDK
+title: e-Commerce platform software development kit (SDK)
 description: This topic describes the e-Commerce Platform SDK.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# e-Commerce Platform SDK
+#  e-Commerce platform software development kit (SDK)
 
 [!include [banner](../includes/banner.md)]
 

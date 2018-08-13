@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage third-party models and runtime packages using source control
+title: Manage third-party models and runtime packages by using source control
 description: This topic outlines a recommended strategy for managing, distributing, and deploying third-party solutions.
 author: jorisdg
 manager: AnnBe

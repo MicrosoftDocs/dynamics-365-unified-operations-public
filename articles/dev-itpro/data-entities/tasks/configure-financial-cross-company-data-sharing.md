@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Configure financial cross-company data sharing
+title: Configure cross-company financial data sharing
 description: This procedure shows how to configure, enable, validate, and resolve conflicts when sharing data between companies. 
 author: aprilolson
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Configure financial cross-company data sharing
+# Configure cross-company financial data sharing
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

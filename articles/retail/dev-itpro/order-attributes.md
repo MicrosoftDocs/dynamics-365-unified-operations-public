@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Order attributes
+title: Define and set order attributes
 description: This topic explains how to edit and set attributes values for orders directly in Retail headquarters, the POS, and CRT.
 author: mugunthanm
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Order attributes
+# Define and set order attributes
 
 [!include [banner](../../includes/banner.md)]
 

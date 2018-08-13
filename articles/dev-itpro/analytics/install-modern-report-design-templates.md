@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install report design templates
+title: Install modern report design templates
 description: This topic explains how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible branding in the header and footer.
 author: tjvass
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Install report design templates
+# Install modern report design templates
 
 [!include [banner](../includes/banner.md)]
 

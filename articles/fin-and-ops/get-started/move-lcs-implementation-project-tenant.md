@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Move an LCS Implementation project to another Azure Active Directory tenant 
+title: Move LCS implementation projects to different Azure AD tenants
 description: This topic explains how to move your subscriptions and LCS Implementation project to a different Azure AD tenant.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-05-30
 ms.dyn365.ops.version: AX 7.0
 ---
 
-# Move an LCS Implementation project to another Azure Active Directory tenant
+# Move LCS implementation projects to different Azure AD tenants
 [!include [banner](../includes/banner.md)]
 
 You can move your subscriptions and your Microsoft Dynamics Lifecyle Services (LCS) Implementation project to a different Microsoft Azure Active Directory (Azure AD) tenant. Here are some scenarios where this move might be required:

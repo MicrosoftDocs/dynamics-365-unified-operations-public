@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: License sizing estimator (AX 2012)
+title: License sizing estimator in Lifecycle Services (LCS)
 description: This article provides information about License sizing estimator in Microsoft Dynamics Lifecycle Services (LCS). The License sizing estimator tool helps you estimate the number of licenses that an organization will require for Microsoft Dynamics AX. The article also explains how to enter data and generate a report so that you can start using the tool.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# License sizing estimator (AX 2012)
+# License sizing estimator in Lifecycle Services (LCS)
 
 [!include [banner](../../includes/banner.md)]
 

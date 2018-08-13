@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Filters
+title: Filtering options
 description: This article explains the filtering options that are available.
 author: jasongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Filters
+# Filtering options
 
 [!include [banner](../includes/banner.md)]
 

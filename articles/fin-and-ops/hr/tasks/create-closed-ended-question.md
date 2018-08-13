@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create a closed ended question
+title: Create closed-ended questions
 description: Closed-ended questions allow you to provide options for the respondent to choose from. 
 author: kherr75
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create a closed ended question
+# Create closed-ended questions
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

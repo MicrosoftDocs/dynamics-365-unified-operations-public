@@ -66,6 +66,9 @@ Alerts form a notification system for critical events in Dynamics 365 for Financ
 
 For more information about alerts, see [Alerts overview](alerts-overview.md).
 
+## Data entity behavior with configuration keys
+Data management honors the configuration key settings on data entities, tables, and fields. Because of the hierarchial structure of these artifacts, data management will allow a child in the hierarchy to be used if the configuration key on itself and it's parent is enabled. If a parent's configuration key is disabled, none of the children will be made available for use in imports and exports. For a detailed explaination of this behavior, see [Data entities and configuration keys](../../dev-itpro/data-entities/config-key-entities.md)
+
 ## Embed PowerApps
 Microsoft PowerApps, a service that allows developers and nontechnical users to build custom business apps without writing code, is now supported. You can add an embedded PowerApp to a page as well as edit, delete, or share the embedded PowerApp. You can also build a PowerApp to leverage data from Finance and Operations. For more information, see [Embed PowerApps](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps). 
 

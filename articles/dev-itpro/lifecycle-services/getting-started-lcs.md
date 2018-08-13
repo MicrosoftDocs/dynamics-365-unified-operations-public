@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Lifecycle Services for Finance and Operations partners
+title: Lifecycle Services (LCS) for Finance and Operations partners
 description: This article explains how partners can get started with Microsoft Dynamics Lifecycle Services (LCS). 
 author: manalidongre
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Lifecycle Services for Finance and Operations partners
+# Lifecycle Services (LCS) for Finance and Operations partners
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure the version of SSIS used by the AX 2012 Data import/export framework
+title: Specify the version of Integration Services that the Data Import/Export Framework uses
 description: This topic provides information about how to configure the SSIS that is being used by the data import/export framework in Dynamics AX 2012.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Configure the version of SSIS used by the AX 2012 Data import/export framework
+# Specify the version of Integration Services that the Data Import/Export Framework uses
 
 [!include [banner](../../includes/banner.md)]
 

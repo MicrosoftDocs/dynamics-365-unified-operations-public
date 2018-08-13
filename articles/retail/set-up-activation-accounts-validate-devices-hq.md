@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage Retail accounts and devices from headquarters
+title: Manage Retail activation accounts and validate devices
 description: This topic explains how an IT Pro can set up Retail activation accounts for retail workers to activate Modern POS or Cloud POS devices.
 author: athinesh99
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Manage Retail accounts and devices from headquarters
+# Manage Retail activation accounts and validate devices
 
 [!include [banner](includes/banner.md)]
 

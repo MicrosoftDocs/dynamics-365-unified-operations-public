@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: B2B functionality in Dynamics 365 for Finance and Operations
+title: Export business-to-business (B2B) users to Azure Active Directory
 description: This topic provides information about implementing the business-to-business transaction functionality in Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Export B2B users to Azure AD
+# Export business-to-business (B2B) users to Azure Active Directory
 
 [!include [banner](../includes/banner.md)]
 

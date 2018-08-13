@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail peripherals overview
+title: Retail peripherals
 description: This topic explains the concepts that are related to retail peripherals. 
 author: rubencdelgado
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Retail peripherals overview
+# Retail peripherals
 
 [!include [banner](includes/banner.md)]
 

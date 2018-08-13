@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Map components of the created format to data model elements for electronic reporting (ER)
+title: Map the components of formats to data model elements
 description: The following procedure shows how a user in either the System administrator or Electronic reporting developer role can map data model elements to components of the created Electronic reporting (ER) configuration, which defines an electronic document format for the payments business domain. 
 author: NickSelin
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Map components of the created format to data model elements for electronic reporting (ER)
+# Map the components of formats to data model elements
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

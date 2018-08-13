@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce runtime and Retail Server extensibility
+title: Commerce runtime (CRT) and Retail Server extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail Server. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Retail Server controller and add a controller for an entity.
 author: mugunthanm
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Commerce runtime and Retail Server extensibility
+# Commerce runtime (CRT) and Retail Server extensibility
 
 [!include [banner](../includes/banner.md)]
 

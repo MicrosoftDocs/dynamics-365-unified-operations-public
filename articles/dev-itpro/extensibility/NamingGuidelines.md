@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Naming guidelines
+title: Naming guidelines for extensions
 description: This topic describes the naming guidelines for extensions.
 author: LarsBlaaberg
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ---
 
-# Naming Guidelines
+# Naming guidelines for extensions
 
 [!include [banner](../includes/banner.md)]
 

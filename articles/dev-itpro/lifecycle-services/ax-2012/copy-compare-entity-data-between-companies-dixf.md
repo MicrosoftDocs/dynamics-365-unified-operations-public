@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Copying and comparing entity data between companies (AX 2012)
+title: Copy and compare entity data between companies
 description: This topic provides information about copying entity data between companies in Microsoft Dynamics AX 2012 R2 and Microsoft Dynamics AX 2012 R3.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Copying and comparing entity data between companies (AX 2012)
+# Copy and compare entity data between companies
 
 [!include [banner](../../includes/banner.md)]
 

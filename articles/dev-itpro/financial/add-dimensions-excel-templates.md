@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add look up values for financial dimensions to Excel templates
+title: Add lookup values for financial dimensions to Excel templates
 description: This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
 author: aprilolson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Add look up values for financial dimensions to Excel templates
+# Add lookup values for financial dimensions to Excel templates
 
 [!include [banner](../includes/banner.md)]
 

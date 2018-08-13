@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Run a format that uses horizontally-expandable ranges to dynamically add columns in Excel reports
+title: Run formats to dynamically add columns to Excel reports as horizontally expandable ranges
 description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges. 
 author: NickSelin
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Run a format that uses horizontally-expandable ranges to dynamically add columns in Excel reports
+# Run formats to dynamically add columns to Excel reports as horizontally expandable ranges
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Enroll an employee in a fixed compensation plan
+title: Enroll employees in a fixed compensation plan
 description: The compensation and benefits manager can assign employees to fixed compensation plans to manage their base pay. 
 author: kherr75
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Enroll an employee in a fixed compensation plan
+# Enroll employees in a fixed compensation plan
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Take a trace using Trace parser
+title: Take traces by using Trace parser
 description: This tutorial provides guidelines on how to take traces.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Take a trace using Trace parser
+# Take traces by using Trace parser
 
 [!include [banner](../includes/banner.md)]
 

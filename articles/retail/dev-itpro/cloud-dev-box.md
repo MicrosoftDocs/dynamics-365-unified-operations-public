@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configuration steps for Retail developers working on cloud-hosted development environments with no administrator access
+title: Development in cloud-hosted development environments without admin access
 description: This topic demonstrates the configuration steps for Retail developers working on cloud-hosted development machines.
 author: mugunthanm 
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
-# Configuration steps for Retail developers working on cloud-hosted development environments with no administrator access
+# Development in cloud-hosted development environments without admin access
 
 [!include [banner](../../includes/banner.md)]
 

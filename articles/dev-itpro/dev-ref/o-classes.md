@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: O Classes
+title: O classes
 description: System API classes that start with the letter O.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# O Classes
+# O classes
 
 [!include [banner](../includes/banner.md)]
 

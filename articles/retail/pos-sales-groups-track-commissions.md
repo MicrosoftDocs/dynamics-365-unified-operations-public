@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Track commissions in POS using sales groups
+title: Track commissions in the point of sale (POS) by using sales groups
 description: It's a common retail practice to track sales by the associate who worked with the customer—providing assistance, up-selling, cross-selling, and processing the transaction.
 author: jblucher
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Track commissions in POS using sales groups
+# Track commissions in the point of sale (POS) by using sales groups
 
 [!include [banner](includes/banner.md)]
 

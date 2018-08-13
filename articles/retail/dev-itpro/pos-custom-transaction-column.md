@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add custom columns to POS transaction grid
+title: Add custom columns to a point of sale (POS) transaction grid
 description: This topic explains how to add a new custom column to a POS transaction page using the screen layout designer. 
 author: mugunthanm
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Add custom columns to a POS transaction grid
+# Add custom columns to a point of sale (POS) transaction grid
 
 [!include [banner](../../includes/banner.md)]
 

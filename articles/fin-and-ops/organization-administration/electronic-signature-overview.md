@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Electronic signature overview
+title: Electronic signatures
 description: This article provides an overview of electronic signatures and describes how they can be used in Microsoft Dynamics 365 for Finance and Operations.
 author: maertenm
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Electronic signature overview
+# Electronic signatures
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Typescript and C# proxies for Retail POS
+title: Typescript and C# proxies for Retail point of sale (POS)
 description: This topic provides information about the Retail proxy and explains how to generate it.
 author: mugunthanm
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
 
 ---
 
-# Retail Typescript and C# proxies
+# Typescript and C# proxies for Retail point of sale (POS)
 
 [!include [banner](../../includes/banner.md)]
 
@@ -112,7 +112,7 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\Reference folder
 
     To learn how generate the interface and manager classes, see the Store Hours sample in the Retail SDK. The instructions are in the **RetailSDK\Code\Documents\SampleExtensionsInstructions\StoreHours\readme.txt** file.
     
-**How to generate C# proxy (this applicable for both POS and Ecommerce) for 7.3**
+## How to generate C# proxy (this applicable for both POS and Ecommerce) for 7.3
 
 1.  Navigate to RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions. StoreHoursSample
 

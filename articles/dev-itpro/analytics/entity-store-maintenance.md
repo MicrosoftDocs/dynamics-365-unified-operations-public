@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Entity store mainentance
+title: Resolve issues after entity store mainentance
 description: This topic describes procedures that must be completed after entity store maintenance.
 author: sarvanisathish
 manager: AnnBe
@@ -27,19 +27,18 @@ ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ---
 
-# Entity store maintenance
+# Resolve issues after entity store maintenance
 
 [!include[banner](../includes/banner.md)]
 
-When maintenance is performed on the entity store, it impacts the following components: 
+When maintenance is performed on the entity store, it impacts the following components:
 
--   Application analytical workspaces, if you are on Dynamics 365 for Finance and Operations or Dynamics 365 for Retail 7.2 or higher and have configured analytical workspaces for embedded analytical reports.
-
--   Entity store-based reports that have been deployed to PowerBI.com.
+- Application analytical workspaces, if you are on Dynamics 365 for Finance and Operations or Dynamics 365 for Retail 7.2 or higher and have configured analytical workspaces for embedded analytical reports.
+- Entity store-based reports that have been deployed to PowerBI.com.
 
 To resolve issues with these components, complete the procedures in this topic.
 
-> [!Note]
+> [!NOTE]
 > There will be **no impact** to the normal operation of your Finance and Operations or Retail instance.
 
 ## If you are using application analytical workspaces
@@ -51,28 +50,24 @@ Application analytical workspaces and reports may not render data after certain 
 To resolve this issue:
 
 1. Sign in to Finance and Operations or Retail.
-
-2. Go to the **Batch jobs** page (**System administration > Inquiries > Batch jobs**). 
-	
+2. Go to the **Batch jobs** page (**System administration \> Inquiries \> Batch jobs**).
 3. Delete all pending batch jobs associated with the entity store. These batch jobs:
 
-- Will have a status of **Waiting**.
-- Will typically have a description of **Deploy measurement**.
-	
- 	> [!Note]
- 	> The default description is **Deploy measurement**. If the description has been customized, you can verify whether a batch job is associated with the entity store by looking at the class name. Batch jobs associated with the entity store will have a class name of **BIMeasurementDeployManagementEntityBatchJob**.
+    - Will have a status of **Waiting**.
+    - Will typically have a description of **Deploy measurement**.
 
-4.  Go to the **Entity store** page (**System Administration** \> **Setup** \> **Entity Store**).
+    > [!NOTE]
+    > The default description is **Deploy measurement**. If the description has been customized, you can verify whether a batch job is associated with the entity store by looking at the class name. Batch jobs associated with the entity store will have a class name of **BIMeasurementDeployManagementEntityBatchJob**.
 
-5.  Select all measurements that need to be refreshed.
-
-6.  Click **Refresh**, and then click **OK**.
+4. Go to the **Entity store** page (**System Administration \> Setup \> Entity Store**).
+5. Select all measurements that need to be refreshed.
+6. Click **Refresh**, and then click **OK**.
 
 After the refresh completes, the application analytical workspaces and reports will render data.
 
 ## If you have deployed entity store-based reports to PowerBI.com and are using the reports within PowerBI.com
 
-After refreshing the entity store (as described above), redeploy the reports using the **Deploy Power BI report files** page in Finance and Operations or Retail (**System Administration** \> **Setup** \> **Deploy Power BI files**).
+After refreshing the entity store (as described above), redeploy the reports using the **Deploy Power BI report files** page in Finance and Operations or Retail (**System Administration \> Setup \> Deploy Power BI files**).
 
-> [!Note]
+> [!NOTE]
 > Reports that were previously deployed to PowerBI.com may produce errors. If this occurs, you may need to delete and redeploy the report after the maintenance activity is completed.

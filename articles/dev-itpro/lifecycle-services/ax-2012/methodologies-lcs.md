@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Methodologies (AX 2012)
+title: Methodologies in Lifecycle Services (LCS)
 description: Methodologies in LCS provide a tool that you can use to ensure more repeatable, predictable implementation projects. You can use one of our methodologies, or create your own. With a methodology, you can easily track and report on your progress.
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Methodologies (AX 2012)
+# Methodologies in Lifecycle Services (LCS)
 
 [!include [banner](../../includes/banner.md)]
 

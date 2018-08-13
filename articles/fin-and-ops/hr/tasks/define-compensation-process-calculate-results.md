@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Define compensation process and calculate results
+title: Define compensation processes and calculate results
 description: Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans. 
 author: kherr75
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Define compensation process and calculate results
+# Define compensation processes and calculate results
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: List
+title: List module
 description: A list is a control that contains any numbers of rows.
 author: shadykdc
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# List 
+# List module
 
 [!include [banner](../../../../includes/banner.md)]
 

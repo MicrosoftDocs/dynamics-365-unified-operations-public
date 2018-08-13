@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Generate Affordable Care Act reports
+title: Generate Affordable Care Act (ACA) reports
 description: Functionality is available to assist employers that need to track the information reported on forms 1095-B and 1095-C in support of the Employer Mandate portion of the Affordable Care Act. Note this functionality is only enabled for legal entities in the United States.
 author: kherr75
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
-# Generate Affordable Care Act reports
+# Generate Affordable Care Act (ACA) reports
 
 [!include [banner](includes/banner.md)]
 

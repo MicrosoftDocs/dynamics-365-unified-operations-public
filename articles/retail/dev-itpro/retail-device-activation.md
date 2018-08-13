@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail POS device activation
+title: Retail point of sale (POS) device activation
 description: This article explains the new guided device activation for Retail Cloud POS and Retail Modern POS, and explains the client simplifications that help users easily activate devices without having to manually enter register and device ID information. 
 author: athinesh99
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail POS device activation
+# Retail point of sale (POS) device activation
 
 [!include [banner](../includes/banner.md)]
 
