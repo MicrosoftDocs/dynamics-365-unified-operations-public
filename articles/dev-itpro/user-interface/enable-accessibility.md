@@ -101,7 +101,7 @@ An extensible control is simply an extension of the framework. The interaction o
 
 Importantly, your control should not only identify itself by name, but (using a label or ARIA tag) give a brief introduction on how it works. Make sure your descriptive text is supplied via a framework label for localization. 
 
-*aria-describedby* - Identifies the element (or elements) that describes the object.
+- *aria-describedby* - Identifies the element (or elements) that describes the object.
 
 ***Example***
 
@@ -111,7 +111,7 @@ Importantly, your control should not only identify itself by name, but (using a 
 
 **Indicate when it is busy** It may not always be clear to the visually-impaired user why the control isn’t responsive. Providing a “busy” message helps in these cases.
 
-*aria-busy (state)* - Indicates whether an element, and its subtree, are currently being updated.
+- *aria-busy (state)* - Indicates whether an element, and its subtree, are currently being updated.
 
 ***Example***
 
@@ -119,48 +119,48 @@ Importantly, your control should not only identify itself by name, but (using a 
 
 **Indicate that the contents have been validated and are invalid** The async nature will result in a dynamic field state change. The message bar will introduce itself to the visually-impaired user, and the control itself should express an invalid state.
 
-*aria-invalid (state)* - Indicates the entered value does not conform to the format expected by the application.
+- *aria-invalid (state)* - Indicates the entered value does not conform to the format expected by the application.
 
 **Indicate when a field is readonly**
 
-*aria-readonly* - Indicates that the element is not editable, but is otherwise operable. See related *aria-disabled*.
+- *aria-readonly* - Indicates that the element is not editable, but is otherwise operable. See related *aria-disabled*.
 
 **Indicate that the field requires input (mandatory)** The sighted user understands that a field is mandatory through a visual symbol. The non-sighted user will need an identifying tag.
 
-*aria-required* - Indicates that user input is required on the element before a form may be submitted.
+- *aria-required* - Indicates that user input is required on the element before a form may be submitted.
 
 **Describe the state of a toggled value** A toggle control has a toggled state. This tag will express that state.
 
-*aria-pressed (state)* - Indicates the current "pressed" state of toggle buttons. See related *aria-checked* and *aria-selected*.
+- *aria-pressed (state)* - Indicates the current "pressed" state of toggle buttons. See related *aria-checked* and *aria-selected*.
 
-*aria-valuenow* - Defines the current value for a range widget. See related *aria-valuetext*.
+- *aria-valuenow* - Defines the current value for a range widget. See related *aria-valuetext*.
 
-*aria-valuetext* - Defines the human readable text alternative of *aria-valuenow* for a range widget.
+- *aria-valuetext* - Defines the human readable text alternative of *aria-valuenow* for a range widget.
 
 ### Control could
 
 **Indicate an expanded state** Complex interactions can be learned, but current state isn’t always easy to determine without experimentation. When using an *aria-expanded* tag, the control describes its current state. An example is tabbing to a tab or FastTab section of a control.
 
-*aria-expanded (state)* - Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.
+- *aria-expanded (state)* - Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.
 
 **Describe applicable context menu** Microsoft Dynamics 365 for Finance and Operations provides a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
 
-*aria-haspopup* - Indicates that the element has a pop-up context menu or sub-level menu.
+- *aria-haspopup* - Indicates that the element has a pop-up context menu or sub-level menu.
 
 **Other Misc**
 
-*aria-live* - Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.
+- *aria-live* - Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.
 
-*aria-multiline* - Indicates whether a text box accepts multiple lines of input or only a single line.
+- *aria-multiline* - Indicates whether a text box accepts multiple lines of input or only a single line.
 
-*aria-multiselectable* - Indicates that the user may select more than one item from the current selectable descendants.
+- *aria-multiselectable* - Indicates that the user may select more than one item from the current selectable descendants.
 
-*aria-orientation* - Indicates whether the element and orientation is horizontal or vertical.
+- *aria-orientation* - Indicates whether the element and orientation is horizontal or vertical.
 
-*aria-setsize* - Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM. See related *aria-posinset*.
+- *aria-setsize* - Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM. See related *aria-posinset*.
 
-*aria-sort* - Indicates if items in a table or grid are sorted in ascending or descending order.
+- *aria-sort* - Indicates if items in a table or grid are sorted in ascending or descending order.
 
-*aria-valuemax* - Defines the maximum allowed value for a range widget.
+- *aria-valuemax* - Defines the maximum allowed value for a range widget.
 
-*aria-valuemin* - Defines the minimum allowed value for a range widget.
+- *aria-valuemin* - Defines the minimum allowed value for a range widget.
