@@ -58,7 +58,7 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a 
 
 ## Electronic tax declarations
 
--   [Set up electronic tax declaration](/tasks/setup-electronic-tax-declaration-germany.md)
+-   [Set up electronic tax declaration](tasks/setup-electronic-tax-declaration-germany.md)
 
 
 ## Reports for Germany
