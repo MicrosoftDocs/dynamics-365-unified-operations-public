@@ -948,7 +948,7 @@
           href: ../financials/general-ledger/financial-consolidations-currency-translation.md
           items:
            - name: Consolidate online
-             href: ../financials/general-ledger/generating-consolidated-financial-statements.md
+             href: ../financials/general-ledger/consolidate-online.md
            - name: Generate consolidated financial statements
              href: ../financials/general-ledger/generating-consolidated-financial-statements.md
         - name: Create consolidation groups and additional consolidation account
