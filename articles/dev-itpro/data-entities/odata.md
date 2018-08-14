@@ -56,7 +56,7 @@ For more information about OData, see the following webpages.
 | OData: Data access for the web, the cloud, mobile devices, and more | <http://msdn.microsoft.com/en-us/data/hh237663.aspx>    |
 | OData through examples                                              | <http://msdn.microsoft.com/en-us/library/ff478141.aspx> |
 
-The public OData service endpoint enables access to data in a consistent manner across a broad range of clients. To see a list of all the entities that are exposed, open the OData service root URL. The URL for the service root on your system has the following format: **[Your organization's root URL]/data**
+The public OData service endpoint enables access to data in a consistent manner across a broad range of clients. To see a list of all the entities that are exposed, open the OData service root URL. The URL for the service root on your system has the following format: **\[Your organization's root URL\]/data**
 
 ## Addressing
 The following table describes the resources and the corresponding URLs in the Fleet Management sample.
@@ -71,7 +71,7 @@ The following table describes the resources and the corresponding URLs in the Fl
 | Property            | \[Your organization's root URL\]/data/Customers("\[key\]")/FirstName    | The customer's first name                                      |
 
 ## OData services
-We provide an OData REST endpoint. This endpoint exposes all the data entities that are marked as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that users can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology. 
+We provide an OData REST endpoint. This endpoint exposes all the data entities that are marked as **IsPublic** in the Application Object Tree (AOT). It supports complete CRUD (create, retrieve, update, and delete) functionality that users can use to insert and retrieve data from the system. Detailed labs for this feature are on the LCS methodology.
 
 <!--For more information, see the [Office Mix presentation about OData Services](https://mix.office.com/watch/1aym08mqyjghi).-->
 
@@ -81,35 +81,38 @@ Code examples for consuming OData services are available in the [Microsoft Dyna
 
 The following are the high-level features that are enabled for the OData service, per the [OData specification](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).
 
-- CRUD support is handled through HTTP verb support for POST, PATCH, PUT, and DELETE. 
-- Available query options are
-  -   $filter
-  -   $count
-  -   $orderby
-  -   $skip
-  -   $top
-  -   $expand
-  -   $select
-- The OData service supports serving driven paging with a maximum page size of 10,000.
+- CRUD support is handled through HTTP verb support for POST, PATCH, PUT, and DELETE.
+- Available query options are:
+
+    - $filter
+    - $count
+    - $orderby
+    - $skip
+    - $top
+    - $expand
+    - $select
+
+- The OData service supports serving driven paging with a maximum page size of 1,000.
 
 For more information, see: [OData actions that are bound to entities](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html#_Toc406398355).
 
 #### Filter details
 
-There are built-in operators for $filter
--   Equals
--   Not equals
--   Greater than
--   Greater than or equal
--   Less than
--   Less than or equal
--   And
--   Or
--   Not
--   Addition
--   Subtraction
--   Multiplication
--   Division
+There are built-in operators for $filter:
+
+- Equals
+- Not equals
+- Greater than
+- Greater than or equal
+- Less than
+- Less than or equal
+- And
+- Or
+- Not
+- Addition
+- Subtraction
+- Multiplication
+- Division
 
 You can also use the **Contains** option with $filter requests. It has been implemented as a wildcard character. For example: `http://host/service/EntitySet?$filter=StringField eq '\*retail\*'`
 
@@ -124,14 +127,14 @@ Batch requests are supported in the OData service. For more information, see [OD
 
 ![EnumType metadata](./media/metadata.png)
 
-
 ### Cross-company behavior
 
-By default, OData returns only data that belongs to the user's default company. To see data from outside the user's default company, specify the **?cross-company=true** query option. This option will return data from all companies that the user has access to. 
+By default, OData returns only data that belongs to the user's default company. To see data from outside the user's default company, specify the **?cross-company=true** query option. This option will return data from all companies that the user has access to.
 
 **Example:** `http://[baseURI\]/data/FleetCustomers?cross-company=true`
 
-To filter by a particular company that isn't your default company, use the following syntax: 
+To filter by a particular company that isn't your default company, use the following syntax:
+
 `http://[baseURI\]/data/FleetCustomers?$filter=dataAreaId eq 'usrt'&cross-company=true`
 
 ### Validate methods
@@ -140,13 +143,13 @@ The following table summarizes the validate methods that the OData stack calls i
 
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>OData</th>
 <th>Methods (listed in the order in which they are called)</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Create</td>
 <td><ol>
 <li><strong>Clear()</strong></li>
@@ -158,7 +161,7 @@ The following table summarizes the validate methods that the OData stack calls i
 <li><strong>Write()</strong></li>
 </ol></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Update</td>
 <td><ol>
 <li><strong>Forupdate()</strong></li>
@@ -172,7 +175,7 @@ The following table summarizes the validate methods that the OData stack calls i
 <li><strong>Write()</strong></li>
 </ol></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Delete</td>
 <td><ol>
 <li><strong>Forupdate()</strong></li>
@@ -194,12 +197,14 @@ Links between OData entities are described by a navigation property. Navigation 
 #### Adding actions on OData entities
 Actions let you inject behaviors into the data model. To add actions, add a method to the updatable view, and decorate that method with specific attributes. Here is an example.
 
-    [SysODataActionAttribute("CalcMaintenanceDuration", true)]
-    public int CalculateMaintenanceDuration()
-    {
-        //do something
-        return 0;
-    }
+```
+[SysODataActionAttribute("CalcMaintenanceDuration", true)]
+public int CalculateMaintenanceDuration()
+{
+    //do something
+    return 0;
+}
+```
 
 In this example, the **SysODataActionAttribute** class decorates the **CalculateMaintenanceDuration** method that is exposed as an action. The first argument of the attribute is the publicly exposed name of the action, and the second argument indicates whether this action is always available. Methods that are exposed as actions can return any primitive type or another public updatable view. After this method is exposed, it appears in the OData $metadata. Here is an example.
 
@@ -207,14 +212,16 @@ In this example, the **SysODataActionAttribute** class decorates the **Calculate
 
 The following example of an OData action takes in a parameter and returns a list.
 
-    [SysODataActionAttribute("GetColors", true),
-     SysODataCollectionAttribute("return", Types::Record, "CarColor")]
-    public List GetColorsByAvailability(boolean onlyAvailableVehicles)
-    {
-        List returnList = new List(Types::Record);
-        // do something
-        return returnList;
-    }
+```
+[SysODataActionAttribute("GetColors", true),
+    SysODataCollectionAttribute("return", Types::Record, "CarColor")]
+public List GetColorsByAvailability(boolean onlyAvailableVehicles)
+{
+    List returnList = new List(Types::Record);
+    // do something
+    return returnList;
+}
+```
 
 In this example, the **SysODataCollectionAttribute** class enables OData to expose strongly typed collections from X++. This class takes in three parameters:
 
@@ -222,18 +229,18 @@ In this example, the **SysODataCollectionAttribute** class enables OData to expo
 - The X++ type of the members of this list
 - The public name of the OData resource that is contained in the collection
 
-After these actions are exposed, they can be invoked from the service root URL. 
+After these actions are exposed, they can be invoked from the service root URL.
 
 You can find actions that are defined on data entities by searching for the **SysODataActionAttribute** attribute in the source code.
 
 ## Querying or browsing an OData endpoint
 OData enables an SQL-like language that lets you create rich queries against the database, so that the results include only the data items that you want. To create a query, append criteria to the resource path. For example, you can query the **Customers** entity collection by appending the following query options in your browser.
 
-| URL                                                                      | Description                                                                                   |
-|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| \[Your organization's root URL\]/data/Customers                            | List all the customers.                                                                       |
-| \[Your organization's root URL\]/data/Customers?$top=3                     | List the first three records.                                                                 |
-| \[Your organization's root URL\]/data/Customers?$select=FirstName,LastName | List all the customers, but show only the first name and last name properties.                |
+| URL                                                                        | Description |
+|----------------------------------------------------------------------------|-------------|
+| \[Your organization's root URL\]/data/Customers                            | List all the customers. |
+| \[Your organization's root URL\]/data/Customers?$top=3                     | List the first three records. |
+| \[Your organization's root URL\]/data/Customers?$select=FirstName,LastName | List all the customers, but show only the first name and last name properties. |
 | \[Your organization's root URL\]/data/Customers?$format=json               | List all the customers in a JSON format that can be used to interact with JavaScript clients. |
 
 The OData protocol supports many similar filtering and querying options on entities. For the full set of query options, see [Windows Communication Foundation](http://msdn.microsoft.com/en-us/library/ff478141.aspx).
@@ -241,56 +248,60 @@ The OData protocol supports many similar filtering and querying options on entit
 ## Authentication
 OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints](services-home-page.md).
 
-
 ## Tips and tricks
 
 ### Run multiple requests in a single transaction
-The OData batch framework uses *changesets*. Each changeset contains a list of requests that should be treated as single atomic unit. In other words, either all the requests are run successfully or, if any request fails, none of the requests are run successfully. The following example shows how to send a batch request that has a list of requests in a single changeset. 
+The OData batch framework uses *changesets*. Each changeset contains a list of requests that should be treated as single atomic unit. In other words, either all the requests are run successfully or, if any request fails, none of the requests are run successfully. The following example shows how to send a batch request that has a list of requests in a single changeset.
 
-The **SaveChangesOptions.BatchWithSingleChangeset** option in **SaveChanges()** helps guarantee that all requests are bundled into a single changeset. 
+The **SaveChangesOptions.BatchWithSingleChangeset** option in **SaveChanges()** helps guarantee that all requests are bundled into a single changeset.
 
-    public static void CreateProductColors(Resources context)
-        {
-            var productColorsCollection = new DataServiceCollection<ProductColor>(context);
+```
+public static void CreateProductColors(Resources context)
+{
+    var productColorsCollection = new DataServiceCollection<ProductColor>(context);
 
-            var color1 = new ProductColor();
-            productColorsCollection.Add(color);
-            color1.ColorId = "New Color1"; // set any other properties needed
+    var color1 = new ProductColor();
+    productColorsCollection.Add(color);
+    color1.ColorId = "New Color1"; // set any other properties needed
 
-            var color2 = new ProductColor();
-            productColorsCollection.Add(color1);
-            color2.ColorId = "New Color2"; // set any other properties needed
+    var color2 = new ProductColor();
+    productColorsCollection.Add(color1);
+    color2.ColorId = "New Color2"; // set any other properties needed
 
-            context.SaveChanges(SaveChangesOptions.BatchWithSingleChangeset);
-        }
+    context.SaveChanges(SaveChangesOptions.BatchWithSingleChangeset);
+}
+```
 
 ### Prevent unset records from being posted when you use an OData client
 When you create a new record by using an OData client, as shown in example 1, properties that aren't set are included in the body of the request, and default values are assigned to them. To prevent this behavior and post only properties that are set explicitly, use the **SaveChangesOptions.PostOnlySetProperties** option in **SaveChanges()**, as shown in example 2.
 
 **Example 1**
 
-    public static void CreateVendor(Resources context)
-        {
-            var vendorCollection = new DataServiceCollection<Vendor>(context);
-            var vendor = new Vendor();
-            vendorCollection.Add(vendor);
-            // set properties
-            context.SaveChanges();
-        }
+```
+public static void CreateVendor(Resources context)
+{
+    var vendorCollection = new DataServiceCollection<Vendor>(context);
+    var vendor = new Vendor();
+    vendorCollection.Add(vendor);
+    // set properties
+    context.SaveChanges();
+}
+```
 
 **Example 2**
 
-    public static void CreateVendor(Resources context)
-        {
-            var vendorCollection = new DataServiceCollection<Vendor>(context);
-            var vendor = new Vendor();
-            vendorCollection.Add(vendor);
-            // set properties
+```
+public static void CreateVendor(Resources context)
+{
+    var vendorCollection = new DataServiceCollection<Vendor>(context);
+    var vendor = new Vendor();
+    vendorCollection.Add(vendor);
+    // set properties
 
-            // Save specifying PostOnlySetProperties flag
-            context.SaveChanges(SaveChangesOptions.PostOnlySetProperties);
-        }
-
+    // Save specifying PostOnlySetProperties flag
+    context.SaveChanges(SaveChangesOptions.PostOnlySetProperties);
+}
+```
 
 ### Handling duplicate names between enums and entities in metadata
-There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the helper code in gitHub https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the Odata logic on the client side.
+There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the helper code in gitHub <https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs> can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the Odata logic on the client side.

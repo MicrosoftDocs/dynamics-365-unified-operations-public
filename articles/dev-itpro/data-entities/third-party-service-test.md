@@ -47,25 +47,26 @@ Many frequently used tools that will help you perform these actions are availabl
 Before you can test a service by using an external application, you must register the application in Microsoft Azure, and in Finance and Operations.
 
 For details, see:
+
 - [Register an application with AAD](services-home-page.md#register-a-native-application-with-aad)
 - [Register your external application in Finance and Operations](services-home-page.md#register-your-external-application-in-finance-and-operations)
 
 ## Query Finance and Operations OData by using Postman
 
-Postman (<https://www.getpostman.com/postman>) is a tool  that is often used to interact with RESTful services (such as OData) in scenarios that involve the development and testing of application programming interfaces (APIs). This procedure isn't an endorsement of Postman, and other similar tools are available. However, we are using Postman to illustrate the concepts and messages that are involved when you use OAuth to authenticate with Azure AD, and then make OData requests to and receive responses from Finance and Operations.
+Postman (<https://www.getpostman.com/postman>) is a tool that is often used to interact with RESTful services (such as OData) in scenarios that involve the development and testing of application programming interfaces (APIs). This procedure isn't an endorsement of Postman, and other similar tools are available. However, we are using Postman to illustrate the concepts and messages that are involved when you use OAuth to authenticate with Azure AD, and then make OData requests to and receive responses from Finance and Operations.
 
 1. Start Postman.
 2. In the upper-right corner, select the gear button, and then select **Manage environments** to create or update an environment.
 3. Enter a name for the environment, and then select **Bulk Edit**.
 4. Enter key-value pairs as shown in the following table. Enter one pair per line, and separate the key and value by using a colon (:).
 
-    | Key           | Value                                                                                               |
-    |---------------|-----------------------------------------------------------------------------------------------------|
+    | Key            | Value                                                                                               |
+    |----------------|-----------------------------------------------------------------------------------------------------|
     | tenant\_id     | The Azure tenant ID that you looked up during the setup of prerequisites                            |
     | client\_id     | The Azure AD application ID that you registered during the setup of prerequisites                   |
     | client\_secret | The secret key that you generated during application registration during the setup of prerequisites |
-    | grant\_type    | client\_credentials                                                                                  |
-    | resource      | The base URL of the Finance and Operations instance                                                 |
+    | grant\_type    | client\_credentials                                                                                 |
+    | resource       | The base URL of the Finance and Operations instance                                                 |
 
 5. To verify that the key-value pairs can be parsed correctly, select **Key-Value Edit**, and review the results.
 6. Close the environment page.
@@ -127,16 +128,16 @@ SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with
 1. Start SoapUI, and select the **SOAP** button to create a project.
 2. Complete the information for the project:
 
-   - In the **Project Name** field, enter a name for the project.
-   - In the **Initial WSDL** field, enter the service address, and add the suffix **?wsdl**. (The service address should be in the format \[Finance and Operations instance base URL\]/soap/services/\[service group name\].) For more information, see the [Services home page](services-home-page.md).
+    - In the **Project Name** field, enter a name for the project.
+    - In the **Initial WSDL** field, enter the service address, and add the suffix **?wsdl**. (The service address should be in the format \[Finance and Operations instance base URL\]/soap/services/\[service group name\].) For more information, see the [Services home page](services-home-page.md).
 
-       For example, we are querying the user session service at the URL `https://[Finance and Operations base URL]/soap/services/UserSessionService?wsdl`.
+        For example, we are querying the user session service at the URL `https://[Finance and Operations base URL]/soap/services/UserSessionService?wsdl`.
 
-   - Select the **Create sample requests for all operations?** check box.
+    - Select the **Create sample requests for all operations?** check box.
 
-     Because you selected to create sample requests, one sample request is created for each service operation that is available.
+        Because you selected to create sample requests, one sample request is created for each service operation that is available.
 
-     ![Sample requests](./media/soapui3.png)
+        ![Sample requests](./media/soapui3.png)
 
 3. Right-click the new project, and then select **New TestSuite** to create a test suite. This test suite will generate a POST request for an Azure AD authorization token.
 4. Right-click the test suite, and then select **New TestCase**.
@@ -145,14 +146,12 @@ SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with
 7. Enter a name for the test step. The endpoint that you should use for the POST request is `[https://login.microsoftonline.com/[tenant_id]/oauth2/token](https://login.microsoftonline.com/%5btenant_id%5d/oauth2/token)`.
 8. Use the plus sign (**+**) button next to **Parameters** to add the following values.
 
-
-   |   Parameter    |                              Value                              |
-   |----------------|-----------------------------------------------------------------|
-   |  grant\_type   |                       client\_credentials                       |
-   |   client\_id   |  The application ID from the Azure AD application registration  |
-   | client\_secret | The secret key value from the Azure AD application registration |
-   |    resource    |         The URL of the Finance and Operations instance          |
-
+    | Parameter      | Value                                                           |
+    |----------------|-----------------------------------------------------------------|
+    | grant\_type    | client\_credentials                                             |
+    | client\_id     | The application ID from the Azure AD application registration   |
+    | client\_secret | The secret key value from the Azure AD application registration |
+    | resource       | The URL of the Finance and Operations instance                  |
 
 9. To make sure that the parameters are in the POST body, select **Post QueryString**, and then select **Play**. An access token should be returned in the response pane. The values will be most readable if you use the **JSON response** tab. Copy the access token so that you can use it in the authorization header of subsequent requests.
 10. Go back to the first request node under the **GetUserSessionInfo** SOAP sample request. In the request pane on the left, select the plus sign (**+**) button to add a header that is named **Authorization**. Paste the access token into the **Value** field, and add the prefix **Bearer**.
