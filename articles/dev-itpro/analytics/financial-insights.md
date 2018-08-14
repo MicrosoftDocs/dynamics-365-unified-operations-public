@@ -5,7 +5,7 @@ title: Financial Insights
 description: Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.
 author: kweekley
 manager: AnnBe
-ms.date: 02/28/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -247,31 +247,11 @@ If the maximum is exceeded, the totals that appear on the financial statement wi
 ### Empty rows
 Power BI doesn't provide an option to hide and show empty rows. If a row doesn't have any data, the row won't appear in the visual.
 
-## What is coming in future releases?
-The new workspaces and financial statements that use Power BI will continue to be enhanced. Here are some of the new features that are being considered for future releases:
-
-- The ability to copy, edit, delete, and create visuals, even the financial statements
-- Additional default reports
-
-    - Support for additional subledger data
-
-- Support for a reporting currency
-- Add custom calculations for rows and columns
-- The ability to export the financial statements to Microsoft Excel
-
-    - Maintain the format of the financial statement during export.
-    - Analyze data in Excel by creating a Pivot Table that uses the information on the visual.
-
-- Locale support
-- The ability to define reporting hierarchies, so that you can define main account hierarchies or an organizational hierarchy that can be used on financial statements for design, filtering, and security.
-- Support for printing
-
-The new features will be communicated through the roadmap website as work is started: <https://roadmap.dynamics.com/>.
 
 ## Additional resources for Power BI
 
 The information in the following resources isn't required in order to enable the embedded reports for the **CFO overview** or **Financial Insights** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports into Finance and Operations.
 
-<https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
+- <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
 
-<https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
+- <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
