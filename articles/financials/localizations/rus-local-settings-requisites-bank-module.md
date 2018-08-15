@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-			
+
 # optional metadata
 # ms.search.form:  
 audience: Application User
@@ -23,6 +23,7 @@ ms.search.region: Russia
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
+
 ---
 
 
@@ -55,7 +56,7 @@ You must register the bank accounts for the company.
     
 
     > [!NOTE]
-    > <P>The template folder must be set up in the <STRONG>Report Folder</STRONG> field on the <STRONG>Other</STRONG> tab in the <STRONG>Company information</STRONG> form.</P>
+    > The template folder must be set up in the **Report Folder** field on the **Other** tab in the **Company information** page.
 
 
 
@@ -64,8 +65,6 @@ You must register the bank accounts for the company.
 12. In the **P/O numeration** field, select the code for the document numbering series for the account.
 
 13. On the **Address** and **Contact information** tabs, view and modify the address and contact information for the bank account. If a bank is selected in the **Bank groups** field for which the address and contact details are entered automatically, these address values are retrieved from the corresponding fields in the **Banks** table.
-
-14. Press CTRL+S or close the form.
 
 
 ## Set up a foreign bank 
