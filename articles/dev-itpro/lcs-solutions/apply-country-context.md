@@ -24,7 +24,7 @@ ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mrolecki
-ms.search.validfrom: 2016-02-28
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -35,8 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must implement all country-specific or region-specific functionality so that it can be controlled by country/region context. This article describes how to apply country/region context to meet these requirements. In this article you can find information how you should use country context property and what application objects control user interface elements.
 
-Country/region-specific functionality
--------------------------------------
+## Country/region-specific functionality
 
 You use country/region-specific functionality to help meet the legal, regulatory, and business requirements of individual geographies. A geography is any country or region that is identified by an International Organization for Standardization (ISO) country or region code. In Microsoft Dynamics 365 for Finance and Operations, you use country/region context. The following table highlights the main elements that you use to configure country/region-specific functionality.
 
