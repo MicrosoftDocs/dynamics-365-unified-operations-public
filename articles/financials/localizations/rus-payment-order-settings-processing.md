@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Set up a method of payment 
+title: Payment order setup and processing 
 description: This topic provides information about payment order settings and processing for Russia. 
 author: ShylaThompson
 manager: AnnBe
@@ -26,10 +26,11 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-
-# Set up a method of payment 
+# Payment order setup and processing
 
 [!include [banner](../includes/banner.md)]
+
+## Set up a method of payment 
 
 The method of payment determines the format that is used for export of payment orders. Within the payment type, you can also set up bridging accounts when reconciliation is being done. In this case, when posting payment journals, the payments are reflected in off-balance Accounts payable and banking operations. After banking reconciliation, these transactions are reversed and reflected in Accounts payable and banking accounts. To link actual accounts with payment types, in most cases, the number of payment types created equals the number of accounts that the company holds.
 
@@ -186,7 +187,6 @@ You can also set up an intermediate Russian bank account to link to the vendor p
     > [!NOTE]
     > If you click **VAT in payment order**, the text, including the VAT amount in the **Purpose text** field, will be entered.
 
-
 11. In the **Method of payment** field, select the method of payment to the vendor.
 
 12. On the **General** tab, in the **Contracts group** field, select the contract group.
@@ -245,7 +245,7 @@ You can also set up an intermediate Russian bank account to link to the vendor p
     
       - Payment orders can also be reprinted from the **Bank transactions** form. Select the voucher for the payment order, click **Print**, and then click **Payment order** to print the document.
 
-## Registry of payment orders
+### View generated payment orders in the registry of payment orders
 
 Generated payment orders are available in the **Registry of payment orders** form.
 
@@ -256,7 +256,6 @@ Generated payment orders are available in the **Registry of payment orders** for
 3.  On the **Essential elements** tab, view the attributes of the payer and the recipient.
 
 ## Payments to foreign bank accounts 
-
 
 Payments that are made to vendors by using payment orders or payment requests must include additional information about the vendor bank account if the vendor uses a foreign bank to receive payments. This bank account can include the bank code, the bank name, the Society for Worldwide Interbank Financial Telecommunication (SWIFT) code of the foreign bank, the foreign bank account number of the vendor, and the address of the payer.
 
@@ -272,8 +271,6 @@ You must complete the following tasks if you want to generate a payment order fo
   - Set up a vendor account in the **Vendors** page.
   - Set up a customer account in the **Customer** page. 
   - Set up payment journals for a vendor account and a customer account in the **Ledger journal** page.
-
-
 
 ## Generate a payment order for a foreign vendor
    
@@ -336,7 +333,7 @@ When you send a payment return to the foreign bank account of a customer, you ca
     When the journal is posted, transactions will be generated for the bank account, customer account, and ledger. The debit account will be the account in the ledger configured for the bank account. The credit account will be determined by the posting profile that is selected for the customer.
 
 
-## Transit account function 
+## Change the date of a posted transaction 
 
 Use the **Transit account** function to change the date of a posted transaction. The banking operation type must be created, and a transaction account must be set. This function is applied to transactions of the types **Bank-Bank**, **Cash account-Bank**, and **Ledger-Bank**.
 
