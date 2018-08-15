@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-> [!Note]
+> [!NOTE]
 > This PowerBI.com solution has been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 This topic describes the **Financial performance** PowerBI.com solution. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the solution.
@@ -63,7 +63,7 @@ Each tile is backed by a supporting report. These reports contain both charts an
 
 | Report                      | Information that the report contains |
 |-----------------------------|--------------------------------------|
-| Cash Analysis               | Cash by legal entity, cash by quarter, total cash, and cash by account<br><br>**Note:** The cash by quarter information doesn't include beginning balances in the total for the first quarter. It shows the total of new transactions that are posted in each quarter.|
+| Cash Analysis               | Cash by legal entity, cash by quarter, total cash, and cash by account<blockquote>[!NOTE] The cash by quarter information doesn't include beginning balances in the total for the first quarter. It shows the total of new transactions that are posted in each quarter.</blockquote> |
 | Current Ratio Analysis      | Current ratio by legal entity, current ratio by quarter, and balances for current assets and current liabilities |
 | Quick Ratio Analysis        | Quick ratio by legal entity, quick ratio by quarter, and balances for cash, accounts receivable, and current liabilities |
 | Cost of Goods Sold Analysis | Cost of goods sold (COGS) by legal entity, COGS this year and last year by quarter, COGS to sales by legal entity, total COGS, and COGS to sales percentage |
@@ -74,7 +74,7 @@ Each tile is backed by a supporting report. These reports contain both charts an
 | Earnings Analysis           | Actual and budget earnings before interest and taxes (EBIT) by legal entity, EBIT this year and last year, expenses to revenue percentage, and actual and budget expenses to revenue |
 | Revenue Analysis            | Total revenue, actual and budget total revenue by legal entity, total revenue this year and last year, revenue budget variance by legal entity, and total revenue this period and last period |
 | Expense Analysis            | Total expenses, actual to budget total expenses by legal entity, actual and budget total expense by quarter, total expenses by account category, and operating expenses ratio |
-| Billed Revenue Analysis     | Total accounts receivable, total accounts receivable by legal entity, total accounts receivable by quarter, and balances for accounts receivable accounts<br><br>**Note:** The information doesn't include beginning balances for the accounts receivable ledger accounts. It shows the total of new transactions that are posted to Accounts receivable. |
+| Billed Revenue Analysis     | Total accounts receivable, total accounts receivable by legal entity, total accounts receivable by quarter, and balances for accounts receivable accounts<blockquote>[!NOTE] The information doesn't include beginning balances for the accounts receivable ledger accounts. It shows the total of new transactions that are posted to Accounts receivable.</blockquote> |
 
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure a Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
@@ -94,4 +94,4 @@ The following entities were used as the basis of the **Financial performance** P
 - Ledgers
 - ChartofAccounts
 
-These entities were used to create calculated measures in the data model. The calculated measures are used to calculate the key performance indicators (KPIs) and reports that are used in the content. By default, the content brings in data for the last three years and one future year. To include additional calculations on your reports and dashboard, you can modify the [Microsoft Excel workbook](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). This workbook is the default data model that was used to create the content. 
+These entities were used to create calculated measures in the data model. The calculated measures are used to calculate the key performance indicators (KPIs) and reports that are used in the content. By default, the content brings in data for the last three years and one future year. To include additional calculations on your reports and dashboard, you can modify the [Microsoft Excel workbook](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). This workbook is the default data model that was used to create the content.

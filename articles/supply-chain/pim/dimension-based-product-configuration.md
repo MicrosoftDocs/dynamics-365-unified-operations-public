@@ -17,7 +17,7 @@ ms.search.form: BOMConfigRule, BOMTable, ConfigChooseFromRoute, ConfigGroup, Con
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19821

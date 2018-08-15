@@ -58,7 +58,6 @@ Before you begin to configure X++ debugging in a production environment, note th
 - You can't debug directly against the production environment, because debugging might cause data corruption. However, developers can manipulate values at runtime. Alternatively, in their own instance, developers can make a code change that changes data.
 
     > [!NOTE] 
-
     > The developer environment that is used for debugging must exist in the same LCS project as the sandbox environment, and both of them must be Microsoft managed. This requirement helps strengthen the security of the sandbox database. By default, there is a firewall restriction on both the sandbox and production SQL databases. This restriction allows only servers in those environments to connect to the databases. To enable debugging, a firewall exception is added so that a developer environment can connect to the sandbox database.
 
 

@@ -74,7 +74,7 @@ This topic includes information and links to resources that can help you set up 
   - [Set up adjustment codes for PIS and COFINS taxes](tasks/br-10006-2-set-up-adjustment-codes-pis-cofins-taxes.md)
   - [Set up PIS and COFINS tables](tasks/br-10006-1-set-up-pis-cofins-tables.md)
   - [Tax assessment for ISS tax](tasks/br-10005-tax-assessment-iss-tax.md)
-  - [Tax attributes](/latam-bra-tax-attributes.md)
+  - [Tax attributes](latam-bra-tax-attributes.md)
   - [Tax payments](latam-bra-tax-payments.md)
   - [Tax in sales quotations](tasks/br-00057-brazilian-taxes-sales-quotation.md)
   - [Withholding taxes](tasks/br-00009-brazilian-withholding-taxes.md)
