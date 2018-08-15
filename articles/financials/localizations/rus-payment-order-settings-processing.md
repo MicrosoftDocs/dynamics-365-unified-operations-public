@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-			
+
 # optional metadata
 # ms.search.form:  
 audience: Application User
@@ -23,15 +23,15 @@ ms.search.region: Russia
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
+
 ---
 
 
 # Set up a method of payment 
 
+[!include [banner](../includes/banner.md)]
 
 The method of payment determines the format that is used for export of payment orders. Within the payment type, you can also set up bridging accounts when reconciliation is being done. In this case, when posting payment journals, the payments are reflected in off-balance Accounts payable and banking operations. After banking reconciliation, these transactions are reversed and reflected in Accounts payable and banking accounts. To link actual accounts with payment types, in most cases, the number of payment types created equals the number of accounts that the company holds.
-
-
 
 
 1.  Click **Accounts payable** \> **Setup** \> **Payment** \> **Methods of payment**.
@@ -50,27 +50,24 @@ The method of payment determines the format that is used for export of payment o
 
 8.  Select the **Bridging Posting** check box.
     
-
     > [!NOTE]
-    > <P>You can enter information in the <STRONG>Bridging account</STRONG> field only after you select the <STRONG>Bridging Posting</STRONG> check box.</P>
-
-
+    > You can enter information in the **Bridging account** field only after you select the **Bridging Posting** check box.
 
 9.  In the **Bridging account** field, select the account number for posting in the ledger.
 
 10. In the **Bank transaction type** field, select the bank transaction type.
 
-11. On the **File formats** tab, click **Setup** to open the **File formats for methods of payment** form.
+11. On the **File formats** tab, click **Setup** to open the **File formats for methods of payment** page.
 
 12. Transfer formats from the **Available** field to the **Selected** field to generate a list of accessible formats for exporting payment orders.
 
-13. Close the form and return to the **File formats** tab in the **Methods of payment** form.
+13. Close the form and return to the **File formats** tab in the **Methods of payment** page.
 
 14. In the **Export format** field, select the format for exporting payment orders for the specified method of payment.
     
 
     > [!NOTE]
-    > <P>When using the customer-bank, the <STRONG>Export format</STRONG> field should show the class that handles the export of data for the payment journal to an external file in a format that corresponds to the customer-bank of the actual bank.</P>
+    > When using the customer-bank, the **Export format** field should show the class that handles the export of data for the payment journal to an external file in a format that corresponds to the customer-bank of the actual bank.
 
 
 
@@ -90,7 +87,7 @@ The method of payment determines the format that is used for export of payment o
     
       - **Bank transaction type is mandatory** – Checks that a type of bank operation is selected.
 
-16. Press CTRL+S or close the form.
+16. Press CTRL+S or close the page.
 
 
 ## Set up to generate a payment order in rubles 
@@ -102,7 +99,7 @@ The method of payment determines the format that is used for export of payment o
     
 
     > [!NOTE]
-    > <P>If the number sequence is not set up, the number for the payment order will be retrieved from the Accounts payable parameters setup.</P>
+    > If the number sequence is not set up, the number for the payment order will be retrieved from the Accounts payable parameters setup.
 
 
 
@@ -110,14 +107,8 @@ The method of payment determines the format that is used for export of payment o
 
 4.  Click **Accounts payable** \> **Setup** \> **Payment** \> **Methods of payment**.
 
-5.  On the **File formats** tab, in the **Export format** field, select **Payment order in RUB** for export of payments.
+5.  On the **File formats** tab, in the **Export format** field, select **Payment order in RUB** for export of payments.For more information, see [Set up a method of payment](./rus-payment-order-settings-processing.md).
     
-
-    > [!WARNING]
-    > <P>For more information, see <A href="./rus-payment-order-settings-processing.md"> Set up a method of payment</A></P>
-
-
-
 6.  Press CTRL+S or close the form.
 
 
@@ -132,27 +123,23 @@ Use the **Methods of payment - vendors** form to set up a method of payment for 
 
 3.  On the **General** FastTab, in the **Bank transaction type** field, select the type of bank transaction.
     
-
     > [!NOTE]
-    > <P>This field is available only when you select <STRONG>Bank</STRONG> in the <STRONG>Account type</STRONG> field.</P>
-
-
+    > This field is available only when you select **Bank** in the **Account type** field.
 
 4.  In the **Payment account** field, select the ID of the bank account.
 
-5.  On the **File formats** FastTab, click **Setup** to open the **File formats for methods of payment** form.
+5.  On the **File formats** FastTab, click **Setup** to open the **File formats for methods of payment** page.
 
 6.  On the **Export** tab, in the **Available** list, select **Currency transfer order**.
 
 7.  Click **\<** to move the selected export file format to the **Selected** list.
 
-8.  Close the **File formats for methods of payment** form.
+8.  Close the **File formats for methods of payment** page.
 
-9.  In the **Methods of payment - vendors** form, in the **Export format** field, select **Currency transfer order** as the format for the export of payments.
+9.  In the **Methods of payment - vendors** page, in the **Export format** field, select **Currency transfer order** as the format for the export of payments.
 
 
 ## Set up an intermediate bank account for a foreign vendor 
-
 
 You can use the **Vendor bank accounts** form to set up a foreign bank account for a vendor, so that you can make payments by using payment orders or payment requests. This bank account is registered with the foreign bank that is linked to the vendor account. For more information, see [Set up a foreign bank](../rus-local-settings-requisites-bank-module.md).
 
@@ -160,7 +147,7 @@ You can also set up an intermediate Russian bank account to link to the vendor p
 
 1.  Click **Accounts payable** \> **Common** \> **Vendors** \> **All vendors**.
 
-2.  Select the vendor account that is linked to the foreign bank, and then click **Set up** \> **Bank accounts** to open the **Vendor bank accounts** form.
+2.  Select the vendor account that is linked to the foreign bank, and then click **Set up** \> **Bank accounts** to open the **Vendor bank accounts** page.
 
 3.  Create a bank account for the vendor.
 
@@ -196,10 +183,8 @@ You can also set up an intermediate Russian bank account to link to the vendor p
 
 10. In the **Purpose text** field, enter any text that must be reflected in the payment order.
     
-
     > [!NOTE]
-    > <P>If you click <STRONG>VAT in payment order</STRONG>, the text, including the VAT amount in the <STRONG>Purpose text</STRONG> field, will be entered.</P>
-
+    > If you click **VAT in payment order**, the text, including the VAT amount in the **Purpose text** field, will be entered.
 
 
 11. In the **Method of payment** field, select the method of payment to the vendor.
@@ -214,11 +199,8 @@ You can also set up an intermediate Russian bank account to link to the vendor p
 
 16. In the **Account identification** field, select the bank account of the recipient.
     
-
     > [!NOTE]
-    > <P>If the payment order is being generated for a legal representative of the vendor, the code must be entered in the <STRONG>Payment documented on</STRONG> field. Along with this, the payment order slip will refer to the bank of the vendor that is specified in the <STRONG>Payment documented on</STRONG> field, but the transaction will be performed for the vendor that is specified in the <STRONG>Account</STRONG> field.</P>
-
-
+    > If the payment order is being generated for a legal representative of the vendor, the code must be entered in the **Payment documented on** field. Along with this, the payment order slip will refer to the bank of the vendor that is specified in the **Payment documented on** field, but the transaction will be performed for the vendor that is specified in the **Account** field.
 
 17. On the **Payment order** tab, in the **Order of payment** field, specify the order of payment.
 
@@ -252,7 +234,7 @@ You can also set up an intermediate Russian bank account to link to the vendor p
     
 
     > [!NOTE]
-    > <P>If the method of payment is <STRONG>Bridging Posting</STRONG>, the payment will be posted to the bridging accounts. You can view the transactions in the <STRONG>Journal voucher</STRONG> form, <STRONG>Bank transactions</STRONG> form, and <STRONG>Vendor</STRONG> form.</P>
+    > If the method of payment is **Bridging Posting**, the payment will be posted to the bridging accounts. You can view the transactions in the **Journal voucher** page, **Bank transactions** page, and **Vendor** page.</P>
 
     
     The payment journal can also be used to register an outgoing payment for a cash refund to a customer. In the **Journal voucher** form, select **Customer** in the **Account type** field, the customer code in the **Account** field, and the payment type of the customer in the **Method of payment** field. Click **Accounts receivable** \> **Setup** \> **Payment** \> **Methods of payment**.
@@ -273,9 +255,6 @@ Generated payment orders are available in the **Registry of payment orders** for
 
 3.  On the **Essential elements** tab, view the attributes of the payer and the recipient.
 
-4.  Close the form.
-
-
 ## Payments to foreign bank accounts 
 
 
@@ -289,23 +268,19 @@ For transactions that involve payment returns to a foreign customer, you can set
 
 You must complete the following tasks if you want to generate a payment order for payments to a foreign vendor bank account, or to send a payment return to a foreign customer bank account:
 
-  - Set up a bank account in the **Bank accounts** form. 
-
-  - Set up a vendor account in the **Vendors** form.
-
-  - Set up a customer account in the **Customer** form. 
-
-  - Set up payment journals for a vendor account and a customer account in the **Ledger journal** form.
+  - Set up a bank account in the **Bank accounts** page. 
+  - Set up a vendor account in the **Vendors** page.
+  - Set up a customer account in the **Customer** page. 
+  - Set up payment journals for a vendor account and a customer account in the **Ledger journal** page.
 
 
 
 ## Generate a payment order for a foreign vendor
    
-
 You can use the **Generate payments** form to generate a payment order for payments that are made to the foreign bank account of a vendor. Before you generate a payment order, you can use the **Journal voucher** form to register a line in the payment journal to record the vendor payments.
 
 1. Click **Accounts payable** > **Journals** > **Payments** > **Payment journal**.
-2. Select a vendor payment journal, and then click **Lines** to open the **Journal voucher** form.
+2. Select a vendor payment journal, and then click **Lines** to open the **Journal voucher** page.
 3. In the **Method of payment** field, select the payment method for the current payment.
 4. Click the **Bank** tab, and then, in the **Account identification** field, enter the foreign bank account of the vendor.
 5. In the **Payment documented on** field, select the vendor account that the payments are made to.
@@ -314,79 +289,47 @@ You can use the **Generate payments** form to generate a payment order for payme
 
 ## Set up a customer bank account for payment returns from a foreign vendor 
 
-
 For transactions that involve payment returns to a foreign customer, you can set up a customer bank account to receive the payments that are returned. You can then generate a customer payment order that includes the bank and address of the payer. Use the following procedure to set up a customer bank account for payment returns.
 
 1.  Click **Accounts receivable** \> **Common** \> **Customers** \> **All customers**.
-
-2.  Select a customer account, and then click **Set up** \> **Bank accounts** to open the **Customer bank accounts** form.
-
+2.  Select a customer account, and then click **Set up** \> **Bank accounts** to open the **Customer bank accounts** page.
 3.  Create a bank account for the customer to receive payment returns from a foreign vendor.
-
 4.  Click the **General** tab.
-
 5.  In the **Foreign bank** field group, in the **Bank name** field, select the code of the foreign bank with which the customer bank account is registered.
-
 6.  In the **Bank account number** field, enter the foreign bank account number for the account that receives payment returns from the vendor.
-
 7.  In the **SWIFT** field, enter the Society for Worldwide Interbank Financial Telecommunication (SWIFT) code of the bank that receives payment returns from the vendor.
 
-
 ## Generate a customer payment order for a payment return 
-
 
 When you send a payment return to the foreign bank account of a customer, you can generate a payment order to make the payment. You can use the **Journal voucher** form to register a line in the payment journal to record the customer payment.
 
 1.  Click **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**.
-
-2.  Select a customer payment journal, and then click **Lines** to open the **Journal voucher** form.
-
+2.  Select a customer payment journal, and then click **Lines** to open the **Journal voucher** page.
 3.  In the **Method of payment** field, select the payment method for the current payment.
-
 4.  Click the **Bank** tab, and then, in the **Account identification** field, enter the bank account number of the customer account that receives the payment return.
-
 5.  In the **Payment documented on** field, select the customer account that receives the payment return.
-
-6.  Click **Functions** \> **Generate payments** to open the **Generate payments** form. 
-
+6.  Click **Functions** \> **Generate payments** to open the **Generate payments** page. 
 7.  Click **OK** to generate the payment order.
-
 
 ## Register an incoming bank payment from a customer 
 
-
-
 1.  Click **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**. Click **Lines**.
-
 2.  Create a new journal line.
-
 3.  In the **Date** field, select the date of the payment.
-
 4.  In the **Account** field, select the customer code.
     
-
     > [!NOTE]
-    > <P>If a vendor payment, such as a refund, is being made, select <STRONG>Vendor</STRONG> in the <STRONG>Account type</STRONG> field on the <STRONG>General</STRONG> tab. On the <STRONG>Overview</STRONG> tab in the <STRONG>Account</STRONG> field, select the vendor code.</P>
-
-
+    > If a vendor payment, such as a refund, is being made, select **Vendor** in the **Account type** field on the **General** tab. On the **Overview** tab in the **Account** field, select the vendor code.</P>
 
 5.  In the **Transaction text** field, enter or select the transaction text.
-
 6.  In the **Credit** field, enter the sum of the payment.
-
 7.  In the **Offset account type** field, select **Bank**.
-
 8.  In the **Offset account** field, select the bank account.
-
 9.  In the **Currency** field, select the payment currency.
-
 10. On the **General** tab, in the **Contracts group** field, select the contract group.
     
-
     > [!NOTE]
-    > <P>If the payment is a prepayment, select the <STRONG>Prepayment</STRONG> check box on the <STRONG>Payment</STRONG> tab. The <STRONG>Sales tax group</STRONG>, <STRONG>Item sales tax group</STRONG>, and <STRONG>Posting profile</STRONG> fields will be entered automatically to calculate VAT for prepayment.</P>
-
-
+    > If the payment is a prepayment, select the **Prepayment** check box on the **Payment** tab. The **Sales tax group**, **Item sales tax group**, and **Posting profile** fields will be entered automatically to calculate VAT for prepayment.
 
 11. Click **Post**, and then click **Post** again to post the incoming payment.
     
@@ -394,7 +337,6 @@ When you send a payment return to the foreign bank account of a customer, you ca
 
 
 ## Transit account function 
-
 
 Use the **Transit account** function to change the date of a posted transaction. The banking operation type must be created, and a transaction account must be set. This function is applied to transactions of the types **Bank-Bank**, **Cash account-Bank**, and **Ledger-Bank**.
 
