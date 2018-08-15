@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
@@ -27,6 +26,7 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validfrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
+
 ---
 
 # Extensibility FAQ
