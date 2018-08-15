@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Set up parameters for advance holders 
+title: Advance holders for Russia
 description: This topic provides information about registration and set up for advance holders for Russia. 
 author: ShylaThompson
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-			
+
 # optional metadata
 # ms.search.form:  
 audience: Application User
@@ -23,27 +23,25 @@ ms.search.region: Russia
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
+
 ---
 
 
+# Advance holders for Russia
+[!include [banner](../includes/banner.md)]
 
 # Set up parameters for advance holders 
 
-
 1.  Click **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
-
-
 2.  Click **Advance holders**, and then in the **Advance holders** area, in the **Posting profile** field, select the default profile to complete transactions for advance holders.
     
-
     > [!NOTE]
-    > <P>For more information, see "Set up posting profiles for accounting vouchers".</P>
-
+    > For more information, see "Set up posting profiles for accounting vouchers".
 
 
 3.  Select the **Set default advance holder** check box to set the current user as the advance holder.
 
-4.  Select the **Advance holder sorting** check box to display the advance holders at the beginning of the list in the **Advance holders** form.
+4.  Select the **Advance holder sorting** check box to display the advance holders at the beginning of the list in the **Advance holders** page.
 
 5.  Select the **Issue when balance is open** check box to allow issue of a cash advance to an advance holder who has an open positive balance.
 
@@ -53,9 +51,7 @@ ms.dyn365.ops.version: 8.1
     
 
     > [!NOTE]
-    > <P>All journals are of the type <STRONG>Cash</STRONG>.</P>
-
-
+    > All journals are of the type **Cash**.
 
 8.  In the **Cash** field, select the cash account to determine the vouchers that are used for closing the balances for the advance holder.
 
@@ -65,7 +61,7 @@ ms.dyn365.ops.version: 8.1
 
 11. In the **Account** field, select the bank account code to close the balances for an advance holder through a bank.
 
-12. Press CTRL+S or close the form.
+12. Press CTRL+S or close the page.
 
 
 ## Set up an advance holder group 
@@ -90,14 +86,10 @@ You must create an advance holder group in order to group advance holders. For e
 
 You can set up the following posting profiles for an account of operations:
 
-
   - One ledger account for all advance holders.
-
   - A separate ledger account for each group of advance holders.
-
   - A separate ledger account for each advance holder.
 
-<!-- end list -->
 
 1.  Click **Accounts payable** \> **Setup** \> **Advance holders** \> **Employee posting profiles**.
 
@@ -121,9 +113,7 @@ You can set up the following posting profiles for an account of operations:
     
 
     > [!NOTE]
-    > <P>You can select this field only if you select <STRONG>Table</STRONG> or <STRONG>Group</STRONG> in the <STRONG>Valid for</STRONG> field.</P>
-
-
+    > You can select this field only if you select **Table** or **Group** in the **Valid for** field.
 
 8.  In the **Summary account** field, select the account to reflect transactions for the advance holders.
 
@@ -144,31 +134,22 @@ Use this procedure to set up employee posting profiles for dimension control for
 4.  In the **Allow empty dimension value** field, select the condition under which settlements that are related to accruals and closing payment operations can be processed if dimension values are not specified. The following options are available:
     
       - **No** – Transactions are not settled, whether the dimension values are specified or not.
-    
       - **Auto** - Automatic transactions are settled, whether the dimension values are specified or not.
-    
       - **Manual** – Manual transactions are settled, whether the dimension values are specified or not.
-    
       - **Always** – All transactions are settled, whether the dimension values are specified or not.
     
 
     > [!NOTE]
-    > <P>This parameter lets you ignore the setting of dimensions when individual transactions are created.</P>
-
+    > This parameter lets you ignore the setting of dimensions when individual transactions are created.
 
 
 5.  Click the **Setup** FastTab.
-
 6.  In the **Set** field, select the dimension focus for settlement control.
     
-
     > [!NOTE]
-    > <P>The specified dimension set indicates that dimension control is activated.</P>
-
-
+    > The specified dimension set indicates that dimension control is activated.>
 
 ## Set up the terms of payment 
-
 
 You must set up the terms of payment when you register the purchase of goods from a vendor through an advance holder. The advance holder makes the purchase.
 
@@ -188,8 +169,6 @@ You must set up the terms of payment when you register the purchase of goods fro
 7.  Select the **Cash payment** check box.
 
 8.  Select the **From advance holder** check box.
-
-9.  Press CTRL+S or close the form.
 
 
 ## Set up the per diem expense rates 
@@ -228,16 +207,13 @@ Expense rates are used to generate an advance report for per diem expenses, and 
 
 15. In the **Department**, **Cost center**, and **Purpose** fields, select the transaction dimension from the corresponding dimensions form.
 
-16. Press CTRL+S or close the form.
-
-
 
 ## About worker table numbers for advance holders 
 
 
-A worker can be an employee or a contractor, and can hold several positions in an organization. An employee or a contractor can also be an advance holder who is accountable for the expense amount that is provided by the organization. To specify a worker as an advance holder, you must enter a unique worker ID in the **Worker ID** field in the **Worker** form. You must also select the **Advance holder** check box in the **Advance holders** form to indicate that the selected worker is an advance holder.
+A worker can be an employee or a contractor, and can hold several positions in an organization. An employee or a contractor can also be an advance holder who is accountable for the expense amount that is provided by the organization. To specify a worker as an advance holder, you must enter a unique worker ID in the **Worker ID** field in the **Worker** page. You must also select the **Advance holder** check box in the **Advance holders** form to indicate that the selected worker is an advance holder.
 
-Transactions for these workers can be posted by using advance holder accounts. The worker ID that is specified for each advance holder can be used to track all advance holder transactions. This number is retrieved as an account number for advance holder transactions in the **General journals** and **Advance holder transactions** forms.
+Transactions for these workers can be posted by using advance holder accounts. The worker ID that is specified for each advance holder can be used to track all advance holder transactions. This number is retrieved as an account number for advance holder transactions in the **General journals** and **Advance holder transactions** pages.
 
 
 ## Set up a worker table number for an advance holder 
@@ -258,7 +234,7 @@ Use this procedure to set up a worker table number for a worker. You can view th
 
 7.  Click **Employment history** to view the details of employees.
 
-8.  Close the form.
+8.  Close the page.
 
 9.  Click **Accounts payable** \> **Common** \> **Advance holders** \> **Advance holders**.
 
@@ -270,11 +246,8 @@ Use this procedure to set up a worker table number for a worker. You can view th
 
 1.  Click **Accounts payable** \> **Common** \> **Advance holders** \> **Advance holders**.
     
-
     > [!NOTE]
-    > <P>You cannot add or delete employees in the <STRONG>Advance holders</STRONG> form.</P>
-
-
+    > You cannot add or delete employees on the **Advance holders** page.</P>
 
 2.  Select the **Advance holder** check box to activate the employee as an advance holder.
 
@@ -286,23 +259,17 @@ Use this procedure to set up a worker table number for a worker. You can view th
 
 
 
-## Set up advance holders 
-
-Use this procedure to set up advance holders from the directory of workers.
+## Set up advance holders from the directory of workers
 
 1.  Click **Accounts payable** \> **Common** \> **Advance holders** \> **Advance holders**.
     
-
     > [!NOTE]
-    > <P>You cannot add or delete employees in the <STRONG>Advance holders</STRONG> form. You can create employees in the <STRONG>Worker</STRONG> form. In the <STRONG>Employee posting profiles</STRONG> form, you can set up the employee posting profile that is used to post advance holder balances.</P>
+    > <P>You cannot add or delete employees in the **Advance holders** page. You can create employees in the **Worker** page. In the **Employee posting profiles** page, you can set up the employee posting profile that is used to post advance holder balances.</P>
 
 
-
-2.  Select the **Advance holder** check box to mark a worker as an advance holder.
-
+2.  Select the **Advance holder** option to select a worker as an advance holder.
 3.  In the **Group** field, select the advance holder group that the worker belongs to. 
     
-
     > [!NOTE]
-    > <P>If the <STRONG>Advance holder sorting</STRONG> check box is selected in the <STRONG>Accounts payable parameters</STRONG> form, the advance holders are displayed first in the list in the <STRONG>Advance holders</STRONG> form. You can also select the default employee posting profile in the <STRONG>Posting profile</STRONG> field.</P>
+    > If the **Advance holder sorting** option is set to **Yes** on the **Accounts payable parameters** page, the advance holders are displayed first in the list on the **Advance holders** page. You can also select the default employee posting profile in the **Posting profile** field.</P>
     
