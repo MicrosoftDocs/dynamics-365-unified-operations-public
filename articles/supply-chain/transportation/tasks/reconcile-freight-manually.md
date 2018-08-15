@@ -3,7 +3,7 @@
  
 title: Reconcile freight manually
 description: This procedure shows how to reconcile freight manually. 
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 10/13/2016
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

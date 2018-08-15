@@ -3,7 +3,7 @@
  
 title: Configure wave processing
 description: This guide describes how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 06/07/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

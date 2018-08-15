@@ -3,7 +3,7 @@
  
 title: Create a product number for predefined product variants
 description: This guide shows you how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group. 
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/03/2017
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

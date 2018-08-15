@@ -66,6 +66,7 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 
 #### Intelligence
 - [Bring your own database (BYOD) to Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [How to use cost management Power BI content in Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 #### Lifecycle Services (LCS)
 - [Asset library in Lifecycle Services](https://www.youtube.com/watch?v=z-2xMRa1nOs)

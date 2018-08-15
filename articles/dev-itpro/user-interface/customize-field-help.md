@@ -3,7 +3,7 @@
 
 title: Customize field descriptions
 description: This article describes how you can customize existing field descriptions and add your own descriptions.
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 92013
 ms.assetid: 94d555d7-28f3-4d94-91b4-6038e2be5047
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 

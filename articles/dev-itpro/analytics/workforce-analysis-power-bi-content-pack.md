@@ -39,34 +39,34 @@ This topic describes the **Workforce metrics** Microsoft Power BI content. It ex
 ## Accessing the Power BI content
 The **Workforce metrics** Power BI content appears in the **Personnel management** workspace if you use one of these products:
 
-- Microsoft Dynamics 365 for Finance and Operations 
+- Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## Metrics that are included in the Power BI content
 The following table lists the metrics that are shown on each report.
 
-| Report                                           | Metrics                                                                                                                                                                                                            |
-|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| People Metrics                                   | Summary of other reports                                                                                                                           |
-| Headcount Analysis Company, Department, Location | Headcount by company, headcount by department, headcount by location, and total headcount                                                                                                                           |
-| Headcount Analysis Job, Step, Manager            | Headcount by job, headcount by step, headcount by manager, and total headcount                                                                                                                                      |
-| Headcount Trend Analysis                         | Headcount this year versus last year by company and rolling headcount for the last 12 months                                                                                                                        |
+| Report                                           | Metrics |
+|--------------------------------------------------|---------|
+| People Metrics                                   | Summary of other reports |
+| Headcount Analysis Company, Department, Location | Headcount by company, headcount by department, headcount by location, and total headcount |
+| Headcount Analysis Job, Step, Manager            | Headcount by job, headcount by step, headcount by manager, and total headcount |
+| Headcount Trend Analysis                         | Headcount this year versus last year by company and rolling headcount for the last 12 months |
 | FTE Analysis                                     | Total full-time equivalent (FTE), total assigned FTE, FTE by department, FTE for the last 12 months, and FTE by job |
 | Workforce Demographics                           | Headcount by age and gender, headcount by ethnic origin, headcount by veteran status, headcount by marital status, number of full-time students, average tenure, average age, ratio of female to male employees, and languages spoken by employees |
-| Position Analysis                                | Open positions by department, open-to-filled positions, active-to-inactive positions, and positions by department                                                                                                   |
-| Attrition Analysis                               | Attrition this year versus last year, attrition, exiting employees by age and gender, average tenure of employees leaving, employees exiting this month, and employees leaving by reason                                                                   |
-| People by department                             | Employees with a personnel number by department, position, and assignment start and end dates                                                                                                                       |
-| Seniority Analysis                               | Average tenure, average years of service by company, and seniority list                                                                                                                                                              |
-| Employee Anniversaries                           | Anniversaries this month, anniversaries next month, employees by years of service, and anniversaries, years of service by department                                                                                                                                                                    |
-| Employee Birthdays                               | Birthdays this month, birthdays next month, employee birthdays, and birthdays by month and department                                                                                                                                                                    |
-| Mass Hire Projects                               | Total mass hire projects, mass hire projects by status, mass hire projects by department and owner, mass hire projects by job, and mass hire projects                                                                                                                                                                    |
+| Position Analysis                                | Open positions by department, open-to-filled positions, active-to-inactive positions, and positions by department |
+| Attrition Analysis                               | Attrition this year versus last year, attrition, exiting employees by age and gender, average tenure of employees leaving, employees exiting this month, and employees leaving by reason |
+| People by department                             | Employees with a personnel number by department, position, and assignment start and end dates |
+| Seniority Analysis                               | Average tenure, average years of service by company, and seniority list |
+| Employee Anniversaries                           | Anniversaries this month, anniversaries next month, employees by years of service, and anniversaries, years of service by department |
+| Employee Birthdays                               | Birthdays this month, birthdays next month, employee birthdays, and birthdays by month and department |
+| Mass Hire Projects                               | Total mass hire projects, mass hire projects by status, mass hire projects by department and owner, mass hire projects by job, and mass hire projects |
 
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 Be sure to download the **Workforce metrics** Power BI content that applies to the version of Microsoft Dynamics 365 that you're using.
 
->[!NOTE]
->The .pbix files available in Lifecycle Services apply to Finance and Operations only.
+> [!NOTE]
+> The .pbix files available in Lifecycle Services apply to Finance and Operations only.
 
 ## Understanding the data model and entities
 The following table shows the entities that the content was based on.
@@ -76,7 +76,7 @@ The following table shows the entities that the content was based on.
 | Calendar Offset          | Calendar offsets to slice reports                                                   | Past Position Assignment, Position Trend, Employee Trend, Terminated Employee |
 | Company                  | Companies to filter reports by                                                      | Current Employee, Terminated Employee, Employee Trend |
 | Current Position         | Positions as of the current date, FTE, open positions, and open-to-filled positions | Job, Position |
-| Current Employee         | Workers as of the current date, age, and headcount                                  | Company, Geographic Location,  Employee Name, Reports To, Employee Title, Demographics, Job, Employment, Position |
+| Current Employee         | Workers as of the current date, age, and headcount                                  | Company, Geographic Location, Employee Name, Reports To, Employee Title, Demographics, Job, Employment, Position |
 | Date                     | Days, weeks, months, and years                                                      | Past Position Assignment, Position Trend, Terminated Employee, Employee Trend |
 | Demographics             | Date of birth, gender, ethnic origin, and marital status                            | Current Employee, Terminated Employee, Employee Trend |
 | Employment               | Start date, end date, and transition date                                           | Current Employee, Terminated Employee, Employee Trend |
@@ -92,5 +92,3 @@ The following table shows the entities that the content was based on.
 | Employee Trend           | Workers over time, headcount, company, and position                                 | Company, Geographic Location, Employee Name, Reports To, Calendar Offset, Date, Employee Title, Demographics, Employment, Job |
 | Mass Hire Project        | Number of mass hire projects, project owner, and project status                     | Company, Mass Hire Line |
 | Mass Hire Line           | Department, employment type, and position                                           | Date, Job, Mass Hire Project |
-
-
