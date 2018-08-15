@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recurring integrations
-description: This topic provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support. 
+description: This topic provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 12/19/2017
@@ -42,11 +42,11 @@ Integration does the following things:
 
 - It builds on data entities and the Data management framework.
 - It enables the exchange of documents or files between Finance and Operations and any third-party application or service.
-- It supports several document formats, source mapping, Extensible Stylesheet Language Transformations (XSLT), and filters. 
+- It supports several document formats, source mapping, Extensible Stylesheet Language Transformations (XSLT), and filters.
 
     ![Document/file exchange in several document formats](./media/recurring-integrations.png)
 
-- It uses secure REST application programming interfaces (APIs) and authorization mechanisms to receive data from, and send data back to, integration systems. 
+- It uses secure REST application programming interfaces (APIs) and authorization mechanisms to receive data from, and send data back to, integration systems.
 
     ![Set up recurring integrations](./media/set-up-recurring.png)
 
@@ -57,13 +57,13 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
 ### Create a data project
 
 1. On the main dashboard, select the **Data management** tile to open the **Data management** workspace.
-2. Select the **Import or Export** tile to create a new data project. 
+2. Select the **Import or Export** tile to create a new data project.
 
     > [!NOTE]
     > If you have an existing data project, select **Load project** on the card for any data project on the **Data projects** tab.
 
 3. Enter a valid job name, data source, and entity name.
-4. Upload a data file for one or more entities. Make sure that each entity is added, and that no errors occur. 
+4. Upload a data file for one or more entities. Make sure that each entity is added, and that no errors occur.
 
     > [!NOTE]
     > You can select each entity data card to set up, review, or modify field maps, and to set up XSLT-based transforms that must be applied to inbound data. For export data projects, the entity card also shows a filter link, so that you can set up filters to filter data. Currently, all recurring data jobs in a data project use the same filter.
@@ -80,9 +80,9 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
     - **File** – Your external integration will push individual files so that they can be processed via this recurring data job. In this case, the format of the file that is expected is the same as the format that was specified when the entity was added to the data project.
     - **Data package** – You can push only data package files for processing. A data package is a new format that lets you submit multiple data files as a single unit that can be used in integration jobs.
     - **Process messages in order** – You can enable this option to force sequential processing of incoming files in an import scenario. This option is only applicable to files and not data packages.
-    
-5. Select **Set processing recurrence**, and then, in the **Define recurrence** dialog box, set up a valid recurrence for your data job. 
-6. Optional: Select **Set monitoring recurrence**, and set up a monitoring recurrence. 
+
+5. Select **Set processing recurrence**, and then, in the **Define recurrence** dialog box, set up a valid recurrence for your data job.
+6. Optional: Select **Set monitoring recurrence**, and set up a monitoring recurrence.
 
     > [!NOTE]
     > Currently, monitoring recurrence enables load monitoring only on the queue for your recurring data job. No additional policies are supported via this service. You can use this feature to fine-tune the processing recurrence as the load demand requires.
@@ -90,9 +90,8 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
 7. Select **OK**, and then select **Yes** in the confirmation message box.
 
 ## Manage recurring data jobs
-1. In the **System administration** workspace (not the **System administration** module), select the **Data Management IT** workspace. 
-
-2. In the workspace, on the **Recurring data job** tab, select the recurring job to view the details. The **Manage scheduled data jobs** page contains a grid that lists any messages that are waiting in the queue. Therefore, you can monitor messages and the processing status. 
+1. In the **System administration** workspace (not the **System administration** module), select the **Data Management IT** workspace.
+2. In the workspace, on the **Recurring data job** tab, select the recurring job to view the details. The **Manage scheduled data jobs** page contains a grid that lists any messages that are waiting in the queue. Therefore, you can monitor messages and the processing status.
 
     ![Manage scheduled data jobs](./media/image013.jpg)
 
@@ -105,14 +104,17 @@ The following set of APIs is used to exchange data between the integration clien
 ### API for import (enqueue)
 Make an HTTP POST call against the following URL.
 
-    https://<base URL>/api/connector/enqueue/<activity ID>?entity=<entity name>
+```
+https://<base URL>/api/connector/enqueue/<activity ID>?entity=<entity name>
+```
 
 In the message body, you can the pass the data as a memory stream.
 
-
 **Example**
 
-    POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/enqueue/%7B6D31E09F-0249-459F-94F0-AAD9C2C47B64%7D?entity=Customer%20Groups
+```
+POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/enqueue/%7B6D31E09F-0249-459F-94F0-AAD9C2C47B64%7D?entity=Customer%20Groups
+```
 
 To get the activity ID, on the **Manage scheduled data jobs** page, in the **ID** field, copy the globally unique identifier (GUID).
 
@@ -121,11 +123,15 @@ To get the activity ID, on the **Manage scheduled data jobs** page, in the **ID*
 ### API for export (dequeue)
 To return a data package that contains all the data entities that were defined in the data project, and that the client application can unzip and consume, use the following structure.
 
-    https://<base URL>/api/connector/dequeue/<activity ID>
+```
+https://<base URL>/api/connector/dequeue/<activity ID>
+```
 
 **Example**
 
-    GET https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/dequeue/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
+```
+GET https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/dequeue/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
+```
 
 After the client downloads the data, an acknowledgment must be sent back to Finance and Operations, so that you can mark the data as received.
 
@@ -135,28 +141,32 @@ Use the following API.
 > [!NOTE]
 > The body of the response of **/enqueue** must be sent in the body of the **/ack** POST request.
 
-    https://<base URL>/api/connector/ack/<activity ID>
+```
+https://<base URL>/api/connector/ack/<activity ID>
+```
 
 **Example**
 
-    POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
-    
+```
+POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
+```
+
 ### API for getting message status
 The API to get the status of a message is available as of hotfix KB 4058074 for Platform update 12. This API is particularly useful in import scenarios to determine if a message has been successfully processed. A message is created when the enqueue process is completed. If the message returns a failed status, you can set your integration app to retry or take another action.
 
 **Example**
 
 ```
-    POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetMessageStatus
-    BODY
-    {
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetMessageStatus
+BODY
+{
     "messageId":"<string>"
-    }
+}
 ```
-    
+
 The following table lists the possible status values.
 
-| Value              | Meaning                                                                              |
+| Value                | Meaning                                                                              |
 |----------------------|--------------------------------------------------------------------------------------|
 | Enqueued             | The file has been successfully enqueued to blob storage                              |
 | Dequeued             | The file has been successfully dequeued from blob storage                            |
@@ -168,12 +178,11 @@ The following table lists the possible status values.
 | ProcessedWithErrors  | The import/export operation completed with errors                                    |
 | PostProcessingFailed | the import/export operation failed during post-processing                            |
 
-    
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace
 Recurring integration data jobs run in batch mode. If a recurring job fails, you must investigate the instance of the batch job as part of the troubleshooting process. To make this investigation easier, click **Manage messages** to get to the **Process status for recurring data job** page, which now shows the status of the batch job.
 
-The batch job status is retrieved asynchronously from the batch framework for the specified recurring data job. To see the most up-to-date batch job status, select **Get batch status**, and then refresh the page. 
+The batch job status is retrieved asynchronously from the batch framework for the specified recurring data job. To see the most up-to-date batch job status, select **Get batch status**, and then refresh the page.
 
 > [!NOTE]
 > If the record for the batch history is deleted, the status for the batch job on the **Processing status for recurring data job** page will be blank.
@@ -192,12 +201,11 @@ Your implementation might include runs of recurring jobs where files or packages
 > [!NOTE]
 > These features were added in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 12. Jobs that were run before you upgraded to Platform update 12 won't have values in the following columns.
 
-The **Total records exported** column shows the total count of records that were exported. A value of **0** (zero) indicates that no records were exported to the file or included in the package. 
+The **Total records exported** column shows the total count of records that were exported. A value of **0** (zero) indicates that no records were exported to the file or included in the package.
 
 The **File uploaded successfully** column contains a check mark if the file or the package was uploaded successfully. If the file wasn't uploaded because of an error, or because there were no records, the column will be blank.
 
 ### Http vs Https
 The dequeue API returns HTTP instead of HTTPS. This behavior can be seen in Finance and Operations environments that use a load balancer, such as production environments. (You cannot see the behavior in one box environments). We recommend that you change the URI scheme to HTTPS in the middleware application that is trying to dequeue from Finance and Operations.
-
 
 ![Batch job status](./media/show-batch-status.png)

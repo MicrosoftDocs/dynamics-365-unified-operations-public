@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You can design Electronic reporting (ER) formats that can be used in the Finance and Operations application to generate outgoing electronic documents. You can also design ER formats that parse incoming electronic documents and use the content in those documents to update application data. 
+You can design Electronic reporting (ER) formats that can be used in the Finance and Operations application to generate outgoing electronic documents. You can also design ER formats that parse incoming electronic documents and use the content in those documents to update application data.
 
 With this functionality, a single ER format can be used to generate outgoing electronic documents and then update the application data. This feature can be used in the following scenarios:
 

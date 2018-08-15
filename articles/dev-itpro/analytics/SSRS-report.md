@@ -37,9 +37,9 @@ This topic points you to a report that lists the SQL Server Reporting Services (
 
 Reports can be defined simply as any visualization of a structured data set. This may include transactional data presented in a tabular layout and advanced graphical views of aggregate information. To account for this broad definition, Finance and Operations offers several tools to produce reports to satisfy complex business requirements. One of these tools is SQL Server Reporting Services. SSRS reports provide the following advantages:
 
--   Back office document management capabilities including email support, scheduled executions via batches, and print archive functionality.
--   Parameterized views with drill-through navigation to Finance and Operations pages and other reports.
--   Used to produce precision documents for compliance with local regulatory business practices
+- Back office document management capabilities including email support, scheduled executions via batches, and print archive functionality.
+- Parameterized views with drill-through navigation to Finance and Operations pages and other reports.
+- Used to produce precision documents for compliance with local regulatory business practices.
 
 For more information, see [Create next-generation reporting solutions](create-nextgen-reporting-solutions.md).
 

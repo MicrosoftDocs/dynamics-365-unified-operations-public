@@ -5,7 +5,7 @@ title: Cloud deployment option
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Microsoft Dynamics 365 for Finance and Operations. 
 author: kfend
 manager: AnnBe
-ms.date: 03/21/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,7 +45,7 @@ Microsoft assumes that all customers will follow a lifecycle similar to the foll
 - Test customizations, partner solutions and data configuration on a tier-2 sandbox environment
 - Deploy customizations and data configurations to a production environment with high availability
 
-At some phases of a project, you may have all of the environments live at once. For more information, about the default licenses and tiers that are available, see the [Dynamics 365 Licensing Guide](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf).
+At some phases of a project, you may have all of the environments live at once. For more information, about the default licenses and tiers that are available, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
 You may hear the terms, Customer, Partner, and Microsoft subscriptions. A *customer or partner subscription* means that the customer or partner brings their own Azure subscription and deploys Dynamics 365 for Finance and Operations environments to it, for evaluation and development purposes only. The customer or partner pays for the resources deployed to their Azure subscription based on the Azure price list. 
 A *Microsoft subscription* means that the customer purchases Dynamics 365 for Finance and Operations licenses which will then allow them to deploy environments to an Azure subscription which is managed by Microsoft, therefore, the customer has no separate Azure billing. With each Enterprise offer, three environments are included by default. 
@@ -54,7 +54,7 @@ A *Microsoft subscription* means that the customer purchases Dynamics 365 for Fi
 - One Tier-2 sandbox (multi-box environment) for user acceptance testing (UAT).
 - One production environment with High Availability (HA). This environment is managed and operated by Microsoft.
 
-Additional environments may be purchased as add-ons. For information about licensing and what is included in Microsoft Dynamics 365, see the [Microsoft Dynamics 365 Enterprise edition licensing guide](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf).
+Additional environments may be purchased as add-ons. For information about licensing and what is included in Microsoft Dynamics 365, see the [Microsoft Dynamics 365 Enterprise edition licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
 Here's how the lifecycle maps to the available environments.
 
