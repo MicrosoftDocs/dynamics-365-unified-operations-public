@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: Create a purchase book 
-description: This topic provides information about adding addtitional sheets to sales books and purchase books for Russia.
+title: Sales and purchase books for Russia 
+description: This topic provides information about sales books and purchase books for Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -9,8 +9,9 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-			
+
 # optional metadata
+
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
@@ -23,10 +24,14 @@ ms.search.region: Russia
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
+
 ---
 
+# Sales and purchase books for Russia
 
-# Create a purchase book 
+[!include [banner](../includes/banner.md)]
+
+## Create a purchase book 
 
 A purchase book is a tax accounting document. In a purchase book, you can record vendor factures, factures on returns and credit notes to vendors, factures on advance reports from advance holders, factures on customer prepayments, and corrected tax transaction factures.
 
@@ -35,62 +40,45 @@ A purchase book is a tax accounting document. In a purchase book, you can record
 
 2.  Click the **Statutory reporting** FastTab and, in the **Report Folder** field, specify the folder that contains the purchase book template.
 
-3.  Close the form.
+3.  Close the page.
 
 4.  Click **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
 
 5.  Click **Number sequences**, and in the **Number sequence code** field, select the number sequence for the reference type **Purchase book**.
 
-6.  Close the form.
+6.  Close the page.
 
 7.  Click **Accounts payable** \> **Periodic** \> **Purchase book** \> **Purchase books journal**.. A list of previously created purchase books is displayed in the form.
 
 8.  Create a new purchase book.
     
-
     > [!NOTE]
-    > <P>The <STRONG>New</STRONG> button is available only if all books that are listed in the form are closed. The <STRONG>Code</STRONG> field is updated automatically based on the purchase book numbering sequence.</P>
-
-
-
+    > The **New** button is available only if all books that are listed in the form are closed. The **Code** field is updated automatically based on the purchase book numbering sequence.
+    
 9.  In the **Name** field, enter a name for the book.
 
 10. Click **Update** to open the **Purchase book** form.
-    
 
     > [!NOTE]
-    > <P>You can only update an open book.</P>
-
-
+    > You can only update an open book.
 
 11. In the **To date** field, select the end date of the settlement period for which the purchase book is updated.
     
-
     > [!NOTE]
-    > <P>When you create the first book, you can set only the end date. The dates cannot be edited for later books. The <STRONG>From date</STRONG> and <STRONG>To date</STRONG> fields are determined by the tax settlement period.</P>
-
-
+    > When you create the first book, you can set only the end date. The dates cannot be edited for later books. The **From date** and **To date** fields are determined by the tax settlement period.
 
 12. Select the **Close the book** check box to close the book after the update.
 
-13. Click **OK** to create a new purchase book. The lines of the purchase book are refreshed, and the closing date is saved in the **Closed date** field of the book in the **Purchase books journal** form.
-    
-
+13. Click **OK** to create a new purchase book. The lines of the purchase book are refreshed, and the closing date is saved in the **Closed date** field of the book in the **Purchase books journal** page.
     > [!NOTE]
-    > <P>Click <STRONG>Delete</STRONG> to delete a purchase book. Only the last book can be deleted regardless of whether it is closed or not.</P>
-
-
+    > Click **Delete** to delete a purchase book. Only the last book can be deleted regardless of whether it is closed or not.
 
 14. Click **Print** \> **Purchase book** to print the purchase book in the internal report.
     
-
     > [!NOTE]
-    > <P>In the <STRONG>Purchase books journal</STRONG> form, click <STRONG>Lines</STRONG> to open the <STRONG>Purchase book lines</STRONG> form to verify purchase book line details.</P>
-
-
+    > In the **Purchase books journal** page, click **Lines** to open the **Purchase book lines** form to verify purchase book line details.
 
 ## Create an additional page in a purchase book 
-
 
 When you correct transactions for a closed tax period, an additional page is created in the closed purchase book to represent the tax period of the adjustment. Corrected factures are displayed in the new page in the purchase book.
 
@@ -104,11 +92,8 @@ The additional page contains information about purchase book totals at the end o
 
 4.  In the **Account** field, select the ledger account number.
     
-
     > [!NOTE]
-    > <P>The ledger account must be specified with the <STRONG>Sales tax</STRONG> posting type.</P>
-
-
+    > The ledger account must be specified with the **Sales tax** posting type.
 
 5.  In the **Debit** field, enter the corrected debit amount.
 
@@ -118,15 +103,12 @@ The additional page contains information about purchase book totals at the end o
 
 8.  Click the **General** tab. In the **Sales tax code** field, select the sales tax code for the transaction.
     
-
     > [!NOTE]
-    > <P>The ledger account specified in the <STRONG>Account</STRONG> field on the <STRONG>Overview</STRONG> tab must belong to the accounting posting group of the selected sales tax code.</P>
-
-
+    > The ledger account specified in the **Account** field on the **Overview** tab must belong to the accounting posting group of the selected sales tax code.
 
 9.  Click **Post** \> **Post** to post the journal voucher.
 
-10. In the **Journal voucher** form, click **Functions** \> **Purchase book** to open the **Update facture** form.
+10. In the **Journal voucher** page, click **Functions** \> **Purchase book** to open the **Update facture** page.
 
 11. In the **Counteragent** field, select the vendor.
 
@@ -136,98 +118,70 @@ The additional page contains information about purchase book totals at the end o
 
 14. In the **Facture date** field, view the facture creation date.
     
-
     > [!NOTE]
-    > <P>The corrected book code is determined by the date of the corrected period. Previous period modifications are registered in the book for the current period. These modifications are displayed on additional pages that are added to the books for previous periods.</P>
+    > The corrected book code is determined by the date of the corrected period. Previous period modifications are registered in the book for the current period. These modifications are displayed on additional pages that are added to the books for previous periods.
 
-
-
-15. In the lower section of the form, on the **Invoice** tab, use the **To facture** check box to select the invoice or invoices for the facture.
+15. In the lower section of the page, on the **Invoice** tab, use the **To facture** check box to select the invoice or invoices for the facture.
     
-
     > [!NOTE]
-    > <P>If you do not want to create a facture for a particular invoice line, clear the <STRONG>To facture</STRONG> check box on the <STRONG>Invoice lines</STRONG> tab.</P>
-
-
+    > If you do not want to create a facture for a particular invoice line, clear the **To facture** check box on the **Invoice lines** tab.
 
 16. Click **Posting** \> **Update facture** to post the facture journal.
     
-
     > [!NOTE]
-    > <P>The created facture is updated in the <STRONG>Facture journal</STRONG> form. After VAT is processed and the purchase book lines are refreshed, the corrected facture is displayed in the <STRONG>Purchase book lines</STRONG> form. The <STRONG>Correction</STRONG> field group displays the details about the corrected facture.</P>
-
-
+    > The created facture is updated in the Facture journal page. After VAT is processed and the purchase book lines are refreshed, the corrected facture is displayed in the **Purchase book lines** page. The **Correction** field group displays the details about the corrected facture.
 
 17. Click **Accounts payable** \> **Periodic** \> **Purchase book** \> **Purchase books journal** to open the **Purchase books journal** form.
 
 18. Select the additional page and click **Print** \> **Print additional list** to print the page.
     
-
     > [!NOTE]
-    > <P>Corrected purchase book lines are included in the additional pages. Other additional pages are created if other tax periods were corrected in the current reporting period.</P>
-    > <P>The purchase book can be printed in a Microsoft Office Excel template.</P>
-
-
+    > Corrected purchase book lines are included in the additional pages. Other additional pages are created if other tax periods were corrected in the current reporting period.
+    > The purchase book can be printed in a Microsoft Office Excel template.
 
 ## Create a sales book 
 
-
 VAT debt accrual is generated according to sales book entries. All factures for sales of goods, services, and advance payments from customers are included in the sales book.
-
 
 1.  Click **Organization administration** \> **Setup** \> **Organization** \> **Legal entities**.
 
 2.  Click the **Statutory reporting** FastTab and, in the **Report Folder** field, specify the folder that contains the purchase book template.
 
-3.  Close the form.
+3.  Close the page.
 
 4.  Click **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 
 5.  Click **Number sequences**, and in the **Number sequence code** field, select the number sequence for the reference type **Sales book**.
 
-6.  Close the form.
+6.  Close the page.
 
 7.  Click **Accounts receivable** \> **Periodic** \> **Sales book** \> **Sales books journal**. A list of previously created sales books is displayed in the form.
 
 8.  Create a new sales book.
     
-
     > [!NOTE]
-    > <P>The <STRONG>New</STRONG> button is available only if all books that are listed in the form are closed. The <STRONG>Code</STRONG> field is updated automatically, based on the sales book numbering sequence.</P>
-
-
+    > The **New** button is available only if all books that are listed in the form are closed. The **Code** field is updated automatically, based on the sales book numbering sequence.
 
 9.  In the **Name** field, enter a name for the book.
 
-10. Click **Update** to open the **Sales book** form.
+10. Click **Update** to open the **Sales book** page.
 
 11. In the **To date** field, select the end date of the settlement period for which the sales book is updated.
     
-
     > [!NOTE]
-    > <P>When you create the first book, you can set only the end date. The dates cannot be edited for later books. The <STRONG>From date</STRONG> and <STRONG>To date</STRONG> fields are determined by the tax settlement period.</P>
-
-
+    > <P>When you create the first book, you can set only the end date. The dates cannot be edited for later books. The **From date** and **To date** fields are determined by the tax settlement period.
 
 12. Select the **Close the book** check box to close the book after the update.
     
-
     > [!NOTE]
-    > <P>After you create and close the book, you cannot remove factures from the closed book. You cannot create new factures in a closed period.</P>
+    > After you create and close the book, you cannot remove factures from the closed book. You cannot create new factures in a closed period.
 
-
-
-13. Click **OK** to create a new sales book. The lines of the sales book are refreshed, and the closing date is saved in the **Closed date** field of the book in the **Sales books journal** form.
+13. Click **OK** to create a new sales book. The lines of the sales book are refreshed, and the closing date is saved in the **Closed date** field of the book in the **Sales books journal** page.
     
-
     > [!NOTE]
-    > <P>Click <STRONG>Delete</STRONG> to delete a sales book. Only the last book can be deleted regardless of whether it is closed or not.</P>
-
-
+    > Click **Delete** to delete a sales book. Only the last book can be deleted regardless of whether it is closed or not.
 
 14. Click **Print** \> **Sales book** to print the sales book in the internal report.
     
-
     > [!NOTE]
-    > <P>In the <STRONG>Sales books journal</STRONG> form, click <STRONG>Lines</STRONG> to open the <STRONG>Sales book lines</STRONG> form to verify the sales book line details.</P>
-
+    > In the **Sales books journal** page, click **Lines** to open the **Sales book lines** form to verify the sales book line details.
