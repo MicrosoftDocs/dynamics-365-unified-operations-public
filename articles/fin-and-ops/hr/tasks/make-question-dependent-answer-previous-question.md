@@ -3,7 +3,7 @@
  
 title: Make questions dependent on the answer of the previous question
 description: Conditional questions allow you to specify what follow-up question will be presented to a respondent, based on the answer to the preceding question. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 02/12/2016
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Operations, Talent
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

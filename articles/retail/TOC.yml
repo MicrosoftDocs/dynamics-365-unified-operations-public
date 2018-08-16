@@ -99,8 +99,6 @@
     href: call-center-functionality.md
   - name: Call center catalogs
     href: call-center-catalogs.md
-  - name: Create a call center catalog
-    href: create-call-center-catalogs.md
   - name: Configure delivery modes and charges
     href: configure-call-center-delivery.md
   - name: Set up and work with fraud alerts

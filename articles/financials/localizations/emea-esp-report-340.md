@@ -126,7 +126,7 @@ The format of the Report 340 text file complies with the regulatory requirements
 
 You can validate the file format by using one of the following methods:
 
-- Upload the file to the [tax authorities' website](https://www5.aeat.es/es13/h/iemodelk.html?mod=9340). You can test the file on a specific page of the site. However, you must have a valid e-certificate.
+- Upload the file to the Spanish tax authority website. You can test the file on a specific page of the site. However, you must have a valid e-certificate.
 
     > [!NOTE]
     > E-certificates are issued only to Spanish citizens.
