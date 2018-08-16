@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Create and post vendor invoices with advance holder details 
+title: Daily operations for advance holders in Russia
 description: This topic provides information on daily operations like handing cash and closing balance for advance holders for Russia. 
 author: ShylaThompson
 manager: AnnBe
@@ -9,8 +9,9 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-			
+
 # optional metadata
+
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
@@ -23,58 +24,16 @@ ms.search.region: Russia
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
+
 ---
 
+# Daily operations for advance holders in Russia
 
-# Create and post vendor invoices with advance holder details 
+[!include [banner](../includes/banner.md)]
 
+## Closing balances for an advance holder 
 
-Use this procedure to create and post vendor invoices with advance holder details. The advance holder balances are posted to the employee balance account instead of the vendor balance account.
-
-1.  Click **Accounts payable** \> **Common** \> **Purchase orders** \> **All purchase orders**.
-
-2.  Press CTRL+N or click **Purchase order** to create a purchase order. For more information, see [Create a purchase order](../../supply-chain/procurement/tasks/create-purchase-order.md).
-
-3.  In the **Purchase order** form, on the **Action Pane**, click **Header view**, and then click the **Price and discount** FastTab.
-
-4.  In the **Terms of payment** field, select the payment term. 
-    
-
-    > [!NOTE]
-    > <P>Select a payment term that has the <STRONG>From advance holder</STRONG> check box selected in the <STRONG>Terms of payment</STRONG> form.</P>
-
-
-
-5.  In the **Advance holder** field, select the advance holder for the purchase order.
-
-6.  Click **Purchase** \> **Confirm** to confirm the purchase order.
-
-7.  Click **Invoice** \> **Invoice** to create a vendor invoice for the purchase order.
-
-8.  In the **Vendor invoice** form, in the **Invoice identification** field group, in the **Number** field, enter the invoice number.
-
-9.  Click **Post** \> **Post** to select the posting settings and generate the invoice.
-    
-    You can view two vendor transactions with opposite amounts in the **Vendor transactions** form. 
-
-10. Close the form.
-
-11. Click **Accounts payable** \> **Inquiries** \> **Advance holders** \> **Transactions**. In the **Advance holder transactions** form, you can view one advance holder transaction. 
-
-12. Click **Voucher** to open the **Voucher transactions** form. The vendor balance account is replaced by the employee balance account, and the **Posting type** field is updated to **Employee balance**.
-
-
-
-## Close balances for an advance holder 
-
-
-You can close balances for an advance holder in one of the following ways:
-
-  - Close via cash
-
-  - Close via bank
-
-
+You can close balances for an advance holder via cash or bank.
 
 ### Closing via cash
 
@@ -88,23 +47,16 @@ You can close balances for an advance holder in one of the following ways:
 
 5.  In the **Amount to be transferred** field, enter the balance amount while closing.
     
-
     > [!NOTE]
     > <P>The amount indicated in the <STRONG>Amount</STRONG> field in the <STRONG>Balance</STRONG> form is displayed by default.</P>
 
-
-
 6.  Select the **Automatic** check box to create and post the slip journal automatically.
     
-
     > [!NOTE]
     > <P>If the <STRONG>Automatic</STRONG> check box is cleared, a journal will be created automatically, and the journal number is displayed. This journal must be posted manually.</P>
 
-
-
 7.  Click **OK** to generate the slip journal.
     
-
     > [!NOTE]
     > <P>After the slip journal is processed, either a disbursement slip (if the amount in the <STRONG>Amount to be transferred</STRONG> field is negative) will be generated, or a reimbursement slip (if the amount in the <STRONG>Amount to be transferred</STRONG> field is positive) will be generated for the advance holder when the balances are closed.</P>
 
