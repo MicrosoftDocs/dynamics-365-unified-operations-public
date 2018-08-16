@@ -68,7 +68,7 @@ Different people and companies have a different perspective on the data that is 
 ### Shortcut menu options
 Shortcut menus provide a few ways to explicitly change a page to better suit your requirements or the requirements of your company. (A shortcut menu is also known as a *right-click menu* or *context menu*.)
 
-Some of the most typical and important changes that can be made to a page are available directly as options on a shortcut menu. For example, to add or hide columns in a grid, just right-click a grid column header, and then select **Add columns** or **Hide this column**.
+Some of the most typical and important changes that can be made to a page are available directly as options on a shortcut menu. For example, starting in Platfrom Update 17, if you want to add or hide columns in a grid, just right-click a grid column header, and then select **Add columns** or **Hide this column**.
 
 Additionally, the most basic types of explicit personalization are available by right-clicking an element and then selecting **Personalize**. (Note that not all elements on your page can be personalized.) When you use this method of personalization, the element's property window appears.
 
@@ -85,27 +85,39 @@ You can use the property window to personalize an element in the following ways:
 The property window might include other personalization capabilities, depending on the element. For example, the property window for a tile might let you promote that tile to a dashboard, and the property window for a dashboard might let you create a new workspace on that dashboard.
 
 ### The Personalization toolbar
-When you want to move or hide elements, or make several changes to a page, you can use the **Personalization** toolbar. To open the **Personalization** toolbar, select **Personalize this form** in an element's property window. You can also select **Personalize this form** in the **Personalize** group on the **Options** tab of each page's Action Pane.
+When you want to make a large number of changes to a page or make changes that aren't available through other mechanisms (e.g. reordering elements), you can use the **Personalization** toolbar. To open the **Personalization** toolbar, select **Personalize this form** in an element's property window. You can also select **Personalize this form** in the **Personalize** group on the **Options** tab of each page's Action Pane.
 
 [![Personalization toolbar](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-While the **Personalization** toolbar is open, the page is non-interactive. Therefore, you can't enter data, or expand or collapse sections. You can just change the elements that make up the page.
+#### Navigating the page 
 
+Your ability to navigate the page while the **Personalization toolbar** is open depends on the platform version you are running. 
+
+- Prior to Platfrom Update 19, while the **Personalization** toolbar is open, the page is read-only (i.e. you cannot enter enter) and non-interactive (i.e. you can only make changes to the visible elements on the page). If you want to make changes to elements inside a collapsed section or on a different tab, you will need to close the **Personalization** toolbar, expand a section or switch to the desired tab, and then reopen the **Personalization** toolbar.  
+
+- Starting in Platform Update 19, while the **Personalization** toolbar is open, the page is still read-only but is much more interactive. Specifically, you can expand or collapse the Factbox Pane, switch tabs, and expand or collapse section while the **Personalization** toolbar is open in the same manner as you normally would on the page. To apply a personalization change to a collapsible section or tab (e.g. to hide a fast tab), you will trigger the button that appears beside the collapsible section or tab when it gains keyboard focus or when you hover over it.  
+
+#### Personalization tools
 The following tools are available on the **Personalization** toolbar:
 
 - Use the **Select** tool to select and change the properties of an element. Select the **Select** tool, and then select the element to modify the properties of. When you select an element, the element's property window appears, and you can modify any of the properties of that element. You can repeat the process for other elements that can be personalized on that page. However, because of the way that some elements are used, Finance and Operations won't let you change some of their properties. Therefore, when you select an element, you might see that some of its properties can't be modified. For example, you can't hide a field that is required.
-- Use the **Move** tool to move an element to a different location within the current group of elements. (You can't move an element outside its parent group). Select the **Move** tool, and then select the element to move. When you select an element, Finance and Operations scans the page to determine where the element can be moved. It then creates a series of "drop zones." As you drag the element around within the current group, each "drop zone" is shown as a colored, bold line next to the area where the element can be dropped.
-- Use the **Hide** tool to hide an element on the page. Select the **Hide** tool, and then select the element to hide. When you select the **Hide** tool, all elements that are currently hidden are made visible and are shown in a shaded container. You can then unhide them. By selecting the **Select** tool, you can see how the page will look when the selected elements are hidden.
-- Use the **Summary** tool when you want an element to appear in the FastTab summary section. The Summary tool applies only to fields that are on a FastTab section. When you select the **Summary** tool, all fields that have been selected as summary fields are shown in a shaded container. You can interactively add fields to the FastTab summary and remove fields from the FastTab summary by selecting the fields.
-- Use the **Skip** tool to remove an element from the page's keyboard tab sequence. When you select the **Skip** tool, all elements that are currently skipped are shown in a shaded container. You can then make them part of the tab sequence again.
-- Use the **Edit** tool to mark an element as either editable or not editable. When you select the **Edit** tool, all elements that are currently non-editable are shown in a shaded container. You can then make them editable again. Note that some fields are required and can't be made non-editable. A padlock symbol appears next to those fields.
-- Use the **Insert** button to see a list of elements that can be inserted on a page.
 
+- Use the **Move** tool to move an element to a different location within the current group of elements. (You can't move an element outside its parent group). Select the **Move** tool, and then select the element to move. When you select an element, Finance and Operations scans the page to determine where the element can be moved. It then creates a series of "drop zones." As you drag the element around within the current group, each "drop zone" is shown as a colored, bold line next to the area where the element can be dropped.
+
+- Use the **Hide** tool to hide an element on the page. Select the **Hide** tool, and then select the element to hide. When you select the **Hide** tool, all elements that are currently hidden are made visible and are shown in a shaded container. You can then unhide them. By selecting the **Select** tool, you can see how the page will look when the selected elements are hidden.
+    - Starting in Platform Update 18, you can hide mandatory fields and sections that contain mandatory fields. This allows you to create a simplified experience where mandatory fields that are defaulted by business logic are not shown. Hidden mandatory fields are also temporarily made visible if they are empty when a save is attempted. 
+
+- Use the **Summary** tool when you want an element to appear in the FastTab summary section. The Summary tool applies only to fields that are on a FastTab section. When you select the **Summary** tool, all fields that have been selected as summary fields are shown in a shaded container. You can interactively add fields to the FastTab summary and remove fields from the FastTab summary by selecting the fields.
+
+- Use the **Skip** tool to remove an element from the page's keyboard tab sequence. When you select the **Skip** tool, all elements that are currently skipped are shown in a shaded container. You can then make them part of the tab sequence again.
+
+- Use the **Edit** tool to mark an element as either editable or not editable. When you select the **Edit** tool, all elements that are currently non-editable are shown in a shaded container. You can then make them editable again. Note that some fields are required and can't be made non-editable. A padlock symbol appears next to those fields.
+
+- Use the **Insert** button to see a list of elements that can be inserted on a page.
     - Select the **Field** tool under **Insert** to add a field to your page. When you use the **Field** tool, you can add only fields that are part of the page definition but that aren't currently shown on the page. For information about how to create new fields that aren't part of the current page definition, see [Custom fields](user-defined-fields.md). After you select the **Field** tool, you must first select the group or area where you want to add a field. A dialog box shows the list of fields that are related to the selected group or area. In the dialog box, select one or more fields to add, and then select **Insert**. To remove a field that you previously added, repeat the process, but clear the selection of the field in the dialog box.
     - Select the **PowerApp** tool under **Insert** to embed an app that was created by using Microsoft PowerApps into the page. For detailed information about how to embed a PowerApps app into a page, see [Embed PowerApps](embed-power-apps.md).
 
 - Select the **Manage** button to view a list of management options that are related to all personalizations for the current page.
-
     - Select **Clear** to reset the page to its default, installed state. All personalizations on the current page are cleared. There is no undo action. Therefore, use this option only if you're sure that you want to reset the page.
     - Select **Import** to load a personalization from a file that you or someone else previously created for the page. All your current personalizations for the page are replaced with the personalizations from the selected file.
     - Select **Export** to save your personalizations for the page to a file. You can share your personalizations with other users. Those users just have to import the file that contains your personalizations for the page.
