@@ -5,7 +5,7 @@ title: Personalize the user experience
 description: This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 8/16/2018
+ms.date: 8/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
