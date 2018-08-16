@@ -54,4 +54,3 @@ To learn more about this feature, play the **ER Split XML files based on the fil
 [Electronic reporting destinations](electronic-reporting-destinations.md)
 
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
-

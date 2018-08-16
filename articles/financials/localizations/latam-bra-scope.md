@@ -698,7 +698,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 </td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
+<td>No</td>
 </tr>
 <tr>
 <td>Retail Enterprise POS</td>

@@ -24,7 +24,7 @@ ms.custom: 1705903
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: johanho
-ms.search.validfrom: 2017-12-31
+ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---
 

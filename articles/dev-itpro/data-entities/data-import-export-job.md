@@ -71,13 +71,11 @@ You can add specific entities to an import or export job or select a template to
 ### Set the data format for the job
 When you select an entity, you must select the format of the data that will be exported or imported. You define formats by using the **Data sources setup** tile. A source data format is a combination of **Type**, **File format**, **Row delimiter** and **Column delimiter**. There are also other attributes, but these are the key ones to understand. The following table lists the valid combinations.
 
-| **File Format**        | **Row/Column delimiter**                   | **XML Style**             |
+| File Format            | Row/Column delimiter                       | XML Style                 |
 |------------------------|--------------------------------------------|---------------------------|
 | Excel                  | Excel                                      | \-NA-                     |
 | XML                    | \-NA-                                      | XML-Element XML-Attribute |
 | Delimited, fixed width | Comma, semicolon, tab, vertical bar, colon | \-NA-                     |
-
-
 
 ### Sequence the entities
 Entities can be sequenced in a data template, or in import and export jobs. When you run a job that contains more than one data entity, you must make sure that the data entities are correctly sequenced. You sequence entities primarily so that you can address any functional dependencies among entities. If entities don’t have any functional dependencies, they can be scheduled for parallel import or export.

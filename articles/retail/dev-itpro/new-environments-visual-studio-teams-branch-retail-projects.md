@@ -111,7 +111,7 @@ There is no single best strategy for creating branches. The approach that is use
 
 The following illustration shows three code branches: Dev, Main, and ProdRel1. The numbers indicate the order of setup.
 
-[![Branch creation](./media/1-Three-Code-Branch.png)](./media/1-Three-Code-Branch.png)
+![Branch creation](./media/1-Three-Code-Branch.png)
 
 Here is an explanation of the setup. The numbers in brackets refer to the numbers in the preceding illustration:
 
@@ -145,27 +145,27 @@ Use the LCS portal to deploy a new build environment. We recommend that you use 
 
 Start by creating a new VSTS project if you don't already have one. In your VSTS account, select **New project**.
 
-[![VSTS project](./media/2-VSTS-project.png)](/media/2-VSTS-project.png)
+![VSTS project](./media/2-VSTS-project.png)
 
 After the new VSTS project is created, you must allow VSTS to access it. First, create a new personal access token on the VSTS account. Then configure the LCS project with the correct URL and personal access token.
 
-[![LCS project](./media/3-LCS-project.png)](/media/3-LCS-project.png)
+![LCS project](./media/3-LCS-project.png)
 
 After the LCS project is linked to VSTS, you're ready to deploy.
 
 Add a new environment, select the version, select **DEVTEST** as the topology, and select a build environment. On the next page, enter a meaningful name for the environment. Then enter a similar name for the build agent.
 
-[![Build agent](./media/4-build-agent.png)](/media/4-build-agent.png)
+![Build agent](./media/4-build-agent.png)
 
 Next, under **Customize virtual machine names**, enter a unique name, and then deploy.
 
 The build box is deployed, and the build definition and Main branch are created. This process might take a couple of hours.
 
-[![Build box main branch](./media/5-build-box-main-branch.png)](/media/5-build-box-main-branch.png)
+![Build box main branch](./media/5-build-box-main-branch.png)
 
-[![Build definitions](./media/19-build-definitions.png)](/media/19-build-definitions.png)
+![Build definitions](./media/19-build-definitions.png)
 
-[![Agents for the Default pool](./media/20-agents-for-pool-default.png)](/media/20-agents-for-pool-default.png)
+![Agents for the Default pool](./media/20-agents-for-pool-default.png)
 
 ## Deploy a development environment
 
@@ -179,7 +179,7 @@ Because there is currently no Dev branch, you can skip the process of mapping VS
 
 As was mentioned earlier, you must have a branch that holds changes that are often made but less often tested. You must also have a branch that holds the source code for production. The following illustration shows the expected hierarchy.
 
-[![Main branch hierarchy](./media/6-main-branch-hierarchy.png)](/media/6-main-branch-hierarchy.png)
+![Main branch hierarchy](./media/6-main-branch-hierarchy.png)
 
 Follow these steps to create the branches.
 
@@ -195,7 +195,7 @@ Follow these steps to create the branches.
 
 At this point, Source Depot Explorer in Visual Studio should resemble the following illustration.
 
-[![Source Depot Explorer](./media/7-source-depot-explorer.png)](/media/7-source-depot-explorer.png)
+![Source Depot Explorer](./media/7-source-depot-explorer.png)
 
 ## Add the Retail SDK
 
@@ -207,14 +207,14 @@ The mirror branch or folder is only required one time per project.
 
 1. Find the unchanged Retail SDK that has the exact version that you want to start your development with. This Retail SDK can be found on every development machine on the service drive, or in every downloaded hotfix. You can uniquely identify a version of the Retail SDK by inspecting the Microsoft-version.txt file. This file should not be changed, except by an update to the Retail SDK mirror folder.
 
-    [![Retail SDK](./media/8-retail-sdk.png)](/media/8-retail-sdk.png)
+    ![Retail SDK](./media/8-retail-sdk.png)
 
 2. In Source Control Explorer, right-click the **Trunk** folder, and then select **Add Items to Folder**.
 2. Select the top folder in the Retail SDK, and then select **Next**.
 3. Visual Studio shows the number of files that will be added. Make sure that the **RetailSdk** folder is under the **Trunk** folder.
 4. Make sure that there are 0 (zero) excluded items by selecting items and then selecting **Include items**.
 
-    [![Source control](./media/9-source-control.png)](/media/9-source-control.png)
+    ![Source control](./media/9-source-control.png)
 
 5. Select **Finish**. This process will take a few minutes.
 6. When the process is completed, rename the folder **RetailSdk-mirror**.
@@ -224,7 +224,7 @@ Next, you must branch to each branch. Follow the same path that the code changes
 1. Select the folder for the mirror branch, right-click, and then select **Branching and Merging** \> **Branch**.
 2. Go to the **Dev** branch, append **/RetailSdk** to the name, and then select **OK**.
 
-    [![Branch change](./media/10-branch-change.png)](/media/10-branch-change.png).
+    ![Branch change](./media/10-branch-change.png)
 
 3. Use **Pending Changes**, and submit the changes.
 4. Follow the same steps to branch the **RetailSdk** folder of the **Dev** branch to the **Main** branch.
@@ -232,7 +232,7 @@ Next, you must branch to each branch. Follow the same path that the code changes
 
 At this point, you have the code branches and code locations for the X++ and Retail extensions setup. In Source Control Explorer, the file structure should resemble the following illustration.
 
-[![Source Control Explorer](./media/11-source-control-explorer.png)](/media/11-source-control-explorer.png)
+![Source Control Explorer](./media/11-source-control-explorer.png)
 
 You should also change the version of the Retail customization. This version should differ in the Dev, Main, and ProdRel1 branches. Either change the Customization.settings file, or add a new global.props file in the **RetailSdk\\BuildTools** folder. For example, you can number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.
 
@@ -245,7 +245,7 @@ You can now prepare the development environment for Retail development tasks. Th
 
 To map the X++ and Retail SDK, you must edit the current workspace. Select **Pending Changes** \> **Actions** \> **Workspaces**, and update the current workspace so that it resembles the following illustration. As was mentioned earlier, you should map the Metadata folder of the branch to the PackagesLocalDirectory folder and the RetailSdk to a short folder of your choice.
 
-[![Edit current workspace](./media/12-edit-current-workspace.png)](/media/12-edit-current-workspace.png)
+![Edit current workspace](./media/12-edit-current-workspace.png)
 
 The actual download of the files can take a few minutes.
 
@@ -307,17 +307,17 @@ Currently, the build environment must be on the same platform and binary hotfix 
 
 First, you must create a new VSTS agent queue.
 
-[![VSTS agent queue](./media/13-VSTS-agent-queue.png)](/media/13-VSTS-agent-queue.png)
+![VSTS agent queue](./media/13-VSTS-agent-queue.png)
 
 When you deploy from LCS, use **PRODREL1** as the name of the agent pool.
 
-[![Queue name in LCS](./media/14-queue-name-lcs.png)](/media/14-queue-name-lcs.png)
+![Queue name in LCS](./media/14-queue-name-lcs.png)
 
 Next, on the **Customize virtual machine names** tab, enter a unique name, and then deploy.
 
 The process of deploying a new build and creating a new agent queue can take a couple of hours.
 
-[![New agent queue](./media/15-new-agent-queue.png)](/media/15-new-agent-queue.png)
+![New agent queue](./media/15-new-agent-queue.png)
 
 ## Prepare the build definitions
 
