@@ -5,7 +5,7 @@ title: Personalize the user experience
 description: This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 8/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -68,7 +68,7 @@ Different people and companies have a different perspective on the data that is 
 ### Shortcut menu options
 Shortcut menus provide a few ways to explicitly change a page to better suit your requirements or the requirements of your company. (A shortcut menu is also known as a *right-click menu* or *context menu*.)
 
-Some of the most typical and important changes that can be made to a page are available directly as options on a shortcut menu. For example, starting in Platfrom Update 17, if you want to add or hide columns in a grid, just right-click a grid column header, and then select **Add columns** or **Hide this column**.
+Some of the most typical and important changes that can be made to a page are available directly as options on a shortcut menu. For example, starting in Platfrom update 17, if you want to add or hide columns in a grid, just right-click a grid column header, and then select **Add columns** or **Hide this column**.
 
 Additionally, the most basic types of explicit personalization are available by right-clicking an element and then selecting **Personalize**. (Note that not all elements on your page can be personalized.) When you use this method of personalization, the element's property window appears.
 
@@ -85,17 +85,16 @@ You can use the property window to personalize an element in the following ways:
 The property window might include other personalization capabilities, depending on the element. For example, the property window for a tile might let you promote that tile to a dashboard, and the property window for a dashboard might let you create a new workspace on that dashboard.
 
 ### The Personalization toolbar
-When you want to make a large number of changes to a page or make changes that aren't available through other mechanisms (e.g. reordering elements), you can use the **Personalization** toolbar. To open the **Personalization** toolbar, select **Personalize this form** in an element's property window. You can also select **Personalize this form** in the **Personalize** group on the **Options** tab of each page's Action Pane.
+If you want to make multiple changes to a page or make changes that aren't available through other mechanisms (such as reordering elements), you can use the **Personalization** toolbar. To open the **Personalization** toolbar, select **Personalize this form** in an element's property window. You can also select **Personalize this form** in the **Personalize** group on the **Options** tab of each page's Action Pane.
 
 [![Personalization toolbar](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
 #### Navigating the page 
+Your ability to navigate the page while the **Personalization toolbar** is open depends on the platform version that you are running. 
 
-Your ability to navigate the page while the **Personalization toolbar** is open depends on the platform version you are running. 
+- Prior to Platfrom update 19, while the **Personalization** toolbar is open, the page is read-only (you cannot enter anything) and non-interactive (you can only make changes to the visible elements on the page). If you want to make changes to elements inside a collapsed section or on a different tab, you will need to close the **Personalization** toolbar, expand a section or switch to the desired tab, and then reopen the **Personalization** toolbar.  
 
-- Prior to Platfrom Update 19, while the **Personalization** toolbar is open, the page is read-only (i.e. you cannot enter enter) and non-interactive (i.e. you can only make changes to the visible elements on the page). If you want to make changes to elements inside a collapsed section or on a different tab, you will need to close the **Personalization** toolbar, expand a section or switch to the desired tab, and then reopen the **Personalization** toolbar.  
-
-- Starting in Platform Update 19, while the **Personalization** toolbar is open, the page is still read-only but is much more interactive. Specifically, you can expand or collapse the Factbox Pane, switch tabs, and expand or collapse section while the **Personalization** toolbar is open in the same manner as you normally would on the page. To apply a personalization change to a collapsible section or tab (e.g. to hide a fast tab), you will trigger the button that appears beside the collapsible section or tab when it gains keyboard focus or when you hover over it.  
+- Starting in Platform update 19, if the **Personalization** toolbar is open, the page is still read-only but is much more interactive. Specifically, you can expand or collapse the FactBox Pane, switch tabs, and expand or collapse section while the **Personalization** toolbar is open in the same manner as you typically would on the page. To apply a personalization change to a collapsible section or tab (such as to hide a FastTab), you will trigger the button that appears beside the collapsible section or tab when it gains keyboard focus or when you hover over it.  
 
 #### Personalization tools
 The following tools are available on the **Personalization** toolbar:
