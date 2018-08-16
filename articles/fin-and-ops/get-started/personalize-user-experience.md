@@ -92,7 +92,7 @@ If you want to make multiple changes to a page or make changes that aren't avail
 #### Navigating the page 
 Your ability to navigate the page while the **Personalization toolbar** is open depends on the platform version that you are running. 
 
-- Prior to Platfrom update 19, while the **Personalization** toolbar is open, the page is read-only (you cannot enter anything) and non-interactive (you can only make changes to the visible elements on the page). If you want to make changes to elements inside a collapsed section or on a different tab, you will need to close the **Personalization** toolbar, expand a section or switch to the desired tab, and then reopen the **Personalization** toolbar.  
+- Prior to Platfrom update 19, while the **Personalization** toolbar is open, the page is read-only (you cannot enter anything) and non-interactive (you can only make changes to the visible elements on the page). If you want to make changes to elements inside a collapsed section or on a different tab, you need to close the **Personalization** toolbar, expand a section or switch to the desired tab, and then reopen the **Personalization** toolbar.  
 
 - Starting in Platform update 19, if the **Personalization** toolbar is open, the page is still read-only but is much more interactive. Specifically, you can expand or collapse the FactBox Pane, switch tabs, and expand or collapse section while the **Personalization** toolbar is open in the same manner as you typically would on the page. To apply a personalization change to a collapsible section or tab (such as to hide a FastTab), you will trigger the button that appears beside the collapsible section or tab when it gains keyboard focus or when you hover over it.  
 
