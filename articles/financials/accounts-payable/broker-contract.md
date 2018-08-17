@@ -59,8 +59,6 @@ A broker contract is a record of an agreement with a broker. It specifies the ne
 
 Broker contracts are registered on the **Broker contracts** page. To open the **Broker contracts** page, select **Accounts payable** \> **Broker and royalties** \> **Broker contracts**.
 
-![Broker claims page](./media/broker-contract-management-contract-page.png "Broker claims page")
-
 The **Contract details** section shows the conditions and the item that qualifies for brokerage. The monetary reward that the broker will receive for achieving the sales objective is shown under **Break**.
 
 The setup of the **Broker Fees** charge indicates that the customer won't incur the fee for the broker services. Instead, the selling company will incur the broker fee as a sales expense.
@@ -84,6 +82,8 @@ When you post the invoice for the sales order, in addition to the regular sales 
 After claims are either fully or partially approved, the vendor invoice is created and posted, if posting is supported by the A/P policy. In this way, the vendor credit is passed to the regular payable processing.
 
 You can view all the claims on the **Broker claims** page. For each fee, the **Qualified** field specifies the amount of the fee that, after it's approved, will be paid to vendor for brokerage services.
+
+![Broker claims page](./media/broker-contract-management-contract-page.png "Broker claims page")
 
 Note that the fields in the lower section of the page specify details about the originating sales invoice, such as the invoice number, invoice line net amount, and associated customer transactions.
 
