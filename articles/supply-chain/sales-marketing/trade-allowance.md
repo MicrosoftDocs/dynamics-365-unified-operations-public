@@ -5,7 +5,7 @@ title: Trade allowance management
 description: This topic describes trade allowance management for Microsoft Dynamics 365 for Finance and Operations.
 author: t-benebo
 manager: AnnBe
-ms.date: 08/14/2018
+ms.date: 08/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  
-audience: 
+audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
 ms.search.scope: Operations
