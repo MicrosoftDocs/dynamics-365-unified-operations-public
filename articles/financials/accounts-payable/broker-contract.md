@@ -5,7 +5,7 @@ title: Broker contract management
 description: This topic describes broker contract management for Microsoft Dynamics 365 for Finance and Operations.
 author: t-benebo
 manager: AnnBe
-ms.date: 08/02/2018
+ms.date: 08/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -59,9 +59,15 @@ A broker contract is a record of an agreement with a broker. It specifies the ne
 
 Broker contracts are registered on the **Broker contracts** page. To open the **Broker contracts** page, select **Accounts payable** \> **Broker and royalties** \> **Broker contracts**.
 
+
 ![Broker claims page](./media/broker-contract-management-contract-page.png "Broker claims page")
 
 The contract includes a negotiated condition about who will incur in the broker fee (the customer that buys the product or the selling company). This condition is set up on the associated **Charges codes** page.
+
+The **Contract details** section shows the conditions and the item that qualifies for brokerage. The monetary reward that the broker will receive for achieving the sales objective is shown under **Break**.
+
+The setup of the **Broker Fees** charge indicates that the customer won't incur the fee for the broker services. Instead, the selling company will incur the broker fee as a sales expense.
+
 
 > [!NOTE]
 > If a contract stipulates that the customer will incur the fee for the broker services, the associated charge must be set up so that the **Type** field in the **Debit** section is set to **Customer/Vendor**. In this case, the company first receives the fee payment from the customer and then pays its liability to the broker. If it is the selling company that will incur the broker fee as a sales expense, then the associated charge must be set up so that the **Type** field both in the **Debit** and **Credit** sections is set to **Ledger account**. 
@@ -90,6 +96,8 @@ The accrued broker fee posting can be viewed on the voucher transactions associa
 After claims are either fully or partially approved, the vendor invoice is created and posted, if posting is supported by the A/P policy. In this way, the vendor credit is passed to the regular payable processing.
 
 You can view all the claims on the **Broker claims** page. For each fee, the **Qualified** field specifies the amount of the fee that, after it's approved, will be paid to vendor of brokerage services.
+
+![Broker claims page](./media/broker-contract-management-contract-page.png "Broker claims page")
 
 Note that the fields in the lower section of the page specify details about the originating sales invoice, such as the invoice number, invoice line net amount, and associated customer transactions.
 
