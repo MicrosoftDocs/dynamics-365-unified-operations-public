@@ -214,7 +214,7 @@ You can deploy Tier 1 environments (also known as dev/test or build boxes) by us
 ### Upgrade your production environment
 
 1. Use LCS to submit an upgrade request to update the production environment, just as you did for the sandbox environment.
-2. Complete your validation, testing, and sign-off by setting the service request status to **Validation Successful**. If you discover an issue and want to roll back to the old environment, set the status to **Validation Failed** and then submit a production outage. For more information, see [Report production outage](../../business-applications-release-notes/april18/dynamics365-finance-operations/report-production-outage.md). Typical time for the DSE team to perform the rollback is 2-4 hours. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
+2. Complete your validation, testing, and sign-off by setting the service request status to **Validation Successful**. If you discover an issue and want to roll back to the old environment, set the status to **Validation Failed** and then submit a production outage. For more information, see [Report production outage](../../business-applications-release-notes/articles/April18/dynamics365-finance-operations/report-production-outage.md). Typical time for the DSE team to perform the rollback is 2-4 hours. You have up to five working days to request a rollback. After that time, Microsoft will retire the old environment.
 
 ## Scenario 4: Upgrade to the most current platform only
 
