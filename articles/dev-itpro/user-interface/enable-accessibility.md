@@ -5,7 +5,7 @@ title: Accessibility in forms, products, and controls
 description: This topic describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ This topic describes best practices for enabling accessibility in your form, pro
 Accessibility is about inclusion, that is, a person with a disability can perform the same task as a person without that disability. Making an accessible control or form should be as fundamental as making it secure, high-performing, or easy-to-understand.
 
 ## Keyboard
-The bedrock of accessibility is keyboard-only access. When you can use the keyboard to perform all the actions of a form, then it can be utilized by a non-sighted person or a person with restricted or limited use of their hands. This means that all controls can be reached via the tab sequence, direct action (such as Ctrl+S for Save), or through some other shortcut key that enables the user to move to a control, such as Navigation Pane, App Bar, Message Center, or Message Bar. A simple test is to simply disconnect your mouse and complete all core and secondary scenarios using only the keyboard.
+The bedrock of accessibility is keyboard-only access. When you can use the keyboard to perform all the actions of a form, then it can be utilized by a non-sighted person or a person with restricted or limited use of their hands. This means that all controls can be reached via the tab sequence, direct action (such as **Ctrl+S** for Save), or through some other shortcut key that enables the user to move to a control, such as Navigation Pane, App Bar, Message Center, or Message Bar. A simple test is to simply disconnect your mouse and complete all core and secondary scenarios using only the keyboard.
 
 ## Color
 The use of color is encouraged and is a common way to express state or status of a record or other piece of information. However, color cannot be the only way that state or status is communicated. An accompanying symbol, help text, or additional column should include a textual description of the state or status. A simple test is to identify all use of color in your system and ensure that color isn't being used to express a state or status. A common example is to use the color red to indicate "needs attention," or the color green to mean an "OK" status.
@@ -95,13 +95,13 @@ A visually impaired or blind user cannot be surprised by significant or unexpect
 ## Extensible controls – Insights for accessibility
 An extensible control is simply an extension of the framework. The interaction of the extensible control should be considered no different than any other framework control. When the control is a visually-rich widget that offers mouse actions, the author needs to ensure that equivalent, keyboard access functionality is available. A widget may not run in an “accessible mode” that is different than the standard presentation. Instead the widget must offer similar functionality without the need to activate or toggle state of the control. All uses of color should be based on themed colors so that when the mode is “High Contrast” your color scheme matches the theme change. The World Wide Web Consortium (WC3) website provides guidance for "Supported States and Properties" ([www.w3.org/TR/wai aria/states\_and\_properties\#state\_prop\_def](http://www.w3.org/TR/wai-aria/states_and_properties#state_prop_def)). This site is a helpful resource for ARIA tags and provides the definitions that you see below.
 
-### Control should
+### Controls should do this
 
-##### **Introduce itself**
+**Introduce itself**
 
-Importantly, your control should not only identify itself by name, but (using a label or ARIA tag) give a brief introduction on how it works. Aria-describedby. Make sure your descriptive text is supplied via a framework label for localization. 
+Importantly, your control should not only identify itself by name, but (using a label or ARIA tag) give a brief introduction on how it works. Make sure your descriptive text is supplied via a framework label for localization. 
 
-[aria-describedby](http://www.w3.org/TR/wai-aria/states_and_properties#aria-describedby) - Identifies the element (or elements) that describes the object.
+- *aria-describedby* - Identifies the element (or elements) that describes the object.
 
 ***Example***
 
@@ -111,7 +111,7 @@ Importantly, your control should not only identify itself by name, but (using a 
 
 **Indicate when it is busy** It may not always be clear to the visually-impaired user why the control isn’t responsive. Providing a “busy” message helps in these cases.
 
-[aria-busy (state)](http://www.w3.org/TR/wai-aria/states_and_properties#aria-busy) - Indicates whether an element, and its subtree, are currently being updated.
+- *aria-busy (state)* - Indicates whether an element, and its subtree, are currently being updated.
 
 ***Example***
 
@@ -119,51 +119,48 @@ Importantly, your control should not only identify itself by name, but (using a 
 
 **Indicate that the contents have been validated and are invalid** The async nature will result in a dynamic field state change. The message bar will introduce itself to the visually-impaired user, and the control itself should express an invalid state.
 
-[aria-invalid (state)](http://www.w3.org/TR/wai-aria/states_and_properties#aria-invalid) - Indicates the entered value does not conform to the format expected by the application.
+- *aria-invalid (state)* - Indicates the entered value does not conform to the format expected by the application.
 
 **Indicate when a field is readonly**
 
-[aria-readonly](http://www.w3.org/TR/wai-aria/states_and_properties#aria-readonly) - Indicates that the element is not editable, but is otherwise operable. See related aria-disabled.
+- *aria-readonly* - Indicates that the element is not editable, but is otherwise operable. See related *aria-disabled*.
 
 **Indicate that the field requires input (mandatory)** The sighted user understands that a field is mandatory through a visual symbol. The non-sighted user will need an identifying tag.
 
-[aria-required](http://www.w3.org/TR/wai-aria/states_and_properties#aria-required) indicates that user input is required on the element before a form may be submitted.
+- *aria-required* - Indicates that user input is required on the element before a form may be submitted.
 
 **Describe the state of a toggled value** A toggle control has a toggled state. This tag will express that state.
 
-[aria-pressed (state)](http://www.w3.org/TR/wai-aria/states_and_properties#aria-pressed) - Indicates the current "pressed" state of toggle buttons. See related aria-checked and aria-selected.
+- *aria-pressed (state)* - Indicates the current "pressed" state of toggle buttons. See related *aria-checked* and *aria-selected*.
 
-[aria-valuenow](http://www.w3.org/TR/wai-aria/states_and_properties#aria-valuenow) - Defines the current value for a range widget. See related aria-valuetext.
+- *aria-valuenow* - Defines the current value for a range widget. See related *aria-valuetext*.
 
-[aria-valuetext](http://www.w3.org/TR/wai-aria/states_and_properties#aria-valuetext) - Defines the human readable text alternative of aria-valuenow for a range widget.
+- *aria-valuetext* - Defines the human readable text alternative of *aria-valuenow* for a range widget.
 
-### Control could
+### Controls could do this
 
-**Indicate an expanded state** Complex interactions can be learned, but current state isn’t always easy to determine without experimentation. When using an aria-expanded tag, the control describes its current state. An example is tabbing to a tab or FastTab section of a control.
+**Indicate an expanded state** Complex interactions can be learned, but current state isn’t always easy to determine without experimentation. When using an *aria-expanded* tag, the control describes its current state. An example is tabbing to a tab or FastTab section of a control.
 
-[aria-expanded (state)](http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded) - Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.
+- *aria-expanded (state)* - Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.
 
 **Describe applicable context menu** Microsoft Dynamics 365 for Finance and Operations provides a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
 
-[aria-haspopup](http://www.w3.org/TR/wai-aria/states_and_properties#aria-haspopup) - Indicates that the element has a pop-up context menu or sub-level menu.
+- *aria-haspopup* - Indicates that the element has a pop-up context menu or sub-level menu.
 
-**Other Misc**
+**Other miscellaneous controls**
 
-[aria-live](http://www.w3.org/TR/wai-aria/states_and_properties#aria-live) indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.
+- *aria-live* - Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.
 
-[aria-multiline](http://www.w3.org/TR/wai-aria/states_and_properties#aria-multiline) - Indicates whether a text box accepts multiple lines of input or only a single line.
+- *aria-multiline* - Indicates whether a text box accepts multiple lines of input or only a single line.
 
-[aria-multiselectable](http://www.w3.org/TR/wai-aria/states_and_properties#aria-multiselectable) - Indicates that the user may select more than one item from the current selectable descendants.
+- *aria-multiselectable* - Indicates that the user may select more than one item from the current selectable descendants.
 
-[aria-orientation](http://www.w3.org/TR/wai-aria/states_and_properties#aria-orientation) - Indicates whether the element and orientation is horizontal or vertical.
+- *aria-orientation* - Indicates whether the element and orientation is horizontal or vertical.
 
-[aria-setsize](http://www.w3.org/TR/wai-aria/states_and_properties#aria-setsize) - Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM. See related aria-posinset.
+- *aria-setsize* - Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM. See related *aria-posinset*.
 
-[aria-sort-](http://www.w3.org/TR/wai-aria/states_and_properties#aria-sort) Indicates if items in a table or grid are sorted in ascending or descending order.
+- *aria-sort* - Indicates if items in a table or grid are sorted in ascending or descending order.
 
-[aria-valuemax](http://www.w3.org/TR/wai-aria/states_and_properties#aria-valuemax) - Defines the maximum allowed value for a range widget.
+- *aria-valuemax* - Defines the maximum allowed value for a range widget.
 
-[aria-valuemin](http://www.w3.org/TR/wai-aria/states_and_properties#aria-valuemin) - Defines the minimum allowed value for a range widget.
-
-
-
+- *aria-valuemin* - Defines the minimum allowed value for a range widget.
