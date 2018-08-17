@@ -167,6 +167,9 @@ Because the first push is always a full push, we do not recomend that you do an 
 
 We recommend that you first enable change tracking and schedule a export job with incremental push. This will take care of the first full push and the subsequent incremental exports.
 
+### Timeouts
+The default timeouts for BYOD exports are set to ten minutes for truncation operations and one hour for actual bulk insert operations. When volumes are high, these timeout settings may not be sufficient and must be updated. Starting with the release of Platform update 18, you can update the timeout settings by navigating to **Data management** > **Framework parameters** > **Bring your own database**.
+
 ### Known limitations
 
 The BYOD feature has the following limitations.
