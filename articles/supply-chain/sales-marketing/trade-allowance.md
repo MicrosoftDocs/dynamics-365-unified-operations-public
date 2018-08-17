@@ -65,7 +65,7 @@ A trade allowance agreement is an incentive program where pay-for-performance mo
 
 Funds that are allocated to trade allowance agreements are recorded on the **Funds** page. To open the **Funds** page, select **Sales and marketing** \> **Trade allowances** \> **Funds** \> **Funds**.
 
-![Funds page](./media/trade%20allowance%20management%20funds%20page.png "Funds page")
+![Funds page](./media/trade-allowance-management-funds-page.png "Funds page")
 
 On the **Funds** page, you can view the details of promotional funds.
 
@@ -81,7 +81,7 @@ After the fund definition is in place, the next step in promotion planning is to
 
 Trade allowance agreements are recorded on the **Trade allowance agreements** page. To open the **Trade allowance agreements** page, select **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**.
 
-![Trade allowance agreements page](./media/trade%20allowance%20management%20agreements%20page.png "Trade allowance agreements page")
+![Trade allowance agreements page](./media/trade-allowance-management-agreements-page.png "Trade allowance agreements page")
 
 #### Header
 
@@ -109,7 +109,7 @@ The **Merchandizing events** tab shows the types of events that this agreement c
 
 When you select the merchandizing event and then select the **Amounts** tab, the details for the event are found.
 
-![Trade allowance agreement lines](./media/trade%20allowance%20management%20agreements%20lines.png "Trade allowance agreement lines")
+![Trade allowance agreement lines](./media/trade-allowance-management-agreements-lines.png "Trade allowance agreement lines")
 
 In the **Trade allowance lines** section, you specify the quantity or amount ranges that the customer must achieve for definitions to obtain the rewards.
 
