@@ -475,6 +475,10 @@
         href: ../financials/accounts-payable/vendor-portal-invoicing-workspace.md
       - name: Vendor invoice automation
         href: ../financials/accounts-payable/vendor-invoice-automation.md
+      - name: Broker contract management
+        href: ../financials/accounts-payable/broker-contract.md
+      - name: Royalty contract management
+        href: ../financials/accounts-payable/royalty-contract.md
       - name: Payments and settlements
         items:
         - name: Centralized payments for Accounts payable
@@ -3613,6 +3617,8 @@
         href: ../supply-chain/sales-marketing/tasks/register-sales-commissions.md
       - name: Set up sales commission rules
         href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
+    - name: Trade allowance
+      href: ../supply-chain/sales-marketing/trade-allowance.md 
   - name: Service management
     href: ../supply-chain/service-management/service-management-home-page.md
     items:

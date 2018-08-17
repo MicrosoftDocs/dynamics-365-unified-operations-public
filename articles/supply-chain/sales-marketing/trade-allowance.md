@@ -5,7 +5,7 @@ title: Trade allowance management
 description: This topic describes trade allowance management for Microsoft Dynamics 365 for Finance and Operations.
 author: t-benebo
 manager: AnnBe
-ms.date: 08/02/2018
+ms.date: 08/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  
-audience: IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -31,15 +31,16 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-Trade allowance management helps companies manage sales promotion programs that offer retail "pay-for-performance" monetary rewards to customers that achieve volume and behavioral goals.
+Trade allowance management helps companies manage sales promotion programs that offer retail "pay-for-performance" monetary rewards to customers that achieve volume and behavioral goals. The feature’s capabilities are designed for companies that focus on comprehensive promote-to-profit processes, from promotion fund budgeting and allocation, to allowance contract setup, to claims creation and processing, to payment processing, to promotion effectiveness analysis.
 
-This topic provides an overview for the most common tasks that are involved in managing a sales promotion program. The overview covers the following tasks:
 
-- Review the promotional fund and a trade allowance agreement.
-- Perform sales under the planned merchandising event, and generate bill-back claims.
-- Process claims, and pass them as deductions to Accounts receivable (A/R).
-- Settle deductions that are due and customer short-pays on the Deduction workbench.
-- Analyze the effectiveness of the promotion and fund consumption.
+This article will provide a broad overview of the Trade allowance management feature and will familiarize you with the typical set of tasks that are involved in managing a sales promotion program. Several types of users who have operational and decision making responsibilities are expected to use this functionality to achieve their respective goals:
+
+- Allocating discretionary funds to the selected accounts, and setting up trade allowance agreements for promotions, based on bill-backs and one-off lump sum payments (for an agreed service)
+- Running the negotiated promotion contracts through ongoing sales and generating bill-back claims
+- Calculating, approving, and processing the generated claims, and passing them on to Accounts receivable (A/R) as deductions for payment settlement
+- Reconciling the customer’s short-pay with the deduction that is due
+- Tracking use of the promotional fund, and evaluating program profitability and effectiveness
 
 ## Audience and purpose
 
@@ -57,7 +58,7 @@ People in these roles are looking for ways to achieve these goals:
 - Improve cash flow forecasts by accruing for future liability.
 - Have a quantified basis for ongoing and future negotiations with customers about promotions.
 
-## Review details of a promotional fund and trade allowance agreement
+## Promotional fund and Trade allowance agreement
 
 A trade allowance agreement is an incentive program where pay-for-performance monetary rewards are offered to customers that achieve specific volume targets and/or behavioral goals. Promotional funds are budgeted expenditures. In that way, the promotional campaigns can be captured.
 
@@ -65,11 +66,11 @@ A trade allowance agreement is an incentive program where pay-for-performance mo
 
 Funds that are allocated to trade allowance agreements are recorded on the **Funds** page. To open the **Funds** page, select **Sales and marketing** \> **Trade allowances** \> **Funds** \> **Funds**.
 
-![Funds page](./media/trade%20allowance%20management%20funds%20page.png "Funds page")
+![Funds page](./media/trade-allowance-management-funds-page.png "Funds page")
 
 On the **Funds** page, you can view the details of promotional funds.
 
-The **General** FastTab shows the period that the fund is valid for and its budgeted amount. In the **Status** field, a value of **Approved** indicates that the fund is ready to be allocated to promotion agreements.
+The **General** FastTab shows the period that the fund is valid for and its budgeted amount. In order for the fund to be allocated to the promotion agreement, the **Status** field must have a value of **Approved**.
 
 The **Customers** FastTab shows the customer hierarchy. To select the customers that the fund targets, drag them so that they are under **Fund customers**. This FastTab also shows how the total amount of the fund is distributed.
 
@@ -81,7 +82,7 @@ After the fund definition is in place, the next step in promotion planning is to
 
 Trade allowance agreements are recorded on the **Trade allowance agreements** page. To open the **Trade allowance agreements** page, select **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**.
 
-![Trade allowance agreements page](./media/trade%20allowance%20management%20agreements%20page.png "Trade allowance agreements page")
+![Trade allowance agreements page](./media/trade-allowance-management-agreements-page.png "Trade allowance agreements page")
 
 #### Header
 
@@ -105,30 +106,36 @@ On the **Funds** FastTab, you can view the promotion funds that are associated w
 
 Next, select **Lines** to switch to the Lines view.
 
-The **Merchandizing events** tab shows the types of events that this agreement covers. Examples include bill-back events and lump sum events.
+The **Merchandizing events** tab shows the types of events covered by an agreement. There are three types: bill back, lump sum and off-invoice.
 
 When you select the merchandizing event and then select the **Amounts** tab, the details for the event are found.
 
-![Trade allowance agreement lines](./media/trade%20allowance%20management%20agreements%20lines.png "Trade allowance agreement lines")
+![Trade allowance agreement lines](./media/trade-allowance-management-agreements-lines.png "Trade allowance agreement lines")
 
 In the **Trade allowance lines** section, you specify the quantity or amount ranges that the customer must achieve for definitions to obtain the rewards.
 
+In the case of a merchandizing event of the **Bill back** type, the upper section the **Amounts** tab defines the rules that the bill back will be applied, generated, and paid under. For example, the rules may specify the following conditions for the bill back claim:
+
+- It’s based on the creation date of the sales order (the **Calculation date type** value is **Created**).
+- It’s calculated based on the sales order line’s amount before discounts, not the net amount, which includes discounts (the **Taken from** value is **Gross**).
+- It’s based on the volume of the sold products, not the amount (the **Rebate line break type** value is **Quantity**).
+- It’s calculated per period of a month (the **Cumulate sales by** value is **Month**). 
+- It’s settled as a deduction, not by using A/P (the **Payment type** value is **Customer deductions**).
+
 In the case of a merchandizing event of the **Lump sum** type, the **Amounts** tab shows the quantity that will be paid to the customer in the form of a deduction when the customer achieves specific performance. An approval status of **Open** indicates that the lump sum hasn't yet been paid.
 
-Finally, to apply the agreement to sales orders that meet the agreement's conditions, you must set the agreement's status to **Confirmed**. On the **Trade allowance** page, on the Action Pane, select **Confirmed**.
+To apply the agreement to sales orders that meet the agreement's conditions, the agreement's status must be **Confirmed**. 
 
 ## Perform sales under the planned merchandising event and generate bill-back claims
 
 When you create a sales order that has lines that fulfill the requirements of the agreement, you can view the related information on the **Sales order** page by selecting **Sales order line** \> **View** \> **Price details**.
 
-On the **Price details** page, on the **Rebates** FastTab, the sales clerk can see a bill-back from the valid trade allowance agreement (the rebate program ID is shown) and the total amount that is applied to the line. This amount is calculated by multiplying the line quantity by the bill-back amount per product unit that applies, according to the conditions of the bill-back agreement. This amount is also shown in the **Rebate amount** field in the **Margin estimation** section of the **Price details** page.
+On the **Price details** page, on the **Rebates** FastTab, the sales clerk can see a bill back from the valid trade allowance agreement (the rebate program ID is shown) and the total amount that is applied to the line. This amount is also shown in the **Rebate amount** field in the **Margin estimation** section of the **Price details** page.
 
-You can generate the invoice for the sales order from the **Sales order** page. On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Invoice**. Then, on the **Posting invoice** page, select **OK**. When the sales invoice is posted, a corresponding bill-back claim is generated for each invoice line.
-
-Select **Sales and marketing** \> **Trade allowances** \> **Bill back workbench**. On the **Bill back workbench** page, notice that the claims that were created for the sales order have a status of **To be calculated**.
+When the sales invoice is posted, a corresponding bill-back claim is generated for each invoice line.
 
 > [!NOTE]
-> On the **Procurement and sourcing parameters** page, on the **Prices** tab, verify that the **Enable price details** option is set to **Yes**. If the option is set to **No**, you won't be able to view the rebates.
+> To see the **Price details** page, on the **Accounts receivable parameters** page, on the **Prices** tab, select the **Enable price details** check box. I
 
 ## Process claims and pass them as deductions to A/R
 
@@ -136,55 +143,64 @@ The next steps in the process for handling bill-backs are to review, calculate, 
 
 The Bill back workbench is where the promotion agreement owner periodically reviews and processes the claims that are generated. It's also where the A/R administrator converts the approved claims into deductions or regular payments, depending on the payment method for the claim.
 
-On the **Bill back workbench** page, you can review the claim lines. If there are different lines that have quantities, and if the bill-back depends on ranges of quantities, the claims must be recalculated for any cumulative effect.
+On the **Bill back workbench** page, you can review the claim lines. If the claims are in **To be recalculated** status, they must be recalculated for any cumulative effect.
 
 ### Recalculate claims
 
 To recalculate the claims, on the Action Pane, select **Cumulate**. Then, in the **Cumulate rebates** dialog box, select the customer.
 
-As a result of the recalculation, the program generates new claims for the amounts to adjust the original claims to the qualifying amount per unit. One adjustment claim is generated for each unique combination of a customer, an item, a currency, a unit of measure, inventory dimensions, financial dimensions, and a sales tax group. These adjustment claims have the same reference to the sales order and invoice number as the claims that are being adjusted (that is, the claims that were originally created from the sales document).
+As a result of the recalculation, the program generates new claims for the amounts to adjust the original claims to the qualifying amount per unit. One adjustment claim is generated for each unique combination of a customer, an item, a currency, a unit of measure, inventory dimensions, financial dimensions, and a sales tax group. These adjustment claims have the same reference to the sales order and invoice number as the claims that are being adjusted (that is, the claims that were originally created from the sales document). Unlike the original claim, the adjustment claim doesn’t have values in the fields that describe the original sales order line’s amounts and quantity.
 
-After the recalculation is completed, the status of the claims is changed to **Calculated**, and the **Bill back workbench** page shows the claim recalculations. To approve the recalculations, on the Action Pane, select **Approve**.
+After the recalculation is completed, the status of the claims is changed to **Calculated**. To approve the claims, on the Action Pane, select **Approve**.
 
 ### Process claims and pass them to A/R
 
-The claims are now ready for A/R processing. To process them, on the Action Pane, select **Process**. Then, in the **Process rebates** dialog box, select the customer.
+The claims are now ready for A/R processing. To process them, on the Action Pane, select **Process**. 
 
-Together, the messages in the Message Center and the fact that the status of the claims has changed to **Mark** indicate that a journal posting has caused the following events to occur. (The journal that is posted is the Rebate accrual journal, as specified in the A/R parameters.)
+Upon processing the claims, the status has changed to **Mark** and indicates that a journal posting (the journal that is posted is the Rebate accrual journal, as specified in the A/R parameters) has caused the following events to occur: 
 
 - The claims have been transferred to the temporary customer balance as deductions.
-- The Rebate accrual account has been credited to represent the future liability for the customer.
-- The Rebate expense account has been debited to recognize the cost that was incurred in connection with the sales.
+- The rebate accrual account has been credited to represent the future liability for the customer.
+- The rebate expense account has been debited to recognize the cost that was incurred in connection with the sales.
 
-To complete the process, the A/R clerk must now handle the accrual deductions by transferring them to the customers balance as a credit note (liability).
+To complete the process, the A/R clerk must now handle the accrual deductions by transferring them to the customers balance as a credit note (liability). 
 
-Select **Sales and marketing** \> **Customers** \> **All customers**, and use the filter to find the desired customer. On the Action Pane, select **Collect** \> **Settle transactions**. Then, on the **Settle transactions** page, select **Functions** \> **Bill back program**. This rebate page shows all the bill-back claims that were previously processed.
+To start the task, on the Action Pane of the **Customer** page, select **Collect** \> **Settle transactions**. Then, on the **Settle transactions** page, select **Functions** \> **Bill back program**. This rebate page shows all the bill-back claims that were previously processed.
 
 If you want to create a credit note, select the **Mark** check box for all lines, and then select **Functions** \> **Create credit note**.
 
-A message bar informs you that a journal has been posted. (The journal that is posted is the AR consumption journal, as specified in the A/R parameters.) As a result, the real liability (credit) amount has been moved to the customer balance. Financially, this situation implies that the following events have occurred:
+Upon credit note creation, a journal is posted. (The journal that is posted is the AR consumption journal, as specified in the A/R parameters.) As a result, the real liability (credit) amount has been moved to the customer balance. Financially, this situation implies that the following events have occurred:
 
-- The customer's Receivable account has been credited.
-- The Rebate accrual account has been debited.
+- The customer's receivable account has been credited.
+- The rebate accrual account has been debited.
 
 To approve a merchandising event of the **Lump sum** type, select the event on the **Trade allowance agreements** page, and then, on the **Amount** tab, select **Approve**.
 
 ## Settle the deduction that is due and the customer short-pay by using the Deduction workbench
 
-Often, in anticipation of bill-backs, customer choose to short-pay selected invoices. To prevent payment reconciliation issues in the future, the A/R clerk registers those short-pays as deductions when he or she records the actual customer payments. Then, on the Deduction workbench, those customer deductions can easily be settled against the claim amounts that are due from the company.
+Often, in anticipation of bill-backs, customers choose to short-pay selected invoices. To prevent payment reconciliation issues in the future, the A/R clerk registers those short-pays as deductions when he or she records the actual customer payments. Then, on the Deduction workbench, those customer deductions can easily be settled against the claim amounts that are due from the company.
 
 To register a customer's short-pay in the Payment journal, select **Accounts receivable** \> **Payments** \> **Payment journal**, and create a new payment journal. Then, on the Action Pane, select **Deductions**. On the **Deduction** page, you can create and track the amount that was short-paid.
+
+The collection manager is now responsible for settling the open credit note transaction and the short-pay transaction against each other in the Deduction workbench.
+
+To manage deductions, select **Sales and marketing** \> **Trade allowances** \> **Deductions** \> **Deduction workbench**. The upper section of the page contains lines that represent the short-pays from the customer. The lower section of the page contains the customers open credit transactions. 
+
+To settle the deduction against the open transaction, mark the deduction line, and then, on the Open transactions tab, mark the line. On the Action Pane, click Maintain > Match.
+
+The status of the originating claims is now set to **Completed**.
 
 ## Analyze the effectiveness of the promotion and fund consumption
 
 To get an overview of the program's key statistics and fund use, you can use several reports and analytical views that are available in Trade allowance management.
 
-Select **Sales and marketing** \> **Trade allowances** \> **Trade allowance activity** \> **Trade allowance activity**.
-
 On the **Trade allowance activity** page, the **Overview** tab shows the main details of the trade allowance agreement. The other tabs show more specific details about the associated documents, payments, and other events that are related to the program.
 
-Select the **Summary** tab to view the total quantity of products that have been sold under the promotion, the sales amount that has been invoiced, and the bill-backs and lump sums that have been paid.
+The **Summary** tab shows the total quantity of products that have been sold under the promotion, the sales amount that has been invoiced, and the bill-backs and lump sums that have been paid.
 
-Select the **Bill back credits** tab to view the details of individual bill-backs that have been credited to the customer.
+The **Bill back credits** tab contains the details of individual bill-backs that have been credited to the customer.
+
+To get a more analytical overview of the various performance measures for the promotion, you can use the Analysis view. To go to the Analysis view, click **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**. On the Action Pane, click **Analysis**.  
 
 To get a more analytical overview of the various performance measures for the promotion, you can use the Analysis view. To go to the Analysis view, click **Sales and marketing** \> **Trade allowances** \> **Trade allowance agreements**. On the Action Pane, click **Analysis**. 
+
