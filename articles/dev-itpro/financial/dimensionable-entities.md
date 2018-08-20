@@ -161,3 +161,30 @@ If a new Organization Model OMOperatingUnitType enumeration is added, the steps 
 1. Follow the steps in this topic starting with Step 2, where you validate the data in SQL, and then continue through Step 5, where you validate that the dimension appears in the **Use Value From** lookup.
 
 Because the **OMOperatingUnitType** is backed by the **OMOperatingUnit** table, generic code already exists to handle the delete, update, and **renamePrimaryKey** methods. Therefore, you do not need to update these methods.
+
+## Step 6: Setting a dimension to be self-referenced 
+
+If you will also create an data entity for your new entity, and that entity has a reference to default dimensions - add this code to the persistEntity() method.
+
+```
+if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+        {
+            this.<Your entity ‘private’ RecId Dimension field> = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(<Your backing table>), this.<Your entity Key field>, this.<Your entity ‘public’ DisplayValue field>);
+        }
+
+
+                                                                                                
+e.g.
+
+
+  public void persistEntity(DataEntityRuntimeContext _entityCtx)
+    {
+        if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+        {
+            this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(BankAccountTable), this.BankAccountId, this.DefaultDimensionDisplayValue);
+        }
+
+        super(_entityCtx);
+    }
+```
+**This ensures that if you also want the dimension to use itself as a default dimension value, the information is properly created in the correct sequence.**
