@@ -5,7 +5,7 @@ title: Make backing tables consumable as financial dimensions
 description: This topic provides the steps that you need to follow to make a backing table usable as a Financial dimension.
 author: aprilolson
 manager: AnnBe
-ms.date: 04/09/2017
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -164,7 +164,7 @@ Because the **OMOperatingUnitType** is backed by the **OMOperatingUnit** table, 
 
 ## Step 6: Setting a dimension to be self-referenced 
 
-If you will also create an data entity for your new entity, and that entity has a reference to default dimensions - add this code to the persistEntity() method.
+If you also want to create an data entity for your new entity, and that entity has a reference to default dimensions, add this code to the persistEntity() method.
 
 ```
 if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
@@ -187,4 +187,5 @@ e.g.
         super(_entityCtx);
     }
 ```
-**This ensures that if you also want the dimension to use itself as a default dimension value, the information is properly created in the correct sequence.**
+> [!NOTE]
+> This ensures that if you also want the dimension to use itself as a default dimension value, the information is created in the correct sequence.
