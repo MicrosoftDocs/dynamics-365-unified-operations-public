@@ -78,7 +78,7 @@ To find task guides, navigate to a page in Microsoft Dynamics 365 for Finance an
 To learn more, see [Task guides](../../fin-and-ops/get-started/help-overview.md#task-guides).
 
 
-## Country/region specific help topics
+## Country/region specific help content
 :::row:::
     :::column:::
         - [Australia](../../financials/localizations/australia.md)
