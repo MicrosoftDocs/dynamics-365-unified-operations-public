@@ -5,7 +5,7 @@ title: Retail Modern POS (MPOS) in offline mode
 description: This article explains how to use Retail Modern POS devices in offline mode if the Retail Server is unavailable.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 8/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -51,7 +51,12 @@ The **Connection status** page in Retail Modern POS shows the status of the last
 You can add a button to Retail Modern POS to manually switch between online and offline modes. Create a button for **POS operation 917 – Database connection status**. Use the button as a toggle to connect or disconnect.
 
 ## Operations that can be completed when the channel database is offline
-You can complete the following operations when the channel database is offline. **Note:** If any functionality requires Commerce Data Exchange: Real-time Service, you receive an error message that states that the operation isn't supported. **Tip:** Reports and other operations will act only on the data that is available in the offline database.
+You can complete the following operations when the channel database is offline. 
+
+> [!NOTE]
+> If any functionality requires Commerce Data Exchange: Real-time Service, you receive an error message that states that the operation isn't supported. An example of this is the Inventory Lookup operation. While the operation will allow you to look up an item, the Real-time Service call necessary to get available inventory data from the store's warehouse and the related store's warehouses as defined in the store's Fulfillment Group will fail if there is no connectivity to HQ.   
+
+**Tip:** Reports and other operations will act only on the data that is available in the offline database.
 
 | Operation ID | Description                         |
 |--------------|-------------------------------------|

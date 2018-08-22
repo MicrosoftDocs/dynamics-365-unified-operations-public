@@ -86,7 +86,7 @@ On the **Elimination** tab, you have three options for processing eliminations:
 
 ![Elimination tab](./media/elimination-cons-onl.png "Elimination tab")
 
-For more information about eliminations, see [Elimination rules](/financials/general-ledger/elimination-rules.md).
+For more information about eliminations, see [Elimination rules](./elimination-rules.md).
 
 ## Currency translation
 On the **Currency translation** tab, you define the legal entity, account and exchange rate type, and rate. Three options are available in the **Apply exchange rate from** field:
