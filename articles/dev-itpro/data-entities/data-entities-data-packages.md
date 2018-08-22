@@ -266,33 +266,36 @@ During data entity import:
 - When you import the system users entity, you may receive a integrity violation error if there is a guest user in the exported package. The guest user must be deleted from the package in order for the entity to work.
 - If a record already exists in the **UserInfo** table (the Admin record will likely exist), the import will fail for those records but work for other records.
 
-## Feature flighted in data management and the process to enable flighted features
-The following features are enabled via flighting. Flighting is a concept that allows a feature to be ON or OFF by default. The following process must be followed to enable or disable a feature that is being flighted.
+## Features flighted in data management and enabling flighted features
+The following features are enabled via flighting. *Flighting* is a concept that allows a feature to be ON or OFF by default. The following process must be followed to enable or disable a feature that is being flighted.
 
-DMFEnableAllCompanyExport - This flight represents the feature to export data to BYOD from all companies using a single export job. By default, this is OFF. Hence, to get this enabled on production environment, a support case must be created. To enable this on sandbox environments, the below steps must be followed which can be performed without asking for help from Microsoft.
+**DMFEnableAllCompanyExport** - This flight represents the feature to export data to bring your own database (BYOD) from all companies using a single export job. By default, this is OFF. A support case must be created to enable this on a production environment. To enable this on a sandbox environment, the following steps must be followed.
 
-- Add a record with this Insert statement, replacing the appropriate values 
+- Add a record with this Insert statement, replacing the appropriate values. 
+
   INSERT INTO SYSFLIGHTING VALUES (‘DMFEnableAllCompanyExport’, 1, 12719367, 5637144576, 5637144576, 1) 
     - Flight name = DMFEnableAllCompanyExport
     - Enabled = 1
     - Flight service ID = 12719367 (D365 as shown in #2 above)
-    - Partition = partition ID from the environment
-    - RecID = same ID as partition
+    - Partition = Partition ID from the environment
+    - RecID = Same ID as partition
     - RecVersion = 1
-- Change your web.config for your environment. 
-    - <add key="DataAccess.FlightingServiceCatalogID" value="12719367" />
+- Change the web.config for your environment. 
+    - add key="DataAccess.FlightingServiceCatalogID" value="12719367"
 
-DMFExportToPackageForceSync - This flight represents the feature to enable synchronous behavior on the ExportToPackage integration API. By default, the behavior is asynchronous. This can be changed to synchronous in production environments by creating a support request. For non production environments, the following steps must be followed which can be executed without help from Microsoft.
+**DMFExportToPackageForceSync** - This flight represents the feature to enable synchronous behavior on the ExportToPackage integration API. By default, the behavior is asynchronous. This can be changed to synchronous in production environments by creating a support request. For non-production environments, the following steps must be followed.
 
-- Add a record with this Insert statement, replacing the appropriate values 
+- Add a record with this Insert statement, replacing the appropriate values. 
+
   INSERT INTO SYSFLIGHTING VALUES (‘DMFExportToPackageForceSync’, 1, 12719367, 5637144576, 5637144576, 1) 
     - Flight name = DMFExportToPackageForceSync
     - Enabled = 1
     - Flight service ID = 12719367 (D365 as shown in #2 above)
-    - Partition = partition ID from the environment
-    - RecID = same ID as partition
+    - Partition = Partition ID from the environment
+    - RecID = Same ID as partition
     - RecVersion = 1
-- Change your web.config for your environment. 
-    - <add key="DataAccess.FlightingServiceCatalogID" value="12719367" />
+- Change the web.config for your environment. 
+    - add key="DataAccess.FlightingServiceCatalogID" value="12719367"
+    
 ## Additional resources
-[Data entities](data-entities.md)
+- [Data entities](data-entities.md)
