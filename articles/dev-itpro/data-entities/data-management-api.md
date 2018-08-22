@@ -278,6 +278,9 @@ Here are the possible values for the execution status:
 - Failed
 - Canceled
 
+> [!NOTE]
+> The file in the blob storage will remain in the storage for seven days, after which it will be automatically deleted.
+
 ## Import and export processes 
 The following illustration shows how the data management package methods can be used to import data packages.
 
