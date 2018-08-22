@@ -44,7 +44,7 @@ However, Microsoft Dynamics AX and Finance and Operations don't address all laws
 - Vertical regulations 
 - State, city, or municipal requirements
 
-Additional details are available in the [Localization Availability Guide](https://aka.ms/ax-availabilityguide)
+Additional details are available in the [Localization Availability Guide](https://aka.ms/ax-availabilityguide).
 
 Channel partners are an important part of our global strategy for delivering Microsoft Dynamics AX and Finance and Operations to help customers meet requirements for Mexico. By taking advantage of the extensible nature of the development architecture of Microsoft Dynamics AX and Finance and Operations, channel partners can address a customer's specific business needs during implementation through either of the following approaches:
 
