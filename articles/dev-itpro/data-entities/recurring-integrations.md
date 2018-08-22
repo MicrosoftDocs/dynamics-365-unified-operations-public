@@ -179,7 +179,7 @@ The following table lists the possible status values.
 | PostProcessingFailed | the import/export operation failed during post-processing                            |
 
 > [!NOTE]
-> The file in the blob storage will remain in the storage for seven days after which it will be automatically deleted.
+> The file in the blob storage will remain in the storage for seven days, after which it will be automatically deleted.
 
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace
