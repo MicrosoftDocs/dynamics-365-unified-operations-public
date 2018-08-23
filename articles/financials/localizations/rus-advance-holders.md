@@ -95,7 +95,7 @@ You can set up the following posting profiles for an account of operations:
 
 1.  Click **Accounts payable** \> **Setup** \> **Advance holders** \> **Employee posting profiles**.
 
-2.  Press **New** button to create a new posting frofile or press **Edit** button to adjust an existing posting profile.
+2.  Click **New** button to create a new posting frofile or press **Edit** button to adjust an existing posting profile.
 
 3.  In the **Posting profile** field, enter the profile ID of the profile being processed.
 
@@ -115,7 +115,7 @@ You can set up the following posting profiles for an account of operations:
     
 7.  Click the **Setup** FastTab.
 
-8 . Click **Add** button to create a new record for a posting profile details.
+8.  Click **Add** button to create a new record for a posting profile details.
 
 9.  In the **Valid for** field, select the level of grouping for setting up the posting profile from the following options:
     
@@ -126,16 +126,17 @@ You can set up the following posting profiles for an account of operations:
       - **All** – This option is set for all advance holders.
 
 10.  In the **Reference** field, select the corresponding reference.
-    
-    > [!NOTE]
-    > You can select this field only if you select **Table** or **Group** in the **Valid for** field.
 
+   > [!NOTE]
+   > You can select this field only if you select **Table** or **Group** in the **Valid for** field.
+    
+ 
 11.  In the **Summary account** field, select the account to reflect transactions for the advance holders.
 
 12.  In the **Set** field, select the dimension focus for settlement control.
     
-    > [!NOTE]
-    > The specified dimension set indicates that dimension control is activated.>
+   > [!NOTE]
+   > The specified dimension set indicates that dimension control is activated.
 
 13.  Click **Save** button or close the form.
 
@@ -145,21 +146,23 @@ You can set up the following posting profiles for an account of operations:
 You must set up the terms of payment when you register the purchase of goods from a vendor through an advance holder. The advance holder makes the purchase.
 
 
-1.  Click **Accounts payable** \> **Setup** \> **Payment** \> **Terms of payment**.
+1.  Click **Accounts payable** \> **Payment setup** \> **Terms of payment**.
 
-2.  Click the **Overview** tab, and then press CTRL+N.
+2.  Click **New** button to create a new record or press **Edit** button to adjust an existing record.
 
 3.  In the **Terms of payment** field, enter the code for the terms of payment.
 
 4.  In the **Description** field, enter the description for the terms of payment.
 
-5.  Click the **Setup** tab.
+5.  Click the **Setup** FastTab.
 
 6.  In the **Payment method** field, select **C.O.D.**
 
 7.  Select the **Cash payment** check box.
 
 8.  Select the **From advance holder** check box.
+
+9.  Click **Save** button or close the form.
 
 
 ## Set up the per diem expense rates 
@@ -170,33 +173,35 @@ Expense rates are used to generate an advance report for per diem expenses, and 
 
 1.  Click Click **Accounts payable** \> **Setup** \> **Advance holders** \> **Expense rates**.
 
-2.  Press CTRL+N to create an expense record.
+2.  Click **New** button to create a new expense or press **Edit** button to adjust an existing expense.
 
 3.  In the **Expense** field, enter the expense code.
 
 4.  In the **Description** field, enter the description for the expense code.
 
-5.  In the **Currency** field, select the currency code in which operations for this expense are registered.
+5.  In the **Rate** field, enter the standard established value for this expense.
 
-6.  In the **Rate** field, enter the standard established value for this expense.
+6.  In the **Currency** field, select the currency code in which operations for this expense are registered.
 
-7.  Click the **Setup** tab.
+7.  Click the **Setup** FastTab.
 
-8.  In the **Posting over norm** field, select the over-norm expense posting operation.
+8.  In the **Main account** field under the **Rate** field group, select the accounting statement to reflect normal charges.
 
-9.  In the **Main account** field under the **Rate** field group, select the accounting statement to reflect normal charges.
+9.  In the **Main account** field under the **Over rate** field group, select the accounting statement to reflect over-rate charges.
 
-10. In the **Main account** field under the **Over rate** field group, select the accounting statement to reflect over-rate charges.
+10. In the **Sales tax group** field under the **Sales tax** field group and the **Taxes over norm** field group, select the sales tax group for calculating sales tax for sale and purchase on normal and over-rate amounts.
 
-11. In the **Sales tax group** field under the **Sales tax** field group and the **Taxes over norm** field group, select the sales tax group for calculating sales tax for sale and purchase on normal and over-rate amounts.
+11. In the **Item sales tax group** field under the **Sales tax** field group and the **Taxes over norm** field group, select the item sales tax group for calculating sales tax for an item on normal and over-rate amounts.
 
-12. In the **Item sales tax group** field under the **Sales tax** field group and the **Taxes over norm** field group, select the item sales tax group for calculating sales tax for an item on normal and over-rate amounts.
+12. If the amounts include sales tax, select the **Amounts includes. sales tax** check box under the **Sales tax** field group and the **Taxes over norm** field group.
 
-13. If the amounts include sales tax, select the **Amounts includes. sales tax** check box under the **Sales tax** field group and the **Taxes over norm** field group.
+13. In the **Posting over norm** field, select the over-norm expense posting operation.
 
-14. Click the **Dimensions** tab.
+14. Click the **Financial dimensions** FastTab.
 
-15. In the **Department**, **Cost center**, and **Purpose** fields, select the transaction dimension from the corresponding dimensions form.
+15. Select the transaction dimensions values for the related dimensions in the **Financial dimensions** field group and in the **Financial dimensions over rate** field group.
+
+16. Click **Save** button or close the form.
 
 
 ## About worker table numbers for advance holders 
