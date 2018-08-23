@@ -269,35 +269,3 @@ Use this procedure to set up a worker table number for a worker. You can view th
     > [!NOTE]
     > If the **Advance holder sorting** option is set to **Yes** on the **Accounts payable parameters** page, the advance holders are displayed first in the list on the **Advance holders** page. You can also select the default employee posting profile in the **Posting profile** field.</P>
     
-## Create and post vendor invoices with advance holder details 
-
-Use this procedure to create and post vendor invoices with advance holder details. The advance holder balances are posted to the employee balance account instead of the vendor balance account.
-
-1.  Click **Accounts payable** \> **Common** \> **Purchase orders** \> **All purchase orders**.
-
-2.  Press CTRL+N or click **Purchase order** to create a purchase order. For more information, see [Create a purchase order](../../supply-chain/procurement/tasks/create-purchase-order.md).
-
-3.  In the **Purchase order** form, on the **Action Pane**, click **Header view**, and then click the **Price and discount** FastTab.
-
-4.  In the **Terms of payment** field, select the payment term. 
-    
-    > [!NOTE]
-    > <P>Select a payment term that has the <STRONG>From advance holder</STRONG> check box selected in the <STRONG>Terms of payment</STRONG> form.</P>
-
-5.  In the **Advance holder** field, select the advance holder for the purchase order.
-
-6.  Click **Purchase** \> **Confirm** to confirm the purchase order.
-
-7.  Click **Invoice** \> **Invoice** to create a vendor invoice for the purchase order.
-
-8.  In the **Vendor invoice** form, in the **Invoice identification** field group, in the **Number** field, enter the invoice number.
-
-9.  Click **Post** \> **Post** to select the posting settings and generate the invoice.
-    
-    You can view two vendor transactions with opposite amounts in the **Vendor transactions** form. 
-
-10. Close the form.
-
-11. Click **Accounts payable** \> **Inquiries** \> **Advance holders** \> **Transactions**. In the **Advance holder transactions** form, you can view one advance holder transaction. 
-
-12. Click **Voucher** to open the **Voucher transactions** form. The vendor balance account is replaced by the employee balance account, and the **Posting type** field is updated to **Employee balance**.
