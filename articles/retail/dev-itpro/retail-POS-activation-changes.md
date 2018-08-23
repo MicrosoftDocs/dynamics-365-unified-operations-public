@@ -5,7 +5,7 @@ title: Device activation of a customized Retail Modern POS
 description: This topic explains how to configure Dynamics 365 headquarters so that device activation works correctly when a customized Retail Modern POS application is used. 
 author: jashanno
 manager: AnnBe
-ms.date: 04/25/2018
+ms.date: 08/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
