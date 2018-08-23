@@ -153,4 +153,4 @@ Transactions for these workers can be posted by using advance holder accounts. T
 
 ## Set up the advance holder
 
-[Create an advance holder](emea-advance-holders.md#set-up-an-advance-holder)
+[Create an advance holder](emea-advance-holders.md#create-an-advance-holder)
