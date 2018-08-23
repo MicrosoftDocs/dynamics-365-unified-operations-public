@@ -45,23 +45,25 @@ ms.dyn365.ops.version: 8.1
 
 5.  Select the **Issue when balance is open** check box to allow issue of a cash advance to an advance holder who has an open positive balance.
 
-6.  Select the **Settlement by profile** check box to settle transactions only with an identical posting profile.
+6.  Select the **Automatic settlement** check box if automatic transactions settlement is required.
 
-7.  In the **Name** field under the **Balance closing via cash** field group, select the cash slip journal code. This journal code is used to generate cash disbursement slips and reimbursement slips when closing an advance holder's balances through cash.
+7.  Select the **Settlement by profile** check box to settle transactions only with an identical posting profile.
+
+8.  In the **Name** field under the **Balance closing via cash** field group, select the cash slip journal code. This journal code is used to generate cash disbursement slips and reimbursement slips when closing an advance holder's balances through cash.
     
 
     > [!NOTE]
     > All journals are of the type **Cash**.
 
-8.  In the **Cash** field, select the cash account to determine the vouchers that are used for closing the balances for the advance holder.
+9.  In the **Cash** field, select the cash account to determine the vouchers that are used for closing the balances for the advance holder.
 
-9.  In the **Name** field under the **Balance closing via bank** field group, select the journal code for transactions to close the balances through a bank.
+10.  In the **Name** field under the **Balance closing via bank** field group, select the journal code for transactions to close the balances through a bank.
 
-10. In the **Account** type field, select **Bank** to close the balances for an advance holder through a bank.
+11. In the **Account** type field, select **Bank** to close the balances for an advance holder through a bank.
 
-11. In the **Account** field, select the bank account code to close the balances for an advance holder through a bank.
+12. In the **Account** field, select the bank account code to close the balances for an advance holder through a bank.
 
-12. Press CTRL+S or close the page.
+13. Press **Save** button or close the page.
 
 
 ## Set up an advance holder group 
