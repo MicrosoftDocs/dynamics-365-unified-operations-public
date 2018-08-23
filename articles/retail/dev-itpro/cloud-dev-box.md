@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configuration steps for Retail developers working on cloud-hosted development environments with no administrator access
+title: Development in cloud-hosted development environments without admin access
 description: This topic demonstrates the configuration steps for Retail developers working on cloud-hosted development machines.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 01/16/2018
+ms.date: 07/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,17 +29,19 @@ ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
-# Configuration steps for Retail developers working on cloud-hosted development environments with no administrator access
+# Development in cloud-hosted development environments without admin access
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 As of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, Platform update 12, customers will no longer have access to virtual machine (VM) administrator accounts on development or build environments that are running in Microsoft subscriptions. This restriction only applies to new deployments of Platform update 12 (or newer) environments. Environments that were deployed before this update, and  have been updated to Platform update 12, will still have administrator access.
 
-You can use a remote desktop (RDP) to access these restricted environments using the non-admin user provided on the Lifecycle Services (LCS) environment page. This blog post contains more information about how to access these VMs: 
-https://blogs.msdn.microsoft.com/lcs/2017/10/31/restricted-admin-access-with-platform-12-updates/
+You can use a remote desktop (RDP) to access these restricted environments using the non-admin user provided on the Lifecycle Services (LCS) environment page. For more information about environments that don't allow administrator access, see [Development and build VMs that don't allow administrator access FAQ](../../dev-itpro/sysadmin/VMs-no-admin-access.md).
 
-Retail developers do not have administrative access to cloud-hosted development virtual machines. Modern POS (MPOS) development is possible if you use Cloud POS. Before starting development on any Retail application, configure Cloud POS as follows:
+If you deploy an environment using Microsoft Azure subscription in Lifecycle Services (LCS), then you will not have admin access in this environment. If you need admin access in your environment, use your Azure subscription and deploy the environment using LCS. You can also use the downloadable VHD and deploy it in your Azure virtual machine (VM) or host it locally to get full admin access.
 
+If you don’t have admin access in the environment, you will not be able to test and debug using Modern POS. You can still do all retail customization for POS if you are testing the customization, you must use Cloud POS in that environment. From a customization perspective, there is no difference between Cloud POS and Modern POS - any customization will work both in Cloud POS and Modern POS. There is no additional logic or code for customization completed in Cloud POS in order to work in Modern POS or vice versa, unless you added logic that is browser-specific or UWP app- specific for Hardware and other scenarios. Another option is to do all development work in the environment using Modern POS and test it in some other environment where you have admin access to install MPOS. In most cases, you should be able to test using Cloud POS, expect if you want to test for offline scenarious. If you want to test offline scenarios, you can create a Modern POS installer using the build script, and then test it in your test environment or some other POS registers.
+
+**If you are using Cloud POS for development, set up the following configuration before opening the Cloud POS project**
 
 1. Open Visual Studio and click **View** > **Application Explorer**. Wait for Internet Information Services (IIS) Express to start with all the Retail websites deployed. You should see the IIS tray icon in the task bar with all the Retail websites running, such as Cloud POS and Retail Server.
 4. To debug CRT/RS extensions, attach the CRT/RS project to the IIS Express process.

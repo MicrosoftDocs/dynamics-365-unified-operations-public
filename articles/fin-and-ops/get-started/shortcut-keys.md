@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Keyboard shortcuts
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations. 
 

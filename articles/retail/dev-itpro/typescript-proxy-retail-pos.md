@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Typescript and C# proxies for Retail POS
+title: Typescript and C# proxies for Retail point of sale (POS)
 description: This topic provides information about the Retail proxy and explains how to generate it.
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
 
 ---
 
-# Retail Typescript and C# proxies
+# Typescript and C# proxies for Retail point of sale (POS)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Whenever you create a new controller for Retail server application programming interfaces (APIs) or extend the existing controller, you must generate the Retail proxy by using the tools that are available as part of the Retail software development kit (SDK). For example, you must generate the Retail proxy if you add a new API for the Customer entity by extending the Customer controller.
 
@@ -83,7 +83,7 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\Reference folder
     > [!NOTE]
     > You must generate the proxy for all Retail server extensions.
 
-## Generate the C# proxy (7.1 and 7.2) - These step are not not applicable for 7.3 and higher versions.
+## Generate the C# proxy (7.1 and 7.2) - These steps are not applicable for version 7.3 and higher
 
 1. Open the **Customization.settings** files from **...Retail SDK\BuildTools**.
 2. Under the **RetailServerLibraryPathForProxyGeneration** node, include all custom Retail server extension libraries, as shown here.
@@ -112,7 +112,7 @@ You use the CommerceProxyGenerator.exe file from the Retail SDK\Reference folder
 
     To learn how generate the interface and manager classes, see the Store Hours sample in the Retail SDK. The instructions are in the **RetailSDK\Code\Documents\SampleExtensionsInstructions\StoreHours\readme.txt** file.
     
-**How to generate C# proxy (this applicable for both POS and Ecommerce) for 7.3**
+## How to generate C# proxy (this applicable for both POS and Ecommerce) for 7.3
 
 1.  Navigate to RetailSDK\\SampleExtensions\\RetailProxy\\RetailProxy.Extensions. StoreHoursSample
 

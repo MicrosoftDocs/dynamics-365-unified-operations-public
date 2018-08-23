@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a purchase order with a delivery schedule
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to create a delivery schedule for a purchase order. A delivery schedule is used when a quantity on an order or a journal is requested to be delivered in multiple shipments. The example shown in this guide can be used in the USMF demo data company. This procedure would typically be done by a purchasing agent.
 

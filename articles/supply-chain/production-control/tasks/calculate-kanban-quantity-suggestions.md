@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Calculate kanban quantity suggestions
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure focuses on optimizing the kanban size and quantities for a specific kanban rule by using the kanban quantity calculation. The demo data company used to create this procedure is USMF. This procedure is intended for the value stream manager. It is a prerequisite that you have completed the procedure Add a new kanban quantity calculation policy to a kanban rule.
 

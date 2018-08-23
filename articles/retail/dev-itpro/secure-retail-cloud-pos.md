@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Security best practices for Retail Cloud POS in a shared environment
+title: Security best practices for Cloud POS in shared environments
 description: Retail Cloud POS is a web application that runs in the context of a browser. This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.
 author: pdp1207
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Security best practices for Retail Cloud POS in a shared environment
+# Security best practices for Cloud POS in shared environments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Retail Cloud POS is a web application that runs in the context of a browser. This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.
 

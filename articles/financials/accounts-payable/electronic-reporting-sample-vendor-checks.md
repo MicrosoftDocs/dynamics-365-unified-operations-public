@@ -3,7 +3,7 @@
 
 title: Electronic reporting sample vendor checks
 description: This topic provides general information about how to use the Electronic reporting sample check formats.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/14/2017
 ms.topic: article
@@ -16,20 +16,20 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
 ---
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 # Electronic reporting sample check formats
 

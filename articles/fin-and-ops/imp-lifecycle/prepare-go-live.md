@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preparing for go-live with a Microsoft Dynamics 365 for Finance and Operations project 
+title: Prepare for go-live
 description: This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
@@ -27,9 +27,9 @@ ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---
 
-# Preparing for go-live
+# Prepare for go-live
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Manage order holds
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to place customer sales orders on hold, how to work with order hold checkouts, and how to remove order holds. An order might be placed on hold for a variety of reasons. For example, you might hold an order until a customer address or payment method can be verified or until a manager can review the customer’s credit limit. While the order on hold, it cannot be processed by the warehouse for shipping. 
 

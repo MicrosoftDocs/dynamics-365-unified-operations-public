@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create an accelerated depreciation profile and assign it to book (Japan)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 For Japan, accelerated depreciation requires configuration of a depreciation profile, just like other depreciation methods. 
 

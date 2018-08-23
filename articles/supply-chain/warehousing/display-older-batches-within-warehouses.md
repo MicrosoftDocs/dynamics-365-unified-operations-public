@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  WHSRFMenuItem
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure Display older batches within warehouse on a mobile device
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The **Display older batches within warehouse** configuration lets you display a list of locations with batches older than the current location of the work line. The list of locations that are displayed includes information about the older batches in the location with the expiration date and the physical inventory of each batch. You can choose to pick from a new location or to continue picking from the current location. 
 - Pick from a new location - If you select a new location to pick from, the  current work line will be updated to use the new location and work will continue as usual with the new location. For the new location to be valid, it must have enough available quantity for the whole work line. If the required quantity is not available, the work line will not be updated, and the list will display. 

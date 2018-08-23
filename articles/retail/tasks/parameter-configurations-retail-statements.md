@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Parameter configurations for Retail statements
+title: Configure Retail parameters that affect retail statements
 description: This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted. 
 author: josaw1
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Parameter configurations for Retail statements
+# Configure Retail parameters that affect retail statements
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted. This procedure uses the USRT demo company.
 

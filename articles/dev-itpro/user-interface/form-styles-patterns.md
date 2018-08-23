@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Form styles and patterns
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the concept of form patterns and discusses the process for applying and removing patterns. A list of frequent questions are also answered in this topic. 
 

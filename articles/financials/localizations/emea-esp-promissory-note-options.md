@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Spanish promissory note options
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes options and changes for the basic promissory note functionality that is implemented in Microsoft Dynamics 365 for Finance and Operations for legal entities in Spain.
 

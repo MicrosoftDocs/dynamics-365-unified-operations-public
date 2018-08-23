@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Inventory journal reports
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 When you use configurable inventory reports based on electronic reporting, you need to set up a relationship between a specific report and a journal type.
 

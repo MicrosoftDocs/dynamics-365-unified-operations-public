@@ -3,7 +3,7 @@
  
 title: Create a material plan for co-products
 description: The production planner plans the material requirements for items that are formula co-products. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a material plan for co-products
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 The production planner plans the material requirements for items that are formula co-products. The demo data company used to create this procedure is USP2.
 

@@ -17,7 +17,7 @@ ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14222
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settle a partial vendor payment that has discounts on vendor credit notes
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article walks you through a scenario where a credit memo is settled against an invoice.
 

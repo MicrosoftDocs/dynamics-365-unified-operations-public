@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Record the receipt of goods on the purchase order
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to record receipt of goods directly on a purchase order. It’s also possible to register product receipt in the warehouse, and then later record it on the purchase order. This task is typically done by a purchasing agent or an accounts payable coordinator. The example shown in this guide can be used in the USMF demo data company. The example includes steps to create a simple purchase order so that you can play the procedure as a task guide. If you were using the procedure on your own data, you would start at the Record receipt of goods subtask.
 

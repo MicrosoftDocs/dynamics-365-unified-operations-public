@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Access instances
+title: Deploy and access development environments
 description: This topic describes how to access development instances, configure on-premises development VMs, and find important configuration settings for developers and administrators.
 author: robadawy
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Deploy and access development environments 
+# Deploy and access development environments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to access development instances, configure on-premises development VMs, and find important configurations settings for developers and administrators.
 
@@ -115,7 +115,7 @@ For environments deployed **before Platform Update 12**:
 1.  Click the VM name.
 2.  Use the local administrator user name and password that are shown to connect to the cloud VM through Remote Desktop. You can reveal the password by clicking the eye icon.
 
-For any environments deployed **on or after Platform Update 12** , there are distinct accounts, a developer account and an admin account. Customers will not have have access to virtual machine (VM) admin accounts on development or build environments that are running in Microsoft subscriptions. Thus, the admin account will be hidden unless the environment is running in their Azure subscription. 
+For any environments deployed **on or after Platform Update 12** , there are distinct accounts, a developer account and an admin account. Customers will not have access to virtual machine (VM) admin accounts on development or build environments that are running in Microsoft subscriptions. Thus, the admin account will be hidden unless the environment is running in their Azure subscription. For more information, see [Development and build VMs that don't allow administrator access FAQ](../sysadmin/VMs-no-admin-access.md). 
 
 After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from LCS.
 

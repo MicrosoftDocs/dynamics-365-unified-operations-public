@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Simple Details form pattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the Simple Details form pattern. This pattern is used when only a simple set of fields must be presented to the user.
 

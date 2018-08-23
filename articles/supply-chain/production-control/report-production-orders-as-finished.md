@@ -17,7 +17,7 @@ ms.search.form: ProdJournalTransJob, ProdJournalTransProd, ProdJournalTransRoute
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27061
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Report production orders as finished
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Report as finished is a production stage. At this stage, a finished product is reported and moved from the production order to the inventory.
 

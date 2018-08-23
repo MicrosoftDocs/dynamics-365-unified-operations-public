@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create new users
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs. System administrators can complete this procedure to add users to the system. The demo data company used to create this procedure is USMF. 
 

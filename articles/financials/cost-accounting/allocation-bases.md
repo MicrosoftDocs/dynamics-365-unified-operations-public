@@ -17,14 +17,14 @@ ms.search.form: CAMDimensionMember
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 223174
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Allocation bases 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 An allocation base is the basis on which Cost accounting allocates overhead costs. An allocation base can be a quantity, such as machine hours that are used, kilowatt hours (kWh) that are consumed, or square footage that is occupied. Allocation bases are mostly used to assign overhead costs to inventory that is produced. For example, an IT department allocates its expenses according to the number of computers that each department uses.
 

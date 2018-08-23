@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Platform update 8
 
 # Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [upgrade banner](../includes/upgrade-banner.md)]
+[!include [upgrade banner](../includes/upgrade-banner.md)]
 
 This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Microsoft Dynamics 365 for Finance and Operations.
 

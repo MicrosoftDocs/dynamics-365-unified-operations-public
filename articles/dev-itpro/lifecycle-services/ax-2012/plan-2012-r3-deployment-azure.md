@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Plan your Dynamics AX 2012 R3 deployment on Azure
+title: Plan AX 2012 R3 deployments on Azure
 description: Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process. 
 author: kfend
 manager: AnnBe
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Plan your Dynamics AX 2012 R3 deployment on Azure
+# Plan AX 2012 R3 deployments on Azure
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process. 
 
@@ -155,7 +155,7 @@ Keep the following points in mind when specifying the size (in GB) of each disk 
 -   Default is 128 GB.
 -   The size of the disk used dictates the Premium Storage tier used.
 -   The Premium Storage tier dictates cost, IOPS per disk, and throughput of the system being deployed. For more information, click [here](http://azure.microsoft.com/en-us/pricing/details/storage/).
--   All disks are formatted to 64k cluster size. This results in up to a 20% increase in performance. For more information, click [here](http://tk.azurewebsites.net/2012/08/).
+-   All disks are formatted to 64k cluster size. This results in up to a 20% increase in performance. 
 
 TempDB and logs are deployed onto storage spaces as to benefit from the performance gains. One virtual disk is created over the number of disks configured for the storage space. The virtual disk is then partitioned as follows:
 

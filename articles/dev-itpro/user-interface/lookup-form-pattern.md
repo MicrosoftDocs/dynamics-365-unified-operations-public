@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Lookup form pattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the Lookup form pattern. Custom lookup forms should be used when a standard framework-provided lookup would not provide the correct data, or when advanced visualization of the data is required.
 

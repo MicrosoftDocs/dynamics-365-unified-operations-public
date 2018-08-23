@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Low-value pool depreciation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the low-value pool depreciation method that is used in Australia. Low-cost and low-value assets can be allocated to a low-value pool if their cost or opening adjustable value is less than a specified amount.
 

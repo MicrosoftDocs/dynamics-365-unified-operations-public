@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Electronic reporting overview
+title: Electronic reporting (ER)
 description: This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 author: NickSelin
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Electronic reporting overview
+# Electronic reporting (ER)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 
@@ -46,7 +46,7 @@ ER currently supports the TEXT, XML, Microsoft Word document, and OPENXML worksh
 The ER engine has the following capabilities:
 
 - It represents a single shared tool for electronic reporting in different domains and replaces more than 20 different engines that do some type of electronic reporting for Microsoft Dynamics 365 for Finance and Operations.
-- It makes a report’s format insulated from the current Finance and Operations implementation. In other words, the format is applicable for different versions of Finance and Operations.
+- It makes a report's format insulated from the current Finance and Operations implementation. In other words, the format is applicable for different versions of Finance and Operations.
 - It supports the creation of a custom format that is based on an original format. It also includes capabilities for automatically upgrading the customized format when the original format is changed because of localization/customization requirements.
 - It becomes the primary standard tool to support localization requirements in electronic reporting, both for Microsoft and for Microsoft partners.
 - It supports the ability to distribute formats to partners and customers through Microsoft Dynamics Lifecycle Services (LCS).
@@ -67,8 +67,8 @@ A business entity of a data model is represented as a container (record). Busine
 
 A single data model component can contain several hierarchies of domain-specific business entities. It can also contain model mappings that support a report-specific data flow at run time. The hierarchies are differentiated by a single record that has been selected as a root for model mapping. For example, the data model of the payment domain area might support the following mappings:
 
-- Company > Vendor > Payment transactions of the AP domain
-- Customer > Company > Payment transactions of the AR domain
+- Company \> Vendor \> Payment transactions of the AP domain
+- Customer \> Company \> Payment transactions of the AR domain
 
 Note that business entities such as company and payment transactions are designed one time. Different mappings then reuse them.
 
@@ -78,7 +78,7 @@ A model mapping that supports outgoing electronic documents has the following ca
 - It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
 - It supports the transformation of Finance and Operations data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas, as shown in the following illustration. For more information, see [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)).
 
-[![Formula designer](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
+[![Formula designer](./media/ER-overview-01.png)](./media/ER-overview-01.png)
 
 A model mapping that supports incoming electronic documents has the following capabilities:
 
@@ -94,7 +94,7 @@ A format component is the scheme of the reporting output that will be generated 
 - A format that defines the structure and content of the outgoing electronic document that is generated at run time.
 - Data sources, as a set of user input parameters and a domain-specific data model that uses a selected model mapping.
 - A format mapping, as a set of bindings of format data sources that have individual elements of a format that specify, at run time, the data flow and rules for format output generation.
-- A format validation, as a set of configurable rules that control report generation at run time, depending on the running context. For example, there might be a rule that stops output generation of a vendor’s payments and throws an exception when specific attributes of the selected vendor are missing, such as the bank account number.
+- A format validation, as a set of configurable rules that control report generation at run time, depending on the running context. For example, there might be a rule that stops output generation of a vendor's payments and throws an exception when specific attributes of the selected vendor are missing, such as the bank account number.
 
 A format component supports the following functions:
 
@@ -105,7 +105,7 @@ A format component lets you attach specific files that can be used in the report
 
 - Excel workbooks that contain a worksheet that can be used as a template for output in the OPENXML worksheet format
 - Word files that contain a document that can be used as a template for output in the Microsoft Word document format
-- Other files that can be incorporated into the format’s output as predefined files
+- Other files that can be incorporated into the format's output as predefined files
 
 The following illustration shows how the data flows for these formats.
 
@@ -118,7 +118,7 @@ A format component is the scheme of the incoming document that is imported at ru
 
 - A format that defines the structure and content of the incoming electronic document that contains data that is imported at run time. A format component is used to parse an incoming document in various formats, such as text and XML.
 - A format mapping that binds individual format elements to elements of a domain-specific data model. At run time, the elements in the data model specify the data flow and the rules for importing data from an incoming document, and then store the data in a data model.
-- A format validation, as a set of configurable rules that control data import at run time, depending on the running context. For example, there might be a rule that stops data import of a bank statement that has a vendor’s payments and throws an exception when a specific vendor’s attributes are missing, such as the vendor identification code.
+- A format validation, as a set of configurable rules that control data import at run time, depending on the running context. For example, there might be a rule that stops data import of a bank statement that has a vendor's payments and throws an exception when a specific vendor's attributes are missing, such as the vendor identification code.
 
 The following illustration shows how the data flows for these formats.
 
@@ -179,7 +179,7 @@ Required **LCS project** repositories can be registered individually for each co
 ## Supported scenarios
 ### Building a data model
 
-ER provides a model designer that you can use to build a data model for a particular business domain. All domain-specific business entities, and the relations between them, can be presented in a data model as a hierarchical structure. The following illustration shows an example of this type of data model (the payment domain data model). 
+ER provides a model designer that you can use to build a data model for a particular business domain. All domain-specific business entities, and the relations between them, can be presented in a data model as a hierarchical structure. The following illustration shows an example of this type of data model (the payment domain data model).
 
 [![Payment domain data model](./media/ER-overview-04.png)](./media/ER-overview-04.png)
 
@@ -189,19 +189,18 @@ To become familiar with the details of this scenario, play the **ER Design domai
 
 Data model content (labels and descriptions) can be translated into other languages that Finance and Operations supports. You might want to translate data model content for the following reasons:
 
--   At design time, to make the content more intelligible for format designers who speak other languages, and who will use the data model for data mapping of format components.
--   At run time, to make the content more user-friendly by presenting prompts and help for run-time parameters, and configured validation messages (errors and warnings), in the language that the currently signed-in user prefers.
+- At design time, to make the content more intelligible for format designers who speak other languages, and who will use the data model for data mapping of format components.
+- At run time, to make the content more user-friendly by presenting prompts and help for run-time parameters, and configured validation messages (errors and warnings), in the language that the currently signed-in user prefers.
 
-The following illustration shows an example where data model content is translated from English to Japanese. 
+The following illustration shows an example where data model content is translated from English to Japanese.
 
 [![Data model content in English](./media/ER-overview-05.png)](./media/ER-overview-05.png)
 
 [![Data model content translated into Japanese](./media/ER-overview-06.png)](./media/ER-overview-06.png)
 
-
 ### Configuring data model mappings for outgoing documents
 
-ER provides a model mapping designer that lets users map data models that they have designed to specific Finance and Operations data sources. Based on the mapping, the data will be imported at run time from selected data sources into the data model. The data model is then used as an abstract data source of ER formats that generate outgoing electronic documents. The following illustration shows an example of this type of data model mapping (the **SEPA Credit Transfer** model mapping of the payment domain data model). 
+ER provides a model mapping designer that lets users map data models that they have designed to specific Finance and Operations data sources. Based on the mapping, the data will be imported at run time from selected data sources into the data model. The data model is then used as an abstract data source of ER formats that generate outgoing electronic documents. The following illustration shows an example of this type of data model mapping (the **SEPA Credit Transfer** model mapping of the payment domain data model).
 
 [![Example of data model mapping](./media/ER-overview-07.png)](./media/ER-overview-07.png)
 
@@ -214,13 +213,13 @@ ER provides a model mapping designer that lets users map data models that they h
 
 ### Storing a designed model component as a model configuration
 
-ER can store a designed data model, together with associated data mappings, as a model configuration of the current Finance and Operations instance. The following illustration shows an example of this type of data model configuration (the payment model configuration). 
+ER can store a designed data model, together with associated data mappings, as a model configuration of the current Finance and Operations instance. The following illustration shows an example of this type of data model configuration (the payment model configuration).
 
 To become familiar with the details of this scenario, play the **ER Map data model to selected data sources** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
 ### Building a format that uses a data model as a base
 
-ER supports a format designer that you can use to build the format of an electronic document for a selected business domain by selecting the model component as a base. The same ER format designer lets you map a format that you create to a selected domain’s data model mapping as a data source. The following illustration shows an example of this type of format (the format configuration that supports the **BACS** payment format for the United Kingdom). 
+ER supports a format designer that you can use to build the format of an electronic document for a selected business domain by selecting the model component as a base. The same ER format designer lets you map a format that you create to a selected domain's data model mapping as a data source. The following illustration shows an example of this type of format (the format configuration that supports the **BACS** payment format for the United Kingdom).
 
 [![Example of a format that has a data model as a base](./media/ER-overview-09.png)](./media/ER-overview-09.png)
 
@@ -244,7 +243,7 @@ To become familiar with the details of this scenario, play the ER Design a confi
 - [Template of Payment Report (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 - [Bounded template of Payment Report (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
-### Building a configuration to import data from incoming electronic documents  
+### Building a configuration to import data from incoming electronic documents
 The ER format designer can be used to describe an electronic document that is planned for data import in either XML or text format. The designed format is used to parse an incoming document. The ER format mapping designer can be used to define the binding of the elements of the designed format to the data model. The following illustrations show an example of this type of format and format mapping. In this example, NETS bank statements that include vendor payment details in text format are imported.
 
 [![ER-format-designer](./media/ER-overview-12.png)](./media/ER-overview-12.png)
@@ -264,7 +263,7 @@ ER can store a designed format together with the configured data mappings as a f
 
 ### Configuring Finance and Operations to start to use a created format internally
 
-Finance and Operations can be configured to start to use a created format to generate electronic reports. The reference to the created format configuration should be defined in the settings of a specific domain. For example, to start to use an ER format configuration for electronic vendor payments in BACS format, the format configuration should be referenced in specific methods of payment, as shown in the following illustrations: 
+Finance and Operations can be configured to start to use a created format to generate electronic reports. The reference to the created format configuration should be defined in the settings of a specific domain. For example, to start to use an ER format configuration for electronic vendor payments in BACS format, the format configuration should be referenced in specific methods of payment, as shown in the following illustrations:
 
 [![BACS (UK) format configuration](./media/ER-overview-14.png)](./media/ER-overview-14.png)
 
@@ -287,7 +286,7 @@ ER lets you create (derive) a new component from the current version of a compon
 
 ### Upgrading a format selecting a new version of base format (rebase)
 
-ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document. Any changes that can’t be merged automatically are considered conflicts. These conflicts are presented for manual resolution in the designer tool for the appropriate component. To become familiar with the details of this scenario, play the **ER Upgrade format by adoption of new base version of that format** task guide (part of the **7.5.5.3 Acquire/Develop changed IT service/solution component (10683)** business process).
+ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document. Any changes that can't be merged automatically are considered conflicts. These conflicts are presented for manual resolution in the designer tool for the appropriate component. To become familiar with the details of this scenario, play the **ER Upgrade format by adoption of new base version of that format** task guide (part of the **7.5.5.3 Acquire/Develop changed IT service/solution component (10683)** business process).
 
 ## List of ER configurations that are delivered in the Finance and Operations solution
 
@@ -371,14 +370,8 @@ ER lets you automatically adopt changes of the latest version of the base compon
 |                                                  |                       | Vendor invoice declaration (IS)                   | Vendor invoice declaration format for Iceland                      |
 |                                                  |                       | Vendor invoice declaration report (IS)            | Vendor invoice declaration report for Iceland                      |
 
-
-
-Additional resources
---------
+## Additional resources
 
 [Localization requirements – Create an Electronic reporting configuration](electronic-reporting-configuration.md)
 
 [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
-
-
-

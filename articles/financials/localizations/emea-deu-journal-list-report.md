@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # German journal list report
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains what the German journal list report is used for, who typically uses it, and how to run it.
 

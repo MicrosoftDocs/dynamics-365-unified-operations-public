@@ -17,7 +17,7 @@ ms.search.form: CostingVersion, InventItemPrice
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79723
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Update standard costs in a non-manufacturing environment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides guidance for updating standard costs in a non-manufacturing environment.
 

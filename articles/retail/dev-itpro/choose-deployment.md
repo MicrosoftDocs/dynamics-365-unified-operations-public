@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deployment options
+title: Deployment options for retail functionality
 description: This topic explains the differences in the retail functionality between Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
 author: ashishmsft 
 manager: AnnBe
@@ -27,9 +27,9 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail July 2017 update 
 ---
 
-# Deployment options
+# Deployment options for retail functionality
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Retail functionality is available in the following products:
  
@@ -49,7 +49,7 @@ The following table lists the key differences between Dynamics 365 for Retail an
 |Deploy a solution that is scoped to provide retail functionality only. | Yes  | Yes*<br><br>\* Can be configured after deployment.  |
 |Optimize your financials and operations to drive growth and make real-time, data-driven decisions with an intelligent, modern enterprise business application.| No*<br><br>\* You can enable additional functionality with a Unified Operations Plan or Dynamics 365 Plan. | Yes |
 
-For more information about licensing, see the [Licensing Guide](http://download.microsoft.com/documents/en-us/dynamics/pricing/Dynamics_365_Enterprise_edition_Licensing_Guide.pdf).
+For more information about licensing, see the [Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
 When you first visit Lifecycle Services (LCS) after acquiring the necessary licenses for your tenant, you will be prompted to choose an implementation project type, which is where you must select **Dynamics 365 for Retail** or **Dynamics 365 for Finance and Operations**. You can use the above considerations to choose the right product to deploy.
  

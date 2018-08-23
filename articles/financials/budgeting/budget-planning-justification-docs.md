@@ -17,7 +17,7 @@ ms.search.form: BudgetPlanJustificationTemplate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 259594
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Budget planning justification documents
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Justification documents provide a narrative for those requesting a budget to explain why a specific budget is necessary. 
 

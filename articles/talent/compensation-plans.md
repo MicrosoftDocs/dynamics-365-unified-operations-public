@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # Compensation plans
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Compensation and Benefits Managers can use Compensation management to maintain and process fixed and variable compensation plans for the organization's employees.
 

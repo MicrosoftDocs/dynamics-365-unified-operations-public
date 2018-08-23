@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # VAT statement for the Czech Republic
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Set up and generate the VAT statement for users in legal entities located in the Czech Republic.
 

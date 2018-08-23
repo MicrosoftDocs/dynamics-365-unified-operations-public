@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Task Single form pattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Task Single form pattern. This pattern was previously used to present data that users would perceive as originating from a single data source that had multiple records.
 

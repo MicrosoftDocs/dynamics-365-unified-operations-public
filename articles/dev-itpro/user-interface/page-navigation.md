@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Navigation
+title: Navigation concepts
 description: This articles describes the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
 author: jasongre
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Navigation
+# Navigation concepts
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This articles describes the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
 

@@ -17,7 +17,7 @@ ms.search.form: LedgerJournalTransVendPaym, PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15871
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Prepayment invoices vs. prepayments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes and contrasts the two methods that organizations can use for advance payments (prepayments). In one method, you create a prepayment invoice that is associated with a purchase order. In the other method, you create prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.
 

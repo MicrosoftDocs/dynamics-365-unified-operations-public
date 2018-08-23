@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Referenced fiscal documents for Brazil
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of referenced fiscal documents that are used in Brazil.
 

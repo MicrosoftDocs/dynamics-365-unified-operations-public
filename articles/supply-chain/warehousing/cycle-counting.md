@@ -17,7 +17,7 @@ ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThres
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50671
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cycle counting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how you can use cycle counting with the warehousing solution that is available in Warehouse management. This article doesn't apply to the warehousing solution that's available in Inventory management.
 

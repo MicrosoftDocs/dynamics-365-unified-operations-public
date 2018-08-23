@@ -17,7 +17,7 @@ ms.search.form: ProdSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19431
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Job scheduling
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about job scheduling, which is a more detailed form of scheduling than operations scheduling. You can use job scheduling to schedule individual jobs or shop orders, and to control the manufacturing environment.
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create a new user on a development machine
+title: Create new users on development machines
 description: When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM). This article explains how to enable another user account as a developer on a development VM.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,11 +30,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create a new user on a development machine
+# Create new users on development machines
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to enable another user account as a developer on a development VM.
+
+> [!NOTE]
+> This topic only applies to downloaded local virtual machines (VMs) or VMs that are hosted in a customer’s subscription. You can't create new users on Microsoft-managed developer and build machines.
+
 
 When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM). This user is preconfigured by Microsoft Dynamics Lifecycle Services (LCS) or is the local administrator account on downloaded virtual hard disks (VHDs). However, you can enable a new user account to develop on the VM. Even after you enable a new account, only one developer can develop at a time on the same VM/application.
 

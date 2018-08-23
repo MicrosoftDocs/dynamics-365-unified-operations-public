@@ -3,7 +3,7 @@
 
 title: Sales tax overview
 description: This topic provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 
 ms.search.scope: Core, Operations, Retail
 
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Sales tax overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This topic provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
 

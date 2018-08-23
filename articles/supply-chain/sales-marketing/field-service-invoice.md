@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -98,3 +98,15 @@ Task: **Invoice lines**
 Make sure that the default value for the Finance and Operations field **Main Account Display Value** is updated to match the desired value.
 
 The default template value is **401100**.
+
+## Template mapping in Data integration
+
+The following illustrations show the template mapping in Data integration.
+
+### Agreement invoices (Field Service to Fin and Ops): Invoice headers
+
+[![Template mapping in Data integration](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+
+### Agreement invoices (Field Service to Fin and Ops): Invoice lines
+
+[![Template mapping in Data integration](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)

@@ -17,7 +17,7 @@ ms.search.form: KanbanBoardTransferJob
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19391
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Kanban transfer board support for barcode scanners
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The Kanban transfer board supports scanner input from a widget barcode scanner to Select, Start, Complete, and Empty a kanban job.
 

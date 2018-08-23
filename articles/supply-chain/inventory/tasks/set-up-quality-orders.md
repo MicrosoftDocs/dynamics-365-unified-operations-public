@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up quality orders
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to enable a quality management process where incoming inventory must be inspected immediately after arrival registration. The procedure will typically be carried out by a quality manager. The process includes the creation of a quality group, to define the items that are going to be sampled, and a test group to group the tests that are to be performed on items in the quality group. You can run this guide in the USMF demo data company.
 

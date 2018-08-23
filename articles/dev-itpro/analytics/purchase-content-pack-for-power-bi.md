@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Purchase spend analysis Power BI content
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes what is included in the **Purchase spend analysis** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 
@@ -40,32 +40,27 @@ This topic describes what is included in the **Purchase spend analysis** Microso
 
 The **Purchase spend analysis** Power BI content was designed to help purchasing managers and managers who are responsible for budgets keep an eye on purchase spending. Managers can analyze purchase spending in the following ways:
 
--   Year-to-date purchase (by vendor group and individual vendors, procurement category and individual products, and vendor location)
--   Year-over-year purchase change (by vendor group and procurement category)
+- Year-to-date purchase (by vendor group and individual vendors, procurement category and individual products, and vendor location)
+- Year-over-year purchase change (by vendor group and procurement category)
 
 The content uses purchase transactional data, and provides both an aggregate view of the company-wide purchase figures and a breakdown of purchase spending by vendor and product. Reports highlight changes in purchase spending over time. Therefore, the reports can be used to alert managers about positive and negative spending trends for individual vendors and products. Additionally, charts show purchase spending for different procurement categories and vendor groups. Therefore, category and regional managers can use the charts to help identify changes in spending behavior.
 
 ## Accessing the Power BI content
-The **Purchase spend analysis** Power BI content is shown on the **Purchase and spend analysis** page (**Procurement and sourcing** > **Inquiries and reports** > **Purchase performance analysis** > **Purchase and spend analysis**). 
+The **Purchase spend analysis** Power BI content is shown on the **Purchase and spend analysis** page (**Procurement and sourcing** \> **Inquiries and reports** \> **Purchase performance analysis** \> **Purchase and spend analysis**).
 
 ## Metrics that are included in the Power BI content
 The **Purchase spend analysis** Power BI content includes a report that consists of a set of metrics. These metrics are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Report page</th>
 <th>Charts</th>
 <th>Tiles</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Purchase by vendor</td>
 <td><ul>
 <li>Top 10 vendors by purchase (stacked bar chart)</li>
@@ -80,7 +75,7 @@ The **Purchase spend analysis** Power BI content includes a report that consists
 <li>Total # of active vendors</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Purchase by product</td>
 <td><ul>
 <li>Purchase by procurement category / product name (column chart)</li>
@@ -93,7 +88,7 @@ The **Purchase spend analysis** Power BI content includes a report that consists
 <li>Number of products accounting for 80% purchase</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Purchase by period*</td>
 <td><ul>
 <li>Purchase by month / day (column chart)</li>
@@ -106,7 +101,7 @@ The **Purchase spend analysis** Power BI content includes a report that consists
 <li>YOY purchase growth %</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Purchase by vendor location</td>
 <td><ul>
 <li>Purchase by city</li>
@@ -115,7 +110,7 @@ The **Purchase spend analysis** Power BI content includes a report that consists
 </ul></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Purchase spend analysis by time</td>
 <td><ul>
 <li>Purchase current year by month / day (line chart)</li>
@@ -123,7 +118,7 @@ The **Purchase spend analysis** Power BI content includes a report that consists
 </ul></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Purchase spend analysis by vendor</td>
 <td><ul>
 <li>Top 10 vendor purchase % of purchase (funnel)</li>
@@ -140,7 +135,7 @@ The **Purchase spend analysis** Power BI content includes a report that consists
 ## Data model and entities
 The following data is used to fill the report pages in the **Purchase spend analysis** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
-The aggregate measurements in this content are the subset of aggregate measurements that were available in the Purchase Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3. To stage the cube’s aggregate measurements in the Entity store, you must make them deployable. For more information, see the procedure for staging aggregate measurements in the Entity store in [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). The following key aggregate measurements are available directly from the Invoice lines entity and are used as the basis of the content.
+The aggregate measurements in this content are the subset of aggregate measurements that were available in the Purchase Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3. To stage the cube's aggregate measurements in the Entity store, you must make them deployable. For more information, see the procedure for staging aggregate measurements in the Entity store in [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). The following key aggregate measurements are available directly from the Invoice lines entity and are used as the basis of the content.
 
 | Entity        | Key aggregate measurements | Data source                                 | Field              | Description                            |
 |---------------|----------------------------|---------------------------------------------|--------------------|----------------------------------------|

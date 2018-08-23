@@ -17,7 +17,7 @@ ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 193583
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a bill of lading
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to create a bill of lading when using warehouse management processes.  
 

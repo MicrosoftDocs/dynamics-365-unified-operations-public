@@ -17,7 +17,7 @@ ms.search.form: ReqDemPlanForecastParameters, ReqDemPlanOutlierQuerySetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72621
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Remove outliers from historical transaction data when calculating a demand forecast
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to exclude outliers from the historical data that is used to calculate a demand forecast. By excluding outliers, you can improve forecast accuracy.
 

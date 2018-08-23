@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  TrvParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Expense management parameters
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 -----------------------------
 

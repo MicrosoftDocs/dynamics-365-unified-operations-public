@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Image
+title: Image module
 description: Image control for representing images in the mobile app. Images can be of any of the following types&amp;58 DataUri, Base64, URL, AOTResource, or Symbol.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Image 
+# Image module
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Image control for representing images in the mobile app. Images can be of any of the following types: DataUri, Base64, URL, AOTResource, or Symbol.
 

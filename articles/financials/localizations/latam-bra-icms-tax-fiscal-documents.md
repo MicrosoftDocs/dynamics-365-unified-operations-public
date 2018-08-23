@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # ICMS tax fiscal documents for Brazil
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains the concept of tax fiscal documents and describes the requirements for generating them.
 

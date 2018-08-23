@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
@@ -25,13 +24,14 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: fdahl
-ms.search.validfrom: 2017-07-01
+ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
+
 ---
 
 # Extensibility FAQ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Will source code be available after the hard seal?
 

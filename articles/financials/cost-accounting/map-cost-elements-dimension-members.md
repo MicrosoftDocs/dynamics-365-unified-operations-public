@@ -17,14 +17,14 @@ ms.search.form: CAMDimension, CAMDimensionMember
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 223234
 ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
 ms.search.region: global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Map cost element dimension members to a common set of dimension members
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 By mapping different cost element dimension members to a common set of cost element dimension members, you merge data into a common format for analysis purposes.
 

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: MultiLookupMetadata
+title: MultiLookupMetadata type
 description: Multi-Lookup metadata type.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# MultiLookupMetadata Type
+# MultiLookupMetadata type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Multi-Lookup metadata type.
 

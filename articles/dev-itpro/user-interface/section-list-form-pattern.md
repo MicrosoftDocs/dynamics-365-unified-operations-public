@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Form Part Section List form patterns
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Form Part Section List form patterns. These workspace-specific patterns have been developed to show filtered lists inside workspaces.
 

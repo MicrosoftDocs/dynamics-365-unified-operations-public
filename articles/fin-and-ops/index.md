@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Finance and Operations Documentation
+title: Microsoft Dynamics 365 for Finance and Operations documentation
 description: Documentation for Microsoft Dynamics 365 for Finance and Operations. 
 author: margoc
 manager: AnnBe
@@ -29,8 +29,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Introduction to Microsoft Dynamics 365 for Finance and Operations
-[!INCLUDE [banner](includes/banner.md)]
+# Microsoft Dynamics 365 for Finance and Operations documentation
+[!include [banner](includes/banner.md)]
 
 Learn how to make Microsoft Dynamics 365 for Finance and Operations work for your business, using the resources below to find great content for end users, developers, and IT professionals. 
 
@@ -118,16 +118,16 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 </td>
 <td>
 <h3>Related products</h3>
-<h4><a href="../talent/index.md">Dynamics 365 for Talent</a></h4>
-<p><a href="../talent/manage-benefit-program.md">Benefits</a></p>
-<p><a href="../talent/performance-management-overview.md">Employee development and training</a></p>
-<p><a href="../talent/questionnaires.md">Questionnaire</a></p>
-
 <h4><a href="../retail/index.md">Dynamics 365 for Retail</a></h4>
 <p><a href="../retail/call-center-functionality.md">Call center</p>
 <p><a href="../retail/define-maintain-retail-channels.md">Channel setup and management</p>
 <p><a href="../retail/retail-peripherals-overview.md">MPOS and Cloud POS</p>
 <p><a href="../retail/dev-itpro/dev-retail-home-page.md">Retail developer and administration</p>
+
+<h4><a href="../talent/index.md">Dynamics 365 for Talent</a></h4>
+<p><a href="../talent/manage-benefit-program.md">Benefits</a></p>
+<p><a href="../talent/performance-management-overview.md">Employee development and training</a></p>
+<p><a href="../talent/questionnaires.md">Questionnaire</a></p>
 
 </td>
 </tr>

@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create and associate registers
+title: Create point of sale (registers)
 description: This procedure demonstrates how to create a point of sale (POS) register. 
 author: rubencdelgado
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: rubendel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create and associate registers
+# Create point of sale (registers)
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to create a point of sale (POS) register. This procedure uses the demo data company USRT.
 

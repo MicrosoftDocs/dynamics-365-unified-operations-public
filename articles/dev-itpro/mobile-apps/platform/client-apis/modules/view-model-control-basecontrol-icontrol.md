@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Control
+title: Control module
 description: Controls are what make up the content of a page.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Control 
+# Control module
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Controls are what make up the content of a page.
 

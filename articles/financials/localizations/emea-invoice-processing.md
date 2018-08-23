@@ -27,7 +27,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Invoice processing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax. Legal requirements for some European countries affect the invoicing process. This topic provides also an information about how customer and vendor invoices are processed for these countries. 
 <table>

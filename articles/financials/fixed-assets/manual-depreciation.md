@@ -3,7 +3,7 @@
 
 title: Manual depreciation
 description: This article gives an overview of the manual depreciation method.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: AssetDepreciationProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13811
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manual depreciation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article gives an overview of the manual depreciation method.
 

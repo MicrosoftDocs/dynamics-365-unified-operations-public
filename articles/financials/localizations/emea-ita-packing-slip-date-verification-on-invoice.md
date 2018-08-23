@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Packing slip date verification on invoices for Italy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 For Italy, the invoice date is verified on packing slips and invoice proposals. This topic provides additional information about the verification that occurs. 
 

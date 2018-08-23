@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-[!INCLUDE [banner](../../includes/banner.md)]
+# Mobile platform for Finance and Operations
+
+[!include [banner](../../includes/banner.md)]
 
 This topic has been replaced with the [Getting started with the mobile platform](mobile-platform-getting-started.md) and [Architecture and design considerations for the mobile app platform](mobile-platform-architecture.md) topics.

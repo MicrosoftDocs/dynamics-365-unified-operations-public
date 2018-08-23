@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Upgrade from AX 2012 - Data upgrade in a sandbox environment
+title: Upgrade from AX 2012 - Data upgrade in sandbox environments
 description: This topic explains how to perform a data upgrade from Dynamics AX 2012 to Dynamics 365 for Finance and Operations in a sandbox environment. 
 author: tariqbell
 manager: AnnBe
 
-ms.date: 03/22/2018
+ms.date: 06/06/2018
 
 ms.topic: article
 ms.prod: 
@@ -29,11 +29,11 @@ ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Upgrade from AX 2012 - Data upgrade in a sandbox environment
+# Upgrade from AX 2012 - Data upgrade in sandbox environments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [upgrade banner](../includes/upgrade-banner.md)]
+[!include [upgrade banner](../includes/upgrade-banner.md)]
 
 The output of this task is an upgraded database that you can use in a sandbox environment. In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database. On this environment business users and functional team members can validate application functionality. This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.
 
@@ -49,11 +49,20 @@ Before you start to upgrade data in a sandbox environment, you will have already
 
 Here are the high-level steps in the upgrade process.
 
-1. Create a copy of the AX 2012 database. We strongly recommend that you use a copy, because you must delete some objects in the copy that will be exported.
-2. Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
-3. Upload the bacpac file to Azure storage.
-4. Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe. You must then run a script against the imported database to reset the SQL database users.
-5. Run the appropriate data upgrade package against the imported database.
+1. Turn off the AX 2012 AOS instances.
+2. Create a copy of the AX 2012 database. We strongly recommend that you use a copy, because you must delete some objects in the copy that will be exported.
+3. Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
+4. Upload the bacpac file to Azure storage.
+5. Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe. You must then run a script against the imported database to reset the SQL database users.
+6. Run the appropriate data upgrade package against the imported database.
+
+## Turn off the AX 2012 AOS instances
+
+This task involves the AX 2012 system administrator and the server administrators.
+
+Before you turn off AOS instances, you must stop all batch jobs that are running. A long-running batch job that has already started to run will prevent the system from stopping. Plan ahead, so that you can stop your AOS instances when needed. You might have to schedule batches so that they're completed some time before you turn off AX 2012.
+
+You might have other systems that are integrated with the AX 2012 environment. You must also factor these systems into your plan to turn off AX 2012. For example, you might have to turn off the integrated systems some time before you turn off AX 2012 itself, so that any remaining in-flight transactions can be completed. The requirements for integrated systems vary widely from business to business. Therefore, your team of experts must plan for this scenario independently.
 
 ## Create a copy of the AX 2012 database
 

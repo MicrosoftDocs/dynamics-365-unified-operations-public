@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  TAMVendRebateAgreement
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: no wiki topic
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 2012
 ---
 
 # Vendor rebates
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Vendor rebates help companies better manage their supplier rebate programs by automating tasks that are required in order to administer, track, and claim rebates that are earned.
 

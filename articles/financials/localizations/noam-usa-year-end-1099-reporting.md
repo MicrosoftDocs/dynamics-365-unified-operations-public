@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Year-end 1099 reporting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information to the U.S. tax authorities at the end of the calendar year. The vendors are typically individuals who are not employees and who provide services to your organization. You must also send a statement to each 1099 vendor that you do business with, informing them of the amount that you are reporting to the tax authorities.
 

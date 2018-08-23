@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: On-premises deployment
+title: On-premises deployments home page
 description: This topic provides information and links to content about on-premises deployments.
 author: kfend
 manager: AnnBe
-ms.date: 03/15/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,9 +29,9 @@ ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 
 ---
-# On-premises deployment home page
+# On-premises deployments home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises). When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment. This topic provides links to content that contains information specific to on-premises deployments.
 
@@ -66,5 +66,5 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises). 
 - [Troubleshoot Dynamics 365 for Finance and Operations on-premises](troubleshoot-on-prem.md)
 - [Features not implemented in on-premises deployments](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Deprecated features](../migration-upgrade/deprecated-features.md)
-- [Software lifecycle policy and list of releases](../migration-upgrade/versions-update-policy.md)
+- [Software lifecycle policy and on-premises releases](../migration-upgrade/on-prem-version-update-policy.md)
  

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Online store overview
+title: Set up online stores
 description: This article provides information about Retail online stores and how to set them up in Microsoft Dynamics 365 for Retail.
 author: kfend
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Online store overview
+# Set up online stores
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This article provides information about Retail online stores and how to set them up in Microsoft Dynamics 365 for Retail.
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manage third-party models and runtime packages using source control
+title: Manage third-party models and runtime packages by using source control
 description: This topic outlines a recommended strategy for managing, distributing, and deploying third-party solutions.
 author: jorisdg
 manager: AnnBe
-ms.date: 05/25/2017
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage third-party models and runtime packages by using source control
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Customers that work with solutions from third parties might receive different solution artifacts to use in their solution. Typically, these artifacts are distributed as code (in the form of models) or binaries (in the form of deployable packages). In some cases, third parties might provide some parts of their solution as code and other parts as a binary.
 
@@ -55,7 +55,7 @@ After you install the model, follow these steps to add the new model to source c
 5. Open Source Control Explorer by clicking **View** > **Other Windows** > **Source Control Explorer**.
 6. Navigate to the metadata folder that is mapped on this development VM, such as **MyProject/Trunk/Main/Metadata**.
 7. In the metadata folder, find the folder for the package that contains the new model. Right-click the package folder, and then click **Add Items to Folder**.
-9. In the **Add to Source Control** dialog box, select the **Descriptor** folder and the folder that has the name of the model, and then click **Next**.
+9. In the **Add to Source Control** dialog box, select the **Descriptor** folder and the folder that has the name of the model. Some models may also contain referenced DLLs in the **bin** folder. If these exist you'll need to also include the approriate DLL files from the **bin** folder. Once all files have been selected, click **Next**.
 10. Review the items that will be added, and then, when you're ready, click **Finish**.
 11. Open the **Pending Changes** window from the **Team Explorer** pane or by clicking **View** > **Other Windows** > **Pending Changes**.
 12. Review the changes, enter a check-in comment, and then click **Check In**.

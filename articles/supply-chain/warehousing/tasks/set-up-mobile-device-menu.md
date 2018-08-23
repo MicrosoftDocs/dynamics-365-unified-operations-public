@@ -3,7 +3,7 @@
  
 title: Set up a mobile device menu item for completing work in a purchase order
 description: This procedure shows how to set up a Mobile device menu item. 
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 08/25/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up a mobile device menu item for completing work in a purchase order
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to set up a Mobile device menu item. In this example, the menu item is used for performing work of type Purchase order. The work class that’s associated with the menu item determines which work is valid. You can use this guide in demo data company USMF. This procedure is typically carried out by a warehouse manager.
 

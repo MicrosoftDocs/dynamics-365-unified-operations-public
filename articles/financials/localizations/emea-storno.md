@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Storno accounting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Storno accounting is the practice of using negative numbers to reverse original journal account entries.
 

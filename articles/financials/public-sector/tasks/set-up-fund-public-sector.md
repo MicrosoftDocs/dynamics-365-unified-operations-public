@@ -3,7 +3,7 @@
  
 title: Set up a fund in the public sector
 description: Fund types must be created before you set up funds. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up a fund in the public sector
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Fund types must be created before you set up funds. Each fund must have a name and a unique number, and must be assigned a fund type and fund class. This procedure was created using the PSUS demo company data in the public sector partition.
 

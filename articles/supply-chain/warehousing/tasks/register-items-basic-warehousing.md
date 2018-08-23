@@ -3,7 +3,7 @@
  
 title: Register items for a basic warehousing enabled item using an item arrival journal
 description: This procedure shows you how to register items using the item arrival journal when you are using “basic warehousing” in the Inventory management module. 
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,20 +16,20 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 
 ---
 # Register items for a basic warehousing enabled item using an item arrival journal
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to register items using the item arrival journal when you are using “basic warehousing” in the Inventory management module. This would usually be done by a receiving clerk. You can run this procedure in demo data company USMF with the example values that are shown.  If you are not using USMF, you need to have a confirmed purchase order with an open purchase order line before you start this guide. The item on the line must be stocked, and it must not use product variants, and must not have tracking dimensions. And the item needs to be associated with a storage dimension group, where site and warehouse are active.
 

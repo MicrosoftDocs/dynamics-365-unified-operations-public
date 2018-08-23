@@ -3,7 +3,7 @@
  
 title: Approve a product configuration model
 description: Running this procedure requires that at least one product configuration model is available. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Approve a product configuration model
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Running this procedure requires that at least one product configuration model is available. This procedure uses the High end speaker model in the demo data company USMF. Note that this model has already been approved, but the procedure walks you through the entire process.
 

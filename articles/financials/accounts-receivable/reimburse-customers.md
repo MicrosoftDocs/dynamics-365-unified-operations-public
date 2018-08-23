@@ -17,7 +17,7 @@ ms.search.form: LedgerJournalTransCustPaym, LedgerJournalTransVendPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14191
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reimburse customers
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to create reimbursement transactions for a group of customers. If a customer has a credit balance, you can reimburse the customer for the amount of the balance. 
 

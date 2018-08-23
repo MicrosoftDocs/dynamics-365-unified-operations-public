@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Development tools overview
+title: Development tools in Visual Studio
 description: Visual Studio 2015 is the exclusive integrated development environment (IDE) for development.
 author: robadawy
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Development tools overview
+# Development tools in Visual Studio
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## What are the development tools?
 A notable change from Microsoft Dynamics AX 2012 is that Microsoft Dynamics 365 for Finance and Operations does not include a rich-client application (ax32.exe). From a development perspective, this means that the Microsoft Dynamics AX 2012 development environment, MorphX, is no longer used. In its place, the application development is carried out exclusively in Visual Studio. The development tools support all of the development tasks, including debugging and local testing scenarios. A primary goal of the development experience is to keep familiar Microsoft Dynamics AX 2012 concepts, and seamlessly adapt them to the Visual Studio framework and paradigms.

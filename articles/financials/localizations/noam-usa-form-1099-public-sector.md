@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Form 1099 in the public sector
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides tips and information about how to set up Form 1099 functionality for Accounts payable in the public sector.
 

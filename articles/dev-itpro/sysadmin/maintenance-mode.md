@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Maintenance mode
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about maintenance mode in Microsoft Dynamics 365 for Finance and Operations. Maintenance mode is a new system-wide setting that lets system administrators safely make system changes that might affect system functionality.
 

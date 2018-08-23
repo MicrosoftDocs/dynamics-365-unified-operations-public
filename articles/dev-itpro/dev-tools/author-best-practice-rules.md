@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Authoring best practices
+title: Write best practice rules
 description: This topic describes how you can author best practice rules in C#, for both metadata and X++ code. 
 author: pvillads
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Authoring best practices
+# Write best practice rules
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how you can author best practice rules in C#, for both metadata and X++ code. Best practice checks are run by the compiler and in daily builds to catch objectionable practices that are unacceptable in shipping code. The features can also be used to author simple one-of tools to gather information about the application.
 

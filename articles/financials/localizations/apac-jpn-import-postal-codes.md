@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Import postal codes for Japan
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In Japan, the Japan Postal Office provides a ZIP code file that you can import into Microsoft Dynamics 365 for Finance and Operations. This topic walks you through the process for importing ZIP/postal codes. This example uses the JPMF demo data company.
 

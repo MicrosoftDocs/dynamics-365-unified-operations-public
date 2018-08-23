@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Corrective invoicing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  > [!NOTE]
  > This topic applies to legal entities with a primary address in Denmark, Germany, France, Ireland, the Netherlands, or the United Kingdom.

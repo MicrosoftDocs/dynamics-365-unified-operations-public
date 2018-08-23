@@ -21,14 +21,14 @@ ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark
-# ms.search.industry: 
+ms.search.industry: Public Sector
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create and post a free text invoice for a public sector customer (Denmark)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through creating and posting a free text invoice for a customer using OIOUBL electronic invoicing. 
 

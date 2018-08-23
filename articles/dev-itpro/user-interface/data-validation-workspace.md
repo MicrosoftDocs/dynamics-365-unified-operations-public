@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Data validation workspace
+title: Data validation checklist workspace
 description: The Data validation checklist workspace lets you track data validation processes across companies, areas, and people. The checklist can be used during a new implementation, after an upgrade, or after a migration.
 author: bking
 manager: AnnBe
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  DataValidationWorkspace
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -27,9 +27,9 @@ ms.author: bking
 
 ---
 
-# Data validation workspace
+# Data validation checklist workspace
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the **Data validation checklist workspace** and
 the associated configuration.

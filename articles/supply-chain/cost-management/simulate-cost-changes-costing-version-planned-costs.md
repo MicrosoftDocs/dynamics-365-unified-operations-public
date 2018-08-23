@@ -17,7 +17,7 @@ ms.search.form: CostingVersion
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78183
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Simulate cost changes by using a costing version for planned costs
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how you can simulate the effects of cost changes on a manufactured item’s calculated costs by using a separate costing version for planned costs.
 

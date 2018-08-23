@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ statements, loops, and exception handling
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes statements, loops, and exception handling in X++.
 

@@ -17,7 +17,7 @@ ms.search.form: InventJournalCount, InventJournalCountTag
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm:
 ms.custom: 11594
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inventory tag counting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This article provides information about tag counting, which you use to compare the actual contents of a warehouse with the on-hand inventory.
 

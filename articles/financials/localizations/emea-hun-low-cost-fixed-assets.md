@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Low-cost fixed assets
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about low-cost fixed assets for Hungary.
 

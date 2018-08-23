@@ -3,7 +3,7 @@
  
 title: Define configuration routes
 description: This procedure focuses on defining a configuration route that determines the sequence in which the configuration groups will be presented. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Define configuration routes
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure focuses on defining a configuration route that determines the sequence in which the configuration groups will be presented. The demo data company used to create this procedure is USMF. This is the sixth procedure out of eight that explains how to build combinations for dimension-based configuration.
 

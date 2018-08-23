@@ -17,7 +17,7 @@ ms.search.form: CashDisc
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3741
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cash discounts
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Cash discounts are setup and shared for Accounts payable and Accounts receivable.  The cash discount available can be defined on the customer invoice or vendor invoice, and will be taken if the invoice is paid within the cash discount date. 
 

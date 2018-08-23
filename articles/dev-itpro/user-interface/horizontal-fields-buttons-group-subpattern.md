@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Horizontal Fields and Buttons Group subpattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Horizontal Fields and Buttons Group form subpattern. This subpattern is used when actions must be defined for an individual field on a form.
 

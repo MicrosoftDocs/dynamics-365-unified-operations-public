@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Generate earnings
+title: Generate earnings for workers
 description: This topic describes the various ways that you can generate earnings for workers. You can automatically generate earnings for salaried positions, for positions that use a schedule, and for recurring earnings, premium earnings, and retroactive earnings. You can also enter earnings manually.
 author: rschloma
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Generate earnings
+# Generate earnings for workers
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the various ways that you can generate earnings for workers. You can automatically generate earnings for salaried positions, for positions that use a schedule, and for recurring earnings, premium earnings, and retroactive earnings. You can also enter earnings manually.
 

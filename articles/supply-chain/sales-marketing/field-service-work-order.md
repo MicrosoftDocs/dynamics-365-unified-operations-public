@@ -18,7 +18,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -164,7 +164,7 @@ Synchronization of **Estimated** values versus **Used** values is managed throug
     - **Product line:** Estimated Qty = 5ea, Used Qty = 6ea, Line Status = Used, Allocated = Yes
     - **Service line:** Estimated Qty = 2h, Used Qty = 1.5h, Line Status = Used
 
-    In this example, the product's **Used Qty** value of **6** and the service's **Estimated Qty** of **1.5h** are synchronized to Finance and Operations.
+    In this example, the product's **Used Qty** value of **6** and the service's **Used Qty** of **1.5h** are synchronized to Finance and Operations.
 
 ## Sales order origin and status
 
@@ -236,6 +236,51 @@ Work order integration requires that you set up the sales origin. The sales orig
 6. Set the **Sales origin type** field to **Work order integration**.
 7. Select **Save**.
 
-### Template mapping in Data integration
 
-(Comming soon)
+### Setup in Data integration
+
+Ensure the **Integration key** exist for **msdyn_workorders**
+1. Go to Data Integration
+2. Select **Connection Set** tab
+3. Select the Connection set used for Work order synchronization
+4. Select **Integration key** tab
+5. Find msdyn_workorders and check that the key **msdyn_name (Work Order Number)** is added. If it is not shown, add it by click **Add key** and click **Save** in the top of the page
+
+## Template mapping in Data integration
+
+The following illustrations show the template mapping in Data integration.
+
+### Work orders to Sales orders (Field Service to Fin and Ops): WorkOrderHeader
+
+Filter: 
+(msdyn_systemstatus ne 690970005) and (msdyn_systemstatus ne 690970000) and (msdynce_hasexternallymaintainedproductsonly eq true)
+
+[![Template mapping in Data integration](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+
+### Work orders to Sales orders (Field Service to Fin and Ops): WorkOrderServiceLineEstimate
+
+Filter: 
+(msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004)
+
+[![Template mapping in Data integration](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+
+### Work orders to Sales orders (Field Service to Fin and Ops): WorkOrderServiceLineUsed
+
+Filter:
+(msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and ((msdyn_linestatus eq 690970001) or (msdynce_headersystemstatus eq 690970004))
+
+[![Template mapping in Data integration](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+
+### Work orders to Sales orders (Field Service to Fin and Ops): WorkOrderProductLineEstimate
+
+Filter:
+(msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004) and (msdyn_allocated eq true)
+
+[![Template mapping in Data integration](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+
+### Work orders to Sales orders (Field Service to Fin and Ops): WorkOrderProductLineUsed
+
+Filter:
+(msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) and (msdynce_orderhasexternalmaintainedproductsonly eq true) and ((msdyn_linestatus eq 690970001) or (msdynce_headersystemstatus eq 690970004) or (msdyn_allocated ne true))
+
+[![Template mapping in Data integration](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)

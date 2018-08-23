@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure the code upgrade service in Lifecycle Services
+title: Configure the code upgrade service in Lifecycle Services (LCS)
 description: This topic explains how to configure the <strong>Code upgrade </strong>tile in Lifecycle Services (LCS) to migrate your solution to the latest version of Finance and Operations.
 author: tariqbell
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure the code upgrade service in Lifecycle Services
+# Configure the code upgrade service in Lifecycle Services (LCS)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure the <strong>Code upgrade </strong>tile in Lifecycle Services (LCS) to migrate your solution to the latest version of Dynamics 365 for Finance and Operations.
 
@@ -41,17 +41,21 @@ Overview
 
 The code upgrade tool operates by connecting to Visual Studio Team Services (VSTS), locating your Trunk\\Main branch, branching to a new branch which will be named as Releases\\\<version number\>, and then performing the code upgrade there. After this process is complete you can synchronize your Finance and Operations developer environment to this new branch under Releases\\\<version number\> and resolve conflicts. When you have compiled and tested your upgraded code you can merge the new branch back into Trunk\\Main, using source control explorer in Visual Studio and the process is complete.
 
+Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have have a plan to refactor your customizations into extensions. For more information, see the [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
+
 ## Process
 ### Create the Trunk\\Main folder structure
 
 For the code upgrade service to recognize your source code, the folder structure must conform to the following strict pattern. The correct structure is: 
-- For code itself: ..\\\<VSTS project name>\\Trunk\\Main\\Metadata
-- For Visual Studio projects: ..\\\<VSTS project name>\\Trunk\\Main\\Metadata
 
-  To create new folders in VSTS, create the folders locally and then check them into VSTS.
+ - For code itself: ..\\\<VSTS project name>\\Trunk\\Main\\Metadata
+ - For Visual Studio projects: ..\\\<VSTS project name>\\Trunk\\Main\\Projects
+ 
+ To create new folders in VSTS, create the folders locally and then check them into VSTS.
+ 
+ > [!NOTE]
+ > Folder names are case sensitive, that is, you must use Main and not MAIN, or the code upgrade service will not recognize the folder. 
 
-  > [!NOTE]
-  > Folder names are case sensitive, that is, you must use Main and not MAIN, or the code upgrade service will not recognize the folder. 
 
 ### To create a personal access token
 
@@ -108,7 +112,7 @@ For more information about how to identify which application version you have, s
 
 ### Merge Releases back into Trunk\\Main
 
-Once the upgraded code in Releases\\\<version number\> compiles and has passed your tests, then you are ready to merge this branch back into Trunk\\Main. To do this, on your development environment in Visual Studio open the Source control explorer pane then right-click on the **Releases\\\<version number\>** branch and in the context menu go to **Branching and Merging** and then on the sub-menu select **Merge**.
+Once the upgraded code in Releases\\\<version number\> compiles sucessfully and has passed your tests, then you are ready to merge this branch back into Trunk\\Main. To do this, on your development environment in Visual Studio open the Source control explorer pane then right-click on the **Releases\\\<version number\>** branch and in the context menu go to **Branching and Merging** and then on the sub-menu select **Merge**.
 
 [![Merge release branch](./media/MergeReleasesBranch.PNG)](./media/MergeReleasesBranch.PNG)
 

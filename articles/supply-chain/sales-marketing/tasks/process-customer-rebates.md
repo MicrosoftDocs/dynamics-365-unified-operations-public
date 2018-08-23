@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Generate and process customer rebates
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to process customer rebates from claim generation to the point of passing them as accruals to Accounts receivable. It walks you through a specific example to explain how the various conditions on the rebate lines affect the final amounts that will be credited to the customer. You need to use the USMF demo data company, and carry out the following tasks before you start the guide: (1) Go to the Accounts receivable parameters page, and expand the Prices tab and then the Price details tab, and check that the Enable price details option is set to Yes. (2) Go to the Rebate agreements page and select the customer rebate agreement: USMF-000001. If the Workflow approval status field is not set to Approved, you need click Validation on the Action pane to approve it.
 

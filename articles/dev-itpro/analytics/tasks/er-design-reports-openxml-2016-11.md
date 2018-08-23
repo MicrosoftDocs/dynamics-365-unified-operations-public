@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Design a configuration for generating reports in OpenXML format for electronic reporting (ER)
+title: Design ER configurations to generate reports in OpenXML format
 description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating electronic documents in OPENXML format. 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Design a configuration for generating reports in OpenXML format for electronic reporting (ER)
+# Design ER configurations to generate reports in OpenXML format
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating electronic documents in OPENXML format. This configuration will be used for processing vendor payments.
 

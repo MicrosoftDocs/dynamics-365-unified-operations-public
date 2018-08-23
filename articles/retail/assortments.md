@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Application update 5
 ---
 
 # Assortment management
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Overview
 Microsoft Dynamics 365 for Retail provides *assortments* that let you manage product availability across channels. Assortments determine which products are available at specific stores and during a specific period.

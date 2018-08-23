@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 # Before you buy 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 New to Dynamics 365 for Finance and Operations? We've put together step-by-step guidance whether you’re still evaluating Finance and Operations or ready to make a purchase.
 

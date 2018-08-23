@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Talent system requirements and update policy
+title: Talent system requirements and update policy
 description: This topic lists requirements for Dynamics 365 for Talent. The update policy is outlined, as well.
 author: rschloma
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# Microsoft Dynamics 365 for Talent system requirements and update policy
+# Talent system requirements and update policy
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic lists requirements for Microsoft Dynamics 365 for Talent. The update policy is outlined, as well.
 

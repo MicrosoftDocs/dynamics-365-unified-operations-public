@@ -17,7 +17,7 @@ ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfil
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11554
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Warehouse configuration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
 

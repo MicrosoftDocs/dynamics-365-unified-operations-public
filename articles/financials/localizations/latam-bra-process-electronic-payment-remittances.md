@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Process electronic payment remittances for Brazil
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Use this functionality to create the file that must be sent to the bank with the instructions for electronic payment of vendor invoices.
 

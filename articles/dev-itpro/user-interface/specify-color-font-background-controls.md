@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Font and background colors for input, table, and grid controls
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the new color picker control that lets users select a color.
 

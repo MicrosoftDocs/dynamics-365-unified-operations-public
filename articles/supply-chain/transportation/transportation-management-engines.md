@@ -17,7 +17,7 @@ ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateE
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12234
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Transportation management engines
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Transportation management engines define the logic that is used to generate and process transportation rates in Transportation management. 
 

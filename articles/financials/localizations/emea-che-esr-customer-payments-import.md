@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # ESR customer payments import
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about importing customer payments in the ESR format.
 

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 4
 ---
 # Extensibility home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations is customized extensively by partners, value added resellers (VARs), and even some customers. This is a strength of the product that historically has been supported through overlayering of the application code. The move to the cloud with more agile servicing and frequent updates requires a less intrusive customization model, which makes updates less likely to impact custom solutions. This new model is called *extensibility* and has replaced customization by overlayering. 
 
@@ -59,7 +59,7 @@ Getting started gets you going with building extensions and migrating a current 
 + [Migrate from overlayering to extensions](migrate-overlayer-extension.md)
 + [Customize model elements using extensions (tutorial)](customize-model-elements-extensions.md)
 + [Customization: overlayering and extensions](customization-overlayering-extensions.md)
-+ [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)
+<!--+ [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)-->
 
 ## Extensibility fundamentals
 
@@ -69,6 +69,7 @@ Extensibility fundamentals includes principles and practices for how to make ext
 + [Class extensions](class-extensions.md)
 + [Class extension: Method wrapping and Chain of Command](method-wrapping-coc.md)
 + [Naming guidelines](naming-guidelines-extensions.md)
++ [Relax model restrictions to enable the refactoring of over-layering into extensions](refactoring-over-layering.md)
   
 ## How do I..?
 

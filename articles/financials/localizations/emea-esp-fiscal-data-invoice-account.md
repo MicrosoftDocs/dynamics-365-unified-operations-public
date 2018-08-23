@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Use fiscal data from the invoice account
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 For legal entities in Spain, the Use fiscal data from invoice account functionality enables fiscal data on sales orders, free text invoices, and purchase orders to be updated automatically, based on information from the invoice account. This topic provides information about the Use fiscal data from invoice account functionality and explains how to set it up.
 

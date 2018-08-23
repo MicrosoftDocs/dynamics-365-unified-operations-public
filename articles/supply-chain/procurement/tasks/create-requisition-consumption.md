@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a requisition for consumption
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through the process of creating a requisition. It shows you different ways to search for products in your procurement catalog and how to add a product that isn’t in your catalog. Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition. You can walk through this procedure in demo data company USMF, or using your own data. The procedure can only be carried out by a user profile that is set up as worker.  This task would normally be carried out by an employee. The Employee employ security role will allow you to carry out the tasks, or if you’re using USMF, you can log in as Alicia.
 

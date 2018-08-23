@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # File upload control
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the file upload control. This control lets users upload files.
 

@@ -17,7 +17,7 @@ ms.search.form: CashDisc, CollectionLetterCourse, CreditCardProcessors, CustAgin
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24631
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure Accounts receivables and Credit and collections
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.
 

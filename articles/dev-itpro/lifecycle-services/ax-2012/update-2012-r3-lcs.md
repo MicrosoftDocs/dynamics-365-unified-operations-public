@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Updates for Dynamics AX 2012 R3
+title: Updates for AX 2012 R3 in Lifecycle Services (LCS)
 description: This topic provides information about the Updates page on Lifecycle Services which hosts the update installer that is used for cumulative updates for Microsoft Dynamics AX 2012 R3.
 author: kfend
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Updates for Dynamics AX 2012 R3
+# Updates for AX 2012 R3 in Lifecycle Services (LCS)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The Updates page on Microsoft Dynamics Lifecycle Services hosts the update installer for Microsoft Dynamics AX 2012 R3 that is used for cumulative updates. It also provides access to groups of updates that can be used for slipstream installations.
 

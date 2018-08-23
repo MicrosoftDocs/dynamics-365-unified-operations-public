@@ -17,7 +17,7 @@ ms.search.form:  JmgProdParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Production parameters in Manufacturing execution
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the setup of production parameters in Manufacturing execution.
 

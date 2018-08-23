@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Financial dimensions and main accounts in a right-to-left language
+title: Financial dimensions and main accounts in right-to-left languages
 description: This topic describes some of the implementation decisions that you should consider when you use a right-to-left language, and you must set up financial dimensions and main accounts.
 author: aprilolson
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222564
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Financial dimensions and main accounts in a right-to-left language
+# Financial dimensions and main accounts in right-to-left languages
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes some of the implementation decisions that you should consider when you use a right-to-left language, and you must set up financial dimensions and main accounts.
 

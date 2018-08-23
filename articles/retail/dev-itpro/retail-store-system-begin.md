@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail Store Scale Unit overview
+title: Retail Store Scale Unit
 description: This topic describes the Retail Store Scale Unit and when to use it.
 author: athinesh99
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Retail Store Scale Unit overview
+# Retail Store Scale Unit
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the Retail Store Scale Unit and when to use it.
 

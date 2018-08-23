@@ -3,7 +3,7 @@
 
 title: Post with derived books
 description: This article describes how to use derived books.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: AssetBookTable, LedgerJournalTransAsset
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3421
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Post with derived books
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to use derived books.
 

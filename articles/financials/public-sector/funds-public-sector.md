@@ -3,7 +3,7 @@
 
 title: Funds in the public sector
 description: A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements. Public-sector organizations use funds to demonstrate their fiscal accountability.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/07/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: LedgerFund, LedgerFundType
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19571
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Funds in the public sector
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements. Public-sector organizations use funds to demonstrate their fiscal accountability.
 

@@ -3,7 +3,7 @@
 
 title: Ledger allocation rules
 description: This article provides information about ledger allocation rules. It describes the various components of these allocation rules and the allocation methods that can be used for them.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationReq
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15402
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Ledger allocation rules
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about ledger allocation rules. It describes the various components of these allocation rules and the allocation methods that can be used for them.
 

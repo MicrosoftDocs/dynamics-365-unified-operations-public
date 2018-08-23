@@ -17,7 +17,7 @@ ms.search.form: BOMConfigRule, BOMTable, ConfigChooseFromRoute, ConfigGroup, Con
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19821
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dimension-based product configuration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dimension-based product configuration represents a simple solution for creating many product variants from a single product master and its bill of materials.
 

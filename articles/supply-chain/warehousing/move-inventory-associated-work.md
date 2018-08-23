@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  WHSWorker
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Movement of inventory with associated work in Warehouse management
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Using movement of inventory, you can decide which warehouse workers are allowed to move reserved inventory. This provides a flexibility in regulated warehouses where you can decide to not allow a worker to choose a new pick location for pick work that is already created. It also allows a warehouse manager to control which capabilities some less experienced workers should have.
 

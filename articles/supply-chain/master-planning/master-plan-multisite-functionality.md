@@ -17,7 +17,7 @@ ms.search.form: InventLocation, InventSite
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2434
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Master planning and multisite functionality
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Master planning takes the settings of the site and warehouse inventory dimensions into account. 
 

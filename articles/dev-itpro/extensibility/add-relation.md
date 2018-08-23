@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Add a relation to a table
+title: Add relations to tables through extension
 description: This topic explains how to add a relation to a table.
 author: ivanv-microsoft
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.search.scope: Operations
 ms.custom: 268724
 ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
+ms.search.industry: 
 ms.author: ivanv
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 4
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Add a relation to a table
+# Add relations to tables through extension
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 To enable rich and secure interactions with data in multiple tables, you must help guarantee referential integrity by defining relations that describe the link between two tables. By defining relations, you enable validation of the data that is entered and lookup capabilities for the related information. 
 

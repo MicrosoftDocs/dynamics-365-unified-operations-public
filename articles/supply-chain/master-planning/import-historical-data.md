@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  ReqDemPlanCreateForecastDialog
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Import historical data for demand forecasts
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 To help guarantee the accuracy of demand forecasts, you must have as much historical demand data as you can get per item or item allocation key. If the historical demand data isn't already imported, use the **Historical external demand** (ReqDemPlanHistoricalExternalDemandEntity) data entity in Microsoft Dynamics 365 for Finance and Operations to import it.
 

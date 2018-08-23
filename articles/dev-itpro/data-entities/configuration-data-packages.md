@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # Configuration data packages
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > This topic applies only to the July 2017 release of Microsoft Dynamics 365 for Finance and Operations. If you are running a later release, refer to the topic [Copy configuration](copy-configuration.md). 
@@ -50,11 +50,11 @@ For more information about the type of data that is included in each entity spre
 ## Using configuration data packages
 You can access configuration data packages from LCS. You can either apply them to an LCS environment, or download them so that you can manually import them into Finance and Operations.
 
-1.  Open your LCS project, and open the Asset library.
-2.  In the list of asset types, select **Process data package**.
-3.  Click **Import**.
-4.  Select the configuration data package.
-5.  Click **Pick**.
+1. Open your LCS project, and open the Asset library.
+2. In the list of asset types, select **Process data package**.
+3. Click **Import**.
+4. Select the configuration data package.
+5. Click **Pick**.
 
 At this point, you can use the **Consume** function to apply the process data package to an LCS environment. 
 
@@ -275,57 +275,56 @@ A generic chart of accounts is included in the configuration data packages. When
 
 ### 140 – AR
 
-|                                                         |      Spreadsheet content       |                              |                          |
-|---------------------------------------------------------|--------------------------------|------------------------------|--------------------------|
-|           <strong>Entity spreadsheet</strong>           | <strong>Business data</strong> | <strong>Sample data</strong> | <strong>No data</strong> |
-|                Aging period definitions                 |               X                |                              |                          |
-|                    Business segments                    |                                |                              |            X             |
-|                  Business subsegments                   |                                |                              |            X             |
-|                      Cash discount                      |                                |                              |            X             |
-|     Collection letter form printing configurations      |                                |                              |            X             |
-|                 Collection letter setup                 |               X                |                              |                          |
-|                 Commission calculation                  |                                |                              |            X             |
-|                Commission customer group                |                                |                              |            X             |
-|                  Commission item group                  |                                |                              |            X             |
-|                 Commission sales group                  |                                |                              |            X             |
-| Customer account statement form printing configurations |                                |                              |            X             |
-|                 Customer bank accounts                  |                                |                              |            X             |
-|                 Customer charge groups                  |                                |                              |            X             |
-|                  Customer definitions                   |                                |                              |            X             |
-|                    Customer details                     |                                |                              |            X             |
-|      Customer facing form printing configurations       |                                |                              |            X             |
-|                     Customer groups                     |                                |              X               |                          |
-|                Customer ledger accounts                 |               X                |                              |                          |
-|                   Customer parameters                   |               X                |                              |                          |
-|                  Customer payment fee                   |                                |                              |            X             |
-|          Customer payment method specification          |                                |                              |            X             |
-|                 Customer payment method                 |                                |              X               |                          |
-|                Customer posting profiles                |               X                |                              |                          |
-|                    Customer reasons                     |                                |                              |            X             |
-|             Customer write-off reason codes             |               X                |                              |                          |
-|                        Customers                        |                                |                              |            X             |
-|                 Delivery charges groups                 |                                |                              |            X             |
-|                     Expedite codes                      |                                |                              |            X             |
-|     Free text invoice form printing configurations      |                                |                              |            X             |
-|                Interest codes with fees                 |                                |                              |            X             |
-|               Interest codes with ranges                |                                |                              |            X             |
-|                     Interest codes                      |               X                |                              |                          |
-|       Interest note form printing configurations        |                                |                              |            X             |
-|                   Item charge groups                    |                                |                              |            X             |
-|              Line discount customer groups              |                                |                              |            X             |
-|                    Line of business                     |                                |                              |            X             |
-|                    Modes of delivery                    |                                |                              |            X             |
-|                    Payment calendar                     |                                |                              |            X             |
-|                    Payment day lines                    |                                |                              |            X             |
-|                 Payment schedule lines                  |                                |                              |            X             |
-|                    Payment schedule                     |                                |                              |            X             |
-|                  Price customer groups                  |                                |                              |            X             |
-|                   Printed form notes                    |                                |                              |            X             |
-|                   Sales charge codes                    |                                |                              |            X             |
-|                     Sales districts                     |                                |                              |            X             |
-|                    Sales order pools                    |                                |                              |            X             |
-|                    Statistics group                     |                                |                              |            X             |
-|                    Terms of delivery                    |                                |                              |            X             |
-|                    Terms of payment                     |                                |                              |            X             |
-|             Total discount customer groups              |                                |                              |            X             |
-
+|                                                         | Spreadsheet content |                 |             |
+|---------------------------------------------------------|---------------------|-----------------|-------------|
+| **Entity spreadsheet**                                  | **Business data**   | **Sample data** | **No data** |
+| Aging period definitions                                | X                   |                 |             |
+| Business segments                                       |                     |                 | X           |
+| Business subsegments                                    |                     |                 | X           |
+| Cash discount                                           |                     |                 | X           |
+| Collection letter form printing configurations          |                     |                 | X           |
+| Collection letter setup                                 | X                   |                 |             |
+| Commission calculation                                  |                     |                 | X           |
+| Commission customer group                               |                     |                 | X           |
+| Commission item group                                   |                     |                 | X           |
+| Commission sales group                                  |                     |                 | X           |
+| Customer account statement form printing configurations |                     |                 | X           |
+| Customer bank accounts                                  |                     |                 | X           |
+| Customer charge groups                                  |                     |                 | X           |
+| Customer definitions                                    |                     |                 | X           |
+| Customer details                                        |                     |                 | X           |
+| Customer facing form printing configurations            |                     |                 | X           |
+| Customer groups                                         |                     | X               |             |
+| Customer ledger accounts                                | X                   |                 |             |
+| Customer parameters                                     | X                   |                 |             |
+| Customer payment fee                                    |                     |                 | X           |
+| Customer payment method specification                   |                     |                 | X           |
+| Customer payment method                                 |                     | X               |             |
+| Customer posting profiles                               | X                   |                 |             |
+| Customer reasons                                        |                     |                 | X           |
+| Customer write-off reason codes                         | X                   |                 |             |
+| Customers                                               |                     |                 | X           |
+| Delivery charges groups                                 |                     |                 | X           |
+| Expedite codes                                          |                     |                 | X           |
+| Free text invoice form printing configurations          |                     |                 | X           |
+| Interest codes with fees                                |                     |                 | X           |
+| Interest codes with ranges                              |                     |                 | X           |
+| Interest codes                                          | X                   |                 |             |
+| Interest note form printing configurations              |                     |                 | X           |
+| Item charge groups                                      |                     |                 | X           |
+| Line discount customer groups                           |                     |                 | X           |
+| Line of business                                        |                     |                 | X           |
+| Modes of delivery                                       |                     |                 | X           |
+| Payment calendar                                        |                     |                 | X           |
+| Payment day lines                                       |                     |                 | X           |
+| Payment schedule lines                                  |                     |                 | X           |
+| Payment schedule                                        |                     |                 | X           |
+| Price customer groups                                   |                     |                 | X           |
+| Printed form notes                                      |                     |                 | X           |
+| Sales charge codes                                      |                     |                 | X           |
+| Sales districts                                         |                     |                 | X           |
+| Sales order pools                                       |                     |                 | X           |
+| Statistics group                                        |                     |                 | X           |
+| Terms of delivery                                       |                     |                 | X           |
+| Terms of payment                                        |                     |                 | X           |
+| Total discount customer groups                          |                     |                 | X           |

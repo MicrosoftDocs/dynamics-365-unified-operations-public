@@ -18,7 +18,7 @@ ms.search.form: WHSReplenishmentTemplates
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 90043
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Replenishment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management. The information in this topic doesn't apply to the warehousing solution that is available in Inventory management.
 

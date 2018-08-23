@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customize audit file configuration (Germany)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to customize the German audit file configuration by adding a new table group and selecting a table with fields for data export definition. 
 

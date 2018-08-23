@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Add analytics to workspaces by using Power BI Embedded
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > This feature is supported in Dynamics 365 for Finance and Operations (version 7.2 and later).
@@ -59,7 +59,7 @@ Before you begin, you must create or obtain the Power BI report that you will em
 Follow these steps to add a .pbix file as a Visual Studio project artifact.
 
 1. Create a new project in the appropriate model.
-2. In Solution Explorer, select the project, right-click, and then select **Add** > **New Item**.
+2. In Solution Explorer, select the project, right-click, and then select **Add** \> **New Item**.
 3. In the **Add New Item** dialog box, under **Operations Artifacts**, select the **Resource** template.
 4. Enter a name that will be used to reference the report in X++ metadata, and then click **Add**.
 
@@ -82,7 +82,7 @@ Follow these steps to extend the form definition for the **Reservation managemen
 
 1. Open the form designer to extend the design definition.
 2. In the design definition, select the top element that is labeled **Design | Pattern: Workspace Operational**.
-3. Right-click, and then select **New** > **Tab** to add a new control that is named **FormTabControl1**.
+3. Right-click, and then select **New** \> **Tab** to add a new control that is named **FormTabControl1**.
 4. In the form designer, select **FormTabControl1**.
 5. Right-click, and then select **New Tab Page** to add a new tab page.
 6. Rename the tab page to something meaningful, such as **Workspace**.
@@ -91,12 +91,12 @@ Follow these steps to extend the form definition for the **Reservation managemen
 9. Rename the tab page to something meaningful, such as **Analytics**.
 10. In the form designer, select **Analytics (Tab Page)**.
 11. Set the **Caption** property to **Analytics**.
-12. Right-click the control, and then select **New** > **Group** to add a new form group control.
+12. Right-click the control, and then select **New** \> **Group** to add a new form group control.
 13. Rename the form group to something meaningful, such as **powerBIReportGroup**.
 14. In the form designer, select **PanoramaBody (Tab)**, and then drag the control onto the **Workspace** tab.
 15. In the design definition, select the top element that is labeled **Design | Pattern: Workspace Operational**.
 16. Right-click, and then select **Remove pattern**.
-17. Right-click again, and then select **Add pattern** > **Workspace Tabbed**.
+17. Right-click again, and then select **Add pattern** \> **Workspace Tabbed**.
 18. Perform a build to verify your changes.
 
 The following illustration shows what the design looks like after these changes are applied.
@@ -108,7 +108,7 @@ Now that you've added the form controls that will be used to embed the workspace
 > [!NOTE]
 > For embedded workspaces, we recommend that you use extensions to hide both the **Filters Pane** and **Tab** pages, for consistency.
 
-You've now completed the task of extending the application form definition. For more information about how to use extensions to do customizations, see  [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
+You've now completed the task of extending the application form definition. For more information about how to use extensions to do customizations, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
 
 ## Add X++ business logic to embed a viewer control
 Follow these steps to add business logic that initializes the report viewer control that is embedded in the **Reservation management** workspace.
@@ -121,7 +121,7 @@ Follow these steps to add business logic that initializes the report viewer cont
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
-        private boolean initReportControl = true;     
+        private boolean initReportControl = true;
         protected void initAnalyticalReport()
         {
             if (!initReportControl)
@@ -164,22 +164,21 @@ This section provides information about the helper class that is used to embed a
 #### Syntax
 ```
 public static void initializeReportControl(
-     str                 _resourceName,
-     FormGroupControl    _formGroupControl,
-     str                 _defaultPageName = '',
-     boolean             _showFilterPane = false,
-     boolean             _showNavPane = false,
-     List                _defaultFilters = new List(Types::Class))
+    str                 _resourceName,
+    FormGroupControl    _formGroupControl,
+    str                 _defaultPageName = '',
+    boolean             _showFilterPane = false,
+    boolean             _showNavPane = false,
+    List                _defaultFilters = new List(Types::Class))
 ```
 
 #### Parameters
 
-|       Name       |                                                              Description                                                               |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|   resourceName   |                                                    The name of the .pbix resource.                                                     |
-| formGroupControl |                                    The form group control to apply the Power BI report control to.                                     |
-| defaultPageName  |                                                         The default page name.                                                         |
-|  showFilterPane  |   A Boolean value that indicates whether the filter pane should be shown (<strong>true</strong>) or hidden (<strong>false</strong>).   |
-|   showNavPane    | A Boolean value that indicates whether the navigation pane should be shown (<strong>true</strong>) or hidden (<strong>false</strong>). |
-|  defaultFilters  |                                              The default filters for the Power BI report.                                              |
-
+| Name             | Description                                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| resourceName     | The name of the .pbix resource.                                                                              |
+| formGroupControl | The form group control to apply the Power BI report control to.                                              |
+| defaultPageName  | The default page name.                                                                                       |
+| showFilterPane   | A Boolean value that indicates whether the filter pane should be shown (**true**) or hidden (**false**).     |
+| showNavPane      | A Boolean value that indicates whether the navigation pane should be shown (**true**) or hidden (**false**). |
+| defaultFilters   | The default filters for the Power BI report.                                                                 |

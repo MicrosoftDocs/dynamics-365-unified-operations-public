@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure reverse proxy for your on-premises environment
+title: Configure reverse proxies for on-premises environments
 description: This topic describes how you can secure the Dynamics 365 for Finance and Operations on-premises environment behind a reverse proxy.
 author: sarvanisathish
 manager: AnnBe
@@ -27,9 +27,9 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8 
 ---
 
-# Configure reverse proxy for your on-premises environment
+# Configure reverse proxies for on-premises environments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You may want to secure the Dynamics 365 for Finance and Operations on-premises environment behind a reverse proxy. Reverse proxy is a server that hides the actual servers serving traffic from the clients. The proxy server accepts requests from the clients on behalf of the Finance and Operations environment and forwards the traffic to it. The clients are not aware of the actual servers that compose the Finance and Operations environment. This adds another measure of security and enables load balancing. 
 

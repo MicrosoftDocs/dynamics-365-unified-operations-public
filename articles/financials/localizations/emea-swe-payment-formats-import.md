@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Import payment formats for Sweden
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the BankGirot MAX, BankGirot OCR import, and BankGirot return formats for Sweden.
 

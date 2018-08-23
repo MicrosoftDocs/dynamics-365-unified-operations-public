@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Post payroll and generate vendor invoices
+title: Post payroll distributions and generate vendor invoices
 description: This topic walks you through the process for posting payroll distributions and generating the required vendor invoices.
 author: rschloma
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Post payroll and generate vendor invoices
+# Post payroll distributions and generate vendor invoices
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic walks you through the process for posting payroll distributions and generating the required vendor invoices.
 

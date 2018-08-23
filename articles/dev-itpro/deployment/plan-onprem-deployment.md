@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Planning for your on-premises deployment 
+title: Plan and prepare for on-premises deployments
 description: This topic will help you plan and prepare for your on-premises deployment.
 author: robinarh
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform Update 8
 
 ---
 
-# Planning for your on-premises deployment
+# Plan and prepare for on-premises deployments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations now supports running business processes in customer data centers with the on-premises deployment option. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Section Related Links subpattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Section Related Links subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for the last panorama section that contains a set of links to other forms.
 

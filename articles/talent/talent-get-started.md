@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get started with Microsoft Dynamics 365 for Talent
+title: Get started with Talent
 description: This topic provides information about how to adapt the user interface to your preferences, as well as connect to the Help resources that are available within the product, and on the docs.microsoft.com site. 
 author: rschloma
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 
 ---
-# Getting started with Microsoft Dynamics 365 for Talent
+# Get started with Talent
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In Microsoft Dynamics 365 for Talent it's easy to modify the user interface and set options that make the software more intuitive for your needs. This topic includes links to topics that provide information on how to adapt the user interface to your preferences. The topic also includes links to information that can help you find information in the system efficiently and accurately. 
 

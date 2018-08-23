@@ -17,7 +17,7 @@ ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268174
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage subcontracting work in production
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Finance and Operations. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
 

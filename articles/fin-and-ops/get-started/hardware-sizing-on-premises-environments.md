@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Hardware sizing for on-premises environments
+# Hardware sizing requirements for on-premises environments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements](system-requirements.md) and [Setup and deployment instructions](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) to gain a solid understanding off the underlying infrastructure. 
 

@@ -17,7 +17,7 @@ ms.search.form: VendInvoicePostingHistory
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27361
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounts payable invoice matching
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.
 

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Fixed assets location change tracking for Latvia
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the change tracking functionality for fixed asset location fields for legal entities with a primary address in Latvia.
 

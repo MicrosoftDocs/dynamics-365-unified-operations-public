@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a sales event kanban rule
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure focuses on the setup needed to create a kanban rule that is triggered during sales order creation. The event kanban rule replenishes requirements that originate from sales order lines. The demo data company used to create this procedure is USMF. It is intended for the process engineer or the value stream manager as they prepare production of a new or modified product.
 

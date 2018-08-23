@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Images
+title: Images on a page or in a grid
 description: This topic describes the steps for displaying images on a page or in a grid. The topic also provides background about some of the ways that images can be used, and the APIs that are used.  
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Images
+# Images on a page or in a grid
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the steps for displaying images on a page or in a grid. The topic also provides background about some of the ways that images can be used, and the APIs that are used.  
 

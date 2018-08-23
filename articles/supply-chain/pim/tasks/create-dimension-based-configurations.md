@@ -3,7 +3,7 @@
  
 title: Create dimension-based configurations
 description: This procedure shows how to define a configuration for a dimension-based product. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 06/21/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create dimension-based configurations
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to define a configuration for a dimension-based product. This is the last procedure in the series that explains how to build combinations for dimension-based configuration. The execution of this procedure is dependent on the data created in the previous seven recordings. The demo data company used to create this procedure is USMF.
 

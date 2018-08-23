@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intrastat
-description: This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). It provides an overview of the reporting process, and describes the required settings and prerequisites.
+description: This topic provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). It provides an overview of the reporting process, and describes the required settings and prerequisites.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Intrastat
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). It provides an overview of the reporting process, and describes the required settings and prerequisites.
+This topic provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). It provides an overview of the reporting process, and describes the required settings and prerequisites.
 
 Intrastat is the system for collecting information and generating statistics about the trade of goods among countries/regions of the European Union (EU). Intrastat reporting is required whenever a product crosses the border of another EU country/region. In several countries/regions, Intrastat reporting also applies to services. Mandatory and optional elements can be collected in Intrastat reporting. The following elements are mandatory: the value-added tax (VAT) number of the party that is responsible for providing information, the reference period, the flow (arrival or dispatch), the eight-digit commodity code, the partner member state (member state of consignment on arrivals and member state of destination on dispatches), the value of the goods, the quantity of the goods (net mass and supplementary unit), and the nature of the transaction. Countries/regions can also collect optional elements under various conditions. Some optional elements are the country/region of origin, the delivery terms, the mode of transport, a more detailed commodity code than CN8, the region of origin on dispatches and the region of destination on arrivals, the statistical procedure, the statistical value, a description of the goods, and the port/airport of loading/unloading.
 
@@ -227,6 +227,7 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 </ul></li>
 <li><strong>Electronic reporting</strong> – Specify references to electronic reporting configurations, so that you can generate an electronic file and report.</li>
 <li><strong>Commodity code hierarchy</strong> – Specify the category hierarchy of the <strong>Commodity code</strong> type that represents Intrastat commodity code CN8.</li>
+  <li> <strong>Exchange rate type</strong> – Optionally, specify an exchange rate to be used to report Intrastat sales and purchase transactions in foreign currencies. This is used if the rate is different than the one applied when posting the transaction.</li>  
 </ul></td>
 </tr>
 <tr class="even">
@@ -243,8 +244,4 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 </tr>
 </tbody>
 </table>
-
-
-
-
 

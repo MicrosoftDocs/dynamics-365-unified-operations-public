@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Retail System Architecture
+title: Retail components
 description: This topic describes the various components that make up Microsoft Dynamics 365 for Retail.
 author: sericks007
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Components of Dynamics 365 for Retail
+# Retail components
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes the various components that make up Microsoft Dynamics 365 for Retail.
 

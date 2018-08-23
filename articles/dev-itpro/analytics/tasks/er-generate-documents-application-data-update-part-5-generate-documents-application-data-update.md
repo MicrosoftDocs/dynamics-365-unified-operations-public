@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Generate documents with application data 
+title: Generate documents that have application data
 description: To complete the steps in this procedure, you must first complete the procedure, “ER Generate documents with application data update (Part 4 - Modify format)”. 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Generate documents with application data
+# Generate documents that have application data
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To complete the steps in this procedure, you must first complete the procedure, “ER Generate documents with application data update (Part 4: Modify format)”.
 

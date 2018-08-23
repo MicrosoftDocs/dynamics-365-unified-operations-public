@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: WHSMobileAppField
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 # Scan bar codes using a camera in Dynamics 365 for Finance and Operations – Warehousing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up Dynamics 365 for Finance and Operations – Warehousing to scan bar codes using a camera on a mobile device. 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create coupons for retail sales
+title: Set up coupons for retail sales
 description: This topic provides an overview of retail coupons and explains how to set them up.
 author: scott-tucker
 manager: AnnBe
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# Create coupons for retail sales
+# Set up coupons for retail sales
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## Overview of coupons
 

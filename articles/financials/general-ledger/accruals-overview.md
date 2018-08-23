@@ -17,7 +17,7 @@ ms.search.form: LedgerAccuralTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14131
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accruals overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes accruals, and provides information about how to set them up and create transactions.
 

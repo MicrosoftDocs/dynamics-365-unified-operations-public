@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intelligence
+title: Business intelligence (BI) and reporting home page
 description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Intelligence
+# Business intelligence (BI) and reporting home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations.
 
@@ -48,13 +48,13 @@ Users can interact with data by clicking or touching visuals on the page. They c
 
 ![Example of Power BI in a workspace](./media/Power-BI-in-D365-Workspace.png)
 
- To learn more, see the following topics:
+To learn more, see the following topics:
 
- - [Embedded Power BI in workspaces](embed-power-bi-workspaces.md)
- - [Power BI Embedded integration](power-bi-embedded-integration.md)
- - [Add analytics to workspaces by using Power BI Embedded](add-analytics-tab-workspaces.md)
- - [Help secure analytical workspaces and reports by using Power BI Embedded](secure-analytical-workspaces.md)
- - [Power BI content for Finance and Operations](power-bi-home-page.md)
+- [Embedded Power BI in workspaces](embed-power-bi-workspaces.md)
+- [Power BI Embedded integration](power-bi-embedded-integration.md)
+- [Add analytics to workspaces by using Power BI Embedded](add-analytics-tab-workspaces.md)
+- [Help secure analytical workspaces and reports by using Power BI Embedded](secure-analytical-workspaces.md)
+- [Power BI content for Finance and Operations](power-bi-home-page.md)
 
 ## Business documents and printing
 Reporting solutions are often used to capture and communicate the details of business transactions. Therefore, a reporting solution must be able to produce physical manifestations of business data by using existing devices, such as network printers. Examples of business documents include sales invoices, customer statements, and checks.

@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3
 
 # What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
 
@@ -241,7 +241,7 @@ With the current release, the advisor presents opportunities to optimize:
 
 ### More information
 -  [Optimization advisor (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
--  [Create rules for Optimization advisor](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/optimization-advisor)
+-  [Create rules for Optimization advisor](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/create-rules-optimization-advisor)
 
 Partial release of materials and release materials per production operation 
 ----------------------------------------------------------------------------

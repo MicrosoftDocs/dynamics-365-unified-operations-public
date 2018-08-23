@@ -17,7 +17,7 @@ ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220774
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 .md
 # Set up and maintain vendor collaboration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. From this interface, a vendor can also reply to requests for quotation (RFQs), and view and edit basic company information.
 
@@ -165,3 +165,5 @@ For more information about the process that is used in the **Send Azure B2B user
 ## Additional resources
 
 [Using vendor collaboration to work with external vendors](vendor-collaboration-work-external-vendors.md)
+
+Watch a short video on the vendor onboarding process: [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)

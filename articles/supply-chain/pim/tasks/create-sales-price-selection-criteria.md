@@ -3,7 +3,7 @@
  
 title: Create sales price selection criteria
 description: This procedure shows how to create a sales price selection criterion for attribute-based sales price models. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 10/13/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create sales price selection criteria
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to create a sales price selection criterion for attribute-based sales price models. This procedure requires that at least one sales price model be available. This example uses the price model for the Speaker solution sales price model in the USMF demo data company. Typically, a product manager uses this procedure.
 

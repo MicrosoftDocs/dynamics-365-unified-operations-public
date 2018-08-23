@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # End a production order
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to end a production order. The demo data company used to create this procedure is USMF. This is the final procedure out of seven which explains the production order lifecycle.
 

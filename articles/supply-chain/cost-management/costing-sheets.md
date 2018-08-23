@@ -17,14 +17,14 @@ ms.search.form: CostSheetDesigner
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53201
 ms.assetid: e7d72b43-3892-49ae-8821-9eede3f4d24a
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Costing sheets
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Setting up the costing sheet involves two objectives. As the first objective, you define the format for displaying cost of goods sold information about a manufactured item or production order. The formatted display is termed a costing sheet. As the second objective, you define the basis for calculating indirect costs. The costing sheet setup builds on the cost group feature for displaying information and for the indirect cost calculation formulas. The two objectives of costing sheet setup are described in this article. 
 

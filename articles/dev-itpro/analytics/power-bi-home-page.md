@@ -2,12 +2,11 @@
 # required metadata
 
 
-title: Power BI content 
-description: This topic lists the Power BI content that is available and points you to resources where you can learn more about it.
-
+title: PowerBI.com solutions home page
+description: This topic lists PowerBI.com solutions that are available and points you to resources where you can learn more about the solutions.
 author: sericks007
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,61 +31,41 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Power BI content
-[!INCLUDE [banner](../includes/banner.md)]
+# PowerBI.com solutions home page
+The following PowerBI.com solutions are available for Dynamics 365 for Finance and Operations environments.
 
-This topic lists the Microsoft Power BI content that is available and points you to resources where you can learn more about it.
+## PowerBI.com solutions available from Lifecycle Services (LCS)
 
-## Power BI content for Dynamics 365 for Finance and Operations
-If you're using Microsoft Dynamics 365 for Finance and Operations, the following Power BI content is available:
+The following PowerBI.com solutions are available in the Shared assets library of LCS. Refer to the version information in the Shared assets library to download the correct version for your environment.
 
-- [Actual vs budget Power BI content](ledger-budgets-power-bi.md)
-- [Benefits Power BI content](benefits-power-bi.md)
-- [Cash overview Power BI content](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
-- [CFO overview Power BI content](CFO-power-bi.md)
-- [Compensation Power BI content](compensation-power-bi.md)
-- [Cost accounting analysis Power BI content](cost-accounting-analysis-content-pack.md) 
-- [Cost management Power BI content](cost-management-content-pack.md)    
-- [Credit and collections management Power BI content](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [Employee development Power BI content](employee-development-PBI.md) 
-- [Financial insights Power BI content](financial-insights.md)
-- [Financial performance Power BI content](financial-performance-power-bi-content-pack.md)
-- [Fixed asset management Power BI content](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
-- [Learning Power BI content](learning-power-bi.md)
-- [Practice manager Power BI content](practice-manager-power-bi.md)
-- [Production performance Power BI content](production-performance-power-bi.md)
-- [Purchase spend analysis Power BI content](purchase-content-pack-for-power-bi.md) 
-- [Recruiting Power BI content](recruiting-analysis-power-bi-content-pack.md) 
-- [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
-- [Vendor payments Power BI content](../../financials/accounts-payable/Vendor-payments-workspace.md)
-- [Warehouse performance Power BI content](warehouse-power-bi-content.md)
-- [Workforce metrics Power BI content](workforce-analysis-power-bi-content-pack.md)  
+> [!NOTE]
+> Most of the PowerBI.com solutions in the following list have been embedded in analytical workspaces in recent versions of Dynamics 365 for Finance and Operations. Using analytical workspaces eliminates the need to download these solutions from the Shared assets library in LCS. The topics in this list indicate where these PowerBI.com solutions have been embedded in Finance and Operations, where applicable.
 
-## Power BI content for Dynamics 365 for Operations version 1611
-If you're using Microsoft Dynamics 365 for Operations version 1611, the following Power BI content is available:
+- [Actual vs budget](ledger-budgets-power-bi.md)
+- [Cash overview](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
+- [Compensation and benefits](compensation-and-benefits-analysis-power-bi-content-pack.md)
+- [Cost accounting analysis](cost-accounting-analysis-content-pack.md)
+- [Credit and collections management](../../financials/accounts-receivable/credit-collections-power-bi.md)
+- [Employee competencies and development](employee-competencies-and-development-analysis-power-bi-content-pack.md)
+- [Financial performance](financial-performance-power-bi-content-pack.md)
+- [Fixed asset management](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
+- [Organizational training](organizational-training-analysis-power-bi-content-pack.md)
+- [Practice manager](practice-manager-power-bi.md)
+- [Production performance](production-performance-power-bi.md)
+- [Purchase spend analysis](purchase-content-pack-for-power-bi.md)
+- [Recruiting](recruiting-analysis-power-bi-content-pack.md)
+- [Sales and profitability performance](sales-profitability-performance-content-pack.md)
+- [Vendor payments](../../financials/accounts-payable/Vendor-payments-workspace.md)
+- [Warehouse performance](warehouse-power-bi-content.md)
+- [Workforce metrics](workforce-analysis-power-bi-content-pack.md)
 
-- [Compensation and benefits Power BI content](compensation-and-benefits-analysis-power-bi-content-pack.md)   
-- [Cost accounting analysis Power BI content](cost-accounting-analysis-content-pack.md) 
-- [Credit and collections management Power BI content](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [Employee competencies and development Power BI content](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
-- [Financial performance Power BI content](financial-performance-power-bi-content-pack.md)
-- [Organizational training Power BI content](organizational-training-analysis-power-bi-content-pack.md) 
-- [Practice manager Power BI content](practice-manager-power-bi.md)
-- [Production performance Power BI content](production-performance-power-bi.md)
-- [Purchase spend analysis Power BI content](purchase-content-pack-for-power-bi.md) 
-- [Recruiting Power BI content](recruiting-analysis-power-bi-content-pack.md) 
-- [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
-- [Warehouse performance Power BI content](warehouse-power-bi-content.md)
-- [Workforce metrics Power BI content](workforce-analysis-power-bi-content-pack.md)  
+## PowerBI.com solutions available from AppSource
 
-## Power BI content for Microsoft Dynamics AX
-If you're using Microsoft Dynamics AX 7.0 or Microsoft Dynamics AX 7.0.1, the following Power BI content is available:
+The following PowerBI.com solutions are available from [Microsoft AppSource](https://appsource.microsoft.com).
 
-> [!Note]
-> These content packs have been deprecated as documented in [Power BI content packs published to PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+> [!NOTE]
+> These solutions have been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-- [Cost management Power BI content](cost-management-content-pack.md)    
-- [Financial performance Power BI content](financial-performance-power-bi-content-pack.md)
-- [Retail channel performance Power BI content](retail-channel-performance-dashboard-power-bi-data.md) 
-
-
+- Cost management
+- [Financial performance](financial-performance-power-bi-content-pack.md)
+- [Retail channel performance](retail-channel-performance-dashboard-power-bi-data.md)

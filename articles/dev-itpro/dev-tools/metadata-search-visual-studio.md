@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Metadata search in Visual Studio
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to use metadata search to search your code and metadata for arbitrary patterns and content. 
 

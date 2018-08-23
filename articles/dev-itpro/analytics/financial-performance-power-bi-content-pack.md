@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Financial performance Power BI content
-description: This topic describes the Financial performance Power BI content. 
+title: Financial performance PowerBI.com solution
+description: This topic describes the Financial performance PowerBI.com solution. 
 author: kweekley
 manager: AnnBe
-ms.date: 02/02/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,19 +30,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Financial performance Power BI content
+# Financial performance PowerBI.com solution
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-> [!Note]
-> This content pack has been deprecated as documented in [Power BI content packs published to PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+> [!NOTE]
+> This PowerBI.com solution has been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-This topic describes the **Financial performance** Microsoft Power BI content. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the content.
+This topic describes the **Financial performance** PowerBI.com solution. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the solution.
 
 ## Main account setup
 Because organizations want liabilities and revenue amounts to appear as positive amounts on reports, the setup of the main accounts is important. For these main accounts to appear as positive amounts, the main account type must be set to **Liability** or **Revenue**. When these account types are used, reporting through Power BI will reverse the signs and show the amounts as positive.
 
-## Dashboard and reports that are included in the Power BI content
+## Dashboard and reports that are included in the PowerBI.com solution
 The dashboard contains summarized tiles of data that are based on underlying reports. Each tile contains summarized information for the current year across all companies in an organization. Here are some of the tiles:
 
 - Cash
@@ -63,7 +63,7 @@ Each tile is backed by a supporting report. These reports contain both charts an
 
 | Report                      | Information that the report contains |
 |-----------------------------|--------------------------------------|
-| Cash Analysis               | Cash by legal entity, cash by quarter, total cash, and cash by account<br><br>**Note:** The cash by quarter information doesn't include beginning balances in the total for the first quarter. It shows the total of new transactions that are posted in each quarter.|
+| Cash Analysis               | Cash by legal entity, cash by quarter, total cash, and cash by account<blockquote>[!NOTE] The cash by quarter information doesn't include beginning balances in the total for the first quarter. It shows the total of new transactions that are posted in each quarter.</blockquote> |
 | Current Ratio Analysis      | Current ratio by legal entity, current ratio by quarter, and balances for current assets and current liabilities |
 | Quick Ratio Analysis        | Quick ratio by legal entity, quick ratio by quarter, and balances for cash, accounts receivable, and current liabilities |
 | Cost of Goods Sold Analysis | Cost of goods sold (COGS) by legal entity, COGS this year and last year by quarter, COGS to sales by legal entity, total COGS, and COGS to sales percentage |
@@ -74,12 +74,12 @@ Each tile is backed by a supporting report. These reports contain both charts an
 | Earnings Analysis           | Actual and budget earnings before interest and taxes (EBIT) by legal entity, EBIT this year and last year, expenses to revenue percentage, and actual and budget expenses to revenue |
 | Revenue Analysis            | Total revenue, actual and budget total revenue by legal entity, total revenue this year and last year, revenue budget variance by legal entity, and total revenue this period and last period |
 | Expense Analysis            | Total expenses, actual to budget total expenses by legal entity, actual and budget total expense by quarter, total expenses by account category, and operating expenses ratio |
-| Billed Revenue Analysis     | Total accounts receivable, total accounts receivable by legal entity, total accounts receivable by quarter, and balances for accounts receivable accounts<br><br>**Note:** The information doesn't include beginning balances for the accounts receivable ledger accounts. It shows the total of new transactions that are posted to Accounts receivable. |
+| Billed Revenue Analysis     | Total accounts receivable, total accounts receivable by legal entity, total accounts receivable by quarter, and balances for accounts receivable accounts<blockquote>[!NOTE] The information doesn't include beginning balances for the accounts receivable ledger accounts. It shows the total of new transactions that are posted to Accounts receivable.</blockquote> |
 
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure a Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
-The following entities were used as the basis of the **Financial performance** Power BI content:
+The following entities were used as the basis of the **Financial performance** PowerBI.com solution:
 
 **Aggregate data entities**
 
@@ -94,4 +94,4 @@ The following entities were used as the basis of the **Financial performance** P
 - Ledgers
 - ChartofAccounts
 
-These entities were used to create calculated measures in the data model. The calculated measures are used to calculate the key performance indicators (KPIs) and reports that are used in the content. By default, the content brings in data for the last three years and one future year. To include additional calculations on your reports and dashboard, you can modify the [Microsoft Excel workbook](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). This workbook is the default data model that was used to create the content. 
+These entities were used to create calculated measures in the data model. The calculated measures are used to calculate the key performance indicators (KPIs) and reports that are used in the content. By default, the content brings in data for the last three years and one future year. To include additional calculations on your reports and dashboard, you can modify the [Microsoft Excel workbook](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). This workbook is the default data model that was used to create the content.

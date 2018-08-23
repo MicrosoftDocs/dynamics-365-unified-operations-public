@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure a one-box development environment
+title: Configure one-box development environments
 description: This article describes recommended configurations of your one-box developer environment.
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure a one-box development environment
+# Configure one-box development environments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes recommended configurations of your one-box developer environment.
 

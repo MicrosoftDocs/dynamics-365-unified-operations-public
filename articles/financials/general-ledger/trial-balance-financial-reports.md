@@ -17,7 +17,7 @@ ms.search.form: LedgerTrialBalanceListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12314
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Trial balance financial reports
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the default reports for trial balances. It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements. 
 

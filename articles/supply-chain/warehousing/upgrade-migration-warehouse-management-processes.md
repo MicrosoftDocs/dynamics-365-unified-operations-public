@@ -1,7 +1,9 @@
 ---
 # required metadata
 
+
 title: Upgrade warehouse management from Microsoft Dynamics AX 2012 to Finance and Operations 
+
 description: This topic provides an overview of product and warehouse management migration options.
 author: perlynne
 manager: AnnBe
@@ -17,7 +19,7 @@ ms.search.form:  InventLocationWHSProcessEnablement, WHSLocationProfile, InventT
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1714054
@@ -31,7 +33,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Upgrade warehouse management from Microsoft Dynamics AX 2012 to Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the process of upgrading from Microsoft Dynamics AX 2012 R3, running the WMSII module, to Microsoft Dynamics 365 for Finance and Operations.
 

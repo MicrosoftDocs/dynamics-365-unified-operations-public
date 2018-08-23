@@ -3,7 +3,7 @@
  
 title: Create a billing classification in the public sector
 description: Public-sector organizations can use billing classifications to help manage free text invoices. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a billing classification in the public sector
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Public-sector organizations can use billing classifications to help manage free text invoices. Billing classifications are used to group similar free text invoices for processing and viewing. Before using this procedure, verify that a billing code exists that can be assigned to a billing classification. This procedure was created using the PSUS demo company data in the public sector partition.
 

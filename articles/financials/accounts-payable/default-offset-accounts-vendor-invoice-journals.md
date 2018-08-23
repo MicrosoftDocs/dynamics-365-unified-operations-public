@@ -17,7 +17,7 @@ ms.search.form: LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62093
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Default offset accounts for vendor invoice journals and invoice approval journals
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Default offset accounts are used on the following vendor invoice journal pages:
 

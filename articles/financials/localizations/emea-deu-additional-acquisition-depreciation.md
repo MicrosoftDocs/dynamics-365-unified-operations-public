@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Additional acquisition depreciation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how depreciation is calculated for additional acquisitions in Germany and provides an example. Acquisition adjustments for fixed assets must always be calculated as if the adjustments were made on the first day of the business year.
 

@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-11-30
 
 # Exchange rate adjustments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.
 

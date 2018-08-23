@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create purchasing policies
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to create purchasing policies to align with your business processes for purchasing. Before you can create purchasing policies, you must set up the purchasing policy parameters. It’s possible to create, modify, and retire a purchasing policy, but you can’t delete a purchasing policy. This procedure would typically be carried out by a purchasing manager. You can use this procedure in demo data company USMF or on your own data.
 

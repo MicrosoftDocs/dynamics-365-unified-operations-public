@@ -17,7 +17,7 @@ ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, P
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221234
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Vendor collaboration with customers
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how you can use vendor collaboration to work with customers in Microsoft Dynamics 365 for Finance and Operations. Vendors can complete a series of business processes from the following workspaces:
 

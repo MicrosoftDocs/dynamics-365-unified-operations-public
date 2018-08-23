@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Power BI Embedded integration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Microsoft Power BI content that partners and independent software vendors (ISVs) developed can be embedded directly into the Microsoft Dynamics 365 for Finance and Operations. This topic describes some of the ways that you can use the Microsoft Power BI Embedded integration.
 
@@ -48,7 +48,7 @@ For more information about customizations that use extensions, see [Customizatio
 ## Why might I want to use Power BI Embedded?
 Although both Power BI services are available, it's important that you know which service is best suited to target application scenarios. The following illustration shows a comparison of features across services.
 
-![Comparison of features across services](media/Power-BI-Embedded-integration.png) 
+![Comparison of features across services](media/Power-BI-Embedded-integration.png)
 
 For more information about the Power BI Embedded service, see the [Power BI Embedded FAQ](https://powerbi.microsoft.com/en-us/documentation/powerbi-frequently-asked-questions/).
 
@@ -60,11 +60,11 @@ For more information about the Power BI Embedded service, see the [Power BI Embe
 - **Filter reports based on application context.** You can build navigation experiences by passing one or more filters to Power BI reports. For example, depending on a user’s actions or context, you can filter the Power BI report to reflect data from one business unit or a specific product. The user doesn't have to filter the data. You can define drill-through links to Finance and Operations pages, so that users can go directly to the transactional details pages.
 
 ## Service availability
-**The Power BI Embedded service is automatically deployed and configured for all cloud-hosted, multi-box deployments.**  Because the service relies on Microsoft Azure services, application analytical workspaces and reports are unavailable in one-box environments. The Power BI Embedded service is already available in most Azure datacenters. You can check the latest availability on the [Azure status](https://azure.microsoft.com/status/) page.  
- 
+**The Power BI Embedded service is automatically deployed and configured for all cloud-hosted, multi-box deployments.** Because the service relies on Microsoft Azure services, application analytical workspaces and reports are unavailable in one-box environments. The Power BI Embedded service is already available in most Azure datacenters. You can check the latest availability on the [Azure status](https://azure.microsoft.com/status/) page.
+
 > [!NOTE]
 > The Microsoft Dynamics 365 team is working on a solution that will enable analytical workspaces in one-box environments without requiring that customers host their own instance of the Power BI Embedded service. Watch for announcements on the [Dynamics 365 Roadmap](http://roadmap.dynamics.com) site.
- 
+
 ## Frequently asked questions
 
 ### Can I customize the Power BI embedded reports?

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrade from AX 2012 - Tasks to complete after upgrade
+title: Upgrade from AX 2012 - Post-upgrade tasks
 description: This topic describes the tasks that you might have to perform in Microsoft Dynamics 365 for Operation after you complete a code and data upgrade from Microsoft Dynamics AX 2012.
 author: tariqbell
 manager: AnnBe
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Platform update 8
 
 ---
 
-# Upgrade from AX 2012 - Tasks to complete after upgrade
+# Upgrade from AX 2012 - Post-upgrade tasks
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [upgrade banner](../includes/upgrade-banner.md)]
+[!include [upgrade banner](../includes/upgrade-banner.md)]
 
 This topic describes the tasks that you might have to perform in Microsoft Dynamics 365 for Operation after you complete a code and data upgrade from Microsoft Dynamics AX 2012. A process data package (PDP) that is available in Microsoft Dynamics Lifecycle Services (LCS) includes links to the following menu items. This PDP will fill in the **Data validation checklist** workspace. The **Data validation checklist** workspace lets users track a project and monitor the tasks that are required in order to complete it.
 

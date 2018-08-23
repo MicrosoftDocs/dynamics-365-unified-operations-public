@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Redeploy an on-premises environment
+title: Redeploy on-premises environments
 description: This topic provides information about redeploying an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
 
 ---
-# Redeploy an on-premises environment
+# Redeploy on-premises environments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 At some point, you might have to redeploy your on-premises environment. This could be to apply a new platform update or because of changes or issues in your implementation. Before you delete the environment you are currently working with, you should save your configuration setting information to use when you redeploy. This topic describes how to save configuration settings and how to redeploy your environment. 
 

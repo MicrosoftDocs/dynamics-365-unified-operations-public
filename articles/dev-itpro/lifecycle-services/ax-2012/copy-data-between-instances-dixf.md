@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Copy data between Dynamics AX instances (AX 2012)
+title: Copy data between Dynamics AX instances
 description: This topic provides information about how to copy data between Dynamics AX instances using the data import/export framework (DIXF).
 author: kfend
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Copy data between Dynamics AX instances (AX 2012)
+# Copy data between Dynamics AX instances
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This walkthrough illustrates the following tasks:
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Control the text that Task Recorder generates for a control
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how Task recorder determines what instruction label to generate for controls. It then explains how you can make sure that these labels are meaningful for the user.
 

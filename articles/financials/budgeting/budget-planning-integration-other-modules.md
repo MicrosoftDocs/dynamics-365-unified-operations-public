@@ -3,7 +3,7 @@
 
 title: Budget planning integration with other modules
 description: Budget plans can be generated from several, different resources. The basic elements of the periodic process is the same for all resources. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: BudgetPlanGenerate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 64443
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Budget planning integration with other modules
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Budget plans can be generated from several, different resources. The basic elements of the periodic process is the same for all resources. 
 
@@ -72,7 +72,7 @@ The **Historical** option on the **Target** tab lets you use the dates from the 
 
 The **Aggregate total by** field at the top of the page also determines the date that is used. This field totals amounts, and optionally sets the effective date to the first day of the fiscal year or fiscal period. 
 
-Many of the fields on the <strong>Target</strong> tab become editable or read-only, depending on the action that you select. When you change from creating a new budget plan to updating an existing plan, the <strong>Budget plan name</strong> field becomes unavailable, and the fields that are related to selecting an existing plan become available. On both the <strong>Target</strong> tab and the <strong>Source **tab, the **Ledger</strong> field is always unavailable, because the value is determined by the selected budget planning process. 
+Many of the fields on the <strong>Target</strong> tab become editable or read-only, depending on the action that you select. When you change from creating a new budget plan to updating an existing plan, the **Budget plan name** field becomes unavailable, and the fields that are related to selecting an existing plan become available. On both the **Target** tab and the **Source** tab, the **Ledger** field is always unavailable, because the value is determined by the selected budget planning process. 
 
 The **Budget class** field lets you set the budget plan lines as either expense transactions or revenue transactions. Usually, revenue transactions are credits to a ledger account and are therefore stored as negative amounts. Typically, these transactions also appear as negative amounts in the budget plan. However, by adding the budget class as a field in the plan layout, you can enable revenue to appear as positive amounts.
 

@@ -3,7 +3,7 @@
  
 title: Transfer data for product models
 description: Exporting data for a product configuration model requires that you have at least one product model available. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 03/02/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Transfer data for product models
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Exporting data for a product configuration model requires that you have at least one product model available. This procedure uses the High end speaker model in the demo company USMF to show you how to export data for this model.
 

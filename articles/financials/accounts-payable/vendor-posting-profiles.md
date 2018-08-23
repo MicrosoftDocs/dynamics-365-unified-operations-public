@@ -17,7 +17,7 @@ ms.search.form: VendPosting
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24691
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Vendor posting profiles
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Vendor posting profiles control the posting of vendor transactions to the general ledger.
 

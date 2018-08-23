@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Post vouchers from the general journal (China)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through posting Chinese vouchers using the general journal.  Before you can complete this procedure, be sure that you’ve created all of the necessary fiscal calendars. 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up company-specific HR parameters
+title: Set up company-specific Human resources (HR) parameters
 description: The settings of some Human resources (HR) parameters are shared across companies, whereas the settings of other parameters are company-specific. This article explains how to set up company-specific HR parameters.
 author: rschloma
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 
-# Set up company-specific HR parameters
+# Set up company-specific Human resources (HR) parameters
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 The settings of some Human resources (HR) parameters are shared across companies, whereas the settings of other parameters are company-specific. This article explains how to set up company-specific HR parameters.
 

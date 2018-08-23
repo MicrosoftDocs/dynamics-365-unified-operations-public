@@ -17,7 +17,7 @@ ms.search.form: InventCountingReasonCodePolicy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 # Reason codes for inventory counting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Reason codes let you analyze the results of a counting process and any discrepancies that occur during that process. You can specify the reason for doing the count, such as a broken pallet or a stock adjustment that is based on inventory samples.
 

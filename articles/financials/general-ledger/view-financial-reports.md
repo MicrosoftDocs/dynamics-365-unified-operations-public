@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10334
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View financial reports
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to view and explore financial reports in Microsoft Dynamics 365 for Finance and Operations. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
 

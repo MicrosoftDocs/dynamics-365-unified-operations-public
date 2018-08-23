@@ -3,7 +3,7 @@
 
 title: Create dimensions and import dimension members
 description: Cost accounting is an independent module that requires master data from other modules.
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 09/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: CAMDimension
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 256254
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Create dimensions and import dimension members
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Cost accounting is an independent module that requires data from other modules. This data is categorized into the following:
 

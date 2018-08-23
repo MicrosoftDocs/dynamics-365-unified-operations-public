@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # One-time customers
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about one-time customers.  
 

@@ -17,7 +17,7 @@ ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11614
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Purchasing policies
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about purchasing policies. A purchasing policy is a collection of rules that control the requisition process. Purchasing policies help procurement administrators implement their procurement strategy by creating a policy structure that is aligned with the organization’s strategic purchasing requirements.
 

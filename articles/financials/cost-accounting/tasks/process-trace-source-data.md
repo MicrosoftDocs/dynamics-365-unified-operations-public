@@ -3,7 +3,7 @@
  
 title: Process and trace source data
 description: All data processing is run by jobs. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Process and trace source data
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 All data processing is run by jobs. For each job and data provider, a journal is created to document that the process has been run, and that the entries were processed in the current job. Use this procedure to set up a data source and then  trace the origin of a specific cost entry. This recording uses the USP2 demo data company USP2. Before you complete this task, make sure that you play the following task guides: "Create a cost accounting ledger," "Define cost control units," and "Manage data source for the cost accounting ledger."
 

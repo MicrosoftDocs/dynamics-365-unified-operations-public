@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Develop a succession plan
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person.  Skill mapping allows you to analyze your existing employees and applicants to see if they match the skill set of a valued employee. The demo data company used to create this procedure is USMF.
 

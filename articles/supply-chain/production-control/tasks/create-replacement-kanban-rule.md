@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a replacement kanban rule
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure focuses on replacing an existing kanban rule with a new kanban rule on a specific date. This is useful when changes in the production flow or replenishment rules need to be coordinated and scheduled. The demo data company used to create procedure is USMF. This procedure is intended for the process engineer or the value stream manager when they prepare production for a changed production flow or a new replenishment rule. This task replaces kanban rule 000022 with a new rule and increases the maximum quantity from 48 to 100 for the new rule.
 

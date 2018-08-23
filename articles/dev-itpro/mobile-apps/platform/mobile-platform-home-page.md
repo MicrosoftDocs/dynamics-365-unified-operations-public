@@ -5,7 +5,7 @@ title: Mobile platform home page
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 03/07/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform update 9
 
 ---
 
-# Mobile platform
+# Mobile platform home page
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 By using mobile apps, you can reuse business logic and modeling from Microsoft Dynamics 365 for Finance and Operations. Mobile apps enable rich offline and mobile interactions, and provide an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile apps that expose this functionality. The mobile platform makes it easy to change the forms and mobile app definitions to include customizations that are made to Finance and Operations. 
 
@@ -94,19 +94,22 @@ During development it can be useful to attach a debugger to get more detailed in
 ### Debugging the client side 
 
 #### Prerequisites
-- Android device plus PC (recommended) or iOS device plus Mac
+- Android device plus PC
 - Azure-hosted development machine (so the mobile device can point to it)
 
 #### Steps to debug the client side
 1. On the web client that is exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the Unified Operations app. For information about publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
 
-2. Open the Unified Operations app on your device, point to the Azure-hosted development machine, and sign in.
+2. Install the Android debug apk for the Unified Operations app on an Android device:
+    - One time only, allow the installation of apk files -  Go to **Menu** > **Settings** > **Security** and then check **Unknown Sources** to allow the phone to install apps from sources other than the Google Play Store.
+    - Uninstall the Unified Operations app - Ensure that any previous version of the Unified Operations app has been uninstalled.
+    - Download the apk file - From the device’s browser, navigate to the latest [Unified Operations Android debug apk on Github](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/blob/master/android-debug.apk) and click **Download** (or use [this direct link to the file](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples/raw/master/android-debug.apk)).
+    - Install the Unified Operations apk file - Confirm install of the Unified Operations app via the apk file.
+    - Run the debug Unified Operations app on the device and sign in.
 
 3. Connect to the device from the debugging machine.
 
-    - For Android devices, on the Azure-hosted development machine or a separate PC, follow Android developer instructions to [Get Started with Remote Debugging Android Devices](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/). You can also find a wide selection of instructional videos on YouTube by searching for [Chrome for Android remote debugging](https://www.youtube.com/results?search_query=chrome+for+android+remote+debugging). 
-    
-    - For iOS devices, you will connect to your iOS device using Safari running on a Mac.
+    - On the Azure-hosted development machine or a separate PC, follow Android developer instructions to [Get Started with Remote Debugging Android Devices](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/). You can also find a wide selection of instructional videos on YouTube by searching for [Chrome for Android remote debugging](https://www.youtube.com/results?search_query=chrome+for+android+remote+debugging). 
     
 4. After you connect the debugger, find the active tab on your device. You may need to click **View more tabs** on Android. One of the tabs should look similar to `/www.index.html#/app/appList` or `/www.index.html#/app/app_landing`. 
 
@@ -149,6 +152,9 @@ During development it can be useful to attach a debugger to get more detailed in
 8. If a needed change is identified, make those changes in X++, and push those changes into the environment.
 
 9. If more changes or validation is needed, repeat the process.
+
+## Change needed for ADFS to support Mobile Client in on-premises environments 
+If ADFS is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The Microsoft Dynamics Unified Operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support wia](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)
 
 ## Additional resources
 ### What's new and in development

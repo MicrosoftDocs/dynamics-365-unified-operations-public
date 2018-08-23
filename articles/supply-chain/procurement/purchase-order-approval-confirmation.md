@@ -17,7 +17,7 @@ ms.search.form: PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 
 
 ms.search.scope: Core, Operations, Retail
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Approve and confirm purchase orders
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This article describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.
 

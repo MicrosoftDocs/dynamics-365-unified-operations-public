@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configuration 
+title: Configuration in the Intelligent Data Management Framework (IDMF)
 description: This topic provides information about the Intelligent Data Management Framework (IDMF) functionality in Microsoft Dynamics AX.
 author: kfend
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Configuration in the Intelligent Data Management Framework (AX 2012)
+# Configuration in the Intelligent Data Management Framework (IDMF)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Purge and archive functionality
 -------------------------------

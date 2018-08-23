@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrades, updates, and hotfixes
+title: Upgrades, updates, and hotfixes home page
 description: These topics describe the process for upgrading, updating, and applying hotfixes to your Dynamics 365 for Finance and Operations environment and data.
 author: margoc
 manager: AnnBe
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Upgrades, updates, and hotfixes
+# Upgrades, updates, and hotfixes home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Upgrades, updates, and hotfixes can include moving to new product versions, code migration and upgrade, moving to an update, or deploying a hotfix. 
 
@@ -45,9 +45,7 @@ To get started, review the following topics:
 - [Prepare to migrate code from AX 2012 to Finance and Operations](prepare-migration.md)
 
 ## Migration from Microsoft Dynamics AX 2009 to Finance and Operations
-This Tech Talk video provides an introduction to migration from AX 2009 to Finance and Operations.
-
-> [!Video https://www.youtube.com/embed/kdQ58arACP4?list=PLcakwueIHoT_BQxAZ6VFbWgX9sAWBW3Xi?ecver=1]
+This Tech Talk video provides an introduction to migration from AX 2009 to Finance and Operations: [Dynamics 365 for Operations – Tech Talk: Migration tools](https://www.youtube.com/watch?v=kdQ58arACP4).
 
 ## Upgrade from a previous version of Finance and Operations
 
@@ -77,9 +75,7 @@ If you are applying updates to a cloud version of Finance and Operations, review
 - [Patch Reporting Services in a one-box environment](patch-reporting-service-environment.md)
 - [Update Visual Studio development tools](../dev-tools/update-development-tools.md)
 
-This Tech Talk video provides an introduction servicing (applying code updates, requesting sandbox database refreshes, and filing support requests). 
-
-> [!Video https://www.youtube.com/embed/QkcdBI_ipTM?list=PLcakwueIHoT_BQxAZ6VFbWgX9sAWBW3Xi?ecver=1]
+This Tech Talk video provides an introduction servicing (applying code updates, requesting sandbox database refreshes, and filing support requests): [Dynamics 365 for Operations – Tech Talk: Servicing](https://www.youtube.com/watch?v=QkcdBI_ipTM).
 
  For more information, see: 
 - [Request a sandbox database refresh](../database/database-refresh.md)

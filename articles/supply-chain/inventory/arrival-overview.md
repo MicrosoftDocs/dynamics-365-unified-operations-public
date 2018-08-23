@@ -17,7 +17,7 @@ ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 274363
@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-02-28
 
 # Arrival overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the Arrival overview feature. The Arrival overview page is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
 

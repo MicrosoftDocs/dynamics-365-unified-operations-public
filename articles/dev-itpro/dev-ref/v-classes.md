@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: V Classes
+title: V classes
 description: System API classes that start with the letter V.
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# V Classes
+# V classes
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter V.
 

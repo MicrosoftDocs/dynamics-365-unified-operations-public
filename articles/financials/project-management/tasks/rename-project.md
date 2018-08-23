@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Rename or modify a project stage
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Project stages can serve as a guide to the project life cycle. You can define the project stages that you want to include in your projects in the Project stage area in the Project management and accounting parameters page. Dynamics 365 for Finance and Operations provides five predefined project stages and three user-defined stages. You can update the name of a project stage that you are using to track the progress of projects. You can also provide names for user-defined status names. This task shows how to rename or modify a project stage and uses the USSI data set.
 

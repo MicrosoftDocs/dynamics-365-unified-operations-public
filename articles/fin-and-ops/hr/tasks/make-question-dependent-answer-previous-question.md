@@ -1,9 +1,9 @@
 --- 
 # required metadata 
  
-title: Make a question dependent on the answer of the previous question
+title: Make questions dependent on the answer of the previous question
 description: Conditional questions allow you to specify what follow-up question will be presented to a respondent, based on the answer to the preceding question. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 02/12/2016
 ms.topic: business-process 
@@ -22,13 +22,13 @@ ms.search.scope: Operations, Talent
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Make a question dependent on the answer of the previous question
+# Make questions dependent on the answer of the previous question
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Conditional questions allow you to specify what follow-up question will be presented to a respondent, based on the answer to the preceding question. For example, if you ask "Do you prefer coffee or tea," a logical follow-up question can be determined depending on whether the respondent selects coffee or tea as their answer. The demo data company used to create this procedure is USMF.
 

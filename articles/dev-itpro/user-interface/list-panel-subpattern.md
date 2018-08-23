@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # List Panel subpattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the List Panel form subpattern. Application teams use this subpattern to manage two lists that move data between each other.
 

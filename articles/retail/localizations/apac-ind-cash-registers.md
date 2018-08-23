@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: GST integration for cash registers for India
+title: Goods and Services Tax (GST) integration for cash registers for India
 description: This topic provides an overview of the cash register functionality that is available for India. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS 
 manager: annbe
@@ -26,9 +26,9 @@ ms.author: v-pakris
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: 7.3.1
 ---
-# GST integration for cash registers for India
+# Goods and Services Tax (GST) integration for cash registers for India
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides a walkthrough of the features that are related to Goods and Services Tax (GST) in Microsoft Dynamics 365 for Retail. It also highlights the effect of GST on various types of retail business transactions, and shows the accounting and posting of retail transactions where the receipt is printed at the point of sale (POS).
 
@@ -180,7 +180,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
     2. Select the transactions.
     3. Select **Receipt**.
 
-    ![Receipt example](media/apac-ind-gst-receipt.png)
+    ![Receipt example](media/apac-ind-gst-s1-receipt1.png)
 
 11. Validate the sales order and tax document in Retail headquarters:
 
@@ -203,7 +203,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
 13. Select **Exact** to process the payment.
 14. Validate the receipt.
 
-    ![Receipt example](media/apac-ind-gst-receipt-2.png)
+    ![Receipt example](media/apac-ind-gst-s1-receipt2.png)
 
 15. Validate the voucher transactions:
 
@@ -308,7 +308,7 @@ When you sell to unregistered customers, the sales are referred to as *business-
 4. Select **Exact** to process the payment.
 5. Validate the receipt.
 
-    ![Receipt example](media/apac-ind-gst-receipt-3.png)
+    ![Receipt example](media/apac-ind-gst-s3-receipt4.png)
 
 6. Validate the retail sales invoice in Retail headquarters:
 

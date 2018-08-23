@@ -17,7 +17,7 @@ ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14051
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Plan your chart of accounts
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information that will help you plan the chart of accounts for your organization.
 

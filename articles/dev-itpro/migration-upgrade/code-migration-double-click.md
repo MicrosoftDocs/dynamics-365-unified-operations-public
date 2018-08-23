@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Code migration - Mouse double-click
+title: Code migration - Mouse double-click logic
 description: In Microsoft Dynamics 365 for Finance and Operations, the mouseDblClick() override has been deprecated, and you will have to move this logic to new controls.
 author: jasongre
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Code migration - Mouse double-click
+# Code migration - Mouse double-click logic
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In Microsoft Dynamics 365 for Finance and Operations, the mouseDblClick() override has been deprecated, and you will have to move this logic to new controls.
 

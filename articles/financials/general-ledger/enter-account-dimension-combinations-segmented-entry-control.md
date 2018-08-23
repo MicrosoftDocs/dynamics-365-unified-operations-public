@@ -17,7 +17,7 @@ ms.search.form: DimensionConfigureAccountStructure
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14071
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Enter account and dimension combinations (segmented entry control)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to enter account and dimension combinations or ledger accounts. The entry experience is often referred to as segmented entry control.
 

@@ -17,7 +17,7 @@ ms.search.form: InventStdCostConv
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50891
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Prerequisites for a standard cost conversion
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic discusses tasks to perform before you run a standard cost conversion. 
 

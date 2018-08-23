@@ -3,7 +3,7 @@
 
 title: Budget control overview
 description: This article introduces budget control and provides information to help you configure budget control in Microsoft Dynamics 365 for Finance and Operations so that you can manage financial resources.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: BudgetControlConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60493
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Budget control overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article introduces budget control and provides information to help you configure budget control in Microsoft Dynamics 365 for Finance and Operations so that you can manage financial resources.
 

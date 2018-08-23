@@ -17,7 +17,7 @@ ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParamet
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24671
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure Accounts payable
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics 365 for Finance and Operations. It also describes setup steps that you must complete before you start to set up Accounts payable.
 

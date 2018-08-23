@@ -17,7 +17,7 @@ ms.search.form: WHSLocDirTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1705903
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 # Immediate replenishment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Immediate replenishment lets you replenish inventory immediately after a location directive line fails to allocate inventory. The replenishment is based on a single line in the setup of the location directive. If inventory isn't on hand in the unit of measure that is specified by that line, replenishment of that unit of measure occurs immediately.
 

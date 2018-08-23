@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Help secure analytical workspaces and reports by using Power BI Embedded
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > This feature is supported in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) (version 7.2) and later releases.
@@ -45,7 +45,7 @@ This topic provides a walk-through for application developers who want to help s
 + An analytical report (.pbix file) that was created by using Microsoft Power BI Desktop, and that has a data model that is sourced from the Entity store database
 
 ## Overview
-Whether you're extending an existing application workspace or adding your own workspace, you can use embedded analytical views to deliver insightful and interactive views of your business data. Before you add new analytical workspaces and reports, it’s important that you establish a strategy to help secure the content. 
+Whether you're extending an existing application workspace or adding your own workspace, you can use embedded analytical views to deliver insightful and interactive views of your business data. Before you add new analytical workspaces and reports, it's important that you establish a strategy to help secure the content.
 
 There are several considerations that you should be aware of when you develop analytical solutions by using Power BI Embedded. Analytical reports are secured by using menu items. After they have access to a report, all viewers can access the underlying data model that is defined in the report. Although service options are available that automatically hide the fields that back a report data set, all viewers of the report have effective access to the fields in the data model. Additionally, X++ extensions are available that influence the way that the report is presented in the client. Both the **Filter** pane and the **Report** tabs can be hidden. However, Microsoft Power BI filters can be modified by using client-side script injections.
 
@@ -86,7 +86,7 @@ The preceding logic will prevent the Power BI Viewer control from being initiali
 Embedded Power BI reports in the application are secured by using menu items. Users who try to access a Power BI report directly, by using a menu item in Finance and Operations, will receive an error. Follow these steps to help secure the analytical reports.
 
 1. Add a menu item for the report or the appropriate tab. By default, the first tab of the report will be shown if no other tab is selected.
-2. Link the menu item to the **PowerBIEmbedded_App** configuration key.
+2. Link the menu item to the **PowerBIEmbedded\_App** configuration key.
 
     ![Link the menu item to the PowerBIEmbedded_App configuration key](media/secure-workspace-key.png)
 
@@ -103,11 +103,11 @@ In this scenario, the workspaces and reports that the sales manager from Contoso
 
     ![Create a new role](media/secure-workspace-filter.png)
 
-4. In the **Table filter DAX expression** field, enter **[COMPANY]=username()**.
+4. In the **Table filter DAX expression** field, enter **\[COMPANY\]=username()**.
 5. To make sure that the rules work, on the **Modeling** tab, click **View as Roles**. In the dialog box, set the following fields:
 
     1. Clear the **None** check box.
     2. Select the **Other user** check box, and then enter **USMF** in the text box.
     3. Select the **CompanyFilter** check box.
 
-The reports will now show data as if you're running the USMF company. 
+The reports will now show data as if you're running the USMF company.

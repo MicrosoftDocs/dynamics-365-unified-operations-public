@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Prepare data model to use Document Management files in format outputs 
+title: Prepare data models to use Document Management files in ER output
 description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Prepare data model to use Document Management files in format outputs
+# Prepare data models to use Document Management files in ER output
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. These steps can be performed in any company.
 

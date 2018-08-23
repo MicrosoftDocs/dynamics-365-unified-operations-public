@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install the Data import/export framework (AX 2012)
+title: Install the Data Import/Export Framework (DIXF)
 description: This topic provides information about how to install the data import/export framework.
 author: kfend
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Install the Data import/export framework (AX 2012)
+# Install the Data Import/Export Framework (DIXF)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 **Note: **The procedure for completing this task changed for cumulative update 7 or later for Microsoft Dynamics AX 2012 R2. The updated procedure also applies to AX 2012 R3. For more information, see the section later in this topic. Before you begin, your environment must include the following components:
 

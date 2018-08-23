@@ -3,7 +3,7 @@
  
 title: Create a billing code for the public sector
 description: Billing code custom fields allow you to collect values for billing code fields when free text invoices are created. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a billing code for the public sector
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Billing code custom fields allow you to collect values for billing code fields when free text invoices are created. After you assign the custom field to billing codes, users can access the field when the billing code is selected on a free text invoice line. This procedure was created using the PSUS demo company data in the public sector partition.
 

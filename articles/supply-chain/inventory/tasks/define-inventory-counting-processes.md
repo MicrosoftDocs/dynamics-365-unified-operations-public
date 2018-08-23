@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Define inventory counting processes
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal. It also shows you how to enable counting policies on a warehouse and item level. These tasks would typically be carried out by a warehouse supervisor. It is a prerequisite to have some existing released products and warehouses. If you're using a demo data company, you can run this procedure in the USMF company with any stocked item.
 

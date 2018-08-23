@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Set up rules and parameters for cross docking and buyer's push
+title: Set up rules and parameters for cross-docking and buyer's push
 description: This procedure demonstrates the steps to create Replenishment rules. 
 author: josaw1
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Set up rules and parameters for cross docking and buyer's push
+# Set up rules and parameters for cross-docking and buyer's push
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure demonstrates the steps to create Replenishment rules. Replenishment rules can be used to control how products are distributed to stores when using Cross-docking and Buyer´s push. Replenishment rules can be set up for stores or store groups. The weight defined for each line in a rule will control how the quantities of products will get distributed between the stores when using Replenishment rules as the distribution method in Cross-docking or Buyer´s push. This procedure uses the USRT demo company.
 

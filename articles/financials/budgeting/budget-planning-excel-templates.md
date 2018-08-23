@@ -17,7 +17,7 @@ ms.search.form: BudgetPlanSetLayout
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261794
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Budget planning templates for Excel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to create Microsoft Excel templates that can be used with budget plans.
 

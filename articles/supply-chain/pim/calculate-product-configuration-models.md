@@ -17,7 +17,7 @@ ms.search.form: PCConstraintEditor, PCProductConfigurationModelDetails, PCRuntim
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19191
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Calculations for product configuration models FAQ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes calculations for product configuration models and explains how to use calculations together with constraints.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Development and administration for Microsoft Dynamics 365 for Finance and Operations
+title: Development and administration for Finance and Operations
 description: This page helps developers and IT Pros get started with Finance and Operations.
 author: margoc
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Development and administration for Dynamics 365 for Finance and Operations 
+# Development and administration for Finance and Operations
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Development and administration for Microsoft Dynamics 365 for Finance and Operations includes:
 

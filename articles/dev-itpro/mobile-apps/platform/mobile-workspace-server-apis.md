@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Server-side APIs
+title: Server-side development (workspace X++ APIs)
 description: Microsoft Dynamics 365 for Finance and Operations includes support for a mobile phone app that enables rich offline and mobile interactions, and an easy-to-use designer experience.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 ---
 # Server-side development (workspace X++ APIs)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ## Class SysAppActionAttribute 
 SysAppActionAttribute used for decorating methods defining actions of workspace

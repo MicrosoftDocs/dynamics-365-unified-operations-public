@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use delegates to solve dependencies between models when migrating code
+title: Solve dependencies among models by using delegates during code migration
 description: This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
 author: maertenm
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Use delegates to solve dependencies between models when migrating code
+# Solve dependencies among models by using delegates during code migration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
 

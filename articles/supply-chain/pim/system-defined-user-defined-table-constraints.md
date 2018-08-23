@@ -17,7 +17,7 @@ ms.search.form: PCTableConstraintAttachAttributeTree, PCTableConstraintColumnSys
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19781
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # System-defined and user-defined table constraints
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains the two types of table constraints for components in a product configuration model -  user-defined and system-defined. Table constraints represent matrices of the allowed attribute combinations, where each row defines one set of possible attribute values.
 

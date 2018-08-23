@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reconfigure your environment
+title: Reconfigure environments to take a new platform or topology
 description: This topic provides information about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.
 author: sarvanisathish
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.3
 
 ---
-# Reconfigure your environment
+# Reconfigure environments to take a new platform or topology
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.  
 

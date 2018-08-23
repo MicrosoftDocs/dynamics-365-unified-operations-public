@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  WHSRFAutoConfirm
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Mixed license plate receiving
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Mixed license plate receiving allows you to build a license plate consisting of multiple items before you register and create put-away work. 
 

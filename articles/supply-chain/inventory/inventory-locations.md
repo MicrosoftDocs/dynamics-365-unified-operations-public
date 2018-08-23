@@ -17,7 +17,7 @@ ms.search.form: WMSLocation
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 2134
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inventory locations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Inventory locations are used with basic warehousing (WMS I) to determine where items are stored and where items are picked from in a WMS I warehouse.
 

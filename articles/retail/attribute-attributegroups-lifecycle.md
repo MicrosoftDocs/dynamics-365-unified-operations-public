@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations
+title: Attributes and attribute groups
+description: This topic describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields. 
 author: ashishmsft
 manager: AnnBe
-ms.date: 03/12/2018
+ms.date: 04/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,9 +30,9 @@ ms.dyn365.ops.version: Application pdate 5, AX 8.0
 
 ---
 
-# Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations
+# Attributes and attribute groups
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 *Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on). In Microsoft Dynamics 365 for Finance and Operations, attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them. Products then inherit the attributes and the default values when they are associated with the product categories or retail channels. The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.
  

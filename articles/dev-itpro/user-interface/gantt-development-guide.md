@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Gantt development guide
+title: Gantt control development guide
 description: This topic describes how to create new forms by using the Gantt control.
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
@@ -24,15 +24,15 @@ ms.custom: 17311
 ms.assetid: e5cd372c-6ac2-4995-bb3c-ff863b40fedb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Gantt development guide
+# Gantt control development guide
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to create new forms by using the Gantt control. We highly recommend that you look at the code in the Tutorial_Gantt form. This code demonstrates the full capabilities of the Gantt control, and shows how to load data and work with the application programming interface (API).
 

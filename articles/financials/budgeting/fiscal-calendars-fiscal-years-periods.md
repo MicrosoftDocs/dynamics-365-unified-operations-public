@@ -17,7 +17,7 @@ ms.search.form: FiscalCalendars
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25851
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fiscal calendars, fiscal years, and periods
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article discusses fiscal calendars, fiscal years and periods and how to utilize them for legal entities, fixed assets and budgeting.
 

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Event
+title: Event module
 description: Event module
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Event 
+# Event module
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 ## Index
 

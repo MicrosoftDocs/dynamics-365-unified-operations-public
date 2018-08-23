@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Workflow subsystem updates in Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article reviews the workflow system in Microsoft Dynamics 365 for Finance and Operations. It describes the changes that have been implemented since Microsoft Dynamics AX 2012 and also includes links to more information about the workflow system. 
 

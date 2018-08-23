@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cloud and on-premises feature comparison
+title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: robinarh
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ---
 
-# Cloud and on-premises feature comparison
+# Comparison of cloud and on-premises features
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic shows whether each feature is available in these products:
 

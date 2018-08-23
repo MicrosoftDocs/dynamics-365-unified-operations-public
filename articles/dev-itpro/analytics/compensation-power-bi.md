@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Compensation Power BI content
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the **Compensation** Microsoft Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
 
@@ -51,7 +51,6 @@ The reports that are included in **Compensation** the Power BI content have both
 
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-
 ## Understanding the data model and entities
 The following data is used to fill the reports in the **Compensation** Power BI content. This table shows the entities that the content was based on.
 
@@ -72,10 +71,8 @@ The following data is used to fill the reports in the **Compensation** Power BI 
 | Position                 | Department, FTE, position, position type, and title                                                        | Current Position, Current Employee |
 | Position Trend           | Positions over time, FTE, and job                                                                          | Calendar Offset, Date, Job, Position |
 | Reports To               | First name, last name, and full name                                                                       | Current Worker, Terminated Employee, Employee Trend |
-| Terminated Employee      | Terminated employees, termination date, title, position, and job                                             | Company, Compensation, Geographic Location, Employee Name, Reports To, Calendar Offset, Date, Employee Title, Demographics, Employment, Job, Position, Benefits |
+| Terminated Employee      | Terminated employees, termination date, title, position, and job                                           | Company, Compensation, Geographic Location, Employee Name, Reports To, Calendar Offset, Date, Employee Title, Demographics, Employment, Job, Position, Benefits |
 | Benefits                 | Effective date, benefit option, benefit plan, and benefit type                                             | Current Name, Terminated Employee, Employee Trend |
 | Employee Name            | First name, last name, and full name                                                                       | Current Employee, Terminated Employee, Employee Trend |
 | Employee Title           | Title and seniority date                                                                                   | Current Employee, Terminated Employee, Employee Trend |
 | Employee Trend           | Workers over time, headcount, company, and position                                                        | Company, Compensation, Geographic Location, Employee Name, Reports To, Calendar Offset, Date, Employee Title, Demographics, Employment, Job, Benefits |
-
-

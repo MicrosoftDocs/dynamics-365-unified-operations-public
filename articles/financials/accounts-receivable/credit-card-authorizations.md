@@ -17,7 +17,7 @@ ms.search.form: CreditCardProcessors, CustTable, SalesTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 3041
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Credit card setup, authorization, and capture
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This article provides an overview of credit card authorization in Microsoft Dynamics 365 for Finance and Operations. It includes information about how to set up a payment service, add a credit card to a sales order, and void an authorization.
 

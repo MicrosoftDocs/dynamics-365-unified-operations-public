@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install a deployable package
+title: Install deployable packages from the command line
 description: This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
 author: manalidongre
 manager: AnnBe
@@ -30,14 +30,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Install a deployable package
+# Install deployable packages from the command line
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development or build environment.
 
 > [!IMPORTANT]
-> For most types of environments, you can apply a deployable package to an environment directly from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Apply a deployable package on a system](apply-deployable-package-system.md). Therefore, this topic applies primarily to environment types that don't support the application of updates via LCS. Examples include local development environments (downloadable virtual hard disks [VHDs]) and multi-box development/test environments in Microsoft Azure (LCS Partner and trial projects). However, you can also use this topic any time that you want to install deployable packages by using the command line instead of LCS.
+> For most types of environments, you can apply a deployable package to an environment directly from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Apply a deployable package on a system](apply-deployable-package-system.md). Therefore, this topic applies primarily to environment types that don't support the application of updates via LCS. Examples include local development environments (downloadable virtual hard disks [VHDs]), multi-box development/test environments in Microsoft Azure (LCS Partner and trial projects), and build environments. However, you can also use this topic any time that you want to install deployable packages by using the command line instead of LCS.
 
 ## Key concepts
 - **Deployable package** – A deployable package is a unit of deployment that can be applied to any environment. It can consist of a binary hotfix to the runtime components of Application Object Server (AOS), an updated application package, or a new application package.

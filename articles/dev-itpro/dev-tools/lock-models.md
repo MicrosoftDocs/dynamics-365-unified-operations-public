@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Turn off model customization and deprecate functionality
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the process of disabling customization of a model. By following this process, you make it ineligible for over-layering. Developers will still be able to extend that model. This article also describes how you can deprecate obsolete functionality.
 

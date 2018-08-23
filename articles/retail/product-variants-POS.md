@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Inventory lookup in the Point of Sale
+title: Inventory lookup in the point of sale (POS)
 description: This topic describes the options that are available for viewing inventory information in the point of sale (POS). 
 author: ashishmsft
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Application update 5, AX 8.0
 
 ---
 
-# Inventory lookup in the Point of Sale 
+# Inventory lookup in the point of sale (POS)
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Inventory lookup in the point of sale (POS) helps retailers achieve real-time operational excellence and gain insights by connecting stores, the POS, and the back office. This functionality provides an accurate real-time view of product inventory across stores and distribution centers. It also helps retailers drive additional efficiencies and cost savings by improving inventory planning in real time.
 

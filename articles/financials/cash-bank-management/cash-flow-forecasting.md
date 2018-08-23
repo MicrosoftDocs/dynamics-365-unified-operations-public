@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  LedgerCovParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Cash flow forecasting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can use the cash flow forecasting tools to analyze upcoming cash flow and currency requirements, so that you can estimate the company's future need for cash. To obtain a forecast of the cash flow, you must complete the following tasks:
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Monitoring and diagnostics (Lifecycle Services, LCS)
+title: Monitoring and diagnostics tools in Lifecycle Services (LCS)
 description: This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Microsoft Dynamics 365 for Finance and Operations environments that you manage.
 author: manalidongre
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Monitoring and diagnostics (Lifecycle Services, LCS)
+# Monitoring and diagnostics tools in Lifecycle Services (LCS)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Microsoft Dynamics 365 for Finance and Operations environments that you manage.
 
@@ -166,5 +166,7 @@ The Index analysis tool shows aggregated index and table information, based on u
 
 The System diagnostic tool is a rule-based framework that runs a predefined set of rules against the environment and provides a report about the status of the rules. If failures occur, this tool provides recommendations for addressing the issue. To start the System diagnostics tool, on the LCS project dashboard, click the hamburger icon, and then click **System diagnostic**.
 
+## Other resources
 
+- [How to use Environment Monitoring View Raw Logs](https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/)
 

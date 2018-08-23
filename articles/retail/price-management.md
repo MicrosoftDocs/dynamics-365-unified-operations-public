@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail sales price management
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic provides information about the process of creating and managing sales prices in Microsoft Dynamics 365 for Retail. It focuses on the concepts that are involved in this process, and on the effects of the various configuration options for sales prices.
 

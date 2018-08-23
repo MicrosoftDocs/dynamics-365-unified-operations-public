@@ -17,7 +17,7 @@ ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30251
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Transportation management overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic gives an overview of the transportation management functionality in Microsoft Dynamics 365 for Finance and Operations.
 

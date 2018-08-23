@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Segmented entry control migration
+title: Migrate Segmented Entry controls
 description: This tutorial walks you through two migration scenarios for the Segmented Entry control -  a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2017
 ms.topic: article
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Segmented entry control migration
+# Migrate Segmented Entry controls
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This tutorial walks you through two migration scenarios for the Segmented Entry control -  a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
 

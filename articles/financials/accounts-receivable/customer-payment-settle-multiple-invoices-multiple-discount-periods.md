@@ -17,7 +17,7 @@ ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14511
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Use a customer payment to settle multiple invoices that span multiple discount periods
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in his article highlight how the cash discounts that are taken vary, depending on when the payment is made.
 

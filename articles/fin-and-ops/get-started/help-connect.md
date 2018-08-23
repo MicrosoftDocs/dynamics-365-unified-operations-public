@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Connect the Help system
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the components of the Help system for Microsoft Dynamics 365 for Finance and Operations. It provides an overview of how to connect these components and a summary of how to create custom help. 
 

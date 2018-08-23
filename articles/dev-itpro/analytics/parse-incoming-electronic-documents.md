@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 # Parse incoming documents to update application data
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can design Electronic reporting (ER) formats and run them in Microsoft Dynamics 365 for Finance and Operations, to parse incoming electronic documents and then use their content to update application data.
 
@@ -47,11 +47,10 @@ To become more familiar with the details of this feature, play the task guide, E
 To complete some steps of the task guide, you must download the following files:
 
 | Content description           | File                                                              |
---------------------------------|-------------------------------------------------------------------|
+|-------------------------------|-------------------------------------------------------------------|
 | ER data model configuration   | [EFSTAmodel.xml](https://go.microsoft.com/fwlink/?linkid=862266)  |
 | ER format configuration       | [EFSTAformat.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
 | Web service response sample 1 | [Response1.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web service response sample 2 | [Response2.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web service response sample 3 | [Response3.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web service response sample 4 | [Response4.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
-

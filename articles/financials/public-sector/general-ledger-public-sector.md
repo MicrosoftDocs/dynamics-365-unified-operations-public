@@ -3,7 +3,7 @@
 
 title: General ledger in the public sector
 description: This topic describes the General ledger functionality that is available for the public sector.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: AdvancedLedgerEntry, JournalizingDefinition, LedgerDerivedFinHie
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27211
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # General ledger in the public sector
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the General ledger functionality that is available for the public sector.
 

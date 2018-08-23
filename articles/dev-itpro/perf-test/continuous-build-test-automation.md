@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deployment with continuous build and test automation
+title: Deploy topologies that support continuous build and test automation
 description: This topic describes how to deploy a developer topology that supports continuous build and test automation.
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Deployment with continuous build and test automation
+# Deploy topologies that support continuous build and test automation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to deploy a developer topology that supports continuous build and test automation.
 
@@ -46,19 +46,19 @@ After you have configured a VSTS subscription in Lifecycle Services (LCS), you c
 ## Set up Visual Studio Team Services (VSTS)
 Compare VSTS features required for your organization: <https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs>
 
--   **TFVC vs GIT**: For RTW, we only support TFVC as source control repository that can be configured in VSTS project connected to LCS. Git is not supported.
+-   **TFVC vs GIT**: Currently TFVC is the only supported source control repository, Git is not supported.
 -   **Suspend current builds:** If you are deploying the build agent on an existing VSTS project which already has build definition created, please ensure you do not have any active triggers to queue the build. Additionally, make sure there are no builds scheduled / queued against the build pool. 
 
     [![BuildTriggers](./media/buildtriggers.jpg)](./media/buildtriggers.jpg)
 
--   **Free VSTS account provides only one build agent**. Using free VSTS account and deploying new build VM with another build agent will fail as your account is not provisioned for more than one build agent.
+-   **Free VSTS accounts provide only one build pipeline**. For each Visual Studio Enterprise subscriber in your organization you're granted an additional pipeline. 
 
 
-To use more than one build agents, setup your VSTS account with Azure billing: [Set up billing for your account](/vsts/billing/set-up-billing-for-your-account-vs) 
+To use more build pipelines than you're currently granted, set up your VSTS account with Azure billing: [Set up billing for your account](/vsts/billing/set-up-billing-for-your-account-vs) 
 
 [![VSTS1](./media/vsts1-300x155.jpg)](./media/vsts1.jpg)
 
--   After your account is linked with the Azure subscription. Follow the instructions in the Azure management portal to provision more build agents - [Buy load testing](/vsts/billing/buy-load-testing-vs)
+-   After your account is linked with the Azure subscription, follow the instructions in the Azure management portal to purchase more concurrent pipelines - [Concurrent pipelines in VSTS](/vsts/build-release/concepts/licensing/concurrent-pipelines-ts) 
 
 
 [![VSTS2](./media/vsts2-300x151.jpg)](./media/vsts2.jpg) 

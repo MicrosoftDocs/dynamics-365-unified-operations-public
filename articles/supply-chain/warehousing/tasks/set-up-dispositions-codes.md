@@ -3,7 +3,7 @@
  
 title: Set up dispositions codes
 description: This procedure focuses on the setup of a disposition code that can be used on a mobile device for the return order receiving process. 
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/11/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up dispositions codes
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure focuses on the setup of a disposition code that can be used on a mobile device for the return order receiving process. Disposition codes are a collection of rules that can be used when items are received. For example, when a work user uses a mobile device to receive items that were damaged, the user must scan a disposition code for damaged items. The inventory status of the goods received, the work template, and the location directive can be determined from the scanned disposition code. For the purchase order receiving process and the production order report as finished process, the use of a disposition code is optional. For the sales order return receiving process, if the items are registered using a mobile device, the use of disposition code is mandatory.  This guide was created using the demo data company USMF. This procedure is intended for the warehouse manager. 
 

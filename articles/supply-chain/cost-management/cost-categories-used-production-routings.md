@@ -17,7 +17,7 @@ ms.search.form: ProjCategory, RouteCostCategoryPrice
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78153
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cost categories used in production routing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about cost categories that apply to manufacturing environments that use routing.
 

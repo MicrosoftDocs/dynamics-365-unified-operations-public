@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a credit on the settlement discount (UK)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This walkthrough was created using the demo company DEMF with country context switched for the United Kingdom (Country/region GBR). 
 

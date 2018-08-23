@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Split payment for invoices issued to the Public Administration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about the split payment accounting schema.
 

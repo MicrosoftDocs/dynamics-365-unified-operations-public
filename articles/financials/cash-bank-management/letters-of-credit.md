@@ -3,7 +3,7 @@
 
 title: Letters of credit
 description: Letters of credit are bank documents that are commonly used for the purchase and sale of goods across international borders. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: BankLCImport
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18271
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Letters of credit
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Letters of credit are bank documents that are commonly used for the purchase and sale of goods across international borders. 
 

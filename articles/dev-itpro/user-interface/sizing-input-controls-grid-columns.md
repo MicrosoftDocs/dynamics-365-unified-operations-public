@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Input controls and grid column sizes
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to create a consistent look and feel for forms by controlling the size of controls and grids.
 

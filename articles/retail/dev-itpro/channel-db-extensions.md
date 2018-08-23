@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Channel database (DB) extensions
+title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Channel database (DB) extensions
+# Channel database extensions
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The channel database (channel DB) holds transactional and master data from one or more retail channels, such as an online store or a brick-and-mortar store. The master data is pushed down from the Retail Headquarters (Retail HQ) to the channel database using the commerce data exchange (CDX). The transactional data stored in the channel database is pulled back to the headquarters using the CDX.
 

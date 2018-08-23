@@ -17,7 +17,7 @@ ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2514
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Master planning for site and warehouse coverage, warehouse not mandatory
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how an item that has site and warehouse as coverage dimensions is planned. The warehouse dimension is not mandatory.
 

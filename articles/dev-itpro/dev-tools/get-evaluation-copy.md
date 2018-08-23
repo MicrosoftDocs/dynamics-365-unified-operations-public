@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get an evaluation copy
+title: Get evaluation copies
 description: A public preview is available. 
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Get an evaluation copy
+# Get evaluation copies
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A public preview is available. You can sign up and deploy a cloud instance of the latest build. This public preview available through Microsoft Dynamics Lifecycle Services (LCS). These links provide more information about how to download and use the public preview:
 

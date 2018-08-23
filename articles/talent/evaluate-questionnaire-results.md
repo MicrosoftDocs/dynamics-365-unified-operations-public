@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: View and evaluate the results of a questionnaire
+title: View and evaluate the results of questionnaires
 description: This topic explains how you can view and evaluate the results of questionnaires that respondents complete. 
 author: kherr75
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 
-# View and evaluate the results of a questionnaire
+# View and evaluate the results of questionnaires
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic explains how you can view and evaluate the results of questionnaires that respondents complete. 
 

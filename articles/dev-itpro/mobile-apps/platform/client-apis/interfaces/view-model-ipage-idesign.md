@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Design
+title: Design type
 description: Design object type.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Design Type
+# Design type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Design object type.
 For more information on design, please reference the [Design Introduction](../../scenarios/client-api-design-overview.md).

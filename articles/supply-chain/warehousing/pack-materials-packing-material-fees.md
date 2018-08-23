@@ -17,7 +17,7 @@ ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagi
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2194
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Packing materials and fees
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Packing material fees are paid to a recycling company at certain intervals. An amount is paid, per unit of weight, for each material that a packing unit consists of. Packing material fees are calculated and reported, but no ledger transactions are posted because the fees are not regarded as taxes to be paid to an authority.
 

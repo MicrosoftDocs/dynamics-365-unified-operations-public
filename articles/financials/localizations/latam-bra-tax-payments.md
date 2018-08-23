@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Tax payments in Brazil
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about tax payments in Brazil. In Brazil, users can register and post tax payments together with related fiscal information that must be reported to the tax authorities.
 

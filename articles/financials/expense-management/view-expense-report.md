@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  TrvPerDiems
 audience: Application User
 # ms.devlang: 
-ms.reviewer:  twheeloc
+ms.reviewer:  shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View an expense report
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 When you run a query to view transactions in General ledger or Procurement and sourcing, the query might return too much information. Therefore, you might want to narrow your search. To get the information that you require, you can drill down into a transaction to see the expense report that it appeared on.
 

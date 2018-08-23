@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: View purge or archive jobs (AX 2012)
+title: View purge and archive jobs
 description: This topic provides information about how to use the Intelligent Data Management Framework (IDMF) to view purge and archive jobs. 
 author: kfend
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# View Intelligent Data Management Framework purge or archive jobs (AX 2012)
+# View purge and archive jobs
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can use the options on the Microsoft Dynamics AX IDMF **Status** menu to refresh the status of all currently running jobs and provide details for all currently running and completed jobs. On the toolbar, click **Status** to open the **Status** workspace.
 

@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Define call center channel and channel attributes
+title: Create call center channels and define channel attributes
 description: This procedure walks through creating a new retail channel and defining channel attributes. 
 author: mugunthanm
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: mumani
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Define call center channel and channel attributes
+# Create call center channels and define channel attributes
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through creating a new retail channel and defining channel attributes. The demo data company used to create this task is USRT. This procedure is intended for the Retail IT role.
 

@@ -17,7 +17,7 @@ ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSu
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89983
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reconcile freight in transportation management
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the freight reconciliation process.
 

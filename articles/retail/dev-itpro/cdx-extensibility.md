@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: CDX extensibility
+title: Enable custom Commerce Data Exchange synchronization via extension
 description: This topic explains how you can extend the Retail initialization class to support custom Commerce Data Exchange (CDX) synchronization.
 author: mugunthanm
 manager: AnnBe
@@ -28,9 +28,9 @@ ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
-# CDX extensibility
+# Enable custom Commerce Data Exchange synchronization via extension
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how you can extend the Retail initialization class to support custom Commerce Data Exchange (CDX) synchronization. For this extension, you use the new extension points that were added in Microsoft Dynamics 365 for Finance and Operations platform update 8 or Microsoft Dynamics 365 for Retail platform update 8.
 

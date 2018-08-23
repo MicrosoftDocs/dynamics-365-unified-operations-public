@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create vendor payments by using a payment proposal
-description: This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work. Payment proposals are often used to create vendor payments, because the query can be used to quickly select vendor invoices for payment, based on criteria such as the due date and cash discount. 
+description: This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work. 
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
@@ -17,7 +17,7 @@ ms.search.form: LedgerJournalTransVendPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14312
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create vendor payments by using a payment proposal
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work. Payment proposals are often used to create vendor payments, because the query can be used to quickly select vendor invoices for payment, based on criteria such as the due date and cash discount. 
 
@@ -51,7 +51,7 @@ The payment proposal query contains various tabs, each of which has different op
 - **Check vendor balance** – If this option is set to **Yes**, the system verifies that a vendor doesn’t have a debit balance before any invoice is paid. If a vendor does have a debit balance, no payment is created. For example, the vendor might have credit memos, or payments that have been posted but haven't been settled yet. In these cases, the vendor should not be paid. Instead, the credit memos or payments should be settled against the outstanding invoices.
 - **Delete negative payments** – This option works differently, depending on whether payments are made for individual invoices or for the sum of invoices that meet the payment criteria. This behavior is defined on the method of payment.
 - **Payment for each invoice** – If the **Delete negative payments** option is set to **Yes**, and an unsettled invoice and payment exist for a vendor, only the invoice is selected for payment. The existing payment isn't settled against the invoice. If the **Delete negative payments** option is set to **No**, and an invoice and a payment aren't settled, both the invoice and the payment are selected for payment. A payment is created for the payment, and a refund (negative payment) is created for the payment.
-- <strong>Payment for sum of invoices</strong> – If the <strong>Delete negative payments</strong> option is set to <strong>Yes</strong>, and an unsettled invoice and payment exist for a vendor, both the unsettled invoice and the payment are selected for payment, and the amounts are added together to produce the total payment amount. The only exception occurs if the sum results in a refund. In this case, neither the invoice nor the payment is selected. If the <strong>Delete negative payments **option is set to **No</strong>, and an invoice and a payment aren't settled, both the invoice and the payment are selected for payment, and the amounts are added together to produce the total payment amount.
+- **Payment for sum of invoices** – If the **Delete negative payments** option is set to **Yes**, and an unsettled invoice and payment exist for a vendor, both the unsettled invoice and the payment are selected for payment, and the amounts are added together to produce the total payment amount. The only exception occurs if the sum results in a refund. In this case, neither the invoice nor the payment is selected. If the **Delete negative payments** option is set to **No**, and an invoice and a payment aren't settled, both the invoice and the payment are selected for payment, and the amounts are added together to produce the total payment amount.
 - **Print report only** – Set this option to **Yes** to see the results of the payment proposal on a report, but without creating any payments.
 - **Include vendor invoices from other legal entities** – If your organization has a centralized process for payment, and the payment proposal should include invoices from other legal entities that are included in the search criteria, set this option to **Yes**.
 - **Propose separate vendor payment per legal entity** – If this option is set to **Yes**, a separate payment is created for each legal entity per vendor. The vendor on the payment is the vendor from the invoice from each legal entity. If this option is set to **No**, and the same vendor has invoices in multiple legal entities, one payment is created for the total amount of the selected invoices. The vendor on the payment is the vendor in the current legal entity. If the vendor account doesn’t exist in the current legal entity, the vendor account of the first invoice that must be paid is used.
@@ -119,7 +119,8 @@ Dimension control allows you to control grouping of generated lines by payment p
 -   **Dimension control** field is activated without further defining the dimensions. The payment proposal will be created without taking dimensions into consideration. The created transaction inherits no dimensions from the applied entry.
 -   **Dimension control** field is activated and the further dimensions are enabled. Now you define how the dimensions will be copied to the journal. For example: • Select the **BusinessUnit** check box to create a payment proposal per business unit for the method of payment, • Select the **CostCenter** check box to create a payment proposal per cost center for the method of payment
 
-**Note:** If you select more than one dimension in the third option, a payment proposal is created for the dimension combination.
+> [[!NOTE]
+> If you select more than one dimension in the third option, a payment proposal is created for the dimension combination.
 
 #### Bank account selection
 

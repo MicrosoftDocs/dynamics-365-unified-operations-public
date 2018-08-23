@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  SysPolicyListPage, TrvPolicyRule
 audience: Application User
 # ms.devlang: 
-ms.reviewer:  twheeloc
+ms.reviewer:  shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Expense policies
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can define policies that your workers must follow when entering and submitting expense reports and travel requisitions. 		
 Implementing expense policies can help you manage expenses effectively. 		

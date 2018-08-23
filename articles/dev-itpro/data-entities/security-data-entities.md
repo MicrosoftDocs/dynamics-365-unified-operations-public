@@ -32,12 +32,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Security and data entities
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Entry points
 Data entities support entry point security. This support resembles the support that menu items and pages have. To give you flexibility when you define a security model, data entities allow for a separate security configuration for each integration mode. Currently, two entry points/integration modes are identified for a data entity.
 
-| **Entry point**     | **Description**                                                                                                          |
+| Entry point     | Description                                                                                                          |
 |-----------------|----------------------------------------------------------------------------------------------------------------------|
 | Data services   | The ability to use OData services (API) for the entity.                                                              |
 | Data management | The ability to use asynchronous integration options for the entity, such as import/export and connector integration. |
@@ -45,8 +45,8 @@ Data entities support entry point security. This support resembles the support t
 ## Target scenarios
 Data entities can support multiple categories of scenarios. Each category might have to be secured separately.
 
-- **Data management (file-based import/export, and so on)** – Typically, a data manager performs these scenarios. These scenarios might provide access to data that isn’t usually accessible through the UI for the Finance and Operations client. Therefore, you will often want to secure data management scenarios independently of access to the related page, so that a data manager can perform only import/export operations.
-- **General integration via OData** – Many integration scenarios require that data entities be exposed as services, so that data can be accessed via OData (for example, from an online storefront or a Process Lifetime Management [PLM] system). Often, you will want to control access to data entities that are built for this purpose independently of page access. In other words, you will want to grant access to the service interface without granting access through the Finance and Operations client UI.
+- **Data management (file-based import/export, and so on)** – Typically, a data manager performs these scenarios. These scenarios might provide access to data that isn't usually accessible through the UI for the Finance and Operations client. Therefore, you will often want to secure data management scenarios independently of access to the related page, so that a data manager can perform only import/export operations.
+- **General integration via OData** – Many integration scenarios require that data entities be exposed as services, so that data can be accessed via OData (for example, from an online storefront or a Process Lifetime Management \[PLM\] system). Often, you will want to control access to data entities that are built for this purpose independently of page access. In other words, you will want to grant access to the service interface without granting access through the Finance and Operations client UI.
 - **Microsoft Office integration (Edit in Excel, and so on)** – Office integration scenarios also require that data entities be accessed via OData. However, from an end-user perspective, these scenarios can be viewed as a natural extension of the Finance and Operations client, where, for example, Microsoft Excel is used to simplify some editing tasks. Therefore, there is usually no reason to secure the Microsoft Office integration independently of page access.
 
 ## Privilege/duty mapping
@@ -55,66 +55,68 @@ Depending on the target scenarios for a data entity, you should create one or mo
 The following table shows the privileges that you should create. It also explains how you should map these privileges to duties. If your data entity is intended to support more than one scenario, you should create the combined set of privileges and duty mappings.
 
 <table>
-<tbody>
+<thead>
 <tr>
 <th>Target scenario</th>
 <th>Privileges</th>
 <th>Duty mapping</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>The data entity is intended for data management.</td>
 <td>Create the following new privileges:
 <ul>
- 	<li>&lt;<em>DataEntity&gt;</em><strong>Import</strong>
+<li><em>&lt;DataEntity&gt;</em><strong>Import</strong>
 <ul>
- 	<li>Grant=Create</li>
- 	<li>IntegrationMode=DataManagement</li>
+<li>Grant=Create</li>
+<li>IntegrationMode=DataManagement</li>
 </ul>
 </li>
- 	<li>&lt;<em>DataEntity&gt;</em><strong>Export</strong>
+<li><em>&lt;DataEntity&gt;</em><strong>Export</strong>
 <ul>
- 	<li>Grant=Read</li>
- 	<li>IntegrationMode=DataManagement</li>
+<li>Grant=Read</li>
+<li>IntegrationMode=DataManagement</li>
 </ul>
 </li>
 </ul>
 </td>
-<td>Extend the relevant data management duties with the new privileges. For more information, see the “Data administrator role” section later in this topic.</td>
+<td>Extend the relevant data management duties with the new privileges. For more information, see the "Data administrator role" section later in this topic.</td>
 </tr>
 <tr>
 <td>The data entity is intended for general integration via OData.</td>
 <td>Create the following new privileges:
 <ul>
- 	<li><em>&lt;DataEntity&gt;</em><strong>View</strong>
+<li><em>&lt;DataEntity&gt;</em><strong>View</strong>
 <ul>
- 	<li>Grant=Read</li>
- 	<li>IntegrationMode=DataServices</li>
+<li>Grant=Read</li>
+<li>IntegrationMode=DataServices</li>
 </ul>
 </li>
- 	<li>&lt;<em>DataEntity&gt;</em><strong>Maintain</strong>
+<li><em>&lt;DataEntity&gt;</em><strong>Maintain</strong>
 <ul>
- 	<li>Grant=Delete</li>
- 	<li>IntegrationMode=DataServices</li>
+<li>Grant=Delete</li>
+<li>IntegrationMode=DataServices</li>
 </ul>
 </li>
 </ul>
 </td>
-<td>Create new duties for the integration scenario, and map the relevant new privileges to these duties. For more information, see the “Duty naming guidelines” section later in this topic.</td>
+<td>Create new duties for the integration scenario, and map the relevant new privileges to these duties. For more information, see the "Duty naming guidelines" section later in this topic.</td>
 </tr>
 <tr>
 <td>The data entity is intended for Microsoft Office integration.</td>
 <td>Create the following new privileges:
 <ul>
- 	<li><em>&lt;DataEntity&gt;</em><strong>View</strong>
+<li><em>&lt;DataEntity&gt;</em><strong>View</strong>
 <ul>
- 	<li>Grant=Read</li>
- 	<li>IntegrationMode=DataServices</li>
+<li>Grant=Read</li>
+<li>IntegrationMode=DataServices</li>
 </ul>
 </li>
- 	<li>&lt;<em>DataEntity&gt;</em><strong>Maintain</strong>
+<li><em>&lt;DataEntity&gt;</em><strong>Maintain</strong>
 <ul>
- 	<li>Grant=Delete</li>
- 	<li>IntegrationMode=DataServices</li>
+<li>Grant=Delete</li>
+<li>IntegrationMode=DataServices</li>
 </ul>
 </li>
 </ul>
@@ -127,53 +129,57 @@ The following table shows the privileges that you should create. It also explain
 Because the approach that is described in the preceding table complies with the principle of least privilege, we recommend that you use it. Nevertheless, in some situations, you can use the following simpler approach. However, be aware that this approach might be less secure. It might also be slightly harder to maintain and extend.
 
 <table>
-<tbody>
+<thead>
 <tr>
 <th>Target scenario</th>
 <th>Privileges</th>
 <th>Duty mapping</th>
 <th>Potential issues</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>The data entity is intended for data management, general integration via OData, and Microsoft Office integration.</td>
 <td>Create the following new privileges:
 <ul>
- 	<li><em>&lt;DataEntity&gt;</em><strong>View</strong>
+<li><em>&lt;DataEntity&gt;</em><strong>View</strong>
 <ul>
- 	<li>Grant=Read</li>
- 	<li>IntegrationMode=All</li>
+<li>Grant=Read</li>
+<li>IntegrationMode=All</li>
 </ul>
 </li>
- 	<li>&lt;<em>DataEntity&gt;</em><strong>Maintain</strong>
+<li><em>&lt;DataEntity&gt;</em><strong>Maintain</strong>
 <ul>
- 	<li>Grant=Delete</li>
- 	<li>IntegrationMode=All</li>
+<li>Grant=Delete</li>
+<li>IntegrationMode=All</li>
 </ul>
 </li>
 </ul>
 </td>
 <td>
 <ol>
- 	<li>Extend the relevant data management duties with the new privileges.</li>
- 	<li>Create new duties for the integration scenario, and map the relevant new privileges to these duties.</li>
- 	<li>Extend the relevant existing duties that provide access to the related page with the new privileges.</li>
+<li>Extend the relevant data management duties with the new privileges.</li>
+<li>Create new duties for the integration scenario, and map the relevant new privileges to these duties.</li>
+<li>Extend the relevant existing duties that provide access to the related page with the new privileges.</li>
 </ol>
 </td>
-<td>When you use this approach, a data manager who is granted access to import/export data can also access the system from a web service. Likewise, a user who is granted access to the page that is associated with a data entity can also access the system from a web service. This user will be prevented from data import/export only if he or she hasn’t been granted the related data management duty.</td>
+<td>When you use this approach, a data manager who is granted access to import/export data can also access the system from a web service. Likewise, a user who is granted access to the page that is associated with a data entity can also access the system from a web service. This user will be prevented from data import/export only if he or she hasn't been granted the related data management duty.</td>
 </tr>
 </tbody>
 </table>
 
 ## Duty naming guidelines
-When you create data entities for specific integration scenarios, you should also create separate duties. These duties grant the external application or service the required access to the data entities. The duties that you create should follow the same naming guidelines as the corresponding duties that provide access through the Dynamics 365 for Finance and Operations client UI. However, you should add a “using services” suffix.
+When you create data entities for specific integration scenarios, you should also create separate duties. These duties grant the external application or service the required access to the data entities. The duties that you create should follow the same naming guidelines as the corresponding duties that provide access through the Dynamics 365 for Finance and Operations client UI. However, you should add a "using services" suffix.
 
 <table>
-<tbody>
+<thead>
 <tr>
 <th>Duty type</th>
 <th>Duty object name suffix</th>
 <th>Duty name template</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>Enable</td>
 <td>…IntegrationEnable</td>
@@ -198,6 +204,7 @@ When you create data entities for specific integration scenarios, you should als
 </table>
 
 Here are some examples of duty names that follow these guidelines:
+
 - Maintain route master using service
 - Inquire into case progress using services
 
@@ -215,19 +222,20 @@ The **DataManagementApplicationAdministrator** security role enables an associat
 - DataManagementApplicationTransactionEntitiesMaintain
 - DataManagementApplicationTransactionEntitiesView
 
-When you create data entities that can be used in the **Data management** workspace, you must extend these duties with the new security privileges, based on the E**ntity Category** property that is specified on the data entity. (For information about how to extend duties with the new security privileges, see the “Privilege/duty mapping” section earlier in this topic.) You can also use the duties to create new roles for specific data management scenarios.
+When you create data entities that can be used in the **Data management** workspace, you must extend these duties with the new security privileges, based on the **Entity Category** property that is specified on the data entity. (For information about how to extend duties with the new security privileges, see the "Privilege/duty mapping" section earlier in this topic.) You can also use the duties to create new roles for specific data management scenarios.
 
 ## Modeling new entry point security in the Application Explorer
 The pattern for modeling security resembles the pattern for modeling security with privileges on an entry point. To model security, follow these steps.
 
-1.  Create a new privilege.
-2.  Create new data entity permissions.
-3.  Set the **Name** to **Data Entity**.
-4.  Select the **Access Level**.
-5.  Select **Integration Mode** (All &gt; Data Services &gt; Data Management). This is specific to Object Type: Data Entity.
-    -   **All** – Applies same security settings to be applied to both OData and data import/export.
-    -   **Data Management** – Applies only to data import/export and connector integration.
-    -   **Data Services** – Only applies to OData Services.
+1. Create a new privilege.
+2. Create new data entity permissions.
+3. Set the **Name** to **Data Entity**.
+4. Select the **Access Level**.
+5. Select **Integration Mode** (All &gt; Data Services &gt; Data Management). This is specific to Object Type: Data Entity.
+
+    - **All** – Applies same security settings to be applied to both OData and data import/export.
+    - **Data Management** – Applies only to data import/export and connector integration.
+    - **Data Services** – Only applies to OData Services.
 
 [![RolebasedSecurity](./media/rolebasedsecurity.png)](./media/rolebasedsecurity.png)
 
@@ -241,10 +249,9 @@ For data entities that are targeted at data migration, you should assign TPF per
 For data entities that are targeted at integration scenarios, the TPF permissions that you should assign depend on whether the TPF-protected field is essential for the data entity as a whole to work:
 
 - **If the TPF-protected field is essential**: An essential field is a field that will always be read/written. In this case, TPF permissions should be granted to the same privileges that grant access to the data entity.
-- **If the TPF-protected field isn’t essential**: Examples of nonessential fields include the field for a worker’s Social Security number and the field for a vendor’s bank account number. In this case, TPF permissions for accessing the field should be granted through a separate privilege, and that privilege should be assigned directly to the roles that require access to the TPF-protected field. However, if the field is a mapped field on the entity, that access has probably already been granted to the role, if that role also has access to the field through pages in the Finance and Operations client UI.
+- **If the TPF-protected field isn't essential**: Examples of nonessential fields include the field for a worker's Social Security number and the field for a vendor's bank account number. In this case, TPF permissions for accessing the field should be granted through a separate privilege, and that privilege should be assigned directly to the roles that require access to the TPF-protected field. However, if the field is a mapped field on the entity, that access has probably already been granted to the role, if that role also has access to the field through pages in the Finance and Operations client UI.
 
-There are several advantages to granting explicit access to TPF-protected fields that aren’t considered essential for the entity:
+There are several advantages to granting explicit access to TPF-protected fields that aren't considered essential for the entity:
+
 - You can more easily discover who has access to sensitive data.
 - You help reduce the risk that someone will gain access to sensitive data by accident, because a role gains access only if you assign both a duty and a privilege to it.
-
-

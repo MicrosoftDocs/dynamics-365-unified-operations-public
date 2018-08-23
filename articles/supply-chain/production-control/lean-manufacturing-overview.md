@@ -17,7 +17,7 @@ ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobScheduling
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19371
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Lean manufacturing overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics 365 for Finance and Operations.
 

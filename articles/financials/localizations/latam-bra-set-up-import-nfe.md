@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: EFDocumentReceivedXML_BR  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Set up, import, and verify NF-e XML documents and DANFE
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can automatically extract and import the XML from the Nota Fiscal Eletrônica (NF-e) and its DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) from emails sent by the vendor for your company. The vendor must send these emails as file attachements during the time which the acquired goods are in transit.
 

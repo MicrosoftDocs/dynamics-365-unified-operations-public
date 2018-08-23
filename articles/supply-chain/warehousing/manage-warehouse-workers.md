@@ -17,7 +17,7 @@ ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWork
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72891
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage warehouse workers
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how you can use Microsoft Dynamics 365 for Finance and Operations to help control and monitor the work that's carried out by employees in your warehouses.
 

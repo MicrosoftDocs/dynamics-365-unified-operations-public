@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up customer and vendor compensation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information that will help you run the compensation process for vendor and customer accounts, for legal entities that have their primary address in Hungary or Poland.
 

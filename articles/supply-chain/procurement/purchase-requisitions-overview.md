@@ -17,7 +17,7 @@ ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetail
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2174
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Purchase requisition overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
 

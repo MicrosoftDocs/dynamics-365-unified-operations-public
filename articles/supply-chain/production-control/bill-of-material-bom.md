@@ -17,7 +17,7 @@ ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufac
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19331
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Bills of materials and formulas
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about bills of materials (BOMs) and formulas, which are a central part of the definition of products and product variants. BOMs and formulas specify the required materials or ingredients for a specific product. Formulas also specify the co-products and by-products that are received in a specific production context. 
 

@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262034
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Mobile invoice approvals
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Mobile capabilities in Microsoft Dynamics 365 for Finance and Operations let a business user design mobile experiences. For advanced scenarios, the platform also lets developers extend the capabilities as they desire. The most effective way to learn some of the new concepts on mobile is to go through the process of designing a few scenarios. This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. This topic should help you design other variations of the scenarios and can also be applied to other scenarios that aren’t related to vendor invoices.
 
@@ -180,9 +180,9 @@ To design the invoice details page for mobile, use the **VendMobileInvoiceHeader
 1. In the Finance and Operations URL, replace the name of the menu item with **VendMobileInvoiceHeaderDetails** to open the form
 2. Open the mobile designer from the **Settings** (gear) button.
 3. Click the **Edit** button to start edit mode in the workspace.
-4. Select the <strong>My vendor invoices **page that you created earlier, and then click **Edit</strong>.
+4. Select the **My vendor invoices** page that you created earlier, and then click **Edit**.
 5. On the **Fields** tab, click the **Grid** column heading.
-6. Click **Properties** &gt; **Add page**. **Note:** When you click the **Grid** heading and add a page, the relationship with the details page is established automatically.
+6. Click **Properties &gt; Add page**. **Note:** When you click the **Grid** heading and add a page, the relationship with the details page is established automatically.
 7. Enter a page title, such as **Invoice details**, and a description, such as **View invoice header and line details**.
 8. Click **Select fields**. Note that, the order in which you add is the order in which the fields will be displayed to the end user. The only way to change the ordering of the fields will be by re-selecting all the fields. 
 9. Add the following fields from the header, based on the requirements for this scenario:

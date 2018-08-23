@@ -5,7 +5,7 @@ title: Software lifecycle policy and on-premises releases
 description: This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 for Finance and Operations (on-premises) releases.
 author: RyanCCarlson2 
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 07/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Software lifecycle policy and on-premises releases
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 for Finance and Operations (on-premises) releases.
 
@@ -54,14 +54,15 @@ Application and Platform releases expire at the end of the month of their softwa
 
 | Release          |Version         | Build number          | Availability | Expiration date  | Product life | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
-|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 | 7.3.11971  | March 2018 | July 2020     | December 2027  |
-|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 | 7.2.11792 | June 2017 | June 2020     | December 2027  |
+|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 | 7.3.11971  | March 2018 | April 2020     | December 2027  |
+|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 | 7.2.11792 | June 2017 | April 2019     | December 2027  |
 
 ### Platform Releases
 
 | Release          |Build number         | Availability          | Expiration | End of life  |
 |------------------|----------------------|------------------|--------------|---------------|
-|  Platform Update 12 | 7.0.4709.XXXX  | March 2018  | June 2018 | December 2027     |
+|  Platform update 15 | 7.0.4841.XXXX  | June 2018  | September 2018 | December 2027     |
+|  Platform Update 12 | 7.0.4709.41182  | March 2018  | June 2018 | December 2027     |
 |  Platform Update 11 | 7.0.4679.35176 | October 2017 | April 2018 | December 2027     |
 |  Platform Update 10 | 7.0.4641.16233 | August 2017 | April 2018 | December 2027     |
 |  Platform Update 9 | 7.0.4612.35162 | August 2017 | April 2018 | December 2027     |
@@ -78,4 +79,5 @@ Use of the VHDs is subject to the [Software license terms](https://go.microsoft.
 |----------------------------------------------|------------------------------|---------------------|
 | Platform update 12 / Application release 7.2 | FinandOps7.2PlatUpdate12.vhd |    May 24, 2018     |
 | Platform update 12 / Application release 7.3 | FinandOps7.3PlatUpdate12.vhd |    June 05, 2018    |
+| Platform update 15 / Application release 7.3 | FinandOps7.3withPlatUpdate15 |    December 08, 2018    |
 

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Configure tax integration for China
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the process for configuring tax integration for China.
 

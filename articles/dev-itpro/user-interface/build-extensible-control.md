@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Build an extensible control
+title: Build extensible controls
 description: This topic describes how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.
 author: TLeforMicrosoft
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Build an extensible control
+# Build extensible controls
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.
 

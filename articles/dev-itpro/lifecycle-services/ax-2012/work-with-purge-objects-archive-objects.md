@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Purge and archive objects (AX 2012)
+title: Work with purge and archive objects
 description: This topic provides information about purge and archive objects in the Intelligent Data Management Framework (IDMF).
 author: kfend
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Intelligent Data Management Framework purge and archive objects (AX 2012)
+# Work with purge and archive objects
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Add/Edit rules
 --------------

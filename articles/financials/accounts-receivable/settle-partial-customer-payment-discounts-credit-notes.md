@@ -17,7 +17,7 @@ ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14564
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settle a partial customer payment that has discounts on credit notes
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article walks you through a scenario where a cash discount is taken on a credit note when the original invoice also had a cash discount. 
 

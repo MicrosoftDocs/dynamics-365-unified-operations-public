@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage Finance and Operations Support experiences
+title: Manage Finance and Operations support experiences
 description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services to manage support incidents. 
 author: kfend
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Manage Finance and Operations Support experiences
+# Manage Finance and Operations support experiences
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 To use the Support tool, you must have previously created a project in Lifecycle Services (LCS) and installed and ran the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](ax-2012/system-diagnostics-lcs.md).
 
@@ -94,6 +94,11 @@ If you purchased a support plan, such as **Premier Support** or **Advance Suppor
    
 2. On the **Manage support plans** page, click **Add contract** to enter the **Access ID** and **Password/Contract ID**.
    ![Add contracts](media/SupportAddPlans.png) 
+   
+### Remove a Premier support plan 
+If you need to remove a Premier support plan from one or more of your contracts, you can do so using the Premier Portal.
+1. Log in to the [Premier Portal](https://support.microsoft.com/en-us/premier/access).
+2. Select the contracts you want to remove from the **Accociated access IDs**, and then click **Remove**. 
    
    
 ## Report production outage

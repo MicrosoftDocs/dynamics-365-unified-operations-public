@@ -17,7 +17,7 @@ ms.search.form: WHSRFColor, WHSRFColorPicker, WHSWorkUserDisplaySettings
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29071
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Warehouse mobile device display settings
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to set up the appearance of a mobile device display and map keyboard shortcuts to controls such as buttons. 
 

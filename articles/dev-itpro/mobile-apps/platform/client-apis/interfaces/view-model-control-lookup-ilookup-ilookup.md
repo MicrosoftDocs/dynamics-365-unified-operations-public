@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Lookup
+title: Lookup type
 description: Lookup control type. A lookup is an input control that is used to select an input from a list of options.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Lookup Type
+# Lookup type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Lookup control type. A lookup is an input control that is used to select an input from a list of options.
 For example, a lookup could be used to lookup a customer when linking a customer to a new sales order.

@@ -32,12 +32,12 @@ ms.dyn365.ops.version: Version 1611
 
 # Recruiting Power BI content
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the **Recruiting** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
 ## Accessing the Power BI content
-The **Recruiting** Power BI content is shown in the **Recruitment management** workspace. 
+The **Recruiting** Power BI content is shown in the **Recruitment management** workspace.
 
 ## Reports and visuals in the Recruitment management workspace
 The **Recruitment management** workspace contains an **Analytics** tab. This tab contains the embedded Power BI content for recruiting. The content consists of an overview tab and additional tabs that contain details. The following table describes the reports on each tab.
@@ -71,5 +71,3 @@ The following table shows the entities that the **Recruiting** Power BI content 
 | Performance          | Rating, description, and rating model                            | Applicant, Employed Applicant, Terminated Applicant |
 | Recruitment Project  | Project description, project status, and openings                | Applicant, Employed Applicant, Terminated Applicant |
 | Terminated Applicant | Terminated applicants, reason, performance, and termination date | Company, Calendar Offset, Date, Geographic Location, Performance, Demographics, Employment, Media, Recruitment Project, Applicant Name |
-
-

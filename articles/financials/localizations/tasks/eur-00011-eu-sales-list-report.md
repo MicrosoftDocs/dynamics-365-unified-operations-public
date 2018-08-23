@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Generate an EU sales list report
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through generating the EU sales list report. This includes transferring intra-community trade transactions to the EU sales list and running the report. This  procedure also includes creating an intra-community trade transaction for demo purposes. For more information about EU Sales list reporting, including required prerequisites, refer to the Dynamics 365 for Finance and Operations Help.
 

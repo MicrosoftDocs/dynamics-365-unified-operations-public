@@ -17,7 +17,7 @@ ms.search.form: VendInvoicePostingHistory
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2761
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Three-way matching policies
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides examples of three-way matching.
 

@@ -3,9 +3,9 @@
 
 title: Service object groups 
 description: Object groups are useful for sorting and filtering the data about objects for reports and statistics.
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
-ms.date: 02/21/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,14 +17,14 @@ ms.search.form: SMAServiceObjectGroups
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: YuyuScheller
+ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service object groups 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Object groups are useful for sorting and filtering the data about objects for
 reports and statistics. For example, you can group objects by geographical
@@ -71,5 +71,22 @@ from these objects to create service agreement lines for HIJ. By using object
 groups in this manner, you can quickly set up new objects and determine the
 service tasks that must be performed on them. 
 
+## Create service object groups
+
+Create groups that you can assign service objects to. Service objects are inventory items and other products for which services are performed. By grouping service objects, you can create reports for similar and related service objects. For example, a service object group might consist of two service objects: One service object is a kit, and the second service object is the service to install the kit.
+
+To create service object groups, follow these steps:
+
+1. Click **Service management > Setup > Service objects > Service object groups**.
+
+2. Click **New** to create a new service object group.
+
+3. Enter a unique name for the service object group and, optionally, a description.
+
+You can assign service objects to the group by using the **Service objects** form. 
+
+## See also
+
+[Create service objects](create-service-objects.md)
 
 

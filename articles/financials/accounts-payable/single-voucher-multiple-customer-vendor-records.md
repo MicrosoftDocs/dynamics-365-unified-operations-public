@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222534
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Single voucher with multiple customer or vendor records
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions of Microsoft Dynamics 365 for Finance and Operations, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing. 
 

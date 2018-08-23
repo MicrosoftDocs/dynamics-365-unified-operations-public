@@ -17,7 +17,7 @@ ms.search.form: BOMReportFinish, BOMReportFinishMax
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53251
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Report BOMs as finished
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about reporting BOMs as finished.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Enter payroll beginning balances
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The topic describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes. This information is valuable for partners who transfer data for a new Payroll implementation from another system. To prepare to enter beginning payroll balances, we verify the following information:
 

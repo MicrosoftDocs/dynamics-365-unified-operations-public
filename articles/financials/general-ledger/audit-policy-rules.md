@@ -17,7 +17,7 @@ ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12991
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Audit policy rules
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can use audit policies to evaluate expense reports, vendor invoices, and purchase orders to make sure that they comply with policy rules that you create. All of the rules that are associated with an audit policy are run in batch mode, according to a schedule that you specify.  Each policy rule is an instance of a policy rule type. For each policy rule type, only one policy rule can be active at a time. 
 

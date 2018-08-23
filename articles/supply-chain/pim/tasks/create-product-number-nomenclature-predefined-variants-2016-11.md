@@ -3,7 +3,7 @@
  
 title: Create a product number for predefined product variants
 description: This guide shows you how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group. 
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/03/2017
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a product number for predefined product variants
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This guide shows you how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group. The demo data company used to create this procedure is USMF. The new product number nomenclature is assigned to the Color and Size product dimension group. This task would typically be done by a product designer.
 

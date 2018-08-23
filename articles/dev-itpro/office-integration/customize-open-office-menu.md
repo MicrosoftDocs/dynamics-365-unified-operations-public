@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Customize the Open in Microsoft Office menu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Most pages include an Open in Microsoft Office menu. This topics provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
 

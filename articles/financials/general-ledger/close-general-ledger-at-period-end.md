@@ -17,7 +17,7 @@ ms.search.form: LedgerPeriodCloseWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14111
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Close the general ledger at period end
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the tasks that are typically completed when performing a period closing for General ledger. 
 

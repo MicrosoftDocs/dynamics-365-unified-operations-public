@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Report 340
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Report 340 replaced two earlier reports (Sales Statutory Books and Purchases Statutory Books) that all Spanish companies submitted as hard copies to the Spanish tax authorities. The new report can be uploaded to the tax authorities' website, or it can be submitted by using a software package that is available free of cost from the tax authorities.
 
@@ -126,7 +126,7 @@ The format of the Report 340 text file complies with the regulatory requirements
 
 You can validate the file format by using one of the following methods:
 
-- Upload the file to the [tax authorities' website](https://www5.aeat.es/es13/h/iemodelk.html?mod=9340). You can test the file on a specific page of the site. However, you must have a valid e-certificate.
+- Upload the file to the Spanish tax authority website. You can test the file on a specific page of the site. However, you must have a valid e-certificate.
 
     > [!NOTE]
     > E-certificates are issued only to Spanish citizens.

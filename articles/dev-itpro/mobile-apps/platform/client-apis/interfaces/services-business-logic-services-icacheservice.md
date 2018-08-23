@@ -1,6 +1,7 @@
 ---
 # required metadata
-title: CacheService
+
+title: CacheService type
 description: Provides ability to access data from the device cache and update data into the device cache.
 author: shadykdc
 manager: AnnBe
@@ -9,7 +10,9 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+
 # optional metadata
+
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
@@ -22,11 +25,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom:
 ms.dyn365.ops.version:
+
 ---
 
-# CacheService Type
+# CacheService type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Provides ability to access data from the device cache and update data into the device cache.
 

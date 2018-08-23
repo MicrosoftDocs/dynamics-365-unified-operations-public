@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: NavigationArgs
+title: NavigationArgs type
 description: NavigationArgs type
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# NavigationArgs Type
+# NavigationArgs type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 ### Hierarchy
 

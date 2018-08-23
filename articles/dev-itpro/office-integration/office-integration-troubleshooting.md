@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Troubleshoot the Office integration 
+# Troubleshoot the Office integration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
 
@@ -94,9 +94,13 @@ If you have concerns about giving users access to the data via the Excel Add-in,
 - The entities should have all the validation and logic that the forms have. If they don't, it's a bug. 
 - The way that entities are secured resembles the way that forms are secured. Therefore, if a user should not have permission to update or write data by using a form that exposes that data, the user should not have permission to update or write data by using an entity that exposes that data. 
 
-## Why is the Publish button in the Excel Add-in unavailable? 
+### Why is the Publish button in the Excel Add-in unavailable? 
 
 All key and mandatory fields must be present to publish data back to the entity. Try to edit the design to add more fields to the binding. 
+
+### Why are the Excel Add-in, the Word Add-in, and the Open in Excel options only available when the Internet is available?
+
+For all environments, including on-premises, the Excel and Word Add-ins, and the libraries they use, are loaded from multiple Internet locations and therefore will only run when the Internet is available. For on-premises environments, when the Internet is not available, the Open in Excel options are hidden because the Excel Add-in will not run without access to the Content Delivery Network (CDN) that houses the Excel Add-in. 
 
 ## Troubleshooting issues
 

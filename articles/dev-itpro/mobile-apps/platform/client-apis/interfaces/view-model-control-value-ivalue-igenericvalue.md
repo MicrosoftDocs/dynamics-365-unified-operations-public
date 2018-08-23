@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: GenericValue
+title: GenericValue type
 description: Generic value control type.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# GenericValue Type
+# GenericValue type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Generic value control type.
 

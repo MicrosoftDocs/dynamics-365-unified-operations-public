@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View journal entries and transactions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains the various ways that you can view journal entries and transactions. 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Debug X++ code
+title: Debug X++ code by using the debugger in Visual Studio
 description: This topic reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio. 
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Debug X++ code
+# Debug X++ code by using the debugger in Visual Studio
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio. 
 

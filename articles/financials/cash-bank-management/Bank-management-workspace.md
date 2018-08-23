@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  BankTreasurerWorkspace
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 ---
 # Bank management workspace
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The **Bank management** workspace shows information that is related to company bank accounts. This workspace includes a **Summary** view and an **Analytics** page. The **Summary** view shows summary tiles, bank account information, a balance chart, and related information. The **Analytics** page uses the capabilities of Microsoft Power BI to show visuals that are related to bank account balances.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure a line-item workflow
+title: Configure line-item workflows
 description: This topic explains how to configure a line-item workflow element.
 author: sericks007
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure a line-item workflow
+# Configure line-item workflows
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure a line-item workflow element.
 

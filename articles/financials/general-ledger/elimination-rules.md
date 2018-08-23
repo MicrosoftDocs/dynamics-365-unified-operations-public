@@ -17,7 +17,7 @@ ms.search.form: LedgerEliminationRule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13131
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Elimination rules
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about elimination rules and the various options for reporting about eliminations.
 

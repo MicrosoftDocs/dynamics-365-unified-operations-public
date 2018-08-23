@@ -3,7 +3,7 @@
  
 title: Set up a carrier fuel index
 description: This guide shows how to create a fuel index region, a fuel index and a carrier fuel index. 
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up a carrier fuel index
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This guide shows how to create a fuel index region, a fuel index and a carrier fuel index. The fuel index region specifies which region the fuel index should apply to, and the fuel index specifies a fuel price for a particular period of time. To reflect the change in fuel prices over time, you can associate multiple fuel indexes with a carrier.  These tasks are normally done by a transportation coordinator. You can use this procedure in demo data company USMF or using your own data.
 

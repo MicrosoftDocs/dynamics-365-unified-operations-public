@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Electronic ledger accounting statements
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to set up and generate the general ledger XML files version 1.1 that all companies in Mexico are required to report to the Mexican tax authorities (SAT) on a monthly basis.
 
@@ -44,7 +44,7 @@ All companies in Mexico are required to report ledger accounting statements to t
 
 This functionality is available only when the country/region of the company is defined as MEX. 
 > [!NOTE]
->  The government also requires an additional auxiliary XML file (folios) that details all fiscal documents (CFDI, CFD, and others). This file isn't included in the current feature, because this information is included in the Journal transactions XML file, as specified in Chapter 2.8, section 2.8.1.3 of the Miscellaneous Tax Resolution for 2015 (Second section) of December 30, 2014. For more information, see <http://www.sat.gob.mx/fichas_tematicas/buzon_tributario/Documents/extracto_reglas.pdf>.
+>  The government also requires an additional auxiliary XML file (folios) that details all fiscal documents (CFDI, CFD, and others). This file isn't included in the current feature, because this information is included in the Journal transactions XML file, as specified in Chapter 2.8, section 2.8.1.3 of the Miscellaneous Tax Resolution for 2015 (Second section) of December 30, 2014. For more information, refer to government documentation.
 
 ## Prerequisites
 The following process lists the prerequisites that must be in place before you start to generate the XML files that SAT requires. Parameters determine how the data will be exposed in the XML files, and all of them are required. Missing parameters can cause inconsistencies or incorrect validations in the government validation tool.

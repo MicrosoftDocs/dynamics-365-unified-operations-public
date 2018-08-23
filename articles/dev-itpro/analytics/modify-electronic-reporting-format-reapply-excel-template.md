@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Modify an Electronic reporting format by reapplying a Microsoft Excel template
+title: Modify Electronic reporting formats by reapplying Excel templates
 description: This topic provides information about how you can modify the Electronic reporting (ER) format that is used to generate business documents by reapplying a modified Excel template. 
 author: NickSelin
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-# Modify an Electronic reporting format by reapplying a Microsoft Excel template
+# Modify Electronic reporting formats by reapplying Excel templates
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The Electronic reporting (ER) tool is used to generate business documents in an electronic format. To generate a business document, you must create an ER format, and then use the ER designer to define the layout of the business document and specify the data that should be included in it. You can then run the ER format to generate the business document.
 

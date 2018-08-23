@@ -1,6 +1,7 @@
 ---
 # required metadata
-title: DataService
+
+title: DataService type
 description: Provides ability access data under the application workspace.
 author: shadykdc
 manager: AnnBe
@@ -9,7 +10,9 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+
 # optional metadata
+
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
@@ -22,11 +25,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom:
 ms.dyn365.ops.version:
+
 ---
 
-# DataService Type
+# DataService type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Provides ability access data under the application workspace.
 

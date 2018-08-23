@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Projects
+title: Finance and Operations project type in Visual Studio
 description: The Microsoft Dynamics 365 for Finance and Operations project type is part of the development tools. 
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Projects
+# Finance and Operations project type in Visual Studio
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The Microsoft Dynamics 365 for Finance and Operations project type is part of the development tools. This project type resembles other projects in Visual Studio. It helps you organize and manage the elements that you're working with for a model. For example, the project can have folders that help you group the elements. A Visual Studio solution can contain multiple projects. There is one important constraint for a project: it can contain elements from only one model. If you must work with elements from different models, you must use multiple projects in your Visual Studio solution.
 

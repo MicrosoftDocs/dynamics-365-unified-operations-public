@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Personalized product recommendations overview
+title: Personalized product recommendations
 description: This topic has information about the Dynamics 365 for Retail product recommendations that can be displayed on the point of sale (POS) device.
 author: ashishmsft
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Personalized product recommendations overview
+# Personalized product recommendations
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 > [!NOTE]
 > We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities. For more information see [Removed or deprecated features](../dev-itpro/migration-upgrade/deprecated-features.md). Navigate to the bottom of the page if you are facing issues with already-enabled product recommendations for your environment. 

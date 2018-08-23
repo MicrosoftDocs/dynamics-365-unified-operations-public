@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  WHSRFMenuItem
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269384
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # System grouping on an open work list
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 By using a system grouping field, you can filter an open work list without having to edit the mobile device menu item.
 Where it applies, system grouping works for filtering a work list on a single work header field. You cannot use system grouping to filter on line level fields.

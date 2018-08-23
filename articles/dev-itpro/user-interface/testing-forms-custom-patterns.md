@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Test forms with custom patterns
+title: Test forms that use custom patterns
 description: This topic how to test forms using custom patterns.
 author: jasongre
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Test forms with custom patterns
+# Test forms that use custom patterns
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic how to test forms using custom patterns.
 

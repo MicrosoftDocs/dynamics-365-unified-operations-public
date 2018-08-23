@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Application extensibility roadmap
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Reducing implementation and upgrade effort is a major initiative for the Microsoft Dynamics 365 for Finance and Operations development team. The benefits of this initiative are to enable you to quickly take advantage of new innovations from Microsoft and your partners, reduce the total cost of ownership, and improve quality. A major part of this initiative is to change the customization approach for the product. In Dynamics AX 2012, several extension capabilities were added to the product. For example, the ability to do event-based customization using methods pre-and post-events was introduced. Extension capabilities have continued to grow in the evolution to Dynamics 365 for Finance and Operations.  
 

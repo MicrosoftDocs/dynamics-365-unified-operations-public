@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Configure destinations for electronic reporting (ER)
+title: Configure destinations for Electronic reporting (ER) output
 description: This procedure demonstrates how to set up and use different destinations for Electronic reporting (ER) output components, such as a folder or a file. 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Configure destinations for electronic reporting (ER)
+# Configure destinations for Electronic reporting (ER) output
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to set up and use different destinations for Electronic reporting (ER) output components, such as a folder or a file. The demo data company used to create this procedure is DEMF. Germany is the country\region of the legal entity’s primary address, however you can use any legal entity for this procedure. 
 

@@ -38,6 +38,9 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/dynamics-365-unified-operations-public",
+      "feedback_product_url": "https://experience.dynamics.com/ideas/list/?forum=16691718-61e2-e611-8101-5065f38b21f1",
       "contributors_to_exclude": [
         "OpenLocalizationService"
       ],
@@ -78,7 +81,30 @@
         }
       }
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+        "feedback_product_url": {
+          "retail/**/*.md": "https://experience.dynamics.com/ideas/list/?forum=fd509429-7e87-e711-8105-c4346bb5988c"
+        },
+       "searchScope": {
+          "articles/talent/**.md": [
+            "Dynamics 365",
+            "Unified Operations",
+            "Talent"
+        ],
+          "articles/retail/**/**.md": [
+            "Dynamics 365",
+            "Unified Operations",
+            "Retail"
+        ]
+       },
+      "titleSuffix": {
+        "dev-itpro/lifecycle-services/ax-2012/**/*.md": "AX 2012",
+        "articles/talent/**.md": "Talent | Dynamics 365",
+        "articles/retail/**.md": "Retail | Dynamics 365"
+      },
+      "breadcrumb_path": {
+        "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/unified-operations/breadcrumb/toc.json"}
+    },
     "template": [],
     "dest": "d365F-O",
     "markdownEngineName": "markdig"

@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Use a record template to create a new record
+title: Create records by using record templates
 description: This procedure shows how to use a previously defined record template to create a new record. 
 author: sericks007
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: sericks
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Use a record template to create a new record
+# Create records by using record templates
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to use a previously defined record template to create a new record. To complete this procedure, you must first complete the "Create a record template to facilitate data entry" procedure.
 

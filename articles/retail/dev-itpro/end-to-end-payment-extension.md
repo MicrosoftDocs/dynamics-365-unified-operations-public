@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create an end-to-end payment extension
+title: Create an end-to-end payment integration for a payment terminal
 description: This topic describes how to create an end-to-end payment integration for a payment terminal.
 author: 
 manager: AnnBe
@@ -29,7 +29,8 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Payment integration with a payment terminal
+# Create an end-to-end payment integration for a payment terminal
+
 This topic describes how to write a payment integration for Microsoft Dynamics 365 for Retail Modern POS and Cloud POS (the POS) for a payment terminal that can directly communicate with the payment gateway.
 
 ## Key terms
@@ -108,6 +109,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
                 {
                     typeof(OpenPaymentTerminalDeviceRequest),
                     typeof(BeginTransactionPaymentTerminalDeviceRequest),
+                    typeof(LockPaymentTerminalDeviceRequest),
                     typeof(UpdateLineItemsPaymentTerminalDeviceRequest),
                     typeof(CancelOperationPaymentTerminalDeviceRequest),
                     typeof(AuthorizePaymentTerminalDeviceRequest),
@@ -172,6 +174,7 @@ The following table describes all supported requests types that a payment connec
 |---|---|
 | OpenPaymentTerminalDeviceRequest | This request is called before a sales transaction is initiated. It is used to establish a connection to the payment terminal. |
 | BeginTransactionPaymentTerminalDeviceRequest | This request is called when a new sales transaction is initiated. It is used to handle any initialization on the payment terminal (for example, by initializing the transaction screen). |
+| LockPaymentTerminalDeviceRequest | This request is called when a payment terminal is locked for a transaction. |
 | UpdateLineItemsPaymentTerminalDeviceRequest | This request is called when line items in the cart are updated. |
 | AuthorizePaymentTerminalDeviceRequest | This request is called when a payment is initiated in the POS payment view. |
 | CancelOperationPaymentTerminalDeviceRequest | This request is called when a user selects the **Cancel** button in the payment view dialog box after the payment is initiated but before the payment is completed on the payment terminal. |
@@ -219,6 +222,22 @@ public BeginTransactionPaymentTerminalDeviceRequest(string token, string payment
 | invoiceNumber | The unique invoice number that the POS generates to track the sales transaction. |
 | isTestMode | A value that indicates whether the payment connector is being used in testing mode. |
 | extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
+
+##### LockPaymentTerminalDeviceRequest
+###### Signature
+``` csharp
+public LockPaymentTerminalDeviceRequest(string clientDeviceNumber, string deviceType, string deviceName, bool isExclusive, bool isOverride)
+```
+
+###### Variables
+
+| Variable | Description |
+|---|---|
+| clientDeviceNumber | The unique POS device number that is acquiring the lock. |
+| deviceType | The device type that the lock is acquired for as configured in the POS hardware profile (such as "Windows"). |
+| deviceName | The device type that the lock is acquired for as configured in the POS hardware profile (such as "MOCKPAYMENTTERMINAL"). |
+| isExclusive | Determines whether the lock that is acquired is exclusive. | 
+| isOverride | Determines whether this request will override any existing lock. |
 
 ##### UpdateLineItemsPaymentTerminalDeviceRequest
 ###### Signature
@@ -293,15 +312,15 @@ The following example shows how to construct the **PaymentSdkData** object.
 
 ``` csharp
 List<PaymentProperty> paymentSdkProperties = new List<PaymentProperty>();
-paymentSdkProperties.Add(new PaymentProperty(GenericNamespace.Connector, ConnectorProperties.ConnectorName, "TestConnector");
+paymentSdkProperties.Add(new PaymentProperty(GenericNamespace.Connector, ConnectorProperties.ConnectorName, "TestConnector"));
 
 List<PaymentProperty> paymentSdkAuthorizationProperties = new List<PaymentProperty>();
-paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ApprovedAmount, 28.08m);
-paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.AvailableBalane, 100.00);
-paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ApprovalCode, "Z123456");
-paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ProviderTrasactionId, "123456789");
-paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.AuthorizationResult, AuthorizationResult.Success.ToString());
-paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, TransactionDataProperties.TerminalId, "000001");
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ApprovedAmount, 28.08m));
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.AvailableBalance, 100.00m));
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ApprovalCode, "Z123456"));
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.ProviderTransactionId, "123456789"));
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.AuthorizationResult, AuthorizationResult.Success.ToString()));
+paymentSdkAuthorizationProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, TransactionDataProperties.TerminalId, "000001"));
 
 paymentSdkProperties.Add(new PaymentProperty(GenericNamespace.AuthorizationResponse, AuthorizationResponseProperties.Properties, paymentSdkAuthorizationProperties.ToArray()));
 

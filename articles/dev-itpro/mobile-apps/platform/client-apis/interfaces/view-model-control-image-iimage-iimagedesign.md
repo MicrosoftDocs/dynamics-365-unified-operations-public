@@ -1,6 +1,7 @@
 ---
 # required metadata
-title: ImageDesign
+
+title: ImageDesign type
 description: Image design object type.
 author: shadykdc
 manager: AnnBe
@@ -9,7 +10,9 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+
 # optional metadata
+
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
@@ -22,11 +25,12 @@ ms.search.region: Global
 ms.author: kashea
 ms.search.validFrom:
 ms.dyn365.ops.version:
+
 ---
 
-# ImageDesign Type
+# ImageDesign type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Image design object type.
 

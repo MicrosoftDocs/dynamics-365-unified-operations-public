@@ -17,7 +17,7 @@ ms.search.form: PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 
 ms.search.scope: Core, Operations, Retail
 
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Purchase order overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This article provides general information about purchase orders (POs) and links to additional articles that are related to the various stages that a PO goes through.
 

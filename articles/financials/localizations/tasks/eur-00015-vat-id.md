@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up VAT ID
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through VAT ID registration prerequisites, such as setting up a registration type and assigning it to a registration category. You can find additional information about registration IDs and registration ID processing, including required prerequisites, in the Registration IDs help topic. 
 

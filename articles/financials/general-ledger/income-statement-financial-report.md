@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12294
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Income statement financial report
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the default report for income statements. It also describes the building blocks that are associated with this report. 
 

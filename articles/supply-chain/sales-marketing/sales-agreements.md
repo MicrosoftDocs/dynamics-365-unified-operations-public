@@ -17,7 +17,7 @@ ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreeme
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9554
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Sales agreements
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about sales agreements. A sales agreement is a contract that commits the customer to buy products in a specific quantity or for a specific amount over time, in exchange for special prices and discounts.
 
@@ -42,7 +42,8 @@ The validity period of a sales agreement is defined by the **Effective date** an
 
 You can create a sales order directly from a sales agreement by using the **Release order** action. Alternatively, you can select an effective sales agreement when you're taking orders (see the "Applying sales agreements in the ordering process" section of this article).  
 
-**Note:** In earlier versions, sales agreements were referred to as blanket sales orders.
+> [Note!] 
+> In earlier versions, sales agreements were referred to as blanket sales orders.
 
 ## Commitment types
 Each line in a sales agreement expresses a commitment to sell something. In general, there are two categories of commitment:

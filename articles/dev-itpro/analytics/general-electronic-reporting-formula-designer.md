@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Formula designer in Electronic reporting
+title: Formula designer in Electronic reporting (ER)
 description: This topic explains how to use the formula designer in Electronic reporting (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Formula designer in Electronic reporting
+# Formula designer in Electronic reporting (ER)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting. These formulas resemble formulas in Microsoft Excel. Various types of functions are supported in the formulas: text, date and time, mathematical, logical, information, data type conversion, and other (business domain–specific functions).
 
@@ -66,7 +66,7 @@ The ER formula designer can be used to define an expression that transforms data
 - From an ER data model to an ER format
 - From Finance and Operations data sources and runtime parameters to an ER format
 
-The following illustration shows the design of an expression of this type. In this example, the expression rounds the value of the **Intrastat.AmountMST** field the Intrastat table in Finance and Operations to two decimal places and then returns the rounded value.
+The following illustration shows the design of an expression of this type. In this example, the expression rounds the value of the **Intrastat.AmountMST** field the Intrastat table in Finance and Operations to two decimal places and then returns the rounded value.
 
 [![Data binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
@@ -78,9 +78,9 @@ At runtime, the designed formula, **ROUND (Intrastat.AmountMST, 2)**, rounds the
 
 ### Data formatting
 
-The ER formula designer can be used to define an expression that formats data that is received from data sources, so that the data can be sent as part of the generating electronic document. You might have formatting that must be applied as a typical rule that should be reused for a format. In this case, you can introduce that formatting one time in the format configuration, as a named transformation that has a formatting expression. This named transformation can then be linked with many format components where the output must be formatted according to the formatting expression that you created.
+The ER formula designer can be used to define an expression that formats data that is received from data sources, so that the data can be sent as part of the generating electronic document. You might have formatting that must be applied as a typical rule that should be reused for a format. In this case, you can introduce that formatting one time in the format configuration, as a named transformation that has a formatting expression. This named transformation can then be linked to many format components where the output must be formatted according to the formatting expression that you created.
 
-The following illustration shows the design of a transformation of this type. In this example, the **TrimmedString** transformation truncates incoming data of the **String** data type by removing leading and trailing spaces. Itd then returns the truncated string value.
+The following illustration shows the design of a transformation of this type. In this example, the **TrimmedString** transformation truncates incoming data of the **String** data type by removing leading and trailing spaces. It then returns the truncated string value.
 
 [![Transformation](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
 
@@ -179,7 +179,7 @@ If an expression includes multiple consecutive operators that have the same prec
 
 #### References
 
-All data sources of the current ER component that are available during the design of an expression can be used as named references. (The current ER component can be either a model or a format.) For example, the current ER data model contains the **ReportingDate** data source, and this data source returns a value of the **DATETIME** data type. To properly format that value in the generating document, you can reference the data source in the expression as **DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")**.
+All data sources of the current ER component that are available during the design of an expression can be used as named references. (The current ER component can be either a model or a format.) For example, the current ER data model contains the **ReportingDate** data source, and this data source returns a value of the **DATETIME** data type. To correctly format that value in the generating document, you can reference the data source in the expression as **DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")**.
 
 All characters in the name of a referencing data source that don't represent a letter of the alphabet must be preceded by a single quotation mark ('). If the name of a referencing data source contains at least one symbol that doesn't represent a letter of the alphabet, the name must be enclosed in single quotation marks. (For example, these non-alphabetic symbols can be punctuation marks or other written symbols.) Here are some examples:
 
@@ -204,7 +204,7 @@ When an expression references a structured data source, you can use the path def
 
 #### Functions
 
-The next section describes the functions that can be used in ER expressions. All data sources of the expression context (the current ER data model or ER format) can be used as parameters of calling functions, in accordance with the list of arguments for calling functions. Constants can also be used as parameters of calling functions. For example, the current ER data model contains the **InvoiceTransactions** data source, and this data source returns a list of records. The **InvoiceTransactions** record structure contains the **AmountDebit** and **AmountCredit** fields, and both these fields return numeric values. Therefore, to calculate the invoiced amount, you can design the following expression that uses the built-in ER rounding function: **ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**.
+The next section describes the functions that can be used in ER expressions. All data sources of the expression context (the current ER data model or ER format) can be used as parameters of calling functions, in accordance with the list of arguments for calling functions. Constants can also be used as parameters of calling functions. For example, the current ER data model contains the **InvoiceTransactions** data source, and this data source returns a list of records. The **InvoiceTransactions** record structure contains the **AmountDebit** and **AmountCredit** fields, and both these fields return numeric values. Therefore, to calculate the invoiced amount, you can design the following expression that uses the built-in ER rounding function: **ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**.
 
 ## Supported functions
 
@@ -221,13 +221,13 @@ The following tables describe the data manipulation functions that you can use t
 | NULLDATE () | Return a **null** date value. | |
 | NULLDATETIME () | Return a **null** date/time value. | |
 | DATETIMEFORMAT (datetime, format) | Convert the specified date/time value to a string in the specified format. (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returns the current Finance and Operations application server date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format. |
-| DATETIMEFORMAT (datetime, format, culture) | Convert the specified date/time value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (NOW(), "d", "de")** returns the current Finance and Operations application server date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
+| DATETIMEFORMAT (datetime, format, culture) | Convert the specified date/time value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** returns the current Finance and Operations application server date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
 | SESSIONTODAY () | Return the current Finance and Operations session date as a date value. | |
 | SESSIONNOW () | Return the current Finance and Operations session date and time as a date/time value. | |
 | DATEFORMAT (date, format) | Return a string representation of the specified date in the specified format. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** returns the current Finance and Operations session date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format. |
-| DATEFORMAT (date, format, culture) | Convert the specified date value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returns the current Finance and Operations session date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
+| DATEFORMAT (date, format, culture) | Convert the specified date value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returns the current Finance and Operations session date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
 | DAYOFYEAR (date) | Return an integer representation of the number of days between January 1 and the specified date. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returns **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returns **1**. |
-| DAYS (date 1, date 2) | Return the number of days between the first specified date and the second specified date. Return a positive value when the first date is later than the second date, return **0** (zero) when the first date equals the second date, or return a negative value otherwise. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** returns **-1**. |
+| DAYS (date 1, date 2) | Return the number of days between the first specified date and the second specified date. Return a positive value when the first date is later than the second date, return **0** (zero) when the first date equals the second date, or return a negative value when the first date is earlier than the second date. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** returns **-1**. |
 
 ### Data conversion functions
 
@@ -235,120 +235,132 @@ The following tables describe the data manipulation functions that you can use t
 |----------|-------------|---------|
 | DATETODATETIME (date) | Convert the specified date value to a date/time value. | **DATETODATETIME (CompInfo. 'getCurrentDate()')** returns the current Finance and Operations session date, December 24, 2015, as **12/24/2015 12:00:00 AM**. In this example, **CompInfo** is an ER data source of the **Finance and Operations/Table** type and refers to the CompanyInfo table. |
 | DATEVALUE (string, format) | Return a date representation of the specified string in the specified format. | **DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")** returns the date December 21, 2016, based on specified custom format and the default application's **EN-US** culture. |
-| DATEVALUE (string, format, culture) | Return a date representation of the specified string in the specified format and culture. | **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")** returns the date January 21, 2016, based on the specified custom format and culture. However, **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")** will throw an exception to inform the user that the specified string isn't recognized as a valid date. |
+| DATEVALUE (string, format, culture) | Return a date representation of the specified string in the specified format and culture. | **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")** returns the date January 21, 2016, based on the specified custom format and culture. However, **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")** throws an exception to inform the user that the specified string isn't recognized as a valid date. |
 | DATETIMEVALUE (string, format) | Return a date/time representation of the specified string in the specified format. | **DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")** returns 2:55:00 AM on December 21, 2016, based on the specified custom format and the default application's **EN-US** culture. |
-| DATETIMEVALUE (string, format, culture) | Return a date/time representation of the specified string in the specified format and culture. | **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "IT")** returns 2:55:00 AM on December 21, 2016, based on the specified custom format and culture. However, **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")** will throw an exception to inform the user that the specified string isn't recognized as a valid date/time. |
+| DATETIMEVALUE (string, format, culture) | Return a date/time representation of the specified string in the specified format and culture. | **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "IT")** returns 2:55:00 AM on December 21, 2016, based on the specified custom format and culture. However, **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")** throws an exception to inform the user that the specified string isn't recognized as a valid date/time. |
 
 ### List functions
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Function</th>
 <th>Description</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>SPLIT (input, length)</td>
 <td>Split the specified input string into substrings, each of which has the specified length. Return the result as a new list.</td>
 <td><strong>SPLIT (&quot;abcd&quot;, 3)</strong> returns a new list that consists of two records that have a <strong>STRING</strong> field. The field in the first record contains the text <strong>&quot;abc&quot;</strong>, and the field in the second record contains the text <strong>&quot;d&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>SPLITLIST (list, number)</td>
 <td>Split the specified list into batches, each of which contains the specified number of records. Return the result as a new list of batches that contains the following elements:
 <ul>
 <li>Batches as regular lists (<strong>Value</strong> component)</li>
 <li>The current batch number (<strong>BatchNumber</strong> component)</li>
-</ul></td>
+</ul>
+</td>
 <td>In the following illustration, a <strong>Lines</strong> data source is created as a record list of three records. This list is divided into batches, each of which contains up to two records.
 <p><a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
 <p>The following illustration shows the designed format layout. In this format layout, bindings to the <strong>Lines</strong> data source are created to generate output in XML format. This output presents individual nodes for each batch and the records in it.</p>
 <p><a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a></p>
 <p>The following illustration shows the result when the designed format is run.</p>
-<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LIST (record 1 [, record 2, …])</td>
 <td>Return a new list that is created from the specified arguments.</td>
 <td><strong>LIST (model.MainData, model.OtherData)</strong> returns an empty record, where the list of fields contains all fields of the <strong>MainData</strong> and <strong>OtherData</strong> record lists.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LISTJOIN (list 1, list 2, …)</td>
 <td>Return a joined list that is created from lists of specified arguments.</td>
 <td><strong>LISTJOIN (SPLIT (&quot;abc&quot;, 1), SPLIT (&quot;def&quot;, 1))</strong> returns a list of six records, where one field of the <strong>STRING</strong> data type contains single letters.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ISEMPTY (list)</td>
 <td>Return <strong>TRUE</strong> if the specified list contains no elements. Otherwise, return <strong>FALSE</strong>.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>EMPTYLIST (list)</td>
 <td>Return an empty list by using the specified list as a source for the list structure.</td>
 <td><strong>EMPTYLIST (SPLIT (&quot;abc&quot;, 1))</strong> returns a new empty list that has the same structure as the list that is returned by the <strong>SPLIT</strong> function.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>FIRST (list)</td>
 <td>Return the first record of the specified list, if that record isn&#39;t empty. Otherwise, throw an exception.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>FIRSTORNULL (list)</td>
 <td>Return the first record of the specified list, if that record isn&#39;t empty. Otherwise, return a <strong>null</strong> record.</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LISTOFFIRSTITEM (list)</td>
 <td>Return a list that contains only the first item of the specified list.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>ALLITEMS (path)</td>
-<td>Return a new flattened list that represents all items that match the specified path. The path must be defined as a valid data source path of a data source element of a record list data type. Data elements such as the path string and date should raise an error in the ER expression builder at design time.</td>
+<td>This function runs as an in-memory selection. It returns a new flattened list that represents all items that match the specified path. The path must be defined as a valid data source path of a data source element of a record list data type. Data elements such as the path string and date should raise an error in the ER expression builder at design time.</td>
 <td>If you enter <strong>SPLIT(&quot;abcdef&quot; , 2)</strong> as a data source (DS), <strong>COUNT( ALLITEMS (DS.Value))</strong> returns <strong>3</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
+<td>ALLITEMSQUERY (path)</td>
+<td>This function runs as a joined SQL query. It returns a new flattened list that represents all items that match the specified path. The specified path must be defined as a valid data source path of a data source element of a record list data type, and it must contain at least one relation. Data elements such as the path string and date should raise an error in the ER expression builder at design time.</td>
+<td>Define the following data sources in your model mapping:
+<ul>
+<li><strong>CustInv</strong> (<strong>Table records</strong> type), which refers to the CustInvoiceTable table</li> 
+<li><strong>FilteredInv</strong> (<strong>Calculated field</strong> type), which contains the expression <strong>FILTER (CustInv, CustInv.InvoiceAccount = &quot;US-001&quot;)</strong></li>
+<li><strong>JourLines</strong> (<strong>Calculated field</strong> type), which contains the expression <strong>ALLITEMSQUERY (FilteredInv.'&lt;Relations'.CustInvoiceJour.'&lt;Relations'.CustInvoiceTrans)</strong></li>
+</ul>
+<p>When you run your model mapping to call the <strong>JourLines</strong> data source, the following SQL statement is run:</p>
+SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUSTINVOICETRANS T3 WHERE...
+</td>
+</tr>
+<tr>
 <td>ORDERBY (list [, expression 1, expression 2, …])</td>
 <td>Return the specified list after it has been sorted according to the specified arguments. These arguments can be defined as expressions.</td>
 <td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> returns a list of vendors that is sorted by name in ascending order.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>REVERSE (list)</td>
 <td>Return the specified list in reversed sort order.</td>
 <td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> returns a list of vendors that is sorted by name in descending order.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>WHERE (list, condition)</td>
 <td>Return the specified list after it has been filtered according to the specified condition. The specified condition is applied to the list in memory. In this way, the <strong>WHERE</strong> function differs from the <strong>FILTER</strong> function.</td>
 <td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>WHERE(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>ENUMERATE (list)</td>
 <td>Return a new list that consists of enumerated records of the specified list, and that exposes the following elements:
 <ul>
 <li>Specified list records as regular lists (<strong>Value</strong> component)</li>
 <li>The current record index (<strong>Number</strong> component)</li>
-</ul></td>
+</ul>
+</td>
 <td>In the following illustration, an <strong>Enumerated</strong> data source is created as an enumerated list of vendor records from the <strong>Vendors</strong> data source that refers to the VendTable table.
 <p><a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a></p>
 <p>The following illustration shows the format. In this format, data bindings are created to generate output in XML format. This output presents individual vendors as enumerated nodes.</p>
 <p><a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a></p>
 <p>The following illustration shows the result when the designed format is run.</p>
-<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>COUNT (list)</td>
 <td>Return the number of records in the specified list, if the list isn&#39;t empty. Otherwise, return <strong>0</strong> (zero).</td>
 <td><strong>COUNT (SPLIT(&quot;abcd&quot; , 3))</strong> returns <strong>2</strong>, because the <strong>SPLIT</strong> function creates a list that consists of two records.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LISTOFFIELDS (path)</td>
 <td>Return a record list that is created from an argument of one of the following types:
 <ul>
@@ -362,7 +374,8 @@ The following tables describe the data manipulation functions that you can use t
 <li>Label</li>
 <li>Description</li>
 </ul>
-At runtime, the <strong>Label</strong> and <strong>Description</strong> fields return values that are based on the format&#39;s language settings.</td>
+At runtime, the <strong>Label</strong> and <strong>Description</strong> fields return values that are based on the format's language settings.
+</td>
 <td>In the following illustration, an enumeration is introduced in a data model.
 <p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
 <p>The following illustration shows these details:</p>
@@ -376,10 +389,10 @@ At runtime, the <strong>Label</strong> and <strong>Description</strong> fields r
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>The following illustration shows the result when the designed format is run.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>
-Based on the language settings of the parent FILE and FOLDER format elements, translated text for labels and descriptions is entered in the output of the ER format.</blockquote></td>
+<blockquote>[!NOTE] Based on the language settings of the parent FILE and FOLDER format elements, translated text for labels and descriptions is entered in the output of the ER format.</blockquote>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LISTOFFIELDS (path, language)</td>
 <td>Return a record list that is created from an argument, such as a model enumeration, a format enumeration, or a container. The list that is created consists of records that have the following fields:
 <ul>
@@ -388,26 +401,27 @@ Based on the language settings of the parent FILE and FOLDER format elements, tr
 <li>Description</li>
 <li>Is translated</li>
 </ul>
-<p>At runtime, the <strong>Label</strong> and <strong>Description</strong> fields return values that are based on the format&#39;s language settings and the specified language. The <strong>Is translated</strong> field indicates that the <strong>Label</strong> field has been translated into the specified language.</td>
+At runtime, the <strong>Label</strong> and <strong>Description</strong> fields return values that are based on the format's language settings and the specified language. The <strong>Is translated</strong> field indicates that the <strong>Label</strong> field has been translated into the specified language.
+</td>
 <td>For example, you use the <strong>Calculated field</strong> data source type to configure the <strong>enumType_de</strong> and <strong>enumType_deCH</strong> data sources for the <strong>enumType</strong> data model enumeration:
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if this translation is available. If the Swiss German translation isn&#39;t available, the label is in German: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.</td>
+In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if this translation is available. If the Swiss German translation isn't available, the label is in German: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>STRINGJOIN (list, field name, delimiter)</td>
 <td>Return a string that consists of concatenated values of the specified field from the specified list. The values are separated by the specified delimiter.</td>
-
-<td>If you enter <strong>SPLIT(&quot;abc&quot; , 1)</strong> as a data source (DS), the expression <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> returns <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong>.</td>
-
+<td>If you enter <strong>SPLIT(&quot;abc&quot; , 1)</strong> as a data source (DS), <strong>STRINGJOIN (DS, DS.Value, &quot;-&quot;)</strong> returns <strong>&quot;a-b-c&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>SPLITLISTBYLIMIT (list, limit value, limit source)</td>
-<td>Split the specified list into a new list of sub-lists, and return the result in record list content. The limit value parameter defines the value of the limit for splitting the original list. The limit source parameter defines the step that the total sum is increased on. The limit isn&#39;t applied to a single item of the original list if the limit source exceeds the defined limit.</td>
-<td>The following illustrations show a format and the data sources that are used for it. 
+<td>Split the specified list into a new list of sub-lists, and return the result in record list content. The <strong>limit value</strong> parameter defines the value of the limit for splitting the original list. The <strong>limit source</strong> parameter defines the step that the total sum is increased on. The limit isn't applied to a single item of the original list if the limit source exceeds the defined limit.</td>
+<td>The following illustration shows a format. 
 <p><a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="Format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a></p>
+<p>The following illustration shows the data sources that are used for the format.</p>
 <p><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="Data sources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a></p>
 <p>The following illustration shows the result when the format is run. In this case, the output is a flat list of commodity items.</p>
 <p><a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="Output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a></p>
@@ -416,13 +430,13 @@ In this case, you can use the following expression to get the label of the enume
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>The following illustration shows the result when the adjusted format is run.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>
-The limit isn&#39;t applied to the last item of the original list, because the value (11) of the limit source (weight) exceeds the defined limit (9). Use either the <strong>WHERE</strong> function or the <strong>Enabled</strong> expression of the corresponding format element to ignore (skip) sub-lists during report generation, as required.</blockquote></td>
+<blockquote>[!NOTE] The limit isn't applied to the last item of the original list, because the value (11) of the limit source (weight) exceeds the defined limit (9). Use either the <strong>WHERE</strong> function or the <strong>Enabled</strong> expression of the corresponding format element to ignore (skip) sub-lists during report generation, as required.</blockquote>
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>FILTER (list, condition)</td>
 <td>Return the specified list after the query has been modified to filter for the specified condition. This function differs from the <strong>WHERE</strong> function, because the specified condition is applied to any ER data source of the <strong>Table records</strong> type at the database level. The list and condition can be defined by using tables and relations.</td>
-  <td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40. If <strong>Vendor</strong> is configured as an ER data source that refers to the <strong>VendTable</strong> table and the <strong>parmVendorBankGroup</strong> that is configured as ER data source returns the value in the string data type, <strong>FILTER (Vendor.&#39;&lt;Relations&#39;.VendBankAccount, Vendor.&#39;&lt;Relations&#39;.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> returns a list of just the vendor accounts that belong to a specific bank group.</td>
+<td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40. If <strong>Vendor</strong> is configured as an ER data source that refers to the <strong>VendTable</strong> table, and if <strong>parmVendorBankGroup</strong> is configured as an ER data source that returns a value of the <strong>String</strong> data type, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> returns a list of just the vendor accounts that belong to a specific bank group.</td>
 </tr>
 </tbody>
 </table>
@@ -445,9 +459,9 @@ The limit isn&#39;t applied to the last item of the original list, because the v
 | POWER (number, power) | Return the result of raising the specified positive number to the specified power. | **POWER (10, 2)** returns **100**. |
 | NUMBERVALUE (string, decimal separator, digit grouping separator) | Convert the specified string to a number. The specified decimal separator is used between the integer and fractional parts of a decimal number. The specified digit grouping separator is used as the thousands separator. | **NUMBERVALUE("1 234,56", ",", " ")** returns the value **1234.56**. |
 | VALUE (string) | Convert the specified string to a number. Commas and dot characters (.) are considered decimal separators, and a leading hyphen (-) is used as a negative sign. Throw an exception if the specified string contains other non-numeric characters. | **VALUE ("1 234,56")** throws an exception. |
-| ROUND (number, decimals) | Return the specified number after it has been rounded to the specified number of decimal places:<ul><li>If the value of the decimals parameter is more than 0 (zero), the specified number is rounded to that many decimal places.</li><li>If the value of the decimals parameter is **0** (zero), the specified number is rounded to the nearest integer.</li><li>If the value of the decimals parameter is less than 0 (zero), the specified number is rounded to the left of the decimal point.</li></ul> | **ROUND (1200.767, 2)** rounds to two decimal places and returns **1200.77**. **ROUND (1200.767, -3)** rounds to the nearest multiple of 1,000 and returns **1000**. |
-| ROUNDDOWN (number, decimals) | Return the specified number after it has been rounded down to the specified number of decimal places.<blockquote>[!NOTE]<br>This function behaves like <strong>ROUND</strong>, but it always rounds the specified number down (toward zero).</blockquote> | **ROUNDDOWN (1200.767, 2)** rounds down to two decimal places and returns **1200.76**. **ROUNDDOWN (1700.767, -3)** rounds down to the nearest multiple of 1,000 and returns **1000**. |
-| ROUNDUP (number, decimals) | Return the specified number after it has been rounded up to the specified number of decimal places.<blockquote>[!NOTE]<br>This function behaves like <strong>ROUND</strong>, but it always rounds the specified number up (away from zero).</blockquote> | **ROUNDUP (1200.763, 2)** rounds up to two decimal places and returns **1200.77**. **ROUNDUP (1200.767, -3)** rounds up to the nearest multiple of 1,000 and returns **2000**. |
+| ROUND (number, decimals) | Return the specified number after it has been rounded to the specified number of decimal places:<ul><li>If the value of the **decimals** parameter is more than 0 (zero), the specified number is rounded to that many decimal places.</li><li>If the value of the **decimals** parameter is **0** (zero), the specified number is rounded to the nearest integer.</li><li>If the value of the **decimals** parameter is less than 0 (zero), the specified number is rounded to the left of the decimal point.</li></ul> | **ROUND (1200.767, 2)** rounds to two decimal places and returns **1200.77**. **ROUND (1200.767, -3)** rounds to the nearest multiple of 1,000 and returns **1000**. |
+| ROUNDDOWN (number, decimals) | Return the specified number after it has been rounded down to the specified number of decimal places.<blockquote>[!NOTE] This function behaves like **ROUND**, but it always rounds the specified number down (toward zero).</blockquote> | **ROUNDDOWN (1200.767, 2)** rounds down to two decimal places and returns **1200.76**. **ROUNDDOWN (1700.767, -3)** rounds down to the nearest multiple of 1,000 and returns **1000**. |
+| ROUNDUP (number, decimals) | Return the specified number after it has been rounded up to the specified number of decimal places.<blockquote>[!NOTE] This function behaves like **ROUND**, but it always rounds the specified number up (away from zero).</blockquote> | **ROUNDUP (1200.763, 2)** rounds up to two decimal places and returns **1200.77**. **ROUNDUP (1200.767, -3)** rounds up to the nearest multiple of 1,000 and returns **2000**. |
 
 ### Data conversion functions
 
@@ -464,87 +478,80 @@ The limit isn&#39;t applied to the last item of the original list, because the v
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| NULLCONTAINER (list) | Return a **null** record that has the same structure as the specified record list or record.<blockquote>[!NOTE]<br>This function is obsolete. Use <strong>EMPTYRECORD</strong> instead.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** returns a new empty record that has the same structure as the list that is returned by the **SPLIT** function. |
-| EMPTYRECORD (record) | Return a **null** record that has the same structure as the specified record list or record.<blockquote>[!NOTE]<br>A <strong>null</strong> record is a record where all fields have an empty value. An empty value is <strong>0</strong> (zero) for numbers, an empty string for strings, and so on.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** returns a new empty record that has the same structure as the list that is returned by the **SPLIT** function. |
+| NULLCONTAINER (list) | Return a **null** record that has the same structure as the specified record list or record.<blockquote>[!NOTE] This function is obsolete. Use **EMPTYRECORD** instead.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** returns a new empty record that has the same structure as the list that is returned by the **SPLIT** function. |
+| EMPTYRECORD (record) | Return a **null** record that has the same structure as the specified record list or record.<blockquote>[!NOTE] A **null** record is a record where all fields have an empty value. An empty value is **0** (zero) for numbers, an empty string for strings, and so on.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** returns a new empty record that has the same structure as the list that is returned by the **SPLIT** function. |
 
 ### Text functions
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Function</th>
 <th>Description</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>UPPER (string)</td>
 <td>Return the specified string after it has been converted to uppercase letters.</td>
 <td><strong>UPPER(&quot;Sample&quot;)</strong> returns <strong>&quot;SAMPLE&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LOWER (string)</td>
 <td>Return the specified string after it has been converted to lowercase letters.</td>
 <td><strong>LOWER (&quot;Sample&quot;)</strong> returns <strong>&quot;sample&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LEFT (string, number of characters)</td>
 <td>Return the specified number of characters from the start of the specified string.</td>
 <td><strong>LEFT (&quot;Sample&quot;, 3)</strong> returns <strong>&quot;Sam&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>RIGHT (string, number of characters)</td>
 <td>Return the specified number of characters from the end of the specified string.</td>
 <td><strong>RIGHT (&quot;Sample&quot;, 3)</strong> returns <strong>&quot;ple&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>MID (string, starting position, number of characters)</td>
 <td>Return the specified number of characters from the specified string, starting at the specified position.</td>
 <td><strong>MID (&quot;Sample&quot;, 2, 3)</strong> returns <strong>&quot;amp&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LEN (string)</td>
 <td>Return the number of characters in the specified string.</td>
 <td><strong>LEN (&quot;Sample&quot;)</strong> returns <strong>6</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>CHAR (number)</td>
 <td>Return the string of characters that is referenced by the specified Unicode number.</td>
 <td><strong>CHAR (255)</strong> returns <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE]<br>
-The string that this function returns depends on the encoding that is selected in the parent FILE format element. For the list of supported encodings, see <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Encoding class</a>.</blockquote>
+<blockquote>[!NOTE] The string that this function returns depends on the encoding that is selected in the parent FILE format element. For the list of supported encodings, see <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Encoding class</a>.</blockquote>
 </td>
 </tr>
-<tr class="even">
+<tr>
 <td>CONCATENATE (string 1 [, string 2, …])</td>
 <td>Return all specified text strings after they have been joined into one string.</td>
 <td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> returns <strong>&quot;abcdef&quot;</strong>.
-<blockquote>[!NOTE]<br>
-The expression <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> also returns <strong>&quot;abcdef&quot;</strong>.</blockquote>
+<blockquote>[!NOTE] The expression <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> also returns <strong>&quot;abcdef&quot;</strong>.</blockquote>
 </td>
 </tr>
-<tr class="odd">
+<tr>
 <td>TRANSLATE (string, pattern, replacement)</td>
 <td>Return the specified string after all occurrences of the characters in the specified pattern string have been replaced by the characters at the corresponding position in the specified replacement string.</td>
 <td><strong>TRANSLATE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;)</strong> replaces the pattern <strong>&quot;cd&quot;</strong> with the string <strong>&quot;GH&quot;</strong> and returns <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>REPLACE (string, pattern, replacement, regular expression flag)</td>
 <td>When the specified regular expression flag is <strong>true</strong>, return the specified string after it has been modified by applying the regular expression that is specified as a pattern argument for this function. This expression is used to find characters that must be replaced. Characters of the specified replacement argument are used to replace characters that are found. When the specified regular expression flag is <strong>false</strong>, this function behaves like <strong>TRANSLATE</strong>.</td>
 <td><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> applies a regular expression that removes all non-numeric symbols, and returns <strong>&quot;19234564971&quot;</strong>. <strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> replaces the pattern <strong>&quot;cd&quot;</strong> with the string <strong>&quot;GH&quot;</strong> and returns <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>TEXT (input)</td>
 <td>Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current Finance and Operations instance. For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</td>
 <td>If the Finance and Operations instance server locale is defined as <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> returns the current Finance and Operations session date, December 17, 2015, as the text string <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>. <strong>TEXT (1/3)</strong> returns <strong>&quot;0.33&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>FORMAT (string 1, string 2[, string 3, …])</td>
 <td>Return the specified string after it has been formatted by substituting any occurrences of <strong>%N</strong> with the <em>n</em>th argument. The arguments are strings. If an argument isn&#39;t provided for a parameter, the parameter is returned as <strong>&quot;%N&quot;</strong> in the string. For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</td>
 <td>In the following illustration, the <strong>PaymentModel</strong> data source returns the list of customer records via the <strong>Customer</strong> component and the processing date value via the <strong>ProcessingDate</strong> field.
@@ -566,38 +573,39 @@ The expression <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> also retur
 <p>FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</p>
 <p>If a report is processed for the <strong>Litware Retail</strong> customer on December 17, 2015, in the <strong>EN-US</strong> culture and the <strong>EN-US</strong> language, this formula returns the following text, which can be presented as an exception message for the user:</p>
 <p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
-<p>If the same report is processed for the <strong>Litware Retail</strong> customer on December 17, 2015, in the <strong>DE</strong> culture and the <strong>DE</strong> language, this formula returns the following text, which uses a different date format:</p>
-<p>&quot;Nichts zu drucken. Debitor &#39;Litware Retail&#39; wird für 17.12.2015 gesperrt.&quot;</p>
-<blockquote>[!NOTE]<br>
-The following syntax is applied in ER formulas for labels:
+<p>If the same report is processed for the <strong>Litware Retail</strong> customer on December 17, 2015, in the <strong>DE</strong> culture and the <strong>DE</strong> language, the formula returns the following text, which uses a different date format:</p>
+<p>&quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
+<blockquote>[!NOTE] The following syntax is applied in ER formulas for labels:
 <ul>
 <li><strong>For labels from Finance and Operations resources:</strong> <strong>@&quot;X&quot;</strong>, where X is the label ID in the Application Object Tree (AOT)</li>
 <li><strong>For labels that reside in ER configurations:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, where X is the label ID in the ER configuration</li>
-</ul></blockquote></td>
+</ul>
+</blockquote>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>NUMBERFORMAT (number, format)</td>
 <td>Return a string representation of the specified number in the specified format. (For information about the supported formats, see <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standard</a> and <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">custom</a>.) The context that this function is run in determines the culture that is used to format numbers.</td>
 <td>For the EN-US culture, <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> returns <strong>&quot;45.00 %&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> returns <strong>&quot;10&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal points)</td>
-<td>Return the specified number after it has been spelled out (converted) to text strings in the specified language. The language code is optional. When it&#39;s defined as an empty string, the language code for the running context is used instead. (The running context language code is defined for a generating folder or file.) The currency code is also optional. When it&#39;s defined as an empty string, the company currency is used.
-<blockquote>[!NOTE]<br>
-The print currency name flag and decimal points parameters are analyzed only for the following language codes: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>. Additionally, the print currency name flag parameter is analyzed only for Finance and Operations companies where the country&#39;s or region&#39;s context supports declension of currency names.</blockquote></td>
+<td>Return the specified number after it has been spelled out (converted to text strings) in the specified language. The language code is optional. When it's defined as an empty string, the language code for the running context is used. (The language code for the running context is defined for a generating folder or file.) The currency code is also optional. When it's defined as an empty string, the company currency is used.
+<blockquote>[!NOTE] The <strong>print currency name flag</strong> and <strong>decimal points</strong> parameters are analyzed only for the following language codes: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>. Additionally, the <strong>print currency name flag</strong> parameter is analyzed only for Finance and Operations companies where the country's or region's context supports declension of currency names.</blockquote>
+</td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returns <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> returns <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> returns <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>PADLEFT (string, length, padding chars)</td>
 <td>Return a string of the specified length, where the start of the specified string is padded with the specified characters.</td>
 <td><strong>PADLEFT (&quot;1234&quot;, 10, &quot;&nbsp;&quot;)</strong> returns the text string <strong>&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>TRIM (string)</td>
 <td>Return the specified text string after leading and trailing spaces have been truncated, and after multiple spaces between words have been removed.</td>
 <td><strong>TRIM (&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;)</strong> returns <strong>&quot;Sample text&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>GETENUMVALUEBYNAME (enumeration data source path, enumeration value label text)</td>
 <td>Return a value of the specified enumeration data source, based on the specified text of the enumeration label.</td>
 <td>In the following illustration, the <strong>ReportDirection</strong> enumeration is introduced in a data model. Note that labels are defined for enumeration values.
@@ -607,7 +615,24 @@ The print currency name flag and decimal points parameters are analyzed only for
 <li>The <strong>ReportDirection</strong> model enumeration is inserted into a report as a data source, <strong>$Direction</strong>.</li>
 <li>An ER expression, <strong>$IsArrivals</strong>, is designed to use the model enumeration as a parameter of this function. The value of this expression is <strong>TRUE</strong>.</li>
 </ul>
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
+<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+</td>
+</tr>
+<tr>
+<td>GUIDVALUE (input)</td>
+<td>Convert the specified input of the <strong>String</strong> data type to a data item of the <strong>GUID</strong> data type.</td>
+<td>You define the following data sources in your model mapping:
+<ul>
+<li><strong>myID</strong> (<strong>Calculated field</strong> type), which contains the expression <strong>GUIDVALUE(&quot;AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0&quot;)</strong></li>
+<li><strong>Users</strong> (<strong>Table records</strong> type), which refers to the UserInfo table</li>
+</ul>
+When these data sources are defined, you can use an expression such as <strong>FILTER (Users, Users.objectId = myID)</strong> to filter the UserInfo table by the <strong>objectId</strong> field of the <strong>GUID</strong> data type.
+</td>
+</tr>
+<tr>
+<td>JSONVALUE (id, path)</td>
+<td>Parse data in JavaScript Object Notation (JSON) format that is accessed by the specified path to extract a scalar value that is based on the specified ID.</td>
+<td>The data source <strong>$JsonField</strong> contains the following data in JSON format: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>. For this data source, </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> returns the value <strong>7.3.1234.1</strong> of the <strong>String</strong> data type.</td>
 </tr>
 </tbody>
 </table>
@@ -617,7 +642,7 @@ The print currency name flag and decimal points parameters are analyzed only for
 | Function | Description | Example |
 |----------|-------------|---------|
 | TEXT (input) | Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current Finance and Operations instance. For values of the **real** type, the string conversion is limited to two decimal places. | If the Finance and Operations instance server locale is defined as **EN-US**, **TEXT (NOW ())** returns the current Finance and Operations session date, December 17, 2015, as the text string **"12/17/2015 07:59:23 AM"**. **TEXT (1/3)** returns **"0.33"**. |
-| QRCODE (string) | Return a QR code image in base64 binary format for the specified string. | **QRCODE ("Sample text")** returns **U2FtcGxlIHRleHQ=**. |
+| QRCODE (string) | Return a Quick Response Code (QR code) image in base64 binary format for the specified string. | **QRCODE ("Sample text")** returns **U2FtcGxlIHRleHQ=**. |
 
 ### Data collection functions
 
@@ -627,19 +652,19 @@ The print currency name flag and decimal points parameters are analyzed only for
 | SUMIFS (key string for summing, criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\]) | Return the sum of values of XML nodes (where the name is defined as a key) that has been collected during execution of the format, and that satisfies the specified conditions (pairs of ranges and values). Return a **0** (zero) value when the **Collect output details** flag of the current files is turned off. | |
 | SUMIF (key string for summing, criteria range string, criteria value string) | Return the sum of values of XML nodes (where the name is defined as a key) that has been collected during execution of the format, and that satisfies the specified condition (range and value). Return a **0** (zero) value when the **Collect output details** flag of the current files is turned off. | |
 | COUNTIFS (criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\]) | Return the number of XML nodes that has been collected during execution of the format, and that satisfies the specified conditions (pairs of ranges and values). Return a **0** (zero) value when the **Collect output details** flag of the current files is turned off. | |
-| COUNTIF (criteria range string, criteria value string) | Return number of XML nodes that has been collected during execution of the format, and that satisfies the entered condition (range and value). Return a **0** (zero) value the flag **Collect output details** flag of the current files is turned off. | |
-| COLLECTEDLIST (criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\]) | Return the list of values of XML nodes of XML that has been collected during execution of the format, and that satisfies the entered conditions (range and value). Return an empty list when the **Collect output details** flag of the current files is turned off. | |
+| COUNTIF (criteria range string, criteria value string) | Return number of XML nodes that has been collected during execution of the format, and that satisfies the specified condition (range and value). Return a **0** (zero) value the flag **Collect output details** flag of the current files is turned off. | |
+| COLLECTEDLIST (criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\]) | Return the list of values of XML nodes of XML that has been collected during execution of the format, and that satisfies the specified conditions (range and value). Return an empty list when the **Collect output details** flag of the current files is turned off. | |
 
 ### Other (business domain–specific) functions
 
 | Function | Description | Example |
 |----------|-------------|---------|
 | CONVERTCURRENCY (amount, source currency, target currency, date, company) | Convert the specified monetary amount from the specified source currency to the specified target currency by using the settings of the specified Finance and Operations company on the specified date. | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** returns the equivalent of one euro in US dollars on the current session date, based on settings for the DEMF company. |
-| ROUNDAMOUNT (number, decimals, round rule) | Round the specified amount to the specified number of decimal places according to the specified rounding rule.<blockquote>[!NOTE]<br>The rounding rule must be specified as a value of the Finance and Operations <strong>RoundOffType</strong> enumeration.</blockquote> | If the **model.RoundOff** parameter is set to **Downward**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.78**. If the **model.RoundOff** parameter is set to either **Normal** or **Rounding-up**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.79**. |
+| ROUNDAMOUNT (number, decimals, round rule) | Round the specified amount to the specified number of decimal places according to the specified rounding rule.<blockquote>[!NOTE] The rounding rule must be specified as a value of the Finance and Operations **RoundOffType** enumeration.</blockquote> | If the **model.RoundOff** parameter is set to **Downward**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.78**. If the **model.RoundOff** parameter is set to either **Normal** or **Rounding-up**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.79**. |
 | CURCredRef (digits) | Return a creditor reference, based on the digits of the specified invoice number. | **CURCredRef ("VEND-200002")** returns **"2200002"**. |
 | MOD\_97 (digits) | Return a creditor reference as a MOD97 expression, based on the digits of the specified invoice number. | **MOD\_97 ("VEND-200002")** returns **"20000285"**. |
-| ISOCredRef (digits) | Return an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.<blockquote>[!NOTE]<br>To eliminate symbols from alphabets that aren't ISO-compliant, the input parameter must be translated before it's passed to this function.</blockquote> | **ISOCredRef ("VEND-200002")** returns **"RF23VEND-200002"**. |
-| CN\_GBT\_AdditionalDimensionID (string, number) | Get the additional financial dimension ID. Dimensions are represented in this string as IDs that are separated by commas. In this string, numbers define the sequence code of the requested dimension. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** returns **"CC"**. |
+| ISOCredRef (digits) | Return an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.<blockquote>[!NOTE] To eliminate symbols from alphabets that aren't ISO-compliant, the input parameter must be translated before it's passed to this function.</blockquote> | **ISOCredRef ("VEND-200002")** returns **"RF23VEND-200002"**. |
+| CN\_GBT\_AdditionalDimensionID (string, number) | Get the specified additional financial dimension ID. In the **string** parameter, dimensions are represented as IDs that are separated by commas. The **number** parameter defines the sequence code of the requested dimension in the string. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** returns **"CC"**. |
 | GetCurrentCompany () | Return a text representation of the code for the legal entity (company) that a user is currently signed in to. | **GETCURRENTCOMPANY ()** returns **USMF** for a user who is signed in to the **Contoso Entertainment System USA** company in Finance and Operations. |
 | CH\_BANK\_MOD\_10 (digits) | Return a creditor reference as an MOD10 expression, based on the digits of the specified invoice number. | **CH\_BANK\_MOD\_10 ("VEND-200002")** returns **3**. |
 | FA\_SUM (fixed asset code, value model code, start date, end date) | Return the prepared data container of the fixed asset amount for the specified period. | **FA\_SUM ("COMP-000001", "Current", Date1, Date2)** returns the prepared data container of fixed asset **"COMP-000001"** that has the **"Current"** value model for a period from **Date1** to **Date2**. |

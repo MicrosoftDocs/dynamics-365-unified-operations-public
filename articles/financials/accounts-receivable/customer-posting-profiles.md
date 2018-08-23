@@ -17,7 +17,7 @@ ms.search.form: CustPosting
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24651
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customer posting profiles
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Customer posting profiles control the posting of customer transactions to the general ledger.
 

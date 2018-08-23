@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Retail for IT pros and developers
+title: Retail for IT pros and developers home page
 description: This page lists the resources that are available for IT pros and developers who support Retail.
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Microsoft Dynamics 365 for Retail for IT pros and developers
+# Retail for IT pros and developers home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This page lists the resources that are available for IT pros and developers who support Retail.
 
@@ -134,7 +134,8 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 -   [Configure an online store](configure-online-store.md)
 
 ## Payment connectors
--   [Implementing a payment connector and payment device (white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+- [Payment integration with a payment terminal](end-to-end-payment-extension.md)
+- [Implementing a payment connector and payment device (white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 -   [Create a Windows installer for a payment connector](create-windows-installer-payment-connector.md)
 -   [Deploy a payment connector](deploy-payment-connector.md)
 

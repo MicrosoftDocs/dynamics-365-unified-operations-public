@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Info codes
+title: Info codes and info code groups
 description: This article provides an overview about info codes, info code groups, and how to use them.
 author: mugunthanm
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Info codes
+# Info codes and info code groups
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This article provides an overview about info codes, info code groups, and how to use them.
 

@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up an item arrival overview profile
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This task focuses on the setup of an arrival overview profile. The arrival overview profile is a collection of rules that will be applied when the Arrival overview page is opened by a user. You can use this procedure in demo data company USMF. This procedure would typically be carried out by a receiving clerk.
 

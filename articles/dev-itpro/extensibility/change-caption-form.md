@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Change the caption of a form
+title: Change the captions of forms through extension
 description: This topic explains how to change the form caption that helps the user identify the current page in a web browser.
 author: ivanv-microsoft
 manager: AnnBe
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Change the caption on a form
+# Change the captions of forms through extension
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The form caption appears in the page tab next to the web browser's Address bar and helps the user identify the page that is currently open. In metadata, the form caption is represented by a property on the form design. Therefore, to change the caption, you must modify the **Caption** property on the form design. You can make this change through extension. Create an extension of the selected form in the extension model, and then change the **Caption** property as usual.
 

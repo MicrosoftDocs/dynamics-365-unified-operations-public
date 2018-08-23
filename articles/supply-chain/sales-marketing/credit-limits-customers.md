@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: CustParameters 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Credit limits for customers
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Setting a credit limit lets you specify the maximum amount of credit to extend
 to your customers. If a credit limit is specified, it is checked automatically

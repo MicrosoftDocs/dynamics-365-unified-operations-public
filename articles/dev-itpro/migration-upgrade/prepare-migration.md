@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Prepare to migrate code from Dynamics AX 2012 R3 to Dynamics 365 for Finance and Operations
+# Prepare to migrate code to Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In this topic, we will describe the Lifecycle Services (LCS) Code upgrade service and Visual Studio tools that help you migrate your code and metadata from Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Finance and Operations. Most of these steps also apply to code migration between two major versions of Finance and Operations. 
 
@@ -105,7 +105,7 @@ After you have resolved all of the compilation errors, all packages will compile
 4.  Validate that all scenarios work in multiple browsers with different sizes for custom patterns.
 5.  Write and run tests.
 
-For more information, see [Resolve Conflicts Using Visual Studio Tools (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7).
+<!--For more information, see [Resolve Conflicts Using Visual Studio Tools (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7).-->
 
 ## Best practice setup
 In the Best Practice framework, there is a subset of Best Practice warnings that need to be resolved to complete migration. This applies if you are migrating from Dynamics AX 2012 R3 or earlier.

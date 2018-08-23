@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up electronic signatures
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Use this procedure to set up electronic signatures. An electronic signature confirms the identity of a person who is about to start or approve a computing process. The demo data company used to create this procedure is DAT.
 

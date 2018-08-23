@@ -17,7 +17,7 @@ ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSR
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 90013
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Plan freight transportation routes with multiple stops
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the various elements that you use to plan transportation routes in Microsoft Dynamics 365 for Finance and Operations.
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Chinese hierarchy of chart of accounts
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows how to create a chart of accounts in a hierarchy tree structure by setting up multiple levels for ledger accounts.
 

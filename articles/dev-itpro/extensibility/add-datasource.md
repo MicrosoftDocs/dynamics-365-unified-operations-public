@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Add a new data source to a form
+title: Add data sources to forms through extension
 description: This topic explains how you can add new data sources to existing forms by using extensions.
 author: ivanv-microsoft
 manager: AnnBe
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Add a new data source to a form
+# Add data sources to forms through extension
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Often, the information that is stored in existing tables doesn't satisfy customer requirements. Therefore, additional tables must be created, and data from those tables must be shown on pages.
 

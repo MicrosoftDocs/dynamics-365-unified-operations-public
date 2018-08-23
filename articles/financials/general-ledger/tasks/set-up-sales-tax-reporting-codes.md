@@ -3,7 +3,7 @@
  
 title: Set up sales tax reporting codes
 description: The Sales tax reporting codes refer to a field number on a sales tax report. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up sales tax reporting codes
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 The Sales tax reporting codes refer to a field number on a sales tax report. They are used on country specific report layouts and the Sales tax payment by code report to print sales tax amounts for a settlement period summarized per reporting code. After you create Sales tax reporting codes, you can refer to them on the Report setup FastTabs in the Sales tax code page. 
 

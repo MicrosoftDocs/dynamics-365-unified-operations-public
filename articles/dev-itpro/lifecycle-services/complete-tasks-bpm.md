@@ -1,5 +1,5 @@
 ---
-title: Complete tasks in BPM
+title: Complete tasks in Business process modeler (BPM)
 description: This topic provides information about additional tasks that you can complete in Business process modeler (BPM). For example, you can publish a BPM library, export a methodology, and distribute a BPM library.
 author: kfend
 manager: AnnBe
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Complete tasks in Business process modeler
+# Complete tasks in Business process modeler (BPM)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## Upload a task recording
 

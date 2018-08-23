@@ -3,7 +3,7 @@
  
 title: Create a semi-finished product (February 2016 only)
 description: This task focuses on creating a semi-finished product. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 02/07/2017
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Create a semi-finished product (February 2016 only)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This task focuses on creating a semi-finished product. It is the second task in the BOM calculation series. The demo data company used to create this task is USMF.
 

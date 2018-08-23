@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Classify localization features
+title: Classification of localization features
 description: As part of the requirements for LCS solutions for localization &amp; translation, localization features must be classified as either regulatory or competitive in the business process modeler (BPM) library in Microsoft Dynamics Lifecycle Services (LCS). This article explains the difference between these two types of feature and shows how the feature type is used in the title of the feature.
 author: ShylaThompson
 manager: AnnBe
@@ -24,14 +24,14 @@ ms.assetid: 7e2031b4-a092-482e-a76d-1e582edecd86
 ms.search.region: global
 # ms.search.industry: 
 ms.author: janeaug
-ms.search.validfrom: 2016-02-28
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Classify localization features
+# Classification of localization features
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 As part of the requirements for LCS solutions for localization &amp; translation, localization features must be classified as either regulatory or competitive in the business process modeler (BPM) library in Microsoft Dynamics Lifecycle Services (LCS). This article explains the difference between these two types of feature and shows how the feature type is used in the title of the feature.
 

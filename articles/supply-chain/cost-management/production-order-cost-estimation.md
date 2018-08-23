@@ -17,7 +17,7 @@ ms.search.form: BOMCalcTrans, InventCostTrans, ProdCalcTrans, ProdTableJour, Pro
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 80633
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Production order cost estimation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about production cost estimation. Production cost estimation provides the projected material and capacity consumption costs of producing an item in the planned production order quantity. 
 

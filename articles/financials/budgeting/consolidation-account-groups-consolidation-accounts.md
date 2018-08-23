@@ -17,7 +17,7 @@ ms.search.form: LedgerConsolidateAccountGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265544
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Consolidation account groups and additional consolidation accounts
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they are used in Microsoft Dynamics 365 for Finance and Operations.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install the Retail POS Layout designer
+title: Install the Retail point of sale (POS) layout designer
 description: You can use the one-click designer to design different Retail Modern POS (MPOS) and Cloud POS layouts, in either Landscape mode or Portrait mode, for stores, registers, cashiers, and managers.
 author: athinesh99
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Install the Retail POS Layout designer
+# Install the Retail point of sale (POS) layout designer
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 You can use the one-click designer to design different Retail Modern POS (MPOS) and Cloud POS layouts, in either Landscape mode or Portrait mode, for stores, registers, cashiers, and managers.
 

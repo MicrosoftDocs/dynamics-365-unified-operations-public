@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-02-28
 
 # X++ data selection and manipulation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the support for data selection and manipulation in the X++ language.
 

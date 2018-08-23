@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail SDK samples
+title: Retail software development kit (SDK) samples
 description: This topic describes three new samples that were released together with the Retail SDK in December 2016.
 author: mugunthanm
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Retail SDK samples
+# Retail software development kit (SDK) samples
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes three new samples that were released together with the Retail SDK in December 2016.
 

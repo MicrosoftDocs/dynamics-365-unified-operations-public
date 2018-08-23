@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Receipt templates and printing
+title: Set up and design receipt formats
 description: This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Microsoft Dynamics 365 for Retail includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
 author: rubencdelgado
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Receipt templates and printing
+# Set up and design receipt formats
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Microsoft Dynamics 365 for Retail includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Transfer capital items to the fixed asset (India)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through transferring a capital item by issuing inventory items to the Fixed assets journal. The demo data company used to create this procedure is INMF.
 

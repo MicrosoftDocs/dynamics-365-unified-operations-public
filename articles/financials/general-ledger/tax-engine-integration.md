@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3
 
 # Tax engine integration
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 To integrate the [Tax engine](tax-engine.md) (also referred to as GTE) with Microsoft Dynamics 365 for Finance and Operations, you must implement X++ code that interacts with the Tax engine for tax calculation, and that consumes the results to show, account, and post tax for voucher and tax transactions. (The tax calculation can either include or exclude tax adjustment.) 
 

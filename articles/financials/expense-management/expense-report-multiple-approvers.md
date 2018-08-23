@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  TrvExpensesReportList
 audience: Application User
 # ms.devlang: 
-ms.reviewer:  twheeloc
+ms.reviewer:  shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Expense reports and multiple approvers
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Depending on your organization's expense approval policies, more than one person might have to approve an expense report that is submitted by an employee. When you set up the workflow process for expense report approval, you can add workflow elements that include tasks or steps for one or more expense report approvers. For example, you might require that all expense reports be approved first by the manager of the employee who submitted the report and then by the Accounts payable coordinator.
 

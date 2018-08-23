@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Performance management overview
+title: Performance management
 description: The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
 author: mikefalkner
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Performance management overview
+# Performance management
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
 

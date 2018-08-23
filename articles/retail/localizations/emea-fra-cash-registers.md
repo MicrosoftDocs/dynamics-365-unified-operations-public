@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cash registers for France
+title: Cash register functionality for France
 description: This topic provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: vastrup
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-2-28
 ms.dyn365.ops.version: 7.3.2
 
 ---
-# Cash registers for France
+# Cash register functionality for France
 
 [!include[banner](../includes/banner.md)]
 
@@ -317,7 +317,7 @@ To digitally sign Period grand total journals and archives, you must set up digi
 - The certificate must be uploaded to the Key Vault storage.
 - The Application Object Server (AOS) application must be authorized to read secrets from the Key Vault storage.
 
-For more information about how to work with Key Vault, see [Get started with Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started).
+For more information about how to work with Key Vault, see [Get started with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-get-started).
 
 Then, on the **Key Vault parameters** page, you must specify the parameters for accessing the Key Vault storage:
 

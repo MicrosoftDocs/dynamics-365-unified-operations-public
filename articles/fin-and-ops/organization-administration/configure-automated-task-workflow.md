@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure an automated task in a workflow
+title: Configure automated tasks in a workflow
 description: This topic explains how to configure the properties for an automated task.
 author: sericks007
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure an automated task in a workflow
+# Configure automated tasks in a workflow
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure the properties for an automated task.
 

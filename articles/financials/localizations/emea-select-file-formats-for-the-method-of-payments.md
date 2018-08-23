@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # File formats for methods of payment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the two methods for getting file formats that you can use for methods of payment.
 

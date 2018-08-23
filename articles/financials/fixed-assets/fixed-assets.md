@@ -3,7 +3,7 @@
 
 title: Fixed assets home page
 description: Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -17,14 +17,14 @@ ms.search.form: AssetWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21481
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed assets home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization. 
 

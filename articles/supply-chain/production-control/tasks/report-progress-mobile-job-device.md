@@ -3,7 +3,7 @@
  
 title: Report progress on a mobile job device
 description: This procedure shows you how to start and report progress on a production job in the job device registration form. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/03/2017
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Report progress on a mobile job device
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to start and report progress on a production job in the job device registration form.
 

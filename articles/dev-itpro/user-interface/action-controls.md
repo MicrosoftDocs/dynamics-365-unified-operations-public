@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Action controls
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Actions are an essential component of any enterprise resource planning (ERP) system, and are triggered by mouse click, keyboard, or touch.
 

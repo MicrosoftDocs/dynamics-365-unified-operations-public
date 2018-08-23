@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Operator precedence
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes operator precedence in Microsoft Dynamics 365 for Finance and Operations.
 

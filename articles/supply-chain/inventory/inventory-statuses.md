@@ -17,7 +17,7 @@ ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 21331
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inventory statuses
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how you can use inventory statuses to categorize and keep track of inventory.
 

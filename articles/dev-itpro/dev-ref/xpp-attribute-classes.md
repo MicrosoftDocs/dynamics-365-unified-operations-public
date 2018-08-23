@@ -3,7 +3,7 @@
 
 title: X++ attribute classes
 description: This topic describes the use of attributes in X++.
-author: RobinARH
+author: pvillads
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ attribute classes
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the use of attributes in X++.
 
@@ -101,6 +101,9 @@ On the previous reflection classes, the methods for reflecting on attribute meta
 -   **getAttribute** method
 -   **getAttributedClasses** method
 -   **getAttributes** method
+
+> [!NOTE]
+> There is no mechanism for listing all methods or classes that are adorned with a particular attribute from X++ code. However, because the X++ compiler records this information in the cross reference database, the information can be mined from there.
 
 ### Metadata reflection code example
 

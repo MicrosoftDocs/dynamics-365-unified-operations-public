@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Learning Power BI content
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the **Learning** Microsoft Power BI content.
 
@@ -68,5 +68,3 @@ The following data is used to fill the reports in the **Learning** Power BI cont
 | Position         | Position, title, and full-time equivalent (FTE)                  | Course Agenda, Course Attendees |
 | Employee Name    | First name, last name, and full name                             | Course Attendees |
 | Employee Title   | Title and seniority date                                         | Course Attendees |
-
-

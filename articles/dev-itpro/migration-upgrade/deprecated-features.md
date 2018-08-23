@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Deprecated features
+title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 08/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Removed or deprecated features
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
@@ -43,6 +43,9 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!Note]
 > Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
+
+> [!Note]
+> Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
 ## Dynamics 365 for Finance and Operations 8.0 with platform update 15
 No features have been removed or deprecated with this release. Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.
@@ -83,13 +86,13 @@ These two reports are no longer supported in Finance and Operations. Instead, th
 | **Deployment option**        | All|
 | **Status**                       | Deprecated: The menu items for the two reports have been removed in version 7.3. However, the code for the reports remains in the product. The plan is to remove the code in a future release. |
 
-### Power BI content packs published to PowerBI.com
-The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, which were published to the PowerBI.com site, are deprecated as a consequence of product updates in Microsoft Power BI. System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.
+### Power BI content packs available on AppSource
+The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [Microsoft AppSource](https://appsource.microsoft.com) site, are deprecated as a consequence of product updates in Microsoft Power BI. System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.
 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Product updates in Microsoft Power BI. |
-| **Replaced by another feature?**   | Power BI content packs (published to PowerBI.com) are being replaced by analytical applications which allow for solution integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspackes](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Replaced by another feature?**   | The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [AppSource](https://appsource.microsoft.com) site, are being replaced by analytical applications which allow for solution integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspackes](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Product areas affected**         | Cost management, Finance, and Retail                                                                                               |
 | **Deployment option**              | Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)                                                                                                            |
 | **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 2018.    |
@@ -167,6 +170,18 @@ Starting February 15, 2018, retailers will no longer be able to display personal
 
 
 ## Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8
+
+### Currency conversion for accounting and reporting currencies
+
+Currency conversion for accounting and reporting currencies was introduced when the euro was introduced.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Limited usage and addition of the Copy legal entity functionality as a replacement.      |
+| **Replaced by another feature?**   | No, but the Copy legal entity and Configurations features were added to make it easier to move to a company that has changing core requirements. |
+| **Product areas affected**         | Financial management     |
+| **Status**                         | Deprecated: A removal date has not been set for this feature.   |
+
 
 ### Warehouse mobile devices portal
 

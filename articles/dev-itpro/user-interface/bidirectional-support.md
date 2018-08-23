@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Right-to-left language support and bidirectional text
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. This article discusses the issue of bidirectional text and how it's handled.
 

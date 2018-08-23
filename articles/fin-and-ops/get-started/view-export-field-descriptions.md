@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View and export field descriptions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
 

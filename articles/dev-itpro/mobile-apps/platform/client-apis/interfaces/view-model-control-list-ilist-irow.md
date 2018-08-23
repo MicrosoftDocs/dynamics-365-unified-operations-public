@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Row
+title: Row type
 description: Row controls are what make up a list. A list contains any number of row controls.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Row Type
+# Row type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Row controls are what make up a list. A list contains any number of row controls.
 

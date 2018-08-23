@@ -3,7 +3,7 @@
  
 title: Define coverage rules for items
 description: The demo data company used to create this procedure is USMF. 
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/02/2017
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Define coverage rules for items
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 The demo data company used to create this procedure is USMF. This procedure shows how to create coverage rules and override coverage settings for a specific item. It also shows how to specify default inventory settings.
 

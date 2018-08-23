@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Layout
+title: Page layout in the web client
 description: This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 author: jasongre
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Layout
+# Page layout in the web client
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 

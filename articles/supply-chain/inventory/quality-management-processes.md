@@ -17,7 +17,7 @@ ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConfor
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 11574
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Quality management processes
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the quality management process for nonconforming products. It describes how you can use quality control functionality, how to define and maintain nonconformances, and how to handle corrections.
 

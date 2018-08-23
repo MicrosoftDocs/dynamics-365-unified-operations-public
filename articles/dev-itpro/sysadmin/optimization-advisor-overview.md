@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Optimization advisor overview
+title: Optimization advisor
 description: This topic describes how you can use Optimization advisor to help guarantee optimal configuration of Microsoft Dynamics 365 Finance and Operations. 
 author: roxanadiaconu
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.search.form: SelfHealingWorkspace
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Optimization advisor overview
+# Optimization advisor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how you can use Optimization advisor to help guarantee optimal configuration of Microsoft Dynamics 365 Finance and Operations.
 
@@ -53,8 +53,6 @@ Standard security policies apply to optimization opportunities. For example, the
 When you take action on some optimization opportunities, the system calculates the impact of the opportunity in terms of the reduction in the runtime of business processes. Unfortunately, this feature isn't available for all optimization opportunities.
 
 To learn more about Optimization advisor, watch the short [Optimization advisor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ) video.
-
-> [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
 
 ## Optimization rules
 

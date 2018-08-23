@@ -17,14 +17,14 @@ ms.search.form: CAMCostControlWorkspace, CAMParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Access rights of a cost object controller
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The **Cost control** workspace is a central point where managers can view the performance of their cost objects. This workspace lets managers consume Cost accounting data even though they aren't cost accountants. For security reasons, managers should be allowed to see only the Cost accounting data that is related to the specific cost objects that they are responsible for.
 

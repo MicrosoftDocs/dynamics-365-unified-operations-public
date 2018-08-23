@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Set up Configuration manager
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > This feature is **not** supported for production use. Configuration manager (beta) relies on entities from the Data Import/Export Framework in your environment. Because these entities do not currently include all the functionality in AX 2012 R3, some configuration data is not copied between environments.

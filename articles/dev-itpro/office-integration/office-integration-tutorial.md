@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Office integration tutorial
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In this tutorial, you will use and build Office integration experiences that involve Excel, Word, Document Management, and email. 
 

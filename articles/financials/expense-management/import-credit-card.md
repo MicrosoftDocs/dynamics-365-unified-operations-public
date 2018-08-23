@@ -18,7 +18,7 @@ ms.search.form: TrvPbsMainDataLines
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274023
@@ -33,7 +33,7 @@ ms.search.validFrom: 2016-11-30
 
 # Import and maintain credit card transactions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Expense-related credit card transactions can be set up so that they are automatically imported on a recurring schedule. Alternatively, the transactions can be manually imported as they are required. The credit card transactions are imported through the Credit card transactions data entity.
 

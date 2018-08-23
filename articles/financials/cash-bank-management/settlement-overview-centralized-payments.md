@@ -2,10 +2,10 @@
 # required metadata
 
 title: Settlement overview for centralized payments
-description: Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments. This eliminates the need to enter the same transaction in multiple legal entities and saves time by streamlining the payment proposal process, the settlement process, open transaction editing, and closed transaction editing for centralized payments. 
+description: This topic describes settlement for centralized payments for Microsoft Dynamics 365 for Finance and Operations. 
 author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,10 +14,9 @@ ms.technology:
 # optional metadata
 
 ms.search.form: CustOpenTrans 
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222414
@@ -32,15 +31,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settlement overview for centralized payments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments. This eliminates the need to enter the same transaction in multiple legal entities and saves time by streamlining the payment proposal process, the settlement process, open transaction editing, and closed transaction editing for centralized payments. 
 
 When a customer or vendor payment is entered in one legal entity and is settled with an invoice that was entered in another legal entity, the applicable settlement, due-to, and due-from transactions are automatically generated for each legal entity. A settlement record is created for each combination of invoice and payment in the transaction. Each settlement record is assigned a new voucher number, which is based on the payment voucher number sequence series that is specified on the **Accounts receivable parameters** page for customers and on the **Accounts payable parameters** page for vendors. 
 
 If additional settlement records are generated for cash discounts, foreign currency revaluations, penny differences, overpayments, or underpayments, they are assigned the later date of the payment or invoice transaction. If settlement occurs after the payment is posted, the settlement records use the settlement posting date that is specified on the **Settle open transactions** page.
-Posting types, transaction types, and default descriptions
-----------------------------------------------------------
+
+## Posting types, transaction types, and default descriptions
 
 Intercompany settlement voucher transactions use the intercompany settlement posting type, intercompany customer settlement, and intercompany vendor settlement transaction types. You can set up information for the transaction type on the **Default descriptions** page. 
 
@@ -54,8 +53,7 @@ The following transaction types are available for use in single-company and cros
 
 You can also define default descriptions for intercompany settlement vouchers.
 
-Currency exchange gains or losses
----------------------------------
+## Currency exchange gains or losses
 
 The exchange rate that is used for customer or vendor transactions is stored with the transaction. Realized gains or losses for currency exchanges are posted to either the legal entity of the invoice or the legal entity of the payment, depending on the option that is selected in the **Post currency exchange gain or loss** field on the **Intercompany accounting** page for the legal entity of the payment. The following examples use these currencies:
 -   Payment accounting currency: EUR
@@ -63,7 +61,7 @@ The exchange rate that is used for customer or vendor transactions is stored wit
 -   Payment transaction currency: DKK
 -   Invoice transaction currency: CAD
 
-#### Currency calculations
+### Currency calculations
 
 When settling an invoice that is entered in one legal entity with a payment that is entered in another legal entity, the transaction currency of the payment (DKK) is converted in three steps:
 1.  Converted to the accounting currency of the payment (EUR), using the exchange rates from the legal entity of the payment.
@@ -79,17 +77,15 @@ When the **Settle open transactions** page is opened from a payment journal wher
 
 The resulting payment amount is transferred to the payment journal line when you close the **Settle open transactions** page.
 
-#### Posting for gain or loss because of different accounting currencies
+### Posting for gain or loss because of different accounting currencies
 
 If there is a currency exchange gain or loss, the gain or loss is posted to the legal entity that is specified for the **Post currency exchange gain or loss** field on the **Intercompany accounting** page for the legal entity of the payment. The gain or loss amount is converted to the accounting currency of the legal entity where the gain or loss amount is posted, using the exchange rate that is defined for that legal entity.
 
-Cash discounts
---------------
+## Cash discounts
 
 Cash discounts that are generated during the cross-company settlement process are posted to either the legal entity of the invoice or the legal entity of the payment, depending on the option that is selected for the **Post cash discount** field on the **Intercompany accounting** page for the legal entity of the payment. A corresponding settlement transaction is generated in the legal entity of the invoice.
 
-Overpayments and underpayments
-------------------------------
+## Overpayments and underpayments
 
 Overpayment, underpayment, and penny difference tolerances are determined based on the legal entity of the payment for overpayments, and on the legal entity of the invoice for underpayments. The posting account that is used is determined by the setting in the **Cash discount administration** field on the **Accounts receivable parameters** page for customers, and the **Cash discount administration** field on the **Accounts payable parameters** page for vendors.
 
@@ -116,8 +112,3 @@ For vendor payments, the due-to and due-from transactions in the legal entity of
 
 ## Withholding tax
 The vendor account that is associated with the invoice is used to determine whether withholding tax should be calculated. If withholding tax applies, it is calculated in the legal entity that is associated with the invoice. If the legal entities use different currencies, the exchange rate from the legal entity that is associated with the invoice is used.
-
-
-
-
-

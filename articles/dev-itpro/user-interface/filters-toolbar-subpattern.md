@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Filters and Toolbar subpatterns
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the Filters and Toolbar subpatterns. These workspace-specific subpatterns have been developed to show filters and/or actions inside panorama sections that host lists and charts.
 

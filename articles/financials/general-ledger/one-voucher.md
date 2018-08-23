@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14091
@@ -26,13 +26,13 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: 8.0.2
 
 ---
 
 # One voucher
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  This functionality will be available in Dynamics 365 for Finance and Operations version 8.0, which will be available in the 

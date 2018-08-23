@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create and confirm a recognition test (Japan)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 For Japan, impairment is conducted in two main steps. The first step is to test whether an impairment is needed. The second step is to calculate the impairment amount if needed. 
 

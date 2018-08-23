@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Select a form pattern
+title: Form patterns for migrated forms
 description: This topic provides information that will help you select the best form pattern for the forms that you migrate. 
 author: jasongre
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Select a form pattern
+# Form patterns for migrated forms
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information that will help you select the best form pattern for the forms that you migrate. 
 

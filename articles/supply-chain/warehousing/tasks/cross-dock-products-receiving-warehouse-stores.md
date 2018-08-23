@@ -3,7 +3,7 @@
  
 title: Cross-dock products from receiving warehouse to stores
 description: This procedure walks through the steps to create and process a Cross-dock to distribute products from the receiving location of a purchase order to one or many stores. 
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 02/17/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Cross-dock products from receiving warehouse to stores
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks through the steps to create and process a Cross-dock to distribute products from the receiving location of a purchase order to one or many stores. The user can define multiple configurations and have the system suggest how to distribute the products, or manually enter where the products are distributed to and how much gets distributed to each store. The procedure doesn't include setup of data that can be used in the Cross-dock, such as replenishment rules, organizational hierarchies, and store weights. The procedure uses the USRT demo company.
 

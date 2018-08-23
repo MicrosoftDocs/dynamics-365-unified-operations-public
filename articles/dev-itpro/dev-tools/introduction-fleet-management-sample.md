@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fleet Management sample application overview
+title: Fleet Management sample application
 description: This topic is an overview of the Fleet Management sample application.
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Fleet Management sample application overview
+# Fleet Management sample application
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic is an overview of the Fleet Management sample application.
 

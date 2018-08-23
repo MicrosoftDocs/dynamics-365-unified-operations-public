@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Inquire on asset retirement obligation-related transactions (Japan)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 For Japan, transactions and amounts of asset retirement obligations (ARO) need to be reported separately from the underlying fixed assets. 
 

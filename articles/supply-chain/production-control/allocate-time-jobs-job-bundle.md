@@ -17,7 +17,7 @@ ms.search.form: JmgBundleSlize, JmgProdParameters, JmgRegistration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55591
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Allocate time to jobs in a job bundle
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In Manufacturing execution, you can bundle jobs. You can then start multiple jobs at the same time on the Job list page.
 

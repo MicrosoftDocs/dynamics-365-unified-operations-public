@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: PartMetadata
+title: PartMetadata type
 description: Part metadata type.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# PartMetadata Type
+# PartMetadata type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Part metadata type.
 

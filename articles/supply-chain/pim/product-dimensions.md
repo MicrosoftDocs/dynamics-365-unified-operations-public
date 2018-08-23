@@ -17,7 +17,7 @@ ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProdu
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 
 ms.search.scope: Core, Operations, Retail
 
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Product dimensions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [Retail name](../includes/retail-name.md)]
+[!include [Retail name](../includes/retail-name.md)]
 
 There are four product dimensions -  Color, Configuration, Size and Style. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
 

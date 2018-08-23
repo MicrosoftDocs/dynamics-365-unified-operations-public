@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fleet Management sample application
+title: End-to-end scenario for the Fleet Management sample application
 description: This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Fleet Management sample application
+# End-to-end scenario for the Fleet Management sample application
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
 

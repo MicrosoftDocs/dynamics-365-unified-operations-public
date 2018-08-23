@@ -17,7 +17,7 @@ ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistrati
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 274363
@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-02-28
 
 # Outbound process
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the outbound process in Inventory management.
 

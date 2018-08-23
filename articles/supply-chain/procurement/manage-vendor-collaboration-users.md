@@ -17,7 +17,7 @@ ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220744
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Manage vendor collaboration users
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
 

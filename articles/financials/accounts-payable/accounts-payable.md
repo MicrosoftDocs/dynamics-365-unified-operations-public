@@ -3,7 +3,7 @@
 
 title: Accounts payable home page
 description: This topic provides an overview of Accounts payable.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
@@ -17,14 +17,14 @@ ms.search.form: VendInvoiceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21901
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Accounts payable home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of Accounts payable. 
 

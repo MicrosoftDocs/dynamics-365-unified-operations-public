@@ -16,7 +16,7 @@ ms.search.form: ReqGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19411
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Action messages
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 An action message is a system-generated suggestion to change an existing planned or firmed order.
 

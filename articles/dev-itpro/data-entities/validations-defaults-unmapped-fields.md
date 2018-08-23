@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Validations, defaults, and unmapped fields
-description: This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values, but instead contain virtual or computed data (unmapped fields). 
+title: Validations, default values, and unmapped fields
+description: This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values, but instead contain virtual or computed data (unmapped fields).
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/23/2018
@@ -30,16 +30,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Validations, defaults, and unmapped fields
+# Validations, default values, and unmapped fields
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values, but instead contain virtual or computed data (unmapped fields). 
+This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values, but instead contain virtual or computed data (unmapped fields).
 
 ## Validations
-Validations can be defined on the tables that back up entities, at both the field level and the record level. Validations can also be defined at the data entity level. 
+Validations can be defined on the tables that back up entities, at both the field level and the record level. Validations can also be defined at the data entity level.
 
-### Table (data source) vs. entity validation 
+### Table (data source) vs. entity validation
 
 Entities are backed by tables (data sources), and validations are defined for these tables at both the field level (**Table.validateField()**) and the record level (**Table.validateWrite()**). The validations are respected by data entities that are built by using those tables. Although these validations are intrinsic to the tables that back a data entity, validations can also be defined at the data entity level. Like table-based validations, entity-based validations can be written at the field level (**DataEntity.validateField()**) or the record level (**DataEntity.validateWrite()**).
 
@@ -72,64 +72,57 @@ To skip **validateDelete** for all back-end tables for a data entity, a consumer
 ### Entity-based validation behavior
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Validation</th>
 <th>Target</th>
 <th>Caller</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>DataEntity.ValidateField</td>
 <td><ul>
 <li>Data types</li>
 <li>Mandatory relationships (both tables and extended data types [EDTs])</li>
 <li>Any custom validation</li>
-<li>Doesn&#39;t call <strong>validateField</strong> for underlying mapped table fields</li>
+<li>Doesn't call <strong>validateField</strong> for underlying mapped table fields</li>
 </ul></td>
 <td><ul>
 <li>Is called automatically from OData</li>
 <li>Is called by the form engine when a field is modified</li>
-<li>Isn&#39;t called automatically if an insert/update is fired from X++ code</li>
+<li>Isn't called automatically if an insert/update is fired from X++ code</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>DataEntity.ValidateWrite</td>
 <td><ul>
 <li>Mandatory columns</li>
 <li>Relationships (both tables and EDTs)</li>
 <li>Any custom validation</li>
-<li>Doesn&#39;t call table-level <strong>validateWrite</strong> for underlying tables</li>
+<li>Doesn't call table-level <strong>validateWrite</strong> for underlying tables</li>
 </ul></td>
 <td><ul>
 <li>Is called automatically from OData</li>
 <li>Is called by the form engine when a record is saved.</li>
-<li>Isn&#39;t called automatically if an insert/update is fired from X++ code</li>
+<li>Isn't called automatically if an insert/update is fired from X++ code</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>DataEntity.ValidateDelete</td>
 <td><ul>
 <li>DeleteActions</li>
 <li>Any custom validation</li>
-<li>Doesn&#39;t call table-level <strong>validateDelete</strong> for underlying tables</li>
+<li>Doesn't call table-level <strong>validateDelete</strong> for underlying tables</li>
 </ul></td>
 <td><ul>
 <li>Is called automatically from OData.</li>
 <li>Is called by the form engine when a record is deleted</li>
-<li>Isn&#39;t called automatically if a delete is fired from X++ code</li>
+<li>Isn't called automatically if a delete is fired from X++ code</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
-
-
 
 ## Defaults
 Default values can be provided for initializations and rows.
@@ -153,36 +146,31 @@ To skip entity-level **initValue** for all back-end tables for a data entity, a 
 ## Unmapped fields
 A data entity can have *unmapped* fields in addition those fields that are directly mapped to fields of the data sources. There are two mechanisms for generating values for unmapped fields:
 
--   Custom X++ code
--   SQL that is run by Microsoft SQL Server
+- Custom X++ code
+- SQL that is run by Microsoft SQL Server
 
-The two types of unmapped fields are *virtual* and *computed*. Unmapped fields always support read actions, but the feature specification might not require any development effort to support write actions. **Virtual field**
+The two types of unmapped fields are *virtual* and *computed*. Unmapped fields always support read actions, but the feature specification might not require any development effort to support write actions.
 
--   A non-persisted field.
--   Controlled by custom X++ code.
--   Read and writes occur through custom X++ code.
--   Typically used for intake values that are calculated by using X++ code and can't be replaced by computed columns.
+**Virtual field**
+
+- A non-persisted field.
+- Controlled by custom X++ code.
+- Read and writes occur through custom X++ code.
+- Typically used for intake values that are calculated by using X++ code and can't be replaced by computed columns.
 
 **Computed field**
 
--   The value is generated by an SQL view computed column.
--   During reads, data is computed by SQL and fetched directly from the view.
--   For writes, custom X++ code must parse the input value and then write the parsed values to the regular fields of the data entity. The values are stored in the regular fields of the data sources of the entity.
--   Used mostly for reads.
--   It's a good idea to use computed columns instead of virtual fields whenever you can, because computed columns are computed at the SQL Server level, whereas virtual fields are computed row by row in X++.
+- The value is generated by an SQL view computed column.
+- During reads, data is computed by SQL and fetched directly from the view.
+- For writes, custom X++ code must parse the input value and then write the parsed values to the regular fields of the data entity. The values are stored in the regular fields of the data sources of the entity.
+- Used mostly for reads.
+- It's a good idea to use computed columns instead of virtual fields whenever you can, because computed columns are computed at the SQL Server level, whereas virtual fields are computed row by row in X++.
 
 ### Properties of unmapped fields
 
 <table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Category</th>
 <th>Name</th>
 <th>Type</th>
@@ -191,24 +179,24 @@ The two types of unmapped fields are *virtual* and *computed*. Unmapped fields a
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Data</td>
 <td>IsComputedField</td>
 <td>NoYes</td>
 <td>Yes</td>
 <td><ul>
-<li><strong>Yes:</strong> The field is synchronized as a SQL view computed column. An X++ method is required to compute the SQL definition string for the column. The virtual column definition is static and is used when the entity is synchronized. After that, the X++ method isn&#39;t called at run time.</li>
+<li><strong>Yes:</strong> The field is synchronized as a SQL view computed column. An X++ method is required to compute the SQL definition string for the column. The virtual column definition is static and is used when the entity is synchronized. After that, the X++ method isn't called at run time.</li>
 <li><strong>No:</strong> The field is a true virtual field, where inbound and outbound values are fully controlled through custom code.</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Data</td>
 <td>ComputedFieldMethod</td>
 <td>String</td>
 <td></td>
 <td>A static <strong>DataEntity</strong> method in X++ is used to build the SQL expression that generates the field definition. This property is disabled and irrelevant if the <strong>IsComputedField</strong> property is set to <strong>No</strong>. The method is required if the <strong>IsComputedField</strong> property is set to <strong>Yes</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Data</td>
 <td>ExtendedDataType</td>
 <td>String</td>
@@ -221,20 +209,15 @@ The two types of unmapped fields are *virtual* and *computed*. Unmapped fields a
 ### Unmapped field comparison
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th></th>
 <th>Virtual field</th>
 <th>Computed field</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Metadata properties</td>
 <td>Is computed = No</td>
 <td><ul>
@@ -242,7 +225,7 @@ The two types of unmapped fields are *virtual* and *computed*. Unmapped fields a
 <li>Computed Field Method = static method</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Read</td>
 <td><ul>
 <li>X++ (override <strong>postLoad</strong>)</li>
@@ -253,12 +236,12 @@ The two types of unmapped fields are *virtual* and *computed*. Unmapped fields a
 <li>Set-based read possible</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Write</td>
 <td>X++ (override <strong>mapEntityToDataSource</strong>)</td>
 <td>X++ (override <strong>mapEntityToDataSource</strong>)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Advantages</td>
 <td><ul>
 <li>Unbound to the schema, keeps the public contract the same, but the implementation can change</li>
@@ -273,11 +256,6 @@ The two types of unmapped fields are *virtual* and *computed*. Unmapped fields a
 
 The following table provides a computed example if a **UnitOfMeasure** relationship exists, and displays that in an unmapped field.
 
-| Virtual field                                                                                                                                                                                                                                                       | Computed field                                                                                                          |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| Virtual field | Computed field |
+|---------------|----------------|
 | On postLoad()*//Check to see if record exists in UnitOfMeasureInternalCode.UnitOfMeasure//Set hasFixedInternalCode value based on the field*if(this.UnitOfMeasure)this.HasFixedInternalCodeVirtual = NoYes::Yes; else this.HasFixedInternalCodeVirtual = NoYes::No; | On computedFieldMethod()*//Desired SQL computed column statement(CASE WHEN T2.RECID IS NULL THEN 0 ELSE 1 END) AS INT)* |
-
-
-
-
-

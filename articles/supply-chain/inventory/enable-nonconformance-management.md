@@ -17,7 +17,7 @@ ms.search.form: InventParameters, InventProblemType, InventProblemTypeSetup, Inv
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 28951
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Nonconformance management
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the basic setup that is required in order to use nonconformances. Additional setup is required if you want to use quality orders.
 

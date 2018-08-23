@@ -17,7 +17,7 @@ ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelL
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 4031
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Product configuration models overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article defines terms and concepts that are relevant to product configuration models. Product configuration models let you build a generic product structure that can be used to configure many product variants for a single product.
 

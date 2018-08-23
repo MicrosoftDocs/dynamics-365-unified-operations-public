@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-12-31
 
 # Tax thresholds for India FAQ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can set up and apply threshold limits to calculate direct taxes on customer and vendor transactions. Perform the following tasks to set up and use threshold limits:
 

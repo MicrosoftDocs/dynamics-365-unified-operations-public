@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Code editor
+title: Code editor features
 description: This article reviews the code editor features for Microsoft Dynamics 'AX 7.'
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Code editor
+# Code editor features
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article reviews the code editor features for Microsoft Dynamics 'AX 7.'
 

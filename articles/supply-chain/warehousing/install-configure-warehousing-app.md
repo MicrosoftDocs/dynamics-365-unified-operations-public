@@ -17,7 +17,7 @@ ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority,
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267694
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Install and configure Microsoft Dynamics 365 for Finance and Operations &#8211; Warehousing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > 

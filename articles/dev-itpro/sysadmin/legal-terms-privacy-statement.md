@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Application update 4
 
 # Add links to your organization's legal terms and privacy statement
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how administrators can add links to their organization's legal terms and privacy statement in the <strong>About</strong> pane of Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Retail.
 

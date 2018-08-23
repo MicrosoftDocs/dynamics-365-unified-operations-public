@@ -17,7 +17,7 @@ ms.search.form: CustInterestJourList
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 59461
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Waive, reinstate, or reverse interest fees
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how to waive, reinstate, and reverse charges for interest and fees.
 

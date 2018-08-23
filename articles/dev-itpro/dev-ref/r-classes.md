@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: R Classes
+title: R classes
 description: System API classes that start with the letter R.
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# R Classes
+# R classes
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Class Random
 ------------

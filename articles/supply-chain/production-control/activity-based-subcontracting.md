@@ -17,7 +17,7 @@ ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanAct
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267034
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Activity-based subcontracting
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes, in detail, how to use subcontracted activities in a production flow for lean manufacturing.
 

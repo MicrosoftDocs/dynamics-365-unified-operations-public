@@ -17,7 +17,7 @@ ms.search.form: BOMCalcDialog, BOMCalcTable, BOMCalcTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274503
@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-02-28
 
 # Amortize constant costs for a manufactured item
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 A manufactured item’s constant costs reflect the operation setup times and the components that have a constant quantity or a constant scrap amount. 
 

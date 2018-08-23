@@ -2,7 +2,7 @@
 # required metadata
 
 title: Country/region codes and configuration keys
-description: This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region. 
+description: This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Country/region codes and configuration keys
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region. 
+This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region.
 
 ### Customer table schema
 
@@ -63,20 +63,24 @@ This article provides scenarios that are applicable from an implementation persp
 
 ### Scenario – Field level only
 
-Isaac, a developer, builds a customer entity that has fields that contain regional settings. The entity is consumed through OData. **For read operations:** The consumer of the entity uses this information to complete an effective regional mapping. The consumer ignores the fields that aren't required for that region. For example, consumers in Denmark (DK) are concerned with reading the values of the **EAN** field and core fields only. **For write operations:** The consumer of the entity uses this information to identify only the fields that are required to populate data. The consumer expects validation to occur for regional fields and associated core fields.
+Isaac, a developer, builds a customer entity that has fields that contain regional settings. The entity is consumed through OData.
+
+**For read operations:** The consumer of the entity uses this information to complete an effective regional mapping. The consumer ignores the fields that aren't required for that region. For example, consumers in Denmark (DK) are concerned with reading the values of the **EAN** field and core fields only.
+
+**For write operations:** The consumer of the entity uses this information to identify only the fields that are required to populate data. The consumer expects validation to occur for regional fields and associated core fields.
 
 ### Behaviors – Fields only
 
-| Scenario                        | Description                                                                                                                                                                     |
-|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Design                          | Entities automatically inherit localization properties from underlying fields.                                                                                                  |
-| Design                          | Developers can’t override or set localization properties on entity fields. These properties should be inherited only from tables. Only override on unmapped fields.             |
-| Read behavior (OData metadata)  | The consumer of an entity from OData will have metadata or annotations to specify which fields are localized.                                                                   |
-| Read behavior (Data management) | In import/export fields, metadata displays country/region values, so that this information is obvious to the end user.                                                          |
+| Scenario                        | Description |
+|---------------------------------|-------------|
+| Design                          | Entities automatically inherit localization properties from underlying fields. |
+| Design                          | Developers can’t override or set localization properties on entity fields. These properties should be inherited only from tables. Only override on unmapped fields. |
+| Read behavior (OData metadata)  | The consumer of an entity from OData will have metadata or annotations to specify which fields are localized. |
+| Read behavior (Data management) | In import/export fields, metadata displays country/region values, so that this information is obvious to the end user. |
 | Read behavior                   | During cross-company read operations, data from localized fields is displayed only if the context matches. Note that this should already be implemented through the table/view. |
-| Read behavior (Performance)     | During company-specific read operations, localized fields are dropped from the query when the context doesn't match.                                                            |
-| Write                           | During write operations to localized fields, hard errors occur if the fields don't match the context.                                                                           |
-| (Shared table)                  | If the data source or fields contain a country/region that is a shared (global) table, all operations are ignored, just as if no keys are applied.                              |
+| Read behavior (Performance)     | During company-specific read operations, localized fields are dropped from the query when the context doesn't match. |
+| Write                           | During write operations to localized fields, hard errors occur if the fields don't match the context. |
+| (Shared table)                  | If the data source or fields contain a country/region that is a shared (global) table, all operations are ignored, just as if no keys are applied. |
 
 ### Behavior – Data source
 
@@ -84,13 +88,13 @@ The behavior of configuration keys and a country/region that are applied at the 
 
     Entity E1
 
-         |_ Data Source 1 (DS1)
+        |_ Data Source 1 (DS1)
 
               Field1
 
               Field2
 
-         |_Data Source 2 (DS2) UK
+        |_Data Source 2 (DS2) UK
 
               Field3
 
@@ -107,6 +111,3 @@ The behavior of configuration keys and a country/region that are applied at the 
     |_F3 (UK inferred)
 
     |_F4 (UK inferred)
-
-
-

@@ -3,7 +3,7 @@
  
 title: Set up manual packing (February & May 2016 only)
 description: The packing process allows you to validate and pack products into containers. 
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/04/2016
 ms.topic: business-process 
@@ -16,19 +16,19 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up manual packing (February & May 2016 only)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 The packing process allows you to validate and pack products into containers. In this process, warehouse workers pick products from the storage locations and move them to a packing station where they check the item quantities and types, and assign them to appropriate containers. When a container is fully packed, they can close it and move it to the outbound docks, and the products are ready to ship. This procedure uses the USMF demo company.
 

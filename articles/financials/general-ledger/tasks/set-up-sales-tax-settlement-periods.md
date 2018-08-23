@@ -3,7 +3,7 @@
  
 title: Set up sales tax settlement periods
 description: Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/14/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up sales tax settlement periods
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid. A settlement process can be run for a settlement period for a specific date interval. All tax codes associated with the settlement period will be settled. Depending on the set up of the related Sales tax authority, the tax liability is posted either to a vendor or a General ledger account.
 

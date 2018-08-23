@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Create a purchase order for a one-time supplier
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure shows you how to create a purchase order for a one-time supplier. The supplier is created automatically with the purchase order, rather than having to create the vendor account manually. Purchase orders are typically created by a purchasing agent. The example shown in this guide can be used in the USMF demo data company. It is a prerequisite that a one-time vendor account has been set up in the Account payable parameters page.
 

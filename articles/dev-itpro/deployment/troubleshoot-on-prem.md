@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Troubleshoot Microsoft Dynamics 365 for Finance and Operations (on-premises)
+title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 04/25/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -29,9 +29,9 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
 ---
-# Troubleshoot Microsoft Dynamics 365 for Finance and Operations (on-premises)
+# Troubleshoot on-premises deployments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 
@@ -82,7 +82,7 @@ The following folders contain additional information:
 - AX-BridgeService 
 
 ### Service Fabric Explorer
-Note the state of the cluster, application, and nodes. For information about how to access Service Fabric Explorer, see [Accessing Service Fabric Explorer](troubleshoot-on-prem.md#accessing-service-fabric-explorer).
+Note the state of the cluster, application, and nodes. For information about how to access Service Fabric Explorer, see [Access Service Fabric Explorer](troubleshoot-on-prem.md#access-service-fabric-explorer).
 
 #### Error: "Partition is below target replica or instance count"
 This error isn't a root error. It indicates that the status of each node isn't ready. For AXSFType (AOS), the status might still be **InBuild**.
@@ -90,12 +90,15 @@ This error isn't a root error. It indicates that the status of each node isn't r
 Use Event Viewer on the machines related to the error message to view the latest activity.
 
 #### AXSFType 
-For AXSFType (AOS), if a status of **InBuild** is shown for a period, review the DB Sync status and other events from Application Object Server (AOS) machines.
+For AXSFType (AOS), if a status of **InBuild** is shown, review the DB Sync status and other events from Application Object Server (AOS) machines.
 
 To diagnose errors, use Event Viewer to review the following event logs:
 
 - **Applications and Services Logs** \> **Microsoft** \> **Dynamics** \> **AX-DatabaseSynchronize**
 - **Custom Views** \> **Administrative Events**
+
+#### Error: "ExtractInstallerService failed to extract" C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll.
+If you receive this error, download the latest version of [Service Fabric](http://go.microsoft.com/fwlink/?LinkId=730690). Note that the the username and path in the error will change according to your environment.
 
 #### Service Fabric logs
 You can find additional details about Azure Service Fabric applications in the log files at C:\\ProgramData\\SF\\\<OrchestratorMachineName\>\\Fabric\\work\\Applications\\LocalAgentType\_App\<N\>\\log.
@@ -103,7 +106,7 @@ You can find additional details about Azure Service Fabric applications in the l
 ### Lifecycle Services
 Note the current deployment status for the environment in Microsoft Dynamics Lifecycle Services (LCS).
 
-## You receive a time-out error when a Service Fabric cluster is created
+## Time-out error occurs when a Service Fabric cluster is created
 Run Test-D365FOConfiguration.ps1 as noted in the "Set up a standalone Service Fabric cluster" section of the appropriate setup and deployment topic for your environment, and note any errors:
 
 - [Platform update 12](setup-deploy-on-premises-pu12.md#setupsfcluster)
@@ -115,15 +118,15 @@ Be sure to complete these steps:
 - Verify that the Service Fabric Server certificate has the access control list (ACL) for Network Service on all Service Fabric nodes.
 - Review the antivirus exclusions that are noted in [Environment setup](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup).
 
-## A time-out occurs while you're waiting for Installer Service to be completed for machine x.x.x.x
+## Time-out error occurs while you're waiting for Installer Service to be completed for machine x.x.x.x
 Only one node type is supported for each Internet Protocol (IP) address (that is, for each machine). Check whether the nodes are being reused on the same machine. For example, AOS and ORCH must not be on the same machine, and ConfigTemplate.xml must be correctly defined.
 
 ## Remove a specific application
 We recommend that you use LCS to remove or clean up deployments. However, you can also use Service Fabric Explorer to remove an application as you require.
 
-In Service Fabric Explorer, go to **Application node** \> **Applications** \> **MonitoringAgentAppType-Agent**. Select the ellipsis [**...**] next to **fabric:/Agent-Monitoring**, and delete the application. Enter the full name of the application to confirm.
+In Service Fabric Explorer, go to **Application node** \> **Applications** \> **MonitoringAgentAppType-Agent**. Select the ellipsis button [**...**] next to **fabric:/Agent-Monitoring**, and delete the application. Enter the full name of the application to confirm.
 
-You can also remove MonitoringAgentAppType-Agent by selecting the ellipsis and then selecting **Unprovision Type**. Enter the full name to confirm the removal of the application.
+You can also remove MonitoringAgentAppType-Agent by selecting the ellipsis button and then selecting **Unprovision Type**. Enter the full name to confirm the removal of the application.
 
 ## Remove all applications from Service Fabric
 The following script removes and unprovisions all Service Fabric applications except the LocalAgent and Monitoring agent for the LocalAgent. You must run this script on an orchestrator virtual machine (VM).
@@ -187,8 +190,8 @@ Follow these steps:
     Remove old certificates from all AOS, BI, ORCH, and DC nodes.
 
     - The certificates exist in the following certificate stores: Cert:\\CurrentUser\\My\\, Cert:\\LocalMachine\\My, and Cert:\\LocalMachine\\Root.
-    - If the Microsoft SQL Server setup will be modified, remove the SQL Server certificates too.
-    - If the Active Directory Federation Services (AD FS) settings will be modified, remove the AD FS certificate too.
+    - If the Microsoft SQL Server setup will be modified, remove the SQL Server certificates.
+    - If the Active Directory Federation Services (AD FS) settings will be modified, remove the AD FS certificate.
 
 4. Update the following configuration files as required:
 
@@ -387,10 +390,10 @@ The local agent user can't connect to the SQL Server instance or the database.
     ```
 
 ## Restart applications (such as AOS)
-In Service Fabric, expand **Nodes** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **Code Packages** \> **Code**. Select the ellipsis (**...**), and then select **Restart**. Enter the code when you're prompted.
+In Service Fabric, expand **Nodes** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **Code Packages** \> **Code**. Select the ellipsis button (**...**), and then select **Restart**. Enter the code when you're prompted.
 
 ## Upgrade Service Fabric
-Service Fabric Explorer will eventually show a message that resembles the following message.
+Service Fabric Explorer will display a message simillar to the following:
 
 > Unhealthy event: SourceId='System.UpgradeOrchestrationService', Property='ClusterVersionSupport', HealthState='Warning', ConsiderWarningAsError=false.
 The current cluster version 6.1.467.9494 support ends 5/30/2018 12:00:00 AM. Please view available upgrades using Get-ServiceFabricRegisteredClusterCodeVersion and upgrade using Start-ServiceFabricClusterUpgrade.
@@ -409,7 +412,7 @@ Get-ServiceFabricRegisteredClusterCodeVersion
 #Enter latest version from above for CodePackageVersion.
 #Note UpgradeReplicaSetCheckTimeout is to skip over PreUpgradeSafetyCheck for SSRS and MR, see <https://github.com/Azure/service-fabric-issues/issues/595>
 #May also want to use -UpgradeDomainTimeoutSec 600 -UpgradeTimeoutSec 1800, <https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade-parameters>
-Start-ServiSceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monitored -FailureAction Rollback -UpgradeReplicaSetCheckTimeout 30
+Start-ServiceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monitored -FailureAction Rollback -UpgradeReplicaSetCheckTimeout 30
 
 #Get upgrade status
 Get-ServiceFabricClusterUpgrade
@@ -419,7 +422,7 @@ For more information, see [Troubleshoot application upgrades](https://docs.micro
 
 To learn when a new Service Fabric release comes out, see the [Azure Service Fabric team blog](https://blogs.msdn.microsoft.com/azureservicefabric/).
 
-If you receive a warning in Service Fabric Explorer after you upgrade, make a note of the node, and then restart via expanding nodes, application, and code restart. For instructions, see [How to restart applications (example AOS)](troubleshoot-on-prem.md#how-to-restart-applications-example-aos).
+If you receive a warning in Service Fabric Explorer after you upgrade, make a note of the node, and then restart via expanding nodes, application, and code restart.
  
 ## Error: "Unable to load DLL 'FabricClient.dll'"
 If you receive this error, close and restart Windows PowerShell. If the error persists, restart the machine.
@@ -469,7 +472,7 @@ This error can also occur if the **''** parameter isn't defined in the Applicati
     - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#encryptcred)
 
 - A closing quotation mark appears at the end of the line or on the next line.
-- In Event Viewer, under **Custom Views** > **Administative Events**, note any errors in the **Microsoft-Service Fabric** source category.
+- In Event Viewer, under **Custom Views** > **Administrative Events**, note any errors in the **Microsoft-Service Fabric** source category.
 
 ## Properties to create a DataEncryption certificate
 Use the following properties to create the DataEncryption certificate:
@@ -552,10 +555,10 @@ After providers are registered, additional details about the new deployment are 
 
 To see the new folders, you must close and reopen Event Viewer. To see additional details, you must deploy an environment again.
 
-### An error occurs while AddAXDatabaseChangeTracking is running
+### Error occurs while AddAXDatabaseChangeTracking is running
 If you encounter an error while you run AddAXDatabaseChangeTracking at Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet), verify that the full path is correct. An example of a full path is ax.d365ffo.onprem.contoso.com.
 
-The error might also occur because of an issue with the star or asterisk (\*) certificate. For example, the remote certificate CN=\*.d365ffo.onprem.contoso.com has a name that isn't valid or that doesn't match the host, ax.d365ffo.onprem.contoso.com.
+The error might also occur because of an issue with the asterisk (\*) certificate. For example, the remote certificate CN=\*.d365ffo.onprem.contoso.com has a name that isn't valid or that doesn't match the host, ax.d365ffo.onprem.contoso.com.
 
 ### Run the initialize database script, and validate that databases have correct users
 If you receive only the AddAXDatabaseChangeTracking event, try to reach the MetadataService service of Finance and Operations by going to
@@ -570,7 +573,7 @@ Next, check the certificates of the service in the wif.config file. To find the 
     2. ReportingService Thumbprint
     3. SessionAuthentication Thumbprint
 
-If the thumbprints don't meet both these requirements, you must redeploy from LCS by using correct thumbprints.
+If the thumbprints don't meet both of these requirements, you must redeploy from LCS by using correct thumbprints.
 
 ### The remote name can't be resolved
 **Error:**
@@ -664,7 +667,7 @@ You might not be able to connect to the remote server at the following places:
 - System.Xml.XmlDownloadManager.GetNonFileStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
 - System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
 
-In this case, go to the C:\\ProgramData\\SF\\AOS\_1\\Fabric\\work\\Applications\\AXSFType\_App35\\log folder where you receive the error and out files. The out file contains the following information:
+In this case, go to the C:\\ProgramData\\SF\\AOS\_1\\Fabric\\work\\Applications\\AXSFType\_App35\\log folder where you receive the error and note the out file. The out file contains the following information:
 
 > System.Net.WebException: Unable to connect to the remote server ---\>
 
@@ -685,7 +688,7 @@ If you used Reset-DatabaseUsers.ps1, you must restart the Dynamics Service befor
 - **NETWORKDOMAIN:** `https://DC1.contoso.com/adfs`
 - **NETWORKALIAS:** `AXServiceUser@contoso.com`
 
-On the AD FS machine, in Server Manager, go to **Tools** \> **AD FS Management** \> **Service**. Right-click **Service and Edit Federation Service Properties**. The **Federation Service identifier** should match the **USERINFO.NETWORKDOMAIN** value and has HTTPS. (For example: `https://DC1.contoso.com/adfs`). 
+On the AD FS machine, in Server Manager, go to **Tools** \> **AD FS Management** \> **Service**. Right-click **Service and Edit Federation Service Properties**. The **Federation Service identifier** should match the **USERINFO.NETWORKDOMAIN** value and have HTTPS in the URL. (For example: `https://DC1.contoso.com/adfs`). 
 
 On the AD FS machine, in Event Viewer, go to **Applications and Services Logs** \> **AD FS** \> **Admin**, and make a note of any errors.
 
@@ -705,7 +708,7 @@ select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'ad
 ```
 
 > [!NOTE]
-> In an Azure Active Directory (Azure AD) environment (that is, an online environment), the SID is a hash of a network alias and a network domain. In an AD DS environment (that is, an on-premises environment), the SID is a hash of a network alias and an identify provider.
+> In an Azure Active Directory (Azure AD) environment (an online environment), the SID is a hash of a network alias and a network domain. In an AD DS environment (an on-premises environment), the SID is a hash of a network alias and an identify provider.
 
 In some cases, you still might not be able to sign in and receive the following error:
 
@@ -778,7 +781,7 @@ To find a list of all groups and hosts, run the following command.
 Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties PrincipalsAllowedToRetrieveManagedPassword
 ```
 
-## The AddCertToServicePrincipal script fails on Import-Module
+## AddCertToServicePrincipal script fails on Import-Module
 **Error:**
 
 > AddCertToServicePrincipal script failing on Import-Module : Could not load file or assembly 'Commands.Common.Graph.RBAC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. Strong name validation failed. (Exception from HRESULT: 0x8013141A) may have multiple versions of the same module installed.
@@ -833,12 +836,12 @@ During package deployment, you might receive the following error:
 
 > Serialization version mismatch detect, make sure the runtime DLLs are in sync with the deployed metadata. Version of file 'XXX'. Version of DLL 'XXX'
 
-In this case, the version of the environment where the package was developed probably differs from the version of the environment that the package is being deployed in.
+In this case, the version of the environment where the package was developed may differ from the version of the environment that the package is being deployed in.
 
 To work around this issue, keep the development or build environments on the same version as the deployed on-premises environment. You can confirm the package version by looking in the **Additional details** section in the Asset library where the package is uploaded. To fix the error, generate the package on a version that is the same as or earlier than the version that is deployed on the on-premises environment.
 
 ### Package deployment fails because of dependencies on missing modules
-If you try to apply a package that is missing dependent modules, package application will fail, and you will receive a message that resembles the following message:
+If you try to apply a package that is missing dependent modules, package application will fail, and you will receive a message that resembles the following:
 
 > Package \[dynamicsax-My\_commonextension.7.0.4679.35176.nupkg has missing dependencies: \[dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-publicsectorformadaptor\]\]
 >
@@ -859,7 +862,7 @@ To resolve this issue, look at all the modules that you're dependent on, and mak
 
 **Platform update 12:** Turn off the Skype integration by going to **System administration** \> **Setup** \> **Client performance options**. When you go to the app, append **?debug=true** to the URL, as shown in the following example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
 
-**Platform update 8 and Platform update 11:** A Skype application programming interface (API) issue that has been discovered affects the ability to sign in to on-premises environments. We are investigating a resolution for this issue. In the meantime, to work around this issue, you can add **?debug=true** to the end of the URL, as shown in the following example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
+**Platform update 8 and Platform update 11:** A known Skype application programming interface (API) issue affects the ability to sign in to on-premises environments. We are investigating a resolution for this issue. To work around this issue, you can add **?debug=true** to the end of the URL, as shown in the following example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
 
 ## Additional deployments (for example, two sandbox deployments, or a sandbox and production deployment)
 

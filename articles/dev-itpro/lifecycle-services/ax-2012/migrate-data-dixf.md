@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Migrate data 
+title: Migrate data by using the Data Import/Export Framework (DIXF)
 description:  This topic describes how to use the Data Import/Export Framework for Microsoft Dynamics AX 2012 to migrate data.
 author: kfend
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Migrate data using the Data import/export framework (AX 2012)
+# Migrate data by using the Data Import/Export Framework (DIXF)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
  This topic describes how to use the Data Import/Export Framework for Microsoft Dynamics AX 2012 to migrate data.
 

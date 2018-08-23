@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure and send email
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users. This topic is divided into sections for administrators and users to make it easy to find relevant information.
 
@@ -175,10 +175,10 @@ Workflow email configuration is a collection of related settings that work in co
         1. Select **No end date** to adjust all recurrences of the email batch process.
         2. Adjust the count.
 3. Verify workflow notification system email templates:
-    1. Go to **System administration** > **Setup** > **Email** > **Email messages** (for system-wide templates).
+    1. Go to **System administration** > **Setup** > **Email** > **System email templates** (for system-wide templates).
     2. Verify that the **Sender email** field is set and valid.
 4. Verify workflow notification organization email templates:
-    1. Go to **Organization administration** > **Setup** > **Email templates** (for organization-specific templates).
+    1. Go to **Organization administration** > **Setup** > **Organization email templates** (for organization-specific templates).
     2. Verify that the **Sender email** field is set and valid.
 5. Verify that the user can receive email notifications:
     1. Go to **Settings** > **User options**.

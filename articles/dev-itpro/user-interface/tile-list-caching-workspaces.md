@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Tile and list caching for workspaces
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 It's important that workspaces perform well, and that they be responsive (that is, the data that appears in a workspace is refreshed as expected and kept up to date). This topic discusses framework support for caching data that is used for tiles and lists.
 

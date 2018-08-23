@@ -17,7 +17,7 @@ ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails,
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53111
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Expression constraints and table constraints in product configuration models
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the use of expression constraints and table constraints. Constraints control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order. You can use expression constraints or table constraints, depending on how you prefer to build the constraints. 
 

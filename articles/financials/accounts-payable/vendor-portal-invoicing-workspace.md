@@ -17,7 +17,7 @@ ms.search.form: VendInvoiceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221534
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Vendor collaboration invoicing workspace
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Office integration
+title: Office integration concepts and features
 description: This topic reviews Microsoft Office integration concepts and features.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 06/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Office integration
+# Office integration concepts and features
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic reviews Microsoft Office integration concepts and features. The integration depends on several technologies:
 
@@ -84,14 +84,14 @@ OData sits on the same authentication stack as the server. The add-in uses OAuth
 
 ### Lookups and drop-down lists
 
-When you click in a table cell, any lookup, enumeration drop-down list, or date picker that is associated with that cell be shown inside the add-in, underneath the source and field information. Any value that you select inside the add-in is put into the currently selected table cell.
+When you click in a table cell, any lookup, enumeration drop-down list, or date picker that is associated with that cell will be shown inside the add-in, underneath the source and field information. Any value that you select inside the add-in is put into the currently selected table cell.
 
 ### Adding and deleting records
 
-To add a record, either start typing in a row directly below a table, or use the Tab key to tab away from the last cell of the last row in the table. To delete a record, select the row by clicking the row label (1, 2, 3, and so on), and delete all the cells in that row. To publish the changes, click **Publish**. The **Messages** dialog box show how many records were added, edited, and deleted.
+To add a record, either start typing in a row directly below a table, or use the Tab key to tab away from the last cell of the last row in the table. To delete a record, select the row by clicking the row label (1, 2, 3, and so on), and delete all the cells in that row. To publish the changes, click **Publish**. The **Messages** dialog box shows how many records were added, edited, and deleted.
 
 ## Workbook Designer
-You can use the **Workbook Designer** page to design an editable custom export workbook that contains an entity and a set of fields. To open the **Workbook Designer** (**ExportToExcelWorkbookDesigner**) page, click **Common &gt; Common &gt; Office Integration &gt; Excel workbook designer**. Before you can publish data edits, all the key fields of the entity must be in the Excel table. Key fields have a key symbol next to them. To successfully create or update a record, must have all the mandatory fields in the Excel table. Mandatory fields have an asterisk (\*) next to them. 
+You can use the **Workbook Designer** page to design an editable custom export workbook that contains an entity and a set of fields. To open the **Workbook Designer** (**ExportToExcelWorkbookDesigner**) page, click **Common &gt; Common &gt; Office Integration &gt; Excel workbook designer**. Before you can publish data edits, all the key fields of the entity must be in the Excel table. Key fields have a key symbol next to them. To successfully create or update a record, it must have all the mandatory fields in the Excel table. Mandatory fields have an asterisk (\*) next to them. 
 
 [![3\_Office](./media/3_office.png)](./media/3_office.png) 
 
@@ -124,6 +124,7 @@ To provide a custom-generated export, implement the ExporttoExcelIGeneratedCusto
 
 Add an export option by implementing the **getExportOptions** method and adding an export option to the list that is returned. Here is an example.
 
+```
     public List getExportOptions()
     {
         List exportOptions = new List(Types::Class); 
@@ -132,9 +133,11 @@ Add an export option by implementing the **getExportOptions** method and adding 
         exportOptions.addEnd(exportOption); 
         return exportOptions;
     }
+```
 
-Provide the export context by implementing the **getDataEntityContext** method and returning an **ExportToExcelDataEntityContext** for the appropriate **exportOption** after the **ExportToExcelExportOption.id** method is checked. The context specifies the data entity and fields to include in the workbook that is generated. Here is an example.
+Provide the export context by implementing the **getDataEntityContext** method and returning an **ExportToExcelDataEntityContext** for the appropriate **exportOption** after the **ExportToExcelExportOption.id()** method is checked. The context specifies the data entity and fields to include in the workbook that is generated. Here is an example. 
 
+```
     public ExportToExcelDataEntityContext getDataEntityContext(ExportToExcelExportOption _exportOption)
     {
         ExportToExcelDataEntityContext context = null;
@@ -142,17 +145,21 @@ Provide the export context by implementing the **getDataEntityContext** method a
         {
             context = ExportToExcelDataEntityContext::construct(tablestr(FMCustomerEntity), tablefieldgroupstr(FMCustomerEntity, AutoReport));
         }
-         return context;
+        return context;
     }
+```
 
 ### Custom template exports
 
-To provide a custom template export, implement the ExportToExcelITemplateCustomExport interface. Here is an example.
+To provide a custom template export, implement the **ExportToExcelITemplateCustomExport** interface. Here is an example.
 
+```
     public class FMRental extends FormRun implements ExportToExcelIGeneratedCustomExport, ExportToExcelITemplateCustomExport
+```
 
 Add an export option by implementing the **getExportOptions** method and adding an export option to the list that is returned. Here is an example.
 
+```
     public List getExportOptions()
     {
         List exportOptions = new List(Types::Class);
@@ -162,9 +169,11 @@ Add an export option by implementing the **getExportOptions** method and adding 
         exportOptions.addEnd(exportOption2);        
         return exportOptions;
     }
+```
 
 Provide the export template by implementing the **getTemplate** method and returning a **System.IO.Stream** for the appropriate **exportOption** after the **ExportToExcelExportOption.id** method is checked. Templates can be stored as Application Object Tree (AOT) resources and retrieved at run time by using the **Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream** method. Here is an example.
 
+```
     public System.IO.Stream getTemplate(ExportToExcelExportOption _exportOption)
     {
         System.IO.Stream stream = null;
@@ -174,12 +183,15 @@ Provide the export template by implementing the **getTemplate** method and retur
         }
         return stream;
     }
+```
 
 You must also implement the **updateTemplateSettings** method to satisfy the interface. Eventually, this method will be used to provide filtering information, but that capability is still under development. Here is an example.
 
+```
     public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
     {
     }
+```
 
 ## Document management
 Document management supports saving record attachments in Azure Blob storage and SharePoint Online. Database storage is deprecated. Azure Blob storage is equivalent to storage in the database since documents can only be accessed through the application and it provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Azure blob storage is the default and works immediately. SharePoint storage will work immediately if you have an O365 license since we auto-discover the SharePoint tenant e.g. a user on the TenantA.onmicrosoft.com O365/AAD tenant gets TenantA.sharepoint.com as the SharePoint site. If document management has been turned off by the user, turn it on by clicking **Options &gt; General &gt; Miscellaneous** and setting **Document handling active** to **Yes**. 
@@ -190,13 +202,14 @@ On any page that has data, an **Attach** button will be available in the upper-r
 
 [![5\_Office](./media/5_office.png)](./media/5_office.png) 
 
-The <strong>Attachments</strong> page provides a view of the attachments (documents) that are associated with the record that was selected on the previous page. You can add new attachments to the record by clicking the <strong>New</strong> button (<strong>+</strong>) in the app bar. For the <strong>File</strong> and *<strong><em>Image</em></strong>* document types, you will be prompted to provide the associated file.
+The **Attachments** page provides a view of the attachments (documents) that are associated with the record that was selected on the previous page. You can add new attachments to the record by clicking the **New** button (**+**) in the app bar. For the **File** and **Image** document types, you will be prompted to provide the associated file.
 
 ### Document preview
 
 A preview for supported file types is provided on the **Preview** FastTab. Basic document types, such as PNG images and text files, are supported by default. Office document types, such as Microsoft Word, Excel, and PowerPoint files, must use a production Office Web Apps Server, which might not be available in a OneBox configuration.
 
 ## Frequently asked questions
+
 ### Office Licensing
 
 #### What Office 365 licenses are available?
@@ -207,14 +220,10 @@ There are lots of [Office 365 license options](https://products.office.com/en-us
 
 Open the Document Parameters form and ensure that the SharePoint server has been automatically discovered and set. Now open or create a Document Type, set the Document Type's location to "SharePoint" and select the folder that the files should be stored in.
 
-Additional resources
---------
+## Additional resources
 
 [Office Integration lab and walkthroughs](office-integration-tutorial.md)
 
 [Office Integration Troubleshooting](office-integration-troubleshooting.md)
 
 [Application stack and server architecture](../dev-tools/application-stack-server-architecture.md)
-
-
-

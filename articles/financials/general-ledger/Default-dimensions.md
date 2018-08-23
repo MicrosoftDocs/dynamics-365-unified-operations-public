@@ -17,7 +17,7 @@ ms.search.form: LedgerChartofAccounts,DimensionDetails
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14091
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Financial dimensions and posting 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This topic explains what each component is and how the components work together.
 

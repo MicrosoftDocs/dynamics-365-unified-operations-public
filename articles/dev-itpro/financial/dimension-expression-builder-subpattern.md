@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dimension Expression Builder subpattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes the Dimension Expression Builder subpattern, which is applied to container controls that use the Dimension Expression Builder control.  
 

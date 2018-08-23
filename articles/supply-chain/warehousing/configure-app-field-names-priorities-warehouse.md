@@ -17,7 +17,7 @@ ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269434
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Configure app field names in Warehousing app
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to define and configure warehouse app field names and priorities in Finance and Operations. 
 

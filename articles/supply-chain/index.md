@@ -3,9 +3,9 @@
 
 title: Supply chain management home page
 description: This page provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations.   
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
-ms.date: 02/15/2018
+ms.date: 05/09/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: 
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Supply chain management home page
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations. 
 
@@ -51,6 +51,7 @@ Select a feature area to learn more about it.
 - [Product information management](pim/product-information.md)
 - [Production control](production-control/production-process-overview.md)
 - [Sales and marketing](sales-marketing/overview-sales-marketing.md)
+- [Service management](service-management/service-management-home-page.md)
 - [Transportation management](transportation/transportation-management-overview.md)
 - [Warehouse management](warehousing/warehouse-configuration.md)
 
@@ -92,7 +93,7 @@ These tech conference recordings discuss product functionality in the previous v
 
 **Warehouse management** 
 
--  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)  
+<!---  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)-->  
 -  [Get the best out of your warehouse management system](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
 -  [Advanced R3 Warehouse management - Inbound processing and min/max replenishment](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
 -  [Advanced R3 Warehouse management - A day in the life, outbound processing and demand Replenishment](https://youtu.be/Og0gLlVp7jA)

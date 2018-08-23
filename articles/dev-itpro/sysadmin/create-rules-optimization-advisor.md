@@ -18,7 +18,7 @@ ms.search.form: SelfHealingWorkspace
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 7.3
 
 # Create rules for Optimization advisor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to create new rules for **Optimization advisor**. For example, you can create a new rule that identifies which Request for Quotations (RFQ) cases have an empty title. Using titles on cases makes them easily identifiable and searchable. While quite simple, this example shows what can be achieved with optimization rules. 
 
@@ -259,6 +259,4 @@ public final class SkeletonSelfHealingRule extends SelfHealingRule implements ID
 }
 ```
 
-For more information, watch the short YouTube video:
-
-> [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
+For more information, watch the short YouTube video: [Optimization advisor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

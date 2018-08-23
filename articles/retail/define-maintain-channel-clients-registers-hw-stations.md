@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Define and maintain channel clients, registers, and hardware stations
+title: Connect peripherals to the point of sale (POS)
 description: This topic covers how to connect peripherals to your Retail POS.
 author: rubencdelgado
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Define and maintain channel clients, registers, and hardware stations
+# Connect peripherals to the point of sale (POS)
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic covers how to connect peripherals to your Retail POS.
 

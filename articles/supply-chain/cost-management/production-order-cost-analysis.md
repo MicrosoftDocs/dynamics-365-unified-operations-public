@@ -17,7 +17,7 @@ ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79634
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Production order cost analysis
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about the cost analysis that you can do for completed and current production orders. You can analyze the estimated costs and actual costs by using the Price calculation page or the Cost estimates and costings report. You can view information about the estimated and actual costs (and quantity) for each component item, the routing operation, and the indirect cost.
 

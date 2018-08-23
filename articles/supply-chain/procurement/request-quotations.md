@@ -5,7 +5,7 @@ title: Requests for quotation (RFQs)
 description: This topic provides an overview of requests for quotation (RFQs). Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, P
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2154
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Requests for quotation (RFQs)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of requests for quotation (RFQs). Organizations
 issue RFQs when they want to receive competitive offers from several vendors for
@@ -85,8 +85,8 @@ the **Request for quotation** page. The Return action generates a new journal
 and a report that will be printed, archived, and sent according to your Printing
 settings.
 
-[!NOTE]
-The name of the **Request for quotation** page has been changed. In earlier releases
+> [!NOTE]
+> The name of the **Request for quotation** page has been changed. In earlier releases
 of Dynamics 365 for Finance and Operations, this page is called **Request for
 quotations reply**.
 
@@ -163,7 +163,7 @@ tokens:
 
 -   %RFQ case name%
 
--   %ExpiryDateTime%
+-   %Expiry Date Time%
 
 -   %Date%
 
@@ -201,8 +201,8 @@ accepted, you must set up reason codes on the **Vendor reasons** page.
 On the **Form setup** page in Procurement and sourcing, you can configure the
 appearance of your printed or stored RFQ documents.
 
-[!NOTE]
-For a public-sector configuration, you must use the amendment process to change
+> [!NOTE]
+> For a public-sector configuration, you must use the amendment process to change
 an RFQ that has already been sent. When an RFQ is sent, fields are locked.
 Therefore, to make changes to the RFQ, you must select **Create** to start the
 amendment process, as described earlier. The locking behavior is controlled by

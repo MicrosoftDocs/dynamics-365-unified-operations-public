@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build the Rental Charge Type form
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In this lab you’ll create a Simple List form. A Simple List form can show reference or secondary data that has six or fewer fields. For example, the form that you create will list and describe the types of rental charges. 
 

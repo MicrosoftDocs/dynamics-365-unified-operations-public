@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Deliver an employee benefits program
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This task will show you how to create benefit elements which will be used when creating a new benefit. The demo data company used to create this task is USMF. This task is intended for a Compensation and Benefits manager.
 

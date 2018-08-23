@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Build a read-only entity that exposes financial dimensions
+title: Create read-only entities that expose financial dimensions
 description: In this topic, we describe how to build an entity for registered transactions. 
 author: margoc
 manager: AnnBe
@@ -30,8 +30,8 @@ ms.search.validFrom: 2016-11-30
 
 ---
 
-# Build a read-only entity that exposes financial dimensions
-"[!INCLUDE [banner](../includes/banner.md)]"
+# Create read-only entities that expose financial dimensions
+"[!include [banner](../includes/banner.md)]"
 
 
 In this topic, we describe how to build an entity for registered transactions that are registered. 

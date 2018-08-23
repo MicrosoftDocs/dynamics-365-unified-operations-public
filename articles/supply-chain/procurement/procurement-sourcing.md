@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50651
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Procurement and sourcing home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.
 

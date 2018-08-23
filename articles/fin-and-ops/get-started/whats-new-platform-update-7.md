@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 7
 # What's new or changed in Dynamics 365 for Operations platform update 7 (May 2017)
 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 7. This version was released in May 2017 and has a build number of 7.0.4542.16189.
 

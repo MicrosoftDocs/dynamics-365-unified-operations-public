@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-11-30
 
 # Credit note on cash discount
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information that will help legal entities in the Czech Republic create, post, and print credit notes for cash discounts that are given to customers.
 

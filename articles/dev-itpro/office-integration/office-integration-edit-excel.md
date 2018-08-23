@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create Open in Excel experiences
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Learn about creating Open in Office experiences for Excel and Word.
 
@@ -325,8 +325,6 @@ To enable relationship lookups in the Excel Data Connector, you must ensure that
 To enable creation of header records and related lines, the header data source must be added as a set of "fields" and the lines data source must be added as a related table. This pattern can work well for document data entry scenarios such as Journal entry.
 
 To learn more about header records and related lines, watch the short [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI) video.
-
-> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
 
 To design a workbook with header fields and a lines table that enables header creation:
 1. In the Excel Add-in, click **Design** to open the Designer. Select **Add fields** to add a header data source.

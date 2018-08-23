@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable change tracking for an entity
+title: Enable change tracking for entities
 description: Use change tracking to enable incremental export of data from Microsoft Dynamics 365 for Finance and Operations.
 author: Milindav2
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-# Enable change tracking for an entity by using a custom query
+# Enable change tracking for entities
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Change tracking is a feature that enables incremental export of data from Microsoft Dynamics 365 for Finance and Operations, by using Data management. In an incremental export, only records that have changed are exported. To enable incremental export, you must enable change tracking on entities. If you don't enable change tracking on an entity, you can enable only full export each time.
 

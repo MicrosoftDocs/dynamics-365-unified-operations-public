@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ session run-time functions
+title: X++ session runtime functions
 description: This topic describes the session run-time functions.
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ session run-time functions
+# X++ session runtime functions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the session run-time functions.
 

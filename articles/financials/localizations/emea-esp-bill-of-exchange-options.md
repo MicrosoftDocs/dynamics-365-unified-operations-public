@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Spanish bill of exchange options
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes specific options and changes in basic bill of exchange process implemented in Microsoft Dynamics 365 for Finance and Operations for legal entities in Spain.
 

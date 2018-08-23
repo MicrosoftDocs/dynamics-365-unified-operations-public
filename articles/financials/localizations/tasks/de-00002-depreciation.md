@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Depreciation adjustments for additional acquisitions in the second year (Germany)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This guide demonstrates how to set up the calculation of depreciation for additional acquisitions. The demo data company used to create this procedure is DEMF.
 

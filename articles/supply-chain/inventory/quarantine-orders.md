@@ -17,7 +17,7 @@ ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQ
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 30021
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Quarantine orders
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how quarantine orders are used to block inventory.
 

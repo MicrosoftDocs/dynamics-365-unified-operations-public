@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Procurement and sourcing in the public sector in France
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains how the standard features that are related to procurement and sourcing are augmented for French entities in the public sector. These features are used to help meet the requirements of the Code des Marchés Publics. 
 

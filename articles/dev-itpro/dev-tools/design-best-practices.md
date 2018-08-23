@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Design principles and best practices
+title: Design principles and best practices for data entities
 description: This article describes design principles for data entities. It also includes guidelines for the names of data entities, fields, relation roles, roles, and OData EntityTypes and EntitySets.
 author: Sunil-Garg
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Design principles and best practices
+# Design principles and best practices for data entities
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes design principles for data entities. It also includes guidelines for the names of data entities, fields, relation roles, roles, and OData EntityTypes and EntitySets.
 

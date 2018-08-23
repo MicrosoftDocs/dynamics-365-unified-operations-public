@@ -17,7 +17,7 @@ ms.search.form: MainAccount
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3381
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Main account types
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The main account types determine how a main account is used in the chart of accounts.
 

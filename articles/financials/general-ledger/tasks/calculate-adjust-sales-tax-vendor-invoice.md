@@ -3,7 +3,7 @@
  
 title: Calculate and adjust sales tax on a vendor invoice
 description: If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 11/10/2016
 ms.topic: business-process 
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Calculate and adjust sales tax on a vendor invoice
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting. This task uses the DEMF demo company.
 

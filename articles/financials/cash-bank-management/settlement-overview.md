@@ -17,7 +17,7 @@ ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVen
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14551
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settlement overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides general information about the settlement process. It describes the types of transactions that can be settled, when and how transactions can be settled, and the results of the settlement process.
 

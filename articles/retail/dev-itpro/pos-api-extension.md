@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Call an API from a POS extension
+title: Call point of sale (POS) APIs or operations from POS extensions
 description: The Retail POS APIs help you to build extensions or add new features to POS. 
 author: mugunthanm
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Call a POS API or operation from a POS extension
+# Call point of sale (POS) APIs or operations from POS extensions
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The Retail POS APIs help you to build extensions or add new features to POS. For example, if you wanted to add new features that would retrieve product details, change a price, or add an item to a cart, you would call the POS APIs to do that work. The POS APIs simplify the extension pattern and provide continuous support to build the extensions. The extension patterns for Commerce Runtime (RT), POS, and Hardware Station now all use the request/response pattern. 
 

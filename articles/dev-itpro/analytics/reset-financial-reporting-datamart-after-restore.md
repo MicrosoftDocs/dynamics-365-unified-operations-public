@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reset the Financial reporting data mart for Finance and Operations
+title: Reset the Financial reporting data mart
 description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 for Finance and Operations.
 author: aprilolson
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: IT Pro, Developer
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261824
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Reset the Financial reporting data mart
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to reset the Financial reporting data mart for the following versions of Microsoft Dynamics 365 for Finance and Operations:
 
@@ -48,8 +48,7 @@ To get Finance and Operations Financial reporting release 7.2.6.0, you can downl
 > [!NOTE]
 > The steps in this process are supported for Finance and Operations Financial reporting release 7.2.6.0 and later. If you have an earlier release, contact the Support team for assistance.
 
-To find the version of report designer, watch this video:
-> [!Video https://www.youtube.com/embed/icfA5Q3kp4w]
+To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w)
 
 In specific scenarios, you might have to reset the data mart for Financial reporting. You can complete this task in the Report designer client. Here are some scenarios where you might have to reset the data mart:
 
@@ -107,7 +106,7 @@ If you want to review the status of the integration, select **Tools** &gt; **Int
 [![View the status of the integration](./media/New-integration.PNG)](./media/New-integration.PNG)
 
 > [!NOTE]
-> The reset is finished when all mappings show the status of RanToCompletion and the Integration Status window says “Integration complete” in the bottom-left corner.
+> The reset is finished when all mappings show the status of RanToCompletion and the Integration Status window says "Integration complete" in the bottom-left corner.
 
 ## Reset the Financial reporting data mart for Finance and Operations Financial reporting release 7.0.10000.4 and later
 
@@ -178,11 +177,10 @@ cd F:\MRApplicationService\MRInstallDirectory
 Import-Module .\Server\MRDeploy\MRDeploy.psd1
 Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -SkipMRTableReset
 ```
+
 > [!NOTE]
-> SkipMRTableReset preserves tree unit security if you are using it. 
->   - If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).
-
-
+> - SkipMRTableReset preserves tree unit security if you are using it.
+> - If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).
 
 Here is an explanation of the parameters in the **Reset-DatamartIntegration** command:
 

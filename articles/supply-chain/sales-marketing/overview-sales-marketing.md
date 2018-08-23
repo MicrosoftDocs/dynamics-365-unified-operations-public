@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Sales and marketing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 You can use Sales and marketing to obtain, store, and use various types of data in the sales flow. This data includes the original sales initiative, future follow-up action, and additional sales.
 
@@ -126,5 +126,9 @@ A free text invoice is an invoice that isn't related to a sales order. It contai
 
 A pro forma invoice is an invoice that is prepared as an estimate of the actual invoice amount before the invoice is posted. You can print a pro forma invoice for either a customer invoice or a free text invoice.
 
+### Additional resources
 
+#### Blogs
 
+You can find an overview of a sales process in the post
+[How sales work in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).

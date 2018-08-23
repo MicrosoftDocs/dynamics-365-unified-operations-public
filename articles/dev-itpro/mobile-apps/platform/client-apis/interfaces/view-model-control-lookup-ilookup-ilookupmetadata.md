@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: LookupMetadata
+title: LookupMetadata type
 description: Lookup metadata type.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# LookupMetadata Type
+# LookupMetadata type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 Lookup metadata type.
 

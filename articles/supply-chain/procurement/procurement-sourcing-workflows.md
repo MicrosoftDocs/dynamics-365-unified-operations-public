@@ -17,7 +17,7 @@ ms.search.form: WorkflowTableListPageRnr
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2074
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Procurement and sourcing workflows
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Some organizations require that purchase requisitions and purchase orders are approved by a user other than the person who entered the transaction. To set up an approval process, you can create a workflow.
 

@@ -17,7 +17,7 @@ ms.search.form: ReqDemPlanImportForecastDialog
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72734
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Authorize an adjusted forecast
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Not all forecast data must be authorized immediately. This article explains how you can specify the period that a forecast is authorized for. It also explains how you can authorize the forecast for specific companies and forecast models.
 

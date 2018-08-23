@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Warehousing for on-premises deployment
+title: Configure the Warehousing app for on-premises deployments
 description: This topic describes the prerequisites for the warehousing app for on-premises deployments.
 author: MarkusFogelberg
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24861
@@ -29,9 +29,9 @@ ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.3
 
 ---
-# Warehousing for on-premises deployments
+# Configure the Warehousing app for on-premises deployments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to configure Microsoft Dynamics 365 for Finance and Operations - Warehousing for on-premises deployments.
 
@@ -45,7 +45,7 @@ The Warehousing app is available on Android and Windows operating systems. To us
 | App version            | 1.1.1.0 and above                                                                  |
 | Microsoft Dynamics 365 | Dynamics 365 for Finance and Operations platform update 11 (on-premises) |
 
-To be able to reach your on-premises resources with the app, you will need to create DNS records for your AOS and for Active Directory Federation Services (AD FS). For guidance, see [Create DNS zones, and add a record](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments#createdns).
+To be able to reach your on-premises resources with the app, you will need to create DNS records for your AOS and for Active Directory Federation Services (AD FS). For guidance, see [Create DNS zones, and add a record](setup-deploy-on-premises-pu12.md#setup).
 
 ## Create an application entry in AD FS
 For a successful authentication exchange between AD FS and Finance and Operations, an application entry must be registered in AD FS under an AD FS application group. To create this application entry, run the following Windows PowerShell commands on a machine where the AD FS is installed. The user account must have enough permissions to administer AD FS.

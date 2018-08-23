@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Element designers
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article reviews the element designers and explains how to use them. The tools contain designers for each kind of element in the program. You use these designers when you create or modify elements.
 

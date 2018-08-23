@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create a calendar and generate working times
+title: Create calendars and generate working times
 description: Calendars describe the capacity and working times of operations resources. 
 author: kherr75
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create a calendar and generate working times
+# Create calendars and generate working times
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Calendars describe the capacity and working times of operations resources. This procedure will help you define a work calendar based on a working time template. You can walk through this procedure in demo data company USMF, or using your own data.
 

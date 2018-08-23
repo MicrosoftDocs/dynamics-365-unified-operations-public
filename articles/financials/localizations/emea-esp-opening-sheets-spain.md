@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Special entries and opening sheets
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Legal entities in Spain can post special entries as opening entries for the current period, while adapting accounts to changes in accounting rules.
 

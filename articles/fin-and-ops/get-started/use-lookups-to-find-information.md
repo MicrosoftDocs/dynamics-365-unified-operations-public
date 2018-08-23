@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use lookups to find information
+title: Find information by using lookups
 description: In Microsoft Dynamics 365 for Finance and Operations, many fields have lookups that can help you easily find the correct or desired value. Several enhancements have been added to lookups that make these controls more usable and make users more productive. In this topic, you will learn about these new lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.  
 author: jasongre
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Use lookups to find information
+# Find information by using lookups
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In Microsoft Dynamics 365 for Finance and Operations, many fields have lookups that can help you easily find the correct or desired value. Several enhancements have been added to lookups that make these controls more usable and make users more productive. In this topic, you will learn about these new lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.  
 

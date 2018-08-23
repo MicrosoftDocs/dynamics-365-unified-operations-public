@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Update how amounts are displayed on reports and documents
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides information about how to update how amounts are displayed on reports and other documents for Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia.
 

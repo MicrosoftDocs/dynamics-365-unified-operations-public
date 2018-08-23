@@ -17,7 +17,7 @@ ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResPro
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 
 ms.search.scope: Core, Operations, Retail
 
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Product information overview
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 This topic provides information about product information management. Product information management works with a shared product definition, categorization, and identifiers across all legal entities, and also specific configurations of a product, to fit into the business processes. 
 

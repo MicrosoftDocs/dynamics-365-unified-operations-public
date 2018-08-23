@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Develop and customize using Visual Studio
+title: Develop and customize by using Visual Studio
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 04/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Develop and customize using Visual Studio
+# Develop and customize by using Visual Studio
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides links to topics about development.
 
@@ -56,9 +56,11 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 -   [Development system requirements](development-system-requirements.md)
 -   [Deprecated features](../migration-upgrade/deprecated-features.md)
 -   [Deprecated API’s](../migration-upgrade/deprecated-apis.md)
--   [Feedback and support (Office Mix)](https://mix.office.com/watch/92azzna59jj6)
 -   [Rename and reboot machines for Visual Studio Team Services](../migration-upgrade/vso-machine-renaming.md)
 -   [Introduction to Visual Studio Team Services (Video)](http://channel9.msdn.com/Events/Build/2014/2-575)
+<!-- [Learn about packages, models and Visual Studio (Office Mix)](https://mix.office.com/watch/ies6lyit6773)-->
+<!-- [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)-->
+<!-- [Feedback and support (Office Mix)](https://mix.office.com/watch/92azzna59jj6)-->
 
 ## Fleet Management
 -   [Fleet Management sample](introduction-fleet-management-sample.md)
@@ -75,7 +77,7 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 ### Tools, models, and VMs
 
 -   [Development tools](development-tools-overview.md)
--   [Introduction to the development environment (Office Mix)](https://mix.office.com/watch/1tz7194y62m3s)
+<!-- [Introduction to the development environment (Office Mix)](https://mix.office.com/watch/1tz7194y62m3s)-->
 -   [Application Explorer](application-explorer.md)
 -   [Projects](projects.md)
 -   [Element designers](element-designers.md)
@@ -84,14 +86,13 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 -   [Build operations](build-operations.md)
 -   [Visual Studio code editor](code-editor.md)
 -   [Developer tools add-ins](developer-tools-add-ins.md)
--   [Configure version control with VSTS (Office Mix)](https://mix.office.com/watch/1ftubtqzp3xxl)
 -   [Distribution of models: How to export and import a model](models-export-import.md)
 -   [Metadata search in Visual Studio](metadata-search-visual-studio.md)
--   [Learn about packages, models and Visual Studio (Office Mix)](https://mix.office.com/watch/ies6lyit6773)
--   [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)
 -   [Resolve conflicts using Visual Studio](https://mix.office.com/watch/1rl75ei2cs6d7)
 -   [Enable a new user account to develop on a development VM](enable-development-machine.md)
 -   [Updating the Visual Studio development tools](update-development-tools.md)
+-   [Virtual machines that don't allow administrator access FAQ](../sysadmin/VMs-no-admin-access.md)
+<!--  [Configure version control with VSTS (Office Mix)](https://mix.office.com/watch/1ftubtqzp3xxl)-->
 
 ## X++ programming language
 ### Tutorials
@@ -126,12 +127,12 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 - [Introduction to the PerfSDK and multiuser testing with Visual Studio Online](../perf-test/perfsdk-tutorial.md)
 - [Using the desktop version of trace parser to diagnose problems and analyze performance issues](../perf-test/trace-parser.md)
 - [Performance timer](../perf-test/performance-timer.md)
-- [Expanding data with the Data Expansion tool (Office Mix)](https://mix.office.com/watch/11cet1u4nmn64)
+<!-- [Expanding data with the Data Expansion tool (Office Mix)](https://mix.office.com/watch/11cet1u4nmn64)
 - [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
 - [The performance timer and other tools (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
 - [Using Task Recorder to create a single user performance test (Office Mix)](https://mix.office.com/watch/qtdlasy2rcf3)
 - [The performance timer and other tools (Office Mix)](https://mix.office.com/watch/ij5cqidra5q3)
-- [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
+- [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)-->
 
 ## User interface concepts
 The client is an HTML web client that runs in all major browsers. For information about developing and customizing the user interface, see the [User interface development home page](../user-interface/user-interface-development-home-page.md).
@@ -141,8 +142,8 @@ The client is an HTML web client that runs in all major browsers. For informatio
 
 ## Reporting services
 - [Electronic reporting overview](../analytics/general-electronic-reporting.md)
-- [Introduction to Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/wdl1dquy2tve)
-- [Demo of Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/1hkvtnc8sc7l6)
+<!-- [Introduction to Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/wdl1dquy2tve)
+- [Demo of Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/1hkvtnc8sc7l6)-->
 
 ## Data entities and OData
 - [Data entities home page](../data-entities/data-entities.md)
@@ -159,7 +160,7 @@ The client is an HTML web client that runs in all major browsers. For informatio
 
 ## Intelligence
 - [Intelligence](../analytics/bi-reporting-home-page.md)
-- [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)
+<!-- [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)-->
 
 ## Mobile platform
 - [Mobile platform home page](../mobile-apps/platform/mobile-platform-home-page.md)

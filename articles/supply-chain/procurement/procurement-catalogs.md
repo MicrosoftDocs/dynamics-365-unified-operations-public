@@ -17,7 +17,7 @@ ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2214
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Procurement catalogs
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes, at a high level, how purchasing professionals can set up and maintain procurement catalogs. Procurement catalogs define the items and services that company employees can order for internal use.
 

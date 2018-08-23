@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9 (July 2017)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9. This version was released in July 2017 and has a build number of 7.0.4612.35162.
 

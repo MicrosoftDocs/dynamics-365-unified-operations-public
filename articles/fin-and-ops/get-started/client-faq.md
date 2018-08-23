@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Finance and Operations client FAQ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides answers to frequently asked questions about the Microsoft Dynamics 365 for Finance and Operations client.
 

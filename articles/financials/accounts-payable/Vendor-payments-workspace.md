@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  VendPaymentWorkspace
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Vendor payments workspace
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The **Vendor payments** workspace shows information that is related to the processing of vendor payments. This workspace includes a **My work** view and an **Analytics** page. The **My work** view shows summary tiles, vendor transaction grids, and related vendor information. The **Analytics** page uses the capabilities of Microsoft Power BI to show visuals that are related to vendor payments.
 

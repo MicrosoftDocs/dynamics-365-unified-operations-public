@@ -5,7 +5,7 @@ title: Personalize the user experience
 description: This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,108 +32,125 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Personalize the user experience
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 
-There are many types of personalizations in Dynamics 365 for Finance and Operations. Some personalizations are selections that you make in a list of options on a setup page. Some personalizations are implicit, for example, Finance and Operations keeps track of the widths of grid columns if you adjust them, and the expanded/collapsed state of FastTabs. Other personalizations are explicit. For explicit personalizations, you enter an interactive personalization mode and modify the appearance of a page by directly managing the way that elements appear or act on the page. 
+There are three basic classes of personalizations in Finance and Operations. 
+- Personalizations made on a setup page. Examples include the color theme and time zone.
+- Personalizations related to page usage, called *implicit* personalizations. For example, Finance and Operations keeps track of the width of grid columns if you adjust them, and the expanded or collapsed state of FastTabs. 
+- Personalizations a user makes to modify the apperance of a page by changing the way an element appears or acts on that page, often through an interactive personalization mode. These personalizations are called *explicit* personalizations. For example, the user might add, hide, or reorder elements on the page.
 
-All personalizations, of any type, that a user makes in Finance and Operations are for that user only, regardless of the company that the user interacts with. Changes that a user makes to a page don't affect other users in the system.
+Every personalization that a user makes in Finance and Operations is for that user only, regardless of type of personalization or the company that the user is currently interacting with. The changes that one user makes to a page don't affect other users in the system.
 
 ## System-wide options for the current user
-In the Navigation bar you'll find a gear image that is called the **Settings** menu button. Opening the **Settings** menu will show a number of choices. Selecting **Options** will open the user **Options** page. There you'll find four option tabs: 
+The **User options** page contains several system-wide settings for the current user. To open the **User options** page, select the **Settings** menu (the gear symbol) on the navigation bar, and then select **User options**. The **User options** page has four tabs that contain various user settings:
 
--   **Visual** - Use to choose a color theme and the default size of the elements on your pages.
--   **Preferences** - Here you can choose defaults for each time you open Finance and Operations, including the company, initial page, and default view/edit mode (which determines if a page is locked for viewing or opened for editing each time you open it). You'll also find language, time zone, and date, time, and number format options. Lastly this page contains a number of miscellaneous preferences that will vary from release to release.
--   **Account** - Use to provide your user ID and other account-related options.
--   **Workflow** - This where you can choose workflow-related options.
+- **Visual** – Select a color theme and the default size of elements on pages.
+- **Preferences** – Select default values that are used every time that you open Finance and Operations. These values include the company, the initial page, and the default view/edit mode. (The view/edit mode determines whether a page is locked for viewing or opened for editing every time that you open it.) This tab also includes options for the language, the time zone, and the date, time, and number format. Finally, this tab includes several miscellaneous preferences that vary from release to release.
+- **Account** – Adjust your user name and other account-related options.
+- **Workflow** – Select workflow-related options.
 
 ## Implicit personalizations
-Implicit personalizations are those personalizations that you perform simply by interacting with certain controls that remember their current visible state. 
+Implicit personalizations are personalizations that you make just by interacting with controls that "remember" their current visible state.
 
-- **Grid columns** - You can adjust the width of a column in a list by selecting the sizing bar to the left or right of the column header and sliding it left or right to the desired width. Finance and Operations will store the width that you'd like and show that column with that width every time you open the page with that list. 
+- **Grid columns** – You can adjust the width of a column in a grid by selecting the sizing bar to the left or right of the column header, and then sliding it left or right until the column is the desired width. Finance and Operations stores the width that you set for a column. It then resizes the column to that width every time that you open the page that includes that grid.
+- **FastTabs** – Some pages have expandable sections that are known as *FastTabs*. Finance and Operations stores information about the FastTabs that you've expanded and collapsed. Then, every time that you return to the page, the same FastTabs will be either expanded or collapsed, based on your last interaction with the page. In some cases, you can help improve system performance by collapsing a FastTab, because Finance and Operations doesn't have to retrieve the information for that FastTab until the FastTab is expanded. As explained later this topic, you can also change the order of the FastTabs on a page.
+- **Fact Boxes** – Some pages have a section that is known as a *Fact Box pane*. This pane contains read-only information that is related to the current subject of the page. Each section in the Fact Box pane is known as a *Fact Box*. You can hide or show the whole Fact Box pane, and you can also expand or collapse individual Fact Boxes. Finance and Operations stores your preferences. Then, every time that you return to the page, the state of the Fact Box pane and the individual Fact Boxes will be restored, based on your last interaction with the page. In some cases, you can help improve system performance by collapsing a Fact Box, because Finance and Operations doesn't have to retrieve the information for that Fact Box until the Fact Box is expanded.
+- **Action Panes** – An *Action Pane* appears near the top of most pages. The Action Pane contains buttons for many of the actions that you can perform on the current page. These buttons are often organized on tabs. You can pin open the entire Action Pane, or you can have it collapsed by default. Then, the next time that you open the page, Finance and Operations will restore the pinned state of the Action Pane. If the Action Pane is pinned open, Finance and Operations will also show the tab of actions you last used.
+- **QuickFilters** – A *QuickFilter* appears above many grids. The QuickFilter lets you filter the grid, based on a column that you select. Finance and Operations stores the column that you filtered on. Then, the next time that you open the page that includes that grid, the grid will be filtered on the same column. However, you can then filter the grid on a different column.
+- **Column header filters** – When you filter a grid by using the *Column header filters*, you can change the filter operator as you require to find the data that you want. For example, you can change the operator from **begins with** to **is exactly**. Every time that you use a column header filter and modify the filter operator, Finance and Operations stores the change. It will then restore filter operator the next time that you filter on that column.
+- **Navigation pane** – You can open the *Navigation pane* by selecting the **Menu** button in the left pane of any page. (The **Menu** button is sometimes referred to as the *hamburger*, *hamburger menu*, or *hamburger button*.) You can pin the Navigation pane open, or you can keep it collapsed by default. After you pin the Navigation pane open, Finance and Operations will keep it open until you collapse it.
 
-- **FastTabs** - Some pages have expandable sections called *FastTabs*. Finance and Operations will store which FastTabs you have expanded, and which FastTabs you have collapsed. Each time you return to the page, those same FastTabs will be expanded or collapsed based on the last time you used them. In this article, we'll explain how to change the order of your FastTab sections. In some cases, collapsing a FastTab may improve performance because Finance and Operations will not need to retrieve the information for that FastTab until the FastTab is expanded. 
+## Explicit personalizations
+Different people and companies have a different perspective on the data that is most important to them, or the data that they don't require for the way that they run their business. In Finance and Operations, you can tailor the way that your information is ordered and interacted with. You can also specify that some information should be hidden. These capabilities are key to a personal and productive experience and are examples of explicit personalizations. Explicit personalizations are personalizations that you make explicitly, with the intention of changing the appearance or behavior of an element or page.
 
-- **Fact Boxes** - Some pages have a section called a *Fact Box* pane. This pane contains read-only information related to the current subject of the page. Each section in the Fact Box Pane is called a Fact Box. You can expand or collapse a Fact Box and Finance and Operations will store your preference. In some cases, collapsing a Fact Box may improve performance because Finance and Operations will not need to retrieve the information for that Fact Box until the Fact Box is expanded.
+### Shortcut menu options
+Shortcut menus provide a few ways to explicitly change a page to better suit your requirements or the requirements of your company. (A shortcut menu is also known as a *right-click menu* or *context menu*.)
 
-## Explicit personalizations using the Personalization toolbar
-Every person and company has a different perspective on which data is most important to them, or which data isn’t needed for the way they run their business. The ability to tailor the way your information is ordered, interacted with, or even hidden is key to making Finance and Operations a personal and productive experience. 
+Some of the most typical and important changes that can be made to a page are available directly as options on a shortcut menu. For example, to add or hide columns in a grid, just right-click a grid column header, and then select **Add columns** or **Hide this column**.
 
-Explicit personalizations are those personalizations that you perform explicitly with the intent to change the appearance or behavior of an element or page, by choosing a personalization menu. The most basic type of explicit personalization is where you right-click an element and select **Personalize**. (Note that not all elements on your page can be personalized.) When you select this method of personalization, you'll see the element's property window. 
+Additionally, the most basic types of explicit personalization are available by right-clicking an element and then selecting **Personalize**. (Note that not all elements on your page can be personalized.) When you use this method of personalization, the element's property window appears.
 
-[![Personalizing an element's properties](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg) 
+[![Personalizing an element's properties](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg)
 
-You’ll personalize an element on your page in this manner if you simply want to change the element's label, hide the element so that it isn’t shown on the page (this doesn’t change any data, it simply doesn’t show you the information), include the information in the FastTab summary section (if the element is in a FastTab), skip the field when tabbing, or make it so that data cannot be changed by marking it as “Don’t Edit." 
+You can use the property window to personalize an element in the following ways:
 
-When you want to move or hide elements or make several changes, you can use the Personalization toolbar, available from the elements Property window by choosing **Personalize this form**. The Personalization toolbar is also available on the form's Action pane, under the **Personalize** group of the **Options** tab. Select **Personalize this form** and you'll see the Personalization toolbar. 
+- Change the element's label.
+- Hide the element so that it isn't shown on the page. The data in the field isn't deleted or modified. The information just doesn't appear on the page any longer.
+- Include the information in the FastTab summary section (if the element is on a FastTab).
+- Skip the field when you press Tab to move among the fields on the page.
+- Prevent data in the field (for any record) from being edited.
+
+The property window might include other personalization capabilities, depending on the element. For example, the property window for a tile might let you promote that tile to a dashboard, and the property window for a dashboard might let you create a new workspace on that dashboard.
+
+### The Personalization toolbar
+When you want to move or hide elements, or make several changes to a page, you can use the **Personalization** toolbar. To open the **Personalization** toolbar, select **Personalize this form** in an element's property window. You can also select **Personalize this form** in the **Personalize** group on the **Options** tab of each page's Action Pane.
 
 [![Personalization toolbar](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-The Personalization toolbar has a number of personalization actions. 
+While the **Personalization** toolbar is open, the page is non-interactive. Therefore, you can't enter data, or expand or collapse sections. You can just change the elements that make up the page.
 
-- Choose the **Select** tool when you want to select and change the properties of many elements, one at a time. First, click the Select tool, and then click the element whose properties that you want to modify. When you select an element, the element's property window will open and you can modify any of the properties for that element. You can repeat the process for other elements on your form that are personalizable. In some cases, you'll select an element and see that some of the properties are not modifiable. This means that based on the way the current element is used, Finance and Operations cannot let you change that property. For example, you cannot hide a field that is required. 
+The following tools are available on the **Personalization** toolbar:
 
-- Choose the **Move** tool when you want to select and move an element to a different location within the current group of elements. (You cannot move an element outside of its parent group). First, click the Move tool and then click the element that you want to move. When you click the element that you want to move, Finance and Operations will scan the form to determine where this element can be moved and create a series of "drop zones" that show as a colored, bold line next to the area where the element can be dropped as you drag the element around within the current group. 
+- Use the **Select** tool to select and change the properties of an element. Select the **Select** tool, and then select the element to modify the properties of. When you select an element, the element's property window appears, and you can modify any of the properties of that element. You can repeat the process for other elements that can be personalized on that page. However, because of the way that some elements are used, Finance and Operations won't let you change some of their properties. Therefore, when you select an element, you might see that some of its properties can't be modified. For example, you can't hide a field that is required.
+- Use the **Move** tool to move an element to a different location within the current group of elements. (You can't move an element outside its parent group). Select the **Move** tool, and then select the element to move. When you select an element, Finance and Operations scans the page to determine where the element can be moved. It then creates a series of "drop zones." As you drag the element around within the current group, each "drop zone" is shown as a colored, bold line next to the area where the element can be dropped.
+- Use the **Hide** tool to hide an element on the page. Select the **Hide** tool, and then select the element to hide. When you select the **Hide** tool, all elements that are currently hidden are made visible and are shown in a shaded container. You can then unhide them. By selecting the **Select** tool, you can see how the page will look when the selected elements are hidden.
+- Use the **Summary** tool when you want an element to appear in the FastTab summary section. The Summary tool applies only to fields that are on a FastTab section. When you select the **Summary** tool, all fields that have been selected as summary fields are shown in a shaded container. You can interactively add fields to the FastTab summary and remove fields from the FastTab summary by selecting the fields.
+- Use the **Skip** tool to remove an element from the page's keyboard tab sequence. When you select the **Skip** tool, all elements that are currently skipped are shown in a shaded container. You can then make them part of the tab sequence again.
+- Use the **Edit** tool to mark an element as either editable or not editable. When you select the **Edit** tool, all elements that are currently non-editable are shown in a shaded container. You can then make them editable again. Note that some fields are required and can't be made non-editable. A padlock symbol appears next to those fields.
+- Use the **Insert** button to see a list of elements that can be inserted on a page.
 
-- Choose the **Hide** tool to select and hide an element. To hide an element, simply choose the Hide tool and click the element that you'd like to hide. When you choose the Hide tool, all currently hidden elements will be made visible and shown in a shaded container so that you can choose the element to unhide it. 
+    - Select the **Field** tool under **Insert** to add a field to your page. When you use the **Field** tool, you can add only fields that are part of the page definition but that aren't currently shown on the page. For information about how to create new fields that aren't part of the current page definition, see [Custom fields](user-defined-fields.md). After you select the **Field** tool, you must first select the group or area where you want to add a field. A dialog box shows the list of fields that are related to the selected group or area. In the dialog box, select one or more fields to add, and then select **Insert**. To remove a field that you previously added, repeat the process, but clear the selection of the field in the dialog box.
+    - Select the **PowerApp** tool under **Insert** to embed an app that was created by using Microsoft PowerApps into the page. For detailed information about how to embed a PowerApps app into a page, see [Embed PowerApps](embed-power-apps.md).
 
-- Choose the **Select** tool to see how the page will look with the selected elements hidden. 
+- Select the **Manage** button to view a list of management options that are related to all personalizations for the current page.
 
-- Choose the **Summary** tool when you want a numeric or string field to show in the FastTab summary area. The Summary tool will only apply to fields that are contained within a FastTab section. When you choose the Summary tool, Finance and Operations will show all fields that have been selected as summary fields by enclosing them in a shaded container. You can interactively add and remove fields from a FastTab summary by clicking the field. 
+    - Select **Clear** to reset the page to its default, installed state. All personalizations on the current page are cleared. There is no undo action. Therefore, use this option only if you're sure that you want to reset the page.
+    - Select **Import** to load a personalization from a file that you or someone else previously created for the page. All your current personalizations for the page are replaced with the personalizations from the selected file.
+    - Select **Export** to save your personalizations for the page to a file. You can share your personalizations with other users. Those users just have to import the file that contains your personalizations for the page.
 
-- Choose the **Skip** tool to remove an element from the page's keyboard tab sequence. When you choose the Skip tool, all currently skipped elements will be shown in a shaded container so that you can choose them again to make them part of the tab sequence by selecting a skipped element. 
+- Select the **Close** button to close the **Personalization** toolbar and return the page to its previous interactive state.
 
-- Choose the **Edit** tool when you want to mark an element as *Editable* or *Not editable*. When you choose the Edit tool, all currently non-editable elements will be shown in a shaded container so that you can choose them to make them editable. Note, some fields are required and cannot be made non-editable. Those fields will appear with a padlock icon next to them. 
+When the **Personalization** toolbar is used, save operations are implicit. Your personalizations take effect as soon as you make them, and you don't have to select a **Save** button. In some cases, when you select a tool, a padlock symbol appears next to an element. This symbol indicates that you can't modify the element properties that are related to the selected tool, because changes to those properties will prevent the page from working correctly.
 
-- Choose the **Add** tool to add a field to your page. With the add tool, you cannot create a new field, but you can add fields that are part of the current page definition, but not shown on the page. When you choose the Add tool, you'll first need to select the group or area where you'd like to add a field. A dialog box will display the list of fields related to the section that you've selected. From that dialog box, you can select one or more fields to add and click **Insert**. If you later want to remove a field that you've previously added, repeat the process, but simply clear the field that you previously added. 
+### Adding a tile, list, or link to a workspace
+For some pages that include lists, an additional personalization feature is available. The **Add to workspace** button in the **Personalize** group on the **Options** tab of the Action Pane lets you show the information from the current list in a specific workspace. You can show a filtered and sorted view of the information in the workspace, or you can show the default view. You can also specify whether the information appears in the workspace as a list, as a summary tile that can show the number of items in the list, or as a link.
 
-- Choose the **Manage** button to see a list of management options related to all personalizations for the current page. 
+[![Add to workspace](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
-- Choose **Clear** to reset the page to its default, installed state. All personalizations on the current page will be cleared. There is no undo action, so only use this option when you are certain that you want to reset your page. 
+- To add a list to a workspace, first sort or filter the list on the page so that it shows the information as you want it to appear in the workspace. Then select **Add to workspace**. Select a workspace, and then, in the **Presentation** field, select **List**. After you select **Configure**, a dialog box appears, where you can select the columns that should appear in the list in the workspace. You can also specify the label to use for the list in the workspace.
+- To add a tile to a workspace, first filter the list on the page so that it shows the data that you want to be summarized or that want quick access to. Then select **Add to workspace**. Select a workspace, and then, in the **Presentation** field, select **Tile**. After you select **Configure**, a dialog box appears, where you can specify the label to use for tile in the workspace. You can also specify whether the tile should show a count. After the tile is added to the workspace, you can select it to open the current page from the workspace and view the filtered list that is associated with the tile.
+- To add a link to a workspace, first filter the list on the page so that it shows the data that you're interested in. Then select **Add to workspace**. Select a workspace, and then, in the **Presentation** field, select **Link**. After you select **Configure**, a dialog box appears, where you can specify the label to use for the link. You can also optionally specify a label for a new section that will contain this link.
 
-- Choose **Import** to use a personalization from a personalization file that you or someone else previously created for this page. Importing a personalization will clear any personalizations that you've performed on the entire page and instead use all of the personalizations from the selected file. If you want to save or share a personalization, then you'll select the **Export** option to save the personalizations to a file. 
+After your list, tile, or link has been added to a workspace, you can open that workspace and reorder the elements in it as you want.
 
-- Choose the **Close** button to close the toolbar and return the page to its previously interactive state. 
+### Adding a summary from a workspace to a dashboard
+Some workspaces contain count tiles (that is, tiles that have numbers on them), and you might want those tiles to appear on your dashboard too. In a workspace, right-click a count tile, and then select **Personalize**. Then, in the tile's property window, select **Pin to dashboard**. The next time that you open (and refresh) the selected dashboard, the count will appear below the navigation tile for that workspace. You can select that count to go directly to the data that it represents.
 
-With the Personalization toolbar, saving is implicit. Your personalizations take effect immediately as you make them and there is no need to click a **Save** button. In some cases, you'll see a padlock icon next to an element when you select a tool. This means that in order for the page to work correctly, you cannot modify the properties related to the selected tool. When the Personalization toolbar is opened, the page becomes non-interactive. You cannot enter data or expand or collapse sections.
+### Personalizing your dashboard
+The dashboard is often the first page that you see when you open Finance and Operations. You can personalize the dashboard so that it shows only the workspace tiles that you want to see. You can also rearrange the tiles so that they are in the order that you prefer to see them in, rename your workspace navigation tiles, or add a completely new workspace tile.
 
-## Explicit personalization: Adding a tile or list to a workspace
-Some pages with lists will have an additional personalization feature available within its Action Pane, under the **Personalize** group of the **Options** tab. Select **Add to Workspace** to open the drop-down list that gives you the ability to show the information in the current list (filtered and sorted or default) on a workspace as a list or a summary tile (that can be used to show the number of items in the list). 
+To personalize the dashboard, right-click any tile, and then select **Personalize** to open the tile's property window.
 
-[![Add to workspace](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
-
-To add a list to a workspace, first sort or filter the list with the information as you'd like to see it on your workspace, then select the **Add to Workspace** dialog. Next, select the desired workspace and select **List** from the **Presentation** drop-down list. When you select **List** a dialog box will open allowing you to pick the columns you'd like to see in the list, and the label for the list as it will appear on the workspace. 
-
-To add a tile to a workspace, first filter the list to represent the data you want summarized (or want quick access to). Then, open the **Add to Workspace** drop dialog menu. Next, select the desired workspace and select **Tile** from the **Presentation** drop down menu. When you select **Tile**, a dialog box will open allowing you to provide a tile label and decide if the tile will show a count. When placed on a workspace, the tile will allow you to open the current page from the workspace, and show the list of information related to the tile. 
-
-When your list or tile is added to a workspace, you can then open that workspace and re-order the list or tile within the group it was placed.
-
-## Explicit personalization: Adding a summary from a workspace to a dashboard
-Some workspaces contain count tiles (tiles with numbers on them) that you'd also like to see on your dashboard. In a workspace, right-click a count tile, select **Personalize**, and then select **Pin to Dashboard**. The next time you navigate to (and refresh) the selected dashboard, you'll see that count below that workspace's navigation tile on the dashboard.
-
-## Explicit personalization: Personalizing your dashboard
-The dashboard is often the first page you'll see when you open Finance and Operations. You can personalize the dashboard to rename your workspace navigation tiles, to show only the tiles that you'd like to see, rename the tiles, or to arrange the tiles in the order you'd prefer to see them. 
-
-To personalize the dashboard, select any tile and right-click to open a context menu. On the context menu, select **Personalize**. If the selected tile is one that  you'd like to hide or rename or skip, you can make that change directly on the Property window that has appeared. If you'd like to arrange tiles, then select **Personalize this form** in the Property window to open the Personalization toolbar. You can then use the **Move** tool to arrange the tiles.
+- If you want to hide or rename the selected tile, you can make that change directly in the property window.
+- To reorder the workspace tiles, in property window, select **Personalize this form** to open the **Personalization** toolbar. You can then use the **Move** tool to arrange the tiles as you want.
+- To create a new workspace tile, in the property window, select **Add a workspace**. A new workspace tile is created at the bottom of the dashboard. You can rename this new workspace tile as you want. You can also add lists, tiles, and links to the workspace as described in the [Adding lists, tiles, or links to workspaces](personalize-user-experience.md#adding-a-tile-list-or-link-to-a-workspace) section of this topic.
 
 ## Administration of personalization
-After you personalize a page, you can share your personalizations with other users by exporting the personalized page. You can then ask the other users to navigate to the personalized page and import the personalization file that you created, or you can give your personalization to a user who has administrator privileges who can then apply your personalization file to many users at one time.
+After you personalize a page, you can share your personalizations with other users by exporting the personalized page. You can then ask other users to open the personalized page and import the personalization file that you created. Alternatively, you can give your personalization to a user who has administrator privileges. That user can then apply your personalization file to many users at the same time.
 
-Users who have administrator privileges can also manage personalizations for other users on the **Personalization** page. This page has four tabs: 
+Users who have administrator privileges can also manage personalizations for other users on the **Personalization** page. This page has four tabs:
 
-- **Apply** – You can import or select a personalization for one or more users. To apply a personalization to one or more users, select a role and users within that role, then select an existing personalization or import a personalization file to apply to the users you've selected. The personalization will be validated and applied to all the selected users the next time that they open the selected page.
-
-- **Clear** – You can clear page or workspace personalizations for one or more users. Select a page to see the list of users who have personalized that page. Then, pick the users who should have personalizations for that page cleared, and select **Clear**. All personalizations that the selected users have applied to the selected page or workspace are cleared. This action can't be undone. However, if the page or workspace has a saved personalization, that personalization can be re-imported.
-
-- **Manager per User** – Pick a user to see the list of pages this person has personalized.  You can then choose to enable or disable their ability to utilize personalization for specific pages or for the entire system.  You may also import, export, or clear a personalization for this user.
-
-- **System** – You can temporarily disable all personalizations for all users in the system. Doing so will not delete the personalizations but will simply reset all pages to their default state for all users. If you re-enable personalization later, all personalizations will be reapplied. You can also permanently delete all personalizations for all users in the system. Be sure to export any personalizations you might want later before performing this step, as there is no way to recover deleted personalizations later. 
+- **Apply** – You can import or select a personalization for one or more users. To apply a personalization to one or more users, first select a role and users who have that role. Then either select an existing personalization to apply to the selected users, or import a personalization file. The personalization is validated and will be applied to all the selected users the next time that they open the selected page.
+- **Clear** – You can clear all personalizations for a page or workspace for one or more users. First select a page or workspace to see a list of the users who have personalized it. Then select the users who should have personalizations for that page or workspace cleared, and select **Clear**. All personalizations that the selected users have applied to the selected page or workspace are deleted. This action can't be undone. However, if a personalization was saved for the page or workspace, that personalization can be reimported.
+- **Manager per User** – Select a user to see the list of pages that he or she has personalized. You can then enable or disable the selected user's ability to use personalizations for specific pages, or for the entire system. You can also import, export, or clear a personalization for the selected user.
+- **System** – You can temporarily disable all personalizations for all users in the system. In this case, the personalizations are deleted. All pages are just reset to their default state for all users. If you re-enable personalization later, all personalizations will be reapplied. You can also permanently delete all personalizations for all users in the system. There is no way to recover personalizations that have been deleted. Therefore, before you perform this task, be sure to export any personalizations that you might want later.
 
 ## Personalization of inventory dimensions
 
-When you personalize the setup of inventory dimensions on a page, consider the settings that have been created by using the **Display dimension** option. For example, if you use personalization to hide a column for the Batch number inventory dimension and the column appears the next time the page is opened, it could be because the Dimension display settings control what inventory dimension columns are displayed. 
+When you personalize the setup of inventory dimensions on a page, consider the settings that have been created by using the **Display dimension** option. For example, you use personalization to hide a column for the Batch number inventory dimension, but the column appears the next time that the page is opened. This behavior occurs because the **Dimension display** settings control the inventory dimension columns that are shown.
 
-The Dimension display settings apply across all pages and these settings will override any personalized setup of inventory dimension fields on individual pages. 
+The **Dimension display** settings apply across all pages and override any personalized setup of inventory dimension fields on individual pages.
 
-For the example with the Batch number inventory dimension, this dimension would have to be cleared as part of the **Display dimensions** option for the table to not display this column. Eventually this change would apply not only on one specific page but across all pages.
+Therefore, in the preceding example, if you don't want the column for the Batch number inventory dimension to appear, you must clear that dimension as part of the **Display dimensions** option for the table. Eventually, this change will apply not only on one specific page but across all pages.

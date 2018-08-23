@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 08/11/2017
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,9 +29,11 @@ ms.dyn365.ops.version: July 2017 update
 
 # Configure document management
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
+
+To learn more about document management, watch the short [Document Management in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be) video.
 
 ## Configure document types
 Document types are used to categorize the documents that you attach to records or the templates that you create. Each document type can be stored in a unique location.
@@ -128,3 +130,6 @@ File types include Microsoft Word documents and images. A file type is denoted b
 ### Does document management integrate with Office 365?
 
 Yes. SharePoint storage is supported natively and can be selected as the storage location for a document type. In addition, any URL addressable file can be made an attachment via the **URL** document type.
+
+### How does the default storage location for Document Management change in on-premises environments?
+For on-premises environments, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premise instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.

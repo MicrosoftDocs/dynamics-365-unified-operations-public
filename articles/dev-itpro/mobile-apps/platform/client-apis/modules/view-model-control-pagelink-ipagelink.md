@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Pagelink
+title: Pagelink module
 description: A pagelink is a control that navigates to another page.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# Pagelink 
+# Pagelink module
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 A pagelink is a control that navigates to another page.
 

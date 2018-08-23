@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Application Explorer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article reviews Application Explorer, and the various views and filtering methods in it. The article also describes how to work with elements in Application Explorer.
 

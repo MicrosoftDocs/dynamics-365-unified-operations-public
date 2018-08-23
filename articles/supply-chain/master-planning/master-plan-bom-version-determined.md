@@ -17,7 +17,7 @@ ms.search.form: BOMConsistOf, BOMDesigner, InventItemOrderSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2534
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Determine the BOM version
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site. 
 

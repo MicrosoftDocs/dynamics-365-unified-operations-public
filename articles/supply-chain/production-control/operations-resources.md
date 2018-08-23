@@ -17,7 +17,7 @@ ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 61943
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Operations resources
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Operations resources perform the activities of a project or a production process. They can be of different types, and can have different capabilities. 
 

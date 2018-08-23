@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Bank statement and payment reconciliation for the EU
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries.
 

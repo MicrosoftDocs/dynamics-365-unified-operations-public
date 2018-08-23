@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install a metadata hotfix
+title: Install metadata hotfixes in development environments
 description: This topic will guide you through installing an Application Metadata hotfix on your development environment.
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Install a metadata hotfix
+# Install metadata hotfixes in development environments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic will guide you through installing an Application Metadata hotfix on your development environment.
 
@@ -105,7 +105,7 @@ Sometimes, a metadata hotfix package contains changes to objects that have been 
 3.  Click **Create project**. A project is generated that contains only those elements in the selected model that were found to have conflicts after the hotfix was applied.
 4.  Open the designer for the conflicting element to view conflicts, and resolve them by using the tools that are provided.
 
-The Office Mix at <https://mix.office.com/watch/1rl75ei2cs6d7> provides an introduction to the conflict resolution tools in the development environment.
+<!--The Office Mix at <https://mix.office.com/watch/1rl75ei2cs6d7> provides an introduction to the conflict resolution tools in the development environment.-->
 
 ## Build and test on a local VM
 Build all models that are affected by the hotfix, and test your application.

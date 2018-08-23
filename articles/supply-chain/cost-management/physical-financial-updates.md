@@ -17,7 +17,7 @@ ms.search.form: InventTrans, InventTransVoucher
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 75023
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Physical and financial updates
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic provides an overview of which types of transactions increase or decrease inventory quantities. 
 

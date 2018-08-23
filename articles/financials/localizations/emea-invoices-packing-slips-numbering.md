@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Invoice and packing slip numbering for Latvia and Lithuania
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up number sequences for invoices and packing slips, and how to set up self-numbering ranges for documents.
 

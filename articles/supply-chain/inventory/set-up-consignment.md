@@ -17,7 +17,7 @@ ms.search.form: DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, 
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 220804
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up consignment
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure inbound consignment inventory operations.
 

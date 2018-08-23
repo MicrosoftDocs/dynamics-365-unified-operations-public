@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Process rebates for payment
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure demonstrates how to convert approved and processed customer rebates to credit notes. You can use this guide in the USMF demo company. The precondition for this guide is to have one or more rebate claims which have a status of Mark. If you’re using USMF you should run the "Generate and process customer rebates" guide before you start this guide.
 

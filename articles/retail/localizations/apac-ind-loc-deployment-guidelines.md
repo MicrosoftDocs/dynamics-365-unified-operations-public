@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3.1
 ---
 # Deployment guidelines for cash registers for India
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic is a deployment guide that shows how to enable the requirements for Goods and Services Tax (GST) in the Microsoft Dynamics 365 for Retail localization for India. For more information about the Retail localization for India, see [GST integration for cash registers for India](./apac-ind-cash-registers.md).
 
@@ -42,7 +42,7 @@ This sample consists of extensions for the Commerce runtime (CRT). To run this s
 
 ## Prerequisites
 
-Make sure that the Visual C++ Redistributable Packages are present on the machine you are running Goods and Services Tax (GST) calculations on. It's Retail server for Cloud POS and MPOS online mode, MPOS machine itself for offline mode. You can get the packages from the following location: [Download the Visual C++ Redistributable Packages](https://www.microsoft.com/en-us/download/details.aspx?id=30679).
+Make sure that the Visual C++ Redistributable Packages are present on the machine you are running Goods and Services Tax (GST) calculations on. It's Retail server for Cloud POS and MPOS online mode, MPOS machine itself for offline mode. You can get the packages from the following location: [Download the Visual C++ Redistributable Packages](https://www.microsoft.com/download/details.aspx?id=30679).
 
 ## Development environment
 

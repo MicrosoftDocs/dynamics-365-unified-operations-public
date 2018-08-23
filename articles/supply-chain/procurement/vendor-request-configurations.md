@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: VendProspectiveVendorRegistrationConfig 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 ---
 
 # Vendor request configurations
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 To complete a vendor request, a vendor contact person must complete the prospective vendor registration wizard.
 

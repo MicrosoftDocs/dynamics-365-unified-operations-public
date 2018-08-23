@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: ListDesign
+title: ListDesign type
 description: List design object type.
 author: shadykdc
 manager: AnnBe
@@ -24,9 +24,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version:
 ---
 
-# ListDesign Type
+# ListDesign type
 
-[!INCLUDE [banner](../../../../includes/banner.md)]
+[!include [banner](../../../../includes/banner.md)]
 
 List design object type.
 

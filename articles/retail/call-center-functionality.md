@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Call center functionality
+title: Call center sales functionality
 description: This topic provides an overview of the call center sales functionality in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Call center 
+# Call center sales functionality
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In Dynamics 365 for Retail, a call center is a type of Retail channel that can be defined in the application. Defining a specific channel for your call center entities allows the system to tie specific data defaults and order processing defaults to sales orders created by a user of the call center channel.
 
@@ -50,10 +50,14 @@ This page provides links to relevant documentation related to the setup, configu
 
 ## Configure order processing
 [Set up fraud alerts](set-up-fraud-alerts.md)
+
 [Manual Order Holds](work-with-order-holds.md)
 
 ## Configure payment processing
 [Payment methods in a call center](work-with-payments.md)
+
+## Configure delivery modes
+[Configure call center delivery modes and charges](configure-call-center-delivery.md)
 
 ## Configure direct marketing
 [Call center catalogs](call-center-catalogs.md)

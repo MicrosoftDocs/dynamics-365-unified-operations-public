@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Depreciation rounding
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how you can round fixed asset depreciation amounts up or down to the nearest whole number. 
 

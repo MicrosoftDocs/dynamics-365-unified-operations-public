@@ -17,7 +17,7 @@ ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 # ROBOTS:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 ms.custom: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cost management home page
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 [Cost management (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) lets you work with the valuation and accounting of raw materials, semi-finished goods, finished goods, and work-in-progress assets. It is the process of defining, managing, and reporting [Inventory accounting](cost-object.md) and [Manufacturing accounting](bom-calculations.md).
 

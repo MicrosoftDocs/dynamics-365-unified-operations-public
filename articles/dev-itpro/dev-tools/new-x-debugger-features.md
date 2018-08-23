@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ and debugger features
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This tutorial is for developers to use advanced constructs of the X++ language and take advantage of productive debugger features. This is a walkthrough of the new features with exercises included to practice using these features. 
 

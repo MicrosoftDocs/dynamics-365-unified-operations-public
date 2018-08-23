@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Adjustment inflation declaration report
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Finance and Operations users can process inflation adjustments by using INPC rates, various methods (such as opening balance, balance, monthly balance, and transaction date), and various dimensions.
 

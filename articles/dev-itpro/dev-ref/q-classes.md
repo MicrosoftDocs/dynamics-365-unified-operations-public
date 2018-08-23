@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Q Classes
+title: Q classes
 description: System API classes that start with the letter Q.
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Q Classes
+# Q classes
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 System API classes that start with the letter Q.
 

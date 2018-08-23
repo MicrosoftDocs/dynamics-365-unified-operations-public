@@ -17,7 +17,7 @@ ms.search.form: ReqTransExplosion
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19211
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Explosion of a BOM version
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.
 

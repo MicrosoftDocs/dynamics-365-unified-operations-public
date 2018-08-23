@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Define loyalty reward points
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through defining loyalty reward points. You should set up loyalty reward points before you set up a loyalty program. This procedure uses the USRT demo data company.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Store fulfillment setup
+title: Set up order fulfillment for stores
 description: This topic provides an overview of how to set up store order fulfillment. 
 author: rubencdelgado
 manager: AnnBe
@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 # Set up order fulfillment for stores
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## Overview
 Many retailers would like to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help

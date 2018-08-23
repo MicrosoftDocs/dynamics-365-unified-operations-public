@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Case management overview
+title: Case management
 description: This topic provides an overview of case management, including planning, tracking, and analyzing, in Microsoft Dynamics AX. 
 author: kfend
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.search.form: CaseDetail
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23541
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Case management overview
+# Case management
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 By planning, tracking, and analyzing cases, you can develop efficient resolutions that can be used for similar issues. For example, when customer service representatives or Human Resources generalists create cases, they can find information in knowledge articles to help them work with or resolve a case more efficiently. The following examples show how cases can be used for different situations in an organization.
 

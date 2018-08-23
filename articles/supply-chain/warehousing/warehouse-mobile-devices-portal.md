@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30171
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Warehouse Mobile Devices Portal (WMDP) for Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how to enable the Warehouse Mobile Devices Portal for Microsoft Dynamics 365 for Finance and Operations. It also explains how to service and upgrade your environment.
 

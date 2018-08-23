@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Select data model definition while creating format for electronic reporting (ER)
+title: Select data model definitions when you create formats
 description: To complete the steps in this procedure, you must first complete the procedure, ER Create a configuration provider and mark it as active. 
 author: NickSelin
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Select data model definition while creating format for electronic reporting (ER)
+# Select data model definitions when you create formats
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To complete the steps in this procedure, you must first complete the procedure, ER Create a configuration provider and mark it as active. 
 

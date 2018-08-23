@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Patch SQL Server Reporting Services in a one-box environment
+title: Patch SQL Server Reporting Services (SSRS) in one-box environments
 description: Apply SSRS hotfixes to a one-box development environment. 
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Patch SQL Server Reporting Services in a one-box environment
+# Patch SQL Server Reporting Services (SSRS) in one-box environments
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The following procedure is for one-box development environments only.
 

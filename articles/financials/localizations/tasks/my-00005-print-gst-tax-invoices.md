@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Print GST tax invoices (Malaysia)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 This procedure walks you through how to print a GST tax invoice. Before you can complete this procedure, you must select the Invoice type 'GST invoice' in general ledger parameters.
 

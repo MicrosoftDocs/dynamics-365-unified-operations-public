@@ -17,7 +17,7 @@ ms.search.form: JmgRegistration, ProdJournalTransJob, ProdJournalTransRoute, Pro
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19351
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Production feedback
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article provides information about production feedback, which gives workers feedback about production jobs. The article includes information about the various ways that production feedback can be updated.
 

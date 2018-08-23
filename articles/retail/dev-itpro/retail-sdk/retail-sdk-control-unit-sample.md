@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Control unit sample for Sweden
+title: Sample for Retail POS integration with control units for Sweden
 description: This topic is the building and installation guide for the sample for control unit integration for Sweden. 
 author: EvgenyPopovMBS
 manager: Annbe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3.2
 ---
 # Sample for Retail POS integration with control units for Sweden
 
-[!INCLUDE [banner](../../../includes/banner.md)]
+[!include [banner](../../../includes/banner.md)]
 
 **SAMPLE CODE NOTICE**
 

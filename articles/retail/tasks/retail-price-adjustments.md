@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Retail price adjustments
+title: Create retail price adjustments
 description: This procedure will walk through creating a retail price adjustment. 
 author: josaw1
 manager: AnnBe 
@@ -26,9 +26,9 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Retail price adjustments
+# Create retail price adjustments
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 This procedure will walk through creating a retail price adjustment. A retail price adjustment can set an item's sale price directly, or modify its base sale price or trade agreement sale price. This procedure uses the USRT demo data company.
 

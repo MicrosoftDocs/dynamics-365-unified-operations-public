@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Set up injury and illness information
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Employers need to know when their employees suffer injuries or illness resulting from hazards in the workplace. You can use the injury and illness page to set up information that facilitates reporting work-place injuries or illnesses. You can set up types of injuries and illnesses, including types of treatments, costs, and outcomes. The demo data company used to create this procedure is USMF.
 

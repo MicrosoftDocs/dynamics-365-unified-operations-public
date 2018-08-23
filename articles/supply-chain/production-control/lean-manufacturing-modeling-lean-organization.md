@@ -17,7 +17,7 @@ ms.search.form: LeanProductionFlow, PlanActivity
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53141
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Modeling a lean organization
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The article provides information about the key concepts in modeling a lean organization. 
 

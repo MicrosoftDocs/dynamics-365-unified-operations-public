@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build navigation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In this tutorial, you will add navigational elements to a workspace and the navigation pane.
 

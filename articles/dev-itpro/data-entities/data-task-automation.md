@@ -81,16 +81,16 @@ The **\<TestManifest\>** element is the root of the manifest. All other elements
 </TestManifest>
 ```
 
-| **Element**      | **Element Cardinality** | **Attributes** | **Attribute description**                                 |
-|------------------|-------------------------|----------------|-----------------------------------------------------------|
-| \<TestManifest\> | 1..1                    | name           | The *name* helps to identify the purpose of the manifest. |
+| Element          | Element Cardinality | Attributes | Attribute description                                     |
+|------------------|---------------------|------------|-----------------------------------------------------------|
+| \<TestManifest\> | 1..1                | name       | The *name* helps to identify the purpose of the manifest. |
 
 ### Shared setup
 The **Shared setup** section defines general task parameters and behaviors for all tasks in the manifest.
 
-| **Parent element** | **Element**     | **Element Cardinality** | **Attributes** | **Attribute description**        |
-|--------------------|-----------------|-------------------------|----------------|----------------------------------|
-| \<TestManifest\>   | \<SharedSetup\> | 1..1                    | \-             | This element takes no attributes |
+| Parent element   | Element         | Element Cardinality | Attributes | Attribute description            |
+|------------------|-----------------|---------------------|------------|----------------------------------|
+| \<TestManifest\> | \<SharedSetup\> | 1..1                | \-         | This element takes no attributes |
 
 ### Data files
 **\<DataFile\>** elements define the data packages and data files that the tasks in the manifest will use. The data files must be either in the LCS asset library of your LCS project or in the Shared asset library.
@@ -101,14 +101,14 @@ The **Shared setup** section defines general task parameters and behaviors for a
 <DataFile ID='FinancialsPICH' name='Demo data-7.3-200-Financials-PICH' assetType='Data package' lcsProjectId=''/>
 <DataFile ID='FinancialsPIFB' name='Demo data-7.3-200-Financials-PIFB' assetType='Data package' lcsProjectId=''/>
 ```
-| **Parent element** | **Element**  | **Element Cardinality** | **Attributes** | **Attribute description**                                                                                                                       |
-|--------------------|--------------|-------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| \<SharedSetup\>    | \<DataFile\> | 1..n                    | \-             | \-                                                                                                                                              |
-|                    | \<DataFile\> | \-                      | ID             |                                                                                                                                                 |
-|                    | \<DataFile\> | \-                      | name           | Name of the asset that represents the data file                                                                                                |
-|                    | \<DataFile\> | \-                      | assetType      | The asset type in LCS asset library that stores the data file. This is the asset type name as shown in LCS asset library.                 |
-|                    | \<DataFile\> | \-                      | lcsProjectId   | The LCS project that has the data file in its asset library. If the project ID is specified as ‘’ then, it indicates the Shared asset library. |
 
+| Parent element  | Element      | Element Cardinality | Attributes   | Attribute description |
+|-----------------|--------------|---------------------|--------------|-----------------------|
+| \<SharedSetup\> | \<DataFile\> | 1..n                | \-           | \- |
+|                 | \<DataFile\> | \-                  | ID           | |
+|                 | \<DataFile\> | \-                  | name         | Name of the asset that represents the data file |
+|                 | \<DataFile\> | \-                  | assetType    | The asset type in LCS asset library that stores the data file. This is the asset type name as shown in LCS asset library. |
+|                 | \<DataFile\> | \-                  | lcsProjectId | The LCS project that has the data file in its asset library. If the project ID is specified as '' then, it indicates the Shared asset library. |
 
 ### Data project definition
 The **\<JobDefinition\>** element defines the data project definition. There can be more than one job definition in a manifest.
@@ -116,7 +116,7 @@ The **\<JobDefinition\>** element defines the data project definition. There can
 ```
 <JobDefinition ID='ImportJobDefinition_1'>
     <Operation>Import</Operation>
-    <SkipStaging></SkipStaging>
+    <ConfigurationOnly>No</ConfigurationOnly>
     <Truncate></Truncate>
     <Mode>Import async</Mode>
     <BatchFrequencyInMinutes>1</BatchFrequencyInMinutes>
@@ -130,34 +130,24 @@ The **\<JobDefinition\>** element defines the data project definition. There can
     <LegalEntity>DAT</LegalEntity>
 </JobDefinition>
 ```
-| **Parent element** | **Element**                      | **Element cardinality** | **Attribute** | **Description**                                                                                                                                                                                                                                                                                            |
-|--------------------|----------------------------------|-------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \<SharedSetup\>    | \<JobDefinition\>                | 1..n                    | ID            | The job definition ID is used in the tasks to reference the definition to be used for the data project.                                                                                                                                                                                                 |
-| \<JobDefinition\>  | \<Operation\>                    | 1..1                    | \-            | The operation to be performed is specified by the following values.                                                                                                                                                                                                                                        |
-|                    | \<SkipStaging\>                  | 1..1                    | \-            | This is a Boolean field with possible values of Yes or No. This is applicable only when operation is set to *Export*.                                                                                                                                                                                  |
-|                    | \<Truncate\>                     | 1..1                    | \-            | This is a Boolean field with possible values of Yes or No. This is applicable only when operation is set to *Import*.                                                                                                                                                                                   |
-|                    | \<Mode\>                         | 1..1                    | \-            | The mode specifies the method using which the operation must be performed. The possible values are:                                                                                                                                                                                                        |
-|                    | \<ConfigurationOnly\>            | 1..1                    | \-            | This is a Boolean field with possible values of Yes or No. This must be set to Yes if the task is only to configure the data project but not to perform the specified operation.                                                                                                                     |
-|                    | \<BatchFrequencyInMinutes\>      | 1..1                    | \-            | This specifies the frequency in which the batch must be scheduled. This is applicable only when mode is set to *recurring batch*.                                                                                                                                                                          |
-|                    | \<NumberOfTimesToRunBatch\>      | 1..1                    | \-            | This is used to set a limit to how many times the scheduled batch should run. This is applicable only when mode is set to *recurring batch*.                                                                                                                                                               |
-|                    | \<UploadFrequencyInSeconds\>     | 1..1                    | \-            | This is used to control the rate at which a file is uploaded to the recurring batch job for import. This must be used only for automated testing of recurring integrations in non-production environments. This is applicable only when mode is set to *recurring batch* and operation is set to *Import*. |
-|                    | \<TotalNumberOfTimesToUpload\>   | 1..1                    |               | This controls the total number of times the file should be uploaded to the recurring batch. This must be used only for automated testing of recurring integrations in non-production environments. This is applicable only when mode is set to *recurring batch* and operation is set to *Import*.         |
-|                    | \<SupportedDataSoureType\>       | 1..1                    |               | This must be used to specify if a file is being sent to the recurring batch or a package. This is only applicable when mode is set to ‘recurring batch’.                                                                                                                                                   |
-|                    | \<ProcessMessagesInOrder\>       | 1..1                    |               | This is a Boolean field with possible values of Yes or No. This is applicable only when mode is set to *recurring batch* and operation is *Import*.                                                                                                                                                        |
-|                    | \<PreventUploadWhenZeroRecords\> | 1..1                    |               | This is a Boolean field with possible values of Yes or No. This is applicable only when mode is set to *recurring batch* and operation is *Export*.                                                                                                                                                        |
-|                    | \<UseCompanyFromMessage\>        | 1..1                    |               | This is a Boolean field which can be set to Yes or No. This is applicable only when mode is set to *recurring batch* and operation is *Import*.                                                                                                                                                        |
-|                    | \<LegalEntity\>                  | 1..1                    |               | This is used to specify the legal entity in which the import/export job must be executed.                                                                                                                                                                                                                  |
-|                    | \<ConfigurationOnly\>            | 1..1                    |               | This is used to create data projects and recurring schedules to be configured. The operation of import or export will not be executed. However, it is required to specify the operation and mode for the data project to be configured correctly. This is a Boolean field which takes Yes or No.             |
 
--   Import
-
--   Export
-
--   Import async
-
--   Export async
-
--   Recurring batch – this uses the enqueue/dequeue API’s.
+| Parent element    | Element                          | Element cardinality | Attribute | Description |
+|-------------------|----------------------------------|---------------------|-----------|-------------|
+| \<SharedSetup\>   | \<JobDefinition\>                | 1..n                | ID        | The job definition ID is used in the tasks to reference the definition to be used for the data project. |
+| \<JobDefinition\> | \<Operation\>                    | 1..1                | \-        | The operation to be performed is specified by the following values. |
+|                   | \<Truncate\>                     | 1..1                | \-        | This is a Boolean field with possible values of Yes or No. This is applicable only when operation is set to *Import*. |
+|                   | \<Mode\>                         | 1..1                | \-        | The mode specifies the method using which the operation must be performed. The possible values are: |
+|                   | \<ConfigurationOnly\>            | 1..1                | \-        | This is a Boolean field with possible values of Yes or No. This must be set to Yes if the task is only to configure the data project but not to perform the specified operation. |
+|                   | \<BatchFrequencyInMinutes\>      | 1..1                | \-        | This specifies the frequency in which the batch must be scheduled. This is applicable only when mode is set to *recurring batch*. |
+|                   | \<NumberOfTimesToRunBatch\>      | 1..1                | \-        | This is used to set a limit to how many times the scheduled batch should run. This is applicable only when mode is set to *recurring batch*. |
+|                   | \<UploadFrequencyInSeconds\>     | 1..1                | \-        | This is used to control the rate at which a file is uploaded to the recurring batch job for import. This must be used only for automated testing of recurring integrations in non-production environments. This is applicable only when mode is set to *recurring batch* and operation is set to *Import*. |
+|                   | \<TotalNumberOfTimesToUpload\>   | 1..1                |           | This controls the total number of times the file should be uploaded to the recurring batch. This must be used only for automated testing of recurring integrations in non-production environments. This is applicable only when mode is set to *recurring batch* and operation is set to *Import*. |
+|                   | \<SupportedDataSoureType\>       | 1..1                |           | This must be used to specify if a file is being sent to the recurring batch or a package. This is only applicable when mode is set to 'recurring batch'. |
+|                   | \<ProcessMessagesInOrder\>       | 1..1                |           | This is a Boolean field with possible values of Yes or No. This is applicable only when mode is set to *recurring batch* and operation is *Import*. |
+|                   | \<PreventUploadWhenZeroRecords\> | 1..1                |           | This is a Boolean field with possible values of Yes or No. This is applicable only when mode is set to *recurring batch* and operation is *Export*. |
+|                   | \<UseCompanyFromMessage\>        | 1..1                |           | This is a Boolean field which can be set to Yes or No. This is applicable only when mode is set to *recurring batch* and operation is *Import*. |
+|                   | \<LegalEntity\>                  | 1..1                |           | This is used to specify the legal entity in which the import/export job must be executed. |
+|                   | \<ConfigurationOnly\>            | 1..1                |           | This is used to create data projects and recurring schedules to be configured. The operation of import or export will not be executed. However, it is required to specify the operation and mode for the data project to be configured correctly. This is a Boolean field which takes Yes or No. |
 
 ### Entity setup
 The **Entity setup** section defines the characteristics of an entity that a task in the manifest will use. There can be more than one definition, one for each entity that is used by the tasks in the manifest.
@@ -174,38 +164,43 @@ The **Entity setup** section defines the characteristics of an entity that a tas
         <SetBasedProcessing></SetBasedProcessing>
         <FailBatchOnErrorForExecutionUnit>No</FailBatchOnErrorForExecutionUnit>
         <FailBatchOnErrorForLevel>No</FailBatchOnErrorForLevel>
-        <FailBatchOnErrorForSequence>No</FailBatchOnErrorForSequence>
+        <DisableEntity>No</DisableEntity>
+        <SkipStaging>Yes</SkipStaging>
         <ParallelProcessing>
             <Threshold></Threshold>
             <TaskCount></TaskCount>
         </ParallelProcessing>
-    </Entity>
+        <MappingDetail StagingFieldName='RoundingRulePrices' AutoGenerate='Yes' AutoDefault='No' DefaultValue='' IgnoreBlankValues='No' TextQualifier='No' UseEnumLabel='No'/>
+        </Entity>
 </EntitySetup>
 ```
-| **Parent element**     | **Element**                          | **Element cardinality** | **Attribute**     | **Description**                                                                                                                                                                                                                                                                                  |
-|------------------------|--------------------------------------|-------------------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \<SharedSetup\>        | \<EntitySetup\>                      | 1..n                    | ID                | An identification that will be used by tasks to reference an entity definition to be used.                                                                                                                                                                                                       |
-| \<EntitySetup\>        | \<Entity\>                           | 1..1                    | name              | The entity element is identified by the entity’s name. However, to facilitate easy manifest definition, this element also supports \* as a wild card which will mean all entities being used in a task. This comes in very handy when using data packages with hundreds of entities in a task. |
-| \<Entity\>             | \<SourceDataFormatName\>             | 1..1                    | \-                | This is the file format to be used for the entity.                                                                                                                                                                                                                                               |
-|                        | \<ChangeTracking\>                   | 1..1                    | \-                | This is a Boolean field with possible values of Yes or No. It enables or disables change tracking on the entire entity.                                                                                                                                                                             |
-|                        | \<PublishToBYOD\>                    | 1..1                    | \-                | This is a Boolean field with possible values of Yes or No.                                                                                                                                                                                                                                          |
-|                        | \<DefaultRefreshType\>               | 1..1                    | \-                | This sets the default refresh rate on the entity. The possible values are *Incremental push only* or *Full push*.                                                                                                                                                                                |
-|                        | \<ExcelWorkSheetName\>               | 1..1                    | \-                | This is used to specify the worksheet to be used for the entity.                                                                                                                                                                                                                                 |
-|                        | \<SelectFields\>                     | 1..1                    | \-                | This can be used to specify the fields to be included in the template for an export operation.                                                                                                                                                                                                   |
-|                        | \<SetBasedProcessing\>               | 1..1                    | \-                | This is a Boolean field with possible values of Yes or No. It is used to enable or disable set based processing on an entity.                                                                                                                                                                 |
-|                        | \<FailBatchOnErrorForExecutionUnit\> | 1..1                    | \-                | This is a Boolean field with possible values of Yes or No. It is used to enable or disable failure at execution unit level on an entity.                                                                                                                                                      |
-|                        | \<FailBatchOnErrorForLevel\>         | 1..1                    | \-                | This is a Boolean field with possible values of Yes or No. It is used to enable or disable failure at execution level on an entity.                                                                                                                                                           |
-|                        | \<ParallelProcessing\>               | 1..1                    | \-                | This is used to define the parallel processing set up for an entity. The task will delete these settings if already exits at the beginning of the task and it will delete the created settings at the end of its execution.                                                                      |
-| \<ParallelProcessing\> | \<Threshold\>                        | 1..1                    | \-                | This specifies the threshold for the parallel processing rule.                                                                                                                                                                                                                                   |
-|                        | \<TaskCount\>                        | 1..1                    | \-                | This is used to specify the number of parallel tasks to be used for parallel processing.                                                                                                                                                                                                         |
-| \<Entity\>             | \<MappingDetail\>                    | 0..n                    | \-                | Allows to configure the *auto generate*, *auto default* and other settings on the mapping for an entity.                                                                                                                                                                                         |
-|                        | \<MappingDetail\>                    | \-                      | StagingFieldName  | This attribute is used to identify the entity column for which the settings are to be specified.                                                                                                                                                                                                 |
-|                        | \<MappingDetail\>                    | \-                      | AutoGenerate      | This is a Boolean field with possible values of Yes or No for enabling/disabling auto generate option.                                                                                                                                                                                                    |
-|                        | \<MappingDetail\>                    | \-                      | AutoDefault       | This is a Boolean field with possible values of Yes or No for enabling/disabling auto default option.                                                                                                                                                                                                     |
-|                        | \<MappingDetail\>                    | \-                      | DefaultValue      | This is the default value to be used if auto defaulting is enabled.                                                                                                                                                                                                                              |
-|                        | \<MappingDetail\>                    | \-                      | IgnoreBlankValues | This is a Boolean field with possible values of Yes or No for enabling/disabling this option.                                                                                                                                                                                                             |
-|                        | \<MappingDetail\>                    | \-                      | TextQualifier     | This is a Boolean field with possible values of Yes or No for enabling/disabling this option.                                                                                                                                                                                                             |
-|                        | \<MappingDetail\>                    | \-                      | UseEnumLabel      | ThThis is a Boolean field with possible values of Yes or No for enabling/disabling this option.                                                                                                                                                                                                             |
+
+| Parent element         | Element                              | Element cardinality | Attribute         | Description |
+|------------------------|--------------------------------------|---------------------|-------------------|-------------|
+| \<SharedSetup\>        | \<EntitySetup\>                      | 1..n                | ID                | An identification that will be used by tasks to reference an entity definition to be used. |
+| \<EntitySetup\>        | \<Entity\>                           | 1..1                | name              | The entity element is identified by the entity's name. However, to facilitate easy manifest definition, this element also supports \* as a wild card which will mean all entities being used in a task. This comes in very handy when using data packages with hundreds of entities in a task. |
+| \<Entity\>             | \<SourceDataFormatName\>             | 1..1                | \-                | This is the file format to be used for the entity. |
+|                        | \<ChangeTracking\>                   | 1..1                | \-                | This is a Boolean field with possible values of Yes or No. It enables or disables change tracking on the entire entity. |
+|                        | \<PublishToBYOD\>                    | 1..1                | \-                | This is a Boolean field with possible values of Yes or No. |
+|                        | \<DefaultRefreshType\>               | 1..1                | \-                | This sets the default refresh rate on the entity. The possible values are *Incremental push only* or *Full push*. |
+|                        | \<ExcelWorkSheetName\>               | 1..1                | \-                | This is used to specify the worksheet to be used for the entity. |
+|                        | \<SelectFields\>                     | 1..1                | \-                | This can be used to specify the fields to be included in the template for an export operation. |
+|                        | \<SetBasedProcessing\>               | 1..1                | \-                | This is a Boolean field with possible values of Yes or No. It is used to enable or disable set based processing on an entity. |
+|                        | \<FailBatchOnErrorForExecutionUnit\> | 1..1                | \-                | This is a Boolean field with possible values of Yes or No. It is used to enable or disable failure at execution unit level on an entity. |
+|                        | \<FailBatchOnErrorForLevel\>         | 1..1                | \-                | This is a Boolean field with possible values of Yes or No. It is used to enable or disable failure at execution level on an entity. |
+|                        | \<DisableEntity\>                    | 1..1                | \-                | This is a Boolean field with possible values of Yes or No. It is used to enable or disable an entity in a data project. |
+|                        | \<SkipStaging\>                      | 1..1                | \-                | This is a Boolean field with possible values of Yes or No. It is used to skip staging table for an entity during exports. |
+|                        | \<ParallelProcessing\>               | 1..1                | \-                | This is used to define the parallel processing set up for an entity. The task will delete these settings if already exits at the beginning of the task and it will delete the created settings at the end of its execution. |
+| \<ParallelProcessing\> | \<Threshold\>                        | 1..1                | \-                | This specifies the threshold for the parallel processing rule. |
+|                        | \<TaskCount\>                        | 1..1                | \-                | This is used to specify the number of parallel tasks to be used for parallel processing. |
+| \<Entity\>             | \<MappingDetail\>                    | 0..n                | \-                | Allows to configure the *auto generate*, *auto default* and other settings on the mapping for an entity. |
+|                        | \<MappingDetail\>                    | \-                  | StagingFieldName  | This attribute is used to identify the entity column for which the settings are to be specified. |
+|                        | \<MappingDetail\>                    | \-                  | AutoGenerate      | This is a Boolean field with possible values of Yes or No for enabling/disabling auto generate option. |
+|                        | \<MappingDetail\>                    | \-                  | AutoDefault       | This is a Boolean field with possible values of Yes or No for enabling/disabling auto default option. |
+|                        | \<MappingDetail\>                    | \-                  | DefaultValue      | This is the default value to be used if auto defaulting is enabled. |
+|                        | \<MappingDetail\>                    | \-                  | IgnoreBlankValues | This is a Boolean field with possible values of Yes or No for enabling/disabling this option. |
+|                        | \<MappingDetail\>                    | \-                  | TextQualifier     | This is a Boolean field with possible values of Yes or No for enabling/disabling this option. |
+|                        | \<MappingDetail\>                    | \-                  | UseEnumLabel      | ThThis is a Boolean field with possible values of Yes or No for enabling/disabling this option. |
 
 ### Test groups
 Test groups can be used to organize related tasks in a manifest. There can be more than one test group in a manifest.
@@ -243,19 +238,20 @@ Test groups can be used to organize related tasks in a manifest. There can be mo
     </TestCase>
 </TestGroup>
 ```
-| **Parent element** | **Element**       | **Element Cardinality** | **Attributes** | **Description**                                                                                                                                                                                                                                                                                                                                                                                       |
-|--------------------|-------------------|-------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \<TestManifest\>   | \<TestGroup\>     | 1..n                    | \-             | \-                                                                                                                                                                                                                                                                                                                                                                                                    |
-|                    | \<TestGroup\>     | 1..1                    | Name           | This is the name for the group to identify its functional reason.                                                                                                                                                                                                                                                                                                                                     |
-| \<TestGroup\>      | \<TestCase\>      | 1..n                    | \-             | The task is defined in this element. The task can refer to the shared set up to inherit task parameters and task behavior. The task can also override parameters and behavior at its level thus making the management of the manifest simple.                                                                                                                                                         |
-|                    | \<TestCase\>      | \-                      | Title          | This is the title for the task                                                                                                                                                                                                                                                                                                                                                                        |
-|                    | \<TestCase\>      | \-                      | ID             | This is the ID for the task. This can be alphanumeric with a max character limit of 10.                                                                                                                                                                                                                                                                                                               |
-|                    | \<TestCase\>      | \-                      | RepeatCount    | This is a placeholder for a future functionality. However, this must be specified with a value of *1*.                                                                                                                                                                                                                                                                                                |
-|                    | \<TestCase\>      | \-                      | TraceParser    | This is a placeholder for a future functionality. However, this must be specified with a value *off*.                                                                                                                                                                                                                                                                                                 |
-|                    | \<TestCase\>      | \-                      | Timeout        | This is the maximum duration a task will be monitored by the task automation manager. If the task is still active beyond the timeout specified, the manager will proceed to the next task in the manifest.                                                                                                                                                                                            |
-| \<TestCase\>       | \<DataFile\>      | 1..n                    | \-             | This element is used to define the file or data package to be used by the task. This can reference to an already declared file or a data package in the shared section of the manifest. A task can have more than one data file specified for recurring batch import scenarios only. For other scenarios, even if more than one files are specified, the first file is what will be used by the task. |
-|                    | \<JobDefinition\> | 1..1                    | \-             | This element is used to define the data project to be used by the task. This can reference to an already declared job definition in the shared section of the manifest. The task can override elements of job definition to a new value than what is defined in the shared set up.                                                                                                                    |
-|                    | \<EntitySetup\>   | 1..1                    | \-             | This element is used to define the entity set up for entities used by the task. This can reference to an already declared entity set up in the shared section of the manifest. The task can override elements of entity setup to a new value than what is defined in the shared set up.                                                                                                               |
+
+| Parent element   | Element           | Element Cardinality | Attributes  | Description |
+|------------------|-------------------|---------------------|-------------|-------------|
+| \<TestManifest\> | \<TestGroup\>     | 1..n                | \-          | \- |
+|                  | \<TestGroup\>     | 1..1                | Name        | This is the name for the group to identify its functional reason. |
+| \<TestGroup\>    | \<TestCase\>      | 1..n                | \-          | The task is defined in this element. The task can refer to the shared set up to inherit task parameters and task behavior. The task can also override parameters and behavior at its level thus making the management of the manifest simple. |
+|                  | \<TestCase\>      | \-                  | Title       | This is the title for the task. |
+|                  | \<TestCase\>      | \-                  | ID          | This is the ID for the task. This can be alphanumeric with a max character limit of 10. |
+|                  | \<TestCase\>      | \-                  | RepeatCount | This is a placeholder for a future functionality. However, this must be specified with a value of *1*. |
+|                  | \<TestCase\>      | \-                  | TraceParser | This is a placeholder for a future functionality. However, this must be specified with a value *off*. |
+|                  | \<TestCase\>      | \-                  | Timeout     | This is the maximum duration a task will be monitored by the task automation manager. If the task is still active beyond the timeout specified, the manager will proceed to the next task in the manifest. |
+| \<TestCase\>     | \<DataFile\>      | 1..n                | \-          | This element is used to define the file or data package to be used by the task. This can reference to an already declared file or a data package in the shared section of the manifest. A task can have more than one data file specified for recurring batch import scenarios only. For other scenarios, even if more than one files are specified, the first file is what will be used by the task. |
+|                  | \<JobDefinition\> | 1..1                | \-          | This element is used to define the data project to be used by the task. This can reference to an already declared job definition in the shared section of the manifest. The task can override elements of job definition to a new value than what is defined in the shared set up. |
+|                  | \<EntitySetup\>   | 1..1                | \-          | This element is used to define the entity set up for entities used by the task. This can reference to an already declared entity set up in the shared section of the manifest. The task can override elements of entity setup to a new value than what is defined in the shared set up. |
 
 ## Best practices for manifest design
 You can define a manifest in many ways. Here are a few pointers that you should consider when you design a manifest.
@@ -304,7 +300,6 @@ This first example configures a data project that doesn't have a recurring sched
         <JobDefinition ID='ImportJobDefinition_1'>
             <ConfigurationOnly>Yes</ConfigurationOnly>
             <Operation>Import</Operation>
-            <SkipStaging>No</SkipStaging>
             <Truncate>No</Truncate>
             <Mode>Import async</Mode>
             <BatchFrequencyInMinutes>1</BatchFrequencyInMinutes>
@@ -386,7 +381,6 @@ The following manifest shows the setup of demo data for three legal entities whe
 
         <JobDefinition ID='ImportJobDefinition_1'>
                 <Operation>Import</Operation>
-                <SkipStaging></SkipStaging>
                 <Truncate></Truncate>
                 <Mode>Import async</Mode>
                 <BatchFrequencyInMinutes>1</BatchFrequencyInMinutes>

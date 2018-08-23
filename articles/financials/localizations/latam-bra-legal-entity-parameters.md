@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Parameters for legal entities in Brazil
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 To collect and submit tax statements that report on performance, a Brazilian legal entity requires specific fiscal information. This topic explains how to set the parameters to specify this information.
 

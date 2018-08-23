@@ -17,7 +17,7 @@ ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2234
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Purchase requisition workflow
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 The workflow process moves purchase requisitions through the review process, from an initial status of Draft to a final status of Approved. When a purchase requisition is submitted for review, the workflow process is started. After a purchase requisition is approved, a purchase order can be generated for the purchase requisition lines and submitted to the vendor for order fulfillment.
 

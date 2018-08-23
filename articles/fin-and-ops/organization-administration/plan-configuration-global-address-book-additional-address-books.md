@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Plan how to configure the global address book and additional address books
+title: Plan for the global address book and other address books
 description: This topic describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books in Microsoft Dynamics 365 for Finance and Operations. Some of the decisions will require that you confirm the decisions that have been made for other areas of the product, such as the organization hierarchy.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Plan how to configure the global address book and additional address books
+# Plan for the global address book and other address books
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books in Microsoft Dynamics 365 for Finance and Operations. Some of the decisions will require that you confirm the decisions that have been made for other areas of the product, such as the organization hierarchy.
 

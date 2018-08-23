@@ -17,7 +17,7 @@ ms.search.form: LeanCosting, LeanCostingTimeBucket
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272063
@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-11-30
 
 # Backflush costing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic introduces the concept of backflush costing that is used for Lean manufacturing. 
 

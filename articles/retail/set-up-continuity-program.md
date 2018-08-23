@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up a continuity program for a call center
+title: Set up continuity programs for call centers
 description: This article describes how to set up a continuity program for a call center.
 author: josaw1
 manager: AnnBe
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Set up a continuity program for a call center
+# Set up continuity programs for call centers
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This article describes how to set up a continuity program for a call center.
 

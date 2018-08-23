@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 12
 ---
 # Track user sign-ins 
  
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Many organizations are required to maintain an audit trail of users who have used the system. This requirement can be in place for compliance reasons, or to enable trackbacks in the event of incorrect use.
 

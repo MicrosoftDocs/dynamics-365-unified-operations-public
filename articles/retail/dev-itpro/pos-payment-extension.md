@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: POS payment extension
+title: Point of sale (POS) payment extension
 description: You can implement the core payment logic in the payment device or payment connector using the Hardware station APIs by using the extension points in POS to support payment extensibility.
 author: mugunthanm
 manager: AnnBe
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# POS payment extension
+# Point of sale (POS) payment extension
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 With the extension points in point of sale (POS) to support payment extensibility, you can implement the core payment logic in the payment device or payment connector using the Hardware station APIs. Some scenarios where you might want to do this are:
 - You need to pass additional information such as extension properties to your connector/device.

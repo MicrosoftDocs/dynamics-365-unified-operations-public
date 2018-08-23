@@ -17,14 +17,14 @@ ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesT
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 51592
 ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # LIFO Date with physical value and marking
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Last in, First out Date (LIFO Date) is an inventory model based on the LIFO principle. Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction. By using LIFO Date, if there is no receipt before the issue, the issue is settled against any receipts that occur after the date of the issue. Several issues on the same date may be settled in the order of last issue, last receipt. 
 

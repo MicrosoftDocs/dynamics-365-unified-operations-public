@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Workspace form pattern
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business activity that is supported.  
 

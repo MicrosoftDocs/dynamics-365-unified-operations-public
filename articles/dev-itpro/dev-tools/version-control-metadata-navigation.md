@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Version control, metadata search, and navigation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This tutorial will walk you through configuring Visual Studio Team Systems (previously known as Visual Studio Online) to enable source control on your models. It’ll also help you learn about other productivity features in the development tools, including the ability to create and organize TODO task, search metadata and source code, navigate between related model elements, and create a project from a model.
 

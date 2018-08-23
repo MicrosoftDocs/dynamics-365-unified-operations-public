@@ -17,7 +17,7 @@ ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended, EcoResStorag
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29611
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Unit of measure and stocking policies
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This article describes how default units, unit sequences, and unit conversions are used in warehouse processes.
 

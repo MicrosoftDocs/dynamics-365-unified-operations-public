@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # VAT statement details for Estonia
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to set up a VAT statement for legal entities in Estonia.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ math run-time functions
+title: X++ math runtime functions
 description: This topic describes the math run-time functions.
 author: RobinARH
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ math run-time functions
+# X++ math runtime functions
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the math run-time functions.
 
