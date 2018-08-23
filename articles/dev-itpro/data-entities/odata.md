@@ -27,7 +27,7 @@ ms.search.scope: Operations
 ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
 ms.search.region: Global
-# ms.search.industry: 
+ms.search.industry: 
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
+This topic provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
 
 ## What is OData?
 OData is a standard protocol for creating and consuming data. The purpose of OData is to provide a protocol that is based on Representational State Transfer (REST) for create, read, update, and delete (CRUD) operations. OData applies web technologies such as HTTP and JavaScript Object Notation (JSON) to provide access to information from various programs. OData provides the following benefits:
