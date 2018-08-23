@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 # Set up parameters for advance holders 
 
 1.  Click **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
-2.  Click **Advance holders**, and then in the **Advance holders** area, in the **Posting profile** field, select the default profile to complete transactions for advance holders.
+2.  In the **Advance holders** area, in the **Posting profile** field, select the default profile to complete transactions for advance holders.
     
     > [!NOTE]
     > For more information, see "Set up posting profiles for accounting vouchers".
@@ -63,7 +63,14 @@ ms.dyn365.ops.version: 8.1
 
 12. In the **Account** field, select the bank account code to close the balances for an advance holder through a bank.
 
-13. Click **Save** button or close the page.
+13. In the **Number sequences** area, define number sequences codes for the following references:
+
+  - Advance report
+  - Advance report voucher
+  - Settlement voucher
+  - Exchange adjustment voucher (Advance holders)   
+
+14. Click **Save** button or close the page.
 
 
 ## Set up an advance holder group 
