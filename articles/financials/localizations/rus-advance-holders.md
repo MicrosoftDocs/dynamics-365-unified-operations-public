@@ -212,60 +212,19 @@ A worker can be an employee or a contractor, and can hold several positions in a
 Transactions for these workers can be posted by using advance holder accounts. The worker ID that is specified for each advance holder can be used to track all advance holder transactions. This number is retrieved as an account number for advance holder transactions in the **General journals** and **Advance holder transactions** pages.
 
 
-## Set up a worker table number for an advance holder 
-
-Use this procedure to set up a worker table number for a worker. You can view the details of employees in the **Employment history** form, and you can identify the employees as advance holders.
-
-1.  Click **Human resources** \> **Common** \> **Workers** \> **Workers**.
-
-2.  On the **Action Pane**, click **Hire new worker**.
-
-3.  Enter the first, middle, and last names of the person who you are hiring to fill the position. 
-
-4.  In the **Worker ID** field, enter the unique internal number that is used to identify advance holders.
-
-5.  In the **Worker type** field, select the type of worker.
-
-6.  In the **Employment start date** and **Employment end date** fields, enter the start date and end date of the worker’s employment.
-
-7.  Click **Employment history** to view the details of employees.
-
-8.  Close the page.
-
-9.  Click **Accounts payable** \> **Common** \> **Advance holders** \> **Advance holders**.
-
-10. Select a worker record, and then select the **Advance holder** check box to specify that the worker is an advance holder.
-
-
 ## Set up the advance holder 
 
 
-1.  Click **Accounts payable** \> **Common** \> **Advance holders** \> **Advance holders**.
+1.  Click **Accounts payable** \> **Advance holders** \> **Advance holders**.
     
     > [!NOTE]
-    > You cannot add or delete employees on the **Advance holders** page.</P>
+    > You cannot add or delete employees on the **Advance holders** page. Employees must be preliminary hired in **Human resources** module. In the **Employee posting profiles** page, you can set up the employee posting profile that is used to post advance holder balances.</P>
 
-2.  Select the **Advance holder** check box to activate the employee as an advance holder.
+2. Select an employee, and then select the **Advance holder** check box to specify that the employee is an advance holder.
 
-3.  In the **Group** field, select the advance holder group to identify the advance holder in the group of advance holders.
+3. In the **Group** field, select the advance holder group to identify the group that the employee belongs to.
     
-
-    > [!NOTE]
-    > <P>If the <STRONG>Advance holder sorting</STRONG> check box is selected in the <STRONG>Accounts payable parameters</STRONG> form, the advance holders are displayed at the beginning of the list in the <STRONG>Advance holders</STRONG> form.</P>
-
-
-
-## Set up advance holders from the directory of workers
-
-1.  Click **Accounts payable** \> **Common** \> **Advance holders** \> **Advance holders**.
-    
-    > [!NOTE]
-    > <P>You cannot add or delete employees in the **Advance holders** page. You can create employees in the **Worker** page. In the **Employee posting profiles** page, you can set up the employee posting profile that is used to post advance holder balances.</P>
-
-
-2.  Select the **Advance holder** option to select a worker as an advance holder.
-3.  In the **Group** field, select the advance holder group that the worker belongs to. 
-    
+  
     > [!NOTE]
     > If the **Advance holder sorting** option is set to **Yes** on the **Accounts payable parameters** page, the advance holders are displayed first in the list on the **Advance holders** page. You can also select the default employee posting profile in the **Posting profile** field.</P>
     
