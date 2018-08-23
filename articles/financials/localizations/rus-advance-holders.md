@@ -59,9 +59,9 @@ ms.dyn365.ops.version: 8.1
 
 10.  In the **Name** field under the **Balance closing via bank** field group, select the journal code for transactions to close the balances through a bank.
 
-11. In the **Account** type field, select **Bank** to close the balances for an advance holder through a bank.
+11. In the **Account type** field, select **Bank** to close the balances for an advance holder through a bank.
 
-12. In the **Account** field, select the bank account code to close the balances for an advance holder through a bank.
+12. In the **Main account** field, select the bank account code to close the balances for an advance holder through a bank.
 
 13. In the **Number sequences** area, define number sequences codes for the following references:
 
