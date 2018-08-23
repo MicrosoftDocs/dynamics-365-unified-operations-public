@@ -220,11 +220,16 @@ Transactions for these workers can be posted by using advance holder accounts. T
     > [!NOTE]
     > You cannot add or delete employees on the **Advance holders** page. Employees must be preliminary hired in **Human resources** module. In the **Employee posting profiles** page, you can set up the employee posting profile that is used to post advance holder balances.</P>
 
-2. Select an employee, and then select the **Advance holder** check box to specify that the employee is an advance holder.
+2. Select an employee, and then click **Edit** button.
 
-3. In the **Group** field, select the advance holder group to identify the group that the employee belongs to.
+3. Select the **Advance holder** check box to specify that the employee is an advance holder.
+
+4. In the **Group** field, select the advance holder group that the employee belongs to.
+
+5. In **Identity document** fields group provide an identification document details.
     
+6. Click **Save** button or close the form.
   
     > [!NOTE]
-    > If the **Advance holder sorting** option is set to **Yes** on the **Accounts payable parameters** page, the advance holders are displayed first in the list on the **Advance holders** page. You can also select the default employee posting profile in the **Posting profile** field.</P>
+    > If the **Advance holder sorting** option is set to **Yes** on the **Accounts payable parameters** page, the advance holders are displayed first in the list of employees on the **Advance holders** page.</P>
     
