@@ -63,7 +63,7 @@ ms.dyn365.ops.version: 8.1
 
 12. In the **Account** field, select the bank account code to close the balances for an advance holder through a bank.
 
-13. Press **Save** button or close the page.
+13. Click **Save** button or close the page.
 
 
 ## Set up an advance holder group 
@@ -72,7 +72,7 @@ You must create an advance holder group in order to group advance holders. For e
 
 1.  Click **Accounts payable** \> **Setup** \> **Advance holders** \> **Advance holder groups**.
 
-2.  Press CTRL+N.
+2.  Click **New** button to create a new group or press **Edit** button to adjust an existing group.
 
 3.  In the **Group** field, enter the code for the new group.
 
@@ -80,7 +80,7 @@ You must create an advance holder group in order to group advance holders. For e
 
 5.  In the **Offset account** field, select the general ledger offset account to be used for the advance holder group.
 
-6.  Press CTRL+S or close the form.
+6.  Click **Save** button or close the form.
 
 
 ## Set up posting profiles for accounting vouchers 
@@ -95,15 +95,29 @@ You can set up the following posting profiles for an account of operations:
 
 1.  Click **Accounts payable** \> **Setup** \> **Advance holders** \> **Employee posting profiles**.
 
-2.  Click the **Overview** tab, and press CTRL+N.
+2.  Press **New** button to create a new posting frofile or press **Edit** button to adjust an existing posting profile.
 
 3.  In the **Posting profile** field, enter the profile ID of the profile being processed.
 
 4.  In the **Description** field, enter the description of the posting profile.
 
-5.  Click the **Ledger accounts** tab.
+5.  Click the **Table restrictions** FastTab.
 
-6.  In the **Valid for** field, select the level of grouping for setting up the posting profile from the following options:
+6.  In the **Allow empty dimension value** field, select the condition under which settlements that are related to accruals and closing payment operations can be processed if dimension values are not specified. The following options are available:
+    
+      - **No** – Transactions are not settled, whether the dimension values are specified or not.
+      - **Auto** - Automatic transactions are settled, whether the dimension values are specified or not.
+      - **Manual** – Manual transactions are settled, whether the dimension values are specified or not.
+      - **Always** – All transactions are settled, whether the dimension values are specified or not.
+    
+   > [!NOTE]
+   > This parameter lets you ignore the setting of dimensions when individual transactions are created.
+    
+7.  Click the **Setup** FastTab.
+
+8 . Click **Add** button to create a new record for a posting profile details.
+
+9.  In the **Valid for** field, select the level of grouping for setting up the posting profile from the following options:
     
       - **Table** – This option is set for only one advance holder.
     
@@ -111,45 +125,20 @@ You can set up the following posting profiles for an account of operations:
     
       - **All** – This option is set for all advance holders.
 
-7.  In the **Reference** field, select the corresponding reference.
+10.  In the **Reference** field, select the corresponding reference.
     
-
     > [!NOTE]
     > You can select this field only if you select **Table** or **Group** in the **Valid for** field.
 
-8.  In the **Summary account** field, select the account to reflect transactions for the advance holders.
+11.  In the **Summary account** field, select the account to reflect transactions for the advance holders.
 
-9.  Press CTRL+S or close the form.
-
-
-## Set up employee posting profiles for dimensions control for settlements 
-
-
-Use this procedure to set up employee posting profiles for dimension control for settlements by using the **Employee posting profiles** form. Set up advance holder posting profiles for accruals and closing payment operations. These posting profiles can be adjusted for advance holder operation of payments and debts by using a dimension set for control for settlements.
-
-1.  Click **Accounts payable** \> **Setup** \> **Advance holders** \> **Employee posting profiles**.
-
-2.  Create a new employee posting profile. For more information, see "Set up posting profiles for accounting vouchers".
-
-3.  Click the **Table restrictions** FastTab.
-
-4.  In the **Allow empty dimension value** field, select the condition under which settlements that are related to accruals and closing payment operations can be processed if dimension values are not specified. The following options are available:
-    
-      - **No** – Transactions are not settled, whether the dimension values are specified or not.
-      - **Auto** - Automatic transactions are settled, whether the dimension values are specified or not.
-      - **Manual** – Manual transactions are settled, whether the dimension values are specified or not.
-      - **Always** – All transactions are settled, whether the dimension values are specified or not.
-    
-
-    > [!NOTE]
-    > This parameter lets you ignore the setting of dimensions when individual transactions are created.
-
-
-5.  Click the **Setup** FastTab.
-6.  In the **Set** field, select the dimension focus for settlement control.
+12.  In the **Set** field, select the dimension focus for settlement control.
     
     > [!NOTE]
     > The specified dimension set indicates that dimension control is activated.>
+
+13.  Click **Save** button or close the form.
+
 
 ## Set up the terms of payment 
 
