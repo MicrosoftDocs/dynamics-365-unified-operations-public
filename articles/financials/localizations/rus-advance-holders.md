@@ -11,7 +11,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-# ms.search.form:  
+ms.search.form:  HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -153,16 +153,4 @@ Transactions for these workers can be posted by using advance holder accounts. T
 
 ## Set up the advance holder
 
-1. Select **Accounts payable** \> **Advance holders** \> **Advance holders**.
-
-    > [!NOTE]
-    > You can't add or delete employees on the **Advance holders** page. Employees must first be hired in the **Human resources** module. On the **Employee posting profiles** page, you can set up the employee posting profile that is used to post advance holder balances.
-
-2. Select an employee, and then select **Edit**.
-3. On the **General** FastTab, set the **Advance holder** option to **Yes** to indicate that the employee is an advance holder.
-4. In the **Group** field, select the advance holder group that the employee belongs to.
-5. Under **Identity document**, provide the details of an identification document.
-6. Select **Save**, or close the page.
-
-> [!NOTE]
-> If the **Advance holder sorting** option is set to **Yes** on the **Accounts payable parameters** page, advance holders appear at the top of the grid on the **Advance holders** page.
+[Create an advance holder](emea-advance-holders.md#set-up-an-advance-holder)
