@@ -86,7 +86,7 @@ The following Microsoft Office applications are supported in cloud and on-premis
 
 > [!NOTE]
 > If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server. An offline database for Retail Modern POS requires SQL Server 2012 with Service Pack 3 or later, SQL Server 2014 with Service Pack 2 or later, or SQL Server 2016.  The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help to ensure both compatibility and security.
-> Retail Modern POS (and other client side components) requires the Microsoft .NET Framework version 4.6.1 at minimum to be installed beginning October 1st, 2018. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
+> Starting October 1, 2018, Retail Modern POS and other client-side components require that the Microsoft .NET Framework version 4.6.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
 
 ### Supported Windows operating systems
 
@@ -115,7 +115,7 @@ The following Microsoft Office applications are supported in cloud and on-premis
 ## Retail hardware station requirements
 
 > [!NOTE]
-> Retail hardware station (and other client side components) requires the Microsoft .NET Framework version 4.6.1 at minimum to be installed beginning October 1st, 2018. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
+> Starting October 1, 2018, Retail hardware station and other client-side components require that the .NET Framework version 4.6.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
 
 ### Supported operating systems
 
@@ -142,7 +142,7 @@ The computer must meet all system requirements for installing and using the foll
 ## Retail Store Scale Unit requirements
 
 > [!NOTE]
-> Retail Store Scale Unit (and other client side components) requires the Microsoft .NET Framework version 4.6.1 at minimum to be installed beginning October 1st, 2018. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
+> Starting October 1, 2018, Retail Store Scale Unit and other client-side components require that the .NET Framework version 4.6.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
 
 Take note that the minimum system requirements listed below are the bare minimum necessary to get a Retail Store Scale Unit to function in a test scenario.  The following is not representative of a realistic production environment.  It is critical to perform proper performance testing and validate that the hardware used will meet the needs of the users.
 
