@@ -112,7 +112,7 @@ You can set up the derived dimensions segments and values using entities
 1)  The Derived dimensions entity will set up the driving dimension and the segments that will be used for those dimensions
 2)  The DerivedDimensionValue entity allows you to import the values that will be derived for each driving dimension.
 
-When you use an entity to import data and that entity imports dimensions, it will also apply the derived dimension rules during the import.
+When you use an entity to import data and that entity imports dimensions, it will also apply the derived dimension rules during the import unless the entity specifically overrides those dimensions.
 
 For more information, see the following topics:
 - [Define financial dimensions](tasks/define-financial-dimensions.md)
