@@ -46,19 +46,17 @@ The Sistema Publico de Escrituração Digital (SPED) fiscal text files contain i
 
 3.  Select a profile presentation. For the current release, only the **A** profile presentation is supported.
 
-4.  Select **1.06** or **1.07** as the version of the SPED fiscal text file format to generate.
+4.  Select the current available version of the SPED fiscal text file format to generate.
     
-
-    > [!NOTE]
-    > To generate the SPED fiscal text file for the year 2013, select <STRONG>1.06</STRONG>. To generate the SPED fiscal text file for the year 2014, select <STRONG>1.07</STRONG>.
-
-
-
 5.  Select the type of activity to include in the SPED fiscal text file. The following options are available:
     
       - **Industrial or equivalent** – Select this option to include information for activities related to industries, for example manufacturing of goods.
     
       - **Others** – Select this option for all other types of activities.
+      
+6. Enable the generation of Block K . When disabled, only records K001 and K999 are generated
+
+7. Enable Export production orders to generate the records K230 and K235 from manufacturing module. 
 
 # Generate the SPED fiscal export file for a month 
 
@@ -82,6 +80,8 @@ The Sistema Publico de Escrituração Digital (SPED) fiscal text file provides i
 
 5.  Select the version. The default entry is specified in the **SPED fiscal parameters** form.
 
-6.  Optional: Click the **Batch** tab and specify options for batch processing. You might use batch processing if the file should be generated later or on a server instead of on your computer.
+6.  Enable Block K. The default entry is specified in the **SPED fiscal parameters** form.
 
-7.  Click **OK**.
+7.  Optional: Click the **Batch** tab and specify options for batch processing. You might use batch processing if the file should be generated later or on a server instead of on your computer.
+
+8.  Click **OK**.
