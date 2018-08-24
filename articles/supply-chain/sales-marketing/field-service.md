@@ -5,7 +5,7 @@ title: Integration with Microsoft Dynamics 365 for Field Service
 description: This topic provides an overview of the Integration with Microsoft Dynamics 365 for Field Service. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/25/2018
+ms.date: 08/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,7 +47,7 @@ The first phase of the integration between Field Service and Finance and Operati
 - [Work orders in Field Service to sales orders in Finance and Operations](field-service-work-order.md)
 - [Invoices in Field Service to free text invoices in Finance and Operations](field-service-invoice.md)
 
-To see an example of how you can synchronize a work order between Field Service and Finance and Operations, watch the short YouTube video [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU).
+To see an example of how you can synchronize a work order between Field Service and Finance and Operations, watch the short YouTube video [How to synchronize a work order with Microsoft Dynamics 365 Integration](https://www.youtube.com/watch?v=46ylO7raZAo).
 
 ## System requirements for Finance and Operations
 Field Service integration supports the following versions:
