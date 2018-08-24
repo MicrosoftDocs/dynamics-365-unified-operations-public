@@ -66,9 +66,25 @@ To set up requirements for SPED EFD – Contributions text files, follow these s
 
 5.  In the **Version** field, select the version of the SPED EFD - Contributions layout.
 
-6.  Select the type of legal entity.
+6.  Select the type of **legal entity**.
 
-7.  In the **Assessment regimen** field, select the assessment schema that is used for SPED EFD - Contributions from the following options:
+7.  In the **Company type** field, select the type of company from the following options:
+
+    -**PJ in general**
+    
+    -**PJ member of financial systemm**
+    
+    -**Insurance or capitalization societies or open-ended complementary pensions funds**
+    
+8. In the **Legal nature** field, enter the code of legal nature according to SPED EFD table.
+ 
+9. Enable **CPRB** tax assessment. This option is used in SPED REINF statement.
+
+10. Select the **Tax classification code**. This option is used in SPED REINF statement.
+
+11. Enable **International agreement for exemption of fines** 
+
+12.  In the **Assessment regimen** field, select the assessment schema that is used for SPED EFD - Contributions from the following options:
     
       - **Non cumulative** – Calculate assessments based on billing or debits and purchases and deductions or credits.
     
@@ -76,21 +92,21 @@ To set up requirements for SPED EFD – Contributions text files, follow these s
     
       - **Both** – Calculate assessments based on both the **Non cumulative** and **Cumulative** regimens.
 
-8.  In the **Booking and assessment criteria** field, select the criteria to use to book the tax credit. For Microsoft Dynamics AX 2012 R3, only the **Detailed** option is supported.
+13.  In the **Booking and assessment criteria** field, select the criteria to use to book the tax credit. For Microsoft Dynamics AX 2012 R3, only the **Detailed** option is supported.
 
-9.  Select the type of assessment contribution. For Microsoft Dynamics AX 2012 R3, only the **Basic tax value** contribution is supported.
+14.  Select the type of assessment contribution. For Microsoft Dynamics AX 2012 R3, only the **Basic tax value** contribution is supported.
 
-10. In the **Credit allocation method** field, select the method of credit allocation: **Direct** or **Proportional distribution**.
+15. In the **Credit allocation method** field, select the method of credit allocation: **Direct** or **Proportional distribution**.
     
     This field is available if **Non cumulative** or **Both** are selected in the **Assessment regimen** field.
 
-11. In the **NFe and ECF options** field, select the NFe transaction reporting option from the following options:
+16. In the **NFe and ECF options** field, select the NFe transaction reporting option from the following options:
     
       - **Consolidated** – Consolidate all NFe transactions into one record on the C18X fiscal report.
     
       - **Detailed** – List all individual transactions on the fiscal report.
 
-12. On the **Fiscal establishment** FastTab, enter the required SPED ECD information. 
+17. On the **Fiscal establishment** FastTab, enter the required SPED ECD information. 
 ## Record 0111
 
 The record 0111 in SPED EFD Contributions is generated automatically when the Credit allocation method is Proportional distribution.
