@@ -76,10 +76,6 @@ To set up requirements for SPED ECD fiscal text files, follow these steps:
 
 8.  Select the version of the SPED ECD text file format to generate.
     
-    1.  For Microsoft Dynamics AX 2012 R3, Version 2.00 is supported until fiscal year 2013.
-    
-    2.  For Microsoft Dynamics AX 2012 R3, Version 3.00 is supported from fiscal year 2014.
-
 9.  In the **Auditor registration number** field, enter the number of the company’s auditor.
 
 10. Enter the auditor’s name.
@@ -87,8 +83,6 @@ To set up requirements for SPED ECD fiscal text files, follow these steps:
 11. Select the **Large company** check box if the company is a large company.
     
 
-    > [!NOTE]
-    > The steps 9, 10 and 11 are not available when Version 3.0 is selected. This information has been changed and included in the configuration of fiscal organization. 
 
 ## Generate and validate the SPED ECD statement 
 
