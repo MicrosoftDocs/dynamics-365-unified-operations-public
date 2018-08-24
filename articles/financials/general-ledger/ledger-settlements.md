@@ -62,9 +62,9 @@ There are additional capabilities on the Ledger settlement page that make it eas
 2)  The Unmark selected button will uncheck the Marked box for all lines that are selected
 3)  The Marked filter will filter your transactions by the boxes that are marked or unmarked
 4)  The Status filter will filter your transactions by Settled or Not settled
-5)  The Sort by amount button allows you to sort the amounts by absolute value so that you can group debits and credits with the same amount together
+5)  The Sort by absolute amount button allows you to sort the amounts by absolute value so that you can group debits and credits with the same amount together
 6)  The Posting layer filter allows you to select the posting layer for the transactions that you want to display
 7)  The Financial dimension set drop down allows you to add the financial dimensions as a column so you can filter on each dimension
 
-You will also see a second grid at the bottom of the form that is identical to the first grid on the page. This second grid allows you to search for different combinations of transactions without changing the filters or settings that you are using in the first grid. You can select lines, mark transactions, and perform the same tasks in both grids. 
+You will also see a second grid at the bottom of the form that is similar to the first grid on the page. This second grid allows you to search for different combinations of transactions without changing the filters or settings that you are using in the first grid. You can select and mark transactions in both grids. You can also use the elipsis to reduce the size of the second grid so that you have more room to view the top grid.
 
