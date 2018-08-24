@@ -42,10 +42,10 @@ The **View settlements** tab on the action pane provides quick access to settlem
 
     The **View settlements** dialog box opens and shows the selected transaction and all documents that are settled against it. This dialog box resembles the settlement history view, but it includes all related documents.
 
-5. You can perform various tasks from this dialog box. Select one or more vouchers, and then select one of the links:
+5. You can perform various tasks from this dialog box. Select one or more vouchers, and then select one of the following menus:
 
-    - **View related** – Click this link to display all the payment journal transactions that were created in the payment journal that is related to the selected document. In addition, all the settlements that are related to those payments appear. When you're viewing related payments, the label of this link changes to **View settlements**. Select **View settlements** to show only the transactions that were shown when you first opened the **View settlements** dialog box.
-    - **View accounting** – All vouchers that are related to the selected documents appear. Select **Close** to close the dialog box.
-    - **Export** – Export the selected vouchers to Microsoft Excel.
-    - **Settle transactions** – This link appears if the original document that was selected wasn't fully settled. When you select it, the **Settle transactions** dialog box appears, where you can select transactions for settlement.
-    - **Undo settlements** – This link appears if the original document that was selected was fully settled. When you select it, the **Undo settlements** dialog box appears, where you can undo the settlements that were done for that document.
+   - **View accounting** – All vouchers that are related to the selected documents appear. Select **Close** to close the dialog box.
+   - **Export** – Export the selected vouchers to Microsoft Excel.
+   - **View related payments** – All the payment journal transactions that were created in the payment journal that is related to the selected document appear. In addition, all the settlements that are related to those payments appear. The label of this menu also changes to **View settlements**. Select **View settlements** to show only the transactions that were shown when you first opened the  **View settlements** dialog box.
+    - **Settle transactions** – This menu appears if the original document that was selected wasn't fully settled. When you select it, the **Settle transactions** dialog box appears, where you can select transactions for settlement.
+    - **Undo settlements** – This menu appears if the original document that was selected was fully settled. When you select it, the **Undo settlements** dialog box appears, where you can undo the settlements that were done for that document.
