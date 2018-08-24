@@ -34,14 +34,14 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-Starting with 8.1, you will be able use a shared number sequence for assigning customer IDs. In addition, you will be able to copy
+You can use a shared number sequence for assigning customer IDs. In addition, you will be able to copy
 a customer from one legal entity to another legal entity and use the same customer ID for both legal entities.  
 
 ## Setup
 
 The feature is activated when you use a shared number sequence for assigning customer IDs. You must use the same number sequence in each legal where you want to copy the customer.  Change the customer number sequence to the new number sequence on the parameters page for each legal entity using Accounts receivable > Parameters > Number sequences.
 
-You can also set up customer number sequences for each customer group and these number sequences must also be shared (CHECK THIS). The number sequences for a customer group will be used first. If there is no number sequence specified for a customer group, then the number sequence found in the parameters form will be used 
+You can also set up customer number sequences for each customer group and these number sequences must also be shared. The number sequences for a customer group will be used first. If there is no number sequence specified for a customer group, then the number sequence found in the parameters form will be used 
 
 You can still use manual customer IDs and copy customers between legal entities. However, if you try to copy a customer to a legal entity where the customer ID already exists, the copy process will not be started.
 
@@ -73,5 +73,3 @@ You can also copy customers using the tax exempt number search found under the C
 2) If you want to copy that customer into the current legal entity, change the Copy customer field to Yes. 
 3) Click on Select and the new customer is created
 
-## Frequently asked questions
-can you use the customer group sequences without being global?
