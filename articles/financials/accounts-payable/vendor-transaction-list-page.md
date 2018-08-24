@@ -46,6 +46,7 @@ The **View settlements** tab on the action pane provides quick access to settlem
 5. You can perform various tasks from this dialog box. Select one or more vouchers, and then select one of the links:
 
     - **View related** – Click this link to display all the payment journal transactions that were created in the payment journal that is related to the selected document. In addition, all the settlements that are related to those payments appear. When you're viewing related payments, the label of this link changes to **View settlements**. Select **View settlements** to show only the transactions that were shown when you first opened the **View settlements** dialog box.
+    - **View history** – The settlement history for the vouchers appears. Select **Close** to close the dialog box.
     - **View accounting** – All vouchers that are related to the selected documents appear. Select **Close** to close the dialog box.
     - **Export** – Export the selected vouchers to Microsoft Excel.
     - **Settle transactions** – This link appears if the original document that was selected wasn't fully settled. When you select it, the **Settle transactions** dialog box appears, where you can select transactions for settlement.
