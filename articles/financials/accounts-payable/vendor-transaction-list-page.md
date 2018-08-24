@@ -54,9 +54,9 @@ The **View settlements** tab on the action pane provides quick access to settlem
 
 ## Global transactions
 
-The Global transactions menu has been added to the Vendor form to allow you to view all transactions for a vendor across all legal entities. The customer transaction list will only show transactions for the legal entities that the user has access to based on their security settings.  
+The Global transactions menu has been added to the Vendor form to allow you to view all transactions for a vendor across all legal entities. The vendor transaction list will only show transactions for the legal entities that the user has access to based on their security settings.  
 
-The list page will show all transactions for vendors that have the same party ID as the vendor that you started with. For example, if vendor US-001 in one legal entity has the same party ID as customer DE-001 in another legal entity, then all transactions for both customer IDs will be shown. 
+The list page will show all transactions for vendors that have the same party ID as the vendor that you started with. For example, if vendor US-001 in one legal entity has the same party ID as vendor DE-001 in another legal entity, then all transactions for both vendor IDs will be shown. 
 
 The menus for the Vendor transactions list page will also change based on the legal entity for the transaction. For example, if a feature is only available for Swiss legal entities, then those menu choices will only appear when a Swiss transaction is selected.
 
