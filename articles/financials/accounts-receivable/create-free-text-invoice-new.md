@@ -5,7 +5,7 @@ title: Create a free text invoice
 description: This article demonstrates how to create a free text invoice. 
 author: mikefalkner
 manager: AnnBe 
-ms.date: 05/29/2018
+ms.date: 08/24/2018
 ms.topic: article 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -23,8 +23,9 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mfalkner
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.search.validFrom: 2018-08-30 
+ms.dyn365.ops.version: 8.0.4
+
 ---
 
 # Create a free text invoice
@@ -76,4 +77,3 @@ To copy lines on the free text invoice, select one or more lines and then click 
 
 ## Create a free text invoice from a template
 You can create a free text invoice from a template. When you select New from template from the Invoice tab, you can select a template name and the customer account for the new free text invoice. You can also choose to default values such as the terms of payment and method of payment from the customer or use the values that were saved with the template. A new free text invoice will be created and you can edit the values in that invoice. 
-
