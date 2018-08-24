@@ -47,7 +47,7 @@ This list is intended to help you consider these removals and deprecations for y
 > [!Note]
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
-## Dynamics 365 for Finance and Operations, Enterprise edition 8.1 with platform update 20
+## Dynamics 365 for Finance and Operations 8.1 with platform update 20
 
 ### Feature name
 Please enter a sentence or two describing the feature that is being removed or deprecated. 
