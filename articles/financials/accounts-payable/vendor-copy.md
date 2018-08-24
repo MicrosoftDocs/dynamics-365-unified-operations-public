@@ -34,20 +34,20 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-Starting with 8.1, you will be able use a shared number sequence for assigning vendor IDs. In addition, you will be able to copy
+You can use a shared number sequence for assigning vendor IDs. In addition, you will be able to copy
 a vendor from one legal entity to another legal entity and use the same vendor ID for both legal entities.  
 
 ## Setup
 
-The feature is activated when you use a shared number sequence for assigning vendor IDs. You must use the same number sequence in each legal where you want to copy the vendor.  Change the vendor number sequence to the new number sequence on the parameters page for each legal entity using Accounts receivable > Parameters > Number sequences.
+The feature is activated when you use a shared number sequence for assigning vendor IDs. You must use the same number sequence in each legal where you want to copy the vendor.  Change the vendor number sequence to the new number sequence on the parameters page for each legal entity using Accounts payable > Parameters > Number sequences.
 
-You can also set up vendor number sequences for each vendor group and these number sequences must also be shared (CHECK THIS). The number sequences for a vendor group will be used first. If there is no number sequence specified for a vendor group, then the number sequence found in the parameters form will be used 
+You can also set up vendor number sequences for each vendor group and these number sequences must also be shared. The number sequences for a vendor group will be used first. If there is no number sequence specified for a vendor group, then the number sequence found in the parameters form will be used.
 
 You can still use manual vendor IDs and copy vendors between legal entities. However, if you try to copy a vendor to a legal entity where the vendor ID already exists, the copy process will not be started.
 
 ## Copy a vendor
 
-To copy a vendor, click on New to display the new vendor page. Notice that, unlike previous versions of Dynamics 365 for Finance and Operations, the new vendor ID will not be assigned immediately. The vendor group has not yet been selected so it is not possible to identify the correct number sequence or use yet. In addition, you may be creating a new vendor or you may be copying a vendor. Until we know what action will be taken, the vendor ID will not be assigned until you click on the Save button at the bottom of the form. 
+To copy a vendor, click on New to display the new vendor page. Notice that, unlike previous versions of Dynamics 365 for Finance and Operations, the new vendor ID will not be assigned immediately. The vendor group has not yet been selected so it is not possible to identify the correct number sequence to use yet. In addition, you may be creating a new vendor or you may be copying a vendor. Until we know what action will be taken, the vendor ID will not be assigned until you click on the Save button at the bottom of the form. 
 
 If you are creating a new vendor, you can continue filling in all of the fields as you normally would. When you are done, click on Save and you will see that the vendor ID was assigned automatically or, for manual number sequences, your vendor ID was used.
 
@@ -72,6 +72,3 @@ You can also copy vendors using the tax exempt number search found under the Ven
 1) A Copy vendor field is displayed and defaulted to No. 
 2) If you want to copy that vendor into the current legal entity, change the Copy vendor field to Yes. 
 3) Click on Select and the new vendor is created
-
-## Frequently asked questions
-Can you use the vendor group sequences without being global?
