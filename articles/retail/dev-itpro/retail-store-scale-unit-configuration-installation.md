@@ -6,7 +6,7 @@ description: This topic explains how you can use self-service to configure Retai
 
 author: jashanno
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -188,7 +188,7 @@ The last steps require validation and verification that the Azure application ID
 3. In Retail, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
 4. Select **Identity providers**.
 5. On the **Identity providers** FastTab, select **+Add**.
-6. In the new **Issuer** row, enter the Retail Server URL of the newly installed Retail Store Scale Unit. At the end of the URL, add **/auth**. The URL will resemble `https://MyComputerName/RetailServer/auth`.
+6. In the new **Issuer** row, enter the Retail Server URL of the newly installed Retail Store Scale Unit. At the end of the URL, add **/auth**. The URL will resemble `https://<My Case-Sensitive Computer Name>:<Port Number>/RetailServer/auth`.
 
     > [!NOTE]
     > The URL described above is case sensitive.
