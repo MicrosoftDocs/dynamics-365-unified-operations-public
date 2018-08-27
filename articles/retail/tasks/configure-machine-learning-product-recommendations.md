@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [task guide banner](../includes/task-guide-banner.md)]
 
 > [!NOTE]
-> We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities. For more information see [Removed or deprecated features](../dev-itpro/migration-upgrade/deprecated-features.md). Navigate to the bottom of the page if you are facing issues with already-enabled product recommendations for your environment. 
+> We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities. For more information see [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 This procedure refreshes the data in the Entity store that is used by the machine learning system that powers product recommendations, and then enables product recommendations on POS clients. This procedure uses the USRT company in demo data.
 
