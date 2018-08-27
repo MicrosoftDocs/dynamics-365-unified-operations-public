@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent August 2018 update
 
 ---
 
-# What's new or changed in Dynamics 365 for Talent Core HR, (August 2018)
+# What's new or changed in Dynamics 365 for Talent Core HR (August 2018)
 
 **Build 8.1.104**
 
