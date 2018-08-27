@@ -28,28 +28,18 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Set up parameters for SPED fiscal text files 
+# SPED fiscal files 
 
-The Sistema Publico de Escrituração Digital (SPED) fiscal text files contain information about all fiscal documents that have been received and issued in a month for a specific fiscal establishment. The SPED system is used by federal tax authorities to verify Imposto Sobre Circulação de Mercadorias e Serviços (ICMS) and Imposto sobre Produtos Industrializados (IPI) tax calculations. Before you can generate a SPED fiscal text file to submit to the federal tax authorities, you must specify parameters that define how the SPED fiscal text file will be saved. This topic explains how to specify these parameters by using the **SPED fiscal parameters** form. 
+The Sistema Publico de Escrituração Digital (SPED) fiscal text files contain information about all fiscal documents that have been received and issued in a month for a specific fiscal establishment. The SPED system is used by federal tax authorities to verify Imposto Sobre Circulação de Mercadorias e Serviços (ICMS) and Imposto sobre Produtos Industrializados (IPI) tax calculations. Before you can generate a SPED fiscal text file to submit to the federal tax authorities, you must specify parameters that define how the SPED fiscal text file will be saved. This topic explains how to specify these parameters by using the **SPED fiscal parameters** page. 
 
-
-> [!NOTE]
-> The procedure for completing this task has changed for Microsoft Dynamics AX 2012 R3. For information that is specific to Microsoft Dynamics AX 2012 R3, see the section later in this topic.
-
-
-
-## Set up requirements for SPED fiscal text files
+## Setup
 
 1. Click **Fiscal books** \> **Setup** \> **Tax statements parameters**.
 2. Select **SPED Fiscal**.
 3. On the **Setup parameters** FastTab, click **Open**.
-
 4. On the **SPED fiscal parameters** page, select the location where the SPED fiscal text file will be saved.
-
 5. Select a profile presentation. For the current release, only the **A** profile presentation is supported.
-
 6. Select the current version of the SPED fiscal text file format to generate.
-    
 7. Select the type of activity to include in the SPED fiscal text file. The following options are available:
     
       - **Industrial or equivalent** – Select this option to include information for activities related to industries, for example manufacturing of goods.
@@ -57,20 +47,11 @@ The Sistema Publico de Escrituração Digital (SPED) fiscal text files contain i
       - **Others** – Select this option for all other types of activities.
       
 8. Set the **Enable block K** option to be **Yes**. If you don't enable block K, only the records K001 and K999 will be generated.
-
 9. Set the **Enable production orders** option to be **Yes**. This option allows you to generate the records K230 and K235 from the manufacturing module. 
 
-# Generate the SPED fiscal export file for a month 
+## Generate the SPED fiscal export file for a month 
 
 The Sistema Publico de Escrituração Digital (SPED) fiscal text file provides information about fiscal documents that were received and issued during a specific month. This information is used by tax authorities. The SPED fiscal text file also includes information about tax assessments and payments during the month. This topic explains how to generate a SPED fiscal text file by using the **Booking period** list page.
-
-
-> [!NOTE]
-> The procedure for completing this task has changed for Microsoft Dynamics AX 2012 R3. For information that is specific to Microsoft Dynamics AX 2012 R3, see the section later in this topic.
-
-
-
-## Generate the SPED fiscal text file for a month
 
 1. Click **Fiscal books** \> **Common** \> **Booking period**.
 2. Select a booking period.
