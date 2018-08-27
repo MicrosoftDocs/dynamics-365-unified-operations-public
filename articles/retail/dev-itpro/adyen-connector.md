@@ -89,10 +89,12 @@ Please look for errors and warnings in the windows event viewer, filter the foll
 * Shared hardware station
  * Application and Services Logs->Microsoft->Dynamics->Commerce-HardwareStation->Operational
 
-####Common issues
+### Common issues
 * AX
  * Connector not displayed in connector dropdown
- * 
+  * Check the Microsoft.Dynamics.Commerce.Payments.Connector.Adyen.Processor.Portable.dll is deployed to AOSService\PackagesLocalDirectory\bin\Connectors directory.
 * MPOS & Shared Hardware Station
- * Device does not display line items
- * 
+ * MPOS displays communication error while adding items to cart
+  * Check the event viewer for errors and warnings
+  * Is hardware station activated?
+  * In the DLLHost.exe.config file is Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Legacy.PaymentDeviceAdapter commented out and Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.PaymentDeviceAdapter uncommented?
