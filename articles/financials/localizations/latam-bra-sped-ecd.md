@@ -2,7 +2,7 @@
 # required metadata
 
 title: SPED ECD
-description: This topic provides information on how to set up parameters for and generate SPED ECD text files.
+description: This topic provides information on how to set up and generate SPED ECD text files.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 8/27/2018
@@ -28,7 +28,11 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Set up parameters for SPED ECD text files
+# SPED ECD
+
+[!include [banner](../includes/banner.md)]
+
+## Set up parameters for SPED ECD text files
 
 This topic describes how to specify how Sistema Publico de Escrituração Digital (SPED) fiscal text files will be saved before you submit them to the federal tax authorities.
 
