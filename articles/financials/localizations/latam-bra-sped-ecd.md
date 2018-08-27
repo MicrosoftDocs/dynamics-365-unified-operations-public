@@ -5,7 +5,7 @@ title: SPED ECD
 description: This topic provides information on how to set up parameters for and generate SPED ECD text files.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 6/5/2018
+ms.date: 8/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -161,7 +161,7 @@ To generate and validate the text file for the SPED ECD statement, follow these 
 
 
 
-## See also
+## Additional resources
 
-[Generate the Sintegra tax statement](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/bra-parameters-tax/articles/financials/localizations/latam-bra-set-up-parameters-for-tax-statements.md)
+- [Generate the Sintegra tax statement](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/bra-parameters-tax/articles/financials/localizations/latam-bra-set-up-parameters-for-tax-statements.md)
 
