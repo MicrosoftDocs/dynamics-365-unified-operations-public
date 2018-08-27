@@ -5,7 +5,7 @@ title: SPED fiscal files
 description: This topic provides information on how to generate SPED fiscal export files for Brazil. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 6/5/2018
+ms.date: 8/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,23 +40,25 @@ The Sistema Publico de Escrituração Digital (SPED) fiscal text files contain i
 
 ## Set up requirements for SPED fiscal text files
 
-1.  Click **Fiscal books** \> **Setup** \> **Tax statements parameters**. Select **SPED Fiscal**, on the **Setup parameters** FastTab, click **Open**.
+1. Click **Fiscal books** \> **Setup** \> **Tax statements parameters**.
+2. Select **SPED Fiscal**.
+3. On the **Setup parameters** FastTab, click **Open**.
 
-2.  In the **SPED fiscal parameters** form, select the location where the SPED fiscal text file will be saved.
+4. On the **SPED fiscal parameters** page, select the location where the SPED fiscal text file will be saved.
 
-3.  Select a profile presentation. For the current release, only the **A** profile presentation is supported.
+5. Select a profile presentation. For the current release, only the **A** profile presentation is supported.
 
-4.  Select the current available version of the SPED fiscal text file format to generate.
+6. Select the current version of the SPED fiscal text file format to generate.
     
-5.  Select the type of activity to include in the SPED fiscal text file. The following options are available:
+7. Select the type of activity to include in the SPED fiscal text file. The following options are available:
     
       - **Industrial or equivalent** – Select this option to include information for activities related to industries, for example manufacturing of goods.
     
       - **Others** – Select this option for all other types of activities.
       
-6. Enable the generation of Block K . When disabled, only records K001 and K999 are generated
+8. Set the **Enable block K** option to be **Yes**. If you don't enable block K, only the records K001 and K999 will be generated.
 
-7. Enable Export production orders to generate the records K230 and K235 from manufacturing module. 
+9. Set the **Enable production orders** option to be **Yes**. This option allows you to generate the records K230 and K235 from the manufacturing module. 
 
 # Generate the SPED fiscal export file for a month 
 
@@ -70,18 +72,13 @@ The Sistema Publico de Escrituração Digital (SPED) fiscal text file provides i
 
 ## Generate the SPED fiscal text file for a month
 
-1.  Click **Fiscal books** \> **Common** \> **Booking period**. On the **Action Pane**, click the **Tax statements** tab.
-
-2.  Select a booking period, and then click **SPED Fiscal**.
-
-3.  Specify the location and name of the file. The default location is specified in the **SPED fiscal parameters** form, and the default file name is automatically generated. In most cases, you should accept the default entry.
-
-4.  Select either **Original** or **Substitute** for the file type.
-
-5.  Select the version. The default entry is specified in the **SPED fiscal parameters** form.
-
-6.  Enable Block K. The default entry is specified in the **SPED fiscal parameters** form.
-
-7.  Optional: Click the **Batch** tab and specify options for batch processing. You might use batch processing if the file should be generated later or on a server instead of on your computer.
-
-8.  Click **OK**.
+1. Click **Fiscal books** \> **Common** \> **Booking period**.
+2. Select a booking period.
+3. On the **Action Pane**, click the **Tax statements** tab.
+4. Click **SPED Fiscal**.
+5. Specify the location and name of the file. The default location is specified on the **SPED fiscal parameters** page, and the default file name is automatically generated. In most cases, you should accept the default entry.
+6. Select either **Original** or **Substitute** for the file type.
+7. Select the version. The default entry is specified on the **SPED fiscal parameters** page.
+8. Set the **Enable block K** option to be **Yes**. The default entry is specified on the **SPED fiscal parameters** page.
+9. Optional: Click the **Run in the background** FastTab and specify options for batch processing. You might use batch processing if the file should be generated later or on a server instead of on your computer.
+10. Click **OK**.
