@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Talent August 2018 update
 
 # What's new or changed in Dynamics 365 for Talent Core HR (August 2018)
 
-**Build 8.1.104**
+[!include [banner](includes/banner.md)]
 
-[!include [banner](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/fin-and-ops/includes/banner.md)]
+**Build 8.1.104**
 
 This topic describes features that are either new or changed in Dynamics 365 for
 Talent Core HR.
