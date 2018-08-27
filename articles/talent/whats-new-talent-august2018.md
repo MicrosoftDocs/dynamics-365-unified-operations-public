@@ -30,17 +30,16 @@ ms.dyn365.ops.version: Talent August 2018 update
 
 ---
 
-**What's new or changed in Dynamics 365 for Talent Core HR, (August 2018)**
+# What's new or changed in Dynamics 365 for Talent Core HR, (August 2018)
 
 **Build 8.1.104**
 
-[!include
-[banner](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/fin-and-ops/includes/banner.md)]
+[!include [banner](https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/fin-and-ops/includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for
 Talent Core HR.
 
-**Expiring records: manager self service**
+## Expiring records: manager self service
 
 View expiring records in Manager self-service. New options are now available to
 configure what information will be available for managers to view. These
@@ -59,7 +58,7 @@ include:
 This feature also gives you the ability to specify the range of days to look for
 expiring records.
 
-**Configurable transfer actions**
+## Configurable transfer actions
 
 Configure by role the options that will be available during the entry of a
 transfer request. This feature will provide additional flexibility across the
@@ -76,7 +75,7 @@ as a result of the transfer completing.
 By default, the new configuration options are set to not change the capabilities
 prior to this update.
 
-**Leave and absence**
+## Leave and absence
 
 Use additional Date fields in Leave and Absence
 
@@ -102,7 +101,7 @@ process will use the specified date to calculate the accrual periods. The
 accrual period basis is also displayed on the employee’s plan enrollment to help
 you understand what’s being used during the accrual process.
 
-**Microsoft Word integration**
+## Microsoft Word integration
 
 Document templates have been enabled throughout Core HR. This feature enables
 scenarios for creating letters and reports based on Word templates you create.
@@ -111,7 +110,7 @@ Full documentation is available
 [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json).
 
 
-**Misc. Fixes**
+## Other Fixes
 
 This release includes a number of bug fixes, additional entities, fixes to
 entities and localized label changes.
