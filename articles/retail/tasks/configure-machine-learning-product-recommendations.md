@@ -5,7 +5,7 @@ title: Configure machine learning-powered product recommendations
 description: This procedure refreshes the data in the Entity store that is used by the machine learning system that powers product recommendations, and then enables product recommendations on POS clients. 
 author: ashishmsft
 manager: AnnBe 
-ms.date: 10/27/2016
+ms.date: 08/27/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-365-retail 
@@ -29,6 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Configure machine learning-powered product recommendations
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
+
+> [!NOTE]
+> We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities. For more information see [Removed or deprecated features](../dev-itpro/migration-upgrade/deprecated-features.md). Navigate to the bottom of the page if you are facing issues with already-enabled product recommendations for your environment. 
 
 This procedure refreshes the data in the Entity store that is used by the machine learning system that powers product recommendations, and then enables product recommendations on POS clients. This procedure uses the USRT company in demo data.
 
