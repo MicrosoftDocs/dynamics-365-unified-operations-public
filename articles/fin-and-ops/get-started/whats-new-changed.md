@@ -43,7 +43,7 @@ For information about how to upgrade to the latest version, see [Process for upg
 
 ## Application releases
 
-This table lists the major releases of the application. For update releases, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
+This table lists the major releases of the application. For monthly cloud updates, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
 
 <table>
 <colgroup>
