@@ -57,7 +57,8 @@
       href: dev-tools/create-data-model-elements.md
       items:
       - name: Naming guidelines for extensions
-        href: extensibility/NamingGuidelines.md
+        href: 
+        /NamingGuidelines.md
       - name: Turn off model customization and deprecate functionality
         href: dev-tools/lock-models.md
     - name: Customization Analysis Report
@@ -251,6 +252,8 @@
         href: extensibility/extensibility-changes-802.md
       - name: Extensibility changes version 8.0.3
         href: extensibility/extensibility-changes-803.md
+      - name: Extensibility changes version 8.0.4
+        href: extensibility/extensibility-changes-804.md
     - name: Fundamentals
       items:
       - name: Intrusive customizations
