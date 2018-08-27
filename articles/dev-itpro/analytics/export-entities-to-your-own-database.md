@@ -39,7 +39,7 @@ This topic explains how administrators can export data entities from Microsoft D
 The BYOD feature lets administrators configure their own database, and then export one or more data entities that are available in Finance and Operations into it. (Currently, more than 1,700 data entities are available.) Specifically, this feature lets you complete these tasks:
 
 - Define one or more SQL databases that you can export entity data from Finance and Operations into.
-- Export either all the records (*full push*) or only the records that have changed (*incremental push*).
+- Export either all the records (*full push*) or only the records that have changed or deleted (*incremental push*).
 - Use the rich scheduling capabilities of the Finance and Operations batch framework to enable periodic exports.
 - Access the entity database by using Transact-SQL (T-SQL), and even extend the database by adding more tables.
 
@@ -120,7 +120,7 @@ The **Compare source names** option lets you compare the entity schema in the de
 
 #### Configure change tracking
 
-Change tracking is a feature that is provided in SQL Server and SQL Database. Change tracking enables the database to track changes that are made on tables. The system uses change tracking to identify changes that are made to tables as transactions are performed in Finance and Operations.
+Change tracking is a feature that is provided in SQL Server and SQL Database. Change tracking enables the database to track changes including deletes that are made on tables. The system uses change tracking to identify such changes that are made to tables as transactions are performed in Finance and Operations.
 
 The **Change tracking** option on the **Publish** page lets you configure how changes are tracked on the underlying entity.
 
