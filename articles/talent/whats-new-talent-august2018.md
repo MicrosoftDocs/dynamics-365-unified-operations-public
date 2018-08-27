@@ -39,9 +39,9 @@ ms.dyn365.ops.version: Talent August 2018 update
 This topic describes features that are either new or changed in Dynamics 365 for
 Talent Core HR.
 
-## Expiring records: manager self service
+## View expiring records in Manager self service
 
-View expiring records in Manager self-service. New options are now available to
+You can now view expiring records in Manager self-service. New options are allow you to
 configure what information will be available for managers to view. These
 include:
 
@@ -55,18 +55,18 @@ include:
 
 -   Tests
 
-This feature also gives you the ability to specify the range of days to look for
+This feature also gives you the ability to specify the range of days in which to look for
 expiring records.
 
 ## Configurable transfer actions
 
-Configure by role the options that will be available during the entry of a
-transfer request. This feature will provide additional flexibility across the
+You can configure by role the options that will be available during the entry of a
+transfer request. This feature provides additional flexibility across the
 roles in an organization.
 
-For Example: Managers requesting employee transfers may not have access to
+For example, managers requesting employee transfers may not have access to
 suggest or enter compensation amounts or select the task lists that will be
-associated with the transfer request. In this case Managers can create and
+associated with the transfer request. In this case, managers can create and
 submit transfer requests but are not allowed to enter compensation or task list
 assignments. In this same configuration, HR will be able to assign the new
 compensation values as well as assign any additional checklists to be completed
@@ -77,14 +77,14 @@ prior to this update.
 
 ## Leave and absence
 
-Use additional Date fields in Leave and Absence
+There are now additional Date fields available in Leave and Absence.
 
-With this feature you can now set the accrual period basis at the plan level to
+With this feature you can set the accrual period basis at the plan level to
 use specific employee dates. This allows for dates other than the plan start
 date to be used during the leave accrual process. Options for employee specific
-dates include following values:
+dates include the following values:
 
--   Custom (Available prior to this update)
+-   Custom (available prior to this update)
 
 -   Anniversary date
 
@@ -103,14 +103,13 @@ you understand what’s being used during the accrual process.
 
 ## Microsoft Word integration
 
-Document templates have been enabled throughout Core HR. This feature enables
-scenarios for creating letters and reports based on Word templates you create.
+Document templates have been enabled throughout Core HR. This feature allows you to create letters and reports based on Word templates that you create.
 
-Full documentation is available
-[here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json).
+Additional information about this feature is available in the
+[Office integration tutorial](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json).
 
 
-## Other Fixes
+## Other fixes
 
-This release includes a number of bug fixes, additional entities, fixes to
-entities and localized label changes.
+This release also includes a number of bug fixes, the addition of new entities, fixes to
+existing entities, and localized label changes.
