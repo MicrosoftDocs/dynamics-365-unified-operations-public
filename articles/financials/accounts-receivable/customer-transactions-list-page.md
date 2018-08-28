@@ -5,7 +5,7 @@ title: Customer transaction list page
 description: This topic provides information about the Customer transaction list page for Microsoft Dynamics 365 for Finance and Operations.
 author: mikefalkner
 manager: aolson
-ms.date: 08/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
