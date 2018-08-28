@@ -2,7 +2,7 @@
 # required metadata
 
 title: Ledger settlements
-description: You can settle ledger transactions with this form.
+description: This topic explains how to use the Ledger settlements page to settle ledger transactions and reverse settlements.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
@@ -33,38 +33,45 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-Ledger settlements allows you to match debit and credit transactions in the general ledger to ensure that related transactions have been cleared. You can also reverse your settlements if they were made in error.
+Ledger settlements let you match debit and credit transactions in the general ledger. In this way, you can make sure that related transactions have been cleared. You can also reverse settlements if they were made by mistake.
 
-## Settling transactions
+## Settle transactions
 
-To settle ledger transactions, perform the following tasks:
-1)  Click on General ledger, Periodic, Ledger settlements
-2)  You will see a list of all the unsettled transactions in the general ledger. They will have a status of "Not settled".
-3)  Select one or more lines that you are considering for settlement. You will see the total Selected amount at the top of the form increase or decrease by the amount on the line that you selected
-4)  When you have selected all of the transactions that you want to mark, Click on Mark selected. All of the Marked check boxes will be checked. You will see the total Marked amount at the top of the form increase or decrease by the amount on the line that you marked.
-5)  You can also click on the Mark check box directly to mark a transaction for settlement. In a future release, we will also be adding a rules engine that will mark transactions based on column values that you specify.  
-6)  When the Marked amount is zero, click on Settle marked transactions. The marked transactions will be given a status of "Settled"
+To settle ledger transactions, follow these steps.
 
-## Reversing a settlement
+1. Select **General ledger** \> **Periodic** \> **Ledger settlements**. You see a list of all the unsettled transactions in the general ledger. They all have a status of **Not settled**.
+2. Select one or more lines that you're considering for settlement. The value of the **Selected amount** field at the top of the page increases or decreases by the total amount on the lines that you selected.
+3. After you've finished selecting transactions, select **Mark selected**. A check mark appears in the **Marked** check box for each of those transactions. Additionally, the value of the **Marked amount** field at the top of the page increases or decreases by the total amount on the lines that you marked.
 
-You can reverse a settlement that was made in error. 
-1)  Click on General ledger, Periodic, Ledger settlements
-2)  You will see a list of all the unsettled transactions in the general ledger. Use the Status drop down filter to select Settled.
-3)  Select one or more lines that you are considering for reversal. You will see the total Selected amount at the top of the form increase or decrease by the amount on the line that you selected
-4)  When you have selected all of the transactions that you want to mark, Click on Mark selected. All of the Marked check boxes will be checked. You will see the total Marked amount at the top of the form increase or decrease by the amount on the line that you marked.
-5)  You can also click on the Mark check box directly to mark a transaction for settlement. 
-6)  When the Marked amount is zero, click on Reverse marked transactions. The marked transactions will be given a status of "Unsettled"
+    > [NOTE!]
+    > You can also directly mark a transaction for settlement by selecting the **Mark** check box for it. In a future release, a rules engine will be added that will mark transactions based on column values that you specify.
 
-## Making it easier for you to find transactions
+4. When the **Marked amount** value is 0 (zero), select **Settle marked transactions**. The status of the marked transactions is updated to **Settled**.
 
-There are additional capabilities on the Ledger settlement page that make it easier to find information:
-1)  The Mark selected button will check the Marked box for all lines that are selected
-2)  The Unmark selected button will uncheck the Marked box for all lines that are selected
-3)  The Marked filter will filter your transactions by the boxes that are marked or unmarked
-4)  The Status filter will filter your transactions by Settled or Not settled
-5)  The Sort by absolute amount button allows you to sort the amounts by absolute value so that you can group debits and credits with the same amount together
-6)  The Posting layer filter allows you to select the posting layer for the transactions that you want to display
-7)  The Financial dimension set drop down allows you to add the financial dimensions as a column so you can filter on each dimension
+## Reverse a settlement
 
-You will also see a second grid at the bottom of the form that is similar to the first grid on the page. This second grid allows you to search for different combinations of transactions without changing the filters or settings that you are using in the first grid. You can select and mark transactions in both grids. You can also use the elipsis to reduce the size of the second grid so that you have more room to view the top grid.
+You can reverse a settlement that was made by mistake.
 
+1. Select **General ledger** \> **Periodic** \> **Ledger settlements**. You see a list of all the unsettled transactions in the general ledger.
+2. In the **Status** drop-down filter, select **Settled**.
+3. Select one or more lines that you're considering for reversal. The value of the **Selected amount** field at the top of the page increases or decreases by the total amount on the lines that you selected.
+4. After you've finished selecting transactions, select **Mark selected**. A check mark appears in the **Marked** check box for each of those transactions. Additionally, the value of the **Marked amount** field at the top of the page increases or decreases by the total amount on the lines that you marked.
+
+    > [!NOTE]
+    > You can also directly mark a transaction for reversal by selecting the **Mark** check box for it.
+
+5. When the **Marked amount** value is 0 (zero), select **Reverse marked transactions**. The status of the marked transactions is updated to **Unsettled**.
+
+## Make transactions easier to find
+
+The **Ledger settlements** page includes capabilities that make it easier to find information:
+
+- The **Mark selected** button selects the **Marked** check box for all lines that are selected.
+- The **Unmark selected** button clears the **Marked** check box for all lines that are selected.
+- The **Marked** filter lets you filter transactions based on whether the **Marked** check box for them is selected or cleared.
+- The **Status** filter lets you filter transactions based on whether their status is **Settled** or **Not settled**.
+- The **Sort by absolute amount** button lets you sort the amounts by absolute value, so that you can group together debits and credits that have the same amount.
+- The **Posting layer** filter lets you filter transactions based on the posting layer.
+- The **Financial dimension set** field lets you add the financial dimensions as a column, so that you can filter on each dimension.
+
+Additionally, notice that the lower part of the page includes a grid that resembles the grid in the upper part of the page. This lower grid lets you search for different combinations of transactions without changing the filters and settings that you're using in the upper grid. You can select and mark transactions in both grids. You can also use the ellipsis button (**...**) to reduce the size of the lower grid so that you have more room to view the upper grid.
