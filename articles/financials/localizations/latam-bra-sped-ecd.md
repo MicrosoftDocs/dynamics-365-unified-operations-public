@@ -2,7 +2,7 @@
 # required metadata
 
 title: SPED ECD
-description: This topic provides information on how to set up and generate SPED ECD text files.
+description: This topic explains how to set up and generate SPED ECD text files.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 8/27/2018
@@ -34,138 +34,98 @@ ms.dyn365.ops.version: 7.3
 
 ## Set up parameters for SPED ECD text files
 
-This topic describes how to specify how Sistema Publico de Escrituração Digital (SPED) fiscal text files will be saved before you submit them to the federal tax authorities.
+This section explains how to specify how Sistema Publico de Escrituração Digital (SPED) fiscal text files should be saved before you submit them to the federal tax authorities.
 
-The SPED fiscal text files contain information about general ledger transactions, profit and loss information, and balance sheet information. The SPED ECD system is used by federal tax authorities to verify taxable profits of a company. 
+The SPED fiscal text files contain information about general ledger transactions, profit and loss information, and balance sheet information. The federal tax authorities use the SPED Escrituração Contábil Digital (ECD) system to verify taxable a company's profits. 
 
-### Set up requirements for SPED ECD tax statement
+### Set up requirements for the SPED ECD tax statement
 
-To set up requirements for SPED ECD fiscal text files, follow these steps:
+To set up requirements for SPED ECD fiscal text files, follow these steps.
 
-1.  Click **Fiscal books** \> **Setup** \> **Tax statements parameters**. Click **SPED ECD**. On the **Setup parameters** FastTab, click **Open**.
+1.  Select **Fiscal books** \> **Setup** \> **Tax statements parameters**.
+2.  Select **SPED ECD** on the left, and then, on the **Setup parameters** FastTab, select **Open**.
+3.  Select the company to generate the SPED ECD text file for.
+4.  Select the financial dimension set that the format of the SPED ECD text file should be based on. The financial dimension set should include the main account and the cost center dimensions.
+5.  Select the location where the SPED ECD text file should be generated.
 
-2.  Select the company to generate the SPED ECD text file for.
+    The booking type is assigned automatically, based on the type of fiscal organization:
 
-3.  Select the financial dimension set that the format of the SPED ECD text file will be based on. The financial dimension set should include the main account and the cost center dimensions.
+    -  **G** – The booking is used for all the ledger journal transactions.
+    -  **S** – The booking is used for the SCP company.
 
-4.  Select the file location where the SPED ECD text file will be generated.
+6.  Select the type of company situation. The following options are available. Alternatively, leave the field blank to represent the regular situation.
 
-5.  The Booking type is assigned automatically depending on the type of fiscal organization. 
-    
-      - G – This booking is used to detail all of the ledger journal transactions.
-    
-      - S – This booking is used for the SCP company.
+    -  Division
+    -  Merger
+    -  Incorporation
+    -  Closing-down
+    -  Transformation
 
-6.  Select the type of company situation from the following options, or leave the field blank to represent the regular situation:
-    
-      - **Division**
-    
-      - **Merger**
-    
-      - **Incorporation**
-    
-      - **Closing-down**
-    
-      - **Transformation**
+7.  In the **Opening fiscal period** field, select one of the following options:
 
-7.  In the **Opening fiscal period** field, select from the following options:
-    
-      - **Regular**
-    
-      - **Opening**
-    
-      - **Split, Merge or Acquisition**
-    
-      - **Mandatory**
+    -  Regular
+    -  Opening
+    -  Split, Merge or Acquisition
+    -  Mandatory
 
 8.  Select the version of the SPED ECD text file format to generate.
-    
-9.  In the **Auditor registration number** field, enter the number of the company’s auditor.
-
-10. Enter the auditor’s name.
-
-11. Select the **Large company** check box if the company is a large company.
-    
-
+9.  In the **Auditor registration number** field, enter the number of the company's auditor.
+10. Enter the auditor's name.
+11. Set the **Large company** option to **Yes** if the company is a large company.
 
 ## Generate and validate the SPED ECD statement 
 
-This topic describes how to generate and validate the text file for the digital accounting bookkeeping (SPED ECD) statement.
+This section explains how to generate and validate the text file for the digital accounting bookkeeping (SPED ECD) statement.
 
-The SPED ECD statement requires organizations to calculate and report the taxable profits based on the following types of accounting records:
+For the SPED ECD statement, organizations must calculate and report on their taxable profits, based on the following types of accounting records:
 
-  - Journal registers and supporting records
-
-  - General ledger and subledgers
-
-  - Daily trial balances and balance sheets
+- Journal registers and supporting records
+- General ledger and subledgers
+- Daily trial balances and balance sheets
 
 ### Generate and validate a SPED ECD text file
 
-To generate and validate the text file for the SPED ECD statement, follow these steps:
+To generate and validate the text file for the SPED ECD statement, follow these steps.
 
-1.  Click **Fiscal books** \> **Common** \> **SPED ECD** \> **Generate SPED ECD**.
-
+1.  Select **Fiscal books** \> **Common** \> **SPED ECD** \> **Generate SPED ECD**.
 2.  Select the fiscal organization to generate the SPED ECD file for.
+3.  In the **From date** and **To date** fields, select the start and end dates of the ledger transactions to report on.
+4.  Set the **Include accounting statements** option to **Yes** to generate the Block J text file in addition to the SPED ECD file.
+5.  Select the period to calculate financial statement balances for.
+6.  Enter the path where the files should be saved.
+7.  In the **Book number** field, enter the accounting book number.
 
-3.  In the **From date** and **To date** fields, select the starting and ending dates of the ledger transactions to report on.
+    The **Booking type** field is automatically set to **G** (Livro Diario completo sem escrituracao auxiliary).
 
-4.  Select the **Include accounting statements** check box to generate the Block J text file in addition to the SPED ECD file.
+8.  Select the type of company situation. The following options are available. Alternatively, leave the field blank to represent the regular situation.
 
-5.  Select the time period to calculate financial statement balances for.
+    -  Division
+    -  Merger
+    -  Incorporation
+    -  Closing-down
+    -  Transformation
 
-6.  Enter the path where the files will be saved.
+9.  In the **Opening fiscal period** field, select one of the following options:
 
-7.  In the **Booking number** field, enter the accounting book number.
-    
-    The **Booking type** field automatically displays the value of G (Livro Diario completo sem escrituracao auxiliary).
-
-8.  Select the type of company situation from the following options, or leave the field blank to represent the regular situation:
-    
-      - **Division**
-    
-      - **Merger**
-    
-      - **Incorporation**
-    
-      - **Closing-down**
-    
-      - **Transformation**
-
-9.  In the **Opening fiscal period** field, select from the following options:
-    
-      - **Regular**
-    
-      - **Opening**
-    
-      - **Split, Merge or Acquisition**
-    
-      - **Mandatory**
+    -  Regular
+    -  Opening
+    -  Split, Merge or Acquisition
+    -  Mandatory
 
 10. In the **Layout version** field, select the layout of the SPED ECD file.
+11. In the **File type** field, select the type of file to generate:
 
-11. In the **File type** field, select the type of file to generate from the following options:
-    
-      - **Original**
-    
-      - **Substitute with NIRE**
-    
-      - **Substitute without NIRE**
-    
-      - **Substitute with NIRE changes**
-    
-    Número de Identificação no Registro de Empresas (NIRE) is entered in the **Fiscal establishment** form on the **Tax registration** FastTab.
+    -  Original
+    -  Substitute with NIRE
+    -  Substitute without NIRE
+    -  Substitute with NIRE changes
 
-12. Click **OK** to generate the SPED ECD file.
+    The Número de Identificação no Registro de Empresas (NIRE) is entered on the **Tax registration** FastTab of the **Fiscal establishment** page.
 
-13. Click **Fiscal books** \> **Common** \> **SPED ECD** \> **Validate SPED ECD**.
-
-14. Click **OK** to validate the SPED ECD file.
-
-
-
+12. Select **OK** to generate the SPED ECD file.
+13. Select **Fiscal books** \> **Common** \> **SPED ECD** \> **Validate SPED ECD**.
+14. Select **OK** to validate the SPED ECD file.
 
 ## Additional resources
 
-- [Generate the Sintegra tax statement](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/bra-parameters-tax/articles/financials/localizations/latam-bra-set-up-parameters-for-tax-statements.md)
-
+[Generate the Sintegra tax statement](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/bra-parameters-tax/articles/financials/localizations/latam-bra-set-up-parameters-for-tax-statements.md)
