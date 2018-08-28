@@ -5,7 +5,7 @@ title: Retail Modern POS (MPOS) in offline mode
 description: This article explains how to use Retail Modern POS devices in offline mode if the Retail Server is unavailable.
 author: RobinARH
 manager: AnnBe
-ms.date: 8/20/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to use Retail Modern POS devices in offline mode if the Retail Server is unavailable.
+This topic explains how to use Retail Modern POS devices in offline mode if the Retail Server is unavailable.
 
 A Retail Modern POS device will go offline if the Retail Server is unavailable. When the connection with the Retail Server is lost, the point of sale (POS) automatically switches to the offline database. If a data request doesn't succeed within the time-out interval that is configured in the offline profile, Retail Modern POS automatically switches to the offline database and continues the sales transaction. Retail Modern POS will try to reconnect to the Retail Server after the reconnect attempt interval that is configured in the offline profile. This reconnect attempt will occur only at the beginning of a transaction.
 

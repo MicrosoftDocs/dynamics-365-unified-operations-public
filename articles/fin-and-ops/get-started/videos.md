@@ -43,7 +43,7 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 
 #### Data integration
 - [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg) 
-- [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU&t=2s)
+- [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 #### Data management
 - [Use data entities and data packages in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
@@ -99,6 +99,9 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 - [Batch balancing](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be)
 - [Enhancements to the production order release process](https://www.youtube.com/watch?v=Rm3ojAz6Zu0&feature=youtu.be)
 - [Visual scheduling with Gantt chart for production and batch orders](https://youtu.be/BtbuShkGj4I)
+
+#### Tax engine
+- [Tax engine overview](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
 
 #### Warehouse management
 - [Release production picking to the warehouse in batch](https://youtu.be/8urAJn50dQ8)
