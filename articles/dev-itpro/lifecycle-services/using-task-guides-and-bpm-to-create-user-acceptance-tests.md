@@ -1,6 +1,6 @@
 ---
 title: Create user acceptance test libraries by using task guides and BPM
-description: This topic provides information about using Task guides and BPM to create and exeucte acceptance test suites.
+description: This topic provides information about using Task guides and BPM to create and execute acceptance test suites.
 author: kfend
 manager: AnnBe
 ms.date: 06/07/2018
