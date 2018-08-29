@@ -32,12 +32,13 @@ ms.dyn365.ops.version: 8.0
 
 [!include[banner](../includes/banner.md)]
 
-
-Lifecycle Services (LCS) has a feature called **Report production outage**. This feature is available to all customers that have purchased Dynamics 365 Finance and Operations and have implementation projects with a production environment deployed in LCS. This feature provides a quick and effective channel to escalate issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable.
+Lifecycle Services (LCS) has a feature called **Report production outage**. This feature is available to all customers who have purchased Dynamics 365 Finance and Operations and have implementation projects with a production environment deployed in LCS. This feature provides a quick and effective channel to escalate issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable.
 
 Following mutually inclusive conditions, a production outage can be defined as one or more system-wide issues on a live production environment that impact multiple users and prevent your business from performing daily operations.
 
 ## Reporting flow
+The following list shows the order in which an issue should be handled:
+
 1. In a live production environment, a customer experiences an outage or other situation with prevents business from continuing.
 2. The customer reports a production outage issue by using the LCS Support portal.
 3. The customer selects a production outage issue and provides additional information.
@@ -45,15 +46,17 @@ Following mutually inclusive conditions, a production outage can be defined as o
 5. A support engineer contacts the customer to provide a status update.
 
 ## Access and availability
-All users that been added to a customer's implementation project have access to this feature. This includes project owners, organization admins, team members, and environment managers.
+All users who have been added to a customer's implementation project have access to this feature. This includes project owners, organization admins, team members, and environment managers.
 
-This feature is available to:
-- Dynamics 365 for Finance and Operation
-- Environments managed by Microsoft
+This feature is available for:
+- Dynamics 365 for Finance and Operations
+- Environments that are managed by Microsoft
 - A production environment in the LCS project
 - All support plans
 
 ## Report a production outage
+To report a production outage, follow these steps:
+
 1. Log in to your LCS project.  
 2. From the hamburger menu, click **Support**. 
   ![Click Support](media/click-support.png)
@@ -65,8 +68,4 @@ This feature is available to:
 7. Click **Done**. 
 
 > [!Note]
-> If you don't see your situation listed in the outage scenarios, enter a support incident through LCS.  If, during the initial investigation by a Microsoft support engineer, it is found that the situation does not meet the current list of production outage scenarios, the support incident will be transferred to the correct support team and SLA  based on your current support plan
-
-
-
-
+> If you don't see your situation listed in the outage scenarios, enter a support incident through LCS. During the initial investigation by a Microsoft support engineer, if it is found that the situation does not meet the current list of production outage scenarios, the support incident will be transferred to the correct support team and service-level agreement (SLA)  based on your current support plan.
