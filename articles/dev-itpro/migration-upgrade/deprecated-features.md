@@ -82,6 +82,17 @@ Please enter a sentence or two describing the feature that is being removed or d
 | **Deployment option**              | Enter: All, Cloud only, or On-premises only  |
 | **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.|
 
+### Batch transfer rules for subledger journal account entries
+The Synchronous transfer mode is being deprecated in the General ledger parameters.  This mode is replaced by Asyncronous and scheduled batch only, which already exist as options for transfer. 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are removing the synchronous option due to performance impact to the system. |
+| **Replaced by another feature?**   | Asynchronous and scheduled batch are options to use in place of Synchronous.   |
+| **Product areas affected**         | General Ledger, Accounts payable, Accounts Receivable, Procurement, Expense.     |
+| **Deployment option**              | All  |
+| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is the 10.0 version.<br><br>|
+
 ## Dynamics 365 for Finance and Operations 8.0 with platform update 15
 No features have been removed or deprecated with this release. Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.
 
