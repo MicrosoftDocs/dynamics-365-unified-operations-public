@@ -56,7 +56,9 @@ This feature is available to:
 ## Report a production outage
 1. Log in to your LCS project.  
 2. From the hamburger menu, click **Support**. 
+  ![Click Support](media/click-support.png)
 3. On the **Submitted To Microsoft** tab, click **Report production outage**.
+  ![Click Support](media/report-production-outage.png)
 4. Confirm the production outage, select the outage scenario from the drop-down list, and then click **Continue**.
 5. Add a title and details about the outage, and then click **Next**.
 6. Provide contact information, and then click **Next**.
