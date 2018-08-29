@@ -5,7 +5,7 @@ title: Standard audit file (SAF) for Poland
 description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
 author: LizaGolub
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,14 +52,13 @@ Each ER format should be predefined and can be updated in ER.
 ## Generate a SAF Accounting books file
 To generate a SAF Accounting books file, click **General ledger** &gt; **Inquiries and reports** &gt; **Standard Audit File for Tax (SAF-T)** &gt; **SAF Accounting books**, and set the following parameters.
 
-|                                                 |                                                                                                                                                            |
-|-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Parameter**                                   | **Description**                                                                                                                                            |
-| **From date**                                   | Specify the first date to export reporting data for.                                                                                                       |
-| **To date**                                     | Specify the last date to export reporting data for.                                                                                                        |
-| **Authority identification**                    | Specify the identifier of the tax authority to use in the export file.                                                                                     |
-| **Posting layer**                               | Select the posting layer to consider transactions from. This parameter affects only the ZOiS? part of the export file.                                     |
-| **Should opening balance be shown by turnover** | If this parameter is selected, opening transactions affect accumulated turnover. This parameter affects only the ZOiS export file part.                    |
+|Parameter                                        |  Description            |
+|-------------------------------------------------|-------------------------|
+| **From date**                                   | Specify the first date to export reporting data for. |
+| **To date**                                     | Specify the last date to export reporting data for.  |
+| **Authority identification**                    | Specify the identifier of the tax authority to use in the export file.|
+| **Posting layer**                               | Select the posting layer to consider transactions from. This parameter affects only the ZOiS? part of the export file. |
+| **Should opening balance be shown by turnover** | If this parameter is selected, opening transactions affect accumulated turnover. This parameter affects only the ZOiS export file part. |
 | **Separate balance**                            | This parameter can be considered for main accounts where the corresponding parameter is marked. This parameter affects only the ZOiS export file part.     |
 | **Closing transactions**                        | If this parameter is selected, closing transactions will be included in the data that is exported. This parameter affects only the ZOiS? export file part. |
 
@@ -68,9 +67,8 @@ You can specify additional selection parameters by using **Filter** functionalit
 ## Generate a SAF Bank statement file
 To generate a SAF Bank statement file, click **General ledger** &gt; **Inquiries and reports** &gt; **Standard Audit File for Tax (SAF-T)** &gt; **SAF Bank statement**, and set the following parameters.
 
-|                              |                                                                                    |
+| Parameter                    | Description                                                                        |
 |------------------------------|------------------------------------------------------------------------------------|
-| **Parameter**                | **Description**                                                                    |
 | **From date**                | Specify the first date to export reporting data for.                               |
 | **To date**                  | Specify the last date to export reporting data for.                                |
 | **Authority identification** | In the list, select the identifier of the tax authority to use in the export file. |
@@ -81,9 +79,8 @@ To generate a SAF Bank statement file, click **General ledger** &gt; **Inquiries
 ## Generate a SAF Inventory file
 To generate a SAF Inventory file, click **General ledger** &gt; **Inquiries and reports** &gt; **Standard Audit File for Tax (SAF-T)** &gt; **SAF Inventory**, and set the following parameters.
 
-|                              |                                                                                    |
+| Parameter                    | Description                                                                        |
 |------------------------------|------------------------------------------------------------------------------------|
-| **Parameter**                | **Description**                                                                    |
 | **From date**                | Specify the first date to export reporting data for.                               |
 | **To date**                  | Specify the last date to export reporting data for.                                |
 | **Authority identification** | In the list, select the identifier of the tax authority to use in the export file. |
@@ -113,9 +110,8 @@ A reporting code is an integer value. Reporting codes should be numbered accordi
 -   **BB** - The tax code. The numbering is sequential among all tax codes.
 -   **CC**-   The transaction type number within a tax code. See the following table.
 
-|                                       |                             |
+| Transaction type                      | Transaction type number     |
 |---------------------------------------|-----------------------------|
-| **Transaction type**                  | **Transaction type number** |
 | **Taxable Sales**                     | 01                          |
 | **Tax-free sales**                    | 02                          |
 | **Sales tax payable**                 | 03                          |
@@ -432,7 +428,7 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td rowspan="4"><strong>ReverseCharge</strong></td>
 <td>11301</td>
 <td>Taxable sales</td>
-<td>K_31</td>
+<td>K_34</td>
 <td>-</td>
 </tr>
 <tr>
@@ -444,7 +440,7 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <tr>
 <td>11304</td>
 <td>Taxable sales credit note</td>
-<td>K_31</td>
+<td>K_34</td>
 <td>-</td>
 </tr>
 <tr>
@@ -546,9 +542,8 @@ Initially, the configuration is an example of VAT Register based on Reporting co
 
 To generate a SAF VAT sales and purchase register, click **General ledger** &gt; **Inquiries and reports** &gt; **Standard Audit File for Tax (SAF-T)** &gt; **SAF VAT sales and purchase register**, and set the following parameters.
 
-|                              |                                                                                    |
+|   Parameter                  |   Description                                                                      |
 |------------------------------|------------------------------------------------------------------------------------|
-| **Parameter**                | **Description**                                                                    |
 | **From date**                | Specify the first date to export reporting data for.                               |
 | **To date**                  | Specify that last date to export reporting data for.                               |
 | **Authority identification** | In the list, select the identifier of the tax authority to use in the export file. |
@@ -580,9 +575,8 @@ Initially, the configuration is an example of VAT Register based on Reporting co
 
 To generate a SAF VAT invoices file, click **General ledger** &gt; **Inquiries and reports** &gt; **Standard Audit File for Tax (SAF-T)** &gt; **SAF VAT invoices**, and set the following parameters.
 
-|                              |                                                                                        |
+|  Parameter                   | Description                                                                            |
 |------------------------------|----------------------------------------------------------------------------------------|
-| Parameter                    | Description                                                                            |
 | **From date**                | Specify the first date to export reporting data for.                                   |
 | **To date**                  | Specify the last date to export reporting data for.                                    |
 | **Authority identification** | In the list, select the identifier of the tax authority to use in the export file.     |

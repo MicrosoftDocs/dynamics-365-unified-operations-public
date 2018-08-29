@@ -1184,6 +1184,8 @@
     items:
     - name: Create rules for Optimization advisor
       href: sysadmin/create-rules-optimization-advisor.md
+  - name: Report a production outage
+    href: lifecycle-services/report-production-outage.md
 - name: Lifecycle Services
   items:
   - name: Resources for Lifecycle Services
@@ -1236,6 +1238,8 @@
     href: lifecycle-services/monitoring-diagnostics.md
   - name: Restart environment services
     href: lifecycle-services/restart-environment-services.md
+  - name: Report a production outage
+    href: lifecycle-services/report-production-outage.md
   - name: Track user sign-ins
     href: lifecycle-services/user-logins.md
   - name: Asset library
