@@ -42,10 +42,10 @@ Since Platform update 3, Microsoft has been committed to backward compatibility 
 
 Starting with Platform update 4, monthly updates are released for the cloud platform. Therefore, you can keep new and existing environments up to date with the latest innovations at the click of a button. Monthly platform updates are compatible, and an explicit opt-in option will be added for features that modify the behavior of existing functionality.
 
-## A platform update is backward compatible, what does this mean?
+## What does it mean when a platform update is backward compatible?
 
 Backward compatibility covers binary and functional compatibility. 
-Binary compatibility means you can apply a platform update on any runtime environment without the need to recompile, reconfigure or redeploy customizations. On a development environment (at design time), this means X++ public APIs and public metadata are not modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated in advance and follow a deprecation schedule. Design-time compatibility does not include non X++/metadata APIs.
+Binary compatibility means that you can apply a platform update on any runtime environment without needing to recompile, reconfigure, or redeploy customizations. This means that on a development environment at design time, X++ public APIs and public metadata are not modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated in advance and follow a deprecation schedule. Design-time compatibility does not include non X++/metadata APIs.
 Functional compatibility is about user experience. Major changes to the user experience or business process flows that require re-training of Finance and Operations users will be not be enabled by default. New functionality will use flighting or side-by-side exeprience. This has not be fully enforced in the past, but is the current direction.
 
 ## Why do I have to move to the latest platform update?
