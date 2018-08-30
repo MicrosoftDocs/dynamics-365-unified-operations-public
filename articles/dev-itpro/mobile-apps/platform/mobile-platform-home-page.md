@@ -5,7 +5,7 @@ title: Mobile platform home page
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 05/23/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -156,10 +156,10 @@ During development it can be useful to attach a debugger to get more detailed in
 ## Change needed for ADFS to support Mobile Client in on-premises environments 
 If ADFS is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The Microsoft Dynamics Unified Operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support wia](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)
 
-## Additional resources
-### What's new and in development
-Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
-
-### Blogs
-You can find opinions, news, and other information about Retail and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog).
-
+## Troubleshooting
+### I can't figure out how to build or change something in my Mobile Client content
+There are many resources that you can leverage to figure out how to build or change content for the Mobile Client.
+- Review the documentation provided in the Dynamics 365 for Finance and Operations Help system.
+- Review the [Fleet Management Samples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) for examples.
+- Publish and review the Expense Management workspace, and other standard workspaces, for examples. Demo data for the USSI company is useful when using the Expense Management workspace. The forms and X++ code that make up the Expense Management workspace can be found in the Application Explorer by searching for the "ExpenseMobile" prefix.
+- Leverage the [Dynamics Community forums for Finance and Operations (AX)](https://community.dynamics.com/ax/f/33) by searching for answers and asking questions when needed.
