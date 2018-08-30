@@ -181,14 +181,13 @@ Use this procedure to post an advance report when all the advance report header 
 ### Print advance report 
 
 Use this procedure to print a posted advance report. You can print an advance report after an advance invoice that is issued to an advance holder is settled.
-   
-    > [!NOTE]
-    > <P>The amounts in the <STRONG>Advance reports</STRONG> form are recalculated on the date when the payment journal for the advance holder is posted.</P>
 
+ > [!NOTE]
+    > <P>The amounts in the <STRONG>Advance reports</STRONG> form are recalculated on the date when the payment journal for the advance holder is posted.</P>
+   
 1.  Click **Print** \> **Print** in **Actions pane** to open the **Advance report** form.
 
 4.  Click **OK** to print the advance report in Microsoft Excel format.
-
 
 
 ## Closing balances for an advance holder 
@@ -197,11 +196,11 @@ You can close balances for an advance holder via cash or bank.
 
 ### Closing via cash
 
-1.  Click **Accounts payable** \> **Inquiries** \> **Advance holders** \> **Balance**.
+1.  Click **Accounts payable** \> **Inquiries abd reports** \> **Advance holders inquiries and reports** \> **Balance**.
 
 2.  In the **To date** field, enter the date to obtain advance holder balances.
 
-3.  Click **Balance closing**, and then select **Close via cash**.
+3.  Select **Close via cash** to open **Close via cash** form.
 
 4.  In the **Date of payment** field, enter the date of payment.
 
@@ -220,75 +219,17 @@ You can close balances for an advance holder via cash or bank.
     > [!NOTE]
     > <P>After the slip journal is processed, either a disbursement slip (if the amount in the <STRONG>Amount to be transferred</STRONG> field is negative) will be generated, or a reimbursement slip (if the amount in the <STRONG>Amount to be transferred</STRONG> field is positive) will be generated for the advance holder when the balances are closed.</P>
 
-
-
-8.  Press CTRL+S or close the form.
+8.  Close the form.
 
 ### Closing via bank
 
 The procedure for closing balances through a bank is similar to closing through cash. You can set up the code for the journal and the bank on the **Advance holders** tab in the **Accounts payable parameters** form.
 
-
 > [!NOTE]
-> <P>In the <STRONG>Balance</STRONG> form, you must click <STRONG>Balance closing</STRONG>, and then select <STRONG>Close via bank</STRONG> to open the <STRONG>Close via bank</STRONG> report.</P>
+> <P>In the <STRONG>Balance</STRONG> form, select <STRONG>Close via bank</STRONG> to open the <STRONG>Close via bank</STRONG> form.</P>
 
-
-## Settle advance holder balances 
-
-
-Use this procedure to settle advance holder balances. When you settle advance holder balances, journal entries for closing the advance holder balances are created in the general journal.
-
-You can close balances for an advance holder in the following ways:
-
-  - Close through cash. 
-  - Close through a bank. 
-
-### Close through cash
-
-1.  Click **Accounts payable** \> **Inquiries** \> **Advance holders** \> **Balance**.
-
-2.  In the **To date** field, enter the date to obtain advance holder balances.
-
-3.  Click **Balance closing**, and then select **Close via cash**.
-
-4.  In the **Date of payment** field, enter the date of payment.
-
-5.  In the **Amount to be transferred.** field, enter the balance amount while closing.
-    
-
-    > [!NOTE]
-    > <P>The amount that is indicated in the <STRONG>Amount</STRONG> field in the <STRONG>Balance</STRONG> form is displayed by default.</P>
-
-
-
-6.  Select the **Automatic** check box to create and post the slip journal automatically.
-    
-
-    > [!NOTE]
-    > <P>If the <STRONG>Automatic</STRONG> check box is cleared, a journal is created automatically, and the journal number is displayed. You can also enter advance holder transactions manually by using the general journal or the slip journal.</P>
-
-
-
-7.  Click **OK** to generate the slip journal.
-    
-
-    > [!NOTE]
-    > <P>After the slip journal is processed, if the amount in the <STRONG>Amount to be transferred.</STRONG> field is negative, a disbursement slip is generated for the advance holder when the balances are closed. If the amount in the <STRONG>Amount to be transferred.</STRONG> field is positive, a reimbursement slip is generated.</P>
-
-
-
-### Close through a bank
-
-The procedure for closing balances through a bank is similar to the procedure for closing through cash. You can set up the code for the journal and the bank in the **Advance holders** area in the **Accounts payable parameters** form.
-
-
-> [!NOTE]
-> <P>In the <STRONG>Balance</STRONG> form, you must click <STRONG>Balance closing</STRONG>, and then select <STRONG>Close via bank</STRONG> to open the <STRONG>Close via bank</STRONG> form.</P>
-
- 
 
 ## Complete the settlement for an advance holder 
-
 
 You can complete a manual settlement or periodic settlement for an advance holder. If you clear the **Automatic settlement** check box in the **Accounts payable parameters** form, you must settle the posting or closing transactions manually, or by using the periodic settlement function.
 
@@ -296,11 +237,11 @@ You can complete a manual settlement or periodic settlement for an advance holde
 
 Use this procedure to settle advance holder transactions manually.
 
-1.  Click **Accounts payable** \> **Common** \> **Advance holders** \> **Advance holders**.
+1.  Click **Accounts payable** \> **Advance holders** \> **Advance holders**.
 
 2.  Select an advance holder.
 
-3.  Click **Functions** \> **Settle open transactions** to open the **Open-transaction editing in several currencies** form. The upper pane displays debit transactions for an advance holder, and the lower pane displays credit transactions.
+3.  Click **Settle** \> **Settle open transactions** to open the **Open-transaction editing in several currencies** form. The upper pane displays debit transactions for an advance holder, and the lower pane displays credit transactions.
 
 4.  In the upper and lower panes, select the **Mark** check box to select the transactions. The **Balance** field displays the balances after the transactions are settled.
 
@@ -309,18 +250,16 @@ Use this procedure to settle advance holder transactions manually.
 6.  Close the form.
 
 7.  In the **Advance holders** form, click **Settlements** to open the **Transaction settlements** form. You can verify the completed settlements in this form.
-    
+
 
     > [!NOTE]
     > <P>If exchange adjustments occur when advance holder transactions are settled, exchange adjustment transactions are generated from the settlement. The exchange rate adjustment is displayed in the <STRONG>Exchange rate adjustment amount</STRONG> field in the <STRONG>Transaction settlements</STRONG> form.</P>
 
-
-
 8.  Close the form.
 
-9.  Click **Accounts payable** \> **Common** \> **Advance holders** \> **Advance reports**.
+9.  Click **Accounts payable** \> **Advance holders** \> **Advance reports**.
 
-10. Double-click the advance report that is created for the selected advance holder.
+10. Select the advance report that is created for the selected advance holder.
 
 11. On the **Financials** tab, click **View distributions** to verify that the distribution of the expense amount is correct.
 
@@ -328,13 +267,13 @@ Use this procedure to settle advance holder transactions manually.
 
 Use this procedure to settle advance holder transactions periodically. When you use the periodic settlement function, all open transactions are settled in chronological order.
 
-1.  Click **Accounts payable** \> **Periodic** \> **Advance holders** \> **Periodic settlement**.
+1.  Click **Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Periodic settlement**.
 
-2.  In the **Date of transaction.** field, select the advance holder transaction date. All transactions that are posted before this date are settled.
+2.  In the **Date of transaction** field, select the advance holder transaction date. All transactions that are posted before this date are settled.
 
 3.  Select the **Settlement by profile** check box to settle transactions that have identical posting profiles.
 
-4.  Click **Select** to open the supplementary request setup to search for transactions for settlement.
+4.  Select **Records to include** FastTab to define additional filtering for settlement.
 
 5.  Click **OK** to settle the transactions.
 
@@ -342,11 +281,11 @@ Use this procedure to settle advance holder transactions periodically. When you 
 
 Use this procedure to cancel a periodic settlement for advance holder transactions.
 
-1.  Click **Accounts payable** \> **Periodic** \> **Advance holders** \> **Periodic reverse**.
+1.  Click **Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Periodic reverse**.
 
 2.  In the **Date of transaction.** field, select the advance holder transaction date. All transactions that are settled before this date are reversed.
 
-3.  Click **Select** to open the supplementary request setup to search for transactions to cancel the settlements for.
+3.  Select **Records to include** FastTab to define additional filtering to cancel the settlements for.
 
 4.  Click **OK** to cancel the periodic settlement.
 
