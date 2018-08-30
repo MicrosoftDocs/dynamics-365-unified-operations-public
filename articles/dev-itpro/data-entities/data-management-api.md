@@ -57,7 +57,8 @@ The data management framework's package API uses OAuth 2.0 for authorizing acces
 > [!NOTE]
 > When you use the Client Credentials Grant flow, Finance and Operations maintains an access control list. You can find the access control list at **System administration** \> **Setup** \> **Azure Active Directory applications**. The **Azure Active Directory applications** page shows the approved client IDs and the user security mapping that should be enforced when the API is called by using the Client Credentials Grant flow.
 >
-> For on-premises deployments, this list must have a valid client ID from AD FS.
+> For on-premises deployments, this list must have a valid client ID from AD FS. Also, for on-premise use, the <baseurl> in the below examples must also append /namespaces/AXSF when connecting to Dynamics 365 for Finance and Operations.
+
 
 ## Import APIs
 The following APIs are used to do file (data package) imports.
