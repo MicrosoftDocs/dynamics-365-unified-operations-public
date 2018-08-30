@@ -182,8 +182,9 @@ Use this procedure to post an advance report when all the advance report header 
 
 Use this procedure to print a posted advance report. You can print an advance report after an advance invoice that is issued to an advance holder is settled.
 
- > [!NOTE]
-    > <P>The amounts in the <STRONG>Advance reports</STRONG> form are recalculated on the date when the payment journal for the advance holder is posted.</P>
+> [!NOTE]
+> <P>The amounts in the <STRONG>Advance reports</STRONG> form are recalculated on the date when the payment journal for the advance holder is posted.</P>
+
    
 1.  Click **Print** \> **Print** in **Actions pane** to open the **Advance report** form.
 
@@ -285,7 +286,7 @@ Use this procedure to cancel a periodic settlement for advance holder transactio
 
 2.  In the **Date of transaction.** field, select the advance holder transaction date. All transactions that are settled before this date are reversed.
 
-3.  Select **Records to include** FastTab to define additional filtering to cancel the settlements for.
+3.  Select **Records to include** FastTab to define additional filtering of transactions to cancel the settlements for.
 
 4.  Click **OK** to cancel the periodic settlement.
 
