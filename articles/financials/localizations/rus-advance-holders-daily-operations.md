@@ -49,11 +49,11 @@ Use this procedure to create and post disbursement slips with advance holder det
 
 Use this procedure to create and post vendor invoices with advance holder details. The advance holder balances are posted to the employee balance account instead of the vendor balance account.
 
-1.  Click **Accounts payable** \> **Common** \> **Purchase orders** \> **All purchase orders**.
+1.  Click **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 
-2.  Press CTRL+N or click **Purchase order** to create a purchase order. For more information, see [Create a purchase order](../../supply-chain/procurement/tasks/create-purchase-order.md).
+2.  Select **New** to create a purchase order. For more information, see [Create a purchase order](../../supply-chain/procurement/tasks/create-purchase-order.md).
 
-3.  In the **Purchase order** form, on the **Action Pane**, click **Header view**, and then click the **Price and discount** FastTab.
+3.  In the **Purchase order** form, select **Header** view mode, and then click the **Price and discount** FastTab.
 
 4.  In the **Terms of payment** field, select the payment term. 
     
@@ -62,22 +62,60 @@ Use this procedure to create and post vendor invoices with advance holder detail
 
 5.  In the **Advance holder** field, select the advance holder for the purchase order.
 
-6.  Click **Purchase** \> **Confirm** to confirm the purchase order.
+6.  Enter all the required lines details and click **Purchase** \> **Actions** \> **Confirm** to confirm the purchase order.
 
-7.  Click **Invoice** \> **Invoice** to create a vendor invoice for the purchase order.
+7.  Click **Invoice** \> **Generate** \> **Invoice** to create a vendor invoice for the purchase order.
 
 8.  In the **Vendor invoice** form, in the **Invoice identification** field group, in the **Number** field, enter the invoice number.
 
-9.  Click **Post** \> **Post** to select the posting settings and generate the invoice.
-    
-    You can view two vendor transactions with opposite amounts in the **Vendor transactions** form. 
+9.  Click **Post** to post the invoice.and close the form.
 
-10. Close the form.
+10. Click **Accounts payable** \> **Inquiries and reports** \> **Advance holders inquires and reports** \> **Transactions** to view related advance holder transactions. 
 
-11. Click **Accounts payable** \> **Inquiries** \> **Advance holders** \> **Transactions**. In the **Advance holder transactions** form, you can view one advance holder transaction. 
+11. Click **Voucher** to open the **Voucher transactions** form. The vendor balance account is replaced by the employee balance account, and the **Posting type** field is updated to **Employee balance**.
 
-12. Click **Voucher** to open the **Voucher transactions** form. The vendor balance account is replaced by the employee balance account, and the **Posting type** field is updated to **Employee balance**.
 
+## Create and post advance reports 
+
+Use this procedure to create, modify, post, inquire and print advance reports.
+
+### Create advance report
+
+1.  Click **Accounts payable** \> **Advance holders** \> **Advance report**.
+
+2. Select **New** to create an advance report. Alternatively, you can create a new advance report directly from **Advance holders** form - select **New** \> **Advance report**.
+
+3. Enter advance report date in **Date** field
+
+4. Advance report number will be automatically generated in **Advance report** field based on the number sequence defined in the parameters.
+
+5. Select an advance holder in **Employee number** field group.
+
+6. Enter the purpose of the advance in **Advance purpose**  field
+
+7. In **Header** view mode select **Options** FastTab to define confirmation dates and **Officials** FastTab to define responcible managers.
+
+### Generate advance report lines from expenses
+
+1. Click **Accounts payable** \> **Advance holders** \> **Advance report** and swith to **Lines** view mode.
+
+2. Click **Copy from expends** to open **Create advance report lines** form. In this form you can see all the expense types previously defined in the parameters.
+
+3. Select an expense line. In the **Date** field, enter the date of the transaction.
+
+4. In the **Document number** field, enter the number of the confirmed disbursement voucher.
+   > [!NOTE]
+   > <P>The entries in the <STRONG>Document name</STRONG>, <STRONG>Rate</STRONG>, and <STRONG>Currency</STRONG> fields are automatically displayed from the expense rates dictionary.</P>
+
+5. In the **Quantity of days** field, enter the number of days of the business trip.
+
+6. IIn the **To weekday** field, enter the daily expense amount.
+   > [!NOTE]
+   > <P>The <STRONG>Total amount</STRONG> field displays the total expense amount.</P>
+
+7. Click **Save** to transfer the entries to the **Advance report** form.
+   > [!NOTE]
+   > <P>The entry in the <STRONG>Ledger account</STRONG> field is displayed according to the expense rate posting setup. If the actual expense is more than the established rates, then a supplementary line for the excess amount is created when the expenses are transferred to the advance report. In this situation, the <STRONG>Over rate</STRONG> check box is selected automatically. The <STRONG>Line type</STRONG> field of the advance report that is generated by using the <STRONG>Copy from expends</STRONG> function displays the value <STRONG>Expense</STRONG>.</P>
 
 ## Closing balances for an advance holder 
 
