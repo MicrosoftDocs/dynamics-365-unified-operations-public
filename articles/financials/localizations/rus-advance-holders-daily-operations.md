@@ -188,8 +188,29 @@ Use this procedure to print a posted advance report. You can print an advance re
    
 1.  Click **Print** \> **Print** in **Actions pane** to open the **Advance report** form.
 
-4.  Click **OK** to print the advance report in Microsoft Excel format.
+2.  Click **OK** to print the advance report in Microsoft Excel format.
 
+
+### Reject advance report 
+
+You can reject advance reports that have been posted, and for which the status of the advance report is Posted. These reports should not have been settled. Factures are not created for these reports.
+
+1.  Click **Post** \> **Rejection** in **Actions** pane to to reject a selected advance report.
+
+2.  Click **Yes** to confirm rejection.
+
+3. The status of the advance report is set to **Rejected**.
+   
+    > [!NOTE]
+    > <P>When an advance report is rejected, reversed transactions are created for the advance holder. The <STRONG>Reversed</STRONG> check box is automatically selected in the <STRONG>Advance holder transactions</STRONG> form. The transactions are settled and reversed automatically.</P>
+
+4. Close the form.
+
+5. Click **Accounts payable** > **Advance holders** > **Advance holders**. Click **Transactions** to open the **Advance holder transactions** form.
+
+6. Click **Voucher** for a selected transaction, and verify that the **Correction** check box is selected.
+
+You can verify the distribution of expenses for the reversed transaction. Reversed or storno accounting transactions are distributed like the original transactions. However, the distributions for reversed or storno accounting transactions have a negative sign.
 
 ## Closing balances for an advance holder 
 
