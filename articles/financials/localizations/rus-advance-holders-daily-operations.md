@@ -31,16 +31,19 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-## Create and post reimbursement slips for advance holders 
+## Create and post disbursement slips for advance holders 
 
-Use this procedure to create and post reimbursement slips with advance holder details. The advance holder balances are posted to the related employee balance account.
+Use this procedure to create and post disbursement slips with advance holder details. The advance holder balances are posted to the related employee balance account.
 
 1.  Click **Cash and bank management** \> **Cash transactions** \> **Slip journal**.
 
-2.  Select **New** to create a slip journal. For more information, see **Register reimbursement or disbursement slips** chapter in [Cash - Setup and daily cash operations](../../financials/localizations/rus-setup-daily-cash-operations.md).
+2.  Select **New** to create a slip journal. For more information, see **Register reimbursement or disbursement slips** chapter in [Cash - Setup and daily cash operations](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-set-daily-cash-op/articles/financials/localizations/rus-setup-daily-cash-operations.md).
 
-3.  In the **1** form, on the **Action Pane**, click **Header view**, and then click the **Price and discount** FastTab.
+3.  In the **Lines** form, select **Advance holder** in **Offset account type** column, then in **Offset account** column select an advance holder and in **Credit** coulmn enter the amount.
 
+4. Approve and post the disbursement slip. For more information, see **Post a cash voucher with cash reimbursements and cash disbursements** chapter in [Cash - Setup and daily cash operations](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-set-daily-cash-op/articles/financials/localizations/rus-setup-daily-cash-operations.md).
+
+5. To inqure the related transactions and advance holder balance select **Transactions** or **Balance** forms in **Accounts payable** \> **Advance holders** \> **Advance holders** for the selected employee.
 
 ## Create and post vendor invoices with advance holder details 
 
