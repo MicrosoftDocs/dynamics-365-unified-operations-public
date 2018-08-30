@@ -31,6 +31,17 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
+## Create and post reimbursement slips for advance holders 
+
+Use this procedure to create and post reimbursement slips with advance holder details. The advance holder balances are posted to the related employee balance account.
+
+1.  Click **Cash and bank management** \> **Cash transactions** \> **Slip journal**.
+
+2.  Select **New** to create a slip journal. For more information, see **Register reimbursement or disbursement slips** chapter in [Cash - Setup and daily cash operations](../../financials/localizations/rus-setup-daily-cash-operations.md).
+
+3.  In the **1** form, on the **Action Pane**, click **Header view**, and then click the **Price and discount** FastTab.
+
+
 ## Create and post vendor invoices with advance holder details 
 
 Use this procedure to create and post vendor invoices with advance holder details. The advance holder balances are posted to the employee balance account instead of the vendor balance account.
