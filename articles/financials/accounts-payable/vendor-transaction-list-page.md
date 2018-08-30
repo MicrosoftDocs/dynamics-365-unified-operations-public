@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Vendor transaction list page
-description: This topic provides information about the Vendor transaction list page for Microsoft Dynamics 365 for Finance and Operations.
+title: Vendor transactions list page
+description: This topic provides information about the Vendor transactions list page for Microsoft Dynamics 365 for Finance and Operations.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
@@ -28,72 +28,78 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Vendor transaction list page
+# Vendor transactions list page
 
 [!include [banner](../includes/banner.md)]
 
 ## View settlements
 
-The **View settlements** tab on the action pane provides quick access to settlement history and more information about the whole settlement transaction. You can also show additional transactions that are related to the selected transaction, either because they were part of the same settlement or because they are payments that were created in the same payment journal.
+The **View settlements** button on the Action Pane provides quick access to the settlement history and more information about the whole settlement transaction. You can also show additional transactions that are related to the selected transaction, either because they were part of the same settlement or because they are payments that were created in the same payment journal.
 
 1. Select **Accounts payable \> All vendors**.
 2. Select a vendor that has transactions, and then select **Vendor \> Transactions**.
-3. Select a transaction to research.
-4. Select the **View settlements** tab on the action pane.
+3. Select a transaction to research, and then, on the Action Pane, select **View settlements**.
 
-    The **View settlements** dialog box opens and shows the selected transaction and all documents that are settled against it. This dialog box resembles the settlement history view, but it includes all related documents.
+    The **View settlements** dialog box appears, and shows the selected transaction and all documents that have been settled against it. This dialog box resembles the settlement history view, but it includes all related documents.
 
-5. You can perform various tasks from this dialog box. Select one or more vouchers, and then select one of the links:
+4. In the dialog box, you can perform various tasks. Select one or more vouchers, and then select one of the following buttons:
 
-    - **View related** – Click this link to display all the payment journal transactions that were created in the payment journal that is related to the selected document. In addition, all the settlements that are related to those payments appear. When you're viewing related payments, the label of this link changes to **View settlements**. Select **View settlements** to show only the transactions that were shown when you first opened the **View settlements** dialog box.
-    - **View history** – The settlement history for the vouchers appears. Select **Close** to close the dialog box.
-    - **View accounting** – All vouchers that are related to the selected documents appear. Select **Close** to close the dialog box.
+    - **View related** – Show all the payment journal transactions that were created in the payment journal that is related to the selected document. In addition, all the settlements that are related to those payments are shown. While you're viewing related payments, the label of this button changes to **View settlements**. Select **View settlements** to show only the transactions that were shown when you first opened the **View settlements** dialog box.
+    - **View history** – Show the settlement history for the vouchers. Select **Close** to close the dialog box.
+    - **View accounting** – Show all vouchers that are related to the selected documents. Select **Close** to close the dialog box.
     - **Export** – Export the selected vouchers to Microsoft Excel.
-    - **Settle transactions** – This link appears if the original document that was selected wasn't fully settled. When you select it, the **Settle transactions** dialog box appears, where you can select transactions for settlement.
-    - **Undo settlements** – This link appears if the original document that was selected was fully settled. When you select it, the **Undo settlements** dialog box appears, where you can undo the settlements that were done for that document.
+    - **Settle transactions** – This button appears only if the original document that was selected wasn't fully settled. When you select this button, the **Settle transactions** dialog box appears, where you can select transactions for settlement.
+    - **Undo settlements** – This button appears only if the original document that was selected was fully settled. When you select this button, the **Undo settlements** dialog box appears, where you can undo the settlements that were done for that document.
 
 ## Global transactions
 
-The Global transactions menu has been added to the Vendor form to allow you to view all transactions for a vendor across all legal entities. The vendor transaction list will only show transactions for the legal entities that the user has access to based on their security settings.  
+The **Global transactions** button has been added to the vendor. This button lets you view all transactions for a vendor across all legal entities. The **Vendor transactions** list page shows transactions only for the legal entities that the user has access to, based on his or her security settings.
 
-The list page will show all transactions for vendors that have the same party ID as the vendor that you started with. For example, if vendor US-001 in one legal entity has the same party ID as vendor DE-001 in another legal entity, then all transactions for both vendor IDs will be shown. 
+The list page will show all transactions for vendors that have the same party ID as the vendor that you started with. For example, if vendor US-001 in one legal entity has the same party ID as vendor DE-001 in another legal entity, all transactions for both vendor IDs are shown.
 
-The menus for the Vendor transactions list page will also change based on the legal entity for the transaction. For example, if a feature is only available for Swiss legal entities, then those menu choices will only appear when a Swiss transaction is selected.
+The menus on the **Vendor transactions** list page vary, depending on the legal entity for the transaction. For example, if a feature is available only for Swiss legal entities, the menu options for that feature appear only when a Swiss transaction is selected.
 
-To access the feature:
-1. Open Accounts receivable > Vendor 
-2. Select a cendor
-3. Select Transactions > Global transactions
+To access the feature, follow these steps.
 
-## More transaction filters 
+1. Select **Accounts payable** \> **Vendors**.
+2. Select a vendor, and then select **Transactions** \> **Global transactions**.
 
-The filter for showing open transactions has been replaced with a new filter that allows you to view more combinations of transactions. 
-1. Show All will show all transactions for the selected vendors (open and closed).
-2. Show Closed will show only transactions that have been fully settled and closed.
-3. Show Open will show only transactions that have been not been fully settled.
-4. Show Open as of will show only transactions that have been not been fully settled as of a date that you specify. When you make this selection, you can change the date shown next to the filter. Transactions that have a Last settlement date after the date that you specify will be shown in the list, even if the transaction is fully settled as of today. However, the balance represents the balances as of today, not as of the date selected.
+## More transaction filters
 
-A filter for removing currency translation transactions has also been added. Click on the check box and currency translation transactions will not be shown.
+The filter for showing open transactions has been replaced with a new filter that lets you view more combinations of transactions. The following options are available in the **Show** field:
 
-**Easier access to modifying the due date and discount dates**
+- **All** – Show all transactions for the selected vendors (open and closed).
+- **Closed** – Show only transactions that have been fully settled and closed.
+- **Open** – Show only transactions that haven't been fully settled.
+- **Open as of** – Show only transactions that haven't been fully settled as of a date that you specify. When you select this option, you can change the date that is shown next to the filter. Transactions that have a **Last settlement date** value after the date that you specify are shown in the list, even if those transactions are fully settled as of the current date. However, the balance represents the balances as of the current date, not as of the selected date.
 
-It is possible to update due dates and discount dates for an open vendor transaction. We have improved the experience in 8.1 by allowing you to add the due date to the vendor transactions list page. You can also click on the due date and change due dates, discounts dates, payment terms, and cash discount terms in a single form.
+A filter has also been added that lets you hide currency translation transactions. Just select the check box.
 
-***Activating the feature***
-To add the due date to the vendor transaction form and change payment settings for a transaction using the new form:
-1. Click on Accounts receivable > Setup > Accounts receivable parameters
-2. Select Settlements
-3. Click on Update due date and cash discount date. This selection will add the due date to the vendor transaction list and allow you to more easily modify the due date and the cash discount dates for the transaction.
-4. To enable this feature, we have added new fields to the vendor transctions. We will fill in those fields when a new transaction is completed. We will also fill in those fields when you open the new due date form. However, if you want to update all existing transactions immediately, click on the BUTTON NAME HERE and the fields will be updated. Click on BUTTON NAME HERE if you only want to store the information for new transactions. 
+## More easily modify due dates and discount dates
 
-## Modifying the payment settings
+You can update due dates and discount dates for open vendor transactions. In release 8.1, the experience has been improved. You can now add due dates to the **Vendor transactions** list page. By selecting the due date, you can also change due dates, discounts dates, payment terms, and cash discount terms in one new dialog box.
 
-The vendor transactions list page shows all transactions for a vendor. When you click on a due date for a transaction, a form will appear, showing the base date for due date and discount calculations, the due date, the payment terms, the cash discount terms, and the cash discount dates. 
+### Activate the feature
 
-Each field will have a different effect on the transaction when you edit it:
-1. Edit the base date: the due date and discount dates will be changed as if the base date is the document date
-2. Edit the due date: only the due date will change
-3. Edit the discount dates: only the discount dates will change
-4. Edit the payment terms: the due date will change based on the base date and the payment terms
-5. Edit the cash discount terms: the cash discounts will change based on the base date and the cash discount terms
-6. Click Close to save your changes.
+To add due dates to the **Vendor transactions** list page and change payment settings for a transaction by using the new dialog box, follow these steps.
+
+1. Select **Accounts receivable \> Setup \> Accounts receivable parameters**.
+2. Select **Settlements**.
+3. Select **Update due date and cash discount date**.
+4. To enable this feature, new fields have been added to vendor transactions. Those fields will be filled in when a new transaction is completed. They will also be filled in when you open the new due date dialog box. To update all existing transactions immediately, select **BUTTON NAME HERE**. Alternatively, to fill in the fields only for new transactions, select **BUTTON NAME HERE**.
+
+The due date is now added to the **Vendor transactions** list page, and you can more easily modify the due date and cash discount dates for transactions.
+
+### Modify the payment settings
+
+The **Vendor transactions** list page shows all transactions for a vendor. When you select the due date for a transaction, a dialog box appears. This dialog box shows the base date for due date and discount calculations, the due date, the payment terms, the cash discount terms, and the cash discount dates.
+
+Each field has a different effect on the transaction when you edit it:
+
+- **Edit the base date:** The due date and discount dates are changed as if the base date is the document date.
+- **Edit the due date:** Only the due date is changed
+- **Edit the discount dates:** Only the discount dates are changed.
+- **Edit the payment terms:** The due date is changed, based on the base date and the payment terms.
+- **Edit the cash discount terms:** The cash discounts are changed, based on the base date and the cash discount terms.
+
+When you've finished editing the payment settings, select **Close** to save your changes.
