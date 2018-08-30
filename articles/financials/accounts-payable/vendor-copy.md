@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Copy a vendor to another legal entity and keep the same vendor ID using shared number sequences
-description: You can copy a vendor to another legal entity and keep the same vendor ID when a shared number sequence is used
+title: Copy vendors by using shared number sequences
+description: This topic explains how to use shared number sequences to copy a vendor to another legal entity but keep the same vendor ID.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
@@ -30,45 +30,45 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Copy a vendor using global number sequences
+# Copy vendors by using shared number sequences
 
 [!include [banner](../includes/banner.md)]
 
-You can use a shared number sequence for assigning vendor IDs. In addition, you will be able to copy
-a vendor from one legal entity to another legal entity and use the same vendor ID for both legal entities.  
+You can use shared number sequences to assign vendor IDs. Shared number sequences also let you copy vendors from one legal entity to another legal entity but use the same vendor IDs in both legal entities.
 
 ## Setup
 
-The feature is activated when you use a shared number sequence for assigning vendor IDs. You must use the same number sequence in each legal where you want to copy the vendor.  Change the vendor number sequence to the new number sequence on the parameters page for each legal entity using Accounts payable > Parameters > Number sequences.
+The feature is activated when you use a shared number sequence to assign vendor IDs. You must use the same number sequence in every legal entity that you want to copy a vendor to. You change the vendor number sequence on the **Accounts payable parameters** page for each legal entity. Select **Accounts payable** \> **Parameters** \> **Number sequences**.
 
-You can also set up vendor number sequences for each vendor group and these number sequences must also be shared. The number sequences for a vendor group will be used first. If there is no number sequence specified for a vendor group, then the number sequence found in the parameters form will be used.
+You can also set up vendor number sequences for each vendor group. These number sequences must also be shared. The number sequence for a vendor group is used first. If no number sequence is specified for a vendor group, the number sequence that is specified on the **Accounts payable parameters** page is used.
 
-You can still use manual vendor IDs and copy vendors between legal entities. However, if you try to copy a vendor to a legal entity where the vendor ID already exists, the copy process will not be started.
+You can also copy vendors between legal entities if you use manual vendor IDs. However, if you try to copy a vendor to a legal entity where the vendor ID already exists, the copy process won't be started.
 
 ## Copy a vendor
 
-To copy a vendor, click on New to display the new vendor page. Notice that, unlike previous versions of Dynamics 365 for Finance and Operations, the new vendor ID will not be assigned immediately. The vendor group has not yet been selected so it is not possible to identify the correct number sequence to use yet. In addition, you may be creating a new vendor or you may be copying a vendor. Until we know what action will be taken, the vendor ID will not be assigned until you click on the Save button at the bottom of the form. 
+To copy a vendor, select **New** to open the new vendor page. Notice that the new vendor ID isn't assigned immediately. This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations. Because you haven't yet selected the vendor group, the system can't determine the correct number sequence to use. Additionally, it can't determine whether you're trying to create a new vendor or copy a vendor. Therefore, the vendor ID isn't assigned until you select **Save** at the bottom of the page.
 
-If you are creating a new vendor, you can continue filling in all of the fields as you normally would. When you are done, click on Save and you will see that the vendor ID was assigned automatically or, for manual number sequences, your vendor ID was used.
+If you're creating a new vendor, you can continue to fill in all the fields as you usually do. When you've finished, and you select **Save**, you will see that the vendor ID was assigned automatically. Alternatively, for manual number sequences, you will see that your manual vendor ID was used.
 
-To copy a vendor, select the Name field and enter one or more characters that represent the vendor that you are looking for. The search form will display a list of parties that may represent the vendor that you are looking for. When you click on one of the parties, you can see additional information on the right side of the page
-1) The General tab shows the party's phone number and address
-2) The Role tab shows the roles that the selected party can have and the legal entity in which it has the role
-3) Tax registration ID shows the tax registration IDs assigned to the party
+To copy a vendor, in the **Name** field, enter one or more characters that represent the vendor that you're looking for. A search dialog box shows a list of parties that might represent the vendor that you're looking for. When you select one of the parties, additional information appears on the right side of the dialog box:
 
-You can only copy a party that has a vendor role and has that role in a legal entity that is not in the current legal entity. When you find a party that fits this criteria, follow these steps:
-1) A Copy vendor field is displayed and defaulted to No. 
-2) If you want to copy that vendor into the current legal entity, change the Copy vendor field to Yes. 
-3) Another field, Legal entity, is displayed. Select the legal entity from which you want to copy the vendor. If the vendor only exists in one legal entity, the field will default to that value.
-4) Click on Select and the new vendor is created
+- The **General** tab shows the party's phone number and address.
+- The **Roles** tab shows the roles that the selected party can have and the legal entity where it has each role.
+- **Tax registration ID** shows the tax registration IDs that are assigned to the party.
+
+You can copy a party only if it has a vendor role, and if it has that role in a legal entity that isn't the current legal entity. When you find a party that meets these criteria, follow these steps.
+
+1. A **Copy vendor** option appears. By default, this option is set to **No**. To copy the vendor to the current legal entity, set the option to **Yes**. 
+2. A **Legal entity** field appears. Select the legal entity to copy the vendor from. If the vendor exists in only one legal entity, the field is set to that legal entity by default.
+3. Select **Select**. The new vendor is created.
 
 ## Validation
 
-When you copy a vendor, an attempt is made to save the new vendor information. All validations are executed to ensure that the data that was copied is good. If any validations fail, an error message will be display for each validation that did fail, explaining what information needs to be updated. The new vendor will not be saved until you have fixed the validation errors. Once they are fixed, you can save the copy of the vendor.
+When you copy a vendor, the system tries to save the new vendor information. Validations are run to verify that the data that was copied is good. You receive an error message for every validation that fails. The error messages explain what information must be updated. The copy of the vendor can't be saved until you fix all the validation errors.
 
-**Copying a vendor using the tax exempt search**
+## Copy a vendor by using the Tax exempt number search feature
 
-You can also copy vendors using the tax exempt number search found under the Vendor > Registration menu. A form will be displayed showing tax exempt numbers, the vendor ID, vendor name, and legal entity in which the tax exempt ID is used. You can only copy a vendor that is in a legal entity that is not in the current legal entity. When you click on a vendor that fits this criteria, follow these steps:
-1) A Copy vendor field is displayed and defaulted to No. 
-2) If you want to copy that vendor into the current legal entity, change the Copy vendor field to Yes. 
-3) Click on Select and the new vendor is created
+You can also copy vendors by using the Tax exempt number search feature that is available under **Vendor** \> **Registration**. The page that appears shows tax exempt numbers, the vendor ID, the vendor name, and the legal entity where the tax exempt ID is used. You can copy a vendor only if it's in a legal entity that isn't the current legal entity. After you select a vendor that meets this criterion, follow these steps.
+
+1. A **Copy vendor** option appears. By default, this option is set to **No**. To copy the vendor to the current legal entity, set the option to **Yes**.
+2. Select **Select**. The new vendor is created.
