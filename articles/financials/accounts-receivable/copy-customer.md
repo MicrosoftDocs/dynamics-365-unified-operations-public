@@ -67,7 +67,7 @@ When you copy a customer, the system tries to save the new customer information.
 
 ## Copy a customer by using tax exempt number search feature
 
-You can also copy customers by using the Tax exempt number search feature that is available under **Customer** \> **Registration**. The dialog box that appears shows tax exempt numbers, the customer ID, the customer name, and the legal entity where the tax exempt ID is used. You can copy a customer only if it's in a legal entity that isn't the current legal entity. After you select a customer that meets this criterion, follow these steps.
+You can also copy vendors by using the Tax exempt number search feature that is in the **Registration** group on the **Customer** tab on the Action Pane of the **All customers** page. The **Tax exempt number search** dialog box that appears shows tax exempt numbers, the customer ID, the customer name, and the legal entity where the tax exempt ID is used. You can copy a customer only if it's in a legal entity that isn't the current legal entity. After you select a customer that meets this criterion, follow these steps.
 
 1. A **Copy customer** option appears. By default, this option is set to **No**. To copy the customer to the current legal entity, set the option to **Yes**. 
 2. Select **Select**. The new customer is created.
