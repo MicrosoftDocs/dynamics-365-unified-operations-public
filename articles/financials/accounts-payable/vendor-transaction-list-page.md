@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 8.1
 The **View settlements** button on the Action Pane provides quick access to the settlement history and more information about the whole settlement transaction. You can also show additional transactions that are related to the selected transaction, either because they were part of the same settlement or because they are payments that were created in the same payment journal.
 
 1. Select **Accounts payable \> All vendors**.
-2. Select a vendor that has transactions, and then select **Vendor \> Transactions**.
+2. Select a vendor that has transactions, and then, on the Action Pane, on the **Vendor** tab, select **Transactions**.
 3. Select a transaction to research, and then, on the Action Pane, select **View settlements**.
 
     The **View settlements** dialog box appears, and shows the selected transaction and all documents that have been settled against it. This dialog box resembles the settlement history view, but it includes all related documents.
@@ -61,8 +61,8 @@ The menus on the **Vendor transactions** list page vary, depending on the legal 
 
 To access the feature, follow these steps.
 
-1. Select **Accounts payable** \> **Vendors**.
-2. Select a vendor, and then select **Transactions** \> **Global transactions**.
+1. Select **Accounts payable** \> **All vendors**.
+2. Select a vendor, and then, on the Action Pane, on the **Vendor** tab, in the **Transactions** group, select **Global transactions**.
 
 ## More transaction filters
 
@@ -71,22 +71,21 @@ The filter for showing open transactions has been replaced with a new filter tha
 - **All** – Show all transactions for the selected vendors (open and closed).
 - **Closed** – Show only transactions that have been fully settled and closed.
 - **Open** – Show only transactions that haven't been fully settled.
-- **Open as of** – Show only transactions that haven't been fully settled as of a date that you specify. When you select this option, you can change the date that is shown next to the filter. Transactions that have a **Last settlement date** value after the date that you specify are shown in the list, even if those transactions are fully settled as of the current date. However, the balance represents the balances as of the current date, not as of the selected date.
+- **Open as of date** – Show only transactions that haven't been fully settled as of a date that you specify. When you select this option, you can change the date that is shown next to the filter. Transactions that have a **Last settlement date** value after the date that you specify are shown in the list, even if those transactions are fully settled as of the current date. However, the balance represents the balances as of the current date, not as of the selected date.
 
-A filter has also been added that lets you hide currency translation transactions. Just select the check box.
+A filter has also been added that lets you hide currency translation transactions. Just select the **Hide currency revaluations** check box.
 
 ## More easily modify due dates and discount dates
 
-You can update due dates and discount dates for open vendor transactions. In release 8.1, the experience has been improved. You can now add due dates to the **Vendor transactions** list page. By selecting the due date, you can also change due dates, discounts dates, payment terms, and cash discount terms in one new dialog box.
+You can update due dates and discount dates for open customer transactions. In release 8.1, the experience has been improved. You can now add due dates to the **Vendor transactions** list page. By clicking on the due date in the **Vendor transactions** list page, you can also change due dates, discount dates, payment terms, and cash discount terms in the **Update due date and cash discount dates**  dialog box.
 
 ### Activate the feature
 
-To add due dates to the **Vendor transactions** list page and change payment settings for a transaction by using the new dialog box, follow these steps.
+To add due dates to the **Vendor transactions** list page and change payment settings for a transaction by using the **Update due date and cash discount dates** dialog box, follow these steps.
 
-1. Select **Accounts receivable \> Setup \> Accounts receivable parameters**.
-2. Select **Settlements**.
-3. Select **Update due date and cash discount date**.
-4. To enable this feature, new fields have been added to vendor transactions. Those fields will be filled in when a new transaction is completed. They will also be filled in when you open the new due date dialog box. To update all existing transactions immediately, select **BUTTON NAME HERE**. Alternatively, to fill in the fields only for new transactions, select **BUTTON NAME HERE**.
+1. Select **Accounts payable \> Setup \> Accounts payable parameters**.
+2. On the **Settlements** tab, Set the **Show due date and allow edit** option to **Yes**.
+3. To enable this feature, new fields have been added to vendor transactions. Those fields will be filled in when a new transaction is completed. They will also be filled in when you open the **Update due date and cash discount dates** dialog box. When you set the **Show due date and allow edit** option to **Yes**, you will see the **Update payment information** dialog box.  To update existing transactions immediately, select **Update all existing transactions**. Alternatively, to fill in the fields only for new transactions, select **Continue without update**.
 
 The due date is now added to the **Vendor transactions** list page, and you can more easily modify the due date and cash discount dates for transactions.
 
