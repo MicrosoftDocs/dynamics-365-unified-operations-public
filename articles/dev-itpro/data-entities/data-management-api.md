@@ -152,7 +152,7 @@ HTTP/1.1 200 OK
 | string executionId | The execution ID of the data import. |
 
 > [!NOTE]
-> ImportFromPacakge() uses batch to perform the import. Hence, parallel processing rules in data management must be used to perform parallel imports. ImportFromPackage() must not be called in parallel threads for this purpose and doing so will result in failures. 
+> ImportFromPacakge() uses a batch to perform the import. This means that parallel processing rules in data management must be used to perform parallel imports. ImportFromPackage() must not be called in parallel threads, as this will result in failure. 
 
 ## Export APIs
 The following APIs are used to do file (data package) exports.
