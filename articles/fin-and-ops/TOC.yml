@@ -648,6 +648,8 @@
         href: ../financials/cash-bank-management/cash-discounts.md
       - name: Cash discounts for overpayments
         href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
+      - name: Manage IBAN account validation
+        href: ../financials/cash-bank-management/iban-validation.md
       - name: Settlement overview
         href: ../financials/cash-bank-management/settlement-overview.md
       - name: Settlement overview for centralized payments
