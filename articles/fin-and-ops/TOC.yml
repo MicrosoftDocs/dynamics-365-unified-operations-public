@@ -521,6 +521,8 @@
           href: ../financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment.md
         - name: Vendor payments for a partial amount
           href: ../financials/accounts-payable/vendor-payments-partial-amount.md
+        - name: Vendor transactions list page
+          href: ../financials/accounts-payable/vendor-transaction-list-page.md
     - name: Accounts receivable
       href: ../financials/accounts-receivable/accounts-receivable.md
       items:
