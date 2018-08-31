@@ -612,6 +612,8 @@
           href: ../financials/accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
           href: ../financials/accounts-receivable/customer-payments-partial-amount.md
+        - name: Customer transactions list page
+          href: ../financials/accounts-receivable/customer-transactions-list-page.md
     - name: Budgeting
       href: ../financials/budgeting/budgeting-overview.md
       items:
