@@ -35,8 +35,8 @@ ms.dyn365.ops.version: 8.0.4
 
 The **View settlements** button on the Action Pane provides quick access to the settlement history and more information about the whole settlement transaction. You can also show additional transactions that are related to the selected transaction, either because they were part of the same settlement or because they are payments that were created in the same payment journal.
 
-1. Select **Accounts receivable \> Customers**.
-2. Select a customer that has transactions, and then select **Customer \> Transactions**.
+1. Select **Accounts receivable \> All customers**.
+2. Select a customer that has transactions, and then, on the Action Pane, on the **Customer** tab, select **Transactions**.
 3. Select a transaction to research, and then, on the Action Pane, select **View settlements**.
 
     The **View settlements** dialog box appears, and shows the selected transaction and all documents that have been settled against it. This dialog box resembles the settlement history view, but it includes all related documents.
@@ -60,8 +60,8 @@ The menus on the **Customer transactions** list page vary, depending on the lega
 
 To access the feature, follow these steps.
 
-1. Select **Accounts receivable \> Customers**.
-2. Select a customer, and then select **Transactions \> Global transactions**.
+1. Select **Accounts receivable \> All customers**.
+2. Select a customer, and then, on the Action Pane, on the **Customer** tab, in the **Transactions** group, select **Global transactions**.
 
 ## More transaction filters 
 
@@ -70,28 +70,27 @@ The filter for showing open transactions has been replaced with a new filter tha
 - **All** – Show all transactions for the selected customers (open and closed).
 - **Closed** – Show only transactions that have been fully settled and closed.
 - **Open** – Show only transactions that haven't been fully settled.
-- **Open as of** – Show only transactions that haven't been fully settled as of a date that you specify. When you select this option, you can change the date that is shown next to the filter. Transactions that have a **Last settlement date** value after the date that you specify are shown in the list, even if those transactions are fully settled as of the current date. However, the balance represents the balances as of the current date, not as of the selected date.
+- **Open as of date** – Show only transactions that haven't been fully settled as of a date that you specify. When you select this option, you can change the date that is shown next to the filter. Transactions that have a **Last settlement date** value after the date that you specify are shown in the list, even if those transactions are fully settled as of the current date. However, the balance represents the balances as of the current date, not as of the selected date.
 
-A filter has also been added that lets you hide currency translation transactions. Just select the check box.
+A filter has also been added that lets you hide currency translation transactions. Just select the **Hide currency revaluations** check box.
 
 ## More easily modify due dates and discount dates
 
-You can update due dates and discount dates for open customer transactions. In release 8.1, the experience has been improved. You can now add due dates to the **Customer transactions** list page. By selecting the due date, you can also change due dates, discount dates, payment terms, and cash discount terms in one new dialog box.
+You can update due dates and discount dates for open customer transactions. In release 8.1, the experience has been improved. You can now add due dates to the **Customer transactions** list page. By clicking on the due date in the **Customer transactions** list page, you can also change due dates, discount dates, payment terms, and cash discount terms in the **Update due date and cash discount dates**  dialog box.
 
 ### Activate the feature
 
-To add due dates to the **Customer transactions** list page and change payment settings for a transaction by using the new dialog box, follow these steps.
+To add due dates to the **Customer transactions** list page and change payment settings for a transaction by using the **Update due date and cash discount dates** dialog box, follow these steps.
 
 1. Select **Accounts receivable \> Setup \> Accounts receivable parameters**.
-2. Select **Settlements**.
-3. Select **Update due date and cash discount date**.
-4. To enable this feature, new fields have been added to customer transactions. Those fields will be filled in when a new transaction is completed. They will also be filled in when you open the new due date dialog box. To update all existing transactions immediately, select **BUTTON NAME HERE**. Alternatively, to fill in the fields only for new transactions, select **BUTTON NAME HERE**.
+2. On the **Settlements** tab, Set the **Show due date and allow edit** option to **Yes**.
+3. To enable this feature, new fields have been added to customer transactions. Those fields will be filled in when a new transaction is completed. They will also be filled in when you open the **Update due date and cash discount dates** dialog box. When you set the **Show due date and allow edit** option to **Yes**, you will see the **Update payment information** dialog box.  To update existing transactions immediately, select **Update all existing transactions**. Alternatively, to fill in the fields only for new transactions, select **Continue without update**.
 
 The due date is now added to the **Customer transactions** list page, and you can more easily modify the due date and cash discount dates for transactions.
 
 ### Modify the payment settings
 
-The **Customer transactions** list page shows all transactions for a customer. When you select the due date for a transaction, a dialog box appears. This dialog box shows the base date for due date and discount calculations, the due date, the payment terms, the cash discount terms, and the cash discount dates.
+The **Customer transactions** list page shows all transactions for a customer. When you select the due date for a transaction, the **Update due date and cash discount dates** dialog box appears. This dialog box shows the base date for due date and discount calculations, the due date, the payment terms, the cash discount terms, and the cash discount dates.
 
 Each field has a different effect on the transaction when you edit it:
 
