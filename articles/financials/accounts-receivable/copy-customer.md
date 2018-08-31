@@ -38,7 +38,7 @@ You can use shared number sequences to assign customer IDs. Shared number sequen
 
 ## Setup
 
-The feature is activated when you use a shared number sequence to assign customer IDs. You must use the same number sequence in every legal entity that you want to copy a customer to. You change the customer number sequence on the **Accounts receivable parameters** page for each legal entity. Select **Accounts receivable** \> **Parameters** \> **Number sequences**.
+The feature is activated when you use a shared number sequence to assign customer IDs. You must use the same number sequence in every legal entity that you want to copy a customer to. You change the customer number sequence on the **Accounts receivable parameters** page for each legal entity. Select **Accounts receivable** \> **Parameters** \> **Number sequences** tab.
 
 You can also set up customer number sequences for each customer group. These number sequences must also be shared. The number sequence for a customer group is used first. If no number sequence is specified for a customer group, the number sequence that is specified on the **Accounts receivable parameters** page is used.
 
@@ -46,7 +46,7 @@ You can also copy customers between legal entities if you use manual customer ID
 
 ## Copy a customer
 
-To copy a customer, select **New** to open the new customer page. Notice that the new customer ID isn't assigned immediately. This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations. Because you haven't yet selected the customer group, the system can't determine the correct number sequence to use. Additionally, it can't determine whether you're trying to create a new customer or copy a customer. Therefore, the customer ID isn't assigned until you select **Save** at the bottom of the page.
+To copy a customer, select **New** on the **All customers** list page to open the **Create customer** dialog box. Notice that the new customer ID isn't assigned immediately. This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations. Because you haven't yet selected the customer group, the system can't determine the correct number sequence to use. Additionally, it can't determine whether you're trying to create a new customer or copy a customer. Therefore, the customer ID isn't assigned until you select **Save** at the bottom of the dialog box.
 
 If you're creating a new customer, you can continue to fill in all the fields as you usually do. When you've finished, and you select **Save**, you will see that the customer ID was assigned automatically. Alternatively, for manual number sequences, you will see that your manual customer ID was used.
 
@@ -54,7 +54,7 @@ To copy a customer, in the **Name** field, enter one or more characters that rep
 
 - The **General** tab shows the party's phone number and address.
 - The **Roles** tab shows the roles that the selected party can have and the legal entity where it has each role.
-- **Tax registration ID** shows the tax registration IDs that are assigned to the party.
+- **Tax registration ID** tab shows the tax registration IDs that are assigned to the party.
 
 You can copy a party only if it has a customer role, and if it has that role in a legal entity that isn't the current legal entity. When you find a party that meets these criteria, follow these steps.
 
@@ -68,7 +68,7 @@ When you copy a customer, the system tries to save the new customer information.
 
 ## Copy a customer by using tax exempt number search feature
 
-You can also copy customers by using the Tax exempt number search feature that is available under **Customer** \> **Registration**. The page that appears shows tax exempt numbers, the customer ID, the customer name, and the legal entity where the tax exempt ID is used. You can copy a customer only if it's in a legal entity that isn't the current legal entity. After you select a customer that meets this criterion, follow these steps.
+You can also copy customers by using the Tax exempt number search feature that is available under **Customer** \> **Registration**. The dialog box that appears shows tax exempt numbers, the customer ID, the customer name, and the legal entity where the tax exempt ID is used. You can copy a customer only if it's in a legal entity that isn't the current legal entity. After you select a customer that meets this criterion, follow these steps.
 
 1. A **Copy customer** option appears. By default, this option is set to **No**. To copy the customer to the current legal entity, set the option to **Yes**. 
 2. Select **Select**. The new customer is created.
