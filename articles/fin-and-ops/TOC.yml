@@ -462,6 +462,8 @@
         href: ../financials/accounts-payable/set-up-generate-positive-pay-files.md
       - name: Default offset accounts for vendor invoice journals and invoice approval journals
         href: ../financials/accounts-payable/default-offset-accounts-vendor-invoice-journals.md
+      - name: Vendor workflow
+        href: ../financials/accounts-payable/vendor-workflow.md
       - name: Resolve discrepancies during invoice totals matching
         href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
         items:
