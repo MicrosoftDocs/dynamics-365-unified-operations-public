@@ -592,6 +592,8 @@
         href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Set up and generate accounts receivable aging information
         href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+      - name: Copy customers by using shared number sequences
+        href: ../financials/accounts-receivable/copy-customer.md
       - name: Payments and settlements
         items:
         - name: Customer payment overview
