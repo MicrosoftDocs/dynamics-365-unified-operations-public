@@ -38,7 +38,7 @@ You can use shared number sequences to assign customer IDs. Shared number sequen
 
 ## Setup
 
-The feature is activated when you use a shared number sequence to assign customer IDs. You must use the same number sequence in every legal entity that you want to copy a customer to. You change the customer number sequence on the **Accounts receivable parameters** page for each legal entity. Select **Accounts receivable** \> **Parameters** \> **Number sequences** tab.
+The feature is activated when you use a shared number sequence to assign customer IDs. You must use the same number sequence in every legal entity that you want to copy a customer to. You change the customer number sequence on the **Accounts receivable parameters** page for each legal entity. Select **Accounts receivable** \> **Parameters**, and then select the **Number sequences** tab.
 
 You can also set up customer number sequences for each customer group. These number sequences must also be shared. The number sequence for a customer group is used first. If no number sequence is specified for a customer group, the number sequence that is specified on the **Accounts receivable parameters** page is used.
 
