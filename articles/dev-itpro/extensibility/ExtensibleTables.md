@@ -44,7 +44,7 @@ If an extensible uniqueness constraint on multiple columns is required, consider
 ## Data events
 Table have a large number of data events predefined, that automatically are raised.  These are great extension points you provide by free. 
 
-Avoid calling doInsert(), doUpdate() and doDelete() as this prevents the data events from being raised, and makes your table harder to extend. Instead call insert(), update() and delete().
+Avoid calling ```doInsert()```, ```doUpdate()``` and ```doDelete()``` as this prevents the data events from being raised, and makes your table harder to extend. Instead call ```insert()```, ```update()``` and ```delete()```.
 
 ## Field groups
 Always use field groups to group related fields and build forms and reports.  Doing this consistently enables extension to surface additional fields in forms and reports by simply extending the field group.
