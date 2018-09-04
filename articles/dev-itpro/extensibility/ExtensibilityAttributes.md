@@ -50,7 +50,7 @@ For protected and public methods, you can opt out, by decorating the method with
 
 You cannot opt-in for private methods.
 
-Best practices when writing code
+####Best practices when writing code
 + When a method is hookable the compiler will generate extra IL code to enable the method as an extension point. This extra code has a small performance overhead, which in most cases is negligible. However, for performance critical methods, consider marking the method as not hookable.
 
 ## Wrappable
@@ -74,7 +74,7 @@ Methods must be wrappable to be replaceable.
 For wrappable methods, you can opt in by decorating the method with:
 ```[Replaceable]```
 
-### Best practices when writing code
+#### Best practices when writing code
 Replaceable provides the ability to extend a method using chain of command and to skip the execution of next. Hence, an important consideration to make before allowing a method to be replaceable is to thoroughly assess the functional impact, when the execution of the method is skipped by the extender.
 			
 + DO ensure that methods decorated with ```[Replaceable]``` have XML documentation describing the responsibility of the method.
@@ -89,7 +89,7 @@ Replaceable provides the ability to extend a method using chain of command and t
   - Lookups
   - Jumprefs
 
-### Best practices for extenders
+#### Best practices for extenders
 + DO NOT write logic with a different responsibility than the logic being replaced.
 + DO call the base functionality (call next) when the replacing logic does not apply.
 + AVOID replacing logic completely by not calling the base functionality (call next)
