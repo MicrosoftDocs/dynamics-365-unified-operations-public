@@ -71,7 +71,7 @@ Create concise interfaces. This principle enables extenders to provide replaceme
 + **Dependency inversion**
 Depend on abstractions, not on concretions. This principle enables decoupling, and allows extenders to provide concrete instances conforming to the abstraction your logic depends on.
   
-Read more: [https://en.wikipedia.org/wiki/SOLID] (https://en.wikipedia.org/wiki/SOLID)
+Read more: [SOLID Principles] (https://en.wikipedia.org/wiki/SOLID)
 
 ### Clean code
 Clean code reads like an article. The name of a method provides the heading of the article. Then follows the body of the method - which is really just few lines of summary. The summary is calling few other methods with good descriptive names.  This way the reader can keep exploring more and more details, and stop at any time - without missing any conceptual understanding.
@@ -96,9 +96,9 @@ public void processOrder(SalesOrder _salesOrder)
 In X++ every (protected and public) method is an extension point - writing clean code, will automatically produce extensible code.  In the example above, an extender can change how approval, confirmation and rejection is implemented.  If those implementations had been inline, the code would not be extensible.
 
 There are many resources for learning to write clean code:
-+ [https://www.pluralsight.com/courses/writing-clean-code-humans] (https://www.pluralsight.com/courses/writing-clean-code-humans)
-+ [https:://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882] (https:://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
-+ [https://cleancoders.com/] (https://cleancoders.com/)
++ [Pluralsight - Clean Code: Writing Code for Humans] (https://www.pluralsight.com/courses/writing-clean-code-humans)
++ [Clean Code: A Handbook of Agile Software Craftsmanship] (https:://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
++ [Clean Coders] (https://cleancoders.com/)
 
 ### D.R.Y.
 **Don't Repeat Yourself.** Avoid redundancy in your logic to prevent misalignment of implementations. With extensible code this is even more important, as the extender may not extend all required pieces, leaving the solution broken unintentionally.
