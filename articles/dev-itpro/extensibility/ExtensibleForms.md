@@ -37,6 +37,7 @@ ms.dyn365.ops.version: Platform update 20
 + CoC give access to the form non private members, the same as for classes.
 + CoC is enabled for nested classes which implies that methods defined within various levels on the form is extensible.
 
+> [!NOTE]
 > One limitation to this is for form data source methods - only methods defined in the kernel are enabled for extensions. The ability to extend methods defined on the form datasource will be available in one of the coming platform updates.
 
 ## Field groups:
