@@ -82,7 +82,7 @@ Below is a list of some types of changes that could potentially break someone.
 + **Changing a class member from public or protected to protected or private**
 	- Consumers could have queried or assigned values to the field
   
-## Classes, Interfaces
+### Classes, Interfaces
 + **Adding an abstract method to a class**
 	- Consumers could have created a derived type
 + **Adding final to a class**
@@ -92,42 +92,42 @@ Below is a list of some types of changes that could potentially break someone.
 + **Obsoleting a public class and stop instantiating the class.**
 	- Consumers could have overridden, wrapped or subscribed to the instance methods
 
-## Methods
-	• Changing access modifier from protected or public to another access modifier
-		○ Consumers could have called, overridden, wrapped or subscribed to the method
-	• Making a concrete public or protected method abstract
-		○ Consumers may have subclasses to the class which have not implemented the method and may be even callin super.
-	• Renaming method parameters
-		○ Consumers could have dependencies on parameters by name (via args or externally from C#, f. ex.)
-	• Adding, Removing or changing type of a method parameter on protected or public method
-		○ Consumers could have called, overridden, wrapped or subscribed to the method
-	• Adding or Removing a default method parameter on protected or public method
-		○ Consumers could have wrapped or subscribed to the method
-	• Changing the return type of a method 
-		○ Consumers could have called, overridden, wrapped or subscribed to the method
-	• Adding Hookable(false) to a protected or public method
-		○ Consumers could have wrapped or subscribed to the method
-	• Adding Wrappable(false) to a protected or public method
-		○ Consumers could have wrapped the method
-	• Removing Hookable(true) from a private or protected method
-		○ Consumers could have subscribed to the method
-	• Removing Wrappable(true) from a private method
-		○ Consumers could have wrapped the method
-	• Removing Replaceable(true) from a method
-		○ Consumers could have wrapped the method conditionally
-	• Adding final to a protected or public method
-		○ Consumers could have overridden, wrapped or subscribed to the method
-	• Changing a method from instance to static or vice versa
-		○ Consumers could have called, overridden, wrapped or subscribed to the method
-	• Obsoleting a method and stop invoking it.
-		○ Consumers could have called, overridden, wrapped or subscribed to the method
-	• Changing the responsibility of a method
-		○ Consumers could have called, overridden, wrapped or subscribed to the method
-	• Removing the reference to a method
-		○ Consumers could have overridden, wrapped or subscribed the method and expecting their logic to run.
+### Methods
++ **Changing access modifier from protected or public to another access modifier**
+	- Consumers could have called, overridden, wrapped or subscribed to the method
++ **Making a concrete public or protected method abstract**
+	- Consumers may have subclasses to the class which have not implemented the method and may be even callin super.
++ **Renaming method parameters**
+	- Consumers could have dependencies on parameters by name (via args or externally from C#, f. ex.)
++ **Adding, Removing or changing type of a method parameter on a protected or public method**
+	- Consumers could have called, overridden, wrapped or subscribed to the method
++ **Adding or Removing a default method parameter on protected or public method**
+	- Consumers could have wrapped or subscribed to the method
++ Changing the **return type** of a method
+	- Consumers could have called, overridden, wrapped or subscribed to the method
++ **Adding Hookable(false) to a protected or public method**
+	- Consumers could have wrapped or subscribed to the method
++ **Adding Wrappable(false) to a protected or public method**
+	- Consumers could have wrapped the method
++ **Removing Hookable(true) from a private or protected method**
+	- Consumers could have subscribed to the method
++ **Removing Wrappable(true) from a private method**
+	- Consumers could have wrapped the method
++ **Removing Replaceable(true) from a method**
+	- Consumers could have wrapped the method conditionally
++ Adding **final** to a protected or public method
+	- Consumers could have overridden, wrapped or subscribed to the method
++ Changing a method from **instance to static or vice versa**
+	- Consumers could have called, overridden, wrapped or subscribed to the method
++ Obsoleting a method and stop invoking it.
+	- Consumers could have called, overridden, wrapped or subscribed to the method
++ Changing the responsibility of a method
+	- Consumers could have called, overridden, wrapped or subscribed to the method
++ Removing the reference to a method
+	- Consumers could have overridden, wrapped or subscribed the method and expecting their logic to run.
 
-Delegates
-	• Any change in signature
-		○ Consumers could have subscribed dynamically.
-	• Removing the reference to a delegate
-Consumers could have subscribed and expect their logic to run.
+### Delegates
++ **Any change in signature**
+	- Consumers could have subscribed dynamically.
++ **Removing the reference to a delegate**
+	-  Consumers could have subscribed and expect their logic to run.
