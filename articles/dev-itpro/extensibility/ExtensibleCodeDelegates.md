@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Extensible code: Delegates
-description: This article provides details on usage of delegates.
-author: smnatara
+title: Writing extensible code & delegates
+description: This article describes usage of delegates..
+author: mfp
 manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
@@ -29,6 +29,7 @@ ms.author: ivanv
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
 ---
+
 
 # Delegates
 
