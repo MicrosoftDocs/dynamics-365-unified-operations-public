@@ -118,7 +118,7 @@ When making your solution extensible, you also guarantee to not break those exte
 + [Breaking Changes](BreakingChanges.md)
 
 
-External resources:
+## Other external resources to help write clean code:
 + [SOLID Principles](https://en.wikipedia.org/wiki/SOLID)
 + [Pluralsight - Clean Code: Writing Code for Humans](https://www.pluralsight.com/courses/writing-clean-code-humans)
 + [Clean Code: A Handbook of Agile Software Craftsmanship](https:://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
