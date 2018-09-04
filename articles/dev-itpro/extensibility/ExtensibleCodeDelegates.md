@@ -37,4 +37,4 @@ Do not create new delegates; but feel free to subscribe to existing delegates.
 
 Chain-of-command provides a richer, more robust and more concise extension mechanism that supersedes delegates.
 
-Instead structure your code in small methods with good names following the [guidelines for writing extensible methods](Extensiblemethods.md).
+Instead structure your code in small methods with good names following the [guidelines for writing extensible methods](ExtensibleMethods.md).
