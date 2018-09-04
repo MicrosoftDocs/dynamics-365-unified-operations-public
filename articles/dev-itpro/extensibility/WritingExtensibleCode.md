@@ -98,9 +98,9 @@ In X++ every (protected and public) method is an extension point - writing clean
 **Don't Repeat Yourself.** Avoid redundancy in your logic to prevent misalignment of implementations. With extensible code this is even more important, as the extender may not extend all required pieces, leaving the solution broken unintentionally.
 
 
-## Best practices for writing extensible code in X++
+## Best practices to create an extensible solution in X++
 
-We have compiled some of the best practices that can help you write extensible code in X++.
+We have compiled some of the best practices that can help you create extensible solutions in X++, that would enable consumers of your code extend your solution.
 
 + [Classes](ExtensibleClasses.md)
 + [Methods](ExtensibleMethods.md)
