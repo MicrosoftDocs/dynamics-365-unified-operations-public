@@ -39,7 +39,7 @@ Unique indices cannot be changed by an extension. Unique indices define a table 
 
 Therefore avoid unique indices that are likely to be changed or likely to be requested changed in the future.  For example, do not create a unique index on product dimension [Color, Size, Style, Config]. Instead create a unique index on distinct product variant. This way the index doesn't have to change if new product dimensions are added.
 
-If an extensible uniqueness constraint on multiple columns is required, consider creating a hash of the column's values. See the NumberSequenceScope table for an example of this.
+If an extensible uniqueness constraint on multiple columns is required, consider creating a hash of the column's values. See the ```NumberSequenceScope``` table for an example of this.
 
 ## Data events
 Table have a large number of data events predefined, that automatically are raised.  These are great extension points you provide by free. 
