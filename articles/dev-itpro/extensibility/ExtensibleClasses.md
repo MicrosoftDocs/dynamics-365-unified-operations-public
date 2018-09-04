@@ -103,5 +103,5 @@ See more:
 
 ## Deprecation
 
-If a class or a public/protected method is no longer needed - Always obsolete the method with a warning first, and at a point in future when all consumers have had the chance to uptake the changes and/or new API, the method can then be deprecated. Deprecating classes, methods or removing class members is otherwise a breaking change. See more in breaking changes. 
+If a class or a public/protected method is no longer needed - Always obsolete the method with a warning first, and at a point in future when all consumers have had the chance to uptake the changes and/or new API, the method can then be deprecated. Deprecating classes, methods or removing class members is otherwise a breaking change. See more in [breaking changes](BreakingChanges.md). 
 
