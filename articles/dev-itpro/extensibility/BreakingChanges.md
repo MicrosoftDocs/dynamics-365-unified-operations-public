@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 20
 
 # Breaking Changes
 
-When making your solution extensible, you also guarantee to not break those extension point going forward. A breaking change is anything that can break a consumer of your code.
+When making your solution extensible, you also guarantee to not break those extension points going forward. A breaking change is anything that can break a consumer of your code.
 
 Below is a list of some types of changes that could potentially break someone. 
 
