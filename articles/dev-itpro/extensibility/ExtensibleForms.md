@@ -32,14 +32,15 @@ ms.dyn365.ops.version: Platform update 20
 
 # Forms
 
-	## Methods on forms:
-	+ The guidelines for writing extensible methods also applies in general to form methods.
-	+ CoC give access to the form non private members, the same as for classes.
-	+ CoC is enabled for nested classes which implies that methods defined within various levels on the form is extensible.
-		> One limitation to this is for form data source methods - only methods defined in the kernel are enabled for extensions. The ability to extend methods defined on the form datasource will be available in one of the coming platform updates.
+## Methods on forms:
++ The guidelines for writing extensible methods also applies in general to form methods.
++ CoC give access to the form non private members, the same as for classes.
++ CoC is enabled for nested classes which implies that methods defined within various levels on the form is extensible.
 
-	## Field groups:
-	+ Consider using field groups whenever possible, this way ISVs get their fields added for free when they extend a field group.
+> One limitation to this is for form data source methods - only methods defined in the kernel are enabled for extensions. The ability to extend methods defined on the form datasource will be available in one of the coming platform updates.
 
-	## Form controls:
-	+ Moving around form controls could potentially break, if the controls are now made non-extensible by moving.
+## Field groups:
++ Consider using field groups whenever possible, this way ISVs get their fields added for free when they extend a field group.
+
+## Form controls:
++ Moving around form controls could potentially break, if the controls are now made non-extensible by moving.
