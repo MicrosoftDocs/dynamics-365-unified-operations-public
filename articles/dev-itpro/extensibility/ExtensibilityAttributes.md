@@ -79,10 +79,10 @@ Replaceable provides the ability to extend a method using chain of command and t
 			
 + DO ensure that methods decorated with ```[Replaceable]``` have XML documentation describing the responsibility of the method.
 + DO NOT use ```[Replaceable]``` to allow consumers to skip the replaced logic and do nothing.
-+ DO NOT use ```[Replaceable]``` for factory methods, when SysExtension can be used instead.
++ DO NOT use ```[Replaceable]``` for factory methods, when ```SysExtension``` can be used instead.
 + AVOID using ```[Replaceable]``` when the method is changing database or class state.
 + AVOID using ```[Replaceable]``` if the method performs multiple operations and has multiple responsibilities.
-+ Refactor the method into separate methods with single responsibility and consider which methods should then be replaceable.
++ Refactor the method into separate methods with single responsibility and consider which methods should actually be replaceable.
 + CONSIDER using ```[Replaceable]``` for solving transformations
   - Example: Enum conversion with switch statement over enum values, with the default block with a throw.
 + CONSIDER using ```[Replaceable]``` for overriding 
