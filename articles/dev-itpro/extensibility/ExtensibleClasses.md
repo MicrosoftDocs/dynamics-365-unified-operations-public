@@ -40,7 +40,7 @@ In essence, it is all about writing small cohesive methods with good names.  Ea
 
 A simple example:
 
-Not extensible code
+**Not extensible code:**
 
 ```
     void calculatePrice(SalesLine _saleLine, AmountMST _amount)
@@ -57,7 +57,7 @@ Not extensible code
     }
 ```
 
-Extensible code:
+**Extensible code:**
 
 ```
  protected boolean canUpdateSalesPrice(SalesLine _saleLine)
