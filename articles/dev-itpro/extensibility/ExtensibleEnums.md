@@ -36,7 +36,8 @@ An enum is made extensible by setting the following properties on the enum:
 + Is Extensible = True
 + UseEnumValue = No.
 	
-	>After PU 21, the UseEnumValue is hidden and is implicitly set.
+> [!NOTE]
+> After PU 21, the UseEnumValue is hidden and is implicitly set.
 
 This will enable downstream implementors to extend the enum with more elements. The values of the elements are determined at deployment time, and will not be identical across systems.  However, the following is guaranteed:
 	1. Data upgrade scripts are not required.Enum values are persisted in the data base - regardless of the enum being extensible.  This implies that enum values being used on any system, will prevail when making the enum extensible.
