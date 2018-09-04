@@ -63,7 +63,7 @@ Getting started gets you going with building extensions and migrating a current 
 
 ## Fundamentals on extensions
 
-This section includes fundamentals, principles and practices for how to make extensions. The guiding principles in these topics discuss how customization must be approached through extensions, including naming guidelines. Additionally, these topics discuss the foundation framework, such as extensions and chain of command.
+This section includes fundamentals, principles, and practices for how to make extensions. The guiding principles in these topics discuss how customization must be approached through extensions, including naming guidelines. Additionally, these topics discuss the foundation framework, such as extensions and chain of command.
 
 + [Intrusive customizations](intrusive-customizations.md)
 + [Class extensions](class-extensions.md)
@@ -122,7 +122,7 @@ Information on customization is also shared through various blogs where differen
 
 ## Best practices for creating an extensible solution in X++
 
-We have compiled some of the best practices that can help you create extensible solutions in X++, that would enable consumers of your code extend your solution. See more here:
+The following is a list of some best practices that can help you create extensible solutions in X++ that would enable consumers of your code to extend your solution.
 
 + [Classes](ExtensibleClasses.md)
 + [Methods](ExtensibleMethods.md)
@@ -135,6 +135,4 @@ We have compiled some of the best practices that can help you create extensible 
 
 
 ## Breaking changes
-When making your solution extensible, you also guarantee to not break those extension point going forward. Here are a few pointers on how to not break your consumers.
-
-+ [Breaking Changes](BreakingChanges.md)
+When you make your solution extensible, you also guarantee to not break those extension points going forward. Here are a few pointers on how to not break your consumers. For more information, see [Breaking Changes](breaking-changes.md).
