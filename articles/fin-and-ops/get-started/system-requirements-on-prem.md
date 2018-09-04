@@ -222,7 +222,7 @@ The following table lists the server operating systems that are supported for Fi
 
 | Operating system                                     | Notes |
 |------------------------------------------------------|-------|
-| Microsoft Windows Server 2016 Datacenter or Standard | These requirements are for the database and the Service Fabric cluster that hosts AOS. <br>Only en-US OS installations are supported.|
+| Microsoft Windows Server 2016 Datacenter or Standard | These requirements are for the database and the Service Fabric cluster that hosts AOS. <br><br>Only en-US OS installations are supported.|
 
 ## Software requirements for database servers
 
