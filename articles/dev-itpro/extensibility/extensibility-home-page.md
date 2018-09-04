@@ -135,4 +135,4 @@ The following is a list of some best practices that can help you create extensib
 
 
 ## Breaking changes
-When you make your solution extensible, you also guarantee to not break those extension points going forward. Here are a few pointers on how to not break your consumers. For more information, see [Breaking Changes](breaking-changes.md).
+When you make your solution extensible, you also guarantee to not break those extension points going forward. Here are a few pointers on how to not break your consumers. For more information, see [Breaking changes](breaking-changes.md).
