@@ -98,6 +98,6 @@ Replaceable provides the ability to extend a method using chain of command and t
 
 The below tables outlines this:
 
-| __	|Hookable |	Wrappable |	Replaceable |
+| __	| Hookable |	Wrappable |	Replaceable |
 | ---------------|--------------|----------------|
 
