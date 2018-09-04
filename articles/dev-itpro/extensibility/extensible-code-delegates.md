@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Writing extensible code & delegates
-description: This article describes usage of delegates..
+title: Write extensible code and delegates
+description: This article provides information about writing extensible code and delegates
 author: mfp
 manager: AnnBe
 ms.date: 09/09/2018
@@ -31,10 +31,8 @@ ms.dyn365.ops.version: Platform update 20
 ---
 
 
-# Delegates
+# Write extensible code and delegates
 
-Do not create new delegates; but feel free to subscribe to existing delegates.  
+While you can subscribe to existing delegates, do not create new delegates. The Chain of Command (CoC) provides a richer, more robust, and more concise extension mechanism that supersedes delegates.
 
-Chain-of-command provides a richer, more robust and more concise extension mechanism that supersedes delegates.
-
-Instead structure your code in small methods with good names following the [guidelines for writing extensible methods](ExtensibleMethods.md).
+Instead of creating new delegates, structure your code in small methods with good names following the [Guidelines for writing extensible methods](extensible-methods.md).
