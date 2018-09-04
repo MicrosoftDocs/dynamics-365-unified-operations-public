@@ -78,7 +78,7 @@ Follow these steps to install the modern report designs for the application suit
     ModelUtil.exe -import -metadatastorepath=J:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
     ```
 
-    For more information about how to import model files, see [Distribution of models: How to export and import a model](../dev-tools/models-export-import.md). After you've imported the model file, start Microsoft Visual Studio 2015. In Application Explorer, verify that the **Application Suite - Modern Designs** collection appears under the **AOT** node.
+    For more information about how to import model files, see [Distribution of models: How to export and import a model](../dev-tools/models-export-import.md). After you've imported the model file, start Microsoft Visual Studio 2015. In Application Explorer, verify that the **Application Suite - Modern Designs** collection appears under the **AOT** node. For more information about how to use the Application Explorer, see [Development tools tutorial](../dev-tools/introduction-visual-studio.md)
 
 Now that you've successfully imported the Application Suite Modern Designs model, you must to rebuild the application suite to update the metadata elements.
 
