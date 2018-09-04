@@ -36,8 +36,8 @@ This topic describes the various attributes used to control extensibility capabi
 
 Here is a table with the overview of default extensibility support based on access modifiers:
 
-|Hookable |	Wrappable |	Replaceable |
-|---------|----------|-----------|
+|  | Hookable |	Wrappable |	Replaceable |
+|---------|----------|-----------|-------|
 | Private |	Not-supported |	Not-supported |	Not-supported |
 | Protected |	Yes |	Yes |	No |
 | Public | Yes |	Yes |	No |
@@ -98,6 +98,11 @@ Replaceable provides the ability to extend a method using chain of command and t
 
 The below tables outlines this:
 
-| __	| Hookable |	Wrappable |	Replaceable |
-| ---------------|--------------|----------------|
-
+| 	| Hookable |	Wrappable |	Replaceable |
+| ---------------|--------------|----------------|------|
+| [Hookable(true)] |	Yes |	No |	No |
+| [Hookable(false)] |	No |	No |	No |
+| [Wrappable(true)] |	Yes |	Yes |	No |
+| [Wrappable(false)] |	Depends on if the method is Hookable (see table above) |	No |	No |
+| [Replaceable(true)] |	Yes |	Yes |	Yes |
+| [Replaceable(false)] | Depends on if the method is Hookable (see above table) |Depends on if the method is Wrappable (see table above) |	N |
