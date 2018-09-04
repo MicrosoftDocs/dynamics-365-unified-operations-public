@@ -131,3 +131,17 @@ Below is a list of some types of changes that could potentially break someone.
 	- Consumers could have subscribed dynamically.
 + **Removing the reference to a delegate**
 	-  Consumers could have subscribed and expect their logic to run.
+
+## Label changes
++ **Modifying or deleting a label**
+	- Consumers could be using the label with the current context of the label text and the parameters passed, etc.
+	- Going forward it is recommended to add new labels in case of a label change.
+
+## Application element
++ **Removing any element**
+	- Consumers could have a compile time dependency on the existence of the element
+	 
+## Metadata Extensions
++ Not following **naming guidelines** for metadata or augmentation classes
+	- Consumers could have elements with the same name.
+ 
