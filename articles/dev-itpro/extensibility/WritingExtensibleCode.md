@@ -56,7 +56,7 @@ All responsible parties share the same goal: Creating great lasting solutions fo
 ## Proven principles
 All the good engineering practices you are already using still applies. Everything you learned still applies. You don't have to learn new principles or unlearn old practices.   We are calling out 3 principles of software craftmanship that have been sought and taught for decades.  Not only do they make your code easier to read, maintain, test, review and refactor - they also make your code easier to extend. Keep applying and advocating these practices.
 
-## S.O.L.I.D.
+### S.O.L.I.D.
 This is an acronym for 5 principles that each will make your code easier to extend.
 + **Single responsibility**
 	Classes and method should have a single responsibility without side-effects. This will make the automatically created extension points on public/protected methods great extension points.
@@ -65,12 +65,21 @@ This is an acronym for 5 principles that each will make your code easier to exte
     - **Closed for modification
     Make your properties private, and your methods either private or final protected. This means that nobody through inheritance or extension can take a dependency on your logic.
 + **Liskov substitution**
-	Derived classes must be substitutable for their base classes, for example by providing factories, using SysExtension and simple construct methods.
+Derived classes must be substitutable for their base classes, for example by providing factories, using SysExtension and simple construct methods.
 + **Interface segregation**
-	Create concise interfaces. This principle enables extenders to provide replacement implementations, and is particular valuable when used with dependency inversion.
+Create concise interfaces. This principle enables extenders to provide replacement implementations, and is particular valuable when used with dependency inversion.
 + **Dependency inversion**
-	Depend on abstractions, not on concretions. This principle enables decoupling, and allows extenders to provide concrete instances conforming to the abstraction your logic depends on.
+Depend on abstractions, not on concretions. This principle enables decoupling, and allows extenders to provide concrete instances conforming to the abstraction your logic depends on.
   
-  
+Read more: [https://en.wikipedia.org/wiki/SOLID] (https://en.wikipedia.org/wiki/SOLID)
+
+### Clean code
+Clean code reads like an article. The name of a method provides the heading of the article. Then follows the body of the method - which is really just few lines of summary. The summary is calling few other methods with good descriptive names.  This way the reader can keep exploring more and more details, and stop at any time - without missing any conceptual understanding.
+
+When code is written like this, methods will be short (often less than 5-10 code lines). The number of parameters will be low (often less than 2), conditions and blocks of code are always single line (calling a method). 
+
+For example:
+```
+
 
 
