@@ -37,9 +37,10 @@ ms.dyn365.ops.version: Platform update 20
 By default all public and protected methods in X++ are extensible, (by Chain of Command). 
 
 **A key guideline when making a method extensible is to assess the exposed functionality and the impact it can have when extended.** Consider:
-+ The impact the extensions might have on the scenario where the method is used. For instance, allowing extensions to initialization of a table record is low risk, where as allowing extensions to skip a certain validation is of higher risk depending on the business scenario.
-+ The impact if it is extended by multiple extensions in parallel.
-+ The ability to modify an extensible method in the future would be restricted - due to considerations of how consumers could be impacted/broken when the method signature and/or logic is modified.
++ **The impact the extensions might have on the scenario where the method is used.** For instance, allowing extensions to initialization of a table record is low risk, where as allowing extensions to skip a certain validation is of higher risk depending on the business scenario.
++ **The impact if it is extended by multiple extensions in parallel.**
++ **The ability to modify an extensible method in the future would be restricted** - due to considerations of how consumers could be impacted/broken when the method signature and/or logic is modified.
+	
 	
 Below are some guidelines that could help writing code that is extensible:
 	
