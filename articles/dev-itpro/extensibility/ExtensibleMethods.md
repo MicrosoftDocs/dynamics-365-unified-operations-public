@@ -85,9 +85,11 @@ In the example below, making the ```findOrderHeader``` Replaceable, is another s
 Avoid having while blocks in the middle of methods - this makes it difficult to extend the while block. Ideally, logic within the while block should be in a separate method which enables extensions.
 
 Not extensible code:
+
  ![Refactoring a while block (before)](media/ExtensibleMethods1.png)  
  
  Extensible code after refactoring:
+ 
  ![Refactoring a while block (after)](media/ExtensibleMethods2.png)
  
  
@@ -122,9 +124,11 @@ Initialization, insertion, updates to a table record or instantiation and initia
 If a throw is added to an existing method that is extensible, then it can potentially break extenders. Consider adding the conditions for the throw in an extensible method, to give extenders the ability to leverage that as needed and get rid of the throw. 
 
 Not extensible code:
+
 ![Throw (before)](media/ExtensibleMethods3.png) 
 
 Extensible code after refactoring:
+
 ![Throw (after)](media/ExtensibleMethods4.png) 
 
 + CRUD statements 
