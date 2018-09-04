@@ -94,3 +94,15 @@ Replaceable provides the ability to extend a method using chain of command and t
 + DO call the base functionality (call next) when the replacing logic does not apply.
 + AVOID replacing logic completely by not calling the base functionality (call next)
 
+#### The general rule here is: Hookable is required by Wrappable, that is required by Replaceable. 
+
+The below tables outlines this:
+
+|	|Hookable |	Wrappable |	Replaceable |
+| ---------------|--------------|----------------|
+| [Hookable(true)] |	Yes |	No |	No |
+| [Hookable(false)] |	No |	No |	No |
+| [Wrappable(true)] |	Yes |	Yes |	No |
+| [Wrappable(false)] |	Depends on if the method is Hookable (see table above) |	No |	No |
+| [Replaceable(true)] |	Yes |	Yes |	Yes |
+| [Replaceable(false)] | Depends on if the method is Hookable (see above table) |	Depends on if the method is Wrappable (see table above) |	N |
