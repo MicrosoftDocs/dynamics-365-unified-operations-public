@@ -61,8 +61,8 @@ Below are some guidelines that could help writing code that is extensible:
   - Having **default blocks** in switch statements makes the method having the switch block non-extensible.
   - Avoid having **throw statements within the default block** of the switch statement. This makes the switch statement non-extensible. One way to handle the throw in the default case is to refactor the switch block to a separate method that is extensible or make the entire method replaceable.
 			
-		In the example below, making the findOrderHeader Replaceable, is another solution.
-		```
+In the example below, making the findOrderHeader Replaceable, is another solution.
+
 		    private Common findOrderHeader(boolean _forUpdate)
 		    {
 		        switch (this.InventTransType)
@@ -80,21 +80,21 @@ Below are some guidelines that could help writing code that is extensible:
 		    {
 		        throw error(Error::wrongUseOfFunction(funcName()));
 		    }
-		```	
+
 + **While**
 Avoid having while blocks in the middle of methods - this makes it difficult to extend the while block. Ideally, logic within the while block should be in a separate method which enables extensions.
 
- ![Refactoring a while block (before)](media/Methods1.png)  
- ![Refactoring a while block (after)](media/Methods2.png)
+ ![Refactoring a while block (before)](media/ExtensibleMethods1.png)  
+ ![Refactoring a while block (after)](media/ExtensibleMethods2.png)
  
  
 + **If..else statements**
-- To provide the ability to extend the conditions in an if statement, extract out the logic in the if condition to a separate method.
-- Avoid having nested if..else blocks. This makes it difficult to change the logic in one of the blocks.
-	- A way to solve this, is to refactor each of the conditions and the logic within each of the blocks to separate methods respectively in order to allow extending the conditions and/or the logic within each block. 
+	- To provide the ability to extend the conditions in an if statement, extract out the logic in the if condition to a separate method.
+	- Avoid having nested if..else blocks. This makes it difficult to change the logic in one of the blocks.
+		- A way to solve this, is to refactor each of the conditions and the logic within each of the blocks to separate methods respectively in order to allow extending the conditions and/or the logic within each block. 
 	- When the if..else blocks are  handling specialization, consider moving out the logic into a class hierarchy. 
 			Eg. ```SalesLineCopyFromSource```
-- Having a throw in an 'else' block of a method (when the method only has an if..else), also makes the method non-extensible in certain scenarios. A way to handle the throw in the else is to refactor the conditions for the throw in a separate method.
+	- Having a throw in an 'else' block of a method (when the method only has an if..else), also makes the method non-extensible in certain scenarios. A way to handle the throw in the else is to refactor the conditions for the throw in a separate method.
 		
 + Avoid using **PrmIsDefault**
 When the method is overridden or wrappable the caller of super() or next() provides all parameters, which make prmIsDefault() return false always.
@@ -103,8 +103,8 @@ When the method is overridden or wrappable the caller of super() or next() provi
 This method will at compile time use a numeric literal of the number of values an enum has.  If the enum is extended or made extensible in the future, it will require your code is recompiled.  Instead use DictEnum.values().
 		
 + **Construct methods** 
-- Use the SysExtension framework to allow easy extensions.
-- Avoid having a throw in factory methods - a way to solve this is to extract the conditions for the throw in a separate method that is extensible. See more details in throw below.
+	- Use the SysExtension framework to allow easy extensions.
+	- Avoid having a throw in factory methods - a way to solve this is to extract the conditions for the throw in a separate method that is extensible. See more details in throw below.
 	
 + **Static methods**
 Static methods cannot be extended with extra state. For instance method an extender can introduce properties, that can be set via parm methods. Prefer instance methods when possible.
@@ -118,12 +118,12 @@ Initialization, insertion, updates to a table record or instantiation and initia
 + **Throw statements**
 If a throw is added to an existing method that is extensible, then it can potentially break extenders. Consider adding the conditions for the throw in an extensible method, to give extenders the ability to leverage that as needed and get rid of the throw. 
 
-![Throw (before)](media/Methods3.png) 
+![Throw (before)](media/ExtensibleMethods3.png) 
 
-![Throw (after)](media/Methods4.png) 
+![Throw (after)](media/ExtensibleMethods4.png) 
 
 + CRUD statements 
-- Use Query objects in scenarios where the queries should be extensible. Implement a protected method building the query and may be several separate methods to add joined datasources, ranges and selection fields. This way different parts of the query are extensible individually.
-- Use SysQueryInsertRecordSet to convert insert_recordset to query
-- Avoid using field lists in select statements, where possible - this will enable extenders to retrieve their additional fields without having to extend.
-- Using the 'in' keyword in query ranges, in order to allow extenders to add more values to the query range. This is recommended especially for query ranges with enum values.
+	- Use Query objects in scenarios where the queries should be extensible. Implement a protected method building the query and may be several separate methods to add joined datasources, ranges and selection fields. This way different parts of the query are extensible individually.
+	- Use SysQueryInsertRecordSet to convert insert_recordset to query
+	- Avoid using field lists in select statements, where possible - this will enable extenders to retrieve their additional fields without having to extend.
+	- Using the 'in' keyword in query ranges, in order to allow extenders to add more values to the query range. This is recommended especially for query ranges with enum values.
