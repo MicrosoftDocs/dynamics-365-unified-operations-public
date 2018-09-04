@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Writing extensible classes
-description: This article how to write extensible methods.
+title: Write extensible classes
+description: This article provides information about how to write extensible methods.
 author: Smitha Nataraj, Lars-Bo
 manager: AnnBe
 ms.date: 09/09/2018
@@ -30,17 +30,15 @@ ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
 ---
 
-# Classes
+# Write extensible classes
 
 [!include [banner](../includes/banner.md)]
 
-A class and its methods should have a single responsibility, which makes it a lot easier to extend going forward.
+A class and its methods should have a single responsibility. By writing small cohesive methods wtih good names, it is easier to extend going forward. Each public and protected method is an extensibility point. Each time a new method is introduced, it is enabling downstream consumers to inject additional logic to the method.  
 
-In essence, it is all about writing small cohesive methods with good names.  Each public and protected method is an extensibility point, so each time a new method is introduced it is enabling downstream consumers to inject additional logic to the method.  
+### Example
 
-A simple example:
-
-**Not extensible code:**
+**Not extensible code**
 
 ```
     void calculatePrice(SalesLine _saleLine, AmountMST _amount)
@@ -57,7 +55,7 @@ A simple example:
     }
 ```
 
-**Extensible code:**
+**Extensible code**
 
 ```
  protected boolean canUpdateSalesPrice(SalesLine _saleLine)
@@ -87,20 +85,14 @@ A simple example:
 ```
 
 ## Class hierarchies
-
-For **new class hierarchies** or for existing class hierarchies where a factory pattern can be used, using the ```SysExtension``` framework enables easy extensions:
-+ **Truly decoupled** - New subclasses can be added without any changes to the base class. 
-+ **Less code** is required.
-+ **No change in the public API** - the contract of the construct stays the same; hence, this is an easy and low risk refactoring. 
+For new or existing class hierarchies where a factory pattern can be used, using the ```SysExtension``` framework enables easy extensions. These extensions are truly decoupled allowing new subclasses to be added without any changes to the base class. Less code is required and because the contract of the construct remains the same, there is no change to the public API which results in low risk refactoring.
 	
-For **existing factory methods** which are not instantiating sub-classes using the instance constructor (and instead calls a static constructor like ```construct```), using the ```SysExtension``` framework would lead to a breaking change, as the static constructors on the sub-classes are no longer invoked. Use the ```SysExtension``` framework only for the default case, in such cases.
+For **existing factory methods** which are not instantiating sub-classes using the instance constructor, and instead calling a static constructor like ```construct```, using the ```SysExtension``` framework would lead to a breaking change. This is because the static constructors on the sub-classes are no longer invoked. In these situations, use the ```SysExtension``` framework only for the default case.
 	
-Read more:
-+ [https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/](https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/)
-+ [https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/ ](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
-
+For more information about class hierarchies, see the following blog posts:
++ [SysExtension Framework – to the rescue](https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/)
++ [Embrace the extensions mindset with Dynamics 365 for Finance and Operations #2 – SysExtension framework](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
 
 ## Deprecation
-
-If a class or a public/protected method is no longer needed - Always obsolete the method with a warning first, and at a point in future when all consumers have had the chance to uptake the changes and/or new API, the method can then be deprecated. Deprecating classes, methods or removing class members is otherwise a breaking change. See more in [breaking changes](BreakingChanges.md). 
+If a class or a public or protected method is no longer needed, always obsolete the method with a warning first, and then, when all consumers have had the chance to uptake the changes or new API, the method can be deprecated. Deprecating classes and methods, or removing class members otherwise, is a breaking change. For more information, see [Breaking changes](BreakingChanges.md). 
 
