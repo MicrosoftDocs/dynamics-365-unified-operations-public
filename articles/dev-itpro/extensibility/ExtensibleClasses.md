@@ -40,6 +40,8 @@ In essence, it is all about writing small cohesive methods with good names.  Ea
 
 A simple example:
 
+Not extensible code
+
 ```
     void calculatePrice(SalesLine _saleLine, AmountMST _amount)
     {
@@ -49,6 +51,35 @@ A simple example:
             ttsbegin;
             // calculation of SalesPrice is locked and cannot be extended
             _saleLine.SalesPrice = _saleLine.QtyOrdered * _amount;
+            _saleLine.update();
+            ttscommit;
+        }
+    }
+```
+
+Extensible code:
+
+```
+ protected boolean canUpdateSalesPrice(SalesLine _saleLine)
+    {
+        return (_saleLine.QtyOrdered > 0 &&
+    _saleLine.SalesType == SalesType::Sales);
+    }
+ 
+    protected SalesPrice calculateSalesPrice(
+    SalesLine _saleLine, AmountMST _amount)
+    {
+        return _saleLine.QtyOrdered * _amount;
+    }
+ 
+    public void updateSalesPrice(SalesLine _saleLine, AmountMST _amount)
+    {
+        // extra condition can be added in CoC on the method
+        if(this.canUpdateSalesPrice(_saleLine))
+        {
+            ttsbegin;
+            // extra calculation/value can be added in CoC on the method
+            _saleLine.SalesPrice = this.calculateSalesPrice(_saleLine, _amount);
             _saleLine.update();
             ttscommit;
         }
