@@ -2,7 +2,7 @@
 # required metadata
 
 title: Write extensible classes
-description: This article provides information about how to write extensible methods.
+description: This topic provides information about how to write extensible classes.
 author: Smitha Nataraj, Lars-Bo
 manager: AnnBe
 ms.date: 09/09/2018
@@ -34,11 +34,11 @@ ms.dyn365.ops.version: Platform update 20
 
 [!include [banner](../includes/banner.md)]
 
-A class and its methods should have a single responsibility. By writing small cohesive methods wtih good names, it is easier to extend going forward. Each public and protected method is an extensibility point. Each time a new method is introduced, it is enabling downstream consumers to inject additional logic to the method.  
+A class and its methods should have a single responsibility. When you write small, cohesive methods that have good names, extension is easier to do later. Every public and protected method is an extensibility point. Every time that a new method is introduced, downstream consumers get a new way to inject additional logic into the method.
 
 ### Example
 
-**Not extensible code**
+**Non-extensible code**
 
 ```
     void calculatePrice(SalesLine _saleLine, AmountMST _amount)
@@ -63,13 +63,13 @@ A class and its methods should have a single responsibility. By writing small co
         return (_saleLine.QtyOrdered > 0 &&
     _saleLine.SalesType == SalesType::Sales);
     }
- 
+ 
     protected SalesPrice calculateSalesPrice(
     SalesLine _saleLine, AmountMST _amount)
     {
         return _saleLine.QtyOrdered * _amount;
     }
- 
+ 
     public void updateSalesPrice(SalesLine _saleLine, AmountMST _amount)
     {
         // extra condition can be added in CoC on the method
@@ -85,14 +85,14 @@ A class and its methods should have a single responsibility. By writing small co
 ```
 
 ## Class hierarchies
-For new or existing class hierarchies where a factory pattern can be used, using the ```SysExtension``` framework enables easy extensions. These extensions are truly decoupled allowing new subclasses to be added without any changes to the base class. Less code is required and because the contract of the construct remains the same, there is no change to the public API which results in low risk refactoring.
+For new or existing class hierarchies where a factory pattern can be used, the SysExtension framework enables easy extensions. Because these extensions are truly decoupled, new subclasses can be added without requiring any changes to the base class. Therefore, less code is required. Additionally, because the contract of the construct remains the same, there is no change to the public application programming interface (API). Therefore, refactoring involves low risk.
 	
-For **existing factory methods** which are not instantiating sub-classes using the instance constructor, and instead calling a static constructor like ```construct```, using the ```SysExtension``` framework would lead to a breaking change. This is because the static constructors on the sub-classes are no longer invoked. In these situations, use the ```SysExtension``` framework only for the default case.
+Some existing factory methods might not instantiate subclasses by using the instance constructor. Instead, they might call a static constructor, such as **construct**. If the SysExtension framework is used for these factory methods, a breaking change occurs, because the static constructors on the subclasses are no longer invoked. In these situations, use the SysExtension framework only for the default case.
 	
 For more information about class hierarchies, see the following blog posts:
+
 + [SysExtension Framework – to the rescue](https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/)
 + [Embrace the extensions mindset with Dynamics 365 for Finance and Operations #2 – SysExtension framework](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
 
 ## Deprecation
-If a class or a public or protected method is no longer needed, always obsolete the method with a warning first, and then, when all consumers have had the chance to uptake the changes or new API, the method can be deprecated. Deprecating classes and methods, or removing class members otherwise, is a breaking change. For more information, see [Breaking changes](BreakingChanges.md). 
-
+If a class or a public or protected method is no longer required, always use a warning first to notify consumers that the method is obsolete. Then, when all consumers have had the chance to uptake the changes or the new API, the method can be deprecated. Deprecation of classes and methods (or removal of class members in other cases) is a breaking change. For more information, see [Breaking changes](BreakingChanges.md).
