@@ -98,7 +98,7 @@ For **existing factory methods** which are not instantiating sub-classes using t
 See more:
 
 [https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/](https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/)
-[https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
+[https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/ ](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
 
 
 ## Deprecation
