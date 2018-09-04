@@ -106,3 +106,23 @@ There are many resources for learning to write clean code:
 Read more [Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
 
+## Best practices for writing extensible code in X++
+
+We have compiled some of the best practices that can help you write extensible code in X++.
+
++ [Classes](ExtensibleClasses.md)
++ [Methods](ExtensibleMethods.md)
++ [Forms](ExtensibleForms.md)
++ [Extended data types](ExtensibleEDTs.md)
++ [Extensible enums](ExtensibleEnums.md)
++ [Delegates](ExtensibleCodeDelegates.md)
++ [Tables](ExtensibleTables.md)
++ [Extensibility attributes for methods](ExtensibilityAttributes.md)
+
+
+## Breaking changes
+When making your solution extensible, you also guarantee to not break those extension point going forward. Here are a few pointers on how to not break your consumers.
+
++ [Breaking Changes](BreakingChanges.md)
+
+
