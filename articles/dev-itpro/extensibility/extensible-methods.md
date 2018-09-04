@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Writing extensible methods
-description: This article how to write extensible methods.
-author: Smitha Nataraj
+title: Write extensible methods
+description: This article provides information about how to write extensible methods.
+author: smithanataraj
 manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
@@ -30,11 +30,11 @@ ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
 ---
 
-# Methods
+# Write extensible methods
 
 [!include [banner](../includes/banner.md)]
 
-By default all public and protected methods in X++ are extensible, (by Chain of Command). 
+By default all public and protected methods in X++ are extensible by Chain of Command. 
 
 **A key guideline when making a method extensible is to assess the exposed functionality and the impact it can have when extended.** Consider:
 + **The impact the extensions might have on the scenario where the method is used.** For instance, allowing extensions to initialization of a table record is low risk, where as allowing extensions to skip a certain validation is of higher risk depending on the business scenario.
