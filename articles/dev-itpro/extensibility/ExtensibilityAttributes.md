@@ -100,9 +100,4 @@ The below tables outlines this:
 
 |	|Hookable |	Wrappable |	Replaceable |
 | ---------------|--------------|----------------|
-| [Hookable(true)] |	Yes |	No |	No |
-| [Hookable(false)] |	No |	No |	No |
-| [Wrappable(true)] |	Yes |	Yes |	No |
-| [Wrappable(false)] |	Depends on if the method is Hookable (see table above) |	No |	No |
-| [Replaceable(true)] |	Yes |	Yes |	Yes |
-| [Replaceable(false)] | Depends on if the method is Hookable (see above table) |Depends on if the method is Wrappable (see table above) |	N |
+
