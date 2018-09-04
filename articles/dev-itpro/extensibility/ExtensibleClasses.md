@@ -88,12 +88,12 @@ A simple example:
 
 ## Class hierarchies
 
-For **new class hierarchies** or for existing class hierarchies where a factory pattern can be used, using the SysExtension framework enables easy extensions:
+For **new class hierarchies** or for existing class hierarchies where a factory pattern can be used, using the ```SysExtension``` framework enables easy extensions:
 + **Truly decoupled** - New subclasses can be added without any changes to the base class. 
 + **Less code** is required.
 + **No change in the public API** - the contract of the construct stays the same; hence, this is an easy and low risk refactoring. 
 	
-For **existing factory methods** which are not instantiating sub-classes using the instance constructor (and instead calls a static constructor like construct), using the SysExtension framework would lead to a breaking change, as the static constructors on the sub-classes are no longer invoked. Use the SysExtension framework only for the default case, in such cases.
+For **existing factory methods** which are not instantiating sub-classes using the instance constructor (and instead calls a static constructor like ```construct```), using the ```SysExtension``` framework would lead to a breaking change, as the static constructors on the sub-classes are no longer invoked. Use the ```SysExtension``` framework only for the default case, in such cases.
 	
 Read more:
 + [https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/](https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/)
