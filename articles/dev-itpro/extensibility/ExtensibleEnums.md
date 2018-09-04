@@ -56,7 +56,7 @@ Since enum values are no longer controlled by the developer, there is no certain
   - Compiling the model and all dependent models will flag the above.
 	
 + Ensure that logic where the enum values are used are extracted out in **smaller methods**, allowing an extension using chain-of-command to handle the added enum values.
-+ For **construct** methods where the instantiation is based on enum values, replace switch blocks with SysExtension where possible. In other cases, ensure that the default block is extensible. For example, see class ```PurchRFQCaseCopying```.
++ For **construct** methods where the instantiation is based on enum values, replace switch blocks with ```SysExtension``` where possible. In other cases, ensure that the default block is extensible. For example, see class ```PurchRFQCaseCopying```.
 + If the enum is used in **switch blocks**, avoid having default blocks with/without throws that are not extensible. 
-+ When there are **long switch case blocks or if..else blocks** for the enum values, consider creating a class hierarchy to handle specific logic related to the enum. Example: See class hierarchy PriceGroupTypeTradeAgreementMapping
++ When there are **long switch case blocks or if..else blocks** for the enum values, consider creating a class hierarchy to handle specific logic related to the enum. For example, see class hierarchy ```PriceGroupTypeTradeAgreementMapping```
 + Use the **'in' keyword for query ranges using the enum values**, and make the container used by the 'in' keyword extensible.
