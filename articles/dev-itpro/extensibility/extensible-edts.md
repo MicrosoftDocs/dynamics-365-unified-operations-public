@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extensible EDTs
-description: This article extensible EDTs.
+description: This article provides information about extensible EDTs.
 author: mfp
 manager: AnnBe
 ms.date: 09/09/2018
