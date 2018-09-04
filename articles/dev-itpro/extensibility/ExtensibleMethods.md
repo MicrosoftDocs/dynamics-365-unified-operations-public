@@ -55,11 +55,11 @@ Below are some guidelines that could help writing code that is extensible:
   - In other cases, when several parameters are required, they often have a coherence that could be expressed by a class. Encapsulating these parameters in a class, would make it easy to for extenders to add additional parameters and add additional parameters to the base method without breaking APIs in future. Eg. See PriceDiscParameters used in class PriceDisc.
 
 + **Switch blocks**
-  - Avoid switch blocks in the middle of methods; a switch block should be in its own method in order to allow extending it. 
-  - Long case blocks are good candidates to refactor into a class/class hierarchy with subclasses for each of the case blocks.
+  - Avoid switch blocks in the middle of methods; a switch block should be in its **own method** in order to allow extending it. 
+  - **Long case blocks** are good candidates to refactor into a class/class hierarchy with subclasses for each of the case blocks.
 		See ```SalesLineCopyFromSource``` class hierarchy, for example.
-  - Having default blocks in switch statements makes the method having the switch block non-extensible.
-  - Avoid having throw statements within the default block of the switch statement. This makes the switch statement non-extensible. One way to handle the throw in the default case is to refactor the switch block to a separate method that is extensible or make the entire method replaceable.
+  - Having **default blocks** in switch statements makes the method having the switch block non-extensible.
+  - Avoid having **throw statements within the default block** of the switch statement. This makes the switch statement non-extensible. One way to handle the throw in the default case is to refactor the switch block to a separate method that is extensible or make the entire method replaceable.
 			
 		In the example below, making the findOrderHeader Replaceable, is another solution.
 		```
@@ -81,6 +81,7 @@ Below are some guidelines that could help writing code that is extensible:
 		        throw error(Error::wrongUseOfFunction(funcName()));
 		    }
 		```	
-+ Avoid having while blocks in the middle of methods - this makes it difficult to extend the while block. Ideally, logic within the while block should be in a separate method which enables extensions.
++ **While**
+Avoid having while blocks in the middle of methods - this makes it difficult to extend the while block. Ideally, logic within the while block should be in a separate method which enables extensions.
 
   
