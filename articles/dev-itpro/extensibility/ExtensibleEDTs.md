@@ -53,7 +53,7 @@ By setting this property, you forfeit the ability to change string size in the f
 
 Avoid unnecessary dependencies, like extending generic extended data types, like Name and Description.
 
-## No Of Decimals is Extensible [sic]
+## No Of Decimals is Extensible
 This property cannot be changed by an extension. Setting this to True will allow extenders to change the number of decimals. 
 
 While setting this to True, you must guarantee that:
