@@ -3,7 +3,7 @@
 
 title: Writing extensible forms
 description: This article how to write extensible forms.
-author: SmithaNataraj, moustafa
+author: SmithaNataraj, Moustafa
 manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
