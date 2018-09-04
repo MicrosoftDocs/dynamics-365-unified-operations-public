@@ -95,10 +95,9 @@ For **new class hierarchies** or for existing class hierarchies where a factory 
 	
 For **existing factory methods** which are not instantiating sub-classes using the instance constructor (and instead calls a static constructor like construct), using the SysExtension framework would lead to a breaking change, as the static constructors on the sub-classes are no longer invoked. Use the SysExtension framework only for the default case, in such cases.
 	
-See more:
-
-[https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/](https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/)
-[https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/ ](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
+Read more:
++ [https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/](https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/)
++ [https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/ ](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
 
 
 ## Deprecation
