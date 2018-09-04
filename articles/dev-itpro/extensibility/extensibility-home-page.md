@@ -61,9 +61,9 @@ Getting started gets you going with building extensions and migrating a current 
 + [Customization: overlayering and extensions](customization-overlayering-extensions.md)
 <!--+ [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)-->
 
-## Extensibility fundamentals
+## Fundamentals on extensions
 
-Extensibility fundamentals includes principles and practices for how to make extensions. The guiding principles in these topics discuss how customization must be approached through extensions, including naming guidelines. Additionally, these topics discuss the foundation framework, such as extensions and chain of command.
+This section includes fundamentals, principles and practices for how to make extensions. The guiding principles in these topics discuss how customization must be approached through extensions, including naming guidelines. Additionally, these topics discuss the foundation framework, such as extensions and chain of command.
 
 + [Intrusive customizations](intrusive-customizations.md)
 + [Class extensions](class-extensions.md)
@@ -71,7 +71,7 @@ Extensibility fundamentals includes principles and practices for how to make ext
 + [Naming guidelines](naming-guidelines-extensions.md)
 + [Relax model restrictions to enable the refactoring of over-layering into extensions](refactoring-over-layering.md)
   
-## How do I..?
+## How do I create extensions?
 
 Here is where you find "How do I?" topics on customizing specific object types or code. Most of these topics are brief and to the point. There are many topics here, so searching for a particular topic may be practical.
 
@@ -106,7 +106,7 @@ Here is where you find "How do I?" topics on customizing specific object types o
 ### Labels
 + [Change a label](change-label.md)
 
-## Blog posts
+### Blog posts
 
 Information on customization is also shared through various blogs where different topics are discussed. This section includes reference to some of these blogs.
 
@@ -119,3 +119,22 @@ Information on customization is also shared through various blogs where differen
 + [Subscribing to onValidatingWrite](https://blogs.msdn.microsoft.com/mfp/2017/01/31/subscribing-to-onvalidatingwrite/)
 + [Extending inventory dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
 + [Embrace the extensions mindset with Dynamics 365 for Finance and Operations](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)
+
+## Best practices for creating an extensible solution in X++
+
+We have compiled some of the best practices that can help you create extensible solutions in X++, that would enable consumers of your code extend your solution. See more here:
+
++ [Classes](ExtensibleClasses.md)
++ [Methods](ExtensibleMethods.md)
++ [Forms](ExtensibleForms.md)
++ [Extended data types](ExtensibleEDTs.md)
++ [Extensible enums](ExtensibleEnums.md)
++ [Delegates](ExtensibleCodeDelegates.md)
++ [Tables](ExtensibleTables.md)
++ [Extensibility attributes for methods](ExtensibilityAttributes.md)
+
+
+## Breaking changes
+When making your solution extensible, you also guarantee to not break those extension point going forward. Here are a few pointers on how to not break your consumers.
+
++ [Breaking Changes](BreakingChanges.md)
