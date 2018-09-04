@@ -3,7 +3,7 @@
 
 title: Writing extensible methods
 description: This article how to write extensible methods.
-author: smnatara
+author: Smitha Nataraj
 manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
@@ -25,7 +25,7 @@ ms.custom: 268724
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ivanv
+ms.author: Smitha Nataraj
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
 ---
