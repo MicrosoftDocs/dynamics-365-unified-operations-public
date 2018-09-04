@@ -41,11 +41,11 @@ Below is a list of some types of changes that could potentially break someone.
 ## Data model changes
 
 ### General
-#### Any data model change, that requires a data upgrade script to be executed
-  + Consumers may not be able to synchronize their data model
-  + Consumers might loose access to data.
++ Any data model change, that requires a data upgrade script to be executed
+	- Consumers may not be able to synchronize their data model
+	- Consumers might loose access to data.
   
-#### Data Types
+### Data Types
   + Changing an Enum from **Extensible to not Extensible**
     - Consumers could have extensions to the enum
   + Changing an Enum from **not Extensible to Extensible**
@@ -55,8 +55,8 @@ Below is a list of some types of changes that could potentially break someone.
   + **Decreasing the size of string type EDT**
     - Consumers could have dependencies on the size of the string
 + **Specializing the EDT by making it extend another EDT**
-	    - Consumers could have string length or decimals precision extension to the EDT
-+ Changing the Enum type of a Enum type EDT when the Enum is extensible 
+	- Consumers could have string length or decimals precision extension to the EDT
++ **Changing the Enum type of a Enum type EDT when the Enum is extensible** 
 	- Consumers could have extensions to the Enum
  
 ### Data model
@@ -75,3 +75,59 @@ Below is a list of some types of changes that could potentially break someone.
 + **Obsoleting a data entity**
 + **Obsoleting a data entity field**
 
+## Code changes
+### Class members
++ **Deleting or renaming public or protected class level members**
+	- Consumers could be using these members in the extension classes
++ **Changing a class member from public or protected to protected or private**
+	- Consumers could have queried or assigned values to the field
+  
+## Classes, Interfaces
++ **Adding an abstract method to a class**
+	- Consumers could have created a derived type
++ **Adding final to a class**
+	- Consumers could have created a derived type
++ **Adding a method to an interface**
+	- Consumers could have implemented the interface on their own type
++ **Obsoleting a public class and stop instantiating the class.**
+	- Consumers could have overridden, wrapped or subscribed to the instance methods
+
+## Methods
+	• Changing access modifier from protected or public to another access modifier
+		○ Consumers could have called, overridden, wrapped or subscribed to the method
+	• Making a concrete public or protected method abstract
+		○ Consumers may have subclasses to the class which have not implemented the method and may be even callin super.
+	• Renaming method parameters
+		○ Consumers could have dependencies on parameters by name (via args or externally from C#, f. ex.)
+	• Adding, Removing or changing type of a method parameter on protected or public method
+		○ Consumers could have called, overridden, wrapped or subscribed to the method
+	• Adding or Removing a default method parameter on protected or public method
+		○ Consumers could have wrapped or subscribed to the method
+	• Changing the return type of a method 
+		○ Consumers could have called, overridden, wrapped or subscribed to the method
+	• Adding Hookable(false) to a protected or public method
+		○ Consumers could have wrapped or subscribed to the method
+	• Adding Wrappable(false) to a protected or public method
+		○ Consumers could have wrapped the method
+	• Removing Hookable(true) from a private or protected method
+		○ Consumers could have subscribed to the method
+	• Removing Wrappable(true) from a private method
+		○ Consumers could have wrapped the method
+	• Removing Replaceable(true) from a method
+		○ Consumers could have wrapped the method conditionally
+	• Adding final to a protected or public method
+		○ Consumers could have overridden, wrapped or subscribed to the method
+	• Changing a method from instance to static or vice versa
+		○ Consumers could have called, overridden, wrapped or subscribed to the method
+	• Obsoleting a method and stop invoking it.
+		○ Consumers could have called, overridden, wrapped or subscribed to the method
+	• Changing the responsibility of a method
+		○ Consumers could have called, overridden, wrapped or subscribed to the method
+	• Removing the reference to a method
+		○ Consumers could have overridden, wrapped or subscribed the method and expecting their logic to run.
+
+Delegates
+	• Any change in signature
+		○ Consumers could have subscribed dynamically.
+	• Removing the reference to a delegate
+Consumers could have subscribed and expect their logic to run.
