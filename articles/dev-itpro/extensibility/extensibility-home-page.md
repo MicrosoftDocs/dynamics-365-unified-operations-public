@@ -124,14 +124,14 @@ Information on customization is also shared through various blogs where differen
 
 The following is a list of some best practices that can help you create extensible solutions in X++ that would enable consumers of your code to extend your solution.
 
-+ [Classes](ExtensibleClasses.md)
-+ [Methods](ExtensibleMethods.md)
-+ [Forms](ExtensibleForms.md)
-+ [Extended data types](ExtensibleEDTs.md)
-+ [Extensible enums](ExtensibleEnums.md)
-+ [Delegates](ExtensibleCodeDelegates.md)
-+ [Tables](ExtensibleTables.md)
-+ [Extensibility attributes for methods](ExtensibilityAttributes.md)
++ [Classes](extensible-classes.md)
++ [Methods](extensible-methods.md)
++ [Forms](extensible-forms.md)
++ [Extended data types](extensible-edts.md)
++ [Extensible enums](extensible-enums.md)
++ [Delegates](extensible-code-delegates.md)
++ [Tables](extensible-tables.md)
++ [Extensibility attributes for methods](extensibility-attributes.md)
 
 
 ## Breaking changes
