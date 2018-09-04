@@ -50,7 +50,7 @@ For protected and public methods, you can opt out, by decorating the method with
 
 You cannot opt-in for private methods.
 
-####Best practices when writing code
+#### Best practices when writing code
 + When a method is hookable the compiler will generate extra IL code to enable the method as an extension point. This extra code has a small performance overhead, which in most cases is negligible. However, for performance critical methods, consider marking the method as not hookable.
 
 ## Wrappable
@@ -63,7 +63,7 @@ For protected and public methods, you can opt out, by decorating the method with
 
 You cannot opt-in for private methods.
 
-### Best practices when writing code
+#### Best practices when writing code
 + Chain-of-command has many similarities with inheritance. In situations where you want to allow others to call your method, but not change it you would typically mark the method as final. Consider marking these methods as not wrappable; or even not hookable.
 
 ## Replaceable 
