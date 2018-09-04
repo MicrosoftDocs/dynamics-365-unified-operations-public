@@ -80,6 +80,29 @@ When code is written like this, methods will be short (often less than 5-10 code
 
 For example:
 ```
+public void processOrder(SalesOrder _salesOrder)
+    {
+        if (this.approveOrder(_salesOrder))
+        {
+            this.confirmOrder(_salesOrder);
+        }
+        else
+        {
+            this.rejectOrder(_salesOrder);
+        }
+    }
+```
 
+In X++ every (protected and public) method is an extension point - writing clean code, will automatically produce extensible code.  In the example above, an extender can change how approval, confirmation and rejection is implemented.  If those implementations had been inline, the code would not be extensible.
+
+There are many resources for learning to write clean code:
++ [https://www.pluralsight.com/courses/writing-clean-code-humans] (https://www.pluralsight.com/courses/writing-clean-code-humans)
++ [https:://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882] (https:://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
++ [https://cleancoders.com/] (https://cleancoders.com/)
+
+### D.R.Y.
+**Don't Repeat Yourself.** Avoid redundancy in your logic to prevent misalignment of implementations. With extensible code this is even more important, as the extender may not extend all required pieces, leaving the solution broken unintentionally.
+
+Read more [Don't repeat yourself] (https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
 
