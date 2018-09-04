@@ -36,7 +36,7 @@ When making your solution extensible, you also guarantee to not break those exte
 
 Below is a list of some types of changes that could potentially break someone. 
 
->DISCLAIMER: This is not an exhaustive list - there could be other types of changes that are not listed here below that could be breaking changes. Reach out to the Extensibility team in case of any doubts.
+>**DISCLAIMER:** This is not an exhaustive list - there could be other types of changes that are not listed here below that could be breaking changes. Reach out to the Extensibility team in case of any doubts.
 
 ## Data model changes
 
@@ -48,13 +48,13 @@ Below is a list of some types of changes that could potentially break someone.
 #### Data Types
   + Changing an Enum from **Extensible to not Extensible**
     - Consumers could have extensions to the enum
-  + Changing an Enum from not Extensible to Extensible
+  + Changing an Enum from **not Extensible to Extensible**
     - Consumers could be using the enums in comparisons.
-  - Decreasing the decimal precision of a real type EDT
-	    - Consumers could have dependencies on the ability to enter data with the precision
-	- Decreasing the size of string type EDT
-	    - Consumers could have dependencies on the size of the string
-	- Specializing the EDT by making it extend another EDT
+  + **Decreasing the decimal precision of a real type EDT**
+  	- Consumers could have dependencies on the ability to enter data with the precision
+  + Decreasing the size of string type EDT
+    - Consumers could have dependencies on the size of the string
++ Specializing the EDT by making it extend another EDT
 	    - Consumers could have string length or decimals precision extension to the EDT
 	- Changing the Enum type of a Enum type EDT when the Enum is extensible 
       - Consumers could have extensions to the Enum
