@@ -35,6 +35,7 @@ ms.dyn365.ops.version: Platform update 20
 This topic describes the various attributes used to control extensibility capability for methods.
 
 Default attributes based on access modifiers:
+
 |Hookable |	Wrappable |	Replaceable |
 |---------|----------|-----------|
 | Private |	Not-supported |	Not-supported |	Not-supported |
