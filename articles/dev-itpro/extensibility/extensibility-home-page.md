@@ -120,9 +120,9 @@ Information about customization is also shared through blogs where various topic
 + [Extending inventory dimensions](https://blogs.msdn.microsoft.com/mfp/2017/08/10/extensible-inventory-dimensions/)
 + [Embrace the extensions mindset with Dynamics 365 for Finance and Operations](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)
 
-## Best practices for creating an extensible solution in X++
+## How do I create an extensible solution?
 
-Here is a list of some best practices that can help you create extensible solutions in X++, so that consumers of your code can extend your solution.
+This section includes some best paratices on how to write/make your code extensible, so that consumers of your code can extend your solution. Extensible solutions can be achieved by simply writing clean code, applying good engineering principles. We have compiled a list of some best practices and tips in this section.
 
 + [Classes](extensible-classes.md)
 + [Methods](extensible-methods.md)
