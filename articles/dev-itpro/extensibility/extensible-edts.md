@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Extensible EDTs
-description: This article provides information about extensible EDTs.
+title: Extended data types
+description: This article provides information about extended data types (EDTs).
 author: mfp
 manager: AnnBe
 ms.date: 09/09/2018
@@ -32,30 +32,26 @@ ms.dyn365.ops.version: Platform update 20
 
 # Extended data types
 
-Extended Data Types have a rich extension model, giving extenders control to change certain behavior.  
+Extended data types (EDTs) have a rich extension model, which gives extenders control to change certain behaviors.  
 
-To provide an extensible solution keep this in mind: 
+To provide an extensible solution, keep the following in mind when workign with EDTs:
 
-## Label / Help text
-These properties can be changed by an extension. Naturally only one value can win.  The assumption is that if multiple solutions would change the label of the same extended data type, then they would be functionally mutual exclusive, i.e. no one would install both on the same system.
+## Label/Help text
+Labels and help text properties can be changed by an extension, but only one value can remain. If multiple solutions change the label of the same extended data type, then functionally, they would be mutually exclusive, meaning noone would install both on the same system.
 
 ## String size
-This can only be defined on root extended data types.  The system will use the largest value defined across the extended data type and its extensions.
-
-String size cannot be changed by an extension for derived extended data types, as it would break the IS-A relationship between the extended data types. 
-
-Assignments to string extended data types will truncate the string to match the defined string size.
+String size can only be defined on root EDTs. The system will use the largest value defined across the EDT and its extensions.
+String size can't be changed by an extension for derived EDTs because it would break the IS-A relationship between the EDTs.
+Assignments to string EDTs will truncate the string to match the defined string size.
 
 ## Extends
-This property cannot be changed by an extension; and changing it after released is a breaking change; hence ensure it is set correctly initially. 
+This property can't be changed by an extension and results in a breaking change if it is changed after release. This means that you must ensure ensure it is set correctly prior to release. 
+If you set this property, any future changes to the string size will not be allowed either by you or extenders. 
+Additionally, avoid unnecessary dependencies like extending generic extended data types such as Name and Description.
 
-By setting this property, you forfeit the ability to change string size in the future - both by you and extenders.
+## Extending the nunber of decimals
+The property, **Number of decimals** can't be changed by an extension. Setting the property to **True** will allow extenders to change the number of decimals. 
 
-Avoid unnecessary dependencies, like extending generic extended data types, like Name and Description.
-
-## No Of Decimals is Extensible
-This property cannot be changed by an extension. Setting this to True will allow extenders to change the number of decimals. 
-
-While setting this to True, you must guarantee that:
-+ All truncation logic would honor the number of decimals specified on the Extended Data Type .i.e. no implicit or hard coded rounding would occur.
-+ The value is not assigned to other incompatible extended data types without proper handling of rounding.|
+If you set this property to **True**, ensure that:
++ All truncation logic would honor the number of decimals specified on the EDT meaning that no implicit or hard-coded rounding would occur.
++ The value is not assigned to other incompatible EDTs without proper handling of rounding.
