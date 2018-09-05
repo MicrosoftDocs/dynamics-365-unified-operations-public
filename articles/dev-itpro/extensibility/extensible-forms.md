@@ -2,7 +2,7 @@
 # required metadata
 
 title: Write extensible forms
-description: This article provides information about how to write extensible forms.
+description: This topic provides information about how to write extensible forms.
 author: smithanataraj
 manager: AnnBe
 ms.date: 09/09/2018
@@ -33,15 +33,15 @@ ms.dyn365.ops.version: Platform update 20
 # Write extensible forms
 
 ## Methods on forms
-+ The guidelines for writing extensible methods generally apply to form methods.
++ In general, the guidelines for writing extensible methods also apply to form methods.
 + Chain of Command (CoC) gives access to the form non-private members, which is the same as for classes.
-+ CoC is enabled for nested classes which implies that methods defined within various levels on the form are extensible.
++ CoC is enabled for nested classes. Therefore, methods that are defined in various levels on the form are extensible.
 
 > [!NOTE]
 > One limitation to this is related to form data source methods. Only methods that are defined in the kernel are enabled for extensions.
 
 ## Field groups
-Consider using field groups whenever possible. This will allow ISVs to add their fields for free when they extend a field group.
+Consider using field groups whenever possible. In this way, independent software vendors (ISVs) can add their fields for free when they extend a field group.
 
 ## Form controls
 Moving around form controls could potentially break if the controls are made non-extensible by moving.
