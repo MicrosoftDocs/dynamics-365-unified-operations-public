@@ -44,11 +44,16 @@ If you set these properties, downstream implementors can extend the enum with mo
 	
 ## Using extensible enums in code
 Because enum values are no longer controlled by the developer, there is no certainty about the enum values. When you use extensible enums in code, remember that extensible enums can't be used in comparisons. For example, **MyEnum::Value1 \> MyEnum::Value2**.
+
 Also, look for any conversions between integers and enums. For example, modeled ranges in views and queries, and queries that are created from code by using comparisons, such as **\<** and **\>** or by using hardcoded integer values in comparisons.
-When the model and all dependent models are compiled, the method will be flagged.
+
+When the model and all dependent models are compiled, the comparisons and conversions to integers will be fladded by the compiler as errors.
 	
-+ Make sure that logic where the enum values are used is extracted in **smaller methods**. In that way, an extension that uses Chain of Command (CoC) can handle the enum values that are added.
-+ For **construct** methods where the instantiation is based on enum values, replace switch blocks with **SysExtension** wherever such a replacement is possible. In other cases, make sure that the default block is extensible. For an example, see the **PurchRFQCaseCopying** class.
-+ If the enum is used in **switch blocks**, avoid having default blocks that either have or don't have throws that aren't extensible. 
-+ When there are **long switch case blocks** or **if...else blocks** for the enum values, consider creating a class hierarchy to handle specific logic that is related to the enum. For an example, see the **PriceGroupTypeTradeAgreementMapping** class hierarchy.
-+ Use the **in** keyword for query ranges that use the enum values, and make the container that the **in** keyword uses extensible.
+Make sure that logic where the enum values are used is extracted in **smaller methods**. In that way, an extension that uses Chain of Command (CoC) can handle the enum values that are added.
+
+For **construct** methods where the instantiation is based on enum values, replace switch blocks with **SysExtension** wherever such a replacement is possible. In other cases, make sure that the default block is extensible. For an example, see the **PurchRFQCaseCopying** class.
+
+If the enum is used in **switch blocks**, avoid having default blocks that either have or don't have throws that aren't extensible. 
+When there are **long switch case blocks** or **if...else blocks** for the enum values, consider creating a class hierarchy to handle specific logic that is related to the enum. For an example, see the **PriceGroupTypeTradeAgreementMapping** class hierarchy.
+
+Use the **in** keyword for query ranges that use the enum values, and make the container that the **in** keyword uses extensible.
