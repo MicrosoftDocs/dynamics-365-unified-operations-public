@@ -124,6 +124,7 @@ Information about customization is also shared through blogs where various topic
 
 This section includes some best paratices on how to create/make your solution extensible, so that consumers of your code can extend your solution.
 
++ [Writing extensible code](writing-extensible-code.md)
 + [Classes](extensible-classes.md)
 + [Methods](extensible-methods.md)
 + [Forms](extensible-forms.md)
