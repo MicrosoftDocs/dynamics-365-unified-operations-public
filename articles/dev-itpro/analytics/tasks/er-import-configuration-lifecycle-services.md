@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # ER Import a configuration from Lifecycle Services
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task-guide-banner](../../includes/task-guide-banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Lifecycle Services (LCS).
 
