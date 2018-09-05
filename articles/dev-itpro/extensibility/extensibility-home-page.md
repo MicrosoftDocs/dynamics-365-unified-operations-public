@@ -122,7 +122,7 @@ Information about customization is also shared through blogs where various topic
 
 ## How do I create an extensible solution?
 
-This section includes some best paratices on how to create/make your code extensible, so that consumers of your code can extend your solution.
+This section includes some best paratices on how to create/make your solution extensible, so that consumers of your code can extend your solution.
 
 + [Classes](extensible-classes.md)
 + [Methods](extensible-methods.md)
