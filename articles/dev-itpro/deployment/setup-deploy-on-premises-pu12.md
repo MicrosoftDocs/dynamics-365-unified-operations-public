@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with Platform update 12.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 08/08/2018
+ms.date: 09/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -53,7 +53,7 @@ The Finance and Operations application consists of three main components:
 
 These components depend on the following system software:
 
-- Microsoft Windows Server 2016 (only English language installations are supported)
+- Microsoft Windows Server 2016 (only English OS installations are supported)
 - Microsoft SQL Server 2016 SP1, which has the following features:
   - Full-text index search is enabled.
   - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines.
@@ -151,7 +151,8 @@ The following prerequisite software is installed on the VMs by the infrastructur
 
 | Node type | Component | Details |
 |-----------|-----------|---------|
-| AOS       | SNAC – ODBC driver | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| AOS       | SNAC – ODBC driver 13 | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| AOS       | SNAC – ODBC driver 17 | This driver is needed for upgrading to PU15 or higher: <https://www.microsoft.com/en-us/download/details.aspx?id=56567> |
 | AOS       | The Microsoft .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows Features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | AOS       | The Microsoft .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows Features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
 | AOS       | Internet Information Services (IIS) | **Windows Features:** WAS, WAS-Process-Model, WAS-NET-Environment, WAS-Config-APIs, Web-Server, Web-WebServer, Web-Security, Web-Filtering, Web-App-Dev, Web-Net-Ext, Web-Mgmt-Tools, Web-Mgmt-Console |
@@ -424,7 +425,8 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 | Component | Download link |
 |-----------|---------------|
-| SNAC – ODBC driver | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| SNAC – ODBC driver 13 | <https://www.microsoft.com/en-us/download/details.aspx?id=53339> |
+| SNAC – ODBC driver 17 | <https://www.microsoft.com/en-us/download/details.aspx?id=56567> |
 | Microsoft SQL Server Management Studio 17.5 | <https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms> |
 | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/en-us/help/3179560> |
 | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |

@@ -5,7 +5,7 @@ title: Localization and regulatory features
 description: This topic includes lists of resources that can help you learn more about country/region-specific functionality.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/10/2018
+ms.date: 09/05/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
