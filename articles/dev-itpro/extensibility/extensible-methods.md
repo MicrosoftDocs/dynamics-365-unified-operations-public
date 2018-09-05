@@ -34,21 +34,19 @@ ms.dyn365.ops.version: Platform update 20
 
 [!include [banner](../includes/banner.md)]
 
-By default, all public and protected methods in X++ are extensible by Chain of Command (CoC). When you make a method extensible, you should assess the exposed functionality of the method and the impact that it can have when it's extended.
-
-Before you make a method extensible, consider the impact that the extensions might have on the scenario where the method is used. For example, depending on the business scenario, there is low risk if you enable extensions to initialize a table record but high risk if you enable extensions to skip a specific validation. You might also want to consider the impact if the method is extended in parallel with other extensions.
+Before you make a method extensible, you should assess the exposed functionality of the method and the impact that the extensions might have on the scenario where the method is used. For example, depending on the business scenario, there is low risk if you enable extensions to initialize a table record but high risk if you enable extensions to skip a specific validation. You might also want to consider the impact if the method is extended in parallel with other extensions.
 
 After you've made a method extensible, future modifications to the method are restricted because of the potential user impact if the method signature or logic is changed.
 	
 Here are some guidelines to follow when you write extensible code:
 	
-+ **Write short and concise methods** – A method should have only one responsibility. This approach enables easy extensions of the method, where the extensions can act only on the specific agenda of the method. As a simple example, keep the construction and initialization of a class object in two separate methods.
-+ **Expose only what is necessary** – For any new class members or methods that are added, allow minimal access to all class members and methods by keeping them private.
++ **Write short and concise methods** – A method should have only one responsibility. This approach enables easy extensions of the method, where the extensions can act only on the specific responsibility of the method. As a simple example, keep the construction and initialization of a class object in two separate methods.
++ **Expose only what is necessary** – For any new class members or methods that are added, 'Keep any new class members or methods that you add private, to allow minimal access to them.
 + **Use private, protected, public, and final explicitly** – For methods and class fields, this approach will guide any extenders of your code to your extension points but still let you keep full control of the parts that the extenders should not care about or depend on.
 + **Method parameters**
 
-    - The method is most likely long and should be refactored. Consider whether it qualifies to refactor the whole method into a class and/or split it into multiple smaller methods that require fewer parameters.
-    - In other cases, when several parameters are required, the parameters often have a coherence that can be expressed by a class. By encapsulating these parameters in a class, you make it easy for extenders to add additional parameters and to add additional parameters to the base method, without breaking application programming interfaces (APIs) later.
+    - The method is most likely long and should be refactored. Consider whether you should refactor the whole method into a class or split the method into smaller methods that require fewer parameters.
+    - In other cases, when several parameters are required, the parameters often have a coherence that can be expressed by a class. By encapsulating these parameters in a class, you make it easy for extenders to add additional parameters to the base method, without breaking application programming interfaces (APIs) later.
 
 + **Switch blocks**
 
@@ -102,7 +100,7 @@ Here are some guidelines to follow when you write extensible code:
 	- Avoid a throw in factory methods. One way to resolve this issue is to extract the conditions for the throw into a separate method that is extensible. For more details, see the guidelines for throw statements later in this list.
 
 + **Static methods** – Static methods can't be extended with extra state. For example, a method extender can introduce properties that can be set by using parameter methods. Use instance methods instead, whenever this approach is possible.
-+ **Ability to extend part of the logic in a long method** – If it isn't possible to refactor a whole method, but the goal is to make part of the method extensible, apply the extract method refactoring. The new protected method must have a single responsibility, and it must also have a name that conceptually and precisely describes that responsibility. In this way, owners and all extenders can use the method without breaking each other. For example, initialization, insertion, updates to a table record, or instantiation and initialization of a class can be extracted into smaller methods enables each of these for extensions. The original method then calls these individual methods. Therefore, the callers to this method aren't broken.			
++ **Ability to extend part of the logic in a long method** – If it isn't possible to refactor a whole method, but the goal is to make part of the method extensible, apply the extract method refactoring. The new protected method must have a single responsibility, and it must also have a name that conceptually and precisely describes that responsibility. In this way, owners and all extenders can use the method without breaking each other. For example, initialization, insertion, updates to a table record, or instantiation and initialization of a class can be extracted into smaller methods, and each of these smaller methods can be enabled for for extensions. The original method then calls these individual methods. Therefore, the callers to this method aren't broken.			
 + **Throw statements** – A throw that is added to an existing method that is extensible could break extenders. Consider adding the conditions for the throw in an extensible method. In this way, extenders can take advantage of the method, and you can get rid of the throw.
 
     **Non-extensible code**
@@ -116,6 +114,6 @@ Here are some guidelines to follow when you write extensible code:
 + **Create, read, update and delete (CRUD) statements**
 
 	- Use Query objects in scenarios where the queries should be extensible. Implement a protected method that builds the query. In addition, you might want to build several separate methods to add joined data sources, ranges, and selection fields. In this way, different parts of the query can be extended individually.
-	- Use **SysQueryInsertRecordSet** to convert insert_recordset to query.
+	- Use **SysQueryInsertRecordSet** to convert insert_recordset to a query.
 	- Avoid field lists in select statements. In this way, you enable extenders to retrieve their additional fields without having to extend.
 	- Use the **in** keyword in query ranges to enable extenders to add more values to the query range. We recommend this approach especially for query ranges that have enum values.
