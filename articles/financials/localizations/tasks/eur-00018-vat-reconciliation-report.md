@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: VAT reconciliation report
+title: EUR-00018 VAT reconciliation report
 description: This procedure shows how to generate the tax reconciliation report that is available for Icelandic and Norwegian legal entities. 
 author: v-oloski
 manager: AnnBe 
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: MainAccountLookup   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# VAT reconciliation report
+# EUR-00018 VAT reconciliation report
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

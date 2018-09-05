@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Set up impairment accounting common parameters and posting profile (Japan)
+title: Setup impairment accounting common parameters and posting profile
 description: Use this task to learn how to define impairment accounting common parameters and posting profiles. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 09/22/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: AssetParameters, AssetPosting   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Set up impairment accounting common parameters and posting profile (Japan)
+# Setup impairment accounting common parameters and posting profile
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -47,7 +47,8 @@ This procedure uses the JPMF demo company data.
 3. In the Warning period (in months) field, enter a number.
     * Example: 6 months  
 4. Click the Number sequences tab.
-    * Confirm the following Number sequence codes are set up:  •Document ID for impairment  •Impairment test ID  •Cash generating unit number 
+    * Confirm the following Number sequence codes are set up:  •Document ID for impairment  •Impairment test ID  •Cash generating unit number        
+    *   
 
 ## Set up posting profile
 1. Go to Fixed assets > Setup > Fixed asset posting profiles.

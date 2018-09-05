@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Key invoice data into accounts payable using an approval journal
+title: Key invoice data into AP system using approval journal
 description: This task guide will show you how to use the invoice register to create invoices and then use the approval journal to update the expense accounts. 
 author: abruer
 manager: AnnBe 
-ms.date: 11/15/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: LedgerJournalTable, LedgerJournalTransInvoiceRegister, HcmWorkerLookUp, LedgerJournalTransApprove, LedgerJournalTransApproveFetchVouchers, LedgerTransVoucher   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: abruer
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Key invoice data into accounts payable using an approval journal
+# Key invoice data into AP system using approval journal
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

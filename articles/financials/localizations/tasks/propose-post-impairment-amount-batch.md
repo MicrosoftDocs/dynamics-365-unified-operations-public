@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Propose and post the impairment amount by batch (Japan)
+title: Propose and post the impairment amount by batch
 description: This task walks you through proposing and posting the impairment amount by batch. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 10/31/2017
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form:LedgerJournalTable, LedgerJournalTransAsset   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Propose and post the impairment amount by batch (Japan)
+# Propose and post the impairment amount by batch
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -54,7 +54,7 @@ This task uses the JPMF demo company data.
 11. Refresh the page.
     * You can refresh the page to see the latest information. You may need to refresh multiple times depending on when the batch is processed.  
 12. In the list, find and select the desired record.
-    * You may need to refresh the page multiple times depending on when the batch is being processed.  
+    * You may need to refresh the page multiple times depending on when the batch is been processed.  
 13. Click Lines.
     * Confirm that the correct fixed assets were created and that they have the correct impairment amount.  
 14. Click Post.

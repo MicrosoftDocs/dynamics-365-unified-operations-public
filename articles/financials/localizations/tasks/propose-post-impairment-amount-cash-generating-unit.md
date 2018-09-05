@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Propose and post the impairment amount on a cash generating unit (Japan)
+title: Propose and post the impairment amount on a cash generating unit
 description: For Japan, after the calculation of the impairment amount, you can propose and post it in a fixed asset journal. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 02/26/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Propose and post the impairment amount on a cash generating unit (Japan)
+# Propose and post the impairment amount on a cash generating unit
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

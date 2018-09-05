@@ -5,7 +5,7 @@ title: Create and assign advanced rule structures
 description: This task guide steps through creating and assigning an advanced rule structure to an account structure. 
 author: aprilolson
 manager: AnnBe 
-ms.date: 10/26/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: DimensionConfigureAccountRuleStructure, DimensionCreateAccountRuleStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate, DimensionConfigureAccountStructure, DimensionConfigureAccountRule, DimensionCreateAccountRule, DimensionSelectAccountRuleStructure   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create and assign advanced rule structures
 
@@ -36,7 +36,7 @@ This task guide steps through creating and assigning an advanced rule structure 
 ## Create an advanced rule structure
 1. Go to General ledger > Chart of accounts > Structures > Advanced rule structures.
 2. Click New to open the drop dialog.
-3. In the Advanced rule structure field, type a name to describe the rule structure.
+3. In the Advanced rule structure field, type a name to descritbe the rule structure.
 4. In the Description field, type a value to describe the structure.
 5. Click OK.
 6. Click Add segment.

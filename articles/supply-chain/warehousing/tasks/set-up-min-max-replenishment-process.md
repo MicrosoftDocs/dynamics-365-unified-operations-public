@@ -5,7 +5,7 @@ title: Set up a min-max replenishment process
 description: This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy. 
 author: perlynne
 manager: AnnBe 
-ms.date: 11/02/2017
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdLookup, WHSLocDirTable, InventLocationIdLookup, SysQueryForm, WHSWorkTemplateTable, WHSReplenishmentTemplates, UnitOfMeasureLookup, SysQueryTableLookUp, SysQueryFieldLookUp, SysRecurrence   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Set up a min-max replenishment process
 
@@ -144,7 +144,7 @@ This procedure shows you how to set up a new replenishment process which uses th
 7. Set the Batch processing option to Yes.
 8. Click Recurrence.
 9. Select the No end date option.
-10. Set the Recurrence pattern.
+10. Set the Recurrance pattern.
     * For example, select Days.  
 11. Click OK.
 12. Click OK.

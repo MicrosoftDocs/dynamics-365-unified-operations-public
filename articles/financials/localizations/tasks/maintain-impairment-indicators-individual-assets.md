@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Maintain impairment indicators on individual assets (Japan)
+title: Maintain impairment indicators on individual assets
 description: Use this task to learn how to maintain impairment indicators on individual assets. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 09/22/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: AssetTable, AssetBook, AssetImpairmentIndicator_JP, AssetImpairmentReview_JP, SysQueryForm   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Maintain impairment indicators on individual assets (Japan)
+# Maintain impairment indicators on individual assets
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,30 +1,30 @@
 --- 
-# required metadata
-
+# required metadata 
+ 
 title: Configure a worker using the mobile job device
-description: This procedure shows you how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.
+description: This procedure shows you how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations. 
 author: ShylaThompson
-manager: AnnBe
-ms.date: 11/11/2016
-ms.topic: business-process
+manager: AnnBe 
+ms.date: 8/29/2018
+ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-applications 
 ms.technology:  
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
+ 
+# optional metadata 
+ 
+ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegistrationSetupAssignUsers   
+audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2016-06-30 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Configure a worker using the mobile job device
 
@@ -71,3 +71,4 @@ This procedure shows you how to assign the correct roles to the user account of 
 5. Click Edit.
 6. In the Production unit field, you can set the default filter for the worker. This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.
 7. Close the page.
+

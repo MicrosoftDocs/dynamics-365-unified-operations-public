@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Generate audit file (Germany)
+title: Generate German audit file
 description: This procedure shows how to generate the German audit file. 
 author: mrolecki
 manager: AnnBe 
-ms.date: 02/18/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form:SysOperationTemplateForm   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Germany
 # ms.search.industry: 
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Generate audit file (Germany)
+# Generate German audit file
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
