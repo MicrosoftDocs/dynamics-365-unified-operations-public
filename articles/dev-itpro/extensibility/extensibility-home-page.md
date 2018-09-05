@@ -122,7 +122,7 @@ Information about customization is also shared through blogs where various topic
 
 ## How do I create an extensible solution?
 
-This section includes some best paratices on how to write/make your code extensible, so that consumers of your code can extend your solution. Extensible solutions can be achieved by simply writing clean code, applying good engineering principles. We have compiled a list of some best practices and tips in this section.
+This section includes some best paratices on how to write/make your code extensible, so that consumers of your code can extend your solution.
 
 + [Classes](extensible-classes.md)
 + [Methods](extensible-methods.md)
