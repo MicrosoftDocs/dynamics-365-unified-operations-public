@@ -34,7 +34,12 @@ ms.dyn365.ops.version: Platform update 20
 
 [!include [banner](../includes/banner.md)]
 
-A class and its methods should have a single responsibility. When you write small, cohesive methods that have good names, extension is easier to do later. Every public and protected method is an extensibility point. Every time that a new method is introduced, downstream consumers get a new way to inject additional logic into the method.
+A class and its methods should have a single responsibility. Keep the following in mind in order to design classes that are resilient to changes in the long run. Class should have:
+
++ A clear purpose
++ Good names (class name and method names)
++ Only methods that should be extended are exposed for extensibility, i.e. the key rule is allow extending as little as necessary.
+	- Every public and protected method is an extensibility point in X++. Every time that a new method is introduced, downstream consumers get a new way to inject additional logic into the method.
 
 ### Example
 
