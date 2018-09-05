@@ -119,11 +119,11 @@ Below is a list of some types of changes that could potentially break someone.
 	- Consumers could have overridden, wrapped or subscribed to the method
 + Changing a method from **instance to static or vice versa**
 	- Consumers could have called, overridden, wrapped or subscribed to the method
-+ Obsoleting a method and stop invoking it.
++ **Obsoleting a method and stop invoking it**
 	- Consumers could have called, overridden, wrapped or subscribed to the method
-+ Changing the responsibility of a method
++ Changing the **responsibility of a method**
 	- Consumers could have called, overridden, wrapped or subscribed to the method
-+ Removing the reference to a method
++ **Removing the reference to a method**
 	- Consumers could have overridden, wrapped or subscribed the method and expecting their logic to run.
 
 ### Delegates
@@ -142,6 +142,6 @@ Below is a list of some types of changes that could potentially break someone.
 	- Consumers could have a compile time dependency on the existence of the element
 	 
 ## Metadata Extensions
-+ Not following **naming guidelines** for metadata or augmentation classes
++ Not following the **naming guidelines** for metadata or augmentation classes
 	- Consumers could have elements with the same name.
- 
+	
