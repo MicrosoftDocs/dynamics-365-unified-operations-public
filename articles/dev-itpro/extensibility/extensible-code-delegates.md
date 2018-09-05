@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Write extensible code and delegates
+title: Delegates
 description: This topic provides information about how to write extensible code and delegates.
 author: mfp
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 20
 ---
 
 
-# Write extensible code and delegates
+# Delegates
 [!include [banner](../includes/banner.md)]
 
 Although you can subscribe to existing delegates, don't create new delegates. The Chain of Command (CoC) provides a richer, more robust, and more concise extension mechanism that supersedes delegates.
