@@ -38,9 +38,11 @@ The following table provides an overview of the default support for extensibilit
 
 |   | Hookable | Wrappable | Replaceable |
 |---|----------|-----------|-------------|
-| **Private** | Not supported | Not supported | Not supported |
 | **Protected** | Yes | Yes | No |
 | **Public** | Yes | Yes | No |
+
+> [!NOTE]
+> Private methods are not supported at this time.
 
 ## Hookable
 If a method is hookable, extenders can subscribe to pre-events and post-events.
