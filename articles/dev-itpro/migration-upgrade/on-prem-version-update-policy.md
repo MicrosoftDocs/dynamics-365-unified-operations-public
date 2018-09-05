@@ -57,7 +57,7 @@ Application and Platform releases expire at the end of the month of their softwa
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 | 7.3.11971  | March 2018 | April 2020*     | December 2027  |
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 | 7.2.11792 | June 2017 | April 2019     | December 2027  |
 
-\* The only exception to being on the latest version is for customers with unfulfilled [extension requests](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page) that have been submitted to Microsoft. For these customers, support for version 7.3 will be available until April 2020.
+\* The only exception to being on the latest version is for customers with unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that have been submitted to Microsoft. For these customers, support for version 7.3 will be available until April 2020.
 
 ### Platform Releases
 
