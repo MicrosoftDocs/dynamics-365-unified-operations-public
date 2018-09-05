@@ -43,17 +43,9 @@ If you set these properties, downstream implementors can extend the enum with mo
 + The first element in the enum gets a value of 0 (zero). Therefore, an extensible enum can still be used with the **not** operator. The only exception is when the first element of the enum had a non-zero value before the enum was made extensible.
 	
 ## Using extensible enums in code
-Because enum values are no longer controlled by the developer, there is no certainty about the enum values. Here are some things that you should look for when you use extensible enums in code:
-
-+ Extensible enums **can't be used in comparisons** (for example, **MyEnum::Value1 \> MyEnum::Value2**).
-+ **Conversions between integers and enums**
-
-    - Modeled ranges in views and queries, and queries that are created from code: 
-
-        - By using comparisons, like \<, \>, and so on 
-        - By using hardcoded integer values in comparisons 
-    
-    - When the model and all dependent models are compiled, the preceding will be flagged.
+Because enum values are no longer controlled by the developer, there is no certainty about the enum values. When you use extensible enums in code, remember that extensible enums can't be used in comparisons. For example, **MyEnum::Value1 \> MyEnum::Value2**.
+Also, look for any conversions between integers and enums. For example, modeled ranges in views and queries, and queries that are created from code by using comparisons, such as **\<** and **\>** or by using hardcoded integer values in comparisons.
+When the model and all dependent models are compiled, the method will be flagged.
 	
 + Make sure that logic where the enum values are used is extracted in **smaller methods**. In that way, an extension that uses Chain of Command (CoC) can handle the enum values that are added.
 + For **construct** methods where the instantiation is based on enum values, replace switch blocks with **SysExtension** wherever such a replacement is possible. In other cases, make sure that the default block is extensible. For an example, see the **PurchRFQCaseCopying** class.
