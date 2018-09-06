@@ -103,7 +103,7 @@ Here are some guidelines to follow when you write extensible code:
 + **Ability to extend part of the logic in a long method** – If it isn't possible to refactor a whole method, but the goal is to make part of the method extensible, apply the extract method refactoring. The new protected method must have a single responsibility, and it must also have a name that conceptually and precisely describes that responsibility. In this way, owners and all extenders can use the method without breaking each other. For example, initialization, insertion, updates to a table record, or instantiation and initialization of a class can be extracted into smaller methods, and each of these smaller methods can be enabled for for extensions. The original method then calls these individual methods. Therefore, the callers to this method aren't broken.			
 + **Throw statements** – A throw that is added to an existing method that is extensible could break extenders. Consider adding the conditions for the throw in an extensible method. In this way, extenders can take advantage of the method, and you can get rid of the throw.
 
-    **Non-extensible code**
+    **If condition refactored out to a protected method**
 
     ![Throw (before)](media/ExtensibleMethods3.png)
 
