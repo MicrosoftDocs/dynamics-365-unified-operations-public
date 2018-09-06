@@ -5,11 +5,15 @@ When copying a database between environments, you will need to run the environme
 
 Before you continue, you must make sure that the following prerequisites are met:
 
-1. If your target environment is running the July 2017 release or later, apply the following updates
+1. If your target environment is running the 7.3 release, apply the following updates
+   -  KB 4091254
+   
+2. If your target environment is running the July 2017 release (7.2), apply the following updates
+   -  KB 4035399
+   -  KB 4045801
+   -  KB 4091255
 
-   -   KB 4035399
-   -   KB 4045801
-2. If your target environment is running the November release (version 1611), apply the following hotfixes:
+3. If your target environment is running the November release (version 1611), apply the following updates
    -   KB 4025631
    -   KB 4035355
    -   KB 4035492
