@@ -77,11 +77,11 @@ Here are some guidelines to follow when you write extensible code:
 
 + **While** – Avoid **while** blocks in the middle of methods, because it becomes more difficult to extend the **while** blocks. Ideally, logic in a **while** block should be in a separate method that enables extensions.
 
-    **Non-extensible code**
+    **Refactoring logic within a while loop**
 
     ![Refactoring a while block (before)](media/ExtensibleMethods1.png)
 
-    **Extensible code after refactoring**
+    **Extensible method after refactoring**
 
     ![Refactoring a while block (after)](media/ExtensibleMethods2.png)
 
@@ -107,7 +107,7 @@ Here are some guidelines to follow when you write extensible code:
 
     ![Throw (before)](media/ExtensibleMethods3.png)
 
-    **Extensible code after refactoring**
+    **Extensible method after refactoring**
 
     ![Throw (after)](media/ExtensibleMethods4.png)
 
