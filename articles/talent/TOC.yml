@@ -6,6 +6,8 @@
     items:
     - name: What's new or changed
       items:
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 10, 2018)
+        href: whats-new-talent-september-10.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (August 2018)
         href: whats-new-talent-august2018.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (July 2018)
