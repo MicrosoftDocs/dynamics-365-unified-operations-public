@@ -42,7 +42,7 @@ The following table provides an overview of the default support for extensibilit
 | **Public** | Yes | Yes | No |
 
 > [!NOTE]
-> Private methods are not supported at this time.
+> Private methods are not extensible.
 
 ## Hookable
 If a method is hookable, extenders can subscribe to pre-events and post-events.
