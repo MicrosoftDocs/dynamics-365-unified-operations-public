@@ -40,7 +40,7 @@ This topic describes features that are either new or changed in Core HR.
 
 ## Allow specific time of day on time off requests (half day)
 
-If leave and absence is setup to have time off submitted in days, you can now
+If leave and absence is set up to have time off submitted in days, you can now
 also enable a half day definition. This option will let users specify if they
 will be requesting the first half or the second half of the day when submitting
 time off requests.
