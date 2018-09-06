@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent September 10, 2018 update
 
 ---
 
-# "What's new or changed in Dynamics 365 for Talent: Core HR (September 10, 2018)"
+# What's new or changed in Dynamics 365 for Talent: Core HR (September 10, 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Talent September 10, 2018 update
 
 This topic describes features that are either new or changed in Core HR.
 
-**Allow specific time of day on time off requests (half day)**
+## Allow specific time of day on time off requests (half day)
 
 If leave and absence is setup to have time off submitted in days, you can now
 also enable a half day definition. This option will let users specify if they
@@ -51,7 +51,7 @@ the Leave and absence area of Human resources parameters.
 
 The security privilege for this feature is: Maintain Human Resources Parameters
 
-**Leave and absence entry validation**
+## Leave and absence entry validation
 
 When an employee tries to submit a time off request that is longer than their
 work day, they’ll receive a warning message. Depending on how leave is
@@ -61,7 +61,7 @@ day off on any given date.
 This validation is always enabled. Any time an employee goes over the day
 threshold defined, they will receive the warning in their time off request.
 
-**Additional fields in workflow for conditional statements**
+## Additional fields in workflow for conditional statements
 
 Additional fields have been added to conditional statements and placeholders for
 several workflows within Core HR.
@@ -133,13 +133,13 @@ Position workflow has the following additions:
 Fields within conditional statements and place holders are available to all
 users that have access to configure the workflows mentioned above.
 
-**Navigation to Attract from personnel management**
+## Navigation to Attract from personnel management
 
 In personnel management, if Attract has not been set up, the candidates to hire
 section will direct users to get started with Attract instead of showing the
 message “We didn’t find anything to show here”.
 
-**Misc. Fixes**
+## Other changes
 
 This release includes several additional bug fixes.
 
