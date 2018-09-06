@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 20
 
 This topic describes the various attributes that can be used to control extensibility capabilities for methods.
 
-The following table provides an overview of the default support for extensibility.
+The following table provides an overview of the default support for extensibility on methods.
 
 |   | Hookable | Wrappable | Replaceable |
 |---|----------|-----------|-------------|
@@ -103,4 +103,4 @@ The general rule is that \[Hookable\] is required by \[Wrappable\], which is req
 | **\[Wrappable(true)\]** |	Yes | Yes |	No |
 | **\[Wrappable(false)\]** | Maybe, depending on whether the method is hookable (see the table earlier in this topic) | No | No |
 | **\[Replaceable(true)\]** | Yes | Yes | Yes |
-| **\[Replaceable(false)\]** | Maybe, depending on whether the method is hookable (see the earlier table) | Maybe, depending on whether the method is wrappable (see the earlier table) | No |
+| **\[Replaceable(false)\]** | Maybe, depending on whether the method is hookable (see the table earlier in this topic) | Maybe, depending on whether the method is wrappable (see the table earlier in this topic) | No |
