@@ -152,4 +152,3 @@ This release includes several additional bug fixes.
 -   Sort order and date display issues have been addressed on the Personnel
     management analytics
 
--   Other misc. fixes
