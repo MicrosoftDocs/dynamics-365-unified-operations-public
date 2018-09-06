@@ -5,7 +5,7 @@ title: Software lifecycle policy and cloud releases
 description: This topic outlines the lifecycle and support policies for the Microsoft Dynamics 365 for Finance and Operations online service.
 author: RyanCCarlson2 
 manager: AnnBe
-ms.date: 09/05/2018
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -69,7 +69,7 @@ For information about the new features included in each release, click the links
 | Dynamics AX                                                 | Minor release              | [7.0.1](../../fin-and-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md) | 7.0.1265.23014   | May 2016         | June 2017          |
 | Dynamics AX                                                 | Major release              | [7.0](../../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md)                    | 7.0.1265.3015    | February 2016    | June 2017          |
 
-\* The only exception to being on the latest version is for customers with unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that have been submitted to Microsoft. For these customers, support for version 7.3 will be available until April 2020.
+\* All customers must be on the latest version of Finance and Operations by April 30, 2019.  However, we are making an exception for customers who have unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that have been submitted to Microsoft. Those customers can be on version 7.3 until April 2020. For more information, see [FAQ for Dynamics 365 Update Policies](https://docs.microsoft.com/en-us/dynamics365/get-started/faq-update-policy).
 
 ### Table 2: Platform releases
 
