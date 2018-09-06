@@ -3,7 +3,7 @@
 
 title: Write extensible classes
 description: This topic provides information about how to write extensible classes.
-author: Smitha Nataraj, Lars-Bo
+author: smithanataraj
 manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
@@ -100,4 +100,4 @@ For more information about class hierarchies, see the following blog posts:
 + [Embrace the extensions mindset with Dynamics 365 for Finance and Operations #2 – SysExtension framework](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
 
 ## Deprecation
-If a class or a public or protected method is no longer required, always use a warning first to notify consumers that the method is obsolete. Then, when all consumers have had the chance to uptake the changes or the new API, the method can be deprecated. Deprecation of classes and methods (or removal of class members in other cases) is a breaking change. For more information, see [Breaking changes](BreakingChanges.md).
+If a class or a public or protected method is no longer required, always use a warning first to notify consumers that the method is obsolete. Then, when all consumers have had the chance to uptake the changes or the new API, the method can be deprecated. Deprecation of classes and methods (or removal of class members in other cases) is a breaking change. For more information, see [Breaking changes](breaking-changes.md).
