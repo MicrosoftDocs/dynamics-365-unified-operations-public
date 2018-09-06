@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Platform update 20
 + CoC is enabled for nested classes. Therefore, methods that are defined in various levels on the form are extensible.
 
 > [!NOTE]
-> One limitation of these guidelines is related to form data source methods. Only methods that are defined in the kernel are enabled for extensions.
+> One limitation of methods on forms, that for form data source methods only methods that are defined in the kernel are enabled for extensions, i.e. methods defined on the form data source are not extensible. This will be available in an upcoming Platform Update.
 
 ## Field groups
 Consider using field groups whenever possible. In this way, independent software vendors (ISVs) can add their fields for free when they extend a field group.
