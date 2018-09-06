@@ -87,7 +87,6 @@ This topic includes information and links to resources that can help you set up 
 - [Set up EU sales list reporting](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Set up payment slip format for project invoices](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Set up signers for print forms](emea-set-up-signers-for-printing-forms.md)
-- [Set up the transfer documents for goods movement inside a company](tasks/set-up-transfer-documents-goods-movement-inside-company.md)
 - [Specify a lading address for an intra-community transaction](tasks/eur-00002-specify-lading-address-intra-community.md)
 - [Storno accounting](emea-storno.md)
 - [Tax directives](emea-tax-directives.md)
