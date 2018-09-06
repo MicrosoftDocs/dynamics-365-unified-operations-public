@@ -1576,8 +1576,10 @@
           items:
           - name: Transfer transactions to the Intrastat
             href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
+          - name: Specify a lading address for an intra-community transaction
+            href: ../financials/localizations/tasks/eur-00002-specify-lading-address-intra-community.md
           - name: Generate an EU Intrastat declaration
-            href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md          
+            href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md
         - name: Inventory journal reports
           href: ../financials/localizations/emea-set-up-report-inventory-journal-names.md
         - name: Invoice issue deadlines
