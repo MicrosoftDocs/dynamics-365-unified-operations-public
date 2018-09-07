@@ -38,9 +38,9 @@ This topic provides information about daily operations for advance holders for R
 Use this procedure to create and post disbursement slips that have advance holder details. The advance holder balances are posted to the related employee balance account.
 
 1. Select **Cash and bank management** \> **Cash transactions** \> **Slip journal**.
-2. Select **New** to create a slip journal. For more information, see the "Register reimbursement or disbursement slips" section in [Cash - Setup and daily cash operations](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-set-daily-cash-op/articles/financials/localizations/rus-setup-daily-cash-operations.md).
+2. Select **New** to create a slip journal. For more information, see the "Register reimbursement or disbursement slips" section in [Cash - Setup and daily cash operations](rus-setup-daily-cash-operations.md).
 3. On the **Lines** page, in the **Offset account type** column, select **Advance holder**. Then select an advance holder in the **Offset account** column, and enter the amount in the **Credit** column.
-4. Approve and post the disbursement slip. For more information, see the "Post a cash voucher with cash reimbursements and cash disbursements" section in [Cash - Setup and daily cash operations](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-set-daily-cash-op/articles/financials/localizations/rus-setup-daily-cash-operations.md).
+4. Approve and post the disbursement slip. For more information, see the "Post a cash voucher with cash reimbursements and cash disbursements" section in [Cash - Setup and daily cash operations](rus-setup-daily-cash-operations.md).
 5. To inquire about the related transactions and advance holder balance, select the **Transactions** or **Balance** page in **Accounts payable** \> **Advance holders** \> **Advance holders** for the selected employee.
 
 ## Create and post vendor invoices that have advance holder details
