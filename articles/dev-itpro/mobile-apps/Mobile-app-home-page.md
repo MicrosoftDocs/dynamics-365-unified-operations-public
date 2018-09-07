@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobile app home page
+title: Dynamics 365 for Unified Operations mobile app home page
 description: This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-02-28
 
 ---
 
-# Mobile app home page
+# Dynamics 365 for Unified Operations mobile app home page
 
 [!include [banner](../includes/banner.md)]
 
@@ -143,9 +143,10 @@ The following table includes links to resources that can help you implement both
 <td>8</td>
 <td>User</td>
 <td>Download and install the mobile app.</td>
-<td><ul>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">For Android phones</a></li>
-<li><a href="https://go.microsoft.com/fwlink/?linkid=850663">For iPhones</a></li></ul>
+<td>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Unified Operations app for Android</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Unified Operations app for iOS</a><BR/>
+(Windows Phone unsupported)
 </td>
 </tr>
 <tr class="odd">

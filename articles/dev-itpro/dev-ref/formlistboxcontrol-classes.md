@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: F Classes - FormListBoxControl to FormNotifyEventArgs
+title: F classes (FormListBoxControl to FormNotifyEventArgs)
 description: API reference for classes from FormListBoxControl to FormNotifyEventArgs.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# F Classes - FormListBoxControl to FormNotifyEventArgs
+# F classes (FormListBoxControl to FormNotifyEventArgs)
 
 [!include [banner](../includes/banner.md)]
 

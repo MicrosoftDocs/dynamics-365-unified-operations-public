@@ -17,7 +17,7 @@ ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority,
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267694

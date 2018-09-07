@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Exclude test packages from the build output
+title: Exclude test packages from build output
 description: This topic explains how you can prevent specific packages from being included in the deployable package in the build output that the automated build process generates.
 author: jorisdg
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Exclude test packages from the build output
+# Exclude test packages from build output
 
 [!include [banner](../includes/banner.md)]
 

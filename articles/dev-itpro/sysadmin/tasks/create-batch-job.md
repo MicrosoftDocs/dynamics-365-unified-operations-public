@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create a batch job
+title: Create batch jobs
 description: A batch job is a group of tasks that are submitted to an Application Object Server (AOS) instance for automatic processing. 
 author: maertenm
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create a batch job
+# Create batch jobs
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

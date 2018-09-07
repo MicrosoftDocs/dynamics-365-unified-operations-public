@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ---
 
-# Respond by using EventHandlerResult or types that implement IEventHandlerResult
+# Respond by using EventHandlerResult
 
 [!include [banner](../includes/banner.md)]
 

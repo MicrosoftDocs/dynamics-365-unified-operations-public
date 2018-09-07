@@ -30,7 +30,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Task Recorder 
+# Task Recorder
 
 [!include [banner](../includes/banner.md)]
 

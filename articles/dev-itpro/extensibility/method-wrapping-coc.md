@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Class extension - Method wrapping and Chain of Command
+title: Class extension via method wrapping and Chain of Command (CoC)
 description: This topic discusses how to extend the business logic of public and protected methods by using method wrapping. 
 author: robadawy
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Class extension: Method wrapping and Chain of Command
+# Class extension via method wrapping and Chain of Command (CoC)
 
 [!include [banner](../includes/banner.md)]
 

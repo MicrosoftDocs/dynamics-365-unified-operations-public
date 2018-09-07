@@ -1,5 +1,5 @@
 ---
-title: Business process modeler
+title: Business process modeler (BPM) in Lifecycle Services (LCS)
 description: This topic provides information about the Business process modeler tool in Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Business process modeler
+# Business process modeler (BPM) in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 

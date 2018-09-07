@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: F Classes - FormBuildReferenceControl to FormButtonSeparatorControl
+title: F classes (FormBuildReferenceControl to FormButtonSeparatorControl)
 description: API reference for classes from FormBuildReferenceControl to FormButtonSeparatorControl.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# F Classes - FormBuildReferenceControl to FormButtonSeparatorControl
+# F classes (FormBuildReferenceControl to FormButtonSeparatorControl)
 
 [!include [banner](../includes/banner.md)]
 

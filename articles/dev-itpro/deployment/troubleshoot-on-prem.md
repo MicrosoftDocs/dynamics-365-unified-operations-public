@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot Microsoft Dynamics 365 for Finance and Operations (on-premises)
+title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
 ---
-# Troubleshoot Microsoft Dynamics 365 for Finance and Operations (on-premises)
+# Troubleshoot on-premises deployments
 
 [!include [banner](../includes/banner.md)]
 
@@ -82,7 +82,7 @@ The following folders contain additional information:
 - AX-BridgeService 
 
 ### Service Fabric Explorer
-Note the state of the cluster, application, and nodes. For information about how to access Service Fabric Explorer, see [Accessing Service Fabric Explorer](troubleshoot-on-prem.md#accessing-service-fabric-explorer).
+Note the state of the cluster, application, and nodes. For information about how to access Service Fabric Explorer, see [Access Service Fabric Explorer](troubleshoot-on-prem.md#access-service-fabric-explorer).
 
 #### Error: "Partition is below target replica or instance count"
 This error isn't a root error. It indicates that the status of each node isn't ready. For AXSFType (AOS), the status might still be **InBuild**.
@@ -422,7 +422,7 @@ For more information, see [Troubleshoot application upgrades](https://docs.micro
 
 To learn when a new Service Fabric release comes out, see the [Azure Service Fabric team blog](https://blogs.msdn.microsoft.com/azureservicefabric/).
 
-If you receive a warning in Service Fabric Explorer after you upgrade, make a note of the node, and then restart via expanding nodes, application, and code restart. For instructions, see [How to restart applications (example AOS)](troubleshoot-on-prem.md#how-to-restart-applications-example-aos).
+If you receive a warning in Service Fabric Explorer after you upgrade, make a note of the node, and then restart via expanding nodes, application, and code restart.
  
 ## Error: "Unable to load DLL 'FabricClient.dll'"
 If you receive this error, close and restart Windows PowerShell. If the error persists, restart the machine.

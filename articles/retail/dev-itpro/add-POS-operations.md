@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add a new POS operation to the POS layout by using Button grid designer
+title: Add POS operations to POS layouts by using Button grid designer
 description: This topic explains how to create a new POS operation and add it to the POS layout by using Button grid designer.
 author: mugunthanm
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4 
 ---
 
-# Add a new POS operation to the POS layout by using Button grid designer
+# Add POS operations to POS layouts by using Button grid designer
 
 [!include[banner](../includes/banner.md)]
 

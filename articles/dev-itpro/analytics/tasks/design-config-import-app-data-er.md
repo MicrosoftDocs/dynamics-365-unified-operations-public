@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Design configurations to parse incoming documents for application data updates (ER)
+title: Design ER configurations to parse incoming documents
 description: This procedure shows how to design Electronic reporting (ER) configurations to parse an incoming electronic document. 
 author: NickSelin
 manager: AnnBe 
@@ -27,7 +27,7 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 
 ---
-# Design configurations to parse incoming documents for application data updates (ER)
+# Design ER configurations to parse incoming documents
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

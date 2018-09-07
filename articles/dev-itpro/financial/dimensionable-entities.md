@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Make a backing table be consumable as a Financial dimension
+title: Make backing tables consumable as financial dimensions
 description: This topic provides the steps that you need to follow to make a backing table usable as a Financial dimension.
 author: aprilolson
 manager: AnnBe
-ms.date: 04/09/2017
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191363
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Make a backing table be consumable as a Financial dimension
+# Make backing tables consumable as financial dimensions
 
 [!include [banner](../includes/banner.md)]
 
@@ -161,3 +161,31 @@ If a new Organization Model OMOperatingUnitType enumeration is added, the steps 
 1. Follow the steps in this topic starting with Step 2, where you validate the data in SQL, and then continue through Step 5, where you validate that the dimension appears in the **Use Value From** lookup.
 
 Because the **OMOperatingUnitType** is backed by the **OMOperatingUnit** table, generic code already exists to handle the delete, update, and **renamePrimaryKey** methods. Therefore, you do not need to update these methods.
+
+## Step 6: Setting a dimension to be self-referenced 
+
+If you also want to create an data entity for your new entity, and that entity has a reference to default dimensions, add this code to the persistEntity() method.
+
+```
+if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+        {
+            this.<Your entity ‘private’ RecId Dimension field> = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(<Your backing table>), this.<Your entity Key field>, this.<Your entity ‘public’ DisplayValue field>);
+        }
+
+
+                                                                                                
+e.g.
+
+
+  public void persistEntity(DataEntityRuntimeContext _entityCtx)
+    {
+        if (_entityCtx.getDatabaseOperation() == DataEntityDatabaseOperation::Insert)
+        {
+            this.DefaultDimension = DimensionDefaultResolver::checkAndCreateSelfReference(tablenum(BankAccountTable), this.BankAccountId, this.DefaultDimensionDisplayValue);
+        }
+
+        super(_entityCtx);
+    }
+```
+> [!NOTE]
+> This ensures that if you also want the dimension to use itself as a default dimension value, the information is created in the correct sequence.

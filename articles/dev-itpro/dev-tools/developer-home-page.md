@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Develop and customize using Visual Studio
+title: Develop and customize by using Visual Studio
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Develop and customize using Visual Studio
+# Develop and customize by using Visual Studio
 
 [!include [banner](../includes/banner.md)]
 

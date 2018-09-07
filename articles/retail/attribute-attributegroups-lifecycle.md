@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations
+title: Attributes and attribute groups
 description: This topic describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields. 
 author: ashishmsft
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Application pdate 5, AX 8.0
 
 ---
 
-# Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations
+# Attributes and attribute groups
 
 [!include [banner](includes/banner.md)]
 

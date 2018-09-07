@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Extend data model to use Document Management files in format outputs
+title: Extend data models to use Document Management files in ER output
 description: The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. 
 author: NickSelin
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Extend data model to use Document Management files in format outputs
+# Extend data models to use Document Management files in ER output
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

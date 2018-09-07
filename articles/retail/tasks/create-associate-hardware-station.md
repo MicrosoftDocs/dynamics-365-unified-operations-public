@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create and associate a hardware station
+title: Create hardware stations
 description: This procedure walks through how to create a new hardware station. 
 author: jashanno
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create and associate a hardware station
+# Create hardware stations
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

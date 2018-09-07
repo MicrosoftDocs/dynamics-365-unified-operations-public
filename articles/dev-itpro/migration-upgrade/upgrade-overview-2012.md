@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrade Dynamics AX 2012 to Dynamics 365 for Finance and Operations 
+title: Upgrade from AX 2012 to Finance and Operations 
 description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Microsoft Dynamics 365 for Finance and Operations.
 author: tariqbell
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Upgrade Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations
+# Upgrade from AX 2012 to Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 

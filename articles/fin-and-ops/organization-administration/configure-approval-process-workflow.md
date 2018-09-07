@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure an approval process in a workflow
+title: Configure approval processes in a workflow
 description: Use the following procedure to configure the properties of the approval process.
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Configure an approval process in a workflow
+# Configure approval processes in a workflow
 
 [!include [banner](../includes/banner.md)]
 

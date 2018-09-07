@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create, calculate, and post a statement for a retail store
+title: Create, calculate, and post statements for a retail store
 description: This procedure walks through the manual steps for creating, calculating, and posting a statement for a store. 
 author: jashanno
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Create, calculate, and post a statement for a retail store
+# Create, calculate, and post statements for a retail store
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

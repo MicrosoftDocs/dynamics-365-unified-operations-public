@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Product search and customer search in POS
+title: Product search and customer search in the point of sale (POS)
 description: This topic provides an overview of improvements that have been made to product and customer search functionality in Microsoft Dynamics 365 for Retail. 
 author: ShalabhjainMSFT
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 ---
 
-# Overview of product and customer search in Point of Sale
+# Product search and customer search in the point of sale (POS)
 
 [!include [banner](includes/banner.md)]
 

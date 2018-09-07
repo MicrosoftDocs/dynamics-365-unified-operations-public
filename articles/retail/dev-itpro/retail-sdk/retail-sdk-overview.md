@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail SDK overview
+title: Retail software development kit (SDK)
 description: This topic provides general information about the Retail SDK. The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail SDK overview
+# Retail software development kit (SDK)
 
 [!include [banner](../../includes/banner.md)]
 

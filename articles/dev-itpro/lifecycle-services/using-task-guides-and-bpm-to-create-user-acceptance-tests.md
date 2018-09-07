@@ -1,6 +1,6 @@
 ---
-title: Create and execute acceptance tests using Task guides and BPM
-description: This topic provides information about using Task guides and BPM to create and exeucte acceptance test suites.
+title: Create user acceptance test libraries by using task guides and BPM
+description: This topic provides information about using Task guides and BPM to create and execute acceptance test suites.
 author: kfend
 manager: AnnBe
 ms.date: 06/07/2018
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Create an acceptance test library using Task guides and BPM
+# Create user acceptance test libraries by using task guides and BPM
 
 You can use Task guides and Business process modeler (BPM) to create a user acceptance test library. Organize your acceptance tests by business processes and then synchronize BPM to Visual Studio Team Services (VSTS) to manage test execution and test results. This topic walks through the process of creating and executing acceptance test suites to be used for manual or automatic testing.
 
