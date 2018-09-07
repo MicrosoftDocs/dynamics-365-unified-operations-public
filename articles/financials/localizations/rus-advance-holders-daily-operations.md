@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Daily operations for advance holders in Russia
-description: This topic provides information on daily operations like handing cash and closing balance for advance holders for Russia. 
+description: This topic provides information about daily operations, such as handling cash and closing balances, for advance holders for Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -31,321 +31,223 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-## Create and post disbursement slips for advance holders 
+This topic provides information about daily operations for advance holders for Russia. These operations include handling cash and closing balances.
 
-Use this procedure to create and post disbursement slips with advance holder details. The advance holder balances are posted to the related employee balance account.
+## Create and post disbursement slips for advance holders
 
-1.  Click **Cash and bank management** \> **Cash transactions** \> **Slip journal**.
+Use this procedure to create and post disbursement slips that have advance holder details. The advance holder balances are posted to the related employee balance account.
 
-2.  Select **New** to create a slip journal. For more information, see **Register reimbursement or disbursement slips** chapter in [Cash - Setup and daily cash operations](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-set-daily-cash-op/articles/financials/localizations/rus-setup-daily-cash-operations.md).
+1. Select **Cash and bank management** \> **Cash transactions** \> **Slip journal**.
+2. Select **New** to create a slip journal. For more information, see the "Register reimbursement or disbursement slips" section in [Cash - Setup and daily cash operations](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-set-daily-cash-op/articles/financials/localizations/rus-setup-daily-cash-operations.md).
+3. On the **Lines** page, in the **Offset account type** column, select **Advance holder**. Then select an advance holder in the **Offset account** column, and enter the amount in the **Credit** column.
+4. Approve and post the disbursement slip. For more information, see the "Post a cash voucher with cash reimbursements and cash disbursements" section in [Cash - Setup and daily cash operations](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-set-daily-cash-op/articles/financials/localizations/rus-setup-daily-cash-operations.md).
+5. To inquire about the related transactions and advance holder balance, select the **Transactions** or **Balance** page in **Accounts payable** \> **Advance holders** \> **Advance holders** for the selected employee.
 
-3.  In the **Lines** form, select **Advance holder** in **Offset account type** column, then in **Offset account** column select an advance holder and in **Credit** coulmn enter the amount.
+## Create and post vendor invoices that have advance holder details
 
-4. Approve and post the disbursement slip. For more information, see **Post a cash voucher with cash reimbursements and cash disbursements** chapter in [Cash - Setup and daily cash operations](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/rus-set-daily-cash-op/articles/financials/localizations/rus-setup-daily-cash-operations.md).
+Use this procedure to create and post vendor invoices that have advance holder details. The advance holder balances are posted to the employee balance account instead of the vendor balance account.
 
-5. To inqure the related transactions and advance holder balance select **Transactions** or **Balance** forms in **Accounts payable** \> **Advance holders** \> **Advance holders** for the selected employee.
+1. Select **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+2. Select **New** to create a purchase order. For more information, see [Create a purchase order](../../supply-chain/procurement/tasks/create-purchase-order.md).
+3. On the **Purchase order** page, switch to the **Header** view.
+4. On the **Price and discount** FastTab, in the **Terms of payment** field, select the payment terms.
 
-## Create and post vendor invoices with advance holder details 
-
-Use this procedure to create and post vendor invoices with advance holder details. The advance holder balances are posted to the employee balance account instead of the vendor balance account.
-
-1.  Click **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
-
-2.  Select **New** to create a purchase order. For more information, see [Create a purchase order](../../supply-chain/procurement/tasks/create-purchase-order.md).
-
-3.  In the **Purchase order** form, select **Header** view mode, and then click the **Price and discount** FastTab.
-
-4.  In the **Terms of payment** field, select the payment term. 
-    
     > [!NOTE]
-    > Select a payment term that has the **From advance holder** check box selected in the **Terms of payment** form.
+    > Select payment terms where the **From advance holder** check box is selected on the **Terms of payment** page.
 
-5.  In the **Advance holder** field, select the advance holder for the purchase order.
+5. In the **Advance holder** field, select the advance holder for the purchase order.
+6. Enter all the required line details, and then select **Purchase** \> **Actions** \> **Confirm** to confirm the purchase order.
+7. Select **Invoice** \> **Generate** \> **Invoice** to create a vendor invoice for the purchase order.
+8. On the **Vendor invoice** page, in the **Invoice identification** field group, in the **Number** field, enter the invoice number.
+9. Select **Post** to post the invoice, and then close the page.
+10. Select **Accounts payable** \> **Inquiries and reports** \> **Advance holders inquires and reports** \> **Transactions** to view related advance holder transactions.
+11. Select **Voucher** to open the **Voucher transactions** page. The vendor balance account is replaced by the employee balance account, and the **Posting type** field is updated to **Employee balance**.
 
-6.  Enter all the required lines details and click **Purchase** \> **Actions** \> **Confirm** to confirm the purchase order.
+## Create and post advance reports
 
-7.  Click **Invoice** \> **Generate** \> **Invoice** to create a vendor invoice for the purchase order.
-
-8.  In the **Vendor invoice** form, in the **Invoice identification** field group, in the **Number** field, enter the invoice number.
-
-9.  Click **Post** to post the invoice.and close the form.
-
-10. Click **Accounts payable** \> **Inquiries and reports** \> **Advance holders inquires and reports** \> **Transactions** to view related advance holder transactions. 
-
-11. Click **Voucher** to open the **Voucher transactions** form. The vendor balance account is replaced by the employee balance account, and the **Posting type** field is updated to **Employee balance**.
-
-
-## Create and post advance reports 
-
-Use this procedure to create, modify, post, inquire and print advance reports.
+Use these procedures to create, modify, post, inquire about, and print advance reports.
 
 ### Create an advance report
 
-1.  Click **Accounts payable** \> **Advance holders** \> **Advance report**.
+1. Select **Accounts payable** \> **Advance holders** \> **Advance report**.
+2. Select **New** to create an advance report. Alternatively, you can create an advance report directly from the **Advance holders** page by selecting **New** \> **Advance report**.
+3. In the **Date** field, enter the advance report date.
 
-2. Select **New** to create an advance report. Alternatively, you can create a new advance report directly from **Advance holders** form - select **New** \> **Advance report**.
+    The advance report number is automatically generated in **Advance report** field, based on the number sequence that is defined in the parameters.
 
-3. Enter advance report date in **Date** field
-
-4. Advance report number will be automatically generated in **Advance report** field based on the number sequence defined in the parameters.
-
-5. Select an advance holder in **Employee number** field group.
-
-6. Enter the purpose of the advance in **Advance purpose**  field
-
-7. In **Header** view mode select **Options** FastTab to define confirmation dates and **Officials** FastTab to define responcible managers.
+4. In the **Employee number** field group, select an advance holder.
+5. In the **Advance purpose** field, enter the purpose of the advance.
+6. Switch to the **Header** view.
+7. On the **Options** FastTab, define confirmation dates.
+8. On the **Officials** FastTab, define responsible managers.
 
 ### Generate advance report lines from expenses
 
-1. Swith to **Lines** view mode.
+1. Switch to the **Lines** view.
+2. Select **Copy from expends** to open the **Create advance report lines** page. This page shows all the expense types that were previously defined in the parameters.
+3. Select an expense line.
+4. In the **Date** field, enter the date of the transaction.
+5. In the **Document number** field, enter the number of the confirmed disbursement voucher.
 
-2. Click **Copy from expends** to open **Create advance report lines** form. In this form you can see all the expense types previously defined in the parameters.
+    > [!NOTE]
+    > The values in the **Document name**, **Rate**, and **Currency** fields are automatically taken from the expense rates dictionary.
 
-3. Select an expense line. In the **Date** field, enter the date of the transaction.
+6. In the **Quantity of days** field, enter the number of days of the business trip.
+7. In the **To weekday** field, enter the daily expense amount.
 
-4. In the **Document number** field, enter the number of the confirmed disbursement voucher.
-   > [!NOTE]
-   > The entries in the **Document name**, **Rate**, and **Currency** fields are automatically displayed from the expense rates dictionary.</P>
+    > [!NOTE]
+    > The **Total amount** field shows the total expense amount.
 
-5. In the **Quantity of days** field, enter the number of days of the business trip.
+8. Select **Save** to transfer the entries to the **Advance report** page.
 
-6. In the **To weekday** field, enter the daily expense amount.
-   > [!NOTE]
-   > The **Total amount** field displays the total expense amount.
-
-7. Click **Save** to transfer the entries to the **Advance report** form.
-   > [!NOTE]
-   > The entry in the **Ledger account** field is displayed according to the expense rate posting setup. If the actual expense is more than the established rates, then a supplementary line for the excess amount is created when the expenses are transferred to the advance report. In this situation, the **Over rate** check box is selected automatically. The **Line type** field of the advance report that is generated by using the **Copy from expends** function displays the value **Expense**.
+    > [!NOTE]
+    > The value in the **Ledger account** field is based on the setup of expense rate posting. If the actual expense exceeds the established rates, a supplementary line for the excess amount is created when the expenses are transferred to the advance report. In this situation, the **Over rate** check box is automatically selected. The **Line type** field of the advance report that is generated by using the **Copy from expends** function is set to **Expense**.
 
 ### Generate advance report lines from sources
 
-1. Swith to **Lines** view mode.
+1. Switch to the **Lines** view.
+2. Select **Copy from sources** to open the **Create lines** page. This page shows a list of the advance holder's documents (credit transactions) where the date coincides with the advance report date.
 
-2. Click **Copy from sources** to open **Create lines** form. In this form you can see the list of the advance holder's documents (credit transactions) with date that coincides with the advance report date.
-   > [!NOTE]
-   > In the upper pane, the **Source type** field displays the identification type of the original document. The source for type **Facture** is the purchase order, and the source for type **Accounts payable** is the vendor transaction. The **Amount in transaction currency**, **Currency**, and **Amount** fields indicate the total amount in the secondary currency of the transaction, the currency code, and the amount in the company's standard currency. In the lower pane, the **Number** field displays the number of the vendor's facture. The **Description** field displays the item name. The **Currency**, **Amount in transaction currency**, and **Sales tax amount in currency** fields display the voucher currency, the line amount, and the sales tax amount respectively.
+    > [!NOTE]
+    > In the upper pane, the **Source type** field shows the identification type of the original document. The source for the **Facture** type is the purchase order, and the source for the **Accounts payable** type is the vendor transaction. The **Amount in transaction currency** field shows the total amount in the secondary currency of the transaction, the **Currency** field shows the currency code, and the **Amount** field shows the amount in the company's standard currency. In the lower pane, the **Number** field shows the number of the vendor's facture. The **Description** field shows the item name. The **Currency** field shows the voucher currency, the **Amount in transaction currency** field shows the line amount, and the **Sales tax amount in currency** field shows the sales tax amount.
 
-3. In the upper pane, select the <STRONG>Mark</STRONG> check box to confirm the documents to be copied.
+3. In the upper pane, select the **Mark** check boxes to select the documents that should be copied.
+4. Select **OK** to transfer the expense data to the advance report.
 
-4. Click **OK** to transfer the expense data to the advance report.
-   In the **Document number** field of the advance report, the number of the source facture is copied if the **Line Type** field of the advance report is set to **Facture**, or the number of the transaction is copied if the **Line Type** field of the advance report is set **to Vendor**.
-   > [!NOTE]
-   > You cannot edit the **Amount**, **Currency**, and **Main account** fields.</P>
+    In the **Document number** field of the advance report, the number of the source facture is copied if the **Line Type** field of the advance report is set to **Facture**. If the **Line Type** field is set to **Vendor**, the number of the transaction is copied.
 
-### Generate advance report lines manually
+    > [!NOTE]
+    > You can't edit the **Amount**, **Currency**, and **Main account** fields.
 
-Use this procedure to generate and post advance report lines manually. You can distribute the expense amount between different ledger dimensions. You can then view the ledger entries and verify the distribution of the expense amount.
+### Manually generate advance report lines
 
-1. Click the **Advance report lines** FastTab, and then click **Add line** to create a new line.
+Use this procedure to manually generate and post advance report lines. You can distribute the expense amount among different ledger dimensions. You can then view the ledger entries and verify the distribution of the expense amount.
 
+1. On the **Advance report lines** FastTab, select **Add line** to create a line.
 2. In the **Disbursement date** field, enter the date of the document that describes the expense.
-
 3. In the **Document number** field, enter the number of the confirming document.
-
 4. In the **Document name** field, enter the name of the confirming document.
-
 5. In the **Currency** field, select the currency that is used for the transaction.
-
 6. In the **Amount** field, enter the amount that is spent for the transaction.
-
 7. In the **Confirmed amount of advance report** field, enter the confirmed expense for the advance report.
-
 8. In the **Main account** field, select the general ledger account that the expense belongs to.
+9. Select **Distribute amounts** to open the **Accounting distributions** page.
+10. In the **Distributed by** field, select whether amounts should be distributed by extended price or discount percentage. You can create distributions in the following ways:
 
-9. Click **Distribute amounts** to open **Accounting distributions** form.
+    - To create multiple distributions that have the same quantity, percentage, or amount distribution, select **Split** for each distribution. Select a ledger account for each distribution, and then select **Distribute equally**.
+    - To create one distribution at a time, select **Split**. Select the ledger account to distribute the invoice line to, and then enter the quantity, percentage, or amount to distribute. For example, if you selected **Percent** in the **Distributed by** field, enter a percentage in the **Percent** field.
 
-10. In the **Distributed by** field, select whether to distribute amounts by extended price or discount percentage. You can create distributions in the following ways:
- 
- - To create multiple distributions that have the same quantity, percentage, or amount distribution, click **Split** for each distribution. Select a ledger account for each distribution, and then click **Distribute equally**.
- 
- - To create one distribution at a time, click **Split**. Select the ledger account to distribute the invoice line to, and then enter the quantity, percentage, or amount to distribute. For example, if you selected **Percent** in the **Distributed by** field, enter a percentage in the **Percent** field.
+    Repeat until you've finished creating distributions.
 
-   Repeat until you have finished creating distributions.
- 
-11. Select **Save** and close **Accounting distributions** form.
+11. Select **Save**, and then close the **Accounting distributions** page.
+12. On the **Line details** FastTab, on the **Setup** tab, in the **Sales tax group** field, select the code for the sales tax group for the advance report.
+13. In the **Item sales tax group** field, select the code for the item sales tax group for the advance report.
+14. Select the **Prices include sales tax** check box to indicate that the amount on the advance report includes sales tax.
 
-12. In **Line details** FastTab select **Setup** tab.
-
-13. In the **Sales tax group** field, select the code for the sales tax group for the advance report.
-
-14. In the **Item sales tax group** field, select the code for the item sales tax group for the advance report.
-
-15. Select the **Prices include sales tax** check box to indicate that the amount on the advance report includes sales tax.
-
-### Post advance report
+### Post an advance report
 
 Use this procedure to post an advance report when all the advance report header and lines details are completed.
-    
-1.  Click **Post** \> **Post** in **Actions** pane to post the advance report.
 
-### Print advance report 
+- On the Action Pane, select **Post** \> **Post** to post the advance report.
 
-Use this procedure to print a posted advance report. You can print an advance report after an advance invoice that is issued to an advance holder is settled.
+### Print an advance report
+
+Use this procedure to print an advance report that has been posted. You can print an advance report after an advance invoice that is issued to an advance holder is settled.
 
 > [!NOTE]
-> The amounts in the **Advance reports** form are recalculated on the date when the payment journal for the advance holder is posted.
+> The amounts on the **Advance reports** page are recalculated on the date when the payment journal for the advance holder is posted.
 
-   
-1.  Click **Print** \> **Print** in **Actions pane** to open the **Advance report** form.
+1. On the Action Pane, select **Print** \> **Print** to open the **Advance report** page.
+2. Select **OK** to print the advance report in Microsoft Excel format.
 
-2.  Click **OK** to print the advance report in Microsoft Excel format.
+### Reject an advance report
 
+You can reject advance reports that have been posted and that have a status of **Posted**. These reports should not have been settled. Factures aren't created for these reports.
 
-### Reject advance report 
-
-You can reject advance reports that have been posted, and for which the status of the advance report is Posted. These reports should not have been settled. Factures are not created for these reports.
-
-1.  Click **Post** \> **Rejection** in **Actions** pane to to reject a selected advance report.
-
-2.  Click **Yes** to confirm rejection.
-
+1. Select an advance report, and then, on the Action Pane, select **Post** \> **Rejection**.
+2. Select **Yes** to confirm the action.
 3. The status of the advance report is set to **Rejected**.
-   
+
     > [!NOTE]
-    > When an advance report is rejected, reversed transactions are created for the advance holder. The **Reversed** check box is automatically selected in the **Advance holder transactions** form. The transactions are settled and reversed automatically.
+    > When an advance report is rejected, reversed transactions are created for the advance holder. The **Reversed** check box is automatically selected on the **Advance holder transactions** page. The transactions are automatically settled and reversed.
 
-4. Close the form.
-
-5. Click **Accounts payable** > **Advance holders** > **Advance holders**. Click **Transactions** to open the **Advance holder transactions** form.
-
-6. Click **Voucher** for a selected transaction, and verify that the **Correction** check box is selected.
+4. Close the page.
+5. Select **Accounts payable** \> **Advance holders** \> **Advance holders**.
+6. Select **Transactions** to open the **Advance holder transactions** page.
+7. Select a transaction, select **Voucher**, and verify that the **Correction** check box is selected.
 
 You can verify the distribution of expenses for the reversed transaction. Reversed or storno accounting transactions are distributed like the original transactions. However, the distributions for reversed or storno accounting transactions have a negative sign.
 
+## Close balances for an advance holder
 
-## Generate and post a facture for an advance report 
+You can close balances for an advance holder through cash or a bank.
 
-Use this procedure to reflect VAT in the purchase ledger for the personal expenses of advance holders, such as the standard part of per diem expenses.
+### Close balances through cash
 
- > [!NOTE]
-    > This procedure is applicable to advance reports that have been already posted.
-
-1.  Click **Accounts payable** \> **Advance holders** \> **Advance reports**.
-
-2.  In **Advance report** form, click **Post** \> **Update facture** button.
-
-3.  In **Update facture** form, click the **Advance report** tab to view the details of the advance report. 
-
-4.  Select the **To facture check** box to include advance reports in the facture.
-
-5.  Click the **Advance report lines** tab.
-
-6.  Clear the **To facture check** box to exclude advance report lines that are not included in the facture.
-
-7.  Click the **Records affected** tab to display the included lines of the Advance report.
-
-8.  In the upper pane, click the **Overview** tab.
-
-9.  In the **Date of the registration** field, enter the registration date of the facture.
-
-10. In the **Facture date** field, enter the facture date.
-
- > [!NOTE]
-    > You must clear the Same as check box to enter the Facture date field.
-
-11. In the actions pane, click **Factura overview** to preview the factura document.
-
-12. In the actions pane, click **Posting** and then click **Update and print** to post the document.
-
-13. To view the generated factures, click **Financials** tab, then click **Journals** > **Facture**.
-
-
-## Closing balances for an advance holder 
-
-You can close balances for an advance holder via cash or bank.
-
-### Closing via cash
-
-1.  Click **Accounts payable** \> **Inquiries abd reports** \> **Advance holders inquiries and reports** \> **Balance**.
-
-2.  In the **To date** field, enter the date to obtain advance holder balances.
-
-3.  Select **Close via cash** to open **Close via cash** form.
-
-4.  In the **Date of payment** field, enter the date of payment.
-
-5.  In the **Amount to be transferred** field, enter the balance amount while closing.
-    
-    > [!NOTE]
-    > The amount indicated in the **Amount** field in the **Balance** form is displayed by default.
-
-6.  Select the **Automatic** check box to create and post the slip journal automatically.
-    
-    > [!NOTE]
-    > If the **Automatic** check box is cleared, a journal will be created automatically, and the journal number is displayed. This journal must be posted manually.
-
-7.  Click **OK** to generate the slip journal.
-    
-    > [!NOTE]
-    > After the slip journal is processed, either a disbursement slip (if the amount in the **Amount to be transferred** field is negative) will be generated, or a reimbursement slip (if the amount in the **Amount to be transferred** field is positive) will be generated for the advance holder when the balances are closed.
-
-8.  Close the form.
-
-### Closing via bank
-
-The procedure for closing balances through a bank is similar to closing through cash. You can set up the code for the journal and the bank on the **Advance holders** tab in the **Accounts payable parameters** form.
-
-> [!NOTE]
-> In the **Balance** form, select **Close via bank** to open the **Close via bank** form.</P>
-
-
-## Complete the settlement for an advance holder 
-
-You can complete a manual settlement or periodic settlement for an advance holder. If you clear the **Automatic settlement** check box in the **Accounts payable parameters** form, you must settle the posting or closing transactions manually, or by using the periodic settlement function.
-
-### Settle advance holder transactions manually
-
-Use this procedure to settle advance holder transactions manually.
-
-1.  Click **Accounts payable** \> **Advance holders** \> **Advance holders**.
-
-2.  Select an advance holder.
-
-3.  Click **Settle** \> **Settle open transactions** to open the **Open-transaction editing in several currencies** form. The upper pane displays debit transactions for an advance holder, and the lower pane displays credit transactions.
-
-4.  In the upper and lower panes, select the **Mark** check box to select the transactions. The **Balance** field displays the balances after the transactions are settled.
-
-5.  Click **Update** to complete the settlement.
-
-6.  Close the form.
-
-7.  In the **Advance holders** form, click **Settlements** to open the **Transaction settlements** form. You can verify the completed settlements in this form.
-
+1. Select **Accounts payable** \> **Inquiries and reports** \> **Advance holders inquiries and reports** \> **Balance**.
+2. In the **To date** field, enter the date to get advance holder balances.
+3. Select **Close via cash** to open the **Close via cash** page.
+4. In the **Date of payment** field, enter the date of payment.
+5. In the **Amount to be transferred** field, enter the balance amount during closing.
 
     > [!NOTE]
-    > If exchange adjustments occur when advance holder transactions are settled, exchange adjustment transactions are generated from the settlement. The exchange rate adjustment is displayed in the **Exchange rate adjustment amount** field in the **Transaction settlements** form.
+    > By default, this field shows the amount from the **Amount** field on the **Balance** page.
 
-8.  Close the form.
+6. Select the **Automatic** check box to automatically create and post the slip journal.
 
-9.  Click **Accounts payable** \> **Advance holders** \> **Advance reports**.
+    > [!NOTE]
+    > If you leave the **Automatic** check box cleared, a journal is automatically created, and the journal number is shown. You must then manually post this journal.
 
+7. Select **OK** to generate the slip journal.
+
+    > [!NOTE]
+    > After the slip journal is processed, either a disbursement slip or a reimbursement slip is generated for the advance holder when the balances are closed. If the amount in the **Amount to be transferred** field is negative, a disbursement slip is generated. If the amount in the **Amount to be transferred** field is positive, a reimbursement slip is generated.
+
+8. Close the page.
+
+### Close balances through a bank
+
+The procedure for closing balances through a bank resembles the previous procedure for closing balances through cash. However, in step 3, you select **Close via bank** instead of **Close via cash**. You can set up the code for the journal and the bank on the **Advance holders** tab on the **Accounts payable parameters** page.
+
+## Complete the settlement for an advance holder
+
+You can complete either a manual settlement or a periodic settlement for an advance holder. If you clear the **Automatic settlement** check box on the **Accounts payable parameters** page, you must settle the posting or closing transactions either manually or by using the periodic settlement function.
+
+### Manually settle advance holder transactions
+
+Use this procedure to manually settle advance holder transactions.
+
+1. Select **Accounts payable** \> **Advance holders** \> **Advance holders**.
+2. Select an advance holder.
+3. Select **Settle** \> **Settle open transactions** to open the **Open-transaction editing in several currencies** page. The upper pane shows debit transactions for the advance holder, and the lower pane shows credit transactions.
+4. In the upper and lower panes, select the **Mark** check boxes to select transactions. The **Balance** field shows the balances after the transactions are settled.
+5. Select **Update** to complete the settlement.
+6. Close the page.
+7. On the **Advance holders** page, select **Settlements** to open the **Transaction settlements** page, where you can verify the completed settlements.
+
+    > [!NOTE]
+    > If exchange adjustments occur when advance holder transactions are settled, exchange adjustment transactions are generated from the settlement. The exchange rate adjustment is shown in the **Exchange rate adjustment amount** field on the **Transaction settlements** page.
+
+8. Close the page.
+9. Select **Accounts payable** \> **Advance holders** \> **Advance reports**.
 10. Select the advance report that is created for the selected advance holder.
+11. On the **Financials** tab, select **View distributions** to verify that the distribution of the expense amount is correct.
 
-11. On the **Financials** tab, click **View distributions** to verify that the distribution of the expense amount is correct.
+### Periodically settle advance holder transactions
 
-### Settle advance holder transactions periodically
+Use this procedure to periodically settle advance holder transactions. When you use the periodic settlement function, all open transactions are settled in chronological order.
 
-Use this procedure to settle advance holder transactions periodically. When you use the periodic settlement function, all open transactions are settled in chronological order.
-
-1.  Click **Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Periodic settlement**.
-
-2.  In the **Date of transaction** field, select the advance holder transaction date. All transactions that are posted before this date are settled.
-
-3.  Select the **Settlement by profile** check box to settle transactions that have identical posting profiles.
-
-4.  Select **Records to include** FastTab to define additional filtering for settlement.
-
-5.  Click **OK** to settle the transactions.
+1. Select **Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Periodic settlement**.
+2. In the **Date of transaction** field, select the advance holder transaction date. All transactions that were posted before this date will be settled.
+3. Select the **Settlement by profile** check box to settle transactions that have identical posting profiles.
+4. On the **Records to include** FastTab, define additional filtering for settlement.
+5. Select **OK** to settle the transactions.
 
 ### Cancel a periodic settlement
 
 Use this procedure to cancel a periodic settlement for advance holder transactions.
 
-1.  Click **Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Periodic reverse**.
-
-2.  In the **Date of transaction.** field, select the advance holder transaction date. All transactions that are settled before this date are reversed.
-
-3.  Select **Records to include** FastTab to define additional filtering of transactions to cancel the settlements for.
-
-4.  Click **OK** to cancel the periodic settlement.
-
+1. Select **Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Periodic reverse**.
+2. In the **Date of transaction** field, select the advance holder transaction date. All transactions that were settled before this date will be reversed.
+3. On the **Records to include** FastTab, define additional filtering for the transactions to cancel settlements for.
+4. Select **OK** to cancel the periodic settlement.
