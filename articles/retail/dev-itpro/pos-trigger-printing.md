@@ -54,12 +54,15 @@ The following table lists the available triggers and denotes whether they can be
 | PreLockTerminalTrigger    | Cancelable     | Executed before the POS register lock.  |
 | PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   |     
 
-## Cash nanagement triggers
+## Cash management triggers
 
 | Trigger                      | Type           | Description                                                 |
 |------------------------------|----------------|-------------------------------------------------------------|
 | PreTenderDeclarationTrigger  | Cancelable     | Executed before the POS tender declaration. |
 | PostTenderDeclarationTrigger | Non-cancelable | Executed after the POS tender declaration.  |
+| PreFloatEntryTrigger         | Cancelable     | Executed before the POS float entry. |
+| PostFloatEntryTrigger        | Non-cancelable | Executed after the POS float entry.  |    
+
 
 ## Customer triggers
 
