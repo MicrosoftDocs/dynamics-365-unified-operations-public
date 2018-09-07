@@ -212,6 +212,44 @@ You can reject advance reports that have been posted, and for which the status o
 
 You can verify the distribution of expenses for the reversed transaction. Reversed or storno accounting transactions are distributed like the original transactions. However, the distributions for reversed or storno accounting transactions have a negative sign.
 
+
+## Generate and post a facture for an advance report 
+
+Use this procedure to reflect VAT in the purchase ledger for the personal expenses of advance holders, such as the standard part of per diem expenses.
+
+ > [!NOTE]
+    > This procedure is applicable to advance reports that have been already posted.
+
+1.  Click **Accounts payable** \> **Advance holders** \> **Advance reports**.
+
+2.  In **Advance report** form, click **Post** \> **Update facture** button.
+
+3.  In **Update facture** form, click the **Advance report** tab to view the details of the advance report. 
+
+4.  Select the **To facture check** box to include advance reports in the facture.
+
+5.  Click the **Advance report lines** tab.
+
+6.  Clear the **To facture check** box to exclude advance report lines that are not included in the facture.
+
+7.  Click the **Records affected** tab to display the included lines of the Advance report.
+
+8.  In the upper pane, click the **Overview** tab.
+
+9.  In the **Date of the registration** field, enter the registration date of the facture.
+
+10. In the **Facture date** field, enter the facture date.
+
+ > [!NOTE]
+    > You must clear the Same as check box to enter the Facture date field.
+
+11. In the actions pane, click **Factura overview** to preview the factura document.
+
+12. In the actions pane, click **Posting** and then click **Update and print** to post the document.
+
+13. To view the generated factures, click **Financials** tab, then click **Journals** > **Facture**.
+
+
 ## Closing balances for an advance holder 
 
 You can close balances for an advance holder via cash or bank.
