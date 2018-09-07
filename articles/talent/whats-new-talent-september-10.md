@@ -30,125 +30,78 @@ ms.dyn365.ops.version: Talent September 10, 2018 update
 
 ---
 
-# What's new or changed in Dynamics 365 for Talent: Core HR (September 10, 2018)
+# What's new or changed in Dynamics 365 for Talent Core HR (September 10, 2018)
 
 [!include [banner](includes/banner.md)]
 
 **Build 8.1.138.0**
 
-This topic describes features that are either new or changed in Core HR.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
 
-## Allow specific time of day on time off requests (half day)
+## Allow specific time of day on time-off requests (half days)
 
-If leave and absence is set up to have time off submitted in days, you can now
-also enable a half day definition. This option will let users specify if they
-will be requesting the first half or the second half of the day when submitting
-time off requests.
+If leave and absence is set up so that time off is submitted in days, you can now also enable a half-day definition. Then, when users submit time-off requests, they can specify whether they are requesting the first half or the second half of the day off.
 
-By default, this option isn’t enabled. In order to allow employees to request
-the first half or second half of the day, you’ll need to enable this option in
-the Leave and absence area of Human resources parameters.
+By default, this option is turned off. For employees to request the first half or second half of the day off, you must turn on this option in the **Leave and absence** area of Human resources parameters.
 
-The security privilege for this feature is: Maintain Human Resources Parameters
+The security privilege for this feature is Maintain Human Resources Parameters.
 
-## Leave and absence entry validation
+## Validation of leave and absence entries
 
-When an employee tries to submit a time off request that is longer than their
-work day, they’ll receive a warning message. Depending on how leave is
-configured, employees will be warned if they attempt to take more than a full
-day off on any given date.
+Depending on how leave is configured, employees who try to submit a time-off request that is longer than their work day receive a warning message. In other words, they are warned if they try to take more than a full day off on any given date.
 
-This validation is always enabled. Any time an employee goes over the day
-threshold defined, they will receive the warning in their time off request.
+This validation is always turned on. Any time that employees exceed the day threshold that is defined, they receive a warning in their time-off request.
 
-## Additional fields in workflow for conditional statements
+## Additional fields for conditional statements in workflows
 
-Additional fields have been added to conditional statements and placeholders for
-several workflows within Core HR.
+Additional fields have been added to conditional statements and placeholders for several workflows in Core HR.
 
-Compensation, termination and transfer workflow have the following fields added:
+The following fields have been added to the compensation, termination, and transfer workflows:
 
-• EmploymentType
+- EmploymentType
+- LegalEntity
+- AdjustedWorkerStartDate
+- EmployerNoticeAmount
+- EmployerUnitOfNotice
+- TransitionDate
+- WorkerNoticeAmount
+- WorkerStartDate
+- WorkerUnitOfNotice
+- ProbationEndDate
+- Position
+- Union
+- Departement
+- PositionType
+- CompLocation
+- Title
+- Job
+- JobType
+- JobFamily
+- JobFunction
 
-• LegalEntity
+The following fields have been added to the position workflow:
 
-• AdjustedWorkerStartDate
+- Position
+- Union
+- Departement
+- PositionType
+- CompLocation
+- Title
+- Job
+- JobType
+- JobFamily
+- JobFunction
 
-• EmployerNoticeAmount
-
-• EmployerUnitOfNotice
-
-• TransitionDate
-
-• WorkerNoticeAmount
-
-• WorkerStartDate
-
-• WorkerUnitOfNotice
-
-• ProbationEndDate
-
-• Position
-
-• Union
-
-• Departement
-
-• PositionType
-
-• CompLocation
-
-• Title
-
-• Job
-
-• JobType
-
-• JobFamily
-
-• JobFunction
-
-Position workflow has the following additions:
-
-• Position
-
-• Union
-
-• Departement
-
-• PositionType
-
-• CompLocation
-
-• Title
-
-• Job
-
-• JobType
-
-• JobFamily
-
-• JobFunction
-
-Fields within conditional statements and place holders are available to all
-users that have access to configure the workflows mentioned above.
+Fields in conditional statements and placeholders are available to all users who have access to configure the previously mentioned workflows.
 
 ## Navigation to Attract from personnel management
 
-In personnel management, if Attract has not been set up, the candidates to hire
-section will direct users to get started with Attract instead of showing the
-message “We didn’t find anything to show here”.
+In personnel management, if Attract hasn't been set up, the **Candidates to hire** section directs users to get started with Attract instead of showing the message, "We didn't find anything to show here."
 
 ## Other changes
 
-This release includes several additional bug fixes.
+This release includes several additional bug fixes:
 
--   When hiring a contractor, the compensation tab should not be available on
-    the request/action form
-
--   During the request termination process you can’t continue until all required
-    fields contain data
-
--   Sort order and date display issues have been addressed on the Personnel
-    management analytics
-
+- When a contractor is hired, the **Compensation** tab should not be available on the request/action page.
+- During the request termination process, you can't continue until all required fields contain data.
+- Sort order and date display issues on the Personnel management analytics have been addressed.
