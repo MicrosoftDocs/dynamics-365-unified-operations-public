@@ -96,7 +96,7 @@ For information about the new features included in each release, click the links
 
 ### Table 3: Application updates
 
-The application updates listed below consist of a small subset of application enhancements released on top of Dynamics 365 for Finance and Operations versions 8.0, 7.3 and 7.2 (July 2017). These updates don't affect the support lifecycle of the release--support is in-line with the policies for each release.
+The application updates listed below consist of a small subset of application enhancements released on top of Dynamics 365 for Finance and Operations versions 8.0, 7.3 and 7.2 (July 2017). These updates don't affect the support lifecycle of the release--support is in-line with the policies for each release. Note that these updates are not cumulative, i.e. each version contains its own subset of new features that are not included in the other versions (e.g. the changes from 8.0.1 are not included in 8.0.2).
 
 For information about the new features included in each update, click the links in the **Version** column.
 
