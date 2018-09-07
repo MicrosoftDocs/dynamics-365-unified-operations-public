@@ -25,8 +25,8 @@ ms.assetid:
 ms.search.region: Russia
 # ms.search.industry: 
 ms.author: 
-ms.dyn365.ops.version: Version 1611
-ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: 8.1
+ms.search.validFrom: 2018-10-31
 
 ---
 
