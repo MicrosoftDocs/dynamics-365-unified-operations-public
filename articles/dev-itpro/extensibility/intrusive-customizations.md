@@ -35,13 +35,15 @@ ms.dyn365.ops.version: Platform update 9
 
 This topic defines the characteristics of an intrusive customization. Intrusive customizations are the major obstacle to keeping continuous upgrade costs close to zero. Some types of intrusive customizations can be prevented by tooling, whereas other types remain the responsibility of the author of the extension. The X++ compiler and Microsoft Visual Studio designers will prevent some types of intrusive customizations. However, a subset of intrusive customizations can't be detected by tooling but might still prevent continuous upgrades. Ultimately, the developer is responsible for avoiding intrusive customizations.
 
-When extending other solutions you are expected to be a good guest:
-+ Accept responsibility of your extension. You are introducing new behavior and have the full responsibility of the change.
-+ Allow other extensions to co-exists. Recognize that you are not the only consumer of an extension point. For example, only respond when needed (vs. unconditionally).
-+ Only add extensions that are coherent with the extension point. The longevity of a solution is defined by its resilience to change. Recognize that extension points may be exercised in more or fewer scenarios in future versions. For example, only add relevant validation logic to a validate() method.
-+ Avoid dependencies on implementation details. Implementation details are likely to change in future versions. Make your solution resilient by avoiding dependencies on local variables, call-stacks and, calling sequences and avoid using reflection.
-
 A customization that violates any of the following principles is intrusive.
+
+ > [!NOTE]
+> When extending other solutions you are expected to be responsible. This includes:
+> + Accepting the responsibility of your extension. You are introducing new behavior and therefore own the full responsibility of the change.
+> + Allowing other extensions to co-exist. Recognize that you are not the only consumer of an extension point. For example, only respond when needed.
+> + Only adding extensions that are coherent with the extension point. The longevity of a solution is defined by its resilience to change. Recognize that extension points may be exercised in more or fewer scenarios in future versions. For example, only add relevant validation logic to a validate() method.
+> + Avoiding dependencies on implementation details. Implementation details are likely to change in future versions. Make your solution resilient by avoiding dependencies on local variables, call-stacks and, calling sequences and avoid using reflection.
+
 
 ## Don't change type definitions
 Types are referenced by their definition. A change to a type’s definition is a breaking change and requires that all references be updated. It's impossible to ensure that future references will be implemented correctly (for example, in the model that hosts the type). There are several implications:
