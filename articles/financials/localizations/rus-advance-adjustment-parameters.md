@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up advance adjustment parameters for advance holders
-description: Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format. This topic provides information about the formats for Poland. 
+description: 
 author: 
 manager: AnnBe
 ms.date: 09/07/2018
