@@ -51,7 +51,7 @@ Each time tax configuration changes are made and finalized the above operation s
 
 ## Additional distribution jobs for AX 2012 retail scheduler
 
-Add the following list of fields and tables to AX 2012 Commerce Data Exchange (CDX) syncronization according to the guide [Enable custom Commerce Data Exchange synchronization via extension](../dev-itpro/cdx-extensibility.md).:
+Add the following list of fields and tables to AX 2012 Commerce Data Exchange (CDX) syncronization according to the guide [Enable custom Commerce Data Exchange synchronization via extension](../dev-itpro/cdx-extensibility.md):
 
 - Upload distribution
  
