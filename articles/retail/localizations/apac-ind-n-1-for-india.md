@@ -44,13 +44,14 @@ This topic describes additional steps to set up and use Phased Rollout (N-1) ret
 GST tax configuration data differs between AX 2012 and Dynamics 365 versions. Special periodic procedure shoud be launched to transfrom data. 
 
 1. Sign in to Retail headquarters, and go to Retail \> Retail IT \> Process tax configuration from N-1
+2. Click OK.
 
 
-Each time tax configuration changes are applied and completed the above operation should be launched before sending the data to AX 2012 channel.
+Each time tax configuration changes are made and finalized the above operation should be launched before sending the data to AX 2012 channel.
 
 ## Additional distribution jobs for AX 2012 retail scheduler
 
-Add the following list of fields and tables to AX 2012 Commerce Data Exchange (CDX) syncronization:
+Add the following list of fields and tables to AX 2012 Commerce Data Exchange (CDX) syncronization according to the guide [Enable custom Commerce Data Exchange synchronization via extension](../dev-itpro/cdx-extensibility.md).:
 
 - Upload distribution
  
