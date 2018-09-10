@@ -945,10 +945,10 @@ Examples of errors:
     - C:\ProgramData\SF\AOSx\Fabric\work\Applications\AXSFType_Appxx\log:
     Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir      "C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App18\AXSF.Code.1.0.20180831174152\Packages" -metadatadir "C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App18\AXSF.Code.1.0.20180831174152\Packages" -sqluser "axdbadmin" -sqlserver "SQL-LS.contoso.com" -sqldatabase "AXDB" -setupmode servicesync -syncmode fullall -onprem 
 
-    Unhandled Exception: System.IO.FileNotFoundException: **Could not load file or assembly 'aoskernel.dll' or one of its dependencies. The specified module could not be found.**
+        Unhandled Exception: System.IO.FileNotFoundException: **Could not load file or assembly 'aoskernel.dll' or one of its dependencies. The specified module could not be found.**
    at Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(String[] args)
 
-    **DB sync failed.**
+        **DB sync failed.**
 
 
 
