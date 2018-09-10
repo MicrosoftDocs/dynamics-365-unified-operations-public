@@ -41,7 +41,7 @@ Use this procedure to create and post disbursement slips that have advance holde
 2. Select **New** to create a slip journal. For more information, see the "Register reimbursement or disbursement slips" section in [Cash - Setup and daily cash operations](rus-setup-daily-cash-operations.md).
 3. On the **Lines** page, in the **Offset account type** column, select **Advance holder**. Then select an advance holder in the **Offset account** column, and enter the amount in the **Credit** column.
 4. Approve and post the disbursement slip. For more information, see the "Post a cash voucher with cash reimbursements and cash disbursements" section in [Cash - Setup and daily cash operations](rus-setup-daily-cash-operations.md).
-5. To inquire about the related transactions and advance holder balance, select the **Transactions** or **Balance** page in **Accounts payable** \> **Advance holders** \> **Advance holders** for the selected employee.
+5. To inquire about the related transactions and advance holder balance, select **Accounts payable** \> **Advance holders** \> **Advance holders**, select an employee, and then select either **Transactions** or **Balance**.
 
 ## Create and post vendor invoices that have advance holder details
 
@@ -53,7 +53,7 @@ Use this procedure to create and post vendor invoices that have advance holder d
 4. On the **Price and discount** FastTab, in the **Terms of payment** field, select the payment terms.
 
     > [!NOTE]
-    > Select payment terms where the **From advance holder** check box is selected on the **Terms of payment** page.
+    > Select payment terms where the **From advance holder** option is set to **Yes** on the **Terms of payment** page.
 
 5. In the **Advance holder** field, select the advance holder for the purchase order.
 6. Enter all the required line details, and then select **Purchase** \> **Actions** \> **Confirm** to confirm the purchase order.
@@ -137,12 +137,10 @@ Use this procedure to manually generate and post advance report lines. You can d
     - To create multiple distributions that have the same quantity, percentage, or amount distribution, select **Split** for each distribution. Select a ledger account for each distribution, and then select **Distribute equally**.
     - To create one distribution at a time, select **Split**. Select the ledger account to distribute the invoice line to, and then enter the quantity, percentage, or amount to distribute. For example, if you selected **Percent** in the **Distributed by** field, enter a percentage in the **Percent** field.
 
-    Repeat until you've finished creating distributions.
-
 11. Select **Save**, and then close the **Accounting distributions** page.
 12. On the **Line details** FastTab, on the **Setup** tab, in the **Sales tax group** field, select the code for the sales tax group for the advance report.
 13. In the **Item sales tax group** field, select the code for the item sales tax group for the advance report.
-14. Select the **Prices include sales tax** check box to indicate that the amount on the advance report includes sales tax.
+14. Set the **Prices include sales tax** option to **Yes** to indicate that the amount on the advance report includes sales tax.
 
 ### Post an advance report
 
@@ -169,12 +167,12 @@ You can reject advance reports that have been posted and that have a status of *
 3. The status of the advance report is set to **Rejected**.
 
     > [!NOTE]
-    > When an advance report is rejected, reversed transactions are created for the advance holder. The **Reversed** check box is automatically selected on the **Advance holder transactions** page. The transactions are automatically settled and reversed.
+    > When an advance report is rejected, reversed transactions are created for the advance holder. The **Reversed** option is automatically set to **Yes** on the **Advance holder transactions** page. The transactions are automatically settled and reversed.
 
 4. Close the page.
 5. Select **Accounts payable** \> **Advance holders** \> **Advance holders**.
 6. Select **Transactions** to open the **Advance holder transactions** page.
-7. Select a transaction, select **Voucher**, and verify that the **Correction** check box is selected.
+7. Select a transaction, select **Voucher**, and verify that the **Correction** option is automatically set to **Yes**.
 
 You can verify the distribution of expenses for the reversed transaction. Reversed or storno accounting transactions are distributed like the original transactions. However, the distributions for reversed or storno accounting transactions have a negative sign.
 
@@ -185,7 +183,7 @@ You can close balances for an advance holder through cash or a bank.
 ### Close balances through cash
 
 1. Select **Accounts payable** \> **Inquiries and reports** \> **Advance holders inquiries and reports** \> **Balance**.
-2. In the **To date** field, enter the date to get advance holder balances.
+2. In the **To date** field, enter the date to get advance holder balances for.
 3. Select **Close via cash** to open the **Close via cash** page.
 4. In the **Date of payment** field, enter the date of payment.
 5. In the **Amount to be transferred** field, enter the balance amount during closing.
@@ -193,10 +191,10 @@ You can close balances for an advance holder through cash or a bank.
     > [!NOTE]
     > By default, this field shows the amount from the **Amount** field on the **Balance** page.
 
-6. Select the **Automatic** check box to automatically create and post the slip journal.
+6. Set the **Automatic** option to **Yes** to automatically create and post the slip journal.
 
     > [!NOTE]
-    > If you leave the **Automatic** check box cleared, a journal is automatically created, and the journal number is shown. You must then manually post this journal.
+    > If you set the **Automatic** option to **No**, a journal is automatically created, and the journal number is shown. You must then manually post this journal.
 
 7. Select **OK** to generate the slip journal.
 
@@ -211,7 +209,7 @@ The procedure for closing balances through a bank resembles the previous procedu
 
 ## Complete the settlement for an advance holder
 
-You can complete either a manual settlement or a periodic settlement for an advance holder. If you clear the **Automatic settlement** check box on the **Accounts payable parameters** page, you must settle the posting or closing transactions either manually or by using the periodic settlement function.
+You can complete either a manual settlement or a periodic settlement for an advance holder. If you set the **Automatic settlement** option to **No** on the **Accounts payable parameters** page, you must settle the posting or closing transactions either manually or by using the periodic settlement function.
 
 ### Manually settle advance holder transactions
 
@@ -239,7 +237,7 @@ Use this procedure to periodically settle advance holder transactions. When you 
 
 1. Select **Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Periodic settlement**.
 2. In the **Date of transaction** field, select the advance holder transaction date. All transactions that were posted before this date will be settled.
-3. Select the **Settlement by profile** check box to settle transactions that have identical posting profiles.
+3. Set the **Settlement by profile** option to **Yes** to settle transactions that have identical posting profiles.
 4. On the **Records to include** FastTab, define additional filtering for settlement.
 5. Select **OK** to settle the transactions.
 
