@@ -928,8 +928,8 @@ EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 ```powershell
 Remove-AzureRmADSpCredential -ServicePrincipalName "00000015-0000-0000-c000-000000000000" -KeyId <key>
 ```
-## ODBC version 17 needed for platform updates
-The latest platform binary update uses version 17 of ODBC driver. This upgrade takes care of stability issues linked to older ODBC drivers. [Setup perquisites](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites) have been updated to reflect the change in which ODBC version 17 needs to be installed on each AOS server. If you don't install version 17 of the ODBC driver, you will see DB sync errors during servicing of the environment.
+## ODBC driver 17 required for platform updates
+The latest platform binary update uses ODBC driver 17. This upgrade takes care of stability issues linked to older ODBC drivers. The [Setup perquisites](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 needs to be installed on each AOS server. If you don't install ODBC driver 17, you will see DB sync errors during servicing of the environment.
 
 Examples of errors:
 - In Service Fabric:
