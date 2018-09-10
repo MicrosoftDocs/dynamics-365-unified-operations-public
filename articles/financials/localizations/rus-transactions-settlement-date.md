@@ -29,11 +29,11 @@ ms.dyn365.ops.version: 8.1
 ---
 
 # Set up dimension control for settlements
-
 [!include [banner](../includes/banner.md)]
 
-## Set up Accounts payable parameters for dimensions control for settlements
+Dimension control for settlements helps you accurately manage and analyze accounting with vendors, customers, and advance holders by financial dimension. When you register vendor or customer operations, such as debts and payments, or advance holder operations, such as advance reports and payments, you can specify financial dimensions during settlement. Because you're still specifying dimensions during settlement, you don't generate correct balances for a specific vendor or customer by financial dimension. Dimension control lets you stop the settlement of invoices and payments that don't have specified dimensions. Dimension control also lets you verify that the financial dimensions match when you settle vendor, customer, or advanced holder operations.
 
+## Set up Accounts payable parameters for dimensions control for settlements
 Use this procedure to set up dimension control for settlements on the **Accounts payable parameters** page.
 
 1. Select **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
@@ -52,8 +52,7 @@ Use this procedure to set up dimension control for settlements on the **Accounts
     - **Always** – Transactions are controlled by dimensions during both automatic settlement and manual settlement.
 
 ## Set up vendor posting profiles for dimensions control for settlements
-
-Use this procedure to set up vendor posting profiles for settlement dimension control on the **Vendor posting profiles** page. For required groups or for a specific vendor, you must specify a dimension set for dimension control. You must also allow empty values at settlement control for the posting profile.
+Use this procedure to set up vendor posting profiles for settlement dimension control on the **Vendor posting profiles** page. For required groups or for a specific vendor, you must specify a dimension set for dimension control. You must also fill in the **Allow empty dimensions value** field for the posting profile.
 
 1. Select **Accounts payable** \> **Setup** \> **Vendor posting profiles**.
 2. Press Ctrl+N to create a vendor posting profile, and enter the required details.
@@ -67,10 +66,9 @@ Use this procedure to set up vendor posting profiles for settlement dimension co
     > [!NOTE]
     > This field lets you ignore the settings of dimensions when individual transactions are created.
 
-4. On the **Setup** FastTab, in the **Set** field, select the dimension set for settlement control. The selected dimension set indicates that dimension control is activated.
+4. On the **Setup** FastTab, in the **Set** field, select the dimension set for settlement control. If the dimension set is selected, dimension control is activated.
 
 ## Set up Accounts receivable parameters for dimensions control for settlements
-
 Use this procedure to set up dimension control for settlements on the **Accounts receivable parameters** page.
 
 1. Select **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
@@ -82,8 +80,7 @@ Use this procedure to set up dimension control for settlements on the **Accounts
     - **Always** – Transactions are controlled by dimensions during both automatic settlement and manual settlement.
 
 ## Set up customer posting profiles for dimensions control for settlements
-
-Use this procedure to set up customer posting profiles for settlement dimension control on the **Customer posting profiles** page. For required groups or for a specific customer, you must specify a dimension set for dimension control. You must also include empty values at settlement control for the posting profile.
+Use this procedure to set up customer posting profiles for settlement dimension control on the **Customer posting profiles** page. For required groups or for a specific customer, you must specify a dimension set for dimension control. You must also fill in the **Allow empty dimensions value** field for the posting profile.
 
 1. Select **Accounts receivable** \> **Setup** \> **Customer posting profiles**.
 2. Press Ctrl+N to create a customer posting profile, and enter the required details.
@@ -97,12 +94,9 @@ Use this procedure to set up customer posting profiles for settlement dimension 
     > [!NOTE]
     > This field lets you ignore the settings of dimensions when individual transactions are created.
 
-4. On the **Setup** FastTab, in the **Set** field, select the dimension set for settlement control. The selected dimension set indicates that dimension control is activated.
+4. On the **Setup** FastTab, in the **Set** field, select the dimension set for settlement control. If the dimension set is selected, dimension control is activated.
 
 ## Set up a dimension set for dimensions control for settlements
-
-Dimension control for settlements helps you accurately manage and analyze accounting with vendors, customers, and advance holders by financial dimension. When you register vendor or customer operations, such as debts and payments, or advance holder operations, such as advance reports and payments, you can specify financial dimensions during settlement. Because you're still specifying dimensions during settlement, you don't generate correct balances for a specific vendor or customer by financial dimension. Dimension control lets you stop the settlement of invoices and payments that don't have specified dimensions. Dimension control also lets you verify that the financial dimensions match when you settle vendor, customer, or advanced holder operations.
-
 Use this procedure to set up a dimension set for dimension control for settlements on the **Financial dimension sets** page.
 
 1. Select **General ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimension sets**.
