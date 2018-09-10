@@ -27,6 +27,7 @@ ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
 ---
+Exchange rates and amount difference settings are designed for correct reflecting exchange rate and amount diferences in accounting and tax accounting. But the amount difference has been canceled in accounting and tax accounting (since 01.01.2007 - in accounting and since 01.01.2015 - in tax accounting). Nevertheless, the amount difference functionality still exists  in Dynamics 365 for finance and operations, and therefore there is a description of its setting in this article.    
 
 # Set up exchange rates for currency transactions
 
@@ -93,43 +94,42 @@ You can use the **Foreign currency revaluation** page to calculate the exchange 
     > If you leave this field blank, it's automatically filled with the standard text for exchange rate correction and the number of the revaluated document.
 
 7. In the **Notes** field, enter any additional information about the transaction.
-8. In the **Use posting profile from** field, select the posting profile for the transaction:
+8. In the **Use posting profile from** field, select where the posting profile for the transaction is selected from:
 
     - **Posting** − The profile of the posted open transaction is used for the exchange adjustment.
     - **Select** − The profile that is selected in the **Posting profile** field is used for the exchange adjustment.
 
-9. In the **Posting profile** field, select the posting profile to use.
+    If you selected the **Posting profile** value in the **Use posting profile from** field, you should select a posting profile in the **Posting profile** field. The exchange adjustment transaction posting is based on the selected posting profile.
 
-    > [!NOTE]
-    > If you selected a posting profile in the **Use posting profile from** field, the exchange adjustment transaction is based on that posting profile.
-
-10. In the **Dimension** field, select the dimensions that are posted to the exchange adjustment transactions:
+9. In the **Dimension** field, select the dimensions that are posted to the exchange adjustment transactions:
 
     - **None** – In the exchange adjustment voucher, the line dimension doesn't depend on the dimension in the original voucher.
     - **Table** – In the exchange adjustment voucher, the line dimension is inherited from the dimension of the customer account.
     - **Posting** – In the exchange adjustment voucher, the line dimension is inherited from the dimension in the original voucher.
 
-11. Set the **Print** option to **Yes** to print the report.
-12. Select **Records to include** to specify the criteria for exchange adjustment, as you require.
-13. Select **OK** to revalue the selected transaction.
-14. On the **Foreign currency revaluation** page, select **Voucher** to open the **Voucher transactions** page, where you can view the resulting ledger transactions for exchange adjustment.
-15. Press Ctrl+S, or close the page.
-16. On the **Foreign currency revaluation** page, select **Transactions** to open the **Customer transactions** page, where you can view the resulting customer transactions for exchange adjustment.
-17. Press Ctrl+S, or close the page.
-18. On the **Foreign currency revaluation** page, select **Simulation** to open the **Simulation** page.
+10. Set the **Print** option to **Yes** to print the report.
+11. Select **Records to include** to specify the criteria for exchange adjustment, as you require.
+12. Select **OK** to revalue the selected transaction.
+13. On the **Foreign currency revaluation** page, select **Voucher** to open the **Voucher transactions** page, where you can view the resulting ledger transactions for exchange adjustment.
+14. Press Ctrl+S, or close the page.
+15. On the **Foreign currency revaluation** page, select **Transactions** to open the **Customer transactions** page, where you can view the resulting customer transactions for exchange adjustment.
+16. Press Ctrl+S, or close the page.
+17. On the **Foreign currency revaluation** page, select **Simulation** to open the **Simulation** page.
 
     > [!IMPORTANT]
     > The **Simulation** button is available only if you select **Standard** in the **Calculation method** field on the **Ledger** tab of the **General ledger parameters** page.
 
-19. In the **Method** field, select a method for exchange adjustment.
-20. In the **Considered date** field, select the voucher posting date.
-21. In the **Date of rate** field, select the exchange date.
-22. Select **Select** to define the customer account, currency, and fixed rate.
-23. Select **OK** to show the customer transaction details on the **Simulation** page.
-24. Select **Distribution** to specify the report output.
-25. Select **OK** to generate the **Customer - foreign currency revaluation simulation** report.
+18. In the **Method** field, select a method for exchange adjustment.
+19. In the **Considered date** field, select the voucher posting date.
+20. In the **Date of rate** field, select the exchange date.
+21. Select **Select** to define the customer account, currency, and fixed rate.
+22. Select **OK** to show the customer transaction details on the **Simulation** page.
+23. Select **Distribution** to specify the report output.
+24. Select **OK** to generate the **Customer - foreign currency revaluation simulation** report.
 
 ## Set up amount difference parameters for exchange rates
+ > [!NOTE]
+ > Amount differences are canceled  in tax accounting from 1.1.2015 in Russia.
 
 An original facture can be corrected if the currency values change during the shipment of goods. After the facture is corrected, the company verifies that the total of the correction is equal to the total of the amount difference. An amount difference facture is generated when a purchase or sales transaction is settled under the following conditions:
 
@@ -190,7 +190,7 @@ You use the **Accounts payable parameters** page to set up accounts payable para
 
 Before you can generate an amount difference facture, you must create and post a facture for a purchase order or sales order. After you post the facture, you settle the facture transactions to generate the amount differences, based on the exchange rates.
 
-Amount difference factures are corrections for factures. Based on the amount differences, the original factures are shown in the sales book and purchase book. In the sales book, they appear as separate lines. However, they have the same facture identifier and the same date as the original facture. In the purchase book, they appear as a total line, where the sum of the amount differences is added to the original facture amount.
+Amount difference factures are corrections for factures. Based on the amount differences, the original factures are shown in the sales book (for sales original invoices) and purchase book (for purchase original invoices). In the sales book, they appear as separate lines. However, they have the same facture identifier and the same date as the original facture. In the purchase book, they appear as a total line, where the sum of the amount differences is added to the original facture amount.
 
 You can recalculate the cost of the original facture so that the amount difference is considered. In the additional list, the original facture amount has a negative sign, and the recalculated facture amount has a positive sign. You can print the amount differences from the **Facture journal** page in the following ways:
 
@@ -253,8 +253,8 @@ Use the following procedures to create an amount difference facture and link it 
 1. Select **Accounts receivable** \> **Inquiries** \> **Journals** \> **Invoice journal**.
 2. Select the invoice line to include the amount difference for in the sales book, and then select **Create facture** \> **Update facture** to open the **Update facture** page.
 
-    > [!NOTE]
-    > In the sales book, the facture date and facture number should be the same as the facture date and facture number of the original facture.
+    > [!IMPORTANT]
+    > In the sales book, the facture date and facture number must be the same as the facture date and facture number of the original facture.
 
 3. In the lower pane, select the **To facture** check box to mark the facture for update.
 4. Select **Posting** \> **Update** to update the facture with the amount difference.
