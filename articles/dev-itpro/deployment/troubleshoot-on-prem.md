@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 05/15/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -928,3 +928,24 @@ EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 ```powershell
 Remove-AzureRmADSpCredential -ServicePrincipalName "00000015-0000-0000-c000-000000000000" -KeyId <key>
 ```
+## ODBC version 17 needed for platform updates
+The latest platform binary update uses version 17 of ODBC driver. This upgrade takes care of stability issues linked to older ODBC drivers. [Setup perquisites](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites) have been updated to reflect the change in which ODBC version 17 needs to be installed on each AOS server. If you don't install version 17 of the ODBC driver, you will see DB sync errors during servicing of the environment.
+
+Examples of errors:
+- In Service Fabric:
+    Unhealthy event: SourceId='System.RA', Property='ReplicaOpenStatus', HealthState='Warning', ConsiderWarningAsError=false.
+    Replica had multiple failures during open on AOS3. API call: IStatelessServiceInstance.Open(); Error = System.Exception (-2146233088)
+    DB sync failed.
+- On AOS machines:
+    - Event Viewer > Custom Views > Administrative Events - 
+        Application: Microsoft.Dynamics.AX.Deployment.Setup.exe Framework Version: v4.0.30319 Description: The process was terminated due to an unhandled exception. Exception Info: System.IO.FileNotFoundException at Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(System.String[])
+    - C:\ProgramData\SF\AOSx\Fabric\work\Applications\AXSFType_Appxx\log as 
+    Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir      "C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App18\AXSF.Code.1.0.20180831174152\Packages" -metadatadir "C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App18\AXSF.Code.1.0.20180831174152\Packages" -sqluser "axdbadmin" -sqlserver "SQL-LS.contoso.com" -sqldatabase "AXDB" -setupmode servicesync -syncmode fullall -onprem 
+
+    Unhandled Exception: System.IO.FileNotFoundException: Could not load file or assembly 'aoskernel.dll' or one of its dependencies. The specified module could not be found.
+   at Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(String[] args)
+
+    DB sync failed.
+
+
+
