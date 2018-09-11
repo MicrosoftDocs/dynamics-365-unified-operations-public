@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form:LedgerJournalTable, LedgerJournalTransAsset   
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
@@ -24,21 +24,15 @@ ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0
+
 ---
+
 # Propose and post the impairment amount by batch
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This task walks you through proposing and posting the impairment amount by batch.
-
-
-
-Before you can complete this task, you must have an impairment test confirmed and saved.
-
-
-
-This task uses the JPMF demo company data.
+This task walks you through proposing and posting the impairment amount by batch. Before you can complete this task, you must have an impairment test confirmed and saved. This task uses the JPMF demo company data.
 
 1. Go to Fixed assets > Periodic tasks > Impairment proposal.
 2. In the Name of journal field, click the drop-down button to open the lookup.
