@@ -1,8 +1,8 @@
 ---
 # required metadata
-title: Set up bank accounts 
+title: Set up bank accounts for Russia
 description: This topic provides information about local settings and requisites for bank modules for Russia. 
-author: ShylaThompson
+author: anasyash
 manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
@@ -20,17 +20,17 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: anasyash
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
 ---
 
-# Set up bank accounts
+# Set up bank accounts for Russia
 
 Before working with the Bank management workspace, you should complete the following procedures.
 
-## Enter bank group information.
+## Enter bank group information
 
 1. Go to **Cash and bank management > Setup > Bank groups** and click **Update bank accounts**.
 2. Select a bank group. 
@@ -40,13 +40,13 @@ Before working with the Bank management workspace, you should complete the follo
   - **Bank type** – Select either **Main**, **Foreign**, or **Branch**. If you select **Branch**, select a value in the **Main bank** field. If you select, **Foreign**, select a **Vendor account** on the **General** FastTab.
 3. (Optional) Select the .docx template to use in the **Payment order in currency** field on the **Setup** FastTab. If defined, this will be the default template for the payment order in currency for all foreign bank accounts related to this bank.
 
-  > [!NOTE]
-  > Before defining document template, you should create them as Files in the Document attachment (icon Clip in the right up corner of the form)
+> [!NOTE]
+> Before defining a document template, create the templates as files and attach them to the record. You can tell if a document is attached by the number indicator on the Document attachment icon.
 
   ![Bank](media/rus-bank.jpg)
     
 
-## Create a Bank account from the Bank accounts page
+## Create a Bank account
 
 1. Create a new Bank account at **Cash and bank management > Bank accounts > Bank accounts**.
 2. Complete all required fields. The following list includes some fields that might be required. 
@@ -67,6 +67,3 @@ Before working with the Bank management workspace, you should complete the follo
 > Before defining a document template, create the templates as files and attach them to the record. You can tell if a document is attached by the number indicator on the Document attachment icon.
 
 ![Bank account](media/rus-bank-account.jpg)
-
-
-
