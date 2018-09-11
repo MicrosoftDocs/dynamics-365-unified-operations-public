@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Design ER configurations to generate reports in Word format
-description: The following steps explain how a user in either the System administrator or Electronic reporting developer role can configure an Electronic reporting (ER) formats to generate reports as Microsoft Word files. 
+description: The following steps explain how a user in either the System administrator or Electronic reporting developer role can configure an Electronic reporting formats to generate reports as Microsoft Word files. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 8/29/2018
