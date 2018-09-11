@@ -1,8 +1,8 @@
 --- 
 # required metadata 
  
-title: ER Use Document Management files in format outputs (Part 4 - Run format)
-description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. 
+title: Run formats to use Document Management files in ER output
+description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting format to use Document Management files in ER output. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 8/29/2018
@@ -13,10 +13,10 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: CustOpenInvoicesListPage, CustInvoiceJournal, SalesTable, DocuView, DefaultDashboard, ERSolutionTable, SysQueryForm   
+ms.search.form: CustOpenInvoicesListPage, CustInvoiceJournal, SalesTable, ERSolutionTable  
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -24,9 +24,10 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0
+
 ---
-# ER Use Document Management files in format outputs (Part 4: Run format)
+# Run formats to use Document Management files in ER output
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
