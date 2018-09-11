@@ -42,9 +42,9 @@ You can cancel an incorrect customer fiscal document by using the **Cancel fisca
 
 3.  On the **Action Pane**, click the **Sell** tab, and then click **Cancel fiscal document** to open the **Cancel fiscal document** form. 
 
-4.  In AX 2012 R3 and cumulative update 6 or later for AX 2012 R2: In the **Reason code** field, select the identification code of the reason that is used to cancel the customer fiscal document.
+4.  In the **Reason code** field, select the identification code of the reason that is used to cancel the customer fiscal document.
 
-5.  In AX 2012 R3 and cumulative update 6 or later for AX 2012 R2: In the **Reason comment** field, enter or update the reason to cancel the fiscal document.
+5.  In the **Reason comment** field, enter or update the reason to cancel the fiscal document.
     
 
     > [!NOTE]
@@ -64,6 +64,6 @@ You can cancel an incorrect customer fiscal document by using the **Cancel fisca
 
 11. Click **OK** to cancel the sales order, and to reverse all of the ledger and financial transactions.
 
-## See also
+## Additional resources
 
-[Cancel a vendor fiscal document](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/bra-cancel-ven-fis-doc/articles/financials/localizations/latam-bra-cancel-vendor-fiscal-documents.md)
+[Cancel a vendor fiscal document](latam-bra-cancel-vendor-fiscal-documents.md)
