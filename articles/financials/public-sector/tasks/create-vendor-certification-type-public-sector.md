@@ -3,9 +3,9 @@
  
 title: Create a vendor certification type in the public sector
 description: You can create and assign vendor organizations any type of certification that the vendors hold, such as professional credentials, liability insurance, minority status, or compliance with various environmental or consumer safety standards. 
-author: ShylaThompson
+author: twheeloc
 manager: AnnBe 
-ms.date: 11/10/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: VendCertificationType   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: shylaw
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a vendor certification type in the public sector
 

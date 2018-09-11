@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Print GST tax invoices (Malaysia)
+title: MY-00005 Print GST tax invoices
 description: This procedure walks you through how to print a GST tax invoice. 
 author: EvgenyPopovMBS
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxGroupLookup, TaxTmpWorkTrans, SalesEditLines,  SrsReportViewerForm, CustFreeInvoice, CustTableLookup, DimensionLookup, CustPostInvoiceJob, SRSPrintDestinationSettingsForm   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Print GST tax invoices (Malaysia)
+# MY-00005 Print GST tax invoices
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

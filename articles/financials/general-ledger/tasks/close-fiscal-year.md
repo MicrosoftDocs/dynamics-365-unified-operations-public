@@ -5,7 +5,7 @@ title: Close the fiscal year
 description: This procedure steps through the year end close process that transfers balances to a new fiscal year. 
 author: aprilolson
 manager: AnnBe 
-ms.date: 10/24/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: LedgerParameters, LedgerFiscalCloseGroup, LedgerFiscalCloseAddLedger, SysLookupMultiSelectGrid, LedgerFiscalCloseRunGroup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Close the fiscal year
 

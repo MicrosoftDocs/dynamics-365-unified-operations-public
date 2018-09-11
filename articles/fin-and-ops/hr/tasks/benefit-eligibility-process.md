@@ -2,35 +2,35 @@
 # required metadata 
  
 title: Benefit eligibility process
-description: This procedure shows how the benefit eligibility process works. 
+description: This procedure hows the benefit eligibility process works. 
 author: kherr75
 manager: AnnBe 
-ms.date: 11/01/2017
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-talent 
+ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage  
+ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kherr
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Benefit eligibility process
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure shows how the benefit eligibility process works. When the process is complete you can view the results. The demo data company used to create this procedure is USMF.
+This procedure hows the benefit eligibility process works. When the process is complete you can view the results. The demo data company used to create this procedure is USMF.
 
 1. Go to Human resources > Benefits > Benefits.
 2. In the list, find and select the desired record.

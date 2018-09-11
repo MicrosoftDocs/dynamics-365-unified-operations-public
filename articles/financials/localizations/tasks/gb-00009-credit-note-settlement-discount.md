@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Create a credit on the settlement discount (UK)
+title: GB-00009 Create a credit note on the settlement discount
 description: This walkthrough was created using the demo company DEMF with country context switched for the United Kingdom (Country/region GBR). 
 author: epodkolz
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJournalTable, LedgerJournalTransCustPaym, CustOpenTrans, CustTable, CustInvoiceJournal   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: United Kingdom
 # ms.search.industry: 
 ms.author: epodkolz
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Create a credit on the settlement discount (UK)
+# GB-00009 Create a credit note on the settlement discount
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

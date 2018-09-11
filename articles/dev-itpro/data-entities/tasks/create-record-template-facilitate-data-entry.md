@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Create record templates to facilitate data entry
+title: Create a record template to facilitate data entry
 description: This procedure demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. 
-author: sericks007
+author: margoc
 manager: AnnBe 
-ms.date: 02/21/2017
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: AssetTable, SysRecordInfo, SysRecordTemplatePromptOnCreate   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: sericks
-ms.search.scope: Operations 
+ms.reviewer: margoc
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: margoc
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Create record templates to facilitate data entry
+# Create a record template to facilitate data entry
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
