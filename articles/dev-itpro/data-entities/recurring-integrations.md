@@ -178,6 +178,9 @@ The following table lists the possible status values.
 | ProcessedWithErrors  | The import/export operation completed with errors                                    |
 | PostProcessingFailed | the import/export operation failed during post-processing                            |
 
+> [!NOTE]
+> The file in the blob storage will remain in the storage for seven days, after which it will be automatically deleted.
+
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace
 Recurring integration data jobs run in batch mode. If a recurring job fails, you must investigate the instance of the batch job as part of the troubleshooting process. To make this investigation easier, click **Manage messages** to get to the **Process status for recurring data job** page, which now shows the status of the batch job.

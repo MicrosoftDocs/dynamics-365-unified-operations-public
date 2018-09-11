@@ -5,7 +5,7 @@ title: Microsoft Dynamics 365 for Finance and Operations documentation
 description: Documentation for Microsoft Dynamics 365 for Finance and Operations. 
 author: margoc
 manager: AnnBe
-ms.date: 03/02/2018
+ms.date: 08/30/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Microsoft Dynamics 365 for Finance and Operations documentation
+
 [!include [banner](includes/banner.md)]
 
 Learn how to make Microsoft Dynamics 365 for Finance and Operations work for your business, using the resources below to find great content for end users, developers, and IT professionals. 

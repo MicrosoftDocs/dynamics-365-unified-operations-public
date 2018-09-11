@@ -462,6 +462,8 @@
         href: ../financials/accounts-payable/set-up-generate-positive-pay-files.md
       - name: Default offset accounts for vendor invoice journals and invoice approval journals
         href: ../financials/accounts-payable/default-offset-accounts-vendor-invoice-journals.md
+      - name: Vendor workflow
+        href: ../financials/accounts-payable/vendor-workflow.md
       - name: Resolve discrepancies during invoice totals matching
         href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
         items:
@@ -521,6 +523,8 @@
           href: ../financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment.md
         - name: Vendor payments for a partial amount
           href: ../financials/accounts-payable/vendor-payments-partial-amount.md
+        - name: Vendor transactions list page
+          href: ../financials/accounts-payable/vendor-transaction-list-page.md
     - name: Accounts receivable
       href: ../financials/accounts-receivable/accounts-receivable.md
       items:
@@ -592,6 +596,8 @@
         href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Set up and generate accounts receivable aging information
         href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+      - name: Customer workflow
+        href: ../financials/accounts-receivable/customer-workflow.md
       - name: Payments and settlements
         items:
         - name: Customer payment overview
@@ -612,6 +618,8 @@
           href: ../financials/accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
           href: ../financials/accounts-receivable/customer-payments-partial-amount.md
+        - name: Customer transactions list page
+          href: ../financials/accounts-receivable/customer-transactions-list-page.md
     - name: Budgeting
       href: ../financials/budgeting/budgeting-overview.md
       items:
@@ -648,6 +656,8 @@
         href: ../financials/cash-bank-management/cash-discounts.md
       - name: Cash discounts for overpayments
         href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
+      - name: Manage IBAN account validation
+        href: ../financials/cash-bank-management/iban-validation.md
       - name: Settlement overview
         href: ../financials/cash-bank-management/settlement-overview.md
       - name: Settlement overview for centralized payments
@@ -1566,8 +1576,10 @@
           items:
           - name: Transfer transactions to the Intrastat
             href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
+          - name: Specify a lading address for an intra-community transaction
+            href: ../financials/localizations/tasks/eur-00002-specify-lading-address-intra-community.md
           - name: Generate an EU Intrastat declaration
-            href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md          
+            href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md
         - name: Inventory journal reports
           href: ../financials/localizations/emea-set-up-report-inventory-journal-names.md
         - name: Invoice issue deadlines

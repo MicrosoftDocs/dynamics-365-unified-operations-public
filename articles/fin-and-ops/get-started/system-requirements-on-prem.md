@@ -5,7 +5,7 @@ title: System requirements for on-premises deployments
 description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for on-premises deployments.
 author: kfend
 manager: AnnBe
-ms.date: 02/01/2018
+ms.date: 09/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -222,7 +222,7 @@ The following table lists the server operating systems that are supported for Fi
 
 | Operating system                                     | Notes |
 |------------------------------------------------------|-------|
-| Microsoft Windows Server 2016 Datacenter or Standard | These requirements are for the database and the Service Fabric cluster that hosts AOS. |
+| Microsoft Windows Server 2016 Datacenter or Standard | These requirements are for the database and the Service Fabric cluster that hosts AOS. <br><br>Only en-US OS installations are supported.|
 
 ## Software requirements for database servers
 
