@@ -81,6 +81,15 @@ The following folders contain additional information:
 - AX-SetupInfrastructureEvents 
 - AX-BridgeService 
 
+Event viewer tip for reviewing Dynamics entries:
+In the Event viewer, right-click on **Custom Views** and select **Create Custom View**.
+<SALLY: Insert screen shot 1)
+
+Select the Event logs drop down list, and select **Dynamics**, as shown.
+(SALLY: Insert screen shot 2)
+
+Note, also look at **Administrative Events** in **Custom Views**.
+
 ### Service Fabric Explorer
 Note the state of the cluster, application, and nodes. For information about how to access Service Fabric Explorer, see [Access Service Fabric Explorer](troubleshoot-on-prem.md#access-service-fabric-explorer).
 
@@ -369,6 +378,14 @@ To resolve, run:
 If the preceding steps don't resolve the issue, manually remove the local agent user from the SQL Server instance and the database, and then rerun the Initialize-Database script.
 
 If you re-create a user in AD DS, remember that the SID will change. In this case, remove the previous SID for the user, and add a new SID.
+
+### Error
+
+**Error:** Unable to migrate database
+
+**Steps:**  
+- Verify that you have access to the SQL Server listener.
+- If testing, you can start over with blank orchestrator database.
 
 ### Issue
 When performing the [Configure the databases](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configuredb) procedure, if the SQL Server is a named instance, use parameter -DatabaseServer [FQDN/Instancename].
@@ -693,6 +710,48 @@ On the AD FS machine, in Server Manager, go to **Tools** \> **AD FS Management**
 
 On the AD FS machine, in Event Viewer, go to **Applications and Services Logs** \> **AD FS** \> **Admin**, and make a note of any errors.
 
+### Fiddler
+Fiddler can be used for additional debugging. For in-dept information about Fiddler, see [AD FS 2.0: How to Use Fiddler Web Debugger to Analyze a WS-Federation Passive Sign-In](https://social.technet.microsoft.com/wiki/contents/articles/3286.ad-fs-2-0-how-to-use-fiddler-web-debugger-to-analyze-a-ws-federation-passive-sign-in.aspx) and [Cracking the AD FS Token from another AD FS Claims Provider](https://blogs.technet.microsoft.com/tangent_thoughts/2014/06/04/cracking-the-ad-fs-token-from-another-ad-fs-claims-provider/). 
+
+The following sections provide focused, debugging steps on claims being returned to Dynamics.
+
+#### Repo/capture
+1. Open Fiddler, select **Decrypt HTTPS traffic** in **Tools > Options > HTTPS**.
+2. Start capturing traffic (shortcut key is F12). You can verify that that traffic is being captured by looking at the bottom-left of the tool.
+3. Open Internet Explorer in an InPrivate instance, or Chrome using an Incognito instance.
+4. Log in to Finance and Operations. (Example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`)
+5. Log in using the USERINFO.NETWORKALIAS account and password.
+6. After logging in, stop Fiddler from capturing traffic.
+
+#### Analyze 
+Note that the right pane of Fiddler is split by a horizontal divider, which separates the request from the response. Unlike a network trace where you typically get a frame for a request and another frame for a response, Fiddler provides one frame that contains both the request and the response.
+
+1. In Fiddler, in the top-right corner, select **Inspectors > Raw**.
+2. In the bottom-right corner, select **Cookies**.
+3. Do a search for **MSISAuth**. 
+4. Select the row with a result of 200 for ADFS host.
+5. Looking above the row that you just selected, now select a row with a result of 302.
+
+    You should see the AD FS URL, host, username, and password.
+    > [!IMPORTANT]
+    > For privacy, you may need to scrub personaly identifiable information.
+(SALLY: Insert screen shot 3)
+
+6. Highlight the next row that has a result of 302, which should be URL of .../namespaces/AXSF/.
+
+    Note the code value that is displayed in that row.
+    (SALLY: Insert screen shot 4)
+
+7. Copy the value of code line after the = (equals) sign.
+8. Go to https://www.base64decode.org/ and paste in the results from step 7.
+9. Click the **Source charset** drop-down list and select **ASCII**.
+10. Click **Decode**.
+11. Copy out the results. Do the following:
+
+    - Note the **upn** value. This should match the user name.
+    - Note **unique_name** value. This should be the AD user being tested.
+    - Verify in **Active Directory Users and Computers > domain > Users** that this is the user being tested.
+
 ## Sign-in issues
 If you or other users experience sign-in issues, in Service Fabric Explorer, verify that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** values are valid. If the values are valid, run the following command on the primary SQL Server machine.
 
@@ -991,4 +1050,23 @@ Install-Module -Name AzureRM -RequiredVersion 5.7.0
 # Load version 5.7.0 of Azure PowerShell
 Import-Module -Name AzureRM -RequiredVersion 5.7.0
 ```
+## Service Fabric Explorer warnings after restarting machine
+
+**Error:**
+Error event: SourceId='MonitoringAgentService', Property='ServiceState'.
+System.Management.Automation.RuntimeException: Error: **The GUID passed was not recognized as valid by a WMI data provider.** (Exception from HRESULT: 0x80071068). Stack trace:
+
+To resolve: Restart the application package that generated the warning message. For more information see, [Restart applications (such as AOS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#restart-applications-such-as-aos).
+
+## The internal time zone version number stored in the database is higher than the version supported by the kernel (13/12)
+This database sync error can result in deploying old platform build (platform update 12) on top of a database that had a newer build (platform update 15).
+
+To resolve this issue, note the SYSTIMEZONESVERSION value:
+select * from SQLSYSTEMVARIABLES where parm = 'SYSTIMEZONESVERSION'
+
+Update and set the value to what was returned in the error message:
+update SQLSYSTEMVARIABLES set VALUE = 12 where parm = 'SYSTIMEZONESVERSION'
+
+## Printing randomly stops
+Ensure that all network printers that have been installed on the AOS server are running as the Windows service account that the AXService.EXE process is running as.
 
