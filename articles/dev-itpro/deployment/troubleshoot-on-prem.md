@@ -232,7 +232,6 @@ You can also use the following upgrade and uninstall commands:
 
 ```powershell
 LocalAgentCLI.exe Install <path of localagent-config.json>
-LocalAgentCLI.exe Upgrade <path of localagent-config.json>
 LocalAgentCLI.exe Cleanup <path of localagent-config.json>
 ```
 
@@ -299,6 +298,20 @@ You might receive the following errors:
 6. Install the local agent again by using the new configuration file.
 
 ### Error
+
+**Error:** The credentials supplied to the package were not recognized.
+
+**Reason:** ACL not properly defined on certificates.
+
+**Steps:** During servicing if receive “Unable to download asset…” error and the details shows "The credentials supplied to the package were not recognized", check to see if ACL was removed from client certificate on orchestrator machines. 
+
+To verify,run:
+- Run .\Test-D365FOConfiguration.ps1 script on orchestrator boxes and verify ACL
+
+To resolve, run:
+- Run .\Set-CertificateAcls.ps1 to reset
+
+### Error
 **Error:**
 
 > Access to the path '\\...\\agent\\assets\\StandAloneSetup-76308-1.zip' is denied.
@@ -326,6 +339,13 @@ You might receive the following errors:
 6. Install the local agent again by using the new configuration file.
 
 ### Error
+**Error:** Unable to get extract setup folder for command
+
+**Reason:** File share has been removed or changed. When doing a servicing operation, will run into the "Unable to get extract setup folder for command" error. 
+
+**Steps:** To see what the file share is set to, go to SQL Server Management Studio and query on orchestrator database: select * from OrchestratorCommandArtifact where CommandId = ‘xxx’
+
+### Error
 **Error:**
 
 > Login failed for user 'D365\\svc-LocalAgent$'. Reason: Could not find a login matching the name provided. \[CLIENT: 10.0.2.23\]
@@ -349,6 +369,9 @@ You might receive the following errors:
 If the preceding steps don't resolve the issue, manually remove the local agent user from the SQL Server instance and the database, and then rerun the Initialize-Database script.
 
 If you re-create a user in AD DS, remember that the SID will change. In this case, remove the previous SID for the user, and add a new SID.
+
+### Issue
+When performing the [Configure the databases](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configuredb) procedure, if the SQL Server is a named instance, use parameter -DatabaseServer [FQDN/Instancename].
 
 ### Issue
 The local agent user can't connect to the SQL Server instance or the database.
@@ -429,29 +452,6 @@ If you receive this error, close and restart Windows PowerShell. If the error pe
 
 ## What cluster ID should be used in the agent configuration?
 The cluster ID can be any globally unique identifier (GUID). This GUID is used for tracking purposes.
-
-## The local agent stops working after the tenant for the project from LCS is changed
-Follow these steps to configure the local agent with the updated tenant.
-
-1. Remove all the environments from LCS that already have the connector installed.
-2. Uninstall the local agent.
-
-    ```powershell
-    .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
-    ```
-
-3. Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:
-
-    - [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs)
-    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
-
-4. Create a new LCS connector in the new tenant.
-5. Download the **local-agent.config** file.
-6. Install the local agent.
-
-    ```powershell
-    .\LocalAgentCLI.exe Install <path of localagent-config.json>
-    ```
 
 ## Encryption errors
 Some encryption error examples include AXBootstrapperAppType, Bootstrapper, AXDiagnostics, RTGatewayAppType, Gateway potential failure related, and Microsoft.D365.Gateways.ClusterGateway.exe.
@@ -687,6 +687,7 @@ If you used Reset-DatabaseUsers.ps1, you must restart the Dynamics Service befor
 
 - **NETWORKDOMAIN:** `https://DC1.contoso.com/adfs`
 - **NETWORKALIAS:** `AXServiceUser@contoso.com`
+- **IDENTITYPROVIDER:** This should match the **NETWORKDOMAIN**.
 
 On the AD FS machine, in Server Manager, go to **Tools** \> **AD FS Management** \> **Service**. Right-click **Service and Edit Federation Service Properties**. The **Federation Service identifier** should match the **USERINFO.NETWORKDOMAIN** value and have HTTPS in the URL. (For example: `https://DC1.contoso.com/adfs`). 
 
@@ -714,7 +715,12 @@ In some cases, you still might not be able to sign in and receive the following 
 
 > You are not authorized to login with your current credentials. You will be redirected to the login page in a few seconds.
 
-If this error occurs, see the [AD FS](troubleshoot-on-prem.md#ad-fs) section of this topic.
+If this error occurs: 
+1. On the AD FS machine go to **Server Manager > Tools > AD FS Management**. Right-click **AD FS** and select **Edit Federation Service Properties**. Note the **Federation Service Identifier** value. This should match the **Userinfo.NetworkDomain** and **UserInfo.IdentityProvider** values. 
+2. On the AD FS machine open PowerShell and run **Get-AdfsProperties**. Note the **IdTokenIssuer** value. This should match **Federation Service Identifier** from step 1, as well as the **Provisioning_AdminIdentityProvider** value from **Service Fabric Explorer > Cluster > Applications > AXSFType > fabric:/AXSF Details** tab.
+3. Verify in Service Fabric Explorer that the **Provisioning_AdminPrincipalName** and **Provisioning_AdminIdentityProvider** values are valid.
+
+If the above steps didn't resolve the issue, see the [AD FS](troubleshoot-on-prem.md#ad-fs) section of this topic.
 
 ## System.Data.SqlClient.SqlException (0x80131904) and System.ComponentModel.Win32Exception (0x80004005)
 You might receive one of the following errors:
@@ -864,6 +870,29 @@ To resolve this issue, look at all the modules that you're dependent on, and mak
 
 **Platform update 8 and Platform update 11:** A known Skype application programming interface (API) issue affects the ability to sign in to on-premises environments. We are investigating a resolution for this issue. To work around this issue, you can add **?debug=true** to the end of the URL, as shown in the following example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
 
+## The local agent stops working after the tenant for the project from LCS is changed
+Follow these steps to configure the local agent with the updated tenant.
+
+1. Remove all the environments from LCS that already have the connector installed.
+2. Uninstall the local agent.
+
+    ```powershell
+    .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
+    ```
+
+3. Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:
+
+    - [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs)
+    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
+
+4. Create a new LCS connector in the new tenant.
+5. Download the **local-agent.config** file.
+6. Install the local agent.
+
+    ```powershell
+    .\LocalAgentCLI.exe Install <path of localagent-config.json>
+    ```
+
 ## Additional deployments (for example, two sandbox deployments, or a sandbox and production deployment)
 
 You will receive the following error when you deploy an additional environment:
@@ -893,6 +922,8 @@ You can skip or modify the following sections in the deployment instructions.
 
     1. Open the native application **Microsoft Dynamics 365 for Operations On-premises - Native application**. Add the redirect URI of the new environment (DNS).
     2. Open the native application **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting - Native application**. Add the redirect URI of the new environment (DNS).
+    3. Open the Web API **Microsoft Dynamics 365 for Operations On-premises - Web API**. Add the two entries of the redirect URI of the new environment (DNS).
+    4. Open the Web API **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting Web API**. Add the redirect URI of the new environment (DNS).
 
 ## Redeploy SSRS reports
 Delete the entry in SF.SyncLog, and then restart one of the AOS machines. The AOS machine will rerun DB Sync and then deploy reports.
@@ -950,5 +981,14 @@ Examples of errors:
 
         **DB sync failed.**
 
+## Running Add-CertToServicePrincipal results in “No subscription found in the context”
+Recent PowerShell versions may result in "No subscription found in the context" error. Resolution is to install and load an older version of PowerShell. For example, version 5.7.0. 
 
+```powershell
+# Install version 5.7.0 of Azure PowerShell
+Install-Module -Name AzureRM -RequiredVersion 5.7.0
+
+# Load version 5.7.0 of Azure PowerShell
+Import-Module -Name AzureRM -RequiredVersion 5.7.0
+```
 
