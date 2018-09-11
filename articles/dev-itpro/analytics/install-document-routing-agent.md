@@ -43,9 +43,9 @@ This topic describes how to install and configure the Document Routing Agent for
 - Access to network printing resources requires Active Directory Domain Services (AD DS) authentication.
 - The Microsoft Azure Active Directory (Azure AD) account that is used to configure the Document Routing Agent must share the same domain as the Azure tenant.
 - The application requires Adobe Acrobat Reader.
-- The client is supported only on Windows 8.1 and Windows 10, or on Microsoft Windows Server 2012 R2.
+- The client is supported only on Windows 8.1, Windows 10, Microsoft Windows Server 2012 R2 or Microsoft Windows Server 2016.
 - Dynamics AX 7.0 & Platform Update 1 deployments require Microsoft .NET 4 on the client.
-- Platform update 2 or later requires .NET 4.62 on the client.
+- Platform Update 2 or later requires .NET 4.62 on the client.
 
 Network printers that are registered for Finance and Operations applications can be used by all legal entities (also known as companies) that are defined in the environment. Network printer settings are company-specific. Therefore, administrators can restrict access, based on the user's active company. For example, users in the active company might have access to all the network printers that are registered by the Document Routing Agent. However, users in another company won't have access to those printers until access is explicitly enabled for that company.
 
@@ -129,7 +129,7 @@ The Document Routing Agent now supports running in the background as a service. 
 
 ### Will Microsoft add support for Microsoft Windows Server 2008 servers?
 
-No, not at this time. There are several dependencies on Azure capabilities that are available only in Windows Server 2012 R2.
+No, not at this time. There are several dependencies on Azure capabilities that are available only in Microsoft Windows Server 2012 R2 and Microsoft Windows Server 2016.
 
 ### Does the user who installs the Document Routing Agent have to be part of a Finance and Operations security group?
 
