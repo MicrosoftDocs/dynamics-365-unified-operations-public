@@ -5,7 +5,7 @@ title: Set up number sequences by warehouse
 description: This topic walks you through setting up number sequences for purchase product receipts and sales packing slips by warehouse for Poland.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/02/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
