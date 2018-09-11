@@ -1,8 +1,8 @@
 --- 
 # required metadata 
  
-title: ER Define model mapping and select data sources
-description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting (ER) data model. 
+title: Define ER model mappings and select data sources for them
+description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting data model. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 8/29/2018
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# ER Define model mapping and select data sources
+# Define ER model mappings and select data sources for them
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
