@@ -26,33 +26,29 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Local settings and requisites for Bank module.
+# Set up bank accounts
 
-Before start working with Bank management workspace, you should do the following settings:
+Before working with the Bank management workspace, you should complete the following procedures.
 
+## Enter bank group information.
 
-# Set up Bank
+1. Go to **Cash and bank management > Setup > Bank groups** and click **Update bank accounts**.
+2. Select a bank group. 
+2. Enter Russia-specific information for the bank group.  
+  - **BIC** – bank identifier code 
+  - **Corr. Bank account** – correspondent bank account
+  - **Bank type** – Select either **Main**, **Foreign**, or **Branch**. If you select **Branch**, select a value in the **Main bank** field. If you select, **Foreign**, select a **Vendor account** on the **General** FastTab.
+3. (Optional) Select the .docx template to use in the **Payment order in currency** field on the **Setup** FastTab. If defined, this will be the default template for the payment order in currency for all foreign bank accounts related to this bank.
 
-Create new Bank manually or through **Update bank accounts** function in the form **Cash and bank management > Setup > Bank
-groups**
+  > [!NOTE]
+  > Before defining document template, you should create them as Files in the Document attachment (icon Clip in the right up corner of the form)
 
-Define Russia-specific information:  
-
-- **BIC** – bank identifier code, 
-- **Corr. Bank account** – correspondent bank account.
-- **Bank type** – Main, Foreign, Branch. 
-  For Branch, define also **Main bank**
-  For Foreign, define also **Vendor account** associated with the foreign bank, on Fast tab General.
-- Optionally define .docx template for **Payment order in currency**. If defined, this will be default template of payment order in currency for all foreign bank accounts related to this bank.
-Note.
-Before defining document template, you should create them as Files in the Document attachment (icon Clip in the right up corner of the form)
-
-![Bank](bank.jpg)
+  ![Bank](media/rus-bank.jpg)
     
 
-# Set up Bank accounts
+## Create a Bank account from the Bank accounts page
 
-1. Create new Bank account at **Cash and bank management > Bank accounts > Bank accounts**.
+1. Create a new Bank account at **Cash and bank management > Bank accounts > Bank accounts**.
 2. Complete all required fields. The following list includes some fields that might be required. 
   - **Bank account** (code)
   - **Bank account number**
@@ -70,7 +66,7 @@ Before defining document template, you should create them as Files in the Docume
 > [!NOTE]
 > Before defining a document template, create the templates as files and attach them to the record. You can tell if a document is attached by the number indicator on the Document attachment icon.
 
-![Bank account](bank-account.jpg)
+![Bank account](media/rus-bank-account.jpg)
 
 
 
