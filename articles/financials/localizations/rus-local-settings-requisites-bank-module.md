@@ -47,26 +47,30 @@ Define Russia-specific information:
 Note.
 Before defining document template, you should create them as Files in the Document attachment (icon Clip in the right up corner of the form)
 
-<add here screenshot1>
+![Bank](bank.jpg)
     
 
 # Set up Bank accounts
 
-Create new Bank account at **Cash and bank management > Bank accounts > Bank accounts**.
+1. Create new Bank account at **Cash and bank management > Bank accounts > Bank accounts**.
+2. Complete all required fields. The following list includes some fields that might be required. 
+  - **Bank account** (code)
+  - **Bank account number**
+  - **Main account** - This is the general ledger account to be used in posting
+  - **Currency**
+  - **SWIFT code** 
 
-Define all required fields, like **Bank account** (code), **Bank account number**, **Main account** (the G/L account
-to be used in posting), **Currency**, **SWIFT code**, etc. File more details in the topic  (https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/bank-management-workspace)
+  For more information see [Bank management workspace](../cash-bank-management/bank-management-workspace.md)
 
-Also define Russia-specific information: 
+3. Enter Russia-specific information: 
+  - Choose **Bank** in the field **Bank groups**. Validate correctness of respective fields **BIC** and **Corr. Bank account**. Also validate **Address** and **Contact information** on respective fast tabs and update accordingly.
+  - Define number series for Payment order generation in the field **P/O numeration**.
+  - For bank accounts in foreign currency, you may also define .docx templates for generation of payment orders in paper format in the respective fields **Payment order in currency**, **Order template (currency sale)** and **Order template (currency purchase)**. 
 
-- Choose **Bank** in the field **Bank groups**. Validate correctness of respective fields **BIC** and **Corr. Bank account**. Also validate **Address** and **Contact information** on respective fast tabs and update accordingly.
-- Define number series for Payment order generation in the field **P/O numeration**.
-- For bank accounts in foreign currency, you may also define .docx templates for generation of payment orders in paper format in the respective fields **Payment order in currency**, **Order template (currency sale)** and **Order template (currency purchase)**. 
+> [!NOTE]
+> Before defining a document template, create the templates as files and attach them to the record. You can tell if a document is attached by the number indicator on the Document attachment icon.
 
-Note.
-Before defining document template, you should create them as Files in the Document attachment (icon Clip in the right up corner of the form)
-
-<add here screenshot2>
+![Bank account](bank-account.jpg)
 
 
 
