@@ -83,10 +83,13 @@ The following folders contain additional information:
 
 Event viewer tip for reviewing Dynamics entries:
 In the Event viewer, right-click on **Custom Views** and select **Create Custom View**.
-<SALLY: Insert screen shot 1)
+
+![Create custom view](media/Create-Custom-View.png)
 
 Select the Event logs drop down list, and select **Dynamics**, as shown.
-(SALLY: Insert screen shot 2)
+
+![Select Dynamics](media/Select-Dynamics.png)
+
 
 Note, also look at **Administrative Events** in **Custom Views**.
 
@@ -735,12 +738,14 @@ Note that the right pane of Fiddler is split by a horizontal divider, which sepa
     You should see the AD FS URL, host, username, and password.
     > [!IMPORTANT]
     > For privacy, you may need to scrub personaly identifiable information.
-(SALLY: Insert screen shot 3)
+
+    ![Scrub personaly identifiable information](media/Scrub-PII.png)
 
 6. Highlight the next row that has a result of 302, which should be URL of .../namespaces/AXSF/.
 
     Note the code value that is displayed in that row.
-    (SALLY: Insert screen shot 4)
+    
+     ![Note the code value that is displayed](media/Note-the-code.png)
 
 7. Copy the value of code line after the = (equals) sign.
 8. Go to https://www.base64decode.org/ and paste in the results from step 7.
