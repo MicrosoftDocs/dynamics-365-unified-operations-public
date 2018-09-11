@@ -3,7 +3,7 @@
  
 title: ER Import a configuration from Lifecycle Services
 description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Lifecycle Services (LCS). 
-author: Nikolay Selin
+author: NickSelin
 manager: AnnBe 
 ms.date: 8/29/2018
 ms.topic: business-process 
@@ -25,6 +25,7 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0
+
 ---
 
 # ER Import a configuration from Lifecycle Services
