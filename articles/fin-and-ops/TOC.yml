@@ -1543,8 +1543,6 @@
           href: ../financials/localizations/emea-fiscal-service-integration.md
         - name: Fixed assets disposal for Estonia and Lithuania
           href: ../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md
-        - name: Foreign currency revaluation
-          href: ../financials/localizations/emea-foreign-currency-revaluation.md
         - name: Generate a transfer document for an internal inventory transfer
           href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
         - name: Generate an EU sales list report
