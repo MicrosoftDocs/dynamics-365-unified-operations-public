@@ -5,7 +5,7 @@ title: AX 2009 upgrade - Install the Data migration tool
 description: This topic explains how to set up the Data migration tool (DMT) so that you can migrate your data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
-ms.date: 06/30/2018
+ms.date: 09/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -51,7 +51,7 @@ This topic explains how to set up the Data migration tool (DMT) so that you can 
 - Microsoft Dynamics AX 2009 SP1 5.0.1000.52 or later.
 - The prerequisite patch (axpatch.exe) installed. To find the patch, from the location where you downloaded and extracted the zip file, go to <pre-requisiteforpatch\>\<application\>.
 
-## Install the Finance and Operations DIXF service
+## Install DIXF service
 
 1. Go to the location where you extracted the zip file, and then, in the **DIXF msi** folder, right-click **DIXF\_Service\_x64.msi**, and select **Run**.
 2. When the wizard starts, select **Next**.
@@ -70,7 +70,7 @@ Go to the location where you extracted the zip file, and copy the following file
 There are two ways to install the DMT. You can use the combined XPO file or an application hotfix. If you're using a Microsoft Dynamics Lifecycle Services (LCS) Implementation project, use the application hotfix. Installation takes approximately seven hours.
 
 ### Combined XPO file
-1. Extract the combined XPO file from **DMT-December\_2017\_Release\\CombinedXPO**.
+1. Extract the combined XPO file from **DMT_V1.0\CombinedXPO**.
 2. Import the combined XPO file into AX 2009.
 3. Copy the label file from **DMT-December\_2017\_Release\\Label file** to the **Program Files\\Microsoft Dynamics AX\\50\\Application\\Appl\\<NameOfYourDeployment\>** folder.
 4. Restart the Application Object Server (AOS) instance.
@@ -79,15 +79,9 @@ There are two ways to install the DMT. You can use the combined XPO file or an a
 Note that the combined XPO file is imported into the layer that the user is signed in to.
 
 ### Application hotfix
-1. Go to **DMT-December\_2017\_Release\\ApplicationHotfix\\DynamicsAX2009-KB4010403-SP1**, right-click **setup.exe**, and then select **Run**.
+1. Go to **DMT_V1.0\_Release\\ApplicationHotfix\\DynamicsAX2009-KB4010403-SP1**, right-click **setup.exe**, and then select **Run**.
 2. In AX 2009, in the Application Object Tree (AOT), notice that the **LegalEntityId** field has been added to the **DMTCustomerAddressView** and **DMTVendorAddressView** views.
 3. Select **Data migration** \> **Setup** \> **Compile and synchronize DMT application**.
-
-## Import the Finance and Operations project 
-Complete this procedure only if you're using Platform update 4 or an earlier version. If you're using Platform update 5 or a later version, you can skip this section.
-
-1. Go to the location where you extracted the zip file, and find **AX7 service\\AX 7.0 Latest.axpp**.
-2. Import the project into the target Finance and Operations machine, and then build and synchronize the solution.
 
 ## Parameter setup
 Go to the location to where you extracted the zip file, and find **defaultvalue.xlsx**.
