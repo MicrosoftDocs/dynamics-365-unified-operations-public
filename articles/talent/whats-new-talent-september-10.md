@@ -70,7 +70,7 @@ The following fields have been added to the compensation, termination, and trans
 - ProbationEndDate
 - Position
 - Union
-- Departement
+- Department
 - PositionType
 - CompLocation
 - Title
@@ -83,7 +83,7 @@ The following fields have been added to the position workflow:
 
 - Position
 - Union
-- Departement
+- Department
 - PositionType
 - CompLocation
 - Title
