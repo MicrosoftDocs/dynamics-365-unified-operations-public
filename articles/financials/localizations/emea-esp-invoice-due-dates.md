@@ -28,7 +28,7 @@ ms.search.validFrom: 2016-11-30
 
 ---
 
-# Due date limits for Spain
+# Calculation due date and generation of report on average period of payment for Spain
 [!include[banner](../includes/banner.md)]
 
 ## Using delivery dates to calculate invoice due dates
