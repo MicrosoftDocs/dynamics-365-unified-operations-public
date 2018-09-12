@@ -5,7 +5,7 @@ title: View journal entries or transactions
 description: This procedure shows how to use the Voucher transactions inquiry to search for journal entries or transactions. 
 author: aprilolson
 manager: AnnBe 
-ms.date: 10/26/2017
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: SysQueryForm, LedgerTransVoucher, LedgerTransBase, Originaldocuments   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # View journal entries or transactions
 
@@ -34,7 +34,7 @@ This procedure shows how to use the Voucher transactions inquiry to search for j
 
 1. Go to General ledger > Inquiries and reports > Voucher transactions.
 2. Select the field for which you want to define a filter criteria.
-3. Enter your filter criteria for the selected field.
+3. Enter your filter critieria for the selected field.
     * You could filter on a single value or a range. When defining a range, make sure the correct syntax is used. The values should be separated by a double period (..).  
 4. Click the Joins tab to add additional tables from which to filter.
 5. In the tree, select 'Tables\General journal entry'.

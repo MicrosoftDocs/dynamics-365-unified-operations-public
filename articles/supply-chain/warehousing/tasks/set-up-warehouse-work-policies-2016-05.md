@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Set up warehouse work policies 
+title: Set up warehouse work policies (Application, May 2016)
 description: Warehouse processes don’t always include warehouse work. 
 author: johanhoffmann
 manager: AnnBe 
-ms.date: 06/23/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: WHSWorkPolicy, WMSLocationIdLookup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Set up warehouse work policies 
+# Set up warehouse work policies (Application, May 2016)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

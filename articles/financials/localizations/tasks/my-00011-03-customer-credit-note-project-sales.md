@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Generate customer credit for project sales (Malaysia)
+title: MY-00011 03 Generate Customer Credit note for Project sales
 description: This task walks you through creating and printing a project credit note for GST. 
 author: EvgenyPopovMBS
 manager: AnnBe 
-ms.date: 10/12/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: ProjProjectsListPage, ProjJournalTable, ProjJournalTransEmpl, ResourceLookup, TaxGroupLookup, ProjInvoiceProposalCreateLines, ProjInvoiceProposalDetail, CustInvoiceJourLookup_MY, TaxTmpWorkTrans, ProjInvoiceEditLines,  SysOperationSandboxForm   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Malaysia
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Generate customer credit for project sales (Malaysia)
+# MY-00011 03 Generate Customer Credit note for Project sales
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

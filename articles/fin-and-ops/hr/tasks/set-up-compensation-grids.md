@@ -5,26 +5,26 @@ title: Set up compensation grids
 description: Compensation grids are used to define and maintain the pay structures for fixed compensation plans. 
 author: kherr75
 manager: AnnBe 
-ms.date: 03/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-talent 
+ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: HRCCompGrid, HRCCompGridView   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kherr
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Set up compensation grids
 

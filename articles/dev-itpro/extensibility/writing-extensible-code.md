@@ -3,7 +3,7 @@
 
 title: Write extensible code
 description: This topic provides information about how to write extensible code.
-author: mfp
+author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article

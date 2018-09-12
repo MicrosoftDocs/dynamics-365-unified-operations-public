@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Submit and approve project budgets
+title: Submit and approve project budget
 description: This procedure shows you how to create and submit the budget for a project. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 02/09/2017
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, WorkflowSubmitDialog   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Submit and approve project budgets
+# Submit and approve project budget
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

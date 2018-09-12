@@ -1,34 +1,34 @@
 --- 
 # required metadata 
  
-title: Configure store settings that affect retail statements
+title: Store configurations for Retail statements
 description: This procedure walks through configurations for the Retail store that affect how Retail statements get created and posted. 
 author: jashanno
 manager: AnnBe 
-ms.date: 11/14/2017
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
+ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: RetailStoreTable   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Configure store settings that affect retail statements
+# Store configurations for Retail statements
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through configurations for the Retail store that affect how Retail statements get created and posted. Financial dimensions on Retail stores are covered in another procedure. This procedure uses the USRT demo company.
 
@@ -36,7 +36,7 @@ This procedure walks through configurations for the Retail store that affect how
 2. In the list, find and select the desired record.
 3. In the list, click the link in the selected row.
     * The settings in the Statement/closing section affect the statement creation, validation, and posting for the store.  Open the Statement/closing section.  
-    * Select the method you want to use to group the statement lines by.  
+    * Select the method you want to use to to group the statement lines by.  
     * Select "Yes" if there should only be one statement created per day when creating statements from the statement creation batch job.  
     * The Tender declaration calculation field defines whether tender declarations should be added together or if the last one should be used.  
     * Select the ledger account to post rounding differences into.  

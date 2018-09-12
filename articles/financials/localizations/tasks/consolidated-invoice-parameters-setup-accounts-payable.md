@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Configure consolidated invoice parameters and setup for accounts payable (Japan)
+title: Configure consolidated invoice parameters and setup for accounts payable
 description: In Japan, consolidated invoices can be enabled to fit the Japanese business practices. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 10/30/2017
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: VendParameters, PaymDay, PaymTerm   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Configure consolidated invoice parameters and setup for accounts payable (Japan)
+# Configure consolidated invoice parameters and setup for accounts payable
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -57,6 +57,6 @@ This procedure was created using the demo data company JPMF.
 2. Use the Quick Filter to find records. For example, filter on the Terms of payment field with a value of 'COD'.
 3. Click Edit.
     * Select Cutoff day as the Payment Method  
-    * The Cutoff day is not available at R1 release. You can choose Current month as an alternative. This may result in slight difference, which needs to be adjusted manually.   
+    * The Cutoff day is not available at R1 release. You can choose Current month as an alternative. This may result in slight difference, which needs to adjusted manually.   
 4. In the Payment day field, type a value.
 

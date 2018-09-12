@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: E-invoicing CFDI (Mexico)
+title: MX-00010 E-invoicing CFDI
 description: This task walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method. 
 author: sndray
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxGroupLookup, InventLocationIdLookup, SalesEditLines,  EInvoiceCFDIJournal_AR   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
 # ms.search.industry: 
 ms.author: sndray
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# E-invoicing CFDI (Mexico)
+# MX-00010 E-invoicing CFDI
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

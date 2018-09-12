@@ -2,7 +2,7 @@
 # required metadata
 
 title: Override POS request handler
-description: This article explains how you can extend Commerce Data Exchange -  Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables retail clients to interact with retail functionality in real time.
+description: This topic explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time service enables retail clients to interact with retail functionality in real time.
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/07/2018
@@ -30,137 +30,138 @@ ms.dyn365.ops.version: AX 7.3.5
 
 ---
 
-# Override POS request handler:
+# Override POS request handler
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to override POS request handler. We introduced new extension pattern for overriding the POS business logic, if you have any scenario where you want to modify/add some business logic to the core POS business flow then you can follow this pattern.
+This topic explains how to override POS request handler. We've introduced an extension pattern for overriding the POS business logic. If you have a scenario where you want to modify/add some business logic to the core POS business flow, then you can follow this pattern.
 
-Ex: When you sell serial item, POS will show a dialog to enter the serial number for that item after the scan, but if you want to automate the serial number process by entering the serial number through code then you can override this serial number request handler and do your custom business logic. Most of the business logic in POS is implemented in request handler. So, you can override the relevant request handler and return the response according to your business flow.
+For example, when you sell a serial item, POS will display a dialog box where you can enter the serial number for that item after the scan. If you want to automate the serial number process by entering the serial number through code, then you can override this serial number request handler and use custom business logic. Most of the business logic in POS is implemented in request handler, however, you can override the relevant request handler and return the response according to your business flow.
 
-**Note:** Not all request handler is exposed for customization, if you want to customize any business logic and if that request handler is not overrdiable then create a support ticket or log a request in the LCS extensibility tool.
+> [!NOTE]
+> Not all request handler logic is exposed for customization. If you want to customize any business logic and if that request handler is not overridable, then create a support ticket or log a request in the LCS extensibility tool.
 
-**Below is the list of POS request handler exposed for overriding:**
+** POS request handler logic exposed for overriding **
 
-This is list is based upon on [Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5. With every monthly update we will be adding more extension points. Please check the Pos.api.d.ts file in Retail SDK for the full list. ](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1)
+This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5.](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1) In each monthly update we will be adding additional extension points, so check the Pos.api.d.ts file in the Retail SDK for the full list. 
 
-**Cart extension handlers:**
+**Cart extension handlers**
 
 | **Request name**                           | **Description**                                                                              |
 |--------------------------------------------|----------------------------------------------------------------------------------------------|
-| AddTenderLineToCartClientRequestHandler    | This handler is executed when you add tender(payment) line to cart.                          |
-| GetKeyedInPriceClientRequestHandler        | This handler is executed when you add item which has configuration key in price during sale. |
-| GetPickupDateClientRequestHandler          | Executed when you select pickup date during customer order.                                  |
-| GetShippingDateClientRequestHandler        | Executed when you select shipping date during customer order.                                |
-| ShowChangeDueClientRequestHandler          | Executed when change due dialog shown at the end of transaction.                             |
-| GetReceiptEmailAddressClientRequestHandler | Executed when you get receipt email address.                                                 |
-| DepositOverrideOperationRequestHandler     | Executed when you override deposit.                                                          |
+| AddTenderLineToCartClientRequestHandler    | This handler is executed when you add tender (payment) line to cart.                          |
+| GetKeyedInPriceClientRequestHandler        | This handler is executed when you add an item that has a configuration key in price during sale. |
+| GetPickupDateClientRequestHandler          | Executed when you select a pickup date during a customer order.                                  |
+| GetShippingDateClientRequestHandler        | Executed when you select a shipping date during a customer order.                                |
+| ShowChangeDueClientRequestHandler          | Executed when the change due dialog box is shown at the end of transaction.                             |
+| GetReceiptEmailAddressClientRequestHandler | Executed when you get a receipt email address.                                                 |
+| DepositOverrideOperationRequestHandler     | Executed when you override a deposit.                                                          |
 
-**Payment extension handlers:**
+**Payment extension handler:**
 
 | **Request name**                                 | **Description**                                                                                                                                   |
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| GetGiftCardByIdServiceRequestHandler             | This handler is executed when you get the gift card id.                                                                                           |
-| GetPaymentCardTypeByBinRangeClientRequestHandler | This handler is executed when POS gets the card type like Visa, master etc. based on the HQ configuration during the card tender line processing. |
+| GetGiftCardByIdServiceRequestHandler             | This handler is executed when you receive the gift card ID.                                                                                           |
+| GetPaymentCardTypeByBinRangeClientRequestHandler | This handler is executed when POS gets the card type, such as Visa or Master Card. This is based on the HQ configuration during the card tender line processing. |
 
-**Peripherals request handler:**
+**Peripherals request handler**
 
 | Request name                                                  | Description                                                                                                                                                     |
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CardPaymentAuthorizePaymentRequestHandler                     | Executed when card payment is authorized.                                                                                                                       |
-| CardPaymentCapturePaymentRequestHandler                       | Executed when card payment is captured.                                                                                                                         |
-| CardPaymentExecuteTaskRequestHandler                          | Used to execute any custom task. This handler is mainly for extensions to do some custom functionality with payment connector which is not supported OOB.       |
-| CardPaymentRefundPaymentRequestHandler                        | Executed when card payment is refunded.                                                                                                                         |
-| CardPaymentVoidPaymentRequestHandler                          | Executed when card payment is voided.                                                                                                                           |
-| CardPaymentBeginTransactionRequestHandler                     | Executed when card payment is initiated.                                                                                                                        |
-| CardPaymentEndTransactionRequestHandler                       | Executed when card payment is ended.                                                                                                                            |
-| CardPaymentEnquireGiftCardBalancePeripheralRequestHandler     | Executed when gift card balance enquiry is made.                                                                                                                |
-| PaymentTerminalAuthorizePaymentActivityRequestHandler         | Executed when card payment is authorized using payment terminal/device.                                                                                         |
-| PaymentTerminalAuthorizePaymentRequestHandler                 | Executed when card payment is authorized using payment terminal/device.                                                                                         |
-| PaymentTerminalEnquireGiftCardBalancePeripheralRequestHandler | Executed when gift card balance enquiry is made using payment terminal/device.                                                                                  |
-| PaymentTerminalExecuteTaskRequestHandler                      | Used to execute any custom task. This handler is mainly for extensions to do some custom functionality with payment terminal/device which is not supported OOB. |
-| PaymentTerminalRefundPaymentRequestHandler                    | Executed when card payment is refunded using payment terminal/device.                                                                                           |
-| PaymentTerminalUpdateLinesRequestHandler                      | Executed when POS send line item details to payment device for display purpose.                                                                                 |
-| PaymentTerminalVoidPaymentRequestHandler                      | Executed when card payment is voided using payment terminal/device.                                                                                             |
-| PaymentTerminalBeginTransactionRequestHandler                 | Executed when card payment is initiated using payment terminal/device.                                                                                          |
-| PaymentTerminalCancelOperationRequestHandler                  | Executed when card payment is cancelled using payment terminal/device.                                                                                          |
-| PaymentTerminalEndTransactionRequestHandler                   | Executed when card payment is ended using payment terminal/device.                                                                                              |
-| CashDrawerOpenRequestHandler                                  | Executed when cash drawer open request is initiated by POS.                                                                                                     |
+| CardPaymentAuthorizePaymentRequestHandler                     | Executed when a card payment is authorized.                                                                                                                       |
+| CardPaymentCapturePaymentRequestHandler                       | Executed when a card payment is captured.                                                                                                                         |
+| CardPaymentExecuteTaskRequestHandler                          | Used to execute any custom task. This handler is mainly for extensions for custom functionality with payment connector, which is not supported.       |
+| CardPaymentRefundPaymentRequestHandler                        | Executed when a card payment is refunded.                                                                                                                         |
+| CardPaymentVoidPaymentRequestHandler                          | Executed when a card payment is voided.                                                                                                                           |
+| CardPaymentBeginTransactionRequestHandler                     | Executed when a card payment is initiated.                                                                                                                        |
+| CardPaymentEndTransactionRequestHandler                       | Executed when a card payment is ended.                                                                                                                            |
+| CardPaymentEnquireGiftCardBalancePeripheralRequestHandler     | Executed when a gift card balance inquiry is made.                                                                                                                |
+| PaymentTerminalAuthorizePaymentActivityRequestHandler         | Executed when a card payment is authorized using a payment. terminal/device.                                                                                         |
+| PaymentTerminalAuthorizePaymentRequestHandler                 | Executed when a card payment is authorized using a payment. terminal/device.                                                                                         |
+| PaymentTerminalEnquireGiftCardBalancePeripheralRequestHandler | Executed when a gift card balance inquiry is made using a payment. terminal/device.                                                                                  |
+| PaymentTerminalExecuteTaskRequestHandler                      | Used to execute any custom task. This handler is mainly for extensions for custom functionality with payment terminal/device, which is not supported. |
+| PaymentTerminalRefundPaymentRequestHandler                    | Executed when a card payment is refunded using a payment terminal/device.                                                                                           |
+| PaymentTerminalUpdateLinesRequestHandler                      | Executed when POS sends line item details to a payment device for display purposes.                                                                                 |
+| PaymentTerminalVoidPaymentRequestHandler                      | Executed when a card payment is voided using a payment terminal/device.                                                                                             |
+| PaymentTerminalBeginTransactionRequestHandler                 | Executed when a card payment is initiated using a payment terminal/device.                                                                                          |
+| PaymentTerminalCancelOperationRequestHandler                  | Executed when a card payment is cancelled using a payment terminal/device.                                                                                          |
+| PaymentTerminalEndTransactionRequestHandler                   | Executed when a card payment is ended using a payment terminal/device.                                                                                              |
+| CashDrawerOpenRequestHandler                                  | Executed when a cash drawer open request is initiated by POS.                                                                                                     |
 
-**Scan request handler:**
+**Scan request handler**
 
 | Request name                      | Description                                                    |
 |-----------------------------------|----------------------------------------------------------------|
-| GetScanResultClientRequestHandler | Executed when you scan or key in POS transaction screen Numpad |
+| GetScanResultClientRequestHandler | Executed when you scan or key in a POS transaction screen Numpad. |
 
-**Store fulfillment request handler:**
+**Store fulfillment request handler**
 
 | Request name                         | Description                                                          |
 |--------------------------------------|----------------------------------------------------------------------|
-| PrintPackingSlipClientRequestHandler | Executed when you do print packing slip from store fulfillment view. |
+| PrintPackingSlipClientRequestHandler | Executed when you print a packing slip from the store fulfillment view. |
 
-**Store operations request handler:**
+**Store operations request handler**
 
 | Request name                                       | Description                                                        |
 |----------------------------------------------------|--------------------------------------------------------------------|
-| CreateTenderRemovalTransactionClientRequestHandler | Executed when you do tender removal operation in POS.              |
-| CreateFloatEntryTransactionClientRequestHandler    | Executed when you do float entry operation in POS.                 |
+| CreateTenderRemovalTransactionClientRequestHandler | Executed when you do a tender removal operation in POS.              |
+| CreateFloatEntryTransactionClientRequestHandler    | Executed when you do a float entry operation in POS.                 |
 | SelectZipCodeInfoClientRequestHandler              | Executed when you key in zip code in address add/edit view in POS. |
 
-**Tender counting request handler:**
+**Tender counting request handler**
 
 | Request name                                           | Description                                               |
 |--------------------------------------------------------|-----------------------------------------------------------|
-| CreateSafeDropTransactionClientRequestHandler          | Executed when you do safe drop operation in POS.          |
+| CreateSafeDropTransactionClientRequestHandler          | Executed when you do a safe drop operation in POS.          |
 | GetTenderDetailsClientRequestHandler                   | Executed when you get tender declaration details in POS.  |
-| CreateBankDropTransactionClientRequestHandler          | Executed when you do bank drop operation in POS.          |
-| CreateTenderDeclarationTransactionClientRequestHandler | Executed when you do tender declaration operation in POS. |
+| CreateBankDropTransactionClientRequestHandler          | Executed when you do a bank drop operation in POS.          |
+| CreateTenderDeclarationTransactionClientRequestHandler | Executed when you do a tender declaration operation in POS. |
 
-**How to override handler in POS:**
+**How to override a handler in POS**
 
-If you want to override any of the above pos request handler, you to need to follow the below steps:
+If you want to override any of the above POS request handler logic, you to need to use the following steps:
 
-1.  Create a new class and extend it from the corresponding handler class. Ex: If you are overriding GetSerialNumberClientRequestHandler then extend your class from GetSerialNumberClientRequestHandler.
+1.  Create a new class and extend it from the corresponding handler class. For example, if you are overriding GetSerialNumberClientRequestHandler, then extend your class from GetSerialNumberClientRequestHandler.
 
 2.  Implement the executeAsync method.
 
 3.  Either call the default handler or do your custom logic inside the executeAsync method and return the response.
 
-**Step by step instruction:**
+**Step by step instructions**
 
-In the below sample we will override the GetSerialNumberClientRequestHandler to automate the serial number entry in POS. By default, POS will show a dialog to enter the serial number if the item is configured to ask for serial number, but we want to avoid showing this dialog and enter serial number through code.
+The following example shows how to override the GetSerialNumberClientRequestHandler to automate the serial number entry in POS. By default, POS will display a dialog box to enter the serial number if the item is configured to ask for serial number. We want to avoid showing this dialog box and enter serial number through code.
 
-1.  Open visual studio 2015 in administrator mode.
+1.  Open Visual Studio 2015 in administrator mode.
 
-2.  Open ModernPOS solution from …\\RetailSDK\\POS
+2.  Open ModernPOS solution from …\\RetailSDK\\POS.
 
-3.  Under the POS.Extensions project create a new folder called POSRequestHandlerExtension.
+3.  Under the POS.Extensions project, create a new folder called POSRequestHandlerExtension.
 
-4.  Under POSRequestHandlerExtension, create new folder called Handlers.
+4.  Under the POSRequestHandlerExtension folder, create new folder called Handlers.
 
-5.  In the Handlers folder, add a new .ts (typescript) file and name it has GetSerialNumberClientRequestHandlerExt.ts
+5.  In the Handlers folder, add a new .ts (typescript) file and name it GetSerialNumberClientRequestHandlerExt.ts.
 
-6.  Add the below import statement to import the relevant entities and context in the GetSerialNumberClientRequestHandlerExt.ts file.
+6.  Add the following import statement to import the relevant entities and context in the GetSerialNumberClientRequestHandlerExt.ts file.
 
  ```Typescrip 
  import { GetSerialNumberClientRequestHandler } from "PosApi/Extend/RequestHandlers/ProductsRequestHandlers";
  import { GetSerialNumberClientRequest, GetSerialNumberClientResponse } from "PosApi/Consume/Products";
  import { ClientEntities } from "PosApi/Entities";
 ```
-7.  Inside the GetSerialNumberClientRequestHandlerExt.ts create a new class called GetSerialNumberClientRequestHandlerExtand extend it from GetSerialNumberClientRequestHandler.
+7.  In the GetSerialNumberClientRequestHandlerExt.ts file, create a new class called GetSerialNumberClientRequestHandlerExtend and extend it from GetSerialNumberClientRequestHandler.
 
     export default class GetSerialNumberClientRequestHandlerExt extends GetSerialNumberClientRequestHandler { }
 
-8.  Implement the executeAsync method inside the GetSerialNumberClientRequestHandlerExt class.In the executeAsync you can write your custom logic and return the response or call the default handler. When POS sells the serial item, it will look for the executeAsync to execute the logic for serial number, since we are overriding it, POS will now execute this overridden executeAsync method instead of standard.
+8.  Implement the executeAsync method inside the GetSerialNumberClientRequestHandlerExt class. In the executeAsync method, you can write your custom logic and return the response or call the default handler. When POS sells the serial item, it will look for executeAsync to execute the logic for the serial number, however because we are overriding it, POS will now execute this overridden executeAsync method instead of the standard method.
 
- **Sample implementation of how to override the executeAsync method:**
+ **Sample implementation of how to override the executeAsync method**
 
  ```Typescrip
  public executeAsync(request: GetSerialNumberClientRequest<GetSerialNumberClientResponse>):
 	 Promise<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>> {
 
  // User could implement new business logic here to process the serial number.
- // Following example sets serial number "112233" for product 82001
+ // The following example sets serial number "112233" for product 82001.
 
  if (request.product.ItemId === "82001") {
  let response: GetSerialNumberClientResponse = new GetSerialNumberClientResponse("112233");
@@ -173,7 +174,7 @@ In the below sample we will override the GetSerialNumberClientRequestHandler to 
 
  }
 
- // If you don’t want to execute custom logic on some conditions, just want to call the standard the you can do it by calling the default request like below:
+ // If you don’t want to execute custom logic on some conditions, and you just want to call the standard logic, you can call the default request, as shown below.
 
  return this.defaultExecuteAsync(request);
 
@@ -211,7 +212,7 @@ Full sample code:
  	Promise<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>> {
 
  // User could implement new business logic here to process the serial number.
- // Following example sets serial number "112233" for product 82001
+ // The following example sets serial number "112233" for product 82001.
 
  if (request.product.ItemId === "82001") {
  let response: GetSerialNumberClientResponse = new GetSerialNumberClientResponse("112233");
@@ -226,9 +227,9 @@ Full sample code:
  }
 
 ```
-9.  Create a new json file and under the POSRequestHandlerExtension folder and name it as manifest.json.
+9.  Create a new json file under the POSRequestHandlerExtension folder. Name it manifest.json.
 
-10.  In the manifest.json file, copy and paste the below code, delete the default generated code before copying the below code:
+10.  In the manifest.json file, copy and paste the following code. Be sure to delete the default generated code before copying this code.
 
  ```Typescrip
  {
@@ -248,7 +249,7 @@ Full sample code:
  }
 }
 ```
-11.  Open the extensions.json file under POS.Extensions project and update it with POSRequestHandlerExtension samples, so that POS during runtime will include this extension.
+11.  Open the extensions.json file under the POS.Extensions project. Update it with POSRequestHandlerExtension samples, so that POS during runtime will include this extension.
  
 ```Typescrip
  {
@@ -265,9 +266,10 @@ Full sample code:
  ]
 }
 ```
- **Note:** The extension.json file should always contain two extensions folder names so keep the SampleExtensions folder name or your custom extension folder name. For production don’t use the sample extensions you should add your own extension folders and remove all the samples.
+> [!NOTE]
+> The extension.json file should always contain two extensions folder names, so be sure to keep the SampleExtensions folder name or your custom extension folder name. For production, don’t use the sample extensions. You should add your own extension folders and remove all the samples.
 
-12.  Open the tsconfig.json to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension for compilation. By default, the list contains all the excluded extensions list, if you want to compile any extension part of the POS then you need add the extension folder name and comment the extension from the extension list like below.
+12.  Open the tsconfig.json file to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension for compilation. By default, the list contains all the excluded extensions list. If you want to compile any extension part of the POS, then you need to add the extension folder name and comment the extension from the extension list, as shown below.
 
  ```Typescrip
  "exclude": [
@@ -280,10 +282,10 @@ Full sample code:
 ```
 13.  Compile and rebuild the project.
 
-**How to test your extension:**
+**How to test your extension**
 
 1.  Press F5 and deploy the POS to test your customization.
 
-2.  Once the POS is launched, login to POS and add any serial item to transaction.
+2.  After POS launches, sign in to POS and add a serial item to a transaction.
 
-3.  Place break point in the extension code. As sons you add the serial item you should be able to debug the extension code.
+3.  Place a break point in the extension code. When you add the serial item you should be able to debug the extension code.

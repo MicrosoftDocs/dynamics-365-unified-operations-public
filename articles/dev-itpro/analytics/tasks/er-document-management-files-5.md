@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Modify and run formats to use Document Management files in ER output
+title: ER Use Document Management files in format outputs (Part 5 - Modify and run format)
 description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 11/02/2017
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: ERSolutionTable, EROperationDesigner, ERComponentTypeDropDialog, ERExpressionDesignerFormula, SysQueryForm   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Modify and run formats to use Document Management files in ER output
+# ER Use Document Management files in format outputs (Part 5: Modify and run format)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -98,5 +98,5 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
     * 000148  
 6. Click OK.
 7. Click OK.
-    * Review the generated output. Note, in addition to the invoice message in XML format, a single file has been created for each attachment. The attachment files are populated with the zipped output in binary format.  
+    * Review the generated output. Note,that in addition to the invoice message in XML format, a single file has been created for each attachment. The attachment files are populated with the zipped output in binary format.  
 

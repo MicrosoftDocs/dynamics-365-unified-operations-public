@@ -1,34 +1,34 @@
 --- 
 # required metadata 
  
-title: Create online channels and define channel attributes
+title: Create online channel and define channel attributes
 description: This procedure walks through creating a new online channel and adding it to the organization hierarchy. 
 author: jashanno
 manager: AnnBe 
-ms.date: 03/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
+ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: RetailSPOnlineStoreDetailPage, SysLookupMultiSelectGrid, DimensionLookup, OMHierarchyManager, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Create online channels and define channel attributes
+# Create online channel and define channel attributes
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through creating a new online channel and adding it to the organization hierarchy. You must create the organization hierarchy before you can create a new online channel. This procedure uses the USRT demo data company.
 

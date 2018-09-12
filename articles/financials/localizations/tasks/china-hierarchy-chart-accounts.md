@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Chinese hierarchy of chart of accounts
+title: CN-00010 China hierarchy of chart of accounts
 description: This procedure shows how to create a chart of accounts in a hierarchy tree structure by setting up multiple levels for ledger accounts. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 10/27/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: LedgerChartOfAccounts, LedgerChartOfAccountsTreeLevel_CN, LedgerCreateAccount_CN, MainAccount   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Chinese hierarchy of chart of accounts
+# CN-00010 China hierarchy of chart of accounts
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
