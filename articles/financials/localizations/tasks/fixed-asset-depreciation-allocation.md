@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Set up fixed asset depreciation allocation (China)
+title: Setup fixed asset depreciation allocation
 description: In Japan, the depreciation expenses of a particular fixed asset can be shared among multiple departments. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: AssetAllocationRuleSetup_CN,  AssetPosting   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC), Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Set up fixed asset depreciation allocation (China)
+# Setup fixed asset depreciation allocation
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

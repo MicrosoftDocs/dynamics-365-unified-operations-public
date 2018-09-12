@@ -1,32 +1,32 @@
----
-# required metadata
-
-title: Create and maintain inventory blocking
-description: This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking.
+--- 
+# required metadata 
+ 
+title: Create and maintain an inventory blocking
+description: This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking. 
 author: perlynne
-manager: AnnBe
-ms.date: 12/02/2015
-ms.topic: business-process
+manager: AnnBe 
+ms.date: 8/29/2018
+ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-applications 
 ms.technology:  
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
+ 
+# optional metadata 
+ 
+ms.search.form: InventBlocking, InventItemIdLookupSimple, InventLocationIdLookup   
+audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2016-06-30 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Create and maintain inventory blocking
+# Create and maintain an inventory blocking
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -37,7 +37,7 @@ This procedure shows how to prevent physical on-hand inventory from being reserv
 1. Go to Inventory management > Periodic tasks > Inventory blocking.
 2. Click New.
 3. In the Item number field, click the drop-down button to open the lookup.
-4. In the list, select the item you want to choose.
+4. In the list, select the item you want to choose. 
     * Select an item number with physical on-hand inventory that you want to block. If you’re using USMF you can select item M9201.  
 5. In the Quantity field, enter a number.
     * If you’re using item M9201, you need to select less than 200.  
@@ -58,3 +58,4 @@ This procedure shows how to prevent physical on-hand inventory from being reserv
 1. Click Delete.
 2. Click Yes.
 3. Close the page.
+

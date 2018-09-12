@@ -3,7 +3,7 @@
 
 title: Write extensible tables
 description: This topic provides information about how to write extensible tables.
-author: mfp
+author: MichaelFruergaardPontoppidan
 manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article

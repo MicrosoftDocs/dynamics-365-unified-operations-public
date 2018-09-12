@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Set up reverse charge VAT item groups, rules, and parameters (UK)
+title: GB-00002 Set up reverse charge VAT item groups, rules, and parameters
 description: This task walks you through setting up reverse charge item groups, applicability rules for purchasing and for sales purposes, and reverse charge parameters for the United Kingdom. 
 author: epodkolz
 manager: AnnBe 
-ms.date: 10/31/2017
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: ReverseChargeItemGroup_W, EcoResCategorySingleLookup, ReverseChargeRule_W, LedgerParameters, TaxGroupLookup   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: United Kingdom
 # ms.search.industry: 
 ms.author: epodkolz
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Set up reverse charge VAT item groups, rules, and parameters (UK)
+# GB-00002 Set up reverse charge VAT item groups, rules, and parameters
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -78,7 +78,7 @@ This walkthrough was created using the demo company GBSI.
 28. In the Category field, click the drop-down button to open the lookup.
 29. In the tree, expand 'Expand the category tree and select a category.'.
     * For this example, select Cleaning.  
-30. In the tree, select 'Select the category from the list'.
+30. In the tree, select 'Select the caterory from the list'.
     * For this example, select category Cleaning.  
 31. Click OK.
 32. Click Save.

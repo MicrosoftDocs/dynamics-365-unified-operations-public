@@ -5,26 +5,26 @@ title: Create loan items
 description: Loan items are records that help you track physical items, such as phones or computers, that your company lends to workers. 
 author: kherr75
 manager: AnnBe 
-ms.date: 11/01/2017
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-talent 
+ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: HcmLoanType, DefaultDashboard, HcmLoanItem, HcmWorkerLookUp   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kherr
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create loan items
 
@@ -58,7 +58,7 @@ Loan items are records that help you track physical items, such as phones or com
 11. In the Starting value field, enter a number.
 12. In the Interval field, enter a number.
 13. In the Format field, type a value.
-    * For example, if the starting number for a loan item is 10, enter two number symbols in the Format field.  
+    * For example, if the starting number for a loan item is 10, enter two number symbols symbols in the Format field.  
 14. Click OK.
 15. Refresh the page.
 

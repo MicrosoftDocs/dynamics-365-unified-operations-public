@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Inquire and print an electronic invoice (Mexico)
+title: MX-00010 Inquire and print an electronic invoice
 description: Use the CFDI – Electronic invoices form to view, email, export, or print an already-generated CFDI electronic invoice based on a customer’s request. 
 author: sndray
 manager: AnnBe 
-ms.date: 11/10/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: EInvoiceCFDIJournal_AR, EInvoiceXMLViewer_MX, DefaultDashboard   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
 # ms.search.industry: 
 ms.author: sndray
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Inquire and print an electronic invoice (Mexico)
+# MX-00010 Inquire and print an electronic invoice
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

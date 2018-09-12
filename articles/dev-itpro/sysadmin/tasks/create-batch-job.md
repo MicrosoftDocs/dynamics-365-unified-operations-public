@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Create batch jobs
+title: Create a batch job
 description: A batch job is a group of tasks that are submitted to an Application Object Server (AOS) instance for automatic processing. 
 author: maertenm
 manager: AnnBe 
-ms.date: 11/10/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: BatchJob, SysRecurrence, BatchAlerts   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: sericks
-ms.search.scope: Operations 
+ms.reviewer: margoc
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Create batch jobs
+# Create a batch job
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

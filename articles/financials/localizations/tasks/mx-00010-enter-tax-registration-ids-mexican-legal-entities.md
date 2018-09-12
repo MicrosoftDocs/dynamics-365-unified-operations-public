@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Enter tax registration IDs for Mexican legal entities
+title: MX-00010 Enter tax registration IDs for Mexican legal entities
 description: Legal financial documents such as tax declarations or electronic invoices submitted to the tax authorities in Mexico must contain different types of tax registration IDs and other related information. 
 author: sndray
 manager: AnnBe 
-ms.date: 05/09/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: OMLegalEntity, OMNewLegalEntity   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Mexico
 # ms.search.industry: 
 ms.author: sndray
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Enter tax registration IDs for Mexican legal entities
+# MX-00010 Enter tax registration IDs for Mexican legal entities
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
