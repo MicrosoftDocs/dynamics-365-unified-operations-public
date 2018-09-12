@@ -92,4 +92,61 @@ In the non-linear method, the accrued amount per month for the depreciation asse
 
 In addition, when the residual value of the object reaches 20 percent of its original value, the residual value is used as the base value for additional depreciation calculations for the object. The monthly depreciation amount is defined by dividing the base cost of the object by the number of months that remain until the end of its service life.
 
+## Manual depreciation method
+
+This method is based on a manual definition of the depreciation percentage level. For this depreciation profile, you must define a depreciation schedule that states the required depreciation percentage level for each period. The number of periods specified in the depreciation schedule corresponds to that in the fixed asset record.
+
+## Factor depreciation method
+
+When you use the factor depreciation method, the fixed asset depreciation amount is calculated as a remaining amount, multiplied by a fixed ratio.
+Select the period for depreciation accrual in the Interval field, in the Depreciation method form.
+If you select the reducing balance or non-linear depreciation methods, specify the increasing factor. If you select the factor depreciation method, specify the amount of the multiplier.
+For the non-linear method, enter the cutoff percentage value in the Factor field (for example, 20). When the accrued depreciation amount is calculated, the depreciation amount for the year will be recalculated based on the service life and depreciation profile for the asset. The depreciation is distributed equally across the intervals in the year.
+
+## Product output-mileage depreciation method 
+
+The product output-mileage depreciation method is used to write off the value of an asset in proportion to the volume of units produced.
+
+### Create the product output or mileage of a fixed asset 
+Use this procedure to create the product output or mileage of a fixed asset.
+
+Use the **Product output/mileage** form to create product output or mileage for a fixed asset.
+
+1.  Click **Fixed assets (Russia)** \> **Periodic** \> **Product output/mileage**.
+
+2.  Press CTRL+N to create new product output or mileage for a fixed asset.
+
+3.  In the **FA inventory number** field, select a fixed asset number.
+
+4.  In the **Period** field, select a start date of the period for calculating the product output or mileage for the fixed asset.
+    
+
+    > [!NOTE]
+    > <P>The date that you specify in this field is used to calculate the depreciation for the specified fixed asset.</P>
+
+
+
+5.  In the **Output/mileage** field, enter the number of units that are produced or the distance that is traveled for the specified period.
+    
+
+    > [!NOTE]
+    > <P>The number of units (mileage) indicated cannot be less than the sum of the units (mileage) that is indicated in the <STRONG>Output/run nontaxable</STRONG> and <STRONG>Output/run export</STRONG> fields.</P>
+
+
+
+6.  In the **Output/run export** field, enter the product output or mileage to export for the fixed asset.
+
+7.  In the **Output/run nontaxable** field, enter the product output or mileage for tax-exempt operations for the fixed asset.
+
+8.  Click **Functions** \> **Copy output/run** to open the **Create or copy output/run lines** form and copy lines from previous reporting periods.
+    
+    –or–
+    
+    Click **Functions** \> **Copy output/run** to open the **Create or copy output/run lines** form and create lines in the defined reporting period with specified export and tax-exempt details for the fixed asset.
+
+## Non-linear tax accounting group depreciation method
+
+Linear and non-linear depreciation methods are used to calculate depreciation for tax accounting. The linear method that is used in tax accounting corresponds to the linear method that is used in standard accounting.
+
+When the non-linear method is used, the accrued monthly depreciation for the asset is calculated as the product of the remaining value of the asset and the depreciation rate. The depreciation rate is defined by the formula K = (2/n) \* 100%, where n = the useful life of the asset in months.
 
