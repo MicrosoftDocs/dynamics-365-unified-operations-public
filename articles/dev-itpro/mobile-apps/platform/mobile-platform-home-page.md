@@ -158,8 +158,8 @@ If ADFS is in use on the domain and the environment is on-premises, then **ADFS 
 
 ## Troubleshooting
 ### The Mobile Client app is misbehaving on particular devices
-Sometimes the cache associated with the Unified Operations app becomes corrupted or obsolete and needs to be cleared. Unfortunately the only mechanism to clear the data associated with the app is to uninstall the app.
-To completely uninstall the app, don't use the "long-press wiggle and x on the app icon" method. Instead, completely uninstall the app by navigating to **Settings -> General -> iPhone Storage -> Dynamics 365 Unified Operations** and clicking on **Delete App**. After 10-15 seconds, the app can be reinstalled.
+Sometimes, the cache associated with the Unified Operations app becomes corrupt or obsolete and needs to be cleared. Unfortunately, the only way to clear the data associated with the app is to uninstall the app.
+To completely uninstall the app, don't use the "long-press wiggle and x on the app icon" method. Instead, completely uninstall the app by navigating to **Settings** > **General** > **iPhone Storage** > **Dynamics 365 Unified Operations**, and then click **Delete App**. After 10-15 seconds, the app can be reinstalled.
 
 ### I can't figure out how to build or change something in my Mobile Client content
 There are many resources that you can leverage to figure out how to build or change content for the Mobile Client.
