@@ -30,13 +30,17 @@ ms.search.validFrom: 2018-10-31
 
 ---
 
-# Set up advance adjustment parameters for advance holders
+# Foreign currency revaluation for advance holders in Russia
 
 [!include [banner](../includes/banner.md)]
 
-The calculation of exchange adjustments on advance payments that are issued or received in currency is no longer required in business accounting.
+This topic provides information about foreign currency revaluation procedure for advance holders in Russia.
 
-When you settle advance payments and advance reports, the advance adjustment transaction is created as a continuation of the advance report, based on the setup in the **General ledger parameters** form and the **Advance adjustment parameters** form. The advance adjustment transaction is displayed in the **Advance holder transactions** form. The amounts on the advance report are based on the exchange rate on the advance payment date, not on the posting date.
+When you settle advance payments and advance reports that contain transactions made in foreign currencies, the adjustment transactions are created as a continuation of the advance report, based on the setup made in the **General ledger parameters** and the **Advance adjustment parameters**. 
+The advance adjustment transactions are displayed in the **Advance holder transactions** form. The amounts on the advance report are based on the exchange rate on the advance payment date, not on the posting date.
+
+  > [!NOTE]
+    > The calculation of exchange adjustments on advance payments that are issued or received in foreign currencies is no longer required in business accounting.
 
 Complete the following tasks before you settle advances that are issued to an advance holder:
 
