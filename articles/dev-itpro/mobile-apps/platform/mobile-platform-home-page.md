@@ -157,6 +157,10 @@ During development it can be useful to attach a debugger to get more detailed in
 If ADFS is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The Microsoft Dynamics Unified Operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support wia](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)
 
 ## Troubleshooting
+### The Mobile Client app is misbehaving on particular devices
+Sometimes, the cache associated with the Unified Operations app becomes corrupt or obsolete and needs to be cleared. Unfortunately, the only way to clear the data associated with the app is to uninstall the app.
+To completely uninstall the app, don't use the "long-press wiggle and x on the app icon" method. Instead, completely uninstall the app by navigating to **Settings** > **General** > **iPhone Storage** > **Dynamics 365 Unified Operations**, and then click **Delete App**. After 10-15 seconds, the app can be reinstalled.
+
 ### I can't figure out how to build or change something in my Mobile Client content
 There are many resources that you can leverage to figure out how to build or change content for the Mobile Client.
 - Review the documentation provided in the Dynamics 365 for Finance and Operations Help system.
