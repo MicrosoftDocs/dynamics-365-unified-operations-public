@@ -49,9 +49,9 @@ In this example, if the Use the delivery date to calculate the payment due date 
 
 |Terms of payment       |Delivery date |Due date limit |Calculated invoice due date |Adjusted invoice due date |
 |-----------------------|--------------|---------------|----------------------------|--------------------------|
-|Current month + 15 days |June 9, 2013 |30 days |15 days after the end of June, which is July 15, 2013. However, July 15 – June 9 = 36 days, which is more than the actual due date limit of 30 days. |July 9, 2013 |
+|Current month + 15 days |June 9, 2018 |30 days |15 days after the end of June, which is July 15, 2018. However, July 15 – June 9 = 36 days, which is more than the actual due date limit of 30 days. |July 9, 2018 |
 
-If there are multiple packing slips available for a purchase invoice, the earliest packing slip posting date is used as the delivery date. For example, if packing slips are posted on June 12, 2013, June 15, 2013, and June 18, 2013, for a purchase invoice, June 12, 2013, is used as the delivery date. 
+If there are multiple packing slips available for a purchase invoice, the earliest packing slip posting date is used as the delivery date. For example, if packing slips are posted on June 12, 2018, June 15, 2018, and June 18, 2018, for a purchase invoice, June 12, 2018, is used as the delivery date. 
 If more than one due date limit applies to an invoice, the due date limit with the smallest number of days is used to calculate the invoice due date. For example, if due date limits are set up for 30 days and 45 days, the effective due date limit that is used to calculate the invoice due date is 30 days, regardless of where the due date limit is set up. 
 
 ## Set up due date limits to calculate invoice due dates
@@ -68,7 +68,7 @@ Click Accounts receivable > Setup > Payment > Due date limits.
     - Months – The due date limit is for the number of months that you indicate in the Number of units field. 
 6. In the Number of units field, enter the number of days or months for the due date limit. 
 
-## Assign due date limits to terms of payment to calculate invoice due dates [AX 2012]
+## Assign due date limits to terms of payment to calculate invoice due dates
 
 When you create and post sales invoices or purchase invoices, the invoice due date is calculated based on the terms of payment that are specified for the invoices. The invoice due date that is calculated is verified against the due date limit. The invoice due date is then adjusted, if adjustment is required, to comply with the due date limit. If no due date limit is specified, the invoice due date that is calculated is used as the final invoice due date. 
 Use the **Terms of payment** page to specify a due date limit, so that you can make sure that the invoice due date that is calculated is in the specified due date limit. 
@@ -86,13 +86,13 @@ You can specify the payment schedule and the payment day for a customer invoice,
 You can specify the number of days in the grace period, within which an invoice payment must be made in the Due date limits page. You can select the Use the delivery date to calculate the payment due date check box in the Terms of payment form to use the delivery date to calculate the invoice due dates.  
 You must specify a payment due date that comes before the due date limit for an invoice. You can set the payment schedule and the payment day for an invoice and manually calculate the invoice due date. If the date comes after the due date limit that is set in the Due date limits page, then you must correct the due date. 
 
-## Generate the payment due date compliance report
+## Generate the Information on average period of payments to suppliers report
+You can generate the  Information on average period of payments to suppliers report, which is a statistics report that contains information about the invoices that are paid during a period that you specify. The report displays the amounts that are paid based on the payment terms, as well as the amounts that are paid outside of the payment terms. The amounts that are paid using payment journals and promissory notes are included in the report. 
 
-You can generate the Payments due date compliance report, which is a statistics report that contains information about the invoices that are paid during a period that you specify. The report displays the amounts that are paid based on the payment terms, as well as the amounts that are paid outside of the payment terms. The amounts that are paid using payment journals and promissory notes are included in the report. 
-
-Use the Spanish payments due date compliance report form to generate the Payments due date compliance report. 
-1. Click General ledger > Reports > External > Spanish payments due date compliance report. 
-2. On the General tab, in the Current period field group, in the From and To fields, select the starting and ending dates of the period that the report is generated for. 
-3. In the Comparative period field group, in the From and To fields, select the starting and ending dates of the comparative period. For example, you can select the starting and ending dates of the previous fiscal period. 
-4. Click Select, and then specify the criteria to select the vendor transactions, such as invoices, payments, and promissory note journals. Click OK. 
-5. In the Spanish payments due date compliance report form, click OK to generate the report. 
+To generate this report execute the following steps: 
+1. Click General ledger > Inquiries and reports > Ledger reports > Information on average period of payments to suppliers. 
+2. In the Parameters of the report in the Current period field group, select the starting and ending dates of the period that the report is generated for. 
+3. In the Comparative period field group, select the starting and ending dates of the comparative period. For example, you can select the starting and ending dates of the previous fiscal period.
+5. In the calculation field group select the calculation method (invoice date of due date)  
+6. Under the Record to include FastTab specify the criteria to select the vendor transactions, such as invoices, payments, and promissory note journals (use Filter to specifying criteria).  
+7. Click OK to generate the report. 
