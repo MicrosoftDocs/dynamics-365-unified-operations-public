@@ -37,24 +37,24 @@ ms.dyn365.ops.version:
 
 ## Overview
 
-Organizations with hourly employees may award tiem off based on hours worked instead of tenure with the organization. the hours worked data is typically stored in a time and attendance system. In Talent: Core HR, those regular and overtime hours worked can be imported and used as a basis for an employee's award.
+Organizations with hourly employees can award time off based on hours worked instead of tenure with the organization. The hours worked data is typically stored in a time and attendance system. In Talent: Core HR, those regular and overtime hours worked can be imported and used as a basis for an employee's award.
 
 ## Leave plans
 
-Within the leave plan, the accrual type can either be months of service or hours worked. When hours worked is selected, there are two type sof hours to use for the accural, regular and overtime.
+Within the leave plan, the accrual type can either be months of service or hours worked. When hours worked is selected, there are two types of hours to use for the accural: regular and overtime.
 
-To setup a leave plan to use hours worked, follow these steps:
+To set up a leave plan to use hours worked, follow these steps:
 
-1. On the Leave and absence plans page, click Create new plan
-2. Enter a Name for your leave plan
-3. Select the accrual frequency for the plan
-5. Select the start date for the plan
-6. Choose teh accrual period basis and seelect the employee specific date if applicable
-7. For the accrual schedule, select Hours worked for the accrual type
-8. Select the type of hours to be used for the accrual
-9. Enter the number of hours worked and the associated accrual amount, minimum blaance and maximum carryfoward or grant amount
+1. On the **Leave and absence plans** page, click **Create new plan**.
+2. Enter a name for your leave plan.
+3. Select the accrual frequency for the plan.
+5. Select the start date for the plan.
+6. Choose the accrual period basis and select the employee-specific date, if applicable.
+7. For the accrual schedule, select **Hours worked** for the accrual type.
+8. Select the type of hours to be used for the accrual.
+9. Enter the number of hours worked and the associated accrual amount, minimum balance, and maximum carryforward or grant amount.
 
-Accrual processing for hours worked plans uses the accrualy frequency along with the accrual period basis to determine the hours to be accrued.
+Accrual processing for hours worked plans uses the accrual frequency, along with the accrual period basis, to determine the hours to be accrued.
 
 ## Annual accrual frequency
 
@@ -91,9 +91,9 @@ In the employee's assigned leave plans, the tier basis and type of hours is disp
 
 ## Loading data
 
-Actual hours can be imported by using the Leave and absence hours worked entity in data management. If you are using working time calendars, the import will validate that aregular hours worked doesn't exceed the scheduled hours in a day defined by the calendar. The import also validates that the hours worked for a given day doesn't exceed 24 hours. 
+Actual hours can be imported by using the Leave and absence hours worked entity in data management. If you are using working time calendars, the import will validate that regular hours worked doesn't exceed the scheduled hours in a day defined by the calendar. The import also validates that the hours worked for a given day doesn't exceed 24 hours. 
 
-The following informaiton is needed to import actual hours to be used in the leave accrual process:
+The following information is needed to import actual hours to be used in the leave accrual process:
 
 + Personnel number 
 + Date worked
@@ -110,7 +110,3 @@ A single date can only have one of each type associated with it.
 | 000337                | 8/8/2018             | Regular               | 8                    |
 | 000337                | 8/7/2018             | Regular               | 8                    |
 | 000337                | 8/9/2018             | Regular               | 8                    |
-
-
-
-
