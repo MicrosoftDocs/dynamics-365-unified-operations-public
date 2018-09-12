@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent Core HR (September 10, 2
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
 author: Darinkramer
 manager: AnnBe
-ms.date: 09/06/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -70,7 +70,7 @@ The following fields have been added to the compensation, termination, and trans
 - ProbationEndDate
 - Position
 - Union
-- Departement
+- Department
 - PositionType
 - CompLocation
 - Title
@@ -83,7 +83,7 @@ The following fields have been added to the position workflow:
 
 - Position
 - Union
-- Departement
+- Department
 - PositionType
 - CompLocation
 - Title
