@@ -1,30 +1,30 @@
----
-# required metadata
-
+--- 
+# required metadata 
+ 
 title: Define inventory counting processes
-description: This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal.
+description: This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal. 
 author: MarkusFogelberg
-manager: AnnBe
-ms.date: 11/14/2016
-ms.topic: business-process
+manager: AnnBe 
+ms.date: 8/29/2018
+ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-applications 
 ms.technology:  
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
+ 
+# optional metadata 
+ 
+ms.search.form: InventCountGroup, InventJournalName, InventParameters, EcoResProductDetailsExtended, InventItemLocation, InventLocationIdLookup   
+audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2016-06-30 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Define inventory counting processes
 
@@ -87,3 +87,4 @@ This procedure walks you through the configuration of basic inventory counting p
 7. In the list, select a counting group
     * Here you can select a specific counting group that should apply to the item in the specific warehouse you have selected. When counting is performed in that warehouse, this counting policy will override the general counting policy for the item.  
 8. Click Save.
+

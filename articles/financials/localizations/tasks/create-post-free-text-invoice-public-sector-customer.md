@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Create and post a free text invoice for a public sector customer (Denmark)
+title: Create and post a free text invoice for a public sector customer
 description: This procedure walks you through creating and posting a free text invoice for a customer using OIOUBL electronic invoicing. 
 author: mrolecki
 manager: AnnBe 
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: CustFreeInvoice, CustTableLookup, ContactPersonLookup, CustPostInvoiceJob   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Denmark
-ms.search.industry: Public Sector
+# ms.search.industry: 
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Create and post a free text invoice for a public sector customer (Denmark)
+# Create and post a free text invoice for a public sector customer
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

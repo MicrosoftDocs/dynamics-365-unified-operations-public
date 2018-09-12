@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Customer and vendor account statements (France)
+title: FR-00002 Customer and vendor account statements
 description: You can print accounts statements for customers and vendors that display information for a time period that you select. 
 author: EvgenyPopovMBS
 manager: AnnBe 
-ms.date: 03/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: SrsReportViewerForm   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Customer and vendor account statements (France)
+# FR-00002 Customer and vendor account statements
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

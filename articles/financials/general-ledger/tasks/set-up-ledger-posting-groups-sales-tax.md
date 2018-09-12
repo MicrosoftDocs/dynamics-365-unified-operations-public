@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Set up ledger posting groups for sales tax
+title: Set up Ledger posting groups for sales tax
 description: Sales tax is calculated and posted to main accounts that are specified in the Ledger posting groups. 
-author: ShylaThompson
+author: twheeloc
 manager: AnnBe 
-ms.date: 10/26/2017
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: TaxAccountGroup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Set up ledger posting groups for sales tax
+# Set up Ledger posting groups for sales tax
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -40,8 +40,8 @@ Sales tax is calculated and posted to main accounts that are specified in the Le
     * Sales taxes are collected on behalf of the tax authority when you sell taxable goods and services.  
 6. In the Sales tax receivable filed, select the main account for incoming taxes that are received from the tax authority.
     * Vendors collect taxes on behalf of the tax authority when you buy taxable goods and services. This field is not available if the Apply sales tax taxation rules option is selected in the General ledger parameters page. Instead, sales taxes that are paid to vendors are debited to the same account as the purchase.   
-7. In the Use tax expense field, select the main account for posting deductible Use taxes that are not claimed or reported to the tax authority by vendors as part of EU reverse charge GST/HST.
-    * The Use tax option needs to be selected for the Sales tax code in the Sales tax group that is used in the transaction.  This field is not available if the Apply sales tax taxation rules option is selected in the General ledger parameters page.   
+7. In the Use tax expense field, select  the main account for posting deductible Use taxes that are not claimed or reported to the tax authority by vendors as part of EU reverse charge GST/HST.
+    * The Use tax option needs to be selected for the Sales tax code in the Sales tax group that is used in the transaction.  This field is not be available if the Apply sales tax taxation rules option is selected in the General ledger parameters page.   
 8. In the Use tax payable field, select the main account for posting incoming Use taxes that are payable to tax authorities.
     * The Use tax option needs to be selected in the Sales tax code in the Sales tax group to post Use tax. If Apply sales tax taxation rules option is selected in General ledger parameters, the offset is posted to the transaction’s expense account.   
 9. In the Settlement account field, select the main account  that the net balance of the ledger accounts specified in the Use tax payable and Sales tax receivable fields will be posted.

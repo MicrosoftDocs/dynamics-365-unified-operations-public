@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Create and confirm a recognition test (Japan)
+title: Create and confirm recognition test
 description: For Japan, impairment is conducted in two main steps. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 02/26/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: AssetImpairmentManageTestResult_JP, AssetImpairmentRecognition_JP   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Create and confirm a recognition test (Japan)
+# Create and confirm recognition test
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

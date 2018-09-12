@@ -5,30 +5,30 @@ title: Create call center orders
 description: This procedure walks through looking up a customer, creating a new order, searching for a product, and collecting payment from the customer. 
 author: josaw1
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
+ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: MCRCustomerService, SalesTable, MCRSourceIdTargetLookup, MCRSalesQuickQuote, MCRSalesOrderRecap, MCRCustPaymDialog, MCRCustPaymLookup   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create call center orders
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include[task guide banner](../includes/task-guide-banner.md)]
 
 This procedure walks through looking up a customer, creating a new order, searching for a product, and collecting payment from the customer. This procedure uses demo data company USRT and is intended for the Sales Order Clerk. Pre-requisites:  The user who completes the procedure is set up as a Call center user and the Fabrikam Semi-Annual Catalog is published with at least one Source code on it.
 

@@ -1,32 +1,32 @@
---- 
+---
 # required metadata 
- 
-title: Create a depreciation proposal
+title: Create depreciation proposal
 description: This procedure describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. 
-author: saraschi2
+author: abruer
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
 ms.technology:  
- 
+
 # optional metadata 
- 
-# ms.search.form:   
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset   
 audience: Application User 
-# ms.devlang:  
+# ms.devlang:
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: abruer
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0
+
 ---
-# Create a depreciation proposal
+
+# Create depreciation proposal
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

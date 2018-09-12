@@ -5,7 +5,7 @@ title: Manage order holds
 description: This procedure demonstrates how to place customer sales orders on hold, how to work with order hold checkouts, and how to remove order holds. 
 author: omulvad
 manager: AnnBe 
-ms.date: 01/09/2017
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: MCRHoldCodeTable, SalesTableListPage, SalesCreateOrder, SalesTable, MCRHoldCodeTrans   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Manage order holds
 

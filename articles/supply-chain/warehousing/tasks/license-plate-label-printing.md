@@ -5,7 +5,7 @@ title: Enable license plate label printing
 description: This procedure enables the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process. 
 author: perlynne
 manager: AnnBe 
-ms.date: 11/03/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPage, NumberSequenceDetails, WHSDocumentRoutingLayout, WHSDocumentRouting, WHSRFMenuItem, WHSRFMenu, WHSWorkTemplateTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Enable license plate label printing
 

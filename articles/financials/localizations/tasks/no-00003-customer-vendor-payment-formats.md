@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Customer and vendor payment formats (Norway)
+title: NO-00003 Customer and vendor payment formats
 description: This task walks you through setting up and maintaining Norwegian payment IDs. 
 author: epodkolz
 manager: AnnBe 
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Norway
 # ms.search.industry: 
 ms.author: epodkolz
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Customer and vendor payment formats (Norway)
+# NO-00003 Customer and vendor payment formats
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: NAF codes and Siret numbers (France)
+title: FR-00003 NAF codes and Siret numbers
 description: This procedure shows how to create NAF codes and then enter the codes for legal entities, customers, vendors, and prospects. 
 author: EvgenyPopovMBS
 manager: AnnBe 
-ms.date: 06/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: CompanyNAFCode, CustTable, VendTable, smmBusRelTable, OMLegalEntity   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# NAF codes and Siret numbers (France)
+# FR-00003 NAF codes and Siret numbers
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

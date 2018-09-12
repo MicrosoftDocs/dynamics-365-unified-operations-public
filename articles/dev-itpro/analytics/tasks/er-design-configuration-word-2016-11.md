@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Design ER configurations to generate reports in Word format
-description: The following steps explain how a user in either the System administrator or Electronic reporting developer role can configure an Electronic reporting (ER) formats to generate reports as Microsoft Word files. 
+description: The following steps explain how a user in either the System administrator or Electronic reporting developer role can configure an Electronic reporting formats to generate reports as Microsoft Word files. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 12/21/2016
+ms.date: 8/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Design ER configurations to generate reports in Word format
 
@@ -34,9 +34,9 @@ The following steps explain how a user in either the System administrator or Ele
 
 To complete these steps, you must first complete the steps in the “Create an ER configuration for generating reports in OPENXML format” task guide. In advance, you must also download and save the following templates locally for the sample report:
 
-[Template of Payment Report](https://go.microsoft.com/fwlink/?linkid=862266)
+http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReport.docx
 
-[Bounded Template of Payment Report](https://go.microsoft.com/fwlink/?linkid=862266)
+http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReportBounded.docx
 
 This procedure is for a feature that was added in Microsoft Dynamics 365 for Operations version 1611.
 
@@ -53,7 +53,7 @@ This procedure is for a feature that was added in Microsoft Dynamics 365 for Ope
 ## Replace the Excel template with the Word template
     * Currently, the Excel document is used as a template to generate the output in OPENXML format. We will import the report’s template in Word format.  
 1. Click Attachments.
-    * Replace the existing Excel template with the Word template that you downloaded earlier, Template of Payment Report. Note, this template only contains the layout of the document we want to generate as ER output.  
+    * Replace the existing Excel template with the Word template that you downloaded earlier, SampleVendPaymDocReport.docx. Note, this template only contains the layout of the document we want to generate as ER output.  
 2. Click Delete.
 3. Click Yes.
 4. Click New.
