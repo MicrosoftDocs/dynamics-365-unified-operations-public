@@ -5,7 +5,7 @@ title: AX 2009 upgrade - Use the Data migration tool to migrate from Dynamics AX
 description: This topic describes how to use the Data migration tool (DMT) that to migrate data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
-ms.date: 06/30/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,7 +46,6 @@ The following illustration shows the overall process of collecting and preparing
 
 Before you can use the DMT to export data from the source environment (AX 2009), you must complete the following pre-processing tasks:
 
-- Pre-process staging
 - Mapping the table fields between the source and target environments
 - Applying conversions to the source data
 - Setting up default values for the source data
@@ -54,12 +53,12 @@ Before you can use the DMT to export data from the source environment (AX 2009),
 
 Because there can be multiple legal entities in the source system, you must select the legal entities that contain the data to migrate. For the selected legal entities, you can review the source tables and their row counts. You can also view any virtual companies. Finally, you can analyze virtual companies that legal entities are attached to and the related tables.
 
-Successful migration of exported data requires that every source table be mapped to an equivalent target data entity. You set up the mapping by using a Microsoft Excel mapping file that allows for automatic mapping of the source and target fields of each table. The mapping file also includes the data from the Finance and Operations schema of the data entities and the default data that is required in some tables.
+Successful migration of exported data requires that a source table be mapped to an equivalent target data entity. You set up the mapping by using a Microsoft Excel mapping file that allows for automatic mapping of the source and target fields of each table. The mapping file also includes the data from the Finance and Operations schema of the data entities and the default data that is required in some tables.
 
 Before you can migrate data from AX 2009 to Finance and Operations, you must complete the following tasks to meet the migration requirements:
 
 - Select target dimensions that correspond to the source dimensions that are populated based on the selected legal entities.
 - Review the inventory dimensions that are included with the selected legal entities.
-- Select the chart of accounts for each legal entity, or consolidate multiple charts of accounts into a single chart of accounts.
+- Select the chart of accounts for each legal entity, or consolidate multiple legal entities into a single chart of accounts.
 - Complete the basic ledger setup.
 - Apply data conversions to the source data, based on the extended data type (EDT) of the field.
