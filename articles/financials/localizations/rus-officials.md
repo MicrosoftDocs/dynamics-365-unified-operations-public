@@ -116,3 +116,7 @@ Use the **Shipment** page to set up officials for the **Issue slip (M-15)** repo
 3. Select **Posting** \> **Ship transfer order**.
 4. On the **Shipment** page, on the **Officials** tab, select the job title of the contact official.
 5. Select **OK** to post the transfer order shipments that include information about officials.
+
+## Additional resources
+
+- [Set up signers for print forms](emea-set-up-signers-for-printing-forms.md)
