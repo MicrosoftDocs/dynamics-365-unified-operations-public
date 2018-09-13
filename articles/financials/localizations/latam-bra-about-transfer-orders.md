@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Transfer orders for Brazil
+title: Transfer orders (Brazil)
 description: This topic provides information about transfer orders for Brazil. 
 author: ShylaThompson
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Transfer orders for Brazil
+# Transfer orders (Brazil)
 
 You can use transfer orders to transfer inventory items between warehouses that are located at different fiscal establishments. You can also transfer inventory items to another fiscal establishment.
 
