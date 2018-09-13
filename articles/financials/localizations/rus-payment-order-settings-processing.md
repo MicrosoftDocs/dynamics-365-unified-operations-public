@@ -39,7 +39,7 @@ Before you can generate payment orders, you need to set up the following:
 
     1.	In the customer or vendor card, click **Bank accounts**. 
     2.	Create a bank account and fill all necessary information for bank account. 
-    3.	For foreign customer bank accounts, on tab **General**, in the **Foreign bank** group, in the **Bank group** field, select the code of the foreign bank with which the customer bank account is registered and in Bank account number field, enter the foreign bank account number for the account that receives payment returns.
+    3.	For foreign customer bank accounts, on tab **General**, in the **Foreign bank** group, in the **Bank group** field, select the code of the foreign bank with which the customer bank account is registered and in **Bank account number** field, enter the foreign bank account number for the account that receives payment returns.
     4.	In the **SWIFT** field, enter the Society for Worldwide Interbank Financial Telecommunication (SWIFT) code of the bank that receives payment returns.
 
      <add here screenshot Vendor bank account (screenshot 5)>
