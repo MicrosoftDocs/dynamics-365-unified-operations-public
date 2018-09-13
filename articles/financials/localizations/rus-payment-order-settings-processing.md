@@ -41,7 +41,7 @@ Before you can generate payment orders, you need to set up the following:
     3.	For foreign customer bank accounts, on tab **General**, in the **Foreign bank** group, in the **Bank group** field, select the code of the foreign bank with which the customer bank account is registered and in **Bank account number** field, enter the foreign bank account number for the account that receives payment returns.
     4.	In the **SWIFT** field, enter the Society for Worldwide Interbank Financial Telecommunication (SWIFT) code of the bank that receives payment returns.
 
-     [![Vendor bank account](media/rus-vendor-bank-account-screenshot-5.jpg)]	
+     ![Vendor bank account](media/rus-vendor-bank-account-screenshot-5.jpg)	
 
 For generating payments to vendors, set up **Method of Payment** in **Accounts payable > Payment setup > Methods of payment**. 
 
@@ -50,7 +50,7 @@ For generating payment returns to customers, set up **Method of Payment** in **A
 To set up printing payment orders in Russian rubles according to legacy paper format, in the **Method of payment** form, choose **Payment order in RUB** in the field **Export format**.
 To set up printing payment orders in foreign currency according to bank-specific template (which is defined in Bank account card), choose **Payment order in currency** in the field **Export format**.
 
-[![Payment order in currency](media/rus-payment-order-rub-screenshot 3.jpg)]	
+![Payment order in currency](media/rus-payment-order-rub-screenshot-3.jpg)	
 
 
 ## Generate a payment order in rubles for payment to vendor
@@ -82,7 +82,7 @@ Before you can generate a payment order, you must create payment order lines. To
     
 16. Fill the following fields to be printed in respective boxes in payment order to vendor or tax authority: Order of payment, Number status, Budget revenue code, Origin payment, Payment type , UCI, Information about period: Period code, Period number, Year, Period date.
 
-[![Vendor payments](media/rus-vendor-payments-screenshot-4.jpg)]
+![Vendor payments](media/rus-vendor-payments-screenshot-4.jpg)
 
 ### Generate payment order
 After you've created payment order lines, you can generate the payment order. To do this, complete the following steps.
