@@ -5,7 +5,7 @@ title: Set up number sequences by using a wizard
 description: Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require them. 
 author: sericks007
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
