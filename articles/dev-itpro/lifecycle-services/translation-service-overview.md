@@ -5,7 +5,7 @@ title: Microsoft Dynamics 365 Translation Service
 description: This topic provides information about the Microsoft Dynamics 365 Translation Service (DTS). DTS is designed to enhance the experience for partners and ISVs when they translate their solutions or add a new language for supported Microsoft Dynamics products.
 author: kfend
 manager: AnnBe
-ms.date: 09/27/2017
+ms.date: 09/137/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
