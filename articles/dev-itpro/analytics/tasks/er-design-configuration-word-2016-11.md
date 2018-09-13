@@ -34,9 +34,9 @@ The following steps explain how a user in either the System administrator or Ele
 
 To complete these steps, you must first complete the steps in the “Create an ER configuration for generating reports in OPENXML format” task guide. In advance, you must also download and save the following templates locally for the sample report:
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReport.docx
+- [Template of Payment Report](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Bounded Template of Payment Report](https://go.microsoft.com/fwlink/?linkid=862266)
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReportBounded.docx
 
 This procedure is for a feature that was added in Microsoft Dynamics 365 for Operations version 1611.
 

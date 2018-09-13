@@ -49,7 +49,6 @@ This topic includes information and links to resources that can help you set up 
 - [File formats for methods of payment](emea-select-file-formats-for-the-method-of-payments.md)
 - [Fiscal service (ESR) integration](emea-fiscal-service-integration.md)
 - [Fixed assets disposal for Estonia and Lithuania](emea-credit-note-reverse-fixed-asset-sale.md)
-- [Foreign currency revaluation](emea-foreign-currency-revaluation.md)
 - [Generate a transfer document for an internal inventory transfer](tasks/transfer-document-internal-inventory-transfer.md)
 - [Generate an EU sales list report](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022 files

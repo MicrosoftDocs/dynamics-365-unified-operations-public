@@ -5,7 +5,7 @@ title: Create an operating unit
 description: An operating unit is an organization that is used to divide the control of economic resources and operational processes in a business. 
 author: sericks007
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
