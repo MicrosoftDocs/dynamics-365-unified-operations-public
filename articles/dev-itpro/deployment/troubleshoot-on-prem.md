@@ -317,11 +317,11 @@ You might receive the following errors:
 
 **Steps:** During servicing if receive “Unable to download asset…” error and the details shows "The credentials supplied to the package were not recognized", check to see if ACL was removed from client certificate on orchestrator machines. 
 
-To verify, run:
-- .\Test-D365FOConfiguration.ps1 script on orchestrator boxes and verify ACL
+To verify, run the following script on orchestrator machines and verify the ACL:
+- .\Test-D365FOConfiguration.ps1
 
-To resolve, run:
-- .\Set-CertificateAcls.ps1 to reset
+To resolve, run the following script to reset:
+- .\Set-CertificateAcls.ps1
 
 ### Error
 **Error:**
