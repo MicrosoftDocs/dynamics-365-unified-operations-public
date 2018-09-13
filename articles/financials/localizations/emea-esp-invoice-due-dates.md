@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Invoice due dates for Spain
-description: This topic provides information about due date for Spain.
+title: Calculation due date and generation of report on average period of payment for Spain
+description: This topic provides information about due dates and average period of payments for Spain.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/20/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
