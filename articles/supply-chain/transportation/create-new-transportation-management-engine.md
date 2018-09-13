@@ -116,7 +116,7 @@ This section explains how to create a class library that has a TMS engine implem
 ## Deploy the TMS engine as a package
 One way to deploy third-party TMS engines is through a deployment package. This approach is recommended in a production environment. In a development environment, you can manually copy the assemblies, as described in the next section, "Set up a TMS engine in Finance and Operations." To deploy the engine as a package, follow these steps.
 
-1. On the <strong>Dynamics 365 **&gt; **Deploy</strong> menu, click <strong>Create Deployment Package</strong>.
+1. On the **Dynamics 365** &gt; **Deploy** menu, click <strong>Create Deployment Package</strong>.
 2. In the **Create Deployment Package** dialog box, select the TMSEngines model, and enter the path where you want to store your package files. 
 
    [![Selecting the TMSEngines model ](./media/071.png)](./media/071.png)
