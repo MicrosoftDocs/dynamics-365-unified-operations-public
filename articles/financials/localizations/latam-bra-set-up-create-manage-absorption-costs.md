@@ -5,7 +5,7 @@ title: Set up, create, and manage absorption costs
 description: This topic provides information on how to set up, create, and manage absorption costs for Brazil. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 6/5/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,7 +42,7 @@ Use this procedure to set up the number sequence code for cost absorption journa
 
 ## Set up a cost center for absorption costs
 
-Use this procedure to set up a cost type for a cost center. You can use the **Cost center** form to set up cost centers for absorption costs. 
+Use this procedure to set up a cost type for a cost center. You can use the **Cost center** page to set up cost centers for absorption costs. 
 
 1.  Click **Production control** \> **Setup** \> **Absorption costs** \> **Cost centers**.
 
@@ -58,13 +58,10 @@ Use this procedure to set up journal names for absorption costs.
 
 2.  Press CTRL+N to create a record.
 
-3.  In the **Name** field, enter a name for the journal.
-    
+3.  In the **Name** field, enter a name for the journal.  
 
     > [!NOTE]
     > The <STRONG>Journal type</STRONG> field is updated with the default journal type that is used for absorption costs. The default journal type is <STRONG>Indirect costs</STRONG>.
-
-
 
 4.  In the **Description** field, enter a brief description for the journal.
 
@@ -86,27 +83,21 @@ Use this procedure to create and post a cost absorption journal.
 
 4.  In the **Month/Year to close** field, select the month and year that the costs are posted for.
 
-5.  Click **Lines** to open the **Journal lines** form, and then specify values in the following fields:
+5.  Click **Lines** to open the **Journal lines** page, and then specify values in the following fields:
     
       - **Date** – The date on which to post the journal line.
-    
       - **Ledger account** – The ledger account number to post the journal line to.
-    
       - **Cost center** – The cost center number to use to post the journal line.
-    
       - **Cost amount** – The cost amount for the journal line.
 
 6.  Click **Post** \> **OK** to post the journal line.
-    
 
     > [!NOTE]
-    > You can view the type of absorbed cost that is posted to a work center, the corresponding cost center that the work center is associated with, the hourly rate, and the planned capacity for the work center details in the <STRONG>Absorbed costs</STRONG> form.
-
-
+    > You can view the type of absorbed cost that is posted to a work center, the corresponding cost center that the work center is associated with, the hourly rate, and the planned capacity for the work center details on the <STRONG>Absorbed costs</STRONG> page.
 
 ## Close absorption costs
 
-You can post the absorption costs for a specific month and year to the ledger. You can specify the transfer account and transfer offset account in the **Accounts - WIP** and **Accounts - costing** fields in the **Resources** form. 
+You can post the absorption costs for a specific month and year to the ledger. You can specify the transfer account and transfer offset account in the **Accounts - WIP** and **Accounts - costing** fields on the **Resources** page. 
 
 1.  Click **Production control** \> **Periodic** \> **Absorption costs** \> **Absorption costs - monthly closing**.
 
