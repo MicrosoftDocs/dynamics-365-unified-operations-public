@@ -230,37 +230,21 @@ table is based on the example of Item 2.
 | 1 | 1500                | 3000                                          | 2000                     | = 3000                  |
 | 2 | 2000                | 5500\*                                        | = 3000                   | = 4090.91               |
 
-\* The calculated fixed asset balance value includes the fixed asset revaluation
-amount caused by a partial disassembly of the asset.
+\* The calculated fixed asset balance value includes the fixed asset revaluation amount caused by a partial disassembly of the asset.
 
-where = the cost of current revaluation transaction;
+<p> where  <strong><i>Adj(i)</i></strong> = the cost of current revaluation transaction </p>
 
-= the fixed asset balance value before revaluation, calculated as the sum of all
-acquisition transactions prior to the current revaluation transaction, plus the
-sum of all previous revaluation transactions (without taking into account the
-current one) and major refurbishment transactions, less the preceding partial
-fixed asset disassembly transactions.
+<p> <strong><i>S<sub>bal</sub>(i)</i></strong> = the fixed asset balance value before revaluation, calculated as the sum of all acquisition transactions prior to the current revaluation transaction, plus the sum of all previous revaluation transactions (without taking into account the current one) and major refurbishment transactions, less the preceding partial fixed asset disassembly transactions. </p>
 
-= the original component cost , which is initialized by the cost of acquiring
-the components for a first revaluation. For example, if 10 units were acquired
-and 5 are to be withdrawn, this sum contains the original cost value of 5
-units), For all subsequent transactions, this is initialized from the value.
+<p> <strong><i>S<sub>src</sub>(i)</i></strong>= the original component cost , which is initialized by the cost of acquiring the components for a first revaluation. For example, if 10 units were acquired and 5 are to be withdrawn, this sum contains the original cost value of 5 units), For all subsequent transactions, this is initialized from the value. </p>
 
-The calculated value is rounded off in accordance with the configuration of the
-Fixed Assets.
+The calculated value is rounded off in accordance with the configuration of the Fixed Assets.
 
-In the example, the component balance value after revaluation transaction 1 is
-3000 and 4090.91 after revaluation transaction 2.
+In the example, the component balance value after revaluation transaction 1 is 3000 and 4090.91 after revaluation transaction 2.
 
-The calculation of added component depreciation is equal to the balance value
-calculation. The depreciation revaluation and depreciation accrual transactions
-are, in this case, identical to the revaluation transaction
+The calculation of added component depreciation is equal to the balance value calculation. The depreciation revaluation and depreciation accrual transactions are, in this case, identical to the revaluation transaction
 
-A table is created for every component withdrawn from the fixed asset
-composition. The lines of thetable include all depreciation accrual and
-depreciation revaluation transactions completed after acquisition,(with the
-exception of depreciation revaluation transactions triggered by disassembly
-transactions. Refer to the following table.
+A table is created for every component withdrawn from the fixed asset composition. The lines of thetable include all depreciation accrual and depreciation revaluation transactions completed after acquisition,(with the exception of depreciation revaluation transactions triggered by disassembly transactions. Refer to the following table.
 
 | i | Depreciation (or revaluation) amount, | The fixed asset balance value at the time of depreciation/depreciation revaluation | Component cost, |          |
 |---|---------------------------------------|------------------------------------------------------------------------------------|-----------------|----------|
