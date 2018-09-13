@@ -18,8 +18,7 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: Russia
-# ms.search.industry: 
+ms.search.region: Russia # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
@@ -44,11 +43,12 @@ Before you can generate payment orders, you need to set up the following:
 
      <add here screenshot Vendor bank account (screenshot 5)>
 
--	For generating payments to vendors, set up **Method of Payment** in **Accounts payable > Payment setup > Methods of payment**. 
+For generating payments to vendors, set up **Method of Payment** in **Accounts payable > Payment setup > Methods of payment**. 
+
 For generating payment returns to customers, set up **Method of Payment** in **Accounts receivable > Payment setup > Methods of payment**.
 
-   To set up printing payment orders in Russian rubles according to legacy paper format, choose **Payment order in RUB** in the field **Export format**.
-   To set up printing payment orders in foreign currency according to bank-specific template (which is defined in Bank account card), choose **Payment order in currency** in the field **Export format**.
+To set up printing payment orders in Russian rubles according to legacy paper format, in the **Method of payment** form, choose **Payment order in RUB** in the field **Export format**.
+To set up printing payment orders in foreign currency according to bank-specific template (which is defined in Bank account card), choose **Payment order in currency** in the field **Export format**.
 
 <add here screenshot Payment order in RUB (screenshot 3).jpg>
 
