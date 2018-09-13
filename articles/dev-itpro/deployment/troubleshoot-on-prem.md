@@ -82,7 +82,7 @@ The following folders contain additional information:
 - AX-BridgeService 
 
 Event viewer tip for reviewing Dynamics entries:
-In the Event viewer, right-click on **Custom Views** and select **Create Custom View**.
+In Event viewer, right-click on **Custom Views** and select **Create Custom View**.
 
 ![Create custom view](media/Create-Custom-View.png)
 
@@ -317,11 +317,11 @@ You might receive the following errors:
 
 **Steps:** During servicing if receive “Unable to download asset…” error and the details shows "The credentials supplied to the package were not recognized", check to see if ACL was removed from client certificate on orchestrator machines. 
 
-To verify,run:
-- Run .\Test-D365FOConfiguration.ps1 script on orchestrator boxes and verify ACL
+To verify, run:
+- .\Test-D365FOConfiguration.ps1 script on orchestrator boxes and verify ACL
 
 To resolve, run:
-- Run .\Set-CertificateAcls.ps1 to reset
+- .\Set-CertificateAcls.ps1 to reset
 
 ### Error
 **Error:**
@@ -1067,9 +1067,11 @@ To resolve: Restart the application package that generated the warning message. 
 This database sync error can result in deploying old platform build (platform update 12) on top of a database that had a newer build (platform update 15).
 
 To resolve this issue, note the SYSTIMEZONESVERSION value:
+
 select * from SQLSYSTEMVARIABLES where parm = 'SYSTIMEZONESVERSION'
 
 Update and set the value to what was returned in the error message:
+
 update SQLSYSTEMVARIABLES set VALUE = 12 where parm = 'SYSTIMEZONESVERSION'
 
 ## Printing randomly stops
