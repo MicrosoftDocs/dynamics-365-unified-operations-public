@@ -30,185 +30,62 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-## Set up a method of payment 
+## Set up for generating payment orders
 
-The method of payment determines the format that is used for export of payment orders. Within the payment type, you can also set up bridging accounts when reconciliation is being done. In this case, when posting payment journals, the payments are reflected in off-balance Accounts payable and banking operations. After banking reconciliation, these transactions are reversed and reflected in Accounts payable and banking accounts. To link actual accounts with payment types, in most cases, the number of payment types created equals the number of accounts that the company holds.
+Before you can generate payment orders, you need to set up the following:
+-	**Banks** and **Bank accounts** for company. Find more details in <Local settings and requisites for Bank module> <give here link to content deliverable location 148860>
+
+-	**Vendor bank accounts** and **Customer bank accounts**.
+
+    1.	In the customer or vendor card, click **Bank accounts**. 
+    2.	Create a bank account and fill all necessary information for bank account. 
+    3.	For foreign customer bank accounts, on tab **General**, in the **Foreign bank** group, in the **Bank group** field, select the code of the foreign bank with which the customer bank account is registered and in Bank account number field, enter the foreign bank account number for the account that receives payment returns.
+    4.	In the **SWIFT** field, enter the Society for Worldwide Interbank Financial Telecommunication (SWIFT) code of the bank that receives payment returns.
 
 
-1.  Click **Accounts payable** \> **Setup** \> **Payment** \> **Methods of payment**.
+-	For generating payments to vendors, set up **Method of Payment** in **Accounts payable > Payment setup > Methods of payment**. 
+For generating payment returns to customers, set up **Method of Payment** in **Accounts receivable > Payment setup > Methods of payment**.
 
-2.  Press CTRL+N to create a new line.
+For printing payment orders in Russian rubles according to legacy paper format, choose **Payment order in RUB** in the field **Export format**.
+For printing payment orders in foreign currency according to bank-specific template (which is defined in Bank account card), choose **Payment order in currency** in the field **Export format**.
 
-3.  In the **Method of payment** field, enter the code for the method of payment.
-
-4.  In the **Description** field, enter a description for the method of payment.
-
-5.  In the **Payment status** field, select the status for the payment line, which indicates the status for posting.
-
-6.  On the **General** tab, in the **Account type** field, select the account type as **Bank**.
-
-7.  In the **Payment account** field, select the bank account for payment.
-
-8.  Select the **Bridging Posting** check box.
-    
-    > [!NOTE]
-    > You can enter information in the **Bridging account** field only after you select the **Bridging Posting** check box.
-
-9.  In the **Bridging account** field, select the account number for posting in the ledger.
-
-10. In the **Bank transaction type** field, select the bank transaction type.
-
-11. On the **File formats** tab, click **Setup** to open the **File formats for methods of payment** page.
-
-12. Transfer formats from the **Available** field to the **Selected** field to generate a list of accessible formats for exporting payment orders.
-
-13. Close the form and return to the **File formats** tab in the **Methods of payment** page.
-
-14. In the **Export format** field, select the format for exporting payment orders for the specified method of payment.
-    
-
-    > [!NOTE]
-    > When using the customer-bank, the **Export format** field should show the class that handles the export of data for the payment journal to an external file in a format that corresponds to the customer-bank of the actual bank.
+<add here screenshot Payment order in RUB (screenshot 3).jpg>
 
 
 
-15. On the **Payment control** tab, select the control for the method of payment from the following list:
-    
-      - **Payment reference is mandatory** – Checks that the essential details for the payment are filled in.
-    
-      - **Payment note is mandatory** – Checks that the note for the payment is filled in.
-    
-      - **Payment ID is mandatory** – Checks that the ID for the payment is filled in.
-    
-      - **Payment specification is mandatory** – Checks that the payment specification is filled in.
-    
-      - **Check number is mandatory** – Checks that the check number is filled in.
-    
-      - **Offset account has the type bank** – Checks that the type of corresponding account is **Bank**.
-    
-      - **Bank transaction type is mandatory** – Checks that a type of bank operation is selected.
+## Generate a payment order in rubles for payment to vendor
 
-16. Press CTRL+S or close the page.
-
-
-## Set up to generate a payment order in rubles 
-
-
-1.  Click Click **Cash and bank management** \> **Common** \> **Bank accounts**. Select a bank account. On the **Action Pane**, click **Edit**.
-
-2.  On the **Currency management** tab, in the **P/O numeration** field, select a number sequence for numbering payment orders in a single account.
-    
-
-    > [!NOTE]
-    > If the number sequence is not set up, the number for the payment order will be retrieved from the Accounts payable parameters setup.
-
-
-
-3.  Press CTRL+S or close the form.
-
-4.  Click **Accounts payable** \> **Setup** \> **Payment** \> **Methods of payment**.
-
-5.  On the **File formats** tab, in the **Export format** field, select **Payment order in RUB** for export of payments.For more information, see [Set up a method of payment](./rus-payment-order-settings-processing.md).
-    
-6.  Press CTRL+S or close the form.
-
-
-## Set up a method of payment for currency transactions 
-
-
-Use the **Methods of payment - vendors** form to set up a method of payment for currency transactions.
-
-1.  Click **Accounts payable** \> **Setup** \> **Payment** \> **Methods of payment**.
-
-2.  Press CTRL+N to create a new method of payment.
-
-3.  On the **General** FastTab, in the **Bank transaction type** field, select the type of bank transaction.
-    
-    > [!NOTE]
-    > This field is available only when you select **Bank** in the **Account type** field.
-
-4.  In the **Payment account** field, select the ID of the bank account.
-
-5.  On the **File formats** FastTab, click **Setup** to open the **File formats for methods of payment** page.
-
-6.  On the **Export** tab, in the **Available** list, select **Currency transfer order**.
-
-7.  Click **\<** to move the selected export file format to the **Selected** list.
-
-8.  Close the **File formats for methods of payment** page.
-
-9.  In the **Methods of payment - vendors** page, in the **Export format** field, select **Currency transfer order** as the format for the export of payments.
-
-
-## Set up an intermediate bank account for a foreign vendor 
-
-You can use the **Vendor bank accounts** form to set up a foreign bank account for a vendor, so that you can make payments by using payment orders or payment requests. This bank account is registered with the foreign bank that is linked to the vendor account. For more information, see [Set up a foreign bank](../rus-local-settings-requisites-bank-module.md).
-
-You can also set up an intermediate Russian bank account to link to the vendor payments that are made to the foreign bank. You can specify a bank code, an account number, and a Society for Worldwide Interbank Financial Telecommunication (SWIFT) code for the foreign bank that the payments are made to.
-
-1.  Click **Accounts payable** \> **Common** \> **Vendors** \> **All vendors**.
-
-2.  Select the vendor account that is linked to the foreign bank, and then click **Set up** \> **Bank accounts** to open the **Vendor bank accounts** page.
-
-3.  Create a bank account for the vendor.
-
-4.  On the **General** FastTab, in the **Foreign bank** field group, in the **Bank groups** field, select the code of the foreign bank with which the vendor bank account is registered.
-
-5.  In the **Bank account number** field, enter the bank account number of the vendor.
-
-6.  In the **SWIFT** field, enter the SWIFT code of the bank.
-
-
- 
-
-## Generate a payment order in rubles 
-
-
-1.  Click **Accounts payable** \> **Journals** \> **Payments** \> **Payment journal**.
-
-2.  On the **Overview** tab, press CTRL+N to create a new line.
-
+**Create payment order line**.
+1.  Click **Accounts payable** \> **Payments** \> **Payment journal**.
+2.  Create new journal and click **Lines**. Create new vendor payment line. 
 3.  In the **Date** field, select the date of payment.
-
 4.  In the **Account** field, select the vendor account.
-
 5.  In the **Transaction text** field, enter text that describes the transaction.
-
 6.  In the **Debit** field, enter the sum of the payment.
-
+7.	In the **Currency** field, select the currency code.
 7.  In the **Offset account type** field, select the account type for the selected account.
-
 8.  In the **Offset account** field, select the offset account for the transaction.
-
 9.  In the **Currency** field, select the currency code.
+10. In the **Method of payment** field, select the method of payment to the vendor.
+11. In the **Agreement Id** field, select the registration number of the contract.
+12. In the **Sales tax group** and the **Item sales tax group** fields, select the tax groups for VAT calculation.
 
-10. In the **Purpose text** field, enter any text that must be reflected in the payment order.
+On tab **Bank**:
+13. In the **Bank transaction type** field, select the transaction type.
+14. In the **Account identification** field, select the bank account of the recipient.
+    
+    > [!NOTE]
+    > If the payment order is being generated for a legal representative of the vendor, the vendor account must be entered in the **Payment documented on** field. Along with this, the payment order slip will refer to the bank of the vendor that is specified in the **Payment documented on** field, but the transaction will be performed for the vendor that is specified in the **Account** field.
+
+On tab **Payment order**:
+15. In the **Purpose text** field, enter any text that must be reflected in the payment order.
     
     > [!NOTE]
     > If you click **VAT in payment order**, the text, including the VAT amount in the **Purpose text** field, will be entered.
-
-11. In the **Method of payment** field, select the method of payment to the vendor.
-
-12. On the **General** tab, in the **Contracts group** field, select the contract group.
-
-13. In the **DVR** field, select the registration number of the contract.
-
-14. In the **Sales tax group** and the **Item sales tax group** fields, select the tax groups for VAT calculation.
-
-15. On the **Bank** tab, in the **Bank transaction type** field, select the transaction type.
-
-16. In the **Account identification** field, select the bank account of the recipient.
     
-    > [!NOTE]
-    > If the payment order is being generated for a legal representative of the vendor, the code must be entered in the **Payment documented on** field. Along with this, the payment order slip will refer to the bank of the vendor that is specified in the **Payment documented on** field, but the transaction will be performed for the vendor that is specified in the **Account** field.
+16. Fill the following fields to be printed in respective boxes in payment order to vendor or tax authority: Order of payment, Number status, Budget revenue code, Origin payment, Payment type , UCI, Information about period: Period code, Period number, Year, Period date.
 
-17. On the **Payment order** tab, in the **Order of payment** field, specify the order of payment.
-
-18. In the **Number status** field, specify the number status of the payment.
-
-19. In the **Origin payment** field, specify the origin of the payment.
-
-20. In the **Payment type** field, specify the type of payment.
+<add here screenshot Vendor payments (screenshot 4).jpg>
 
 21. Click **Functions**, and then select **Generate payments** to open the **Generate payments** form.
 
