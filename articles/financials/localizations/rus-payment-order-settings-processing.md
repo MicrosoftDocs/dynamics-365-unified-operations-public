@@ -25,7 +25,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-## Payment order setup and processing
+## Payment order setup and processing (Russia)
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,7 +41,7 @@ Before you can generate payment orders, you need to set up the following:
     3.	For foreign customer bank accounts, on tab **General**, in the **Foreign bank** group, in the **Bank group** field, select the code of the foreign bank with which the customer bank account is registered and in **Bank account number** field, enter the foreign bank account number for the account that receives payment returns.
     4.	In the **SWIFT** field, enter the Society for Worldwide Interbank Financial Telecommunication (SWIFT) code of the bank that receives payment returns.
 
-     <add here screenshot Vendor bank account (screenshot 5)>
+     [![Vendor bank account](media/rus-vendor-bank-account-screenshot-5.jpg)]	
 
 For generating payments to vendors, set up **Method of Payment** in **Accounts payable > Payment setup > Methods of payment**. 
 
@@ -50,13 +50,13 @@ For generating payment returns to customers, set up **Method of Payment** in **A
 To set up printing payment orders in Russian rubles according to legacy paper format, in the **Method of payment** form, choose **Payment order in RUB** in the field **Export format**.
 To set up printing payment orders in foreign currency according to bank-specific template (which is defined in Bank account card), choose **Payment order in currency** in the field **Export format**.
 
-<add here screenshot Payment order in RUB (screenshot 3).jpg>
-
+[![Payment order in currency](media/rus-payment-order-rub-screenshot 3.jpg)]	
 
 
 ## Generate a payment order in rubles for payment to vendor
 
-**Create payment order line**.
+### Create payment order lines
+Before you can generate a payment order, you must create payment order lines. To do this, complete the following steps.
 1.  Click **Accounts payable** \> **Payments** \> **Payment journal**.
 2.  Create new journal and click **Lines**. Create new vendor payment line. 
 3.  In the **Date** field, select the date of payment.
@@ -70,48 +70,42 @@ To set up printing payment orders in foreign currency according to bank-specific
 10. In the **Method of payment** field, select the method of payment to the vendor.
 11. In the **Agreement Id** field, select the registration number of the contract.
 12. In the **Sales tax group** and the **Item sales tax group** fields, select the tax groups for VAT calculation.
-
-On tab **Bank**:
-
-13. In the **Bank transaction type** field, select the transaction type.
+13. On the **Bank** FastTab, in the **Bank transaction type** field, select the transaction type.
 14. In the **Account identification** field, select the bank account of the recipient.
     
-    > [!NOTE]
+    > [!IMPORTANT]
     > If the payment order is being generated for a legal representative of the vendor, the vendor account must be entered in the **Payment documented on** field. Along with this, the payment order slip will refer to the bank of the vendor that is specified in the **Payment documented on** field, but the transaction will be performed for the vendor that is specified in the **Account** field.
 
-On tab **Payment order**:
-
-15. In the **Purpose text** field, enter any text that must be reflected in the payment order.
+15. On the **Payment order** FastTab, in the **Purpose text** field, enter any text that must be reflected in the payment order.
     
-    > [!NOTE]
     > If you click **VAT in payment order**, the text, including the VAT amount in the **Purpose text** field, will be entered.
     
 16. Fill the following fields to be printed in respective boxes in payment order to vendor or tax authority: Order of payment, Number status, Budget revenue code, Origin payment, Payment type , UCI, Information about period: Period code, Period number, Year, Period date.
 
-<add here screenshot Vendor payments (screenshot 4).jpg>
+[![Vendor payments](media/rus-vendor-payments-screenshot-4.jpg)]
 
-**Generate payment order**
+### Generate payment order
+After you've created payment order lines, you can generate the payment order. To do this, complete the following steps.
 
-17. Click **Functions**, and then select **Generate payments** to open the **Generate payments** form.
-18. In the **Method of payment** field, select the method of payment or in the **Export format** field, select **Payment order in RUB**.
-19. In the **Bank account** field, select the bank account from which the payment is to be made.
-20. Click **OK**. In the **Payment order setup** form enable **Document** to print the payment order and enable **Proxy text** to print the text.
-21. Click **OK**. The payment order is generated, and the payment status of the appropriate payment journal line is changed to **Sent**.
+1. On the **Payment journal** page, click **Functions**, and then select **Generate payments** to open the **Generate payments** page.
+2. In the **Method of payment** field, select the method of payment or in the **Export format** field, select **Payment order in RUB**.
+3. In the **Bank account** field, select the bank account from which the payment is to be made.
+4. Click **OK**. 
+5. On the **Payment order setup** page,  enable **Document** to print the payment order and enable **Proxy text** to print the text.
+6. Click **OK**. The payment order is generated, and the payment status of the appropriate payment journal line is changed to **Sent**.
 
-**Void payment order**
+### Void payment order
 
 You can void payment order in the payment journal though **Functions > Void payment order**. The value for the voided payment order in the **Payment status** field changed to **None** and the voided payment order is deleted from the registry of payment orders.
 
-**Reprint payment order**
+### Reprint payment order
 
-You can reprint a payment order through **Print > Print payment order**
-You can also reprint payment orders from the **Bank transactions** form. Select the voucher for the payment order, click **Print > Payment order** to print the document.
+You can reprint a payment order through **Print > Print payment order**. You can also reprint payment orders from the **Bank transactions** form. Select the voucher for the payment order, click **Print > Payment order** to print the document.
 
 
-**View generated payment orders**
+### View generated payment orders
 
-You can review generated payment orders in the **Registry of payment orders** form (**Accounts payable > Inquiries > Payment > Payment order register**).
-On the **Essential elements** tab, review the attributes of the payer and the recipient.
+You can review generated payment orders on the **Registry of payment orders** page (**Accounts payable > Inquiries > Payment > Payment order register**). On the **Essential elements** tab, review the attributes of the payer and the recipient.
 
 
 ## Generate payment order for a payment return to customer
@@ -124,4 +118,4 @@ You can generate payment order for money return to customer.
 4.  In the **Payment documented on** field, select the customer account that receives the payment return.
 5.  Click **Functions** \> **Generate payments** to generate payment order.
 
-You can review generated payment orders in the **Registry of payment orders** form (**Accounts receivable > Inquiries > Payment > Payment order register**).
+You can review generated payment orders for customers on the **Registry of payment orders** page (**Accounts receivable > Inquiries > Payment > Payment order register**).
