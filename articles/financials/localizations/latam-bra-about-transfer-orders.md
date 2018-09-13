@@ -5,7 +5,7 @@ title: Transfer orders for Brazil
 description: This topic provides information about transfer orders for Brazil. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 6/5/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,14 +28,14 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# About transfer orders 
+# Transfer orders for Brazil
 
-You can transfer inventory items between warehouses that are located at different fiscal establishments by using transfer orders. You can transfer inventory items to another fiscal establishment that is in the same state or in another state.
+You can use transfer orders to transfer inventory items between warehouses that are located at different fiscal establishments. You can also transfer inventory items to another fiscal establishment.
 
 When you transfer the items between different fiscal establishments, the following transfer fiscal documents are issued or received:
 
   - Outbound fiscal document – Issued when you ship items to a warehouse that is located at a different fiscal establishment.
-
+  
   - Inbound fiscal document – Received when you receive items from a warehouse that is located at a different fiscal establishment.
 
 You can do the following to transfer items between fiscal establishments by using transfer orders:
