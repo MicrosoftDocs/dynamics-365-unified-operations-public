@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Advance holder transactions
-description: Learn how to work with advance holder transactions in Microsoft Dynamics 365 for Finance and Operations.
-author: ShylaThompson
+title:  Partial fixed asset disassembly (liquidation)
+description: 
+author: v-oloski
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,31 +13,29 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: HcmWorkerAdvHolderTableListPage_RU
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 262554
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+ms.custom: 
+ms.search.region: Russia
 # ms.search.industry: 
-ms.author: v-elgolu
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.author: v-oloski
+ms.search.validFrom: 2018-10-28
+ms.dyn365.ops.version: 8.1
 
 ---
 
-# Advance holder transactions
+#  Partial fixed asset disassembly (liquidation)
 
 [!include [banner](../includes/banner.md)]
 
-## Partial fixed asset disassembly (liquidation)
-
 A partial liquidation of fixed asset objects can result in a change to the original value of the asset in compliance with RF law (PBU 6/01). Furthermore, the components removed for disassembly can be accounted for as spare parts. The inventory remaining after the disposal of an asset is posted at its actual cost price, which is determined on the basis of the current market value of the inventory on the date of posting to accounting.
 
-### Configure transaction profiles
+## Configure transaction profiles
 
 To create the partial fixed asset disassembly transactions, you must configure
 the transaction profiles:
@@ -133,19 +131,19 @@ This method is based on the assumption that all revaluations are assessed in pro
 
 For every component withdrawn from the fixed asset composition, the balance of the component is calculated using the following formula.
 
-<p>  S<sub>j</sub> = S<sub>bal</sub>(S<sub>j,PIO</sub>/S<sub>PIO</sub>) </p>
-<p>S<sub> j,PIO </sub> = the initial value of withdrawn components </p>
+<p>  <strong><i>S<sub>j</sub> = S<sub>bal</sub>(S<sub>j,PIO</sub>/S<sub>PIO</sub>)</i></strong> </p>
+<p><strong><i>S<sub> j,PIO </sub></i></strong> = the initial value of withdrawn components </p>
   
 
-<p> S<sub>bal</sub> = the fixed asset balance value, which is determined as the sum of acquisition transactions, revaluation transactions, major refurbishment and partial take-down transactions. Partial take-down transactions are listed with the "-" sign and are automatically deducted from the total. </p>
+<p> <strong><i>S<sub>bal</sub></i></strong> = the fixed asset balance value, which is determined as the sum of acquisition transactions, revaluation transactions, major refurbishment and partial take-down transactions. Partial take-down transactions are listed with the "-" sign and are automatically deducted from the total. </p>
 
-<p> S<sub>PIO</sub> = the initial fixed asset cost. </p>
+<p> <strong><i>S<sub>PIO</sub></i></strong> = the initial fixed asset cost. </p>
 
 The accumulated depreciation for components is calculated in the same way as the original value where the following is true.
 
-<p> A<sub>j</sub> = A<sub>bal</sub>(S<sub>j,PIO</sub>/S<sub>PIO</sub>) </p>
+<p> <strong><i>A<sub>j</sub> = A<sub>bal</sub>(S<sub>j,PIO</sub>/S<sub>PIO</sub>)</i></strong> </p>
 
-<p> A<sub>bal</sub> = the fixed asset value depreciation, which is determined as the sum of all transactions calculating fixed asset depreciation, fixed asset depreciation revaluation transactions, and partial dismantlement transactions. The calculated value is rounded off in accordance with the configurations of Fixed assets. </p>
+<p> <strong><i>A<sub>bal</sub></i></strong> = the fixed asset value depreciation, which is determined as the sum of all transactions calculating fixed asset depreciation, fixed asset depreciation revaluation transactions, and partial dismantlement transactions. The calculated value is rounded off in accordance with the configurations of Fixed assets. </p>
 
 The component depreciated cost is calculated as the difference between the component balance value and the accumulated component depreciation.
 
@@ -213,22 +211,35 @@ After completing transactions 1-9, the fixed asset balance value is
 
 >   Item 3 = 1167.39 \* 2500 / (2000 + 2500)\* = 648.55
 
-#### **The iterate method**
+#### The iterate method
 
-The method is based on the fact that the fixed asset revaluation transaction
-does not revalue all components in proportion to their original value, but only
-to the sum that is included at the time of the revaluation. Furthermore, the
-proportional distribution method remains in force.
+The method is based on the fact that the fixed asset revaluation transaction does not revalue all components in proportion to their original value, but only to the sum that is included at the time of the revaluation. Furthermore, the proportional distribution method remains in force.
 
-Accordingly, for every component subject to withdrawal from the fixed asset
-composition, a table is created that includes all revaluation transactions and
-major refurbishments are calculated after acquiring the component. The following
-table is based on the example of Item 2.
+Accordingly, for every component subject to withdrawal from the fixed asset composition, a table is created that includes all revaluation transactions and major refurbishments are calculated after acquiring the component. The following table is based on the example of Item 2.
 
-| i | Revaluation amount, | Fixed asset balance value before revaluation, | Original component cost, | Cost after revaluation, |
-|---|---------------------|-----------------------------------------------|--------------------------|-------------------------|
-| 1 | 1500                | 3000                                          | 2000                     | = 3000                  |
-| 2 | 2000                | 5500\*                                        | = 3000                   | = 4090.91               |
+<table>
+    <tr>
+        <td>i</td>
+        <td>Revaluation amount, </td>
+        <td>Fixed asset balance value before revaluation,</td>
+        <td>Original component cost,</td>
+        <td>Cost after revaluation,</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1500</td>
+        <td>3000</td>
+        <td>2000</td>
+        <td>3000</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2000</td>
+        <td>5500* </td>
+        <td>= 3000</td>
+        <td>= 4090.91 </td>
+    </tr>
+    </table>
 
 \* The calculated fixed asset balance value includes the fixed asset revaluation amount caused by a partial disassembly of the asset.
 
