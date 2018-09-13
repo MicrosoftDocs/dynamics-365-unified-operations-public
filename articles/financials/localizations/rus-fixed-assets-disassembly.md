@@ -220,24 +220,24 @@ Accordingly, for every component subject to withdrawal from the fixed asset comp
 <table>
     <tr>
         <td>i</td>
-        <td>Revaluation amount, </td>
-        <td>Fixed asset balance value before revaluation,</td>
-        <td>Original component cost,</td>
-        <td>Cost after revaluation,</td>
+        <td>Revaluation amount, <strong><i>Adj(i)</i></strong></td>
+        <td>Fixed asset balance value before revaluation, <strong><i>S<sub>bal</sub>(i)</i></strong></td>
+        <td>Original component cost, <strong><i>S<sub>src</sub>(i)</i></strong></td>
+        <td>Cost after revaluation, <strong><i>S<sub>dst</sub>(i)</i></strong></td>
     </tr>
     <tr>
         <td>1</td>
         <td>1500</td>
         <td>3000</td>
         <td>2000</td>
-        <td>3000</td>
+        <td><strong><i>S<sub>dst</sub>(i) = S<sub>src</sub>(i)(1 + (Adj(i)/S<sub>bal</sub>(i))) = 3000 </i></strong></td>
     </tr>
     <tr>
         <td>2</td>
         <td>2000</td>
         <td>5500* </td>
-        <td>= 3000</td>
-        <td>= 4090.91 </td>
+        <td>= <strong><i>S<sub>src</sub>(i) = S<sub>dst</sub>(i-1) = 3000 </i></strong></td>
+        <td>= <strong><i>S<sub>dst</sub>(i) = S<sub>src</sub>(i)(1 + (Adj(i)/S<sub>bal</sub>(i))) = 3000 </i></strong> = 4090.91 </td>
     </tr>
     </table>
 
