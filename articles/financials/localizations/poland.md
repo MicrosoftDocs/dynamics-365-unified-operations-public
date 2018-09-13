@@ -39,6 +39,7 @@ This topic provides links to documentation resources for Poland.
 - [Duplicate sales invoice numbering](emea-pol-sales-invoice-duplicates-numbering.md)
 - [Fixed asset depreciation](emea-pol-fixed-assets-depreciation.md)
 - [Fixed asset disposal functionality extension](emea-pol-fixed-asset-disposal-functionality-extension.md)
+- [Foreign currency revaluation](emea-foreign-currency-revaluation.md)
 - [Returnable packaging](emea-pol-returnable-packages.md)
 - [Sales tax reports](emea-pol-sales-tax-reports.md)
 - [Standard audit file](emea-pol-standard-audit-file-saf.md)
