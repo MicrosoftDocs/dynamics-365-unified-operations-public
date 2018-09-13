@@ -61,11 +61,8 @@ the transaction profiles:
 
 3.  Select a line with the item and click **Functions \> Add to remains**.
 4.  In the **Add** field of the **Add to remains** form, enter the remaining quantity.
-
     > The **Available quantity** field displays the quantity for this item is currently part of the fixed asset.
-
 5.  Click **OK**.
-
     >   The lines marked in the upper pane of the form are transferred to the lower pane for a partial disassembly, which will be posted to the warehouse. In the lower pane, a component list is for the partial disassembly is displayed. In the upper pane of the form in the **Current quantity** column, the component quantity is displayed. This quantity remains in the fixed asset after the partial disassembly, and the of the value in the **Current quantity** field is updated.
 
 6.  In the bottom pane form, click **Functions \> Calculating prices**. The balance value depreciation and depreciated cost are calculated for every component that is being written off.
@@ -77,9 +74,7 @@ the transaction profiles:
 
 8.  Set the **Round off market value** to **Yes**, if the cost must be rounded to an integer value.
 9.  Click **OK**. The cost of the item, when it is returned to the warehouse, is calculated. You can update the market value manually, if needed.
-
     > Components are posted to the warehouse with respect to either their calculated or market value, which is determined by the commission during fixed asset disassembly. The difference between the market and calculated values is the profit or loss amount in the result of the disassembly of the asset.
-
 10.  On the **Inventory dimension** tab select warehouse dimensions for posting the item to the warehouse
 11.  To create the write-off disassembly transaction, click **Fixed Assets** \> **FA journal.**
 12.  Press Ctrl + N to create a new journal.
@@ -132,9 +127,9 @@ The accumulated depreciation for components is calculated in the same way as the
         <td> Additional information </td>
     </tr>
     <tr>
-        <td> <p> <strong><i>A<sub>j</sub> = A<sub>bal</sub>(S<sub>j,PIO</sub>/S<sub>PIO</sub>)</i></strong> </p>
+        <td> <p> <strong>A<sub>j</sub> = A<sub>bal</sub>(S<sub>j,PIO</sub>/S<sub>PIO</sub>)</strong> </p>
         </td>
-        <td> <p> <strong><i>A<sub>bal</sub></i></strong> = the fixed asset value depreciation, which is determined as the sum of all transactions calculating fixed asset depreciation, fixed asset depreciation revaluation transactions, and partial dismantlement transactions. The calculated value is rounded off in accordance with the configurations of Fixed assets. </p> </td>
+        <td> <p> <strong>A<sub>bal</sub></strong> = the fixed asset value depreciation, which is determined as the sum of all transactions calculating fixed asset depreciation, fixed asset depreciation revaluation transactions, and partial dismantlement transactions. The calculated value is rounded off in accordance with the configurations of Fixed assets. </p> </td>
     </tr>
     </table>
 
@@ -201,24 +196,24 @@ Accordingly, for every component subject to withdrawal from the fixed asset comp
 <table>
     <tr>
         <td>i</td>
-        <td>Revaluation amount, <strong><i>Adj(i)</i></strong></td>
-        <td>Fixed asset balance value before revaluation, <strong><i>S<sub>bal</sub>(i)</i></strong></td>
-        <td>Original component cost, <strong><i>S<sub>src</sub>(i)</i></strong></td>
-        <td>Cost after revaluation, <strong><i>S<sub>dst</sub>(i)</i></strong></td>
+        <td>Revaluation amount, <strong>Adj(i)</strong></td>
+        <td>Fixed asset balance value before revaluation, <strong><i>S<sub>bal</sub>(i)</strong></td>
+        <td>Original component cost, <strong>S<sub>src</sub>(i)</strong></td>
+        <td>Cost after revaluation, <strong>S<sub>dst</sub>(i)</strong></td>
     </tr>
     <tr>
         <td>1</td>
         <td>1500</td>
         <td>3000</td>
         <td>2000</td>
-        <td><strong><i>S<sub>dst</sub>(i) = S<sub>src</sub>(i)(1 + (Adj(i)/S<sub>bal</sub>(i))) = 3000 </i></strong></td>
+        <td><strong>S<sub>dst</sub>(i) = S<sub>src</sub>(i)(1 + (Adj(i)/S<sub>bal</sub>(i))) = 3000</strong></td>
     </tr>
     <tr>
         <td>2</td>
         <td>2000</td>
         <td>5500* </td>
-        <td>= <strong><i>S<sub>src</sub>(i) = S<sub>dst</sub>(i-1) = 3000 </i></strong></td>
-        <td>= <strong><i>S<sub>dst</sub>(i) = S<sub>src</sub>(i)(1 + (Adj(i)/S<sub>bal</sub>(i))) = 4090.91 </i></strong> </td>
+        <td>= <strong>S<sub>src</sub>(i) = S<sub>dst</sub>(i-1) = 3000 </strong></td>
+        <td>= <strong>S<sub>dst</sub>(i) = S<sub>src</sub>(i)(1 + (Adj(i)/S<sub>bal</sub>(i))) = 4090.91</strong> </td>
     </tr>
     </table>
 
