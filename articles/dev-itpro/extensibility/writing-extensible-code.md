@@ -109,6 +109,6 @@ The following external resources can help you make sure that you're writing clea
 
 + [SOLID Principles](https://en.wikipedia.org/wiki/SOLID)
 + [Pluralsight - Clean Code: Writing Code for Humans](https://www.pluralsight.com/courses/writing-clean-code-humans)
-+ [Clean Code: A Handbook of Agile Software Craftsmanship](https:://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
++ [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 + [Clean Coders](https://cleancoders.com/)
 + [Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
