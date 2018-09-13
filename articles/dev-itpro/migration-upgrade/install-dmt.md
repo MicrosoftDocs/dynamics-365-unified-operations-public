@@ -5,7 +5,7 @@ title: AX 2009 upgrade - Install the Data migration tool
 description: This topic explains how to set up the Data migration tool (DMT) so that you can migrate your data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
-ms.date: 09/14/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -72,14 +72,14 @@ There are two ways to install the DMT. You can use the combined XPO file or an a
 ### Combined XPO file
 1. Extract the combined XPO file from **DMT_V1.0\CombinedXPO**.
 2. Import the combined XPO file into AX 2009.
-3. Copy the label file from **DMT-December\_2017\_Release\\Label file** to the **Program Files\\Microsoft Dynamics AX\\50\\Application\\Appl\\<NameOfYourDeployment\>** folder.
+3. Copy the label file from **DMT_V1.0\Label file** to the **Program Files\\Microsoft Dynamics AX\\50\\Application\\Appl\\<NameOfYourDeployment\>** folder.
 4. Restart the Application Object Server (AOS) instance.
 5. In AX 2009, select **Data migration** \> **Setup** \> **Compile and synchronize DMT application**.
 
 Note that the combined XPO file is imported into the layer that the user is signed in to.
 
 ### Application hotfix
-1. Go to **DMT_V1.0\_Release\\ApplicationHotfix\\DynamicsAX2009-KB4010403-SP1**, right-click **setup.exe**, and then select **Run**.
+1. Go to **DMT_V1.0\\ApplicationHotfix\\DynamicsAX2009-KB4010403-SP1**, right-click **setup.exe**, and then select **Run**.
 2. In AX 2009, in the Application Object Tree (AOT), notice that the **LegalEntityId** field has been added to the **DMTCustomerAddressView** and **DMTVendorAddressView** views.
 3. Select **Data migration** \> **Setup** \> **Compile and synchronize DMT application**.
 
