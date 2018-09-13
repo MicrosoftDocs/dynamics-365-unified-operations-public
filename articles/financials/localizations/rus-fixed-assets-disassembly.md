@@ -50,82 +50,58 @@ the transaction profiles:
 ### Create a partial fixed asset disassembly transaction
 
 1.  Click the **Fixed asset (Russia) \>Fixed Assets**
-
 2.  Select the fixed asset and click **FIXED ASSET \>Componentry**.
 
-The information for the item that you selected is displayed in the following
-fields in the upper pane:
+    > The information for the item that you selected is displayed in the following fields in the upper pane:
 
--   **Date of transaction** field - the fixed asset assembly date.
+    -   **Date of transaction** field - the fixed asset assembly date.
+    -   The **Initial quantity** field -the quantity entered in the during assembly.
+    -   **Current quantity** field - the quantity currently entered for the fixed asset.
+    -   **Cost** field - the component cost.
 
--   The **Initial quantity** field -the quantity entered in the during assembly.
+3.  Select a line with the item and click **Functions \> Add to remains**.
+4.  In the **Add** field of the **Add to remains** form, enter the remaining quantity.
 
--   **Current quantity** field - the quantity currently entered for the fixed
-    asset.
+    > The **Available quantity** field displays the quantity for this item is currently part of the fixed asset.
 
--   **Cost** field - the component cost.
+5.  Click **OK**.
 
-1.  Select a line with the item and click the **Functions \> Add to remains**
-    button.
+    >   The lines marked in the upper pane of the form are transferred to the lower pane for a partial disassembly, which will be posted to the warehouse. In the lower pane, a component list is for the partial disassembly is displayed. In the upper pane of the form in the **Current quantity** column, the component quantity is displayed. This quantity remains in the fixed asset after the partial disassembly, and the of the value in the **Current quantity** field is updated.
 
-2.  In the **Add** field of the **Add to remains** form, enter the remaining
-    quantity.
-
-The **Available quantity** field displays the quantity for this item is
-currently part of the fixed asset.
-
-1.  Click **OK**.
-
->   The lines marked in the upper pane of the form are transferred to the lower pane for a partial disassembly, which will be posted to the warehouse. In the lower pane, a component list is for the partial disassembly is displayed. In the upper pane of the form in the **Current quantity** column, the component quantity is displayed. This quantity remains in the fixed asset after the partial disassembly, and the of the value in the **Current quantity** field is updated.
-
-1.  In the bottom pane form, click **Functions \> Calculating prices**. The balance value depreciation and depreciated cost are calculated for every component that is being written off.
-
-2.  Select a **Calculating prices** method from the following options:
+6.  In the bottom pane form, click **Functions \> Calculating prices**. The balance value depreciation and depreciated cost are calculated for every component that is being written off.
+7.  Select a **Calculating prices** method from the following options:
 
     -   **Proportionate** This method is based on the assumption that all revaluations are assessed in proportion to the original value without taking into account the component acquisition date.
 
     -   **Iterative** - The balance value calculation method for the component is based on the fact that the fixed asset revaluation transaction does not include all components in proportion to its original value, but only to the value of the components that is included at the time of the revaluation transaction.
 
-3.  Set the **Round off market value** to **Yes**, if the cost must be rounded to an integer value.
+8.  Set the **Round off market value** to **Yes**, if the cost must be rounded to an integer value.
+9.  Click **OK**. The cost of the item, when it is returned to the warehouse, is calculated. You can update the market value manually, if needed.
 
-4.  Click **OK**. The cost of the item, when it is returned to the warehouse, is calculated. You can update the market value manually, if needed.
+    > Components are posted to the warehouse with respect to either their calculated or market value, which is determined by the commission during fixed asset disassembly. The difference between the market and calculated values is the profit or loss amount in the result of the disassembly of the asset.
 
->   Components are posted to the warehouse with respect to either their calculated or market value, which is determined by the commission during fixed asset disassembly. The difference between the market and calculated values is the profit or loss amount in the result of the disassembly of the asset.
+10.  On the **Inventory dimension** tab select warehouse dimensions for posting the item to the warehouse
+11.  To create the write-off disassembly transaction, click **Fixed Assets** \> **FA journal.**
+12.  Press Ctrl + N to create a new journal.
+13.  Click the **Lines** button and then New button to create lines to record the write-off disassembly transaction.
+14.  In the **Add to journal** form, select the **Partial dismantlement** operation type.
+15.  Enter the transaction date in the **Date** field.
+16.  Click **OK**. The partial fixed asset disassembly lines are created in the journal.
+    > The balance cost disposal transactions, depreciation, depreciated cost, posting components at market value to the warehouse, and profit or loss from a write-off are created automatically in the main and tax value models. You must enter the transaction details for the other value models for this fixed asset manually.
 
-1.  On the **Inventory dimension** tab select warehouse dimensions for posting the item to the warehouse
-
-2.  To create the write-off disassembly transaction, click **Fixed Assets** \> **FA journal.**
-
-3.  Press Ctrl + N) to create a new journal.
-
-4.  Click the **Lines** button and then New button to create lines to record the write-off disassembly transaction.
-
-5.  In the **Add to journal** form, select the **Partial dismantlement** operation type.
-
-6.  Enter the transaction date in the **Date** field.
-
-7.  Click **OK**. The partial fixed asset disassembly lines are created in the journal.
-
-The balance cost disposal transactions, depreciation, depreciated cost, posting components at market value to the warehouse, and profit or loss from a write-off are created automatically in the main and tax value models. You must enter the transaction details for the other value models for this fixed asset manually.
-
-1.  Click **Functions \> Show invisible** to display profit and loss.
-
-2.  Click **Post \> Post**. Transactions are created in the ledger and fixed asset account, and the item is posted to the warehouse.
-
-The partial dismantlement transaction is displayed in **Acquisition adjustment of partial dismantlement** and **Depreciation adjustment of partial dismantlement** fields in the **Balance by FA** form (Fixed asset (Russia) \> Value models \> Balance).
-
-As the result of a partial fixed asset disassembly with a loss, a line in the **Deferrals** form (Ledger/deferrals) is created if the corresponding depreciated group has been set up.
+17.  Click **Functions \> Show invisible** to display profit and loss.
+18.  Click **Post \> Post**. Transactions are created in the ledger and fixed asset account, and the item is posted to the warehouse.
+    > The partial dismantlement transaction is displayed in **Acquisition adjustment of partial dismantlement** and **Depreciation adjustment of partial dismantlement** fields in the **Balance by FA** form (Fixed asset (Russia) \> Value models \> Balance).
+    > As the result of a partial fixed asset disassembly with a loss, a line in the **Deferrals** form (Ledger/deferrals) is created if the corresponding depreciated group has been set up.
 
 > [!NOTE] 
 > It is possible to add an item in the low panel manually, even if this item is not included in the fixed asset. A fixed asset may be put into operation without componentry but may be dismantled to different items.
 
-### Calculating prices
+## Calculating prices
 
-This section contains examples and mathematical equations.
+This section contains examples and mathematical equations. There are two methods used to calculate the price of an asset. By default. the component depreciated cost is adopted as the cost value.
 
-There are two methods used to calculate the price of an asset. By default. the component depreciated cost is adopted as the cost value.),
-
-#### The proportional method
+### The proportional method
 
 This method is based on the assumption that all revaluations are assessed in proportion to the original value without taking into account the component acquisition date.
 
@@ -169,49 +145,37 @@ Example of calculating the component balance value:
 
 -   The fixed asset balance depreciation was 1000
 
-Therefore, the balance value of component Item 1 was 7000 \* 1000 / 5500 =
-1272.73, and the accumulated depreciation for component Item 1 was 1000 \* 1000
-/ 5500 = 181.82.
+Therefore, the balance value of component Item 1 was 7000 \* 1000 / 5500 = 1272.73, and the accumulated depreciation for component Item 1 was 1000 \* 1000 / 5500 = 181.82.
 
 After completing transactions 1-7, the balance value of the component was:
 
--   Item 1 = 1272.73 (the component was disposed with the specified original
-    cost)
-
+-   Item 1 = 1272.73 (the component was disposed with the specified original     cost)
 -   Item 2 = 2545.45
-
 -   Item 3 = 3181.82
 
 The accumulated component depreciation was:
 
--   Item 1 = 181.82 (the component was disposed with the specified accumulated
-    depreciation);
-
+-   Item 1 = 181.82 (the component was disposed with the specified accumulated depreciation);
 -   Item 2 = 363.64
-
 -   Item 3 = 454.54
 
 After completing transactions 1-9, the fixed asset balance value is
 
 -   1000 + 2000 + 1500 + 2500 + 2000 – 1272.73 = 7727.27
 
--   The accumulated fixed asset depreciation is 700 + 300 + 349.21 – 181.82 =
-    1167.39
+-   The accumulated fixed asset depreciation is 700 + 300 + 349.21 – 181.82 = 1167.39
 
--   The original cost is 2000 + 2500 (at the time of calculating, the fixed
-    asset consists of component Item 2 and Item 3 only)
+-   The original cost is 2000 + 2500 (at the time of calculating, the fixed asset consists of component Item 2 and Item 3 only)
 
->   Item 2 = 7727.27 \* 2000 / (2000 + 2500)\* = 3434.34
-
->   Item 3 = 7727.27 \* 2500 / (2000 + 2500)\* = 4292.93
+    >   Item 2 = 7727.27 \* 2000 / (2000 + 2500)\* = 3434.34
+    >   Item 3 = 7727.27 \* 2500 / (2000 + 2500)\* = 4292.93
 
 -   Accumulated component depreciation:
 
->   Item 2 = 1167.39 \* 2000 / (2000 + 2500)\* = 518.84
+    >   Item 2 = 1167.39 \* 2000 / (2000 + 2500)\* = 518.84
+    >   Item 3 = 1167.39 \* 2500 / (2000 + 2500)\* = 648.55
 
->   Item 3 = 1167.39 \* 2500 / (2000 + 2500)\* = 648.55
-
-#### The iterate method
+### The iterate method
 
 The method is based on the fact that the fixed asset revaluation transaction does not revalue all components in proportion to their original value, but only to the sum that is included at the time of the revaluation. Furthermore, the proportional distribution method remains in force.
 
@@ -237,7 +201,7 @@ Accordingly, for every component subject to withdrawal from the fixed asset comp
         <td>2000</td>
         <td>5500* </td>
         <td>= <strong><i>S<sub>src</sub>(i) = S<sub>dst</sub>(i-1) = 3000 </i></strong></td>
-        <td>= <strong><i>S<sub>dst</sub>(i) = S<sub>src</sub>(i)(1 + (Adj(i)/S<sub>bal</sub>(i))) = 3000 </i></strong> = 4090.91 </td>
+        <td>= <strong><i>S<sub>dst</sub>(i) = S<sub>src</sub>(i)(1 + (Adj(i)/S<sub>bal</sub>(i))) = 4090.91 </i></strong> </td>
     </tr>
     </table>
 
@@ -255,28 +219,46 @@ In the example, the component balance value after revaluation transaction 1 is 3
 
 The calculation of added component depreciation is equal to the balance value calculation. The depreciation revaluation and depreciation accrual transactions are, in this case, identical to the revaluation transaction
 
-A table is created for every component withdrawn from the fixed asset composition. The lines of thetable include all depreciation accrual and depreciation revaluation transactions completed after acquisition,(with the exception of depreciation revaluation transactions triggered by disassembly transactions. Refer to the following table.
+A table is created for every component withdrawn from the fixed asset composition. The lines of the table include all depreciation accrual and depreciation revaluation transactions completed after acquisition with the exception of depreciation revaluation transactions triggered by disassembly transactions. Refer to the following table.
 
-| i | Depreciation (or revaluation) amount, | The fixed asset balance value at the time of depreciation/depreciation revaluation | Component cost, |          |
-|---|---------------------------------------|------------------------------------------------------------------------------------|-----------------|----------|
-| 1 | 300 – depreciation                    | 4500                                                                               | 3000            | = 200    |
-| 2 | 700 – depreciation                    | 7000                                                                               | 3000            | = 500    |
-| 3 | 349.21 – revaluation                  | 5500                                                                               | 3000            | = 690.48 |
+<table>
+    <tr>
+        <td>i</td>
+        <td>Depreciation (or revaluation) amount, <strong><i>Acq(i)</i></strong></td>
+        <td>The fixed asset balance value at the time of depreciation/depreciation revaluation</td>
+        <td>Component cost, <strong><i>S<sub>dst</sub>(i)</i></strong></td>
+        <td></td>
+    </tr>
+        <tr>
+        <td>1</td>
+        <td>300 – depreciation</td>
+        <td>4500</td>
+        <td>3000</td>
+            <td><strong><i>A(i) = A(i-1) + S<sub>dst</sub>(i)*(Acq(i)/S<sub>bal</sub>) = 200</i></strong></td>
+    </tr>
+        <tr>
+        <td>2</td>
+        <td>700 – depreciation</td>
+        <td>7000</td>
+        <td>3000</td>
+        <td><strong><i>A(i) = A(i-1) + S<sub>dst</sub>(i)*(Acq(i)/S<sub>bal</sub>) = 500</i></strong></td>
+    </tr>
+        <tr>
+        <td>3</td>
+        <td>349.21 – revaluation</td>
+        <td>5500</td>
+        <td>3000</td>
+        <td><strong><i>A(i) = A(i-1) + S<sub>dst</sub>(i)*(Acq(i)/S<sub>bal</sub>) = 690.48</i></strong></td>
+    </tr>
+    </table>
+
 
 For the first depreciation line, value A(i-1) is equal 0.
 
-The accumulated component depreciation calculation is based on the component
-balance value calculated. The balance value calculation can be combined with the
-depreciation calculation; and, a general transactions table can be created and
-the necessary steps carried out depending on the type of the next transaction.
+The accumulated component depreciation calculation is based on the component balance value calculated. The balance value calculation can be combined with the depreciation calculation; and, a general transactions table can be created and the necessary steps carried out depending on the type of the next transaction.
 
-The component depreciated cost is calculated as the difference between the
-component balance value obtained and the accumulated component depreciation.
+The component depreciated cost is calculated as the difference between the component balance value obtained and the accumulated component depreciation.
 
-A partial take-down transaction has an indirect effect on the fixed asset
-balance. A partial take-down transaction creates value and depreciation
-revaluation transactions which, in turn, are already taken into account in the
-fixed asset balance.
+A partial take-down transaction has an indirect effect on the fixed asset balance. A partial take-down transaction creates value and depreciation revaluation transactions which, in turn, are already taken into account in the fixed asset balance.
 
-As a result of the calculation, a balance value, balance depreciation, and
-market value equal to the depreciated cost are created.
+As a result of the calculation, a balance value, balance depreciation, and market value equal to the depreciated cost are created.
