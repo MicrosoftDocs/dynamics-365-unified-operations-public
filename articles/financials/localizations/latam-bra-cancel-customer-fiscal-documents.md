@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cancel a customer fiscal document 
+title: Cancel a customer fiscal document (Brazil) 
 description: This topic provides information about canceling a customer fiscal document for Brazil. 
 author: ShylaThompson
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Cancel a customer fiscal document 
+# Cancel a customer fiscal document (Brazil)
 
 You can cancel an incorrect customer fiscal document by using the **Cancel fiscal document** page. When you cancel a fiscal document, the fiscal document is marked as canceled, and all of the ledger transactions and financial transactions are reversed.
 
