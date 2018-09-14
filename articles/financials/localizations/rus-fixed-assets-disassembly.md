@@ -40,7 +40,7 @@ A partial liquidation of fixed asset objects can result in a change to the origi
 To create the partial fixed asset disassembly transactions, you must configure
 the transaction profiles:
 
-1.  Click **Fixed Assets \> Setup \> Posting profiles.**
+1.  Click **Fixed Assets (Russia) \> Setup \> Posting profiles.**
 
 2.  Click **Options** button **\> Partial dismantlement**
 
@@ -63,7 +63,7 @@ the transaction profiles:
 4.  In the **Add** field of the **Add to remains** form, enter the remaining quantity.
     > The **Available quantity** field displays the quantity for this item is currently part of the fixed asset.
 5.  Click **OK**.
-    >   The lines marked in the upper pane of the form are transferred to the lower pane for a partial disassembly, which will be posted to the warehouse. In the lower pane, a component list is for the partial disassembly is displayed. In the upper pane of the form in the **Current quantity** column, the component quantity is displayed. This quantity remains in the fixed asset after the partial disassembly, and the of the value in the **Current quantity** field is updated.
+    >   The lines marked in the upper pane of the form are transferred to the lower pane for a partial disassembly, which will be posted to the inventory. In the lower pane, a component list is for the partial disassembly is displayed. In the upper pane of the form in the **Current quantity** column, the component quantity is displayed. This quantity remains in the fixed asset after the partial disassembly, and the of the value in the **Current quantity** field is updated.
 
 6.  In the bottom pane form, click **Functions \> Calculating prices**. The balance value depreciation and depreciated cost are calculated for every component that is being written off.
 7.  Select a **Calculating prices** method from the following options:
@@ -74,21 +74,21 @@ the transaction profiles:
 
 8.  Set the **Round off market value** to **Yes**, if the cost must be rounded to an integer value.
 9.  Click **OK**. The cost of the item, when it is returned to the warehouse, is calculated. You can update the market value manually, if needed.
-    > Components are posted to the warehouse with respect to either their calculated or market value, which is determined by the commission during fixed asset disassembly. The difference between the market and calculated values is the profit or loss amount in the result of the disassembly of the asset.
-10.  On the **Inventory dimension** tab select warehouse dimensions for posting the item to the warehouse
-11.  To create the write-off disassembly transaction, click **Fixed Assets** \> **FA journal.**
-12.  Press Ctrl + N to create a new journal.
-13.  Click the **Lines** button and then New button to create lines to record the write-off disassembly transaction.
+     > Components are posted to the warehouse with respect to either their calculated or market value, which is determined by the commission during fixed asset disassembly. The difference between the market and calculated values is the profit or loss amount in the result of the disassembly of the asset.
+10.  On the **Inventory dimension** tab select warehouse dimensions for posting the item to the inventory
+11.  To create the write-off disassembly transaction, click **Fixed Assets (Russia)** \> **Journals** \> **FA journal.**
+12.  Press the **New** button to create a new journal.
+13.  Click the **Lines** button and then **New** button to create lines to record the write-off disassembly transactions.
 14.  In the **Add to journal** form, select the **Partial dismantlement** operation type.
-15.  Enter the transaction date in the **Date** field.
-16.  Click **OK**. The partial fixed asset disassembly lines are created in the journal.
-    > The balance cost disposal transactions, depreciation, depreciated cost, posting components at market value to the warehouse, and profit or loss from a write-off are created automatically in the main and tax value models. You must enter the transaction details for the other value models for this fixed asset manually.
-
-17.  Click **Functions \> Show invisible** to display profit and loss.
-18.  Click **Post \> Post**. Transactions are created in the ledger and fixed asset account, and the item is posted to the warehouse.
-    > The partial dismantlement transaction is displayed in **Acquisition adjustment of partial dismantlement** and **Depreciation adjustment of partial dismantlement** fields in the **Balance by FA** form (Fixed asset (Russia) \> Value models \> Balance).
-    > As the result of a partial fixed asset disassembly with a loss, a line in the **Deferrals** form (Ledger/deferrals) is created if the corresponding depreciated group has been set up.
-
+15.  Enter the transaction date in the **Tarnsaction date** field.
+16.  Click **OK**. The partial fixed asset disassembly lines are created in the journal according with the depration profile settings.
+     > If there is no some transaction details in the journal line, you must enter them manually.
+17.  Click **Functions** \> **Show invisible** to display profit/loss lines.
+18.  Click **Post** \> **Post**. Transactions are created in the ledger and fixed asset account, and the item is posted to the inventory.
+     > The partial dismantlement transaction is displayed in **Acquisition adjustment of partial dismantlement** and **Depreciation adjustment of partial dismantlement** fields in the **Balance by FA** form (**Fixed asset (Russia)** \> **Value models** \> **Balance**).
+     
+     > As the result of a partial fixed asset disassembly with a loss, a line in the **Deferrals** form (**General ledger** \> **Deferrals** \> **Deferrals**) is created if the corresponding deprecian group has been set up for tax value mode).
+     
 > [!NOTE] 
 > It is possible to add an item in the low panel manually, even if this item is not included in the fixed asset. A fixed asset may be put into operation without componentry but may be dismantled to different items.
 
