@@ -525,37 +525,44 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 6. Register the dependencies of the Retail Server extensions.
 
-   #### [Application update 4](#tab/app-update-4/)
+    #### [Application update 4](#tab/app-update-4/)
+
     Complete the following procedure:
-   1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
-      - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
-      - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
-   2. Copy the files to the **\\bin** folder under the IIS Retail Server site location.
-   3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
 
-      ``` xml
-           <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
-      ```
+    1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample\\bin\\Debug** folder, find the following files:
 
-   #### [Application update 5 and later](#tab/app-update-5-and-later/)
+        - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll** assembly file
+        - The **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.dll.config** configuration file
+
+    2. Copy the files to the **\\bin** folder under the IIS Retail Server site location.
+
+    3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample" />
+    ```
+
+    #### [Application update 5 and later](#tab/app-update-5-and-later/)
     Complete the following procedure:
-   1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file.
-   2. Copy the file to the **\\bin** folder under the IIS Retail Server site location.
-   3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
+    1. In the **CommerceRuntime\\Extensions.SalesTransactionSignatureSample.Messages\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages.dll** assembly file.
 
-      ``` xml
-           <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
-      ```
+    2. Copy the file to the **\\bin** folder under the IIS Retail Server site location.
 
-   #### [Retail 7.3.1](#tab/retail-7-3-1)
+    3. Register the CRT change in the extensions configuration file for CRT. This file is named **commerceruntime.ext.config**, and it's in the **bin** folder under the IIS Retail Server site location.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
+    ```
+
+    #### [Retail 7.3.1](#tab/retail-7-3-1)
     > [!Note]
     > No actions required.
 
-   #### [Retail 7.3.2 and later](#tab/retail-7-3-2)
+    #### [Retail 7.3.2 and later](#tab/retail-7-3-2)
     > [!Note]
     > No actions required.
 
-   #### [Retail 8.1.1 and later](#tab/retail-8-1-1)
+    #### [Retail 8.1.1 and later](#tab/retail-8-1-1)
     > [!Note]
     > No actions required.
 
@@ -715,39 +722,39 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 
     # [Application update 4](#tab/app-update-4)
 
-      **AuditEventExtensionSample**
+          **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+          **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
 
-      **AuditEventExtensionSample**
+          **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+          **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
-      **SalesTransactionSignatureNorway**
+        **SalesTransactionSignatureNorway**
 
-      **SequentialSignature**
+        **SequentialSignature**
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
-      **SalesTransactionSignatureNorway**
+        **SalesTransactionSignatureNorway**
 
-      **SequentialSignature**
+        **SequentialSignature**
 
     ---
 
@@ -755,41 +762,41 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 
     # [Application update 4](#tab/app-update-4)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
-      **SalesTransactionSignatureNorway**
+        **SalesTransactionSignatureNorway**
 
-      **SequentialSignature**
+        **SequentialSignature**
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
-      **SalesTransactionSignatureNorway**
+        **SalesTransactionSignatureNorway**
 
-      **SequentialSignature**
+        **SequentialSignature**
 
     ---
 
@@ -876,39 +883,39 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 
     # [Application update 4](#tab/app-update-4)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
-      **SalesTransactionSignatureNorway**
+        **SalesTransactionSignatureNorway**
 
-      **SequentialSignature**
+        **SequentialSignature**
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
-      **SalesTransactionSignatureNorway**
+        **SalesTransactionSignatureNorway**
 
-      **SequentialSignature**
+        **SequentialSignature**
 
     ---
 
@@ -916,39 +923,39 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 
     # [Application update 4](#tab/app-update-4)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-      **AuditEventExtensionSample**
+        **AuditEventExtensionSample**
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
-      **SalesTransactionSignatureNorway**
+        **SalesTransactionSignatureNorway**
 
-      **SequentialSignature**
+        **SequentialSignature**
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-      **SalesTransactionSignatureSample**
+        **SalesTransactionSignatureSample**
 
-      **SalesTransactionSignatureNorway**
+        **SalesTransactionSignatureNorway**
 
-      **SequentialSignature**
+        **SequentialSignature**
 
     ---
 
@@ -1073,7 +1080,7 @@ Follow these steps to create deployable packages that contain Retail components,
             <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
-         # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+        # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
         ``` xml
             <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
@@ -1085,7 +1092,7 @@ Follow these steps to create deployable packages that contain Retail components,
             <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
-         # [Retail 8.1.1 and later](#tab/retail-8-1-1)
+        # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
         ``` xml
             <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
@@ -1291,7 +1298,7 @@ Follow these steps to create deployable packages that contain Retail components,
            <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
         ```
 
-       ---
+        ---
 
 4. Modify the certificate's configuration file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then copy the configuration file to the **References** folder.
 
