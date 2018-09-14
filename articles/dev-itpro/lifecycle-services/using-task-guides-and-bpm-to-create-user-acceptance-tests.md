@@ -28,9 +28,12 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Create user acceptance test libraries by using task guides and BPM
+# Create user acceptance test libraries by using task recordings and BPM
 
-You can use Task guides and Business process modeler (BPM) to create a user acceptance test library. Organize your acceptance tests by business processes and then synchronize BPM to Visual Studio Team Services (VSTS) to manage test execution and test results. This topic walks through the process of creating and executing acceptance test suites to be used for manual or automatic testing.
+You can use Task recorder and Business process modeler (BPM) to create user acceptance test libraries. Task recorder is a powerful tool to author test cases and organize them by business process using BPM. As a Microsoft partner you can use BPM to distribute test libraries to your customers via LCS and LCS solutions. As a customer, you can also use BPM to author and distribute test libraries across different projects and team.
+Since BPM can be synchronized with Azure DevOps (formerly known as Visual Studio Team Services), you can automatically create test cases (including test steps) in your Azure DevOps project. Azure DevOps can then serve as your test condiguration and test management tool where you can create targeted test plans and test suites, manage the execution of tests and investigate results.  
+
+This topic walks through the process of creating and executing acceptance test suites to be used for manual or automated testing.
 
 ## Create a Scenario Acceptance Testing BPM library
 BPM is a great LCS tool to describe a hierarchy of tasks and business processes. LCS also allows Microsoft partners and customers to author and distribute BPM libraries across LCS projects via the Asset library. This section describes how to take advantage of BPM to define your acceptance test library.
@@ -85,7 +88,9 @@ If you're using a library that already has all of the necessary task recordings 
 
 ## Synchronize and configure your test plan in VSTS
 
-Once you have selected your acceptance test BPM library, synchronize it with VSTS and create your test plan.
+An acceptance test library is your starting point. It typically contains all test cases (task recordings) of a particular application organized by business process. During a particular test pass, you usually do not need to execute all test cases. What test cases you select depends on the phase of your implementation or the nature of the update you are planning to apply to your production environment. Azure DevOps enables you to organize your test cases in test plans and test suites. A test plan contains one or more test suites (A subset of your test library); test cases can belong to more than one test suite.
+
+Once you have selected your acceptance testing BPM library, synchronize it with Azure DevOps and create your test plan and test suites.
 
 ### Sync with VSTS
 Synchronize your BPM library with your VSTS project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-vsts). 
