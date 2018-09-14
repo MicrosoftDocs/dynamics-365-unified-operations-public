@@ -353,10 +353,10 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-#### SequentialSignatureRegisterNorway component
+#### SalesTransactionSignatureNorway component
 
-1. Find the **Runtime.Extensions.SequentialSignatureRegisterNorway** project.
-2. In the **Extensions.SequentialSignatureRegisterNorway\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SequentialSignatureRegisterNorway.dll** assembly file.
+1. Find the **Runtime.Extensions.SalesTransactionSignatureNorway** project.
+2. In the **Extensions.SalesTransactionSignatureNorway\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureNorway.dll** assembly file.
 3. Copy the assembly file to the CRT extensions folder:
 
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
@@ -370,7 +370,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 5. Register the CRT change in the extensions configuration file.
 
     ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegisterNorway" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
     ```
 
     > [!WARNING]
@@ -429,10 +429,10 @@ The CRT extension components are included in the CRT samples. To complete the fo
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-#### SequentialSignatureRegisterNorway component
+#### SalesTransactionSignatureNorway component
 
-1. Find the **Runtime.Extensions.SequentialSignatureRegisterNorway** project.
-2. In the **Extensions.SequentialSignatureRegisterNorway\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SequentialSignatureRegisterNorway.dll** assembly file.
+1. Find the **Runtime.Extensions.SalesTransactionSignatureNorway** project.
+2. In the **Extensions.SalesTransactionSignatureNorway\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.SalesTransactionSignatureNorway.dll** assembly file.
 3. Copy the assembly file to the CRT extensions folder:
 
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
@@ -446,7 +446,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 5. Register the CRT change in the extensions configuration file.
 
     ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegisterNorway" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
     ```
 
     > [!WARNING]
@@ -547,11 +547,11 @@ The CRT extension components are included in the CRT samples. To complete the fo
            <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureSample.Messages" />
       ```
 
-   #### [Retail 7.3.1](#tab/retail-7-3-1/)
+   #### [Retail 7.3.1](#tab/retail-7-3-1)
     > [!Note]
     > No actions required.
 
-   #### [Retail 7.3.2 and later](#tab/retail-7-3-2/)
+   #### [Retail 7.3.2 and later](#tab/retail-7-3-2)
     > [!Note]
     > No actions required.
 
@@ -1081,7 +1081,7 @@ Follow these steps to create deployable packages that contain Retail components,
             <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
             <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
             <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegisterNorway" />
+            <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
             <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
@@ -1093,7 +1093,7 @@ Follow these steps to create deployable packages that contain Retail components,
             <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
             <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
             <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
-            <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegisterNorway" />
+            <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
             <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
         ```
 
@@ -1235,7 +1235,7 @@ Follow these steps to create deployable packages that contain Retail components,
            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtNorway.dll" />
            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegisterNorway.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureNorway.dll" />
            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
@@ -1248,7 +1248,7 @@ Follow these steps to create deployable packages that contain Retail components,
            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtNorway.dll" />
            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
-           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegisterNorway.dll" />
+           <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureNorway.dll" />
            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
            <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
