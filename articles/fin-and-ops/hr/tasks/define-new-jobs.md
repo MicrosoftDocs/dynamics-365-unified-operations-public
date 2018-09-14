@@ -5,7 +5,7 @@ title: Define new jobs
 description: This task focuses on the creation of a new job. 
 author: kherr75
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Create a fixed asset
 description: This task guide uses the USMF demo company. 
 author: saraschi2
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Create a preliminary budget for Public sector
 description: You can create preliminary budget register entries for a specific budget model and dimension values. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

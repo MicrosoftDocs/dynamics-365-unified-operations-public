@@ -5,7 +5,7 @@ title: MX-00020 Produce Mexican electronic ledger accounting report version 1.1
 description: This task walks through all necessary steps to configure the generation of electronic ledger accounting XML files by using the Electronic Reporting tool. 
 author: sndray
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

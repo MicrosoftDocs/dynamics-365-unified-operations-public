@@ -5,7 +5,7 @@ title: Manage leave of absence
 description: This procedure walks through the creation of employee leave records. 
 author: ShielaSogge
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

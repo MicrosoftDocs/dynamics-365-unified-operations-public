@@ -5,7 +5,7 @@ title: Set up withholding tax
 description: Withholding tax is a tax on vendors that does not create sales tax transactions. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

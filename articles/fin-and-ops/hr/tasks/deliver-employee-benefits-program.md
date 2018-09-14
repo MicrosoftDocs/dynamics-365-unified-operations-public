@@ -5,7 +5,7 @@ title: Deliver employee benefits program
 description: This task will show you how to create benefit elements which will be used when creating a new benefit. 
 author: kherr75
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

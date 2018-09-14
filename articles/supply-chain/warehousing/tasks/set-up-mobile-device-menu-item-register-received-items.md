@@ -5,7 +5,7 @@ title: Set up a mobile device menu item to register received items
 description: This task focuses on the setup of a mobile device menu item. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

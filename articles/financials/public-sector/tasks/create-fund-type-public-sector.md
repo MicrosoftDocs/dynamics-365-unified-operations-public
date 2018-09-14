@@ -5,7 +5,7 @@ title: Create a fund type in the public sector
 description: Fund types are categories that you can use to group funds for detailed fiscal tracking and reporting. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

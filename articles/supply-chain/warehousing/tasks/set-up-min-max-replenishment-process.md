@@ -5,7 +5,7 @@ title: Set up a min-max replenishment process
 description: This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy. 
 author: perlynne
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

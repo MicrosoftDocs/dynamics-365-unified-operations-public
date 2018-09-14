@@ -5,7 +5,7 @@ title: Maintain impairment indicators on individual assets
 description: Use this task to learn how to maintain impairment indicators on individual assets. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

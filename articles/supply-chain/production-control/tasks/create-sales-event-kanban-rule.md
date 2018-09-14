@@ -5,7 +5,7 @@ title: Create a sales event kanban rule
 description: This procedure focuses on the setup needed to create a kanban rule that is triggered during sales order creation. 
 author: ChristianRytt
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

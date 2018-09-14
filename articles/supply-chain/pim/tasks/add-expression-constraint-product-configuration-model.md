@@ -5,7 +5,7 @@ title: Add an expression constraint to a product configuration model
 description: This procedure shows how you can add a new constraint expression to a product configuration model. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

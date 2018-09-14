@@ -5,7 +5,7 @@ title: Create, calculate, and post a statement for a retail store
 description: This procedure walks through the manual steps for creating, calculating, and posting a statement for a store. 
 author: jashanno
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

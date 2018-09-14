@@ -5,7 +5,7 @@ title: Monitor consignment inventory using vendor collaboration
 description: This procedure shows how to use vendor collaboration to see information about the stock level of product that you have placed in consignment with a customer. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

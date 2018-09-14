@@ -5,7 +5,7 @@ title: Enter sales agreements
 description: This procedure shows you how to create a sales agreement that commits one of your customers to buy a product for anagreed amount over time in exchange for special discounts. 
 author: omulvad
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

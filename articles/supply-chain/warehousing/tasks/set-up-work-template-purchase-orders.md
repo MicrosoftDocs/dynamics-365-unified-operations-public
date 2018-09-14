@@ -5,7 +5,7 @@ title: Set up a work template for purchase orders
 description: This procedure focuses on the set up of a simple work template to be used when putting away received items. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

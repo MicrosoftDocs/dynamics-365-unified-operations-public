@@ -5,7 +5,7 @@ title: Setup impairment accounting common parameters and posting profile
 description: Use this task to learn how to define impairment accounting common parameters and posting profiles. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

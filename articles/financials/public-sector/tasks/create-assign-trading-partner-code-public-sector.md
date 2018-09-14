@@ -5,7 +5,7 @@ title: Create and assign a trading partner code in the public sector
 description: Create a trading partner code and assign it to a government agency that your organization does business with. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Set up segregation of duties
 description: You can set up rules to separate tasks that must be performed by different users. 
 author: maertenm
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

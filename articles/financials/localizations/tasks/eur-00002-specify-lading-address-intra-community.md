@@ -5,7 +5,7 @@ title: EUR-00002 Specifying a lading address for an intra-community transaction
 description: This procedure shows how to specify a lading address for an intra-community trade transaction. 
 author: v-oloski
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

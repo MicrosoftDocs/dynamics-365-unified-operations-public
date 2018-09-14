@@ -5,7 +5,7 @@ title: Create a billing code for the public sector
 description: Billing code custom fields allow you to collect values for billing code fields when free text invoices are created. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

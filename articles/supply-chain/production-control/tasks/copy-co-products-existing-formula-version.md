@@ -5,7 +5,7 @@ title: Copy co-products from an existing formula version
 description: This procedure shows how to copy co-products from an existing formula version to a different formula version for a released product. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

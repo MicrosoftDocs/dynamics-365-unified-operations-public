@@ -5,7 +5,7 @@ title: Set up automatic freight reconciliation
 description: This procedure shows how to set up data for automatic freight reconciliation. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

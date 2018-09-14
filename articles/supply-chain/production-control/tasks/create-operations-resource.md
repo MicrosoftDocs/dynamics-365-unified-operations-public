@@ -5,7 +5,7 @@ title: Create an operations resource
 description: An operations resource performs the activities of a project or a production process. 
 author: sorenva
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

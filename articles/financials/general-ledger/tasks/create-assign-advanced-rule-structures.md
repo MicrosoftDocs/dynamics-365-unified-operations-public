@@ -5,7 +5,7 @@ title: Create and assign advanced rule structures
 description: This task guide steps through creating and assigning an advanced rule structure to an account structure. 
 author: aprilolson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Set up and generate accounts receivable aging information
 description: This guide will help you set up an aging period definition, age customer balances, and view balances in the Aged balance list and the Collections page. 
 author: mikefalkner
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

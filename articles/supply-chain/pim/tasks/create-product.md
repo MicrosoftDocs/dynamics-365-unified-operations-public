@@ -5,7 +5,7 @@ title: Create a product
 description: This procedure walks through creating a new product in the retail product hierarchy. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

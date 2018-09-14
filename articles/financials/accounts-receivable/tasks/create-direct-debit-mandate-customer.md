@@ -5,7 +5,7 @@ title: Create a direct debit mandate for a customer
 description: This task guide demonstrates how to create a direct debit mandate and use it on an invoice. 
 author: ShivamPandey-msft
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

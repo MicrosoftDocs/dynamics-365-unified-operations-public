@@ -5,7 +5,7 @@ title: Depreciate and accrue the interest expense for asset retirement obligatio
 description: For Japan, the depreciation of the asset retirement obligations (ARO) is processed along with the fixed asset. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

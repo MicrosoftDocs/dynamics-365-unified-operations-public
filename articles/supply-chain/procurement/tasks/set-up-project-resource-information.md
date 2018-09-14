@@ -5,7 +5,7 @@ title: Set up project resource information
 description: This procedure shows how to set up a project resource. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

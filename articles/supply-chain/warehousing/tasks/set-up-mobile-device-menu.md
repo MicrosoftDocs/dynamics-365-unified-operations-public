@@ -5,7 +5,7 @@ title: Set up a mobile device menu item for completing work of type Purchase ord
 description: This procedure shows how to set up a Mobile device menu item. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

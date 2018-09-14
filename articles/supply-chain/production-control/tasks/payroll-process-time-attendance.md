@@ -5,7 +5,7 @@ title: Enable the payroll process for time and attendance
 description: This procedure shows how to enable the payroll process for time and attendance. 
 author: johanhoffmann
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

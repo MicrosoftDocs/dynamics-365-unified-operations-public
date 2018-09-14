@@ -5,7 +5,7 @@ title: Receive items on purchase order from item requirement
 description: This procedure shows how to receive items on a purchase order from an item requirement. 
 author: KimANelson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

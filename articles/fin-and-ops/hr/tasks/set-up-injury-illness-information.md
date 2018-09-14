@@ -5,7 +5,7 @@ title: Set up injury and illness information
 description: Employers need to know when their employees suffer injuries or illness resulting from hazards in the workplace. 
 author: ShielaSogge
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
