@@ -2,10 +2,10 @@
 # required metadata
 
 title: Generate fiscal documents for a load
-description: This topic provides information on how to generate fiscal documents for a load for Brazil.
+description: This topic explains how to generate fiscal documents for a load for Brazil.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 6/5/2018
+ms.date: 06/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,74 +30,53 @@ ms.dyn365.ops.version: 7.3
 
 # Generate fiscal documents for a load 
 
-You can create a load that contains multiple load lines. Each load line is created for a specific quantity of items from a sales order line. You can create one or more load lines or loads for one or more sales order lines or sales orders.
+[!include [banner](../includes/banner.md)]
 
+You can create a load that has multiple load lines. Each load line is created for a specific quantity of items from a sales order line. You can create one or more load lines or loads for one or more sales order lines or sales orders.
 
 > [!NOTE]
-> This topic applies to features in the <STRONG>Transportation management</STRONG> module. It does not apply to features in the <A href="inventory-management.md">Inventory management</A> module.
+> This topic applies to features in the **Transportation management** module. It doesn't apply to features in the [Inventory management](inventory-management.md) module.
 
+You can generate one or more fiscal documents for a load, depending on the sales orders that the load is created for. The quantity on a fiscal document line is the pick-up quantity for the load line, not the quantity from the sales order line.
 
+The following example shows how you can create load lines and loads for sales order lines and sales orders, and how fiscal documents are generated for each load.
 
-You can generate one or more fiscal documents for a load depending on the sales orders that the load is created for. The quantity on a fiscal document line is the load line pick up quantity, instead of the sales order line quantity.
+**Sales orders and sales order lines**
 
-The following table describes an example of how you can create load lines and loads for sales order lines and sales orders, and how fiscal documents are generated for each load.
+1. Sales order 1 for customer C1 has the following sales order lines:
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Sales order and sales order lines</p></th>
-<th><p>Load and load lines</p></th>
-<th><p>Fiscal documents</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ol>
-<li><p>Sales order 1 for customer C1 that contains the following sales order lines:</p>
-<ol>
-<li><p>Sales order line 1.1 that contains 50 units of item A.</p></li>
-<li><p>Sales order line 1.2 that contains 20 units of item B.</p></li>
-</ol></li>
-<li><p>Sales order 2 for customer C2 that contains the following sales order lines:</p>
-<ol>
-<li><p>Sales order line 2.1 that contains 200 units of item C.</p></li>
-<li><p>Sales order line 2.2 that contains 100 units of item D.</p></li>
-</ol></li>
-</ol></td>
-<td><ol>
-<li><p>You can create a load 1 that contains the following load lines:</p>
-<ol>
-<li><p>Load line 1.1 for the sales order line 1.1 that contains 30 units of item A.</p></li>
-<li><p>Load line 1.2 for sales order line 1.2 that contains 10 units of item B.</p></li>
-<li><p>Load line 1.3 for sales order line 2.1 that contains 100 units of item C.</p></li>
-</ol></li>
-<li><p>You can create a load 2 that contains the following load lines:</p>
-<ol>
-<li><p>Load line 2.1 for the sales order line 1.1 that contains the remaining 20 units of item A.</p></li>
-<li><p>Load line 2.2 for sales order line 2.1 that contains 50 units of item C.</p></li>
-</ol></li>
-</ol></td>
-<td><ol>
-<li><p>The following two fiscal documents are generated for load 1:</p>
-<ol>
-<li><p>A fiscal document is generated for customer C1 that contains a fiscal document line for 30 units of item A and another for 10 units of item B.</p></li>
-<li><p>A fiscal document is generated for customer C2 that contains a fiscal document line for 100 units of item C.</p></li>
-</ol></li>
-<li><p>The following two fiscal documents are generated for load 2:</p>
-<ol>
-<li><p>A fiscal document is generated for customer C1 that contains a fiscal document line for 20 units of item A.</p></li>
-<li><p>A fiscal document is generated for customer C2 that contains a fiscal document line for 50 units of item C.</p></li>
-</ol></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+    1. Sales order line 1.1, which has 50 units of item A
+    2. Sales order line 1.2, which has 20 units of item B
 
+2. Sales order 2 for customer C2 has the following sales order lines:
+
+    1. Sales order line 2.1, which has 200 units of item C
+    2. Sales order line 2.2, which has 100 units of item D
+
+**Loads and load lines**
+
+1. You create load 1 that has the following load lines:
+
+    1. Load line 1.1 for sales order line 1.1. This load line has 30 units of item A.
+    2. Load line 1.2 for sales order line 1.2. This load line has 10 units of item B.
+    3. Load line 1.3 for sales order line 2.1. This load line has 100 units of item C.
+
+2. You create load 2 that has the following load lines:
+
+    1. Load line 2.1 for sales order line 1.1. This load line has the remaining 20 units of item A.
+    2. Load line 2.2 for sales order line 2.1. This load line has 50 units of item C.
+
+**Fiscal documents**
+
+1. The following fiscal documents are generated for load 1:
+
+    1. A fiscal document for customer C1 that has one fiscal document line for 30 units of item A and another line for 10 units of item B
+    2. A fiscal document for customer C2 that has a fiscal document line for 100 units of item C
+
+2. The following fiscal documents are generated for load 2:
+
+    1. A fiscal document for customer C1 that has a fiscal document line for 20 units of item A
+    2. A fiscal document for customer C2 that has a fiscal document line for 50 units of item C
 
 Follow the steps in this topic to generate fiscal documents for a load.
 
@@ -106,131 +85,68 @@ Follow the steps in this topic to generate fiscal documents for a load.
 The following table shows the prerequisites that must be in place before you start.
 
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th><p>Category</p></th>
-<th><p>Prerequisite</p></th>
+<tr>
+<th>Category</th>
+<th>Prerequisite</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p><strong>Version</strong></p></td>
-<td><p>Microsoft Dynamics AX 2012 R3</p></td>
+<tr>
+<td>Version</td>
+<td>Microsoft Dynamics AX 2012 R3</td>
 </tr>
-<tr class="even">
-<td><p><strong>Country/region</strong></p></td>
-<td><p>The primary address for the legal entity must be in the following countries/regions: Brazil</p></td>
+<tr>
+<td>Country/region</td>
+<td>The primary address for the legal entity must be in Brazil.</td>
 </tr>
-<tr class="odd">
-<td><p><strong>Related setup tasks</strong></p></td>
-<td><ul>
-<li><p>Create a fiscal establishment group and a fiscal establishment. For more information, see <a href="bra-create-a-fiscal-establishment-group.md">(BRA) Create a fiscal establishment group</a> and <a href="bra-create-a-fiscal-establishment.md">(BRA) Create a fiscal establishment</a>.</p></li>
-<li><p>Set up a fiscal document type, and then assign it to customers, vendors, or inventory items. For more information, see <a href="bra-set-up-fiscal-document-types.md">(BRA) Set up fiscal document types</a> and <a href="bra-assign-fiscal-document-types-for-customers-or-vendors.md">(BRA) Assign fiscal document types for customers or vendors</a>.</p></li>
-<li><p>Set up a transportation management shipping carrier that contains the same vendor as the one that you specified in the <strong>Vendor account</strong> field in the <strong>Carrier</strong> form in the Sales and Marketing module. For more information, see <a href="set-up-shipping-carriers-and-carrier-groups.md">Set up shipping carriers and carrier groups</a> and <a href="https://technet.microsoft.com/en-us/library/jj710592(v=ax.60)">(BRA) Carrier (modified form)</a>.</p></li>
-</ul></td>
+<tr>
+<td>Related setup tasks</td>
+<td>
+<ul>
+<li>Create a fiscal establishment group and a fiscal establishment. For more information, see <a href="bra-create-a-fiscal-establishment-group.md">(BRA) Create a fiscal establishment group</a> and <a href="bra-create-a-fiscal-establishment.md">(BRA) Create a fiscal establishment</a>.</li>
+<li>Set up a fiscal document type, and then assign it to customers, vendors, or inventory items. For more information, see <a href="bra-set-up-fiscal-document-types.md">(BRA) Set up fiscal document types</a> and <a href="bra-assign-fiscal-document-types-for-customers-or-vendors.md">(BRA) Assign fiscal document types for customers or vendors</a>.</li>
+<li>Set up a transportation management shipping carrier that has the same vendor that you specified in the <strong>Vendor account</strong> field in the <strong>Carrier</strong> form in the <strong>Sales and Marketing</strong> module. For more information, see <a href="set-up-shipping-carriers-and-carrier-groups.md">Set up shipping carriers and carrier groups</a> and <a href="https://technet.microsoft.com/en-us/library/jj710592(v=ax.60)">(BRA) Carrier (modified form)</a>.</li>
+</ul>
+</td>
 </tr>
-<tr class="even">
-<td><p><strong>Related task</strong></p></td>
-<td><p>Create an outbound load for a shipment.</p></td>
+<tr>
+<td>Related task</td>
+<td>Create an outbound load for a shipment.</td>
 </tr>
 </tbody>
 </table>
-
 
 ## Generate fiscal documents for a load
 
-Use the **Loads** form to view the loads, and then select a load that has a confirmed shipment to generate the fiscal documents for. You can then use the **Posting invoice** form to post sales orders and generate fiscal documents for a load.
+Use the **Loads** form to view the loads, and then select a load that has a confirmed shipment. You can then use the **Posting invoice** form to post sales orders and generate fiscal documents for that load.
 
-To perform this task, follow these steps:
+Follow these steps to complete this task.
 
-1.  Click **Accounts receivable** \> **Periodic** \> **Sales update** \> **Loads**.
+1. Click **Accounts receivable** \> **Periodic** \> **Sales update** \> **Loads**.
+2. In the **Loads** form, select a load that has a confirmed shipment, and verify the identification code, status, direction, site, warehouse, and shipment of the load.
 
-2.  In the **Loads** form, select a load that contains a confirmed shipment, and then verify the identification code, status, direction, site, warehouse, and shipment of the load.
-    
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><p>Field</p></th>
-    <th><p>Description</p></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p><strong>Load ID</strong></p></td>
-    <td><p>The identification code of the shipment.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p><strong>Load status</strong></p></td>
-    <td><p>The status of the load. The status can be <strong>Shipped</strong>.</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p><strong>Direction</strong></p></td>
-    <td><p>The direction of the load. The direction can be <strong>Outbound</strong>.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p><strong>Site</strong></p></td>
-    <td><p>The site from which the load is picked up.</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p><strong>Warehouse</strong></p></td>
-    <td><p>The warehouse from which the load is picked up.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p><strong>Shipment ID</strong></p></td>
-    <td><p>The identification code of the load shipment.</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p><strong>Scheduled load shipping date and time</strong></p></td>
-    <td><p>The scheduled date and time for the load shipment.</p></td>
-    </tr>
-    </tbody>
-    </table>
+    | Field                                 | Description |
+    |---------------------------------------|-------------|
+    | Load ID                               | The identification code of the shipment. |
+    | Load status                           | The status of the load. The status can be **Shipped**. |
+    | Direction                             | The direction of the load. The direction can be **Outbound**. |
+    | Site                                  | The site that the load is picked up from. |
+    | Warehouse                             | The warehouse that the load is picked up from. |
+    | Shipment ID                           | The identification code of the load shipment. |
+    | Scheduled load shipping date and time | The scheduled date and time of the load shipment. |
 
-
-3.  Click **Invoice** to open the **Posting invoice** form, where you can view the sales order lines for which the load is created. The lines contain only the load line quantities.
-
-4.  Select the **Posting** check box to post the sales orders for the load to generate fiscal documents.
-
-5.  Specify additional details, if required. 
-
-6.  Click **OK** to post the sales orders for the load and generate the fiscal documents.
-
+3. Click **Invoice** to open the **Posting invoice** form, where you can view the sales order lines that the load is created for. The lines have only the load line quantities.
+4. Select the **Posting** check box to post the sales orders for the load to generate fiscal documents.
+5. Specify any additional details that are required. 
+6. Click **OK** to post the sales orders for the load and generate the fiscal documents.
 
 ## Technical information for system administrators
 
-If you don't have access to the pages that are used to complete this task, contact your system administrator and provide the information that is shown in the following table.
+If you don't have access to the pages that are used to complete this task, contact your system admin, and provide the information in the following table.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Category</p></th>
-<th><p>Prerequisite</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Configuration keys</strong></p></td>
-<td><p>Click <strong>System administration</strong> &gt; <strong>Setup</strong> &gt; <strong>Licensing</strong> &gt; <strong>License configuration</strong>. Expand the <strong>Trade</strong> license key, and then select the <strong>Warehouse and Transportation management</strong> configuration key.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Security roles and duties</strong></p></td>
-<td><p>To perform this task, you must be a member of a security role that includes the <strong>Maintain customer invoice transactions</strong> (CustInvoiceCustomerInvoiceTransMaintain) duty.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Security roles and privileges</strong></p></td>
-<td><p>To perform this task, you must be a member of a security role that includes the <strong>Loads</strong> (WHSLoadTableInvoicePost_BR) privilege.</p></td>
-</tr>
-</tbody>
-</table>
+| Category                      | Prerequisite |
+|-------------------------------|--------------|
+| Configuration keys            | Click **System administration** &gt; **Setup** &gt; **Licensing** &gt; **License configuration**. Expand the **Trade** license key, and then select the **Warehouse and Transportation management** configuration key. |
+| Security roles and duties     | To perform this task, you must be a member of a security role that includes the **Maintain customer invoice transactions** (CustInvoiceCustomerInvoiceTransMaintain) duty. |
+| Security roles and privileges | To perform this task, you must be a member of a security role that includes the **Loads** (WHSLoadTableInvoicePost\_BR) privilege. |
