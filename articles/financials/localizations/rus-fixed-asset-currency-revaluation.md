@@ -44,16 +44,16 @@ The following changes take place when currency is revaluated (depreciated):
 
 ## Revalue currency of fixed assets
 
-1.	Click **Fixed Assets > Fixed assets journal**.
-2.	Press Ctrl + N. Enter a short description of the journal in the Description field. 
-3.	Click the Lines button to open the Journal voucher form to enter fixed asset transactions.
-4.	Press Ctrl + N on the Overview to open the Add to journal form. 
-5.	Select the Currency cost revaluate transaction type and the fixed asset or inventory number. Click OK.
-The lines in the journal are created only if the currency exchange rate for the asset or inventory asset changes.
-6.	Verify the information in the Debit, Date, and Currency fields. Where necessary, change the cost revaluation amount and transaction date.
-7.	Click Posting > Posting. The fixed asset, and ledger transactions are created and the value of the Currency cost revaluate field is changed in the Balance form. 
- The currency revaluation of depreciation is also update.
+1.	Click **Fixed Assets (Russia) > Journals > Fixed assets journal**.
+2.	Press **New** button. Enter a short description of the journal in the Description field. 
+3.	Click the **Lines** button to open the **Journal voucher** form to enter fixed asset transactions.
+4.	Press **New** button to open the **Add to journal** form. 
+5.	Select the **Currency cost revaluation** transaction type and FA inventory number. Click OK.
+The lines in the journal are created only if the currency exchange rate for the fixed asset was changed in comparing with exchange rate on the date of putting the fixed asset into operation.
+6.	Verify the information in the Debit, Date, and Currency fields. if nessary, change the cost revaluation amount and transaction date.
+7.	Click **Post > Post** button. The fixed asset and ledger transactions are created and the value of the Currency cost revaluate field is updated in the **Balance by FA** form. 
+ The currency revaluation of depreciation is also updated.
 
-## Reverse a revaluation transaction
+## Reverse revaluation transactions
 
-Revaluation transactions are reversed in the same way as acquisition transactions are reversed, and two transactions, cost revaluation and depreciation revaluation, are created. To reverse a revaluation transaction, every transaction must be reversed.
+Revaluation transactions are reversed in the same way as acquisition (putting into operation) transactions are reversed, and two transactions, cost revaluation and depreciation revaluation, are created. 
