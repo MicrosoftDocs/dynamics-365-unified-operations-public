@@ -622,6 +622,7 @@ Follow these steps to create deployable packages that contain Retail components,
     1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section.
 
         # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.CommonFrance" />
         <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsFrance" />
@@ -634,6 +635,7 @@ Follow these steps to create deployable packages that contain Retail components,
         ```
 
         # [Retail 8.1.1 and later](#tab/retail-8-1-1)
+
         ``` xml
         <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
         <add source="assembly" value="Contoso.Commerce.Runtime.CommonFrance" />
@@ -643,6 +645,7 @@ Follow these steps to create deployable packages that contain Retail components,
         <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureFrance" />
         <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
         <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsFrance" />
+        ```
 
         ---
 
@@ -672,6 +675,7 @@ Follow these steps to create deployable packages that contain Retail components,
     2. Add the following lines to the **ItemGroup** section to include the CRT extensions in the deployable packages.
 
         # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.CommonFrance.dll" />
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsFrance.dll" />
@@ -686,6 +690,7 @@ Follow these steps to create deployable packages that contain Retail components,
         ```
 
         # [Retail 8.1.1 and later](#tab/retail-8-1-1)
+
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.CommonFrance.dll" />
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsFrance.dll" />
