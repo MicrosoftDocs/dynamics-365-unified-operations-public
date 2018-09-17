@@ -389,7 +389,7 @@ Using a **pre-release** Chrome extension, Task recorder is able to take screensh
 
 6.  Restart Chrome.
 
-Task recorder will now take screenshots of the tab that has the client running. These screenshots are only available for a certain period of time after the recording has been played. Starting in Platform Update 16, screenshots are available for a week after playback. Prior to that, the screenshots are only available for 10 minutes. If the screenshots have expired, you can regenerate them by playing the task recording again.  
+Task recorder will now take screenshots of the tab that has the client running. These screenshots are only available for a certain period of time after the recording has been played. Starting in Platform Update 16, screenshots are available for a week after playback. Prior to that, the screenshots are only available for 15 minutes. If the screenshots have expired, you can regenerate them by playing the task recording again.  
 
 Note that Task recorder **does not** capture screenshots from other tabs or of the user's desktop.
 
