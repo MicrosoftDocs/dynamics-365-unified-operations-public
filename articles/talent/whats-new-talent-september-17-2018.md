@@ -40,7 +40,7 @@ This topic describes features that are either new or changed in Core HR.
 
 ## Leave and Absence – Accrue time based on hours worked
 
-A new accrual type has been added to Leave plans. The accrual schedule can now be based on months of service or hours worked. 
+A new accrual type has been added to Leave plans. The accrual schedule can now be based on months of service or hours worked. For more information, see [Accrue time off based on hours worked](leave-accrue-hours-worked.md).
 
 ## Platform update 18
 
