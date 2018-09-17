@@ -49,38 +49,28 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Dynamics 365 for Finance and Operations 8.1 with platform update 20
 
-### Feature name
-Please enter a sentence or two describing the feature that is being removed or deprecated. 
+### Financial reports generator for Russia
+A tool was used to set up data collection for accounting and tax reports, and to export data to XLS and DOC report templates. Functional parts: Export data to XLS and DOC report templates, Queries, Fixed requisites are removed. 
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Indicate why the feature is being removed or deprecated. |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature.  |
-| **Product areas affected**         | Product areas affected, such as a module name.    |
-| **Deployment option**              | Enter: All, Cloud only, or On-premises only  |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.|
+| **Reason for deprecation/removal** | Removed parts are replaced with GER (Electronic reporting). |
+| **Replaced by another feature?**   | Yes. Financial reports setup user interface could still be used for setting up data collection rules by GL accounts or Tax registers. Export data to various file types and Query-like data collection rules should be configured in GER (Electronic reporting). |
+| **Product areas affected**         | General ledger. |
+| **Deployment option**              | On-premises only. |
+| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
 
-### Feature name
-Please enter a sentence or two describing the feature that is being removed or deprecated. 
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Indicate why the feature is being removed or deprecated. |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature.  |
-| **Product areas affected**         | Product areas affected, such as a module name.    |
-| **Deployment option**              | Enter: All, Cloud only, or On-premises only  |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.|
-
-### Feature name
-Please enter a sentence or two describing the feature that is being removed or deprecated. 
+### Electronic reporting for Russia
+Feature was used to configure formats of txt and xml files of declarations. 
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Indicate why the feature is being removed or deprecated. |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature.  |
-| **Product areas affected**         | Product areas affected, such as a module name.    |
-| **Deployment option**              | Enter: All, Cloud only, or On-premises only  |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.|
+| **Reason for deprecation/removal** | Replaced with GER (Electronic reporting). |
+| **Replaced by another feature?**   | Yes. |
+| **Product areas affected**         | General Ledger. |
+| **Deployment option**              | On-premises only. |
+| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
+
 
 ### Batch transfer rules for subledger journal account entries
 The Synchronous transfer mode is being deprecated in the General ledger parameters.  This mode is replaced by Asyncronous and scheduled batch only, which already exist as options for transfer. 
