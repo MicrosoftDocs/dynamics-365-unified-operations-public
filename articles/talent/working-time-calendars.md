@@ -1,4 +1,5 @@
 ---
+
 # required metadata
 
 title: Working time calendars
@@ -24,7 +25,7 @@ ms.search.region:
 # ms.search.industry: 
 ms.author: jcart
 ms.search.validFrom: 2018/07/01
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: Talent
 
 ---
 
