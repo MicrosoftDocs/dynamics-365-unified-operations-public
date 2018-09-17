@@ -5,7 +5,7 @@ title: Task recorder
 description: This topic describes how to use Task recorder to record client functions.
 author: jasongre
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
