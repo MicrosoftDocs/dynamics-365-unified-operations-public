@@ -5,7 +5,7 @@ title: On-premises deployments home page
 description: This topic provides information and links to content about on-premises deployments.
 author: kfend
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -64,6 +64,7 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises). 
 
 ## Other resources
 - [Troubleshoot Dynamics 365 for Finance and Operations on-premises](troubleshoot-on-prem.md)
+- [On-premises diagnostics](on-premises-diagnostics.md)
 - [Features not implemented in on-premises deployments](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Deprecated features](../migration-upgrade/deprecated-features.md)
 - [Software lifecycle policy and on-premises releases](../migration-upgrade/on-prem-version-update-policy.md)
