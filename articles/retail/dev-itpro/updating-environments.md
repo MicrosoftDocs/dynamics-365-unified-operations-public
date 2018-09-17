@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Retail 7.3
 
 # Update code and environments for Retail projects
 
+[!include [banner](../../includes/banner.md)]
+
 An environment can be updated by updating either its data or its code.
 
 There are multiple ways to update the data. For examples that show how to get data into an environment, see [Data entities and data packages](../../dev-itpro/data-entities/integration-overview.md).

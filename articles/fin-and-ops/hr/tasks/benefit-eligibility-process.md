@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Benefit eligibility process
-description: This procedure hows the benefit eligibility process works. 
+description: This procedure shows how the benefit eligibility process works. 
 author: kherr75
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure hows the benefit eligibility process works. When the process is complete you can view the results. The demo data company used to create this procedure is USMF.
+This procedure shows how the benefit eligibility process works. When the process is complete you can view the results. The demo data company used to create this procedure is USMF.
 
 1. Go to Human resources > Benefits > Benefits.
 2. In the list, find and select the desired record.

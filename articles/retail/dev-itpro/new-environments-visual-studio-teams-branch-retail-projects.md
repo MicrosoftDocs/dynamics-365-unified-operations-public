@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Retail 7.3
 
 # Set up new environments, Azure DevOps, and branches for Retail projects
 
+[!include [banner](../../includes/banner.md)]
+
 Starting in Microsoft Dynamics AX 7.0, most environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). By default, environments are Microsoft-hosted. Typically, cloud-hosted environments are used to provide more control over a development or build environment. For more details, see [Lifecycle Services (LCS) user guide](../../dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 Tier 1 machines are developer or build environments.
