@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/11/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -937,21 +937,20 @@ To resolve this issue, look at all the modules that you're dependent on, and mak
 ## The local agent stops working after the tenant for the project from LCS is changed
 Follow these steps to configure the local agent with the updated tenant.
 
-1. Remove all the environments from LCS that already have the connector installed.
-2. Uninstall the local agent.
+1. Uninstall the local agent.
 
     ```powershell
     .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
 
-3. Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:
+2. Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:
 
     - [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs)
     - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
 
-4. Create a new LCS connector in the new tenant.
-5. Download the **local-agent.config** file.
-6. Install the local agent.
+3. Create a new LCS connector in the new tenant.
+4. Download the **local-agent.config** file.
+5. Install the local agent.
 
     ```powershell
     .\LocalAgentCLI.exe Install <path of localagent-config.json>
