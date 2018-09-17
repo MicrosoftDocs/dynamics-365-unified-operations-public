@@ -5,7 +5,7 @@ title: Create and maintain an inventory blocking
 description: This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking. 
 author: perlynne
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

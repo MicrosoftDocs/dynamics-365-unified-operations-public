@@ -5,7 +5,7 @@ title: Process ledger allocation journal
 description: Use the Process allocation request page to create an allocation journal that can be reviewed and approved before posting to General ledger, or posted directly to General ledger. 
 author: aprilolson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

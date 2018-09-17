@@ -5,7 +5,7 @@ title: ER Create required configurations to import data from an external file
 description: The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations, Enterprise edition application from an external file. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

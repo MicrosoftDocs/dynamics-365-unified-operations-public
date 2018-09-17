@@ -5,7 +5,7 @@ title: Set up postdated checks
 description: This topic explains how to specify whether to post journal entries for postdated checks and which posting journals to use for clearing entries and vendor payments. 
 author: kweekley
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

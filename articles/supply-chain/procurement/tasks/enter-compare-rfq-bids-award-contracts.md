@@ -5,7 +5,7 @@ title: Enter and compare RFQ bids, and award contracts
 description: This procedure shows you how to enter replies to an RFQ, score and compare bids, and then award the bid to one of the vendors. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Manage unit of measure
 description: This procedure shows how to define a unit of measure, provide translations for the unit and it's description, and define conversion rules for related units. 
 author: sorenva
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

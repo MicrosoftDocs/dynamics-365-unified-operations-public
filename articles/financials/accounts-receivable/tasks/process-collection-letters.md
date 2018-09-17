@@ -5,7 +5,7 @@ title: Process collection letters
 description: This procedure shows how to create, print, and post collection letters. 
 author: ShivamPandey-msft
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

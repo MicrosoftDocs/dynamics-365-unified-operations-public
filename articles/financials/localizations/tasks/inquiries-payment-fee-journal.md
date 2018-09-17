@@ -5,7 +5,7 @@ title: Inquiries of payment fee on journal
 description: This task walks you through viewing a payment fee summary for a journal. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

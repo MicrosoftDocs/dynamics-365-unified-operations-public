@@ -5,7 +5,7 @@ title: GB-00002 Create a sales order that includes items subject to reverse char
 description: This task walks you through creating a sales order that includes items subject to reverse charge VAT for the United Kingdom. 
 author: epodkolz
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

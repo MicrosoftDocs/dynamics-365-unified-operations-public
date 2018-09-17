@@ -5,7 +5,7 @@ title: Prepare a process kanban job when materials are available for the work ce
 description: This task focuses on preparing a process kanban job when all materials are available for the work cell. 
 author: johanhoffmann
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

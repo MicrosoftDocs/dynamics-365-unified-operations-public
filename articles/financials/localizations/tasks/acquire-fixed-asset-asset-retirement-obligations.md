@@ -5,7 +5,7 @@ title: Acquire a fixed asset with asset retirement obligations
 description: For Japan, the asset retirement obligation (ARO) is discounted to present value, and added to the acquisition cost of the fixed asset. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

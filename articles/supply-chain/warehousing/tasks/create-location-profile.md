@@ -5,7 +5,7 @@ title: Create a location profile
 description: Every location in the warehouse needs to have a location profile associated with it that describes the properties of the location, for example, whether the location allows mixed items. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

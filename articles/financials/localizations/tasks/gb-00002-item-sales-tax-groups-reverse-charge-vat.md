@@ -5,7 +5,7 @@ title: GB-00002 Set up item sales tax groups for reverse charge VAT
 description: This task walks you through setting up item sales tax groups, assigning the default values to products and procurements categories subject to reverse charge VAT for the United Kingdom. 
 author: epodkolz
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Configure and run job to calculate statements
 description: This procedure walks through configuring and running recurrent batch jobs to create and calculate statements for a selected store or group of stores. 
 author: josaw1
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

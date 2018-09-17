@@ -5,7 +5,7 @@ title: Transfer data for product models
 description: Exporting data for a product configuration model requires that you have at least one product model available. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Create dimension-based configurations
 description: This procedure shows how to define a configuration for a dimension-based product. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -27,7 +27,7 @@
       href: dev-tools/enable-development-machine.md
     - name: Development and build VMs that don't allow admin access FAQ
       href: sysadmin/VMs-no-admin-access.md
-    - name: Rename local environments to access Visual Studio Team Services
+    - name: Rename local environments to access Azure DevOps
       href: migration-upgrade/vso-machine-renaming.md
     - name: Development system requirements
       href: dev-tools/development-system-requirements.md
@@ -1114,7 +1114,7 @@
     items:
     - name: Prepare to migrate code
       href: migration-upgrade/prepare-migration.md
-    - name: Configure the Visual Studio Team Services mapping
+    - name: Configure the Azure DevOps mapping
       href: migration-upgrade/configure-vso-solution.md
     - name: Model split
       href: dev-tools/model-split.md
@@ -1248,7 +1248,7 @@
     href: lifecycle-services/complete-tasks-bpm.md
   - name: Work with activity diagrams in BPM libraries
     href: lifecycle-services/using-activity-diagrams.md
-  - name: Synchronize BPM libraries with Visual Studio Team Services
+  - name: Synchronize BPM libraries with Azure DevOps
     href: lifecycle-services/synchronize-bpm-vsts.md
   - name: Create user acceptance test libraries using task guides and BPM
     href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md

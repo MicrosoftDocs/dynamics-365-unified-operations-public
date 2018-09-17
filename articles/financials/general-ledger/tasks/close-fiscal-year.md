@@ -5,7 +5,7 @@ title: Close the fiscal year
 description: This procedure steps through the year end close process that transfers balances to a new fiscal year. 
 author: aprilolson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

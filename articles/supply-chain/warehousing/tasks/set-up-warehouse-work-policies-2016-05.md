@@ -5,7 +5,7 @@ title: Set up warehouse work policies (Application, May 2016)
 description: Warehouse processes don’t always include warehouse work. 
 author: johanhoffmann
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

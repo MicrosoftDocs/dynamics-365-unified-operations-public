@@ -5,7 +5,7 @@ title: Allocate carrying amount of shared asset and goodwill to cash generating 
 description: This procedure walks you through allocating the carrying amount of shared asset and goodwill to each of the cash generating units. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

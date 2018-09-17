@@ -5,7 +5,7 @@ title: Create a hierarchy of product classification
 description: This procedure shows how to create a new category hierarchy and assign a commodity code hierarchy type. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

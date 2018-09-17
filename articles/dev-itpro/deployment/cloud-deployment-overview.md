@@ -5,7 +5,7 @@ title: Cloud deployment option
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Microsoft Dynamics 365 for Finance and Operations. 
 author: kfend
 manager: AnnBe
-ms.date: 08/14/2018
+ms.date: 09/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -107,7 +107,7 @@ Windows Remoting (WinRM) is disabled on all environments. Although you can enabl
 > Exceptions to enable WinRM will not be granted for any Microsoft-managed environments. 
 
 ## Availability
-The guaranteed uptime for Dynamics 365 for Finance and Operations is 99.5%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn’t always take eight hours, we will always communicate the estimated amount of time that your environments will be down. [Find support for Microsoft Dynamics 365 for Finance and Operations and Dynamics Lifecycle Services](../lifecycle-services/lcs-support.md).
+The guaranteed uptime for Dynamics 365 for Finance and Operations is 99.9%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn’t always take eight hours, we will always communicate the estimated amount of time that your environments will be down. [Find support for Microsoft Dynamics 365 for Finance and Operations and Dynamics Lifecycle Services](../lifecycle-services/lcs-support.md).
 
 ### High-availability features
 To ensure service availability, all production environments are protected by using default Azure high availability (HA) features. HA functionality provides ways to avoid downtime caused by the failure of a single node within a datacenter, and DR features protect against outages broadly impacting an entire datacenter. Dynamics 365 for Operations cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. For more information about Azure availability sets, see [Azure availability sets guidelines for Windows VMs](/azure/virtual-machines/windows/infrastructure-availability-sets-guidelines).

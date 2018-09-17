@@ -5,7 +5,7 @@ title: Create working time scheduling properties
 description: Working time scheduling properties are used to categorize working time intervals and define the settings that operators must take into account. 
 author: sorenva
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

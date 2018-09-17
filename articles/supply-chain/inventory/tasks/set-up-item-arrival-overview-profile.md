@@ -5,7 +5,7 @@ title: Set up an item arrival overview profile
 description: This task focuses on the setup of an arrival overview profile. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

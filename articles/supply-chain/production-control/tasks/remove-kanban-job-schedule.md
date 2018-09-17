@@ -5,7 +5,7 @@ title: Remove a kanban job from the schedule
 description: This procedure focuses on removing a planned process kanban job from the schedule by reverting the job status to Not planned. 
 author: ChristianRytt
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

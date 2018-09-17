@@ -5,7 +5,7 @@ title: Release a product/product master to legal entities
 description: This procedure walks through how to release a product or product master into one or more legal entities. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

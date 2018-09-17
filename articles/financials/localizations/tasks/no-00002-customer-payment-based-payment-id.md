@@ -5,7 +5,7 @@ title: NO-00002 Customer payment based on payment ID
 description: This task walks you through setting up and maintaining Norwegian payment IDs. 
 author: EvgenyPopovMBS
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Classify a product using category hierarchies
 description: Use category hierarchies to classify products for export, procurement, sales, or other purposes. 
 author: ChristianRytt
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

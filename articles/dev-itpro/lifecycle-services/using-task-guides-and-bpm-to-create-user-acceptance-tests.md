@@ -30,7 +30,11 @@ ms.dyn365.ops.version: 2012
 
 # Create user acceptance test libraries by using task guides and BPM
 
+
+[!include [banner](../includes/banner.md)]
+
 You can use Task guides and Business process modeler (BPM) to create a user acceptance test library. Organize your acceptance tests by business processes and then synchronize BPM to Visual Studio Team Services (VSTS) to manage test execution and test results. This topic walks through the process of creating and executing acceptance test suites to be used for manual or automatic testing.
+
 
 ## Create a Scenario Acceptance Testing BPM library
 BPM is a great LCS tool to describe a hierarchy of tasks and business processes. LCS also allows Microsoft partners and customers to author and distribute BPM libraries across LCS projects via the Asset library. This section describes how to take advantage of BPM to define your acceptance test library.
@@ -83,37 +87,37 @@ If you're using a library that already has all of the necessary task recordings 
 2. Go to **Settings** > **Task recorder**.
 3. Select **Edit Task Recording** and attach the file by either saving directly to LCS or downloading the AXTR and then uploading to BPM.
 
-## Synchronize and configure your test plan in VSTS
+## Synchronize and configure your test plan in Azure DevOps
 
-Once you have selected your acceptance test BPM library, synchronize it with VSTS and create your test plan.
+Once you have selected your acceptance test BPM library, synchronize it with Azure DevOps and create your test plan.
 
-### Sync with VSTS
-Synchronize your BPM library with your VSTS project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-vsts). 
+### Sync with Azure DevOps
+Synchronize your BPM library with your Azure DevOps project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-azure-devops). 
 
-After configuration is complete, synchronize the BPM library with a VSTS project.
-1. On the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **VSTS sync**.
+After configuration is complete, synchronize the BPM library with a Azure DevOps project.
+1. On the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **Azure DevOps sync**.
 
 ![VSTS Sync1](./media/vsts_sync_1.png.png "VSTS Sync1")
 
-You can also start VSTS synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **VSTS sync**.
+You can also start Azure DevOps synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **Azure DevOps sync**.
 
 ![VSTS Sync2](./media/vsts_sync_2.png.png "VSTS Sync2")
 
-2. After VSTS synchronization is complete, select the ellipsis button (…), and then select **Sync test cases**.
+2. After Azure DevOps synchronization is complete, select the ellipsis button (…), and then select **Sync test cases**.
 
 ![Sync test cases](./media/sync_test_case.png.PNG "Sync test cases")
 
-3. When this step is complete, your task recordings will become test cases in VSTS and a link will appear under the **Requirements** tab. 
+3. When this step is complete, your task recordings will become test cases in Azure DevOps and a link will appear under the **Requirements** tab. 
 
 ![View test case](./media/view_test_case.png.PNG "View test case")
 
 
-In addition to the test steps, the task recording XML file is attached to the VSTS test case. This file will be needed if you want to automate test execution. 
+In addition to the test steps, the task recording XML file is attached to the Azure DevOps test case. This file will be needed if you want to automate test execution. 
 
-### Create a test suite in VSTS
-Next, you will need to create a test suite in VSTS. This will allow you to run a suite of tests so you can easily manage, investigate, and track the results. 
+### Create a test suite in Azure DevOps
+Next, you will need to create a test suite in Azure DevOps. This will allow you to run a suite of tests so you can easily manage, investigate, and track the results. 
 
-1. Sign in to VSTS and select the project and test plan that you want to test in. 
+1. Sign in to Azure DevOps and select the project and test plan that you want to test in. 
 2. On the toolbar, select **Test**.
 3. In the left pane, select **+**, and then select **Static suite**. 
 4. Enter a name for the suite.
@@ -132,19 +136,19 @@ Next, you will need to create a test suite in VSTS. This will allow you to run a
 ## Execute your tests
 
 ### Run manual test cases
-After you have a test suite, you are ready to use it for regression testing after updates have been made to your Dynamics 365 for Finance and Operations application in a sandbox or test environment. You can run the test cases in your test suite manually or play the task recordings that are part of the test suite and use VSTS to mark the test cases as passed or failed.
+After you have a test suite, you are ready to use it for regression testing after updates have been made to your Dynamics 365 for Finance and Operations application in a sandbox or test environment. You can run the test cases in your test suite manually or play the task recordings that are part of the test suite and use Azure DevOps to mark the test cases as passed or failed.
 
 ![VSTS test marked](./media/vsts_test_marked.png.png "VSTS test marked")
 
-VSTS also provides a tool, **Test Runner**, to manage manual test case execution. For more information about using Test Runner, see [Run manual tests](https://docs.microsoft.com/en-us/vsts/manual-test/getting-started/run-manual-tests).
+Azure DevOps also provides a tool, **Test Runner**, to manage manual test case execution. For more information about using Test Runner, see [Run manual tests](https://docs.microsoft.com/en-us/vsts/manual-test/getting-started/run-manual-tests).
 
-We recommend that you take advantage of VSTS as it provides a rich set of management features not only for testing, but result management and mitigation.
+We recommend that you take advantage of Azure DevOps as it provides a rich set of management features not only for testing, but result management and mitigation.
 
 ### Run automated test cases
-The Dynamics 365 Unified Operations platform provides developers with tools to author test cases based on task recordings and use VSTS to manage the automated execution of these test cases. Execution of test cases are part of the build and test automation capabilities of **build and test** environment topologies.
+The Dynamics 365 Unified Operations platform provides developers with tools to author test cases based on task recordings and use Azure DevOps to manage the automated execution of these test cases. Execution of test cases are part of the build and test automation capabilities of **build and test** environment topologies.
 For details, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/).
 
 #### Investigate test runs
-Once an automate run is complete, on the VSTS toolbar, select **Test > Runs** to investigate your test run. Select the desired test run to investigate individial test case failures and errors. You can also go to your test suite in VSTS to see the latest results associated with your test cases.
-For more information on testing and test management in VSTS, see the [Visual Studio Team Services documentation](https://docs.microsoft.com/en-us/vsts/?view=vsts).
+Once an automate run is complete, on the Azure DevOps toolbar, select **Test > Runs** to investigate your test run. Select the desired test run to investigate individial test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.
+For more information on testing and test management in Azure DevOps, see the [Azure DevOps documentation](https://docs.microsoft.com/en-us/vsts/?view=vsts).
 

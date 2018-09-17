@@ -5,7 +5,7 @@ title: Create a request for quotation
 description: This procedure shows you how to create a request for quotation. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

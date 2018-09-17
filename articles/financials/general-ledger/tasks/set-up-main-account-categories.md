@@ -5,7 +5,7 @@ title: Set up main account categories
 description: Main account categories are used for the default reports in financial reporting and in Power BI. 
 author: aprilolson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

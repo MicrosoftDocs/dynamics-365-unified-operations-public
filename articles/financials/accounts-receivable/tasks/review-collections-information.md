@@ -5,7 +5,7 @@ title: Review collections information
 description: This procedure walks you through how to review collections information as well as various setup options and collections transactions. 
 author: ShivamPandey-msft
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

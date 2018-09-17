@@ -5,7 +5,7 @@ title: Create a purchase order for a one-time supplier
 description: This procedure shows you how to create a purchase order for a one-time supplier. 
 author: FrankDahl
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

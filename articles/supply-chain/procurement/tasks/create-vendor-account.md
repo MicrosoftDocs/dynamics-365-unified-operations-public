@@ -5,7 +5,7 @@ title: Create a vendor account
 description: This procedure shows how to create a vendor account, and add an address and contact information. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

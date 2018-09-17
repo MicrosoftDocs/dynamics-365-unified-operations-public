@@ -5,7 +5,7 @@ title: Create and validate journals
 description: This task guide creates and validates journals and journal lines. 
 author: ryansandness
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Create a vendor certification type in the public sector
 description: You can create and assign vendor organizations any type of certification that the vendors hold, such as professional credentials, liability insurance, minority status, or compliance with various environmental or consumer safety standards. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -456,6 +456,10 @@
         href: ../financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
         href: ../financials/accounts-payable/invoice-matching-intercompany-purchase-orders.md
+      - name: Set up vendor invoice policies
+        href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+      - name: Record vendor invoice and match against received quantity
+        href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md  
       - name: Positive pay overview
         href: ../financials/accounts-payable/positive-pay-overview.md
       - name: Set up and generate positive pay files
@@ -566,10 +570,6 @@
         href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
       - name: Process interest
         href: ../financials/accounts-receivable/tasks/process-interest.md
-      - name: Set up vendor invoice policies
-        href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
-      - name: Record vendor invoice and match against received quantity
-        href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
       - name: Create a customer invoice
         href: ../financials/accounts-receivable/configure-customer-invoices.md
       - name: Deposit customer payments

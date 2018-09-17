@@ -5,7 +5,7 @@ title: Use record template to create a new record
 description: This procedure shows how to use a previously defined record template to create a new record. 
 author: margoc
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

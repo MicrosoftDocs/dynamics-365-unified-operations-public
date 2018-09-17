@@ -5,7 +5,7 @@ title: Create activity relation - Successor
 description: The flow of activities in a lean production flow is documented through activity relations. 
 author: cvocph
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

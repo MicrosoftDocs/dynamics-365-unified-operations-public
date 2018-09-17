@@ -5,7 +5,7 @@ title: Configure main accounts for asset retirement obligation posting and marke
 description: For Japan, asset retirement obligation needs to be assessed and posted when acquiring a fixed asset with legal obligations at retirement. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

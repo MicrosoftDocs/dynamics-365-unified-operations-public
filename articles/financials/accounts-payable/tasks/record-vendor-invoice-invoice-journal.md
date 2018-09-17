@@ -5,7 +5,7 @@ title: Record a vendor invoice in the invoice journal
 description: This task guide will show how to record vendor invoices that are not associated with purchase orders. 
 author: abruer
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

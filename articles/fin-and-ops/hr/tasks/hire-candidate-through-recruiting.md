@@ -5,7 +5,7 @@ title: Hiring candidate through recruiting
 description: This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project. 
 author: kherr75
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

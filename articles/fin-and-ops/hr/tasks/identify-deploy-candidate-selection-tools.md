@@ -5,7 +5,7 @@ title: Identify and deploy candidate selection tools
 description: Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills. 
 author: kherr75
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

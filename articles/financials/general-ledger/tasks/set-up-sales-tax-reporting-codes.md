@@ -5,7 +5,7 @@ title: Set up sales tax reporting codes
 description: The Sales tax reporting codes refer to a field number on a sales tax report. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

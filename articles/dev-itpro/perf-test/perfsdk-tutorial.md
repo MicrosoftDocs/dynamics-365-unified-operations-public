@@ -190,12 +190,12 @@ Remove these lines from any tests that will be run as load tests. This code is r
 
 Make sure that the values that you entered when you made the task recording are randomized. You might have to use the Data Expansion Tool first to generate test data.
 
-## Set up Visual Studio Team Services for multiuser testing
+## Set up Azure DevOps for multiuser testing
 
-For this example, you will use the ProcureToPay.cs file. To start Visual Studio, you must sign in to the [Visual Studio Team Services portal](https://app.vssps.visualstudio.com/profile/view), and then select **Open in Visual Studio**.
+For this example, you will use the ProcureToPay.cs file. To start Visual Studio, you must sign in to the [Azure DevOps portal](https://app.vssps.visualstudio.com/profile/view), and then select **Open in Visual Studio**.
 
 > [!NOTE]
-> You must complete this step only one time. After you've signed in to Visual Studio Team Services, the settings are saved.
+> You must complete this step only one time. After you've signed in to Azure DevOps, the settings are saved.
 
 [![Open in Visual Studio](./media/vsonline-5-1024x323.jpg)](./media/vsonline-5.jpg)
 
@@ -220,7 +220,7 @@ For this example, you will use the ProcureToPay.cs file. To start Visual Studio,
 
 ### Test the sandbox environment
 
-Up to this point, the instructions have assumed that you have a developer topology where the AOS machine is also your development machine. To run load tests in Visual Studio Team Services, the environment that you test must be a sandbox environment. You must complete a few additional steps to establish trust between the sandbox environment and the computer that runs the load tests. The computer that runs the load tests can be either your development machine or the test agent that is created by Visual Studio Online.
+Up to this point, the instructions have assumed that you have a developer topology where the AOS machine is also your development machine. To run load tests in Azure DevOps, the environment that you test must be a sandbox environment. You must complete a few additional steps to establish trust between the sandbox environment and the computer that runs the load tests. The computer that runs the load tests can be either your development machine or the test agent that is created by Visual Studio Online.
 
 1. Establish a Remote Desktop connection to your sandbox AOS machine, and copy over the **.cer** file. Double-click the file to install it. When you're prompted for the certificate store, select **Personal**.
 2. Start IIS, and find **AOSService** in the list of sites. Then select **Explore**, and find the **wif.config** file. In the **wif.config** file, find the authority that is named **AxTokenIssuer**. You must add your thumbprint to the list of thumbprints for this authority. (Use the values from the certificate that you generated earlier.)

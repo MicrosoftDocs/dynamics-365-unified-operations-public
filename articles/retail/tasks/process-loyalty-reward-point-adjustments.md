@@ -5,7 +5,7 @@ title: Process loyalty reward point adjustments
 description: This procedure demonstrates how to look up loyalty card information and adjust loyalty reward points. 
 author: scott-tucker
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Create an accelerated depreciation document and enter usage data
 description: For Japan, Accelerated depreciation is declared on a per document basis. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
