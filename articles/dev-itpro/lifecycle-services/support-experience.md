@@ -39,8 +39,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (Azure AD) account. This account is created during the subscription setup for Microsoft Dynamics 365 for Finance and Operations.
 
-## Create a Azure DevOps project
-The **Support** tile in a Lifecycle Services (LCS) project uses Microsoft Visual Studio Team Services (Azure DevOps) to store issues that are submitted through the client and issues that are manually created from the **Support** tile in LCS. This functionality requires that a Azure DevOps project be configured in the LCS project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the Azure DevOps project, and must authorize LCS to access Azure DevOps on their own behalf. Most users don't have access to LCS or Azure DevOps. Therefore, in the Azure DevOps project, you should create a special system account that can be used to submit issues.
+## Create an Azure DevOps project
+The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps to store issues that are submitted through the client and issues that are manually created from the **Support** tile in LCS. This functionality requires that a Azure DevOps project be configured in the LCS project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the Azure DevOps project, and must authorize LCS to access Azure DevOps on their own behalf. Most users don't have access to LCS or Azure DevOps. Therefore, in the Azure DevOps project, you should create a special system account that can be used to submit issues.
 
 ### Create a new Azure DevOps project
 
@@ -83,13 +83,13 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Microsoft Visua
 ## Configure LCS
 1.  Sign in to LCS by using an account that has the **Owner** role for the LCS project that Finance and Operations is deployed in.
 2.  Open the project in LCS.
-3.  Click **Project settings**, and then click the **Visual Studio Team Services** link.
+3.  Click **Project settings**, and then click the **Azure DevOps** link.
 
     [![LCS-Project-Tiles](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png)
     [![LCS-Project-Settings-VSO](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png)
 
 4.  Click **Setup Azure DevOps**.
-5.  In the **Visual Studio Team Services site URL** field, enter the URL of the Azure DevOps project that you created in the previous section.
+5.  In the **Azure DevOps site URL** field, enter the URL of the Azure DevOps project that you created in the previous section.
 6.  In the **Personal access token** field, enter the personal access token that you created in the previous section. [![LCS-Project-Settings-VSO-Setup-1](./media/lcs-project-settings-vso-setup-1.png)](./media/lcs-project-settings-vso-setup-1.png)
 7.  Click **Continue**.
 8.  Select the VSO project to use, and then click **Continue**.
@@ -165,7 +165,7 @@ In the LCS **Support** tile, issues are stored as work items in the Azure DevOp
 
 ### Edit issues
 1.  In the **Issues** grid, click the title of an issue.
-2.  If necessary, sign in to Visual Studio Team Services by using an account that has access to the Azure DevOps project that you set up in the first section of this topic, **Create a Visual Studio Team Services project**. 
+2.  If necessary, sign in to Azure DevOps by using an account that has access to the Azure DevOps project that you set up in the first section of this topic, **Create an Azure DevOps project**. 
 
 **Note:** There is an issue in Azure DevOps, where the link to edit work items doesn't work correctly if sign-in is required. If you see the **Assigned to me** query after you sign in to Azure DevOps, go back to LCS, and click the title of the issue in the issue grid again.
 
