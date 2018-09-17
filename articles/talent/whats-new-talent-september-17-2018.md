@@ -40,27 +40,25 @@ This topic describes features that are either new or changed in Core HR.
 
 ## Leave and Absence – Accrue time based on hours worked
 
-A new accrual type has been added to Leave Plans. The accrual schedule can now
-be based on months of service or hours worked. 
+A new accrual type has been added to Leave plans. The accrual schedule can now be based on months of service or hours worked. 
 
 ## Platform update 18
 
-Platform update 18 is now part of the Talent release.
+Platform update 18 is now part of the Talent release. 
 
 -   Mandatory and other fields can be hidden via personalization. This allows a user to create a simplified experience where mandatory fields that are defaulted by business logic are not shown. Hidden mandatory fields are also temporarily made visible if they are empty when a save is attempted.
 
--   In Platform Update 18, the Talent web client began an effort to align its visuals with Microsoft Fluent Design.
+-   In Platform update 18, the Talent web client now aligns its visuals with Microsoft Fluent Design.
 
-    -   When fields are in “read mode”, simply select the edit option in the fields to switch the form to edit.
+    -   When fields are in “read mode”, you can simply select the edit option in the fields to switch the form to edit.
 
     -   Changes in how fields display when in read mode.
 
-    -   Bolding of headings in workspaces and pages.
+    -   Headings in workspaces and pages are bold.
 
--   [Improved behavior for non-replacing
-    lookups](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fbusiness-applications-release-notes%2FOctober18%2Fdynamics365-finance-operations%2Fnon-replacing-lookups&data=02%7C01%7C%7Ce0b3b3bee47b4424aaa208d619ce86f2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636724772137980342&sdata=RN1qjtZSLtS010zgs0KlcwFrrB8Z7uWWGtFjdxdaamg%3D&reserved=0)
+-   The behavior of non-replacing lookups has been improved. For more information, see [Improved behavior for non-replacing
+    lookups](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fbusiness-applications-release-notes%2FOctober18%2Fdynamics365-finance-operations%2Fnon-replacing-lookups&data=02%7C01%7C%7Ce0b3b3bee47b4424aaa208d619ce86f2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636724772137980342&sdata=RN1qjtZSLtS010zgs0KlcwFrrB8Z7uWWGtFjdxdaamg%3D&reserved=0).
 
 ## Bug fixes
 
-This release includes several additional bug fixes, including: References to ACA, ADA, I9 will only be enabled in US companies.
-
+This release includes several additional bug fixes, including references to ACA, ADA, and I9 now will only be enabled in US companies.
