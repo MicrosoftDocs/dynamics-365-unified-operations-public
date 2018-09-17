@@ -5,7 +5,7 @@ title: Cancel vendor fiscal documents
 description: This topic provides information about how to cancel a vendor fiscal document for Brazil.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 6/5/2018
+ms.date: 06/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
