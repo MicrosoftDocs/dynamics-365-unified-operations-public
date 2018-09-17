@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 7.3
 
 # New or updated task guides (December 2017)
 
+[!include [banner](../includes/banner.md)]
+
 This topic lists the new or updated Task guides that were released to the Microsoft (December 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations.
 
 
