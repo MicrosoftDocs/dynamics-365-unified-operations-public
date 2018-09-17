@@ -74,8 +74,10 @@ Use the Fixed asset journal to create transactions for one fixed asset.
 7.  In the **Transaction type** field, select **Putting into operation**.
 8.  In the **FA inventory number** field, select the inventory number of the fixed asset.
 9.  In the **Depreciation bonus** and **Reason code** fields, select the reason code and depreciation bonus code (if needed).
+  
   > [!NOTE]
-  > You cannot modify the Value model field in this form, because the **Putting into operation** transactions are created for all value models at the same time.*
+  > You cannot modify the **Value model** field in this form, because the **Putting into operation** transactions are created for all value models at the same time.
+  
 10.  Click **OK**. The lines with **Putting into operation** transaction type for the value models, registered in the fixed asset account, are created in the **Journal voucher** form.
 11. Click **Validate** \> **Validate** to validate the transactions.
 12. Click **Post** \> **Post** to post the transactions.
