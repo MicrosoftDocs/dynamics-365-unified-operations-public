@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 20
 
 # Attributes that make methods extensible
 
+[!include [banner](../includes/banner.md)]
+
 This topic describes the various attributes that can be used to control extensibility capabilities for methods.
 
 The following table provides an overview of the default support for extensibility on methods.
