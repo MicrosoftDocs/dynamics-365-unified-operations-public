@@ -1,5 +1,4 @@
 ---
-
 # required metadata
 
 title: Working time calendars
@@ -9,18 +8,19 @@ manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365 for Talent
+ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  
-audience: Application user
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: 
+ms.search.scope: Talent
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: 
 ms.search.region: 
 # ms.search.industry: 
 ms.author: jcart
