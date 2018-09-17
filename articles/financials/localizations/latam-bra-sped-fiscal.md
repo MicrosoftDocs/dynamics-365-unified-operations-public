@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 7.3
 
 # SPED fiscal files 
 
+[!include [banner](../includes/banner.md)]
+
 Sistema Publico de Escrituração Digital (SPED) fiscal text files contain information about all fiscal documents that have been received and issued for a specific fiscal establishment during a month. Federal tax authorities use the SPED system to verify tax calculations for Imposto Sobre Circulação de Mercadorias e Serviços (ICMS) and Imposto sobre Produtos Industrializados (IPI).
 
 ## Setup
