@@ -66,9 +66,9 @@ There are two ways of acquiring (putting into operation) fixed assets:
 Use the Fixed asset journal to create transactions for one fixed asset.
 
 1.  Click **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
-2.  Click **New** to create a fixed asset journal.
+2.  Click the **New** button to create a fixed asset journal.
 3.  In the **Name** and **Description** fields, select a journal name and enter a description for the journal.
-4.  Click **Lines** button to open the **Journal voucher** form.
+4.  Click the **Lines** button to open the **Journal voucher** form.
 5.  Click the New button to create the journal voucher. The **Add to journal** form is open.
 6.  In the **Add to journal** form, in the **Transaction date** field, set the transaction date.
 7.  In the **Transaction type** field, select **Putting into operation**.
@@ -79,7 +79,7 @@ Use the Fixed asset journal to create transactions for one fixed asset.
 10.  Click **OK**. The lines with **Putting into operation** transaction type for the value models, registered in the fixed asset account, are created in the **Journal voucher** form.
 11. Click **Validate** \> **Validate** to validate the transactions.
 12. Click **Post** \> **Post** to post the transactions.
-  >   Fixed asset and ledger transactions will be created. The fixed asset s tatus is updated to **In operation**.
+  >   Fixed asset and ledger transactions will be created. The fixed asset status is updated to **In operation**.
 
   > [!NOTE] 
   > You can modify the text in the Transaction text field and the fixed asset amount acquired in the Amount field, if necessary. The suggested purchase price is displayed by default.
@@ -103,10 +103,10 @@ To create standard printing forms, complete the following steps.
   -   **Inventory card** (\#FA-6)
   -   **Equipment acceptance statement** (№ FA-14)
 2.  in the FA transaction form (**Fixed assets \> Value model \> Transactions**, transaction with **Putting into operation** type) click **Documents \> Documents**:
-  -   Acceptance report (\#FA-1) and Transference statement (\#FA-1) – acceptance of fixed assets except buildings and encroachments
-  -   Acceptance report (\#FA-1a) and Transference statement (\#FA-1a) – acceptance of buildings and structures
-3.  Click **New** button to create the document record.
-4.  Click **Print** button to create the document as excel file.
+  -   **Acceptance report (\#FA-1)** and **Transference statement (\#FA-1)** – acceptance of fixed assets except buildings and encroachments
+  -   **Acceptance report (\#FA-1a)** and **Transference statement (\#FA-1a)** – acceptance of buildings and structures
+3.  Click the **New** button to create the document record.
+4.  Click the **Print** button to create the document as excel file.
 You may review all created document records in **Fixed assets** \> **Inquiries \>Documents**.
 
 ## Fixed asset assembly
@@ -119,15 +119,15 @@ You can assemble a fixed asset from the inventory items, and then to put the fix
 5. On the **Inventory dimension** tab, specify the warehouse dimensions, configuration (if needed) etc. that are used to write off the item from the inventory
   > If a fixed asset is built from items bought in one purchase, click the **From purchase** button and select the purchase with items for assembly in the **Requisition** form.
 6. Click the **Add** button. All items included in the purchase are added to the **Componentry** form
-7. Put the fixed asset into operation using **FA journal** (**Fixed asset (Russia) \> Journals \> FA journal**).
+7. Put the fixed asset into operation using **FA journal** (**Fixed asset (Russia)** \> **Journals** \> **FA journal**).
   > [!NOTE]
   > By default, the cost of acquiring the fixed asset is determined as the cost price amount of all components. Where necessary, you can modify the cost amount.
 
 ## Reverse acquisition transactions
 When reversing transactions, you can specify a reversal date if it is different from the original transaction date. By default, the reversal date is equal to the original transaction date.
-1.  Select **Fixed Assets \> Fixed Assets** *\>* **Value models** *\>* **Transactions**. 
+1.  Select **Fixed Assets** \> **Fixed Assets** *\>* **Value models** \> **Transactions**. 
 2.  Click the **Reverse transaction** button.
-  >   If needed, you can change the transaction reversal date in the **Reverse transaction** form**.**
+  >   If needed, you can change the transaction reversal date in the **Reverse transaction** form.
 3.  Click **OK**. A transaction to reverse the original transaction is created in the **FA transactions** form.
 4.  Click the **Voucher** button to open the **Voucher transaction** form, where you can view the transactions in the ledger.
 When reverse transactions are posted for all value models the fixed asset status is change to **Scheduled** or **Bought** depending on initial status of the fixed asset
