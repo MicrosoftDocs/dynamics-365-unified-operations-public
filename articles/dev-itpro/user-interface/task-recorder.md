@@ -117,9 +117,9 @@ Congratulations! You have created your first Task recording. You can proceed to 
 **Stop** is used to end the recording session. Ending the recording session isn't reversible, so the user should be sure that the recording is complete before clicking **Stop**. Clicking **Stop** will take the user to the download options screen.
 [![TaskRecorderGuide-TaskRecorderToolbarStop](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
 
-### Start/End Task
+### Start/End task
 
-**Start/End Task** enables a user to specify the beginning and ending of a set of grouped steps. Click the **Start Task** button to add a "Start Task" step to the end of the current list of recorded steps. Then perform the steps that you want to include in the task. After you've performed (and thus recorded) the steps in the task, click the **End Task** button to add an "End Task" step to the end of the current list of recorded steps.
+**Start/End task** enables a user to specify the beginning and ending of a set of grouped steps. Click the **Start Task** button to add a "Start Task" step to the end of the current list of recorded steps. Then perform the steps that you want to include in the task. After you've performed (and thus recorded) the steps in the task, click the **End Task** button to add an "End Task" step to the end of the current list of recorded steps.
 
 **Note**: You must start your tasks before performing/recording the steps that you want to include in the task. You must End the task after you have performed/recorded all of the steps that you want to include in the task.
 
@@ -128,9 +128,9 @@ Congratulations! You have created your first Task recording. You can proceed to 
 [![This image shows the location of the Start and End Task buttons, which are used to create Task groupings around sets of recorded steps.](./media/taskrecorderguide-taskrecorderrecordingcontrolstasks.png)](./media/taskrecorderguide-taskrecorderrecordingcontrolstasks.png)
 
 
-### Delete/Restore Step
+### Delete/Restore step
 
-**Delete/Restore Step** enables a user to remove steps from the recording, or undo the removal of a step from the recording. You must first select the step in the Steps list that you want to delete/restore, and then click the **Delete/Restore Step** button.
+**Delete/Restore step** enables a user to remove steps from the recording, or undo the removal of a step from the recording. You must first select the step in the Steps list that you want to delete/restore, and then click the **Delete/Restore step** button.
 
 > [!NOTE]
 > The behavior of the **Delete** button changes when in **Maintenance mode.** When deleting a pending/un-executed step in **Maintenance mode**, the step cannot be restored after playback has progressed past the point at which it would have executed the Deleted step. For example, you load a recording that contains 3 steps in Maintenance mode. Before starting playback, you delete step 2. You can restore step 2, as long as playback has not executed step 3. After you start playback, and playback has "skipped' step 2 (because you deleted it) and executed step 3, you will not be able to restore step 2. This is because step 2 was not executed and thus not recorded, and it cannot be retroactively added back into the recording at its previous position. 
@@ -145,9 +145,9 @@ Congratulations! You have created your first Task recording. You can proceed to 
 ## Adding annotations
 An **annotation** is any additional information that is associated with a step in a Task recording. Annotations contain information that is in addition to the information that is automatically recorded by Task Recorder.
 
-### Step Instruction
+### Step instruction
 
-The **Step Instruction** is the primary text that is displayed for this step in the Task guide. There are usually 2-3 alternative options for step instructions, and they appear in the following order when editing the annotation.
+The **Step instruction** is the primary text that is displayed for this step in the Task guide. There are usually 2-3 alternative options for step instructions, and they appear in the following order when editing the annotation.
 
 [![This image shows the annotation options for changing the Step instruction](./media/taskrecorderguide-annotationlabels.png)](./media/taskrecorderguide-annotationlabels.png) 
 
@@ -298,7 +298,7 @@ You can move steps under a sub-task without playing back or re-recording the ent
 If you want the first step in the task guide to be within a sub-task, create a sub-task step as the second step, and then move the first step into it. You can add or move as many steps or sub-tasks as needed.
 5.  When you are done editing the task guide, click **Done editing**, and then choose one of the options to save or publish the task guide.
 
-### Collapse Recording name and description
+### Collapse recording name and description
 
 You can expand and collapse the **Recording name** and **Recording description** fields. When these fields are collapsed, more steps will be visible in the Task recorder editing pane. 
 
@@ -357,11 +357,11 @@ Because the UI element is not visible on the screen, the Task guide pop-up will 
 
 In some cases, the Task guide pop-up will not mention the form by name. This is because the user may need to navigate to a dynamic form. A dynamic form is a form that is not modeled, frequently known as a runtime-generated form. These sorts of forms do not have a proper name. Some examples of runtime-generated forms include simple and custom lookups. The way for a user to navigate to a lookup form is to re-open the lookup.
 
-### Next & Previous step
+### Next & previous step
 
 These buttons appear on the Task guide pop-up and allow a user to manually control the flow of the Task guide. When clicking the Next or Previous step, the Task guide will move to the next or previous step in the guide. The Task guide does not check whether the user has completed a step before going to the next or previous step. The Task guide also ***never*** automatically completes any step for the user, even when using the Next and Previous Step options. Using the Next and Previous step buttons can result in producing an error state, if the previous or next step refers to a UI element that is on the current form. When the user is completing an Informational Step, the only way to proceed is to use the Next step button. This is required because an Informational Step does not represent an action that was recorded on any UI element. Since no action was recorded in the Task recording, the Task guide does not have the information necessary to know what action to expect the user to complete.
 
-### The "See More" button
+### The "See more" button
 
 Clicking this button will expand the Task guide pop-up to show additional information related to the step. The additional information is often optional reading material that is not required for the user to successfully complete the step. In the additional information, the user may see:
 -   An **Example** value
@@ -370,11 +370,11 @@ Clicking this button will expand the Task guide pop-up to show additional inform
 -   A **Note**
     -   A Note may contain scenario-specific information that will help provide context to the user about the current step of the Task guide.
 
-## Screenshot Extension setup 
+## Screenshot extension setup 
 
 ### Document generation setup (optional)
 
-Using a pre-release Chrome extension, Task Recorder is able to take screenshots of the browser as a user records a business process. After the user completes the recording, Task Recorder can then use these screenshots to generate Microsoft Word documents. To enable this functionality, follow the steps below to install the pre-release Google Chrome extension that enables Task Recorder to capture screenshots during recording.
+Using a **pre-release** Chrome extension, Task Recorder is able to take screenshots of the browser as a user records a business process. After the user completes the recording, Task Recorder can then use these screenshots to generate Microsoft Word documents. To enable this functionality, follow the steps below to install the pre-release Google Chrome extension that enables Task Recorder to capture screenshots during recording.
 
 1.  Open Google Chrome
 2.  Go to **Menu &gt; More tools &gt; Extensions**. 
@@ -389,7 +389,9 @@ Using a pre-release Chrome extension, Task Recorder is able to take screenshots 
 
 6.  Restart Chrome.
 
-Task Recorder will now take screenshots of the tab that has the client running. Task Recorder **does not** capture screenshots from other tabs or of the user's desktop.
+Task Recorder will now take screenshots of the tab that has the client running. These screenshots are only available for a certain period of time after the recording has been played. Starting in Platform Update 16, screenshots are available for a week after playback. Prior to that, the screenshots are only available for 10 minutes. If the screenshots have expired, you can regenerate them by playing the task recording again.  
+
+Note that Task Recorder **does not** capture screenshots from other tabs or of the user's desktop.
 
 ## Test generation
 
