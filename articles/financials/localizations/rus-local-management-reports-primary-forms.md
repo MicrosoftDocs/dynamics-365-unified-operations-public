@@ -143,18 +143,18 @@ You need to select a particular advance report number to be included to the repo
 > [!NOTE]
     > The amounts in the <STRONG>Advance report</STRONG> form are recalculated on the date when the payment journal for the advance holder is posted.
     
-    
 The **Advance report** will be printed in Microsoft Excel format.
 
 
-## Turnover report 
+## Advance holder turnover register
+ 
+An additional report **Advance holder turnover register** is available in **General ledger** \> **Inquiries and reports** \> **Turnover balance statement**.
+Use this procedure to print .
 
-Use this procedure to print an advance report in a form that is legally required in Russia. You can print an advance report after an advance invoice that is issued to an advance holder is settled.
+1.  Click .
 
-1.  Click **Accounts payable** \> **Common** \> **Advance holders** \> **Advance reports**.
-
-2.  Create and post an advance report.
+2.  Create .
     
     > [!NOTE]
-    > The amounts in the <STRONG>Advance reports</STRONG> form are recalculated on the date when the payment journal for the advance holder is posted.
+    > .
 
