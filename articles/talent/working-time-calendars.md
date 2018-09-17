@@ -1,4 +1,4 @@
----
+--
 # required metadata
 
 title: Working time calendars
@@ -13,12 +13,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Talent
+ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -60,7 +60,4 @@ To set up a calendar, follow these steps:
 
 10. To assign a calendar to employees, select **Assign to employees** in the Action Pane. Select the that employees you would like to assign this calendar to, and then click **Assign**.
 
-
-
 Employees aren't required to have calendars assigned. If there is a working time calendar defined, off days are automatically excluded from the request. The amount, in hours or days, defaults to the working times defined in the calendar. If an employee doesn't have a calendar assigned, all days are available for time off and the amount of time off is not the default for the request. 
-
