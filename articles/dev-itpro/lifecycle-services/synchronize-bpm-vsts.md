@@ -1,6 +1,6 @@
 ---
-title: Synchronize BPM libraries with Visual Studio Team Services
-description: This topic provides information about how to synchronize a BPM library in LCS with Visual Studio Team Services (VSTS).
+title: Synchronize BPM libraries with Azure DevOps
+description: This topic provides information about how to synchronize a BPM library in LCS with Azure DevOps.
 author: kfend
 manager: AnnBe
 ms.date: 11/13/2017
@@ -28,28 +28,28 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Synchronize BPM libraries with Visual Studio Team Services
+# Synchronize BPM libraries with Azure DevOps
 
 [!include [banner](../includes/banner.md)]
 
-You start the implementation stage of a project by synchronizing a Business process modeler (BPM) library with your project in Microsoft Visual Studio Team Services (VSTS). In this way, you can review processes and associate requirements with business processes. By synchronizing a BPM library with a VSTS project, you can also track the progress of your implementation project in VSTS, and can associate various work items with requirements and business processes. These work items include bugs, tasks, backlog items, tests, and documents.
+You start the implementation stage of a project by synchronizing a Business process modeler (BPM) library with your project in Microsoft Azure DevOps. In this way, you can review processes and associate requirements with business processes. By synchronizing a BPM library with a Azure DevOps project, you can also track the progress of your implementation project in Azure DevOps, and can associate various work items with requirements and business processes. These work items include bugs, tasks, backlog items, tests, and documents.
 
-Currently, BPM-VSTS synchronization doesn't support custom work item types or synchronizing business processes with custom work item types. If you try either of these, you will receive a warning. If you choose to ignore the warning and attempt a VSTS sync with a custom template, you can avoid synchronization issues by verifying the following for the template:
+Currently, BPM-Azure DevOps synchronization doesn't support custom work item types or synchronizing business processes with custom work item types. If you try either of these, you will receive a warning. If you choose to ignore the warning and attempt a Azure DevOps sync with a custom template, you can avoid synchronization issues by verifying the following for the template:
 - Does not delete any work item type
 - Does not delete any state of a work item type
 - Does not add any required fields to a work item type
 
-To learn more about VSTS, go to [www.visualstudio.com/team-services](http://www.visualstudio.com/team-services).
+To learn more about Azure DevOps, go to [www.visualstudio.com/team-services](http://www.visualstudio.com/team-services).
 
-## LCS project settings: Set up VSTS
+## LCS project settings: Set up Azure DevOps
 
-If you've already set up VSTS from Microsoft Dynamics Lifecycle Services (LCS), you can skip the procedures in this section.
+If you've already set up Azure DevOps from Microsoft Dynamics Lifecycle Services (LCS), you can skip the procedures in this section.
 
 ### Create a personal access token
 
-To connect to a VSTS project, LCS is authenticated by using a personal access token. Follow these steps to create a personal access token in VSTS.
+To connect to a Azure DevOps project, LCS is authenticated by using a personal access token. Follow these steps to create a personal access token in Azure DevOps.
 
-1. Go to <https://www.visualstudio.com>, sign in, and find your VSTS project.
+1. Go to <https://www.visualstudio.com>, sign in, and find your Azure DevOps project.
 2. In the upper-right corner, hold the pointer over your name, and then, on the menu that appears, select **Security**.
 3. Select **Add** to create a new personal access token.
 4. Enter a name for the token, and then specify how long the token should last.
@@ -59,23 +59,23 @@ To connect to a VSTS project, LCS is authenticated by using a personal access to
     > [!NOTE]
     > You won't be able to find the token details again after you complete this step and move away from the page. Therefore, make sure that you've copied the token before you move away from the page.
 
-### Configure your LCS project to connect to VSTS
+### Configure your LCS project to connect to Azure DevOps
 
 1. In your LCS project, select the **Project settings** tile.
-2. Select **Visual Studio Team Services**, and then select **Setup Visual Studio Team Services**. This configuration is required by many LCS tools. If you've already configured LCS to connect to your VSTS project, you can either skip this procedure or select **Change** to change the existing configuration.
-3. Enter the root URL for your VSTS account, and the personal access token that you created earlier, and then select **Continue**.
-4. Select your VSTS project.
-5. Specify the mapping between LCS/BPM items and the associated VSTS work item types.
+2. Select **Azure DevOps**, and then select **Setup Azure DevOps**. This configuration is required by many LCS tools. If you've already configured LCS to connect to your Azure DevOps project, you can either skip this procedure or select **Change** to change the existing configuration.
+3. Enter the root URL for your Azure DevOps account, and the personal access token that you created earlier, and then select **Continue**.
+4. Select your Azure DevOps project.
+5. Specify the mapping between LCS/BPM items and the associated Azure DevOps work item types.
 
     ![Work item type mappings](./media/newbpm_BlogPost24.png)
 
 6. Select **Continue**, review your changes, and then select **Save**.
 
-## Synchronize a BPM library with a VSTS project
+## Synchronize a BPM library with a Azure DevOps project
 
-After you've set up the connection between the LCS project and a VSTS project, you can synchronize a BPM library with the VSTS project. When you synchronize a BPM library with a VSTS project, a VSTS work item is created for each business process line in the BPM library. In addition, the hierarchy of business processes in BPM is reflected in the hierarchy of work items in VSTS. The type of work items that are created in VSTS depends on the settings of your LCS project.
+After you've set up the connection between the LCS project and a Azure DevOps project, you can synchronize a BPM library with the Azure DevOps project. When you synchronize a BPM library with a Azure DevOps project, a Azure DevOps work item is created for each business process line in the BPM library. In addition, the hierarchy of business processes in BPM is reflected in the hierarchy of work items in Azure DevOps. The type of work items that are created in Azure DevOps depends on the settings of your LCS project.
 
-This synchronization is a one-way synchronization. Changes in LCS are reflected in VSTS, but changes in VSTS aren't reflected in LCS.
+This synchronization is a one-way synchronization. Changes in LCS are reflected in Azure DevOps, but changes in Azure DevOps aren't reflected in LCS.
 
 The following information is synchronized:
 
@@ -85,20 +85,20 @@ The following information is synchronized:
 - Countries or regions (as tags)
 - Industries (as tags)
 
-To synchronize a BPM library with a VSTS project, on the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **VSTS sync**.
+To synchronize a BPM library with a Azure DevOps project, on the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **Azure DevOps sync**.
 
-![Starting VSTS synchronization from the tile for a library](./media/newbpm_BlogPost25.png)
+![Starting Azure DevOps synchronization from the tile for a library](./media/newbpm_BlogPost25.png)
 
-You can also start VSTS synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **VSTS sync**.
+You can also start Azure DevOps synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **Azure DevOps sync**.
 
-![Starting VSTS synchronization from the toolbar in a library](./media/newbpm_BlogPost26.png)
+![Starting Azure DevOps synchronization from the toolbar in a library](./media/newbpm_BlogPost26.png)
 
 >[!NOTE]
 > BPM localization is not supported. If you edit in the new BPM client in any language other than EN-US, your changes will only display when you view the BPM in the language in which the changes were made. To view any changes made in EN-US, you must synchronize with Visual Studio Team Server before the changes will display.
 
-## Turn off synchronization of BPM with VSTS
+## Turn off synchronization of BPM with Azure DevOps
 
-To turn off synchronization, on the **Business process libraries** page, select the library that you want to stop synchronizing, select the ellipsis button (…), and then unselect **VSTS sync**.
+To turn off synchronization, on the **Business process libraries** page, select the library that you want to stop synchronizing, select the ellipsis button (…), and then unselect **Azure DevOps sync**.
 
 ## Review processes and add requirements
 
@@ -117,9 +117,9 @@ When a business process is marked as reviewed, the **Reviewed** column is update
 
 ![Example of a Review column](./media/newbpm_BlogPost28.png)
 
-If a BPM library is synchronized with a VSTS project, and you mark a process as reviewed in BPM, its status is changed to **Active** in VSTS.
+If a BPM library is synchronized with a Azure DevOps project, and you mark a process as reviewed in BPM, its status is changed to **Active** in Azure DevOps.
 
-While you're reviewing a business process that is connected to VSTS, you can add a requirement directly to your VSTS project.
+While you're reviewing a business process that is connected to Azure DevOps, you can add a requirement directly to your Azure DevOps project.
 
 1. Select a business process.
 2. In the right pane, on the **Requirements** tab, select **Add requirement**.
@@ -127,6 +127,6 @@ While you're reviewing a business process that is connected to VSTS, you can add
 
     ![Creating a requirement](./media/newbpm_BlogPost29.png)
 
-    In VSTS, a requirement work item is created that is associated with the current business process.
+    In Azure DevOps, a requirement work item is created that is associated with the current business process.
 
-To go to the VSTS work items that are associated with the current business process, on the **Requirements** tab, select the appropriate links.
+To go to the Azure DevOps work items that are associated with the current business process, on the **Requirements** tab, select the appropriate links.

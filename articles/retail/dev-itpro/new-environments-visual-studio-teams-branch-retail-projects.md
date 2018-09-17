@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up new environments, VSTS, and branches for Retail projects
-description: This topic describes recommended practices for setting up new environments, Microsoft Visual Studio Team Services, and branches for Microsoft Dynamics 365 for Retail implementation projects.
+title: Set up new environments, Azure DevOps, and branches for Retail projects
+description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 for Retail implementation projects.
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 ---
 
-# Set up new environments, VSTS, and branches for Retail projects
+# Set up new environments, Azure DevOps, and branches for Retail projects
 
 Starting in Microsoft Dynamics AX 7.0, most environments are hosted in the cloud. They are either Microsoft-hosted (on a Microsoft subscription) or cloud-hosted (on a customer subscription). By default, environments are Microsoft-hosted. Typically, cloud-hosted environments are used to provide more control over a development or build environment. For more details, see [Lifecycle Services (LCS) user guide](../../dev-itpro/lifecycle-services/lcs-user-guide.md).
 
@@ -127,7 +127,7 @@ You can build deployable packages out of multiple branches. In this case, you mu
 
 The following high-level steps are used to set up an environment so that development work can begin. For details about the numbers in brackets, see the previous illustration and the related information.
 
-1. Deploy a build environment and an empty Main branch in Microsoft Visual Studio Team Services (VSTS) [1].
+1. Deploy a build environment and an empty Main branch in Microsoft Azure DevOps [1].
 2. Deploy a development environment.
 3. Create the Dev branch and the release branch (for example, ProdRel1 in the previous illustration) [2, 3].
 4. Add the Retail SDK [4–7].
@@ -139,19 +139,19 @@ After you've completed all these steps, your branches, environment, and builds w
 
 The following sections explain each step in detail.
 
-## Deploy a build environment and an empty Main branch in VSTS
+## Deploy a build environment and an empty Main branch in Azure DevOps
 
 Use the LCS portal to deploy a new build environment. We recommend that you use a cloud-hosted environment, because you will have more options and capabilities if you have administrative rights. See the table about the various environment hosting models in the "Development Tier 1 environments" section, earlier in this topic.
 
-Start by creating a new VSTS project if you don't already have one. In your VSTS account, select **New project**.
+Start by creating a new Azure DevOps project if you don't already have one. In your Azure DevOps account, select **New project**.
 
 ![VSTS project](./media/2-VSTS-project.png)
 
-After the new VSTS project is created, you must allow VSTS to access it. First, create a new personal access token on the VSTS account. Then configure the LCS project with the correct URL and personal access token.
+After the new Azure DevOps project is created, you must allow Azure DevOps to access it. First, create a new personal access token on the Azure DevOps account. Then configure the LCS project with the correct URL and personal access token.
 
 ![LCS project](./media/3-LCS-project.png)
 
-After the LCS project is linked to VSTS, you're ready to deploy.
+After the LCS project is linked to Azure DevOps, you're ready to deploy.
 
 Add a new environment, select the version, select **DEVTEST** as the topology, and select a build environment. On the next page, enter a meaningful name for the environment. Then enter a similar name for the build agent.
 
@@ -173,7 +173,7 @@ Use the LCS portal of your implementation project to create a cloud-hosted devel
 
 Select the correct version, select **DEVTEST**, and then select **DEV**. Enter a meaningful and unique name, and make sure that the machine name is also unique in the advanced settings. The process of preparing the machine might take a couple of hours.
 
-Because there is currently no Dev branch, you can skip the process of mapping VSTS to the local directories. However, you will have to complete that process later.
+Because there is currently no Dev branch, you can skip the process of mapping Azure DevOps to the local directories. However, you will have to complete that process later.
 
 ## Create the Dev and release branches
 
@@ -184,14 +184,14 @@ As was mentioned earlier, you must have a branch that holds changes that are oft
 Follow these steps to create the branches.
 
 1. Sign in to a development environment.
-2. Start Microsoft Visual Studio as an administrator, and make sure that you signed in by using an account that has access to the VSTS project.
-3. In Team Explorer, connect Visual Studio to the VSTS project, if this connection doesn't already exist.
+2. Start Microsoft Visual Studio as an administrator, and make sure that you signed in by using an account that has access to the Azure DevOps project.
+3. In Team Explorer, connect Visual Studio to the Azure DevOps project, if this connection doesn't already exist.
 4. Map the **Trunk**/**Main** folder to a local folder (if this mapping doesn't already exist). This mapping is temporary.
 5. In Source Control Explorer, right-click the **Main** folder, and then select **Branching and Merging** \> **Convert to Branch**.
 6. Right-click the **Main** branch, select **Branching and Merging** \> **Branch**, and name the new branch **Dev**.
-7. Use **Pending Changes**, and submit this change to VSTS.
+7. Use **Pending Changes**, and submit this change to Azure DevOps.
 8. Right-click the **Main** branch, select **Branching and Merging** \> **Branch**, and name the new branch **ProdRel1**.
-9. Use **Pending Changes**, and submit this change to VSTS.
+9. Use **Pending Changes**, and submit this change to Azure DevOps.
 
 At this point, Source Depot Explorer in Visual Studio should resemble the following illustration.
 
@@ -293,19 +293,19 @@ Regardless of whether there are customizations in the code branches, the followi
 
 You should now be able to run MPOS in the debugger from your local sources.
 
-The process of preparing a development environment is now completed. At this point, any extension code (X++, Commerce runtime [CRT], Retail Server, channel SQL, point of sale [POS], and so on) can be written, debugged, tested, and submitted to VSTS.
+The process of preparing a development environment is now completed. At this point, any extension code (X++, Commerce runtime [CRT], Retail Server, channel SQL, point of sale [POS], and so on) can be written, debugged, tested, and submitted to Azure DevOps.
 
 ## Optional: Deploy a second build environment for a different release branch
 
 If you must maintain multiple releases at the same time, you must create deployable packages from different code branches (for example, Main2 or Main3, and/or ProdRel1 or ProdRel2).
 
-The steps to set up a second build environment are the same as the steps for the first build environment. At this point, a VSTS project, and the link between the LCS project and the VSTS project, already exist.
+The steps to set up a second build environment are the same as the steps for the first build environment. At this point, a Azure DevOps project, and the link between the LCS project and the Azure DevOps project, already exist.
 
-To separate the build environments, we recommend that you create a new VSTS agent queue for the release branch. Although there are ways to share an agent queue (and its build environment) for multiple branches, this approach can be tricky.
+To separate the build environments, we recommend that you create a new Azure DevOps agent queue for the release branch. Although there are ways to share an agent queue (and its build environment) for multiple branches, this approach can be tricky.
 
 Currently, the build environment must be on the same platform and binary hotfix version as the target environment during deployment. Otherwise, LCS might reject the deployable package because of version incompatibility.
 
-First, you must create a new VSTS agent queue.
+First, you must create a new Azure DevOps agent queue.
 
 ![VSTS agent queue](./media/13-VSTS-agent-queue.png)
 
@@ -323,9 +323,9 @@ The process of deploying a new build and creating a new agent queue can take a c
 
 After you complete the steps earlier in this topic, you should have one build definition and two agent queues, and each agent queue should have one agent. To build different branches, you must configure the build definition differently. Therefore, you must clone the build definition.
 
-However, before you clone the build definition, you must add the Retail SDK into the build, so that you don't have to complete this step twice. To edit the existing build definition, which is named **Unified Operations platform - Build Main**, follow the steps in [Integrate the Retail SDK with the continuous build system (VSTS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build) to integrate the Retail SDK into the metadata build of the Main branch.
+However, before you clone the build definition, you must add the Retail SDK into the build, so that you don't have to complete this step twice. To edit the existing build definition, which is named **Unified Operations platform - Build Main**, follow the steps in [Integrate the Retail SDK with the continuous build system (Azure DevOps)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build) to integrate the Retail SDK into the metadata build of the Main branch.
 
-If you had multiple build branches and environments, just clone the build definition, and name the new build definition so that it's clear which branch it's for. (The clone feature is available in the VSTS portal). Select the new agent queue that you created, and change the following paths in any build steps or source mappings. (In the paths, change **Main** to **ProdRel1**.)
+If you had multiple build branches and environments, just clone the build definition, and name the new build definition so that it's clear which branch it's for. (The clone feature is available in the Azure DevOps portal). Select the new agent queue that you created, and change the following paths in any build steps or source mappings. (In the paths, change **Main** to **ProdRel1**.)
 
 - Source mappings
 - Retail SDK build step
@@ -343,7 +343,7 @@ If you had multiple build branches and environments, just clone the build defini
 - Change the version of the Retail customization in each branch. The version should be different in the Dev, Main, and ProdRel1 branches. Either change the Customization.settings file, or add a new global.props file under the RetailSdk\\BuildTools folder. You can use any kind of numbering for the file name. For example, you can number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.
 - For efficiency, shut down build or development environments when they aren't being used.
 - If you're using cloud-hosted Tier 1 development environments (where you have administrative privileges), you can switch from IIS Express to IIS. Using IIS for running all web application is more robust, more performant, and avoids the switching. For details, see [MSDyn365FO. How to switch from IIS Express to IIS on development VM](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/).
-- For prototyping purposes, a developer might want to change the Retail SDK on a development VM without using VSTS source control. Always keep the original Retail SDK untouched, and make a copy that you can work in temporarily. In that way, you can take the unchanged Retail SDK into your mirror branch later, if it's required.
+- For prototyping purposes, a developer might want to change the Retail SDK on a development VM without using Azure DevOps source control. Always keep the original Retail SDK untouched, and make a copy that you can work in temporarily. In that way, you can take the unchanged Retail SDK into your mirror branch later, if it's required.
 - Currently, a build environment must be on the same platform and binary hotfix version as the target environment.
 
 ## Additional resources

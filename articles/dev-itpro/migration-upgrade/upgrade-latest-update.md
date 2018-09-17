@@ -136,9 +136,9 @@ Regardless of whether you're a live customer or you're still in the implementati
 
 3. Complete the code migration steps.
 
-    1. Connect your development VM to Microsoft Visual Studio Team Services (VSTS), and map your local metadata folder to the VSTS branch that contains your upgraded code.
+    1. Connect your development VM to Microsoft Azure DevOps, and map your local metadata folder to the Azure DevOps branch that contains your upgraded code.
     2. Synchronize, resolve any conflicts, build, and test.
-    3. Merge the VSTS branch that contains your upgraded code with your main development branch. For more information, see [Merge folders and files](https://www.visualstudio.com/en-us/docs/tfvc/merge-folders-files).
+    3. Merge the Azure DevOps branch that contains your upgraded code with your main development branch. For more information, see [Merge folders and files](https://www.visualstudio.com/en-us/docs/tfvc/merge-folders-files).
     4. Build and test.
     5. Create deployable packages of your code.
 
@@ -165,7 +165,7 @@ To run the data upgrade process, follow the steps in [Process for data upgrade f
 
 > [!IMPORTANT]
 > - Data upgrade in a development environment is a required step. It helps reduce the risk of extended downtime and upgrade errors later, when you upgrade sandbox user acceptance testing (UAT) and production environments.
-> - Several application hotfixes might be required before you can upgrade data. Before you redeploy your existing development environment, verify whether these hotfixes are required. Install the required hotfixes, and check them in to VSTS. This step can be completed only in the old version of your development environment. For a list of the hotfixes that are required in various situations, see [Upgrade data in develop, demo, or sandbox environments](upgrade-data-to-latest-update.md#before-you-begin).
+> - Several application hotfixes might be required before you can upgrade data. Before you redeploy your existing development environment, verify whether these hotfixes are required. Install the required hotfixes, and check them in to Azure DevOps. This step can be completed only in the old version of your development environment. For a list of the hotfixes that are required in various situations, see [Upgrade data in develop, demo, or sandbox environments](upgrade-data-to-latest-update.md#before-you-begin).
  
 ### Upgrade your Tier2/Standard Acceptance Test (or higher) sandbox environment
 
@@ -209,7 +209,7 @@ You don't have to upgrade any additional Tier 2 or higher sandbox environments. 
 
 #### Upgrade Tier 1 environments
 
-You can deploy Tier 1 environments (also known as dev/test or build boxes) by using the new version and then synchronizing to your upgraded VSTS branch. To get data for the Tier 1 environments, a developer can upgrade the database by following the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
+You can deploy Tier 1 environments (also known as dev/test or build boxes) by using the new version and then synchronizing to your upgraded Azure DevOps branch. To get data for the Tier 1 environments, a developer can upgrade the database by following the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
 
 ### Upgrade your production environment
 

@@ -52,7 +52,7 @@ There are some disadvantages to having multiple LCS projects. Here are some of t
 - Integrations must be configured in each LCS project.
 - Each LCS project requires a separate Bring your own database (BYOD) instance
 - User acceptance testing (UAT) must be done on each instance, even if the code is the same. UAT is required on each instance, because differences can occur across the LCS projects, even if they share a code base. One source of differences can be the integration setup and BYOD configuration that must be done separately in each LCS project and therefore must be tested in each LCS project. Additionally, there might be data variations, different application configurations per region might affect functionality, and different data centers might support a different set of Azure services.
-- Microsoft Visual Studio Team Services (VSTS) must be configured in each LCS project. When customizations and code are shared, it makes sense to use the same VSTS project.
+- Microsoft Azure DevOps must be configured in each LCS project. When customizations and code are shared, it makes sense to use the same Azure DevOps project.
 
 ## Advantages of multiple LCS projects
 There are also advantages to having multiple LCS projects. Here are some of them:

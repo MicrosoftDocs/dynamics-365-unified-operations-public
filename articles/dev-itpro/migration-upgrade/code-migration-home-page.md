@@ -46,7 +46,7 @@ The following links (also included in the methodology) describe key concepts and
 <!--- [Migrate from AX 2012 (Office Mix)](https://mix.office.com/watch/4gsvk592c685)
 - [Migrate between versions (Office Mix)](https://mix.office.com/watch/os2wff38zi6f)-->
 - [Configure and execute the code upgrade service in Lifecycle Services](../lifecycle-services/configure-execute-code-upgrade.md)
-- [Configure your VSTS mapping after a code upgrade](configure-vso-solution.md)
+- [Configure your Azure DevOps mapping after a code upgrade](configure-vso-solution.md)
 <!-- [Resolve conflicts using Visual Studio (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7)-->
 - [Understanding the model split](../dev-tools/model-split.md)
 - [Deprecated features](deprecated-features.md)

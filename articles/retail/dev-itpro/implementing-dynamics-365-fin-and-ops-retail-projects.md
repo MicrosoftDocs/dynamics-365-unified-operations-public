@@ -37,7 +37,7 @@ Some of the information in these topics can also be found on blogs and pages at 
 
 The information focuses on implementations of Microsoft Dynamics 365 for Finance and Operations that include Retail functionality.
 
-[Set up new environments, Visual Studio Team Services, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
+[Set up new environments, Azure DevOps, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Update code and environments for Retail projects](./updating-environments.md)
 

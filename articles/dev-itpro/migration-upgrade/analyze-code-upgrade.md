@@ -43,8 +43,8 @@ The Code upgrade service converts an export of your AX 2012 model store to the c
 The Code upgrade service performs these actions:
 
 - Directly resolve some types of conflict issues.
-- For other issues, log Microsoft Visual Studio Team Services (VSTS) tasks.
-- Create a version of your code in the Finance and Operations format, and check the new version into a new branch of your VSTS project.
+- For other issues, log Microsoft Azure DevOps tasks.
+- Create a version of your code in the Finance and Operations format, and check the new version into a new branch of your Azure DevOps project.
 
 In the Analyze phase, we use the report to help estimate the effort that is required in order to complete code conversion activities.
 
@@ -54,4 +54,4 @@ The following illustration shows an overview of the process for configuring the 
 
 For information about how to configure the Code upgrade service, see [Configure the code upgrade service in Lifecycle Services](../lifecycle-services/configure-execute-code-upgrade.md).
 
-The output of the Code upgrade service is designed to be consumed by a Finance and Operations developer. This output will help the developer estimate the effort that is required in order to complete the code upgrade tasks. To form an estimate, the developer must review the tasks that the service generates in VSTS and the new version of the code that the service generates.
+The output of the Code upgrade service is designed to be consumed by a Finance and Operations developer. This output will help the developer estimate the effort that is required in order to complete the code upgrade tasks. To form an estimate, the developer must review the tasks that the service generates in Azure DevOps and the new version of the code that the service generates.
