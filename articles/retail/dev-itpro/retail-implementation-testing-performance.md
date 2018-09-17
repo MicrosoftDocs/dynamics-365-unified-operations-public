@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Retail 7.3
 
 # Testing and performance issues
 
+[!include [banner](../../includes/banner.md)]
+
 This document describes practices and tools that are related to functional testing, performance testing, and performance troubleshooting.
 
 ## User acceptance testing
