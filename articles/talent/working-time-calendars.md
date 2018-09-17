@@ -21,11 +21,12 @@ ms.reviewer: josaw
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
-ms.search.region: 
+ms.assetid: 
+ms.search.region: Global
 # ms.search.industry: 
 ms.author: jcart
-ms.search.validFrom: 2018/07/01
-ms.dyn365.ops.version: Talent
+ms.search.validFrom: 2018-07-01
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 
