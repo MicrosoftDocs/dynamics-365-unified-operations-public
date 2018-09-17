@@ -92,7 +92,7 @@ If you're using a library that already has all of the necessary task recordings 
 Once you have selected your acceptance test BPM library, synchronize it with Azure DevOps and create your test plan.
 
 ### Sync with Azure DevOps
-Synchronize your BPM library with your Azure DevOps project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-vsts). 
+Synchronize your BPM library with your Azure DevOps project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-azure-devops). 
 
 After configuration is complete, synchronize the BPM library with a Azure DevOps project.
 1. On the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **Azure DevOps sync**.
