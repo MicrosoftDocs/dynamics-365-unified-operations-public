@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
-ms.dyn365.ops.version: Talent September 17, 2018 update---
+ms.dyn365.ops.version: Talent
 
 ---
 
