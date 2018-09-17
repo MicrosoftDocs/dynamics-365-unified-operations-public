@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 7.3
 
 # Set up parameters for SPED EFD - Contributions
 
-
 [!include [banner](../includes/banner.md)]
 
 This topic explains how to specify parameters for SPED EFD - Contributions text files by using the **EFD – Contributions parameters** page.
