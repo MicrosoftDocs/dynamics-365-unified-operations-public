@@ -59,7 +59,7 @@ To obtain support for Retail, use the resources in the following table. These re
 <tbody>
 <tr class="odd">
 <td>Ask the community.</td>
-<td>Go to the <a href="https://community.dynamics.com/365/retail"><span style="color: #0066cc;">Dynamics 365 for Retail community</span></a> page to find help with your questions from the Dynamics community.</td>
+<td>Go to the <a href="https://community.dynamics.com/365/retail"><span style="color: #0066cc;">Dynamics 365 for Retail</span></a> community page to find help with your questions from the Dynamics community.</td>
 </tr>
 <tr class="even">
 <td>Use the Issue search tool.</td>
