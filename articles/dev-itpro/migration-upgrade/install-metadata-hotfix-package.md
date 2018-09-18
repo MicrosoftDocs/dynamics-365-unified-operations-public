@@ -5,7 +5,7 @@ title: Install metadata hotfixes in development environments
 description: This topic will guide you through installing an Application Metadata hotfix on your development environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -53,7 +53,7 @@ For instructions about how to download a hotfix, see [Download hotfixes from Lif
 
 ### Install the metadata hotfix package
 
-To invoke the installation of the metadata hotfix, you can call the SCDPBundleInstall.exe utility from an administrator command prompt. SCDPBundleInstall.exe is located in your packages bin folder (c:\\AOSService\\PackagesLocalDirectory).
+To invoke the installation of the metadata hotfix, you can call the SCDPBundleInstall.exe utility from a command prompt. SCDPBundleInstall.exe is located in your packages bin folder (c:\\AOSService\\PackagesLocalDirectory).
 
 #### Without version control (not recommended)
 
