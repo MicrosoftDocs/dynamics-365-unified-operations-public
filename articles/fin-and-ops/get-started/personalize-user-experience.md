@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/CAAP.md)]
+[!include [banner](CAAP.md)]
 
 This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
 
