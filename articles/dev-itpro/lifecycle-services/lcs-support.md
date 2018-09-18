@@ -37,7 +37,6 @@ ms.dyn365.ops.version: AX 7.0.0
 This article explains how to get help with Finance and Operations or Microsoft Dynamics Lifecycle Services (LCS). 
 
 ## Contact support
----------------
 
 Use the information in this article to contact Microsoft if you have technical questions about Finance and Operations, or if you need help accessing Microsoft Dynamics Lifecycle Services (LCS).
 
