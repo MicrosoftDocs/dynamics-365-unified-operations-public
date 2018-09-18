@@ -96,5 +96,5 @@ For technical questions that are related to signing in to and accessing Customer
 For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 
 ## Additional resources
-- [Get support for Dynamics 365 for Retail](../../support-retail.md)
-- [Get support for Dynamics 365 for Talent](../../support-talent.md)
+- [Get support for Dynamics 365 for Retail](../../retail/support-retail.md)
+- [Get support for Dynamics 365 for Talent](../../talent/support-talent.md)
