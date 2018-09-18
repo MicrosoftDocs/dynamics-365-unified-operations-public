@@ -75,7 +75,7 @@ To obtain support for Retail, use the resources in the following table. These re
 Note: Microsoft Premier Customers and Partners can also submit premier support tickets using the steps above.</td>
 </tr>
 <tr class="even">
-<td>Open a support ticket with the Finance and Operations support team.</td>
+<td>Open a ticket with the support team.</td>
 <td>If you have issues when you try to submit a ticket to Microsoft from the <strong>Support</strong> tile in LCS, see <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Contact Microsoft Business Solutions Support</span></a> for information about to contact a Microsoft Dynamics Regional Operations Center. The support team can help you resolve the following types of technical issues:
 <ul>
 <li>Errors that occur when you use LCS or issues that occur when you try to access LCS.</li>
