@@ -12,6 +12,8 @@
     href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
   - name: Deployment options
     href: dev-itpro/choose-deployment.md
+  - name: Get support for Retail
+    href: retail-support.md
 - name: Understand the implementation lifecycle
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
