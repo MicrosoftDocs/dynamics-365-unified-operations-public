@@ -130,6 +130,12 @@ For information about how to upgrade to the latest version, see [Process for upg
 </thead>
 <tbody>
 <tr class="odd">
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Platform update 20</td>
+<td>7.0.5030</td>
+<td>September 2018</td>
+<td><a href="whats-new-platform-update-20.md">What’s new or changed in Dynamics 365 for Finance and Operations platform update 20 (September 2018)</a></td><tbody>
+<tr class="odd">
 <td>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</td>
 <td>Platform update 15</td>
 <td>7.0.4841</td>
