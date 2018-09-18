@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 8.1
 
 The procedure for carrying out of counting fixed assets is regulated by legislative acts and is one of the procedures for control over the safety of the company's property. Its essence in comparison of actual presence of values (money, the equipment, buildings, and also obligations) with accounting data.
 
-As a rule, counting fixed assets is carried out before the annual reporting. To count fixed assets, complete the following steps:
+As a rule, counting fixed assets is carried out before the annual reporting. To register counting fixed assets, complete the following steps:
 
 1.  Go to **Fixed Assets (Russia) \>Journals \> Periodic journals \> FA
     counting**.
@@ -43,7 +43,7 @@ As a rule, counting fixed assets is carried out before the annual reporting. To 
 
 3.  Fill in **Counting start date** field.
 
-4.  Select **Fixed asset journal name**, which will be created after FA counting journal.
+4.  Select **Fixed asset journal name**. This journal name is used for creating FA journal when closing counting journal.
 
 5.  Fill in **FA location** field, the department, FA counting is executing in.
 
@@ -53,7 +53,7 @@ As a rule, counting fixed assets is carried out before the annual reporting. To 
 
 8.  Fill in **First responsible** and **Second responsible** fields on the **General** tab.
 
-9.  On the **Setup** tab set **Quantity initialization by fact** option to **Yes**. In this case **Actual quantity** field is filled in automatically on **Accounting quantity** field.
+9.  On the **Setup** tab set **Quantity initialization by fact** option to **Yes**. In this case **Actual quantity** field is filled in automatically with the value from **Accounting quantity** field.
 
 10. Press the **Lines** button.
 
@@ -67,29 +67,27 @@ As a rule, counting fixed assets is carried out before the annual reporting. To 
 
 15. **Actual quantity** field. If **Quantity initialization by fact** option is set to **Yes** then this field value is always equal to 1, otherwise, this field should be filled in manually.
 
-16. If any fixed assets were not found in the counting process then it is necessary to set zero for these fixed assets in the **Actual quantity** field, in the **FA counting lines** form.
+16. If any fixed assets were not found in the counting process then it is necessary to set zero for these fixed assets in the **Actual quantity** field. If any fixed assets were found in the counting process and not listed in the **FA counting lines** form, then it is necessary to create new lines for them. Previously it is necessary to create fixed asset cards in the system (**Fixed assets (Russia)** \> **Fixed assets**).
 
-17. If any fixed assets were found in the counting process and not listed in the **FA counting lines** form, then it is necessary to create new lines for them in this form. Previously it is necessary to create fixed asset cards in the system (**Fixed assets (Russia)** \> **Fixed assets**).
+17. Use the **New** button to create a new line in the **FA counting lines** form. Select the fixed asset in the **FA inventory number** field and the value model, then press **OK**.
 
-18. Use the **New** button to create a new line in the **FA counting lines** form. Select the fixed asset in the **FA inventory number** field and the value model, then press **OK**.
+18. Enter actual quantity equal to 1.
 
-19. Enter actual quantity equal to 1.
+19. Close the **FA counting lines** form after all corrections.
 
-20. Close the **FA counting lines** form after all corrections.
+20. In the **FA counting** form press the **Close** button. Specify the closing date and the value model in the **Closing of inventory journal** form.
 
-21. In the **FA counting** form press the **Close** button. Specify the closing date and the value model in the **Closing of inventory journal** form.
+21. Click OK. If there were line corrections, the **FA journal** button be active.
 
-22. Click OK. If there were line corrections, the **FA journal** button be active.
+22. Click **FA journal** to open the FA journal with FA transactions for posting.
 
-23. Click **FA journal** to open the FA journal with FA transactions for posting.
+23. On the **Journal voucher** page, the transactions are created automatically with **Writing-off** and **Putting into operation** transaction types (not found and found in the counting process).
 
-24. On the **Journal voucher** page, the transactions are created automatically with **Write-off** and **Putting into operation** types (not found and found in the counting process).
+24. Click **Post** \> **Post**.
 
-25. Click **Post** \> **Post**.
+25. You may check posted transactions, pressing **Inquiries** \> **Transactions** button in the **Journal voucher** form.
 
-26. You may check posted transactions, pressing **Inquiries** \> **Transactions** button in the **Journal voucher** form.
-
-27. In the **FA counting** form press the **Reports** button to print reports.
+26. In the **FA counting** form press the **Reports** button to print reports.
     You may print the following reports:
 
     -   INV-1 serves for registration of the results of counting fixed assets of the company. In the counting process, the commission examines the fixed assets and fixes them in the unified primary document form of INV-1. Intangible assets are registered in INV-1a unified primary document form.
