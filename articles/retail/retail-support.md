@@ -63,7 +63,7 @@ To obtain support for Retail, use the resources in the following table. These re
 </tr>
 <tr class="even">
 <td>Use the Issue search tool.</td>
-<td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, use Issue search to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues in Retail. You can see which reported issues are in the process of being fixed or have already been fixed for a specific functional area . For more information, see <a href="issue-search-lcs.md"><span style="color: #0066cc;">Issue search (Lifecycle Services, LCS)</span></a>.</td>
+<td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, use Issue search to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues in Retail. You can see which reported issues are in the process of being fixed or have already been fixed for a specific functional area. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs"><span style="color: #0066cc;">Issue search (Lifecycle Services, LCS)</span></a>.</td>
 </tr>
 <tr class="odd">
 <td>Use the Cloud-powered support tool.</td>
