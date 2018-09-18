@@ -5,7 +5,7 @@ title: What's new or changed
 description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 06/22/2018
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,6 +42,8 @@ For information about how to upgrade to the latest version, see [Process for upg
 [!include [release notes](../includes/release-notes.md)]
 
 ## Application releases
+
+This table lists the major releases of the application. For monthly cloud updates, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
 
 <table>
 <colgroup>
