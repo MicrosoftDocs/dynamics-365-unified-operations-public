@@ -794,9 +794,11 @@ For more information, see [Install integration services](https://docs.microsoft.
 
 Before you can complete this procedure, AD FS must be deployed on Windows Server 2016. For information about how to deploy AD FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 
-Finance and Operations requires additional configuration beyond the default out-of-box configuration of AD FS. For the following steps, Windows PowerShell runs on a machine where the AD FS role service is installed. The user account must have enough permissions to administer AD FS. For example, the user must have a domain administrator account.
+Finance and Operations requires additional configuration beyond the default out-of-box configuration of AD FS. The following Windows PowerShell commands must be run on the machine where the AD FS role service is installed. The user account must have enough permissions to administer AD FS. For example, the user must have a domain administrator account. For complex AD FS scenarios, consult your domain administrator.
 
 1. Configure the AD FS identifier so that it matches the AD FS token issuer.
+
+  This command is related to adding new users via the **Import users** option on the **Users** page (**System adminstsration > Users > Users**) in the Finance and Operations client.
 
     ```powershell
     $adfsProperties = Get-AdfsProperties
@@ -805,11 +807,15 @@ Finance and Operations requires additional configuration beyond the default out-
 
 2. You should disable Windows Integrated Authentication (WIA) for intranet authentication connections, unless you've configured AD FS for mixed environments. For more information about how to configure WIA so that it can be used with AD FS, see [Configure browsers to use Windows Integrated Authentication (WIA) with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia).
 
+  This command is related to using forms authentication upon logging into the Finance and Operations client. Other options, such as single sign-on, may be available which require addititional setup.
+
     ```powershell
     Set-AdfsGlobalAuthenticationPolicy -PrimaryIntranetAuthenticationProvider FormsAuthentication, MicrosoftPassportAuthentication
     ```
 
 3. For sign-in, the user's email address must be an acceptable authentication input.
+
+  This command is related to setting up email claims. Other options, such as transformation rules, may be available which require additional setup.
 
     ```powershell
     Add-Type -AssemblyName System.Net
