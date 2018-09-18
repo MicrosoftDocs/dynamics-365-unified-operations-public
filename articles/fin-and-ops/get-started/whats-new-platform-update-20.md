@@ -149,7 +149,7 @@ the delta processing engine during an entity store refresh. This includes entity
 store model collections that can be uniquely identified using a field reference.
 System administrators can use the entity store management tooling provided with
 Finance and Operations to identify entity store models supported by the
-incremental delta detection logic. For more information see [Incremental refresh
+incremental delta detection logic. For more information, see [Incremental refresh
 option for entity store
 models](#incremental-refresh-option-for-entity-store-models-1) and [Scheduling
 entity store model updates](#scheduling-entity-store-model-updates).
