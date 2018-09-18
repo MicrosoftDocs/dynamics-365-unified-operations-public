@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 16, Platform update 17, Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 20. This version was released in September 2018 has a build number of 7.0.5030.
+This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 20. This version was released in September 2018 has a build number of XXXXX.
 
 > [!NOTE]
 > This platform release is cumulative. It contains new or changed features from Platform update 16, Platform update 17, Platform update 18, Platform update 19, and Platform update 20, as well as all earlier updates. 
@@ -46,7 +46,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning. 
 
 ### Platform update 20 bug fixes
-For information about the bug fixes included in Platform update 20, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=2022870).
+For information about the bug fixes included in Platform update 20, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=875608).
 
 ## Adding and removing columns in a grid is easier
 Some of the most typical changes that a user makes to a grid are adding, removing, resizing, and reordering
@@ -168,7 +168,12 @@ reduced from 8 seconds to 0.03 seconds.
 With this update, data that is bound to controls that are not visible to the end user will not be sent over from the
 server until the control becomes visible. If you use test automation that uses form adaptors or the SysTest framework,
 you may need to make changes to your test code. For more details, refer to the [Performance improvements that may
-affect test automation code blog post] (https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/archive/2018/05/08/performance-improvements-that-may-break-automated-test-code).
+affect test automation code](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/archive/2018/05/08/performance-improvements-that-may-break-automated-test-code) blog post.
+
+## Personalization tools
+On the **Personalization** toolbar, you can now hide required fields and sections that contain required fields. This allows you to create a simplified experience where required fields that are defaulted by business logic are not shown. Hidden required fields are also temporarily made visible if they are empty when a save is attempted.
+
+If the **Personalization** toolbar is open, the page is still read-only but is now much more interactive. Specifically, you can expand or collapse the FactBox pane, switch tabs, and expand or collapse sections while the **Personalization** toolbar is open in the same manner as you typically would on the page. To apply a personalization change to a collapsible section or tab (such as to hide a FastTab), you will trigger the button that appears beside the collapsible section or tab when it gains keyboard focus or when you hover over it.
 
 ## Updates to the Performance software development kit
 As of Platform update 20, you don’t need to create certificates or sign in to your test environment using Remote
