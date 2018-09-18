@@ -94,6 +94,7 @@ For information about the new features included in each release, click the links
 | [Platform 7.0](../../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md)                  | 7.0.4030.16079     | February 2016    | January 2017               |
 
 \** Platform updates 16, 17, 18, and 19 have not been made generally available. 
+
 \* Platform updates 13 and 14 have not been made generally available. 
 
 ### Table 3: Application updates
