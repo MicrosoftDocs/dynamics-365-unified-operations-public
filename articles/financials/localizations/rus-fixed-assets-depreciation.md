@@ -48,21 +48,21 @@ Depreciation methods are used to define the rules for calculating depreciation. 
 
 5.  In the **Method** field, select the depreciation method from the following options:
     
-      - **Linear** − This method is a uniform accrual method. A capital allowance is calculated proportionately for each period or interval that you set up, such as monthly, quarterly, semi-annually, or annually, or for the whole service life of the asset.
+      - **[Linear](rus-depreciation-methods.md#linear-and-non-linear-depreciation-methods)** − This method is a uniform accrual method. A capital allowance is calculated proportionately for each period or interval that you set up, such as monthly, quarterly, semi-annually, or annually, or for the whole service life of the asset.
     
       - **Reducing remainder** − This method decreases the depreciation value over the service life of the asset. The depreciation amount is based on the residual value of the fixed asset at the start of the reporting year. The depreciation rate is calculated based on the remaining useful life and the acceleration factor.
     
-      - **Manual** − The depreciation schedule is defined as a percentage value for each period. In this method, you can manually define the depreciation rate for each depreciation period.
+      - **[Manual](rus-depreciation-methods.md#manual-depreciation-method)** − The depreciation schedule is defined as a percentage value for each period. In this method, you can manually define the depreciation rate for each depreciation period.
     
-      - **Factor** − The depreciation amount is calculated as a remaining amount that is multiplied by a fixed ratio.
+      - **[Factor](rus-depreciation-methods.md#factor-depreciation-method)** − The depreciation amount is calculated as a remaining amount that is multiplied by a fixed ratio.
     
       - **By number of years** − The asset value is based on the number of years of useful life that remain.
     
-      - **Product output/mileage** − The asset value is proportionate to the volume of units that are produced.
+      - **[Product output/mileage](rus-depreciation-methods.md#product-output-mileage-depreciation-method)** − The asset value is proportionate to the volume of units that are produced.
     
       - **Tax nonlinear** − The accrued monthly depreciation for the asset is defined as the product of its remaining value and the depreciation rate. The depreciation rate is defined as K= (2/n) \* 100%, where n is the useful life of the asset in months.
     
-      - **Tax nonlinear group method** − The accrued monthly depreciation for the asset group is defined as the product of its remaining value and the depreciation rate. The depreciation rate is defined as K = (2/n) \* 100%, where n is the useful life of the asset group in months.
+      - **[Tax nonlinear group method](rus-depreciation-methods.md#non-linear-tax-accounting-group-depreciation-method)** − The accrued monthly depreciation for the asset group is defined as the product of its remaining value and the depreciation rate. The depreciation rate is defined as K = (2/n) \* 100%, where n is the useful life of the asset group in months.
 
 6.  In the **Interval** field, select the period for which the depreciation must be accrued. If you select **Quarterly** in the **Interval** field, you must enter three monthly transactions instead of a single transaction for the whole quarter.
 
@@ -334,6 +334,3 @@ If a fixed asset is registered after it is put into operation, depreciation is c
 9.  Click **OK**. Depreciation reversal transactions are created in the journal.
 10. Click **Validate** \> **Validate** to validate the transaction details.
 11. Click **Post** \> **Post** to post the journal. The fixed asset depreciation transaction is reversed and the ledger transaction is updated accordingly.
-
-    
-  
