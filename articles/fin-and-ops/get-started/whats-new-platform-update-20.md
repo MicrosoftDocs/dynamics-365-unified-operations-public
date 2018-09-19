@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 16, Platform update 17, Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 20. This version was released in September 2018 has a build number of XXXXX.
+This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 20. This version was released in September 2018 has a build number of 7.0.5030.
 
 > [!NOTE]
 > This platform release is cumulative. It contains new or changed features from Platform update 16, Platform update 17, Platform update 18, Platform update 19, and Platform update 20, as well as all earlier updates. 
@@ -46,7 +46,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning. 
 
 ### Platform update 20 bug fixes
-For information about the bug fixes included in Platform update 20, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=875608).
+For information about the bug fixes included in Platform update 20, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=2022870).
 
 ## Adding and removing columns in a grid is easier
 Some of the most typical changes that a user makes to a grid are adding, removing, resizing, and reordering
