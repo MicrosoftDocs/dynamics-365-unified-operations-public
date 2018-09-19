@@ -402,15 +402,6 @@ The type of information that each column on a report includes is specified by th
     <td>Insert a vertical page break in the report. The columns that are to the right of the <strong>PAGE</strong> column appear on a different page.</td>
     </tr>
     <tr>
-    <td>WKS</td>
-    <td>Display data that is pulled from an Excel worksheet. When you select the <strong>WKS</strong> column type, default settings are automatically specified for the following rows:
-    <ul>
-    <li><strong>Fiscal Year:</strong> PERIODIC</li>
-    <li><strong>Period:</strong> BASE</li>
-    </ul>
-    You can change these default settings.</td>
-    </tr>
-    <tr>
     <td>ATTR</td>
     <td>If your accounting system supports attributes, display an account or transaction attribute in the column. An attribute, which must apply to a single full account, extracts underlying account or transaction information from the financial data. Account-level attributes display data from the account, and transaction-level attributes display data that occurred at the time that the transaction was posted. If you select <strong>ATTR</strong> as the column type, specify the attribute category in the <strong>Book Code/Attribute Category</strong> detail row of the column definition.</td>
     </tr>
