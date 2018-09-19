@@ -96,6 +96,6 @@ Some extensibility requests break changes. Some of the more common potentially b
 - Workaround: Add "soft" constraints in the validateWrite or validateInsert methods.
 
 ### Why can't CountryRegionCode be made extensible? (*it already is*)
-- Request: Make CountryRegionCode on <some type> changeable via extension.
-- Problem: Changes to CountryRegionCode are already supported from platform update 14 if the CountryRegionCode property already has a value. Empty CountryRegionCode properties cannot be changed since that change would is more restrictive (since the element would now only be available for certain countries/regions) and therefore would be a breaking change.
+- Request: Make CountryRegionCode changeable via extension.
+- Problem: Starting with Platform update 14, changes to CountryRegionCode are supported if the CountryRegionCode property already has a value. Empty CountryRegionCode properties cannot be changed because that change is more restrictive (the element would now only be available for certain countries/regions) and therefore would be a breaking change.
 - Workaround: Use the existing CountryRegionCode extension capability when the element is already country/region specific.
