@@ -4,7 +4,7 @@
   - name: Get started
     items:
     - name: Before you buy
-      href: get-started/before-you-buy.mdplatform
+      href: get-started/before-you-buy.md
       items:
       - name: Sign up for preview subscription
         href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
