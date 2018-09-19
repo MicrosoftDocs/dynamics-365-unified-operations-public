@@ -64,9 +64,7 @@ that form updates in the future don't conflict with your customizations.
 Client internet connectivity options allow an administrator to manually turn off
 the external connections that the client makes even when internet connectivity
 is available. These can be used for troubleshooting issues or to see what the
-client will look like when internet connectivity is not available. For more
-information, see [Client internet connectivity
-options](#chain-of-command-on-nested-types).
+client will look like when internet connectivity is not available. 
 
 ## Data management updates
 Platform update 20 fixes an issue related to data being truncated during export when using text qualifiers. Using a
@@ -111,7 +109,6 @@ configuration of data projects. You can also configure and trigger the execution
 of import/export operations, such as the setup of demo data and golden
 configuration data, and other tasks that are related to data migration. You can
 also create automated testing of data entities by using task outcome validation.
-For more information, see [Data task automation](#data-task-automation).
 
 ## Extensibility enhancements
 Platform update 20 includes the following extensibility enhancements:
