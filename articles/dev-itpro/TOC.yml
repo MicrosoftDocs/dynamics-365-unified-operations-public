@@ -1075,7 +1075,7 @@
       href: migration-upgrade/ax2009-upgrade-export-package.md
     - name: AX 2009 migration - Import packages
       href: migration-upgrade/ax2009-upgrade-import-package.md
- - name: Code migration and upgrade
+  - name: Code migration and upgrade
     href: migration-upgrade/code-migration-home-page.md
     items:
     - name: Prepare to migrate code
