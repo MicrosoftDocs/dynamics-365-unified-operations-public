@@ -1060,7 +1060,7 @@
         href: migration-upgrade/migrate-upgraded-cube-entity-store.md
       - name: Upgrade budget planning
         href: migration-upgrade/upgrade-budget-planning.md
- - name: Migrate data from AX 2009 to Finance and Operations
+  - name: Migrate data from AX 2009 to Finance and Operations
     href: migration-upgrade/data-migration-tool.md
     items:
     - name: AX 2009 migration - Install the Data migration tool
