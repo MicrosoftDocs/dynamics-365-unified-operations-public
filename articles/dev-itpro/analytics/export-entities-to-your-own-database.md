@@ -5,7 +5,7 @@ title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/27/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -175,7 +175,7 @@ The default timeouts for BYOD exports are set to ten minutes for truncation oper
 The BYOD feature has the following limitations.
 
 #### There should be no active locks on your database during synchronization
-Because BYOD is your own database, you must ensure that there are no active locks on your Azure SQL database when data is being synced from Finance and Operations. Having active locks on your database during synchronization can results in slow writes or even complete failure of exports to your Azure SQL database.
+Because BYOD is your own database, you must ensure that there are no active locks on your Azure SQL database when data is being synced from Finance and Operations. Having active locks on your database during synchronization can result in slow writes or even failure to export to your Azure SQL database.
 
 #### Export data projects are specific to a single legal entity
 
