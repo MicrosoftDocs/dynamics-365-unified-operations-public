@@ -20,7 +20,7 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 27231
+# ms.custom: 
 ms.search.region: Russia
 ms.search.industry: 
 ms.author: anasyash
