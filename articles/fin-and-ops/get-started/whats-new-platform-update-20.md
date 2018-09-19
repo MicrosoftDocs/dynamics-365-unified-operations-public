@@ -64,7 +64,7 @@ that form updates in the future don't conflict with your customizations.
 Client internet connectivity options allow an administrator to manually turn off
 the external connections that the client makes even when internet connectivity
 is available. These can be used for troubleshooting issues or to see what the
-client will look like when internet connectivity is not available. 
+client will look like when internet connectivity is not available. For more information, see [Client internet connectivity](../../dev-itpro/user-interface/client-disconnected.md).
 
 ## Data management updates
 Platform update 20 fixes an issue related to data being truncated during export when using text qualifiers. Using a
