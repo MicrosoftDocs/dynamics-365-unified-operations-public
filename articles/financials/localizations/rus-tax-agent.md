@@ -2,7 +2,7 @@
 # required metadata
 
 title: Value-added tax (VAT) for tax agents
-description: This topic explains how to set up tax agent transactions for Russia.
+description: This topic explains how to set up VAT and perform transactions for tax agent for Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/28/2018
@@ -42,8 +42,8 @@ The following functions are supported:
 - Create payment proposals for vendor invoices.
 - Create payments for tax authorities.
 - Post and settle payments to the vendor.
-- Create and print factures for the VAT amount that is liable to the budget, and register the factures in the sales book.
-- Create and print factures for VAT deductions, and register the factures in the purchase book.
+- Create and print factures for the VAT amount that is to be remitted to tax authorities, and register the factures in the sales book 
+- Register factures for VAT deduction in the purchase book.
 
 ## Set up tax agent transactions
 
@@ -98,7 +98,7 @@ On the **Vendors** page, you can define a vendor as a tax agent. You can then pe
 
 1. Select **Accounts payable** \> **Vendors** \> **All vendors**.
 2. Press Ctrl+N to create a vendor that your company acts as a tax agent for, and enter the required information.
-3. On the **General** tab, select the **Tax agent** check box to define the vendor as a tax agent.
+3. On the **General** tab, set the **Tax agent** option to **Yes** to define the vendor as a tax agent.
 4. In the **Vendor type** field, select the type of vendor:
 
     - **Blank** – The vendor is a common vendor.
