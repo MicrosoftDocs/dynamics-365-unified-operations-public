@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: AX 2009 upgrade - Create templates 
+title: AX 2009 migration - Create templates 
 description: This topic explains how to create package templates that you can use to migrate data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
 ---
 
-# AX 2009 upgrade – Create package templates
+# AX 2009 migration – Create package templates
 
 [!include [banner](../includes/banner.md)]
 
