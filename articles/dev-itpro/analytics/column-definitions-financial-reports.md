@@ -531,7 +531,7 @@ To determine a company's accounting currency, follow these steps.
 #### Specify the currency on a multiple-currency report
 
 1. In Report Designer, open the column definition to modify.
-2. Double-click the **Currency Display** cell in the appropriate **FD** column, and then select the option for displaying currency information: **Ledger accounting currency**, **Ledger reporting**, transaciton currency, or select to translate to a different reporting currency.
+2. Double-click the **Currency Display** cell in the appropriate **FD** column, and then select the option for displaying currency information: **Ledger accounting currency**, **Ledger reporting**, transaction currency, or select to translate to a different reporting currency.
 3. Double-click the **Currency Filter** cell in the appropriate **FD** column, and then select the appropriate currency code in the list. Only transactions that are entered in this currency are displayed on the report.
 
 
