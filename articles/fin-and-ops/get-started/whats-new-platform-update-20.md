@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/18/18
+ms.date: 09/19/18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -53,9 +53,7 @@ Some of the most typical changes that a user makes to a grid are adding, removin
 columns. In this update, we’ve made adding and removing columns easier by promoting the **Add columns** and **Hide this column** actions directly into the grid column header context menus. 
 
 ## Chain of Command on nested types 
-In this release, we’ve enabled Chain of Command on nested types within forms
-including data sources and controls. This allows Chain of Command to be used for
-a much wider range of extension scenarios involving forms.
+In this release, we’ve enabled Chain of Command on nested types within forms including data sources and controls. This allows Chain of Command to be used for a much wider range of extension scenarios involving forms. For more information, see [Nested class methods in forms can be wrapped in Platform update 16 or later](../../dev-itpro/extensibility/method-wrapping-coc.md#nested-class-methods-in-forms-can-be-wrapped-in-platform-update-16-or-later).
 
 ## Change form patterns to custom using form extensions
 With this update, you can change a form's pattern to custom by using a form extension. This allows for more
@@ -171,6 +169,8 @@ affect test automation code](https://community.dynamics.com/365/financeandoperat
 On the **Personalization** toolbar, you can now hide required fields and sections that contain required fields. This allows you to create a simplified experience where required fields that are defaulted by business logic are not shown. Hidden required fields are also temporarily made visible if they are empty when a save is attempted.
 
 If the **Personalization** toolbar is open, the page is still read-only but is now much more interactive. Specifically, you can expand or collapse the FactBox pane, switch tabs, and expand or collapse sections while the **Personalization** toolbar is open in the same manner as you typically would on the page. To apply a personalization change to a collapsible section or tab (such as to hide a FastTab), you will trigger the button that appears beside the collapsible section or tab when it gains keyboard focus or when you hover over it.
+
+For more information about personalization, see [Personalize the user experience](personalize-user-experience.md).
 
 ## Updates to the Performance software development kit
 As of Platform update 20, you don’t need to create certificates or sign in to your test environment using Remote
