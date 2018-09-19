@@ -1111,6 +1111,21 @@
         href: migration-upgrade/migrate-upgraded-cube-entity-store.md
       - name: Upgrade budget planning
         href: migration-upgrade/upgrade-budget-planning.md
+  - name: Migrate data from AX 2009 to Finance and Operations
+    href: migration-upgrade/data-migration-tool.md
+    items:
+    - name: AX 2009 migration - Install the Data migration tool
+      href: migration-upgrade/install-dmt.md
+    - name: AX 2009 migration - Generate maps
+      href: migration-upgrade/generate-maps.md
+    - name: AX 2009 migration - Create templates
+      href: migration-upgrade/create-package-templates.md
+    - name: AX 2009 migration - Create migration groups
+      href: migration-upgrade/create-definition.md
+    - name: AX 2009 migration - Export packages
+      href: migration-upgrade/ax2009-upgrade-export-package.md
+    - name: AX 2009 migration - Import packages
+      href: migration-upgrade/ax2009-upgrade-import-package.md
   - name: Code migration and upgrade
     href: migration-upgrade/code-migration-home-page.md
     items:
