@@ -39,7 +39,9 @@ The project management and accounting functionality can be used in multiple indu
 A project is a group of activities that is designed to provide a service, produce a product, or achieve a result. Projects consume resources and generate financial results in the form of revenues or assets.
 
 ## Projects across industries
-The project management and accounting functionality can be used in multiple industries, as shown in the following illustration. [![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
+The project management and accounting functionality can be used in multiple industries, as shown in the following illustration.
+
+[![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
 In a call center, a ticket can be used to describe the set of actions that are required to resolve a call. Consulting companies, such as management or technical consulting organizations or advertising agencies, refer to their activities as projects. In marketing, a campaign represents a set of work that must be delivered. In project-based manufacturing, a production order relates the various work that must be done to produce some finished goods. Whatever name is used for them, these projects involve resources, schedules, and costs, and the project management and accounting functionality in Microsoft Dynamics 365 for Finance and Operations can help with the planning, execution, and analysis of these projects.
 
