@@ -94,3 +94,8 @@ Some extensibility requests break changes. Some of the more common potentially b
 - Request: Make unique table indexes changeable via extension, for example by allowing an extra field to be added.
 - Problem: If a unique table index changes and any data does not conform to the new index, then it would be a breaking change. Also, any query would affect it since it can now retrieve a non-unique record. For example, if a Person table had a key of "Name" and select person where name="Chris" works, but if BirthDate was added to the key, now there could be multiple records returned for "Chris".
 - Workaround: Add "soft" constraints in the validateWrite or validateInsert methods.
+
+### Why can't CountryRegionCode be made extensible? (*it already is*)
+- Request: Make CountryRegionCode on <some type> changeable via extension.
+- Problem: Changes to CountryRegionCode are already supported from platform update 14 if the CountryRegionCode property already has a value. Empty CountryRegionCode properties cannot be changed since that change would is more restrictive (since the element would now only be available for certain countries/regions) and therefore would be a breaking change.
+- Workaround: Use the existing CountryRegionCode extension capability when the element is already country/region specific.
