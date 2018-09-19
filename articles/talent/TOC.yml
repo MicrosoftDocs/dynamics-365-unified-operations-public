@@ -28,6 +28,8 @@
       href: access-preview-feature.md
     - name: Configure the payroll integration between Talent and Dayforce
       href: configure-payroll-integration.md
+    - name: Get support for Talent
+      href: talent-support.md
   - name: Organize your workforce by using departments, jobs, and positions
     href: departments-jobs-positions.md
     items:
