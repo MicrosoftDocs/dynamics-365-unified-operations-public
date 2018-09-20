@@ -5,7 +5,7 @@ title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 03/01/2018
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -187,27 +187,27 @@ This workaround requires user knowledge and extra steps. After users have been e
 
 The following URLs are accessed for loading.
 
-- `http://az689774.vo.msecnd.net:443`
+- `https://az689774.vo.msecnd.net:443`
 - `https://az689774.vo.msecnd.net`
-- `http://appsforoffice.microsoft.com:443`
+- `https://appsforoffice.microsoft.com:443`
 - `https://appsforoffice.microsoft.com`
-- `http://secure.aadcdn.microsoftonline-p.com:443`
+- `https://secure.aadcdn.microsoftonline-p.com:443`
 - `https://secure.aadcdn.microsoftonline-p.com`
-- `http://az416426.vo.msecnd.net:443`
+- `https://az416426.vo.msecnd.net:443`
 - `https://az416426.vo.msecnd.net`
-- `http://telemetryservice.firstpartyapps.oaspapps.com:443`
+- `https://telemetryservice.firstpartyapps.oaspapps.com:443`
 - `https://telemetryservice.firstpartyapps.oaspapps.com`
-- `http://nexus.officeapps.live.com:443`
+- `https://nexus.officeapps.live.com:443`
 - `https://nexus.officeapps.live.com`
-- `http://browser.pipe.aria.microsoft.com:443`
+- `https://browser.pipe.aria.microsoft.com:443`
 - `https://browser.pipe.aria.microsoft.com`
 - `http://schemas.microsoft.com`
 
 The following URLs are accessed for authentication.
 
-- `http://login.windows.net:443`
+- `https://login.windows.net:443`
 - `https://login.windows.net`
-- `http://login.microsoftonline.com:443`
+- `https://login.microsoftonline.com:443`
 - `https://login.microsoftonline.com`
 
 ## Additional resources

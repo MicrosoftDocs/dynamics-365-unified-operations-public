@@ -918,6 +918,8 @@
       href: gdpr/gdpr-lcs.md
   - name: Data validation checklist workspace
     href: user-interface/data-validation-workspace.md
+  - name: Data management error descriptions
+    href: data-entities/dm-error-descriptions.md
 - name: Continuous delivery
   href: dev-tools/continuous-delivery-home-page.md
   items:
@@ -1119,7 +1121,7 @@
     - name: AX 2009 migration - Generate maps
       href: migration-upgrade/generate-maps.md
     - name: AX 2009 migration - Create templates
-      href: migration-upgrade/create-package-templates.md
+      href: migration-upgrade/create-package-templates-dmt.md
     - name: AX 2009 migration - Create migration groups
       href: migration-upgrade/create-definition.md
     - name: AX 2009 migration - Export packages
