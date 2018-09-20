@@ -65,20 +65,20 @@ Depreciation methods are used to define the rules for calculating depreciation. 
 ### Change the depreciation method in tax accounting 
 
 1.  Click **Fixed assets (Russia)** \> **Periodic** \> **Changing depreciation method**.
-2.  On the **General** tab, in the **Year** field, select the year when the new depreciation method will go into effect.
+2.  In the **Changing depreciation method** form, in the **Year** field, select (fill in) the year when the new depreciation method will go into effect.
 3.  In the **Old depreciation profile** field, select the depreciation method that was previously used for tax accounting.
 4.  In the **New depreciation profile** field, select the new depreciation method to be used.
 5.  Click **Record to include/ Filter** to open the **Inquiry** form, and then enter the selection criteria for fixed assets.
-6.  Click **OK**. The new depreciation method will be updated in the **Depreciation method** field on the **General** tab in the **FA value models** form.
+6.  Click **OK**. The new depreciation method will be updated in the **Depreciation method** field on the **General** FastTab in the **FA value models** form.
     
     > [!NOTE]
-    > Click **Fixed assets (Russia)> Common > Fixed assets**.Click **Fixed assets > Value models > FA lifetime history** to open the **FA history** page to view these changes.
+    > Click **Fixed assets (Russia) > Common > Fixed assets**.Click **Fixed assets > Value models > FA lifetime history** to open the **FA history** page to view these changes.
     
 ## Set up analysis codes for fixed asset depreciation 
 Analysis codes are used to calculate the depreciation accrual for a fixed asset. You can set up an annual depreciation rate that is applied to the fixed assets or to a depreciation group. 
 
 1.  Click **Fixed assets (Russia)** \> **Setup** \> **Analysis codes**.
-2.  On the left pane, press the **New** button to create a new line.
+2.  On the left pane, press the **New** button to create a new analysis code.
 3.  In the **Analysis code** field, enter the analysis code and in the **Name** field, enter a description of the analysis code.
 4.  In the **Depreciation group** field, select a depreciation group.
 5.  In the **Depreciation type** field, select the depreciation type from the following options:
@@ -96,8 +96,8 @@ Depreciation groups are defined for fixed asset value models to specify asset de
 If a fixed asset is registered after putting into operation, depreciation is calculated from the first day of the month of registration. If a fixed asset is registered before it is put into operation, depreciation is calculated from the first day of the month after the fixed asset is put into operation. 
 
 1.  Click **Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**.
-2.  In the **Value model** field, select the value model that the depreciation group is defined for.
-3.  Create a line.
+2.  In the **Value model** field, select the value model that a new depreciation group is defined for.
+3.  Click the **New** button to create a new depreciation group.
 4.  In the **Depreciation group** and **Name** fields, enter the depreciation group code and name for the depreciation group.
 5.  In the **Depreciation method** field, select a depreciation method for the depreciation group.
 6.  On the **General** FastTab, in the **Lifetime** field, enter the maximum service life, in years, during which depreciation is accrued for the fixed assets in the depreciation group.
@@ -108,6 +108,7 @@ If a fixed asset is registered after putting into operation, depreciation is cal
       - **Next quarter start** – Depreciation is calculated from the quarter after the fixed asset is put to use after acquisition.
       - **Next half year start** – Depreciation is calculated from the half-year after the fixed asset is put to use after acquisition.
       - **Next year start** – Depreciation is calculated from the year after the fixed asset is put to use after acquisition.
+      - **Date of the registration** - Depreciation is calculated from the date of the registration. 
 9.  Click the **Deferrals** FastTab.
 10. In the right pane, click **Disposal** to set up parameters to create deferrals on the disposal of fixed assets that accrue a loss. Click **Partial dismantlement** to create deferrals on the partial write-off of fixed assets that accrue a loss.
     
@@ -128,13 +129,13 @@ If a fixed asset is registered after putting into operation, depreciation is cal
 6.  On the **List** tab, press the **New** button to open the **Add to journal** form to create a single depreciation transaction for one fixed asset.
     
     > [!NOTE]
-    > Click <STRONG>Group operations</STRONG> &gt; <STRONG>Depreciation</STRONG> to create depreciation transactions for several fixed assets.
+    > Click <STRONG>Group operations</STRONG> &gt; <STRONG>Depreciation</STRONG> to create depreciation transactions for several fixed assets. Use **Record to include/ Filter** to open the **Inquiry** form to set criteria for fixed assets selections.
 
 7.  In the **Transaction date** field, select the date of the next calculation period. If no depreciation was calculated for the previous periods, depreciation transactions are created in the journal for all months prior to the transaction date, excluding the month of the transaction.
 8.  In the **Transaction type** field, select **Depreciation**.
 9.  In the **FA number** field, select a fixed asset number.
 10. In the **Value model** field, select a fixed asset value model. If you do not select a model, transactions for all value models are created in the journal.
-11. In the **Reason code** field, select a reason code and in the **Reason comment** field, view or modify the reason for the depreciation transaction.
+11. In the **Reason code** field, select a reason code and in the **Reason comment** field, view or modify the reason for the depreciation transaction (if needed).
 13. Click **OK**. Depreciation transactions are created in the journal for all value models that you set up in the **Value models** form.
 14. Click **Validate** \> **Validate** to validate the transaction details.
 15. Click **Post** \> **Post** to post the journal. Fixed asset and ledger transactions are created.
