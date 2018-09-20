@@ -63,7 +63,7 @@ The product output-mileage depreciation method is used to write off the value of
 Use this procedure to create the product output or mileage of a fixed asset. 
 
 1.  Click **Fixed assets (Russia)** \> **Periodic** \> **Product output/mileage**.
-2.  Press CTRL+N to create new product output or mileage for a fixed asset.
+2.  Press the **New** button to create new product output or mileage for a fixed asset.
 3.  In the **FA inventory number** field, select a fixed asset number.
 4.  In the **Period** field, select a start date of the period for calculating the product output or mileage for the fixed asset.
     
@@ -82,6 +82,9 @@ Use this procedure to create the product output or mileage of a fixed asset.
     –or–
     
     Click **Functions** \> **Copy output/run** to open the **Create or copy output/run lines** form and create lines in the defined reporting period with specified export and tax-exempt details for the fixed asset.
+   
+   [!NOTE]
+    > You may enter the output or millage in the **Fixed assets** form (**Fixed assets (Russia)** \> **Common** \> **Fixed assets**, **FIXED ASSETS** button \> **FA usage** ). 
 
 ## Non-linear tax accounting group depreciation method
 
