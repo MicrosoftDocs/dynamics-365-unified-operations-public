@@ -305,6 +305,14 @@
     href: ../talent/create-job.md
 - name: Localization and regulatory features
   items:
+  - name: Eastern Europe
+    items: 
+    - name: Advance invoices for Retail for Eastern Europe
+      href: localizations/emea-eeu-advance-invoices-for-retail.md
+    - name: Petty cash management for Retail for Eastern Europe
+      href: localizations/emea-eeu-petty-cash-for-retail.md
+    - name: Retail customer invoices and return sales orders in Eastern European countries
+      href: localizations/emea-eeu-retail-invoices.md
   - name: France
     items:
     - name: Cash register functionality
