@@ -38,7 +38,7 @@ Due dates for sales invoices, purchase invoices, and project invoices are calcul
 
 If a due date limit is specified on the **Terms of payment** page and the **Item groups** page, the invoice due date that is calculated is verified against the effective due date limit. The invoice due date is then adjusted, if adjustment is required, so that it complies with the effective due date limit.
 
-To use delivery dates and calculate invoice due dates for sales invoices and purchase invoices, on the **Terms of payment** page, on the **Setup** FastTab, select the **Use the delivery date to calculate the payment due date** check box.
+To use delivery dates and calculate invoice due dates for sales invoices and purchase invoices, on the **Terms of payment** page, on the **Setup** FastTab, set the **Use the delivery date to calculate the payment due date** option to **Yes**.
 
 For sales invoices, the date that is specified in the **Confirmed receipt date** field on the **Sales order header** FastTab on the **Sales order** page is used as the delivery date.
 
@@ -51,9 +51,9 @@ The delivery dates for project sales orders and project purchase orders are dete
 
 ### Calculate invoice due dates for sales and purchase invoices, based on delivery dates and due date limits
 
-To use delivery dates to calculate invoice due dates, on the **Terms of payment** page, on the **Setup** tab, select the **Use the delivery date to calculate the payment due date** check box.
+To use delivery dates to calculate invoice due dates, on the **Terms of payment** page, on the **Setup** tab, set the **Use the delivery date to calculate the payment due date** option to **Yes**.
 
-The following example shows what the calculated payment due date for the selected terms of payment looks like if the **Use the delivery date to calculate the payment due date** check box is selected.
+The following example shows what the calculated payment due date for the selected terms of payment looks like if the **Use the delivery date to calculate the payment due date** option is to **Yes**.
 
 | Terms of payment        | Delivery date | Due date limit | Calculated invoice due date |Adjusted invoice due date |
 |-------------------------|---------------|----------------|-----------------------------|--------------------------|
@@ -74,8 +74,8 @@ Use the **Due date limits** page to create due date limits that specify the maxi
 
 2. Select **New** to create a due date limit.
 3. In the **Due date limit** field, enter a name for the new due date limit. In the **Description** field, enter a description.
-4. On the **General** tab, select **Add** to add a line.
-5. In the **Period interval** field, select the period interval:
+4. On the **General** tab, click **Add** to add a line.
+5. In the **Period interval** field, select the period interval type:
 
     - **Days** – The due date limit is for the number of days that you enter in the **Number of units** field.
     - **Months** – The due date limit is for the number of months that you enter in the **Number of units** field.
@@ -94,26 +94,26 @@ Use the **Terms of payment** page to specify a due date limit, so that you can m
 
     Select **Accounts receivable \> Setup \> Payment \> Terms of payment**.
 
-2. Press Ctrl+N to create terms of payment, or select a terms of payment line.
-3. On the **Setup** FastTab, select the **Use the delivery date to calculate the payment due date** check box to calculate the due date by applying terms of payment to the delivery date instead of the invoice date.
+2. Press the **New** button to create terms of payment, or select a terms of payment line.
+3. On the **Setup** FastTab, set the **Use the delivery date to calculate the payment due date** option to **Yes** to calculate the due date by applying terms of payment to the delivery date instead of the invoice date.
 4. In the **Due date limit** field, select a due date limit.
 
 ## Calculate invoice due dates based on the payment schedule and the payment day
 
 You can specify the payment schedule and the payment day for a customer invoice, a free text invoice, a vendor invoice, or a project invoice before you generate the invoice. In Microsoft Dynamics 365 for Finance and Operations, the payment due dates of vendor invoices and project invoices are calculated based on the delivery dates of items and services. For customer invoices, the due dates are calculated based on the customer invoice receipt dates.
 
-On the **Due date limits** page, you can specify the number of days in the grace period that an invoice payment must be made within. You can select the **Use the delivery date to calculate the payment due date** check box on the **Terms of payment** page to use the delivery date to calculate the invoice due dates.
+On the **Due date limits** page, you can specify the number of days in the grace period that an invoice payment must be made within. You can set the **Use the delivery date to calculate the payment due date** option to **Yes** on the **Terms of payment** page to use the delivery date to calculate the invoice due dates.
 
 You must specify a payment due date that is before the due date limit for an invoice. You can set the payment schedule and payment day for an invoice, and then manually calculate the invoice due date. If that due date is after the due date limit that is set on the **Due date limits** page, you must correct the due date.
 
 ## Generate the Information on average period of payments to suppliers report
-You can generate the **Information on average period of payments to suppliers** report. This statistical report contains information about the invoices that were paid during a period that you specify. The report shows the amounts that were paid based on the payment terms. It also shows the amounts that were paid outside the payment terms. The report includes the amounts that were paid by using payment journals and promissory notes.
+You can generate the **Information on average period of payments to suppliers** report This statistical report contains information about the invoices that were paid during a period that you specify. The report shows the amounts that were paid based on the payment terms. It also shows the amounts that were paid outside the payment terms. The report includes the amounts that were paid by using payment journals and promissory notes.
 
 To generate the report, follow these steps.
 
 1. Select **General ledger \> Inquiries and reports \> Ledger reports \> Information on average period of payments to suppliers**.
 2. In the **Current period** field group, select the start and end dates of the period that you're generating the report for.
 3. In the **Comparative period** field group, select the start and end dates of the comparative period. For example, you can select the start and end dates of the previous fiscal period.
-4. In the **Calculation** field group, select the calculation method (invoice date of due date).
+4. In the **Calculation** field group, in the **Calculation method** field select the calculation method (**Invoice date** or **Due date**).
 5. On the **Record to include** FastTab, specify the criteria to use to select the vendor transactions, such as invoices, payments, and promissory note journals. (Use **Filter** to specify the criteria.)
 6. Select **OK** to generate the report.
