@@ -2,9 +2,9 @@
 # required metadata
 
 title: Advance invoices for Retail for Eastern Europe
-description: 
-author:  This topic describes how to set up advance notices for Retail for Eastern Europe. 
-manager: epopov
+description: This topic describes how to set up advance notices for Retail for Eastern Europe. 
+author: epopov
+manager: annbe
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 ---
 # Advance invoices for Retail for Eastern Europe
 
-*Applies To: Dynamics 365 for Finance and Operations*
+[!include [banner](../../includes/banner.md)]
 
 For some European countries (Poland, Hungary, Czech Republic), when you receive a prepayment from a customer via Point of Sale (POS), the prepayment must be registered for tax purposes and you must generate and print an advance invoice document that includes the prepayment amount. In Poland, advance invoice transactions must be posted in general ledger.
 
