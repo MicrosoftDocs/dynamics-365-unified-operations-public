@@ -2689,6 +2689,8 @@
       items:
       - name: Power BI integration with Entity store
         href: ../dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/fin-and-ops/toc.json
+      - name: Incremental refresh option for Entity store models
+        href: ../dev-itpro/analytics/incremental-refresh-entity-store-models.md
       - name: Resolve issues after Entity store maintenance
         href: ../dev-itpro/analytics/entity-store-maintenance.md
       - name: Configure Power BI integration for workspaces
