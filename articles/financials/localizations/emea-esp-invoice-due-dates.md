@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Calculate due dates and report on the average period of payments for Spain
+title: Calculate due dates and report on the average period of payments (Spain)
 description: This topic provides information about due dates and the average period of payments for Spain.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/13/2018
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.search.validFrom: 2016-11-30
 
 ---
 
-# Calculate due dates and report on the average period of payments for Spain
+# Calculate due dates and report on the average period of payments (Spain)
 
 [!include[banner](../includes/banner.md)]
 
