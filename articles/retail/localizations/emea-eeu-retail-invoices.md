@@ -45,6 +45,6 @@ You can set up the following information for customer invoices and return sales 
 
 - You can use the number range that is provided by the tax authorities to number Latvian and Lithuanian customer invoices and return sales orders. 
 
-  * Click **Organization administration > Number sequences > Counters management**. There should be a record where **Module** = **Sales** and **Type**= **Invoice**.
+  * Click **Organization administration > Number sequences > Counters management**. There should be a record where **Module** = **Sales** and **Type** = **Invoice**.
 
   * Click **Organization administration > Number sequences > Invoice numbering setup**. Mark the **Retail** check box for the number sequence line that is used to number the customer invoices.
