@@ -144,27 +144,9 @@ For advanced troubleshooting, you can view raw information logs. You can use a s
 
 ### SQL insights
 
-The Monitoring and diagnostics portal also includes advanced SQL troubleshooting tools to enable performance analysis. Some of these tools resemble the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012.
+The Monitoring and diagnostics portal also includes advanced SQL troubleshooting tools to enable performance analysis. Some of these tools resemble the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. 
+- [Visit the performance troubleshooting topic for more details](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/performancetroubleshooting)
 
-#### Performance metrics
-
-The **Performance metrics** page shows the most expensive queries that were run in the system during the selected period, based on logical I/O, execution count, duration, CPU time, and wait count. This data is queried from the SQL query store. The data is retained for 30 days, and the tool runs its data collection every day at 10 PM Coordinated Universal Time (UTC). [![sqlinsights](./media/sqlinsights-1024x512.jpg)](./media/sqlinsights.jpg) To use the tool, follow these steps.
-
-1.  Select a period during the last 30 days.
-2.  When the query results appear, select the first bar in the duration chart to highlight where the query falls on other metrics.
-3.  On the **Statement** tab, view the query, or download the query execution plan.
-
-#### SQL now tool
-
-You can use the SQL now tool for just-in-time diagnostics. For example, a report is running slowly, and you want to see whether there are any locking/blocking issues and what SQL statements are running in the background. In this case, you can open this page and refresh it while the report is being run.
-
-#### Index analysis
-
-The Index analysis tool shows aggregated index and table information, based on user scans, user seeks, user updates, and row count. Like performance metrics, this tool shows the trend for the selected index together with additional table metrics.
-
-### System diagnostics
-
-The System diagnostic tool is a rule-based framework that runs a predefined set of rules against the environment and provides a report about the status of the rules. If failures occur, this tool provides recommendations for addressing the issue. To start the System diagnostics tool, on the LCS project dashboard, click the hamburger icon, and then click **System diagnostic**.
 
 ## Other resources
 
