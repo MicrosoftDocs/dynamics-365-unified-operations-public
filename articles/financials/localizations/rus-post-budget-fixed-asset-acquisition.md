@@ -36,14 +36,14 @@ Financial plans and current budgets can be created in the Fixed assets module us
 
 
 1.  Click **Budgeting** \> **Setup** \> **Basic budgeting** \> **Budget models**.
-2.  Press CTRL+N to create a new budget model.
-3.  In the **Budget model** field, enter a number for the budget model.
-4.  In the **Name** field, enter a name for the budget model.
-5.  Press CTRL+S or close the form.
-6.  Click **Fixed assets (Russia)** \> **Journals** \> **FA budget journal**.
-7.  On the **Overview** tab, press CTRL+N to create a new journal.
-8.  In the **Name** field, select a journal name.
-9.  Click **Lines** to open the **Journal voucher** form, where you can enter fixed asset budget transactions.
+2.  Press the **New** button to create a new budget model.
+3.  In the **Budget model** field, enter a code of the budget model and in the **Name** field, enter a name for the budget model.
+4.  Close the form.
+5.  Click **Fixed assets (Russia)** \> **Journals** \> **FA budget journal**.
+6.  On the **List** tab, press the **New** button to create a new journal.
+7.  In the **Name** field, select a journal name.
+8.  Click **Lines** to open the **Journal voucher** form, where you can enter fixed asset budget transactions.
+9.  On the **List** tab, press the **New** button to create a new line for budget transaction
 10. In the **Budget model** field, select the budget model.
 11. In the **Accounting** field, view or modify the fixed asset value model.
 12. In the **Transaction type** field, select **Putting into operation**.
@@ -58,11 +58,11 @@ Financial plans and current budgets can be created in the Fixed assets module us
     > [!NOTE]
     > If the posting profile is set up for this transaction, the <STRONG>Offset account</STRONG> field displays the account number automatically.
 
-20. Repeat steps 10 through 19 for each fixed asset transaction type.
+20. Repeat steps 9 through 19 for each fixed asset transaction type.
     
     > [!NOTE]
     > Click **Putting into operation** and **Depreciation** to create group acquisition and depreciation calculation transactions. Specify the transaction date and budget model when you create an acquisition transaction. Specify the transaction date, budget model, and value model for the transaction when you calculate depreciation.
 
 21. Click **Validate** \> **Validate** to verify the asset information in the journal.
-22. Click **Post** \> **Transfer budgets** to transfer the transactions to the fixed asset budget.
-23. Click **Post** \> **Transfer and update budgets** to transfer the transactions to the general ledger budget.
+22. Click **Post** \> **Transfer to fixed asset budget** to transfer the transactions to the fixed asset budget.
+23. Click **Post** \> **Transfer to fixed asset and ledger budget** to transfer the transactions to the fixed asset and general ledger budget.
