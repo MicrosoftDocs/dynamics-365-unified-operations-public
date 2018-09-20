@@ -78,13 +78,13 @@ Depreciation methods are used to define the rules for calculating depreciation. 
 Analysis codes are used to calculate the depreciation accrual for a fixed asset. You can set up an annual depreciation rate that is applied to the fixed assets or to a depreciation group. 
 
 1.  Click **Fixed assets (Russia)** \> **Setup** \> **Analysis codes**.
-2.  On the left pane, press CTRL+N to create a new line.
+2.  On the left pane, press the **New** button to create a new line.
 3.  In the **Analysis code** field, enter the analysis code and in the **Name** field, enter a description of the analysis code.
 4.  In the **Depreciation group** field, select a depreciation group.
 5.  In the **Depreciation type** field, select the depreciation type from the following options:
       - **On cost** − The analysis code is applied to all fixed assets excluding vehicular fixed assets.
       - **On 1000 km mileage** − The analysis code is applied to vehicular fixed assets.
-6.  On the right pane, press the Add button to create a new line.
+6.  On the right pane, press the **Add** button to create a new line.
 7.  In the **Start date** field, specify the date when the depreciation rate becomes active.
 8.  In the **Depreciation rate** field, enter the annual depreciation rate as a percentage.
 9. In the **Factor** field, enter the factor by which the specified depreciation rate is increased or decreased from the fixed value that is defined by the Russian Federation legislation for a fixed asset group.
