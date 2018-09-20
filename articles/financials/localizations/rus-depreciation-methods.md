@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fixed assets depreciation methods for Russia
+title: Depreciation methods (Russia)
 description: This topic describes the fixed assets depreciation methods for Russia.
 author: anasyash
 manager: AnnBe
@@ -29,10 +29,9 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Fixed assets depreciation methods for Russia
+# Depreciation methods (Russia)
 
 [!include [banner](../includes/banner.md)]
-
 
 ## Linear and non-linear depreciation methods
 
@@ -84,7 +83,7 @@ Use this procedure to create the product output or mileage of a fixed asset.
     Click **Functions** \> **Copy output/run** to open the **Create or copy output/run lines** form and create lines in the defined reporting period with specified export and tax-exempt details for the fixed asset.
    
     > [!NOTE]
-    > You may enter the output or mileage in the **Fixed assets** form (**Fixed assets (Russia)** \> **Common** \> **Fixed assets**, **FIXED ASSETS** button \> **FA usage** ). 
+    > You may enter the output or mileage on the **Fixed assets** page (**Fixed assets (Russia)** \> **Common** \> **Fixed assets**, **FIXED ASSETS** button \> **FA usage** ). 
 
 ## Non-linear tax accounting group depreciation method
 
@@ -92,17 +91,9 @@ Linear and non-linear depreciation methods are used to calculate depreciation fo
 
 When the non-linear method is used, the accrued monthly depreciation for the asset is calculated as the product of the remaining value of the asset and the depreciation rate. The depreciation rate is defined by the formula K = (2/n) \* 100%, where n = the useful life of the asset in months.
 
-### Calculate or reverse depreciation using the tax group non-linear depreciation method 
-
-You can calculate depreciation in tax accounting by using the linear method or the non-linear method. You can also calculate tax depreciation by using the tax non-linear group depreciation method. This method allows you to specify a depreciation rate for each group, or a depreciation factor for each subgroup, to calculate the depreciation amount that is accrued for each depreciation group or subgroup.
-
-You can group the depreciation register lines by depreciation group or subgroup by using the **FA depreciation (nonlinear method)**, **IA depreciation (nonlinear method)**, **FA - information about object**, and **IA - object information** tax registers.
-
-Use the following procedures to set up a method of depreciation, and to calculate or reverse depreciation by using the tax group non-linear depreciation method.
-
 ### Set up the method of depreciation
 
-You can create a tax non-linear group depreciation method on the **Depreciation methods** page. For more information, see [Fixed assets depreciation for Russia](rus-fixed-assets-depreciation.md).
+You can create a tax non-linear group depreciation method on the **Depreciation methods** page. For more information, see [Depreciation setup (Russia)](rus-depreciation-setup.md).
 
 1.  Click **Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**.
 2.  In the **Value model** field, select the value model that the depreciation group is defined for.
@@ -110,7 +101,7 @@ You can create a tax non-linear group depreciation method on the **Depreciation 
     > [!NOTE]
     > You must specify the posting layer as **Tax** for the selected value model op the **Value models** page.
 
-3.  Create a new depreciation group. For more information, see [Set up a depreciation group](rus-fixed-assets-depreciation.md##set-up-depreciation-groups).
+3.  Create a new depreciation group. For more information, see [Set up a depreciation group](rus-depreciation-setup.md##set-up-depreciation-groups).
 4.  In the **Depreciation group** and **Name** fields, enter the depreciation group and name.
 5.  In the **Depreciation method** field, select the **Tax nonlinear** method of depreciation.
 6.  In the **Lifetime** field, enter the maximum asset service life, during which depreciation accrues for the fixed assets in the depreciation group. The value is expressed in months.
@@ -123,31 +114,13 @@ You can create a tax non-linear group depreciation method on the **Depreciation 
 8.  On the **Subgroups** FastTab, in the **Depreciation subgroup** field, enter the identification code of the depreciation subgroup.
     
     > [!NOTE]
-    > This FastTab is available only if you select <STRONG>Tax nonlinear group method</STRONG> as the method of depreciation.</P>
+    > This FastTab is available only if you select **Tax nonlinear group method** as the method of depreciation.</P>
 
 9.  In the **Name** field, enter the name of the depreciation subgroup.
 10. In the **Factor** field, enter the depreciation calculation ratio.
 
-### Calculate fixed asset depreciation for fixed assets by using the tax non-linear group method
 
-1.  Click **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
-2.  Create a new journal.
-3.  In the **Name** field, select a journal name.
-4.  In the **Description** field, modify the description of the journal.
-5.  Click **Lines** to open the **Journal voucher** form.
-6.  Click **Group operations** \> **Depreciation by group** to open the **Depreciation by group** form.
-    
-    > [!NOTE]
-    > If you select the **Tax nonlinear group method**as the depreciation method, you cannot calculate the depreciation for a tax value model by using the single or group depreciation function.
+## Additional resources
 
-7.  In the **Transaction date** field, select the date of the transaction.
-8.  Click **Select** to open the **Inquiry** form, and then enter the selection criteria for the fixed assets.
-9.  Click **OK**. Depreciation transactions are created in the journal.
-10. Click **Validate** \> **Validate** to validate the journal.
-11. Click **Post** \> **Post** to post the journal. Corresponding fixed asset and ledger transactions are created.
-
-### Calculating depreciation bonus
-
-The depreciation bonus is an additional depreciation amount that is assessed during the first year for some operational asset types. You must set up a posting profile and create an acquisition journal before you calculate the fixed asset depreciation bonus.
-
-Use the **Depreciation bonus** form to calculate the depreciation bonus for fixed assets by using the **Tax nonlinear group method** as the depreciation method. When you create the depreciation transactions, a depreciated bonus is calculated for every asset. The bonus amount is calculated first, and then the depreciation from the cost is calculated, excluding the bonus. The bonus amount is not included in the total balance of the depreciation group.
+- [Depreciation setup (Russia)](rus-depreciation-setup.md)
+- [Depreciation methods (Russia)](rus-depreciation-calculation.md)
