@@ -1119,7 +1119,7 @@
     - name: AX 2009 migration - Generate maps
       href: migration-upgrade/generate-maps.md
     - name: AX 2009 migration - Create templates
-      href: migration-upgrade/create-package-templates.md
+      href: migration-upgrade/create-package-templates-dmt.md
     - name: AX 2009 migration - Create migration groups
       href: migration-upgrade/create-definition.md
     - name: AX 2009 migration - Export packages
