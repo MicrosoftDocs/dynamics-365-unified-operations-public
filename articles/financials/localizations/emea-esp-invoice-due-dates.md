@@ -38,7 +38,7 @@ Due dates for sales invoices, purchase invoices, and project invoices are calcul
 
 If a due date limit is specified on the **Terms of payment** page and the **Item groups** page, the invoice due date that is calculated is verified against the effective due date limit. The invoice due date is then adjusted, if adjustment is required, so that it complies with the effective due date limit.
 
-To use delivery dates and calculate invoice due dates for sales invoices and purchase invoices, on the **Terms of payment** page, on the **Setup** FastTab, set the **Use the delivery date to calculate the payment due date** option to **Yes**.
+To use delivery dates and calculate invoice due dates for sales invoices and purchase invoices, set the **Use the delivery date to calculate the payment due date** option to **Yes** on the **Terms of payment** page, on the **Setup** FastTab, .
 
 For sales invoices, the date that is specified in the **Confirmed receipt date** field on the **Sales order header** FastTab on the **Sales order** page is used as the delivery date.
 
@@ -53,7 +53,7 @@ The delivery dates for project sales orders and project purchase orders are dete
 
 To use delivery dates to calculate invoice due dates, on the **Terms of payment** page, on the **Setup** tab, set the **Use the delivery date to calculate the payment due date** option to **Yes**.
 
-The following example shows what the calculated payment due date for the selected terms of payment looks like if the **Use the delivery date to calculate the payment due date** option is to **Yes**.
+The following example shows what the calculated payment due date for the selected terms of payment looks like, if the **Use the delivery date to calculate the payment due date** option is set to **Yes**.
 
 | Terms of payment        | Delivery date | Due date limit | Calculated invoice due date |Adjusted invoice due date |
 |-------------------------|---------------|----------------|-----------------------------|--------------------------|
