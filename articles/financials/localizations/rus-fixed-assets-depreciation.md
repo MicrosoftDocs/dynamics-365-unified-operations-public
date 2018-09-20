@@ -148,6 +148,7 @@ If a fixed asset is registered after putting into operation, depreciation is cal
 5.  Click **Group operations** \> **Storno of depreciation** to open the **Storno of depreciation** form.
 6.  In the **Date of storno** field, select a date for the depreciation reversal.
 7.  In the **Accounting** field, select a fixed asset value model.
-8.  Click **OK**. Depreciation reversal transactions are created in the journal.
-9. Click **Validate** \> **Validate** to validate the transaction details.
-10. Click **Post** \> **Post** to post the journal. The fixed asset depreciation transaction is reversed and the ledger transaction is updated accordingly.
+8.  Click **Record to include/ Filter** to open the **Inquiry** form, and then enter the selection criteria for fixed assets.
+9.  Click **OK**. Depreciation reversal transactions are created in the journal.
+10. Click **Validate** \> **Validate** to validate the transaction details.
+11. Click **Post** \> **Post** to post the journal. The fixed asset depreciation transaction is reversed and the ledger transaction is updated accordingly.
