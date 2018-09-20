@@ -49,21 +49,21 @@ To revaluate fixed asset cost and depreciation, complete the following steps.
 
 1.  Open the **FA revaluation (Fixed asset (Russia)** \> **Periodic journals** \> **FA revaluation**).
 
-2.  Click **New** button to create a new revaluation journal.
+2.  Click the **New** button to create a new revaluation journal.
 
-3.  The **Revaluation period** and **State on** are filled in automatically with the current period and date. You may update these fields (if needed). Value in the **State on** field is the date when depreciation revaluation is executed from.
+3.  The **Revaluation period** and **State on** are filled in automatically with the current period and date. You may update these fields (if needed). Value in the **State on** field is the date when depreciation revaluation is calculated from.
 
-4.  Select fixed asset journal name. This journal name will be used for creating FA journal when closing the revaluation journal.
+4.  Select fixed asset journal name. This journal name is used for creating FA journal when closing the revaluation journal.
 
-5.  The **FA journal** field is filled in automatically according the number sequence setting when closing the revaluation journal.
+5.  The **FA journal** field is filled in automatically according the number sequence setting, when closing the revaluation journal.
 
-6.  Click the **Lines** button and select RAP value model in the revaluation lines creation. If necessary, set filter for selecting fixed assets for revaluation (**Records to include/ filter**). Then click OK button.
+6.  Click the **Lines** button and select RAP value model in the **Revaluation lines creation** form. If necessary, set filter for selecting fixed assets for revaluation (**Records to include/ filter**). Then click OK button.
 
-7.  In the **FA revaluation lines** form the system creates lines with fixed assets with the selected value model.
+7.  In the **FA revaluation lines** form the system creates lines for fixed assets with the selected value model.
 
 8.  **Net book value** is displayed In the **Balance cost** field and the fixed asset cost with revaluation is displayed in the **Replacement cost** field. Balance cost value corresponds to the value in **Net book value** field in **Balance by FA form** (**Fixed asset (Russia)** \> **Fixed assets** \> **Value models** \> **Balance**).
 
-    > You may enter **Replacement cost** manually **(**in this case the system  recalculates the factor) or enter the factor (in this case the system recalculates the replacement cost).
+    > [!NOTE] You may enter **Replacement cost** manually (in this case the system  recalculates the factor) or enter the factor (in this case the system recalculates the replacement cost).
 
 9.  If it is necessary, you may remove lines form the form or add new ones. To add a new line click the **New** button, select FA inventory number and value model in the **Revaluation lines creation** form and then click the **OK** button. If the value model is not specified in this form, the system creates lines for all value models which set up in the fixed asset.
 
@@ -73,11 +73,11 @@ To revaluate fixed asset cost and depreciation, complete the following steps.
 
 12. Select the value model in the **Group revaluation** form, which the revaluation should be calculated for.
 
-13. Enter the factor and set filter for selecting fixed assets for revaluation (**Records to include/ filter**). Then click the **OK** button. The **Factor** and Replacement cost fields are filled in for all lines.
+13. Enter the factor and set filter to select fixed assets for revaluation (**Records to include/ filter**). Then click the **OK** button. The **Factor** and Replacement cost fields are filled in for all lines.
 
 14. Close the **FA revaluation lines** form.
 
-15. Click the **Close** button in the **FA revaluation** form for confirming revaluation results. After FA revaluation journal closing the FA journal is created, the FA journal number is filled in and **FA journal** button becomes active.
+15. Click the **Close** button in the **FA revaluation** form for confirming revaluation results. After FA revaluation journal is closing the FA journal is created, the FA journal number is filled in and **FA journal** button becomes active.
 
 16. Click the **FA journal** button and then the **Lines** button. Revaluation transactions are displayed in the **Voucher transaction** form. If it is necessary, correct these transactions.
 
