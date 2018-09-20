@@ -52,7 +52,7 @@ All performance tools in Lifecycle Services are available under the **SQL Insigh
 
 - **Index Analysis** - Shows aggregated index and table information, based on user scans, user seeks, user updates, and row count. Like performance metrics, this tool shows the trend for the selected index together with additional table metrics.
 
-How do I use this feature?
+# How do I use this feature?
 
 1. Go to your project in LCS and open the environment details page. Select the Environment Monitoring link in the Monitoring section. Click the SQL Insights tab to access this feature.
 2. You can navigate to each of the tabs (Live View, Queries, and Actions, Performance Metrics, Index Analysis) to view or query for more information.
