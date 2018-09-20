@@ -916,6 +916,8 @@
       href: gdpr/gdpr-lcs.md
   - name: Data validation checklist workspace
     href: user-interface/data-validation-workspace.md
+  - name: Data management error descriptions
+    href: data-entities/dm-error-descriptions.md
 - name: Continuous delivery
   href: dev-tools/continuous-delivery-home-page.md
   items:
