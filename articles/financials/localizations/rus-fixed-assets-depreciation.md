@@ -122,11 +122,10 @@ If a fixed asset is registered after putting into operation, depreciation is cal
 ## Calculate fixed asset depreciation
 
 1.  Click **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
-2.  On the **Overview** tab, press the New button to create a new journal.
-3.  In the **Name** field, select a journal name.
-4.  In the **Description** field, view or modify the description of the journal.
+2.  On the **List** tab, press the **New** button to create a new journal.
+3.  In the **Name** field, select a journal name and in the **Description** field, view or modify the description of the journal.
 5.  Click **Lines** to open the **Journal voucher** form.
-6.  On the **Overview** tab, press the New button to open the **Add to journal** form to create a single depreciation transaction for one fixed asset.
+6.  On the **List** tab, press the **New** button to open the **Add to journal** form to create a single depreciation transaction for one fixed asset.
     
     > [!NOTE]
     > Click <STRONG>Group operations</STRONG> &gt; <STRONG>Depreciation</STRONG> to create depreciation transactions for several fixed assets.
@@ -143,13 +142,12 @@ If a fixed asset is registered after putting into operation, depreciation is cal
 ## Reverse fixed asset depreciation
 
 1.  Click **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
-2.  On the **Overview** tab, press the New button to create a new journal.
-3.  In the **Name** field, select a journal name.
-4.  In the **Description** field, view or modify the description of the journal.
-5.  Click **Lines** to open the **Journal voucher** form.
-6.  Click **Group operations** \> **Storno of depreciation** to open the **Storno of depreciation** form.
-7.  In the **Date of storno** field, select a date for the depreciation reversal.
-8.  In the **Accounting** field, select a fixed asset value model.
-9.  Click **OK**. Depreciation reversal transactions are created in the journal.
-10. Click **Validate** \> **Validate** to validate the transaction details.
-11. Click **Post** \> **Post** to post the journal. The fixed asset depreciation transaction is reversed and the ledger transaction is updated accordingly.
+2.  On the **List** tab, press the **New** button to create a new journal.
+3.  In the **Name** field, select a journal name and in the **Description** field, view or modify the description of the journal.
+4.  Click **Lines** to open the **Journal voucher** form.
+5.  Click **Group operations** \> **Storno of depreciation** to open the **Storno of depreciation** form.
+6.  In the **Date of storno** field, select a date for the depreciation reversal.
+7.  In the **Accounting** field, select a fixed asset value model.
+8.  Click **OK**. Depreciation reversal transactions are created in the journal.
+9. Click **Validate** \> **Validate** to validate the transaction details.
+10. Click **Post** \> **Post** to post the journal. The fixed asset depreciation transaction is reversed and the ledger transaction is updated accordingly.
