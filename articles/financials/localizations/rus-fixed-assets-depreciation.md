@@ -68,7 +68,7 @@ Depreciation methods are used to define the rules for calculating depreciation. 
 2.  On the **General** tab, in the **Year** field, select the year when the new depreciation method will go into effect.
 3.  In the **Old depreciation profile** field, select the depreciation method that was previously used for tax accounting.
 4.  In the **New depreciation profile** field, select the new depreciation method to be used.
-5.  Click **Select** to open the **Inquiry** form, and then enter the selection criteria for fixed assets.
+5.  Click **Record to include/ Filter** to open the **Inquiry** form, and then enter the selection criteria for fixed assets.
 6.  Click **OK**. The new depreciation method will be updated in the **Depreciation method** field on the **General** tab in the **FA value models** form.
     
     > [!NOTE]
