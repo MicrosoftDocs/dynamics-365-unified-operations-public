@@ -5,7 +5,7 @@ title: Set up and use PKWiU codes for Poland
 description: This topic walks you through setting up the PKWiU code for Poland.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/28/2018
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,9 +30,9 @@ ms.search.validFrom: 2016-11-30
 
 # Set up and use PKWiU codes
 
-The PKWiU code is used for tax purposes to categorize goods and services sold in Poland. It is included on all sales order invoices, free text invoices, and invoices posted from the Project module. You can view the PKWiU code in the project invoice. Print the project invoice by using the Invoice journals form. Set up notifications for when a PKWiU code is missing from an invoice
+The PKWiU code is used for tax purposes to categorize goods and services sold in Poland. It is included on all sales order invoices, free text invoices, and invoices posted from the Project module. You can view the PKWiU code in the project invoice and print the project invoice by using the **Invoice journals** form. You can also set up notifications for when a PKWiU code is missing from an invoice.
 
-To ensure that users include a PKWiU code on all invoices, select one of the following options for the PKWiU code requirement field on the **Accounts receivable parameters** page: 
+To ensure that users include a PKWiU code on all invoices, select one of the following options in the **PKWiU code requirement** field on the **Accounts receivable parameters** page: 
 - **None** – Do not display a message when a PKWiU code is missing from a sales order or a free text invoice. The PKWiU code is not required for invoices. 
 - **Warning** – Display a message when you invoice a sales order or a free text invoice that is missing the PKWiU code. 
 - **Error** – Display a message when you invoice a sales order or a free text invoice that is missing the PKWiU code and stop the invoice from being processed. 
