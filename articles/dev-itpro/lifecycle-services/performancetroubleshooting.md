@@ -44,15 +44,15 @@ Common feedback from customers and partners has been that they are unable to suc
 
 All performance tools in Lifecycle Services are available under the **SQL Insights** tab in the **Environment Monitoring** page for a specific environment. Below is a description of the tabs you will see:
 
-- **Live View** - Shows current DTU, executing statements, and blocking statements. The current SQL Now page that shows performance issues will be replaced with Live View.[![sqlinsights](./media/sqlinsights-1024x512.jpg)](./media/sqlinsights.jpg)
+- **Live View** - Shows current DTU, executing statements, and blocking statements. The current SQL Now page that shows performance issues will be replaced with Live View.[![liveview](./media/LiveView.jpg)](./media/LiveView.jpg)
 
-- **Queries** - Shows a list of pre-defined queries that can be used to retrieve metrics on demand. Examples of queries include a current blocking tree, a list of active plan guides, and a list of most expensive queries.[![sqlinsights](./media/sqlinsights-1024x512.jpg)](./media/sqlinsights.jpg)
+- **Queries** - Shows a list of pre-defined queries that can be used to retrieve metrics on demand. Examples of queries include a current blocking tree, a list of active plan guides, and a list of most expensive queries.[![queries](./media/Queries.jpg)](./media/Queries.jpg)
 
-- **Actions** - Shows a list of pre-defined actions that should be taken to mitigate issues in the Sandbox and Production environments. Examples of actions include adding/dropping an index, updating stats on a table, rebuilding indexes, and terminating a blocking statement.  Any time that an action is performed, the environment history for an environment will show a record for the action performed. A history record is created only for actions and not when queries are executed.[![sqlinsights](./media/sqlinsights-1024x512.jpg)](./media/sqlinsights.jpg)
+- **Actions** - Shows a list of pre-defined actions that should be taken to mitigate issues in the Sandbox and Production environments. Examples of actions include adding/dropping an index, updating stats on a table, rebuilding indexes, and terminating a blocking statement.  Any time that an action is performed, the environment history for an environment will show a record for the action performed. A history record is created only for actions and not when queries are executed.[![actions](./media/Actions.jpg)](./media/Actions.jpg)
 
 - **Performance Metrics** – Shows the most expensive queries that were run in the system during the selected period, based on logical I/O, execution count, duration, CPU time, and wait count. This data is queried from the SQL query store. The data is retained for 30 days, and the tool runs its data collection every day at 10 PM Coordinated Universal Time (UTC). To use the tool, Select a period during the last 30 days. When the query results appear, select the bar in the duration chart to highlight where the query falls on other metrics. On the Statement tab, view the query, or download the query execution plan.[![sqlinsights](./media/sqlinsights-1024x512.jpg)](./media/sqlinsights.jpg)
 
-- **Index Analysis** - Shows aggregated index and table information, based on user scans, user seeks, user updates, and row count. Like performance metrics, this tool shows the trend for the selected index together with additional table metrics.[![sqlinsights](./media/sqlinsights-1024x512.jpg)](./media/sqlinsights.jpg)
+- **Index Analysis** - Shows aggregated index and table information, based on user scans, user seeks, user updates, and row count. Like performance metrics, this tool shows the trend for the selected index together with additional table metrics.[![sqlinsights](./media/IndexAnalysis.jpg)](./media/IndexAnalysis.jpg)
 
 # How do I use this feature?
 
