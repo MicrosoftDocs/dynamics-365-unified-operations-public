@@ -83,7 +83,7 @@ Use this procedure to create the product output or mileage of a fixed asset.
     
     Click **Functions** \> **Copy output/run** to open the **Create or copy output/run lines** form and create lines in the defined reporting period with specified export and tax-exempt details for the fixed asset.
    
-   [!NOTE]
+    > [!NOTE]
     > You may enter the output or millage in the **Fixed assets** form (**Fixed assets (Russia)** \> **Common** \> **Fixed assets**, **FIXED ASSETS** button \> **FA usage** ). 
 
 ## Non-linear tax accounting group depreciation method
