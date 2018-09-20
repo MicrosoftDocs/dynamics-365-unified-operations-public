@@ -51,9 +51,9 @@ All transactions that take place in Retail POS are posted using a ledger journal
 You must complete the following setup procedure before you use cash management in Retail:
 - Set up a payment method for each payment type that the retailer accepts in the **Payment methods** form. You can use different payment methods for posting transactions in Retail POS. For more information about payment methods in Retail, go to [Payment methods](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/payment-methods).
 
-- Set up retail parameters for cash operations
+- Set up retail parameters for cash operations.
 
-- Set up a payment method for cash payments in a retail store
+- Set up a payment method for cash payments in a retail store.
 
 ### Set up retail parameters for cash operations
 
@@ -61,15 +61,15 @@ You can set up parameters to create and post cash transactions in Retail. You ca
 
 1. Click **Retail > Headquarters setup > Parameters > Retail parameters**. In the left pane click **Posting**
 
-2. In the **Posting** area, on the **Aggregation** FastTab, toggle the **Tender remove/float** to Yes to aggregate the remove tender transactions or float entry transactions that are associated with a statement line when you post the statement. A remove tender transaction is created when you withdraw cash from the POS cash drawer. A float entry transaction is created when you deposit cash in the POS cash drawer.
+2. In the **Posting** area, on the **Aggregation** FastTab, toggle the **Tender remove/float** to **Yes** to aggregate the remove tender transactions or float entry transactions that are associated with a statement line when you post the statement. A remove tender transaction is created when you withdraw cash from the POS cash drawer. A float entry transaction is created when you deposit cash in the POS cash drawer.
 
 3. Activate the individual parameters listed below to aggregate the transactions that are associated with a statement line when you post the statement:
-   - **Bank drop** – Aggregate bank transactions
-   - **Safe drop** – Aggregate safe transactions
-   - **Income/Expense transactions** – Aggregate income transactions or expense transactions
-   - **Voucher transactions** – Aggregate voucher transactions
-   - **Customer payments** – Aggregate customer payments
-   - **Sales and returns** – Aggregate sales and returns transactions
+   - **Bank drop** – Aggregate bank transactions.
+   - **Safe drop** – Aggregate safe transactions.
+   - **Income/Expense transactions** – Aggregate income transactions or expense transactions.
+   - **Voucher transactions** – Aggregate voucher transactions.
+   - **Customer payments** – Aggregate customer payments.
+   - **Sales and returns** – Aggregate sales and returns transactions.
 
 4. On the **Payments** FastTab, select a default journal name for the following options:
      - **Customer payment journal** – This journal is used to post customer payments.
