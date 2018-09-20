@@ -39,9 +39,7 @@ You can set up the following information for customer invoices and return sales 
 
   * To specify the sales tax group for returns that are made by a customer, in the **Customers** form, on the **Retail** FastTab, in the **Sales tax group for returns** field, select a sales tax group. When you post a return sales order for a customer, the return sales order line is updated with the sales tax group for returns that is specified in the **Customers** form.
   
-Or:
-
-   * To specify a sales tax group for returns that are made at a retail POS by a customer, in the **Stores** form, on the **General** FastTab, in the **Sales tax group for returns** field, select a sales tax group. When you post a return sales order for a customer of a retail store, the return sales order line is updated with the sales tax group for returns that is specified in the Stores form.
+  * Or, to specify a sales tax group for returns that are made at a retail POS by a customer, in the **Stores** form, on the **General** FastTab, in the **Sales tax group for returns** field, select a sales tax group. When you post a return sales order for a customer of a retail store, the return sales order line is updated with the sales tax group for returns that is specified in the Stores form.
 
 - You can use the posting date of a retail customer invoice or a return sales order as the sales date of the invoice or return if the invoice or return does not have a default sales date. Click **Retail > Headquarters setup > Parameters > Retail parameters**. Open the **Posting > Invoice** tab, and then toggle the **Use posting date as sales date** to **Yes**.
 
