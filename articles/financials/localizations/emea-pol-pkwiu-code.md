@@ -41,7 +41,7 @@ To ensure that users include a PKWiU code on all invoices, select one of the fol
 
 Category hierarchies are used to classify products or transactions for reporting and analysis. The category hierarchy that is of the Sales category hierarchy type is used for organizing products for sales activities. You can assign a PKWiU code to the sales category hierarchy so that the PKWiU code is included on invoices that include non-inventoried items. 
 
-1. Click **Product information management** > **Setup** > **Categories** > **Category hierarchies**. 
+1. Click **Product information management** > **Setup** > **Categories and attributes** > **Category hierarchies**. 
 2. Select the sales category hierarchy. On the Action Pane, click **Edit**. 
 3. On the **Assign PKWiU code** FastTab, enter the PKWiU code for the sales category hierarchy. 
 
