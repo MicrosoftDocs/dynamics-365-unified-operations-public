@@ -3,7 +3,7 @@
 
 title: Advance invoices for Retail for Eastern Europe
 description: 
-author:  
+author:  This topic describes how to set up advance notices for Retail for Eastern Europe. 
 manager: epopov
 ms.date: 10/01/2018
 ms.topic: article
@@ -28,10 +28,9 @@ ms.dyn365.ops.version: 8.1
 ---
 # Advance invoices for Retail for Eastern Europe
 
-
 *Applies To: Dynamics 365 for Finance and Operations*
 
-For some European countries (Poland, Hungary, Czech Republic), when you receive a prepayment from a customer via POS, the prepayment must be registered for tax purposes and you must generate and print an Advance invoice document that includes the prepayment amount. Additionally, in Poland Advance invoice transactions must be posted in general ledger.
+For some European countries (Poland, Hungary, Czech Republic), when you receive a prepayment from a customer via Point of Sale (POS), the prepayment must be registered for tax purposes and you must generate and print an advance invoice document that includes the prepayment amount. In Poland, advance invoice transactions must be posted in general ledger.
 
 When the invoice for the sales order is finally posted, the final document should include the advance invoice with any prepayments indicated. 
 
@@ -42,27 +41,26 @@ If you generate sales orders via POS, the system generates and posts the advance
 ## Supported scenarios
 
 The following scenarios are supported:
-- Crate and post an advance invoice
-- Modify a deposit amount - If the customer decides to increase a deposit amount, an additional Advance invoice will be issued. For all other changes to the deposit amount including editing a customer order, a credit note will be created for the previously generated advance invoice and new advance invoice for the corrected amount will be generated and posted. 
-- Cancel a sales order that has linked advance invoices - In this case a credit note will be created for Advance invoice.
-- Post a sales order invoice that has linked advance invoices - The advance invoice, linked to Sales order, will be reversed for the amount of Sales invoice. The advance invoice transactions will be settled with advance invoice reversal transactions.
+- Create and post an advance invoice.
+- Modify a deposit amount. If the customer decides to increase a deposit amount, an additional advance invoice will be issued. For all other changes to the deposit amount, including editing a customer order, a credit note will be created for the previously generated advance invoice and a new advance invoice for the corrected amount will be generated and posted. 
+- Cancel a sales order that has linked advance invoices.  In this case, a credit note will be created for the advance invoice.
+- Post a sales order invoice that has linked advance invoices. The advance invoice, linked to a sales order, will be reversed for the amount of the sales invoice. The advance invoice transactions will be settled with advance invoice reversal transactions.
 
 > [!NOTE]
-> Printing advance invoices from POS is not currently supported.
+> Printing advance invoices from POS is currently not supported.
 
 ## Set up advance invoices
 
-1. Activate advance invoice creation. 
   1. Go to **Retail > Headquarters setup > Parameters > Retail parameters**.
   2. Click **Customer orders**.
-  3. On the FastTab **Order**,  set the **Create advance invoice for deposit** option to be **Yes**.
-2. Define the parameters responsible for Advance invoice posting.
-  1. Go to **Accounts receivable > Setup > Accounts receivable parameters**.
-  2. Specify the **Posting profile**, **Sales tax group** and **Item sales tax group** on the **Advance invoice** FastTab on the tab **Updates**. If these fields are set correctly, the advance invoice will be posted. If these fields aren't specified there will be no posting for advance invoice.
-3. Sales tax on prepayment journal voucher must not be posted if Advance invoice posting is ON. To verify that this requirement is met, complete the following steps.
-  1. On the **Accounts receivable parameters** page, click **Ledger and sales tax**. 
-  2. On the **Payment**" FastTab, set the following fields to be blank or "NO". 
-      - **Sales tax on prepayment journal voucher**
-      - **Posting profile with prepayment journal voucher**
-      - **Tax group for prepayment**
-      - **Item Sales tax group**
+  3. On the FastTab **Order**,  set the **Create advance invoice for deposit** option to **Yes**.
+  4. Define the parameters responsible for Advance invoice posting.
+  5. Go to **Accounts receivable > Setup > Accounts receivable parameters**.
+  6. Specify the **Posting profile**, **Sales tax group** and **Item sales tax group** on the **Advance invoice** FastTab on the **Updates** tab. If these fields are set correctly, the advance invoice will be posted. If these fields aren't specified, advance invoices will not post.
+  7. The Sales tax on prepayment journal voucher must not be posted if advance invoice posting is set to "ON". To verify that this requirement is met, complete the following steps.
+     1. On the **Accounts receivable parameters** page, click **Ledger and sales tax**. 
+     2. On the **Payment** FastTab, be sure that the following fields are blank or set to "NO". 
+        - **Sales tax on prepayment journal voucher**
+        - **Posting profile with prepayment journal voucher**
+        - **Tax group for prepayment**
+        - **Item Sales tax group**
