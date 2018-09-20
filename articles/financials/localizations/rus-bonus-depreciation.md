@@ -88,7 +88,7 @@ Use the **Customers** page to affiliate a customer with an intercompany. If you 
     
     Click **Sales and marketing** \> **Common** \> **Customers** \> **All customers**.
 
-2.  On the **All customers** list page, on the **Action Pane**, click **Customer** to create a customer, or double-click a customer record. For more information, see [Create a customer record](create-a-customer-record.md).
+2.  On the **All customers** list page, on the **Action Pane**, click **Customer** to create a customer, or open an existing customer record.
 
 3.  In the **Customers** form, on the **Invoice and delivery** FastTab, select the **Affiliated** check box to affiliate the customer with an intercompany.
 
