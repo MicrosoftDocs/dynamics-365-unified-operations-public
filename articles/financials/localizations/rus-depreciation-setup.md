@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Fixed assets depreciation for Russia
-description: 
+title: Depreciation setup (Russia)
+description: This topic provides information about setting up depreciation for Russian fixed assets.
 author: anasyash
 manager: AnnBe
 ms.date: 10/28/2018
@@ -29,10 +29,9 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Fixed assets depreciation for Russia
+# Depreciation setup (Russia)
 
 [!include [banner](../includes/banner.md)]
-
 
 ## Set up depreciation methods
 
@@ -54,13 +53,13 @@ Depreciation methods are used to define the rules for calculating depreciation. 
 6.  In the **Factor** field, enter the factor or percentage that must be reduced by interval.
 
     > [!NOTE]
-    > <P>This field is available only if you select <STRONG>Reducing remainder</STRONG> or <STRONG>Factor</STRONG> as the depreciating method.</P>
+    > This field is available only if you select **Reducing remainder** or **Factor** as the depreciating method.
     
 7.  In the **Cost limit** field for the **Tax nonlinear** method, enter the cutoff percentage value. When the accrued depreciation amount is calculated, the depreciation amount for the year is recalculated based on the service life and the depreciation profile for the asset. The amount is allocated across the specified periods in the year.
 8.  Click **Schedule of depreciation** to manually create depreciation schedules for fixed assets.
  
     > [!NOTE]
-    > <P>The <STRONG>Schedule of depreciation</STRONG> button is available only if you select <STRONG>Manual</STRONG> as the depreciation method.</P>
+    > The **Schedule of depreciation** button is available only if you select **Manual** as the depreciation method.
 
 ### Change the depreciation method in tax accounting 
 
@@ -71,8 +70,8 @@ Depreciation methods are used to define the rules for calculating depreciation. 
 5.  Click **Record to include/ Filter** to open the **Inquiry** form, and then enter the selection criteria for fixed assets.
 6.  Click **OK**. The new depreciation method will be updated in the **Depreciation method** field on the **General** FastTab in the **FA value models** form.
     
-    > [!NOTE]
-    > Click **Fixed assets (Russia) > Common > Fixed assets**.Click **Fixed assets > Value models > FA lifetime history** to open the **FA history** page to view these changes.
+    > [!TIP]
+    > To open the **FA history** page to view these changes, click **Fixed assets (Russia) > Common > Fixed assets** and then click **Fixed assets > Value models > FA lifetime history**.
     
 ## Set up analysis codes for fixed asset depreciation 
 Analysis codes are used to calculate the depreciation accrual for a fixed asset. You can set up an annual depreciation rate that is applied to the fixed assets or to a depreciation group. 
@@ -120,36 +119,7 @@ If a fixed asset is registered after putting into operation, depreciation is cal
 13. In the **Deferrals group** field, select the deferrals group for deferred expenses.
 14. In the **Expense code** field, select the expense code for deferrals.
   
-## Calculate fixed asset depreciation
+## Additional resources
 
-1.  Click **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
-2.  On the **List** tab, press the **New** button to create a new journal.
-3.  In the **Name** field, select a journal name and in the **Description** field, view or modify the description of the journal.
-5.  Click **Lines** to open the **Journal voucher** form.
-6.  On the **List** tab, press the **New** button to open the **Add to journal** form to create a single depreciation transaction for one fixed asset.
-    
-    > [!NOTE]
-    > Click <STRONG>Group operations</STRONG> &gt; <STRONG>Depreciation</STRONG> to create depreciation transactions for several fixed assets. Use **Record to include/ Filter** to open the **Inquiry** form to set criteria for fixed assets selections.
-
-7.  In the **Transaction date** field, select the date of the next calculation period. If no depreciation was calculated for the previous periods, depreciation transactions are created in the journal for all months prior to the transaction date, excluding the month of the transaction.
-8.  In the **Transaction type** field, select **Depreciation**.
-9.  In the **FA number** field, select a fixed asset number.
-10. In the **Value model** field, select a fixed asset value model. If you do not select a model, transactions for all value models are created in the journal.
-11. In the **Reason code** field, select a reason code and in the **Reason comment** field, view or modify the reason for the depreciation transaction (if needed).
-13. Click **OK**. Depreciation transactions are created in the journal for all value models that you set up in the **Value models** form.
-14. Click **Validate** \> **Validate** to validate the transaction details.
-15. Click **Post** \> **Post** to post the journal. Fixed asset and ledger transactions are created.
-
-## Reverse fixed asset depreciation
-
-1.  Click **Fixed assets (Russia)** \> **Journals** \> **FA journal**.
-2.  On the **List** tab, press the **New** button to create a new journal.
-3.  In the **Name** field, select a journal name and in the **Description** field, view or modify the description of the journal.
-4.  Click **Lines** to open the **Journal voucher** form.
-5.  Click **Group operations** \> **Storno of depreciation** to open the **Storno of depreciation** form.
-6.  In the **Date of storno** field, select a date for the depreciation reversal.
-7.  In the **Accounting** field, select a fixed asset value model.
-8.  Click **Record to include/ Filter** to open the **Inquiry** form, and then enter the selection criteria for fixed assets.
-9.  Click **OK**. Depreciation reversal transactions are created in the journal.
-10. Click **Validate** \> **Validate** to validate the transaction details.
-11. Click **Post** \> **Post** to post the journal. The fixed asset depreciation transaction is reversed and the ledger transaction is updated accordingly.
+- [Depreciation methods (Russia)](rus-depreciation-methods.md)
+- [Depreciation calculation (Russia)](rus-depreciation-calculation.md)
