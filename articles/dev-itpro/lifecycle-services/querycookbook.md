@@ -201,9 +201,13 @@ Provides a list of the most expensive queries during the specified period. The d
 
 ## Get fragmentation details
 
-Will be added when this query is added in LCS.
+**Description:**
 
-Create non-unique index on table
+**Next steps:**
+
+**Parameters:**
+
+## Create non-unique index on table
 
 **Background:**
 
