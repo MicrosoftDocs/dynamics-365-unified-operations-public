@@ -51,13 +51,14 @@ The following scenarios are supported:
 
 ## Set up advance invoices
 
-  1. Go to **Retail > Headquarters setup > Parameters > Retail parameters**.
-  2. Click **Customer orders**.
-  3. On the FastTab **Order**,  set the **Create advance invoice for deposit** option to **Yes**.
-  4. Define the parameters responsible for Advance invoice posting.
-  5. Go to **Accounts receivable > Setup > Accounts receivable parameters**.
-  6. Specify the **Posting profile**, **Sales tax group** and **Item sales tax group** on the **Advance invoice** FastTab on the **Updates** tab. If these fields are set correctly, the advance invoice will be posted. If these fields aren't specified, advance invoices will not post.
-  7. The Sales tax on prepayment journal voucher must not be posted if advance invoice posting is set to "ON". To verify that this requirement is met, complete the following steps.
+  1. Activate advance invoice creation.
+  2. Go to **Retail > Headquarters setup > Parameters > Retail parameters**.
+  3. Click **Customer orders**.
+  4. On the FastTab **Order**,  set the **Create advance invoice for deposit** option to **Yes**.
+  5. Define the parameters responsible for Advance invoice posting.
+  6. Go to **Accounts receivable > Setup > Accounts receivable parameters**.
+  7. Specify the **Posting profile**, **Sales tax group** and **Item sales tax group** on the **Advance invoice** FastTab on the **Updates** tab. If these fields are set correctly, the advance invoice will be posted. If these fields aren't specified, advance invoices will not post.
+  8. The Sales tax on prepayment journal voucher must not be posted if advance invoice posting is set to "ON". To verify that this requirement is met, complete the following steps.
      1. On the **Accounts receivable parameters** page, click **Ledger and sales tax**. 
      2. On the **Payment** FastTab, be sure that the following fields are blank or set to "NO". 
         - **Sales tax on prepayment journal voucher**
