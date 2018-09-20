@@ -5,7 +5,7 @@ title: Incremental refresh option for Entity store models
 description: Incremental refresh is an option for updating entity store models in response to changes in objects referenced by the model.
 author: tjvass
 manager: AnnBe
-ms.date: 04/09/2018
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 16
 
 [!include[banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)]
+[!include[banner](../includes/CAAP.md)]
 
 ## What are entity store models?
 Entity store models are used in Microsoft Dynamics 365 for Finance and Operations to provide customers with accessible views of business data for reporting and analytical tools. Delivered as part of the application metadata, entity store models can be described as collections of data sets and relationships associated with a particular business process. Models often contain a root data source and a series of related views that are useful in analyzing business activities and performance.
