@@ -123,7 +123,7 @@ You can create a tax non-linear group depreciation method on the **Depreciation 
 8.  On the **Subgroups** FastTab, in the **Depreciation subgroup** field, enter the identification code of the depreciation subgroup.
     
     > [!NOTE]
-    > <P>This FastTab is available only if you select <STRONG>Tax nonlinear group method</STRONG> as the method of depreciation.</P>
+    > This FastTab is available only if you select <STRONG>Tax nonlinear group method</STRONG> as the method of depreciation.</P>
 
 9.  In the **Name** field, enter the name of the depreciation subgroup.
 10. In the **Factor** field, enter the depreciation calculation ratio.
