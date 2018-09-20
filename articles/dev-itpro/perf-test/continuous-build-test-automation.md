@@ -84,7 +84,7 @@ Once build agents are added, add user (who will be deploying build VM from LCS) 
 [![VSTS setup in LCS\_May27](./media/vsts-setup-in-lcs_may27-300x216.jpg)](./media/vsts-setup-in-lcs_may27.jpg)
 
 ## Deploy Developer topology from LCS
-LCS provides an option to deploy a Development topology environment. With this option, you can deploy developer and build VMs in the cloud that are connected to your Azure DevOps  (Azure DevOps) project.
+LCS provides an option to deploy a Development topology environment. With this option, you can deploy developer and build VMs in the cloud that are connected to your Azure DevOps project.
 
 ### Azure DevOps credential setup and linking to LCS project
 
