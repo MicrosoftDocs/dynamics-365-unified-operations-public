@@ -59,9 +59,9 @@ You must complete the following setup procedure before you use cash management i
 
 You can set up parameters to create and post cash transactions in Retail. You can use cash payment journals, customer payment journals, or general journals to post sales transactions and payment transactions in the Retail POS. You can aggregate transactions that have the same properties when you post a statement. 
 
-1. Click **_Retail > Headquarters setup > Parameters > Retail parameters_**. In the left pane click **Posting**
+1. Click **Retail > Headquarters setup > Parameters > Retail parameters**. In the left pane click **Posting**
 
-2. In the **_Posting_** area, on the **_Aggregation_** FastTab, toggle the **Tender remove/float** to Yes to aggregate the remove tender transactions or float entry transactions that are associated with a statement line when you post the statement. A remove tender transaction is created when you withdraw cash from the POS cash drawer. A float entry transaction is created when you deposit cash in the POS cash drawer.
+2. In the **Posting** area, on the **Aggregation** FastTab, toggle the **Tender remove/float** to Yes to aggregate the remove tender transactions or float entry transactions that are associated with a statement line when you post the statement. A remove tender transaction is created when you withdraw cash from the POS cash drawer. A float entry transaction is created when you deposit cash in the POS cash drawer.
 
 3. Activate the individual parameters listed below to aggregate the transactions that are associated with a statement line when you post the statement:
    - **Bank drop** – Aggregate bank transactions
@@ -71,7 +71,7 @@ You can set up parameters to create and post cash transactions in Retail. You ca
    - **Customer payments** – Aggregate customer payments
    - **Sales and returns** – Aggregate sales and returns transactions
 
-4. On the **_Payments_** FastTab, select a default journal name for the following options:
+4. On the **Payments** FastTab, select a default journal name for the following options:
      - **Customer payment journal** – This journal is used to post customer payments.
      - **Cash payment journal** – This journal is used to post cash payments.
      - **General journal** – This journal is used to post transactions other than cash payments and customer payments.
