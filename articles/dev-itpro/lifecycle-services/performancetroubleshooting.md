@@ -33,3 +33,8 @@ ms.dyn365.ops.version: Version 1611
 # Performance troubleshooting using tools in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
+
+
+## Other resources
+
+- For details on queries shown on the Queries and Actions tab, check the [query cookbook](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/querycookbook)
