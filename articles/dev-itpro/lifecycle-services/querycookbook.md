@@ -203,9 +203,11 @@ Provides a list of the most expensive queries during the specified period. The d
 
 **Description:**
 
-**Next steps:**
+Fragmentation is when the records are not stored contiguously inside of the page. When there is unused space between records on a page, which occurs through data modification that is made against the table and to the indexes defined on the table, this is SQL index fragmentation.  D365 uses SQL Azure DB premium SKUs which are backed by SSDs.  So the fragmentation does not cause the same level of issues as on a database that is backed by a SCSI drive.  But still it could cause slower performance.  Higher the fragmentation, there is a higher chance that it could hurt the performance of queries that uses this fragmented table/index.
 
-**Parameters:**
+**Next steps:**
+- This query here shows the list of tables, indexes with their fragmentation percentage and a recommendation to either REBUILD the index or REORG the index.  When you rebuild or reorg an index  it will pack the records next to each other and avoid gaps in between, thus reducing the fragmentation.
+
 
 ## Create non-unique index on table
 
