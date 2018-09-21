@@ -49,19 +49,8 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Dynamics 365 for Finance and Operations 8.1 with platform update 20
 
-### Financial reports generator for Russia
-A tool was used to set up data collection for accounting and tax reports, and to export data to XLS and DOC report templates. Functional parts: Export data to XLS and DOC report templates, Queries, Fixed requisites are removed. 
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Removed parts are replaced with GER (Electronic reporting). |
-| **Replaced by another feature?**   | Yes. Financial reports setup user interface could still be used for setting up data collection rules by GL accounts or Tax registers. Export data to various file types and Query-like data collection rules should be configured in GER (Electronic reporting). |
-| **Product areas affected**         | General ledger. |
-| **Deployment option**              | On-premises only. |
-| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
-
 ### Electronic reporting for Russia
-Feature was used to configure formats of txt and xml files of declarations. 
+Feature for configuring txt and xml file formats of declarations. 
 
 |   |  |
 |------------|--------------------|
@@ -71,6 +60,27 @@ Feature was used to configure formats of txt and xml files of declarations.
 | **Deployment option**              | On-premises only. |
 | **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
 
+### Financial reports generator for Russia
+A tool for setting up data collection for accounting and tax reports, and to export data to XLS and DOC report templates. Functional parts: Export data to XLS and DOC report templates, Queries, Fixed requisites are removed. 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Removed parts are replaced with GER (Electronic reporting). |
+| **Replaced by another feature?**   | Yes. Financial reports setup user interface should be used for setting up data collection rules by GL accounts or Tax registers. Export data to various file types, fixed requisites and Query-like data collection rules should be configured in GER (Electronic reporting). |
+| **Product areas affected**         | General ledger. |
+| **Deployment option**              | On-premises only. |
+| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
+
+### Integration with external providers for sending electronic reporting through communication channels for Russia
+Feature exporting generated electronic files of declarations to folder for further sending to official providers of electronic reporting as well as importing state back.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with Electronic messages configurable feature. |
+| **Replaced by another feature?**   | Yes.  |
+| **Product areas affected**         | General Ledger, Tax. |
+| **Deployment option**              | On-premises only. |
+| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
 
 ### Batch transfer rules for subledger journal account entries
 The Synchronous transfer mode is being deprecated in the General ledger parameters.  This mode is replaced by Asyncronous and scheduled batch only, which already exist as options for transfer. 
