@@ -284,7 +284,7 @@ The following table lists the relational operators that can be used in X++. Most
 
 ### The like operator
 
-The <strong>like</strong> operator can use <strong>\</strong>* as a wildcard character for zero or more characters, and <strong>?</strong> as a wildcard character for one character. The operand can't be longer than 1,000 characters. The <strong>like</strong> operator is evaluated by the underlying SQL, so the result might differ on different installations. If the expressions that you're comparing contain a file path, you must include four backslashes between each element, as shown in the following example.
+The <strong>like</strong> operator can use <strong>*</strong> as a wildcard character for zero or more characters, and <strong>?</strong> as a wildcard character for one character. The operand can't be longer than 1,000 characters. The <strong>like</strong> operator is evaluated by the underlying SQL, so the result might differ on different installations. If the expressions that you're comparing contain a file path, you must include four backslashes between each element, as shown in the following example.
 
 ```
     select * from xRefpaths
