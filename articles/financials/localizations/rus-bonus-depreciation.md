@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-You can calculate bonus depreciation by reducing the value of an asset by means other than the usual rate of depreciation. You can apply bonus depreciation amounts during the accounting period, after the asset is put into operation or after major repairBonus depreciation is always calculated and applied before other types of depreciation.
+You can calculate bonus depreciation by reducing the value of an asset by means other than the usual rate of depreciation. You can apply bonus depreciation amounts during the accounting period, after the asset is put into operation or after major repair. Bonus depreciation is always calculated and applied before other types of depreciation.
 
 > [!NOTE]
 > You can restore the bonus depreciation for a fixed asset only if you sell the fixed asset to an affiliated customer within five years of placing the fixed asset into operation. For more information, see [Set up an affiliated customer](#set-up-an-affiliated-customer).
