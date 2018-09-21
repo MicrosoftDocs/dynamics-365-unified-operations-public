@@ -87,4 +87,4 @@ All performance tools in LCS are available under the **SQL Insights** tab on the
 
 ## Other resources
 
-- For details on queries shown on the Queries and Actions tab, check the [query cookbook](querycookbook.md).
+- For details on queries shown on the Queries and Actions tab, check the [Query cookbook](querycookbook.md).
