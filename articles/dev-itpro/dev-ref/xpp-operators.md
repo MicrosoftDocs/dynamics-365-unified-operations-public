@@ -5,7 +5,7 @@ title: X++ operators
 description: This topic describes the operators supported in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
