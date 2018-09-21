@@ -72,6 +72,88 @@ Use this procedure to set up value models for fixed assets.
 
 12. Click **Depreciation groups** to define depreciation groups for the value model. 
 
+## Set up fixed asset posting profiles 
+
+You can set up posting profiles for fixed assets. Posting profiles define the ledger accounts that are used in the value model for each fixed asset transaction.
+
+1.  Click **Fixed assets** \> **Setup** \> **Fixed asset posting profiles**.
+
+2.  On the **Overview** tab, press CTRL+N to create a new fixed asset posting profile.
+
+3.  In the **Posting profile** field, enter the name of the posting profile.
+
+4.  In the **Description** field, enter the description of the posting profile.
+
+5.  On the left pane, in the **Select** field, select any one of the following options:
+    
+      - **Depreciation** – Calculation of depreciation of a fixed asset.
+    
+      - **Depreciation revaluation** – Revaluation of depreciation calculated for a fixed asset.
+    
+      - **Major repairs** – Conducting major repairs for a fixed asset.
+    
+      - **Putting into operation** – Putting a fixed asset into operation.
+    
+      - **Cost revaluation** – Revaluate the cost of a fixed asset.
+    
+      - **Leaving (sale)** – Disposal sale of the fixed asset.
+    
+      - **Leaving (dismantlement)** – Disassembly of a fixed asset.
+    
+      - **Partial take-down** – Partial disposal of a fixed asset.
+    
+      - **Currency cost revaluate** – Revaluation of a fixed asset based on currency cost.
+    
+      - **Currency depreciation revaluate** – Revaluation of depreciation calculated for a fixed asset in currency.
+    
+      - **Others** – Other fixed asset transactions.
+
+6.  On the **Ledger accounts** tab, in the **Groupings** field, select the grouping used for the posting profile from the following options:
+    
+      - **Table** – Select this option to retrieve fixed asset data (value) from the table.
+    
+      - **Group** – Select this option to retrieve a defined depreciation group from the fixed asset group.
+    
+      - **All** – Select this option for all fixed asset transactions.
+    
+      - **Accounting** – Select this option to retrieve a defined value model.
+
+7.  In the **Account/Group number** field, select the value model, group, or fixed asset object that the posting profile will be used for.
+
+8.  In the **Ledger account** and **Offset account** fields, select the account number (debit) and the offset account (credit) for the transactions.
+
+9.  Click **Options** and then click **Leaving (sale)** or **Leaving (dismantlement)** to open the **Sales** form or the **Dismantlement** form.
+
+10. Press CTRL+N to create a new line.
+
+11. In the **Valid for** field, select the grouping that will be used for the posting profile from the following options:
+    
+      - **Table** – Select this option to retrieve fixed asset data (value) from the table.
+    
+      - **Group** – Select this option to retrieve a defined depreciation group from the fixed asset group.
+    
+      - **All** – Select this option to for all fixed asset transactions.
+    
+      - **Accounting** – Select this option to retrieve a defined value model.
+
+12. In the **FA relation** field, select the value model, group, or fixed asset object that will be used for the posting profile.
+
+13. In the **Post value** field, select the amount to post to the specified account.
+
+14. In the **Sale value type** field, select the type of amount that will be posted from the following options:
+    
+      - **All** – Any amount
+    
+      - **Loss** – The amount of loss
+    
+      - **Gain** – The amount of gain
+
+15. In the **Ledger account** and **Offset account** fields, select the account numbers of the ledger account (debit) and the offset account (credit) for the transactions.
+
+16. Select the **Storno** check box if you have to create a rental repayment transaction as a reversal transaction.
+
+17. Press CTRL+S or close the forms.
+
 ## Set up fixed asset parameters 
 
 1.  Click **Fixed assets (Russia)** \> **Setup** \> **Parameters**.
@@ -186,6 +268,3 @@ You can view the fixed asset balance for a specific date.
     > The amounts in the <STRONG>FA balances</STRONG> form are displayed in the currency of the fixed asset value model. If the value model currency is different from your default currency, the default currency is also displayed in the form.
 
 5.  Click the **Graphics** tab to view a graphical presentation of the asset's characteristics, such as types of cost, scrap or leaving sales, and profit or loss.
-
-  
-
