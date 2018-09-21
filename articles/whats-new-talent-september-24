@@ -40,7 +40,8 @@ This topic describes features that are either new or changed in Core HR.
 ## Currency added to Benefits
 
 Benefit plans have been updated to include the currency of the benefit. This new
-field is also available on worker enrolled benefits.
+field is also available on worker enrolled benefits. 
+This new field is part of the Maintain benefits and View a list of benefits security privilege.
 
 ## Update proration process – Leave and Absence
 
@@ -48,7 +49,8 @@ Organizations award time off differently based on when employees join and leave
 the company. For employees leaving the organization, some may need to end the
 award on the termination date, while others rely on the last day worked to stop
 the accrual process. These changes provide organizations the ability to choose
-when to end enrollment during the termination process.
+when to end enrollment during the termination process. 
+These new options is part of the privileges: Terminate a worker and Terminate a worker from manager self service. 
 
 ## Other changes
 
@@ -56,8 +58,8 @@ This release includes several additional bug fixes.
 
 ## Known Issue
 
--   When adding a new attachment to a worker the new button is disabled, this is a known
+-   When adding a new attachment to a worker the new/edit buttons are disabled, this is a known
     issue. Workaround: Before opening the attachment page, make sure the fact
     boxes on the worker page are “closed”. If the fact boxes are closed when the
     worker page is loaded the attachments buttons will be enabled. (This issue
-    is fixed in the next platform update).
+    is fixed in the next platform update)
