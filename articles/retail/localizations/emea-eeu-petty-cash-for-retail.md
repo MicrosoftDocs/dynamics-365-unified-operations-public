@@ -33,23 +33,22 @@ ms.dyn365.ops.version: 8.1
 
 Retailers can accept various types of payment in exchange for the products and services that they sell. Although cash is the most common form of payment, retailers can also receive payment in the form of checks, cards, or vouchers.
 
-In Retail point of sale (POS), cash, credit card receipts, and other payments are processed through a cash office. You can do the following by using Cash management in Retail:
+In Retail point of sale (POS), cash, credit card receipts, and other payments are processed through a cash office. By using Cash management in Retail, you can do the following:
 
 - Create a cash account for the selected payment method for each retail store.
 - Use cash journals to post cash transactions and customer payments that are received at a retail POS.
-- Aggregate transactions in a statement line when you post a retail statement in Microsoft Dynamics AX. You can aggregate safe drops, bank drops, voucher transactions, remove tender transactions, float entry transactions, income transactions, expense transactions, customer payments, sales transactions, and return transactions.
+- Aggregate transactions in a statement line when you post a retail statement. You can aggregate safe drops, bank drops, voucher transactions, remove tender transactions, float entry transactions, income transactions, expense transactions, customer payments, sales transactions, and return transactions.
 
 All transactions that take place in Retail POS are posted using a ledger journal. You can use cash payment journals, customer payment journals, and general journals to create and post the statements. For more information, go to [Create, calculate, and post statements for a retail store](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
 
-> [!NOTE]
-> In the **Posted statements** form, on the Action Pane, you can do the following:
-  - Click **Inquiries > Cash payment journal** to access the cash payment journals that are related to the statement.
-  - Click **Inquiries > General journal** to access the ledger journals that are related to the statement, other than customer payments and cash payments.
+On the **Posted statements** page, on the Action Pane, you can do the following:
+  - Go to **Inquiries > Cash payment journal** to access the cash payment journals that are related to the statement.
+  - Go to **Inquiries > General journal** to access the ledger journals that are related to the statement, other than customer payments and cash payments.
 
 ## Set up for cash management for Retail POS
 
 You must complete the following setup procedure before you use cash management in Retail:
-- Set up a payment method for each payment type that the retailer accepts in the **Payment methods** form. You can use different payment methods for posting transactions in Retail POS. For more information about payment methods in Retail, go to [Payment methods](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/payment-methods).
+- Set up a payment method for each payment type that the retailer accepts on the **Payment methods** page. You can use different payment methods for posting transactions in Retail POS. For more information about payment methods in Retail, see [Payment methods](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/payment-methods).
 
 - Set up retail parameters for cash operations.
 
@@ -59,9 +58,9 @@ You must complete the following setup procedure before you use cash management i
 
 You can set up parameters to create and post cash transactions in Retail. You can use cash payment journals, customer payment journals, or general journals to post sales transactions and payment transactions in the Retail POS. You can aggregate transactions that have the same properties when you post a statement. 
 
-1. Click **Retail > Headquarters setup > Parameters > Retail parameters**. In the left pane click **Posting**
+1. Go to **Retail > Headquarters setup > Parameters > Retail parameters**. In the left pane, click **Posting**
 
-2. In the **Posting** area, on the **Aggregation** FastTab, toggle the **Tender remove/float** to **Yes** to aggregate the remove tender transactions or float entry transactions that are associated with a statement line when you post the statement. A remove tender transaction is created when you withdraw cash from the POS cash drawer. A float entry transaction is created when you deposit cash in the POS cash drawer.
+2. In the **Posting** area, on the **Aggregation** FastTab, set **Tender remove/float** to **Yes** to aggregate the remove tender transactions or float entry transactions that are associated with a statement line when you post the statement. A remove tender transaction is created when you withdraw cash from the POS cash drawer. A float entry transaction is created when you deposit cash in the POS cash drawer.
 
 3. Activate the individual parameters listed below to aggregate the transactions that are associated with a statement line when you post the statement:
    - **Bank drop** – Aggregate bank transactions.
@@ -80,21 +79,22 @@ You can set up parameters to create and post cash transactions in Retail. You ca
 
 Use the following procedure to set up a payment method for cash payments in a retail store.
 
-1. Click **Retail > Channels > Retail stores > All retail stores**.
+1. Go to **Retail > Channels > Retail stores > All retail stores**.
 
 2. On the **All retail stores** list page, select the store to set up a payment method for.
 
 3. On the Action Pane, on the **Set up** tab, in the **Set up** group, click **Payment methods**.
 
-4. In the **Payment method** form, create or select a payment method. 
+4. On the **Payment method** page, create or select a payment method. 
 
 5. On the **Posting** FastTab, in the **Account** field group, in the **Account type** field, select **Cash account**.
 
-    Note: You can select **Cash account** in the **Account type** field only if you select **Normal** or **Tender remove/float** in the **Function** field.
+   > [!NOTE]
+    > You can select **Cash account** in the **Account type** field only if you select **Normal** or **Tender remove/float** in the **Function** field.
 
 6. In the **Account number** field, select a cash account number for the payment method.
 
 7. In the **Tender remove/float** field group, in the **Offset account** field, select the offset account to post remove tender or float entry transactions for the payment method.
 
 > [!NOTE]
-> You must set up offset accounts for both the cash tender payment method and the remove tender or float entry payment method for a store to create balanced general ledger entries for remove tender or float entry transactions.
+> You must set up offset accounts for both the cash tender payment method and the remove tender or float entry payment method for a store. This creates balanced general ledger entries for remove tender or float entry transactions.
