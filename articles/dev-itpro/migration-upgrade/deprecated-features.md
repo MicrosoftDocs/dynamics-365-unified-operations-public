@@ -57,7 +57,7 @@ Feature for configuring txt and xml file formats of declarations.
 | **Reason for deprecation/removal** | Replaced with GER (Electronic reporting). |
 | **Replaced by another feature?**   | Yes. |
 | **Product areas affected**         | General Ledger. |
-| **Deployment option**              | On-premises only. |
+| **Deployment option**              | All |
 | **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
 
 ### Financial reports generator for Russia
@@ -68,7 +68,7 @@ A tool for setting up data collection for accounting and tax reports, and to exp
 | **Reason for deprecation/removal** | Removed parts are replaced with GER (Electronic reporting). |
 | **Replaced by another feature?**   | Yes. Financial reports setup user interface should be used for setting up data collection rules by GL accounts or Tax registers. Export data to various file types, fixed requisites and Query-like data collection rules should be configured in GER (Electronic reporting). |
 | **Product areas affected**         | General ledger. |
-| **Deployment option**              | On-premises only. |
+| **Deployment option**              | All |
 | **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
 
 ### Integration with external providers for sending electronic reporting through communication channels for Russia
@@ -79,7 +79,7 @@ Feature exporting generated electronic files of declarations to folder for furth
 | **Reason for deprecation/removal** | Replaced with Electronic messages configurable feature. |
 | **Replaced by another feature?**   | Yes.  |
 | **Product areas affected**         | General Ledger, Tax. |
-| **Deployment option**              | On-premises only. |
+| **Deployment option**              | All |
 | **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
 
 ### Batch transfer rules for subledger journal account entries
