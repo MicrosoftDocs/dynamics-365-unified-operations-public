@@ -34,13 +34,13 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes in detail how you can troubleshoot and mitigate performance issues using the tools available in Microsoft Dynamics Lifecycle Services (LCS).
+This topic describes how you can troubleshoot and mitigate performance issues using the tools available in Microsoft Dynamics Lifecycle Services (LCS).
 
 # Overview
-Common feedback from customers and partners has been that they are unable to successfully diagnose performance issues using the tools in LCS. We have addressed this feedback by creating a more reliable way to collect performance metrics on demand, and enabled customers and partners to execute a pre-defined set of actions that can be used to mitigate issues in a sandbox or production environment. This feature queries SQL Server directly, so you get query store metrics in near real-time. We have also added an audit trail on the action performed so that you can easily go back and determine who performed the action and when it was performed.
+Common feedback from customers and partners has been that they are unable to successfully diagnose performance issues using the tools in LCS. We have addressed this feedback by creating a more reliable way to collect performance metrics on demand. This enables customers and partners to execute a pre-defined set of actions that can be used to mitigate issues in a sandbox or production environment. This feature queries SQL Server directly, so you get query store metrics in near real-time. We have also added an audit trail on the action performed so that you can easily determine who performed the action and when it was performed.
 
 # Details
-All performance tools in LCS are available under the **SQL Insights** tab on the **Environment Monitoring** page for a specific environment. Below is a description of the tabs available:
+All performance tools in LCS are available under the **SQL Insights** tab on the **Environment Monitoring** page for a specific environment. The following tabs are available:
 
 - **Live View** - Shows current DTU, executing statements, and blocking statements. The current **SQL Now** page that shows performance issues will be replaced with **Live View**.
 
@@ -59,7 +59,7 @@ All performance tools in LCS are available under the **SQL Insights** tab on the
 
     [![sqlinsights](./media/sqlinsights-1024x512.jpg)](./media/sqlinsights.jpg)
 
-- **Index Analysis** - Shows aggregated index and table information, based on user scans, user seeks, user updates, and row count. Like performance metrics, this tool shows the trend for the selected index together with additional table metrics.
+- **Index Analysis** - Shows aggregated index and table information, based on user scans, user seeks, user updates, and row count. Like performance metrics, this tool shows the trend for the selected index along with additional table metrics.
 
     [![sqlinsights](./media/IndexAnalysis.JPG)](./media/IndexAnalysis.JPG)
 
@@ -69,7 +69,7 @@ All performance tools in LCS are available under the **SQL Insights** tab on the
 2. You can navigate to each of the tabs (Live View, Queries, and Actions, Performance Metrics, Index Analysis) to view or query for more information.
 3. You have the option to search or export to Excel any of results from the query execution.
 4. After you have narrowed down the reason for the performance issue, you can use a predefined action to mitigate the issue.
-5. After an action is performed, an entry is made on the **Environment History** page which shows the details of the action, the parameters that were passed in, a timestamp, and who triggered the action.
+5. After an action is performed, an entry is made on the **Environment History** page, which shows the details of the action, the parameters that were passed in, a timestamp, and who triggered the action.
 
 # Sample flow
 
@@ -82,9 +82,9 @@ All performance tools in LCS are available under the **SQL Insights** tab on the
 5. Open the **Actions** tab and select the **End SQL Process** action and pass in the root blocker query ID. This will execute a query against the SQL database to terminate the blocking statement.
 6. Go to the **Queries** tab and run **Current blocking query** to verify if the blocking statement was terminated.
 7. You can also check the **Environment History** page to see details on what process was terminated.
-8. To avoid this issue in the future, you should use indexes or plan guides, or turn off lock escalation or use page locks if processes are blocking each other while operating on different records. If processes are operating on the same records, then the only way to avoid blocking is by refactoring or rescheduling the processes to not operate on the same records at the same time.
+8. To avoid this issue in the future, you should use indexes or plan guides, or turn off lock escalation, or use page locks if processes are blocking each other while operating on different records. If processes are operating on the same records, the only way to avoid blocking is by refactoring or rescheduling the processes to not operate on the same records at the same time.
 
 
 ## Other resources
 
-- For details on queries shown on the Queries and Actions tab, check the [Query cookbook](querycookbook.md).
+- For details on queries shown on the Queries and Actions tab, check out the [Query cookbook](querycookbook.md).
