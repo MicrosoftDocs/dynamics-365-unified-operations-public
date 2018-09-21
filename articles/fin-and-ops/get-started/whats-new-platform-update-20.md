@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/20/18
+ms.date: 09/21/18
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -135,18 +135,6 @@ without an X++ override, then you will need to recompile the target form.
 -  Enable Chain of Command on nested types within forms, including data sources and controls.
 
 For more information about all the extensibility capabilities, see the [Extensibility home page](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page).
-
-## Incremental refresh option for entity store models
-Incremental refresh is an option for
-updating entity store models in response to changes in objects referenced by the
-model. These are changes to root attributes within a model that are detected by
-the delta processing engine during an entity store refresh. This includes entity
-store model collections that can be uniquely identified using a field reference.
-System administrators can use the entity store management tooling provided with
-Finance and Operations to identify entity store models supported by the
-incremental delta detection logic.
-
-For more information, see [Incremental refresh option for Entity store models](../../dev-itpro/analytics/incremental-refresh-entity-store-models.md).
 
 ## Performance improvement in the Visual Studio development environment
 This update includes fixes that improve your experience while using the X++ code editor and metadata properties
