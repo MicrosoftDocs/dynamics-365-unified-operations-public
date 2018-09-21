@@ -50,14 +50,13 @@ the company. For employees leaving the organization, some may need to end the
 award on the termination date, while others rely on the last day worked to stop
 the accrual process. These changes provide organizations the ability to choose
 when to end enrollment during the termination process. 
-These new options is part of the privileges: Terminate a worker and Terminate a worker from manager self service. 
+These new options are part of the privileges for Terminate a worker and Terminate a worker from manager self service. 
 
 ## Other changes
 
 This release includes several additional bug fixes.
 
-## Known Issue
+## Known sssue
 
--   When adding a new attachment to a worker, the **New** and **Edit** buttons are disabled. Workaround: Before opening the attachment page, make sure the fact
-    boxes on the **Worker** page are closed. If the fact boxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled. (This issue
-    is fixed in the next platform update.)
+-   **Issue:** When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out. **Workaround:** Before opening the attachment page, make sure that the fact
+    boxes on the **Worker** page are closed. If the fact boxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled. (This issue will be fixed in the next platform update.)
