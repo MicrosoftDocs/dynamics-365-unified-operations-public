@@ -87,4 +87,4 @@ All performance tools in LCS are available under the **SQL Insights** tab on the
 
 ## Other resources
 
-- For details on queries shown on the Queries and Actions tab, check the [query cookbook.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/querycookbook)
+- For details on queries shown on the Queries and Actions tab, check the [query cookbook](querycookbook.md).
