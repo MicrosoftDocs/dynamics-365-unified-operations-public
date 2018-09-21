@@ -42,7 +42,7 @@ Common feedback from customers and partners has been that they are unable to suc
 # Details
 All performance tools in LCS are available under the **SQL Insights** tab on the **Environment Monitoring** page for a specific environment. Below is a description of the tabs available:
 
-- **Live View** - Shows current DTU, executing statements, and blocking statements. The current SQL Now page that shows performance issues will be replaced with Live View.
+- **Live View** - Shows current DTU, executing statements, and blocking statements. The current **SQL Now** page that shows performance issues will be replaced with **Live View**.
 
     [![liveview](./media/LiveView.JPG
     )](./media/LiveView.JPG)
@@ -55,7 +55,7 @@ All performance tools in LCS are available under the **SQL Insights** tab on the
 
     [![actions](./media/Actions.JPG)](./media/Actions.JPG)
 
-- **Performance Metrics** – Shows the most expensive queries that were run in the system during the selected period, based on logical I/O, execution count, duration, CPU time, and wait count. This data is queried from the SQL query store. The data is retained for 30 days, and the tool runs its data collection every day at 10 PM Coordinated Universal Time (UTC). To use the tool, Select a period during the last 30 days. When the query results appear, select the bar in the duration chart to highlight where the query falls on other metrics. On the Statement tab, view the query, or download the query execution plan.
+- **Performance Metrics** – Shows the most expensive queries that were run in the system during the selected period, based on logical I/O, execution count, duration, CPU time, and wait count. This data is queried from the SQL query store. The data is retained for 30 days, and the tool runs its data collection every day at 10 PM Coordinated Universal Time (UTC). To use the tool, select a period during the last 30 days. When the query results appear, select the bar in the duration chart to highlight where the query falls on other metrics. On the **Statement** tab, view the query, or download the query execution plan.
 
     [![sqlinsights](./media/sqlinsights-1024x512.jpg)](./media/sqlinsights.jpg)
 
@@ -65,20 +65,20 @@ All performance tools in LCS are available under the **SQL Insights** tab on the
 
 # How do I use this feature?
 
-1. Go to your project in LCS and open the environment details page. Select the Environment Monitoring link in the Monitoring section. Click the SQL Insights tab to access this feature.
+1. Go to your project in LCS and open the environment details page. Select the **Environment Monitoring** link in the **Monitoring** section. Click the **SQL Insights** tab to access this feature.
 2. You can navigate to each of the tabs (Live View, Queries, and Actions, Performance Metrics, Index Analysis) to view or query for more information.
-3. You have the option to Search or Export to Excel any of results from the query execution.
+3. You have the option to search or export to Excel any of results from the query execution.
 4. After you have narrowed down the reason for the performance issue, you can use a predefined action to mitigate the issue.
-5. After an action is performed, an entry is made on the Environment History page which shows the details of the action, the parameters that were passed in, a timestamp, and who triggered the action.
+5. After an action is performed, an entry is made on the **Environment History** page which shows the details of the action, the parameters that were passed in, a timestamp, and who triggered the action.
 
 # Sample flow
 
-**Scenario** : Users report slow performance when using the system. One issue could be a blocking statement. Blocking by itself is typical in a healthy system and is only a problem when it becomes excessive or starts degrading business activities.
+**Scenario**: Users report slow performance when using the system. One issue could be a blocking statement. Blocking by itself is typical in a healthy system and is only a problem when it becomes excessive or starts degrading business activities.
 
 1. Go to the **Live View** tab and check if there are any blocking statements. If there is a blocking statement, copy the blocking query ID.
 2. Open the **Queries** tab and select the **Current Blocking Tree** query. This will return the root blocker that is blocking the SQL operation.
 3. To resolve the issue, you can either let it run and clear naturally, or end the process for the lead blocker, which will roll work back. Typically, you should only end the lead blocker process if you do not think that it will not clear naturally (such as a bad query plan), or in situations where a critical process is unable to run and needs to complete immediately.
-4. Confirm that it&#39;s okay to terminate the statements that are currently being executed.
+4. Confirm that it's okay to terminate the statements that are currently being executed.
 5. Open the **Actions** tab and select the **End SQL Process** action and pass in the root blocker query ID. This will execute a query against the SQL database to terminate the blocking statement.
 6. Go to the **Queries** tab and run **Current blocking query** to verify if the blocking statement was terminated.
 7. You can also check the **Environment History** page to see details on what process was terminated.
