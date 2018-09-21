@@ -92,7 +92,7 @@ Select an option for assigning numbers to fixed assets:
 
 4.  Press CTRL+S or close the form.
 
-When you create a fixed asset in the **Fixed assets** form, the next number in the sequence is automatically entered into the fixed asset number field.
+When you create a fixed asset on the **Fixed assets** page, the next number in the sequence is automatically entered into the fixed asset number field.
 
 
 > [!NOTE]
@@ -111,9 +111,6 @@ This number sequence is used for all fixed assets that are assigned to the fixed
 > To create a fixed asset group, press CTRL+N, and then enter the required details.
 
 ## Create bar codes from fixed asset numbers 
-
-> [!NOTE]
-> This topic has not been fully updated for Microsoft Dynamics AX 2012 R2.
 
 1.  Click **Fixed assets (Russia)** \> **Periodic** \> **Create barcodes from FA inventory number**.
 
