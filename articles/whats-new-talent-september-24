@@ -25,11 +25,11 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: dkrame
-ms.search.validFrom: 2018-09-21
+ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent Core HR (September 24, 2018)"
+# What's new or changed in Dynamics 365 for Talent Core HR (September 24, 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -58,8 +58,6 @@ This release includes several additional bug fixes.
 
 ## Known Issue
 
--   When adding a new attachment to a worker the new/edit buttons are disabled, this is a known
-    issue. Workaround: Before opening the attachment page, make sure the fact
-    boxes on the worker page are “closed”. If the fact boxes are closed when the
-    worker page is loaded the attachments buttons will be enabled. (This issue
-    is fixed in the next platform update)
+-   When adding a new attachment to a worker, the **New** and **Edit** buttons are disabled. Workaround: Before opening the attachment page, make sure the fact
+    boxes on the **Worker** page are closed. If the fact boxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled. (This issue
+    is fixed in the next platform update.)
