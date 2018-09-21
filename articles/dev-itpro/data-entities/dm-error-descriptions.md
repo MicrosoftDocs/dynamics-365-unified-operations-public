@@ -43,7 +43,7 @@ When files are processed in parallel, and multiple files have the same record, m
 If this is a data issue, you must update the data so that the same records don’t repeat across files. 
 If this is not a data issue and the entity is expected to handle such cases, you can chose to sequentially process the files or reduce the frequency of which the files are sent to the end point. However, if you reduce the frequency, you might continue to receive this error, depending on the timing.
 
-## There are field(s) which are not mapped to entity name
+## There are field(s) which are not mapped to Entity &lt;entity name&gt;
 It is a common practice to use the export functionality to generate the entity template file which can be later used for imports. However, while exporting the template, in fixed width format with 'First row header' set to 'No' (in source data formats set up), the exported template will not have the column names. When this file is imported, it will result in this error. 
 
   
