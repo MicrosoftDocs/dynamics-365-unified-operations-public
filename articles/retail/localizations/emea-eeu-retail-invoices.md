@@ -33,18 +33,20 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../../includes/banner.md)]
 
-You can set up the following information for customer invoices and return sales orders that are generated in Retail POS.
+This topic describes how to set up information for customer invoices and return sales orders in Eastern European countries.
 
-- You can use sales tax groups to process returns by using return sales orders. Click **Retail > Headquarters setup > Parameters > Retail parameters**. Open the **Posting > Invoice** tab, and then toggle the **Use sales tax group for returns** to **Yes**. 
+You can set up the following information for customer invoices and return sales orders that are generated in Retail point of sale (POS).
 
-  * To specify the sales tax group for returns that are made by a customer, in the **Customers** form, on the **Retail** FastTab, in the **Sales tax group for returns** field, select a sales tax group. When you post a return sales order for a customer, the return sales order line is updated with the sales tax group for returns that is specified in the **Customers** form.
+- You can use sales tax groups to process returns by using return sales orders. Go to **Retail > Headquarters setup > Parameters > Retail parameters**. Open the **Posting > Invoice** tab, and then set **Use sales tax group for returns** to **Yes**. 
+
+  * To specify the sales tax group for returns that are made by a customer, on the **Customers** page, on the **Retail** FastTab, in the **Sales tax group for returns** field, select a sales tax group. When you post a return sales order for a customer, the return sales order line is updated with the sales tax group for returns that is specified in the **Customers** form.
   
-  * Or, to specify a sales tax group for returns that are made at a retail POS by a customer, in the **Stores** form, on the **General** FastTab, in the **Sales tax group for returns** field, select a sales tax group. When you post a return sales order for a customer of a retail store, the return sales order line is updated with the sales tax group for returns that is specified in the Stores form.
+  * To specify a sales tax group for returns that are made at a retail POS by a customer, on the **Stores** page, on the **General** FastTab, in the **Sales tax group for returns** field, select a sales tax group. When you post a return sales order for a customer of a retail store, the return sales order line is updated with the sales tax group for returns that are specified on the **Stores** page.
 
-- You can use the posting date of a retail customer invoice or a return sales order as the sales date of the invoice or return if the invoice or return does not have a default sales date. Click **Retail > Headquarters setup > Parameters > Retail parameters**. Open the **Posting > Invoice** tab, and then toggle the **Use posting date as sales date** to **Yes**.
+- You can use the posting date of a retail customer invoice or a return sales order as the sales date of the invoice or return if the invoice or return does not have a default sales date. Go to **Retail > Headquarters setup > Parameters > Retail parameters**. Open the **Posting > Invoice** tab, and then set **Use posting date as sales date** to **Yes**.
 
 - You can use the number range that is provided by the tax authorities to number Latvian and Lithuanian customer invoices and return sales orders. 
 
-  * Click **Organization administration > Number sequences > Counters management**. There should be a record where **Module** = **Sales** and **Type** = **Invoice**.
+  * Go to **Organization administration > Number sequences > Counters management**. There should be a record where **Module** = **Sales** and **Type** = **Invoice**.
 
-  * Click **Organization administration > Number sequences > Invoice numbering setup**. Mark the **Retail** check box for the number sequence line that is used to number the customer invoices.
+  * Go to **Organization administration > Number sequences > Invoice numbering setup**. Select the **Retail** check box for the number sequence line that is used to number the customer invoices.
