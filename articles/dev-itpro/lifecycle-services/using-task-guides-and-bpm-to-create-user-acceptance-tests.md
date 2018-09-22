@@ -150,6 +150,6 @@ The Dynamics 365 Unified Operations platform provides developers with tools to a
 For details, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/).
 
 #### Investigate test runs
-Once an automate run is complete, on the Azure DevOps toolbar, select **Test > Runs** to investigate your test run. Select the desired test run to investigate individial test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.
+Once an automated run is complete, on the Azure DevOps toolbar, select **Test > Runs** (or **Test Plans > Runs**) to investigate your test run. Select the desired test run to investigate test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.
 For more information on testing and test management in Azure DevOps, see the [Azure DevOps documentation](https://docs.microsoft.com/en-us/azure/devops).
 
