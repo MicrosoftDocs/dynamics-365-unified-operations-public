@@ -42,7 +42,7 @@ To migrate your code from Dynamics AX 2012 to Dynamics 365 for Finance and Opera
 
 The following links (also included in the methodology) describe key concepts and steps in the migration process. The links are listed here in the order that we recommend you read them.
 
-- [Overview: Prepare to migrate](prepare-migration.md)
+- [Overview: Migrate your AX 2012 code to Finance and Operations](prepare-migration.md)
 <!--- [Migrate from AX 2012 (Office Mix)](https://mix.office.com/watch/4gsvk592c685)
 - [Migrate between versions (Office Mix)](https://mix.office.com/watch/os2wff38zi6f)-->
 <!-- [Resolve conflicts using Visual Studio (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7)-->
