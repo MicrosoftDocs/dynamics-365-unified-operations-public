@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 
 
-The Financial reports setup interface allows you to configure content of “boxed” reports like
+The Financial reports setup allows you to configure list and content of “boxed” reports like
 Balance sheet. For each report box or cell, the data collection for ledger
 transactions, budget transactions, and calculated profit tax registers can be
 configured. 
@@ -48,6 +48,23 @@ You should also configure Electronic message processing where one of the steps a
 run the ER configuration of the financial report, generate report and store generated
 report data.
 
+## Financial reports setup
+
+You should complete the following steps to set up the report:
+
+   •	Setup list of report names
+   
+   •	Setup cells of the report
+   
+   •	Setup calculation criteria for report cells
+
+
+### Setup list of report names
+1.	Go to **General ledger > Financial reports setup > Financial reports**.
+The **Overview** tab displays a list of all the reports that are set up in the system.
+2.	Create new report. Enter a brief, and full names of the report in the **Report code** and **Description** fields.
+3.	The **General** tab displays the general parameters for report generation. 
+Define the following fields:
 
 
 
