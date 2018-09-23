@@ -63,8 +63,23 @@ You should complete the following steps to set up the report:
 1.	Go to **General ledger > Financial reports setup > Financial reports**.
 The **Overview** tab displays a list of all the reports that are set up in the system.
 2.	Create new report. Enter a brief, and full names of the report in the **Report code** and **Description** fields.
-3.	The **General** tab displays the general parameters for report generation. 
-Define the following fields:
+
+The **General** tab displays the general parameters for report generation. 
+
+3. In the **Currency** fielf, define whether the data in the report will be presented in the company's default currency (“Base currency”), or  reporting currency (“Reporting currency”). This setup can also be defined for each cell separately.
+   
+4. In the **Period** field, define the default transaction calculation period. Data of the report will be calculated for the chosen period based on the specified date at the report run.
+   
+5. In the **Line type** field, define the default data source for the report from the list. The following values are available:
+
+|   |  |
+|------------|--------------------|
+| “Transactions” | Data from posted transactions for ledger accounts are placed in the report. If this value is selected, define also setting of reversing entry usage for calculation in the field **Transaction usage**: "All",  "Only reversing entry", "Without reversing entry".|
+|  “Budget” | Data from budget entries for ledger accounts are placed in the report. If this value is selected, also choose the default budget model in the field **Budget model**. |
+|  “Register” | Data from the calculated profit tax registers are placed in the report. |
+|  “Constant” | Values of the defined constants for cells are placed in the report. |
+|  “Contractor” | Data from the active/passive balances of the contractors are placed in the report. |
+|  “Dimension set balance” | Balances for the chosen dimension set are placed in the report. If this value is selected, also choose the default financial dimension set in the field **Dimension set**. |
 
 
 
