@@ -185,9 +185,89 @@ If you choose “Interval”, click **Setup > Account interval**. Create a line,
 12.	After you create the operation lines, you can arrange them in the correct order. Select a line, and then click **Up** or **Down** buttons to move the selected line one position up or down.
 
 
+## Configure Electronic reporting to take financial report calculation results
+
+Find more details about how to configure Electronic reporting here: https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/fin-and-ops/toc.json#electronic-reporting 
 
 
+Below you can find example procedure of how to configure Electronic reporting for taking the results of Financial reports calculation.
 
+1.	Create **Data model** for Financial reports. Create model node of type **Record list** and name it **Items**.
+
+Create the following nodes under **Items**:
+
+| **Node name and data type** | **Data type** | **Description** |
+|----|----|---|
+| **Code** | String | This node with get information from the report Cell code |
+| **Report code** | String | This node will get the code of the Financial report. |
+| **Text** | String | This node will get value of the report cell if the calculated value is of “String” type |
+| **Value** | Real | This node will get value of the report cell if the calculated value is of “Real” type  |
+
+<Add here screenshot 3. Model.jpg>
+
+2.	Create **Model mapping**
+
+2.1	Create User input parameter for **Report code**:
+
+In the **Model mapping designer**, in the left pane **Mapping \ Data source types**, click on **General \ User input parameter** line.
+
+In the **Data sources** pane click **Add root**. 
+
+Define name of User input parameter as “FinancialReport_UIP” and in the field **Operations data type name (EDT, enum)** choose the extended data type “LedgerRRGRepCode_RU”
+
+<add here screenshot UIP.jpg>
+
+
+2.2	Create User input parameter for **Base date**:
+
+Define name of User input parameter as **BaseDate_UIP** and in the field **Operations data type name (EDT, enum)** choose the extended data type “BaseDate”
+
+<add here screenshot Base date UIP.jpg>
+   
+   
+2.3 Similarly, create and set up User input parameter for **Reporting date** (for example, use extended data type “ReportingDate_RU”)
+
+
+2.4	Add class LedgerRRGCustomReportHelper_RU as Data source with name **$RRGCustom** 
+
+<add here screenshot Data Source RRG custom.jpg>
+   
+
+2.5	Create Calculated field with name **$DataCustom** and the following formula:
+
+'$RRGCustom'.getCustomReportData(FInancialReport_UIP , BaseDate_UIP, ReportingDate_UIP)
+
+   Note. Function **getCustomReportData** of class **LedgerRRGCustomReportHelper_RU** has **Financial report name**, **Base date** and **Reporting date** as input parameters and returns Record list with all calculated values for all configured Cells of the chosen Financial report considering Base date and Report date. 
+   
+Output record list contains the following fields in each record line: 
+
+   ParmFieldId – code of Report cell
+   ParmFieldAmount – value of calculated cell if it has data type “Real”
+   ParmFieldText – value of calculated cell if it has data type “String”
+
+
+2.6	Bind data source to Model nodes:
+
+Bind calculated field **$DataCustom** to model node **Items**
+
+<add here screenshot Binding.jpg>
+
+Bind Record list fields in the following way:
+
+   Items / Code <-> ParmFieldId
+   Items / Text <-> ParmFieldText
+   Items / Value <-> ParmFieldAmount
+   Items / ReportCode <-> FinancialReport_UIP
+
+
+3.	Set up format of the report.
+
+In format configuration, filter the record list *Items* by a constant value of Items.Code and bind Items.Text or Items.Value nodes of filtered line to respective format nodes.
+
+4.	Run the report.
+
+Run report from the **Electronic reporting** workspace.
+Define **Calculation date**, **Report code** and optionally, **Reporting date**.
 
 
 
