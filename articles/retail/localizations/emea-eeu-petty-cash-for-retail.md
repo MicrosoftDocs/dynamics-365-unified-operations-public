@@ -29,11 +29,11 @@ ms.dyn365.ops.version: 8.1
 
 # Petty cash management for Retail for Eastern Europe
 
-[!include [banner](../../includes/banner.md)]
+In accordance with the Eastern Europe accounting requirements, you can set up operations for cash accounts to automate the processes for receipts, cash documents and cash reports. For more information, go to [(EEUR) Set up parameters for cash management](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management). 
 
-Retailers can accept various types of payment in exchange for the products and services that they sell. Although cash is the most common form of payment, retailers can also receive payment in the form of checks, cards, or vouchers.
+Retailers can accept various types of payment in exchange for the products and services that they sell. Although cash is the most common form of payment, retailers can also receive payment in the form of checks, cards, or vouchers. In Retail point of sale (POS), cash, credit card receipts, and other payments are processed through a cash office.
 
-In Retail point of sale (POS), cash, credit card receipts, and other payments are processed through a cash office. By using Cash management in Retail, you can do the following:
+You can do the following by using Cash management in Retail:
 
 - Create a cash account for the selected payment method for each retail store.
 - Use cash journals to post cash transactions and customer payments that are received at a retail POS.
