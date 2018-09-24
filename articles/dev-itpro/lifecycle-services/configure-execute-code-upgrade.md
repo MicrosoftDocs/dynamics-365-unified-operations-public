@@ -39,25 +39,33 @@ This topic explains how to configure the <strong>Code upgrade </strong>tile in L
 Overview
 --------
 
-The code upgrade tool operates by connecting to Azure DevOps, locating your Trunk\\Main branch, branching to a new branch which will be named as Releases\\\<version number\>, and then performing the code upgrade there. After this process is complete you can synchronize your Finance and Operations developer environment to this new branch under Releases\\\<version number\> and resolve conflicts. When you have compiled and tested your upgraded code you can merge the new branch back into Trunk\\Main, using source control explorer in Visual Studio and the process is complete.
+
+The code upgrade tool operates by connecting to your Azure DevOps project, locating your Trunk\\Main branch, branching to a new branch which will be named as Releases\\\<version number\>, and then performing the code upgrade there. After this process is complete you can synchronize your Finance and Operations developer environment to this new branch under Releases\\\<version number\> and resolve conflicts. When you have compiled and tested your upgraded code you can merge the new branch back into Trunk\\Main, using source control explorer in Visual Studio and the process is complete.
+
 
 Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have have a plan to refactor your customizations into extensions. For more information, see the [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
 
 ## Process
 ### Create the Trunk\\Main folder structure
 
-For the code upgrade service to recognize your source code, the folder structure must conform to the following strict pattern. The correct structure is: 
+For the code upgrade service to recognize your source code, your Azure DevOps project must contain a Team Foundation Version Control (TFVC) code repository. In addition, the code repository folder structure must conform to the following strict pattern. 
 
- - For code itself: ..\\\<Azure DevOps project name>\\Trunk\\Main\\Metadata
- - For Visual Studio projects: ..\\\<Azure DevOps project name>\\Trunk\\Main\\Projects
+ - For code and metadata: /<DevOps project name>/Trunk/Main/Metadata
+ - For Visual Studio project and solution files: /<DevOps project name>/Trunk/Main/Projects
  
- To create new folders in Azure DevOps, create the folders locally and then check them into Azure DevOps.
+ You can create new folders directly in the Azure DevOps web interface under **Repos**.
+ 
  
  > [!NOTE]
- > Folder names are case sensitive, that is, you must use Main and not MAIN, or the code upgrade service will not recognize the folder. 
+ > Folder names are case sensitive, that is, you must use Main and not MAIN, or the code upgrade service will not recognize the folder.
+ 
+ > Azure DevOps projects use Git version control by default. You will need to add a TFVC repository.
+ >    Go to Project settings then Repositories.
+ >    Select New repository.
+ >    In the Type field, select TFVC, and then click Create
 
 
-### To create a personal access token
+### Create a personal access token
 
 To connect to a Azure DevOps project, LCS is authenticated using a personal access token. Use the following steps to create a personal access token in Azure DevOps. If you have already configured your LCS project to connect to your Azure DevOps project, you can skip this section.
 
@@ -71,7 +79,8 @@ To connect to a Azure DevOps project, LCS is authenticated using a personal acce
 
 ### Configure your Lifecycle Services project to connect to Azure DevOps
 
-1. In your LCS project, go to the **Project settings** tile, select **Azure DevOps**, and then select the **Setup Azure DevOps** button. This configuration is needed by many LCS tools, if you have already configured LCS to connect to your Azure DevOps project, you can skip this section. 
+1. In your LCS project, go to the **Project settings** tile, select **Visual Studio Team Services**, and then select the **Setup Visual Studio Team Services** button. This configuration is needed by many LCS tools, if you have already configured LCS to connect to your Azure DevOps project, you can skip this section. 
+
 
    [![LCS VSTS setup](./media/lcs_vsts_setup.png)](./media/lcs_vsts_setup.png)
 
@@ -86,7 +95,12 @@ To connect to a Azure DevOps project, LCS is authenticated using a personal acce
 
 ### Create an ax7.version file
 
-The code upgrade tile in LCS automatically finds the version of Finance and Operations that you are migrating from, by reading the ax7.version file under the Main folder in your source control. You must create this file manually, either in Visual Studio or through the Azure DevOps portal, as shown below. This file is not needed if you migrated your code from Dynamics AX 2012 R3 or an earlier version. The version number entered here must be the application version (not the platform version). Take care to enter the correct version number here as entering an incorrect version number in this file may cause your code upgrade run to fail.
+
+> [!NOTE]
+> If you are migrating from AX 2012, you can skip this step.
+
+The code upgrade tile in LCS automatically finds the version of Finance and Operations that you are migrating from, by reading the ax7.version file under the Main folder in your source control. You must create this file manually, either in Visual Studio or through the Azure DevOps web portal, as shown below. This file is not needed if you are migrating your code from Dynamics AX 2012 R3 or an earlier version. The version number entered here must be the application version (not the platform version). Take care to enter the correct version number here as entering an incorrect version number in this file may cause your code upgrade run to fail.
+
 
 [![ax7 version file](./media/ax7_versionfile.png)](./media/ax7_versionfile.png) 
 
@@ -112,7 +126,7 @@ For more information about how to identify which application version you have, s
 
 ### Merge Releases back into Trunk\\Main
 
-Once the upgraded code in Releases\\\<version number\> compiles sucessfully and has passed your tests, then you are ready to merge this branch back into Trunk\\Main. To do this, on your development environment in Visual Studio open the Source control explorer pane then right-click on the **Releases\\\<version number\>** branch and in the context menu go to **Branching and Merging** and then on the sub-menu select **Merge**.
+Once the upgraded code in Releases\\\<version number\> compiles sucessfully and you have completed your code migration and testing, you are ready to merge this branch back into Trunk\\Main. To do this, on your development environment in Visual Studio open the Source control explorer pane then right-click on the **Releases\\\<version number\>** branch and in the context menu go to **Branching and Merging** and then on the sub-menu select **Merge**.
 
 [![Merge release branch](./media/MergeReleasesBranch.PNG)](./media/MergeReleasesBranch.PNG)
 
