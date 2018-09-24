@@ -47,7 +47,7 @@ You must define the location of the fixed asset before you acquire the fixed ass
 
 3.  In the **Location** and **Name** fields, enter a location code and a description for the location.
 
-4.  In the **Separate division ID** field, select a separate division, if the fixed asset is not located at the head office of the company. If you do not specify a separate division, the location of the fixed asset is the head office. **Independent** option is set automatically, if the selected devision is independent one. 
+4.  In the **Separate division ID** field, select a separate division, if the fixed asset is not located at the head office of the company. If you do not specify a separate division, the location of the fixed asset is the head office. **Independent** option is set automatically, if the selected devision is independent one (**should be reference to Division setup**). 
 
 5.  Click the **Fixed asset posting profiles** FastTab.
 
@@ -68,14 +68,6 @@ You must define the location of the fixed asset before you acquire the fixed ass
 9.  In the **Main account** field, select a ledger account to use to post the fixed asset transactions.
 
 11. In the **Account for depr.bonus** field, select a ledger account to use to post the depreciation bonus for the fixed asset, if a depreciation bonus applies.
-
-## Set up a division for a company and associate it with a vendor
-Use the Separate divisions page to create a company division, and then associate the division with a vendor. If your company has several divisions, you must associate each division with a vendor.
-1. Click **Organization administration** /> **Setup** /> **Separate divisions**.
-2. Click the **New** button to create a company division.
-3. In the **Separate division ID** field, enter the identification code for the division and in the **Name** field, enter the name of the division.
-4. In the **Vendor account** field, select the vendor account number that is associated with the division.
-5. Set the **Independent** option to **Yes** to indicate that the selected division can report the tax declarations independently of the head office.
 
 ## Fixed asset numbering  
 
