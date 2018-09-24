@@ -93,6 +93,6 @@ For more information, see the following topics:
 - [Process ledger allocation journal](tasks/process-ledger-allocation-journal.md)
 
 ## Simulate posting
-**Simulate posting** is a feature found in the **Validate** menu for most journals. Although the **Validate** menu option does test the journal for some error conditions, the **Simulate posting** menu executes all of the same processes that are run when you click on the **Post** menu in a journal. You can then review the posting messages that are displayed, fix any errors that you find, and then click on the **Post** menu to post the journal. 
+You can find **Simulate posting** on the **Validate** menu for most journals. When you validate a journal using the **Validate** function, the system tests the journal for some error conditions. If you use the **Simulate posting** function, the system runs all of the same processes that are run during posting without actually posting the journal. You can then review the posting messages that are displayed, fix any errors that you find, and then click on the **Post** menu to post the journal. 
 
 **Simulate posting** is not available for batch processing. However, there is code available to simulate posting in batch and developers can extend the code to add that functionality.  
