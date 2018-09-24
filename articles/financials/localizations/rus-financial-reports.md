@@ -72,7 +72,7 @@ The **Overview** tab displays a list of all the reports that are set up in the s
    
 6. In the **Line type** field, define the default data source for the report from the list. The following values are available:
 
-|   |  |
+| **Line type**| **Description** |
 |------------|--------------------|
 | “Transactions” | Data from posted transactions for ledger accounts are placed in the report. If this value is selected, define also setting of reversing entry usage for calculation in the field **Transaction usage**: "All",  "Only reversing entry", "Without reversing entry".|
 |  “Budget” | Data from budget entries for ledger accounts are placed in the report. If this value is selected, also choose the default budget model in the field **Budget model**. |
@@ -137,9 +137,8 @@ Use the following procedure to create report cell operations.
       
 4.	In the **Line type** field, select the data source that is used to calculate the selected line. The value is pre-defaulted from the Cell setup on **Requisites setup** page and can be changed. The following line types are available:
 
-||||
-|-------|--------|----------|
 | **Line type** | **Data source** | **Available type of operation** |
+|-------|--------|----------|
 | Transactions | Ledger transactions | Balance, Credit balance, Debit balance, Turnover, Credit activity, Debit activity, Turnover in correspondence, Turnover in correspondence credit, Turnover in correspondence debit, Active balance (debit), and Passive balance (credit) |
 | Budget | Budget transactions | Balance, Credit balance, Debit balance, Turnover, Credit activity, and Debit activity |
 | Register | Value of the Register field that is specified in the **Register field** on the **Tax registers** tab |
@@ -148,9 +147,9 @@ Use the following procedure to create report cell operations.
 | Dimension set balance | | |
 
 5. If you select “Transactions”, “Budget” or “Contractor” in the **Line type** field, in the **Type of operation** field, select a type of operation. THe following values are available:
-|||
-|----|----|
+
 | **Type of operation** | **Calculation algorithm** |
+|----|----|
 | Balance | Ledger account transaction amount, on date |
 | Credit balance | Credit ledger account transaction amount, on date |
 | Debit balance | Debit ledger account transaction amount, on date |
