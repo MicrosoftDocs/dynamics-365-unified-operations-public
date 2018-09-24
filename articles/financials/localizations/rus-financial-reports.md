@@ -203,6 +203,7 @@ Create the following nodes under **Items**:
 | **Text** | String | This node will get value of the report cell if the calculated value is of “String” type |
 | **Value** | Real | This node will get value of the report cell if the calculated value is of “Real” type  |
 
+
 <Add here screenshot 3. Model.jpg>
 
 2.	Create **Model mapping**
@@ -242,7 +243,9 @@ Define name of User input parameter as **BaseDate_UIP** and in the field **Opera
 Output record list contains the following fields in each record line: 
 
    ParmFieldId – code of Report cell
+   
    ParmFieldAmount – value of calculated cell if it has data type “Real”
+   
    ParmFieldText – value of calculated cell if it has data type “String”
 
 
@@ -255,8 +258,11 @@ Bind calculated field **$DataCustom** to model node **Items**
 Bind Record list fields in the following way:
 
    Items / Code <-> ParmFieldId
+   
    Items / Text <-> ParmFieldText
+   
    Items / Value <-> ParmFieldAmount
+   
    Items / ReportCode <-> FinancialReport_UIP
 
 
