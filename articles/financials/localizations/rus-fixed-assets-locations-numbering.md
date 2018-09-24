@@ -47,14 +47,13 @@ You must define the location of the fixed asset before you acquire the fixed ass
 
 3.  In the **Location** and **Name** fields, enter a location code and a description for the location.
 
-4.  In the **Separate division ID** field, select a separate division, if the fixed asset is not located at the head office of the company. If you do not specify a separate division, the location of the fixed asset is the head office. 
-5.  Set **Independent** option to **Yes**, if the selected devision is independent one. 
+4.  In the **Separate division ID** field, select a separate division, if the fixed asset is not located at the head office of the company. If you do not specify a separate division, the location of the fixed asset is the head office. **Independent** option is set automatically, if the selected devision is independent one. 
 
-6.  Click the **Fixed asset posting profiles** FastTab.
+5.  Click the **Fixed asset posting profiles** FastTab.
 
-7.  Click the **New** button to create a line.
+6.  Click the **New** button to create a line.
 
-8.  In the **Groupings** field, select the grouping for the fixed asset posting profile from one of the following options:
+7.  In the **Groupings** field, select the grouping for the fixed asset posting profile from one of the following options:
     
       - **Table** – The posting profile is grouped by the selected fixed asset.
     
@@ -64,11 +63,13 @@ You must define the location of the fixed asset before you acquire the fixed ass
     
       - **Accounting** – The posting profile is grouped by the value model.
 
-9.  In the **Account relation** field, select the depreciation group, fixed asset, or value model that the posting profile is used for.
+8.  In the **Account relation** field, select the depreciation group, fixed asset, or value model that the posting profile is used for.
 
-10.  In the **Main account** field, select a ledger account to use to post the fixed asset transactions.
+9.  In the **Main account** field, select a ledger account to use to post the fixed asset transactions.
 
 11. In the **Account for depr.bonus** field, select a ledger account to use to post the depreciation bonus for the fixed asset, if a depreciation bonus applies.
+
+
 
 ## Fixed asset numbering  
 
