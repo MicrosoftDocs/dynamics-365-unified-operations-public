@@ -81,13 +81,17 @@ The **Overview** tab displays a list of all the reports that are set up in the s
 |  “Contractor” | Data from the active/passive balances of the contractors are placed in the report. |
 |  “Dimension set balance” | Balances for the chosen dimension set are placed in the report. If this value is selected, also choose the default financial dimension set in the field **Dimension set**. |
 
+
 7. In the **Factor** field, enter the value that the report data will be divided by. 
-For example, if the report needs to be present in thousands of rubles, enter a value of 1,000. If the data must be displayed in the report in full rubles, the factor's value should be 1.
+      
+      For example, if the report needs to be present in thousands of rubles, enter a value of 1,000. If the data must be displayed in the report in full rubles, the factor's value should be 1.
 
 8. Go to the **Transaction type** tab which displays the list of transaction types to be considered in calculation. 
 
+
 9. Create a new line. In the **Transaction type** field choose the module name to determine which module's transactions will be used in generating the report. Create a line for each required module.
-For example, when the transaction type “Bank” is selected, the report will include transactions that are generated from the **Bank management** module. If no lines are created, the filter will not be used. 
+      
+      For example, when the transaction type “Bank” is selected, the report will include transactions that are generated from the **Bank management** module. If no lines are created, the filter will not be used. 
 
 10.	Go to the **Posting layer** tab which displays the list of posting layers to be considered in calculation. 
 If no lines are created, the filter will not be used.
@@ -109,6 +113,35 @@ In the **Financial reports** page, click **Setup**. The upper section of the for
 
 <add here screenshot 1. Cels setup.jpg>
 
+Create a new line. 
+Enter unique identification of the report cell in the field **Code**. You can setup any convenient rule for naming of unique identificators, considering that name of each cell must be unique within the same report. **Electronic reporting** configuration, which is configured for report output, should filter list of report values by cell codes in binding between report values and format elements.
+
+      Tip. As example, you can use concatenation of XML tags names of official electronic format of the report. 
+
+Enter Description of the line.
+
+Tabs and list of fields in each tab in the upper section of the page are the same as in the **Financial reports** page. Values entered for report cell on the **Requisites setup** page, supersede those entered for the report.
+
+### Setup calculation rules for the cell.
+
+Use the following procedure to create report cell operations.
+1.	In the **Financial reports** page, click **Setup**.
+2. In the **Requisites setup** page, select the report cell line or create a new one and in the lower pane, click **Add** to create a line.
+      One or more lines with amount calculation parameters can be setup for each report cell. The lines are linked together with a mathematical operator.
+
+<add here screenshot 2. Cells setup - operations.jpg>
+
+3.	In the **Operator** field, select the mathematical operator that is applied to the cell value.
+
+      Note. The Operator field is used to set up the mathematical sign for the amount that is calculated for the cell and is also used as a mathematical sign when you set up multi-line operations.  Credit balance, Credit activity, and Turnover in correspondence credit voucher types should normally use a minus sign (-).
+      
+4.	In the **Line type** field, select the data source that is used to calculate the selected line. The value is pre-defaulted from the Cell setup on **Requisites setup** page and can be changed. The following line types are available:
+
+||||
+|-------|--------|----------|
+| **Line type** | **Data source** | **Available type of operation** |
+| Transactions | Ledger transactions | Balance, Credit balance, Debit balance, Turnover, Credit activity, Debit activity, Turnover in correspondence, Turnover in correspondence credit, Turnover in correspondence debit, Active balance (debit), and Passive balance (credit) |
+| Budget | 
 
 
 
