@@ -162,7 +162,15 @@ Use the following procedure to create report cell operations.
 | Active balance (debit) (only for **Line type** values “Transactions”, “Contractor”) | Depending on the **Line type** selected, the lines are calculated: for	“Transactions”: First, balances for ledger account across all combinations of financial dimensions are calculated. Second, debit balances for each dimension combination are summarized. The resulting value is cell value. For	“Contractor”: Active balance for the ledger account by customers, contracts, or documents |
 | Passive balance (credit) (only for **Line type** values “Transactions”, “Contractor”) | Depending on the **Line type** selected, the lines are calculated: for “Transactions”: First, balances for ledger account across all combinations of financial dimensions are calculated. Second, credit balances for each dimension combination are summarized. The resulting value is cell value. For	“Contractor”: Passive balance for ledger account by counteragents, contracts, or documents |
 
+6. If you select “Balance”, “Credit balance”, “Debit balance”, “Active balance (debit)”, or “Passive balance (credit)” in the **Type of operation** field, define **Balance type**: either “Incoming” or “Outgoing”.
 
+7.	In the **Account/Interval** field choose either “Account” to be able to setup one G/L account in operation or “Interval” to be able to setup interval of G/L accounts.
+If you choose “Account”, define G/L account in the field **Account**
+If you choose “Interval”, click **Setup > Account interval**. Create a line, and then in the **From** and **To** fields on the **Account interval** tab, select the starting and ending ledger account numbers that are used in the calculation.
+
+8.	In the **Corr. Account/Interval** field choose either “Account” to be able to setup one G/L account in operation or “Interval” to be able to define interval of G/L accounts 
+If you choose “Account”, define G/L account in the field **Corr. account**.
+If you choose “Interval”, click **Setup > Account interval**. Create a line, and then in the **From** and **To** fields on the **Offset interval** tab, select the starting and ending ledger account numbers that are used in the calculation.
 
 
 
