@@ -47,13 +47,14 @@ You must define the location of the fixed asset before you acquire the fixed ass
 
 3.  In the **Location** and **Name** fields, enter a location code and a description for the location.
 
-4.  In the **Separate division ID** field, select a separate division if the fixed asset is not located at the head office of the company. If you do not specify a separate division, the location of the fixed asset is the head office.
+4.  In the **Separate division ID** field, select a separate division, if the fixed asset is not located at the head office of the company. If you do not specify a separate division, the location of the fixed asset is the head office. 
+5.  Set **Independent** option to **Yes**, if the selected devision is independent one. 
 
-5.  Click the **Fixed asset posting profiles** FastTab.
+6.  Click the **Fixed asset posting profiles** FastTab.
 
-6.  Create a line.
+7.  Click the **New** button to create a line.
 
-7.  In the **Groupings** field, select the grouping for the fixed asset posting profile from one of the following options:
+8.  In the **Groupings** field, select the grouping for the fixed asset posting profile from one of the following options:
     
       - **Table** – The posting profile is grouped by the selected fixed asset.
     
@@ -63,58 +64,48 @@ You must define the location of the fixed asset before you acquire the fixed ass
     
       - **Accounting** – The posting profile is grouped by the value model.
 
-8.  In the **Account/Group number** field, select the depreciation group, fixed asset, or value model that the posting profile is used for.
+9.  In the **Account elation** field, select the depreciation group, fixed asset, or value model that the posting profile is used for.
 
-9.  In the **Main account** field, select a ledger account to use to post the fixed asset transactions.
+10.  In the **Main account** field, select a ledger account to use to post the fixed asset transactions.
 
-10. In the **Account for depr.bonus** field, select a ledger account to use to post the depreciation bonus for the fixed asset, if a depreciation bonus applies.
+11. In the **Account for depr.bonus** field, select a ledger account to use to post the depreciation bonus for the fixed asset, if a depreciation bonus applies.
 
+## Fixed asset numbering  
 
-## Fixed asset numbering 
+You have two options for assigning numbers to fixed assets:
 
-Select an option for assigning numbers to fixed assets:
-
-  - Manual selection: This is appropriate for a company with few fixed assets. No setup is required for manual selection. You can simply enter the fixed asset number when you create fixed assets on the **Fixed assets** page.
-  - Automatic numbering of all fixed assets from one default number sequence: To use this method, you must set up at least one number series. Specify a default number series when you set up a fixed asset.
-  - Automatic numbering of fixed assets based on fixed asset group: This method is appropriate for a company with a large number of fixed assets. You can create many Account/Group numbers for fixed assets, and attach a number series to each group. You must specify a default number series when you set up fixed assets.
-    
-    > [!NOTE]
-    > You can set up numbering for fixed assets only when you set up the journal name for the asset transactions in the **Journal names** form. 
-
-
+  - **Manual selection**: This is appropriate for a company with few fixed assets. No setup is required for manual selection. 
+  - **Automatic** numbering of fixed assets based on fixed asset group. This method is appropriate for a company with a large number of fixed assets. You can create many Account/Group numbers for fixed assets, and attach a number series to each group (**Fixed asset (Russia)** \> **Setup** \> **FA groups**). You must specify a default number series when you set up fixed assets.
+   
 ### Automatic numbering of all fixed assets from one default number sequence
 
-1.  Click **Organization administration** \> **Common** \> **Number sequences** \> **Number sequences**.
+1.  Click **Organization administration** \> **Common** \> **Number sequences** \> **Number sequences** and create a new number series for fixed asset numeration by default.
 
 2.  Click **Fixed assets (Russia)** \> **Setup** \> **Parameters**. to open the **Fixed Asset Parameters** form.
 
 3.  On the **Number sequences** tab, select a number sequence code for the FA number reference.
 
-4.  Press CTRL+S or close the form.
+4.  On the **Fixed asset** tab set **Autonumeration** option to **Yes**.
 
 When you create a fixed asset on the **Fixed assets** page, the next number in the sequence is automatically entered into the fixed asset number field.
 
 
-> [!NOTE]
-> You can assign special number sequences for selected fixed asset groups while applying the default number sequence to fixed assets that do not have group-specific number sequences.
-
 ### Automatic numbering of fixed assets based on fixed asset group
 
-1.  Click **Fixed assets** \> **Setup** \> **FA group table** to open the **FA group table** form.
+1.  Click **Fixed assets** \> **Setup** \> **FA group** .
 
-2.  Select the **Autonumeration FA** check box for the selected FA group, and then select the appropriate number sequence in the **FA autonumber sequence** field.
+2.  Select the **Autonumeration FA** check box for the selected FA group, and then select the appropriate number sequence in the **FA autonumbering sequence** field.
 
 This number sequence is used for all fixed assets that are assigned to the fixed asset group.
 
-
 > [!NOTE]
-> To create a fixed asset group, press CTRL+N, and then enter the required details.
+> To create a fixed asset group, press the **New** button, and then enter the required details.
 
 ## Create bar codes from fixed asset numbers 
 
 1.  Click **Fixed assets (Russia)** \> **Periodic** \> **Create barcodes from FA inventory number**.
 
-2.  Click **Select** to open the **Assets** form, and then enter the selection criteria for the fixed asset.
+2.  Click **Records to include/ Filter** to enter the selection criteria for the fixed asset.
 
 3.  Click **OK** to return to the **Forming barcode from FA number** form.
 
