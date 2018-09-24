@@ -118,7 +118,7 @@ Enter unique identification of the report cell in the field **Code**. You can se
 
       Tip. As example, you can use concatenation of XML tags names of official electronic format of the report. 
 
-Enter Description of the line.
+Credit transaction amount for the ledger in correspondence with other ledger accounts for the period.Enter Description of the line.
 
 Tabs and list of fields in each tab in the upper section of the page are the same as in the **Financial reports** page. Values entered for report cell on the **Requisites setup** page, supersede those entered for the report.
 
@@ -141,7 +141,37 @@ Use the following procedure to create report cell operations.
 |-------|--------|----------|
 | **Line type** | **Data source** | **Available type of operation** |
 | Transactions | Ledger transactions | Balance, Credit balance, Debit balance, Turnover, Credit activity, Debit activity, Turnover in correspondence, Turnover in correspondence credit, Turnover in correspondence debit, Active balance (debit), and Passive balance (credit) |
-| Budget | 
+| Budget | Budget transactions | Balance, Credit balance, Debit balance, Turnover, Credit activity, and Debit activity |
+| Register | Value of the Register field that is specified in the **Register field** on the **Tax registers** tab |
+| Constant | Value that is specified in the **Constant value** field of Cell operations | |
+| Conractor | Ledger transactions that are related to contractors | Active balance (debit) and Passive balance (credit). The balance values are calculated for analytical level defined in the field **Balance detail** on tab **General** (values "Document", "Agreement",  "Contractor" are available) |
+| Dimension set balance | | |
+
+5. If you select “Transactions”, “Budget” or “Contractor” in the **Line type** field, in the **Type of operation** field, select a type of operation. THe following values are available:
+|||
+|----|----|
+| **Type of operation** | **Calculation algorithm** |
+| Balance | Ledger account transaction amount, on date |
+| Credit balance | Credit ledger account transaction amount, on date |
+| Debit balance | Debit ledger account transaction amount, on date |
+| Turnover | Transaction amount for the ledger for the period |
+| Credit activity | Credit transaction amount for the ledger for the period |
+| Debit activity | Debit transaction amount for the ledger for the period |
+| Turnover in correspondence (only for **Line type** “Transactions”) | Transaction amount for the ledger in correspondence with other ledger accounts for the period |
+| Turnover in correspondence credit (only for **Line type** “Transactions”) | Credit transaction amount for the ledger in correspondence with other ledger accounts for the period |
+| Turnover in correspondence debit (only for **Line type** “Transactions”) | Debit transaction amount for the ledger in correspondence with other ledger accounts for the period |
+| Active balance (debit) (only for **Line type** values “Transactions”, “Contractor”) | Depending on the **Line type** selected, the lines are calculated: for	“Transactions”: First, balances for ledger account across all combinations of financial dimensions are calculated. Second, debit balances for each dimension combination are summarized. The resulting value is cell value. For	“Contractor”: Active balance for the ledger account by customers, contracts, or documents |
+| Passive balance (credit) (only for **Line type** values “Transactions”, “Contractor”) | Depending on the **Line type** selected, the lines are calculated: for “Transactions”: First, balances for ledger account across all combinations of financial dimensions are calculated. Second, credit balances for each dimension combination are summarized. The resulting value is cell value. For	“Contractor”: Passive balance for ledger account by counteragents, contracts, or documents |
+
+
+
+
+
+
+
+
+
+
 
 
 
