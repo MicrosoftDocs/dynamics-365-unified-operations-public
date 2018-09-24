@@ -175,8 +175,10 @@ If you choose “Interval”, click **Setup > Account interval**. Create a line,
 9.	 If you select “Contractor” in the **Line type** field, select "Document", "Agreement", or "Contractor" in the **Balance detail** field on the **General** tab, to define analytical level for calculation of active or passive balance for contractor.
 
 10.	If you select “Register” in the **Line type** field, make the following settings:
-   11.1 on the **Tax registers** tab, in the **Register code** field select Profit tax register code and in the **Register field** field, select a register field name. The data from the register field is considered in calculation than.
-   11.2 Optionally, setup calculation of Tax register for one Expense code or for interval of Expense codes: in the **Account/Interval** field, either choose “Account” and in the **Account** field, define Expense code, or choose “Interval” and in the **Setup > Account interval** define interval of Expense codes.
+
+   10.1 on the **Tax registers** tab, in the **Register code** field select Profit tax register code and in the **Register field** field, select a register field name. The data from the register field is considered in calculation than.
+   
+   10.2 Optionally, setup calculation of Tax register for one Expense code or for interval of Expense codes: in the **Account/Interval** field, either choose “Account” and in the **Account** field, define Expense code, or choose “Interval” and in the **Setup > Account interval** define interval of Expense codes.
    
 11.	The **General**, **Posting layer** and **Financial dimensions** tabs contain same fields as tabs on upper part of the **Requisites setup** page **Financial reports** page. OPtionally go to these tabs to specify values in respective fields for Operation line (these values supersede default values for Cell and/or Report).
 
