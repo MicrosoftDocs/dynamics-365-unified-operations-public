@@ -146,7 +146,7 @@ Use the following procedure to create report cell operations.
 | Conractor | Ledger transactions that are related to contractors | Active balance (debit) and Passive balance (credit). The balance values are calculated for analytical level defined in the field **Balance detail** on tab **General** (values "Document", "Agreement",  "Contractor" are available) |
 | Dimension set balance | | |
 
-5. If you select “Transactions”, “Budget” or “Contractor” in the **Line type** field, in the **Type of operation** field, select a type of operation. THe following values are available:
+5. If you select “Transactions”, “Budget” or “Contractor” in the **Line type** field, select a type of operation in the **Type of operation** field. THe following values are available:
 
 | **Type of operation** | **Calculation algorithm** |
 |----|----|
@@ -171,6 +171,16 @@ If you choose “Interval”, click **Setup > Account interval**. Create a line,
 8.	In the **Corr. Account/Interval** field choose either “Account” to be able to setup one G/L account in operation or “Interval” to be able to define interval of G/L accounts 
 If you choose “Account”, define G/L account in the field **Corr. account**.
 If you choose “Interval”, click **Setup > Account interval**. Create a line, and then in the **From** and **To** fields on the **Offset interval** tab, select the starting and ending ledger account numbers that are used in the calculation.
+
+9.	 If you select “Contractor” in the **Line type** field, select "Document", "Agreement", or "Contractor" in the **Balance detail** field on the **General** tab, to define analytical level for calculation of active or passive balance for contractor.
+
+10.	If you select “Register” in the **Line type** field, make the following settings:
+   11.1 on the **Tax registers** tab, in the **Register code** field select Profit tax register code and in the **Register field** field, select a register field name. The data from the register field is considered in calculation than.
+   11.2 Optionally, setup calculation of Tax register for one Expense code or for interval of Expense codes: in the **Account/Interval** field, either choose “Account” and in the **Account** field, define Expense code, or choose “Interval” and in the **Setup > Account interval** define interval of Expense codes.
+   
+11.	The **General**, **Posting layer** and **Financial dimensions** tabs contain same fields as tabs on upper part of the **Requisites setup** page **Financial reports** page. OPtionally go to these tabs to specify values in respective fields for Operation line (these values supersede default values for Cell and/or Report).
+
+12.	After you create the operation lines, you can arrange them in the correct order. Select a line, and then click **Up** or **Down** buttons to move the selected line one position up or down.
 
 
 
