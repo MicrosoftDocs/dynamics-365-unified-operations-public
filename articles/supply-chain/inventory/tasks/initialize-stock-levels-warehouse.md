@@ -1,30 +1,30 @@
----
-# required metadata
-
+--- 
+# required metadata 
+ 
 title: Initialize stock levels in the warehouse
-description: This procedure shows you how to get the on-hand inventory updated manually using an Inventory movement journal.
+description: This procedure shows you how to get the on-hand inventory updated manually using an Inventory movement journal. 
 author: perlynne
-manager: AnnBe
-ms.date: 11/02/2017
-ms.topic: business-process
+manager: AnnBe 
+ms.date: 08/29/2018
+ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-applications 
 ms.technology:  
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
+ 
+# optional metadata 
+ 
+ms.search.form: InventJournalMovement, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup   
+audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2016-06-30 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Initialize stock levels in the warehouse
 
@@ -36,7 +36,7 @@ This procedure shows you how to get the on-hand inventory updated manually using
 2. Click New.
 3. In the Name field, click the drop-down button to open the lookup.
 4. Select IMov.
-    * It’s a good practice to use different journal name templates for the different business purposes.  
+    * It’s a good practise to use different journal name templates for the different business purposes.  
 5. In the list, click the link in the selected row.
 6. In the Offset account field, specify the values '140200'.
     * This is the offset account that will be the default account on the journal lines. It’s possible to override the default to assign different offset accounts per line.  
@@ -61,3 +61,4 @@ This procedure shows you how to get the on-hand inventory updated manually using
 24. Click OK.
 25. Close the page.
 26. Close the page.
+

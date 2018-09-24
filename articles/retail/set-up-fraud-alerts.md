@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up fraud alerts
+title: Set up and work with call center fraud alerts
 description: This topic explains how to set up rules to alert customer service representatives of potentially fraudulent information when orders are processed. You can define specific codes that are used to automatically or manually put suspicious orders on hold. 
 author: josaw1
 manager: AnnBe
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SalesPostingHistory, MCRHoldCodeTrans, SysOperationTemplateForm
+ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Develop and open a job requisition
+title: Develop and open job requisition
 description: Recruitment projects help manage the recruiting process. 
 author: kherr75
 manager: AnnBe 
-ms.date: 02/10/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kherr
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Develop and open a job requisition
+# Develop and open job requisition
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

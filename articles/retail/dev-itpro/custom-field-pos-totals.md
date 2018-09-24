@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add custom fields to the POS Totals panel
+title: Add custom fields to the point of sale (POS) Totals panel
 description: This topic explains how to add a new custom field to the Totals panel on the POS transaction screen by using the screen layout designer.
 author: mugunthanm
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
 ---
 
-# Add custom fields to the POS Totals panel
+# Add custom fields to the point of sale (POS) Totals panel
 
 [!include[banner](../includes/banner.md)]
 
@@ -134,7 +134,7 @@ You can find similar sample code in the Retail software development kit (SDK), a
         if (isNaN(cart.TotalAmount) || cart.TotalAmount <= 0) {
             return "$0.00";
         }
-        return "$" + (cart.TotalAmount \* 0.1).toFixed(2).toString();
+        return "$" + (cart.TotalAmount * 0.1).toFixed(2).toString();
     }
     ```
 

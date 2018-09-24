@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Onboard a Microsoft Dynamics 365 for Finance and Operations project
+title: Onboard a Finance and Operations implementation project
 description: This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---
 
-# Onboard a Finance and Operations project
+# Onboard a Finance and Operations implementation project
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,7 +46,7 @@ The FastTrack team will contact all the partner and customer users in your LCS p
 - Tenant validation 
 - Introduction to LCS
 - Setup of LCS project users
-- Setup of Microsoft Visual Studio Team Services
+- Setup of Microsoft Azure DevOps
 - Subscription estimator/Usage profiler
 - Environment planning
 - Environment deployment

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Payment methods in a call center
+title: Payment methods in call centers
 description: This topic describes the various payment methods that you can use in a call center in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Payment methods in a call center
+# Payment methods in call centers
 
 [!include [banner](includes/banner.md)]
 

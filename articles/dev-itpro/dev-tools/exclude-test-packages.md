@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Exclude test packages from the build output
+title: Exclude test packages from build output
 description: This topic explains how you can prevent specific packages from being included in the deployable package in the build output that the automated build process generates.
 author: jorisdg
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Exclude test packages from the build output
+# Exclude test packages from build output
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,7 +40,7 @@ When customers that have an existing build definition from Platform update 3 or 
 
 The new feature exposes a new optional parameter for the package creation step in the build process. Because this parameter is managed by a build variable, you can easily adjust it.
 
-1. In Microsoft Visual Studio Team Services (VSTS), on the **Build & Release** page, under **Builds**, on the **All Definitions** tab, find your build definition. Click the ellipsis (…), and then click **Edit**.
+1. In Microsoft Azure DevOps, on the **Build & Release** page, under **Builds**, on the **All Definitions** tab, find your build definition. Click the ellipsis (…), and then click **Edit**.
 
     ![Edit the build definition](media/builddef_edit.png)
 

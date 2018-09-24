@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Request a sandbox database refresh
-description: This topic explains how to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, in a sandbox user acceptance testing (UAT) environment. 
+title: Request sandbox database refreshes
+description: This topic explains how to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, in a sandbox user acceptance testing (UAT) environment.
 author: Robadawy
 manager: AnnBe
 ms.date: 10/31/2017
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Request a sandbox database refresh
+# Request sandbox database refreshes
 
 [!include [banner](../includes/banner.md)]
 
@@ -64,13 +64,13 @@ Here is the list of requirements and conditions of operation for a database refr
 - A refresh erases the existing database in the target environment. The existing database can't be recovered after the refresh is completed.
 - The target environment will be unavailable until the refresh process is completed.
 - The refresh will affect only the Finance and Operations and Financial Reporting databases.
-- Documents in Azure blob storage are not copied from one environment to another. This means that attached document handling documents and teamplates won't be changed and will remain in their current state. 
-- All users except the Admin user and other internal service user accounts will be disabled. This process allows the Admin user to delete or obfuscate data before allowing others users back into the system. 
+- Documents in Azure blob storage are not copied from one environment to another. This means that attached document handling documents and teamplates won't be changed and will remain in their current state.
+- All users except the Admin user and other internal service user accounts will be disabled. This process allows the Admin user to delete or obfuscate data before allowing others users back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 - All data management framework recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This will ensure there are no orphaned files in Azure storage from either system. This is important because orphaned files cannot be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
-- All batches that were set to run are set to **Withhold** status, to stop batches from running before the environment has been reconfigured. 
-- The SMTP server configuration, all email addresses, and all **Print management** settings, including network printers are removed. 
-- Any user with a role of Project owner or Environment manager in LCS will have acccess to the SQL and machine credentials for all non-production environments. 
+- All batches that were set to run are set to **Withhold** status, to stop batches from running before the environment has been reconfigured.
+- The SMTP server configuration, all email addresses, and all **Print management** settings, including network printers are removed.
+- Any user with a role of Project owner or Environment manager in LCS will have acccess to the SQL and machine credentials for all non-production environments.
 
 ## Steps to complete after a database refresh for environments that use Retail functionality
 [!include [environment-reprovision](../includes/environment-reprovision.md)]

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics AX 4.0 content retired
+title: AX 4.0 content that has been retired
 description: The Dynamics AX 4.0 content on TechNet and MSDN has been retired.
 author: margoc
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 2012
 
 ---
 
-# Microsoft Dynamics AX 4.0 content retired
+# AX 4.0 content that has been retired
 
 [!include[banner](../includes/banner.md)]
 

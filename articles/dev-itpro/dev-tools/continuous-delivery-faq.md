@@ -81,7 +81,7 @@ For test automation, concentrate on unit tests (use the SysTest framework) that 
 
 ### How can I be more agile in my development?
 
-Deliver incremental features every sprint (2 weeks, preferred) or cycle (1 month). Maintain shippable quality of your application at the end of each sprint. Use Visual Studio Team Services (VSTS) for work item tracking and always prioritize bugs over new features. A large bug backlog will quickly become a burden on your efficient delivery of new features and on the quality of your application.
+Deliver incremental features every sprint (2 weeks, preferred) or cycle (1 month). Maintain shippable quality of your application at the end of each sprint. Use Azure DevOps for work item tracking and always prioritize bugs over new features. A large bug backlog will quickly become a burden on your efficient delivery of new features and on the quality of your application.
 
 ### How do I manage test data?
 
@@ -107,7 +107,7 @@ There are two modes of development: Cloud VMs and on-premises VMs available via 
 
 -   On premise dev VMs are cost effective if you already have the hardware, IT infrastructure, and Windows server licenses to support it.
 -   Use cloud VMs to scale out when projects require additional resources for a limited period of time. It is more cost effective than planning for worst-case capacity on premise.
--   Connect all VMs (on premise and cloud VMs) to VSTS for version control.
+-   Connect all VMs (on premise and cloud VMs) to Azure DevOps for version control.
 
 Use cloud VMs for build, functional testing, and demos. If you are running on your own Microsoft Azure subscription, turn them off when not in use.
 
@@ -145,7 +145,7 @@ Add an average of $15 monthly for storage (non premium) per VM.
 
 This is not supported. However, you can provision more than one developer account on the same VM, they just cannot develop concurrently. For details, see [Enable a new developer on a development machine](enable-development-machine.md).
 
-If you are a Microsoft partner developing code for more than one customer, we recommend having at least one development VM per customer. You will need one addittional VM for every additional developer working on a customer project. Development VMs can be thought of as disposable assets as long as your source code is checked into version control (Visual Studio Team Services) and you keep a backup of test databases. 
+If you are a Microsoft partner developing code for more than one customer, we recommend having at least one development VM per customer. You will need one addittional VM for every additional developer working on a customer project. Development VMs can be thought of as disposable assets as long as your source code is checked into version control (Azure DevOps) and you keep a backup of test databases. 
 
 ## Customer implementation LCS projects
 ### How many sandbox environments do I need within an LCS customer implementation project?

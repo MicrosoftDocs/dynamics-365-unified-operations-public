@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Import a letter of credit
+title: Import letter of credit
 description: This procedure walks through the process of importing a letter of credit. 
 author: kweekley
 manager: AnnBe 
-ms.date: 02/26/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, BankLCImport,  PurchEditLines, VendEditInvoice, SrsReportViewerForm, LedgerJournalTable, LedgerJournalTransVendPaym, VendOpenTrans, SysQueryForm, BankAccountTableLookUp   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: twheeloc
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Import a letter of credit
+# Import letter of credit
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -114,7 +114,8 @@ This procedure uses the USMF demo company.
 1. Go to Cash and bank management > Letters of credit > Import letter of credit and import collection.
 2. In the list, find and select the desired record.
 3. In the list, click the link in the selected row.
-    * Verify the Import letter of credit status.  
+    * Verify the Import letter of credit status.    
+    *   
 4. Close the page.
 5. Close the page.
 

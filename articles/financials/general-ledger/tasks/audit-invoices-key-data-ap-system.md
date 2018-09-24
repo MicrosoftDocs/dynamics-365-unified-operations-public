@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Audit invoices and key data in accounts payable
+title: Audit invoices and key data in AP system
 description: When you receive an invoice from a vendor for goods or services on a purchase order, the business processes might require that the goods or services be received before the invoice can be approved for payment. 
 author: saraschi2
 manager: AnnBe 
-ms.date: 02/16/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: twheeloc
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Audit invoices and key data in accounts payable
+# Audit invoices and key data in AP system
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

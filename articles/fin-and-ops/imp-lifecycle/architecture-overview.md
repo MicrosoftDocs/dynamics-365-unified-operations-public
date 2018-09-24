@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Finance and Operations architecture
+title: Finance and Operations architecture
 description: This topic provides an overview of the architecture of Microsoft Dynamics 365 for Finance and Operations.
 author: ClaudiaBetz-Haubold
 manager: AnnBe
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Microsoft Dynamics 365 for Finance and Operations architecture
+# Finance and Operations architecture
 
 [!include [banner](../includes/banner.md)]
 
-The cloud architecture for Microsoft Dynamics 365 for Finance and Operations includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management.
+The Microsoft Dynamics 365 for Finance and Operations cloud architecture contains all the elements that are common to all Microsoft cloud offerings, as described in [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](https://docs.microsoft.com/en-us/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings). Beyond this, it also includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management. 
 
 ![Cloud architecture](./media/cloud-architecture.png)
 
@@ -62,7 +62,7 @@ The cloud architecture for Finance and Operations consists of these conceptual a
     > An implementation project is an LCS project for the Microsoft-managed Finance and Operations cloud service. As a Microsoft partner, you can also provision non-implementation LCS projects for your own purposes. For more information, see [Lifecycle Services for Finance and Operations partners](../../dev-itpro/lifecycle-services/getting-started-lcs.md). 
 
 - **Finance and Operations** – Finance and Operations is deployed through LCS. Various topologies are available: development/test/build, acceptance test, performance test, and high-availability production. For more information about the various topologies, download the [latest Microsoft Dynamics 365 Licensing Guide from Dynamics 365 pricing](https://dynamics.microsoft.com/en-us/pricing/).
-- **Microsoft Visual Studio Team Services (VSTS)** – VSTS is used primarily for code version control and to deploy a build environment. VSTS is also used to track support incidents, such as work items in VSTS that are submitted to Microsoft through Cloud powered support, and to integrate the Business process modeler (BPM) library hierarchy into your VSTS project as a hierarchy of work items. VSTS is also used during code upgrade.
+- **Microsoft Azure DevOps** – Azure DevOps is used primarily for code version control and to deploy a build environment. Azure DevOps is also used to track support incidents, such as work items in Azure DevOps that are submitted to Microsoft through Cloud powered support, and to integrate the Business process modeler (BPM) library hierarchy into your Azure DevOps project as a hierarchy of work items. Azure DevOps is also used during code upgrade.
 
 "Under the hood," Finance and Operations uses many features of the Azure platform, such as Azure Storage, networking, monitoring, and Azure SQL Database, to name just a few. Shared services put into operation and orchestrate the application lifecycle of the environments for participants. Together, Azure functionality and LCS offer a robust cloud service.
 

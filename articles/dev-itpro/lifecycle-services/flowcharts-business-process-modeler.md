@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Flowcharts in Business process modeler
+title: Flowcharts in Business process modeler (BPM)
 description: This article explains how you can modify the default connected flowcharts in Microsoft Dynamics Lifecycle Services, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library.
 author: robadawy
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Flowcharts in Business process modeler
+# Flowcharts in Business process modeler (BPM)
 
 [!include [banner](../includes/banner.md)]
 
@@ -108,7 +108,7 @@ You can export a business process model flowchart to a Visio file.
 5.  The file will be treated as a download that you can open or save.
 
 ### Mark a change to not be a gap
-Please note that gap functionality has been deprecated in LCS. To learn more about how to use VSTS Synchronization, see [Synchronize a BPM library with Visual Studio Team Services](synchronize-bpm-vsts.md).
+Please note that gap functionality has been deprecated in LCS. To learn more about how to use Azure DevOps Synchronization, see [Synchronize a BPM library with Azure DevOps](synchronize-bpm-vsts.md).
 
 Any time you modify a flowchart, a gap is automatically created. You can modify any change to no longer be considered a gap. To modify a change, follow these steps:
 1.  Select the object that you added, and then right-click it.

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Talent system requirements and update policy
+title: Talent system requirements and update policy
 description: This topic lists requirements for Dynamics 365 for Talent. The update policy is outlined, as well.
 author: rschloma
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# Microsoft Dynamics 365 for Talent system requirements and update policy
+# Talent system requirements and update policy
 
 [!include [banner](includes/banner.md)]
 
@@ -52,7 +52,7 @@ To find the latest release for each web browser, go to the software manufacturer
 > * The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit compatible operating system.
 > * To preview PDF files, we recommend that you use modern browsers like Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
 >   Network requirements
-> * Dynamics 365 for Talent is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Dynamics 365 for Talent. We recommend that you test network latency at [www.azurespeed.com](http://www.azurespeed.com "Azure Latency Test").
+> * Dynamics 365 for Talent is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Dynamics 365 for Talent. We recommend that you test network latency at [www.azurespeed.com](https://www.azurespeed.com "Azure Latency Test").
 > * Bandwidth requirements for Dynamics 365 for Talent depend on your scenario. Most typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps).
 > 
 > [!WARNING]

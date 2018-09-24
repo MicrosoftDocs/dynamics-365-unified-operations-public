@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Development and build VMs that don't allow administrator access FAQ
-description: This topic provides answers to frequantly asked questions (FAQs) about virtual machines that don't allow administrator access.
+title: Development and build VMs that don't allow admin access FAQ
+description: This topic provides answers to frequently asked questions (FAQs) about virtual machines that don't allow administrator access.
 author: yukonpeegs
 manager: AnnBe
 ms.date: 05/03/2018
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# Development and build VMs that don't allow administrator access FAQ
+# Development and build VMs that don't allow admin access FAQ
 
 [!include [banner](../includes/banner.md)]
 
@@ -68,7 +68,7 @@ No, you can't install additional development tools.
 No, you can't run Windows PowerShell commands and commands at a prompt command as an administrator.
 
 ## Is the Trace Parser supported?
-Although the Trace Parser isn't currently supported, we plan to add support for it again soon.
+Trace Parser currently requires the user to be an administrator.
 
 ## Can the system be put into maintenance mode?
 You can put the system into maintenance mode to change the license configuration. However, the procedure that is described in [Maintenance mode](maintenance-mode.md) isn't supported. Self-service support for maintenance mode in all environments will be added to LCS in the future. Until this support is available in LCS, you can follow these steps to put a system into maintenance mode.
@@ -87,7 +87,10 @@ You can put the system into maintenance mode to change the license configuration
 4. When you've completed your maintenance mode activities, repeat steps 2 and 3, but set the value to **0** in step 2.
 
 ## Can I install a license deployable package?
-You should be able to use the **-devinstall** option to install license deployable packages. However, an issue was found with this scenario. We are working to resolve the issue.
+### Development environments
+Use LCS to install a license deployable package on any cloud development environment.
+### Build environments
+LCS does not allow AOT or license deployable packages to be installed on build environments. To work around this, remote into the VM and use the **-devinstall** option to install a license deployable package from the command line as described in the topic, [Install deployable packages from the command line](../deployment/install-deployable-package.md). This command line install works as of platform update 17. If you are running on a platform version that is older than platform update 17, and you do not have admin access to your build environment, create a support request and ask Microsoft to install your license deployable package.
 
 ## Is licensing Visual Studio by entering a product key supported?
 Entering a product key directly in Visual Studio is not supported. Instead, use Visual Studio subscription licensing and sign in to Visual Studio with the email address (user account) associated with the license. You can link a Visual Studio license to a user account by assigning an MSDN license to the user account or by assigning a license to the user account by using https://www.visualstudio.com/subscriptions-administration.

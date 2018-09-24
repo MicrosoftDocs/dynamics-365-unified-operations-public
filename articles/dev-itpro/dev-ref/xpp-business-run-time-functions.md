@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ business run-time functions
+title: X++ business runtime functions
 description: This topic describes the business run-time functions.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ business run-time functions
+# X++ business runtime functions
 
 [!include [banner](../includes/banner.md)]
 

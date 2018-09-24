@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail time and attendance
+title: Time and attendance management in Retail
 description: This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Retail. 
 author: aamirallaqaband
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail time and attendance
+# Time and attendance management in Retail
 
 [!include [banner](includes/banner.md)]
 

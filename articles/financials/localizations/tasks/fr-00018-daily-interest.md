@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Daily interest calculation for late payment and lump sum in the invoice and collection letter (France)
+title: FR-00018 Daily interest calculation for late payment and lump sum in the invoice and collection letter
 description: Indicate the interest calculation on an invoice. 
 author: EvgenyPopovMBS
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: SalesTableListPage, SalesEditLines   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: France
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Daily interest calculation for late payment and lump sum in the invoice and collection letter (France)
+# FR-00018 Daily interest calculation for late payment and lump sum in the invoice and collection letter
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

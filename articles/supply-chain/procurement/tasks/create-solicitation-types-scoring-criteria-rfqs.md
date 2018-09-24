@@ -5,7 +5,7 @@ title: Create solicitation types and scoring criteria for RFQs
 description: This guide shows you how to create a solicitation type and associate this with a scoring method. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 08/23/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create solicitation types and scoring criteria for RFQs
 
@@ -46,6 +46,7 @@ This guide shows you how to create a solicitation type and associate this with a
 1. Go to Procurement and sourcing > Requests for quotations > All requests for quotations.
 2. Click New.
 3. In the Solicitation type field, select the solicitation type that you have just created. 
+    *   
 4. Click OK.
 5. Click Scoring criteria.
     * The scoring criteria that are shown are the ones from the scoring method that you associated with the solicitation type. You can choose to add or delete criteria on this page. It's also possible to add new criteria by copying them from other scoring methods.  

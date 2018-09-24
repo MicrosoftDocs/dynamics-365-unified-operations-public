@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13991
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 8.0.0
 ---
 
 # Add location roles and party relationship types 
+
+[!include [banner](../includes/banner.md)]
 
 ## Add location roles
 

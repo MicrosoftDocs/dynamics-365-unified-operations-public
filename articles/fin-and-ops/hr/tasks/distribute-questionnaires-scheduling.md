@@ -5,26 +5,26 @@ title: Distribute questionnaires using scheduling
 description: Questionnaire scheduling allows you to plan and distribute questionnaires to multiple respondents. 
 author: kherr75
 manager: AnnBe 
-ms.date: 11/01/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-talent 
+ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: KMKnowledgeCollectorPlanningTable, KMKnowledgeCollectorPlanningMulti, SysQueryForm, HcmPersonLookup, KMKnowledgeCollectorPlanning   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kherr
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Distribute questionnaires using scheduling
 
@@ -47,7 +47,7 @@ Questionnaire scheduling allows you to plan and distribute questionnaires to mul
 9. Expand the Email for employee self service section.
 10. In the Subject field, type a value.
     * Example: Questionnaire available  
-11. In the Text field, type the body of your email message. Note, the variable can be used to substitute values in the system.
+11. In the Text field, type the body of your email message. Note, the variable can be used to substitue values in the system.
     * Example:   Dear %P%,  Please log in to Employee Self Service to complete the Workforce Health questionnaire.  Contoso  
 12. Click Save.
 

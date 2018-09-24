@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Respond to a request for personal data using Talent
+title: Respond to requests for personal data in Talent
 description: This topic describes how you, as a data controller, can use Microsoft Dynamics 365 for Talent as a data processor to help you respond to a request for data under the European Union's General Data Protection Regulation (GDPR).
 author: shielasogge
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
-# Respond to a request for personal data using Talent
+# Respond to requests for personal data in Talent
 
 [!include [banner](../includes/banner.md)]
 
@@ -114,7 +114,7 @@ Compensation isn't assigned to contractors. Therefore, those steps can be skippe
 An admin can search and export personal data in Microsoft Dynamics 365 for Talent: Attract and Microsoft Dynamics 365 for Talent: Onboarding via <https://attract.talent.dynamics.com/personreport>.
 
 ## Additional resources
-You can learn more about the GDPR on the [European Union's website](http://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
+You can learn more about the GDPR on the [European Union's website](https://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
 
 
 

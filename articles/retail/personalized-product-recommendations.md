@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Personalized product recommendations overview
+title: Personalized product recommendations
 description: This topic has information about the Dynamics 365 for Retail product recommendations that can be displayed on the point of sale (POS) device.
 author: ashishmsft
 manager: AnnBe
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Personalized product recommendations overview
+# Personalized product recommendations
 
 [!include [banner](includes/banner.md)]
 
 > [!NOTE]
-> We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities. For more information see [Removed or deprecated features](../dev-itpro/migration-upgrade/deprecated-features.md). Navigate to the bottom of the page if you are facing issues with already-enabled product recommendations for your environment. 
+> We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities. For more information see [Removed or deprecated features](../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 In Dynamics 365 for Retail, product recommendations can be displayed on the point of sale (POS) device. The recommendations are items that the customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores. For retailers with large catalogs, recommendations help the customer with product discovery. By showcasing products targeted to a customer’s interests and buying habits, product recommendations can help retailers with up-sell and cross-sell, and can enhance customer retention. In Dynamics 365 for Retail, product recommendations are powered by cognitive services and Microsoft Azure machine learning.
 

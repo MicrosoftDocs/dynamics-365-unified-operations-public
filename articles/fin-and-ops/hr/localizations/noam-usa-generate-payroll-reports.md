@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Generate payroll reports
+title: Standard payroll reports in Finance and Operations
 description: This topic describes the standard payroll reports that Dynamics 365 for Finance and Operations provides to help you with payroll processing and government reporting. 
 author: rschloma
 manager: AnnBe
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: SysOperationTemplateForm, PayrollEarningStatement
+# ms.search.form: PayrollEarningStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Generate payroll reports
+# Standard payroll reports in Finance and Operations
 
 [!include [banner](../../includes/banner.md)]
 

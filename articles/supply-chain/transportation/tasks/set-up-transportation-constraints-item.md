@@ -3,9 +3,9 @@
  
 title: Set up transportation constraints for an item
 description: This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub. 
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe 
-ms.date: 06/07/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: TMSConstraint, InventLocationIdLookup, InventItemIdLookupSimple   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: bis
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Set up transportation constraints for an item
 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub. This task would typically be carried out by a Transportation coordinator. You can use this procedure in the USMF demo data company or on your own data.
 
 
-## Create an item constraint
+## Create an item constaint
 1. Go to Constraints.
 2. Click New.
 3. In the Item constraint field, type a value.

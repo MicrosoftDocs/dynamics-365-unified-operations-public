@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Call center functionality
+title: Call center sales functionality
 description: This topic provides an overview of the call center sales functionality in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Call center 
+# Call center sales functionality
 
 [!include [banner](includes/banner.md)]
 

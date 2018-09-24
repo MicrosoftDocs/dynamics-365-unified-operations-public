@@ -5,7 +5,7 @@ title: Software lifecycle policy and on-premises releases
 description: This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 for Finance and Operations (on-premises) releases.
 author: RyanCCarlson2 
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -54,13 +54,16 @@ Application and Platform releases expire at the end of the month of their softwa
 
 | Release          |Version         | Build number          | Availability | Expiration date  | Product life | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
-|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 | 7.3.11971  | March 2018 | July 2020     | December 2027  |
-|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 | 7.2.11792 | June 2017 | June 2020     | December 2027  |
+|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 | 7.3.11971  | March 2018 | April 2020*     | December 2027  |
+|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 | 7.2.11792 | June 2017 | April 2019     | December 2027  |
+
+\* All customers must be on the latest version of Finance and Operations by April 30, 2019.  However, we are making an exception for customers who have unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that have been submitted to Microsoft. Those customers can be on version 7.3 until April 2020. For more information, see [FAQ for Dynamics 365 Update Policies](https://docs.microsoft.com/en-us/dynamics365/get-started/faq-update-policy).
 
 ### Platform Releases
 
 | Release          |Build number         | Availability          | Expiration | End of life  |
 |------------------|----------------------|------------------|--------------|---------------|
+|  Platform update 15 | 7.0.4841.XXXX  | June 2018  | September 2018 | December 2027     |
 |  Platform Update 12 | 7.0.4709.41182  | March 2018  | June 2018 | December 2027     |
 |  Platform Update 11 | 7.0.4679.35176 | October 2017 | April 2018 | December 2027     |
 |  Platform Update 10 | 7.0.4641.16233 | August 2017 | April 2018 | December 2027     |

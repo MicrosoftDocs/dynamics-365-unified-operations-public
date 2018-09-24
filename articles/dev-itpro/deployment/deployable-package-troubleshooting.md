@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Troubleshooting guide for package deployment issues
+# Troubleshoot package application issues
 
 [!include [banner](../includes/banner.md)]
 

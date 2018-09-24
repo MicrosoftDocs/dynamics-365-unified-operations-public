@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Form I-9 employment verification
+title: Form I-9 verification
 description: This topic provides information about Form I-9 verification. Employers must complete Form I-9 for all new employees who will be working in the United States. The form documents that the employer has verified the identity of the new employee, and that the employee is authorized to work in the United States.
 author: ShielaSogge
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Form I-9 employment verification
+# Form I-9 verification
 
 [!include [banner](../../includes/banner.md)]
 
@@ -40,7 +40,7 @@ The Immigration Reform and Control Act (IRCA) requires U.S. employers to verify 
 
 To prove employment eligibility, employees must complete and sign a right to work form, Form I-9. Employers must be able to produce Form I-9 information if United States Immigration and Customs Enforcement (ICE) requests it. Additionally, companies must verify Form I-9 information again within three years of the date when the employee originally supplied the information. 
 
-**Note:** For complete guidelines about compliance with Form I-9, see the U.S. Citizenship and Immigration Services website ([www.uscis.gov](http://www.uscis.gov)). Search the site by using the keywords "Form I-9." 
+**Note:** For complete guidelines about compliance with Form I-9, see the U.S. Citizenship and Immigration Services website ([www.uscis.gov](https://www.uscis.gov)). Search the site by using the keywords "Form I-9." 
 
 You can collect, electronically store and retrieve, and verify Form I-9 information again from areas of the program that support employment processes. Here are some of the benefits of this functionality:
 
@@ -57,6 +57,3 @@ Additional resources
 --------
 
 [Organizing your workforce using departments, jobs, and positions](../../../talent/departments-jobs-positions.md)
-
-
-

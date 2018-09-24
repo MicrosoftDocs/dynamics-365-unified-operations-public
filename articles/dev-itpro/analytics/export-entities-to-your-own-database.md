@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Bring your own database
+title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/25/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Bring your own database
+# Bring your own database (BYOD)
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,10 +39,9 @@ This topic explains how administrators can export data entities from Microsoft D
 The BYOD feature lets administrators configure their own database, and then export one or more data entities that are available in Finance and Operations into it. (Currently, more than 1,700 data entities are available.) Specifically, this feature lets you complete these tasks:
 
 - Define one or more SQL databases that you can export entity data from Finance and Operations into.
-- Export either all the records (*full push*) or only the records that have changed (*incremental push*).
+- Export either all the records (*full push*) or only the records that have changed or been deleted (*incremental push*).
 - Use the rich scheduling capabilities of the Finance and Operations batch framework to enable periodic exports.
 - Access the entity database by using Transact-SQL (T-SQL), and even extend the database by adding more tables.
-
 
 ## Entity store or BYOD?
 
@@ -78,19 +77,19 @@ If you're using the BYOD feature for integration with a business intelligence (B
     Data Source=&lt;logical server name&gt;,1433; Initial Catalog=&lt;your DB name&gt;; Integrated Security=False; User ID=&lt;SQL user ID&gt;; Password=&lt;password&gt;
 
     In this connection string, the logical server name should resemble **nnnn.database.windows.net**. You should be able to find the logical server name in Azure portal. The following illustration shows an example of a connection string.
-    
+
     ![Connection string on the New record page](media/NewRecord.png)
 
 4. Select **Validate**, and make sure that the connection is successful.
 
     - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied from Finance and Operations. However, CCIs are currently supported only on SQL premium databases. Therefore, to enable this option, you must create a SQL premium database.
-    - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option lets you hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger is supported per bulk insert operation. The size of the bulk insert is determined by the **Maximum insert commit size** parameter in the Data management framework. 
+    - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option lets you hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger is supported per bulk insert operation. The size of the bulk insert is determined by the **Maximum insert commit size** parameter in the Data management framework.
 
-For scenarios in which reporting systems read data from BYOD, there is always the challenge of ensuring that the reporting systems get consistent data from BYOD while the sync from Finance and Operations is in progress. You can achieve this result by not having the reporting systems read directly from the staging tables created by the BYOD process. The staging tables hold the data while data is being synced from the Finance and Operations instance and hence will be constantly changing. Use the SQL trigger feature to determine when the data sync from Finance and Operations has been completed, and then hydrate the downstream reporting systems .
+For scenarios in which reporting systems read data from BYOD, there is always the challenge of ensuring that the reporting systems get consistent data from BYOD while the sync from Finance and Operations is in progress. You can achieve this result by not having the reporting systems read directly from the staging tables created by the BYOD process. The staging tables hold the data while data is being synced from the Finance and Operations instance and hence will be constantly changing. Use the SQL trigger feature to determine when the data sync from Finance and Operations has been completed, and then hydrate the downstream reporting systems.
 
 When the validation is passed, the database that you configured for entity export appears in lists of databases, as shown in the following illustration.
 
-   ![Database for entity export](media/e3bcecdb0ff1532d890915903b378c60.png)
+![Database for entity export](media/e3bcecdb0ff1532d890915903b378c60.png)
 
 You can now publish one or more entities to the new database by selecting the **Publish** option on the menu.
 
@@ -121,7 +120,7 @@ The **Compare source names** option lets you compare the entity schema in the de
 
 #### Configure change tracking
 
-Change tracking is a feature that is provided in SQL Server and SQL Database. Change tracking enables the database to track changes that are made on tables. The system uses change tracking to identify changes that are made to tables as transactions are performed in Finance and Operations.
+Change tracking is a feature that is provided in SQL Server and SQL Database. Change tracking enables the database to track changes including deletes that are made on tables. The system uses change tracking to identify changes that are made to tables as transactions in Finance and Operations.
 
 The **Change tracking** option on the **Publish** page lets you configure how changes are tracked on the underlying entity.
 
@@ -157,23 +156,26 @@ You can use the **Export** page to export data from Finance and Operations into 
 You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
 
 ### Incremental export
-When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the Finance and Operations database and specify an appropriate change tracking option, as described earlier in this topic. 
+When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the Finance and Operations database and specify an appropriate change tracking option, as described earlier in this topic.
 
 >[!NOTE]
 > A full push deletes all existing records from an entity and then inserts the current set of records from the selected entity.
 
-If you select an incremental push, the first push is always going to be a full push. This is because SQL needs to know which records have been 'tracked' in order to be able to track subsequent changes. Whenever a new record is inserted, or a record is added or deleted, the corresponding change will be reflected in the destination entity. 
+If you select an incremental push, the first push is always going to be a full push. This is because SQL needs to know which records have been 'tracked' in order to be able to track subsequent changes. Whenever a new record is inserted, or a record is added or deleted, the corresponding change will be reflected in the destination entity.
 
-Because the first push is always a full push, we do not recomend that you do an explicit full push before you enable change tracking. 
+Because the first push is always a full push, we do not recomend that you do an explicit full push before you enable change tracking.
 
 We recommend that you first enable change tracking and schedule a export job with incremental push. This will take care of the first full push and the subsequent incremental exports.
+
+### Timeouts
+The default timeouts for BYOD exports are set to ten minutes for truncation operations and one hour for actual bulk insert operations. When volumes are high, these timeout settings may not be sufficient and must be updated. Starting with the release of Platform update 18, you can update the timeout settings by navigating to **Data management** > **Framework parameters** > **Bring your own database**.
 
 ### Known limitations
 
 The BYOD feature has the following limitations.
 
-#### There should be no active sessions on your database during synchronization
-Because BYOD is your own database, you must ensure that there are no active sessions on your Azure SQL database when data is being synced from Finance and Operations. Having active sessions on your database during synchronization can results in SQL locks which in turn can cause in slow writes or even complete failure of exports to your Azure SQL database.
+#### There should be no active locks on your database during synchronization
+Because BYOD is your own database, you must ensure that there are no active locks on your Azure SQL database when data is being synced from Finance and Operations. Having active locks on your database during synchronization can result in slow writes or even failure to export to your Azure SQL database.
 
 #### Export data projects are specific to a single legal entity
 

@@ -1,32 +1,33 @@
 --- 
 # required metadata 
  
-title: Employment verification using form I-9
+title: Employment verification i9 verification
 description: The Immigration Reform and Control Act requires US employers to verify the employment eligibility status of newly hired employees. 
 author: ShielaSogge
 manager: AnnBe 
-ms.date: 06/23/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
 ms.technology:  
- 
+
 # optional metadata 
- 
-# ms.search.form:   
+
+ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: rschloma
-ms.search.scope: Operations, Talent 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
-ms.search.region: USA
+ms.search.region: Global
 # ms.search.industry: 
 ms.author: shielas
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0
+
 ---
-# Employment verification using form I-9
+# Employment verification i9 verification
 
 [!include [task guide banner](../../../includes/task-guide-banner.md)]
 

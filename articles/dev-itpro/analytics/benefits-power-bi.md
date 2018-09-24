@@ -42,13 +42,12 @@ The **Benefits** Power BI content is shown in the **Benefits management** worksp
 ## Reports that are included in the Power BI content
 The reports that are included in the **Benefits** Power BI content have both charts and tables that contain additional information. The following table describes the reports.
 
-| Report                       | Contents                                                                                       |
-|------------------------------|------------------------------------------------------------------------------------------------|
-| Benefit Enrollment Overview  | Most and least enrolled plans, enrollment by employee group, and selected benefit plan options |
-| Employee Benefits            | Employee enrollment by selected benefit                                                        |
-                                                                                             
-You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+| Report                      | Contents                                                                                       |
+|-----------------------------|------------------------------------------------------------------------------------------------|
+| Benefit Enrollment Overview | Most and least enrolled plans, enrollment by employee group, and selected benefit plan options |
+| Employee Benefits           | Employee enrollment by selected benefit                                                        |
 
+You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
 The following data is used to fill the reports in the **Benefits** Power BI content. This table shows the entities that the content was based on.
@@ -70,10 +69,8 @@ The following data is used to fill the reports in the **Benefits** Power BI cont
 | Position                 | Department, FTE, position, position type, and title                                                        | Current Position, Current Employee |
 | Position Trend           | Positions over time, FTE, and job                                                                          | Calendar Offset, Date, Job, Position |
 | Reports To               | First name, last name, and full name                                                                       | Current Worker, Terminated Employee, Employee Trend |
-| Terminated Employee      | Terminated employees, termination date, title, position, and job                                           | Company, Compensation, Geographic Location,  Employee Name, Reports To, Calendar Offset, Date, Employee Title, Demographics, Employment, Job, Position, Benefits |
+| Terminated Employee      | Terminated employees, termination date, title, position, and job                                           | Company, Compensation, Geographic Location, Employee Name, Reports To, Calendar Offset, Date, Employee Title, Demographics, Employment, Job, Position, Benefits |
 | Benefits                 | Effective date, benefit option, benefit plan, and benefit type                                             | Current Name, Terminated Employee, Employee Trend |
 | Employee Name            | First name, last name, and full name                                                                       | Current Employee, Terminated Employee, Employee Trend |
 | Employee Title           | Title and seniority date                                                                                   | Current Employee, Terminated Employee, Employee Trend |
 | Employee Trend           | Workers over time, headcount, company, and position                                                        | Company, Compensation, Geographic Location, Employee Name, Reports To, Calendar Offset, Date, Employee Title, Demographics, Employment, Job, Benefits |
-
-

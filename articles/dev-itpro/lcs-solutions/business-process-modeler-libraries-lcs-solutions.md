@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up Business process modeler libraries for a Microsoft Dynamics 365 for Finance and Operations solution
+title: Set up Business process modeler libraries for Finance and Operations solutions
 description: This topic explains how to create and work with Business process modeler (BPM) libraries.
 author: kfend
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.author: omarc
 
 ---
 
-# Set up Business process modeler libraries for a Microsoft Dynamics 365 for Finance and Operations solution
+# Set up Business process modeler libraries for Finance and Operations solutions
 
 [!include [banner](../includes/banner.md)]
 

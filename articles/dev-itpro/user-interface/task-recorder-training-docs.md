@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create documentation or training using Task recordings
+title: Create documentation or training by using task recordings
 description: This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
 author: josaw1
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create documentation or training using Task recordings
+# Create documentation or training by using task recordings
 
 [!include [banner](../includes/banner.md)]
 

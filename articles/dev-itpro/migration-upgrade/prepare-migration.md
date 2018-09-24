@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Prepare to migrate code from Dynamics AX 2012 R3 to Dynamics 365 for Finance and Operations
+# Prepare to migrate code to Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
@@ -72,16 +72,16 @@ The LCS code upgrade service takes a Dynamics AX 2012 R3 model store as input an
 -   Provides an estimation to understand the effort required to upgrade the solution.
 -   Runs migration rules that auto-migrate parts of a solution.
 -   Runs migration rules that inform developers what to manually fix by using TODOs.
--   Automatically checks-in the upgraded solution into your Visual Studio Team Services (VSTS) project.
+-   Automatically checks-in the upgraded solution into your Azure DevOps project.
 
 To configure and run the code upgrade service, see [Configure and execute the code upgrade service in Lifecycle Services](../lifecycle-services/configure-execute-code-upgrade.md).
 
 ### Manual migration steps
 
-After you upgrade your code using the LCS code upgrade service configure your developer VM and VSTS to connect to the upgraded code branch.
+After you upgrade your code using the LCS code upgrade service configure your developer VM and Azure DevOps to connect to the upgraded code branch.
 
 -   [Configure your developer VM](../dev-tools/configure-developer-vm.md)
--   [Configure VSTS](configure-vso-solution.md)
+-   [Configure Azure DevOps](configure-vso-solution.md)
 
 The code upgrade service will provide with Visual Studio solutions that you can open to compile your code. A **code merge** solution for all elements that contain conflicts and an **upgraded** solutions for all your upgraded elements. Typically, you can compile the application by fixing compilation errors in the order shown below. The order is determined based on the package dependencies graph, start with the lowest package in the graph. To determine package dependencies, see [Models](../dev-tools/models.md). A typical order is Application Platform, Application Foundation, Directory, ...etc., Application Suite. For each of your upgraded models:
 

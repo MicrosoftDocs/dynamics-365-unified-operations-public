@@ -3,7 +3,7 @@
 
 title: Set up workflows for expense
 description: You can set up a workflow process that is used to review and approve travel and expense documents.
-author: saraschi2
+author: ShylaThompson
 manager: AnnBe
 ms.date: 09/13/2017
 ms.topic: article
@@ -16,15 +16,16 @@ ms.technology:
 ms.search.form:  WorkflowtableListPageRnr
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
-ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
+ms.author: shylaw
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
 # Set up workflows for expense

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Formula designer in Electronic reporting
+title: Formula designer in Electronic reporting (ER)
 description: This topic explains how to use the formula designer in Electronic reporting (ER).
 author: NickSelin
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Formula designer in Electronic reporting
+# Formula designer in Electronic reporting (ER)
 
 [!include [banner](../includes/banner.md)]
 
@@ -389,7 +389,7 @@ At runtime, the <strong>Label</strong> and <strong>Description</strong> fields r
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>The following illustration shows the result when the designed format is run.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>Based on the language settings of the parent FILE and FOLDER format elements, translated text for labels and descriptions is entered in the output of the ER format.</blockquote>
+<blockquote>[!NOTE] Based on the language settings of the parent FILE and FOLDER format elements, translated text for labels and descriptions is entered in the output of the ER format.</blockquote>
 </td>
 </tr>
 <tr>
@@ -430,7 +430,7 @@ In this case, you can use the following expression to get the label of the enume
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>The following illustration shows the result when the adjusted format is run.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>The limit isn't applied to the last item of the original list, because the value (11) of the limit source (weight) exceeds the defined limit (9). Use either the <strong>WHERE</strong> function or the <strong>Enabled</strong> expression of the corresponding format element to ignore (skip) sub-lists during report generation, as required.</blockquote>
+<blockquote>[!NOTE] The limit isn't applied to the last item of the original list, because the value (11) of the limit source (weight) exceeds the defined limit (9). Use either the <strong>WHERE</strong> function or the <strong>Enabled</strong> expression of the corresponding format element to ignore (skip) sub-lists during report generation, as required.</blockquote>
 </td>
 </tr>
 <tr>
@@ -460,8 +460,8 @@ In this case, you can use the following expression to get the label of the enume
 | NUMBERVALUE (string, decimal separator, digit grouping separator) | Convert the specified string to a number. The specified decimal separator is used between the integer and fractional parts of a decimal number. The specified digit grouping separator is used as the thousands separator. | **NUMBERVALUE("1 234,56", ",", " ")** returns the value **1234.56**. |
 | VALUE (string) | Convert the specified string to a number. Commas and dot characters (.) are considered decimal separators, and a leading hyphen (-) is used as a negative sign. Throw an exception if the specified string contains other non-numeric characters. | **VALUE ("1 234,56")** throws an exception. |
 | ROUND (number, decimals) | Return the specified number after it has been rounded to the specified number of decimal places:<ul><li>If the value of the **decimals** parameter is more than 0 (zero), the specified number is rounded to that many decimal places.</li><li>If the value of the **decimals** parameter is **0** (zero), the specified number is rounded to the nearest integer.</li><li>If the value of the **decimals** parameter is less than 0 (zero), the specified number is rounded to the left of the decimal point.</li></ul> | **ROUND (1200.767, 2)** rounds to two decimal places and returns **1200.77**. **ROUND (1200.767, -3)** rounds to the nearest multiple of 1,000 and returns **1000**. |
-| ROUNDDOWN (number, decimals) | Return the specified number after it has been rounded down to the specified number of decimal places.<blockquote>[!NOTE]<br>This function behaves like **ROUND**, but it always rounds the specified number down (toward zero).</blockquote> | **ROUNDDOWN (1200.767, 2)** rounds down to two decimal places and returns **1200.76**. **ROUNDDOWN (1700.767, -3)** rounds down to the nearest multiple of 1,000 and returns **1000**. |
-| ROUNDUP (number, decimals) | Return the specified number after it has been rounded up to the specified number of decimal places.<blockquote>[!NOTE]<br>This function behaves like **ROUND**, but it always rounds the specified number up (away from zero).</blockquote> | **ROUNDUP (1200.763, 2)** rounds up to two decimal places and returns **1200.77**. **ROUNDUP (1200.767, -3)** rounds up to the nearest multiple of 1,000 and returns **2000**. |
+| ROUNDDOWN (number, decimals) | Return the specified number after it has been rounded down to the specified number of decimal places.<blockquote>[!NOTE] This function behaves like **ROUND**, but it always rounds the specified number down (toward zero).</blockquote> | **ROUNDDOWN (1200.767, 2)** rounds down to two decimal places and returns **1200.76**. **ROUNDDOWN (1700.767, -3)** rounds down to the nearest multiple of 1,000 and returns **1000**. |
+| ROUNDUP (number, decimals) | Return the specified number after it has been rounded up to the specified number of decimal places.<blockquote>[!NOTE] This function behaves like **ROUND**, but it always rounds the specified number up (away from zero).</blockquote> | **ROUNDUP (1200.763, 2)** rounds up to two decimal places and returns **1200.77**. **ROUNDUP (1200.767, -3)** rounds up to the nearest multiple of 1,000 and returns **2000**. |
 
 ### Data conversion functions
 
@@ -478,8 +478,8 @@ In this case, you can use the following expression to get the label of the enume
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| NULLCONTAINER (list) | Return a **null** record that has the same structure as the specified record list or record.<blockquote>[!NOTE]<br>This function is obsolete. Use **EMPTYRECORD** instead.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** returns a new empty record that has the same structure as the list that is returned by the **SPLIT** function. |
-| EMPTYRECORD (record) | Return a **null** record that has the same structure as the specified record list or record.<blockquote>[!NOTE]<br>A **null** record is a record where all fields have an empty value. An empty value is **0** (zero) for numbers, an empty string for strings, and so on.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** returns a new empty record that has the same structure as the list that is returned by the **SPLIT** function. |
+| NULLCONTAINER (list) | Return a **null** record that has the same structure as the specified record list or record.<blockquote>[!NOTE] This function is obsolete. Use **EMPTYRECORD** instead.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** returns a new empty record that has the same structure as the list that is returned by the **SPLIT** function. |
+| EMPTYRECORD (record) | Return a **null** record that has the same structure as the specified record list or record.<blockquote>[!NOTE] A **null** record is a record where all fields have an empty value. An empty value is **0** (zero) for numbers, an empty string for strings, and so on.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** returns a new empty record that has the same structure as the list that is returned by the **SPLIT** function. |
 
 ### Text functions
 
@@ -526,14 +526,14 @@ In this case, you can use the following expression to get the label of the enume
 <td>CHAR (number)</td>
 <td>Return the string of characters that is referenced by the specified Unicode number.</td>
 <td><strong>CHAR (255)</strong> returns <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE]<br>The string that this function returns depends on the encoding that is selected in the parent FILE format element. For the list of supported encodings, see <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Encoding class</a>.</blockquote>
+<blockquote>[!NOTE] The string that this function returns depends on the encoding that is selected in the parent FILE format element. For the list of supported encodings, see <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Encoding class</a>.</blockquote>
 </td>
 </tr>
 <tr>
 <td>CONCATENATE (string 1 [, string 2, …])</td>
 <td>Return all specified text strings after they have been joined into one string.</td>
 <td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> returns <strong>&quot;abcdef&quot;</strong>.
-<blockquote>[!NOTE]<br>The expression <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> also returns <strong>&quot;abcdef&quot;</strong>.</blockquote>
+<blockquote>[!NOTE] The expression <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> also returns <strong>&quot;abcdef&quot;</strong>.</blockquote>
 </td>
 </tr>
 <tr>
@@ -575,7 +575,7 @@ In this case, you can use the following expression to get the label of the enume
 <p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>If the same report is processed for the <strong>Litware Retail</strong> customer on December 17, 2015, in the <strong>DE</strong> culture and the <strong>DE</strong> language, the formula returns the following text, which uses a different date format:</p>
 <p>&quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
-<blockquote>[!NOTE]<br>The following syntax is applied in ER formulas for labels:
+<blockquote>[!NOTE] The following syntax is applied in ER formulas for labels:
 <ul>
 <li><strong>For labels from Finance and Operations resources:</strong> <strong>@&quot;X&quot;</strong>, where X is the label ID in the Application Object Tree (AOT)</li>
 <li><strong>For labels that reside in ER configurations:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, where X is the label ID in the ER configuration</li>
@@ -591,7 +591,7 @@ In this case, you can use the following expression to get the label of the enume
 <tr>
 <td>NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal points)</td>
 <td>Return the specified number after it has been spelled out (converted to text strings) in the specified language. The language code is optional. When it's defined as an empty string, the language code for the running context is used. (The language code for the running context is defined for a generating folder or file.) The currency code is also optional. When it's defined as an empty string, the company currency is used.
-<blockquote>[!NOTE]<br>The <strong>print currency name flag</strong> and <strong>decimal points</strong> parameters are analyzed only for the following language codes: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>. Additionally, the <strong>print currency name flag</strong> parameter is analyzed only for Finance and Operations companies where the country's or region's context supports declension of currency names.</blockquote>
+<blockquote>[!NOTE] The <strong>print currency name flag</strong> and <strong>decimal points</strong> parameters are analyzed only for the following language codes: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>. Additionally, the <strong>print currency name flag</strong> parameter is analyzed only for Finance and Operations companies where the country's or region's context supports declension of currency names.</blockquote>
 </td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returns <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> returns <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> returns <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
@@ -660,10 +660,10 @@ When these data sources are defined, you can use an expression such as <strong>F
 | Function | Description | Example |
 |----------|-------------|---------|
 | CONVERTCURRENCY (amount, source currency, target currency, date, company) | Convert the specified monetary amount from the specified source currency to the specified target currency by using the settings of the specified Finance and Operations company on the specified date. | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** returns the equivalent of one euro in US dollars on the current session date, based on settings for the DEMF company. |
-| ROUNDAMOUNT (number, decimals, round rule) | Round the specified amount to the specified number of decimal places according to the specified rounding rule.<blockquote>[!NOTE]<br>The rounding rule must be specified as a value of the Finance and Operations **RoundOffType** enumeration.</blockquote> | If the **model.RoundOff** parameter is set to **Downward**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.78**. If the **model.RoundOff** parameter is set to either **Normal** or **Rounding-up**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.79**. |
+| ROUNDAMOUNT (number, decimals, round rule) | Round the specified amount to the specified number of decimal places according to the specified rounding rule.<blockquote>[!NOTE] The rounding rule must be specified as a value of the Finance and Operations **RoundOffType** enumeration.</blockquote> | If the **model.RoundOff** parameter is set to **Downward**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.78**. If the **model.RoundOff** parameter is set to either **Normal** or **Rounding-up**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.79**. |
 | CURCredRef (digits) | Return a creditor reference, based on the digits of the specified invoice number. | **CURCredRef ("VEND-200002")** returns **"2200002"**. |
 | MOD\_97 (digits) | Return a creditor reference as a MOD97 expression, based on the digits of the specified invoice number. | **MOD\_97 ("VEND-200002")** returns **"20000285"**. |
-| ISOCredRef (digits) | Return an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.<blockquote>[!NOTE]<br>To eliminate symbols from alphabets that aren't ISO-compliant, the input parameter must be translated before it's passed to this function.</blockquote> | **ISOCredRef ("VEND-200002")** returns **"RF23VEND-200002"**. |
+| ISOCredRef (digits) | Return an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.<blockquote>[!NOTE] To eliminate symbols from alphabets that aren't ISO-compliant, the input parameter must be translated before it's passed to this function.</blockquote> | **ISOCredRef ("VEND-200002")** returns **"RF23VEND-200002"**. |
 | CN\_GBT\_AdditionalDimensionID (string, number) | Get the specified additional financial dimension ID. In the **string** parameter, dimensions are represented as IDs that are separated by commas. The **number** parameter defines the sequence code of the requested dimension in the string. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** returns **"CC"**. |
 | GetCurrentCompany () | Return a text representation of the code for the legal entity (company) that a user is currently signed in to. | **GETCURRENTCOMPANY ()** returns **USMF** for a user who is signed in to the **Contoso Entertainment System USA** company in Finance and Operations. |
 | CH\_BANK\_MOD\_10 (digits) | Return a creditor reference as an MOD10 expression, based on the digits of the specified invoice number. | **CH\_BANK\_MOD\_10 ("VEND-200002")** returns **3**. |

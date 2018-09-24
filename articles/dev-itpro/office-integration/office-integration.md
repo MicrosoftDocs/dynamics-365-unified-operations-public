@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Office integration
+title: Office integration concepts and features
 description: This topic reviews Microsoft Office integration concepts and features.
 author: ChrisGarty
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Office integration
+# Office integration concepts and features
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create an end-to-end payment extension
+title: Create an end-to-end payment integration for a payment terminal
 description: This topic describes how to create an end-to-end payment integration for a payment terminal.
 author: 
 manager: AnnBe
@@ -29,7 +29,10 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Payment integration with a payment terminal
+# Create an end-to-end payment integration for a payment terminal
+
+[!include [banner](../../includes/banner.md)]
+
 This topic describes how to write a payment integration for Microsoft Dynamics 365 for Retail Modern POS and Cloud POS (the POS) for a payment terminal that can directly communicate with the payment gateway.
 
 ## Key terms

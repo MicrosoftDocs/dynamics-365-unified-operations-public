@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Channel database (DB) extensions
+title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Channel database (DB) extensions
+# Channel database extensions
 
 [!include [banner](../../includes/banner.md)]
 

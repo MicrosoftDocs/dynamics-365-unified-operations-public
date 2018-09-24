@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage third-party models and runtime packages using source control
+title: Manage third-party models and runtime packages by using source control
 description: This topic outlines a recommended strategy for managing, distributing, and deploying third-party solutions.
 author: jorisdg
 manager: AnnBe
@@ -39,7 +39,7 @@ Customers that work with solutions from third parties might receive different so
 This topic outlines a recommended strategy for managing, distributing, and deploying these third-party solutions.
 
 ## Models from third parties
-Any source code that is received from third parties must be compiled into a binary and included in a deployable package. Models should be installed on a development virtual machine (VM) and added to source control. From there, the build VM can pick up the source code, build it, and include it in a deployable package. Other developers can just synchronize the model from Microsoft Visual Studio Team Services (VSTS) to their development VMs. They don't have to manually install it.
+Any source code that is received from third parties must be compiled into a binary and included in a deployable package. Models should be installed on a development virtual machine (VM) and added to source control. From there, the build VM can pick up the source code, build it, and include it in a deployable package. Other developers can just synchronize the model from Microsoft Azure DevOps to their development VMs. They don't have to manually install it.
 
 For information about how to install a model on a development VM, see [Export and import a model](models-export-import.md).
 

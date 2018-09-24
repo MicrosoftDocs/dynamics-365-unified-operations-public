@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage access to sensitive data
+title: Guide to the GDPR for Finance and Operations
 description: This topic provides information about the user log functionality in Microsoft Dynamics 365 for Finance and Operations.
 author: ToddLefor
 manager: AnnBe
@@ -23,13 +23,13 @@ ms.search.scope: Operations
 ms.custom: 10031
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: 
+ms.author: ToddLefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations
+# Guide to the GDPR for Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 

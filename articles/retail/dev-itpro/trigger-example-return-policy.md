@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Implement a return policy using triggers
+title: Implement a return policy by using triggers
 description: This topic has two examples which show how you can implement a new policy using a trigger.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,11 +30,14 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Implement a return policy using triggers
+# Implement a return policy by using triggers
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic has two examples which show how you can implement a new policy using a trigger.
+> [!NOTE]
+> This topic is applicable for Dynamics 365 for Finance and Operations version 7.1 and earlier. This implementation is not supported for versions 7.2 and higher. For those versions, follow the extension model without overlayering.
+
+This topic has two examples that show how you can implement a new policy using a trigger.
 
 The examples in this topic assume that you have a new return policy. The maximum time period for returning an item is 30 days and no item may be returned more than 30 days after the date of purchase. Additionally, the cashier or manager is not allowed to void more than three items in a single transaction.
 
@@ -168,7 +171,5 @@ To implement the three-time limit, create a new class and implement the IPreVoid
 2.  Click **Show Journal** and try to return the merchandise. You will get the error message “Cannot return, you are past return date”.
 3.  Create another new transaction and add four different items. Try to return all four items. You will get an error for the fourth item with the message, "Void is not allowed anymore.”
 
-**Note:** In the sample code, the return the time period is configured as 100ms, so that you can test your code immediately. You should change the configuration as needed.
-
-
-
+> [!NOTE]
+> In the sample code, the return the time period is configured as 100 ms, so that you can test your code immediately. You should change the configuration as needed.

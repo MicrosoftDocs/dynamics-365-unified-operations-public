@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Apply the latest platform update to your Dynamics 365 Finance and Operations environment
+title: Apply the latest platform update to environments
 description: This topic explains how to apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations Enterprise edition environment.
 author: tariqbell
 manager: AnnBe
-ms.date: 03/06/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 ---
 
-# Apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations environment
+# Apply the latest platform update to environments
 
 [!include [banner](../includes/banner.md)]
 
@@ -112,7 +112,8 @@ Platform update packages are released by Microsoft and can be imported from the 
 
 #### Example
 
-```AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="OneBoxDev-runbook.xml"
+```
+AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="OneBoxDev-runbook.xml"
 
     AXUpdateInstaller.exe import -runbookfile=OneBoxDev-runbook.xml
 
@@ -198,13 +199,13 @@ This means two things:
 
 2.  If you cannot remove over-layering from the Directory model, and you still want to upgrade, you will have to do a complete upgrade of the platform and the application (Finance and Operations version 1611) as described in [Overview of moving to the latest update of Finance and Operations](upgrade-latest-update.md).
 
-### Delete platform metadata hotfixes from your VSTS project (Platform update 2 or earlier)
+### Delete platform metadata hotfixes from your Azure DevOps project (Platform update 2 or earlier)
 
 > [!NOTE]
 > This section is not relevant if you are already on Platform update 3 and updating to a newer platform.
 
-Before you install the new platform update, you must clean up your Microsoft Visual Studio Team Services (VSTS) source control project.
-Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your VSTS project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
+Before you install the new platform update, you must clean up your Microsoft Azure DevOps source control project.
+Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your Azure DevOps project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
 
 -   Application Platform
 -   Application Foundation

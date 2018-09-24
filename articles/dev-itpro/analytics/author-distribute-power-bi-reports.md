@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Author analytical reports by using Power BI Desktop
+title: Create analytical reports by using Power BI Desktop
 description: This topic walks you through the process of authoring Power BI reports by using the local Entity Store database. 
 author: MilindaV2
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Author analytical reports by using Power BI Desktop
+# Create analytical reports by using Power BI Desktop
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,13 +41,13 @@ In Microsoft Dynamics 365 for Finance and Operations, you can create Microsoft P
 
 When you use Power BI Desktop, you can create a report in your development or test environment by connecting directly to the local Entity Store database. When you're satisfied with the report, your administrator can help you migrate it to your production environment. The rest of this section walks you through this process.
 
-> [!Note]
+> [!NOTE]
 > To develop or extend analytical workspaces and reports in the application suite, customers must use a development environment running in their own subscription or on local machines. You won’t be able to develop or extend embedded analytical reports in Microsoft-provided, Tier-1 environments. You need administrator rights to install Power BI Desktop.
 
 ### Step 1: Populate the local Entity Store database
 For this example, we will stage the aggregate models that the Retail analytical solution consumes in the local Entity Store. The models that the Retail application uses are defined in the RetailCube aggregate measurement. 
 
-1. In the Finance and Operations client, open the **Entity Store** page. (Select **System administration** > **Setup** > **Entity Store**.) 
+1. In the Finance and Operations client, open the **Entity Store** page. (Select **System administration** \> **Setup** \> **Entity Store**.) 
 2. Select the **RetailCube** aggregate measurement, and then select **Refresh**. 
 3. Enter a name for the job that will be run in the background, and then select **OK**.
 
@@ -55,13 +55,13 @@ The following illustration shows the administrator dialog box that is used to co
 
 ![Configure refresh dialog box](media/Configure-refresh.png)
 
-To monitor the progress of the job that stages the data, you can use the batch job monitoring page. (Select **System administration** > **Database** > **Batch jobs**.) If you're using demo data, the job should take about a minute. After the data is in the Entity Store, you can write reports. 
+To monitor the progress of the job that stages the data, you can use the batch job monitoring page. (Select **System administration** \> **Database** \> **Batch jobs**.) If you're using demo data, the job should take about a minute. After the data is in the Entity Store, you can write reports. 
 
 ### Step 2: Connect to the local Entity Store database
 1. Start Power BI Desktop. If any updates are available for Power BI Desktop, you might have to download and apply them. 
 2. On the Power BI **Welcome** page, select **Get data**. 
 
-    Alternatively, when Power BI Desktop starts, you can select **Get Data** > **SQL Server**. 
+    Alternatively, when Power BI Desktop starts, you can select **Get Data** \> **SQL Server**. 
 
     ![Get Data menu in Power BI Desktop](media/Power-BI-Desktop-Get-Data.png)
 
@@ -79,7 +79,7 @@ To monitor the progress of the job that stages the data, you can use the batch j
     The **Navigator** dialog box appears. You use this dialog box to select which tables and views from the Entity Store you want to report on. 
 
 5. In the search box, enter **Retail** to filter for entities that are related to the RetailCube aggregate measurement.
-6. Select the **RetailCube_RetailTransDetailsView** table that is shown in the navigator, and then select **Load**. 
+6. Select the **RetailCube\_RetailTransDetailsView** table that is shown in the navigator, and then select **Load**. 
 
 You can now create a report. You can drag measures and fields to the canvas, and can explore data and trends interactively.
 

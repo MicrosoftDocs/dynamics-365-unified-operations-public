@@ -1,32 +1,32 @@
----
-# required metadata
-
-title: Set up prerequisites for management
-description: Use this procedure to enable nonconformance management processes.
+--- 
+# required metadata 
+ 
+title: Set up prerequisites for nonconformance management
+description: Use this procedure to enable nonconformance management processes. 
 author: perlynne
-manager: AnnBe
-ms.date: 11/02/2017
-ms.topic: business-process
+manager: AnnBe 
+ms.date: 08/29/2018
+ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-applications 
 ms.technology:  
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
+ 
+# optional metadata 
+ 
+ms.search.form: InventParameters, InventTestReportSetup, SysUserManagement, SysUserSetup, InventTestDiagnosticType, InventTestMiscCharges, InventTestOperation, InventProblemType, InventProblemTypeSetup, InventQuarantineZone   
+audience: Application User 
 # ms.devlang:  
-ms.reviewer: yuyus
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2016-06-30 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Set up prerequisites for management
+# Set up prerequisites for nonconformance management
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -41,7 +41,7 @@ Use this procedure to enable nonconformance management processes. A nonconforman
 4. In the Hourly rate field, enter a number.
     * Use the Hourly rate field to enter an hourly labor rate in the local currency. The hourly rate is used for calculating costs for operations that are related to a nonconformance. The hourly rate and calculated costs provide reference information for a nonconformance, and they do not interact with other functionality.  
 5. Click Report setup.
-    * This page allows you to define the quality report note types that will be used on different kinds of quality management reports.  
+    * This page allows you define the quality report note types that will be used on different kinds of quality management reports.  
 6. Close the page.
 7. Close the page.
 
@@ -104,3 +104,4 @@ Use this procedure to enable nonconformance management processes. A nonconforman
 3. In the Quarantine zone field, type a value.
 4. In the Description field, type a value.
 5. Close the page.
+

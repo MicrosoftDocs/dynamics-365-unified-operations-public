@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Download updates from Lifecycle Services
+title: Download updates from Lifecycle Services (LCS)
 description: Use this tutorial to download hotfixes for Microsoft Dynamics 365 for Finance and Operations, from Lifecycle Services (LCS).
 author: AngelMarshall
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Download updates from Lifecycle Services
+# Download updates from Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 

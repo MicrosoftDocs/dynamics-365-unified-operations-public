@@ -5,7 +5,7 @@ title: Change the banner or logo
 description: The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity. 
 author: aneesmsft
 manager: AnnBe 
-ms.date: 03/02/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: OMLegalEntity, DefaultDashboard   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: sericks
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aneesa
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Change the banner or logo
 

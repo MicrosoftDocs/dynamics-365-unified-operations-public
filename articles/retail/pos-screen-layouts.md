@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure screen layouts for POS
+title: Screen layouts for the point of sale (POS)
 description: This topic provides information about screen layouts for Microsoft Dynamics 365 for Retail point of sale (POS) experiences.
 author: jblucher
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Configure screen layouts for POS
+# Screen layouts for the point of sale (POS)
 
 [!include [banner](includes/banner.md)]
 

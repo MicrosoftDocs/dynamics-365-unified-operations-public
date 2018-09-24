@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce runtime services
+title: Commerce runtime (CRT) services
 description: This topic describes the Commerce runtime (CRT) services, which are a collection of portable .NET libraries that contain the core business logic for the retail channel and pricing functionality.
 author: mugunthanm 
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2018-18-05
 ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
 
 ---
-# Commerce runtime services
+# Commerce runtime (CRT) services
 
 [!include [banner](../../includes/banner.md)]
 

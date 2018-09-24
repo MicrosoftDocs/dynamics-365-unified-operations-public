@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Segmented entry control metadata
+title: Design-time metadata for Segmented Entry controls
 description: Describes the design-time metadata properties for Segmented Entry controls.
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Segmented entry control metadata
+# Design-time metadata for Segmented Entry controls
 
 [!include [banner](../includes/banner.md)]
 
