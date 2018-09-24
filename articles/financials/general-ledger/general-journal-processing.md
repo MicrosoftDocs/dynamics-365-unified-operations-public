@@ -92,4 +92,7 @@ For more information, see the following topics:
 - [Post periodic journals](tasks/post-periodic-journals.md)
 - [Process ledger allocation journal](tasks/process-ledger-allocation-journal.md)
 
+## Simulate posting
+**Simulate posting** is a feature found in the **Validate** menu for most journals. Although the **Validate** menu option does test the journal for some error conditions, the **Simulate posting** menu executes all of the same processes that are run when you click on the **Post** menu in a journal. You can then review the posting messages that are displayed, fix any errors that you find, and then click on the **Post** menu to post the journal. 
 
+**Simulate posting** is not available for batch processing. However, there is code available to simulate posting in batch and developers can extend the code to add that functionality.  
