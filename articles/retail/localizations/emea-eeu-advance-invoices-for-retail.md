@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 ---
 # Advance invoices for Retail for Eastern Europe
 
-This article contains information about Eastern European localization specific for the Retail industry, and applies to Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
+This article contains information about Eastern European localization specific for the Retail industry. 
 
 For some European countries (Poland, Hungary, Czech Republic), when you receive a prepayment from a customer via Point of Sale (POS), the prepayment must be registered for tax purposes and you must generate and print an advance invoice document that includes the prepayment amount. In Poland, advance invoice transactions must be posted in general ledger.
 
@@ -64,9 +64,9 @@ The following scenarios are supported:
   - Specify the **Posting profile**, **Sales tax group** and **Item sales tax group** on the **Advance invoice** FastTab on the **Updates** tab. 
   If these fields are set correctly, the advance invoice will be posted. If these fields aren't specified, advance invoices will not post.
 
-  - The Sales tax on prepayment journal voucher must not be posted if advance invoice posting is set to "ON". To verify that this requirement is met, complete the following steps.
+  - The Sales tax on prepayment journal voucher must not be posted if advance invoice posting is set to **ON**. To verify that this requirement is met, complete the following steps.
      1. On the **Accounts receivable parameters** page, click **Ledger and sales tax**. 
-     2. On the **Payment** FastTab, be sure that the following fields are blank or set to "NO". 
+     2. On the **Payment** FastTab, be sure that the following fields are blank or set to **NO**. 
         - **Sales tax on prepayment journal voucher**
         - **Posting profile with prepayment journal voucher**
         - **Tax group for prepayment**
