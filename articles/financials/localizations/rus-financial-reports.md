@@ -180,7 +180,7 @@ If you choose “Interval”, click **Setup > Account interval**. Create a line,
    
    10.2 Optionally, setup calculation of Tax register for one Expense code or for interval of Expense codes: in the **Account/Interval** field, either choose “Account” and in the **Account** field, define Expense code, or choose “Interval” and in the **Setup > Account interval** define interval of Expense codes.
    
-11.	The **General**, **Posting layer** and **Financial dimensions** tabs contain same fields as tabs on upper part of the **Requisites setup** page **Financial reports** page. OPtionally go to these tabs to specify values in respective fields for Operation line (these values supersede default values for Cell and/or Report).
+11.	The **General**, **Posting layer** and **Financial dimensions** tabs contain same fields as tabs on upper part of the **Requisites setup** page **Financial reports** page. Optionally go to these tabs to specify values in respective fields for Operation line (these values supersede default values for Cell and/or Report).
 
 12.	After you create the operation lines, you can arrange them in the correct order. Select a line, and then click **Up** or **Down** buttons to move the selected line one position up or down.
 
