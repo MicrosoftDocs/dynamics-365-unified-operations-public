@@ -5,7 +5,7 @@ title: Design the relationships between organizational units
 description: This procedure walks through how to design the relationship between organizational units. 
 author: mugunthanm
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

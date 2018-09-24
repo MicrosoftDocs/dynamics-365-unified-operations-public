@@ -5,7 +5,7 @@ title: Set up the transfer documents for goods movement inside a company
 description: This procedure shows how to create transfer documents for goods movement inside a company. 
 author: v-oloski
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

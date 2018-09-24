@@ -5,7 +5,7 @@ title: Count inventory in a warehouse
 description: This procedure walks you through the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse. 
 author: MarkusFogelberg
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

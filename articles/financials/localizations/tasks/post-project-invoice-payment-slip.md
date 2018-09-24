@@ -5,7 +5,7 @@ title: Post a project invoice with a payment slip
 description: You can post a free text invoice with a payment slip attachment in a specified format. 
 author: EvgenyPopovMBS
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

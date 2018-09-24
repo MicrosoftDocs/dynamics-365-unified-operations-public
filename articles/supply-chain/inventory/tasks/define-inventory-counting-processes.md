@@ -5,7 +5,7 @@ title: Define inventory counting processes
 description: This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal. 
 author: MarkusFogelberg
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

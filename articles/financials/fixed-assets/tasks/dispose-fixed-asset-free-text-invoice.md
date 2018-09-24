@@ -5,7 +5,7 @@ title: Dispose of a fixed asset using a free text invoice
 description: This procedure shows how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal. 
 author: saraschi2
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

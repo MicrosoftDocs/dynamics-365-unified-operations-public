@@ -5,7 +5,7 @@ title: Create and associate a hardware station
 description: This procedure walks through how to create a new hardware station. 
 author: jashanno
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

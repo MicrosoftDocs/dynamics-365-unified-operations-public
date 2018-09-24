@@ -5,7 +5,7 @@ title: Chinese voucher continuity check
 description: Before you can close a fiscal period, the Chinese voucher numbers for each voucher type must start at 1 and be sequential. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Generate a constrained plan
 description: This procedure shows how to create a plan that takes into account both material and capacity constraints. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

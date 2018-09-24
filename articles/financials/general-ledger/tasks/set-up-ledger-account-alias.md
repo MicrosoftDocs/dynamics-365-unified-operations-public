@@ -5,7 +5,7 @@ title: Set up a ledger account alias
 description: This procedure shows how to create an account alias that provides a shortcut for entering an account number. 
 author: aprilolson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

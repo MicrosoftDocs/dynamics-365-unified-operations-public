@@ -5,7 +5,7 @@ title: Change the date for the session
 description: By default, the current date is used when entering and posting journal entries or source documents. 
 author: pvillads
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Write extensible code
 description: This topic provides information about how to write extensible code.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
-ms.date: 09/09/2018
+ms.date: 09/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -56,7 +56,7 @@ SOLID is an acronym for five principles that you can use to make your code easie
 + **Single responsibility** – Classes and method should have a single responsibility and should not have side-effects. By following this principle, you help guarantee that extension points that are automatically created on public and protected methods will be great extension points.
 + **Open/closed**
 
-    - **Open for modification** – Open your solution for extensions by designing and considering the extension surface. After an extension point is made available, you're responsible for maintaining it. This responsibility adds significant restrictions to future development. It's often preferable to open a solution up for extension by demand. For example, use internal methods over public methods or private methods over protected methods.
+    - **Open for extension** – Open your solution for extensions by designing and considering the extension surface. After an extension point is made available, you're responsible for maintaining it. This responsibility adds significant restrictions to future development. It's often preferable to open a solution up for extension by demand. For example, use internal methods over public methods or private methods over protected methods.
     - **Closed for modification** – Make your properties private, and make your methods either private or final-protected. In this way, no one can take advantage of a dependency on your logic, either through inheritance or extension.
 
 + **Liskov substitution** – Derived classes must be able to be substituted for their base classes. For example, this substitution can be done by providing factories, by using SysExtension, and by using simple construct methods.
@@ -109,6 +109,6 @@ The following external resources can help you make sure that you're writing clea
 
 + [SOLID Principles](https://en.wikipedia.org/wiki/SOLID)
 + [Pluralsight - Clean Code: Writing Code for Humans](https://www.pluralsight.com/courses/writing-clean-code-humans)
-+ [Clean Code: A Handbook of Agile Software Craftsmanship](https:://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
++ [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 + [Clean Coders](https://cleancoders.com/)
 + [Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)

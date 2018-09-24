@@ -5,7 +5,7 @@ title: Release a production order
 description: This procedure shows how to release a production order. 
 author: johanhoffmann
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

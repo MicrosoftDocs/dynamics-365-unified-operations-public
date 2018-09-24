@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Retail 7.3
 
 # Update code and environments for Retail projects
 
+[!include [banner](../../includes/banner.md)]
+
 An environment can be updated by updating either its data or its code.
 
 There are multiple ways to update the data. For examples that show how to get data into an environment, see [Data entities and data packages](../../dev-itpro/data-entities/integration-overview.md).
@@ -172,8 +174,8 @@ To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy 
     - **Platform update packages:** PUXX_MMDDYY, where XX is the number of the platform update
     - **Binary update packages:** BIN_MMDDYY
     - **X++ update packages:** APP_MMDDYY
-    - **Built X++ deployable packages:** AX_BRANCH_VERSION, where BRANCH is an appropriate branch name, and VERSION is the Microsoft Visual Studio Team Services (VSTS) version string
-    - **Built Retail combined package:** RET_BRANCH_VERSION, where BRANCH is an appropriate branch name, and VERSION is the VSTS version string
+    - **Built X++ deployable packages:** AX_BRANCH_VERSION, where BRANCH is an appropriate branch name, and VERSION is the Microsoft Azure DevOps version string
+    - **Built Retail combined package:** RET_BRANCH_VERSION, where BRANCH is an appropriate branch name, and VERSION is the Azure DevOps version string
 
 - Whenever you start a new item of work, use the **Get latest** option in the Visual Studio source code explorer.
 - Any code submissions should use correct and detailed comments that describe the change sets.
@@ -194,6 +196,6 @@ To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy 
 
 ## Additional resources
 
-[Set up new environments, Visual Studio Team Services, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
+[Set up new environments, Azure DevOps, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Testing and performance](./retail-implementation-testing-performance.md)

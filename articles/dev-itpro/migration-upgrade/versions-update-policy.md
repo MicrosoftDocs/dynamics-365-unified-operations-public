@@ -5,7 +5,7 @@ title: Software lifecycle policy and cloud releases
 description: This topic outlines the lifecycle and support policies for the Microsoft Dynamics 365 for Finance and Operations online service.
 author: RyanCCarlson2 
 manager: AnnBe
-ms.date: 09/12/2018
+ms.date: 09/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -77,6 +77,7 @@ For information about the new features included in each release, click the links
 
 | **Release**                                                                                                                                                  | **Build number**   | **Availability** | **Expiration date**        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|------------------|----------------------------|
+| [Platform update 20**](../../fin-and-ops/get-started/whats-new-platform-update-20.md)| 7.0.5030 | September 2018   | N/A (Continuously updated)   |
 | [Platform update 15*](../../fin-and-ops/get-started/whats-new-platform-update-15.md)| 7.0.4841 | March 2018   | N/A (Continuously updated)   |
 | [Platform update 12](../../fin-and-ops/get-started/whats-new-platform-update-12.md)                   | 7.0.4709           | November 2017    | November 2018              |
 | [Platform update 11](../../fin-and-ops/get-started/whats-new-platform-update-11.md)                   | 7.0.4679.35176     | October 2017     | October 2018               |
@@ -91,6 +92,8 @@ For information about the new features included in each release, click the links
 | [Platform update 2](../../fin-and-ops/get-started/whats-new-platform-update-2.md)                     | 7.0.4230.16130     | August 2016      | August 2017                |
 | [Platform update 1](../../fin-and-ops/get-started/whats-new-changed-platform-version-7-1-may-2016.md) | 7.0.4127.16103     | May 2016         | May 2017                   |
 | [Platform 7.0](../../fin-and-ops/get-started/whats-new-changed-7-0-february-2016.md)                  | 7.0.4030.16079     | February 2016    | January 2017               |
+
+\** Platform updates 16, 17, 18, and 19 have not been made generally available. 
 
 \* Platform updates 13 and 14 have not been made generally available. 
 

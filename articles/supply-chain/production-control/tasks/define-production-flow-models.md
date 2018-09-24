@@ -5,7 +5,7 @@ title: Define production flow models
 description: Production flow models describe how the capacity of lean manufacturing work cells is calculated and maintained. 
 author: cvocph
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

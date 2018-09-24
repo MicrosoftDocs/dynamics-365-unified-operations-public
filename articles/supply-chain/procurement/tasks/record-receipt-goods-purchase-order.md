@@ -5,7 +5,7 @@ title: Record the receipt of goods on the purchase order
 description: This procedure shows you how to record receipt of goods directly on a purchase order. 
 author: FrankDahl
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

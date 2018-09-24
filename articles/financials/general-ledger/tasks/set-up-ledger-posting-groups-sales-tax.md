@@ -5,7 +5,7 @@ title: Set up Ledger posting groups for sales tax
 description: Sales tax is calculated and posted to main accounts that are specified in the Ledger posting groups. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

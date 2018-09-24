@@ -5,7 +5,7 @@ title: View outbound planned intercompany demand
 description: This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

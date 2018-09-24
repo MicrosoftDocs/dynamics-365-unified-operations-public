@@ -5,7 +5,7 @@ title: FR-00004 Update method of payment on customer
 description: This procedure walks you through adding a bank account to a customer record in France and updating a method of payment for the same customer. 
 author: EvgenyPopovMBS
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

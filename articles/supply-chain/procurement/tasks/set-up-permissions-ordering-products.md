@@ -5,7 +5,7 @@ title: Set up permissions for ordering products on behalf of someone else
 description: This procedure shows how to grant workers permission to prepare purchase requisitions on behalf of other workers. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

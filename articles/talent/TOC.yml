@@ -6,6 +6,10 @@
     items:
     - name: What's new or changed
       items:
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 24, 2018)
+        href: whats-new-talent-september-24.md
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 17, 2018)
+        href: whats-new-talent-september-17-2018.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (September 10, 2018)
         href: whats-new-talent-september-10.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (August 2018)
@@ -26,6 +30,8 @@
       href: access-preview-feature.md
     - name: Configure the payroll integration between Talent and Dayforce
       href: configure-payroll-integration.md
+    - name: Get support for Talent
+      href: talent-support.md
   - name: Organize your workforce by using departments, jobs, and positions
     href: departments-jobs-positions.md
     items:

@@ -5,7 +5,7 @@ title: Generate Japan consumption tax report
 description: This procedure walks you through generating the Japan consumption tax report. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

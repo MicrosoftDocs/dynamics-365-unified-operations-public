@@ -5,7 +5,7 @@ title: Enable users to receive workflow-related email messages
 description: You can configure the system to send email messages to users when workflow-related events occur. 
 author: jasongre
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Calculate a BOM by using a single level structure (February 2016)
 description: This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -5,7 +5,7 @@ title: Register sales commissions
 description: This procedure shows you how sales commissions are calculated and registered. 
 author: omulvad
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

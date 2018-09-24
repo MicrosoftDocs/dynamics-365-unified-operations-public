@@ -5,7 +5,7 @@ title: Set up parameters for SPED EFD
 description: This topic explains how to set up parameters for SPED EFD for Brazil. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/27/2018
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,6 +29,8 @@ ms.dyn365.ops.version: 7.3
 ---
 
 # Set up parameters for SPED EFD - Contributions
+
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to specify parameters for SPED EFD - Contributions text files by using the **EFD – Contributions parameters** page.
 

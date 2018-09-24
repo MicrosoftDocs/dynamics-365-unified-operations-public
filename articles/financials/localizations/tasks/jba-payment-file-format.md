@@ -5,7 +5,7 @@ title: Enable the JBA payment file format
 description: In Japan, the Japanese Bankers Association (JBA) has specified a file format for electronic fund transfers (EFT). 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

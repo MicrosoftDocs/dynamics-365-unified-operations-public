@@ -5,7 +5,7 @@ title: Create and submit VAT report
 description: This procedure walks you through creating and submitting the VAT report to the German authority. 
 author: mrolecki
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

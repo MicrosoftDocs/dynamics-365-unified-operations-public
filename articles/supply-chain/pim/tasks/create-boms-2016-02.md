@@ -5,7 +5,7 @@ title: Create BOMs (February 2016)
 description: This task focuses on creating the bill of materials structure for a finished product and a semi-finished product. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

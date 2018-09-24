@@ -5,7 +5,7 @@ title: Register items for an advanced warehousing enabled item using an item arr
 description: This procedure shows you how to register items using the item arrival journal when you are using advanced warehouse management processes. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

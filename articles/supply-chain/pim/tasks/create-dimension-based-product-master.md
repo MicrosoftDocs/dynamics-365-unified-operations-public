@@ -5,7 +5,7 @@ title: Create a dimension-based product master
 description: This procedure shows how to create a new product master with dimension-based configuration technology. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 20
 
 # Write extensible enums
 
+[!include [banner](../includes/banner.md)]
+
 An enumeration (enum) is made extensible by setting the following enum properties:
 
 - Is Extensible = True

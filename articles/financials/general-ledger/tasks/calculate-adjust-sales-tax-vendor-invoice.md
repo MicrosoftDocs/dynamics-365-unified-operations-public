@@ -5,7 +5,7 @@ title: Calculate and adjust sales tax on a vendor invoice
 description: If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -27,7 +27,7 @@
       href: dev-tools/enable-development-machine.md
     - name: Development and build VMs that don't allow admin access FAQ
       href: sysadmin/VMs-no-admin-access.md
-    - name: Rename local environments to access Visual Studio Team Services
+    - name: Rename local environments to access Azure DevOps
       href: migration-upgrade/vso-machine-renaming.md
     - name: Development system requirements
       href: dev-tools/development-system-requirements.md
@@ -251,6 +251,8 @@
         href: extensibility/extensibility-changes-802.md
       - name: Extensibility changes version 8.0.3
         href: extensibility/extensibility-changes-803.md
+      - name: Extensibility changes version 8.0.4
+        href: extensibility/extensibility-changes-804.md
     - name: Fundamentals
       items:
       - name: Intrusive customizations
@@ -916,6 +918,8 @@
       href: gdpr/gdpr-lcs.md
   - name: Data validation checklist workspace
     href: user-interface/data-validation-workspace.md
+  - name: Data management error descriptions
+    href: data-entities/dm-error-descriptions.md
 - name: Continuous delivery
   href: dev-tools/continuous-delivery-home-page.md
   items:
@@ -1109,12 +1113,27 @@
         href: migration-upgrade/migrate-upgraded-cube-entity-store.md
       - name: Upgrade budget planning
         href: migration-upgrade/upgrade-budget-planning.md
+  - name: Migrate data from AX 2009 to Finance and Operations
+    href: migration-upgrade/data-migration-tool.md
+    items:
+    - name: AX 2009 migration - Install the Data migration tool
+      href: migration-upgrade/install-dmt.md
+    - name: AX 2009 migration - Generate maps
+      href: migration-upgrade/generate-maps.md
+    - name: AX 2009 migration - Create templates
+      href: migration-upgrade/create-package-templates-dmt.md
+    - name: AX 2009 migration - Create migration groups
+      href: migration-upgrade/create-definition.md
+    - name: AX 2009 migration - Export packages
+      href: migration-upgrade/ax2009-upgrade-export-package.md
+    - name: AX 2009 migration - Import packages
+      href: migration-upgrade/ax2009-upgrade-import-package.md
   - name: Code migration and upgrade
     href: migration-upgrade/code-migration-home-page.md
     items:
     - name: Prepare to migrate code
       href: migration-upgrade/prepare-migration.md
-    - name: Configure the Visual Studio Team Services mapping
+    - name: Configure the Azure DevOps mapping
       href: migration-upgrade/configure-vso-solution.md
     - name: Model split
       href: dev-tools/model-split.md
@@ -1248,7 +1267,7 @@
     href: lifecycle-services/complete-tasks-bpm.md
   - name: Work with activity diagrams in BPM libraries
     href: lifecycle-services/using-activity-diagrams.md
-  - name: Synchronize BPM libraries with Visual Studio Team Services
+  - name: Synchronize BPM libraries with Azure DevOps
     href: lifecycle-services/synchronize-bpm-vsts.md
   - name: Create user acceptance test libraries using task guides and BPM
     href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md

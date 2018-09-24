@@ -5,7 +5,7 @@ title: Split a fixed asset
 description: This task guide will split a percentage of one asset book to a new asset book. 
 author: saraschi2
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

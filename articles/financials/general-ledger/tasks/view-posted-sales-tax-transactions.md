@@ -5,7 +5,7 @@ title: View posted sales tax transactions
 description: You can view posted sales tax transactions from various page depending on what you need to view. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

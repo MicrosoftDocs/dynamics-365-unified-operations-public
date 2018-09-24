@@ -5,7 +5,7 @@ title: Create a record template to facilitate data entry
 description: This procedure demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. 
 author: margoc
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

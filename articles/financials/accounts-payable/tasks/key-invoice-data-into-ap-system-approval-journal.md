@@ -5,7 +5,7 @@ title: Key invoice data into AP system using approval journal
 description: This task guide will show you how to use the invoice register to create invoices and then use the approval journal to update the expense accounts. 
 author: abruer
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

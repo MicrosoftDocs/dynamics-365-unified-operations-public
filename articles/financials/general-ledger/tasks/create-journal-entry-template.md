@@ -5,7 +5,7 @@ title: Create a journal entry using template
 description: Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher. 
 author: aprilolson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

@@ -39,7 +39,9 @@ This topic explains how to configure the <strong>Code upgrade </strong>tile in L
 Overview
 --------
 
+
 The code upgrade tool operates by connecting to your Azure DevOps project, locating your Trunk\\Main branch, branching to a new branch which will be named as Releases\\\<version number\>, and then performing the code upgrade there. After this process is complete you can synchronize your Finance and Operations developer environment to this new branch under Releases\\\<version number\> and resolve conflicts. When you have compiled and tested your upgraded code you can merge the new branch back into Trunk\\Main, using source control explorer in Visual Studio and the process is complete.
+
 
 Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have have a plan to refactor your customizations into extensions. For more information, see the [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
 
@@ -52,6 +54,7 @@ For the code upgrade service to recognize your source code, your Azure DevOps pr
  - For Visual Studio project and solution files: /<DevOps project name>/Trunk/Main/Projects
  
  You can create new folders directly in the Azure DevOps web interface under **Repos**.
+ 
  
  > [!NOTE]
  > Folder names are case sensitive, that is, you must use Main and not MAIN, or the code upgrade service will not recognize the folder.
@@ -78,6 +81,7 @@ To connect to a Azure DevOps project, LCS is authenticated using a personal acce
 
 1. In your LCS project, go to the **Project settings** tile, select **Visual Studio Team Services**, and then select the **Setup Visual Studio Team Services** button. This configuration is needed by many LCS tools, if you have already configured LCS to connect to your Azure DevOps project, you can skip this section. 
 
+
    [![LCS VSTS setup](./media/lcs_vsts_setup.png)](./media/lcs_vsts_setup.png)
 
 2. Enter the root URL for your Azure DevOps account and the access token created earlier, and then click **Continue**.
@@ -91,10 +95,12 @@ To connect to a Azure DevOps project, LCS is authenticated using a personal acce
 
 ### Create an ax7.version file
 
+
 > [!NOTE]
 > If you are migrating from AX 2012, you can skip this step.
 
 The code upgrade tile in LCS automatically finds the version of Finance and Operations that you are migrating from, by reading the ax7.version file under the Main folder in your source control. You must create this file manually, either in Visual Studio or through the Azure DevOps web portal, as shown below. This file is not needed if you are migrating your code from Dynamics AX 2012 R3 or an earlier version. The version number entered here must be the application version (not the platform version). Take care to enter the correct version number here as entering an incorrect version number in this file may cause your code upgrade run to fail.
+
 
 [![ax7 version file](./media/ax7_versionfile.png)](./media/ax7_versionfile.png) 
 

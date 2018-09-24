@@ -41,7 +41,7 @@ In this topic, we describe how to build an entity for registered transactions th
 
 Imagine a scenario where we must expose all vendor invoice line transactions together with the financial dimensions that were applied through the distributions. Because easy consumption by a third-party tool is essential, we will create an entity for this scenario. As a result, the entity should not have to be joined with other related entities but should be able to provide value on its own.
 
-We will walk through the process of creating a sample entity to meet these requirements. (We will leave out instructions for integrating with Microsoft Visual Studio Team Services, because those steps are already well documented.)
+We will walk through the process of creating a sample entity to meet these requirements. (We will leave out instructions for integrating with Microsoft Azure DevOps, because those steps are already well documented.)
 
 ## Create a basic entity
 The first step is to create a new element in a project by selecting **New Item**. 

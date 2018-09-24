@@ -5,7 +5,7 @@ title: Create a main account
 description: This task guide steps through adding a main account to an existing chart of accounts. 
 author: aprilolson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 

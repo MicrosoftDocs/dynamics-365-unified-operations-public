@@ -5,7 +5,7 @@ title: Configure a worker using the mobile job device
 description: This procedure shows you how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
