@@ -129,19 +129,4 @@ After you put a fixed asset of the **Vehicle** or **Realty** type into operation
 
 12. Click **Post** \> **Post** to post the transaction.
 
-## Set up a division for a company and associate it with a vendor 
-
-Use the **Separate divisions** form to create a company division, and then associate the division with a vendor. If your company has several divisions, you must associate each division with a vendor.
-
-1.  Click **Organization administration** \> **Setup** \> **Separate divisions**.
-
-2.  Create a company division.
-
-3.  In the **Separate division ID** field, enter the identification code for the division.
-
-4.  In the **Name** field, enter the name of the division.
-
-5.  In the **Vendor account** field, select the vendor account number that is associated with the division.
-
-6.  Select the **Independent** check box to indicate that the selected division can report the tax declarations independently of the head office.
 
