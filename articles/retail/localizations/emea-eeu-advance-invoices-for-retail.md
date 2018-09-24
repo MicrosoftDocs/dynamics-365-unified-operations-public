@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 ---
 # Advance invoices for Retail for Eastern Europe
 
-[!include [banner](../../includes/banner.md)]
+This article contains information about Eastern European localization specific for the Retail industry, and applies to Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
 
 For some European countries (Poland, Hungary, Czech Republic), when you receive a prepayment from a customer via Point of Sale (POS), the prepayment must be registered for tax purposes and you must generate and print an advance invoice document that includes the prepayment amount. In Poland, advance invoice transactions must be posted in general ledger.
 
@@ -51,14 +51,20 @@ The following scenarios are supported:
 
 ## Set up advance invoices
 
-  1. Activate advance invoice creation.
-  2. Go to **Retail > Headquarters setup > Parameters > Retail parameters**.
-  3. Click **Customer orders**.
-  4. On the FastTab **Order**,  set the **Create advance invoice for deposit** option to **Yes**.
-  5. Define the parameters responsible for Advance invoice posting.
-  6. Go to **Accounts receivable > Setup > Accounts receivable parameters**.
-  7. Specify the **Posting profile**, **Sales tax group** and **Item sales tax group** on the **Advance invoice** FastTab on the **Updates** tab. If these fields are set correctly, the advance invoice will be posted. If these fields aren't specified, advance invoices will not post.
-  8. The Sales tax on prepayment journal voucher must not be posted if advance invoice posting is set to "ON". To verify that this requirement is met, complete the following steps.
+  1. Activate advance invoice creation. 
+  
+  - Go to **Retail > Headquarters setup > Parameters > Retail parameters**.
+  -  Click **Customer orders**.
+  -  On the FastTab **Order**,  set the **Create advance invoice for deposit** option to **Yes**.
+
+
+  2. Define the parameters responsible for Advance invoice posting. 
+
+  - Go to **Accounts receivable > Setup > Accounts receivable parameters**.
+  - Specify the **Posting profile**, **Sales tax group** and **Item sales tax group** on the **Advance invoice** FastTab on the **Updates** tab. 
+  If these fields are set correctly, the advance invoice will be posted. If these fields aren't specified, advance invoices will not post.
+
+  - The Sales tax on prepayment journal voucher must not be posted if advance invoice posting is set to "ON". To verify that this requirement is met, complete the following steps.
      1. On the **Accounts receivable parameters** page, click **Ledger and sales tax**. 
      2. On the **Payment** FastTab, be sure that the following fields are blank or set to "NO". 
         - **Sales tax on prepayment journal voucher**
