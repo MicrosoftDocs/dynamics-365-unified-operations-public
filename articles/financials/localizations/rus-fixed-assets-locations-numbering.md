@@ -43,7 +43,7 @@ You must define the location of the fixed asset before you acquire the fixed ass
 
 1.  Click **Fixed assets (Russia)** \> **Setup** \> **Location**.
 
-2.  Click **New** to create a fixed asset location.
+2.  Click the **New** button to create a fixed asset location.
 
 3.  In the **Location** and **Name** fields, enter a location code and a description for the location.
 
@@ -64,7 +64,7 @@ You must define the location of the fixed asset before you acquire the fixed ass
     
       - **Accounting** – The posting profile is grouped by the value model.
 
-9.  In the **Account elation** field, select the depreciation group, fixed asset, or value model that the posting profile is used for.
+9.  In the **Account relation** field, select the depreciation group, fixed asset, or value model that the posting profile is used for.
 
 10.  In the **Main account** field, select a ledger account to use to post the fixed asset transactions.
 
