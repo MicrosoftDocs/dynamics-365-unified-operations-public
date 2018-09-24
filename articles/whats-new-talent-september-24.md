@@ -56,7 +56,7 @@ These new options are part of the privileges for Terminate a worker and Terminat
 
 This release includes several additional bug fixes.
 
-## Known sssue
+## Known Issue
 
 -   **Issue:** When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out. **Workaround:** Before opening the attachment page, make sure that the fact
     boxes on the **Worker** page are closed. If the fact boxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled. (This issue will be fixed in the next platform update.)
