@@ -47,13 +47,13 @@ For instructions about how to download a hotfix, see [Download hotfixes from Lif
 ## Install the hotfix
 ### Before you begin
 
--   This article assumes that your packages folder is located at c:\\AOSService\\PackagesLocalDirectory. On some virtual machines (VMs), it might be located at c:\\Packages, i:\\AOSService\\PackagesLocalDirectory, or j:\\AOSService\\PackagesLocalDirectory.
+-   This topic assumes that your packages folder is located at c:\\AOSService\\PackagesLocalDirectory\\Bin. On some virtual machines (VMs), it might be located at c:\\Packages, i:\\AOSService\\PackagesLocalDirectory\\Bin, or k:\\AOSService\\PackagesLocalDirectory\\Bin.
 -   If you're not using Microsoft Azure DevOps or another source control system, create a backup of your packages folder (which is also known as the metadata store). We don't recommend that you do development unless you use Azure DevOps.
 -   If you have Azure DevOps or Microsoft Team Foundation Server (TFS) version control, make sure that there are no files in the **Pending Changes** list of your current workspace. If you have pending changes, we recommend that you submit them or shelve them before you install the metadata hotfix.
 
 ### Install the metadata hotfix package
 
-To invoke the installation of the metadata hotfix, you can call the SCDPBundleInstall.exe utility from a command prompt. SCDPBundleInstall.exe is located in your packages bin folder (c:\\AOSService\\PackagesLocalDirectory).
+To invoke the installation of the metadata hotfix, you can call the SCDPBundleInstall.exe utility from a command prompt. SCDPBundleInstall.exe is located in your packages bin folder.
 
 #### Without version control (not recommended)
 
