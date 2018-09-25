@@ -5,7 +5,7 @@ title: Create exchange rate providers in Finance and Operations version 8.0
 description: This topic explains how to set up an exchange rate provider in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).
 author: aolson
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -71,7 +71,7 @@ Here are the interfaces and classes that are shown in the illustration:
 Follow these steps to create an exchange rate provider. The code examples are taken from the **ExchangeRateProviderOanda** class.
 
 1. Use extensions to add a new value to the **ExchangeRateProvider** extensible enum to represent your new exchange rate provider.
-2. In your own development model, create a class that implements the **IExchangeRateProvider** interface.
+2. In your development model, create a class that implements the **IExchangeRateProvider** interface.
 
     ```
     using Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework;
