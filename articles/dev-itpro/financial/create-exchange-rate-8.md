@@ -71,7 +71,7 @@ Here are the interfaces and classes that are shown in the illustration:
 Follow these steps to create an exchange rate provider. The code examples are taken from the **ExchangeRateProviderOanda** class.
 
 1. Use extensions to add a new value to the **ExchangeRateProvider** extensible enum to represent your new exchange rate provider.
-2. In the **Currency** model, create a class that implements the **IExchangeRateProvider** interface.
+2. In your own development model, create a class that implements the **IExchangeRateProvider** interface.
 
     ```
     using Microsoft.Dynamics.ApplicationSuite.FinancialManagement.Currency.Framework;
