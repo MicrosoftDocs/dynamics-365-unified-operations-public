@@ -45,14 +45,14 @@ For scenarios that involve all these assets, a credit account is used. A credit 
 
 The cost of an acquired fixed asset might differ from the purchase cost. For example, the cost might be increased by the addition of miscellaneous charges per acquisition, such as charges for testing and commissioning work.
 
-Before you post a fixed asset acquisitions voucher, you must set up the depreciation parameters on the **Fixed asset value models** page (**Fixed assets \> Fixed assets \> Value models**). These parameters include the service life and the depreciation method.
+Before you post a fixed asset acquisitions voucher, you must validate the depreciation parameters on the **Fixed asset value models** page (**Fixed assets (Russia)** \> **Fixed assets** and on the Action Pane, select **Value models**). These parameters include the depreciation group, lifetime of FA group and the depreciation method.
 
 The following updates occur when you post a **Putting into operation** transaction:
 
 - A fixed asset model transaction of the **Putting into operation** type is created.
 - Voucher transactions of the **Fixed assets (Russia)** transaction type and the **Fixed assets (Russia), debit** posting type are created.
 - In the event of fixed asset assembly, inventory transactions that have an issue status of **Sold** are created.
-- The fixed asset balance is changed for every value model on the **Balance by FA** page (select **Fixed assets \> Value models**, and then select **Balance**).
+- The fixed asset balance is changed for every value model on the **Balance by FA** dialog box (select **Fixed assets (Russia), select **Value models** on the Action Pane, and then, on the **FA value models** page, on the Action Pane, select **Balance**).
 
 You can put one fixed asset, a group of fixed assets, or all fixed assets that have a status of **Bought** or **Scheduled** into operation.
 
@@ -98,17 +98,17 @@ Follow these steps to create transactions for several fixed assets at the same t
 5. On the Action Pane, select **Validate** \> **Validate** to validate the transactions.
 6. On the Action Pane, select **Post** \> **Post** to post the transactions.
 
-You can review posted transactions on the journal lines by selecting **Inquiries \> Transactions** on the Action Pane. From the **Value models** page, you can review posted transactions for each value model (**Fixed assets \> Value models \> Transactions**).
+You can review posted transactions on the journal lines by selecting **Inquiries \> Transactions** on the Action Pane. From the **Value models** page, you can review posted transactions for each value model (select **Fixed assets (Russia) \> Fixed assets**, select **Value models** on the Action Pane, and then, on the **FA value models** page, on the Action Pane, select **Transactions**).
 
 ## Create standard printing forms
 Follow these steps to create standard printing forms.
 
-1. In the fixed asset card, on the Action Pane, select **Documents**, and then select one of the following printing forms:
+1. In the fixed asset record, on the Action Pane, select **Documents**, and then select one of the following printing forms:
 
     - Inventory card (\#FA-6)
     - Equipment acceptance statement (\#FA-14)
 
-2. On the **FA transaction** page (**Fixed assets \> Value model \> Transactions**), select a transaction of the **Putting into operation** type. On the Action Pane, select **Documents**, and then select one of the following pairs of printing forms:
+2. On the **FA transaction** page (select **Fixed assets (Russia) \> Fixed assets**, select **Value models** on the Action Pane, and then, on the **FA value models** page, on the Action Pane, select **Transactions**), select a transaction of the **Putting into operation** type. On the Action Pane, select **Documents**, and then select one of the following pairs of printing forms:
 
     - **Acceptance report (\#FA-1)** and **Transference statement (\#FA-1)** – Acceptance of all fixed assets except buildings and encroachments.
     - **Acceptance report (\#FA-1a)** and **Transference statement (\#FA-1a)** – Acceptance of buildings and structures.
@@ -121,18 +121,16 @@ You can review all document records that are created at **Fixed assets (Russia)*
 ## Fixed asset assembly
 You can assemble a fixed asset from the inventory items and then put the fixed asset into operation. When an assembled asset is put into operation, components are issued from inventory, based on their current cost.
 
-1. Select **Fixed assets (Russia) \> Fixed assets**, and then, on the Action Pane, select **Componentry** to open the **Componentry** page (if the fixed asset has a status of **Bought** or **Scheduled**).
+1. Select **Fixed assets (Russia) \> Fixed assets**, and then, on the Action Pane, select **Componentry** to open the **Componentry** page (you could not enter componentry if the fixed asset has not the **Bought** or **Scheduled** status).
 2. In the upper pane, on the **Componentry** tab, select **Add**.
 3. In the **Item** field, select an item that the fixed asset is assembled from.
 4. In the **Quantity** field, enter the quantity of items that should be used to assemble the fixed asset.
 
-    The **Transaction date** field shows the date of the transaction after the fixed asset is put into operation.
+    The **Transaction date** field is filled automatically and shows the date of fixed putting into operation (transaction posting).
 
 5. On the **Inventory dimension** tab, specify the warehouse dimensions, configuration (if required), and so on, that are used to write off the item from inventory.
 
-    If a fixed asset is built from items that are bought in one purchase, select **From purchase**, and then, on the **Requisition** page, select the purchase that includes items for assembly.
-
-6. Select **Add**. All items that are included in the purchase are added to the **Componentry** page.
+    If a fixed asset is built from items that are bought in one purchase, on the **Componentry** tab, select **From purchase**. Then, in the **Requisition** dialog box, select the purchase that includes items for assembly and then on the Action pane, select the **Append**. All items, included in the purchase, are added to the **Componentry** page.
 7. Put the fixed asset into operation by using the Fixed asset journal (**Fixed asset (Russia)** \> **Journals** \> **FA journal**).
 
     > [!NOTE]
@@ -141,17 +139,14 @@ You can assemble a fixed asset from the inventory items and then put the fixed a
 ## Reverse acquisition transactions
 By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date. 
 
-1. Select **Fixed assets \> Fixed Assets \> Value models \> Transactions**. 
-2. Select **Reverse transaction**.
-
-    In the **Reverse transaction** dialog box, you can change the transaction reversal date as you require.
-
+1. 'Select **Fixed assets (Russia) \> Fixed assets**. On the Action Pane, select **Value models**. Then, on the **FA value models** page, on the Action Pane, select **Transactions** to open the **FA transactions** page'. 
+2. Select a transaction, and then, on the Action Pane, select **Reverse transaction**. In the **Reverse transaction** dialog box, you can change the transaction reversal date as you require.
 3. Select **OK**. A transaction to reverse the original transaction is created on the **FA transactions** page.
 4. Select **Voucher** to open the **Voucher transactions** page, where you can view the transactions in the ledger.
 
 When reverse transactions are posted for all value models, the status of the fixed asset is changed to **Scheduled** or **Bought**, depending on original status of the fixed asset.
 
-If a reversed fixed asset was put into operation with components, when reverse operations are posted, the items are returned to inventory at the same cost price that they were issued from inventory at when the **Putting into operation** transaction was posted. The inventory transactions are marked and, after inventory closing, have the same cost price.
+When reversse transaction with the **Putting into operation** type for the fixed asset, which has components, was put into operation, when reverse transaction are posted, the items are returned to inventory at the same cost price that they were issued from inventory at when the **Putting into operation** transaction was posted. The inventory transactions are marked and, after inventory closing, have the same cost price.
 
 > [!NOTE]
 > You can reverse **Putting into operation** transactions via the Fixed asset journal (**Fixed asset (Russia) \> Journals \> FA journal**).
