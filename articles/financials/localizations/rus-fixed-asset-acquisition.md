@@ -51,8 +51,8 @@ The following updates occur when you post a **Putting into operation** transacti
 
 - A fixed asset model transaction of the **Putting into operation** type is created.
 - Voucher transactions of the **Fixed assets (Russia)** transaction type and the **Fixed assets (Russia), debit** posting type are created.
-- In the event of fixed asset assembly, inventory transactions that have an issue status of **Sold** are created.
-- The fixed asset balance is changed for every value model on the **Balance by FA** dialog box (select **Fixed assets (Russia), select **Value models** on the Action Pane, and then, on the **FA value models** page, on the Action Pane, select **Balance**).
+- In the case of fixed asset assembly, inventory transactions that have an issue status of **Sold** are created.
+- The fixed asset balance is changed for every value model on the **Balance by FA** dialog box (select **Fixed assets (Russia)** \> **Fixed assets**, select **Value models** on the Action Pane, and then, on the **FA value models** page, on the Action Pane, select **Balance**).
 
 You can put one fixed asset, a group of fixed assets, or all fixed assets that have a status of **Bought** or **Scheduled** into operation.
 
