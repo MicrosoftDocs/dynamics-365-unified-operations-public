@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fixed asset acquisitions (putting into operation) (Russia)
+title: Fixed asset acquisitions for Russia
 description: This topic provides information about fixed asset acquisitions for Russia.
 author: anasyash
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Fixed asset acquisitions for Russia
+# Fixed asset acquisitions (putting into operation) (Russia)
 
 [!include [banner](../includes/banner.md)]
 
