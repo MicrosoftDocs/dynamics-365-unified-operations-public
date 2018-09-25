@@ -25,6 +25,7 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.1
+
 ---
 
 # Advance invoices for Retail for Eastern Europe
@@ -53,22 +54,28 @@ The following scenarios are supported:
 
 ## Set up advance invoices
 
-  1. Enable the advance invoice creation functionality. 
+### Enable the advance invoice creation functionality 
   
-  -  Go to **Retail > Headquarters setup > Parameters > Retail parameters**.
-  -  Click **Customer orders**.
-  -  On the FastTab **Order**,  set the **Create advance invoice for deposit** option to **Yes**.
+1. Go to **Retail > Headquarters setup > Parameters > Retail parameters**.
+2. Click **Customer orders**.
+3. On the FastTab **Order**,  set the **Create advance invoice for deposit** option to **Yes**.
 
-  2. Define the parameters responsible for Advance invoice posting. 
+### Define the parameters responsible for Advance invoice posting 
 
-  - Go to **Accounts receivable > Setup > Accounts receivable parameters**.
-  - Specify the **Posting profile**, **Sales tax group** and **Item sales tax group** on the **Advance invoice** FastTab on the **Updates** tab. 
-  If these fields are set correctly, the advance invoice will be posted. If these fields aren't specified, advance invoices will not post.
+1. Go to **Accounts receivable > Setup > Accounts receivable parameters**.
+2. Specify the **Posting profile**, **Sales tax group** and **Item sales tax group** on the **Advance invoice** FastTab on the **Updates** tab. If these fields are set correctly, the advance invoice will be posted. If these fields aren't specified, advance invoices will not post.
 
-  - The Sales tax on prepayment journal voucher must not be posted if advance invoice posting is set to **ON**. To verify that this requirement is met, complete the following steps.
-     1. On the **Accounts receivable parameters** page, click **Ledger and sales tax**. 
-     2. On the **Payment** FastTab, be sure that the following fields are blank or set to **NO**. 
-        - **Sales tax on prepayment journal voucher**
-        - **Posting profile with prepayment journal voucher**
-        - **Tax group for prepayment**
-        - **Item Sales tax group**
+### Turn off the posting of the sales tax on prepayment journal voucher
+
+The Sales tax on prepayment journal voucher must not be posted if advance invoice posting is set to **ON**. To verify that this requirement is met, complete the following steps.
+
+1. On the **Accounts receivable parameters** page, click **Ledger and sales tax**. 
+2. On the **Payment** FastTab, be sure that the following fields are blank or set to **NO**. 
+   - **Sales tax on prepayment journal voucher**
+   - **Posting profile with prepayment journal voucher**
+   - **Tax group for prepayment**
+   - **Item Sales tax group**
+
+## Additional resources
+
+- [Advance invoices for Easter Europe](../../financials/localizations/emea-advance-invoice.md)
