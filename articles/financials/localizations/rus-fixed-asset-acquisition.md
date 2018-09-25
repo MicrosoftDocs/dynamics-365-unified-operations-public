@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fixed asset acquisitions for Russia
+title: Acquiring fixed assets and putting them into operation (Russia)
 description: This topic provides information about fixed asset acquisitions for Russia.
 author: anasyash
 manager: AnnBe
-ms.date: 09/14/2018
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Fixed asset acquisitions (putting into operation) (Russia)
+# Acquiring fixed assets and putting them into operation (Russia)
 
 [!include [banner](../includes/banner.md)]
 
-The following depreciated property assets can be acquired (that is, put into operation):
+The following depreciated property assets can be acquired and put into operation.
 
 - Purchased assets
 - Assets that are obtained as a deposit in charter capital
@@ -41,18 +41,18 @@ The following depreciated property assets can be acquired (that is, put into ope
 - Unaccounted fixed assets that are discovered during inventory
 - Leased fixed assets and funds that are redeemed from a lessor
 
-For scenarios that involve all these assets, a credit account is used. A credit account provides several options for creating correction transactions in the ledger. To specify an account, manually create a transaction in the Fixed asset journal. Alternatively, on the **Posting profiles** page (**Fixed assets (Russia) \> Setup \> Posting profiles)**, configure the posting profiles for transactions for various types of fixed assets.
+For scenarios that involve all these assets, a credit account is used. A credit account provides several options for creating correction transactions in the ledger. To specify an account, manually create a transaction in the Fixed asset journal. Alternatively, on the **Posting profiles** page (**Fixed assets (Russia) > Setup > Posting profiles)**, configure the posting profiles for transactions for various types of fixed assets.
 
 The cost of an acquired fixed asset might differ from the purchase cost. For example, the cost might be increased by the addition of miscellaneous charges per acquisition, such as charges for testing and commissioning work.
 
-Before you post a fixed asset acquisitions voucher, you must validate the depreciation parameters on the **Fixed asset value models** page (**Fixed assets (Russia)** \> **Fixed assets** and on the Action Pane, select **Value models**). These parameters include the depreciation group, lifetime of FA group and the depreciation method.
+Before you post a fixed asset acquisitions voucher, you must validate the depreciation parameters on the **Fixed asset value models** page (**Fixed assets (Russia)** > **Fixed assets** and on the Action Pane, select **Value models**). These parameters include the depreciation group, lifetime of FA group and the depreciation method.
 
 The following updates occur when you post a **Putting into operation** transaction:
 
 - A fixed asset model transaction of the **Putting into operation** type is created.
 - Voucher transactions of the **Fixed assets (Russia)** transaction type and the **Fixed assets (Russia), debit** posting type are created.
 - In the case of fixed asset assembly, inventory transactions that have an issue status of **Sold** are created.
-- The fixed asset balance is changed for every value model on the **Balance by FA** dialog box (select **Fixed assets (Russia)** \> **Fixed assets**, select **Value models** on the Action Pane, and then, on the **FA value models** page, on the Action Pane, select **Balance**).
+- The fixed asset balance is changed for every value model on the **Balance by FA** dialog box (select **Fixed assets (Russia)** > **Fixed assets**, select **Value models** on the Action Pane, and then, on the **FA value models** page, on the Action Pane, select **Balance**).
 
 You can put one fixed asset, a group of fixed assets, or all fixed assets that have a status of **Bought** or **Scheduled** into operation.
 
@@ -65,7 +65,7 @@ There are two ways to acquire fixed assets (that is, put them into operation):
 
 Follow these steps to create transactions for one fixed asset by using the Fixed asset journal.
 
-1. Select **Fixed assets (Russia) \> Journals \> FA journal**.
+1. Select **Fixed assets (Russia) > Journals > FA journal**.
 2. Select **New** to create a fixed asset journal.
 3. In the **Name** field, select a journal name. In the **Description** field, enter a description for the journal.
 4. On the Action Pane, select **Lines** to open the **Journal voucher** page.
@@ -79,8 +79,8 @@ Follow these steps to create transactions for one fixed asset by using the Fixed
     > You can't change the value of the **Value model** field in this dialog box, because **Putting into operation** transactions are created for all value models at the same time.
 
 10. Select **OK**. The lines that have the **Putting into operation** transaction type for the value models, and that are registered in the fixed asset account, are created on the **Journal voucher** page.
-11. On the Action Pane, select **Validate** \> **Validate** to validate the transactions.
-12. On the Action Pane, select **Post** \> **Post** to post the transactions.
+11. On the Action Pane, select **Validate** > **Validate** to validate the transactions.
+12. On the Action Pane, select **Post** > **Post** to post the transactions.
 
     Fixed asset and ledger transactions are created. The fixed asset status is updated to **In operation**.
 
@@ -108,7 +108,7 @@ Follow these steps to create standard printing forms.
     - Inventory card (\#FA-6)
     - Equipment acceptance statement (\#FA-14)
 
-2. On the **FA transaction** page (select **Fixed assets (Russia) \> Fixed assets**, select **Value models** on the Action Pane, and then, on the **FA value models** page, on the Action Pane, select **Transactions**), select a transaction of the **Putting into operation** type. On the Action Pane, select **Documents**, and then select one of the following pairs of printing forms:
+2. On the **FA transaction** page (select **Fixed assets (Russia) > Fixed assets**, select **Value models** on the Action Pane, and then, on the **FA value models** page, on the Action Pane, select **Transactions**), select a transaction of the **Putting into operation** type. On the Action Pane, select **Documents**, and then select one of the following pairs of printing forms:
 
     - **Acceptance report (\#FA-1)** and **Transference statement (\#FA-1)** – Acceptance of all fixed assets except buildings and encroachments.
     - **Acceptance report (\#FA-1a)** and **Transference statement (\#FA-1a)** – Acceptance of buildings and structures.
@@ -116,12 +116,12 @@ Follow these steps to create standard printing forms.
 3. Select **New** to create the document record.
 4. Select **Print** to create the document as a Microsoft Excel file.
 
-You can review all document records that are created at **Fixed assets (Russia)** \> **Inquiries \> Documents**.
+You can review all document records that are created at **Fixed assets (Russia)** > **Inquiries > Documents**.
 
 ## Fixed asset assembly
 You can assemble a fixed asset from the inventory items and then put the fixed asset into operation. When an assembled asset is put into operation, components are issued from inventory, based on their current cost.
 
-1. Select **Fixed assets (Russia) \> Fixed assets**, and then, on the Action Pane, select **Componentry** to open the **Componentry** page (you could not enter componentry if the fixed asset has not the **Bought** or **Scheduled** status).
+1. Select **Fixed assets (Russia) > Fixed assets**, and then, on the Action Pane, select **Componentry** to open the **Componentry** page (you could not enter componentry if the fixed asset has not the **Bought** or **Scheduled** status).
 2. In the upper pane, on the **Componentry** tab, select **Add**.
 3. In the **Item** field, select an item that the fixed asset is assembled from.
 4. In the **Quantity** field, enter the quantity of items that should be used to assemble the fixed asset.
@@ -131,7 +131,7 @@ You can assemble a fixed asset from the inventory items and then put the fixed a
 5. On the **Inventory dimension** tab, specify the warehouse dimensions, configuration (if required), and so on, that are used to write off the item from inventory.
 
     If a fixed asset is built from items that are bought in one purchase, on the **Componentry** tab, select **From purchase**. Then, in the **Requisition** dialog box, select the purchase that includes items for assembly and then on the Action pane, select the **Append**. All items, included in the purchase, are added to the **Componentry** page.
-7. Put the fixed asset into operation by using the Fixed asset journal (**Fixed asset (Russia)** \> **Journals** \> **FA journal**).
+7. Put the fixed asset into operation by using the Fixed asset journal (**Fixed asset (Russia)** > **Journals** > **FA journal**).
 
     > [!NOTE]
     > By default, the cost of acquiring the fixed asset is calculated as the cost price of all components. However, you can modify the cost amount as you require.
@@ -139,7 +139,7 @@ You can assemble a fixed asset from the inventory items and then put the fixed a
 ## Reverse acquisition transactions
 By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date. 
 
-1. 'Select **Fixed assets (Russia) \> Fixed assets**. On the Action Pane, select **Value models**. Then, on the **FA value models** page, on the Action Pane, select **Transactions** to open the **FA transactions** page'. 
+1. 'Select **Fixed assets (Russia) > Fixed assets**. On the Action Pane, select **Value models**. Then, on the **FA value models** page, on the Action Pane, select **Transactions** to open the **FA transactions** page'. 
 2. Select a transaction, and then, on the Action Pane, select **Reverse transaction**. In the **Reverse transaction** dialog box, you can change the transaction reversal date as you require.
 3. Select **OK**. A transaction to reverse the original transaction is created on the **FA transactions** page.
 4. Select **Voucher** to open the **Voucher transactions** page, where you can view the transactions in the ledger.
