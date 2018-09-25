@@ -26,7 +26,9 @@ ms.author: v-kikozl
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.1
 ---
+
 # Advance invoices for Retail for Eastern Europe
+[!include [banner](../includes/banner.md)]
 
 This article contains information about Eastern European localization specific for the Retail industry. 
 
@@ -51,12 +53,11 @@ The following scenarios are supported:
 
 ## Set up advance invoices
 
-  1. Activate advance invoice creation. 
+  1. Enable the advance invoice creation functionality. 
   
-  - Go to **Retail > Headquarters setup > Parameters > Retail parameters**.
+  -  Go to **Retail > Headquarters setup > Parameters > Retail parameters**.
   -  Click **Customer orders**.
   -  On the FastTab **Order**,  set the **Create advance invoice for deposit** option to **Yes**.
-
 
   2. Define the parameters responsible for Advance invoice posting. 
 
