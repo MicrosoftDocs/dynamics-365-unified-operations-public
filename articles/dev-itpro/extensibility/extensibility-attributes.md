@@ -40,18 +40,16 @@ The following table provides an overview of the default support for extensibilit
 
 |   | Hookable | Wrappable | Replaceable |
 |---|----------|-----------|-------------|
-| **Protected** | Yes | Yes | No |
+| **Private** | No | N/A | N/A |
+| **Protected** | No | Yes | No |
 | **Public** | Yes | Yes | No |
-
-> [!NOTE]
-> Private methods are not extensible.
 
 ## Hookable
 If a method is hookable, extenders can subscribe to pre-events and post-events.
 
-For protected and public methods, you can opt out by adding **\[Hookable(false)\]** to the method.
+For public methods, you can opt out by adding **\[Hookable(false)\]** to the method.
 
-You can't opt in for private methods.
+You can opt in for private and protected methods by adding **\[Hookable(true)\]** to the method.
 
 ### Best practices when you write code
 When a method is hookable, the compiler generates extra intermediate language (IL) code to enable the method as an extension point. Although the extra code has performance overhead, this overhead is negligible in most cases. However, for performance-critical methods, consider marking the method as non-hookable.
