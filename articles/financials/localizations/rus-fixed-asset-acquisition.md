@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fixed asset acquisitions for Russia
+title: Fixed asset acquisitions (putting into operation) (Russia)
 description: This topic provides information about fixed asset acquisitions for Russia.
 author: anasyash
 manager: AnnBe
