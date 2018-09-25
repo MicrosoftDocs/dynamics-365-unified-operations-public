@@ -75,7 +75,3 @@ The Sales tax on prepayment journal voucher must not be posted if advance invoic
    - **Posting profile with prepayment journal voucher**
    - **Tax group for prepayment**
    - **Item Sales tax group**
-
-## Additional resources
-
-- [Advance invoices for Easter Europe](../../financials/localizations/emea-advance-invoice.md)
