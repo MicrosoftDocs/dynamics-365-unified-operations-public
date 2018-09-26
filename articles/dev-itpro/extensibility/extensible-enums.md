@@ -49,7 +49,7 @@ Because enum values are no longer controlled by the developer, there is no certa
 
 Also, look for any conversions between integers and enums. For example, modeled ranges in views and queries, and queries that are created from code by using comparisons, such as **\<** and **\>** or by using hardcoded integer values in comparisons.
 
-When the model and all dependent models are compiled, the comparisons and conversions to integers will be fladded by the compiler as errors.
+When the model and all dependent models are compiled, the comparisons and conversions to integers will be detected by the compiler as errors.
 	
 Make sure that logic where the enum values are used is extracted in **smaller methods**. In that way, an extension that uses Chain of Command (CoC) can handle the enum values that are added.
 
@@ -59,3 +59,8 @@ If the enum is used in **switch blocks**, avoid having default blocks that eithe
 When there are **long switch case blocks** or **if...else blocks** for the enum values, consider creating a class hierarchy to handle specific logic that is related to the enum. For an example, see the **PriceGroupTypeTradeAgreementMapping** class hierarchy.
 
 Use the **in** keyword for query ranges that use the enum values, and make the container that the **in** keyword uses extensible.
+
+## Potentially breakages
+Some enums require the elements to have a certain order or value, and cannot be made extensible. This could be status enums, where the values represent a logical progressive sequence, like: Draft, Approved, Completed, Archieved. It could also be enums where the values must have a fixed integral value to match another artifact, like another enum or a tabpage control's number.   
+
+Some enums have many elements. Enums support up to 250 elements. If your enum has many elements, say > 100, consider redesigning the solution instead of making the enum extensible. If the enum is extensible, then adding more elements in the future might break customers's combined solution as the addition might exceed the limit.
