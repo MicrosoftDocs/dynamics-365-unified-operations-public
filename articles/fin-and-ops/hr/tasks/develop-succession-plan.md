@@ -1,36 +1,36 @@
 --- 
 # required metadata 
  
-title: Develop a succession plan
+title: Develop succession plan
 description: As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person. 
 author: kherr75
 manager: AnnBe 
-ms.date: 11/01/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-talent 
+ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: HcmSkillMapping   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kherr
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Develop a succession plan
+# Develop succession plan
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person.  Skill mapping allows you to analyze your existing employees and applicants to see if they match the skill set of a valued employee. The demo data company used to create this procedure is USMF.
+As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person.  Skill mapping allows you to analyse your existing employees and applicants to see if they match the skill set of a valued employee. The demo data company used to create this procedure is USMF.
 
 1. Go to Human resources > Competencies > Skill analysis > Skill mapping profiles.
 2. Click New.
@@ -41,7 +41,7 @@ As your organization grows, and you consider succession planning, you may want t
 7. Click Person.
 8. In the Person field, type in a name, or select the drop down.  Example: Cassie Hicks.
 9. Click OK.
-10. Expand the certificates fast tab to view or edit the certificates included in the skill mapping.
+10. Exapnd the certificates fast tab to view or edit the certificates included in the skill mapping.
 11. Expand the Skills fast tab to view or edit the skills to be included.
 12. In the list, mark the first row.  Example:  Accounting
 13. Click the Optional checkbox.

@@ -69,6 +69,9 @@ The following table shows the POS views that currently support extensions. It al
 | SearchStockCountView            | No                            | Yes                          | No                                   |
 | StockCountDetailsView           | No                            | Yes                          | No                                   |
 | ResumeCartView                  | No                            | Yes                          | No                                    |
+| OrderFulfillmentView            | No                            | No                           | Yes                                   |
+| InventoryLookupMatrixView       | No                            | No                           | Yes                              |
+
 
 > [!NOTE]
 > The table shown above is updated based on the latest released version and hotfix. In earlier versions, some of these extension points will not be available.

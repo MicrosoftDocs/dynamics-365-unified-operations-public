@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Electronic transmission of VAT declaration (ELSTER) (Germany)
+title: DE-00003 Electronic transmission of VAT declaration (ELSTER)
 description: This procedure walks you through setting electronic tax declaration. 
 author: EvgenyPopovMBS
 manager: AnnBe 
-ms.date: 02/17/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: TaxElectronicDeclarationSetup, TaxElectronicCertificates, TaxElectronicHTTPServer   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Germany
 # ms.search.industry: 
 ms.author: epopov
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Electronic transmission of VAT declaration (ELSTER) (Germany)
+# DE-00003 Electronic transmission of VAT declaration (ELSTER)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Set up depreciation books 
+title: Set up depreciation books (May 2016)
 description: This task guide will create a new depreciation book and associate it with a fixed asset group. 
 author: saraschi2
 manager: AnnBe 
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,21 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: AssetDepBookTable, AssetGroupDepBookSetup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-
-# Set up depreciation books 
+# Set up depreciation books (May 2016)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
