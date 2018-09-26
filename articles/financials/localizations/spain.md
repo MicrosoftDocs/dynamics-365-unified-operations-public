@@ -36,6 +36,7 @@ This topic provides links to documentation resources for Spain.
 
 - [Apply cash discounts in the invoice](emea-esp-cash-discount-applied-invoice.md)
 - [Bill of exchange options](emea-esp-bill-of-exchange-options.md)
+- [Calculate due dates and report on the average period of payments](emea-esp-invoice-due-dates.md)
 - [Conditional sales tax](emea-esp-conditional-sales-tax.md)
 - [Credit invoicing](tasks/emea-esp-credit-invoicing.md)
 - [Fiscal data invoice account](emea-esp-fiscal-data-invoice-account.md)

@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Platform update 4
 
 # Develop email experiences by using the SysMailer framework
 
+[!include [banner](../includes/banner.md)]
+
 ## Sending emails
 
 The SysMailer framework is a new, extensible way to send email in Microsoft Dynamics 365 for Finance and Operations. It replaces all previous application programming interfaces (APIs) for mail, such as CDO.Messaging (SysMailer), MAPI (SysINetMail), and Outlook COM (SmmOutlookEmail). Those older mail APIs won't work correctly in Finance and Operations. By taking advantage of the SysPlugin framework and several .NET technologies, SysMailer provides a configurable experience for users and enables the application consumers to remain agnostic to the email option that users use to send email.

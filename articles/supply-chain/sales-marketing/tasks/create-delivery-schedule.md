@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Create a delivery schedule
+title: Create delivery schedule
 description: This procedure demonstrates how to create a delivery schedule for a sales order. 
 author: omulvad
 manager: AnnBe 
-ms.date: 02/09/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesDeliverySchedule, SalesEditLines,  SrsReportViewerForm   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Create a delivery schedule
+# Create delivery schedule
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

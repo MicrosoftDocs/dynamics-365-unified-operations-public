@@ -59,10 +59,12 @@ A customer can have multiple templates that have different frequencies.
 
 ## Generate the recurring invoices
 On the **Recurring invoices** page, there is a task that processes recurring invoice templates. You specify the invoice date and the template to generate the invoices from. Invoices will be generated and assigned a single recurrence ID number for each group of invoices that is processed.
+
 Post recurring free text invoices
 ---------------------------------
 
 After recurring invoices are generated, the invoice recurrence IDs appear in a posting task on the **Recurring invoices** page. You can view all of the invoices for a recurrence ID by clicking the link. During your review of the invoices for the recurrence ID, you can delete individual invoices. The customer's recurrence settings will be reset for that template, so that it can be regenerated later. You can post one, many, or all of the invoices for a recurrence ID. If workflows are enabled, you must click **Submit** before you can post the invoices.
+
 Print recurring free text invoices
 ----------------------------------
 
