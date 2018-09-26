@@ -42,10 +42,10 @@ This topic includes information and links to resources that should be considered
 
 ## Depreciation
 -   [Additional acquisition depreciation](emea-deu-additional-acquisition-depreciation.md)
--   [Depreciation adjustments for additional acquisitions in the second year](/tasks/de-00002-depreciation.md)
+-   [Depreciation adjustments for additional acquisitions in the second year](tasks/de-00002-depreciation.md)
 
 ## Electronic transmission of VAT declaration (ELSTER)
-- [Electronic transmission of VAT declaration (ELSTER)](/tasks/de-00003-electronic-transmission-elster.md)
+- [Electronic transmission of VAT declaration (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)
 - [Elster Testmerker (PDF download)](https://msdnshared.blob.core.windows.net/media/2018/04/Dyn365_ElsterTestmerker.pdf)
 
 ## Credit memos originating from sales

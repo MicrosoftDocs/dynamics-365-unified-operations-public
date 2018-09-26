@@ -3,9 +3,9 @@
 
 title: Copy Finance and Operations databases from Azure SQL Database to SQL Server environments
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
-author: maertenm
+author: laneswenka
 manager: AnnBe
-ms.date: 03/30/2018
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 203764
 ms.assetid: 45efdabf-1714-4ba4-9a9d-217143a6c6e0
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: maertenm
+ms.author: laswenka
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -82,7 +82,7 @@ Because of a technical limitation that is related to the certificate that is use
 | FiscalEstablishmentStaging.CSC                           | This field is used by the Data Import/Export Framework (DIXF). |
 | HcmPersonIdentificationNumber.PersonIdentificationNumber | Select **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, select **Identification numbers**. |
 | HcmWorkerActionHire.PersonIdentificationNumber           | This field has been obsolete since Microsoft Dynamics AX 7.0 (February 2016). It was previously in the **All worker actions** form (**Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions**). |
-| SysEmailSMPTPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
+| SysEmailSMTPPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
 | SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by AOS. It can be ignored. |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
 
@@ -124,7 +124,7 @@ declare
 @SQL varchar(1000)
 set quoted_identifier off
 declare changeTrackingCursor CURSOR for
-select 'ALTER TABLE ' + t.name + ' DISABLE CHANGE_TRACKING'
+select 'ALTER TABLE [' + t.name + '] DISABLE CHANGE_TRACKING'
 from sys.change_tracking_tables c, sys.tables t
 where t.object_id = c.object_id
 OPEN changeTrackingCursor
@@ -148,7 +148,7 @@ declare
 @userSQL varchar(1000)
 set quoted_identifier off
 declare userCursor CURSOR for
-select 'DROP USER ' + name
+select 'DROP USER [' + name + ']'
 from sys.sysusers
 where issqlrole = 0 and hasdbaccess = 1 and name <> 'dbo'
 OPEN userCursor
@@ -175,9 +175,14 @@ where name = 'TEMPTABLEINAXDB'
 TRUNCATE TABLE SYSSERVERCONFIG
 TRUNCATE TABLE SYSSERVERSESSIONS
 TRUNCATE TABLE SYSCORPNETPRINTERS
+TRUNCATE TABLE SYSCLIENTSESSIONS
+TRUNCATE TABLE BATCHSERVERCONFIG
+TRUNCATE TABLE BATCHSERVERGROUP
 --Remove records which could lead to accidentally sending an email externally.
 UPDATE SysEmailParameters
-SET SMTPRELAYSERVERNAME = ''
+SET SMTPRELAYSERVERNAME = '', MAILERNONINTERACTIVE = 'SMTP' --LANE.SWENKA 9/12/18 Forcing SMTP as Exchange provider can still email on refresh
+--Remove encrypted SMTP Password record(s)
+TRUNCATE TABLE SYSEMAILSMTPPASSWORD
 GO
 UPDATE LogisticsElectronicAddress
 SET LOCATOR = ''
@@ -264,7 +269,7 @@ CREATE USER axretailruntimeuser FROM LOGIN axretailruntimeuser
 EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
 EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
-CREATE USER axdeployextuser WITH PASSWORD = '<password from LCS>'
+CREATE USER axdeployextuser FROM LOGIN axdeployextuser
 EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
 
 CREATE USER [NT AUTHORITY\NETWORK SERVICE] FROM LOGIN [NT AUTHORITY\NETWORK SERVICE]
@@ -348,7 +353,7 @@ In the Finance and Operations client, enter the values that you documented for t
 | FiscalEstablishmentStaging.CSC                           | This field is used by DIXF. |
 | HcmPersonIdentificationNumber.PersonIdentificationNumber | Select **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, select **Identification numbers**. |
 | HcmWorkerActionHire.PersonIdentificationNumber           | This field has been obsolete since AX 7.0 (February 2016). It was previously in the **All worker actions** form (**Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions**). |
-| SysEmailSMPTPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
+| SysEmailSMTPPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
 | SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by AOS. It can be ignored. |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
 

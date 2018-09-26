@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Retail 7.3
 
 # Testing and performance issues
 
+[!include [banner](../../includes/banner.md)]
+
 This document describes practices and tools that are related to functional testing, performance testing, and performance troubleshooting.
 
 ## User acceptance testing
@@ -88,6 +90,6 @@ After you've completed a performance fix, you should verify the fix in a test en
 Any fix of a larger performance issue should be followed by a new performance test. Often, a large issue masks other smaller issues. After the top issue is resolved, the next issues can be found and worked on until the performance meets the customer's expectations.
 
 ## Additional resources
-[Set up new environments, Visual Studio Team Services, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
+[Set up new environments, Azure DevOps, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Update code and environments for Retail projects](./updating-environments.md)

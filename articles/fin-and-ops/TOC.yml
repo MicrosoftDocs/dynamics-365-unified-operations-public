@@ -44,6 +44,8 @@
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
+      - name: Platform update 20 (September 2018)
+        href: get-started/whats-new-platform-update-20.md
       - name: Finance and Operations version 8.0 (April 2018)
         href: get-started/whats-new-changed-8-0-April-2018.md
       - name: Platform update 15 (March 2018)
@@ -456,12 +458,18 @@
         href: ../financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
         href: ../financials/accounts-payable/invoice-matching-intercompany-purchase-orders.md
+      - name: Set up vendor invoice policies
+        href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+      - name: Record vendor invoice and match against received quantity
+        href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md  
       - name: Positive pay overview
         href: ../financials/accounts-payable/positive-pay-overview.md
       - name: Set up and generate positive pay files
         href: ../financials/accounts-payable/set-up-generate-positive-pay-files.md
       - name: Default offset accounts for vendor invoice journals and invoice approval journals
         href: ../financials/accounts-payable/default-offset-accounts-vendor-invoice-journals.md
+      - name: Vendor workflow
+        href: ../financials/accounts-payable/vendor-workflow.md
       - name: Resolve discrepancies during invoice totals matching
         href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
         items:
@@ -477,6 +485,10 @@
         href: ../financials/accounts-payable/vendor-portal-invoicing-workspace.md
       - name: Vendor invoice automation
         href: ../financials/accounts-payable/vendor-invoice-automation.md
+      - name: Broker contract management
+        href: ../financials/accounts-payable/broker-contract.md
+      - name: Royalty contract management
+        href: ../financials/accounts-payable/royalty-contract.md
       - name: Payments and settlements
         items:
         - name: Centralized payments for Accounts payable
@@ -517,6 +529,8 @@
           href: ../financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment.md
         - name: Vendor payments for a partial amount
           href: ../financials/accounts-payable/vendor-payments-partial-amount.md
+        - name: Vendor transactions list page
+          href: ../financials/accounts-payable/vendor-transaction-list-page.md
     - name: Accounts receivable
       href: ../financials/accounts-receivable/accounts-receivable.md
       items:
@@ -558,10 +572,6 @@
         href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
       - name: Process interest
         href: ../financials/accounts-receivable/tasks/process-interest.md
-      - name: Set up vendor invoice policies
-        href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
-      - name: Record vendor invoice and match against received quantity
-        href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
       - name: Create a customer invoice
         href: ../financials/accounts-receivable/configure-customer-invoices.md
       - name: Deposit customer payments
@@ -588,6 +598,8 @@
         href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Set up and generate accounts receivable aging information
         href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+      - name: Customer workflow
+        href: ../financials/accounts-receivable/customer-workflow.md
       - name: Payments and settlements
         items:
         - name: Customer payment overview
@@ -608,6 +620,8 @@
           href: ../financials/accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
           href: ../financials/accounts-receivable/customer-payments-partial-amount.md
+        - name: Customer transactions list page
+          href: ../financials/accounts-receivable/customer-transactions-list-page.md
     - name: Budgeting
       href: ../financials/budgeting/budgeting-overview.md
       items:
@@ -644,6 +658,8 @@
         href: ../financials/cash-bank-management/cash-discounts.md
       - name: Cash discounts for overpayments
         href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
+      - name: Manage IBAN account validation
+        href: ../financials/cash-bank-management/iban-validation.md
       - name: Settlement overview
         href: ../financials/cash-bank-management/settlement-overview.md
       - name: Settlement overview for centralized payments
@@ -1529,8 +1545,6 @@
           href: ../financials/localizations/emea-fiscal-service-integration.md
         - name: Fixed assets disposal for Estonia and Lithuania
           href: ../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md
-        - name: Foreign currency revaluation
-          href: ../financials/localizations/emea-foreign-currency-revaluation.md
         - name: Generate a transfer document for an internal inventory transfer
           href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
         - name: Generate an EU sales list report
@@ -1562,8 +1576,10 @@
           items:
           - name: Transfer transactions to the Intrastat
             href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
+          - name: Specify a lading address for an intra-community transaction
+            href: ../financials/localizations/tasks/eur-00002-specify-lading-address-intra-community.md
           - name: Generate an EU Intrastat declaration
-            href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md          
+            href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md
         - name: Inventory journal reports
           href: ../financials/localizations/emea-set-up-report-inventory-journal-names.md
         - name: Invoice issue deadlines
@@ -2088,6 +2104,8 @@
           href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
         - name: Fixed asset disposal functionality extension
           href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
+        - name: Foreign currency revaluation
+          href: ../financials/localizations/emea-foreign-currency-revaluation.md
         - name: Returnable packaging
           href: ../financials/localizations/emea-pol-returnable-packages.md
         - name: Sales tax reports
@@ -2102,6 +2120,10 @@
         items:
         - name: Set up bank accounts
           href: ../financials/localizations/rus-local-settings-requisites-bank-module.md      
+        - name: Create and post vendor invoices with advance holder details
+          href: ../financials/localizations/rus-daily-operations-handling-cash-closing-balance.md    
+        - name: Set up parameters for advance holders
+          href: ../financials/localizations/rus-registration-setup.md      
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
@@ -2121,6 +2143,8 @@
           href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
         - name: Bill of exchange options
           href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+        - name: Calculate due dates and report on the average period of payments
+          href: ../financials/localizations/emea-esp-invoice-due-dates.md
         - name: Conditional sales tax
           href: ../financials/localizations/emea-esp-conditional-sales-tax.md
         - name: Credit invoicing
@@ -3635,6 +3659,8 @@
         href: ../supply-chain/sales-marketing/tasks/register-sales-commissions.md
       - name: Set up sales commission rules
         href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
+    - name: Trade allowance
+      href: ../supply-chain/sales-marketing/trade-allowance.md 
   - name: Service management
     href: ../supply-chain/service-management/service-management-home-page.md
     items:

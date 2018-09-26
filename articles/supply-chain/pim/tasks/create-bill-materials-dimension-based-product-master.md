@@ -5,7 +5,7 @@ title: Create a bill of materials for a dimension-based product master
 description: For this procedure you should have completed the previous 4 guides in this sequence of eight recordings. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 11/03/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, BOMConsistOf, BOMTable, InventItemIdLookupSimple, HcmWorkerLookUp   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a bill of materials for a dimension-based product master
 
@@ -72,7 +72,7 @@ For this procedure you should have completed the previous 4 guides in this seque
 19. In the Item number field, enter or select a value.
     * Select Item number M0007 StandardCabinet as the last BOM line.  
 20. In the Configuration group field, enter or select a value.
-    * Select the Cabinet configuration group for the last BOM line.  
+    * Select the Cabinet configuration group for the laste BOM line.  
 
 ## Approve and activate
 1. Close the page.
