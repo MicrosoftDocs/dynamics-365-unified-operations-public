@@ -2118,6 +2118,8 @@
           href: ../financials/localizations/emea-pol-turnover-balances-statement.md
       - name: Russia 
         items:
+        - name: Set up bank accounts
+          href: ../financials/localizations/rus-local-settings-requisites-bank-module.md      
         - name: Create and post vendor invoices with advance holder details
           href: ../financials/localizations/rus-daily-operations-handling-cash-closing-balance.md    
         - name: Set up parameters for advance holders
