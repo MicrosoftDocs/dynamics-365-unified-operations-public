@@ -149,7 +149,36 @@ The **Advance report** will be printed in Microsoft Excel format.
 ## Advance holder turnover register
  
 An additional report **Advance holder turnover register** is available in **General ledger** \> **Inquiries and reports** \> **Turnover balance statement**.
-Use this procedure to print .
+
+When you generate this report, the following parameters are displayed. You can use these parameters to filter the data that will be displayed on the report. 
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>Field</p></th>
+<th><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>Worker ID</strong></p></td>
+<td><p>Select the identification number of the employee for whom the transaction settlements report is generated.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>To date</strong></p></td>
+<td><p>Select a date up to which the transactions are included on the report.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Real-time settlement</strong></p></td>
+<td><p>Select this check box to include real-time settlement transactions to the report.</p></td>
+</tr>
+</tbody>
+</table>
+
 
 1.  Click .
 
