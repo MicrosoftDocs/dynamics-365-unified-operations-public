@@ -71,7 +71,7 @@ The filter for showing open transactions has been replaced with a new filter tha
 - **All** – Show all transactions for the selected vendors (open and closed).
 - **Closed** – Show only transactions that have been fully settled and closed.
 - **Open** – Show only transactions that haven't been fully settled.
-- **Open as of date** – Show only transactions that haven't been fully settled as of a date that you specify. When you select this option, you can change the date that is shown next to the filter. Transactions that have a **Last settlement date** value after the date that you specify are shown in the list, even if those transactions are fully settled as of the current date. However, the balance represents the balances as of the current date, not as of the selected date.
+- **Open including closed on or after date** – Show only transactions that haven't been fully settled on or after a date that you specify. When you select this option, you can change the date that is shown next to the filter. Transactions that have a **Last settlement date** value on or after the date that you specify are shown in the list, even if those transactions are fully settled as of the current date. However, the balance represents the balances as of the current date, not as of the selected date.
 
 A filter has also been added that lets you hide currency translation transactions. Just select the **Hide currency revaluations** check box.
 
