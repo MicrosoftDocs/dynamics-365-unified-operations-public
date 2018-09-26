@@ -2116,6 +2116,10 @@
           href: ../financials/localizations/emea-pol-interest-calculation.md
         - name: Turnover balances statement
           href: ../financials/localizations/emea-pol-turnover-balances-statement.md
+      - name: Russia 
+        items:
+        - name: Set up parameters for advance holders
+          href: ../financials/localizations/rus-registration-setup.md      
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
