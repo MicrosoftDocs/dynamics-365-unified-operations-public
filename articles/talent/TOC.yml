@@ -49,9 +49,12 @@
       href: formalize-business-processes.md
     - name: Use workflows to manage employee information
       href: workflow-manage-employee-information.md
-    - name: Leave and absence management
-      href: leave-absence-overview.md
-  - name: Staff your organization
+ - name: Manage leave and absence
+    href: leave-absence-overview.md
+    items:
+    - name: Accrue time off based on hours worked
+      href: leave-accrue-hours-worked.md
+ - name: Staff your organization
     items:
     - name: Attract features and capabilities
       href: attract-overview.md
@@ -67,6 +70,9 @@
       href: create-variable-compensation-plans.md
     - name: Process compensation
       href: process-compensation.md
+
+    - name: Set up the components of a job
+      href: create-job.md
   - name: Develop and train employees
     items:
     - name: Performance management
