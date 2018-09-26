@@ -5,7 +5,7 @@ title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/25/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ This topic explains how administrators can export data entities from Microsoft D
 The BYOD feature lets administrators configure their own database, and then export one or more data entities that are available in Finance and Operations into it. (Currently, more than 1,700 data entities are available.) Specifically, this feature lets you complete these tasks:
 
 - Define one or more SQL databases that you can export entity data from Finance and Operations into.
-- Export either all the records (*full push*) or only the records that have changed (*incremental push*).
+- Export either all the records (*full push*) or only the records that have changed or been deleted (*incremental push*).
 - Use the rich scheduling capabilities of the Finance and Operations batch framework to enable periodic exports.
 - Access the entity database by using Transact-SQL (T-SQL), and even extend the database by adding more tables.
 
@@ -120,7 +120,7 @@ The **Compare source names** option lets you compare the entity schema in the de
 
 #### Configure change tracking
 
-Change tracking is a feature that is provided in SQL Server and SQL Database. Change tracking enables the database to track changes that are made on tables. The system uses change tracking to identify changes that are made to tables as transactions are performed in Finance and Operations.
+Change tracking is a feature that is provided in SQL Server and SQL Database. Change tracking enables the database to track changes including deletes that are made on tables. The system uses change tracking to identify changes that are made to tables as transactions in Finance and Operations.
 
 The **Change tracking** option on the **Publish** page lets you configure how changes are tracked on the underlying entity.
 
@@ -167,12 +167,15 @@ Because the first push is always a full push, we do not recomend that you do an 
 
 We recommend that you first enable change tracking and schedule a export job with incremental push. This will take care of the first full push and the subsequent incremental exports.
 
+### Timeouts
+The default timeouts for BYOD exports are set to ten minutes for truncation operations and one hour for actual bulk insert operations. When volumes are high, these timeout settings may not be sufficient and must be updated. Starting with the release of Platform update 18, you can update the timeout settings by navigating to **Data management** > **Framework parameters** > **Bring your own database**.
+
 ### Known limitations
 
 The BYOD feature has the following limitations.
 
-#### There should be no active sessions on your database during synchronization
-Because BYOD is your own database, you must ensure that there are no active sessions on your Azure SQL database when data is being synced from Finance and Operations. Having active sessions on your database during synchronization can results in SQL locks which in turn can cause in slow writes or even complete failure of exports to your Azure SQL database.
+#### There should be no active locks on your database during synchronization
+Because BYOD is your own database, you must ensure that there are no active locks on your Azure SQL database when data is being synced from Finance and Operations. Having active locks on your database during synchronization can result in slow writes or even failure to export to your Azure SQL database.
 
 #### Export data projects are specific to a single legal entity
 

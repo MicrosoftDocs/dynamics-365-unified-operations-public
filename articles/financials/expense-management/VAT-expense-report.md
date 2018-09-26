@@ -29,6 +29,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # VAT recovery in Expense management
 
+[!include [banner](../includes/banner.md)]
+
 To receive refunds on eligible value-added tax (VAT) transactions, a company or organization must identify, collect, verify, and submit accurate information. This process includes multiple tasks and, depending on the size of your company, can include several employees or roles.
 
 To recover VAT by using Expense management, the following prerequisites must be completed:

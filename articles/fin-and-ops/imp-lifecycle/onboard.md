@@ -46,7 +46,7 @@ The FastTrack team will contact all the partner and customer users in your LCS p
 - Tenant validation 
 - Introduction to LCS
 - Setup of LCS project users
-- Setup of Microsoft Visual Studio Team Services
+- Setup of Microsoft Azure DevOps
 - Subscription estimator/Usage profiler
 - Environment planning
 - Environment deployment

@@ -30,6 +30,9 @@ ms.dyn365.ops.version: Retail July 2017 update
 ---
 
 # Phased Rollout (N-1) installation, configuration, and cutover guide
+
+[!include [banner](../../includes/banner.md)]
+
 This topic explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components, such as Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) and Retail Server, or Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS), can work with Microsoft Dynamics 365 for Retail headquarters.
 
 ## Key terms

@@ -45,7 +45,7 @@ FAQ and guidelines
 - [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
 - [Testing and validations](../perf-test/testing-validation.md)
 - [PERF103: Introduction to the PerfSDK and multiuser testing with Visual Studio Online](../perf-test/perfsdk-tutorial.md)
-- [Integrate the Retail SDK with the continuous build system (VSTS)](../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [Integrate the Retail SDK with the continuous build system (Azure DevOps)](../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 
 ### Advanced topics in build automation
 - [Exclude test packages from the build output](exclude-test-packages.md)

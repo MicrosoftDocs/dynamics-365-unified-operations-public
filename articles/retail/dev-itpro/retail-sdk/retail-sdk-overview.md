@@ -260,7 +260,7 @@ As shown in the architecture diagram earlier in this article, several things dep
 
 A good ALM solution provides version control, builds, automated builds, planning tools, tracking tools, dashboards, customization, and more. The Retail SDK is organized in such a way that it supports these tasks. 
 
-[Visual Studio Team Services](/vsts/) is a great tool and is recommended.
+[Azure DevOps](/Azure DevOps/) is a great tool and is recommended.
 
 ### Branching and versioning
 

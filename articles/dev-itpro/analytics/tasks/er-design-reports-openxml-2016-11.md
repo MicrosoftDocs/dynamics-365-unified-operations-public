@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Design ER configurations to generate reports in OpenXML format
+title: ER Design a configuration for generating reports in OPENXML format (November 2016)
 description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating electronic documents in OPENXML format. 
 author: NickSelin
 manager: AnnBe 
-ms.date: 01/16/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERDataSourceAddDropDialog, ERModelGroupByFunctionEditor, VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Design ER configurations to generate reports in OpenXML format
+# ER Design a configuration for generating reports in OPENXML format (November 2016)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -38,7 +38,8 @@ In this example, you will create a configuration for sample company, Litware, In
 
 
 
-To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure. You must also download and save the Microsoft Excel file, [Template of Payment Report](https://go.microsoft.com/fwlink/?linkid=862266). 
+To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure. You must also have an Excel file which will be imported when creating the template. This file can be accessed from the [Template of Payment Report](https://go.microsoft.com/fwlink/?linkid=862266).
+
 
 ## Upload the Payments data model configuration
 1. Go to Organization administration > Workspaces > Electronic reporting.

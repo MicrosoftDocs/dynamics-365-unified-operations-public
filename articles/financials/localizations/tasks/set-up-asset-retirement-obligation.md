@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Set up asset retirement obligation documents and enter ARO amount on a fixed asset (Japan)
+title: Set up asset retirement obligation documents and enter ARO amount on a fixed asset
 description: For Japan, an asset retirement obligation (ARO) document identifies one type of asset retirement obligation. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 10/31/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: AssetRetirementObligationDocument_JP, AssetTable, AssetRetirementObligation_JP, AssetRetirementObligationLine_JP   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Set up asset retirement obligation documents and enter ARO amount on a fixed asset (Japan)
+# Set up asset retirement obligation documents and enter ARO amount on a fixed asset
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -65,7 +65,7 @@ This procedure was created using the demo data company JPMF.
 7. In the Book field, select the book of the fixed asset.
 8. In the Document ID field, select the ID of the asset retirement document to attach to the fixed asset.
 
-## Enter the asset retirement obligation amounts
+## Enter the asset retirement oblgiation amounts
 1. Click Create to open the drop dialog.
 2. In the Transaction date field, enter the date on which to recognize the asset retirement obligation
 3. In the Estimated retirement cost adjustment field, enter the cash flow amount

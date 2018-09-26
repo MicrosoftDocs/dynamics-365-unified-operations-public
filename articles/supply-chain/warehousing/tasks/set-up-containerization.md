@@ -5,7 +5,7 @@ title: Set up containerization
 description: This procedure describes how to automate the containerization of loads in Warehouse management. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 11/02/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Set up containerization
 
@@ -86,7 +86,7 @@ This procedure describes how to automate the containerization of loads in Wareho
 ## Set up a container group
 1. Go to Warehouse management > Setup > Containers > Container groups.
 2. Click New.
-    * You can set up logical groups of container types. For each group, you can specify the sequence in which to pack the containers and the percentage of the containers to fill. The size dimensions of the item is used to determine whether it will fit in a container. The container that is closest to the size dimensions of the item is used. If you have multiple container types in a group, we recommend that you arrange the sequence by size, so that the largest container is first, number 1 in the sequence, and the smallest container is last.    
+    * You can set up logical groups of container types. For each group, you can specify the sequence in which to pack the containers and the percentage of the containers to fill.The size dimensions of the item is used to determine whether it will fit in a container. The container that is closest to the size dimensions of the item is used. If you have multiple container types in a group, we recommend that you arrange the sequence by size, so that the largest container is first, number 1 in the sequence, and the smallest container is last.    
 3. In the Container group ID field, type a value.
 4. In the Description field, type a value.
 5. Click New.
@@ -111,7 +111,7 @@ This procedure describes how to automate the containerization of loads in Wareho
 6. In the Wave step code field, type a value.
 7. Select the Allow split picks check box.
 8. Click Save.
-9. Click Container mixing constraints.
+9. Click Containier mixing constraints.
     * Mixing logic breaks allows you to set up rules for packing allocation lines in containers. For example, if you add the Item number field, when items are assigned to containers, a new container will be created when there is a new item number. This is will prevent workers from packing allocations lines for two different customers in the same container.  
 10. Click New.
 11. In the Table field, select an option.

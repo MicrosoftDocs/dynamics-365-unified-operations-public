@@ -5,7 +5,7 @@ title: Data management package REST API
 description: This topic describes the data management framework's package REST API.
 
 author: Sunil-Garg
-ms.date: 03/30/2018
+ms.date: 08/31/2018
 manager: AnnBe
 ms.topic: article
 ms.prod: 
@@ -57,7 +57,8 @@ The data management framework's package API uses OAuth 2.0 for authorizing acces
 > [!NOTE]
 > When you use the Client Credentials Grant flow, Finance and Operations maintains an access control list. You can find the access control list at **System administration** \> **Setup** \> **Azure Active Directory applications**. The **Azure Active Directory applications** page shows the approved client IDs and the user security mapping that should be enforced when the API is called by using the Client Credentials Grant flow.
 >
-> For on-premises deployments, this list must have a valid client ID from AD FS.
+> For on-premises deployments, this list must have a valid client ID from AD FS. Also, for on-premise use, the <baseurl> in the following examples must also append /namespaces/AXSF when connecting to Dynamics 365 for Finance and Operations.
+
 
 ## Import APIs
 The following APIs are used to do file (data package) imports.
@@ -149,6 +150,9 @@ HTTP/1.1 200 OK
 | Parameter          | Description |
 |--------------------|-------------|
 | string executionId | The execution ID of the data import. |
+
+> [!NOTE]
+> ImportFromPacakge() uses a batch to perform the import. This means that parallel processing rules in data management must be used to perform parallel imports. ImportFromPackage() must not be called in parallel threads, as this will result in failure. 
 
 ## Export APIs
 The following APIs are used to do file (data package) exports.
@@ -277,6 +281,9 @@ Here are the possible values for the execution status:
 - PartiallySucceeded
 - Failed
 - Canceled
+
+> [!NOTE]
+> The file in the blob storage will remain in the storage for seven days, after which it will be automatically deleted.
 
 ## Import and export processes 
 The following illustration shows how the data management package methods can be used to import data packages.

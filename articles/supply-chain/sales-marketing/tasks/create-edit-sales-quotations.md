@@ -5,7 +5,7 @@ title: Create and edit sales quotations
 description: This procedure demonstrates how to create and update a sales quotation. 
 author: omulvad
 manager: AnnBe 
-ms.date: 11/03/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SalesQuotationTotals, SalesQuotationPriceSimulation, SalesQuotationEditLines, SrsReportViewerForm, smmSetNumSeqIfManual, CustTable, SalesTable   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: kfend
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create and edit sales quotations
 
@@ -54,7 +54,7 @@ This procedure demonstrates how to create and update a sales quotation. You can 
 15. Click Sales quotation line.
 16. Click Prices.
     * In the Run price simulation page you can experiment with adjusting the expected revenue or profitability of your quotation based on the desired unit price, discount amount, discount percentage, total amount, margin, or contribution ratio.   When you are satisfied with the target figures, you apply the suggestion to the quotation line, and its price-related fields will be updated accordingly.  
-    * You can create as many price simulations as you wish. When you click New, the price conditions from the current quotation line are copied to the page. You can then modify values in any of the price-related fields to the target ones. A change in one of the fields will trigger recalculation in all the other fields. In order for the system to calculate the sales margin and contribution ratio, the product's unit cost has to be known. Use the Simulated prices tab for a detailed view of the original prices, proposed changes and their effect on the quotation totals.   As a general rule, when a simulation that sets a new amount is applied to the quotation line, the system recalculates and enters a new value in the Unit price field. If the simulation is based on a new margin or a new contribution ratio, only the Net amount field is updated, and the Unit price is blank. In both cases, any discounts that were on the quotation line before simulation will be deleted.  
+    * Y ou can create as many price simulations as you wish. When you click New, the price conditions from the current quotation line are copied to the page. You can then modify values in any of the price-related fields to the target ones. A change in one of the fields will trigger recalculation in all the other fields. In order for the system to calculate the sales margin and contribution ratio, the product's unit cost has to be known. Use the Simulated prices tab for a detailed view of the original prices, proposed changes and their effect on the quotation totals.   As a general rule, when a simulation that sets a new amount is applied to the quotation line, the system recalculates and enters a new value in the Unit price field. If the simulation is based on a new margin or a new contribution ratio, only the Net amount field is updated, and the Unit price is blank. In both cases, any discounts that were on the quotation line before simulation will be deleted.  
 17. Close the page.
 18. On the Action Pane, click Quotation.
 19. Click Send quotation.
