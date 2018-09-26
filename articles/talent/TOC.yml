@@ -54,6 +54,8 @@
     items:
     - name: Accrue time off based on hours worked
       href: leave-accrue-hours-worked.md
+    - name: Working time calendars
+      href: working-time-calendars.md
  - name: Staff your organization
     items:
     - name: Attract features and capabilities
