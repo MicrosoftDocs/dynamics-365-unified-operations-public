@@ -5,7 +5,7 @@ title: Write extensible enums
 description: This topic provides information about how to write extensible enums.
 author: smithanataraj
 manager: AnnBe
-ms.date: 09/09/2018
+ms.date: 09/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ An enumeration (enum) is made extensible by setting the following enum propertie
 - Is Extensible = True
 - UseEnumValue = No
 
-If you set these properties, downstream implementors can extend the enum with more elements. The values of the elements are determined at deployment time and won't be identical across systems. However, the following behavior is guaranteed:
+If you set these properties, downstream implementors can extend the enum with more elements. The values of the elements are determined at deployment time and won't be identical across systems. However, the following behavior is ensured:
 
 + Data upgrade scripts aren't required. Enum values are persisted in the database, regardless of the enum that is extended. Therefore, when an enum is made extensible, the enum values that are used on any system will prevail.
 + The first element in the enum gets a value of 0 (zero). Therefore, an extensible enum can still be used with the **not** operator. The only exception is when the first element of the enum had a non-zero value before the enum was made extensible.
@@ -60,7 +60,7 @@ When there are **long switch case blocks** or **if...else blocks** for the enum 
 
 Use the **in** keyword for query ranges that use the enum values, and make the container that the **in** keyword uses extensible.
 
-## Potentially breakages
-Some enums require the elements to have a certain order or value, and cannot be made extensible. This could be status enums, where the values represent a logical progressive sequence, like: Draft, Approved, Completed, Archieved. It could also be enums where the values must have a fixed integral value to match another artifact, like another enum or a tabpage control's number.   
+## Potential issues
+Some enums require the elements to have a certain order or value, and cannot be made extensible. This could be status enums, where the values represent a logical progressive sequence, like: Draft, Approved, Completed, or Archived. It could also be enums where the values must have a fixed integral value to match another artifact, like another enum or a tabpage control's number.   
 
-Some enums have many elements. Enums support up to 250 elements. If your enum has many elements, say > 100, consider redesigning the solution instead of making the enum extensible. If the enum is extensible, then adding more elements in the future might break customers's combined solution as the addition might exceed the limit.
+Some enums have many elements. Enums support up to 250 elements. If your enum has many elements, such as more than 100, consider redesigning the solution instead of making the enum extensible. If the enum is extensible, then adding more elements in the future might break customers's combined solution as the addition might exceed the limit.
