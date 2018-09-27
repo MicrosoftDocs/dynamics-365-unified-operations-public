@@ -123,7 +123,7 @@ From the financial reports list, you can create a new report or modify an existi
 
 ## Additional resources
 - [View financial reports](view-financial-reports.md)
-- [Dynamics Financial Reporting blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
 
 
 
