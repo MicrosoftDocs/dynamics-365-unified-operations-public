@@ -5,7 +5,7 @@ title: Generate financial reports
 description: This topic provides information about generating a financial report.
 author: aprilolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 09/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
