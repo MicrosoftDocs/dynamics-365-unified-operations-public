@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 8.0.4
 
 International Bank Account Number (IBAN) account validation increases the amount of validation that is done when you add an IBAN to a bank account.
 
-The structure of the IBAN is stored in Microsoft Dynamics 365 for Finance and Operation, and is automatically loaded when you first use the IBAN on bank accounts. The bank account number is part of the structure defined for an IBAN number. Based on that structure, if the position and length of the account number in the IBAN don't match the position that is defined in the structure for each country or region, you will receive warning messages.
+The structure of the IBAN is stored in Microsoft Dynamics 365 for Finance and Operation, and is automatically loaded when you first use the IBAN on bank accounts. The bank account number and the bank routing number is part of the structure defined for an IBAN number. Based on that structure, if the position and length of the account number in the IBAN or the routing number in the IBAN don't match the position that is defined in the structure for each country or region, you will receive warning messages.
 
 ## Set up IBAN structures
 
@@ -49,6 +49,8 @@ The structure of the IBAN is stored in Microsoft Dynamics 365 for Finance and Op
 2. Create a bank account.
 3. On the **Additional information** FastTab, enter an IBAN.
 
-    If the position and length of the account number in the IBAN don't match the position that is defined in the structure for each country or region, you receive a message. You can't continue if the length of the IBAN doesn't match the length in the IBAN structure.
+    If the length of the IBAN doesn't match the length that is defined in the structure for each country or region, you receive a message. You can't continue if the length of the IBAN doesn't match the length in the IBAN structure.
 
     The validation also verifies that the bank account number matches the part of the IBAN that represents the bank account number. If the bank account number doesn't match, you receive a warning message. This message is only a warning. You can continue even if the bank account number doesn't match.
+
+    The validation also verifies that the bank routing number matches the part of the IBAN that represents the bank routing number. The routing number includes a bank number and often an additional bank branch. If the bank routing number doesn't match, you receive a warning message. This message is only a warning. You can continue even if the bank routing number doesn't match.
