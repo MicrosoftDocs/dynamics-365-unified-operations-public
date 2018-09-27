@@ -36,16 +36,14 @@ Before you can generate payment orders, you must complete the following setup:
 - Set up banks and bank accounts for the company. For more information, see <Local settings and requisites for Bank module><give here link to content deliverable location 148860>.
 - Set up vendor bank accounts and customer bank accounts:
 
-    1. In the customer or vendor card, select **Bank accounts**.
+    1. In the All customers or All vendors page, select **Bank accounts** on **VENDOR** tab.
     2. Create a bank account, and fill in all the required information.
-    3. For foreign customer bank accounts, on the **General** FastTab, in the **Foreign bank** section, in the **Bank groups** field, select the code of the foreign bank that the customer bank account is registered with. In the **Bank account number** field, enter the foreign bank account number for the account that receives payment returns. Finally, in the **SWIFT** field, enter the Society for Worldwide Interbank Financial Telecommunication (SWIFT) code of the bank that receives payment returns.
+    3. For foreign customer or vendor bank accounts, on the **General** FastTab, in the **Foreign bank** section, in the **Bank groups** field, select the code of the foreign bank that the customer bank account is registered with. In the **Bank account number** field, enter the foreign bank account number for the account that receives payments. Finally, in the **SWIFT** field, enter the Society for Worldwide Interbank Financial Telecommunication (SWIFT) code of the bank that receives payments.
 
     ![Vendor bank account](media/rus-vendor-bank-account-screenshot-5.jpg)
 
 - To generate payments to vendors, set up a method of payment at **Accounts payable \> Payment setup \> Methods of payment**. To generate payment returns to customers, set up a method of payment at **Accounts receivable \> Payment setup \> Methods of payment**.
-- To print payment orders in Russian rubles according to the old paper format, on the **Methods of payment** page, on the **File formats** FastTab, in the **Export format** field, select **Payment order in RUB**. To print payment orders in a foreign currency according to a bank-specific template, in the **Export format** field, select **Payment order in currency**. (The bank-specific template is defined in the bank account card.)
-
-    ![Payment order in RUB](media/rus-payment-order-rub-screenshot-3.jpg)
+- To print payment orders in Russian rubles according to the paper format, on the **Methods of payment** page, on the **File formats** FastTab, in the **Export format** field, select **Payment order in RUB**. To print payment orders in a foreign currency according to a bank-specific template, in the **Export format** field, select **Payment order in currency**. (The bank-specific template is defined in the bank account.)
 
 ## Generate a payment order in Russian rubles for a payment to a vendor
 
