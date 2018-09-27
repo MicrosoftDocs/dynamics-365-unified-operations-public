@@ -46,4 +46,6 @@ If this is not a data issue and the entity is expected to handle such cases, you
 ## There are field(s) which are not mapped to Entity &lt;EntityName&gt;
 It is a common practice to use the export functionality to generate the entity template file which can be later used for imports. However, while exporting the template, in fixed width format with 'First row header' set to 'No' (in source data formats set up), the exported template will not have the column names. When this file is imported, it will result in this error. 
 
+## Data package download - Error downloading data package for job ''. Record for Id - {GUID} not found
+One of the scenarios where this can happen is when the environment (say, a dev environment) points to the db in another environment (say, UAT) and the export job is run from the the source environment (which is dev in this exampple). The exported file gets uploaded to the blob storage associated with the source environment (dev, in this example). However, this job will also show up in the target environment (UAT in this example) since the db was shared. If a user tries to download the exported file by clicking the 'download file' option, this error will be thrown since the file does not exist in the blob storage of the target environment (UAT) from where the user is trying to download.
   
