@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 20
 
 # Breaking changes
 
+[!include [banner](../includes/banner.md)]
+
 When you make your solution extensible, you also help guarantee that you won't break the extension points later. A breaking change is any change that can break a consumer of your code.
 
 This topic lists some of the types of changes that can break your code. 

@@ -30,6 +30,8 @@ ms.search.validFrom: 2016-11-30
 
 # Set up and use PKWiU codes
 
+[!include [banner](../includes/banner.md)]
+
 The PKWiU code is used for tax purposes to categorize goods and services sold in Poland. It is included on all sales order invoices, free text invoices, and invoices posted from the Project module. You can view the PKWiU code in the project invoice and print the project invoice by using the **Invoice journals** form. You can also set up notifications for when a PKWiU code is missing from an invoice.
 
 To ensure that users include a PKWiU code on all invoices, select one of the following options in the **PKWiU code requirement** field on the **Accounts receivable parameters** page: 
