@@ -231,7 +231,7 @@ A table is created for every component that is withdrawn from the fixed asset co
 <th>Depreciation or revaluation amount, Acq(i)</th>
 <th>Fixed asset balance value at the time of depreciation or depreciation revaluation</th>
 <th>Component cost, S<sub>dst</sub>(i)</th>
-<th></th>
+<th>Depreciation after revaluation, A(i)</th>
 </tr>
 </thead>
 <tbody>
