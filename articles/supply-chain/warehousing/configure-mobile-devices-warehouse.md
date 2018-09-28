@@ -252,6 +252,10 @@ This option is useful when, for example, multiple pallets are staged for a load.
 <td>Cycle count grouping</td>
 <td>The worker selects a zone, work pool, or location, and Microsoft Dynamics 365 for Finance and Operations assigns work, based on the selection. If you select this option, you can click <strong>Cycle counting</strong> on the Action pane to specify additional information to display, and you can also specify the number of times that the worker must repeat the count if a difference is found.</td>
 </tr>
+ <tr class="odd">
+<td>Transport loading</td>
+<td>This feature allows several warehouse workers to load inventory form the same or different loads onto the same truck and the loads can then be fully or partially shipped.</td>
+</tr>
 </tbody>
 </table>
 
