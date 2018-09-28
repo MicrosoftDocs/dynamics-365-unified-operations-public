@@ -70,7 +70,7 @@ Customers that have Dynamics 365 for Retail deployed will see a single tle that 
    2. Application Version 7.x or 8.0 and greater Platform Update 4 - For customers that are on this combination, you will see all the 4 tiles listed above. This release will still have the granular X++ updates. Starting with Platform Update 4, no overlayering is allowed on the platform modules and hence Platform Binary Update tile is available that provides the platform updates as a cumulative update. 
 
   3. Application Version 7.x and less than Platform Update 4 - For customers that are on this combination, you will see 3 tiles - All X++ Updates, Critical X++ Updates and All binary updates. Since in this release platform can still be overlayered, there is no Platform binary update tile. 
- > [!NOTE]
+  > [!NOTE]
     > If you are on this release, you need to upgrade as soon as possible. 
    
 ## Download Binary updates
