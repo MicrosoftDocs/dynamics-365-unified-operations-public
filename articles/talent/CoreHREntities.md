@@ -1,4 +1,30 @@
 
+title: Core HR Entities in Common Data Service for Apps
+description: Core HR uses the Common Data Service (CDS) for Apps to enable extensibility and
+integration scenarios.
+author: jcart
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: jcart
+ms.search.validFrom: 2018-08-11
+ms.dyn365.ops.version: 
+---
 [!include [banner](includes/banner.md)]
 
 # Core HR and Common Data Service for Apps
