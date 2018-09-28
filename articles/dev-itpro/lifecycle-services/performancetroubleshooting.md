@@ -57,13 +57,13 @@ All SQL performance tools in LCS are available under the **SQL Insights** tab on
 
 - **Performance Metrics** – Shows the most expensive queries that were run in the system during the selected period, based on logical I/O, execution count, duration, CPU time, and wait count. This data is queried from the SQL query store. The data is retained for 30 days, and the tool runs its data collection every day at 10 PM Coordinated Universal Time (UTC). To use the tool, select a period during the last 30 days. When the query results appear, select the bar in the duration chart to highlight where the query falls on other metrics. On the **Statement** tab, view the query, or download the query execution plan.
 
-    [![sqlinsights](./media/perfmetrics.jpg)](./media/perfmetrics.jpg)
+    [![sqlinsights](./media/perfmetrics.JPG)](./media/perfmetrics.JPG)
 
 - **Index Analysis** - Shows aggregated index and table information, based on user scans, user seeks, user updates, and row count. Like performance metrics, this tool shows the trend for the selected index along with additional table metrics.
 
     [![sqlinsights](./media/IndexAnalysis.JPG)](./media/IndexAnalysis.JPG)
 
-# For details on queries shown on the Queries and Actions tab, check out the [Query cookbook](querycookbook.md).
+### For details on queries shown on the Queries and Actions tab, check out the [Query cookbook](querycookbook.md).
 
 ## How do I use this feature?
 
