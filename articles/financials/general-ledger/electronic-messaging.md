@@ -33,14 +33,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-
-
 This topic provides an overview and setup information for electronic messaging in Microsoft Dynamics 365 for Finance and Operations. Recent trends in requirements addressed to the reporting sphere from Government and legislative authority of different countries all over the world are aimed at implementing the possibility of obtaining data from companies registered in the country in electronic format directly from the systems were this data is
 accounted, stored and processed. Electronic Messages functionality (EM) supports different processes of electronical interoperation between Microsoft Dynamics 365 for Finance and Operations and systems offered by Governments and legislative authorities for reporting, submission and receiving official information.
 
 EM integrates with the Electronic Reporting (ER) module which allows you to set up electronic report formats. To learn about electronic reporting, see <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting>.
-
-## Main concept of the Electronic Messages functionality
 
 Electronic messaging is based on the following entities:
 
@@ -75,14 +71,14 @@ Electronic messaging is based on the following entities:
 
 -   Control the processing basing on different Message statuses and Message items statuses.
 
-## Setup Electronic Messages functionality
+## Set up electronic messaging
 
 **Electronic Messages** functionality is provided to maintain different processes of electronic reporting of different document types.
 
 Basically, features delivered by Microsoft may have a complex setup of EM functionality composed of combination of many different Message statuses, Message items statuses, Actions, Additional fields, Executable classes and soon. This is why for such features Microsoft deliver a package of data entities which includes predefined and tested setup data for a particular processing covering a feature. This package should be imported to a particular Legal entity
 via Data management tool. To know more about how to use Data management tool refer: <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages>.
 
-To get **Electronic Messages** functionality ready manually (without importing predefined setup via data entities) you need to set up the following menu items:
+To get **Electronic Messages** functionality ready manually (without importing predefined setup via data entities) you need to set up the following:
 
 -   Number sequence for Messages and Message items
 -   Message item types
