@@ -1,7 +1,7 @@
 ---
 # required metatadata
 
-title: Core HR Entities in Common Data Service for Apps
+title: Core HR entities in Common Data Service for Apps
 description: Core HR uses the Common Data Service (CDS) for Apps to enable extensibility and integration scenarios.
 author: jcart
 manager: AnnBe
@@ -34,16 +34,16 @@ ms.dyn365.ops.version:
 
 Core HR uses the Common Data Service (CDS) for Apps to enable extensibility and integration scenarios.
 
-For more information on CDS for Apps, see [What is Common Data Service for
-Apps?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro)
+For more information about CDS for Apps, see [What is Common Data Service for
+Apps](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro).
 
-The following Core HR entities are available in CDS for Apps:
+The following Core HR entities are available in CDS for Apps.
 
-## Benefit Entities
+## Benefit entities
 
-**Benefit Calculation Frequency**
+**Benefit calculation frequency**
 
-| **Fields**        | **Data Type** | **Required** | **Searchable** |
+| **Fields**        | **Data type** | **Required** | **Searchable** |
 |-------------------|---------------|--------------|----------------|
 | Description       | Text          |              | X              |
 | Frequency Control | Option set    | X            | X              |
@@ -51,18 +51,18 @@ The following Core HR entities are available in CDS for Apps:
 | Name              | Text          | X            | X              |
 
 
-**Benefit Calculation Rate**
+**Benefit calculation rate**
 
-| **Fields**  | **Data Type** | **Required** | **Searchable** |
+| **Fields**  | **Data type** | **Required** | **Searchable** |
 |-------------|---------------|--------------|----------------|
 | Description | Text          |              | X              |
 | Name        | Text          | X            | X              |
 | TierType    | Option set    | X            | X              |
 
 
-**Benefit Calculation Rate Detail**
+**Benefit calculation rate detail**
 
-| **Fields**                             | **Data Type**  | **Required** | **Searchable** |
+| **Fields**                             | **Data type**  | **Required** | **Searchable** |
 |----------------------------------------|----------------|--------------|----------------|
 | Benefit Calculation Rate Detail Number | Text           | X            | X              |
 | Calculation Rate ID                    | Lookup         | X            | X              |
@@ -73,9 +73,9 @@ The following Core HR entities are available in CDS for Apps:
 | WorkerDeduction                        | Decimal number |              | X              |
 
 
-**Benefit Type**
+**Benefit type**
 
-| **Fields**           | **Data Type** | **Required** | **Searchable** |
+| **Fields**           | **Data type** | **Required** | **Searchable** |
 |----------------------|---------------|--------------|----------------|
 | ConcurrentEnrollment | Option set    |              | X              |
 | Description          | Text          |              | X              |
@@ -83,9 +83,9 @@ The following Core HR entities are available in CDS for Apps:
 | PayrollCategory      | Option set    |              | X              |
 
 
-**Benefit Plan**
+**Benefit plan**
 
-| **Fields**                               | **Data Type**  | **Required** | **Searchable** |
+| **Fields**                               | **Data type**  | **Required** | **Searchable** |
 |------------------------------------------|----------------|--------------|----------------|
 | Arrear Limit Method                      | Option set     |              | X              |
 | Benefit Type                             | Lookup         | X            | X              |
@@ -113,7 +113,7 @@ The following Core HR entities are available in CDS for Apps:
 
 **Employment entity**
 
-| **Fields**                     | **Data Type**  | **Required** | **Searchable** |
+| **Fields**                     | **Data type**  | **Required** | **Searchable** |
 |--------------------------------|----------------|--------------|----------------|
 | Adjusted worker start date     | Date and Time  |              | X              |
 | Company                        | Lookup         | X            | X              |
@@ -122,7 +122,7 @@ The following Core HR entities are available in CDS for Apps:
 | Employment End Date            | Date and Time  |              | X              |
 | Employment Number              | Text           | X            | X              |
 | Employment Start Date          | Date and Time  |              | X              |
-| Laste Date Worked              | Date and Time  |              | X              |
+| Last Date Worked              | Date and Time  |              | X              |
 | Transition Date                | Date and Time  |              | X              |
 | Valid From                     | Date and Time  | X            | X              |
 | Valid To                       | Date and Time  |              | X              |
@@ -132,11 +132,11 @@ The following Core HR entities are available in CDS for Apps:
 | Worker Type                    | Option Set     | X            | X              |
 | Worker Unit of Notice          | Option Set     |              | X              |
 
-## Worker Entities
+## Worker entities
 
-**Ethnic Origin**
+**Ethnic origin**
 
-| **Fields**         | **Data Type** | **Required** | **Searchable** |
+| **Fields**         | **Data type** | **Required** | **Searchable** |
 |--------------------|---------------|--------------|----------------|
 | Description        | Text          |              | X              |
 | Ethnic Origin Name | Text          | X            | X              |
@@ -144,15 +144,15 @@ The following Core HR entities are available in CDS for Apps:
 
 **Language**
 
-| **Fields**    | **Data Type** | **Required** | **Searchable** |
+| **Fields**    | **Data type** | **Required** | **Searchable** |
 |---------------|---------------|--------------|----------------|
 | Description   | Text          |              | X              |
 | Language Name | Text          | X            | X              |
 
 
-**Veteran Status**
+**Veteran status**
 
-| **Fields**           | **Data Type** | **Required** | **Searchable** |
+| **Fields**           | **Data type** | **Required** | **Searchable** |
 |----------------------|---------------|--------------|----------------|
 | Description          | Text          |              | X              |
 | Is Protected Veteran | Two Option    |              | X              |
@@ -161,7 +161,7 @@ The following Core HR entities are available in CDS for Apps:
 
 **Worker**
 
-| **Fields**                | **Data Type** | **Required** | **Searchable** |
+| **Fields**                | **Data type** | **Required** | **Searchable** |
 |---------------------------|---------------|--------------|----------------|
 | Birthdate                 | Date Only     |              | X              |
 | Description               | Text          |              | X              |
@@ -203,9 +203,9 @@ The following Core HR entities are available in CDS for Apps:
 | Yomi Middle Name          | Text          |              | X              |
 
 
-**Worker Address**
+**Worker address**
 
-| **Fields**           | **Data Type**  | **Required** | **Searchable** |
+| **Fields**           | **Data type**  | **Required** | **Searchable** |
 |----------------------|----------------|--------------|----------------|
 | Address Number       | Text           | X            | X              |
 | Address Type         | Option Set     | X            | X              |
@@ -231,9 +231,9 @@ The following Core HR entities are available in CDS for Apps:
 | Worker               | Lookup         | X            | X              |
 
 
-**Worker Personal Detail**
+**Worker personal detail**
 
-| Fields                             | Data Type    | Required | Searchable |
+| Fields                             | Data type    | Required | Searchable |
 |------------------------------------|--------------|----------|------------|
 | Birth City                         | Text         |          | X          |
 | Birth Country or Region            | Option Set   |          | X          |
@@ -242,7 +242,7 @@ The following Core HR entities are available in CDS for Apps:
 | Deceased Date                      | Date Only    |          | X          |
 | Disabled Veteran Verification Date | Date Only    |          | X          |
 | Education                          | Text         |          | X          |
-| Ethinic Origin                     | Lookup       |          | X          |
+| Ethnic Origin                     | Lookup       |          | X          |
 | ExpatriateEndDate                  | Date Only    |          | X          |
 | ExpatriateStartDate                | Date Only    |          | X          |
 | Father Birth Country or Region     | Option Set   |          | X          |
@@ -263,9 +263,9 @@ The following Core HR entities are available in CDS for Apps:
 | Worker Personal Detail Number      | Text         | X        | X          |
 
 
-**Worker Bank Account**
+**Worker bank account**
 
-| **Fields**                 | **Data Type** | **Required** | **Searchable** |
+| **Fields**                 | **Data type** | **Required** | **Searchable** |
 |----------------------------|---------------|--------------|----------------|
 | Account Holder             | Text          |              | X              |
 | Account Identification     | Text          |              | X              |
@@ -301,11 +301,11 @@ The following Core HR entities are available in CDS for Apps:
 | Worker Bank Account Number | Text          |              | X              |
 | Worker Bank Account Number | Text          | X            | X              |
 
-## Position Entities
+## Position entities
 
-**Job Position**
+**Job position**
 
-| **Fields**               | **Data Type**  | **Required** | **Searchable** |
+| **Fields**               | **Data type**  | **Required** | **Searchable** |
 |--------------------------|----------------|--------------|----------------|
 | Activation               | Date and Time  |              | X              |
 | Available for Assignment | Date and Time  |              | X              |
@@ -322,18 +322,18 @@ The following Core HR entities are available in CDS for Apps:
 | Valid To                 | Date and Time  |              | X              |
 
 
-**Position Type**
+**Position type**
 
-| **Fields**         | **Data Type** | **Required** | **Searchable** |
+| **Fields**         | **Data type** | **Required** | **Searchable** |
 |--------------------|---------------|--------------|----------------|
 | Classification     | Option Set    |              | X              |
 | Description        | Text          |              | X              |
 | Position Type Name | Text          | X            | X              |
 
 
-**Position Worker Assignment**
+**Position worker assignment**
 
-| **Fields**                        | **Data Type** | **Required** | **Searchable** |
+| **Fields**                        | **Data type** | **Required** | **Searchable** |
 |-----------------------------------|---------------|--------------|----------------|
 | Job Position                      | Lookup        | X            | X              |
 | Position Worker Assignment Number | Text          | X            | X              |
@@ -341,11 +341,11 @@ The following Core HR entities are available in CDS for Apps:
 | Valid To                          |               |              | X              |
 | Worker                            |               | X            | X              |
 
-## Job Entities
+## Job entities
 
 **Job**
 
-| **Fields**                   | **Data Type**  | **Required** | **Searchable** |
+| **Fields**                   | **Data type**  | **Required** | **Searchable** |
 |------------------------------|----------------|--------------|----------------|
 | Allow unlimited positions    | Two Options    |              | X              |
 | Default Full Time Equivalent | Decimal Number |              | X              |
@@ -360,27 +360,27 @@ The following Core HR entities are available in CDS for Apps:
 | Valid To                     | Date and Time  |              | X              |
 
 
-**Job Function**
+**Job function**
 
-| **Fields**        | **Data Type** | **Required** | **Searchable** |
+| **Fields**        | **Data type** | **Required** | **Searchable** |
 |-------------------|---------------|--------------|----------------|
 | Description       | Text          | X            | X              |
 | Job Function Name | Text          | X            | X              |
 
 
-**Job Type**
+**Job type**
 
-| **Fields**    | **Data Type** | **Required** | **Searchable** |
+| **Fields**    | **Data type** | **Required** | **Searchable** |
 |---------------|---------------|--------------|----------------|
 | Description   | Text          | X            | X              |
 | Exempt Status | Option Set    | X            | X              |
 | Job Type Name | Text          | X            | X              |
 
-## Leave and Absence Entities
+## Leave and absence entities
 
 **Leave Enrollment**
 
-| **Fields**            | **Data Type** | **Required** | **Searchable** |
+| **Fields**            | **Data type** | **Required** | **Searchable** |
 |-----------------------|---------------|--------------|----------------|
 | Accrual Date Basis    | Date Only     | X            | X              |
 | Accrual Start Date    | Date Only     | X            | X              |
@@ -393,9 +393,9 @@ The following Core HR entities are available in CDS for Apps:
 | Worker                | Lookup        | X            | X              |
 
 
-**Leave Bank Transaction**
+**Leave bank transaction**
 
-| **Fields**                    | **Data Type**  | **Required** | **Searchable** |
+| **Fields**                    | **Data type**  | **Required** | **Searchable** |
 |-------------------------------|----------------|--------------|----------------|
 | Amount                        | Decimal Number | X            | X              |
 | Company                       | Lookup         | X            | X              |
@@ -408,9 +408,9 @@ The following Core HR entities are available in CDS for Apps:
 | Worker                        | Lookup         | X            | X              |
 
 
-**Leave Plan**
+**Leave plan**
 
-| **Fields**        | **Data Type** | **Required** | **Searchable** |
+| **Fields**        | **Data type** | **Required** | **Searchable** |
 |-------------------|---------------|--------------|----------------|
 | Accrual Frequency | Option Set    | X            | X              |
 | Company           | Lookup        | X            | X              |
@@ -420,9 +420,9 @@ The following Core HR entities are available in CDS for Apps:
 | Start Date        | Date Only     | X            | X              |
 
 
-**Leave Request**
+**Leave request**
 
-| **Fields**           | **Data Type** | **Required** | **Searchable** |
+| **Fields**           | **Data type** | **Required** | **Searchable** |
 |----------------------|---------------|--------------|----------------|
 | Comment              | Text          | X            | X              |
 | Company              | Lookup        | X            | X              |
@@ -432,9 +432,9 @@ The following Core HR entities are available in CDS for Apps:
 | Worker               | Lookup        | X            | X              |
 
 
-**Leave Request Detail**
+**Leave request detail**
 
-| **Fields**                  | **Data Type**  | **Required** | **Searchable** |
+| **Fields**                  | **Data type**  | **Required** | **Searchable** |
 |-----------------------------|----------------|--------------|----------------|
 | Amount                      | Decimal Number | X            | X              |
 | Leave Date                  | Date and Time  | X            | X              |
@@ -443,9 +443,9 @@ The following Core HR entities are available in CDS for Apps:
 | Leave Type                  | Lookup         | X            | X              |
 
 
-**Leave Type**
+**Leave type**
 
-| **Fields**      | **Data Type** | **Required** | **Searchable** |
+| **Fields**      | **Data type** | **Required** | **Searchable** |
 |-----------------|---------------|--------------|----------------|
 | Company         | Lookup        | X            | X              |
 | Description     | Text          |              | X              |
@@ -453,18 +453,18 @@ The following Core HR entities are available in CDS for Apps:
 | Leave Type Name | Text          | X            | X              |
 
 
-**Work Calendar**
+**Work calendar**
 
-| **Fields**  | **Data Type** | **Required** | **Searchable** |
+| **Fields**  | **Data type** | **Required** | **Searchable** |
 |-------------|---------------|--------------|----------------|
 | Company     | Lookup        | X            | X              |
 | Description | Text          |              | X              |
 | Name        | Text          | X            | X              |
 
 
-**Work Calendar Day**
+**Work calendar day**
 
-| **Fields**               | **Data Type** | **Required** | **Searchable** |
+| **Fields**               | **Data type** | **Required** | **Searchable** |
 |--------------------------|---------------|--------------|----------------|
 | Calendar Date            | Date Only     | X            | X              |
 | Company                  | Lookup        |              | X              |
@@ -473,17 +473,17 @@ The following Core HR entities are available in CDS for Apps:
 | Work Calendar Day Number | Text          | X            | X              |
 
 
-**Work Calendar Holiday**
+**Work calendar holiday**
 
-| **Fields**  | **Data Type** | **Required** | **Searchable** |
+| **Fields**  | **Data type** | **Required** | **Searchable** |
 |-------------|---------------|--------------|----------------|
 | Name        | Text          |              | X              |
 | Description | Text          | X            | X              |
 
 
-**Work Calendar Holiday Line**
+**Work calendar holiday line**
 
-| **Fields**                        | **Data Type** | **Required** | **Searchable** |
+| **Fields**                        | **Data type** | **Required** | **Searchable** |
 |-----------------------------------|---------------|--------------|----------------|
 | Holiday Date                      | Date Only     | X            | X              |
 | Name                              | Text          |              | X              |
@@ -491,9 +491,9 @@ The following Core HR entities are available in CDS for Apps:
 | Work Calendar Holiday Line Number | Text          | X            | X              |
 
 
-**Work Calendar Time Interval**
+**Work calendar time interval**
 
-| **Fields**                         | **Data Type** | **Required** | **Searchable** |
+| **Fields**                         | **Data type** | **Required** | **Searchable** |
 |------------------------------------|---------------|--------------|----------------|
 | Company                            | Lookup        |              | X              |
 | End Time                           | Whole Number  |              | X              |
@@ -506,7 +506,7 @@ The following Core HR entities are available in CDS for Apps:
 
 **Company**
 
-| **Fields**   | **Data Type** | **Required** | **Searchable** |
+| **Fields**   | **Data type** | **Required** | **Searchable** |
 |--------------|---------------|--------------|----------------|
 | Company code | Text          | X            | X              |
 | Name         | Text          | X            | X              |
@@ -514,7 +514,7 @@ The following Core HR entities are available in CDS for Apps:
 
 **Department**
 
-| **Fields**        | **Data Type** | **Required** | **Searchable** |
+| **Fields**        | **Data type** | **Required** | **Searchable** |
 |-------------------|---------------|--------------|----------------|
 | Department Number | Text          | X            | X              |
 | Description       | Text          |              | X              |
@@ -524,7 +524,7 @@ The following Core HR entities are available in CDS for Apps:
 
 **Currency**
 
-| **Fields**         | **Data Type**  | **Required** | **Searchable** |
+| **Fields**         | **Data type**  | **Required** | **Searchable** |
 |--------------------|----------------|--------------|----------------|
 | Currency Code      | Text           | X            | X              |
 | Currency Name      | Text           | X            | X              |
@@ -539,7 +539,7 @@ The following Core HR entities are available in CDS for Apps:
 
 **Pay cycle**
 
-| **Fields**  | **Data Type** | **Required** | **Searchable** |
+| **Fields**  | **Data type** | **Required** | **Searchable** |
 |-------------|---------------|--------------|----------------|
 | Description | Text          | X            | X              |
 | Frequency   | Option Set    | X            | X              |
@@ -548,7 +548,7 @@ The following Core HR entities are available in CDS for Apps:
 
 **Pay period**
 
-| **Fields**           | **Data Type** | **Required** | **Searchable** |
+| **Fields**           | **Data type** | **Required** | **Searchable** |
 |----------------------|---------------|--------------|----------------|
 | Default Payment Date | Date Only     |              | X              |
 | Description          | Text          |              | X              |
@@ -559,9 +559,9 @@ The following Core HR entities are available in CDS for Apps:
 | Status               | Option Set    |              | X              |
 
 
-**Payroll Earning Code**
+**Payroll earning code**
 
-| **Fields**              | **Data Type** | **Required** | **Searchable** |
+| **Fields**              | **Data type** | **Required** | **Searchable** |
 |-------------------------|---------------|--------------|----------------|
 | Description             | Text          | X            | X              |
 | Include in Payment Type | Option Set    | X            | X              |
@@ -571,9 +571,9 @@ The following Core HR entities are available in CDS for Apps:
 | Track FMLA Hours        | Two Options   |              | X              |
 
 
-**Tax Region**
+**Tax region**
 
-| **Fields**        | **Data Type** | **Required** | **Searchable** |
+| **Fields**        | **Data type** | **Required** | **Searchable** |
 |-------------------|---------------|--------------|----------------|
 | City              | Text          |              | X              |
 | Country or Region | Text          |              | X              |
@@ -582,18 +582,18 @@ The following Core HR entities are available in CDS for Apps:
 | State or Province | Text          |              | X              |
 
 
-**Benefit Calculation Frequency Pay Period**
+**Benefit calculation frequency pay period**
 
-| **Fields**                                      | **Data Type** | **Required** | **Searchable** |
+| **Fields**                                      | **Data type** | **Required** | **Searchable** |
 |-------------------------------------------------|---------------|--------------|----------------|
 | Benefit Calculation Frequency                   | Lookup        | X            | X              |
 | Benefit Calculation Frequency Pay Period Number | Text          | X            | X              |
 | Pay Period                                      | Lookup        | X            | X              |
 
 
-**Bank Account Disbursement**
+**Bank account disbursement**
 
-| **Fields**                       | **Data Type**  | **Required** | **Searchable** |
+| **Fields**                       | **Data type**  | **Required** | **Searchable** |
 |----------------------------------|----------------|--------------|----------------|
 | Amount                           | Currency       |              | X              |
 | Amount (Base)                    | Currency       |              | X              |
