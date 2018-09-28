@@ -38,26 +38,26 @@ ms.dyn365.ops.version: Talent
 
 This topic describes features that are either new or changed in Core HR.
 
-## Disable electronic payment validation
+## Turn off electronic payment validation
 
 Electronic payment information validation occurs if you set up disbursements for
-direct deposit either through ESS or directly on the employee form. This option
+direct deposit either through **Employee self-service** workspace (ESS) or directly on the employee form. This option
 gives you the flexibility to remove that validation if you do not require the
-validation checks for amounts and remainder values. This may be true if you are
+validation checks for amounts and remainder values. This feature is helpful if you're
 integrating with an external payroll system that has different requirements.
 
 ## Manager self-service - Add goals for team members through the Team performance goals tile
 
-Prior to this release managers can add goals to their employees individually
-through the performance goals associated to each employee. With this update
-managers can access the team’s performance goals tile and create new goals by
+Prior to this release, managers can add goals to their employees individually
+through the performance goals associated to each employee. With this update,
+managers can access the **Team performance goals** tile and create new goals by
 selecting any of their direct reports.
 
 ## Manager self-service - Add reviews for team members through the Team performance reviews tile
 
-Prior to this release managers can add reviews to their employees individually
-through the reviews associated to each employee. With this update managers can
-access the team’s performance reviews tile and create new reviews by selecting
+Prior to this release, managers can add reviews to their employees individually
+through the reviews associated to each employee. With this update, managers can
+access the **Team performance reviews** tile and create new reviews by selecting
 any of their direct reports.
 
 ## Configure proration options by leave plan
@@ -66,21 +66,21 @@ Organizations award time off differently based on when employees join and leave
 the company. For some organizations, employees are awarded their full allocation
 on their start date while others prorate the award. New options are provided in
 this release to choose how to prorate the awards and accruals for joiners and
-leavers in an organization. Options include: Prorated, Full accrual, No accrual.
+leavers in an organization. Options include: Prorated, Full accrual, and No accrual.
 
 ## Other changes
 
--   Employee entity updated: Personal title can now be updated using the excel
+-   Employee entity updated - The **Personal** title can now be updated using the Excel
     add-in/data management.
 
--   Security change to allow removal of the Delete and Deactivate buttons in
+-   Security change to allow removal of the **Delete** and **Deactivate** buttons in
     employee self-service for payment information.
 
-## Known Issue
+## Known issue
 
 -   **Issue:** When adding a new attachment to a worker, the **New** and
     **Edit** buttons are grayed out. **Workaround:** Before opening the
-    attachment page, make sure that the fact boxes on the **Worker** page are
-    closed. If the fact boxes are closed when the **Worker** page is loaded, the
-    attachments buttons will be enabled. (This issue will be fixed in the next
+    attachment page, make sure that the FactBoxes on the **Worker** page are
+    closed. If the FactBoxes are closed when the **Worker** page is loaded, the
+    **Attachments** buttons will be enabled. (This issue will be fixed in the next
     platform update.)
