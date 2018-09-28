@@ -1,6 +1,7 @@
-**Core HR and Common Data Service for Apps**
 
 [!include [banner](includes/banner.md)]
+
+# Core HR and Common Data Service for Apps
 
 Core HR uses the Common Data Service (CDS) for Apps to enable extensibility and
 integration scenarios.
