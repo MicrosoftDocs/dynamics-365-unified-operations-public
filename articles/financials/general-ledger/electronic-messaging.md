@@ -93,27 +93,29 @@ To get **Electronic Messages** functionality ready manually (without importing p
 
 :::row:::
     :::column:::
-        ### Message number sequence
+        ### Number sequences
     :::column-end:::
     :::column:::
         Message number sequence will be used for auto-numbering Messages. This is a unique identifier of a Message in the table.
         Open **General Ledger parameters** (**Tax > Setup > Parameters > General Ledger parameters**) and set up a non-continuous number        sequence for “Message” Reference. This number sequence will be used for numbering messages on their generation.
+        “Message items” number sequence will be used for auto-numbering Message items. This is a unique identifier of a Message item in         the table. Open **General Ledger parameters** (**Tax** \> **Setup** \> **Parameters** \> **General Ledger parameters**) and set         up a non-continuous number sequence for “Message items” Reference. This number sequence will be used for numbering
+        message items on their population from the source tables.
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        ### Message item types
+    :::column-end:::
+    :::column:::
+        Set up **Message item types** to identify which types of records will be used in Electronic messages.
+        To set up **Message item types**, open **Tax** \> **Setup** \> **Electronic messages** \> **Message item types**.
+        | **Field name**    | **Field description**                                                   |
+        |-------------------|-------------------------------------------------------------------------|
+        | Message item type | Enter a name for the Message item type (For example “Customer invoice”) |
+        | Description       | Enter a description of a Message item type.                             |
     :::column-end:::
 :::row-end:::
 
-### “Message” number sequence
-
-“Message” number sequence will be used for auto-numbering Messages. This is a unique identifier of a Message in the table.
-
-Open **General Ledger parameters** (**Tax > Setup > Parameters > General Ledger parameters**) and set up a non-continuous number sequence for “Message” Reference. This number sequence will be used for numbering messages on their generation.
-
-### “Message item” number sequence
-
-“Message items” number sequence will be used for auto-numbering Message items.
-This is a unique identifier of a Message item in the table.
-
-Open **General Ledger parameters** (**Tax** \> **Setup** \> **Parameters** \> **General Ledger parameters**) and set up a non-continuous number sequence for “Message items” Reference. This number sequence will be used for numbering
-message items on their population from the source tables.
 
 ### Message item types
 
