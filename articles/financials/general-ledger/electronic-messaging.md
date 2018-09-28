@@ -91,6 +91,16 @@ To get **Electronic Messages** functionality ready manually (without importing p
 -   Message processing actions
 -   Electronic message processing
 
+:::row:::
+    :::column:::
+        ### Message number sequence
+    :::column-end:::
+    :::column:::
+        Message number sequence will be used for auto-numbering Messages. This is a unique identifier of a Message in the table.
+        Open **General Ledger parameters** (**Tax > Setup > Parameters > General Ledger parameters**) and set up a non-continuous number        sequence for “Message” Reference. This number sequence will be used for numbering messages on their generation.
+    :::column-end:::
+:::row-end:::
+
 ### “Message” number sequence
 
 “Message” number sequence will be used for auto-numbering Messages. This is a unique identifier of a Message in the table.
