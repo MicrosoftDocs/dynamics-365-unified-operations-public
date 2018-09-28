@@ -353,7 +353,7 @@ The following table describes these options.
 <td>Select this option to let workers combine work for a sales order or load into a single work unit. A worker can perform work only for the sales order or load. This option is useful when, for example, you must increase a quantity for a sales order after the load, shipment, and work have been created for the sales order. This option is available when the menu item uses existing work, and the work is directed by the user or system.</td>
 </tr>
 <tr class="even">
-<td>None</td>
+<td>Pick oldest batch</td>
 <td>Indicate whether the worker must pick the oldest batch in a location first. The following options are available:
 <ul>
 <li><strong>None</strong> – The worker can pick any batch in the location. The worker receives no message.</li>
