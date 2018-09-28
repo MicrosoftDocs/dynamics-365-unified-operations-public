@@ -41,9 +41,6 @@ You can rename folders, reports, building blocks, and other objects in report de
 ## Rename a folder or building block in Report Designer
 In Report Designer, you can rename folders, report definitions, row definitions, column definitions, and reporting tree definitions.
 
-> [!NOTE]
-> When you rename a building block, you must update any reporting definitions that use the building block. Otherwise, a new report can't be generated.
-
 ### Rename a folder or building block in Report Designer
 
 1. In Report Designer, use the navigation pane to locate the folder or object to rename.

@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Talent September 10, 2018 update
 
 # Get support for Talent
 
+[!include [banner](includes/banner.md)]
+
 This topic explains how to get help with Talent: Core HR, Attract and Onboard.
 
 Contact support

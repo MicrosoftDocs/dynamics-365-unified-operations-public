@@ -135,6 +135,8 @@ GET https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/dequeue/%7BC03
 
 After the client downloads the data, an acknowledgment must be sent back to Finance and Operations, so that you can mark the data as received.
 
+In cases when there was no file uploaded to the blob, the dequeue API will return a response indicating as such.
+
 ### API for acknowledgment
 Use the following API.
 

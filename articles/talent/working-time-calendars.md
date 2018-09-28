@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # Working time calendars
 
+[!include [banner](includes/banner.md)]
+
 The working time calendar enables you to create a calendar with the hours and days that employees work in your organization. Calendars streamline the time off request process by default in the hours or days. When an employee submits a time off request, they don't have to worry about holidays and closures, which is handled for them through the working time calendar.
 
 ## Setting up a working time calendar

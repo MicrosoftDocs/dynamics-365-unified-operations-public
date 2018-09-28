@@ -42,7 +42,7 @@ To configure tax integration for China, complete the following tasks.
 
 1.  Create a new VAT invoice description on the **VAT invoice description** page. For example, you may need to set  the following parameters:
     -   **VAT invoice description ID** to InvoiceDescID01
-    -   **Description** to 详见销售清单
+    -   **Description** to 设备
     -   **Unit** to Box
 
 2.  Create a new tax integration profile on the **Tax integration profiles** page. You can set up tax integration profiles to use when invoices are imported or exported. In the tax integration profile, you can specify the following:
