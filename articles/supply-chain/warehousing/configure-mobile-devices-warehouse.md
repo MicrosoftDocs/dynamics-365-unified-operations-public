@@ -2,10 +2,10 @@
 # required metadata
 
 title: Set up mobile devices for warehouse work
-description: This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
+description: This topic describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
+This topic describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 
-**Note:** This article applies to features in Warehouse management. It doesn't apply to features in Inventory management. The menu items that appear on the menus on a warehouse mobile device are configured on the **Mobile device menu items** page. Because the menu items can be put onto different menus, it's easy to configure menu structures so that only specific types of work are exposed to specific users. You can configure menu items to perform the following tasks:
+**Note:** This topic applies to features in Warehouse management. It doesn't apply to features in Inventory management. The menu items that appear on the menus on a warehouse mobile device are configured on the **Mobile device menu items** page. Because the menu items can be put onto different menus, it's easy to configure menu structures so that only specific types of work are exposed to specific users. You can configure menu items to perform the following tasks:
 
 -   Process an inquiry or perform an activity, such as printing a label, generating license plate numbers, starting a production order, or quickly looking up information about items in a location.
 -   Create work that will be performed through another process. For example, receiving an item for a purchase order can create put-away work for another worker.
@@ -254,7 +254,7 @@ This option is useful when, for example, multiple pallets are staged for a load.
 </tr>
  <tr class="odd">
 <td>Transport loading</td>
-<td>This feature allows several warehouse workers to load inventory form the same or different loads onto the same truck and the loads can then be fully or partially shipped.</td>
+<td>This feature allows several warehouse workers to load inventory from the same or different loads onto the same truck, with loads that are fully or partially shipped.</td>
 </tr>
 </tbody>
 </table>
