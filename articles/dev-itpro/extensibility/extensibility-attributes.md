@@ -36,13 +36,15 @@ ms.dyn365.ops.version: Platform update 20
 
 This topic describes the various attributes that can be used to control extensibility capabilities for methods.
 
-The following table provides an overview of the default support for extensibility on methods.
+The following table provides an overview of the default support for extensibility and accessibility on methods. The table also provides guidance on the method signature changes.
 
-|   | Hookable | Wrappable | Replaceable |
-|---|----------|-----------|-------------|
-| **Private** | No | N/A | N/A |
-| **Protected** | No | Yes | No |
-| **Public** | Yes | Yes | No |
+|   | Hookable | Wrappable | Replaceable | Accessibility | Signature | 
+|---|----------|-----------|-------------|---------------|-----------|
+| **private** | No | N/A | N/A | Accessible from within class it is defined in. | Signature can be changed |
+| **protected internal** | No | Yes | No | Accessible from with the class it is defined and from derived classes in the same model | Signature can be changed |
+| **internal** | No | N/A | N/A | Accessible from within the class it is defined in. | Signature can be changed |
+| **protected** | No | Yes | No | Accessible from with the class it is defined and from derived classes | Signature must remain compatibled |
+| **public** | Yes | Yes | No | Accessible from within the class it is defined, derived classes, and other classes that have access to the defining class | Signature must remain compatible |
 
 ## Hookable
 If a method is hookable, extenders can subscribe to pre-events and post-events.
@@ -50,6 +52,9 @@ If a method is hookable, extenders can subscribe to pre-events and post-events.
 For public methods, you can opt out by adding **\[Hookable(false)\]** to the method.
 
 You can opt in for private and protected methods by adding **\[Hookable(true)\]** to the method.
+
+## Final keyword
+Methods adorned with the **final** keyword can't be overridden, are not hookable, and are not wrappable.
 
 ### Best practices when you write code
 When a method is hookable, the compiler generates extra intermediate language (IL) code to enable the method as an extension point. Although the extra code has performance overhead, this overhead is negligible in most cases. However, for performance-critical methods, consider marking the method as non-hookable.
@@ -104,3 +109,5 @@ The general rule is that \[Hookable\] is required by \[Wrappable\], which is req
 | **\[Wrappable(false)\]** | Maybe, depending on whether the method is hookable (see the table earlier in this topic) | No | No |
 | **\[Replaceable(true)\]** | Yes | Yes | Yes |
 | **\[Replaceable(false)\]** | Maybe, depending on whether the method is hookable (see the table earlier in this topic) | Maybe, depending on whether the method is wrappable (see the table earlier in this topic) | No |
+
+
