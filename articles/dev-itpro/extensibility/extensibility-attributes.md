@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 20
 
 This topic describes the various attributes that can be used to control extensibility capabilities for methods.
 
-The following table provides an overview of the default support for extensibility and accessibility on methods. It also provides guidance on the method signature changes.
+The following table provides an overview of the default support for extensibility and accessibility on methods. The table also provides guidance on the method signature changes.
 
 |   | Hookable | Wrappable | Replaceable | Accessibility | Signature | 
 |---|----------|-----------|-------------|---------------|-----------|
@@ -53,8 +53,8 @@ For public methods, you can opt out by adding **\[Hookable(false)\]** to the met
 
 You can opt in for private and protected methods by adding **\[Hookable(true)\]** to the method.
 
-## final keyword
-Methods adorned with the 'final' keyword cannot be overridden, are not hookable, and are not wrappable.
+## Final keyword
+Methods adorned with the **final** keyword can't be overridden, are not hookable, and are not wrappable.
 
 ### Best practices when you write code
 When a method is hookable, the compiler generates extra intermediate language (IL) code to enable the method as an extension point. Although the extra code has performance overhead, this overhead is negligible in most cases. However, for performance-critical methods, consider marking the method as non-hookable.
