@@ -28,7 +28,7 @@ ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
 ---
-# Calculate depreciation for Russia
+# Calculate depreciation (Russia)
 
 [!include [banner](../includes/banner.md)]
 
@@ -73,10 +73,10 @@ Use the following procedures to set up a depreciation method, and to calculate o
 6. Select **Group operations** \> **Depreciation by group** to open the **Depreciation by group** dialog box.
 
     > [!NOTE]
-    > If you select **Tax nonlinear group method** as the depreciation method, you can't calculate the depreciation for a tax value model by using the single or group depreciation function.
+    > If you select **Tax nonlinear group method** as the depreciation method, you can't calculate the depreciation for a tax value model by using the single or group depreciation operation.
 
 7. In the **Transaction date** field, select the date of the transaction.
-8. Select **Select** to open the **Inquiry** dialog box, and then set the criteria that are used to select fixed assets.
+8. On the **Records to include** FastTab, select **Filter** to open the **Assets** dialog box, and then set the criteria that are used to select fixed assets.
 9. Select **OK**. Depreciation transactions are created in the journal.
 10. Select **Validate** \> **Validate** to validate the journal.
 11. Select **Post** \> **Post** to post the journal. Corresponding fixed asset and ledger transactions are created.
