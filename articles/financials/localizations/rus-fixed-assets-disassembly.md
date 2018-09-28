@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Partial fixed asset disassembly (liquidation)
+# Partial fixed asset disassembly (liquidation) (Russia)
 
 [!include [banner](../includes/banner.md)]
 
@@ -55,8 +55,8 @@ To create the partial fixed asset disassembly transactions, you must configure t
     - **Current quantity** – The quantity that is currently entered for the fixed asset.
     - **Cost** – The component cost.
 
-3. Select the line for an item, and then select **Functions \> Add to remains**.
-4. On the **Add to remains** page, in the **Add** field, enter the remaining quantity.
+3. Select the line for an item, and then select **Add to remains**.
+4. in the **Add to remains** dialog box, in the **Add** field, enter the remaining quantity.
 
     The **Available quantity** field shows the quantity of this item that is currently part of the fixed asset.
 
@@ -64,18 +64,18 @@ To create the partial fixed asset disassembly transactions, you must configure t
 
     The lines that are marked in the upper pane of the **Componentry** page are transferred to the lower pane for a partial disassembly that will be posted to inventory. The lower pane shows a component list for the partial disassembly. In the upper pane, the **Current quantity** field shows the component quantity. This quantity remains in the fixed asset after the partial disassembly, and the value of the **Current quantity** field is updated.
 
-6. In the lower pane, select **Functions \> Calculating prices**. The balance value depreciation and depreciated cost are calculated for every component that is being written off.
+6. In the lower pane, select **Calculating prices**. The balance value depreciation and depreciated cost are calculated for every component that is being written off.
 7. In the **Calculating prices** dialog box, in the **Calculating prices** field, select the method that is used to calculate prices:
 
-    - **Proportionate** – This method is based on the assumption that all fixed asset revaluations are assessed in proportion to the original value. The acquisition date of the component isn't considered.
-    - **Iterative** – The balance value calculation method for the component is based on the fact that the fixed asset revaluation transaction doesn't include all components in proportion to their original value, but only in proportion to the value of the components that are included at the time of the revaluation transaction.
+    - **Proportionate** – The fixed asset revaluation transaction includes all components in proportion to their original value. The acquisition date of the component isn't considered. The acquisition date of the component isn't considered.
+    - **Iterative** – The fixed asset revaluation transaction doesn't include all components in proportion to their original value, but only in proportion to the value of the components that are included at the time of the revaluation transaction.
 
 8. If the cost must be rounded to an integer value, set the **Round off market value** option to **Yes**.
-9. Select **OK**. The cost of the item, when it's returned to the warehouse, is calculated. You can manually update the market value as you require.
+9. Select **OK**. The cost of the item is calculated, when the item return to inventory  You can manually update the market value as you require.
 
-    Components are posted to the warehouse with respect to either their calculated value or their market value. The value that is used is determined by the commission during fixed asset disassembly. The difference between the market value and the calculated value is the profit or loss amount in the result of the fixed asset disassembly.
+    Components are posted to the inventory with respect to either their calculated value or their market value. The value that is used is determined by the commission during fixed asset disassembly. The difference between the market value and the calculated value is the profit or loss amount in the result of the fixed asset disassembly.
 
-10. In the lower pane of the **Componentry** page, on the **Inventory dimensions** tab, select warehouse dimensions that are used to post the item to inventory.
+10. In the lower pane of the **Componentry** page, on the **Inventory dimensions** tab, select inventory dimensions that are used to post the item to inventory.
 11. To create the write-off disassembly transaction, select **Fixed assets (Russia) \> Journals \> FA journal**.
 12. Select **New** to create a journal.
 13. Select **Lines** and then **New** to create lines to record the write-off disassembly transactions.
@@ -86,9 +86,9 @@ To create the partial fixed asset disassembly transactions, you must configure t
     If there no transaction details on the journal line, you must enter them manually.
 
 17. On the Action Pane, select **Functions \> Show invisible** to show profit/loss lines.
-18. On the Action Pane, select **Post \> Post**. Transactions are created in the ledger and fixed asset account, and the item is posted to inventory.
+18. On the Action Pane, select **Post \> Post**. Transactions are created in the ledger and fixed asset accounts, and the item is posted to inventory.
 
-    The partial dismantlement transaction is shown in the **Acquisition adjustment of partial dismantlement** and **Depreciation adjustment of partial dismantlement** fields on the **Balance by FA** page (**Fixed assets (Russia) \> Value models \> Balance**).
+    The partial dismantlement transaction value is shown in the **Acquisition adjustment of partial dismantlement** and **Depreciation adjustment of partial dismantlement** fields in the **Balance by FA** dialog box (**Fixed assets (Russia) \> Value models \> Balance**).
 
     If a partial fixed asset disassembly involves a loss, a line on the **Deferrals** page (**General ledger \> Deferrals \> Deferrals**) is created if the corresponding depreciation group has been set up for the tax value mode.
 
@@ -101,7 +101,8 @@ This section contains examples and mathematical equations (formulas). Two method
 
 ### The proportional method
 
-The proportional method is based on the assumption that all revaluations are assessed in proportion to the original value. The component acquisition date isn't considered.
+
+The fixed asset revaluation transaction includes all components in proportion to their original value. The acquisition date of the component isn't considered. The acquisition date of the component isn't considered.
 
 For every component that is withdrawn from the fixed asset composition, the balance of the component (S<sub>j</sub>) is calculated by using the following formula:
 
@@ -175,7 +176,7 @@ Here is the accumulated component depreciation:
 
 ### The iterate method
 
-The iterate method is based on the fact that the fixed asset revaluation transaction doesn't revalue all components in proportion to their original value, but only in proportion to the sum that is included at the time of the revaluation. Furthermore, the proportional distribution method remains in effect.
+The fixed asset revaluation transaction doesn't revalue all components in proportion to their original value, but only in proportion to the value of the components that are included at the time of the revaluation transaction.. Furthermore, the proportional distribution method remains in effect.
 
 Therefore, for every component that is subject to withdrawal from the fixed asset composition, a table is created that includes all revaluation transactions. Major refurbishments are calculated after the component is acquired. The following table uses item 2 as an example.
 
