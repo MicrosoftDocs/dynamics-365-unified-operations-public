@@ -27,7 +27,6 @@ ms.author: jcart
 ms.search.validFrom: 2018-08-11
 ms.dyn365.ops.version: 
 
-
 ---
 
 # Core HR and Common Data Service for Apps
