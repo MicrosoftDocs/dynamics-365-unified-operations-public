@@ -32,8 +32,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-Core HR uses the Common Data Service (CDS) for Apps to enable extensibility and
-integration scenarios.
+Core HR uses the Common Data Service (CDS) for Apps to enable extensibility and integration scenarios.
 
 For more information on CDS for Apps, see [What is Common Data Service for
 Apps?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro)
