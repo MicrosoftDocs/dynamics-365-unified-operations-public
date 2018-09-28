@@ -53,22 +53,23 @@ To view available updates:
 
 ## Types of Tiles
 
-There are 4 different types of tiles as listed below. 
+There are 4 different types of tiles: 
 1. **All X++ Updates** - This tile shows all the granular X++ updates released by Microsoft. 
 2. **Critical X++ Updates** - This tile shows recommended KBs that are based on the telemetry data in your production environment. So this tile will only show for *Production environments* and it will show a subset of the updates shown under the All X++ Updates tile that are recommended for your environments. 
 3. **All binary Updates** - This tile shows a combined cumulative binary update for both the Application and Platform.
 4. **Platform binary Updates** - This tile shows only the Platform binary updates. If you want to update only the platform, you can get the update from this tile. 
 
 Depending on the product and version, the tiles you see will differ.
--**Dynamics 365 for Retail**
+
+- **Dynamics 365 for Retail**
 Customers that have Dynamics 365 for Retail deployed will see a single tle that is a cumulative combined binary update of all the application and platform changes. 
 
--**Dynamics 365 for Finance and Operations** 
-1. Application Version 8.1 onwards - Starting with this release you will see a **single tile** for service updates since any customizations are done via extensions and there is no code overlayering. This tile will be a cumulative combined binary update of all the application and platform changes. There will be no granular X++ updates starting with this release. Everything will be a cumulative update. 
+- **Dynamics 365 for Finance and Operations** 
+   1. Application Version 8.1 onwards - Starting with this release you will see a **single tile** for service updates since any customizations are done via extensions and there is no code overlayering. This tile will be a cumulative combined binary update of all the application and platform changes. There will be no granular X++ updates starting with this release. Everything will be a cumulative update. 
  
-2. Application Version 7.x or 8.0 and greater Platform Update 4 - For customers that are on this combination, you will see all the 4 tiles listed above. This release will still have the granular X++ updates. Starting with Platform Update 4, no overlayering is allowed on the platform modules and hence Platform Binary Update tile is available that provides the platform updates as a cumulative update. 
+   2. Application Version 7.x or 8.0 and greater Platform Update 4 - For customers that are on this combination, you will see all the 4 tiles listed above. This release will still have the granular X++ updates. Starting with Platform Update 4, no overlayering is allowed on the platform modules and hence Platform Binary Update tile is available that provides the platform updates as a cumulative update. 
 
-3. Application Version 7.x and less than Platform Update 4 - For customers that are on this combination, you will see 3 tiles - All X++ Updates, Critical X++ Updates and All binary updates. Since in this release platform can still be overlayered, there is no Platform binary update tile. 
+  3. Application Version 7.x and less than Platform Update 4 - For customers that are on this combination, you will see 3 tiles - All X++ Updates, Critical X++ Updates and All binary updates. Since in this release platform can still be overlayered, there is no Platform binary update tile. 
  > [!NOTE]
     > If you are on this release, you need to upgrade as soon as possible. 
    
