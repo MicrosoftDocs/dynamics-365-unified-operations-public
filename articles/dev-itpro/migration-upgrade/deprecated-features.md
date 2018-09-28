@@ -49,39 +49,6 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Dynamics 365 for Finance and Operations 8.1 with platform update 20
 
-### Feature name
-Please enter a sentence or two describing the feature that is being removed or deprecated. 
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Indicate why the feature is being removed or deprecated. |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature.  |
-| **Product areas affected**         | Product areas affected, such as a module name.    |
-| **Deployment option**              | Enter: All, Cloud only, or On-premises only  |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.|
-
-### Feature name
-Please enter a sentence or two describing the feature that is being removed or deprecated. 
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Indicate why the feature is being removed or deprecated. |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature.  |
-| **Product areas affected**         | Product areas affected, such as a module name.    |
-| **Deployment option**              | Enter: All, Cloud only, or On-premises only  |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.|
-
-### Feature name
-Please enter a sentence or two describing the feature that is being removed or deprecated. 
-
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | Indicate why the feature is being removed or deprecated. |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature.  |
-| **Product areas affected**         | Product areas affected, such as a module name.    |
-| **Deployment option**              | Enter: All, Cloud only, or On-premises only  |
-| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is <month/year> or <quarter/year> or <release/version>.<br><br>-OR-<br><br>Removed as of <release/version>.|
-
 ### Batch transfer rules for subledger journal account entries
 The Synchronous transfer mode is being deprecated in the General ledger parameters.  This mode is replaced by Asyncronous and scheduled batch only, which already exist as options for transfer. 
 
