@@ -5,8 +5,8 @@ title: Ledger settlements
 description: This topic explains how to use the Ledger settlements page to settle ledger transactions and reverse settlements.
 author: mikefalkner
 manager: aolson
-ms.date: 08/24/2018
-ms.topic: index-page
+ms.date: 09/28/2018
+ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
