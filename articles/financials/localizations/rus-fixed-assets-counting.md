@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Fixed asset counting for Russia
+# Fixed asset counting (Russia)
 
 [!include [banner](../includes/banner.md)]
 
