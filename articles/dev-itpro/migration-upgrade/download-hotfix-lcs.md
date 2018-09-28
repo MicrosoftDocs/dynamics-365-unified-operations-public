@@ -30,42 +30,47 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Download updates from Lifecycle Services (LCS)
+# Get updates from Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
-Use this tutorial to download updates from Microsoft Dynamics Lifecycle Services (LCS).
+This topic covers what updates you should expect to see and how you can get the updates from Lifecycle Services.
 
 ## Types of updates
 
 - **Binary updates** are pre-compiled and cumulative. Every subsequent binary update includes all previous updates. These updates don't have to be compiled in a development environment, and they can be applied directly to a non-development environment from LCS.
         
-    If you're running an environment that has retail functionality and a customized instance of Cloud point of sale (POS), you must complete the additional steps that are listed under Retail SDK packaging. For Microsoft Dynamics 365 for Retail, all updates, even updates for application models, are released as binary updates.
-    
-    > [!NOTE]
-    > If your environment is on Platform Update 4 and above, you will have the option to download **All binary updates** and **Platform binary updates** from the LCS **Environment** page.  
-    > - The **All binary updates** tile includes a combined package of application and platform binary updates.  
-    > - The **Platform binary updates** tile includes the latest platform only updates or hotfixes. 
-    
+    If you're running an environment that has retail functionality and a customized instance of Cloud point of sale (POS), you must complete the additional steps that are listed under Retail SDK packaging. For Microsoft Dynamics 365 for Retail, all updates, even updates for application models, are released as binary updates.    
 
-- **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment.  Dependent X++ updates are automatically selected and downloaded.  Any X++ updates are source code updates, before they can be applied to a non-development environment, they must be compiled in a developer environment and merged with any customizations. X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations. 
+- **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment.  Dependent X++ updates are automatically selected and downloaded.  Any X++ updates are source code updates, before they can be applied to a non-development environment, they must be compiled in a developer environment and merged with any customizations. X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations.   
 
-    > [!NOTE]
-    > For online environments, you will see both the **All X++ updates** tile and the **Critical X++ updates** tile. The Critical X++ updates are recommended KBs that are based on the telemetry data in **your production environment**.  
-    >
-    > To test and apply any X++ updates, after download the X++ updates, apply them in a development environment to build a deployable package, and then apply the deployable package to your sandbox and then production environments. 
-    >
-    > For more information about deploying updates, see [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md)  
-
-## Download updates
+## Get updates
 
 To view available updates:
 1. Sign in to LCS by using your credentials.
 2. In the LCS project, select an environment.
 3. On the **Environment** page, the **Monitoring** section includes update tiles. 
 
-   >[!NOTE]
-   > For Retail, you will see tile for binary updates only. For Finance and Operations, you will see tiles for both X++ updates and binary updates. These two types of updates can be independently downloaded and applied. However, some X++ updates might depend on binary updates, and some binary updates might depend on X++ updates. Any dependencies are included in the update description.
+## Types of Tiles
+
+There are 4 different types of tiles as listed below. 
+1. **All X++ Updates** - This tile shows all the granular X++ updates released by Microsoft. 
+2. **Critical X++ Updates** - This tile shows recommended KBs that are based on the telemetry data in your production environment. So this tile will only show for *Production environments* and it will show a subset of the updates shown under the All X++ Updates tile that are recommended for your environments. 
+3. **All binary Updates** - This tile shows a combined cumulative binary update for both the Application and Platform.
+4. **Platform binary Updates** - This tile shows only the Platform binary updates. If you want to update only the platform, you can get the update from this tile. 
+
+Depending on the product and version, the tiles you see will differ.
+-**Dynamics 365 for Retail**
+Customers that have Dynamics 365 for Retail deployed will see a single tle that is a cumulative combined binary update of all the application and platform changes. 
+
+-**Dynamics 365 for Finance and Operations** 
+1. Application Version 8.1 onwards - Starting with this release you will see a **single tile** for service updates since any customizations are done via extensions and there is no code overlayering. This tile will be a cumulative combined binary update of all the application and platform changes. There will be no granular X++ updates starting with this release. Everything will be a cumulative update. 
+ 
+2. Application Version 7.x or 8.0 and greater Platform Update 4 - For customers that are on this combination, you will see all the 4 tiles listed above. This release will still have the granular X++ updates. Starting with Platform Update 4, no overlayering is allowed on the platform modules and hence Platform Binary Update tile is available that provides the platform updates as a cumulative update. 
+
+3. Application Version 7.x and less than Platform Update 4 - For customers that are on this combination, you will see 3 tiles - All X++ Updates, Critical X++ Updates and All binary updates. Since in this release platform can still be overlayered, there is no Platform binary update tile. 
+ > [!NOTE]
+    > If you are on this release, you need to upgrade as soon as possible. 
    
 ## Download Binary updates
 
