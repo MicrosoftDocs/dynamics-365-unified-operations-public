@@ -2,10 +2,10 @@
 # required metadata
 
 title: Set up mobile devices for warehouse work
-description: This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
+description: This topic describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
+This topic describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 
-**Note:** This article applies to features in Warehouse management. It doesn't apply to features in Inventory management. The menu items that appear on the menus on a warehouse mobile device are configured on the **Mobile device menu items** page. Because the menu items can be put onto different menus, it's easy to configure menu structures so that only specific types of work are exposed to specific users. You can configure menu items to perform the following tasks:
+**Note:** This topic applies to features in Warehouse management. It doesn't apply to features in Inventory management. The menu items that appear on the menus on a warehouse mobile device are configured on the **Mobile device menu items** page. Because the menu items can be put onto different menus, it's easy to configure menu structures so that only specific types of work are exposed to specific users. You can configure menu items to perform the following tasks:
 
 -   Process an inquiry or perform an activity, such as printing a label, generating license plate numbers, starting a production order, or quickly looking up information about items in a location.
 -   Create work that will be performed through another process. For example, receiving an item for a purchase order can create put-away work for another worker.
@@ -252,6 +252,10 @@ This option is useful when, for example, multiple pallets are staged for a load.
 <td>Cycle count grouping</td>
 <td>The worker selects a zone, work pool, or location, and Microsoft Dynamics 365 for Finance and Operations assigns work, based on the selection. If you select this option, you can click <strong>Cycle counting</strong> on the Action pane to specify additional information to display, and you can also specify the number of times that the worker must repeat the count if a difference is found.</td>
 </tr>
+ <tr class="odd">
+<td>Transport loading</td>
+<td>This feature allows several warehouse workers to load inventory from the same or different loads onto the same truck, with loads that are fully or partially shipped.</td>
+</tr>
 </tbody>
 </table>
 
@@ -353,7 +357,7 @@ The following table describes these options.
 <td>Select this option to let workers combine work for a sales order or load into a single work unit. A worker can perform work only for the sales order or load. This option is useful when, for example, you must increase a quantity for a sales order after the load, shipment, and work have been created for the sales order. This option is available when the menu item uses existing work, and the work is directed by the user or system.</td>
 </tr>
 <tr class="even">
-<td>None</td>
+<td>Pick oldest batch</td>
 <td>Indicate whether the worker must pick the oldest batch in a location first. The following options are available:
 <ul>
 <li><strong>None</strong> – The worker can pick any batch in the location. The worker receives no message.</li>
