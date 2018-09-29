@@ -199,16 +199,6 @@ Provides a list of the most expensive queries during the specified period. The d
 - For the number of hours, specify &quot;0&quot; if you are looking at currently occurring issues, such as currently high DTU. This will provide results for the current hour. If you are looking for generally high DTU over time, specify either &quot;24&quot; for the last day or &quot;168&quot; for the last week.
 - For the ordering, select &quot;total cpu&quot; to find high DTU impact for recurring queries. Select &quot;average duration&quot; to find queries that are not run often but that might be slow. Select &quot;total duration&quot; to find recurring queries that might be slowing down users.
 
-## Get fragmentation details
-
-**Description:**
-
-Fragmentation is when the records are not stored contiguously inside of the page. When there is unused space between records on a page, which occurs through data modification that is made against the table and to the indexes defined on the table, this is SQL index fragmentation.  D365 uses SQL Azure DB premium SKUs which are backed by SSDs.  So the fragmentation does not cause the same level of issues as on a database that is backed by a SCSI drive.  But still it could cause slower performance.  Higher the fragmentation, there is a higher chance that it could hurt the performance of queries that uses this fragmented table/index.
-
-**Next steps:**
-- This query here shows the list of tables, indexes with their fragmentation percentage and a recommendation to either REBUILD the index or REORG the index.  When you rebuild or reorg an index  it will pack the records next to each other and avoid gaps in between, thus reducing the fragmentation.
-
-
 ## Create non-unique index on table
 
 **Background:**
@@ -225,6 +215,15 @@ Indexes should generally be created through the standard metadata package and da
 - The index name is any unique string not currently in use by an existing index on this table. For easy identification, it is recommended but not required that the index name follow the format PERF\_IDX\_\&lt;tablename\&gt;\_\&lt;number\&gt;. For instance, an index might be named PERF\_IDX\_LEDGERJOURNALTRANS\_1.
 - The columns parameter is a comma-separated list of physical column names in the order that they should appear in.
 - The included columns parameter is a comma-separated list of physical column names in the order that they should appear in. If no included columns must be specified, leave this parameter blank.
+
+## Get fragmentation details
+
+**Description:**
+
+Fragmentation is when the records are not stored contiguously inside of the page. When there is unused space between records on a page, which occurs through data modification that is made against the table and to the indexes defined on the table, this is SQL index fragmentation.  D365 uses SQL Azure DB premium SKUs which are backed by SSDs.  So the fragmentation does not cause the same level of issues as on a database that is backed by a SCSI drive.  But still it could cause slower performance.  Higher the fragmentation, there is a higher chance that it could hurt the performance of queries that uses this fragmented table/index.
+
+**Next steps:**
+- This query here shows the list of tables, indexes with their fragmentation percentage and a recommendation to either REBUILD the index or REORG the index.  When you rebuild or reorg an index  it will pack the records next to each other and avoid gaps in between, thus reducing the fragmentation.
 
 ## Create a plan guide to force Plan ID
 
