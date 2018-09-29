@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Depreciation setup (Russia)
-description: This topic provides information about setting up depreciation for Russian fixed assets.
+title: Set up depreciation (Russia)
+description: This topic explains how to set up depreciation for Russian fixed assets.
 author: anasyash
 manager: AnnBe
 ms.date: 10/28/2018
@@ -29,96 +29,103 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Depreciation setup (Russia)
+# Set up depreciation (Russia)
 
 [!include [banner](../includes/banner.md)]
 
+This topic explains how to set up depreciation for Russian fixed assets.
+
 ## Set up depreciation methods
 
-Depreciation methods are used to define the rules for calculating depreciation. Use this procedure to set up depreciation methods.
+Depreciation methods define the rules for calculating depreciation.
 
-1.  Click **Fixed assets (Russia)** \> **Setup** \> **Depreciation methods**.
-2.  Press the New button to create a new depreciation method.
-3.  In the **Depreciation method** field, enter the identification code of the depreciation method for the fixed asset and in the **Name** field, enter the name of the depreciation method.
-4.  In the **Method** field, select the depreciation method from the following options:
-      - **[Linear](rus-depreciation-methods.md#linear-and-non-linear-depreciation-methods)** − This method is a uniform accrual method. A capital allowance is calculated proportionately for each period or interval that you set up, such as monthly, quarterly, semi-annually, or annually, or for the whole service life of the asset.
-       - **Reducing remainder** − This method decreases the depreciation value over the service life of the asset. The depreciation amount is based on the residual value of the fixed asset at the start of the reporting year. The depreciation rate is calculated based on the remaining useful life and the acceleration factor.
-       - **[Manual](rus-depreciation-methods.md#manual-depreciation-method)** − The depreciation schedule is defined as a percentage value for each period. In this method, you can manually define the depreciation rate for each depreciation period.
-       - **[Factor](rus-depreciation-methods.md#factor-depreciation-method)** − The depreciation amount is calculated as a remaining amount that is multiplied by a fixed ratio.
-       - **By number of years** − The asset value is based on the number of years of useful life that remain.
-       - **[Product output/mileage](rus-depreciation-methods.md#product-output-mileage-depreciation-method)** − The asset value is proportionate to the volume of units that are produced.
-       - **Tax nonlinear** − The accrued monthly depreciation for the asset is defined as the product of its remaining value and the depreciation rate. The depreciation rate is defined as K= (2/n) \* 100%, where n is the useful life of the asset in months.
-       - **[Tax nonlinear group method](rus-depreciation-methods.md#non-linear-tax-accounting-group-depreciation-method)** − The accrued monthly depreciation for the asset group is defined as the product of its remaining value and the depreciation rate. The depreciation rate is defined as K = (2/n) \* 100%, where n is the useful life of the asset group in months.
-5.  In the **Interval** field, select the period for which the depreciation must be accrued. If you select **Quarterly** in the **Interval** field, you must enter three monthly transactions instead of a single transaction for the whole quarter.
-6.  In the **Factor** field, enter the factor or percentage that must be reduced by interval.
+1. Select **Fixed assets (Russia)** \> **Setup** \> **Depreciation methods**.
+2. Select **New** to create a depreciation method.
+3. In the **Depreciation method** field, enter the identification code of the depreciation method for the fixed asset. In the **Name** field, enter the name of the depreciation method.
+4. In the **Method** field, select the depreciation method:
+
+    - **[Linear](rus-depreciation-methods.md#linear-and-non-linear-depreciation-methods)** − This method is a uniform accrual method. A capital allowance is calculated proportionately for each period or interval that you set up, such as monthly, quarterly, semi-annually, or annually, or for the whole service life of the asset.
+    - **Reducing remainder** − This method decreases the depreciation value over the service life of the asset. The depreciation amount is based on the residual value of the fixed asset at the start of the reporting year. The depreciation rate is calculated based on the remaining useful life and the acceleration factor.
+    - **[Manual](rus-depreciation-methods.md#manual-depreciation-method)** − The depreciation schedule is defined as a percentage value for each period. In this method, you can manually define the depreciation rate for each depreciation period.
+    - **[Factor](rus-depreciation-methods.md#factor-depreciation-method)** − The depreciation amount is calculated as a remaining amount that is multiplied by a fixed ratio.
+    - **By number of years** − The asset value is based on the number of years of useful life that remain.
+    - **[Product output/mileage](rus-depreciation-methods.md#product-output-mileage-depreciation-method)** − The asset value is proportionate to the volume of units that are produced or the distance that is traveled.
+    - **Tax nonlinear** − The accrued monthly depreciation for the asset is calculated by multiplying its remaining value by the depreciation rate. The depreciation rate is defined as K = (2 ÷ n) × 100 percent, where *n* is the asset's useful life in months.
+    - **[Tax nonlinear group method](rus-depreciation-methods.md#non-linear-tax-accounting-group-depreciation-method)** − The accrued monthly depreciation for the asset group is calculated by multiplying its remaining value by the depreciation rate. The depreciation rate is defined as K = (2 ÷ n) × 100 percent, where *n* is the asset group's useful life in months.
+
+5. In the **Interval** field, select the period that the depreciation must be accrued for. If you select **Quarterly**, you must enter three monthly transactions instead of a single transaction for the whole quarter.
+6. If you selected **Reducing remainder** or **Factor** as the depreciation method, in the **Factor** field, enter the factor or percentage that must be reduced by interval.
 
     > [!NOTE]
-    > This field is available only if you select **Reducing remainder** or **Factor** as the depreciating method.
-    
-7.  In the **Cost limit** field for the **Tax nonlinear** method, enter the cutoff percentage value. When the accrued depreciation amount is calculated, the depreciation amount for the year is recalculated based on the service life and the depreciation profile for the asset. The amount is allocated across the specified periods in the year.
-8.  Click **Schedule of depreciation** to manually create depreciation schedules for fixed assets.
- 
+    > The **Factor** field is available only if you select **Reducing remainder** or **Factor** as the depreciation method.
+
+7. If you selected **Tax nonlinear** as the method, in the **Cost limit** field, enter the cut-off percentage value. When the accrued depreciation amount is calculated, the depreciation amount for the year is recalculated based on the asset's service life and depreciation profile. The amount is allocated across the specified periods in the year.
+8. If you selected **Manual** as the depreciation method, on the Action Pane, select **Schedule of depreciation** to manually create depreciation schedules for fixed assets.
+
     > [!NOTE]
     > The **Schedule of depreciation** button is available only if you select **Manual** as the depreciation method.
 
-### Change the depreciation method in tax accounting 
+### Change the depreciation method for tax accounting
 
-1.  Click **Fixed assets (Russia)** \> **Periodic** \> **Changing depreciation method**.
-2.  In the **Changing depreciation method** form, in the **Year** field, select (fill in) the year when the new depreciation method will go into effect.
-3.  In the **Old depreciation profile** field, select the depreciation method that was previously used for tax accounting.
-4.  In the **New depreciation profile** field, select the new depreciation method to be used.
-5.  Click **Record to include/ Filter** to open the **Inquiry** form, and then enter the selection criteria for fixed assets.
-6.  Click **OK**. The new depreciation method will be updated in the **Depreciation method** field on the **General** FastTab in the **FA value models** form.
-    
+1. Select **Fixed assets (Russia)** \> **Periodic** \> **Changing depreciation method**.
+2. In the **Changing depreciation method** dialog box, in the **Year** field, specify the year when the new depreciation method goes into effect.
+3. In the **Old depreciation profile** field, select the depreciation method that was previously used for tax accounting.
+4. In the **New depreciation profile** field, select the new depreciation method.
+5. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, and then enter the criteria that are used to select fixed assets.
+6. Select **OK**. The **Depreciation method** field on the **General** FastTab of the **FA value models** page is updated with the new depreciation method.
+
     > [!TIP]
-    > To open the **FA history** page to view these changes, click **Fixed assets (Russia) > Common > Fixed assets** and then click **Fixed assets > Value models > FA lifetime history**.
-    
-## Set up analysis codes for fixed asset depreciation 
-Analysis codes are used to calculate the depreciation accrual for a fixed asset. You can set up an annual depreciation rate that is applied to the fixed assets or to a depreciation group. 
+    > To open the **FA history** page to view these changes, select **Fixed assets (Russia)** \> **Common** \> **Fixed assets** and then select **Fixed assets** \> **Value models** \> **FA lifetime history**.
 
-1.  Click **Fixed assets (Russia)** \> **Setup** \> **Analysis codes**.
-2.  On the left pane, press the **New** button to create a new analysis code.
-3.  In the **Analysis code** field, enter the analysis code and in the **Name** field, enter a description of the analysis code.
-4.  In the **Depreciation group** field, select a depreciation group.
-5.  In the **Depreciation type** field, select the depreciation type from the following options:
-      - **On cost** − The analysis code is applied to all fixed assets excluding vehicular fixed assets.
-      - **On 1000 km mileage** − The analysis code is applied to vehicular fixed assets.
-6.  On the right pane, press the **Add** button to create a new line.
-7.  In the **Start date** field, specify the date when the depreciation rate becomes active.
-8.  In the **Depreciation rate** field, enter the annual depreciation rate as a percentage.
-9. In the **Factor** field, enter the factor by which the specified depreciation rate is increased or decreased from the fixed value that is defined by the Russian Federation legislation for a fixed asset group.
+## Set up analysis codes for fixed asset depreciation
+Analysis codes are used to calculate the depreciation accrual for a fixed asset. You can set up an annual depreciation rate that is applied to fixed assets or to a depreciation group.
 
-## Set up depreciation groups 
+1. Select **Fixed assets (Russia)** \> **Setup** \> **Analysis codes**.
+2. Select **New** to create an analysis code.
+3. In the **Analysis code** field, enter the analysis code. In the **Name** field, enter a description of the analysis code.
+4. In the **Depreciation group** field, select a depreciation group.
+5. In the **Depreciation type** field, select the depreciation type:
 
-Depreciation groups are defined for fixed asset value models to specify asset details such as the depreciation profile, service life, and deferral parameters that are generated when depreciating a fixed asset. 
+    - **From cost** − The analysis code is applied to all fixed assets except vehicular fixed assets.
+    - **On 1000 km mileage** − The analysis code is applied to vehicular fixed assets.
 
-If a fixed asset is registered after putting into operation, depreciation is calculated from the first day of the month of registration. If a fixed asset is registered before it is put into operation, depreciation is calculated from the first day of the month after the fixed asset is put into operation. 
+6. On the **Lines** FastTab, select **Add** to create a line.
+7. In the **Start date** field, specify the date when the depreciation rate becomes active.
+8. In the **Depreciation rate** field, enter the annual depreciation rate as a percentage.
+9. In the **Factor** field, enter the factor that the specified depreciation rate is increased or decreased by, relative to the fixed value that is defined by the Russian Federation legislation for a fixed asset group.
 
-1.  Click **Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**.
-2.  In the **Value model** field, select the value model that a new depreciation group is defined for.
-3.  Click the **New** button to create a new depreciation group.
-4.  In the **Depreciation group** and **Name** fields, enter the depreciation group code and name for the depreciation group.
-5.  In the **Depreciation method** field, select a depreciation method for the depreciation group.
-6.  On the **General** FastTab, in the **Lifetime** field, enter the maximum service life, in years, during which depreciation is accrued for the fixed assets in the depreciation group.
-7.  In the **Minimal depreciation** field, enter the minimum depreciation amount when you use the **Reducing remainder** depreciation method.
-8.  In the **Depreciation start date** field, select the type of starting date for depreciation from the following options:    
-      - **From month when put into operation** – Depreciation is calculated from the first day of the month when the fixed asset is put to use after acquisition.
-      - **Next month start** – Depreciation is calculated from the month after the fixed asset is put to use after acquisition.
-      - **Next quarter start** – Depreciation is calculated from the quarter after the fixed asset is put to use after acquisition.
-      - **Next half year start** – Depreciation is calculated from the half-year after the fixed asset is put to use after acquisition.
-      - **Next year start** – Depreciation is calculated from the year after the fixed asset is put to use after acquisition.
-      - **Date of the registration** - Depreciation is calculated from the date of the registration. 
-9.  Click the **Deferrals** FastTab.
-10. In the right pane, click **Disposal** to set up parameters to create deferrals on the disposal of fixed assets that accrue a loss. Click **Partial dismantlement** to create deferrals on the partial write-off of fixed assets that accrue a loss.
-    
+## Set up depreciation groups
+
+By defining depreciation groups for fixed asset value models, you can specify asset details that are generated when a fixed asset is depreciated. These details include the depreciation profile, service life, and deferral parameters.
+
+If a fixed asset is registered after it's put into operation, depreciation is calculated from the first day of the month of registration. If a fixed asset is registered before it's put into operation, depreciation is calculated from the first day of the month after the fixed asset is put into operation.
+
+1. Select **Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**.
+2. In the **Value model** field, select the value model that you're creating a depreciation group for.
+3. Select **New** to create a depreciation group.
+4. In the **Depreciation group** and **Name** fields, enter the depreciation group code and name for the depreciation group.
+5. In the **Depreciation method** field, select a depreciation method for the depreciation group.
+6. On the **General** FastTab, in the **Lifetime** field, enter the maximum service life, in years, that depreciation is accrued for the fixed assets in the depreciation group.
+7. In the **Minimal depreciation** field, enter the minimum depreciation amount when you use the reducing remainder depreciation method.
+8. In the **Depreciation start date** field, select the type of starting date for depreciation:
+
+    - **From month when put into operation** – Depreciation is calculated from the first day of the month when the fixed asset is put to use after acquisition.
+    - **Next month start** – Depreciation is calculated from the month after the fixed asset is put to use after acquisition.
+    - **Next quarter start** – Depreciation is calculated from the quarter after the fixed asset is put to use after acquisition.
+    - **Next half year start** – Depreciation is calculated from the half-year after the fixed asset is put to use after acquisition.
+    - **Next year start** – Depreciation is calculated from the year after the fixed asset is put to use after acquisition.
+    - **Date of the registration** – Depreciation is calculated from the date of registration.
+
+9. On the **Deferrals** FastTab, in the field above the grid, select **Disposal** to set up parameters that are used to create deferrals on the disposal of fixed assets that accrue a loss. Select **Partial dismantlement** to set up parameters that are used create deferrals on the partial write-off of fixed assets that accrue a loss.
+
     > [!NOTE]
-    > When you create a transaction for the partial write-off or disposal of a fixed asset, if the transaction causes a loss, the transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the depreciated asset and the actual period that the asset is used before disposal.
+    > When you create a transaction for the disposal or partial write-off of a fixed asset, if the transaction causes a loss, the transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the depreciated asset and the actual amount of time that the asset was used before disposal.
 
-11. In the right pane, press the **Add** button to create a line.
-12. In the **Model number** field, select the model number of the deferral.
-13. In the **Deferrals group** field, select the deferrals group for deferred expenses.
-14. In the **Expense code** field, select the expense code for deferrals.
-  
+10. Select **Add** to create a line.
+11. In the **Model number** field, select the model number of the deferral.
+12. In the **Deferrals group** field, select the deferrals group for deferred expenses.
+13. In the **Expense code** field, select the expense code for deferrals.
+
 ## Additional resources
 
 - [Depreciation methods (Russia)](rus-depreciation-methods.md)
