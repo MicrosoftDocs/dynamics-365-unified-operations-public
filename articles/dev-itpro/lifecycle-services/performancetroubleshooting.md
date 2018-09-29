@@ -51,7 +51,7 @@ All SQL performance tools in LCS are available under the **SQL Insights** tab on
 
     [![queries](./media/Queries.JPG)](./media/Queries.JPG)
 
-- **Actions** - Shows a list of pre-defined actions that should be taken to mitigate issues in the sandbox and production environments. Examples of actions include adding/dropping an index, updating stats on a table, rebuilding indexes, and terminating a blocking statement.  Any time that an action is performed, the environment history for an environment will show a record for the action performed. A history record is created only for actions and not when queries are executed.
+- **Actions** - Shows a list of pre-defined actions that should be taken to mitigate issues in the sandbox and production environments. Examples of actions include adding/dropping an index, updating stats on a table, rebuilding indexes, and terminating a blocking statement.  Any time that an action is performed, the environment history for an environment will show a record for the action performed. A history record is created only for actions and not when queries are executed. 
 
     [![actions](./media/Actions.JPG)](./media/Actions.JPG)
 
