@@ -98,7 +98,7 @@ To get **Electronic Messages** functionality ready manually (without importing p
 :::row-end:::  
 :::row:::
     :::column:::
-        Message number sequence will be used for auto-numbering Messages. This is a unique identifier of a Message in the table.
+        Set up number sequences for Message number sequence will be used for auto-numbering Messages. This is a unique identifier of a Message in the table.
         Open **General Ledger parameters** (**Tax > Setup > Parameters > General Ledger parameters**) and set up a non-continuous number        sequence for “Message” Reference. This number sequence will be used for numbering messages on their generation.
     :::column-end:::
     :::column:::
@@ -114,9 +114,9 @@ To get **Electronic Messages** functionality ready manually (without importing p
 :::row:::
     :::column:::
         Set up **Message item types** to identify which types of records will be used in Electronic messages.
-        To set up **Message item types**, open **Tax** \> **Setup** \> **Electronic messages** \> **Message item types**.
     :::column-end:::
     :::column:::
+        **Tax** \> **Setup** \> **Electronic messages** \> **Message item types**
         | **Field name**    | **Field description**                                                   |
         |-------------------|-------------------------------------------------------------------------|
         | Message item type | Enter a name for the Message item type (For example “Customer invoice”) |
