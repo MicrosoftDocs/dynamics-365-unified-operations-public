@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 08/24/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,6 +49,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Dynamics 365 for Finance and Operations 8.1 with platform update 20
 
+
 ### Electronic reporting for Russia
 Feature for configuring txt and xml file formats of declarations. 
 
@@ -83,13 +84,13 @@ Feature exporting generated electronic files of declarations to folder for furth
 | **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
 
 ### Batch transfer rules for subledger journal account entries
-The Synchronous transfer mode is being deprecated in the General ledger parameters.  This mode is replaced by Asyncronous and scheduled batch only, which already exist as options for transfer. 
+The Synchronous transfer mode is being deprecated in the General ledger parameters.  This mode is replaced by Asynchronous and scheduled batch only, which already exist as options for transfer. 
 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | We are removing the synchronous option due to performance impact to the system. |
 | **Replaced by another feature?**   | Asynchronous and scheduled batch are options to use in place of Synchronous.   |
-| **Product areas affected**         | General Ledger, Accounts payable, Accounts Receivable, Procurement, Expense.     |
+| **Product areas affected**         | General Ledger, Accounts payable, Accounts Receivable, Procurement, Expense    |
 | **Deployment option**              | All  |
 | **Status**                         | Deprecated - Target timeframe for the functionality to be removed is the 10.0 version.<br><br>|
 
