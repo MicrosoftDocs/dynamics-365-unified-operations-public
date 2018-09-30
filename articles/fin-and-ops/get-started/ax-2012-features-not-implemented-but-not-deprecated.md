@@ -53,7 +53,48 @@ For a detailed list of when each version of the product was released, see [Softw
 <tbody>
 
 <tr class="odd">
-<td>[Russia] Indirect (withholding) taxes Return (VAT and Excise) on import of goods from state members of Customs union.</td>
+<td>[Russia] Tax registers</td>
+<td>Tax registers: Current period incomes; Tax expenses; Other expenses of current period; Unrealized expenses of current period; Other unrealized expenses; Accounts receivable debt – inventory; Bad debts reserve calculation; Bad debts reserve movement; Accounts receivable movement; Procedure for writing-off AR bad debts; Accounts payable debt - inventory; Accounts payable debt movement; Procedure for writing-off AP bad debts; Goods cost calculation; FA object information; IA object information; FA depreciation; IA depreciation; FA/IA sale; Depreciation bonus recovery; Profit tax registers wizard </td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Electronic export/import format for Client-Bank interface and reconciliation procedure</td>
+<td>Electronic formats for Export of outgoing payments, import of incoming payments</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] VAT Declaration</td>
+<td>Electronic format of VAT declaration</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Cash Flow Management</td>
+<td>The functionality: Obtains a cash flow forecast  and perform an analysis; Manages payments on a daily basis using payment schedule journals; Controls the company’s cash position; Maintains the company’s cash flows with centralized control</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Accounting reporting format</td>
+<td>Electronic format of accounting reports: BalanceSheet, IncomeStatement, CashFlow, EquityStatement, TargetUsageMoney</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Assessed tax reporting</td>
+<td>Assessed tax declaration</td>
+</tr>
+ 
+<tr class="odd">
+<td>[Russia] Land tax reporting</td>
+<td>Land tax declaration. Creation of Land tax declaration by separate divisions</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Transport tax reporting</td>
+<td>Transport tax declaration.</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Indirect taxes Return (VAT and Excise) on import of goods</td>
+<td>Indirect (withholding) taxes Return (VAT and Excise) on import of goods from state members of Customs union.</td>
 </tr>
 
 <tr class="odd">
