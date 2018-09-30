@@ -52,6 +52,31 @@ For a detailed list of when each version of the product was released, see [Softw
 </thead>
 <tbody>
 
+<tr class="odd">
+<td>[Russia] Goods in transit - sales to customer with postponed passing of property</td>
+<td>Post sales invoice with postponed property transfer: no customer debts posted, all outgoing taxes are posted, items are transferred to transit warehouse. Register passing of property with posting debts and items sale from transit warehouse</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Bailment - accounting at Bailee side</td>
+<td>Accounting of inventory receipt for bailment as required by the Law and generation of primary form MX-1. Accounting of inventory return from bailment and generation of primary form MX-3. Bailment costs calculation from Bailee side</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Bailment - accounting at Owner side</td>
+<td>Accounting of inventory transfer to bailment and inventory return from bailment on Goods Owner side under bailment service contract</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Localization of Process Industries solution</td>
+<td>Basic localization in two areas: (a) correspondence of accounts for all new GL postings; (b) functional co-existence of PI features and Russian country context (nothing is broken when both PI and Russian country context are enabled)</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Alcohol sales declarations: Application 6, 7, 8 for wholesale. Applications 11,12 for retail</td>
+<td>Keeping track of alcoholic beverages types including producers, unit of measures, licences for retail & wholesale trade. Preparing data for alcoholic beverages activities, incl. printing declarations & export them in xml format through e-reporting</td>
+</tr>
+
 <tr class="even">
 <td>Absence management in Human resources</td>
 <td>Functionality for entering absence transactions isn&#39;t included in Finance and Operations. Additionally, functionality for approving absence transactions as a manager isn&#39;t included. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
