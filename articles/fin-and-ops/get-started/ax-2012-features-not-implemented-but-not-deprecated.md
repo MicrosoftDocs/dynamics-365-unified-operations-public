@@ -53,6 +53,35 @@ For a detailed list of when each version of the product was released, see [Softw
 <tbody>
 
 <tr class="odd">
+<td>[Russia] Indirect (withholding) taxes Return (VAT and Excise) on import of goods from state members of Customs union.</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Journal of Alcohol sales in Retail</td>
+<td>Daily Alcohol journal. Integration with EGAIS</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Optional posting of transfer orders to GL</td>
+<td>Option to post/not post transactions to General ledger when posting Transfer order</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Inventory owner</td>
+<td>Inventory dimension used to track owner of inventory (consignment stock, bailment, tolling, etc.)</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] AP/AR - 3rd party miscellaneous charges</td>
+<td>Registration of 3rd party misc. charges and allocation by the following regimes: • Inclusion into cost of purchased goods (allocation to invoices lines from other vendors) • Redrawing to other parties • Re-allocation to other expense accounts</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Goods in transit from vendor</td>
+<td>Registering goods in transit from vendor by special posting profile with Items type "purchased items en route". Creating Act of inventory holdings en route (INV-6)</td>
+</tr>
+
+<tr class="odd">
 <td>[Russia] Goods in transit - sales to customer with postponed passing of property</td>
 <td>Post sales invoice with postponed property transfer: no customer debts posted, all outgoing taxes are posted, items are transferred to transit warehouse. Register passing of property with posting debts and items sale from transit warehouse</td>
 </tr>
