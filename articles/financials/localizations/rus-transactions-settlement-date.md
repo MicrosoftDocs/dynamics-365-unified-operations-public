@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up dimension control for settlements
+title: Set up dimension control for settlements (Russia)
 description: This topic explains how to set up dimension control for settlements in Russia.
 author: ShylaThompson
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Set up dimension control for settlements
+# Set up dimension control for settlements (Russia)
 [!include [banner](../includes/banner.md)]
 
 Dimension control for settlements helps you accurately manage and analyze accounting with vendors, customers, and advance holders by financial dimension. When you register vendor or customer operations, such as debts and payments, or advance holder operations, such as advance reports and payments, you can specify financial dimensions during settlement. Because you're still specifying dimensions during settlement, you don't generate correct balances for a specific vendor or customer by financial dimension. Dimension control lets you stop the settlement of invoices and payments that don't have specified dimensions. Dimension control also lets you verify that the financial dimensions match when you settle vendor, customer, or advanced holder operations.
