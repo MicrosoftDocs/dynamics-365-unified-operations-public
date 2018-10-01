@@ -47,6 +47,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
 - [Fixed asset counting](rus-fixed-assets-counting.md)
 - [Fixed asset currency revaluation](rus-fixed-asset-currency-revaluation.md)
+- [Set up and process payment orders](rus-payment-order-settings-processing.md)
 
 
 ## Additional resources
