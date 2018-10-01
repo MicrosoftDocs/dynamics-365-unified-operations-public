@@ -80,7 +80,7 @@ In this release of Finance and Operations, numerous extensibility enhancements h
 ## Phantom items
 The Phantom line type can be used for the lines of a bill of materials (BOM) and multilevel BOM structures. Phantom BOMs can also be used for a BOM that has a route network. 
 
-For more information, see [Phantom items]( ../../supply-chain/production-control/phantom-items.md).
+For more information, see [Phantom items](../../supply-chain/production-control/phantom-items.md).
 
 ## Russian localization
 Dynamics 365 for Finance and Operations now supports mandatory regulatory requirements in Russia (for on-premises deployment only). This release of Russian localization covers the following functional areas: accounts payable, accounts receivable, advance holders, bank and cash, export part of Client-Bank interface, fixed assets, general ledger and G/L reporting, electronic reporting for financial reports, inventory, addresses/FIAS, VAT and profit tax registers in areas of cash movement, goods movement, rated expenses, deferred expenses, exchange difference and WIP. 
