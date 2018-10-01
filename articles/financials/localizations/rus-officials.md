@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up officials
+title: Set up officials (Russia)
 description: This topic explains how to set up officials in Microsoft Dynamics 365 for Finance and Operations in Russia.
 author: ShylaThompson
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Set up officials 
+# Set up officials (Russia)
 [!include [banner](../includes/banner.md)]
 
 This topic explains how to set up officials who generate transportation invoices and job tickets in Microsoft Dynamics 365 for Finance and Operations in Russia, and who are involved in various reports.
