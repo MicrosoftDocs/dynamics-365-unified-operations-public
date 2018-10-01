@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Create and acquire assets from accounts payable
+title: Create and acquire assets from Accounts payable
 description: This task guide will walk through creation and acquisition of a fixed asset with the purchasing process. 
 author: saraschi2
 manager: AnnBe 
-ms.date: 11/10/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,24 +13,24 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTableLookup, InventItemIdLookupSimple, AssetTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Create and acquire assets from accounts payable
+# Create and acquire assets from Accounts payable
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This task guide will walk through creation and acquisition of a fixed asset with the purchasing process. It uses the Accountant and Accounts payable clerks and the demo company USMF.
+This task guide will walk through creation and acquisition of a fixed asset with the purchasing process.  It uses the Accountant and Accounts payable clerks and the demo company USMF .
 
 
 ## Set Fixed assets parameters

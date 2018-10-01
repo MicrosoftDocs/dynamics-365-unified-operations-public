@@ -42,8 +42,7 @@ Upgrade analyzer gathers data from your AX 2012 environment as part of the regul
 
 You can view the results of the System diagnostic service in a Microsoft Power BI report in LCS. The report presents a list of tasks that you should complete in the AX 2012 environment.
 
-To access the Upgrade analyzer report, go to https://diag.lcs.dynamics.com/UpgradeAnalysisReport/Report/<ProjectID>
-(Replace <ProjectID> with your current project ID which is an integer that can be found in the URL of your current LCS project)
+To access the Upgrade analyzer report, go to https://diag.lcs.dynamics.com/UpgradeAnalysisReport/Report/"ProjectID" (Replace "ProjectID" with your current project ID, which is an integer that can be found in the URL of your current LCS project).
 
 The following illustration shows an overview of the procedure for using Upgrade analyzer.
 

@@ -134,7 +134,7 @@ You can find similar sample code in the Retail software development kit (SDK), a
         if (isNaN(cart.TotalAmount) || cart.TotalAmount <= 0) {
             return "$0.00";
         }
-        return "$" + (cart.TotalAmount \* 0.1).toFixed(2).toString();
+        return "$" + (cart.TotalAmount * 0.1).toFixed(2).toString();
     }
     ```
 

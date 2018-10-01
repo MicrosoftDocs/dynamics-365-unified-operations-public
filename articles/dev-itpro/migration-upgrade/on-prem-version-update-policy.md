@@ -5,7 +5,7 @@ title: Software lifecycle policy and on-premises releases
 description: This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 for Finance and Operations (on-premises) releases.
 author: RyanCCarlson2 
 manager: AnnBe
-ms.date: 07/06/2018
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -54,8 +54,10 @@ Application and Platform releases expire at the end of the month of their softwa
 
 | Release          |Version         | Build number          | Availability | Expiration date  | Product life | 
 |------------------|----------------------|------------------|--------------|---------------|-----------------|
-|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 | 7.3.11971  | March 2018 | April 2020     | December 2027  |
+|  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | 7.3 | 7.3.11971  | March 2018 | April 2020*     | December 2027  |
 |  Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) | July 2017 | 7.2.11792 | June 2017 | April 2019     | December 2027  |
+
+\* All customers must be on the latest version of Finance and Operations by April 30, 2019.  However, we are making an exception for customers who have unfulfilled [extension requests](../extensibility/extensibility-home-page.md) that have been submitted to Microsoft. Those customers can be on version 7.3 until April 2020. For more information, see [FAQ for Dynamics 365 Update Policies](https://docs.microsoft.com/en-us/dynamics365/get-started/faq-update-policy).
 
 ### Platform Releases
 

@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This glossary defines key terms and concepts in Microsoft Dynamics 365 for Finance and Operations. 
 
-### **A**
+## **A**
 
 ###### **accounting journal**
 
@@ -66,7 +66,7 @@ The process of classifying time periods by age.
 
 The number of days in a time period used to report an overdue customer payment balance.
 
-### **B**
+## **B**
 
 ###### **balance sheet**
 
@@ -139,7 +139,7 @@ The combination of a number of products for sale as one unit.
 
 A semi-autonomous operating unit that is created to meet strategic business objectives.
 
-### **C**
+## **C**
 
 ###### **capacity load**
 
@@ -201,7 +201,7 @@ An alphanumeric identifier that represents a currency unit.
 
 The time taken to complete an activity.
 
-### **D**
+## **D**
 
 ###### **dashboard**
 
@@ -251,7 +251,7 @@ An application service for storing and handling an organization's documents.
 
 In the security model, a set of application access privileges that are required for a user to carry out their responsibilities.
 
-### **E**
+## **E**
 
 ###### **EFT (electronic funds transfer)**
 
@@ -269,7 +269,7 @@ A lean concept that is used to establish a regular repeating production cycle.
 
 Customizing an application by adding functionality to existing code.
 
-### **F**
+## **F**
 
 ###### **financial dimension**
 
@@ -303,7 +303,7 @@ A numeric relationship among production process inputs and production process ou
 
 An output of a batch process controlled by a formula.
 
-### **G**
+## **G**
 
 ###### **general budget reservation**
 
@@ -317,7 +317,7 @@ The time period beyond a specified date during which an obligation can be fulfil
 
 A value-added tax levied in some countries/regions.
 
-### **I**
+## **I**
 
 ###### **intercompany**
 
@@ -335,7 +335,7 @@ A product family grouping that is used for forecast and demand scheduling.
 
 A reference to the item allocation group or the item and its product dimensions in a kanban rule.
 
-### **K**
+## **K**
 
 ###### **kanban**
 
@@ -357,7 +357,7 @@ The withdrawal of product components from inventory in order to complete the kan
 
 A rule in a lean manufacturing system that realizes material planning and replenishment policies by controlling how process and transfer activities are coordinated in production flows.
 
-### **L**
+## **L**
 
 ###### **lean manufacturing**
 
@@ -379,7 +379,7 @@ An alphanumeric key that grants a party the right to use software or software co
 
 The ability of a party to use current assets to settle current liabilities.
 
-### **M**
+## **M**
 
 ###### **master scheduling**
 
@@ -393,13 +393,13 @@ A model contains code elements and reference metadata. It is created and inspect
 
 A model is a group of elements (source files and metadata) that constitutes a distributable software solution. The model is a design-time concept.
 
-### **N**
+## **N**
 
 ###### **NBV (net book value)**
 
 The value of a fixed asset calculated as the difference between the original cost of the fixed asset minus its accumulated depreciations.
 
-### **O**
+## **O**
 
 ###### **object permission**
 
@@ -417,7 +417,7 @@ The physical products that result from an activity.
 
 A method of customizing source code by providing new source code that overrides the default source code.
 
-### **P**
+## **P**
 
 ###### **package**
 
@@ -507,13 +507,13 @@ A source document that documents an offer to purchase a quantity of product for 
 
 A source document that documents product requests so that they can be submitted for review and be used to authorize purchasing by a purchasing organization.
 
-### **Q**
+## **Q**
 
 ###### **quantity variance**
 
 The difference between an ordered product quantity and a received product quantity when no more receipts are expected.
 
-### **R**
+## **R**
 
 ###### **receipt advice**
 
@@ -539,8 +539,7 @@ A source document that documents an invitation to bid on supplying a quantity of
 
 The person who requests the economic resources.
 
-
-### **S**
+## **S**
 
 ###### **sales agreement**
 
@@ -590,8 +589,7 @@ The product quantity documented on a source document line that creates a pegging
 
 An estimate of future demand that is created by applying a forecasting algorithm to historical transaction data.
 
-
-### **T**
+## **T**
 
 ###### **takt time**
 
@@ -621,7 +619,7 @@ The quantity of one or more items that is transferred or that can be transferred
 
 A matching policy that requires one or more vendor invoice prices to match with one or more purchase order prices.
 
-### **V**
+## **V**
 
 ###### **value stream**
 
@@ -643,7 +641,7 @@ A listing of product offerings that are available for purchase from a vendor.
 
 A source document that documents a vendor payment request. A vendor invoice can refer to one or more purchase orders. When the vendor invoice is authorized, a payment can be made to the vendor.
 
-### **W**
+## **W**
 
 ###### **work cell**
 

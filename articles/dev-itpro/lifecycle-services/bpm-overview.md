@@ -43,7 +43,7 @@ BPM is compatible with the following programs:
 
 ## Prerequisites
 
-To effectively use BPM, you must have Microsoft Office 2010 and a Microsoft Visual Studio Team Services (VSTS) project.
+To effectively use BPM, you must have Microsoft Office 2010 and a Microsoft Azure DevOps project.
 
 ## Getting started
 
@@ -64,7 +64,7 @@ Follow these steps to access BPM.
 The following topics provide more information about how to work with BPM libraries:
 
 - [Create, edit, or browse a BPM library](creating-editing-browsing.md)
-- [Synchronize a BPM library with Visual Studio Team Services](synchronize-bpm-vsts.md)
+- [Synchronize a BPM library with Azure DevOps](synchronize-bpm-vsts.md)
 - [Complete tasks in BPM](complete-tasks-bpm.md)
 - [Use activity diagrams with BPM](using-activity-diagrams.md)
 - [Business process libraries in Business process modeler](business-process-libraries-business-process-modeler.md)

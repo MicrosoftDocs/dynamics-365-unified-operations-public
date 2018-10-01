@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Depreciate fixed assets with reduction entry posted (Japan)
+title: Depreciation of fixed assets with reduction entry posted
 description: Use this task to learn how to run fixed asset depreciation with reduction entries. In order to complete this task, the Fixed Asset configuration key must be selected. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 02/15/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,24 +13,24 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Depreciate fixed assets with reduction entry posted (Japan)
+# Depreciation of fixed assets with reduction entry posted
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Use this task to learn how to run fixed asset depreciation with reduction entries.
+Use this task to learn how to run fixed asset depreciation with reduction entries
 
 
 

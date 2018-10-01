@@ -5,7 +5,7 @@ title: Get support for Finance and Operations or Lifecycle Services (LCS)
 description: This article explains how to get help with Microsoft Dynamics 365 for Finance and Operations or Microsoft Dynamics Lifecycle Services (LCS). 
 author: kfend
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,8 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article explains how to get help with Finance and Operations or Microsoft Dynamics Lifecycle Services (LCS). 
 
-Contact support
----------------
+## Contact support
 
 Use the information in this article to contact Microsoft if you have technical questions about Finance and Operations, or if you need help accessing Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -59,7 +58,7 @@ To obtain support for Finance and Operations or LCS, use the resources in the fo
 <tbody>
 <tr class="odd">
 <td>Ask the community.</td>
-<td>Go to the <a href="http://go.microsoft.com/fwlink/?LinkId=221068"><span style="color: #0066cc;">Ask The Community</span></a> page to find help with your questions from the Dynamics community.</td>
+<td>Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Dynamics 365 for Finance and Operations community</span></a> page to find help with your questions from the Dynamics community.</td>
 </tr>
 <tr class="even">
 <td>Use the Issue search tool.</td>
@@ -94,7 +93,9 @@ For technical questions that are related to signing in to and accessing Customer
 </tbody>
 </table>
 
-For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 
-
+## Additional resources
+- [Get support for Dynamics 365 for Retail](../../retail/retail-support.md)
+- [Get support for Dynamics 365 for Talent](../../talent/talent-support.md)
+- For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 
