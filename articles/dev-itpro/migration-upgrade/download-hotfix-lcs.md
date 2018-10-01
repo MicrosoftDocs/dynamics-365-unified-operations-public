@@ -67,9 +67,9 @@ Customers that have Dynamics 365 for Retail deployed will see a single tle that 
 - **Dynamics 365 for Finance and Operations** 
    1. Application Version 8.1 onwards - Starting with this release you will see a **single tile** for service updates since any customizations are done via extensions and there is no code overlayering. This tile will be a cumulative combined binary update of all the application and platform changes. There will be no granular X++ updates starting with this release. Everything will be a cumulative update. 
  
-   2. Application Version 7.x or 8.0 and greater Platform Update 4 - For customers that are on this combination, you will see all the 4 tiles listed above. This release will still have the granular X++ updates. Starting with Platform Update 4, no overlayering is allowed on the platform modules and hence Platform Binary Update tile is available that provides the platform updates as a cumulative update. 
+   2. Application Version 7.x or 8.0 with Platform Update 4 or higher - For customers that are on this combination, you will see all the 4 tiles listed above. This release will still have the granular X++ updates. Starting with Platform Update 4, no overlayering is allowed on the platform modules and hence Platform Binary Update tile is available that provides the platform updates as a cumulative update. 
 
-  3. Application Version 7.x and less than Platform Update 4 - For customers that are on this combination, you will see 3 tiles - All X++ Updates, Critical X++ Updates and All binary updates. Since in this release platform can still be overlayered, there is no Platform binary update tile. 
+  3. AApplication Version 7.x with Platform Update 3 or lower - For customers that are on this combination, you will see 3 tiles - All X++ Updates, Critical X++ Updates and All binary updates. Since in this release platform can still be overlayered, there is no Platform binary update tile. 
   > [!NOTE]
     > If you are on this release, you need to upgrade as soon as possible. 
    
