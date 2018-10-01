@@ -253,6 +253,8 @@
         href: extensibility/extensibility-changes-803.md
       - name: Extensibility changes version 8.0.4
         href: extensibility/extensibility-changes-804.md
+      - name: Extensibility changes version 8.1
+        href: extensibility/extensibility-changes-81.md       
     - name: Fundamentals
       items:
       - name: Intrusive customizations
