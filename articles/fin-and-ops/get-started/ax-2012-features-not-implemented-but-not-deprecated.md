@@ -47,7 +47,7 @@ For a detailed list of when each version of the product was released, see [Softw
 <tr class="header">
 <th>AX 2012 feature that was postponed</th>
 <th>Description</th>
-<th>Current status (as of October 2019)
+<th>Current status (as of October 2018)
 </tr>
 </thead>
 <tbody>
