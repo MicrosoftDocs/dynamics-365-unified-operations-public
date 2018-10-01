@@ -5,7 +5,7 @@ title: Set up fixed assets (Russia)
 description:
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/28/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -66,7 +66,7 @@ Use this procedure to set up value models for fixed assets.
 
 9.  Click the **FA value submodels** FastTab to create sub-models or derived models for the value model (optional). Click the **Add** button to create a new submodel. Then fill in the **Value model** field (select a derived model for the value model) and the **Transaction type** field (select the type of transaction that the derived model is associated with).
 
-10. Click **Depreciation groups** to define depreciation groups for the value model (see [Set up depreciation groups](rus-fa-daily-op/articles/financials/localizations/rus-depreciation-setup.md#Set-up-depreciation-groups)). 
+10. Click **Depreciation groups** to define depreciation groups for the value model. For more information, see [Set up depreciation groups](rus-depreciation-setup.md#Set-up-depreciation-groups). 
 
 ## Set up fixed asset posting profiles 
 
