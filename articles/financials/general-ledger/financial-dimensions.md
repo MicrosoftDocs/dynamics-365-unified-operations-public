@@ -101,7 +101,7 @@ If records already exist for the dimension, the master records are updated when 
 
 You can configure a dimension so that information for other dimensions is automatically entered when you enter that dimension in a document. For example, if you enter cost center 10, a value of **20** can be automatically entered in the department dimension.
 
-You can set up derived values on the dimension page.
+You can set up derived values on the dimensions page.
 
 1. Select a dimension and then select **Derived dimensions**.
 
