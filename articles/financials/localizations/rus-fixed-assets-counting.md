@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fixed asset counting for Russia
+title: Fixed asset counting (Russia)
 description: This topic provides information about fixed asset counting for Russia.
 author: ShylaThompson
 manager: AnnBe
