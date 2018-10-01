@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Set up bank accounts for Russia
+title: Set up bank accounts (Russia)
 description: This topic provides information about local settings and prerequisites for bank modules for Russia. 
 author: anasyash
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Set up bank accounts for Russia
+# Set up bank accounts (Russia)
 
 Before working in the **Bank management** workspace, you should complete the following procedures to ensure that you have the prerequisites needed for setting up bank accounts for Russia.
 
