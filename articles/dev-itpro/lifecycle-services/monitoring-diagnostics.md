@@ -46,7 +46,7 @@ The telemetry data that is the basis of the Monitoring and diagnostics portal in
 In business operations software, you should always know whether your environment is up and running, so that it can perform business operations. You should also be able to easily view the health of the environment through LCS. Microsoft supports two types of monitoring capabilities:
 
 -   **Availability monitoring** – This type of monitoring performs a check against the environment to make sure that it's available at all times. If the check fails, the Microsoft Service Engineering team is immediately notified.
--   **Health monitoring** – In addition to availability checks, some basic health checks must be performed. These basic health checks include CPU level, memory consumption of the virtual machines (VMs), and the total number of deadlocks in a five-minute period. Microsoft Telemetry Infrastructure collects lots of health metrics from the environments. If a metric crosses a threshold value, the Microsoft Service Engineering term is alerted so that it can investigate the issue.
+-   **Health monitoring** – In addition to availability checks, some basic health checks must be performed. These basic health checks include CPU level, memory consumption of the machines, and the total number of deadlocks in a five-minute period. Microsoft Telemetry Infrastructure collects lots of health metrics from the environments. If a metric crosses a threshold value, the Microsoft Service Engineering term is alerted so that it can investigate the issue.
 
 ### Diagnostics
 
@@ -61,7 +61,7 @@ For a managed cloud service such as Dynamics 365 for Finance and Operations, Mic
 
 ## Access the Monitoring and diagnostics portal
 1.  Open LCS, and navigate to the appropriate project.
-2.  In the **Environments** section, select the environment to view, and then click **Full details**.
+2.  In the **Environments** section, select the **environment** to view, and then click **Full details**.
 3.  On the **Environment details** page, click **Environment monitoring** to open the Monitoring and diagnostics portal. [![howtogettoenvmonitoring](./media/howtogettoenvmonitoring-1024x486.jpg)](./media/howtogettoenvmonitoring.jpg)
 
 ## Tools
