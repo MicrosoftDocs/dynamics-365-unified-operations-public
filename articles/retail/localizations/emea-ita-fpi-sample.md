@@ -98,13 +98,19 @@ The Hardware Station extension components are included in Retail SDK. To complet
 ### Setup registration process
 To enable registration process we should setup the Headquater in the following way:
 1. Open Retail\Channel Setup\Fiscal Integration\Fiscal Connectors - import configuration from RetailSdk\SampleExtensions\CommerceRuntime\Entension.DocumentProvider.EpsonFP90IIISample\Configuration\DocumentProviderEpsonFP90IIISample.xml
+![alt text](media/emea-ita-fpi-fiscalconnector.png "Fiscal connector")
 2. 	Open Retail\Channel Setup\Fiscal Integration\Fiscal Document providers- import configuration from RetailSdk\SampleExtensions\HardwareStation\Entension.EpsonFP90IIIFiscalDeviceSample\Configuration\ConnectorEpsonFP90IIISample.xml
+![alt text](media/emea-ita-fpi-documentprovider.png "Document provider")
 3. Open Retail\Channel Setup\Fiscal Integration\Connector Technical profiles - create a new one and select loaded connector from step above.
     * Update connection settings if needed.
+![alt text](media/emea-ita-fpi-technicalprofile.png "Technical profile")
 4. Open Retail\Channel Setup\Fiscal Integration\Connector Functional profiles - create a new one and select loaded connector and document provider from steps above.
 	* Update Data Mapping settings if needed
+![alt text](media/emea-ita-fpi-fiscalfunctionalityprofile.png "Connector functional profile")
 5. Open Retail\Channel Setup\Fiscal Integration\Connector Functional Group - create a new group and select connector functional profile from the step above.
+![alt text](media/emea-ita-fpi-connectorgroup.png "Connector group")
 6. Open Retail\Channel Setup\Fiscal Integration\Registration Process -  create a new process. Select connector functional group from the step above.
+![alt text](media/emea-ita-fpi-registrationprocess.png "Registration process")
 7. Open Functionality profile  linked to store were registration process should be activated. Expand Fiscal registration process fast-tab. Select created registration process from step above.
 8. Open Hardware profile that linked to hardware station to which fiscal printer will be connected.  Expand fiscal peripherals fast tab. Select connector technical profile.
 9. 	Open Distribution scheduler and  job 1070 to transfer data to Channel Database.
