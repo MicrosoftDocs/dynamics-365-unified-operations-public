@@ -220,7 +220,7 @@ The calculated value is rounded according to the configuration of Fixed assets.
 
 In the example, the component balance value is 3,000 after revaluation transaction 1 and 4,090.91 after revaluation transaction 2.
 
-The added component depreciation that is calculated equals the balance value. In this case, the depreciation revaluation transactions and depreciation accrual transactions are identical to the revaluation transaction.
+Calculation of the added component depreciation is similar to the calculation of the balance value. In this case, the depreciation revaluation transactions and depreciation accrual transactions are identical to the revaluation transaction.
 
 A table is created for every component that is withdrawn from the fixed asset composition. The lines of the table include all depreciation accrual and depreciation revaluation transactions that were completed after acquisition, except depreciation revaluation transactions that were triggered by disassembly transactions. See the following table.
 
