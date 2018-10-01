@@ -2123,13 +2123,8 @@
           href: ../financials/localizations/rus-payment-order-settings-processing.md      
         - name: Advance holders
           href: ../financials/localizations/rus-advance-holders.md
-          items: 
-          - name: Daily operations for advance holders
-            href: ../financials/localizations/rus-advance-holders-daily-operations.md
-          - name: Create and post vendor invoices with advance holder details
-            href: ../financials/localizations/rus-daily-operations-handling-cash-closing-balance.md   
-          - name: Set up parameters for advance holders
-            href: ../financials/localizations/rus-registration-setup.md
+        - name: Daily operations for advance holders
+          href: ../financials/localizations/rus-advance-holders-daily-operations.md
         - name: Fixed assets
           items: 
           - name: Acquiring fixed assets and putting them into operation
