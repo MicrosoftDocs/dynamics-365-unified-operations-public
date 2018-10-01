@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Depreciation bonus (Russia)
+title: Depreciation bonuses (Russia)
 description: This topic provides information about depreciation bonuses for Russian fixed assets.
 author: anasyash
 manager: AnnBe
@@ -29,44 +29,49 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Depreciation bonus (Russia)
+# Depreciation bonuses (Russia)
 
 [!include [banner](../includes/banner.md)]
 
-You can calculate bonus depreciation by reducing the value of an asset by means other than the usual rate of depreciation. You can apply bonus depreciation amounts during the accounting period, after the asset is put into operation or after major repair. Bonus depreciation is always calculated and applied before other types of depreciation.
+The depreciation bonus is an additional depreciation amount that is assessed during the first year for some asset types that are operational.
+
+You can calculate a depreciation bonus by reducing the value of an asset through means other than the usual rate of depreciation. You can apply depreciation bonus amounts during the accounting period, after the asset is put into operation, or after major repairs. Depreciation bonuses are always calculated and applied before other types of depreciation.
 
 > [!NOTE]
-> You can restore the bonus depreciation for a fixed asset only if you sell the fixed asset to an affiliated customer within five years of placing the fixed asset into operation. For more information, see [Set up an affiliated customer](#set-up-an-affiliated-customer).
+> You can restore the depreciation bonus for a fixed asset only if you sell the fixed asset to an affiliated customer within five years after you put the fixed asset into operation. For more information, see the [Set up an affiliated customer](#set-up-an-affiliated-customer) section.
 
-## Set up bonus depreciation 
+## Set up a depreciation bonus
 
-1.  Click **Fixed assets (Russia)** \> **Setup** \> **Depreciation bonus**.
-2.  Click **New** to create a new bonus depreciation allowance.
-3.  In the **Depreciation bonus** field, enter a unique identification code to determine the bonus depreciation allowance and in the **Description** field, enter a description.
-4.  In the **Depreciation bonus percent** field, enter the percentage of the depreciation bonus.
+1. Select **Fixed assets (Russia)** \> **Setup** \> **Depreciation bonus**.
+2. Select **New** to create a depreciation bonus allowance.
+3. In the **Depreciation bonus** field, enter a unique identifier for the depreciation bonus allowance. In the **Description** field, enter a description.
+4. In the **Depreciation bonus percent** field, enter the percentage of the depreciation bonus.
 
-## Calculate a bonus depreciation 
+## Calculate a depreciation bonus
 
-The depreciation bonus is an additional depreciation amount that is assessed during the first year for some asset types that are operational. The depreciation bonus is calculated only for the tax value model. You must set up a posting profile before you can calculate the depreciation bonus for fixed assets.
+The depreciation bonus is calculated only for the tax value model. You must set up a posting profile before you can calculate the depreciation bonus for fixed assets.
 
-1.  Click **Fixed assets (Russia)** \> **Periodic** \> **Depreciation bonus initialization**.
-2.  In the **Value model** field, select a model for the depreciation bonus.
-3.  In the **Depreciation bonus** field, select the bonus ID that you create in the **Depreciation bonus** form.
-4.  Click **Records to include/ Filter** to open the **Inquiry** form. Then enter the selection criteria for the fixed asset or fixed asset group to create the transaction for.
-5.  Click **OK**. The depreciation bonus percentage is updated in the **Depreciation bonus** field in the **FA transactions** form.
-    
+1. Select **Fixed assets (Russia)** \> **Periodic** \> **Depreciation bonus initialization**.
+2. In the **Value model** field, select a model for the depreciation bonus.
+3. In the **Depreciation bonus** field, select the depreciation bonus ID that you created in the previous section.
+4. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box. Then enter criteria that are used to select the fixed asset or fixed asset group that the transaction should be created for.
+5. Select **OK**. The depreciation bonus percentage is updated in the **Depreciation bonus** field on the **FA transactions** page.
+
     > [!NOTE]
-    > When you post a depreciation transaction, two transactions are created in the FA journal (**Fixed assets (Russia)** \> **Journals**) to register the depreciation and the depreciation bonus.
+    > When you post a depreciation transaction, two transactions are created in the Fixed asset journal (**Fixed assets (Russia)** \> **Journals** \> **FA journal**). One transaction registers the depreciation, and the other transaction registers the depreciation bonus.
 
-## Set up an affiliated customer 
+## Set up an affiliated customer
 
-Use the **Customers** page to affiliate a customer with an intercompany. If you sell a fixed asset to an affiliated customer within five years of placing the fixed asset into operation, then you can restore the bonus depreciation for the fixed asset.
+Use the **All customers** page to affiliate a customer with an intercompany. If you sell a fixed asset to an affiliated customer within five years after you put the fixed asset into operation, you can restore the depreciation bonus for the fixed asset.
 
-1.  Click **Accounts receivable** \> **Common** \> **Customers** \> **All customers**.
+1. Select **Accounts receivable** \> **Customers** \> **All customers**.
+
     –or–
-    Click **Sales and marketing** \> **Common** \> **Customers** \> **All customers**.
-2.  On the **All customers** list page, on the **Action Pane**, click **Customer** to create a customer, or open an existing customer record.
-3.  In the **Customers** page, on the **Invoice and delivery** FastTab, select the **Affiliated** check box to affiliate the customer with an intercompany.
+
+    Select **Sales and marketing** \> **Customers** \> **All customers**.
+
+2. On the **All customers** list page, on the Action Pane, select **New** to create a customer, or open an existing customer record.
+3. In the customer record, on the **Invoice and delivery** FastTab, set the **Affiliated** option to **Yes** to affiliate the customer with an intercompany.
 
 ## Additional resources
 
