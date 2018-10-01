@@ -37,13 +37,13 @@ Ledger settlements let you match debit and credit transactions in the general le
 
 ## Enable advanced ledger settlements
 
-The advanced ledger settlements form provides additional capabilities for filtering and selecting transactions. To enable advanced ledger settlements, follow these steps.
+The advanced ledger settlements page provides additional capabilities for filtering and selecting transactions. To enable advanced ledger settlements page, follow these steps.
 
 1. Select **General ledger** \> **Ledger setup** \> **General ledger parameters**. 
-2. On the **Ledger settlements** tab, set the **Advanced ledger settlement** option to **Yes** to turn on the advanced ledger settlement functionality.
+2. On the **Ledger settlements** tab, set the **Advanced ledger settlement** option to **Yes** to turn on the advanced ledger settlement functionality. The advanced **Ledger settlements** page will be used when you select **Ledger settlements** in the **Periodic tasks**. 
 3. You must enter the list of accounts to use for ledger settlements for each chart of accounts. This list is used to filter the list of transactions that appears on the **Ledger settlements** page. In the **Chart of accounts** list, select a chart of accounts, and then select **New** to add new accounts to the list.
 
-## Settle transactions by using advanced ledger settlements
+## Settle transactions by using the advanced ledger settlements page
 
 To settle ledger transactions, follow these steps.
 
@@ -72,14 +72,12 @@ The **Ledger settlements** page includes capabilities that make it easier to see
 
 You can reverse a settlement that was made by mistake.
 
-1. Follow the steps earlier in this topic to show the transactions that you're looking for.
+1. Follow steps 1 through 3 in the "Settle transactions by using advanced ledger settlements page" section to show the transactions that you're looking for.
 2. In the **Status** filter, select **Settled**.
 3. Select one or more lines that you're considering for reversal. The value of the **Selected amount** field at the top of the page increases or decreases by the total amount on the lines that you selected.
 4. After you've finished selecting transactions, select **Mark selected**. A check mark appears in the **Marked** column for each transaction that you selected. Additionally, the value of the **Marked amount** field at the top of the page increases or decreases by the total amount on the lines that you marked.
-5. When the **Marked amount** value is **0** (zero), select **Reverse marked transactions**. The status of the marked transactions is updated to **Unsettled**.
+5. When the **Marked amount** value is **0** (zero), select **Reverse marked transactions**. The status of the marked transactions is updated to **Not settled**.
 
 ## Update the list of accounts that are included in the list of transactions
 
-Select **Ledger settlement accounts** to open a form where you can edit the accounts that are included in the list of transactions. This form is the same form that appears when you select the **Ledger settlements** tab on the **General ledger parameters** page.
-
-Select **New** to add new accounts to the list. This list is used to filter the list of transactions that appears on the **Ledger settlements** page.
+Select **Ledger settlement accounts** to open a dialog box where you can edit the accounts that are included in the list of transactions. Select **New** to add new accounts to the list. This list is used to filter the list of transactions that appears on the **Ledger settlements** page.
