@@ -67,7 +67,7 @@ Use the **Financial dimensions** page to create financial dimensions that you ca
 You can use financial dimensions to represent legal entities. You don't have to create the legal entities in Microsoft Dynamics 365 for Finance and Operations. However, financial dimensions aren't designed to address the operational or business requirements of legal entities. The interunit accounting functionality in Finance and Operations is designed to address only the accounting entries that are created by each transaction.
 
 ## Extensibility enhancements
-In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addtion, enhancements have been made to enumerations and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../dev-itpro/extensibility/extensibility-changes-81.md) 
+In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../dev-itpro/extensibility/extensibility-changes-81.md) 
 
 ## Phantom items
 
