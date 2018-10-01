@@ -2119,12 +2119,13 @@
       - name: Russia
         href: ../financials/localizations/russia.md
         items:
-        - name: Set up and process payment orders
-          href: ../financials/localizations/rus-payment-order-settings-processing.md      
         - name: Advance holders
           href: ../financials/localizations/rus-advance-holders.md
-        - name: Daily operations for advance holders
-          href: ../financials/localizations/rus-advance-holders-daily-operations.md
+          items:
+          - name: Create an advance holder
+            href: ../financials/localizations/emea-advance-holders.md#create-an-advance-holder
+          - name: Daily operations for advance holders
+            href: ../financials/localizations/rus-advance-holders-daily-operations.md            
         - name: Fixed assets
           items: 
           - name: Acquiring fixed assets and putting them into operation
@@ -2137,8 +2138,10 @@
             href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
           - name: Partial fixed asset disassembly (liquidation)
             href: ../financials/localizations/rus-fixed-assets-disassembly.md
-          - name: Set up exchange rates for currency transactions
-            href: ../financials/localizations/rus-exchange-difference.md
+        - name: Set up and process payment orders
+          href: ../financials/localizations/rus-payment-order-settings-processing.md                
+        - name: Set up exchange rates for currency transactions
+          href: ../financials/localizations/rus-exchange-difference.md
         - name: Preview ledger transactions
           href: ../financials/localizations/rus-ledger-transactions-preview.md
         - name: Set up officials
