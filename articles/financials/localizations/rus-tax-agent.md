@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Value-added tax (VAT) for tax agents
+title: Value-added tax (VAT) for tax agents (Russia)
 description: This topic explains how to set up VAT and perform transactions for tax agent for Russia.
 author: ShylaThompson
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
 ---
-# Value-added tax (VAT) for tax agents
+# Value-added tax (VAT) for tax agents (Russia)
 
 [!include [banner](../includes/banner.md)]
 
