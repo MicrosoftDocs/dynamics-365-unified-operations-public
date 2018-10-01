@@ -2143,6 +2143,8 @@
         - href: ../financials/localizations/rus-tax-agent.md
         - name: Set up dimension control for settlements
         - href: rus-transactions-settlement-date.md
+        - name: Fixed asset counting
+        - href: ../financials/localizations/rus-fixed-assets-counting.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
