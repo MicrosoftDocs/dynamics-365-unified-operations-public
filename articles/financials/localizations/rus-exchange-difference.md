@@ -239,7 +239,7 @@ Use the following procedures to create an amount difference facture and link it 
 ### Create an amount difference facture for a sales order
 
 1. Select **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders**.
-2. To post a facture for a sales order, create the sales order, and then, on the **Setup** FastTab, select **Sales tax group** and **Item sales tax group**. <!---For more information, see [Create and update facture for a corrected sales order invoice or sales credit note](rus-revised-corrective-invoice-facture.md).--->
+2. To post a facture for a sales order, create the sales order, and then, on the **Setup** FastTab, select **Sales tax group** and **Item sales tax group**. 
 3. Select **Accounts receivable** \> **Journals** \> **Payments** \> **Payment journal**.
 4. Create a journal, and enter the required details.
 5. Select **Lines** to open the **Journal voucher** page.
