@@ -2118,12 +2118,30 @@
           href: ../financials/localizations/emea-pol-turnover-balances-statement.md
       - name: Russia 
         items:
+        - name: Advance holders
+        - href: ../financials/localizations/rus-advance-holders.md
+          - name: Daily operations for advance holders
+          - href: ../financials/localizations/rus-advance-holders-daily-operations.md
+          - name: Create and post vendor invoices with advance holder details
+          - href: ../financials/localizations/rus-daily-operations-handling-cash-closing-balance.md         
+          - name: Set up parameters for advance holders
+          -href: ../financials/localizations/rus-registration-setup.md
+        - name: Set up exchange rates for currency transactions
+        - href: ../financials/localizations/rus-exchange-difference.md
+        - name: Acquiring fixed assets and putting them into operation
+        - href: ../financials/localizations/rus-fixed-asset-acquisition.md
+        - name: Create and post budget journals for fixed asset acquisitions
+        - href: rus-post-budget-fixed-asset-acquisition.md
+        - name: Preview ledger transactions
+        - href: ../financials/localizations/rus-ledger-transactions-preview.md
+        - name: Set up officials
+        - href: ../financials/localizations/rus-officials.md
         - name: Set up bank accounts
-          href: ../financials/localizations/rus-local-settings-requisites-bank-module.md      
-        - name: Create and post vendor invoices with advance holder details
-          href: ../financials/localizations/rus-daily-operations-handling-cash-closing-balance.md    
-        - name: Set up parameters for advance holders
-          href: ../financials/localizations/rus-registration-setup.md      
+        - href: ../financials/localizations/rus-local-settings-requisites-bank-module.md      
+        - name: Value-added tax (VAT) for tax agents
+        - href: ../financials/localizations/rus-tax-agent.md
+        - name: Set up dimension control for settlements
+        - href: rus-transactions-settlement-date.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
