@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018). This version was released in October 2018 and has build number 8.1.136.24.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018). This version was released in October 2018 and has build number 8.1.136.
 
 ### Announcing the Dynamics 365 October '18 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
@@ -67,7 +67,7 @@ Use the **Financial dimensions** page to create financial dimensions that you ca
 You can use financial dimensions to represent legal entities. You don't have to create the legal entities in Microsoft Dynamics 365 for Finance and Operations. However, financial dimensions aren't designed to address the operational or business requirements of legal entities. The interunit accounting functionality in Finance and Operations is designed to address only the accounting entries that are created by each transaction.
 
 ## Extensibility enhancements
-In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../dev-itpro/extensibility/extensibility-changes-81.md) 
+In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../../dev-itpro/extensibility/extensibility-changes-81.md) 
 
 ## Phantom items
 
@@ -75,9 +75,9 @@ In this release of Finance and Operations, numerous extensibility enhancements h
 ## VAT reporting for the United Arab Emirates	
 Standard sales tax functionality in Finance and Operations now fulfils the majority of legislation requirements of United Arab Emirates VAT law. The following country-specific features are specific to the United Arab Emirates:
 
-  - Legal Entity configuration has been extended with additional fields required in VAT reporting.
-  - VAT Reverse Charge functionality has been enabled for UAE (ARE country context) to properly record taxable domestic operations within GCC territory.
+  - Legal entity configuration has been extended with additional fields required in VAT reporting.
+  - VAT reverse charge functionality has been enabled for UAE (ARE country context) to properly record taxable domestic operations within GCC territory.
   - Additional sales, invoice, and credit notes print layouts have been added with additional columns and VAT summary information.
-  - Sales Invoice and Credit notes for UAE are printing in two languages including new ar-AE Arabic language for user interface.
-  - VAT Return declaration report is printed to electronic file format ready for uploading to e-TAX FTA portal.
-  - Standard Audit File functionality has been shared with UAE local functionality. Required by Federal Tax Authorities FTA VAT audit file - (FAF) can be exported accordingly to required Comma separated file format.
+  - Sales Invoice and Credit notes for UAE now print in two languages, including a new ar-AE Arabic language for user interface.
+  - VAT Return declaration report is printed to an electronic file format ready for uploading to e-TAX FTA portal.
+  - Standard audit file functionality has been shared with UAE local functionality. This is required by bht Federal Tax Authorities FTA VAT audit file - (FAF) and can be exported to a comma separated file format.
