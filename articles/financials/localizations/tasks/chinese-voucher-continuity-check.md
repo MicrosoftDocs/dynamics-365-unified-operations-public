@@ -5,7 +5,7 @@ title: Chinese voucher continuity check
 description: Before you can close a fiscal period, the Chinese voucher numbers for each voucher type must start at 1 and be sequential. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 10/30/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,25 +13,25 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: LedgerCalendar, LedgerCheckList_CN,  SysQueryForm, SysDateLookUp, LedgerTransVoucher, SrsReportViewerForm, LedgerVoucherRenumberLog_CN   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: China (PRC)
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Chinese voucher continuity check
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Before you can close a fiscal period, the Chinese voucher numbers for each voucher type must start at 1 and be sequential.
-This procedure shows how to check all posted vouchers in a fiscal period and renumber the Chinese voucher numbers to be sequential. This process is part of the fiscal period closing process, so it can only be run for On hold fiscal periods. The first sub task walks you through stopping a fiscal period. 
+This procedure shows how to check all posted vouchers in a fiscal period and renumber the Chinese voucher numbers to to be sequential. This process is part of the fiscal period closing process, so it can only be run for On hold fiscal periods. The first sub task walks you through stopping a fiscal period. 
 
 This procedure was created using the demo data company CNMF. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 

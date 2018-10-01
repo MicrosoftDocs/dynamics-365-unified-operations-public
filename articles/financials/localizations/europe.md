@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in Brazil. 
+This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in Europe. 
 
 - [Advance holders](emea-advance-holders.md)
  - [Advance holders transactions](emea-advance-holders-transactions.md)
@@ -49,9 +49,7 @@ This topic includes information and links to resources that can help you set up 
 - [File formats for methods of payment](emea-select-file-formats-for-the-method-of-payments.md)
 - [Fiscal service (ESR) integration](emea-fiscal-service-integration.md)
 - [Fixed assets disposal for Estonia and Lithuania](emea-credit-note-reverse-fixed-asset-sale.md)
-- [Foreign currency revaluation](emea-foreign-currency-revaluation.md)
 - [Generate a transfer document for an internal inventory transfer](tasks/transfer-document-internal-inventory-transfer.md)
-- [Generate an EU Intrastat declaration](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Generate an EU sales list report](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022 files
   - [Import ISO20022 files](emea-ISO20022-file-formats.md)
@@ -66,6 +64,8 @@ This topic includes information and links to resources that can help you set up 
   - [Create and export vendor payments using ISO20022 payment format](tasks/create-export-vendor-payments-iso20022-payment-format.md)
 - [Intrastat](emea-intrastat.md)
   - [Transfer transactions to the Intrastat](tasks/transfer-transactions-intrastat.md)
+  - [Specify a lading address for an intra-community transaction](tasks/eur-00002-specify-lading-address-intra-community.md)
+  - [Generate an EU Intrastat declaration](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Inventory journal reports](emea-set-up-report-inventory-journal-names.md)
 - [Invoice issue deadlines](emea-invoice-issue-deadline.md)
 - [Invoice processing](emea-invoice-processing.md)
@@ -87,8 +87,6 @@ This topic includes information and links to resources that can help you set up 
 - [Set up EU sales list reporting](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Set up payment slip format for project invoices](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Set up signers for print forms](emea-set-up-signers-for-printing-forms.md)
-- [Set up the transfer documents for goods movement inside a company](tasks/set-up-transfer-documents-goods-movement-inside-company.md)
-- [Specify a lading address for an intra-community transaction](tasks/eur-00002-specify-lading-address-intra-community.md)
 - [Storno accounting](emea-storno.md)
 - [Tax directives](emea-tax-directives.md)
 - [Update how amounts are displayed on reports and documents](emea-amount-printing-forms.md)

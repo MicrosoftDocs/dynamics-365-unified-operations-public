@@ -5,7 +5,7 @@ title: Define coverage rules for items
 description: The demo data company used to create this procedure is USMF. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 11/02/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: ReqGroup, DefaultDashboard, EcoResProductDetailsExtended, EcoResProductCreate, InventItemOrderSetup, ReqItemTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Define coverage rules for items
 
@@ -104,7 +104,7 @@ The demo data company used to create this procedure is USMF. This procedure show
 4. Click the General tab.
 5. Check the box on the header of Override coverage group settings.
 6. In the Coverage time fence (days) field, enter '60'.
-    * Although items in coverage group Requirement are planned 90 days ahead, this item will be planned 60 days ahead.  
+    * Although items in coverage group Requiremen are planned 90 days ahead, this item will be planned 60 days ahead.  
 7. In the Negative days field, enter '2'.
 8. In the Positive days field, enter '2'.
 9. Click the Lead time tab.

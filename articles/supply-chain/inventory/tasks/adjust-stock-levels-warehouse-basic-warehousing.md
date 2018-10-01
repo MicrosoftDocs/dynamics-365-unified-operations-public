@@ -1,30 +1,30 @@
----
-# required metadata
-
+--- 
+# required metadata 
+ 
 title: Adjust stock levels in the warehouse (basic warehousing)
-description: This procedure walks you through the process of creating and posting an inventory adjustment journal in order to adjust stock levels of products in the warehouse.
+description: This procedure walks you through the process of creating and posting an inventory adjustment journal in order to adjust stock levels of products in the warehouse. 
 author: MarkusFogelberg
-manager: AnnBe
-ms.date: 11/14/2016
-ms.topic: business-process
+manager: AnnBe 
+ms.date: 08/29/2018
+ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-applications 
 ms.technology:  
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
+ 
+# optional metadata 
+ 
+ms.search.form: InventJournalLossProfit, InventJournalCreate, InventLocationIdLookup   
+audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2016-06-30 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Adjust stock levels in the warehouse (basic warehousing)
 
@@ -61,3 +61,4 @@ This procedure walks you through the process of creating and posting an inventor
 4. Click OK.
 5. Close the form.
 6. Close the page.
+
