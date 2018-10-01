@@ -69,7 +69,7 @@ If you're using a BPM library that already has all of the necessary task recordi
 
  >[!NOTE]
  > To enable the effective execution of your tests using automation tools, make sure all of your task recordings start on the main dashboard of Dynamics 365 for Finance and Operations.
- > For end to end processes that are performed by more than one user, we recommend you divide your task recordings into user-specific tasks. It simplifies maintenance of test cases and allows you to execute test cases in the context of security roles, which is a best a practice. 
+ > For end-to-end processes that are performed by more than one user, we recommend that you divide your task recordings into user-specific tasks. This simplifies the maintenance of test cases and allows you to execute test cases in the context of security roles, which is a best a practice. 
 
 #### Upload an AXTR file to BPM
 If you have saved your recordings (AXTR files) to disk, follow these steps to upload them to BPM.
