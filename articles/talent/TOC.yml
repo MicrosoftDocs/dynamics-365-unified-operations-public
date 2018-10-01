@@ -6,6 +6,8 @@
     items:
     - name: What's new or changed
       items:
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 1, 2018)
+        href: whats-new-talent-october-01.md 
       - name: What's new or changed in Dynamics 365 for Talent Core HR (September 24, 2018)
         href: whats-new-talent-september-24.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (September 17, 2018)
@@ -49,8 +51,13 @@
       href: formalize-business-processes.md
     - name: Use workflows to manage employee information
       href: workflow-manage-employee-information.md
-    - name: Leave and absence management
-      href: leave-absence-overview.md
+  - name: Manage leave and absence
+    href: leave-absence-overview.md
+    items:
+    - name: Accrue time off based on hours worked
+      href: leave-accrue-hours-worked.md
+    - name: Working time calendars
+      href: working-time-calendars.md
   - name: Staff your organization
     items:
     - name: Attract features and capabilities
@@ -67,6 +74,8 @@
       href: create-variable-compensation-plans.md
     - name: Process compensation
       href: process-compensation.md
+    - name: Set up the components of a job
+      href: create-job.md
   - name: Develop and train employees
     items:
     - name: Performance management
