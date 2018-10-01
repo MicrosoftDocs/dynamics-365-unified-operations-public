@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018). This version was released in October 2018 and has build number 8.1.136.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018). This version was released in October 2018 and has a build number of 8.1.136.
 
 ### Announcing the Dynamics 365 October '18 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
@@ -52,7 +52,7 @@ The **Global transactions** button has been added to the customer page. This but
 
 The filter for showing open transactions has been replaced with a new filter that lets you view more combinations of transactions. 
 
-You can also update due dates and discount dates for open customer transactions, and you can now add due dates to the **Customer transactions** list page. 
+You can also update due dates and discount dates for open customer transactions, and you can add due dates to the **Customer transactions** list page. 
 
 For more information, see [Customer transaction list page](../../financials/accounts-receivable/customer-transactions-list-page.md).
 
@@ -63,22 +63,22 @@ The **Global transactions** button has been added to the vendor page. This butto
 
 The filter for showing open transactions has been replaced with a new filter that lets you view more combinations of transactions. A **Hide currency revaluations** filter has also been added that lets you hide currency translation transactions. 
 
-You can also update due dates and discount dates for open customer transactions. In release 8.1, the experience has been improved so that you can now add due dates to the **Vendor transactions** list page. 
+You can also update due dates and discount dates for open customer transactions. In release 8.1, the experience has been improved so that you can add due dates to the **Vendor transaction** list page. 
 
 For more information, see [Vendor transaction list page](../../financials/accounts-payable/vendor-transaction-list-page.md).
 
 ## Financial dimensions
-- You can use values from master records, such as customer and vendor, as default values in new dimensions. When the new dimensions are created, the master record ID is entered in the dimension values for those master records. For example, when you create a new customer, the customer ID is entered in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules are used, and the customer ID is added to the document.
+You can use values from master records, such as customer and vendor, as default values in new dimensions. When the new dimensions are created, the master record ID is entered in the dimension values for those master records. For example, when you create a new customer, the customer ID is entered in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules are used, and the customer ID is added to the document.
 
-- You can configure a dimension so that information for other dimensions is automatically entered when you enter that dimension in a document. For example, if you enter cost center 10, a value of **20** can be automatically entered in the department dimension.
+You can configure a dimension so that information for other dimensions is automatically entered when you enter that dimension in a document. For example, if you enter cost center 10, a value of **20** can be automatically entered in the department dimension.
 
-- You can set up the derived dimensions segments and values by using entities.
+You can set up the derived dimensions segments and values by using entities.
 
 ## Extensibility enhancements
 In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../../dev-itpro/extensibility/extensibility-changes-81.md) 
 
 ## Phantom items
-The Phantom line type can be used for the lines of a bill of materials (BOM) and a formula. Phantom BOMs can also be used for a BOM that has a route network and in multilevel BOM structures, 
+The Phantom line type can be used for the lines of a bill of materials (BOM) and multilevel BOM structures. Phantom BOMs can also be used for a BOM that has a route network. 
 
 For more information, see [Phantom items]( ../../supply-chain/production-control/phantom-items.md).
 
