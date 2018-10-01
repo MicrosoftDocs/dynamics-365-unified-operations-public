@@ -5,7 +5,7 @@ title: Upgrade data in development, demo, or sandbox environments
 description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Finance and Operations, database to the latest update.
 author: tariqbell
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -43,6 +43,7 @@ In some Tier 2 or higher environments, the Microsoft Service Engineering Team (D
 > [!IMPORTANT]
 > - You do **not** have to upgrade your database if you're updating to the latest **platform** of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Microsoft Dynamics 365 for Finance and Operations 7.3.
 > - This process doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
+> - All upgraded custom code has to be applied on the environment before running the data upgrade process.
 
 ## Before you begin
 

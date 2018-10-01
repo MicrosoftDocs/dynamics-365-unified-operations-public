@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 05/15/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -80,6 +80,18 @@ The following folders contain additional information:
 - AX-SetupModuleEvents 
 - AX-SetupInfrastructureEvents 
 - AX-BridgeService 
+
+Event viewer tip for reviewing Dynamics entries:
+In Event viewer, right-click on **Custom Views** and select **Create Custom View**.
+
+![Create custom view](media/Create-Custom-View.png)
+
+Select the Event logs drop down list, and select **Dynamics**, as shown.
+
+![Select Dynamics](media/Select-Dynamics.png)
+
+
+Note, also look at **Administrative Events** in **Custom Views**.
 
 ### Service Fabric Explorer
 Note the state of the cluster, application, and nodes. For information about how to access Service Fabric Explorer, see [Access Service Fabric Explorer](troubleshoot-on-prem.md#access-service-fabric-explorer).
@@ -232,7 +244,6 @@ You can also use the following upgrade and uninstall commands:
 
 ```powershell
 LocalAgentCLI.exe Install <path of localagent-config.json>
-LocalAgentCLI.exe Upgrade <path of localagent-config.json>
 LocalAgentCLI.exe Cleanup <path of localagent-config.json>
 ```
 
@@ -299,6 +310,20 @@ You might receive the following errors:
 6. Install the local agent again by using the new configuration file.
 
 ### Error
+
+**Error:** The credentials supplied to the package were not recognized.
+
+**Reason:** ACL not properly defined on certificates.
+
+**Steps:** During servicing if receive “Unable to download asset…” error and the details shows "The credentials supplied to the package were not recognized", check to see if ACL was removed from client certificate on orchestrator machines. 
+
+To verify, run the following script on orchestrator machines and verify the ACL:
+- .\Test-D365FOConfiguration.ps1
+
+To resolve, run the following script to reset:
+- .\Set-CertificateAcls.ps1
+
+### Error
 **Error:**
 
 > Access to the path '\\...\\agent\\assets\\StandAloneSetup-76308-1.zip' is denied.
@@ -326,6 +351,13 @@ You might receive the following errors:
 6. Install the local agent again by using the new configuration file.
 
 ### Error
+**Error:** Unable to get extract setup folder for command
+
+**Reason:** File share has been removed or changed. When doing a servicing operation, will run into the "Unable to get extract setup folder for command" error. 
+
+**Steps:** To see what the file share is set to, go to SQL Server Management Studio and query on orchestrator database: select * from OrchestratorCommandArtifact where CommandId = ‘xxx’
+
+### Error
 **Error:**
 
 > Login failed for user 'D365\\svc-LocalAgent$'. Reason: Could not find a login matching the name provided. \[CLIENT: 10.0.2.23\]
@@ -349,6 +381,17 @@ You might receive the following errors:
 If the preceding steps don't resolve the issue, manually remove the local agent user from the SQL Server instance and the database, and then rerun the Initialize-Database script.
 
 If you re-create a user in AD DS, remember that the SID will change. In this case, remove the previous SID for the user, and add a new SID.
+
+### Error
+
+**Error:** Unable to migrate database
+
+**Steps:**  
+- Verify that you have access to the SQL Server listener.
+- If testing, you can start over with blank orchestrator database.
+
+### Issue
+When performing the [Configure the databases](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configuredb) procedure, if the SQL Server is a named instance, use parameter -DatabaseServer [FQDN/Instancename].
 
 ### Issue
 The local agent user can't connect to the SQL Server instance or the database.
@@ -429,29 +472,6 @@ If you receive this error, close and restart Windows PowerShell. If the error pe
 
 ## What cluster ID should be used in the agent configuration?
 The cluster ID can be any globally unique identifier (GUID). This GUID is used for tracking purposes.
-
-## The local agent stops working after the tenant for the project from LCS is changed
-Follow these steps to configure the local agent with the updated tenant.
-
-1. Remove all the environments from LCS that already have the connector installed.
-2. Uninstall the local agent.
-
-    ```powershell
-    .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
-    ```
-
-3. Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:
-
-    - [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs)
-    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
-
-4. Create a new LCS connector in the new tenant.
-5. Download the **local-agent.config** file.
-6. Install the local agent.
-
-    ```powershell
-    .\LocalAgentCLI.exe Install <path of localagent-config.json>
-    ```
 
 ## Encryption errors
 Some encryption error examples include AXBootstrapperAppType, Bootstrapper, AXDiagnostics, RTGatewayAppType, Gateway potential failure related, and Microsoft.D365.Gateways.ClusterGateway.exe.
@@ -687,10 +707,55 @@ If you used Reset-DatabaseUsers.ps1, you must restart the Dynamics Service befor
 
 - **NETWORKDOMAIN:** `https://DC1.contoso.com/adfs`
 - **NETWORKALIAS:** `AXServiceUser@contoso.com`
+- **IDENTITYPROVIDER:** This should match the **NETWORKDOMAIN**.
 
 On the AD FS machine, in Server Manager, go to **Tools** \> **AD FS Management** \> **Service**. Right-click **Service and Edit Federation Service Properties**. The **Federation Service identifier** should match the **USERINFO.NETWORKDOMAIN** value and have HTTPS in the URL. (For example: `https://DC1.contoso.com/adfs`). 
 
 On the AD FS machine, in Event Viewer, go to **Applications and Services Logs** \> **AD FS** \> **Admin**, and make a note of any errors.
+
+### Fiddler
+Fiddler can be used for additional debugging. For in-dept information about Fiddler, see [AD FS 2.0: How to Use Fiddler Web Debugger to Analyze a WS-Federation Passive Sign-In](https://social.technet.microsoft.com/wiki/contents/articles/3286.ad-fs-2-0-how-to-use-fiddler-web-debugger-to-analyze-a-ws-federation-passive-sign-in.aspx) and [Cracking the AD FS Token from another AD FS Claims Provider](https://blogs.technet.microsoft.com/tangent_thoughts/2014/06/04/cracking-the-ad-fs-token-from-another-ad-fs-claims-provider/). 
+
+The following sections provide focused, debugging steps on claims being returned to Dynamics.
+
+#### Repo/capture
+1. Open Fiddler, select **Decrypt HTTPS traffic** in **Tools > Options > HTTPS**.
+2. Start capturing traffic (shortcut key is F12). You can verify that that traffic is being captured by looking at the bottom-left of the tool.
+3. Open Internet Explorer in an InPrivate instance, or Chrome using an Incognito instance.
+4. Log in to Finance and Operations. (Example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`)
+5. Log in using the USERINFO.NETWORKALIAS account and password.
+6. After logging in, stop Fiddler from capturing traffic.
+
+#### Analyze 
+Note that the right pane of Fiddler is split by a horizontal divider, which separates the request from the response. Unlike a network trace where you typically get a frame for a request and another frame for a response, Fiddler provides one frame that contains both the request and the response.
+
+1. In Fiddler, in the top-right corner, select **Inspectors > Raw**.
+2. In the bottom-right corner, select **Cookies**.
+3. Do a search for **MSISAuth**. 
+4. Select the row with a result of 200 for ADFS host.
+5. Looking above the row that you just selected, now select a row with a result of 302.
+
+    You should see the AD FS URL, host, username, and password.
+    > [!IMPORTANT]
+    > For privacy, you may need to scrub personaly identifiable information.
+
+    ![Scrub personaly identifiable information](media/Scrub-PII.png)
+
+6. Highlight the next row that has a result of 302, which should be URL of .../namespaces/AXSF/.
+
+    Note the code value that is displayed in that row.
+    
+     ![Note the code value that is displayed](media/Note-the-code.png)
+
+7. Copy the value of code line after the = (equals) sign.
+8. Go to https://www.base64decode.org/ and paste in the results from step 7.
+9. Click the **Source charset** drop-down list and select **ASCII**.
+10. Click **Decode**.
+11. Copy out the results. Do the following:
+
+    - Note the **upn** value. This should match the user name.
+    - Note **unique_name** value. This should be the AD user being tested.
+    - Verify in **Active Directory Users and Computers > domain > Users** that this is the user being tested.
 
 ## Sign-in issues
 If you or other users experience sign-in issues, in Service Fabric Explorer, verify that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** values are valid. If the values are valid, run the following command on the primary SQL Server machine.
@@ -714,7 +779,12 @@ In some cases, you still might not be able to sign in and receive the following 
 
 > You are not authorized to login with your current credentials. You will be redirected to the login page in a few seconds.
 
-If this error occurs, see the [AD FS](troubleshoot-on-prem.md#ad-fs) section of this topic.
+If this error occurs: 
+1. On the AD FS machine go to **Server Manager > Tools > AD FS Management**. Right-click **AD FS** and select **Edit Federation Service Properties**. Note the **Federation Service Identifier** value. This should match the **Userinfo.NetworkDomain** and **UserInfo.IdentityProvider** values. 
+2. On the AD FS machine open PowerShell and run **Get-AdfsProperties**. Note the **IdTokenIssuer** value. This should match **Federation Service Identifier** from step 1, as well as the **Provisioning_AdminIdentityProvider** value from **Service Fabric Explorer > Cluster > Applications > AXSFType > fabric:/AXSF Details** tab.
+3. Verify in Service Fabric Explorer that the **Provisioning_AdminPrincipalName** and **Provisioning_AdminIdentityProvider** values are valid.
+
+If the above steps didn't resolve the issue, see the [AD FS](troubleshoot-on-prem.md#ad-fs) section of this topic.
 
 ## System.Data.SqlClient.SqlException (0x80131904) and System.ComponentModel.Win32Exception (0x80004005)
 You might receive one of the following errors:
@@ -864,6 +934,28 @@ To resolve this issue, look at all the modules that you're dependent on, and mak
 
 **Platform update 8 and Platform update 11:** A known Skype application programming interface (API) issue affects the ability to sign in to on-premises environments. We are investigating a resolution for this issue. To work around this issue, you can add **?debug=true** to the end of the URL, as shown in the following example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/?debug=true`
 
+## The local agent stops working after the tenant for the project from LCS is changed
+Follow these steps to configure the local agent with the updated tenant.
+
+1. Uninstall the local agent.
+
+    ```powershell
+    .\LocalAgentCLI.exe Cleanup <path of localagent-config.json>
+    ```
+
+2. Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment topic for your environment:
+
+    - [Platform update 12](setup-deploy-on-premises-pu12.md#configurelcs)
+    - [Platform update 8 and Platform update 11](setup-deploy-on-premises-pu8-pu11.md#configurelcs)
+
+3. Create a new LCS connector in the new tenant.
+4. Download the **local-agent.config** file.
+5. Install the local agent.
+
+    ```powershell
+    .\LocalAgentCLI.exe Install <path of localagent-config.json>
+    ```
+
 ## Additional deployments (for example, two sandbox deployments, or a sandbox and production deployment)
 
 You will receive the following error when you deploy an additional environment:
@@ -893,6 +985,8 @@ You can skip or modify the following sections in the deployment instructions.
 
     1. Open the native application **Microsoft Dynamics 365 for Operations On-premises - Native application**. Add the redirect URI of the new environment (DNS).
     2. Open the native application **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting - Native application**. Add the redirect URI of the new environment (DNS).
+    3. Open the Web API **Microsoft Dynamics 365 for Operations On-premises - Web API**. Add the two entries of the redirect URI of the new environment (DNS).
+    4. Open the Web API **Microsoft Dynamics 365 for Operations On-premises - Financial Reporting Web API**. Add the redirect URI of the new environment (DNS).
 
 ## Redeploy SSRS reports
 Delete the entry in SF.SyncLog, and then restart one of the AOS machines. The AOS machine will rerun DB Sync and then deploy reports.
@@ -928,3 +1022,57 @@ EXEC sp_procoption N'[dbo].[CREATETEMPDBPERMISSIONS]', 'startup', '1'
 ```powershell
 Remove-AzureRmADSpCredential -ServicePrincipalName "00000015-0000-0000-c000-000000000000" -KeyId <key>
 ```
+## ODBC driver 17 required for platform updates
+The latest platform binary update uses ODBC driver 17. This upgrade takes care of stability issues linked to older ODBC drivers. The [Setup perquisites](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 needs to be installed on each AOS server. If you don't install ODBC driver 17, you will see DB sync errors during servicing of the environment.
+
+Examples of errors:
+- In Service Fabric:
+    
+    Unhealthy event: SourceId='System.RA', Property='ReplicaOpenStatus', HealthState='Warning', ConsiderWarningAsError=false.
+    Replica had multiple failures during open on AOS3. API call: IStatelessServiceInstance.Open(); Error = System.Exception (-2146233088)
+    **DB sync failed.**
+- On AOS machines:
+    - Event Viewer > Custom Views > Administrative Events:
+        
+        Application: Microsoft.Dynamics.AX.Deployment.Setup.exe Framework Version: v4.0.30319 Description: The process was terminated due to an unhandled exception. Exception Info: System.IO.FileNotFoundException at Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(System.String[])
+        
+    - C:\ProgramData\SF\AOSx\Fabric\work\Applications\AXSFType_Appxx\log:
+    Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir      "C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App18\AXSF.Code.1.0.20180831174152\Packages" -metadatadir "C:\ProgramData\SF\AOS1\Fabric\work\Applications\AXSFType_App18\AXSF.Code.1.0.20180831174152\Packages" -sqluser "axdbadmin" -sqlserver "SQL-LS.contoso.com" -sqldatabase "AXDB" -setupmode servicesync -syncmode fullall -onprem 
+
+        Unhandled Exception: System.IO.FileNotFoundException: **Could not load file or assembly 'aoskernel.dll' or one of its dependencies. The specified module could not be found.**
+   at Microsoft.Dynamics.AX.Deployment.Setup.Program.Main(String[] args)
+
+        **DB sync failed.**
+
+## Running Add-CertToServicePrincipal results in “No subscription found in the context”
+Recent PowerShell versions may result in "No subscription found in the context" error. Resolution is to install and load an older version of PowerShell. For example, version 5.7.0. 
+
+```powershell
+# Install version 5.7.0 of Azure PowerShell
+Install-Module -Name AzureRM -RequiredVersion 5.7.0
+
+# Load version 5.7.0 of Azure PowerShell
+Import-Module -Name AzureRM -RequiredVersion 5.7.0
+```
+## Service Fabric Explorer warnings after restarting machine
+
+**Error:**
+Error event: SourceId='MonitoringAgentService', Property='ServiceState'.
+System.Management.Automation.RuntimeException: Error: **The GUID passed was not recognized as valid by a WMI data provider.** (Exception from HRESULT: 0x80071068). Stack trace:
+
+To resolve: Restart the application package that generated the warning message. For more information see, [Restart applications (such as AOS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#restart-applications-such-as-aos).
+
+## The internal time zone version number stored in the database is higher than the version supported by the kernel (13/12)
+This database sync error can result in deploying old platform build (platform update 12) on top of a database that had a newer build (platform update 15).
+
+To resolve this issue, note the SYSTIMEZONESVERSION value:
+
+select * from SQLSYSTEMVARIABLES where parm = 'SYSTIMEZONESVERSION'
+
+Update and set the value to what was returned in the error message:
+
+update SQLSYSTEMVARIABLES set VALUE = 12 where parm = 'SYSTIMEZONESVERSION'
+
+## Printing randomly stops
+Ensure that all network printers that have been installed on the AOS server are running as the Windows service account that the AXService.EXE process is running as.
+

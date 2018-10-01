@@ -139,5 +139,9 @@ For example, you want to add a new exception message in US English (en-us) and U
 The following example shows how to use this new message in your CRT extension code.
 
 ```C#
-throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSeverity.Warning, null, "Custom error");
+throw new CommerceException("Microsoft_Dynamics_Commerce_CustomId1", ExceptionSeverity.Warning, null, "Custom error")
+                    {
+                        LocalizedMessage = "My new message in US English.",
+                        LocalizedMessageParameters = new object[] { }
+                    };
 ```

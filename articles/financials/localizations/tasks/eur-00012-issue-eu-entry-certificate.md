@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Issue an EU entry certificate
+title: EUR-00012 Issue an EU entry certificate
 description: This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate. 
 author: mrolecki
 manager: AnnBe 
-ms.date: 02/26/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: CustParameters, CustTable, SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CustEntryCertificateJour_W, SrsReportViewerForm   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Issue an EU entry certificate
+# EUR-00012 Issue an EU entry certificate
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

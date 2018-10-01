@@ -53,6 +53,8 @@ Note: The operations listed below apply to the latest version of Dynamics 365 fo
 | 707 | Activate device | Activate the current device by allowing an authenticated user to provide connection information and assign a device and register ID. | No | No | No | No | No |
 | 134 | Add affiliation | Add a preselected affiliation to a transaction. Select the affiliation on the **Button properties** page. | Yes | Yes | No | Yes | No |
 | 135 | Add affiliation from list | Add an affiliation to a transaction by selecting it in a list. | Yes | Yes | Yes | Yes | No |
+| 137 | Add affiliation to customer | Add an affiliation to a customer on the **Customer details** page. | No | No | No | Yes | No |
+| 138 | Remove affiliation from customer | Remove an affiliation on the **Customer details** page. | No | No | No | Yes | No |
 | 643 | Add coupon code | Add a coupon by entering its code in the POS. | Yes | Yes | No | Yes | No |
 | 117 | Add loyalty card | Prompt the user to enter a loyalty card number that will be added to the current transaction. | Yes | Yes | No | Yes | No |
 | 136 | Add serial number | This operation lets the user specify a serial number for the currently selected product. | Yes | Yes | No | Yes | No |

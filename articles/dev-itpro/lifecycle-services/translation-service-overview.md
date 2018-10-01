@@ -3,9 +3,9 @@
 
 title: Microsoft Dynamics 365 Translation Service
 description: This topic provides information about the Microsoft Dynamics 365 Translation Service (DTS). DTS is designed to enhance the experience for partners and ISVs when they translate their solutions or add a new language for supported Microsoft Dynamics products.
-author: kfend
+author: ejcho
 manager: AnnBe
-ms.date: 09/27/2017
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6154
@@ -56,7 +56,7 @@ DTS currently supports the following product versions.
 | Microsoft Dynamics AX 2012 | All versions | .ktd, .ald | .docx | |
 | Microsoft Dynamics 365 for Finance and Operations | All versions | .label.txt | .docx | |
 | Microsoft Dynamics 365 for Retail | All versions | .label.txt | .docx | |
-| Microsoft Dynamics CRM | 2011–2016 | .resx, .js | .docx | |
+| Microsoft Dynamics CRM | 2011–2016 | .resx | .docx | |
 | Microsoft Dynamics NAV | 2015–2018 | .etx, .stx, .resx, .txt, .xml, .xlf | .docx | NAV-specific formats are used for .txt, .xml, and .xlf files. |
 
 ## Accessing DTS
@@ -95,16 +95,6 @@ Two preview features are available for DTS:
 
 + **Dynamics 365 Translation Service - Documentation Translation Support** – You must turn on this feature if you want to translate a product or solution document (for example, a Microsoft Word document).
 + **NAV product availability** – You must turn on this feature if you want to create an LCS project for NAV products and access DTS from within the project.
-
-
-Product name |  Version |   File format supported | Note
---- | --- | --- | ---
-**Dynamics AX 2012**    | All versions  | .ktd, .ald    |
-**Dynamics 365 for Finance and Operations** | All versions |    .label.txt  |
-**Dynamics 365 for Retail** | All versions | .label.txt |
-**Dynamics CRM**    | 2011-2016 |   .resx, .js  |
-**Dynamics NAV** | 2015-2018    | .etx, .stx, .resx, .txt, .xml, .xlf | .txt, .xml and .xlf are in NAV-specific formats
-
 
 ## Glossary
 

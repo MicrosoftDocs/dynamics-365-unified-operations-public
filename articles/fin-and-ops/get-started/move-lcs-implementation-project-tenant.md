@@ -67,7 +67,7 @@ If you're licensed through a Microsoft Volume Licensing agreement, you must call
 ## Configure LCS on the new tenant
 On the new tenant, you will get a new LCS project that you must initiate and set up.
 
-1. Fully configure LCS. As part of this configuration, you must add users, a Microsoft Visual Studio Team Services (VSTS) association, subscription estimates, the Asset library, Business process modeler (BPM), and so on.
+1. Fully configure LCS. As part of this configuration, you must add users, a Microsoft Azure DevOps association, subscription estimates, the Asset library, Business process modeler (BPM), and so on.
 2. Deploy all non-production environments in the new LCS project.
 3. Apply the required code packages to the environments.
 4. Upload data to the environments. You can move the data through data packages or by restoring the database. If you restore the database, additional steps are required in order to remap some properties to the new tenant.

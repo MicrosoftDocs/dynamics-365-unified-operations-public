@@ -2,7 +2,7 @@
 # required metadata
 
 title: Call center catalogs
-description: This topc describes the call center–specific functionality for catalogs in Microsoft Dynamics 365 for Retail.
+description: This topic describes the call center–specific functionality for catalogs in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018

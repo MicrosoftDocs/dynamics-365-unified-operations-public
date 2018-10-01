@@ -1,11 +1,12 @@
 ---
 # required metadata
 
-title: Class extension via method wrapping and Chain of Command (CoC)
-description: This topic discusses how to extend the business logic of public and protected methods by using method wrapping. 
+
+title: Class extension - Method wrapping and Chain of Command
+description: This topic discusses how to extend the business logic of public and protected methods by using method wrapping.
 author: robadawy
 manager: AnnBe
-ms.date: 04/06/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,15 +14,16 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form:
+# ROBOTS:
 audience: Developer
 # ms.devlang: 
 ms.reviewer: robinr
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 26961
+# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: robadawy
 ms.search.validFrom: 2017-08-21
 ms.dyn365.ops.version: AX 7.0.0
@@ -76,7 +78,7 @@ When this code is run, the system finds any method that wraps the **DoSomething*
 > [!IMPORTANT]
 > The functionality that is described in this topic (CoC and access to protected methods and variables) is available in Platform update 9. However, the class that is being augmented must also be compiled on Platform update 9 or later. As of August 2017, all current releases of the applications for Finance and Operations have been compiled on Platform update 8 or earlier. Therefore, to wrap a method that is defined in a base package (such as Application Suite), you must recompile that base package on Platform update 9 or later.
 As an example: If you create your own extension model that is augmenting a class that exists in the Application Suite model, and if you are using CoC or accessing protected methods/variables, you will need to build both Application Suite and your extension model. You will also need to create a deployable package that includes both models in order to deploy this functionality on a runtime environment.
-This is a temporary situation until the next release of the Microsoft Dynamics 365 for Finance and Operations application.
+This is a temporary situation until the next release of the Dynamics 365 for Finance and Operations application.
 
 ## Capabilities
 The following sections give more details about the capabilities of method wrapping and CoC.
@@ -156,7 +158,7 @@ Here are some important rules:
 - Because logical expressions are optimized, calls to **next** can't occur in logical expressions. At runtime, the execution of the complete expression isn't guaranteed.
 
 > [!NOTE]
-> The author of the original implementation of a method can explicitly allow wrapper methods to skip calling next. If the method you are wrapping is tagged with the [Replaceable] attribute, an extension class can wrap this method without calling the **next** keyword. Replaceable methods are methods that implement logic that can safely be "replaced" by custom implementation. This functionality is available with the release of Platform Update 11. 
+> The author of the original implementation of a method can explicitly allow wrapper methods to skip calling next. If the method you are wrapping is tagged with the [Replaceable] attribute, an extension class can wrap this method without calling the **next** keyword. Replaceable methods are methods that implement logic that can safely be "replaced" by custom implementation. This functionality is available with the release of Platform update 11. 
 
 ### Wrapping a base method in an extension of a derived class
 The following example shows how to wrap a base method in an extension of a derived class. For this example, the following class hierarchy is used.
@@ -242,6 +244,84 @@ class anyClass2
 }
 ```
 
+### Extensions of form-nested concepts such as data sources, data fields, and controls
+
+In order to implement CoC methods for form-nested concepts, such as data sources, data fields, and controls, an extension class is required for each nested concept. 
+
+#### Form data sources
+
+In this example, **FormToExtend** is the form, **DataSource1** is a valid existing data source in the form, and **init** and **validateWrite** are methods that can be wrapped in the data source.
+
+```C#
+[ExtensionOf(formdatasourcestr(FormToExtend, DataSource1))]
+final class FormDataSource1_Extension
+{
+    public void init()
+    {
+        next init();
+        //...
+    }
+ 
+    public boolean validateWrite()
+    {
+        boolean ret;
+        //...
+        ret = next validateWrite();
+        //...
+```
+
+#### Form data fields
+
+In this example, a data field is extended. **FormToExtend** is the form, **DataSource1** is a data source in the form, **Field1** is a field in the data source, and **validate** is one of many methods that can be wrapped in this nested concept.
+
+```C#
+[ExtensionOf(formdatafieldstr(FormToExtend, DataSource1, Field1))]
+final class FormDataField1_Extension 
+{ 
+public boolean validate()
+{
+    boolean ret
+    //...
+    ret = next validate();
+    //...
+```
+
+#### Controls
+
+In this example, **FormToExtend** is the form, **Button1** is the button control in the form, and **clicked** is a method that can be wrapped on the button control.
+
+```C#
+[ExtensionOf(formcontrolstr(FormToExtend, Button1))]
+final class FormButton1_Extension
+{
+    public void clicked()
+    {
+        next clicked();
+        //...
+```
+
+#### Requirements and considerations when you write CoC methods on extensions for form-nested concepts
+
+- Like other CoC methods, these methods must always call **next** to invoke the next method in the chain, so that the chain can go all the way to the kernel or native implementation in the runtime behavior. The call to next is equivalent to a call to **super()** from the form itself to help guarantee that the base behavior in the runtime is always run as expected.
+- Currently, the X++ editor in Microsoft Visual Studio doesn't support discovery of methods that can be wrapped. Therefore, you must refer to the system documentation for each nested concept to identify the correct method to wrap and its exact signature.
+- You **cannot** add CoC to wrap methods that aren't defined in the original base behavior of the nested control type. For example, you can't add **methodInButton1** CoC on an extension. However, from the control extension, you can make a call into this method if the method has been defined as public or protected. Here is an example where the **Button1** control is defined in the **FormToExtend** form in such a way that it has the **methodInButton1** method.
+
+    ```C#
+    [Form]
+    public class FormToExtend extends FormRun
+    {
+        [Control("Button")]
+        class Button1
+        {
+            public void methodInButton1 (str param1)
+            {
+                Info("Hi from methodInButton1");
+                //...
+    }
+    ```
+
+- You do **not** have to recompile the module where the original form is defined to support CoC methods on nested concepts on that form from an extension. For example, if the **FormToExtend** form from the previous examples is in the **ApplicationSuite** module, you don't have to recompile **ApplicationSuite** to extend it with CoC for nested concepts on that form from a different module.
+
 ## Restrictions on wrapper methods
 The following sections describe restrictions on the use of CoC and method wrapping.
 
@@ -251,8 +331,8 @@ Kernel classes aren't X++ classes. Instead, they are classes that are defined in
 ### X++ classes that are compiled by using Platform update 8 or earlier 
 The method wrapping feature requires specific functionality that is emitted by an X++ compiler that is part of Platform update 9 or later. Methods that are compiled by using earlier versions don't have the infrastructure to support this feature.
 
-### Nested class methods (forms) can't be wrapped
-The concept of nested classes in X++ applies to forms for overriding data source methods and form control methods. Methods in nested classes can't be wrapped in class extensions.
+### Nested class methods in forms can be wrapped in Platform update 16 or later
+The ability to wrap methods in nested classes by using class extensions was added in Platform update 16. The concept of nested classes in X++ applies to forms for overriding data source methods and form control methods.
 
 ### Tooling
-For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense. We plan to make complete support available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 10.
+For the features that are described in this topic, the Microsoft Visual Studio X++ editor doesn't yet offer complete support for cross-references and Microsoft IntelliSense. We plan to make complete support available in Dynamics 365 for Finance and Operations Platform update 10.

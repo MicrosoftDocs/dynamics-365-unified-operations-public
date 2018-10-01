@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 8.0.0
 
 # Add location roles and party relationship types 
 
+[!include [banner](../includes/banner.md)]
+
 ## Add location roles
 
 There are two ways to add a new location roles for address and contact information:

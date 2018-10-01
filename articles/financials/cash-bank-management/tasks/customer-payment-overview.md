@@ -5,7 +5,7 @@ title: Customer payment overview
 description: This task guide walks through various methods used to enter customer payments. 
 author: kweekley
 manager: AnnBe 
-ms.date: 10/26/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,18 +13,18 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: LedgerJournalTable, CustPaymEntry, CustTableLookup, LedgerJournalTransCustPaym, CustOpenTrans, BankAccountTableLookUp   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Customer payment overview
 
@@ -57,7 +57,7 @@ This task guide walks through various methods used to enter customer payments. T
 15. Click New to create another payment. 
 16. Select the customer from whom you received the payment.
     * If you don't know the customer but know an invoice paid by the payment, use the Invoice field to manually enter or select the invoice. The customer will default after the invoice is selected.  
-17. Click Settle transactions to mark invoices that were paid.
+17. Click Settle transctions to mark invoices that were paid.
     * You are not required to settle the payment to any invoices. If this is a prepayment or if you don't know what invoice was paid, you can enter and post the payment. The payment can be settled to an invoice at a later point.  
 18. Mark the invoices paid by the payment. 
 19. Enter the amount of the payment that will be settled to the invoice.

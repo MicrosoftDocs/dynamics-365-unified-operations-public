@@ -233,7 +233,7 @@ In the next sections, we discuss the steps and best practices for customizing Re
 
 ### Setup steps
 
-We recommend that you implement these changes on an untouched Retail software development kit (SDK). Alternatively, you can put the SDK under source control, such as Microsoft Visual Studio Team Services (VSTS), so that you can easily revert your changes at any step. To begin, you import the .axpp package that is located in the SDK. You then run the SQL update script on your channel database.
+We recommend that you implement these changes on an untouched Retail software development kit (SDK). Alternatively, you can put the SDK under source control, such as Microsoft Azure DevOps, so that you can easily revert your changes at any step. To begin, you import the .axpp package that is located in the SDK. You then run the SQL update script on your channel database.
 
 1. Import the package on the Finance and Operations side that contains the customization code:
 

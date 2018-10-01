@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Update vendor invoice declarations and generate the report (Iceland)
+title: Update vendor invoice declarations and generate the report
 description: This procedure walks you through posting a vendor invoice with invoice declaration information attached and generating an invoice declaration report. 
 author: mrolecki
 manager: AnnBe 
-ms.date: 05/09/2016
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice   
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: shylaw
-ms.search.scope: Operations 
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Iceland
 # ms.search.industry: 
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Update vendor invoice declarations and generate the report (Iceland)
+# Update vendor invoice declarations and generate the report
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

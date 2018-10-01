@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Submit and approve project budget revisions
+title: Submit and approve project budget revision
 description: This procedure provides information about revising a project budget. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 02/13/2017
+ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -13,20 +13,20 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, ProjBudgetRevision, WorkflowSubmitDialog   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
-ms.search.scope: Operations 
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Submit and approve project budget revisions
+# Submit and approve project budget revision
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
