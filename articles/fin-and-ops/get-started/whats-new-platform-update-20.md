@@ -38,7 +38,6 @@ This topic describes features that are either new or changed in Dynamics 365 for
 > [!NOTE]
 > This platform release is cumulative. It contains new or changed features from Platform update 16, Platform update 17, Platform update 18, Platform update 19, and Platform update 20, as well as all earlier updates. 
 
-> This update is currently available for targeted customers and will be available to all users in the future. For more information about standard and targeted releases, see the [Standard and targeted platform releases](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) topic.
 
 ### Announcing the Dynamics 365 October '18 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
