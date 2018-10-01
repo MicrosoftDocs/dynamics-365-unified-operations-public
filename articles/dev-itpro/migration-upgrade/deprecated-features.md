@@ -61,13 +61,13 @@ The Synchronous transfer mode is being deprecated in the General ledger paramete
 | **Status**                         | Deprecated - Target timeframe for the functionality to be removed is the 10.0 version.|
 
 ### Electronic reporting for Russia
-Feature for configuring txt and xml file formats of declarations. 
+Feature for configuring .txt and .xml file formats of declarations. 
 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Replaced with Electronic reporting. |
 | **Replaced by another feature?**   | Yes. |
-| **Product areas affected**         | General Ledger. |
+| **Product areas affected**         | General Ledger |
 | **Deployment option**              | All |
 | **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
 
