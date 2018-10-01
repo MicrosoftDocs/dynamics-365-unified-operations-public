@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 Before you can generate payment orders, you must complete the following setup:
 
-- Set up banks and bank accounts for the company. For more information, see <Local settings and requisites for Bank module><give here link to content deliverable location 148860>.
+- Set up banks and bank accounts for the company. For more information, see [Local settings and requisites for Bank module](rus-local-settings-requisites-bank-module.md).
 - Set up vendor bank accounts and customer bank accounts:
 
     1. In the All customers or All vendors page, select **Bank accounts** on **VENDOR** tab.
