@@ -5,7 +5,7 @@ title: Export and import models
 description: Model files let you distribute models to customers and partners, and can be installed in development environments. They are key components of a Lifecycle Services (LCS) solution. Model files contain a model descriptor file, metadata, source code, and referenced .NET assemblies (when applicable). This article describes how to export a model into a model file, install a model file, and delete a model in a development environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -60,7 +60,7 @@ If the model already exists in your development environment, you must first dele
     ModelUtil.exe -delete -metadatastorepath=[path of the metadata store] -modelname=[name of the model to delete]
     
 > [!NOTE]
-> If you're still on an old version you can use the -replace parameter to replace standard models (like Foundation) for overlayering.    
+> If you're using an older version, you can use the -replace parameter to replace standard models (like Foundation) for overlayering.    
 
 ## Resolve conflicts
 If you install a model on a development environment that contains customizations to that model (in a higher-layer), you may have to resolve code or metadata conflicts. You can use the development tools to create a project that groups all items that have conflicts.
