@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 20
 
 # Write extensible forms
 
+[!include [banner](../includes/banner.md)]
+
 ## Methods on forms
 + In general, the guidelines for writing extensible methods also apply to form methods.
 + Chain of Command (CoC) gives access to the form's non-private members, which are the same as the non-private members for classes.

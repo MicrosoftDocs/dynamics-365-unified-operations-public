@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 7.3
 
 # Set up, create, and manage absorption costs 
 
+[!include [banner](../includes/banner.md)]
+
 You can calculate and post the direct and indirect costs that are incurred in the production orders for a fiscal period. The final manufacturing costs are registered in the ledger at the end of the fiscal period. You can calculate the absorption costs by allocating the total manufacturing costs to the products that are manufactured during a fiscal period.
 
 ## Set up a number sequence for absorption costs

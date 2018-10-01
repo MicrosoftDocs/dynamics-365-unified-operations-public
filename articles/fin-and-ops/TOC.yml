@@ -44,6 +44,8 @@
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
+      - name: Platform update 20 (September 2018)
+        href: get-started/whats-new-platform-update-20.md
       - name: Finance and Operations version 8.0 (April 2018)
         href: get-started/whats-new-changed-8-0-April-2018.md
       - name: Platform update 15 (March 2018)
@@ -456,6 +458,10 @@
         href: ../financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
         href: ../financials/accounts-payable/invoice-matching-intercompany-purchase-orders.md
+      - name: Set up vendor invoice policies
+        href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+      - name: Record vendor invoice and match against received quantity
+        href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md  
       - name: Positive pay overview
         href: ../financials/accounts-payable/positive-pay-overview.md
       - name: Set up and generate positive pay files
@@ -566,10 +572,6 @@
         href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
       - name: Process interest
         href: ../financials/accounts-receivable/tasks/process-interest.md
-      - name: Set up vendor invoice policies
-        href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
-      - name: Record vendor invoice and match against received quantity
-        href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
       - name: Create a customer invoice
         href: ../financials/accounts-receivable/configure-customer-invoices.md
       - name: Deposit customer payments
@@ -596,6 +598,8 @@
         href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Set up and generate accounts receivable aging information
         href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+      - name: Copy customers by using shared number sequences
+        href: ../financials/accounts-receivable/copy-customer.md
       - name: Customer workflow
         href: ../financials/accounts-receivable/customer-workflow.md
       - name: Payments and settlements
@@ -2114,6 +2118,42 @@
           href: ../financials/localizations/emea-pol-interest-calculation.md
         - name: Turnover balances statement
           href: ../financials/localizations/emea-pol-turnover-balances-statement.md
+      - name: Russia
+        href: ../financials/localizations/russia.md
+        items:
+        - name: Advance holders
+          href: ../financials/localizations/rus-advance-holders.md
+          items:
+          - name: Create an advance holder
+            href: ../financials/localizations/emea-advance-holders.md#create-an-advance-holder
+          - name: Daily operations for advance holders
+            href: ../financials/localizations/rus-advance-holders-daily-operations.md            
+        - name: Fixed assets
+          items: 
+          - name: Acquiring fixed assets and putting them into operation
+            href: ../financials/localizations/rus-fixed-asset-acquisition.md
+          - name: Create and post budget journals for fixed asset acquisitions
+            href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
+          - name: Fixed asset counting
+            href: ../financials/localizations/rus-fixed-assets-counting.md
+          - name: Fixed assets currency revaluation
+            href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+          - name: Partial fixed asset disassembly (liquidation)
+            href: ../financials/localizations/rus-fixed-assets-disassembly.md
+        - name: Set up and process payment orders
+          href: ../financials/localizations/rus-payment-order-settings-processing.md                
+        - name: Set up exchange rates for currency transactions
+          href: ../financials/localizations/rus-exchange-difference.md
+        - name: Preview ledger transactions
+          href: ../financials/localizations/rus-ledger-transactions-preview.md
+        - name: Set up officials
+          href: ../financials/localizations/rus-officials.md
+        - name: Set up bank accounts
+          href: ../financials/localizations/rus-local-settings-requisites-bank-module.md   
+        - name: Value-added tax (VAT) for tax agents
+          href: ../financials/localizations/rus-tax-agent.md
+        - name: Set up dimension control for settlements
+          href: ../financials/localizations/rus-transactions-settlement-date.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
@@ -2133,6 +2173,8 @@
           href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
         - name: Bill of exchange options
           href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+        - name: Calculate due dates and report on the average period of payments
+          href: ../financials/localizations/emea-esp-invoice-due-dates.md
         - name: Conditional sales tax
           href: ../financials/localizations/emea-esp-conditional-sales-tax.md
         - name: Credit invoicing

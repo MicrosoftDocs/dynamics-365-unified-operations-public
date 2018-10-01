@@ -6,6 +6,12 @@
     items:
     - name: What's new or changed
       items:
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 1, 2018)
+        href: whats-new-talent-october-01.md 
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 24, 2018)
+        href: whats-new-talent-september-24.md
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (September 17, 2018)
+        href: whats-new-talent-september-17-2018.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (September 10, 2018)
         href: whats-new-talent-september-10.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (August 2018)
@@ -22,10 +28,14 @@
       href: modular-app-tech-faq.md
     - name: Embed PowerApps apps
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Core HR and Common Data Service for Apps
+      href: CoreHREntities.md
     - name: Access preview features
       href: access-preview-feature.md
     - name: Configure the payroll integration between Talent and Dayforce
       href: configure-payroll-integration.md
+    - name: Get support for Talent
+      href: talent-support.md
   - name: Organize your workforce by using departments, jobs, and positions
     href: departments-jobs-positions.md
     items:
@@ -43,8 +53,13 @@
       href: formalize-business-processes.md
     - name: Use workflows to manage employee information
       href: workflow-manage-employee-information.md
-    - name: Leave and absence management
-      href: leave-absence-overview.md
+  - name: Manage leave and absence
+    href: leave-absence-overview.md
+    items:
+    - name: Accrue time off based on hours worked
+      href: leave-accrue-hours-worked.md
+    - name: Working time calendars
+      href: working-time-calendars.md
   - name: Staff your organization
     items:
     - name: Attract features and capabilities
@@ -61,6 +76,8 @@
       href: create-variable-compensation-plans.md
     - name: Process compensation
       href: process-compensation.md
+    - name: Set up the components of a job
+      href: create-job.md
   - name: Develop and train employees
     items:
     - name: Performance management

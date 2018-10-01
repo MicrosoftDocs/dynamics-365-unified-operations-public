@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 7.3
 
 # Transfer orders (Brazil)
 
+[!include [banner](../includes/banner.md)]
+
 You can use transfer orders to transfer inventory items between warehouses that are located at different fiscal establishments. You can also transfer inventory items to another fiscal establishment.
 
 When you transfer the items between different fiscal establishments, the following transfer fiscal documents are issued or received:

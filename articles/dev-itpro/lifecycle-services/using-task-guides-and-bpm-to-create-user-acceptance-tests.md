@@ -30,10 +30,18 @@ ms.dyn365.ops.version: 2012
 
 # Create user acceptance test libraries by using task recordings and BPM
 
+[!include [banner](../includes/banner.md)]
+
 You can use Task recorder and Business process modeler (BPM) to create user acceptance test libraries. Task recorder is a powerful tool to record test cases and organize them by business process using BPM. As a Microsoft partner you can use BPM to distribute test libraries to your customers via LCS and LCS solutions. If you are a customer, use BPM to author and distribute test libraries across different projects and team.
 Since BPM can be synchronized with Azure DevOps (formerly known as Visual Studio Team Services), you can automatically create test cases (including test steps) in your Azure DevOps project. Azure DevOps can then serve as your test condiguration and test management tool where you can create targeted test plans and test suites, manage the execution of tests and investigate results.  
 
 This topic walks through the process of creating and executing acceptance test suites to be used for manual or automated testing.
+
+
+
+
+
+
 
 ## Create a Scenario Acceptance Testing BPM library
 BPM is a great LCS tool to describe a hierarhy of business processes and user tasks. LCS also allows Microsoft partners and customers to author and distribute BPM libraries across LCS projects via the Asset library. This section describes how to take advantage of BPM to define your acceptance test library.
@@ -95,15 +103,16 @@ An acceptance test library is your starting point. It typically contains all tes
 
 Once you have selected your acceptance testing BPM library, synchronize it with Azure DevOps and create your test plan and test suites.
 
+
 ### Sync with Azure DevOps
-Synchronize your BPM library with your Azure DevOps project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-vsts). 
+Synchronize your BPM library with your Azure DevOps project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-azure-devops). 
 
 After configuration is complete, synchronize the BPM library with a Azure DevOps project.
-1. On the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **VSTS sync**.
+1. On the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **Azure DevOps sync**.
 
 ![VSTS Sync1](./media/vsts_sync_1.png.png "VSTS Sync1")
 
-You can also start Azure DevOps synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **VSTS sync**.
+You can also start Azure DevOps synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **Azure DevOps sync**.
 
 ![VSTS Sync2](./media/vsts_sync_2.png.png "VSTS Sync2")
 
@@ -149,6 +158,7 @@ Azure DevOps also provides a tool, **Test Runner**, to manage manual test case e
 We recommend that you take advantage of Azure DevOps as it provides a rich set of management features not only for testing, but result management and mitigation.
 
 ### Run automated test cases
+
 The Dynamics 365 Unified Operations platform provides developers with tools to author test cases based on task recordings and use Azure DevOps to manage the automated execution of these test cases. 
 
 Developers can use the build and test automation capabilities of **build and test** environments. For details, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/).

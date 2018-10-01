@@ -5,7 +5,7 @@ title: AX 2012 features that were postponed
 description: This topic lists features of Microsoft Dynamics AX 2012 that were postponed, and indicates whether the features have been implemented since the AX 7.0 release.
 author: sericks007
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,7 +47,7 @@ For a detailed list of when each version of the product was released, see [Softw
 <tr class="header">
 <th>AX 2012 feature that was postponed</th>
 <th>Description</th>
-<th>Current status (as of April 2018)
+<th>Current status (as of October 2018)
 </tr>
 </thead>
 <tbody>
@@ -450,7 +450,119 @@ Additionally, on the procurement site the employee could approve a vendor invoic
 <td>Not implemented</td>
 </td></tr>
 
+<tr class="odd">
+<td>[Russia] Tax registers</td>
+<td>Tax registers: Current period incomes; Tax expenses; Other expenses of current period; Unrealized expenses of current period; Other unrealized expenses; Accounts receivable debt – inventory; Bad debts reserve calculation; Bad debts reserve movement; Accounts receivable movement; Procedure for writing-off AR bad debts; Accounts payable debt - inventory; Accounts payable debt movement; Procedure for writing-off AP bad debts; Goods cost calculation; FA object information; IA object information; FA depreciation; IA depreciation; FA/IA sale; Depreciation bonus recovery; Profit tax registers wizard </td>
+ <td>Not implemented</td>
+</tr>
 
+<tr class="odd">
+<td>[Russia] Electronic export/import format for Client-Bank interface and reconciliation procedure</td>
+<td>Electronic formats for export of outgoing payments, and import of incoming payments.</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] VAT declaration</td>
+<td>Electronic format of VAT declaration.</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Cash Flow Management</td>
+<td>The functionality which obtains a cash flow forecast and performs an analysis, manages payments on a daily basis using payment schedule journals, controls the company’s cash position, and maintains the company’s cash flows with centralized control,</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Accounting reporting format</td>
+<td>Electronic format of the following accounting reports: BalanceSheet, IncomeStatement, CashFlow, EquityStatement, TargetUsageMoney</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Assessed tax reporting</td>
+<td>Assessed tax declaration.</td>
+ <td>Not implemented</td>
+</tr>
+ 
+<tr class="odd">
+<td>[Russia] Land tax reporting</td>
+<td>Land tax declaration. Creation of Land tax declaration by separate divisions.</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Transport tax reporting</td>
+<td>Transport tax declaration.</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Indirect tax return (VAT and Excise) on import of goods</td>
+<td>Indirect (withholding) tax return (VAT and Excise) on import of goods from state members of Customs union.</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Journal of Alcohol sales in Retail</td>
+<td>Daily Alcohol journal. Integration with EGAIS.</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Optional posting of transfer orders to General ledger</td>
+<td>Option to post/not post transactions to General ledger when posting a transfer order.</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Inventory owner</td>
+<td>Inventory dimension used to track owner of inventory (consignment stock, bailment, tolling, etc.).</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] AP/AR - 3rd party miscellaneous charges</td>
+<td>Registration of 3rd party miscellaneous charges and allocation by the following regimes: Inclusion into cost of purchased goods (allocation to invoices lines from other vendors), and redrawing to other parties re-allocation to other expense accounts.</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Goods in transit from vendor</td>
+<td>Registering goods in transit from vendor by special posting profile with Item type "purchased items en route". Creating Act of inventory holdings en route. (INV-6)</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Goods in transit - sales to customer with postponed passing of property</td>
+<td>Post sales invoice with postponed property transfer: no customer debts posted, all outgoing taxes are posted, items are transferred to transit warehouse. Register passing of property with posting debts and items sale from transit warehouse.</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Bailment - accounting at bailee side</td>
+<td>Accounting of inventory receipt for bailment as required by the Law and generation of primary form MX-1. Accounting of inventory return from bailment and generation of primary form MX-3. Bailment costs calculation from bailee side.</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Bailment - accounting at owner side</td>
+<td>Accounting of inventory transfer to bailment and inventory return from bailment on goods owner side under bailment service contract.</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Localization of Process Industries solution</td>
+<td>Basic localization in two areas: correspondence of accounts for all new general ledger postings, and functional co-existence of Process Industries features and Russian country context (no issues when both Process Industries and Russian country context are enabled).</td>
+ <td>Not implemented</td>
+</tr>
+
+<tr class="odd">
+<td>[Russia] Alcohol sales declarations: Application 6, 7, 8 for wholesale. Applications 11, 12 for retail</td>
+<td>Keeping track of alcoholic beverages types including producers, unit of measures, licenses for retail and wholesale trade. Preparing data for alcoholic beverages activities, including printing declarations and exporting them in XML format through e-reporting.</td>
+ <td>Not implemented</td>
+</tr>
 
 
 

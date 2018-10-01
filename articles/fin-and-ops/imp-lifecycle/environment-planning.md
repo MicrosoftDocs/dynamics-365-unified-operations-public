@@ -85,11 +85,11 @@ The various Finance and Operations environments are provisioned at different tim
 | Environment                     | When does provisioning occur? | Is it self-service? |
 |---------------------------------|-------------------------------|---------------------|
 | Tier-2 Standard Acceptance Test | During onboarding with the Microsoft FastTrack team | Yes |
-| Tier-1 develop/build and test   | When the Design phase starts. The provisioning process requires that Microsoft Visual Studio Team Services (VSTS) be configured. | Yes |
+| Tier-1 develop/build and test   | When the Design phase starts. The provisioning process requires that Microsoft Azure DevOps be configured. | Yes |
 | Production                      | At production system readiness | A production deployment request must be submitted in LCS. Deployment is done through the Dynamics Service Engineering (DSE) team within two business days. |
 
 > [!IMPORTANT]
-> Always deploy environments by using an **unnamed** account, such as `dynadmin@customer.com`. Use the build topology to deploy and use the develop and test environment, because this topology simplifies build management and automatically initializes the VSTS source repository.
+> Always deploy environments by using an **unnamed** account, such as `dynadmin@customer.com`. Use the build topology to deploy and use the develop and test environment, because this topology simplifies build management and automatically initializes the Azure DevOps source repository.
 
 ### Production system readiness
 
@@ -137,7 +137,7 @@ The following table compares the deployment options.
 |---------------------------------------|-----------------|--------------|-------------------|
 | Public URL                            | ✓ | ✓ | Not supported |
 | Integration development               | ✓ | ✓ | Extra setup is required. (For example, run the admin user provisioning tool.) |
-| VSTS                                  | ✓ | ✓ | Extra setup is required. (For example, rename the computer.) |
+| Azure DevOps                                  | ✓ | ✓ | Extra setup is required. (For example, rename the computer.) |
 | Applying deployable packages from LCS | Automated | Automated | Manual through runbooks |
 | Deploying data packages from LCS      | ✓ | ✓ | Not supported |
 | Maintenance                           | Managed by Microsoft | Managed by the customer/partner | Managed by the customer/partner |

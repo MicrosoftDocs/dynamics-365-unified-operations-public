@@ -3,7 +3,7 @@
  
 title: Check the availability of stock
 description: This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number. 
-author: 
+author: ShylaThompson
 manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
