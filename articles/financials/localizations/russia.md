@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Australia
+title: Russia
 description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to Russia.
 author: ShylaThompson
 manager: AnnBe
@@ -42,6 +42,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 ## Russia fixed assets
 
 - [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md)
+- [Create and post budget journals for fixed asset acquisitions](rus-post-budget-fixed-asset-acquisition.md)
 - [Fixed asset counting](rus-fixed-assets-counting.md)
 - [Fixed asset currency revaluation](rus-fixed-asset-currency-revaluation.md)
 - [Partial fixed asset disassembly (liquidation)](rus-fixed-assets-disassembly.md)
@@ -56,7 +57,6 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
 - [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
 - [Set up officials](rus-officials.md)
-- [Create and post budget journals for fixed asset acquisitions](rus-post-budget-fixed-asset-acquisition.md)
 - [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
 - [Set up and process payment orders](rus-payment-order-settings-processing.md)
