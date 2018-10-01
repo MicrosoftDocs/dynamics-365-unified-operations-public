@@ -2118,6 +2118,8 @@
           href: ../financials/localizations/emea-pol-turnover-balances-statement.md
       - name: Russia 
         items:
+        - name: Set up a method of payment 
+          href: ../financials/localizations/rus-payment-order-settings-processing.md         
         - name: Advance holders
         - href: ../financials/localizations/rus-advance-holders.md
           items: 
