@@ -40,11 +40,8 @@ Wondering about upcoming and recently released capabilities in any of our busine
 
 [Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning. 
 
-## Copy customers by using shared number sequences
-You can use shared number sequences to assign customer IDs. Shared number sequences also let you copy customers from one legal entity to another legal entity but use the same customer IDs in both legal entities.
-
-## Copy vendors by using shared number sequences
-You can use shared number sequences to assign vendor IDs. Shared number sequences also let you copy vendors from one legal entity to another legal entity but use the same vendor IDs in both legal entities.
+## Use shared number sequences to copy customers or vendors
+You can use shared number sequences to assign customer IDs or vendor IDs. Shared number sequences also let you copy customers or vendors from one legal entity to another legal entity but use the same IDs in both legal entities.
 
 ## Customer transactions list page
 The **View settlements** button on the Action Pane provides quick access to the settlement history and more information about the whole settlement transaction. You can also show additional transactions that are related to the selected transaction, either because they were part of the same settlement or because they are payments that were created in the same payment journal.
@@ -53,21 +50,29 @@ The **Global transactions** button has been added to the customer page. This but
 
 The filter for showing open transactions has been replaced with a new filter that lets you view more combinations of transactions. 
 
-You can update due dates and discount dates for open customer transactions. In release 8.1, the experience has been improved so that you can now add due dates to the **Customer transactions** list page. 
+You can also update due dates and discount dates for open customer transactions, and you can now add due dates to the **Customer transactions** list page. 
 
 ## Vendor transactions list page 
 The **View settlements** button on the Action Pane provides quick access to the settlement history and more information about the whole settlement transaction. You can also show additional transactions that are related to the selected transaction, either because they were part of the same settlement or because they are payments that were created in the same payment journal.
 
-The **Global transactions** button has been added to the vendor. This button lets you view all transactions for a vendor across all legal entities. The **Vendor transactions** list page shows transactions only for the legal entities that the user has access to, based on his or her security settings.
+The **Global transactions** button has been added to the vendor page. This button lets you view all transactions for a vendor across all legal entities. The **Vendor transactions** list page shows transactions only for the legal entities that the user has access to, based on his or her security settings.
 
-The filter for showing open transactions has been replaced with a new filter that lets you view more combinations of transactions. A filter has also been added that lets you hide currency translation transactions. Just select the **Hide currency revaluations** check box.
+The filter for showing open transactions has been replaced with a new filter that lets you view more combinations of transactions. A **Hide currency revaluations** filter has also been added that lets you hide currency translation transactions. 
 
-You can update due dates and discount dates for open customer transactions. In release 8.1, the experience has been improved so that you can now add due dates to the **Vendor transactions** list page. 
+You can also update due dates and discount dates for open customer transactions. In release 8.1, the experience has been improved so that you can now add due dates to the **Vendor transactions** list page. 
+
+## Financial dimensions
+Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions. Custom dimensions are shared across legal entities, and the values are entered and maintained by users. For entity-backed dimensions, the values are defined somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific.
+
+You can use financial dimensions to represent legal entities. You don't have to create the legal entities in Microsoft Dynamics 365 for Finance and Operations. However, financial dimensions aren't designed to address the operational or business requirements of legal entities. The interunit accounting functionality in Finance and Operations is designed to address only the accounting entries that are created by each transaction.
 
 ## Extensibility enhancements
-
+In this release of Finance and Operations, numerous extensibility enhancements have been made to 
+For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../dev-itpro/extensibility/extensibility-changes-81.md) 
 Refactored methods to support extensibility
 These enumerations have been made extensible in this release. 
+
+
 
 ## Phantom items
 
