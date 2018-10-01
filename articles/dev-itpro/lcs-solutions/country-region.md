@@ -5,7 +5,7 @@ title: Localization and regulatory features
 description: This topic includes lists of resources that can help you learn more about country/region-specific functionality.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/05/2018
+ms.date: 09/30/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -110,6 +110,7 @@ To learn more, see [Task guides](../../fin-and-ops/get-started/help-overview.md#
     :::column-end:::
     :::column:::
         - [Poland](../../financials/localizations/poland.md)
+        - [Russia](../../financials/localizations/russia.md)
         - [Saudi Arabia](../../financials/localizations/saudi-arabia.md)
         - [Singapore](../../financials/localizations/singapore.md)
         - [Spain](../../financials/localizations/spain.md)
