@@ -4,7 +4,7 @@ title: Advance holders for Russia
 description: This topic explains how to register and set up advance holders for Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/28/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
