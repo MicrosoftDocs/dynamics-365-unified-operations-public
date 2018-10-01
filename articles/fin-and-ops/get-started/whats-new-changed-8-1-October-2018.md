@@ -43,6 +43,8 @@ Wondering about upcoming and recently released capabilities in any of our busine
 ## Use shared number sequences to copy customers or vendors
 You can use shared number sequences to assign customer IDs or vendor IDs. Shared number sequences also let you copy customers or vendors from one legal entity to another legal entity but use the same IDs in both legal entities.
 
+For additional details, see [Copy customers by using shared number sequences](../../financials/accounts-receivable/copy-customer.md) and [Copy vendors by using shared number sequences](../../financials/accounts-payable/vendor-copy.md).
+
 ## Customer transactions list page
 The **View settlements** button on the Action Pane provides quick access to the settlement history and more information about the whole settlement transaction. You can also show additional transactions that are related to the selected transaction, either because they were part of the same settlement or because they are payments that were created in the same payment journal.
 
@@ -52,25 +54,38 @@ The filter for showing open transactions has been replaced with a new filter tha
 
 You can also update due dates and discount dates for open customer transactions, and you can now add due dates to the **Customer transactions** list page. 
 
-## Vendor transactions list page 
+For more information, see [Customer transaction list page](../../financials/accounts-receivable/customer-transactions-list-page.md).
+
+## Vendor transaction list page 
 The **View settlements** button on the Action Pane provides quick access to the settlement history and more information about the whole settlement transaction. You can also show additional transactions that are related to the selected transaction, either because they were part of the same settlement or because they are payments that were created in the same payment journal.
 
-The **Global transactions** button has been added to the vendor page. This button lets you view all transactions for a vendor across all legal entities. The **Vendor transactions** list page shows transactions only for the legal entities that the user has access to, based on his or her security settings.
+The **Global transactions** button has been added to the vendor page. This button lets you view all transactions for a vendor across all legal entities. The **Vendor transaction** list page shows transactions only for the legal entities that the user has access to, based on his or her security settings.
 
 The filter for showing open transactions has been replaced with a new filter that lets you view more combinations of transactions. A **Hide currency revaluations** filter has also been added that lets you hide currency translation transactions. 
 
 You can also update due dates and discount dates for open customer transactions. In release 8.1, the experience has been improved so that you can now add due dates to the **Vendor transactions** list page. 
 
-## Financial dimensions
-Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions. Custom dimensions are shared across legal entities, and the values are entered and maintained by users. For entity-backed dimensions, the values are defined somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company specific.
+For more information, see [Vendor transaction list page](../../financials/accounts-payable/vendor-transaction-list-page.md).
 
-You can use financial dimensions to represent legal entities. You don't have to create the legal entities in Microsoft Dynamics 365 for Finance and Operations. However, financial dimensions aren't designed to address the operational or business requirements of legal entities. The interunit accounting functionality in Finance and Operations is designed to address only the accounting entries that are created by each transaction.
+## Financial dimensions
+- You can use values from master records, such as customer and vendor, as default values in new dimensions. When the new dimensions are created, the master record ID is entered in the dimension values for those master records. For example, when you create a new customer, the customer ID is entered in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules are used, and the customer ID is added to the document.
+
+- You can configure a dimension so that information for other dimensions is automatically entered when you enter that dimension in a document. For example, if you enter cost center 10, a value of **20** can be automatically entered in the department dimension.
+
+- You can set up the derived dimensions segments and values by using entities.
 
 ## Extensibility enhancements
 In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../../dev-itpro/extensibility/extensibility-changes-81.md) 
 
 ## Phantom items
+The Phantom line type can be used for the lines of a bill of materials (BOM) and a formula. Phantom BOMs can also be used for a BOM that has a route network and in multilevel BOM structures, 
 
+For more information, see [Phantom items]( ../../supply-chain/production-control/phantom-items.md).
+
+## Russian localization
+Dynamics 365 for Finance and Operations now supports mandatory regulatory requirements in Russia (for on-premises deployment only). This release of Russian localization covers the following functional areas: accounts payable, accounts receivable, advance holders, bank and cash, export part of Client-Bank interface, fixed assets, general ledger and G/L reporting, electronic reporting for financial reports, inventory, addresses/FIAS, VAT and profit tax registers in areas of cash movement, goods movement, rated expenses, deferred expenses, exchange difference and WIP. 
+
+For more information, see [Russia](../../financials/localizations/russia.md).
 
 ## VAT reporting for the United Arab Emirates	
 Standard sales tax functionality in Finance and Operations now fulfils the majority of legislation requirements of United Arab Emirates VAT law. The following country-specific features are specific to the United Arab Emirates:
