@@ -48,6 +48,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Fixed asset counting](rus-fixed-assets-counting.md)
 - [Fixed asset currency revaluation](rus-fixed-asset-currency-revaluation.md)
 - [Set up and process payment orders](rus-payment-order-settings-processing.md)
+- [Partial fixed asset disassembly (liquidation)](rus-fixed-assets-disassembly.md)
 
 
 ## Additional resources
