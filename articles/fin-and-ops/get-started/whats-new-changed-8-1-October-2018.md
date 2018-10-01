@@ -74,6 +74,8 @@ You can configure a dimension so that information for other dimensions is automa
 
 You can set up the derived dimensions segments and values by using entities.
 
+For more information, see [Financial dimensions](../../financials/general-ledger/financial-dimensions.md).
+
 ## Extensibility enhancements
 In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations, metadata, and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../../dev-itpro/extensibility/extensibility-changes-81.md) 
 
