@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  
+ms.search.form: LedgerJournalTable 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -43,7 +43,7 @@ You can preview ledger transactions before you post the ledger journal.
 
     Select **General ledger** \> **Journals** \> **General journal**.
 
-2. Press Ctrl+N to create a journal.
+2. Create a journal.
 3. On the **Journal voucher** page, select **Lines** to create a journal line.
 4. Press Ctrl+S, or close the **Journal voucher** page.
 5. On the **Journal** page, select an open journal.
