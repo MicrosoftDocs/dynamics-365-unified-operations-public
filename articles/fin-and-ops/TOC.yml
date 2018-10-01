@@ -2145,6 +2145,8 @@
         - href: rus-transactions-settlement-date.md
         - name: Fixed asset counting
         - href: ../financials/localizations/rus-fixed-assets-counting.md
+        - name: Fixed assets currency revaluation
+        - href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
