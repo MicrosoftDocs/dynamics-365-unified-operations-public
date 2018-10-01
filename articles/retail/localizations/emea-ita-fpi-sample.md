@@ -110,11 +110,11 @@ To enable registration process we should setup the Headquater in the following w
 ## Commerce Runtime Extension Design
 ### Purpose
 
-    The purpose of the extension (Document Provider) is to generate printer specific documents and handle response from the fiscal printer. 
+The purpose of the extension (Document Provider) is to generate printer specific documents and handle response from the fiscal printer. 
 
 ### Request Handler
 	
-    The request handler DocumentProviderEpsonFP90III is the entry point for the request to generate documents in the fiscal printer.
+The request handler DocumentProviderEpsonFP90III is the entry point for the request to generate documents in the fiscal printer.
 
 The handler is inherited from INamedRequestHandler interface.
 Method HandlerName - responsible for return the Name of the handler. It should matches to the connector document provider name specified in HQ.
