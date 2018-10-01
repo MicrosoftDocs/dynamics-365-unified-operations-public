@@ -36,7 +36,7 @@ Since BPM can be synchronized with Azure DevOps (formerly known as Visual Studio
 This topic walks through the process of creating and executing acceptance test suites to be used for manual or automated testing.
 
 ## Create a Scenario Acceptance Testing BPM library
-BPM is a great LCS tool to describe a hierarchy of tasks and business processes. LCS also allows Microsoft partners and customers to author and distribute BPM libraries across LCS projects via the Asset library. This section describes how to take advantage of BPM to define your acceptance test library.
+BPM is a great LCS tool to describe a hierarhy of business processes and user tasks. LCS also allows Microsoft partners and customers to author and distribute BPM libraries across LCS projects via the Asset library. This section describes how to take advantage of BPM to define your acceptance test library.
 
 ### Create a BPM library
 There are several ways to create a Business process modeler (BPM) library. For more information about how to create libraries in BPM, see [Create, edit, and browse BPM libraries](creating-editing-browsing.md).
@@ -49,7 +49,7 @@ For illustration purposes, this topic uses a library that contains common busine
 
 After you have created a BPM library, you'll need to use Task recorder to create your test cases and then upload the cases to BPM. There are several ways to do this. 
 
-If you're using a library that already has all of the necessary task recordings attached, you can skip this step. Otherwise, create a new task recording in the client and save it directly to LCS, or download the AXTR file and upload it to a BPM library later. 
+If you're using a BPM library that already has all of the necessary task recordings (test cases) attached, you can skip this step. Otherwise, follow the instructions below to create new task recordings.
 
 #### Create and save a new task recording
 1. Open the client and sign in. 
@@ -68,9 +68,12 @@ If you're using a library that already has all of the necessary task recordings 
 8. Select the library that you want to save the recording to, and then click **Save**. Otherwise, select **Save to Disk** and follow the steps in the next section, "Upload an AXTR file to BPM."
 
  >[!NOTE]
- > To enable the effective execution of your tests using automation tools, make sure all of your task recordings start on the main dashboard of Dynamics 365 for Finance and Operations. 
+ > To enable the effective execution of your tests using automation tools, make sure all of your task recordings start on the main dashboard of Dynamics 365 for Finance and Operations.
+ > For end to end processes that are performed by more than one user, we recommend you divide your task recordings into user-specific tasks. It simplifies maintenance of test cases and allows you to execute test cases in the context of security roles, which is a best a practice. 
 
 #### Upload an AXTR file to BPM
+If you have saved your recordings (AXTR files) to disk, follow these steps to upload them to BPM.
+
 1. In Lifecycle Services (LCS), in your project, on the **Business process libraries** page, select the library to upload the task recording to.
 2. Click **Author and edit** and in the lines, locate and select the process to upload the task recording to.
 3. In the right pane, click **Upload**. 
@@ -146,8 +149,11 @@ Azure DevOps also provides a tool, **Test Runner**, to manage manual test case e
 We recommend that you take advantage of Azure DevOps as it provides a rich set of management features not only for testing, but result management and mitigation.
 
 ### Run automated test cases
-The Dynamics 365 Unified Operations platform provides developers with tools to author test cases based on task recordings and use Azure DevOps to manage the automated execution of these test cases. Execution of test cases are part of the build and test automation capabilities of **build and test** environment topologies.
-For details, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/).
+The Dynamics 365 Unified Operations platform provides developers with tools to author test cases based on task recordings and use Azure DevOps to manage the automated execution of these test cases. 
+
+Developers can use the build and test automation capabilities of **build and test** environments. For details, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/).
+
+Functional power users can automate the execution of their test cases using the **Regression Suite Automation Tool**. Select these links to download the [tool installer](<http://download.microsoft.com/download/0/E/F/0EFA1032-EE5F-484E-A40A-7BF38561DE62/Regression Suite Automation Tool Installer.msi>) and the [user manual](http://download.microsoft.com/download/0/E/F/0EFA1032-EE5F-484E-A40A-7BF38561DE62/Regression_Tool_User_Manual_2018-09-28.pdf).
 
 #### Investigate test runs
 Once an automated run is complete, on the Azure DevOps toolbar, select **Test > Runs** (or **Test Plans > Runs**) to investigate your test run. Select the desired test run to investigate test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.
