@@ -11,7 +11,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
-# ms.search.form:  
+ms.search.form: BankGroup, BankAccountTable 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
