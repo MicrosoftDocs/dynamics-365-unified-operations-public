@@ -2134,13 +2134,13 @@
           - name: Acquiring fixed assets and putting them into operation
           - href: ../financials/localizations/rus-fixed-asset-acquisition.md
           - name: Create and post budget journals for fixed asset acquisitions
-          - href: rus-post-budget-fixed-asset-acquisition.md
+          - href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
           - name: Fixed asset counting
           - href: ../financials/localizations/rus-fixed-assets-counting.md
           - name: Fixed assets currency revaluation
           - href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
           - name: Partial fixed asset disassembly (liquidation)
-          - href: /financials/localizations/rus-fixed-assets-disassembly.md
+          - href: ../financials/localizations/rus-fixed-assets-disassembly.md
           - name: Set up exchange rates for currency transactions
           - href: ../financials/localizations/rus-exchange-difference.md
         - name: Preview ledger transactions
@@ -2152,7 +2152,7 @@
         - name: Value-added tax (VAT) for tax agents
         - href: ../financials/localizations/rus-tax-agent.md
         - name: Set up dimension control for settlements
-        - href: rus-transactions-settlement-date.md
+        - href: ../financials/localizations/rus-transactions-settlement-date.md
       - name: Saudi Arabia
         href: ../financials/localizations/saudi-arabia.md
         items:
