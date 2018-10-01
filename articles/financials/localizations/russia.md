@@ -45,6 +45,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Create and post budget journals for fixed asset acquisitions](rus-post-budget-fixed-asset-acquisition.md)
 - [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
+- [Fixed asset counting](rus-fixed-assets-counting.md)
 
 
 ## Additional resources
