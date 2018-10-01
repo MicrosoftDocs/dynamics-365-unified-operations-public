@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Finance and Operations version 8.1 (October 2018)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.0. This version was released in October 2018.
+description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1. This version was released in October 2018.
 author: tonyafehr
 manager: AnnBe
 ms.date: 10/01/2018
@@ -25,7 +25,7 @@ ms.assetid: b264a51c-52d1-45c5-b698-64c5242c592a
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tfehr
-ms.search.validFrom: 2017-09-30 
+ms.search.validFrom: 2018-10-01 
 ms.dyn365.ops.version: Release 8.1
 
 ---
@@ -67,12 +67,7 @@ Use the **Financial dimensions** page to create financial dimensions that you ca
 You can use financial dimensions to represent legal entities. You don't have to create the legal entities in Microsoft Dynamics 365 for Finance and Operations. However, financial dimensions aren't designed to address the operational or business requirements of legal entities. The interunit accounting functionality in Finance and Operations is designed to address only the accounting entries that are created by each transaction.
 
 ## Extensibility enhancements
-In this release of Finance and Operations, numerous extensibility enhancements have been made to 
-For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../dev-itpro/extensibility/extensibility-changes-81.md) 
-Refactored methods to support extensibility
-These enumerations have been made extensible in this release. 
-
-
+In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addtion, enhancements have been made to enumerations and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../dev-itpro/extensibility/extensibility-changes-81.md) 
 
 ## Phantom items
 
