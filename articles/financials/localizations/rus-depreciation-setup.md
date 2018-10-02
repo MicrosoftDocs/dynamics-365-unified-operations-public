@@ -75,7 +75,7 @@ Depreciation methods define the rules for calculating depreciation.
 6. Select **OK**. The **Depreciation method** field on the **General** FastTab of the **FA value models** page is updated with the new depreciation method.
 
     > [!TIP]
-    > To open the **FA history** page to view these changes, select **Fixed assets (Russia)** \> **Common** \> **Fixed assets** and then select **Fixed assets** \> **Value models** \> **FA lifetime history**.
+    > To open the **FA history** page to view these changes, select **Fixed assets (Russia)** \> **Common** \> **Fixed assets**, select the fixed asset, and then select **Value models**. On the **FA value models** page, select **FA lifetime history**.
 
 ## Set up analysis codes for fixed asset depreciation
 Analysis codes are used to calculate the depreciation accrual for a fixed asset. You can set up an annual depreciation rate that is applied to fixed assets or to a depreciation group.
@@ -106,14 +106,14 @@ If a fixed asset is registered after it's put into operation, depreciation is ca
 4. In the **Depreciation group** and **Name** fields, enter the depreciation group code and name for the depreciation group.
 5. In the **Depreciation method** field, select a depreciation method for the depreciation group.
 6. On the **General** FastTab, in the **Lifetime** field, enter the maximum service life, in years, that depreciation is accrued for the fixed assets in the depreciation group.
-7. In the **Minimal depreciation** field, enter the minimum depreciation amount when you use the reducing remainder depreciation method.
+7. In the **Minimal depreciation** field, enter the minimum depreciation amount If you selected **Reducing remainder** as the depreciation method.
 8. In the **Depreciation start date** field, select the type of starting date for depreciation:
 
     - **From month when put into operation** – Depreciation is calculated from the first day of the month when the fixed asset is put to use after acquisition.
-    - **Next month start** – Depreciation is calculated from the month after the fixed asset is put to use after acquisition.
-    - **Next quarter start** – Depreciation is calculated from the quarter after the fixed asset is put to use after acquisition.
-    - **Next half year start** – Depreciation is calculated from the half-year after the fixed asset is put to use after acquisition.
-    - **Next year start** – Depreciation is calculated from the year after the fixed asset is put to use after acquisition.
+    - **Next month start** – Depreciation is calculated from the month after the fixed asset is put into operation after acquisition.
+    - **Next quarter start** – Depreciation is calculated from the quarter after the fixed asset is put into operation after acquisition.
+    - **Next half year start** – Depreciation is calculated from the half-year after the fixed asset is put into operation after acquisition.
+    - **Next year start** – Depreciation is calculated from the year after the fixed asset is put into operation after acquisition.
     - **Date of the registration** – Depreciation is calculated from the date of registration.
 
 9. On the **Deferrals** FastTab, in the field above the grid, select **Disposal** to set up parameters that are used to create deferrals on the disposal of fixed assets that accrue a loss. Select **Partial dismantlement** to set up parameters that are used create deferrals on the partial write-off of fixed assets that accrue a loss.
