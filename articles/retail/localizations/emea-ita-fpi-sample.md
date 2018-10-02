@@ -112,8 +112,11 @@ To enable registration process we should setup the Headquater in the following w
 6. Open Retail\Channel Setup\Fiscal Integration\Registration Process -  create a new process. Select connector functional group from the step above.
 ![alt text](media/emea-ita-fpi-registrationprocess.png "Registration process")
 7. Open Functionality profile  linked to store were registration process should be activated. Expand Fiscal registration process fast-tab. Select created registration process from step above.
+![alt text](media/emea-ita-fpi-functionalityprofile.png "POS functionality profile")
 8. Open Hardware profile that linked to hardware station to which fiscal printer will be connected.  Expand fiscal peripherals fast tab. Select connector technical profile.
+![alt text](media/emea-ita-fpi-hardwareprofile.png "Hardware profile")
 9. 	Open Distribution scheduler and  job 1070 to transfer data to Channel Database.
+![alt text](media/emea-ita-fpi-distributionjobs.png "Distribution scheduler")
 
 ## Commerce Runtime Extension Design
 ### Purpose
