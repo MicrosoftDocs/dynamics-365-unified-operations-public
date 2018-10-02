@@ -5,7 +5,7 @@ title: Copy Finance and Operations databases from Azure SQL Database to SQL Serv
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
 author: laneswenka
 manager: AnnBe
-ms.date: 09/20/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -119,6 +119,30 @@ Run the following script against the copy of the database to turn off change tra
 
 ```
 --Prepare a database in Azure SQL Database for export to SQL Server.
+
+-- Re-Assign Full Text Catalogs to [dbo]
+BEGIN
+    DECLARE @catalogName nvarchar(256);
+    DECLARE @sqlStmtTable nvarchar(512)
+
+    DECLARE reassignFullTextCatalogCursor CURSOR
+       FOR SELECT DISTINCT name
+       FROM sys.fulltext_catalogs 
+       
+       -- Open cursor and disable on all tables returned
+       OPEN reassignFullTextCatalogCursor
+       FETCH NEXT FROM reassignFullTextCatalogCursor INTO @catalogName
+
+       WHILE @@FETCH_STATUS = 0
+       BEGIN
+              SET @sqlStmtTable = 'ALTER AUTHORIZATION ON Fulltext Catalog::[' + @catalogName + '] TO [dbo]'
+              EXEC sp_executesql @sqlStmtTable
+              FETCH NEXT FROM reassignFullTextCatalogCursor INTO @catalogName
+       END
+       CLOSE reassignFullTextCatalogCursor
+       DEALLOCATE reassignFullTextCatalogCursor
+END
+
 --Disable change tracking on tables where it is enabled.
 declare
 @SQL varchar(1000)
@@ -358,16 +382,6 @@ In the Finance and Operations client, enter the values that you documented for t
 | SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
 
 ## Known issues
-
-### I can't drop users in source database
-
-When you drop users in the source database, the axdbadmin or axdeployuser user might not be deleted, because that user is the current owner of the full-text catalog. This issue occurs if the database was originally created for CTP7 or CTP8 of Dynamics AX 7 (Finance and Operations). To resolve the issue, run the following Transact-SQL (T-SQL) command to change the owner to the **dbo** user.
-
-```
-ALTER AUTHORIZATION ON Fulltext Catalog:: TO [dbo]; 
-```
-
-For more information about this command, see [ALTER AUTHORIZATION](https://msdn.microsoft.com/en-us/library/ms187359.aspx).
 
 ### I can't download Management Studio installation files
 
