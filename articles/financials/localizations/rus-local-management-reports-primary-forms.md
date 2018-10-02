@@ -165,16 +165,40 @@ When you generate this report, the following parameters are displayed. You can u
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Worker ID</strong></p></td>
-<td><p>Select the identification number of the employee for whom the transaction settlements report is generated.</p></td>
+<td><p><strong>Date interval code</strong></p></td>
+<td><p>Select the value of the period from the table of date intervals.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>To date</strong></p></td>
-<td><p>Select a date up to which the transactions are included on the report.</p></td>
+<td><p><strong>From date</strong></p></td>
+<td><p>Enter the start date of the period for generating the report. Manually select or insert from the selected code of interval dates.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Real-time settlement</strong></p></td>
-<td><p>Select this check box to include real-time settlement transactions to the report.</p></td>
+<td><p><strong>To date</strong></p></td>
+<td><p>Enter the end date for the period for generating the report. Manually select or insert from the selected code of interval dates.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Currency type</strong></p></td>
+<td><p>Select the transaction's currency type from the list. These values can be used: Standard currency, Secondary currency and Stated currency.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Currency</strong></p></td>
+<td><p>Enter the secondary currency of the transaction. Available if the currency type is Stated currency.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Main account</strong></p></td>
+<td><p>Enter the accounting record of employee advances for which the report will be generated.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Financial dimensions</strong></p></td>
+<td><p>Provide the dimensions codes if it is necessary to choose transactions with specific codes for the report. If the dimensions are not populated, the system will choose transactions for the report having any dimension codes.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>From date</strong></p></td>
+<td><p>Enter the start date of the period for generating the report. Manually select or insert from the selected code of interval dates.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>To date</strong></p></td>
+<td><p>Enter the end date for the period for generating the report. Manually select or insert from the selected code of interval dates.</p></td>
 </tr>
 </tbody>
 </table>
