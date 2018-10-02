@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-An organization can independently change the cost of a fixed asset one time per year at the end of the reporting year. Revaluation of fixed assets can also be done because of a decision of the state. As a rule, revaluation of fixed assets cost is accompanied by a revaluation of depreciation. Two methods can be used to change the cost of fixed assets as a result of revaluation of fixed asset cost:
+An organization can independently change the cost of a fixed asset one time per year at the end of the reporting year (usually on 12.31). Revaluation of fixed assets can also be done because of a decision of the state. As a rule, revaluation of fixed assets cost is accompanied by a revaluation of depreciation. Two methods can be used to change the cost of fixed assets as a result of revaluation of fixed asset cost:
 
 - **Indexing** – Indices are used. These indices are usually set by the state. In this case, the initial cost of the fixed asset and the amount of accrued depreciation are multiplied by the corresponding indices.
 - **Direct recalculation (direct evaluation)** – Documented data about the market price of the fixed asset is used. At the same time, the amount of depreciation is subject to indexation by the conversion factor. The conversion factor is calculated as the ratio of the object's new cost to its old cost.
