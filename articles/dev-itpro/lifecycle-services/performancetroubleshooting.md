@@ -55,7 +55,7 @@ All SQL performance tools in LCS are available under the **SQL Insights** tab on
 
     [![actions](./media/Actions.JPG)](./media/Actions.JPG)
 
-- **Performance Metrics** – Shows the most expensive queries that were run in the system during the selected period, based on logical I/O, execution count, duration, CPU time, and wait count. This data is queried from the SQL query store. The data is retained for 30 days, and the tool runs its data collection every day at 10 PM Coordinated Universal Time (UTC). To use the tool, select a period during the last 30 days. When the query results appear, select the bar in the duration chart to highlight where the query falls on other metrics. On the **Statement** tab, view the query, or download the query execution plan.
+- **Performance Metrics** – Shows the most expensive queries that were run in the system during the selected period, based on logical I/O, execution count, duration, CPU time, and wait count. This data is queried from the SQL query store. The data is retained for 30 days, and the tool runs its data collection every day at 10:00 PM Coordinated Universal Time (UTC). To use the tool, select a period during the last 30 days. When the query results appear, select the bar in the duration chart to highlight where the query falls on other metrics. On the **Statement** tab, view the query, or download the query execution plan.
 
     [![perfmetrics](./media/perfmetrics.JPG)](./media/perfmetrics.JPG)
 
@@ -63,12 +63,12 @@ All SQL performance tools in LCS are available under the **SQL Insights** tab on
 
     [![IndexAnalysis](./media/IndexAnalysis.JPG)](./media/IndexAnalysis.JPG)
 
-### For details on queries shown on the Queries and Actions tab, check out the [Query cookbook](querycookbook.md).
+- **Queries** tab and **Actions** tab - For details on queries shown on the **Queries** and **Actions** tabs, see the [Query cookbook](querycookbook.md).
 
 ## How do I use this feature?
 
 1. Go to your project in LCS and open the environment details page. Select the **Environment Monitoring** link in the **Monitoring** section. Click the **SQL Insights** tab to access this feature.
-2. You can navigate to each of the tabs (Live View, Queries, and Actions, Performance Metrics, Index Analysis) to view or query for more information.
+2. You can navigate to each of the tabs (**Live View**, **Queries**, **Actions**, **Performance Metrics**, **Index**, **Analysis**) to view or query for more information.
 3. You have the option to search or export to Excel any of results from the query execution.
 4. After you have narrowed down the reason for the performance issue, you can use a predefined action to mitigate the issue.
 5. After an action is performed, an entry is made on the **Environment History** page, which shows the details of the action, the parameters that were passed in, a timestamp, and who triggered the action.
