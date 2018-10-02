@@ -103,9 +103,11 @@ To enable registration process we should setup the Headquater in the following w
 ![alt text](media/emea-ita-fpi-documentprovider.png "Document provider")
 3. Open Retail\Channel Setup\Fiscal Integration\Connector Technical profiles - create a new one and select loaded connector from step above.
     * Update connection settings if needed.
+
 ![alt text](media/emea-ita-fpi-technicalprofile.png "Technical profile")
 4. Open Retail\Channel Setup\Fiscal Integration\Connector Functional profiles - create a new one and select loaded connector and document provider from steps above.
 	* Update Data Mapping settings if needed
+
 ![alt text](media/emea-ita-fpi-fiscalfunctionalityprofile.png "Connector functional profile")
 5. Open Retail\Channel Setup\Fiscal Integration\Connector Functional Group - create a new group and select connector functional profile from the step above.
 ![alt text](media/emea-ita-fpi-connectorgroup.png "Connector group")
@@ -115,7 +117,7 @@ To enable registration process we should setup the Headquater in the following w
 ![alt text](media/emea-ita-fpi-functionalityprofile.png "POS functionality profile")
 8. Open Hardware profile that linked to hardware station to which fiscal printer will be connected.  Expand fiscal peripherals fast tab. Select connector technical profile.
 ![alt text](media/emea-ita-fpi-hardwareprofile.png "Hardware profile")
-9. 	Open Distribution scheduler and  job 1070 to transfer data to Channel Database.
+9. Open Distribution scheduler and  job 1070 to transfer data to Channel Database.
 ![alt text](media/emea-ita-fpi-distributionjobs.png "Distribution scheduler")
 
 ## Commerce Runtime Extension Design
