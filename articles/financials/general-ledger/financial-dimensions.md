@@ -5,7 +5,7 @@ title: Financial dimensions
 description: This topic describes the various types of financial dimensions and how they are set up.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 08/24/2018
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
-# ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
@@ -24,8 +23,8 @@ ms.custom: 25871
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 
 ---
 
@@ -35,11 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains the various types of financial dimensions and how they are set up.
 
-Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions. Custom dimensions are shared across legal entities, and the values are entered and maintained by users. For entity-backed dimensions, the values are defined somewhere else in the system, such as Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific. 
+Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions. Custom dimensions are shared across legal entities, and the values are entered and maintained by users. For entity-backed dimensions, the values are defined somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific.
 
-After you've created the financial dimensions, use the **Financial dimension values** page to assign additional properties to each financial dimension. 
+After you've created the financial dimensions, use the **Financial dimension values** page to assign additional properties to each financial dimension.
 
-You can use financial dimensions to represent legal entities. You don't have to create the legal entities in Microsoft Dynamics 365 for Finance and Operations. However, financial dimensions aren’t designed to address the operational or business requirements of legal entities. The interunit accounting functionality in Finance and Operations is designed to address only the accounting entries that are created by each transaction. 
+You can use financial dimensions to represent legal entities. You don't have to create the legal entities in Microsoft Dynamics 365 for Finance and Operations. However, financial dimensions aren't designed to address the operational or business requirements of legal entities. The interunit accounting functionality in Finance and Operations is designed to address only the accounting entries that are created by each transaction.
 
 Before you set up financial dimensions as legal entities, evaluate your business processes in the following areas to determine whether this setup will work for your organization:
 
@@ -55,7 +54,9 @@ Here are some of the limitations:
 
 ## Custom dimensions
 
-To create a user-defined financial dimension, in the **Use values from** field, select **&lt; Custom dimension &gt;**. You can also specify an account mask to limit the amount and type of information that you can enter for dimension values. You can enter characters that remain the same for each dimension value, such as letters or a hyphen (-). You can also enter number signs (\#) and ampersands (&) as placeholders for letters and numbers that will change every time that a dimension value is created. Use a number sign (\#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter. The field for the format mask is available only when you select **&lt; Custom dimension &gt;** in the **Use values from** field.
+To create a user-defined financial dimension, in the **Use values from** field, select **&lt;&nbsp;Custom dimension&nbsp;&gt;**.
+
+You can also specify an account mask to limit the amount and type of information that can be entered for dimension values. You can enter characters that remain the same for each dimension value, such as letters or a hyphen (-). You can also enter number signs (\#) and ampersands (&) as placeholders for characters that will change every time that a dimension value is created. Use a number sign (\#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter. The field for the format mask is available only when you select **&lt;&nbsp;Custom dimension&nbsp;&gt;** in the **Use values from** field.
 
 **Example**
 
@@ -67,7 +68,7 @@ To create an entity-backed financial dimension, in the **Use values from** field
 
 ## Activating dimensions
 
-When you activate a financial dimension, the table is updated so that it includes the name of the financial dimension. Deleted dimensions are removed. You can enter dimension values before you activate a financial dimension. However, a financial dimension can't be consumed anywhere until it's activated. For example, you can't add a financial dimension to an account structure until the financial dimension has been activated. When you click **Activate**, all dimensions are updated and show status changes. 
+When you activate a financial dimension, the table is updated so that it includes the name of the financial dimension. Deleted dimensions are removed. You can enter dimension values before you activate a financial dimension. However, a financial dimension can't be consumed anywhere until it's activated. For example, you can't add a financial dimension to an account structure until the financial dimension has been activated. When you select **Activate**, all dimensions are updated and show status changes.
 
 ## Translations
 
@@ -81,14 +82,47 @@ Not all dimensions are valid for all legal entities. Additionally, some dimensio
 
 To help maintain referential integrity of the data, financial dimensions can rarely be deleted. If you try to delete a financial dimension, the following criteria are evaluated:
 
-- Has the financial dimension been used on any posted or unposted transactions, or any type of dimension value combination?
+- Has the financial dimension been used on any posted or unposted transactions, or in any type of dimension value combination?
 - Is the financial dimension used in any active account structure, advanced rule structure, or financial dimension set?
 - Is the financial dimension part of a default financial dimension integration format?
 - Has the financial dimension been set up as a default dimension?
 
 If any of the criteria are met, you can't delete the financial dimension.
 
+## Default dimension values
+
+You can use values from master records, such as customer and vendor, as default values in new dimensions. When the new dimensions are created, the master record ID is entered in the dimension values for those master records. For example, when you create a new customer, the customer ID is entered in the customer dimension. When you create sales orders, invoices, or other documents that require a customer ID, the existing defaulting rules are used, and the customer ID is added to the document.
+
+This feature is controlled by a setting in the dimension. This setting is named **Copy values to this dimension on each new DimensionName created**, where **DimensionName** is the name of the dimension. By default, the feature is turned off. However, it can be turned on at any time.
+
+If records already exist for the dimension, the master records are updated when you turn the feature on. However, existing documents and transactions aren't updated.
+
+## Derived dimensions
+
+You can configure a dimension so that information for other dimensions is automatically entered when you enter that dimension in a document. For example, if you enter cost center 10, a value of **20** can be automatically entered in the department dimension.
+
+You can set up derived values on the dimensions page.
+
+1. Select a dimension and then select **Derived dimensions**.
+
+    The **Derived dimensions** page includes a grid. The selected dimension segment is the first column in this grid.
+
+2. Add the segments that should be derived. Each segment appears as a column.
+
+Enter the dimension combinations that should be derived from the dimension in the first column. For example, to use the cost center as the dimension that the department and location are derived from, enter cost center 10, department 20, and location 30. Then, when you enter cost center 10 in a master record or on a transaction page, department 20 and location 30 are entered by default.
+
+The derived dimension process doesn't override existing values for derived dimensions. For example, if you enter cost center 10, and no other dimension is entered, department 20 and location 30 are entered by default. However, if you change the cost center, the values that have already been established aren't changed. Therefore, you can establish default dimensions on master records, and those dimensions won't be changed by derived dimensions.
+
+### Derived dimensions and entities
+
+You can set up the derived dimensions segments and values by using entities.
+
+- The Derived dimensions entity sets up the driving dimensions and the segments that are used for those dimensions.
+- The DerivedDimensionValue entity lets you import the values that should be derived for each driving dimension.
+
+When you use an entity to import data, if that entity imports dimensions, the derived dimension rules are applied during the import unless the entity specifically overrides those dimensions.
 
 For more information, see the following topics:
+
 - [Define financial dimensions](tasks/define-financial-dimensions.md)
 - [Maintain financial dimension default templates](tasks/maintain-financial-dimension-default-templates.md)
