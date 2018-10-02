@@ -5,7 +5,7 @@ title: Electronic messaging
 description: This article describes accruals, and provides information about how to set them up and create transactions.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: LedgerAccuralTable
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -24,8 +24,8 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-10-28
+ms.dyn365.ops.version: 8.1
 
 ---
 
@@ -73,12 +73,11 @@ Electronic messaging is based on the following entities:
 
 ## Set up electronic messaging
 
-**Electronic Messages** functionality is provided to maintain different processes of electronic reporting of different document types.
+Electronic messaging can help you maintain different processes of electronic reporting of different document types. For some of the complex scenarios where electronic messaging is set up to have a combination of many different Message statuses, Message items statuses, Actions, Additional fields, and Executable classes, packages of data entities are available for you to import. 
 
-Basically, features delivered by Microsoft may have a complex setup of EM functionality composed of combination of many different Message statuses, Message items statuses, Actions, Additional fields, Executable classes and soon. This is why for such features Microsoft deliver a package of data entities which includes predefined and tested setup data for a particular processing covering a feature. This package should be imported to a particular Legal entity
-via Data management tool. To know more about how to use Data management tool refer: <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages>.
+These packages, if you use them, should be imported to a Legal entity using the Data management tool. To know more about how to use Data management tool see, [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
-To get **Electronic Messages** functionality ready manually (without importing predefined setup via data entities) you need to set up the following:
+If you don't import a data entities package, you can set up **Electronic Messages** functionality manually. To do this, you must set up the following: 
 
 -   Number sequence for Messages and Message items
 -   Message item types
@@ -98,12 +97,10 @@ To get **Electronic Messages** functionality ready manually (without importing p
 :::row-end:::  
 :::row:::
     :::column:::
-        Set up number sequences for Message number sequence will be used for auto-numbering Messages. This is a unique identifier of a Message in the table.
-        Open **General Ledger parameters** (**Tax > Setup > Parameters > General Ledger parameters**) and set up a non-continuous number        sequence for “Message” Reference. This number sequence will be used for numbering messages on their generation.
+        Set up number sequences for Messages and for Message items.  The number sequences will be used for auto-numbering the messages and the message items and the numbers will be used as the unique identifiers for messages and message items in the table.
     :::column-end:::
     :::column:::
-        “Message items” number sequence will be used for auto-numbering Message items. This is a unique identifier of a Message item in         the table. Open **General Ledger parameters** (**Tax** \> **Setup** \> **Parameters** \> **General Ledger parameters**) and set         up a non-continuous number sequence for “Message items” Reference. This number sequence will be used for numbering
-        message items on their population from the source tables.
+        You can set up number sequences for electronic messaging on the **General Ledger parameters** page.
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -117,52 +114,25 @@ To get **Electronic Messages** functionality ready manually (without importing p
     :::column-end:::
     :::column:::
         **Tax** \> **Setup** \> **Electronic messages** \> **Message item types**
-        | **Field name**    | **Field description**                                                   |
-        |-------------------|-------------------------------------------------------------------------|
-        | Message item type | Enter a name for the Message item type (For example “Customer invoice”) |
-        | Description       | Enter a description of a Message item type.                             |
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Set up **Message item statuses** to identify which statuses will be applicable for Message items in the processing you are setting up.
+    :::column-end:::
+    :::column:::
+        **Tax** \> **Setup** \> **Electronic messages** \> **Message item statuses**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        Set up **Message statuses** to identify which statuses will be applicable for Messages in the processing you are setting up.
+    :::column-end:::
+    :::column:::
+        **Tax** \> **Setup** \> **Electronic messages** \> **Message statuses**.
     :::column-end:::
 :::row-end:::
 
-
-### Message item types
-
-Set up **Message item types** to identify which types of records will be used in Electronic messages.
-
-To set up **Message item types**, open **Tax** \> **Setup** \> **Electronic messages** \> **Message item types**.
-
-Fields description:
-
-| **Field name**    | **Field description**                                                   |
-|-------------------|-------------------------------------------------------------------------|
-| Message item type | Enter a name for the Message item type (For example “Customer invoice”) |
-| Description       | Enter a description of a Message item type.                             |
-
-### Message item statuses
-
-Set up **Message item statuses** to identify which statuses will be applicable for Message items in the processing you are setting up.
-
-To set up **Message item statuses**, open **Tax** \> **Setup** \> **Electronic messages** \> **Message item statuses**.
-
-Fields description:
-
-| **Field name**        | **Field description**                                                               |
-|-----------------------|-------------------------------------------------------------------------------------|
-| Message item statuses | Enter a status name for the Message items in you processing (For example “Created”) |
-| Description           | Enter a description of a Message item status.                                       |
-
-### Message statuses
-
-Set up **Message statuses** to identify which statuses will be applicable for Messages in the processing you are setting up.
-
-To set up **Message statuses**, open **Tax** \> **Setup** \> **Electronic messages** \> **Message statuses**.
-
-Fields description:
-
-| **Field name**   | **Field description**                                                            |
-|------------------|----------------------------------------------------------------------------------|
-| Message statuses | Enter a status name for the Messages in you processing (For example “Generated”) |
-| Description      | Enter a description of a Message status.                                         |
 
 ###  Additional fields
 
