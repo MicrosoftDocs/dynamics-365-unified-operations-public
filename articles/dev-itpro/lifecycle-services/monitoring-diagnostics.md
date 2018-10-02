@@ -144,7 +144,7 @@ For advanced troubleshooting, you can view raw information logs. You can use a s
 
 ### SQL insights
 
-The Monitoring and diagnostics portal also includes advanced SQL troubleshooting tools to enable performance analysis. Some of these tools resemble the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For more details, see the [Performance troubleshooting](performancetroubleshooting.md) topic.
+The Monitoring and diagnostics portal also includes advanced SQL troubleshooting tools to enable performance analysis. Some of these tools resemble the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For more details, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
 
 
 ## Other resources
