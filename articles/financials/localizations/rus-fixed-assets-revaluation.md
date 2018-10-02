@@ -33,15 +33,15 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-An organization can independently change the value of a fixed asset one time per year, as of January 1 of the reporting year. Revaluation of fixed assets can also be done because of a decision of the state. As a rule, revaluation of fixed assets is accompanied by a revaluation of depreciation. Two methods can be used to change the value of an operating entity as a result of revaluation of fixed asset value:
+An organization can independently change the cost of a fixed asset one time per year at the end of the reporting year. Revaluation of fixed assets can also be done because of a decision of the state. As a rule, revaluation of fixed assets cost is accompanied by a revaluation of depreciation. Two methods can be used to change the cost of fixed assets as a result of revaluation of fixed asset cost:
 
-- **Indexing** – Indices are used. These indices are usually set by the state. In this case, the initial value of the object and the amount of accrued depreciation are multiplied by the corresponding indices.
-- **Direct recalculation (direct evaluation)** – Documented data about the market price of the facility is used. At the same time, the amount of depreciation is subject to indexation by the conversion factor. The conversion factor is calculated as the ratio of the object's new value to its old value.
+- **Indexing** – Indices are used. These indices are usually set by the state. In this case, the initial cost of the fixed asset and the amount of accrued depreciation are multiplied by the corresponding indices.
+- **Direct recalculation (direct evaluation)** – Documented data about the market price of the fixed asset is used. At the same time, the amount of depreciation is subject to indexation by the conversion factor. The conversion factor is calculated as the ratio of the object's new cost to its old cost.
 
-As a result of revaluation of fixed asset cost (depreciation), the following events occur:
+As a result of revaluation of fixed asset cost and depreciation, the following events occur:
 
 - Ledger and fixed asset transactions are created. The fixed asset transactions that are created have transaction types of **Cost revaluation** and **Depreciation revaluation**.
-- On the **Balance by FA** page, the **Cost revaluation** and **Depreciation revaluation** fields are filled in, and the value in the **Net book value** field is increased or decreased by the revaluation transaction values.
+- On the **Balance by FA** page, the **Cost revaluation** and **Depreciation revaluation** fields are filled in, and the value in the **Net book value** field is increased or decreased by the revaluation transaction amount.
 
 To revaluate fixed asset cost and depreciation, follow these steps.
 
@@ -54,7 +54,7 @@ To revaluate fixed asset cost and depreciation, follow these steps.
 
     On the **FA revaluation lines** page, the system creates lines for fixed assets that have the selected value model.
 
-    The **Balance cost** field is set to **Net book value**, and the **Replacement cost** field is set to the fixed asset cost with revaluation. The **Balance cost** value corresponds to the value in **Net book value** field on the **Balance by FA** page (**Fixed assets (Russia)** \> **Fixed assets** \> **Value models** \> **Balance**).
+    The **Balance cost** field is set to **Net book value**, and the **Replacement cost** field is set to the new fixed asset cost. The **Balance cost** value corresponds to the value in **Net book value** field on the **Balance by FA** page (**Fixed assets (Russia)** \> **Common** \> **Fixed assets**, select **Value models** on the **Fixed assets** page, and then select **Balance** on the **FA value models** page).
 
     > [!NOTE]
     > You can manually set the **Replacement cost** field. In this case, the system recalculates the factor. Alternatively, you can manually set the **Factor** field. In this case, the system recalculates the replacement cost.
