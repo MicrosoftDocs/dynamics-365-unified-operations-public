@@ -5,7 +5,7 @@ title: Software lifecycle policy and cloud releases
 description: This topic outlines the lifecycle and support policies for the Microsoft Dynamics 365 for Finance and Operations online service.
 author: RyanCCarlson2 
 manager: AnnBe
-ms.date: 09/18/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -62,6 +62,7 @@ For information about the new features included in each release, click the links
 
 | **Release**                                                 | **Major or minor release** | **Version**                                                                                                                                           | **Build number** | **Availability** | **End of Service** |
 |-------------------------------------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|--------------------|
+| Dynamics 365 for Finance and Operations                     | Major release              | [8.1](../../fin-and-ops/get-started/whats-new-changed-8-1-October-2018.md)                                                                                                                                                   | 8.1.136           | October 2018       | April 2019         |
 | Dynamics 365 for Finance and Operations                     | Major release              | [8.0](../../fin-and-ops/get-started/whats-new-changed-8-0-April-2018.md)                                                                                                                                                   | 8.0.30           | April 2018       | April 2019         |
 | Dynamics 365 for Finance and Operations, Enterprise edition | Major release              | [7.3](../../fin-and-ops/get-started/whats-new-application-7.3-update.md)                       | 7.3.11971.56116  | December 2017    | April 2020*      |
 | Dynamics 365 for Finance and Operations, Enterprise edition | Major release              | [July 2017](../../fin-and-ops/get-started/whats-new-application-July-2017-update.md)           | 7.2.11792.56024  | June 2017        | April 2019          |
