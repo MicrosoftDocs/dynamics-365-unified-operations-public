@@ -5,7 +5,7 @@ title: Download updates from Lifecycle Services (LCS)
 description: Use this tutorial to download hotfixes for Microsoft Dynamics 365 for Finance and Operations, from Lifecycle Services (LCS).
 author: AngelMarshall
 manager: AnnBe
-ms.date: 02/27/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -69,7 +69,7 @@ Customers that have Dynamics 365 for Retail deployed will see a single tle that 
  
    2. Application Version 7.x or 8.0 with Platform Update 4 or higher - For customers that are on this combination, you will see all the 4 tiles listed above. This release will still have the granular X++ updates. Starting with Platform Update 4, no overlayering is allowed on the platform modules and hence Platform Binary Update tile is available that provides the platform updates as a cumulative update. 
 
-  3. AApplication Version 7.x with Platform Update 3 or lower - For customers that are on this combination, you will see 3 tiles - All X++ Updates, Critical X++ Updates and All binary updates. Since in this release platform can still be overlayered, there is no Platform binary update tile. 
+  3. Application Version 7.x with Platform Update 3 or lower - For customers that are on this combination, you will see 3 tiles - All X++ Updates, Critical X++ Updates and All binary updates. Since in this release platform can still be overlayered, there is no Platform binary update tile. 
   > [!NOTE]
     > If you are on this release, you need to upgrade as soon as possible. 
    
