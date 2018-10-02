@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides details on each query under the **SQL Insights** tab on the **Environment Monitoring** page in LCS and how they should be used when troubleshooting performance issues. For more details on this feature, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
+This topic provides details on each query under the **SQL Insights** tab on the **Environment Monitoring** page in Lifecycle Services (LCS) and how they should be used when troubleshooting performance issues. For details about this feature, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
 
 ## Current blocking
 
@@ -43,8 +43,8 @@ Lists any currently blocked queries, and also the SPID that is blocking them, ho
 
 ### Next steps
 - Determine which process is blocked, and which process is blocking it and why.
-- To resolve blocking, the only two options are to let it run and clear naturally, or to kill the lead blocker, which will roll back work. Generally, the lead blocker should only be killed in situations where it is not believed that it will clear naturally (such as a really bad query plan), or in situations where a critical process is unable to run and needs to be completed immediately.
-- To avoid the same blocking in the future, indexes or plan guides, or disabling of lock escalation and page locks, can be used if processes are blocking each other while operating on different records. If processes are operating on the same records, the only way to avoid blocking is by refactoring or rescheduling the processes so that they do not operate on the same records at the same time.
+- To resolve blocking, the only two options are to let it run and clear naturally, or to end the lead blocker process, which will roll back work. Generally, the lead blocker should only end in situations where it is not believed that it will clear naturally (such as a bad query plan), or in situations where a critical process is unable to run and needs to be completed immediately.
+- To avoid the same blocking in the future, you can use indexes or plan guides, or disable lock escalation and page locks if processes are blocking each other while operating on different records. If processes are operating on the same records, the only way to avoid blocking is by refactoring or rescheduling the processes so that they do not operate on the same records at the same time.
 
 ## Current blocking tree
 
@@ -53,8 +53,8 @@ Provides a graphical view of the SPIDs and statements that are currently causing
 
 ### Next steps
 - Determine which process is blocked, and which process is blocking it and why.
-- To resolve blocking, the only two options are to let it run and clear naturally, or to kill the lead blocker, which will roll back work. Generally, the lead blocker should only be killed in situations where it is believed that it will not clear naturally (such as a really bad query plan), or in situations where a critical process is unable to run and needs to be completed immediately.
-- To avoid the same blocking in the future, indexes or plan guides, or disabling of lock escalation and page locks, can be used if processes are blocking each other while operating on different records. If processes are operating on the same records, the only way to avoid blocking is by refactoring or rescheduling the processes so that they do not operate on the same records at the same time.
+- To resolve blocking, the only two options are to let it run and clear naturally, or to end the lead blocker process, which will roll back work. Generally, the lead blocker should only end in situations where it is believed that it will not clear naturally (such as a bad query plan), or in situations where a critical process is unable to run and needs to be completed immediately.
+- To avoid the same blocking in the future, you can use indexes or plan guides, or disable lock escalation and page locks, if processes processes are blocking each other while operating on different records. If processes are operating on the same records, the only way to avoid blocking is by refactoring or rescheduling the processes so that they do not operate on the same records at the same time.
 
 ## Current DTU
 
@@ -78,7 +78,7 @@ Provides a list of all queries that are currently in a state of being executed o
 ## Get index details
 
 ### Description
-Provides details about all indexes on a given table. This query is usually used before adding new indexes, to ensure there are not existing indexes that should be altered instead.
+Provides details about all indexes on a given table. This query is usually used before adding new indexes, to ensure there are no existing indexes that should be altered instead.
 
 ### Next steps
 - If you are adding a new index, verify that there is not an existing index that should just be adjusted instead. Each new index adds overhead on all write operations. Therefore, new indexes should be added sparingly.
@@ -94,7 +94,7 @@ Provides a list of all locks held by a given SPID. This is useful when a blockin
 - If a SPID is just holding large numbers of locks, reducing the amount of data processed within one transactional scope can reduce the number of locks and therefore the chances of experiencing blocking and deadlocks.
 
 ### Parameters
-The SPID can be obtained either from the list of currently running queries or through the list of current blocking queries. No historical information about SPIDs is available, because the SPID ID is only valid while the SPID is currently being executed.
+The SPID can be obtained either from the list of currently running queries or through the list of current blocking queries. No historical information about SPIDs is available because the SPID ID is only valid while the SPID is currently being executed.
 
 ## List of current plan guides
 
@@ -116,7 +116,7 @@ If query text is known to be causing a problem, this query can be used to find t
 ### Parameters
 - Provide a substring of the query statement, such as &quot;%FROM GENERALJOURNALENTRY T1%&quot;.
 
-## Get XML for a given plan id
+## Get XML for a given plan ID
 
 ### Description
 This provides the SQL plan in XML format for a given plan ID.
@@ -135,7 +135,7 @@ Provides a list of plans and execution statistics for a given query. This is use
 
 ### Next steps
 - If a query is getting multiple query plans with vastly different performance characteristics, start by retrieving and analyzing the plans to determine what is different and why one is far better than others.
-- In order to convince SQL to use a better query plan, the best solution is to make index changes or add query hints directly in code.
+- In order for SQL to use a better query plan, the best solution is to make index changes or add query hints directly in code.
 - If indexes and query hints are not enough, as a last resort, a plan guide can be added to force the better plans always to be used. Be careful when using a plan guide, because sometimes a query plan is fast for some parameter values but overly slow for other parameter values.
 
 ### Parameters
@@ -150,11 +150,11 @@ Provides information about what a given query plan has waited on in a given time
 ### Next steps
 - If a plan is primarily waiting on CPU, the plan is just inefficient and needs to be fixed through the addition of indexes or hints, or by restructuring the query.
 - If it is waiting on lock, the query is experiencing blocking. This is more difficult to determine unless you can see the blocking happening actively through the blocking tree query. In this case, the next step is to evaluate the records that are being edited and try to determine what other processes could be editing the same records at the same time. Often, the same query running in multiple threads at the same time will block itself.
-- If it is waiting on I/O or latch, there are likely either large volumes of data being transferred or large numbers of small transactions. Whenever possible, perform writes in small batches instead of just one record per transaction.
+- If it is waiting on I/O or latch, there are likely either large volumes of data being transferred or large numbers of small transactions. If possible, perform writes in small batches instead of just one record per transaction.
 
 ### Parameters
 - The plan ID can be obtained from a variety of sources, including currently running queries and the most expensive queries. If you have a query ID, you can get plan IDs by using the query to get a list of plans for that query.
-- Ideally, the time range should target a specific time when an issue was occurring. For instance, if DTU was high for an hour, target just that hour of execution.
+- Ideally, the time range should target a specific time when an issue was occurring. For instance, if DTU was high for an hour, you should target just that hour of execution.
 
 ## List most expensive queries
 
@@ -172,10 +172,10 @@ Provides a list of the most expensive queries during the specified period. The d
 ## Get fragmentation details
 
 ### Description
-Fragmentation is when the records are not stored contiguously inside of the page. When there is unused space between records on a page, which occurs through data modification that is made against the table and to the indexes defined on the table, this is SQL index fragmentation.  D365 uses SQL Azure DB premium SKUs which are backed by SSDs.  So the fragmentation does not cause the same level of issues as on a database that is backed by a SCSI drive.  But still it could cause slower performance.  Higher the fragmentation, there is a higher chance that it could hurt the performance of queries that uses this fragmented table/index.
+Fragmentation is when the records are not stored contiguously inside of the page. When there is unused space between records on a page, which occurs through data modification that is made against the table and to the indexes defined on the table, this is SQL index fragmentation. Dynamics 365 for Finance and Operations uses SQL Azure DB premium SKUs which are backed by SSDs. This means that the fragmentation does not cause the same level of issues as on a database that is backed by a SCSI drive, but it still it could cause slower performance. With higher fragmentation, there is a higher chance that it could affect the performance of queries that use this fragmented table/index.
 
 ### Next steps
-- This query here shows the list of tables, indexes with their fragmentation percentage and a recommendation to either REBUILD the index or REORG the index.  When you rebuild or reorg an index  it will pack the records next to each other and avoid gaps in between, thus reducing the fragmentation.
+- This query shows the list of tables, indexes with their fragmentation percentage, and a recommendation to either REBUILD the index or REORG the index. When you rebuild or reorg an index it will pack the records next to each other and avoid gaps in between, thus reducing the fragmentation.
 
 
 ## Create non-unique index on table
@@ -235,12 +235,12 @@ Usually, extra indexes on a table only add minor incremental costs. But in some 
 ## End SQL process
 
 ### Background
-If a SPID is consuming too many resources and degrading the operation of other processes, it might be beneficial to kill the SPID. This will cause the open transaction to roll back, meaning that data should not be lost, but the process might need to be manually restarted. Note that rollback can also take a long time and consume a lot of resources if the transaction has already performed a lot of work. Therefore, this action should be used with caution.
+If a SPID is consuming too many resources and degrading the operation of other processes, it might be beneficial to end the SPID process. This will cause the open transaction to roll back, meaning that data should not be lost, but the process might need to be manually restarted. Note that rollback can also take a long time and consume a lot of resources if the transaction has already performed a lot of work. Therefore, this action should be used with caution.
 
 ### Next steps
-- From the blocking tree and other queries, determine which SPID should be killed.
-- Verify that the processing that is being performed by the SPID can be killed without causing harm to ongoing business operations.
-- Provide the SPID number to kill, and roll back that operation.
+- From the blocking tree and other queries, determine which SPID should end.
+- Verify that the processing that is being performed by the SPID can end without causing harm to ongoing business operations.
+- Provide the SPID number to end, and roll back that operation.
 
 ## Disable/enable page locks and lock escalation
 
@@ -260,7 +260,7 @@ In many situations, SQL will either take page locks (locking a full page at a ti
 Over time, as processes edit existing records and write new records into tables, indexes might become fragmented. This increases the amount of I/O necessary to process the same number of records, and might cause performance degradation. This operation will rebuild indexes to reduce page fragmentation. This is an expensive operation and has been known to cause contention while running. Therefore, the environment should be monitored while this operation is running.
 
 ### Next steps
-- Monitor blocking and DTU in the system while this operation is running. If the system degrades unacceptably, consider killing this operation.
+- Monitor blocking and DTU in the system while this operation is running. If the system degrades unacceptably, consider ending this operation.
 
 ## Remove plan guide
 
@@ -279,7 +279,7 @@ If plan guides have been installed and are having a negative impact, or if they 
 Updates statistics on the specified table. Occasionally, statistics can be found to be out of date and to be causing query plan issues, such as after an import process that has skewed the statistics of the table. Note that this action will have a significant performance overhead while running and has also been known to cause blocking on queries that use the same table. Therefore, it should be used sparingly and monitored while running to ensure that the system does not degrade.
 
 ### Next steps
-- While running this query, monitor both current blocking and current DTU to ensure that system performance does not degrade unacceptably. If it does, consider killing the update statistics command.
+- While running this query, monitor both current blocking and current DTU to ensure that system performance does not degrade unacceptably. If it does, consider ending the update statistics command.
 
 ### Parameters
 - The table name parameter is the physical name of the table to update statistics for.
