@@ -3,7 +3,7 @@ title: Create user acceptance test libraries by using task guides and BPM
 description: This topic provides information about using Task guides and BPM to create and execute acceptance test suites.
 author: kfend
 manager: AnnBe
-ms.date: 06/07/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
 ms.service:  dynamics-ax-platform
@@ -163,7 +163,7 @@ The Dynamics 365 Unified Operations platform provides developers with tools to a
 
 Developers can use the build and test automation capabilities of **build and test** environments. For details, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md) and the [Dev ALM blog](http://blogs.msdn.microsoft.com/axdevalm/).
 
-Functional power users can automate the execution of their test cases using the **Regression Suite Automation Tool**. Select these links to download the [tool installer](<http://download.microsoft.com/download/0/E/F/0EFA1032-EE5F-484E-A40A-7BF38561DE62/Regression Suite Automation Tool Installer.msi>) and the [user manual](http://download.microsoft.com/download/0/E/F/0EFA1032-EE5F-484E-A40A-7BF38561DE62/Regression_Tool_User_Manual_2018-09-28.pdf).
+Functional power users can automate the execution of their test cases using the **Regression Suite Automation Tool**. Select these links to download the [Tool installer](http://download.microsoft.com/download/0/E/F/0EFA1032-EE5F-484E-A40A-7BF38561DE62/Regression Suite Automation Tool Installer.msi) and the [user manual](http://download.microsoft.com/download/0/E/F/0EFA1032-EE5F-484E-A40A-7BF38561DE62/Regression_Tool_User_Manual_2018-09-28.pdf).
 
 #### Investigate test runs
 Once an automated run is complete, on the Azure DevOps toolbar, select **Test > Runs** (or **Test Plans > Runs**) to investigate your test run. Select the desired test run to investigate test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.
