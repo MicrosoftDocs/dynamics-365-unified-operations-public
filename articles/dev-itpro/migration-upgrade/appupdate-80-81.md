@@ -36,6 +36,9 @@ ms.dyn365.ops.version: AX 8.0
 
 This topic explains the effort and steps required to update existing 8.0 environments to the 8.1 application release.
 
+>[!Note]
+>The 8.1 binary update package will be available on October 15th, 2018 which impacts steps 5-7.  However, steps 1-4 can be started as of October 1st, 2018.
+
 ## Background
 
 Traditionally moving to a newer application version has involved a rigorous upgrade that involves deployment of additional virtual machines, code upgrade, data upgrade, and scheduling several days in advance with the DSE Team.  With the direction of One Version in the market, we have begun to make uptaking the latest version simpler.  This will continue to improve over time.
