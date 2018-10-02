@@ -193,21 +193,26 @@ When you generate this report, the following parameters are displayed. You can u
 <td><p>Provide the dimensions codes if it is necessary to choose transactions with specific codes for the report. If the dimensions are not populated, the system will choose transactions for the report having any dimension codes.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>From date</strong></p></td>
-<td><p>Enter the start date of the period for generating the report. Manually select or insert from the selected code of interval dates.</p></td>
+<td><p><strong>Print ranges</strong></p></td>
+<td><p>Set the option to display request conditions when printing the report.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>To date</strong></p></td>
-<td><p>Enter the end date for the period for generating the report. Manually select or insert from the selected code of interval dates.</p></td>
+<td><p><strong>Delete zero line</strong></p></td>
+<td><p>Set the option to not print zero lines or columns.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Total accounts</strong></p></td>
+<td><p>Set the option to print total accounts.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Show transactions</strong></p></td>
+<td><p>Set the option to display the transactions of advance holders.</p></td>
 </tr>
 </tbody>
 </table>
 
+In **Details and sorting parameters** section, select available fields to be included into the report.
 
-1.  Click .
+In **Records to include** tab, define additional filtering conditions, if necessary.
 
-2.  Create .
-    
-    > [!NOTE]
-    > .
-
+Click the **OK** button to complete the report generation.
