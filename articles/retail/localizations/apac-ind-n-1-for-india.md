@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 # Support for upgrade and N-1 for India
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the steps needed to set up and use Phased Rollout (N-1) retail components for India. The upgrade procedure and the workflow for N-1 are basically the same as for a general Microsoft Dynamics 365 for Retail environment. For general information about N-1 installation and usage, see [Upgrade and N-1 support for Retail](../dev-itpro/overview-upgrade-n-minus1.md). 
 
