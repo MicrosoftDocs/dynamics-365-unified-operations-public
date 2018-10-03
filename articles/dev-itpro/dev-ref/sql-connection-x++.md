@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Plaform update 21
 
 ---
 
-# SQL connection errors and X++
+# SQL connection error X++ exception
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,7 +42,7 @@ TransientSqlConnectionError X++ exception will be thrown when a transient SQL co
 
 ### Notes
 1. TransientSqlConnectionError exception is not catchable within the transaction.  The X++ transaction that encounters this exception is aborted before the exception is thrown.
-2. Recommendation is to use the catch block to identify transient SQL connection error instead of generic X++ error exception, retry the outermost transaction or your entire application code logic.  This exception allows application to design on transient server side failures.
+2. Recommendation is to use the catch block to identify transient SQL connection error instead of generic X++ error exception, retry the outermost transaction or your entire application code logic.  This exception allows application to design on transient server failures.
 
 
 ## Example
