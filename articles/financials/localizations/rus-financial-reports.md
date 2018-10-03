@@ -273,7 +273,15 @@ In format configuration, filter the record list *Items* by a constant value of I
 4.	Run the report.
 
 Run report from the **Electronic reporting** workspace.
-Define **Calculation date**, **Report code** and optionally, **Reporting date**.
+Define **Calculation date** - the base date for the period of financial report identification, 
+**Report code** - financial report code
+optionally define **Reporting date** - the date when you are generating the report.
+
+   *Note. If you are generating corrective report for closed periods, and define **Reporting date**, Financial reports cells calculation will consider transactions of Base period and also all later transactions up to **Reporting date** which are correcting the Base period (Reporting date in the posted transaction belongs to the Base period) 
+   If you are generating the report for recent period and define **Reporting date**, Financial reports cells calculation will consider transactions of Base (recent) period excluding transactions which are correcting previous (closed) periods (Reporting date in the posted transaction belongs to previous closed period) *
+
+
+
 
 
 
