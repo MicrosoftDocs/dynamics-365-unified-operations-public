@@ -563,6 +563,7 @@ The following table shows the exception literals that are the values of the **Ex
 | UpdateConflict                    | An error occurred in a transaction that is using Optimistic Concurrency Control. The transaction can be retried (use a **retry** statement in the **catch** block). |
 | UpdateConflictNotRecovered        | An error occurred in a transaction that is using Optimistic Concurrency Control. The code won't be retried. This exception can't be caught within a transaction.    |
 | Warning                           | An exceptional event has occurred. Although the user might have to take action, the event isn't fatal. Don't throw a **warning** exception.                         |
+| [TransientSqlConnectionError](sql-connection-x++.md)       | A transient SQL connection error occured during the query execution.  The transaction will be aborted.  This transaction can't be caught within a transaction. |
 
 ## Loop statements: for, while, and do...while
 There are three loop statements: **for**, **while**, and **do**...**while**. A loop repeats its statement until the condition that is set for the loop is **false**. Within the loop statements, you can use **break** and **continue** statements.
