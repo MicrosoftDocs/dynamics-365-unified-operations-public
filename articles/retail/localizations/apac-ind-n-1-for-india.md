@@ -26,7 +26,10 @@ ms.author: dmakimo
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.1
 ---
+
 # Support for upgrade and N-1 for India
+
+[!include [banner](includes/banner.md)]
 
 This topic describes the steps needed to set up and use Phased Rollout (N-1) retail components for India. The upgrade procedure and the workflow for N-1 are basically the same as for a general Microsoft Dynamics 365 for Retail environment. For general information about N-1 installation and usage, see [Upgrade and N-1 support for Retail](../dev-itpro/overview-upgrade-n-minus1.md). 
 
@@ -36,8 +39,6 @@ In addition, the following steps are important for upgrade:
 - Downgrade of the GST configuration is required to use the configuration prepared for Microsoft Dynamics 365 for Retail at the AX 2012 channel side.
 - Distribution schedule includes additional upload and download jobs required to synchronize GST configuration and tax calculation results between Microsoft Dynamics 365 for Retail Headquarters and AX 2012 channels.
 
-> [!NOTE]
-> This topic applies to both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail.
 
 ## Prerequisites
 
