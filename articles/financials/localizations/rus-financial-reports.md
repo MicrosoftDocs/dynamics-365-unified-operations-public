@@ -33,16 +33,11 @@ ms.dyn365.ops.version: 8.1
 
 
 
-The Financial reports setup allows you to configure list and content of “boxed” reports like
-Balance sheet. For each report box or cell, the data collection for ledger
-transactions, budget transactions, and calculated profit tax registers can be
-configured. 
+The Financial reports setup allows you to configure list and content of financial reports like Balance sheet or any other report where the reported amounts are presented in Cells. 
 
-You should also configure report output in GER (electronic reporting) in a way where ER
-configuration takes the data calculated according to user setup of the
-financial report and generates the file output according to format
-configuration (for example Excel and/or XML).
+You should define the list of reports, reports cells and for each report cell, define the data collection rules based on ledger transactions, budget transactions, and profit tax registers. 
 
+You should configure report output in ER (Electronic reporting) in such a way that ER configuration takes the data calculated for the configured Financial report and generates the file output according to format configuration (for example Excel and/or XML).
 
 You should also configure Electronic message processing where one of the steps allows authorized user to
 run the ER configuration of the financial report, generate report and store generated
