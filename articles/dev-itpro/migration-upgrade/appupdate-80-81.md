@@ -59,7 +59,7 @@ The high-level process to update from 8.0 to 8.1 includes the following:
 Using Lifecycle Services, deploy at least one developer environment and a single new build environment on application 8.1 release.
 [![VersionSelection](./media/VersionSelection.png)](./media/VersionSelection.png)
 [![TopologySelection](./media/TopologySelection.png)](./media/TopologySelection.png)
-This on average takes 3-4 hours and can be done simultaneously.  For the build environment, **create a new agent pool** and assign to this environment in Advanced options
+This on average takes 3-4 hours and can be done simultaneously.  For the build environment, **create a new agent pool** and assign to this environment in Advanced options screen.
 
 In Azure DevOps (formerly known as VSTS), visit your existing Build Definition and ensure that it is not using your new agent pool for 8.1.  This will keep your new build agent from trying to compile older application code.
 
