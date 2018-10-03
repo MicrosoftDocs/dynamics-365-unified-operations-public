@@ -48,7 +48,7 @@ You should also configure Electronic message processing where one of the steps a
 run the ER configuration of the financial report, generate report and store generated
 report data.
 
-## Financial reports setup
+## Set up Financial reports
 
 You should complete the following steps to set up the report:
 
@@ -59,7 +59,7 @@ You should complete the following steps to set up the report:
    •	Setup calculation criteria for report cells
 
 
-### Setup list of report names
+### Set up list of report names
 1.	Go to **General ledger > Financial reports setup > Financial reports**.
 The **Overview** tab displays a list of all the reports that are set up in the system.
 2.	Create new report. Enter a brief, and full names of the report in the **Report code** and **Description** fields.
@@ -101,7 +101,7 @@ If no lines are created, the filter will not be used.
 12. Create a new line. In the **Reference** field, select the Dimension name. In the **From** and **To** fields, select the starting and ending code for the dimension range, which should be considered in calculations. Create a line for each required dimension range. If no lines are created, the filter will not be used.
 
 
-## Setup cells of the reports
+## Set up cells of the reports
 
 You can setup the cells of report manually or by copying from another report. 
 
@@ -122,7 +122,7 @@ Credit transaction amount for the ledger in correspondence with other ledger acc
 
 Tabs and list of fields in each tab in the upper section of the page are the same as in the **Financial reports** page. Values entered for report cell on the **Requisites setup** page, supersede those entered for the report.
 
-### Setup calculation rules for the cell.
+### Set up calculation rules for the cell.
 
 Use the following procedure to create report cell operations.
 1.	In the **Financial reports** page, click **Setup**.
@@ -281,10 +281,29 @@ optionally define **Reporting date** - the date when you are generating the repo
    If you are generating the report for recent period and define **Reporting date**, Financial reports cells calculation will consider transactions of Base (recent) period excluding transactions which are correcting previous (closed) periods (Reporting date in the posted transaction belongs to previous closed period) *
 
 
+## Configure Electronic messages to generate the financial report and store the results
 
+Find more details about how to configure Electronic messages here: <add here link to content page of content deliverable 244665 "Electronic messages">
 
+Below you can find example procedure of how to configure Electronic messages to run the Electronic reporting configuration for Financial report
 
+In the **Message statuses** page create message statuses applicable to the report (For example, define Created, Generated)
 
+In the **Message processing action** page, create the following actions:
+1. Action "Create message" with Action type **Create message** and Result status **Created**
 
+2. Action "Generate report" with type **Electronic reporting export message**, Initial status **Created** and Resut status **Generated**. Make the following settings:
+- Activate the parameter **Show dialog**
+- Choose Electronic reporting format created above in the field **Format mapping**
+- Define the default name of generated file in the field **File name**
 
+In the **Electronic message processing** page, define processing flow for the report.
+For example, define that processing consists of 2 actions: "Create message" and "Generate report" created above.
+
+In the **Electronic messages** page, choose the processing created on above step.
+Click **New** to create message. 
+Define **From date** and **To date** - dates of the reporting period.
+Click **Generate report** to run the Electronic reporting format for financial report.
+Enter User parameters if requested by ER configuration, on user dialog
+Review generated file in **Attachments**.
 
