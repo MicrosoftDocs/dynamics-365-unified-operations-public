@@ -236,7 +236,7 @@ Read-only fields can only be assigned a value once, and that value never changes
 Var
 ---
 
-You can now declare a variable without explicitly providing the type of the variable, if the compiler can determine the type from the initialization expression. Note that the variable is still strongly-typed into one, unambiguous type. It's only possible to use var on declarations where an initialization expressions are provided (from which the compiler will infer the type). There are situations where this can make code easier to read, but this feature shouldn't be misused. You should consider the following rules:
+You can now declare a variable without explicitly providing the type of the variable, if the compiler can determine the type from the initialization expression. Note that the variable is still strongly-typed into one, unambiguous type. It's only possible to use var on declarations where initialization expressions are provided (from which the compiler will infer the type). There are situations where this can make code easier to read, but this feature shouldn't be misused. You should consider the following rules:
 
 -   Use var to declare local variables when the type of the variable is obvious from the right side of the assignment, or when the precise type is not important.
 
