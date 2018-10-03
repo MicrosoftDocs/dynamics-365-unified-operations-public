@@ -313,6 +313,8 @@
       href: localizations/emea-eeu-petty-cash-for-retail.md
     - name: Retail customer invoices and return sales orders in Eastern European countries
       href: localizations/emea-eeu-retail-invoices.md
+    - name: Petty cash management for Retail for Eastern Europe
+      href: localizations/emea-eeu-petty-cash-for-retail.md
   - name: France
     items:
     - name: Cash register functionality
