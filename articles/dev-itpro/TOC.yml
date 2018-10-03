@@ -1287,6 +1287,10 @@
     href: lifecycle-services/user-logins.md
   - name: Asset library
     href: lifecycle-services/asset-library.md
+  - name: Performance troubleshooting using tools in LCS
+    href: lifecycle-services/performancetroubleshooting.md
+  - name: Query cookbook
+    href: lifecycle-services/querycookbook.md
   - name: Microsoft Dynamics 365 Translation Service
     href: lifecycle-services/translation-service-overview.md
     items:

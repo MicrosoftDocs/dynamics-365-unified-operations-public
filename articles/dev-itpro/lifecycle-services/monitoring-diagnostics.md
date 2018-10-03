@@ -5,7 +5,7 @@ title: Monitoring and diagnostics tools in Lifecycle Services (LCS)
 description: This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Microsoft Dynamics 365 for Finance and Operations environments that you manage.
 author: manalidongre
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Microsoft Dynamics 365 for Finance and Operations environments that you manage.
 
-To have a successful onboarding experience to the cloud service for Microsoft Dynamics 365 for Finance and Operations, you must know the health of your environments at all times. You must also be able to troubleshoot any health issues that occur. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center for Dynamics 365 for Finance and Operations, contains a collection of monitoring and diagnostics tools that can help guarantee that you have an accurate view of the environments that you manage.
+To have a successful onboarding experience to the cloud service for Microsoft Dynamics 365 for Finance and Operations, you must know the health of your environments at all times. You must also be able to troubleshoot any health issues that occur. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center for Dynamics 365 for Finance and Operations, contains a collection of monitoring and diagnostics tools that can help to ensure that you have an accurate view of the environments that you manage.
 
 ## Telemetry data
 The telemetry data that is the basis of the Monitoring and diagnostics portal in LCS has three primary use cases: monitoring, diagnostics, and analytics. [![monitoringanddiagnostics01](./media/monitoringanddiagnostics01.png)](./media/monitoringanddiagnostics01.png)
@@ -65,7 +65,10 @@ For a managed cloud service such as Dynamics 365 for Finance and Operations, Mic
 3.  On the **Environment details** page, click **Environment monitoring** to open the Monitoring and diagnostics portal. [![howtogettoenvmonitoring](./media/howtogettoenvmonitoring-1024x486.jpg)](./media/howtogettoenvmonitoring.jpg)
 
 ## Tools
-Several tools and resources are available in the Monitoring and diagnostics portal. **Note:** Not all environments contain all the tools. The following table shows the tools that are available for each type of environment.
+Several tools and resources are available in the Monitoring and diagnostics portal. 
+
+> [!NOTE]
+> Not all environments contain all the tools. The following table shows the tools that are available for each type of environment.
 
 <table>
 <colgroup>
@@ -131,7 +134,8 @@ You can use the filters on this page to narrow the information logs. Here are so
 -   **User** – View a specific user's activities.
 -   **Search terms** – Create a search that is based on the issue that is being investigated.
 
-**Important:** The Activity monitoring tool retains data for only 30 days.
+> [!IMPORTANT]
+> The Activity monitoring tool retains data for only 30 days.
 
 ### Raw information logs
 
@@ -144,27 +148,8 @@ For advanced troubleshooting, you can view raw information logs. You can use a s
 
 ### SQL insights
 
-The Monitoring and diagnostics portal also includes advanced SQL troubleshooting tools to enable performance analysis. Some of these tools resemble the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012.
+The Monitoring and diagnostics portal also includes advanced SQL troubleshooting tools to enable performance analysis. Some of these tools are similar to the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For more details, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
 
-#### Performance metrics
-
-The **Performance metrics** page shows the most expensive queries that were run in the system during the selected period, based on logical I/O, execution count, duration, CPU time, and wait count. This data is queried from the SQL query store. The data is retained for 30 days, and the tool runs its data collection every day at 10 PM Coordinated Universal Time (UTC). [![sqlinsights](./media/sqlinsights-1024x512.jpg)](./media/sqlinsights.jpg) To use the tool, follow these steps.
-
-1.  Select a period during the last 30 days.
-2.  When the query results appear, select the first bar in the duration chart to highlight where the query falls on other metrics.
-3.  On the **Statement** tab, view the query, or download the query execution plan.
-
-#### SQL now tool
-
-You can use the SQL now tool for just-in-time diagnostics. For example, a report is running slowly, and you want to see whether there are any locking/blocking issues and what SQL statements are running in the background. In this case, you can open this page and refresh it while the report is being run.
-
-#### Index analysis
-
-The Index analysis tool shows aggregated index and table information, based on user scans, user seeks, user updates, and row count. Like performance metrics, this tool shows the trend for the selected index together with additional table metrics.
-
-### System diagnostics
-
-The System diagnostic tool is a rule-based framework that runs a predefined set of rules against the environment and provides a report about the status of the rules. If failures occur, this tool provides recommendations for addressing the issue. To start the System diagnostics tool, on the LCS project dashboard, click the hamburger icon, and then click **System diagnostic**.
 
 ## Other resources
 
