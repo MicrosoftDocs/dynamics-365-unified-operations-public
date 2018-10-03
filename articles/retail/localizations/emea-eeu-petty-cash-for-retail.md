@@ -5,7 +5,7 @@ title: Petty cash management for Retail for Eastern Europe
 description: This topic describes how to set up and use cash management features in Retail for Eastern Europe.
 author: epopov
 manager: annbe
-ms.date: 10/01/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -29,7 +29,9 @@ ms.dyn365.ops.version: 8.1
 
 # Petty cash management for Retail for Eastern Europe
 
-This article contains information about Eastern European localization specific for the Retail industry, and applies to Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
+[!include [banner](../includes/banner.md)]
+
+This article contains information about Eastern European localization specific for the Retail industry. 
 
 In accordance with the Eastern Europe accounting requirements, you can set up operations for cash accounts to automate the processes for receipts, cash documents and cash reports. For more information, go to [(EEUR) Set up parameters for cash management](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management). 
 
