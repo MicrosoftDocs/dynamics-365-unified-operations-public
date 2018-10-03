@@ -45,7 +45,7 @@ TransientSqlConnectionError X++ exception will be thrown when a transient SQL co
 2. Recommendation is to use the catch block to identify transient SQL connection error instead of generic X++ error exception, retry the outermost transaction or your entire application code logic.  This exception allows application to design on transient server failures.
 
 
-## Example
+### Example
 ```
 public static void Foo()
 {
