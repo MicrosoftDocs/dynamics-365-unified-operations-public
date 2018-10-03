@@ -268,6 +268,8 @@ In format configuration, filter the record list *Items* by a constant value of I
 4.	Run the report.
 
 Run report from the **Electronic reporting** workspace.
+<add here screenshot 8. Run report.jpg>
+   
 Define **Calculation date** - the base date for the period of financial report identification, 
 **Report code** - financial report code
 optionally define **Reporting date** - the date when you are generating the report.
@@ -286,18 +288,24 @@ In the **Message statuses** page create message statuses applicable to the repor
 
 In the **Message processing action** page, create the following actions:
 1. Action "Create message" with Action type **Create message** and Result status **Created**
-
-2. Action "Generate report" with type **Electronic reporting export message**, Initial status **Created** and Resut status **Generated**. Make the following settings:
+2.	Action “Ready to generate” with Action type **Message level user processing** and Result status **Ready to generate**.
+3. Action "Generate report" with type **Electronic reporting export message**, Initial status **Created** and Resut status **Generated**. Make the following settings:
 - Activate the parameter **Show dialog**
 - Choose Electronic reporting format created above in the field **Format mapping**
 - Define the default name of generated file in the field **File name**
 
+<add here screenshot 9. Message processing actions> 
+
 In the **Electronic message processing** page, define processing flow for the report.
-For example, define that processing consists of 2 actions: "Create message" and "Generate report" created above.
+For example, define that processing consists of 3 actions: "Create message", "Ready to generate" and "Generate report" created above.
 
 In the **Electronic messages** page, choose the processing created on above step.
 Click **New** to create message. 
 Define **From date** and **To date** - dates of the reporting period.
+Update status to **Ready to generate**.
+
+<add here sreenshot 10. Electronic messages>
+
 Click **Generate report** to run the Electronic reporting format for financial report.
 Enter User parameters if requested by ER configuration, on user dialog
 Review generated file in **Attachments**.
