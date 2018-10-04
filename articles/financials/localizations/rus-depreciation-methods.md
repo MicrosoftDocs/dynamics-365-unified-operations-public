@@ -50,7 +50,7 @@ In accounting, there are 3 non-linear depreciation methods:
 Further, over time, the amount of depreciation decreases.
 If the company additionally introduces an accelerating factor, the process of write-off using the dreducing remainer method is accelerated
 - **In proportion to the volume of products, works** (**[Product output/mileage](rus-depreciation-methods.md#product-output-mileage-depreciation-method)**) - it is convenient to apply for equipment used in production, as well as fixed assets for which the standard volume of products, goods and services is pre-established by the manufacturer. With this method, depreciation is calculated on a monthly basis, based on the actual work performed. This method can also be used for Vehicles 
-- **By the sum of the numbers of years of useful life** (**By numbers of years**).
+- **By the sum of the numbers of years of useful life** (**By numbers of years**). The method is rarely used due to its unusual nature. Depreciation is calculated based on the number of years of the remaining useful life and the initial cost of the fixed asset.
 
 Depreciation in tax accounting is calculated one of two ways: 
 - **linear** and, 
