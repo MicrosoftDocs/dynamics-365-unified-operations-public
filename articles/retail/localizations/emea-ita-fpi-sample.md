@@ -56,7 +56,7 @@ The integration for the fiscal printer Epson FP-90III was inmplemented in two ex
 
 ![alt text](media/emea-ita-fpi-solution.png "Solution schema")
 
-## Setting up Retail for Italy
+## Set up Retail for Italy
 
 ### Enabling extensions
 
@@ -64,7 +64,7 @@ The integration for the fiscal printer Epson FP-90III was inmplemented in two ex
 
 The CRT extension components are included in the Retail SDK. To complete the following procedures, open the CRT solution, CommerceRuntimeSamples.sln, under RetailSdk\SampleExtensions\CommerceRuntime.
 
-1. Find the Runtime.Extensions.DocumentProvider.EpsonFP90IIISample project, and build it.
+1. Find the Runtime.Extensions.DocumentProvider.EpsonFP90IIISample project and build it.
 1. In the Extensions.DocumentProvider.EpsonFP90IIISample\bin\Debug folder, find the Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll assembly file.
 1. Copy the assembly file to the CRT extensions folder:
 	- Retail Server: Copy the assembly to the \bin\ext folder under the Microsoft Internet Information Services (IIS) Retail Server site location.
@@ -76,95 +76,106 @@ The CRT extension components are included in the Retail SDK. To complete the fol
 	add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" /> 
 1. Restart the Retail Service:
 	- Retail Server: Restart the Retail service site from IIS Manager.
-    - Client broker: End the dllhost.exe process in Task Manager, and then restart Modern POS.
+        - Client broker: End the dllhost.exe process in Task Manager, and then restart Modern POS.
 
 ##### Hardware station extension components
 The Hardware Station extension components are included in Retail SDK. To complete the following procedures, open the Hardware Station solution, HardwareStationSamples.sln, under RetailSdk\SampleExtensions\HardwareStation.
 
-1. Find the HardwareStation.Extensions.EpsonFP90IIIFiscalDeviceSample project, and built it.
-2. In the Extensions.EpsonFP90IIIFiscalDeviceSample \bin\Debug folder, find the Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll assembly file.
-3. Copy the files to a deployed Hardware station machine:
-    * Remote Hardware station: Copy the files to the bin folder under the Microsoft Internet Information Services (IIS) Hardware station site location.
-	* Local Hardware station: Copy the files to the Modern POS client broker location.
-4. Find the configuration file for Hardware station's extensions.
-	The file is named HardwareStation.Extension.config:
-	Remote Hardware station: The file is located under the IIS Hardware station site location.
-	Local Hardware station: The file is located under the Modern POS client broker location.
+1. Find the HardwareStation.Extensions.EpsonFP90IIIFiscalDeviceSample project and build it.
+1. In the Extensions.EpsonFP90IIIFiscalDeviceSample \bin\Debug folder, find the Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll assembly file.
+1. Copy the files to a deployed Hardware station machine:
+        - Remote Hardware station: Copy the files to the bin folder under the Microsoft Internet Information Services (IIS) Hardware station site location.
+	- Local Hardware station: Copy the files to the Modern POS client broker location.
+1. Find the configuration file for the Hardware station's extensions. The file is named HardwareStation.Extension.config:
+	- Remote Hardware station: The file is located under the IIS Hardware station site location.
+	- Local Hardware station: The file is located under the Modern POS client broker location.
 	
-5. Add the following section to the composition section of the config file.
-	
+1. Add the following section to the composition section of the config file.	
 	<add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" /
-	
-6. Restart the Hardware station service:
-	* Remote Hardware station: Restart the Hardware station site from IIS Manager.
-    * Local Hardware station: End the dllhost.exe process in Task Manager, and then restart Modern POS.
+1. Restart the Hardware station service:
+	- Remote Hardware station: Restart the Hardware station site from IIS Manager.
+        - Local Hardware station: End the dllhost.exe process in Task Manager, and then restart Modern POS.
 
-### Setup registration process
-To enable registration process we should setup the Headquater in the following way:
+### Set up registration process
+To enable the registration process, set up the Headquarters in the following way:
 1. Open Retail\Channel Setup\Fiscal Integration\Fiscal Connectors - import configuration from RetailSdk\SampleExtensions\CommerceRuntime\Entension.DocumentProvider.EpsonFP90IIISample\Configuration\DocumentProviderEpsonFP90IIISample.xml
+
 ![alt text](media/emea-ita-fpi-fiscalconnector.png "Fiscal connector")
-2. 	Open Retail\Channel Setup\Fiscal Integration\Fiscal Document providers- import configuration from RetailSdk\SampleExtensions\HardwareStation\Entension.EpsonFP90IIIFiscalDeviceSample\Configuration\ConnectorEpsonFP90IIISample.xml
+
+1. Open Retail\Channel Setup\Fiscal Integration\Fiscal Document providers- import configuration from RetailSdk\SampleExtensions\HardwareStation\Entension.EpsonFP90IIIFiscalDeviceSample\Configuration\ConnectorEpsonFP90IIISample.xml
+
 ![alt text](media/emea-ita-fpi-documentprovider.png "Document provider")
-3. Open Retail\Channel Setup\Fiscal Integration\Connector Technical profiles - create a new one and select loaded connector from step above.
-    * Update connection settings if needed.
+
+1. Open Retail\Channel Setup\Fiscal Integration\Connector Technical profiles - create a new one and select loaded connector from the step above.
+       - Update connection settings if needed.
 
 ![alt text](media/emea-ita-fpi-technicalprofile.png "Technical profile")
-4. Open Retail\Channel Setup\Fiscal Integration\Connector Functional profiles - create a new one and select loaded connector and document provider from steps above.
-	* Update Data Mapping settings if needed
+
+1. Open Retail\Channel Setup\Fiscal Integration\Connector Functional profiles - create a new one and select loaded connector and document provider from the steps above.
+	- Update Data Mapping settings if needed
 
 ![alt text](media/emea-ita-fpi-fiscalfunctionalityprofile.png "Connector functional profile")
-5. Open Retail\Channel Setup\Fiscal Integration\Connector Functional Group - create a new group and select connector functional profile from the step above.
+
+1. Open Retail\Channel Setup\Fiscal Integration\Connector Functional Group - create a new group and select connector functional profile from the step above.
+
 ![alt text](media/emea-ita-fpi-connectorgroup.png "Connector group")
-6. Open Retail\Channel Setup\Fiscal Integration\Registration Process -  create a new process. Select connector functional group from the step above.
+
+1. Open Retail\Channel Setup\Fiscal Integration\Registration Process -  create a new process. Select connector functional group from the step above.
+
 ![alt text](media/emea-ita-fpi-registrationprocess.png "Registration process")
-7. Open Functionality profile  linked to store were registration process should be activated. Expand Fiscal registration process fast-tab. Select created registration process from step above.
+
+1. Open Functionality profile linked to the store where the registration process should be activated. Expand the Fiscal registration process fast-tab. Select the created registration process from the step above.
+
 ![alt text](media/emea-ita-fpi-functionalityprofile.png "POS functionality profile")
-8. Open Hardware profile that linked to hardware station to which fiscal printer will be connected.  Expand fiscal peripherals fast tab. Select connector technical profile.
+
+1. Open the Hardware profile that linked to the hardware station to which the fiscal printer will be connected. Expand the fiscal peripherals fast tab. Select the connector technical profile.
+
 ![alt text](media/emea-ita-fpi-hardwareprofile.png "Hardware profile")
-9. Open Distribution scheduler and  job 1070 to transfer data to Channel Database.
+
+9. Open Distribution scheduler and select **Job 1070** to transfer data to the Channel Database.
+
 ![alt text](media/emea-ita-fpi-distributionjobs.png "Distribution scheduler")
 
-## Commerce Runtime Extension Design
-### Purpose
+## Commerce runtime extension design
 
-The purpose of the extension (Document Provider) is to generate printer specific documents and handle response from the fiscal printer. 
+The purpose of the extension (Document Provider) is to generate printer specific documents and handle responses from the fiscal printer. 
 
-### Request Handler
+### Request handler
 	
 The request handler DocumentProviderEpsonFP90III is the entry point for the request to generate documents in the fiscal printer.
 
 The handler is inherited from INamedRequestHandler interface.
-Method HandlerName - responsible for return the Name of the handler. It should matches to the connector document provider name specified in HQ.
+Method HandlerName - responsible for return the Name of the handler. It should match the connector document provider name specified in HQ.
 
 The connector supports the following requests:
-* GetFiscalDocumentDocumentProviderRequest- contains information about what document should be generated. Returns printer specific document that should be registered in fiscal printer.
-* GetSupportedRegistrableEventsDocumentProviderRequest - returns the list of events that we want to subscribe for. Currently following events are supported: Sales, printing X report,  printing Z report
-* SaveFiscalRegistrationResultDocumentProviderRequest- saves response from the printer.
+- GetFiscalDocumentDocumentProviderRequest- contains information about what document should be generated. Returns printer specific document that should be registered in the fiscal printer.
+- GetSupportedRegistrableEventsDocumentProviderRequest - returns the list of events to subscribe to. Currently following events are supported: Sales, printing X report,  printing Z report
+- SaveFiscalRegistrationResultDocumentProviderRequest- saves response from the printer.
 
 
 ### Configuration
-The configuration file could be found in Configuration folder of the extension project. The purpose of the file is to allow to configure settings  for document provider from the HQ. The file format aligned Fiscal Integration configuration requirements.
-The following settings were added:
-* VAT rates mapping
-* Tender type mapping
+The configuration file is found in the Configuration folder of the extension project. The purpose of the file is to allow to configure settings for the document provider from the HQ. The file format aligned Fiscal Integration configuration requirements.
+The following settings have been added:
+- VAT rates mapping
+- Tender type mapping.
 
-## Hardware Station Extension Design
-### Purpose
+## Hardware Station extension design
+
 The purpose of the extension (Connector) is to communicate with the fiscal printer.
 
-### Request Handler
+### Request handler
 The request handler EpsonFP90IIISample is the entry point for handling request to the fiscal peripheral device. 
 The handler is inherited from INamedRequestHandler interface.
-Method HandlerName - responsible for return the Name of the handler. It should matches to the fiscal connector name specified in HQ.
+Method HandlerName - responsible for return the Name of the handler. It should match the fiscal connector name specified in HQ.
 
 The connector supports following requests:
-* SubmitDocumentFiscalDeviceRequest - sends document to printers and returns response from the fiscal printer.
-* IsReadyFiscalDeviceRequest - is used for health check of the device.
-* InitializeFiscalDeviceRequest - is used for printer initialization
+- SubmitDocumentFiscalDeviceRequest - sends document to printers and returns response from the fiscal printer.
+- IsReadyFiscalDeviceRequest - used for health check of the device.
+- InitializeFiscalDeviceRequest - used for printer initialization.
 
 
 ### Configuration
-The configuration file could be found in Configuration folder of the extension project. The purpose of the file is to allow to configure settings  for the connector provider from the HQ. The file format aligned Fiscal Integration configuration requirements.
-The following settings were added:
-* Endpoint address  - URL of the printer
-* Date and time synchronization  - flag indicates if we need to sync date and time of the printer with the connected Hardware station. Date and time of the printer will be synchronized with the Hardware station time.
+The configuration file is found in **Configuration** folder of the extension project. The purpose of the file is to allow to configure settings for the connector provider from the HQ. The file format aligned Fiscal Integration configuration requirements.
+The following settings have been added:
+- Endpoint address  - URL of the printer.
+- Date and time synchronization  - flag indicates if you need to sync date and time of the printer with the connected Hardware station. Date and time of the printer will be synchronized with the Hardware station time.
