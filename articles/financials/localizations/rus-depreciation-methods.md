@@ -42,6 +42,7 @@ The difference of non-linear methods in the uneven distribution of depreciation 
 The linear depreciation method is the simplest and most widely used method for calculating depreciation for fixed assets. The capital allowance is recorded in equal parts for every period or interval during the whole service life of the fixed asset.
 
 For example, the cost of a computer is 10,000 Russian rubles (RUB). When functional and physical deterioration are considered, the established service life of the computer is five years. Therefore, an amount that equals 10,000 ÷ 5 is written off every year. In other words, the depreciation is RUB 2,000. Therefore, you can calculate depreciation for a computer by using the linear method.
+
 In accounting, there are 3 nonlinear accrual methods:
 - Reducing remainder - depreciation is calculated from the net book value, taking into account the acceleration factor, the method is accelerated depreciation, as it allows to transfer a large part of the value of the fixed assets object to expenses in the first years of useful fixed asset life.
 Further, over time, the amount of depreciation decreases.
