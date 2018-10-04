@@ -49,6 +49,7 @@ Further, over time, the amount of depreciation decreases.
 If the company additionally introduces an accelerating factor, the process of write-off using the dreducing remainer method is accelerated
 - Product output/mileage;
 - By numbers of years.
+
 Depreciation in tax accounting is calculated one of two ways: 
 - linear and, 
 - non-linear (Article 259 of the Tax Code of the Russian Federation).
