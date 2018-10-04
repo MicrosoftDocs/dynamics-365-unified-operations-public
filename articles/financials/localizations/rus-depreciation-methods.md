@@ -43,7 +43,7 @@ The linear depreciation method is the simplest and most widely used method for c
 
 For example, the cost of a computer is 10,000 Russian rubles (RUB). When functional and physical deterioration are considered, the established service life of the computer is five years. Therefore, an amount that equals 10,000 ÷ 5 is written off every year. In other words, the depreciation is RUB 2,000. Therefore, you can calculate depreciation for a computer by using the linear method.
 
-In accounting, there are 3 nonlinear accrual methods:
+In accounting, there are 3 non-linear depreciation methods:
 - Reducing remainder - depreciation is calculated from the net book value, taking into account the acceleration factor, the method is accelerated depreciation, as it allows to transfer a large part of the value of the fixed assets object to expenses in the first years of useful fixed asset life.
 Further, over time, the amount of depreciation decreases.
 If the company additionally introduces an accelerating factor, the process of write-off using the dreducing remainer method is accelerated
