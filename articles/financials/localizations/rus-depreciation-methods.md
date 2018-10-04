@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 This topic describes the various methods that can be used for fixed asset depreciation for Russia.
-The process of calculating monthly depreciation can be done in several ways. In tax фссщгтештп and accounting, a linear and non-linear calculation algorithm is distinguished.
+The process of calculating monthly depreciation can be done in several ways. In tax accounting and accounting, a linear and non-linear calculation algorithm is distinguished.
 The difference of non-linear methods in the uneven distribution of depreciation value during the useful life. In some situations it is beneficial to organizations.
 
 ## Linear and non-linear depreciation methods
