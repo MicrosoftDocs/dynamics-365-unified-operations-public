@@ -32,9 +32,11 @@ ms.dyn365.ops.version:
 [!include[banner](../includes/banner.md)]
 
 The Talent to Finance and Operations solution provides integration across Dynamics 365 for Talent and Dynamics 365 for Finance and Operations.
-The Talent to Finance and Operations template that is available with the Data Integration feature enables the flow of data for jobs, positions,
+The Talent to Finance and Operations template that is available with the[Data Integrator](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) enables the flow of data for jobs, positions,
 and workers. The data flows from Talent into Finance and Operations. This template doesn't provide the ability for data to flow back from Finance
 and Operations into Talent. 
+
+![Talent to Finance and Operations Integration Flow](./media/TalentFinOpsFlow.png)
 
 In the current version, the Talent to Finance and Operations solution provides the following types of data sychronization. 
 
@@ -74,7 +76,12 @@ The following template and underlying tasks are used to synchronize products fro
 * Worker Addresses to Worker Postal Address V2
 
   > [!NOTE]
-> When integrating worker address from Talent to Finance and Operations,
+> When integrating worker address from Talent to Finance and Operations, if the worker address already exists in Finance and Operations, 
+a duplicate address record may be created. 
+
+The following illustration shows an example of a template mapping in Data Integrator. 
+
+![Template Mapping](./media/IntegrationMapping.png)
 
 
 
