@@ -40,7 +40,7 @@ This topic explains the steps required to update existing Dynamics 365 for Finan
 
 ## Background
 
-Traditionally, moving to a newer application version has involved a rigorous upgrade that includes deployment of additional virtual machines, code upgrade, data upgrade, and scheduling several days in advance with the Microsoft Dynamics Service Engineering (DSE) team.  You will notice that we are makiong the uptake of the latest version simpler, and this will continue to improve over time.
+Traditionally, moving to a newer application version has involved a rigorous upgrade that includes deployment of additional virtual machines, code upgrade, data upgrade, and scheduling several days in advance with the Microsoft Dynamics Service Engineering (DSE) team.  You will notice that we are making the uptake of the latest version simpler, and this will continue to improve over time.
 
 To this end, we are supporting an update experience as compared to a full upgrade.  This is possible because there are no Data Upgrade or Code Upgrade steps between the 8.0 and 8.1 application schema.  The target environments will be updated just like you would apply a Platform update.
 
@@ -66,7 +66,7 @@ While the new environments are deploying, begin the branching work for your upda
 
 [![VersionControl](./media/VersionControl.png)](./media/VersionControl.png)
 
-### Prepare using Azure DevOps
+### Prepare using Visual Studio
 On any other development machine (other than the new ones being deployed), open Visual Studeio and visit the Source Control Explorer. You will create a new branch that will be isolated for the 8.1 update.
 
 [![BranchFor81](./media/BranchFor81.png)](./media/BranchFor81.png)
