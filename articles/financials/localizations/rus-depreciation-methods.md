@@ -110,9 +110,7 @@ The manual depreciation method is based on a manual definition of the depreciati
 
 ## Non-linear tax accounting group depreciation method
 
-The linear and non-linear depreciation methods are used to calculate depreciation for tax accounting. The linear method that is used in tax accounting corresponds to the linear method that is used in standard accounting.
-
-When the non-linear method is used, the accrued monthly depreciation for the asset is calculated by multiplying the asset's remaining value by the depreciation rate. The depreciation rate is defined by the formula K = (2 ÷ n) × 100 percent, where *n* is the asset's useful life in months.
+When the non-linear method is used, the accrued monthly depreciation for the asset is calculated by multiplying the asset's remaining value by the depreciation rate. The depreciation rate is defined by the formula K = (2 ÷ n) × 100 percent, where *n* is the asset's useful life in months. For tax purposes, the total balance for the group should be multiplied by the depreciation rate for it set by the Tax Code of the Russian Federation
 
 
 ### Set up the depreciation method
