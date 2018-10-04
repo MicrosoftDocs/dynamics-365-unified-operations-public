@@ -13,20 +13,50 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: [Pick one: Application User/Developer/IT Pro]
+# ms.search.form:  
+audience: IT Pro
 # ms.devlang: 
-ms.reviewer: [Content Strategist microsoft alias]
-ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+ms.reviewer: josaw
+ms.search.scope:  
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: [Global for most topics. Set Country/Region name for localizations]
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: [author's Microsoft alias]
-ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
-ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: jcart
+ms.search.validFrom: 2018-10-8
+ms.dyn365.ops.version: 
 ---
 
-# Metadata and Markdown template
+# Talent to Finance and Operations Integration
 
 [!include[banner](../includes/banner.md)]
+
+The Talent to Finance and Operations solution provides integration across Dynamics 365 for Talent and Dynamics 365 for Finance and Operations.
+The Talent to Finance and Operations template that is available with the Data Integration feature enables the flow of data for jobs, positions,
+and workers. The data flows from Talent into Finance and Operations. This template doesn't provide the ability for data to flow back from Finance
+and Operations into Talent. 
+
+In the current version, the Talent to Finance and Operations solution provides the following types of data sychronization. 
+
+* Maintain jobs in Talent and sync them from Talent to Finance and Operations
+* Maintain positions and position assignments in Talent and sync them from Talent to Finance and Operations
+* Maintain employments in Talent and sync them from Talent to Finance and Operations
+* Maintain workers and worker addresses in talent and sync them from Talent to Finance and Operations
+
+##System requirements for Talent
+* Dynamics 365 for Talent version... on CDS for Apps
+* Dynamics 365 for Finance and Operations version ...
+
+##Template and Tasks
+
+To access the available templates, open [PowerApps Admin Center](https://preview.admin.powerapps.com/dataintegration). 
+Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
+  
+
+  > [!NOTE]
+> When integrating worker address from Talent to Finance and Operations, the (/common-data-service/entity-reference/dynamics-365-integration).
+
+
+
+
+
