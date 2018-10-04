@@ -76,10 +76,10 @@ The CRT extension components are included in the Retail SDK. To complete the fol
 	add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" 
 1. Restart the Retail Service:
 	- Retail Server: Restart the Retail service site from IIS Manager.
-        - Client broker: End the dllhost.exe process in Task Manager, and then restart Modern POS.
+	- Client broker: End the dllhost.exe process in Task Manager, and then restart Modern POS.
 
-##### Hardware station extension components
-The Hardware Station extension components are included in Retail SDK. To complete the following procedures, open the Hardware Station solution, HardwareStationSamples.sln, under RetailSdk\SampleExtensions\HardwareStation.
+##### Hardware Station extension components
+The Hardware Station extension components are included in the Retail SDK. To complete the following procedures, open the Hardware Station solution, HardwareStationSamples.sln, under RetailSdk\SampleExtensions\HardwareStation.
 
 1. Find the HardwareStation.Extensions.EpsonFP90IIIFiscalDeviceSample project and build it.
 1. In the Extensions.EpsonFP90IIIFiscalDeviceSample \bin\Debug folder, find the Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll assembly file.
