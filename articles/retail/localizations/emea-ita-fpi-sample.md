@@ -28,24 +28,25 @@ ms.dyn365.ops.version: 8.1.1
 
 ---
 # Fiscal printer integration sample for Italy
-## Overview
 
-### Scope
+[!include[banner](../includes/banner.md)]
+
+## Overview
 
 The fiscal integration for Italy includes samples of the integration with the fiscal printer EPSON FP-90III.
 
 The scope of the sample includes following functionality:
-* Integration with fiscal printer Epson FP-90III via web-service mode - ePOS-Print solution.
-* Registration of the following events in POS:
-    * Print receipt for sale
-	* Print receipt for sale return
-	* Print X report
-	* Print Z report
+- Integration with fiscal printer Epson FP-90III via web-service mode - ePOS-Print solution.
+- Registration of the following events in POS:
+    - Print receipt for sale
+	- Print receipt for sale return
+	- Print X report
+	- Print Z report
 
- Receipts for sale and sale return operations supports following additional scenarios:  
-* Printing of discounts
-* Excluding gift cards from the receipt
-* Receipts to customer order
+Receipts for sale and sale return operations supports following additional scenarios:  
+- Printing of discounts
+- Excluding gift cards from the receipt
+- Receipts to customer order
 
 ## Design
 
