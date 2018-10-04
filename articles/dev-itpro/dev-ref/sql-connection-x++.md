@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Plaform update 21
 When a transient SQL connection error happens on the server side during an X++ SQL query execution, a TransientSqlConnectionError X++ exception will occur. Depending on the application requirements, the application should catch and handle the exception.
 
 > [!NOTE]
-> The TransientSqlConnectionError exception is not catchable within the transaction. The X++ transaction that encounters this exception is canceled before the exception occurs. Use the catch block to identify the transient SQL connection error instead of a generic X++ error exception, and then retry the outermost transaction or your entire application code logic. This exception allows application to design on transient server failures.
+> The TransientSqlConnectionError exception is not catchable within the transaction. The X++ transaction that encounters this exception is canceled before the exception occurs. Use the catch block to identify the transient SQL connection error instead of a generic X++ error exception, and then retry the outermost transaction or your entire application code logic. This exception allows the application to design on transient server failures.
 
 
 ### Example
