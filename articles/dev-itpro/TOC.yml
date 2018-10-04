@@ -1145,6 +1145,8 @@
     items:
     - name: Process for moving to the latest update
       href: migration-upgrade/upgrade-latest-update.md
+    - name: Update environments from version 8.0 to 8.1
+      href: migration-upgrade/appupdate-80-81.md
     - name: Software lifecycle policy and cloud releases
       href: migration-upgrade/versions-update-policy.md
     - name: Apply the latest platform update to environments
