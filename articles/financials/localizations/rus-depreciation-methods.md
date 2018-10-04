@@ -44,15 +44,15 @@ The linear depreciation method is the simplest and most widely used method for c
 For example, the cost of a computer is 10,000 Russian rubles (RUB). When functional and physical deterioration are considered, the established service life of the computer is five years. Therefore, an amount that equals 10,000 ÷ 5 is written off every year. In other words, the depreciation is RUB 2,000. Therefore, you can calculate depreciation for a computer by using the linear method.
 
 In accounting, there are 3 non-linear depreciation methods:
-- Reducing remainder - depreciation is calculated from the net book value, taking into account the acceleration factor, the method is accelerated depreciation, as it allows to transfer a large part of the value of the fixed assets object to expenses in the first years of useful fixed asset life.
+- **Reducing remainder** - depreciation is calculated from the net book value, taking into account the acceleration factor, the method is accelerated depreciation, as it allows to transfer a large part of the value of the fixed assets object to expenses in the first years of useful fixed asset life.
 Further, over time, the amount of depreciation decreases.
 If the company additionally introduces an accelerating factor, the process of write-off using the dreducing remainer method is accelerated
-- Product output/mileage;
-- By numbers of years.
+- **Product output/mileage**;
+- **By numbers of years**.
 
 Depreciation in tax accounting is calculated one of two ways: 
-- linear and, 
-- non-linear (Article 259 of the Tax Code of the Russian Federation).
+- **linear** and, 
+- **non-linear** (Article 259 of the Tax Code of the Russian Federation).
 In the non-linear depreciation method, the accrued monthly depreciation for the asset is calculated by multiplying the asset's remaining value by the depreciation rate. The depreciation rate is defined by the formula K = (2 ÷ n) × 100 percent, where *n* is the asset's useful life in months. (The same formula is used in the reducing remainder method.)
 
 In addition, when an asset's residual value reaches 20 percent of its original value, the residual value is used as the base value for additional depreciation calculations for the asset. The monthly depreciation amount is calculated by dividing the asset's base cost by the number of months that remain until the end of its service life.
