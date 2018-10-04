@@ -73,7 +73,7 @@ The CRT extension components are included in the Retail SDK. To complete the fol
 	- Retail Server: The file is named commerceruntime.ext.config, and it's in the bin\ext folder under the IIS Retail Server site location.
 	- Local CRT on Modern POS: The file is named CommerceRuntime.MPOSOffline.Ext.config, and it's under the local CRT client broker location.
 1. Register the CRT change in the extensions configuration file.
-	add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" /> 
+	add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" 
 1. Restart the Retail Service:
 	- Retail Server: Restart the Retail service site from IIS Manager.
         - Client broker: End the dllhost.exe process in Task Manager, and then restart Modern POS.
