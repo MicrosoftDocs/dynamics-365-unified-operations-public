@@ -41,21 +41,40 @@ In the current version, the Talent to Finance and Operations solution provides t
 * Maintain jobs in Talent and sync them from Talent to Finance and Operations
 * Maintain positions and position assignments in Talent and sync them from Talent to Finance and Operations
 * Maintain employments in Talent and sync them from Talent to Finance and Operations
-* Maintain workers and worker addresses in talent and sync them from Talent to Finance and Operations
+* MaDepartments to Operating Unitintain workers and worker addresses in talent and sync them from Talent to Finance and Operations
 
 ##System requirements for Talent
-* Dynamics 365 for Talent version... on CDS for Apps
+* Dynamics 365 for Talent on CDS for Apps
 * Dynamics 365 for Finance and Operations version ...
 
-##Template and Tasks
+##Template, Tasks and Entity Sets
 
 To access the available templates, open [PowerApps Admin Center](https://preview.admin.powerapps.com/dataintegration). 
-Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
-  
+Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates. A new project will need to be create
+for each legal entity you want to integrate into in Finance and Operations.
+
+The following template and underlying tasks are used to synchronize products from Finance and Operations to Sales.
+
+- **Name of the template in Data integration:** Core HR (Talent CDS to Fin and Ops)
+
+**Tasks in the Data integration project:** 
+* Job Functions to Compensation Job Function
+* Departments to Operating Unit
+* Departments to Operating Unit
+* Job Types to Compensation Job Type
+* Jobs to Jobs
+* Jobs to Job Detail
+* Position Types to Position Type
+* Job Positions to Positions
+* Job Positions to Positions Parent Job Assignment
+* Workers to Worker
+* Employments to Employment
+* Employments to Employment Detail
+* Postion Worker Assignment to Position Worker Assignments
+* Worker Addresses to Worker Postal Address V2
 
   > [!NOTE]
-> When integrating worker address from Talent to Finance and Operations, the (/common-data-service/entity-reference/dynamics-365-integration).
-
+> When integrating worker address from Talent to Finance and Operations,
 
 
 
