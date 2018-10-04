@@ -118,9 +118,9 @@ Run the following script against the copy of the database to turn off change tra
 > You must edit the following **ALTER DATABASE** command so that it uses the name of your database copy.
 
 ```
---Prepare a database in Azure SQL Database for export to SQL Server.
+--Prepare a database in Azure SQL ddatabase for export to SQL Server.
 
--- Re-Assign Full Text Catalogs to [dbo]
+-- Re-assign full rext catalogs to [dbo]
 BEGIN
     DECLARE @catalogName nvarchar(256);
     DECLARE @sqlStmtTable nvarchar(512)
