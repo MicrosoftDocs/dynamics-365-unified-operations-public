@@ -35,8 +35,8 @@ ms.dyn365.ops.version: 8.1
 
 This topic explains the steps required to update existing Dynamics 365 for Finance and Operations 8.0 environments to the 8.1 application release.
 
->[!NOTE]
->The 8.1 binary update package will be available after October 15, 2018. This package impacts steps 5-7, which means that steps 1-4 can be started after October 1, 2018.
+> [!NOTE]
+> The 8.1 binary update package will be available after October 15, 2018. This package impacts steps 5-7, which means that steps 1-4 can be started after October 1, 2018.
 
 ## Background
 
