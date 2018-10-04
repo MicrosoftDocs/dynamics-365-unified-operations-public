@@ -53,23 +53,11 @@ If the company additionally introduces an accelerating factor, the process of wr
 Depreciation in tax accounting is calculated one of two ways: 
 - linear and, 
 - non-linear (Article 259 of the Tax Code of the Russian Federation).
-In the non-linear depreciation method, the accrued monthly depreciation for the asset is calculated by multiplying the asset's remaining value by the depreciation rate. The depreciation rate is defined by the formula K = (2 ÷ n) × 100 percent, where *n* is the asset's useful life in months. (The same formula is used in the reducing balance method.)
+In the non-linear depreciation method, the accrued monthly depreciation for the asset is calculated by multiplying the asset's remaining value by the depreciation rate. The depreciation rate is defined by the formula K = (2 ÷ n) × 100 percent, where *n* is the asset's useful life in months. (The same formula is used in the reducing remainder method.)
 
 In addition, when an asset's residual value reaches 20 percent of its original value, the residual value is used as the base value for additional depreciation calculations for the asset. The monthly depreciation amount is calculated by dividing the asset's base cost by the number of months that remain until the end of its service life.
 
-## Manual depreciation method
 
-The manual depreciation method is based on a manual definition of the depreciation percentage. For the depreciation profile, you must define a depreciation schedule that indicates the depreciation percentage that is required for each period. The number of periods in the depreciation schedule corresponds to the number of periods in the fixed asset record.
-
-## Factor depreciation method
-
-In the factor depreciation method, the depreciation amount for a fixed asset is calculated by multiplying the remaining amount by a fixed ratio.
-
-You select the period for depreciation accrual in the **Interval** field on the **Depreciation method** page.
-
-If you use the reducing balance method or the non-linear depreciation method, you must specify the increasing factor. If you use the factor depreciation method, you must specify the amount of the fixed ratio.
-
-For the non-linear method, you enter the cut-off percentage value in the **Factor** field (for example, enter **20**). When the accrued depreciation amount is calculated, the depreciation amount for the year is recalculated based on the asset's service life and depreciation profile. The depreciation is distributed equally across all the intervals in the year.
 
 ## Product output-mileage depreciation method 
 
@@ -101,11 +89,27 @@ Use this procedure to create the product output or mileage of a fixed asset.
     > [!NOTE]
     > You can enter the output or mileage on the **Fixed assets** page (select **Fixed assets (Russia)** \> **Common** \> **Fixed assets**, and then, on the Action Pane, on the **Fixed asset** tab, select **FA usage**). 
 
+## Factor depreciation method
+
+In the factor depreciation method, the depreciation amount for a fixed asset is calculated by multiplying the remaining amount by a fixed ratio.
+
+You select the period for depreciation accrual in the **Interval** field on the **Depreciation method** page.
+
+If you use the reducing balance method or the non-linear depreciation method, you must specify the increasing factor. If you use the factor depreciation method, you must specify the amount of the fixed ratio.
+
+For the non-linear method, you enter the cut-off percentage value in the **Factor** field (for example, enter **20**). When the accrued depreciation amount is calculated, the depreciation amount for the year is recalculated based on the asset's service life and depreciation profile. The depreciation is distributed equally across all the intervals in the year.
+
+## Manual depreciation method
+
+The manual depreciation method is based on a manual definition of the depreciation percentage. For the depreciation profile, you must define a depreciation schedule that indicates the depreciation percentage that is required for each period. The number of periods in the depreciation schedule corresponds to the number of periods in the fixed asset record.
+
+
 ## Non-linear tax accounting group depreciation method
 
 The linear and non-linear depreciation methods are used to calculate depreciation for tax accounting. The linear method that is used in tax accounting corresponds to the linear method that is used in standard accounting.
 
 When the non-linear method is used, the accrued monthly depreciation for the asset is calculated by multiplying the asset's remaining value by the depreciation rate. The depreciation rate is defined by the formula K = (2 ÷ n) × 100 percent, where *n* is the asset's useful life in months.
+
 
 ### Set up the depreciation method
 
