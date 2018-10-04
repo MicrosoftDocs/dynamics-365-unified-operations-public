@@ -49,16 +49,19 @@ In accounting, there are 3 non-linear depreciation methods:
 - **Decreasing balance** (**Reducing remainder**) - depreciation is calculated from the net book value, taking into account the acceleration factor, the method is accelerated depreciation, as it allows to transfer a large part of the value of the fixed assets object to expenses in the first years of useful fixed asset life.
 Further, over time, the amount of depreciation decreases.
 If the company additionally introduces an accelerating factor, the process of write-off using the dreducing remainer method is accelerated
-- **In proportion to the volume of products, works** (**Product output/mileage**);
+- **In proportion to the volume of products, works** (**[Product output/mileage](rus-depreciation-methods.md#product-output-mileage-depreciation-method)**) - it is convenient to apply for equipment used in production, as well as fixed assets for which the standard volume of products, goods and services is pre-established by the manufacturer. With this method, depreciation is calculated on a monthly basis, based on the actual work performed. This method can also be used for Vehicles 
 - **By the sum of the numbers of years of useful life** (**By numbers of years**).
 
 Depreciation in tax accounting is calculated one of two ways: 
 - **linear** and, 
 - **non-linear** (Article 259 of the Tax Code of the Russian Federation).
-In the non-linear depreciation method, the accrued monthly depreciation for the asset is calculated by multiplying the asset's remaining value by the depreciation rate. The depreciation rate is defined by the formula K = (2 ÷ n) × 100 percent, where *n* is the asset's useful life in months. (The same formula is used in the reducing remainder method.)
+In the non-linear depreciation method, the accrued monthly depreciation for the asset is calculated by multiplying the asset's remaining value by the depreciation rate. The depreciation rate is defined by the formula K = (2 ÷ n) × 100 percent, where *n* is the asset's useful life in months (the same formula is used in the reducing remainder method).
+In addition, when an asset's net book value (remaider) reaches 20 percent of its original value, the residual value (net book value) is used as the base value for additional depreciation calculations for the fixed asset. The monthly depreciation amount is calculated by dividing the fixed asset's net book value by the number of months that remain until the end of its service life.
 
-In addition, when an asset's net book value (remaider) reaches 20 percent of its original value, the residual value is used as the base value for additional depreciation calculations for the asset. The monthly depreciation amount is calculated by dividing the asset's base cost by the number of months that remain until the end of its service life.
+[!NOTE] 
+**Non-lilear method** may be used in the tax accounting for a individual fixed asset or for a fixed asset group (**[Non-linear tax accounting depreciation methos](rus-depreciation-methods.md#non-linear-tax-accounting-group-depreciation-method)**).
 
+See additional description of the depreciation methods, implemented in aplication, below.  
 
 ## Product output-mileage depreciation method 
 
