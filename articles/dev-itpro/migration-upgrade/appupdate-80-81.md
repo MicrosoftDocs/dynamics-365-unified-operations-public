@@ -5,7 +5,7 @@ title: Update environments from version 8.0 to 8.1
 description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to the 8.1 application release.
 author: laneswenka
 manager: AnnBe
-ms.date: 10/03/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -67,7 +67,7 @@ While the new environments are deploying, begin the branching work for your upda
 [![VersionControl](./media/VersionControl.png)](./media/VersionControl.png)
 
 ### Prepare using Azure DevOps
-On any machine other development machine other than the new ones being deployed, open Azure DevOps and visit the Source Control Explorer. You will create a new branch that will be isolated for the 8.1 update.
+On any other development machine (other than the new ones being deployed), open Visual Studeio and visit the Source Control Explorer. You will create a new branch that will be isolated for the 8.1 update.
 
 [![BranchFor81](./media/BranchFor81.png)](./media/BranchFor81.png)
 
