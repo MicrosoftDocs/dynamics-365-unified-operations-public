@@ -84,17 +84,17 @@ The Hardware Station extension components are included in the Retail SDK. To com
 1. Find the HardwareStation.Extensions.EpsonFP90IIIFiscalDeviceSample project and build it.
 1. In the Extensions.EpsonFP90IIIFiscalDeviceSample \bin\Debug folder, find the Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll assembly file.
 1. Copy the files to a deployed Hardware station machine:
-        - Remote Hardware station: Copy the files to the bin folder under the Microsoft Internet Information Services (IIS) Hardware station site location.
+	- Remote Hardware station: Copy the files to the bin folder under the Microsoft Internet Information Services (IIS) Hardware station site location.
 	- Local Hardware station: Copy the files to the Modern POS client broker location.
 1. Find the configuration file for the Hardware station's extensions. The file is named HardwareStation.Extension.config:
 	- Remote Hardware station: The file is located under the IIS Hardware station site location.
 	- Local Hardware station: The file is located under the Modern POS client broker location.
 	
 1. Add the following section to the composition section of the config file.	
-	<add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" /
+	<add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
 1. Restart the Hardware station service:
 	- Remote Hardware station: Restart the Hardware station site from IIS Manager.
-        - Local Hardware station: End the dllhost.exe process in Task Manager, and then restart Modern POS.
+	- Local Hardware station: End the dllhost.exe process in Task Manager, and then restart Modern POS.
 
 ### Set up registration process
 To enable the registration process, set up the Headquarters in the following way:
@@ -102,37 +102,37 @@ To enable the registration process, set up the Headquarters in the following way
 
 ![alt text](media/emea-ita-fpi-fiscalconnector.png "Fiscal connector")
 
-1. Open Retail\Channel Setup\Fiscal Integration\Fiscal Document providers- import configuration from RetailSdk\SampleExtensions\HardwareStation\Entension.EpsonFP90IIIFiscalDeviceSample\Configuration\ConnectorEpsonFP90IIISample.xml
+2. Open Retail\Channel Setup\Fiscal Integration\Fiscal Document providers- import configuration from RetailSdk\SampleExtensions\HardwareStation\Entension.EpsonFP90IIIFiscalDeviceSample\Configuration\ConnectorEpsonFP90IIISample.xml
 
 ![alt text](media/emea-ita-fpi-documentprovider.png "Document provider")
 
-1. Open Retail\Channel Setup\Fiscal Integration\Connector Technical profiles - create a new one and select loaded connector from the step above.
-       - Update connection settings if needed.
+3. Open Retail\Channel Setup\Fiscal Integration\Connector Technical profiles - create a new one and select the loaded connector from the step above.
+	- Update connection settings if needed.
 
 ![alt text](media/emea-ita-fpi-technicalprofile.png "Technical profile")
 
-1. Open Retail\Channel Setup\Fiscal Integration\Connector Functional profiles - create a new one and select loaded connector and document provider from the steps above.
+4. Open Retail\Channel Setup\Fiscal Integration\Connector Functional profiles - create a new one and select the loaded connector and document provider from the steps above.
 	- Update Data Mapping settings if needed
 
 ![alt text](media/emea-ita-fpi-fiscalfunctionalityprofile.png "Connector functional profile")
 
-1. Open Retail\Channel Setup\Fiscal Integration\Connector Functional Group - create a new group and select connector functional profile from the step above.
+5. Open Retail\Channel Setup\Fiscal Integration\Connector Functional Group - create a new group and select the connector functional profile from the step above.
 
 ![alt text](media/emea-ita-fpi-connectorgroup.png "Connector group")
 
-1. Open Retail\Channel Setup\Fiscal Integration\Registration Process -  create a new process. Select connector functional group from the step above.
+6. Open Retail\Channel Setup\Fiscal Integration\Registration Process -  create a new process. Select the connector functional group from the step above.
 
 ![alt text](media/emea-ita-fpi-registrationprocess.png "Registration process")
 
-1. Open Functionality profile linked to the store where the registration process should be activated. Expand the Fiscal registration process fast-tab. Select the created registration process from the step above.
+7. Open Functionality profile linked to the store where the registration process should be activated. Expand the Fiscal registration process fast-tab. Select the created registration process from the step above.
 
 ![alt text](media/emea-ita-fpi-functionalityprofile.png "POS functionality profile")
 
-1. Open the Hardware profile that linked to the hardware station to which the fiscal printer will be connected. Expand the fiscal peripherals fast tab. Select the connector technical profile.
+8. Open the Hardware profile that linked to the hardware station to which the fiscal printer will be connected. Expand the fiscal peripherals fast tab. Select the connector technical profile.
 
 ![alt text](media/emea-ita-fpi-hardwareprofile.png "Hardware profile")
 
-9. Open Distribution scheduler and select **Job 1070** to transfer data to the Channel Database.
+9. Open Distribution scheduler and select job **1070** to transfer data to the Channel Database.
 
 ![alt text](media/emea-ita-fpi-distributionjobs.png "Distribution scheduler")
 
