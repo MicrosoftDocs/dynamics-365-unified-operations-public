@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Advance holders - Daily operations - Advance reports with budget control
+title: Advance reports with budget control (Russia)
 description: 
-author: 
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/04/2018
 ms.topic: article
@@ -24,17 +24,17 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: 
+ms.author: shylaw
 ms.dyn365.ops.version: 8.1
 ms.search.validFrom: 2018-10-31
 
 ---
 
-# Advance holders - Daily operations - Advance reports with budget control
+# Advance reports with budget control
 
 [!include [banner](../includes/banner.md)]
 
-## About accounting distributions and subledger journals
+## Accounting distributions and subledger journals
 Subledger journal lines are accounting entries that are posted to the general ledger by using the general journal. You can generate subledgers from source documents such as invoices, packing slips, and picking lists for customers and vendors. Before you post the voucher information to the general ledger, you can view or modify subledger journals by using the distribution method. This method lets you allocate posting amounts between multiple financial dimensions, and change the default ledger account number or financial dimension values based on user permissions. Distributions serve as an interface to the subledger journals and only contain one side of the accounting entry.
 An advance report is used to report travel expenses that are incurred by an employee during a business trip. You can distribute the expense amount across ledger dimensions. You can view the ledger entries and verify the distribution of the expense amount. Advance report posting supports ledger line functions, exchange adjustments, and advance adjustments. If the advance report transactions are split by distribution, the canceled advance report supports the creation of a storno accounting transaction to account the distribution.
 
