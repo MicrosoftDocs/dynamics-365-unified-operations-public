@@ -52,25 +52,4 @@ The TransientSqlConnectionError exception is not catchable within the transactio
 
 If an application transaction takes a long time to process, you can use multiple incremental delays to catch the TransientSqlConnectionError exception. Retrying your application code in a new session is most likely to succeed after you have caught the exception.
 
-
-### Example
-```
-public static void LargeTransactionWrapper()
-{
-    try
-    {
-        LargeTransaction();
-    }
-    catch (Exception::TransientSqlConnectionError)
-    {
-        info("Caught transient SQL connection error, ttslevel=" + int2Str(appl.ttsLevel()));
-        // At this point, transaction is canceled
-        // Code that indicates retry is possible
-    }
-    finally
-    {
-        // Do clean up
-    }
-}
-```
-
+For more information, see [SQL connection error X++ exception](../../dev-itpro/dev-ref/sql-connection-x++.md).
