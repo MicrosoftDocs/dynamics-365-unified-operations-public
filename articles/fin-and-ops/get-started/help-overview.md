@@ -76,7 +76,9 @@ You can also find our content with any search engine. We recommend that for best
 site:docs.microsoft.com dynamics 365 "search term".  
 
 ### The docs.microsoft.com table of contents
-Finance and Operations, Retail, and Talent all share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control above the table of contents to find topics that you are looking for.
+Finance and Operations and Retail all share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control above the table of contents to find topics that you are looking for. 
+
+You can get help on other Dynamics 365 products by searching for them, or by clicking Dynamics 365 in the site breadcrumb to get to our hub page. 
 
 ### Use an RSS feed
 To subscribe to an RSS feed of all updates to the Unified Operations content, use the following link from a browser that supports RSS feeds, such as Internet Explorer, or an RSS feed manager: 
