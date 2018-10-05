@@ -68,14 +68,14 @@ You have two options for assigning numbers to fixed assets:
 
 1. Select **Organization administration** \> **Number sequences** \> **Number sequences**, and create a default number sequence that is used to number fixed assets.
 2. Select **Fixed assets (Russia)** \> **Setup** \> **Parameters** to open the **Fixed asset parameters** page.
-3. On the **Number sequences** tab, select a number sequence code for the FA number reference.
-4. On the **Fixed assets** tab, set the **Autonumeration FA** option to **Yes**.
+3. On the **Number sequences** tab, select a number sequence code, which is used for automatic creation of fixed asset number
+4. On the **Fixed assets** tab, set the **Autonumeration FA** option to **Yes**. 
 
-When you create a fixed asset on the **Fixed assets** page, the next number in the sequence is automatically entered in the fixed asset number field.
+If **Autonumeration FA** option is set to **Yes**. then when you create a fixed asset on the **Fixed assets** page (**Fixed assets (Russia)** \> **Common** \> **Fixed assets**), the next number in the sequence is automatically entered in the **FA inventory number** field.
 
 ### Set up automatic numbering of fixed assets that is based on the fixed asset group
 
-1. Select **Fixed assets** \> **Setup** \> **FA groups**.
+1. Select **Fixed assets (Russia)** \> **Setup** \> **FA groups**.
 2. Select the **Autonumeration FA** check box for the selected fixed asset group, and then select the appropriate number sequence in the **FA autonumbering sequence** field.
 
 This number sequence is used for all fixed assets that are assigned to the fixed asset group.
@@ -87,4 +87,4 @@ This number sequence is used for all fixed assets that are assigned to the fixed
 
 1. Select **Fixed assets (Russia)** \> **Periodic** \> **Create barcodes from FA inventory number**.
 2. On the **Records to include** FastTab, select **Filter**, and then, in the **Assets** dialog box, enter the criteria that are used to select fixed assets. Then select **OK** to return to the **Create barcodes from FA inventory number** dialog box.
-4. Select **OK**. If you haven't specified a bar code for the fixed asset, the value that you specified in the **FA number** field appears in the **Bar code** field on the **Fixed assets** page.
+4. Select **OK**. If you haven't specified a bar code for the fixed asset, the value that you specified in the **FA inventory number** field appears in the **Bar code** field on the **Fixed assets** page (**Fixed assets (Russia)** \> **Common** \> **Fixed assets**).
