@@ -67,7 +67,7 @@ While the new environments are deploying, begin the branching work for your upda
 [![VersionControl](./media/VersionControl.png)](./media/VersionControl.png)
 
 ### Prepare using Visual Studio
-On any other development machine (other than the new ones being deployed), open Visual Studeio and visit the Source Control Explorer. You will create a new branch that will be isolated for the 8.1 update.
+On any other development machine (other than the new ones being deployed), open Visual Studio and visit the Source Control Explorer. You will create a new branch that will be isolated for the 8.1 update.
 
 [![BranchFor81](./media/BranchFor81.png)](./media/BranchFor81.png)
 
