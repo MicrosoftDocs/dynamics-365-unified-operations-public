@@ -5,7 +5,7 @@ title: Advance holder reports
 description: 
 author: 
 manager: AnnBe
-ms.date: 09/07/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
