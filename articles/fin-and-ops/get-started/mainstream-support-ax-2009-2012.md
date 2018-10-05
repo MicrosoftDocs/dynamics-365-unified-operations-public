@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
+title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: meeramahabala
 manager: AnnBe
@@ -27,8 +27,7 @@ ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ---
 
-# End of mainstream support for Microsoft Dynamics AX 2009 and 2012
-
+# End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2
 [!include[banner](../includes/banner.md)]
 
 Mainstream support for Dynamics AX 2009 Service Pack 1 (SP1), Dynamics AX 2012, and Dynamics AX2012 R2 ends on October 9, 2018. After that date, only security hotfixes will continue to be provided for these three versions through the extended support period that continues until October 12, 2021. Please see [support.microsoft.com](https://support.microsoft.com/en-us/lifecycle/search?alpha=Dynamics%20AX) for more detail.
@@ -58,9 +57,6 @@ While the ability to request a non-security hotfix for select products is includ
 
 ### I knew about the regulatory change before October 9, 2018, but it has the law enforcement date after October 9, 2018. Will I still get a regulatory update for Microsoft Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, and Dynamics AX 2012 R2?
 No, we will only provide regulatory updates for Microsoft Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, and Dynamics AX 2012 R2 for regulatory changes with the law enforcement dates on or earlier than October 9, 2018.
-
-### The time needed to adapt a regulatory update will be increased. How can we handle it?
-In general we will ship regulatory updates at least one month before the law enforcement date (for transactional changes) or the last reporting date (for reporting changes). One month should be adequate time to adopt these changes. However, sometimes it is not possible to ship one month before these dates because of late announcements or other delays from local tax authorities. In such cases, Microsoft communicates these delays to local markets and can provide specifications, designs, and early code drops.
 
 ### A customer or a partner can already download a fix through LCS and inspect the code by installing it into a test Microsoft Dynamics AX 2012 R3 environment. Is there any difference with the approach you have proposed?
 No, there is no difference.
