@@ -9,7 +9,7 @@
   items:
   - name: Generate demo data using data packages
     href: data-entities/generate-demo-data-packages.md
-- name: Develop and customize using Visual Studio
+- name: Develop and customize
   href: dev-tools/developer-home-page.md
   items:
   - name: Application stack and server architecture
