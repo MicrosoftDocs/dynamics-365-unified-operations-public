@@ -36,6 +36,17 @@ ms.search.validFrom: 2018-10-31
 
 The following reports are available for advance holders in Russia in **Accounts payable** \> **Inquiries and reports** \> **Advance holders inquiries and reports**.
 
+## Print an advance report
+
+Use this procedure to print an advance report. You can print an advance report after an advance invoice that is issued to an advance holder is settled.
+1. Click **Accounts payable > Common > Advance holders > Advance reports**.
+2. Create and post an advance report.
+    > [!NOTE]
+    > The amounts in the Advance reports form are recalculated on the date when the payment journal for the advance holder is posted.
+3. Click **Print** to open the **Advance report** page.
+4. Click **OK** to print the advance report in the Microsoft Excel format.
+
+
 ## Advance holder balance report 
 
 The **Advance holder balance report** displays the balances of the amounts that are paid to or received from advance holders in an organization. Accountants generate this report periodically or daily to review and monitor the debts of an advance holder.
@@ -137,14 +148,12 @@ When you generate this report, the following parameters are displayed. You can u
 
 ## Advance report 
 
-Use this procedure to print an advance report in a form that is legally required in Russia. You can print an advance report after an advance invoice that is issued to an advance holder is settled.
-You need to select a particular advance report number to be included to the report.
+Use this procedure to print an advance report in a form that is legally required in Russia. You can print an advance report after an advance invoice that is issued to an advance holder is settled. You need to select a particular advance report number to be included to the report.
 
 > [!NOTE]
-    > The amounts in the <STRONG>Advance report</STRONG> form are recalculated on the date when the payment journal for the advance holder is posted.
+> The amounts on the **Advance report** page are recalculated on the date when the payment journal for the advance holder is posted.
     
 The **Advance report** will be printed in Microsoft Excel format.
-
 
 ## Advance holder turnover register
  
@@ -211,8 +220,9 @@ When you generate this report, the following parameters are displayed. You can u
 </tbody>
 </table>
 
-In **Details and sorting parameters** section, select available fields to be included into the report.
+In **Details and sorting parameters** section, select the available fields to be included into the report. In **Records to include** tab, define additional filtering conditions, if necessary.
 
-In **Records to include** tab, define additional filtering conditions, if necessary.
+## Additional resources
 
-Click the **OK** button to complete the report generation.
+[SQL Server Reporting Services Reports report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)
+
