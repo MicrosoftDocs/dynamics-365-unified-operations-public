@@ -63,7 +63,7 @@ All SQL performance tools in LCS are available under the **SQL Insights** tab on
 
     [![IndexAnalysis](./media/IndexAnalysis.JPG)](./media/IndexAnalysis.JPG)
 
-- **Queries** tab and **Actions** tab - For details on queries shown on the **Queries** and **Actions** tabs, see the [Query cookbook](querycookbook.md).
+### **Queries** tab and **Actions** tab - For details on queries shown on the **Queries** and **Actions** tabs, see the [Query cookbook](querycookbook.md).
 
 ## How do I use this feature?
 
