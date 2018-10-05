@@ -9,7 +9,7 @@
   items:
   - name: Generate demo data using data packages
     href: data-entities/generate-demo-data-packages.md
-- name: Develop and customize using Visual Studio
+- name: Develop and customize
   href: dev-tools/developer-home-page.md
   items:
   - name: Application stack and server architecture
@@ -106,6 +106,8 @@
         href: dev-ref/xpp-variables-data-types.md
       - name: X++ statements, loops, and exception handling
         href: dev-ref/xpp-statements-loops.md
+      - name: SQL connection error X++ exception
+        href: dev-ref/sql-connection-x++
       - name: X++ operators
         href: dev-ref/xpp-operators.md
       - name: X++ operator precedence
