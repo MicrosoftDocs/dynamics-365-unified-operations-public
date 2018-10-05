@@ -215,53 +215,52 @@ Use **Message processing action** to create actions for you processing and set u
 
 **General** fields description:
 
-| **Field name**              | **Field description**                                                                                                                                                                                                                                                                                                                                                                                  |
-|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Action type**             | Set up type of action. Following values are available:                                                                                                                                                                                                                                                                                                                                                 |
-| **Format mapping**          | This parameter is available for actions of **Electronic reporting export, Electronic reporting import, Electronic reporting export message.** Select a GER format which should be called for the action.                                                                                                                                                                                               |
+| **Field name**              | **Field description**  |
+|-----------------------------|----------------------------|
+| **Action type**             | Set up type of action. For more information, see [Action types](#action-types).|
+| **Format mapping**          | This parameter is available for actions of **Electronic reporting export, Electronic reporting import, Electronic reporting export message.** Select a GER format which should be called for the action.|
 | **Message item type**       | This parameter is available for actions of **Message item execution level, Electronic reporting export, Electronic reporting import** and some other types of action. Using it you may identify for records of which type the action should be evaluated. If you don’t specify particular message item type in this field, all the message item types of defined for the processing will be evaluated. |
-| **Executable class**        | This parameter is available for actions of types **Message item execution level** and **Message item execution level**. In this field, you may specify previously created **Executable class settings**.                                                                                                                                                                                               |
-| **Populate records action** | This parameter is available for actions of type **Populate records**. Use this parameter to associate a previously set up **Populate records action**.                                                                                                                                                                                                                                                 |
+| **Executable class**        | This parameter is available for actions of types **Message item execution level** and **Message item execution level**. In this field, you may specify previously created **Executable class settings**. |
+| **Populate records action** | This parameter is available for actions of type **Populate records**. Use this parameter to associate a previously set up **Populate records action**.|
 
-1.  **Populate records** – use this type of action to associate a previously set up **Populate records action**. It is supposed that this action type is used for an initial action of a processing thus only result status may be setup
-    for an action of this type.
+#### Action types
+- **Populate records** – use this type of action to associate a previously set up **Populate records action**. It is supposed that this action type is used for an initial action of a processing thus only result status may be setup for an action of this type.
 
-2.  **Create message** – use this type of action to let user manually create Messages in Electronic message form.
+- **Create message** – use this type of action to let user manually create Messages in Electronic message form.
 
-3.  **Message execution level** – use this type to set up an executable class which should be evaluated on Electronic message level.
+- **Message execution level** – use this type to set up an executable class which should be evaluated on Electronic message level.
 
-4.  **Message item execution level** – use this action type to set up an execution class evaluation on Message item level.
+- **Message item execution level** – use this action type to set up an execution class evaluation on Message item level.
 
-5.  **Electronic reporting export** – use this type for actions which should generate a report based on export GER configuration.
+- **Electronic reporting export** – use this type for actions which should generate a report based on export GER configuration.
 
-6.  **Electronic reporting import** – use this type for actions which should generate a report based on import GER configuration.
+- **Electronic reporting import** – use this type for actions which should generate a report based on import GER configuration.
 
-7.  **Message level user processing** – use this type for actions which suppose some manual actions by user. For example, update status of messages.
+- **Message level user processing** – use this type for actions which suppose some manual actions by user. For example, update status of messages.
 
-8.  **User processing** – use this type for actions which suppose some manual actions by user. For example, update status of messages items.
+- **User processing** – use this type for actions which suppose some manual actions by user. For example, update status of messages items.
 
-9.  **Web service** – use this type for actions which should provide transmission of a generated report to a web-service. For Italian Purchase and Sales Invoices Communication reporting this type of action is not used.
+- **Web service** – use this type for actions which should provide transmission of a generated report to a web-service. For Italian Purchase and Sales Invoices Communication reporting this type of action is not used.
 
-10. **Electronic reporting export message** - use this type for actions which should generate a report based on export GER configuration on a Message level (for example when a Message doesn’t have any Message items).
+- **Electronic reporting export message** - use this type for actions which should generate a report based on export GER configuration on a Message level (for example when a Message doesn’t have any Message items).
 
-11. **Request verification** – use this type of action to request verification from a server.
+- **Request verification** – use this type of action to request verification from a server.
 
-**Initial statuses** fields description:
+#### Initial statuses
+The **Initial status** FastTab is not available for actions of initial type: **Populate records, Create message**.
 
-| **Field name**          | **Field description**                                                                           |
+| **Field name**          | **Description**                                                                           |
 |-------------------------|-------------------------------------------------------------------------------------------------|
 | **Message item status** | Specify Message item statuses for which selected Message processing action should be evaluated. |
 | **Description**         | This field shows a description specified for the selected Message item status.                  |
 
-**Initial status** fast tab is not available for actions of initial type: **Populate records, Create message**.
+#### Result statuses
 
-**Result statuses** fields description:
-
-| **Field name**          | **Field description**                                                                                                                                                                                                                                                                                                                                                                                                      |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Message status**      | This filed is available for Message processing actions which evaluating on Message level. For example, it is available for action types: **Electronic reporting export**, **Electronic reporting import;** and not available for action types: **User processing**, **Message item execution level**.                                                                                                                      |
-| **Description**         | This field shows a description specified for the selected Message status.                                                                                                                                                                                                                                                                                                                                                  |
-| **Response type**       | This field shows a Response type specified for the selected Message status.                                                                                                                                                                                                                                                                                                                                                |
+| **Field name**          | **Description** |
+|-------------------------|--------------------------|
+| **Message status**      | This filed is available for Message processing actions which evaluating on Message level. For example, it is available for action types: **Electronic reporting export**, **Electronic reporting import;** and not available for action types: **User processing**, **Message item execution level**.|
+| **Description**         | This field shows a description specified for the selected Message status.|
+| **Response type**       | This field shows a Response type specified for the selected Message status. |
 | **Message item status** | You may specify in this filed Resulting statuses which should be available after the selected action is evaluated for Message processing actions which evaluating on Message item level. For example, for action types: **User processing**, **Message item execution level**. For Message processing actions which evaluate on Message level this field shows Message item status set up for the selected Message status. |
 
 ### Electronic message processing
@@ -281,36 +280,20 @@ Use **Message processing action** to create actions for you processing and set u
 
 ## Work with Electronic Messages functionality
 
-There are two forms to work with Electronic messages functionality:
-
--   **Electronic messages** (**Tax** \> **Inquires and reports** \> **Electronic
-    messages** \> **Electronic messages**)
-
--   **Electronic message items** (**Tax** \> **Inquires and reports** \>
-    **Electronic messages** \> **Electronic message items**)
-
-Depending on how a processing is setup user may use one form or another or both. If a user operates on Message level **Electronic messages** form would be more useful. In case of operating on data collection (Message items) level -**Electronic message items** form will be more useful.
+Depending on how you set up electronic messaging processing, you would use one of the following pages. If a user operates on Message level, then you would use the **Electronic messages** page (**Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**) would be more useful. If you're operating on data collection (Message items) level, then the **Electronic message items** page (**Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic message items**) will be more useful.
 
 ### Electronic messages 
 
-
-**Electronic message**s form presents processing available to user according to his (her) role associated in the setup of the processing.
-
-For each of the processing available for user, the form shows Electronic messages and related to them information.
+**Electronic messages** form presents processing available to user according to his (her) role associated in the setup of the processing. For each of the processing available for user, the form shows Electronic messages and related to them information.
 
 **Messages fast tab** shows Electronic messages for the selected processing. Depending on status of the selected message and predefined processing, user may run some actions by clicking on “fast” buttons of the grid:
 
--   “New” – is associated with actions of “Create message” type.
-
--   “Delete” - is active when for the current status of the selected message, “Allow delete” parameter is marked.
-
--   “Generate report” – is associated with actions of “Electronic reporting export message” type.
-
--   “Send report” – is associated with actions of “Web service” type.
-
--   “Update status” – is associated with actions of “Message level user processing” type.
-
--   “Message items” – opens Electronic message items form.
+-   **New** – is associated with actions of “Create message” type.
+-   **Delete** - is active when for the current status of the selected message, “Allow delete” parameter is marked.
+-   **Generate report** – is associated with actions of “Electronic reporting export message” type.
+-   **Send report** – is associated with actions of “Web service” type.
+-   **Update status** – is associated with actions of “Message level user processing” type.
+-   **Message items** – opens Electronic message items form.
 
 **Action log fast tab** shows information about all the actions executed for the selected message.
 
@@ -320,11 +303,11 @@ For each of the processing available for user, the form shows Electronic message
 
 User may review all the attachments (already generated and received reports) for the selected message. To do so, select a message for which you want to review a report and click on **Attachment** button on the **Main menu**:
 
-![](media/da3488121c1641353318ce43528608cf.png)
+![Attachment icon](media/attachment-icon.png)
 
 Thus, you will see a form where you may review all the attachments related to the message. To see the file, select a file in the list on the left side and click on **Open** button on the **Main menu**:
 
-![](media/70eb269745c4f27519d239309a1e7673.png)
+![Open button](media/open-button.png)
 
 If you need to review an attachment related to a specific action previously executed with a message, select this message, open **Action log fast tab,** select an action and click on Attachment button as it is shown before.
 
@@ -399,9 +382,3 @@ This section introduces some simple examples of how you might set up EM to build
 
 2.  Add an action to an existing processing to call a simple GER format to
     generate an MS Excel report.
-
-### Set up and run a processing to call a simple GER format to generate an MS Excel report
---------------------------------------------------------------------------------------
-
-### Add an action to an existing processing to call a simple GER format to generate an MS Excel report
---------------------------------------------------------------------------------------------------
