@@ -46,8 +46,3 @@ Microsoft Dynamics 365 for Finance and Operations version 8.1.1 includes Platfor
 
 ## Ledger settlements
 Ledger settlements let you match debit and credit transactions in the general ledger, and mark them as settled. In this way, you can make sure that related transactions have been cleared. You can also reverse settlements if they were made by mistake.
-
-## Simulate posting
-You can find Simulate posting on the Validate menu for most journals. When you validate a journal using the Validate function, the system tests the journal for specific error conditions. If you use the Simulate posting function, the system runs all of the same processes that are run during posting without actually posting the journal. You can then review the posting messages that are displayed, fix any errors that you find, and then click the Post menu to post the journal.
-
-Simulate posting is not available for batch processing. However, there is code available to simulate posting in batch and developers can extend the code to add that functionality.
