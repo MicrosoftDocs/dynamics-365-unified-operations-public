@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.1
 # End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2
 [!include[banner](../includes/banner.md)]
 
-Mainstream support for Dynamics AX 2009 Service Pack 1 (SP1), Dynamics AX 2012, and Dynamics AX2012 R2 ends on October 9, 2018. After that date, only security hotfixes will continue to be provided for these three versions through the extended support period that continues until October 12, 2021. For more information, see [support.microsoft.com](https://support.microsoft.com/en-us/lifecycle/search?alpha=Dynamics%20AX).
+Mainstream support for Dynamics AX 2009 Service Pack 1 (SP1), Dynamics AX 2012, and Dynamics AX 2012 R2 ends on October 9, 2018. After that date, only security hotfixes will continue to be provided for these three versions through the extended support period that continues until October 12, 2021. For more information, see [support.microsoft.com](https://support.microsoft.com/en-us/lifecycle/search?alpha=Dynamics%20AX).
 
 Mainstream support for Dynamics AX 2012 R3 continues through October 12, 2021. Microsoft will continue making security hotfixes, non-security hotfixes, and regulatory updates for Dynamics AX 2012 R3 throughout that mainstream support period. The source code for these non-binary, non-security hotfixes and regulatory updates will continue to be available for customers, and their partners, active on the Enhancement Plan or Software Assurance.
 
@@ -38,9 +38,9 @@ Dynamics AX 2009 SP1, Dynamics AX 2012, and Dynamics AX 2012 R2 customers can se
 
 Customers are advised to upgrade to the latest version of Dynamics 365 for Finance and Operations:
 
--   Microsoft Dynamics AX 2009 Service Pack 1 customers should use the [migration tool](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page) that is available.
+-  Dynamics AX 2009 Service Pack 1 customers should use the [migration tool](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page) that is available.
 
--   Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R2 customers should upgrade to Microsoft Dynamics 365 for Finance and Operations through Microsoft Dynamics AX 2012 R3 using the upgrade tool that is available. Additional upgrade information is available in the [Upgrade from AX 2012 to Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012) topic.
+-   Dynamics AX 2012 and Dynamics AX 2012 R2 customers should upgrade to Dynamics 365 for Finance and Operations through Dynamics AX 2012 R3 using the upgrade tool that is available. Additional upgrade information is available in the [Upgrade from AX 2012 to Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012) topic.
     
 ## Frequently asked questions
 
