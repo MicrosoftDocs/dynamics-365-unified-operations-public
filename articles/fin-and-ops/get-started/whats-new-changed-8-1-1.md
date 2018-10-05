@@ -39,3 +39,8 @@ This topic describes features that are either new or changed in Microsoft Dynami
 Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
 
 [Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning. 
+
+## What's new in Platform update 21
+Microsoft Dynamics 365 for Finance and Operations version 8.1.1 includes Platform update 21. To learn more about Platform update 21, see 
+[What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (October 2018).](whats-new-platform-update-21.md)
+
