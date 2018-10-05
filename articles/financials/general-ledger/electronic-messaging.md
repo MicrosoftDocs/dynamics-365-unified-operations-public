@@ -79,60 +79,29 @@ These packages, if you use them, should be imported to a Legal entity using the 
 
 If you don't import a data entities package, you can set up **Electronic Messages** functionality manually. To do this, you must set up the following: 
 
--   Number sequence for Messages and Message items
--   Message item types
--   Message item statuses
--   Message statuses
--   Additional fields
--   Populate records actions
--   Executable class settings
--   Web services settings
--   Message processing actions
--   Electronic message processing
+-   [Number sequences](#number-sequences)
+-   [Message item types and statuses](#message-item-types-and-statuses)
+-   [Message statuses](#message-statuses)
+-   [Additional fields](#additional-fields)
+-   [Executable class settings](#executable-class-settings)
+-   [Populate records actions](#populate-records-actions)
+-   [Web services settings](#web-service-settings)
+-   [Message processing actions](#message-processing-actions)
+-   [Electronic message processing](#electronic-message-processing)
 
-:::row:::
-    :::column:::
-        ### Number sequences
-    :::column-end:::
-:::row-end:::  
-:::row:::
-    :::column:::
-        Set up number sequences for Messages and for Message items.  The number sequences will be used for auto-numbering the messages and the message items and the numbers will be used as the unique identifiers for messages and message items in the table.
-    :::column-end:::
-    :::column:::
-        You can set up number sequences for electronic messaging on the **General Ledger parameters** page.
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        ### Message item types
-    :::column-end:::
-:::row-end:::  
-:::row:::
-    :::column:::
-        Set up **Message item types** to identify which types of records will be used in Electronic messages.
-    :::column-end:::
-    :::column:::
-        **Tax** \> **Setup** \> **Electronic messages** \> **Message item types**
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Set up **Message item statuses** to identify which statuses will be applicable for Message items in the processing you are setting up.
-    :::column-end:::
-    :::column:::
-        **Tax** \> **Setup** \> **Electronic messages** \> **Message item statuses**
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        Set up **Message statuses** to identify which statuses will be applicable for Messages in the processing you are setting up.
-    :::column-end:::
-    :::column:::
-        **Tax** \> **Setup** \> **Electronic messages** \> **Message statuses**.
-    :::column-end:::
-:::row-end:::
+### Number sequences
 
+Set up number sequences for Messages and for Message items.  The number sequences will be used for auto-numbering the messages and the message items and the numbers will be used as the unique identifiers for messages and message items in the table. You can set up number sequences for electronic messaging on the **General Ledger parameters** page.
+
+### Message item types and statuses
+
+Message item types identify the types of records that will be used in Electronic messages. You can set up message item types on the **Message item types** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message item types**).
+
+Message item statuses identify which statuses will be applicable for Message items in the processing you are setting up. You can set up message item types on the **Message item statuses** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message item statuses**).
+
+### Message statuses
+
+Set up the message statuses that you want to be available in message processing. You can set up message statuses on the **Message statuses** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message statuses**).
 
 ###  Additional fields
 
@@ -170,15 +139,14 @@ To manually set it up, open **Tax** \> **Setup** \> **Electronic messages** \> *
 
 ### Populate records actions
 
-**Populate records actions** should be used to set up action which adds records to be sent to the Electronic message items table. To do so, open **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions** and create
-a new record for each action which should add records to the table:
+**Populate records actions** should be used to set up actions which adds records to be sent to the Electronic message items table. To do so, open **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions** and create a new record for each action which should add records to the table:
 
 | **Field name**                          | **Field description**                                                               |
 |-----------------------------------------|-------------------------------------------------------------------------------------|
 | **Populate records action name**        | Identify a name for to be used for action which populated records in your process   |
 | **Populate records action description** | Add a description for to be used for action which populated records in your process |
 
-Add as much lines on **Datasources setup** fast tab as more data sources should be used for the process:
+Add as many lines on the **Datasources setup** FastTab as more data sources are used for the process:
 
 | **Field name**             | **Field description**                                                                                                              |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -209,7 +177,6 @@ service.
 | **Content type**            | Specify the content type                                                                                            |
 
 ### Message processing actions
-
 
 Use **Message processing action** to create actions for you processing and set up their parameters.
 
@@ -265,7 +232,6 @@ The **Initial status** FastTab is not available for actions of initial type: **P
 
 ### Electronic message processing
 
-
 **Electronic message processing** is a basic concept of the **Electronic messages** functionality. It aggregates actions which should be evaluated for the Electronic message. Where actions can be linked via initial and result status or started independently (User processing action type). On **Electronic message processing** page user may also select Additional fields which should be supported for the processing.
 
 **Action fast tab** serves to allow user to add predefined actions to the processing. It is possible to define if an action must be run separately (for user actions it is mandatory) or can be initiated by processing.
@@ -280,7 +246,7 @@ The **Initial status** FastTab is not available for actions of initial type: **P
 
 ## Work with Electronic Messages functionality
 
-Depending on how you set up electronic messaging processing, you would use one of the following pages. If a user operates on Message level, then you would use the **Electronic messages** page (**Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**) would be more useful. If you're operating on data collection (Message items) level, then the **Electronic message items** page (**Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic message items**) will be more useful.
+If a user operates on message level, then you would use the **Electronic messages** page (**Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**) would be more useful. If you're operating on data collection (Message items) level, then the **Electronic message items** page (**Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic message items**) will be more useful.
 
 ### Electronic messages 
 
