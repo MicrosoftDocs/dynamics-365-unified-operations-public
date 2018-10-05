@@ -36,16 +36,6 @@ ms.search.validFrom: 2018-10-31
 
 The following reports are available for advance holders in Russia in **Accounts payable** \> **Inquiries and reports** \> **Advance holders inquiries and reports**.
 
-## Print an advance report
-
-Use this procedure to print an advance report. You can print an advance report after an advance invoice that is issued to an advance holder is settled.
-1. Click **Accounts payable > Common > Advance holders > Advance reports**.
-2. Create and post an advance report.
-    > [!NOTE]
-    > The amounts in the Advance reports form are recalculated on the date when the payment journal for the advance holder is posted.
-3. Click **Print** to open the **Advance report** page.
-4. Click **OK** to print the advance report in the Microsoft Excel format.
-
 
 ## Advance holder balance report 
 
