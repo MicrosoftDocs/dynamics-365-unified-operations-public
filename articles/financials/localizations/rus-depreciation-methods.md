@@ -110,7 +110,7 @@ The manual depreciation method is based on a manual definition of the depreciati
 
 ## Non-linear tax accounting group depreciation method
 
-When the non-linear method is used, the accrued monthly depreciation for the asset is calculated by multiplying the asset's remaining value by the depreciation rate. The depreciation rate is defined by the formula K = (2 ÷ n) × 100 percent, where *n* is the asset's useful life in months. For tax purposes, the total balance for the group should be multiplied by the depreciation rate for it set by the Tax Code of the Russian Federation
+Depreciation is charged not for each object of fixed assets, but for the depreciation group (subgroup) as a whole. Subgroup - objects included in the group to which the increasing or decreasing depreciation factor is applied. The cost of all objects included in a group (subgroup) forms its total net book value, which is monthly reduced by the amount of calculated depreciation. Depreciation is calculated at the rate established by law for each group. In the case when the total net book value of a group (subgroup) becomes less than 20,000 rubles, in the month following the month when the specified value was reached, the organization has the right to liquidate this group (subgroup).
 
 
 ### Set up the depreciation method
