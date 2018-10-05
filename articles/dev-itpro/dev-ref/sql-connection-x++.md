@@ -43,7 +43,7 @@ This exception usually occurs during a large transaction or when the database is
 
 The TransientSqlConnectionError exception is not catchable within the transaction. The X++ transaction that encounters this exception is canceled (calling **ttsAbort**) before the exception occurs. This means that you need to use the catch block to identify the transient SQL connection error instead of a generic X++ error exception, and then retry the outermost transaction or retry application code logic in a new session. This exception allows the application to be designed for transient server failures.
 
-If an application transaction takes a long time to process, you can use multiple incremental delays to catch the TransientSqlConnectionError exception. You can also use an unlimited number of retries, however, this can impact server performance. Retrying your application code in a new session is most likely to succeed after you have caught the exception.
+If an application transaction takes a long time to process, you can use multiple incremental delays to catch the TransientSqlConnectionError exception. Retrying your application code in a new session is most likely to succeed after you have caught the exception.
 
 
 ### Example
