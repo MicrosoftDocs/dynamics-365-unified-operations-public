@@ -94,9 +94,9 @@ Setup of Finance and Operations will deploy a set of applications inside Service
 
 ## Infrastructure
 
-Finance and Operations falls under Microsoft’s standard support policy regarding operation on non-Microsoft virtualization platforms – specifically VMWare. You can find the policy [here](https://support.microsoft.com/en-us/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw). In short, we support our products in this environment, but if we are asked to investigate an issue, we may ask the customer to first reproduce the problem without the virtualization platform or on the Microsoft virtualization platform.
+Finance and Operations falls under Microsoft’s standard support policy regarding operation on non-Microsoft virtualization platforms – specifically VMWare. For more information, read [Support policy for Microsoft software](https://support.microsoft.com/en-us/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw). In short, we support our products in this environment, but if we are asked to investigate an issue, we may ask the customer to first reproduce the problem without the virtualization platform or on the Microsoft virtualization platform.
 
-If you are using VMWare, you must implement the fixes documented on following web pages:
+If you are using VMWare, you must implement the fixes that are documented on the following web pages:
 - [After upgrading a virtual machine to hardware version 11, network dependent workloads experience performance degradation (2129176)](https://kb.vmware.com/s/article/2129176)
 - [Several issues with vmxnet3 virtual adapter](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
