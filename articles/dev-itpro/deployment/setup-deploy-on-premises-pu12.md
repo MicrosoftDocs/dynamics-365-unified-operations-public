@@ -798,7 +798,7 @@ Finance and Operations requires additional configuration beyond the default out-
 
 1. Configure the AD FS identifier so that it matches the AD FS token issuer.
 
-  This command is related to adding new users via the **Import users** option on the **Users** page (**System adminstsration > Users > Users**) in the Finance and Operations client.
+  This command is related to adding new users using the **Import users** option on the **Users** page (**System administration > Users > Users**) in the Finance and Operations client.
 
     ```powershell
     $adfsProperties = Get-AdfsProperties
@@ -807,7 +807,7 @@ Finance and Operations requires additional configuration beyond the default out-
 
 2. You should disable Windows Integrated Authentication (WIA) for intranet authentication connections, unless you've configured AD FS for mixed environments. For more information about how to configure WIA so that it can be used with AD FS, see [Configure browsers to use Windows Integrated Authentication (WIA) with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia).
 
-  This command is related to using forms authentication upon logging into the Finance and Operations client. Other options, such as single sign-on, may be available which require addititional setup.
+  This command is related to using forms authentication upon signing into the Finance and Operations client. Other options, such as single sign-on, may be available which require additional setup.
 
     ```powershell
     Set-AdfsGlobalAuthenticationPolicy -PrimaryIntranetAuthenticationProvider FormsAuthentication, MicrosoftPassportAuthentication
