@@ -34,14 +34,16 @@ ms.dyn365.ops.version: Plaform update 21
 
 [!include [banner](../includes/banner.md)]
 
+This topic describes the SQL connection error exception types in X++.
+
 ## TransientSqlConnectionError X++ exception
-When a transient SQL connection error happens on the server side during an X++ SQL query execution, a TransientSqlConnectionError X++ exception will occur. Depending on the application requirements, the application should catch and handle the exception.
+During an X++ SQL query execution, when a transient SQL connection error occurs on the server side, a TransientSqlConnectionError X++ exception will occur. Depending on the application requirements, the application should catch and handle the exception.
 
-This exception usually happens during a large transaction or when database is under high processing pressure.
+This exception usually occurs during a large transaction or when the database is under a lot of processing pressure.
 
-The TransientSqlConnectionError exception is not catchable within the transaction. The X++ transaction that encounters this exception is canceled (calling **ttsAbort**) before the exception occurs. Use the catch block to identify the transient SQL connection error instead of a generic X++ error exception, and then retry the outermost transaction or retry application code logic in a new session. This exception allows the application to design for transient server failures.
+The TransientSqlConnectionError exception is not catchable within the transaction. The X++ transaction that encounters this exception is canceled (calling **ttsAbort**) before the exception occurs. This means that you need to use the catch block to identify the transient SQL connection error instead of a generic X++ error exception, and then retry the outermost transaction or retry application code logic in a new session. This exception allows the application to be designed for transient server failures.
 
-If your application transaction can last long time, retrying on such exception is recommended for up to a few times with incremental delays of time.  Unlimited number of retries are highly unrecommended and can impact server performance.  Retrying your application code in a new session is more likely to succeed after you caught such exception. 
+If an application transaction takes a long time to process, you can use multiple incremental delays to catch the TransientSqlConnectionError exception. You can also use an unlimited number of retries, however, this can impact server performance. Retrying your application code in a new session is most likely to succeed after you have caught the exception.
 
 
 ### Example
