@@ -30,6 +30,8 @@
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Core HR and Common Data Service for Apps
       href: CoreHREntities.md
+    - name: Integrations
+      href: talent-financeandoperations-integration.md
     - name: Access preview features
       href: access-preview-feature.md
     - name: Configure the payroll integration between Talent and Dayforce
