@@ -38,7 +38,7 @@ and Operations into Talent.
 
 ![Talent to Finance and Operations Integration Flow](./media/TalentFinOpsFlow.png)
 
-In the current version, the Talent to Finance and Operations solution provides the following types of data sychronization. 
+In the current version, the Talent to Finance and Operations solution provides the following types of data synchronization. 
 
 * Maintain jobs in Talent and sync them from Talent to Finance and Operations
 * Maintain positions and position assignments in Talent and sync them from Talent to Finance and Operations
@@ -47,7 +47,7 @@ In the current version, the Talent to Finance and Operations solution provides t
 
 ##System requirements for Talent
 * Dynamics 365 for Talent on CDS for Apps
-* Dynamics 365 for Finance and Operations 7.2 and foward
+* Dynamics 365 for Finance and Operations 7.2 and forward
 
 ##Template and Tasks
 
@@ -76,19 +76,19 @@ The following template and underlying tasks are used to synchronize products fro
 * Workers to Worker
 * Employments to Employment
 * Employments to Employment Detail
-* Postion Worker Assignment to Position Worker Assignments
+* Position Worker Assignment to Position Worker Assignments
 * Worker Addresses to Worker Postal Address V2
 
 ## Integration Considerations
 When integrating data from Talent to Finance and Operations, the integration will attempt to match records based on the ID. If the match
 occurs, it will then overwrite the data in Finance and Operations with the values in Talent. However, an issue may occur if logically
-these are different records and the same ID was generated in either Talent or Finance and Operations based on the resepctive number sequence.
+these are different records and the same ID was generated in either Talent or Finance and Operations based on the respective number sequence.
 
 The areas where this can occur are Worker, which uses Personnel number to make the match, and Positions. Jobs do not use number sequences, as a result
 if the same job ID is present in both Talent and Finance and Operations, the Talent information will overwrite the Finance and Operations
 information. 
 
-To keep the ID issue from occuring, you can either add a prefix on the [number sequence] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json)
+To keep the ID issue from occurring, you can either add a prefix on the [number sequence] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json)
 or set a beginning number on the number sequence that is beyond the range of the other system. 
 
 The location ID used for worker address isn't part of a number sequence. When integrating worker address from Talent to Finance and Operations, if the worker address already exists in Finance and Operations, 
