@@ -2,7 +2,6 @@
 # required metadata
 
 title: Finance and Operations Help system
-
 description: This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 author: margoc
 manager: AnnBe
@@ -50,14 +49,14 @@ Finance and Operations includes a Help system that is based on two main componen
 -   A documentation site
 -   Task guides
 
-You can access both help topics and task guides from the Help pane in whichever product you are using. The following screenshot shows Dynamics 365 for Finance and Operations.
+You can access help from the Help pane in whichever product you are using. The following screenshot shows Finance and Operations.
 
 ![Help pane](./media/help-pane-ops-task-guides.png)
 
 This topic describes the Help system, and explains how you can create custom documentation and training resources for your organization.
 
 > [!IMPORTANT]
-> The **Task guides** tab is currently not available in Microsoft Dynamics 365 for Talent and Microsoft Dynamics 365 for Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md) for both Retail and Talent.
+> **Task guides** are not currently available for Retail, or in the Help pane for Talent (a few task guides are available in the Getting Started pane for Talent). Procedural help is available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for both Retail and Talent.
 
 ## Help on docs.microsoft.com
 
