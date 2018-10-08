@@ -107,7 +107,7 @@
       - name: X++ statements, loops, and exception handling
         href: dev-ref/xpp-statements-loops.md
       - name: SQL connection error X++ exception
-        href: dev-ref/sql-connection-x++
+        href: dev-ref/sql-connection-x++.md
       - name: X++ operators
         href: dev-ref/xpp-operators.md
       - name: X++ operator precedence
