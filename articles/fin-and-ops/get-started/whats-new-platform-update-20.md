@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/20/18
+ms.date: 09/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,7 +38,6 @@ This topic describes features that are either new or changed in Dynamics 365 for
 > [!NOTE]
 > This platform release is cumulative. It contains new or changed features from Platform update 16, Platform update 17, Platform update 18, Platform update 19, and Platform update 20, as well as all earlier updates. 
 
-> This update is currently available for targeted customers and will be available to all users in the future. For more information about standard and targeted releases, see the [Standard and targeted platform releases](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases) topic.
 
 ### Announcing the Dynamics 365 October '18 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
@@ -46,7 +45,13 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning. 
 
 ### Platform update 20 bug fixes
-For information about the bug fixes included in Platform update 20, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=2022870).
+For information about the bug fixes included in each of the updates that are part of Platform update 20, sign in to Lifecycle Services (LCS) and use the following links:
+
+  - [Platform update 20 KB article](https://go.microsoft.com/fwlink/?linkid=2022870&clcid=0x409)
+  - Platform update 19 was not released for General Availability, no KB article
+  - [Platform update 18 KB article](https://go.microsoft.com/fwlink/?linkid=2025682&clcid=0x409)
+  - [Platform update 17 KB article](https://go.microsoft.com/fwlink/?linkid=875608&clcid=0x409)
+  - Platform update 16 was not released for General Availability, no KB article
 
 ## Adding and removing columns in a grid is easier
 Some of the most typical changes that a user makes to a grid are adding, removing, resizing, and reordering
@@ -135,18 +140,6 @@ without an X++ override, then you will need to recompile the target form.
 -  Enable Chain of Command on nested types within forms, including data sources and controls.
 
 For more information about all the extensibility capabilities, see the [Extensibility home page](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page).
-
-## Incremental refresh option for entity store models
-Incremental refresh is an option for
-updating entity store models in response to changes in objects referenced by the
-model. These are changes to root attributes within a model that are detected by
-the delta processing engine during an entity store refresh. This includes entity
-store model collections that can be uniquely identified using a field reference.
-System administrators can use the entity store management tooling provided with
-Finance and Operations to identify entity store models supported by the
-incremental delta detection logic.
-
-For more information, see [Incremental refresh option for Entity store models](../../dev-itpro/analytics/incremental-refresh-entity-store-models.md).
 
 ## Performance improvement in the Visual Studio development environment
 This update includes fixes that improve your experience while using the X++ code editor and metadata properties

@@ -9,7 +9,7 @@
   items:
   - name: Generate demo data using data packages
     href: data-entities/generate-demo-data-packages.md
-- name: Develop and customize using Visual Studio
+- name: Develop and customize
   href: dev-tools/developer-home-page.md
   items:
   - name: Application stack and server architecture
@@ -106,6 +106,8 @@
         href: dev-ref/xpp-variables-data-types.md
       - name: X++ statements, loops, and exception handling
         href: dev-ref/xpp-statements-loops.md
+      - name: SQL connection error X++ exception
+        href: dev-ref/sql-connection-x++.md
       - name: X++ operators
         href: dev-ref/xpp-operators.md
       - name: X++ operator precedence
@@ -253,6 +255,8 @@
         href: extensibility/extensibility-changes-803.md
       - name: Extensibility changes version 8.0.4
         href: extensibility/extensibility-changes-804.md
+      - name: Extensibility changes version 8.1
+        href: extensibility/extensibility-changes-81.md       
     - name: Fundamentals
       items:
       - name: Intrusive customizations
@@ -1143,6 +1147,8 @@
     items:
     - name: Process for moving to the latest update
       href: migration-upgrade/upgrade-latest-update.md
+    - name: Update environments from version 8.0 to 8.1
+      href: migration-upgrade/appupdate-80-81.md
     - name: Software lifecycle policy and cloud releases
       href: migration-upgrade/versions-update-policy.md
     - name: Apply the latest platform update to environments
@@ -1285,6 +1291,10 @@
     href: lifecycle-services/user-logins.md
   - name: Asset library
     href: lifecycle-services/asset-library.md
+  - name: Performance troubleshooting using tools in LCS
+    href: lifecycle-services/performancetroubleshooting.md
+  - name: Query cookbook
+    href: lifecycle-services/querycookbook.md
   - name: Microsoft Dynamics 365 Translation Service
     href: lifecycle-services/translation-service-overview.md
     items:

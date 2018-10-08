@@ -6,7 +6,7 @@ description: This topic explains the process for upgrading to the latest update 
 author: robadawy
 manager: AnnBe
 
-ms.date: 11/20/2017
+ms.date: 10/03/2018
 
 ms.topic: article
 ms.prod: 
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic explains the process for upgrading from earlier releases to the latest update for Microsoft Dynamics 365 for Finance and Operations. It describes the overall process and the supported scenarios, but doesn't provide detailed instructions for every step of the process.
 
-For information about the contents of each release that is available, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
+For information about the contents of each release of Dynamics 365 for Finance and Operations, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
 
 ## Definitions
 
@@ -70,7 +70,7 @@ Use this scenario when one or more small hotfixes are required in order to addre
 
 This process is required before you can use scenario 3. A developer must complete this process before other activities can begin.
 
-Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have have a plan to refactor your customizations into extensions. For more information, see [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
+Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have a plan to refactor your customizations into extensions. For more information, see [Extensibility homepage](../extensibility/extensibility-home-page.md) and [Refactor overlayering on 8.0 environments](../extensibility/refactoring-over-layering.md).
 
 ### Scenario 3: Upgrade to the latest application release
 
@@ -145,9 +145,12 @@ Regardless of whether you're a live customer or you're still in the implementati
 4. Install any hotfixes that apply to the environment.
 5. Upload deployable packages to the LCS Asset library of your project.
 
-For more details of the code migration steps, see [Code migration](../dev-tools/developer-home-page.md#code-migration). After you've completed the code migration, continue to scenario 3.
+For details about the code migration steps, see [Code migration](../dev-tools/developer-home-page.md#code-migration). After you've completed the code migration, continue to scenario 3.
 
 ## Scenario 3: Upgrade to the latest application release
+
+> [!Important]
+> If you are on application version 8.0 and want to move to the 8.1 release, follow the simplified steps in [Update environments from 8.0 to 8.1](./appupdate-80-81.md).
 
 These steps apply to customers who are live on an earlier release and want to do a full upgrade to the most recent platform and application releases. The steps might also apply to customers who have already deployed and configured a production environment, even if they haven't yet gone live. If you aren't upgrading your application but just want to upgrade your platform, use scenario 4 instead.
 
@@ -182,10 +185,10 @@ DSE will upgrade one Tier 2 (Standard Acceptance Test) or higher sandbox environ
 
 2. Select the target version that you're upgrading to, and specify the start and end times of your preferred downtime window.
     - A date and time picker will show the available times.
-    - To help guarantee that the upgrade can be done within your expected timeframe, you must submit your upgrade request a minimum of five working days before you expect to upgrade. The advance notice is required so that a new environment can be prepared before your downtime window.
+    - To help ensure that the upgrade can be done within your expected timeframe, you must submit your upgrade request a minimum of five working days before you expect to upgrade. The advance notice is required so that a new environment can be prepared before your downtime window.
     
     > [!IMPORTANT] 
-    > Requests are subject to availability of the DSE team, therefore, we cannot guarantee the availability of a specific upgrade window. It is best to request your upgrade window as soon as you can commit to it
+    > Requests are subject to availability of the DSE team, therefore, we cannot ensure the availability of a specific upgrade window. It is best to request your upgrade window as soon as you can commit to it.
     
     - You must allow for at least eight hours between the start and end of the downtime. This time is required in order to swap in the new environment and complete the data upgrade process.
 
@@ -195,7 +198,7 @@ DSE will upgrade one Tier 2 (Standard Acceptance Test) or higher sandbox environ
 
     > [!IMPORTANT]
     > - If you don't select application deployable packages in your service request, DSE might reject the request.
-    > - DSE will upgrade a copy of your production database on the UAT environment, DSE will not upgrade your current UAT database. Upgrading the UAT environment is a intended as a pre-production validation of the upgrade process.
+    > - DSE will upgrade a copy of your production database on the UAT environment, DSE will not upgrade your current UAT database. Upgrading the UAT environment is intended as a pre-production validation of the upgrade process.
     > - If an error causes the upgrade process to stop, DSE will roll the environment back to its original state. You can then resolve the issue that caused the failure and reschedule the upgrade at a new time.
     > - If you're using Retail features, a minimum of 16 hours of downtime is required, because additional upgrade steps are required.
 

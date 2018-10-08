@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 20
 
 # Breaking changes
 
+[!include [banner](../includes/banner.md)]
+
 When you make your solution extensible, you also help guarantee that you won't break the extension points later. A breaking change is any change that can break a consumer of your code.
 
 This topic lists some of the types of changes that can break your code. 
@@ -46,7 +48,7 @@ If any data model change requires that a data upgrade script be run, consumers m
 
 ### Data types
 + **Changing an enumeration (enum) from extensible to non-extensible** – Consumers might have extensions to the enum.
-+ **Changing an enum from non-extensible to extensible** – Consumers might be using the enums in comparisons.
++ **Changing an enum from non-extensible to extensible** – Consumers might be using the enums in comparisons. For more details, see [Write extensible enums](extensible-enums.md).
 + **Decreasing the decimal precision of an extended data type (EDT) of the real type** – Consumers might have dependencies on the ability to enter data that uses the precision.
 + **Decreasing the size of an EDT of the string type** – Consumers might have dependencies on the size of the string.
 + **Specializing the EDT by making it extend another EDT** – Consumers might have string length or decimal precision extensions to the EDT.

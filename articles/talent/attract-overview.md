@@ -37,17 +37,17 @@ Attract provides capabilities to manage the process of hiring new talent. Candid
 
 Attract provides the following features.
 
-### Attract dashboard
+## Attract dashboard
 This is where hiring team members can see the details for the jobs they are a participating in. It's also where a hiring manager or recruiter can add a new job to Attract, either by creating one individually or importing a number of them at once from an Excel spreadsheet.
 
-### Jobs
+## Jobs
 On the **Job** page, details such as job description and job location can be viewed and edited. The **Job** page is where the hiring team is put together and where you can add or change the recruiters and interviewers on the team. New candidates can also be added on the **Job** page.
 
-### Candidates
+## Candidates
 Candidates can be added to a job individually or uploaded in larger numbers from an Excel spreadsheet. All candidates are automatically added to the first stage, the Apply stage, in the hiring process for any job. All of the candidate's application information can be seen and managed here. Additional documents can be uploaded and viewed, along with contact information like email addresses, phone numbers, and links to their social media accounts. If the candidate provided a link to their LinkedIn profile, and the LinkedIn integration (which requires a LinkedIn recruiter license) has been set up, the candidate’s profile will be shown.
 
-### Stages
+## Stages
 Attract provides a predefined hiring process that contains four basic stages: Apply, Screen, Interview, and Offer. New candidates start in the application stage where their resume, cover letter, portfolio, and other application documents are reviewed. From there, a candidate can be advanced to the screening stage, where they are invited to participate in a screening phone call or Skype video interview. The hiring manager and recruiter can provide feedback about the candidate and advance them to the next stage. In-person interviews are then scheduled with available members of the hiring team, and can be customized to be one-on-one or panel interviews of various lengths. After the interviews, feedback from the interview team is captured and reviewed. Select candidates are advanced to the final stage, where an offer is made and prepared for their review and approval. 
 
-### Candidate app
+## Candidate app
 Candidates receive an email as soon as they have been added to a job with a link to get the app. This web app provides candidates with job details and is the tool to communicate with the hiring team. Candidates can also submit their availability for interviews.

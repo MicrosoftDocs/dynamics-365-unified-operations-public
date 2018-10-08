@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,6 +46,52 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!Note]
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
+
+## Dynamics 365 for Finance and Operations 8.1 with platform update 20
+
+### Batch transfer rules for subledger journal account entries
+The Synchronous transfer mode is being deprecated in the General ledger parameters.  This mode is replaced by Asynchronous and scheduled batch only, which already exist as options for transfer. 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are removing the synchronous option due to performance impact to the system. |
+| **Replaced by another feature?**   | Asynchronous and scheduled batch are options to use in place of Synchronous.   |
+| **Product areas affected**         | General Ledger, Accounts payable, Accounts Receivable, Procurement, Expense    |
+| **Deployment option**              | All  |
+| **Status**                         | Deprecated - Target timeframe for the functionality to be removed is the 10.0 version.|
+
+### Electronic reporting for Russia
+Feature for configuring .txt and .xml file formats of declarations. 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with Electronic reporting. |
+| **Replaced by another feature?**   | Yes. |
+| **Product areas affected**         | General Ledger |
+| **Deployment option**              | All |
+| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
+
+### Financial reports generator for Russia
+A tool for setting up data collection for accounting and tax reports, and to export data to XLS and DOC report templates. Functional parts: Export data to XLS and DOC report templates, queries, fixed requisites are removed. 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Removed parts are replaced with Electronic reporting. |
+| **Replaced by another feature?**   | Yes. Financial reports setup user interface should be used for setting up data collection rules by GL accounts or tax registers. Export data to various file types, fixed requisites and query-like data collection rules should be configured in Electronic reporting. |
+| **Product areas affected**         | General ledger. |
+| **Deployment option**              | All |
+| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
+
+### Integration with external providers for sending electronic reporting through communication channels for Russia
+Feature exporting generated electronic files of declarations to folder for further sending to official providers of electronic reporting as well as importing state back.
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced with electronic messages configurable feature. |
+| **Replaced by another feature?**   | Yes.  |
+| **Product areas affected**         | General Ledger, Tax |
+| **Deployment option**              | All |
+| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
 
 ## Dynamics 365 for Finance and Operations 8.0 with platform update 15
 No features have been removed or deprecated with this release. Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.

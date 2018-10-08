@@ -338,7 +338,7 @@ The Microsoft Dynamics App for Office can be run in Word to enable the creation 
     1.  In Word, click **Insert** &gt; **My Add-ins** &gt; **Shared Folder** &gt; **Microsoft Dynamics**.
     2.  Click **Insert**.
     3.  In the app, click **Add server information**.
-    4.  In the **Server URL** field, enter the start of the URL (protocol + hostname). For example, enter **https://topo00dfa4stbobaos.cloudax.test.dynamics.com**.
+    4.  In the **Server URL** field, enter the start of the URL (protocol + hostname). For example, enter `https://topo00dfa4stbobaos.cloudax.test.dynamics.com`.
     5.  Click **OK**.
     6.  Click **Yes** to apply the settings change and reload the app.
 
