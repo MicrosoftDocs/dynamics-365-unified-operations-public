@@ -44,7 +44,7 @@ Before posting **Invoice for payment** in the Account payble and Account receive
 
 Use the **Posting invoice for payment** page to post an invoice for payment.
 
-1.  Click **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders**.
+1.  Click **Accounts receivable** \> **Common** \> **Orders** \> **All sales orders**.
 
 2.  Create a new sales order, and enter the required details.
 
@@ -71,7 +71,7 @@ Use the **Posting invoice for payment** page to post an invoice for payment.
     > [!NOTE]
     > Use the **Officials** page to set up the default officials to be listed on the invoice for payment(**Officials setup**(https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/russia-81/articles/financials/localizations/rus-officials.md)) .
 
-11.  Click **OK** to post the invoice for payment. You can view the details of the posted invoice in the **Journal of invoices for payment** form.
+11.  Click **OK** to post the invoice for payment. You can view the details of the posted invoice in the **Journal of invoices for payment** page list.
 
 ## Post and print an invoice for payment from a free text invoice 
 
@@ -109,7 +109,7 @@ With the Invoice for payment for free text invoices function, you can use the **
     
 
     > [!NOTE]
-    > Click **Accounts receivable** > **Common** > **Free text invoices** > **All free text invoices**. On the action pane click **Related information > Invoice for payment**to view the posted invoice.for payment Or click **Accounts receivable > Inquiries > Journals > Invoice for payment**.
+    > Click **Accounts receivable** > **Common** > **Invoices** > **All free text invoices**. On the action pane click **Related information > Invoice for payment** to view the posted invoice.for payment Or click **Accounts receivable > Inquiries and reports > Invoices > Invoice for payment**.
     > You can also use the **Journal of invoice for payment** page list to print the invoice for payment.
 
 ## Post and print an invoice for payment from a purchase order 
