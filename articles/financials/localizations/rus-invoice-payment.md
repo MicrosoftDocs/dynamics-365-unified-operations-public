@@ -60,30 +60,34 @@ Use the **Posting invoice for payment** form to post a purchase invoice for paym
 9.  Click **OK** to post the invoice for payment. You can view the details of the posted invoice in the **Journal of invoices for payment** list page (on the **Purchase** action pane click **Journals** \> **Invoice for payment**).
 
 ## Post a sales invoice for payment 
+Before posting **Invoice for payment** it is necessary to setup the number sequnces:
+1.  Click **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 
-Use the **Posting invoice for payment** form to post a sales invoice for payment.
+2.  Click the **Number sequences** tab.
+
+3.  In the **Number sequence code** field, select the number sequence code for the **invoice for payment** (**Reference** field).
+
+Use the **Posting invoice for payment** page to post a sales invoice for payment.
 
 1.  Click **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders**.
 
 2.  Create a new sales order, and enter the required details.
 
-3.  Click the **Sell** tab, and then click **Invoice for payment**.
+3.  Click the **Sell** tab on the action pane, and then click **Invoice for payment**.
 
 4.  In the **Invoice for payment date** field, select the date of the invoice for payment.
     
     > [!NOTE]
     > By default, the current date is displayed.
 
-5.  In the **Invoice for payment** field, enter the invoice number.
-
 6.  Click the **Lines** tab, and then select the line that contains the item details, based on the value that is selected in the **Quantity** field.
 
-7.  Select the **Posting** check box to print each invoice as it is updated.
+7.  Set the **Posting** option to **Yes** to post the invoice for payment.
     
     > [!NOTE]
     > You can post and print an invoice for payment only for active bank accounts.
 
-8.  Select the **Print invoice for payment** check box to print the invoice for payment after you post it.
+8.  Set the **Print invoice for payment** option to **Yes** to print the invoice for payment after posting.
 
 9.  Click **OK** to post the invoice for payment. You can view the details of the posted invoice in the **Journal of invoices for payment** form.
 
@@ -91,47 +95,40 @@ Use the **Posting invoice for payment** form to post a sales invoice for payment
 
 With the Invoice for payment for free text invoices function, you can use the **Posting invoice for payment** page to post and print a free text invoice for payment. After posting, the invoices are displayed on the **Journal of invoices for payment** page. You can post as many invoices for payment as necessary.
 
-1.  Click **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 
-2.  Click the **Number sequences** tab.
+1.  Click **Accounts receivable** \> **Common** \> **Free text invoices** \> **All free text invoices**.
 
-3.  In the **Number sequence code** field, select the number sequence code for the invoice for payment reference type in the **Reference** field.
-
-4.  Press CTRL+S or close the form.
-
-5.  Click **Accounts receivable** \> **Common** \> **Free text invoices** \> **All free text invoices**.
-
-6.  Press CTRL+N to create a free text invoice, and enter the required details.
+2.  Create a new free text invoice, and enter the required details.
     
     > [!NOTE]
     > For more information, see [Create a free text invoice](../accounts-receivable/create-free-text-invoice-new.md).
 
-7.  Click **Post** \> **Invoice for payment** to open the **Posting invoice for payment** form.
+3.  Click **Post** \> **Invoice for payment** to open the **Posting invoice for payment** page.
     
     > [!NOTE]
     > If the free text invoice, or the facture for the free text invoice, has already been posted, the **Invoice for payment** option is not available.
     
-8.  In the **Print** field, select **Current** to print each invoice as it is updated, or select **After** to print after all of the invoices have been updated.
+4.  In the **Print** field, select **Current** to print each invoice as it is updated, or select **After** to print after all of the invoices have been updated.
 
-9.  Select the **Print** check box to print the invoice for payment after posting.
+5.  Select the **Print** check box to print the invoice for payment after posting.
 
-10. Select the **Print in national currency** check box to print the invoice for payment in national currency.
+6. Select the **Print in national currency** check box to print the invoice for payment in national currency.
 
-11. Select the **Use print management destination** check box to print the invoice for payment using print management destinations. Clear the check box to use the default printer settings.
+7. Select the **Use print management destination** check box to print the invoice for payment using print management destinations. Clear the check box to use the default printer settings.
  
-12. Click the **Officials** tab.
+8. Click the **Officials** tab.
 
-13. In the **Employee name** field, select the name of the responsible official from the list of company employees with the corresponding position title.
+10. In the **Employee name** field, select the name of the responsible official from the list of company employees with the corresponding position title.
 
-14. In the **Title** field, select the job title of the employee for the corresponding employee.
+11. In the **Title** field, select the job title of the employee for the corresponding employee.
     
 
     > [!NOTE]
-    > Use the **Officials** page to set up the default officials to be listed on the invoice for payment.
+    > Use the **Officials** page to set up the default officials to be listed on the invoice for payment(**Officials setup**(https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/russia-81/articles/financials/localizations/rus-officials.md)) .
 
-15. Click the **Other** tab. In the **Comments** field, enter a comment for the invoice for payment.
+12. Click the **Other** tab. In the **Comments** field, enter a comment for the invoice for payment.
 
-16. Click **OK** to post and print the invoice for payment.
+13. Click **OK** to post and print the invoice for payment.
     
 
     > [!NOTE]
