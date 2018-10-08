@@ -27,8 +27,10 @@ ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ---
 
-# One version
+# One version service updates
 [!include[banner](../includes/banner.md)]
+
+In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the service updates, process, tools and how you can prepare for it. We will continue to add additional information to this topic as needed.
 
 ## Service updates
 
