@@ -38,7 +38,7 @@ Attract provides capabilities to manage the process of hiring new talent. Candid
 Attract provides the following features.
 
 ## Attract dashboard
-This is where hiring team members can see the details for the jobs they are a participating in. It's also where a hiring manager or recruiter can add a new job to Attract, either by creating one individually or importing a number of them at once from an Excel spreadsheet.
+This is where hiring team members can see the details for the jobs they are a participating in. It's also where a hiring manager or recruiter can add a new job to Attract, either by creating one individually or importing a number of them at once from an Excel spreadsheet. 
 
 ## Jobs
 On the **Job** page, details such as job description and job location can be viewed and edited. The **Job** page is where the hiring team is put together and where you can add or change the recruiters and interviewers on the team. New candidates can also be added on the **Job** page.
