@@ -57,7 +57,7 @@ Use the **Posting invoice for payment** form to post a purchase invoice for paym
 
 8.  Set the **Print invoice for payment** option to **Yes** to print the invoice for payment after posting.
 
-9.  Click **OK** to post the invoice for payment. You can view the details of the posted invoice in the **Journal of invoices for payment** list page ().
+9.  Click **OK** to post the invoice for payment. You can view the details of the posted invoice in the **Journal of invoices for payment** list page (on the **Purchase** action pane click **Journals** \> **Invoice for payment**).
 
 ## Post a sales invoice for payment 
 
