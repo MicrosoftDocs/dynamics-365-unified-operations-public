@@ -32,6 +32,7 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 Invoice for payment is an optional document containing payment details of the recipient (seller), for which the payer (buyer) transfers money for the purposes (works, services) listed in the the invoice for payment. A document that serves to pay for the purchased goods by the buyer or to transfer a prepayment (advance). It has never been a primary document, since it does not reflect the fact of economic life.
+
 Before posting **Invoice for payment** in the Account payble and Account receiveble modules it is necessary to setup the number sequnces:
 1.  Click **Accounts receivable** \> **Setup** \> **Accounts receivable parameters** or **Accounts payable** \> **Setup** \> **Accounts payble parameters**
 
