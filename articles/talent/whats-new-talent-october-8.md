@@ -45,6 +45,6 @@ When awarding leave to employees, the award tier basis determines how much time 
 ## Other changes
 Miscellanous fixes have been included in this release.
 
-## Known Issue
+## Known issue
 
 **Issue:** When adding a new attachment to a worker, the **New** and **Edit** buttons are grayed out. **Workaround:** Before opening the attachment page, make sure that the FactBoxes on the **Worker** page are closed. If the FactBoxes are closed when the **Worker** page is loaded, the attachments buttons will be enabled. (This issue will be fixed in the next platform update.)
