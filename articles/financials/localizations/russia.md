@@ -52,7 +52,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 
 - [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-- [Microsoft Dynamics Localization Portal: Russia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Russia.html)
+- [Microsoft Dynamics Localization Portal: Russia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/RussianFederation.html)
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
 - [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
