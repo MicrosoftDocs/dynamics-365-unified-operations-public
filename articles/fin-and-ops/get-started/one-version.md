@@ -5,7 +5,7 @@ title: One version
 description: 
 author: meeramahabala
 manager: AnnBe
-ms.date: 10/05/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
