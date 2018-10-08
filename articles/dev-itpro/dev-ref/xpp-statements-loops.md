@@ -256,7 +256,7 @@ This section describes some **Global** class methods in more detail. These class
 
 The following code shows how the **error** method is declared.
 
-    server client static Exception error
+    static Exception error
         (SysInfoLogStr txt,
         URL helpURL = '',
         SysInfoAction _sysInfoAction = null)
@@ -647,7 +647,7 @@ The **continue** statement causes execution to move directly to the next iterati
     // and i is incremented before the if statement is tried again.
     int i;
     int Iarray[100];
-    for (i=1; i<100; i++)
+    for (i=1; i<=100; i++)
     {
         if (Iarray[i] <= 0)
         continue;
