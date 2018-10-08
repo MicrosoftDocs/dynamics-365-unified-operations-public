@@ -164,7 +164,7 @@ This section will have answers to frequently asked questions that are related to
 -   **How do we allow for exceptions to the FastTab rule for legacy situations such as the Interest form?**
     -   Whenever possible, refactor the form to fit the SL&D pattern (as the **Interest** form has done). Otherwise, use custom containers.
 -   **How do we prevent hyperlinks on fields in the UI?**
-    -   For some fields, you can **set IgnoreEDTRelation**=**Yes** to prevent hyperlinks in the UI.  For other fields, we plan to eventually have an **EnableFormRef** property that can be used to disabled hyperlinks.
+    -   For some fields, you can **set IgnoreEDTRelation**=**Yes** to prevent hyperlinks in the UI.  Regardless (as of Platform Update 17), you can set **EnableFormRef**=**No** on an input control to disabled a hyperlink.
 
 ### AX 2012 content
 
