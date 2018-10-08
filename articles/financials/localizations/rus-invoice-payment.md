@@ -69,7 +69,7 @@ Use the **Posting invoice for payment** page to post an invoice for payment.
 10. Click the **Officials** tab to validate and update defauld values, if needed .
 
     > [!NOTE]
-    > Use the **Officials** page to set up the default officials to be listed on the invoice for payment([**Set up officials**](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/russia-81/articles/financials/localizations/rus-officials.md)) .
+    > Use the **Officials** page to set up the default officials to be listed on the invoice for payment ([**Set up officials**](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/russia-81/articles/financials/localizations/rus-officials.md)) .
 
 11.  Click **OK** to post the invoice for payment. You can view the details of the posted invoice in the **Journal of invoices for payment** page list.
 
@@ -100,7 +100,7 @@ Use the **Posting invoice for payment** page to post an invoice for payment.
 8. Click the **Officials** tab to validate and update defauld values, if needed .
 
     > [!NOTE]
-    > Use the **Officials** page to set up the default officials to be listed on the invoice for payment([**Set up officials**](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/russia-81/articles/financials/localizations/rus-officials.md)) .
+    > Use the **Officials** page to set up the default officials to be listed on the invoice for payment ([**Set up officials**](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/russia-81/articles/financials/localizations/rus-officials.md)) .
 
 9. Click the **Other** tab. In the **Comments** field, enter a comment for the invoice for payment.
 
