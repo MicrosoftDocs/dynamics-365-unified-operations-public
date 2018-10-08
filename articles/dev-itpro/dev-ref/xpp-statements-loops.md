@@ -580,7 +580,7 @@ The **for** loop repeatedly executes one or more statements for as long as the c
 
     // An example where all items are printed in 
     // a fixed array called ra with 100 reals. 
-    int ra[10];
+    int ra[100];
     int i; // Control variable.
     for (i=1; i<=100; i+=1)
     {
