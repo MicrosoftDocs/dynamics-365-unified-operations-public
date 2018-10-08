@@ -34,71 +34,49 @@ ms.dyn365.ops.version: 8.1
 
 ## Register a fixed asset acquisition using an invoice journal 
 
-You can record the purchase of a fixed asset with the vendor invoice journal if the fixed asset is not a warehouse item, and if it does not incur receipt and issue transactions that must be tracked. Before you purchase a fixed asset, the asset must be registered in the <STRONG>Fixed assets</STRONG> form.
+You can register the purchase of a fixed asset using the vendor invoice journal, if the fixed asset is not a warehouse item, and if it is not not requiered  to incur receipt and issue transactions that must be tracked. Before you register purchase a fixed asset, the asset must be registered on the <STRONG>Fixed assets</STRONG> page ().
 
 1.  Click **Fixed assets (Russia)** \> **Common** \> **Fixed assets**. On the **Action pane**, click **Fixed asset** to create a fixed asset, or select a fixed asset record.
 
-2.  Press CTRL+N to create a fixed asset with a **Scheduled** status.
+2.  Press the **New** to create a fixed asset with a **Scheduled** status.
     
-3.  Click **Accounts payable** \> **Journals** \> **Invoices** \> **Invoice journal**.
+3.  Click **Accounts payable** \> **Invoices** \> **Invoice journal**.
 
-4.  Create a new journal.
+4.  Create a new journal and in the **Name** field, select the journal name.
 
-5.  In the **Name** field, select the journal name.
+5.  Click **Lines** to open the **Journal voucher** form.
 
-6.  Click **Lines** to open the **Journal voucher** form.
-
-7.  Create a new line.
+6.  Create a new line.
     
     > [!NOTE]
     > <P>The posting date and voucher number are displayed in the <STRONG>Date</STRONG> and <STRONG>Voucher</STRONG> fields.</P>
 
-8.  In the **Account type** field, select the account type. 
+7.  In the **Account type** field, select the  **Vendor** account type. 
   
-9.  In the **Account** field, select a vendor code.
+8.  In the **Account** field, select a vendor code.
 
-10. In the **Invoice** field, enter the invoice number for the fixed asset purchase.
+9. In the **Invoice** field, enter the invoice number for the fixed asset purchase.
 
-11. In the **Description** field, enter any notes about the invoice.
+10. In the **Description** field, enter any notes about the invoice.
 
-12. In the **Credit** field, enter the invoice amount.
+11. In the **Credit** field, enter the invoice amount.
 
-13. In the **Offset account type** field, select the account type for the current account.
+12. In the **Offset account type** field, select the account type for the current account.
 
-14. In the **Offset account** field, select the ledger account for the fixed asset before acquisition.
+13. In the **Offset account** field, select the ledger account for the fixed asset before acquisition.
 
-15. Click the **General** tab.
+14. On the **General** tab in the **Currency** field, select the current invoice currency.
 
-16. In the **Currency** field, select the current invoice currency.
+15. On the **Fixed asset** tab in the **FA inventory number** field, select the fixed asset number.
 
-17. In the **FA number** field, select the fixed asset number.
-
-18. Click **Post** \> **Post** to generate the vendor and ledger transactions.
+16. Click **Post** \> **Post** to generate the vendor and ledger transactions.
     
     > [!NOTE]
-    > The invoice details are displayed on the **Fixed assets** page. In the <STRONG>Status</STRONG> field, the status is displayed as **Bought**. If the fixed asset number is specified in the invoice journal line, then the invoice journal must be posted or deleted in order to create an asset or inventory transaction.
+    > After posting the invoice, the status of the fixed asset is set to **Bought** (**Fixed assets** page (**Fixed assets (Russia)** \> **Common** \> **Fixed assets**). If the fixed asset number is specified in the invoice journal line and the invoice journal is not posted, you can't use this fixed exxet in another invoice journal.
     
-## Reverse a fixed asset acquisition transaction    
-    
-When you create a reverse transaction, the information and amount of the original transaction are saved. By default, the reversal date and the original transaction date are the same. However, when reversing transactions, you can specify a reversal date that is different from the original transaction date. You can also reverse an amortization transaction using this process. To change the fixed asset status to **Operation**, you must cancel the write-off for all value models.
-
-1.  Click **Fixed assets** \> **Common** \> **Fixed assets** \> **Fixed assets**. click **Value Models**\> **Transactions** to open the **FA Transactions** form.
-
-2.  Select the fixed asset acquisition transaction, and then click **Reverse transaction** to open the **Reverse transaction** form.
-
-3.  In the **Reverse date**, select the transaction reverse date.
-
-4.  Click **OK**. A transaction is created in the **FA transactions** form that reverses the original transaction.
-
-5.  Click **Voucher** to view the transaction in the ledger in the **Operation codes** form.
-    
-
-    > [!NOTE]
-    > To change the status to **Scheduled**, run the reverse acquisition transaction for all value models. If the asset that was reversed was built from warehoused components, transactions are created to record the return of the components to the warehouse. When you reverse an acquisition transaction, the cost price of the returned components may differ from the current warehouse cost price. However, after warehouse closure, the components will reflect the current pricing.
-
 # (RUS) Register a fixed asset acquisition using a purchase order 
 
-You can record the purchase of a fixed asset by creating a purchase order.
+You can register the purchase of a fixed asset via creating a purchase order.
 
 1.  Click **Product information management** \> **Common** \> **Released products**.
 
@@ -135,6 +113,26 @@ You can record the purchase of a fixed asset by creating a purchase order.
 
 12. Click **Posting** \> **Invoice** to post the purchase order invoice and generate vendor and ledger transactions.
     > [!NOTE]
-    > <P>The invoice details are displayed in the <STRONG>Fixed assets</STRONG> form. The status is displayed as <STRONG>Bought</STRONG> in the <STRONG>Status</STRONG> field. If the fixed asset number is specified in the purchase order line, the purchase order must be posted or deleted in order create an asset or inventory transaction.</P>
+    > <P>The invoice details are displayed in the <STRONG>Fixed assets</STRONG> form. The status is displayed as <STRONG>Bought</STRONG> in the <STRONG>Status</STRONG> field. If the fixed asset number is specified in the purchase order line, the purchase order must be posted or deleted in order create an asset or inventory transaction.</P>    
+    
+## Reverse a fixed asset acquisition transaction    
+    
+When you create a reverse transaction, the information and amount of the original transaction are saved. By default, the reversal date and the original transaction date are the same. However, when reversing transactions, you can specify a reversal date that is different from the original transaction date. You can also reverse an amortization transaction using this process. To change the fixed asset status to **Operation**, you must cancel the write-off for all value models.
+
+1.  Click **Fixed assets** \> **Common** \> **Fixed assets** \> **Fixed assets**. click **Value Models**\> **Transactions** to open the **FA Transactions** form.
+
+2.  Select the fixed asset acquisition transaction, and then click **Reverse transaction** to open the **Reverse transaction** form.
+
+3.  In the **Reverse date**, select the transaction reverse date.
+
+4.  Click **OK**. A transaction is created in the **FA transactions** form that reverses the original transaction.
+
+5.  Click **Voucher** to view the transaction in the ledger in the **Operation codes** form.
+    
+
+    > [!NOTE]
+    > To change the status to **Scheduled**, run the reverse acquisition transaction for all value models. If the asset that was reversed was built from warehoused components, transactions are created to record the return of the components to the warehouse. When you reverse an acquisition transaction, the cost price of the returned components may differ from the current warehouse cost price. However, after warehouse closure, the components will reflect the current pricing.
+
+
 
       
