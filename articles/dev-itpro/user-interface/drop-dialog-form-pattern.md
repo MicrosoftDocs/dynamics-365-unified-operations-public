@@ -5,7 +5,7 @@ title: Drop Dialog form pattern
 description: This topic provides information about the Drop Dialog form pattern. This pattern is used to initiate actions when the number of fields is seven or fewer. 
 author: jasongre
 manager: AnnBe
-ms.date: 11/09/2017
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
