@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 8.1
 # Invoices for the purpose of payment (Russia)
 [!include [banner](../includes/banner.md)]
 
+Invoice for payment is an optional document containing payment details of the recipient (seller), for which the payer (buyer) transfers money for the purposes (works, services) listed in the the invoice for payment. A document that serves to pay for the purchased goods by the buyer or to transfer a prepayment (advance). It has never been a primary document, since it does not reflect the fact of economic life.
+
 ## Post a purchase invoice for payment 
 
 Use the **Posting invoice for payment** form to post a purchase invoice for payment.
@@ -39,25 +41,23 @@ Use the **Posting invoice for payment** form to post a purchase invoice for paym
 
 2.  Create a new purchase order, and enter the required details.
 
-3.  Click the **Purchase** tab, and then click **Invoice for payment**.
+3.  On the action pane click the **Purchase** tab, and then click **Invoice for payment**.
 
-4.  In the **Invoice for payment date** field, select the date of the invoice for payment.
+4.   In the **Invoice for payment date** field in the **Posting invoice for payment** page, enter the date of the invoice for payment and in the **Invoice for payment** field enter the number of the invoice for payment, received from the vendor.
     
     > [!NOTE]
     > By default, the current date is displayed.
 
-5.  In the **Invoice for payment** field, enter the invoice number.
+5.  Click the **Lines** tab, and then select the line that contains the item details, based on the value that is selected in the **Quantity** field.
 
-6.  Click the **Lines** tab, and then select the line that contains the item details, based on the value that is selected in the **Quantity** field.
-
-7.  Select the **Posting** check box to print each invoice as it is updated.
+6.  Set the **Posting** option to **Yes** to post the invoice for payment.
     
     > [!NOTE]
     > You can post and print an invoice for payment only for active bank accounts.
 
-8.  Select the **Print invoice for payment** check box to print the invoice for payment after you post it.
+8.  Set the **Print invoice for payment** option to **Yes** to print the invoice for payment after posting.
 
-9.  Click **OK** to post the invoice for payment. You can view the details of the posted invoice in the **Journal of invoices for payment** form.
+9.  Click **OK** to post the invoice for payment. You can view the details of the posted invoice in the **Journal of invoices for payment** list page ().
 
 ## Post a sales invoice for payment 
 
