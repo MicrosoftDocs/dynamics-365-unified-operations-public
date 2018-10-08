@@ -38,7 +38,7 @@ Use the **Separate divisions** page to create a company division. If your compan
 
 1.  Click **Organization administration** \> **Setup** \> **Separate divisions**.
 
-2.  Create a company division.
+2.  Create a new company division.
 
 3.  In the **Separate division ID** field, enter the identification code for the division.
 
