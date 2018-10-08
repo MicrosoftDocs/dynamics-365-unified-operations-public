@@ -69,14 +69,13 @@ Use the **Posting invoice for payment** page to post an invoice for payment.
 10. Click the **Officials** tab to validate and update defauld values, if needed .
 
     > [!NOTE]
-    > Use the **Officials** page to set up the default officials to be listed on the invoice for payment(**Officials setup**(https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/russia-81/articles/financials/localizations/rus-officials.md)) .
+    > Use the **Officials** page to set up the default officials to be listed on the invoice for payment([**Officials setup**](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/russia-81/articles/financials/localizations/rus-officials.md)) .
 
 11.  Click **OK** to post the invoice for payment. You can view the details of the posted invoice in the **Journal of invoices for payment** page list.
 
 ## Post and print an invoice for payment from a free text invoice 
 
-With the Invoice for payment for free text invoices function, you can use the **Posting invoice for payment** page to post and print a free text invoice for payment. After posting, the invoices are displayed on the **Journal of invoices for payment** page. You can post as many invoices for payment as necessary.
-
+Use the **Posting invoice for payment** page to post an invoice for payment.
 
 1.  Click **Accounts receivable** \> **Common** \> **Invoices** \> **All free text invoices**.
 
@@ -88,9 +87,9 @@ With the Invoice for payment for free text invoices function, you can use the **
 3.  On the action pane click **Post** \> **Invoice for payment** to open the **Posting invoice for payment** page.
     
     > [!NOTE]
-    > If the free text invoice, or the facture for the free text invoice, has already been posted, the **Invoice for payment** option is not available.
+    > If the free text invoice has already been posted, the **Invoice for payment** option is not available.
     
-4.  In the **Print** field, select **Current** to print each invoice as it is updated, or select **After** to print after all of the invoices have been updated.
+4.  In the **Print** field, select **Current** to print each invoice, or select **After** to print after all of the invoices have been posted.
 
 5. Set the **Print** option to **Yes** to print the invoice for payment after posting.
 
@@ -101,7 +100,7 @@ With the Invoice for payment for free text invoices function, you can use the **
 8. Click the **Officials** tab to validate and update defauld values, if needed .
 
     > [!NOTE]
-    > Use the **Officials** page to set up the default officials to be listed on the invoice for payment(**Officials setup**(https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/russia-81/articles/financials/localizations/rus-officials.md)) .
+    > Use the **Officials** page to set up the default officials to be listed on the invoice for payment([**Officials setup**](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/russia-81/articles/financials/localizations/rus-officials.md)) .
 
 9. Click the **Other** tab. In the **Comments** field, enter a comment for the invoice for payment.
 
@@ -109,12 +108,12 @@ With the Invoice for payment for free text invoices function, you can use the **
     
 
     > [!NOTE]
-    > Click **Accounts receivable** > **Common** > **Invoices** > **All free text invoices**. On the action pane click **Related information > Invoice for payment** to view the posted invoice.for payment Or click **Accounts receivable > Inquiries and reports > Invoices > Invoice for payment**.
+    > Click **Accounts receivable** > **Common** > **Invoices** > **All free text invoices**. On the action pane click **Related information > Invoice for payment** to view the posted invoices.for payment Or click **Accounts receivable > Inquiries and reports > Invoices > Invoice for payment**.
     > You can also use the **Journal of invoice for payment** page list to print the invoice for payment.
 
 ## Post and print an invoice for payment from a purchase order 
 
-Use the **Posting invoice for payment** form to post a purchase invoice for payment.
+Use the **Posting invoice for payment** page to post a purchase invoice for payment.
 
 1.  Click **Accounts payable** \> **Common** \> **Purchase orders** \> **All purchase orders**.
 
