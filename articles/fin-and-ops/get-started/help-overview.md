@@ -121,16 +121,21 @@ We currently provide task guides for Finance and Operations only. The section [A
 ![Task guide reading view](./media/task-guide-ops.png)
 
 To begin the guided, interactive experience, click **Start task guide** at the bottom of the Help pane. A black pointer opens and indicates the action that you must perform. Follow the directions that appear in the UI, and enter data as directed. 
+
 ![Task guide step instruction](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT] 
-> The data that you enter when you play a Task guide is real. If you're in a production environment, the data will be entered in the company that you’re currently using.
+> The data that you enter when you play a task guide is real. If you're in a production environment, the data will be entered in the company that you’re currently using.
 
 ### It all begins with Task Recorder
 
 Task guides are created by using Task Recorder. When you use Task Recorder, all the actions that you perform in the Finance and Operations UI (such as clicking menus, changing settings, and entering data) are recorded. The steps that you record are collectively called a task recording. As we explained in the previous section, task recordings can be displayed in the Help pane and played as task guides. However, there are other ways that you can use task recordings:
 
--   **Save task recordings to BPM** – You can save a task recording to a line of a hierarchy in a BPM library in LCS. When you save a task recording to BPM, a flowchart diagram is generated and displayed, together with the steps of the recording. **Note:** To display a task recording in the Finance and Operations Help pane and play it as a task guide, you'll have to save the recording to a BPM library.
+-   **Save task recordings to BPM** – You can save a task recording to a line of a hierarchy in a BPM library in LCS. When you save a task recording to BPM, a flowchart diagram is generated and displayed, together with the steps of the recording. 
+
+    > [!Note]
+    > To display a task recording in the Finance and Operations Help pane and play it as a task guide, you'll have to save the recording to a BPM library.
+    
 -   **Save task recordings as Word documents** – By saving a task recording as a Microsoft Word document, you can easily produce printable training guides for your organization.
 
 For more information about Task Recorder, see [Task recorder in Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).
@@ -164,7 +169,9 @@ Before you can access Task guides from the Help pane, a System administrator has
 On the **System parameters** page, follow these steps:
 
 1.  **Important:** The first time that you open the Help tab, you must connect to Lifecycle Services. Be sure to click the link in the middle of the form, wait for the connection, close the dialog box, and then click **OK** to get to the parameters form.
+
 ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
+
 2.  Select the Lifecycle Services project to connect to.
 3.  Select BPM libraries (within the selected project) to retrieve task recordings from.
     - For Finance and Operations, for Microsoft content, select the February 2017 QPC Unified Library for Microsoft Dynamics 365 for Finance and Operations. 
