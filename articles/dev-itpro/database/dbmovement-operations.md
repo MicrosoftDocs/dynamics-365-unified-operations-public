@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 8.1
 
 This topic describes the operations available as part of the Database Movement features in Lifecycle Services (LCS).  
 
-## Sandbox Refresh
+## Sandbox refresh
 When refreshing a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, there are certain elements of the database that are not copied over to the target environment.  These elements include:
 * Email addresses in the LogisticsElectronicAddress table
 * Batch Job History in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables
