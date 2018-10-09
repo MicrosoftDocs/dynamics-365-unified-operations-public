@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 8.1.1
 [!include [banner](../includes/banner.md)]
 [include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1.1 (October 2018). This version was released in October 2018 and has a build number of 7.0.5073.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1.1 (October 2018). This version was released in October 2018 and has a build number of 8.1.170.
 
 ### Announcing the Dynamics 365 October '18 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
