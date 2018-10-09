@@ -34,6 +34,8 @@
     - name: What's new or changed
       href: get-started/whats-new-changed.md
       items:
+      - name: One version service updates FAQ
+        href: get-started/one-version.md
       - name: Software lifecycle policy and cloud releases
         href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
       - name: Software lifecycle policy and on-premises releases
