@@ -116,7 +116,7 @@ For more information, please refer to our contributor's guide: https://github.co
 ## Task guides
 A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are now available. 
 
-We currently provide task guides for Finance and Operations only. The section Accessing Task guides from the Help pane describes how to find the correct task guides for your product. 
+We currently provide task guides for Finance and Operations only. The section [Accessing Task guides from the Help pane](help-overview.md#accessing-task-guides-from-the-help-pane) describes how to find the correct task guides for your product. 
 
 ![Task guide reading view](./media/task-guide-ops.png)
 
