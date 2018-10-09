@@ -29,6 +29,7 @@ ms.dyn365.ops.version: 8.1.1
 # Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
 
 [!include [banner](../includes/banner.md)]
+
 [!include [banner](../includes/preview-banner.md)]
 
 
