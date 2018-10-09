@@ -35,36 +35,36 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/private-preview-banner.md)]
 
-This topic describes the operations available as part of the Database Movement features in Lifecycle Services (LCS).  
+This topic describes the operations that are available as part of the Database Movement features in Lifecycle Services (LCS).  
 
 ## Sandbox refresh
 When refreshing a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, there are certain elements of the database that are not copied over to the target environment.  These elements include:
-* Email addresses in the LogisticsElectronicAddress table
-* Batch Job History in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables
-* SMTP Password in the SysEmailSMTPPassword table
-* SMTP Relay Server in the SysEmailParameters table
-* Print Management Settings in the PrintMgmtSettings and PrintMgmtDocInstance tables
-* Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, BatchServerGroup tables
-* Document attachments in the DocuValue table
-* All users except for the administrator are disabled
-* All batch jobs are set to Withhold status
+* Email addresses in the LogisticsElectronicAddress table.
+* Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
+* SMTP password in the SysEmailSMTPPassword table.
+* SMTP Relay server in the SysEmailParameters table.
+* Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
+* Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
+* Document attachments in the DocuValue table.
+* All users except for the administrator are disabled.
+* All batch jobs are set to Withhold status.
 
 ## Import
 When importing a database backup in to a sandbox environment, there are certain activities which must be performed.  These include:
-* Ensure Email capabilities are properly reconfigured or disabled, per your requirements
-* AOS servers are added back to required batch groups
-* System Help and task guides are reconnected
-* Batch jobs are set to Waiting status
-* Users are re-enabled
+* Ensure email capabilities are properly reconfigured or disabled, per your requirements.
+* AOS servers are added back to required batch groups.
+* System Help and Task guides are reconnected.
+* Batch jobs are set to Waiting status.
+* Users are re-enabled.
 
 ## Export
 When exporting a database backup from an environment, there are certain elements of the database that are not exported in the backup file.  These elements include:
-* Email addresses in the LogisticsElectronicAddress table
-* Batch Job History in the BatchJobHistory, BatchHistory, and BatchConstraintHistory Tables
-* SMTP Password in the SysEmailSMTPPassword table
-* SMTP Relay Server in the SysEmailParameters table
-* Print Management Settings in the PrintMgmtSettings and PrintMgmtDocInstance tables
-* Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, BatchServerGroup tables
-* Document attachments in the DocuValue table
-* All users except for the administrator are disabled
-* All batch jobs are set to Withhold status
+* Email addresses in the LogisticsElectronicAddress table.
+* Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
+* SMTP password in the SysEmailSMTPPassword table.
+* SMTP Relay server in the SysEmailParameters table.
+* Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
+* Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
+* Document attachments in the DocuValue table.
+* All users except for the administrator are disabled.
+* All batch jobs are set to Withhold status.
