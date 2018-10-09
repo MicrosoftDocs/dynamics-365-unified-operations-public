@@ -2,8 +2,8 @@
 # required metadata
 
 title: Advance holder reports
-description: 
-author: 
+description: This topic describes the Advance holder reports that are available for Russia. 
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/05/2018
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: 
+ms.author: ShylaThompson
 ms.dyn365.ops.version: 8.1
 ms.search.validFrom: 2018-10-31
 
@@ -34,8 +34,15 @@ ms.search.validFrom: 2018-10-31
 
 [!include [banner](../includes/banner.md)]
 
-The following reports are available for advance holders in Russia in **Accounts payable** \> **Inquiries and reports** \> **Advance holders inquiries and reports**.
+The following reports are available for advance holders in Russia.
 
+- Advance holder balance report 
+- Advance holder transactions report
+- Transaction settlements report
+- Advance report 
+- Advance holder turnover register
+
+These reports can be accessed by going to **Accounts payable** \> **Inquiries and reports** \> **Advance holders inquiries and reports**.
 
 ## Advance holder balance report 
 
@@ -50,22 +57,22 @@ When you generate this report, the following parameters are displayed. You can u
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>FastTab\Field</p></th>
+<th><p>FastTab | Field</p></th>
 <th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Parameters\To date</strong></p></td>
+<td><p><strong>Parameters | To date</strong></p></td>
 <td><p>Select the date on which to generate the advance holder amount balance report.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Parameters\Currency distribution</strong></p></td>
+<td><p><strong>Parameters | Currency distribution</strong></p></td>
 <td><p>Select this check box to display the advance holder amount balance grouped by currency code.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Records to incude\Worker ID</strong></p></td>
-<td><p>The identification number of the employee for whom the advance holder amount balance is displayed. If no employee selected then the report will include all employees.</p></td>
+<td><p><strong>Records to include | Worker ID</strong></p></td>
+<td><p>The identification number of the employee for whom the advance holder amount balance is displayed. If no employee is selected, then the report will include all employees.</p></td>
 </tr>
 </tbody>
 </table>
@@ -83,21 +90,21 @@ When you generate this report, the following parameters are displayed. You can u
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>FastTab\Field</p></th>
+<th><p>FastTab | Field</p></th>
 <th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Parameters\Main accounts only</strong></p></td>
+<td><p><strong>Parameters | Main accounts only</strong></p></td>
 <td><p>Select this check box to display only main accounts in the report.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Records to include\Employee</strong></p></td>
+<td><p><strong>Records to include | Employee</strong></p></td>
 <td><p>The identification number of the employee for whom the transaction report is generated.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Records to include\Advance holder</strong></p></td>
+<td><p><strong>Records to include | Advance holder</strong></p></td>
 <td><p>The identification number of the advance holder for whom the transactions are posted.</p></td>
 </tr>
 </tbody>
@@ -138,7 +145,7 @@ When you generate this report, the following parameters are displayed. You can u
 
 ## Advance report 
 
-Use this procedure to print an advance report in a form that is legally required in Russia. You can print an advance report after an advance invoice that is issued to an advance holder is settled. You need to select a particular advance report number to be included to the report.
+To print an advance report in a form that is legally required in Russia you need to print the report after an advance invoice that is issued to an advance holder is settled. You need to select a particular advance report number to be included in the report.
 
 > [!NOTE]
 > The amounts on the **Advance report** page are recalculated on the date when the payment journal for the advance holder is posted.
@@ -147,7 +154,7 @@ The **Advance report** will be printed in Microsoft Excel format.
 
 ## Advance holder turnover register
  
-An additional report **Advance holder turnover register** is available in **General ledger** \> **Inquiries and reports** \> **Turnover balance statement**.
+An additional report, **Advance holder turnover register** is available in **General ledger** \> **Inquiries and reports** \> **Turnover balance statement**.
 
 When you generate this report, the following parameters are displayed. You can use these parameters to filter the data that will be displayed on the report. 
 
