@@ -47,10 +47,6 @@ Retrieves the extension that is used for the current company.
 
 The extension for the current company.
 
-### Remarks
-
-Use this method to avoid a call to the server tier. The alternative is the **company** method of the **Application** class, which does call the server tier.
-
 ### Example
 
     static void curExtExample(Args _arg)
