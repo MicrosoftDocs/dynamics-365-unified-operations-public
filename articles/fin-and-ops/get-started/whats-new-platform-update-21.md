@@ -52,21 +52,21 @@ The TransientSqlConnectionError exception is not catchable within the transactio
 
 If an application transaction takes a long time to process, you can use multiple incremental delays to catch the TransientSqlConnectionError exception. Retrying your application code in a new session is most likely to succeed after you have caught the exception.
 
-For more information, see [SQL connection error X++ exception](../../dev-itpro/dev-ref/sql-connection-x++.md).
+For more information, see [SQL connection error X++ exception](../../dev-itpro/dev-ref/sql-connection-error.md).
 
 ## Sticky default actions in grids
-Many grids in Finance and Operations have a defined *default action*. This is a single column in the grid where the value in every row always appears as a hyperlink, as opposed to other columns where only the value in the active row appears as a hyperlink. To date, in Finance and Operations, this default action always appears on the first textual column in a grid before any user personalization is applied. As an example, consider the **Account** column in the **Customer** list below.
+Many grids in Finance and Operations have a defined *default action*. This is a single column in the grid where the value in every row always appears as a hyperlink, as opposed to other columns where only the value in the active row appears as a hyperlink. This default action always appears on the first textual column in a grid before any user personalization is applied. For example, consider the **Account** column in the **Customer** list below.
 
 ![Customer list](media/customerGrid.png  "Customer list")
 
-The **sticky default action** feature, which is available starting in Platform Update 21, controls where the default action column appears in the grid after personalizations that change the order or visibility of columns are applied.   
+The **sticky default action** feature, which is available starting in Platform udate 21, controls where the default action column appears in the grid after personalizations that change the order or visibility of columns are applied.   
 
-With sticky default actions off, which corresponds to how default actions work prior to Platform Update 21, the default action hyperlink would change to whatever column is the first textual column after personalizations are applied. For example, if I move the **Account** column to be fourth column in the grid (or alternatively if I hid the **Account** column), the hyperlink representing the default action moves to the **Name** column. 
+With sticky default actions off, which corresponds to how default actions work prior to Platform update 21, the default action hyperlink would change to whatever column is the first textual column after personalizations are applied. For example, if you move the **Account** column to be fourth column in the grid (or alternatively if you hide the **Account** column), the hyperlink representing the default action moves to the **Name** column. 
 
 ![Sticky default actions off](media/stickyDAOff.png  "With sticky default actions off, the Name column becomes the default action column if the Account column is moved to not be the first column.")
 
-With sticky default actions on, the default action hyperlink will be on the same column regardless of any personalizations applied to the form. This means for this customer list, the **Account** column will continue to be the default action column regardless of whether the **Account** column is moved or is hidden.
+With sticky default actions on, the default action hyperlink will be on the same column regardless of any personalizations applied to the form. This means that for this customer list, the **Account** column will continue to be the default action column regardless of whether the **Account** column is moved or hidden.
 
 ![Sticky default actions off](media/stickyDAOn.png  "With sticky default actions on, the Account column is still the default action column despite any personalizations.")
 
-With Platform Update 21, the sticky default action feature is off, but a system administrator can decide to turn it on for an environment. To turn on this feature, navigate to the **Client performance options** page under **System administration** and find the **Enable sticky default action** switch.  
+With Platform update 21, the sticky default action feature is off, but a system administrator can turn it on for an environment. To turn on this feature, go to the **Client performance options** page under **System administration** and find the **Enable sticky default action** option.  
