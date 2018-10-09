@@ -47,3 +47,6 @@ Microsoft Dynamics 365 for Finance and Operations version 8.1.1 includes Platfor
 
 ## Ledger settlements
 Ledger settlements let you match debit and credit transactions in the general ledger, and mark them as settled. In this way, you can make sure that related transactions have been cleared. You can also reverse settlements if they were made by mistake.
+
+## Extensibility enhancements
+In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1.1](../../dev-itpro/extensibility/extensibility-changes-811.md) 
