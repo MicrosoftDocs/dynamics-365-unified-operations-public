@@ -109,8 +109,9 @@ Data task automation lets you easily repeat many types of data tasks and validat
 ### How can I log an extensibility request?
 Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-requests) topic. Please note the following timelines to log and use the available extensions.
 
+|Timeline | Description |
+|-----|-------|
 | Jan 2019 | All extensibility requests must be logged by January 1, 2019. ISVs and customers are requested to analyze the code and make these request by this time. We will not provide exceptions to stay on 7.3 post April 2020, if the request has not been filed by Jan 1, 2019. |
-|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dec 2019 | Extensions will be available on/ before December 31, 2019 for the requests logged by January 1, 2019. Customers using these extensions are required to move to current version by April 2020.                                                                            |
 
 ### What does end of service mean?
