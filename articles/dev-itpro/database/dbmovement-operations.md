@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
->[!Note]This document describes functionality that may not have been released yet.  Projected >functionality may change or may not ship (see Microsoft policy).
+[!include [banner](../includes/private-preview-banner.md)]
 
 This topic describes the operations available as part of the Database Movement features in Lifecycle Services (LCS).  
 
