@@ -68,7 +68,7 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations]
 -   **Content that supports your business processes** – The site includes business process–focused content that takes advantage of the Business Process Modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
 
 ### Searching on docs.microsoft.com
-We get a lot of questions about how to search for our content. On our site, if you start from a page about Finance and Operations, we scope your search to just be for Finance and Operations content. You can remove the scoping by clicking the X next to Operations in the search box. 
+We get a lot of questions about how to search for our content. On our site, if you start from a page about Finance and Operations, we scope your search to just be for Finance and Operations content. You can remove the scoping by clicking the X next to Unified Operations in the search box. 
 
 ![Search](./media/search-scope-2.png)
 
