@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Update environments from 8.0 to 8.1
-description: This topic explains the effort and steps required to update existing 8.0 environments to the 8.1 application release.
+title: Database Movement operations
+description: This topic describes the operations available as part of the Database Movement features in Lifecycle Services. 
 author: laneswenka
-manager: meeram
+manager: AnnBe
 ms.date: 10/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,16 +17,15 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
-ms.custom: 203764
-ms.assetid: 45efdabf-1714-4ba4-9a9d-217143a6c6e0
+# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: maertenm
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0
+ms.author: laswenka
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 
 ---
 
