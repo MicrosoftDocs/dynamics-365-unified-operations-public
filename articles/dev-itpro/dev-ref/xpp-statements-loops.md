@@ -256,7 +256,7 @@ This section describes some **Global** class methods in more detail. These class
 
 The following code shows how the **error** method is declared.
 
-    server client static Exception error
+    static Exception error
         (SysInfoLogStr txt,
         URL helpURL = '',
         SysInfoAction _sysInfoAction = null)
@@ -563,7 +563,7 @@ The following table shows the exception literals that are the values of the **Ex
 | UpdateConflict                    | An error occurred in a transaction that is using Optimistic Concurrency Control. The transaction can be retried (use a **retry** statement in the **catch** block). |
 | UpdateConflictNotRecovered        | An error occurred in a transaction that is using Optimistic Concurrency Control. The code won't be retried. This exception can't be caught within a transaction.    |
 | Warning                           | An exceptional event has occurred. Although the user might have to take action, the event isn't fatal. Don't throw a **warning** exception.                         |
-| [TransientSqlConnectionError](sql-connection-x++.md)       | An error occured when during the query execution. The transaction will be canceled. This exception can't be caught within a transaction. |
+| [TransientSqlConnectionError](sql-connection-error.md)       | An error occured when during the query execution. The transaction will be canceled. This exception can't be caught within a transaction. |
 
 ## Loop statements: for, while, and do...while
 There are three loop statements: **for**, **while**, and **do**...**while**. A loop repeats its statement until the condition that is set for the loop is **false**. Within the loop statements, you can use **break** and **continue** statements.
@@ -580,7 +580,7 @@ The **for** loop repeatedly executes one or more statements for as long as the c
 
     // An example where all items are printed in 
     // a fixed array called ra with 100 reals. 
-    int ra[10];
+    int ra[100];
     int i; // Control variable.
     for (i=1; i<=100; i+=1)
     {
@@ -647,7 +647,7 @@ The **continue** statement causes execution to move directly to the next iterati
     // and i is incremented before the if statement is tried again.
     int i;
     int Iarray[100];
-    for (i=1; i<100; i++)
+    for (i=1; i<=100; i++)
     {
         if (Iarray[i] <= 0)
         continue;
