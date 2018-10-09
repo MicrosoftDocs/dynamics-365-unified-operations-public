@@ -145,12 +145,12 @@ When you generate this report, the following parameters are displayed. You can u
 
 ## Advance report 
 
-To print an advance report in a form that is legally required in Russia you need to print the report after an advance invoice that is issued to an advance holder is settled. You need to select a particular advance report number to be included in the report.
+To print an advance report in a form that is legally required in Russia, you need to print the report after an advance invoice that is issued to an advance holder is settled. You need to select a particular advance report number to be included in the report.
 
 > [!NOTE]
 > The amounts on the **Advance report** page are recalculated on the date when the payment journal for the advance holder is posted.
     
-The **Advance report** will be printed in Microsoft Excel format.
+The **Advance report** will be print in Microsoft Excel format.
 
 ## Advance holder turnover register
  
@@ -184,11 +184,11 @@ When you generate this report, the following parameters are displayed. You can u
 </tr>
 <tr class="even">
 <td><p><strong>Currency type</strong></p></td>
-<td><p>Select the transaction's currency type from the list. These values can be used: Standard currency, Secondary currency and Stated currency.</p></td>
+<td><p>Select the transaction's currency type from the list. These values can be used: Standard currency, Secondary currency, and Stated currency.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Currency</strong></p></td>
-<td><p>Enter the secondary currency of the transaction. Available if the currency type is Stated currency.</p></td>
+<td><p>Enter the secondary currency of the transaction. This field is available if the currency type is Stated currency.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Main account</strong></p></td>
@@ -196,7 +196,7 @@ When you generate this report, the following parameters are displayed. You can u
 </tr>
 <tr class="odd">
 <td><p><strong>Financial dimensions</strong></p></td>
-<td><p>Provide the dimensions codes if it is necessary to choose transactions with specific codes for the report. If the dimensions are not populated, the system will choose transactions for the report having any dimension codes.</p></td>
+<td><p>Provide the dimensions codes if it is necessary to choose transactions with specific codes for the report. If the dimensions are not populated, the system will select transactions for the report having any dimension codes.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Print ranges</strong></p></td>
@@ -217,7 +217,7 @@ When you generate this report, the following parameters are displayed. You can u
 </tbody>
 </table>
 
-In **Details and sorting parameters** section, select the available fields to be included into the report. In **Records to include** tab, define additional filtering conditions, if necessary.
+In the **Details and sorting parameters** section, select the available fields to be included into the report. On the **Records to include** tab, define additional filtering conditions, if needed.
 
 ## Additional resources
 
