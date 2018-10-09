@@ -115,7 +115,9 @@ Extensibility requests can be logged in LCS. Details are available in the [Exten
 | Dec 2019 | Extensions will be available on/ before December 31, 2019 for the requests logged by January 1, 2019. Customers using these extensions are required to move to current version by April 2020.                                                                            |
 
 ### What does end of service mean?
-To service any issues that you have you will need to take the latest update at that time. We will not be providing any individual hotfix. Post 8.1 you will be required to be on the latest version supported (such as 8.1.1) within 3 months of date. Please see the [lifecycle policy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy) for details.
+To service any issues that you have, you will need to take the latest update at that time. We will not be providing any individual hotfix. Microsoft will be unable to troubleshoot performance issues on older updates.
+
+Post 8.1 you will be required to be on the latest version supported (such as 8.1.1) within 3 months of date. Please see the [software lifecycle policy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy) for details.
 
 ### Will individual hotfixes be supported?
 Individual hotfixes will not be supported after 8.1. Customers must update to the latest cumulative update available to apply the fix (such as 8.1.1). Critical fixes will also be cumulative and available through the LCS servicing experience.
