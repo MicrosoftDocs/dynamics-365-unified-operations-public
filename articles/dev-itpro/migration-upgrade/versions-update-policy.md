@@ -5,7 +5,7 @@ title: Software lifecycle policy and cloud releases
 description: This topic outlines the lifecycle and support policies for the Microsoft Dynamics 365 for Finance and Operations online service.
 author: RyanCCarlson2 
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -78,6 +78,7 @@ For information about the new features included in each release, click the links
 
 | **Release**                                                                                                                                                  | **Build number**   | **Availability** | **Expiration date**        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|------------------|----------------------------|
+| [Platform update 21](../../fin-and-ops/get-started/whats-new-platform-update-21.md)| 7.0.5073 | October 2018   | N/A (Continuously updated)   |
 | [Platform update 20**](../../fin-and-ops/get-started/whats-new-platform-update-20.md)| 7.0.5030 | September 2018   | N/A (Continuously updated)   |
 | [Platform update 15*](../../fin-and-ops/get-started/whats-new-platform-update-15.md)| 7.0.4841 | March 2018   | N/A (Continuously updated)   |
 | [Platform update 12](../../fin-and-ops/get-started/whats-new-platform-update-12.md)                   | 7.0.4709           | November 2017    | November 2018              |
