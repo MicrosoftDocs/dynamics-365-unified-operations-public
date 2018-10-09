@@ -32,9 +32,11 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
+You may register fixed asset acquision using a vendor invoice journal or a purchase order. Vendor invoice journal is used usually if it is no need to track inventory movement of the fixed asset. for example, a fixed asset is bought and put into operation at the same period. Purchase order might be used if several identical fixed assets are bought or it is necessary to track inventory movement of fixed asset.    
+
 ## Register a fixed asset acquisition using an invoice journal 
 
-You can register the purchase of a fixed asset using the vendor invoice journal, if the fixed asset is not a warehouse item, and if it is not not requiered  to incur receipt and issue transactions that must be tracked. Before you register purchase a fixed asset, the asset must be registered on the <STRONG>Fixed assets</STRONG> page ().
+Before you register purchase a fixed asset, the asset must be registered on the <STRONG>Fixed assets</STRONG> page ().
 
 1.  Click **Fixed assets (Russia)** \> **Common** \> **Fixed assets**. On the **Action pane**, click **Fixed asset** to create a fixed asset, or select a fixed asset record.
 
@@ -76,37 +78,27 @@ You can register the purchase of a fixed asset using the vendor invoice journal,
     
 # Register a fixed asset acquisition using a purchase order 
 
-You can register the purchase of a fixed asset via creating a purchase order. Before creating a purchase order you should create release product with  
+You can register the purchase of a fixed asset via creating a purchase order. Before creating a purchase order you should create released product with **Service** or **Item** product type. If you select item with **Service** product type in the purchase oder line, you may enter several fixed assets, related with one purchase order line. If you select item with **Item** product type in the purchase oder line, you may enter only one fixed assets, related with the purchase order line.  
+
 
 1.  Click **Product information management** \> **Common** \> **Released products**.
 
-2.  Create a new item in the fixed assets item group.
-    
-    > [!NOTE]
-    > For more information, see "Create an item" in the Applications and Business Processes Help.
+2.  Create a new item and in the **Item type** field, select **Service** or **Item**, and on the **General** tab, fill in **FA group** field.
 
-3.  In the **Item type** field, select **Fixed assets**, and then click the **General** tab.
-4.  In the **FA group** field, select the fixed asset group.
-    
     > [!NOTE]
     > The information provided on the purchase line determines whether the fixed asset belongs to the specified fixed asset group.
-
-5.  Press CTRL+S or close the form.
-6.  Click **Accounts payable** \> **Common** \> **Purchase orders** \> **All purchase orders**.
-7.  Press CTRL+N to create a new line.
     
     > [!NOTE]
-    > For more information, see "Create a purchase order" in the Applications and Business Processes Help.
+    > For more information, see **[Create released product](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/tasks/create-released-product-single-company)**.
+    
+3.  Click **Accounts payable** \> **Common** \> **Purchase orders** \> **All purchase orders**.
+4.  Press the *NEW* button to create a new purchase order.
+    
+    > [!NOTE]
+    > For more information, see **[Create a purchase order](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order)**.
 
 8.  Click the **Lines** tab in the lower pane.
-9.  In the **Item number** field, select the fixed asset item number, and then click the **General** tab.
-10. In the **FA number** field, select the fixed asset number.
-    
-    > [!NOTE]
-    > <P>If the <STRONG>Association with warehouse</STRONG> check box in the <STRONG>Fixed Assets Parameters</STRONG> form is selected, you can enter only one fixed asset on each purchase line.</P>
-    > <P>If the <STRONG>Association with warehouse</STRONG> check box is not selected, several purchases can be recorded on a purchase line. The number of fixed assets included on the purchase line must correspond to the fixed asset numbers in the <STRONG>FA number</STRONG> field. Even though one item might correspond to several fixed assets or inventory assets, records must be set up for each individual asset.</P>
-
-11. In the **FA number** field, select the fixed asset number.
+9.  In the **Item number** field, select the item number, which related with the fixed asset group, and on the **Line detail/ Fixed asset** tab enter fixwd asset(s) (**Fixed asset (Russia)**). You may enter several fixed asset, if you select item with **Service** product type in the purchase line. In this case quantity of fixed assets should be equal to quantity, specified in the purchase line. Or you may enter only one fixed asset in the purchase line, if you select the item with **Item** product type.
     
     > [!NOTE]
     > <P>If the fixed asset number is not created, then press CTRL+ALT+F4 to create a new fixed asset line in the <STRONG>Fixed assets</STRONG> form.</P>
