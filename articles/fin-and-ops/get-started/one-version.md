@@ -34,10 +34,10 @@ In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](
 
 ## Service updates
 
-### What product versions are impacted for service updates?
+### What product versions are impacted by service updates?
 | Version | Description |
 |---------|-------|
-| 8.1 and above | All customers on 8.1 and above will be scheduled for updates monthly with a combined application and platform update starting Nov 2018.  You will be required to have an update that's no older than 3 months.                                                                                                                                                                      |
+| 8.1 and above | All customers on 8.1 and above will be scheduled for updates monthly with a combined application and platform update starting November 2018.  You will be required to have an update that's no older than 3 months.                                                                                                                                                                      |
 | 8.0           | Customers will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months.  The 8.0 lifecycle ends in April 2019. We encourage customers on 8.0 to update to 8.1 by Dec 1 2018. This process is like a regular package update. Detailed documentation to follow.                                                   |
 | 7.x           | All other customers will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months.  You are required to upgrade to 8.1 before April 2019 (unless extensions are not available, the only overlayered version in market will be version 7.3). Starting April 2019 the service will be updated to version 10.0. |
 
