@@ -42,7 +42,7 @@ In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](
 | 7.x           | Customers on 7.x will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months.  You are required to upgrade to 8.1 before April 2019 (unless extensions are not available, the only overlayered version in market will be version 7.3). Starting April 2019, the service will be updated to version 10.0. |
 
 ### What does the update contain?
-For 8.1 and later, service updates will contain application (including financial, reporting, and Retail) and platform changes that are critical improvements to the service including regulatory updates. New experiences will be opt-in. There will be a single version representing this update.
+For 8.1 and later, service updates will contain application (including financial, reporting, and Retail) and platform changes that are critical improvements to the service including regulatory updates. New experiences will be opt-in. The service updates are backward compatible. There will be a single version representing this update.
 
 ### What is a regulatory update?
 A regulatory update is a new feature or an existing feature change required by law (usually for a specific country/region). The regulatory update is always required by a specific law enforcement date (LED) and should be enabled by this date or earlier.
@@ -51,15 +51,15 @@ A regulatory update is a new feature or an existing feature change required by l
 Service updates will be available each month starting in November 2018. Microsoft will apply the updates monthly, based on the selected maintenance window. You are required to have an update no older than 3 months.
 
 ### Are there any major updates post 8.1?
-There will be 2 major updates in April and October where new experiences will be enabled. Major updates will not require code or data upgrade. If there are breaking changes (due to deprecations), they will be communicated in advance (12 months) so customers can plan accordingly. The 10.0 release, which will be available in April 2019, will also be an update.
+There will be 2 major updates in April and October where new experiences will be enabled. Major updates will not require code or data upgrade. Breaking changes will be communicated 12 months in advance such that customers can plan accordingly. Such a change will only be introduced during a major update. The 10.0 release, which will be available in April 2019, will also be an update and not an upgrade.
 
 ### What does it mean when an update is backward compatible?
-Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without needing to recompile, reconfigure, or redeploy customizations. This means that on a development environment at design time, X++ public and protected APs metadata is not modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated 12 months in advance and follow a deprecation schedule. Design-time compatibility does not include non X++/metadata APIs. Functional compatibility is about user experience. All new experiences will be opt-in.
+Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without needing to recompile, reconfigure, or redeploy customizations. This means that on a development environment at design time, X++ public and protected APIs and metadata are not modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated 12 months in advance and follow a deprecation schedule. Design-time compatibility does not include non X++/metadata APIs. Functional compatibility is about user experience. All new experiences will be opt-in.
 
 ## Process
 
 ### Can I select the day and time to update?
-Customers can configure the weekend and maintenance windows in Lifecycle Services (LCS). Email will be sent to those individuals who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 5 business days for testing and validation. Customers can optionally choose to apply the update earlier to all environments through Lifecycle Services and even earlier through early access programs. Customers are responsible for deploying the update to any additional sandbox or developer/build (tier 1) environments.
+Customers can configure the day and maintenance time windows in Lifecycle Services (LCS). Email will be sent to those individuals who opt in to receive LCS notifications with instructions included on how to update. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have 5 business days for testing and validation. Customers can optionally choose to apply the update earlier to all environments through Lifecycle Services and even earlier through early access programs. Customers are responsible for deploying the update to any additional sandbox or developer/build (tier 1) environments.
 
 ### How do I update to the latest version?
 Users can update to the latest version using the tiles on the Environment details page in LCS. After the update is released by Microsoft, the tile will show the latest update. Customers can choose to apply the update on their own by going through the update experience on their sandbox and production environments. Documentation will also be made available on docs.microsoft.com.
@@ -68,7 +68,7 @@ Users can update to the latest version using the tiles on the Environment detail
 The expected downtime for a successful update is 30 minutes to 1 hour. However, we ask for three hours of downtime in case issues occur while the update is applied. We are actively working to reduce the downtime that is required, and you should expect improvements in the next few months.
 
 ### What's the process for deprecation?
-Deprecation will be announced by a notice 12 months prior to the deprecation. The functionality will be deprecated during a major update.
+Deprecation will be announced by a notice 12 months prior to the deprecation. The functionality will only be deprecated during a major update.
 
 ### Can I delay an update?
 You can pause an update up to 3 months through LCS configuration. After this period, an update will be scheduled and monthly updates resumed.
@@ -77,13 +77,13 @@ You can pause an update up to 3 months through LCS configuration. After this per
 If you find an issue when doing validations in a sandbox environment, you can request to skip the update through LCS directly by providing a valid support ticket number and a business justification. The request will be reviewed by Microsoft and if approved you will be left out of that month's update.
 
 ### How much time do I get for validation?
-You will get five (5) days for validation once the update is applied to your sandbox environment. If you need more time, you can sign up for an early access automatic update to one of your sandbox environments (CEAP). This will provide you with additional time to test the update prior to a production roll out. More information about this program will be available shortly.
+You will get five (5) days for validation once the update is applied to your sandbox environment. If you need more time, you can sign up for an early access automatic update to one of your sandbox environments. This will provide you with additional time to test the update prior to a production roll out. More information about this program will be available shortly.
 
-### Will rollback be supported?
+### Will rollback be supported after an update is applied?
 Rollback will be supported in the coming months.
 
 ### How will my ISVs stay current?
-Service updates to customer environments will be backward compatible and no action is required by the Independent software vendors (ISVs). ISVs develop on the minimum required platform release that their code depends on. Breaking changes will have a 12-month lead time to enable ISVs to include and validate. We recommend that the ISVs be part of our PEAP programs, so that they can get early access to the platform bits and validate their solutions against the update before it's made generally available.
+Service updates to customer environments will be backward compatible and no action is required by the Independent software vendors (ISVs). ISVs develop on the minimum required platform release that their code depends on. Breaking changes will have a 12-month lead time to enable ISVs to include and validate. We recommend that the ISVs be part of our [Partner early access program](experience.dynamics.com/insider/), so that they can get early access to the platform bits and validate their solutions against the update before it's made generally available.
 
 ### What about new features?
 All new features will be opt-in for a 12-month period and will not require any change management until you choose to enable the feature.
@@ -115,10 +115,13 @@ Extensibility requests can be logged in LCS. Details are available in the [Exten
 | December 2019 | Extensions will be available on/ before December 31, 2019 for the requests logged by January 1, 2019. Customers using these extensions are required to move to current version by April 2020.                                                                            |
 
 ### What does end of service mean?
-To service any issues that you have you will need to take the latest update at that time. We will not be providing any individual hotfix. After 8.1 you will be required to be on the latest version supported (such as 8.1.1) within 3 months of the release date. Please see the [Lifecycle policy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy) for details.
+To service any issues that you have, you will need to take the latest update at that time. We will not be providing any individual hotfix. Microsoft will be unable to troubleshoot performance issues on older updates.
+
+After 8.1 you will be required to be on the latest version supported (such as 8.1.1) within 3 months of the release date. Please see the [Lifecycle policy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy) for details.
 
 ### Will individual hotfixes be supported?
 Individual hotfixes will not be supported after 8.1. Customers must update to the latest cumulative update available to apply the fix (such as 8.1.1). Critical fixes will also be cumulative and available through the LCS servicing experience.
 
 ### How can I upgrade to 8.x?
-Refer to the [Process for moving to the latest update of Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update#scenario-3-upgrade-to-the-latest-application-release-1) topic to learn how to upgrade to the latest application. Updating from [8.0 to 8.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update) will not require any data upgrade and will be a self-serve update with much reduced downtime.
+Refer to the [Process for moving to the latest update of Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update#scenario-3-upgrade-to-the-latest-application-release-1) topic to learn how to upgrade to the latest application. Updating from [8.0 to 8.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81) will not require any data upgrade and will be a self-serve update with much reduced downtime.
+
