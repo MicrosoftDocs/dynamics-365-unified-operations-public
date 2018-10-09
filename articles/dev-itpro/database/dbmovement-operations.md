@@ -29,31 +29,31 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Database Movement Operations
+# Database Movement operations
 
 [!include [banner](../includes/banner.md)]
 
 >[!Note]This document describes functionality that may not have been released yet.  Projected >functionality may change or may not ship (see Microsoft policy).
 
-This topic describes the operations available as part of the Database Movement features in Lifecycle Services.  
+This topic describes the operations available as part of the Database Movement features in Lifecycle Services (LCS).  
 
 ## Sandbox Refresh
-When refreshing a Production Environment to a Sandbox Environment, or a Sandbox Environment to another Sandbox Environment, there are certain elements of the database that are not copied over to the target environment.  These elements include:
+When refreshing a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, there are certain elements of the database that are not copied over to the target environment.  These elements include:
 * Email addresses in the LogisticsElectronicAddress table
-* Batch Job History in the BatchJobHistory, BatchHistory, and BatchConstraintHistory Tables
+* Batch Job History in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables
 * SMTP Password in the SysEmailSMTPPassword table
 * SMTP Relay Server in the SysEmailParameters table
-* Print Management Settings in the PrintMgmtSettings, and PrintMgmtDocInstance tables
+* Print Management Settings in the PrintMgmtSettings and PrintMgmtDocInstance tables
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, BatchServerGroup tables
 * Document attachments in the DocuValue table
-* All users except for the Admin are disabled
-* All Batch Jobs are set to Withhold status
+* All users except for the administrator are disabled
+* All batch jobs are set to Withhold status
 
 ## Import
-When importing a database backup in to a Sandbox environment, there are certain activities which must be performed.  These include:
+When importing a database backup in to a sandbox environment, there are certain activities which must be performed.  These include:
 * Ensure Email capabilities are properly reconfigured or disabled, per your requirements
 * AOS servers are added back to required batch groups
-* System Help and Task Guides are reconnected
+* System Help and task guides are reconnected
 * Batch jobs are set to Waiting status
 * Users are re-enabled
 
@@ -63,8 +63,8 @@ When exporting a database backup from an environment, there are certain elements
 * Batch Job History in the BatchJobHistory, BatchHistory, and BatchConstraintHistory Tables
 * SMTP Password in the SysEmailSMTPPassword table
 * SMTP Relay Server in the SysEmailParameters table
-* Print Management Settings in the PrintMgmtSettings, and PrintMgmtDocInstance tables
+* Print Management Settings in the PrintMgmtSettings and PrintMgmtDocInstance tables
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, BatchServerGroup tables
 * Document attachments in the DocuValue table
-* All users except for the Admin are disabled
-* All Batch Jobs are set to Withhold status
+* All users except for the administrator are disabled
+* All batch jobs are set to Withhold status
