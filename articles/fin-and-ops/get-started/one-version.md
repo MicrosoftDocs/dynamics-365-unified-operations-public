@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.1
 # One version service updates FAQ
 [!include[banner](../includes/banner.md)]
 
-In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
+In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
 
 ## Service updates
 
@@ -38,11 +38,11 @@ In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](
 | Version | Description |
 |---------|-------|
 | 8.1 and later | All customers on 8.1 and later will be scheduled for updates monthly with a combined application and platform update starting November 2018.  You will be required to have an update that's no older than 3 months.                                                                                                                                                                      |
-| 8.0           | Customers will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months.  The 8.0 lifecycle ends in April 2019. We encourage customers on 8.0 to update to 8.1 by Dec 1 2018. This process is like a regular package update. Detailed documentation to follow.                                                   |
-| 7.x           | All other customers will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months.  You are required to upgrade to 8.1 before April 2019 (unless extensions are not available, the only overlayered version in market will be version 7.3). Starting April 2019 the service will be updated to version 10.0. |
+| 8.0           | Customers on 8.0 will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months.  The 8.0 lifecycle ends in April 2019. We encourage customers on 8.0 to update to 8.1 by December 1, 2018. This process is like a regular package update. Detailed documentation to follow.                                                   |
+| 7.x           | Customers on 7.x will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months.  You are required to upgrade to 8.1 before April 2019 (unless extensions are not available, the only overlayered version in market will be version 7.3). Starting April 2019 the service will be updated to version 10.0. |
 
 ### What does the update contain?
-The post 8.1 service updates will contain application (including financial reporting and Retail) and platform changes that are critical improvements to the service including regulatory updates. New experiences will be opt-in. There will be a single version representing this update.
+The post 8.1 service updates will contain application (including financial, reporting, and Retail) and platform changes that are critical improvements to the service including regulatory updates. New experiences will be opt-in. There will be a single version representing this update.
 
 ### What is a regulatory update?
 A regulatory update is a new feature or an existing feature change required by law (usually for a specific country/region). The regulatory update is always required by a specific law enforcement date (LED) and should be enabled by this date or earlier.
@@ -77,7 +77,7 @@ You can pause an update up-to 3 months through LCS configuration. After this per
 If you find an issue when doing validations in a sandbox environment, you can request to skip the update through LCS directly by providing a valid support ticket number and a business justification. The request will be reviewed by Microsoft and if approved you will be left out of that month's update.
 
 ### How much time do I get for validation?
-You will get five (5) days for validation once the update is applied to your sandbox environment. If you need more time, you can sign up for an early access automatic update to one of your sandbox environments(CEAP). This will provide you with additional time to test the update prior to a production roll out. More information about this program will be available shortly.
+You will get five (5) days for validation once the update is applied to your sandbox environment. If you need more time, you can sign up for an early access automatic update to one of your sandbox environments (CEAP). This will provide you with additional time to test the update prior to a production roll out. More information about this program will be available shortly.
 
 ### Will rollback be supported?
 Rollback will be supported in the coming months.
