@@ -386,7 +386,7 @@ You must complete the following procedure to enable the extensions in offline mo
     > [!NOTE]
     > Modern POS must not be customized. You must enable User Account Control (UAC), and you must uninstall previously installed instances of Modern POS as required.
 
-2. Include the following existing source code folders in the **Pos.Extensions** project.
+2. Include the following existing source code folders in the **Pos.Extensions** project:
 
     - **[Retail 7.3.2 and later](#tab/retail-7-3-2)**
 
@@ -423,7 +423,7 @@ You must complete the following procedure to enable the extensions in offline mo
         - AuditEventSignatureSample
         - SalesTransBuildNumberSample
 
-4. Enable the extensions to be loaded by adding the following lines in **extensions.json**.
+4. Enable the extensions to be loaded by adding the following lines in **extensions.json**:
 
     - **[Retail 7.3.2 and later](#tab/retail-7-3-2)**
 
@@ -514,7 +514,7 @@ You must complete the following procedure to enable the extensions in offline mo
         - AuditEventSignatureSample
         - SalesTransBuildNumberSample
 
-4. Enable the extensions to be loaded by adding the following lines in **extensions.json**.
+4. Enable the extensions to be loaded by adding the following lines in **extensions.json**:
 
     - **[Retail 7.3.2 and later](#tab/retail-7-3-2)**
 
@@ -576,7 +576,7 @@ Follow these steps to create deployable packages that contain Retail components,
 1. Complete the steps in the [Cloud POS extension components](#cloud-pos-extension-components) or [Modern POS extension components](#modern-pos-extension-components) section earlier in this topic.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
-    1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section.
+    1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:
 
         - **[Retail 7.3.2 and later](#tab/retail-7-3-2)**
 
@@ -627,7 +627,7 @@ Follow these steps to create deployable packages that contain Retail components,
         <ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.RetailProxy.SalesTransactionSignatureSample.dll" />
         ```
 
-    2. Add the following lines to the **ItemGroup** section to include the CRT extensions in the deployable packages.
+    2. Add the following lines to the **ItemGroup** section to include the CRT extensions in the deployable packages:
 
         - **[Retail 7.3.2 and later](#tab/retail-7-3-2)**
 
