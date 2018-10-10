@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up advance adjustment parameters for advance holders
-description: 
+title: Foreign currency revaluation for advance holders in Russia
+description: This topic provides information about foreign currency revaluation for advance holders in Russia.
 author: 
 manager: AnnBe
 ms.date: 09/07/2018
@@ -34,82 +34,61 @@ ms.search.validFrom: 2018-10-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about foreign currency revaluation procedure for advance holders in Russia.
+This topic provides information about foreign currency revaluation for advance holders in Russia.
 
-When you settle advance payments and advance reports that contain transactions made in foreign currencies, the adjustment transactions are created as a continuation of the advance report, based on the setup made in the **Advance adjustment parameters**. 
+When you settle advance payments and advance reports that include transactions that were done in foreign currencies, adjustment transactions are created as a continuation of the advance report, based on the setup on the **Advance adjustment parameters** page.
 
-  > [!NOTE]
-    > The calculation of exchange adjustments of open advance transactions that are issued or received in foreign currencies is no longer required in business accounting.
+> [!NOTE]
+> For open advance transactions that are issued or received in foreign currencies, exchange adjustments no longer have to be calculated in business accounting.
 
-Use the following procedure to set up advance adjustment parameters for advance holders.
+Follow these steps to set up advance adjustment parameters for advance holders.
 
-1.  Go to **General ledger** \> **Ledger setup** \> **Advance adjustment parameters**.
+1. Go to **General ledger** \> **Ledger setup** \> **Advance adjustment parameters**.
+2. On the **Purchases/Advance holders** FastTab, in the **Ledger posting** field, select the type of ledger posting:
 
-2.  Go to **Purchases/Advance holders** FastTab.
+    - **Invoice accounts** – The advance adjustment that is produced by the settlement of an advance and an advance report for the advance holder should be a continuation of the advance report.
+    - **Deviation from the cost price** – The calculation should be processed based on the account's settings for deviation, and the advance adjustment should not be a continuation of the advance report. Depending on the type of advance adjustment, specific ledger accounts are used to adjust the advance payments.
 
-3.  In the **Ledger posting** field, select the type of ledger posting from the following options:
-    
-      - **Invoice accounts** – Confirm that the advance adjustment that results from the settlement of an advance and an advance report for the advance holder is a continuation of the advance report.
-    
-      - **Deviation from the cost price** – Confirm that the calculation should be processed according to the settings of the account for deviation, and that the advance adjustment is not a continuation of the advance report. Depending on the advance adjustment type, specific ledger accounts are used for the adjustment of the advance payments.
+4. In the **Realized loss** field, select the ledger account to post an exchange rate loss for an employee to.
+5. In the **Realized gain** field, select the ledger account to post an exchange rate profit for an employee to.
 
-4.  In the **Realized loss** field, select the ledger account to post an exchange rate loss for an employee to.
-
-5.  In the **Realized gain** field, select the ledger account to post an exchange rate profit for an employee to.
-    
     > [!NOTE]
-    > The realized loss and realized profit accounts are used for the adjustment of advance payments only if the inventory is closed.
+    > The realized loss and realized gain accounts are used to adjust advance payments only if the inventory is closed.
 
-6.  In the **Expense code** field, select a tax dimension expense code.
-
-7.  In the **Revenue code** field, select a tax dimension revenue code.
-
-8.  In the **Advance adjustment - loss** field, select the ledger account to post an advance adjustment loss in tax accounting to.
-
-9.  In the **Advance adjustment - profit** field, select the ledger account to post an advance adjustment profit in tax accounting to.
-
+6. In the **Expense code** field, select a tax dimension expense code.
+7. In the **Revenue code** field, select a tax dimension revenue code.
+8. In the **Advance adjustment - loss** field, select the ledger account to post an advance adjustment loss in tax accounting to.
+9. In the **Advance adjustment - profit** field, select the ledger account to post an advance adjustment profit in tax accounting to.
 10. In the **Advance adjustment offset account** field, select the offset ledger account to post an advance adjustment in tax accounting to.
+11. Select **Save**.
 
-11. Click **Save** button.
+Follow these steps to calculate the exchange rate adjustment for advance holders.
 
-To compute the exchange rates adjustment for advance holders, perform the following actions:
+1. Go to **Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Foreign currency revaluation**.
+2. Select **Foreign currency revaluation** to open the **Foreign currency revaluation** dialog box.
+3. In the **Method** field, select **Standard**.
+4. In the **Considered date** field, select the date that the general ledger transaction should be made by.
+5. In the **Date of rate** field, select the date that determines the currency exchange rate that is used to compute the exchange rate adjustment. If you leave this field blank, the rate that is in effect on the date in the **Considered date** field is used.
+6. In the **Description** field, enter the text that should appear in the exchange rate adjustment transaction.
+7. In the **Use posting profile from** field, select one of the following values:
 
-1.  Go to **Accounts payable** \> **Periodic tasks** \> **Advance holders** \> **Foreign currency revaluation**.
+    - **Posting** – When a revaluation operation is done, the debt account for an advance holder is selected from the posting profile of the primary operation.
+    - **Select** – When a revaluation operation is done, the debt account for an advance holder is selected from the posting profile that is selected in the **Posting profile** field.
 
-2.  Click **Foreign currency revaluation** button to open **Foreign currency revaluation** form.
+    > [!NOTE]
+    > The exchange rate adjustment is done for the account that is specified in the selected posting profile. It isn't done for the account that is specific in the primary operation.
 
-3.  In the **Method** field, select the value **Standard**.
+8. The **Dimension** field determines how the dimension is generated in the exchange rate adjustment transaction. Select one of the following values:
 
-4.  In the **Considered date** field, select the date by which the general ledger transaction should be made.
+    - **No** – The dimension is absent in the entry for the exchange rate adjustment forecast.
+    - **Posting** – The dimension is inherited from the transactions for an advance holder.
+    - **Table** – In the transaction for the exchange rate adjustment forecast, the dimension is inherited from the advance holder card, unless the dimension is designated for tax accounting.
 
-5.  In the **Date of rate** field, select the date that determines the currency exchange rate for computing the exchange rate adjustment. If the field is not populated, the rate in the **Considered date** will be used.
+9. On the **Records to include** FastTab, you can define additional filtering.
+10. Select **OK** to calculate the exchange rates adjustment.
 
-6.  In the **Description** field, enter the text that should be displayed in the exchange rate adjustment transaction.
+After the calculation is completed, a new line for the exchange adjustment is generated on the **Foreign currency revaluation** page, based on the criteria that you specified. You can now perform the following actions:
 
-7.  In the **Use posting profile from** field, select the value:
-    
-      - **Posting** – When performing a revaluation operation, the debt account for an advance holder will be selected from the posting profile of the primary operation.
-    
-      - **Select** – When performing a revaluation operation, the debt account for an advance holder will be selected from the posting profile indicated in the **Posting profile** field.
-       > [!NOTE]
-    > The exchange rate adjustment will be made for the account indicated in the selected posting profile, and not for the account in the primary operation.
-
-8.  The value in the **Dimension** field determines how the dimension is generated in the transaction for exchange rate adjustment.
-
-     - **No** – Dimension is absent in the entry for exchange rate adjustment forecast.
-
-     - **Posting** – Dimension is inherited from the transactions for an advance holder.
-
-     - **Table** – In the transaction for exchange rate adjustment forecast, dimension is inherited from the advance holder card, except for the dimension designated for tax accounting.
-
-9.  You can define additional filtering in  **Records to include** FastTab.
-
-10. Click **OK** button to compute the exchange rates adjustment.
-
-As a result, in the **Foreign currency revaluation** form, a new line will be generated for the exchange adjustment according to the specified criteria. You can perform the following actions:
-
-1.  Click the **Voucher** button to open the voucher transactions form to review the transactions completed for the general ledger.
-
-2.  Click the **Transactions** button to open the Advance holder transactions form to review the transactions completed for the advance holder.
-
-3.  Click the **Reviewed** button to mark the selected line as reviewed.
+- Select **Voucher** to open the **Voucher transactions** page, where you can review the transactions that were completed for the general ledger.
+- Select **Transactions** to open the **Advance holder transactions** page, where you can review the transactions that were completed for the advance holder.
+- Select **Reviewed** to mark the selected line as reviewed.
