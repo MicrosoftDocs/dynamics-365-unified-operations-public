@@ -30,7 +30,7 @@ The following in the career site are currently controlled by a setting.
 To set these values, please login as an administrator into the Attract
 application and navigate to **Settings \> Admin center \> Company information**
 
-Note: The logo image in career site is shows with a fixed height of 20 px. The
+[!NOTE]The logo image in career site is shows with a fixed height of 20 px. The
 images is scaled to fit and the width might change based on the image.
 
 ### Career Site URL
