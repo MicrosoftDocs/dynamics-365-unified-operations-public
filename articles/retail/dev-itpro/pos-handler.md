@@ -107,7 +107,7 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 | CreateTenderRemovalTransactionClientRequestHandler | Executed when you do a tender removal operation in POS.              |
 | CreateFloatEntryTransactionClientRequestHandler    | Executed when you do a float entry operation in POS.                 |
 | SelectZipCodeInfoClientRequestHandler              | Executed when you key in zip code in address add/edit view in POS. |
-| CreateStartingAmountTransactionClientRequestHandler |Executed when you do a start amount declaration in POS. |
+| CreateStartingAmountTransactionClientRequestHandler | Executed when you do a start amount declaration in POS. |
 | LoyaltyCardPointsBalanceOperationRequestHandler     | Executed when you do a loyalty card balance operation in POS. |	
 
 
