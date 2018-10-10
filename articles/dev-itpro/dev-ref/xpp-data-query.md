@@ -544,7 +544,7 @@ A **while select** statement is used to handle data. It's the most widely used f
 
 ### while select example
 
-The following example prints the name reference and telephone number of every customer in the CustTable table whose account number is within a specified range.
+The following example prints the account number and sales group of every customer in the CustTable table whose account number is within a specified range.
 
     static void JobPrintTel(Args _args)
     {
