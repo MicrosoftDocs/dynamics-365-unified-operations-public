@@ -5,7 +5,7 @@ title: Override POS request handler
 description: This topic explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time service enables retail clients to interact with retail functionality in real time.
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/07/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -125,7 +125,7 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 
 | Request name                                           | Description                                               |
 |--------------------------------------------------------|-----------------------------------------------------------|
-| GetGiftReceiptsClientRequestHandler		         | Executed when you do a gift receipt printing in POS.          |
+| GetGiftReceiptsClientRequestHandler		         | Executed when you print a gift receipt in POS.          |
 
 
 **How to override a handler in POS**
