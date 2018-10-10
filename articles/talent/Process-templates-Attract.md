@@ -3,7 +3,7 @@ Creating a Process template in Attract
 
 A **Process template** contains all the activities that should be included as
 part of a hiring process for a job. This topic describes the elements of a
-process template in Attract and provides a guide on creating a template. 
+process template in Microsoft Dynamics 365 for Talent: Attract and provides a guide on creating a template. 
 
 **Using templates**
 -------------------
