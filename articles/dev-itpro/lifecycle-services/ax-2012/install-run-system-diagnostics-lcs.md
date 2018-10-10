@@ -110,8 +110,8 @@ You must make the services of the AOS remotely accessible in Group Policy.
 2.  In the left pane, expand **Computer Configuration** &gt; **Windows settings** &gt; **Security settings** &gt; **Local policies** &gt; **Security options**.
 3.  In the right pane, double-click **Network access: Remotely accessible registry paths and sub-paths**.
 4.  If the following paths are not in the list, add them to the end of the list and then click **OK**.
-    -   SystemCurrentControlSetControlPriorityControl
-    -   SystemCurrentControlSetservicesDynamics Server6.0
+    -   System\CurrentControlSet\Control\PriorityControl
+    -   System\CurrentControlSet\services\Dynamics Server\6.0
 
 #### Configure Windows event log and WMI permissions
 
