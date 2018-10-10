@@ -1,7 +1,7 @@
 Creating, approving and posting jobs in Attract
 ===============================================
 
-This topic describes the elements that a job contains in Attract and provides a
+This topic describes the elements that a job contains in Microsoft Dynamics 365 for Talent: Attract and provides a
 guide on creating a job.
 
 **Creating a job**
