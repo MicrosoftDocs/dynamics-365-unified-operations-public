@@ -5,7 +5,7 @@ title: Finance and Operations Help system
 description: This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 author: margoc
 manager: AnnBe
-ms.date: 10/05/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -116,7 +116,7 @@ For more information, please refer to our contributor's guide: https://github.co
 ## Task guides
 A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are now available. 
 
-We currently provide task guides for Finance and Operations only. The section [Accessing Task guides from the Help pane](help-overview.md#accessing-task-guides-from-the-help-pane) describes how to find the correct task guides for your product. 
+Microsoft shipped task guide libraries for releases through December 2017 for Finance and Operations. The section [Accessing Task guides from the Help pane](help-overview.md#accessing-task-guides-from-the-help-pane) describes how to find the correct task guides for your product. 
 
 ![Task guide reading view](./media/task-guide-ops.png)
 
@@ -184,13 +184,18 @@ After a System administrator has completed these steps, you can open the Help pa
 
 ![Task guide reading view](./media/task-guide-ops.png)
 
-### Where are the translated Task guides?
+### Where are the translated Task guides for Microsoft libraries?
 
 Translated Task guides are released in libraries with "All languages" in the title. In Finance and Operations, to see localized Task guide help, make sure that you are connected to an appropriate library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. 
 -   If a Task guide has been translated, when you open that Task guide all the text of the Task guide will appear in your selected language.
 -   If a Task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
 
 ## Additional resources
+
+- [Finance and Operations help system (downloadable fact sheet)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
+- [Task Recorder](../../dev-itpro/user-interface/task-recorder.md)
+- [Create documentation or training using Task recordings](../../dev-itpro/user-interface/task-recorder.md)
+
 The following table lists our websites. Sites that have an asterisk (\*) next to the name require that you sign in by using an account that is associated with a service plan.
 
 | Site                                                                     | Description                                                                                                                                                                                                                                |
@@ -203,13 +208,4 @@ The following table lists our websites. Sites that have an asterisk (\*) next to
 | [Dynamics Community](https://community.dynamics.com/)                  | Hosts blogs, forums, and videos.                                                                                                                                                                                                           |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/en-us/dynamics365/home)                 | Provides evaluation and sales information.                                                                                                                                                                                                 |
 | [CustomerSource](https://www.customersource.com/)\*                      | Hosts some training resources for Finance and Operations,  downloadable reports and white papers, and is the primary support site for service plan holders. May require a service plan to access some resources on the site.     |
-
-
-Additional resources
---------
-[Finance and Operations help system (downloadable fact sheet)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
-
-[Task Recorder](../../dev-itpro/user-interface/task-recorder.md)
-
-[Create documentation or training using Task recordings](../../dev-itpro/user-interface/task-recorder.md)
 
