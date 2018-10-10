@@ -34,7 +34,8 @@ entity in CDS and return a list of positions to select on the job. If more
 positions are selected than are open, a warning will be displayed. If a position
 is used on multiple jobs, a warning will be displayed.
 
-**Note**: **Position management** is available with the Comprehensive Hiring
+>[!NOTE] 
+> **Position management** is available with the Comprehensive Hiring
 Add-on.
 
 Depending on settings in the **Offer activity** of the hiring process, a
