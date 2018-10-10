@@ -120,6 +120,14 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 | CreateBankDropTransactionClientRequestHandler          | Executed when you do a bank drop operation in POS.          |
 | CreateTenderDeclarationTransactionClientRequestHandler | Executed when you do a tender declaration operation in POS. |
 
+
+**Sales orders request handlers**
+
+| Request name                                           | Description                                               |
+|--------------------------------------------------------|-----------------------------------------------------------|
+| GetGiftReceiptsClientRequestHandler		         | Executed when you do a gift receipt printing in POS.          |
+
+
 **How to override a handler in POS**
 
 If you want to override any of the above POS request handler logic, you to need to use the following steps:
