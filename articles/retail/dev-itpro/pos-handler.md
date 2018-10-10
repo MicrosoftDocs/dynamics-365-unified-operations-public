@@ -5,7 +5,7 @@ title: Override POS request handler
 description: This topic explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time service enables retail clients to interact with retail functionality in real time.
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/07/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -107,6 +107,9 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 | CreateTenderRemovalTransactionClientRequestHandler | Executed when you do a tender removal operation in POS.              |
 | CreateFloatEntryTransactionClientRequestHandler    | Executed when you do a float entry operation in POS.                 |
 | SelectZipCodeInfoClientRequestHandler              | Executed when you key in zip code in address add/edit view in POS. |
+| CreateStartingAmountTransactionClientRequestHandler | Executed when you do a start amount declaration in POS. |
+| LoyaltyCardPointsBalanceOperationRequestHandler     | Executed when you do a loyalty card balance operation in POS. |	
+
 
 **Tender counting request handler**
 
@@ -116,6 +119,14 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 | GetTenderDetailsClientRequestHandler                   | Executed when you get tender declaration details in POS.  |
 | CreateBankDropTransactionClientRequestHandler          | Executed when you do a bank drop operation in POS.          |
 | CreateTenderDeclarationTransactionClientRequestHandler | Executed when you do a tender declaration operation in POS. |
+
+
+**Sales orders request handlers**
+
+| Request name                                           | Description                                               |
+|--------------------------------------------------------|-----------------------------------------------------------|
+| GetGiftReceiptsClientRequestHandler		         | Executed when you print a gift receipt in POS.          |
+
 
 **How to override a handler in POS**
 
