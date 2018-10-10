@@ -10,7 +10,7 @@ process template in Attract and provides a guide on creating a template.
 
 Organizations can choose whether to allow team members to create hiring process
 templates in Attract or only allow the Admin to create templates. To configure
-**Template management**, navigate to **Admin CenterTemplate management.** Turn
+**Template management**, navigate to **Admin Center** --> **Template management.** Turn
 Template management on to allow team members to create their own hiring process
 templates.
 
