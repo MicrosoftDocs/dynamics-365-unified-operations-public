@@ -75,3 +75,29 @@ The Sales tax on prepayment journal voucher must not be posted if advance invoic
    - **Posting profile with prepayment journal voucher**
    - **Tax group for prepayment**
    - **Item Sales tax group**
+
+## Printing Advance invoices
+
+It is possible to print an Advance invoices from POS on a windows printer connected to the hardware station. There are two options how an advance invoice could be printed from POS:
+- Print after conclude of transaction on POS. 
+
+  This happens automatically if an Advance invoice was generated and a windows printer was set up properly. In this case only the last advance invoice linked with the customer order is printed.
+
+- Re-print advance from the transaction journal. 
+
+  Click button **Show journal** to open the transactions journal, find a customer order, and click button **Print Advance invoice**. In this case all advance invoices linked with the customer order would be printed.
+
+## How to set up a windows printer
+
+Follow the steps below to enable printing documents from POS on a windows printer connected to the hardware station: 
+
+- Go to **_Retail > Channel setup > POS setup > POS profiles > Hardware profiles_**
+- Select a hardware profile related to the store where the printer is used
+- Update settings either in the section **_Printer_** or **_Printer 2_** 
+
+  - Select option **Windows driver** in the field
+
+  - Specify name of the printer in the field **Device name**
+
+- Go to **_Retail > Retail IT > Distribution schedule_**
+- Select the **_Job 1090_** and click button **Run now**
