@@ -53,6 +53,7 @@ company industries by entering the Company Industry in the field and selecting
 enter.
 
 **Hiring team**
+---------------
 
 The **Hiring team** contains the list of individuals who will be involved in the
 job. When users are added to a hiring team they must be given a role on the
@@ -66,6 +67,7 @@ delegates please refer to the **Role management** document.
 Note: The hiring team can be updated after the job is activated.
 
 **Process**
+---------------
 
 The hiring process is defaulted based on the **Process template** that was
 selected at the time the job was created. If a template was not selected at the
@@ -81,6 +83,7 @@ the **Activities in Attract** document.
 Note: The process cannot be updated after the job is activated.
 
 **Postings**
+---------------
 
 Once a job has been activated it can be posted. Only recruiters or admins can
 post the job. The job can be posted to Talent Careers (A Dynamics365 for Talent
@@ -100,12 +103,14 @@ Prospect activity within the hiring process. Once a job has been activated, the
 hiring process cannot be edited.
 
 **Prospects and applicants**
+---------------
 
 The option to add prospects to a job is set within the Prospect activity in the
 Hiring process. This should be set before activating the job. Once a job has
 been activated, prospects and applicants can be added.
 
 **Approvals**
+---------------
 
 Attract jobs can be submitted for approval. Whether a document will require
 approval is set at the template level. By default, approvals are turned off on
