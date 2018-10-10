@@ -1,8 +1,7 @@
 Security and Role management in Attract
 =======================================
 
-This article provides an overview of the elements of role security in Microsoft
-Dynamics 365 for Attract.
+This article provides an overview of the elements of role security inMicrosoft Dynamics 365 for Talent: Attract.
 
 Attract uses role-based security. In role-based security, access is not granted
 to individual users, only to security roles. Users are assigned to roles. A user
