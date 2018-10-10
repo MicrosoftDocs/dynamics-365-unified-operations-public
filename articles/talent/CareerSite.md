@@ -36,7 +36,7 @@ images is scaled to fit and the width might change based on the image.
 
 ### Career Site URL
 
-When you post a job(./Creating-jobs-Attract.md#postings) for the first time, for external jobs, the
+When you post a job(../Creating-jobs-Attract.md#postings) for the first time, for external jobs, the
 apply link can be copied from the Attract application. It will be in the
 following format:
 [https://jobs.talent.dynamics.com/jobs/\<companyname\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompanyname%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
