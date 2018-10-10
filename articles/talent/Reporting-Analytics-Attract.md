@@ -21,6 +21,10 @@ available include:
 
 -   **Export to Excel:** Download and Excel sheet of Attract data behind the
     report
+    
+>[!Important]
+>Reports currently refresh every 3 hours. The timestamp of the most recent
+refresh is displayed above the report.
 
 Job Analytics
 -------------
@@ -75,7 +79,3 @@ Export to Excel
 
 To view Attract data Excel, users can click three dots on a visual and select
 “Export underlying data”.
-
->[!Important]
->Reports currently refresh every 3 hours. The timestamp of the most recent
-refresh is displayed above the report.
