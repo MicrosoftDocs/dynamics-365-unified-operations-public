@@ -3,7 +3,7 @@ Creating a Process template in Attract
 
 A **Process template** contains all the activities that should be included as
 part of a hiring process for a job. This topic describes the elements of a
-process template in Attract and provides a guide on creating a template.
+process template in Attract and provides a guide on creating a template. 
 
 **Using templates**
 -------------------
@@ -13,6 +13,8 @@ templates in Attract or only allow the Admin to create templates. To configure
 **Template management**, navigate to **Admin Center** --> **Template management.** Turn
 Template management on to allow team members to create their own hiring process
 templates.
+
+**Note:**  Creating templates is part of the Comprehensive Hiring Add-on for Attract. 
 
 **Creating a process template**
 -------------------------------
