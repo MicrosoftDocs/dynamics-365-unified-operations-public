@@ -48,4 +48,8 @@ It is a common practice to use the export functionality to generate the entity t
 
 ## Data package download - Error downloading data package for job ''. Record for ID - {GUID} not found
 One of the scenarios where this can happen is when the environment, such as the dev environment, points to the database in another environment, such as UAT, and the export job is run from the source environment. which is dev in this example. The exported file gets uploaded to the blob storage that is associated with the source environment (dev, in this example). However, this job will also show up in the target environment (UAT) since the database is shared. If a you try to download the exported file using the **Download file** option, this error will display because the file does not exist in the blob storage of the target environment (UAT) from where you are trying to download.
- 
+
+## XML is not in correct format-Exception from HRESULT: 0xC0010009
+This is a generic message that covers any and all XML formatting issues in the file. Following are specific use cases.
+
+The data project has mappings for columns which are not present in the actual file that being used for the operation. This can happen if certain columns were removed from the file and this file is now used. The fix is to either fix the mapping in the data project or to fix the file to have all the columns as expected.
