@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dual currency: Changes to reporting currency
-description: This topic provides information about the change to reporting currency for Microsoft Dynamics 365 for Finance and operations.  
+title: Dual currency and the changes to reporting currency
+description: This topic provides information about the change to reporting currency for Microsoft Dynamics 365 for Finance and Operations.  
 author: kweekley
 manager: AnnBe
 ms.date: 10/10/2018 
@@ -25,11 +25,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.1
+
 ---
 
 # Dual currency: Changes to reporting currency
 
-The reporting currency has been ‘repurposed’ to become a second accounting currency. The changes for dual currency are inherent to the system and cannot be disabled through a confirmation key or parameter. Because we are treating the reporting currency like a second accounting currency, changes were made to the posting logic in how the reporting currency is calculated.
+The reporting currency has been repurposed to become a second accounting currency. The changes for dual currency are inherent to the system and cannot be disabled through a confirmation key or parameter. Because we are treating the reporting currency like a second accounting currency, changes were made to the posting logic in how the reporting currency is calculated.
 
 In addition, various modules have been enhanced to track, report, and utilize the reporting currency in various processes. The impacted modules include General ledger, Financial reporting, Accounts payable, Accounts receivable, Cash and bank management, and Fixed assets. After upgrading, there are required steps that must be completed for the Cash and bank management and Fixed asset modules. Please read those sections closely to complete the necessary steps.
 
