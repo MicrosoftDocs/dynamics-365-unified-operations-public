@@ -30,8 +30,8 @@ The following in the career site are currently controlled by a setting.
 To set these values, please login as an administrator into the Attract
 application and navigate to **Settings \> Admin center \> Company information**
 
-[!NOTE]
-The logo image in career site is shows with a fixed height of 20 px. The
+> [!NOTE]
+> The logo image in career site is shows with a fixed height of 20 px. The
 images is scaled to fit and the width might change based on the image.
 
 ### Career Site URL
@@ -92,8 +92,8 @@ filter the results at any time based on job location or job function.
 Additionally, candidates also get to see a set of recommended jobs in the career
 site based on their past applications, profile and resumes.
 
-[!NOTE]
-For job recommendations to show, the career site should have at least 10
+> [!NOTE]
+> For job recommendations to show, the career site should have at least 10
 posted job and the candidate should have a complete profile.
 
 Apply to jobs
