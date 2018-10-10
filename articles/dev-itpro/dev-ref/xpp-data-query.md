@@ -5,7 +5,7 @@ title: X++ data selection and manipulation
 description: This topic describes the support for data selection and manipulation in the X++ language.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
