@@ -22,7 +22,7 @@ available include:
 -   **Export to Excel:** Download and Excel sheet of Attract data behind the
     report
     
->[!Important]
+>[!IMPORTANT]
 >Reports currently refresh every 3 hours. The timestamp of the most recent
 refresh is displayed above the report.
 
