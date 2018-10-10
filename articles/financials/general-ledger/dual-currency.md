@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dual currency and the changes to reporting currency
-description: This topic provides information about the change to reporting currency for Microsoft Dynamics 365 for Finance and Operations.  
+title: Dual currency
+description: This topic provides information about dual currency, which is the change to use reporting currency as a second accounting currency for Microsoft Dynamics 365 for Finance and Operations.  
 author: kweekley
 manager: AnnBe
 ms.date: 10/10/2018 
@@ -28,17 +28,17 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Dual currency: Changes to reporting currency
+# Dual currency
 
-The reporting currency has been repurposed to become a second accounting currency. The changes for dual currency are inherent to the system and cannot be disabled through a confirmation key or parameter. Because we are treating the reporting currency like a second accounting currency, changes were made to the posting logic in how the reporting currency is calculated.
+In Microsoft Dynamics 365 for Finance and Operations, version 8.1, functionality was introduced to repurpose the reporting currency to become a second accounting currency. This functionality is referred to as dual currency. The changes for dual currency are inherent to the system and cannot be disabled through a confirmation key or parameter. Because the reporting currency like a second accounting currency, changes were made to the posting logic in how the reporting currency is calculated.
 
 In addition, various modules have been enhanced to track, report, and utilize the reporting currency in various processes. The impacted modules include General ledger, Financial reporting, Accounts payable, Accounts receivable, Cash and bank management, and Fixed assets. After upgrading, there are required steps that must be completed for the Cash and bank management and Fixed asset modules. Please read those sections closely to complete the necessary steps.
 
-## Posting – all modules
+## Posting process
 
 The posting logic has been changed for all transactions that post to general ledger. Previously the reporting currency was calculated as follows:
 
-**Transaction currency amount > Accounting currency amount > Reporting currency amount**
+Transaction currency amount > Accounting currency amount > Reporting currency amount
 
 For example, a transaction is entered in CAD currency. The CAD amount is translated to the Accounting currency, which is USD. Then the USD amount is translated to the reporting currency, which is EUR. This means the exchange rates must exist between CAD and USD and USD and EUR.
 
@@ -50,28 +50,28 @@ Transaction currency amount > Reporting currency amount
 
 With this change, exchange rates must now exist between CAD and USD and CAD and EUR.
 
-## Reports and inquiries – impacted modules only
+## Reports and inquiries
 
-Various reports and inquiries have been updated to show the reporting currency amounts, in addition to the accounting currency amounts. Not every report and inquiry has been updated. For example, no changes were made to reports that only show amounts in the transaction currency.
+Various reports and inquiries now show the reporting currency amounts and the accounting currency amounts. Not every report and inquiry has been updated. For example, no changes were made to reports that only show amounts in the transaction currency.
 
 The changes follow one of two patterns. First, if the report or inquiry had enough space to show amounts in both the accounting and reporting currency, the reporting currency amounts were added. If the report or inquiry did not have enough space to show amounts in both currencies, an option was added for the user to select which currency they wanted to view.
 
 For various reports and inquiries, logic was also added to suppress the reporting currency amounts if the reporting currency was the same as the accounting currency, or if the reporting currency wasn’t defined on the Ledger for the legal entity.
 
-## Financial journals – impacted modules only
+## Financial journals
 
 The financial journals, such as the general journal, vendor invoice journal, etc. have been updated to include additional information on the reporting currency. First, totals for the voucher and journal are now shown in the reporting currency. We also added the reporting currency’s exchange rate information on the General tab of the journal Lines, allowing you to override the reporting currency’s exchange rate during transaction entry.
 
 ## Module changes
 
-The following modules have been enhanced to use the reporting currency as a second accounting currency:
+The following modules use the reporting currency as a second accounting currency:
 
--   General ledger
--   Financial reporting
--   Accounts payable
--   Accounts receivable
--   Cash and bank management
--   Fixed assets
+-   [General ledger](#general-ledger)
+-   [Financial reporting](#financial-reporting)
+-   [Accounts payable](#accounts-payable-accounts-receivable)
+-   [Accounts receivable](#(#accounts-payable-accounts-receivable))
+-   [Cash and bank management](#cash-and-bank-management)
+-   [Fixed assets](#fixed-assets)
 
 ### General ledger
 
