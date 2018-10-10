@@ -5,7 +5,7 @@ title: Attributes that make methods extensible
 description: This topic provides information about attributes that make methods extensible.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
-ms.date: 09/09/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -41,8 +41,8 @@ The following table provides an overview of the default support for extensibilit
 |   | Hookable | Wrappable | Replaceable | Accessibility | Signature | 
 |---|----------|-----------|-------------|---------------|-----------|
 | **private** | No | N/A | N/A | Accessible from within class it is defined in. | Signature can be changed |
-| **protected internal** | No | Yes | No | Accessible from with the class it is defined and from derived classes in the same model | Signature can be changed |
-| **public internal** | Yes | Yes | No | Accessible in the same model. | Signature can be changed |
+| **protected internal** | No | No | No | Accessible from with the class it is defined and from derived classes in the same model | Signature can be changed |
+| **internal** | No | No | No | Accessible in the same model. | Signature can be changed |
 | **protected** | No | Yes | No | Accessible from with the class it is defined and from derived classes | Signature must remain compatibled |
 | **public** | Yes | Yes | No | Accessible from within the class it is defined, derived classes, and other classes that have access to the defining class | Signature must remain compatible |
 
