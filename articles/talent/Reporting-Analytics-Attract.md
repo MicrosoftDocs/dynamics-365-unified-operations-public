@@ -1,6 +1,5 @@
----
-title: Reporting and Analytics
----
+Reporting and Analytics in Attract
+===============================================
 
 This article describes the reporting and analytics features in Microsoft
 Dynamics 365 for Talent: Attract.
@@ -24,7 +23,7 @@ available include:
     report
 
 Job Analytics
-=============
+-------------
 
 *Job Analytics* reports are a snapshot of the hiring process for job. Key
 metrics include:
@@ -36,7 +35,7 @@ metrics include:
 -   Applications over time
 
 Analytics Hub
-=============
+-------------
 
 *Analytics Hub* reports aggregate job data to surface trends in the hiring
 process. Key metrics include:
@@ -48,7 +47,7 @@ process. Key metrics include:
 -   Applicants across all jobs by stage
 
 Role-level Security
-===================
+-------------------
 
 Attract Reports are accessible for Admin, Read All, Recruiter, and Hiring
 Manager [Roles]. Unassigned users do not have access to either of the analytic
@@ -58,12 +57,12 @@ report pages (*Job Analytics* or *Analytics Hub*).
 manager and recruiter participant roles can access *Job Analytics* for the
 selected job. Admin and Read All users can access *Job Analytics* for all jobs.
 
-*Analytic Hub* reports aggregate data across jobs where the user is a hiring
+*Analytics Hub* reports aggregate data across jobs where the user is a hiring
 manager or recruiter participant. Admin, Read All, Recruiter, and Hiring Manager
 [Roles] can access the *Analytics Hub*.
 
 Cross-filter
-============
+------------
 
 Users can filter a report based on data selected in a visual. For example,
 clicking “Internal” in an applicant type visual filters the report for internal
@@ -72,12 +71,11 @@ active applicants and other visuals such as Rejected applicants, will highlight
 the portion corresponding to internal, rejected applicants.
 
 Export to Excel
-===============
+---------------
 
 To view Attract data Excel, users can click three dots on a visual and select
 “Export underlying data”.
 
-[!Important]
-
-\<Reports currently refresh every 3 hours. The timestamp of the most recent
-refresh is displayed above the report.\>
+>[!Important]
+>Reports currently refresh every 3 hours. The timestamp of the most recent
+refresh is displayed above the report.
