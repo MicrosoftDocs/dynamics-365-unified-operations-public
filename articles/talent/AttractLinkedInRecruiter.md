@@ -24,55 +24,55 @@ configure LinkedIn Recruiter with Attract are as follows:
 
 2.  Go to the LinkedIn Integration tab from the left navigation panel.
 
-[insert image for LinkedIn RSC landing page]
+[!Attract Admin view to start LinkedIn Recruiter integration](./media/LinkedInConnect.png)
 
-1.  Use the “Connect” button to start setting up the integration. You will be
+3.  Use the “Connect” button to start setting up the integration. You will be
     taken through a LinkedIn Sign-in process.
 
-2.  If you have a seat on multiple LinkedIn Contracts, select the one that you
+4.  If you have a seat on multiple LinkedIn Contracts, select the one that you
     would like to connect to Attract system. If you have a seat on only one
     LinkedIn contract, this step will be skipped.
 
-3.  The LinkedIn widget will now load in your Admin Settings with the list of
+5.  The LinkedIn widget will now load in your Admin Settings with the list of
     integrations shown. Click “Request” under Recruiter System Connect.
 
-[Insert image for RSC Request]
+[!Attract Admin view to Request LinkedIn Recruiter integration](./media/RequestLinkedInRSC.png)
 
-1.  Once the integration has been requested from Attract, it will show as
+6.  Once the integration has been requested from Attract, it will show as
     “Partner ready” and is ready to be turned on from Recruiter Admin Settings.
     If you see “Notify partner” on this page, wait a few second and click the
     “Notify partner” button and refresh the page. It should now show as “Partner
     ready”
 
-[Insert image for Partner ready state]
+[!Attract Admin view to indicate Attract side of requests have been completed](./media/PartnerReady.png)
 
-1.  To complete the next step, you need to have an Admin privilege on your
+6.  To complete the next step, you need to have an Admin privilege on your
     LinkedIn Recruiter Contract as well.
 
-2.  Log in to LinkedIn using the Admin account, navigate to LinkedIn Recruiter
+7.  Log in to LinkedIn using the Admin account, navigate to LinkedIn Recruiter
     on top right and go to Admin Settings under the More menu at the top.
 
-3.  Click on the ATS Tab.
+8.  Click on the ATS Tab.
 
-4.  You will see your Attract system listed there showing a couple of options
+9.  You will see your Attract system listed there showing a couple of options
     which can be turned on.
 
-5.  Choose the Company-level access if you want to enable only 1-Click Export,
+10.  Choose the Company-level access if you want to enable only 1-Click Export,
     In-ATS indicator and the In-ATS Profile Widget. You can choose the
     Contract-level access if you want to enable all of Company-level access
     features plus InMail history, Notes history and the InMail stub profile
     access as well.
 
-6.  Turn on the desired access level from your LinkedIn Recruiter Admin-ATS
+11.  Turn on the desired access level from your LinkedIn Recruiter Admin-ATS
     settings
 
->   [Insert LinkedIn settings image]
+[!Turn on Attract integration from LinkedIn Recruiter Admin view](./media/EnableRSC.png)
 
-1.  Navigate back to Attract Admin Settings as an AttractAdmin and go to the
+12.  Navigate back to Attract Admin Settings as an AttractAdmin and go to the
     LinkedIn integration tab. You should now see the LinkedIn widget load
     showing “Enabled” with the kind of access level turned on.
 
->   [Insert Attract setup final image]
+[!LinkedIn Recruiter integration complete](./media/RSCSetupComplete.png)
 
 Using LinkedIn Recruiter capabilities
 -------------------------------------
