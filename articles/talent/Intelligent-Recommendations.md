@@ -5,9 +5,9 @@ Using machine learning, we are now able to help recruiters and hiring managers
 identify top candidates for a position faster and help prospects find the
 position that best suits their profile and interests. Users for these
 recommendation features can provide feedback on individual recommendations and
-help us provide better recommendations in the future.
+help us get better.
 
-Note: Intelligent recommendation features are only available with the
+[!NOTE] Intelligent recommendation features are only available with the
 Comprehensive Hiring Add-On
 
 Candidate Recommendations
@@ -45,7 +45,7 @@ to navigate to the details of the job posting using the recommendation card and
 are also able to provide feedback about the recommendation to help improve
 future recommendations.
 
-Note: In order to enable the candidate recommendation and job recommendation
+[!NOTE] In order to enable the candidate recommendation and job recommendation
 features, the preview toggle for these features need to be turned on by an
 Administrator. This can be done through the Admin Center, under the Feature
 Management section. Please ensure both the master toggle for Preview Features
