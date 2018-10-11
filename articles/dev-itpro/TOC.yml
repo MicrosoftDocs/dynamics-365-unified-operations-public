@@ -846,68 +846,12 @@
           href: ../financials/project-management/project-actuals-templates.md?toc=/dev-itpro/toc.json
     - name: Consuming external web services
       href: data-entities/consume-external-web-service.md
-- name: Data management
-  href: data-entities/data-entities-data-packages.md
+- name: General Data Protection Regulation 
+  href: gdpr/gdpr-guide.md
   items:
-  - name: Data entities
-    href: data-entities/data-entities.md
-    items:
-    - name: Configuration data projects
-      href: data-entities/configuration-data-projects.md
-    - name: Configuration data packages
-      href: data-entities/configuration-data-packages.md
-    - name: Copy configuration data between companies
-      href: data-entities/copy-configuration.md
-    - name: Configuration data templates
-      href: data-entities/configuration-data-templates.md
-    - name: Data templates with multiple worksheets
-      href: data-entities/excel-template-multiple.md
-    - name: Enable change tracking for entities
-      href: data-entities/entity-change-track.md
-    - name: Configuration keys and data entities
-      href: data-entities/config-key-entities.md
-    - name: Find information about standard data entities
-      href: data-entities/data-entities-report.md
-  - name: Data import and export jobs
-    href: data-entities/data-import-export-job.md
-    items:
-    - name: Best practices for importing vouchers using the General journal entity
-      href: data-entities/tips-tricks-import-general-journal-entity.md
-  - name: Development for data entities
-    items:
-    - name: Design principles and best practices for data entities
-      href: dev-tools/design-best-practices.md
-    - name: Create new data entities
-      href: data-entities/build-consuming-data-entities.md
-    - name: Behavioral data entity properties
-      href: data-entities/behavioral-properties-data-entities.md
-    - name: Create computed columns and virtual fields
-      href: data-entities/data-entity-computed-columns-virtual-fields.md
-    - name: Cross-company behavior
-      href: data-entities/cross-company-behavior.md
-    - name: Country/region codes and configuration keys
-      href: data-entities/countryregion-codes-configuration-keys.md
-    - name: Inheritance patterns
-      href: data-entities/support-super-type-sub-type.md
-    - name: Data entity wizard rules
-      href: data-entities/data-entity-wizard-rules.md
-    - name: Metadata properties
-      href: data-entities/behavioral-properties-data-entities.md
-    - name: Validations, default values, and unmapped fields
-      href: data-entities/validations-defaults-unmapped-fields.md
-    - name: Security and data entities
-      href: data-entities/security-data-entities.md
-    - name: Create read-only entities that expose financial dimensions
-      href: financial/read-only-entity-financial.md
-  - name: Bring your own database
-    href: analytics/export-entities-to-your-own-database.md
-  - name: Data task automation
-    href: data-entities/data-task-automation.md
   - name: Resources for responding to GDPR data requests
     href: gdpr/gdpr-home-page.md
     items:
-    - name: Guide to the GDPR for Finance and Operations
-      href: gdpr/gdpr-guide.md
     - name: Asset classifications
       href: gdpr/gdpr-asset-classification-values.md
     - name: Person search report
@@ -922,10 +866,6 @@
       href: gdpr/gdpr-ax2012.md
     - name: GDPR data requests for LCS
       href: gdpr/gdpr-lcs.md
-  - name: Data validation checklist workspace
-    href: user-interface/data-validation-workspace.md
-  - name: Data management error descriptions
-    href: data-entities/dm-error-descriptions.md
 - name: Continuous delivery
   href: dev-tools/continuous-delivery-home-page.md
   items:
