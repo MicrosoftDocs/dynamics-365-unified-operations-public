@@ -85,12 +85,15 @@ You should complete the following steps to set up the report:
 You can setup the cells of report manually or by copying from another report. 
 
 #### Copy financial reports settings
-In the **Financial reports** page, click **Copy**. In the dialog box that opens, select the **Company** and **Report code** to be copied (**SOURCE REPORT** group of fields), and select a **Report code** from the list or enter a new one, into which the settings will be copied (**TARGET REPORT** group of fields). If the target report already has settings that are specified, they will be overwritten.
+
+1. On the **Financial reports** page, click **Copy**.
+2. In the dialog box, select the **Company** and **Report code** to be copied (**SOURCE REPORT** group of fields)
+3. Select a **Report code** from the list or enter a new one, into which the settings will be copied (**TARGET REPORT** group of fields). If the target report already has settings that are specified, they will be overwritten.
 
 #### Create report cells manually
 1. On the **Financial reports** page, click **Setup**. The upper section of the form displays a list of report cells and their main parameters.
 
-![Cells setup](media/cells-setup.jp)
+![Cells setup](media/cells-setup.jpg)
 
 2. Create a new line. 
 3. Enter unique identification of the report cell in the field **Code**. You can setup any convenient rule for naming of unique identificators, considering that name of each cell must be unique within the same report. **Electronic reporting** configuration, which is configured for report output, should filter list of report values by cell codes in binding between report values and format elements.
@@ -266,7 +269,7 @@ In the **Message processing action** page, create the following actions:
    - Choose Electronic reporting format created above in the field **Format mapping**
    - Define the default name of generated file in the field **File name**
 
-   ![Message processing actions](media/message-processing-actions.jpg)
+   ![Message processing actions](media/message-processing-action.jpg)
 
 4. On the **Electronic message processing** page, define processing flow for the report.
 For example, define that processing consists of 3 actions: "Create message", "Ready to generate" and "Generate report" created above.
