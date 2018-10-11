@@ -256,6 +256,12 @@ The following tables describe the data manipulation functions that you can use t
 <td><strong>SPLIT (&quot;abcd&quot;, 3)</strong> returns a new list that consists of two records that have a <strong>STRING</strong> field. The field in the first record contains the text <strong>&quot;abc&quot;</strong>, and the field in the second record contains the text <strong>&quot;d&quot;</strong>.</td>
 </tr>
 <tr>
+<td>SPLIT (input, delimiter)</td>
+<td>Split the specified input string into substrings based on given delimiter.</td>
+<td>SPLIT ("XAb aBy", “aB”) returns a new list that consists of three records that have a STRING field. The field in the first record contains the text "X", the field in the second record contains the text " ", and the field in the third record contains the text "y". Empty delimiter results a new list that consists of one record that have a STRING field containing the input text. Empty input results a new empty list.
+Unspecified (null) input or delimiter throw an application exception.</td>
+</tr>
+<tr>
 <td>SPLITLIST (list, number)</td>
 <td>Split the specified list into batches, each of which contains the specified number of records. Return the result as a new list of batches that contains the following elements:
 <ul>
@@ -438,18 +444,6 @@ In this case, you can use the following expression to get the label of the enume
 <td>Return the specified list after the query has been modified to filter for the specified condition. This function differs from the <strong>WHERE</strong> function, because the specified condition is applied to any ER data source of the <strong>Table records</strong> type at the database level. The list and condition can be defined by using tables and relations.</td>
 <td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40. If <strong>Vendor</strong> is configured as an ER data source that refers to the <strong>VendTable</strong> table, and if <strong>parmVendorBankGroup</strong> is configured as an ER data source that returns a value of the <strong>String</strong> data type, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> returns a list of just the vendor accounts that belong to a specific bank group.</td>
 </tr>
-  <tr>
-    <td>SPLIT (input, length)</td>
-    <td>Split the specified input string into substrings, each of which has the specified length. Returns the result as a new list.</td>
-    <td>SPLIT ("abcd", 3) returns a new list that consists of two records that have a STRING field. The field in the first record contains the text "abc", and the field in the second record contains the text "d".</td>
-  </tr>
-    <tr>
-    <td>SPLIT (input, delimiter)</td>
-    <td>Split the specified input string into substrings based on given delimiter.</td>
-    <td>SPLIT ("XAb aBy", “aB”) returns a new list that consists of three records that have a STRING field. The field in the first record contains the text "X", the field in the second record contains the text " ", and the field in the third record contains the text "y". Empty delimiter results a new list that consists of one record that have a STRING field containing the input text. Empty input results a new empty list.
-Unspecified (null) input or delimiter throw an application exception.
-</td>
-  </tr>
 </tbody>
 </table>
 
@@ -463,20 +457,20 @@ Unspecified (null) input or delimiter throw an application exception.
 | AND (condition 1\[, condition 2, …\]) | Return **TRUE** if *all* specified conditions are true. Otherwise, return **FALSE**. | **AND (1=1, "a"="a")** returns **TRUE**. **AND (1=2, "a"="a")** returns **FALSE**. |
 | OR (condition 1\[, condition 2, …\]) | Return **FALSE** if *all* specified conditions are false. Return **TRUE** if *any* specified condition is true. | **OR (1=2, "a"="a")** returns **TRUE**. |
 |OR (condition 1\[, condition 2, …\])|Return FALSE if all specified conditions are false. Return TRUE if any specified condition is true.|OR (1=2, "a"="a") returns TRUE.|
-|VALUEIN (input, list, list item expression)|Determine whether a specified input matches any value of an item in a given list. First argument represents the path to a data source element the value of which will be matched. Second argument represents the path to a data source element of the record list type as the list of records containing an expression the value of which will be compared with a specified input. Third argument represents an expression that points to a single field (or expression that contains this field) of a given list to be used in matching. Return TRUE when a specified input matches the result of execution of configured expression for at least one record|See example here: [Examples: VALUEIN (input, list, list item expression)](#examples-valuein-input-list-list-item-expression)|
+| VALUEIN (input, list, list item expression) | Determine whether a specified input matches any value of an item in a given list. First argument represents the path to a data source element the value of which will be matched. Second argument represents the path to a data source element of the record list type as the list of records containing an expression the value of which will be compared with a specified input. Third argument represents an expression that points to a single field (or expression that contains this field) of a given list to be used in matching. Return **TRUE** when a specified input matches the result of execution of configured expression for at least one record. | See example here: [Examples: VALUEIN (input, list, list item expression)](#examples-valuein-input-list-list-item-expression) |
 
 #### Examples: VALUEIN (input, list, list item expression)
 In general, **VALUEIN** function is translated to the set of **OR** conditions:
 (input = list.item1.value) OR (input = list.item2.value) OR …).
 
 ##### Example 1
-You define the following data source in your model mapping: **List**(**Calculated field** type), which contains the expression **SPLIT ("a,b,c",",")**
+You define the following data source in your model mapping: **List**(**Calculated field** type), which contains the expression **SPLIT ("a,b,c", ",")**
 
-When a data source is called being configured as the **VALUEIN ("B", List,List.Value)** expression, it returns **TRUE**. In this case **VALUEIN** functionis translated to the following set of conditions
+When a data source is called being configured as the **VALUEIN ("B", List, List.Value)** expression, it returns **TRUE**. In this case **VALUEIN** functionis translated to the following set of conditions:
 
-((“B” = “a”) or (“B” = “b”) or (“B” = “c”)) and (“B” = “b”) is equal to**TRUE**.
+((“B” = “a”) or (“B” = “b”) or (“B” = “c”)) and (“B” = “b”) is equal to **TRUE**.
 
-When a data source is called being configured as the **VALUEIN ("B", List, LEFT(List.Value, 0))** expression, it returns **FALSE**. In this case **VALUEIN** function is translated to the following condition
+When a data source is called being configured as the **VALUEIN ("B", List, LEFT(List.Value, 0))** expression, it returns **FALSE**. In this case **VALUEIN** function is translated to the following condition:
 
 (“B” = “”) which is not equal to **TRUE**.
 
@@ -486,7 +480,6 @@ exception. For example, it may happen for a data source configured as follows **
 In some cases, **VALUEIN** function is translated to the database statement using the **EXISTS JOIN** operator. It happens when the **FILTER** function is used, and the following conditions are satisfied:
 
 -   Option **ASK FOR QUERY** is turned off for data source of the **VALUEIN** function that refers to the list of records (there will be no additional conditions applied at run-time to this data source);
-
 -   Data source of the **VALUEIN** function that refers to the list of records does not have any configured nested expressions;
 -   List item of the **VALUEIN** function refers to a field (not an expression or method) of given data source.
 
@@ -690,7 +683,7 @@ When a data source is called being configured as the **FILTER (In, VALUEIN (In.d
 </tr>
 <tr>
 <td>GUIDVALUE (input)</td>
-<td>Convert the specified input of the <strong>String</strong> data type to a data item of the <strong>GUID</strong> data type.</td>
+<td>Convert the specified input of the <strong>String</strong> data type to a data item of the <strong>GUID</strong> data type. Note that the <strong>TEXT()</strong> function can be used to perform opposite conversion of the specified input of the <strong>GUID</strong> data type to a data item of the <strong>String</strong> data type.</td>
 <td>You define the following data sources in your model mapping:
 <ul>
 <li><strong>myID</strong> (<strong>Calculated field</strong> type), which contains the expression <strong>GUIDVALUE(&quot;AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0&quot;)</strong></li>
@@ -704,13 +697,6 @@ When these data sources are defined, you can use an expression such as <strong>F
 <td>Parse data in JavaScript Object Notation (JSON) format that is accessed by the specified path to extract a scalar value that is based on the specified ID.</td>
 <td>The data source <strong>$JsonField</strong> contains the following data in JSON format: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>. For this data source, </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> returns the value <strong>7.3.1234.1</strong> of the <strong>String</strong> data type.</td>
 </tr>
-<tr>
-  <td>GUIDVALUE (input)</td>
-  <td>Converts the specified input of the <strong>String</strong> data type to a data item of the <strong>GUID</strong> data type.
-Note that the <strong>TEXT()</strong> function can be used to perform opposite conversion of the specified input of the <strong>GUID</strong> data type to a data item of the <strong>String</strong> data type.
-</td>
-  <td><p>You define the following data sources in your model mapping:</p> <ul><li><strong>myID (Calculated field type)</strong>, which contains the expression <strong>GUIDVALUE (“AF5CCDAC-F728-4609-8C8B-A4B30B0C0AA0”)</strong></li><li>Users (Table records type), which refers to the <strong>UserInfo</strong> table</li></ul><p>When these data sources are defined, you can use an expression such as <strong>FILTER (Users, Users.objectId = myID</strong>) to filter the UserInfo table by the objectId field of the <strong>GUID</strong> data type.</p></td>
-  </tr>
 </tbody>
 </table>
 
@@ -748,9 +734,9 @@ Note that the <strong>TEXT()</strong> function can be used to perform opposite c
 | FA\_BALANCE (fixed asset code, value model code, reporting year, reporting date) | Return the prepared data container of the fixed asset balance. The reporting year must be specified as a value of the **AssetYear** enumeration in Finance and Operations. | **FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** returns the prepared data container of balances for fixed asset **"COMP-000001"** that has the **"Current"** value model on the current Finance and Operations session date. |
 | TABLENAME2ID (string) | Return an integer representation of a table ID for the specified table name. | **TABLENAME2ID ("Intrastat")** returns **1510**. |
 | ISVALIDCHARACTERISO7064 (string) | Return the Boolean value **TRUE** when the specified string represents a valid international bank account number (IBAN). Otherwise, return the Boolean value **FALSE**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** returns **TRUE**. **ISVALIDCHARACTERISO7064 ("AT61")** returns **FALSE**. |
-|NUMSEQVALUE (number sequence code, scope, scope id)|Returns new generated value of number sequence by given code, scope and scope ID of given number sequence.<br></br>Specify number sequence scope by using value of ERExpressionNumberSequenceScopeType enumeration (**Shared**, **Legal entity** or **Company**).<br></br>Specify empty string as scope ID for **Shared** scope type. <br></br>Specify the company code for **Company** and **Legal entity** scope types. Empty string as scope ID for **Company** and **Legal entity** scope types means the current company code value.|You define the following data sources in your model mapping:<br></br>-	**enumScope (Dynamics 365 for Operations enumeration type**), which refers to the **ERExpressionNumberSequenceScopeType** enumeration<br></br>-	NumSeq (Calculated field type), which contains the expression **NUMSEQVALUE ("Gene_1", enumScope.Company, "")**<br></br>When the **NumSeq** data source is called, it returns the new generated value of number sequence **Gene_1** that has been configured for the company in the context of which ER format is executed.|
-|NUMSEQVALUE (number sequence code)|Returns new generated value of number sequence by given code using the **Company** scope and code of the company in the context of which ER format is executed as scope parameter.|You define the following data sources in your model mapping:<br></br>-	**NumSeq (Calculated field type)**, which contains the expression **NUMSEQVALUE ("Gene_1")**<br></br>When the NumSeq data source is called, it returns the new generated value of number sequence **Gene_1** that has been configured for the company in the context of which ER format is executed.|
-|NUMSEQVALUE (number sequence record ID)|Returns new generated value of number sequence by given RecId of the number sequence.|You define the following data sources in your model mapping:<br></br>-	**LedgerParms (Table type)**, which refers to the **LedgerParameters** table<br></br>-	**NumSeq (Calculated field type)**, which contains the expression **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**<br></br>When the **NumSeq** data source is called, it returns the new generated value of number sequence that has been configured in General ledger parameters for the company in the context of which ER format is executed. This number sequence uniquely identifies journals acting as batch number linking the transactions together.|
+| NUMSEQVALUE (number sequence code, scope, scope id) | Returns new generated value of number sequence by given code, scope and scope ID of given number sequence.<br>Specify number sequence scope by using value of ERExpressionNumberSequenceScopeType enumeration (**Shared**, **Legal entity** or **Company**).<br>Specify empty string as scope ID for **Shared** scope type. <br>Specify the company code for **Company** and **Legal entity** scope types. Empty string as scope ID for **Company** and **Legal entity** scope types means the current company code value.| You define the following data sources in your model mapping:<br>-	**enumScope (Dynamics 365 for Operations enumeration type**), which refers to the **ERExpressionNumberSequenceScopeType** enumeration<br>-	**NumSeq (Calculated field** type), which contains the expression **NUMSEQVALUE ("Gene_1", enumScope.Company, "")**<br>When the **NumSeq** data source is called, it returns the new generated value of number sequence **Gene_1** that has been configured for the company in the context of which ER format is executed. |
+| NUMSEQVALUE (number sequence code) | Returns new generated value of number sequence by given code using the **Company** scope and code of the company in the context of which ER format is executed as scope parameter. | You define the following data sources in your model mapping:<br>-	**NumSeq (Calculated field type)**, which contains the expression **NUMSEQVALUE ("Gene_1")**<br>When the **NumSeq** data source is called, it returns the new generated value of number sequence **Gene_1** that has been configured for the company in the context of which ER format is executed. |
+| NUMSEQVALUE (number sequence record ID) | Returns new generated value of number sequence by given RecId of the number sequence. | You define the following data sources in your model mapping:<br>-	**LedgerParms (Table** type), which refers to the **LedgerParameters** table<br>-	**NumSeq (Calculated field** type), which contains the expression **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**<br>When the **NumSeq** data source is called, it returns the new generated value of number sequence that has been configured in General ledger parameters for the company in the context of which ER format is executed. This number sequence uniquely identifies journals acting as batch number linking the transactions together. |
 
 ### Functions list extension
 
