@@ -1,7 +1,7 @@
 Security and Role management in Attract
 =======================================
 
-This article provides an overview of the elements of role security inMicrosoft Dynamics 365 for Talent: Attract.
+This article provides an overview of the elements of role security in Microsoft Dynamics 365 for Talent: Attract.
 
 Attract uses role-based security. In role-based security, access is not granted
 to individual users, only to security roles. Users are assigned to roles. A user
@@ -9,22 +9,23 @@ who is assigned to a security role has access to the set of privileges that is
 associated with that role. Attract provides five basic user roles that can be
 used: Administrator, Hiring Manager, Recruiter, Interviewer, and Read only.
 
-Administrators are the only role that can add users. To add users, navigate to
+Administrators are the only role that can add other users. To add new users, navigate to
 the **Admin Center** and select the **User Permissions** tab, select Assign user
 and search for the user that you would like to add and assign their permissions.
 To Edit existing privileges, you can choose assign user and search for the
 existing user to edit their privileges OR you can find the user in the list and
 select the ‘edit’ option. Deleting the permissions of the user does not remove
 them from the system. However, it restricts the user’s permissions within
-Attract. Example: Hilda’s has been assigned the Hiring manager security role.
+Attract. Example: Hilda has been assigned the Hiring manager security role.
 Hilda is then added to a job as a hiring manager. If Hilda’s security role of a
-hiring manager is later removed, she will remain as a hiring manager on the job.
+hiring manager is later removed, she will remain as a hiring manager on the job she was added as a hiring manager earlier.
 She will still have access to that job but will be unable to create any new
 jobs.
 
 Listed below is a high-level description of each role. See the table following
-the role descriptions to see detailed access information. Note: Some features
-are only available with the purchase of the Comprehensive Hiring Add-on for
+the role descriptions to see detailed access information. 
+
+Note: Some features are only available with the purchase of the Comprehensive Hiring Add-on for
 Attract.
 
 Administrator role
