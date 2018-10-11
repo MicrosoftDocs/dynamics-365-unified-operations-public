@@ -1,4 +1,4 @@
-Activities in Attract
+Hiring Process Activities in Attract
 =====================
 
 Activities can be added as part of the hiring process on a job in Attract.
