@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Foreign currency revaluation for advance holders in Russia
+title: Revaluate foreign currency for advance holders (Russia)
 description: This topic provides information about foreign currency revaluation for advance holders in Russia.
 author: 
 manager: AnnBe
-ms.date: 09/07/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.search.validFrom: 2018-10-31
 
 ---
 
-# Foreign currency revaluation for advance holders in Russia
+# Revaluate foreign currency for advance holders (Russia)
 
 [!include [banner](../includes/banner.md)]
 
