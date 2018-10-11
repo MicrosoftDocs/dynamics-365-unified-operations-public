@@ -61,7 +61,7 @@ The **Overview** tab displays a list of all the reports that are set up in the s
 
 3. Go to the **General** tab which displays the general parameters for report generation. 
 
-4. In the **Currency** fielf, define whether the data in the report will be presented in the company's default currency (“Base currency”), or  reporting currency (“Reporting currency”). This setup can also be defined for each cell separately.
+4. In the **Currency** field, define whether the data in the report will be presented in the company's default currency (choose “Base currency”), or  reporting currency (choose “Reporting currency”). This setup can also be defined for each cell separately.
    
 5. In the **Period** field, define the default transaction calculation period. Data of the report will be calculated for the chosen period based on the specified date at the report run.
    
