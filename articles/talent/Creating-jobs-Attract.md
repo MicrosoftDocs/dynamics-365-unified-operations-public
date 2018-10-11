@@ -12,7 +12,7 @@ creating a job, the user will be prompted to select their role in the process;
 hiring manager or recruiter. Once a role has been selected the user will be
 prompted select a **Process template**. If the user selects ‘Skip’ the default
 template will be used. To find out more information regarding templates refer to
-the [Process Templates in Attract](../Dynamics-365-Opersations/articles/talent/Process-templates-Attract.md) topic.
+the [Process Templates in Attract](./Dynamics-365-Opersations/articles/talent/Process-templates-Attract.md) topic.
 
 A job in Attract contains **Job details**, a **Hiring team**, a **Hiring
 process**, **Job posting(s)** and **Analytics**.
