@@ -114,7 +114,7 @@ the recruiter or hiring manager can view an applicant for the Software Developer
 role and choose to add individuals to view the PowerApp that they created with
 the library of interview questions.
 
-To learn more about the PowerApps Activity, refer to the Extensibility topic.
+To learn more about the PowerApps Activity, refer to the [Extensibility](../extensibility.md) topic.
 
 Note: The PowerApps activity is only available with the Comprehensive Hiring
 Add-On
@@ -141,7 +141,7 @@ candidate’ the content will only display in the candidate experience and will
 not show in the hiring process within Attract. You can also select the content
 size to display.
 
-To learn more about the Web Content Activity, refer to the Extensibility topic.
+To learn more about the Web Content Activity, refer to the [Extensibility](../extensibility.md) topic.
 
 Note: The Web Content activity is only available with the Comprehensive Hiring
 Add-On
