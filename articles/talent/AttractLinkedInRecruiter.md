@@ -44,7 +44,7 @@ configure LinkedIn Recruiter with Attract are as follows:
     “Notify partner” button and refresh the page. It should now show as “Partner
     ready”
 
-[!Attract Admin view to indicate Attract side of requests have been completed](./media/PartnerReady.png)
+[!Attract Admin view to indicate Attract side of requests have been completed](./media/PartnerReadyRSC.png)
 
 6.  To complete the next step, you need to have an Admin privilege on your
     LinkedIn Recruiter Contract as well.
