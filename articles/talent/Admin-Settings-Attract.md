@@ -52,17 +52,18 @@ see the ‘Creating Process Templates in Attract’ topic.
 --------------------------
 
 Use the Career site management section to configure a link to the terms and conditions of the career site. You can include text explaining what the link is and any additional information that you would like displayed. A preview is provided in the form to show how it will appear on your career site.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 **Email template settings**
 ---------------------------
 
 In the Email template settings you can select a header image to be included within the email templates. The header selected will show on all email templates. Organizations can also add a link to their privacy and terms of use for communications to the footer of the template.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 To learn more, review the Email Template topic.
 
 **Offer Process**
+---------------------------
 
 You can configure the approval process for Offer within the Offer process
 section. There is an option to require the offer to be approved before sending
