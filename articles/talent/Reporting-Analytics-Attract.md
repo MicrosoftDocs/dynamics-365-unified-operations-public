@@ -4,7 +4,7 @@ Reporting and Analytics in Attract
 This article describes the reporting and analytics features in Microsoft
 Dynamics 365 for Talent: Attract.
 
-Analytic report features in Attract provide hiring process insights. Features
+Analytic report features in Attract provide insights about the organization's hiring process. Features
 available include:
 
 -   **Job Analytics:** Click the Analytics tab within a job for metrics on the
@@ -19,7 +19,7 @@ available include:
 -   **Cross-filtering:** Click visuals within a report to view other report
     metrics filtered by selected data
 
--   **Export to Excel:** Download and Excel sheet of Attract data behind the
+-   **Export to Excel:** Download an Excel sheet of Attract data behind the
     report
     
 >[!IMPORTANT]
@@ -53,16 +53,16 @@ process. Key metrics include:
 Role-level Security
 -------------------
 
-Attract Reports are accessible for Admin, Read All, Recruiter, and Hiring
-Manager [Roles](./Security-in-Attract.md). Unassigned users do not have access to either of the analytic
+Attract Reports are accessible for Admin, Read only, Recruiter, and Hiring
+manager [Roles](./Security-in-Attract.md). Unassigned users do not have access to either of the analytic
 report pages (*Job Analytics* or *Analytics Hub*).
 
 *Job Analytics* reports display data for the selected job. Users with hiring
 manager and recruiter participant roles can access *Job Analytics* for the
-selected job. Admin and Read All users can access *Job Analytics* for all jobs.
+selected job. Admin and Read only users can access *Job Analytics* for all jobs.
 
 *Analytics Hub* reports aggregate data across jobs where the user is a hiring
-manager or recruiter participant. Admin, Read All, Recruiter, and Hiring Manager
+manager or recruiter participant. Admin, Read only, Recruiter, and Hiring manager
 [Roles](./Security-in-Attract.md) can access the *Analytics Hub*.
 
 To learn more about Roles, see the [Security in Attract](./Security-in-Attract.md) topic.
