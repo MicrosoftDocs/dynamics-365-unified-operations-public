@@ -1,4 +1,4 @@
-Admin Center in Attract
+Admin Settings in Attract
 =======================
 
 The Admin Center in Attract contains various configuration settings, integration
