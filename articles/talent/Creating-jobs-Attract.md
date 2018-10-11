@@ -12,7 +12,7 @@ creating a job, the user will be prompted to select their role in the process;
 hiring manager or recruiter. Once a role has been selected the user will be
 prompted select a **Process template**. If the user selects ‘Skip’ the default
 template will be used. To find out more information regarding templates refer to
-the [Process Templates in Attract](./Process-templates-Attract.md) topic.
+the [Creating a Process Template in Attract](./Process-templates-Attract.md) topic.
 
 A job in Attract contains **Job details**, a **Hiring team**, a **Hiring
 process**, **Job posting(s)** and **Analytics**.
@@ -63,7 +63,7 @@ what notifications they will receive. Roles that can be selected are recruiter,
 hiring manager, delegate, and interviewer. To read more about role privileges
 please refer to the **Role management** document. Recruiters and hiring managers
 may appoint one or more delegates to work on their behalf. To read more about
-delegates please refer to the **Role management** document.
+delegates please refer to the [Security and Role management in Attract](./Security-in-Attract.md) topic.
 
 The hiring team can be updated after the job is activated.
 
@@ -91,9 +91,9 @@ post the job. The job can be posted to Talent Careers (A Dynamics365 for Talent
 career site) or to LinkedIn. The Attract team continually works to partner with
 job board aggregators so this list will expand over time.
 
-To learn more about job posting refer to the Career Site document.
+To learn more about job posting refer to the [Career Site functionality in Attract](./CareerSite.md) topic.
 
-**Note:** Job Posting functionality is only available with the Comprehensive
+[!NOTE] Job Posting functionality is only available with the Comprehensive
 Hiring Add-on for Attract.
 
 **Activate**
