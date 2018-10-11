@@ -16,7 +16,7 @@ various activity types that can be used in the hiring process in Attract.
 The prospect activity controls whether Prospects can be added to a job or not.
 By default, Prospects can be added to a job. To turn this off, change the
 **Enable prospects** toggle to Off. When the Prospect activity is enabled, the
-user can choose to allow Hiring managers to add and view prospects. Once this is
+user can choose to allow hiring managers to add and view prospects. Once this is
 on, the Prospect tab will be displayed within the Job.
 
 **Application Activity**
