@@ -7,6 +7,9 @@ position that best suits their profile and interests. Users for these
 recommendation features can provide feedback on individual recommendations and
 help us provide better recommendations in the future.
 
+Note: Intelligent recommendation features are only available with the
+Comprehensive Hiring Add-On
+
 Candidate Recommendations
 -------------------------
 
