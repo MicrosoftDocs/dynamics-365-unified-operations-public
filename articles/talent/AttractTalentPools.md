@@ -50,7 +50,8 @@ create and share a Talent pool.
 
 11. Click update to complete and save the operation.
 
-NOTE: For the organizations having the Comprehensive Hiring add-on, you can
+>[!NOTE]
+>For the organizations having the Comprehensive Hiring add-on, you can
 create unlimited number of Talent pools.
 
 Adding and removing candidates from a Talent Pool 
