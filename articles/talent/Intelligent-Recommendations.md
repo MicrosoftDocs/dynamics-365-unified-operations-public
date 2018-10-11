@@ -36,10 +36,10 @@ as to why you may not have found a recommendation useful.
 Job Recommendations 
 --------------------
 
-When candidates use the career site to apply to a job, we are able to recommend
+When prospects use the career site to apply to a job, we are able to recommend
 other open positions at the organization to them based on their past
-application(s) and their resume or candidate profile. This helps prospects find
-the best fit for themselves. We begin to make job recommendations to prospects
+application(s) and their resume or candidate profile. This helps prospects quickly discover
+the jobs that are the best fit for them. We begin to make job recommendations to prospects
 once there are more than 10 jobs posted on the career site. Prospects are able
 to navigate to the details of the job posting using the recommendation card and
 are also able to provide feedback about the recommendation to help improve
