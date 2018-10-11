@@ -28,7 +28,7 @@ Stage’. One or more activities can be added to a Stage by dragging and droppin
 into the appropriate stage or by double clicking on the activity in the
 Activities list.
 
-To learn more about the Activities, see [Hiring Process Activities in Attract](../Activities-in-Attract.md) topic.
+To learn more about the Activities, see [Hiring Process Activities in Attract](./Activities-in-Attract.md) topic.
 
 **Default template**
 --------------------
