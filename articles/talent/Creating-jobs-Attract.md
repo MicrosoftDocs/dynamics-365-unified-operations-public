@@ -79,7 +79,7 @@ can be turned off. Within each stage one or more pre-defined activities can be
 added or removed.
 
 To learn more about activities that can be added to the hiring process, review
-the [Hiring Process Activities in Attract](../Activities-in-Attract.md) topic.
+the [Hiring Process Activities in Attract](./Activities-in-Attract.md) topic.
 
  The process cannot be updated after the job is activated.
 
