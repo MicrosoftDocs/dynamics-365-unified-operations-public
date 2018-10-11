@@ -120,3 +120,19 @@ their work.
 Once the Admin creates a template for a particular type of email, they can use
 the ellipsis menu on the template row item to set it as the default as mentioned
 above.
+
+Consuming templates
+-------------------
+
+The hiring team can use the templates created by the Admin when sending an
+email. If multiple templates have been created for a user-sent email, a dropdown
+will appear in the email composition workflow allowing them to choose the
+template they would like to use. The template which is set as default by the
+Admin will pre-populate automatically to begin with, but the user can choose to
+use a different template as needed.
+
+Note: For emails that are sent automatically, multiple templates can be created
+but only one can be set as the active template to be used every time that type
+of email is sent. Since this process is event triggered, only the Admin can
+determine which template should be used as denoted by the Default and Autosent
+badges in the template library.
