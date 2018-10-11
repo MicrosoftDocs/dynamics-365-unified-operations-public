@@ -10,11 +10,11 @@ process template in Microsoft Dynamics 365 for Talent: Attract and provides a gu
 
 Organizations can choose whether to allow team members to create hiring process
 templates in Attract or only allow the Admin to create templates. To configure
-**Template management**, navigate to **Admin Center** --> **Template management.** Turn
+**Template management**, navigate to **Admin Center** --> **Template management** Turn
 Template management on to allow team members to create their own hiring process
 templates.
 
-**Note:**  Creating templates is part of the Comprehensive Hiring Add-on for Attract. 
+[!NOTE] Creating templates is part of the Comprehensive Hiring Add-on for Attract. 
 
 **Creating a process template**
 -------------------------------
@@ -22,20 +22,20 @@ templates.
 A template can be created by either an admin, recruiter or hiring manager. A
 **Process template** consists of **Stages** and **Activities**. Stages group one
 or more activities together. Every process template will have a **Prospect**,
-**Application**, and **Offer** activity. The **Stages** that contain these
+**Application**, and **Offer** activity by default. The **Stages** that contain these
 activities can be renamed. Additional stages can be added by selecting ‘+ New
 Stage’. One or more activities can be added to a Stage by dragging and dropping
 into the appropriate stage or by double clicking on the activity in the
-Activities list.
+Activities list. 
+
+[!NOTE] Stage names are exposed to candidates in the application status page. Please consider this while choosing names for stages.
 
 To learn more about the Activities, see [Hiring Process Activities in Attract](./activities-in-Attract.md) topic.
 
 **Default template**
 --------------------
 
-Only Admins can set the default template. Set the default template in Admin
-CenterTemplate management and click on the ellipses of a template card. Select
-‘Set as default’. The default template will be used if a template is not
+Only Admins can set the default template. Set the default template in **Admin Center** --> **Template management** and click on the ellipses of a template card. Select ‘Set as default’. The default template will be used if a template is not
 selected when creating a job.
 
 To create a template:
@@ -46,14 +46,14 @@ To create a template:
 
 3.  Enter in the **Template name** and select **Create.**
 
-4.  Select ‘**Default’** in the **Choose the approval process** list to require
+4.  Select **Default** in the **Choose the approval process** list to require
     Approval for a job.
 
 5.  Select to enable or disable Prospects
 
 6.  Optionally add or remove additional stages and activities.
 
-7.  Add a new stage by selecting **‘+ New Stage’**
+7.  Add a new stage by selecting **+ New Stage**
 
 8.  Remove a stage by hovering on the **Stage** and selecting the trash can icon
     that appears. Note: Prospect, Application and Offer stages cannot be removed
