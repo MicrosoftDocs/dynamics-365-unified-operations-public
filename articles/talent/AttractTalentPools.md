@@ -1,4 +1,4 @@
-Sourcing with Talent Pool
+Sourcing with Talent Pools
 =========================
 
 Recruiters and hiring managers can organize their candidates using Talent pools
