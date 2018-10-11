@@ -114,9 +114,8 @@ the recruiter or hiring manager can view an applicant for the Software Developer
 role and choose to add individuals to view the PowerApp that they created with
 the library of interview questions.
 
-To learn more about the PowerApps Activity, refer to the [Extensibility](./Extensibility.md) topic.
 
-Note: The PowerApps activity is only available with the Comprehensive Hiring
+[!Note] The PowerApps activity is only available with the Comprehensive Hiring
 Add-On
 
 **YouTube Activity**
@@ -128,8 +127,9 @@ to this activity. (See example above.) If you select ‘Show only to candidate�
 the video will only display in the candidate experience and will not show in the
 hiring process within Attract.
 
-Note: The YouTube activity is only available with the Comprehensive Hiring
+[!Note] The YouTube activity is only available with the Comprehensive Hiring
 Add-On
+
 
 **Web Content Activity**
 
@@ -141,14 +141,13 @@ candidate’ the content will only display in the candidate experience and will
 not show in the hiring process within Attract. You can also select the content
 size to display.
 
-To learn more about the Web Content Activity, refer to the [Extensibility](./Extensibility.md) topic.
-
-Note: The Web Content activity is only available with the Comprehensive Hiring
+[!Note]  The Web Content activity is only available with the Comprehensive Hiring
 Add-On
+
 
 **Microsoft Forms Activity**
 
-The **Microsoft F**orms activity allows you to embed a Microsoft Form into your
+The **Microsoft Forms** activity allows you to embed a Microsoft Form into your
 hiring process. Microsoft Forms allow you to create quizzes, surveys and polls.
 The Microsoft forms URL is required to save the activity to the hiring
 process**.** Similarly, to the PowerApps activity you can allow adding
@@ -162,5 +161,5 @@ will be submitting responses anonymously. If you want to see who has filled out
 your survey or quiz, you can require respondents to fill in their names as part
 of your questionnaire.
 
-Note: The Microsoft forms activity is only available with the Comprehensive
+[!Note] The Microsoft Forms activity is only available with the Comprehensive
 Hiring Add-On
