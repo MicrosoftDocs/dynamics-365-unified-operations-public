@@ -61,10 +61,10 @@ Interviewer role
 ----------------
 
 Any user with an AAD account within the organization can be added to a hiring
-team as an interviewer. The interview role can view the job and applicant data
-for the jobs that they are part of the hiring team. Within those jobs’
-interviewers can make hiring recommendations and provide feedback. They do not
-have the ability to update job or candidate information.
+team as an interviewer. The interviewer can view the job details and applicant data
+for the jobs in which they are part of the hiring team. In conext of those jobs,
+interviewers can make hiring recommendations and provide feedback about candidates. They do not
+have the ability to update job details or candidate information.
 
 Read only role
 --------------
@@ -77,7 +77,7 @@ Delegated roles
 
 Recruiters and hiring managers can add one or more delegates for themselves for
 each job where they are part of a hiring team. Delegates have the same
-privileges as the role that designated them as a delegate. For example, if a
+privileges as the person that designated them as a delegate. For example, if a
 hiring manager sets a delegate for themselves, the delegate will have the same
 privileges as the hiring manager for that job. (See the tables below for
 detailed recruiter and hiring manager privileges.) Neither recruiters nor hiring
@@ -98,7 +98,7 @@ privileges apply to the job details and actions that can be taken on a job.
 | Job Posting       | Create, read, update, and delete for jobs where they are on the hiring team      | Read only                                                                                                     | Read only   |
 | Process           | Create, read, update, and delete for jobs where they are part of the hiring team | Create, read, update, and delete for jobs where they are part of the hiring team                              | Read only   |
 | Add Applicants    | Can add applicants for jobs where they are part of the hiring team               | Can add applicants for jobs where they are part of the hiring team                                            | Not allowed |
-| Add Prospects     | Can add prospects for jobs where they are part of the hiring team                | There is a configuration option within the prospect activity setup that controls access to adding and viewing | Not allowed |
+| Add Prospects     | Can add prospects for jobs where they are part of the hiring team                | There is a configuration option within the [prospect activity setup](./activities-in-Attract.md#prospect-activity) that controls access to adding and viewing | Not allowed |
 | Activate job      | Can activate jobs where they are a part of the hiring team                       | Can activate jobs where they are a part of the hiring team                                                    | Not allowed |
 | Close job         | Can close jobs where they are a part of the hiring team                          | Not allowed                                                                                                   | Not allowed |
 | Delete job        | Can delete jobs where they are a part of the hiring team                         | Only if no applicants on job                                                                                  | Not allowed |
@@ -115,12 +115,12 @@ The following privileges apply to the job specific data for an applicant
 | Application documents   | Create, read, update, and delete for jobs where they are part of the hiring team | Create, read, update, and delete for jobs where they are part of the hiring team | Read only             |
 | Application Notes       | Create, read, update, and delete for jobs where they are part of the hiring team | Create, read, update, and delete for jobs where they are on the hiring team      | Create                |
 | Application Activity    | Can view where they are part of the hiring team                                  | Can view where they are part of the hiring teams                                 | Read only             |
-| Application feedback    | Can add feedback and view all feedback where they are part of the hiring team    | Can add feedback and view all feedback where they are part of the hiring team    | \*\* Can add feedback |
+| Application feedback    | Can add feedback and view all feedback where they are part of the hiring team    | Can add feedback and view all feedback where they are part of the hiring team    | Can add feedback\*\* |
 | Reject application      | Can reject where they are part of the hiring team                                | Not allowed                                                                      | Not allowed           |
 | Advance stage           | Can reject where they are part of the hiring team                                | Can advance where they are part of the hiring team                               | Not allowed           |
 | Launch offer management | Can launch offer management.                                                     | Configuration option on the offer activity                                       | No allowed            |
 
-\*\*There is a configuration option within the feedback activity setup that
+\*\*There is a configuration option within the [feedback activity setup](./activities-in-Attract.md#feedback-activity) that
 controls if interviewers can see each other’s feedback
 
 Process templates
