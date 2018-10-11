@@ -12,6 +12,7 @@ various activity types that can be used in the hiring process in Attract.
 [!NOTE] Process templates are available with the Comprehensive Hiring Add-on.
 
 **Prospect activity**
+----------------------
 
 The prospect activity controls whether Prospects can be added to a job or not.
 By default, Prospects can be added to a job. To turn this off, change the
@@ -28,6 +29,7 @@ application or is added to the application stage, set the **Send mail to
 candidate** toggle to On.
 
 **Scheduler Activity**
+----------------------
 
 The **Scheduler Activity** is an optional activity. This activity has two
 components; **Candidate availability** and **Schedule**. The **Candidate
@@ -50,6 +52,7 @@ to candidate option** to On. If this is set to Off, the candidate will get the
 interview schedule only if and when they login to the candidate portal.
 
 **Feedback Activity**
+----------------------
 
 The **Feedback** activity is an optional activity. This activity provides an
 option for interview participants to enter a recommendation on an applicant as well as
@@ -61,6 +64,7 @@ own. Also, organizations can allow interviewers to edit their feedback after
 their first submission.
 
 **Interview Activity**
+----------------------
 
 The **Interview Activity** is an optional activity. This activity has three
 components; **Candidate availability**, **Schedule** and **Feedback**. The
@@ -92,6 +96,7 @@ individuals prior to submitting their own. Also, organizations can allow
 interviewers to edit their feedback after their first submission.
 
 **PowerApps Activity**
+----------------------
 
 The PowerApps activity provides an option to embed a PowerApp in the hiring
 process. The PowerApp can be required for All applicants, Internal Applicants,
@@ -119,6 +124,7 @@ the library of interview questions.
 Add-On
 
 **YouTube Activity**
+----------------------
 
 The **YouTube** activity allows you to add the sharing of a video to your hiring
 process. The YouTube video URL is required to save the activity to the hiring
@@ -132,6 +138,7 @@ Add-On
 
 
 **Web Content Activity**
+----------------------
 
 The **Web content** activity allows you to embed a URL with content into the
 hiring process. The URL is required to save the activity to the hiring process.
@@ -146,6 +153,7 @@ Add-On
 
 
 **Microsoft Forms Activity**
+---------------------------
 
 The **Microsoft Forms** activity allows you to embed a Microsoft Form into your
 hiring process. Microsoft Forms allow you to create quizzes, surveys and polls.
