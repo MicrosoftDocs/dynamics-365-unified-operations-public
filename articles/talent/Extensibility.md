@@ -62,7 +62,7 @@ may also tie the PowerApp with a Flow if desired. For instance, you may want to
 have a PowerApp that recruiters use to fill in a form while perform a phone
 screen which will evaluate whether an applicant can be advanced further. This
 type of activity can only be viewed by members of the hiring team. To learn more
-about how to configure this activity please refer to the Activities in Attract
+about how to configure this activity please refer to the [Activities in Attract](./activities-in-Attract.md)
 topic.
 
 Note: The PowerApps activity is only available with the Comprehensive Hiring
@@ -75,7 +75,7 @@ you may have built to meet your business and hiring needs, right in the hiring
 process or in the candidate portal. Once again, you have the ability to
 read/write data directly from CDS for Apps and can tailor such a solution to
 trigger Flows or leverage Azure functions. To learn more about how to configure
-this activity please refer to the Activities in Attract topic.
+this activity please refer to the [Activities in Attract](./activities-in-Attract.md) topic.
 
 Note: The Web content activity is only available with the Comprehensive Hiring
 Add-On.
