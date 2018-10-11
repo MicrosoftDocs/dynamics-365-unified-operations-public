@@ -65,7 +65,7 @@ please refer to the **Role management** document. Recruiters and hiring managers
 may appoint one or more delegates to work on their behalf. To read more about
 delegates please refer to the **Role management** document.
 
-Note: The hiring team can be updated after the job is activated.
+The hiring team can be updated after the job is activated.
 
 **Process**
 ---------------
@@ -79,9 +79,9 @@ can be turned off. Within each stage one or more pre-defined activities can be
 added or removed.
 
 To learn more about activities that can be added to the hiring process, review
-the **Activities in Attract** document.
+the **Activities in Attract** topic.
 
-Note: The process cannot be updated after the job is activated.
+ The process cannot be updated after the job is activated.
 
 **Postings**
 ---------------
