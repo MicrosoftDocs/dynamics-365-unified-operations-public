@@ -39,6 +39,12 @@ The topic discusses the templates and underlying tasks that are used to synchron
 > [!NOTE]
 > Before you can use the Prospect to cash solution, you should be familiar with [Dynamics 365 Data integration](/common-data-service/entity-reference/dynamics-365-integration).
 
+## Data flow in Prospect to cash
+
+The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Finance and Operations and Sales.  The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales. The following illustration shows how the data is synchronized between Finance and Operations and Sales.
+
+[![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+
 ## Template and tasks
 
 The following template and underlying tasks are used to synchronize sales quotation headers and lines directly from Sales to Finance and Operations:
