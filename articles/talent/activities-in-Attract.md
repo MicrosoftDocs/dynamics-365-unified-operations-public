@@ -9,7 +9,7 @@ not selected, the Default template will be used. The hiring process can also be
 modified on the job after the template is applied. This topic describes the
 various activity types that can be used in the hiring process in Attract.
 
-Note: Process templates are available with the Comprehensive Hiring Add-on.
+[!NOTE] Process templates are available with the Comprehensive Hiring Add-on.
 
 **Prospect activity**
 
@@ -115,7 +115,7 @@ role and choose to add individuals to view the PowerApp that they created with
 the library of interview questions.
 
 
-[!Note] The PowerApps activity is only available with the Comprehensive Hiring
+[!NOTE] The PowerApps activity is only available with the Comprehensive Hiring
 Add-On
 
 **YouTube Activity**
@@ -127,7 +127,7 @@ to this activity. (See example above.) If you select ‘Show only to candidate�
 the video will only display in the candidate experience and will not show in the
 hiring process within Attract.
 
-[!Note] The YouTube activity is only available with the Comprehensive Hiring
+[!NOTE] The YouTube activity is only available with the Comprehensive Hiring
 Add-On
 
 
@@ -141,7 +141,7 @@ candidate’ the content will only display in the candidate experience and will
 not show in the hiring process within Attract. You can also select the content
 size to display.
 
-[!Note]  The Web Content activity is only available with the Comprehensive Hiring
+[!NOTE] The Web Content activity is only available with the Comprehensive Hiring
 Add-On
 
 
@@ -161,5 +161,5 @@ will be submitting responses anonymously. If you want to see who has filled out
 your survey or quiz, you can require respondents to fill in their names as part
 of your questionnaire.
 
-[!Note] The Microsoft Forms activity is only available with the Comprehensive
+[!NOTE] The Microsoft Forms activity is only available with the Comprehensive
 Hiring Add-On
