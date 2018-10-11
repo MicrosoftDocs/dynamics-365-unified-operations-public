@@ -42,7 +42,7 @@ What is "One voucher"?
 ======================
 
 The existing functionality for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you 
-enter multiple subledger transactions in the context of a single voucher. We refer to this functionality as "One voucher." You can 
+enter multiple subledger transactions (customer, vendor, fixed assets, project, and bank) in the context of a single voucher. We refer to this functionality as "One voucher." You can 
 create One voucher by using one of the following methods:
 
 -   Set up the journal name (**General ledger** \> **Journal setup** \>**Journal names**) so that the **New voucher** field is set to 
@@ -66,7 +66,7 @@ Customer/customer, vendor/customer, or bank/bank.
 Issues with One voucher
 =======================
 
-The One voucher functionality causes issues during settlement, tax calculation, reconciliation of a subledger to the general ledger, 
+The One voucher functionality causes issues during settlement, tax calculation, transaction reversal, reconciliation of a subledger to the general ledger, 
 financial reporting, and more. (For example, for more information about issues that can occur during settlement, see [Single voucher 
 with multiple customer or vendor records](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records).)
 To work and report correctly, these processes and reports require transaction details. Although some scenarios might still work 
@@ -92,7 +92,7 @@ functional gaps that depend on this functionality, the functionality won't becom
 following schedule: 
 
 - **Spring 2018 release** – The functionality will be turned off by default through a General ledger parameter. However, you can turn 
-  the functionality on if your organization has a scenario that falls in the business scenario gaps that are listed later in this topic.
+  the functionality on if your organization has a scenario that falls in the business scenario gaps that are listed later in this topic. The parameter "Allow multiple transactions within one voucher" is found on the General tab of General ledger parameters.
 
   -   If a customer has a business scenario that doesn't require One voucher, don't turn the functionality on. We won't fix "bugs" in 
   the areas that were identified later in this topic if this functionality is used even though another solution exists.
@@ -100,8 +100,7 @@ following schedule:
   -   Stop using One voucher for integrations into Microsoft Dynamics 365 Finance and Operations, unless the functionality is required
   for one of the functional gaps.
 
-- **Fall 2018 and later releases** – The functional gaps will be filled. After the functional gaps are filled, the One voucher 
-  functionality will be permanently turned off.
+- **Later releases** – All functional gaps will be filled. **After the functional gaps are filled, it will be at least one year after the new features are delivered before the One voucher functionality will be permanently turned off.** Adequate time must be given for customers and ISV's to react to the new functionality, which may include updating their business processes, entities and integrations.
 
 - > [!IMPORTANT]
   > Please note that the **One voucher number only** option has NOT been removed from the Journal name setup.  This option is still supported when the voucher only contains Ledger account types.  Customers must be careful when using this setting because the voucher will not post if they use **One voucher number only** but then enter more than one customer, vendor, bank, fixed asset, or project.  Also, customers can still enter a mix of subledger account types, such as a payment within a single voucher that contains account types of Vendor/Bank.  
@@ -116,8 +115,7 @@ scenarios, alternatives can meet the same business requirements.
 Scenarios that require One voucher
 ----------------------------------
 
-The following scenarios can be accomplished only by using the One voucher functionality. These functional gaps will be filled through 
-other features in the Fall 2018 and later releases.
+The following scenarios can be accomplished only by using the One voucher functionality. If your organization has any of these scenarios, you must change the GL parameter to allow entry of multiple transactions within a voucher. These functional gaps will be filled through other features in later releases.
 
 -   **Post vendor or customer payments in summary form to a bank account**
 
@@ -163,6 +161,16 @@ The following fixed asset transactions also create multiple transactions within 
 -   An additional acquisition is made on an asset and ‘catch-up’ depreciation is calculated.
 -   An asset is split.
 -   A parameter to calculate depreciation on disposal is enabled and then the asset is disposed.
+-   An asset's service date is prior to the acquisition date, which results in a depreciation adjustment being posted.
+
+-   **Customer reimbursement**
+
+If the Reimbursement periodic task is run under Accounts receivable, it will create a tranasction to move the balance from a Customer to a Vendor. This scenario requires the use of One voucher in ordre to reimburse the customer.
+
+-   **Bill of exchange and Promissory notes**
+
+The Bill of exchange and Promissory notes require the use of One voucher because the transactions are moving the customer or vendor balance from one Accounts receivable/Accounts payable to another based on the state of the payment. 
+
 
 Scenarios that don't require One voucher
 ----------------------------------------
