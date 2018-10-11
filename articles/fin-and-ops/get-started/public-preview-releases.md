@@ -58,6 +58,8 @@ A new program is available to just update a Tier 2 sandbox to the latest service
 ### Service update experience
 All service updates will have a similar experience of configure-> view -> update -> validate. 
 
+![Service update experience](./media/service-update-experience.png)
+
 ### Access targeted releases for customers
 If you are interested in participating in the targeted releases of Finance and Operations and would like to learn more about the CAAP or CEAP program, see the [Insider program](https://experience.dynamics.com/).
 
