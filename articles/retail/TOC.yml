@@ -315,6 +315,8 @@
       href: localizations/emea-eeu-petty-cash-for-retail.md
     - name: Retail customer invoices and return sales orders in Eastern European countries
       href: localizations/emea-eeu-retail-invoices.md
+    - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
+      href: localizations/emea-eeu-deployment.md
   - name: France
     items:
     - name: Cash register functionality

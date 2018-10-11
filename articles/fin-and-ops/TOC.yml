@@ -34,6 +34,8 @@
     - name: What's new or changed
       href: get-started/whats-new-changed.md
       items:
+      - name: One version service updates FAQ
+        href: get-started/one-version.md
       - name: Software lifecycle policy and cloud releases
         href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
       - name: Software lifecycle policy and on-premises releases
@@ -46,8 +48,12 @@
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
+      - name: Finance and Operations version 8.1.1 (October 2018)
+        href: get-started/whats-new-changed-8-1-1.md 
       - name: Finance and Operations version 8.1 (October 2018)
         href: get-started/whats-new-changed-8-1-October-2018.md 
+      - name: Platform update 21 (October 2018)
+        href: get-started/whats-new-platform-update-21.md
       - name: Platform update 20 (September 2018)
         href: get-started/whats-new-platform-update-20.md
       - name: Finance and Operations version 8.0 (April 2018)
