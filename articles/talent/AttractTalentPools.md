@@ -164,7 +164,7 @@ row from a result set or inside of a talent pool to view their profile.
 7.  You can view the candidate’s LinkedIn information under the LinkedIn tab,
     please make sure you have connected your LinkedIn account under user
     settings and your environment’s LinkedIn Recruiter connection has been
-    established. Refer to \<Sourcing with LinkedIn document\>
+    established. Refer to [Sourcing with LinkedIn Recruiter](./AttractLinkedInRecruiter.md)
 
 Add candidates from a Talent Pool to a job
 ------------------------------------------
