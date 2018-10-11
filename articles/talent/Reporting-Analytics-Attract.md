@@ -13,7 +13,7 @@ available include:
 -   **Analytics Hub:** Click Analytics on the left navigation for aggregated
     metrics across all your jobs
 
--   **Role-level security:** Access to reports in controlled by Attract [Role]
+-   **Role-level security:** Access to reports is controlled by Attract [Roles](./Security-in-Attract.md)
     and job participant role
 
 -   **Cross-filtering:** Click visuals within a report to view other report
@@ -54,7 +54,7 @@ Role-level Security
 -------------------
 
 Attract Reports are accessible for Admin, Read All, Recruiter, and Hiring
-Manager [Roles]. Unassigned users do not have access to either of the analytic
+Manager [Roles](./Security-in-Attract.md). Unassigned users do not have access to either of the analytic
 report pages (*Job Analytics* or *Analytics Hub*).
 
 *Job Analytics* reports display data for the selected job. Users with hiring
@@ -63,7 +63,9 @@ selected job. Admin and Read All users can access *Job Analytics* for all jobs.
 
 *Analytics Hub* reports aggregate data across jobs where the user is a hiring
 manager or recruiter participant. Admin, Read All, Recruiter, and Hiring Manager
-[Roles] can access the *Analytics Hub*.
+[Roles](./Security-in-Attract.md) can access the *Analytics Hub*.
+
+To learn more about Roles, see the [Security in Attract](./Security-in-Attract.md) topic.
 
 Cross-filter
 ------------
