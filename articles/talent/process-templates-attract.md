@@ -30,7 +30,7 @@ Activities list.
 
 [!NOTE] Stage names are exposed to candidates in the application status page. Please consider this while choosing names for stages.
 
-To learn more about the Activities, see [Hiring Process Activities in Attract](./activities-in-Attract.md) topic.
+To learn more about the Activities, see [Hiring Process Activities in Attract](./activities-attract.md) topic.
 
 **Default template**
 --------------------
