@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Invoices for the purpose of payment (Russia)
+title: Invoices for payment (Russia)
 description: This topic explains how to post and print invoices for payment in Microsoft Dynamics 365 for Finance and Operations in Russia.
 author: ShylaThompson
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Invoices for the purpose of payment (Russia)
+# Invoices for payment (Russia)
 [!include [banner](../includes/banner.md)]
 
 Invoice for payment is an optional document containing payment details of the recipient (seller), for which the payer (buyer) transfers money for the purposes listed in the invoice for payment, such as work or services. This is a document that serves to pay for the purchased goods by the buyer or to transfer a prepayment (advance). 
