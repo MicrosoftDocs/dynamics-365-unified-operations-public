@@ -306,7 +306,7 @@
       href: ../dev-itpro/data-entities/integration-overview.md?toc=/fin-and-ops/toc.json
     - name: Data integration APIs
       items:
-      - name: Data management package API
+      - name: Data management package REST API
         href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
       - name: Service endpoints
         href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
@@ -315,10 +315,12 @@
           href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
       - name: OData
         href: ../dev-itpro/data-entities/odata.md?toc=/fin-and-ops/toc.json
-      - name: Custom services
+      - name: Custom service development
         href: ../dev-itpro/data-entities/custom-services.md?toc=/fin-and-ops/toc.json
       - name: Recurring integrations
         href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
+      - name: Test services using third-party utilities
+        href: ../dev-itpro/data-entities/third-party-service-test.md
     - name: Development for integration
       items:
       - name: Data integration using data entities
@@ -330,9 +332,9 @@
           href: ../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/fin-and-ops/toc.json
         - name: Configure financial cross-company data sharing
           href: ../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/fin-and-ops/toc.json
-        - name: Create a record template to facilitate data entry
+        - name: Create record templates to facilitate data entry
           href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
-        - name: Use a record template to create a new record
+        - name: Create records using record templates
           href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
       - name: Data integration using the Common Data Service
         href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
@@ -389,6 +391,8 @@
       - name: Copy configuration data between companies or legal entities
         href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
         items:
+        - name: Configuration data packages
+          href: ../dev-itpro/data-entities/configuration-data-packages.md
         - name: Configuration data packages (July 2017 release only)
           href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
       - name: Configuration data templates
@@ -397,6 +401,10 @@
         href: ../dev-itpro/data-entities/entity-change-track.md?toc=/fin-and-ops/toc.json
       - name: Find information about standard data entities
         href: ../dev-itpro/data-entities/data-entities-report.md?toc=/fin-and-ops/toc.json
+      - name: Data templates with multiple worksheets
+        href: ../dev-itpro/data-entities/excel-template-multiple.md
+      - name: Enable change tracking for entities
+        href: ../dev-itpro/data-entities/entity-change-track.md 
       - name: Configuration keys and data entities
         href: ../dev-itpro/data-entities/config-key-entities.md?toc=/fin-and-ops/toc.json
       - name: Configuration data packages
@@ -408,6 +416,8 @@
         href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
     - name: Development for data entities
       items:
+      - name: Design principles and best practices for data entities
+        href: ../dev-itpro/dev-tools/design-best-practices.md
       - name: Create new data entities
         href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
       - name: Data entity properties
@@ -430,12 +440,16 @@
         href: ../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json
       - name: Use third-party service testing utilities
         href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json
+      - name: Create read-only entities that expose financial dimensions
+        href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/fin-and-ops/toc.json
     - name: Bring your own database
       href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
     - name: Data task automation
       href: ../dev-itpro/data-entities/data-task-automation.md
-    - name: Data validation workspace
+    - name: Data validation checklist workspace
       href: ../dev-itpro/user-interface/data-validation-workspace.md
+    - name: Data management error descriptions
+      href: ../dev-itpro/data-entities/dm-error-descriptions.md  
   - name: Financial management
     href: ../financials/index.md
     items:
