@@ -41,7 +41,7 @@ You can generate one or more fiscal documents for a load, depending on the sales
 
 The following example shows how you can create load lines and loads for sales order lines and sales orders, and how fiscal documents are generated for each load.
 
-**Sales orders and sales order lines**
+### Sales orders and sales order lines
 
 1. Sales order 1 for customer C1 has the following sales order lines:
 
@@ -53,7 +53,7 @@ The following example shows how you can create load lines and loads for sales or
     1. Sales order line 2.1, which has 200 units of item C
     2. Sales order line 2.2, which has 100 units of item D
 
-**Loads and load lines**
+### Loads and load lines
 
 1. You create load 1 that has the following load lines:
 
@@ -66,7 +66,7 @@ The following example shows how you can create load lines and loads for sales or
     1. Load line 2.1 for sales order line 1.1. This load line has the remaining 20 units of item A.
     2. Load line 2.2 for sales order line 2.1. This load line has 50 units of item C.
 
-**Fiscal documents**
+### Fiscal documents
 
 1. The following fiscal documents are generated for load 1:
 
