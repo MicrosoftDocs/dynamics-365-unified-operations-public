@@ -5,7 +5,7 @@ title: One version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: meeramahabala
 manager: AnnBe
-ms.date: 10/09/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -110,9 +110,9 @@ The [Release notes](https://docs.microsoft.com/en-us/business-applications-relea
 Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-requests) topic. Please note the following timelines to log and use the available extensions.
 
 | Date | Extensibility requests |
-|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| January 2019 | All extensibility requests must be logged by January 1, 2019. ISVs and customers are requested to analyze the code and make these request by this time. We will not provide exceptions to stay on 7.3 after April 2020, if the request has not been filed by January 1, 2019. || January 2019 | All extensibility requests must be logged by January 1, 2019. ISVs and customers are requested to analyze the code and make these request by this time. We will not provide exceptions to stay on 7.3 post April 2020, if the request has not been filed by January 1, 2019. |
-| December 2019 | Extensions will be available on/ before December 31, 2019 for the requests logged by January 1, 2019. Customers using these extensions are required to move to current version by April 2020.                                                                            |
+|----------|---------------------------------------------------------------------------------------------------------|
+| January 2019 | All extensibility requests must be logged by January 1, 2019. ISVs and customers are requested to analyze the code and make these requests by this time. We will not provide exceptions to stay on 7.3 after April 2020, if the request has not been filed by January 1, 2019. |
+| December 2019 | Extensions will be available on/ before December 31, 2019 for the requests logged by January 1, 2019. Customers using these extensions are required to move to current version by April 2020.    |
 
 ### What does end of service mean?
 To service any issues that you have, you will need to take the latest update at that time. We will not be providing any individual hotfix. Microsoft will be unable to troubleshoot performance issues on older updates.
