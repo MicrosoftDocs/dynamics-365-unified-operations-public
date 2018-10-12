@@ -729,39 +729,39 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 
     # [Application update 4](#tab/app-update-4)
 
-          **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-          **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
 
-          **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-          **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
-        **SalesTransactionSignatureNorway**
+    **SalesTransactionSignatureNorway**
 
-        **SequentialSignature**
+    **SequentialSignature**
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
-        **SalesTransactionSignatureNorway**
+    **SalesTransactionSignatureNorway**
 
-        **SequentialSignature**
+    **SequentialSignature**
 
     ---
 
@@ -769,41 +769,41 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 
     # [Application update 4](#tab/app-update-4)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
-        **SalesTransactionSignatureNorway**
+    **SalesTransactionSignatureNorway**
 
-        **SequentialSignature**
+    **SequentialSignature**
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
-        **SalesTransactionSignatureNorway**
+    **SalesTransactionSignatureNorway**
 
-        **SequentialSignature**
+    **SequentialSignature**
 
     ---
 
@@ -890,39 +890,39 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 
     # [Application update 4](#tab/app-update-4)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
-        **SalesTransactionSignatureNorway**
+    **SalesTransactionSignatureNorway**
 
-        **SequentialSignature**
+    **SequentialSignature**
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
-        **SalesTransactionSignatureNorway**
+    **SalesTransactionSignatureNorway**
 
-        **SequentialSignature**
+    **SequentialSignature**
 
     ---
 
@@ -930,39 +930,39 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 
     # [Application update 4](#tab/app-update-4)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
     # [Application update 5 and later](#tab/app-update-5-and-later)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-        **AuditEventExtensionSample**
+    **AuditEventExtensionSample**
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
-        **SalesTransactionSignatureNorway**
+    **SalesTransactionSignatureNorway**
 
-        **SequentialSignature**
+    **SequentialSignature**
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-        **SalesTransactionSignatureSample**
+    **SalesTransactionSignatureSample**
 
-        **SalesTransactionSignatureNorway**
+    **SalesTransactionSignatureNorway**
 
-        **SequentialSignature**
+    **SequentialSignature**
 
     ---
 
