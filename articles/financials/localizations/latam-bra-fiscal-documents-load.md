@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 7.3
 You can create a load that has multiple load lines. Each load line is created for a specific quantity of items from a sales order line. You can create one or more load lines or loads for one or more sales order lines or sales orders.
 
 > [!NOTE]
-> This topic applies to features in the **Transportation management** module. It doesn't apply to features in the [Inventory management](../../supply-chain/inventory/inventory-home-page.md) module.
+> This topic applies to features in the **Transportation management** module. It doesn't apply to features in the Inventory management  module.
 
 You can generate one or more fiscal documents for a load, depending on the sales orders that the load is created for. The quantity on a fiscal document line is the pick-up quantity for the load line, not the quantity from the sales order line.
 
@@ -92,10 +92,6 @@ The following table shows the prerequisites that must be in place before you sta
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Version</td>
-<td>Microsoft Dynamics AX 2012 R3</td>
-</tr>
 <tr>
 <td>Country/region</td>
 <td>The primary address for the legal entity must be in Brazil.</td>
