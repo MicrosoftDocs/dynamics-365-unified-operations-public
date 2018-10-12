@@ -1055,6 +1055,8 @@
           href: ../financials/general-ledger/import-currency-exchange-rates.md
         - name: One voucher
           href: ../financials/general-ledger/one-voucher.md
+        - name: Ledger settlements
+          href: ../financials/general-ledger/ledger-settlements.md
       - name: Period-end close
         items:
         - name: Close the general ledger at period end
