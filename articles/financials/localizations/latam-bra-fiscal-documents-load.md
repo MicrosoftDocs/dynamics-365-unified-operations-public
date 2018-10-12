@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 7.3
 You can create a load that has multiple load lines. Each load line is created for a specific quantity of items from a sales order line. You can create one or more load lines or loads for one or more sales order lines or sales orders.
 
 > [!NOTE]
-> This topic applies to features in the **Transportation management** module. It doesn't apply to features in the [Inventory management](inventory-management.md) module.
+> This topic applies to features in the **Transportation management** module. It doesn't apply to features in the [Inventory management](../../supply-chain/inventory/inventory-management.md) module.
 
 You can generate one or more fiscal documents for a load, depending on the sales orders that the load is created for. The quantity on a fiscal document line is the pick-up quantity for the load line, not the quantity from the sales order line.
 
@@ -106,7 +106,7 @@ The following table shows the prerequisites that must be in place before you sta
 <ul>
 <li>Create a fiscal establishment group and a fiscal establishment. For more information, see <a href="bra-create-a-fiscal-establishment-group.md">(BRA) Create a fiscal establishment group</a> and <a href="bra-create-a-fiscal-establishment.md">(BRA) Create a fiscal establishment</a>.</li>
 <li>Set up a fiscal document type, and then assign it to customers, vendors, or inventory items. For more information, see <a href="bra-set-up-fiscal-document-types.md">(BRA) Set up fiscal document types</a> and <a href="bra-assign-fiscal-document-types-for-customers-or-vendors.md">(BRA) Assign fiscal document types for customers or vendors</a>.</li>
-<li>Set up a transportation management shipping carrier that has the same vendor that you specified in the <strong>Vendor account</strong> field in the <strong>Carrier</strong> form in the <strong>Sales and Marketing</strong> module. For more information, see <a href="set-up-shipping-carriers-and-carrier-groups.md">Set up shipping carriers and carrier groups</a> and <a href="https://technet.microsoft.com/en-us/library/jj710592(v=ax.60)">(BRA) Carrier (modified form)</a>.</li>
+<li>Set up a transportation management shipping carrier that has the same vendor that you specified in the <strong>Vendor account</strong> field in the <strong>Carrier</strong> form in the <strong>Sales and Marketing</strong> module. For more information, see <a href="../../supply-chain/transportation/tasks/set-up-shipping-carriers-and-carrier-groups.md">Set up shipping carriers and carrier groups</a>.</li>
 </ul>
 </td>
 </tr>
