@@ -15,22 +15,22 @@ Setup LinkedIn Recruiter with Attract
 --------------------------------------
 
 Before you can use the LinkedIn Recruiter capabilities, it is required by your
-AttractAdmin to configure either Contract-level or Company-level access with
+Attract Admin to configure either Contract-level or Company-level access with
 your Attract instance. To complete the configuration process, you also need to
 work with the user who is an Admin on your LinkedIn Recruiter contract. Steps to
 configure LinkedIn Recruiter with Attract are as follows:
 
-1.  Log in to Attract as an AttractAdmin and navigate to Admin Settings
+1.  Log in to Attract as an Attract Admin and navigate to Admin Settings
 
-2.  Go to the LinkedIn Integration tab from the left navigation panel.
+2.  Go to the **LinkedIn Integration** tab from the left navigation panel.
 
 [!Attract Admin view to start LinkedIn Recruiter integration](./media/LinkedInConnect.png)
 
-3.  Use the “Connect” button to start setting up the integration. You will be
+3.  Use the **Connect** button to start setting up the integration. You will be
     taken through a LinkedIn Sign-in process.
 
-4.  If you have a seat on multiple LinkedIn Contracts, select the one that you
-    would like to connect to Attract system. If you have a seat on only one
+4.  If you have seat(s) on multiple LinkedIn Contracts, select the one that you
+    would like to connect to the attract system. If you have a seat on only one
     LinkedIn contract, this step will be skipped.
 
 5.  The LinkedIn widget will now load in your Admin Settings with the list of
@@ -57,7 +57,7 @@ configure LinkedIn Recruiter with Attract are as follows:
 9.  You will see your Attract system listed there showing a couple of options
     which can be turned on.
 
-10.  Choose the Company-level access if you want to enable only 1-Click Export,
+10. Choose the Company-level access if you want to enable only 1-Click Export,
     In-ATS indicator and the In-ATS Profile Widget. You can choose the
     Contract-level access if you want to enable all of Company-level access
     features plus InMail history, Notes history and the InMail stub profile
@@ -68,9 +68,9 @@ configure LinkedIn Recruiter with Attract are as follows:
 
 [!Turn on Attract integration from LinkedIn Recruiter Admin view](./media/EnableRSC.png)
 
-12.  Navigate back to Attract Admin Settings as an AttractAdmin and go to the
+12. Navigate back to Attract Admin Settings as an AttractAdmin and go to the
     LinkedIn integration tab. You should now see the LinkedIn widget load
-    showing “Enabled” with the kind of access level turned on.
+    showing **Enabled** with the kind of access level turned on.
 
 [!LinkedIn Recruiter integration complete](./media/RSCSetupComplete.png)
 
@@ -79,8 +79,8 @@ Using LinkedIn Recruiter capabilities
 
 Once LinkedIn Recruiter capabilities has been enabled by the Attract Admin – it
 is now available for hiring managers and recruiters as well. To use these
-capabilities, connect your LinkedIn account under “User Settings”. There are
-several capabilities available once both the Admin and User settings have been
+capabilities, connect your LinkedIn account under **User Settings**. There are
+several capabilities available, once both the Admin and User settings have been
 connected.
 
 ### In-ATS profile widget
@@ -113,7 +113,7 @@ export are as follows:
 5.  Using the job search box in the contact card, find the job using the title
     or the Job ID that was activated in Attract.
 
-6.  If you don’t find the job, click “Change ATS” to find the right Attract
+6.  If you don’t find the job, click **Change ATS** to find the right Attract
     instance.
 
 7.  Once the right job is selected, click Export
@@ -122,7 +122,7 @@ export are as follows:
 
 9.  Go to Attract and open the respective job.
 
-10. You will find the candidate you just exported in the Prospects stage of the
+10. You will find the candidate you just exported in the Prospect stage of the
     job.
 
 ### In-ATS indicator 
@@ -135,26 +135,26 @@ jobs and view the feedback and comments from Attract in LinkedIn Recruiter.
 
 2.  Find the candidate profile you are looking for
 
-3.  Scroll down to view the “In-ATS” section on the candidate’s profile.
+3.  Scroll down to view the **In-ATS** section on the candidate’s profile.
 
 4.  You can use this widget to view all the information about the candidate
     that’s present in Attract from within the LinkedIn Recruiter view itself.
 
-5.  View the “Jobs & Statuses” tab to see the jobs they are part of the latest
+5.  View the **Jobs & Statuses** tab to see the jobs they are part of the latest
     status and how they have been moving against each job.
 
-6.  View the “Interview Feedback” tab to see the feedback that the interviewers
+6.  View the **Interview Feedback** tab to see the feedback that the interviewers
     may have submitted in Attract.
 
-7.  View the “Notes” tab to see the notes that may have been captured for this
+7.  View the **Notes** tab to see the notes that may have been captured for this
     applicant in Attract.
 
 ### InMail history
 
 The LinkedIn InMail history is available with Contract-level access with
-LinkedIn Recruiter. Once enabled, you can view the entire InMail history of
-yours with the candidate. You can also see who else from your organization has
-exchanged InMail with the candidate, you cannot see the messages between them.
+LinkedIn Recruiter. Once enabled, you can view your entire InMail history with the candidate. 
+You can also see who else from your organization has exchanged InMail with the candidate. 
+However, you cannot see the messages between them.
 
 To view InMail history, go to a candidate’s profile, navigate to the LinkedIn
 tab and scroll to the bottom of the page to view the history. You can view the
