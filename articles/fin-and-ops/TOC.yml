@@ -320,7 +320,7 @@
       - name: Recurring integrations
         href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
       - name: Test services using third-party utilities
-        href: data-entities/third-party-service-test.md
+        href: ../dev-itpro/data-entities/third-party-service-test.md
     - name: Development for integration
       items:
       - name: Data integration using data entities
@@ -441,7 +441,7 @@
       - name: Use third-party service testing utilities
         href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json
       - name: Create read-only entities that expose financial dimensions
-        href: ../financial/read-only-entity-financial.md
+        href: ../financials/read-only-entity-financial.md
     - name: Bring your own database
       href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
     - name: Data task automation
