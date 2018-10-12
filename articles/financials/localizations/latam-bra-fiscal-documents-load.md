@@ -104,9 +104,9 @@ The following table shows the prerequisites that must be in place before you sta
 <td>Related setup tasks</td>
 <td>
 <ul>
-<li>Create a fiscal establishment group and a fiscal establishment. For more information, see <a href="bra-create-a-fiscal-establishment-group.md">(BRA) Create a fiscal establishment group</a> and <a href="bra-create-a-fiscal-establishment.md">(BRA) Create a fiscal establishment</a>.</li>
-<li>Set up a fiscal document type, and then assign it to customers, vendors, or inventory items. For more information, see <a href="bra-set-up-fiscal-document-types.md">(BRA) Set up fiscal document types</a> and <a href="bra-assign-fiscal-document-types-for-customers-or-vendors.md">(BRA) Assign fiscal document types for customers or vendors</a>.</li>
-<li>Set up a transportation management shipping carrier that has the same vendor that you specified in the <strong>Vendor account</strong> field in the <strong>Carrier</strong> form in the <strong>Sales and Marketing</strong> module. For more information, see <a href="../../supply-chain/transportation/tasks/set-up-shipping-carriers-and-carrier-groups.md">Set up shipping carriers and carrier groups</a>.</li>
+<li>Create a fiscal establishment group and a fiscal establishment. </li>
+<li>Set up a fiscal document type, and then assign it to customers, vendors, or inventory items.</li>
+<li>Set up a transportation management shipping carrier that has the same vendor that you specified in the <strong>Vendor account</strong> field in the <strong>Carrier</strong> form in the <strong>Sales and Marketing</strong> module.</li>
 </ul>
 </td>
 </tr>
