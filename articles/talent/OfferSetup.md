@@ -11,7 +11,8 @@ Administrator could follow to set up different offer package templates as part
 of the offer management capability as part of Attract. Users with
 non-AttractAdmin roles will not have access to Offer Admin capabilities.
 
-[!NOTE] Offer management capabilities are available as part of the Comprehensive
+>[!NOTE]
+>Offer management capabilities are available as part of the Comprehensive
 Hiring Add-On
 
 Offer data 
