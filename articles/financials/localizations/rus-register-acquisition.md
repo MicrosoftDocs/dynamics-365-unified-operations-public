@@ -76,7 +76,7 @@ Before you register purchase a fixed asset, the asset must be registered on the 
     > [!NOTE]
     > After posting the invoice, the status of the fixed asset is set to **Bought** (**Fixed assets** page (**Fixed assets (Russia)** \> **Common** \> **Fixed assets**). If the fixed asset number is specified in the invoice journal line and the invoice journal is not posted, you can't use this fixed exxet in another invoice journal.
     
-# Register a fixed asset acquisition using a purchase order 
+## Register a fixed asset acquisition using a purchase order 
 
 You can register the purchase of a fixed asset via creating a purchase order. Before creating a purchase order you should create released product with **Service** or **Item** product type. If you select item with **Service** product type in the purchase oder line, you may enter several fixed assets, related with one purchase order line. If you select item with **Item** product type in the purchase oder line, you may enter only one fixed assets, related with the purchase order line.  
 
