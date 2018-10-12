@@ -22,7 +22,7 @@ LinkedIn RSC.
 **User permissions**
 --------------------
 
-Assign roles to users within your organization in the User permissions tab. The role options avaialble are Admin, Recruiter, Hiring manager, and Read only. To learn more about user permissions, review the [Security and Role Management in Attract](./Security-in-Attract.md) topic.
+Assign roles to users within your organization in the User permissions tab. The role options avaialble are Admin, Recruiter, Hiring manager, and Read only. To learn more about user permissions, review the [Security and Role Management in Attract](./security-attract.md) topic.
 
 **Feature management**
 ----------------------
@@ -42,14 +42,14 @@ part of a hiring process for a job. Organizations can choose whether to allow
 team members to create hiring process templates in Attract or only allow the
 Admin to create templates. Turn template management on to allow team members to
 create their own hiring process templates. To learn more about process templates
-see the [Process Templates in Attract](./Process-templates-Attract.md) topic.
+see the [Process Templates in Attract](./process-templates-attract.md) topic.
 
 
 **Email template settings**
 ---------------------------
 
 In the Email template settings you can select a header image to be included within the email templates. The header selected will show on all email templates. Organizations can also add a link to their privacy and terms of use for communications to the footer of the template. This sections also allows organizations to create rich email templates for various outbound scenarios with placeholders.
-To learn more, review the [Email Templates in Attract](./Email-templates.md) topic.
+To learn more, review the [Email Templates in Attract](./email-templates.md) topic.
 
 **Offer Process**
 ---------------------------
