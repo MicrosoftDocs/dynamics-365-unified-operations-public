@@ -5,7 +5,7 @@ title: Register fixed assets acquisitions (Russia)
 description: This topic walks you through registering fixed assets acquisitions for Microsoft Dynamics 365 for Finance and Operations in Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/30/2018
+ms.date: 10/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,20 +83,13 @@ You can register the purchase of a fixed asset via creating a purchase order. Be
 
 1.  Click **Product information management** \> **Common** \> **Released products**.
 
-2.  Create a new item and in the **Item type** field, select **Service** or **Item**, and on the **General** tab, fill in **FA group** field.
+2.  Create a new item and in the **Item type** field, select **Service** or **Item**, and on the **General** tab, fill in **FA group** field. For more information, see **[Create released product](../../supply-chain/pim/tasks/create-released-product-single-company)**.
 
     > [!NOTE]
     > The information provided on the purchase line determines whether the fixed asset belongs to the specified fixed asset group.
     
-    > [!NOTE]
-    > For more information, see **[Create released product](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/tasks/create-released-product-single-company)**.
-    
 3.  Click **Accounts payable** \> **Common** \> **Purchase orders** \> **All purchase orders**.
-4.  Press the *NEW* button to create a new purchase order.
-    
-    > [!NOTE]
-    > For more information, see **[Create a purchase order](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order)**.
-
+4.  Press the *NEW* button to create a new purchase order. For more information, see **[Create a purchase order](../../supply-chain/procurement/tasks/create-purchase-order)**.
 5.  Click the **Lines** tab in the lower pane.
 6.  In the **Item number** field, select the item number, which related with the fixed asset group, and on the **Line detail/ Fixed asset** tab enter fixwd asset(s) (**Fixed asset (Russia)**). You may enter several fixed asset, if you select item with **Service** product type in the purchase line. In this case quantity of fixed assets should be equal to quantity, specified in the purchase line. Or you may enter only one fixed asset in the purchase line, if you select the item with **Item** product type.
 
