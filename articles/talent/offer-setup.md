@@ -277,3 +277,6 @@ the offers or not.
 their name in the offer package while accepting the offer. We will be
 introducing partner integrations with other electronic signature providers
 shortly.
+
+
+To know more about the offer creation process, please read [Offer creation, approvals and signing](./creating-offers.md)
