@@ -98,7 +98,7 @@ privileges apply to the job details and actions that can be taken on a job.
 | Job Posting       | Create, read, update, and delete for jobs where they are on the hiring team      | Read only                                                                                                     | Read only   |
 | Process           | Create, read, update, and delete for jobs where they are part of the hiring team | Create, read, update, and delete for jobs where they are part of the hiring team                              | Read only   |
 | Add Applicants    | Can add applicants for jobs where they are part of the hiring team               | Can add applicants for jobs where they are part of the hiring team                                            | Not allowed |
-| Add Prospects     | Can add prospects for jobs where they are part of the hiring team                | There is a configuration option within the [prospect activity setup](./activities-in-Attract.md#prospect-activity) that controls access to adding and viewing | Not allowed |
+| Add Prospects     | Can add prospects for jobs where they are part of the hiring team                | There is a configuration option within the [prospect activity setup](./activities-attract.md#prospect-activity) that controls access to adding and viewing | Not allowed |
 | Activate job      | Can activate jobs where they are a part of the hiring team                       | Can activate jobs where they are a part of the hiring team                                                    | Not allowed |
 | Close job         | Can close jobs where they are a part of the hiring team                          | Not allowed                                                                                                   | Not allowed |
 | Delete job        | Can delete jobs where they are a part of the hiring team                         | Only if no applicants on job                                                                                  | Not allowed |
@@ -120,7 +120,7 @@ The following privileges apply to the job specific data for an applicant
 | Advance stage           | Can reject where they are part of the hiring team                                | Can advance where they are part of the hiring team                               | Not allowed           |
 | Launch offer management | Can launch offer management.                                                     | Configuration option on the offer activity                                       | No allowed            |
 
-\*\*There is a configuration option within the [feedback activity setup](./activities-in-Attract.md#feedback-activity) that
+\*\*There is a configuration option within the [feedback activity setup](./activities-attract.md#feedback-activity) that
 controls if interviewers can see each other’s feedback
 
 Process templates
