@@ -63,7 +63,7 @@ selected job. Admin and Read only users can access *Job Analytics* for all jobs.
 
 *Analytics Hub* reports aggregate data across jobs where the user is a hiring
 manager or recruiter participant. Admin, Read only, Recruiter, and Hiring manager
-[Roles](./security-sttract.md) can access the *Analytics Hub*.
+[Roles](./security-attract.md) can access the *Analytics Hub*.
 
 To learn more about Roles, see the [Security in Attract](./security-attract.md) topic.
 
