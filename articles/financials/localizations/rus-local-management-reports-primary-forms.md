@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Advance holder reports
+title: Advance holder reports (Russia)
 description: This topic describes the Advance holder reports that are available for Russia. 
 author: ShylaThompson
 manager: AnnBe
@@ -24,13 +24,13 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: shylaw
 ms.dyn365.ops.version: 8.1
 ms.search.validFrom: 2018-10-31
 
 ---
 
-# Advance holders reports
+# Advance holders reports (Russia)
 
 [!include [banner](../includes/banner.md)]
 
