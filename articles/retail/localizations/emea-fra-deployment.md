@@ -392,25 +392,18 @@ You must complete the following procedure to enable the extensions in offline mo
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-    **SalesTransactionSignatureSample**
-
-    **SequentialSignature**
-
-    **AuditEventSignatureSample**
-
-    **RestrictingShiftDuration**
-
-    **SalesTransBuildNumberSample**
+    - SalesTransactionSignatureSample
+    - SequentialSignature
+    - AuditEventSignatureSample
+    - RestrictingShiftDuration
+    - SalesTransBuildNumberSample
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-    **SalesTransactionSignatureSample**
-
-    **SequentialSignature**
-
-    **AuditEventSignatureSample**
-
-    **SalesTransBuildNumberSample**
+    - SalesTransactionSignatureSample
+    - SequentialSignature
+    - AuditEventSignatureSample
+    - SalesTransBuildNumberSample
 
     ---
 
@@ -421,25 +414,18 @@ You must complete the following procedure to enable the extensions in offline mo
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-    **SalesTransactionSignatureSample**
-
-    **SequentialSignature**
-
-    **AuditEventSignatureSample**
-
-    **RestrictingShiftDuration**
-
-    **SalesTransBuildNumberSample**
+    - SalesTransactionSignatureSample
+    - SequentialSignature
+    - AuditEventSignatureSample
+    - RestrictingShiftDuration
+    - SalesTransBuildNumberSample
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-    **SalesTransactionSignatureSample**
-
-    **SequentialSignature**
-
-    **AuditEventSignatureSample**
-
-    **SalesTransBuildNumberSample**
+    - SalesTransactionSignatureSample
+    - SequentialSignature
+    - AuditEventSignatureSample
+    - SalesTransBuildNumberSample
 
     ---
 
@@ -469,10 +455,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft\/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
     },
     {
-        "baseUrl": "Microsoft\/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
@@ -503,25 +489,18 @@ You must complete the following procedure to enable the extensions in offline mo
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-    **SalesTransactionSignatureSample**
-
-    **SequentialSignature**
-
-    **AuditEventSignatureSample**
-
-    **RestrictingShiftDuration**
-
-    **SalesTransBuildNumberSample**
+    - SalesTransactionSignatureSample
+    - SequentialSignature
+    - AuditEventSignatureSample
+    - RestrictingShiftDuration
+    - SalesTransBuildNumberSample
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-    **SalesTransactionSignatureSample**
-
-    **SequentialSignature**
-
-    **AuditEventSignatureSample**
-
-    **SalesTransBuildNumberSample**
+    - SalesTransactionSignatureSample
+    - SequentialSignature
+    - AuditEventSignatureSample
+    - SalesTransBuildNumberSample
 
     ---
 
@@ -532,25 +511,18 @@ You must complete the following procedure to enable the extensions in offline mo
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
-    **SalesTransactionSignatureSample**
-
-    **SequentialSignature**
-
-    **AuditEventSignatureSample**
-
-    **RestrictingShiftDuration**
-
-    **SalesTransBuildNumberSample**
+    - SalesTransactionSignatureSample
+    - SequentialSignature
+    - AuditEventSignatureSample
+    - RestrictingShiftDuration
+    - SalesTransBuildNumberSample
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-    **SalesTransactionSignatureSample**
-
-    **SequentialSignature**
-
-    **AuditEventSignatureSample**
-
-    **SalesTransBuildNumberSample**
+    - SalesTransactionSignatureSample
+    - SequentialSignature
+    - AuditEventSignatureSample
+    - SalesTransBuildNumberSample
 
     ---
 
@@ -580,10 +552,10 @@ You must complete the following procedure to enable the extensions in offline mo
 
     ``` json
     {
-        "baseUrl": "Microsoft\/RestrictShiftDuration.Extension"
+        "baseUrl": "Microsoft/RestrictShiftDuration.Extension"
     },
     {
-        "baseUrl": "Microsoft\/AuditEvent.FR.Extension"
+        "baseUrl": "Microsoft/AuditEvent.FR.Extension"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
