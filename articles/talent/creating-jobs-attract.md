@@ -12,7 +12,7 @@ creating a job, the user will be prompted to select their role in the process;
 hiring manager or recruiter. Once a role has been selected the user will be
 prompted select a **Process template**. If the user selects ‘Skip’ the default
 template will be used. To find out more information regarding templates refer to
-the [Creating a Process Template in Attract](./Process-templates-Attract.md) topic.
+the [Creating a Process Template in Attract](./process-templates-attract.md) topic.
 
 A job in Attract contains **Job details**, a **Hiring team**, a **Hiring
 process**, **Job posting(s)** and **Analytics**.
@@ -62,7 +62,7 @@ what notifications they will receive. Roles that can be selected are recruiter,
 hiring manager, delegate, and interviewer. To read more about role privileges
 please refer to the **Role management** document. Recruiters and hiring managers
 may appoint one or more delegates to work on their behalf. To read more about
-delegates please refer to the [Security and Role management in Attract](./Security-in-Attract.md) topic.
+delegates please refer to the [Security and Role management in Attract](./security-attract.md) topic.
 
 The hiring team can be updated after the job is activated.
 
@@ -78,7 +78,7 @@ can be turned off. Within each stage one or more pre-defined activities can be
 added or removed.
 
 To learn more about activities that can be added to the hiring process, review
-the [Hiring Process Activities in Attract](./Activities-in-Attract.md) topic.
+the [Hiring Process Activities in Attract](./activities-attract.md) topic.
 
 [!NOTE] The process cannot be updated after the job is activated.
 
@@ -90,7 +90,7 @@ post the job. The job can be posted to Talent Careers (A Dynamics365 for Talent
 career site) or to LinkedIn. The Attract team continually works to partner with
 job board aggregators so this list will expand over time.
 
-To learn more about job posting refer to the [Career Site functionality in Attract](./CareerSite.md) topic.
+To learn more about job posting refer to the [Career Site functionality in Attract](./career-site.md) topic.
 
 [!NOTE] Job Posting functionality is only available with the Comprehensive
 Hiring Add-on for Attract.
@@ -106,7 +106,7 @@ hiring process cannot be edited.
 **Prospects and applicants**
 ---------------
 
-The option to add prospects to a job is set within the [Prospect activity](./activities-in-Attract.md#prospect-activity) in the
+The option to add prospects to a job is set within the [Prospect activity](./activities-attract.md#prospect-activity) in the
 Hiring process. This should be set before activating the job. Once a job has been activated, prospects and applicants can be added.
 
 **Approvals**
