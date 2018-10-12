@@ -30,23 +30,22 @@ prepared for a job.
 
 If **Position Management** has been turned on in the Admin Center, the ‘Update
 positions’ lookup will be available. This lookup will read the JobPosition
-entity in CDS and return a list of positions to select on the job. If more
+entity in CDS for Apps and return a list of positions to select on the job. If more
 positions are selected than are open, a warning will be displayed. If a position
 is used on multiple jobs, a warning will be displayed.
 
->[!NOTE] 
-> **Position management** is available with the Comprehensive Hiring
+[!NOTE] Position management is available with the Comprehensive Hiring
 Add-on.
 
 Depending on settings in the **Offer activity** of the hiring process, a
 position number may be used twice in an offer. Please see the hiring process
 section for more details.
 
-Attract ships with a default set of **Skills**. You can add additional Skills by
-entering the skill in the field and selecting Enter.
+Attract ships with a default set of **Skills**. These will show up as suggestions as you type. You can add additional Skills by
+entering the new skill text in the field and selecting Enter.
 
 Attract ships with a default set of **Job functions**. You can add Job functions
-by entering the function in the field and selecting Enter. You can add 3 job
+by entering the function in the field and selecting Enter. You can add up to 3 job
 functions.
 
 Attract ships with a default set of **Company Industries**. You can add up to 3
@@ -81,7 +80,7 @@ added or removed.
 To learn more about activities that can be added to the hiring process, review
 the [Hiring Process Activities in Attract](./Activities-in-Attract.md) topic.
 
- The process cannot be updated after the job is activated.
+[!NOTE] The process cannot be updated after the job is activated.
 
 **Postings**
 ---------------
@@ -97,8 +96,9 @@ To learn more about job posting refer to the [Career Site functionality in Attra
 Hiring Add-on for Attract.
 
 **Activate**
+-------------
 
-Activating a job allows it to be posted and Prospects and Applicants to be added
+Activating a job allows it to be posted and allows for prospects and applicants to be added
 to the job. The ability to add prospects to a job is configured within the
 Prospect activity within the hiring process. Once a job has been activated, the
 hiring process cannot be edited.
@@ -106,19 +106,18 @@ hiring process cannot be edited.
 **Prospects and applicants**
 ---------------
 
-The option to add prospects to a job is set within the Prospect activity in the
-Hiring process. This should be set before activating the job. Once a job has
-been activated, prospects and applicants can be added.
+The option to add prospects to a job is set within the [Prospect activity](./activities-in-Attract.md#prospect-activity) in the
+Hiring process. This should be set before activating the job. Once a job has been activated, prospects and applicants can be added.
 
 **Approvals**
 ---------------
 
-Attract jobs can be submitted for approval. Whether a document will require
+Attract jobs can be submitted for approval. Whether a job will require
 approval is set at the template level. By default, approvals are turned off on
 the template. To setup approvals, navigate to a process template and set the
-approval to ‘Default’. Select this template when creating the job.
+approval to ‘Default’ and select this template when creating the job.
 
-Once the job is saved the document can be submitted for approval. Listed below
+Once the job is saved it can be submitted for approval. Listed below
 are the statuses of a document using approvals.
 
 | Status   | State                                         |
@@ -126,7 +125,7 @@ are the statuses of a document using approvals.
 | Draft    | Job is saved but not submitted to workflow    |
 | Pending  | Job has been submitted to approvers           |
 | Approved | Job has been approved but not activated       |
-| Rejected | Job has been rejected. It cannot be activated |
+| Rejected | Job has been rejected and it cannot be activated |
 | Active   | Job has been approved and has been activated. |
 
 Within the job list you can filter on the job statuses above.
@@ -154,31 +153,31 @@ To create a job:
     process, select a template that has the **Approval process** set to
     **Default**
 
-5.  Select your
-
-6.  Enter in the details in the details tab. Required fields are **Title**,
+5.  Enter in the details in the details tab. Required fields are **Title**,
     **Job description**, and **Location.**
 
-7.  Select **Save**
+6.  Select **Save**
 
-8.  Select the **Hiring team** tab
+7.  Select the **Hiring team** tab
 
-9.  Add a hiring manager, recruiter, or interviewer
+8.  Add a hiring manager, recruiter, or interviewer
 
-10. Select **Save**
+9. Select **Save**
 
-11. Navigate to the **Process tab**
+10. Navigate to the **Process tab**
 
-12. Add a new stage by selecting **‘+ New Stage’**
+11. Add a new stage, as needed, by selecting **‘+ New Stage’**
 
-13. Remove a stage by hovering on the **Stage** and selecting the trash can icon
-    that appears. Note: Prospect, Application and Offer stages cannot be removed
+12. Remove a stage, as needed, by hovering on the **Stage** and selecting the trash can icon
+    that appears. 
+    
+    [!NOTE] Prospect, Application and Offer stages cannot be removed
 
-14. Add activities dragging the **Activity** on the right and dropping in the
+13. Add activities, as needed, by dragging the **Activity** on the right and dropping in the
     appropriate stage OR by double clicking the activity and selecting which
     stage to put it in.
 
-15. Remove activities by expanding the **Activity** and selecting the trash can
+15. Remove activities, as needed, by expanding the **Activity** and selecting the trash can
     icon on the activity header.
 
 16. Select **Save**
@@ -189,11 +188,11 @@ To create a job:
 
 18. Select **Send to approvers**.
 
-19. The job will have a **Job status** of **Pending**.
+19. The job will display a **Job status** of **Pending**.
 
-20. Once the J**ob status** is **Approved,** it can be activated.
+20. Once the **Job status** status changes to **Approved,** it can be activated.
 
 21. To activate the job, select the **Activate** button.
 
-22. Navigate to Postings. Select ‘Post Now’ to either the Talent Careers site or
-    LinkedIn.
+22. Navigate to Postings. Select **Post Now** under the Talent Careers site or
+    LinkedIn to post the job.
