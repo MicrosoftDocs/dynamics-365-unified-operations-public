@@ -5,7 +5,7 @@ title: Create retail deployable packages
 description: This topic explains how to create a retail deployable package for Microsoft Dynamics 365 for Finance and Operations.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/08/2018
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -203,11 +203,10 @@ The following illustration shows an example of a Retail Server web.config file.
 
 [![Retail Server web.config file](./media/retail-server-web-config.png)](./media/retail-server-web-config.png)
 
-
-**Also you should not add or change any custom settings in the above mentioned or any of the channel config files, the only modification supported is adding your custom assemblies details in the composition section.**
-
 > [!NOTE]
-> As part of your extension or package don't edit any of the below config files because these config files will be updated with the latest file from core Microsoft package during deployment and your changes will be lost.
+> You should not add or change any custom settings in the above mentioned example or in any of the channel config files. The only  supported modification is adding custom assemblies details in the composition section.
+
+> Also, as part of your extension or package, do not edit any of the following config files. These config files will be updated with the latest file from core Microsoft package during deployment and your changes will be lost.
 
 > - CommerceRuntime.config
 > - dllhost.exe.config
@@ -215,7 +214,6 @@ The following illustration shows an example of a Retail Server web.config file.
 > - HardwareStation.Shared.config
 > - workflowFoundation.config
 > - Hardware station - Web.config
-
 
 ## Generate a retail deployable package
 To generate the retail deployable package, open the MSBuild build Command Prompt window. (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
