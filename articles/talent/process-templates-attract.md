@@ -1,3 +1,35 @@
+---
+# required metadata
+
+title: Create a process template in Attract
+description: This topic provides informationabout how to create a process template in Attract.
+author: hasrivas
+manager: AnnBe
+ms.date: 10/15/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Talent
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: hasrivas
+ms.search.validFrom: 2018-10-01
+ms.dyn365.ops.version: AX 8.1
+
+---
+
 # Create a process template in Attract
 
 [!include [banner](includes/banner.md)]
