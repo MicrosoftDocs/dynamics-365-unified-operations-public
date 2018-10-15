@@ -34,12 +34,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how you can extend Commerce Data Exchange -  Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables retail clients to interact with retail functionality in real time.
+This article explains how you can extend Commerce Data Exchange(CDX) -  Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables retail clients to interact with retail functionality in real time.
 
 To extend Commerce Data Exchange: Real-time Service, you create a new method in the **RetailTransactionServiceEx** class. This method must meet the following criteria:
 
 -   The method must be a public static method.
--   The return value must be a container that has a length of 2 or more. The first two elements must be a Boolean value that indicates whether the method call was successful, and a string value that you can use for a comment or error message. The other items in the container can be of any type, and they can even be nested containers.
+-   The return value must be a container that has a length of 2 or more. The first element must be a Boolean value that indicates whether the method call was successful, and a string value that you can use for a comment or error message. The other items in the container can be of any type, and they can even be nested containers.
 -   The method parameters must be one of the following primitive types:
     -   Boolean
     -   date
@@ -65,29 +65,78 @@ To extend Commerce Data Exchange: Real-time Service, you create a new method in 
 7. Click **Finish**.
 8. In the **New project** dialog box, enter **ContosoRetailTransactionServiceEx** as the project name.
 9. Click **OK**.
-10. In Application Explorer, expand the **Code** node, and select **Classes**.
-11. Right-click the **RetailTransactionServiceEx** class, and then click **Customize**.
-12. In the code editor, add the following code.
+10. Right-click the project and Select Add > New item, in the Add New Item window Select **Class** and enter the name of the class as **ContosoRetailTransactionServiceSample**.
 
+To consume the CDX method in Commerce runtime (CRT) you must add the ExtensionOf attribute to your class Ex: [ExtensionOf(classStr(RetailTransactionServiceEx))] to say that this class is extending from the RetailTransactionServiceEx.
+
+11. In the code editor, add the following code.
+```C#
+    /**
+    * SAMPLE CODE NOTICE
+     *
+     * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+     * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+     * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+     * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT            ALLOWS YOU TO DO SO.
+     */
+
+    [ExtensionOf(classStr(RetailTransactionServiceEx))]
+    final class ContosoRetailTransactionServiceSample
+    {
+    }
+```
+12. Inside the class add a new method to do your custom logic, this is method you will be calling from CRT to do the custom logic.
+```C#
+  /**
+    * SAMPLE CODE NOTICE
+     *
+     * THIS SAMPLE CODE IS MADE AVAILABLE AS IS.  MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+     * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+     * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+     * NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT            ALLOWS YOU TO DO SO.
+     */
+    [ExtensionOf(classStr(RetailTransactionServiceEx))]
+    final class ContosoRetailTransactionServiceSample
+    {
         public static container SerialCheck(str _serialNum)
+        {
+            boolean success = false;
+            str errorMessage;
+            int fromLine;
+
+            ttsbegin;
+
+            try
             {
-                boolean             success = true;
-                str                 errorMessage;
-                container           serialNumResult;
                 if (_serialNum)
                 {
-                // check whether the serial number exists
+                    // check whether the serial number exists
+
+                    // Add your custom logic
+
                     errorMessage = "Serial number found";
                 }
                 else
                 {
+                    // Add your custom logic
                     success = false;
                     errorMessage = "Serial number not found";
                 }
+            }
+            catch (Exception::Error)
+            {
+                error = RetailTransactionServiceUtilities::getInfologMessages(fromLine);
+            }
 
-                return [success, errorMessage, "Serial number found"];
+            ttscommit;
+
+            // Return sanitized error code.
+            errorMessage = RetailTransactionServiceUtilities::getErrorCode(errorMessage);
+
+            return [success, errorMessage, "Custom values"];
         }
-
+    }
+```
 13. In Solution Explorer, right-click the project, and then click **Build**.
 
 After you've finished building your new extension methods, the project will be deployed.
@@ -95,13 +144,23 @@ After you've finished building your new extension methods, the project will be d
 ## Call the new method from the CRT
 1.  In your commerce runtime (CRT), add a reference to the Microsoft.Dynamics.Commerce.Runtime.TransactionService.dll, if it hasn't already been added.
 2.  Use the following sample code to call the new method.
+```C#
+        try
+        {
+            TransactionServiceClient transactionService = new TransactionServiceClient(request.RequestContext);
+            ReadOnlyCollection<object> results = transactionService.InvokeExtensionMethod("SerialCheck", "123");
+        }
+        catch (HeadquarterTransactionServiceException exception)
+        {
+             string errorCode = (string)exception.HeadquartersErrorData.FirstOrDefault();
+             RetailLogger.Log.ExtendedErrorEvent(errorCode, "Custom information", "method name");
+             throw new CommerceException("Error resource id", "message");
+        }
+```
+**Note:** In case of any exception in headquarters we throw HeadquarterTransactionServiceException, so use that and capture any exception and show user friendly message in POS based on your scenario. If you want to log the exception use the RetailLogger.Log class object to log the events.
 
-        TransactionServiceClient transactionService = new TransactionServiceClient(request.RequestContext);
-        ReadOnlyCollection serviceResponse = transactionService.InvokeExtensionMethod("SerialCheck", "123");
+3.  From the results object, you can read the response values from Real-time Service.
 
-3.  From the serviceResponse object, you can read the response values from Real-time Service.
-
-**Note:** The **InvokeExtensionMethod** method takes two parameters. One parameter is the Real-time Service method name, and the other is the list of parameters that should be used. The method name that is passed should be the same as the method name that you created in the **RetailTransactionServiceEx** class.
-
+**Note:** The **InvokeExtensionMethod** method takes two parameters. One parameter is the Real-time Service method name, and the other is the list of parameters that should be used. The method name that is passed should be the same as the method name that you created in the **ContosoRetailTransactionServiceSample** class.
 
 
