@@ -41,11 +41,48 @@ This topic provides an overview of the Dynamics 365 Payment Connector for Adyen,
 
 ## Supported Features and Functionalities
 
+## Sign Up with Adyen
+
+### Terminal Onboard
+- key passphrase
+- key identifier
+- key version
+
 ## Setup and Configuration
 
 ### Pre-Requisites
 
 ### POS
+
+#### POS Hardware Profile
+1. Sign in to Retail headquarters and navigate to **Retail > Channel setup > POS setup > PRO profiles > Hardware profiles**.
+2. Select the hardware profile for which you would like to add the Dynamics 365 Payment Connector for Adyen.
+
+##### EFT Service
+1. Under the **EFT Service** tab set the value for **EFT Service** to `Payment Coonector`.
+2. Under the **Connectors** sub-tab click the `+ New` button and select the **Dynamics 365 Payment Connector for Adyen** from the drop down and make sure the **Sequence Number** is lower than all other connectors.
+3. Under the **Connector Properties** section set the following values.
+
+| Field | Description | Required | Auto-Pupulated | Sample Value | 
+| --- | --- | :-: | :-: | --- |
+| **Assembly Name** | Name of the Dynamics 365 Payment Connector for Adyen assembly | ✔ | ✔ | Microsoft.Dynamics.Commerce.Payments.Connector.Adyen.Processor.Portable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 |
+| **Service Account ID** | Unique identifier for the setup of the merchant properties. The identifier is stamped on payment transactions and used to identify the merchant properties that should be used by downstream processes (i.e. invoicing). | ✔ | ✔ | f107ba65-06c5-4609-ae36-ba1c228b52c8 |
+| **Version** | Version of the Dynamics 365 Payment Connector for Adyen to use. At this point only version `V001` is supported. | ✔ | ✔ | V001 |
+| **Gateway environment** | Adyen gateway environment to map to. Possible values are `Test` and `Live`. | ✔ | ✔ | Live |
+| **Optional Domain** | TODO | | | TODO |
+| **Merchand account ID** | Unique Adyen Merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | | MerchantIdenfier |
+| **Terminal architecture** | Adyen Terminal API architecture to use. Possible values are `Local` or `Cloud`. In most cases when the Microsoft Dynamics 365 for Retail Modern POS is on the same network as the Adyen Payment Terminal the `Local` setting should be used. For additional information about the different Terminal API architectures please view the [Introducing the Terminal API](https://www.adyen.com/blog/introducing-the-terminal-api) page on the Adyen website. | ✔ | ✔ | Local |
+| **Local Password phrase** | Adyen key passphrase for the terminal. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | TODO | keypassphrase123 |
+| **Local Key Identifier** | Adyen key identifier for the terminal. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | TODO | mykey |
+| **Local Key Version** | Adyen key version for the terminal. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | TODO | 0 |
+| **Local Cryptor Version** | Adyen crypto version to use when interacting with the Adyen Gateway. Should be set to `1`. | ✔ | TODO | TODO |
+| **Cloud API Key** | Adyen cloud API key. This value is provided when you sign up with Adyen as described in the [Sign Up with Adyen](#Sign-Up-with-Adyen). | ✔ | TODO | TODO |
+| **Supported Currencies** | The currencies that should be processed by the connector. | ✔ | ✔ | USD;EUR |
+| **Supported Tender Types** | The tender types that should be processed by the connector. | ✔ | ✔ | Visa;MasterCard;Amex;Discover;Debit |
+| **Gift card provider** | The gift card provider that the connector uses to process gift cards. | | | TODO |
+
+##### PIN pad
+1. Under the **PIN pad** tab set the value for **PIN pad** to `Network` and the value for the **Device name** to `MicrosoftAdyenDeviceV001`.
 
 ### Call Center
 
