@@ -5,7 +5,7 @@ title: Set up sales tax settlement periods
 description: Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 10/15/2018
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -54,7 +54,7 @@ This task uses the USMF demo company.
 13. Select or clear the Use batch processing for sales tax settlement check box.
     * The settlement process for the settlement period can be processed as batch job in the background. This is recommended for a large number of tax transactions within a period interval.  
 14. Select or clear the Prevent generating offset tax transactions check box.
-    * By default, system generate offset tax transactions during settlement process which cause performance issue if there are large number of tax transactions within a period interval. You can tick this check box to prevent generating offset tax transactions.
+    * By default, the system generates offset tax transactions during the settlement process, which cause can performance issue if there are a large number of tax transactions within a period interval. Select this check box to prevent generating offset tax transactions.
 15. Expand the Period intervals tab.
 16. Click Add.
 17. In the list, mark the selected row.
