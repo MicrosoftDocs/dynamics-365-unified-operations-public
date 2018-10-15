@@ -203,6 +203,20 @@ The following illustration shows an example of a Retail Server web.config file.
 
 [![Retail Server web.config file](./media/retail-server-web-config.png)](./media/retail-server-web-config.png)
 
+
+**Also you should not add or change any custom settings in the above mentioned or any of the channel config files, the only modification supported is adding your custom assemblies details in the composition section.**
+
+> [!NOTE]
+> As part of your extension or package don't edit any of the below config files because these config files will be updated with the latest file from core Microsoft package during deployment and your changes will be lost.
+
+> - CommerceRuntime.config
+> - dllhost.exe.config
+> - HardwareStation.Dedicated.config
+> - HardwareStation.Shared.config
+> - workflowFoundation.config
+> - Hardware station - Web.config
+
+
 ## Generate a retail deployable package
 To generate the retail deployable package, open the MSBuild build Command Prompt window. (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
 
