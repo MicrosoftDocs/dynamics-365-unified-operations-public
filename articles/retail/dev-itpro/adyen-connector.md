@@ -59,7 +59,7 @@ This topic provides an overview of the Dynamics 365 Payment Connector for Adyen,
 2. Select the hardware profile for which you would like to add the Dynamics 365 Payment Connector for Adyen.
 
 ##### EFT Service
-1. Under the **EFT Service** tab set the value for **EFT Service** to `Payment Coonector`.
+1. Under the **EFT Service** tab set the value for **EFT Service** to `Payment Connector`.
 2. Under the **Connectors** sub-tab click the `+ New` button and select the **Dynamics 365 Payment Connector for Adyen** from the drop down and make sure the **Sequence Number** is lower than all other connectors.
 3. Under the **Connector Properties** section set the following values.
 
