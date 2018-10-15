@@ -5,7 +5,7 @@ title: Tax engine
 description: This topic provides information about extending tax engine configurations.
 author: yijialuan
 manager: AnnBe
-ms.date: 02/15/2018
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,9 +50,7 @@ The following tax terms are mentioned in this topic.
 |BCD| Basic Customs Duty|
 
 ## Prerequisites
-Before you can complete the example scenarios, complete the following tasks.
-
-### [Import GTE configuation from LCS](tax-engine-import-configuration.md)
+Before you can complete the example scenarios, complete the following tasks, [Import GTE configuation from LCS](tax-engine-import-configuration.md).
 
 ### Add a configuration provider and make it the active provider
 1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
