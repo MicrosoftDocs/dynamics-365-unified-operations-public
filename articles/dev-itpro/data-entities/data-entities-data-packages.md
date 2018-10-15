@@ -4,9 +4,8 @@
 title: Data management
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
-
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -277,7 +276,7 @@ The following features are enabled via flighting. *Flighting* is a concept that 
     - Flight name = DMFEnableAllCompanyExport
     - Enabled = 1
     - Flight service ID = 12719367
-    - Partition = partition ID from the environment which can be obtained by querying (select) for any record. Every record will have a partition id which must be copied and used here.
+    - Partition = partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
     - RecID = same ID as partition
     - RecVersion = 1
 
@@ -289,7 +288,7 @@ INSERT INTO SYSFLIGHTING VALUES ('DMFExportToPackageForceSync', 1, Flight servic
 - Flight name = DMFExportToPackageForceSync
 - Enabled = 1
 - Flight service ID = 12719367
-- Partition = partition ID from the environment which can be obtained by querying (select) for any record. Every record will have a partition id which must be copied and used here.
+- Partition = partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
 - RecID = same ID as partition
 - RecVersion = 1
 
