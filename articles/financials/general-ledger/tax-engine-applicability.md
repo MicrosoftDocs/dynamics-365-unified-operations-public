@@ -37,7 +37,7 @@ The [Tax engine](tax-engine.md) (also referred to as GTE) lets you configure tax
 > The Tax engine functionality is only available for legal entities with a primary address in India.
 
 ## Prerequisites                                               
-This document uses Indian Goods and Services Tax (IGST) configuration to explain the tax applicability. For more information, see [Import GTE configuation from LCS](tax-engine-import-configuration.md).
+This document uses Indian Goods and Services Tax (IGST) configuration to explain the tax applicability. For more information, see [Import GTE configuration from LCS](tax-engine-import-configuration.md).
 
 ## Overview
 Tax applicability is the condition under which tax type, tax component, or tax rate are applicable. For example, for India GST, if you sell goods from one state to another state, you need to charge IGST, and the goods you are selling will determine the tax rate. 
@@ -48,7 +48,7 @@ The following GTE components are relevant to tax applicability.
 |GTE component | Lookup/Condition | Comments |
 |--------------|------------------|----------|
 | Tax type | Lookup & Condition |  |
-| Tax component | Lookup & Condition | Both tax component and tax type can have applicability logi. Because the tax component is under tax type, applicability logic is used to determine whether a specific tax component is applicable. |
+| Tax component | Lookup & Condition | Both tax component and tax type can have applicability logic. Because the tax component is under tax type, applicability logic is used to determine whether a specific tax component is applicable. |
 | Tax measure | Lookup | The measure type should be **Tax rate**, **Percentage**, or **Percentage group**. |
 | Formula | Condition | For a specific transaction type, not all tax formulas are relevant. For example, the formula that is used to calculate the non-deductible tax is only relevant for document purchases. |
 | Posting | Condition | Different transaction types have different posting logic. In this case, a condition is used to ensure that the correct posting profile is used. | 
@@ -81,7 +81,7 @@ AND(Header.'Taxable Document Type'<>"Invent transfer order receive",
 ### Enable GST for intra-state inventory transfer order
 In this scenario, suppose that the Indian government requires you to calculate GST for intra-state inventory transfer orders if the GST registration numbers are different between the ship from and ship to warehouse. 
 
-#### Structure of the Data Source in the formula designer
+#### Structure of the Data source in the formula designer
 On the leftmost side of the formula designer, you can find all the fields that are defined in the taxable document and tax document, and the reference model that is defined in the taxable document.
 ```
 Header
@@ -115,9 +115,9 @@ AND(
     OR(NOT(Header.Lines.'HSN Code'=""), NOT(Header.Lines.SAC=""))
    )
 ```
-> Select the field from the data source, and use **Add data source** to add the field into the formula. Make sure to use single quotes for the data source field if there is an empty space in the name (like "Taxable Document Type"). Use a double quote for the value if there is an empty space (like "Inventory transfer order").
+Select the field from the data source, and use **Add data source** to add the field into the formula. Make sure to use single quotes for the data source field if there is an empty space in the name (like "Taxable Document Type"). Use a double quote for the value if there is an empty space (like "Inventory transfer order").
 
-> Click **Test** to test your formula after you are done with editing.
+Click **Test** to test your formula after you are done with editing.
 
 ## Lookup
 If the static applicability rules are complex, or it is a dynamic applicability rule, you need to use a lookup.
@@ -127,7 +127,7 @@ Select **GST**, click **Lookups**.
 
 ![CGST condition](media/gte-tax-document-applicability-static-lookups.png)
 
-Because a lookup can handle both static applicability rules and dynamic applicability rules, the **Source type** drop-down list is for this purpose. Use **Configuration** for the static applicability rule, which means that the data used in the a lookup comes from the configuration. Use **User data** for the dynamic applicability rule, which means that the data used in the lookup comes from the runtime environment, such as Finance and Operations.
+Because a lookup can handle both static applicability rules and dynamic applicability rules, the **Source type** drop-down list is for this purpose. Use **Configuration** for the static applicability rule, which means that the data used in the lookup comes from the configuration. Use **User data** for the dynamic applicability rule, which means that the data used in the lookup comes from the runtime environment, such as Finance and Operations.
 
 A lookup is a matrix. The relation of each line is *OR*, and the relation of each column within the line is *AND*. If the value of the cell is empty, it means that all of the values satisfy the condition. 
 
