@@ -84,6 +84,24 @@ This topic provides an overview of the Dynamics 365 Payment Connector for Adyen,
 ##### PIN pad
 1. Under the **PIN pad** tab set the value for **PIN pad** to `Network` and the value for the **Device name** to `MicrosoftAdyenDeviceV001`.
 
+#### Register
+> [!NOTE]
+> These instructions assume that there is a dedicated mapping between a Point of Sale register and an Adyen terminal.
+
+##### Board Adyen terminal
+Navigate to the Adyen [Point of sale](https://docs.adyen.com/developers/point-of-sale) page and follow the instructions to board your specific Adyen terminal. Skip any steps that instruct you to download Adyen specific apps. For each terminal retrieve the following details:
+
+- Terminal's IP Address
+- POIID
+
+##### Configure IP Address
+1. Sign in to Retail headquarters and navigate to **Retail > Channel setup > POS setup > Registers**.
+2. Select the register you would like to link to the Adyen terminal.
+3. In the newly opened POS Registers form, under the **PROFILES** tab **General** section set the **Hardware profile** to the hardware profile configured above.
+4. In the top menu select **REGISTER** and under the **HARDWARE** section click on `Configure IP addresses`.
+5. In the newly opened IP address configuration form, under the **PIN pad** section enter the **IP address** for the terminal following this pattern and the values retrieved above when boarding the Adyen Terminal:
+  - `https://<IP address>:8443/nexo/<POIID>` (e.g. `https://192.168.1.3:8443/nexo/MX925-123456789`).
+
 ### Call Center
 
 ### E-Commerce
