@@ -1,69 +1,47 @@
-Creating a Process template in Attract
-======================================
+# Create a process template in Attract
 
-A **Process template** contains all the activities that should be included as
-part of a hiring process for a job. This topic describes the elements of a
-process template in Microsoft Dynamics 365 for Talent: Attract and provides a guide on creating a template. 
+[!include [banner](includes/banner.md)]
 
-**Using templates**
--------------------
+A *hiring process template* contains all the activities that should be included as part of the hiring process for a job. This topic describes the elements of a process template in Microsoft Dynamics 365 for Talent: Attract. It also explains how to create a template.
 
-Organizations can choose whether to allow team members to create hiring process
-templates in Attract or only allow the Admin to create templates. To configure
-**Template management**, navigate to **Admin Center** --> **Template management** Turn
-Template management on to allow team members to create their own hiring process
-templates.
+> [!NOTE]
+> Template creation is part of the Comprehensive Hiring Add-on for Attract.
 
-[!NOTE] Creating templates is part of the Comprehensive Hiring Add-on for Attract. 
+## Template management
 
-**Creating a process template**
--------------------------------
+Organizations can decide whether team members or only admins can create process templates in Attract. To configure template management, go to **Admin Center** \> **Template management**. To let team members create their own templates, turn on template management. If you don't turn on template management, only admins can create templates.
 
-A template can be created by either an admin, recruiter or hiring manager. A
-**Process template** consists of **Stages** and **Activities**. Stages group one
-or more activities together. Every process template will have a **Prospect**,
-**Application**, and **Offer** activity by default. The **Stages** that contain these
-activities can be renamed. Additional stages can be added by selecting ‘+ New
-Stage’. One or more activities can be added to a Stage by dragging and dropping
-into the appropriate stage or by double clicking on the activity in the
-Activities list. 
+## Default template
 
-[!NOTE] Stage names are exposed to candidates in the application status page. Please consider this while choosing names for stages.
+Only admins can set the default template. The default template is used if a template isn't selected when a job is created. To set the default template, go to **Admin Center** \> **Template management**. On the card for the template that should be the default template, select the ellipsis button (**...**), and then select **Set as default**.
 
-To learn more about the Activities, see [Hiring Process Activities in Attract](./activities-attract.md) topic.
+## Create a process template
 
-**Default template**
---------------------
+Admins, recruiters, and hiring managers can create process templates. A process template consists of *stages* and *activities*. Stages group together one or more activities. By default, every process template has Prospect, Application, and Offer activities. The stages that contain these activities can be renamed. You can add more stages by selecting **+ New Stage**. You can activities to a stage either by dragging them to the appropriate stage or by double-clicking them in the activity list.
 
-Only Admins can set the default template. Set the default template in **Admin Center** --> **Template management** and click on the ellipses of a template card. Select ‘Set as default’. The default template will be used if a template is not
-selected when creating a job.
+> [!NOTE]
+> Stage names are visible to candidates on the **Application status** page. You should consider this fact when you choose names for stages.
 
-To create a template:
+To learn more about activities, see [Hiring process activities in Attract](./activities-attract.md).
 
-1.  Navigate to **Templates**
+Follow these steps to create a hiring process template.
 
-2.  Select **New**
+1. Go to **Templates**.
+2. Select **New**.
+3. In the **Template name** field, enter a name for the template, and then select **Create**.
+4. In the **Choose the approval process** list, select **Default** to require approval for a job.
+5. Select to enable or disable prospects.
+6. Optional: Add or remove stages.
 
-3.  Enter in the **Template name** and select **Create.**
+    - To add a stage, select **+ New Stage**.
+    - To remove a stage, hover the pointer over the stage, and then select the trash can button that appears.
 
-4.  Select **Default** in the **Choose the approval process** list to require
-    Approval for a job.
+        > [!NOTE]
+        > Prospect, Application, and Offer stages can't be removed, but they can be renamed.
 
-5.  Select to enable or disable Prospects
+7. Optional: Add or remove activities.
 
-6.  Optionally add or remove additional stages and activities.
+    - To add an activity, drag it from the activity list on the right to the appropriate stage. Alternatively, double-click the activity, and then select the stage to add it to.
+    - To remove an activity, expand it, and then select the trash can button on the activity header.
 
-7.  Add a new stage by selecting **+ New Stage**
-
-8.  Remove a stage by hovering on the **Stage** and selecting the trash can icon
-    that appears. Note: Prospect, Application and Offer stages cannot be removed
-    but can be renamed.
-
-9.  Add activities by dragging the **Activity** on the right and dropping in the
-    appropriate stage OR by double clicking the activity and selecting which
-    stage to put it in.
-
-10. Remove activities by expanding the **Activity** and selecting the trash can
-    icon on the activity header.
-
-11. Select **Save**
+8. Select **Save**.
