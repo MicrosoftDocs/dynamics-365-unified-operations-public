@@ -4,9 +4,8 @@
 title: Data management
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
-
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -273,29 +272,27 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 
 - Add a record with this Insert statement, replacing the appropriate values. 
 
-  INSERT INTO SYSFLIGHTING VALUES (‘DMFEnableAllCompanyExport’, 1, 12719367, 5637144576, 5637144576, 1) 
+  INSERT INTO SYSFLIGHTING VALUES (‘DMFEnableAllCompanyExport’, 1, Flight service ID, Partition, RecID, 1) 
     - Flight name = DMFEnableAllCompanyExport
     - Enabled = 1
-    - Flight service ID = 12719367 (D365 as shown in #2 above)
-    - Partition = Partition ID from the environment
-    - RecID = Same ID as partition
+    - Flight service ID = 12719367
+    - Partition = partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
+    - RecID = same ID as partition
     - RecVersion = 1
-- Change the web.config for your environment. 
-    - add key="DataAccess.FlightingServiceCatalogID" value="12719367"
 
 **DMFExportToPackageForceSync** - This flight represents the feature to enable synchronous behavior on the ExportToPackage integration API. By default, the behavior is asynchronous. This can be changed to synchronous in production environments by creating a support request. For non-production environments, the following steps must be followed.
 
-- Add a record with this Insert statement, replacing the appropriate values. 
+- Add a record with this Insert statement, replacing the appropriate values
 
-  INSERT INTO SYSFLIGHTING VALUES (‘DMFExportToPackageForceSync’, 1, 12719367, 5637144576, 5637144576, 1) 
-    - Flight name = DMFExportToPackageForceSync
-    - Enabled = 1
-    - Flight service ID = 12719367 (D365 as shown in #2 above)
-    - Partition = Partition ID from the environment
-    - RecID = Same ID as partition
-    - RecVersion = 1
-- Change the web.config for your environment. 
-    - add key="DataAccess.FlightingServiceCatalogID" value="12719367"
+INSERT INTO SYSFLIGHTING VALUES ('DMFExportToPackageForceSync', 1, Flight service ID, Partition, RecID, 1) 
+- Flight name = DMFExportToPackageForceSync
+- Enabled = 1
+- Flight service ID = 12719367
+- Partition = partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
+- RecID = same ID as partition
+- RecVersion = 1
+
+-Restart IIS
     
 ## Additional resources
 - [Data entities](data-entities.md)
