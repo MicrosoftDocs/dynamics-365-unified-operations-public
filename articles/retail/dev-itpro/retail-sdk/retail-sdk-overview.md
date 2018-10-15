@@ -38,7 +38,9 @@ This topic provides general information about the Retail SDK. The Retail SDK inc
 
 ## Overview
 
-The Retail software development kit (SDK) includes code, code samples, templates, and tools that you can use to customize retail functionality. The SDK supports rapid development, full MSBuild integration, package generation, and code separation.
+The Retail software development kit (SDK) includes code, code samples, templates, and tools that you can use to customize existing or add new retail functionality. The SDK supports rapid development, full MSBuild integration, package generation, and code separation.
+
+**Note: The Retail SDK supports TLS (Transport Layer Security) 1.2 standard, any customization build using the Retail SDK should follow TLS 1.2 standard.**
 
 ### Download the Retail SDK
 
@@ -63,7 +65,7 @@ The Retail SDK includes tools that generate new packages that include everything
 
 ### Better code separation
 
-Whenever the Retail SDK must be updated, a potential code merge is required. This requirement applies if existing code was changed. Some features in the implementation and in the folder structure of the SDK help provide better separation of customization code from sample code. Therefore, these features eliminate much of this issue. You can expect more improvements in this area in the future.
+Whenever the Retail SDK must be updated, a potential code merge is required, this requirement applies if existing code samples or templates was changed. Some features in the implementation and in the folder structure of the SDK help provide better separation of customization code from sample code. Therefore, these features eliminate much of this issue. You can expect more improvements in this area in the future.
 
 ### Real-world implementation samples
 
