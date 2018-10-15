@@ -52,30 +52,9 @@ The following tax terms are mentioned in this topic.
 ## Prerequisites
 Before you can complete the example scenarios, complete the following tasks.
 
-### Create a Lifecycle Services (LCS) configuration repository
-1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
-2. In the **Configuration providers** section, click **Repositories** on the **Microsoft** provider.
+### [Import GTE configuation from LCS](tax-engine-import-configuration.md)
 
-![Load configuration](media/gte-extension-repositories.png)
-
-3. Click **Add**. 
-4. Select the **LCS** option. 
-5. Click **Create repository** to create an LCS configuration repository.
-6. Enter a name and description for the repository and then click **OK**.
-
-#### Import configurations from LCS
-1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
-2. In the **Configuration providers** section, click **Repositories** on the **Microsoft** provider.
-3. Select the configuration repository that you just created. 
-4. Click **Open**.
-5. In tree, select the latest tax document (for example, select **Tax (India GST)**).
-6. In the **Versions** section, click **Import**.
-
-![Load configuration](media/gte-extension-import-configurations.png)
-
-7. Click **Yes** to confirm the import.
-
-#### Add a configuration provider and make it the active provider
+### Add a configuration provider and make it the active provider
 1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
 2. Click **Configuration providers**.
 3. Create a new configuration provider and close the page.
