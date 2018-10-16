@@ -1,198 +1,124 @@
-Creating, approving and posting jobs in Attract
-===============================================
+# Create, approve, and post jobs in Attract
 
-This topic describes the elements that a job contains in Microsoft Dynamics 365 for Talent: Attract and provides a
-guide on creating a job.
+[!include [banner](includes/banner.md)]
 
-**Creating a job**
-------------------
+This topic describes the elements of a job in Microsoft Dynamics 365 for Talent: Attract. It also explains how to create a job.
 
-A job can be created by either an admin, recruiter or hiring manager. When
-creating a job, the user will be prompted to select their role in the process;
-hiring manager or recruiter. Once a role has been selected the user will be
-prompted select a **Process template**. If the user selects ‘Skip’ the default
-template will be used. To find out more information regarding templates refer to
-the [Creating a Process Template in Attract](./process-templates-attract.md) topic.
+## Job creation
 
-A job in Attract contains **Job details**, a **Hiring team**, a **Hiring
-process**, **Job posting(s)** and **Analytics**.
+Admins, recruiters, and hiring managers can create jobs. When you create a job, you're prompted to select your role in the process: hiring manager or recruiter. After you select a role, you're prompted to select a process template. If you select **Skip**, the default template is used. For more information about process templates, see [Create a process template in Attract](./process-templates-attract.md).
 
-**Job details**
----------------
+A job in Attract has job details, a hiring team, a hiring process, job postings, and analytics.
 
-The **job details** contain the details regarding the job’s responsibilities and
-attributes. The **job title**, **job description** and **job location** are
-required fields. The remaining fields are optional.
+## Job details
 
-The **number of openings** field will default with 1 and can be incremented. The
-**number of openings available** will be decremented when an offer has been
-prepared for a job.
+The **Job details** tab contains details about the job's responsibilities and attributes. The fields for the job title, job description, and job location are required. The other fields are optional.
 
-If **Position Management** has been turned on in the Admin Center, the ‘Update
-positions’ lookup will be available. This lookup will read the JobPosition
-entity in CDS for Apps and return a list of positions to select on the job. If more
-positions are selected than are open, a warning will be displayed. If a position
-is used on multiple jobs, a warning will be displayed.
+By default, the **Number of openings** field is set to **1**. However, you can change the value. When an offer has been prepared for a job, the value of the **Number of openings available** field is decremented.
 
-[!NOTE] Position management is available with the Comprehensive Hiring
-Add-on.
+If position management has been turned on in the Admin Center, the **Update positions** lookup is available. This lookup reads the JobPosition entity in Common Data Service for Apps and returns a list of positions that can be selected for the job. If the number of positions that you select exceeds the number of open positions, you receive a warning. You also receive a warning if a position is used on multiple jobs.
 
-Depending on settings in the **Offer activity** of the hiring process, a
-position number may be used twice in an offer. Please see the hiring process
-section for more details.
+> [!NOTE]
+> Position management is available with the Comprehensive Hiring Add-on.
 
-Attract ships with a default set of **Skills**. These will show up as suggestions as you type. You can add additional Skills by
-entering the new skill text in the field and selecting Enter.
+Depending on the settings in the Offer activity of the hiring process, a position number can be used twice in an offer. For more information, see the hiring process section.
 
-Attract ships with a default set of **Job functions**. You can add Job functions
-by entering the function in the field and selecting Enter. You can add up to 3 job
-functions.
+Attract includes a default set of skills. These skills appear as suggestions as you type. You can add more skills by entering the new skill text in the field and then selecting Enter.
 
-Attract ships with a default set of **Company Industries**. You can add up to 3
-company industries by entering the Company Industry in the field and selecting
-enter.
+Attract includes a default set of job functions. You can add up to three more job functions by entering the new job function in the field and then selecting Enter.
 
-**Hiring team**
----------------
+Attract includes a default set of company industries. You can add up to three more company industries by entering the new company industry in the field and then selecting Enter.
 
-The **Hiring team** contains the list of individuals who will be involved in the
-job. When users are added to a hiring team they must be given a role on the
-hiring team. The role determines what data they will have access to, as well as
-what notifications they will receive. Roles that can be selected are recruiter,
-hiring manager, delegate, and interviewer. To read more about role privileges
-please refer to the **Role management** document. Recruiters and hiring managers
-may appoint one or more delegates to work on their behalf. To read more about
-delegates please refer to the [Security and Role management in Attract](./security-attract.md) topic.
+## Hiring team
+
+The **Hiring team** tab contains the list of individuals who will be involved in the job. When users are added to a hiring team, they must be assigned a role on the hiring team. The role determines the data that the users have access to and the notifications that they receive. The roles that can be selected are **Recruiter**, **Hiring manager**, **Delegate**, and **Interviewer**. For more information about role privileges, see the "Role management" document. Recruiters and hiring managers can appoint one or more delegates to work on their behalf. For more information about delegates, see [Security and role management in Attract](./security-attract.md).
 
 The hiring team can be updated after the job is activated.
 
-**Process**
----------------
+## Process
 
-The hiring process is defaulted based on the **Process template** that was
-selected at the time the job was created. If a template was not selected at the
-time of creation, the default template will be used. When defining the hiring
-process various stages can be added or removed, except for the Prospect,
-Application, and Offer stages. While the Prospect stage cannot be removed, it
-can be turned off. Within each stage one or more pre-defined activities can be
-added or removed.
+Default information about the hiring process is based on the process template that was selected when the job was created. If a specific template wasn't selected at that time, the default template is used. When you define the hiring process, you can add or remove various stages, except the Prospect, Application, and Offer stages. Although the Prospect stage can't be removed, it can be turned off. Within each stage, you can add or remove one or more predefined activities.
 
-To learn more about activities that can be added to the hiring process, review
-the [Hiring Process Activities in Attract](./activities-attract.md) topic.
+For more information about activities that can be added to the hiring process, see [Hiring process activities in Attract](./activities-attract.md).
 
-[!NOTE] The process cannot be updated after the job is activated.
+> [!NOTE]
+> The process hiring can't be updated after a job is activated.
 
-**Postings**
----------------
+## Postings
 
-Once a job has been activated it can be posted. Only recruiters or admins can
-post the job. The job can be posted to Talent Careers (A Dynamics365 for Talent
-career site) or to LinkedIn. The Attract team continually works to partner with
-job board aggregators so this list will expand over time.
+After a job is activated, it can be posted. Only recruiters and admins can post jobs. The job can be posted to either Talent Careers (a Microsoft Dynamics 365 for Talent career site) or LinkedIn. The Attract team continually works to partner with job board aggregators. Therefore, this list will expand over time.
 
-To learn more about job posting refer to the [Career Site functionality in Attract](./career-site.md) topic.
+For more information about job postings, see [Career site functionality in Attract](./career-site.md).
 
-[!NOTE] Job Posting functionality is only available with the Comprehensive
-Hiring Add-on for Attract.
+> [!NOTE]
+> The job posting functionality is available only with the Comprehensive Hiring Add-on for Attract.
 
-**Activate**
--------------
+## Activate
 
-Activating a job allows it to be posted and allows for prospects and applicants to be added
-to the job. The ability to add prospects to a job is configured within the
-Prospect activity within the hiring process. Once a job has been activated, the
-hiring process cannot be edited.
+After a job is activated, it can be posted, and prospects and applicants can be added to it. The option to add prospects to a job is set in the Prospect activity in the hiring process.
 
-**Prospects and applicants**
----------------
+> [!NOTE]
+> The process hiring can't be updated after a job is activated.
 
-The option to add prospects to a job is set within the [Prospect activity](./activities-attract.md#prospect-activity) in the
-Hiring process. This should be set before activating the job. Once a job has been activated, prospects and applicants can be added.
+## Prospects and applicants
 
-**Approvals**
----------------
+The option to add prospects to a job is set in the [Prospect activity](./activities-attract.md#prospect-activity) in the hiring process. This option should be set before you activate the job. After a job is activated, prospects and applicants can be added to it.
 
-Attract jobs can be submitted for approval. Whether a job will require
-approval is set at the template level. By default, approvals are turned off on
-the template. To setup approvals, navigate to a process template and set the
-approval to ‘Default’ and select this template when creating the job.
+## Approvals
 
-Once the job is saved it can be submitted for approval. Listed below
-are the statuses of a document using approvals.
+Attract jobs can be submitted for approval. Not all jobs require approval. The requirement is set at the template level. By default, approvals are turned off on the template. To set up approvals, go to a process template, and set the approval to **Default**. Then select that template when you create the job.
 
-| Status   | State                                         |
-|----------|-----------------------------------------------|
-| Draft    | Job is saved but not submitted to workflow    |
-| Pending  | Job has been submitted to approvers           |
-| Approved | Job has been approved but not activated       |
-| Rejected | Job has been rejected and it cannot be activated |
-| Active   | Job has been approved and has been activated. |
+After a job is saved, it can be submitted for approval. The following table lists the statuses of a document that uses approvals.
 
-Within the job list you can filter on the job statuses above.
+| Status   | State                                                               |
+|----------|---------------------------------------------------------------------|
+| Draft    | The job has been saved, but it hasn't been submitted to a workflow. |
+| Pending  | The job has been submitted to approvers.                            |
+| Approved | The job has been approved, but it hasn't been activated.            |
+| Rejected | The job has been rejected, and it can't be activated.               |
+| Active   | The job has been approved and activated.                            |
 
-Approvals can be sent to any AAD user in the company. The approvals will be sent
-in parallel to all approvers listed. Once the job is approved it can be
-activated.
+In the job list, you can filter on the job statuses.
 
-Individuals who are listed as approvers will receive a notification in Attract
-indicating they have an item to approve and an approval item will show on the
-dashboard in the ‘Assigned to you’ section. Once an individual accepts or
-approves the job the hiring team will receive a notification informing them.
-Lastly, when the job is approved, the hiring team will receive a notification.
+Approvals can be sent to any Microsoft Azure Active Directory (Azure AD) user in the company. The approvals are sent in parallel to all the people who are listed as approvers. After a job is approved, it can be activated.
 
-To create a job:
+The people who are listed as approvers will receive a notification in Attract to inform them that they have an item to approve. An approval item will also appear in the **Assigned to you** section on the dashboard. After someone accepts or approves a job, the hiring team will receive a notification. Finally, the hiring team will receive a notification when the job is approved.
 
-1.  Navigate to **Jobs**
+## Create a job
 
-2.  Select **New**
+Follow these steps to create a job.
 
-3.  Enter in the **Job title** and your **Role**
+1. Go to **Jobs**.
+2. Select **New**.
+3. In the **Job title** field, enter the job title. In the **Role** field, enter your role.
+4. In the **Template** field, select a template. Alternatively, select **Skip**. If you select **Skip**, the template that is marked as the default template is used.
 
-4.  Select a **Template** or choose skip. Choosing ‘skip’ selects the template
-    marked as ‘Default’. If you want the document to go through an approval
-    process, select a template that has the **Approval process** set to
-    **Default**
+    If the document should go through an approval process, select a template where the **Approval process** field is set to **Default**.
 
-5.  Enter in the details in the details tab. Required fields are **Title**,
-    **Job description**, and **Location.**
+5. On the **Details** tab, enter the details of the job. The **Title**, **Job description**, and **Location** fields are required.
+6. Select **Save**.
+7. On the **Hiring team** tab, add a hiring manager, recruiter, or interviewer.
+8. Select **Save**.
+9. On the **Process** tab, add or remove stages as you require:
 
-6.  Select **Save**
+    - To add a stage, select **+ New Stage**.
+    - To remove a stage, hover the pointer over the stage to remove, and then select the trash can button that appears.
 
-7.  Select the **Hiring team** tab
+        > [!NOTE]
+        > The Prospect, Application, and Offer stages can't be removed.
 
-8.  Add a hiring manager, recruiter, or interviewer
+10. Add or remove activities as you require:
 
-9. Select **Save**
+    - To add an activity, drag it from the list on the right to the appropriate stage. Alternatively, double-click the activity, and then select the stage to add it to.
+    - To remove an activity, expand the activity, and then select the trash can button on the activity header.
 
-10. Navigate to the **Process tab**
+11. Select **Save**.
+12. If you selected to use an approval process, follow these steps:
 
-11. Add a new stage, as needed, by selecting **‘+ New Stage’**
+    1. Select **+ Add approver**, and then enter a user who has an Azure AD account. You can add multiple approvers.
+    2. Select **Send to approvers**.
 
-12. Remove a stage, as needed, by hovering on the **Stage** and selecting the trash can icon
-    that appears. 
-    
-    [!NOTE] Prospect, Application and Offer stages cannot be removed
+    The **Job status** field of the job is set to **Pending**. After the value of the **Job status** field changes to **Approved**, the job can be activated.
 
-13. Add activities, as needed, by dragging the **Activity** on the right and dropping in the
-    appropriate stage OR by double clicking the activity and selecting which
-    stage to put it in.
-
-15. Remove activities, as needed, by expanding the **Activity** and selecting the trash can
-    icon on the activity header.
-
-16. Select **Save**
-
-17. If you have selected to use an approval process, select **‘+ Add approver’**
-    and enter in a user with an AAD account. You can add multiple approvers.
-    Otherwise, continue to step 21.
-
-18. Select **Send to approvers**.
-
-19. The job will display a **Job status** of **Pending**.
-
-20. Once the **Job status** status changes to **Approved,** it can be activated.
-
-21. To activate the job, select the **Activate** button.
-
-22. Navigate to Postings. Select **Post Now** under the Talent Careers site or
-    LinkedIn to post the job.
+13. To activate the job, select **Activate**.
+14. To post the job, go to **Postings**, and then select **Post Now** under the Talent Careers site or LinkedIn.
