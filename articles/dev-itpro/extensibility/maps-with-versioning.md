@@ -46,7 +46,7 @@ To be able to specify new fields to be copied, the **PurchLineMap** table map lo
 
 The **PurchLineDictVersioning** class instantiates the **PurchLineIVersioningFieldSet** object using reflection. The **PurchLineDictVersioning** class collects the entire set of fields which need to be copied. The field data is collected based on all the table maps associated with a class that implements **PurchLineIVersioningFieldSet**. The following diagram displays the new classes and their dependencies.
 
-![Solution](media/MapsWithVersioning2.png)
+![Solution](media/TableMaps.png)
 
 ## How to extend PurchLine and PurchLineHistory tables with new fields
 
