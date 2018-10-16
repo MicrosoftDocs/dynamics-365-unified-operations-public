@@ -100,7 +100,7 @@ This sections includes "How do I?" topics that explain how to customize specific
 + [Modify form control properties](modify-control-properties.md)
 
 ### Others
-+ [Extending decimal point precision](DecimalPointPrecision.md)
++ [Extending decimal point precision](decimal-point-precision.md)
 
 ### Reports
 + [Extend the list of Electronic reporting functions](../analytics/general-electronic-reporting-formulas-list-extension.md)
