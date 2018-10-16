@@ -1,209 +1,111 @@
-Sourcing with Talent Pools
-=========================
+Source candidates by using talent pools
+===
 
-Recruiters and hiring managers can organize their candidates using the **Talent pools**
-capability. There are hundreds to thousands of candidates who are applying for
-jobs at your organization, the ones who are being sourced, you never want these
-candidates to be lost amongst these numbers. This is where these talent pools
-can come in handy to keep track and engage with all the talent.
+[!include [banner](includes/banner.md)]
 
-Create and share a Talent Pool
-------------------------------
+Recruiters and hiring managers can organize their candidates using the Talent pools capability. Hundreds to thousands of candidates might apply for jobs at your organization, and you never want talent that you can source to become lost among these numbers. Talent pools can help you keep track of and engage with all the talent.
 
-Any user with Recruiter, Hiring manager or Admin role can create talent
-pools. The owner of the talent pool can also share this pool with other users.
-This helps groups of users, especially recruiters, look at a common pool of
-candidates. Contributors to a talent pool can view the list of candidates in a
-pool and also be able to add or delete other candidates to the pool. Below are the steps to
-create and share a Talent pool.
+Create and share a talent pool
+---
 
-1.  From the Attract home page, click on the **Talent Pools** tab in the left
-    navigation panel.
+Any user who has the Recruiter, Hiring manager, or AttractAdmin role can create talent pools. The owner of a talent pool can also share that pool with other users. In this way, groups of users, especially recruiters, can look at a shared pool of candidates.
 
-2.  You will see **My talent pools** which shows you all the Talent Pools that you
-    have access to including details like the owner of each of those pools and how many
-    candidates are part of each pool.
+Contributors to a talent pool can view the list of candidates in that pool. They can also add candidates to the pool or remove candidates from it.
 
-3.  Click the **+ New** button on top right which will bring up the create talent
-    pool modal experience
+Follow these steps to create and share a talent pool.
 
-4.  Enter a unique name for the Talent Pool.
+1. On the Attract home page, in the left navigation pane, select **Talent Pools**.
 
-5.  If you wish to add contributors for this pool, find them
-    using the people picker and add them to the list. 
-    
-    [!NOTE] You can only share this talent pool with those users who have a recruiter, hiring manager
-    or the AttractAdmin role.
+    The **My talent pools** tab shows all the talent pools that you have access to, together with details about each. These details include the owner of the pool and the number of candidates in it.
 
-6.  Click “Add” to create the Talent Pool.
+2. In the upper right, select **+ New** to open the **Create talent pool** dialog box.
+3. Enter a unique name for the talent pool.
+4. To add people as contributors to the pool, find them by using the people picker, and then add them to the list. 
 
-7.  If you wish to add contributors to an existing Talent Pool that you own,
-    click the **…** on top right of the talent pool card on the **My talent pools**
-    tab and click Edit.
+    > [!NOTE]
+    > You can share a talent pool only with users who have the Recruiter, Hiring manager, or AttractAdmin role.
 
-8.  You can add users using the same people picker as step 5.
+5. Select **Add** to create the talent pool.
+6. To add contributors to an existing talent pool that you own, on the **My talent pools** tab, in the upper right of the talent pool card, select the ellipsis button (**…**), and then select **Edit**. Then find the people by using the people picker, and add them to the list. 
+7. To revoke a user's access to the talent pool, in the upper right of the talent pool card, select the ellipsis button (**…**), and then select **Edit**. Then, on the **Manage access** tab, select the trash can button next to the user.
+8. Select **Update** to complete and save the operation.
 
-9.  If you wish to remove a user from having access to this Talent Pool, select the **Edit** button under the **...** against 
-    the talent pool, select the **Manage access** tab under and click the trash-can icon to remove any user.
+> [!NOTE]
+> To create more than one talent pool, organizations must have the Comprehensive Hiring add-on.
 
-10. Click update to complete and save the operation.
+Add candidates to and remove candidates from a talent pool 
+---
 
-[!NOTE] For creating more than one talent pool organizations need to have the Comprehensive Hiring add-on
+Both the owner of a talent pool and contributors to it can add candidates to the talent pool, view the candidates in it, or remove candidates from it.
 
+1. On the **My talent pools** tab, select a talent pool to open it.
 
-Adding and removing candidates from a Talent Pool 
---------------------------------------------------
+    A list of the candidates who are part of the talent pool is shown.
 
-Both the owner and the contributors to a pool can add, view or remove candidates
-from a talent pool.
+2. To add candidates to the talent pool, select **+ New** in the upper right to open the **Add candidate** dialog box, and then follow one of these steps:
 
-1.  From the **My talent pools** tab, click to open any of the talent pools
+    - To add an internal candidate, you can search for the person by email address. After a successful search, the candidate's email address, first name, and last name are filled in. If you have the candidate's resume or any related documents about the candidate, you can upload them at this point. Then select **Add** to add the candidate to the talent pool.
+    - To add an external candidate, manually enter his or her email address, first name, and last name. If you have the candidate's resume or any related documents about the candidate, you can upload them at this point. Then select **Add** to add the candidate to the talent pool.
+    - To add multiple candidates, select the **From Excel** tab. You can then download the appropriate Microsoft Excel template, enter the details for the candidates, save the Excel worksheet, and upload it to the application.
 
-2.  You will see the list of candidates that are part of the talent pool.
+        If any errors are found in the worksheet, you receive messages about them. You can then fix the errors and try to upload the worksheet again. When no more errors are found, select **Add** to upload the worksheet. The worksheet is processed in the background, and you're notified when all the candidates have been added to the talent pool.
 
-3.  Use the **+ New** option on top right of the screen to open the experience to
-    add candidates to this talent pool.
+3. To remove an existing candidate from the talent pool, in the **Action** column, select the trash can button for that candidate.
 
-4.  You can easily find internal candidates by searching for them using
-    their email address. Upon a successful search, the email address, first name
-    and last name for the candidate would be populated. If you have the resume
-    or any related documents about the candidate, you can upload them at this
-    step and click **Add** to add the candidate to this talent pool
+Search and view candidate profiles
+---
 
-5.  If you wish to add an external candidate, please skip the first search box.
-    You can directly enter the email address, first name and last name of the
-    candidate you want to add. Optionally you can upload documents related to
-    this candidate as well. Click **Add** to finish.
+Users of a talent pool can view a candidate's profile, his or her LinkedIn information, related documents, or the candidate's whole application history. You can also search your whole candidate database for any candidate who has ever applied for any job in your organization, or who has ever been added to any talent pool.
 
-6.  If you have multiple candidates to add to the talent pool, under the Add
-    Candidate experience, go to the **From Excel** tab. You can download the
-    appropriate MS Excel template, populate with the candidates’ details, save
-    and upload the excel back to the application. If there were any errors
-    processing the sheet, you will be informed of the errors. You can fix the
-    errors and upload back. Click **Add** to upload the excel if there are no more
-    errors.
+1. You can use the search field at the top of the **My talent pools** tab to search your whole candidate database.
+2. You can search among various profile attributes. Select the search attribute category, build a search query, and then select the right arrow button (**-\>**) to run the search.
 
-7.  The excel sheet will be processed in the background and you will be notified
-    when all the candidates have been added to the Talent pool.
+    You can look up candidates by their name, the organization that they work for, the skills that they have been tagged for, their education history, their current job title, or the degree that they have earned, if this information is included in their profile.
 
-8.  If you want to delete any of existing candidates from the talent pool, click
-    the trash-can icon under the Action column to remove the candidate.
+    You can also create a search query that uses two or more of these attributes as criteria. Combine the criteria by using an **and** operator.
 
-Search and view your candidates’ profile
-----------------------------------------
+    If any candidates match your search query, they are listed in the search results.
 
-Users of a talent pool can view the candidate’s profile, their LinkedIn
-information, related documents or the entire application history of the
-candidate. You can also search amongst your entire candidate database for any
-candidate that has ever applied to any jobs in your organization or added to any
-of the talent pools.
+3. To narrow down your results, you can update the search query by using the search field at the top.
 
-1.  When you land in **My talent pools** experience, you can use the search box at
-    the top to look up your entire candidate database.
+    Alternatively, use the list of smart filters on the right. These smart filters are dynamically pulled in, based on the search results.
 
-2.  You can search amongst different profile attributes. You can lookup
-    candidates using their names, the organization they work at, the skills they
-    have been tagged for, their education history, their current job title or
-    the degree they may have listed on their profile.
+4. The search results show the top 20 skills, schools, organization, and so on, that are most often found in the list of candidates. You can add more filters for any of these attributes to narrow down the search results even more.
+5. After you've identified the correct candidate, select the row for that candidate to view his or her profile.
 
-3.  You can also have a search query which can be combination of two or more of
-    these criteria. These criteria are combined with a "and" operator.
+All users have a common view of candidate profiles. Select the row for a candidate in a set of search results or a talent pool to view his or her profile.
 
-4.  Select the search attribute category, build the search query and click the
-    **->** button to perform the search.
+- The **Profile** tab shows any information about skills, work experience, and educatoon that the candidate has updated from the career portal.
 
-5.  If there are candidate(s) that match your search query, they are listed in
-    the search results list view.
+    - You can view the contact details for the candidate. You can also edit or update the information as you require by using the **Edit details** button.
+    - You can add more skills tags to help identify a candidate's skills.
+    - You can view the candidate's whole application history. You can see all the jobs that the candidate has applied for in your organization and the status of those applications. If you're part of a job's hiring team, you can select **View** to look at the application in detail.
 
-6.  You can further narrow your search by updating the search query using the
-    search box at the top.
+- The **Documents** tab shows any documents that the candidate has added from his or her profile or during job applications. This tab can be used to manage the candidate's resumes, cover letters, portfolio work, and so on. You can also use this tab to add documents.
 
-7.  Alternatively, we have a list of smart filters available on the right. These
-    smart filters are dynamically pulled in using the candidates search result
-    view.
+    To view a document, select the document name in the list of documents. You can view Microsoft Word documents in the application by using Microsoft Office 365. You can also download the documents to your local computer by using the **Download** option for each document.
 
-8.  We list the top 20 most occurring skills, schools, organization etc from the
-    list of candidates. You can choose to add additional filters for any of
-    these attributes to narrow down the search.
+- The **LinkedIn** tab shows the candidate's LinkedIn information. To use this tab, you must connect your LinkedIn account in the user settings, and your environment's LinkedIn Recruiter connection must be established. For more information, see [Sourcing with LinkedIn Recruiter](./attract-linked-in-recruiter.md).
 
-9.  Once you have the right candidate identified, you can click the result row
-    to view the candidate’s profile.
+Add candidates from a talent pool to a job
+---
 
-All users have a common view of the candidate’s profile. Click the candidate’s
-row from a result set or inside of a talent pool to view their profile.
+From the search results or a talent pool, you can push a candidate to any active job that you're hiring for. To push a candidate to a specific job, follow these steps.
 
-1.  Under the profile tab, you can view the skills, work experience and the educaton related
-    information that the candidate may have updated from the career portal.
+1. Find the candidate by using the search option, and open his or her profile. Alternatively, open the talent pool from the **My talent pools** tab, search for the candidate in your talent pool, and then open his or her profile.
+2. On the candidate's profile page, select **+ Add to job** in the upper right. A list of jobs that you belong to the hiring team for, as either a recruiter or a hiring manager, is shown.
+3. Select the job to add the candidate to, and then select **Add**. You can also search for the job by using the search field at the top of the **Add candidate to job** dialog box.
 
-2.  You can view the contact details for the candidate or choose to
-    edit/update information as necessary using the **Edit details** button.
+    If prospecting was enabled for the job, the candidate is added to the Prospect stage.
 
-3.  You can add any additional skills tag about the candidate that will be helpful to
-    identify a candidate’s skill
-
-4.  You can view the entire application history of the candidate. You can see all the
-    jobs that the candidate has applied to in your organization and their latest
-    status. If you are part of the job’s hiring team, you can click **View** to
-    look at the application in detail.
-
-5.  Navigate to the **Documents** tab under a candidate’s profile to see the
-    documents that the candidate may have added from their profile or during job
-    applications. This could be used to keep track of their resumes, cover
-    letter, portfolio work, etc. You can choose to add additional documents from
-    this tab as well.
-
-6.  To view a document, click the document name under the list of documents. You
-    can view Word documents right there using Microsoft Office 365. You can also
-    download the documents to your local machine using the download option
-    against each document.
-
-7.  You can view the candidate’s LinkedIn information under the LinkedIn tab,
-    please make sure you have connected your LinkedIn account under user
-    settings and your environment’s LinkedIn Recruiter connection has been
-    established. For more details, please refer to [Sourcing with LinkedIn Recruiter](./attract-linked-in-recruiter.md)
-
-Add candidates from a Talent Pool to a job
-------------------------------------------
-
-You can also push a candidate from the search results or talent pool to any
-active job that you are hiring for. To push the candidate to a specific job,
-
-1.  Find the candidate using the search option and open their candidate profile.
-
-2.  Alternatively, open the talent pool from **My talent pools** tab and search
-    for the candidate inside your talent pool and click to open their profile.
-
-3.  Once you are on a candidate’s profile page, click the “+ Add to job” button
-    on top right.
-
-4.  This will pull up the list of jobs where you are part of the hiring team
-    listed as a recruiter or a hiring manager.
-
-5.  Select any job that you want to add the candidate to and click **Add**. You
-    can also search for job using the search option at the top of the Add
-    candidate to job dialog box.
-
-6.  If the job had a prospect stage enabled, the candidate will be added to the
-    prospect stage.
-
-7.  If prospecting wasn’t enabled for the job, the candidate will be directly
-    added to the Apply stage and they may receive and e-mail to look at their
-    application depending on your job configuration.
+    If prospecting wasn't enabled for the job, the candidate is added to the Apply stage. Depending on the job configuration, the candidate might also receive an email where they can view their application.
 
 Add candidates from a job to a talent pool
-------------------------------------------
+---
 
-It also happens a lot of times that there were several good candidates as part
-of a job, but they weren’t selected. However, you don’t want to lose track of
-these candidates and may want to add them to a talent pool to maybe invite them
-to apply for another job you may have coming up.
+Often, several good candidates for a job aren't selected. However, you don't want to lose track of them. In this case, you might want to add the candidates to a talent pool so that you can invite them to apply for other upcoming jobs.
 
-1.  Go to the job where you wish to add candidates from.
-
-2.  Select the candidate and click to open their application.
-
-3.  On the application page, click **Add to talent pool**
-
-4.  You will see a list of talent pools you have access to and select or search
-    the talent pool and click **Add** to add the candidate to that talent pool as
-    well.
+1. Go to the job that you want to add a candidate from.
+2. Select the candidate, and open his or her application.
+3. On the application page, select **Add to talent pool**. A list of talent pools that you have access to is shown.
+4. Select or search for the talent pool, and then select **Add** to add the candidate to that talent pool.
