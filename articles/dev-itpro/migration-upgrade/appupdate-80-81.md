@@ -86,7 +86,7 @@ Now you are ready to map this branch to a new development environment and compil
 After you have compiled in a developer environment and there are no errors to resolve, start a build in Azure DevOps using your new 8.1 build environment agent that was setup earlier. When this is complete, a deployable package artifact will be attached to your build results. Download this package and upload it to the Lifecycle Services Asset Library.  This single package should have all of your extensions and ISV solutions.
 
 ## Merge the deployable package with the 8.1 binary update package
-In Lifecycle Services, visit the Asset Library and then click on the Software Deployable Packages section. Click the **Import** button, and on the next screen you will see an option for the 8.1 Application release. Import this package to your Asset Library.  
+In Lifecycle Services, go to the Asset Library, and then click the **Software deployable packages** section. Click the **Import** button, and on the next screen you will see an option for the 8.1 application release. Import this package to your Asset Library.  
 
 Locate both your new 8.1 software deployable package and the 8.1 binary update package that was just saved.  Highlight both packages and select **Merge**. This will combine the files in to a merged update package.  You are now ready to apply this package to your various test environments.
 
