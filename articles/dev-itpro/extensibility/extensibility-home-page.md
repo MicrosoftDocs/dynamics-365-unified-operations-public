@@ -103,9 +103,6 @@ This sections includes "How do I?" topics that explain how to customize specific
 + [Extend the list of Electronic reporting functions](../analytics/general-electronic-reporting-formulas-list-extension.md)
 + [Customize App Suite reports](../analytics/customize-app-suite-reports-with-extensions.md)
 
-### Labels
-+ [Change a label](change-label.md)
-
 ### Blog posts
 
 Information about customization is also shared through blogs where various topics are discussed. This section includes reference to some of these blogs.
