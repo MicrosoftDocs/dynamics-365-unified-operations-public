@@ -305,8 +305,6 @@
         href: extensibility/change-caption-form.md
       - name: Modify form control properties
         href: extensibility/modify-control-properties.md
-      - name: Change labels using label extension files
-        href: extensibility/change-label.md
       - name: Extend the scope of number sequences
         href: extensibility/extend-number-sequence-scope.md
       - name: Add new inventory dimensions
