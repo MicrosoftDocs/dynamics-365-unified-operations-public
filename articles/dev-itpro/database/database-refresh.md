@@ -3,9 +3,9 @@
 
 title: Request sandbox database refreshes
 description: This topic explains how to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, in a sandbox user acceptance testing (UAT) environment.
-author: Robadawy
+author: LaneSwenka
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 10/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 257614
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: laneswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -39,6 +39,9 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to request a refresh of 
 This functionality lets you use production data to test upcoming code changes in a UAT environment. You can also copy a production database into a UAT environment for debugging purposes.
 
 ## Database refresh process
+
+> [!NOTE]
+> As of October 8, 2018 Database Refresh requests must be signed off before another refresh of the same environment can be requested.  This is to support future automation of database movement operations.
 
 The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be approximately two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment's downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
 
@@ -60,6 +63,7 @@ The Microsoft Service Engineering team will take your environment offline, compl
 ## Conditions of a database refresh
 Here is the list of requirements and conditions of operation for a database refresh:
 
+- All previous Database Refresh requests for the environment are marked either *Succeeded*, *Failed*, or *Cancelled*.
 - Requests must be submitted 24 hours before the desired downtime window, to help guarantee that resources will be available to complete the request.
 - A refresh erases the existing database in the target environment. The existing database can't be recovered after the refresh is completed.
 - The target environment will be unavailable until the refresh process is completed.
