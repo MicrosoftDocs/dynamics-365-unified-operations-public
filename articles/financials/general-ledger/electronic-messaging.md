@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic messaging
-description: This article describes accruals, and provides information about how to set them up and create transactions.
+description: This topic provides overview and setup information for electronic messaging in Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/02/2018
@@ -33,318 +33,342 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview and setup information for electronic messaging in Microsoft Dynamics 365 for Finance and Operations. Recent trends in requirements addressed to the reporting sphere from Government and legislative authority of different countries all over the world are aimed at implementing the possibility of obtaining data from companies registered in the country in electronic format directly from the systems were this data is
-accounted, stored and processed. Electronic Messages functionality (EM) supports different processes of electronical interoperation between Microsoft Dynamics 365 for Finance and Operations and systems offered by Governments and legislative authorities for reporting, submission and receiving official information.
+This topic provides overview and setup information for electronic messaging in Microsoft Dynamics 365 for Finance and Operations.
 
-EM integrates with the Electronic Reporting (ER) module which allows you to set up electronic report formats. To learn about electronic reporting, see <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting>.
+Recently, the governments and legislative authorities of various countries and regions around the world have implemented reporting requirements for companies that are registered in those countries or regions. The purpose of the requirements is to enable data to be obtained from those companies in electronic format, directly from the systems where it was accounted, stored, and processed.
+
+The Electronic messages functionality in Finance and Operations supports various processes for electronic interoperation between Finance and Operations and the systems that governments and legislative authorities offer for reporting, submitting, and receiving official information.
+
+The Electronic messages functionality is integrated with the **Electronic Reporting** (ER) module. Therefore, you can set up ER formats for electronic messages. For more information, see [Electronic reporting (ER)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
 Electronic messaging is based on the following entities:
 
--   **Electronic Message** – a report or declaration which should be reported and/or transmitted internally. For example, a report that is sent to a tax office.
+- **Electronic message** – A report or declaration that should be reported and/or transmitted internally. An example is a report that is sent to a tax office.
+- **Electronic message items** – Records that should be included in the message that is reported.
+- **Electronic message processing** – A chain of actions, either linked or unlinked, that should be run to collect the required data, generate reports, store data in Microsoft Azure Blob storage, transmit reports outside the system, get responses from outside the system, and update the database, based on the information that is received.
 
--   **Electronic Message items** – records which should be included in the message to be reported.
-
--   **Electronic message processing** – chain of linked among each other or not linked **Actions** which should be executed to collect necessary data, generate report(s), store it in Azure blob, transmit report to the outside of the system, get a response from outside of the system, update database respectively to the information received.
+The following illustration shows the flow of data for electronic messaging.
 
 ![Electronic messaging data flow](media/electronic-messaging-data-flow.png)
 
-**Electronic messages** supports the following scenarios:
+The Electronic messages functionality supports the following scenarios:
 
--   Manually create messages and generate reports basing on associated exported GER format of different types (Microsoft Excel, XML, JSON, PDF, TEXT, Microsoft Word)
-
--   Automatically create and process messages based on information that was requested and obtained from an authority via an associated importing GER format.
-
--   Collect and process information from a data source AX tables as Message items.
-
--   Store additional information and evaluate different values via calling specifically defined executable classes in relation with Messages or Message
-    items.
-
--   Aggregate information collected in Message items split it by Messages, generate report(s) basing on exporting GER formats.
-
--   Transmit generated reports to a web-service using security information stored in Key Vault.
-
--   Get response from a web-service, interpret it and update data in AX respectively.
-
--   Store and review all the generated reports.
-
--   Store and review all the log information related to actions executed for a Message or Message item.
-
--   Control the processing basing on different Message statuses and Message items statuses.
+- Manually create messages and generate reports that are based on associated exported ER formats of various types: Microsoft Excel, XML, JavaScript Object Notation (JSON), PDF, text, and Microsoft Word.
+- Automatically create and process messages that are based on information that was requested and obtained from an authority via an associated importing ER format.
+- Collect and process information from a data source Finance and Operations tables as message items.
+- Store additional information, and evaluate various values by calling specifically defined executable classes in relation to messages or message items.
+- Aggregate information that is collected in message items, split that information by message, and generate reports that are in associated exporting ER formats.
+- Transmit reports that are generated to a web service by using security information that is stored in Azure Key Vault.
+- Get a response from a web service, interpret the response, and update data in Finance and Operations as appropriate.
+- Store and review all the reports that are generated.
+- Store and review all the log information that is related to actions that are run for a message or message item.
+- Control the processing through various message statuses and message item statuses.
 
 ## Set up electronic messaging
 
-Electronic messaging can help you maintain different processes of electronic reporting of different document types. For some of the complex scenarios where electronic messaging is set up to have a combination of many different Message statuses, Message items statuses, Actions, Additional fields, and Executable classes, packages of data entities are available for you to import. 
+Electronic messaging can help you maintain different electronic reporting processes for different document types. In some complex scenarios, electronic messaging is set up to have a combination of many message statuses, message items statuses, actions, additional fields, and executable classes. For these scenarios, packages of data entities are available for import. If you use these data entity packages, you should import them to a legal entity by using the Data management tool. For more information about how to use the Data management tool, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
-These packages, if you use them, should be imported to a Legal entity using the Data management tool. To know more about how to use Data management tool see, [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md).
+If you don't import a data entity package, you can manually set up the Electronic messages functionality. In this case, you must set up the following elements: 
 
-If you don't import a data entities package, you can set up **Electronic Messages** functionality manually. To do this, you must set up the following: 
+- [Number sequences](#number-sequences)
+- [Message item types and statuses](#message-item-types-and-statuses)
+- [Message statuses](#message-statuses)
+- [Additional fields](#additional-fields)
+- [Executable class settings](#executable-class-settings)
+- [Populate records actions](#populate-records-actions)
+- [Web service settings](#web-service-settings)
+- [Message processing actions](#message-processing-actions)
+- [Electronic message processing](#electronic-message-processing)
 
--   [Number sequences](#number-sequences)
--   [Message item types and statuses](#message-item-types-and-statuses)
--   [Message statuses](#message-statuses)
--   [Additional fields](#additional-fields)
--   [Executable class settings](#executable-class-settings)
--   [Populate records actions](#populate-records-actions)
--   [Web services settings](#web-service-settings)
--   [Message processing actions](#message-processing-actions)
--   [Electronic message processing](#electronic-message-processing)
+The following sections provide more information about each of these elements.
 
 ### Number sequences
 
-Set up number sequences for Messages and for Message items.  The number sequences will be used for auto-numbering the messages and the message items and the numbers will be used as the unique identifiers for messages and message items in the table. You can set up number sequences for electronic messaging on the **General Ledger parameters** page.
+Set up number sequences for both messages and message items. The number sequences are used to automatically number the messages and the message items, and the numbers that are assigned will be used as unique identifiers for the messages and message items in the table. You can set up number sequences for electronic messaging on the **General ledger parameters** page (**General ledger** \> **Ledger setup** \> **General ledger parameters**).
 
 ### Message item types and statuses
 
-Message item types identify the types of records that will be used in Electronic messages. You can set up message item types on the **Message item types** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message item types**).
+Message item types identify the types of records that will be used in electronic messages. You can set up message item types on the **Message item types** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message item types**).
 
-Message item statuses identify which statuses will be applicable for Message items in the processing you are setting up. You can set up message item types on the **Message item statuses** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message item statuses**).
+Message item statuses identify the statuses that will apply to message items in the processing that you're setting up. You can set up message item types on the **Message item statuses** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message item statuses**).
 
 ### Message statuses
 
-Set up the message statuses that you want to be available in message processing. You can set up message statuses on the **Message statuses** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message statuses**).
+Set up the message statuses that should be available in message processing. You can set up message statuses on the **Message statuses** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message statuses**).
 
-###  Additional fields
+### Additional fields
 
-Electronic messages functionality lets you populate records from a transactional table to prepare for reporting and report them. Sometimes there is not enough information in the transactional table to report a record according to report
-requirements. You can fill in all the necessary information for the reporting information in relation with a record to be reported, set up additional fields. To do so, open **Tax** \> **Setup** \> **Electronic messages** \>
-**Additional fields**. Additional fields may be associated with Messages and/or Message items.
+The Electronic messages functionality lets you populate records from a transactional table. In this way, you can prepare the records for reporting and then report them. Sometimes, there isn't enough information in the transactional table to report a record according to the report requirements. You can fill in all the information that must be reported for a record by setting up additional fields. Additional fields can be associated with both messages and message items. You can set up additional fields on the **Additional fields** page (**Tax** \> **Setup** \> **Electronic messages** \> **Additional fields**).
 
-Fields description:
+The following table describes the fields on the **Additional fields** page.
 
-| **Field name**                            | **Field description**                                                                                                                                                                                                            |
-|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Message item additional field name        | Set up a name of an additional attribute of Message items related to the process. This name will be shown in user interface during working with the process and may also be in use in related to the process GER configurations. |
-| Message item additional field description | Set up a description of an additional attribute of Message items related to the process                                                                                                                                          |
-| Field value                               | Enter a value of a field to be used in relation with a Message item in reporting.                                                                                                                                                |
-| Field value description                   | Enter a description of a value of a field to be used in relation with a Message item in reporting.                                                                                                                               |
-| Account type                              | Some additional fields values may be restricted for particular Account types. Set up one of the following: All, Customer, Vendor.                                                                                                |
-| Account code                              | If you selected Customer or Vendor in the Account type field, you may restrict additional fields value usage by particular group or table.                                                                                       |
-| Account/Group number                      | If you selected Customer or Vendor in the Account type field and group or table in Account code filed, you may specify particular group or counteragent in this field.                                                           |
-| Effective                                 | Set up a date from which the value should be taken into consideration.                                                                                                                                                           |
-| Expiration                                | Set up a date before which the value should be taken into consideration.                                                                                                                                                         |
+| Field                | Description |
+|----------------------|-------------|
+| Field name           | Enter the name of an additional attribute of message items that are related to the process. This name is shown in the user interface while you work with the process. It can also be used in ER configurations that are related to the process. |
+| Description          | Enter a description of the additional attribute of message items that are related to the process. |
+| Field value          | Enter the field value to use in relation to a message item during reporting. |
+| Field description    | Enter a description of the field value to use in relation to a message item during reporting. |
+| Account type         | Some additional fields values might be limited to specific account types. Select one of the following values: **All**, **Customer**, or **Vendor**. |
+| Account code         | If you selected **Customer** or **Vendor** in the **Account type** field, you can further limit the use of field values to a specific group or table. |
+| Account/Group number | If you selected **Customer** or **Vendor** in the **Account type** field, and if you entered a group or table in the **Account code** field, you can enter a specific group or counteragent in this field. |
+| Effective            | Specify the date when the value should start to be considered. |
+| Expiration           | Specify the date when the value should stop being considered. |
 
 ### Executable class settings
 
-**Executable class** is an X++ method or class which can be called by the Electronic messages processing in relation with an action if some evaluation is needed for the process.
+An executable class is an X++ method or class that the electronic message processing can call in relation to an action if some evaluation is required for the process.
 
-To manually set it up, open **Tax** \> **Setup** \> **Electronic messages** \> **Executable class settings,** create a line and fill in:
+You can manually set up an executable class on the **Executable class settings** page (**Tax** \> **Setup** \> **Electronic messages** \> **Executable class settings**). Create a line, and set the following fields.
 
-| **Field name**            | **Field description**                                                                                                                                                               |
-|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Executable class**      | Set up a name which will be used during setting up of an Electronic message processing action related respective to call this class.                                                |
-| **Description**           | Set up a description of an Executable class                                                                                                                                         |
-| **Executable class name** | Select an X++ **Executable class**                                                                                                                                                  |
-| **Executable level**      | The value will be filled in automatically as it should be predefined for the **Executable class.** The field’s value restricts on with level related evaluation should be executed. |
-| **Class description**     | The value will be filled in automatically as it should be predefined for the **Executable class.**                                                                                  |
+| Field                 | Description |
+|-----------------------|-------------|
+| Executable class      | Enter the name that will be used during the setup of a message processing action that this class is called in relation to. |
+| Description           | Enter a description of the executable class. |
+| Executable class name | Select an X++ executable class. |
+| Execution level       | This field is set automatically, because the value should be predefined for the selected executable class. This field limits the level that related evaluation is run on. |
+| Class description     | This field is set automatically, because the value should be predefined for the selected executable class. |
 
 ### Populate records actions
 
-**Populate records actions** should be used to set up actions which adds records to be sent to the Electronic message items table. To do so, open **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions** and create a new record for each action which should add records to the table:
+You use populate records actions to set up actions that add records so that they can be sent to the Electronic message items table. You can set up populate records actions on the **Populate records action** page (**Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**). Create a new record for every action that should add records to the table, and set the following fields.
 
-| **Field name**                          | **Field description**                                                               |
-|-----------------------------------------|-------------------------------------------------------------------------------------|
-| **Populate records action name**        | Identify a name for to be used for action which populated records in your process   |
-| **Populate records action description** | Add a description for to be used for action which populated records in your process |
+| Field       | Description                                                               |
+|-------------|---------------------------------------------------------------------------|
+| Name        | Enter a name for the action that populates records in your process.       |
+| Description | Enter a description of the action that populates records in your process. |
 
-Add as many lines on the **Datasources setup** FastTab as more data sources are used for the process:
+On the **Datasources setup** FastTab, add a line for every data source that is used for the process, and set the following fields.
 
-| **Field name**             | **Field description**                                                                                                              |
-|----------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **Name**                   | Specify a name for a data source.                                                                                                  |
-| **Message item type**      | Specify message item type which should be used on record creation for the data source.                                             |
-| **Account type**           | Specify Account type which should be associated with record form the created data source.                                          |
-| **Master table name**      | Specify name of the table in AX which should be a data source.                                                                     |
-| **Document number field**  | Specify field name in the selected table from which a Document number should be taken.                                             |
-| **Document date field**    | Specify field name in the selected table from which a Document date should be taken.                                               |
-| **Document account field** | Specify field name in the selected table from which a Document account should be taken.                                            |
-| **Use query**              | If selected? Set up a query by Edit query button on the fast tab. Otherwise all the record will be populated from the data source. |
+| Field                  | Description |
+|------------------------|-------------|
+| Name                   | Enter a name for the data source. |
+| Message item type      | Select the type of message item that should be used when records are created for the data source. |
+| Account type           | Select the type of account that should be associated with records from the data source. |
+| Master table name      | Select the table in Finance and Operations that should be a data source. |
+| Document number field  | Select the field that the document number should be taken from in the selected table. |
+| Document date field    | Select the field that the document date should be taken from in the selected table. |
+| Document account field | Select the field that the document account should be taken from in the selected table. |
+| User query             | If this check box is selected, you can set up a query by selecting **Edit query** above the grid. Otherwise, all the records will be populated from the data source. |
 
-### Web services settings
+### Web service settings
 
-**Web services settings** used to setup data transmission directly to a web
-service.
+You use web service settings to set up direct data transmission to a web service. You can set up web service settings on the **Web service settings** page (**Tax** \> **Setup** \> **Electronic messages** \> **Web service settings**).
 
-| **Field name**              | **Field description**                                                                                               |
-|-----------------------------|---------------------------------------------------------------------------------------------------------------------|
-| **Web services**            | Specify a name for the Web services.                                                                                |
-| **Description**             | Specify a description of the Web service.                                                                           |
-| **Internet address**        | Specify an internet address of the Web-service                                                                      |
-| **Key Vault certificate**   | Select a previously setup Key Vault certificate. Know more about how to set up Key Vault certificate referring: ??? |
-| **The response type - XML** | Mark the check box if the response type is XML                                                                      |
-| **Request method**          | Specify the method of the request                                                                                   |
-| **Request headers**         | Specify request headers                                                                                             |
-| **Accept encoding**         | Specify the accept encoding                                                                                         |
-| **Content type**            | Specify the content type                                                                                            |
+The following table describes the fields on the **Web service settings** page.
+
+| Field                   | Description                                                                                                     |
+|-------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Web service             | Enter a name for the web service.                                                                               |
+| Description             | Enter a description of the web service.                                                                         |
+| Internet address        | Enter the internet address of the web service.                                                                  |
+| Certificate             | Select a Key Vault certificate that has previously been set up. |
+| The response type – XML | Set this option to **Yes** if the response type is XML.                                                         |
+| Request method          | Specify the method of the request.                                                                              |
+| Request headers         | Specify request headers.                                                                                        |
+| Accept encoding         | Specify the accept encoding.                                                                                    |
+| Content type            | Specify the content type.                                                                                       |
 
 ### Message processing actions
 
-Use **Message processing action** to create actions for you processing and set up their parameters.
+You use message processing actions to create actions for your processes and to set up their parameters. You can set up message processing actions on the **Message processing actions** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**).
 
-**General** fields description:
+The following tables describe the fields on the **Message processing actions** page.
 
-| **Field name**              | **Field description**  |
-|-----------------------------|----------------------------|
-| **Action type**             | Set up type of action. For more information, see [Action types](#action-types).|
-| **Format mapping**          | This parameter is available for actions of **Electronic reporting export, Electronic reporting import, Electronic reporting export message.** Select a GER format which should be called for the action.|
-| **Message item type**       | This parameter is available for actions of **Message item execution level, Electronic reporting export, Electronic reporting import** and some other types of action. Using it you may identify for records of which type the action should be evaluated. If you don’t specify particular message item type in this field, all the message item types of defined for the processing will be evaluated. |
-| **Executable class**        | This parameter is available for actions of types **Message item execution level** and **Message item execution level**. In this field, you may specify previously created **Executable class settings**. |
-| **Populate records action** | This parameter is available for actions of type **Populate records**. Use this parameter to associate a previously set up **Populate records action**.|
+#### General FastTab
 
-#### Action types
-- **Populate records** – use this type of action to associate a previously set up **Populate records action**. It is supposed that this action type is used for an initial action of a processing thus only result status may be setup for an action of this type.
+| Field                   | Description |
+|-------------------------|-------------|
+| Action type             | Select the type of action. For information about the available options, see the [Action types](#action-types) section. |
+| Format mapping          | Select the ER format that should be called for the action. This field is available only for actions of the **Electronic reporting export**, **Electronic reporting import**, and **Electronic reporting export message** types. |
+| Message item type       | Select the type of records that the action should be evaluated for. This field is available for actions of the **Message item execution level**, **Electronic reporting export**, and **Electronic reporting import** types, and also some other types. If you leave this field blank, all the message item types that are defined for the message processing are evaluated. |
+| Executable class        | Select executable class settings that were previously created. This field is available only for actions of the **Message item execution level** and **Message item execution level** types. |
+| Populate records action | Select a populate records action that was previously set up. This field is available only for actions of the **Populate records** type. |
 
-- **Create message** – use this type of action to let user manually create Messages in Electronic message form.
+##### Action types
 
-- **Message execution level** – use this type to set up an executable class which should be evaluated on Electronic message level.
+The following options are available in the **Action type** field:
 
-- **Message item execution level** – use this action type to set up an execution class evaluation on Message item level.
+- **Populate records** – Use this type to associate a populate records action that was previously set up. It's assumed that this action type is used for the first action in message processing. Therefore, only a result status can be set up for an action of this type. An initial status can't be set up.
+- **Create message** – Use this type to let users manually create messages on the **Electronic message** page. An initial status can't be set up for an action of this type.
+- **Message execution level** – Use this type to set up an executable class that should be evaluated at the message level.
+- **Message item execution level** – Use this type to set up an executable class that should be evaluated at the message item level.
+- **Electronic reporting export** – Use this type for actions that should generate a report that is based on an export ER configuration.
+- **Electronic reporting import** – Use this type for actions that should generate a report that is based on an import ER configuration.
+- **Message level user processing** – Use this type for actions that assume some manual actions by the user. For example, the user might update the status of messages.
+- **User processing** – Use this type for actions that assume some manual action by the user. For example, the user might update the status of messages items.
+- **Web service** – Use this type for actions that should transmit a generated report to a web service. This action type isn't used for Italian Purchase and Sales Invoices Communication reporting.
+- **Electronic reporting export message** – Use this type for actions that should generate a report that is based on an export ER configuration at the message level (for example, when a message doesn't have any message items).
+- **Request verification** – Use this type to request verification from a server.
 
-- **Electronic reporting export** – use this type for actions which should generate a report based on export GER configuration.
+#### Initial statuses FastTab
 
-- **Electronic reporting import** – use this type for actions which should generate a report based on import GER configuration.
+> [!NOTE]
+> The **Initial status** FastTab isn't available for actions that have an initial type of **Populate records** or **Create message**.
 
-- **Message level user processing** – use this type for actions which suppose some manual actions by user. For example, update status of messages.
+| Field               | Description                                                                                         |
+|---------------------|-----------------------------------------------------------------------------------------------------|
+| Message item status | Select the message item status that the selected message processing action should be evaluated for. |
+| Description         | A description of the selected message item status.                                                  |
 
-- **User processing** – use this type for actions which suppose some manual actions by user. For example, update status of messages items.
+#### Result statuses FastTab
 
-- **Web service** – use this type for actions which should provide transmission of a generated report to a web-service. For Italian Purchase and Sales Invoices Communication reporting this type of action is not used.
-
-- **Electronic reporting export message** - use this type for actions which should generate a report based on export GER configuration on a Message level (for example when a Message doesn’t have any Message items).
-
-- **Request verification** – use this type of action to request verification from a server.
-
-#### Initial statuses
-The **Initial status** FastTab is not available for actions of initial type: **Populate records, Create message**.
-
-| **Field name**          | **Description**                                                                           |
-|-------------------------|-------------------------------------------------------------------------------------------------|
-| **Message item status** | Specify Message item statuses for which selected Message processing action should be evaluated. |
-| **Description**         | This field shows a description specified for the selected Message item status.                  |
-
-#### Result statuses
-
-| **Field name**          | **Description** |
-|-------------------------|--------------------------|
-| **Message status**      | This filed is available for Message processing actions which evaluating on Message level. For example, it is available for action types: **Electronic reporting export**, **Electronic reporting import;** and not available for action types: **User processing**, **Message item execution level**.|
-| **Description**         | This field shows a description specified for the selected Message status.|
-| **Response type**       | This field shows a Response type specified for the selected Message status. |
-| **Message item status** | You may specify in this filed Resulting statuses which should be available after the selected action is evaluated for Message processing actions which evaluating on Message item level. For example, for action types: **User processing**, **Message item execution level**. For Message processing actions which evaluate on Message level this field shows Message item status set up for the selected Message status. |
+| Field               | Description |
+|---------------------|-------------|
+| Message status      | Select the message statuses that the selected message processing action should be evaluated for. This field is available only for message processing actions that are evaluated at the message level. For example, it's available for actions of the **Electronic reporting export** and **Electronic reporting import** types. It isn't available for actions of the **User processing** and **Message item execution level** types. |
+| Description         | A description of the selected message status. |
+| Response type       | The response type of the selected message status. |
+| Message item status | Select the resulting statuses that should be available after the selected message processing action is evaluated. This field is available only for message processing actions that are evaluated at the message item level. For example, it's available for actions of the **User processing** and **Message item execution level** types. For message processing actions that are evaluated at the message level, this field shows the message item status that was set up for the selected message status. |
 
 ### Electronic message processing
 
-**Electronic message processing** is a basic concept of the **Electronic messages** functionality. It aggregates actions which should be evaluated for the Electronic message. Where actions can be linked via initial and result status or started independently (User processing action type). On **Electronic message processing** page user may also select Additional fields which should be supported for the processing.
+Electronic message processing is a basic concept of the Electronic messages functionality. It aggregates actions that should be evaluated for the electronic message. The actions can be linked via an initial status and a result status. Alternatively, actions of the **User processing** type can be started independently. On the **Electronic message processing** page (**Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**), you can also select additional fields that should be supported for the processing.
 
-**Action fast tab** serves to allow user to add predefined actions to the processing. It is possible to define if an action must be run separately (for user actions it is mandatory) or can be initiated by processing.
+The **Action** FastTab lets you add predefined actions to the processing. You can specify whether an action must be run separately (for user actions, it's mandatory), or whether it can be initiated by the processing.
 
-**Message item additional fields fast tab** serves to allow user to add predefined Additional fields which will relate to Message items. You need to add Additional fields for each type Message items for which it is applicable.
+The **Message item additional fields** FastTab lets you add predefined additional fields that are related to message items. You must add additional fields for each type of message item that the fields are related to.
 
-**Message additional fields fast tab** serves to allow user to add predefined Additional fields which will relate to Messages.
+The **Message additional fields** FastTab lets you add predefined additional fields that are related to messages.
 
-**Security roles fast tab** serves to set up security roles predefined in the system for a specific processing. A user within a role will see processing defined for this role only.
+The **Security roles** FastTab lets you set up the security roles that are predefined in the system for specific processing. Users who have a specific role will see only processing that is defined for that role.
 
-**Batch fast tab** serves to set up a processing to work in batch regime.
+The **Batch** FastTab lets you set up processing to work in a batch regime.
 
-## Work with Electronic Messages functionality
+## Work with Electronic messages functionality
 
-If a user operates on message level, then you would use the **Electronic messages** page (**Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**) would be more useful. If you're operating on data collection (Message items) level, then the **Electronic message items** page (**Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic message items**) will be more useful.
+If you're working at the message level, the **Electronic messages** page (**Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**) is more useful. If you're operating at the data collection (message item) level, the **Electronic message items** page (**Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic message items**) is more useful.
 
 ### Electronic messages 
 
-**Electronic messages** form presents processing available to user according to his (her) role associated in the setup of the processing. For each of the processing available for user, the form shows Electronic messages and related to them information.
+The **Electronic messages** page presents the processing that is available to you, based on your role. Security roles are associated with processing in the setup of that processing. For each processing that is available to you, the page shows electronic messages and information that is related to them.
 
-**Messages fast tab** shows Electronic messages for the selected processing. Depending on status of the selected message and predefined processing, user may run some actions by clicking on “fast” buttons of the grid:
+The **Messages** FastTab shows electronic messages for the selected processing. Depending on the status of the selected message and predefined processing, you can run some actions by selecting the buttons above the grid:
 
--   **New** – is associated with actions of “Create message” type.
--   **Delete** - is active when for the current status of the selected message, “Allow delete” parameter is marked.
--   **Generate report** – is associated with actions of “Electronic reporting export message” type.
--   **Send report** – is associated with actions of “Web service” type.
--   **Update status** – is associated with actions of “Message level user processing” type.
--   **Message items** – opens Electronic message items form.
+- **New** – This button is associated with actions of the **Create message** type.
+- **Delete** – This button is available if the **Allow delete** check box is selected for the current status of the selected message.
+- **Generate report** – This button is associated with actions of the **Electronic reporting export message** type.
+- **Send report** – This button is associated with actions of the **Web service** type.
+- **Update status** – This button is associated with actions of the **Message level user processing** type.
+- **Message items** – Open the **Electronic message items** page.
 
-**Action log fast tab** shows information about all the actions executed for the selected message.
+The **Action log** FastTab shows information about all the actions that have been run for the selected message.
 
-**Message additional fields fast tab** shows all the defined for messages in processing setup additional fields and their values.
+The **Message additional fields** FastTab shows all the additional fields that are defined for messages in the processing setup. It also shows the values of those additional fields.
 
-**Message items fast tab** shows all message items related to the selected message.
+The **Message items** FastTab shows all the message items that are related to the selected message.
 
-User may review all the attachments (already generated and received reports) for the selected message. To do so, select a message for which you want to review a report and click on **Attachment** button on the **Main menu**:
+You can review all the attachments for the selected message. These attachments are reports that have already been generated and received. Select the message to review attachments for, and then select the **Attachment** button on the Action Pane.
 
-![Attachment icon](media/attachment-icon.png)
+![Attachment button](media/attachment-icon.png)
 
-Thus, you will see a form where you may review all the attachments related to the message. To see the file, select a file in the list on the left side and click on **Open** button on the **Main menu**:
+The **Attachments** page shows all the attachments that are related to the message. To view a file, select it in the list on the left, and then select **Open** on the Action Pane.
 
 ![Open button](media/open-button.png)
 
-If you need to review an attachment related to a specific action previously executed with a message, select this message, open **Action log fast tab,** select an action and click on Attachment button as it is shown before.
+To review an attachment that is related to a specific action that was previously run for a message, select the message on the **Electronic messages** page, and then, on **Action log** FastTab, select the action. Then select the **Attachment** button on the Action Pane.
 
-It is also possible to run the whole processing or by action using generic “Run processing” button on Action pane.
+You can also run either the whole processing or just a specific action by selecting **Run processing** on the Action Pane.
 
 ### Electronic message items 
 
-**Electronic message items** form presents all message items, related to each of them Action log and values of Message items addition fields.
+**Electronic message items** page presents all message items and a log of the actions that have been run for each message item. It also shows the additional fields that are defined for the message items, and the values of those additional fields.
 
-**Message items** fields description:
+The following table describes the fields on the **Message items** tab.
 
-| **Field name**          | **Field description**                                                                                                                                                                                                                             |
-|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Processing**          | The field shows the name of the processing using which the message item was created.                                                                                                                                                              |
-| **Message item**        | The ID of a message item. This ID is assigned automatically according to a **Message item** number sequence in **General ledger parameters.**                                                                                                     |
-| **Message item date**   | Date when an electronic message item is created.                                                                                                                                                                                                  |
-| **Message item type**   | Identifies type of a message item. Which same processing there may be setup several types of message items (for example: Incoming invoices, Outgoing invoices). This field can be filled in automatically only on adding an invoice to the table. |
-| **Message item status** | The field reflects the actual status of the message item in correspondence with its Type. For example:                                                                                                                                            |
-| **Transmission date**   | For a processing which implements an automatical transmission of a generated report outside of the system Date of transmission field shows the date when a message item was transmitted.                                                          |
-| **Document number**     | This field is filled in automatically basing on the setup in Populate records action. This field can be filled in automatically only on adding an invoice to the register.                                                                        |
-| **Account number**      | Account number of a Customer or Vendor (or another fields value depending on field defined in Populate records action). This field can be filled in automatically only on adding an invoice to the register.                                      |
-| **Message**             | The number of a message. This number is assigned automatically according to a **Message** number sequence in **General ledger parameters.**                                                                                                       |
-| **Message status**      | The field shows actual status of an Electronic message.                                                                                                                                                                                           |
-| **Next action**         | This field shows next actions which can be initiated for the current status of a message item.                                                                                                                                                    |
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Processing</td>
+<td>The name of the processing that was used to create the message item.</td>
+</tr>
+<tr>
+<td>Message item</td>
+<td>The ID of the message item. This ID is assigned automatically, based on the <strong>Message item</strong> number sequence that is defined on the <strong>General ledger parameters</strong> page.</td>
+</tr>
+<tr>
+<td>Message item date</td>
+<td>The date when the message item was created.</td>
+</tr>
+<tr>
+<td>Message item type</td>
+<td>The type of message item. Several types of messages items can be set up for the same processing (for example, <strong>Incoming invoices</strong> and <strong>Outgoing invoices</strong>). This field can be filled in automatically only when an invoice is added to the table.</td>
+</tr>
+<tr>
+<td>Message item status</td>
+<td>The actual status of the message item. The available statuses vary, depending on the type of message item. Here are some examples:
+<ul>
+<li><strong>Populated</strong> – A record was added to the Message items table.</li>
+<li><strong>Evaluated</strong> – Additional attributes were calculated for the message item.</li>
+<li><strong>Reported</strong> – The message item was successfully added to a report.</li>
+<li><strong>Excluded</strong> – This status can be useful if you must exclude some message items from a report before it's exported.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Transmission date</td>
+<td>For processing that automatically transmits a generated report outside the system, the date when the message item was transmitted.</td>
+</tr>
+<tr>
+<td>Document number</td>
+<td>This field is filled in automatically, based on the setup of the populate records action. This field can be filled in automatically only when an invoice is added to the register.</td>
+</tr>
+<tr>
+<td>Account number</td>
+<td>The account number of a customer or vendor (or another field value, depending on the field that is defined on the populate records action). This field can be filled in automatically only when an invoice is added to the register.</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>The number of the message. This number is assigned automatically, based on the <strong>Message</strong> number sequence that is defined on the <strong>General ledger parameters</strong> page.</td>
+</tr>
+<tr>
+<td>Message status</td>
+<td>The actual status of the electronic message.</td>
+</tr>
+<tr>
+<td>Next action</td>
+<td>The next actions that can be initiated for the current status of the message item.</td>
+</tr>
+</tbody>
+</table>
 
--   **Populated -** When a record was added to the **Message items** table.
+The **Additional fields** tab shows the additional fields for the selected message item, and their values.
 
--   **Evaluated –** When additional attributes for a message item were calculated.
+#### Run processing
 
--   **Reported -** When a message item was successfully added to a report.
+Select **Run processing** on the Action Pane to run the processing for message items. To run a specific action, in the **Run processing** dialog box, set the **Select action** option to **Yes**, and then select an action. To run the whole processing, leave the **Select action** option set to **No**.
 
--   **Excluded –** This can be useful if a user needs to exclude some message items from a report before it will be exported.
+#### Generate report
 
-Additional fields fast tab shows additional fields and their values for selected Message item.
+Select **Generate report** on the Action Pane to generate a report. This button is associated with actions of the **Electronic reporting export** type.
 
-Run processing
+#### Update status
 
-Click **Run processing** button on Action pane to start execution of **Message items**. Mark **Select action** parameter and select an action if you want to perform a particular action, or leave **Select action** parameter unmarked if you want to start the whole process.
+Select **Update status** on the Action Pane to update the status of one or more message items. In the **Update status** dialog box, use the **Records to include** FastTab to select message items for update. Make sure that you correctly define the selection criteria, because message items statuses will be updated according to these criteria, the initial status of the selected action, and the **New status** value that you set. After a status update is completed, it will be difficult to determine which items were just updated. Therefore, it will be difficult to roll back status updates.
 
-Generate report
+#### Electronic messages
 
-This button is associated with actions of “Electronic reporting export” type. Use this function to generate a report.
+Select **Electronic message** on the Action Pane to review an electronic message that is related to the selected message item.
 
-Update status
+You can also review all the files that correspond to the message item. Select the **Message** field of the message item, or select **Electronic message** on the Action Pane. On the **Electronic message** page, select the message to review a report for, and then select the **Attachment** button on the Action Pane.
 
-Use this function to update status for one or several message items. Use “Records to include” to select Message items for update. Make sure that you correctly define the criteria as Message items statuses will be updated according these criteria, defined for the selected Action initial statuses and selected “New status”. After update is completed it will be difficult to differentiate which items were just updated and roll their statuses back if
-needed.
+![Attachment button](media/attachment-icon.png)
 
-Electronic messages
-
-Use this function to review an **Electronic message** related to the selected message item.
-
-You may also review all the files corresponding to the message item. To do so, click on **Message** field of the message item or **Electronic message** button on the **Menu**. On the **Electronic message** form select a message you for which you want to review a report and click on **Attachment** button on the
-**Main menu**:
-
-![Attachment icon](media/attachment-icon.png)
-
-Thus, you will see a form where you may review all the attachments related to the message. To see the file, select a file in the list and click **Open** on the **Main menu**:
+The **Attachments** page shows all the attachments that are related to the message. To view a file, select it in the list on the left, and then select **Open** on the Action Pane.
 
 ![Open button](media/open-button.png)
 
-Original document
+#### Original document
 
-Use this button to open original document for the selected message item.
+Select **Original document** on the Action Pane to open the original document for the selected message item.
 
 ## Examples
 
-This section introduces some simple examples of how you might set up EM to build a reporting process:
+This section provides some simple examples that show how you might set up the Electronic messages functionality to build a reporting process:
 
-1.  Set up and run a processing to call a simple GER format to generate an MS
-    Excel report.
-
-2.  Add an action to an existing processing to call a simple GER format to
-    generate an MS Excel report.
+- Set up and run processing to call a simple ER format to generate an Excel report.
+- Add an action to an existing processing to call a simple ER format to generate an Excel report.
