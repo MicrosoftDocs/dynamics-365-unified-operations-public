@@ -3,9 +3,9 @@
 
 title: Request sandbox database refreshes
 description: This topic explains how to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, in a sandbox user acceptance testing (UAT) environment.
-author: Robadawy
+author: LaneSwenka
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 10/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 257614
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: laneswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -39,6 +39,9 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to request a refresh of 
 This functionality lets you use production data to test upcoming code changes in a UAT environment. You can also copy a production database into a UAT environment for debugging purposes.
 
 ## Database refresh process
+
+> [!NOTE]
+> As of October 8, 2018, database refresh requests must be signed off before another refresh of the same environment can be requested.  This is to support future automation of database movement operations.
 
 The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be approximately two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment's downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
 
@@ -60,17 +63,18 @@ The Microsoft Service Engineering team will take your environment offline, compl
 ## Conditions of a database refresh
 Here is the list of requirements and conditions of operation for a database refresh:
 
+- All previous database refresh requests for the environment are marked as either *Succeeded*, *Failed*, or *Canceled*.
 - Requests must be submitted 24 hours before the desired downtime window, to help guarantee that resources will be available to complete the request.
 - A refresh erases the existing database in the target environment. The existing database can't be recovered after the refresh is completed.
 - The target environment will be unavailable until the refresh process is completed.
 - The refresh will affect only the Finance and Operations and Financial Reporting databases.
-- Documents in Azure blob storage are not copied from one environment to another. This means that attached document handling documents and teamplates won't be changed and will remain in their current state.
+- Documents in Azure blob storage are not copied from one environment to another. This means that attached document handling documents and templates won't be changed and will remain in their current state.
 - All users except the Admin user and other internal service user accounts will be disabled. This process allows the Admin user to delete or obfuscate data before allowing others users back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 - All data management framework recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This will ensure there are no orphaned files in Azure storage from either system. This is important because orphaned files cannot be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
 - All batches that were set to run are set to **Withhold** status, to stop batches from running before the environment has been reconfigured.
 - The SMTP server configuration, all email addresses, and all **Print management** settings, including network printers are removed.
-- Any user with a role of Project owner or Environment manager in LCS will have acccess to the SQL and machine credentials for all non-production environments.
+- Any user with a role of Project owner or Environment manager in LCS will have access to the SQL and machine credentials for all non-production environments.
 
 ## Steps to complete after a database refresh for environments that use Retail functionality
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
