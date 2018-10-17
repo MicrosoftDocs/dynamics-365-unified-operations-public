@@ -1,30 +1,54 @@
-Sourcing with LinkedIn Recruiter
-================================
+---
+# required metadata
 
-LinkedIn is the world’s largest talent database and often the primary system
-recruiters use to find, communicate with and source candidates for the jobs they
-are hiring for. With LinkedIn Recruiter integration with Dynamics 365 for
-Talent: Attract, it makes it easier for the users to hire for their roles using
-Attract and keep the data in sync between their two systems of choice.
+title: Sourcing with LinkedIn Recruiter
+description: This topic provides information about using machine learning to get job and job candidate recommendations.
+author: 
+manager: AnnBe
+ms.date: 10/15/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Talent, Core
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
+ms.search.region: Global
+Attract Admin view to start LinkedIn Recruiter integration# ms.search.industry: 
+ms.author: rschloma
+ms.search.validFrom: 2018-10-15
+ms.dyn365.ops.version: Talent October 2018 update
+
+---
+
+# Sourcing with LinkedIn Recruiter
+[!include[banner](../includes/banner.md)]
+
+LinkedIn is the world’s largest talent database and often the primary system that recruiters use to find, communicate with, and source candidates for the jobs that recruiters are looking to fill. LinkedIn Recruiter integration with Dynamics 365 for
+Talent: Attract makes it easier for users to hire using the Attract and keep the data in sync between their two systems of choice.
 
 > [!NOTE]
 > You need the Comprehensive Hiring Add-On along with LinkedIn Recruiter seats
 to be able to use LinkedIn Recruiter integration with Attract.
 
-Setup LinkedIn Recruiter with Attract 
---------------------------------------
+## Set up LinkedIn Recruiter with Attract 
 
-Before you can use the LinkedIn Recruiter capabilities, it is required by your
-Attract Admin to configure either Contract-level or Company-level access with
-your Attract instance. To complete the configuration process, you also need to
-work with the user who is an Admin on your LinkedIn Recruiter contract. Steps to
-configure LinkedIn Recruiter with Attract are as follows:
+Before you can use the LinkedIn Recruiter capabilities, you must configure Contract-level or Company-level access with your Attract instance. To complete the configuration process, you also need to work with the user who is an Admin on your LinkedIn Recruiter contract. Steps to configure LinkedIn Recruiter with Attract are as follows:
 
 1.  Log in to Attract as an Attract Admin and navigate to Admin Settings
 
 2.  Go to the **LinkedIn Integration** tab from the left navigation panel.
 
-[!Attract Admin view to start LinkedIn Recruiter integration](./media/LinkedInConnect.png)
+[![Attract Admin view to start LinkedIn Recruiter integration](./media/LinkedInConnect.png)](./media/LinkedInConnect.png)
 
 3.  Use the **Connect** button to start setting up the integration. You will be
     taken through a LinkedIn Sign-in process.
@@ -36,7 +60,7 @@ configure LinkedIn Recruiter with Attract are as follows:
 5.  The LinkedIn widget will now load in your Admin Settings with the list of
     integrations shown. Click “Request” under Recruiter System Connect.
 
-[!Attract Admin view to Request LinkedIn Recruiter integration](./media/RequestLinkedInRSC.png)
+[![Attract Admin view to Request LinkedIn Recruiter integration](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
 
 6.  Once the integration has been requested from Attract, it will show as
     “Partner ready” and is ready to be turned on from Recruiter Admin Settings.
@@ -44,7 +68,7 @@ configure LinkedIn Recruiter with Attract are as follows:
     “Notify partner” button and refresh the page. It should now show as “Partner
     ready”
 
-[!Attract Admin view to indicate Attract side of requests have been completed](./media/PartnerReadyRSC.png)
+[![Attract Admin view to indicate Attract side of requests have been completed](./media/PartnerReadyRSC.png)](./media/PartnerReadyRSC.png)
 
 6.  To complete the next step, you need to have an Admin privilege on your
     LinkedIn Recruiter Contract as well.
@@ -66,16 +90,15 @@ configure LinkedIn Recruiter with Attract are as follows:
 11.  Turn on the desired access level from your LinkedIn Recruiter Admin-ATS
     settings
 
-[!Turn on Attract integration from LinkedIn Recruiter Admin view](./media/EnableRSC.png)
+[![Turn on Attract integration from LinkedIn Recruiter Admin view](./media/EnableRSC.png)](./media/EnableRSC.png)
 
 12. Navigate back to Attract Admin Settings as an AttractAdmin and go to the
     LinkedIn integration tab. You should now see the LinkedIn widget load
     showing **Enabled** with the kind of access level turned on.
 
-[!LinkedIn Recruiter integration complete](./media/RSCSetupComplete.png)
+[![LinkedIn Recruiter integration complete](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
 
-Using LinkedIn Recruiter capabilities
--------------------------------------
+## Using LinkedIn Recruiter capabilities
 
 Once LinkedIn Recruiter capabilities has been enabled by the Attract Admin – it
 is now available for hiring managers and recruiters as well. To use these
