@@ -44,9 +44,9 @@ You first create a new class in the extension model. This class will augment the
 
 ```
 [ExtensionOf(tableStr(InventTable))]
-final class MyInventTable_Extension
+final class InventTableMy_Extension
 {
-    public void defaultMyInventLocationId()
+    public void myDefaultInventLocationId()
     {
         // This would have partner specific logic to initialize the new field.
         this.MyInventLocationId = this.inventLocationId();
@@ -65,7 +65,7 @@ There are a few rules for augmentation classes:
 Now you can use your new method, for example, from an event handler:
 
 ```
-class MyInventTable_EventHandler
+class InventTableMy_EventHandler
 {
     [DataEventHandler(tableStr(InventTable), DataEventType::Inserting)]
     public static void InventTable_onInserting(Common sender, DataEventArgs e)

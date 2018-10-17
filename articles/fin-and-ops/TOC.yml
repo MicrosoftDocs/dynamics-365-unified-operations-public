@@ -1820,7 +1820,11 @@
           href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Tax engine overview
           href: ../financials/general-ledger/tax-engine.md
-          items:
+          items:     
+          - name: Import configuration
+            href: ../financials/general-ledger/tax-engine-import-configuration.md
+          - name: Tax engine applicability
+            href: ../financials/general-ledger/tax-engine-applicability.md
           - name: Tax engine integration
             href: ../financials/general-ledger/tax-engine-integration.md
           - name: Extending the Tax engine
