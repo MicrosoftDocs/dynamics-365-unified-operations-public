@@ -41,7 +41,7 @@ This functionality lets you use production data to test upcoming code changes in
 ## Database refresh process
 
 > [!NOTE]
-> As of October 8, 2018, Database Refresh requests must be signed off before another refresh of the same environment can be requested.  This is to support future automation of database movement operations.
+> As of October 8, 2018, database refresh requests must be signed off before another refresh of the same environment can be requested.  This is to support future automation of database movement operations.
 
 The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be approximately two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment's downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
 
