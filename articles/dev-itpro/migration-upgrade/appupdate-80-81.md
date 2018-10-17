@@ -42,7 +42,8 @@ This topic explains the steps required to update existing Dynamics 365 for Finan
 
 Traditionally, moving to a newer application version has involved a rigorous upgrade that includes deployment of additional virtual machines, code upgrade, data upgrade, and scheduling several days in advance with the Microsoft Dynamics Service Engineering (DSE) team.  You will notice that we are making the uptake of the latest version simpler, and this will continue to improve over time.
 
-To this end, we are supporting an update experience as compared to a full upgrade.  This is possible because there are **no Data Upgrade or Code Upgrade** steps between the 8.0 and 8.1 application schema.  The target environments will be updated just like you would apply a Platform update.
+> [!NOTE]
+> We are supporting an update experience as compared to a full upgrade.  This is possible because there are **no Data Upgrade or Code Upgrade** steps between the 8.0 and 8.1 application schema. The target environments will be updated just like you would apply a Platform update.
 
 The high-level process to update from version 8.0 to 8.1 includes the following:
 
