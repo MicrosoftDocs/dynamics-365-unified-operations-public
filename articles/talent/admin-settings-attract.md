@@ -2,7 +2,7 @@
 # required metadata
 
 title: Admin settings in Attract
-description: This topic provides information about using machine learning to get job and job candidate recommendations.
+description: This topic provides information about enabling feature functionality for organizations and users in Attract.
 author: 
 manager: AnnBe
 ms.date: 10/15/2018
