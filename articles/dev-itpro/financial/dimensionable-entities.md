@@ -79,7 +79,9 @@ The first step is to create a view in the same model as your backing table. Befo
 1. Enter **Value** in the **TitleField1** field in the **Properties** pane.
 1. Enter **Name** in the **TitleField2** field in the **Properties** pane.
 1. Review the backing table properties and identify the config key it is using. On **View**, enter the same **Configuration key** as the backing table.
-1. Search for **DimensionEssentials** and add it to the Project. Expand **DimensionEssentials**, right-click **Permissions**, and then select **New Permission**. In the **Properties** pane, set the **Access Level** to **Read**. Click **Security Privilege** and add the view under the **Permissions** node with an **Access Level** of **Read**. You may need to extend one of these into the model that you're using.
+1. IMPORTANT:  Security access must be granted to non-admin users for the new view.
+   a. For releases 7.2 and earlier where over-layering is used: Search for **DimensionEssentials** and add it to the Project. Expand **DimensionEssentials**, right-click **Permissions**, and then select **New Permission**. In the **Properties** pane, set the **Access Level** to **Read**. Click **Security Privilege** and add the view under the **Permissions** node with an **Access Level** of **Read**. You may need to extend one of these into the model that you're using.
+   b. For releases 7.3 and later where extensions are used: Create a new Security Privilege in your custom model alongside the new view. Right-click the Permissions node chose New Permission. Enter the Name of new DimAttribute[DimensionName] view created above in Step 2 and set the Access Level to Read. Search for the Security Duty SysServerAXBasicMaintain. Right-click and chose Create extension. Rename the extension as appropriate, and drag-and-drop the newly created Security Privilege into the Privileges list.  
 1. Right-click **View** and select **View Code**. Add the following code to the view. This will register it in the dimension framework. Here is an example using the view created for CustTable.
       ```
       [SubscribesTo(classstr(DimensionEnabledType),
