@@ -37,7 +37,8 @@ ms.dyn365.ops.version: Talent October 2018 update
 Machine learning can help recruiters and hiring managers quickly identify top candidates for a position. It can also help prospects find the position that best suits their profile and interests. As these features are used, and feedback is provided, recommendations will improve.
 
 > [!NOTE] 
-> The intelligent recommendation features are available only with the Comprehensive hiring add-on.
+> - The intelligent recommendation features are available only with the Comprehensive hiring add-on.
+> - To enable the candidate and job recommendation features, an admin must turn on the preview options for them. In the Admin center, on the **Feature management** tab, make sure that the **Preview features** option is set to **On**. Then make sure that the individual **Candidate recommendation** and **Job recommendation** options are set to **On**.
 
 ## Candidate recommendations
 
@@ -48,6 +49,3 @@ For any recommended candidate, you can select **View candidate** on the candidat
 ## Job recommendations 
 
 When a prospective employee uses the career site to apply to a job, other open positions at the organization are recommended. These recommendations are based on the prospect's past applications, and on his or her resume or candidate profile. Therefore, job recommendations help prospects quickly identify the jobs that are the best fit for them. Job recommendations are provided to prospects if more than ten jobs are posted on the career site. Prospects can open the details of a job posting from the recommendation card. They can also provide feedback about a recommendation to help improve future recommendations.
-
-> [!NOTE] 
-> To enable the candidate and job recommendation features, an admin must turn on the preview options for them. In the Admin center, on the **Feature management** tab, make sure that the **Preview features** option is set to **On**. Then make sure that the individual **Candidate recommendation** and **Job recommendation** options are set to **On**.
