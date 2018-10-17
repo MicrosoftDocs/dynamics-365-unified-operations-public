@@ -37,7 +37,7 @@ The [Tax engine](tax-engine.md) (also referred to as GTE) lets you configure tax
 > The Tax engine functionality is only available for legal entities with a primary address in India.
 
 ## Prerequisites                                               
-This document uses Indian Goods and Services Tax (IGST) configuration to explain the tax applicability. For more information, see [Import GTE configuration from LCS](tax-engine-import-configuration.md).
+This document uses India Goods and Services Tax configuration to explain the tax applicability. For more information, see [India Goods and Services Tax](../localizations/apac-ind-gst.md).
 
 ## Overview
 Tax applicability is the condition under which tax type, tax component, or tax rate are applicable. For example, for India GST, if you sell goods from one state to another state, you need to charge IGST, and the goods you are selling will determine the tax rate. 
@@ -115,7 +115,7 @@ AND(
     OR(NOT(Header.Lines.'HSN Code'=""), NOT(Header.Lines.SAC=""))
    )
 ```
-Select the field from the data source, and use **Add data source** to add the field into the formula. Make sure to use single quotes for the data source field if there is an empty space in the name (like "Taxable Document Type"). Use a double quote for the value if there is an empty space (like "Inventory transfer order").
+Select the field from the data source, and use **Add data source** to add the field into the formula. Make sure to use single quotes for the data source field if there is an empty space in the name (like 'Taxable Document Type'). Use a double quote for the value if there is an empty space (like "Inventory transfer order").
 
 Click **Test** to test your formula after you are done with editing.
 
