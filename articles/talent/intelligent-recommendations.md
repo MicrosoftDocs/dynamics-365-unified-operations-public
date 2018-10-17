@@ -1,54 +1,55 @@
-Intelligent Recommendations 
-=============
+---
+# required metadata
 
-Using machine learning, we are now able to help recruiters and hiring managers
-identify top candidates for a position faster and help prospects find the
-position that best suits their profile and interests. Users for these
-recommendation features can provide feedback on individual recommendations and
-help us get better.
+title: Intelligent recommendations
+description: This topic provides information about using machine learning to get job and job candidate recommendations.
+author: 
+manager: AnnBe
+ms.date: 10/15/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
 
-[!NOTE] Intelligent recommendation features are only available with the
-Comprehensive Hiring Add-On
+# optional metadata
 
-Candidate Recommendations
--------------------------
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Talent, Core
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: rschloma
+ms.search.validFrom: 2018-10-15
+ms.dyn365.ops.version: Talent October 2018 update
 
-Job postings can often attract hundreds of applicants, which poses a challenge
-for recruiters and hiring managers as they have to be able to sift through the
-noise and find the candidates whose skills and background are the best match for
-the position. We are now able to use machine leaning to help the recruiter and
-hiring manager identify the top talent to move to the interview stage faster by
-intelligently analyzing the correlation between the job description and
-requirements and the candidate’s resume and profile data. For any job, if you
-have more than 10 candidates or prospects with resumes or complete profiles, we
-are able to surface those which most closely fulfil the requirements of the job.
-These candidates will appear under the **Applicants to consider** section on the
-Job page.
+---
 
-For a recommended candidate, you can click **View Candidate** to review their
-profile and take action on their application. You can also use the ellipsis menu
-to provide feedback about that recommendation to help fine tune the
-recommendation engine, or open the candidate’s profile in a new tab. Any
-recommendations that you dislike will be removed from the section upon
-refreshing the page. The feedback card allows you to indicate specific reasons
-as to why you may not have found a recommendation useful.
+# Intelligent recommendations
+[!include[banner](../includes/banner.md)]
 
-Job Recommendations 
---------------------
+By using machine learning, recruiters and hiring managers can quickly identify top candidates for a position and help prospects find the position that best suits their profile and interests. As these features are used, and feedback is provided, recommendations will improve.
 
-When prospects use the career site to apply to a job, we are able to recommend
-other open positions at the organization to them based on their past
-application(s) and their resume or candidate profile. This helps prospects quickly discover
-the jobs that are the best fit for them. We begin to make job recommendations to prospects
-once there are more than 10 jobs posted on the career site. Prospects are able
-to navigate to the details of the job posting using the recommendation card and
-are also able to provide feedback about the recommendation to help improve
-future recommendations.
+> [!NOTE] 
+> The Intelligent recommendation features are only available with the Comprehensive hiring add-on.
 
-[!NOTE] In order to enable the candidate recommendation and job recommendation
-features, the preview toggle for these features need to be turned on by an
-Administrator. This can be done through the Admin Center, under the Feature
-Management section. Please ensure both the master toggle for Preview Features
-and the individual toggles for Candidate recommendation and Job recommendation
-are turned on.
+## Candidate recommendations
+
+Job postings can often attract hundreds of applicants, which can make it difficult for recruiters and hiring managers to find the candidates whose skills and background best match the position. By using machine leaning, the candidate recommendation can help the recruiter and hiring manager identify the top talent and move to the interview stage faster by analyzing the correlation between the job description and requirements and the candidate’s resume and profile data. For any job, if there are more than tem candidates or prospects with resumes or complete profiles, those which most closely fulfil the requirements of the job are surfaced. These candidates will appear under the **Applicants to consider** section on the **Job** page.
+
+For a recommended candidate, click **View Candidate** to review their profile and take action on their application. You can also use the ellipsis menu to provide feedback about that recommendation to help fine tune the recommendation engine, or open the candidate’s profile in a new tab. Any recommendations that you dislike will be removed from the section when you refresh the page. Use the feedback card to indicate why you didn't find the recommendation useful.
+
+## Job recommendations 
+
+When aprospective employee uses the career site to apply to a job, other open positions at the organization are recommended based on the prospect's past application(s) and their resume or candidate profile. This helps a prospect quickly discover the jobs that are the best fit. When there are more than ten jobs posted on the career site, job recommendations will be provided to a prospect. Prospects are able
+to navigate to the details of the job posting using the recommendation card and can provide feedback about the recommendation to help improve future recommendations.
+
+> [!NOTE] 
+> To enable the candidate and job recommendation features, the preview toggle for these features need to be turned on by an
+Administrator. This can be done through the **Admin center**, under **Feature management**. Make sure that the master toggle for **Preview features** the individual toggles for **Candidate recommendation** and **Job recommendation** are turned on.
 
