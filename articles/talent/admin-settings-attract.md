@@ -2,7 +2,7 @@
 # required metadata
 
 title: Admin settings in Attract
-description: This topic provides information about enabling feature functionality for organizations and users in Attract.
+description: This topic explains how to enable feature functionality for organizations and users in Attract.
 author: 
 manager: AnnBe
 ms.date: 10/15/2018
@@ -33,45 +33,43 @@ ms.dyn365.ops.version: Talent October 2018 update
 # Admin settings in Attract
 [!include[banner](../includes/banner.md)]
 
-The Attract **Admin center** contains configuration settings, integration options, and setup for the Attract application.
+The Admin center in Microsoft Dynamics 365 for Talent: Attract contains configuration settings, integration options, and setup options for the Attract application.
 
 ## Company information
 
-Add a company display name and logo that can be used on job posts and in the **Onboarding experience**.
+Enter a display name for the company, and add a company logo. The display name and logo can then be used on job posts and during the onboarding experience.
 
-## LinkedIn integration
+## LinkedIn Integration
 
-Set up the **LinkedIn Recruiter System Connect (RSC) Integration**. Connect to LinkedIn by using your LinkedIn credentials to sync a candidate's LinkedIn profile, applications, interview feedback, and hiring team notes. A full LinkedIn recruiter license is required. For more informationabout the LinkedIn recruiting system, see [Recruiter System Connect (RSC) – FAQ](https://www.linkedin.com/help/recruiter/answer/90483).
+Set up the integration with LinkedIn Recruiter System Connect (RSC). After you connect to LinkedIn by using your LinkedIn credentials, you can sync a candidate's LinkedIn profile, applications, interview feedback, and hiring team notes. A full LinkedIn recruiter license is required. For more information about RSC, see [Recruiter System Connect (RSC) – FAQ](https://www.linkedin.com/help/recruiter/answer/90483).
 
 ## User permissions
 
-Assign roles to users within your organization. The role options avaialble are **Admin**, **Recruiter**, **Hiring manager**, and **Read-only**. To learn more about user permissions, see [Security and Role Management in Attract](./security-attract.md).
+Assign roles to users in your organization. The following roles are available: **Admin**, **Recruiter**, **Hiring manager**, and **Read-only**. For more information about user permissions, see [Security and role management in Attract](./security-attract.md).
 
 ## Feature management
 
-As new features are added, they may be released in a public preview. Public preview features do not meet all service requirements. By receiving preview functionality, you consent to share your data with external systems. You may find that not all of the new features are needed for your organization. If this is the case, you can turn the **Released public preview features** off and on depending on your organization’s needs.
+As new features are added, they might be released in a public preview. Public preview features don't meet all service requirements. By receiving them, you agree to share your data with external systems. You might find that your organization doesn't require all the new features that are released. You can turn public preview features off and on, depending on your organization's needs.
 
 ## Template management
 
-A **Process** template contains all of the activities that should be included as part of the hiring process for a job. Your organization can choose to allow team members to create hiring process templates or only allow the Admin to create the templates. To allow team members to create their own hiring process templates, enable the **Template management** functionality. To learn more about process templates, see [Process templates in Attract](./process-templates-attract.md).
-
+A process template contains all the activities that should be included as part of the hiring process for a job. Your organization can allow either all team members or just admins to create hiring process templates. To allow team members to create their own hiring process templates, turn on the Template management functionality. For more information about process templates, see [Process templates in Attract](./process-templates-attract.md).
 
 ## Email template settings
 
-In the **Email template settings** you can select a header image to be included in the email templates. The selected header will show on all email templates. You can also add a link to your organization's privacy and terms of use for communications to the footer of the template. This section also allows organizations to create email templates for various scenarios.
-For more information, see [Email templates in Attract](./email-templates.md).
+Organizations can create email templates for various scenarios. You can select the header image to include in the email templates. The selected header will then appear in all email templates. In the template footer, you can add a link to your organization's privacy statement and terms of use for communications. For more information, see [Email templates in Attract](./email-templates.md).
 
-## Offer Process
+## Offer process
 
-You can configure the approval process for job offers including whether the offer must be approved before it is sent to a candidate. Approvers can also be required to leave a comment with their offer decision.
+You can configure the approval process for job offers. For example, you can specify whether an offer must be approved before it's sent to a candidate. You can also require that approvers leave a comment with their offer decision.
 
-There are two approval workflows to choose from, **Parallel** and **Sequential**. 
+Two approval workflows are available: **Parallel** and **Sequential**.
 
-- **Parallel** - Approvals are sent to all approvers at the same time. 
-- **Sequential** - Approvals are routed to the approvers in a specific order.
+- **Parallel** – Approvals are sent to all approvers at the same time.
+- **Sequential** – Approvals are sent to the approvers in a specific order.
 
-Additional options related to the candidate experience can also be configured. You can select to allow candidates to decline an offer without additional discussion. If this option is set to **No**, candidates will not have access to the **Decline offer** button. If this option is set to **Yes**, candidates can decline the offer by selecting a reason and then selecting **Decline offer**.
+You can also configure options that are related to the candidate experience. For example, one option lets you specify whether candidates can decline an offer without additional discussion. If you set the **Allow candidates to decline an offer without additional discussion** option to **No**, the **Decline offer** button is available to candidates. If you set this option to **Yes**, candidates can decline the offer by selecting a reason and then selecting **Decline offer**.
 
-Lastly, you can enforce an expiration to an offer. If this is set to **Yes**, offers will expire based on a selected date selected.
+You can also set and enforce an expiration date for offers. If you set the **Require an expiration date for all offers** option to **Yes**, offers expire after the number of hours or days that you specify.
 
-For more information, see To learn more about offer management see [Set up offer management](./offer-setup.md).
+For more information about offer management, see [Set up offer management](./offer-setup.md).
