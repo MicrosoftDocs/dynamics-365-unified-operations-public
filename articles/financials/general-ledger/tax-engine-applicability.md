@@ -115,7 +115,7 @@ AND(
     OR(NOT(Header.Lines.'HSN Code'=""), NOT(Header.Lines.SAC=""))
    )
 ```
-Select the field from the data source, and use **Add data source** to add the field into the formula. Make sure to use single quotes for the data source field if there is an empty space in the name (like 'Taxable Document Type'). Use a double quote for the value if there is an empty space (like "Inventory transfer order").
+Select the field from the data source, and use **Add data source** to add the field into the formula. Make sure to use single quotes for the data source field if there is an empty space in the name, like 'Taxable Document Type'. Use a double quote for the value if there is an empty space, like "Inventory transfer order".
 
 Click **Test** to test your formula after you are done with editing.
 
@@ -174,4 +174,4 @@ Click **Columns**. On the left side, you can find all of the **Available columns
 
 ![CGST>Rate Change Lookup](media/gte-tax-document-applicability-change-lookups.png)
 
-**Item ID** can uniquely determine the goods. Select **Item ID** in **Available columns**. Click the right-arrow icon to add it to the **Selected columns** side. If HSN is not needed, you can select **HSN Code** in **Selected columns**, and click the left-arrow icon to remove it. 
+Select **Item ID** in **Available columns** to uniquely determine the goods. Click the right-arrow icon to add it to the **Selected columns** side. If HSN is not needed, you can select **HSN Code** in **Selected columns**, and click the left-arrow icon to remove it. 
