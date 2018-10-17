@@ -643,7 +643,7 @@ This part is equivalent to the Retail Server controller, but it extends the loca
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     > [!NOTE]
-        > This step doesn't apply to this version.
+    > This step doesn't apply to this version.
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
