@@ -74,4 +74,4 @@ Additional options related to the candidate experience can also be configured. Y
 
 Lastly, you can enforce an expiration to an offer. If this is set to **Yes**, offers will expire based on a selected date selected.
 
-For more information, see To learn more about offer management see [Set up offer management](./offer-setup/md).
+For more information, see To learn more about offer management see [Set up offer management](./offer-setup.md).
