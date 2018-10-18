@@ -118,7 +118,7 @@ To upload the offer data rules file, do the following.
 
 1.  You can delete an existing rule set upload if the placeholder being defined is not being used in any document template.
 
->[!Important]
+>[!NOTES]
 > - Each placeholder can only have one unique set of columns that it is dependent on. For example, if **Annual Salary** is dependent on **Job Location** and **Level**, you can't upload another rule set where **Annual Salary** is dependent on a different set of columns.
 
 > - You can download sample offer data rule sets on the **Samples** tab of the **Offer data rules** page.
@@ -127,74 +127,50 @@ To upload the offer data rules file, do the following.
 
 ## Document templates
 
-Offer document templates help administrators create the offer letters, these are
-combination of the text that maybe part of the offer as well as the offer data
-placeholders defined. To create offer document templates:
+An offer document template can help administrators create offer letters. The offer document template is a combination of the text that will be part of the offer as well as the defined offer data placeholders. 
 
-1.  Navigate to offer management.
+To create an offer document template, do the following.
 
-2.  Expand the library section in the left navigation panel and go to
-    **Templates**.
+1.  Navigate to **Offer management**.
 
-3.  You will see the document templates defined already.
+1.  Expand the **Library** section in the left navigation pane and go to **Templates**.
 
-4.  To create a new one, click **+ New Template** button
+    On the **Templates** page, document templates that have already been defined are be listed.
 
-5.  Enter a unique name for the template and click **Create**
+1.  To create a new document template, click **+ New Template**.
 
-6.  Use the rich text editor capability to insert/edit the offer document
-    content.
+1.  Enter a unique name for the template and click **Create**.
 
-7.  You can insert offer data placeholders in to the offer template document by:
+1.  Use the rich text editor to insert or edit the offer document content. You can insert tables, image, and hyperlinks using the options available at the top of the text editor.
 
-    1.  **Drag and drop the placeholder** from the right panel on to the
-        document to the right place
+1.  You can insert offer data placeholders in the offer template document by:
 
-    2.  **Hashtag** the offer data placeholder directly to the position
-        required. **Type \#** and start typing the name of the offer data
-        placeholder and the drop-down list will search across the list and show
-        you the correct one. Click in and or press Enter to insert the offer
-        data placeholder
+    - Dragging and dropping from the right pane.
 
-8.  You can insert tables, images and hyperlinks using the options available at
-    the top of the text editor.
+    - Hashtag the offer data placeholder directly into position. Type **\#** and then start typing the name of the offer data
+        placeholder. Options will appear in the drop-down list. Click or press **Enter** to insert the offer data placeholder
 
-9.  If you want to associate a placeholder to the offer document template but
-    not expose its value to the candidate, hover over the offer data placeholder
-    and click the **Pin** icon. This will push the placeholder to the **Pinned
-    offer data** section of the offer document template. To unpin, follow the
-    same method and click **unpin** icon amongst the list of offer data
-    placeholders
+    >[!NOTES]
+    > - To associate a placeholder to the offer document template yet not expose its value to the candidate, hover over the offer data placeholder and click the **Pin** icon. This will push the placeholder to the **Pinned offer data** section of the offer document template. To unpin, follow the same steps but click **Unpin** in the list of offer data placeholders.
 
-10. To view the list of active offer data placeholders, switch to the **Active**
-    tab in the right panel.
+    > - To view the list of active offer data placeholders, switch to the **Active** tab in the right pane.
 
-11. If you insert a placeholder which was driven by an offer data rule set, you
-    can see the dependency of that offer data placeholder on other values.
+    > - If you insert a placeholder that is driven by an offer data rule set, you can see the dependency of that offer data placeholder on other values.
 
-12. Alternatively, you can **Import** the content from any docx file on your
-    local machine, edit as required so that you don’t have type in all the
-    content in this editor.
+    > - Alternatively, you can **Import** the content from a .docx file on your local machine and edit as required. That way, you don’t have to type in all the content in the editor.
 
-13. To view how the offer document will show up, use the **Preview** option at
-    the top.
+1. To preview the offer document, use the **Preview** option at the top of the page.
 
-14. If you want to control whether an offer creator can edit the offer document
-    content, use the **Manage Permission** option at top. If you want the offer
-    creators to only insert placeholder values and not edit text, set the
-    permission value to No
+1. To control whether an offer creator can edit the offer document content, use the **Manage permission** option at the top of the page. If you want the offer creator to only insert placeholder values and not edit text, set the permission value to **No**.
 
-15. Click **Save** to save your progress. The template is now saved in a draft
-    state.
+1. Click **Save** to save your progress. The template will be saved in a draft state.
 
-16. To finalize and mark the document as published, click **Finish**.
+1. To finalize and mark the document as published, click **Finish**.
 
-17. On the Document templates library landing experience, you can see which
-    document templates are currently active, in draft mode and have been
-    archived and no longer in use.
+1. You can see which document templates are currently active, in draft mode, and have been archived and are no longer in use on the document templates library landing experience.
 
-18. You can delete any offer document template if they are not part of an offer
-    package template already.
+>[!NOTE]
+> You can delete any offer document template that is not part of an existing offer package template.
 
 Offer Package templates
 -----------------------
