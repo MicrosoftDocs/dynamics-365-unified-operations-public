@@ -21,13 +21,13 @@ If position management has been turned on in the Admin Center, the **Update posi
 > [!NOTE]
 > Position management is available with the Comprehensive Hiring Add-on.
 
-Depending on the settings in the Offer activity of the hiring process, a position number can be used twice in an offer. For more information, see the hiring process section.
+Depending on the settings in the Offer activity of the hiring process, a position number can be used twice in an offer. For more information, see [Hiring process](./activities-attract.md).
 
-Attract includes a default set of skills. These skills appear as suggestions as you type. You can add more skills by entering the new skill text in the field and then selecting Enter.
+Attract includes a default set of **Skills**. These skills appear as suggestions as you type. You can add more skills by entering the new skill text in the field and then pressing Enter.
 
-Attract includes a default set of job functions. You can add up to three more job functions by entering the new job function in the field and then selecting Enter.
+Attract includes a default set of **Job functions**. You can add up to three more job functions by entering the new job function in the field and then pressing Enter.
 
-Attract includes a default set of company industries. You can add up to three more company industries by entering the new company industry in the field and then selecting Enter.
+Attract includes a default set of **Company industry**. You can add up to three more company industries by entering the new company industry in the field and then pressing Enter.
 
 ## Hiring team
 
@@ -66,7 +66,7 @@ The option to add prospects to a job is set in the [Prospect activity](./activit
 
 ## Approvals
 
-Attract jobs can be submitted for approval. Not all jobs require approval. The requirement is set at the template level. By default, approvals are turned off on the template. To set up approvals, go to a process template, and set the approval to **Default**. Then select that template when you create the job.
+Attract jobs can be submitted for approval. Not all jobs require approval. The requirement is set at the template level. By default, approvals are turned off on the template. To set up approvals, go to a process template, and set the **Approval** field to Default. Then select that template when you create the job.
 
 After a job is saved, it can be submitted for approval. The following table lists the statuses of a document that uses approvals.
 
