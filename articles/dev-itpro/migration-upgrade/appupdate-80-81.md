@@ -5,7 +5,7 @@ title: Update environments from version 8.0 to 8.1
 description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to the 8.1 application release.
 author: laneswenka
 manager: AnnBe
-ms.date: 10/16/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -98,13 +98,13 @@ Using the merged update package, deploy this to your various test environments. 
 After you have marked the Release Candidate in your Asset Library, you can schedule the deployment to your Production environment.  This will follow the same process for applying other software deployable packages.
 
 ## Known issues
-Below find issues that are known to the product and support teams regarding the update process.
+The following issues are known to the product and support teams regarding the update process.
 
 ### Cannot find 8.1 binary update package from the All Binary Updates tile from my environment details page
-It was originally communicated that the package would be found there, however to prevent customers who want to simply get the latest binaries for 8.0 release accidentally updating to 8.1 we have moved the package to the Shared Asset Library.  This article has been updated to reflect this change.
+It was originally communicated that the package would be found there however to prevent customers who want to simply get the latest binaries for 8.0 release accidentally updating to 8.1 we have moved the package to the Shared Asset Library.  This article has been updated to reflect this change.
 
-### Deployment on my environment fails with error on duplicate objects
-By default in Visual Studio, when an object is extended it is created with name Object.*Extension1*.  This can clash however as Microsoft introduces new extensions of the same object.  If this occurs, it will fail your deployment with an error similar to the following:
+### Deployment of my environment fails with error on duplicate objects
+By default in Visual Studio, when an object is extended it is created with a name of Object.*Extension1*.  This can clash however as Microsoft introduces new extensions of the same object.  If this occurs, your deployment will fail with an error similar to the following:
 ```
 Exception calling "CreateRuntimeProvider" with "1" argument(s): "Runtime metadata is invalid because the same metadata artifact has been defined in multiple assemblies. \nFirst 10 conflicting names: SystemAdministration.Extension1. \nSee metadata events for complete list."
 ```
