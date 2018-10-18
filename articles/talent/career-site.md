@@ -45,7 +45,7 @@ will have their own career site provisioned. Each career site is **completely
 isolated** with its own authentication mechanism and there is no sharing of jobs
 or candidate profiles between career sites.
 
-By default, the career site is public. Candidates can view all jobs that are
+By default, the career site is public. A candidate can view all jobs that are
 marked as external without having to log in. However, for all other actions, the
 candidate will be required to login.
 
