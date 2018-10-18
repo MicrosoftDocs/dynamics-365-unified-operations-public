@@ -172,69 +172,54 @@ To create an offer document template, do the following.
 >[!NOTE]
 > You can delete any offer document template that is not part of an existing offer package template.
 
-Offer Package templates
------------------------
 
-Offer packages are ultimately the offer artifacts that are shared with the
-candidate. These are combinations of one or more offer document templates. To
-create an offer package:
+## Offer Package templates
 
-1.  Go to offer management.
+Offer packages are the offer artifacts that are shared with the candidate and consist of a combination of one or more offer document templates. To create an offer package, do the following.
 
-2.  Navigate to **Packages** from the left navigation panel.
+1.  Go to **Offer management**.
 
-3.  You will see a list of **Active** package templates that are available for
-    offer creators to use.
+1.  Navigate to **Packages** from the left navigation pane.
 
-4.  To create a new offer package, click **+ New Package**.
+    A list of active package templates that are available for offer creators to use is displayed.
 
-5.  Enter a unique name and click **Create**.
+1.  To create a new offer package, click **+ New Package**.
 
-6.  Click **Add template**
+1.  Enter a unique name and click **Create**.
 
-7.  You can choose to create a new template or choose from one of the existing
-    ones
+1.  Click **Add template**.
 
-8.  If you choose to **add an existing template**, please ensure that those
-    offer document templates were saved and finalized as well and marked as
-    active. You can choose as many document templates as you want. Click
-    **Done** to return to package management.
+    >[!NOTES]
+    > - You can choose to create a new template or choose from an existing one.
 
-9.  You can configure the **sequence of the documents** and also mark whether or
+    > - If you choose to add an existing template, you need to make sure that the
+    offer document template was saved, finalized, and marked as
+    active.
+    
+    > - You can choose as many document templates as you want. 
+    
+1.  Click **Done** to return to **Package management**.
+
+    You can configure the sequence of the documents and also mark whether or
     not the specific offer document is required during offer creation or not,
     the offer creator will have an option to delete the documents marked as Not
     required.
 
-10. **Save and publish** the offer package template for it to be usable by all
-    offer creators.
+1. To save the offer package template so that it's usable by all offer creators, click **Save and publish**.
 
-11. You can view draft offer package templates by navigating to the drafts tab.
-    Whenever any changes are made to the offer package template, it must be
-    saved and published again for this latest version to be used by offer
-    creators.
+   To view draft offer package templates, go to the **Drafts** tab. If a change is made to the offer package template, it must be
+    saved and republished.
 
-Configure your offer process
-----------------------------
+## Configure an offer process
 
-There are several parts of the offer creation process that an Attract
-Administrator can configure as well from the Admin Center present in Attract.
+There are several parts of the offer creation process that can be configured by an Attract administrator.
 
-**Offer approvals**: You choose whether offer approvals are mandatory before it
-can be sent to the candidate. As an admin, you can also decide whether all offer
-approvals will happen in a sequential manner or parallel approval workflow.
-Admins can also mandate whether offer approvers have to comment along with their
-offer approval action. Offer approvals are mandatory for all non-standard
+- **Offer approvals**: Choose whether offer approvals are required before the offer can be sent to the candidate. As an administrator, you can also decide whether all offer approvals will happen in a sequential manner or parallel approval workflow. You can also mandate whether offer approvers have to comment along with their offer approval. Offer approvals are mandatory for all non-standard
 offers.
 
-**Candidate’s offer experience**: Admins can choose to set whether all offers
-will have an expiration date or not, and if yes, what the default offset for the
-expiry date should be. They can also configure whether candidates can decline
-the offers or not.
+- **Candidate’s offer experience**: As administrator, you can choose to set whether all offers have an expiration date or not, and if so, what the default offset for the expiry date should be. You can also configure whether candidates can decline the offers or not.
 
-**E-Signatures**: Currently, the only option available is for candidates to type
-their name in the offer package while accepting the offer. We will be
-introducing partner integrations with other electronic signature providers
-shortly.
+- **E-Signatures**: Currently, the only option available is for candidates to type their name in the offer package while accepting the offer. We will introduce partner integrations with other electronic signature providers in the future.
 
 
-To know more about the offer creation process, please read [Offer creation, approvals and signing](./creating-offers.md)
+To learn more about the offer creation process, please read [Offer creation, approvals and signing](./creating-offers.md)
