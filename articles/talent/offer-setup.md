@@ -60,42 +60,25 @@ data, do the following.
     
     > There are sections on the page to organize different offer data placeholders together in logical groups. These sections can help with maintenance of offer data and population of data during the offer creation process.
 
-6.  To create new offer data section, click **Add a section** and enter the
-    unique section name
+1.  To create new offer data section, click **Add a section** and enter a unique name for the section.
 
-7.  To add offer data placeholders to any section, click **Add offer data** and
-    enter a unique name for the placeholder.
+1.  To add offer data placeholders to any section, click **Add offer data** and enter a unique name for the placeholder.
 
-8.  To edit the name of any section, hover over the section name and update the
-    name
+1.  To edit the name of any section, hover over the section name and update the name.
 
-9.  To edit the name of any existing offer data placeholder, we need to make
-    sure that they are not already part of any template. You can hover over the
-    name of the offer data placeholder and update the name as desired
+1.  To edit the name of any existing offer data placeholder, first make sure that the placeholder is not already part of any template. Then, hover over the name of the offer data placeholder and update the name as desired.
 
-10. To delete any existing offer data placeholder, we need to make sure that
-    they are not already part of any template. You can hover over the
-    placeholder and the trash-can icon will appear, click that to delete the
-    offer data placeholder.
+1. To delete an existing offer data placeholder, first make sure that the placeholder is not part of any other template. Then, hover over the placeholder and when the trash-can icon appears, click the trash can to delete the offer data placeholder.
+    >[!NOTE]
+    > You can see how many templates an offer data placeholder is part of by the number indicator next to each offer data. 
 
-11. To delete any section, hover over the name. If none of the offer data
-    placeholders inside the section appear in any template, you can click the
-    trash-can icon. This will also delete all the offer data placeholders inside
-    that section.
+1. To delete any section, hover over the name. If none of the offer data placeholders inside the section appear in any template, you can click the trash-can icon to delete it. 
+    >[!NOTE]
+    > Deleting the section will also delete all the offer data placeholders inside that section.
 
-12. You can also see how many templates any offer data placeholder is part of by
-    the number indicator next to each offer data.
+Once the offer data placeholders have been set up, you can use them across any document template. Offer data placeholders are no longer restricted to a specific template -- the same set can be used across all templates.
 
-13. Alternatively, you can also view and edit the offer data in a similar way
-    from within each document template creation.
-
-Once the offer data placeholders have been set up, you can use these across any
-document templates. Contrary to our earlier public preview release, offer data
-placeholders are not restricted to a specific template but the same set can be
-used across all templates.
-
-Offer data rules
-----------------
+## Offer data rules
 
 Every organization has a few rules for how offers cannot be created, for example
 you want to indicate that the max annual salary offer for a specific location,
