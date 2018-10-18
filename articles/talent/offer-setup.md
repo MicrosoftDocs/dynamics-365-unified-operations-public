@@ -1,29 +1,55 @@
-Set up Offer Management 
-========================
+---
+# required metadata
 
-Once a candidate is moved to offer stage in Attract, you need to ensure that the
-offers can be quickly created for the candidate, approved as necessary and sent
-out to candidates. Most of the offers are standard in terms of being created
-from reusable templates to reduce the time to offer. Specific to Attract, all
-offers are rolled in terms of offer packages which is a collection of one or
-more offer documents. This topic lists all the different steps that an Attract
-Administrator could follow to set up different offer package templates as part
-of the offer management capability as part of Attract. Users with
-non-AttractAdmin roles will not have access to Offer Admin capabilities.
+title: Set up offer management
+description: This topic describes how to set up offers in Talent.
+author: josaw
+manager: AnnBe
+ms.date: 10/18/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Talent
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: josaw
+ms.search.validFrom: 2018-10-18
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+# Set up offer management 
+
+[!include [banner](includes/banner.md)]
+
+Once a candidate is moved to the offer stage in Dynamics 365 for Talent: Attract, you need to ensure that the
+offers can be quickly created for the candidate, approved as necessary, and sent
+out to the candidate. Most of the offers are standard in that they can be created
+from reusable templates to reduce the time to offer. In Attract, all
+offers are rolled into an offer package, which is a collection of one or
+more offer documents. 
+
+This topic lists all the steps that an Attract administrator would follow to set up different offer package templates as part
+of the offer management capability in Attract. Users with non-administrator roles will not have access to these capabilities.
 
 >[!NOTE]
->Offer management capabilities are available as part of the Comprehensive
-Hiring Add-On
+> Offer management capabilities are available as part of the Comprehensive Hiring Add-On.
 
-Offer data 
------------
+## Offer data 
 
-Offer data is the smallest unit inside our offer package templates. Any typical
-offer consists of standard text and a set of values. These sets of values are
-the only pieces that could change between offer to offer. During the offer
-creation, the number one thing the offer creator can focus on is the list of
-offer data placeholders present in any offer package template. To set up offer
-data:
+Offer data is the smallest unit inside the offer package template. Any typical offer consists of standard text and a set of values. The sets of values are the only pieces that could change between offer to offer. During the offer creation, the number one thing the offer creator can focus on is the list of offer data placeholders present in any offer package template. To set up offer
+data, do the following.
 
 1.  Navigate to offer management
 
