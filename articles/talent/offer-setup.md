@@ -80,73 +80,52 @@ Once the offer data placeholders have been set up, you can use them across any d
 
 ## Offer data rules
 
-Every organization has a few rules for how offers cannot be created, for example
-you want to indicate that the max annual salary offer for a specific location,
-seniority level combination has to be within a certain range or how there are
-only a few certain values possible for offer level for the new hire. We
-currently support all such data rule uploads via CSV files.
+Most organization have rules for how offers must be created. For example, an organization may want to require that the max annual salary offer for a specific location and seniority level combination has to be within a certain range, or that there are only a few specific values possible for the offer level for the new hire. Attract currently supports all such data rules via CSV file that are uploaded.
 
-Preparing the data rules CSV file:
+To prepare the data rules CSV file, do the following.
 
-1.  Determine the offer data placeholder for which the rule set is. Example,
-    Annual Salary
+1.  Determine the offer data placeholder for which the rule set is. For example, **Annual Salary**.
 
-2.  Identify the dependent offer data placeholder values, let’s say Job Location
-    and Level
+1.  Identify the dependent offer data placeholder values. For example, **Job Location** and **Level**.
 
-3.  Put columns 1 and 2 as Job Location and Level
+1.  Specify columns 1 and 2 as **Job Location** and **Level**.
 
-4.  Since we are uploading a range value, put Columns 3 and 4 as Annual Salary.
-    If we are uploading a specific value instead of a range, only create Column
-    3 as Annual Salary
+1.  To upload a range value, make columns 3 and 4 **Annual Salary**. To upload a specific value instead of a range, only make column
+    3 **Annual Salary**.
 
-5.  Populate the excel file per your required roles.
+1.  Populate the Excel file per your required roles.
 
-6.  Ensure each row is a unique combination of all the value put together.
+1.  Ensure each row is a unique combination of all the values put together.
 
-7.  Save the excel in a CSV format.
+1.  Save the file as a CSV format.
 
-Uploading the offer data rule:
+To upload the offer data rules file, do the following.
 
-1.  Navigate to offer management
+1.  Navigate to **Offer management**.
 
-2.  Expand the Library section in the left navigation panel, go to **Offer data
-    rules**
+1.  Expand the **Library** section in the left navigation panel, then go to **Offer data rules**.
 
-3.  Click **+ New data set** to bring up the upload dialog box
+1.  Click **+ New data set** to bring up the **Upload** dialog box.
 
-4.  Give a unique name for the rule set name and upload the saved csv file
+1.  Specify a unique name for the rule set and then upload the saved csv file.
 
-5.  Click **Add**
+1.  Click **Add**.
+    The rule set will be processed in the background and you will be notified in-app and via email once it completes.
 
-6.  The rule set is processed in background and you will be notified in-app and
-    via email once it completes
+    You will be notified if there are errors while processing the upload. You can then download the error log, fix the file, and re-upload.
 
-7.  If there were errors processing the upload, you will be notified, and you
-    can then download the error log to fix the sheet and re-upload.
+1.  Use the **…** option if you want to download the rule set and update the set of values. After updating, you can upload the file again.
 
-8.  To edit/download the rule set, use the **…** option to download the rule set
-    and update the set of values and re-upload.
+1.  You can delete an existing rule set upload if the placeholder being defined is not being used in any document template.
 
-9.  You can delete an existing rule set upload if the placeholder being defined
-    is not being used in any document template already.
+>[!Important]
+> - Each placeholder can only have one unique set of columns that it is dependent on. For example, if **Annual Salary** is dependent on **Job Location** and **Level**, you can't upload another rule set where **Annual Salary** is dependent on a different set of columns.
 
-Please note a few important pieces:
+> - You can download sample offer data rule sets on the **Samples** tab of the **Offer data rules** page.
 
-1.  Each placeholder can only have one unique set of columns its dependent on.
-    For example, Annual Salary is dependent on Job Location and Level. We cannot
-    upload another rule set where Annual Salary is dependent on another
-    different set of columns.
+> - When an offer creator overrides the values that are recommended by the offer data rules, the offer is flagged as non-standard and offer approval workflow will be mandated.
 
-2.  You can download some sample offer data rule sets under the **Samples** tab
-    of the Offer data rules screen.
-
-3.  When an offer creator overrides the values that are recommended by the offer
-    data rules, it flags the offer as non-standard and offer approval workflow
-    is mandated.
-
-Document templates
-------------------
+## Document templates
 
 Offer document templates help administrators create the offer letters, these are
 combination of the text that maybe part of the offer as well as the offer data
