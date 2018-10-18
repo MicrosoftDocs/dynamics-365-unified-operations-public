@@ -40,7 +40,7 @@ for how to set up the career site.
 ## Overview
 
 Attract provides one career site per environment within a tenant. For example,
-if an organization has a development and test environment, they each
+if an organization has a development and a test environment, they each
 will have their own career site provisioned. Each career site is **completely
 isolated** with its own authentication mechanism and there is no sharing of jobs
 or candidate profiles between career sites.
