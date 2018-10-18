@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reporting and analytics in Attract
-description: This topic provides information about the reporting and analytics features in MicrosoftDynamics 365 for Talent - Attract.
+description: This topic provides information about the reporting and analytics features in Microsoft Dynamics 365 for Talent - Attract.
 author: 
 manager: AnnBe
 ms.date: 10/18/2018
@@ -34,46 +34,48 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 [!include[banner](../includes/banner.md)]
 
-Analytic reporting features in Attract provide insights about the organization's hiring process. Available features include:
+Analytic reporting features in Microsoft Dynamics 365 for Talent: Attract provide insights about the organization's hiring process. Here are some of the features that are available:
 
--   **Job Analytics:** - View the metrics of a job's applicants on the **Analytics** tab.
--   **Analytics Hub:** - View aggregated metrics across all jobs by clicking **Analystics** on the left navigation pane.
--   **Role-level security:** - Access to reports is controlled by Attract [Roles](./security-attract.md) and the job participant role.
--   **Cross-filtering:** Use report visuals to view report metrics that are filtered by selected data.
--   **Export to Excel:** Download a Microsoft Excel sheet of the Attract data included in the report.
-    
->[!IMPORTANT]
->Reports currently refresh every three hours. The timestamp of the most recent refresh is displayed above the report.
+- **Job Analytics** – View the metrics of a job's applicants on the **Analytics** tab.
+- **Analytics Hub** – View aggregated metrics across all jobs by selecting **Analytics** in the left navigation pane.
+- **Role-level security** – Access to reports is controlled by Attract [roles](./security-attract.md) and the job participant role.
+- **Cross-filtering** – Use report visuals to view report metrics that are filtered by selected data.
+- **Export to Excel** – Download a Microsoft Excel workbook of the Attract data that is included on a report.
+
+> [!IMPORTANT]
+> Currently, reports are updated every three hours. The timestamp of the most recent update is shown above the report.
+
+The following sections provide more information about each feature.
 
 ## Job Analytics
 
-**Job analytics** reports are a snapshot of the hiring process for job. Key metrics include:
+**Job Analytics** reports give a snapshot of the hiring process for a job. Here are some of the key metrics that are included:
 
--   Active applicants
--   Applicant type (Internal vs External)
--   Applications over time
+- Active applicants
+- Applicant type (Internal versus external)
+- Applications over time
 
-## Analytics hub
+## Analytics Hub
 
-**Analytics Hub** reports aggregate job data to surface trends in the hiring process. Key metrics include:
+**Analytics Hub** reports aggregate job data to reveal trends in the hiring process. Here are some of the key metrics that are included:
 
--   Open jobs by seniority level
--   Rejected applicants by reason
--   Applicants across all jobs by stage
+- Open jobs by seniority level
+- Rejected applicants by reason
+- Applicants across all jobs by stage
 
 ## Role-level security
 
-Attract reports are accessible for Admin, Read-only, Recruiter, and Hiring manager roles. Unassigned users do not have access to the analyticreport pages, **Job Analytics** and **Analytics Hub**.
+Attract reports are accessible to users who are assigned to the Administrator, Read-only, Recruiter, or Hiring Manager role. Unassigned users don't have access to the analytic report pages, **Job Analytics** and **Analytics Hub**.
 
-- **Job Analytics** reports display data for the selected job. Users with hiring manager and recruiter participant roles can access **Job Analytics** for the selected job. Admin and Read-only users can access **Job Analytics** for all jobs.
-- **Analytics Hub** reports aggregate data across jobs where the user is a hiring manager or recruiter participant. Admin, Read-only, Recruiter, and Hiring manager roles can access the **Analytics Hub**.
+- **Job Analytics** reports show data for the selected job. Users who are assigned to the Hiring Manager or Recruiter role can access the **Job Analytics** report page for the selected job. Users who are assigned to the Administrator or Read-only role can access the **Job Analytics** report page for *all* jobs.
+- **Analytics Hub** reports aggregate data across jobs where the user is a hiring manager or a recruiter. Users who are assigned to the Administrator, Read-only, Recruiter, or Hiring Manager role can access the **Analytics Hub** report page.
 
-To learn more about security roles, see [Security in Attract](./security-attract.md) topic.
+To learn more about security roles, see [Security and role management in Attract](./security-attract.md).
 
-## Cross-filter
+## Cross-filtering
 
-Users can filter a report based on data selected in a visual. For example, clicking **Internal** in an applicant type visual filters the report for internal applicants. Tiles such as **Active applicants** will be filtered for internal, active applicants, and other visuals such as **Rejected applicants**, will highlight the portion corresponding to internal, rejected applicants.
+Users can filter a report, based on data that is selected in a visual. For example, if **Internal** is selected in an applicant type visual, the report is filtered for internal applicants. Therefore, the **Active applicants** tile is filtered for internal active applicants. In the **Rejected applicants** visual, the part that corresponds to internal rejected applicants is highlighted.
 
 ## Export to Excel
 
-To view **Attract data Excel**, users can click the ellipses on a visual and select **Export underlying data**.
+To view Attract data in Excel, users can select the ellipses button (**...**) on a visual, and then select **Export underlying data**.
