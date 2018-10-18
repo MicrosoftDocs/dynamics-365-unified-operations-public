@@ -34,116 +34,119 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 [!include[banner](../includes/banner.md)]
 
-Attract uses role-based security which means that access is not granted to individual users, but instead to security roles. Users are assigned to roles. A user who is assigned to a security role has access to the set of privileges that are associated with that role. Attract provides five basic user roles that can be used: 
+Microsoft Dynamics 365 for Talent: Attract uses role-based security. In other words, access isn't granted to individual users, but to the security roles that users are assigned to. A user who is assigned to a security role has access to the set of privileges that is associated with that role.
 
-- Administrator 
+Attract provides five basic user roles:
+
+- Administrator
 - Hiring Manager
 - Recruiter
 - Interviewer
 - Read-only
 
-The Administrator role is the only role with permissions to add other users and modify their permissions.
+The Administrator role is the only role that has permission to add other users and change their permissions.
 
-- **Add** - In the **Admin Center**, select the **User Permissions** tab, select **Assign user**, search for the user that you would like to add, and then assign their permissions.
-- **Edit** - Search for or find the user in the list and click **Edit** to make changes to their permissions. 
-- **Delete** - Deleting the permissions of the user does not remove them from the system but it does restrict the user’s permissions within Attract. For example, Hilda has been assigned the Hiring manager security role and is added to a job as a hiring manager. If Hilda’s security role of a hiring manager is later removed, she will remain as a hiring manager on the job for which she was added as a hiring manager earlier. She will still have access to that job but will be unable to create any new jobs.
+- **Add** – In the Admin center, on the **User permissions** tab, select **Assign user**, search for the user to add, and then assign permissions to that user.
+- **Edit** – Search for the user, or find the user in the list, and then select **Edit** to changes his or her permissions.
+- **Delete** – If you delete a user's permissions, you don't remove the user from the system. However, you do limit the user's permissions in Attract. For example, Hilda has been assigned to the Hiring Manager role, and she is added to a job as a hiring manager. If Hilda is later removed from the Hiring Manager role, she remains a hiring manager on the job and still has access to that job. However, she can't create other jobs.
 
-The following sections provide a high-level description of each role. The table later in the topic provides more detailed information. 
+The following sections provide a high-level description of each role. The tables later in the topic provide more detailed information.
 
 > [!NOTE]
-> Some features are only available with the Comprehensive Hiring Add-on for Attract.
+> Some features are available only with the Comprehensive Hiring add-on for Attract.
 
-## Administrator 
+## Administrator
 
-The Administrator role provides can access and modify all data within Attract. This includes the ability to create, read, update, and delete data. This role also has access to the Admin Center where they can configure the Attract application and set up user information. It is recommended that there be at least one individual who is assigned to the Administrator role. By default, the Environment administrator in PowerApps will be set as an Administrator in Attract. If you have signed up for the trial version of Attract, you will automatically be granted the Administrator role. Currently, the Administrator role also requires the Recruiter or Hiring manager role to create jobs.
+Users who are assigned to the Administrator role can access and change all data in Attract. Admins can create, read, update, and delete data. They also have access to the Admin center, where they can configure the Attract application and set up user information. We recommend that at least one individual be assigned to the Administrator role. By default, the environment admin in Microsoft PowerApps is set as an admin in Attract. If you signed up for the trial version of Attract, the Administrator role is automatically assigned to you. Currently, to create jobs, users who have the Administrator role must also have either the Recruiter role or the Hiring Manager role.
 
-## Hiring manager 
+## Hiring Manager
 
-The Hiring manager can create new jobs and update the jobs that they have previously created. Hiring managers have a limited set of actions that can be performed on a job and the applications associated to a job. Only users that are assigned to the Hiring manager role can be added to a hiring team as a hiring manager.
+Users who are assigned to the Hiring Manager role can create jobs and update jobs that they previously created. Hiring managers can perform only a limited set of actions on a job and on the applications that are associated with that job. Only users who are assigned to the Hiring Manager role can be added to a hiring team as hiring managers.
 
 ## Recruiter role
 
-The Recruiter role has full read, create, update, and delete privileges for the jobs that they have created. They also have full create, read, update, and delete privileges for the applications associated to the jobs that they own. Only users that are assigned to the Recruiter role can be added a hiring team as a recruiter.
+Users who are assigned to the Recruiter role have full read, create, update, and delete privileges for the jobs that they have created. They also have full create, read, update, and delete privileges for the applications that are associated with jobs that they own. Only users who are assigned to the Recruiter role can be added to a hiring team as recruiters.
 
-## Interviewer 
+## Interviewer
 
-Any user with an AAD account in the organization can be added to a hiring team as an interviewer. The interviewer can view the job details and applicant data for the jobs where they are part of the hiring team. In conext of those jobs, interviewers can make hiring recommendations and provide feedback about candidates. They do not have the ability to update job details or candidate information.
+Any user who has a Microsoft Azure Active Directory (Azure AD) account in the organization can be added to a hiring team as an interviewer. Users who are assigned to the Interviewer role can view the job details and applicant data for jobs that they are on the hiring team for. For those jobs, interviewers can also make hiring recommendations and provide feedback about candidates. However, they can't update the job details or applicant data.
 
-## Read-only 
+## Read-only
 
-Users with this role have read-only access to all data within the Attract environment but do not have the ability to create or edit any data.
+Users who are assigned to the Read-only role have read-only access to all data in the Attract environment. However, they can't create or edit any data.
 
 ## Delegated roles
 
-Recruiters and hiring managers can add one or more delegates for themselves for each job where they are part of a hiring team. Delegates have the same privileges as the person that designated them. For example, if a hiring manager sets a delegate for themselves, the delegate will have the same privileges as the hiring manager for that job. Neither recruiters or hiring managers can assign delegates for other individuals on the hiring team. Delegates do not have the ability to remove other delegates from the hiring team or remove the individual that selected them as a delegate.
+For each job that they are on the hiring team for, recruiters and hiring managers can designate one or more delegates for themselves. However, they can't designate delegates for other people on the hiring team.
+
+Delegates have the same privileges as the person who designated them. For example, if a hiring manager designates a delegate for herself for a job, the delegate will have the same privileges as that hiring manager for that job. Delegates can't remove other delegates from the hiring team. They also can't remove the people who designated them as delegates.
 
 ## Job details and actions
 
-New jobs can be created by the Recruiter and Hiring manager roles. The following privileges apply to the job details and actions that can be taken on a job.
+Users who have the Recruiter or Hiring Manager role can create jobs. The following privileges apply to the job details and the actions that can be taken on jobs.
 
-|                   | Recruiter                                                                        | Hiring Manager                                                                                                | Interviewer |
-|-------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|-------------|
-| Job details       | Create, read, update, and delete for jobs when part of the hiring team      | Create, read, update, and delete for jobs when part of the hiring team                                   | Read-only   |
-| Hiring team       | Create, read, update, and delete for jobs when part of the hiring team      | Create, read, update, and delete for jobs when part of the hiring team                                   | Read-only   |
-| Job Posting       | Create, read, update, and delete for jobs when part of the hiring team      | Read-only                                                                                                     | Read-only   |
-| Process           | Create, read, update, and delete for jobs when part of the hiring team | Create, read, update, and delete for jobs when part of the hiring team                              | Read-only   |
-| Add Applicants    | Add applicants for jobs when part of the hiring team               | Add applicants for jobs where they are part of the hiring team.                                            | Not allowed |
-| Add Prospects     | Add prospects for jobs when part of the hiring team               | There is a configuration option in the [prospect activity setup](./activities-attract.md#prospect-activity) that controls access to adding and viewing | Not allowed |
-| Activate job      | Activate jobs when part of the hiring team                       | Activate jobs wwhen part of the hiring team                                                    | Not allowed |
-| Close job         | Close jobs when part of the hiring team                          | Not allowed                                                                                                   | Not allowed |
-| Delete job        | Delete jobs when part of the hiring team                         | Only if no applicants on job                                                                                  | Not allowed |
-| Delete applicants | Delete applicants when part of the hiring team                     | Not allowed                                                                                                   | Not allowed |
+| Data or action    | Recruiter | Hiring Manager | Interviewer |
+|-------------------|-----------|----------------|-------------|
+| Job details       | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Read-only |
+| Hiring team       | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Read-only |
+| Job Posting       | Create, read, update, and delete for jobs that the user is on the hiring team for | Read-only | Read-only |
+| Process           | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Read-only |
+| Add Applicants    | Add applicants for jobs that the user is on the hiring team for | Add applicants for jobs that the user is on the hiring team for | Not allowed |
+| Add Prospects     | Add prospects for jobs that the user is on the hiring team for | A configuration option in the [prospect activity setup](./activities-attract.md#prospect-activity) controls whether interviewers can add and view prospects. | Not allowed |
+| Activate job      | Activate jobs that the user is on the hiring team for | Activate jobs that the user is on the hiring team for | Not allowed |
+| Close job         | Close jobs that the user is on the hiring team for | Not allowed | Not allowed |
+| Delete job        | Delete jobs that the user is on the hiring team for | Only if no applicants have been added to the job | Not allowed |
+| Delete applicants | Delete applicants if the user is on the hiring team | Not allowed | Not allowed |
 
 ## Application details and actions
 
-The following privileges apply to the job-specific data for an applicant and the actions that can be taken on an application.
+The following privileges apply to the job-specific data for applicants and the actions that can be taken on applications.
 
-|                         | Recruiter                                                                        | Hiring Manager                                                                   | Interviewer           |
-|-------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------|-----------------------|
-| Application documents   | Create, read, update, and delete for jobs when they are part of the hiring team | Create, read, update, and delete for jobs when they are part of the hiring team | Read-only             |
-| Application Notes       | Create, read, update, and delete for jobs when they are part of the hiring team. | Create, read, update, and delete for jobs when they are on the hiring team      | Create                |
-| Application Activity    | View when they are part of the hiring team                                  | View when they are part of the hiring teams                                 | Read-only             |
-| Application feedback    | Add and view all feedback when part of the hiring team.    | Add and view all feedback when part of the hiring team    | Can add feedback\*\* |
-| Reject application      | Can reject when they are part of the hiring team                                | Not allowed                                                                      | Not allowed           |
-| Advance stage           | Can reject when they are part of the hiring team                                | Can advance when they are part of the hiring team                               | Not allowed           |
-| Launch offer management | Can launch offer management.                                                     | Configuration option on the offer activity                                       | Not allowed            |
+| Data or action          | Recruiter | Hiring Manager | Interviewer |
+|-------------------------|-----------|----------------|-------------|
+| Application documents   | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Read-only |
+| Application Notes       | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Create |
+| Application Activity    | View, if the user is on the hiring team | View, if the user is on the hiring team | Read-only |
+| Application feedback    | Add and view all feedback if the user is on the hiring team | Add and view all feedback if the user is on the hiring team | Can add feedback\*\* |
+| Reject application      | Can reject if the user is on the hiring team | Not allowed | Not allowed |
+| Advance stage           | Can reject if the user is on the hiring team | Can advance if the user is on the hiring team | Not allowed |
+| Launch offer management | Can start offer management | There is a configuration option on the offer activity. | Not allowed |
 
-\*\*There is a configuration option within the [feedback activity setup](./activities-attract.md#feedback-activity) that
-controls whether interviewers can see each other’s feedback.
+\*\* A configuration option in the [feedback activity setup](./activities-attract.md#feedback-activity) controls whether interviewers can see each other's feedback.
 
 ## Process templates
 
-The following privileges apply to the hiring process templates. The ability to allow team members to create and edit templates is configured in **Template management** in the **Admin center**. If template management is turned on, recruiters and hiring managers can create and manage their own process templates. If template management is turned off, only the admin can create and edit process templates. The table below assumes that template management has been turned on.
+The following privileges apply to hiring process templates. The ability of team members to create and edit templates is configured in Template management in the Admin center. If template management is turned on, recruiters and hiring managers can create and edit their own process templates. If template management is turned off, only admins can create and edit process templates. The following table assumes that template management has been turned on.
 
-| Data              | Recruiter                                      | Hiring Manager                                     | Interviewer |
-|-------------------|------------------------------------------------|----------------------------------------------------|-------------|
-| Process templates | Full privileges on templates that they create. | Full privileges on templates that they can create. | No access   |
+| Data              | Recruiter                                           | Hiring Manager                                      | Interviewer |
+|-------------------|-----------------------------------------------------|-----------------------------------------------------|-------------|
+| Process templates | Full privileges for templates that the user creates | Full privileges for templates that the user creates | No access   |
 
-## Email and email templates 
+## Email and email templates
 
-The following privileges apply to email templates. Email templates can only be created and updated by an administrator. The table below discusses the actions that can be taken with emails.
+The following privileges apply to email templates and the actions that can be taken on emails. Only admins can create and edit email templates.
 
-| Data               | Recruiter              | Hiring Manager         | Interviewer |
-|--------------------|------------------------|------------------------|-------------|
-| Email templates    | Read-only access       | Read-only access       | No access   |
-| Send email         | Send per activity      | Send per activity      | No access   |
-| Edit email content | Can edit email content | Can edit email content | No access   |
+| Data or action     | Recruiter          | Hiring Manager     | Interviewer |
+|--------------------|--------------------|--------------------|-------------|
+| Email templates    | Read-only access   | Read-only access   | No access   |
+| Send email         | Send per activity  | Send per activity  | No access   |
+| Edit email content | Edit email content | Edit email content | No access   |
 
 ## Talent pools
 
-The following privileges apply to Talent pools. Talent pools are only visible to the creator unless the creator chooses to share the pool. Candidates that have not been added to a named pool can be searched via the candidate search.
+The following privileges apply to talent pools. Talent pools are visible only to the person who created them, unless that person chooses to share them. Candidate search can be used to search for candidates who haven't been added to a named pool.
 
-|                  | Recruiter                            | Hiring Manager                       | Interviewer |
-|------------------|--------------------------------------|--------------------------------------|-------------|
-| Named pool       | Full privileges on pools they create | Full privileges on pools they create | No access   |
-| Share pool       | On pools they have created           | On pools they have created           | No access   |
-| Candidate search | Full search capabilities             | Full search capabilities             | No access   |
+| Data or action   | Recruiter                                       | Hiring Manager                                  | Interviewer |
+|------------------|-------------------------------------------------|-------------------------------------------------|-------------|
+| Named pool       | Full privileges for pools that the user creates | Full privileges for pools that the user creates | No access   |
+| Share pool       | Only pools that the user creates                | Only pools that the user creates                | No access   |
+| Candidate search | Full search capabilities                        | Full search capabilities                        | No access   |
 
 ## Candidates
 
-Candidates are individuals who have been added to a Talent pool and are not associated to a job.
+Candidates are people who have been added to a talent pool but aren't associated with a job.
 
-|                             | Recruiter                            | Hiring Manager                       | Interviewer |
-|-----------------------------|--------------------------------------|--------------------------------------|-------------|
+| Data                        | Recruiter                        | Hiring Manager                   | Interviewer |
+|-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profile – candidate details | Create, read, update, and delete | Create, read, update, and delete | No access   |
 | Documents                   | Create, read, update, and delete | Create, read, update, and delete | No access   |
