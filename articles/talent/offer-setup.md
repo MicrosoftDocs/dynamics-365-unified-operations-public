@@ -51,15 +51,13 @@ of the offer management capability in Attract. Users with non-administrator role
 Offer data is the smallest unit inside the offer package template. Any typical offer consists of standard text and a set of values. The sets of values are the only pieces that could change between offer to offer. During the offer creation, the number one thing the offer creator can focus on is the list of offer data placeholders present in any offer package template. To set up offer
 data, do the following.
 
-1.  Navigate to offer management
+1.  Navigate to **Offer management**.
 
-2.  Expand the Library section in the left navigation panel, go to **Offer
-    data**
+1.  Expand the **Library** section in the left navigation pane, then go to **Offer data**.
 
-3.  Once the offer data screen loads, you will see a couple of offer data
-    sections – candidate details and job details.
+    On the "Offer data" page, there are a couple of offer data sections, specifically **Candidate details** and **Job details**.
 
-4.  We provide a few offer data placeholders out of the box from our job and
+1.  We provide a few offer data placeholders out of the box from our job and
     candidate entities
 
 5.  Sections help organize different offer data placeholders together in logical
