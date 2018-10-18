@@ -222,4 +222,4 @@ offers.
 - **E-Signatures**: Currently, the only option available is for candidates to type their name in the offer package while accepting the offer. We will introduce partner integrations with other electronic signature providers in the future.
 
 
-To learn more about the offer creation process, please read [Offer creation, approvals and signing](./creating-offers.md)
+To learn more about the offer creation process, please read [Creating, approving, and signing offers](./creating-offers.md).
