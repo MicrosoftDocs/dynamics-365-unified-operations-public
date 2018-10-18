@@ -20,15 +20,12 @@ Follow these steps to create and share a talent pool.
 
 2. In the upper right, select **+ New** to open the **Create talent pool** dialog box.
 3. Enter a unique name for the talent pool.
-4. To add people as contributors to the pool, find them by using the people picker, and then add them to the list. 
-
-    > [!NOTE]
-    > You can share a talent pool only with users who have the Recruiter, Hiring manager, or AttractAdmin role.
-
+4. To add people as contributors to the pool, find them by using the people picker, and then add them to the list. You can share a talent pool only with users who have the Recruiter, Hiring manager, or AttractAdmin role.
 5. Select **Add** to create the talent pool.
-6. To add contributors to an existing talent pool that you own, on the **My talent pools** tab, in the upper right of the talent pool card, select the ellipsis button (**…**), and then select **Edit**. Then find the people by using the people picker, and add them to the list. 
-7. To revoke a user's access to the talent pool, in the upper right of the talent pool card, select the ellipsis button (**…**), and then select **Edit**. Then, on the **Manage access** tab, select the trash can button next to the user.
-8. Select **Update** to complete and save the operation.
+6. You can also add contributors to a talent pool after you have created it. Additionally, you can manage access to a talent pool For example, you can revoke a user's access to the talent pool.
+- To add contributors to an existing talent pool that you own, on the **My talent pools** tab, in the upper right of the talent pool card, select the ellipsis button (**…**), and then select **Edit**. Then find the people by using the people picker, and add them to the list. 
+- To revoke a user's access to the talent pool, in the upper right of the talent pool card, select the ellipsis button (**…**), and then select **Edit**. Then, on the **Manage access** tab, select the trash can button next to the user.
+7. Select **Update** to complete and save the operation.
 
 > [!NOTE]
 > To create more than one talent pool, organizations must have the Comprehensive Hiring add-on.
