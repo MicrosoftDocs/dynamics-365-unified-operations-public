@@ -1,5 +1,37 @@
-Career site functionality in Attract
-====================================
+---
+# required metadata
+
+title: Career site functionality in Attract
+description: This article provides an overview of the candidate facing career site functionality in Microsoft Dynamics 365 for Talent and instructions about how to set it up.
+author: josaw
+manager: AnnBe
+ms.date: 10/18/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Talent
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: rschloma
+ms.search.validFrom: 2018-10-18
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+# Career site functionality in Attract
+
+[!include [banner](includes/banner.md)]
 
 This article provides an overview of the candidate facing career site
 functionality in Microsoft Dynamics 365 for Talent: Attract and instructions
@@ -15,8 +47,7 @@ The career site is public by default. The candidates can view all jobs that are
 marked as external without logging in. However for all other actions, the
 candidate will be requested to login.
 
-Career site management
-----------------------
+## Career site management
 
 The following in the career site are currently controlled by a setting.
 
@@ -46,8 +77,7 @@ rest of the URL is dropped. For the example above, the career site URL would
 look like:
 [https://jobs.talent.dynamics.com/jobs/\<companyname\>/](https://jobs.talent.dynamics.com/jobs/%3ccompanyname%3e/).
 
-Authentication options
-----------------------
+## Authentication options
 
 The candidate has the following options to log into a Attract career site.
 
@@ -71,8 +101,7 @@ credentials. For ex: If a candidate is currently an employee of “Contoso Ltd�
 and wants to apply to a job in a unrelated company “Alpine Ski House” – if
 he/she uses the AAD credential from “Contoso Ltd” to login, the login will fail.
 
-Create and maintain profile
----------------------------
+## Create and maintain profile
 
 Once the candidate logs into the career site, they can click on “My profile” in
 the navigation bar on the top of the page to create and maintain their profile.
@@ -81,8 +110,7 @@ education details, documents, link and skill sets. Once a profile has been
 created, it can be used to apply for a job the candidate is interested in. The
 profile also helps Attract recommend the right jobs to candidates.
 
-Find the right job
-------------------
+## Find the right job
 
 Once candidates arrive at the job list page, they can search for a specific job.
 The search today looks for the search term(s) across job title and job
@@ -96,8 +124,7 @@ site based on their past applications, profile and resumes.
 > For job recommendations to show, the career site should have at least 10
 posted job and the candidate should have a complete profile.
 
-Apply to jobs
--------------
+## Apply to jobs
 
 Once candidate finds the right job, he/she can apply to the job using the apply
 button on the job details page. At this point, the candidate is provided an
@@ -105,8 +132,7 @@ opportunity to either create a brand-new profile or review existing profile
 information. In addition to that – he/she can upload a resume if needed and
 submit the job application.
 
-Check on application status
----------------------------
+## Check on application status
 
 Once the candidate has applied for one or more job, he/she can click on
 “Applications” in the navigation bar on the top of the page to view their open
@@ -115,8 +141,7 @@ candidate can see the current stage and any action items that are pending from
 their side. For example, If they need to provide potential dates for in person
 interview, the options are shown here.
 
-Internal Jobs
--------------
+## Internal Jobs
 
 Jobs that are marked as internal and posted to the Attract career site, do not
 show up in the career site today. They are accessible only via the direct apply
