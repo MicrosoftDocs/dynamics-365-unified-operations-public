@@ -98,17 +98,16 @@ Using the merged update package, deploy this to your various test environments. 
 After you have marked the Release Candidate in your Asset Library, you can schedule the deployment to your Production environment.  This will follow the same process for applying other software deployable packages.
 
 ## Known issues
-The following issues are known to the product and support teams regarding the update process.
 
-### Cannot find 8.1 binary update package from the All Binary Updates tile from my environment details page
-It was originally communicated that the package would be found there however to prevent customers who want to simply get the latest binaries for 8.0 release accidentally updating to 8.1 we have moved the package to the Shared Asset Library.  This article has been updated to reflect this change.
+### Cannot find 8.1 binary update package on the All Binary Updates tile on the My environment details page
+It was originally communicated that the package would be found on the **All Binary Updates** tile. To prevent customers who want to simply get the latest binaries for release 8.0 from accidentally updating to release 8.1, we have moved the binary package to the Shared Asset Library. This topic has been updated to reflect this change.
 
 ### Deployment of my environment fails with error on duplicate objects
-By default in Visual Studio, when an object is extended it is created with a name of Object.*Extension1*.  This can clash however as Microsoft introduces new extensions of the same object.  If this occurs, your deployment will fail with an error similar to the following:
+By default, in Visual Studio when an object is extended, it is created with a name of Object.*Extension1*. This name could clash if Microsoft introduces new extensions of the same object. If this occurs, your deployment will fail with an error similar to the following:
 ```
 Exception calling "CreateRuntimeProvider" with "1" argument(s): "Runtime metadata is invalid because the same metadata artifact has been defined in multiple assemblies. \nFirst 10 conflicting names: SystemAdministration.Extension1. \nSee metadata events for complete list."
 ```
-To catch this situation early, ensure that you compile your extensions on an 8.1 developer machine.  To resolve this issue, rename any of your extension objects with a vanity extension naming convention such as SystemAdministration.*Customer*.
+To prevent this from occurring, ensure that you compile your extensions on an 8.1 developer machine. To resolve this issue, rename any of your extension objects with a vanity extension naming convention, such as SystemAdministration.*Customer*.
 
 ### Deployment on my environment fails with error on DVTs
-There is a known issue where IIS / Application Pools are not fully restarted when the DVT step runs.  Since the DVTs are trying to connect to your environment's URL it will fail.  To resolve this issue, click Resume on your deployment in LCS to retry the step.  We are working to add a timer and automatic retry in the future to resolve long term.
+There is a known issue where IIS/Application Pools are not fully restarted when the DVT step runs. The failure occurs because the DVTs are trying to connect to your environment's URL. To resolve this issue, click **Resume** on your deployment in LCS to retry the step.  We are working to add a timer and automatic retry tp resolve this issue.
