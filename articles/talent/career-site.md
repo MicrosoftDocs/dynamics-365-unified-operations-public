@@ -68,7 +68,7 @@ To set the values above, log in to Attract as an administrator and navigate to *
 ## Career Site URL
 
 When you [post an external job](./Creating-jobs-Attract.md#postings) for the first time, the **Apply** link can be copied from the Attract application. It will be in the following format:
-[https://jobs.talent.dynamics.com/jobs/\<companyname\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompanyname%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
+[https://jobs.talent.dynamics.com/jobs/\<companyname\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompanyname%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply).
 
 The career site URL is a substring of this URL: up to the company name (if everything in the URL after the company name is dropped). For the example above, the career site URL would be:
 [https://jobs.talent.dynamics.com/jobs/\<companyname\>/](https://jobs.talent.dynamics.com/jobs/%3ccompanyname%3e/).
