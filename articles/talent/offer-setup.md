@@ -55,14 +55,11 @@ data, do the following.
 
 1.  Expand the **Library** section in the left navigation pane, then go to **Offer data**.
 
-    On the "Offer data" page, there are a couple of offer data sections, specifically **Candidate details** and **Job details**.
+    >[!NOTE]
+    > On the **Offer data** page, there are a couple of offer data sections, specifically **Candidate details** and **Job details**. Attract provides a few offer data placeholders out-of-the-box.
 
-1.  We provide a few offer data placeholders out of the box from our job and
-    candidate entities
-
-5.  Sections help organize different offer data placeholders together in logical
-    groups which can help offer data maintenance as well as population during
-    offer creation.
+>[!NOTE]
+> There are sections on the page to organize different offer data placeholders together in logical groups. These sections can help with maintenance of offer data and population of data during the offer creation process.
 
 6.  To create new offer data section, click **Add a section** and enter the
     unique section name
