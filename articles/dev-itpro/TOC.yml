@@ -317,6 +317,8 @@
         href: extensibility/maps-as-interfaces.md
       - name: Extend table maps used for versioning
         href: extensibility/maps-with-versioning.md
+      - name: Extending decimal point precision for selected data types
+        href: extensibility/decimal-point-precision.md
     - name: Creating extensible solutions
       items:
       - name: Write extensible code
