@@ -205,7 +205,7 @@ For information about the requirements for development on local virtual machines
 
 ## Database collation
 
-The only supported collation for Finance and Operations databases in the cloud is **SQL_Latin1_General_CP1_CI_AS**.  Please ensure your SQL Server and database collations in development environments are set to this, and that any configuration environments that are published to Sandbox are also of this collation.
+The only supported collation for Finance and Operations databases in the cloud is **SQL_Latin1_General_CP1_CI_AS**. Please ensure that your SQL Server and database collations in development environments are set to this. Also ensure that any configuration environments that are published to Sandbox have this same collation.
 
 ## Additional resources
 
