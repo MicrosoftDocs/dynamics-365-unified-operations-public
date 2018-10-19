@@ -5,7 +5,7 @@ title: Copy Finance and Operations databases from SQL Server to production Azure
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from a SQL Server–based development, build, or demo environment (Tier 1 or one-box) to an Azure SQL database–based sandbox UAT environment (Tier 2 or higher).
 author: maertenm
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 10/19/2018
 
 ms.topic: article
 ms.prod: 
@@ -74,9 +74,13 @@ If you encounter issues, see the "Known issues and limitations" section at the e
 
 ## Before you begin
 
-Encrypted and environment-specific values can't be imported into a new environment. After you've completed the import, you must re-enter some data from your source environment in your target environment.
+### Supported SQL collation
+
+The only supported collation for Finance & Operations databases in the cloud is **SQL_Latin1_General_CP1_CI_AS**.  Please ensure your SQL Server and database collations in development environments are set to this, and that any golden configuration environments that are published to Sandbox are also of this collation.
 
 ### Document the values of encrypted fields
+
+Encrypted and environment-specific values can't be imported into a new environment. After you've completed the import, you must re-enter some data from your source environment in your target environment.
 
 Because of a technical limitation that is related to the certificate that is used for data encryption, values that are stored in encrypted fields in a database will be unreadable after that database is imported into a new environment. Therefore, after an import, you must manually delete and re-enter values that are stored in encrypted fields. New values that are entered in encrypted fields after an import will be readable. The following fields are affected. The field names are given in Table.Field format.
 

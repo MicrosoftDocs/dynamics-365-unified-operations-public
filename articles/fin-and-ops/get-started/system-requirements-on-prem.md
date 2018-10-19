@@ -5,7 +5,7 @@ title: System requirements for on-premises deployments
 description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations for on-premises deployments.
 author: kfend
 manager: AnnBe
-ms.date: 09/19/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -229,6 +229,7 @@ The following table lists the server operating systems that are supported for Fi
 ## Software requirements for database servers
 
 - Only 64-bit versions of SQL Server 2016 are supported.
+- Only **SQL_Latin1_General_CP1_CI_AS** is valid for the Server and database collation.
 - In a production environment, we recommend that you install the latest cumulative update (CU) for the version of SQL Server that you’re using.
 - Finance and Operations (on-premises) supports Unicode collations that are case-insensitive, accent-sensitive, kana-sensitive, and width-insensitive. The collation must match the Windows locale of the computers that are running AOS instances. If you’re setting up a new installation, we recommend that you select a Windows collation instead of a SQL Server collation. For more information about how to select a collation for a SQL Server database, see the [SQL Server documentation](/sql/sql-server/sql-server-technical-documentation).
 
