@@ -1,57 +1,77 @@
-Creating, Approving & Signing offers
-====================================
+---
+# required metadata
 
-Preparing an offer package for a candidate needs to be a very quick process.
-Using the templates set up by the administrator, it cuts down the time and
-effort for the offer creators to prepare and send offers out to the candidate.
+title: Creating, approving, and signing offers
+description: This topic details how to create, approve, and sign an offer for a candidate using Dynamics 365 for Talent.
+author: 
+manager: AnnBe
+ms.date: 10/19/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
 
-Create offer
-------------
+# optional metadata
 
-When a candidate is moved the offer stage and the use of offer management app
-was turned to On, you can start preparing offer package for the candidate.
-Currently, any user with a hiring manager or a recruiter role on a job can
-create the offer for the candidate. Steps to prepare the offer are as follows:
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Talent, Core
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: rschloma
+ms.search.validFrom: 2018-10-19
+ms.dyn365.ops.version: Talent October 2018 update
 
-1.  Navigate to the job and the candidate application you are creating the offer
-    for.
+---
 
-2.  Go to **Offer stage** and click **Prepare offer**.
+# Creating, approving, and signing offers
 
-3.  You will be redirected to offer app where you can see the same candidate in
-    a **New** status. You can also see other offers that you are part of, either
-    as a creator or an approver.
+[!include[banner](../includes/banner.md)]
 
-4.  Click **Prepare Offer** and you will be given a choice of different offer
-    packages that has been available by the admin to use for Offer creation.
+In many cases, preparing an offer package for a candidate needs to be a very quick process.
+Using the templates set up by the Attract administrator will cut down the time and
+effort for the offer creators to prepare and send offers out to a candidate.
 
-5.  Select the desired package and click **Done** to start preparing the offer
+## Create an offer
 
-6.  The offer package template will now load with the corresponding job and
-    candidate details in there.
+When the Offer management app is turned on, any user with the role of hiring manager or recruiter can prepare an offer package for the candidate. To prepare the offer, do the following.
 
-7.  You can see all the offer data placeholders which are present across the
-    offer package in the landing experience. You can use this screen to populate
-    all the values across the package.
+1.  Navigate to the job and the candidate application you are creating the offer for.
 
-8.  Alternatively, you can also see all the offer document templates that are
-    part of this offer package.
+1.  Go to **Offer stage** and click **Prepare offer**.
 
-9.  You can also edit the content of the offer depending on the admin
-    configuration.
+    You will be redirected to the Offer app where you can see the candidate with the status of **New**. You can also see other offers that you are contributing to, either as a creator or an approver.
 
-10. If there were documents marked as non-required, offer creators can choose to
-    remove those documents from the package as well.
+1.  Click **Prepare Offer**. 
+    
+    You will see a choice of different offer packages that have been made available by the administrator.
 
-11. Once all the offer data placeholders are populated, you can **save** the
-    offer draft version.
+1.  Select a package and click **Done** to start preparing the offer.
 
-12. You can delete the draft version of the offer if there were mistakes or you
-    want to start from scratch. If an incorrect package were selected, you can
-    also **change the package template** and apply to this offer package.
+    The offer package template loads with the corresponding job and candidate details populated in the offer.
 
-Approve offer
--------------
+1.  All the offer data placeholders that are part of the offer package are visible in the landing page. You can populate
+    all the values across the package on this page.
+
+    On the landing page, you can also see all the offer document templates that are part of the offer package.
+
+1.  You may now be able to edit the content of the offer, depending on how the template was configured by the administrator.
+
+1.  If you need to remove documents marked as non-required, you can do so.
+
+1. Once all the offer data placeholders are populated, you can click **Save** to save a draft of the offer.
+
+>[!NOTE]
+> After a draft is saved, you can delete the draft version of the offer or select a new package template, if necessary.
+
+
+## Approve an offer
 
 Most offers need to go through an approval process to make sure it meets the
 necessary standards. If an offer were made non-standard, i.e., the offer creator
