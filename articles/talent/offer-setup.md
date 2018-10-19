@@ -33,10 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](includes/banner.md)]
 
-Once a candidate is moved to the offer stage in Dynamics 365 for Talent: Attract, you need to ensure that the
+When a candidate is moved to the offer stage in Dynamics 365 for Talent: Attract, you need to ensure that the
 offers can be quickly created for the candidate, approved as necessary, and sent
-out to the candidate. Most of the offers are standard in that they can be created
-from reusable templates to reduce the time to offer. In Attract, all
+out to the candidate. Because most offers are standard, they can be created from reusable templates. In Attract, all
 offers are rolled into an offer package, which is a collection of one or
 more offer documents. 
 
@@ -48,10 +47,10 @@ of the offer management capability in Attract. Users with non-administrator role
 
 ## Offer data 
 
-Offer data is the smallest unit inside the offer package template. Any typical offer consists of standard text and a set of values. The sets of values are the only pieces that could change between offer to offer. During the offer creation, the number one thing the offer creator can focus on is the list of offer data placeholders present in any offer package template. To set up offer
+Offer data is the smallest unit inside the offer package template. A typical offer consists of standard text and a set of values. The sets of values are the only pieces that could change between offers. During the offer creation, the most important aspect that the offer creator can focus on is the list of offer data placeholders present in an offer package template. To set up offer
 data, do the following.
 
-1.  Navigate to **Offer management**.
+1.  Go to **Offer management**.
 
 1.  Expand the **Library** section in the left navigation pane, then go to **Offer data**.
 
@@ -60,31 +59,31 @@ data, do the following.
     
     > There are sections on the page to organize different offer data placeholders together in logical groups. These sections can help with maintenance of offer data and population of data during the offer creation process.
 
-1.  To create new offer data section, click **Add a section** and enter a unique name for the section.
+1.  To create a new offer data section, click **Add a section** and enter a unique name for the section.
 
 1.  To add offer data placeholders to any section, click **Add offer data** and enter a unique name for the placeholder.
 
 1.  To edit the name of any section, hover over the section name and update the name.
 
-1.  To edit the name of any existing offer data placeholder, first make sure that the placeholder is not already part of any template. Then, hover over the name of the offer data placeholder and update the name as desired.
+1.  To edit the name of any existing offer data placeholder, first make sure that the placeholder is not already part of any template. Then, hover over the name of the offer data placeholder and update the name as needed.
 
-1. To delete an existing offer data placeholder, first make sure that the placeholder is not part of any other template. Then, hover over the placeholder and when the trash-can icon appears, click the trash can to delete the offer data placeholder.
+1. To delete an existing offer data placeholder, first make sure that the placeholder is not part of any other template. Then, hover over the placeholder and when the trash can icon appears, click the trash can to delete the offer data placeholder.
     >[!NOTE]
     > You can see how many templates an offer data placeholder is part of by the number indicator next to each offer data. 
 
-1. To delete any section, hover over the name. If none of the offer data placeholders inside the section appear in any template, you can click the trash-can icon to delete it. 
+1. To delete any section, hover over the name. If none of the offer data placeholders inside the section appear in any template, you can click the trash can icon to delete it. 
     >[!NOTE]
     > Deleting the section will also delete all the offer data placeholders inside that section.
 
-Once the offer data placeholders have been set up, you can use them across any document template. Offer data placeholders are no longer restricted to a specific template -- the same set can be used across all templates.
+After the offer data placeholders have been set up, you can use them across any document template. Offer data placeholders are not restricted to a specific template -- the same set can be used across all templates.
 
 ## Offer data rules
 
-Most organization have rules for how offers must be created. For example, an organization may want to require that the max annual salary offer for a specific location and seniority level combination has to be within a certain range, or that there are only a few specific values possible for the offer level for the new hire. Attract currently supports all such data rules via CSV file that are uploaded.
+Most organization have rules for how offers must be created. For example, an organization may want to require that the maximum annual salary offer for a specific location and seniority level combination has to be within a certain range, or that there are only a few specific values possible for the offer level for the new hire. Attract currently supports all such data rules using a CSV file.
 
 To prepare the data rules CSV file, do the following.
 
-1.  Determine the offer data placeholder for which the rule set is. For example, **Annual Salary**.
+1.  Determine the offer data placeholder for the rule set. For example, **Annual Salary**.
 
 1.  Identify the dependent offer data placeholder values. For example, **Job Location** and **Level**.
 
@@ -93,35 +92,35 @@ To prepare the data rules CSV file, do the following.
 1.  To upload a range value, make columns 3 and 4 **Annual Salary**. To upload a specific value instead of a range, only make column
     3 **Annual Salary**.
 
-1.  Populate the Excel file per your required roles.
+1.  Populate the Microsoft Excel file based on your required roles.
 
-1.  Ensure each row is a unique combination of all the values put together.
+1.  Ensure that each row is a unique combination of all the values put together.
 
 1.  Save the file as a CSV format.
 
 To upload the offer data rules file, do the following.
 
-1.  Navigate to **Offer management**.
+1.  Go to **Offer management**.
 
 1.  Expand the **Library** section in the left navigation panel, then go to **Offer data rules**.
 
-1.  Click **+ New data set** to bring up the **Upload** dialog box.
+1.  Click **New data set** to display the **Upload** dialog box.
 
-1.  Specify a unique name for the rule set and then upload the saved csv file.
+1.  Specify a unique name for the rule set and then upload the saved CSV file.
 
 1.  Click **Add**.
     The rule set will be processed in the background and you will be notified in-app and via email once it completes.
 
-    You will be notified if there are errors while processing the upload. You can then download the error log, fix the file, and re-upload.
+    You will be notified if there are errors while processing the upload. You can then download the error log, fix the file, and upload it again.
 
-1.  Use the **…** option if you want to download the rule set and update the set of values. After updating, you can upload the file again.
+1.  Use the ellipses button (**…**) option if you want to download the rule set and update the set of values. After updating, you can upload the file again.
 
-1.  You can delete an existing rule set upload if the placeholder being defined is not being used in any document template.
+1.  You can delete an existing rule set upload if the placeholder being defined is not being used in another document template.
 
 >[!NOTES]
 > - Each placeholder can only have one unique set of columns that it is dependent on. For example, if **Annual Salary** is dependent on **Job Location** and **Level**, you can't upload another rule set where **Annual Salary** is dependent on a different set of columns.
 
-> - You can download sample offer data rule sets on the **Samples** tab of the **Offer data rules** page.
+> - You can download sample offer data rule sets on the **Samples** tab on the **Offer data rules** page.
 
 > - When an offer creator overrides the values that are recommended by the offer data rules, the offer is flagged as non-standard and offer approval workflow will be mandated.
 
@@ -131,27 +130,27 @@ An offer document template can help administrators create offer letters. The off
 
 To create an offer document template, do the following.
 
-1.  Navigate to **Offer management**.
+1.  Go to **Offer management**.
 
 1.  Expand the **Library** section in the left navigation pane and go to **Templates**.
 
-    On the **Templates** page, document templates that have already been defined are be listed.
+    The **Templates** page will display a list of document templates that have already been defined.
 
-1.  To create a new document template, click **+ New Template**.
+1.  To create a new document template, click **New Template**.
 
 1.  Enter a unique name for the template and click **Create**.
 
-1.  Use the rich text editor to insert or edit the offer document content. You can insert tables, image, and hyperlinks using the options available at the top of the text editor.
+1.  Use the rich text editor to insert or edit the offer document content. You can insert tables, images, and hyperlinks using the options available at the top of the text editor.
 
 1.  You can insert offer data placeholders in the offer template document by:
 
     - Dragging and dropping from the right pane.
 
     - Hashtag the offer data placeholder directly into position. Type **\#** and then start typing the name of the offer data
-        placeholder. Options will appear in the drop-down list. Click or press **Enter** to insert the offer data placeholder
+        placeholder. Options will appear in the drop-down list. Click or press **Enter** to insert the offer data placeholder.
 
     >[!NOTES]
-    > - To associate a placeholder to the offer document template yet not expose its value to the candidate, hover over the offer data placeholder and click the **Pin** icon. This will push the placeholder to the **Pinned offer data** section of the offer document template. To unpin, follow the same steps but click **Unpin** in the list of offer data placeholders.
+    > - To associate a placeholder to the offer document template without exposing its value to the candidate, hover over the offer data placeholder and click the **Pin** icon. This will push the placeholder to the **Pinned offer data** section of the offer document template. To unpin, follow the same steps but click **Unpin** in the list of offer data placeholders.
 
     > - To view the list of active offer data placeholders, switch to the **Active** tab in the right pane.
 
@@ -173,17 +172,17 @@ To create an offer document template, do the following.
 > You can delete any offer document template that is not part of an existing offer package template.
 
 
-## Offer Package templates
+## Offer package templates
 
 Offer packages are the offer artifacts that are shared with the candidate and consist of a combination of one or more offer document templates. To create an offer package, do the following.
 
 1.  Go to **Offer management**.
 
-1.  Navigate to **Packages** from the left navigation pane.
+1.  Go to **Packages** from the left navigation pane.
 
     A list of active package templates that are available for offer creators to use is displayed.
 
-1.  To create a new offer package, click **+ New Package**.
+1.  To create a new offer package, click **New Package**.
 
 1.  Enter a unique name and click **Create**.
 
@@ -200,10 +199,10 @@ Offer packages are the offer artifacts that are shared with the candidate and co
     
 1.  Click **Done** to return to **Package management**.
 
-    You can configure the sequence of the documents and also mark whether or
-    not the specific offer document is required during offer creation or not,
-    the offer creator will have an option to delete the documents marked as Not
-    required.
+    You can configure the sequence of the documents and also mark whether
+    the specific offer document is required during offer creation. The
+    offer creator will have an option to delete the documents marked as **Not
+    required**.
 
 1. To save the offer package template so that it's usable by all offer creators, click **Save and publish**.
 
@@ -214,12 +213,12 @@ Offer packages are the offer artifacts that are shared with the candidate and co
 
 There are several parts of the offer creation process that can be configured by an Attract administrator.
 
-- **Offer approvals**: Choose whether offer approvals are required before the offer can be sent to the candidate. As an administrator, you can also decide whether all offer approvals will happen in a sequential manner or parallel approval workflow. You can also mandate whether offer approvers have to comment along with their offer approval. Offer approvals are mandatory for all non-standard
+- **Offer approvals** - Choose whether offer approvals are required before the offer can be sent to the candidate. As an administrator, you can also decide whether all offer approvals will happen in a sequential manner or parallel approval workflow. You can also mandate whether offer approvers must add a comment along with their offer approval. Offer approvals are mandatory for all non-standard
 offers.
 
-- **Candidate’s offer experience**: As administrator, you can choose to set whether all offers have an expiration date or not, and if so, what the default offset for the expiry date should be. You can also configure whether candidates can decline the offers or not.
+- **Candidate’s offer experience** - As administrator, you can choose to set whether all offers have an expiration date, and if so, what the default offset for the expiration date should be. You can also configure whether candidates can decline an offer.
 
-- **E-Signatures**: Currently, the only option available is for candidates to type their name in the offer package while accepting the offer. We will introduce partner integrations with other electronic signature providers in the future.
+- **e-Signatures** - Currently, the only electronic signature option available is for candidates to type their name in the offer package while accepting the offer. We will introduce partner integrations with other electronic signature providers in the future.
 
 
-To learn more about the offer creation process, please read [Creating, approving, and signing offers](./creating-offers.md).
+To learn more about the offer creation process, see [Creating, approving, and signing offers](./creating-offers.md).
