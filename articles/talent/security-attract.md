@@ -46,7 +46,7 @@ Attract provides five basic user roles:
 
 The Administrator role is the only role that has permission to add other users and change their permissions.
 
-- **Add** – In the Admin center, on the **User permissions** tab, select **Assign user**, search for the user to add, and then assign permissions to that user.
+- **Add** – In the Admin center, on the **User permissions** tab, select **Assign roles**, search for the user to add, and then assign permissions to that user.
 - **Edit** – Search for the user, or find the user in the list, and then select **Edit** to changes his or her permissions.
 - **Delete** – If you delete a user's permissions, you don't remove the user from the system. However, you do limit the user's permissions in Attract. For example, Hilda has been assigned to the Hiring Manager role, and she is added to a job as a hiring manager. If Hilda is later removed from the Hiring Manager role, she remains a hiring manager on the job and still has access to that job. However, she can't create other jobs.
 
