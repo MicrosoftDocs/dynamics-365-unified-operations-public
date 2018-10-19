@@ -73,42 +73,28 @@ When the Offer management app is turned on, any user with the role of hiring man
 
 ## Approve an offer
 
-Most offers need to go through an approval process to make sure it meets the
-necessary standards. If an offer were made non-standard, i.e., the offer creator
-did not follow the offer data rules and overrode the values in the offer, the
-approval process is mandated. Steps to send an offer for approval:
+Most offers need to go through an approval process to make sure the offer meets the necessary standards. If an offer does not meet standards, for example if the offer creator didn't follow the offer data rules and overrode the values in the offer, the approval process will be mandated. To send an offer for approval, do the following.
 
-1.  When the offer is in a draft state, use the **approver panel** on the screen
-    to add approvers. **Hiring Managers are added as approver by default**. You
-    can choose any user from your organization as an approver for the offer.
+1.  When the offer is in a draft state, add approvers on the **Approver panel**. 
+    >[!NOTE]
+    > Hiring Managers are added as approver by default. You can choose any user from your organization as an approver for the offer.
 
-2.  Depending on the approval configuration by the admin, you can have approvers
-    in a sequential or on a parallel approval method.
+1.  If needed, assign approvers in a sequential approval method or on a parallel approval method. This option will only be available if it was configured as such by the administrator.
+    >[!NOTE]
+    > If the approval process is sequential, you can edit the sequence of approvers if needed.
 
-3.  If the approval process is sequential, you can choose to edit the sequence
-    of approvers
+1.  Once you are done defining the approval chain, you can edit the content of the approval email if needed and then send the notification out to the approvers. Click **Send to approvers**.
+    >[!NOTE]
+    > If the offer was non-standard, you are required to provide a justification.
 
-4.  Once the approval chain is identified, click **Send to approvers**
+1.  If the recruiter chooses to skip an approver, they can enter a note and skip to the next approver.
 
-5.  If the offer was non-standard, the offer creators needs to justify the
-    non-standard nature of the offer.
+Approvers will receive an email asking them to approve the offer. They can click the link in the email to open the offer, review the
+entire offer package, and either approve it or send it back to the offer creator. Offer approvers will need to add an additional note if they are rejecting the offer package for further edits. 
 
-6.  You can now edit the content of the approval email and send the notification
-    out to the approvers.
+In cases where there is a new version of the offer created before the approver acts, the approver won’t be able to approve or reject the offer.
 
-7.  The offer creator is returned If the recruiter chooses to **skip an
-    approver**, they can record a note and skip them to the next approver.
-
-Next-up, the approvers will receive an email for them to approve the offer. They
-can click the link in the email to open the offer approver view, look at the
-entire offer package and approve or send the offer back to the offer creator.
-Offer approvers also need to add an additional note if the offer package was
-being rejected for further edits. If the offer creator had created a new version
-of the offer before the approver could act, they won’t be able to approve or
-reject the offer.
-
-Offer versioning 
------------------
+## Offer versioning 
 
 Once the offer has been approved or sent back to make further edits, offer
 creator can choose the **Enable editing** option to create a new version of the
