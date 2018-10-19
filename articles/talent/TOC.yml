@@ -6,7 +6,9 @@
     items:
     - name: What's new or changed
       hreg: whats-new.md
-      items:
+      items:  
+      - name: What's new or changed in Dynamics 365 for Talent Core HR (October 19, 2018)
+        href: whats-new-talent-october-19.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (October 8, 2018)
         href: whats-new-talent-october-8.md
       - name: What's new or changed in Dynamics 365 for Talent Core HR (October 1, 2018)
