@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Hiring processes
+title: Activities in the processes
 description: This topic provides information about the various types of activities that can be used in the hiring process.
 author: 
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Hiring processes
+# Activities in the hiring processes
 
 [!include[banner](../includes/banner.md)]
 
@@ -67,7 +67,7 @@ The Interview activity is optional. This activity has three components: Candidat
 - To live-stream or have a conference call by using Skype for Business, set the **Online meeting** field to **Skype for Business**. The correct **Join Skype Meeting** link will then be added in the interview meeting request.
 - To send email to candidates to finalize the schedule, set the **Send mail to candidate** option to **On**. If you set the option to **Off**, candidates will receive the interview schedule only when they sign in to the Candidate portal.
 
-The Feedback component lets people enter recommendations for an applicant. They can also enter any feedback comments that they have. If you turn on the **Inherit feedback participants from Hiring Team** option, the recruiter, hiring manager, and interviewers are automatically entered in the Feedback activity. Organizations can allow interviewers to view the feedback of other people before they submit their own feedback. Organizations can also allow interviewers to edit their feedback after they submit it.
+The Feedback component lets people enter recommendations for an applicant. They can also enter any feedback comments that they have. If you turn on the **Inherit feedback participants from Hiring Team** option, the recruiter, hiring manager, and interviewers are automatically entered in the Feedback component. Organizations can allow interviewers to view the feedback of other people before they submit their own feedback. Organizations can also allow interviewers to edit their feedback after they submit it.
 
 ## PowerApps activity
 
