@@ -74,9 +74,9 @@ If you encounter issues, see the "Known issues and limitations" section at the e
 
 ## Before you begin
 
-### Supported SQL collation
+### Supported SQL Server collation
 
-The only supported collation for Finance and Operations databases in the cloud is **SQL_Latin1_General_CP1_CI_AS**.  Please ensure your SQL Server and database collations in development environments are set to this, and that any golden configuration environments that are published to Sandbox are also of this collation.
+The only supported collation for Finance and Operations databases in the cloud is **SQL_Latin1_General_CP1_CI_AS**.  Please ensure your SQL Server and database collations in development environments are set to this, and that any configuration environments that are published to Sandbox are also of this collation.
 
 ### Document the values of encrypted fields
 
