@@ -78,7 +78,7 @@ Azure AD sign-in is intended only for internal candidates. Therefore, it works o
 
 ## Create and maintain a profile
 
-After candidates sign in to the career site, they can select **My profile** on the navigation bar at the top of the page to create and maintain their profile. The profile includes personal information, information about work experience, education details, documents, link, and information about skill sets. After a profile is created, it can be used to apply for jobs that the candidate is interested in. Profiles also help Attract recommend the right jobs to candidates.
+After candidates sign in to the career site, they can select **My profile** on the navigation bar at the top of the page to create and maintain their profile. The profile includes personal information, information about work experience, education details, documents, links, and information about skill sets. After a profile is created, it can be used to apply for jobs that the candidate is interested in. Profiles also help Attract recommend the right jobs to candidates.
 
 ## Find the right job
 
@@ -99,4 +99,4 @@ After candidates apply for one or more jobs, they can select **Applications** on
 
 ## Internal jobs
 
-Jobs that are marked as internal and posted to the Attract career site don't appear on the career site yet. They are accessible only via the direct **Apply** URL that can be copied from the Attract application.
+Currently, jobs that are marked as internal and posted to the Attract career site don't appear on the career site. They are accessible only via the direct **Apply** URL that can be copied from the Attract application.
