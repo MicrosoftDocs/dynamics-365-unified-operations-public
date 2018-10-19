@@ -64,7 +64,7 @@ The Microsoft Service Engineering team will take your environment offline, compl
 Here is the list of requirements and conditions of operation for a database refresh:
 
 - All previous database refresh requests for the environment are marked as either *Succeeded*, *Failed*, or *Canceled*.
-- Requests must be submitted 5 hours before the desired downtime window, to help guarantee that resources will be available to complete the request.
+- Requests must be submitted 5 hours before the desired downtime window, to help ensure that resources will be available to complete the request.
 - A refresh erases the existing database in the target environment. The existing database can't be recovered after the refresh is completed.
 - The target environment will be unavailable until the refresh process is completed.
 - The refresh will affect only the Finance and Operations and Financial Reporting databases.
