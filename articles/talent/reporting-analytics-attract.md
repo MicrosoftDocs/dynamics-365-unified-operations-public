@@ -74,7 +74,7 @@ To learn more about security roles, see [Security and role management in Attract
 
 ## Cross-filtering
 
-Users can filter a report, based on data that is selected in a visual. For example, if **Internal** is selected in an applicant type visual, the report is filtered for internal applicants. Therefore, the **Active applicants** tile is filtered for internal active applicants. In the **Rejected applicants** visual, the part that corresponds to internal rejected applicants is highlighted.
+Users can filter a report, based on data that is shown in a visual. For example, if **Internal** is selected as an applicant type, the report is filtered down to show only internal applicants. Therefore, the **Active applicants** tile is filtered for internal active applicants, whereas the **Rejected applicants** visual is filtered for  internal rejected applicants
 
 ## Export to Excel
 
