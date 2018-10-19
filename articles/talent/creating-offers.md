@@ -87,7 +87,7 @@ Most offers need to go through an approval process to make sure the offer meets 
     >[!NOTE]
     > If the offer was non-standard, you are required to provide a justification.
 
-1.  If the recruiter chooses to skip an approver, they can enter a note and skip to the next approver.
+1.  If the offer creator chooses to skip an approver, they can enter a note and skip to the next approver.
 
 Approvers will receive an email asking them to approve the offer. They can click the link in the email to open the offer, review the
 entire offer package, and either approve it or send it back to the offer creator. Offer approvers will need to add an additional note if they are rejecting the offer package for further edits. 
@@ -96,86 +96,62 @@ In cases where there is a new version of the offer created before the approver a
 
 ## Offer versioning 
 
-Once the offer has been approved or sent back to make further edits, offer
-creator can choose the **Enable editing** option to create a new version of the
-offer. The new offer version has all the offer data values and the list of
-approvers carried over from the last version. Users can switch back and forth
-between different offer versions if they are the creator or as an approver, that
-version was shared with them for approval. Users can also choose to **delete a
-specific draft offer version** to go back to the previous state.
+Once the offer has been approved or sent back for further edits, you can choose the **Enable editing** option to create a new version of the offer. The new version of the offer version has all the offer data values and the list of approvers carried over from the last version. 
 
-Send offer to candidate 
-------------------------
+Approvers can switch back and forth between different offer versions if the versions were shared with them for approval. Also, an approver or offer creator can choose to delete a specific draft offer version to go back to the previous state.
 
-When the offer is saved and approved and ready to be sent to the candidate, the
-offer creator can click **Send to candidate**.
 
-1.  You can view the list of documents that are part of the offer package that
-    will be sent to the candidate.
+## Send an offer to a candidate 
 
-2.  You can also specify an offer expiration date at this point. Candidates are
-    expected to accept or decline the offer before the end of expiration date.
-    They will be given a reminder 48 hours before the offer expires.
+When the offer is saved, approved, and ready to be sent to the candidate, click **Send to candidate**.
 
-3.  There maybe additional documents that you may want as part of the offer
-    acceptance process. Choose this step to list the document type required.
+There are several actions you can take before sending the offer to the candidate.
+-  You can view the list of documents that are part of the offer package that will be sent to the candidate.
 
-4.  Lastly, you can view and edit the email template as necessary for candidates
-    to view.
+-  You can specify an offer expiration date. Candidates are expected to accept or decline the offer before the end of expiration date.  The candidate will be sent a reminder 48 hours before the offer expires.
 
-5.  When ready, click Send to Candidate. At this point, the candidate receives
-    an email that an offer is waiting for them!
+-  There may be additional documents that you want to be included in the offer acceptance process. You will have the option to list the document type required.
 
-Candidate’s offer actions 
---------------------------
+-  Lastly, you can view and edit the email template as needed.
 
-Once the candidate has been notified that the offer has been shared with them,
-they can click the link in their email and go to their application dashboard and
-view the offer.
+When the offer is ready and you click **Send to candidate**, the candidate will receive an email that an offer is waiting for them/
 
-1.  They can view the application dashboard for their incomplete activities.
 
-2.  To view the offer, candidate can choose the View offer option to go the
-    offer package view. They can read through all the offer package documents
+## Candidate’s actions after receiving an offer
 
-3.  Candidates are also able to download the offer package in a zip format.
+Once the candidate has been notified that an offer has been shared with them, they can click the link in their email to go to their application dashboard and view the offer. The dashboard will show the candidate any activities that they still need to complete.
 
-4.  To accept the offer, candidates can click **Jump to signature** for each
+1.  To view the offer and all related documents, the candidate must click **View offer**.
+
+    Candidates can also download the offer package in a .zip format.
+
+1.  To accept the offer, the candidates must click **Jump to signature** for each
     document that’s part of the offer package.
 
-5.  Once all the documents have been individually signed and accepted, candidate
-    can choose to finish the acceptance process by clicking **Accept Offer** at
-    the top of the screen.
+1.  Once all the documents have been individually signed and accepted, the candidate
+    must choose to finish the acceptance process by clicking **Accept Offer** at
+    the top of the page.
 
-6.  If the candidate chooses to decline the offer, candidate can click **Decline
-    the offer** button on the top and select an appropriate reason, add a
-    comment as necessary and click Decline.
+1.  To decline the offer, the candidate must click **Decline the offer** on the top of the page, select an appropriate reason, add a
+    comment as necessary, and then click **Decline**.
 
-7.  Once they have accepted or declined the offer, they can continue to stay on
-    the offer view or get back to the application dashboard.
+1.  Once they have accepted or declined the offer, the candidate can continue to stay in the offer view or go back to the application dashboard.
 
-8.  If there were other documents requested as part of the offer acceptance
-    process, candidate can choose to **upload documents** as necessary and tag
-    them to the document type requested.
+1.  If there were other documents requested as part of the offer acceptance process, the candidate should choose to upload the documents as necessary and tag them to the document type requested.
 
-9.  Once all the documents have been uploaded and the offer package signed,
-    offer creator has been notified of the candidate accepting or declining the
-    offer.
+1.  The offer creator will be notified once all the documents have been uploaded and the offer package has been signed.
 
-Withdrawing an offer
---------------------
 
-An offer can be withdrawn from a candidate at any point in time for various
-reasons. Offer creators can choose to withdraw the offer by using the option
-under **…** options and clicking **Withdraw the offer**. Offer creators is given
-an option whether they have already contacted the candidate about this change in
-status. If they hadn’t contacted the candidate yet, they can send an e-mail to
-the candidate informing them of further actions. The offer will no longer
-accessible by the candidate.
+## Withdrawing an offer
 
-Closing an offer 
------------------
+An offer can be withdrawn from a candidate at any point in time for various reasons. 
+1.  Withdraw the offer by clicking **…**, and then **Withdraw the offer**. 
 
-Once an offer has been accepted, declined or withdrawn with no further actions
-needed, offer creator can choose to **close the offer** so that no further edits
-can be made to this offer package.
+2. A message will appear asking whether the candidate has been contacted about the change in status. If the candidate hasn't been contacted yet, you will have the option to send an e-mail to the candidate informing them of further actions. 
+
+   The offer will no longer accessible by the candidate.
+
+
+## Closing an offer 
+
+Once an offer has been accepted, declined, or withdrawn with no further actions needed, you can choose to close the offer so that no further edits can be made to this offer package.
