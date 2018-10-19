@@ -3,7 +3,7 @@
 
 title: Copy Finance and Operations databases from SQL Server to production Azure SQL Database environments
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from a SQL Server–based development, build, or demo environment (Tier 1 or one-box) to an Azure SQL database–based sandbox UAT environment (Tier 2 or higher).
-author: maertenm
+author: laneswenka
 manager: AnnBe
 ms.date: 10/19/2018
 
@@ -25,7 +25,7 @@ ms.custom: 256464
 ms.assetid: 4cc5f2aa-dd4e-4981-9607-e75fd1d57941
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: maertenm
+ms.author: laneswenka
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -43,7 +43,7 @@ Here is the supported procedure for bringing a golden database into a production
 
 1. A customer or partner exports the database from SQL Server.
 2. The customer or partner imports the database into a sandbox environment that runs on an Azure SQL database.
-3. In Microsoft Dynamics Lifecycle Services (LCS), the customer or partner submits a service request of the **Other request** type to ask that the Microsoft Dynamics Support Engineering (DSE) team move the sandbox database to the production environment.
+3. In Microsoft Dynamics Lifecycle Services (LCS), the customer or partner submits a service request of the **Sandbox to Production** type to ask that the Microsoft Dynamics Support Engineering (DSE) team move the sandbox database to the production environment.
 4. The DSE team copies the database from the sandbox environment to the production environment.
 
 > [!NOTE]
@@ -355,7 +355,7 @@ If you're using Financial Reporting, which was previously named Management Repor
 
 ## Submit a service request to copy the database
 
-To copy the golden database to a production environment, you must submit a service request of the **Other request** type in LCS. In this request, you ask that Microsoft run the copy action.
+To copy the golden database to a production environment, you must submit a service request of the **Sandbox to Production** type in LCS. In this request, you ask that Microsoft run the copy action.
 
 > [!NOTE]
 > You can't use a request of the **Database refresh request** type, because the request involves copying to a production environment.
@@ -364,13 +364,12 @@ To copy the golden database to a production environment, you must submit a servi
 
     [![Work items](./media/lcsworkitemsmenu.png)](./media/lcsworkitemsmenu.png)
 
-2. On the **Work items** page, select **Add**, and then select **Other request**.
-3. In the **Other requests** dialog box, follow these steps:
+2. On the **Work items** page, select **Add**, and then select **Sandbox to Production**.
+3. In the **Sandbox to Production** dialog box, follow these steps:
 
     1. In the **Environment name** field, select the production environment.
     2. Set the **Preferred downtime start date** and **Preferred downtime end date** fields. The end date must be at least one hour after the start date. To help guarantee that resources are available to run the request, submit your request at least 24 hours before your preferred downtime window.
-    3. In the **Request** field, enter the following details: **This is a request for a golden database copy from the sandbox environment &lt;source sandbox environment name&gt; to production. I acknowledge that this will overwrite the database currently in production.**
-    4. Select the check boxes at the bottom to agree to the terms.
+    3. Select the check boxes at the bottom to agree to the terms.
 
 ## Additional steps for Retail environments
 
