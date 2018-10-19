@@ -48,7 +48,7 @@ The Administrator role is the only role that has permission to add other users a
 
 - **Add** – In the Admin center, on the **User permissions** tab, select **Assign roles**, search for the user to add, and then assign permissions to that user.
 - **Edit** – Search for the user, or find the user in the list, and then select **Edit** to changes his or her permissions.
-- **Delete** – If you delete a user's permissions, you don't remove the user from the system. However, you do limit the user's permissions in Attract. For example, Hilda has been assigned to the Hiring Manager role, and she is added to a job as a hiring manager. If Hilda is later removed from the Hiring Manager role, she remains a hiring manager on the job and still has access to that job. However, she can't create other jobs.
+- **Delete** – If you delete a user's permissions, you don't remove the user from the system. However, you do limit the user's access and privleges in Attract. For example, Hilda has been assigned to the Hiring Manager role, and she is added to a job as a hiring manager. If Hilda is later removed from the Hiring Manager role, she remains a hiring manager on the job and still has access to that job. However, she can't create other jobs.
 
 The following sections provide a high-level description of each role. The tables later in the topic provide more detailed information.
 
@@ -116,7 +116,7 @@ The following privileges apply to the job-specific data for applicants and the a
 
 ## Process templates
 
-The following privileges apply to hiring process templates. The ability of team members to create and edit templates is configured in Template management in the Admin center. If template management is turned on, recruiters and hiring managers can create and edit their own process templates. If template management is turned off, only admins can create and edit process templates. The following table assumes that template management has been turned on.
+The following privileges apply to hiring process templates. The ability of team members to create and edit templates is configured in **Template management** in the Admin center. If template management is turned on, recruiters and hiring managers can create and edit their own process templates. If template management is turned off, only admins can create and edit process templates. The following table assumes that template management has been turned on.
 
 | Data              | Recruiter                                           | Hiring Manager                                      | Interviewer |
 |-------------------|-----------------------------------------------------|-----------------------------------------------------|-------------|
