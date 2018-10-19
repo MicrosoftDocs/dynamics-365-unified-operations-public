@@ -131,7 +131,7 @@ Here are some typical examples of service requests that will be denied:
 | Package application            | Production | Deployable package application | Five hours | Five hours |
 | Upgrade                        | One Tier 2 sandbox and production | A customer who is live in production requests an upgrade to the latest version of Finance and Operations. | Five business days | Eight hours |
 | Database point-in-time restore | Any Tier 2 or higher sandbox | Database point-in-time restore | Five hours | One hour |
-| Database refresh               | From production to any Tier 2 or higher sandbox, or between any two Tier 2 or higher sandboxes | Database refresh | Five hours | One hour |
+| Database refresh               | From production to any Tier 2 or higher sandbox, or between any two Tier 2 or higher sandboxes | Database refresh | Twenty-four hours | One hour |
 | Sandbox to Production          | Tier 2 or higher sandbox to Production | Sandbox to Production | 5 hours | one hour |
 | Other                          | Production | Database point-in-time restore | Five hours | One hour |
 |                                | Production | Database refresh | Five hours | One hour |
