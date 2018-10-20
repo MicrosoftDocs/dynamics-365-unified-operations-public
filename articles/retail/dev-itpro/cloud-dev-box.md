@@ -51,11 +51,28 @@ If you don’t have admin access in the environment, you will not be able to tes
     Filename: redirection.config
     Error: Cannot read configuration file
     ``` 
-    To resolve this issue:
-    1. Close Visual Studio.
-    2. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files because you will copy the **applicationhost.config** file to a new location in step *iv*.
-    3. Start Visual Studio again with the Cloud POS project. The **%userprofile%\Documents\IISExpress\config** folder will be recreated with the default config files.
-    4. Copy the **applicationhost.config** file from the folder that you renamed in step *ii*, to the folder created in step *iii*. 
+
+**To resolve this issue:**
+
+1. Close Visual Studio.
+2. Copy the **aspnet.config** and **redirection.config** to **%userprofile%\Documents\IISExpress\config**.
+3. Open the **applicationhost.config** from **%userprofile%\Documents\IISExpress\config**.
+4. In the **applicationhost.config** change the physcialPath of RetailCloudPos site to point to your SDK location.
+   Ex: physicalPath="K:\RetailSDK\POS\Web". The overall section will look like below:
+   
+```
+   <site name="RetailCloudPOs" id="4" serverAutoStart="true">
+        <application path="/" applicationPool="Dynamics365">
+            <virtualDirectory path="/" physicalPath="K:\RetailSDK\POS\Web" />
+        </application>
+```
+5. Save the changes to **applicationhost.config** 
+6. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files because you will copy the                      **applicationhost.config** file to a new location in step *8*.
+7. Start Visual Studio again with the Cloud POS project. The **%userprofile%\Documents\IISExpress\config** folder will be recreated         with the default config files.
+8. Copy the **applicationhost.config** file from the folder that you renamed in step *6*, to the folder created in step *7*. 
+9. Right click the Pos.Web project and click the Properties.
+10. In the properties window, click the Web tab and click the Start URL radio button and set the Start URL as your Cloud POS URL.           Ex:"https://usnconeboxax1pos.cloud.onebox.dynamics.com"
+11. Save the changes.
 
 ## Install the Developer topology prerequisites
 
