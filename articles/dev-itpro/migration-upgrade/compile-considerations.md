@@ -10,7 +10,7 @@ ms.date: 10/19/2018
 
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
@@ -26,8 +26,8 @@ ms.custom: 102343
 ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tabell
-ms.search.validFrom: 2016-05-31
+ms.author: dfroslie
+ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Platform update 1
 
 ---
