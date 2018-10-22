@@ -69,7 +69,7 @@
       href: attract-overview.md
     - name: Creating a process template in Attract
       href: Process-templates-Attract.md
-    - name: Creating, approving and posting jobs in Attract
+    - name: Creating, approving, and posting jobs in Attract
       href: Creating-jobs-Attract.md
     - name: Sourcing with Talent Pools
       href: attract-talent-pools.md
@@ -83,15 +83,17 @@
       href: career-site.md
     - name: Setting up offer management
       href: offer-setup.md
+    - name: Creating, approving, and signing offers
+      href: creating-offers.md
     - name: Creating and managing email templates
       href: email-templates.md
-    - name: Reporting and Analytics
+    - name: Reporting and analytics
       href: Reporting-Analytics-Attract.md
     - name: Security and role management in Attract
       href: security-attract.md
     - name: Admin settings in Attract
       href: Admin-Settings-Attract.md
-    - name: Intelligent Recommendations
+    - name: Intelligent recommendations
       href: Intelligent-Recommendations.md
     - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
