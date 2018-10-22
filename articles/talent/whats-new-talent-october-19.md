@@ -50,11 +50,11 @@ The security duty that controls access to this functionality is:
 - Privilege: Maintain leave and absence requests for all workers.
 
 ## Other changes
-
-- Changes to worker hire actions that are "stuck" in **Workflow complete** state.
-- Employment record can be created without an employment start date.
+The following updates have been made in this release:
+- Changes to worker hire actions so that they are no longer "stuck" in **Workflow complete** state.
+- Employment record can now be created without an employment start date.
 - Dynamics 365 Talent registration date for a course shown in Employee self-service is not correct based on time zone offset.
-- Import Excel file twice without any change errors using **Employee Entity**.
+- Excel files can be imported multiple times without any errors using **Employee Entity**.
 
 ## Known issue
 
