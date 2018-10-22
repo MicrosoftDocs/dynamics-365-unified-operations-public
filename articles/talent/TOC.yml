@@ -67,6 +67,32 @@
     items:
     - name: Attract features and capabilities
       href: attract-overview.md
+    - name: Creating a process template in Attract
+      href: Process-templates-Attract.md
+    - name: Creating, approving and posting jobs in Attract
+      href: Creating-jobs-Attract.md
+    - name: Sourcing with Talent Pools
+      href: attract-talent-pools.md
+    - name: Sourcing with LinkedIn Recruiter
+      href: attract-linked-in-recruiter.md
+    - name: Hiring Process activities in Attract 
+      href: activities-attract.md
+    - name: Extensibility
+      href: extensibility-attract.md
+    - name: Career site and candidate experiences
+      href: career-site.md
+    - name: Setting up offer management
+      href: offer-setup.md
+    - name: Creating and managing email templates
+      href: email-templates.md
+    - name: Reporting and Analytics
+      href: Reporting-Analytics-Attract.md
+    - name: Security and role management in Attract
+      href: security-attract.md
+    - name: Admin settings in Attract
+      href: Admin-Settings-Attract.md
+    - name: Intelligent Recommendations
+      href: Intelligent-Recommendations.md
     - name: Create an engaging onboarding experience
       href: create-onboarding-experience.md
   - name: Motivate employees
