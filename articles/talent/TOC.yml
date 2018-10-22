@@ -80,6 +80,8 @@
       href: career-site.md
     - name: Setting up offer management
       href: offer-setup.md
+    - name: Creating, approving and signing offers
+      href: creating-offers.md
     - name: Creating and managing email templates
       href: email-templates.md
     - name: Reporting and Analytics
