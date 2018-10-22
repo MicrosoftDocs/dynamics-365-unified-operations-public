@@ -5,7 +5,7 @@ title: Development in cloud-hosted development environments without admin access
 description: This topic demonstrates the configuration steps for Retail developers working on cloud-hosted development machines.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 07/13/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -52,13 +52,13 @@ If you don’t have admin access in the environment, you will not be able to tes
     Error: Cannot read configuration file
     ``` 
 
-**To resolve this issue:**
+**To resolve this issue**
 
 1. Close Visual Studio.
-2. Copy the **aspnet.config** and **redirection.config** to **%userprofile%\Documents\IISExpress\config**.
-3. Open the **applicationhost.config** from **%userprofile%\Documents\IISExpress\config**.
-4. In the **applicationhost.config** change the physcialPath of RetailCloudPos site to point to your SDK location.
-   Ex: physicalPath="K:\RetailSDK\POS\Web". The overall section will look like below:
+2. Copy the **aspnet.config** and **redirection.config** files to **%userprofile%\Documents\IISExpress\config**.
+3. Open the **applicationhost.config** file in the **%userprofile%\Documents\IISExpress\config** folder.
+4. In **applicationhost.config**, change the physcialPath of RetailCloudPos to point to your SDK location.
+   For example, physicalPath="K:\RetailSDK\POS\Web". The overall section will look like the following:
    
 ```
    <site name="RetailCloudPOs" id="4" serverAutoStart="true">
@@ -67,11 +67,11 @@ If you don’t have admin access in the environment, you will not be able to tes
         </application>
 ```
 5. Save the changes to **applicationhost.config** 
-6. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files because you will copy the                      **applicationhost.config** file to a new location in step *8*.
+6. Rename the **%userprofile%\Documents\IISExpress\config** folder. Do not delete the files because you will copy the                      **applicationhost.config** file to a new location in **step 8**.
 7. Start Visual Studio again with the Cloud POS project. The **%userprofile%\Documents\IISExpress\config** folder will be recreated         with the default config files.
-8. Copy the **applicationhost.config** file from the folder that you renamed in step *6*, to the folder created in step *7*. 
-9. Right click the Pos.Web project and click the Properties.
-10. In the properties window, click the Web tab and click the Start URL radio button and set the Start URL as your Cloud POS URL.           Ex:"https://usnconeboxax1pos.cloud.onebox.dynamics.com"
+8. Copy the **applicationhost.config** file from the folder that you renamed in **step 6**, to the folder created in **step 7**. 
+9. Right-click the Pos.Web project and click **Properties**.
+10. In the **Properties** window, click the **Web** tab. Select the **Start URL radio** option and set the start URL as your Cloud POS URL. For example, `https://usnconeboxax1pos.cloud.onebox.dynamics.com`.
 11. Save the changes.
 
 ## Install the Developer topology prerequisites
