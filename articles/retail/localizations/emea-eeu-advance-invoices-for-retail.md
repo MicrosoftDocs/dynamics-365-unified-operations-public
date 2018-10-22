@@ -91,13 +91,13 @@ It is possible to print an Advance invoices from POS on a windows printer connec
 
 Follow the steps below to enable printing documents from POS on a windows printer connected to the hardware station: 
 
-- Go to **_Retail > Channel setup > POS setup > POS profiles > Hardware profiles_**
-- Select a hardware profile related to the store where the printer is used
-- Update settings either in the section **_Printer_** or **_Printer 2_** 
+- Go to **_Retail > Channel setup > POS setup > POS profiles > Hardware profiles_**.
+- Select a hardware profile related to the store where the printer is used.
+- Update settings either in the section **_Printer_** or **_Printer 2_**.
 
-  - Select option **Windows driver** in the field
+  - Select option **Windows driver** in the field.
 
-  - Specify name of the printer in the field **Device name**
+  - Specify name of the printer in the field **Device name**.
 
-- Go to **_Retail > Retail IT > Distribution schedule_**
-- Select the **_Job 1090_** and click button **Run now**
+- Go to **_Retail > Retail IT > Distribution schedule_**.
+- Select the **_Job 1090_** and click button **Run now**.
