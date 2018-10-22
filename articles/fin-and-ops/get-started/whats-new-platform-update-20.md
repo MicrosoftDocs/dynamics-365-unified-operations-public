@@ -164,7 +164,3 @@ If the **Personalization** toolbar is open, the page is still read-only but is n
 
 For more information about personalization, see [Personalize the user experience](personalize-user-experience.md).
 
-## Updates to the Performance software development kit
-As of Platform update 20, you don’t need to create certificates or sign in to your test environment using Remote
-Desktop to configure the Performance software development kit (Perf SDK). The new Perf SDK uses the Azure Active
-Directory (AAD) application to authenticate test users.
