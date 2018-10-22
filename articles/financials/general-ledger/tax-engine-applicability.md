@@ -152,7 +152,7 @@ OR(
     )
 )
 ```
-## Lookup for dynamic applicability rules
+### Lookup for dynamic applicability rules
 Many applicability rules depend on the runtime data. For example, some tax components are only applicable for a certain good or service, so a different type of tax transaction results in a different tax rate. 
 
 Select **CESS**, click **Lookups**.
