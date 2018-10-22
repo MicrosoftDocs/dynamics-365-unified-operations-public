@@ -120,20 +120,26 @@ All users have a common view of candidate profiles. Select the row for a candida
 
 From the search results or a talent pool, you can push a candidate to any active job that you're hiring for. To push a candidate to a specific job, follow these steps.
 
-1. Find the candidate by using the search option, and open his or her profile. Alternatively, open the talent pool from the **My talent pools** tab, search for the candidate in your talent pool, and then open his or her profile.
-2. On the candidate's profile page, select **+ Add to job** in the upper right. A list of jobs that you belong to the hiring team for, as either a recruiter or a hiring manager, is shown.
-3. Select the job to add the candidate to, and then select **Add**. You can also search for the job by using the search field at the top of the **Add candidate to job** dialog box.
+1. Find the candidate by using the search option, and then open his or her profile. Alternatively, open the talent pool from the **My talent pools** tab, search for the candidate in your talent pool, and then open his or her profile.
 
-    If prospecting was enabled for the job, the candidate is added to the Prospect stage.
+1. On the candidate's profile page, select **+ Add to job** in the upper right. 
+     
+     A list of jobs that you belong to the hiring team for, as either a recruiter or a hiring manager, is shown.
 
-    If prospecting wasn't enabled for the job, the candidate is added to the Apply stage. Depending on the job configuration, the candidate might also receive an email where they can view their application.
+1. Select the job to add the candidate to, and then select **Add**. You can also search for the job by using the search field at the top of the **Add candidate to job** dialog box.
 
-Add candidates from a job to a talent pool
----
+    If prospecting was enabled for the job, the candidate is added to the **Prospect** stage.
 
-Often, several good candidates for a job aren't selected. However, you don't want to lose track of them. In this case, you might want to add the candidates to a talent pool so that you can invite them to apply for other upcoming jobs.
+    If prospecting wasn't enabled for the job, the candidate is added to the **Apply** stage. Depending on the job configuration, the candidate might also receive an email where they can view their application.
+
+## Add candidates from a job to a talent pool
+
+Often, several good candidates for a job aren't selected, but you don't want to lose track of them. In this case, you might want to add the candidates to a talent pool so that you can invite them to apply for other upcoming jobs.
 
 1. Go to the job that you want to add a candidate from.
-2. Select the candidate, and open his or her application.
-3. On the application page, select **Add to talent pool**. A list of talent pools that you have access to is shown.
-4. Select or search for the talent pool, and then select **Add** to add the candidate to that talent pool.
+
+1. Select the candidate, and open his or her application.
+
+1. On the application page, select **Add to talent pool**. A list of talent pools that you have access to is shown.
+
+1. Select or search for the talent pool, and then select **Add** to add the candidate to that talent pool.
