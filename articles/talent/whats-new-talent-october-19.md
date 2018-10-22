@@ -43,7 +43,7 @@ Employee time off requests may need to be updated after they are approved throug
  
 ## Allow HR to update time off requests
 
-Similar to the feature above, employee time off requests may need to be updated by HR after they have been previously approved through the workflow. This feature provides the ability for HR users to update time off requests. The capability is enabled in the **People** workspace and on the **Worker** page, using a new option called **View time off**. On those pages, you can view requests and leave transactions with the ability to update.
+Similar to the feature above, employee time off requests may need to be updated by HR after they have been previously approved through the workflow. This feature provides the ability for HR users to update time off requests. The capability is enabled in the **People** workspace and on the **Worker** page, using a new option called **View time off**. On those pages, HR users can view requests and update time off transactions, similar to how managers can perform these actions.
 
 The security duty that controls access to this functionality is:
 - Duty: Maintain worker-specific leave and absence processes.
@@ -53,7 +53,7 @@ The security duty that controls access to this functionality is:
 The following updates have been made in this release:
 - Changes to worker hire actions so that they are no longer "stuck" in **Workflow complete** state.
 - Employment record can now be created without an employment start date.
-- Dynamics 365 Talent registration date for a course shown in Employee self-service is not correct based on time zone offset.
+- The Dynamics 365 Talent registration date for a course shown in Employee self-service now applies the time zone offset to the date.
 - Excel files can be imported multiple times without any errors using **Employee Entity**.
 
 ## Known issue
