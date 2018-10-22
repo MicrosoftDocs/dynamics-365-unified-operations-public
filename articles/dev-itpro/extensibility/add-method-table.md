@@ -6,7 +6,7 @@ title: Add methods to tables through extension
 description: This topic describes how to add a method to a table by using an extension.
 author: ivanv-microsoft
 manager: AnnBe
-ms.date: 10/16/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
