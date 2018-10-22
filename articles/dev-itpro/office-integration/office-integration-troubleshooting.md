@@ -85,7 +85,7 @@ To check processing time in the Excel Add-in versus the server/service, follow t
 
 ### Why is the Export to Excel functionality limited to 10,000 records (before PU22)?
 
-Prior to Platform Update 22, the Export to Excel functionality is limited to 10,000 records. This limitation is in place because the export process uses the form from which data is being exported to provide the following records with fields and data that can't be obtained otherwise: formatted values, calculated values, and temporary table data. The fact that the form is used means that the export occurs inside the client process that is shared by all the users on a given computer. During the export, those other users are blocked from interacting with the client. 
+Prior to Platform Update 22, the Export to Excel functionality is limited to 10,000 records. This limitation is in place because the export process uses the form from which data is being exported to provide the following records with fields and data that can't be obtained otherwise: formatted values, calculated values, and temporary table data. Since the form is used during the export, it occurs inside the client process that is shared by all the users on a given computer. During the export, those other users are blocked from interacting with the client. 
 
 With Platform Update 22 and onwards, Export to Excel has a progress dialog and is no longer a blocking process for other users, so larger datasets can be exported. Exporting data via Export to Excel will be slower than using the Excel Add-in or the Data Management framework, but it will return exactly the data shown in the grid, so it can be useful to use for filtered datasets.
 
