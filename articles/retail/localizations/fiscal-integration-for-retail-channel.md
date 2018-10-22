@@ -3,8 +3,8 @@
 
 title: Fiscal integration for Retail channel
 description: This topic provides an overview of the fiscal integration for Retail POS. 
-author: Kirill Kozlov
-manager: epopov
+author: josaw
+manager: annbe
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
