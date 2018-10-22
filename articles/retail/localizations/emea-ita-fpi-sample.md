@@ -3,8 +3,8 @@
 
 title: Fiscal printer integration sample for Italy
 description: This topic provides an overview of the fiscal integration sample for Italy.
-author: SergeyPismenko
-manager: ezubov
+author: josaw
+manager: annbe
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
