@@ -53,12 +53,12 @@ Follow the steps below to create and share a talent pool.
 1. Enter a unique name for the talent pool.
 1. To add people as contributors to the pool, find their names by using the people picker, and then add them to the list. You can share a talent pool only with users who have the recruiter, hiring manager, or Attract administrator role.
 1. Select **Add** to create the talent pool.
-> [!NOTE]
-> You can also add contributors to a talent pool after you have created it. You can also manage access to a talent pool. For example, you can revoke a user's access to the talent pool.
-> - To add contributors to an existing talent pool that you own, on the **My talent pools** tab, in the upper right of the talent pool card, select the ellipsis button (**…**), and then select **Edit**. Find the people by using the people picker, and add them to the list. 
-> - To revoke a user's access to the talent pool, in the upper right of the talent pool card, select the ellipsis button (**…**), and then select **Edit**. On the **Manage access** tab, select the trash can button next to the user.
+     > [!NOTE]
+     > Alternatively, you can add contributors to a talent pool after you have created it. You can also manage access to a talent pool. For example, you can revoke a user's access to the talent pool.
+     > - To add contributors to an existing talent pool that you own, on the **My talent pools** tab, in the upper right of the talent pool card, select the ellipsis button (**…**), and then select **Edit**. Find the people by using the people picker, and add them to the list. 
+     > - To revoke a user's access to the talent pool, in the upper right of the talent pool card, select the ellipsis button (**…**), and then select **Edit**. On the **Manage access** tab, select the trash can button next to the user.
 
-1. Select **Update** to complete and save the operation.
+6. Select **Update** to complete and save the operation.
 
 > [!NOTE]
 > To create more than one talent pool, your organization must have the Comprehensive Hiring add-on.
