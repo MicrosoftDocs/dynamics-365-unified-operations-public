@@ -40,7 +40,7 @@ Microsoft Dynamics 365 for Finance and Operations lets users pin tiles, dashboar
 
 This functionality requires a one-time configuration of your environment. An administrator must do this step to enable Finance and Operations and Microsoft Power BI to communicate and authenticate correctly.
 
-Both Finance and Operations and PowerBI.com are cloud-based services. For a Finance and Operations workspace to show a Power BI tile, the Finance and Operations server must contact the Power BI service on behalf of a user and access the visualization. It must then redraw the visualization in the Finance and Operations workspace. The fact that the Finance and Operations server contacts the Power BI service "on behalf of a user" is important. When a user, such as `Tim@ContosoAX7.onmicrosoft.com`, contacts the PowerBI.com service, Power BI should show only tiles and reports from Tim's own PowerBI.com account.
+Both Finance and Operations and PowerBI.com are cloud-based services. For a Finance and Operations workspace to show a Power BI tile, the Finance and Operations server must contact the Power BI service on behalf of a user and access the visualization. It must then redraw the visualization in the Finance and Operations workspace. The fact that the Finance and Operations server contacts the Power BI service "on behalf of a user" is important. When a user, such as `UserName@contoso.com`, contacts the PowerBI.com service, Power BI should show only tiles and reports from UserName's PowerBI.com subscription.
 
 By completing this configuration step, you enable Microsoft Dynamics 365 Finance and Operations to contact the PowerBI.com service.
 
@@ -111,6 +111,7 @@ Users must complete this step the first time they pin Power BI content.
 5. Because you're already signed in to Azure AD in Finance and Operations, you don't have to enter your credentials again. A new tab appears, where you're prompted to authorize the connection between Finance and Operations and Power BI. Authorize the connection, and then return to the original tab.
 
 6. A list of tiles from your PowerBI.com account appears. Select one or more tiles to pin to the selected workspace.
+    ![Validate Power BI integration](./media/D365-PBI-Validation.png)
 
 ## Troubleshooting common errors
 
