@@ -68,9 +68,9 @@ However, if the invoice expenses are included in the order line that corresponds
 
 ## Set up the automatic creation of a deferrals account 
 
-1.  Click **Fixed assets** \> **Setup** \> **Depreciation** \> **Depreciation group**.
-2.  Click the **Deferrals** tab, and then set up the parameters for creating deferrals when a loss is realized.
-3.  Select **Disposal** if you want to dispose of the fixed asset entirely, or **Partial dismantlement** to dispose of part of the fixed asset.
+1.  Click **Fixed assets** \> **Setup** \> **Depreciation group**.
+2.  Click the **Deferrals** FastTab, and then set up the parameters for creating deferrals when a loss is realized.
+3.  Select **Disposal**, if you want to dispose of the fixed asset entirely, or **Partial dismantlement** to dispose of part of the fixed asset.
 4.  In the **Model number** field, select the deferral model number.
 5.  In the **Deferrals group** field, select the deferral group.
 6.  In the **Expense code** field, select the expense code.
@@ -79,8 +79,7 @@ However, if the invoice expenses are included in the order line that corresponds
 
 ## Create a sales order for a fixed asset
 
-1.  Click **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders**.
-2.  Press CTRL+N to create a new sales order.
+1.  Click **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders** and create a new sales order.
 3.  Enter information about the sales order.
 4.  In the lower pane, press CTRL+N to create new line items.
 5.  In the **Item number** field, select a fixed asset inventory item.
