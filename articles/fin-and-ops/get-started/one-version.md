@@ -5,7 +5,7 @@ title: One version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: meeramahabala
 manager: AnnBe
-ms.date: 10/11/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,9 +37,8 @@ In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](
 ### What product versions are impacted by service updates?
 | Version | Description |
 |---------|-------|
-| 8.1 and later | All customers on 8.1 and later will be scheduled for updates monthly with a combined application and platform update starting November 2018.  You will be required to have an update that's no older than 3 months.                                                                                                                                                                      |
-| 8.0           | Customers on 8.0 will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months. The 8.0 lifecycle ends in April 2019. We encourage customers on 8.0 to update to 8.1 by December 1, 2018. This process is like a regular package update. Detailed documentation on [8.0 to 8.1 update](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81) is available.   
-
+| 8.1 and later | All customers on 8.1 and later will be scheduled for updates monthly with a combined application and platform update starting November 2018.  You will be required to have an update that's no older than 3 months.                   |
+| 8.0           | Customers on 8.0 will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months. The 8.0 lifecycle ends in April 2019. We encourage customers on 8.0 to update to 8.1 by December 1, 2018. This process is like a regular package update. Detailed documentation on [8.0 to 8.1 update](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81) is available.  | 
 | 7.x           | Customers on 7.x will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months.  You are required to upgrade to 8.1 before April 2019 (unless extensions are not available, the only overlayered version in market will be version 7.3). Starting April 2019, the service will be updated to version 10.0. |
 
 ### What does the update contain?
