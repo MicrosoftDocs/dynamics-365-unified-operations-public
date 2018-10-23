@@ -145,8 +145,6 @@
     items:
     - name: Retail peripherals
       href: retail-peripherals-overview.md
-    - name: Microsoft-tested POS hardware peripherals
-      href: microsoft-tested-pos-hardware-peripherals.md
     - name: Retail peripheral simulator
       href: dev-itpro/retail-peripheral-simulator.md
     - name: Connect peripherals to the POS
