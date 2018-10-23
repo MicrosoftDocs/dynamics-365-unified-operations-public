@@ -31,19 +31,6 @@ ms.dyn365.ops.version: 8.1
 # Sell, dispose, and write-off assets (Russia)
 [!include [banner](../includes/banner.md)]
 
-## Set up the automatic creation of a deferrals card 
-
-When you run a fixed asset issue voucher and realize a loss, you can automatically create a deferrals card. The deferrals card shows the calculated loss and the write-off period, which is defined as the difference between the depreciated object's anticipated useful life and the actual length of time that it was held before the loss was incurred.
-
-1.  Click **Fixed assets** \> **Setup** \> **Depreciation** \> **Depreciation group**.
-2.  Click the **Deferrals** tab, and then set up the parameters for creating deferrals when a loss is realized.
-3.  Select **Disposal** if you want to dispose of the fixed asset entirely, or **Partial dismantlement** to dispose of part of the fixed asset.
-4.  In the **Model number** field, select the deferral model number.
-5.  In the **Deferrals group** field, select the deferral group.
-6.  In the **Expense code** field, select the expense code.
-
-## Create a sales order or free text invoice for a fixed asset 
-
 You can record the sale of fixed assets in Fixed assets, or you can create a sales order or a free text invoice in Accounts receivable. When you sell a fixed asset, you must calculate its depreciation during that period.
 
 If the fixed asset to be sold is registered in the **Inventory management** items list, you must create a sales order. However, you can record the sale of a non-inventoried item in **Fixed assets**, or you can create a free text invoice. The status of an asset that is sold under a sales order or free text invoice is **Sold (waiting for posting)**, until the transaction is posted. After posting, the status of the asset is **Written off (sale)**.
@@ -54,6 +41,19 @@ If the fixed asset to be sold is registered in the **Inventory management** item
 If the invoice expenses are included in the sales order header when you sell a fixed asset or inventory asset, the sum of these miscellaneous charges is not included in the profit or loss from the sale.
 
 However, if the invoice expenses are included in the order line that corresponds to the asset, the charges are considered when the profit or loss is calculated from the sale.
+
+When you run a fixed asset issue voucher and realize a loss, the system can automatically create a deferrals card. The deferrals card shows the calculated loss and the write-off period, which is defined as the difference between the depreciated object's anticipated useful life and the actual length of time that it was held before the loss was incurred.
+
+## Set up the automatic creation of a deferrals card 
+
+1.  Click **Fixed assets** \> **Setup** \> **Depreciation** \> **Depreciation group**.
+2.  Click the **Deferrals** tab, and then set up the parameters for creating deferrals when a loss is realized.
+3.  Select **Disposal** if you want to dispose of the fixed asset entirely, or **Partial dismantlement** to dispose of part of the fixed asset.
+4.  In the **Model number** field, select the deferral model number.
+5.  In the **Deferrals group** field, select the deferral group.
+6.  In the **Expense code** field, select the expense code.
+
+
 
 ## Create a sales order for a fixed asset
 
