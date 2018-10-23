@@ -31,6 +31,28 @@ ms.dyn365.ops.version: 8.1
 # Sell, dispose, and write-off assets (Russia)
 [!include [banner](../includes/banner.md)]
 
+## Fixed asset disposal 
+
+You can dispose of fixed assets for any of the following reasons:
+
+  - An asset is sold to other legal entities or private individuals.
+  - An asset is transferred and used as a deposit in joint activities or as a charter capital.
+  - An asset is donated or used as another type of non-compensated transfer.
+  - An asset is liquidated because of an accident or natural disaster.
+  - An asset is exchanged through an exchange agreement.
+
+There are three ways to create a disposal transaction:
+
+  - **Leaving (sale)** – This transaction represents a fixed asset sale and can be entered in Accounts receivable or in the fixed assets journal. Several transactions are created in the ledger, based on the posting profile configuration. The status of the asset changes to **Written off (sale)**.
+
+  - **Leaving (dismantlement)** – This transaction is entered in the fixed assets journal. Transactions are created in the ledger, and the remaining value of the asset after it has been dismantled is transferred to the inventory. The status of the asset changes to **Written off (dismantlement)**.
+
+  - **Fixed Assets write-off** – This transaction is entered in the fixed assets journal, and the write-off transactions for the booked value and booked depreciation for the asset are created. The status of the asset changes to **Written off**
+
+
+> [!NOTE]
+> When you create a transaction for the partial write-off or disposal of a fixed asset, if the transaction accrues a loss, the >transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. >The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the >depreciated asset and the actual period that the asset is used before its disposal (**[Set up automatic creation of deferrals account](Set up the automatic creation of a deferrals account)**).
+
 You can record the sale of fixed assets in Fixed assets, or you can create a sales order or a free text invoice in Accounts receivable. When you sell a fixed asset, you must calculate its depreciation during that period.
 
 If the fixed asset to be sold is registered in the **Inventory management** items list, you must create a sales order. However, you can record the sale of a non-inventoried item in **Fixed assets**, or you can create a free text invoice. The status of an asset that is sold under a sales order or free text invoice is **Sold (waiting for posting)**, until the transaction is posted. After posting, the status of the asset is **Written off (sale)**.
@@ -42,9 +64,9 @@ If the invoice expenses are included in the sales order header when you sell a f
 
 However, if the invoice expenses are included in the order line that corresponds to the asset, the charges are considered when the profit or loss is calculated from the sale.
 
-When you run a fixed asset issue voucher and realize a loss, the system can automatically create a deferrals card. The deferrals card shows the calculated loss and the write-off period, which is defined as the difference between the depreciated object's anticipated useful life and the actual length of time that it was held before the loss was incurred.
 
-## Set up the automatic creation of a deferrals card 
+
+## Set up the automatic creation of a deferrals account 
 
 1.  Click **Fixed assets** \> **Setup** \> **Depreciation** \> **Depreciation group**.
 2.  Click the **Deferrals** tab, and then set up the parameters for creating deferrals when a loss is realized.
@@ -98,27 +120,4 @@ When you run a fixed asset issue voucher and realize a loss, the system can auto
 17. Click **Fixed assets (Russia)** \> **Common** \> **Fixed assets**. to open **FA Value Models** form. The disposal date and cost of the fixed asset are displayed in the **Disposal date** and **Disposal cost** fields.
 18. Click **Balance** to open the **FA balances** form. The details are displayed in the **Leaving (sale)** and **Gain/Loss** fields.
 
-## Fixed asset disposal 
 
-You can dispose of fixed assets for any of the following reasons:
-
-  - An asset is sold to other legal entities or private individuals.
-  - An asset is transferred and used as a deposit in joint activities or as a charter capital.
-  - An asset is donated or used as another type of non-compensated transfer.
-  - An asset is liquidated because of an accident or natural disaster.
-  - An asset is exchanged through an exchange agreement.
-
-> [!NOTE]
-> Depreciation must be calculated until the month of disposal.
-
-There are three ways to create a disposal transaction:
-
-  - **Leaving (sale)** – This transaction represents a fixed asset sale and can be entered in Accounts receivable or in the fixed assets journal. Several transactions are created in the ledger, based on the posting profile configuration. The status of the asset changes to **Written off (sale)**.
-
-  - **Leaving (dismantlement)** – This transaction is entered in the fixed assets journal. Transactions are created in the ledger, and the remaining value of the asset after it has been dismantled is transferred to the warehouse. The status of the asset changes to **Written off (dismantlement)**.
-
-  - **Fixed Assets write-off** – This transaction is entered in the fixed assets journal, and the write-off transactions for the booked value and booked depreciation for the asset are created. The status of the asset changes to **Written off**
-
-
-> [!NOTE]
-> When you create a transaction for the partial write-off or disposal of a fixed asset, if the transaction accrues a loss, the transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the depreciated asset and the actual period that the asset is used before its disposal.
