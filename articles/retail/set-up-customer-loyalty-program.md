@@ -135,10 +135,12 @@ Image: View expiring points
 	
 ## Upcoming enhancements
 
-The following features would be available in the November monthly update of Dynamics 365 for Retail product
+The following features would be available in the future monthly updates of Dynamics 365 for Retail product
 	
 - Customers want the capability to view their loyalty balance details on the consumer facing channels. Similarly, it is important for the cashiers to view the customer's history of the loyalty points in MPOS/CPOS to quickly answer any queries from the customer. With the upcoming monthly release, the customers and cashiers will be able to see the loyalty history details
 
 - Many retailers are able to award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand—for example, filling an online survey, visiting a store, liking the retailers on Facebook, tweeting about the retailer, and more. We are adding the capability to award loyalty points for any customer activity. To do so, the retailer can define an "Other activity type" and define the earning rules for these activities. We are also exposing a Retail Server API that can be called whenever such an activity is identified which will use the earning rule to award the required loyalty points
 
 - To enable a true omni-channel retail experience, we will allow the customers to earn and redeem loyalty points across all channels. Currently, the Call center only allows to earn loyalty points, but the redeem capability will be added with the November monthly release. 
+
+- Free or discounted shipping is one of the highly motivating factors for customers to buy online. To enable the retailers from setting up shipping promotions, we will introduce new type of promotion, using which, the retailer can define the thresholds, which once met, will qualify the customers for discounted or free shipping.
