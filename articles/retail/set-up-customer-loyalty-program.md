@@ -85,44 +85,42 @@ As a part of October 2018 release, we have added new capabilities to our loyalty
 	
 	> [!NOTE]
 	> The earning rules within a loyalty scheme are addition i.e. if you create a rule to reward a gold tier member 10 points for each US dollar, and you also create a rule for a customer with "Veteran" affiliation, to reward 5 points for each US dollar, then a veteran who is also a gold tier member would earn 15 points for 1 US dollar as both the line qualify for the customer. However, if the veteran customer was not a gold tier member, then he would earn 5 points for each dollar. To reflect the changes in the channels, run the "Process loyalty schemes" and "1050" (loyalty information) jobs.
-	
-	 ![Affiliation based earning](./media/Affiliation based earning.png "Affiliation based earning")
+	![Affiliation based earning](./media/Affiliation based earning.png)
 
 - Many time retailers have special prices for a certain group of customers and they do not want such customers to earn using the loyalty programs for e.g. wholesalers, employees etc. Commonly, 'Affiliations' are used to provide the special pricing to such customer groups. Thus, to restrict certain customer groups of customers from earning loyalty points, the retailer can now specify one or more Affiliations under the "Excluded affiliations" section of the loyalty scheme. Now, even if customers belonging to excluded affiliation are existing loyalty members, but still they cannot earn loyalty points for their purchases. To reflect the changes in the channels, run the "Process loyalty schemes" and "1050" (loyalty information) jobs.
-	
-	![Excluded affiliations](./media/Excluded affiliations.png "Excluded affiliations")
+	![Excluded affiliations](./media/Excluded affiliations.png)
 	
 - We have added a capability to generate loyalty card numbers in the channels. Prior to this update, the retailers could use physical loyalty cards, or generate loyalty card using some unique customer information such as their phone numbers. To enable the automatic generation of the loyalty cards in the retail stores, you need to turn on the configuration "Generate loyalty card number" in the functionality profile associated to the store. 
-	For the Online channels, the retailers can use the IssueLoyaltyCard API to issue loyalty cards to the customers. The retailers can either provide a loyalty card number to this API, which will be used to generate the loyalty card or else the system tries to use the loyalty card number sequence set in the Dynamics 365 for Retail application. However, if the number sequence is not present, and the retailer does not provide a loyalty card number while calling the API, then the system throws an error.
-	
-	 ![Generate loyalty card](./media/Generate loyalty card.png "Generate loyalty card")
+For the Online channels, the retailers can use the IssueLoyaltyCard API to issue loyalty cards to the customers. The retailers can either provide a loyalty card number to this API, which will be used to generate the loyalty card or else the system tries to use the loyalty card number sequence set in the Dynamics 365 for Retail application. However, if the number sequence is not present, and the retailer does not provide a loyalty card number while calling the API, then the system throws an error.
 
-- We now save the earned and redeemed loyalty points for each transaction and sales orders against the sales line so that the same amount can be refunded or taken back in the case of full or partial returns. Moreover, having the visibility for points at sales line level provides the capability for the call center users to answer customer questions on how many points were earned/redeemed for each line. Prior to this change, the reward points were always recalculated during returns which resulted in a different amount than the original, if the earning or redemption rules were changed and also the call center users did not have the visibility on the points breakdown. 	The points can be viewed under the "Card transactions" form for each loyalty card
+![Generate loyalty card](./media/Generate loyalty card.png)
+
+- We now save the earned and redeemed loyalty points for each transaction and sales orders against the sales line so that the same amount can be refunded or taken back in the case of full or partial returns. Moreover, having the visibility for points at sales line level provides the capability for the call center users to answer customer questions on how many points were earned/redeemed for each line. Prior to this change, the reward points were always recalculated during returns which resulted in a different amount than the original, if the earning or redemption rules were changed and also the call center users did not have the visibility on the points breakdown. The points can be viewed under the "Card transactions" form for each loyalty card.
 	
 - We have enhanced the loyalty reward points capabilities to enable the retailer to define the vesting period for each reward point. Setting up a vesting period defines the duration, from the earn date, after which the reward points would become available to the customers. Such points can be seen in a new column named "Unvested points" under the loyalty cards form (refer unvested points image). 
 Additionally, the retailers can also define the maximum loyalty reward point limit per loyalty card. This field can be used to reduce the impact of loyalty fraud as once the maximum award points have been reached, the user cannot earn more points. The retailer can decide to block such cards until they have investigated for potential fraud. In case the retailer determines a fraud, the retailer can not only block the loyalty card for the customer but also mark the customer as blocked i.e. set the property "Block customer for loyalty enrollment" to Yes under All customers -> Retail fast tab. The blocked customers cannot be issued a loyalty card in any of the channels.
 
-![Vesting and maximum reward points](./media/Vesting and maximum reward points.png "Vesting and maximum reward points")
+![Vesting and maximum reward points](./media/Vesting and maximum reward points.png)
 
 - Affiliations are used to provide special pricing and discounts, but there be some affiliations that the retailers do not want their end customers to see for e.g. affiliation titled 'High spend customer' might be well received by some of the customers. Moreover, there are some affiliations that should not be managed in the store e.g. Employees because you do not want the cashiers to decide who is an employee and thus provide employee based discounts. Thus, retailers can now select the affiliations which should be hidden in the retail channels i.e. MPOS/CPOS. The affiliations marked as 'Hide in channels' cannot be viewed, added or removed in the POS. However, the pricing and discounts associated with the affiliation would still be applied to the products.
-	
-	 ![Hide affiliations](./media/Hide affiliations.png "Hide affiliations")
+
+![Hide affiliations](./media/Hide affiliations.png)
 	
 - We have made it easy for the call center user to search for a customer using their loyalty card information and also the call center user can now easily navigate to the customer's loyalty card and customer's loyalty card transaction pages from the 'Customer service' form. Thus, empowering the call center user to view all the important customer information with reduced clicks.
-	
-	 ![Customer service](./media/Customer service.png "Customer service")
+
+![Customer service](./media/Customer service.png)
 	
 - If a loyalty card is compromised, a replacement card needs to be generated and the existing points should be transferred to the new card. The user experience of the replacement card flow has now been simplified. Additionally, we have added the capability for customers to gift their loyalty points to friends and family. The customers can decide to transfer partial or all of their points. As a result of points transfer, we create points adjustment entries to each loyalty card The replace card and transfer balance capabilities can be used in the back office application from the loyalty cards form.
-	
-	 ![Replace and transfer points](./media/Replace and transfer points.png "Replace and transfer points")
+
+![Replace and transfer points](./media/Replace and transfer points.png)
 	
 - Often times retailers want to capture the effectiveness of a particular channel to enroll customers into loyalty program. To enable this we now save the enrollment source for the loyalty cards so that retailers can run reports on this data. The enrollments source is automatically captured for all the issued loyalty cards from MPOS/CPOS or eCommerce channels. For the loyalty cards issued from the backoffice application, the call center user can select an appropriate channel.
 
 - Retailers can currently use MPOS/CPOS to redeem loyalty points for customers in store. However, since the loyalty balance is displayed in loyalty points, so the cashier did not have the visibility on the amount, in currency value, that can be applied towards the current transaction. Thus, the cashier had to do the points to currency conversion before paying by loyalty points. Once some lines are added to the transaction, the cashier can now see the amount that the loyalty points can cover the current transaction, thus making it easy to apply partial or all the loyalty points to the transaction. Additionally, we now also show the points which will be expiring in next 30 days, so that the cashier can upsell or cross sell to motivate the customer to spend the expiring points now.
-	
-	 ![Points covered by loyalty balance](./media/Points covered by loyalty balance.png "Points covered by loyalty balance")
-	
-	 ![Expiring points](./media/Expiring points.png "Expiring points")
+
+![Points covered by loyalty balance](./media/Points covered by loyalty balance.png)
+
+![Expiring points](./media/Expiring points.png)
 	
 ## Upcoming enhancements
 
@@ -133,9 +131,3 @@ The following features would be available in the November monthly update of Dyna
 - Many retailers are able to award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand—for example, filling an online survey, visiting a store, liking the retailers on Facebook, tweeting about the retailer, and more. We are adding the capability to award loyalty points for any customer activity. To do so, the retailer can define an "Other activity type" and define the earning rules for these activities. We are also exposing a Retail Server API that can be called whenever such an activity is identified which will use the earning rule to award the required loyalty points
 
 - To enable a true omni-channel retail experience, we will allow the customers to earn and redeem loyalty points across all channels. Currently, the Call center only allows to earn loyalty points, but the redeem capability will be added with the November monthly release. 
-
-
-
-
-
-
