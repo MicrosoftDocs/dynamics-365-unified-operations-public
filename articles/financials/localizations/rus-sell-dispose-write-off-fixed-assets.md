@@ -71,9 +71,7 @@ However, if the invoice expenses are included in the order line that corresponds
 1.  Click **Fixed assets** \> **Setup** \> **Depreciation group**.
 2.  Click the **Deferrals** FastTab, and then set up the parameters for creating deferrals when a loss is realized.
 3.  Select **Disposal**, if you want to dispose of the fixed asset entirely, or **Partial dismantlement** to dispose of part of the fixed asset.
-4.  In the **Model number** field, select the deferral model number.
-5.  In the **Deferrals group** field, select the deferral group.
-6.  In the **Expense code** field, select the expense code.
+4.  Fill in  the **Model number**, **Deferrals group** and **Expense code** fields.
 
 
 
