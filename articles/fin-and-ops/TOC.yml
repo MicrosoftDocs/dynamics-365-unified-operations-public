@@ -2158,6 +2158,8 @@
             href: ../financials/localizations/rus-bonus-depreciation.md
           - name: Calculate depreciation
             href: ../financials/localizations/rus-depreciation-calculation.md
+        - name: Company divisions
+          href: ../financials/localizations/rus-company-divisions.md
         - name: Set up and process payment orders
           href: ../financials/localizations/rus-payment-order-settings-processing.md                
         - name: Set up exchange rates for currency transactions
