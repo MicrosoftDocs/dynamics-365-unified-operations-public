@@ -36,14 +36,9 @@ If a fixed asset is closed down or inactive for more than three months, or if re
 ## Inactivate a fixed asset temporarily
 
 1.  Click **Fixed assets** \> **Common** \> **Fixed assets** \> **Fixed assets**.
-2.  Select the fixed asset to be temporarily deactivated. The asset is shown in **Exploitation** status.
-3.  In the **Status** field, select **Temporary closing-down** to open the **Temporary closing-down** page.
-4.  Click **Yes** to confirm the change of status.
-5.  In the **Date** field, select the deactivation date.
-6.  In the **Reason code** field, select a reason code.
-7.  In the **Reason comment** field, enter a description for the transaction.
-8.  Click **OK**. The fixed asset status changes to **Temporary closing-down**.
-9.  Click **History** \> **Temporary closing-down** to view the starting date, ending date, and user code on the **Temporary closing-down** page.
+2.  Select the fixed asset to be temporarily deactivated. The asset is shown in **In operation** status.
+3.  In the Action pane, select **FIXED ASSET** \> **History** \> **Temporary closing-down** to open the **Temporary closing-down** page.
+4.  In the **Start date** field, select the deactivation date and close the page
    
     > [!NOTE]
     > Depreciation is not accrued when the status of the fixed asset is **Temporary closing-down**.
@@ -52,13 +47,8 @@ If a fixed asset is closed down or inactive for more than three months, or if re
 
 1.  Click **Fixed assets** \> **Common** \> **Fixed assets** \> **Fixed assets**.
 2.  Select the fixed asset with the **Temporary closing-down** status.
-3.  In the **Status** field, modify the status to **Exploitation** to open the **Temporary closing-down** page.
-4.  Click **Yes** to confirm the change of status.
-5.  In the **Date** field, select the reactivation date.
-6.  In the **Reason code** field, select a reason code.
-7.  In the **Reason comment** field, enter a description for the transaction.
-8.  Click **OK**. The fixed asset status changes to **Exploitation**.
-9.  Click **History** \> **Temporary closing-down** to view the deactivation ending date in the **Temporary closing-down** page.  
+3.   In the Action pane, select **FIXED ASSET** \> **History** \> **Temporary closing-down** to open the **Temporary closing-down** page.
+4.  In the **Finish date** field, select the deactivation date and close the page
 
     > [!NOTE]
     > Depreciation will be calculated from the period specified in the **Date of depreciation beginning** field in the **Depreciation groups** page.
@@ -102,7 +92,7 @@ You must complete the following tasks before you can post an update for a major 
 
 1.  Click **Fixed assets (Russia)** \> **Common** \> **Fixed assets**.
 2.  Select a fixed asset, and then click **Value models**.
-3.  Click **FA lifetime history**.
+3.  On the Action pane, Click **FA lifetime history**.
 4.  Click **New**, and then in the **Date** field, select the lifetime change date.
 5.  In the **New lifetime** and **New factor** fields, enter a lifetime and factor for the fixed asset.
 6.  In the **Depreciation method** and **Depreciation subgroup** fields, select a depreciation method and subgroup.
