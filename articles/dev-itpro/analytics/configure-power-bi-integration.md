@@ -54,29 +54,37 @@ By completing this configuration step, you enable Finance and Operations to cont
 
 ## Registration process 
 
-1. Log in https://portal.azure.com/ by using Prod env tenant admin.
-   **Reminder:** The user executing this procedure must have Admin rights on the tenant to register applications.
+1. Log in https://portal.azure.com/ by using Prod env tenant admin.<br>
+   **Reminder:** The user executing this procedure must have Admin rights for the tenant to register applications
 
 2. Go to **Azure Active Directory >> App registrations >>  New application registration** 
-
-    ![Azure Portal App Registration](./media/Azure-Portal-AppRegistration.PNG)
+    ![Azure Portal App Registration](media/Azure-Portal-AppRegistration.png)
 
 3. Enter the following values in the dialog.
 	**Name:** Your app name
 	**Application type:** Web app / API
-	**Sign-on URL:** The base URL of your Finance and Operations client, and then add the OAuth suffix
-			   For example: http://contosoax7.cloud.dynamics.com/oauth
+	**Sign-on URL:** The base URL of your Finance and Operations client, and then add the OAuth suffix<br>
+			 For example: http://contosoax7.cloud.dynamics.com/oauth
+			 
 4. Click **Create** button
 5. Copy the value of **Application ID** which will be used in Finance and Operations to connect to PowerBI.com service
 6. Click **Settings >> Required permissions >> Add >> Select an API >> Power BI Service (Power BI)**
 7. Click **Select**.
+8. Enable Access as below and click **Select**
+    ![Azure Portal App Registration](media/Azure-Portal-AppRegistration.png)
+
+9. Now, Click **Done**
+10. Click **Grant Permissions**.
+11. Click **Settings >> Keys**.
+12. Set value for **Key description** and **Expires**, and then Click **Save** button
+
+Make a note of the **Application ID** and **Application Key**. You will use these values in the next procedure.
 
 
 ## Specify Power BI settings in Finance and Operations
 
 1. In the Finance and Operations client, open the **Power BI configuration** page.
-
-    ![Azure Portal App Registration](./media/Azure-Portal-AppPermissions.PNG)
+    ![Azure Portal App Permissions](./media/Azure-Portal-AppPermissions.PNG)
 
 2. Select **Edit**.
 3. Set the **Enabled** option to **Yes**.
