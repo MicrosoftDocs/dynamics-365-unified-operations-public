@@ -54,31 +54,29 @@ By completing this configuration step, you enable Finance and Operations to cont
 
 ## Registration process 
 
-1. Open a new browser session, and start the Power BI app registration at [https://dev.powerbi.com/apps](https://dev.powerbi.com/apps). A page that resembles the following illustration appears.
+1. Log in https://portal.azure.com/ by using Prod env tenant admin.
+   **Reminder:** The user executing this procedure must have Admin rights on the tenant to register applications.
 
-    ![Register an Application for Power BI page](./media/PowerBI-registration1.JPG)
+2. Go to **Azure Active Directory >> App registrations >>  New application registration** 
 
-2. Select **Sign in with your existing account**. Make sure that your browser signed you in by using the same Azure AD account that you use for Finance and Operations. After sign-in, the user's name should appear on the page.
+    ![Azure Portal App Registration](./media/Azure-Portal-AppRegistration.PNG)
 
-    ![User's name on the page after sign-in](./media/PowerBI-registration2.JPG)
+3. Enter the following values in the dialog.
+	**Name:** Your app name
+	**Application type:** Web app / API
+	**Sign-on URL:** The base URL of your Finance and Operations client, and then add the OAuth suffix
+			   For example: http://contosoax7.cloud.dynamics.com/oauth
+4. Click **Create** button
+5. Copy the value of **Application ID** which will be used in Finance and Operations to connect to PowerBI.com service
+6. Click **Settings >> Required permissions >> Add >> Select an API >> Power BI Service (Power BI)**
+7. Click **Select**.
 
-3. In the **App name** field, enter a name, such as **Contoso Dyn365 for Operations**.
-4. In the **Redirect URL** field, copy and paste the base URL of your Finance and Operations client, and then add the OAuth suffix. Here is an example: `http://contosoax7.cloud.dynamics.com/oauth`
-5. In the **Home page URL** field, enter your home page URL, and add a mock extension. Here is an example: `http://contosoax7.cloud.dynamics.com/testenv/`
-
-    This value is mandatory, but it isn't required for the workspace integration. Make sure that the App ID URI is a mock URL. If you use the real URL of your deployment, you might cause sign-in issues in other Azure AD applications, such as the Microsoft Excel Add-in. Here is an example: `http://contosoax7.cloud.dynamics.com/testenv/`
-
-6. Under **Step 3 Choose APIs to access**, select all the check boxes.
-7. Select **Register App**.
-8. Make a note of the values in the **Client ID** and **Client secret** fields. You will use these values in the next procedure.
-
-    ![Client ID and Client secret fields](./media/PowerBI-registration3.JPG)
 
 ## Specify Power BI settings in Finance and Operations
 
 1. In the Finance and Operations client, open the **Power BI configuration** page.
 
-    ![Power BI configuration page before editing](./media/PowerBIpage-before-edit.JPG)
+    ![Azure Portal App Registration](./media/Azure-Portal-AppPermissions.PNG)
 
 2. Select **Edit**.
 3. Set the **Enabled** option to **Yes**.
