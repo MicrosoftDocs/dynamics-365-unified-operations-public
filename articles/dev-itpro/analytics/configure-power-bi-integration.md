@@ -36,13 +36,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Overview
 
-Microsoft Dynamics 365 for Finance and Operations lets users pin tiles and reports from their own PowerBI.com account to workspaces.
+Microsoft Dynamics 365 for Finance and Operations lets users pin tiles, dashboards, and reports from their own PowerBI.com account to workspaces.
 
 This functionality requires a one-time configuration of your environment. An administrator must do this step to enable Finance and Operations and Microsoft Power BI to communicate and authenticate correctly.
 
 Both Finance and Operations and PowerBI.com are cloud-based services. For a Finance and Operations workspace to show a Power BI tile, the Finance and Operations server must contact the Power BI service on behalf of a user and access the visualization. It must then redraw the visualization in the Finance and Operations workspace. The fact that the Finance and Operations server contacts the Power BI service "on behalf of a user" is important. When a user, such as `Tim@ContosoAX7.onmicrosoft.com`, contacts the PowerBI.com service, Power BI should show only tiles and reports from Tim's own PowerBI.com account.
 
-By completing this configuration step, you enable Finance and Operations to contact the PowerBI.com service on behalf of a user. The flow between Finance and Operations and the Power BI service is based on the OAuth 2.0 Authorization Code Grant Flow, which is discussed later in this topic.
+By completing this configuration step, you enable Microsoft Dynamics 365 Finance and Operations to contact the PowerBI.com service.
 
 ## Things you must know before you start 
 
@@ -54,7 +54,7 @@ By completing this configuration step, you enable Finance and Operations to cont
 
 ## Registration process 
 
-1. Log in https://portal.azure.com/ by using Prod env tenant admin.<br>
+1. Log in https://portal.azure.com/ by using Azure tenant admin account<br>
    **Reminder:** The user executing this procedure must have Admin rights for the tenant to register applications
 
 2. Go to **Azure Active Directory >> App registrations >>  New application registration** 
@@ -71,7 +71,7 @@ By completing this configuration step, you enable Finance and Operations to cont
 6. Click **Settings >> Required permissions >> Add >> Select an API >> Power BI Service (Power BI)**
 7. Click **Select**.
 8. Enable Access as below and click **Select**
-    ![Azure Portal App Registration](media/Azure-Portal-AppRegistration.png)
+    ![Azure Portal App Permissions](media/Azure-Portal-AppPermissions.png)
 
 9. Now, Click **Done**
 10. Click **Grant Permissions**.
@@ -80,46 +80,28 @@ By completing this configuration step, you enable Finance and Operations to cont
 
 Make a note of the **Application ID** and **Application Key**. You will use these values in the next procedure.
 
-
 ## Specify Power BI settings in Finance and Operations
 
 1. In the Finance and Operations client, open the **Power BI configuration** page.
-    ![Azure Portal App Permissions](./media/Azure-Portal-AppPermissions.PNG)
+    ![Power BI configuration dialog](./media/D365-PBI-Configuration.png)
 
 2. Select **Edit**.
 3. Set the **Enabled** option to **Yes**.
-
-    The **Azure AD Tenant** field should show your tenant (or domain name). For example, if you provisioned Finance and Operations with the ContosoAX7.onmicrosoft.com tenant, the field should have the value that is shown in the previous illustration. If the field is blank, you can enter the correct tenant.
-
-    Note that the Power BI integration feature doesn't work on pre-production and test Azure AD domains. You must change to a production Azure AD domain by running the Admin user tool.
-
-4. In the **Client ID** field, enter the **Client ID** value that you got from Power BI in the previous procedure.
-5. In the **Application Key** field, enter the **Client Secret** value that you got from Power BI in the previous procedure.
-6. Make sure that the **Redirect URL** field is set to the same redirect URL that you entered in Power BI in the previous procedure.
-
-    For example, copy and paste the base URL of your Finance and Operations client, and then add the OAuth suffix. Here is an example: `http://contosoax7.cloud.dynamics.com/oauth`
-
-7. In the **Tile filter table** field, enter **Company**. In the **Tile filter column** field, enter **ID**.
-
-    These two values enable filtering of Power BI tiles that are pinned to a workspace. For an example, if the company context of a workspace is **USMF**, the data on the Power BI tile will be filtered for the USMF company.
+4. In the **Application ID** field, enter the **Application ID** value that you got from Power BI in the previous procedure.
+5. In the **Application Key** field, enter the **Application Key** value that you got from Power BI in the previous procedure.
 
     You can apply the company filter only if your Power BI content has a table that is named **Company** and a column that is named **ID**. Ready-made Power BI content that is released with Finance and Operations uses this convention.
 
-    If the Power BI content (that you wish to pin) doesn't have a table and a field that are named **Company** and **ID** respectively, the filter is ignored, and the tile will show unfiltered data.
+6. Select **Save** button to apply changes
 
-    ![Tile filter table and Tile filter column fields](media/1820cc9320b91814dbb7d7c90c04d49f.png)
-
-8. Select **Save**, and close the page.
+Now, use the following steps to verify the changes to enabled PowerBI.com integrations.
 
 ## Pin tiles to a workspace
 
-1. To validate the configuration, open a workspace, such as **Ledger budgets and forecasts** or **Reservation management**. For this example, we will use the **Ledger budgets and forecasts** workspace.
+1. To validate the configuration, select **Get started**. 
+    ![Authorize Power BI](./media/D365-PBI-Configuration.png)
 
-    You should see the **Power BI** section and a banner. You might have to scroll to the right.
-
-    ![Power BI section and banner in the Ledger budgets and forecasts workspace](./media/Workspace.JPG)
-
-3. In the banner, select **Get started**. If you're starting Power BI from Finance and Operations for the first time, you're prompted to authorize sign-in to Power BI from the Finance and Operations client. Select **Click here to provide authorization to Power BI**.
+If you're starting Power BI from Finance and Operations for the first time, you're prompted to authorize sign-in to Power BI from the Finance and Operations client. Select **Click here to provide authorization to Power BI**.
 
     Your users will have to complete this step the first time that they pin Power BI content.
 
