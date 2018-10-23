@@ -38,7 +38,8 @@ In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](
 | Version | Description |
 |---------|-------|
 | 8.1 and later | All customers on 8.1 and later will be scheduled for updates monthly with a combined application and platform update starting November 2018.  You will be required to have an update that's no older than 3 months.                                                                                                                                                                      |
-| 8.0           | Customers on 8.0 will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months.  The 8.0 lifecycle ends in April 2019. We encourage customers on 8.0 to update to 8.1 by December 1, 2018. This process is like a regular package update. Detailed documentation to follow.                                                   |
+| 8.0           | Customers on 8.0 will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months. The 8.0 lifecycle ends in April 2019. We encourage customers on 8.0 to update to 8.1 by December 1, 2018. This process is like a regular package update. Detailed documentation on [8.0 to 8.1 update](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81) is available.   
+
 | 7.x           | Customers on 7.x will receive a monthly platform and financial reporting update. You will be required to have an update that's no older than 3 months.  You are required to upgrade to 8.1 before April 2019 (unless extensions are not available, the only overlayered version in market will be version 7.3). Starting April 2019, the service will be updated to version 10.0. |
 
 ### What does the update contain?
@@ -56,6 +57,9 @@ There will be 2 major updates in April and October where new experiences will be
 ### What does it mean when an update is backward compatible?
 Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without needing to recompile, reconfigure, or redeploy customizations. This means that on a development environment at design time, X++ public and protected APIs and metadata are not modified or deleted. If Microsoft needs to break compatibility by removing obsolete APIs, it will be communicated 12 months in advance and follow a deprecation schedule. Design-time compatibility does not include non X++/metadata APIs. Functional compatibility is about user experience. All new experiences will be opt-in.
 
+### Do these updates apply to on-premises?
+Please refer to the on-premises [lifecycle policy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/on-prem-version-update-policy?toc=/fin-and-ops/toc.json) for the specific expiration dates of the version you are on. The process of the updates enumerated in this article only apply to the cloud service. 
+
 ## Process
 
 ### Can I select the day and time to update?
@@ -71,7 +75,7 @@ The expected downtime for a successful update is 30 minutes to 1 hour. However, 
 Deprecation will be announced by a notice 12 months prior to the deprecation. The functionality will only be deprecated during a major update.
 
 ### Can I delay an update?
-You can pause an update up to 3 months through LCS configuration. After this period, an update will be scheduled and monthly updates resumed.
+You can pause an update up to 3 months through LCS configuration. After this period, an update will be scheduled and monthly updates resumed. The update experience for a delayed update will incur additional downtime.
 
 ### What if I find an issue during the sandbox update?
 If you find an issue when doing validations in a sandbox environment, you can request to skip the update through LCS directly by providing a valid support ticket number and a business justification. The request will be reviewed by Microsoft and if approved you will be left out of that month's update.
