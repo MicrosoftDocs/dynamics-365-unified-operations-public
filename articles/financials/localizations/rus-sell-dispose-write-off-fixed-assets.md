@@ -51,7 +51,7 @@ There are three ways to create a disposal transaction:
 
 
 > [!NOTE]
-> When you create a transaction for the partial write-off or disposal of a fixed asset, if the transaction accrues a loss, the >transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. >The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the >depreciated asset and the actual period that the asset is used before its disposal ** [Set up automatic creation of deferrals account](## Set up the automatic creation of a deferrals account) **.
+> When you create a transaction for the partial write-off or disposal of a fixed asset, if the transaction accrues a loss, the >transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. >The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the >depreciated asset and the actual period that the asset is used before its disposal ** [Set up automatic creation of deferrals account](.../rus-sell-dispose-write-off-fixed-assets/articles/financials/localizations/rus-sell-dispose-write-off-fixed-assets.md/#Set up the automatic creation of a deferrals account)**.
 
 You can record the sale of fixed assets in Fixed assets, or you can create a sales order or a free text invoice in Accounts receivable. When you sell a fixed asset, you must calculate its depreciation during that period.
 
