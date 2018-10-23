@@ -98,65 +98,30 @@ Now, use the following steps to verify the changes to enabled PowerBI.com integr
 
 ## Pin tiles to a workspace
 
-1. To validate the configuration, select **Get started**. 
-    ![Authorize Power BI](./media/D365-PBI-Configuration.png)
+1. To validate the PowerBI.com configuration, select **Get started** action.
+   **Note:** You may need to refresh the browser to apply the changes
+    ![Authorize Power BI](./media/D365-PBI-GetStarted.png)
 
 If you're starting Power BI from Finance and Operations for the first time, you're prompted to authorize sign-in to Power BI from the Finance and Operations client. Select **Click here to provide authorization to Power BI**.
 
-    Your users will have to complete this step the first time that they pin Power BI content.
-
-    ![Authorize Power BI](./media/Authorize.JPG)
-
-    > [!NOTE]
-    > If you have an issue with this step, please see the **Troubleshooting common errors** section and note the information about the **Users can consent to apps accessing company data on their behalf** option.
+Users must complete this step the first time they pin Power BI content.
 
 4. The Azure AD consent page asks for your consent. User consent is required for Finance and Operations to access PowerBI.com on behalf of the user. Select **Accept**.
 
-    ![Consent page](media/65da7a9b5ac0a328568f76c4e7a0770c.png)
-
 5. Because you're already signed in to Azure AD in Finance and Operations, you don't have to enter your credentials again. A new tab appears, where you're prompted to authorize the connection between Finance and Operations and Power BI. Authorize the connection, and then return to the original tab.
+
 6. A list of tiles from your PowerBI.com account appears. Select one or more tiles to pin to the selected workspace.
 
 ## Troubleshooting common errors
 
-After you select **Accept** in the previous procedure, you might receive the following error message if the process is unsuccessful. Notice that details of the error appear at the bottom of the message. Additional technical information provide clues that can help you determine what went wrong (values are obscured in the following illustration).
-
-![Error message](media/ce094da8b9e0674c5cbd75616e40d829.png)
+After you select **Accept** in the previous procedure, you might receive the following error message if the process is unsuccessful. Notice that details of the error appear at the bottom of the message. Additional technical information provide clues that can help you determine what went wrong.
 
 ### Some common issues and the resolution steps
 
 | Error                                                       | Resolution |
 |-------------------------------------------------------------|------------|
-| The reply address didn't match because of case-sensitivity. | The URL that you entered in Power BI might not match the application ID. Start Power BI, and rerun the registration process. |
 | The Power BI service is unavailable.                        | This issue doesn't occur very often, but the Power BI service might sometimes be unreachable. You don't have to re-register. Try to pin a tile to a workspace later. |
 | You can't access the application.                           | You probably didn't select all the check boxes under **Step 3 Choose APIs to access** during the registration process. Start Power BI, and rerun the registration process. |
 | The Power BI tiles page is empty (no content is shown).     | Your PowerBI.com account might not have a dashboard or any tiles. Add a dashboard, such as a sample dashboard, and try to pin a tile again. |
 | Error when Authorizing Power BI                             | Within the Azure Admin Dashboard, under **Users and Groups \> User settings**, make sure that the **Users can consent to apps accessing company data on their behalf** option is set to **Yes**. |
 
-## Technical details about OAuth 2.0 Authorization Code Grant Flow
-
-This section describes the authorization flow between Finance and Operations and the PowerBI.com service just before the list of tiles is shown to the user during the authentication phase. The Azure AD service runs this flow to enable two services to securely communicate on behalf of a user.
-
-The following illustration shows the authorization flow.
-
-![Authorization flow](media/caaddad46d4ea9e3c7e12e896733594a.png)
-
-1. When a user visits a workspace in Finance and Operations for the first time, the Power BI banner prompts the user to start the first-time connection. If the user agrees to start the first-time connection, an OAuth 2.0 Authorization Code Grant Flow is started.
-2. Finance and Operations redirects the user agent to the Azure AD authorization endpoint. The user is authenticated and consents, if consent is required. Because the user is running Finance and Operations, he or she is already signed in to Azure AD. Therefore, the user doesn't have to enter her or his credentials again.
-3. The Azure AD authorization endpoint redirects the Azure AD agent back to the client application together with an authorization code. The user agent returns the authorization code to the client application's redirect URL. The application redirect URL is a parameter that is maintained in your Power BI configuration, as described in this topic.
-4. Now that Finance and Operations has an authorization code on behalf of the user, it requests an access token from the Azure AD token issuance endpoint. Finance and Operations presents the authorization code to prove that the user has consented.
-5. The Azure AD token issuance endpoint returns an access token and a refresh token. Finance and Operations must have the access token to request a visualization from Power BI. Access tokens expire after a short time. The refresh token can be used to request a new token.
-6. Finance and Operations uses the access token to authenticate to the Web API that is provided by Power BI. Finance and Operations uses the Web API to request that Power BI visualizations be shown on behalf of the user.
-7. After the client application is authenticated, the Power BI Web API returns the requested visualization to the user. Note that Power BI returns only the data that the user is allowed to see. Because the Power BI Web API detects that the user is connecting via Finance and Operations, it can correctly resolve the user.
-8. The user sees Power BI tiles in the Finance and Operations workspace.
-
-For subsequent visits, this whole flow doesn't occur. Because Finance and Operations has the access token on behalf of the user, steps 1 through 4 don't have to be repeated.
-
-## What's next
-
-Now that you've enabled the PowerBI.com integration feature, you might want to perform the following steps:
-
-- If your organization uses PowerBI.com, you can invite users to pin tiles and reports from their own PowerBI.com account to workspaces for easy access.
-- If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) or later, ready-made analytical workspaces might be built into your workspaces. Currently, this feature is available only in multi-box environments. If you're using a previous version, you can deploy the ready-made reports to your PowerBI.com account. The reports are distributed in Microsoft Dynamics Lifecycle Services (LCS). 
-- You might want to create your own Power BI content by using data that is available in Entity store. (Entity store is the operational data warehouse that is included with Finance and Operations.) For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
-- You might want to mash up external data with ready-made Power BI content that is provided with Finance and Operations. You can do this data mash-up by using Power BI solution templates.
