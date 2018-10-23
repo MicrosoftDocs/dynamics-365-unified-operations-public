@@ -29,35 +29,37 @@ ms.dyn365.ops.version: 8.1.1
 ---
 # Fiscal integration for Retail channel
 
-This article is an overview of the Fiscal integration functionality that is available in Microsoft Dynamics 365 for Retail, and applies to Dynamics 365 for Retail.
-The fiscal integration functionality is a framework designed to support local fiscal laws aimed to prevent fraud in Retail industry. Typical scenarios that could be covered by using the fiscal integration:
-- Print an appropriate fiscal receipt and give it to the customer.
-- Secured submission of the information related to sales and returns performed on POS to an external service provided by the authority.
-- Data protection with a digital signature authorized by the authority.
+[!include [banner](../includes/banner.md)]
 
-The article provides guidelines for setting up the Fiscal integration functionality which allows users to perform the following tasks. 
+This topic is an overview of the Fiscal integration functionality that is available in Microsoft Dynamics 365 for Retail. The fiscal integration functionality is a framework designed to support local fiscal laws aimed to prevent fraud in the Retail industry. Typical scenarios that could be covered by using fiscal integration include:
 
-- Configure fiscal connectors – fiscal devices or services used for fiscal registration purposes like saving, digital signature, and secured submission of the fiscal data.
-- Configure document provider defining an output method and an algorithm of fiscal documents generation.
-- Configure Fiscal registration process – a sequence of steps of the fiscal registration process and a group of connectors used on each step.
+- Printing a fiscal receipt and giving it to the customer.
+- Securing the submission of the information related to sales and returns performed on POS to an external service provided by the authority.
+- Using data protection with a digital signature authorized by the authority.
+
+This topic provides guidelines for setting up the Fiscal integration functionality so users can perform the following tasks. 
+
+- Configure fiscal connectors, which are fiscal devices or services used for fiscal registration purposes like saving, digital signatures, and secured submission of fiscal data.
+- Configure the document provider, which defines an output method and an algorithm of fiscal documents generation.
+- Configure the fiscal registration process, which is defines a sequence of steps and a group of connectors used on each step.
 - Assign fiscal registration processes to POS functionality profiles.
-- Assign connector technical profiles either to Hardware profiles (this approach is used for the local fiscal connectors) or to POS functionality profiles (for other fiscal connector types).
+- Assign connector technical profiles, either to hardware profiles (for the local fiscal connectors) or to POS functionality profiles (for other fiscal connector types).
 
-The common fiscal integration execution flow is described below.
+The following steps describe the common fiscal integration execution flow.
 
 1. Initialization of the fiscal registration process.
   
-   After performing some actions where the fiscal registration is required, e.g. after a retail transaction has been concluded, the system finds a fiscal registration process associated with current POS functionality profile.
+   After performing some actions where the fiscal registration is required, such as after a retail transaction has been concluded, the system finds a fiscal registration process that is associated with current POS functionality profile.
 
 1. Search for a fiscal connector.
    
-   For each fiscal registration step included into the found fiscal registration process, the system matches the list of fiscal connectors that have a functional profile included in the connector group specified for this step with the list of connectors that have a technical profile associated with current hardware profile (for connector type that equals **Local** only) or with the current POS functionality profile (for other connector types).
+   For each fiscal registration step included in the found fiscal registration process, the system matches the list of fiscal connectors that have a functional profile included in the connector group specified for this step with the list of connectors that have a technical profile associated with current hardware profile (for connector type that equals **Local** only) or with the current POS functionality profile (for other connector types).
    
 1. Perform the fiscal integration.
 
    The system executes all necessary actions defined by an assembly linked with the found connector in accordance with the settings of the functional profile and technical profile found on the previous step for this connector.
 
-Before using the fiscal integration functionality, the following settings should be maintained:
+Before using the fiscal integration functionality, you should define the following settings:
 
 - Define the number sequence in **Retail parameters** for the reference:
   
