@@ -536,7 +536,7 @@
       href: user-interface/workspace-filter-group-subpattern.md
   - name: Control extensibility
     items:
-    - name: Build aextensible controls
+    - name: Build extensible controls
       href: user-interface/build-extensible-control.md
     - name: Keyboard shortcuts for extensible controls
       href: user-interface/keyboard-shortcuts-controls.md
