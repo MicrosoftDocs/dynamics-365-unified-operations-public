@@ -5,7 +5,7 @@ title: Advance invoices for Retail for Eastern Europe
 description: This topic describes how to set up advance notices for Retail for Eastern Europe. 
 author: epopov
 manager: annbe
-ms.date: 10/01/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -74,30 +74,30 @@ The Sales tax on prepayment journal voucher must not be posted if advance invoic
    - **Sales tax on prepayment journal voucher**
    - **Posting profile with prepayment journal voucher**
    - **Tax group for prepayment**
-   - **Item Sales tax group**
+   - **Item Sales tax group**.
 
-## Printing Advance invoices
+## Printing advance invoices
 
-It is possible to print an Advance invoices from POS on a windows printer connected to the hardware station. There are two options how an advance invoice could be printed from POS:
-- Print after conclude of transaction on POS. 
+It is possible to print advance invoices from POS on a Windows printer connected to the hardware station. There are two options how an advance invoice could be printed from POS:
+- Print after the conclusion of actransaction on POS. 
 
-  This happens automatically if an Advance invoice was generated and a windows printer was set up properly. In this case only the last advance invoice linked with the customer order is printed.
+  This happens automatically if an advance invoice was generated and a Windows printer was set up properly. In this case, only the last advance invoice linked with the customer order is printed.
 
 - Re-print advance from the transaction journal. 
 
-  Click button **Show journal** to open the transactions journal, find a customer order, and click button **Print Advance invoice**. In this case all advance invoices linked with the customer order would be printed.
+  Click **Show journal** to open the transactions journal, find a customer order, and then click **Print Advance invoice**. In this case, all advance invoices linked with the customer order will be printed.
 
-## How to set up a windows printer
+## How to set up a Windows printer
 
-Follow the steps below to enable printing documents from POS on a windows printer connected to the hardware station: 
+Follow the steps below to enable printing documents from POS on a Windows printer connected to the hardware station: 
 
-- Go to **_Retail > Channel setup > POS setup > POS profiles > Hardware profiles_**.
+- Go to **Retail > Channel setup > POS setup > POS profiles > Hardware profiles**.
 - Select a hardware profile related to the store where the printer is used.
-- Update settings either in the section **_Printer_** or **_Printer 2_**.
+- Update the settings either in the section **Printer** or **Printer 2**.
 
-  - Select option **Windows driver** in the field.
+  - Select **Windows driver**.
 
-  - Specify name of the printer in the field **Device name**.
+  - Specify the name of the printer in the **Device name** field.
 
-- Go to **_Retail > Retail IT > Distribution schedule_**.
-- Select the **_Job 1090_** and click button **Run now**.
+- Go to **Retail > Retail IT > Distribution schedule**.
+- Select the **Job 1090** and click **Run now**.
