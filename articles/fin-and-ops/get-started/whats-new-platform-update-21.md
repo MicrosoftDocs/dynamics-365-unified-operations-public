@@ -45,7 +45,7 @@ For information about the bug fixes included in each of the updates that are par
 
 ## Extensibility enhancements
 
-The release notes contain information about [the second wave of platform extensibility enhancements for the October 2018 release](/BusinessApplication-ReleaseNotes/October18/dynamics365-finance-operations/platform-extensibility2) which are coming with Platform update 21. There are eleven enhancements detailed with one of the highlights being the new ability to put the next call inside a chain of command method within a try-finally block to facilitate standard exception handling.
+The Release notes contain information about [the second wave of platform extensibility enhancements for the October 2018 release](/BusinessApplication-ReleaseNotes/October18/dynamics365-finance-operations/platform-extensibility2), which are coming with Platform update 21. There are eleven enhancements detailed, with one of the highlights being the new ability to put the next call inside a chain of command method within a try-finally block to facilitate standard exception handling.
 
 ## TransientSqlConnectionError X++ exception
 During an X++ SQL query execution, when a transient SQL connection error occurs on the server side, a TransientSqlConnectionError X++ exception will occur. Depending on the application requirements, the application should catch and handle the exception.
