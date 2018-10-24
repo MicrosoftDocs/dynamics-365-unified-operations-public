@@ -28,7 +28,7 @@ Batch Maintain Security Privilege can be granted to normal user to create an adh
 
 ## Run By user
 
-This functionality will give Batch Managers the ability to specify a specific User to run the Batch Job. This is very useful when you want to
+This functionality gives Batch Managers the ability to specify a specific User to run the Batch Job. This is very useful when you want to
 
 - Change the Current User who runs the Job if they are no longer active
 - Quickly set a user while copying the Batch Jobs from a company to another
