@@ -11,6 +11,9 @@ Uses
  
 Batch Maintain Security Privilege can be granted to normal user to create an adhock batch Job by assigning the Batch Job Manager Role to this User
 
+> [!IMPORTANT]
+> This feature is available as of platform update 20.
+
 ## Assign the Batch Manager Role to a User
 
 1.	Go to System administration > Security > Assign users to roles.
