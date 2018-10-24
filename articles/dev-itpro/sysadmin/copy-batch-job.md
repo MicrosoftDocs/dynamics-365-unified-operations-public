@@ -7,8 +7,7 @@ It will also Copy the Alerts and Dependencies from the source Job.
 
 
 >[!NOTE] 
->The Copied Batch Job will be created with a Status (Withhold), you will need to enable it.
-The Run By User can also be set to give this user the privilege to run the Job without being a Sys Admin.
+>The Copied Batch Job will be created with a Status (Withhold), you will need to enable it. The Run By User can also be set to give this user the privilege to run the Job without being a Sys Admin.
 
 ## Copy the batch job
 
