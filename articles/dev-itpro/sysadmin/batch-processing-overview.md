@@ -55,7 +55,7 @@ For more information please See [Batch Server Overview](batch-server-overview.md
 
 # Batch Functions
 
-Administrators and Batch Managers will be able to perform common tasks in a more productive manner. They will be able to easily copy batch jobs, change batch job user, and specify a time period which a job should not execute. 
+Administrators and Batch Managers can perform common tasks in a productive manner. They can easily create batch jobs, copy batch jobs, change batch job user, and specify a time period which a job should not execute. 
 
 -  [Create a Batch job](tasks/create-batch-job.md)
 -  [Batch Manager Role](runby.md).
