@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform 21
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (October 2018)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 21. This version was released in October 2018 and has a build number of 7.0.5073.
 
