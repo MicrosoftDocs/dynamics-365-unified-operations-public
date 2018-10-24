@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 21. This version was released in October 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/09/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,16 +32,22 @@ ms.dyn365.ops.version: Platform 21
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (October 2018)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 21. This version was released in October 2018 and has a build number of 7.0.5073.
 
-### Announcing the Dynamics 365 October '18 release notes
+## Dynamics 365 October '18 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
 
 [Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning. 
 
-### Platform update 21 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 21, sign in to Lifecycle Services (LCS) and view this KB article. 
+## Bug fixes
+For information about the bug fixes included in each of the updates that are part of Platform update 21, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2033925).
+
+## Extensibility enhancements
+
+The Release notes contain information about [the second wave of platform extensibility enhancements for the October 2018 release](/BusinessApplication-ReleaseNotes/October18/dynamics365-finance-operations/platform-extensibility2), which are coming with Platform update 21. There are eleven enhancements detailed, with one of the highlights being the new ability to put the next call inside a chain of command method within a try-finally block to facilitate standard exception handling.
 
 ## TransientSqlConnectionError X++ exception
 During an X++ SQL query execution, when a transient SQL connection error occurs on the server side, a TransientSqlConnectionError X++ exception will occur. Depending on the application requirements, the application should catch and handle the exception.
@@ -59,7 +65,7 @@ Many grids in Finance and Operations have a defined *default action*. This is a 
 
 ![Customer list](media/customerGrid.png  "Customer list")
 
-The **sticky default action** feature, which is available starting in Platform udate 21, controls where the default action column appears in the grid after personalizations that change the order or visibility of columns are applied.   
+The **sticky default action** feature, which is available starting in Platform update 21, controls where the default action column appears in the grid after personalizations that change the order or visibility of columns are applied.   
 
 With sticky default actions off, which corresponds to how default actions work prior to Platform update 21, the default action hyperlink would change to whatever column is the first textual column after personalizations are applied. For example, if you move the **Account** column to be fourth column in the grid (or alternatively if you hide the **Account** column), the hyperlink representing the default action moves to the **Name** column. 
 
