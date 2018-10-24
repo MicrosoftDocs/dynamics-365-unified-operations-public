@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with Platform update 12.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 10/09/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -580,7 +580,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (contoso\\svc-LocalAgent$).
 
     ```PowerShell
-    # Specify User Names
+    # Specify user names
     $AOSDomainUser = 'Contoso\AXServiceUser';
     $LocalDeploymentAgent = 'contoso\svc-LocalAgent$';
 
@@ -588,7 +588,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     $AosStorageFolderPath = 'D:\aos-storage';
     $AgentFolderPath = 'D:\agent';
 
-    # Create new Directory
+    # Create new directory
     $AosStorageFolder = New-Item -type directory -path $AosStorageFolderPath;
     $AgentFolder = New-Item -type directory -path $AgentFolderPath;
 
@@ -596,7 +596,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     New-SmbShare –Name aos-storage -Path $AosStorageFolderPath -EncryptData $True
     New-SmbShare –Name agent -Path $AgentFolderPath
 
-    # Set ACL for Aos Storage Folder
+    # Set ACL for AOS storage folder
     $Acl = Get-Acl $AosStorageFolder.FullName;
     $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($AOSDomainUser,'Modify','Allow');
     $Acl.SetAccessRule($Ar);
