@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with Platform update 12.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 10/09/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -577,7 +577,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    4. Check **Encrypt data access**.
    5. Grant **Modify** permissions for every machine in the Service Fabric cluster except OrchestratorType.
    6. Grant **Modify** permissions for the user AOS domain user (contoso\\AXServiceUser) and the gMSA user (contoso\\svc-AXSF$).
-    
+
       >[!NOTE]
       > You may need to enable **Computers** under **Object Types** to add machines or enable **Service Accounts** under **Object Types** to add service accounts.
 
@@ -586,6 +586,36 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     2. Select **Tasks** \> **New Share** to create a new share. Name the share **agent**.
     3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (contoso\\svc-LocalAgent$).
+
+    ```PowerShell
+    # Specify user names
+    $AOSDomainUser = 'Contoso\AXServiceUser';
+    $LocalDeploymentAgent = 'contoso\svc-LocalAgent$';
+
+    # Specify the path
+    $AosStorageFolderPath = 'D:\aos-storage';
+    $AgentFolderPath = 'D:\agent';
+
+    # Create new directory
+    $AosStorageFolder = New-Item -type directory -path $AosStorageFolderPath;
+    $AgentFolder = New-Item -type directory -path $AgentFolderPath;
+
+    # Create new SMB share
+    New-SmbShare –Name aos-storage -Path $AosStorageFolderPath -EncryptData $True
+    New-SmbShare –Name agent -Path $AgentFolderPath
+
+    # Set ACL for AOS storage folder
+    $Acl = Get-Acl $AosStorageFolder.FullName;
+    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($AOSDomainUser,'Modify','Allow');
+    $Acl.SetAccessRule($Ar);
+    Set-Acl $AosStorageFolder.FullName $Acl;
+
+    # Set ACL for AgentFolder
+    $Acl = Get-Acl $AgentFolder.FullName;
+    $Ar = New-Object system.security.accesscontrol.filesystemaccessrule($LocalDeploymentAgent,'FullControl','Allow');
+    $Acl.SetAccessRule($Ar);
+    Set-Acl $AgentFolder.FullName $Acl;
+    ```
 
 ### <a name="setupsql"></a> 13. Set up SQL Server
 
