@@ -45,45 +45,41 @@ This topic provides guidelines for setting up the Fiscal integration functionali
 - Assign fiscal registration processes to POS functionality profiles.
 - Assign connector technical profiles, either to hardware profiles (for the local fiscal connectors) or to POS functionality profiles (for other fiscal connector types).
 
-The following steps describe the common fiscal integration execution flow.
+The following scenario shows the common fiscal integration execution flow.
 
 1. Initialization of the fiscal registration process.
   
-   After performing some actions where the fiscal registration is required, such as after a retail transaction has been concluded, the system finds a fiscal registration process that is associated with current POS functionality profile.
+   After performing some actions where fiscal registration is required, such as after a retail transaction has been concluded, the fiscal registration process is associated with the current POS functionality profile.
 
 1. Search for a fiscal connector.
    
-   For each fiscal registration step included in the found fiscal registration process, the system matches the list of fiscal connectors that have a functional profile included in the connector group specified for this step with the list of connectors that have a technical profile associated with current hardware profile (for connector type that equals **Local** only) or with the current POS functionality profile (for other connector types).
+   For each fiscal registration step included in the fiscal registration process, the system matches the list of fiscal connectors. These connectors have a functional profile included in the connector group specified, with a list of connectors that have a technical profile associated with current hardware profile (for connector type that equals **Local** only) or with the current POS functionality profile (for other connector types).
    
 1. Perform the fiscal integration.
 
-   The system executes all necessary actions defined by an assembly linked with the found connector in accordance with the settings of the functional profile and technical profile found on the previous step for this connector.
+   The system executes all necessary actions defined by an assembly linked with the found connector. This is done in accordance with the settings of the functional profile and technical profile that were found on the previous step for this connector.
 
 Before using the fiscal integration functionality, you should define the following settings:
 
-- Define the number sequence in **Retail parameters** for the reference:
+- Define the number sequence on the **Retail parameters** page for fiscal functional profile number.
   
-  - Fiscal functional profile number.
-  
-- Define the number sequences in **Retail shared parameters** for the following references:
+- Define the number sequences on the **Retail shared parameters** page for the following references:
   
   - Fiscal technical profile number
   - Fiscal connector group number
   - Registration process number.
 
 - Create a **Fiscal connector** in **Retail > Channel setup > Fiscal integration > Fiscal connectors** for each device or service that you plan to use for the fiscal integration purposes.
-    - Load XML-configuration. 
 
--  Create a **Fiscal document provider** in **Retail > Channel setup > Fiscal integration > Fiscal document providers** for all fiscal connectors. Data mapping is considered as a part of the fiscal document provider. To set up different data mappings for the same connector (e.g. depending on the State-specific regulations), you should create different Fiscal document providers.
-      - Load XML-configuration.
+-  Create a **Fiscal document provider** in **Retail > Channel setup > Fiscal integration > Fiscal document providers** for all fiscal connectors. Data mapping is considered a part of the fiscal document provider. To set up different data mappings for the same connector (such as depending on state-specific regulations), you should create different fiscal document providers.
 
 - Create a **Connector functional profile** in **Retail > Channel setup > Fiscal integration > Connector functional profiles** for each Fiscal document provider.
-  - Select a Connector name.
-  - Select a Document provider.
-  - Specify VAT rates settings on the tab **Service setup**.
-  - Specify VAT codes mapping and Tender type mapping on the tab **Data mapping**.
+  - Select a connector name.
+  - Select a cocument provider.
+  - Specify VAT rates settings on the **Service setup** tab.
+  - Specify VAT codes mapping and tender type mapping on the **Data mapping** tab.
 
-Examples:
+#### Examples 
 
   |  | Format | Example | 
   |--------|--------|--------|
@@ -91,27 +87,29 @@ Examples:
   | VAT codes mapping | VATcode : value | vat20 : 1, vat18 : 2 |
   | Tender types mapping | TenderTyp : value | Cash : 1, Card : 2 |
 
-- Create **Fiscal connector groups** in **Retail > Channel setup > Fiscal integration > Fiscal connector group**. Connector group is a subset of functional profiles linked with fiscal connectors that perform identical functions and are used at the same stage within a fiscal registration process.
+- Create **Fiscal connector groups** in **Retail > Channel setup > Fiscal integration > Fiscal connector group**. A connector group is a subset of functional profiles linked with fiscal connectors that perform identical functions and are used at the same stage within a fiscal registration process.
 
-   - Add functional profiles to the connector group – click **Add** in **Functional profiles** and select a profile number.
-   - If you want to suspend usage of the functional profile, set the flag **Disable** to **Yes**. 
+   - Add functional profiles to the connector group. Click **Add** on the **Functional profiles** page and select a profile number.
+   - If you want to suspend usage of the functional profile, set **Disable** to **Yes**. 
    
-     This change affects the current connector group only. You may continue using the same functional profile in other connector groups.
+     This change affects the current connector group only. You can continue using the same functional profile in other connector groups.
 
      >[!NOTE]
-     > Within a connector group, each fiscal connector may have one functional profile only.
+     > Within a connector group, each fiscal connector can only have one functional profile.
 
-- Create a **Connector technical profile** in **Retail > Channel setup > Fiscal integration > Connector technical profiles** for each Fiscal connector.
-  - Select a Connector name.
-  - Select Connector type: 
-        - **Local**: set this type for physical devices or applications installed on a local machine.
-        - **Internal**: set this type for fiscal devices and services connected to Retail Server.
-        - **External**: for external fiscal services like a web-portal provided by a tax authority.
+- Create a **Connector technical profile** in **Retail > Channel setup > Fiscal integration > Connector technical profiles** for each fiscal connector.
+  - Select a connector name.
+  - Select a connector type: 
+  
+        - **Local** - Set this type for physical devices or applications installed on a local machine.
+        - **Internal** - Set this type for fiscal devices and services connected to Retail Server.
+        - **External** - For external fiscal services like a web-portal provided by a tax authority.
+	
   - Specify settings on the **Connection** tab.
 
       
  >[!NOTE]
- > The system can load an updated version of a configuration loaded earlier both for functoional and technical profiles. If an appropriate connector or document provider is already in use, you will be notified. By default, the system keeps changes made manually in functional and technical profiles. In order to override them with the default set of parameters from a configuration, you should click **Update** on the  **Connector functional profiles** and **Connector technical profiles** pages.
+ > An updated version of a configuration loaded earlier will be loaded for both functional and technical profiles. If an appropriate connector or document provider is already in use, you will be notified. By default, all changes that have been made manually in functional and technical profiles are stored. In order to override them with the default set of parameters from a configuration,click **Update** on the **Connector functional profiles** and **Connector technical profiles** pages.
  
 - Create a **Fiscal registration process** in **Retail > Channel setup > Fiscal integration > Fiscal registration processes** for each unique process of the fiscal integration. A registration process is defined by sequence of the registration steps and a connector group used on each step. 
   
@@ -119,19 +117,19 @@ Examples:
 	  - Click **Add**.
 	  - Select a connector type.
 	  >[!NOTE]
-          > This field defines where the system will search a technical profile of the connector: in hardware profiles for connector type **Local**, or in POS functionality profiles for other fiscal connector types.
+          > This field defines where the system will search in a technical profile for the connector, either in hardware profiles for connector type **Local**, or in POS functionality profiles for other fiscal connector types.
 	  
-   - Select a Connector group to be used on this step.
+   - Select a Connector group .
      >[!NOTE]
-     >  By clicking **Validate**, you can check an integrity of the registration process structure. It’s recommended to make such validations in the following cases:
-         - For a new registration process after all the settings are completed, including binding to POS functionality profiles and Hardware profiles.
-         - After making updates in an existing registration process.
+     >  Click **Validate** to check the integrity of the registration process structure. It’s recommended that validations be made in the following cases:
+         - For a new registration process after all the settings are completed, including binding to POS functionality profiles and hardware profiles.
+         - After making updates to an existing registration process.
 
--  Bind Fiscal registration processes to POS functionality profiles in **Retail > Channel setup > POS setup > POS profiles > Functionality profiles**.
+-  Bind fiscal registration processes to POS functionality profiles in **Retail > Channel setup > POS setup > POS profiles > Functionality profiles**.
    - Click **Edit** and select a **Process number** on the **Fiscal registration process** tab.
-- Bind the connector technical profiles to the hardware profiles in **Retail > Channel setup > POS setup > POS profiles > Hardware profiles.
+- Bind the connector technical profiles to the hardware profiles in **Retail > Channel setup > POS setup > POS profiles > Hardware profiles**.
    - Click **Edit**, then click **New** on the **Fiscal technical profile** tab.
    - Select a connector technical profile in the **Profile number** field.
    
      >[!NOTE]
-     > You can add several technical profiles to a hardware profile, but cases where a hardware profile has more than one intersection with any connector group is not supported. It’s recommended that you validate a registration process after updating all the hardware profiles to avoid incorrect settings.
+     > You can add several technical profiles to a hardware profile. However, this is not supported if a hardware profile has more than one intersection with any connector group. It’s recommended that you validate a registration process after updating all the hardware profiles to avoid incorrect settings.
