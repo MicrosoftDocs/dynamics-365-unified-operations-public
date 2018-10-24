@@ -156,6 +156,10 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
     The certificate must use private key storage, and server authentication must be listed in the enhanced key usage property. Additionally, the certificate must be trusted locally, and it can't be expired. It must be stored in the personal certificate store location on the local computer.
 
 5. If a specific user is required, enter the user name and password that the application pool should run under. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended.
+
+    > [!NOTE]
+    > - It is important to note that service accounts, out of box, still function under the same password policy that is defined for all other accounts.  This means that the minimum password age policy still applies to the Retail Store Scale Unit service account and must be updated when necessary.  By default, on Windows Server 2012 R2, this is typically 42 days.  If the password does expire on a used service account, the Retail Server will fail to continue functioning until the issue is fixed.
+
 6. On the next page, enter the user account and password for the Retail Server application pool and Async Client. By default, this account is automatically generated. However, you can manually enter the user account and password.
 7. Enter the HTTPS port to use, and verify that the host name of the computer is correct. Then select **Next** to continue.
 
@@ -357,6 +361,11 @@ Here is a checklist of things to verify:
 3. In Retail, on the **Channel profile** page, verify that the URLs are correct. (In other words, verify that the computer name in each URL is correct, the URL is correctly formatted, and so on.)
 4. In Retail, on the **Channel database** page, verify that full synchronization correctly occurred for the new channel database.
 5. Verify that the retail store is correctly configured to use the new channel database.
+
+If the Retail Store Scale Unit stops functioning after a period of time, there are two simple things to verify:
+
+1. Verify if the password policy configured has required the service account that was generated to change the password (Password expiration).
+2. It is always possible to rerun the same installer over the current installation (idempotent), which will update a service account's password or allow the user to update the selected account's password.
 
 ### Uninstall Retail Store system
 
