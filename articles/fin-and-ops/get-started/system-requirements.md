@@ -49,8 +49,7 @@ To find the latest release for each web browser, go to the software manufacturer
 
 > [!NOTE]
 > - To enable Task Recorder to capture screenshots and include them in Microsoft Word documents that are generated, you must install a pre-release Chrome extension. <!---For instructions about how to install the extension, see [Screenshot Extension setup](../../dev-itpro/user-interface/task-recorder).-->
-> - The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit-compatible operating system.
-> - The Report Designer for Financial reporting is started as a ClickOnce application. It requires a 64-bit-compatible operating system. If you're using Chrome, you must install a ClickOnce extension to download the Report Designer client. If you use Chrome in Incognito mode, make sure that the ClickOnce extension is also enabled for Incognito mode.
+> - The Workflow Editor and Report Designer for Financial reporting are started as ClickOnce applications. They require a 64-bit-compatible operating system. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications out of the box. If you're using Chrome, you must install a ClickOnce extension such as [Meta4](https://chrome.google.com/webstore/detail/meta4-clickonce-launcher/jkncabbipkgbconhaajbapbhokpbgkdc) to use ClickOnce applications. If you use Chrome in Incognito mode, make sure that the ClickOnce extension is also enabled for Incognito mode.
 > - To preview PDF files, we recommend that you use browsers such as Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
 
 ### Supported web browsers for Retail Cloud POS
