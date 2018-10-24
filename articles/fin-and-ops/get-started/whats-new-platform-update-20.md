@@ -58,7 +58,7 @@ Some of the most typical changes that a user makes to a grid are adding, removin
 columns. In this update, we’ve made adding and removing columns easier by promoting the **Add columns** and **Hide this column** actions directly into the grid column header context menus. 
 
 ## Improved behavior of non-replacing lookups
-Some lookups in Finance and Operations are *non-replacing*, meaning that when a value is selected from the lookup, it doesn’t replace what was already in the field, but instead it appends the selected value into the field. As an example, the lookups in the **Advanced filter/sort** dialog are non-replacing by default.  
+Some lookups in Finance and Operations are *non-replacing*, meaning that when a value is selected from the lookup, it doesn’t replace what was already in the field, but instead it appends the selected value into the field. As an example, the lookups in the **Advanced filter/sort** dialog box are non-replacing by default.  
 
 The behavior of non-replacing lookups has been improved in the following ways: 
 
@@ -70,7 +70,7 @@ The behavior of non-replacing lookups has been improved in the following ways:
 
 - A new icon now appears on non-replacing lookups to visually differentiate them from regular lookups.
 
-These adjustments make it easier for users to filter data using the **Advanced filter/sort** dialog.
+These adjustments make it easier for users to filter data using the **Advanced filter/sort** dialog box.
 
 ## Suppressing hyperlinks 
 Developers are able to suppress hyperlinks on form controls by setting the **EnableFormRef** property to **No**. This property can be set on both forms and form extensions. When a hyperlink is suppressed, the corresponding **View details** option in the right-click context menu is also suppressed. 
