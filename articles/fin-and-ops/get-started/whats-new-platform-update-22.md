@@ -32,6 +32,7 @@ ms.dyn365.ops.version: Platform 22
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (October 2018)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/review-banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 22. This version was released in October 2018 and has a build number of XXX.
 
