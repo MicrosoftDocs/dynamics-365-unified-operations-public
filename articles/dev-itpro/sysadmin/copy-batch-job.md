@@ -1,15 +1,17 @@
 # Copy a batch job
 
-Copy Batch Job will give you the ability to copy an existing Batch Job and Batch Tasks including recurrences, this is very handy when you want to create same Jobs for different legal entities.
+Copy Batch Job gives you the ability to copy an existing Batch Job and Batch Tasks including recurrences, this is very handy when you want to create same jobs for different legal entities.
+
 You can set the description, Company, Schedule Start Date/Time, recurrence and the Run By account in One Go. 
 It will also Copy the Alerts and Dependencies from the source Job.
-Note:
-The Copied Batch Job will be created with a Status (Withhold), you will need to enable it.
+
+
+>[!NOTE] 
+>The Copied Batch Job will be created with a Status (Withhold), you will need to enable it.
 The Run By User can also be set to give this user the privilege to run the Job without being a Sys Admin.
 
-[!NOTE] This feature is available as of platform update 20.
-
 ## Copy the batch job
+
 1.	Go to System administration > Inquiries > Batch jobs.
 2.	Select the desired Job and on the Action Pane, click Batch Job.
 3.	Click Copy
