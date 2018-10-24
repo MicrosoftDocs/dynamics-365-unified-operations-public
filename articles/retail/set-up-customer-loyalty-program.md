@@ -5,7 +5,7 @@ title: Set up customer loyalty programs
 description: Loyalty programs can help increase customer loyalty by rewarding customers for their interactions with the Retailer's brand. In Microsoft Dynamics 365 for Retail, you can set up simple or complex loyalty programs that apply across your legal entities in any retail channel. This article describes the loyalty capabilities within Microsoft Dynamics 365 for Retail and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -37,10 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 Loyalty programs can help increase customer loyalty by rewarding customers for their interactions with the Retailer's brand. In Microsoft Dynamics 365 for Retail, you can set up simple or complex loyalty programs that apply across your legal entities in any retail channel. This article describes the loyalty capabilities within Microsoft Dynamics 365 for Retail and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 
-Loyalty features
-----------------
-
-You can set up your loyalty program so that they include the following options:
+You can set up your loyalty program so that they include the following options.
 
 -   Set up multiple types of rewards that you offer in your loyalty programs, and track participation in your loyalty programs.
 -   Set up loyalty programs that represent the different reward incentives that you offer. You can include loyalty program tiers to offer greater incentives and rewards to customers who shop more frequently or spend more money in your stores.
@@ -74,7 +71,7 @@ The following table describes the processes that must be run to send the loyalty
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
 | 1050 (loyalty information)           | Run this process to send the loyalty data from Dynamics 365 for Retail to the retail stores. It's a good idea to schedule this process to run frequently, so that loyalty data is transmitted to all stores.                                                                                                                                                                                               | Distribution schedule                |
 | Process loyalty schemes              | Run this process to associate loyalty schemes with the retail channels that the loyalty scheme is assigned to. This process can be scheduled to run as a batch process. You must run this process if you change loyalty configuration data, such as loyalty schemes, loyalty programs, or loyalty reward points.                                                                                               | Process loyalty schemes              |
-| Process offline loyalty transactions | Run this process to update loyalty cards so that they include transactions that were processed offline. This process applies only if the **Earn offline** check box is selected on the **Retail shared parameters **page, so that rewards can be earned offline.                                                                                                                                               | Process offline loyalty transactions |
+| Process offline loyalty transactions | Run this process to update loyalty cards so that they include transactions that were processed offline. This process applies only if the **Earn offline** check box is selected on the **Retail shared parameters** page, so that rewards can be earned offline.                                                                                                                                               | Process offline loyalty transactions |
 | Update loyalty card tiers            | Run this process to evaluate the customer’s earning activity against the tier rules for a loyalty program, and to update the customer’s tier status. This process is required only if you change the tier rules in loyalty programs and want the updated rules to be retroactively applied to loyalty cards that have already been issued. This process can be run as a batch process or for individual cards. | Update loyalty card tiers            |
 
 ## Loyalty enhancements
@@ -135,12 +132,12 @@ Image: View expiring points
 	
 ## Upcoming enhancements
 
-The following features would be available in the future monthly updates of Dynamics 365 for Retail product
+The following features will be available in the future monthly updates of Dynamics 365 for Retail.
 	
-- Customers want the capability to view their loyalty balance details on the consumer facing channels. Similarly, it is important for the cashiers to view the customer's history of the loyalty points in MPOS/CPOS to quickly answer any queries from the customer. With the upcoming monthly release, the customers and cashiers will be able to see the loyalty history details
+- Customers want the capability to view their loyalty balance details on the consumer-facing channels. Similarly, it is important for the cashiers to view the customer's history of the loyalty points in MPOS/CPOS to quickly answer any queries from the customer. In the upcoming monthly releases, customers and cashiers will be able to see loyalty history details.
 
-- Many retailers are able to award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand—for example, filling an online survey, visiting a store, liking the retailers on Facebook, tweeting about the retailer, and more. We are adding the capability to award loyalty points for any customer activity. To do so, the retailer can define an "Other activity type" and define the earning rules for these activities. We are also exposing a Retail Server API that can be called whenever such an activity is identified which will use the earning rule to award the required loyalty points
+- Many retailers are able to award loyalty points only based on the sales transactions, but the more customer-centric retailers want to reward their customers for any of their engagement activity with their brand. For example, they want to provide rewards for filling an online survey, visiting a store, liking the retailers on Facebook, tweeting about the retailer, and more. In the future, we'll be adding the ability to award loyalty points for any customer activity. To do so, the retailer can define an "Other activity type" and define the earning rules for these activities. We are also exposing a Retail Server API that can be called whenever such an activity is identified which will use the earning rule to award the required loyalty points.
 
-- To enable a true omni-channel retail experience, we will allow the customers to earn and redeem loyalty points across all channels. Currently, the Call center only allows to earn loyalty points, but the redeem capability will be added with the November monthly release. 
+- To enable a true omni-channel retail experience, we will allow the customers to earn and redeem loyalty points across all channels. That capability will be added with the November monthly release. 
 
-- Free or discounted shipping is one of the highly motivating factors for customers to buy online. To enable the retailers from setting up shipping promotions, we will introduce new type of promotion, using which, the retailer can define the thresholds, which once met, will qualify the customers for discounted or free shipping.
+- Free or discounted shipping is one of the highly motivating factors for customers to buy online. To enable the retailers to set up shipping promotions, we will introduce a new type of promotion, with which the retailer can define the thresholds, which once met, will qualify the customers for discounted or free shipping.
