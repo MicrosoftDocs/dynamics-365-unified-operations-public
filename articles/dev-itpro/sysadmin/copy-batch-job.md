@@ -7,6 +7,8 @@ Note:
 The Copied Batch Job will be created with a Status (Withhold), you will need to enable it.
 The Run By User can also be set to give this user the privilege to run the Job without being a Sys Admin.
 
+[!NOTE] This feature is available as of platform update 20.
+
 ## Copy the batch job
 1.	Go to System administration > Inquiries > Batch jobs.
 2.	Select the desired Job and on the Action Pane, click Batch Job.
