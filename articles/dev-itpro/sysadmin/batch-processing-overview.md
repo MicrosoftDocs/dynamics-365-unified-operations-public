@@ -50,5 +50,20 @@ Use batch groups to categorize batch tasks and run them on specific servers. The
 
 For example, server A is set up to print reports, and server B is set up to send electronic documents. You can use batch groups to make sure that reporting tasks are run on server A and electronic documents are processed by server B.
 
+For more information please See [Batch Server Overview](batch-server-overview.md)
+
+To Create a Batch Job see [Create a Batch job](tasks/create-batch-job.md)
+
+
+# Updates to batch in PU21
+
+Finance and Operations users will be presented with a set of new features in managing batch jobs.
+Productive tools that help manage batch job creation and execution, are crucial in helping administrators manage the performance and efficiency of the system.
+Administrators will be able to perform common tasks in a more productive manner. They will be able to easily copy batch jobs, change batch job user, and specify a time period which a job should not execute. 
+
+-  [Batch Manager Role](runby.md).
+-  [Batch active period](activeperiod.md).
+-  [Copy a batch job](copy-batch-job.md).
+
 
 
