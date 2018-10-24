@@ -20,7 +20,7 @@ ms.reviewer: josaw
 ms.search.scope: Retail, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: Eastern Europe
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia 
 ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-10-01

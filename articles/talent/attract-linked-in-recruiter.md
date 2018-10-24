@@ -3,7 +3,7 @@
 
 title: Sourcing with LinkedIn Recruiter
 description: This topic provides information about using machine learning to get job and job candidate recommendations.
-author: 
+author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
@@ -23,8 +23,8 @@ ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-Attract Admin view to start LinkedIn Recruiter integration# ms.search.industry: 
-ms.author: rschloma
+ms.search.industry: 
+ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 
