@@ -437,7 +437,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 > [!IMPORTANT]
 > Make sure the Microsoft SQL Server Management Studio setup is in the same language as the operating system of the target machine.
-> Ensure the installer files are named as defined in NodeTopologyDefinition.xml
+> Ensure the installer files are named as defined in NodeTopologyDefinition.xml.
 > msodbcsql.ms
 > SSMS-Setup-*.exe
 > vcredist_x64.exe
