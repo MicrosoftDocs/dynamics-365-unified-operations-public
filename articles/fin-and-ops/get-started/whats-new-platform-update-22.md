@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 22. This version was released in October 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/09/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
