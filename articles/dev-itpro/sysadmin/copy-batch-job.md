@@ -5,9 +5,9 @@ Copy Batch Job gives you the ability to copy an existing Batch Job and Batch Tas
 You can set the description, Company, Schedule Start Date/Time, recurrence and the Run By account in One Go. 
 It will also Copy the Alerts and Dependencies from the source Job.
 
-
 >[!NOTE] 
->The Copied Batch Job will be created with a Status (Withhold), you will need to enable it. The Run By User can also be set to give this user the privilege to run the Job without being a Sys Admin.
+>This feature is available as of platform update 20.
+
 
 ## Copy the batch job
 
@@ -20,6 +20,9 @@ It will also Copy the Alerts and Dependencies from the source Job.
 4.	Enter the required changes and click Ok, you can set the View tasks for the new batch job to Yes to go directly to the Batch Tasks page
 
 ![Copy Batch Form](./media/copy-batch-form.png) 
+
+>[!IMPORTANT] 
+>The Copied Batch Job will be created with a Status (Withhold), you will need to enable it. The Run By User can also be set to give this user the privilege to run the Job without being a Sys Admin.
 
 ## Enable the batch job
 
