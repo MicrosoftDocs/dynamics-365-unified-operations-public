@@ -435,6 +435,14 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/en-us/help/3179560> |
 | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
 
+> [!IMPORTANT]
+> Make sure the Microsoft SQL Server Management Studio setup is in the same language as the operating system of the target machine.
+> Ensure the installer files are named as defined in NodeTopologyDefinition.xml.
+> msodbcsql.ms
+> SSMS-Setup-*.exe
+> vcredist_x64.exe
+> AccessDatabaseEngine_x64.exe
+
 #### Follow these steps for each VM, or use remoting from a single machine
 
 > [!NOTE]
@@ -802,16 +810,16 @@ Finance and Operations requires additional configuration beyond the default out-
 
 1. Configure the AD FS identifier so that it matches the AD FS token issuer.
 
-  This command is related to adding new users using the **Import users** option on the **Users** page (**System administration > Users > Users**) in the Finance and Operations client.
+   This command is related to adding new users using the **Import users** option on the **Users** page (**System administration > Users > Users**) in the Finance and Operations client.
 
-    ```powershell
+    ```PowerShell
     $adfsProperties = Get-AdfsProperties
     Set-AdfsProperties -Identifier $adfsProperties.IdTokenIssuer
     ```
 
 2. You should disable Windows Integrated Authentication (WIA) for intranet authentication connections, unless you've configured AD FS for mixed environments. For more information about how to configure WIA so that it can be used with AD FS, see [Configure browsers to use Windows Integrated Authentication (WIA) with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia).
 
-  This command is related to using forms authentication upon signing into the Finance and Operations client. Other options, such as single sign-on, may be available which require additional setup.
+   This command is related to using forms authentication upon signing into the Finance and Operations client. Other options, such as single sign-on, may be available which require additional setup.
 
     ```powershell
     Set-AdfsGlobalAuthenticationPolicy -PrimaryIntranetAuthenticationProvider FormsAuthentication, MicrosoftPassportAuthentication
@@ -819,7 +827,7 @@ Finance and Operations requires additional configuration beyond the default out-
 
 3. For sign-in, the user's email address must be an acceptable authentication input.
 
-  This command is related to setting up email claims. Other options, such as transformation rules, may be available which require additional setup.
+   This command is related to setting up email claims. Other options, such as transformation rules, may be available which require additional setup.
 
     ```powershell
     Add-Type -AssemblyName System.Net
