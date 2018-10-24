@@ -1,3 +1,35 @@
+---
+# required metadata
+
+title: Create, approve, and post jobs in Attract
+description: This topic describes the elements of a job in Attract. It also explains how to create a job.
+author: josaw
+manager: AnnBe
+ms.date: 10/24/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Talent, Core
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+ms.search.industry: 
+ms.author: josaw
+ms.search.validFrom: 2018-10-24
+ms.dyn365.ops.version: Talent October 2018 update
+
+---
+
 # Create, approve, and post jobs in Attract
 
 [!include [banner](includes/banner.md)]
