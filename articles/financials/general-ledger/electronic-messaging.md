@@ -53,7 +53,7 @@ The following illustration shows the flow of data for electronic messaging.
 
 The Electronic messages functionality supports the following scenarios:
 
-- Manually create messages and generate reports that are based on associated exported ER formats of various types: Microsoft Excel, XML, JavaScript Object Notation (JSON), PDF, text, and Microsoft Word.
+- Manually create messages and generate reports that are based on associated exporting ER formats of various types: Microsoft Excel, XML, JavaScript Object Notation (JSON), PDF, text, and Microsoft Word.
 - Automatically create and process messages that are based on information that was requested and obtained from an authority via an associated importing ER format.
 - Collect and process information from a data source Finance and Operations tables as message items.
 - Store additional information, and evaluate various values by calling specifically defined executable classes in relation to messages or message items.
