@@ -435,6 +435,14 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/en-us/help/3179560> |
 | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/en-us/download/details.aspx?id=13255> |
 
+> [!IMPORTANT]
+> Make sure the Microsoft SQL Server Management Studio setup is in the same language as the operating system of the target machine.
+> Ensure the installer files are named as defined in NodeTopologyDefinition.xml
+> msodbcsql.ms
+> SSMS-Setup-*.exe
+> vcredist_x64.exe
+> AccessDatabaseEngine_x64.exe
+
 #### Follow these steps for each VM, or use remoting from a single machine
 
 > [!NOTE]
