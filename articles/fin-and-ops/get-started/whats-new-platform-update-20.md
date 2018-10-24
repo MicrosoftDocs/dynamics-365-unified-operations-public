@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/21/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -56,6 +56,26 @@ For information about the bug fixes included in each of the updates that are par
 ## Adding and removing columns in a grid is easier
 Some of the most typical changes that a user makes to a grid are adding, removing, resizing, and reordering
 columns. In this update, we’ve made adding and removing columns easier by promoting the **Add columns** and **Hide this column** actions directly into the grid column header context menus. 
+
+## Improved behavior of non-replacing lookups
+Some lookups in Finance and Operations are *non-replacing*, meaning that when a value is selected from the lookup, it doesn’t replace what was already in the field, but instead it appends the selected value into the field. As an example, the lookups in the **Advanced filter/sort** dialog are non-replacing by default.  
+
+The behavior of non-replacing lookups has been improved in the following ways: 
+
+- Type-ahead behavior has been turned off for non-replacing lookups. 
+
+- Only characters typed after the lookup has been opened are used to position in the lookup grid.
+
+- The selected value from the lookup is appended to what was in the field before the lookup was opened (that is, any characters typed while the lookup was open are replaced when appending the selected value from the lookup).  
+
+- A new icon now appears on non-replacing lookups to visually differentiate them from regular lookups.
+
+These adjustments make it easier for users to filter data using the **Advanced filter/sort** dialog.
+
+## Suppressing hyperlinks 
+Developers are able to suppress hyperlinks on form controls by setting the **EnableFormRef** property to **No**. This property can be set on both forms and form extensions. When a hyperlink is suppressed, the corresponding **View details** option in the right-click context menu is also suppressed. 
+ 
+Currently when users click on some hyperlinks, it results in an attempted navigation and then an error message, as there is no target form to open. Suppressing hyperlinks in these scenarios will improve the user experience by removing these confusing hyperlinks.  
 
 ## Chain of Command on nested types 
 In this release, we’ve enabled Chain of Command on nested types within forms including data sources and controls. This allows Chain of Command to be used for a much wider range of extension scenarios involving forms. For more information, see [Nested class methods in forms can be wrapped in Platform update 16 or later](../../dev-itpro/extensibility/method-wrapping-coc.md#nested-class-methods-in-forms-can-be-wrapped-in-platform-update-16-or-later).
