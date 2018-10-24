@@ -1,7 +1,7 @@
 
 # Batch active period
 
-In Platform Update 21 it is now possible to have an additional level of control over when batch jobs execute. E.g. prior to Platform Update 21, it was only possible to say that a batch job should execute every hour for a specified number of hours or until a given date (or indefinitely). Now it is possible to provide an additional active period so that a batch job can run every hour but only between 6pm and 8am, 
+It is now possible to have an additional level of control over when batch jobs execute. E.g. prior to Platform Update 21, it was only possible to say that a batch job should execute every hour for a specified number of hours or until a given date (or indefinitely). Now it is possible to provide an additional active period so that a batch job can run every hour but only between 6pm and 8am, 
 Administrators will be able to easily specify time ranges during which jobs within a batch group can start execution. 
 
 Uses: 
