@@ -8,6 +8,9 @@ Uses:
 - Run your Batch Jobs outside of office hours.
 - Set recurrence Within the Active Period anytime 
 
+> [!NOTE]
+> This feature is available as of platform update 21.
+
 ## Setup Active Periods for Batch Jobs 
 
 1.	Go to System administration > Setup > 
