@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform 22
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 22. This version was released in October 2018 and has a build number of XXX.
 
-### Announcing the Dynamics 365 October '18 release notes
+### Dynamics 365 October '18 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform? 
 
 [Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning. 
