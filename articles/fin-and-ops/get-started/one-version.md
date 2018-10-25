@@ -133,11 +133,11 @@ Refer to the [Process for moving to the latest update of Finance and Operations]
 
 ### What components of my solution will be impacted by One Version monthly updates?
 
-All cloud components including Retail Server and Cloud POS will be updated at the same cadence as your Retail headquarters.
+All cloud components including Retail Server and Cloud POS will be updated at the same cadence as your Dynamics 365 headquarters.
 
 ### What options are available to minimize impact to my Retail cloud components?
 
-Retail cloud components will require the same down time as your Retail headquarters. In an upcoming release, the Retail Store Scale Unit (RSSU) will be available to reduce and further schedule updates to your deployment. Please refer to our published release information on our [documentation](https://docs.microsoft.com/en-us/business-applications-release-notes/October18/dynamics365-retail/planned-features) and [release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/#pivot=products&panel=products1) sites for additional details on RSSU.
+Retail cloud components will require the same down time as your Dynamics 365 Headquarters. In an upcoming release, the Retail Cloud Scale Unit (RCSU) will be available to reduce and further schedule updates to your deployment. Please refer to our published release information on our [documentation](https://docs.microsoft.com/en-us/business-applications-release-notes/October18/dynamics365-retail/planned-features) and [release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/#pivot=products&panel=products1) sites for additional details on RCSU.
 
 ### Will there be options to take individual hotfixes for my retail solution components?
 
