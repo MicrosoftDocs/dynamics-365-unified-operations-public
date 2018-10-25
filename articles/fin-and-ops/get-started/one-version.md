@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: One version service updates FAQ
+title: One Version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: meeramahabala
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ---
 
-# One version service updates FAQ
+# One Version service updates FAQ
 [!include[banner](../includes/banner.md)]
 
 In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
@@ -107,7 +107,7 @@ Data task automation lets you easily repeat many types of data tasks and validat
 ### How can I determine what's changed in a service update?
 The [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/) are the primary source of information for all new features and changes for a release. Features will also include help topics in docs.microsoft.com as needed. An impact analysis tool will be available in LCS to help you better understand the impact to the features that you use.
 
-## Preparing for ONE version
+## Preparing for One Version
 
 ### How can I log an extensibility request?
 Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-requests) topic. Please note the following timelines to log and use the available extensions.
@@ -132,11 +132,11 @@ Refer to the [Process for moving to the latest update of Finance and Operations]
 
 ### What components of my solution will be impacted by One Version monthly updates?
 
-All cloud components including Retail Server and Cloud POS will be updated at the same cadence as your Dynamics 365 headquarters.
+All cloud components including Retail Server and Cloud POS will be updated at the same cadence as your Retail headquarters.
 
 ### What options are available to minimize impact to my Retail cloud components?
 
-Retail cloud components will require the same down time as your Dynamics 365 Headquarters. In an upcoming release, the Retail Cloud Scale Unit (RCSU) will be available to reduce and further schedule updates to your deployment. Please refer to our published release information on our [documentation](https://docs.microsoft.com/en-us/business-applications-release-notes/October18/dynamics365-retail/planned-features) and [release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/#pivot=products&panel=products1) sites for additional details on RCSU.
+Retail cloud components will require the same down time as your Retail headquarters. In an upcoming release, the Retail Cloud Scale Unit (RCSU) will be available to reduce and further schedule updates to your deployment. Please refer to our published release information on our [documentation](https://docs.microsoft.com/en-us/business-applications-release-notes/October18/dynamics365-retail/planned-features) and [release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/#pivot=products&panel=products1) sites for additional details on RCSU.
 
 ### Will there be options to take individual hotfixes for my retail solution components?
 
@@ -156,7 +156,7 @@ Updates to components hosted in the cloud will continue to preserve backwards co
 
 ### What options are available for updating in-store components across my organization?
 
-Customers may choose to update self-hosted components manually at each store or employ use of mass update tools such as *Microsoft System Center Configuration Manager*, *Microsoft Intune*, etc.
+Customers may choose to update self-hosted components manually at each store or employ use of mass update tools such as Microsoft System Center Configuration Manager, Microsoft Intune, etc.
 
 ### What options do I have to slowly enable new functionality across my retail channels?
 
@@ -166,9 +166,6 @@ Microsoft provides several mechanisms to progressively roll-out and enable funct
 
 2.  **Functionality profiles, POS permissions, Retail parameters**: Significant elements of functionality at POS are typically configurable by the user. This can be configured through functionality profiles, POS permissions, retail parameters, or other controls which allow for device, register, store, or user level functionality control in applicable scenarios.
 
-**Modern Point of Sale and Retail Store Scale Unit:** Since Modern Point of Sale
-and Retail Store Scale Unit are self-hosted by the retailer, topologies which
-include either of these components enable roll out of updates at a separate (and
-slower) cadence, and in a more granular fashion than with cloud-only topologies.
+**Modern Point of Sale and Retail Store Scale Unit:** Since Modern Point of Sale and Retail Store Scale Unit are self-hosted by the retailer, topologies which include either of these components enable roll out of updates at a separate (and slower) cadence, and in a more granular fashion than with cloud-only topologies.
 
 
