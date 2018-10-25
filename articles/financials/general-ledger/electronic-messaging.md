@@ -84,7 +84,7 @@ The following sections provide more information about each of these elements.
 
 ### Number sequences
 
-Set up number sequences for both messages and message items. The number sequences are used to automatically number the messages and the message items, and the numbers that are assigned will be used as unique identifiers for the messages and message items in the table. You can set up number sequences for electronic messaging on the **General ledger parameters** page (**General ledger** \> **Ledger setup** \> **General ledger parameters**).
+Set up number sequences for both messages and message items. The number sequences are used to automatically number the messages and the message items, and the numbers that are assigned will be used as unique identifiers for the messages and message items in the system. You can set up number sequences for electronic messaging on the **General ledger parameters** page (**General ledger** \> **Ledger setup** \> **General ledger parameters**).
 
 ### Message item types and statuses
 
@@ -163,10 +163,10 @@ The following table describes the fields on the **Web service settings** page.
 | Internet address        | Enter the internet address of the web service.                                                                  |
 | Certificate             | Select a Key Vault certificate that has previously been set up. |
 | The response type – XML | Set this option to **Yes** if the response type is XML.                                                         |
-| Request method          | Specify the method of the request.                                                                              |
-| Request headers         | Specify request headers.                                                                                        |
-| Accept encoding         | Specify the accept encoding.                                                                                    |
-| Content type            | Specify the content type.                                                                                       |
+| Request method          | Specify the method of the request. HTTP defines a set of request methods to indicate the desired action to be performed for a given resource. It can be 'GET', 'POST' or other HTTP method.                                                                             |
+| Request headers         | Specify request headers. A request header is an HTTP header that can be used in an HTTP request, and that doesn't relate to the content of the message.                                                                                        |
+| Accept encoding         | Specify the accept encoding. The Accept-Encoding request HTTP header advertises which content encoding, usually a compression algorithm, the client is able to understand.                                                                                    |
+| Content type            | Specify the content type. The Content-Type entity header is used to indicate the media type of the resource.                                                                                      |
 
 ### Message processing actions
 
@@ -192,12 +192,12 @@ The following options are available in the **Action type** field:
 - **Create message** – Use this type to let users manually create messages on the **Electronic message** page. An initial status can't be set up for an action of this type.
 - **Message execution level** – Use this type to set up an executable class that should be evaluated at the message level.
 - **Message item execution level** – Use this type to set up an executable class that should be evaluated at the message item level.
-- **Electronic reporting export** – Use this type for actions that should generate a report that is based on an export ER configuration.
-- **Electronic reporting import** – Use this type for actions that should generate a report that is based on an import ER configuration.
+- **Electronic reporting export** – Use this type for actions that should generate a report that is based on an exporting ER configuration.
+- **Electronic reporting import** – Use this type for actions that should generate a report that is based on an importing ER configuration.
 - **Message level user processing** – Use this type for actions that assume some manual actions by the user. For example, the user might update the status of messages.
 - **User processing** – Use this type for actions that assume some manual action by the user. For example, the user might update the status of messages items.
 - **Web service** – Use this type for actions that should transmit a generated report to a web service. This action type isn't used for Italian Purchase and Sales Invoices Communication reporting.
-- **Electronic reporting export message** – Use this type for actions that should generate a report that is based on an export ER configuration at the message level (for example, when a message doesn't have any message items).
+- **Electronic reporting export message** – Use this type for actions that should generate a report that is based on an exporting ER configuration at the message level (for example, when a message doesn't have any message items).
 - **Request verification** – Use this type to request verification from a server.
 
 #### Initial statuses FastTab
