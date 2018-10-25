@@ -158,7 +158,7 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 5. If a specific user is required, enter the user name and password that the application pool should run under. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended.
 
     > [!NOTE]
-    > - It is important to note that service accounts, out of box, still function under the same password policy that is defined for all other accounts.  This means that the minimum password age policy still applies to the Retail Store Scale Unit service account and must be updated when necessary.  By default, on Windows Server 2012 R2, this is typically 42 days.  If the password does expire on a used service account, the Retail Server will fail to continue functioning until the issue is fixed.
+    > It is important to note that service accounts, out of box, still function under the same password policy that is defined for all other accounts.  This means that the minimum password age policy still applies to the Retail Store Scale Unit service account and must be updated when necessary.  By default, on Windows Server 2012 R2, this is typically 42 days.  If the password does expire on a used service account, the Retail Server will fail to continue functioning until the issue is fixed.
 
 6. On the next page, enter the user account and password for the Retail Server application pool and Async Client. By default, this account is automatically generated. However, you can manually enter the user account and password.
 7. Enter the HTTPS port to use, and verify that the host name of the computer is correct. Then select **Next** to continue.
