@@ -293,6 +293,21 @@ INSERT INTO SYSFLIGHTING VALUES ('DMFExportToPackageForceSync', 1, Flight servic
 - RecVersion = 1
 
 -Restart IIS
+
+**EntityNamesInPascalCaseInXMLFiles** - This flight can be enabled if it is desired to have the entity names in Pascal Case in the XML files for entities. This might be the case if the integration pipe has been plumbed with this specification. However, if there is no such dependency then, this flight can be ignored and by default, the XML files will have the entity names in capital case. To enable this flight in production environments, a support case must be logged. 
+
+or non-production environments, the following steps must be followed.
+
+- Add a record with this Insert statement, replacing the appropriate values
+
+INSERT INTO SYSFLIGHTING VALUES ('EntityNamesInPascalCaseInXMLFiles', 1, Flight service ID, Partition, RecID, 1) 
+- Flight name = DMFExportToPackageForceSync
+- Enabled = 1
+- Flight service ID = 12719367
+- Partition = partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
+- RecID = same ID as partition
+- RecVersion = 1
+
     
 ## Additional resources
 - [Data entities](data-entities.md)
