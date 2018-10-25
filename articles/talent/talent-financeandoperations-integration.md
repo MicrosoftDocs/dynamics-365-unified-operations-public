@@ -20,7 +20,7 @@ ms.reviewer: josaw
 ms.search.scope:  
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: 
+ms.search.region: Global
 # ms.search.industry: 
 ms.author: jcart
 ms.search.validFrom: 2018-10-8
@@ -53,7 +53,7 @@ To access the template, do the following.
 1. Open [PowerApps Admin Center](https://admin.powerapps.com/). 
 1. Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates. A new project will need to be created for each legal entity you want to integrate into in Finance and Operations.
 
-The following template and underlying tasks are used to synchronize products from Talent to Finance and Operations.
+The following template and underlying tasks are used to synchronize records from talent to Finance and Operations.
 
 - **Name of the template in Data integration:** Core HR (Talent CDS to Fin and Ops)
 
@@ -62,35 +62,31 @@ The following template and underlying tasks are used to synchronize products fro
 (Finance and Operations) is on the right.
 
 **Tasks in the Data integration project:** 
-- Job Functions to Compensation Job Function
-- Departments to Operating Unit
-- Departments to Operating Unit
-- Job Types to Compensation Job Type
-- Jobs to Jobs
-- Jobs to Job Detail
-- Position Types to Position Type
-- Job Positions to Positions
-- Job Positions to Positions Parent Job Assignment
-- Workers to Worker
-- Employments to Employment
-- Employments to Employment Detail
-- Position Worker Assignment to Position Worker Assignments
-- Worker Addresses to Worker Postal Address V2
+- Job Functions to Compensation Job Function.
+- Departments to Operating Unit.
+- Departments to Operating Unit.
+- Job Types to Compensation Job Type.
+- Jobs to Jobs.
+- Jobs to Job Detail.
+- Position Types to Position Type.
+- Job Positions to Positions.
+- Job Positions to Positions Parent Job Assignment.
+- Workers to Worker.
+- Employments to Employment.
+- Employments to Employment Detail.
+- Position Worker Assignment to Position Worker Assignments.
+- Worker Addresses to Worker Postal Address V2.
 
-## Integration Considerations
+## Integration considerations
 When integrating data from Talent to Finance and Operations, the integration will attempt to match records based on the ID. If the match
-occurs, it will then overwrite the data in Finance and Operations with the values in Talent. However, an issue may occur if logically
+occurs, the data in Finance and Operations will be overwritten with the values in Talent. However, an issue may occur if logically
 these are different records and the same ID was generated in either Talent or Finance and Operations based on the respective number sequence.
 
-The areas where this can occur are Worker, which uses Personnel number to make the match, and Positions. Jobs do not use number sequences, as a result
-if the same job ID is present in both Talent and Finance and Operations, the Talent information will overwrite the Finance and Operations
-information. 
+The areas where this can occur are Worker, which uses Personnel number to make the match, and Positions. Jobs do not use number sequences, as a result, if the same job ID is present in both Talent and Finance and Operations, the Talent information will overwrite the Finance and Operations information. 
 
-To keep the ID issue from occurring, you can either add a prefix on the [number sequence] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json)
-or set a beginning number on the number sequence that is beyond the range of the other system. 
+To keep the ID issue from occurring, you can either add a prefix on the [number sequence] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), or set a beginning number on the number sequence that is beyond the range of the other system. 
 
-The location ID used for worker address isn't part of a number sequence. When integrating worker address from Talent to Finance and Operations, if the worker address already exists in Finance and Operations, 
-a duplicate address record may be created. 
+The location ID used for worker address isn't part of a number sequence. When integrating worker address from Talent to Finance and Operations, if the worker address already exists in Finance and Operations, a duplicate address record may be created. 
 
 The following illustration shows an example of a template mapping in Data Integrator. 
 
