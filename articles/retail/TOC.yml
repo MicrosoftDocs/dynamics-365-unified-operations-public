@@ -14,6 +14,8 @@
     href: dev-itpro/choose-deployment.md
   - name: Get support for Retail
     href: retail-support.md
+  - name: One Version service updates FAQ
+    href: ../fin-and-ops/get-started/one-version.md
 - name: Understand the implementation lifecycle
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
