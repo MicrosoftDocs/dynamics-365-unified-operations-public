@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 20
 
 [!include [banner](../includes/banner.md)]
 
-Before Platform update 20, users needed to be assigned to the system admin or IT admin security role to manage batch jobs. With the release of Plaform update 20 there is a more targeted role, Batch manager. With this security role, a user now has permissions to copy batch jobs, change who will execute jobs, and specify the time ranges during which jobs can execute. The Batch maintain security privilege allows a user to create an ad hoc batch job and grant privileges to another user by assigning the Batch manager role.
+Before Platform update 20, users needed to be assigned to the system admin or IT admin security role to manage batch jobs. With the release of Plaform update 20 there is a more targeted role, Batch manager. With this security role, a user now has permissions to copy batch jobs, change who will execute jobs, and specify the time ranges during which jobs can execute. The Batch maintain security privilege is part of the Batch manager security role and it allows a user to create an ad hoc batch job and grant privileges to other users.
 
 > [!NOTE]
 > This feature is available as of Platform update 20.
