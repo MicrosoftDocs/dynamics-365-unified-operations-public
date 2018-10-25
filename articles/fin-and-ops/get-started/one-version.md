@@ -129,7 +129,7 @@ Individual hotfixes will not be supported after 8.1. Customers must update to th
 ### How can I upgrade to 8.x?
 Refer to the [Process for moving to the latest update of Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update#scenario-3-upgrade-to-the-latest-application-release-1) topic to learn how to upgrade to the latest application. Updating from [8.0 to 8.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81) will not require any data upgrade and will be a self-serve update with much reduced downtime.
 
-## How Retail functionality is impacted 
+## Retail impact
 
 ### What components of my solution will be impacted by One Version monthly updates?
 
