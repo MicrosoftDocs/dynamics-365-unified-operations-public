@@ -144,7 +144,7 @@ All fixes and updates for retail components will be cumulative.
 
 ### What are the maintenance downtime requirements that may impact channel operations?
 
-For retailers with a business need for redundancy, Modern POS offline capability allows core retail POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Retail Store Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see [Online and offline point of sale (POS) operations](../retail/pos-operations/md).
+For retailers with a business need for redundancy, Modern POS offline capability allows core retail POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Retail Store Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see [Online and offline point of sale (POS) operations](../retail/pos-operations.md).
 
 ### When will I need to update my in-store components?
 
