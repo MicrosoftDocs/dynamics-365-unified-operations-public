@@ -46,7 +46,7 @@ You can set up your loyalty program so that they include the following options.
 -   Manually adjust loyalty cards, or transfer the loyalty rewards balance from one card to another to accommodate or reward a customer.
 
 ## Setting up loyalty programs
-You must set up several components to enable the loyalty feature in Dynamics 365 for Retail. The following diagram illustrates the loyalty components and how they relate to each other. ![Loyalty setup process flow](./media/loyaltyprocess.gif)
+You must set up several components to enable the loyalty feature in Dynamics 365 for Retail. The following diagram illustrates the loyalty components and how they relate to each other. ![Loyalty setup process flow](./media/loyaltyprocess.gif "Loyalty components and how they relate to each other")
 
 ## Loyalty components
 The following table describes each component and where it's used in the loyalty setup.
