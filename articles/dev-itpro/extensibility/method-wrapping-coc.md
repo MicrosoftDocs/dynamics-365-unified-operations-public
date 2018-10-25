@@ -158,7 +158,7 @@ Here are some important rules:
 - Because logical expressions are optimized, calls to **next** can't occur in logical expressions. At runtime, the execution of the complete expression isn't guaranteed.
 
 > [!NOTE]
-> If a method is replaceable, extenders don't have to unconditionally call next when wrapping it using chain of command. Although extenders can break the chain, the expectation is that they will only conditionally break it.  The compiler doesn't enforce calls to next for methods with the [Replaceable] attribute.  
+> If a method is replaceable, extenders don't have to unconditionally call **next** when wrapping the method by using chain of command. Although extenders can break the chain, the expectation is that they will only conditionally break it. The compiler doesn't enforce calls to **next** for methods with the attribute, **Replaceable**.  
 
 ### Wrapping a base method in an extension of a derived class
 The following example shows how to wrap a base method in an extension of a derived class. For this example, the following class hierarchy is used.
