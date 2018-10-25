@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch manager security role
-description: This topic provides information .
+description: This topic provides information about the batch manager security role that is used to manage batch job.
 author: hasiad
 manager: AnnBe
 ms.date: 10/25/2018
@@ -34,10 +34,10 @@ ms.dyn365.ops.version: Platform update 20
 
 [!include [banner](../includes/banner.md)]
 
-Previously, users needed to be assigned to the Sysadmin/IT Admin security role to manage batch jobs. However, there is a more targeted role, Batch manager. With this security role assigned, a user now has permissions to copy batch jobs, change who will execute jobs, and specify the time ranges during which jobs can execute. The Batch maintain security privilege, which allows a user to create an adhock batch job can be granted to a user by assigning the Batch manager role.
+Before Platform update 20, users needed to be assigned to the system admin or IT admin security role to manage batch jobs. With the release of Plaform update 20 there is a more targeted role, Batch manager. With this security role, a user now has permissions to copy batch jobs, change who will execute jobs, and specify the time ranges during which jobs can execute. The Batch maintain security privilege allows a user to create an ad hoc batch job and grant privileges to another user by assigning the Batch manager role.
 
 > [!NOTE]
-> This feature is available as of platform update 20.
+> This feature is available as of Platform update 20.
 
 ## Assign the Batch manager role to a user
 Complete the following steps to assign the Batch manager security role to a specific user.
@@ -46,16 +46,16 @@ Complete the following steps to assign the Batch manager security role to a spec
 
 ![Assign User To Roles](./media/assign-batchmanager-role.png) 
 
-2.	Click **Batch Job Manager**, and on the left pane. click **Manually assign/exclude user**.
+2.	Click **Batch Job Manager**, and on the left pane, click **Manually assign/exclude user**.
 
 ![Batch Manager Role](./media/assign-batchmanager-role-2.png) 
 
 3.	Select a user from the list, and then click **Assign to role**.
-4.	Close the form. 
+4.	Close the page. 
 
 ## Run by user
 
-The **run by user** functionality allows Batch managers to specify a user to run the batch job. This is useful when you want to change the user who is currently assigned to run the job or if you want to quickly set a user while bopying the batch jobs from one company to another. You can also use this functionality to copy batch jobs.
+The **run by user** functionality allows Batch managers to specify a user to run the batch job. This is useful when you want to change the user who is currently assigned to run the job or if you want to quickly set a user while copying the batch jobs from one company to another. You can also use this functionality to copy batch jobs.
 
  ![RunBy User](./media/runby-user.png)  
  
