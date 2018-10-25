@@ -53,12 +53,12 @@ For example, server A is set up to print reports, and server B is set up to send
 For more information please See [Batch Server Overview](batch-server-overview.md)
 
 
-# Batch Functions
+## Batch functions
 
-Administrators and Batch Managers can perform common tasks in a productive manner. They can easily create batch jobs, copy batch jobs, change batch job user, and specify a time period which a job should not execute. 
+Administrators and Batch managers can perform common tasks including creating and copying batch jobs, changing a batch job user, and specifing a time period in which a job should not execute. For more information about these tasks, see the following topics:
 
--  [Create a Batch job](tasks/create-batch-job.md)
--  [Batch Manager Role](runby.md).
+-  [Create a batch job](tasks/create-batch-job.md)
+-  [Batch manager role](runby.md).
 -  [Batch active period](activeperiod.md).
 -  [Copy a batch job](copy-batch-job.md).
 
