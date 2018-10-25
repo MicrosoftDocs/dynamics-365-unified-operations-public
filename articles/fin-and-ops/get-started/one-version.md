@@ -148,24 +148,24 @@ For retailers with a business need for redundancy, Modern POS offline capability
 
 ### When will I need to update my in-store components?
 
-All in-instore components must be running released software that is less than one year old in order to maintain support. Customers are responsible for updating self-hosted components (i.e. components installed in stores or in privately managed datacenters) and ensuring that the installed versions of these components are actively supported.
+All in-instore components must be running released software that is less than one year old in order to maintain support. Customers are responsible for updating self-hosted components (such as components installed in stores or in privately managed datacenters) and ensuring that the installed versions of these components are actively supported.
 
-### Will there continue to be backwards compatibility for the in-store retail components?
+### Will there continue to be backward compatibility for the in-store retail components?
 
-Updates to components hosted in the cloud will continue to preserve backwards compatibility with component versions self-hosted by the Retailer (i.e. components installed in stores or in privately managed datacenters - Modern Point of Sale, Retail Store Scale Unit, Hardware Station) for 12 months after the release date for that version. Self-hosted components do not need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence allowing time to roll-out updates to stores.
+Updates to components hosted in the cloud will continue to preserve backward compatibility with component versions self-hosted by the Retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, Retail Store Scale Unit, Hardware Station) for 12 months after the release date for that version. Self-hosted components do not need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence allowing time to roll-out updates to stores.
 
 ### What options are available for updating in-store components across my organization?
 
-Customers may choose to update self-hosted components manually at each store or employ use of mass update tools such as Microsoft System Center Configuration Manager, Microsoft Intune, etc.
+Customers can choose to update self-hosted components manually at each store or use mass update tools such as Microsoft System Center Configuration Manager, Microsoft Intune, etc.
 
 ### What options do I have to slowly enable new functionality across my retail channels?
 
 Microsoft provides several mechanisms to progressively roll-out and enable functional enhancements across stores, devices, and users.
 
-1.  **Screen layout designer**: Most visual elements at POS are configured and centrally managed by an administrative user in the customer organization. This means that new POS operations will not automatically be displayed on POS unless explicitly configured for inclusion in corresponding screen layouts. Screen layouts are configured using Screen layout designer and can be specific to a store or POS device. For more inforamation, see [Screen layouts for the point of sale (POS)]../retail/pos-screen-layouts.md).
+  -  **Screen layout designer** - Most visual elements in POS are configured and centrally managed by an administrative user in the customer organization. This means that new POS operations will not automatically be displayed on POS unless explicitly configured for inclusion in corresponding screen layouts. Screen layouts are configured using Screen layout designer and can be specific to a store or POS device. For more information, see [Screen layouts for the point of sale (POS)](../retail/pos-screen-layouts.md).
 
-2.  **Functionality profiles, POS permissions, Retail parameters**: Significant elements of functionality at POS are typically configurable by the user. This can be configured through functionality profiles, POS permissions, retail parameters, or other controls which allow for device, register, store, or user level functionality control in applicable scenarios.
+  - **Functionality profiles, POS permissions, Retail parameters** - Significant elements of functionality in POS are typically configurable by the user. This can be configured through functionality profiles, POS permissions, retail parameters, or other controls which allow for device, register, store, or user-level functionality control in applicable scenarios.
 
-**Modern Point of Sale and Retail Store Scale Unit:** Since Modern Point of Sale and Retail Store Scale Unit are self-hosted by the retailer, topologies which include either of these components enable roll out of updates at a separate (and slower) cadence, and in a more granular fashion than with cloud-only topologies.
+  - **Modern Point of Sale and Retail Store Scale Unit** - Because Modern Point of Sale and Retail Store Scale Unit are self-hosted by the retailer, topologies which include either of these components enable roll out of updates at a separate (and slower) cadence, and in a more granular fashion than with cloud-only topologies.
 
 
