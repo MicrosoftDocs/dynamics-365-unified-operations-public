@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/15/2017
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -56,7 +56,7 @@ The data packages are similar but not identical to existing demo companies and m
 ## Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations integration – Phase 1 (private preview)
 The first phase of the integration from Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations is now available in private preview.
 
-The Project Service Automation to Finance and Operations integration solution uses Data Integration to synchronize data across Microsoft Dynamics 365 for Finance and Operations and Dynamics 365 for Project Service Automation instances via the Common Data Service (CDS). The integration templates available with the [Data Integration](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration) feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to Finance and Operations.
+The Project Service Automation to Finance and Operations integration solution uses Data Integration to synchronize data across Microsoft Dynamics 365 for Finance and Operations and Dynamics 365 for Project Service Automation instances via the Common Data Service (CDS). The integration templates available with the Data Integration feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to Finance and Operations. For more information about Common Data Service data integration, see [Integrate data into Common Data Service for Apps](/powerapps/administrator/data-integrator.md) in the PowerApps documentation.
 
 This solution provides direct synchronization in the following areas:
 

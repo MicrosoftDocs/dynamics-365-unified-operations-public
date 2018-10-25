@@ -5,7 +5,7 @@ title: Synchronize project contracts and projects directly from Project Service 
 description: This topic describes the template and underlying tasks that are used to synchronize project contracts and projects directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -100,8 +100,8 @@ When the Project Service Automation to Finance and Operations integration soluti
 ## Prerequisites and mapping setup
 
 - Before synchronization of project contracts and projects can occur, you must synchronize accounts.
-- In your connection set, add an integration key field mapping for **msdyn\_organizationalunits** to **msdyn\_name \[Name\]**. You might first have to add a project to the connection set. For more information about integration keys, see [Dynamics 365 Data integration](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration).
-- In your connection set, add an integration key field mapping for **msdyn\_projects** to **msdynce\_projectnumber \[Project Number\]**. You might first have to add a project to the connection set. For more information about integration keys, see [Dynamics 365 Data integration](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration).
+- In your connection set, add an integration key field mapping for **msdyn\_organizationalunits** to **msdyn\_name \[Name\]**. You might first have to add a project to the connection set. For more information, see [Integrate data into Common Data Service for Apps](/powerapps/administrator/data-integrator.md).
+- In your connection set, add an integration key field mapping for **msdyn\_projects** to **msdynce\_projectnumber \[Project Number\]**. You might first have to add a project to the connection set. For more information, see [Integrate data into Common Data Service for Apps](/powerapps/administrator/data-integrator.md).
 - **SourceDataID** for project contracts and projects can be updated to a different value or removed from the mapping. The default template value is **Project Service Automation**.
 - The **PaymentTerms** mapping must be updated so that it reflects valid terms of payment in Finance and Operations. You can also remove the mapping from the project task. The default value map has default values for demo data. The following table shows the values in Project Service Automation.
 
