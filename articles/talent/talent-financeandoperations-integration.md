@@ -84,7 +84,7 @@ these are different records and the same ID was generated in either Talent or Fi
 
 The areas where this can occur are Worker, which uses Personnel number to make the match, and Positions. Jobs do not use number sequences, as a result, if the same job ID is present in both Talent and Finance and Operations, the Talent information will overwrite the Finance and Operations information. 
 
-To keep the ID issue from occurring, you can either add a prefix on the [number sequence] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), or set a beginning number on the number sequence that is beyond the range of the other system. 
+To keep the ID issue from occurring, you can either add a prefix on the [number sequence](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), or set a beginning number on the number sequence that is beyond the range of the other system. 
 
 The location ID used for worker address isn't part of a number sequence. When integrating worker address from Talent to Finance and Operations, if the worker address already exists in Finance and Operations, a duplicate address record may be created. 
 
