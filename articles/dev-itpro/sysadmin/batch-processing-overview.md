@@ -5,7 +5,7 @@ title: Batch processing
 description: This article provides an overview of batch processing in Microsoft Dynamics 365 for Finance and Operations.
 author: hasaid
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
