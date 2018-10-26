@@ -3,7 +3,7 @@
 
 title: Copy a batch job
 description: This topic provides information about copying a batch job and batch tasks in Microsoft Dynamics 365 for Finance and Operations.
-author: hasiad
+author: hasaid
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
