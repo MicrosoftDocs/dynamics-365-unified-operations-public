@@ -5,7 +5,7 @@ title: Financial dimensions
 description: This topic describes the various types of financial dimensions and how they are set up.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/24/2018
+ms.date: 10/26/2018
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
