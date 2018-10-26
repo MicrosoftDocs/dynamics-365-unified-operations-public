@@ -5,7 +5,7 @@ title: Copy Finance and Operations databases from SQL Server to production Azure
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from a SQL Server–based development, build, or demo environment (Tier 1 or one-box) to an Azure SQL database–based sandbox UAT environment (Tier 2 or higher).
 author: laneswenka
 manager: AnnBe
-ms.date: 10/19/2018
+ms.date: 10/26/2018
 
 ms.topic: article
 ms.prod: 
