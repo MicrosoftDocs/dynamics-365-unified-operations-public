@@ -1088,6 +1088,12 @@
       href: sysadmin/batch-server-overview.md
     - name: Create batch jobs
       href: sysadmin/tasks/create-batch-job.md
+    - name: Copy a batch job
+      href: sysadmin/copy-batch-job.md
+    - name: Active batch periods
+      href: sysadmin/activeperiod.md
+    - name: Batch manager security role
+      href: sysadmin/runby.md
   - name: Optimization advisor
     href: sysadmin/optimization-advisor-overview.md
     items:
