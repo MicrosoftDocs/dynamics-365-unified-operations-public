@@ -5,7 +5,7 @@ title: Request sandbox database refreshes
 description: This topic explains how to request a refresh of the database for Microsoft Dynamics 365 for Finance and Operations, in a sandbox user acceptance testing (UAT) environment.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 10/19/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -41,12 +41,12 @@ This functionality lets you use production data to test upcoming code changes in
 ## Database refresh process
 
 > [!NOTE]
-> As of October 8, 2018, database refresh requests must be signed off before another refresh of the same environment can be requested.  This is to support future automation of database movement operations.
+> As of October 2018, database refresh requests must be signed off before another refresh of the same environment can be started.  This is to support future automation of database movement operations.  To signoff, visit your Environment Details page and click the Signoff button.  You can create many Database Refresh service requests out in to the future, however you must signoff in between each one.
 
 The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be approximately two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment's downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
 
-1. In LCS, select the hamburger icon in the upper left, and then select **Work items**.
-2. On the **Work items** page, select **Add** on the toolbar, and then select **Database refresh**.
+1. In LCS, from the Project home page select **Service requests**.
+2. On the **Service requests** page, select **Add** on the toolbar, and then select **Database refresh**.
 3. In the **Request for database refresh** dialog box, follow these steps:
 
     1. In the **Environment name** field, select the environment to refresh.
@@ -54,7 +54,8 @@ The Microsoft Service Engineering team will take your environment offline, compl
     3. Carefully read and acknowledge the statements that have check boxes next to them.
 
 4. After you submit your request, you are returned to the list of work items. Here, you can view the status of the request, or reschedule or cancel the request.
-5. When the Service Engineering team has acknowledged that it can complete your request, the status of the request is changed to **Request accepted**. At this point, you can follow any of these steps:
+5. Ensure no prior servicing request on your environment is awaiting signoff or rollback.  Visit your environment details page and Signoff any completed refresh or package deployment.
+6. When the Service Engineering team has acknowledged that it can complete your request, the status of the request is changed to **Request accepted**. At this point, you can follow any of these steps:
 
     - Wait for the Service Engineering team to complete the refresh. When the restore is completed, the status is changed to **Succeeded**.
     - Reschedule the request by selecting the ID, or by selecting the request and then selecting **Reschedule** on the toolbar. You can then change the dates and times for the downtime window.
@@ -63,7 +64,7 @@ The Microsoft Service Engineering team will take your environment offline, compl
 ## Conditions of a database refresh
 Here is the list of requirements and conditions of operation for a database refresh:
 
-- All previous database refresh requests for the environment are marked as either *Succeeded*, *Failed*, or *Canceled*.
+- Any previous servicing operation, such as a package deployment or prior database refresh, *must be signed off* from your environment details page.
 - Requests must be submitted 5 hours before the desired downtime window, to help ensure that resources will be available to complete the request.
 - A refresh erases the existing database in the target environment. The existing database can't be recovered after the refresh is completed.
 - The target environment will be unavailable until the refresh process is completed.

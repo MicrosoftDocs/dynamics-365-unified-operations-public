@@ -132,9 +132,8 @@ Here are some typical examples of service requests that will be denied:
 | Upgrade                        | One Tier 2 sandbox and production | A customer who is live in production requests an upgrade to the latest version of Finance and Operations. | Five business days | Eight hours |
 | Database point-in-time restore | Any Tier 2 or higher sandbox | Database point-in-time restore | Five hours | One hour |
 | Database refresh               | From production to any Tier 2 or higher sandbox, or between any two Tier 2 or higher sandboxes | Database refresh | Twenty-four hours | One hour |
-| Sandbox to Production          | Tier 2 or higher sandbox to Production | Sandbox to Production | 5 hours | one hour |
+| Sandbox to Production          | Tier 2 or higher sandbox to Production | Sandbox to Production | Five hours | one hour |
 | Other                          | Production | Database point-in-time restore | Five hours | One hour |
-|                                | Production | Database refresh | Five hours | One hour |
 |                                | Production | Maintenance mode | Five hours | Not applicable, because the customer indicates in the service request when the environment should be taken out of maintenance mode again |
 |                                | Production | IP whitelist rules | Five hours | Two hours |
 |                                | Production | Power BI Embedded | Five hours | Two hours |
