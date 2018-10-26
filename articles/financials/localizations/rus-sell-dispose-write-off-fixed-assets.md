@@ -51,11 +51,13 @@ There are three ways to create a disposal transaction:
 
 
 > [!NOTE]
-> When you create a transaction for the partial write-off or disposal of a fixed asset, if the transaction accrues a loss, the >transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. >The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the >depreciated asset and the actual period that the asset is used before its disposal **[Set up automatic creation of deferrals account](..##Set-up-the-automatic-creation-of-a-deferrals-account)**.
+> When you create a transaction for the partial write-off or disposal of a fixed asset, if the transaction accrues a loss, the transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the depreciated asset and the actual period that the asset is used before its disposal **[Set up automatic creation of deferrals account](..##Set-up-the-automatic-creation-of-a-deferrals-account)**.
 
 You can record the sale of fixed assets in Fixed assets, or you can create a sales order or a free text invoice in Accounts receivable. When you sell a fixed asset, you must calculate its depreciation during that period.
 
-If the fixed asset to be sold is registered in the **Inventory management** items list, you must create a sales order. However, you can record the sale of a non-inventoried item in **Fixed assets**, or you can create a free text invoice. The status of an asset that is sold under a sales order or free text invoice is **Sold (waiting for posting)**, until the transaction is posted. After posting, the status of the asset is **Written off (sale)**.
+You can register the sale of a fixed asset by creating a sales order. Before creating a sales order, you should create a released product with a Service or Item product type. When you select an item with the Service product type in the sales order line, you can enter several fixed assets, related with one sales order line. When you select an item with the Item product type in the sales order line, you can only enter one fixed asset. This fixed asset needs to be related to the sales order line.
+
+The status of an asset that is sold under a sales order or free text invoice is **Sold (waiting for posting)**, until the transaction is posted. After posting, the status of the asset is **Written off (sale)**.
 
 > [!NOTE]
 > You must set up posting profiles before you can create transactions for the sale of fixed assets.
