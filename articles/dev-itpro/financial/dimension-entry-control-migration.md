@@ -5,7 +5,7 @@ title: Migrate default dimensions controls to Dimension Entry controls
 description: This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run. It uses the PurchTable form as an example.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -59,98 +59,86 @@ Simple migration scenario - PurchTable form
 ## Data source PurchTable
 **(Form &gt; Data sources &gt; PurchTable &gt; Methods**)
 
-|                                                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                  |
-|-------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Before**                                                                                                                                      | **After**                                                                                                                                                                                                                                                                                                                                                                                        |
+|Before | After   |
+|-------|--------|
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlHeader.reactivate(); | Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. As a general rule with reactivate method calls, if it may not be needed, remove the call and test the control to make sure it works correctly. If it doesn’t, add the reactivate call back. |
 
 ## Data field OrderAccount
 (**Form &gt; Data sources &gt; PurchTable &gt; Fields &gt; OrderAccount &gt; Methods**)
 
-|                                                                                                                                                 |                                                                                                                                                                                                      |
-|-------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Before**                                                                                                                                      | **After**                                                                                                                                                                                            |
+|Before | After   |
+|-------|--------|
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlHeader.reactivate(); | Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. |
 
 ## Data field ProjId
 (**Form &gt; Data sources &gt; PurchTable &gt; Fields &gt; ProjId &gt; Methods**)
 
-|                                                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                             |
-|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Before**                                                                                                                                      | **After**                                                                                                                                                                                                                                                                                                                                                                   |
+|Before | After   |
+|-------|--------|
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlHeader.reactivate(); | Because this method call does not have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. The entire modified() method can be deleted as well because the super() call is all that remains. The ProjId class can be removed because there are no methods in it. |
 
 ## Data field VendGroup
 (**Form &gt; Data sources &gt; PurchTable &gt; Fields &gt; VendGroup &gt; Methods**)
 
-|                                                                                                                                                 |                                                                                                                                                                                                                                                                               |
-|-------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Before**                                                                                                                                      | **After**                                                                                                                                                                                                                                                                     |
+|Before | After   |
+|-------|--------|
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlHeader.reactivate(); | Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. The entire modified() method and VendGroup class can be deleted as well. |
 
 ## Data source PurchLine
 (**Form &gt; Data sources &gt; PurchLine &gt; Methods**)
 
-|                                                                                                                                                                                                                                            |                                                                                                                                                                                                      |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Before**                                                                                                                                                                                                                                 | **After**                                                                                                                                                                                            |
+|Before | After   |
+|-------|--------|
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlLine.reactivate();**Note:** This is the reactivate method call in the itemIdModified method on the data source. | Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. |
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlLine.reactivate();**Note:** This is the reactivate method call in the create() method on the data source.       | Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. |
 
 ## Data field AssetGroup
 (**Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; AssetGroup &gt; Methods**)
 
-|                                                                                                                                               |                                                                                                                                                                                                                                                                                 |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Before**                                                                                                                                    | **After**                                                                                                                                                                                                                                                                       |
+|Before | After   |
+|-------|--------|
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlLine.reactivate(); | Because this method call does not have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. The entire modified() method and AssetGroup class can be deleted as well. |
 
 ## Data field AssetId(**Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; AssetId &gt; Methods**)
 
-|                                                                                                                                               |                                                                                                                                                                                                       |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Before**                                                                                                                                    | **After**                                                                                                                                                                                             |
+|Before | After   |
+|-------|--------|
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlLine.reactivate(); | Because this method call does not have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. |
 
 ## Data field ProcurementCategory
 (**Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; ProcurementCategory &gt; Methods**)
 
-|                                                                                                                                               |                                                                                                                                                                                                      ||-----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Before**                                                                                                                                    | **After**                                                                                                                                                                                            |
+| Before        |  After                                        |
+|--------|--------------------------------------------------|
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlLine.reactivate(); | Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. |
 
 ## Data field ProjId
 (**Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; ProjId &gt; Methods**)
 
-|                                                                                                                                               |                                                                                                                                                                                                      |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Before**                                                                                                                                    | **After**                                                                                                                                                                                            |
+|Before | After   |
+|-------|--------|
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlLine.reactivate(); | Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. |
 
 ## TabPage TabFinancialDimensionsLine
 (Search for TabFinancialDimensionsLine in the search bar below the form tab)
 
-|                                                                                                                                                                              |                                                                                                                                                                                                 |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Before**                                                                                                                                                                   | **After**                                                                                                                                                                                       |
+|Before | After   |
+|-------|--------|
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] This method can be removed if there is no custom implementation \*///dimensionDefaultingControllerLine.pageActivated(); | The pageActivated method no longer needs to be called. This entire method and the TabFinancialDimensionsLine class can be removed because there is no custom logic in the pageActivated method. |
 
 ## TabPage TabFinancialDimensionsHeader
 (Search for TabFinancialDimensionsHeader in the search bar below the form tab)
 
-|                                                                                                                                                                                |                                                                                                                                                                                                   |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Before**                                                                                                                                                                     | **After**                                                                                                                                                                                         |
+|Before | After   |
+|-------|--------|
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] This method can be removed if there is no custom implementation \*///dimensionDefaultingControllerHeader.pageActivated(); | The pageActivated method no longer needs to be called. This entire method and the TabFinancialDimensionsHeader class can be removed because there is no custom logic in the pageActivated method. |
 
 
 
-Additional resources
---------
+## Additional resources
 
-[Dimension Entry control uptake](dimension-entry-control-uptake.md)
-
-[Dimension Entry control dialog support](dimension-entry-control-dialog-support.md)
+- [Dimension Entry control uptake](dimension-entry-control-uptake.md)
+- [Dimension Entry control dialog support](dimension-entry-control-dialog-support.md)
 
 
 

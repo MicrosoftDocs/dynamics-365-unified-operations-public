@@ -6,7 +6,7 @@ title: Class extension - Method wrapping and Chain of Command
 description: This topic discusses how to extend the business logic of public and protected methods by using method wrapping.
 author: robadawy
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -158,7 +158,7 @@ Here are some important rules:
 - Because logical expressions are optimized, calls to **next** can't occur in logical expressions. At runtime, the execution of the complete expression isn't guaranteed.
 
 > [!NOTE]
-> The author of the original implementation of a method can explicitly allow wrapper methods to skip calling next. If the method you are wrapping is tagged with the [Replaceable] attribute, an extension class can wrap this method without calling the **next** keyword. Replaceable methods are methods that implement logic that can safely be "replaced" by custom implementation. This functionality is available with the release of Platform update 11. 
+> If a method is replaceable, extenders don't have to unconditionally call **next** when wrapping the method by using chain of command. Although extenders can break the chain, the expectation is that they will only conditionally break it. The compiler doesn't enforce calls to **next** for methods with the attribute, **Replaceable**.  
 
 ### Wrapping a base method in an extension of a derived class
 The following example shows how to wrap a base method in an extension of a derived class. For this example, the following class hierarchy is used.

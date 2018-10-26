@@ -5,7 +5,7 @@ title: Synchronize products directly from Finance and Operations to products in 
 description: This topic discusses the templates and underlying tasks that are used to synchronize products from Microsoft Dynamics 365 for Finance and Operations, to Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 06/25/2018
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-07-8
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Before you can use the Prospect to cash solution, you should be familiar with [Dynamics 365 Data integration](/common-data-service/entity-reference/dynamics-365-integration).
+> Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Common Data Service for Apps](/powerapps/administrator/data-integrator.md).
 
 This topic discusses the templates and underlying tasks that are used to synchronize products directly from Microsoft Dynamics 365 for Finance and Operations, to Microsoft Dynamics 365 for Sales.
 
