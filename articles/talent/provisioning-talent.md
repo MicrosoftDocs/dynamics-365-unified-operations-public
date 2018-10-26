@@ -52,7 +52,7 @@ For information about how to get started with Talent, see the **Talent** methodo
 After you've created an LCS project, you can provision Talent into an environment.
 
 1. In your LCS project, select the **Talent App Management** tile.
-2. Talent is always provisioned into a Microsoft PowerApps environment, to enable PowerApps integration and extensibility. Read the “Selecting a PowerApps environment” section of this topic before you continue. If you don't already have a PowerApps environment, select Manage environments in LCS or navigateto the PowerApps Admin center. Then follow the steps to [Create a PowerApps environment](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment)
+2. Talent is always provisioned into a Microsoft PowerApps environment to enable PowerApps integration and extensibility. Read the “Selecting a PowerApps environment” section of this topic before you continue. If you don't already have a PowerApps environment, select Manage environments in LCS or navigateto the PowerApps Admin center. Then follow the steps to [Create a PowerApps environment](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment)
 
     > [!NOTE]
     > To view existing environments or create new environments, the tenant admin who provisions Talent must be assigned to the PowerApps P2 license. If your organization doesn't have a PowerApps P2 license, you can get one from your CSP or from the [PowerApps pricing page](https://powerapps.microsoft.com/en-us/pricing/).
