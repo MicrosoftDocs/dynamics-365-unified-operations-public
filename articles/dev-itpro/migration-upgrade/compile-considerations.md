@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Considerations when compiling against a new update
+title: Plan and prepare for compiling code against the latest update
 description: This topic highlights potential issues that a developer might see when compiling partner code with the latest update from Microsoft Dynamics 365 for Finance and Operations.
 author: dfroslie
 manager: AnnBe
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Considerations when compiling against a new update
+# Plan and prepare for compiling code against the latest update
 
 [!include [banner](../includes/banner.md)]
 
