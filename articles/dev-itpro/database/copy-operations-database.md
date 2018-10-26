@@ -215,6 +215,44 @@ CLOSE retail_ftx;
 DEALLOCATE retail_ftx; 
 -- End Refresh Retail FullText Catalogs
 ```
+## Synchronize the database
+
+1. Use Remote Desktop to connect to all the computers in the target environment, and stop the following Windows services by using services.msc. These services will have open connections to the Finance and Operations database. After you stop the services, you can replace the existing Finance and Operations database with the newly imported database.
+
+    - World wide web publishing service (on all AOS computers)
+    - Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)
+    - Management Reporter 2012 Process Service (on business intelligence \[BI\] computers only)
+
+2. On the AOS computer where the bacpac import was done, run the following script in Management Studio. This script renames the original database and then renames the newly imported database so that it uses the original database name. In this example, the original database was named axdb\_123456789, and the newly imported database was named importeddb.
+
+    > [!NOTE]
+    > Make sure that the you're using the SQL Server 2016 version of Management Studio.
+
+    ```
+    ALTER DATABASE [axdb_123456789] MODIFY NAME = [axdb_123456789_original]
+    ALTER DATABASE [importeddb] MODIFY NAME = [axdb_123456789]
+    ```
+
+3. Synchronize the database. Open a **Command Prompt** window as an administrator, and run the following commands.
+
+    ```
+    cd F:\AosService\WebRoot\bin
+
+    Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "F:\AosService\PackagesLocalDirectory" -metadatadir F:\AosService\PackagesLocalDirectory -sqluser axdbadmin -sqlserver <Azure SQL database server name>.database.windows.net -sqldatabase <database name> -setupmode sync -syncmode fullall -isazuresql true -sqlpwd <SQL password> >log.txt 2>&1
+    ```
+
+4. Use services.msc to restart the services that you stopped earlier:
+
+    - World wide web publishing service (on all AOS computers)
+    - Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)
+    - Management Reporter 2012 Process Service (on BI computers only)
+
+5. At this point, you can open the Finance and Operations application URL and sign in. Verify that the application works as you expect. Then drop the original database by running the following script in Management Studio on the AOS computer where you did the bacpac import.
+
+    ```
+    DROP DATABASE [axdb_123456789_original]
+    ```
+
 
 ### Re-provision Retail components in the target environment
 

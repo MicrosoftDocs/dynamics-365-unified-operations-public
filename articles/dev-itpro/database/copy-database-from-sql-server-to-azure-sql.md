@@ -360,11 +360,8 @@ To copy the golden database to a production environment, you must submit a servi
 > [!NOTE]
 > You can't use a request of the **Database refresh request** type, because the request involves copying to a production environment.
 
-1. In LCS, select the hamburger icon, and then select **Work items**.
-
-    [![Work items](./media/lcsworkitemsmenu.png)](./media/lcsworkitemsmenu.png)
-
-2. On the **Work items** page, select **Add**, and then select **Sandbox to Production**.
+1. In LCS, from the Project home page select **Service requests**.
+2. On the **Service requests** page, select **Add**, and then select **Sandbox to Production**.
 3. In the **Sandbox to Production** dialog box, follow these steps:
 
     1. In the **Environment name** field, select the production environment.
