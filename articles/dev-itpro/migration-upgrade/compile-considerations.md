@@ -36,9 +36,9 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-With the rollout of the One Version servicing plan, Microsoft is committed to backward compatibility from a binary and functional perspective. For detailed information about One Version, see [One Version service updates FAQ](./fin-and-ops//get-started/one-version.md). Even with backward compatibility as a priority, there are situations where development activities may result in required code changes. Some of those situations are described below. 
+With the rollout of the One Version servicing plan, Microsoft is committed to backward compatibility from a binary and functional perspective. For detailed information about One Version, see [One Version service updates FAQ](././fin-and-ops/get-started/one-version.md). Even with backward compatibility as a priority, there are situations where development activities may result in required code changes. Some of those situations are described below. 
 
-- When Microsoft makes an enumeration extensible, it is considered a binary compatible change. The compiler checks for unsafe extensible enumeration operations that depend on the integer value of a non-extensible enumeration. Any partner code that contains unsafe extensible enumeration operations will have compiler errors when re-compiled and will need to be modified. For more information, see [Add values to enums through extension](./extensibility/add-enum-value.md).
+- When Microsoft makes an enumeration extensible, it is considered a binary compatible change. The compiler checks for unsafe extensible enumeration operations that depend on the integer value of a non-extensible enumeration. Any partner code that contains unsafe extensible enumeration operations will have compiler errors when re-compiled and will need to be modified. For more information, see [Add values to enums through extension](extensibility/add-enum-value.md).
 
 - To avoid possible unresolved references when compiling, a partner model should reference the top-level modules and sub-modules. If this is not done, a Microsoft change that adds new resources in an unreferenced sub-module may cause an unresolved reference. To resolve the compilation error, add the sub-module as a reference.
 
