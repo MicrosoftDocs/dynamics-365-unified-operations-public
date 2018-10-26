@@ -39,7 +39,7 @@ When you want to create the same jobs for different legal entities, you can use 
 You can set the description, company, schedule start date and time, the recurrence, and the run by account at the same time. When you copy the batch job, any alerts and dependencies from the source job will also be copied. 
 
 >[!NOTE] 
->This feature is available as of platform update 20.
+>This feature is available as of Platform update 20.
 
 
 ## Copy a batch job
@@ -50,16 +50,15 @@ Complete the following steps to copy a batch job.
 
 ![Copy Batch Function](./media/copy-batch-function.png) 
  
-4.	Enter or add any changes. If you set the **View tasks** toggle to **Yes**, when you click **OK** you will navigate directly to the **Batch tasks** page for the copied job.
+4.	Enter or add any changes. If you set **View tasks** to **Yes**, when you click **OK** you will go directly to the **Batch tasks** page for the copied job.
 
 ![Copy Batch Form](./media/copy-batch-form.png) 
 
 >[!IMPORTANT] 
->The Copied Batch Job will be created with a Status (Withhold), you will need to enable it. The Run By User can also be set to give this user the privilege to run the Job without being a Sys Admin.
+>The copied batch job will be created with a **Withhold** status, so you will need to enable it. The **Run by** user can also be set to give this user the privilege to run the job without being a Sys Admin.
 
 ## Enable the batch job
 Complete the following steps to enable a batch job.
 
-1.	On the **Batch job** form, on the Action Pane, click **Batch job** > **Change status**.
-2.	Select the status **Waiting**, and then click **OK**.
-
+1.	On the **Batch job** page, on the Action Pane, click **Batch job** > **Change status**.
+2.	Select the **Waiting** status, and then click **OK**.
