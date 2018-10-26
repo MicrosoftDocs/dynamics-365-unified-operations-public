@@ -192,18 +192,19 @@ The following options are available in the **Action type** field:
 - **Create message** – Use this type to let users manually create messages on the **Electronic message** page. An initial status can't be set up for an action of this type.
 - **Message execution level** – Use this type to set up an executable class that should be evaluated at the message level.
 - **Message item execution level** – Use this type to set up an executable class that should be evaluated at the message item level.
-- **Electronic reporting export** – Use this type for actions that should generate a report that is based on an exporting ER configuration.
+- **Electronic reporting export** – Use this type for actions that should generate a report that is based on an exporting ER configuration at the message item level.
+- **Electronic reporting export message** – Use this type for actions that should generate a report that is based on an exporting ER configuration at the message level (for example, when a message doesn't have any message items).
 - **Electronic reporting import** – Use this type for actions that should generate a report that is based on an importing ER configuration.
 - **Message level user processing** – Use this type for actions that assume some manual actions by the user. For example, the user might update the status of messages.
 - **User processing** – Use this type for actions that assume some manual action by the user. For example, the user might update the status of messages items.
 - **Web service** – Use this type for actions that should transmit a generated report to a web service. This action type isn't used for Italian Purchase and Sales Invoices Communication reporting.
-- **Electronic reporting export message** – Use this type for actions that should generate a report that is based on an exporting ER configuration at the message level (for example, when a message doesn't have any message items).
+
 - **Request verification** – Use this type to request verification from a server.
 
 #### Initial statuses FastTab
 
 > [!NOTE]
-> The **Initial status** FastTab isn't available for actions that have an initial type of **Populate records** or **Create message**.
+> The **Initial statuses** FastTab isn't available for actions that have an initial type of **Populate records** or **Create message**.
 
 | Field               | Description                                                                                         |
 |---------------------|-----------------------------------------------------------------------------------------------------|
@@ -223,7 +224,7 @@ The following options are available in the **Action type** field:
 
 Electronic message processing is a basic concept of the Electronic messages functionality. It aggregates actions that should be evaluated for the electronic message. The actions can be linked via an initial status and a result status. Alternatively, actions of the **User processing** type can be started independently. On the **Electronic message processing** page (**Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**), you can also select additional fields that should be supported for the processing.
 
-The **Action** FastTab lets you add predefined actions to the processing. You can specify whether an action must be run separately (for user actions, it's mandatory), or whether it can be initiated by the processing.
+The **Action** FastTab lets you add predefined actions to the processing. You can specify whether an action must be run separately (user actions must be run separately only), or whether it can be initiated by the processing.
 
 The **Message item additional fields** FastTab lets you add predefined additional fields that are related to message items. You must add additional fields for each type of message item that the fields are related to.
 
@@ -296,7 +297,7 @@ The following table describes the fields on the **Message items** tab.
 </tr>
 <tr>
 <td>Message item type</td>
-<td>The type of message item. Several types of messages items can be set up for the same processing (for example, <strong>Incoming invoices</strong> and <strong>Outgoing invoices</strong>). This field can be filled in automatically only when an invoice is added to the table.</td>
+<td>The type of message item. Several types of messages items can be set up for the same processing (for example, <strong>Incoming invoices</strong> and <strong>Outgoing invoices</strong>). This field can be filled in automatically only when an invoice is added to the Message items table.</td>
 </tr>
 <tr>
 <td>Message item status</td>
@@ -315,11 +316,11 @@ The following table describes the fields on the **Message items** tab.
 </tr>
 <tr>
 <td>Document number</td>
-<td>This field is filled in automatically, based on the setup of the populate records action. This field can be filled in automatically only when an invoice is added to the register.</td>
+<td>This field is filled in automatically, based on the setup of the populate records action. This field can be filled in automatically only when an invoice is added to the Message items table.</td>
 </tr>
 <tr>
 <td>Account number</td>
-<td>The account number of a customer or vendor (or another field value, depending on the field that is defined on the populate records action). This field can be filled in automatically only when an invoice is added to the register.</td>
+<td>The account number of a customer or vendor (or another field value, depending on the field that is defined on the populate records action). This field can be filled in automatically only when an invoice is added to the Message items table.</td>
 </tr>
 <tr>
 <td>Message</td>
