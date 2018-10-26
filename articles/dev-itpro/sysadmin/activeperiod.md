@@ -39,6 +39,9 @@ With the release of Platform update 21, an additional level of control over when
 - Selecting to run batch jobs outside of office hours only. 
 - Setting the recurrence for anytime within the active period. For example, you administrator might select to run the batch jobs every hour, but only between the hours of 6:00 PM and 8:00 AM.
 
+> [!NOTE] 
+> This feature is available as of Platform update 21.
+
 ## Set up active periods for batch jobs 
 
 1.	Go to **System administration** > **Setup** > **Active periods for batch jobs**.
