@@ -50,7 +50,7 @@ The release notes contain information about the [third wave of platform extensib
 ## Export up to one million rows to Excel
 The Export to Excel feature can now be configured to allow users to export up to one million rows from a grid in Finance and Operations, a substantial increase from the previous 10,000 row limit. By default, the export limit is set to 50,000 rows, but through the **Client performance options** page, system administrators can adjust the export limit as high as one million rows.
 
-For more information, see the article on [Troubleshooting the Office integration](../dev-itpro/office-integration/office-integration-troubleshooting.md#why-is-the-export-to-excel-functionality-limited-to-10000-records).
+For more information, see the article on [Troubleshooting the Office integration](../../dev-itpro/office-integration/office-integration-troubleshooting.md#why-is-the-export-to-excel-functionality-limited-to-10000-records).
 
 ## Improved usability of the navigation pane
 The navigation pane is a highly-used navigation mechanism in Finance and Operations that provides access to favorites, recently opened pages, workspaces, and notably the main menu. Because of its high usage, the navigation pane has been enhanced in a few ways to improve its usability. These changes are available starting in Platform Update 22. To learn more, see [Improved usability of the navigation pane](/business-applications-release-notes/October18/dynamics365-finance-operations/updated-navigation-pane).
