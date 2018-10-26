@@ -120,6 +120,23 @@ Run the following script against the copy of the database to turn off change tra
 ```
 --Prepare a database in Azure SQL ddatabase for export to SQL Server.
 
+--Remove certificates in database from Electronic Signature usage
+DECLARE @SQL nvarchar(512)
+DECLARE certCursor CURSOR for
+select 'DROP CERTIFICATE ' + QUOTENAME(c.name) + ';'
+from sys.certificates c;
+OPEN certCursor;
+FETCH certCursor into @SQL;
+WHILE @@Fetch_Status = 0
+BEGIN
+print @SQL;
+exec(@SQL);
+FETCH certCursor into @SQL;
+END;
+CLOSE certCursor;
+DEALLOCATE certCursor;
+
+
 -- Re-assign full rext catalogs to [dbo]
 BEGIN
     DECLARE @catalogName nvarchar(256);
