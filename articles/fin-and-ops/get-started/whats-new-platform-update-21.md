@@ -76,3 +76,13 @@ With sticky default actions on, the default action hyperlink will be on the same
 ![Sticky default actions off](media/stickyDAOn.png  "With sticky default actions on, the Account column is still the default action column despite any personalizations.")
 
 With Platform update 21, the sticky default action feature is off, but a system administrator can turn it on for an environment. To turn on this feature, go to the **Client performance options** page under **System administration** and find the **Enable sticky default action** option.  
+
+## Batch active periods
+
+With the release of Platform update 21, an additional level of control over when batch jobs execute is now available. Previously, it was only possible to schedule a batch job to execute every hour for a specified number of hours or until a given date. Administrators can now provide information for an additional active period, such as in the following scenarios:
+
+- Specifying time ranges during which jobs within a batch group can start execution.
+- Selecting to run batch jobs outside of office hours only.
+- Setting the recurrence for anytime within the active period. For example, you administrator might select to run the batch jobs every hour, but only between the hours of 6:00 PM and 8:00 AM.
+
+For more information see [Batch active period](../../dev-itpro/sysadmin/activeperiod.md)
