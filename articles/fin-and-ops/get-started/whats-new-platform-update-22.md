@@ -45,7 +45,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 For information about the bug fixes included in each of the updates that are part of Platform update 22, sign in to Lifecycle Services (LCS) and view this KB article. XXX
 
 ## Extensibility enhancements
-The release notes contain information about the [third wave of platform extensibility enhancements for the October 2018 release](/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility3), which are available with Platform update 22. There are ten enhancements detailed.
+With Platform update 22, a third wave of platform extensibility enhancements are available. For more information, see [Platform extensibility enhancements wave 3](/business-applications-release-notes/October18/dynamics365-finance-operations/platform-extensibility3).
 
 ## Export up to one million rows to Excel
 The Export to Excel feature can now be configured to allow users to export up to one million rows from a grid in Finance and Operations, a substantial increase from the previous 10,000 row limit. By default, the export limit is set to 50,000 rows, but through the **Client performance options** page, system administrators can adjust the export limit as high as one million rows.
