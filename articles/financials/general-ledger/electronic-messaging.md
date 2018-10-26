@@ -130,7 +130,7 @@ You can manually set up an executable class on the **Executable class settings**
 
 ### Populate records actions
 
-You use populate records actions to set up actions that add records so that they can be sent to the Electronic message items table. You can set up populate records actions on the **Populate records action** page (**Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**). Create a new record for every action that should add records to the table, and set the following fields.
+You use populate records actions to set up actions that add records to the **Massage items** table so that they can be added further to an **Electronic message**. For example, if your electronic message must report customer invoices you need to set up a **Populate records** action with a data source on customer invoice journal. You can set up populate records actions on the **Populate records action** page (**Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**). Create a new record for every action that should add records to the table, and set the following fields.
 
 | Field       | Description                                                               |
 |-------------|---------------------------------------------------------------------------|
@@ -165,7 +165,7 @@ The following table describes the fields on the **Web service settings** page.
 | The response type – XML | Set this option to **Yes** if the response type is XML.                                                         |
 | Request method          | Specify the method of the request. HTTP defines a set of request methods to indicate the desired action to be performed for a given resource. It can be 'GET', 'POST' or other HTTP method.                                                                             |
 | Request headers         | Specify request headers. A request header is an HTTP header that can be used in an HTTP request, and that doesn't relate to the content of the message.                                                                                        |
-| Accept encoding         | Specify the accept encoding. The Accept-Encoding request HTTP header advertises which content encoding, usually a compression algorithm, the client is able to understand.                                                                                    |
+| Accept encoding         | Specify the Accept-Encoding. The Accept-Encoding request HTTP header advertises which content encoding, usually a compression algorithm, the client is able to understand.                                                                                    |
 | Content type            | Specify the content type. The Content-Type entity header is used to indicate the media type of the resource.                                                                                      |
 
 ### Message processing actions
@@ -184,11 +184,11 @@ The following tables describe the fields on the **Message processing actions** p
 | Executable class        | Select executable class settings that were previously created. This field is available only for actions of the **Message item execution level** and **Message item execution level** types. |
 | Populate records action | Select a populate records action that was previously set up. This field is available only for actions of the **Populate records** type. |
 
-##### Action types
+##### Message processing action types
 
 The following options are available in the **Action type** field:
 
-- **Populate records** – Use this type to associate a populate records action that was previously set up. It's assumed that this action type is used for the first action in message processing. Therefore, only a result status can be set up for an action of this type. An initial status can't be set up.
+- **Populate records** – A **Populate records** action must be set up previously. Associate it with an action of "Populate records" type to let included it to a processing. It's assumed that this action type is used for the first action in message processing. Therefore, only a result status can be set up for an action of this type. An initial status can't be set up.
 - **Create message** – Use this type to let users manually create messages on the **Electronic message** page. An initial status can't be set up for an action of this type.
 - **Message execution level** – Use this type to set up an executable class that should be evaluated at the message level.
 - **Message item execution level** – Use this type to set up an executable class that should be evaluated at the message item level.
