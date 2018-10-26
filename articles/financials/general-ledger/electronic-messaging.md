@@ -367,9 +367,63 @@ The **Attachments** page shows all the attachments that are related to the messa
 
 Select **Original document** on the Action Pane to open the original document for the selected message item.
 
-## Examples
+## Example
 
-This section provides some simple examples that show how you might set up the Electronic messages functionality to build a reporting process:
+Basically if you have created, mapped to data source(s) and completed GER format you may simply run it via Electronic reporting module and get generated report, which you may further either save locally, transmit anywhere if needed and so on. But when you need to control some reporting process whilst logging information about who and when generated a report and saving in the system the reports generated for the previous period(s), you need to set up electronic messaging processing. Use Electronic messages functionality for this purpose.
+This section provides a simple example that shows how you might set up the Electronic messages functionality to build a reporting process.
 
-- Set up and run processing to call a simple ER format to generate an Excel report.
-- Add an action to an existing processing to call a simple ER format to generate an Excel report.
+### Set up and run processing to call a simple ER exporting format to generate an Excel report
+
+This paragraph proposes an example of how you may set up Electronic messaging to run generation of a report based on a GER Excel exporting format. It is supposed in this example that the GER Excel exporting format is already created, mapped to data source(s) and completed. It is also supposed that a number sequence for Electronic messages is set up.
+Building a processing, it is helpful to define first the processing actions and statuses which are going to be set up. For this example, the processing would look like:
+
+Pic.1
+
+### Step 1 “Create Message statuses”
+Open Tax > Setup > Electronic messages > Message statuses.
+Add records for the following statuses:
+-	New
+-	Prepared
+-	Generated.
+
+Pic.2
+
+Mark “Allow delete” if you want to let used delete messages in the “New” status.
+### Step 2 “Create Additional fields”
+Open Tax > Setup > Electronic messages > Additional fields.
+Add an Additional field and its values, for example:
+
+Pic.3
+
+Mark “User edit” check box if you want to allow user editing of this field.
+### Step 3 “Create Message processing actions”
+Open Tax > Setup > Electronic messages > Message processing actions.
+Add the following actions:
+“Create message”
+Pic. 4
+“Update to Prepared”
+Pic.5
+“Generate report”
+Pic.6
+In the Format mapping field selected your GER format (it can be either Excel, XML, JSON, Text, other).
+To allow user to re-generate a report several times you may additionally set up an “Update to initial status” action:
+Pic.7
+### Step 4 “Electronic message processing”
+Open Tax > Setup > Electronic messages > Electronic message processing.
+Add one record for you processing and add all previously defined actions and Additional field:
+Pic.8
+In our example all the actions are set up as “Run separately” as it is supposed that each action will be initialized by user.
+You may also define Security roles for you processing to restrict access to a specific reporting:
+Pic.9
+Now the processing is ready to be used. Open Tax > Inquires and reports > Electronic messages > Electronic messages and click “New” to create a new message:
+Pic.10
+As a result, a new message will be created. You may additionally specify From and To dates, Description and update the value of the Additional field (if needed):
+Pic.11
+Action log is filled in automatically, so all the actions done with the message are logged.
+Now you may either delete or update message status. To update message status, click on “Update status” button and select new status as “Prepared”:
+Pic.12
+As a result, the message status is updated to “Prepared” and now you may generate the report. To do so, click on the “Generate report” button. The report will be generated, Message status and Action log updated. You may review generated report by the Attachment button on the Action pane:
+Pic.13
+
+
+
