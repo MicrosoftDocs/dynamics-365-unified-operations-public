@@ -38,11 +38,11 @@ This sample is part of the Retail software development kit (SDK). For informatio
 This sample consists of extensions for the Commerce runtime (CRT). To run this sample, you must modify and build the CRT projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 > [!NOTE] 
-> Some steps in the procedures in this topic differ, depending on the version of Microsoft Dynamics 365 for Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
+> Some steps in the procedures in this topic differ, depending on the version of Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
 
 ## Prerequisites
 
-Make sure that the Visual C++ Redistributable Packages are present on the machine you are running Goods and Services Tax (GST) calculations on. It's Retail server for Cloud POS and MPOS online mode, MPOS machine itself for offline mode. You can get the packages from the following location: [Download the Visual C++ Redistributable Packages](https://www.microsoft.com/download/details.aspx?id=30679).
+Make sure that the Visual C++ Redistributable Packages are present on the machine that you're running Goods and Services Tax (GST) calculations on. For Cloud POS, and for Modern POS in online mode, this machine is Retail server. For Modern POS in offline mode, it's the Modern POS machine itself. To get the packages, see [Download the Visual C++ Redistributable Packages](https://www.microsoft.com/download/details.aspx?id=30679).
 
 ## Development environment
 
@@ -57,45 +57,44 @@ The CRT extension components are included in the CRT samples. To complete the fo
 # [Retail 7.3.1](#tab/retail-7-3-1)
 
 1. Find the **Runtime.Extensions.GenericTaxEngine** project, and build it.
-
 2. Find the following files:
 
-    In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
+    - In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
 
-    - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
+        - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
 
-    In the **Reference\\Newtonsoft.Json\\9.0.0.0** folder:
+    - In the **Reference\\Newtonsoft.Json\\9.0.0.0** folder:
 
-    - Newtonsoft.Json.dll
+        - Newtonsoft.Json.dll
 
-    In the **Reference\\TaxEngine** folder:
+    - In the **Reference\\TaxEngine** folder:
 
-    - Microsoft.Dynamics365.Tax.Core.dll
-    - Microsoft.Dynamics365.Tax.DataAccessor.dll
-    - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-    - Microsoft.Dynamics365.Tax.DataModel.dll
-    - Microsoft.Dynamics365.Tax.Metadata.dll
-    - Microsoft.Dynamics365.LocalizationFramework.dll
-    - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-    - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-    - Microsoft.Dynamics365.XppSupportLayer.dll
+        - Microsoft.Dynamics365.Tax.Core.dll
+        - Microsoft.Dynamics365.Tax.DataAccessor.dll
+        - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
+        - Microsoft.Dynamics365.Tax.DataModel.dll
+        - Microsoft.Dynamics365.Tax.Metadata.dll
+        - Microsoft.Dynamics365.LocalizationFramework.dll
+        - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
+        - Microsoft.Dynamics365.ElectronicReportingMapping.dll
+        - Microsoft.Dynamics365.XppSupportLayer.dll
 
-    Find the following folders in the **Reference\\Z3** folder:
+3. In the **Reference\\Z3** folder, find the following folders:
 
     - x86
     - x64
 
-3. Copy the 11 assembly files, and both x64 and x86 folders to the CRT extensions folder:
+4. Copy the 11 assembly files, and both the **x64** and **x86** folders, to the CRT extensions folder:
 
     - **Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
     - **Local CRT on Modern POS:** Copy the assemblies to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+5. Find the extensions configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+6. Register the CRT change in the extensions configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
@@ -104,48 +103,47 @@ The CRT extension components are included in the CRT samples. To complete the fo
 # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
 1. Find the **Runtime.Extensions.GenericTaxEngine** project, and build it.
-
 2. Find the following files:
 
-    In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
+    - In the **Extensions.GenericTaxEngine\\bin\\Debug** folder:
 
-    - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
+        - Contoso.Commerce.Runtime.Extensions.GenericTaxEngine.dll
 
-    In the **Reference\\Newtonsoft.Json\\9.0.0.0** folder:
+    - In the **Reference\\Newtonsoft.Json\\9.0.0.0** folder:
 
-    - Newtonsoft.Json.dll
+        - Newtonsoft.Json.dll
 
-    In the **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** folder:
+    - In the **References\\Microsoft.Dynamics.AX.TaxEngine.7.3.42\\XppModule\\TaxEngine\\bin** folder:
 
-    - Microsoft.Dynamics365.LocalizationFramework.dll
-    - Microsoft.Dynamics365.Tax.Core.dll
-    - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
-    - Microsoft.Dynamics365.Tax.DataAccessor.dll
-    - Microsoft.Dynamics365.Tax.DataModel.dll
-    - Microsoft.Dynamics365.Tax.Metadata.dll
+        - Microsoft.Dynamics365.LocalizationFramework.dll
+        - Microsoft.Dynamics365.Tax.Core.dll
+        - Microsoft.Dynamics365.Tax.DataAccessFramework.dll
+        - Microsoft.Dynamics365.Tax.DataAccessor.dll
+        - Microsoft.Dynamics365.Tax.DataModel.dll
+        - Microsoft.Dynamics365.Tax.Metadata.dll
 
-    In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** folder:
+    - In the **References\\Microsoft.Dynamics.AX.ElectronicReporting.7.3.42\\XppModule\\ElectronicReporting\\bin** folder:
 
-    - Microsoft.Dynamics365.ElectronicReportingMapping.dll
-    - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
-    - Microsoft.Dynamics365.XppSupportLayer.dll
+        - Microsoft.Dynamics365.ElectronicReportingMapping.dll
+        - Microsoft.Dynamics365.LocalizationFrameworkCore.dll
+        - Microsoft.Dynamics365.XppSupportLayer.dll
 
-    Find the following folders in the **Reference\\Z3.4.5.0\\lib\\net40** folder:
+3. In the **Reference\\Z3.4.5.0\\lib\\net40** folder, find the following folders:
 
     - x86
     - x64
 
-3. Copy the 11 assembly files, and both x64 and x86 folders to the CRT extensions folder:
+4. Copy the 11 assembly files, and both the **x64** and **x86** folders, to the CRT extensions folder:
 
     - **Retail Server:** Copy the assemblies to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
     - **Local CRT on Modern POS:** Copy the assemblies to the **\\ext** folder under the local CRT client broker location.
 
-4. Find the extensions configuration file for CRT:
+5. Find the extensions configuration file for CRT:
 
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-5. Register the CRT change in the extensions configuration file.
+6. Register the CRT change in the extensions configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.Extensions.GenericTaxEngine" />
@@ -153,11 +151,11 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-Generic Tax Engine component is a part of sealed extensions.
+The Generic Tax Engine component is a part of sealed extensions.
 
 1. Find the extensions configuration file for CRT:
 
-    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.
+    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
 2. Register the CRT change in the extensions configuration file.
@@ -237,12 +235,12 @@ Follow these steps to create deployable packages that contain Retail components,
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-    > [!Note]
-    > Not applicable for this version.
+    > [!NOTE]
+    > This step doesn't apply to this version.
 
     ---
 
-3. Modify the following files to include the Z3 libraries in deployable packages.:
+3. Modify the following files to include the Z3 libraries in deployable packages:
 
     - Packages\\ModernPOS.Sdk\\Sdk.ModernPOSSetup.csproj
     - Packages\\ModernPOSOffline.Sdk\\Sdk.ModernPOSSetupOffline.csproj
@@ -250,55 +248,54 @@ Follow these steps to create deployable packages that contain Retail components,
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
-    Add the following lines to the **ItemGroup** section
+    Add the following lines to the **ItemGroup** section.
 
     ```xml
-        <_bin_ext_Z3_x86_File Include="..\..\References\Z3\x86\*.*" />
-        <_bin_ext_Z3_x64_File Include="..\..\References\Z3\x64\*.*" />
+    <_bin_ext_Z3_x86_File Include="..\..\References\Z3\x86\*.*" />
+    <_bin_ext_Z3_x64_File Include="..\..\References\Z3\x64\*.*" />
     ```
 
-    For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+    For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj**, also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.
 
     ```xml
-        <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
-        <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-    For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+    For **Sdk.RetailServerSetup.proj**, also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.
 
     ```xml
-        <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
-        <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
     ```
 
     # [Retail 7.3.2 and later](#tab/retail-7-3-2)
 
     ```xml
-        <_bin_ext_Z3_x86_File Include="..\..\Reference\Z3.4.5.0\lib\net40\x86\*.*" />
-        <_bin_ext_Z3_x64_File Include="..\..\Reference\Z3.4.5.0\lib\net40\x64\*.*" />
+    <_bin_ext_Z3_x86_File Include="..\..\Reference\Z3.4.5.0\lib\net40\x86\*.*" />
+    <_bin_ext_Z3_x64_File Include="..\..\Reference\Z3.4.5.0\lib\net40\x64\*.*" />
     ```
 
-    For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+    For **Sdk.ModernPOSSetup.csproj** and **Sdk.ModernPOSSetupOffline.csproj**, also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.
 
     ```xml
-        <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
-        <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x86" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\x64" SkipUnchangedFiles="true" />
     ```
 
-    For **Sdk.RetailServerSetup.proj** also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section
+    For **Sdk.RetailServerSetup.proj**, also add the following lines to the **\<Target Name="CopyPackageFiles"\>** section.
 
     ```xml
-        <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
-        <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x86_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x86" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(_bin_ext_Z3_x64_File)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\x64" SkipUnchangedFiles="true" />
     ```
 
     # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-    > [!Note]
-    > Not applicable for this version.
+    > [!NOTE]
+    > This step doesn't apply to this version.
 
     ---
 
 4. Run **msbuild** for the whole Retail SDK to create deployable packages.
-
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
