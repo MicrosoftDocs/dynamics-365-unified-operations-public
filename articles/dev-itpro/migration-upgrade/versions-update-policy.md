@@ -66,7 +66,7 @@ For information about the new features included in each release, click the links
 | Dynamics 365 for Finance and Operations | Service update                      | [8.1.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-8-1-1)          | 8.1.170          | October 2018     | N/A (Continuously updated)   |
 | Dynamics 365 for Finance and Operations | Major release                       | [8.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-8-1-october-2018) | 8.1.136          | October 2018     | N/A (Continuously updated)\* |
 
-\*Indicates a service update is required to be applied for any servicing that is required. Service updates are cumulative in nature and may include updates for some or all the following components: Platform, Application, Financial Reporting, Retail, and Operating system updates. Since service updates are cumulative in nature, customer must be no more than 3 updates old. Version 8.1.x series will be replaced by v10 targeted April 2019.
+\* Indicates a service update is required to be applied for any servicing that is required. Service updates are cumulative in nature and may include updates for some or all the following components: Platform, Application, Financial Reporting, Retail, and Operating system updates. Since service updates are cumulative in nature, customer must be no more than 3 updates old. Version 8.1.x series will be replaced by v10 targeted April 2019.
 
 ### Table 2: Application releases
 
