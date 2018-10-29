@@ -131,7 +131,7 @@ Refer to the [Process for moving to the latest update of Finance and Operations]
 
 ## Retail service updates
 
-### What components of my solution will be impacted by One Version monthly updates?
+### What components of my solution will be impacted by One Version service updates?
 
 All cloud components including Retail Server and Cloud POS will be updated at the same cadence as your Dynamics 365 headquarters.
 
