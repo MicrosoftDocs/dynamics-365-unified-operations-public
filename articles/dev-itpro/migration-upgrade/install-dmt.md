@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 17
 This topic explains how to set up the Data migration tool (DMT) so that you can migrate data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.
 
 > [!IMPORTANT]
-> At this time, the DMT is in private preview. If you are interested, you can sign up for the preview [here](https://microsoft.qualtrics.com/jfe/form/SV_brOLCioQ7mmeykB). The public release date for the DMT has not been set. 
+> At this time, the DMT is in private preview. If you are interested you can sign up for the [Preview Program](https://microsoft.qualtrics.com/jfe/form/SV_brOLCioQ7mmeykB). The public release date for the DMT has not been set. 
 
 ## Prerequisites
 
