@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail discounts
-description: This topic provides an overview of the discounts capability in Dynamics 365 for Retail. It explains the various properties of the discounts, concurrency models, priorities, and best practices
+description: This topic provides an overview of the discounts functionality in the Dynamics 365 for Retail. It explains the various properties found on the various discount forms, and best practices for discount management.
 author: shajain
 manager: AnnBe
 ms.date: 10/23/2018
