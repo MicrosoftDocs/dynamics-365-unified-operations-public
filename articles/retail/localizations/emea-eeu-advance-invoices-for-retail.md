@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 The information in this topic applies to the Eastern European localization and is specific to the retail industry.
 
-For some European countries (Poland, Hungary, and Czech Republic), when a prepayment is received from a customer via Point of Sale (POS), the prepayment must be registered for tax purposes, and you must generate and print an advance invoice document that includes the prepayment amount. Additionally, for Poland, advance invoice transactions must be posted in the general ledger.
+For Poland, Hungary, and Czech Republic, when a prepayment is received from a customer via Point of Sale (POS), the prepayment must be registered for tax purposes, and it's required to generate and print an advance invoice document that includes the prepayment amount. Additionally, for Poland, advance invoice transactions must be posted in the general ledger.
 
 When the invoice for the sales order is finally posted, the final document should include the advance invoice, and any prepayments should be indicated.
 
@@ -47,9 +47,6 @@ The following scenarios are supported:
 - Modify a deposit amount. If a customer decides to increase the amount of a deposit, an additional advance invoice is issued. For all other changes to the deposit amount (for example, if a customer order is edited), a credit note is created for the advance invoice that was previously generated, and a new advance invoice is generated and posted for the corrected amount.
 - Cancel a sales order that has linked advance invoices. In this case, a credit note is created for the advance invoice.
 - Post a sales order invoice that has linked advance invoices. The advance invoice that is linked to a sales order is reversed for the amount of the sales invoice. The advance invoice transactions are settled with advance invoice reversal transactions.
-
-> [!NOTE]
-> Currently, advance invoices can't be printed from POS.
 
 ## Set up advance invoices
 
