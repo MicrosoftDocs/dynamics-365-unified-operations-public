@@ -5,7 +5,7 @@ title: Copy Finance and Operations databases from Azure SQL Database to SQL Serv
 description: This topic explains how to move a Microsoft Dynamics 365 for Finance and Operations database from an Azure-based environment to a SQL Server–based environment.
 author: laneswenka
 manager: AnnBe
-ms.date: 10/04/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -345,14 +345,6 @@ If change tracking was enabled in the source database, ensure to enable change t
 
 To ensure current version of the store procedure (related to change tracking) is used in the new database, you must enable/disable change tracking for a data entity in data management. This can be done on any entity as this is needed to trigger the refresh of store procedure.
 
-### Re-provision the target environment
-
-[!include [environment-reprovision](../includes/environment-reprovision.md)]
-
-### Reset the Financial Reporting database
-
-If you're using Financial Reporting, which was previously named Management Reporter, you must reset the Financial Reporting database by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
-
 ## Start to use the new database
 
 To switch the environment and use the new database, first stop the following services:
@@ -364,6 +356,14 @@ To switch the environment and use the new database, first stop the following ser
 After the services have been stopped, rename the AxDB database **AxDB\_orig**, rename your newly imported database **AxDB**, and then restart the three services.
 
 To switch back to the original database, reverse this process. In other words, stop the services, rename the databases, and then restart the services.
+
+### Re-provision the target environment
+
+[!include [environment-reprovision](../includes/environment-reprovision.md)]
+
+### Reset the Financial Reporting database
+
+If you're using Financial Reporting, which was previously named Management Reporter, you must reset the Financial Reporting database by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md).
 
 ## Re-enter data from encrypted and environment-specific fields in the target database
 

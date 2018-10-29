@@ -239,7 +239,7 @@ Warehouse mobile devices portal (WMDP) was a standalone component that was inten
 | **Replaced by another feature?**   | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Product areas affected**         | Warehouse management, Transportation management     |
 | **Deployment option**              | Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.               |
-| **Status**                         | Deprecated: A removal date has not been set for this feature.   |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q4 2019.   |
 
 ### Advanced bank reconciliation matching rule for manual matching
 

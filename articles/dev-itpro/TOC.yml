@@ -1023,6 +1023,8 @@
       href: migration-upgrade/upgrade-data-to-latest-update.md
     - name: Update development tools
       href: dev-tools/update-development-tools.md
+    - name: Plan and prepare for compiling code against the latest update
+      href: migration-upgrade/compile-considerations.md
   - name: Upgrade to a recent update (on-premises)
     items:
     - name: Apply updates to on-premises deployments

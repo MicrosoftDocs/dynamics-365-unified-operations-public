@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 21. This version was released in October 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/26/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -76,3 +76,13 @@ With sticky default actions on, the default action hyperlink will be on the same
 ![Sticky default actions off](media/stickyDAOn.png  "With sticky default actions on, the Account column is still the default action column despite any personalizations.")
 
 With Platform update 21, the sticky default action feature is off, but a system administrator can turn it on for an environment. To turn on this feature, go to the **Client performance options** page under **System administration** and find the **Enable sticky default action** option.  
+
+## Batch active periods
+
+With the release of Platform update 21, an additional level of control over when batch jobs execute is now available. Previously, it was only possible to schedule a batch job to execute every hour for a specified number of hours or until a given date. Administrators can now provide information for an additional active period, such as in the following scenarios:
+
+- Specify time ranges during which jobs within a batch group can start execution.
+- Select to only run batch jobs outside of office hours.
+- Set the recurrence for anytime within the active period. For example, your administrator might select to run the batch jobs every hour, but only between the hours of 6:00 PM and 8:00 AM.
+
+For more information, see [Batch active period](../../dev-itpro/sysadmin/activeperiod.md).
