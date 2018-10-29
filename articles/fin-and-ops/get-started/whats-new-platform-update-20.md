@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -184,3 +184,15 @@ If the **Personalization** toolbar is open, the page is still read-only but is n
 
 For more information about personalization, see [Personalize the user experience](personalize-user-experience.md).
 
+## Batch manager security role
+Before Platform update 20, users needed to be assigned to the system admin or IT admin security role to manage batch jobs. With the release of Platform update 20 there is a more targeted role, Batch manager. With this security role, a user now has permission to copy batch jobs, change who will execute jobs, and specify the time ranges during which jobs can execute. The Batch maintain security privilege is part of the Batch manager security role, this allows a user to create an ad hoc batch job and grant privileges to other users.
+
+For more information, see [Batch manager role](../../dev-itpro/sysadmin/runby.md).
+
+## Copy batch job
+
+ You can now create a copy of the same batch jobs for different legal entities, and then you can use the copy batch job functionality to copy an existing batch job and the batch tasks, including recurrences.
+
+You can simultaneously set the description, company, schedule start date and time, recurrence, and the run by account. When you copy the batch job, any alerts and dependencies from the source job will also be copied.
+
+For more information, see [Copy batch job](../../dev-itpro/sysadmin/copy-batch-job.md).
