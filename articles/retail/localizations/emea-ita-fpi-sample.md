@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1.1
 
 ## Overview
 
-The fiscal integration for Italy includes samples of the integration with the fiscal printer EPSON FP-90II. This was developed based on the fiscal integration framework. For details about the fiscal integration functionality, see [Fiscal integration for Retail channel](fiscal-integration-for-retail-channel.md).
+The fiscal integration for Italy includes samples of the integration with the fiscal printer EPSON FP-90III. This was developed based on the fiscal integration framework. For details about the fiscal integration functionality, see [Fiscal integration for Retail channel](fiscal-integration-for-retail-channel.md).
 
 This sample includes the following functionality:
 - Integration with fiscal printer Epson FP-90III via web-service mode - ePOS-Print solution.
