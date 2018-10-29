@@ -41,11 +41,11 @@ This functionality lets you use production data to test upcoming code changes in
 ## Database refresh process
 
 > [!NOTE]
-> As of October 2018, database refresh requests must be signed off before another refresh of the same environment can be started.  This is to support future automation of database movement operations.  To signoff, visit your Environment Details page and click the Signoff button.  You can create many Database Refresh service requests out in to the future, however you must signoff in between each one.
+> As of October 2018, database refresh requests must be signed off before another refresh of the same environment can be started.  This is to support future automation of database movement operations.  To sign off, visit your Environment Details page and click the Signoff button.  You can create many Database Refresh service requests out in to the future, however you must signoff in between each one.
 
 The Microsoft Service Engineering team will take your environment offline, complete the refresh, and then bring the environment back online. You can expect the downtime period to be approximately two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment's downtime. In the future, we will provide a self-service method that you can use to perform your database refreshes.
 
-1. In LCS, from the Project home page select **Service requests**.
+1. In LCS, on the Project home page, select **Service requests**.
 2. On the **Service requests** page, select **Add** on the toolbar, and then select **Database refresh**.
 3. In the **Request for database refresh** dialog box, follow these steps:
 
@@ -54,8 +54,8 @@ The Microsoft Service Engineering team will take your environment offline, compl
     3. Carefully read and acknowledge the statements that have check boxes next to them.
 
 4. After you submit your request, you are returned to the list of work items. Here, you can view the status of the request, or reschedule or cancel the request.
-5. Ensure no prior servicing request on your environment is awaiting signoff or rollback.  Visit your environment details page and Signoff any completed refresh or package deployment.
-6. When the Service Engineering team has acknowledged that it can complete your request, the status of the request is changed to **Request accepted**. At this point, you can follow any of these steps:
+5. Ensure no prior servicing request on your environment is awaiting signoff or rollback. Visit your environment details page and sign off any completed refresh or package deployment.
+6. When the Service Engineering team has acknowledged that they can complete your request, the status of the request is changed to **Request accepted**. At this point, you can follow any of these steps:
 
     - Wait for the Service Engineering team to complete the refresh. When the restore is completed, the status is changed to **Succeeded**.
     - Reschedule the request by selecting the ID, or by selecting the request and then selecting **Reschedule** on the toolbar. You can then change the dates and times for the downtime window.
