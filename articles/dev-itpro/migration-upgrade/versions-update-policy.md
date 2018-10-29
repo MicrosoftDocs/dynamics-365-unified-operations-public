@@ -38,7 +38,11 @@ This topic outlines the lifecycle and support policies for the Microsoft Dynamic
 ## Modern Lifecycle Policy
 The Dynamics 365 for Finance and Operations online service is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881). Licensed customers must stay current with updates to the Dynamics 365 for Finance and Operations online service in accordance with the following servicing and system requirements:
 
-- Customers purchasing subscriptions of Microsoft Dynamics 365 for Finance and Operations and operating on Application releases 1611, July 2017, 7.3 and 8.0 will experience continuous updates of the Platform and Financial Reporting. Microsoft will continually update these components with the option to postpone an update for up to 30 days.
+- Customers purchasing subscriptions of Microsoft Dynamics 365 for Finance and Operations and operating on the following Application versions will experience continuous updates of the Platform and Financial Reporting. Microsoft will continually update these components with the option to postpone an update for up to 30 days.
+    - Dynamics 365 for Operations version 1611 (November 2016)
+    - Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+    - Dynamics 365 for Finance and Operations, Enterprise edition 7.3
+    - Dynamics 365 for Finance and Operations, version 8.0 (April 2018)
 
 - Platform versions maintain backward compatibility with the application versions that are supported at the time of the platform release within the application support lifecycle. For more information about platform versions, see [Finance and Operations cloud platform monthly updates FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/faq-platform-monthly-updates).
 
@@ -46,25 +50,32 @@ The Dynamics 365 for Finance and Operations online service is covered by the Mod
 
     - **Critical fixes** – Critical fixes include security fixes and any fixes that are required to adhere to the availability service level agreement (SLA) that the service supports. Critical fixes will be made available in the latest platform update version and in the latest service update for customers operating on version 8.1. In addition, to help protect the customer and the online service, Microsoft might apply critical fixes directly to a customer's Dynamics 365 for Finance and Operations environments. If a critical fix must be applied, Microsoft will notify the customer about the required downtime window (if there will be any downtime) and apply the fix to the applicable environment. The critical fix will update the system to the latest update version.
 
-    - **Non-critical updates** – Customers operating Application releases 1611, July 2017, 7.3 and 8.0 must update to the most current Finance and Operations platform and financial reporter version to deploy non-critical updates. Customers operating on release 8.1 must update to the most current Finance and Operations service update to deploy non-critical updates.
+    - **Non-critical updates** – Customers operating on the following Application releases must update to the most current Finance and Operations platform and financial reporter version to deploy non-critical updates. 
+    
+       - Dynamics 365 for Operations version 1611 (November 2016)
+       - Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+       - Dynamics 365 for Finance and Operations, Enterprise edition 7.3
+       - Dynamics 365 for Finance and Operations, version 8.0 (April 2018)
+     
+      Customers operating on release 8.1 must update to the most current Finance and Operations service update to deploy non-critical updates.
 
 > [!Note]
 > Application and Platform releases expire at the end of the month of their software lifecycle.
 
-> Microsoft will not provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may run into on an older version. If you encounter an issue on a version that has reached end of service, you will be required to update to the latest update and report the issue if it persists.
+> Microsoft will not provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on an older version. If you encounter an issue on a version that has reached end of service, you will be required to update to the latest update and report the issue if it persists.
 
-> All environments will continue to be operated by Microsoft. All automatic processes around your environments (e.g. Monitoring, Self-healing) will also continue as it is.
+> All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as is.
 
 ## Dates and versions for Finance and Operations application and platform releases
 
-### Table 1: Continuous update release
+### Table 1: Continuous update releases
 
 For information about the new features included in each release, click the links in the **Version** column.
 
-| **Release**                             | **Major release or Service update** | **Version**                                                                                                                       | **Build number** | **Availability** | **End of service**           |
+| **Release**                             | **Major release or service update** | **Version**                                                                                                                       | **Build number** | **Availability** | **End of service**           |
 |-----------------------------------------|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|------------------------------|
-| Dynamics 365 for Finance and Operations | Service update                      | [8.1.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-8-1-1)          | 8.1.170          | October 2018     | N/A (Continuously updated)   |
-| Dynamics 365 for Finance and Operations | Major release                       | [8.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-8-1-october-2018) | 8.1.136          | October 2018     | N/A (Continuously updated)\* |
+| Dynamics 365 for Finance and Operations | Service update                      | [8.1.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-8-1-1)          | 8.1.170          | October 2018     | Not applicable (continuously updated)   |
+| Dynamics 365 for Finance and Operations | Major release                       | [8.1](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-8-1-october-2018) | 8.1.136          | October 2018     | Not applicable (continuously updated)\* |
 
 \* Indicates a major release is required to be updated through service updates. Service updates are cumulative in nature and may include updates for some or all the following components:  Platform, Application, Financial Reporting, Retail, and operating system updates.  You will be required to have an update that's no older than 3 months. The 8.1.x version series will be replaced by version 10.0, which is targeted for release in April 2019. For more information, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
 
