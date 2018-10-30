@@ -693,7 +693,7 @@ You use the **print** statement to show messages (text or selected results) in a
 ## TODO comments
 The compiler recognizes the string **TODO** when it occurs at the start of a comment. The **TODO** string prompts the compiler to report the rest of the comment text in the **Task List** window in Microsoft Visual Studio. To open the **Task List** window, select **View**, and then select **Task Window**. The **Task Window** reports the line number where the **TODO** comment can be found in the code. Here are the rules for using **TODO** in comments:
 
-- The <strong>TODO</strong> string can appear in a comment that uses either the <strong>//</strong> style or the <strong>/\</strong><em>...</em><em>\*/</em>* style.
+- The **TODO** string can appear in a comment that uses either the **//** style or the **/**style.
 - The **TODO** string must be the very first non–white space string in the comment. A carriage return, a line feed, a tab, and a space are all considered white space.
 - No white space is required between the start of the comment and the **TODO**.
 - The **TODO** string is case-insensitive. However, the convention is to type **TODO** in all uppercase letters, instead of **ToDo** or another variation.
