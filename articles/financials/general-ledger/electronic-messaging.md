@@ -425,31 +425,21 @@ For this example, you'll create the following actions:
   - Initial statuses
   - Result statuses
   
-  ![Generate report action](media/generate-report.png)
+  ![Generate report action](media/generate-report-action.png)
   
 5. (Optional) To allow the user to re-generate a report several times, you can set up an **Update to initial status** action with the following fields completed:
   - Action type = Message level user processing
   - Initial statuses
   - Result statuses
 
-
-Pic. 4
-“Update to Prepared”
-Pic.5
-“Generate report”
-Pic.6
-In the Format mapping field selected your GER format (it can be either Excel, XML, JSON, Text, other).
-To allow user to re-generate a report several times you may additionally set up an “Update to initial status” action:
-Pic.7
-
-### Step 4 “Electronic message processing”
-Open Tax > Setup > Electronic messages > Electronic message processing.
-Add one record for you processing and add all previously defined actions and Additional field:
+#### Electronic message processing
+In our example all the actions should be set up to run separately as it is supposed that each action will be initialized by user.
+1. Go to **Tax > Setup > Electronic messages > Electronic message processing**.
+2. Add one record for your processing and add all previously defined actions and Additional field:
 Pic.8
-In our example all the actions are set up as “Run separately” as it is supposed that each action will be initialized by user.
-You may also define Security roles for you processing to restrict access to a specific reporting:
+3. (Optional) Define security roles for your processing to restrict access to a specific reporting:
 Pic.9
-Now the processing is ready to be used. Open Tax > Inquires and reports > Electronic messages > Electronic messages and click “New” to create a new message:
+4. Now the processing is ready to be used. Go to **Tax > Inquires and reports > Electronic messages > Electronic messages** and click **New** to create a new message. 
 Pic.10
 As a result, a new message will be created. You may additionally specify From and To dates, Description and update the value of the Additional field (if needed):
 Pic.11
