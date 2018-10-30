@@ -39,7 +39,7 @@ This topic describes statements, loops, and exception handling in X++.
 Comments
 --------
 
-It's a good practice to add comments to your code. Comments make a program easier to read and understand. Comments are ignored when the program is compiled. Your comments can use either the <strong>//</strong> style or the <strong>/\</strong><em>…</em><em>\*/</em>* style. However, a best practice is to use the <strong>//</strong> style for comments, and even for multiline comments.
+It's a good practice to add comments to your code. Comments make a program easier to read and understand. Comments are ignored when the program is compiled. Your comments can use either the **//** style or the **/** style. However, a best practice is to use the **//** style for comments, and even for multiline comments.
 
     // This is an example of a comment.
     /* Here is another example of a comment. */
