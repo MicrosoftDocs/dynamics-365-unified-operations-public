@@ -2,7 +2,7 @@
 # required metadata
 
 title: POS API
-description: This topic describes the list of POS APIs available and how to access them.
+description: This topic contains a list of available POS APIs and how to access them.
 author: mugunthanm 
 manager: AnnBe
 ms.date: 10/29/2018
@@ -31,29 +31,28 @@ ms.dyn365.ops.version: AX 8.0, AX 8.1
 ---
 # Retail POS API
 
-Retail POS API helps you to build extensions or new features to the POS app easily. Ex: If you are extending Retail POS application to add new feature in which to want to get product details or change price or add item to cart in many such scenarios you can consume our APIs which will do the work for you, simply call our APIs to do the work. The POS API simplifies the extension pattern and provide continuous support to build the extensions.
+Retail POS APIs help you to easily build extensions or new features to the POS app. For example, if you are extending the Retail POS application to add new features in which to want to get product details, change prices, or add items to a cart you can consume APIs that will do the work for youl. To do this, you need to simply call the APIs to do the work. The POS API simplifies the extension pattern and provides continuous support to build the extensions.
 
-We unified our extension patterns across commerce runtime (CRT), POS and Hardware station (HWS) by following the request/response pattern. All the POS APIs are exposed as request/response like CRT and HWS. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail with the latest hotfix. 
+Extension patterns have been unified across commerce runtime (CRT), POS and Hardware station (HWS) by following the request/response pattern. All the POS APIs are exposed as request/response like CRT and HWS. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail with the latest hotfix. 
 
-**The POS APIs are categorized into three different scenarios:**
+The POS APIs are categorized into three different scenarios:
 
-1.  **Consume** – Consume our public APIs in your extension.
+- **Consume** – Consume public APIs in your extension.
 
-2.  **Extend** – Override our public APIs to do some additional logic.
+- **Extend** – Override public APIs to do some additional logic.
 
-3.  **Create** – Create your new APIs using the POS interface exposed which can be used across your extensions.
+- **Create** – Create new APIs using the exposed POS interface, which can be used across your extensions.
 
-**Consume:**
+Many APIs can be consumed in extensions. For example, if you want to change the price of the item based on an external web service call, you can call PriceOverrideOperationRequest to change the price of the item. Within the consume, the APIs are sub categorized by module like create, peripherals, store operations, etc.
 
-We exposed lot of APIs to be consumed in extensions. Ex: You have scenario where want to change the price of the item based on an external web service call, in that case you can call our PriceOverrideOperationRequest API to change the price of the item. Within the consume, the APIs are sub categorized by module like Crat, peripherals, store operations etc.
+> [!NOTE]
+> A list of the all of the APIs is available in **Pos.Api.d.ts**, which is part of the Retail SDK (...Retail SDK\POS\Extensions\Pos.Api.d.ts).
 
-**Note:** You can get all the API list from the **Pos.Api.d.ts** which is part of the Retail SDK (…Retail SDK\POS\Extensions\Pos.Api.d.ts)
+## How to consume APIs in your extension
 
-**How to consume our APIs in your extension:**
+Use the following steps to consume Retail APIs in your extensions:
 
-If you want to consume our APIs in your extension, then follow the below steps:
-
-1.  Import the API in your extension file:
+1.  Import the API in your extension file.
 
     Ex: If you want to consume our save attribute on cart API in your extension then you need to add the below import statements:
 
@@ -62,20 +61,20 @@ If you want to consume our APIs in your extension, then follow the below steps:
  import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
 ```
 
-2.  Import the client entities and proxy entities if required:
+2.  Import the client entities and proxy entities if required.
 
 ```Typescript
     import { ClientEntities } from "PosApi/Entities";
 
     import { ProxyEntities } from "PosApi/Entities";
 ```
-3.  Declare the API variable and execute it using the pos runtime, you can access the runtime by using: this.context.runtime.executeAsync("api name")
+3.  Declare the API variable and execute it using the POS runtime, you can access the runtime by using: this.context.runtime.executeAsync("api name")
 
 ```Typescript
     executeAsync<TResponse extends Response>(request: Request<TResponse>): Promise<Client.Entities.ICancelableDataResult<TResponse>>;
 ```
 
- Ex: If you want to execute the tender removal, SaveAttributesOnCartClientRequest api, follow the below steps:
+ For example, if you want to execute the tender removal, use SaveAttributesOnCartClientRequest api, and refer to the following steps.
 ```Typescript
 let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
 
@@ -127,7 +126,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 
 }
 ```
-**Force void transaction:**
+**Force void transaction**
 
  // Force void tarnsaction.
 ```Typescript
@@ -145,11 +144,10 @@ currentCart = getCurrentCartClientResponse.data.result;
 
  });
 ```
-Below is the list of APIs currently exposed by module, we will be adding more APIs to simplify the development experience.
 
-**Cart:**
+### Cart
 
-Below is the list of APIs exposed to perform cart related functionality:
+The following is a list of APIs exposed to perform cart-related functionality.
 
 | POS API                                         |
 |-------------------------------------------------|
@@ -204,18 +202,18 @@ Below is the list of APIs exposed to perform cart related functionality:
 | GetTaxOverridesServiceRequest                   |
 | UpdateTenderLineSignatureServiceRequest         |
 
-**Payments:**
+### Payments
 
-Below is the list of APIs exposed to perform peripheral related functionality:
+The following is a list of APIs exposed to perform payment-related functionality.
 
 | POS API                                   |
 |-------------------------------------------|
 | GetGiftCardByIdServiceRequest             |
 | GetPaymentCardTypeByBinRangeClientRequest |
 
-**Peripherals:**
+### Peripherals
 
-Below is the list of APIs exposed to perform peripheral related functionality:
+The following is a list of APIs exposed to perform peripheral-related functionality:
 
 | POS API                                                |
 |--------------------------------------------------------|
@@ -246,17 +244,17 @@ Below is the list of APIs exposed to perform peripheral related functionality:
 | PrinterPrintRequest                                    |
 | ScaleReadRequest                                       |
 
-**ScanResults:**
+### ScanResults
 
-Below is the list of APIs exposed to perform scan results related functionality:
+BThe following is a list of APIs exposed to perform scan results- related functionality.
 
 | POS API                    |
 |----------------------------|
 | GetScanResultClientRequest |
 
-**Customer:**
+### Customer
 
-Below is the list of APIs exposed to perform Customer related functionality:
+BThe following is a list of APIs exposed to perform customer-related functionality.
 
 | POS API                  |
 |--------------------------|
@@ -265,25 +263,25 @@ Below is the list of APIs exposed to perform Customer related functionality:
 |UpdateCustomerServiceRequest |
 
 
-**Authentication:**
+### Authentication
 
-Below is the list of APIs exposed to perform authentication related functionality:
+The following is a list of APIs exposed to perform authentication-related functionality.
 
 | POS API                |
 |------------------------|
 | LogOffOperationRequest |
 
-**DataService:**
+### DataService
 
-Below is the list of APIs exposed to perform data service related functionality:
+The following is a list of APIs exposed to perform data service- related functionality.
 
 | POS API            |
 |--------------------|
 | DataServiceRequest |
 
-**Device:**
+### Device
 
-Below is the list of APIs exposed to perform Device related functionality:
+The following is a list of APIs exposed to perform device-related functionality.
 
 | POS API                               |
 |---------------------------------------|
@@ -296,17 +294,17 @@ Below is the list of APIs exposed to perform Device related functionality:
 | GetApplicationVersionClientRequest    |
 | GetChannelConfigurationClientRequest  |
 
-**Diagnostics:**
+### Diagnostics 
 
-Below is the list of APIs exposed to perform Diagnostics related functionality:
+The following is a list of APIs exposed to perform diagnostics- related functionality.
 
 | POS API                     |
 |-----------------------------|
 | GetSessionInfoClientRequest |
 
-**Dialogs:**
+### Dialog
 
-Below is the list of APIs exposed to perform dialogs related functionality:
+The following is a list of APIs exposed to perform dialog-related functionality.
 
 | POS API                                  |
 |------------------------------------------|
@@ -317,17 +315,17 @@ Below is the list of APIs exposed to perform dialogs related functionality:
 | ShowListInputDialogClientRequest         |
 | ShowTextInputDialogClientRequest         |
 
-**Employees:**
+### Employee
 
-Below is the list of APIs exposed to perform employees related functionality:
+The following is a list of APIs exposed to perform employee-related functionality.
 
 | POS API                          |
 |----------------------------------|
 | GetLoggedOnEmployeeClientRequest |
 
-**Formatters:**
+### Formatters
 
-Below is the list of APIs exposed to perform formatters related functionality:
+The following is a list of APIs exposed to perform formatter-related functionality.
 
 | POS API                             |
 |-------------------------------------|
@@ -337,9 +335,9 @@ Below is the list of APIs exposed to perform formatters related functionality:
 | ITransactionTypeFormatter           |
 | IPurchaseTransferOrderTypeFormatter |
 
-**OrgUnits:**
+### OrgUnits
 
-Below is the list of APIs exposed to perform Org units related functionality:
+The following is a list of APIs exposed to perform org units-related functionality.
 
 | POS API                              |
 |--------------------------------------|
@@ -347,9 +345,9 @@ Below is the list of APIs exposed to perform Org units related functionality:
 | GetOrgUnitTenderTypesClientRequest   |
 | InventoryLookupOperationRequest      |
 
-**Products:**
+### Products
 
-Below is the list of APIs exposed to perform products related functionality:
+The following is a list of APIs exposed to perform products-related functionality.
 
 | POS API                                    |
 |--------------------------------------------|
@@ -361,7 +359,7 @@ Below is the list of APIs exposed to perform products related functionality:
 
 **SalesOrders:**
 
-Below is the list of APIs exposed to perform sales orders related functionality:
+The following is a list of APIs exposed to perform sales orders-related functionality.
 
 | POS API                                          |
 |--------------------------------------------------|
@@ -373,26 +371,26 @@ Below is the list of APIs exposed to perform sales orders related functionality:
 | MarkAsPickedServiceRequest                       |
 | PrintPackingSlipClientRequest                    |
 
-**Shifts:**
+### Shifts
 
-Below is the list of APIs exposed to perform Shifts related functionality:
+The following is a list of APIs exposed to perform shifts-related functionality.
 
 | POS API                    |
 |----------------------------|
 | CloseShiftOperationRequest |
 | CloseShiftOperationRequest |
 
-**StockCountJournals:**
+### StockCountJournals
 
-Below is the list of APIs exposed to perform stock count journals related functionality:
+The following is a list of APIs exposed to perform stock count journals-related functionality.
 
 | POS API                                |
 |----------------------------------------|
 | SyncAllStockCountJournalsClientRequest |
 
-**StoreOperations:**
+### StoreOperations
 
-Below is the list of APIs exposed to perform store operations related functionality:
+The following is a list of APIs exposed to perform store operations-related functionality.
 
 | POS API                                         |
 |-------------------------------------------------|
