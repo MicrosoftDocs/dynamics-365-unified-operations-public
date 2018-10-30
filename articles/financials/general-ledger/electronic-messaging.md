@@ -382,7 +382,7 @@ This section provides an example of how you might set up the Electronic messages
 This paragraph proposes an example of how you may set up Electronic messaging to run generation of a report based on a ER Excel exporting format. To follow ER Excel exporting format is already created, mapped to data source(s) and completed. It is also supposed that a number sequence for Electronic messages is set up.
 Building a processing, it is helpful to define first the processing actions and statuses which are going to be set up. For this example, the processing would look like:
 
-![processing scheme](processing-scheme.png)
+![processing scheme](media/processing-scheme.png)
 
 #### Create message statuses
 
@@ -392,7 +392,7 @@ Building a processing, it is helpful to define first the processing actions and 
   -	Prepared
   -	Generated
 
-![Message status creation](message-statuses.png)
+![Message status creation](media/message-statuses.png)
 
 3. Select the **Allow delete** check box to let the user delete messages in the “New” status.
 
@@ -401,7 +401,7 @@ Building a processing, it is helpful to define first the processing actions and 
 1. Go to **Tax > Setup > Electronic messages > Additional fields**.
 2. Add an Additional field and its values, for example:
 
-![Additional fields](additional-fields.png)
+![Additional fields](media/additional-fields.png)
 
 3. Select the **User edit** check box to let users edit the field.
 
@@ -425,7 +425,7 @@ For this example, you'll create the following actions:
   - Initial statuses
   - Result statuses
   
-  ![Generate report action](generate-report.png)
+  ![Generate report action](media/generate-report.png)
   
 5. (Optional) To allow the user to re-generate a report several times, you can set up an **Update to initial status** action with the following fields completed:
   - Action type = Message level user processing
