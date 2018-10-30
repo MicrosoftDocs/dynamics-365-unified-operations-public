@@ -20,7 +20,7 @@ ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: 
+ms.search.region: Global
 ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
