@@ -414,38 +414,34 @@ For this example, you'll create the following actions:
 
 1. Go to **Tax > Setup > Electronic messages > Message processing actions**.
 2. Create an action called **Create message** with the following fields completed:
-  - Action type = **Create message** 
+    - Action type = **Create message** 
 3. Create an action called **Update to Prepared** with the following fields completed:
-  - Action type = **Message level user processing**
-  - Initial statuses = **New**
-  - Result statuses = **Prepared** with a **Response type** = Successfully executed.
+    - Action type = **Message level user processing**
+    - Initial statuses = **New**
+    - Result statuses = **Prepared** with a **Response type** = Successfully executed.
 4. Create an action called **Generate report**.
-  - Action type = Electronic reporting export
-  - Format mapping - Select the ER exporting format. Your options are: **Excel**, **XML**, **JSON**, **Text**, **other**.
-  - Initial statuses
-  - Result statuses
+    - Action type = Electronic reporting export
+    - Format mapping - Select the ER exporting format. Your options are: **Excel**, **XML**, **JSON**, **Text**, **other**.
+    - Initial statuses
+    - Result statuses
   
   ![Generate report action](media/generate-report-action.png)
   
 5. (Optional) To allow the user to re-generate a report several times, you can set up an **Update to initial status** action with the following fields completed:
-  - Action type = Message level user processing
-  - Initial statuses
-  - Result statuses
+    - Action type = Message level user processing
+    - Initial statuses
+    - Result statuses
 
 #### Electronic message processing
 In our example all the actions should be set up to run separately as it is supposed that each action will be initialized by user.
 1. Go to **Tax > Setup > Electronic messages > Electronic message processing**.
-2. Add one record for your processing and add all previously defined actions and Additional field:
-Pic.8
-3. (Optional) Define security roles for your processing to restrict access to a specific reporting:
-Pic.9
-4. Now the processing is ready to be used. Go to **Tax > Inquires and reports > Electronic messages > Electronic messages** and click **New** to create a new message. 
-Pic.10
-As a result, a new message will be created. You may additionally specify From and To dates, Description and update the value of the Additional field (if needed):
-Pic.11
+2. Add one record for your processing and add all previously defined actions and an additional field.
+3. (Optional) Expand the **Security roles** FastTab to define security roles for your processing to restrict access to a specific reporting. 
+4. Go to **Tax > Inquires and reports > Electronic messages > Electronic messages** and click **New** to create a new message. At this point, you can add dates, a description and update the value of the Additional field (if needed):
+![Create electronic message](create-electronic-message.png)
 Action log is filled in automatically, so all the actions done with the message are logged.
 Now you may either delete or update message status. To update message status, click on “Update status” button and select new status as “Prepared”:
-Pic.12
+![Update status button](update-status.png)
 As a result, the message status is updated to “Prepared” and now you may generate the report. To do so, click on the “Generate report” button. The report will be generated, Message status and Action log updated. You may review generated report by the Attachment button on the Action pane:
 Pic.13
 
