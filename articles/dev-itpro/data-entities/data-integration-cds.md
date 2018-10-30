@@ -36,6 +36,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 You can use Common Data Service to enable the flow of data between Microsoft Dynamics 365 for Finance and Operations and Dynamics 365 for Sales. For example, customer information in Microsoft Dynamics 365 for Sales can flow to Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. You don’t have to manually move the data or use a third-party data integration tool.
 
-For more information about Common Data Service data integration, see [Integrate data into Common Data Service for Apps](/powerapps/administrator/data-integrator.md) in the PowerApps documentation.
+For more information about Common Data Service data integration, see [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) in the PowerApps documentation.
 
 For an example of using Common Data Service, see [Configure a prospect to cash scenario](../../supply-chain/sales-marketing/prospect-to-cash.md).
