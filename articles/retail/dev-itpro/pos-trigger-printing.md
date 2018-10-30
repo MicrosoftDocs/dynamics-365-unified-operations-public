@@ -88,6 +88,8 @@ The following table lists the available triggers and denotes whether they can be
 | PostTotalDiscountAmountTrigger  | Non-cancelable | Executed after total amount percent added to the cart.          |
 | PreTotalDiscountPercentTrigger  | Cancelable     | Executed before total discount percent added to the cart.       |
 | PostTotalDiscountPercentTrigger | Non-cancelable | Executed after total discount percent added to the cart.        |
+| PreAddCouponTrigger             | Cancelable     | Executed before adding discount coupon to the cart.             |
+| PostAddCouponTrigger            | Non-cancelable | Executed after adding discount coupon to the cart.              |
 
 ## Operation triggers
 
@@ -106,11 +108,12 @@ The following table lists the available triggers and denotes whether they can be
 | PreVoidPaymentTrigger   | Cancelable     | Executed before the payment line is voided in POS.  |
 | PostVoidPaymentTrigger  | Non-cancelable | Executed after the payment line is voided in POS.   |
 
-Printing Triggers
+## Printing Triggers
 
 | Trigger                    | Type       | Description                                                                                                     |
 |----------------------------|------------|--------|
 | PrePrintReceiptCopyTrigger | Cancelable | Executed before the receipt copy is printed form the show journal screen or receipt view screen. |
+| PostReceiptPromptTrigger   | Non-cancelable| Executed after the receipt prompt - Do you want to print or not print receipt. |
 
 ## Product triggers
 
