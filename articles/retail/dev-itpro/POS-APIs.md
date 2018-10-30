@@ -43,7 +43,7 @@ POS APIs are categorized into three different scenarios:
 
 - **Create** – Create new APIs using the exposed POS interface, which can be used across extensions.
 
-Many APIs can be consumed in extensions. For example, if you want to change the price of the item based on an external web service call, you can call PriceOverrideOperationRequest to change the price of the item. Within the consume, the APIs are sub categorized by module like create, peripherals, store operations, etc.
+Many APIs can be consumed in extensions. For example, if you want to change the price of the item based on an external web service call, you can call PriceOverrideOperationRequest to change the price of the item. Within the consume, the APIs are sub categorized by module like cart, peripherals, store operations, etc.
 
 > [!NOTE]
 > A list of the all of the APIs is available in **Pos.Api.d.ts**, which is part of the Retail SDK (...Retail SDK\POS\Extensions\Pos.Api.d.ts).
@@ -91,7 +91,7 @@ new SaveAttributesOnCartClientRequest(attributeValues);
 result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
 
 ```
-### Samples showoing how to access  APIs
+### Samples showing how to access APIs
 
 **Get Current cart**
 ```
@@ -359,7 +359,7 @@ The following is a list of APIs exposed to perform products-related functionalit
 | GetSerialNumberClientRequest               |
 | GetRefinerValuesByTextServiceRequest       |
 
-**SalesOrders:**
+### SalesOrders
 
 The following is a list of APIs exposed to perform sales orders-related functionality.
 
