@@ -36,7 +36,7 @@ In addition, various modules have been enhanced to track, report, and use the re
 
 ## Posting process
 
-The posting logic has been changed for all transactions that post to the general ledger. Here is how the reporting currency was previously calculated:
+The posting logic has been changed for all transactions that generate an accounting entry to general ledger. Here is how the reporting currency was previously calculated:
 
 Transaction currency amount \> Accounting currency amount \> Reporting currency amount
 
@@ -115,7 +115,7 @@ Previously, the **Cash and bank management** module didn't track any reporting c
     - For each bank account transaction, the wizard finds the corresponding accounting entries in the general ledger and enters a default reporting currency amount. Although the amounts can be edited, we recommend that you **not** edit them. Otherwise, you might not be able to reconcile the bank account balances to the general ledger. The only time that you should edit an amount should is if the reporting currency amount can't be found in the general ledger. In that case, the wizard will show an amount of 0 (zero) for the reporting currency.
     - If you select **Cancel** in the wizard, the bank account transactions and any changes to the reporting currency amounts are saved until the next time that you run the wizard. However, the reporting currency amounts aren't updated on the bank account transactions. That update occurs only when you select **Finish** in the wizard. You can run the wizard multiple times. Therefore, you can fix any incorrect reporting currency amounts if you make a mistake.
 
-- No processes in Cash and bank management were changed, but various reports and inquiries were updated so that they show reporting currency amounts. This includes the cash flow forecasting reports, which weren't updated to include the reporting currency amounts.
+- No processes in Cash and bank management were changed, but various reports and inquiries were updated so that they show reporting currency amounts. The cash flow forecasting reports are an exception. They weren't updated to include the reporting currency amounts.
 
 ### Fixed assets
 
@@ -127,7 +127,7 @@ In addition, major changes have been made to the depreciation process. These cha
 
     **Depreciation scenario**
 
-    An asset is acquired and posted with the following amounts. Note that the reporting currency amount is posted in the general ledger, but it isn't stored in AssetTrans in the subledger.
+    An asset is acquired and posted with the following amounts. Note that the reporting currency amount is posted in the general ledger, but it isn't stored in the Fixed asset subledger tables.
 
     | Transaction type | Transaction amount | Exchange rate | Accounting currency amount | Exchange rate | Reporting currency amount |
     |------------------|--------------------|---------------|----------------------------|---------------|---------------------------|
