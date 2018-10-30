@@ -1023,6 +1023,8 @@
       href: migration-upgrade/upgrade-data-to-latest-update.md
     - name: Update development tools
       href: dev-tools/update-development-tools.md
+    - name: Plan and prepare for compiling code against the latest update
+      href: migration-upgrade/compile-considerations.md
   - name: Upgrade to a recent update (on-premises)
     items:
     - name: Apply updates to on-premises deployments
@@ -1088,6 +1090,12 @@
       href: sysadmin/batch-server-overview.md
     - name: Create batch jobs
       href: sysadmin/tasks/create-batch-job.md
+    - name: Copy a batch job
+      href: sysadmin/copy-batch-job.md
+    - name: Active batch periods
+      href: sysadmin/activeperiod.md
+    - name: Batch manager security role
+      href: sysadmin/runby.md
   - name: Optimization advisor
     href: sysadmin/optimization-advisor-overview.md
     items:
