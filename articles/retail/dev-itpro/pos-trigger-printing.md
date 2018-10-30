@@ -5,7 +5,7 @@ title: Retail Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Retail Modern POS operations. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -113,7 +113,7 @@ The following table lists the available triggers and denotes whether they can be
 | Trigger                    | Type       | Description                                                                                                     |
 |----------------------------|------------|--------|
 | PrePrintReceiptCopyTrigger | Cancelable | Executed before the receipt copy is printed form the show journal screen or receipt view screen. |
-| PostReceiptPromptTrigger   | Non-cancelable| Executed after the receipt prompt - Do you want to print or not print receipt. |
+| PostReceiptPromptTrigger   | Non-cancelable | Executed after the receipt prompt - Do you want to print or not print receipt. |
 
 ## Product triggers
 
