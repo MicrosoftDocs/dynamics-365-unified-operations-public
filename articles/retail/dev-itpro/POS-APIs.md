@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: POS API
+title: Retail POS APIs
 description: This topic contains a list of available POS APIs and how to access them.
 author: mugunthanm 
 manager: AnnBe
@@ -29,19 +29,19 @@ ms.search.validFrom: 2018-29-10
 ms.dyn365.ops.version: AX 8.0, AX 8.1
 
 ---
-# Retail POS API
+# Retail POS APIs
 
-Retail POS APIs help you to easily build extensions or new features to the POS app. For example, if you are extending the Retail POS application to add new features in which to want to get product details, change prices, or add items to a cart you can consume APIs that will do the work for youl. To do this, you need to simply call the APIs to do the work. The POS API simplifies the extension pattern and provides continuous support to build the extensions.
+Retail POS APIs help you to easily build extensions or new features to the POS app. For example, if you are extending the Retail POS application to add new features in which to want to get product details, change prices, or add items to a cart. you can consume APIs that will do the work for you. To do this, you need to simply call the APIs to do the work. The POS API simplifies the extension pattern and provides continuous support to build the extensions.
 
-Extension patterns have been unified across commerce runtime (CRT), POS and Hardware station (HWS) by following the request/response pattern. All the POS APIs are exposed as request/response like CRT and HWS. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail with the latest hotfix. 
+Extension patterns have been unified across commerce runtime (CRT), POS, and Hardware station (HWS) by following the request/response pattern. All the POS APIs are exposed as request/response like CRT and HWS. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail with the latest hotfix. 
 
-The POS APIs are categorized into three different scenarios:
+POS APIs are categorized into three different scenarios:
 
 - **Consume** – Consume public APIs in your extension.
 
 - **Extend** – Override public APIs to do some additional logic.
 
-- **Create** – Create new APIs using the exposed POS interface, which can be used across your extensions.
+- **Create** – Create new APIs using the exposed POS interface, which can be used across extensions.
 
 Many APIs can be consumed in extensions. For example, if you want to change the price of the item based on an external web service call, you can call PriceOverrideOperationRequest to change the price of the item. Within the consume, the APIs are sub categorized by module like create, peripherals, store operations, etc.
 
@@ -50,11 +50,11 @@ Many APIs can be consumed in extensions. For example, if you want to change the 
 
 ## How to consume APIs in your extension
 
-Use the following steps to consume Retail APIs in your extensions:
+Use the following steps to consume Retail APIs in your extensions.
 
 1.  Import the API in your extension file.
 
-    Ex: If you want to consume our save attribute on cart API in your extension then you need to add the below import statements:
+    For example, if you want to consume the save attribute on cart API in your extension, then you need to add the following import statements.
 
  The pattern is import { api name } from "PosApi/Consume/Module name";
 ```Typescript
@@ -68,7 +68,7 @@ Use the following steps to consume Retail APIs in your extensions:
 
     import { ProxyEntities } from "PosApi/Entities";
 ```
-3.  Declare the API variable and execute it using the POS runtime, you can access the runtime by using: this.context.runtime.executeAsync("api name")
+3.  Declare the API variable and execute it using the POS runtime, which you can access the runtime by using: this.context.runtime.executeAsync("api name")
 
 ```Typescript
     executeAsync<TResponse extends Response>(request: Request<TResponse>): Promise<Client.Entities.ICancelableDataResult<TResponse>>;
@@ -90,10 +90,12 @@ new SaveAttributesOnCartClientRequest(attributeValues);
 
 result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
 
-**More samples on how to access our APIs:**
+```
+### Samples showoing how to access  APIs
 
-**Get Current cart:**
-
+```
+**Get Current cart**
+```
 // Gets the current cart.
 
  let currentCart: ProxyEntities.Cart;
@@ -106,8 +108,9 @@ result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
 
 currentCart = getCurrentCartClientResponse.data.result;
 
-**Get Current customer added to cart:**
-
+```
+**Get Current customer added to cart**
+```
  // Gets the current customer.
 
  let result: Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>>;
@@ -127,7 +130,7 @@ currentCart = getCurrentCartClientResponse.data.result;
 }
 ```
 **Force void transaction**
-
+```
  // Force void tarnsaction.
 ```Typescript
  let forceVoidTransactionRequest: VoidTransactionOperationRequest<VoidTransactionOperationResponse> =
@@ -213,7 +216,7 @@ The following is a list of APIs exposed to perform payment-related functionality
 
 ### Peripherals
 
-The following is a list of APIs exposed to perform peripheral-related functionality:
+The following is a list of APIs exposed to perform peripheral-related functionality.
 
 | POS API                                                |
 |--------------------------------------------------------|
@@ -246,7 +249,7 @@ The following is a list of APIs exposed to perform peripheral-related functional
 
 ### ScanResults
 
-BThe following is a list of APIs exposed to perform scan results- related functionality.
+BThe following is a list of APIs exposed to perform scan results-related functionality.
 
 | POS API                    |
 |----------------------------|
@@ -273,7 +276,7 @@ The following is a list of APIs exposed to perform authentication-related functi
 
 ### DataService
 
-The following is a list of APIs exposed to perform data service- related functionality.
+The following is a list of APIs exposed to perform data service-related functionality.
 
 | POS API            |
 |--------------------|
@@ -296,7 +299,7 @@ The following is a list of APIs exposed to perform device-related functionality.
 
 ### Diagnostics 
 
-The following is a list of APIs exposed to perform diagnostics- related functionality.
+The following is a list of APIs exposed to perform diagnostics-related functionality.
 
 | POS API                     |
 |-----------------------------|
