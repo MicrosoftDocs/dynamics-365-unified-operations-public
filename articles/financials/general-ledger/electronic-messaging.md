@@ -369,37 +369,70 @@ Select **Original document** on the Action Pane to open the original document fo
 
 ## Example
 
-Basically if you have created, mapped to data source(s) and completed GER format you may simply run it via Electronic reporting module and get generated report, which you may further either save locally, transmit anywhere if needed and so on. But when you need to control some reporting process whilst logging information about who and when generated a report and saving in the system the reports generated for the previous period(s), you need to set up electronic messaging processing. Use Electronic messages functionality for this purpose.
-This section provides a simple example that shows how you might set up the Electronic messages functionality to build a reporting process.
+If you have created and mapped to data source(s) and completed your ER format, you can run it using the Electronic reporting workspace to get a generated report. You can then save the generated report locally. If you want to control the following aspects of the reporting process, you need to set up electronic messaging processing:
+
+- log information about who generated the report
+- log when the report was generated
+- save the reports generated for the previous period(s)
+
+This section provides an example of how you might set up the Electronic messages functionality to build a reporting process.
 
 ### Set up and run processing to call a simple ER exporting format to generate an Excel report
 
-This paragraph proposes an example of how you may set up Electronic messaging to run generation of a report based on a GER Excel exporting format. It is supposed in this example that the GER Excel exporting format is already created, mapped to data source(s) and completed. It is also supposed that a number sequence for Electronic messages is set up.
+This paragraph proposes an example of how you may set up Electronic messaging to run generation of a report based on a ER Excel exporting format. To follow ER Excel exporting format is already created, mapped to data source(s) and completed. It is also supposed that a number sequence for Electronic messages is set up.
 Building a processing, it is helpful to define first the processing actions and statuses which are going to be set up. For this example, the processing would look like:
 
-Pic.1
+![processing scheme](processing-scheme.png)
 
-### Step 1 “Create Message statuses”
-Open Tax > Setup > Electronic messages > Message statuses.
-Add records for the following statuses:
--	New
--	Prepared
--	Generated.
+#### Create message statuses
 
-Pic.2
+1. Go to **Tax > Setup > Electronic messages > Message statuses**.
+2. Create the following message statuses:
+  -	New
+  -	Prepared
+  -	Generated
 
-Mark “Allow delete” if you want to let used delete messages in the “New” status.
-### Step 2 “Create Additional fields”
-Open Tax > Setup > Electronic messages > Additional fields.
-Add an Additional field and its values, for example:
+![Message status creation](message-statuses.png)
 
-Pic.3
+3. Select the **Allow delete** check box to let the user delete messages in the “New” status.
 
-Mark “User edit” check box if you want to allow user editing of this field.
-### Step 3 “Create Message processing actions”
-Open Tax > Setup > Electronic messages > Message processing actions.
-Add the following actions:
-“Create message”
+#### Create additional fields
+
+1. Go to **Tax > Setup > Electronic messages > Additional fields**.
+2. Add an Additional field and its values, for example:
+
+![Additional fields](additional-fields.png)
+
+3. Select the **User edit** check box to let users edit the field.
+
+#### Create message processing actions
+For this example, you'll create the following actions:
+  - **Create message**
+  - **Update to Prepared**
+  - **Generate report**
+  - **Update to initial status** (Optional) 
+
+1. Go to **Tax > Setup > Electronic messages > Message processing actions**.
+2. Create an action called **Create message** with the following fields completed:
+  - Action type = **Create message** 
+3. Create an action called **Update to Prepared** with the following fields completed:
+  - Action type = **Message level user processing**
+  - Initial statuses = **New**
+  - Result statuses = **Prepared** with a **Response type** = Successfully executed.
+4. Create an action called **Generate report**.
+  - Action type = Electronic reporting export
+  - Format mapping - Select the ER exporting format. Your options are: **Excel**, **XML**, **JSON**, **Text**, **other**.
+  - Initial statuses
+  - Result statuses
+  
+  ![Generate report action](generate-report.png)
+  
+5. (Optional) To allow the user to re-generate a report several times, you can set up an **Update to initial status** action with the following fields completed:
+  - Action type = Message level user processing
+  - Initial statuses
+  - Result statuses
+
+
 Pic. 4
 “Update to Prepared”
 Pic.5
@@ -408,6 +441,7 @@ Pic.6
 In the Format mapping field selected your GER format (it can be either Excel, XML, JSON, Text, other).
 To allow user to re-generate a report several times you may additionally set up an “Update to initial status” action:
 Pic.7
+
 ### Step 4 “Electronic message processing”
 Open Tax > Setup > Electronic messages > Electronic message processing.
 Add one record for you processing and add all previously defined actions and Additional field:
