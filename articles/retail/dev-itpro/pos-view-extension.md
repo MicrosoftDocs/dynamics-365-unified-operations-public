@@ -51,6 +51,7 @@ The following table shows the POS views that currently support extensions. It al
 > [!NOTE]
 > The upcoming releases and hotfix will add support for more extension points in other views.
 
+
 | POS view                        | Custom controls are supported | Custom columns are supported | Custom app bar buttons are supported |
 |---------------------------------|-------------------------------|------------------------------|--------------------------------------|
 | Cart view (Screen layout based) | Yes                           | Yes                          | No                                   |
@@ -71,9 +72,13 @@ The following table shows the POS views that currently support extensions. It al
 | ResumeCartView                  | No                            | Yes                          | No                                    |
 | OrderFulfillmentView            | No                            | No                           | Yes                                   |
 | InventoryLookupMatrixView       | No                            | No                           | Yes                                   |
-| SuspendTransactionView          | No                            | Yes                          | No                               |   |
-| ManageShiftView                 | No                            | No                          | Yes                               |   |
-| ReportDetailsView               | No                            | No                          | Yeso                               |      
+| SuspendTransactionView          | No                            | Yes                          | No                               |   
+| ManageShiftView                 | No                            | No                           | Yes                               |  
+| ReportDetailsView               | No                            | No                           | Yes                               |
+| SearchReceiptsView              | No                            | No                           | Yes                               |
+| StockCountDetailsView           | No                            | No                          | Yes                               |
+
+
 
 
 > [!NOTE]
